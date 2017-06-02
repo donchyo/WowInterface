@@ -1,0 +1,28 @@
+## Interface: 70000
+## Title: Garrison Enhanced
+## Author: Dorwido
+## Version: 2.6.4
+## Notes: Improves the Garrison 
+## SavedVariables: GarrisonMissonEnhancedSave,GarrisonMissonEnhancedGlobalConfig,GarrisonMissonEnhancedColors
+## SavedVariablesPerCharacter: GarrisonMissonEnhancedLocalConfig
+## X-Curse-Packaged-Version: v2.6.4
+## X-Curse-Project-Name: Garrison Enhanced
+## X-Curse-Project-ID: garrison-misson-nhanced
+## X-Curse-Repository-ID: wow/garrison-misson-nhanced/mainline
+
+libs\LibWindow-1.1\LibStub.lua
+libs\LibWindow-1.1\LibWindow-1.1\LibWindow-1.1.lua
+localisation\locale_enUS.lua
+localisation\locale_deDE.lua
+localisation\locale_frFR.lua
+localisation\locale_koKR.lua
+localisation\locale_esMX.lua
+localisation\locale_ruRU.lua
+localisation\locale_zhCN.lua
+localisation\locale_esES.lua
+localisation\locale_zhTW.lua
+localisation\locale_itIT.lua
+localisation\locale_ptBR.lua
+GarrisonMissonEnhanced.lua
+GarrisonMissonEnhancedConfig.lua
+GarrisonMissonEnhancedComplete.lua

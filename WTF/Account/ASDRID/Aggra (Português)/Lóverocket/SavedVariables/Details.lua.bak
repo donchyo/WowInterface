@@ -1,0 +1,1738 @@
+
+_detalhes_database = {
+	["announce_interrupts"] = {
+		["enabled"] = false,
+		["whisper"] = "",
+		["channel"] = "SAY",
+		["custom"] = "",
+		["next"] = "",
+	},
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["active_profile"] = "Lóverocket-Aggra (Português)",
+	["last_realversion"] = 116,
+	["ignore_nicktag"] = false,
+	["combat_counter"] = 97,
+	["plugin_database"] = {
+	},
+	["savedbuffs"] = {
+	},
+	["character_data"] = {
+		["logons"] = 1,
+	},
+	["force_font_outline"] = "",
+	["tabela_historico"] = {
+		["tabelas"] = {
+			{
+				{
+					["combatId"] = 25,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Young Forest Bear"] = true,
+								["Mangy Wolf"] = true,
+							},
+							["targets"] = {
+							},
+							["on_hold"] = false,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001751,
+							["spec"] = 256,
+							["dps_started"] = false,
+							["total"] = 0.001751,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-1303-08F0C236",
+							["nome"] = "Lóverocket",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1486753130,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 31.001751,
+							["start_time"] = 1486753130,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 25,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 25,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 25,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 256,
+							["grupo"] = true,
+							["buff_uptime"] = 57,
+							["nome"] = "Lóverocket",
+							["pets"] = {
+							},
+							["last_event"] = 1486753130,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[186406] = {
+										["uptime"] = 19,
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[192225] = {
+										["uptime"] = 19,
+										["activedamt"] = 1,
+										["id"] = 192225,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[179245] = {
+										["uptime"] = 19,
+										["activedamt"] = 1,
+										["id"] = 179245,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-1303-08F0C236",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 25,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Lóverocket"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Young Forest Bear",
+				["combat_counter"] = 97,
+				["playing_solo"] = true,
+				["totals"] = {
+					-0.0242299999999922, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Lóverocket"] = 0.001751,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 112862.556,
+				["combat_id"] = 25,
+				["instance_type"] = "none",
+				["frags"] = {
+				},
+				["data_fim"] = "19:58:50",
+				["data_inicio"] = "19:58:31",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 112843.505,
+				["contra"] = "Young Forest Bear",
+				["TimeData"] = {
+				},
+			}, -- [1]
+			{
+				{
+					["combatId"] = 24,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Kobold Tunneler"] = true,
+							},
+							["targets"] = {
+							},
+							["on_hold"] = false,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.007644,
+							["spec"] = 256,
+							["dps_started"] = false,
+							["total"] = 0.007644,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-1303-08F0C236",
+							["nome"] = "Lóverocket",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1486752802,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 7.007644,
+							["start_time"] = 1486752802,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 24,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 24,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 24,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 256,
+							["grupo"] = true,
+							["buff_uptime"] = 30,
+							["nome"] = "Lóverocket",
+							["pets"] = {
+							},
+							["last_event"] = 1486752802,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[186406] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[192225] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 192225,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[179245] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 179245,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-1303-08F0C236",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 24,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Lóverocket"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Kobold Tunneler",
+				["combat_counter"] = 96,
+				["playing_solo"] = true,
+				["totals"] = {
+					-0.0474469999999778, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = -0.00397399999999948,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Lóverocket"] = 0.007644,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 112534.937,
+				["combat_id"] = 24,
+				["instance_type"] = "none",
+				["frags"] = {
+				},
+				["data_fim"] = "19:53:23",
+				["data_inicio"] = "19:53:13",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 112525.255,
+				["contra"] = "Kobold Tunneler",
+				["TimeData"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 23,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Riverpaw Outrunner"] = true,
+							},
+							["targets"] = {
+								["Riverpaw Outrunner"] = 636,
+								["Young Forest Bear"] = 283,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PRIEST",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 919.008875,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1486752668,
+							["friendlyfire_total"] = 0,
+							["spec"] = 256,
+							["nome"] = "Lóverocket",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[589] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 136,
+										["g_amt"] = 0,
+										["n_max"] = 34,
+										["targets"] = {
+											["Riverpaw Outrunner"] = 306,
+											["Young Forest Bear"] = 170,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 340,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 476,
+										["c_max"] = 68,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 68,
+									},
+									[116616] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 223,
+										["g_amt"] = 0,
+										["n_max"] = 113,
+										["targets"] = {
+											["Riverpaw Outrunner"] = 330,
+											["Young Forest Bear"] = 113,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 220,
+										["n_min"] = 107,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 443,
+										["c_max"] = 223,
+										["id"] = 116616,
+										["r_dmg"] = 0,
+										["spellschool"] = 28,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 223,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 919.008875,
+							["serial"] = "Player-1303-08F0C236",
+							["last_dps"] = 103.329084214074,
+							["custom"] = 0,
+							["last_event"] = 1486752667,
+							["damage_taken"] = 59.008875,
+							["start_time"] = 1486752659,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 23,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.002873,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Lóverocket"] = true,
+							},
+							["targets"] = {
+								["Lóverocket"] = 62,
+							},
+							["last_event"] = 1486752667,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.002873,
+							["targets_overheal"] = {
+								["Lóverocket"] = 64,
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 64.002873,
+							["total_without_pet"] = 59.002873,
+							["iniciar_hps"] = false,
+							["classe"] = "PRIEST",
+							["fight_component"] = true,
+							["total"] = 59.002873,
+							["serial"] = "Player-1303-08F0C236",
+							["healing_taken"] = 59.002873,
+							["nome"] = "Lóverocket",
+							["spec"] = 256,
+							["grupo"] = true,
+							["end_time"] = 1486752668,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Lóverocket"] = 64,
+										},
+										["n_max"] = 21,
+										["targets"] = {
+											["Lóverocket"] = 59,
+										},
+										["n_min"] = 0,
+										["counter"] = 6,
+										["overheal"] = 64,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 59,
+										["m_healed"] = 0,
+										["n_amt"] = 6,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1486752662,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 23,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 20.003352,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PRIEST",
+							["fight_component"] = true,
+							["total"] = 0.003352,
+							["nome"] = "Lóverocket",
+							["spec"] = 256,
+							["grupo"] = true,
+							["resource_type"] = 13,
+							["tipo"] = 3,
+							["received"] = 0.003352,
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+								},
+							},
+							["serial"] = "Player-1303-08F0C236",
+							["last_event"] = 1486752763,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 23,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[589] = {
+										["uptime"] = 8,
+										["activedamt"] = 0,
+										["id"] = 589,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 18,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[186406] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[192225] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 192225,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[179245] = {
+										["actived_at"] = 1486752659,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 179245,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 256,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[589] = 4,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1486752668,
+							["nome"] = "Lóverocket",
+							["pets"] = {
+							},
+							["serial"] = "Player-1303-08F0C236",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 23,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Lóverocket"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Riverpaw Outrunner",
+				["combat_counter"] = 94,
+				["playing_solo"] = true,
+				["totals"] = {
+					918.987293, -- [1]
+					59, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Lóverocket"] = 59.007937,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Lóverocket"] = 1357.014349,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 112400.624,
+				["combat_id"] = 23,
+				["instance_type"] = "none",
+				["resincked"] = true,
+				["frags"] = {
+					["Riverpaw Outrunner"] = 2,
+					["Young Forest Bear"] = 1,
+				},
+				["data_fim"] = "19:51:08",
+				["data_inicio"] = "19:50:59",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					919, -- [1]
+					59, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 112391.73,
+				["contra"] = "Riverpaw Outrunner",
+				["TimeData"] = {
+				},
+			}, -- [3]
+			{
+				{
+					["combatId"] = 22,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Riverpaw Outrunner"] = 542,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PRIEST",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 542.004079,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1486752644,
+							["friendlyfire_total"] = 0,
+							["spec"] = 256,
+							["nome"] = "Lóverocket",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[589] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 69,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Riverpaw Outrunner"] = 310,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 241,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 310,
+										["c_max"] = 69,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 69,
+									},
+									[116616] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 232,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Riverpaw Outrunner"] = 232,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 232,
+										["c_max"] = 232,
+										["id"] = 116616,
+										["r_dmg"] = 0,
+										["spellschool"] = 28,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 232,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 542.004079,
+							["serial"] = "Player-1303-08F0C236",
+							["last_dps"] = 62.0071020477562,
+							["custom"] = 0,
+							["last_event"] = 1486752643,
+							["damage_taken"] = 0.004079,
+							["start_time"] = 1486752635,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 22,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.004948,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["spec"] = 256,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.004948,
+							["targets_overheal"] = {
+								["Lóverocket"] = 82,
+							},
+							["healing_taken"] = 0.004948,
+							["totalover"] = 82.004948,
+							["total_without_pet"] = 0.004948,
+							["heal_enemy_amt"] = 0,
+							["iniciar_hps"] = false,
+							["classe"] = "PRIEST",
+							["total"] = 0.004948,
+							["last_event"] = 1486752643,
+							["end_time"] = 1486752644,
+							["nome"] = "Lóverocket",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Lóverocket"] = 82,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Lóverocket"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 82,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1486752635,
+							["delay"] = 0,
+							["serial"] = "Player-1303-08F0C236",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 22,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 8.00686,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PRIEST",
+							["total"] = 0.00686,
+							["nome"] = "Lóverocket",
+							["spec"] = 256,
+							["grupo"] = true,
+							["resource_type"] = 13,
+							["tipo"] = 3,
+							["received"] = 0.00686,
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+								},
+							},
+							["serial"] = "Player-1303-08F0C236",
+							["last_event"] = 1486752641,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 22,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[589] = {
+										["uptime"] = 7,
+										["activedamt"] = 0,
+										["id"] = 589,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 18,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[186406] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[192225] = {
+										["uptime"] = 9,
+										["activedamt"] = 1,
+										["id"] = 192225,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 7,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 256,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[589] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1486752644,
+							["nome"] = "Lóverocket",
+							["pets"] = {
+							},
+							["serial"] = "Player-1303-08F0C236",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 22,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Lóverocket"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Riverpaw Outrunner",
+				["combat_counter"] = 93,
+				["playing_solo"] = true,
+				["totals"] = {
+					541.996185, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Lóverocket"] = 0.004948,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Lóverocket"] = 542.004079,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 112376.418,
+				["combat_id"] = 22,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Riverpaw Outrunner"] = 2,
+				},
+				["data_fim"] = "19:50:44",
+				["data_inicio"] = "19:50:35",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					542, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 112367.677,
+				["contra"] = "Riverpaw Outrunner",
+				["TimeData"] = {
+				},
+			}, -- [4]
+			{
+				{
+					["combatId"] = 21,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Riverpaw Outrunner"] = 689,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PRIEST",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 689.00894,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1486752619,
+							["friendlyfire_total"] = 0,
+							["spec"] = 256,
+							["nome"] = "Lóverocket",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[589] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 136,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Riverpaw Outrunner"] = 239,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 103,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 239,
+										["c_max"] = 68,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 68,
+									},
+									[116616] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 117,
+										["targets"] = {
+											["Riverpaw Outrunner"] = 450,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 450,
+										["n_min"] = 109,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 450,
+										["c_max"] = 0,
+										["id"] = 116616,
+										["r_dmg"] = 0,
+										["spellschool"] = 28,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 689.00894,
+							["serial"] = "Player-1303-08F0C236",
+							["last_dps"] = 145.575520811543,
+							["custom"] = 0,
+							["last_event"] = 1486752618,
+							["damage_taken"] = 0.00894,
+							["start_time"] = 1486752614,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 21,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.002167,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["spec"] = 256,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.002167,
+							["targets_overheal"] = {
+								["Lóverocket"] = 81,
+							},
+							["healing_taken"] = 0.002167,
+							["totalover"] = 81.002167,
+							["total_without_pet"] = 0.002167,
+							["heal_enemy_amt"] = 0,
+							["iniciar_hps"] = false,
+							["classe"] = "PRIEST",
+							["total"] = 0.002167,
+							["last_event"] = 1486752618,
+							["end_time"] = 1486752619,
+							["nome"] = "Lóverocket",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Lóverocket"] = 81,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Lóverocket"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 81,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1486752616,
+							["delay"] = 0,
+							["serial"] = "Player-1303-08F0C236",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 21,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 8.005049,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PRIEST",
+							["total"] = 0.005049,
+							["nome"] = "Lóverocket",
+							["spec"] = 256,
+							["grupo"] = true,
+							["resource_type"] = 13,
+							["tipo"] = 3,
+							["received"] = 0.005049,
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+								},
+							},
+							["serial"] = "Player-1303-08F0C236",
+							["last_event"] = 1486752635,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 21,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[589] = {
+										["uptime"] = 4,
+										["activedamt"] = 0,
+										["id"] = 589,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 10,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[186406] = {
+										["uptime"] = 5,
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[192225] = {
+										["uptime"] = 5,
+										["activedamt"] = 1,
+										["id"] = 192225,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 256,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[589] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1486752619,
+							["nome"] = "Lóverocket",
+							["pets"] = {
+							},
+							["serial"] = "Player-1303-08F0C236",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 21,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Lóverocket"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Riverpaw Outrunner",
+				["combat_counter"] = 92,
+				["playing_solo"] = true,
+				["totals"] = {
+					688.995244, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Lóverocket"] = 0.002167,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Lóverocket"] = 689.00894,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 112352.231,
+				["combat_id"] = 21,
+				["instance_type"] = "none",
+				["frags"] = {
+					["Riverpaw Outrunner"] = 2,
+				},
+				["data_fim"] = "19:50:20",
+				["data_inicio"] = "19:50:15",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					689, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 112346.975,
+				["contra"] = "Riverpaw Outrunner",
+				["TimeData"] = {
+				},
+			}, -- [5]
+		},
+	},
+	["last_day"] = "10",
+	["nick_tag_cache"] = {
+		["nextreset"] = 1488047243,
+		["last_version"] = 8,
+	},
+	["tabela_instancias"] = {
+	},
+	["combat_id"] = 25,
+	["savedStyles"] = {
+	},
+	["cached_talents"] = {
+		["Player-1303-08F0C236"] = {
+		},
+	},
+	["last_instance_time"] = 0,
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+			["damage"] = {
+			},
+		},
+		["start_time"] = 0,
+		["data_inicio"] = 0,
+		["combat_counter"] = 3,
+		["last_events_tables"] = {
+		},
+		["raid_roster"] = {
+		},
+		["totals_grupo"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+		},
+		["frags"] = {
+		},
+		["data_fim"] = 0,
+		["totals"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
+		},
+		["CombatSkillCache"] = {
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["TimeData"] = {
+		},
+		["__call"] = {
+		},
+	},
+	["last_version"] = "v7.1.5.3370",
+	["local_instances_config"] = {
+		{
+			["segment"] = 0,
+			["sub_attribute"] = 1,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["is_open"] = true,
+			["isLocked"] = false,
+			["snap"] = {
+			},
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -415.000038146973,
+					["x"] = 693.333374023438,
+					["w"] = 320.000061035156,
+					["h"] = 129.999984741211,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["announce_cooldowns"] = {
+		["enabled"] = false,
+		["ignored_cooldowns"] = {
+		},
+		["custom"] = "",
+		["channel"] = "RAID",
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["last_instance_id"] = 0,
+	["cached_specs"] = {
+		["Player-1303-08F0C236"] = 256,
+	},
+}

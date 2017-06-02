@@ -1,0 +1,70 @@
+
+infSlagBucketDB = {
+	["profileKeys"] = {
+		["Infx - Twisting Nether"] = "Infx - Twisting Nether",
+		["Infeh - Twisting Nether"] = "Infeh - Twisting Nether",
+		["Infe - Twisting Nether"] = "Infe - Twisting Nether",
+		["Inffe - Twisting Nether"] = "Inffe - Twisting Nether",
+		["Inphe - Twisting Nether"] = "Inphe - Twisting Nether",
+		["Inf - Twisting Nether"] = "Inf - Twisting Nether",
+		["Inpher - Twisting Nether"] = "Inpher - Twisting Nether",
+	},
+	["profiles"] = {
+		["Infx - Twisting Nether"] = {
+			["CMS"] = {
+				["helm"] = 1,
+			},
+			["2B"] = {
+				["helm"] = 1,
+			},
+			["1A"] = {
+				["helm"] = 1,
+			},
+			["3C"] = {
+				["helm"] = 1,
+			},
+		},
+		["Inffe - Twisting Nether"] = {
+			["CM's"] = {
+			},
+		},
+		["Inf - Twisting Nether"] = {
+			["CM's"] = {
+				["helm"] = 1,
+			},
+			["1A"] = {
+				["helm"] = 1,
+			},
+			["2B"] = {
+				["helm"] = 1,
+			},
+		},
+		["Infe - Ravencrest"] = {
+			["1A"] = {
+				["helm"] = 1,
+			},
+		},
+		["Infeh - Twisting Nether"] = {
+			["3C"] = {
+				["helm"] = 1,
+			},
+			["2B"] = {
+				["helm"] = 1,
+				["cloak"] = 1,
+			},
+			["1A"] = {
+				["helm"] = 1,
+			},
+		},
+		["Infe - Twisting Nether"] = {
+			["1A"] = {
+				["helm"] = 1,
+			},
+			["3C"] = {
+			},
+			["2B"] = {
+				["helm"] = 1,
+			},
+		},
+	},
+}

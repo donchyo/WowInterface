@@ -1,0 +1,192 @@
+
+SkadaPerCharDB = {
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["time"] = 0,
+		["interrupts"] = 0,
+		["damage"] = 1132,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "WARRIOR",
+				["damaged"] = {
+				},
+				["auras"] = {
+				},
+				["role"] = "NONE",
+				["time"] = 12,
+				["interrupts"] = 0,
+				["damage"] = 1132,
+				["damagespells"] = {
+					["Slam"] = {
+						["hitmin"] = 67,
+						["max"] = 107,
+						["min"] = 67,
+						["hitmax"] = 107,
+						["hit"] = 11,
+						["totalhits"] = 11,
+						["hitamount"] = 1003,
+						["id"] = 1464,
+						["damage"] = 1003,
+					},
+					["Attack"] = {
+						["hitmin"] = 37,
+						["max"] = 48,
+						["min"] = 37,
+						["hitmax"] = 48,
+						["hit"] = 3,
+						["totalhits"] = 3,
+						["hitamount"] = 129,
+						["id"] = 6603,
+						["damage"] = 129,
+					},
+				},
+				["power"] = {
+					{
+						["amount"] = 23,
+						["spells"] = {
+							[173401] = 23,
+						},
+					}, -- [1]
+				},
+				["damagetaken"] = 37,
+				["deathlog"] = {
+					{
+						["ts"] = 1481503483.756,
+						["amount"] = -3,
+						["hp"] = 224,
+						["spellid"] = 88163,
+						["srcname"] = "Mottled Boar",
+					}, -- [1]
+					{
+						["ts"] = 1481503489.652,
+						["amount"] = -5,
+						["hp"] = 220,
+						["spellid"] = 88163,
+						["srcname"] = "Mottled Boar",
+					}, -- [2]
+					{
+						["ts"] = 1481503504.911,
+						["amount"] = -6,
+						["hp"] = 224,
+						["spellid"] = 88163,
+						["srcname"] = "Scorpid Worker",
+					}, -- [3]
+					{
+						["ts"] = 1481503521.939,
+						["amount"] = -5,
+						["hp"] = 218,
+						["spellid"] = 88163,
+						["srcname"] = "Scorpid Worker",
+					}, -- [4]
+					{
+						["ts"] = 1481503532.098,
+						["amount"] = -6,
+						["hp"] = 224,
+						["spellid"] = 88163,
+						["srcname"] = "Scorpid Worker",
+					}, -- [5]
+					{
+						["ts"] = 1481503544.099,
+						["amount"] = -7,
+						["hp"] = 238,
+						["spellid"] = 88163,
+						["srcname"] = "Scorpid Worker",
+					}, -- [6]
+					{
+						["ts"] = 1481503560.154,
+						["amount"] = -5,
+						["hp"] = 233,
+						["spellid"] = 88163,
+						["srcname"] = "Scorpid Worker",
+					}, -- [7]
+					["pos"] = 8,
+				},
+				["id"] = "Player-3674-07C1666D",
+				["overhealing"] = 0,
+				["damagetakenspells"] = {
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["min"] = 3,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "Attack",
+						["blocked"] = 0,
+						["totalhits"] = 7,
+						["resisted"] = 0,
+						["max"] = 7,
+						["damage"] = 37,
+					},
+				},
+				["healingspells"] = {
+				},
+				["shielding"] = 0,
+				["name"] = "Krixiyo",
+				["healing"] = 0,
+				["healed"] = {
+				},
+				["dispells"] = 0,
+				["ccbreaks"] = 0,
+				["maxhp"] = 224,
+			}, -- [1]
+		},
+		["deaths"] = 0,
+		["mobs"] = {
+			["Scorpid Worker"] = {
+				["players"] = {
+					["Krixiyo"] = {
+						["taken"] = 833,
+						["done"] = 29,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 833,
+				["done"] = 29,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Mottled Boar"] = {
+				["players"] = {
+					["Krixiyo"] = {
+						["taken"] = 299,
+						["done"] = 8,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 299,
+				["done"] = 8,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+		},
+		["mobtaken"] = 1132,
+		["healing"] = 0,
+		["power"] = {
+			23, -- [1]
+		},
+		["overhealing"] = 0,
+		["shielding"] = 0,
+		["name"] = "Total",
+		["starttime"] = 1481503478,
+		["damagetaken"] = 37,
+		["mobhdone"] = 0,
+		["last_action"] = 1481503478,
+		["mobdone"] = 37,
+	},
+	["sets"] = {
+	},
+}

@@ -1,0 +1,30 @@
+
+MicroMenuSettings = {
+	["profileKeys"] = {
+		["Krixidh - Grim Batol"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["anchorOffsetX"] = 0.40937547720963,
+			["order"] = {
+				"SpellbookMicroButton", -- [1]
+				"TalentMicroButton", -- [2]
+				"QuestLogMicroButton", -- [3]
+				"GuildMicroButton", -- [4]
+				"LFDMicroButton", -- [5]
+				"EJMicroButton", -- [6]
+				"StoreMicroButton", -- [7]
+				"CollectionsMicroButton", -- [8]
+				"HelpMicroButton", -- [9]
+				"AchievementMicroButton", -- [10]
+				"CharacterMicroButton", -- [11]
+				"MainMenuMicroButton", -- [12]
+			},
+			["spacing"] = 0,
+			["anchorOffsetY"] = 0.225926039160027,
+			["version"] = "1.2.3",
+			["lock"] = true,
+			["frameLock"] = true,
+		},
+	},
+}

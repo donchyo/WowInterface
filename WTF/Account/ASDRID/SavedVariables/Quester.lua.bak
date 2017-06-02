@@ -1,0 +1,16 @@
+
+QuesterDB = {
+	["profileKeys"] = {
+		["Greenzuriz - Aggra (Português)"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["morework"] = false,
+			["jobsdone"] = false,
+			["pos"] = {
+				["y"] = 555.951538085938,
+				["x"] = 970.73974609375,
+			},
+		},
+	},
+}

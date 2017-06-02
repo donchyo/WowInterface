@@ -1,0 +1,39 @@
+VER 3 010000000000000C " " "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cleanse Spirit
+END
+VER 3 010000000000000B "asd" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [nomod] ghost wolf
+/use [mod:shift] 6
+/use [mod:ctrl]15
+END
+VER 3 0100000000000007 "chain" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]chain heal
+END
+VER 3 0100000000000008 "dispell" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Purify Spirit
+END
+VER 3 0100000000000004 "earthshield" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]earth shield
+END
+VER 3 0100000000000002 "fws" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@focus] wind shear
+END
+VER 3 0100000000000005 "healing surge" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Healing surge
+END
+VER 3 0100000000000006 "healing wage" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Healing wave
+END
+VER 3 0100000000000003 "rip" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]riptide
+END
+VER 3 0100000000000009 "unleash" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]unleash life
+END

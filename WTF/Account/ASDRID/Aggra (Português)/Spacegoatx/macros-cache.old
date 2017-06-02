@@ -1,0 +1,44 @@
+VER 3 010000000000000D "beacon" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]beacon of light
+END
+VER 3 0100000000000003 "bop" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Hand of protection
+END
+VER 3 0100000000000008 "cleanse" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cleanse
+END
+VER 3 010000000000000A "cs" "INV_MISC_QUESTIONMARK"
+/cast hammer of wrath
+/cancelaura hand of protection
+/cancelaura divine shield
+END
+VER 3 0100000000000006 "fol" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]flash of light
+END
+VER 3 0100000000000004 "freedom" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Hand of freedom
+END
+VER 3 010000000000000B "hl" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy Light
+END
+VER 3 0100000000000001 "lay" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]lay on hands
+END
+VER 3 0100000000000009 "prism self" "INV_MISC_QUESTIONMARK"
+/cast [@krixi] holy prism
+END
+VER 3 010000000000000E "radiance" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy radiance
+END
+VER 3 0100000000000002 "sac" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Hand of sacrifice
+END
+VER 3 0100000000000007 "salv" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Hand of salvation
+END
+VER 3 010000000000000C "shock" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy shock
+END
+VER 3 0100000000000005 "wog" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]word of glory
+END

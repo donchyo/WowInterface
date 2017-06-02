@@ -1,0 +1,34 @@
+tag 3a145aa11912eba760d24fe988bff2d1f3a03d76 7.2.0.1
+Author:	James D. Callahan III <jcallahan@curse.com>
+Date:	Fri Apr 28 05:00:21 2017 -0500
+
+commit cdb5c82a934070024d8529901a8cc5449c0aaef7
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Apr 28 04:59:11 2017 -0500
+
+    Add support for Legionfall War Supplies, Echoes of Battle, and Echoes of Domination.
+
+commit a974532037df14600cecebfe1064884e2bab0300
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Apr 28 04:27:02 2017 -0500
+
+    Move currency definitions to Currencies.lua
+
+commit 03b18c10e5a3fa2cc141e7c2ac2461db7ff98105
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Apr 28 04:00:54 2017 -0500
+
+    Remove unnecessary constant.
+
+commit cbdb1e4aa0f833bf055a0f693bb07d7997b9146f
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Apr 28 03:59:54 2017 -0500
+
+    Change header styling.
+
+commit 3951f4e5ad824ddf5e453005acf0419e67042265
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Apr 28 03:58:38 2017 -0500
+
+    Update ToC Interface to 70200
+

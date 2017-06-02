@@ -1,0 +1,38 @@
+VER 3 0100000000000005 " " "INV_MISC_QUESTIONMARK"
+/cast Hand of Gul'dan
+END
+VER 3 0100000000000006 " " "INV_MISC_QUESTIONMARK"
+/cast Command Demon
+END
+VER 3 0100000000000009 "axe" "INV_MISC_QUESTIONMARK"
+/cast axe toss
+END
+VER 3 0100000000000008 "felbast" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast incinerate
+/cast felblast
+END
+VER 3 0100000000000007 "focus" "INV_MISC_QUESTIONMARK"
+#showtooltip command demon
+/cast [@focus] Command Demon
+END
+VER 3 010000000000000A "grimoire" "INV_MISC_QUESTIONMARK"
+/cast grimoire: doomguard
+END
+VER 3 0100000000000001 "havock" "INV_MISC_QUESTIONMARK"
+#showtooltip Havoc
+/cast [@mouseover,harm] Havoc; [harm] Havoc
+END
+VER 3 0100000000000004 "pet" "INV_MISC_QUESTIONMARK"
+/cast Corruption
+END
+VER 3 010000000000000B "petattack" "INV_MISC_QUESTIONMARK"
+END
+VER 3 0100000000000002 "ress" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help][help][@player,help]soulstone
+END
+VER 3 0100000000000003 "sburn" "INV_MISC_QUESTIONMARK"
+#showtooltip shadowburn
+/cast [@mouseover,harm] shadowburn; [harm] shadowburn
+END

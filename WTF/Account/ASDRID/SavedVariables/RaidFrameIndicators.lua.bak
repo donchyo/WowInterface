@@ -1,0 +1,29 @@
+
+IndicatorsDB = {
+	["profileKeys"] = {
+		["Nyrith - Grim Batol"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["size4"] = 8,
+			["showDebuffs"] = true,
+			["showDispelDebuffs"] = true,
+			["showDecimals4"] = false,
+			["auras5"] = "Shield Wall\nIcebound Fortitude\nFortifying Brew\nGuardian of Ancient Kings\nSurvival Instincts\nzen meditation\n\n",
+			["iconSize4"] = 15,
+			["showDecimals1"] = false,
+			["iconSize3"] = 15,
+			["auras3"] = "Ironbark\nHand of Sacrifice\nPain Supression\nGuardian Spirit\nVigilance\nLife Coccon\n",
+			["auras6"] = "Guard\nLast Stand\nMight of Ursoc\nVamperic Blood\nArdent Defender",
+			["iconSize6"] = 15,
+			["auras4"] = "Demoralizing Shout\nBone Shield\nBarkskin\n115308\nDivine Protection",
+			["auras2"] = "Blood Shield\nShuffle\nShield Block\nShield of the Righteous\nSavage Defense\n",
+			["iconSize2"] = 15,
+			["iconSize5"] = 15,
+			["showDecimals3"] = false,
+			["size3"] = 12,
+			["showBuffs"] = true,
+			["showDecimals2"] = false,
+		},
+	},
+}

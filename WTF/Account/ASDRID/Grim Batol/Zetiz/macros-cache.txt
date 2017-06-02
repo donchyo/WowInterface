@@ -1,0 +1,35 @@
+VER 3 0100000000000003 "focus" "INV_MISC_QUESTIONMARK"
+/cast [@focus] kick
+END
+VER 3 0100000000000008 "marked for death" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover, nodead] marked for death
+END
+VER 3 0100000000000004 "mut" "INV_MISC_QUESTIONMARK"
+#showtooltip vendetta
+/cast Shadow Reflection
+/cast vendetta
+END
+VER 3 0100000000000006 "opener" "INV_THROWINGKNIFE_02"
+/use Kihra's Adrenaline Injector
+/cast slice and dice
+/equipset sub
+END
+VER 3 0100000000000009 "pickpocket" "INV_Misc_QuestionMark"
+/cast [@mouseover] pick pocket
+END
+VER 3 0100000000000001 "prem amb" "INV_MISC_QUESTIONMARK"
+/cast Premeditation
+/cast Ambush
+END
+VER 3 0100000000000007 "spirithsitf" "INV_MISC_QUESTIONMARK"
+/cancelaura spirit shift
+END
+VER 3 0100000000000002 "sub" "INV_MISC_QUESTIONMARK"
+/cast Shadow Reflection
+/cast Shadow Dance
+END
+VER 3 0100000000000005 "TRICKS" "INV_MISC_QUESTIONMARK"
+#showtooltip tricks of the trade
+/cast [@mouseover, help, nodead][help,nodead][@focus,help,nodead]tricks of the trade
+END

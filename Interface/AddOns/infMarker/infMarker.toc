@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rMarker
+## Author: iNFEH @ methodwow.com
+## Notes: Aids with my random loss of memory.
+infMarker.lua

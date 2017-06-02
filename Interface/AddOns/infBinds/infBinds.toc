@@ -1,0 +1,5 @@
+﻿## Interface: 60000
+## Title: |cff3399FFinf|rBinds
+## Author: iNFEH @ methodwow.com
+## Notes: asdf.
+infBinds.lua

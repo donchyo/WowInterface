@@ -1,0 +1,12 @@
+
+ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/g cauas thats some utility", -- [1]
+		"/iks", -- [2]
+		" atleast my rogue went from 860 shadow relic to 905", -- [3]
+		" thats about it", -- [4]
+		"/reload", -- [5]
+	},
+	["ChatLog"] = {
+	},
+}

@@ -1,0 +1,49 @@
+
+CombuctorVersion = nil
+CombuctorDB2 = {
+	["global"] = {
+	},
+	["version"] = "6.2",
+	["profiles"] = {
+		["Krixi - Grim Batol"] = {
+			["inventory"] = {
+				["h"] = 664.50390625,
+				["showBags"] = false,
+				["position"] = {
+					"RIGHT", -- [1]
+					nil, -- [2]
+					"RIGHT", -- [3]
+					-60.8299980163574, -- [4]
+					-40.1392059326172, -- [5]
+				},
+				["exclude"] = {
+					["All"] = {
+						"All", -- [1]
+					},
+				},
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+				},
+				["w"] = 432.835144042969,
+				["leftSideFilter"] = true,
+			},
+			["bank"] = {
+				["h"] = 512,
+				["showBags"] = false,
+				["sets"] = {
+					"All", -- [1]
+					"Equipment", -- [2]
+					"Trade Goods", -- [3]
+					"Miscellaneous", -- [4]
+				},
+				["w"] = 512,
+				["exclude"] = {
+					["All"] = {
+						"All", -- [1]
+					},
+				},
+			},
+		},
+	},
+}

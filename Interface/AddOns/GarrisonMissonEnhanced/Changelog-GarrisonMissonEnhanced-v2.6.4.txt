@@ -1,0 +1,13 @@
+tag v2.6.4
+75c192829c018e187b27524bcfd012619472fad9
+DarkStar <C:\Users\DarkStar\AppData\Roaming\The Bat!>
+2016-07-23 15:08:06 +0200
+
+tagging as v2.6.4
+
+
+--------------------
+
+DarkStar:
+	- some parts fixed not all yet
+	- this fixes some parts but not all yet

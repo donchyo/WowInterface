@@ -1,0 +1,71 @@
+VER 3 0100000000000003 " POM" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Prayer of Mending
+END
+VER 3 0100000000000012 "bh" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]binding heal
+END
+VER 3 0100000000000011 "chakra" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy Word: Chastise
+END
+VER 3 010000000000000E "clarity" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] clarity of will
+END
+VER 3 0100000000000009 "disepll" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Purify
+END
+VER 3 0100000000000006 "FLASH HEAL" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]flash heal
+END
+VER 3 010000000000000C "focus" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@focus] silence
+END
+VER 3 0100000000000010 "gs" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]guardian spirit
+END
+VER 3 0100000000000005 "heal" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]HEAL
+END
+VER 3 010000000000000D "holyfire" "INV_MISC_QUESTIONMARK"
+/cast [@targettarget, harm, exists] holy fire;  [@focus, harm, exists]holy fire; [@focustarget, harm, exists] holy fire; [@mouseovertarget, exist, harm]holy fire; holy fire
+END
+VER 3 0100000000000007 "leap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]leap of faith
+END
+VER 3 010000000000000A "milling1" "INV_MISC_QUESTIONMARK"
+/run function FnH() for i=0,4 do for j=1,GetContainerNumSlots(i) do local t={GetItemInfo(GetContainerItemLink(i,j) or 0)} if t[7]=="Herb" and select(2,GetContainerItemInfo(i,j))>=5 then return i.." "..j,t[1] end end end end
+END
+VER 3 010000000000000B "milling2" "INV_MISC_QUESTIONMARK"
+/run local f,l,n=AuM or CreateFrame("Button","AuM",nil,"SecureActionButtonTemplate") f:SetAttribute("type","macro") l,n=FnH() if l then f:SetAttribute("macrotext","/cast Milling\n/use "..l) SetMacroItem("milling1",n) end
+/click AuM
+END
+VER 3 0100000000000002 "pennance" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/console cameraSmoothTrackingStyle 0
+/cast [@mouseover,help,exists] Penance; Penance
+END
+VER 3 0100000000000008 "poh" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Prayer of Healing
+END
+VER 3 0100000000000004 "PS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Pain Suppression
+END
+VER 3 0100000000000001 "pws" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] power word: shield
+END
+VER 3 010000000000000F "renew" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]renew
+END

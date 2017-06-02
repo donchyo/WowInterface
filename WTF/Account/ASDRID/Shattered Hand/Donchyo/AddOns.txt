@@ -1,0 +1,3 @@
+TradeSkillMaster_ItemTracker: disabled
+Rarity: enabled
+Rarity_Options: enabled

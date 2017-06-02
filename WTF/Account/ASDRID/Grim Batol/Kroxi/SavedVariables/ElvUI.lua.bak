@@ -1,0 +1,22 @@
+
+ElvCharacterDB = {
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+	["ChatLog"] = {
+	},
+	["ChatEditHistory"] = {
+		"/g its my only legendary", -- [1]
+		"/g waow", -- [2]
+		"/g hmm", -- [3]
+		"/g +17 ilvl on fury weapn i guess", -- [4]
+		" vinner du nått?", -- [5]
+		" det låter som hur det brukar gå", -- [6]
+		" fick samma widow main 3 gånger i mina placementss", -- [7]
+		" askul", -- [8]
+		" :P", -- [9]
+	},
+}

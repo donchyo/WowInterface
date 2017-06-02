@@ -1,0 +1,9 @@
+------------------------------------------------------------------------
+r83 | gnarfoz | 2015-03-12 22:02:22 +0000 (Thu, 12 Mar 2015) | 2 lines
+Changed paths:
+   M /trunk/DeathNote.lua
+   M /trunk/DeathNote.toc
+
+- Take over the Blizzard death recap button
+- TOC bump
+------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+Chatter: enabled
+Details: enabled
+Details_DataStorage: enabled

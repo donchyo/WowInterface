@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rAbsorbs
+## Author: iNFEH @ methodwow.com
+## Notes: Absorb tracker.
+infAbsorbs.lua

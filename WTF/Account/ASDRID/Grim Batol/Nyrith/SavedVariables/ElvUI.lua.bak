@@ -1,0 +1,18 @@
+
+ElvCharacterDB = {
+	["BodyGuard"] = {
+		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+	["ChatLog"] = {
+	},
+	["ChatEditHistory"] = {
+		" getting traits now feels so dumb", -- [1]
+		" having |cff71d5ff|Hapower:953:3:3|h[Bestial Fortitude]|h|rvs |cff71d5ff|Hapower:954:3:3|h[Sharpened Instincts]|h|r", -- [2]
+		" no fun", -- [3]
+		" at all", -- [4]
+		" mhm", -- [5]
+	},
+}

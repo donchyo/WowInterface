@@ -1,0 +1,10 @@
+﻿## Interface: 70100
+## Title: Raid Frame Indicators
+
+## Version: 1.12
+## Author: Szandos
+## Notes: Adds indicators to the standard raid frames
+## SavedVariables: IndicatorsDB
+embeds.xml
+RaidFrameIndicators.lua
+RaidFrameIndicatorsConfig.lua

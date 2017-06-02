@@ -1,0 +1,7 @@
+changeset:   628:26e997aa474d
+tag:         v7.2.0.3693.118
+user:        Tercio
+date:        Thu May 25 13:32:02 2017 -0300
+summary:     - fixed warrior fury being detected as protection warrior.
+
+

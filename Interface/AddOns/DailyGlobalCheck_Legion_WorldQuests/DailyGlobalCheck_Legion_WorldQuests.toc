@@ -1,0 +1,13 @@
+## Interface: 70100
+## Title: DGC - Legion World Quests
+## Author: Jadya  EU-Well of Eternity
+## Notes: A |cff00FF00Daily Global Check|r plugin that tracks the world quests available in Legion
+## eMail: n_rhygar@yahoo.it
+## Dependencies: DailyGlobalCheck
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## X-Curse-Packaged-Version: v1.0.5
+## X-Curse-Project-Name: Daily Global Check_Legion World Quests
+## X-Curse-Project-ID: daily-global-check_l-world-quest
+## X-Curse-Repository-ID: wow/daily-global-check_l-world-quest/mainline
+DailyGlobalCheck_Legion_WorldQuests.lua

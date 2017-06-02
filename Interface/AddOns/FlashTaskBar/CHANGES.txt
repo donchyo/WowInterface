@@ -1,0 +1,7 @@
+changeset:   52:c4b24fd9b035
+tag:         v1.15.0-release
+user:        Tercio
+date:        Mon May 08 14:57:22 2017 -0300
+summary:     - when the flypoint ends, the chat msg is now localizeble (more to come).
+
+

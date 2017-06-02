@@ -1,0 +1,19 @@
+
+AngryAssign_Pages = {
+}
+AngryAssign_State = {
+	["directionUp"] = false,
+	["locked"] = true,
+	["display"] = {
+		["y"] = -91.1732788085938,
+		["x"] = 5.93025875091553,
+		["point"] = "TOPLEFT",
+		["scale"] = 1,
+	},
+	["tree"] = {
+	},
+	["window"] = {
+	},
+}
+AngryAssign_Config = {
+}

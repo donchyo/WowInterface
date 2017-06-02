@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rGladiusMaximus
+## Author: iNFEH @ methodwow.com
+## Notes: Are you not entertained?!
+infGladiusMaximus.lua

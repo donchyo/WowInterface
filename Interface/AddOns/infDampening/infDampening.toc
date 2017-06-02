@@ -1,0 +1,6 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rDampening
+## Author: iNFEH @ methodwow.com
+## Version: 1.2
+## Notes: Adds an additional line to the arena status text with current dampening percent.
+infDampening.lua

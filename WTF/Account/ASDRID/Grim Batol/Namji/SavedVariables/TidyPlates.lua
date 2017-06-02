@@ -1,0 +1,20 @@
+
+TidyPlatesOptions = {
+	["SecondSpecProfile"] = "Damage",
+	["EnemyAutomation"] = "No Automation",
+	["DisableSoftTransitions"] = false,
+	["WelcomeShown"] = true,
+	["PrimaryProfile"] = "Damage",
+	["FriendlyAutomation"] = "No Automation",
+	["DisableCastBars"] = false,
+	["SecondaryTheme"] = "Threat Plates",
+	["CompatibilityMode"] = false,
+	["PrimaryTheme"] = "Threat Plates",
+	["SecondaryProfile"] = "Damage",
+	["FourthSpecProfile"] = "Damage",
+	["ActiveTheme"] = "Threat",
+	["ForceBlizzardFont"] = false,
+	["ActiveThemeName"] = "",
+	["ThirdSpecProfile"] = "Damage",
+	["FirstSpecProfile"] = "Damage",
+}

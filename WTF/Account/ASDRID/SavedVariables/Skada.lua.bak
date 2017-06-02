@@ -1,0 +1,97 @@
+
+SkadaDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["hasUpgraded"] = true,
+	["profileKeys"] = {
+		["Infx - Twisting Nether"] = "Default",
+		["Infeh - Twisting Nether"] = "Default",
+		["Infe - Twisting Nether"] = "Default",
+		["Inphe - Twisting Nether"] = "Default",
+		["Inffe - Twisting Nether"] = "Default",
+		["Inf - Twisting Nether"] = "Default",
+		["Inpher - Twisting Nether"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["modules"] = {
+				["threatsound"] = false,
+				["threatsoundname"] = "None",
+			},
+			["hidepvp"] = true,
+			["modulesBlocked"] = {
+				["Debuffs"] = true,
+				["CC"] = true,
+				["Power"] = true,
+				["TotalHealing"] = true,
+				["Threat"] = true,
+				["Dispels"] = false,
+				["Overhealing"] = true,
+			},
+			["windows"] = {
+				{
+					["barheight"] = 16,
+					["barmax"] = 14,
+					["classicons"] = false,
+					["barslocked"] = true,
+					["background"] = {
+						["borderthickness"] = 12,
+						["height"] = 230.9998136447725,
+						["color"] = {
+							["a"] = 0.3899999856948853,
+							["b"] = 0,
+						},
+						["bordertexture"] = "Blizzard Tooltip",
+					},
+					["y"] = 50.11373901367188,
+					["x"] = -18.625244140625,
+					["name"] = "iNF",
+					["point"] = "BOTTOMRIGHT",
+					["barbgcolor"] = {
+						["a"] = 0,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["mode"] = "Damage",
+					["spark"] = false,
+					["bartexture"] = "Flat",
+					["enablebackground"] = true,
+					["enabletitle"] = false,
+					["barwidth"] = 201.1235405222774,
+					["title"] = {
+						["menubutton"] = false,
+						["font"] = "Morpheus",
+					},
+					["barfont"] = "Friz Quadrata TT",
+				}, -- [1]
+			},
+			["icon"] = {
+				["hide"] = true,
+			},
+			["hidedisables"] = false,
+			["report"] = {
+				["number"] = 3,
+				["channel"] = "party",
+				["target"] = "",
+			},
+			["columns"] = {
+				["Death log_Percent"] = false,
+				["Damage_Percent"] = false,
+				["Damage_DPS"] = true,
+				["Threat_TPS"] = false,
+				["Threat_Percent"] = false,
+			},
+			["showranks"] = false,
+			["numberformat"] = 2,
+			["setstokeep"] = 5,
+			["onlykeepbosses"] = true,
+			["tooltippos"] = "topleft",
+			["reset"] = {
+				["join"] = 1,
+			},
+		},
+	},
+}

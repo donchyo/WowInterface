@@ -1,0 +1,2 @@
+Rarity: enabled
+Rarity_Options: enabled

@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rRetakeControl
+## Author: iNFEH @ methodwow.com
+## Notes: Shows the loss-of-control ui who's ze baws.
+infRetakeControl.lua

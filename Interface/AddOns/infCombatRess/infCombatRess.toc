@@ -1,0 +1,7 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rCombatRess
+## Author: iNFEH @ methodwow.com
+## Notes: Keeps track of combat resurrections for raid encounters in 6.0.
+## Version: 1.1
+## SavedVariables: infCombatRessDB
+infCombatRess.lua

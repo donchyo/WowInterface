@@ -1,0 +1,8 @@
+VER 3 0100000000000017 "aadsada" "INV_Misc_QuestionMark"
+/tar grunrik
+/tar karashi
+END
+VER 3 0100000000000016 "focus" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@focus] consume magic
+END

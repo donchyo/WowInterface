@@ -1,0 +1,42 @@
+
+QuesterDB = {
+	["profileKeys"] = {
+		["Donch - Grim Batol"] = "Default",
+		["Bawsi - Shattered Hand"] = "Default",
+		["Kroxi - Grim Batol"] = "Default",
+		["Namji - Grim Batol"] = "Default",
+		["Bawsie - Grim Batol"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
+		["Donch - Shattered Hand"] = "Default",
+		["Krixidh - Grim Batol"] = "Default",
+		["Donch - Crushridge"] = "Default",
+		["Donchyo - Shattered Hand"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
+		["Daimtårta - Aggra (Português)"] = "Default",
+		["Treefiddy - Aggra (Português)"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
+		["Greenzuriz - Aggra (Português)"] = "Default",
+		["Menardiairl - Culte de la Rive noire"] = "Default",
+		["Lilgaykrixi - Kazzak"] = "Default",
+		["Spacegoatx - Aggra (Português)"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
+		["Asdasdasdfaf - Grim Batol"] = "Default",
+		["Líttle - Grim Batol"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixiswag - Aggra (Português)"] = "Default",
+		["Krixiyo - Lightning's Blade"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["morework"] = false,
+			["jobsdone"] = false,
+			["showObjectivePercentages"] = false,
+			["pos"] = {
+				["y"] = 100,
+				["x"] = 100,
+			},
+		},
+	},
+}

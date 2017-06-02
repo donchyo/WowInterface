@@ -1,0 +1,8 @@
+<Bindings>
+	<Binding name="CLICK infBinds0:LeftButton" description="Focus" header="infBinds" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK infBinds1:LeftButton" description="Clear" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK infBinds2:LeftButton" description="Cancel" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+</Bindings>

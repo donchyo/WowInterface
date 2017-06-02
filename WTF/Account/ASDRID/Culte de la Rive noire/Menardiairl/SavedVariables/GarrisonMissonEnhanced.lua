@@ -1,0 +1,20 @@
+
+GarrisonMissonEnhancedLocalConfig = {
+	["ShowTimeLeft"] = true,
+	["BodyguardGossipHide"] = false,
+	["AutoPlace"] = true,
+	["ShowItemlevelFollower"] = true,
+	["CounterTraits"] = true,
+	["HideFollowerUpgrade"] = true,
+	["HideAlert"] = false,
+	["GlobalConf"] = true,
+	["ShowCounterFollower"] = true,
+	["ShowQuickAssignWorker"] = true,
+	["HideGarrisonAbility"] = false,
+	["QuickAssign"] = true,
+	["TimeOnMission"] = true,
+	["ShowWorkOrderTimes"] = true,
+	["FollowerRequired"] = true,
+	["AutoCompleteMissions"] = false,
+	["ShowSalvage"] = true,
+}

@@ -1,0 +1,28 @@
+------------------------------------------------------------------------
+r30 | saregon | 2016-10-27 06:47:54 +0000 (Thu, 27 Oct 2016) | 1 line
+Changed paths:
+   A /tags/v1.0.5 (from /trunk:29)
+
+release tag
+------------------------------------------------------------------------
+r29 | saregon | 2016-10-27 06:47:34 +0000 (Thu, 27 Oct 2016) | 3 lines
+Changed paths:
+   M /trunk/DailyGlobalCheck_Legion_WorldQuests.lua
+   M /trunk/DailyGlobalCheck_Legion_WorldQuests.toc
+
+- sorting should be fixed
+- 7.1 toc update
+
+------------------------------------------------------------------------
+r27 | saregon | 2016-10-02 08:13:37 +0000 (Sun, 02 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/DailyGlobalCheck_Legion_WorldQuests.lua
+
+world quests that reward gold and something else no longer appear under the "gold" rewards group
+------------------------------------------------------------------------
+r26 | saregon | 2016-09-18 19:38:15 +0000 (Sun, 18 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/DailyGlobalCheck_Legion_WorldQuests.lua
+
+-
+------------------------------------------------------------------------

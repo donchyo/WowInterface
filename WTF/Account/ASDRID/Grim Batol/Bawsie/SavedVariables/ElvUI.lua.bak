@@ -1,0 +1,18 @@
+
+ElvCharacterDB = {
+	["BodyGuard"] = {
+		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+	["ChatLog"] = {
+	},
+	["ChatEditHistory"] = {
+		"/g kk", -- [1]
+		"/m", -- [2]
+		"/wa", -- [3]
+		"/cast path of the jade serpent", -- [4]
+		"/bt", -- [5]
+	},
+}

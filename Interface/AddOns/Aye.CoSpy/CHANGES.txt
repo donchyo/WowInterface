@@ -1,0 +1,22 @@
+lightweight tag a415eff2ebe8781b4c09d095bff41e0a321aad20 1.0.1
+Author:	Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:	Mon Apr 17 05:40:03 2017 +0200
+
+commit a415eff2ebe8781b4c09d095bff41e0a321aad20
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Mon Apr 17 05:40:03 2017 +0200
+
+    Angry Keystones integration, minor cleanup
+
+commit 53ddc6a17587f69b93f7e621b24386e7805014cf
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Mon Apr 17 02:23:12 2017 +0200
+
+    version bump
+
+commit 865003eb9cfa4a199b939188f0633b20d4462863
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Mon Apr 17 01:46:12 2017 +0200
+
+    Minor technical changes: -CR,-.gitattributes -LF$
+

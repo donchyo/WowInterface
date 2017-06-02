@@ -1,0 +1,22 @@
+## Interface: 50001
+## Title: Smooth Durability
+## Notes: Armored man and paper doll durability modifier
+## OptionalDeps: Ace3
+## X-Curse-Packaged-Version: r78
+## X-Curse-Project-Name: SmoothDurability
+## X-Curse-Project-ID: smooth-durability
+## X-Curse-Repository-ID: wow/smooth-durability/mainline
+
+## Author: Ammo
+## X-Credits: Tekkub for tekability and duratek
+
+## SavedVariables: SmoothDurabilityDB
+
+#@no-lib-strip@
+libs.xml
+#@end-no-lib-strip@
+
+locales\enUS.lua
+locales\frFR.lua
+
+SmoothDurability.lua

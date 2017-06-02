@@ -1,0 +1,99 @@
+lightweight tag 2363233cd38cc7e42e5fe191b3cf56f893ecc900 1.0.6
+Author:	Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:	Tue Apr 25 03:59:28 2017 +0200
+
+commit 2363233cd38cc7e42e5fe191b3cf56f893ecc900
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Tue Apr 25 03:59:28 2017 +0200
+
+    unexpected error loop prevent
+
+commit cb7f3fae0dc54f03090fb35c2bc9ee6ab6de28c4
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Thu Apr 20 14:06:02 2017 +0200
+
+    minor code cleanup
+
+commit 09baa1e421feb4bfc8d7d5386f38c62b58744a6c
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Thu Apr 20 13:48:11 2017 +0200
+
+    remove redundant libs
+
+commit ab15c7ba8f8a102cafef4f6dd1149d7e3783aa74
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Thu Apr 20 12:29:03 2017 +0200
+
+    added debugging asserion
+    
+    added and used Aye.assert, the non–interrupting assert of pcalled
+    executions, that allows so safely load and execute module and it's calls
+    without interrupting others, still providing full asserion error data,
+    fully catchable by error trackers. Big thanks for inspiration to
+    nevcairiel and Vlad #wowuidev.
+
+commit 8b29146af65ecf4d4d796c60b965f61702c7aed1
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Mon Apr 17 01:46:45 2017 +0200
+
+    Minor technical changes: -CR,-.gitattributes -LF$
+
+commit b6bc24abfa010c6f48615b2992c7c6633b403d7b
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Sun Apr 16 14:06:15 2017 +0200
+
+    remove redundant libs, use LibStub for utils
+    
+    Redundant libs have been removed from main Aye addon: AceTimer-3.0 and
+    LibGroupInSpecT-1.1. Those libraries should be attached directly to
+    those modules, who uses it as /libs. LIbrary loading order has been
+    changed. Finally, updated readme, filling in missing dependency library
+    in description, and uprating utils readme, conviencing to use LibStub in
+    utils aswell as in libs. minor typo fixes.
+
+commit 2be71f7cd438687b38a9c558124d254efd6a0aba
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Sun Apr 16 05:20:29 2017 +0200
+
+    docs and new update for slash command serialization
+
+commit 04bfa0cf78ddde752f0e9081f0e12421b7e4e553
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Sun Apr 16 05:07:22 2017 +0200
+
+    failsafe executions, slash command serialization
+    
+    failsafe executions of .OnEnable, events, and slash commands. Slash
+    commands are also serialized into vararg instead of string of space
+    separated args. modules .slash handlers no longer needs to strsplit
+    input. If one or less arguments was used, there is no need for change,
+    otherwise, small redesign is needed, but preserialized values should
+    provide even easier usage since 1.0.5.
+
+commit 7196c515979c5b2750fc83a7f69b5f27304b8565
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Sun Apr 16 04:40:17 2017 +0200
+
+    failsafe load modules
+    
+    this option should prevent one module not to load others on loading fail
+    (ex. typo, outdated function calls)
+
+commit 786bc6010dadf377f1f31045fb3b02110382fde1
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Sun Apr 16 04:13:16 2017 +0200
+
+    version increase
+
+commit 37ab28c9b987675ddfdac3caf14c289a10e21c8e
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Sun Apr 16 04:13:02 2017 +0200
+
+    minor readme update
+
+commit bd81c60f0c774692764a926999dbd7c705d550f5
+Author: Pawel Benetkiewicz <benio@users.noreply.github.com>
+Date:   Sun Apr 16 04:12:41 2017 +0200
+
+    load only Aye addons that begins with "Aye."
+

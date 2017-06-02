@@ -1,0 +1,171 @@
+------------------------------------------------------------------------
+r78 | fuda01 | 2016-08-27 13:39:58 +0000 (Sat, 27 Aug 2016) | 1 line
+Changed paths:
+   A /tags/v2.1.12 (from /trunk:77)
+
+release
+------------------------------------------------------------------------
+r77 | fuda01 | 2016-08-27 13:39:42 +0000 (Sat, 27 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/vexrunes.toc
+   M /trunk/vexrunes.xml
+
+- bugfix: runes were shown as blood-runes after some loading screens
+------------------------------------------------------------------------
+r76 | fuda01 | 2016-08-27 13:12:50 +0000 (Sat, 27 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+ 
+------------------------------------------------------------------------
+r75 | fuda01 | 2016-08-27 09:50:09 +0000 (Sat, 27 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+ 
+------------------------------------------------------------------------
+r74 | fuda01 | 2016-08-27 09:49:10 +0000 (Sat, 27 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+minor bugfix (core.lua:638 error)
+------------------------------------------------------------------------
+r73 | fuda01 | 2016-08-27 05:42:24 +0000 (Sat, 27 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+ 
+------------------------------------------------------------------------
+r71 | fuda01 | 2016-08-27 05:40:50 +0000 (Sat, 27 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/vexrunes.toc
+
+-bugfix
+------------------------------------------------------------------------
+r70 | fuda01 | 2016-08-26 07:15:21 +0000 (Fri, 26 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+ 
+------------------------------------------------------------------------
+r68 | fuda01 | 2016-08-26 07:14:17 +0000 (Fri, 26 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+ 
+------------------------------------------------------------------------
+r67 | fuda01 | 2016-08-26 07:13:57 +0000 (Fri, 26 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/vexrunes.toc
+
+fixed a bug: textfields weren't changing their position accordingly
+------------------------------------------------------------------------
+r66 | fuda01 | 2016-08-25 13:54:40 +0000 (Thu, 25 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+ 
+------------------------------------------------------------------------
+r65 | fuda01 | 2016-08-25 13:48:37 +0000 (Thu, 25 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+ 
+------------------------------------------------------------------------
+r63 | fuda01 | 2016-08-25 13:47:58 +0000 (Thu, 25 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/defaults.lua
+   M /trunk/options/options_general.lua
+
+added a 2nd texture pack
+------------------------------------------------------------------------
+r62 | fuda01 | 2016-08-25 13:23:34 +0000 (Thu, 25 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+trying to get the release pushed - damn you buggy svn-protocol
+------------------------------------------------------------------------
+r60 | fuda01 | 2016-08-25 13:15:28 +0000 (Thu, 25 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/vexrunes.toc
+
+- fixed a svn problem with the addon sync
+------------------------------------------------------------------------
+r59 | fuda01 | 2016-08-25 13:07:34 +0000 (Thu, 25 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/options/options_show.lua
+   M /trunk/vexrunes.toc
+
+fixed a memory problem
+------------------------------------------------------------------------
+r58 | fuda01 | 2016-08-07 06:53:32 +0000 (Sun, 07 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+-
+------------------------------------------------------------------------
+r56 | fuda01 | 2016-08-07 06:46:38 +0000 (Sun, 07 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/vexrunes.toc
+
+bugfix: the white blink when a ready just got off cooldown wasn't shown at the correct rune when rune-sorting was deactivated
+------------------------------------------------------------------------
+r54 | fuda01 | 2016-08-06 15:26:15 +0000 (Sat, 06 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/options/options_cds.lua
+   M /trunk/options/options_general.lua
+   M /trunk/options/options_positions.lua
+   M /trunk/options/options_show.lua
+   M /trunk/vexrunes.toc
+
+changed a few variabel names
+------------------------------------------------------------------------
+r53 | fuda01 | 2016-08-06 15:05:11 +0000 (Sat, 06 Aug 2016) | 3 lines
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/defaults.lua
+   D /trunk/options/options_colors.lua
+   M /trunk/options/options_general.lua
+   M /trunk/options/options_positions.lua
+   M /trunk/options/options_show.lua
+   M /trunk/vexrunes.toc
+
+- bugfix: the white flash (shown when a rune just got ready) wasn't shown at the correct rune when 'rune sorting' was active
+- added "Fill effect": the last x seconds before the rune gets off cooldown a 2nd bar fills up above the normal bar. Look in the option panel to adjust the settings. It's active by default.
+- cleaned up the option panels
+------------------------------------------------------------------------
+r52 | fuda01 | 2016-08-02 14:39:47 +0000 (Tue, 02 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+upload test 2
+------------------------------------------------------------------------
+r51 | fuda01 | 2016-08-02 14:39:30 +0000 (Tue, 02 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+upload test
+------------------------------------------------------------------------
+r49 | fuda01 | 2016-08-02 14:33:31 +0000 (Tue, 02 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+test
+------------------------------------------------------------------------
+r48 | fuda01 | 2016-08-01 10:34:10 +0000 (Mon, 01 Aug 2016) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/defaults.lua
+   M /trunk/options/options_show.lua
+   M /trunk/vexrunes.toc
+
+- added option to show when targeting an attackable allthough 'hide when out of combat' is active
+------------------------------------------------------------------------

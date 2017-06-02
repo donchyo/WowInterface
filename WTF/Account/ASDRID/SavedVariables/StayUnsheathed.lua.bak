@@ -1,0 +1,30 @@
+
+StayUnsheathedDB = {
+	["profileKeys"] = {
+		["Krixidk - Grim Batol"] = "Krixidk - Grim Batol",
+	},
+	["char"] = {
+		["Krixidk - Grim Batol"] = {
+			["Specs"] = {
+				{
+					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+					["specNumber"] = 1,
+					["specName"] = "Blood",
+				}, -- [1]
+				{
+					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",
+					["specNumber"] = 2,
+					["specName"] = "Frost",
+				}, -- [2]
+				{
+					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_UnholyPresence",
+					["specNumber"] = 3,
+					["specName"] = "Unholy",
+				}, -- [3]
+			},
+		},
+	},
+}

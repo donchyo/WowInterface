@@ -1,0 +1,18 @@
+
+ElvCharacterDB = {
+	["BodyGuard"] = {
+		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+	["ChatLog"] = {
+	},
+	["ChatEditHistory"] = {
+		"/p the instance is in dalaran", -- [1]
+		"/p i could take it", -- [2]
+		" just finishing this dungeon", -- [3]
+		"/p could i have the chest dh friend?", -- [4]
+		"/p no, thanks though", -- [5]
+	},
+}

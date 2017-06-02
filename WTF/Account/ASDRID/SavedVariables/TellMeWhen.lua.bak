@@ -1,0 +1,38 @@
+
+TellMeWhenDB = {
+	["profileKeys"] = {
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+	},
+	["global"] = {
+		["TextLayouts"] = {
+			["icon1"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+			},
+			["bar2"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+			},
+		},
+	},
+	["Version"] = 72218,
+	["profiles"] = {
+		["Bawsie - Grim Batol"] = {
+			["Version"] = 72218,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1KZtW2ALhsEM",
+					["Point"] = {
+						["y"] = 54.4042816162109,
+						["x"] = -104.524780273438,
+					},
+				}, -- [1]
+			},
+			["Locked"] = true,
+		},
+	},
+}

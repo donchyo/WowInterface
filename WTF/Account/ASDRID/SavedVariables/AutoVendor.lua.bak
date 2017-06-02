@@ -1,0 +1,12 @@
+
+AutoVendorDB = {
+	["profileKeys"] = {
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+	},
+	["profiles"] = {
+		["Gnomalock - Grim Batol"] = {
+			["guildbankrepair"] = true,
+			["nonoptimal"] = false,
+		},
+	},
+}

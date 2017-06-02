@@ -1,0 +1,5 @@
+﻿## Interface: 60000
+## Title: |cff3399FFinf|rFlares
+## Author: iNFEH @ methodwow.com
+## Notes: Raidflare binds
+infFlares.lua

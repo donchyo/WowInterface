@@ -1,0 +1,5 @@
+## Interface: 70100
+## Title: Stop Reseting My Camera Please
+## Notes: Set the camera to max distance
+
+StopResetingMyCameraPlease.lua

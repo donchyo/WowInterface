@@ -1,0 +1,10 @@
+
+infResolveDB = {
+	["ypos"] = -61,
+	["xpos"] = 0,
+	["scale"] = 1,
+	["height"] = 24,
+	["moveable"] = true,
+	["icon"] = true,
+	["width"] = 140,
+}

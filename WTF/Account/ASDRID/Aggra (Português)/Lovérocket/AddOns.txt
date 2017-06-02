@@ -1,0 +1,6 @@
+ConsLegion: enabled
+TidyPlates: enabled
+TidyPlates_Threat: enabled
+TidyPlates_ThreatPlates: disabled
+TidyPlatesWidgets: enabled
+TidyPlatesHub: enabled

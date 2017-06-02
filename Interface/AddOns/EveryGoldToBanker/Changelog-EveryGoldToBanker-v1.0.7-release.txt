@@ -1,0 +1,12 @@
+tag v1.0.7-release
+1c30820303e529c12437be02e7f76553a182fe94
+Olivier Pelletier <opetgamers@gmail.com>
+2015-03-18 18:45:36 -0400
+
+
+
+--------------------
+
+Olivier Pelletier:
+	- Removing version number from the title.
+	- First commit. (v1.0.6)
