@@ -1,0 +1,23 @@
+Cache/
+Data/
+Erorors/
+Logs/
+Screenshots/
+Utils/
+.agent.db
+.build.info
+.curseclient
+.patch.result
+.product.db
+BlizzardError.exe
+Errors/
+Fonts/
+Launcher.db
+Scan-64.dll
+WoW.mfil
+World of Warcraft Launcher.exe
+Wow-64.exe
+Wow.exe
+dbghelp.dll
+Scan.dll
+updateUiGit.sh
