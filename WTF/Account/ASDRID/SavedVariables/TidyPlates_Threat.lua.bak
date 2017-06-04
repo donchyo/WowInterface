@@ -291,12 +291,12 @@ TidyPlatesThreatDB = {
 			},
 			["uniqueSettings"] = {
 				[33] = {
-					["scale"] = 1.4,
-					["name"] = "Fel Explosives",
-					["icon"] = 135799,
 					["color"] = {
 						["g"] = 0,
 					},
+					["name"] = "Fel Explosives",
+					["icon"] = 135799,
+					["scale"] = 1.4,
 				},
 				[34] = {
 				},
@@ -578,11 +578,11 @@ TidyPlatesThreatDB = {
 			},
 			["cache"] = {
 			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
 			["text"] = {
 				["full"] = true,
+			},
+			["questWidget"] = {
+				["ON"] = false,
 			},
 			["tapHealthbarColor"] = {
 				["b"] = 0,

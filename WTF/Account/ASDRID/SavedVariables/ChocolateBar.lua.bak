@@ -284,10 +284,10 @@ ChocolateBarDB = {
 			["combathidetip"] = true,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
-					["barOffy"] = -0.856766819953919,
+					["barOffy"] = 1,
 					["barPoint"] = "TOPRIGHT",
 					["align"] = "custom",
-					["barOffx"] = -174.186126708984,
+					["barOffx"] = -20.4444828033447,
 					["width"] = 210.999969482422,
 				},
 			},

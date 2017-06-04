@@ -1,18 +1,18 @@
 
 ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/g är den kass?", -- [1]
+		"/g jaha", -- [2]
+		"/g :(", -- [3]
+		"/g ska handla", -- [4]
+		"/wa", -- [5]
+	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatLog"] = {
-	},
-	["ChatEditHistory"] = {
-		" getting traits now feels so dumb", -- [1]
-		" having |cff71d5ff|Hapower:953:3:3|h[Bestial Fortitude]|h|rvs |cff71d5ff|Hapower:954:3:3|h[Sharpened Instincts]|h|r", -- [2]
-		" no fun", -- [3]
-		" at all", -- [4]
-		" mhm", -- [5]
 	},
 }

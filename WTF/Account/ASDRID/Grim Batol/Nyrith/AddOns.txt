@@ -46,7 +46,7 @@ MogIt_Other: disabled
 MogIt_Plate: disabled
 MogIt_Ranged: disabled
 MogIt_TwoHanded: disabled
-SLDataText: enabled
+SLDataText: disabled
 SPTimersSpellCache: disabled
 SPTimers: disabled
 Leatrix_Plus: disabled

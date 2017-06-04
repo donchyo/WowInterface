@@ -81,18 +81,18 @@ DataStore_InventoryDB = {
 			},
 			["Default.Grim Batol.Zetiz"] = {
 				["Inventory"] = {
-					"|cffa335ee|Hitem:138332::::::::110:259::5:3:3516:1487:3528:::|h[Doomblade Cowl]|h|r", -- [1]
+					"|cffffffff|Hitem:138332::::::::110:259::5:3:3516:1487:3528:::|h[]|h|r", -- [1]
 					"|cffa335ee|Hitem:140899:5439:::::::110:259::5:3:3516:1487:3528:::|h[Beleron's Choker of Misery]|h|r", -- [2]
-					"|cffa335ee|Hitem:134374::::::::110:259::33:3:3418:1557:3336:::|h[Felbat Leather Pauldrons]|h|r", -- [3]
+					"|cffffffff|Hitem:134374::::::::110:259::33:3:3418:1557:3336:::|h[]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:140865::130222::::::110:259::5:4:3444:1808:1482:3528:::|h[Tunic of Unwavering Devotion]|h|r", -- [5]
 					"|cffa335ee|Hitem:142145::::::::110:259::35:3:3418:1517:3337:::|h[Girdle of Ghostly Exclusion]|h|r", -- [6]
 					"|cffa335ee|Hitem:138335::::::::110:259::5:3:3516:1487:3528:::|h[Doomblade Pants]|h|r", -- [7]
 					"|cffff8000|Hitem:146669::130247:130222:130222::::110:259::13:2:3459:3530:::|h[The Sentinel's Eternal Refuge]|h|r", -- [8]
-					"|cffff8000|Hitem:137098::::::::110:259:::2:3459:3530:::|h[Zoldyck Family Training Shackles]|h|r", -- [9]
-					"|cffa335ee|Hitem:138329::130222::::::110:259::5:5:3516:1808:42:1487:3528:::|h[Doomblade Gauntlets]|h|r", -- [10]
+					"|cffffffff|Hitem:137098::::::::110:259:::2:3459:3530:::|h[]|h|r", -- [9]
+					"|cffffffff|Hitem:138329::130222::::::110:259::5:5:3516:1808:42:1487:3528:::|h[]|h|r", -- [10]
 					"|cffa335ee|Hitem:140897:5429:130222::::::110:259::5:4:3517:1808:1492:3528:::|h[Ring of the Scoured Clan]|h|r", -- [11]
-					"|cffa335ee|Hitem:133679:5429:::::::110:259::35:3:3418:1557:3337:::|h[Val'kyr Ascension Signet]|h|r", -- [12]
+					"|cffffffff|Hitem:133679:5429:::::::110:259::35:3:3418:1557:3337:::|h[]|h|r", -- [12]
 					"|cffa335ee|Hitem:141482::::::::110:259::3:3:3466:1472:3528:::|h[Unstable Arcanocrystal]|h|r", -- [13]
 					"|cffa335ee|Hitem:140796::::::::110:259::5:3:3516:1487:3528:::|h[Entwined Elemental Foci]|h|r", -- [14]
 					"|cffa335ee|Hitem:134402:5435:::::::110:259::35:3:3418:1557:3337:::|h[Cape of Rigid Order]|h|r", -- [15]
@@ -102,7 +102,7 @@ DataStore_InventoryDB = {
 				},
 				["averageItemLvl"] = 901.25,
 				["overallAIL"] = 902.8125,
-				["lastUpdate"] = 1496397754,
+				["lastUpdate"] = 1496542530,
 			},
 			["Default.Grim Batol.Krixidh"] = {
 				["Inventory"] = {
@@ -132,27 +132,27 @@ DataStore_InventoryDB = {
 			["Default.Grim Batol.Zuriz"] = {
 				["Inventory"] = {
 					"|cffff8000|Hitem:143732::::::::110:264:::2:1811:3530:::|h[Uncertain Reminder]|h|r", -- [1]
-					"|cffa335ee|Hitem:137311::::::::110:264::35:3:3418:1557:3337:::|h[Chain of the Green Flight]|h|r", -- [2]
-					"|cffffffff|Hitem:138348::::::::110:264::3:3:3514:1472:1813:::|h[]|h|r", -- [3]
+					"|cffa335ee|Hitem:137311:5890:::::::110:264::35:3:3418:1557:3337:::|h[Chain of the Green Flight]|h|r", -- [2]
+					"|cffa335ee|Hitem:138348::::::::110:264::5:3:3516:1492:3336:::|h[Pauldrons of Shackled Elements]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:140875::::::::110:264::5:3:3444:1487:3336:::|h[Arcanochitin Hauberk]|h|r", -- [5]
-					"|cffffffff|Hitem:144406::::::::110:264::5:4:3444:43:1487:3336:::|h[]|h|r", -- [6]
-					"|cffffffff|Hitem:138345::::::::110:264::3:3:3514:1472:3528:::|h[]|h|r", -- [7]
-					"|cffffffff|Hitem:137036::::::::110:264:::2:3459:3455:::|h[]|h|r", -- [8]
+					"|cffa335ee|Hitem:144406::::::::110:264::5:4:3444:43:1487:3336:::|h[Vintage Duskwatch Cinch]|h|r", -- [6]
+					"|cffa335ee|Hitem:138345::::::::110:264::3:3:3514:1472:3528:::|h[Leggings of Shackled Elements]|h|r", -- [7]
+					"|cffff8000|Hitem:137036::::::::110:264:::2:3459:3455:::|h[Elemental Rebalancers]|h|r", -- [8]
 					"|cffa335ee|Hitem:134296::::::::110:264::16:3:3418:1557:3336:::|h[Ley Dragoon's Wristbraces]|h|r", -- [9]
-					"|cffffffff|Hitem:137348::::::::110:264::35:3:3418:1532:3337:::|h[]|h|r", -- [10]
+					"|cffa335ee|Hitem:137348::::::::110:264::35:3:3418:1532:3337:::|h[Gauntlets of Innumerable Barbs]|h|r", -- [10]
 					"|cffa335ee|Hitem:140895:5429:::::::110:264::3:3:3514:1472:3528:::|h[Spellblade's Gemmed Signet]|h|r", -- [11]
-					"|cffffffff|Hitem:134487:5429:::::::110:264::16:4:3417:41:1512:1813:::|h[]|h|r", -- [12]
+					"|cffa335ee|Hitem:134487:5429:::::::110:264::16:4:3417:41:1512:1813:::|h[Arch-Druid's Tainted Seal]|h|r", -- [12]
 					"|cffa335ee|Hitem:142166::::::::110:264::23:3:3454:1487:3337:::|h[Ethereal Urn]|h|r", -- [13]
 					"|cffa335ee|Hitem:141482::::::::110:264::3:4:42:3466:1482:3336:::|h[Unstable Arcanocrystal]|h|r", -- [14]
-					"|cffffffff|Hitem:144401:5436:::::::110:264::5:3:3444:1487:3336:::|h[]|h|r", -- [15]
-					"|cffe6cc80|Hitem:128911::136720:143527:140838::::110:264:16777472:9:1:746:773:1:3:3417:1527:3337:3:3454:1487:3337:3:3444:1492:3336|h[Sharas'dal, Scepter of Tides]|h|r", -- [16]
-					"|cffffffff|Hitem:128934::::::::110:264:256:::773:::|h[]|h|r", -- [17]
+					"|cffa335ee|Hitem:144401:5436:::::::110:264::5:3:3444:1487:3336:::|h[Cloak of Multitudinous Sheaths]|h|r", -- [15]
+					"|cffe6cc80|Hitem:128911::140839:143527:140838::::110:264:16777472:9:1:746:773:1:3:3516:1487:3528:3:3454:1487:3337:3:3444:1492:3336|h[Sharas'dal, Scepter of Tides]|h|r", -- [16]
+					"|cffe6cc80|Hitem:128934::::::::110:264:256:::773:::|h[Shield of the Sea Queen]|h|r", -- [17]
 					[19] = "|cffa335ee|Hitem:52252::::::::110:264::11::::|h[Tabard of the Lightbringer]|h|r",
 				},
-				["averageItemLvl"] = 893.6875,
-				["overallAIL"] = 894.9375,
-				["lastUpdate"] = 1496399567,
+				["averageItemLvl"] = 895.4375,
+				["overallAIL"] = 898.25,
+				["lastUpdate"] = 1496542331,
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
 				["Inventory"] = {
@@ -382,14 +382,14 @@ DataStore_InventoryDB = {
 					"|cffa335ee|Hitem:133638:5428:::::::110:73::35:3:3536:1552:3337:::|h[Woe-Bearer's Band]|h|r", -- [12]
 					"|cffa335ee|Hitem:133642::::::::110:73::43:3:3573:1532:3528:::|h[Horn of Valor]|h|r", -- [13]
 					"|cffa335ee|Hitem:137419::::::::110:73::16:3:3536:1537:1813:::|h[Chrono Shard]|h|r", -- [14]
-					"|cffa335ee|Hitem:133771:5434:::::::110:73::35:4:3418:1808:1557:3337:::|h[Seacursed Wrap]|h|r", -- [15]
+					"|cffa335ee|Hitem:133771:5434:130220::::::110:73::35:4:3418:1808:1557:3337:::|h[Seacursed Wrap]|h|r", -- [15]
 					"|cffe6cc80|Hitem:128288::::::::110:73:256:::159:::|h[Scaleshard]|h|r", -- [16]
 					"|cffe6cc80|Hitem:128289::137359:137544:142183::::110:73:16777472:9:1:752:159:1:3:3536:1552:3337:3:3536:1552:3337:3:3418:1522:3337|h[Scale of the Earth-Warder]|h|r", -- [17]
 					[19] = "|cffa335ee|Hitem:52252::::::::110:73::::::|h[Tabard of the Lightbringer]|h|r",
 				},
 				["averageItemLvl"] = 906.875,
-				["overallAIL"] = 907.8125,
-				["lastUpdate"] = 1496399475,
+				["overallAIL"] = 908.125,
+				["lastUpdate"] = 1496457173,
 			},
 			["Default.Shattered Hand.Bawsi"] = {
 				["Inventory"] = {
@@ -428,28 +428,28 @@ DataStore_InventoryDB = {
 			},
 			["Default.Grim Batol.Nyrith"] = {
 				["Inventory"] = {
-					"|cffffffff|Hitem:137415::::::::110:104::35:3:3418:1557:3337:::|h[]|h|r", -- [1]
-					"|cffffffff|Hitem:134529:5439:::::::110:104::16:3:3418:1557:3337:::|h[]|h|r", -- [2]
-					"|cffffffff|Hitem:138336:5883:::::::110:104::5:3:3516:1487:3528:::|h[]|h|r", -- [3]
-					"|cffffffff|Hitem:42363::::::::110:104::::::|h[]|h|r", -- [4]
-					"|cffffffff|Hitem:138324::::::::110:104::5:3:3516:1492:3336:::|h[]|h|r", -- [5]
-					"|cffffffff|Hitem:134287::::::::110:104::16:3:3418:1567:3337:::|h[]|h|r", -- [6]
-					"|cffffffff|Hitem:138333::::::::110:104::5:3:3516:1492:3336:::|h[]|h|r", -- [7]
-					"|cffffffff|Hitem:144487::::::::110:104::34:3:3417:1562:3337:::|h[]|h|r", -- [8]
-					"|cffffffff|Hitem:137056::::::::110:104:::2:1811:3455:::|h[]|h|r", -- [9]
-					"|cffffffff|Hitem:138327::::::::110:104::5:3:3516:1507:3337:::|h[]|h|r", -- [10]
-					"|cffffffff|Hitem:134539:5430:::::::110:104::34:3:3418:1572:3337:::|h[]|h|r", -- [11]
-					"|cffffffff|Hitem:133637:5430:::::::110:104::34:4:3418:42:1567:3337:::|h[]|h|r", -- [12]
-					"|cffffffff|Hitem:144259::::::::110:104:::3:3529:3530:1811:::|h[]|h|r", -- [13]
-					"|cffffffff|Hitem:139113::::::::110:104::43:4:3573:603:1572:3337:::|h[]|h|r", -- [14]
-					"|cffffffff|Hitem:137531:5435:::::::110:104::16:3:3418:1562:3337:::|h[]|h|r", -- [15]
+					"|cffa335ee|Hitem:137415::::::::110:104::35:3:3418:1557:3337:::|h[Gaze of Fleeting Hours]|h|r", -- [1]
+					"|cffa335ee|Hitem:134529:5439:::::::110:104::16:3:3418:1557:3337:::|h[Chain of Scorched Bones]|h|r", -- [2]
+					"|cffa335ee|Hitem:138336:5883:::::::110:104::5:3:3516:1487:3528:::|h[Mantle of the Astral Warden]|h|r", -- [3]
+					"|cff1eff00|Hitem:42363::::::::110:104::::::|h[Golden Filigreed Doublet]|h|r", -- [4]
+					"|cffa335ee|Hitem:138324::::::::110:104::5:3:3516:1492:3336:::|h[Robe of the Astral Warden]|h|r", -- [5]
+					"|cffa335ee|Hitem:134287::::::::110:104::16:3:3418:1567:3337:::|h[Swordsinger's Belt]|h|r", -- [6]
+					"|cffa335ee|Hitem:138333::::::::110:104::5:3:3516:1492:3336:::|h[Leggings of the Astral Warden]|h|r", -- [7]
+					"|cffa335ee|Hitem:144487::::::::110:104::34:3:3417:1562:3337:::|h[Treads of Creeping Shadows]|h|r", -- [8]
+					"|cffff8000|Hitem:137056::::::::110:104:::2:1811:3455:::|h[Luffa Wrappings]|h|r", -- [9]
+					"|cffa335ee|Hitem:138327::::::::110:104::5:3:3516:1507:3337:::|h[Gloves of the Astral Warden]|h|r", -- [10]
+					"|cffa335ee|Hitem:134539:5430:::::::110:104::34:3:3418:1572:3337:::|h[Braided Silver Ring]|h|r", -- [11]
+					"|cffa335ee|Hitem:133637:5430:::::::110:104::34:4:3418:42:1567:3337:::|h[Utgarde Royal Signet]|h|r", -- [12]
+					"|cffff8000|Hitem:144259::::::::110:104:::3:3529:3530:1811:::|h[Kil'jaeden's Burning Wish]|h|r", -- [13]
+					"|cffa335ee|Hitem:139113::::::::110:104::43:4:3573:603:1572:3337:::|h[An'she's Token of Guile]|h|r", -- [14]
+					"|cffa335ee|Hitem:137531:5435:::::::110:104::16:3:3418:1562:3337:::|h[Cloak of Enthralling Darkness]|h|r", -- [15]
 					"|cffe6cc80|Hitem:128821::133686:137412:137327::::110:104:16777472:9:1:724:993:1:3:3418:1547:3336:3:3536:1552:3337:3:3418:1552:3336|h[Claws of Ursoc]|h|r", -- [16]
-					"|cffffffff|Hitem:128822::::::::110:104:256:::993:::|h[]|h|r", -- [17]
-					[19] = "|cffffffff|Hitem:52252::::::::110:104::11::::|h[]|h|r",
+					"|cffe6cc80|Hitem:128822::::::::110:104:256:::993:::|h[Claws of Ursoc]|h|r", -- [17]
+					[19] = "|cffa335ee|Hitem:52252::::::::110:104::11::::|h[Tabard of the Lightbringer]|h|r",
 				},
 				["averageItemLvl"] = 912.125,
 				["overallAIL"] = 914.3125,
-				["lastUpdate"] = 1496398878,
+				["lastUpdate"] = 1496525176,
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684610,
@@ -468,27 +468,27 @@ DataStore_InventoryDB = {
 			},
 			["Default.Grim Batol.Krixidk"] = {
 				["Inventory"] = {
-					"|cffa335ee|Hitem:137526::::::::110:250::35:3:3536:1552:3337:::|h[Crown of Ash]|h|r", -- [1]
-					"|cffa335ee|Hitem:137311:5889:::::::110:250::35:3:3418:1557:3337:::|h[Chain of the Green Flight]|h|r", -- [2]
-					"|cffa335ee|Hitem:140883::::::::110:250::5:3:3516:1487:1813:::|h[Shoulderguard of the Eclipse]|h|r", -- [3]
+					"|cffffffff|Hitem:137526::::::::110:250::35:3:3536:1552:3337:::|h[]|h|r", -- [1]
+					"|cffffffff|Hitem:137311:5889:::::::110:250::35:3:3418:1557:3337:::|h[]|h|r", -- [2]
+					"|cffffffff|Hitem:140883::::::::110:250::5:3:3516:1487:1813:::|h[]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:137437::::::::110:250::35:3:3418:1557:3337:::|h[Slimeflow Breastplate]|h|r", -- [5]
-					"|cffa335ee|Hitem:137499::::::::110:250::35:3:3536:1552:3337:::|h[Roaring Breeze Waistguard]|h|r", -- [6]
-					"|cffa335ee|Hitem:121280::130220::::::110:250::16:4:3418:1808:1552:3528:::|h[Wracksoul Legplates]|h|r", -- [7]
-					"|cffa335ee|Hitem:134505::::::::110:250::35:3:3536:1567:3337:::|h[Horizon Line Warboots]|h|r", -- [8]
-					"|cffff8000|Hitem:132365::::::::110:250:::2:1811:3455:::|h[Shackles of Bryndaor]|h|r", -- [9]
-					"|cffa335ee|Hitem:137355::::::::110:250::34:3:3534:1537:3336:::|h[Rumblestone Gauntlets]|h|r", -- [10]
-					"|cffa335ee|Hitem:134490:5428:130220::::::110:250::35:4:3536:1808:1552:3337:::|h[Ring of Contempt]|h|r", -- [11]
-					"|cffa335ee|Hitem:137532:5428:130220::::::110:250::35:4:3536:1808:1552:3337:::|h[Seal of Saltheril]|h|r", -- [12]
-					"|cffa335ee|Hitem:133644::130220::::::110:250::16:4:3535:1808:1542:3336:::|h[Memento of Angerboda]|h|r", -- [13]
-					"|cffa335ee|Hitem:141482::::::::110:250::3:3:3466:1477:3336:::|h[Unstable Arcanocrystal]|h|r", -- [14]
-					"|cffff8000|Hitem:132376:5434:::::::110:250:::2:3455:1811:::|h[Acherus Drapes]|h|r", -- [15]
+					"|cffffffff|Hitem:137499::::::::110:250::35:3:3536:1552:3337:::|h[]|h|r", -- [6]
+					"|cffffffff|Hitem:121280::130220::::::110:250::16:4:3418:1808:1552:3528:::|h[]|h|r", -- [7]
+					"|cffffffff|Hitem:134505::::::::110:250::35:3:3536:1567:3337:::|h[]|h|r", -- [8]
+					"|cffffffff|Hitem:132365::::::::110:250:::2:1811:3455:::|h[]|h|r", -- [9]
+					"|cffffffff|Hitem:137355::::::::110:250::34:3:3534:1537:3336:::|h[]|h|r", -- [10]
+					"|cffffffff|Hitem:134490:5428:130220::::::110:250::35:4:3536:1808:1552:3337:::|h[]|h|r", -- [11]
+					"|cffffffff|Hitem:137532:5428:130220::::::110:250::35:4:3536:1808:1552:3337:::|h[]|h|r", -- [12]
+					"|cffffffff|Hitem:133644::130220::::::110:250::16:4:3535:1808:1542:3336:::|h[]|h|r", -- [13]
+					"|cffffffff|Hitem:141482::::::::110:250::3:3:3466:1477:3336:::|h[]|h|r", -- [14]
+					"|cffffffff|Hitem:132376:5434:::::::110:250:::2:3455:1811:::|h[]|h|r", -- [15]
 					"|cffe6cc80|Hitem:128402:3368:137350:137317:137326::::110:250:16777472:9:1:716:921:1:3:3418:1557:3337:3:3418:1547:3336:3:3536:1542:3336|h[Maw of the Damned]|h|r", -- [16]
-					[19] = "|cff1eff00|Hitem:23192:::::::1456957056:110:250::::::|h[Tabard of the Scarlet Crusade]|h|r",
+					[19] = "|cffffffff|Hitem:23192:::::::1456957056:110:250::::::|h[]|h|r",
 				},
 				["averageItemLvl"] = 904.0625,
 				["overallAIL"] = 906.25,
-				["lastUpdate"] = 1496399281,
+				["lastUpdate"] = 1496437244,
 			},
 			["Default.Crushridge.Donch"] = {
 				["Inventory"] = {
@@ -517,28 +517,28 @@ DataStore_InventoryDB = {
 			},
 			["Default.Grim Batol.Krixi"] = {
 				["Inventory"] = {
-					"|cffffffff|Hitem:140881::::::::110:66::5:3:3516:1487:1813:::|h[]|h|r", -- [1]
+					"|cffa335ee|Hitem:140881::::::::110:66::5:3:3516:1487:1813:::|h[Eventide Casque]|h|r", -- [1]
 					"|cffa335ee|Hitem:137311:5889:130220::::::110:66::35:4:3417:1808:1527:3337:::|h[Chain of the Green Flight]|h|r", -- [2]
 					"|cffa335ee|Hitem:134510:5883:::::::110:66::35:3:3510:1537:3337:::|h[Pauldrons of Ancient Command]|h|r", -- [3]
-					"|cffffffff|Hitem:42360::::::::110:66::14::::|h[]|h|r", -- [4]
-					"|cffffffff|Hitem:140913::130220::::::110:66::5:4:3517:1808:1492:3528:::|h[]|h|r", -- [5]
-					"|cffffffff|Hitem:144407::::::::110:66::5:3:3444:1482:3528:::|h[]|h|r", -- [6]
-					"|cffffffff|Hitem:138359::::::::110:66::3:3:3514:1472:3528:::|h[]|h|r", -- [7]
-					"|cffffffff|Hitem:134504::::::::110:66::35:3:3510:1537:3337:::|h[]|h|r", -- [8]
+					"|cff1eff00|Hitem:42360::::::::110:66::14::::|h[Ebon Filigreed Doublet]|h|r", -- [4]
+					"|cffa335ee|Hitem:140913::130220::::::110:66::5:4:3517:1808:1492:3528:::|h[Breastplate of the Remembered King]|h|r", -- [5]
+					"|cffa335ee|Hitem:144407::::::::110:66::5:3:3444:1482:3528:::|h[Gleaming Celestial Waistguard]|h|r", -- [6]
+					"|cffa335ee|Hitem:138359::::::::110:66::3:3:3514:1472:3528:::|h[Legplates of the Highlord]|h|r", -- [7]
+					"|cffa335ee|Hitem:134504::::::::110:66::35:3:3510:1537:3337:::|h[Curserunner Soulcrushers]|h|r", -- [8]
 					"|cffa335ee|Hitem:140893::::::::110:66::5:3:3516:1487:3528:::|h[Eternally Recurring Bracers]|h|r", -- [9]
 					"|cffa335ee|Hitem:139056::::::::110:66::35:3:3418:1567:3337:::|h[Nightsfall Gauntlets]|h|r", -- [10]
-					"|cffffffff|Hitem:137047:5428:130246::::::110:66:::2:1811:3455:::|h[]|h|r", -- [11]
-					"|cffffffff|Hitem:133634:5428:::::::110:66::16:3:3418:1542:3528:::|h[]|h|r", -- [12]
-					"|cffffffff|Hitem:144249::::::::110:66:::3:3529:3530:1811:::|h[]|h|r", -- [13]
+					"|cffff8000|Hitem:137047:5428:130246::::::110:66:::2:1811:3455:::|h[Heathcliff's Immortality]|h|r", -- [11]
+					"|cffa335ee|Hitem:133634:5428:::::::110:66::16:3:3418:1542:3528:::|h[Grasping Tentacle Loop]|h|r", -- [12]
+					"|cffff8000|Hitem:144249::::::::110:66:::3:3529:3530:1811:::|h[Archimonde's Hatred Reborn]|h|r", -- [13]
 					"|cffa335ee|Hitem:141482::::::::110:66::3:3:3466:1477:3336:::|h[Unstable Arcanocrystal]|h|r", -- [14]
 					"|cffa335ee|Hitem:140855:5434:::::::110:66::5:3:3516:1487:3528:::|h[Dreadlord's Tattered Wingcover]|h|r", -- [15]
-					"|cffffffff|Hitem:128867::::::::110:66:256:::708:::|h[]|h|r", -- [16]
+					"|cffe6cc80|Hitem:128867::::::::110:66:256:::708:::|h[Oathseeker]|h|r", -- [16]
 					"|cffe6cc80|Hitem:128866::140843:137359:140813::::110:66:16777472:9:1:736:708:1:3:3443:1472:3336:3:3418:1557:3337:3:3516:1487:3528|h[Truthguard]|h|r", -- [17]
 					[19] = "|cffa335ee|Hitem:52252:::::::513532288:110:66::::::|h[Tabard of the Lightbringer]|h|r",
 				},
 				["averageItemLvl"] = 896.25,
 				["overallAIL"] = 897.5,
-				["lastUpdate"] = 1496399938,
+				["lastUpdate"] = 1496454436,
 			},
 			["Default.Grim Batol.Donch"] = {
 				["Inventory"] = {
@@ -602,86 +602,6 @@ DataStore_InventoryDB = {
 					},
 				},
 			},
-			["Default.Grim Batol.Hoonigans"] = {
-				["Members"] = {
-					["Daimtårta"] = {
-						["averageItemLvl"] = 897,
-					},
-					["Diamondfoxx"] = {
-						["averageItemLvl"] = 891,
-					},
-					["Vicserdh"] = {
-						["averageItemLvl"] = 857,
-					},
-					["Menardianz"] = {
-						["averageItemLvl"] = 122,
-					},
-					["Kegvick"] = {
-						["averageItemLvl"] = 875,
-					},
-					["Jadastevens"] = {
-						["averageItemLvl"] = 877,
-					},
-					["Menardians"] = {
-						["averageItemLvl"] = 903,
-					},
-					["Gwenyver"] = {
-						["averageItemLvl"] = 896,
-					},
-					["Dhavick"] = {
-						["averageItemLvl"] = 715,
-					},
-					["Allisonblake"] = {
-						["averageItemLvl"] = 871,
-					},
-					["Jessnigri"] = {
-						["averageItemLvl"] = 867,
-					},
-					["Eililililili"] = {
-						["averageItemLvl"] = 727,
-					},
-					["Bluethundah"] = {
-						["averageItemLvl"] = 884,
-					},
-					["Ganymede"] = {
-						["averageItemLvl"] = 869,
-					},
-					["Vicsur"] = {
-						["averageItemLvl"] = 911,
-					},
-					["Spacegoaty"] = {
-						["averageItemLvl"] = 883,
-					},
-					["Deathstefano"] = {
-						["averageItemLvl"] = 873,
-					},
-					["Vicser"] = {
-						["averageItemLvl"] = 601,
-					},
-					["Kavick"] = {
-						["averageItemLvl"] = 908,
-					},
-					["Dunkelman"] = {
-						["averageItemLvl"] = 895,
-					},
-					["Estefano"] = {
-						["averageItemLvl"] = 896,
-					},
-					["Angievarona"] = {
-						["averageItemLvl"] = 863,
-					},
-					["Menardia"] = {
-						["averageItemLvl"] = 896,
-					},
-				},
-			},
-			["Default.Grim Batol.Lunos"] = {
-				["Members"] = {
-					["Zolution"] = {
-						["averageItemLvl"] = 618,
-					},
-				},
-			},
 			["Default.Kazzak.K A M E L Å S Å"] = {
 				["Members"] = {
 					["Grenadeapple"] = {
@@ -695,117 +615,10 @@ DataStore_InventoryDB = {
 					},
 				},
 			},
-			["Default.Crushridge.Proudly ADDICTED"] = {
+			["Default.Grim Batol.Lunos"] = {
 				["Members"] = {
-					["Donch"] = {
-						["averageItemLvl"] = 103,
-					},
-				},
-			},
-			["Default.Aggra (Português).Jupiter Mining Corp"] = {
-				["Members"] = {
-					["Daimtårta"] = {
-						["averageItemLvl"] = 688,
-					},
-					["Diamondfoxx"] = {
-						["averageItemLvl"] = 652,
-					},
-					["Menardianz"] = {
-						["averageItemLvl"] = 120,
-					},
-					["Kegvick"] = {
-						["averageItemLvl"] = 649,
-					},
-					["Jadastevens"] = {
-						["averageItemLvl"] = 672,
-					},
-					["Menardia"] = {
-						["averageItemLvl"] = 659,
-					},
-					["Sofiavergara"] = {
-						["averageItemLvl"] = 648,
-					},
-					["Treefiddy"] = {
-						["averageItemLvl"] = 476,
-					},
-					["Allisonblake"] = {
-						["averageItemLvl"] = 651,
-					},
-					["Jessnigri"] = {
-						["averageItemLvl"] = 644,
-					},
-					["Eililililili"] = {
-						["averageItemLvl"] = 630,
-					},
-					["Dunkelman"] = {
-						["averageItemLvl"] = 644,
-					},
-					["Bluethundah"] = {
-						["averageItemLvl"] = 643,
-					},
-					["Spacegoatx"] = {
-						["averageItemLvl"] = 123,
-					},
-					["Spacegoaty"] = {
-						["averageItemLvl"] = 484,
-					},
-					["Deathstefano"] = {
-						["averageItemLvl"] = 634,
-					},
-					["Vicser"] = {
-						["averageItemLvl"] = 552,
-					},
-					["Kavick"] = {
-						["averageItemLvl"] = 653,
-					},
-					["Vicsur"] = {
-						["averageItemLvl"] = 688,
-					},
-					["Estefano"] = {
-						["averageItemLvl"] = 656,
-					},
-					["Angievarona"] = {
-						["averageItemLvl"] = 677,
-					},
-					["Menardians"] = {
-						["averageItemLvl"] = 286,
-					},
-				},
-			},
-			["Default.Aggra (Português).Hoonigans"] = {
-				["Members"] = {
-					["Diamondfoxx"] = {
-						["averageItemLvl"] = 727,
-					},
-					["Jessnigri"] = {
-						["averageItemLvl"] = 708,
-					},
-					["Bluethundah"] = {
-						["averageItemLvl"] = 693,
-					},
-					["Kavick"] = {
-						["averageItemLvl"] = 731,
-					},
-					["Deathstefano"] = {
-						["averageItemLvl"] = 711,
-					},
-					["Angievarona"] = {
-						["averageItemLvl"] = 719,
-					},
-					["Dunkelman"] = {
-						["averageItemLvl"] = 705,
-					},
-					["Kegvick"] = {
-						["averageItemLvl"] = 692,
-					},
-					["Estefano"] = {
-						["averageItemLvl"] = 723,
-					},
-					["Jadastevens"] = {
-						["averageItemLvl"] = 720,
-					},
-					["Allisonblake"] = {
-						["averageItemLvl"] = 716,
+					["Zolution"] = {
+						["averageItemLvl"] = 618,
 					},
 				},
 			},
@@ -877,17 +690,17 @@ DataStore_InventoryDB = {
 					["Carlsagan"] = {
 						["averageItemLvl"] = 530,
 					},
-					["Spacegoaty"] = {
-						["averageItemLvl"] = 698,
+					["Vicsur"] = {
+						["averageItemLvl"] = 704,
 					},
 					["Bluethundah"] = {
 						["averageItemLvl"] = 691,
 					},
-					["Vicsur"] = {
-						["averageItemLvl"] = 704,
+					["Spacegoaty"] = {
+						["averageItemLvl"] = 698,
 					},
-					["Dunkelman"] = {
-						["averageItemLvl"] = 705,
+					["Kavick"] = {
+						["averageItemLvl"] = 729,
 					},
 					["Deathstefano"] = {
 						["averageItemLvl"] = 710,
@@ -895,8 +708,8 @@ DataStore_InventoryDB = {
 					["Vicser"] = {
 						["averageItemLvl"] = 552,
 					},
-					["Kavick"] = {
-						["averageItemLvl"] = 729,
+					["Dunkelman"] = {
+						["averageItemLvl"] = 705,
 					},
 					["Kroxi"] = {
 						["averageItemLvl"] = 678,
@@ -909,6 +722,193 @@ DataStore_InventoryDB = {
 					},
 					["Jadastevens"] = {
 						["averageItemLvl"] = 711,
+					},
+				},
+			},
+			["Default.Crushridge.Proudly ADDICTED"] = {
+				["Members"] = {
+					["Donch"] = {
+						["averageItemLvl"] = 103,
+					},
+				},
+			},
+			["Default.Aggra (Português).Jupiter Mining Corp"] = {
+				["Members"] = {
+					["Daimtårta"] = {
+						["averageItemLvl"] = 688,
+					},
+					["Diamondfoxx"] = {
+						["averageItemLvl"] = 652,
+					},
+					["Menardianz"] = {
+						["averageItemLvl"] = 120,
+					},
+					["Kegvick"] = {
+						["averageItemLvl"] = 649,
+					},
+					["Jadastevens"] = {
+						["averageItemLvl"] = 672,
+					},
+					["Menardia"] = {
+						["averageItemLvl"] = 659,
+					},
+					["Sofiavergara"] = {
+						["averageItemLvl"] = 648,
+					},
+					["Treefiddy"] = {
+						["averageItemLvl"] = 476,
+					},
+					["Allisonblake"] = {
+						["averageItemLvl"] = 651,
+					},
+					["Jessnigri"] = {
+						["averageItemLvl"] = 644,
+					},
+					["Eililililili"] = {
+						["averageItemLvl"] = 630,
+					},
+					["Kavick"] = {
+						["averageItemLvl"] = 653,
+					},
+					["Bluethundah"] = {
+						["averageItemLvl"] = 643,
+					},
+					["Spacegoatx"] = {
+						["averageItemLvl"] = 123,
+					},
+					["Dunkelman"] = {
+						["averageItemLvl"] = 644,
+					},
+					["Deathstefano"] = {
+						["averageItemLvl"] = 634,
+					},
+					["Vicser"] = {
+						["averageItemLvl"] = 552,
+					},
+					["Spacegoaty"] = {
+						["averageItemLvl"] = 484,
+					},
+					["Vicsur"] = {
+						["averageItemLvl"] = 688,
+					},
+					["Estefano"] = {
+						["averageItemLvl"] = 656,
+					},
+					["Angievarona"] = {
+						["averageItemLvl"] = 677,
+					},
+					["Menardians"] = {
+						["averageItemLvl"] = 286,
+					},
+				},
+			},
+			["Default.Aggra (Português).Hoonigans"] = {
+				["Members"] = {
+					["Diamondfoxx"] = {
+						["averageItemLvl"] = 727,
+					},
+					["Jessnigri"] = {
+						["averageItemLvl"] = 708,
+					},
+					["Bluethundah"] = {
+						["averageItemLvl"] = 693,
+					},
+					["Kavick"] = {
+						["averageItemLvl"] = 731,
+					},
+					["Deathstefano"] = {
+						["averageItemLvl"] = 711,
+					},
+					["Angievarona"] = {
+						["averageItemLvl"] = 719,
+					},
+					["Dunkelman"] = {
+						["averageItemLvl"] = 705,
+					},
+					["Kegvick"] = {
+						["averageItemLvl"] = 692,
+					},
+					["Estefano"] = {
+						["averageItemLvl"] = 723,
+					},
+					["Jadastevens"] = {
+						["averageItemLvl"] = 720,
+					},
+					["Allisonblake"] = {
+						["averageItemLvl"] = 716,
+					},
+				},
+			},
+			["Default.Grim Batol.Hoonigans"] = {
+				["Members"] = {
+					["Daimtårta"] = {
+						["averageItemLvl"] = 897,
+					},
+					["Diamondfoxx"] = {
+						["averageItemLvl"] = 891,
+					},
+					["Vicserdh"] = {
+						["averageItemLvl"] = 857,
+					},
+					["Menardianz"] = {
+						["averageItemLvl"] = 122,
+					},
+					["Kegvick"] = {
+						["averageItemLvl"] = 876,
+					},
+					["Jadastevens"] = {
+						["averageItemLvl"] = 902,
+					},
+					["Menardians"] = {
+						["averageItemLvl"] = 903,
+					},
+					["Gwenyver"] = {
+						["averageItemLvl"] = 903,
+					},
+					["Dhavick"] = {
+						["averageItemLvl"] = 715,
+					},
+					["Allisonblake"] = {
+						["averageItemLvl"] = 881,
+					},
+					["Jessnigri"] = {
+						["averageItemLvl"] = 885,
+					},
+					["Eililililili"] = {
+						["averageItemLvl"] = 727,
+					},
+					["Bluethundah"] = {
+						["averageItemLvl"] = 900,
+					},
+					["Ganymede"] = {
+						["averageItemLvl"] = 896,
+					},
+					["Vicsur"] = {
+						["averageItemLvl"] = 911,
+					},
+					["Spacegoaty"] = {
+						["averageItemLvl"] = 883,
+					},
+					["Deathstefano"] = {
+						["averageItemLvl"] = 888,
+					},
+					["Vicser"] = {
+						["averageItemLvl"] = 601,
+					},
+					["Kavick"] = {
+						["averageItemLvl"] = 910,
+					},
+					["Dunkelman"] = {
+						["averageItemLvl"] = 902,
+					},
+					["Estefano"] = {
+						["averageItemLvl"] = 899,
+					},
+					["Angievarona"] = {
+						["averageItemLvl"] = 898,
+					},
+					["Menardia"] = {
+						["averageItemLvl"] = 896,
 					},
 				},
 			},
@@ -969,26 +969,26 @@ DataStore_InventoryDB = {
 					"16/108", -- [27]
 				},
 				["SHAMAN"] = {
-					"70/356", -- [1]
-					"58/348", -- [2]
-					"344/762", -- [3]
-					"64/422", -- [4]
+					"73/370", -- [1]
+					"61/361", -- [2]
+					"349/774", -- [3]
+					"67/436", -- [4]
 					"21/91", -- [5]
-					"37/80", -- [6]
-					"47/351", -- [7]
-					"43/385", -- [8]
-					"66/363", -- [9]
-					"56/404", -- [10]
-					"61/393", -- [11]
-					[13] = "60/292",
-					[15] = "140/451",
-					[16] = "131/502",
+					"38/81", -- [6]
+					"47/365", -- [7]
+					"45/399", -- [8]
+					"67/378", -- [9]
+					"58/417", -- [10]
+					"63/410", -- [11]
+					[13] = "61/292",
+					[15] = "141/452",
+					[16] = "131/503",
 					[17] = "36/144",
-					[18] = "109/451",
-					[19] = "80/302",
-					[20] = "40/224",
-					[22] = "45/222",
-					[23] = "151/524",
+					[18] = "110/451",
+					[19] = "82/302",
+					[20] = "40/226",
+					[22] = "47/223",
+					[23] = "152/524",
 				},
 				["MAGE"] = {
 					"89/415", -- [1]
@@ -1094,10 +1094,10 @@ DataStore_InventoryDB = {
 					nil, -- [12]
 					"60/292", -- [13]
 					"136/445", -- [14]
-					[28] = "4/4",
 					[16] = "130/502",
-					[17] = "36/144",
 					[19] = "80/302",
+					[17] = "36/144",
+					[28] = "4/4",
 				},
 				["PALADIN"] = {
 					"114/362", -- [1]
@@ -1206,10 +1206,10 @@ DataStore_InventoryDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -1220,7 +1220,7 @@ DataStore_InventoryDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

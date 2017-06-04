@@ -13,10 +13,10 @@ DataStore_AgendaDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_AgendaDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -53,13 +53,16 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1423512183,
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496397770,
+				["lastUpdate"] = 1496542605,
 			},
 			["Default.Grim Batol.Krixidh"] = {
 				["lastUpdate"] = 1491106337,
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1496399898,
+				["DungeonIDs"] = {
+					["The Nighthold Heroic|868933185"] = "276361|1496542437|0|1",
+				},
+				["lastUpdate"] = 1496542499,
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
 				["lastUpdate"] = 1420506362,
@@ -92,7 +95,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1451199279,
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1496399541,
+				["lastUpdate"] = 1496457461,
 			},
 			["Default.Shattered Hand.Donchyo"] = {
 				["lastUpdate"] = 1470839453,
@@ -112,7 +115,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1465684901,
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496398909,
+				["lastUpdate"] = 1496542653,
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684610,
@@ -121,13 +124,13 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1442247547,
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1496399367,
+				["lastUpdate"] = 1496437260,
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["lastUpdate"] = 1491106019,
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1496402073,
+				["lastUpdate"] = 1496454436,
 			},
 			["Default.Shattered Hand.Bawsi"] = {
 				["lastUpdate"] = 1424871492,

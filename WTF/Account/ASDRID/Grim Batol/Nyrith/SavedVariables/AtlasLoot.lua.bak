@@ -10,6 +10,23 @@ AtlasLootCharDB = {
 		},
 		["shown"] = false,
 	},
+	["QuickLootFrame"] = {
+		["point"] = {
+			"RIGHT", -- [1]
+			nil, -- [2]
+			"RIGHT", -- [3]
+			-291.877258300781, -- [4]
+			106.238151550293, -- [5]
+		},
+	},
+	["__addonrevision"] = 4325,
+	["SetViewFrame"] = {
+		["point"] = {
+			[3] = "CENTER",
+			[4] = 5.624781988444740e-005,
+			[5] = -3.426926612854,
+		},
+	},
 	["GUI"] = {
 		["selected"] = {
 			"AtlasLoot_Collections", -- [1]
@@ -24,23 +41,6 @@ AtlasLootCharDB = {
 			"RIGHT", -- [3]
 			-98.0000457763672, -- [4]
 			63.9999885559082, -- [5]
-		},
-	},
-	["__addonrevision"] = 4325,
-	["SetViewFrame"] = {
-		["point"] = {
-			[3] = "CENTER",
-			[4] = 5.624781988444740e-005,
-			[5] = -3.426926612854,
-		},
-	},
-	["QuickLootFrame"] = {
-		["point"] = {
-			"RIGHT", -- [1]
-			nil, -- [2]
-			"RIGHT", -- [3]
-			-291.877258300781, -- [4]
-			106.238151550293, -- [5]
 		},
 	},
 }

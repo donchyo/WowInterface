@@ -39,11 +39,11 @@ ChocolateBarDB = {
 			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
-					["barOffy"] = -0.856766819953919,
+					["barOffy"] = 1,
 					["barPoint"] = "TOPRIGHT",
 					["align"] = "custom",
 					["width"] = 210.999969482422,
-					["barOffx"] = -174.186126708984,
+					["barOffx"] = -20.4444828033447,
 				},
 			},
 			["fontPath"] = "Fonts\\ARIALN.TTF",

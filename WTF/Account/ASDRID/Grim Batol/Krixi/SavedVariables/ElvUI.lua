@@ -1,5 +1,139 @@
 
 ElvCharacterDB = {
+	["ChatLog"] = {
+		["1496454350.337"] = {
+			"I made a intrrpt - |cff71d5ff|Hspell:234423:0|h[Drain Life]|h|r", -- [1]
+			"Krixi-GrimBatol", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Krixi", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			183, -- [11]
+			"Player-1303-03AF0575", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_SAY", -- [20]
+		},
+		["1496454345.611"] = {
+			"I made a intrrpt - |cff71d5ff|Hspell:234401:0|h[Mind Rend]|h|r", -- [1]
+			"Krixi-GrimBatol", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Krixi", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			181, -- [11]
+			"Player-1303-03AF0575", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_SAY", -- [20]
+		},
+		["1496454315.225"] = {
+			"I made a intrrpt - |cff71d5ff|Hspell:234401:0|h[Mind Rend]|h|r", -- [1]
+			"Krixi-GrimBatol", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Krixi", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			177, -- [11]
+			"Player-1303-03AF0575", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_SAY", -- [20]
+		},
+		["1496454350.808"] = {
+			"I made a intrrpt - |cff71d5ff|Hspell:234401:0|h[Mind Rend]|h|r", -- [1]
+			"Krixi-GrimBatol", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Krixi", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			184, -- [11]
+			"Player-1303-03AF0575", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_SAY", -- [20]
+		},
+		["1496454332.902"] = {
+			"I made a intrrpt - |cff71d5ff|Hspell:234401:0|h[Mind Rend]|h|r", -- [1]
+			"Krixi-GrimBatol", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Krixi", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			180, -- [11]
+			"Player-1303-03AF0575", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_SAY", -- [20]
+		},
+		["1496454326.154"] = {
+			"I made a intrrpt - |cff71d5ff|Hspell:234423:0|h[Drain Life]|h|r", -- [1]
+			"Krixi-GrimBatol", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Krixi", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			179, -- [11]
+			"Player-1303-03AF0575", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_SAY", -- [20]
+		},
+	},
 	["ChatEditHistory"] = {
 		"/p more like", -- [1]
 		"/p my friends are dicks", -- [2]
@@ -23,11 +157,9 @@ ElvCharacterDB = {
 		"/reload", -- [20]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
-	},
-	["ChatLog"] = {
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

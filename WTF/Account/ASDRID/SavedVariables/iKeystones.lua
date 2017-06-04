@@ -16,7 +16,7 @@ iKeystonesDB = {
 	},
 	["Player-1303-0478DE10"] = {
 		["name"] = "Zuriz",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 7,
 		["class"] = "SHAMAN",
 		["key"] = {
 			["map"] = 234,
@@ -43,8 +43,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 197,
 			["affix4"] = 8,
-			["affix10"] = 0,
 			["level"] = 7,
+			["affix10"] = 0,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -65,8 +65,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 198,
 			["affix4"] = 8,
-			["level"] = 8,
 			["affix10"] = 0,
+			["level"] = 8,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -79,8 +79,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 199,
 			["affix4"] = 8,
-			["level"] = 12,
 			["affix10"] = 10,
+			["level"] = 12,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -109,8 +109,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 206,
 			["affix4"] = 8,
-			["affix10"] = 0,
 			["level"] = 7,
+			["affix10"] = 0,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},

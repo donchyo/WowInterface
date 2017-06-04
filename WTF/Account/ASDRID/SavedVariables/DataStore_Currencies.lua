@@ -13,10 +13,10 @@ DataStore_CurrenciesDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_CurrenciesDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -274,7 +274,7 @@ DataStore_CurrenciesDB = {
 					1748, -- [3]
 					10718, -- [4]
 					252108, -- [5]
-					1244366, -- [6]
+					1173966, -- [6]
 					214, -- [7]
 					728, -- [8]
 					3, -- [9]
@@ -319,11 +319,11 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496397753,
+				["lastUpdate"] = 1496542601,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "9721-0-0-0",
+					[1220] = "9171-0-0-0",
 					[824] = "477-0-0-10000",
 					[1273] = "1-0-0-6",
 					[1191] = "850-0-0-5000",
@@ -390,11 +390,11 @@ DataStore_CurrenciesDB = {
 				["Currencies"] = {
 					75, -- [1]
 					1744, -- [2]
-					1876, -- [3]
+					2004, -- [3]
 					3294, -- [4]
-					488140, -- [5]
-					918222, -- [6]
-					598, -- [7]
+					436940, -- [5]
+					531022, -- [6]
+					342, -- [7]
 					3, -- [8]
 					280386, -- [9]
 					25668, -- [10]
@@ -442,16 +442,16 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496399566,
+				["lastUpdate"] = 1496542331,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "7173-0-0-0",
+					[1220] = "4148-0-0-0",
 					[824] = "932-0-0-10000",
-					[1273] = "4-0-0-6",
+					[1273] = "2-0-0-6",
 					[1191] = "200-0-0-5000",
 					[823] = "86692-0-0-0",
-					[1226] = "3813-0-0-0",
+					[1226] = "3413-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "14-0-0-20",
 					[1342] = "25-0-0-1000",
@@ -799,8 +799,8 @@ DataStore_CurrenciesDB = {
 					9040, -- [2]
 					2772, -- [3]
 					3294, -- [4]
-					609484, -- [5]
-					497614, -- [6]
+					14284, -- [5]
+					427214, -- [6]
 					86, -- [7]
 					3, -- [8]
 					291906, -- [9]
@@ -850,16 +850,16 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496399475,
+				["lastUpdate"] = 1496457175,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "3887-0-0-0",
+					[1220] = "3337-0-0-0",
 					[824] = "444-0-0-10000",
 					[1273] = "0-0-0-6",
 					[1191] = "900-0-0-5000",
 					[823] = "86352-0-0-0",
-					[1226] = "4761-0-0-0",
+					[1226] = "111-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "9-0-0-20",
 					[390] = "0-0-0-0",
@@ -904,7 +904,7 @@ DataStore_CurrenciesDB = {
 					9044, -- [3]
 					70622, -- [4]
 					99788, -- [5]
-					3850190, -- [6]
+					3741390, -- [6]
 					342, -- [7]
 					3154, -- [8]
 					5080, -- [9]
@@ -950,11 +950,11 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496398876,
+				["lastUpdate"] = 1496542635,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "30079-0-0-0",
+					[1220] = "29229-0-0-0",
 					[824] = "147-0-0-10000",
 					[1273] = "2-0-0-6",
 					[1191] = "3200-0-0-5000",
@@ -1054,7 +1054,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496399281,
+				["lastUpdate"] = 1496437244,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -1136,7 +1136,7 @@ DataStore_CurrenciesDB = {
 					1236, -- [3]
 					9694, -- [4]
 					16076, -- [5]
-					561230, -- [6]
+					497230, -- [6]
 					214, -- [7]
 					5074, -- [8]
 					3032, -- [9]
@@ -1186,11 +1186,11 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496399937,
+				["lastUpdate"] = 1496454448,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "4384-0-0-0",
+					[1220] = "3884-0-0-0",
 					[824] = "0-0-0-10000",
 					[1273] = "1-0-0-6",
 					[1191] = "175-0-0-5000",

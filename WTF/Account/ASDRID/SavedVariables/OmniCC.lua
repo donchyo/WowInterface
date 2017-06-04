@@ -1,6 +1,5 @@
 
 OmniCC4Config = {
-	["version"] = "7.2.0",
 	["groupSettings"] = {
 		["base"] = {
 			["styles"] = {
@@ -88,4 +87,5 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
+	["version"] = "7.2.0",
 }

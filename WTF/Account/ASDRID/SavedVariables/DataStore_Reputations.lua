@@ -13,10 +13,10 @@ DataStore_ReputationsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_ReputationsDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -169,7 +169,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496397754,
+				["lastUpdate"] = 1496542527,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -272,7 +272,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1496399566,
+				["lastUpdate"] = 1496542331,
 				["Factions"] = {
 					10507, -- [1]
 					10099, -- [2]
@@ -289,7 +289,7 @@ DataStore_ReputationsDB = {
 					[134] = 36360,
 					[136] = 40137,
 					[138] = 42000,
-					[140] = 10285,
+					[140] = 10360,
 					[37] = 10030,
 					[38] = 10401,
 					[39] = 12146,
@@ -622,19 +622,19 @@ DataStore_ReputationsDB = {
 					8270, -- [4]
 					10263, -- [5]
 					[77] = 6820,
-					[47] = 2547,
+					[75] = 8470,
 					[39] = 1649,
 					[56] = 57,
 					[112] = 8270,
 					[45] = 2303,
-					[75] = 8470,
+					[32] = 5324,
 					[18] = 1875,
 					[19] = 1875,
 					[38] = 2686,
 					[40] = 3795,
 					[20] = 2150,
 					[17] = 1875,
-					[32] = 5324,
+					[47] = 2547,
 				},
 			},
 			["Default.Grim Batol.Zolution"] = {
@@ -777,7 +777,7 @@ DataStore_ReputationsDB = {
 				["guildName"] = "Hoonigans",
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1496399475,
+				["lastUpdate"] = 1496457175,
 				["Factions"] = {
 					10199, -- [1]
 					13775, -- [2]
@@ -825,8 +825,8 @@ DataStore_ReputationsDB = {
 					[66] = 42000,
 					[67] = 42000,
 					[135] = 15772,
-					[137] = 20852,
-					[139] = 18320,
+					[137] = 21017,
+					[139] = 18485,
 					[18] = 2409,
 					[75] = 23450,
 					[77] = 11327,
@@ -941,7 +941,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496398876,
+				["lastUpdate"] = 1496542636,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -961,7 +961,7 @@ DataStore_ReputationsDB = {
 					[134] = 42000,
 					[136] = 38397,
 					[138] = 42000,
-					[140] = 35855,
+					[140] = 36105,
 					[37] = 32426,
 					[38] = 13683,
 					[39] = 20134,
@@ -980,7 +980,7 @@ DataStore_ReputationsDB = {
 					[54] = 23760,
 					[55] = 9054,
 					[56] = 87,
-					[57] = 7735,
+					[57] = 7832,
 					[59] = 1501,
 					[62] = 42000,
 					[63] = 39687,
@@ -1049,7 +1049,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1496399281,
+				["lastUpdate"] = 1496437242,
 				["Factions"] = {
 					7520, -- [1]
 					7214, -- [2]
@@ -1209,7 +1209,7 @@ DataStore_ReputationsDB = {
 				["guildName"] = "Hoonigans",
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1496399937,
+				["lastUpdate"] = 1496454436,
 				["Factions"] = {
 					10099, -- [1]
 					21629, -- [2]

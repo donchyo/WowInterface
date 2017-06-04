@@ -157,7 +157,7 @@ SellOMatic2_List: disabled
 epgp: disabled
 Bulkie: disabled
 premade-filter: disabled
-SLDataText: enabled
+SLDataText: disabled
 SPTimersSpellCache: disabled
 SPTimers: disabled
 Leatrix_Plus: disabled
