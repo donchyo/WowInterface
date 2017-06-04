@@ -1,4 +1,4 @@
-﻿-- German localization file for deDE.
+-- German localization file for deDE.
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("ElvUI", "deDE");
 
@@ -432,10 +432,15 @@ L["Normal"] = true
 L["Reversed"] = "Umgekehrt"
 L["Amount"] = "Anzahl"
 L["Order of each toon. Smaller numbers will go first"] = "Anordnung von jedem Twink. Kleiner Zahlen werden zu erst angezeigt."
+L["Tracked"] = "Verfolgt"
 
 --Enhnced Shadows
 L["Enhanced Shadows"] = "Erweiterte Schatten"
 L["Use shadows on..."] = "Benutze Schatten auf..."
+L["SLE_EnhShadows_BarButtons_Option"] = "Leiste %s Tasten"
+L["SLE_EnhShadows_MicroButtons_Option"] = "Microbar Tasten"
+L["SLE_EnhShadows_StanceButtons_Option"] = "Haltungsleistentasten"
+L["SLE_EnhShadows_PetButtons_Option"] = "Begleitertasten"
 
 --Equip Manager
 L["Equipment Manager"] = "Ausrüstungsmanager"

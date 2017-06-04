@@ -1,0 +1,16 @@
+------------------------------------------------------------------------
+r592 | Allara | 2017-06-02 14:49:20 -0500 (Fri, 02 Jun 2017) | 4 lines
+Changed paths:
+   M /trunk
+   D /trunk/.vs
+   M /trunk/Core.lua
+   M /trunk/Locales.lua
+   M /trunk/Modules/Options/.vs/Rarity_Options/v14/.wowsuo
+   M /trunk/Options_Defaults.lua
+
+- Reins of the Infinite Timereaver: Added Mists of Pandaria dungeons and updated the drop rate (thanks talar13!)
+- Midnight's Eternal Reins: Added (thanks amakusa007!)
+- Rarity can now detect previously-found transmog items that you're tracking (thanks Archov!)
+- Added the following Paragon items: Orphaned Felbat, Highmountain Elderhorn, Valarjar Stormwing, Cloudwing Hippogryph, Wild Dreamrunner, Leywoven Flying Carpet, Sira's Extra Cloak (thanks amakusa007!)
+------------------------------------------------------------------------
+

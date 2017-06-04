@@ -1,4 +1,4 @@
-﻿-- English localization file for ruRU.
+-- English localization file for ruRU.
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("ElvUI", "ruRU");
 
@@ -431,10 +431,15 @@ L["Normal"] = "Нормальная"
 L["Reversed"] = "Обратная"
 L["Amount"] = "Количество"
 L["Order of each toon. Smaller numbers will go first"] = "Порядок персонажей. Показ в порядке возрастания номера."
+L["Tracked"] = "Отслеживание"
 
 --Enhnced Shadows
 L["Enhanced Shadows"] = "Улучшенные тени"
 L["Use shadows on..."] = "Использовать тени на..."
+L["SLE_EnhShadows_BarButtons_Option"] = "Кнопки панели %s"
+L["SLE_EnhShadows_MicroButtons_Option"] = "Кнопки микроменю"
+L["SLE_EnhShadows_StanceButtons_Option"] = "Кнопки стоек"
+L["SLE_EnhShadows_PetButtons_Option"] = "Кнопки питомца"
 
 --Equip Manager
 L["Equipment Manager"] = "Менеджер экипировки"

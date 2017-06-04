@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.2.04 (12th May 2017, www.leatrix.com)
+-- 	Leatrix Plus 7.2.05 (28th May 2017, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.2.04"
+	LeaPlusLC["AddonVer"] = "7.2.05"
 
 ----------------------------------------------------------------------
 -- 	Locale
@@ -4647,7 +4647,7 @@
 								for i = 1, availableCount do
 									if _G["QuestTitleButton" .. i].isActive == 0 then
 										-- Select available quests
-										SelectAvailableQuest(_G["QuestTitleButton" .. i]:GetID())
+										C_Timer.After(0.01, function() SelectAvailableQuest(_G["QuestTitleButton" .. i]:GetID()) end)
 									else
 										-- Select completed quests
 										local void, isComplete = GetActiveTitle(i)
@@ -4664,7 +4664,7 @@
 								for i = 1, availableCount do
 									if _G["GossipTitleButton" .. i].type == "Available" then
 										-- Select available quests
-										SelectGossipAvailableQuest(i)
+										C_Timer.After(0.01, function() SelectGossipAvailableQuest(i) end)
 									else
 										-- Select completed quests
 										local isComplete = select(i * 6 - 5 + 3, GetGossipActiveQuests()) -- 4th argument of 6 argument line

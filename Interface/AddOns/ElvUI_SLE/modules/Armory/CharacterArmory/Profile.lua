@@ -1,4 +1,4 @@
-﻿if select(2, GetAddOnInfo('ElvUI_KnightFrame')) and IsAddOnLoaded('ElvUI_KnightFrame') then return end
+if select(2, GetAddOnInfo('ElvUI_KnightFrame')) and IsAddOnLoaded('ElvUI_KnightFrame') then return end
 
 local E, L, V, P, G = unpack(ElvUI)
 local KF, Info, Timer = unpack(ElvUI_KnightFrame)
@@ -10,12 +10,6 @@ P.sle.Armory.Character = {
 	
 	NoticeMissing = true,
 	MissingIcon = true,
-	
-	ItemLevel = {
-		font = "PT Sans Narrow",
-		size = 12,
-		outline = "NONE",
-	},
 	
 	Backdrop = {
 		SelectedBG = 'Space',
@@ -68,6 +62,11 @@ P.sle.Armory.Character = {
 		IlvlColor = false,
 		AverageColor = {r = 0, g = 1, b = .59},
 		OnlyPrimary = true,
+		ItemLevel = {
+			font = "PT Sans Narrow",
+			size = 12,
+			outline = "NONE",
+		},
 		List = {
 			HEALTH = false,
 			POWER = false,

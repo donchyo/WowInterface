@@ -1,7 +1,7 @@
-changeset:   628:26e997aa474d
-tag:         v7.2.0.3693.118
+changeset:   634:b0b9c5e3b2b0
+tag:         v7.2.0.3703.119-release
 user:        Tercio
-date:        Thu May 25 13:32:02 2017 -0300
-summary:     - fixed warrior fury being detected as protection warrior.
+date:        Mon May 29 20:39:31 2017 -0300
+summary:     - Fixed an error while killing low level mobs with warrior class.
 
 

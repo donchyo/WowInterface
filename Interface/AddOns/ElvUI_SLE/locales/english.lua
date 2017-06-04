@@ -1,4 +1,4 @@
-﻿-- English localization file for enUS and enGB.
+-- English localization file for enUS and enGB.
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("ElvUI", "enUS", true);
 
@@ -441,10 +441,15 @@ L["Normal"] = true
 L["Reversed"] = true
 L["Amount"] = true
 L["Order of each toon. Smaller numbers will go first"] = true
+L["Tracked"] = true
 
 --Enhnced Shadows
 L["Enhanced Shadows"] = true
 L["Use shadows on..."] = true
+L["SLE_EnhShadows_BarButtons_Option"] = "Bar %s Buttons"
+L["SLE_EnhShadows_MicroButtons_Option"] = "Microbar Buttons"
+L["SLE_EnhShadows_StanceButtons_Option"] = "Stance Bar Buttons"
+L["SLE_EnhShadows_PetButtons_Option"] = "Pet Bar Buttons"
 
 --Equip Manager
 L["Equipment Manager"] = true

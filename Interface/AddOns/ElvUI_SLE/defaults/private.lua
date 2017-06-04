@@ -1,10 +1,13 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 
 V["skins"]["addons"] = {
 	["EmbedSkada"] = true,
 }
 
 V["sle"] = {
+	["Armory"] = {
+		["UseArtMonitor"] = true,
+	},
 	["equip"] = {
 		["enable"] = false,
 		["spam"] = false,
@@ -116,6 +119,19 @@ V["sle"] = {
 				["stancebar"] = false,
 				["microbar"] = false,
 				["petbar"] = false,
+				["bar1buttons"] = false,
+				["bar2buttons"] = false,
+				["bar3buttons"] = false,
+				["bar4buttons"] = false,
+				["bar5buttons"] = false,
+				["bar6buttons"] = false,
+				["bar7buttons"] = false,
+				["bar8buttons"] = false,
+				["bar9buttons"] = false,
+				["bar10buttons"] = false,
+				["stancebarbuttons"] = false,
+				["microbarbuttons"] = false,
+				["petbarbuttons"] = false,
 			},
 		},
 	},

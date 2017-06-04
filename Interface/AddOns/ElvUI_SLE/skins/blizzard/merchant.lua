@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local Sk = SLE:GetModule("Skins")
 local S = E:GetModule('Skins')
 --GLOBALS: CreateFrame, MERCHANT_ITEMS_PER_PAGE, BUYBACK_ITEMS_PER_PAGE, hooksecurefunc, MERCHANT_PAGE_NUMBER, UIParent, ChatFontSmall
@@ -24,21 +24,31 @@ local IgnoreCurrency = {
 }
 
 local function SkinVendorItems(i)
-	local b = _G["MerchantItem"..i.."ItemButton"]
-	local t = _G["MerchantItem"..i.."ItemButtonIconTexture"]
-	local item_bar = _G["MerchantItem"..i]
-	item_bar:StripTextures(true)
-	item_bar:CreateBackdrop("Default")
+	local button = _G["MerchantItem"..i.."ItemButton"]
+	local icon = button.icon
+	local iconBorder = button.IconBorder
+	local item = _G["MerchantItem"..i]
+	item:StripTextures(true)
+	item:CreateBackdrop("Default")
 
-	b:StripTextures()
-	b:StyleButton(false)
-	b:SetTemplate("Default", true)
-	b:Point("TOPLEFT", item_bar, "TOPLEFT", 4, -4)
-	t:SetTexCoord(T.unpack(E.TexCoords))
-	t:SetInside()
+	button:StripTextures()
+	button:StyleButton(false)
+	button:SetTemplate("Default", true)
+	button:Point("TOPLEFT", item, "TOPLEFT", 4, -4)
+	icon:SetTexCoord(unpack(E.TexCoords))
+	icon:SetInside()
+	iconBorder:SetAlpha(0)
+	hooksecurefunc(iconBorder, 'SetVertexColor', function(self, r, g, b)
+		self:GetParent():SetBackdropBorderColor(r, g, b)
+		self:SetTexture("")
+	end)
+	hooksecurefunc(iconBorder, 'Hide', function(self)
+ 		self:GetParent():SetBackdropBorderColor(unpack(E.media.bordercolor))
+ 	end)
 
 	_G["MerchantItem"..i.."MoneyFrame"]:ClearAllPoints()
-	_G["MerchantItem"..i.."MoneyFrame"]:Point("BOTTOMLEFT", b, "BOTTOMRIGHT", 3, 0)
+	_G["MerchantItem"..i.."MoneyFrame"]:Point("BOTTOMLEFT", button, "BOTTOMRIGHT", 3, 0)
+	MerchantBuyBackItemItemButton.IconBorder:SetAlpha(0)
 end
 
 local function UpdateButtonsPositions(isBuyBack)
