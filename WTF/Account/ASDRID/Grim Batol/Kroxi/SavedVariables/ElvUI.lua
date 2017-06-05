@@ -1,13 +1,5 @@
 
 ElvCharacterDB = {
-	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
-		["IsInValidZone"] = true,
-	},
-	["ChatLog"] = {
-	},
 	["ChatEditHistory"] = {
 		"/g men det proccar inte", -- [1]
 		"/g känns det som", -- [2]
@@ -18,5 +10,13 @@ ElvCharacterDB = {
 		"/g tror jag ska sova mer", -- [7]
 		"/wa", -- [8]
 		"/ec", -- [9]
+	},
+	["BodyGuard"] = {
+		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+	["ChatLog"] = {
 	},
 }

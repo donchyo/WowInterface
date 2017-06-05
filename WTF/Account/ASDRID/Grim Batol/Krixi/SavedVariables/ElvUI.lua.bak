@@ -1,5 +1,13 @@
 
 ElvCharacterDB = {
+	["BodyGuard"] = {
+		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+	["ChatLog"] = {
+	},
 	["ChatEditHistory"] = {
 		"/p my friends are dicks", -- [1]
 		"/iks", -- [2]
@@ -21,13 +29,5 @@ ElvCharacterDB = {
 		"/wa", -- [18]
 		"/reload", -- [19]
 		"/ec", -- [20]
-	},
-	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
-		["Active"] = false,
-	},
-	["ChatLog"] = {
 	},
 }

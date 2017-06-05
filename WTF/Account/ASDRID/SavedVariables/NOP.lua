@@ -1,8 +1,8 @@
 
 NewOpenablesProfile = {
 	["char"] = {
-		["Donch - Grim Batol"] = {
-			["itemID"] = 147581,
+		["Nyrith - Grim Batol"] = {
+			["itemID"] = 147810,
 		},
 		["Krixidh - Grim Batol"] = {
 			["itemID"] = 137208,

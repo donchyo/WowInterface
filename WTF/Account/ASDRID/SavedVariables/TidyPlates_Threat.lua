@@ -91,21 +91,21 @@ TidyPlatesThreatDB = {
 				["index"] = 1,
 			},
 		},
-		["Zetiz - Grim Batol"] = {
-			["specInfo"] = {
-				["id"] = 259,
-				["role"] = "DAMAGER",
-				["name"] = "Assassination",
-				["index"] = 1,
-			},
-			["welcome"] = true,
-		},
 		["Krixi - Grim Batol"] = {
 			["specInfo"] = {
 				["id"] = 66,
 				["role"] = "TANK",
 				["index"] = 2,
 				["name"] = "Protection",
+			},
+			["welcome"] = true,
+		},
+		["Zetiz - Grim Batol"] = {
+			["specInfo"] = {
+				["id"] = 259,
+				["role"] = "DAMAGER",
+				["name"] = "Assassination",
+				["index"] = 1,
 			},
 			["welcome"] = true,
 		},
@@ -175,10 +175,10 @@ TidyPlatesThreatDB = {
 		["Donch - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 62,
+				["id"] = 64,
 				["role"] = "DAMAGER",
-				["name"] = "Arcane",
-				["index"] = 1,
+				["name"] = "Frost",
+				["index"] = 3,
 			},
 		},
 		["Zolution - Grim Batol"] = {
@@ -256,8 +256,8 @@ TidyPlatesThreatDB = {
 		["Loverocket - Aggra (Português)"] = "Default",
 		["Bawsi - Aggra (Português)"] = "Default",
 		["Greenzuriz - Aggra (Português)"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
@@ -578,11 +578,11 @@ TidyPlatesThreatDB = {
 			},
 			["cache"] = {
 			},
-			["text"] = {
-				["full"] = true,
-			},
 			["questWidget"] = {
 				["ON"] = false,
+			},
+			["text"] = {
+				["full"] = true,
 			},
 			["tapHealthbarColor"] = {
 				["b"] = 0,

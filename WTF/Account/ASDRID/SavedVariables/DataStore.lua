@@ -5,14 +5,14 @@ DataStoreDB = {
 			["Default.Shattered Hand.The Funky Bunch"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Grim Batol.Hoonigans"] = {
-				["faction"] = "Alliance",
+			["Default.Kazzak.K A M E L Å S Å"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Grim Batol.Lunos"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Kazzak.K A M E L Å S Å"] = {
-				["faction"] = "Horde",
+			["Default.Grim Batol.Jupiter Mining Corp"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Crushridge.The Bulls"] = {
 				["faction"] = "Alliance",
@@ -23,7 +23,7 @@ DataStoreDB = {
 			["Default.Crushridge.Proudly ADDICTED"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Jupiter Mining Corp"] = {
+			["Default.Grim Batol.Hoonigans"] = {
 				["faction"] = "Alliance",
 			},
 		},
@@ -160,7 +160,7 @@ DataStoreDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -171,7 +171,7 @@ DataStoreDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

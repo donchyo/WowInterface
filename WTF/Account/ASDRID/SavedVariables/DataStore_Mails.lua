@@ -207,8 +207,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/11/16 13:04",
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1496647790,
-				["lastVisitDate"] = "2017/06/05 09:29",
+				["lastUpdate"] = 1496671834,
+				["lastVisitDate"] = "2017/06/05 16:10",
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684636,
@@ -223,20 +223,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2017/06/02 12:29",
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496454804,
-				["Mails"] = {
-					{
-						["link"] = "|cffffffff|Hitem:128304::::::::110:104::::::|h[Yseralline Seed]|h|r",
-						["sender"] = "Auction House",
-						["itemID"] = 128304,
-						["returned"] = false,
-						["icon"] = 1416160,
-						["count"] = 1,
-						["lastCheck"] = 1496454804,
-						["daysLeft"] = 29.9998607635498,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2017/06/03 03:53",
+				["lastUpdate"] = 1496671800,
+				["lastVisitDate"] = "2017/06/05 16:10",
 			},
 			["Default.Grim Batol.Krixi"] = {
 				["lastUpdate"] = 1496650273,
@@ -274,10 +262,10 @@ DataStore_MailsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -288,7 +276,7 @@ DataStore_MailsDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

@@ -21,8 +21,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 234,
 			["affix4"] = 8,
-			["affix10"] = 0,
 			["level"] = 8,
+			["affix10"] = 0,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -38,13 +38,13 @@ iKeystonesDB = {
 	},
 	["Player-1303-03AF0575"] = {
 		["name"] = "Krixi",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 10,
 		["class"] = "PALADIN",
 		["key"] = {
 			["map"] = 197,
 			["affix4"] = 8,
-			["level"] = 7,
 			["affix10"] = 0,
+			["level"] = 7,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -74,7 +74,7 @@ iKeystonesDB = {
 	},
 	["Player-1303-04772A8A"] = {
 		["name"] = "Nyrith",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 12,
 		["class"] = "DRUID",
 		["key"] = {
 			["map"] = 199,

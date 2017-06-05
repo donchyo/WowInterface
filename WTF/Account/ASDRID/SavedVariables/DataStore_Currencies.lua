@@ -73,13 +73,13 @@ DataStore_CurrenciesDB = {
 				["Seal of Inevitable Fate"] = 32,
 				["Elder Charm of Good Fortune"] = 12,
 				["Seal of Broken Fate"] = 43,
-				["Curious Coin"] = 42,
-				["Lesser Charm of Good Fortune"] = 13,
 				["Oil"] = 31,
-				["Mists of Pandaria"] = 10,
+				["Lesser Charm of Good Fortune"] = 13,
+				["Curious Coin"] = 42,
+				["Wrath of the Lich King"] = 36,
 				["Artifact Fragment"] = 24,
 				["Justice Points"] = 3,
-				["Wrath of the Lich King"] = 36,
+				["Mists of Pandaria"] = 10,
 				["Apexis Crystal"] = 21,
 				["Player vs. Player"] = 17,
 				["Timewarped Badge"] = 33,
@@ -364,10 +364,10 @@ DataStore_CurrenciesDB = {
 					75, -- [1]
 					1744, -- [2]
 					2004, -- [3]
-					3294, -- [4]
-					206540, -- [5]
-					454222, -- [6]
-					342, -- [7]
+					6494, -- [4]
+					219340, -- [5]
+					582222, -- [6]
+					214, -- [7]
 					3, -- [8]
 					280386, -- [9]
 					25668, -- [10]
@@ -415,20 +415,20 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496666808,
+				["lastUpdate"] = 1496686204,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "3548-0-0-0",
+					[1220] = "4548-0-0-0",
 					[824] = "932-0-0-10000",
-					[1273] = "2-0-0-6",
+					[1273] = "1-0-0-6",
 					[1191] = "200-0-0-5000",
 					[823] = "86692-0-0-0",
-					[1226] = "1613-0-0-0",
+					[1226] = "1713-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "14-0-0-20",
 					[390] = "0-0-0-0",
-					[1342] = "25-0-0-1000",
+					[1342] = "50-0-0-1000",
 				},
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
@@ -838,7 +838,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496666667,
+				["lastUpdate"] = 1496688077,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -891,8 +891,8 @@ DataStore_CurrenciesDB = {
 					243280, -- [2]
 					9044, -- [3]
 					70622, -- [4]
-					99788, -- [5]
-					3741390, -- [6]
+					419788, -- [5]
+					3613390, -- [6]
 					342, -- [7]
 					3154, -- [8]
 					5080, -- [9]
@@ -938,16 +938,16 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496666708,
+				["lastUpdate"] = 1496690084,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "29229-0-0-0",
+					[1220] = "28229-0-0-0",
 					[824] = "147-0-0-10000",
 					[1273] = "2-0-0-6",
 					[1191] = "3200-0-0-5000",
 					[823] = "75060-0-0-0",
-					[1226] = "779-0-0-0",
+					[1226] = "3279-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "2-0-0-20",
 					[1342] = "551-0-0-1000",
@@ -1134,7 +1134,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496666553,
+				["lastUpdate"] = 1496688007,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -1153,10 +1153,10 @@ DataStore_CurrenciesDB = {
 			["Default.Grim Batol.Donch"] = {
 				["Currencies"] = {
 					75, -- [1]
-					464, -- [2]
+					1488, -- [2]
 					212, -- [3]
 					8012, -- [4]
-					360910, -- [5]
+					506318, -- [5]
 					86, -- [6]
 					3, -- [7]
 					250306, -- [8]
@@ -1207,11 +1207,11 @@ DataStore_CurrenciesDB = {
 					22, -- [17]
 					19, -- [18]
 				},
-				["lastUpdate"] = 1496666091,
+				["lastUpdate"] = 1496686284,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "2819-0-0-0",
+					[1220] = "3955-0-0-0",
 					[824] = "14-0-0-10000",
 					[1273] = "0-0-0-6",
 					[1191] = "1700-0-0-5000",
@@ -1314,10 +1314,10 @@ DataStore_CurrenciesDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -1328,7 +1328,7 @@ DataStore_CurrenciesDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

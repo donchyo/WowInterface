@@ -34,7 +34,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["timeMachine"] = 1,
+							["nome"] = "Zuriz",
 							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
@@ -44,7 +44,7 @@ _detalhes_database = {
 							["total"] = 5394924.001203,
 							["damage_taken"] = 1323952.001203,
 							["tipo"] = 1,
-							["nome"] = "Zuriz",
+							["timeMachine"] = 1,
 							["spells"] = {
 								["_ActorTable"] = {
 									[51505] = {
@@ -142,6 +142,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 72682,
 							["colocacao"] = 1,
 							["last_event"] = 1496657470,
+							["on_hold"] = true,
+							["start_time"] = 1496657437,
+							["serial"] = "Player-1303-0478DE10",
 							["friendlyfire"] = {
 								["Grimtotem Champion"] = {
 									["total"] = 72682,
@@ -150,9 +153,6 @@ _detalhes_database = {
 									},
 								},
 							},
-							["start_time"] = 1496657437,
-							["serial"] = "Player-1303-0478DE10",
-							["on_hold"] = true,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -172,8 +172,7 @@ _detalhes_database = {
 							["totalover"] = 1753.007511,
 							["total_without_pet"] = 71374.007511,
 							["total"] = 71374.007511,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 264,
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 1,
@@ -188,7 +187,8 @@ _detalhes_database = {
 							["healing_taken"] = 71374.007511,
 							["fight_component"] = true,
 							["end_time"] = 1496657468,
-							["spec"] = 264,
+							["targets_absorbs"] = {
+							},
 							["nome"] = "Zuriz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -212,12 +212,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["totaldenied"] = 0,
-										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 20,
 										["n_curado"] = 71374,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -229,11 +229,11 @@ _detalhes_database = {
 							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1496657466,
 							["totaldenied"] = 0.007511,
 							["start_time"] = 1496657437,
 							["delay"] = 0,
-							["last_event"] = 1496657466,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -267,10 +267,10 @@ _detalhes_database = {
 							["classe"] = "SHAMAN",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[77762] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 77762,
+									[186401] = {
+										["uptime"] = 31,
+										["activedamt"] = 1,
+										["id"] = 186401,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -285,19 +285,19 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[186401] = {
+									[225506] = {
 										["uptime"] = 31,
 										["activedamt"] = 1,
-										["id"] = 186401,
+										["id"] = 225506,
 										["targets"] = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[225506] = {
-										["uptime"] = 31,
-										["activedamt"] = 1,
-										["id"] = 225506,
+									[77762] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 77762,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -317,8 +317,8 @@ _detalhes_database = {
 								[403] = 8,
 								[188838] = 1,
 							},
-							["last_event"] = 1496657468,
 							["tipo"] = 4,
+							["last_event"] = 1496657468,
 							["nome"] = "Zuriz",
 							["pets"] = {
 							},
@@ -346,7 +346,7 @@ _detalhes_database = {
 				["combat_counter"] = 12017,
 				["playing_solo"] = true,
 				["totals"] = {
-					5394923.955124, -- [1]
+					5394923.899594, -- [1]
 					71374, -- [2]
 					{
 						0, -- [1]
@@ -439,8 +439,8 @@ _detalhes_database = {
 					},
 				},
 				["end_time"] = 325964.392,
-				["combat_id"] = 915,
 				["instance_type"] = "none",
+				["combat_id"] = 915,
 				["is_temporary"] = true,
 				["hasSaved"] = true,
 				["frags"] = {
@@ -478,11 +478,9 @@ _detalhes_database = {
 		},
 	},
 	["ignore_nicktag"] = false,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
-	["last_encounter"] = "Gul'dan",
-	["combat_counter"] = 12020,
+	["last_version"] = "v7.2.0.3703",
+	["last_day"] = "05",
+	["combat_counter"] = 12022,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -490,8 +488,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -537,7 +535,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -545,7 +543,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -553,7 +551,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -567,7 +565,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -1629,8 +1627,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -1642,30 +1640,67 @@ _detalhes_database = {
 			["enabled"] = true,
 		},
 	},
-	["force_font_outline"] = "",
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
 	["character_data"] = {
-		["logons"] = 1717,
+		["logons"] = 1719,
 	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["savedbuffs"] = {
-	},
+	["force_font_outline"] = "",
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 915,
 	["savedStyles"] = {
 	},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1497649743,
+		["last_version"] = 8,
+		[83337059] = {
+			"Benchclass", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Asira Dawnslayer", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
+			{
+				0.087890625, -- [1]
+				0.916015625, -- [2]
+				1, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			4, -- [7]
+		},
+		[103048937] = {
+			"Mandria", -- [1]
+			false, -- [2]
+			false, -- [3]
+			false, -- [4]
+			false, -- [5]
+			false, -- [6]
+			2, -- [7]
+		},
+	},
 	["last_instance_time"] = 1496540841,
-	["last_day"] = "05",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_version"] = "v7.2.0.3703",
+	["savedbuffs"] = {
+	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -1767,42 +1802,7 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1497649743,
-		["last_version"] = 8,
-		[83337059] = {
-			"Benchclass", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Asira Dawnslayer", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			4, -- [7]
-		},
-		[103048937] = {
-			"Mandria", -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			false, -- [5]
-			false, -- [6]
-			2, -- [7]
-		},
-	},
+	["last_encounter"] = "Gul'dan",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {
@@ -1837,11 +1837,11 @@ _detalhes_database = {
 		},
 		["Creature-0-3891-1710-10066-118447-00003517AB"] = {
 		},
-		["Creature-0-1465-1710-6677-118447-0000352415"] = {
-		},
-		["Creature-0-3110-1710-32074-118451-0000350D27"] = {
-		},
 		["Creature-0-3769-1710-6777-118448-000034F98B"] = {
+		},
+		["Creature-0-1465-1710-6866-118447-000035248D"] = {
+		},
+		["Creature-0-1465-1710-6866-118448-000035248D"] = {
 		},
 		["Creature-0-1465-1710-31300-118451-000034FB3F"] = {
 		},
@@ -1877,21 +1877,6 @@ _detalhes_database = {
 		},
 		["Creature-0-3891-1710-5749-118447-000034FA21"] = {
 		},
-		["Player-1303-0478DE10"] = {
-			19264, -- [1]
-			22492, -- [2]
-			21970, -- [3]
-			19275, -- [4]
-			19269, -- [5]
-			22322, -- [6]
-			21971, -- [7]
-		},
-		["Creature-0-3110-1710-29554-118447-000034FFD2"] = {
-		},
-		["Creature-0-3110-1710-29554-118448-000034FFD2"] = {
-		},
-		["Creature-0-3110-1710-29554-118451-000034FFD2"] = {
-		},
 		["Player-3687-07F20771"] = {
 			22274, -- [1]
 			22289, -- [2]
@@ -1900,6 +1885,21 @@ _detalhes_database = {
 			19357, -- [5]
 			19347, -- [6]
 			22497, -- [7]
+		},
+		["Creature-0-3110-1710-29554-118448-000034FFD2"] = {
+		},
+		["Creature-0-3110-1710-29554-118447-000034FFD2"] = {
+		},
+		["Creature-0-3110-1710-29554-118451-000034FFD2"] = {
+		},
+		["Player-1303-0478DE10"] = {
+			19264, -- [1]
+			22492, -- [2]
+			21970, -- [3]
+			19275, -- [4]
+			19269, -- [5]
+			22322, -- [6]
+			21971, -- [7]
 		},
 		["Creature-0-3891-1710-5749-118448-000034FA21"] = {
 		},
@@ -1913,13 +1913,13 @@ _detalhes_database = {
 		},
 		["Creature-0-3891-1710-5663-118447-000034F837"] = {
 		},
-		["Creature-0-3769-1710-6777-118447-000034F98B"] = {
+		["Creature-0-1465-1710-6677-118447-0000352415"] = {
 		},
-		["Creature-0-1465-1710-6866-118448-000035248D"] = {
+		["Creature-0-3769-1710-6777-118447-000034F98B"] = {
 		},
 		["Creature-0-3769-1710-6777-118451-000034F98B"] = {
 		},
-		["Creature-0-1465-1710-6866-118447-000035248D"] = {
+		["Creature-0-3110-1710-32074-118451-0000350D27"] = {
 		},
 		["Creature-0-3891-1710-10066-118448-0000351439"] = {
 		},

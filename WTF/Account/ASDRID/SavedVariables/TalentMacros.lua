@@ -16,11 +16,11 @@ TalentMacrosDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
 		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
@@ -31,17 +31,20 @@ TalentMacrosDB = {
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 	},
 	["profiles"] = {
-		["Bawsi - Aggra (Português)"] = {
-		},
-		["Donch - Grim Batol"] = {
+		["Namji - Grim Batol"] = {
+			["macrotext"] = {
+				[19820] = "#showtooltip\n/cast [@namji] Zen Sphere",
+			},
 			["version"] = 1,
+		},
+		["Krixiyo - Twisting Nether"] = {
 		},
 		["Bawsi - Shattered Hand"] = {
 			["version"] = 1,
@@ -60,11 +63,7 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
-		["Namji - Grim Batol"] = {
-			["macrotext"] = {
-				[19820] = "#showtooltip\n/cast [@namji] Zen Sphere",
-			},
-			["version"] = 1,
+		["Bawsi - Aggra (Português)"] = {
 		},
 		["Gnomalock - Grim Batol"] = {
 			["version"] = 1,
@@ -83,16 +82,6 @@ TalentMacrosDB = {
 		["Donchyo - Shattered Hand"] = {
 			["version"] = 1,
 		},
-		["Nyrith - Grim Batol"] = {
-			["macrotext"] = {
-				[18571] = "#showtooltip\n/use [nomod] wild charge\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[18574] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cenarion ward",
-				[18569] = "#showtooltip\n/use [nomod] feline swiftness\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[18570] = "#showtooltip\n/use [nomod] displacer beast\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[22424] = "#showtooltip\n/use [nomod] guttural roars\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-			},
-			["version"] = 1,
-		},
 		["Lilgaykrixi - Kazzak"] = {
 		},
 		["Zetiz - Grim Batol"] = {
@@ -106,6 +95,16 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
+		["Nyrith - Grim Batol"] = {
+			["macrotext"] = {
+				[18571] = "#showtooltip\n/use [nomod] wild charge\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[18574] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cenarion ward",
+				[18569] = "#showtooltip\n/use [nomod] feline swiftness\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[18570] = "#showtooltip\n/use [nomod] displacer beast\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[22424] = "#showtooltip\n/use [nomod] guttural roars\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+			},
+			["version"] = 1,
+		},
 		["Donch - Crushridge"] = {
 			["version"] = 1,
 		},
@@ -116,9 +115,9 @@ TalentMacrosDB = {
 			["macrotext"] = {
 				[17565] = "#showtooltip\n/use [nomod] speed of light\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
 				[17567] = "#showtooltip\n/use [nomod] long arm of the law\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[17597] = "#showtooltip\n/cast Holy Avenger\n/use 13",
 				[17569] = "#showtooltip\n/use [nomod] pursiut of justice\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
 				[21811] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Sacred shield\n",
+				[17597] = "#showtooltip\n/cast Holy Avenger\n/use 13",
 			},
 			["version"] = 1,
 		},
@@ -168,7 +167,8 @@ TalentMacrosDB = {
 		["Krixiswag - Aggra (Português)"] = {
 			["version"] = 1,
 		},
-		["Krixiyo - Twisting Nether"] = {
+		["Donch - Grim Batol"] = {
+			["version"] = 1,
 		},
 	},
 }

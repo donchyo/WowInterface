@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 94,
+	["session"] = 108,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -48,5 +48,29 @@ BugGrabberDB = {
 			["session"] = 68,
 			["counter"] = 1,
 		}, -- [6]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ElvUI_SLE' tried to call the protected function '<unnamed>:Hide()'.",
+			["time"] = "2017/06/05 15:15:26",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:428: in function <Interface\\FrameXML\\WorldMapFrame.lua:390>\n[C]: ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2404: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2431: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2462: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2136: in function <Interface\\FrameXML\\UIParent.lua:2128>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2930: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:3098: in function `CloseWindows'\nInterface\\FrameXML\\UIParent.lua:3137: in function <Interface\\FrameXML\\UIParent.lua:3127>\n[C]: in function `securecall'\nInterface\\FrameXML\\UIParent.lua:3748: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
+			["session"] = 96,
+			["counter"] = 1,
+		}, -- [7]
+		{
+			["message"] = "...ace\\AddOns\\Details\\classes\\container_combatentes.lua:209: attempt to index local 'nome' (a nil value)",
+			["time"] = "2017/06/05 15:19:06",
+			["locals"] = "",
+			["stack"] = "...ace\\AddOns\\Details\\classes\\container_combatentes.lua:209: in function <...ace\\AddOns\\Details\\classes\\container_combatentes.lua:193>\n...ace\\AddOns\\Details\\classes\\container_combatentes.lua:560: in function `PegarCombatente'\nInterface\\AddOns\\Details\\core\\parser.lua:2882: in function <Interface\\AddOns\\Details\\core\\parser.lua:2859>\n(tail call): ?",
+			["session"] = 96,
+			["counter"] = 5,
+		}, -- [8]
+		{
+			["message"] = "[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:3: attempt to compare nil with number",
+			["time"] = "2017/06/05 21:09:57",
+			["locals"] = "value = nil\n(*temporary) = 17\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"player\"\n(*temporary) = \"Overflow\"\n(*temporary) = \"attempt to compare nil with number\"\n",
+			["stack"] = "[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:3: in function <[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
+			["session"] = 108,
+			["counter"] = 110,
+		}, -- [9]
 	},
 }

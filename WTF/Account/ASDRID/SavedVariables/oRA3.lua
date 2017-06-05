@@ -24,17 +24,9 @@ oRA3DB = {
 				},
 			},
 		},
-		["Loot"] = {
+		["GuildRepairs"] = {
 		},
-		["Difficulty"] = {
-			["profiles"] = {
-				["Default"] = {
-					["prevRaidDifficulty"] = 14,
-				},
-				["Skullflower"] = {
-					["prevRaidDifficulty"] = 16,
-				},
-			},
+		["Alerts"] = {
 		},
 		["Rings"] = {
 			["profiles"] = {
@@ -49,7 +41,7 @@ oRA3DB = {
 				},
 			},
 		},
-		["GuildRepairs"] = {
+		["Loot"] = {
 		},
 		["Promote"] = {
 		},
@@ -86,7 +78,15 @@ oRA3DB = {
 		},
 		["Tanks"] = {
 		},
-		["Alerts"] = {
+		["Difficulty"] = {
+			["profiles"] = {
+				["Default"] = {
+					["prevRaidDifficulty"] = 14,
+				},
+				["Skullflower"] = {
+					["prevRaidDifficulty"] = 16,
+				},
+			},
 		},
 	},
 	["profileKeys"] = {

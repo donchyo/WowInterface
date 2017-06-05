@@ -60,3 +60,4 @@ bind [ PAWN_COMPARE_LEFT
 bind ] PAWN_COMPARE_RIGHT
 bind ALT-F CLICK BT4Button78:LeftButton
 bind ALT-4 CLICK BT4Button73:LeftButton
+bind ALT-BUTTON5 CLICK BT4Button74:LeftButton

@@ -10,9 +10,9 @@ ChocolateBarDB = {
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
-		["Kroxi - Crushridge"] = "Default",
-		["Treefiddy - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
+		["Treefiddy - Aggra (Português)"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Menardiairl - Culte de la Rive noire"] = "Default",
@@ -28,15 +28,6 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["background"] = {
-				["tileSize"] = 136,
-				["color"] = {
-					["a"] = 0,
-					["g"] = 0.36078431372549,
-					["r"] = 0.380392156862745,
-				},
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barOffy"] = 1,
@@ -46,6 +37,15 @@ ChocolateBarDB = {
 					["barOffx"] = -20.4444828033447,
 				},
 			},
+			["background"] = {
+				["tileSize"] = 136,
+				["color"] = {
+					["a"] = 0,
+					["g"] = 0.36078431372549,
+					["r"] = 0.380392156862745,
+				},
+			},
+			["locked"] = false,
 			["fontPath"] = "Fonts\\ARIALN.TTF",
 			["objSettings"] = {
 				["Magic Runes"] = {

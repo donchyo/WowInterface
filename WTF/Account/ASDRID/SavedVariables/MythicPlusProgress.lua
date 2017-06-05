@@ -2,15 +2,15 @@
 MythicPlusProgressDB = {
 	["settings"] = {
 		["enableTooltip"] = true,
-		["inconclusiveDataThreshold"] = 100,
 		["maxTimeSinceKill"] = 600,
-		["nameplateTextColor"] = "FFFFFF",
+		["inconclusiveDataThreshold"] = 100,
+		["enablePullEstimate"] = true,
 		["nameplateUpdateRate"] = 200,
 		["dbVersion"] = 6,
 		["version"] = "0.3e",
-		["enableNameplateText"] = true,
+		["nameplateTextColor"] = "FFFFFF",
 		["tooltipColor"] = "82E0FF",
-		["enablePullEstimate"] = true,
+		["enableNameplateText"] = true,
 		["pullEstimateCombatOnly"] = true,
 		["enabled"] = true,
 	},
@@ -45,7 +45,7 @@ MythicPlusProgressDB = {
 		},
 		[98954] = {
 			["values"] = {
-				[4] = 57,
+				[4] = 60,
 			},
 			["name"] = "Felsworn Myrmidon",
 		},
@@ -107,8 +107,8 @@ MythicPlusProgressDB = {
 				[8] = 0.2373046875,
 				[10] = 12.39453125,
 				[3] = 0.000564407593623754,
-				[9] = 0.00422828258524535,
 				[5] = 0.003171211938934,
+				[9] = 0.00422828258524535,
 			},
 			["name"] = "Felbound Enforcer",
 		},
@@ -177,7 +177,7 @@ MythicPlusProgressDB = {
 		},
 		[95832] = {
 			["values"] = {
-				[2] = 56,
+				[2] = 59,
 			},
 			["name"] = "Valarjar Shieldmaiden",
 		},
@@ -299,11 +299,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Dreadborne Seer",
 		},
-		[105699] = {
+		[118704] = {
 			["values"] = {
-				[3] = 19,
+				[10] = 2,
 			},
-			["name"] = "Mana Saber",
+			["name"] = "Dul'zak",
 		},
 		[92168] = {
 			["values"] = {
@@ -311,11 +311,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Target Dummy Test2",
 		},
-		[118704] = {
+		[105699] = {
 			["values"] = {
-				[10] = 2,
+				[3] = 19,
 			},
-			["name"] = "Dul'zak",
+			["name"] = "Mana Saber",
 		},
 		[105715] = {
 			["values"] = {
@@ -328,33 +328,9 @@ MythicPlusProgressDB = {
 		},
 		[96611] = {
 			["values"] = {
-				[2] = 16,
+				[2] = 17,
 			},
 			["name"] = "Angerhoof Bull",
-		},
-		[98926] = {
-			["values"] = {
-				[4] = 82,
-			},
-			["name"] = "Shadow Hunter",
-		},
-		[98368] = {
-			["values"] = {
-				[4] = 30,
-			},
-			["name"] = "Ghostly Protector",
-		},
-		[95834] = {
-			["values"] = {
-				[2] = 42,
-			},
-			["name"] = "Valarjar Mystic",
-		},
-		[121569] = {
-			["values"] = {
-				[4] = 8,
-			},
-			["name"] = "Vilebark Walker",
 		},
 		[91786] = {
 			["values"] = {
@@ -365,9 +341,33 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Gritslime Snail",
 		},
+		[98368] = {
+			["values"] = {
+				[4] = 30,
+			},
+			["name"] = "Ghostly Protector",
+		},
+		[95834] = {
+			["values"] = {
+				[2] = 46,
+			},
+			["name"] = "Valarjar Mystic",
+		},
+		[121569] = {
+			["values"] = {
+				[4] = 8,
+			},
+			["name"] = "Vilebark Walker",
+		},
+		[98926] = {
+			["values"] = {
+				[4] = 88,
+			},
+			["name"] = "Shadow Hunter",
+		},
 		[98177] = {
 			["values"] = {
-				[12] = 19,
+				[12] = 20,
 			},
 			["name"] = "Glayvianna Soulrender",
 		},
@@ -397,7 +397,7 @@ MythicPlusProgressDB = {
 		},
 		[96934] = {
 			["values"] = {
-				[2] = 11,
+				[2] = 12,
 			},
 			["name"] = "Valarjar Trapper",
 		},
@@ -439,7 +439,7 @@ MythicPlusProgressDB = {
 		},
 		[96584] = {
 			["values"] = {
-				[4] = 56,
+				[4] = 58,
 			},
 			["name"] = "Immoliant Fury",
 		},
@@ -470,7 +470,7 @@ MythicPlusProgressDB = {
 		},
 		[96664] = {
 			["values"] = {
-				[2] = 41,
+				[2] = 43,
 			},
 			["name"] = "Valarjar Runecarver",
 		},
@@ -501,7 +501,7 @@ MythicPlusProgressDB = {
 		},
 		[99804] = {
 			["values"] = {
-				[2] = 16,
+				[2] = 17,
 			},
 			["name"] = "Valarjar Falconer",
 		},
@@ -575,14 +575,14 @@ MythicPlusProgressDB = {
 		},
 		[97678] = {
 			["values"] = {
-				0.00563771011366045, -- [1]
-				0.100677322632686, -- [2]
-				0.421875, -- [3]
-				1.0023784089542, -- [4]
+				0.00422828258524534, -- [1]
+				0.0755079919745145, -- [2]
+				0.31640625, -- [3]
+				0.75178380671565, -- [4]
 				nil, -- [5]
-				0.00317121193893403, -- [6]
-				0.0786630697512012, -- [7]
-				6.13018262386322, -- [8]
+				0.00237840895420052, -- [6]
+				0.0589973023134009, -- [7]
+				7.13018262386322, -- [8]
 			},
 			["name"] = "Aranasi Broodmother",
 		},
@@ -655,11 +655,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Phantom Guardsman",
 		},
-		[115488] = {
+		[91008] = {
 			["values"] = {
-				[4] = 1,
+				[4] = 69,
 			},
-			["name"] = "Infused Pyromancer",
+			["name"] = "Rockbound Pelter",
 		},
 		[105682] = {
 			["values"] = {
@@ -711,16 +711,15 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Wrathguard Felblade",
 		},
-		[102404] = {
+		[118724] = {
 			["values"] = {
-				0.00422828258524534, -- [1]
-				[4] = 40,
+				[4] = 10,
 			},
-			["name"] = "Stoneclaw Grubmaster",
+			["name"] = "Helblaze Felbringer",
 		},
 		[96587] = {
 			["values"] = {
-				[4] = 125,
+				[4] = 131,
 			},
 			["name"] = "Felsworn Infester",
 		},
@@ -731,11 +730,12 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Mana Wyrm",
 		},
-		[118724] = {
+		[102404] = {
 			["values"] = {
-				[4] = 10,
+				0.00422828258524534, -- [1]
+				[4] = 40,
 			},
-			["name"] = "Helblaze Felbringer",
+			["name"] = "Stoneclaw Grubmaster",
 		},
 		[99360] = {
 			["values"] = {
@@ -750,8 +750,8 @@ MythicPlusProgressDB = {
 		},
 		[97081] = {
 			["values"] = {
-				[5] = 3.75,
-				[4] = 0.421875,
+				[5] = 4.75,
+				[4] = 0.31640625,
 			},
 			["name"] = "King Bjorn",
 		},
@@ -779,11 +779,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Mak'rana Siltwalker",
 		},
-		[120366] = {
+		[98691] = {
 			["values"] = {
-				[4] = 2,
+				[4] = 93,
 			},
-			["name"] = "Hellblaze Temptress",
+			["name"] = "Risen Scout",
 		},
 		[92538] = {
 			["values"] = {
@@ -813,10 +813,10 @@ MythicPlusProgressDB = {
 		},
 		[100364] = {
 			["values"] = {
-				0.00104576964465422, -- [1]
-				0.000133936567627512, -- [2]
-				0.0570660581676375, -- [3]
-				24.9267578125, -- [4]
+				0.000441184068838499, -- [1]
+				5.650448946785660e-005, -- [2]
+				0.0240747432894721, -- [3]
+				27.9267578125, -- [4]
 			},
 			["name"] = "Spirit of Vengeance",
 		},
@@ -858,8 +858,8 @@ MythicPlusProgressDB = {
 		},
 		[97677] = {
 			["values"] = {
-				179.0625, -- [1]
-				[4] = 1.014990366650170e-012,
+				193.0625, -- [1]
+				[4] = 1.808504558722080e-014,
 			},
 			["name"] = "Barbed Spiderling",
 		},
@@ -892,7 +892,7 @@ MythicPlusProgressDB = {
 		},
 		[98963] = {
 			["values"] = {
-				228, -- [1]
+				244, -- [1]
 			},
 			["name"] = "Blazing Imp",
 		},
@@ -924,7 +924,7 @@ MythicPlusProgressDB = {
 		},
 		[98533] = {
 			["values"] = {
-				[10] = 20,
+				[10] = 21,
 			},
 			["name"] = "Foul Mother",
 		},
@@ -957,8 +957,8 @@ MythicPlusProgressDB = {
 		},
 		[97083] = {
 			["values"] = {
-				[4] = 0.177978515625,
-				[5] = 6,
+				[4] = 0.13348388671875,
+				[5] = 7,
 			},
 			["name"] = "King Ranulf",
 		},
@@ -989,6 +989,24 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Rook Spiderling",
 		},
+		[102566] = {
+			["values"] = {
+				[12] = 26,
+			},
+			["name"] = "Grimhorn the Enslaver",
+		},
+		[101549] = {
+			["values"] = {
+				30, -- [1]
+			},
+			["name"] = "Arcane Minion",
+		},
+		[92350] = {
+			["values"] = {
+				[4] = 10,
+			},
+			["name"] = "Understone Drudge",
+		},
 		[100526] = {
 			["values"] = {
 				1.14067950995377, -- [1]
@@ -997,24 +1015,6 @@ MythicPlusProgressDB = {
 				5.11199712753296, -- [4]
 			},
 			["name"] = "Tormented Bloodseeker",
-		},
-		[101549] = {
-			["values"] = {
-				30, -- [1]
-			},
-			["name"] = "Arcane Minion",
-		},
-		[95920] = {
-			["values"] = {
-				[2] = 1,
-			},
-			["name"] = "Animated Storm",
-		},
-		[102566] = {
-			["values"] = {
-				[12] = 25,
-			},
-			["name"] = "Grimhorn the Enslaver",
 		},
 		[105629] = {
 			["values"] = {
@@ -1056,15 +1056,17 @@ MythicPlusProgressDB = {
 		},
 		[97068] = {
 			["values"] = {
-				[5] = 14,
+				[5] = 15,
 			},
 			["name"] = "Storm Drake",
 		},
-		[97084] = {
+		[96574] = {
 			["values"] = {
-				[5] = 5,
+				1.78783736206890e-005, -- [1]
+				[5] = 35.25,
+				[3] = 0.000178582090170017,
 			},
-			["name"] = "King Tor",
+			["name"] = "Stormforged Sentinel",
 		},
 		[115765] = {
 			["values"] = {
@@ -1096,7 +1098,7 @@ MythicPlusProgressDB = {
 		},
 		[96608] = {
 			["values"] = {
-				[2] = 62,
+				[2] = 67,
 			},
 			["name"] = "Ebonclaw Worg",
 		},
@@ -1106,11 +1108,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Hatecoil Crusher",
 		},
-		[102583] = {
+		[119923] = {
 			["values"] = {
-				[4] = 41,
+				[4] = 10,
 			},
-			["name"] = "Fel Scorcher",
+			["name"] = "Helblaze Soulmender",
 		},
 		[100527] = {
 			["values"] = {
@@ -1119,11 +1121,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Dreadfire Imp",
 		},
-		[119923] = {
+		[102583] = {
 			["values"] = {
-				[4] = 10,
+				[4] = 43,
 			},
-			["name"] = "Helblaze Soulmender",
+			["name"] = "Fel Scorcher",
 		},
 		[114584] = {
 			["values"] = {
@@ -1161,9 +1163,15 @@ MythicPlusProgressDB = {
 		},
 		[96640] = {
 			["values"] = {
-				[2] = 33,
+				[2] = 35,
 			},
 			["name"] = "Valarjar Marksman",
+		},
+		[95842] = {
+			["values"] = {
+				[2] = 97,
+			},
+			["name"] = "Valarjar Thundercaller",
 		},
 		[99922] = {
 			["values"] = {
@@ -1176,12 +1184,6 @@ MythicPlusProgressDB = {
 				[3] = 2,
 			},
 			["name"] = "Runecarver Slave",
-		},
-		[90997] = {
-			["values"] = {
-				[4] = 81,
-			},
-			["name"] = "Mightstone Breaker",
 		},
 		[105915] = {
 			["values"] = {
@@ -1210,11 +1212,29 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Seaspray Crab",
 		},
+		[114792] = {
+			["values"] = {
+				[4] = 4,
+			},
+			["name"] = "Virtuous Lady",
+		},
 		[97197] = {
 			["values"] = {
-				[2] = 12,
+				[2] = 13,
 			},
 			["name"] = "Valarjar Purifier",
+		},
+		[102584] = {
+			["values"] = {
+				[4] = 55,
+			},
+			["name"] = "Malignant Defiler",
+		},
+		[96480] = {
+			["values"] = {
+				314, -- [1]
+			},
+			["name"] = "Viletongue Belcher",
 		},
 		[91332] = {
 			["values"] = {
@@ -1222,29 +1242,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Stoneclaw Hunter",
 		},
-		[102584] = {
+		[90997] = {
 			["values"] = {
-				[4] = 53,
+				[4] = 81,
 			},
-			["name"] = "Malignant Defiler",
-		},
-		[96480] = {
-			["values"] = {
-				302, -- [1]
-			},
-			["name"] = "Viletongue Belcher",
-		},
-		[114792] = {
-			["values"] = {
-				[4] = 4,
-			},
-			["name"] = "Virtuous Lady",
-		},
-		[95842] = {
-			["values"] = {
-				[2] = 93,
-			},
-			["name"] = "Valarjar Thundercaller",
+			["name"] = "Mightstone Breaker",
 		},
 		[114633] = {
 			["values"] = {
@@ -1284,8 +1286,8 @@ MythicPlusProgressDB = {
 		},
 		[95843] = {
 			["values"] = {
-				[3] = 0.421875,
-				[5] = 3,
+				[3] = 0.31640625,
+				[5] = 4,
 			},
 			["name"] = "King Haldor",
 		},
@@ -1305,13 +1307,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Unstable Amalgamation",
 		},
-		[96574] = {
+		[97084] = {
 			["values"] = {
-				4.237836710089250e-005, -- [1]
-				[5] = 32.25,
-				[3] = 0.000423305695217817,
+				[5] = 6,
 			},
-			["name"] = "Stormforged Sentinel",
+			["name"] = "King Tor",
 		},
 		[97182] = {
 			["values"] = {
@@ -1333,11 +1333,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Hatespawn Slime",
 		},
-		[92350] = {
+		[95920] = {
 			["values"] = {
-				[4] = 10,
+				[2] = 1,
 			},
-			["name"] = "Understone Drudge",
+			["name"] = "Animated Storm",
 		},
 		[98521] = {
 			["values"] = {
@@ -1380,8 +1380,8 @@ MythicPlusProgressDB = {
 		},
 		[97087] = {
 			["values"] = {
-				[2] = 164.25,
-				[73] = 0.0023784089542005,
+				[2] = 177.25,
+				[73] = 5.650448946785630e-005,
 			},
 			["name"] = "Valarjar Champion",
 		},
@@ -1411,7 +1411,7 @@ MythicPlusProgressDB = {
 		},
 		[96657] = {
 			["values"] = {
-				[12] = 20,
+				[12] = 21,
 			},
 			["name"] = "Blade Dancer Illianna",
 		},
@@ -1439,11 +1439,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Bilespray Lasher",
 		},
-		[98691] = {
+		[120366] = {
 			["values"] = {
-				[4] = 93,
+				[4] = 2,
 			},
-			["name"] = "Risen Scout",
+			["name"] = "Hellblaze Temptress",
 		},
 		[98538] = {
 			["values"] = {
@@ -1477,11 +1477,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Skjal",
 		},
-		[91008] = {
+		[115488] = {
 			["values"] = {
-				[4] = 69,
+				[4] = 1,
 			},
-			["name"] = "Rockbound Pelter",
+			["name"] = "Infused Pyromancer",
 		},
 		[101074] = {
 			["values"] = {
