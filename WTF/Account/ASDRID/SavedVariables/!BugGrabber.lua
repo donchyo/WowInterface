@@ -1,15 +1,8 @@
 
 BugGrabberDB = {
+	["session"] = 94,
 	["lastSanitation"] = 3,
-	["session"] = 53,
 	["errors"] = {
-		{
-			["message"] = "...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1084: attempt to index upvalue 'color' (a nil value)",
-			["time"] = "2017/06/02 12:52:33",
-			["stack"] = "...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1084: in function <...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1082>\n[string \"safecall Dispatcher[2]\"]:4: in function <[string \"safecall Dispatcher[2]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[2]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...ibraries\\LibActionButton-1.0\\LibActionButton-1.0-69.lua:1165: in function <...ibraries\\LibActionButton-1.0\\LibActionButton-1.0.lua:1053>\n...ibraries\\LibActionButton-1.0\\LibActionButton-1.0-69.lua:753: in function <...ibraries\\LibActionButton-1.0\\LibActionButton-1.0.lua:743>\n[C]: in function `EditMacro'\nInterface\\AddOns\\TalentMacros\\TalentMacros-v1.1.3.lua:184: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...\\AddOns\\DataStore\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <...\\AddOns\\DataStore\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
-			["session"] = 32,
-			["counter"] = 1,
-		}, -- [1]
 		{
 			["message"] = "[string \"--[[ Error in ' Druid-Guardian Frenzied Reg...\"]:7: attempt to index field 'dmgTaken' (a nil value)",
 			["time"] = "2017/06/03 23:23:45",
@@ -17,7 +10,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"--[[ Error in ' Druid-Guardian Frenzied Reg...\"]:7: in function <[string \"--[[ Error in ' Druid-Guardian Frenzied Reg...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:129: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
 			["session"] = 48,
 			["counter"] = 659,
-		}, -- [2]
+		}, -- [1]
 		{
 			["message"] = "...E\\modules\\Armory\\CharacterArmory\\CharacterArmory.lua:874: attempt to index field '?' (a nil value)",
 			["time"] = "2017/06/01 13:18:31",
@@ -25,7 +18,7 @@ BugGrabberDB = {
 			["stack"] = "...E\\modules\\Armory\\CharacterArmory\\CharacterArmory.lua:874: in function `Update_Gear'\n...E\\modules\\Armory\\CharacterArmory\\CharacterArmory.lua:704: in function <...E\\modules\\Armory\\CharacterArmory\\CharacterArmory.lua:696>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2420: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2261: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2132: in function <Interface\\FrameXML\\UIParent.lua:2128>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2914: in function `ShowUIPanel'\nInterface\\FrameXML\\CharacterFrame.lua:21: in function <Interface\\FrameXML\\CharacterFrame.lua:5>\n[C]: in function `ToggleCharacter'\n[string \"TOGGLECHARACTER0\"]:1: in function <[string \"TOGGLECHARACTER0\"]:1>",
 			["session"] = 49,
 			["counter"] = 15011,
-		}, -- [3]
+		}, -- [2]
 		{
 			["message"] = "Interface\\AddOns\\SLDataText\\Elements\\coords.lua:29: attempt to perform arithmetic on local 'posX' (a nil value)",
 			["time"] = "2017/06/03 23:55:11",
@@ -33,13 +26,27 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\SLDataText\\Elements\\coords.lua:29: in function `Refresh'\nInterface\\AddOns\\SLDataText\\Elements\\coords.lua:12: in function <Interface\\AddOns\\SLDataText\\Elements\\coords.lua:12>",
 			["session"] = 50,
 			["counter"] = 78336,
-		}, -- [4]
+		}, -- [3]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'PremadeGroupsFilter' tried to call the protected function 'Search()'.",
 			["time"] = "2017/06/04 00:06:23",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Search'\nInterface\\FrameXML\\LFGList.lua:1708: in function `LFGListSearchPanel_DoSearch'\nInterface\\FrameXML\\LFGList.lua:553: in function `LFGListCategorySelection_StartFindGroup'\nInterface\\FrameXML\\LFGList.lua:543: in function <Interface\\FrameXML\\LFGList.lua:536>",
 			["session"] = 51,
 			["counter"] = 2,
+		}, -- [4]
+		{
+			["message"] = "...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1084: attempt to index upvalue 'color' (a nil value)",
+			["time"] = "2017/06/02 12:52:33",
+			["stack"] = "...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1084: in function <...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1082>\n[string \"safecall Dispatcher[2]\"]:4: in function <[string \"safecall Dispatcher[2]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[2]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...ibraries\\LibActionButton-1.0\\LibActionButton-1.0-69.lua:1165: in function <...ibraries\\LibActionButton-1.0\\LibActionButton-1.0.lua:1053>\n...ibraries\\LibActionButton-1.0\\LibActionButton-1.0-69.lua:753: in function <...ibraries\\LibActionButton-1.0\\LibActionButton-1.0.lua:743>\n[C]: in function `EditMacro'\nInterface\\AddOns\\TalentMacros\\TalentMacros-v1.1.3.lua:184: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...\\AddOns\\DataStore\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <...\\AddOns\\DataStore\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 67,
+			["counter"] = 5,
 		}, -- [5]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'ElvUI' tried to call the protected function 'AcceptSpellConfirmationPrompt()'.",
+			["time"] = "2017/06/05 14:16:15",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `AcceptSpellConfirmationPrompt'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 68,
+			["counter"] = 1,
+		}, -- [6]
 	},
 }

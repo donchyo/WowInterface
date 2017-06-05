@@ -13,1193 +13,15 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 118,
+	["last_realversion"] = 119,
 	["tabela_historico"] = {
 		["tabelas"] = {
-			{
-				{
-					["combatId"] = 290,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Inquisitor Variss"] = true,
-								["Smoldering Infernal"] = true,
-								["Nether Horror"] = true,
-							},
-							["targets"] = {
-								["Inquisitor Variss"] = 13832284,
-								["Nether Horror"] = 7982712,
-								["Tormenting Eye <[*] Summon Tormenting Eye>"] = 281742,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 22096738.008688,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1496454358,
-							["friendlyfire_total"] = 0,
-							["spec"] = 66,
-							["nome"] = "Krixi",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 8,
-										["b_amt"] = 2,
-										["c_dmg"] = 789828,
-										["g_amt"] = 0,
-										["n_max"] = 70855,
-										["targets"] = {
-											["Inquisitor Variss"] = 1164836,
-											["Nether Horror"] = 165945,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 540953,
-										["n_min"] = 39698,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 1330781,
-										["c_max"] = 136705,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 140190,
-										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 67960,
-									}, -- [1]
-									[235188] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 131953,
-										["targets"] = {
-											["Nether Horror"] = 395859,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 395859,
-										["n_min"] = 131953,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 395859,
-										["c_max"] = 0,
-										["id"] = 235188,
-										["r_dmg"] = 0,
-										["spellschool"] = 36,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[209478] = {
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 438214,
-										["g_amt"] = 0,
-										["n_max"] = 30869,
-										["targets"] = {
-											["Inquisitor Variss"] = 270355,
-											["Nether Horror"] = 555716,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 387857,
-										["n_min"] = 22866,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 826071,
-										["c_max"] = 75958,
-										["id"] = 209478,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
-										["c_min"] = 45732,
-									},
-									[53600] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 886398,
-										["g_amt"] = 0,
-										["n_max"] = 545275,
-										["targets"] = {
-											["Inquisitor Variss"] = 1431673,
-											["Nether Horror"] = 336590,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 881865,
-										["n_min"] = 336590,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1768263,
-										["c_max"] = 886398,
-										["id"] = 53600,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 886398,
-									},
-									[105421] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 183201,
-										["targets"] = {
-											["Nether Horror"] = 732804,
-											["Inquisitor Variss"] = 183201,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 916005,
-										["n_min"] = 183201,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 916005,
-										["c_max"] = 0,
-										["id"] = 105421,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[204301] = {
-										["c_amt"] = 11,
-										["b_amt"] = 3,
-										["c_dmg"] = 1351261,
-										["g_amt"] = 0,
-										["n_max"] = 77626,
-										["targets"] = {
-											["Inquisitor Variss"] = 1968766,
-											["Nether Horror"] = 1295498,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1913003,
-										["n_min"] = 40250,
-										["g_dmg"] = 0,
-										["counter"] = 43,
-										["total"] = 3264264,
-										["c_max"] = 155252,
-										["id"] = 204301,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 161000,
-										["n_amt"] = 32,
-										["r_amt"] = 0,
-										["c_min"] = 80500,
-									},
-									[81297] = {
-										["c_amt"] = 42,
-										["b_amt"] = 0,
-										["c_dmg"] = 2030625,
-										["g_amt"] = 0,
-										["n_max"] = 30431,
-										["targets"] = {
-											["Inquisitor Variss"] = 2029423,
-											["Nether Horror"] = 2324435,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2323233,
-										["n_min"] = 18321,
-										["g_dmg"] = 0,
-										["counter"] = 144,
-										["total"] = 4353858,
-										["c_max"] = 60861,
-										["id"] = 81297,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 102,
-										["r_amt"] = 0,
-										["c_min"] = 36643,
-									},
-									[20271] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 1782187,
-										["g_amt"] = 0,
-										["n_max"] = 309149,
-										["targets"] = {
-											["Inquisitor Variss"] = 2654820,
-											["Tormenting Eye <[*] Summon Tormenting Eye>"] = 281742,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1154375,
-										["n_min"] = 281742,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 2936562,
-										["c_max"] = 760704,
-										["id"] = 20271,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 457998,
-									},
-									[31935] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 3305511,
-										["g_amt"] = 0,
-										["n_max"] = 537923,
-										["targets"] = {
-											["Inquisitor Variss"] = 4129210,
-											["Nether Horror"] = 2175865,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2999564,
-										["n_min"] = 265644,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 6305075,
-										["c_max"] = 1323647,
-										["id"] = 31935,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 531285,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 22096738.008688,
-							["serial"] = "Player-1303-03AF0575",
-							["last_dps"] = 460348.708514333,
-							["custom"] = 0,
-							["last_event"] = 1496454357,
-							["damage_taken"] = 7233232.008688,
-							["start_time"] = 1496454310,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 290,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Kor'vas Bloodthorn"] = 69669,
-								["Krixi"] = 259140,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 328809.00408,
-							["total_without_pet"] = 3959982.00408,
-							["total"] = 3959982.00408,
-							["targets_absorbs"] = {
-								["Krixi"] = 2926125,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-1303-03AF0575",
-							["totalabsorb"] = 2926125.00408,
-							["last_hps"] = 82499.625085,
-							["targets"] = {
-								["Prophet Velen"] = 74287,
-								["Krixi"] = 3897836,
-							},
-							["totalover_without_pet"] = 0.00408,
-							["healing_taken"] = 3885695.00408,
-							["fight_component"] = true,
-							["end_time"] = 1496454358,
-							["healing_from"] = {
-								["Krixi"] = true,
-							},
-							["nome"] = "Krixi",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[204241] = {
-										["c_amt"] = 23,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Kor'vas Bloodthorn"] = 69669,
-											["Krixi"] = 203499,
-										},
-										["n_max"] = 6235,
-										["targets"] = {
-											["Krixi"] = 183173,
-											["Prophet Velen"] = 74287,
-											["Kor'vas Bloodthorn"] = 0,
-										},
-										["n_min"] = 4618,
-										["counter"] = 85,
-										["overheal"] = 273168,
-										["total"] = 257460,
-										["c_max"] = 10135,
-										["id"] = 204241,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 101995,
-										["m_crit"] = 0,
-										["c_min"] = 9236,
-										["m_amt"] = 0,
-										["n_curado"] = 155465,
-										["n_amt"] = 62,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[209388] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 2260926,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 618739,
-										["targets"] = {
-											["Krixi"] = 2260926,
-										},
-										["n_min"] = 12661,
-										["counter"] = 25,
-										["overheal"] = 0,
-										["total"] = 2260926,
-										["c_max"] = 0,
-										["id"] = 209388,
-										["targets_absorbs"] = {
-											["Krixi"] = 2260926,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2260926,
-										["n_amt"] = 25,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[213652] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 508202,
-										["targets"] = {
-											["Krixi"] = 508202,
-										},
-										["n_min"] = 508202,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 508202,
-										["c_max"] = 0,
-										["id"] = 213652,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 508202,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[235169] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 555957,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 166915,
-										["targets"] = {
-											["Krixi"] = 555957,
-										},
-										["n_min"] = 30741,
-										["counter"] = 6,
-										["overheal"] = 0,
-										["total"] = 555957,
-										["c_max"] = 0,
-										["id"] = 235169,
-										["targets_absorbs"] = {
-											["Krixi"] = 555957,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 555957,
-										["n_amt"] = 6,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[209540] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Krixi"] = 55641,
-										},
-										["n_max"] = 61053,
-										["targets"] = {
-											["Krixi"] = 268195,
-										},
-										["n_min"] = 0,
-										["counter"] = 6,
-										["overheal"] = 55641,
-										["total"] = 268195,
-										["c_max"] = 0,
-										["id"] = 209540,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 268195,
-										["n_amt"] = 6,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[229976] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 109242,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 9225,
-										["targets"] = {
-											["Krixi"] = 109242,
-										},
-										["n_min"] = 2853,
-										["counter"] = 17,
-										["overheal"] = 0,
-										["total"] = 109242,
-										["c_max"] = 0,
-										["id"] = 229976,
-										["targets_absorbs"] = {
-											["Krixi"] = 109242,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 109242,
-										["n_amt"] = 17,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1496454312,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 66,
-							["totaldenied"] = 0.00408,
-							["delay"] = 0,
-							["last_event"] = 1496454353,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 290,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 290,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["cc_break_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["DEBUFF"] = {
-										["cc_break_oque"] = {
-											[105421] = 1,
-										},
-										["id"] = "DEBUFF",
-										["cc_break"] = 1,
-										["targets"] = {
-											["Inquisitor Variss"] = 1,
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["interrupt"] = 6.00346,
-							["cc_break"] = 1.008314,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[62124] = {
-										["uptime"] = 3,
-										["activedamt"] = 0,
-										["id"] = 62124,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[204242] = {
-										["uptime"] = 26,
-										["activedamt"] = 0,
-										["id"] = 204242,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[105421] = {
-										["uptime"] = 6,
-										["activedamt"] = 0,
-										["id"] = 105421,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[853] = {
-										["uptime"] = 6,
-										["activedamt"] = 0,
-										["id"] = 853,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[204301] = {
-										["uptime"] = 37,
-										["activedamt"] = 0,
-										["id"] = 204301,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[31935] = {
-										["uptime"] = 13,
-										["activedamt"] = 0,
-										["id"] = 31935,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["pets"] = {
-							},
-							["interrupt_targets"] = {
-								["Inquisitor Variss"] = 6,
-							},
-							["cc_done_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[853] = {
-										["id"] = 853,
-										["targets"] = {
-											["Inquisitor Variss"] = 1,
-										},
-										["counter"] = 1,
-									},
-									[105421] = {
-										["id"] = 105421,
-										["targets"] = {
-											["Inquisitor Variss"] = 1,
-											["Nether Horror"] = 4,
-										},
-										["counter"] = 5,
-									},
-									[31935] = {
-										["id"] = 31935,
-										["targets"] = {
-											["Inquisitor Variss"] = 5,
-											["Nether Horror"] = 1,
-										},
-										["counter"] = 6,
-									},
-								},
-							},
-							["classe"] = "PALADIN",
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[31935] = {
-										["id"] = 31935,
-										["interrompeu_oque"] = {
-											[234401] = 4,
-										},
-										["targets"] = {
-											["Inquisitor Variss"] = 4,
-										},
-										["counter"] = 4,
-									},
-									[96231] = {
-										["id"] = 96231,
-										["interrompeu_oque"] = {
-											[234423] = 2,
-										},
-										["targets"] = {
-											["Inquisitor Variss"] = 2,
-										},
-										["counter"] = 2,
-									},
-								},
-							},
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[132403] = {
-										["uptime"] = 10,
-										["activedamt"] = 3,
-										["id"] = 132403,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									["Mana Divining Stone"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Mana Divining Stone",
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[229206] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 229206,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									["Sign of the Skirmisher"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Sign of the Skirmisher",
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[31884] = {
-										["uptime"] = 20,
-										["activedamt"] = 1,
-										["id"] = 31884,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[221883] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 221883,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									["Potion of Prolonged Power"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Potion of Prolonged Power",
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[152262] = {
-										["uptime"] = 30,
-										["activedamt"] = 2,
-										["id"] = 152262,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[235169] = {
-										["uptime"] = 8,
-										["activedamt"] = 1,
-										["id"] = 235169,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[207603] = {
-										["uptime"] = 36,
-										["activedamt"] = 5,
-										["id"] = 207603,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[209388] = {
-										["uptime"] = 39,
-										["activedamt"] = 5,
-										["id"] = 209388,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[209540] = {
-										["uptime"] = 18,
-										["activedamt"] = 1,
-										["id"] = 209540,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188370] = {
-										["uptime"] = 36,
-										["activedamt"] = 5,
-										["id"] = 188370,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["spell_cast"] = {
-								[213652] = 1,
-								[31935] = 6,
-								[26573] = 6,
-								[190784] = 1,
-								[204242] = 22,
-								[204019] = 12,
-								[31884] = 1,
-								[62124] = 1,
-								[96231] = 2,
-								[20271] = 7,
-								[235169] = 1,
-								[53600] = 3,
-								[115750] = 1,
-								[853] = 1,
-								[152262] = 2,
-							},
-							["interrompeu_oque"] = {
-								[234401] = 4,
-								[234423] = 2,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 91,
-							["buff_uptime"] = 200,
-							["cc_done"] = 12.00582,
-							["nome"] = "Krixi",
-							["spec"] = 66,
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Inquisitor Variss"] = 7,
-								["Nether Horror"] = 5,
-							},
-							["cc_break_oque"] = {
-								[105421] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["cc_break_targets"] = {
-								["Inquisitor Variss"] = 1,
-							},
-							["serial"] = "Player-1303-03AF0575",
-							["last_event"] = 1496454358,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 290,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Krixi"] = true,
-					["Prophet Velen"] = true,
-					["Kor'vas Bloodthorn"] = true,
-				},
-				["overall_added"] = true,
-				["last_events_tables"] = {
-					{
-						{
-							{
-								false, -- [1]
-								209388, -- [2]
-								188779, -- [3]
-								1496454352.729, -- [4]
-								2569509, -- [5]
-								"Krixi", -- [6]
-								true, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								true, -- [1]
-								234461, -- [2]
-								188779, -- [3]
-								1496454352.932, -- [4]
-								2569509, -- [5]
-								"Nether Horror", -- [6]
-								nil, -- [7]
-								64, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								false, -- [1]
-								204241, -- [2]
-								4619, -- [3]
-								1496454353.143, -- [4]
-								2574128, -- [5]
-								"Krixi", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [3]
-							{
-								true, -- [1]
-								1, -- [2]
-								53458, -- [3]
-								1496454353.74, -- [4]
-								2574128, -- [5]
-								"Nether Horror", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [4]
-							{
-								true, -- [1]
-								1, -- [2]
-								68412, -- [3]
-								1496454353.74, -- [4]
-								2574128, -- [5]
-								"Nether Horror", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [5]
-							{
-								false, -- [1]
-								209388, -- [2]
-								53458, -- [3]
-								1496454353.74, -- [4]
-								2574128, -- [5]
-								"Krixi", -- [6]
-								true, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [6]
-							{
-								false, -- [1]
-								209388, -- [2]
-								35953, -- [3]
-								1496454353.74, -- [4]
-								2574128, -- [5]
-								"Krixi", -- [6]
-								true, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [7]
-							{
-								false, -- [1]
-								204241, -- [2]
-								9237, -- [3]
-								1496454353.949, -- [4]
-								2583365, -- [5]
-								"Krixi", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [8]
-							{
-								true, -- [1]
-								234464, -- [2]
-								127590, -- [3]
-								1496454354.747, -- [4]
-								2423316, -- [5]
-								"Smoldering Infernal", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [9]
-							{
-								true, -- [1]
-								1, -- [2]
-								64401, -- [3]
-								1496454355.757, -- [4]
-								2423316, -- [5]
-								"Nether Horror", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [10]
-							{
-								true, -- [1]
-								1, -- [2]
-								63262, -- [3]
-								1496454356.155, -- [4]
-								2358915, -- [5]
-								"Nether Horror", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [11]
-							{
-								true, -- [1]
-								234461, -- [2]
-								218663, -- [3]
-								1496454356.566, -- [4]
-								2076990, -- [5]
-								"Nether Horror", -- [6]
-								nil, -- [7]
-								64, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [12]
-							{
-								true, -- [1]
-								234461, -- [2]
-								215211, -- [3]
-								1496454356.566, -- [4]
-								1861779, -- [5]
-								"Nether Horror", -- [6]
-								nil, -- [7]
-								64, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [13]
-							{
-								true, -- [1]
-								234464, -- [2]
-								127589, -- [3]
-								1496454356.776, -- [4]
-								1734190, -- [5]
-								"Smoldering Infernal", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [14]
-							{
-								true, -- [1]
-								241717, -- [2]
-								223477, -- [3]
-								1496454357.543, -- [4]
-								1510713, -- [5]
-								"Smoldering Infernal", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [15]
-							{
-								true, -- [1]
-								234401, -- [2]
-								1852152, -- [3]
-								1496454357.565, -- [4]
-								1, -- [5]
-								"Inquisitor Variss", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								341439, -- [10]
-							}, -- [16]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Krixi", -- [6]
-							}, -- [17]
-						}, -- [1]
-						1496454357.565, -- [2]
-						"Krixi", -- [3]
-						"PALADIN", -- [4]
-						4575116, -- [5]
-						"0m 46s", -- [6]
-						["dead_at"] = 46.7449999999954,
-						["dead"] = true,
-					}, -- [1]
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Inquisitor Variss",
-				["combat_counter"] = 24183,
-				["totals"] = {
-					22096737.95729, -- [1]
-					3959981.992705, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 6,
-						["dispell"] = 0,
-						["cc_break"] = 1,
-						["dead"] = 1,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Krixi"] = 3959982.00408,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Krixi"] = 22096738.008688,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 122857.703,
-				["combat_id"] = 290,
-				["instance_type"] = "scenario",
-				["frags"] = {
-					["Nether Horror"] = 3,
-				},
-				["data_fim"] = "03:45:58",
-				["data_inicio"] = "03:45:10",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					22096738, -- [1]
-					3959982, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 6,
-						["dispell"] = 0,
-						["cc_break"] = 1,
-						["dead"] = 1,
-					}, -- [4]
-				},
-				["start_time"] = 122809.703,
-				["contra"] = "Inquisitor Variss",
-				["TimeData"] = {
-				},
-			}, -- [1]
 		},
 	},
 	["ignore_nicktag"] = true,
-	["savedbuffs"] = {
-	},
 	["last_encounter"] = "Beastlord Darmac",
-	["combat_counter"] = 24183,
+	["last_instance_time"] = 1490319534,
+	["last_version"] = "v7.2.0.3703",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -1207,8 +29,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -1334,26 +156,26 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Xaril_MasterPoisoner_White.blp", -- [4]
 					["id"] = 1593,
 				},
-				["-8179"] = {
-					"-8179", -- [1]
-					"Borer Drill", -- [2]
-					19, -- [3]
-					"Interface\\ICONS\\ability_mount_rocketmount3.blp", -- [4]
-					["id"] = 1600,
-				},
-				["158134"] = {
-					"158134", -- [1]
-					"Shield Charge", -- [2]
-					38, -- [3]
-					"Interface\\Icons\\Ability_Warrior_ShieldGuard", -- [4]
-					["id"] = 1719,
-				},
 				["portals"] = {
 					"portals", -- [1]
 					"Portals Move", -- [2]
 					138, -- [3]
 					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
 					["id"] = 1794,
+				},
+				["188929"] = {
+					"188929", -- [1]
+					"Heart Seeker", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
+					["id"] = 1786,
+				},
+				["-8179"] = {
+					"-8179", -- [1]
+					"Borer Drill", -- [2]
+					19, -- [3]
+					"Interface\\ICONS\\ability_mount_rocketmount3.blp", -- [4]
+					["id"] = 1600,
 				},
 				["143484"] = {
 					"143484", -- [1]
@@ -1362,40 +184,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Nature_Sleep", -- [4]
 					["id"] = 1603,
 				},
-				["180199"] = {
-					"180199", -- [1]
-					"Shred Armor", -- [2]
-					10.8, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Riposte", -- [4]
-					["id"] = 1786,
-				},
-				["147209"] = {
-					"147209", -- [1]
-					"Malice (1)", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Ability_Warlock_Eradication", -- [4]
-					["id"] = 1623,
-				},
-				["158563"] = {
-					"158563", -- [1]
-					"Kick to the Face", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\ability_kick", -- [4]
-					["id"] = 1705,
-				},
-				["156238"] = {
-					"156238", -- [1]
-					"Arcane Wrath", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
-					["id"] = 1705,
-				},
-				["144358"] = {
-					"144358", -- [1]
-					"Wounded Pride", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\Spell_Misc_EmotionSad", -- [4]
-					["id"] = 1604,
+				["179977"] = {
+					"179977", -- [1]
+					"Touch of Doom", -- [2]
+					8.3, -- [3]
+					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
+					["id"] = 1783,
 				},
 				["183329"] = {
 					"183329", -- [1]
@@ -1411,6 +205,34 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
 					["id"] = 1799,
 				},
+				["156238"] = {
+					"156238", -- [1]
+					"Arcane Wrath", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
+					["id"] = 1705,
+				},
+				["144358"] = {
+					"144358", -- [1]
+					"Wounded Pride", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\Spell_Misc_EmotionSad", -- [4]
+					["id"] = 1604,
+				},
+				["147209"] = {
+					"147209", -- [1]
+					"Malice (1)", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Ability_Warlock_Eradication", -- [4]
+					["id"] = 1623,
+				},
+				["158563"] = {
+					"158563", -- [1]
+					"Kick to the Face", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\ability_kick", -- [4]
+					["id"] = 1705,
+				},
 				["144563"] = {
 					"144563", -- [1]
 					"Imprison", -- [2]
@@ -1425,12 +247,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_mount_drake_proto", -- [4]
 					["id"] = 1622,
 				},
-				["slump"] = {
-					"slump", -- [1]
-					"Rodeo", -- [2]
-					100, -- [3]
-					"Interface\\Icons\\Ability_Mount_Dreadsteed", -- [4]
-					["id"] = 1024,
+				["81007"] = {
+					"81007", -- [1]
+					"Shadowblaze", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
+					["id"] = 1026,
 				},
 				["186546"] = {
 					"186546", -- [1]
@@ -1467,12 +289,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_ironmaidens_convulsiveshadows", -- [4]
 					["id"] = 1795,
 				},
-				["81007"] = {
-					"81007", -- [1]
-					"Shadowblaze", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
-					["id"] = 1026,
+				["slump"] = {
+					"slump", -- [1]
+					"Rodeo", -- [2]
+					100, -- [3]
+					"Interface\\Icons\\Ability_Mount_Dreadsteed", -- [4]
+					["id"] = 1024,
 				},
 				["-8294"] = {
 					"-8294", -- [1]
@@ -1502,12 +324,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Arcane_PrismaticCloak", -- [4]
 					["id"] = 1783,
 				},
-				["190223"] = {
-					"190223", -- [1]
-					"Fel Strike", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen", -- [4]
-					["id"] = 1800,
+				["181735"] = {
+					"181735", -- [1]
+					"Felseeker", -- [2]
+					60, -- [3]
+					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
+					["id"] = 1795,
 				},
 				["157349"] = {
 					"157349", -- [1]
@@ -1530,19 +352,19 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_spell_shadow_shadesofdarkness", -- [4]
 					["id"] = 1604,
 				},
-				["181292"] = {
-					"181292", -- [1]
-					"Fel Outpouring", -- [2]
-					51, -- [3]
-					"Interface\\Icons\\spell_yorsahj_bloodboil_purple", -- [4]
-					["id"] = 1787,
+				["143019"] = {
+					"143019", -- [1]
+					"Corrupted Brew", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\sha_inv_elemental_primal_shadow", -- [4]
+					["id"] = 1598,
 				},
-				["189894"] = {
-					"189894", -- [1]
-					"Void Star", -- [2]
-					15.8, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
-					["id"] = 1799,
+				["volatile_anomaly"] = {
+					"volatile_anomaly", -- [1]
+					"Volatile Anomaly (1)", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\spell_arcane_arcane04", -- [4]
+					["id"] = 1705,
 				},
 				["warmup"] = {
 					"warmup", -- [1]
@@ -1565,12 +387,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\inv_misc_volatilefire", -- [4]
 					["id"] = 1784,
 				},
-				["181735"] = {
-					"181735", -- [1]
-					"Felseeker", -- [2]
-					60, -- [3]
-					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
-					["id"] = 1795,
+				["190223"] = {
+					"190223", -- [1]
+					"Fel Strike", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen", -- [4]
+					["id"] = 1800,
 				},
 				["-8262"] = {
 					"-8262", -- [1]
@@ -1586,19 +408,19 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_MissileLarge_Red", -- [4]
 					["id"] = 1778,
 				},
-				["143019"] = {
-					"143019", -- [1]
-					"Corrupted Brew", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\sha_inv_elemental_primal_shadow", -- [4]
-					["id"] = 1598,
+				["181292"] = {
+					"181292", -- [1]
+					"Fel Outpouring", -- [2]
+					51, -- [3]
+					"Interface\\Icons\\spell_yorsahj_bloodboil_purple", -- [4]
+					["id"] = 1787,
 				},
-				["145288"] = {
-					"145288", -- [1]
-					"Explosion", -- [2]
-					8, -- [3]
-					"INTERFACE\\ICONS\\spell_shaman_firenova", -- [4]
-					["id"] = 1594,
+				["184124"] = {
+					"184124", -- [1]
+					"Gift of the Man'ari", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_AntiMagicShell", -- [4]
+					["id"] = 1794,
 				},
 				["-8055"] = {
 					"-8055", -- [1]
@@ -1712,12 +534,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_HeroicLeap", -- [4]
 					["id"] = 1787,
 				},
-				["156471"] = {
-					"156471", -- [1]
-					"Arcane Aberration (1)", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\ability_socererking_summonaberration", -- [4]
-					["id"] = 1705,
+				["160734"] = {
+					"160734", -- [1]
+					"Vulnerability", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelHellfire", -- [4]
+					["id"] = 1723,
 				},
 				["181597"] = {
 					"181597", -- [1]
@@ -1733,12 +555,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1785,
 				},
-				["berserk"] = {
-					"berserk", -- [1]
-					"Berserk", -- [2]
-					600, -- [3]
-					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
-					["id"] = 1785,
+				["158605"] = {
+					"158605", -- [1]
+					"Mark of Chaos", -- [2]
+					34, -- [3]
+					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
+					["id"] = 1705,
 				},
 				["159250"] = {
 					"159250", -- [1]
@@ -1754,12 +576,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
 					["id"] = 1785,
 				},
-				["160734"] = {
-					"160734", -- [1]
-					"Vulnerability", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelHellfire", -- [4]
-					["id"] = 1723,
+				["156471"] = {
+					"156471", -- [1]
+					"Arcane Aberration (1)", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\ability_socererking_summonaberration", -- [4]
+					["id"] = 1705,
 				},
 				["180526"] = {
 					"180526", -- [1]
@@ -1775,12 +597,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_butcher_gushingwounds", -- [4]
 					["id"] = 1706,
 				},
-				["158605"] = {
-					"158605", -- [1]
-					"Mark of Chaos", -- [2]
-					34, -- [3]
-					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
-					["id"] = 1705,
+				["144070"] = {
+					"144070", -- [1]
+					"Ashen Wall", -- [2]
+					32.2, -- [3]
+					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
+					["id"] = 1606,
 				},
 				["158986"] = {
 					"158986", -- [1]
@@ -1789,12 +611,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_fixated_state_red", -- [4]
 					["id"] = 1721,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
-					["id"] = 1794,
+				["berserk"] = {
+					"berserk", -- [1]
+					"Berserk", -- [2]
+					600, -- [3]
+					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
+					["id"] = 1785,
 				},
 				["156157"] = {
 					"156157", -- [1]
@@ -1803,19 +625,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_butcher_cleave", -- [4]
 					["id"] = 1706,
 				},
-				["181999"] = {
-					"181999", -- [1]
-					"Firebomb (1)", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
-					["id"] = 1785,
-				},
 				["143243"] = {
 					"143243", -- [1]
 					"Rapid Fire", -- [2]
 					49, -- [3]
 					"Interface\\Icons\\Ability_Hunter_RunningShot", -- [4]
 					["id"] = 1593,
+				},
+				["181999"] = {
+					"181999", -- [1]
+					"Firebomb (1)", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
+					["id"] = 1785,
 				},
 				["143973"] = {
 					"143973", -- [1]
@@ -1852,19 +674,19 @@ _detalhes_database = {
 					"Interface\\Icons\\achievement_character_orc_male", -- [4]
 					["id"] = 1778,
 				},
-				["-8073"] = {
-					"-8073", -- [1]
-					"Aim (1)", -- [2]
-					38, -- [3]
-					"Interface\\ICONS\\Ability_Hisek_Aim.blp", -- [4]
-					["id"] = 1593,
+				["156467"] = {
+					"156467", -- [1]
+					"Destructive Resonance", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanemines", -- [4]
+					["id"] = 1705,
 				},
-				["159219"] = {
-					"159219", -- [1]
-					"Necrotic Breath", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\ability_mage_worldinflamesgreen", -- [4]
-					["id"] = 1720,
+				["-8207"] = {
+					"-8207", -- [1]
+					"Pattern Recognition", -- [2]
+					60, -- [3]
+					"Interface\\ICONS\\Ability_Siege_Engineer_pattern_recognition.blp", -- [4]
+					["id"] = 1601,
 				},
 				["-11269"] = {
 					"-11269", -- [1]
@@ -1873,12 +695,12 @@ _detalhes_database = {
 					false, -- [4]
 					["id"] = 1786,
 				},
-				["156467"] = {
-					"156467", -- [1]
-					"Destructive Resonance", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanemines", -- [4]
-					["id"] = 1705,
+				["-8073"] = {
+					"-8073", -- [1]
+					"Aim (1)", -- [2]
+					38, -- [3]
+					"Interface\\ICONS\\Ability_Hisek_Aim.blp", -- [4]
+					["id"] = 1593,
 				},
 				["187204"] = {
 					"187204", -- [1]
@@ -1908,12 +730,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_warrior_shieldbreak", -- [4]
 					["id"] = 1705,
 				},
-				["179407"] = {
-					"179407", -- [1]
-					"Disembodied on YOU!", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
-					["id"] = 1777,
+				["144400"] = {
+					"144400", -- [1]
+					"Swelling Pride (1)", -- [2]
+					77, -- [3]
+					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
+					["id"] = 1604,
 				},
 				["arena_sweeper"] = {
 					"arena_sweeper", -- [1]
@@ -1943,12 +765,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_PocketWatch_01", -- [4]
 					["id"] = 1606,
 				},
-				["181307"] = {
-					"181307", -- [1]
-					"Foul Crush", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
-					["id"] = 1787,
+				["146849"] = {
+					"146849", -- [1]
+					"Shattering Cleave", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Warrior_ShieldBreak", -- [4]
+					["id"] = 1622,
 				},
 				["179406"] = {
 					"179406", -- [1]
@@ -1964,12 +786,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
 					["id"] = 1800,
 				},
-				["blazing"] = {
-					"blazing", -- [1]
-					"Skeleton", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\SPELL_SHADOW_RAISEDEAD", -- [4]
-					["id"] = 1024,
+				["180025"] = {
+					"180025", -- [1]
+					"Harbinger's Mending (1)", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
+					["id"] = 1784,
 				},
 				["158521"] = {
 					"158521", -- [1]
@@ -1999,12 +821,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_AuraOfDarkness", -- [4]
 					["id"] = 1795,
 				},
-				["161328"] = {
-					"161328", -- [1]
-					"Suppression Field", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameStrike", -- [4]
-					["id"] = 1723,
+				["145226"] = {
+					"145226", -- [1]
+					"Blind Hatred", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\sha_ability_mage_firestarter", -- [4]
+					["id"] = 1624,
 				},
 				["143759"] = {
 					"143759", -- [1]
@@ -2013,19 +835,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_creature_amber_02", -- [4]
 					["id"] = 1593,
 				},
-				["-8325"] = {
-					"-8325", -- [1]
-					"Explosive Despair on YOU!", -- [2]
-					10, -- [3]
-					"Interface\\ICONS\\Ability_DeathKnight_Asphixiate.blp", -- [4]
-					["id"] = 1623,
+				["181255"] = {
+					"181255", -- [1]
+					"Fel Imp-losion", -- [2]
+					38, -- [3]
+					"Interface\\Icons\\Ability_Warlock_EmpoweredImp", -- [4]
+					["id"] = 1795,
 				},
-				["144400"] = {
-					"144400", -- [1]
-					"Swelling Pride (1)", -- [2]
-					77, -- [3]
-					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
-					["id"] = 1604,
+				["179407"] = {
+					"179407", -- [1]
+					"Disembodied on YOU!", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
+					["id"] = 1777,
 				},
 				["144616"] = {
 					"144616", -- [1]
@@ -2069,12 +891,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_monk_clashingoxcharge", -- [4]
 					["id"] = 1598,
 				},
-				["156225"] = {
-					"156225", -- [1]
-					"Branded on YOU!", -- [2]
-					4, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
-					["id"] = 1705,
+				["-8305"] = {
+					"-8305", -- [1]
+					"Intermission", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
+					["id"] = 1623,
 				},
 				["162186"] = {
 					"162186", -- [1]
@@ -2083,12 +905,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
 					["id"] = 1723,
 				},
-				["181255"] = {
-					"181255", -- [1]
-					"Fel Imp-losion", -- [2]
-					38, -- [3]
-					"Interface\\Icons\\Ability_Warlock_EmpoweredImp", -- [4]
-					["id"] = 1795,
+				["-8325"] = {
+					"-8325", -- [1]
+					"Explosive Despair on YOU!", -- [2]
+					10, -- [3]
+					"Interface\\ICONS\\Ability_DeathKnight_Asphixiate.blp", -- [4]
+					["id"] = 1623,
 				},
 				["183828"] = {
 					"183828", -- [1]
@@ -2181,19 +1003,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1623,
 				},
-				["184964"] = {
-					"184964", -- [1]
-					"Shackled Torment (1)", -- [2]
-					27, -- [3]
-					"Interface\\Icons\\ability_warlock_soullink", -- [4]
-					["id"] = 1799,
+				["144396"] = {
+					"144396", -- [1]
+					"Vengeful Strikes", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\sha_spell_fire_bluerainoffire", -- [4]
+					["id"] = 1598,
 				},
-				["160013"] = {
-					"160013", -- [1]
-					"Decay (2)", -- [2]
-					9.5, -- [3]
-					"Interface\\Icons\\Spell_Nature_WispSplodeGreen", -- [4]
-					["id"] = 1720,
+				["-8202"] = {
+					"-8202", -- [1]
+					"The Assembly Line (2)", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\Inv_crate_03", -- [4]
+					["id"] = 1601,
 				},
 				["143385"] = {
 					"143385", -- [1]
@@ -2223,12 +1045,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_Powder_Iron", -- [4]
 					["id"] = 1606,
 				},
-				["144396"] = {
-					"144396", -- [1]
-					"Vengeful Strikes", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\sha_spell_fire_bluerainoffire", -- [4]
-					["id"] = 1598,
+				["184964"] = {
+					"184964", -- [1]
+					"Shackled Torment (1)", -- [2]
+					27, -- [3]
+					"Interface\\Icons\\ability_warlock_soullink", -- [4]
+					["id"] = 1799,
 				},
 				["143503"] = {
 					"143503", -- [1]
@@ -2258,12 +1080,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelorcs_necromancer_purple", -- [4]
 					["id"] = 1798,
 				},
-				["184369"] = {
-					"184369", -- [1]
-					"Howling Axe", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
-					["id"] = 1778,
+				["181827"] = {
+					"181827", -- [1]
+					"Fel Conduit", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
+					["id"] = 1788,
 				},
 				["143502"] = {
 					"143502", -- [1]
@@ -2279,12 +1101,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfellord_felfissure", -- [4]
 					["id"] = 1777,
 				},
-				["181275"] = {
-					"181275", -- [1]
-					"Curse of the Legion: Geschan*", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\spell_warlock_summonterrorguard", -- [4]
-					["id"] = 1795,
+				["183885"] = {
+					"183885", -- [1]
+					"Mirror Images", -- [2]
+					78, -- [3]
+					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
+					["id"] = 1798,
 				},
 				["186407"] = {
 					"186407", -- [1]
@@ -2335,19 +1157,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_Shadesofdarkness", -- [4]
 					["id"] = 1595,
 				},
-				["181827"] = {
-					"181827", -- [1]
-					"Fel Conduit", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
-					["id"] = 1788,
+				["184369"] = {
+					"184369", -- [1]
+					"Howling Axe", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
+					["id"] = 1778,
 				},
-				["183885"] = {
-					"183885", -- [1]
-					"Mirror Images", -- [2]
-					78, -- [3]
-					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
-					["id"] = 1798,
+				["181275"] = {
+					"181275", -- [1]
+					"Curse of the Legion: Geschan*", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\spell_warlock_summonterrorguard", -- [4]
+					["id"] = 1795,
 				},
 				["144985"] = {
 					"144985", -- [1]
@@ -2391,12 +1213,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Sunder", -- [4]
 					["id"] = 1603,
 				},
-				["172747"] = {
-					"172747", -- [1]
-					"Expel Magic: Frost", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\spell_frost_frozenorb", -- [4]
-					["id"] = 1723,
+				["injection_tank"] = {
+					"injection_tank", -- [1]
+					"Injection", -- [2]
+					9, -- [3]
+					"INTERFACE\\ICONS\\inv_gizmo_runichealthinjector", -- [4]
+					["id"] = 1593,
 				},
 				["157943"] = {
 					"157943", -- [1]
@@ -2447,12 +1269,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_MindShear", -- [4]
 					["id"] = 1598,
 				},
-				["phase"] = {
-					"phase", -- [1]
-					"Next phase", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
-					["id"] = 1025,
+				["79339"] = {
+					"79339", -- [1]
+					"Explosive Cinders", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
+					["id"] = 1026,
 				},
 				["towers"] = {
 					"towers", -- [1]
@@ -2503,19 +1325,19 @@ _detalhes_database = {
 					"Interface\\Icons\\achievement_halloween_ghost_01", -- [4]
 					["id"] = 1794,
 				},
-				["145065"] = {
-					"145065", -- [1]
-					"Mind Control", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\ability_garrosh_touch_of_yshaarj", -- [4]
-					["id"] = 1623,
-				},
 				["77690"] = {
 					"77690", -- [1]
 					"Lava Spew", -- [2]
 					24, -- [3]
 					"Interface\\Icons\\Spell_Shaman_LavaBurst", -- [4]
 					["id"] = 1024,
+				},
+				["145065"] = {
+					"145065", -- [1]
+					"Mind Control", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\ability_garrosh_touch_of_yshaarj", -- [4]
+					["id"] = 1623,
 				},
 				["182001"] = {
 					"182001", -- [1]
@@ -2538,12 +1360,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_titankeeper_uncheckedcorruption", -- [4]
 					["id"] = 1623,
 				},
-				["79339"] = {
-					"79339", -- [1]
-					"Explosive Cinders", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
-					["id"] = 1026,
+				["living_mushroom"] = {
+					"living_mushroom", -- [1]
+					"Living Mushroom", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\inv_misc_starspecklemushroom", -- [4]
+					["id"] = 1720,
 				},
 				["182459"] = {
 					"182459", -- [1]
@@ -2559,19 +1381,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
 					["id"] = 1722,
 				},
-				["living_mushroom"] = {
-					"living_mushroom", -- [1]
-					"Living Mushroom", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\inv_misc_starspecklemushroom", -- [4]
-					["id"] = 1720,
+				["184681"] = {
+					"184681", -- [1]
+					"Wailing Horror (1)", -- [2]
+					75, -- [3]
+					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
+					["id"] = 1798,
 				},
-				["injection_tank"] = {
-					"injection_tank", -- [1]
-					"Injection", -- [2]
-					9, -- [3]
-					"INTERFACE\\ICONS\\inv_gizmo_runichealthinjector", -- [4]
-					["id"] = 1593,
+				["172747"] = {
+					"172747", -- [1]
+					"Expel Magic: Frost", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\spell_frost_frozenorb", -- [4]
+					["id"] = 1723,
 				},
 				["144758"] = {
 					"144758", -- [1]
@@ -2580,19 +1402,19 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
 					["id"] = 1623,
 				},
-				["-8202"] = {
-					"-8202", -- [1]
-					"The Assembly Line (2)", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\Inv_crate_03", -- [4]
-					["id"] = 1601,
+				["160013"] = {
+					"160013", -- [1]
+					"Decay (2)", -- [2]
+					9.5, -- [3]
+					"Interface\\Icons\\Spell_Nature_WispSplodeGreen", -- [4]
+					["id"] = 1720,
 				},
-				["159113"] = {
-					"159113", -- [1]
-					"Impale", -- [2]
-					37, -- [3]
-					"Interface\\Icons\\Ability_Rogue_HungerforBlood", -- [4]
-					["id"] = 1721,
+				["162894"] = {
+					"162894", -- [1]
+					"Gift of Earth", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\ability_earthenfury_giftofearth", -- [4]
+					["id"] = 1722,
 				},
 				["184657"] = {
 					"184657", -- [1]
@@ -2601,12 +1423,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_SummonVoidWalker", -- [4]
 					["id"] = 1798,
 				},
-				["184681"] = {
-					"184681", -- [1]
-					"Wailing Horror (1)", -- [2]
-					75, -- [3]
-					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
-					["id"] = 1798,
+				["phase"] = {
+					"phase", -- [1]
+					"Next phase", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
+					["id"] = 1025,
 				},
 				["180224"] = {
 					"180224", -- [1]
@@ -2643,12 +1465,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Racial_Cannibalize", -- [4]
 					["id"] = 1024,
 				},
-				["162894"] = {
-					"162894", -- [1]
-					"Gift of Earth", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\ability_earthenfury_giftofearth", -- [4]
-					["id"] = 1722,
+				["159113"] = {
+					"159113", -- [1]
+					"Impale", -- [2]
+					37, -- [3]
+					"Interface\\Icons\\Ability_Rogue_HungerforBlood", -- [4]
+					["id"] = 1721,
 				},
 				["181912"] = {
 					"181912", -- [1]
@@ -2692,12 +1514,12 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Kilruk_Reave.blp", -- [4]
 					["id"] = 1593,
 				},
-				["-8305"] = {
-					"-8305", -- [1]
-					"Intermission", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
-					["id"] = 1623,
+				["156225"] = {
+					"156225", -- [1]
+					"Branded on YOU!", -- [2]
+					4, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
+					["id"] = 1705,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -2741,33 +1563,33 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelmagnaron_handempowered", -- [4]
 					["id"] = 1787,
 				},
-				["145226"] = {
-					"145226", -- [1]
-					"Blind Hatred", -- [2]
+				["161328"] = {
+					"161328", -- [1]
+					"Suppression Field", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameStrike", -- [4]
+					["id"] = 1723,
+				},
+				["blazing"] = {
+					"blazing", -- [1]
+					"Skeleton", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\SPELL_SHADOW_RAISEDEAD", -- [4]
+					["id"] = 1024,
+				},
+				["181307"] = {
+					"181307", -- [1]
+					"Foul Crush", -- [2]
 					25, -- [3]
-					"Interface\\Icons\\sha_ability_mage_firestarter", -- [4]
-					["id"] = 1624,
+					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
+					["id"] = 1787,
 				},
-				["180025"] = {
-					"180025", -- [1]
-					"Harbinger's Mending (1)", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
-					["id"] = 1784,
-				},
-				["146849"] = {
-					"146849", -- [1]
-					"Shattering Cleave", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Warrior_ShieldBreak", -- [4]
-					["id"] = 1622,
-				},
-				["-8207"] = {
-					"-8207", -- [1]
-					"Pattern Recognition", -- [2]
-					60, -- [3]
-					"Interface\\ICONS\\Ability_Siege_Engineer_pattern_recognition.blp", -- [4]
-					["id"] = 1601,
+				["159219"] = {
+					"159219", -- [1]
+					"Necrotic Breath", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\ability_mage_worldinflamesgreen", -- [4]
+					["id"] = 1720,
 				},
 				["146595"] = {
 					"146595", -- [1]
@@ -2832,12 +1654,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_FocusedPower", -- [4]
 					["id"] = 1800,
 				},
-				["144070"] = {
-					"144070", -- [1]
-					"Ashen Wall", -- [2]
-					32.2, -- [3]
-					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
-					["id"] = 1606,
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+					["id"] = 1794,
 				},
 				["179711"] = {
 					"179711", -- [1]
@@ -2874,19 +1696,19 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_ability_rogue_bloodyeye", -- [4]
 					["id"] = 1604,
 				},
-				["184124"] = {
-					"184124", -- [1]
-					"Gift of the Man'ari", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_AntiMagicShell", -- [4]
-					["id"] = 1794,
+				["145288"] = {
+					"145288", -- [1]
+					"Explosion", -- [2]
+					8, -- [3]
+					"INTERFACE\\ICONS\\spell_shaman_firenova", -- [4]
+					["id"] = 1594,
 				},
-				["volatile_anomaly"] = {
-					"volatile_anomaly", -- [1]
-					"Volatile Anomaly (1)", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\spell_arcane_arcane04", -- [4]
-					["id"] = 1705,
+				["189894"] = {
+					"189894", -- [1]
+					"Void Star", -- [2]
+					15.8, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
+					["id"] = 1799,
 				},
 				["143958"] = {
 					"143958", -- [1]
@@ -2937,12 +1759,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
 					["id"] = 1598,
 				},
-				["179977"] = {
-					"179977", -- [1]
-					"Touch of Doom", -- [2]
-					8.3, -- [3]
-					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
-					["id"] = 1783,
+				["180199"] = {
+					"180199", -- [1]
+					"Shred Armor", -- [2]
+					10.8, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Riposte", -- [4]
+					["id"] = 1786,
 				},
 				["flesh_eater"] = {
 					"flesh_eater", -- [1]
@@ -2951,12 +1773,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Creature_Disease_02", -- [4]
 					["id"] = 1720,
 				},
-				["188929"] = {
-					"188929", -- [1]
-					"Heart Seeker", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
-					["id"] = 1786,
+				["158134"] = {
+					"158134", -- [1]
+					"Shield Charge", -- [2]
+					38, -- [3]
+					"Interface\\Icons\\Ability_Warrior_ShieldGuard", -- [4]
+					["id"] = 1719,
 				},
 				["-7920"] = {
 					"-7920", -- [1]
@@ -3018,7 +1840,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -3026,7 +1848,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -3034,7 +1856,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -3048,7 +1870,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -4241,8 +3063,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -4259,32 +3081,33 @@ _detalhes_database = {
 		},
 	},
 	["character_data"] = {
-		["logons"] = 3448,
+		["logons"] = 3454,
 	},
-	["force_font_outline"] = "",
-	["nick_tag_cache"] = {
-		["last_version"] = 8,
-		["nextreset"] = 1497649519,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
-	["last_day"] = "03",
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["savedbuffs"] = {
+	},
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 290,
 	["savedStyles"] = {
 	},
-	["last_version"] = "v7.2.0.3693",
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
+	["combat_counter"] = 24197,
+	["force_font_outline"] = "",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["nick_tag_cache"] = {
+		["last_version"] = 8,
+		["nextreset"] = 1497649519,
 	},
 	["local_instances_config"] = {
 		{
@@ -4387,7 +3210,7 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["last_instance_time"] = 1490319534,
+	["last_day"] = "05",
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -4404,10 +3227,6 @@ _detalhes_database = {
 			22705, -- [5]
 			21811, -- [6]
 			22434, -- [7]
-		},
-		["Creature-0-3110-1698-26501-117042-0000321486"] = {
-		},
-		["Creature-0-3110-1698-26501-116880-0000321487"] = {
 		},
 	},
 	["last_instance_id"] = 1544,

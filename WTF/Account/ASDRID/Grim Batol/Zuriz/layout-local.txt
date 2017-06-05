@@ -1,11 +1,4 @@
 Version: 1
-Frame: ChocolateBar1
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -20
-Y: 1
-W: 211
-H: 21
 Frame: ColorPickerFrame
 FrameLevel: 21
 Anchor: TOPRIGHT

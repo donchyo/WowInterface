@@ -41,10 +41,10 @@ X: 15
 Y: -116
 W: 790
 H: 454
-Frame: SatchelFrame
-FrameLevel: 1
-Anchor: LEFT
-X: 200
-Y: 17
-W: 260
-H: 94
+Frame: WQGFManualActionsFrame
+FrameLevel: 0
+Anchor: CENTER
+X: 0
+Y: 60
+W: 370
+H: 110

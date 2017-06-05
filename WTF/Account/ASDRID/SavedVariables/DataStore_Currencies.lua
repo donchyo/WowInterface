@@ -1,38 +1,5 @@
 
 DataStore_CurrenciesDB = {
-	["profileKeys"] = {
-		["Donch - Grim Batol"] = "Donch - Grim Batol",
-		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
-		["Krixidk - Grim Batol"] = "Skullflower",
-		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
-		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
-		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Donch - Crushridge"] = "Donch - Crushridge",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
-		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
-		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
-		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
-		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
-		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
-	},
 	["global"] = {
 		["Reference"] = {
 			["Currencies"] = {
@@ -104,32 +71,32 @@ DataStore_CurrenciesDB = {
 				["Ironpaw Token"] = 8,
 				["Brawler's Gold"] = 46,
 				["Seal of Inevitable Fate"] = 32,
-				["Ancient Mana"] = 40,
+				["Elder Charm of Good Fortune"] = 12,
 				["Seal of Broken Fate"] = 43,
-				["Tol Barad Commendation"] = 25,
+				["Curious Coin"] = 42,
 				["Lesser Charm of Good Fortune"] = 13,
 				["Oil"] = 31,
-				["Dungeon and Raid"] = 1,
+				["Mists of Pandaria"] = 10,
 				["Artifact Fragment"] = 24,
-				["Darkmoon Prize Ticket"] = 7,
+				["Justice Points"] = 3,
 				["Wrath of the Lich King"] = 36,
-				["Legion"] = 37,
+				["Apexis Crystal"] = 21,
 				["Player vs. Player"] = 17,
 				["Timewarped Badge"] = 33,
-				["Valor Points"] = 5,
-				["Warlords of Draenor"] = 20,
-				["Miscellaneous"] = 6,
-				["Timeworn Artifact"] = 44,
-				["Epicurean's Award"] = 27,
-				["Honor Points"] = 19,
-				["Dalaran Jewelcrafter's Token"] = 30,
-				["Conquest Points"] = 18,
 				["Garrison Resources"] = 22,
-				["Apexis Crystal"] = 21,
-				["Justice Points"] = 3,
-				["Mists of Pandaria"] = 10,
-				["Curious Coin"] = 42,
-				["Elder Charm of Good Fortune"] = 12,
+				["Conquest Points"] = 18,
+				["Dalaran Jewelcrafter's Token"] = 30,
+				["Honor Points"] = 19,
+				["Epicurean's Award"] = 27,
+				["Timeworn Artifact"] = 44,
+				["Miscellaneous"] = 6,
+				["Warlords of Draenor"] = 20,
+				["Valor Points"] = 5,
+				["Legion"] = 37,
+				["Darkmoon Prize Ticket"] = 7,
+				["Dungeon and Raid"] = 1,
+				["Tol Barad Commendation"] = 25,
+				["Ancient Mana"] = 40,
 				["Champion's Seal"] = 26,
 				["Legionfall War Supplies"] = 47,
 			},
@@ -147,8 +114,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-34700-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "0-0-0-0",
 					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
 				},
 			},
 			["Default.Aggra (Português).Treefiddy"] = {
@@ -180,8 +147,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-18700-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "0-0-0-0",
 					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Bawsie"] = {
@@ -190,8 +157,8 @@ DataStore_CurrenciesDB = {
 					7120, -- [2]
 					596, -- [3]
 					23116, -- [4]
-					216142, -- [5]
-					342, -- [6]
+					344142, -- [5]
+					86, -- [6]
 					2008, -- [7]
 					3, -- [8]
 					8386, -- [9]
@@ -238,16 +205,19 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					2, -- [18]
 				},
-				["lastUpdate"] = 1491437062,
+				["lastUpdate"] = 1496666321,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "1688-0-0-0",
+					[1220] = "2688-0-0-0",
 					[824] = "52-0-0-10000",
-					[1273] = "2-0-0-6",
+					[1273] = "0-0-0-6",
+					[1191] = "1400-0-0-5000",
 					[823] = "32095-0-0-0",
+					[1226] = "180-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "5-0-0-20",
+					[1342] = "0-0-0-0",
 					[390] = "0-0-0-0",
 				},
 			},
@@ -263,8 +233,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-10700-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "0-0-0-0",
 					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
@@ -319,7 +289,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496542601,
+				["lastUpdate"] = 1496666603,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -331,12 +301,12 @@ DataStore_CurrenciesDB = {
 					[1226] = "1969-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "5-0-0-20",
-					[390] = "0-0-0-0",
 					[1342] = "83-0-0-1000",
+					[390] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Krixidh"] = {
-				["lastUpdate"] = 1491106321,
+				["lastUpdate"] = 1496666364,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -360,10 +330,10 @@ DataStore_CurrenciesDB = {
 				["Currencies"] = {
 					75, -- [1]
 					116432, -- [2]
-					596, -- [3]
+					724, -- [3]
 					11852, -- [4]
 					242766, -- [5]
-					214, -- [6]
+					86, -- [6]
 					3, -- [7]
 					25666, -- [8]
 					307268, -- [9]
@@ -379,11 +349,14 @@ DataStore_CurrenciesDB = {
 					[396] = "0-0-0-0",
 					[1220] = "1896-0-0-0",
 					[824] = "0-0-0-0",
-					[1273] = "1-0-0-6",
+					[1273] = "0-0-0-6",
+					[1191] = "2400-0-0-5000",
 					[823] = "1000-0-0-0",
+					[1226] = "92-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "0-0-0-0",
 					[390] = "0-0-0-0",
+					[1342] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Zuriz"] = {
@@ -392,8 +365,8 @@ DataStore_CurrenciesDB = {
 					1744, -- [2]
 					2004, -- [3]
 					3294, -- [4]
-					436940, -- [5]
-					531022, -- [6]
+					206540, -- [5]
+					454222, -- [6]
 					342, -- [7]
 					3, -- [8]
 					280386, -- [9]
@@ -442,20 +415,20 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496542331,
+				["lastUpdate"] = 1496666808,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "4148-0-0-0",
+					[1220] = "3548-0-0-0",
 					[824] = "932-0-0-10000",
 					[1273] = "2-0-0-6",
 					[1191] = "200-0-0-5000",
 					[823] = "86692-0-0-0",
-					[1226] = "3413-0-0-0",
+					[1226] = "1613-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "14-0-0-20",
-					[1342] = "25-0-0-1000",
 					[390] = "0-0-0-0",
+					[1342] = "25-0-0-1000",
 				},
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
@@ -478,8 +451,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-5700-0",
 					[823] = "0-0-0-0",
 					[392] = "132-0-0-4000",
-					[994] = "0-0-0-0",
 					[824] = "0-0-0-0",
+					[994] = "0-0-0-0",
 				},
 			},
 			["Default.Crushridge.Kroxi"] = {
@@ -517,8 +490,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-0-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[994] = "0-0-0-0",
 					[824] = "0-0-0-0",
+					[994] = "0-0-0-0",
 				},
 			},
 			["Default.Twisting Nether.Krixiyo"] = {
@@ -528,90 +501,59 @@ DataStore_CurrenciesDB = {
 					[396] = "0-0-0-0",
 					[1220] = "0-0-0-0",
 					[823] = "0-0-0-0",
-					[1273] = "0-0-0-0",
-					[994] = "0-0-0-0",
 					[395] = "0-0-0-0",
+					[994] = "0-0-0-0",
+					[1273] = "0-0-0-0",
 				},
 			},
-			["Default.Blackmoore.Krixiyo"] = {
-				["lastUpdate"] = 1480934370,
-				["CurrencyInfo"] = {
-					[824] = "0-0-0-0",
-					[396] = "0-0-0-0",
-					[1220] = "0-0-0-0",
-					[823] = "0-0-0-0",
-					[1273] = "0-0-0-0",
-					[994] = "0-0-0-0",
-					[395] = "0-0-0-0",
-				},
-			},
-			["Default.Grim Batol.Donch"] = {
+			["Default.Aggra (Português).Krixiswag"] = {
 				["Currencies"] = {
-					75, -- [1]
-					464, -- [2]
-					212, -- [3]
-					8012, -- [4]
-					488910, -- [5]
-					3, -- [6]
-					250306, -- [7]
-					217668, -- [8]
-					13, -- [9]
-					4110, -- [10]
-					1846, -- [11]
-					784, -- [12]
-					35, -- [13]
-					3506, -- [14]
-					41, -- [15]
-					7523498, -- [16]
-					1836, -- [17]
-					215742, -- [18]
-					1344, -- [19]
-					1582, -- [20]
-					21, -- [21]
-					4118, -- [22]
-					1048, -- [23]
-					121882, -- [24]
-					668, -- [25]
-					5423518, -- [26]
-					928, -- [27]
-					57, -- [28]
-					1412, -- [29]
-					1554, -- [30]
-					24968, -- [31]
-					73, -- [32]
-					52, -- [33]
+					35, -- [1]
+					36, -- [2]
+				},
+				["lastUpdate"] = 1424602909,
+				["CurrencyInfo"] = {
+					[395] = "0-0-0-0",
+					[396] = "0-0-0-0",
+					[390] = "0-0-12700-0",
+					[823] = "0-0-0-0",
+					[392] = "0-0-0-0",
+					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
+				},
+			},
+			["Default.Shattered Hand.Bawsi"] = {
+				["Currencies"] = {
+					35, -- [1]
+					36, -- [2]
+					136742, -- [3]
 				},
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
 					0, -- [3]
-					50, -- [4]
+					0, -- [4]
 					0, -- [5]
-					70, -- [6]
-					10, -- [7]
-					24, -- [8]
-					31, -- [9]
-					5, -- [10]
-					15, -- [11]
-					21, -- [12]
-					1, -- [13]
-					5, -- [14]
-					23, -- [15]
-					13, -- [16]
-					22, -- [17]
-					19, -- [18]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
 				},
-				["lastUpdate"] = 1491328468,
+				["lastUpdate"] = 1424871492,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
-					[396] = "0-0-10-3000",
-					[1220] = "3819-0-0-0",
-					[824] = "14-0-0-10000",
-					[1273] = "0-0-0-0",
-					[823] = "58777-0-0-0",
-					[392] = "0-0-0-0",
-					[994] = "12-0-0-20",
-					[390] = "0-0-0-0",
+					[396] = "0-0-0-0",
+					[390] = "0-0-13700-0",
+					[823] = "0-0-0-0",
+					[392] = "1068-0-0-40",
+					[824] = "0-0-0-0",
+					[994] = "0-0-0-0",
 				},
 			},
 			["Default.Aggra (Português).Spacegoatx"] = {
@@ -644,8 +586,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-34700-0",
 					[823] = "0-0-0-0",
 					[392] = "6-0-0-4000",
-					[994] = "0-0-0-0",
 					[824] = "0-0-0-0",
+					[994] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Zolution"] = {
@@ -653,7 +595,7 @@ DataStore_CurrenciesDB = {
 					75, -- [1]
 					720, -- [2]
 					468, -- [3]
-					984270, -- [4]
+					856270, -- [4]
 					86, -- [5]
 					3, -- [6]
 					25666, -- [7]
@@ -697,17 +639,20 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1491106093,
+				["lastUpdate"] = 1496666281,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "7689-0-0-0",
+					[1220] = "6689-0-0-0",
 					[824] = "0-0-0-10000",
 					[1273] = "0-0-0-6",
+					[1191] = "600-0-0-5000",
 					[823] = "75846-0-0-0",
+					[1226] = "0-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "7-0-0-20",
 					[390] = "0-0-0-0",
+					[1342] = "0-0-0-0",
 				},
 			},
 			["Default.Kazzak.Lilgaykrixi"] = {
@@ -741,23 +686,66 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-21200-0",
 				},
 			},
-			["Default.Crushridge.Donch"] = {
+			["Default.Grim Batol.Gnomalock"] = {
 				["Currencies"] = {
-					3, -- [1]
-					6, -- [2]
-					35, -- [3]
-					36, -- [4]
-					15270, -- [5]
+					75, -- [1]
+					157006, -- [2]
+					3, -- [3]
+					25666, -- [4]
+					68, -- [5]
+					13, -- [6]
+					144, -- [7]
+					35, -- [8]
+					1586, -- [9]
+					41, -- [10]
+					7930538, -- [11]
+					3500, -- [12]
+					579902, -- [13]
+					1344, -- [14]
+					1966, -- [15]
+					21, -- [16]
+					1560, -- [17]
+					5786, -- [18]
+					303902, -- [19]
+					32, -- [20]
+					57, -- [21]
+					1540, -- [22]
+					42760, -- [23]
 				},
-				["lastUpdate"] = 1424871553,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+				},
+				["lastUpdate"] = 1496666239,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
-					[396] = "0-0-0-0",
-					[390] = "0-0-13700-0",
-					[823] = "0-0-0-0",
-					[392] = "119-0-0-40",
-					[824] = "0-0-0-0",
-					[994] = "0-0-0-0",
+					[396] = "0-0-10-3000",
+					[1220] = "1226-0-0-0",
+					[824] = "27-0-0-10000",
+					[1273] = "0-0-0-0",
+					[1191] = "0-0-0-5000",
+					[823] = "61957-0-0-0",
+					[1226] = "0-0-0-0",
+					[392] = "0-0-0-0",
+					[994] = "15-0-0-20",
+					[390] = "0-0-0-0",
+					[1342] = "0-0-0-0",
 				},
 			},
 			["Default.Aggra (Português).Bawsi"] = {
@@ -789,8 +777,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-9200-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "0-0-0-0",
 					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Kroxi"] = {
@@ -850,7 +838,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496457175,
+				["lastUpdate"] = 1496666667,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -862,8 +850,8 @@ DataStore_CurrenciesDB = {
 					[1226] = "111-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "9-0-0-20",
-					[390] = "0-0-0-0",
 					[1342] = "25-0-0-1000",
+					[390] = "0-0-0-0",
 				},
 			},
 			["Default.Shattered Hand.Donchyo"] = {
@@ -874,8 +862,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-0-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[994] = "0-0-0-0",
 					[824] = "0-0-0-0",
+					[994] = "0-0-0-0",
 				},
 			},
 			["Default.Shattered Hand.Donch"] = {
@@ -893,8 +881,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-45200-0",
 					[823] = "0-0-0-0",
 					[392] = "1304-0-0-4000",
-					[824] = "0-0-0-0",
 					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
@@ -950,7 +938,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496542635,
+				["lastUpdate"] = 1496666708,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -962,8 +950,8 @@ DataStore_CurrenciesDB = {
 					[1226] = "779-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "2-0-0-20",
-					[390] = "0-0-0-0",
 					[1342] = "551-0-0-1000",
+					[390] = "0-0-0-0",
 				},
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
@@ -978,8 +966,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-45200-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[994] = "0-0-0-0",
 					[824] = "0-0-0-0",
+					[994] = "0-0-0-0",
 				},
 			},
 			["Default.Lightning's Blade.Krixiyo"] = {
@@ -994,8 +982,8 @@ DataStore_CurrenciesDB = {
 					[390] = "0-0-16700-0",
 					[823] = "0-0-0-0",
 					[392] = "0-0-0-0",
-					[824] = "0-0-0-0",
 					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Krixidk"] = {
@@ -1054,7 +1042,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496437244,
+				["lastUpdate"] = 1496666754,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -1066,67 +1054,27 @@ DataStore_CurrenciesDB = {
 					[1226] = "1031-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "0-0-0-20",
-					[1342] = "90-0-0-1000",
 					[390] = "0-0-0-0",
+					[1342] = "90-0-0-1000",
 				},
 			},
-			["Default.Grim Batol.Gnomalock"] = {
+			["Default.Crushridge.Donch"] = {
 				["Currencies"] = {
-					75, -- [1]
-					171598, -- [2]
-					3, -- [3]
-					25666, -- [4]
-					68, -- [5]
-					13, -- [6]
-					144, -- [7]
-					35, -- [8]
-					1586, -- [9]
-					41, -- [10]
-					7930538, -- [11]
-					3500, -- [12]
-					547902, -- [13]
-					1344, -- [14]
-					1966, -- [15]
-					21, -- [16]
-					1560, -- [17]
-					5786, -- [18]
-					303902, -- [19]
-					32, -- [20]
-					57, -- [21]
-					1540, -- [22]
-					42760, -- [23]
+					3, -- [1]
+					6, -- [2]
+					35, -- [3]
+					36, -- [4]
+					15270, -- [5]
 				},
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-				},
-				["lastUpdate"] = 1491106001,
+				["lastUpdate"] = 1424871553,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
-					[396] = "0-0-10-3000",
-					[1220] = "1340-0-0-0",
-					[824] = "27-0-0-10000",
-					[1273] = "0-0-0-0",
-					[823] = "61957-0-0-0",
-					[392] = "0-0-0-0",
-					[994] = "15-0-0-20",
-					[390] = "0-0-0-0",
+					[396] = "0-0-0-0",
+					[390] = "0-0-13700-0",
+					[823] = "0-0-0-0",
+					[392] = "119-0-0-40",
+					[994] = "0-0-0-0",
+					[824] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Krixi"] = {
@@ -1186,7 +1134,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496454448,
+				["lastUpdate"] = 1496666553,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -1198,58 +1146,93 @@ DataStore_CurrenciesDB = {
 					[1226] = "125-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "1-0-0-20",
-					[390] = "0-0-0-0",
 					[1342] = "75-0-0-1000",
+					[390] = "0-0-0-0",
 				},
 			},
-			["Default.Shattered Hand.Bawsi"] = {
+			["Default.Grim Batol.Donch"] = {
 				["Currencies"] = {
-					35, -- [1]
-					36, -- [2]
-					136742, -- [3]
+					75, -- [1]
+					464, -- [2]
+					212, -- [3]
+					8012, -- [4]
+					360910, -- [5]
+					86, -- [6]
+					3, -- [7]
+					250306, -- [8]
+					217668, -- [9]
+					13, -- [10]
+					4110, -- [11]
+					1846, -- [12]
+					784, -- [13]
+					35, -- [14]
+					3506, -- [15]
+					41, -- [16]
+					7523498, -- [17]
+					1836, -- [18]
+					215742, -- [19]
+					1344, -- [20]
+					1582, -- [21]
+					21, -- [22]
+					4118, -- [23]
+					1048, -- [24]
+					121882, -- [25]
+					668, -- [26]
+					5423518, -- [27]
+					928, -- [28]
+					57, -- [29]
+					1412, -- [30]
+					1554, -- [31]
+					24968, -- [32]
+					73, -- [33]
+					52, -- [34]
 				},
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
 					0, -- [3]
-					0, -- [4]
+					50, -- [4]
 					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
+					70, -- [6]
+					10, -- [7]
+					24, -- [8]
+					31, -- [9]
+					5, -- [10]
+					15, -- [11]
+					21, -- [12]
+					1, -- [13]
+					5, -- [14]
+					23, -- [15]
+					13, -- [16]
+					22, -- [17]
+					19, -- [18]
 				},
-				["lastUpdate"] = 1424871492,
+				["lastUpdate"] = 1496666091,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
-					[396] = "0-0-0-0",
-					[390] = "0-0-13700-0",
-					[823] = "0-0-0-0",
-					[392] = "1068-0-0-40",
-					[994] = "0-0-0-0",
-					[824] = "0-0-0-0",
+					[396] = "0-0-10-3000",
+					[1220] = "2819-0-0-0",
+					[824] = "14-0-0-10000",
+					[1273] = "0-0-0-6",
+					[1191] = "1700-0-0-5000",
+					[823] = "58777-0-0-0",
+					[1226] = "62-0-0-0",
+					[392] = "0-0-0-0",
+					[994] = "12-0-0-20",
+					[1342] = "0-0-0-0",
+					[390] = "0-0-0-0",
 				},
 			},
-			["Default.Aggra (Português).Krixiswag"] = {
-				["Currencies"] = {
-					35, -- [1]
-					36, -- [2]
-				},
-				["lastUpdate"] = 1424602909,
+			["Default.Blackmoore.Krixiyo"] = {
+				["lastUpdate"] = 1480934370,
 				["CurrencyInfo"] = {
-					[395] = "0-0-0-0",
-					[396] = "0-0-0-0",
-					[390] = "0-0-12700-0",
-					[823] = "0-0-0-0",
-					[392] = "0-0-0-0",
 					[824] = "0-0-0-0",
+					[396] = "0-0-0-0",
+					[1220] = "0-0-0-0",
+					[823] = "0-0-0-0",
+					[395] = "0-0-0-0",
 					[994] = "0-0-0-0",
+					[1273] = "0-0-0-0",
 				},
 			},
 			["Default.Grim Batol.Namji"] = {
@@ -1257,26 +1240,28 @@ DataStore_CurrenciesDB = {
 					75, -- [1]
 					7376, -- [2]
 					212, -- [3]
-					174542, -- [4]
-					86, -- [5]
-					3, -- [6]
-					101826, -- [7]
-					38468, -- [8]
-					41, -- [9]
-					8460074, -- [10]
-					2604, -- [11]
-					162622, -- [12]
-					1216, -- [13]
-					1710, -- [14]
-					21, -- [15]
-					1176, -- [16]
-					6426, -- [17]
-					28, -- [18]
-					2345758, -- [19]
-					32, -- [20]
-					57, -- [21]
-					1156, -- [22]
-					41480, -- [23]
+					3294, -- [4]
+					60876, -- [5]
+					218702, -- [6]
+					86, -- [7]
+					3, -- [8]
+					101826, -- [9]
+					38468, -- [10]
+					41, -- [11]
+					8460074, -- [12]
+					2604, -- [13]
+					162622, -- [14]
+					1216, -- [15]
+					1710, -- [16]
+					21, -- [17]
+					1176, -- [18]
+					6426, -- [19]
+					28, -- [20]
+					2345758, -- [21]
+					32, -- [22]
+					57, -- [23]
+					1156, -- [24]
+					41480, -- [25]
 				},
 				["Archeology"] = {
 					0, -- [1]
@@ -1298,20 +1283,56 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1491106280,
+				["lastUpdate"] = 1496666411,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "1363-0-0-0",
+					[1220] = "1708-0-0-0",
 					[824] = "20-0-0-10000",
 					[1273] = "0-0-0-6",
+					[1191] = "300-0-0-5000",
 					[823] = "66094-0-0-0",
+					[1226] = "475-0-0-0",
 					[392] = "0-0-0-0",
 					[994] = "13-0-0-20",
+					[1342] = "25-0-0-1000",
 					[390] = "0-0-0-0",
 				},
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
+		["Krixidk - Grim Batol"] = "Skullflower",
+		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
+		["Namji - Grim Batol"] = "Namji - Grim Batol",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
+		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
+		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
+		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 	},
 	["profiles"] = {
 		["Krixidk - Grim Batol"] = {

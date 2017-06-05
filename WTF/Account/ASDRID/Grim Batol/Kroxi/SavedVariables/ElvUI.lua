@@ -1,16 +1,5 @@
 
 ElvCharacterDB = {
-	["ChatEditHistory"] = {
-		"/g oops", -- [1]
-		"/g men det proccar inte", -- [2]
-		"/g känns det som", -- [3]
-		"/g fyfan", -- [4]
-		"/g sov en stund", -- [5]
-		"/g vaknade med kramp i båda vaderna", -- [6]
-		"/g mm", -- [7]
-		"/g tror jag ska sova mer", -- [8]
-		"/wa", -- [9]
-	},
 	["BodyGuard"] = {
 		["Active"] = false,
 		["Health"] = 0,
@@ -18,5 +7,16 @@ ElvCharacterDB = {
 		["IsInValidZone"] = true,
 	},
 	["ChatLog"] = {
+	},
+	["ChatEditHistory"] = {
+		"/g men det proccar inte", -- [1]
+		"/g känns det som", -- [2]
+		"/g fyfan", -- [3]
+		"/g sov en stund", -- [4]
+		"/g vaknade med kramp i båda vaderna", -- [5]
+		"/g mm", -- [6]
+		"/g tror jag ska sova mer", -- [7]
+		"/wa", -- [8]
+		"/ec", -- [9]
 	},
 }

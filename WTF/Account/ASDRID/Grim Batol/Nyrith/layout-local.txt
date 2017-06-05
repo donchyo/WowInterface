@@ -62,10 +62,3 @@ X: 0
 Y: 60
 W: 370
 H: 110
-Frame: GarrisonLandingPage
-FrameLevel: 1
-Anchor: LEFT
-X: 105
-Y: 82
-W: 830
-H: 538

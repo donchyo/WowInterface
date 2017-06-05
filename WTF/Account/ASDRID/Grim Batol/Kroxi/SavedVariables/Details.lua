@@ -13,729 +13,15 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 118,
+	["last_realversion"] = 119,
 	["tabela_historico"] = {
 		["tabelas"] = {
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 2348,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Xorothian Fel Knight"] = true,
-							},
-							["targets"] = {
-								["Xorothian Fel Knight"] = 7066734,
-							},
-							["serial"] = "Player-1303-03966669",
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 7066734.007193,
-							["spec"] = 73,
-							["dps_started"] = false,
-							["end_time"] = 1496437773,
-							["on_hold"] = false,
-							["last_event"] = 1496437772,
-							["nome"] = "Kroxi",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 258564,
-										["g_amt"] = 0,
-										["n_max"] = 71518,
-										["targets"] = {
-											["Xorothian Fel Knight"] = 370707,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 112143,
-										["n_min"] = 40625,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 370707,
-										["c_max"] = 136134,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 122430,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[6572] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 2644326,
-										["g_amt"] = 0,
-										["n_max"] = 382371,
-										["targets"] = {
-											["Xorothian Fel Knight"] = 3791439,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1147113,
-										["n_min"] = 382371,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 3791439,
-										["c_max"] = 661082,
-										["id"] = 6572,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 661081,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[6343] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 177984,
-										["targets"] = {
-											["Xorothian Fel Knight"] = 533952,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 533952,
-										["n_min"] = 177984,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 533952,
-										["c_max"] = 0,
-										["id"] = 6343,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[23922] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 626500,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Xorothian Fel Knight"] = 626500,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 626500,
-										["c_max"] = 626500,
-										["id"] = 23922,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 626500,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[115767] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 606953,
-										["g_amt"] = 0,
-										["n_max"] = 111208,
-										["targets"] = {
-											["Xorothian Fel Knight"] = 718161,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 111208,
-										["n_min"] = 111208,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 718161,
-										["c_max"] = 222417,
-										["id"] = 115767,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 192268,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[126664] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31225,
-										["targets"] = {
-											["Xorothian Fel Knight"] = 31225,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 31225,
-										["n_min"] = 31225,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31225,
-										["c_max"] = 0,
-										["id"] = 126664,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[236282] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 600304,
-										["g_amt"] = 0,
-										["n_max"] = 197349,
-										["targets"] = {
-											["Xorothian Fel Knight"] = 994750,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 394446,
-										["n_min"] = 197097,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 994750,
-										["c_max"] = 353834,
-										["id"] = 236282,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 246470,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 636298.758076099,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 679253.007193,
-							["start_time"] = 1496437762,
-							["delay"] = 0,
-							["total"] = 7066734.007193,
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 2348,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.00568,
-							["total_without_pet"] = 578965.00568,
-							["total"] = 578965.00568,
-							["targets_absorbs"] = {
-								["Kroxi"] = 578965,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-1303-03966669",
-							["totalabsorb"] = 578965.00568,
-							["last_hps"] = 52130.83069332,
-							["targets"] = {
-								["Kroxi"] = 578965,
-							},
-							["totalover_without_pet"] = 0.00568,
-							["healing_taken"] = 578965.00568,
-							["fight_component"] = true,
-							["end_time"] = 1496437773,
-							["classe"] = "WARRIOR",
-							["nome"] = "Kroxi",
-							["spells"] = {
-								["_ActorTable"] = {
-									[190456] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 578965,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 65754,
-										["targets"] = {
-											["Kroxi"] = 578965,
-										},
-										["n_min"] = 11300,
-										["counter"] = 23,
-										["overheal"] = 0,
-										["total"] = 578965,
-										["c_max"] = 0,
-										["id"] = 190456,
-										["targets_absorbs"] = {
-											["Kroxi"] = 578965,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 578965,
-										["n_amt"] = 23,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Kroxi"] = true,
-							},
-							["tipo"] = 2,
-							["custom"] = 0,
-							["last_event"] = 1496437773,
-							["start_time"] = 1496437762,
-							["totaldenied"] = 0.00568,
-							["delay"] = 0,
-							["spec"] = 73,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 2348,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 2348,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[1160] = {
-										["uptime"] = 8,
-										["activedamt"] = 0,
-										["id"] = 1160,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[243016] = {
-										["uptime"] = 10,
-										["activedamt"] = 0,
-										["id"] = 243016,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[105771] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 105771,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[6343] = {
-										["uptime"] = 10,
-										["activedamt"] = 0,
-										["id"] = 6343,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[115767] = {
-										["uptime"] = 9,
-										["activedamt"] = 0,
-										["id"] = 115767,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 108,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[32216] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 32216,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186401] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 186401,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[223543] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 223543,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[125565] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 125565,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[240979] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 240979,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188783] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 188783,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[109128] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 109128,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[190456] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 190456,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[205484] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 205484,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[107574] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 107574,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[5302] = {
-										["uptime"] = 4,
-										["activedamt"] = 2,
-										["id"] = 5302,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[190025] = {
-										["uptime"] = 4,
-										["activedamt"] = 1,
-										["id"] = 190025,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[1719] = {
-										["uptime"] = 5,
-										["activedamt"] = 1,
-										["id"] = 1719,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 37,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 73,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[1160] = 1,
-								[6572] = 4,
-								[23922] = 1,
-								[107574] = 1,
-								[190456] = 1,
-								[1719] = 1,
-								[126664] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["nome"] = "Kroxi",
-							["pets"] = {
-							},
-							["serial"] = "Player-1303-03966669",
-							["last_event"] = 1496437773,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 2348,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Kroxi"] = true,
-				},
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Xorothian Fel Knight",
-				["combat_counter"] = 10653,
-				["playing_solo"] = true,
-				["totals"] = {
-					7066733.89752103, -- [1]
-					578965, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-					["Kroxi"] = {
-						{
-							true, -- [1]
-							204114, -- [2]
-							15797, -- [3]
-							1496437773.452, -- [4]
-							4954943, -- [5]
-							"Xorothian Fel Knight", -- [6]
-							14217, -- [7]
-							4, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							204114, -- [2]
-							20151, -- [3]
-							1496437774.469, -- [4]
-							5007986, -- [5]
-							"Xorothian Fel Knight", -- [6]
-							18135, -- [7]
-							4, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						["n"] = 3,
-					},
-				},
-				["contra"] = "Xorothian Fel Knight",
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Kroxi"] = 649041.008686,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Kroxi"] = 8355560.010817,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 106272.796,
-				["instance_type"] = "none",
-				["combat_id"] = 2348,
-				["resincked"] = true,
-				["hasSaved"] = true,
-				["frags"] = {
-					["Xorothian Fel Knight"] = 3,
-				},
-				["data_fim"] = "23:09:33",
-				["data_inicio"] = "23:09:22",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					7066734, -- [1]
-					578965, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 106261.69,
-				["TimeData"] = {
-				},
-				["is_temporary"] = true,
-			}, -- [1]
 		},
 	},
 	["ignore_nicktag"] = false,
-	["nick_tag_cache"] = {
-		["nextreset"] = 1497611905,
-		["last_version"] = 8,
-	},
-	["last_day"] = "03",
-	["last_version"] = "v7.2.0.3693",
+	["last_encounter"] = "Trilliax",
+	["last_day"] = "05",
+	["last_version"] = "v7.2.0.3703",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -743,8 +29,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
 			["dps"] = 0,
+			["author"] = "Details! Team",
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -825,7 +111,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -833,7 +119,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -841,7 +127,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -855,7 +141,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -920,8 +206,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["showamount"] = false,
 			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -935,28 +221,33 @@ _detalhes_database = {
 	},
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 1491,
+		["logons"] = 1493,
+	},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1497611905,
+		["last_version"] = 8,
 	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["last_instance_time"] = 1491761359,
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 2348,
 	["savedStyles"] = {
 	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 3,
+	},
 	["savedbuffs"] = {
 	},
-	["combat_counter"] = 10656,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_encounter"] = "Trilliax",
+	["last_instance_time"] = 1491761359,
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -1058,9 +349,7 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 3,
-	},
+	["combat_counter"] = 10662,
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {
@@ -1081,6 +370,8 @@ _detalhes_database = {
 	},
 	["last_instance_id"] = 1651,
 	["cached_specs"] = {
+		["Player-1303-07AEFB7E"] = 258,
 		["Player-1303-03966669"] = 73,
+		["Player-1303-0703282F"] = 72,
 	},
 }

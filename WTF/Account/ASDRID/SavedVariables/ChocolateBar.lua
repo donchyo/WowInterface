@@ -8,27 +8,35 @@ ChocolateBarDB = {
 		["Bawsie - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
-		["Krixiyo - Twisting Nether"] = "Default",
+		["Krixidh - Grim Batol"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
-		["Kroxi - Crushridge"] = "Default",
+		["Krixiyo - Lightning's Blade"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
-		["Menardiairl - Culte de la Rive noire"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
 		["Spacegoatx - Aggra (Português)"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Default",
 		["Líttle - Grim Batol"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
+		["Menardiairl - Culte de la Rive noire"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Krixiyo - Lightning's Blade"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
+		["Krixiyo - Twisting Nether"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barOffy"] = 1,
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["barOffx"] = -20.4444828033447,
+					["width"] = 210.999969482422,
+				},
+			},
 			["background"] = {
 				["tileSize"] = 136,
 				["color"] = {
@@ -37,13 +45,12 @@ ChocolateBarDB = {
 					["r"] = 0.380392156862745,
 				},
 			},
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barOffy"] = 1,
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 210.999969482422,
-					["barOffx"] = -20.4444828033447,
+			["moduleOptions"] = {
+				["Placeholder"] = {
+					["placeholderNames"] = {
+					},
+				},
+				["MoreChocolate"] = {
 				},
 			},
 			["fontPath"] = "Fonts\\ARIALN.TTF",
@@ -128,10 +135,11 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 3,
 				},
-				["RaidAchievement"] = {
+				["ServerHopMinimapButton"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+					["index"] = 3,
 				},
 				["ExRT"] = {
 					["enabled"] = false,
@@ -147,12 +155,11 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 2,
 				},
-				["BagnonLauncher"] = {
-					["enabled"] = false,
+				["Omen"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["index"] = 1,
+					["index"] = 2,
 				},
 				["BugSack"] = {
 					["index"] = 4,
@@ -173,7 +180,7 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 11,
 				},
-				["Prat"] = {
+				["Acherus"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
@@ -195,31 +202,29 @@ ChocolateBarDB = {
 					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["CrossRealmAssistMinimapIcon"] = {
-					["index"] = 3,
+				["mRunes"] = {
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["showText"] = false,
 				},
 				["Rarity"] = {
 					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["MogIt"] = {
+				["MaxCam"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["index"] = 6,
+				},
+				["epgp"] = {
+					["barName"] = "ChocolateBar1",
 				},
 				["TradeSkillMaster"] = {
 					["index"] = 4,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 					["showText"] = false,
-				},
-				["epgp"] = {
-					["barName"] = "ChocolateBar1",
 				},
 				["Bartender4"] = {
 					["enabled"] = false,
@@ -240,18 +245,20 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
-				["MaxCam"] = {
+				["MogIt"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+					["index"] = 6,
 				},
-				["mRunes"] = {
-					["showText"] = false,
+				["CrossRealmAssistMinimapIcon"] = {
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+					["showText"] = false,
 				},
-				["Acherus"] = {
+				["Prat"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
@@ -266,39 +273,32 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
-				["Omen"] = {
+				["BagnonLauncher"] = {
+					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["index"] = 2,
+					["index"] = 1,
 				},
-				["ServerHopMinimapButton"] = {
+				["RaidAchievement"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["index"] = 3,
 				},
 			},
 			["fontName"] = "Arial Narrow",
 			["combatdisbar"] = true,
 			["disableoptons"] = true,
 			["combathidetip"] = true,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-				["Placeholder"] = {
-					["placeholderNames"] = {
-					},
-				},
-			},
+			["locked"] = false,
 		},
 		["Skullflower"] = {
 			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
 				["Placeholder"] = {
 					["placeholderNames"] = {
 					},
+				},
+				["MoreChocolate"] = {
 				},
 			},
 			["objSettings"] = {
@@ -316,7 +316,7 @@ ChocolateBarDB = {
 				["Details"] = {
 					["barName"] = "ChocolateBar1",
 				},
-				["Masque"] = {
+				["SavedInstances"] = {
 					["align"] = "right",
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
@@ -339,9 +339,7 @@ ChocolateBarDB = {
 				["Accountant"] = {
 					["barName"] = "ChocolateBar1",
 				},
-				["ServerHopMinimapButton"] = {
-					["align"] = "right",
-					["showText"] = false,
+				["S&L Friends"] = {
 					["barName"] = "ChocolateBar1",
 				},
 				["AtlasLoot"] = {
@@ -354,13 +352,15 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["S&L Friends"] = {
+				["ServerHopMinimapButton"] = {
+					["align"] = "right",
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["WeakAuras"] = {
 					["barName"] = "ChocolateBar1",
 				},
-				["SavedInstances"] = {
+				["Masque"] = {
 					["align"] = "right",
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",

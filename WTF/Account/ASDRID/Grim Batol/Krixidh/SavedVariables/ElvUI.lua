@@ -1,11 +1,11 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		" doinb love is in the air", -- [1]
-		"/g waow", -- [2]
-		"/p thanks", -- [3]
-		"/g transmog", -- [4]
-		"/g shoulders from horridon", -- [5]
+		"/g waow", -- [1]
+		"/p thanks", -- [2]
+		"/g transmog", -- [3]
+		"/g shoulders from horridon", -- [4]
+		"/ec", -- [5]
 	},
 	["ChatLog"] = {
 	},

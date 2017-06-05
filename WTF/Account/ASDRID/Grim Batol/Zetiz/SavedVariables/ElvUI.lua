@@ -1,17 +1,17 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/al mmi", -- [1]
-		"/al mm", -- [2]
-		"/al ", -- [3]
-		"/al minimapicon", -- [4]
-		"/cast path of the mogu king", -- [5]
+		"/al mm", -- [1]
+		"/al ", -- [2]
+		"/al minimapicon", -- [3]
+		"/cast path of the mogu king", -- [4]
+		"/ec", -- [5]
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatLog"] = {
 	},

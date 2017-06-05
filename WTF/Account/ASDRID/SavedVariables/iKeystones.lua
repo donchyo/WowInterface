@@ -7,8 +7,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 198,
 			["affix4"] = 8,
-			["affix10"] = 0,
 			["level"] = 8,
+			["affix10"] = 0,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -65,8 +65,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 198,
 			["affix4"] = 8,
-			["affix10"] = 0,
 			["level"] = 8,
+			["affix10"] = 0,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -86,18 +86,10 @@ iKeystonesDB = {
 		},
 		["server"] = "Grim Batol",
 	},
-	["Player-1303-03E8DD46"] = {
-		["name"] = "Zolution",
+	["Player-1303-08795EBA"] = {
+		["name"] = "Krixidh",
 		["maxCompleted"] = 0,
-		["class"] = "PRIEST",
-		["key"] = {
-		},
-		["server"] = "Grim Batol",
-	},
-	["Player-1303-04AFFB5A"] = {
-		["name"] = "Namji",
-		["maxCompleted"] = 0,
-		["class"] = "MONK",
+		["class"] = "DEMONHUNTER",
 		["key"] = {
 		},
 		["server"] = "Grim Batol",
@@ -109,17 +101,25 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 206,
 			["affix4"] = 8,
-			["level"] = 7,
 			["affix10"] = 0,
+			["level"] = 7,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
 		["server"] = "Grim Batol",
 	},
-	["Player-1303-08795EBA"] = {
-		["name"] = "Krixidh",
+	["Player-1303-04AFFB5A"] = {
+		["name"] = "Namji",
 		["maxCompleted"] = 0,
-		["class"] = "DEMONHUNTER",
+		["class"] = "MONK",
+		["key"] = {
+		},
+		["server"] = "Grim Batol",
+	},
+	["Player-1303-03E8DD46"] = {
+		["name"] = "Zolution",
+		["maxCompleted"] = 0,
+		["class"] = "PRIEST",
 		["key"] = {
 		},
 		["server"] = "Grim Batol",

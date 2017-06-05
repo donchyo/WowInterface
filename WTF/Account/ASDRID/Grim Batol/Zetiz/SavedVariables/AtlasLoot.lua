@@ -10,6 +10,16 @@ AtlasLootCharDB = {
 		},
 		["shown"] = false,
 	},
+	["QuickLootFrame"] = {
+		["point"] = {
+			"LEFT", -- [1]
+			nil, -- [2]
+			"LEFT", -- [3]
+			279.883087158203, -- [4]
+			68.5408630371094, -- [5]
+		},
+	},
+	["__addonrevision"] = 4325,
 	["GUI"] = {
 		["selected"] = {
 			"AtlasLoot_Collections", -- [1]
@@ -24,16 +34,6 @@ AtlasLootCharDB = {
 			"RIGHT", -- [3]
 			-155.153884887695, -- [4]
 			-8.5676965713501, -- [5]
-		},
-	},
-	["__addonrevision"] = 4325,
-	["QuickLootFrame"] = {
-		["point"] = {
-			"LEFT", -- [1]
-			nil, -- [2]
-			"LEFT", -- [3]
-			279.883087158203, -- [4]
-			68.5408630371094, -- [5]
 		},
 	},
 	["minimap"] = {
