@@ -634,7 +634,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496666603,
+				["lastUpdate"] = 1496747757,
 				["Spells"] = {
 					["General"] = {
 						1690368, -- [1]
@@ -994,7 +994,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1496686204,
+				["lastUpdate"] = 1496748374,
 				["Spells"] = {
 					["Enhancement"] = {
 						514048, -- [1]
@@ -2654,7 +2654,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1496688077,
+				["lastUpdate"] = 1496747225,
 				["Spells"] = {
 					["Protection"] = {
 						27538944, -- [1]
@@ -3084,7 +3084,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496690084,
+				["lastUpdate"] = 1496746801,
 				["Spells"] = {
 					["Balance"] = {
 						5839872, -- [1]
@@ -3486,7 +3486,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1496666754,
+				["lastUpdate"] = 1496766151,
 				["Spells"] = {
 					["Unholy"] = {
 						12468992, -- [1]
@@ -3676,6 +3676,47 @@ DataStore_SpellsDB = {
 						29197143, -- [44]
 						42334298, -- [45]
 					},
+					["Elemental"] = {
+						514048, -- [1]
+						29196800, -- [2]
+						142336, -- [3]
+						27716864, -- [4]
+						107776, -- [5]
+						13282816, -- [6]
+						527872, -- [7]
+						2058752, -- [8]
+						635904, -- [9]
+						15841792, -- [10]
+						1586176, -- [11]
+						740864, -- [12]
+						2060800, -- [13]
+						2062336, -- [14]
+						677120, -- [15]
+						2093312, -- [16]
+						18923520, -- [17]
+						1380864, -- [18]
+						2049024, -- [19]
+						8238592, -- [20]
+						13187584, -- [21]
+						13185280, -- [22]
+						103168, -- [23]
+						82944, -- [24]
+						94720, -- [25]
+						921344, -- [26]
+						7890688, -- [27]
+						20276736, -- [28]
+						13181440, -- [29]
+						9455616, -- [30]
+						2084608, -- [31]
+						42358272, -- [32]
+						139776, -- [33]
+						14846464, -- [34]
+						42342144, -- [35]
+						22724096, -- [36]
+						29940736, -- [37]
+						19905536, -- [38]
+						5275648, -- [39]
+					},
 					["Restoration"] = {
 						514048, -- [1]
 						29197312, -- [2]
@@ -3745,47 +3786,6 @@ DataStore_SpellsDB = {
 						23107920, -- [22]
 						29673813, -- [23]
 					},
-					["Elemental"] = {
-						514048, -- [1]
-						29196800, -- [2]
-						142336, -- [3]
-						27716864, -- [4]
-						107776, -- [5]
-						13282816, -- [6]
-						527872, -- [7]
-						2058752, -- [8]
-						635904, -- [9]
-						15841792, -- [10]
-						1586176, -- [11]
-						740864, -- [12]
-						2060800, -- [13]
-						2062336, -- [14]
-						677120, -- [15]
-						2093312, -- [16]
-						18923520, -- [17]
-						1380864, -- [18]
-						2049024, -- [19]
-						8238592, -- [20]
-						13187584, -- [21]
-						13185280, -- [22]
-						103168, -- [23]
-						82944, -- [24]
-						94720, -- [25]
-						921344, -- [26]
-						7890688, -- [27]
-						20276736, -- [28]
-						13181440, -- [29]
-						9455616, -- [30]
-						2084608, -- [31]
-						42358272, -- [32]
-						139776, -- [33]
-						14846464, -- [34]
-						42342144, -- [35]
-						22724096, -- [36]
-						29940736, -- [37]
-						19905536, -- [38]
-						5275648, -- [39]
-					},
 				},
 				["SpellTabs"] = {
 					"General", -- [1]
@@ -3795,7 +3795,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1496688007,
+				["lastUpdate"] = 1496748096,
 				["Spells"] = {
 					["Protection"] = {
 						8153600, -- [1]
@@ -3949,9 +3949,6 @@ DataStore_SpellsDB = {
 						42336000, -- [41]
 						40799744, -- [42]
 					},
-					["All - Glyphs"] = {
-						40921369, -- [1]
-					},
 					["Retribution"] = {
 						8162304, -- [1]
 						47251200, -- [2]
@@ -3982,6 +3979,9 @@ DataStore_SpellsDB = {
 						19628032, -- [27]
 						46959360, -- [28]
 					},
+					["All - Glyphs"] = {
+						40921369, -- [1]
+					},
 				},
 				["SpellTabs"] = {
 					"General", -- [1]
@@ -3991,7 +3991,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1496686274,
+				["lastUpdate"] = 1496764040,
 				["Spells"] = {
 					["Frost"] = {
 						499968, -- [1]
@@ -4060,26 +4060,28 @@ DataStore_SpellsDB = {
 						33595392, -- [9]
 						33594368, -- [10]
 						5270784, -- [11]
-						21493248, -- [12]
-						32112384, -- [13]
-						1284864, -- [14]
-						5271552, -- [15]
-						19526656, -- [16]
-						59742208, -- [17]
-						13874432, -- [18]
-						49061120, -- [19]
-						5271808, -- [20]
-						5271296, -- [21]
-						23108352, -- [22]
-						21491456, -- [23]
-						21489664, -- [24]
-						20413440, -- [25]
-						23107840, -- [26]
-						20130048, -- [27]
-						23726080, -- [28]
-						21491200, -- [29]
-						19532288, -- [30]
-						29673728, -- [31]
+						50101760, -- [12]
+						21493248, -- [13]
+						32112384, -- [14]
+						1284864, -- [15]
+						5271552, -- [16]
+						19526656, -- [17]
+						59742208, -- [18]
+						13874432, -- [19]
+						49061120, -- [20]
+						5271808, -- [21]
+						5271296, -- [22]
+						23108352, -- [23]
+						21491456, -- [24]
+						21489664, -- [25]
+						20413440, -- [26]
+						23107840, -- [27]
+						20130048, -- [28]
+						23726080, -- [29]
+						57193728, -- [30]
+						21491200, -- [31]
+						19532288, -- [32]
+						29673728, -- [33]
 					},
 					["Arcane"] = {
 						11372800, -- [1]
@@ -4370,7 +4372,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Namji"] = {
-				["lastUpdate"] = 1496666410,
+				["lastUpdate"] = 1496748795,
 				["Spells"] = {
 					["Windwalker"] = {
 						25800704, -- [1]
@@ -4455,8 +4457,8 @@ DataStore_SpellsDB = {
 						13874432, -- [19]
 						49061120, -- [20]
 						5271808, -- [21]
-						5271296, -- [22]
-						39614464, -- [23]
+						39614464, -- [22]
+						5271296, -- [23]
 						23108352, -- [24]
 						21491456, -- [25]
 						21489664, -- [26]
@@ -4571,10 +4573,10 @@ DataStore_SpellsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -4585,7 +4587,7 @@ DataStore_SpellsDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["_5000000"] = 10000,
-	["_200000"] = 1000,
-	["_1000000"] = 2500,
 	["_10000"] = 200,
-	["_500"] = 5,
+	["_5000000"] = 10000,
+	["_1000000"] = 2500,
+	["_200000"] = 1000,
 	["LOG_DE_DATA_X"] = true,
 	["STARTING_DISCOUNT"] = 5,
+	["_500"] = 5,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Ulfgor's Greaves of Bravery"] = {
@@ -43,14 +43,18 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["4501258"] = "23730000:1",
 	},
 	["Flask of the Countless Armies"] = {
-		["4453716"] = "10880000:1",
 		["4452109"] = "10940000:1",
+		["4453716"] = "10880000:1",
 		["4456405"] = "10800000:2",
 		["4452142"] = "11000000:1",
-		["is"] = "127849:0:0:0:0",
+		["4452975"] = "11000000:1",
 		["4456406"] = "10800000:1",
 		["4452976"] = "10920000:2",
-		["4452975"] = "11000000:1",
+		["is"] = "127849:0:0:0:0",
+	},
+	["Defiled Augment Rune"] = {
+		["is"] = "140587:0:0:0:0",
+		["4559417"] = "1942500:1",
 	},
 	["Brawler's Pass"] = {
 		["is"] = "93195:0:0:0:0",
@@ -60,14 +64,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "124640:0:0:0:0",
 		["4559978"] = "10000000:1",
 	},
-	["Defiled Augment Rune"] = {
-		["is"] = "140587:0:0:0:0",
-		["4559417"] = "1942500:1",
-	},
 	["Chaos Crystal"] = {
 		["4479578"] = "1697500:1",
-		["4479839"] = "2247500:1",
 		["4483712"] = "1747500:1",
+		["4479839"] = "2247500:1",
 		["is"] = "124442:0:0:0:0",
 	},
 	["Enchant Neck - Mark of the Hidden Satyr"] = {
@@ -1549,13 +1549,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "22576:0:0:0:0",
 			["sc"] = 10,
 		},
-		["Fighter Chow"] = {
-			["H2342"] = 21793,
-			["mr"] = 21793,
-			["sc"] = 5,
-			["id"] = "133577:0:0:0:0",
-			["cc"] = 0,
-		},
 		["Gleaming Celestial Waistguard"] = {
 			["H2273"] = 3500000000,
 			["cc"] = 4,
@@ -1563,6 +1556,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["L2273"] = 66660000,
 			["mr"] = 3500000000,
 			["sc"] = 4,
+		},
+		["Fighter Chow"] = {
+			["H2342"] = 21793,
+			["mr"] = 21793,
+			["sc"] = 5,
+			["id"] = "133577:0:0:0:0",
+			["cc"] = 0,
 		},
 		["Darkmoon Monkey"] = {
 			["H2217"] = 125719999,
@@ -1792,12 +1792,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2390"] = 685999,
 			["cc"] = 8,
 		},
-		["Enchant Cloak - Minor Power"] = {
-			["mr"] = 24729999,
-			["sc"] = 3,
-			["id"] = "38973:0:0:0:0",
-			["H2390"] = 24729999,
-			["cc"] = 8,
+		["Defiled Augment Rune"] = {
+			["mr"] = 1945000,
+			["sc"] = 8,
+			["id"] = "140587:0:0:0:0",
+			["H2330"] = 1945000,
+			["cc"] = 0,
 		},
 		["Enchant Neck - Mark of the Versatile"] = {
 			["mr"] = 1000000,
@@ -1813,12 +1813,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2390"] = 18590000,
 			["cc"] = 8,
 		},
-		["Defiled Augment Rune"] = {
-			["mr"] = 1945000,
-			["sc"] = 8,
-			["id"] = "140587:0:0:0:0",
-			["H2330"] = 1945000,
-			["cc"] = 0,
+		["Enchant Cloak - Minor Power"] = {
+			["mr"] = 24729999,
+			["sc"] = 3,
+			["id"] = "38973:0:0:0:0",
+			["H2390"] = 24729999,
+			["cc"] = 8,
 		},
 		["Cerulean Filigreed Shirt"] = {
 			["H2223"] = 2945997,
@@ -1848,12 +1848,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 19999999,
 			["sc"] = 1,
 		},
-		["Small Ley Crystal"] = {
-			["mr"] = 26,
-			["sc"] = 1,
-			["H2299"] = 26,
-			["id"] = "138875:0:0:0:0",
-			["cc"] = 15,
+		["Tome of Illusions: Outland"] = {
+			["mr"] = 59400000,
+			["sc"] = 8,
+			["H2232"] = 59400000,
+			["cc"] = 0,
+			["id"] = "138789:0:0:0:0",
 		},
 		["Leystone Boots of the Peerless"] = {
 			["mr"] = 51000000,
@@ -1934,12 +1934,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 12,
 			["H2277"] = 1750000,
 		},
-		["Ultimate Gnomish Army Knife"] = {
-			["mr"] = 92499,
+		["Satyr's Rod"] = {
+			["mr"] = 128816568,
+			["cc"] = 4,
+			["id"] = "15962:0:0:0:0",
+			["H2319"] = 128816568,
 			["sc"] = 0,
-			["H2257"] = 92499,
-			["cc"] = 0,
-			["id"] = "109253:0:0:0:0",
 		},
 		["Six of Immortality"] = {
 			["mr"] = 67629999,
@@ -2005,12 +2005,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 89480000,
 			["sc"] = 0,
 		},
-		["Satyr's Rod"] = {
-			["mr"] = 128816568,
-			["cc"] = 4,
-			["id"] = "15962:0:0:0:0",
-			["H2319"] = 128816568,
+		["Ultimate Gnomish Army Knife"] = {
+			["mr"] = 92499,
 			["sc"] = 0,
+			["H2257"] = 92499,
+			["cc"] = 0,
+			["id"] = "109253:0:0:0:0",
 		},
 		["Darkmoon Tincture of Defense"] = {
 			["H2217"] = 108000,
@@ -2054,12 +2054,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 3,
 			["H2304"] = 163030,
 		},
-		["Tome of Illusions: Outland"] = {
-			["mr"] = 59400000,
-			["sc"] = 8,
-			["H2232"] = 59400000,
-			["cc"] = 0,
-			["id"] = "138789:0:0:0:0",
+		["Small Ley Crystal"] = {
+			["mr"] = 26,
+			["sc"] = 1,
+			["H2299"] = 26,
+			["id"] = "138875:0:0:0:0",
+			["cc"] = 15,
 		},
 		["Enchant Cloak - Major Armor"] = {
 			["mr"] = 4349999,
@@ -2304,48 +2304,49 @@ AUCTIONATOR_PRICE_DATABASE = {
 }
 AUCTIONATOR_LAST_SCAN_TIME = nil
 AUCTIONATOR_TOONS = {
-	["Lilgaykrixi"] = {
-		["firstSeen"] = 1486469455,
-		["firstVersion"] = "4.0.16",
-	},
-	["Zolution"] = {
-		["firstSeen"] = 1482624546,
-		["firstVersion"] = "4.0.16",
-	},
-	["Zuriz"] = {
-		["firstSeen"] = 1480464455,
-		["firstVersion"] = "4.0.16",
-	},
 	["Krixi"] = {
 		["firstSeen"] = 1480446210,
 		["firstVersion"] = "4.0.16",
 	},
-	["Krixidk"] = {
-		["firstSeen"] = 1480364461,
+	["Gnomalock"] = {
+		["firstSeen"] = 1482805719,
 		["firstVersion"] = "4.0.16",
 	},
 	["Krixiyo"] = {
 		["firstSeen"] = 1480934362,
 		["firstVersion"] = "4.0.16",
 	},
-	["Bawsie"] = {
-		["firstSeen"] = 1480464623,
+	["Lilgaykrixi"] = {
+		["firstSeen"] = 1486469455,
 		["firstVersion"] = "4.0.16",
 	},
-	["Donch"] = {
-		["firstSeen"] = 1481570862,
-		["firstVersion"] = "4.0.16",
-	},
-	["Krixidh"] = {
-		["firstSeen"] = 1480465034,
+	["Kroxi"] = {
+		["firstSeen"] = 1480465179,
 		["firstVersion"] = "4.0.16",
 	},
 	["Namji"] = {
 		["firstSeen"] = 1480464811,
 		["firstVersion"] = "4.0.16",
 	},
-	["Kroxi"] = {
-		["firstSeen"] = 1480465179,
+	["Bawsie"] = {
+		["firstSeen"] = 1480464623,
+		["firstVersion"] = "4.0.16",
+	},
+	["Krixidk"] = {
+		["firstSeen"] = 1480364461,
+		["guid"] = "Player-1303-042451A8",
+		["firstVersion"] = "4.0.16",
+	},
+	["Krixidh"] = {
+		["firstSeen"] = 1480465034,
+		["firstVersion"] = "4.0.16",
+	},
+	["Zuriz"] = {
+		["firstSeen"] = 1480464455,
+		["firstVersion"] = "4.0.16",
+	},
+	["Donch"] = {
+		["firstSeen"] = 1481570862,
 		["firstVersion"] = "4.0.16",
 	},
 	["Zetiz"] = {
@@ -2356,8 +2357,8 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1480455328,
 		["firstVersion"] = "4.0.16",
 	},
-	["Gnomalock"] = {
-		["firstSeen"] = 1482805719,
+	["Zolution"] = {
+		["firstSeen"] = 1482624546,
 		["firstVersion"] = "4.0.16",
 	},
 }

@@ -341,7 +341,7 @@ QuickQuest: disabled
 Rarity: disabled
 Rarity_Options: disabled
 RCLootCouncil: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 SellOMatic2: disabled
 SellOMatic2_Destroy: disabled
 SmoothDurability: enabled

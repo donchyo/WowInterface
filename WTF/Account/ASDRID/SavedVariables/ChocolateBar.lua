@@ -12,7 +12,7 @@ ChocolateBarDB = {
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Krixiyo - Lightning's Blade"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
@@ -23,12 +23,20 @@ ChocolateBarDB = {
 		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Kroxi - Crushridge"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barOffy"] = 1,
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["barOffx"] = -20.4444828033447,
+					["width"] = 210.999969482422,
+				},
+			},
 			["background"] = {
 				["tileSize"] = 136,
 				["color"] = {
@@ -282,15 +290,7 @@ ChocolateBarDB = {
 			["combatdisbar"] = true,
 			["disableoptons"] = true,
 			["combathidetip"] = true,
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barOffy"] = 1,
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["barOffx"] = -20.4444828033447,
-					["width"] = 210.999969482422,
-				},
-			},
+			["locked"] = false,
 		},
 		["Skullflower"] = {
 			["moduleOptions"] = {

@@ -1,11 +1,11 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/reload", -- [1]
-		"/g jag har ingen aning", -- [2]
-		"/g vi får se", -- [3]
-		"/g jag är klar med skolan ändå", -- [4]
-		"/g så länge vi får det gjordt så bryr jag mig inte", -- [5]
+		"/g vi får se", -- [1]
+		"/g jag är klar med skolan ändå", -- [2]
+		"/g så länge vi får det gjordt så bryr jag mig inte", -- [3]
+		"/ec", -- [4]
+		"/p cant trade", -- [5]
 	},
 	["ChatLog"] = {
 	},

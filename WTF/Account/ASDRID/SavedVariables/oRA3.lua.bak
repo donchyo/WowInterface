@@ -18,13 +18,11 @@ oRA3DB = {
 		["ReadyCheck"] = {
 			["profiles"] = {
 				["Default"] = {
-					["autohide"] = false,
 					["hideOnCombat"] = false,
+					["autohide"] = false,
 					["sound"] = false,
 				},
 			},
-		},
-		["Alerts"] = {
 		},
 		["Difficulty"] = {
 			["profiles"] = {
@@ -35,6 +33,8 @@ oRA3DB = {
 					["prevRaidDifficulty"] = 16,
 				},
 			},
+		},
+		["Alerts"] = {
 		},
 		["Rings"] = {
 			["profiles"] = {
@@ -49,7 +49,7 @@ oRA3DB = {
 				},
 			},
 		},
-		["Loot"] = {
+		["GuildRepairs"] = {
 		},
 		["Promote"] = {
 		},
@@ -86,7 +86,7 @@ oRA3DB = {
 		},
 		["Consumables"] = {
 		},
-		["GuildRepairs"] = {
+		["Loot"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -116,7 +116,7 @@ oRA3DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["lastSelectedList"] = 2,
+			["lastSelectedPanel"] = "Checks",
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148,
@@ -141,7 +141,7 @@ oRA3DB = {
 					["PosX"] = 1144.37755254617,
 				},
 			},
-			["lastSelectedPanel"] = "Checks",
+			["lastSelectedList"] = 2,
 		},
 		["Skullflower"] = {
 			["lastSelectedList"] = 1,

@@ -9,9 +9,9 @@ FlashTaskbarDB = {
 		["Gnomalock - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
@@ -30,12 +30,12 @@ FlashTaskbarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["rare_scan"] = false,
 			["any_rare"] = false,
 			["chat_scan_keywords"] = {
 				"Krixi", -- [1]
 				"Donch", -- [2]
 			},
-			["rare_scan"] = false,
 		},
 		["Skullflower"] = {
 		},

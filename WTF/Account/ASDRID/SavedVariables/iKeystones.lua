@@ -2,13 +2,13 @@
 iKeystonesDB = {
 	["Player-1303-042451A8"] = {
 		["name"] = "Krixidk",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 12,
 		["class"] = "DEATHKNIGHT",
 		["key"] = {
 			["map"] = 198,
 			["affix4"] = 8,
-			["level"] = 8,
 			["affix10"] = 0,
+			["level"] = 8,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -16,7 +16,7 @@ iKeystonesDB = {
 	},
 	["Player-1303-0478DE10"] = {
 		["name"] = "Zuriz",
-		["maxCompleted"] = 7,
+		["maxCompleted"] = 11,
 		["class"] = "SHAMAN",
 		["key"] = {
 			["map"] = 234,
@@ -30,9 +30,15 @@ iKeystonesDB = {
 	},
 	["Player-1303-0387FD7B"] = {
 		["name"] = "Donch",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 10,
 		["class"] = "MAGE",
 		["key"] = {
+			["map"] = 208,
+			["affix4"] = 8,
+			["affix10"] = 0,
+			["level"] = 7,
+			["affix7"] = 12,
+			["depleted"] = 1,
 		},
 		["server"] = "Grim Batol",
 	},
@@ -60,13 +66,13 @@ iKeystonesDB = {
 	},
 	["Player-1303-03966669"] = {
 		["name"] = "Kroxi",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 11,
 		["class"] = "WARRIOR",
 		["key"] = {
 			["map"] = 198,
 			["affix4"] = 8,
-			["level"] = 8,
 			["affix10"] = 0,
+			["level"] = 8,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -79,8 +85,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 199,
 			["affix4"] = 8,
-			["affix10"] = 10,
 			["level"] = 12,
+			["affix10"] = 10,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},
@@ -96,13 +102,13 @@ iKeystonesDB = {
 	},
 	["Player-1303-03FA8295"] = {
 		["name"] = "Zetiz",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 11,
 		["class"] = "ROGUE",
 		["key"] = {
 			["map"] = 206,
 			["affix4"] = 8,
-			["affix10"] = 0,
 			["level"] = 7,
+			["affix10"] = 0,
 			["affix7"] = 12,
 			["depleted"] = 1,
 		},

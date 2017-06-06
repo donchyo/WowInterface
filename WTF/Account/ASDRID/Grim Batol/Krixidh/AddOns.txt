@@ -283,7 +283,7 @@ Rarity: disabled
 Rarity_Options: disabled
 RCLootCouncil: disabled
 SafeQueue: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 SellOMatic2: disabled
 SellOMatic2_Destroy: disabled
 SharedMedia: enabled

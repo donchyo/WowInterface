@@ -17,7 +17,7 @@ DeathNoteDB = {
 		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
@@ -26,7 +26,7 @@ DeathNoteDB = {
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
@@ -46,22 +46,22 @@ DeathNoteDB = {
 		},
 		["Krixidk - Grim Batol"] = {
 			["display"] = {
-				["y"] = 38.6669311523438,
-				["namelist"] = 2,
 				["columns"] = {
 					59.9999885559082, -- [1]
 					89.9999771118164, -- [2]
 					59.9999885559082, -- [3]
 					120.44441986084, -- [4]
 				},
-				["x"] = -371.111087799072,
 				["w"] = 860.889282226563,
+				["y"] = 38.6669311523438,
+				["namelist"] = 2,
+				["x"] = -371.111087799072,
 				["h"] = 515.111022949219,
 			},
 		},
 		["Kroxi - Grim Batol"] = {
-			["keep_data"] = false,
 			["max_deaths"] = 20,
+			["keep_data"] = false,
 		},
 		["Namji - Grim Batol"] = {
 			["display"] = {
@@ -103,17 +103,17 @@ DeathNoteDB = {
 		["Zetiz - Grim Batol"] = {
 			["display"] = {
 				["y"] = 7.02818965911865,
-				["namelist"] = 2,
-				["h"] = 911.244812011719,
-				["w"] = 835.368286132813,
 				["x"] = -47.1218566894531,
+				["namelist"] = 2,
+				["w"] = 835.368286132813,
+				["h"] = 911.244812011719,
 			},
 		},
 		["Daimtårta - Aggra (Português)"] = {
 		},
 		["Treefiddy - Aggra (Português)"] = {
 		},
-		["Kroxidps - Aggra (Português)"] = {
+		["Krixiyo - Blackmoore"] = {
 		},
 		["Lilgaykrixi - Kazzak"] = {
 		},
@@ -125,16 +125,16 @@ DeathNoteDB = {
 			["max_deaths"] = 20,
 			["display"] = {
 				["y"] = -12.2490081787109,
-				["h"] = 588.246520996094,
+				["x"] = 370.105773925781,
 				["columns"] = {
 					60.0001068115234, -- [1]
 					89.9999771118164, -- [2]
 					59.9999885559082, -- [3]
 					100.000061035156, -- [4]
 				},
-				["x"] = 370.105773925781,
-				["w"] = 716.2783203125,
 				["namelist"] = 2,
+				["w"] = 716.2783203125,
+				["h"] = 588.246520996094,
 			},
 			["keep_data"] = false,
 		},
@@ -144,11 +144,11 @@ DeathNoteDB = {
 		},
 		["Nyrith - Grim Batol"] = {
 			["display"] = {
-				["w"] = 700.000122070313,
 				["y"] = -18.444091796875,
-				["x"] = 211.777404785156,
-				["h"] = 500.000030517578,
 				["namelist"] = 2,
+				["x"] = 211.777404785156,
+				["w"] = 700.000122070313,
+				["h"] = 500.000030517578,
 			},
 		},
 		["Zolution - Grim Batol"] = {
@@ -167,7 +167,7 @@ DeathNoteDB = {
 		},
 		["Donch - Shattered Hand"] = {
 		},
-		["Krixiyo - Blackmoore"] = {
+		["Kroxidps - Aggra (Português)"] = {
 		},
 		["Greenzuriz - Aggra (Português)"] = {
 		},

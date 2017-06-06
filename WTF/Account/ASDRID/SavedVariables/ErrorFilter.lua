@@ -13,7 +13,7 @@ ErrorFilterDB = {
 		["Zetiz - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
@@ -24,7 +24,7 @@ ErrorFilterDB = {
 		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Kroxi - Crushridge"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 	},
 	["profiles"] = {
