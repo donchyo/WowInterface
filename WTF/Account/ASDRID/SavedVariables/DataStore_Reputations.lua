@@ -35,7 +35,7 @@ DataStore_ReputationsDB = {
 				["guildName"] = "Jupiter Mining Corp",
 			},
 			["Default.Grim Batol.Bawsie"] = {
-				["lastUpdate"] = 1496666323,
+				["lastUpdate"] = 1496833032,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -136,7 +136,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496747757,
+				["lastUpdate"] = 1496834444,
 				["Factions"] = {
 					8999, -- [1]
 					9261, -- [2]
@@ -154,7 +154,7 @@ DataStore_ReputationsDB = {
 					[134] = 18722,
 					[136] = 11440,
 					[138] = 19075,
-					[140] = 12310,
+					[140] = 13060,
 					[37] = 36273,
 					[38] = 5529,
 					[39] = 10174,
@@ -214,7 +214,7 @@ DataStore_ReputationsDB = {
 				["guildName"] = "Hoonigans",
 			},
 			["Default.Grim Batol.Krixidh"] = {
-				["lastUpdate"] = 1496666365,
+				["lastUpdate"] = 1496833001,
 				["Factions"] = {
 					4000, -- [1]
 					3000, -- [2]
@@ -231,7 +231,7 @@ DataStore_ReputationsDB = {
 					[134] = 26610,
 					[75] = 3300,
 					[135] = 23029,
-					[136] = 30524,
+					[136] = 30774,
 					[137] = 18036,
 					[57] = 2632,
 				},
@@ -239,7 +239,7 @@ DataStore_ReputationsDB = {
 				["guildName"] = "Hoonigans",
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1496748374,
+				["lastUpdate"] = 1496848244,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -258,7 +258,7 @@ DataStore_ReputationsDB = {
 					[134] = 36360,
 					[136] = 40137,
 					[138] = 42000,
-					[140] = 11010,
+					[140] = 11760,
 					[37] = 10030,
 					[38] = 10401,
 					[39] = 12146,
@@ -469,25 +469,25 @@ DataStore_ReputationsDB = {
 					8270, -- [4]
 					10263, -- [5]
 					[77] = 6820,
-					[32] = 5324,
+					[47] = 2547,
 					[39] = 1649,
 					[56] = 57,
 					[112] = 8270,
 					[45] = 2303,
-					[47] = 2547,
+					[75] = 8470,
 					[18] = 1875,
 					[19] = 1875,
 					[38] = 2686,
 					[40] = 3795,
 					[17] = 1875,
 					[20] = 2150,
-					[75] = 8470,
+					[32] = 5324,
 				},
 				["guildRep"] = 3000,
 				["guildName"] = "Hoonigans",
 			},
 			["Default.Grim Batol.Zolution"] = {
-				["lastUpdate"] = 1496666281,
+				["lastUpdate"] = 1496833075,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -669,7 +669,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1496747225,
+				["lastUpdate"] = 1496834629,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -689,7 +689,7 @@ DataStore_ReputationsDB = {
 					[134] = 23557,
 					[136] = 19112,
 					[138] = 24485,
-					[140] = 14000,
+					[140] = 14800,
 					[37] = 42000,
 					[38] = 11289,
 					[39] = 8999,
@@ -833,7 +833,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496746801,
+				["lastUpdate"] = 1496835258,
 				["Factions"] = {
 					11482, -- [1]
 					7997, -- [2]
@@ -851,7 +851,7 @@ DataStore_ReputationsDB = {
 					[134] = 42000,
 					[136] = 38397,
 					[138] = 42000,
-					[140] = 36680,
+					[140] = 38180,
 					[37] = 32426,
 					[38] = 13683,
 					[39] = 20134,
@@ -941,7 +941,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1496766151,
+				["lastUpdate"] = 1496831377,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -1058,7 +1058,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1496748096,
+				["lastUpdate"] = 1496834175,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -1078,7 +1078,7 @@ DataStore_ReputationsDB = {
 					[134] = 27835,
 					[136] = 34440,
 					[138] = 37090,
-					[140] = 6637,
+					[140] = 7437,
 					[37] = 42000,
 					[38] = 30518,
 					[39] = 32253,
@@ -1143,7 +1143,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1496764040,
+				["lastUpdate"] = 1496833395,
 				["Factions"] = {
 					42000, -- [1]
 					42000, -- [2]
@@ -1263,12 +1263,13 @@ DataStore_ReputationsDB = {
 					[119] = 42000,
 					[138] = 500,
 					[122] = 42000,
-					[139] = 875,
+					[139] = 1400,
+					[140] = 4910,
 					[123] = 23007,
-					[134] = 8200,
-					[135] = 11420,
+					[134] = 8275,
+					[135] = 12320,
 					[126] = 3560,
-					[136] = 11365,
+					[136] = 11940,
 					[121] = 8413,
 					[137] = 8175,
 					[130] = 7700,
@@ -1290,7 +1291,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Namji"] = {
-				["lastUpdate"] = 1496748795,
+				["lastUpdate"] = 1496832786,
 				["Factions"] = {
 					9213, -- [1]
 					7248, -- [2]
@@ -1318,10 +1319,10 @@ DataStore_ReputationsDB = {
 					[63] = 7806,
 					[112] = 7348,
 					[65] = 3907,
-					[17] = 1737,
-					[66] = 3907,
-					[57] = 2561,
 					[130] = 11700,
+					[17] = 1737,
+					[57] = 2561,
+					[66] = 3907,
 					[82] = 34365,
 					[105] = 19890,
 					[114] = 2090,
@@ -1375,10 +1376,10 @@ DataStore_ReputationsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -1389,7 +1390,7 @@ DataStore_ReputationsDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

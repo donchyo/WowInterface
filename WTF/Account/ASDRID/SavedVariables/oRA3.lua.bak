@@ -18,8 +18,8 @@ oRA3DB = {
 		["ReadyCheck"] = {
 			["profiles"] = {
 				["Default"] = {
-					["hideOnCombat"] = false,
 					["autohide"] = false,
+					["hideOnCombat"] = false,
 					["sound"] = false,
 				},
 			},
@@ -116,7 +116,7 @@ oRA3DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["lastSelectedPanel"] = "Checks",
+			["lastSelectedList"] = 2,
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148,
@@ -141,7 +141,7 @@ oRA3DB = {
 					["PosX"] = 1144.37755254617,
 				},
 			},
-			["lastSelectedList"] = 2,
+			["lastSelectedPanel"] = "Checks",
 		},
 		["Skullflower"] = {
 			["lastSelectedList"] = 1,

@@ -4,13 +4,13 @@ MythicPlusProgressDB = {
 		["enableTooltip"] = true,
 		["enabled"] = true,
 		["maxTimeSinceKill"] = 600,
-		["enablePullEstimate"] = true,
+		["enableNameplateText"] = true,
 		["nameplateUpdateRate"] = 200,
 		["dbVersion"] = 6,
 		["version"] = "0.3e",
-		["nameplateTextColor"] = "FFFFFF",
+		["enablePullEstimate"] = true,
 		["tooltipColor"] = "82E0FF",
-		["enableNameplateText"] = true,
+		["nameplateTextColor"] = "FFFFFF",
 		["pullEstimateCombatOnly"] = true,
 		["inconclusiveDataThreshold"] = 100,
 	},
@@ -1172,11 +1172,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Ebonclaw Packmate",
 		},
-		[97197] = {
+		[114792] = {
 			["values"] = {
-				[2] = 13,
+				[4] = 4,
 			},
-			["name"] = "Valarjar Purifier",
+			["name"] = "Virtuous Lady",
 		},
 		[114712] = {
 			["values"] = {
@@ -1202,17 +1202,17 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Malignant Defiler",
 		},
-		[114792] = {
-			["values"] = {
-				[4] = 4,
-			},
-			["name"] = "Virtuous Lady",
-		},
 		[91332] = {
 			["values"] = {
 				[4] = 22,
 			},
 			["name"] = "Stoneclaw Hunter",
+		},
+		[97197] = {
+			["values"] = {
+				[2] = 13,
+			},
+			["name"] = "Valarjar Purifier",
 		},
 		[91793] = {
 			["values"] = {

@@ -30,12 +30,12 @@ FlashTaskbarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["rare_scan"] = false,
 			["any_rare"] = false,
 			["chat_scan_keywords"] = {
 				"Krixi", -- [1]
 				"Donch", -- [2]
 			},
+			["rare_scan"] = false,
 		},
 		["Skullflower"] = {
 		},

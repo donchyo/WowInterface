@@ -281,14 +281,22 @@ TidyPlatesThreatDB = {
 					["Totem"] = false,
 				},
 			},
+			["auraWidget"] = {
+				["allow"] = {
+					nil, -- [1]
+					"Recursive Strikes", -- [2]
+					"", -- [3]
+				},
+				["mode"] = "allMine",
+			},
 			["uniqueSettings"] = {
 				[33] = {
-					["scale"] = 1.4,
-					["icon"] = 135799,
-					["name"] = "Fel Explosives",
 					["color"] = {
 						["g"] = 0,
 					},
+					["name"] = "Fel Explosives",
+					["icon"] = 135799,
+					["scale"] = 1.4,
 				},
 				[34] = {
 				},
@@ -425,23 +433,15 @@ TidyPlatesThreatDB = {
 					"", -- [100]
 				},
 			},
+			["questWidget"] = {
+				["ON"] = false,
+			},
+			["cache"] = {
+			},
 			["settings"] = {
 				["healthbar"] = {
 					["texture"] = "Skullflower",
 				},
-			},
-			["cache"] = {
-			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
-			["auraWidget"] = {
-				["allow"] = {
-					nil, -- [1]
-					"Recursive Strikes", -- [2]
-					"", -- [3]
-				},
-				["mode"] = "allMine",
 			},
 			["healerTracker"] = {
 				["ON"] = false,
@@ -452,14 +452,6 @@ TidyPlatesThreatDB = {
 				["toggle"] = {
 					["Totem"] = false,
 				},
-			},
-			["auraWidget"] = {
-				["allow"] = {
-					nil, -- [1]
-					"Leg Sweep", -- [2]
-					"Binding Shot", -- [3]
-				},
-				["mode"] = "allMine",
 			},
 			["uniqueSettings"] = {
 				[33] = {
@@ -579,23 +571,31 @@ TidyPlatesThreatDB = {
 					"", -- [80]
 				},
 			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
-			["cache"] = {
-			},
 			["settings"] = {
 				["healthbar"] = {
 					["texture"] = "Skullflower",
 				},
+			},
+			["cache"] = {
+			},
+			["text"] = {
+				["full"] = true,
+			},
+			["questWidget"] = {
+				["ON"] = false,
 			},
 			["tapHealthbarColor"] = {
 				["b"] = 0,
 				["g"] = 0.501960784313726,
 				["r"] = 0.501960784313726,
 			},
-			["text"] = {
-				["full"] = true,
+			["auraWidget"] = {
+				["allow"] = {
+					nil, -- [1]
+					"Leg Sweep", -- [2]
+					"Binding Shot", -- [3]
+				},
+				["mode"] = "allMine",
 			},
 		},
 	},

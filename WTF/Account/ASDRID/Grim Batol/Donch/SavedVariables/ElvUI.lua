@@ -1,5 +1,27 @@
 
 ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/g tack f ör att du hängde på", -- [1]
+		"/g ja", -- [2]
+		"/g men", -- [3]
+		"/g när vi gör dungeons är du bäst iaf", -- [4]
+		"/g iaf top 5", -- [5]
+		"/g och jag gör ingen singletarget", -- [6]
+		"/g asså", -- [7]
+		"/g tid", -- [8]
+		"/g om jag använder cds", -- [9]
+		"/g om vi har hero", -- [10]
+		"/g om jag får proccs", -- [11]
+		"/g om jag trycker maul", -- [12]
+		"/g det är så mkt skit som kan spela roll", -- [13]
+		"/g jag vet inte", -- [14]
+		"/g kasnek typ 400k normal på bossar", -- [15]
+		"/g om jag inte använder cds", -- [16]
+		"/g ja, brm är ju inte direkt drömmen för single targeet", -- [17]
+		"/g inte för att monks behöver det", -- [18]
+		"/g where is the mage weekly chest", -- [19]
+		"/g okty", -- [20]
+	},
 	["BodyGuard"] = {
 		["Active"] = false,
 		["Health"] = 0,
@@ -7,71 +29,27 @@ ElvCharacterDB = {
 		["IsInValidZone"] = true,
 	},
 	["ChatLog"] = {
-		["1496764675.832"] = {
-			"cybrog is online", -- [1]
-			"|Kf24|k00000|k", -- [2]
+		["1496833368.015"] = {
+			"[WQA] Quest 'Si'vash' complete!", -- [1]
+			"Icescream-Trollbane", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Icescream-Trollbane", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3, -- [11]
-			false, -- [12]
-			27, -- [13]
+			226, -- [11]
+			"Player-1598-065DCD6B", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_BN_WHISPER", -- [20]
+			"CHAT_MSG_RAID", -- [20]
 		},
-		["1496764661.198"] = {
-			"omfg", -- [1]
-			"|Kf24|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2, -- [11]
-			false, -- [12]
-			27, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_BN_WHISPER", -- [20]
-		},
-	},
-	["ChatEditHistory"] = {
-		"/g gör den  långsamt med key questet och worldbossar", -- [1]
-		"/g var fick du den?", -- [2]
-		"/g jag behöver en", -- [3]
-		"/g aha", -- [4]
-		"/g ja", -- [5]
-		"/g 789ilvl gank ez", -- [6]
-		"/m", -- [7]
-		"/g \"hureläget\"", -- [8]
-		"/g trodde man fick alla", -- [9]
-		"/g jahaja", -- [10]
-		"/g fna", -- [11]
-		"/g ne,det trodde ja ginte dock", -- [12]
-		"/g typ alla worldquests  är upgradees", -- [13]
-		"/g teleportation nexus är nice", -- [14]
-		"/g va", -- [15]
-		"/g eagle suger ju", -- [16]
-		"/g blizzard är globalwarming cucks", -- [17]
-		"/g nejtack", -- [18]
-		"/g wowee", -- [19]
-		"/g 800 ilvl", -- [20]
 	},
 }

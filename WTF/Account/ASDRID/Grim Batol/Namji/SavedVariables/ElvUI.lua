@@ -1,5 +1,7 @@
 
 ElvCharacterDB = {
+	["ChatLog"] = {
+	},
 	["ChatEditHistory"] = {
 		"/p i could take it", -- [1]
 		" just finishing this dungeon", -- [2]
@@ -8,11 +10,9 @@ ElvCharacterDB = {
 		"/ec", -- [5]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
-	},
-	["ChatLog"] = {
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

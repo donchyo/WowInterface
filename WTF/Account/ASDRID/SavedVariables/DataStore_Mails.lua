@@ -3,8 +3,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1496399539,
-				["lastVisitDate"] = "2017/06/02 12:32",
+				["lastUpdate"] = 1496831934,
+				["lastVisitDate"] = "2017/06/07 12:38",
 			},
 			["Default.Aggra (Português).Treefiddy"] = {
 				["lastUpdate"] = 1444761294,
@@ -45,58 +45,36 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/02/22 11:30",
 			},
 			["Default.Grim Batol.Zolution"] = {
-				["lastUpdate"] = 1491106114,
-				["lastVisitDate"] = "2017/04/02 06:08",
+				["lastUpdate"] = 1496833085,
+				["lastVisitDate"] = "2017/06/07 12:58",
 			},
 			["Default.Aggra (Português).Kroxidps"] = {
 				["lastUpdate"] = 1423512245,
 				["lastVisitDate"] = "2015/02/09 21:04",
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496354603,
-				["Mails"] = {
-					{
-						["lastCheck"] = 1496354603,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 3.6442129611969,
-					}, -- [1]
-					{
-						["lastCheck"] = 1496354603,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 3.90552091598511,
-					}, -- [2]
-				},
-				["lastVisitDate"] = "2017/06/02 00:03",
+				["lastUpdate"] = 1496832110,
+				["lastVisitDate"] = "2017/06/07 12:41",
 			},
 			["Default.Grim Batol.Krixidh"] = {
-				["lastUpdate"] = 1491106336,
-				["lastVisitDate"] = "2017/04/02 06:12",
+				["lastUpdate"] = 1496832931,
+				["lastVisitDate"] = "2017/06/07 12:55",
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1496650336,
+				["lastUpdate"] = 1496837720,
 				["Mails"] = {
 					{
-						["lastCheck"] = 1496650336,
+						["icon"] = 134327,
 						["sender"] = "Thaumaturge Vashreen",
 						["subject"] = "Lost Currency",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "We discovered some lost currency from The Stonecore in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 21.7141895294189,
+						["lastCheck"] = 1496837720,
+						["daysLeft"] = 19.5454044342041,
 					}, -- [1]
 				},
-				["lastVisitDate"] = "2017/06/05 10:12",
+				["lastVisitDate"] = "2017/06/07 14:15",
 			},
 			["Default.Twisting Nether.Krixiyo"] = {
 				["lastUpdate"] = 1482549431,
@@ -183,8 +161,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/12/27 01:59",
 			},
 			["Default.Grim Batol.Bawsie"] = {
-				["lastUpdate"] = 1491106220,
-				["lastVisitDate"] = "2017/04/02 06:10",
+				["lastUpdate"] = 1496833041,
+				["lastVisitDate"] = "2017/06/07 12:57",
 			},
 			["Default.Kazzak.Lilgaykrixi"] = {
 				["lastUpdate"] = 1456079516,
@@ -207,8 +185,20 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/11/16 13:04",
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1496671834,
-				["lastVisitDate"] = "2017/06/05 16:10",
+				["lastUpdate"] = 1496832634,
+				["Mails"] = {
+					{
+						["icon"] = 134327,
+						["sender"] = "Thaumaturge Vashreen",
+						["subject"] = "Lost Currency",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["lastCheck"] = 1496832634,
+						["daysLeft"] = 29.3661575317383,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2017/06/07 12:50",
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684636,
@@ -223,12 +213,12 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2017/06/02 12:29",
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496671800,
-				["lastVisitDate"] = "2017/06/05 16:10",
+				["lastUpdate"] = 1496835278,
+				["lastVisitDate"] = "2017/06/07 13:34",
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1496650273,
-				["lastVisitDate"] = "2017/06/05 10:11",
+				["lastUpdate"] = 1496832311,
+				["lastVisitDate"] = "2017/06/07 12:45",
 			},
 			["Default.Shattered Hand.Bawsi"] = {
 				["lastUpdate"] = 1423512002,
@@ -239,8 +229,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/12/05 11:45",
 			},
 			["Default.Grim Batol.Namji"] = {
-				["lastUpdate"] = 1491106299,
-				["lastVisitDate"] = "2017/04/02 06:11",
+				["lastUpdate"] = 1496832757,
+				["lastVisitDate"] = "2017/06/07 12:52",
 			},
 		},
 		["Options"] = {
@@ -262,10 +252,10 @@ DataStore_MailsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -276,7 +266,7 @@ DataStore_MailsDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

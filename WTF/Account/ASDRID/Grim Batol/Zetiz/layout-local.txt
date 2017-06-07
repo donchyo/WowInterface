@@ -1,4 +1,11 @@
 Version: 1
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -280
+Y: -116
+W: 444
+H: 444
 Frame: QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -20,13 +27,6 @@ X: -247
 Y: 0
 W: 365
 H: 200
-Frame: CharacterFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 448
-H: 444
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: TOPRIGHT

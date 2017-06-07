@@ -1,15 +1,5 @@
 
 OmniCC4Config = {
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
 	["version"] = "7.2.0",
 	["groupSettings"] = {
 		["base"] = {
@@ -87,5 +77,15 @@ OmniCC4Config = {
 				},
 			},
 		},
+	},
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
 	},
 }

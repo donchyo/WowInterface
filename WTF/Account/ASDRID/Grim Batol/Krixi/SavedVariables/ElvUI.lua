@@ -1,56 +1,6 @@
 
 ElvCharacterDB = {
-	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
-		["IsInValidZone"] = true,
-	},
 	["ChatLog"] = {
-		["1496748069.624"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:11546:Player-1303-05137AB0:1:6:6:17:4294967295:4294967295:4294967295:4294967295|h[Breaching the Tomb]|h|r!", -- [1]
-			"Vicsur", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vicsur", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			572, -- [11]
-			"Player-1303-05137AB0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_GUILD_ACHIEVEMENT", -- [20]
-		},
-		["1496747896.559"] = {
-			"I made a intrrpt - |cff71d5ff|Hspell:182739:0|h[Rancor]|h|r", -- [1]
-			"Krixi-GrimBatol", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Krixi", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			500, -- [11]
-			"Player-1303-03AF0575", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_SAY", -- [20]
-		},
 	},
 	["ChatEditHistory"] = {
 		"/iks", -- [1]
@@ -73,5 +23,11 @@ ElvCharacterDB = {
 		"/reload", -- [18]
 		"/ec", -- [19]
 		" letsgo", -- [20]
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }
