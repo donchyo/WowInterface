@@ -1,72 +1,6 @@
 
 ElvCharacterDB = {
 	["ChatLog"] = {
-		["1496834703.677"] = {
-			"are you doing another one?", -- [1]
-			"Nyrith-GrimBatol", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Nyrith", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			644, -- [11]
-			"Player-1303-04772A8A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_GUILD", -- [20]
-		},
-		["1496834712.542"] = {
-			"disco", -- [1]
-			"Jessnigri-GrimBatol", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Jessnigri", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			646, -- [11]
-			"Player-1303-0506D7E9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_GUILD", -- [20]
-		},
-		["1496834711.569"] = {
-			"yeah", -- [1]
-			"Jessnigri-GrimBatol", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Jessnigri", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			645, -- [11]
-			"Player-1303-0506D7E9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_GUILD", -- [20]
-		},
 	},
 	["ChatEditHistory"] = {
 		"/alto show", -- [1]
@@ -76,9 +10,9 @@ ElvCharacterDB = {
 		"/g are you doing another one?", -- [5]
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 }

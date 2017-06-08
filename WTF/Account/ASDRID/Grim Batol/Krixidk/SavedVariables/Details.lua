@@ -488,7 +488,7 @@ _detalhes_database = {
 								"Zerirok <Necromanus-Frostmane>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["damage_taken"] = 3638518.001484,
+							["last_dps"] = 915392.059012811,
 							["friendlyfire_total"] = 734076,
 							["raid_targets"] = {
 							},
@@ -497,7 +497,14 @@ _detalhes_database = {
 							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 102524826.001484,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+								["Necromanus-Frostmane"] = {
+									["total"] = 734076,
+									["spells"] = {
+										[1454] = 734076,
+									},
+								},
+							},
 							["fight_component"] = true,
 							["nome"] = "Necromanus-Frostmane",
 							["spells"] = {
@@ -830,17 +837,10 @@ _detalhes_database = {
 							["spec"] = 265,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-								["Necromanus-Frostmane"] = {
-									["total"] = 734076,
-									["spells"] = {
-										[1454] = 734076,
-									},
-								},
-							},
+							["on_hold"] = false,
 							["start_time"] = 1496746151,
 							["serial"] = "Player-1300-0903FC0C",
-							["last_dps"] = 915392.059012811,
+							["damage_taken"] = 3638518.001484,
 						}, -- [2]
 						{
 							["flag_original"] = 1300,
@@ -4006,21 +4006,21 @@ _detalhes_database = {
 							["isTank"] = true,
 							["serial"] = "Player-1303-042451A8",
 							["avoidance"] = {
-								["Si'vash"] = {
+								["[*] Tidal Wave"] = {
 									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 2297204,
+									["FULL_ABSORB_AMT"] = 0,
 									["BLOCKED_AMT"] = 0,
 									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 3,
-									["ALL"] = 24,
-									["PARTIAL_ABSORBED"] = 6,
-									["PARRY"] = 10,
-									["PARTIAL_ABSORB_AMT"] = 3165755,
-									["ABSORB"] = 9,
-									["ABSORB_AMT"] = 5462959,
-									["FULL_HIT"] = 15,
-									["HITS"] = 21,
-									["FULL_HIT_AMT"] = 10836482,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 5,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 5,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 3655002,
 								},
 								["Si'vashi Honor Guard"] = {
 									["DODGE"] = 0,
@@ -4038,6 +4038,22 @@ _detalhes_database = {
 									["HITS"] = 12,
 									["FULL_HIT_AMT"] = 1922760,
 								},
+								["Si'vash"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 2297204,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 3,
+									["ALL"] = 24,
+									["PARTIAL_ABSORBED"] = 6,
+									["PARRY"] = 10,
+									["PARTIAL_ABSORB_AMT"] = 3165755,
+									["ABSORB"] = 9,
+									["ABSORB_AMT"] = 5462959,
+									["FULL_HIT"] = 15,
+									["HITS"] = 21,
+									["FULL_HIT_AMT"] = 10836482,
+								},
 								["overall"] = {
 									["DODGE"] = 0,
 									["FULL_ABSORB_AMT"] = 3230248,
@@ -4053,22 +4069,6 @@ _detalhes_database = {
 									["FULL_HIT"] = 40,
 									["HITS"] = 33,
 									["FULL_HIT_AMT"] = 16414244,
-								},
-								["[*] Tidal Wave"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 0,
-									["ALL"] = 5,
-									["PARTIAL_ABSORBED"] = 0,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 0,
-									["ABSORB"] = 0,
-									["ABSORB_AMT"] = 0,
-									["FULL_HIT"] = 5,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 3655002,
 								},
 							},
 						}, -- [9]
@@ -9633,21 +9633,21 @@ _detalhes_database = {
 							["isTank"] = true,
 							["serial"] = "Player-1301-09055296",
 							["avoidance"] = {
-								["Si'vash"] = {
+								["[*] Tidal Wave"] = {
 									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 1213152,
+									["FULL_ABSORB_AMT"] = 0,
 									["BLOCKED_AMT"] = 0,
 									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 2,
-									["ALL"] = 16,
-									["PARTIAL_ABSORBED"] = 3,
-									["PARRY"] = 6,
-									["PARTIAL_ABSORB_AMT"] = 759747,
-									["ABSORB"] = 5,
-									["ABSORB_AMT"] = 1972899,
-									["FULL_HIT"] = 11,
-									["HITS"] = 10,
-									["FULL_HIT_AMT"] = 5826230,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 4,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 4,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 3122492,
 								},
 								["Si'vashi Honor Guard"] = {
 									["DODGE"] = 0,
@@ -9665,6 +9665,22 @@ _detalhes_database = {
 									["HITS"] = 5,
 									["FULL_HIT_AMT"] = 691891,
 								},
+								["Si'vash"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 1213152,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 2,
+									["ALL"] = 16,
+									["PARTIAL_ABSORBED"] = 3,
+									["PARRY"] = 6,
+									["PARTIAL_ABSORB_AMT"] = 759747,
+									["ABSORB"] = 5,
+									["ABSORB_AMT"] = 1972899,
+									["FULL_HIT"] = 11,
+									["HITS"] = 10,
+									["FULL_HIT_AMT"] = 5826230,
+								},
 								["overall"] = {
 									["DODGE"] = 0,
 									["FULL_ABSORB_AMT"] = 1683084,
@@ -9680,22 +9696,6 @@ _detalhes_database = {
 									["FULL_HIT"] = 22,
 									["HITS"] = 15,
 									["FULL_HIT_AMT"] = 9640613,
-								},
-								["[*] Tidal Wave"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 0,
-									["ALL"] = 4,
-									["PARTIAL_ABSORBED"] = 0,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 0,
-									["ABSORB"] = 0,
-									["ABSORB_AMT"] = 0,
-									["FULL_HIT"] = 4,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 3122492,
 								},
 							},
 						}, -- [21]
@@ -11013,9 +11013,9 @@ _detalhes_database = {
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 157231.006629,
 							["damage_from"] = {
+								["Si'vash"] = true,
 								["[*] Tidal Wave"] = true,
 								["Jinksi-Vek'nilash"] = true,
-								["Si'vash"] = true,
 							},
 							["targets"] = {
 								["Si'vash"] = 28123959,
@@ -11023,17 +11023,6 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["spec"] = 260,
-							["classe"] = "ROGUE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 28614935.006629,
-							["last_dps"] = 273615.473976441,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 28614935.006629,
-							["friendlyfire_total"] = 471693,
 							["friendlyfire"] = {
 								["Jinksi-Vek'nilash"] = {
 									["total"] = 471693,
@@ -11042,6 +11031,17 @@ _detalhes_database = {
 									},
 								},
 							},
+							["spec"] = 260,
+							["classe"] = "ROGUE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 28614935.006629,
+							["damage_taken"] = 4723227.006629,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 28614935.006629,
+							["friendlyfire_total"] = 471693,
+							["on_hold"] = false,
 							["nome"] = "Jinksi-Vek'nilash",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -11376,7 +11376,7 @@ _detalhes_database = {
 							["last_event"] = 1496746256,
 							["colocacao"] = 23,
 							["tipo"] = 1,
-							["damage_taken"] = 4723227.006629,
+							["last_dps"] = 273615.473976441,
 							["start_time"] = 1496746152,
 							["serial"] = "Player-1416-06372D5C",
 							["custom"] = 0,
@@ -12137,34 +12137,35 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-									[196608] = {
-										["c_amt"] = 10,
+									[116095] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 188736,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 10167,
+										["n_max"] = 0,
 										["targets"] = {
-											["Si'vash"] = 493722,
+											["Si'vash"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 304986,
-										["n_min"] = 10166,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 40,
-										["total"] = 493722,
-										["c_max"] = 20333,
-										["id"] = 196608,
-										["r_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
 										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["id"] = 116095,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 5744,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 30,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["IMMUNE"] = 1,
 									},
 									[107270] = {
 										["c_amt"] = 0,
@@ -12196,35 +12197,34 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-									[116095] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
+									[100780] = {
+										["c_amt"] = 4,
+										["b_amt"] = 1,
+										["c_dmg"] = 185939,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 34373,
 										["targets"] = {
-											["Si'vash"] = 0,
+											["Si'vash"] = 490720,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 304781,
+										["n_min"] = 12448,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 116095,
+										["counter"] = 14,
+										["total"] = 490720,
+										["c_max"] = 68746,
+										["id"] = 100780,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 30936,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["b_dmg"] = 24061,
+										["n_amt"] = 10,
+										["a_dmg"] = 0,
 										["spellschool"] = 1,
-										["IMMUNE"] = 1,
 									},
 									[185099] = {
 										["c_amt"] = 0,
@@ -12315,34 +12315,34 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-									[100780] = {
-										["c_amt"] = 4,
-										["b_amt"] = 1,
-										["c_dmg"] = 185939,
+									[196608] = {
+										["c_amt"] = 10,
+										["b_amt"] = 0,
+										["c_dmg"] = 188736,
 										["g_amt"] = 0,
-										["n_max"] = 34373,
+										["n_max"] = 10167,
 										["targets"] = {
-											["Si'vash"] = 490720,
+											["Si'vash"] = 493722,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 304781,
-										["n_min"] = 12448,
+										["n_dmg"] = 304986,
+										["n_min"] = 10166,
 										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 490720,
-										["c_max"] = 68746,
-										["id"] = 100780,
+										["counter"] = 40,
+										["total"] = 493722,
+										["c_max"] = 20333,
+										["id"] = 196608,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 30936,
+										["c_min"] = 5744,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 24061,
-										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["n_amt"] = 30,
 										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 8,
 									},
 									[119381] = {
 										["c_amt"] = 0,
@@ -12762,21 +12762,21 @@ _detalhes_database = {
 							["isTank"] = true,
 							["serial"] = "Player-3391-07D062F2",
 							["avoidance"] = {
-								["overall"] = {
+								["Si'vash"] = {
 									["DODGE"] = 0,
 									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 98867,
-									["BLOCKED_HITS"] = 3,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
 									["FULL_ABSORBED"] = 0,
-									["ALL"] = 29,
+									["ALL"] = 4,
 									["PARTIAL_ABSORBED"] = 0,
-									["PARRY"] = 1,
+									["PARRY"] = 0,
 									["PARTIAL_ABSORB_AMT"] = 0,
 									["ABSORB"] = 0,
 									["ABSORB_AMT"] = 0,
-									["FULL_HIT"] = 29,
-									["HITS"] = 8,
-									["FULL_HIT_AMT"] = 7751536,
+									["FULL_HIT"] = 4,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 1426394,
 								},
 								["Si'vashi Honor Guard"] = {
 									["DODGE"] = 0,
@@ -12794,6 +12794,22 @@ _detalhes_database = {
 									["HITS"] = 8,
 									["FULL_HIT_AMT"] = 1772924,
 								},
+								["overall"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 98867,
+									["BLOCKED_HITS"] = 3,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 29,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 1,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 29,
+									["HITS"] = 8,
+									["FULL_HIT_AMT"] = 7751536,
+								},
 								["[*] Tidal Wave"] = {
 									["DODGE"] = 0,
 									["FULL_ABSORB_AMT"] = 0,
@@ -12809,22 +12825,6 @@ _detalhes_database = {
 									["FULL_HIT"] = 5,
 									["HITS"] = 0,
 									["FULL_HIT_AMT"] = 4552218,
-								},
-								["Si'vash"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 0,
-									["ALL"] = 4,
-									["PARTIAL_ABSORBED"] = 0,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 0,
-									["ABSORB"] = 0,
-									["ABSORB_AMT"] = 0,
-									["FULL_HIT"] = 4,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 1426394,
 								},
 							},
 						}, -- [29]
@@ -12849,32 +12849,32 @@ _detalhes_database = {
 							},
 							["spells"] = {
 								["_ActorTable"] = {
-									[233490] = {
-										["c_amt"] = 3,
+									[218615] = {
+										["c_amt"] = 5,
 										["b_amt"] = 0,
-										["c_dmg"] = 628414,
+										["c_dmg"] = 638002,
 										["g_amt"] = 0,
-										["n_max"] = 114295,
+										["n_max"] = 66772,
 										["targets"] = {
-											["Si'vash"] = 1907581,
+											["Si'vash"] = 936175,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1279167,
-										["n_min"] = 95214,
+										["n_dmg"] = 298173,
+										["n_min"] = 57850,
 										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 1907581,
-										["c_max"] = 209472,
-										["id"] = 233490,
+										["counter"] = 10,
+										["total"] = 936175,
+										["c_max"] = 136527,
+										["id"] = 218615,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 209471,
+										["c_min"] = 115701,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 13,
+										["n_amt"] = 5,
 										["a_dmg"] = 0,
 										["spellschool"] = 32,
 									},
@@ -12937,32 +12937,32 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 36,
 									},
-									[146739] = {
-										["c_amt"] = 10,
+									[233490] = {
+										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 947578,
+										["c_dmg"] = 628414,
 										["g_amt"] = 0,
-										["n_max"] = 54513,
+										["n_max"] = 114295,
 										["targets"] = {
-											["Si'vash"] = 3148791,
+											["Si'vash"] = 1907581,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 2201213,
-										["n_min"] = 11045,
+										["n_dmg"] = 1279167,
+										["n_min"] = 95214,
 										["g_dmg"] = 0,
-										["counter"] = 65,
-										["total"] = 3148791,
-										["c_max"] = 110874,
-										["id"] = 146739,
+										["counter"] = 16,
+										["total"] = 1907581,
+										["c_max"] = 209472,
+										["id"] = 233490,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 77380,
+										["c_min"] = 209471,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 55,
+										["n_amt"] = 13,
 										["a_dmg"] = 0,
 										["spellschool"] = 32,
 									},
@@ -13055,32 +13055,32 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 32,
 									},
-									[218615] = {
-										["c_amt"] = 5,
+									[146739] = {
+										["c_amt"] = 10,
 										["b_amt"] = 0,
-										["c_dmg"] = 638002,
+										["c_dmg"] = 947578,
 										["g_amt"] = 0,
-										["n_max"] = 66772,
+										["n_max"] = 54513,
 										["targets"] = {
-											["Si'vash"] = 936175,
+											["Si'vash"] = 3148791,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 298173,
-										["n_min"] = 57850,
+										["n_dmg"] = 2201213,
+										["n_min"] = 11045,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 936175,
-										["c_max"] = 136527,
-										["id"] = 218615,
+										["counter"] = 65,
+										["total"] = 3148791,
+										["c_max"] = 110874,
+										["id"] = 146739,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 115701,
+										["c_min"] = 77380,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 55,
 										["a_dmg"] = 0,
 										["spellschool"] = 32,
 									},
@@ -13092,9 +13092,6 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 14459650.008248,
-							["on_hold"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1496746260,
 							["friendlyfire"] = {
 								["Paulie-SteamwheedleCartel"] = {
 									["total"] = 268242,
@@ -13103,6 +13100,9 @@ _detalhes_database = {
 									},
 								},
 							},
+							["fight_component"] = true,
+							["end_time"] = 1496746260,
+							["damage_taken"] = 8673266.008248,
 							["tipo"] = 1,
 							["nome"] = "Paulie-SteamwheedleCartel",
 							["spec"] = 265,
@@ -13111,7 +13111,7 @@ _detalhes_database = {
 							["total"] = 19742072.008248,
 							["custom"] = 0,
 							["last_event"] = 1496746257,
-							["damage_taken"] = 8673266.008248,
+							["on_hold"] = false,
 							["start_time"] = 1496746153,
 							["serial"] = "Player-1085-068546C0",
 							["dps_started"] = false,
@@ -13520,17 +13520,10 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 14421905.00688,
-							["friendlyfire"] = {
-								["Velour-DunModr"] = {
-									["total"] = 199104,
-									["spells"] = {
-										[1454] = 199104,
-									},
-								},
-							},
+							["on_hold"] = false,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["on_hold"] = false,
+							["damage_taken"] = 5610384.00688,
 							["tipo"] = 1,
 							["nome"] = "Velour-DunModr",
 							["spec"] = 265,
@@ -13539,7 +13532,14 @@ _detalhes_database = {
 							["total"] = 18307568.00688,
 							["custom"] = 0,
 							["last_event"] = 1496746257,
-							["damage_taken"] = 5610384.00688,
+							["friendlyfire"] = {
+								["Velour-DunModr"] = {
+									["total"] = 199104,
+									["spells"] = {
+										[1454] = 199104,
+									},
+								},
+							},
 							["start_time"] = 1496746153,
 							["serial"] = "Player-1378-08AB8037",
 							["dps_started"] = false,
@@ -14464,18 +14464,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["start_time"] = 1496746257,
-							["last_dps"] = 0,
+							["damage_taken"] = 4392771.006915,
 							["classe"] = "MONK",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 547545.006915,
-							["damage_taken"] = 4392771.006915,
+							["friendlyfire"] = {
+							},
 							["delay"] = 1496746236,
 							["dps_started"] = false,
 							["total"] = 547545.006915,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
 							["nome"] = "Taube-Frostmane",
 							["spec"] = 270,
 							["grupo"] = true,
@@ -14518,6 +14518,22 @@ _detalhes_database = {
 							["custom"] = 0,
 							["tipo"] = 1,
 							["avoidance"] = {
+								["Si'vash"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 6,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 6,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 2463372,
+								},
 								["[*] Tidal Wave"] = {
 									["DODGE"] = 0,
 									["FULL_ABSORB_AMT"] = 0,
@@ -14549,22 +14565,6 @@ _detalhes_database = {
 									["FULL_HIT"] = 8,
 									["HITS"] = 0,
 									["FULL_HIT_AMT"] = 4392771,
-								},
-								["Si'vash"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 0,
-									["ALL"] = 6,
-									["PARTIAL_ABSORBED"] = 0,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 0,
-									["ABSORB"] = 0,
-									["ABSORB_AMT"] = 0,
-									["FULL_HIT"] = 6,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 2463372,
 								},
 							},
 							["isTank"] = true,
@@ -14654,35 +14654,34 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-									[53148] = {
+									[197163] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 338883,
 										["targets"] = {
-											["Si'vash"] = 0,
+											["Si'vash"] = 1584506,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 1584506,
+										["n_min"] = 169441,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
+										["counter"] = 6,
+										["total"] = 1584506,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 53148,
+										["id"] = 197163,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
 										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["IMMUNE"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[17253] = {
 										["c_amt"] = 10,
@@ -14713,6 +14712,36 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
+									[53148] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Si'vash"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 53148,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["IMMUNE"] = 1,
+									},
 									[63900] = {
 										["c_amt"] = 10,
 										["b_amt"] = 0,
@@ -14740,35 +14769,6 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 12,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									[197163] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 338883,
-										["targets"] = {
-											["Si'vash"] = 1584506,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1584506,
-										["n_min"] = 169441,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 1584506,
-										["c_max"] = 0,
-										["id"] = 197163,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
 										["a_dmg"] = 0,
 										["spellschool"] = 8,
 									},
@@ -17634,14 +17634,14 @@ _detalhes_database = {
 											["Sparky <Trillianne-Lightbringer>"] = 227417,
 											["Hati <Trillianne-Lightbringer>"] = 68396,
 											["Jinksi-Vek'nilash"] = 152885,
-											["Hati <Weihmann-ArgentDawn>"] = 61882,
+											["Crab <Weihmann-ArgentDawn>"] = 81221,
 											["Anoi-Darkspear"] = 68396,
 											["Brittle Guardian"] = 141732,
-											["Crab <Weihmann-ArgentDawn>"] = 81221,
+											["Дементорр-ВечнаяПесня"] = 68396,
 											["Beast <Weihmann-ArgentDawn>"] = 216588,
 											["Junebug-Outland"] = 64976,
 											["Bloodcutter-Outland"] = 136793,
-											["Дементорр-ВечнаяПесня"] = 68396,
+											["Hati <Weihmann-ArgentDawn>"] = 61882,
 											["Дифюзалблейд-Голдринн"] = 72196,
 											["Zangtaz <Paulie-SteamwheedleCartel>"] = 152885,
 											["Zoremet-Ravencrest"] = 118138,
@@ -17753,10 +17753,10 @@ _detalhes_database = {
 											["Lupiness-Silvermoon"] = 105012,
 											["Tzuu-DefiasBrotherhood"] = 315037,
 											["Junebug-Outland"] = 105012,
-											["Zhadum-Silvermoon"] = 315037,
-											["Taube-Frostmane"] = 105013,
 											["Ozai-Outland"] = 105013,
+											["Taube-Frostmane"] = 105013,
 											["Paulie-SteamwheedleCartel"] = 105012,
+											["Zhadum-Silvermoon"] = 315037,
 											["Zoremet-Ravencrest"] = 105012,
 											["Ðahniel-Doomhammer"] = 105012,
 											["Alberich-Frostmane"] = 210024,
@@ -17826,10 +17826,10 @@ _detalhes_database = {
 											["Water Elemental <Minusfifty-Silvermoon>"] = 0,
 											["Lupiness-Silvermoon"] = 378044,
 											["Xuen <Anoi-Darkspear>"] = 0,
-											["Krixidk"] = 378044,
-											["Strijder-ArgentDawn"] = 32708,
 											["Raeyven-TheMaelstrom"] = 378044,
+											["Strijder-ArgentDawn"] = 32708,
 											["Bloodcutter-Outland"] = 613981,
+											["Krixidk"] = 378044,
 											["Дементорр-ВечнаяПесня"] = 378044,
 											["Доброделец-ЧерныйШрам"] = 378044,
 											["Pixelina-Magtheridon"] = 0,
@@ -17945,13 +17945,13 @@ _detalhes_database = {
 											["Hagren-Ravencrest"] = 34765,
 											["Polpé-Silvermoon"] = 315037,
 											["Letueurre-Chantséternels"] = 472555,
-											["Paulie-SteamwheedleCartel"] = 84481,
+											["Zhadum-Silvermoon"] = 313863,
 											["Strijder-ArgentDawn"] = 157519,
 											["Duskz-Ravencrest"] = 315037,
 											["Bloodcutter-Outland"] = 0,
 											["Дементорр-ВечнаяПесня"] = 244716,
-											["Zhadum-Silvermoon"] = 313863,
 											["Anoi-Darkspear"] = 157518,
+											["Paulie-SteamwheedleCartel"] = 84481,
 											["Pixelina-Magtheridon"] = 0,
 											["Taube-Frostmane"] = 157519,
 											["Alberich-Frostmane"] = 157519,
@@ -18053,16 +18053,16 @@ _detalhes_database = {
 											["Taube-Frostmane"] = 0,
 											["Minusfifty-Silvermoon"] = 0,
 											["Alberich-Frostmane"] = 0,
-											["Elmena-Ragnaros"] = 0,
+											["Koryô-Ghostlands"] = 0,
 											["Owein"] = 0,
 											["Duskz-Ravencrest"] = 0,
-											["Velour-DunModr"] = 71414,
+											["Elmena-Ragnaros"] = 0,
 											["Letueurre-Chantséternels"] = 0,
 											["Necromanus-Frostmane"] = 148943,
 											["Jinksi-Vek'nilash"] = 95217,
 											["Tzuu-DefiasBrotherhood"] = 0,
 											["Junebug-Outland"] = 119022,
-											["Koryô-Ghostlands"] = 0,
+											["Velour-DunModr"] = 71414,
 											["Crab <Weihmann-ArgentDawn>"] = 0,
 											["Krixidk"] = 178535,
 											["Zangtaz <Paulie-SteamwheedleCartel>"] = 0,
@@ -18188,8 +18188,8 @@ _detalhes_database = {
 								["Xuen <Anoi-Darkspear>"] = 520870,
 								["Crab <Weihmann-ArgentDawn>"] = 1217476,
 								["Strijder-ArgentDawn"] = 835762,
+								["Raeyven-TheMaelstrom"] = 348651,
 								["Krixidk"] = 345499,
-								["Bloodcutter-Outland"] = 3312539,
 								["Дементорр-ВечнаяПесня"] = 1566158,
 								["Duskz-Ravencrest"] = 1809911,
 								["Frowsty-Aggra(Português)"] = 918375,
@@ -18199,13 +18199,13 @@ _detalhes_database = {
 								["Necromanus-Frostmane"] = 987775,
 								["Owein"] = 494620,
 								["Yeppie-Ravenholdt"] = 570130,
-								["Koryô-Ghostlands"] = 450108,
 								["Elmena-Ragnaros"] = 390666,
-								["Letueurre-Chantséternels"] = 1345924,
 								["Velour-DunModr"] = 189027,
+								["Letueurre-Chantséternels"] = 1345924,
+								["Koryô-Ghostlands"] = 450108,
 								["Tzuu-DefiasBrotherhood"] = 329759,
 								["Junebug-Outland"] = 206394,
-								["Raeyven-TheMaelstrom"] = 348651,
+								["Bloodcutter-Outland"] = 3312539,
 								["Weihmann-ArgentDawn"] = 121547,
 								["Water Elemental <Yeppie-Ravenholdt>"] = 1041742,
 								["Zangtaz <Paulie-SteamwheedleCartel>"] = 1194627,
@@ -18496,8 +18496,8 @@ _detalhes_database = {
 											["Селенна-Гордунни"] = 0,
 											["Lupiness-Silvermoon"] = 68928,
 											["Strijder-ArgentDawn"] = 0,
+											["Bloodcutter-Outland"] = 0,
 											["Raeyven-TheMaelstrom"] = 0,
-											["Krixidk"] = 71962,
 											["Дементорр-ВечнаяПесня"] = 0,
 											["Jinksi-Vek'nilash"] = 0,
 											["Ozai-Outland"] = 0,
@@ -18519,7 +18519,7 @@ _detalhes_database = {
 											["Zangtaz <Paulie-SteamwheedleCartel>"] = 0,
 											["Zoremet-Ravencrest"] = 0,
 											["Монтароник-Голдринн"] = 0,
-											["Bloodcutter-Outland"] = 0,
+											["Krixidk"] = 71962,
 										},
 										["n_min"] = 0,
 										["counter"] = 48,
@@ -18657,13 +18657,13 @@ _detalhes_database = {
 											["Koryô-Ghostlands"] = 0,
 											["Velour-DunModr"] = 0,
 											["Ðahniel-Doomhammer"] = 0,
-											["Ozai-Outland"] = 0,
+											["Zhadum-Silvermoon"] = 113172,
 											["Strijder-ArgentDawn"] = 113172,
 											["Junebug-Outland"] = 0,
 											["Krixidk"] = 113172,
-											["Zhadum-Silvermoon"] = 113172,
-											["Raeyven-TheMaelstrom"] = 0,
 											["Anoi-Darkspear"] = 113172,
+											["Raeyven-TheMaelstrom"] = 0,
+											["Ozai-Outland"] = 0,
 											["Zoremet-Ravencrest"] = 0,
 											["Jinksi-Vek'nilash"] = 113173,
 											["Alberich-Frostmane"] = 0,
@@ -18876,15 +18876,15 @@ _detalhes_database = {
 										["targets"] = {
 											["Hagren-Ravencrest"] = 71004,
 											["Letueurre-Chantséternels"] = 404071,
-											["Bloodcutter-Outland"] = 0,
+											["Raeyven-TheMaelstrom"] = 202036,
 											["Junebug-Outland"] = 87563,
-											["Krixidk"] = 0,
+											["Bloodcutter-Outland"] = 0,
 											["Weihmann-ArgentDawn"] = 4373,
 											["Zhadum-Silvermoon"] = 404072,
 											["Paulie-SteamwheedleCartel"] = 202035,
 											["Duskz-Ravencrest"] = 727328,
 											["Jinksi-Vek'nilash"] = 0,
-											["Raeyven-TheMaelstrom"] = 202036,
+											["Krixidk"] = 0,
 										},
 										["n_min"] = 0,
 										["counter"] = 15,
@@ -19203,16 +19203,16 @@ _detalhes_database = {
 								["Дементорр-ВечнаяПесня"] = 964783,
 								["Bloodcutter-Outland"] = 1459440,
 								["Ozai-Outland"] = 324681,
-								["Koryô-Ghostlands"] = 1010812,
+								["Elmena-Ragnaros"] = 39611,
 								["Minusfifty-Silvermoon"] = 233418,
 								["Alberich-Frostmane"] = 1529935,
 								["Void Tendril <Blåskin-Trollbane>"] = 50929,
 								["Owein"] = 502679,
 								["Necromanus-Frostmane"] = 233417,
-								["Velour-DunModr"] = 488830,
+								["Koryô-Ghostlands"] = 1010812,
 								["Beast <Trillianne-Lightbringer>"] = 521022,
 								["Letueurre-Chantséternels"] = 248638,
-								["Elmena-Ragnaros"] = 39611,
+								["Velour-DunModr"] = 488830,
 								["Tzuu-DefiasBrotherhood"] = 1589087,
 								["Junebug-Outland"] = 857864,
 								["Krixidk"] = 1434787,
@@ -19260,14 +19260,14 @@ _detalhes_database = {
 								["Water Elemental <Minusfifty-Silvermoon>"] = 114138,
 								["Lupiness-Silvermoon"] = 123602,
 								["Talismano-Pozzodell'Eternità"] = 46501,
-								["Bloodcutter-Outland"] = 1434561,
+								["Anoi-Darkspear"] = 1181969,
 								["Strijder-ArgentDawn"] = 997576,
-								["Taube-Frostmane"] = 1380492,
 								["Krixidk"] = 833885,
+								["Bloodcutter-Outland"] = 1434561,
 								["Дементорр-ВечнаяПесня"] = 731847,
 								["Weihmann-ArgentDawn"] = 752992,
 								["Ozai-Outland"] = 174550,
-								["Anoi-Darkspear"] = 1181969,
+								["Taube-Frostmane"] = 1380492,
 								["Minusfifty-Silvermoon"] = 1141413,
 								["Alberich-Frostmane"] = 882862,
 								["Junebug-Outland"] = 217627,
@@ -19379,14 +19379,14 @@ _detalhes_database = {
 											["Water Elemental <Minusfifty-Silvermoon>"] = 31100,
 											["Lupiness-Silvermoon"] = 27114,
 											["Talismano-Pozzodell'Eternità"] = 12670,
-											["Krixidk"] = 241313,
+											["Frowsty-Aggra(Português)"] = 72963,
 											["Strijder-ArgentDawn"] = 183669,
-											["Minusfifty-Silvermoon"] = 364233,
 											["Bloodcutter-Outland"] = 339880,
+											["Krixidk"] = 241313,
 											["Дементорр-ВечнаяПесня"] = 188929,
 											["Weihmann-ArgentDawn"] = 272445,
 											["Ozai-Outland"] = 36827,
-											["Frowsty-Aggra(Português)"] = 72963,
+											["Minusfifty-Silvermoon"] = 364233,
 											["Taube-Frostmane"] = 171176,
 											["Alberich-Frostmane"] = 303432,
 											["Junebug-Outland"] = 187180,
@@ -19434,8 +19434,8 @@ _detalhes_database = {
 											["Anoi-Darkspear"] = 91024,
 											["Sparky <Trillianne-Lightbringer>"] = 0,
 											["Strijder-ArgentDawn"] = 108260,
+											["Bloodcutter-Outland"] = 230104,
 											["Krixidk"] = 74337,
-											["Raeyven-TheMaelstrom"] = 67275,
 											["Дементорр-ВечнаяПесня"] = 51582,
 											["Weihmann-ArgentDawn"] = 41156,
 											["Ozai-Outland"] = 25791,
@@ -19453,7 +19453,7 @@ _detalhes_database = {
 											["Junebug-Outland"] = 27774,
 											["Taube-Frostmane"] = 315786,
 											["Crab <Weihmann-ArgentDawn>"] = 0,
-											["Bloodcutter-Outland"] = 230104,
+											["Raeyven-TheMaelstrom"] = 67275,
 											["Zangtaz <Paulie-SteamwheedleCartel>"] = 0,
 											["Blåskin-Trollbane"] = 11903,
 											["Zerirok <Necromanus-Frostmane>"] = 0,
@@ -19779,15 +19779,15 @@ _detalhes_database = {
 											["Sparky <Trillianne-Lightbringer>"] = 69951,
 											["Owein"] = 127128,
 											["Polpé-Silvermoon"] = 1876,
-											["Minusfifty-Silvermoon"] = 63564,
-											["Strijder-ArgentDawn"] = 127128,
 											["Ðahniel-Doomhammer"] = 63564,
+											["Strijder-ArgentDawn"] = 127128,
+											["Jinksi-Vek'nilash"] = 63564,
 											["Bloodcutter-Outland"] = 63564,
 											["Blåskin-Trollbane"] = 63564,
 											["Raeyven-TheMaelstrom"] = 127129,
 											["Paulie-SteamwheedleCartel"] = 127129,
 											["Khovrath <Velour-DunModr>"] = 19192,
-											["Jinksi-Vek'nilash"] = 63564,
+											["Minusfifty-Silvermoon"] = 63564,
 											["Alberich-Frostmane"] = 127129,
 										},
 										["n_min"] = 1876,
@@ -19996,12 +19996,12 @@ _detalhes_database = {
 								["Xuen <Anoi-Darkspear>"] = 415231,
 								["Sparky <Trillianne-Lightbringer>"] = 631821,
 								["Strijder-ArgentDawn"] = 415234,
-								["Velour-DunModr"] = 73301,
 								["Bloodcutter-Outland"] = 1455378,
+								["Krixidk"] = 144668,
 								["Дементорр-ВечнаяПесня"] = 382120,
 								["Crab <Weihmann-ArgentDawn>"] = 830465,
 								["Ozai-Outland"] = 21387,
-								["Krixidk"] = 144668,
+								["Velour-DunModr"] = 73301,
 								["Minusfifty-Silvermoon"] = 500033,
 								["Alberich-Frostmane"] = 415232,
 								["Duskz-Ravencrest"] = 277401,
@@ -20064,10 +20064,10 @@ _detalhes_database = {
 								["Minusfifty-Silvermoon"] = 206001,
 								["Taube-Frostmane"] = 1530229,
 								["Alberich-Frostmane"] = 238837,
-								["Velour-DunModr"] = 691914,
-								["Owein"] = 290867,
 								["Bloodcutter-Outland"] = 772052,
-								["Elmena-Ragnaros"] = 305280,
+								["Owein"] = 290867,
+								["Koryô-Ghostlands"] = 443486,
+								["Velour-DunModr"] = 691914,
 								["Necromanus-Frostmane"] = 169910,
 								["Letueurre-Chantséternels"] = 1773905,
 								["Duskz-Ravencrest"] = 674664,
@@ -20075,7 +20075,7 @@ _detalhes_database = {
 								["Junebug-Outland"] = 802021,
 								["Raeyven-TheMaelstrom"] = 305280,
 								["Weihmann-ArgentDawn"] = 1634806,
-								["Koryô-Ghostlands"] = 443486,
+								["Elmena-Ragnaros"] = 305280,
 								["Yeppie-Ravenholdt"] = 195947,
 								["Blåskin-Trollbane"] = 550080,
 								["Paulie-SteamwheedleCartel"] = 614331,
@@ -20328,9 +20328,9 @@ _detalhes_database = {
 											["Bloodcutter-Outland"] = 0,
 											["Raeyven-TheMaelstrom"] = 272045,
 											["Sparky <Trillianne-Lightbringer>"] = 0,
-											["Velour-DunModr"] = 305280,
-											["Crab <Weihmann-ArgentDawn>"] = 0,
 											["Taube-Frostmane"] = 189793,
+											["Crab <Weihmann-ArgentDawn>"] = 0,
+											["Velour-DunModr"] = 305280,
 											["Minusfifty-Silvermoon"] = 0,
 											["Alberich-Frostmane"] = 0,
 											["Junebug-Outland"] = 305280,
@@ -20414,12 +20414,12 @@ _detalhes_database = {
 											["Lupiness-Silvermoon"] = 122235,
 											["Letueurre-Chantséternels"] = 366706,
 											["Дементорр-ВечнаяПесня"] = 0,
-											["Anoi-Darkspear"] = 244471,
+											["Paulie-SteamwheedleCartel"] = 122235,
 											["Junebug-Outland"] = 122235,
 											["Bloodcutter-Outland"] = 244470,
 											["Weihmann-ArgentDawn"] = 366707,
-											["Paulie-SteamwheedleCartel"] = 122235,
 											["Zhadum-Silvermoon"] = 0,
+											["Anoi-Darkspear"] = 244471,
 											["Zoremet-Ravencrest"] = 122236,
 											["Taube-Frostmane"] = 366706,
 											["Alberich-Frostmane"] = 122236,
@@ -20459,11 +20459,11 @@ _detalhes_database = {
 											["Velour-DunModr"] = 116601,
 											["Lupiness-Silvermoon"] = 116601,
 											["Letueurre-Chantséternels"] = 233204,
-											["Anoi-Darkspear"] = 233203,
+											["Paulie-SteamwheedleCartel"] = 0,
 											["Bloodcutter-Outland"] = 233202,
 											["Дементорр-ВечнаяПесня"] = 0,
-											["Paulie-SteamwheedleCartel"] = 0,
 											["Zhadum-Silvermoon"] = 0,
+											["Anoi-Darkspear"] = 233203,
 											["Weihmann-ArgentDawn"] = 116601,
 											["Taube-Frostmane"] = 116601,
 											["Alberich-Frostmane"] = 116601,
@@ -20556,9 +20556,9 @@ _detalhes_database = {
 											["Bloodcutter-Outland"] = 0,
 											["Raeyven-TheMaelstrom"] = 0,
 											["Khovrath <Velour-DunModr>"] = 0,
-											["Elmena-Ragnaros"] = 0,
-											["Weihmann-ArgentDawn"] = 91628,
 											["Minusfifty-Silvermoon"] = 0,
+											["Weihmann-ArgentDawn"] = 91628,
+											["Elmena-Ragnaros"] = 0,
 											["Taube-Frostmane"] = 0,
 											["Alberich-Frostmane"] = 0,
 											["Junebug-Outland"] = 73301,
@@ -21096,10 +21096,10 @@ _detalhes_database = {
 								["Bloodcutter-Outland"] = 343659,
 								["Minusfifty-Silvermoon"] = 165416,
 								["Alberich-Frostmane"] = 14671,
-								["Elmena-Ragnaros"] = 148929,
-								["Velour-DunModr"] = 96704,
-								["Weihmann-ArgentDawn"] = 32921,
 								["Koryô-Ghostlands"] = 455391,
+								["Elmena-Ragnaros"] = 148929,
+								["Weihmann-ArgentDawn"] = 32921,
+								["Velour-DunModr"] = 96704,
 								["Letueurre-Chantséternels"] = 29349,
 								["Necromanus-Frostmane"] = 221293,
 								["Duskz-Ravencrest"] = 612280,
@@ -21216,9 +21216,9 @@ _detalhes_database = {
 											["Minusfifty-Silvermoon"] = 148530,
 											["Alberich-Frostmane"] = 14671,
 											["Raeyven-TheMaelstrom"] = 417971,
-											["Velour-DunModr"] = 96704,
+											["Elmena-Ragnaros"] = 144823,
 											["Weihmann-ArgentDawn"] = 32921,
-											["Koryô-Ghostlands"] = 455391,
+											["Velour-DunModr"] = 96704,
 											["Letueurre-Chantséternels"] = 29349,
 											["Necromanus-Frostmane"] = 218215,
 											["Duskz-Ravencrest"] = 611463,
@@ -21226,7 +21226,7 @@ _detalhes_database = {
 											["Junebug-Outland"] = 220399,
 											["Krixidk"] = 510281,
 											["Crab <Weihmann-ArgentDawn>"] = 3419,
-											["Elmena-Ragnaros"] = 144823,
+											["Koryô-Ghostlands"] = 455391,
 											["Монтароник-Голдринн"] = 92904,
 											["Blåskin-Trollbane"] = 131967,
 											["Доброделец-ЧерныйШрам"] = 52574,
@@ -21759,10 +21759,10 @@ _detalhes_database = {
 								["T'uure <Pixelina-Magtheridon>"] = true,
 								["Letueurre-Chantséternels"] = true,
 								["Zoremet-Ravencrest"] = true,
-								["Zhadum-Silvermoon"] = true,
-								["Pixelina-Magtheridon"] = true,
 								["Chi-Ji <Taube-Frostmane>"] = true,
+								["Pixelina-Magtheridon"] = true,
 								["Paulie-SteamwheedleCartel"] = true,
+								["Zhadum-Silvermoon"] = true,
 								["Blåskin-Trollbane"] = true,
 								["Taube-Frostmane"] = true,
 								["Chi-Ji <Zoremet-Ravencrest>"] = true,
@@ -22252,16 +22252,16 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-								["Velour-DunModr"] = 1819242,
-							},
+							["last_event"] = 1496746257,
 							["classe"] = "WARLOCK",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.002992,
 							["start_time"] = 1496746158,
 							["delay"] = 0,
-							["last_event"] = 1496746257,
+							["targets_absorbs"] = {
+								["Velour-DunModr"] = 1819242,
+							},
 						}, -- [11]
 						{
 							["flag_original"] = 1300,
@@ -22575,10 +22575,10 @@ _detalhes_database = {
 											["Koryô-Ghostlands"] = 42223,
 											["Strijder-ArgentDawn"] = 46246,
 											["Zhadum-Silvermoon"] = 48256,
-											["Raeyven-TheMaelstrom"] = 42224,
-											["Tzuu-DefiasBrotherhood"] = 48255,
 											["Krixidk"] = 96510,
+											["Tzuu-DefiasBrotherhood"] = 48255,
 											["Bloodcutter-Outland"] = 98719,
+											["Raeyven-TheMaelstrom"] = 42224,
 											["Дементорр-ВечнаяПесня"] = 140746,
 											["Trillianne-Lightbringer"] = 349542,
 											["Anoi-Darkspear"] = 48256,
@@ -22594,10 +22594,10 @@ _detalhes_database = {
 											["Koryô-Ghostlands"] = 96512,
 											["Strijder-ArgentDawn"] = 0,
 											["Zhadum-Silvermoon"] = 0,
-											["Raeyven-TheMaelstrom"] = 0,
-											["Tzuu-DefiasBrotherhood"] = 48256,
 											["Krixidk"] = 96512,
+											["Tzuu-DefiasBrotherhood"] = 48256,
 											["Bloodcutter-Outland"] = 0,
+											["Raeyven-TheMaelstrom"] = 0,
 											["Дементорр-ВечнаяПесня"] = 48255,
 											["Trillianne-Lightbringer"] = 0,
 											["Anoi-Darkspear"] = 90631,
@@ -22627,15 +22627,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
+							["last_event"] = 1496746259,
 							["classe"] = "DRUID",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.003958,
 							["start_time"] = 1496746164,
 							["delay"] = 1496746208,
-							["last_event"] = 1496746259,
+							["targets_absorbs"] = {
+							},
 						}, -- [13]
 						{
 							["flag_original"] = 1300,
@@ -22764,16 +22764,16 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-								["Necromanus-Frostmane"] = 1651671,
-							},
+							["last_event"] = 1496746256,
 							["classe"] = "WARLOCK",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.002407,
 							["start_time"] = 1496746168,
 							["delay"] = 1496746226,
-							["last_event"] = 1496746256,
+							["targets_absorbs"] = {
+								["Necromanus-Frostmane"] = 1651671,
+							},
 						}, -- [14]
 						{
 							["flag_original"] = 1300,
@@ -22944,7 +22944,7 @@ _detalhes_database = {
 								"Xuen <Anoi-Darkspear>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "MONK",
 							["totalover"] = 3034298.004793,
 							["total_without_pet"] = 2194829.004793,
 							["total"] = 2194829.004793,
@@ -22964,7 +22964,19 @@ _detalhes_database = {
 							["healing_taken"] = 6670285.004793,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["classe"] = "MONK",
+							["healing_from"] = {
+								["Owein"] = true,
+								["Hagren-Ravencrest"] = true,
+								["T'uure <Pixelina-Magtheridon>"] = true,
+								["Jade Serpent Statue <Owein>"] = true,
+								["Chi-Ji <Taube-Frostmane>"] = true,
+								["Zoremet-Ravencrest"] = true,
+								["Anoi-Darkspear"] = true,
+								["Zhadum-Silvermoon"] = true,
+								["Pixelina-Magtheridon"] = true,
+								["Taube-Frostmane"] = true,
+								["Chi-Ji <Zoremet-Ravencrest>"] = true,
+							},
 							["nome"] = "Anoi-Darkspear",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -23140,26 +23152,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Owein"] = true,
-								["Hagren-Ravencrest"] = true,
-								["T'uure <Pixelina-Magtheridon>"] = true,
-								["Jade Serpent Statue <Owein>"] = true,
-								["Zhadum-Silvermoon"] = true,
-								["Zoremet-Ravencrest"] = true,
-								["Chi-Ji <Taube-Frostmane>"] = true,
-								["Anoi-Darkspear"] = true,
-								["Pixelina-Magtheridon"] = true,
-								["Taube-Frostmane"] = true,
-								["Chi-Ji <Zoremet-Ravencrest>"] = true,
-							},
-							["spec"] = 269,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1496746258,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.004793,
 							["start_time"] = 1496746163,
 							["delay"] = 0,
-							["last_event"] = 1496746258,
+							["spec"] = 269,
 						}, -- [16]
 						{
 							["flag_original"] = 1300,
@@ -23200,6 +23200,34 @@ _detalhes_database = {
 							["nome"] = "Монтароник-Голдринн",
 							["spells"] = {
 								["_ActorTable"] = {
+									[208403] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Монтароник-Голдринн"] = 1387985,
+										},
+										["n_max"] = 149230,
+										["targets"] = {
+											["Монтароник-Голдринн"] = 1596605,
+										},
+										["n_min"] = 0,
+										["counter"] = 20,
+										["overheal"] = 1387985,
+										["total"] = 1596605,
+										["c_max"] = 0,
+										["id"] = 208403,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 20,
+										["n_curado"] = 1596605,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
 									[197603] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 143796,
@@ -23254,34 +23282,6 @@ _detalhes_database = {
 										["totaldenied"] = 0,
 										["n_amt"] = 72,
 										["n_curado"] = 275140,
-										["m_amt"] = 0,
-										["absorbed"] = 0,
-									},
-									[208403] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Монтароник-Голдринн"] = 1387985,
-										},
-										["n_max"] = 149230,
-										["targets"] = {
-											["Монтароник-Голдринн"] = 1596605,
-										},
-										["n_min"] = 0,
-										["counter"] = 20,
-										["overheal"] = 1387985,
-										["total"] = 1596605,
-										["c_max"] = 0,
-										["id"] = 208403,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 20,
-										["n_curado"] = 1596605,
 										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
@@ -23509,16 +23509,16 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-								["Blåskin-Trollbane"] = 876463,
-							},
+							["last_event"] = 1496746256,
 							["classe"] = "PRIEST",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.006144,
 							["start_time"] = 1496746170,
 							["delay"] = 1496746237,
-							["last_event"] = 1496746256,
+							["targets_absorbs"] = {
+								["Blåskin-Trollbane"] = 876463,
+							},
 						}, -- [18]
 						{
 							["flag_original"] = 1300,
@@ -23615,16 +23615,16 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-								["Polifonico-Minahonda"] = 1823034,
-							},
+							["last_event"] = 1496746221,
 							["classe"] = "MAGE",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.001189,
 							["start_time"] = 1496746245,
 							["delay"] = 1496746221,
-							["last_event"] = 1496746221,
+							["targets_absorbs"] = {
+								["Polifonico-Minahonda"] = 1823034,
+							},
 						}, -- [19]
 						{
 							["flag_original"] = 1300,
@@ -23634,7 +23634,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "WARRIOR",
 							["totalover"] = 4450250.008956,
 							["total_without_pet"] = 1818191.008956,
 							["total"] = 1818191.008956,
@@ -23653,7 +23653,17 @@ _detalhes_database = {
 							["healing_taken"] = 5922764.008956,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["classe"] = "WARRIOR",
+							["healing_from"] = {
+								["Owein"] = true,
+								["Jade Serpent Statue <Owein>"] = true,
+								["Strijder-ArgentDawn"] = true,
+								["Zhadum-Silvermoon"] = true,
+								["Zoremet-Ravencrest"] = true,
+								["Chi-Ji <Taube-Frostmane>"] = true,
+								["Pixelina-Magtheridon"] = true,
+								["Hagren-Ravencrest"] = true,
+								["Chi-Ji <Zoremet-Ravencrest>"] = true,
+							},
 							["nome"] = "Strijder-ArgentDawn",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -23745,24 +23755,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Owein"] = true,
-								["Jade Serpent Statue <Owein>"] = true,
-								["Strijder-ArgentDawn"] = true,
-								["Zhadum-Silvermoon"] = true,
-								["Zoremet-Ravencrest"] = true,
-								["Chi-Ji <Taube-Frostmane>"] = true,
-								["Pixelina-Magtheridon"] = true,
-								["Hagren-Ravencrest"] = true,
-								["Chi-Ji <Zoremet-Ravencrest>"] = true,
-							},
-							["spec"] = 71,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1496746256,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.008956,
 							["start_time"] = 1496746182,
 							["delay"] = 0,
-							["last_event"] = 1496746256,
+							["spec"] = 71,
 						}, -- [20]
 						{
 							["flag_original"] = 1300,
@@ -23776,7 +23776,7 @@ _detalhes_database = {
 								"Crab <Weihmann-ArgentDawn>", -- [3]
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "HUNTER",
 							["totalover"] = 2515887.007562,
 							["total_without_pet"] = 1583748.007562,
 							["total"] = 1583748.007562,
@@ -23795,7 +23795,15 @@ _detalhes_database = {
 							["healing_taken"] = 5037530.007562,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["classe"] = "HUNTER",
+							["healing_from"] = {
+								["Owein"] = true,
+								["Weihmann-ArgentDawn"] = true,
+								["T'uure <Pixelina-Magtheridon>"] = true,
+								["Zhadum-Silvermoon"] = true,
+								["Pixelina-Magtheridon"] = true,
+								["Taube-Frostmane"] = true,
+								["Zoremet-Ravencrest"] = true,
+							},
 							["nome"] = "Weihmann-ArgentDawn",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -23913,22 +23921,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Owein"] = true,
-								["Weihmann-ArgentDawn"] = true,
-								["T'uure <Pixelina-Magtheridon>"] = true,
-								["Zhadum-Silvermoon"] = true,
-								["Pixelina-Magtheridon"] = true,
-								["Taube-Frostmane"] = true,
-								["Zoremet-Ravencrest"] = true,
-							},
-							["spec"] = 253,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1496746252,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.007562,
 							["start_time"] = 1496746176,
 							["delay"] = 1496746234,
-							["last_event"] = 1496746252,
+							["spec"] = 253,
 						}, -- [21]
 						{
 							["flag_original"] = 1300,
@@ -24029,15 +24029,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
+							["last_event"] = 1496746204,
 							["classe"] = "DEMONHUNTER",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.004633,
 							["start_time"] = 1496746221,
 							["delay"] = 1496746204,
-							["last_event"] = 1496746204,
+							["targets_absorbs"] = {
+							},
 						}, -- [22]
 						{
 							["flag_original"] = 1300,
@@ -24047,7 +24047,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "DEMONHUNTER",
 							["totalover"] = 12642145.00223,
 							["total_without_pet"] = 1164425.00223,
 							["total"] = 1164425.00223,
@@ -24066,7 +24066,18 @@ _detalhes_database = {
 							["healing_taken"] = 4406264.00223,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["classe"] = "DEMONHUNTER",
+							["healing_from"] = {
+								["Owein"] = true,
+								["Hagren-Ravencrest"] = true,
+								["Lupiness-Silvermoon"] = true,
+								["Tzuu-DefiasBrotherhood"] = true,
+								["Zhadum-Silvermoon"] = true,
+								["Pixelina-Magtheridon"] = true,
+								["Chi-Ji <Taube-Frostmane>"] = true,
+								["Zoremet-Ravencrest"] = true,
+								["Blåskin-Trollbane"] = true,
+								["Chi-Ji <Zoremet-Ravencrest>"] = true,
+							},
 							["nome"] = "Tzuu-DefiasBrotherhood",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -24102,25 +24113,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Owein"] = true,
-								["Hagren-Ravencrest"] = true,
-								["Lupiness-Silvermoon"] = true,
-								["Tzuu-DefiasBrotherhood"] = true,
-								["Zhadum-Silvermoon"] = true,
-								["Zoremet-Ravencrest"] = true,
-								["Chi-Ji <Taube-Frostmane>"] = true,
-								["Blåskin-Trollbane"] = true,
-								["Pixelina-Magtheridon"] = true,
-								["Chi-Ji <Zoremet-Ravencrest>"] = true,
-							},
-							["spec"] = 577,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1496746258,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.00223,
 							["start_time"] = 1496746150,
 							["delay"] = 0,
-							["last_event"] = 1496746258,
+							["spec"] = 577,
 						}, -- [23]
 						{
 							["flag_original"] = 1300,
@@ -24151,12 +24151,12 @@ _detalhes_database = {
 							["healing_from"] = {
 								["Junebug-Outland"] = true,
 								["Owein"] = true,
-								["Zhadum-Silvermoon"] = true,
+								["Lupiness-Silvermoon"] = true,
 								["Zoremet-Ravencrest"] = true,
-								["Chi-Ji <Taube-Frostmane>"] = true,
+								["Zhadum-Silvermoon"] = true,
 								["Pixelina-Magtheridon"] = true,
 								["Taube-Frostmane"] = true,
-								["Lupiness-Silvermoon"] = true,
+								["Chi-Ji <Taube-Frostmane>"] = true,
 							},
 							["nome"] = "Junebug-Outland",
 							["spells"] = {
@@ -24222,16 +24222,16 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-								["Junebug-Outland"] = 153775,
-							},
+							["last_event"] = 1496746227,
 							["classe"] = "ROGUE",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.001588,
 							["start_time"] = 1496746230,
 							["delay"] = 1496746227,
-							["last_event"] = 1496746227,
+							["targets_absorbs"] = {
+								["Junebug-Outland"] = 153775,
+							},
 						}, -- [24]
 						{
 							["flag_original"] = 1300,
@@ -24331,15 +24331,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
+							["last_event"] = 1496746255,
 							["classe"] = "DEMONHUNTER",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.001938,
 							["start_time"] = 1496746205,
 							["delay"] = 1496746242,
-							["last_event"] = 1496746255,
+							["targets_absorbs"] = {
+							},
 						}, -- [25]
 						{
 							["flag_original"] = 1300,
@@ -24437,15 +24437,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
+							["last_event"] = 1496746235,
 							["classe"] = "HUNTER",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.002009,
 							["start_time"] = 1496746231,
 							["delay"] = 1496746235,
-							["last_event"] = 1496746235,
+							["targets_absorbs"] = {
+							},
 						}, -- [26]
 						{
 							["flag_original"] = 1300,
@@ -24547,15 +24547,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
+							["last_event"] = 1496746255,
 							["classe"] = "DEATHKNIGHT",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.005762,
 							["start_time"] = 1496746219,
 							["delay"] = 1496746221,
-							["last_event"] = 1496746255,
+							["targets_absorbs"] = {
+							},
 						}, -- [27]
 						{
 							["flag_original"] = 1300,
@@ -24630,15 +24630,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
+							["last_event"] = 1496746211,
 							["classe"] = "ROGUE",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.005212,
 							["start_time"] = 1496746254,
 							["delay"] = 1496746211,
-							["last_event"] = 1496746211,
+							["targets_absorbs"] = {
+							},
 						}, -- [28]
 						{
 							["flag_original"] = 1300,
@@ -24715,16 +24715,16 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-								["Yeppie-Ravenholdt"] = 784007,
-							},
+							["last_event"] = 1496746170,
 							["classe"] = "MAGE",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.005929,
 							["start_time"] = 1496746259,
 							["delay"] = 1496746170,
-							["last_event"] = 1496746170,
+							["targets_absorbs"] = {
+								["Yeppie-Ravenholdt"] = 784007,
+							},
 						}, -- [29]
 						{
 							["flag_original"] = 1298,
@@ -24734,7 +24734,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "ROGUE",
 							["totalover"] = 2811540.002135,
 							["total_without_pet"] = 702439.002135,
 							["total"] = 702439.002135,
@@ -24753,7 +24753,19 @@ _detalhes_database = {
 							["healing_taken"] = 4723227.002135,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["classe"] = "ROGUE",
+							["healing_from"] = {
+								["Owein"] = true,
+								["Hagren-Ravencrest"] = true,
+								["Lupiness-Silvermoon"] = true,
+								["Letueurre-Chantséternels"] = true,
+								["Zoremet-Ravencrest"] = true,
+								["Дементорр-ВечнаяПесня"] = true,
+								["Taube-Frostmane"] = true,
+								["Zhadum-Silvermoon"] = true,
+								["Pixelina-Magtheridon"] = true,
+								["Jinksi-Vek'nilash"] = true,
+								["Chi-Ji <Zoremet-Ravencrest>"] = true,
+							},
 							["nome"] = "Jinksi-Vek'nilash",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -24845,26 +24857,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Owein"] = true,
-								["Hagren-Ravencrest"] = true,
-								["Lupiness-Silvermoon"] = true,
-								["Letueurre-Chantséternels"] = true,
-								["Zoremet-Ravencrest"] = true,
-								["Дементорр-ВечнаяПесня"] = true,
-								["Taube-Frostmane"] = true,
-								["Zhadum-Silvermoon"] = true,
-								["Pixelina-Magtheridon"] = true,
-								["Jinksi-Vek'nilash"] = true,
-								["Chi-Ji <Zoremet-Ravencrest>"] = true,
-							},
-							["spec"] = 260,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1496746249,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.002135,
 							["start_time"] = 1496746196,
 							["delay"] = 1496746249,
-							["last_event"] = 1496746249,
+							["spec"] = 260,
 						}, -- [30]
 						{
 							["flag_original"] = 1300,
@@ -24876,7 +24876,7 @@ _detalhes_database = {
 								"Greater Fire Elemental <Селенна-Гордунни>", -- [2]
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 2479765.006287,
 							["total_without_pet"] = 620310.006287,
 							["total"] = 620310.006287,
@@ -24894,7 +24894,18 @@ _detalhes_database = {
 							["healing_taken"] = 3536160.006287,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["heal_enemy_amt"] = 0,
+							["healing_from"] = {
+								["Owein"] = true,
+								["Селенна-Гордунни"] = true,
+								["Lupiness-Silvermoon"] = true,
+								["Pixelina-Magtheridon"] = true,
+								["Zhadum-Silvermoon"] = true,
+								["Zoremet-Ravencrest"] = true,
+								["Chi-Ji <Taube-Frostmane>"] = true,
+								["Blåskin-Trollbane"] = true,
+								["Taube-Frostmane"] = true,
+								["T'uure <Pixelina-Magtheridon>"] = true,
+							},
 							["nome"] = "Селенна-Гордунни",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -24957,26 +24968,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Owein"] = true,
-								["Селенна-Гордунни"] = true,
-								["Lupiness-Silvermoon"] = true,
-								["Pixelina-Magtheridon"] = true,
-								["Zhadum-Silvermoon"] = true,
-								["Zoremet-Ravencrest"] = true,
-								["Chi-Ji <Taube-Frostmane>"] = true,
-								["Blåskin-Trollbane"] = true,
-								["Taube-Frostmane"] = true,
-								["T'uure <Pixelina-Magtheridon>"] = true,
-							},
-							["targets_absorbs"] = {
-							},
+							["classe"] = "SHAMAN",
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1496746243,
 							["totaldenied"] = 0.006287,
 							["start_time"] = 1496746244,
 							["delay"] = 1496746243,
-							["tipo"] = 2,
+							["targets_absorbs"] = {
+							},
 						}, -- [31]
 						{
 							["flag_original"] = 1300,
@@ -25200,15 +25200,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
+							["last_event"] = 1496746256,
 							["classe"] = "HUNTER",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.008912,
 							["start_time"] = 1496746154,
 							["delay"] = 0,
-							["last_event"] = 1496746256,
+							["targets_absorbs"] = {
+							},
 						}, -- [33]
 						{
 							["flag_original"] = 1300,
@@ -25219,7 +25219,7 @@ _detalhes_database = {
 								"Greater Fire Elemental <Elmena-Ragnaros>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 1401494.007275,
 							["total_without_pet"] = 301415.007275,
 							["total"] = 301415.007275,
@@ -25237,7 +25237,18 @@ _detalhes_database = {
 							["healing_taken"] = 1932143.007275,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["heal_enemy_amt"] = 0,
+							["healing_from"] = {
+								["Owein"] = true,
+								["T'uure <Pixelina-Magtheridon>"] = true,
+								["Lupiness-Silvermoon"] = true,
+								["Elmena-Ragnaros"] = true,
+								["Pixelina-Magtheridon"] = true,
+								["Zoremet-Ravencrest"] = true,
+								["Zhadum-Silvermoon"] = true,
+								["Blåskin-Trollbane"] = true,
+								["Taube-Frostmane"] = true,
+								["Chi-Ji <Zoremet-Ravencrest>"] = true,
+							},
 							["nome"] = "Elmena-Ragnaros",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -25273,26 +25284,15 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Owein"] = true,
-								["T'uure <Pixelina-Magtheridon>"] = true,
-								["Lupiness-Silvermoon"] = true,
-								["Elmena-Ragnaros"] = true,
-								["Blåskin-Trollbane"] = true,
-								["Pixelina-Magtheridon"] = true,
-								["Zhadum-Silvermoon"] = true,
-								["Zoremet-Ravencrest"] = true,
-								["Taube-Frostmane"] = true,
-								["Chi-Ji <Zoremet-Ravencrest>"] = true,
-							},
-							["targets_absorbs"] = {
-							},
+							["classe"] = "SHAMAN",
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1496746258,
 							["totaldenied"] = 0.007275,
 							["start_time"] = 1496746152,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["targets_absorbs"] = {
+							},
 						}, -- [34]
 						{
 							["flag_original"] = 1298,
@@ -25366,16 +25366,16 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_absorbs"] = {
-								["Raeyven-TheMaelstrom"] = 143520,
-							},
+							["last_event"] = 1496746236,
 							["classe"] = "ROGUE",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.007894,
 							["start_time"] = 1496746259,
 							["delay"] = 1496746236,
-							["last_event"] = 1496746236,
+							["targets_absorbs"] = {
+								["Raeyven-TheMaelstrom"] = 143520,
+							},
 						}, -- [35]
 						{
 							["flag_original"] = 1300,
@@ -25385,7 +25385,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "WARLOCK",
 							["totalover"] = 1.00293,
 							["total_without_pet"] = 113883.00293,
 							["total"] = 113883.00293,
@@ -25405,7 +25405,9 @@ _detalhes_database = {
 							["healing_taken"] = 113883.00293,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["classe"] = "WARLOCK",
+							["healing_from"] = {
+								["Dedalos-Lightbringer"] = true,
+							},
 							["nome"] = "Dedalos-Lightbringer",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -25472,16 +25474,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Dedalos-Lightbringer"] = true,
-							},
-							["spec"] = 267,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1496746172,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.00293,
 							["start_time"] = 1496746258,
 							["delay"] = 1496746172,
-							["last_event"] = 1496746172,
+							["spec"] = 267,
 						}, -- [36]
 						{
 							["flag_original"] = 1300,
@@ -25490,7 +25490,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "ROGUE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.007629,
 							["total_without_pet"] = 0.007629,
 							["total"] = 0.007629,
@@ -25507,14 +25507,6 @@ _detalhes_database = {
 							["healing_taken"] = 4635099.007629,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Polpé-Silvermoon",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
 							["healing_from"] = {
 								["Hagren-Ravencrest"] = true,
 								["Chi-Ji <Zoremet-Ravencrest>"] = true,
@@ -25525,14 +25517,22 @@ _detalhes_database = {
 								["Taube-Frostmane"] = true,
 								["Owein"] = true,
 							},
-							["targets_absorbs"] = {
+							["nome"] = "Polpé-Silvermoon",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "ROGUE",
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 0,
 							["totaldenied"] = 0.007629,
 							["start_time"] = 1496746260,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["targets_absorbs"] = {
+							},
 						}, -- [37]
 						{
 							["flag_original"] = 1300,
@@ -25541,7 +25541,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "ROGUE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.007448,
 							["total_without_pet"] = 0.007448,
 							["total"] = 0.007448,
@@ -25558,14 +25558,6 @@ _detalhes_database = {
 							["healing_taken"] = 6555623.007448,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Duskz-Ravencrest",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
 							["healing_from"] = {
 								["Owein"] = true,
 								["Jade Serpent Statue <Owein>"] = true,
@@ -25577,14 +25569,22 @@ _detalhes_database = {
 								["Taube-Frostmane"] = true,
 								["Chi-Ji <Zoremet-Ravencrest>"] = true,
 							},
-							["targets_absorbs"] = {
+							["nome"] = "Duskz-Ravencrest",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "ROGUE",
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 0,
 							["totaldenied"] = 0.007448,
 							["start_time"] = 1496746260,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["targets_absorbs"] = {
+							},
 						}, -- [38]
 						{
 							["flag_original"] = 1300,
@@ -25601,7 +25601,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DEMONHUNTER",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.007205,
 							["total_without_pet"] = 0.007205,
 							["total"] = 0.007205,
@@ -25619,7 +25619,8 @@ _detalhes_database = {
 							["healing_taken"] = 5724182.007205,
 							["fight_component"] = true,
 							["end_time"] = 1496746260,
-							["heal_enemy_amt"] = 0,
+							["targets_overheal"] = {
+							},
 							["nome"] = "Alberich-Frostmane",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -25627,15 +25628,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["spec"] = 577,
+							["classe"] = "DEMONHUNTER",
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 0,
 							["totaldenied"] = 0.007205,
 							["start_time"] = 1496746260,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["spec"] = 577,
 						}, -- [39]
 						{
 							["flag_original"] = 4372,
@@ -26038,14 +26038,14 @@ _detalhes_database = {
 										},
 										["n_max"] = 28829,
 										["targets"] = {
+											["Krixidk"] = 97158,
 											["Owein"] = 144141,
-											["Raeyven-TheMaelstrom"] = 0,
 											["Talismano-Pozzodell'Eternità"] = 0,
 											["Velour-DunModr"] = 21948,
 											["Paulie-SteamwheedleCartel"] = 0,
 											["Ðahniel-Doomhammer"] = 172971,
 											["Jinksi-Vek'nilash"] = 0,
-											["Krixidk"] = 97158,
+											["Raeyven-TheMaelstrom"] = 0,
 										},
 										["n_min"] = 0,
 										["counter"] = 48,
@@ -26101,12 +26101,12 @@ _detalhes_database = {
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 											["Raeyven-TheMaelstrom"] = 72068,
+											["Elmena-Ragnaros"] = 72068,
 											["Water Elemental <Minusfifty-Silvermoon>"] = 72069,
-											["T'uure <Pixelina-Magtheridon>"] = 72068,
 											["Minusfifty-Silvermoon"] = 144137,
 											["Letueurre-Chantséternels"] = 72068,
 											["Jinksi-Vek'nilash"] = 72068,
-											["Elmena-Ragnaros"] = 72068,
+											["T'uure <Pixelina-Magtheridon>"] = 72068,
 										},
 										["n_max"] = 72069,
 										["targets"] = {
@@ -27665,10 +27665,10 @@ _detalhes_database = {
 										["actived"] = true,
 										["actived_at"] = 1496746254,
 									},
-									[1953] = {
-										["activedamt"] = 4,
-										["uptime"] = 1,
-										["id"] = 1953,
+									["Magtheridon's Might"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Magtheridon's Might",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -27701,10 +27701,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[225776] = {
-										["uptime"] = 8,
-										["activedamt"] = 1,
-										["id"] = 225776,
+									[1953] = {
+										["activedamt"] = 4,
+										["uptime"] = 1,
+										["id"] = 1953,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -27902,10 +27902,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Magtheridon's Might"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Magtheridon's Might",
+									[225776] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 225776,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -27923,9 +27923,9 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[80353] = 1,
 								[116011] = 4,
-								[229206] = 1,
+								[116] = 28,
 								[30455] = 24,
-								[116014] = 4,
+								[229206] = 1,
 								[12472] = 1,
 								[1953] = 4,
 								[44614] = 7,
@@ -27933,7 +27933,7 @@ _detalhes_database = {
 								[205021] = 2,
 								[11426] = 2,
 								[84714] = 2,
-								[116] = 28,
+								[116014] = 4,
 							},
 							["tipo"] = 4,
 							["last_event"] = 1496746260,
@@ -28210,14 +28210,14 @@ _detalhes_database = {
 							["spec"] = 64,
 							["cc_break"] = 1.001654,
 							["spell_cast"] = {
-								[116] = 25,
+								[212653] = 1,
 								[84714] = 2,
 								[44614] = 6,
 								[190356] = 1,
 								[199786] = 3,
-								[30455] = 20,
+								[116] = 25,
 								[12472] = 1,
-								[212653] = 1,
+								[30455] = 20,
 							},
 							["cc_break_oque"] = {
 								[224729] = 1,
@@ -28421,14 +28421,15 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Archmage's Prismatic Disc"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Archmage's Prismatic Disc",
+									[207472] = {
+										["counter"] = 0,
+										["uptime"] = 69,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
+										["id"] = 207472,
+										["activedamt"] = 3,
+										["actived"] = true,
+										["actived_at"] = 1496746258,
 									},
 									["Xavaric's Magnum Opus"] = {
 										["uptime"] = 0,
@@ -28466,10 +28467,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[12472] = {
-										["uptime"] = 20,
-										["activedamt"] = 1,
-										["id"] = 12472,
+									["Archmage's Prismatic Disc"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Archmage's Prismatic Disc",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -28512,15 +28513,14 @@ _detalhes_database = {
 										["actived"] = true,
 										["actived_at"] = 1496746248,
 									},
-									[207472] = {
-										["counter"] = 0,
-										["uptime"] = 69,
+									[12472] = {
+										["uptime"] = 20,
+										["activedamt"] = 1,
+										["id"] = 12472,
 										["targets"] = {
 										},
-										["id"] = 207472,
-										["activedamt"] = 3,
-										["actived"] = true,
-										["actived_at"] = 1496746258,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Ancient Power"] = {
 										["uptime"] = 0,
@@ -29192,10 +29192,10 @@ _detalhes_database = {
 							},
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									["Mana Divining Stone"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Mana Divining Stone",
+									[119611] = {
+										["uptime"] = 3,
+										["activedamt"] = 1,
+										["id"] = 119611,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -29210,10 +29210,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[119611] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 119611,
+									["Uplifting Trance"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Uplifting Trance",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -29228,10 +29228,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Uplifting Trance"] = {
+									["Mana Divining Stone"] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = "Uplifting Trance",
+										["id"] = "Mana Divining Stone",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -29959,9 +29959,9 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["spell_cast"] = {
+								[196586] = 2,
 								[29722] = 1,
 								[17962] = 1,
-								[196586] = 2,
 							},
 							["tipo"] = 4,
 							["classe"] = "WARLOCK",
@@ -30149,13 +30149,13 @@ _detalhes_database = {
 							["spec"] = 257,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[596] = 12,
+								[139] = 23,
 								[34861] = 3,
 								[208065] = 2,
-								[204883] = 5,
-								[120517] = 1,
-								[139] = 23,
 								[2061] = 5,
+								[120517] = 1,
+								[596] = 12,
+								[204883] = 5,
 								[2050] = 1,
 							},
 							["tipo"] = 4,
@@ -30392,14 +30392,14 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 266,
-							["debuff_uptime_targets"] = {
-							},
-							["cc_done"] = 2.002984,
 							["nome"] = "Zhadum-Silvermoon",
+							["cc_done"] = 2.002984,
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 73,
 							["grupo"] = true,
 							["cc_done_targets"] = {
@@ -30417,11 +30417,11 @@ _detalhes_database = {
 								[355] = 1,
 								[238534] = 2,
 								[46968] = 3,
+								[190456] = 1,
 								[57755] = 4,
-								[6343] = 15,
 								[214203] = 2,
 								[203524] = 2,
-								[190456] = 1,
+								[6343] = 15,
 							},
 							["cc_break_targets"] = {
 								["Si'vashi Honor Guard"] = 1,
@@ -31186,10 +31186,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[211805] = {
-										["activedamt"] = 4,
-										["uptime"] = 33,
-										["id"] = 211805,
+									["Winged Steed of the Ebon Blade"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Winged Steed of the Ebon Blade",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -31205,19 +31205,19 @@ _detalhes_database = {
 										["actived"] = true,
 										["actived_at"] = 1496746254,
 									},
-									[196770] = {
+									[211805] = {
 										["activedamt"] = 4,
-										["uptime"] = 43,
-										["id"] = 196770,
+										["uptime"] = 33,
+										["id"] = 211805,
 										["targets"] = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Winged Steed of the Ebon Blade"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Winged Steed of the Ebon Blade",
+									[196770] = {
+										["activedamt"] = 4,
+										["uptime"] = 43,
+										["id"] = 196770,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -31274,15 +31274,15 @@ _detalhes_database = {
 								[49184] = 13,
 								[49020] = 17,
 								[196770] = 4,
+								[49998] = 2,
 								[190778] = 1,
-								[211793] = 36,
 								[190780] = 1,
 								[207127] = 2,
 								[152279] = 1,
 								[196771] = 45,
 								[49143] = 9,
 								[51271] = 2,
-								[49998] = 2,
+								[211793] = 36,
 							},
 							["tipo"] = 4,
 							["serial"] = "Player-1309-04A4EB65",
@@ -31923,20 +31923,20 @@ _detalhes_database = {
 							["spec"] = 71,
 							["grupo"] = true,
 							["spell_cast"] = {
+								[100] = 2,
 								[1719] = 1,
-								[7384] = 6,
-								[163201] = 12,
+								[107574] = 1,
 								[199658] = 14,
-								[1680] = 14,
+								[12294] = 4,
 								[126664] = 2,
 								[46968] = 1,
 								[227847] = 1,
 								[209577] = 1,
 								[50622] = 7,
-								[107574] = 1,
-								[12294] = 4,
+								[163201] = 12,
+								[1680] = 14,
 								[167105] = 10,
-								[100] = 2,
+								[7384] = 6,
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -32031,29 +32031,28 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Transcendence"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Transcendence",
+									[199888] = {
+										["activedamt"] = 3,
+										["uptime"] = 30,
+										["id"] = 199888,
 										["targets"] = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[101643] = {
-										["counter"] = 0,
-										["uptime"] = 0,
+									[199407] = {
+										["uptime"] = 9,
+										["activedamt"] = 3,
+										["id"] = 199407,
 										["targets"] = {
 										},
-										["id"] = 101643,
-										["activedamt"] = 1,
-										["actived"] = true,
-										["actived_at"] = 1496746165,
+										["actived"] = false,
+										["counter"] = 0,
 									},
-									["Precious's Ribbon"] = {
+									["Blazing Wings"] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = "Precious's Ribbon",
+										["id"] = "Blazing Wings",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -32068,15 +32067,14 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[197919] = {
-										["counter"] = 0,
-										["uptime"] = 45,
+									[197206] = {
+										["uptime"] = 31,
+										["activedamt"] = 3,
+										["id"] = 197206,
 										["targets"] = {
 										},
-										["id"] = 197919,
-										["activedamt"] = 4,
-										["actived"] = true,
-										["actived_at"] = 1496746247,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[116680] = {
 										["uptime"] = 0,
@@ -32105,10 +32103,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[199888] = {
-										["activedamt"] = 3,
-										["uptime"] = 30,
-										["id"] = 199888,
+									["Transcendence"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Transcendence",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -32215,32 +32213,34 @@ _detalhes_database = {
 										["actived"] = true,
 										["actived_at"] = 1496746149,
 									},
-									["Blazing Wings"] = {
+									["Precious's Ribbon"] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = "Blazing Wings",
+										["id"] = "Precious's Ribbon",
 										["targets"] = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[197206] = {
-										["uptime"] = 31,
-										["activedamt"] = 3,
-										["id"] = 197206,
+									[197919] = {
+										["counter"] = 0,
+										["uptime"] = 45,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
+										["id"] = 197919,
+										["activedamt"] = 4,
+										["actived"] = true,
+										["actived_at"] = 1496746247,
 									},
-									[199407] = {
-										["uptime"] = 9,
-										["activedamt"] = 3,
-										["id"] = 199407,
+									[101643] = {
+										["counter"] = 0,
+										["uptime"] = 0,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
+										["id"] = 101643,
+										["activedamt"] = 1,
+										["actived"] = true,
+										["actived_at"] = 1496746165,
 									},
 									["Lifecycles (Enveloping Mist)"] = {
 										["uptime"] = 0,
@@ -32312,19 +32312,19 @@ _detalhes_database = {
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[80354] = {
-										["uptime"] = 104,
-										["activedamt"] = 1,
-										["id"] = 80354,
+									[117405] = {
+										["uptime"] = 8,
+										["activedamt"] = 0,
+										["id"] = 117405,
 										["targets"] = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[185365] = {
-										["uptime"] = 15,
-										["activedamt"] = 0,
-										["id"] = 185365,
+									[80354] = {
+										["uptime"] = 104,
+										["activedamt"] = 1,
+										["id"] = 80354,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -32357,10 +32357,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[117405] = {
-										["uptime"] = 8,
+									[185365] = {
+										["uptime"] = 15,
 										["activedamt"] = 0,
-										["id"] = 117405,
+										["id"] = 185365,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -32421,10 +32421,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Mana Divining Stone"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Mana Divining Stone",
+									[190515] = {
+										["uptime"] = 4,
+										["activedamt"] = 1,
+										["id"] = 190515,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -32512,19 +32512,19 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[190515] = {
-										["uptime"] = 4,
-										["activedamt"] = 1,
-										["id"] = 190515,
+									["Bullseye"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Bullseye",
 										["targets"] = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Bullseye"] = {
+									["Mana Divining Stone"] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = "Bullseye",
+										["id"] = "Mana Divining Stone",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -32695,19 +32695,19 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Mana Divining Stone"] = {
+									["Embrace of Darkness"] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = "Mana Divining Stone",
+										["id"] = "Embrace of Darkness",
 										["targets"] = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[235027] = {
-										["activedamt"] = 2,
-										["uptime"] = 15,
-										["id"] = 235027,
+									["Mana Divining Stone"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Mana Divining Stone",
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -32804,10 +32804,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Embrace of Darkness"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Embrace of Darkness",
+									[235027] = {
+										["activedamt"] = 2,
+										["uptime"] = 15,
+										["id"] = 235027,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -33178,10 +33178,10 @@ _detalhes_database = {
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[233490] = {
-										["uptime"] = 72,
+									[233497] = {
+										["uptime"] = 22,
 										["activedamt"] = 0,
-										["id"] = 233490,
+										["id"] = 233497,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -33205,10 +33205,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[146739] = {
-										["uptime"] = 107,
+									[233490] = {
+										["uptime"] = 72,
 										["activedamt"] = 0,
-										["id"] = 146739,
+										["id"] = 233490,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -33241,10 +33241,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[233497] = {
-										["uptime"] = 22,
+									[146739] = {
+										["uptime"] = 107,
 										["activedamt"] = 0,
-										["id"] = 233497,
+										["id"] = 146739,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -34267,19 +34267,19 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[242584] = {
-										["activedamt"] = 5,
-										["uptime"] = 50,
-										["id"] = 242584,
+									[197603] = {
+										["uptime"] = 52,
+										["activedamt"] = 6,
+										["id"] = 197603,
 										["targets"] = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[197603] = {
-										["uptime"] = 52,
-										["activedamt"] = 6,
-										["id"] = 197603,
+									[1784] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 1784,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -34294,10 +34294,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[1784] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 1784,
+									[242584] = {
+										["activedamt"] = 5,
+										["uptime"] = 50,
+										["id"] = 242584,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -34651,7 +34651,7 @@ _detalhes_database = {
 								1496746167.873, -- [1]
 								31224, -- [2]
 							},
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 							["classe"] = "ROGUE",
 							["cooldowns_defensive_targets"] = {
@@ -34821,9 +34821,9 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["debuff_uptime"] = 492,
 							["serial"] = "Player-1588-0A019E09",
-							["buff_uptime_targets"] = {
-							},
 							["nome"] = "Koryô-Ghostlands",
+							["debuff_uptime_targets"] = {
+							},
 							["spec"] = 259,
 							["cc_break"] = 1.001425,
 							["spell_cast"] = {
@@ -35196,11 +35196,11 @@ _detalhes_database = {
 								[194153] = 6,
 								[202347] = 1,
 								[202767] = 2,
-								[102280] = 1,
-								[202771] = 3,
-								[194223] = 1,
-								[24858] = 1,
 								[8921] = 6,
+								[202771] = 3,
+								[24858] = 1,
+								[194223] = 1,
+								[102280] = 1,
 							},
 							["tipo"] = 4,
 							["serial"] = "Player-3391-068B41E0",
@@ -35835,18 +35835,19 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["debuff_uptime"] = 199,
 							["serial"] = "Player-1596-08380B27",
+							["debuff_uptime_targets"] = {
+							},
 							["buff_uptime_targets"] = {
 							},
-							["nome"] = "Raeyven-TheMaelstrom",
 							["spec"] = 261,
 							["cc_break"] = 1.005168,
 							["spell_cast"] = {
 								[209782] = 1,
-								[31224] = 1,
+								[229206] = 1,
 								[121471] = 1,
 								[195452] = 6,
 								[121473] = 19,
-								[121474] = 19,
+								[31224] = 1,
 								[185438] = 30,
 								[115191] = 1,
 								[196819] = 14,
@@ -35854,15 +35855,14 @@ _detalhes_database = {
 								[185313] = 9,
 								[212283] = 4,
 								[1856] = 1,
-								[229206] = 1,
+								[121474] = 19,
 							},
 							["cc_break_oque"] = {
 								[115191] = 1,
 							},
 							["tipo"] = 4,
 							["last_event"] = 1496746260,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Raeyven-TheMaelstrom",
 							["cc_break_targets"] = {
 								["Raeyven-TheMaelstrom"] = 1,
 							},
@@ -36215,15 +36215,6 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Windwalking"] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = "Windwalking",
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									["Blackout Kick!"] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
@@ -36232,6 +36223,16 @@ _detalhes_database = {
 										},
 										["actived"] = false,
 										["counter"] = 0,
+									},
+									[122470] = {
+										["counter"] = 0,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["id"] = 122470,
+										["activedamt"] = 2,
+										["actived"] = true,
+										["actived_at"] = 1496746252,
 									},
 									[196608] = {
 										["counter"] = 0,
@@ -36272,15 +36273,14 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[122470] = {
-										["counter"] = 0,
-										["uptime"] = 10,
+									["Windwalking"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Windwalking",
 										["targets"] = {
 										},
-										["id"] = 122470,
-										["activedamt"] = 2,
-										["actived"] = true,
-										["actived_at"] = 1496746252,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[101546] = {
 										["uptime"] = 1,
@@ -36780,6 +36780,15 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[193320] = {
+										["uptime"] = 20,
+										["activedamt"] = 2,
+										["id"] = 193320,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[77535] = {
 										["counter"] = 0,
 										["activedamt"] = 7,
@@ -36789,15 +36798,6 @@ _detalhes_database = {
 										["uptime"] = 43,
 										["actived"] = true,
 										["actived_at"] = 1496746257,
-									},
-									[214803] = {
-										["uptime"] = 8,
-										["activedamt"] = 1,
-										["id"] = 214803,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[214807] = {
 										["activedamt"] = 3,
@@ -36881,10 +36881,10 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[193320] = {
-										["uptime"] = 20,
-										["activedamt"] = 2,
-										["id"] = 193320,
+									[214803] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 214803,
 										["targets"] = {
 										},
 										["actived"] = false,
@@ -36989,26 +36989,26 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Pet-0-3769-1220-31026-78116-0201D207E8",
 							["spell_cast"] = {
 								[135029] = 4,
 								[31707] = 50,
 							},
+							["serial"] = "Pet-0-3769-1220-31026-78116-0201D207E8",
+							["last_event"] = 0,
 						}, -- [40]
 						{
 							["flag_original"] = 4372,
 							["ownerName"] = "Weihmann-ArgentDawn",
 							["nome"] = "Crab <Weihmann-ArgentDawn>",
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["spell_cast"] = {
 								[61684] = 1,
 								[16827] = 32,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "PET",
 							["serial"] = "Pet-0-3769-1220-31026-110824-0102D6952C",
 							["fight_component"] = true,
 						}, -- [41]
@@ -37020,11 +37020,11 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Pet-0-3769-1220-31026-78158-010255366B",
 							["spell_cast"] = {
 								[85692] = 49,
 							},
+							["serial"] = "Pet-0-3769-1220-31026-78158-010255366B",
+							["last_event"] = 0,
 						}, -- [42]
 						{
 							["flag_original"] = 8468,
@@ -37034,24 +37034,24 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-47649-00003688AC",
 							["spell_cast"] = {
 								[81262] = 1,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-47649-00003688AC",
+							["last_event"] = 0,
 						}, -- [43]
 						{
 							["flag_original"] = 8466,
 							["ownerName"] = "Owein",
 							["nome"] = "Jade Serpent Statue <Owein>",
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["spell_cast"] = {
 								[198533] = 28,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "PET",
 							["serial"] = "Creature-0-3769-1220-31026-60849-00003688A7",
 							["fight_component"] = true,
 						}, -- [44]
@@ -37063,11 +37063,11 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Pet-0-3769-1220-31026-1860-0102623C5F",
 							["spell_cast"] = {
 								[3716] = 63,
 							},
+							["serial"] = "Pet-0-3769-1220-31026-1860-0102623C5F",
+							["last_event"] = 0,
 						}, -- [45]
 						{
 							["flag_original"] = 8468,
@@ -37077,18 +37077,18 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-113344-00003688AC",
 							["spell_cast"] = {
 								[120694] = 13,
 								[201754] = 13,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-113344-00003688AC",
+							["last_event"] = 0,
 						}, -- [46]
 						{
 							["flag_original"] = 4372,
 							["ownerName"] = "Trillianne-Lightbringer",
 							["nome"] = "Sparky <Trillianne-Lightbringer>",
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["spell_cast"] = {
 								[61685] = 1,
 								[17253] = 28,
@@ -37097,8 +37097,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "PET",
 							["serial"] = "Pet-0-3769-1220-31026-77927-0102C970DB",
 							["fight_component"] = true,
 						}, -- [47]
@@ -37110,12 +37110,12 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-113347-00003688AC",
 							["spell_cast"] = {
 								[120694] = 7,
 								[201754] = 7,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-113347-00003688AC",
+							["last_event"] = 0,
 						}, -- [48]
 						{
 							["flag_original"] = 8468,
@@ -37125,24 +37125,24 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-95061-00003688AA",
 							["spell_cast"] = {
 								[57984] = 22,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-95061-00003688AA",
+							["last_event"] = 0,
 						}, -- [49]
 						{
 							["flag_original"] = 4372,
 							["ownerName"] = "Velour-DunModr",
 							["nome"] = "Khovrath <Velour-DunModr>",
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["spell_cast"] = {
 								[85692] = 43,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "PET",
 							["serial"] = "Pet-0-3769-1220-31026-78158-0102CE13D2",
 							["fight_component"] = true,
 						}, -- [50]
@@ -37150,15 +37150,15 @@ _detalhes_database = {
 							["flag_original"] = 4372,
 							["ownerName"] = "Yeppie-Ravenholdt",
 							["nome"] = "Water Elemental <Yeppie-Ravenholdt>",
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["spell_cast"] = {
 								[135029] = 4,
 								[31707] = 52,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "PET",
 							["serial"] = "Pet-0-3769-1220-31026-78116-0102589DF3",
 							["fight_component"] = true,
 						}, -- [51]
@@ -37170,11 +37170,11 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-98167-00003688B2",
 							["spell_cast"] = {
 								[193635] = 4,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-98167-00003688B2",
+							["last_event"] = 0,
 						}, -- [52]
 						{
 							["flag_original"] = 4370,
@@ -37184,12 +37184,12 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-63508-00003688B9",
 							["spell_cast"] = {
 								[124007] = 1,
 								[124009] = 1,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-63508-00003688B9",
+							["last_event"] = 0,
 						}, -- [53]
 						{
 							["flag_original"] = 8468,
@@ -37199,26 +37199,26 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-97022-00003688BA",
 							["spell_cast"] = {
 								[191726] = 1,
 								[191732] = 4,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-97022-00003688BA",
+							["last_event"] = 0,
 						}, -- [54]
 						{
 							["flag_original"] = 4372,
 							["ownerName"] = "Taube-Frostmane",
 							["nome"] = "Chi-Ji <Taube-Frostmane>",
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["spell_cast"] = {
 								[198766] = 25,
 								[198764] = 74,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "PET",
 							["serial"] = "Creature-0-3769-1220-31026-100868-00003688BD",
 							["fight_component"] = true,
 						}, -- [55]
@@ -37230,11 +37230,11 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-97022-00003688BF",
 							["spell_cast"] = {
 								[191732] = 5,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-97022-00003688BF",
+							["last_event"] = 0,
 						}, -- [56]
 						{
 							["flag_original"] = 8468,
@@ -37244,11 +37244,11 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-95061-00003688C5",
 							["spell_cast"] = {
 								[57984] = 20,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-95061-00003688C5",
+							["last_event"] = 0,
 						}, -- [57]
 						{
 							["flag_original"] = 8468,
@@ -37258,12 +37258,12 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-416-00003688C9",
 							["spell_cast"] = {
 								[89808] = 1,
 								[3110] = 16,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-416-00003688C9",
+							["last_event"] = 0,
 						}, -- [58]
 						{
 							["flag_original"] = 8468,
@@ -37273,25 +37273,25 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3769-1220-31026-11859-00003688CA",
 							["spell_cast"] = {
 								[22987] = 1,
 								[85692] = 11,
 							},
+							["serial"] = "Creature-0-3769-1220-31026-11859-00003688CA",
+							["last_event"] = 0,
 						}, -- [59]
 						{
 							["flag_original"] = 8468,
 							["ownerName"] = "Pixelina-Magtheridon",
 							["nome"] = "T'uure <Pixelina-Magtheridon>",
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["spell_cast"] = {
 								[196687] = 2,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "PET",
 							["serial"] = "Creature-0-3769-1220-31026-99904-00003688DF",
 							["fight_component"] = true,
 						}, -- [60]
@@ -37299,15 +37299,15 @@ _detalhes_database = {
 							["flag_original"] = 4372,
 							["ownerName"] = "Zoremet-Ravencrest",
 							["nome"] = "Chi-Ji <Zoremet-Ravencrest>",
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["spell_cast"] = {
 								[198766] = 16,
 								[198764] = 45,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "PET",
 							["serial"] = "Creature-0-3769-1220-31026-100868-00003688F3",
 							["fight_component"] = true,
 						}, -- [61]
@@ -37346,8 +37346,8 @@ _detalhes_database = {
 					["Alberich-Frostmane"] = true,
 					["Raeyven-TheMaelstrom"] = true,
 					["Owein"] = true,
+					["Koryô-Ghostlands"] = true,
 					["Velour-DunModr"] = true,
-					["Elmena-Ragnaros"] = true,
 					["Necromanus-Frostmane"] = true,
 					["Letueurre-Chantséternels"] = true,
 					["Мэинстрайкх-СтражСмерти"] = true,
@@ -37355,7 +37355,7 @@ _detalhes_database = {
 					["Junebug-Outland"] = true,
 					["Duskz-Ravencrest"] = true,
 					["Weihmann-ArgentDawn"] = true,
-					["Koryô-Ghostlands"] = true,
+					["Elmena-Ragnaros"] = true,
 					["Yeppie-Ravenholdt"] = true,
 					["Blåskin-Trollbane"] = true,
 					["Монтароник-Голдринн"] = true,
@@ -37472,7 +37472,7 @@ _detalhes_database = {
 				["enemy"] = "Si'vash",
 				["combat_counter"] = 45158,
 				["totals"] = {
-					1468860858.88125, -- [1]
+					1468860858.8692, -- [1]
 					208781518.984363, -- [2]
 					{
 						0, -- [1]
@@ -37631,8 +37631,8 @@ _detalhes_database = {
 							["Alberich-Frostmane"] = 1365016.005239,
 							["Paulie-SteamwheedleCartel"] = 19742072.008248,
 							["Owein"] = 1300916.0041,
+							["Elmena-Ragnaros"] = 35946995.003406,
 							["Velour-DunModr"] = 18307568.00688,
-							["Koryô-Ghostlands"] = 47986711.002132,
 							["Raeyven-TheMaelstrom"] = 53578442.004217,
 							["Letueurre-Chantséternels"] = 4665914.00397,
 							["Duskz-Ravencrest"] = 54681735.007495,
@@ -37641,7 +37641,7 @@ _detalhes_database = {
 							["Talismano-Pozzodell'Eternità"] = 36879191.008729,
 							["Weihmann-ArgentDawn"] = 27157305.003572,
 							["Necromanus-Frostmane"] = 102524826.001484,
-							["Elmena-Ragnaros"] = 35946995.003406,
+							["Koryô-Ghostlands"] = 47986711.002132,
 							["Blåskin-Trollbane"] = 23838676.003304,
 							["Minusfifty-Silvermoon"] = 40218209.004769,
 							["Dedalos-Lightbringer"] = 693294.007521,
@@ -37737,9 +37737,9 @@ _detalhes_database = {
 		},
 	},
 	["ignore_nicktag"] = false,
-	["last_encounter"] = "Star Augur Etraeus",
-	["last_instance_time"] = 1496691997,
-	["combat_counter"] = 45163,
+	["last_version"] = "v7.2.0.3703",
+	["last_day"] = "08",
+	["combat_counter"] = 45167,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -37951,12 +37951,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_kick", -- [4]
 					["id"] = 1705,
 				},
-				["-7963"] = {
-					"-7963", -- [1]
-					"Deafening Screech", -- [2]
-					14, -- [3]
-					"Interface\\ICONS\\Ability_Vehicle_SonicShockwave.blp", -- [4]
-					["id"] = 1599,
+				["144563"] = {
+					"144563", -- [1]
+					"Imprison", -- [2]
+					52.5, -- [3]
+					"Interface\\Icons\\sha_ability_rogue_sturdyrecuperate", -- [4]
+					["id"] = 1604,
 				},
 				["drakes"] = {
 					"drakes", -- [1]
@@ -37986,19 +37986,19 @@ _detalhes_database = {
 					"Interface\\ICONS\\INV_Enchant_EssenceAstralSmall.blp", -- [4]
 					["id"] = 1598,
 				},
-				["144563"] = {
-					"144563", -- [1]
-					"Imprison", -- [2]
-					52.5, -- [3]
-					"Interface\\Icons\\sha_ability_rogue_sturdyrecuperate", -- [4]
-					["id"] = 1604,
+				["186961"] = {
+					"186961", -- [1]
+					"Nether Banish", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
+					["id"] = 1799,
 				},
-				["143491"] = {
-					"143491", -- [1]
-					"Calamity", -- [2]
-					29, -- [3]
-					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
-					["id"] = 1598,
+				["181508"] = {
+					"181508", -- [1]
+					"Seed of Destruction", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\Spell_Shadow_SeedOfDestruction", -- [4]
+					["id"] = 1777,
 				},
 				["181799"] = {
 					"181799", -- [1]
@@ -38273,12 +38273,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1785,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
-					["id"] = 1794,
+				["158605"] = {
+					"158605", -- [1]
+					"Mark of Chaos", -- [2]
+					34, -- [3]
+					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
+					["id"] = 1705,
 				},
 				["159250"] = {
 					"159250", -- [1]
@@ -38315,12 +38315,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_butcher_gushingwounds", -- [4]
 					["id"] = 1706,
 				},
-				["berserk"] = {
-					"berserk", -- [1]
-					"Berserk", -- [2]
-					600, -- [3]
-					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
-					["id"] = 1785,
+				["144070"] = {
+					"144070", -- [1]
+					"Ashen Wall", -- [2]
+					32.2, -- [3]
+					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
+					["id"] = 1606,
 				},
 				["158986"] = {
 					"158986", -- [1]
@@ -38329,12 +38329,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_fixated_state_red", -- [4]
 					["id"] = 1721,
 				},
-				["144070"] = {
-					"144070", -- [1]
-					"Ashen Wall", -- [2]
-					32.2, -- [3]
-					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
-					["id"] = 1606,
+				["berserk"] = {
+					"berserk", -- [1]
+					"Berserk", -- [2]
+					600, -- [3]
+					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
+					["id"] = 1785,
 				},
 				["156157"] = {
 					"156157", -- [1]
@@ -38434,19 +38434,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Magic_ManaGain", -- [4]
 					["id"] = 1720,
 				},
+				["181354"] = {
+					"181354", -- [1]
+					"Glaive Combo", -- [2]
+					45, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Challange", -- [4]
+					["id"] = 1795,
+				},
 				["-9921"] = {
 					"-9921", -- [1]
 					"Gorian Reaver", -- [2]
 					15, -- [3]
 					"Interface\\Icons\\ability_warrior_shieldbreak", -- [4]
 					["id"] = 1705,
-				},
-				["arena_sweeper"] = {
-					"arena_sweeper", -- [1]
-					"Arena Sweeper", -- [2]
-					55, -- [3]
-					"Interface\\Icons\\ability_kick", -- [4]
-					["id"] = 1721,
 				},
 				["144400"] = {
 					"144400", -- [1]
@@ -38455,12 +38455,12 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
 					["id"] = 1604,
 				},
-				["181354"] = {
-					"181354", -- [1]
-					"Glaive Combo", -- [2]
-					45, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Challange", -- [4]
-					["id"] = 1795,
+				["arena_sweeper"] = {
+					"arena_sweeper", -- [1]
+					"Arena Sweeper", -- [2]
+					55, -- [3]
+					"Interface\\Icons\\ability_kick", -- [4]
+					["id"] = 1721,
 				},
 				["181296"] = {
 					"181296", -- [1]
@@ -38616,12 +38616,12 @@ _detalhes_database = {
 					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
 					["id"] = 1623,
 				},
-				["demolisher"] = {
-					"demolisher", -- [1]
-					"Demolisher", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\ability_vehicle_siegeenginecannon", -- [4]
-					["id"] = 1622,
+				["162186"] = {
+					"162186", -- [1]
+					"Expel Magic: Arcane", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
+					["id"] = 1723,
 				},
 				["-8325"] = {
 					"-8325", -- [1]
@@ -38637,12 +38637,12 @@ _detalhes_database = {
 					"Interface\\Icons\\warlock_summon_doomguard", -- [4]
 					["id"] = 1799,
 				},
-				["162186"] = {
-					"162186", -- [1]
-					"Expel Magic: Arcane", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
-					["id"] = 1723,
+				["143701"] = {
+					"143701", -- [1]
+					"Whirling", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\Ability_Druid_GaleWinds", -- [4]
+					["id"] = 1593,
 				},
 				["180221"] = {
 					"180221", -- [1]
@@ -38651,12 +38651,12 @@ _detalhes_database = {
 					"Interface\\Icons\\achievement_zone_cataclysmgreen", -- [4]
 					["id"] = 1794,
 				},
-				["182225"] = {
-					"182225", -- [1]
-					"Rain of Chaos", -- [2]
-					62, -- [3]
-					"Interface\\Icons\\ability_warlock_burningembersgreen", -- [4]
-					["id"] = 1799,
+				["-8220"] = {
+					"-8220", -- [1]
+					"Look Within", -- [2]
+					60, -- [3]
+					"Interface\\Icons\\ability_titankeeper_testofconfidence", -- [4]
+					["id"] = 1624,
 				},
 				["188510"] = {
 					"188510", -- [1]
@@ -38742,19 +38742,19 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_shaman_staticshock", -- [4]
 					["id"] = 1601,
 				},
-				["144758"] = {
-					"144758", -- [1]
-					"Desecrate", -- [2]
-					11, -- [3]
-					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
-					["id"] = 1623,
+				["144498"] = {
+					"144498", -- [1]
+					"Explosive Tar", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\spell_yorsahj_bloodboil_black", -- [4]
+					["id"] = 1600,
 				},
-				["-8220"] = {
-					"-8220", -- [1]
-					"Look Within", -- [2]
-					60, -- [3]
-					"Interface\\Icons\\ability_titankeeper_testofconfidence", -- [4]
-					["id"] = 1624,
+				["180004"] = {
+					"180004", -- [1]
+					"Enforcer's Onslaught", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
+					["id"] = 1784,
 				},
 				["144328"] = {
 					"144328", -- [1]
@@ -38770,12 +38770,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_warlock_soullink", -- [4]
 					["id"] = 1799,
 				},
-				["142851"] = {
-					"142851", -- [1]
-					"Adds (1)", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\spell_nature_earthquake", -- [4]
-					["id"] = 1595,
+				["143503"] = {
+					"143503", -- [1]
+					"<Cast: War Song>", -- [2]
+					3, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
+					["id"] = 1603,
 				},
 				["nil"] = {
 					"nil", -- [1]
@@ -38805,12 +38805,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
 					["id"] = 1788,
 				},
-				["144498"] = {
-					"144498", -- [1]
-					"Explosive Tar", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\spell_yorsahj_bloodboil_black", -- [4]
-					["id"] = 1600,
+				["143502"] = {
+					"143502", -- [1]
+					"Execute", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\INV_Sword_48", -- [4]
+					["id"] = 1603,
 				},
 				["179583"] = {
 					"179583", -- [1]
@@ -38833,12 +38833,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_fel_incinerate", -- [4]
 					["id"] = 1800,
 				},
-				["180004"] = {
-					"180004", -- [1]
-					"Enforcer's Onslaught", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
-					["id"] = 1784,
+				["182225"] = {
+					"182225", -- [1]
+					"Rain of Chaos", -- [2]
+					62, -- [3]
+					"Interface\\Icons\\ability_warlock_burningembersgreen", -- [4]
+					["id"] = 1799,
 				},
 				["78006"] = {
 					"78006", -- [1]
@@ -38847,12 +38847,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1024,
 				},
-				["143337"] = {
-					"143337", -- [1]
-					"Mutate", -- [2]
-					23, -- [3]
-					"Interface\\Icons\\ability_rikkal_genetics", -- [4]
-					["id"] = 1593,
+				["142851"] = {
+					"142851", -- [1]
+					"Adds (1)", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\spell_nature_earthquake", -- [4]
+					["id"] = 1595,
 				},
 				["181973"] = {
 					"181973", -- [1]
@@ -38910,12 +38910,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
 					["id"] = 1798,
 				},
-				["143503"] = {
-					"143503", -- [1]
-					"<Cast: War Song>", -- [2]
-					3, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
-					["id"] = 1603,
+				["143337"] = {
+					"143337", -- [1]
+					"Mutate", -- [2]
+					23, -- [3]
+					"Interface\\Icons\\ability_rikkal_genetics", -- [4]
+					["id"] = 1593,
 				},
 				["158057"] = {
 					"158057", -- [1]
@@ -38945,12 +38945,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_whirlwind", -- [4]
 					["id"] = 1719,
 				},
-				["148677"] = {
-					"148677", -- [1]
-					"Reave", -- [2]
-					42, -- [3]
-					"Interface\\Icons\\ability_whirlwind", -- [4]
-					["id"] = 1593,
+				["143428"] = {
+					"143428", -- [1]
+					"Tail Lash", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\Ability_CriticalStrike", -- [4]
+					["id"] = 1599,
 				},
 				["190050"] = {
 					"190050", -- [1]
@@ -38987,12 +38987,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_MindShear", -- [4]
 					["id"] = 1598,
 				},
-				["184681"] = {
-					"184681", -- [1]
-					"Wailing Horror (1)", -- [2]
-					75, -- [3]
-					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
-					["id"] = 1798,
+				["79339"] = {
+					"79339", -- [1]
+					"Explosive Cinders", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
+					["id"] = 1026,
 				},
 				["towers"] = {
 					"towers", -- [1]
@@ -39001,12 +39001,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Achievement_Character_Orc_Male", -- [4]
 					["id"] = 1622,
 				},
-				["142826"] = {
-					"142826", -- [1]
-					"Arcing Smash (1)", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\spell_shaman_earthquake", -- [4]
-					["id"] = 1595,
+				["148677"] = {
+					"148677", -- [1]
+					"Reave", -- [2]
+					42, -- [3]
+					"Interface\\Icons\\ability_whirlwind", -- [4]
+					["id"] = 1593,
 				},
 				["143436"] = {
 					"143436", -- [1]
@@ -39029,12 +39029,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_creature_poison_02", -- [4]
 					["id"] = 1606,
 				},
-				["143428"] = {
-					"143428", -- [1]
-					"Tail Lash", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\Ability_CriticalStrike", -- [4]
-					["id"] = 1599,
+				["142826"] = {
+					"142826", -- [1]
+					"Arcing Smash (1)", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\spell_shaman_earthquake", -- [4]
+					["id"] = 1595,
 				},
 				["-11462"] = {
 					"-11462", -- [1]
@@ -39078,12 +39078,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_titankeeper_uncheckedcorruption", -- [4]
 					["id"] = 1623,
 				},
-				["phase"] = {
-					"phase", -- [1]
-					"Next phase", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
-					["id"] = 1025,
+				["living_mushroom"] = {
+					"living_mushroom", -- [1]
+					"Living Mushroom", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\inv_misc_starspecklemushroom", -- [4]
+					["id"] = 1720,
 				},
 				["182459"] = {
 					"182459", -- [1]
@@ -39099,12 +39099,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
 					["id"] = 1722,
 				},
-				["79339"] = {
-					"79339", -- [1]
-					"Explosive Cinders", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
-					["id"] = 1026,
+				["184681"] = {
+					"184681", -- [1]
+					"Wailing Horror (1)", -- [2]
+					75, -- [3]
+					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
+					["id"] = 1798,
 				},
 				["172747"] = {
 					"172747", -- [1]
@@ -39113,12 +39113,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_frost_frozenorb", -- [4]
 					["id"] = 1723,
 				},
-				["143502"] = {
-					"143502", -- [1]
-					"Execute", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\INV_Sword_48", -- [4]
-					["id"] = 1603,
+				["144758"] = {
+					"144758", -- [1]
+					"Desecrate", -- [2]
+					11, -- [3]
+					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
+					["id"] = 1623,
 				},
 				["160013"] = {
 					"160013", -- [1]
@@ -39141,12 +39141,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_SummonVoidWalker", -- [4]
 					["id"] = 1798,
 				},
-				["living_mushroom"] = {
-					"living_mushroom", -- [1]
-					"Living Mushroom", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\inv_misc_starspecklemushroom", -- [4]
-					["id"] = 1720,
+				["phase"] = {
+					"phase", -- [1]
+					"Next phase", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
+					["id"] = 1025,
 				},
 				["180224"] = {
 					"180224", -- [1]
@@ -39211,12 +39211,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_sandstorm", -- [4]
 					["id"] = 1784,
 				},
-				["143701"] = {
-					"143701", -- [1]
-					"Whirling", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\Ability_Druid_GaleWinds", -- [4]
-					["id"] = 1593,
+				["demolisher"] = {
+					"demolisher", -- [1]
+					"Demolisher", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\ability_vehicle_siegeenginecannon", -- [4]
+					["id"] = 1622,
 				},
 				["182020"] = {
 					"182020", -- [1]
@@ -39372,12 +39372,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_FocusedPower", -- [4]
 					["id"] = 1800,
 				},
-				["158605"] = {
-					"158605", -- [1]
-					"Mark of Chaos", -- [2]
-					34, -- [3]
-					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
-					["id"] = 1705,
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+					["id"] = 1794,
 				},
 				["179711"] = {
 					"179711", -- [1]
@@ -39442,19 +39442,19 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
 					["id"] = 1785,
 				},
-				["186961"] = {
-					"186961", -- [1]
-					"Nether Banish", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
-					["id"] = 1799,
+				["-7963"] = {
+					"-7963", -- [1]
+					"Deafening Screech", -- [2]
+					14, -- [3]
+					"Interface\\ICONS\\Ability_Vehicle_SonicShockwave.blp", -- [4]
+					["id"] = 1599,
 				},
-				["181508"] = {
-					"181508", -- [1]
-					"Seed of Destruction", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\Spell_Shadow_SeedOfDestruction", -- [4]
-					["id"] = 1777,
+				["185237"] = {
+					"185237", -- [1]
+					"Touch of Harm", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
+					["id"] = 1784,
 				},
 				["81272"] = {
 					"81272", -- [1]
@@ -39470,12 +39470,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
 					["id"] = 1787,
 				},
-				["185237"] = {
-					"185237", -- [1]
-					"Touch of Harm", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
-					["id"] = 1784,
+				["143491"] = {
+					"143491", -- [1]
+					"Calamity", -- [2]
+					29, -- [3]
+					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
+					["id"] = 1598,
 				},
 				["180199"] = {
 					"180199", -- [1]
@@ -40799,23 +40799,31 @@ _detalhes_database = {
 		},
 	},
 	["character_data"] = {
-		["logons"] = 4602,
+		["logons"] = 4606,
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
+	["force_font_outline"] = "",
 	["announce_firsthit"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 	},
-	["last_version"] = "v7.2.0.3703",
+	["savedbuffs"] = {
+	},
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 156,
 	["savedStyles"] = {
 	},
-	["force_font_outline"] = "",
-	["savedbuffs"] = {
+	["last_encounter"] = "Star Augur Etraeus",
+	["cached_talents"] = {
+		["Player-1303-042451A8"] = {
+			19232, -- [1]
+			19217, -- [2]
+			19218, -- [3]
+			21207, -- [4]
+			19227, -- [5]
+			19221, -- [6]
+			22014, -- [7]
+		},
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -40823,7 +40831,7 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 3,
 	},
-	["last_day"] = "07",
+	["last_instance_time"] = 1496691997,
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -40925,16 +40933,8 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["cached_talents"] = {
-		["Player-1303-042451A8"] = {
-			19232, -- [1]
-			19217, -- [2]
-			19218, -- [3]
-			21207, -- [4]
-			19227, -- [5]
-			19221, -- [6]
-			22014, -- [7]
-		},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
@@ -40950,39 +40950,5 @@ _detalhes_database = {
 	["last_instance_id"] = 1466,
 	["cached_specs"] = {
 		["Player-1303-042451A8"] = 250,
-		["Player-1329-04E92F88"] = 105,
-		["Player-1388-029E468E"] = 267,
-		["Player-1329-05FA0F6C"] = 259,
-		["Player-1096-0769694B"] = 577,
-		["Player-1378-08AB8037"] = 265,
-		["Player-1389-04AFF839"] = 269,
-		["Player-3391-07D062F2"] = 73,
-		["Player-1300-08795EA3"] = 577,
-		["Player-1416-06372D5C"] = 260,
-		["Player-1928-0987C421"] = 577,
-		["Player-1385-055F9E64"] = 63,
-		["Player-1588-0A019E09"] = 259,
-		["Player-3682-07FC31D2"] = 262,
-		["Player-1596-08380B27"] = 261,
-		["Player-1300-0903FC0C"] = 265,
-		["Player-1309-04A4EB65"] = 251,
-		["Player-1303-04ECA853"] = 270,
-		["Player-3391-068B41E0"] = 102,
-		["Player-1085-068546C0"] = 265,
-		["Player-1925-09AE32B4"] = 577,
-		["Player-3702-063494E9"] = 71,
-		["Player-1929-04D85C8B"] = 254,
-		["Player-1300-0843CF1A"] = 270,
-		["Player-1402-0649416F"] = 577,
-		["Player-3391-0909A332"] = 259,
-		["Player-1329-05B58D15"] = 270,
-		["Player-3681-06FBFD12"] = 257,
-		["Player-3674-07853210"] = 251,
-		["Player-1301-08E15E76"] = 261,
-		["Player-1602-0122F2B3"] = 262,
-		["Player-1316-07C88D0F"] = 251,
-		["Player-1928-0587DBCF"] = 261,
-		["Player-1303-07438012"] = 252,
-		["Player-1598-06608BAC"] = 258,
 	},
 }

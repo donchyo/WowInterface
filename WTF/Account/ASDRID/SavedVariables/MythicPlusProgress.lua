@@ -2,17 +2,17 @@
 MythicPlusProgressDB = {
 	["settings"] = {
 		["enableTooltip"] = true,
+		["enabled"] = true,
 		["inconclusiveDataThreshold"] = 100,
-		["maxTimeSinceKill"] = 600,
-		["enablePullEstimate"] = true,
+		["enableNameplateText"] = true,
 		["nameplateUpdateRate"] = 200,
 		["dbVersion"] = 6,
 		["version"] = "0.3e",
-		["nameplateTextColor"] = "FFFFFF",
+		["enablePullEstimate"] = true,
 		["tooltipColor"] = "82E0FF",
-		["enableNameplateText"] = true,
+		["nameplateTextColor"] = "FFFFFF",
 		["pullEstimateCombatOnly"] = true,
-		["enabled"] = true,
+		["maxTimeSinceKill"] = 600,
 	},
 	["npcData"] = {
 		{
@@ -45,7 +45,7 @@ MythicPlusProgressDB = {
 		},
 		[98954] = {
 			["values"] = {
-				[4] = 60,
+				[4] = 66,
 			},
 			["name"] = "Felsworn Myrmidon",
 		},
@@ -85,7 +85,7 @@ MythicPlusProgressDB = {
 		},
 		[115418] = {
 			["values"] = {
-				[8] = 1,
+				[8] = 2,
 			},
 			["name"] = "Spider",
 		},
@@ -106,9 +106,9 @@ MythicPlusProgressDB = {
 				0.5625, -- [1]
 				[8] = 0.2373046875,
 				[10] = 12.39453125,
-				[3] = 0.000564407593623754,
-				[9] = 0.00422828258524535,
 				[5] = 0.003171211938934,
+				[9] = 0.00422828258524535,
+				[3] = 0.000564407593623754,
 			},
 			["name"] = "Felbound Enforcer",
 		},
@@ -153,7 +153,7 @@ MythicPlusProgressDB = {
 		},
 		[97043] = {
 			["values"] = {
-				[4] = 34,
+				[4] = 35,
 			},
 			["name"] = "Seacursed Slaver",
 		},
@@ -252,8 +252,8 @@ MythicPlusProgressDB = {
 		[113699] = {
 			["values"] = {
 				[5] = 2.38378314942520e-005,
-				[8] = 43.625,
 				[3] = 0.00751694681821396,
+				[8] = 43.625,
 			},
 			["name"] = "Forgotten Spirit",
 		},
@@ -299,11 +299,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Dreadborne Seer",
 		},
-		[105699] = {
+		[98173] = {
 			["values"] = {
-				[3] = 19,
+				[4] = 1,
 			},
-			["name"] = "Mana Saber",
+			["name"] = "Mystic Ssa'veh",
 		},
 		[92168] = {
 			["values"] = {
@@ -311,11 +311,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Target Dummy Test2",
 		},
-		[118704] = {
+		[105699] = {
 			["values"] = {
-				[10] = 2,
+				[3] = 19,
 			},
-			["name"] = "Dul'zak",
+			["name"] = "Mana Saber",
 		},
 		[105715] = {
 			["values"] = {
@@ -326,17 +326,18 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Watchful Inquisitor",
 		},
-		[96611] = {
+		[91001] = {
 			["values"] = {
-				[2] = 17,
+				[4] = 56,
 			},
-			["name"] = "Angerhoof Bull",
+			["name"] = "Tarspitter Lurker",
 		},
-		[98926] = {
+		[115388] = {
 			["values"] = {
-				[4] = 88,
+				2.5, -- [1]
+				[12] = 0.75,
 			},
-			["name"] = "Shadow Hunter",
+			["name"] = "King",
 		},
 		[98368] = {
 			["values"] = {
@@ -350,24 +351,21 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Valarjar Mystic",
 		},
-		[121569] = {
+		[101679] = {
 			["values"] = {
-				[4] = 8,
+				[4] = 61,
 			},
-			["name"] = "Vilebark Walker",
+			["name"] = "Dreadsoul Poisoner",
 		},
-		[91786] = {
+		[98926] = {
 			["values"] = {
-				0.329769711010157, -- [1]
-				0.056313514709473, -- [2]
-				nil, -- [3]
-				10.5625, -- [4]
+				[4] = 92,
 			},
-			["name"] = "Gritslime Snail",
+			["name"] = "Shadow Hunter",
 		},
 		[98177] = {
 			["values"] = {
-				[12] = 20,
+				[12] = 21,
 			},
 			["name"] = "Glayvianna Soulrender",
 		},
@@ -403,21 +401,9 @@ MythicPlusProgressDB = {
 		},
 		[114338] = {
 			["values"] = {
-				[10] = 13,
+				[10] = 17,
 			},
 			["name"] = "Mana Confluence",
-		},
-		[95771] = {
-			["values"] = {
-				[4] = 82,
-			},
-			["name"] = "Dreadsoul Ruiner",
-		},
-		[114625] = {
-			["values"] = {
-				116, -- [1]
-			},
-			["name"] = "Phantom Guest",
 		},
 		[113111] = {
 			["values"] = {
@@ -425,27 +411,40 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Saltscale Swarmer",
 		},
-		[118716] = {
+		[114625] = {
 			["values"] = {
-				[4] = 7,
+				116, -- [1]
 			},
-			["name"] = "Bilespray Lasher",
+			["name"] = "Phantom Guest",
 		},
-		[118700] = {
+		[95771] = {
 			["values"] = {
-				[2] = 12,
+				[4] = 82,
 			},
-			["name"] = "Felblight Stalker",
+			["name"] = "Dreadsoul Ruiner",
+		},
+		[95766] = {
+			["values"] = {
+				[4] = 34,
+			},
+			["name"] = "Crazed Razorbeak",
+		},
+		[98810] = {
+			["values"] = {
+				[6] = 42.1875,
+				[5] = 0.0774630952334972,
+			},
+			["name"] = "Wrathguard Bladelord",
 		},
 		[96584] = {
 			["values"] = {
-				[4] = 58,
+				[4] = 60,
 			},
 			["name"] = "Immoliant Fury",
 		},
 		[97365] = {
 			["values"] = {
-				[4] = 36,
+				[4] = 39,
 			},
 			["name"] = "Seacursed Mistmender",
 		},
@@ -458,15 +457,16 @@ MythicPlusProgressDB = {
 		},
 		[115757] = {
 			["values"] = {
-				[8] = 4,
+				[8] = 5,
 			},
 			["name"] = "Wrathguard Flamebringer",
 		},
-		[91787] = {
+		[115486] = {
 			["values"] = {
-				9, -- [1]
+				[8] = 3,
+				[5] = 1,
 			},
-			["name"] = "Cove Seagull",
+			["name"] = "Erudite Slayer",
 		},
 		[96664] = {
 			["values"] = {
@@ -513,7 +513,7 @@ MythicPlusProgressDB = {
 		},
 		[114626] = {
 			["values"] = {
-				[4] = 11,
+				[4] = 13,
 			},
 			["name"] = "Forlorn Spirit",
 		},
@@ -547,24 +547,26 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Unknown",
 		},
-		[115831] = {
+		[100531] = {
 			["values"] = {
-				0.100188254358353, -- [1]
-				[4] = 29.5625,
+				[8] = 31,
 			},
-			["name"] = "Mana Devourer",
+			["name"] = "Bloodtainted Fury",
 		},
-		[92610] = {
+		[97200] = {
 			["values"] = {
-				[4] = 15,
+				5.65044894678560e-005, -- [1]
+				0.0237572640180588, -- [2]
+				nil, -- [3]
+				40.375, -- [4]
 			},
-			["name"] = "Understone Drummer",
+			["name"] = "Seacursed Soulkeeper",
 		},
-		[114542] = {
+		[114541] = {
 			["values"] = {
-				[4] = 7,
+				20, -- [1]
 			},
-			["name"] = "Ghostly Philanthropist",
+			["name"] = "Spectral Patron",
 		},
 		[105845] = {
 			["values"] = {
@@ -573,18 +575,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Glowing Spiderling",
 		},
-		[97678] = {
+		[113998] = {
 			["values"] = {
-				0.00422828258524534, -- [1]
-				0.0755079919745145, -- [2]
-				0.31640625, -- [3]
-				0.75178380671565, -- [4]
-				nil, -- [5]
-				0.00237840895420052, -- [6]
-				0.0589973023134009, -- [7]
-				7.13018262386322, -- [8]
+				[4] = 13,
 			},
-			["name"] = "Aranasi Broodmother",
+			["name"] = "Mightstone Breaker",
 		},
 		[114802] = {
 			["values"] = {
@@ -598,11 +593,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Soul-Torn Champion",
 		},
-		[116549] = {
+		[119978] = {
 			["values"] = {
-				[4] = 14,
+				16, -- [1]
 			},
-			["name"] = "Backup Singer",
+			["name"] = "Fulminating Lasher",
 		},
 		[98275] = {
 			["values"] = {
@@ -611,15 +606,16 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Risen Archer",
 		},
-		[95861] = {
+		[91781] = {
 			["values"] = {
-				[4] = 62,
+				[4] = 77.75,
+				[2] = 2.568559529529520e-007,
 			},
-			["name"] = "Hatecoil Oracle",
+			["name"] = "Hatecoil Warrior",
 		},
 		[114627] = {
 			["values"] = {
-				[4] = 5,
+				[4] = 6,
 			},
 			["name"] = "Shrieking Terror",
 		},
@@ -636,11 +632,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Rotheart Keeper",
 		},
-		[102781] = {
+		[101074] = {
 			["values"] = {
-				[4] = 6,
+				9, -- [1]
 			},
-			["name"] = "Fel Bat Pup",
+			["name"] = "Hatespawn Whelpling",
 		},
 		[120556] = {
 			["values"] = {
@@ -648,12 +644,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Dreadwing",
 		},
-		[114636] = {
+		[91008] = {
 			["values"] = {
-				[3] = 0.00563771011366045,
-				[4] = 18,
+				[4] = 69,
 			},
-			["name"] = "Phantom Guardsman",
+			["name"] = "Rockbound Pelter",
 		},
 		[115488] = {
 			["values"] = {
@@ -661,14 +656,13 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Infused Pyromancer",
 		},
-		[105682] = {
+		[99307] = {
 			["values"] = {
-				[8] = 16.6258544921875,
-				[6] = 0.141357997717304,
-				[4] = 0.416519165039063,
-				[2] = 0.000178582090170017,
+				[10] = 1.302978515625,
+				[12] = 3.86328125,
+				[6] = 0.177978515625,
 			},
-			["name"] = "Felguard Destroyer",
+			["name"] = "Skjal",
 		},
 		[104300] = {
 			["values"] = {
@@ -685,11 +679,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Commander Shemdah'sohn",
 		},
-		[106786] = {
+		[119977] = {
 			["values"] = {
-				40, -- [1]
+				[4] = 10,
 			},
-			["name"] = "Bitterbrine Slave",
+			["name"] = "Stranglevine Lasher",
 		},
 		[114803] = {
 			["values"] = {
@@ -711,18 +705,17 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Wrathguard Felblade",
 		},
-		[102404] = {
+		[104251] = {
 			["values"] = {
-				0.00422828258524534, -- [1]
-				[4] = 40,
+				[4] = 54,
 			},
-			["name"] = "Stoneclaw Grubmaster",
+			["name"] = "Duskwatch Sentry",
 		},
-		[96587] = {
+		[97097] = {
 			["values"] = {
-				[4] = 131,
+				[4] = 59,
 			},
-			["name"] = "Felsworn Infester",
+			["name"] = "Helarjar Champion",
 		},
 		[105703] = {
 			["values"] = {
@@ -731,11 +724,12 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Mana Wyrm",
 		},
-		[118724] = {
+		[102404] = {
 			["values"] = {
-				[4] = 10,
+				0.00422828258524534, -- [1]
+				[4] = 40,
 			},
-			["name"] = "Helblaze Felbringer",
+			["name"] = "Stoneclaw Grubmaster",
 		},
 		[99360] = {
 			["values"] = {
@@ -755,11 +749,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "King Bjorn",
 		},
-		[97097] = {
+		[96587] = {
 			["values"] = {
-				[4] = 55,
+				[4] = 136,
 			},
-			["name"] = "Helarjar Champion",
+			["name"] = "Felsworn Infester",
 		},
 		[121318] = {
 			["values"] = {
@@ -767,11 +761,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Fulminating Lasher",
 		},
-		[106546] = {
+		[98691] = {
 			["values"] = {
-				[4] = 1,
+				[4] = 93,
 			},
-			["name"] = "Astral Spark",
+			["name"] = "Risen Scout",
 		},
 		[91790] = {
 			["values"] = {
@@ -791,11 +785,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Tarspitter Grub",
 		},
-		[114334] = {
+		[100441] = {
 			["values"] = {
-				[4] = 3,
+				1, -- [1]
 			},
-			["name"] = "Damaged Golem",
+			["name"] = "Unknown",
 		},
 		[114804] = {
 			["values"] = {
@@ -804,21 +798,17 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Spectral Charger",
 		},
-		[118717] = {
+		[114628] = {
 			["values"] = {
-				[4] = 8.25,
-				[2] = 1,
+				[4] = 23,
 			},
-			["name"] = "Helblaze Imp",
+			["name"] = "Skeletal Waiter",
 		},
-		[100364] = {
+		[91783] = {
 			["values"] = {
-				0.000441184068838499, -- [1]
-				5.650448946785660e-005, -- [2]
-				0.0240747432894721, -- [3]
-				27.9267578125, -- [4]
+				[4] = 65,
 			},
-			["name"] = "Spirit of Vengeance",
+			["name"] = "Hatecoil Stormweaver",
 		},
 		[119952] = {
 			["values"] = {
@@ -826,11 +816,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Felguard Destroyer",
 		},
-		[114252] = {
+		[96657] = {
 			["values"] = {
-				[4] = 5,
+				[12] = 21,
 			},
-			["name"] = "Mana Devourer",
+			["name"] = "Blade Dancer Illianna",
 		},
 		[114629] = {
 			["values"] = {
@@ -844,22 +834,22 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Understone Drudge",
 		},
-		[99956] = {
+		[98681] = {
 			["values"] = {
-				[4] = 3,
+				[6] = 16,
 			},
-			["name"] = "Fel-Infused Fury",
+			["name"] = "Rook Spinner",
 		},
-		[114801] = {
+		[98732] = {
 			["values"] = {
-				[4] = 24,
+				58, -- [1]
 			},
-			["name"] = "Spectral Apprentice",
+			["name"] = "Plagued Rat",
 		},
 		[97677] = {
 			["values"] = {
-				193.0625, -- [1]
-				[4] = 1.808504558722080e-014,
+				200.0625, -- [1]
+				[4] = 2.414062176468010e-015,
 			},
 			["name"] = "Barbed Spiderling",
 		},
@@ -892,7 +882,7 @@ MythicPlusProgressDB = {
 		},
 		[98963] = {
 			["values"] = {
-				244, -- [1]
+				249, -- [1]
 			},
 			["name"] = "Blazing Imp",
 		},
@@ -903,11 +893,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Arcane Warden",
 		},
-		[118703] = {
+		[114783] = {
 			["values"] = {
-				[4] = 12,
+				[4] = 9,
 			},
-			["name"] = "Felborne Botanist",
+			["name"] = "Reformed Maiden",
 		},
 		[98756] = {
 			["values"] = {
@@ -916,24 +906,24 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Arcane Anomaly",
 		},
-		[118714] = {
+		[114634] = {
 			["values"] = {
-				[4] = 8,
+				[4] = 14,
 			},
-			["name"] = "Hellblaze Temptress",
+			["name"] = "Undying Servant",
 		},
 		[98533] = {
 			["values"] = {
-				[10] = 21,
+				[10] = 22,
 			},
 			["name"] = "Foul Mother",
 		},
-		[98426] = {
+		[91796] = {
 			["values"] = {
-				[4] = 0.75,
-				[8] = 1,
+				[10] = 10.75,
+				[8] = 0.056313514709473,
 			},
-			["name"] = "Unstable Ooze",
+			["name"] = "Skrog Wavecrasher",
 		},
 		[105705] = {
 			["values"] = {
@@ -948,12 +938,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Felspite Dominator",
 		},
-		[91792] = {
+		[98677] = {
 			["values"] = {
-				[10] = 34.25,
-				[8] = 0.00133785503673778,
+				160, -- [1]
 			},
-			["name"] = "Stormwake Hydra",
+			["name"] = "Rook Spiderling",
 		},
 		[97083] = {
 			["values"] = {
@@ -983,11 +972,30 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Embershard Scorpion",
 		},
-		[98677] = {
+		[91792] = {
 			["values"] = {
-				160, -- [1]
+				[10] = 34.25,
+				[8] = 0.00133785503673778,
 			},
-			["name"] = "Rook Spiderling",
+			["name"] = "Stormwake Hydra",
+		},
+		[92350] = {
+			["values"] = {
+				[4] = 10,
+			},
+			["name"] = "Understone Drudge",
+		},
+		[100529] = {
+			["values"] = {
+				374, -- [1]
+			},
+			["name"] = "Hatespawn Slime",
+		},
+		[95920] = {
+			["values"] = {
+				[2] = 1,
+			},
+			["name"] = "Animated Storm",
 		},
 		[100526] = {
 			["values"] = {
@@ -997,24 +1005,6 @@ MythicPlusProgressDB = {
 				6.08399784564972, -- [4]
 			},
 			["name"] = "Tormented Bloodseeker",
-		},
-		[101549] = {
-			["values"] = {
-				30, -- [1]
-			},
-			["name"] = "Arcane Minion",
-		},
-		[95920] = {
-			["values"] = {
-				[2] = 1,
-			},
-			["name"] = "Animated Storm",
-		},
-		[102566] = {
-			["values"] = {
-				[12] = 26,
-			},
-			["name"] = "Grimhorn the Enslaver",
 		},
 		[105629] = {
 			["values"] = {
@@ -1030,13 +1020,13 @@ MythicPlusProgressDB = {
 		},
 		[102104] = {
 			["values"] = {
-				[4] = 14,
+				[4] = 16,
 			},
 			["name"] = "Enslaved Shieldmaiden",
 		},
 		[102375] = {
 			["values"] = {
-				[3] = 20,
+				[3] = 23,
 			},
 			["name"] = "Runecarver Slave",
 		},
@@ -1048,11 +1038,13 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Priestess of Misery",
 		},
-		[106787] = {
+		[96574] = {
 			["values"] = {
-				37, -- [1]
+				1.78783736206890e-005, -- [1]
+				[5] = 35.25,
+				[3] = 0.000178582090170017,
 			},
-			["name"] = "Bitterbrine Slave",
+			["name"] = "Stormforged Sentinel",
 		},
 		[97068] = {
 			["values"] = {
@@ -1066,18 +1058,21 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "King Tor",
 		},
-		[115765] = {
+		[98425] = {
 			["values"] = {
-				[12] = 2.2880859375,
-				[4] = 3.05078125,
+				[4] = 65.5,
+				[2] = 0.000133936567627512,
 			},
-			["name"] = "Abstract Nullifier",
+			["name"] = "Unstable Amalgamation",
 		},
-		[98919] = {
+		[106059] = {
 			["values"] = {
-				[4] = 79,
+				1.353038421957830e-013, -- [1]
+				nil, -- [2]
+				5.695261966737150e-012, -- [3]
+				131.0625, -- [4]
 			},
-			["name"] = "Seacursed Swiftblade",
+			["name"] = "Warp Shade",
 		},
 		[102232] = {
 			["values"] = {
@@ -1090,27 +1085,33 @@ MythicPlusProgressDB = {
 		},
 		[99188] = {
 			["values"] = {
-				[4] = 29,
+				[4] = 32,
 			},
 			["name"] = "Waterlogged Soul Guard",
 		},
-		[96608] = {
+		[95843] = {
 			["values"] = {
-				[2] = 67,
+				[3] = 0.31640625,
+				[5] = 4,
 			},
-			["name"] = "Ebonclaw Worg",
+			["name"] = "King Haldor",
 		},
-		[91782] = {
+		[95939] = {
 			["values"] = {
-				[10] = 20,
+				[6] = 0.496959686279297,
+				[7] = 0.275831937789917,
+				[8] = 0.87890625,
+				[10] = 2.97500228881836,
+				[9] = 0.0422351360321048,
+				[2] = 0.177978515625,
 			},
-			["name"] = "Hatecoil Crusher",
+			["name"] = "Skrog Tidestomper",
 		},
-		[102583] = {
+		[98370] = {
 			["values"] = {
-				[4] = 43,
+				[4] = 52,
 			},
-			["name"] = "Fel Scorcher",
+			["name"] = "Ghostly Councilor",
 		},
 		[100527] = {
 			["values"] = {
@@ -1121,11 +1122,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Dreadfire Imp",
 		},
-		[119923] = {
+		[102583] = {
 			["values"] = {
-				[4] = 10,
+				[4] = 44,
 			},
-			["name"] = "Helblaze Soulmender",
+			["name"] = "Fel Scorcher",
 		},
 		[114584] = {
 			["values"] = {
@@ -1167,17 +1168,17 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Valarjar Marksman",
 		},
-		[90997] = {
-			["values"] = {
-				[4] = 81,
-			},
-			["name"] = "Mightstone Breaker",
-		},
 		[95842] = {
 			["values"] = {
 				[2] = 97,
 			},
 			["name"] = "Valarjar Thundercaller",
+		},
+		[114792] = {
+			["values"] = {
+				[4] = 4,
+			},
+			["name"] = "Virtuous Lady",
 		},
 		[99922] = {
 			["values"] = {
@@ -1185,17 +1186,41 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Ebonclaw Packmate",
 		},
-		[105915] = {
+		[96480] = {
 			["values"] = {
-				[4] = 95,
+				323, -- [1]
 			},
-			["name"] = "Nightborne Reclaimer",
+			["name"] = "Viletongue Belcher",
 		},
 		[91794] = {
 			["values"] = {
 				95, -- [1]
 			},
 			["name"] = "Saltscale Lurker",
+		},
+		[102584] = {
+			["values"] = {
+				[4] = 57,
+			},
+			["name"] = "Malignant Defiler",
+		},
+		[91332] = {
+			["values"] = {
+				[4] = 22,
+			},
+			["name"] = "Stoneclaw Hunter",
+		},
+		[97197] = {
+			["values"] = {
+				[2] = 13,
+			},
+			["name"] = "Valarjar Purifier",
+		},
+		[91793] = {
+			["values"] = {
+				144, -- [1]
+			},
+			["name"] = "Seaspray Crab",
 		},
 		[98759] = {
 			["values"] = {
@@ -1206,41 +1231,17 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Vicious Manafang",
 		},
-		[91793] = {
+		[105915] = {
 			["values"] = {
-				144, -- [1]
+				[4] = 95,
 			},
-			["name"] = "Seaspray Crab",
+			["name"] = "Nightborne Reclaimer",
 		},
-		[114792] = {
+		[90997] = {
 			["values"] = {
-				[4] = 4,
+				[4] = 81,
 			},
-			["name"] = "Virtuous Lady",
-		},
-		[97197] = {
-			["values"] = {
-				[2] = 13,
-			},
-			["name"] = "Valarjar Purifier",
-		},
-		[102584] = {
-			["values"] = {
-				[4] = 55,
-			},
-			["name"] = "Malignant Defiler",
-		},
-		[96480] = {
-			["values"] = {
-				314, -- [1]
-			},
-			["name"] = "Viletongue Belcher",
-		},
-		[91332] = {
-			["values"] = {
-				[4] = 22,
-			},
-			["name"] = "Stoneclaw Hunter",
+			["name"] = "Mightstone Breaker",
 		},
 		[114712] = {
 			["values"] = {
@@ -1267,57 +1268,47 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Taintheart Stalker",
 		},
-		[98370] = {
+		[119923] = {
 			["values"] = {
-				[4] = 52,
+				[4] = 10,
 			},
-			["name"] = "Ghostly Councilor",
+			["name"] = "Helblaze Soulmender",
 		},
-		[95939] = {
+		[91782] = {
 			["values"] = {
-				[6] = 0.496959686279297,
-				[7] = 0.275831937789917,
-				[8] = 0.87890625,
-				[10] = 2.97500228881836,
-				[9] = 0.0422351360321048,
-				[2] = 0.177978515625,
+				[10] = 20,
 			},
-			["name"] = "Skrog Tidestomper",
+			["name"] = "Hatecoil Crusher",
 		},
-		[95843] = {
+		[96608] = {
 			["values"] = {
-				[3] = 0.31640625,
-				[5] = 4,
+				[2] = 67,
 			},
-			["name"] = "King Haldor",
+			["name"] = "Ebonclaw Worg",
 		},
-		[106059] = {
+		[98919] = {
 			["values"] = {
-				1.353038421957830e-013, -- [1]
-				nil, -- [2]
-				5.695261966737150e-012, -- [3]
-				131.0625, -- [4]
+				[4] = 61.5,
+				[2] = 1,
 			},
-			["name"] = "Warp Shade",
+			["name"] = "Seacursed Swiftblade",
 		},
-		[98425] = {
+		[115765] = {
 			["values"] = {
-				[4] = 65.5,
-				[2] = 0.000133936567627512,
+				[12] = 2.466064453125,
+				[4] = 3.2880859375,
 			},
-			["name"] = "Unstable Amalgamation",
+			["name"] = "Abstract Nullifier",
 		},
-		[96574] = {
+		[106787] = {
 			["values"] = {
-				1.78783736206890e-005, -- [1]
-				[5] = 35.25,
-				[3] = 0.000178582090170017,
+				37, -- [1]
 			},
-			["name"] = "Stormforged Sentinel",
+			["name"] = "Bitterbrine Slave",
 		},
 		[97182] = {
 			["values"] = {
-				[6] = 18,
+				[6] = 19,
 			},
 			["name"] = "Night Watch Mariner",
 		},
@@ -1329,17 +1320,17 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Acidic Bile",
 		},
-		[100529] = {
+		[101549] = {
 			["values"] = {
-				374, -- [1]
+				30, -- [1]
 			},
-			["name"] = "Hatespawn Slime",
+			["name"] = "Arcane Minion",
 		},
-		[92350] = {
+		[102566] = {
 			["values"] = {
-				[4] = 10,
+				[12] = 27,
 			},
-			["name"] = "Understone Drudge",
+			["name"] = "Grimhorn the Enslaver",
 		},
 		[98521] = {
 			["values"] = {
@@ -1355,24 +1346,24 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Wyrmtongue Scavenger",
 		},
-		[91796] = {
+		[98426] = {
 			["values"] = {
-				[10] = 10.75,
-				[8] = 0.056313514709473,
+				[4] = 0.75,
+				[8] = 1,
 			},
-			["name"] = "Skrog Wavecrasher",
+			["name"] = "Unstable Ooze",
 		},
-		[114634] = {
+		[118714] = {
 			["values"] = {
-				[4] = 14,
+				[4] = 8,
 			},
-			["name"] = "Undying Servant",
+			["name"] = "Hellblaze Temptress",
 		},
-		[114783] = {
+		[118703] = {
 			["values"] = {
-				[4] = 9,
+				[4] = 12,
 			},
-			["name"] = "Reformed Maiden",
+			["name"] = "Felborne Botanist",
 		},
 		[99366] = {
 			["values"] = {
@@ -1395,45 +1386,49 @@ MythicPlusProgressDB = {
 		},
 		[97119] = {
 			["values"] = {
-				87, -- [1]
+				95, -- [1]
 			},
 			["name"] = "Shroud Hound",
 		},
-		[98732] = {
+		[114801] = {
 			["values"] = {
-				58, -- [1]
+				[4] = 24,
 			},
-			["name"] = "Plagued Rat",
+			["name"] = "Spectral Apprentice",
 		},
-		[98681] = {
+		[99956] = {
 			["values"] = {
-				[6] = 16,
+				[4] = 3,
 			},
-			["name"] = "Rook Spinner",
+			["name"] = "Fel-Infused Fury",
 		},
-		[96657] = {
+		[114252] = {
 			["values"] = {
-				[12] = 21,
+				[4] = 6,
 			},
-			["name"] = "Blade Dancer Illianna",
+			["name"] = "Mana Devourer",
 		},
-		[91783] = {
+		[100364] = {
 			["values"] = {
-				[4] = 65,
+				0.000186124529041242, -- [1]
+				2.38378314942520e-005, -- [2]
+				0.010156532325246, -- [3]
+				30.9267578125, -- [4]
 			},
-			["name"] = "Hatecoil Stormweaver",
+			["name"] = "Spirit of Vengeance",
 		},
-		[114628] = {
+		[118717] = {
 			["values"] = {
-				[4] = 23,
+				[4] = 8.25,
+				[2] = 1,
 			},
-			["name"] = "Skeletal Waiter",
+			["name"] = "Helblaze Imp",
 		},
-		[100441] = {
+		[114334] = {
 			["values"] = {
-				1, -- [1]
+				[4] = 4,
 			},
-			["name"] = "Unknown",
+			["name"] = "Damaged Golem",
 		},
 		[121711] = {
 			["values"] = {
@@ -1441,11 +1436,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Bilespray Lasher",
 		},
-		[98691] = {
+		[106546] = {
 			["values"] = {
-				[4] = 93,
+				[4] = 1,
 			},
-			["name"] = "Risen Scout",
+			["name"] = "Astral Spark",
 		},
 		[98538] = {
 			["values"] = {
@@ -1455,41 +1450,43 @@ MythicPlusProgressDB = {
 		},
 		[114364] = {
 			["values"] = {
-				29, -- [1]
+				38, -- [1]
 			},
 			["name"] = "Mana-Gorged Wyrm",
 		},
-		[104251] = {
-			["values"] = {
-				[4] = 54,
-			},
-			["name"] = "Duskwatch Sentry",
-		},
-		[119977] = {
+		[118724] = {
 			["values"] = {
 				[4] = 10,
 			},
-			["name"] = "Stranglevine Lasher",
+			["name"] = "Helblaze Felbringer",
 		},
-		[99307] = {
+		[106786] = {
 			["values"] = {
-				[10] = 1.302978515625,
-				[12] = 3.86328125,
-				[6] = 0.177978515625,
+				40, -- [1]
 			},
-			["name"] = "Skjal",
+			["name"] = "Bitterbrine Slave",
 		},
-		[91008] = {
+		[105682] = {
 			["values"] = {
-				[4] = 69,
+				[8] = 16.6258544921875,
+				[6] = 0.141357997717304,
+				[4] = 0.416519165039063,
+				[2] = 0.000178582090170017,
 			},
-			["name"] = "Rockbound Pelter",
+			["name"] = "Felguard Destroyer",
 		},
-		[101074] = {
+		[114636] = {
 			["values"] = {
-				9, -- [1]
+				[3] = 0.00563771011366045,
+				[4] = 18,
 			},
-			["name"] = "Hatespawn Whelpling",
+			["name"] = "Phantom Guardsman",
+		},
+		[102781] = {
+			["values"] = {
+				[4] = 6,
+			},
+			["name"] = "Fel Bat Pup",
 		},
 		[91000] = {
 			["values"] = {
@@ -1498,45 +1495,49 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Vileshard Hulk",
 		},
-		[91781] = {
+		[95861] = {
 			["values"] = {
-				[4] = 77.75,
-				[2] = 2.568559529529520e-007,
+				[4] = 62,
 			},
-			["name"] = "Hatecoil Warrior",
+			["name"] = "Hatecoil Oracle",
 		},
-		[119978] = {
+		[116549] = {
 			["values"] = {
-				16, -- [1]
+				[4] = 14,
 			},
-			["name"] = "Fulminating Lasher",
+			["name"] = "Backup Singer",
 		},
-		[113998] = {
+		[97678] = {
 			["values"] = {
-				[4] = 13,
+				0.00317121193893401, -- [1]
+				1.07550799197451, -- [2]
+				0.2373046875, -- [3]
+				0.563837855036738, -- [4]
+				nil, -- [5]
+				0.00178380671565039, -- [6]
+				0.0442479767350507, -- [7]
+				5.34763696789742, -- [8]
 			},
-			["name"] = "Mightstone Breaker",
+			["name"] = "Aranasi Broodmother",
 		},
-		[114541] = {
+		[114542] = {
 			["values"] = {
-				20, -- [1]
+				[4] = 7,
 			},
-			["name"] = "Spectral Patron",
+			["name"] = "Ghostly Philanthropist",
 		},
-		[97200] = {
+		[92610] = {
 			["values"] = {
-				0.000178582090170014, -- [1]
-				0.0750846862792969, -- [2]
-				nil, -- [3]
-				36.375, -- [4]
+				[4] = 15,
 			},
-			["name"] = "Seacursed Soulkeeper",
+			["name"] = "Understone Drummer",
 		},
-		[100531] = {
+		[115831] = {
 			["values"] = {
-				[8] = 31,
+				0.00178514910772487, -- [1]
+				[4] = 43.5625,
 			},
-			["name"] = "Bloodtainted Fury",
+			["name"] = "Mana Devourer",
 		},
 		[92387] = {
 			["values"] = {
@@ -1546,29 +1547,28 @@ MythicPlusProgressDB = {
 		},
 		[99033] = {
 			["values"] = {
-				[4] = 17.375,
-				[2] = 0.643222396392958,
+				[4] = 19.375,
+				[2] = 0.361812597971039,
 			},
 			["name"] = "Helarjar Mistcaller",
 		},
-		[115486] = {
+		[91787] = {
 			["values"] = {
-				[8] = 4,
+				9, -- [1]
 			},
-			["name"] = "Erudite Slayer",
+			["name"] = "Cove Seagull",
 		},
-		[98810] = {
+		[118700] = {
 			["values"] = {
-				[6] = 42.1875,
-				[5] = 0.0774630952334972,
+				[2] = 12,
 			},
-			["name"] = "Wrathguard Bladelord",
+			["name"] = "Felblight Stalker",
 		},
-		[95766] = {
+		[118716] = {
 			["values"] = {
-				[4] = 34,
+				[4] = 7,
 			},
-			["name"] = "Crazed Razorbeak",
+			["name"] = "Bilespray Lasher",
 		},
 		[115417] = {
 			["values"] = {
@@ -1582,30 +1582,32 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Dreadhunter",
 		},
-		[101679] = {
+		[121569] = {
 			["values"] = {
-				[4] = 61,
+				[4] = 8,
 			},
-			["name"] = "Dreadsoul Poisoner",
+			["name"] = "Vilebark Walker",
 		},
-		[115388] = {
+		[91786] = {
 			["values"] = {
-				2.5, -- [1]
-				[12] = 0.75,
+				0.329769711010157, -- [1]
+				0.056313514709473, -- [2]
+				nil, -- [3]
+				10.5625, -- [4]
 			},
-			["name"] = "King",
+			["name"] = "Gritslime Snail",
 		},
-		[91001] = {
+		[96611] = {
 			["values"] = {
-				[4] = 56,
+				[2] = 17,
 			},
-			["name"] = "Tarspitter Lurker",
+			["name"] = "Angerhoof Bull",
 		},
-		[98173] = {
+		[118704] = {
 			["values"] = {
-				[4] = 1,
+				[10] = 2,
 			},
-			["name"] = "Mystic Ssa'veh",
+			["name"] = "Dul'zak",
 		},
 	},
 }

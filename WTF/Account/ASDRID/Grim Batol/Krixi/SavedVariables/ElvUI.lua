@@ -1,7 +1,5 @@
 
 ElvCharacterDB = {
-	["ChatLog"] = {
-	},
 	["ChatEditHistory"] = {
 		"/iks", -- [1]
 		" not much", -- [2]
@@ -29,5 +27,7 @@ ElvCharacterDB = {
 		["Health"] = 0,
 		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+	},
+	["ChatLog"] = {
 	},
 }

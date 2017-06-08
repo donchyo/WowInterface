@@ -1,5 +1,5 @@
 
 WorldQuestGroupFinderConfig = {
-	["frameUnlocked"] = false,
 	["askToLeave"] = false,
+	["frameUnlocked"] = false,
 }

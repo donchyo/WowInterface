@@ -315,7 +315,7 @@ BigWigs_HellfireCitadel: disabled
 BigWigs_Highmaul: disabled
 BigWigs_Nighthold: enabled
 Broker_Currency: enabled
-BulkBuy: disabled
+BulkBuy: enabled
 ChocolateBar: enabled
 Combuctor_Sets: disabled
 Combuctor_Config: disabled
@@ -419,7 +419,7 @@ GottaGoFast: disabled
 GottaGoFastHistory: disabled
 BigWigs_Voice_Overwatch: disabled
 BigWigs_Countdown_Overwatch: disabled
-BloodTrader: disabled
+BloodTrader: enabled
 NomiCakes: disabled
 StopResetingMyCameraPlease: disabled
 LegionTODOMini: disabled

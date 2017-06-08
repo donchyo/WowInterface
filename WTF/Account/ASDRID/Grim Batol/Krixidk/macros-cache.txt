@@ -10,15 +10,15 @@ END
 VER 3 0100000000000021 "dnd" "INV_MISC_QUESTIONMARK"
 /cast [@cursor] death and decay
 END
-VER 3 0100000000000022 "focus" "INV_MISC_QUESTIONMARK"
-/cast [@focus] death grip
-END
 VER 3 010000000000001A "focus" "INV_Misc_QuestionMark"
 /stopcasting
 /cast [@focus] mind freeze
 END
 VER 3 0100000000000023 "focus" "INV_Misc_QuestionMark"
 /cast [@focus] asphyxiate
+END
+VER 3 0100000000000022 "focus" "INV_MISC_QUESTIONMARK"
+/cast [@focus] death grip
 END
 VER 3 0100000000000016 "hook" "INV_Misc_QuestionMark"
 /cast hook
