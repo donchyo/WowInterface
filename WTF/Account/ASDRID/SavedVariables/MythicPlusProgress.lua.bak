@@ -4,13 +4,13 @@ MythicPlusProgressDB = {
 		["enableTooltip"] = true,
 		["inconclusiveDataThreshold"] = 100,
 		["maxTimeSinceKill"] = 600,
-		["nameplateTextColor"] = "FFFFFF",
+		["enableNameplateText"] = true,
 		["nameplateUpdateRate"] = 200,
 		["dbVersion"] = 6,
 		["version"] = "0.3e",
-		["enableNameplateText"] = true,
-		["tooltipColor"] = "82E0FF",
 		["enablePullEstimate"] = true,
+		["tooltipColor"] = "82E0FF",
+		["nameplateTextColor"] = "FFFFFF",
 		["pullEstimateCombatOnly"] = true,
 		["enabled"] = true,
 	},
@@ -1213,17 +1213,17 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Seaspray Crab",
 		},
-		[97197] = {
-			["values"] = {
-				[2] = 13,
-			},
-			["name"] = "Valarjar Purifier",
-		},
 		[91332] = {
 			["values"] = {
 				[4] = 22,
 			},
 			["name"] = "Stoneclaw Hunter",
+		},
+		[114792] = {
+			["values"] = {
+				[4] = 4,
+			},
+			["name"] = "Virtuous Lady",
 		},
 		[102584] = {
 			["values"] = {
@@ -1237,11 +1237,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Viletongue Belcher",
 		},
-		[114792] = {
+		[97197] = {
 			["values"] = {
-				[4] = 4,
+				[2] = 13,
 			},
-			["name"] = "Virtuous Lady",
+			["name"] = "Valarjar Purifier",
 		},
 		[95842] = {
 			["values"] = {

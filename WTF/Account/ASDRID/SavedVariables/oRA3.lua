@@ -125,10 +125,10 @@ oRA3DB = {
 					["Width"] = 199.999938964844,
 				},
 				["oRA3ReadyCheck"] = {
-					["Height"] = 127.999977111816,
-					["PosX"] = 276.088923973504,
-					["PosY"] = 735.853227624102,
-					["Width"] = 320,
+					["Height"] = 225,
+					["PosX"] = 363.555617978833,
+					["PosY"] = 764.297659522432,
+					["Width"] = 320.000061035156,
 				},
 				["oRA3BattleResMonitor"] = {
 					["Height"] = 29.9999942779541,
@@ -144,7 +144,7 @@ oRA3DB = {
 			["lastSelectedPanel"] = "Checks",
 		},
 		["Skullflower"] = {
-			["lastSelectedList"] = 1,
+			["lastSelectedPanel"] = "Promote",
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148.000015258789,
@@ -169,7 +169,7 @@ oRA3DB = {
 					["PosX"] = 1028.80052461621,
 				},
 			},
-			["lastSelectedPanel"] = "Promote",
+			["lastSelectedList"] = 1,
 		},
 	},
 }

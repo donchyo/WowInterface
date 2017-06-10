@@ -13,10 +13,10 @@ DataStore_ReputationsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_ReputationsDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -169,7 +169,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496920997,
+				["lastUpdate"] = 1497123596,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -272,7 +272,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1496929479,
+				["lastUpdate"] = 1497046695,
 				["Factions"] = {
 					10507, -- [1]
 					10099, -- [2]
@@ -479,7 +479,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1496929348,
+				["lastUpdate"] = 1497123018,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -601,15 +601,15 @@ DataStore_ReputationsDB = {
 					[119] = 42000,
 					[138] = 875,
 					[122] = 42000,
-					[139] = 2075,
+					[139] = 2300,
 					[140] = 5547,
 					[123] = 23007,
-					[134] = 10562,
-					[135] = 12545,
+					[134] = 10675,
+					[135] = 12770,
 					[125] = 10940,
-					[136] = 11940,
+					[136] = 12052,
 					[121] = 8413,
-					[137] = 8537,
+					[137] = 8762,
 					[130] = 7700,
 					[126] = 3560,
 				},
@@ -625,19 +625,19 @@ DataStore_ReputationsDB = {
 					8270, -- [4]
 					10263, -- [5]
 					[77] = 6820,
-					[75] = 8470,
+					[47] = 2547,
 					[39] = 1649,
 					[56] = 57,
 					[112] = 8270,
 					[45] = 2303,
-					[32] = 5324,
+					[75] = 8470,
 					[18] = 1875,
 					[19] = 1875,
 					[38] = 2686,
 					[40] = 3795,
 					[20] = 2150,
 					[17] = 1875,
-					[47] = 2547,
+					[32] = 5324,
 				},
 			},
 			["Default.Grim Batol.Zolution"] = {
@@ -944,7 +944,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496929437,
+				["lastUpdate"] = 1497123111,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -1052,7 +1052,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1496920045,
+				["lastUpdate"] = 1497046611,
 				["Factions"] = {
 					7520, -- [1]
 					7214, -- [2]
@@ -1069,7 +1069,7 @@ DataStore_ReputationsDB = {
 					[134] = 42000,
 					[136] = 42000,
 					[138] = 42000,
-					[140] = 15021,
+					[140] = 15571,
 					[37] = 42000,
 					[38] = 10165,
 					[39] = 8125,
@@ -1354,10 +1354,10 @@ DataStore_ReputationsDB = {
 					[64] = 3907,
 					[112] = 7348,
 					[65] = 3907,
-					[66] = 3907,
 					[130] = 11700,
-					[57] = 2561,
 					[17] = 1737,
+					[57] = 2561,
+					[66] = 3907,
 					[82] = 34365,
 					[53] = 16436,
 					[114] = 2090,

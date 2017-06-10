@@ -13,10 +13,10 @@ DataStore_TalentsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_TalentsDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -267,7 +267,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Zetiz"] = {
 				["EquippedArtifact"] = "The Kingslayers",
-				["lastUpdate"] = 1496920997,
+				["lastUpdate"] = 1497123598,
 				["Specializations"] = {
 					6581, -- [1]
 					10998, -- [2]
@@ -361,7 +361,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Zuriz"] = {
 				["EquippedArtifact"] = "Sharas'dal, Scepter of Tides",
-				["lastUpdate"] = 1496929479,
+				["lastUpdate"] = 1497046695,
 				["Specializations"] = {
 					7839, -- [1]
 					9691, -- [2]
@@ -567,7 +567,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Donch"] = {
 				["EquippedArtifact"] = "Ebonchill, Greatstaff of Alodi",
-				["lastUpdate"] = 1496929348,
+				["lastUpdate"] = 1497123017,
 				["Specializations"] = {
 					14841, -- [1]
 					13749, -- [2]
@@ -1105,7 +1105,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Nyrith"] = {
 				["EquippedArtifact"] = "Claws of Ursoc",
-				["lastUpdate"] = 1496929436,
+				["lastUpdate"] = 1497123111,
 				["Class"] = "DRUID",
 				["ArtifactKnowledge"] = 40,
 				["ArtifactKnowledgeMultiplier"] = 40001,
@@ -1165,27 +1165,28 @@ DataStore_TalentsDB = {
 				},
 				["Specializations"] = {
 					5631, -- [1]
-					10746, -- [2]
-					6751, -- [3]
-					16123, -- [4]
+					15317, -- [2]
+					7773, -- [3]
+					16362, -- [4]
 				},
 				["Artifacts"] = {
 					["Claws of Ursoc"] = {
 						["rank"] = 53,
 						["tier"] = 2,
-						["pointsRemaining"] = 461559758,
+						["pointsRemaining"] = 621563758,
 					},
 					["Scythe of Elune"] = {
 						["rank"] = 1,
 						["tier"] = 1,
 					},
 					["Fangs of Ashamane"] = {
-						["rank"] = 1,
-						["tier"] = 1,
+						["rank"] = 37,
+						["tier"] = 2,
+						["pointsRemaining"] = 11084770,
 					},
 					["G'Hanir, the Mother Tree"] = {
-						["rank"] = 36,
-						["pointsRemaining"] = 1013320,
+						["rank"] = 42,
+						["pointsRemaining"] = 3970570,
 						["tier"] = 2,
 					},
 				},
@@ -1310,12 +1311,12 @@ DataStore_TalentsDB = {
 					["Maw of the Damned"] = {
 						["tier"] = 2,
 						["rank"] = 48,
-						["pointsRemaining"] = 80044200,
+						["pointsRemaining"] = 119045150,
 					},
 				},
 				["ActiveTalents"] = 1,
 				["Class"] = "DEATHKNIGHT",
-				["lastUpdate"] = 1496920062,
+				["lastUpdate"] = 1497046613,
 				["Specializations"] = {
 					7575, -- [1]
 					12015, -- [2]
@@ -2133,10 +2134,10 @@ DataStore_TalentsRefDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -2147,7 +2148,7 @@ DataStore_TalentsRefDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

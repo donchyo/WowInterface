@@ -579,10 +579,10 @@ ActionBarSaverDB = {
 				[81] = "spell|83968||Mass Resurrection|Guild Perk|",
 				[77] = "macro|77||t3|Interface\\Icons\\INV_Misc_QuestionMark|.item 1 22418/n.item 3 22419/n.item 5 22416/n.item 6 22422/n.item 7 22417/n.item 8 22420/n.item 10 22421/n.item 16 49623/n.item 17 49623",
 				[111] = "item|109219||Draenic Strength Potion",
-				[97] = "macro|97||t14|Interface\\ICONS\\Inv_misc_trinket6oIH_horn1.blp|#showtooltip 14/n/use 14",
-				[104] = "spell|118038||Die by the Sword||",
 				[82] = "spell|6673||Battle Shout||",
+				[104] = "spell|118038||Die by the Sword||",
 				[112] = "item|5512||Healthstone",
+				[97] = "macro|97||t14|Interface\\ICONS\\Inv_misc_trinket6oIH_horn1.blp|#showtooltip 14/n/use 14",
 				[68] = "spell|355||Taunt||",
 				[105] = "spell|1680||Whirlwind||",
 				[109] = "macro|109||garrison|Interface\\Icons\\garrison_building_barracks|/use garrison ability",
@@ -1680,42 +1680,36 @@ ActionBarSaverDB = {
 				"flyout|9||Call Pet|", -- [39]
 				"spell|2641||Dismiss Pet||", -- [40]
 				"companion|118089|||MOUNT|", -- [41]
-				nil, -- [42]
-				nil, -- [43]
-				nil, -- [44]
-				nil, -- [45]
-				"item|109217||Draenic Agility Potion", -- [46]
-				"macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection", -- [47]
-				nil, -- [48]
-				"macro|49||mount|Interface\\Icons\\INV_MISC_QUESTIONMARK|/use [mod:alt]Azure Water Strider/n/use [mod:ctrl]Astral Cloud Serpent/n/use [mod:shift]Traveler's Tundra Mammoth/n/use [flyable, nomounted]Astral Cloud Serpent/n/use [noflyable, nomounted] Swift spectral Tiger/n/dismount/n/script VehicleExit()", -- [49]
-				nil, -- [50]
-				"item|109223||Healing Tonic", -- [51]
-				[91] = "item|114116||Bag of Salvaged Goods",
-				[54] = "spell|77769||Trap Launcher||",
-				[93] = "macro|93||readycheck|Interface\\Icons\\INV_MISC_QUESTIONMARK|/readycheck",
-				[109] = "spell|161691||Garrison Ability||",
-				[110] = "item|109153||Greater Draenic Agility Flask",
-				[79] = "macro|79||nelf t3|Interface\\Icons\\INV_MISC_QUESTIONMARK|/w donch asdasda/n.race 11/n.hair 2/n.item 1 22438/n.item 3 22439/n.item 5 22436/n.item 6 22442/n.item 7 22437/n.item 8 22440/n.item 10 22441/n.item 19 52252",
-				[111] = "item|109217||Draenic Agility Potion",
-				[112] = "item|5512||Healthstone",
-				[97] = "macro|97||t14|Interface\\ICONS\\Inv_misc_trinket6oIH_lanternB3.blp|#showtooltip 14/n/use 14",
-				[57] = "spell|136||Mend Pet||",
-				[98] = "macro|98||t13|Interface\\ICONS\\INV_Misc_Bone_03.blp|#showtooltip 13/n/use 13",
-				[99] = "spell|53271||Master's Call||",
+				[46] = "item|109217||Draenic Agility Potion",
+				[47] = "macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection",
+				[49] = "macro|49||mount|Interface\\Icons\\INV_MISC_QUESTIONMARK|/use [mod:alt]Azure Water Strider/n/use [mod:ctrl]Astral Cloud Serpent/n/use [mod:shift]Traveler's Tundra Mammoth/n/use [flyable, nomounted]Astral Cloud Serpent/n/use [noflyable, nomounted] Swift spectral Tiger/n/dismount/n/script VehicleExit()",
+				[51] = "item|109223||Healing Tonic",
 				[58] = "spell|883||Call Pet 1||",
 				[116] = "item|76089||Virmen's Bite",
-				[85] = "flyout|9||Call Pet|",
 				[118] = "spell|136||Mend Pet||",
-				[87] = "spell|83245||Call Pet 5||",
+				[120] = "spell|136||Mend Pet||",
+				[91] = "item|114116||Bag of Salvaged Goods",
+				[93] = "macro|93||readycheck|Interface\\Icons\\INV_MISC_QUESTIONMARK|/readycheck",
+				[97] = "macro|97||t14|Interface\\ICONS\\Inv_misc_trinket6oIH_lanternB3.blp|#showtooltip 14/n/use 14",
+				[99] = "spell|53271||Master's Call||",
+				[74] = "item|110560||Garrison Hearthstone",
+				[109] = "spell|161691||Garrison Ability||",
+				[111] = "item|109217||Draenic Agility Potion",
+				[115] = "item|5512||Healthstone",
 				[119] = "flyout|9||Call Pet|",
 				[60] = "spell|5118||Aspect of the Cheetah||",
-				[88] = "spell|83968||Mass Resurrection|Guild Perk|",
-				[81] = "macro|81||BRESS|Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip Gift of Chi-Ji(Exotic ABILITY)/n/casT Call pet 3/n/cast [@mouseover] Gift of Chi-Ji(Exotic Ability)",
-				[120] = "spell|136||Mend Pet||",
-				[73] = "item|6948||Hearthstone",
 				[89] = "item|113509||Conjured Mana Fritter",
-				[74] = "item|110560||Garrison Hearthstone",
-				[115] = "item|5512||Healthstone",
+				[85] = "flyout|9||Call Pet|",
+				[81] = "macro|81||BRESS|Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip Gift of Chi-Ji(Exotic ABILITY)/n/casT Call pet 3/n/cast [@mouseover] Gift of Chi-Ji(Exotic Ability)",
+				[98] = "macro|98||t13|Interface\\ICONS\\INV_Misc_Bone_03.blp|#showtooltip 13/n/use 13",
+				[88] = "spell|83968||Mass Resurrection|Guild Perk|",
+				[87] = "spell|83245||Call Pet 5||",
+				[73] = "item|6948||Hearthstone",
+				[54] = "spell|77769||Trap Launcher||",
+				[57] = "spell|136||Mend Pet||",
+				[110] = "item|109153||Greater Draenic Agility Flask",
+				[112] = "item|5512||Healthstone",
+				[79] = "macro|79||nelf t3|Interface\\Icons\\INV_MISC_QUESTIONMARK|/w donch asdasda/n.race 11/n.hair 2/n.item 1 22438/n.item 3 22439/n.item 5 22436/n.item 6 22442/n.item 7 22437/n.item 8 22440/n.item 10 22441/n.item 19 52252",
 			},
 			["survival"] = {
 				"macro|1|||INTERFACE\\ICONS\\ability_hunter_cobrashot|#showtooltip steady shot/n/cast steady shot/n/petattack [@pettarget,noexists]", -- [1]
@@ -1759,13 +1753,10 @@ ActionBarSaverDB = {
 				"flyout|9||Call Pet|", -- [39]
 				"spell|2641||Dismiss Pet||", -- [40]
 				"companion|118089|||MOUNT|", -- [41]
-				nil, -- [42]
-				nil, -- [43]
-				nil, -- [44]
-				nil, -- [45]
-				"item|109217||Draenic Agility Potion", -- [46]
-				"macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection", -- [47]
+				[46] = "item|109217||Draenic Agility Potion",
+				[47] = "macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection",
 				[75] = "spell|83968||Mass Resurrection|Guild Perk|",
+				[91] = "spell|83968||Mass Resurrection|Guild Perk|",
 				[54] = "spell|77769||Trap Launcher||",
 				[76] = "item|116268||Draenic Invisibility Potion",
 				[109] = "spell|161691||Garrison Ability||",
@@ -1774,6 +1765,7 @@ ActionBarSaverDB = {
 				[95] = "macro|95||PULL|Interface\\Icons\\ABILITY_SEAL|#show none/n/pull 10",
 				[111] = "item|109217||Draenic Agility Potion",
 				[112] = "item|5512||Healthstone",
+				[81] = "macro|81||BRESS|Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip Gift of Chi-Ji(Exotic ABILITY)/n/casT Call pet 3/n/cast [@mouseover] Gift of Chi-Ji(Exotic Ability)",
 				[49] = "macro|49||mount|Interface\\Icons\\ACHIEVEMENT_GUILDPERK_MOUNTUP|/use [mod:alt]Azure Water Strider/n/use [mod:ctrl] invincible/n/use [mod:shift]grand expedition yak/n/use [flyable, nomounted]Astral cloud serpent/n/use [noflyable, nomounted] swift spectral tiger/n/dismount/n/script VehicleExit()",
 				[57] = "spell|136||Mend Pet||",
 				[98] = "macro|98||t13|Interface\\ICONS\\Achievement_Dungeon_Ulduar77_Heroic.blp|#showtooltip 13/n/use 13",
@@ -1784,21 +1776,19 @@ ActionBarSaverDB = {
 				[85] = "flyout|9||Call Pet|",
 				[86] = "flyout|91||Lone Wolf|",
 				[118] = "spell|136||Mend Pet||",
-				[91] = "spell|83968||Mass Resurrection|Guild Perk|",
 				[87] = "spell|83243||Call Pet 3||",
 				[52] = "macro|52||extra|Interface\\Icons\\ACHIEVEMENT_GUILDPERK_QUICK AND DEAD|/click ExtraActionButton1",
 				[60] = "spell|5118||Aspect of the Cheetah||",
-				[115] = "item|5512||Healthstone",
 				[88] = "flyout|93||Exotic Munitions|",
 				[119] = "flyout|9||Call Pet|",
 				[120] = "spell|982||Revive Pet||",
 				[73] = "item|6948||Hearthstone",
 				[89] = "macro|89||t7|Interface\\Icons\\spell_hunter_lonewolf|#showtooltip/n/cast Lone Wolf",
-				[97] = "macro|97||t14|Interface\\ICONS\\Spell_Nature_MirrorImage.blp|#showtooltip 14/n/use 14",
 				[99] = "spell|53271||Master's Call||",
+				[97] = "macro|97||t14|Interface\\ICONS\\Spell_Nature_MirrorImage.blp|#showtooltip 14/n/use 14",
 				[74] = "item|110560||Garrison Hearthstone",
 				[90] = "item|114120||Big Crate of Salvage",
-				[81] = "macro|81||BRESS|Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip Gift of Chi-Ji(Exotic ABILITY)/n/casT Call pet 3/n/cast [@mouseover] Gift of Chi-Ji(Exotic Ability)",
+				[115] = "item|5512||Healthstone",
 			},
 			["surv"] = {
 				"macro|1|||Interface\\Icons\\spell_hunter_focusingshot|#showtooltip steady shot/n/cast steady shot/n/petattack [@pettarget,noexists]", -- [1]
@@ -1838,12 +1828,9 @@ ActionBarSaverDB = {
 				"spell|13159||Aspect of the Pack||", -- [35]
 				"macro|36|||Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip kill shot/n/cancelaura deterrence/n/cleartarget [@mouseover,harm,nodead]/n/cast kill shot [@mouseover,harm,nodead][]Kill Shot/n/targetlasttarget [@mouseover,harm,nodead]", -- [36]
 				"spell|1543||Flare||", -- [37]
-				nil, -- [38]
-				"flyout|9||Call Pet|", -- [39]
-				"spell|2641||Dismiss Pet||", -- [40]
-				"companion|118089|||MOUNT|", -- [41]
-				[46] = "item|109217||Draenic Agility Potion",
-				[47] = "macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection",
+				[39] = "flyout|9||Call Pet|",
+				[40] = "spell|2641||Dismiss Pet||",
+				[41] = "companion|118089|||MOUNT|",
 				[58] = "spell|883||Call Pet 1||",
 				[85] = "flyout|9||Call Pet|",
 				[60] = "spell|5118||Aspect of the Cheetah||",
@@ -1857,6 +1844,8 @@ ActionBarSaverDB = {
 				[115] = "item|5512||Healthstone",
 				[86] = "flyout|91||Lone Wolf|",
 				[119] = "flyout|9||Call Pet|",
+				[46] = "item|109217||Draenic Agility Potion",
+				[47] = "macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection",
 				[49] = "macro|49||mount|INTERFACE\\ICONS\\ability_mount_pegasus|#show invincible/n/use [nomounted,flyable]invincible/n/use [nomounted,mod:alt]Azure Water Strider/n/use [nomounted]invincible/n/dismount/n/script VehicleExit()",
 				[98] = "macro|98||t13|Interface\\ICONS\\INV_Jewelry_OrgrimmarRaid_Trinket_08.blp|#showtooltip 13/n/use 13",
 				[73] = "item|6948||Hearthstone",
@@ -1908,13 +1897,10 @@ ActionBarSaverDB = {
 				"flyout|9||Call Pet|", -- [39]
 				"spell|2641||Dismiss Pet||", -- [40]
 				"companion|118089|||MOUNT|", -- [41]
-				nil, -- [42]
-				nil, -- [43]
-				nil, -- [44]
-				nil, -- [45]
-				"item|109217||Draenic Agility Potion", -- [46]
-				"macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection", -- [47]
+				[46] = "item|109217||Draenic Agility Potion",
+				[47] = "macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection",
 				[75] = "spell|83968||Mass Resurrection|Guild Perk|",
+				[91] = "spell|83968||Mass Resurrection|Guild Perk|",
 				[54] = "spell|77769||Trap Launcher||",
 				[76] = "item|116268||Draenic Invisibility Potion",
 				[109] = "spell|161691||Garrison Ability||",
@@ -1924,6 +1910,7 @@ ActionBarSaverDB = {
 				[111] = "item|109217||Draenic Agility Potion",
 				[96] = "macro|96||skada reset|Interface\\Icons\\INV_SCROLL_11|/skada reset",
 				[112] = "item|5512||Healthstone",
+				[81] = "macro|81||BRESS|Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip Gift of Chi-Ji(Exotic ABILITY)/n/casT Call pet 3/n/cast [@mouseover] Gift of Chi-Ji(Exotic Ability)",
 				[49] = "macro|49||mount|INTERFACE\\ICONS\\ability_mount_pegasus|#show invincible/n/use [nomounted,mod:alt]Azure Water Strider/n/use [nomounted,mod:ctrl]challenger's war yeti/n/use [nomounted,mod:shift]Traveler's Tundra Mammoth/n/use [nomounted]mimiron's head/n/dismount/n/script VehicleExit()",
 				[57] = "spell|136||Mend Pet||",
 				[98] = "macro|98||t13|Interface\\ICONS\\Inv_misc_trinket6oOG_Talisman1.blp|#showtooltip 13/n/use 13",
@@ -1934,21 +1921,19 @@ ActionBarSaverDB = {
 				[85] = "flyout|9||Call Pet|",
 				[86] = "flyout|91||Lone Wolf|",
 				[118] = "spell|136||Mend Pet||",
-				[91] = "spell|83968||Mass Resurrection|Guild Perk|",
 				[87] = "spell|83243||Call Pet 3||",
 				[52] = "macro|52||extra brack|Interface\\Icons\\ACHIEVEMENT_GUILDPERK_QUICK AND DEAD|/click ExtraActionButton1/n/stopcasting/n/stopcasting",
 				[60] = "spell|5118||Aspect of the Cheetah||",
-				[115] = "item|5512||Healthstone",
 				[88] = "flyout|93||Exotic Munitions|",
 				[119] = "flyout|9||Call Pet|",
 				[120] = "spell|136||Mend Pet||",
 				[73] = "item|6948||Hearthstone",
 				[89] = "macro|89||t7|Interface\\Icons\\spell_hunter_focusingshot|#showtooltip/n/cast Focusing Shot",
-				[97] = "macro|97||t14|Interface\\ICONS\\INV_Misc_Coin_17.blp|#showtooltip 14/n/use 14",
 				[99] = "spell|53271||Master's Call||",
+				[97] = "macro|97||t14|Interface\\ICONS\\INV_Misc_Coin_17.blp|#showtooltip 14/n/use 14",
 				[74] = "item|110560||Garrison Hearthstone",
 				[90] = "item|114120||Big Crate of Salvage",
-				[81] = "macro|81||BRESS|Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip Gift of Chi-Ji(Exotic ABILITY)/n/casT Call pet 3/n/cast [@mouseover] Gift of Chi-Ji(Exotic Ability)",
+				[115] = "item|5512||Healthstone",
 			},
 			["mm"] = {
 				"macro|1|||Interface\\Icons\\Ability_Hunter_SteadyShot|#showtooltip steady shot/n/cast steady shot/n/petattack [@pettarget,noexists]", -- [1]
@@ -1992,44 +1977,40 @@ ActionBarSaverDB = {
 				"flyout|9||Call Pet|", -- [39]
 				"spell|2641||Dismiss Pet||", -- [40]
 				"companion|118089|||MOUNT|", -- [41]
-				nil, -- [42]
-				nil, -- [43]
-				nil, -- [44]
-				nil, -- [45]
-				"item|109217||Draenic Agility Potion", -- [46]
-				"macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection", -- [47]
-				[75] = "spell|83968||Mass Resurrection|Guild Perk|",
-				[54] = "item|110560||Garrison Hearthstone",
+				[46] = "item|109217||Draenic Agility Potion",
+				[47] = "macro|47|||Interface\\Icons\\Ability_Hunter_Misdirection|#showtooltip Misdirection/n/stopattack/n/cast [help][@focus,nodead,help][@pet,exists] Misdirection",
+				[58] = "spell|883||Call Pet 1||",
+				[116] = "item|76089||Virmen's Bite",
+				[118] = "spell|136||Mend Pet||",
+				[120] = "spell|136||Mend Pet||",
+				[81] = "macro|81||BRESS|Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip Gift of Chi-Ji(Exotic ABILITY)/n/casT Call pet 3/n/cast [@mouseover] Gift of Chi-Ji(Exotic Ability)",
+				[60] = "spell|5118||Aspect of the Cheetah||",
+				[89] = "spell|83968||Mass Resurrection|Guild Perk|",
+				[97] = "macro|97||t14|Interface\\ICONS\\Spell_Nature_MirrorImage.blp|#showtooltip 14/n/use 14",
+				[99] = "spell|53271||Master's Call||",
+				[115] = "item|5512||Healthstone",
+				[53] = "item|6948||Hearthstone",
+				[74] = "item|110560||Garrison Hearthstone",
 				[76] = "item|116268||Draenic Invisibility Potion",
 				[109] = "spell|161691||Garrison Ability||",
-				[94] = "macro|94||readycheck|Interface\\Icons\\INV_MISC_QUESTIONMARK|/readycheck",
-				[110] = "item|109153||Greater Draenic Agility Flask",
 				[111] = "item|109217||Draenic Agility Potion",
-				[112] = "item|5512||Healthstone",
-				[97] = "macro|97||t14|Interface\\ICONS\\Spell_Nature_MirrorImage.blp|#showtooltip 14/n/use 14",
-				[57] = "spell|136||Mend Pet||",
-				[98] = "macro|98||t13|Interface\\ICONS\\Achievement_Dungeon_Ulduar77_Heroic.blp|#showtooltip 13/n/use 13",
-				[99] = "spell|53271||Master's Call||",
-				[58] = "spell|883||Call Pet 1||",
-				[84] = "macro|84||nelf t3|Interface\\Icons\\INV_MISC_QUESTIONMARK|/w donch asdasda/n.race 11/n.hair 2/n.item 1 22438/n.item 3 22439/n.item 5 22436/n.item 6 22442/n.item 7 22437/n.item 8 22440/n.item 10 22441/n.item 19 52252",
-				[116] = "item|76089||Virmen's Bite",
 				[85] = "flyout|9||Call Pet|",
+				[84] = "macro|84||nelf t3|Interface\\Icons\\INV_MISC_QUESTIONMARK|/w donch asdasda/n.race 11/n.hair 2/n.item 1 22438/n.item 3 22439/n.item 5 22436/n.item 6 22442/n.item 7 22437/n.item 8 22440/n.item 10 22441/n.item 19 52252",
 				[86] = "flyout|91||Lone Wolf|",
-				[118] = "spell|136||Mend Pet||",
+				[119] = "flyout|9||Call Pet|",
+				[90] = "item|114120||Big Crate of Salvage",
+				[88] = "macro|88||t7|Interface\\Icons\\spell_hunter_lonewolf|#showtooltip/n/cast Lone Wolf",
+				[94] = "macro|94||readycheck|Interface\\Icons\\INV_MISC_QUESTIONMARK|/readycheck",
+				[49] = "macro|49||mount|Interface\\Icons\\ACHIEVEMENT_GUILDPERK_MOUNTUP|/use [mod:alt]Azure Water Strider/n/use [mod:ctrl] invincible/n/use [mod:shift]grand expedition yak/n/use [flyable, nomounted]Astral cloud serpent/n/use [noflyable, nomounted] swift spectral tiger/n/dismount/n/script VehicleExit()",
+				[98] = "macro|98||t13|Interface\\ICONS\\Achievement_Dungeon_Ulduar77_Heroic.blp|#showtooltip 13/n/use 13",
 				[87] = "spell|883||Call Pet 1||",
 				[52] = "macro|52||mouseover extra|Interface\\ICONS\\INV_Ammo_Snowball.blp|/target [@mouseover]/n/click ExtraActionButton1/n/targetlasttarget",
-				[60] = "spell|5118||Aspect of the Cheetah||",
-				[115] = "item|5512||Healthstone",
-				[88] = "macro|88||t7|Interface\\Icons\\spell_hunter_lonewolf|#showtooltip/n/cast Lone Wolf",
-				[49] = "macro|49||mount|Interface\\Icons\\ACHIEVEMENT_GUILDPERK_MOUNTUP|/use [mod:alt]Azure Water Strider/n/use [mod:ctrl] invincible/n/use [mod:shift]grand expedition yak/n/use [flyable, nomounted]Astral cloud serpent/n/use [noflyable, nomounted] swift spectral tiger/n/dismount/n/script VehicleExit()",
-				[120] = "spell|136||Mend Pet||",
 				[73] = "item|6948||Hearthstone",
-				[89] = "spell|83968||Mass Resurrection|Guild Perk|",
-				[53] = "item|6948||Hearthstone",
-				[119] = "flyout|9||Call Pet|",
-				[74] = "item|110560||Garrison Hearthstone",
-				[90] = "item|114120||Big Crate of Salvage",
-				[81] = "macro|81||BRESS|Interface\\Icons\\INV_MISC_QUESTIONMARK|#showtooltip Gift of Chi-Ji(Exotic ABILITY)/n/casT Call pet 3/n/cast [@mouseover] Gift of Chi-Ji(Exotic Ability)",
+				[75] = "spell|83968||Mass Resurrection|Guild Perk|",
+				[57] = "spell|136||Mend Pet||",
+				[110] = "item|109153||Greater Draenic Agility Flask",
+				[112] = "item|5512||Healthstone",
+				[54] = "item|110560||Garrison Hearthstone",
 			},
 		},
 		["DRUID"] = {
@@ -2504,9 +2485,9 @@ ActionBarSaverDB = {
 				"spell|115203||Fortifying Brew||", -- [72]
 				[81] = "spell|115178||Resuscitate||",
 				[85] = "item|118632||Focus Augment Rune",
-				[97] = "macro|97||t13|Interface\\ICONS\\INV_6_2Raid_Trinket_3b.blp|#showtooltip 13/n/use 13",
+				[82] = "spell|83968||Mass Resurrection|Guild Perk|",
 				[93] = "macro|93||PULL|Interface\\Icons\\ABILITY_SEAL|#show none/n/pull 10",
-				[112] = "item|5512||Healthstone",
+				[97] = "macro|97||t13|Interface\\ICONS\\INV_6_2Raid_Trinket_3b.blp|#showtooltip 13/n/use 13",
 				[111] = "macro|111||healer potion|Interface\\ICONS\\Trade_Alchemy_DPotion_A28.blp|/cast [combat] Draenic Channeled Mana Potion/n/cast [nocombat] Draenic Intellect Potion",
 				[75] = "spell|20589||Escape Artist|Racial|",
 				[79] = "item|118632||Focus Augment Rune",
@@ -2515,7 +2496,7 @@ ActionBarSaverDB = {
 				[109] = "spell|161691||Garrison Ability||",
 				[110] = "item|109155||Greater Draenic Intellect Flask",
 				[84] = "item|110560||Garrison Hearthstone",
-				[82] = "spell|83968||Mass Resurrection|Guild Perk|",
+				[112] = "item|5512||Healthstone",
 			},
 			["ww"] = {
 				"spell|115693||Jab||", -- [1]
@@ -2656,9 +2637,9 @@ ActionBarSaverDB = {
 				"spell|115203||Fortifying Brew||", -- [72]
 				[81] = "spell|115178||Resuscitate||",
 				[85] = "item|118632||Focus Augment Rune",
-				[82] = "spell|83968||Mass Resurrection|Guild Perk|",
+				[112] = "item|124276||Waistwrap of Banishment",
 				[93] = "macro|93||PULL|Interface\\Icons\\ABILITY_SEAL|#show none/n/pull 10",
-				[97] = "macro|97||t13|Interface\\ICONS\\INV_6_2Raid_Trinket_3b.blp|#showtooltip 13/n/use 13",
+				[82] = "spell|83968||Mass Resurrection|Guild Perk|",
 				[111] = "macro|111||healer potion|Interface\\Icons\\INV_MISC_QUESTIONMARK|/cast [combat] Draenic Channeled Mana Potion/n/cast [nocombat] Draenic Intellect Potion",
 				[75] = "spell|20589||Escape Artist|Racial|",
 				[79] = "item|118632||Focus Augment Rune",
@@ -2667,7 +2648,7 @@ ActionBarSaverDB = {
 				[109] = "spell|161691||Garrison Ability||",
 				[110] = "item|109155||Greater Draenic Intellect Flask",
 				[84] = "item|110560||Garrison Hearthstone",
-				[112] = "item|124276||Waistwrap of Banishment",
+				[97] = "macro|97||t13|Interface\\ICONS\\INV_6_2Raid_Trinket_3b.blp|#showtooltip 13/n/use 13",
 			},
 			["windwalker"] = {
 				"spell|115687||Jab||", -- [1]
@@ -2715,12 +2696,12 @@ ActionBarSaverDB = {
 				nil, -- [43]
 				"spell|115176||Zen Meditation||", -- [44]
 				[78] = "spell|101545||Flying Serpent Kick||",
-				[97] = "macro|97||t13|Interface\\ICONS\\INV_6_2Raid_Trinket_3b.blp|#showtooltip 13/n/use 13",
+				[58] = "spell|115080||Touch of Death||",
 				[81] = "spell|115178||Resuscitate||",
 				[109] = "spell|161691||Garrison Ability||",
 				[54] = "spell|116781||Legacy of the White Tiger||",
 				[93] = "macro|93||PULL|Interface\\Icons\\ABILITY_SEAL|#show none/n/pull 10",
-				[82] = "spell|83968||Mass Resurrection|Guild Perk|",
+				[97] = "macro|97||t13|Interface\\ICONS\\INV_6_2Raid_Trinket_3b.blp|#showtooltip 13/n/use 13",
 				[60] = "item|86577||Rod of Ambershaping",
 				[47] = "spell|100784||Blackout Kick||",
 				[49] = "macro|49||mount|Interface\\Icons\\ACHIEVEMENT_GUILDPERK_MOUNTUP|/use [mod:alt]Azure Water Strider/n/use [mod:ctrl] invincible/n/use [mod:shift]grand expedition yak/n/use [flyable, nomounted]INVINCIBLE/n/use [noflyable, nomounted] magic rooster/n/dismount/n/script VehicleExit()",
@@ -2729,7 +2710,7 @@ ActionBarSaverDB = {
 				[55] = "item|5512||Healthstone",
 				[57] = "item|3823||Lesser Invisibility Potion",
 				[75] = "spell|20589||Escape Artist|Racial|",
-				[58] = "spell|115080||Touch of Death||",
+				[82] = "spell|83968||Mass Resurrection|Guild Perk|",
 			},
 			["brm"] = {
 				"spell|115698||Jab||", -- [1]
@@ -3001,8 +2982,8 @@ ActionBarSaverDB = {
 				[86] = "spell|2823||Deadly Poison||",
 				[90] = "spell|83968||Mass Resurrection|Guild Perk|",
 				[87] = "spell|108211||Leeching Poison||",
+				[49] = "macro|49||mount|INTERFACE\\ICONS\\ability_mount_pegasus|#show invincible/n/use [nomounted,mod:alt]Azure Water Strider/n/use [nomounted,mod:ctrl]challenger's war yeti/n/use [nomounted,mod:shift]Traveler's Tundra Mammoth/n/use [nomounted]invincible/n/dismount/n/script VehicleExit()",
 				[65] = "spell|6770||Sap||",
-				[96] = "macro|96||skada reset|Interface\\Icons\\INV_SCROLL_11|/skada reset",
 				[67] = "spell|408||Kidney Shot||",
 				[52] = "macro|52||extra brack|Interface\\Icons\\ACHIEVEMENT_GUILDPERK_QUICK AND DEAD|/click ExtraActionButton1/n/stopcasting/n/stopcasting",
 				[71] = "spell|5938||Shiv||",
@@ -3011,7 +2992,7 @@ ActionBarSaverDB = {
 				[85] = "flyout|66||Poisons|",
 				[110] = "item|109153||Greater Draenic Agility Flask",
 				[98] = "macro|98||t13|Interface\\ICONS\\INV_Misc_Bone_03.blp|#showtooltip 13/n/use 13",
-				[49] = "macro|49||mount|INTERFACE\\ICONS\\ability_mount_pegasus|#show invincible/n/use [nomounted,mod:alt]Azure Water Strider/n/use [nomounted,mod:ctrl]challenger's war yeti/n/use [nomounted,mod:shift]Traveler's Tundra Mammoth/n/use [nomounted]invincible/n/dismount/n/script VehicleExit()",
+				[96] = "macro|96||skada reset|Interface\\Icons\\INV_SCROLL_11|/skada reset",
 			},
 			["assasination"] = {
 				"spell|1329||Mutilate||", -- [1]

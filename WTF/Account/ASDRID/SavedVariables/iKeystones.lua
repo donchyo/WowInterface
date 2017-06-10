@@ -7,8 +7,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 199,
 			["affix4"] = 7,
-			["affix10"] = 0,
 			["level"] = 9,
+			["affix10"] = 0,
 			["affix7"] = 13,
 			["depleted"] = 1,
 		},
@@ -115,8 +115,8 @@ iKeystonesDB = {
 		["key"] = {
 			["map"] = 206,
 			["affix4"] = 7,
-			["level"] = 8,
 			["affix10"] = 0,
+			["level"] = 8,
 			["affix7"] = 13,
 			["depleted"] = 1,
 		},

@@ -13,10 +13,10 @@ DataStore_AgendaDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_AgendaDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -53,16 +53,16 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1423512183,
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496920997,
+				["lastUpdate"] = 1497123646,
 			},
 			["Default.Grim Batol.Krixidh"] = {
 				["lastUpdate"] = 1496832999,
 			},
 			["Default.Grim Batol.Zuriz"] = {
 				["DungeonIDs"] = {
-					["The Nighthold Heroic|195664413"] = "494116|1496929482|0|1",
+					["The Nighthold Heroic|195664413"] = "376902|1497046697|0|1",
 				},
-				["lastUpdate"] = 1496930036,
+				["lastUpdate"] = 1497046951,
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
 				["lastUpdate"] = 1420506362,
@@ -77,7 +77,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1480934765,
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1496929402,
+				["lastUpdate"] = 1497123077,
 			},
 			["Default.Aggra (Português).Spacegoatx"] = {
 				["lastUpdate"] = 1461461819,
@@ -115,7 +115,10 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1465684901,
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496929439,
+				["DungeonIDs"] = {
+					["The Nighthold Normal|255404269"] = "300485|1497123113|0|1",
+				},
+				["lastUpdate"] = 1497123502,
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684610,
@@ -124,7 +127,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1442247547,
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1496920055,
+				["lastUpdate"] = 1497046654,
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["lastUpdate"] = 1496666257,

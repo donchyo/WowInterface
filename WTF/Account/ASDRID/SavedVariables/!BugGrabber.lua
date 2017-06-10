@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 191,
+	["session"] = 207,
 	["errors"] = {
 		{
 			["message"] = "[string \"--[[ Error in ' Druid-Guardian Frenzied Reg...\"]:7: attempt to index field 'dmgTaken' (a nil value)",

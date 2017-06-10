@@ -291,12 +291,12 @@ TidyPlatesThreatDB = {
 			},
 			["uniqueSettings"] = {
 				[33] = {
+					["scale"] = 1.4,
+					["name"] = "Fel Explosives",
+					["icon"] = 135799,
 					["color"] = {
 						["g"] = 0,
 					},
-					["name"] = "Fel Explosives",
-					["icon"] = 135799,
-					["scale"] = 1.4,
 				},
 				[34] = {
 				},
@@ -578,17 +578,6 @@ TidyPlatesThreatDB = {
 			},
 			["cache"] = {
 			},
-			["text"] = {
-				["full"] = true,
-			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
-			["tapHealthbarColor"] = {
-				["b"] = 0,
-				["g"] = 0.501960784313726,
-				["r"] = 0.501960784313726,
-			},
 			["auraWidget"] = {
 				["allow"] = {
 					nil, -- [1]
@@ -596,6 +585,17 @@ TidyPlatesThreatDB = {
 					"Binding Shot", -- [3]
 				},
 				["mode"] = "allMine",
+			},
+			["text"] = {
+				["full"] = true,
+			},
+			["tapHealthbarColor"] = {
+				["b"] = 0,
+				["g"] = 0.501960784313726,
+				["r"] = 0.501960784313726,
+			},
+			["questWidget"] = {
+				["ON"] = false,
 			},
 		},
 	},

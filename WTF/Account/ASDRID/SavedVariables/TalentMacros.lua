@@ -17,10 +17,10 @@ TalentMacrosDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -31,7 +31,7 @@ TalentMacrosDB = {
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -85,9 +85,9 @@ TalentMacrosDB = {
 			["macrotext"] = {
 				[17565] = "#showtooltip\n/use [nomod] speed of light\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
 				[17567] = "#showtooltip\n/use [nomod] long arm of the law\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[17569] = "#showtooltip\n/use [nomod] pursiut of justice\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
 				[21811] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Sacred shield\n",
 				[17597] = "#showtooltip\n/cast Holy Avenger\n/use 13",
-				[17569] = "#showtooltip\n/use [nomod] pursiut of justice\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
 			},
 			["version"] = 1,
 		},
@@ -96,13 +96,16 @@ TalentMacrosDB = {
 		},
 		["Krixiyo - Blackmoore"] = {
 		},
-		["Nyrith - Grim Batol"] = {
+		["Zetiz - Grim Batol"] = {
 			["macrotext"] = {
-				[18571] = "#showtooltip\n/use [nomod] wild charge\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[18574] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cenarion ward",
-				[18569] = "#showtooltip\n/use [nomod] feline swiftness\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[18570] = "#showtooltip\n/use [nomod] displacer beast\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[22424] = "#showtooltip\n/use [nomod] guttural roars\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[19243] = "#showtooltip\n/use [nomod] shadowstep\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[19244] = "#showtooltip\n/use [nomod] burst of speed\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[22122] = "#showtooltip\n/cast crippling poison",
+				[19239] = "#showtooltip\n/cast crippling poison",
+				[22123] = "#showtooltip\n/cast crippling poison",
+				[19241] = "#showtooltip\n/cast crippling poison",
+				[19249] = "#showtooltip\n/cast deadly poison",
+				[22344] = "#showtooltip\n/cast deadly poison",
 			},
 			["version"] = 1,
 		},
@@ -142,18 +145,17 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
-		["Zetiz - Grim Batol"] = {
+		["Lilgaykrixi - Kazzak"] = {
+		},
+		["Nyrith - Grim Batol"] = {
 			["macrotext"] = {
-				[19243] = "#showtooltip\n/use [nomod] shadowstep\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[19244] = "#showtooltip\n/use [nomod] burst of speed\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[19239] = "#showtooltip\n/cast crippling poison",
-				[19241] = "#showtooltip\n/cast crippling poison",
-				[19249] = "#showtooltip\n/cast deadly poison",
-				[22344] = "#showtooltip\n/cast deadly poison",
+				[18571] = "#showtooltip\n/use [nomod] wild charge\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[18574] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cenarion ward",
+				[18569] = "#showtooltip\n/use [nomod] feline swiftness\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[18570] = "#showtooltip\n/use [nomod] displacer beast\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[22424] = "#showtooltip\n/use [nomod] guttural roars\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
 			},
 			["version"] = 1,
-		},
-		["Lilgaykrixi - Kazzak"] = {
 		},
 		["Zuriz - Grim Batol"] = {
 			["macrotext"] = {

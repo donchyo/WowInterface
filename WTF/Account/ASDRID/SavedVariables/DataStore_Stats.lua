@@ -13,10 +13,10 @@ DataStore_StatsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_StatsDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -88,7 +88,7 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496920997,
+				["lastUpdate"] = 1497123596,
 				["Stats"] = {
 					["Ranged"] = "23842-23843|0|32592|0|32.095001220703",
 					["HealthMax"] = 3599460,
@@ -114,7 +114,7 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1496929480,
+				["lastUpdate"] = 1497046695,
 				["Stats"] = {
 					["Ranged"] = "1-2|0|0|0|19.4375",
 					["HealthMax"] = 3685920,
@@ -179,16 +179,16 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1496929349,
+				["lastUpdate"] = 1497123020,
 				["Stats"] = {
-					["Ranged"] = "1-2|0|0|0|28.555000305176",
-					["HealthMax"] = 2691600,
-					["Melee"] = "4576-6867|3.1690001487732|0|0|28.555000305176|0",
+					["Ranged"] = "1-2|0|0|0|30.175001144409",
+					["HealthMax"] = 2770980,
+					["Melee"] = "5672-8509|3.2430002689362|0|0|30.175001144409|0",
 					["MaxPower"] = "0|1155000",
-					["Spell"] = "30805|30805|0|28.555000305176|4680|82500",
-					["PVP"] = "27577|6",
-					["Base"] = "4545|6254|44860|30805|1683",
-					["Defense"] = "1683|363|3|0|0|0",
+					["Spell"] = "33428|33428|0|30.175001144409|3717|82500",
+					["PVP"] = "27578|6",
+					["Base"] = "4545|6254|46183|33428|1689",
+					["Defense"] = "1689|363|3|0|0|0",
 				},
 			},
 			["Default.Aggra (Português).Spacegoatx"] = {
@@ -296,16 +296,16 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496929438,
+				["lastUpdate"] = 1497123111,
 				["Stats"] = {
 					["Ranged"] = "1-2|0|0|0|31.989999771118",
-					["HealthMax"] = 4450723,
-					["Melee"] = "62455-71825|2.2380001544952|40902|0|31.989999771118|0",
+					["HealthMax"] = 4519795,
+					["Melee"] = "65888-75258|2.2380001544952|43627|0|31.989999771118|0",
 					["MaxPower"] = "0|220000",
-					["Spell"] = "49082|49082|0|31.989999771118|6075|35200",
+					["Spell"] = "52352|52352|0|31.989999771118|6075|35200",
 					["PVP"] = "1114|0",
-					["Base"] = "4405|33054|66305|7325|3020",
-					["Defense"] = "3020|1|25.936141967773|0|0|0",
+					["Base"] = "4845|35256|67334|8057|3020",
+					["Defense"] = "3020|1|26.557779312134|0|0|0",
 				},
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
@@ -335,7 +335,7 @@ DataStore_StatsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1496920048,
+				["lastUpdate"] = 1497046661,
 				["Stats"] = {
 					["Ranged"] = "1-2|0|0|0|29.632499694824",
 					["HealthMax"] = 5997300,

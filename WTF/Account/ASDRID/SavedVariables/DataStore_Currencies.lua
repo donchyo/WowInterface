@@ -13,10 +13,10 @@ DataStore_CurrenciesDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_CurrenciesDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -277,7 +277,7 @@ DataStore_CurrenciesDB = {
 					1876, -- [3]
 					4318, -- [4]
 					373324, -- [5]
-					1154126, -- [6]
+					1051726, -- [6]
 					214, -- [7]
 					728, -- [8]
 					3, -- [9]
@@ -322,11 +322,11 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496920997,
+				["lastUpdate"] = 1497123596,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "9016-0-0-0",
+					[1220] = "8216-0-0-0",
 					[824] = "477-0-0-10000",
 					[1273] = "1-0-0-6",
 					[1191] = "850-0-0-5000",
@@ -448,7 +448,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496929479,
+				["lastUpdate"] = 1497046695,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
@@ -558,7 +558,7 @@ DataStore_CurrenciesDB = {
 					212, -- [3]
 					94, -- [4]
 					133836, -- [5]
-					1016398, -- [6]
+					1018958, -- [6]
 					86, -- [7]
 					3, -- [8]
 					250306, -- [9]
@@ -609,11 +609,11 @@ DataStore_CurrenciesDB = {
 					22, -- [17]
 					19, -- [18]
 				},
-				["lastUpdate"] = 1496929348,
+				["lastUpdate"] = 1497123018,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "7940-0-0-0",
+					[1220] = "7960-0-0-0",
 					[824] = "14-0-0-10000",
 					[1273] = "0-0-0-6",
 					[1191] = "1700-0-0-5000",
@@ -918,8 +918,8 @@ DataStore_CurrenciesDB = {
 					9172, -- [3]
 					222, -- [4]
 					195020, -- [5]
-					2492750, -- [6]
-					470, -- [7]
+					2108750, -- [6]
+					726, -- [7]
 					3154, -- [8]
 					5080, -- [9]
 					3, -- [10]
@@ -964,13 +964,13 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496929437,
+				["lastUpdate"] = 1497123111,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "19474-0-0-0",
+					[1220] = "16474-0-0-0",
 					[824] = "147-0-0-10000",
-					[1273] = "3-0-0-6",
+					[1273] = "5-0-0-6",
 					[1191] = "3200-0-0-5000",
 					[823] = "75060-0-0-0",
 					[1226] = "1523-0-0-0",
@@ -1015,13 +1015,13 @@ DataStore_CurrenciesDB = {
 			["Default.Grim Batol.Krixidk"] = {
 				["Currencies"] = {
 					75, -- [1]
-					22352, -- [2]
+					26704, -- [2]
 					408796, -- [3]
 					1364, -- [4]
 					14814, -- [5]
 					5210, -- [6]
 					377036, -- [7]
-					2669774, -- [8]
+					2509774, -- [8]
 					598, -- [9]
 					579154, -- [10]
 					1880, -- [11]
@@ -1068,11 +1068,11 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1496920048,
+				["lastUpdate"] = 1497046611,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[396] = "0-0-10-3000",
-					[1220] = "20857-0-0-0",
+					[1220] = "19607-0-0-0",
 					[824] = "951-0-0-10000",
 					[1273] = "4-0-0-6",
 					[1191] = "650-0-0-5000",

@@ -1,14 +1,11 @@
 
 NewOpenablesProfile = {
 	["char"] = {
-		["Zetiz - Grim Batol"] = {
-			["itemID"] = 147349,
+		["Kroxi - Grim Batol"] = {
+			["itemID"] = 138839,
 		},
 		["Zolution - Grim Batol"] = {
 			["itemID"] = 133813,
-		},
-		["Kroxi - Grim Batol"] = {
-			["itemID"] = 138839,
 		},
 	},
 	["profileKeys"] = {

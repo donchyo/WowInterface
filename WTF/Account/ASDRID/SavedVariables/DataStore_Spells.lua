@@ -13,10 +13,10 @@ DataStore_SpellsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_SpellsDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -667,7 +667,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1496920997,
+				["lastUpdate"] = 1497123596,
 				["Spells"] = {
 					["General"] = {
 						1690368, -- [1]
@@ -1027,7 +1027,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1496929478,
+				["lastUpdate"] = 1497046695,
 				["Spells"] = {
 					["Enhancement"] = {
 						514048, -- [1]
@@ -1720,7 +1720,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1496929348,
+				["lastUpdate"] = 1497123018,
 				["Spells"] = {
 					["Frost"] = {
 						499968, -- [1]
@@ -2500,6 +2500,50 @@ DataStore_SpellsDB = {
 						29197143, -- [44]
 						42334298, -- [45]
 					},
+					["Restoration"] = {
+						514048, -- [1]
+						29197312, -- [2]
+						142336, -- [3]
+						27716864, -- [4]
+						272384, -- [5]
+						107776, -- [6]
+						527872, -- [7]
+						249344, -- [8]
+						635904, -- [9]
+						1586176, -- [10]
+						740864, -- [11]
+						2060800, -- [12]
+						2062336, -- [13]
+						677120, -- [14]
+						2093312, -- [15]
+						18923520, -- [16]
+						1380864, -- [17]
+						2049024, -- [18]
+						27719680, -- [19]
+						19832832, -- [20]
+						8238592, -- [21]
+						13187584, -- [22]
+						13185280, -- [23]
+						103168, -- [24]
+						94720, -- [25]
+						19745280, -- [26]
+						15691520, -- [27]
+						921344, -- [28]
+						25090048, -- [29]
+						20276736, -- [30]
+						9455616, -- [31]
+						2084608, -- [32]
+						18863360, -- [33]
+						13344512, -- [34]
+						139776, -- [35]
+						14846464, -- [36]
+						29940736, -- [37]
+						42340096, -- [38]
+						5275648, -- [39]
+						4146176, -- [40]
+						14195968, -- [41]
+						13200384, -- [42]
+					},
 					["General"] = {
 						1690368, -- [1]
 						21495808, -- [2]
@@ -2565,50 +2609,6 @@ DataStore_SpellsDB = {
 						29940736, -- [37]
 						19905536, -- [38]
 						5275648, -- [39]
-					},
-					["Restoration"] = {
-						514048, -- [1]
-						29197312, -- [2]
-						142336, -- [3]
-						27716864, -- [4]
-						272384, -- [5]
-						107776, -- [6]
-						527872, -- [7]
-						249344, -- [8]
-						635904, -- [9]
-						1586176, -- [10]
-						740864, -- [11]
-						2060800, -- [12]
-						2062336, -- [13]
-						677120, -- [14]
-						2093312, -- [15]
-						18923520, -- [16]
-						1380864, -- [17]
-						2049024, -- [18]
-						27719680, -- [19]
-						19832832, -- [20]
-						8238592, -- [21]
-						13187584, -- [22]
-						13185280, -- [23]
-						103168, -- [24]
-						94720, -- [25]
-						19745280, -- [26]
-						15691520, -- [27]
-						921344, -- [28]
-						25090048, -- [29]
-						20276736, -- [30]
-						9455616, -- [31]
-						2084608, -- [32]
-						18863360, -- [33]
-						13344512, -- [34]
-						139776, -- [35]
-						14846464, -- [36]
-						29940736, -- [37]
-						42340096, -- [38]
-						5275648, -- [39]
-						4146176, -- [40]
-						14195968, -- [41]
-						13200384, -- [42]
 					},
 				},
 				["SpellTabs"] = {
@@ -3250,7 +3250,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1496929436,
+				["lastUpdate"] = 1497123111,
 				["Spells"] = {
 					["Balance"] = {
 						5839872, -- [1]
@@ -3652,7 +3652,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1496919948,
+				["lastUpdate"] = 1497046611,
 				["Spells"] = {
 					["Unholy"] = {
 						12468992, -- [1]
