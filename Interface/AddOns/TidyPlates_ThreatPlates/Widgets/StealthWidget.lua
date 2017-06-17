@@ -1,9 +1,15 @@
-local ADDON_NAME, NAMESPACE = ...
-ThreatPlates = NAMESPACE.ThreatPlates
-
 -----------------------
 -- Stealth Widget --
 -----------------------
+local ADDON_NAME, NAMESPACE = ...
+local ThreatPlates = NAMESPACE.ThreatPlates
+
+---------------------------------------------------------------------------------------------------
+-- Imported functions and constants
+---------------------------------------------------------------------------------------------------
+local UnitGUID = UnitGUID
+local UnitBuff = UnitBuff
+
 local path = "Interface\\AddOns\\TidyPlates_ThreatPlates\\Widgets\\StealthWidget\\"
 -- local WidgetList = {}
 
@@ -26,6 +32,7 @@ local DETECTION_AURAS = {
   [203761] = true, -- Detector
   [213486] = true, -- Demonic Vision
   [225649] = true, -- Shadow Sight
+  [232234] = true, -- On High Alert
 }
 
 ---------------------------------------------------------------------------------------------------
@@ -34,6 +41,10 @@ local DETECTION_AURAS = {
 
 local function enabled()
 	return TidyPlatesThreat.db.profile.stealthWidget.ON
+end
+
+local function EnabledInHeadlineView()
+	return TidyPlatesThreat.db.profile.stealthWidget.ShowInHeadlineView
 end
 
 -- hides/destroys all widgets of this type created by Threat Plates
@@ -49,21 +60,28 @@ end
 -- Widget Functions for TidyPlates
 ---------------------------------------------------------------------------------------------------
 
--- local function UpdateWidgetConfig(frame)
--- end
+local function UpdateSettings(frame)
+  local db = TidyPlatesThreat.db.profile.stealthWidget
+
+  local size = db.scale
+  frame:SetSize(size, size)
+  frame:SetPoint("CENTER", frame:GetParent(), db.x, db.y)
+  frame:SetAlpha(db.alpha)
+  frame.Icon:SetTexture(path.."stealthicon")
+end
 
 -- Update Graphics
 local function UpdateWidgetFrame(frame, unit)
   if not unit.unitid then return end
 
-  -- local name, _, icon, stacks, auraType, duration, expiration, caster, _, _, spell_id = UnitAura(unit.unitid, "Invisibility and Stealth Detection")
-  -- print ("Spell detection: ", name)
+  -- name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable,
+  -- nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff("unit", index or "name"[, "rank"[, "filter"]])
 
   local i = 1
   local found = false
   -- or check for (?=: Invisibility and Stealth Detection)
   repeat
-    local name, _, icon, stacks, auraType, duration, expiration, caster, _, _, spell_id = UnitAura(unit.unitid, i)
+    local name, _, _, _, _, _, _, _, _, _, spell_id = UnitBuff(unit.unitid, i)
     --print ("Aura: ", name, spell_id)
     if DETECTION_AURAS[spell_id] then
       found = true
@@ -73,12 +91,6 @@ local function UpdateWidgetFrame(frame, unit)
   until found or not name
 
   if found then
-		local db = TidyPlatesThreat.db.profile.stealthWidget
-		frame:SetHeight(db.scale)
-		frame:SetWidth(db.scale)
-		frame:SetPoint(db.anchor, frame:GetParent(), db.x, db.y)
-		frame:SetAlpha(db.alpha)
-    frame.Icon:SetTexture(path.."stealthicon")
 		frame:Show()
   else
     frame:_Hide()
@@ -119,14 +131,15 @@ local function CreateWidgetFrame(parent)
 	local frame = CreateFrame("Frame", nil, parent)
 	frame:Hide()
 
-	-- Custom Code III
-	--------------------------------------
-	frame:SetHeight(64)
-	frame:SetWidth(64)
-	frame.Icon = frame:CreateTexture(nil, "OVERLAY")
-	frame.Icon:SetAllPoints(frame)
+  -- Custom Code III
+  --------------------------------------
+  frame:SetSize(64, 64)
+  frame.Icon = frame:CreateTexture(nil, "OVERLAY")
+  frame.Icon:SetAllPoints(frame)
+  frame:SetFrameLevel(parent:GetFrameLevel() + 2)
 
-	--frame.UpdateConfig = UpdateWidgetConfig
+  UpdateSettings(frame)
+  frame.UpdateConfig = UpdateSettings
 	--------------------------------------
 	-- End Custom Code
 
@@ -139,4 +152,4 @@ local function CreateWidgetFrame(parent)
 	return frame
 end
 
-ThreatPlatesWidgets.RegisterWidget("StealthWidgetTPTP", CreateWidgetFrame, false, enabled)
+ThreatPlatesWidgets.RegisterWidget("StealthWidgetTPTP", CreateWidgetFrame, false, enabled, EnabledInHeadlineView)

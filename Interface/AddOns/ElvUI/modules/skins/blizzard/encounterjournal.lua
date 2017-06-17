@@ -160,6 +160,7 @@ local function LoadSkin()
 	S:HandleScrollBar(EncounterJournalScrollBar)
 	S:HandleButton(EncounterJournal.LootJournal.LegendariesFrame.ClassButton, true)
 	S:HandleButton(EncounterJournal.LootJournal.LegendariesFrame.SlotButton, true)
+	S:HandleButton(EncounterJournal.LootJournal.ItemSetsFrame.ClassButton, true)
 	S:HandleDropDownBox(LootJournalViewDropDown)
 	LootJournalViewDropDownText:ClearAllPoints()
 	LootJournalViewDropDownText:Point("CENTER", LootJournalViewDropDown, "CENTER", 0, 3)
@@ -221,6 +222,8 @@ local function LoadSkin()
 			bossButton = _G["EncounterJournalBossButton"..bossIndex];
 			if bossButton and not bossButton.isSkinned then
 				S:HandleButton(bossButton)
+				bossButton.creature:ClearAllPoints()
+				bossButton.creature:Point("TOPLEFT", 1, -4)
 				bossButton.isSkinned = true
 			end
 

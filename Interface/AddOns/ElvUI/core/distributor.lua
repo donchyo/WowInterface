@@ -389,12 +389,19 @@ function D:Decode(dataString)
 	elseif stringType == "Table" then
 		local profileDataAsString
 		profileDataAsString, profileInfo = E:SplitString(dataString, "}::") -- "}::" indicates the end of the table
-		profileDataAsString = format("%s%s", profileDataAsString, "}") --Add back the missing "}"
-		profileType, profileKey = E:SplitString(profileInfo, "::")
+
+		if not profileInfo then
+			E:Print("Error extracting profile info. Invalid import string!")
+			return
+		end
+
 		if not profileDataAsString then
 			E:Print("Error extracting profile data. Invalid import string!")
 			return
 		end
+
+		profileDataAsString = format("%s%s", profileDataAsString, "}") --Add back the missing "}"
+		profileType, profileKey = E:SplitString(profileInfo, "::")
 
 		local profileToTable = loadstring(format("%s %s", "return", profileDataAsString))
 		if profileToTable then
@@ -553,4 +560,8 @@ E.PopupDialogs["IMPORT_RL"] = {
 	preferredIndex = 3
 }
 
-E:RegisterModule(D:GetName())
+local function InitializeCallback()
+	D:Initialize()
+end
+
+E:RegisterModule(D:GetName(), InitializeCallback)

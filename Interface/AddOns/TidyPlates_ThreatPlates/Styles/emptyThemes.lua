@@ -5,10 +5,7 @@ local function Create(self,name)
 	local db = self.db.profile.settings
 	local theme = {}
 	theme = {
-		hitbox = {
-			width = 124,
-			height = 30,
-		},
+		hitbox = { width = 124,	height = 30,	},
 		frame = {
 			emptyTexture =					t.Art.."Empty",
 			width = 124,
@@ -127,7 +124,7 @@ local function Create(self,name)
 			height = (db.skullicon.scale),
 			x = (db.skullicon.x),
 			y = (db.skullicon.y),
-			anchor = (db.skullicon.anchor),
+			anchor = "CENTER",
 			show = false,
 		},
 		customart = {
@@ -143,7 +140,7 @@ local function Create(self,name)
 			height = (db.spellicon.scale),
 			x = (db.spellicon.x),
 			y = (db.spellicon.y),
-			anchor = (db.spellicon.anchor),
+			anchor = "CENTER", --(db.spellicon.anchor),
 			show = false,
 		},
 		raidicon = {
@@ -151,7 +148,7 @@ local function Create(self,name)
 			height = (db.raidicon.scale),
 			x = (db.raidicon.x),
 			y = (db.raidicon.y),
-			anchor = (db.raidicon.anchor),
+			anchor = "CENTER", --(db.raidicon.anchor),
 			show = false,
 		},
 		eliteicon = {

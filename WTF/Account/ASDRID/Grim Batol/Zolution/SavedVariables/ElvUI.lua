@@ -1,5 +1,11 @@
 
 ElvCharacterDB = {
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
 	["ChatLog"] = {
 	},
 	["ChatEditHistory"] = {
@@ -8,11 +14,9 @@ ElvCharacterDB = {
 		"/g lol", -- [3]
 		"/alto show", -- [4]
 		"/ec", -- [5]
-	},
-	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
-		["IsInValidZone"] = true,
+		"/g a tittle", -- [6]
+		"/g a shit set", -- [7]
+		"/g nope", -- [8]
+		"/g i thought it was fun", -- [9]
 	},
 }

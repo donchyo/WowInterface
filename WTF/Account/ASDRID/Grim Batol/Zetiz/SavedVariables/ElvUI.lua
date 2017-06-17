@@ -1,5 +1,7 @@
 
 ElvCharacterDB = {
+	["ChatLog"] = {
+	},
 	["ChatEditHistory"] = {
 		"/al mm", -- [1]
 		"/al ", -- [2]
@@ -12,13 +14,19 @@ ElvCharacterDB = {
 		"/g or jsut woke up", -- [9]
 		"/g sick", -- [10]
 		"/IKS", -- [11]
+		"/g |cffa335ee|Hitem:145224::::::::110:259::43:4:3573:603:1572:3337:::|h[Cruel Combatant's Accolade of Conquest]|h|r'", -- [12]
+		"/bt", -- [13]
+		"/bw", -- [14]
+		"/reload", -- [15]
+		"/g what do we do?", -- [16]
+		"/g i dont care", -- [17]
+		"/g i'll come along for whatever", -- [18]
+		"/g yeah", -- [19]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
-	},
-	["ChatLog"] = {
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

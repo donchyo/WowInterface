@@ -194,7 +194,7 @@ function B:SetSearch(query)
 	local method = Search.Matches
 	local allowPartialMatch
 	if Search.Filters.tipPhrases.keywords[query] then
-		if itemsearchquery == "rel" or itemsearchquery == "reli" or itemsearchquery == "relic" then
+		if query == "rel" or query == "reli" or query == "relic" then
 			allowPartialMatch = true
 		end
 		method = Search.TooltipPhrase
@@ -239,7 +239,7 @@ function B:SetGuildBankSearch(query)
 	local method = Search.Matches
 	local allowPartialMatch
 	if Search.Filters.tipPhrases.keywords[query] then
-		if itemsearchquery == "rel" or itemsearchquery == "reli" or itemsearchquery == "relic" then
+		if query == "rel" or query == "reli" or query == "relic" then
 			allowPartialMatch = true
 		end
 		method = Search.TooltipPhrase
@@ -1545,10 +1545,13 @@ function B:OpenBank()
 		self.BankFrame = self:ContructContainerFrame('ElvUI_BankContainerFrame', true);
 	end
 
+	--Call :Layout first so all elements are created before we update
+	self:Layout(true)
+
 	BankFrame:Show()
 	self.BankFrame:Show();
 	self.BankFrame:UpdateAllSlots();
-	self.BagFrame:Show();
+	self:OpenBags()
 	self:UpdateTokens()
 
 	--Allow opening reagent tab directly by holding Shift
@@ -1559,8 +1562,6 @@ function B:OpenBank()
 		self.BankFrame.editBox:Point('RIGHT', self.BankFrame.depositButton, 'LEFT', -5, 0);
 		self.BankFrame.bagText:SetText(L["Reagent Bank"])
 	end
-
-	self:Layout(true)
 end
 
 function B:PLAYERBANKBAGSLOTS_CHANGED()
@@ -1785,4 +1786,8 @@ function B:Initialize()
 	SetInsertItemsLeftToRight(E.db.bags.reverseLoot)
 end
 
-E:RegisterModule(B:GetName())
+local function InitializeCallback()
+	B:Initialize()
+end
+
+E:RegisterModule(B:GetName(), InitializeCallback)

@@ -1,4 +1,4 @@
-﻿-- Daily Global Check
+-- Daily Global Check
 -- by Jadya
 -- EU-Well of Eternity
 
@@ -939,13 +939,17 @@ function eventframe.PLAYER_LOGIN(...)
 
   local meta_qd_main_list   = { __newindex = meta_qd_template_newindex,
                                 __index = DGC_CustomLists.QuestsData}
-
+                                
   local meta_qd_custom_list = { __newindex = meta_qd_template_newindex,
+                                __index = DailyGlobalCheck.WorldQuests.Data}
+                                
+  local meta_qd_worldquests = { __newindex = meta_qd_template_newindex,
                                 __index = questsdata_duplicates}
 								 
-  -- (main quests data > custom quests data > duplicates) cascade
+  -- (main quests data > custom quests data > world quests > duplicates) cascade
   setmeta(dgc.QuestsData, meta_qd_main_list)
   setmeta(DGC_CustomLists.QuestsData, meta_qd_custom_list)
+  setmeta(dgc.WorldQuests.Data, meta_qd_worldquests)
   setmeta(questsdata_duplicates, meta_questsdata_duplicates)
   
   for k,v in pairs(DGC_CustomLists.QuestsData) do

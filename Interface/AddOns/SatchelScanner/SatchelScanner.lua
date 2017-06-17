@@ -3,6 +3,7 @@
 --------------------------------
 --     MAINFRAME & SCANNER    --
 --------------------------------
+-- Hardcoded textures
 SS_Spacer = "Interface\\Addons\\SatchelScanner\\textures\\hr.tga";
 SS_Border = "Interface\\Addons\\SatchelScanner\\textures\\border.tga";
 SS_BagIcon = "Interface\\Addons\\SatchelScanner\\textures\\bagIcon.tga";
@@ -19,47 +20,14 @@ SS_CloseButtonPush = "Interface\\Addons\\SatchelScanner\\textures\\closepush.tga
 SS_ConfigButton = "Interface\\Addons\\SatchelScanner\\textures\\config.tga";
 SS_CloseButton = "Interface\\Addons\\SatchelScanner\\textures\\close.tga";
 
-SS_instanceID1 = 1046; -- Heroics
---SS_instanceID2 = 995; -- Timewalking WoTLK
-SS_instanceID2 = 1146; -- Timewalking Cataclysm
---SS_instanceID2 = 744; -- Timewalking Burning Crusade
-SS_instanceID3 = 1287; -- Darkbough
-SS_instanceID4 = 1288; -- Tormented Guardians
-SS_instanceID5 = 1289; -- Rift of Aln
-SS_instanceID6 = 1411; -- Trial of Valor
-SS_instanceID7 = 1290; -- Arcing Aqueducts
-SS_instanceID8 = 1291; -- Royal Athenaeum
-SS_instanceID9 = 1292; -- Nightspire
-SS_instanceID10 = 1293; -- Betrayer's Rise
-SS_instanceID11 = 1494; -- The Gates of Hell
-SS_instanceID12 = 1495; -- Wailing Halls
-SS_instanceID13 = 1496; -- Chamber of the Avatar
-SS_instanceID14 = 1497; -- Deceiver's Fall
-
-SS_Dungeons = {"Heroic", "Timewalking"}
-SS_Raids = {"Darkbough", "Tormented Guardians", "Rift of Aln", "Trial of Valor", "Arcing Aqueducts", "Royal Athenaeum", "Nightspire", "Betrayer's Rise", "The Gates of Hell", "Wailing Halls", "Chamber of the Avatar", "Deceiver's Fall"}
-
--- trueorfalse = LFG_IsRandomDungeonDisplayable(id)
--- tank, healer, dps = IsLFGDungeonJoinable(id)
---dungeonID, name, typeID, subtype, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionId, groupId, texture, difficultyID, numPlayers, description, isHoliday, bonusRepAmount, minPlayers = GetRFDungeonInfo(index)
---for i = 1, GetNumRFDungeons() do
---  local id, name = GetRFDungeonInfo(i)
---  print(id .. ": " .. name)
---end
---for i = 1, GetNumRandomDungeons() do
---  local id, name = GetLFGRandomDungeonInfo(i)
---  print(id .. ": " .. name)
---end
-
 -- Variables
 local running = false; -- Boolean to detect Running/paused state
-SS_addonVersion = 7.2; -- Addon Version, useful for wiping savedvariables if needed
+SS_addonVersion = 7.21; -- Addon Version, useful for wiping savedvariables if needed
 SS_versionTag = "Release";
 SS_TimeSinceLastNotification = 0;
 
 -- Dungeon Scan Var
 SS_runVar = {"Not Running", "Running"};
-SS_scanVar = {"#", "# ...", "# Searching...","# Legion Heroic!", "# Timewalking Dungeon!","# Darkbough!","# Tormented Guardians!","# Rift of Aln!","# Trial of Valor!","# Arcing Aqueducts!","# Royal Athenaeum!","# Nightspire!","# Betrayer's Rise!"}
 SS_classScan = {"Not Scanning...","Scanning...","Satchel Found!"};
 SS_ctaVar = {"Call to Arms: Tank","Call to Arms: Healer","Call to Arms: Dps"};
 
@@ -68,72 +36,31 @@ local redColor = {1,0,0,1};
 local greenColor = {0,1,0,1};
 local yellowColor = {1,1,0,1};
 local whiteColor = {1,1,1,1};
+local SS_Loaded = false;
 
-SS_masterFrameTable = {
-	[1] = {
+SS_ChildFrameTable = {
+	[1] = { x = 5,
 		[1] = { "Icon", x = 5, texture = SS_TankIcon, },
 		[2] = { "Text", x = 22, color = {1, 1, 1, 1}, text = "Tank:", },
 		[3] = { "Text2", x = 50, color = {1, 0, 0, 1}, text = "Not Scanning...", },
-		[4] = { "SS_heroicDungeonBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID1},
-		[5] = { "SS_timewalkingDungeonBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID2},
-		[6] = { "SS_DarkboughBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID3},
-		[7] = { "SS_TormentedGuardiansBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID4},
-		[8] = { "SS_RiftofAlnBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID5},
-		[9] = { "SS_TrialofValorBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID6},
-		[10] = { "SS_ArcingAqueductsBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID7},
-		[11] = { "SS_RoyalAthenaeumBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID8},
-		[12] = { "SS_NightspireBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID9},
-		[13] = { "SS_BetrayersRiseBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID10},
-		[14] = { "SS_TheGatesofHellBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID11},
-		[15] = { "SS_WailingHallsBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID12},
-		[16] = { "SS_ChamberAvatarBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID13},
-		[17] = { "SS_DeceiversFallBox1", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID14},
 	},
-	[2] = {
+	[2] = { x = 5,
 		[1] = { "Icon", x = 5, texture = SS_HealerIcon, },
 		[2] = { "Text", x = 22, color = {1, 1, 1, 1}, text = "Heal:", },
 		[3] = { "Text2", x = 49, color = {1, 0, 0, 1}, text = "Not Scanning...", },
-		[4] = { "SS_heroicDungeonBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID1},
-		[5] = { "SS_timewalkingDungeonBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID2},
-		[6] = { "SS_DarkboughBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID3},
-		[7] = { "SS_TormentedGuardiansBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID4},
-		[8] = { "SS_RiftofAlnBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID5},
-		[9] = { "SS_TrialofValorBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID6},
-		[10] = { "SS_ArcingAqueductsBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID7},
-		[11] = { "SS_RoyalAthenaeumBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID8},
-		[12] = { "SS_NightspireBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID9},
-		[13] = { "SS_BetrayersRiseBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID10},
-		[14] = { "SS_TheGatesofHellBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID11},
-		[15] = { "SS_WailingHallsBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID12},
-		[16] = { "SS_ChamberAvatarBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID13},
-		[17] = { "SS_DeceiversFallBox2", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID14},
 	},
-	[3] = {
+	[3] = { x = 5,
 		[1] = { "Icon", x = 5, texture = SS_DpsIcon, },
 		[2] = { "Text", x = 22, color = {1, 1, 1, 1}, text = "DPS:", },
 		[3] = { "Text2", x = 46, color = {1, 0, 0, 1}, text = "Not Scanning...", },
-		[4] = { "SS_heroicDungeonBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID1},
-		[5] = { "SS_timewalkingDungeonBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID2},
-		[6] = { "SS_DarkboughBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID3},
-		[7] = { "SS_TormentedGuardiansBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID4},
-		[8] = { "SS_RiftofAlnBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID5},
-		[9] = { "SS_TrialofValorBox3", x = 5, color = {255, 255, 255, 1}, text = "# ...", id = SS_instanceID6},
-		[10] = { "SS_ArcingAqueductsBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID7},
-		[11] = { "SS_RoyalAthenaeumBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID8},
-		[12] = { "SS_NightspireBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID9},
-		[13] = { "SS_BetrayersRiseBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID10},
-		[14] = { "SS_TheGatesofHellBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID11},
-		[15] = { "SS_WailingHallsBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID12},
-		[16] = { "SS_ChamberAvatarBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID13},
-		[17] = { "SS_DeceiversFallBox3", x = 5, color = {1, 1, 1, 1}, text = "# ...", id = SS_instanceID14},
 	},
 };
 
-SS_slimFrame = {
+SS_CoreFrameTable = {
 	SS_HeaderText = { loc = "TOP", x = 0, y = 8, fontSize = "14", color = {1, 1, 1, 1}, text = "Satchel Scanner", },
 	SS_SubHeaderText = { loc = "TOPLEFT", x = 5, y = -5, fontSize = "16", color = {0, 1, 0, 1}, text = "Current Status:", },
 	SS_SubHeaderText2 = { loc = "TOPLEFT", x = 95, y = -5, fontSize = "16", color = {1, 0, 0, 1}, text = "Not Running", },
-	SS_configButton = { loc = "TOP", x = 97, y = -5, width = "16", height = "16", functionName = "InterfaceOptionsFrame_OpenToCategory(SS_Config.options)", texture = SS_ConfigButton, pushedTxt = SS_ConfigButtonPush, highLightTxt = SS_highlightSmallUI},
+	SS_configButton = { loc = "TOP", x = 97, y = -5, width = "16", height = "16", functionName = "InterfaceOptionsFrame_OpenToCategory(SS_Globals.options)", texture = SS_ConfigButton, pushedTxt = SS_ConfigButtonPush, highLightTxt = SS_highlightSmallUI},
 	SS_closeButton = { loc = "TOP", x = 115, y = -5, width = "16", height = "16", functionName = "SS_hideMainFrame()", texture = SS_CloseButton, pushedTxt = SS_CloseButtonPush, highLightTxt = SS_highlightSmallUI},
 	SS_HeaderSpacertexture = { loc = "TOP", x = 0, y = -23, width = "0" , height = "2", texture = SS_Spacer},
 	SS_bagIcontexture = { loc = "TOP", x = 79, y = -5, width = "16", height = "16", texture = SS_BagIcon},
@@ -142,79 +69,99 @@ SS_slimFrame = {
 	SS_stopButton = { loc = "BOTTOM", x = 85, y = 5, text = "Stop", yscale = 22/32, xscale = 80/130, width = "80", height = "25", functionName = "SS_stopScanning()", texture = SS_StopButton, pushedTxt = "Interface\\Buttons\\UI-Panel-Button-Down.blp", highLightTxt = SS_hightlightMediumUI},
 };
 
-function SS_updateFrames()
-	if not _G["SS_InstanceText3#14"] and not running then
-		for j, var in ipairs(SS_masterFrameTable) do -- This register all frames and hides them
+function SS_UpdateChildFrame()
+	local role = {"Tank","Heal","Dps"}
+	if not SS_Globals["SS_RoleIconDps"] and not running then
+		for j, var in ipairs(SS_ChildFrameTable) do -- This register all frames and hides them
 			for i, tVar in ipairs(var) do
-				if not (i == 1) and not _G["SS_InstanceText"..j.."#"..i] then
-					_G["SS_InstanceText"..j.."#"..i] = SatchelScannerDisplayWindow:CreateFontString(nil, "OVERLAY")
-					_G["SS_InstanceText"..j.."#"..i]:SetFont(SS_preFont, 14, "OUTLINE");
-					_G["SS_InstanceText"..j.."#"..i]:SetTextColor(unpack(tVar.color));
-					_G["SS_InstanceText"..j.."#"..i]:SetText(tVar.text);
-					_G["SS_InstanceText"..j.."#"..i]:SetPoint("TOPLEFT", 0, 0);
-					_G["SS_InstanceText"..j.."#"..i]:Hide();
-				elseif (i == 1) and not _G["SS_InstanceIcon"..j.."#"..i] then
-					_G["SS_InstanceIcon"..j.."#"..i] = CreateFrame("Button", nil, SatchelScannerDisplayWindow);
-					_G["SS_InstanceIcon"..j.."#"..i]:SetWidth("16");
-					_G["SS_InstanceIcon"..j.."#"..i]:SetHeight("16");
-					_G["SS_InstanceIcon"..j.."#"..i]:SetNormalTexture(tVar.texture)
-					_G["SS_InstanceIcon"..j.."#"..i]:SetPoint("TOPLEFT", 0, 0);
-					_G["SS_InstanceIcon"..j.."#"..i]:Hide();
-				end	
+				if string.find(tVar[1] or "", "Text") and not SS_Globals["SS_RoleText"..role[j].."#"..i] then
+					SS_Globals["SS_RoleText"..role[j].."#"..i] = SatchelScannerDisplayWindow:CreateFontString(nil, "OVERLAY")
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:SetFont(SS_preFont, 14, "OUTLINE");
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:SetTextColor(unpack(tVar.color));
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:SetText(tVar.text);
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:SetPoint("TOPLEFT", 0, 0);
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:Hide();
+				elseif string.find(tVar[1] or "", "Icon") and not SS_Globals["SS_RoleIcon"..role[j]] then
+					SS_Globals["SS_RoleIcon"..role[j]] = CreateFrame("Button", nil, SatchelScannerDisplayWindow);
+					SS_Globals["SS_RoleIcon"..role[j]]:SetWidth("16");
+					SS_Globals["SS_RoleIcon"..role[j]]:SetHeight("16");
+					SS_Globals["SS_RoleIcon"..role[j]]:SetNormalTexture(tVar.texture)
+					SS_Globals["SS_RoleIcon"..role[j]]:SetPoint("TOPLEFT", 0, 0);
+					SS_Globals["SS_RoleIcon"..role[j]]:Hide();
+				end
+			end
+			for k=1, #SS_sortedDungeonsID do
+				local nameVar = ("SS_" .. string.gsub(SS_sortedDungeonsID[k].name, " ", ""))
+				nameVar = string.gsub(nameVar, "'", "")
+				SS_Globals[nameVar..role[j]] = SatchelScannerDisplayWindow:CreateFontString(nil, "OVERLAY")
+				SS_Globals[nameVar..role[j]]:SetFont(SS_preFont, 14, "OUTLINE");
+				SS_Globals[nameVar..role[j]]:SetTextColor(1,1,1,1);
+				SS_Globals[nameVar..role[j]]:SetText("# ...");
+				SS_Globals[nameVar..role[j]]:SetPoint("TOPLEFT", 0, 0);
+				SS_Globals[nameVar..role[j]]:Hide();
 			end
 		end
 	end
-	if _G["SS_InstanceText3#14"] and not running then
+	if SS_Globals["SS_RoleIconDps"] and not running then
 		local yvar = -28;
-		for j, var in ipairs(SS_masterFrameTable) do -- This is for displaying/hiding each texture
+		for j, var in ipairs(SS_ChildFrameTable) do -- This is for displaying/hiding each texture
 			local countMe = 0;
 			for i, tVar in ipairs(var) do
-				if string.find(tVar[1] or "", "Box") then
-					if(_G[tVar[1]]:GetChecked()) then
-						countMe = countMe + 1;
-						_G["SS_InstanceText"..j.."#"..i]:Hide()
-					elseif not (_G[tVar[1]]:GetChecked()) then
-						_G["SS_InstanceText"..j.."#"..i]:Hide();
-					end
-				elseif string.find(tVar[1] or "", "Text") then
-					_G["SS_InstanceText"..j.."#"..i]:SetPoint("TOPLEFT", tVar.x, yvar);
-					_G["SS_InstanceText"..j.."#"..i]:SetText(tVar.text);
-					_G["SS_InstanceText"..j.."#"..i]:SetTextColor(unpack(tVar.color));
-					_G["SS_InstanceText"..j.."#"..i]:Show();
+				if string.find(tVar[1] or "", "Text") then
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:SetPoint("TOPLEFT", tVar.x, yvar);
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:SetText(tVar.text);
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:SetTextColor(unpack(tVar.color));
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:Show();
 					if string.find(tVar[1] or "", "Text2") then
 						yvar = yvar - 17;
 					end
 				elseif string.find(tVar[1] or "", "Icon") then
-					_G["SS_InstanceIcon"..j.."#"..i]:SetPoint("TOPLEFT", tVar.x, yvar);
-					_G["SS_InstanceIcon"..j.."#"..i]:Show();
+					SS_Globals["SS_RoleIcon"..role[j]]:SetPoint("TOPLEFT", tVar.x, yvar);
+					SS_Globals["SS_RoleIcon"..role[j]]:Show();
 					yvar = yvar - 1;
 				end
 			end
+			for k=1, #SS_sortedDungeonsID do
+				local nameVar = ("SS_" .. string.gsub(SS_sortedDungeonsID[k].name, " ", ""))
+				nameVar = string.gsub(nameVar, "'", "")
+				if(SS_Globals.dungeonData[nameVar.."Box"..j]:GetChecked()) then
+					countMe = countMe + 1;
+					SS_Globals[nameVar..role[j]]:Hide()
+				elseif not (SS_Globals.dungeonData[nameVar.."Box"..j]:GetChecked()) then
+					SS_Globals[nameVar..role[j]]:Hide()
+				end
+				
+			end
 			if countMe == 0 then
 				yvar = yvar + 18;
-				_G["SS_InstanceText"..j.."#"..3]:Hide();
-				_G["SS_InstanceText"..j.."#"..2]:Hide();
-				_G["SS_InstanceIcon"..j.."#"..1]:Hide();
+				SS_Globals["SS_RoleText"..role[j].."#"..3]:Hide();
+				SS_Globals["SS_RoleText"..role[j].."#"..2]:Hide();
+				SS_Globals["SS_RoleIcon"..role[j]]:Hide();
 			end
 			local heigth = (yvar*-1) + 30;
 			SatchelScannerDisplayWindow:SetHeight(heigth);
 		end
 	end
-	if _G["SS_InstanceText3#14"] and running then
+	if SS_Globals["SS_RoleIconDps"] and running then
 		local yvar = -28;
-		for j, var in ipairs(SS_masterFrameTable) do -- This is for setting scan parameters
+		for j, var in ipairs(SS_ChildFrameTable) do
 			for i, tVar in ipairs(var) do
-				if string.find(tVar[1] or "", "Box") and _G["SS_InstanceText"..j.."#"..i]:IsShown() then
-					_G["SS_InstanceText"..j.."#"..i]:SetPoint("TOPLEFT", tVar.x, yvar);
-					yvar = yvar - 15;
-				elseif string.find(tVar[1] or "", "Text") and _G["SS_InstanceText"..j.."#"..i]:IsShown() then
-					_G["SS_InstanceText"..j.."#"..i]:SetPoint("TOPLEFT", tVar.x, yvar);
+				if string.find(tVar[1] or "", "Text") and SS_Globals["SS_RoleText"..role[j].."#"..i]:IsShown() then
+					SS_Globals["SS_RoleText"..role[j].."#"..i]:SetPoint("TOPLEFT", tVar.x, yvar);
 					if string.find(tVar[1] or "", "Text2") then
 						yvar = yvar - 17;
 					end
 				elseif string.find(tVar[1] or "", "Icon") then
-					_G["SS_InstanceIcon"..j.."#"..i]:SetPoint("TOPLEFT", tVar.x, yvar);
+					SS_Globals["SS_RoleIcon"..role[j]]:SetPoint("TOPLEFT", tVar.x, yvar);
 					yvar = yvar - 1;
+				end
+			end
+			for k=1, #SS_sortedDungeonsID do
+				local nameVar = ("SS_" .. string.gsub(SS_sortedDungeonsID[k].name, " ", ""))
+				nameVar = string.gsub(nameVar, "'", "")
+				if(SS_Globals[nameVar..role[j]]:IsShown()) then
+					SS_Globals[nameVar..role[j]]:SetPoint("TOPLEFT", var.x, yvar);
+					yvar = yvar - 15;
 				end
 			end
 			local heigth = (yvar*-1) + 30;
@@ -224,49 +171,49 @@ function SS_updateFrames()
 	SS_bagCounterText:SetText(SS_satchelsReceived);
 end
 
+-- Scanner, Scans for available Satchels
 function SS_Scanner()
-	if (_G["SS_InstanceText3#14"]) and running then
-		for j, var in ipairs(SS_masterFrameTable) do
+	if (SS_Globals["SS_RoleIconDps"]) and running then
+		for j, var in ipairs(SS_ChildFrameTable) do
+			local role = {"Tank","Heal","Dps"}
 			local SatchelFound;
-			for i, tVar in ipairs(var) do
-				if (i > 3) then
-					if (_G[tVar[1]]:GetChecked()) then
-						local fastScan = {};
-						local eligible, forTank, forHeal, forDps = GetLFGRoleShortageRewards(tVar.id, 1)
-						fastScan[1] = forTank;
-						fastScan[2] = forHeal;
-						fastScan[3] = forDps;
-						if fastScan[j] then
-							_G["SS_InstanceText"..j.."#"..i]:SetTextColor(unpack(greenColor));
-							_G["SS_InstanceText"..j.."#"..i]:SetText(SS_scanVar[i]);
-							_G["SS_InstanceText"..j.."#"..i]:Show();
-							SS_NotifcationTable[j] = true;
-							SatchelFound = true;
-						elseif not fastScan[j] then
-							_G["SS_InstanceText"..j.."#"..i]:SetTextColor(unpack(whiteColor));
-							_G["SS_InstanceText"..j.."#"..i]:SetText(SS_scanVar[3]);
-							_G["SS_InstanceText"..j.."#"..i]:Hide();
-						end
+			for k=1, #SS_sortedDungeonsID do
+				local nameVar = ("SS_" .. string.gsub(SS_sortedDungeonsID[k].name, " ", ""))
+				nameVar = string.gsub(nameVar, "'", "")
+				if (SS_Globals.dungeonData[nameVar.."Box"..j]:GetChecked()) then
+					local fastScan = {};
+					local eligible, forTank, forHeal, forDps = GetLFGRoleShortageRewards(SS_sortedDungeonsID[k].id, 1)
+					local fastScan = { forTank, forHeal, forDps };
+					if fastScan[j] then
+						SS_Globals[nameVar..role[j]]:SetTextColor(unpack(greenColor));
+						SS_Globals[nameVar..role[j]]:SetText("# "..SS_sortedDungeonsID[k].name);
+						SS_Globals[nameVar..role[j]]:Show();
+						SS_NotifcationTable[j] = true;
+						SatchelFound = true;
+					elseif not fastScan[j] then
+						SS_Globals[nameVar..role[j]]:SetTextColor(unpack(whiteColor));
+						SS_Globals[nameVar..role[j]]:SetText("# Searching...");
+						SS_Globals[nameVar..role[j]]:Hide();
 					end
 				end
 			end
 			if SatchelFound then
-				_G["SS_InstanceText"..j.."#3"]:SetTextColor(unpack(greenColor));
-				_G["SS_InstanceText"..j.."#3"]:SetText(SS_classScan[3]);
+				SS_Globals["SS_RoleText"..role[j].."#3"]:SetTextColor(unpack(greenColor));
+				SS_Globals["SS_RoleText"..role[j].."#3"]:SetText(SS_classScan[3]);
 			else
-				_G["SS_InstanceText"..j.."#3"]:SetTextColor(unpack(yellowColor));
-				_G["SS_InstanceText"..j.."#3"]:SetText(SS_classScan[2]);
+				SS_Globals["SS_RoleText"..role[j].."#3"]:SetTextColor(unpack(yellowColor));
+				SS_Globals["SS_RoleText"..role[j].."#3"]:SetText(SS_classScan[2]);
 			end
 		end
-		SS_updateFrames();
+		SS_UpdateChildFrame();
 		if SS_NotifcationTable[1] or SS_NotifcationTable[2] or SS_NotifcationTable[3] then
 			SatchelScanner_Notify();
 		end
 	end
 end
 
-function SS_drawFrames() -- Draws the SatchelScannerDisplayWindow --
-	-- Draw Core
+-- Called after Interface Panels have been setup
+function SS_SetupCoreFrame() -- Will be used for minimalist option later.
 	SatchelScannerDisplayWindow = CreateFrame("Frame", "SatchelFrame", UIParent)
 	SatchelScannerDisplayWindow:SetMovable(true)
 	SatchelScannerDisplayWindow:EnableMouse(true)
@@ -297,7 +244,7 @@ function SS_drawFrames() -- Draws the SatchelScannerDisplayWindow --
 		edgeFile = SS_Border, tile = false, tileSize = 0, edgeSize = 8, 
 		insets = { left = 0, right = 0, top = 0, bottom = 0 }
 	});
-	for i, tVar in pairs(SS_slimFrame) do
+	for i, tVar in pairs(SS_CoreFrameTable) do
 		if string.find(i, "Button") then
 			_G[i] = CreateFrame("Button", nil, SatchelScannerDisplayWindow, UIPanelButtonTemplate);
 			_G[i]:SetWidth(tVar.width);
@@ -338,7 +285,7 @@ function SS_drawFrames() -- Draws the SatchelScannerDisplayWindow --
 		end
 	end
 	SS_datacall("read");
-	SS_updateFrames();
+	SS_UpdateChildFrame();
 end
 
 function SS_startScanning()
@@ -346,7 +293,7 @@ function SS_startScanning()
 		running = true
 		SS_SubHeaderText2:SetText(SS_runVar[2]);
 		SS_SubHeaderText2:SetTextColor(unpack(greenColor));
-		SS_updateFrames();
+		SS_UpdateChildFrame();
 		RequestLFDPlayerLockInfo();
 		SS_printmm("Started Scanning!");
 	end
@@ -357,7 +304,7 @@ function SS_stopScanning()
 		running = false;
 		SS_SubHeaderText2:SetText(SS_runVar[1]);
 		SS_SubHeaderText2:SetTextColor(unpack(redColor));
-		SS_updateFrames();
+		SS_UpdateChildFrame();
 		SS_printmm("Stopped Scanning!")
 	end
 end
@@ -397,10 +344,11 @@ function SatchelScanner_OnEvent(self, event, arg, arg2)
 	local SS_debuff = UnitDebuff("player", "Dungeon Deserter")
 	local SS_inGroup = IsInGroup()
 	if event == "ADDON_LOADED" and arg == "SatchelScanner" then
-		SS_interfaceConfig();
+		SS_Globals = {dungeonData = {}, frameText = {}, panelText = {}};
 		SS_NotifcationTable = {};
-		SS_printm("Satchel Scanner v"..SS_addonVersion.."-"..SS_versionTag.." Loaded!");
-		SS_printm("->> Type /ss3 for commands!");
+		SS_printmm("Welcome to Satchel Scanner v"..SS_addonVersion.."-"..SS_versionTag.."!");
+		SS_printmm("->> Type /ss3 for commands!");
+		SS_Loaded = true;
 	elseif event == "CHAT_MSG_LOOT" and string.find(arg, "Shattered Satchel of Cooperation") and not (MailFrame:IsShown() or TradeFrame:IsShown()) then
 		SS_satchelsReceived = SS_satchelsReceived + 1;
 		SS_bagCounterText:SetText(SS_satchelsReceived);
@@ -408,10 +356,14 @@ function SatchelScanner_OnEvent(self, event, arg, arg2)
 	elseif event == "LFG_QUEUE_STATUS_UPDATE" then
 		-- This is just thrown to make sure SS_inLFGQueue/SS_inLFRQueue works as intended.
 		-- Mostly to keep the booleans true/false even after an Que rejoin.
+		-- This was an old fix, unsure if still needed, left behind for now.
 	elseif event == "PLAYER_ENTERING_WORLD" then
 		ss_inInstance = IsInInstance()
 	elseif event == "LFG_UPDATE_RANDOM_INFO" and running and not SS_inLFGQueue and not SS_inLFRQueue and not string.find(SS_debuff or "", "Dungeon Deserter") and (SS_scanInDungeon or not ss_inInstance) and (SS_scanInGroup or not SS_inGroup) then
 		SS_Scanner();
+	elseif event == "LFG_UPDATE_RANDOM_INFO" and SS_Loaded and not running then
+		SS_Loaded = false;
+		SS_interfaceConfig();
 	end
 end
 
@@ -422,7 +374,8 @@ function SatchelScanner_OnLoad(self)
 	self:RegisterEvent("LFG_QUEUE_STATUS_UPDATE");
 	self:RegisterEvent("PLAYER_ENTERING_WORLD");
 	SLASH_SATCHELSCANNER1, SLASH_SATCHELSCANNER2 = "/satchelscan", "/ss3"
-	SlashCmdList.SATCHELSCANNER = function(msg)
+	SlashCmdList.SATCHELSCANNER = function(fmsg)
+		local msg, arg1 = strsplit(" ",fmsg)
 		if msg == "toggle" then
 			if SatchelScannerDisplayWindow:IsShown() then
 				SatchelScannerDisplayWindow:Hide();
@@ -439,28 +392,34 @@ function SatchelScanner_OnLoad(self)
 		elseif msg == "reset" then
 			SS_satchelsReceived = SatchelScannerDB["satchels"];
 			SS_datacall("reset");
-		elseif msg == "reset-counter" then
-			SS_satchelsReceived = 0;
-			SS_datacall("update");
-		elseif msg == "config" then
-			InterfaceOptionsFrame_OpenToCategory(SS_Config.options);
-		elseif msg == "faq" then
-			InterfaceOptionsFrame_OpenToCategory(SS_Config.main);
-		elseif msg == "test" then
-			for i = 1, GetNumRFDungeons() do
-				local DungeonID, name, typeID, x9, x7, maxLevel, x4, x3, x2, expId, x8, texture, difficultyID, x6, x1, x5 = GetRFDungeonInfo(i)
-				print()
-				print(DungeonID .. ": " .. name, "TypeID:",typeID,"MaxLevel:", maxLevel, "ExpID:", expId, "Texture:", texture )
+		elseif msg == "bagcounter" then
+			if string.find(arg1, "reset") then
+				SS_satchelsReceived = 0;
+				SS_datacall("update");
+			elseif (tonumber(arg1) and math.floor(arg1) and not string.find(arg1, "-")) then
+				arg1 = math.abs(arg1);
+				if(arg1 < 99999) then
+					SS_satchelsReceived = arg1;
+					SS_datacall("update");
+				else
+					SS_printmm("You cannot set a number higher than 99'999 or lower than 0");
+				end
+			else
+				SS_printmm("Proper Usage: '/ss3 bagcounter X' where X is a number or '/ss3 bagcounter reset'");
 			end
+		elseif msg == "config" then
+			InterfaceOptionsFrame_OpenToCategory(SS_Globals.options);
+		elseif msg == "faq" then
+			InterfaceOptionsFrame_OpenToCategory(SS_Globals.main);
 		else
-			SS_printm("====== Satchel Scanner ======");
-			SS_printm("->> Type '/ss3 toggle' to show/hide the frame");
-			SS_printm("->> Type '/ss3 start' to start scanning");
-			SS_printm("->> Type '/ss3 stop' to stop scanning");
-			SS_printm("->> Type '/ss3 reset' to reset the addon");
-			SS_printm("->> Type '/ss3 reset-counter' to reset the bag counter");
-			SS_printm("->> Type '/ss3 config' to configure the addon");
-			SS_printm("->> Type '/ss3 faq' to open the F.A.Q")
+			print("|cffffffff========== |cFF0080FFSatchel Scanner |cffffffff==========|r");
+			SS_printmm("->> Use '/ss3 toggle' to show/hide the frame");
+			SS_printmm("->> Use '/ss3 start' to start scanning");
+			SS_printmm("->> Use '/ss3 stop' to stop scanning");
+			SS_printmm("->> Use '/ss3 reset' to reset the addon");
+			SS_printmm("->> Use '/ss3 bagcounter reset or <0-99'999>' to set the bag counter");
+			SS_printmm("->> Use '/ss3 config' to configure the addon");
+			SS_printmm("->> Use '/ss3 faq' to open the F.A.Q")
 		end
 		msg = ""
 	end
@@ -472,7 +431,7 @@ function SatchelScanner_Notify()
 		timeSinceLast = timeSinceLast - SS_TimeSinceLastNotification;
 		if (timeSinceLast > SS_NotificationInterval) then
 			FlashClientIcon();
-			if SS_raidWarnNotify then
+			if SS_Globals.SS_raidWarnNotify then
 				for i=1,3,1 do
 					if SS_NotifcationTable[i] then
 						RaidNotice_AddMessage(RaidWarningFrame, SS_ctaVar[i], ChatTypeInfo["RAID_WARNING"])
@@ -483,7 +442,7 @@ function SatchelScanner_Notify()
 			if not SatchelScannerDisplayWindow:IsShown() then
 				SatchelScannerDisplayWindow:Show();
 			end
-			if SS_playSound then
+			if SS_Globals.SS_playSound then
 				PlaySoundFile("Sound\\interface\\RaidWarning.ogg", "Master");
 			end
 			SS_TimeSinceLastNotification = GetTime();

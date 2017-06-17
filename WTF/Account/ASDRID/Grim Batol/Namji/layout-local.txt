@@ -1,4 +1,11 @@
 Version: 1
+Frame: QuestFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 34
+Y: 103
+W: 338
+H: 496
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: LEFT
@@ -15,8 +22,8 @@ W: 338
 H: 424
 Frame: ColorPickerFrame
 FrameLevel: 21
-Anchor: RIGHT
-X: -326
+Anchor: CENTER
+X: 317
 Y: 63
 W: 365
 H: 200

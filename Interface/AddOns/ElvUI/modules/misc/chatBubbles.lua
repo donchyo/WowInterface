@@ -4,10 +4,11 @@ local CH = E:GetModule("Chat");
 
 --Cache global variables
 --Lua functions
-local select, unpack, type = select, unpack, type
+local select, unpack, type, pairs = select, unpack, type, pairs
 local strlower, find, format = strlower, string.find, string.format
 --WoW API / Variables
 local CreateFrame = CreateFrame
+local C_ChatBubbles_GetAllChatBubbles = C_ChatBubbles and C_ChatBubbles.GetAllChatBubbles
 local CUSTOM_CLASS_COLORS = CUSTOM_CLASS_COLORS
 local RAID_CLASS_COLORS = RAID_CLASS_COLORS
 
@@ -29,32 +30,35 @@ function M:UpdateBubbleBorder()
 		end
 	end
 
-	local classColorTable, lowerCaseWord, isFirstWord, rebuiltString, tempWord
-	local text = self.text:GetText()
-	for word in text:gmatch("[^%s]+") do
-		lowerCaseWord = word:lower()
-		lowerCaseWord = lowerCaseWord:gsub("%p", "")
+	if E.private.chat.enable and E.private.general.classColorMentionsSpeech then
+		local classColorTable, lowerCaseWord, isFirstWord, rebuiltString, tempWord, wordMatch, classMatch
+		local text = self.text:GetText()
+		if text and text:match("[^%s]+") then
+			for word in text:gmatch("[^%s]+") do
+				tempWord = word:gsub("^%p-([^%p]+)([%-]?[^%p]-)%p-$","%1%2")
+				lowerCaseWord = tempWord:lower()
 
-		if E.private.general.classColorMentionsSpeech then
-			if(CH.ClassNames[lowerCaseWord]) then
-				classColorTable = CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[CH.ClassNames[lowerCaseWord]] or RAID_CLASS_COLORS[CH.ClassNames[lowerCaseWord]];
-				tempWord = word:gsub("%p", "")
-				word = word:gsub(tempWord, format("\124cff%.2x%.2x%.2x", classColorTable.r*255, classColorTable.g*255, classColorTable.b*255)..tempWord.."\124r")
-			elseif(CH.ClassNames[word]) then
-				classColorTable = CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[CH.ClassNames[word]] or RAID_CLASS_COLORS[CH.ClassNames[word]];
-				word = word:gsub(word:gsub("%-","%%-"), format("\124cff%.2x%.2x%.2x", classColorTable.r*255, classColorTable.g*255, classColorTable.b*255)..word.."\124r")
+				classMatch = CH.ClassNames[lowerCaseWord] or CH.ClassNames[tempWord]
+				wordMatch = (CH.ClassNames[lowerCaseWord] and lowerCaseWord) or (CH.ClassNames[tempWord] and tempWord:lower())
+
+				if(wordMatch and not E.global.chat.classColorMentionExcludedNames[wordMatch]) then
+					classColorTable = CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[classMatch] or RAID_CLASS_COLORS[classMatch];
+					word = word:gsub(tempWord:gsub("%-","%%-"), format("\124cff%.2x%.2x%.2x%s\124r", classColorTable.r*255, classColorTable.g*255, classColorTable.b*255, tempWord))
+				end
+
+				if not isFirstWord then
+					rebuiltString = word
+					isFirstWord = true
+				else
+					rebuiltString = format("%s %s", rebuiltString, word)
+				end
+			end
+
+			if rebuiltString ~= nil then
+				self.text:SetText(rebuiltString)
 			end
 		end
-
-		if not isFirstWord then
-			rebuiltString = word
-			isFirstWord = true
-		else
-			rebuiltString = format("%s %s", rebuiltString, word)
-		end
 	end
-
-	self.text:SetText(rebuiltString)
 end
 
 function M:SkinBubble(frame)
@@ -165,7 +169,8 @@ function M:SkinBubble(frame)
 	frame:HookScript('OnShow', M.UpdateBubbleBorder)
 	frame:SetFrameStrata("DIALOG") --Doesn't work currently in Legion due to a bug on Blizzards end
 	M.UpdateBubbleBorder(frame)
-	frame.isBubblePowered = true
+
+	frame.isSkinnedElvUI = true
 end
 
 function M:IsChatBubble(frame)
@@ -200,16 +205,24 @@ function M:LoadChatBubbles()
 		if (self.lastupdate < .1) then return end
 		self.lastupdate = 0
 
-		local count = WorldFrame:GetNumChildren()
-		if(count ~= numChildren) then
-			for i = numChildren + 1, count do
-				local frame = select(i, WorldFrame:GetChildren())
-				
-				if M:IsChatBubble(frame) then
-					M:SkinBubble(frame)
+		if E.wowbuild >= 24287 then --7.2.5
+			for _, chatBubble in pairs(C_ChatBubbles_GetAllChatBubbles()) do
+				if not chatBubble.isSkinnedElvUI then
+					M:SkinBubble(chatBubble)
 				end
 			end
-			numChildren = count
-		end
+		else
+			local count = WorldFrame:GetNumChildren()
+			if(count ~= numChildren) then
+				for i = numChildren + 1, count do
+					local frame = select(i, WorldFrame:GetChildren())
+					
+					if M:IsChatBubble(frame) then
+						M:SkinBubble(frame)
+					end
+				end
+				numChildren = count
+			end
+		end		
 	end)
 end

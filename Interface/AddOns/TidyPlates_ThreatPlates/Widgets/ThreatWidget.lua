@@ -1,10 +1,17 @@
-local ADDON_NAME, NAMESPACE = ...
-ThreatPlates = NAMESPACE.ThreatPlates
-
 -------------------
 -- Threat Widget --
 -------------------
-local path = "Interface\\AddOns\\TidyPlates_ThreatPlates\\Widgets\\ThreatWidget\\"
+local ADDON_NAME, NAMESPACE = ...
+local ThreatPlates = NAMESPACE.ThreatPlates
+
+---------------------------------------------------------------------------------------------------
+-- Imported functions and constants
+---------------------------------------------------------------------------------------------------
+local UnitIsOffTanked = TidyPlatesThreat.UnitIsOffTanked
+local ShowThreatFeedback = TidyPlatesThreat.ShowThreatFeedback
+local GetUniqueNameplateSetting = TidyPlatesThreat.GetUniqueNameplateSetting
+
+local PATH = "Interface\\AddOns\\TidyPlates_ThreatPlates\\Widgets\\ThreatWidget\\"
 -- local WidgetList = {}
 
 ---------------------------------------------------------------------------------------------------
@@ -27,38 +34,54 @@ end
 -- Widget Functions for TidyPlates
 ---------------------------------------------------------------------------------------------------
 
-local function UpdateWidgetFrame(frame, unit, style)
-	local threatLevel
-	if TidyPlatesThreat:GetSpecRole() then -- Tanking uses regular textures / swapped for dps / healing
-		threatLevel = unit.threatSituation
-	else
-		if unit.threatSituation == "HIGH" then
-			threatLevel = "LOW"
-		elseif unit.threatSituation == "LOW" then
-			threatLevel = "HIGH"
-		elseif unit.threatSituation == "MEDIUM" then
-			threatLevel = "MEDIUM"
-		end
-	end
+local function UpdateWidgetFrame(frame, unit)
+	local db = TidyPlatesThreat.db.profile.threat
 
-	local prof = TidyPlatesThreat.db.profile.threat
-	if unit.isMarked and prof.marked.art then
-		frame:_Hide()
-	else
-		--local style = TidyPlatesThreat.SetStyle(unit)
-		if not style then style = TidyPlatesThreat.SetStyle(unit) end
-		if ((style == "dps") or (style == "tank") or (style == "unique")) and
-		  (InCombatLockdown() and unit.reaction ~= "FRIENDLY" and unit.type == "NPC") then
-			frame.Icon:SetTexture(path..prof.art.theme.."\\"..threatLevel)
-			frame:Show()
-		else
-			frame:_Hide()
-		end
-	end
+  if unit.isMarked and db.marked.art then
+    frame:_Hide()
+  else
+    local style = unit.TP_Style
+
+    if style == "unique" then
+      local unique_setting = GetUniqueNameplateSetting(unit)
+      if unique_setting.UseThreatColor then
+        -- set style to tank/dps or normal
+        style = TidyPlatesThreat.GetThreatStyle(unit)
+      end
+    end
+
+    -- Check for InCombatLockdown() and unit.type == "NPC" and unit.reaction ~= "FRIENDLY" not necessary
+    -- for dps/tank as these styles automatically require that
+    local show = (style == "dps" or style == "tank")
+
+    if show and ShowThreatFeedback(unit) then
+      local threatLevel
+      if style == "tank" then -- Tanking uses regular textures / swapped for dps / healing
+        if db.toggle.OffTank and UnitIsOffTanked(unit) then
+          threatLevel = "OFFTANK"
+        else
+          threatLevel = unit.threatSituation
+        end
+      else -- dps or normal
+        if unit.threatSituation == "HIGH" then
+          threatLevel = "LOW"
+        elseif unit.threatSituation == "LOW" then
+          threatLevel = "HIGH"
+        elseif unit.threatSituation == "MEDIUM" then
+          threatLevel = "MEDIUM"
+        end
+      end
+
+      frame.Icon:SetTexture(PATH .. db.art.theme.."\\"..threatLevel)
+      frame:Show()
+    else
+      frame:_Hide()
+    end
+  end
 end
 
 -- Context
-local function UpdateWidgetContext(frame, unit, style)
+local function UpdateWidgetContext(frame, unit)
 	local guid = unit.guid
 	frame.guid = guid
 
@@ -70,7 +93,7 @@ local function UpdateWidgetContext(frame, unit, style)
 	-- Custom Code II
 	--------------------------------------
 	if UnitGUID("target") == guid then
-		UpdateWidgetFrame(frame, unit, style)
+		UpdateWidgetFrame(frame, unit)
 	else
 		frame:_Hide()
 	end
@@ -94,12 +117,10 @@ local function CreateWidgetFrame(parent)
 	-- Custom Code III
 	--------------------------------------
 	frame:SetFrameLevel(parent.bars.healthbar:GetFrameLevel() + 2)
-	frame:SetWidth(256)
-	frame:SetHeight(64)
-	frame:SetPoint("CENTER",parent,"CENTER")
+	frame:SetSize(265, 64)
+	frame:SetPoint("CENTER", parent, "CENTER")
 	frame.Icon = frame:CreateTexture(nil, "OVERLAY")
 	frame.Icon:SetAllPoints(frame)
-
 	--------------------------------------
 	-- End Custom Code
 

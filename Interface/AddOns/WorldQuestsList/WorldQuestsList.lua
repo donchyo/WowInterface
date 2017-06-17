@@ -1,4 +1,4 @@
-local VERSION = 34
+local VERSION = 36
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -93,6 +93,8 @@ Bugfixes
 Added invasions quests to list for low level chars
 Added faction icons for emissary quests (can be disabled in options)
 Threshold for lower priority on gear rewards was lowered to 880 ilvl
+
+7.2.5 Update
 ]]
 
 
@@ -277,7 +279,7 @@ local LOCALE =
 		distance = "Distance",
 		disableBountyIcon = "Disable Emissary icons for faction names",
 	} or
-	(locale == "zhCN" or locale == "zhTW") and {
+	(locale == "zhCN" or locale == "zhTW") and {	--by cuihuanyu1986
 		gear = "装备",
 		gold = "黄金",
 		blood = "萨格拉斯之血",
@@ -2553,18 +2555,18 @@ function WorldQuestList_Update()
 					-- currency		
 					local numQuestCurrencies = GetNumQuestLogRewardCurrencies(questID)
 					for i = 1, numQuestCurrencies do
-						local name, texture, numItems = GetQuestLogRewardCurrencyInfo(i, questID)
+						local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(i, questID)
 						local text = BONUS_OBJECTIVE_REWARD_WITH_COUNT_FORMAT:format(texture, numItems, name)
-						if type(texture)=='string' and texture:find("ble_boss_token$") then	--War Supplies
+						if currencyID == 1342 or (type(texture)=='string' and texture:find("ble_boss_token$")) then	--War Supplies
 							WarSupplies = numItems
-						elseif type(texture)=='string' and texture:find("acrystal01$") and isInvasion then	--Shard of nothing
+						elseif (currencyID == 1226 or (type(texture)=='string' and texture:find("acrystal01$"))) and isInvasion then	--Shard of nothing
 							ShardsNothing = numItems
 						else
 							reward = text
 							rewardType = 30
 						end
 					
-						if type(texture)=='string' and texture:find("orderresources$") then
+						if currencyID == 1220 or (type(texture)=='string' and texture:find("orderresources$")) then
 							hasRewardFiltered = true
 							rewardSort = numItems or 0
 							if bit.band(filters[3][2],ActiveFilter) == 0 then 
@@ -2762,6 +2764,7 @@ function WorldQuestList_Update()
 							local prevFaction
 							if faction and faction:find(":0|t") then
 								prevFaction = faction:match("^(.-:0|t )[^|]*$")
+								faction = faction:gsub("|T.-:0|t ","")
 							end
 							faction = (prevFaction or "").."|T" .. (texturePath or "") .. ":0|t|cffffffff" .. ShardsNothing .. (faction~="" and "," or "").."|r " .. faction
 						else
@@ -3335,7 +3338,7 @@ end
 
 local KirinTorSelecter = CreateFrame('Frame',nil,UIParent)
 KirinTorSelecter:SetPoint("LEFT",30,0)
-KirinTorSelecter:SetSize(KirinTorSelecter_Size * 3,KirinTorSelecter_Size * 2)
+KirinTorSelecter:SetSize(KirinTorSelecter_Size * 4,KirinTorSelecter_Size * 3)
 KirinTorSelecter:SetAlpha(.7)
 KirinTorSelecter:Hide()
 
@@ -3346,7 +3349,7 @@ KirinTorSelecter.back:SetColorTexture(0,0,0,1)
 for i=1,#KirinTorPatt do
 	local b = CreateFrame('Button',nil,KirinTorSelecter)
 	b:SetSize(KirinTorSelecter_Size,KirinTorSelecter_Size)
-	b:SetPoint("TOPLEFT",((i-1)%3)*KirinTorSelecter_Size,-floor((i-1)/3)*KirinTorSelecter_Size)
+	b:SetPoint("TOPLEFT",((i-1)%4)*KirinTorSelecter_Size,-floor((i-1)/4)*KirinTorSelecter_Size)
 	
 	DEV_CreateBorder(b)
 	b:SetBorderColor(0,0,0,1)

@@ -21,7 +21,7 @@ PremadeGroupsFilterState = {
 	},
 	["expression"] = "",
 	["difficulty"] = {
-		["val"] = 4,
+		["val"] = 2,
 		["act"] = true,
 	},
 	["defeated"] = {

@@ -49,14 +49,14 @@ local function TPTPOVERLAP()
 	if tonumber(build) > 13623 then
 		if GetCVar("nameplateMotion") == "3" then
 			if InCombatLockdown() then
-				t.Print("We're unable to change this while in combat")
+				t.Print(L["We're unable to change this while in combat"])
 			else
 				SetCVar("nameplateMotion", 1)
 				t.Print(L["-->>Nameplate Overlapping is now |cffff0000OFF!|r<<--"])
 			end
 		else
 			if InCombatLockdown() then
-				t.Print("We're unable to change this while in combat")
+				t.Print(L["We're unable to change this while in combat"])
 			else
 				SetCVar("nameplateMotion", 3)
 				t.Print(L["-->>Nameplate Overlapping is now |cff00ff00ON!|r<<--"])
@@ -86,35 +86,33 @@ end
 SLASH_TPTPVERBOSE1 = "/tptpverbose"
 SlashCmdList["TPTPVERBOSE"] = TPTPVERBOSE
 
-local function PrintHelp()
-	t.Print(L["Usage: /tptp [options]"], true)
-	t.Print(L["  options:"], true)
-	t.Print(L["    update-profiles      Migrates deprecated settings in your configuration"], true)
-	t.Print(L["    new-default-profile  Updates the default profile with new default settings"], true)
-	t.Print(L["    help                 Prints this help message"], true)
-	t.Print(L["    <no option>          Displays options dialog"], true)
-end
+--local function PrintHelp()
+--	t.Print(L["Usage: /tptp [options]"], true)
+--	t.Print(L["options:"], true)
+----	t.Print(L["  update-profiles    Migrates deprecated settings in your configuration"], true)
+--	t.Print(L["  help               Prints this help message"], true)
+--	t.Print(L["  <no option>        Displays options dialog"], true)
+--end
 
 -- /tptp
 local function ParseCommandLine(message)
+	TidyPlatesThreat:OpenOptions()
+
 	-- split commands by space
 	--for word in message:gmatch("%S+") do
-	if message == "" then
-		TidyPlatesThreat:OpenOptions()
-	elseif message == "update-profiles" then
-		t.Print(L["Migrating deprecated settings in configuration ..."])
-		t.UpdateConfiguration()
-	elseif message == "new-default-profile" then
-		t.Print(L["Updating default profile with new settings ..."])
-		t.UpdateDefaultProfile()
-	elseif message == "help" then
-		PrintHelp()
+	--	if message == "" then
+--	elseif message == "update-profiles" then
+--		t.Print(L["Migrating deprecated settings in configuration ..."])
+--		t.UpdateConfiguration()
 --	elseif message == "internal" then
---		print ("CVar: ", GetCVar("SetNamePlateEnemySize"))
-	else
-		t.Print(L["Unknown option: "] .. message, true)
-		PrintHelp()
-	end
+--		TidyPlatesThreat.db.global.CheckNewLookAndFeel = nil
+--		TidyPlatesThreat.db.global.DefaultsVersion = nil
+--	elseif message == "help" then
+--		PrintHelp()
+--	else
+--		t.Print(L["Unknown option: "] .. message, true)
+--		PrintHelp()
+--	end
 end
 
 -----------------------------------------------------

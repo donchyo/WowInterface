@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 348,
 	["lastSanitation"] = 3,
-	["session"] = 207,
 	["errors"] = {
 		{
 			["message"] = "[string \"--[[ Error in ' Druid-Guardian Frenzied Reg...\"]:7: attempt to index field 'dmgTaken' (a nil value)",
@@ -43,51 +43,20 @@ BugGrabberDB = {
 			["counter"] = 5,
 		}, -- [5]
 		{
-			["message"] = "[string \"--[[ Error in ' anti-magic shell loph ' ]]r...\"]:3: attempt to compare nil with number",
-			["time"] = "2017/06/05 21:49:43",
-			["locals"] = "",
-			["stack"] = "[string \"--[[ Error in ' anti-magic shell loph ' ]]r...\"]:3: in function <[string \"--[[ Error in ' anti-magic shell loph ' ]]r...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
-			["session"] = 111,
-			["counter"] = 2,
-		}, -- [6]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'WorldQuestTracker' tried to call the protected function '<unnamed>:ClearAllPoints()'.",
 			["time"] = "2017/06/06 22:16:55",
 			["locals"] = "",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\WorldMapFrame.lua:1533: in function `WorldMapFrame_SetOverlayLocation'\nInterface\\FrameXML\\WorldMapFrame.lua:1556: in function `WorldMapFrame_UpdateOverlayLocations'\nInterface\\FrameXML\\WorldMapFrame.lua:1339: in function `WorldMapFrame_Update'\nInterface\\FrameXML\\WorldMapFrame.lua:2883: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:450: in function <Interface\\FrameXML\\WorldMapFrame.lua:434>\n[C]: ?",
 			["session"] = 132,
 			["counter"] = 1,
-		}, -- [7]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ElvUI_SLE' tried to call the protected function '<unnamed>:Hide()'.",
-			["time"] = "2017/06/05 15:15:26",
-			["locals"] = "",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:428: in function <Interface\\FrameXML\\WorldMapFrame.lua:390>\n[C]: ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2404: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2431: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2462: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2136: in function <Interface\\FrameXML\\UIParent.lua:2128>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2930: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:3098: in function `CloseWindows'\nInterface\\FrameXML\\UIParent.lua:3137: in function <Interface\\FrameXML\\UIParent.lua:3127>\n[C]: in function `securecall'\nInterface\\FrameXML\\UIParent.lua:3748: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
-			["session"] = 132,
-			["counter"] = 2,
-		}, -- [8]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'TipTac' tried to call the protected function 'Search()'.",
-			["time"] = "2017/06/07 13:07:41",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Search'\nInterface\\FrameXML\\LFGList.lua:1708: in function `LFGListSearchPanel_DoSearch'\nInterface\\FrameXML\\LFGList.lua:553: in function `LFGListCategorySelection_StartFindGroup'\nInterface\\FrameXML\\LFGList.lua:543: in function <Interface\\FrameXML\\LFGList.lua:536>",
-			["session"] = 152,
-			["counter"] = 1,
-		}, -- [9]
+		}, -- [6]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'PremadeGroupsFilter' tried to call the protected function 'RemoveApplicant()'.",
 			["time"] = "2017/06/07 14:05:06",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `RemoveApplicant'\nInterface\\FrameXML\\LFGList.lua:1116: in function `onEvent'\nInterface\\FrameXML\\LFGList.lua:203: in function <Interface\\FrameXML\\LFGList.lua:107>",
 			["session"] = 159,
 			["counter"] = 1,
-		}, -- [10]
-		{
-			["message"] = "[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:3: attempt to compare nil with number",
-			["time"] = "2017/06/05 21:49:02",
-			["locals"] = "",
-			["stack"] = "[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:3: in function <[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
-			["session"] = 160,
-			["counter"] = 72,
-		}, -- [11]
+		}, -- [7]
 		{
 			["message"] = "[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:4: attempt to compare nil with number",
 			["time"] = "2017/06/07 16:18:46",
@@ -95,37 +64,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:4: in function <[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
 			["session"] = 162,
 			["counter"] = 5139,
-		}, -- [12]
+		}, -- [8]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'PremadeGroupsFilter' tried to call the protected function 'Search()'.",
 			["time"] = "2017/06/04 00:06:23",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Search'\nInterface\\FrameXML\\LFGList.lua:1708: in function `LFGListSearchPanel_DoSearch'\nInterface\\FrameXML\\LFGList.lua:553: in function `LFGListCategorySelection_StartFindGroup'\nInterface\\FrameXML\\LFGList.lua:543: in function <Interface\\FrameXML\\LFGList.lua:536>",
 			["session"] = 168,
 			["counter"] = 3,
-		}, -- [13]
-		{
-			["message"] = "[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:3: attempt to compare nil with number",
-			["time"] = "2017/06/07 17:14:26",
-			["locals"] = "name = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\nvalue2 = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare nil with number\"\n",
-			["stack"] = "[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:3: in function <[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
-			["session"] = 168,
-			["counter"] = 317,
-		}, -- [14]
-		{
-			["message"] = "[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:3: attempt to compare nil with number",
-			["time"] = "2017/06/05 21:09:57",
-			["locals"] = "value = nil\n(*temporary) = 17\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"player\"\n(*temporary) = \"Overflow\"\n(*temporary) = \"attempt to compare nil with number\"\n",
-			["stack"] = "[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:3: in function <[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
-			["session"] = 174,
-			["counter"] = 727,
-		}, -- [15]
-		{
-			["message"] = "...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1084: attempt to index upvalue 'color' (a nil value)",
-			["time"] = "2017/06/02 12:52:33",
-			["stack"] = "...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1084: in function <...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1082>\n[string \"safecall Dispatcher[2]\"]:4: in function <[string \"safecall Dispatcher[2]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[2]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...ibraries\\LibActionButton-1.0\\LibActionButton-1.0-69.lua:1165: in function <...ibraries\\LibActionButton-1.0\\LibActionButton-1.0.lua:1053>\n...ibraries\\LibActionButton-1.0\\LibActionButton-1.0-69.lua:753: in function <...ibraries\\LibActionButton-1.0\\LibActionButton-1.0.lua:743>\n[C]: in function `EditMacro'\nInterface\\AddOns\\TalentMacros\\TalentMacros-v1.1.3.lua:184: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...\\AddOns\\DataStore\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <...\\AddOns\\DataStore\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
-			["session"] = 174,
-			["counter"] = 13,
-		}, -- [16]
+		}, -- [9]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Bartender4' tried to call the protected function 'MainMenuBarArtFrame:SetAttribute()'.",
 			["time"] = "2017/06/08 14:12:36",
@@ -133,7 +79,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\ActionBarController.lua:148: in function `ActionBarController_ResetToDefault'\nInterface\\FrameXML\\ActionBarController.lua:139: in function `ActionBarController_UpdateAll'\nInterface\\FrameXML\\SpellBookFrame.lua:500: in function `UpdateTooltip'\nInterface\\FrameXML\\GameTooltip.lua:327: in function <Interface\\FrameXML\\GameTooltip.lua:311>\n[C]: ?\n...e\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0-8.lua:95: in function <...e\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:87>",
 			["session"] = 189,
 			["counter"] = 1,
-		}, -- [17]
+		}, -- [10]
 		{
 			["message"] = "Interface\\FrameXML\\LFGList.lua:2094: attempt to perform arithmetic on local 'appDuration' (a nil value)",
 			["time"] = "2017/06/08 14:17:25",
@@ -141,6 +87,170 @@ BugGrabberDB = {
 			["stack"] = "Interface\\FrameXML\\LFGList.lua:2094: in function <Interface\\FrameXML\\LFGList.lua:2009>\n[C]: in function `LFGListSearchEntry_Update'\nInterface\\FrameXML\\LFGList.lua:2168: in function <Interface\\FrameXML\\LFGList.lua:2160>",
 			["session"] = 189,
 			["counter"] = 80,
+		}, -- [11]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'AngryKeystones' tried to call the protected function '<unnamed>:Hide()'.",
+			["time"] = "2017/06/10 23:38:01",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:428: in function <Interface\\FrameXML\\WorldMapFrame.lua:390>\n[C]: ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2404: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2431: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2462: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2136: in function <Interface\\FrameXML\\UIParent.lua:2128>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2930: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2896: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:244: in function <Interface\\FrameXML\\WorldMapFrame.lua:235>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
+			["session"] = 212,
+			["counter"] = 1,
+		}, -- [12]
+		{
+			["message"] = "Interface\\AddOns\\iKeystones\\iKeystones-1.36.lua:105: attempt to index global 'data' (a nil value)",
+			["time"] = "2017/06/11 01:48:39",
+			["locals"] = "self = <table> {\n getZoneInfo = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:131\n keystonesToMapIDs = <table> {\n }\n printKeystones = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:140\n weeklyReset = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:37\n scanInventory = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:79\n keyLevel = 9\n mapID = 198\n createPlayer = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:44\n getItemColor = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:116\n weeklyChestItemLevels = <table> {\n }\n scanCharacterMaps = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:64\n}\nrequestingSlots = nil\n(for index) = 0\n(for limit) = 4\n(for step) = 1\nbagID = 0\n(for index) = 13\n(for limit) = 16\n(for step) = 1\ninvID = 13\nitemID = 138019\nitemLink = \"|cffa335ee|Hkeystone:198:12:1:7:13:9|h[Keystone: Darkheart Thicket]|h|r\"\nmap = \"198\"\nkeyLevel = 12\nd = \"1\"\nl4 = \"7\"\nl7 = \"13\"\nl10 = \"9\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"%s|Hkeystone:%d:%d:%d:%d:%d:%d|h[%s (%s)]|h|r\"\n(*temporary) = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:116\n(*temporary) = <table> {\n getZoneInfo = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:131\n keystonesToMapIDs = <table> {\n }\n printKeystones = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:140\n weeklyReset = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:37\n scanInventory = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:79\n keyLevel = 9\n mapID = 198\n createPlayer = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:44\n getItemColor = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:116\n weeklyChestItemLevels = <table> {\n }\n scanCharacterMaps = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:64\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'data' (a nil value)\"\niKS = <table> {\n getZoneInfo = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:131\n keystonesToMapIDs = <table> {\n }\n printKeystones = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:140\n weeklyReset = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:37\n scanInventory = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:79\n keyLevel = 9\n mapID = 198\n createPlayer = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:44\n getItemColor = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:116\n weeklyChestItemLevels = <table> {\n }\n scanCharacterMaps = <function> defined @Interface\\AddOns\\iKeystones\\iKeystones.lua:64\n}\nplayer = \"Player-1303-04772A8A\"\n",
+			["stack"] = "Interface\\AddOns\\iKeystones\\iKeystones-1.36.lua:105: in function `scanInventory'\nInterface\\AddOns\\iKeystones\\iKeystones-1.36.lua:173: in function `?'\nInterface\\AddOns\\iKeystones\\iKeystones-1.36.lua:3: in function <Interface\\AddOns\\iKeystones\\iKeystones.lua:2>",
+			["session"] = 218,
+			["counter"] = 84,
+		}, -- [13]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'TipTac' tried to call the protected function 'Search()'.",
+			["time"] = "2017/06/07 13:07:41",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Search'\nInterface\\FrameXML\\LFGList.lua:1708: in function `LFGListSearchPanel_DoSearch'\nInterface\\FrameXML\\LFGList.lua:553: in function `LFGListCategorySelection_StartFindGroup'\nInterface\\FrameXML\\LFGList.lua:543: in function <Interface\\FrameXML\\LFGList.lua:536>",
+			["session"] = 238,
+			["counter"] = 2,
+		}, -- [14]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ElvUI' tried to call the protected function '<unnamed>:Hide()'.",
+			["time"] = "2017/06/14 11:33:12",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:1341: in function `WorldMapFrame_Update'\nInterface\\FrameXML\\WorldMapFrame.lua:2873: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:451: in function <Interface\\FrameXML\\WorldMapFrame.lua:435>\n[C]: ?\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:381: in function <Interface\\FrameXML\\WorldMapFrame.lua:360>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2421: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2223: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2133: in function <Interface\\FrameXML\\UIParent.lua:2129>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2915: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2899: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:263: in function <Interface\\FrameXML\\WorldMapFrame.lua:235>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
+			["session"] = 252,
+			["counter"] = 1,
+		}, -- [15]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ElvUI_SLE' tried to call the protected function '<unnamed>:Hide()'.",
+			["time"] = "2017/06/05 15:15:26",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:428: in function <Interface\\FrameXML\\WorldMapFrame.lua:390>\n[C]: ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2404: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2431: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2462: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2136: in function <Interface\\FrameXML\\UIParent.lua:2128>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2930: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:3098: in function `CloseWindows'\nInterface\\FrameXML\\UIParent.lua:3137: in function <Interface\\FrameXML\\UIParent.lua:3127>\n[C]: in function `securecall'\nInterface\\FrameXML\\UIParent.lua:3748: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
+			["session"] = 258,
+			["counter"] = 4,
+		}, -- [16]
+		{
+			["message"] = "Interface\\AddOns\\ElvUI\\Modules\\skins\\skins.lua:63: attempt to index local 'frame' (a nil value)",
+			["time"] = "2017/06/14 11:11:56",
+			["stack"] = "Interface\\AddOns\\ElvUI\\Modules\\skins\\skins.lua:63: in function `HandleScrollBar'\n...erface\\AddOns\\ElvUI\\Modules\\skins\\blizzard\\debug.lua:12: in function <...erface\\AddOns\\ElvUI\\Modules\\skins\\blizzard\\debug.lua:6>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\ElvUI\\Modules\\skins\\skins.lua:724: in function <Interface\\AddOns\\ElvUI\\Modules\\skins\\skins.lua:715>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\nInterface\\AddOns\\ElvUI\\core\\core.lua:1211: in function `InitializeModules'\nInterface\\AddOns\\ElvUI\\core\\core.lua:1386: in function `Initialize'\nInterface\\AddOns\\ElvUI\\init.lua:137: in function <Interface\\AddOns\\ElvUI\\init.lua:136>",
+			["session"] = 264,
+			["counter"] = 19,
+		}, -- [17]
+		{
+			["message"] = "[string \"--[[ Error in ' anti-magic shell loph ' ]]r...\"]:3: attempt to compare nil with number",
+			["time"] = "2017/06/05 21:49:43",
+			["locals"] = "",
+			["stack"] = "[string \"--[[ Error in ' anti-magic shell loph ' ]]r...\"]:3: in function <[string \"--[[ Error in ' anti-magic shell loph ' ]]r...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
+			["session"] = 269,
+			["counter"] = 28,
 		}, -- [18]
+		{
+			["message"] = "[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:3: attempt to compare nil with number",
+			["time"] = "2017/06/05 21:49:02",
+			["locals"] = "",
+			["stack"] = "[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:3: in function <[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
+			["session"] = 269,
+			["counter"] = 138,
+		}, -- [19]
+		{
+			["message"] = "Interface\\AddOns\\ExRT\\ExCD2.lua:9148: Usage: GetNumSpecializationsForClassID(classID)",
+			["time"] = "2017/06/15 18:24:27",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetNumSpecializationsForClassID'\nInterface\\AddOns\\ExRT\\ExCD2.lua:9148: in function `?'\nInterface\\AddOns\\ExRT\\core.lua:184: in function <Interface\\AddOns\\ExRT\\core.lua:183>",
+			["session"] = 287,
+			["counter"] = 1,
+		}, -- [20]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Auctionator' tried to call the protected function 'OverrideActionBarButton6:Show()'.",
+			["time"] = "2017/06/16 00:03:54",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Show'\nInterface\\FrameXML\\ActionButton.lua:364: in function `ActionButton_Update'\nInterface\\FrameXML\\ActionButton.lua:720: in function `ActionButton_OnEvent'\nInterface\\FrameXML\\ActionButton.lua:207: in function <Interface\\FrameXML\\ActionButton.lua:204>",
+			["session"] = 305,
+			["counter"] = 1,
+		}, -- [21]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'WorldQuestTracker' tried to call the protected function 'UseQuestLogSpecialItem()'.",
+			["time"] = "2017/06/16 17:54:14",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `UseQuestLogSpecialItem'\n...ObjectiveTracker\\Blizzard_ObjectiveTrackerShared.lua:95: in function <...ObjectiveTracker\\Blizzard_ObjectiveTrackerShared.lua:88>",
+			["session"] = 309,
+			["counter"] = 1,
+		}, -- [22]
+		{
+			["message"] = "[string \"--[[ Error in ' Touch of Karma LEGENDARY' ]...\"]:6: attempt to perform arithmetic on local 'amount' (a nil value)",
+			["time"] = "2017/06/16 19:30:06",
+			["locals"] = "",
+			["stack"] = "[string \"--[[ Error in ' Touch of Karma LEGENDARY' ]...\"]:6: in function `triggerFunc'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:505: in function `ScanEvents'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:581: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:572>",
+			["session"] = 310,
+			["counter"] = 1,
+		}, -- [23]
+		{
+			["message"] = "[string \"--[[ Error in ' Touch of Karma LEGENDARY' ]...\"]:12: attempt to perform arithmetic on local 'amount' (a nil value)",
+			["time"] = "2017/06/16 19:03:49",
+			["locals"] = "",
+			["stack"] = "[string \"--[[ Error in ' Touch of Karma LEGENDARY' ]...\"]:12: in function `triggerFunc'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:505: in function `ScanEvents'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:581: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:572>",
+			["session"] = 310,
+			["counter"] = 9,
+		}, -- [24]
+		{
+			["message"] = "Interface\\AddOns\\SavedInstances\\SavedInstances-7.0.8.lua:1811: attempt to index local 'texture' (a number value)",
+			["time"] = "2017/06/14 13:48:14",
+			["locals"] = "self = <table> {\n GetCurrentMapAreaID = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1818\n GetServerOffset = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:768\n oi_cache = <table> {\n }\n questdebug = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:396\n QuestInfo = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:328\n pvpdesertids = <table> {\n }\n icon = <table> {\n }\n histLiveCount = 1\n FindInstance = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:976\n UpdateToonData = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1568\n GetRegion = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:784\n InGroup = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:2825\n chatMsg = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:338\n CategorySize = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1063\n formatNumber = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:454\n GetNextDailyResetTime = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:809\n OrderedCategories = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1256\n instanceException = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1161\n BonusFrame = SavedInstancesBonusRollFrame {\n }\n db = <table> {\n }\n diff_strings = <table> {\n }\n LFRInstances = <table> {\n }\n transInstance = <table> {\n }\n IsDetached = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:3358\n config = <table> {\n }\n QuestIsDarkmoonMonthly = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1804\n SkinFrame = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:682\n Categories = <table> {\n }\n histTextUpdate = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:3029\n HistoryEvent = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:2860\n SetupVersion = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:2601\n InstanceCategory = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1043\n histReapTime = 3600\n resetDetect = SavedInstancesResetDetectHiddenFrame {\n }\n HideDetached = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:3361\n playedpending = false\n UpdateInstanceData = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1355\n delayedReset = false\n GetNextWeeklyResetTime = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:868\n WorldBosses = <table> {\n }\n revision = 550\n region = \"EU\"\n debug = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:342\n resetDays = <table> {\n }\n histOldest = \"51 |4Min:Min;\"\n activeHolidays = <table> {\n }\n core = <table> {\n }\n scaleCache = <table> {\n }\n LDB = <table> {\n }\n playedreg = <table> {\n }\n UpdateInstance = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1471\n delayUpdate = 1497440890\n ShowDetached = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:3372\n oc_cache = <table> {\n }\n LookupInstance = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1012\n GetSeasonCurrency = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:2370\n version = \"7.0.8\"\n idtext = <function> defined @Interface\\AddOns\\SavedInstances\\config.lua:45\n Indicators = <table> {\n }\n UpdateCurrency = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1754\n OrderedInstances = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1243\n updateSpellTip = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1549\n currency = <table> {\n }\n normalizeName = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:950\n BonusRollShow = <function> defined @Interface\\AddOns\\SavedInstances\\SavedInstances.lua:4749\n instancesUpdated = true\n L = <table> {\n }\n specia",
+			["stack"] = "Interface\\AddOns\\SavedInstances\\SavedInstances-7.0.8.lua:1811: in function `QuestIsDarkmoonMonthly'\nInterface\\AddOns\\SavedInstances\\SavedInstances-7.0.8.lua:1836: in function <Interface\\AddOns\\SavedInstances\\SavedInstances.lua:1830>\n[C]: in function `GetQuestReward'\nInterface\\FrameXML\\QuestFrame.lua:161: in function <Interface\\FrameXML\\QuestFrame.lua:147>",
+			["session"] = 310,
+			["counter"] = 12,
+		}, -- [25]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'TipTac' tried to call the protected function '<unnamed>:Hide()'.",
+			["time"] = "2017/06/16 22:03:41",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:1341: in function `WorldMapFrame_Update'\nInterface\\FrameXML\\WorldMapFrame.lua:2873: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:451: in function <Interface\\FrameXML\\WorldMapFrame.lua:435>\n[C]: ?\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:381: in function <Interface\\FrameXML\\WorldMapFrame.lua:360>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2421: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2223: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2133: in function <Interface\\FrameXML\\UIParent.lua:2129>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2915: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2899: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:263: in function <Interface\\FrameXML\\WorldMapFrame.lua:235>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
+			["session"] = 313,
+			["counter"] = 1,
+		}, -- [26]
+		{
+			["message"] = "Interface\\FrameXML\\LFGList.lua:2134: attempt to perform arithmetic on local 'appDuration' (a nil value)",
+			["time"] = "2017/06/16 18:37:22",
+			["locals"] = "self = LFGListSearchPanelScrollFrameButton1 {\n 0 = <userdata>\n isApplication = true\n Highlight = <unnamed> {\n }\n Spinner = <unnamed> {\n }\n DataDisplay = <unnamed> {\n }\n ActivityName = <unnamed> {\n }\n VoiceChat = <unnamed> {\n }\n ExpirationTime = <unnamed> {\n }\n Selected = <unnamed> {\n }\n PendingLabel = <unnamed> {\n }\n CancelButton = <unnamed> {\n }\n Name = <unnamed> {\n }\n expiration = 128367.878\n ResultBG = <unnamed> {\n }\n ApplicationBG = <unnamed> {\n }\n resultID = 50\n}\nresultID = 50\n_ = nil\nappStatus = nil\npendingStatus = nil\nappDuration = nil\nisApplication = true\nisAppFinished = nil\n(*temporary) = 130869.948\n(*temporary) = 130869.948\n(*temporary) = \"RIGHT\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"LEFT\"\n(*temporary) = -3\n(*temporary) = 0\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on local 'appDuration' (a nil value)\"\n",
+			["stack"] = "Interface\\FrameXML\\LFGList.lua:2134: in function <Interface\\FrameXML\\LFGList.lua:2049>\n[C]: in function `LFGListSearchEntry_Update'\nInterface\\FrameXML\\LFGList.lua:2208: in function <Interface\\FrameXML\\LFGList.lua:2200>",
+			["session"] = 313,
+			["counter"] = 52,
+		}, -- [27]
+		{
+			["message"] = "[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:3: attempt to compare nil with number",
+			["time"] = "2017/06/05 21:09:57",
+			["locals"] = "value = nil\n(*temporary) = 17\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"player\"\n(*temporary) = \"Overflow\"\n(*temporary) = \"attempt to compare nil with number\"\n",
+			["stack"] = "[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:3: in function <[string \"--[[ Error in ' Overflowing' ]]return funct...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
+			["session"] = 325,
+			["counter"] = 773,
+		}, -- [28]
+		{
+			["message"] = "...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions-2.4.3.lua:6832: script ran too long",
+			["time"] = "2017/06/17 02:39:35",
+			["locals"] = "filter = \"\"\noverrideReset = true\nid = nil\nrecenter = false\nnumLoaded = 0\nto_sort = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n}\nchildren = <table> {\n Sephuz's Secret = <table> {\n }\n GUL'DAN = <table> {\n }\n Darkheart Thicket = <table> {\n }\n interuppt tracking = <table> {\n }\n Trial of Valor = <table> {\n }\n Eye of Azshara = <table> {\n }\n LophisGnomalock = <table> {\n }\n Monk = <table> {\n }\n Mage = <table> {\n }\n LophisKrixidk = <table> {\n }\n Vault of the Wardens = <table> {\n }\n T19 - Nighthold = <table> {\n }\n AAHidden Artifact Tracking = <table> {\n }\n Taunt Diminishing Return = <table> {\n }\n Demon hunter = <table> {\n }\n Halls of Valor = <table> {\n }\n LophisBawsie = <table> {\n }\n The Arcway = <table> {\n }\n Warrior = <table> {\n }\n Paladin = <table> {\n }\n LophisZetiz = <table> {\n }\n zolution = <table> {\n }\n Rogue: Rupture Multi-Target = <table> {\n }\n lightningprod grp = <table> {\n }\n kara = <table> {\n }\n Healing challenge = <table> {\n }\n Druid = <table> {\n }\n Neltharion's Lair = <table> {\n }\n Black Rook Hold = <table> {\n }\n Hellfire citadell dynamic = <table> {\n }\n LEGION AURAS (NIGHTMARE)  = <table> {\n }\n 1DmgTypes = <table> {\n }\n Maw of Souls = <table> {\n }\n}\ncontainsFilter = false\nnumUnloaded = 0\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n}\n(for control) = 21\n_ = 21\nchild = <table> {\n GetData = <function> defined @Interface\\AddOns\\WeakAurasOptions\\AceGUI-Widgets\\AceGUIWidget-WeakAurasDisplayButton.lua:1140\n Expand = <function> defined @Interface\\AddOns\\WeakAurasOptions\\AceGUI-Widgets\\AceGUIWidget-WeakAurasDisplayButton.lua:1143\n SetGrouping = <function> defined @Interface\\AddOns\\WeakAurasOptions\\AceGUI-Widgets\\AceGUIWidget-WeakAurasDisplayButton.lua:926\n icon = <unnamed> {\n }\n GetExpanded = <function> defined @Interface\\AddOns\\WeakAurasOptions\\AceGUI-Widgets\\AceGUIWidget-WeakAurasDisplayButton.lua:1174\n DisableDownGroup = <function> defined @Interface\\AddOns\\WeakAurasOptions\\AceGUI-Widgets\\AceGUIWidget-WeakAurasDisplayButton.",
+			["stack"] = "...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions-2.4.3.lua:6832: in function `SortDisplayButtons'\n...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions-2.4.3.lua:6847: in function `afterScanForLoads'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.3.lua:1415: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1230>",
+			["session"] = 325,
+			["counter"] = 2,
+		}, -- [29]
+		{
+			["message"] = "...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1084: attempt to index upvalue 'color' (a nil value)",
+			["time"] = "2017/06/02 12:52:33",
+			["stack"] = "...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1084: in function <...rface\\AddOns\\ElvUI\\Modules\\actionbars\\actionbars.lua:1082>\n[string \"safecall Dispatcher[2]\"]:4: in function <[string \"safecall Dispatcher[2]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[2]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...ibraries\\LibActionButton-1.0\\LibActionButton-1.0-69.lua:1165: in function <...ibraries\\LibActionButton-1.0\\LibActionButton-1.0.lua:1053>\n...ibraries\\LibActionButton-1.0\\LibActionButton-1.0-69.lua:753: in function <...ibraries\\LibActionButton-1.0\\LibActionButton-1.0.lua:743>\n[C]: in function `EditMacro'\nInterface\\AddOns\\TalentMacros\\TalentMacros-v1.1.3.lua:184: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...ore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...\\AddOns\\DataStore\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <...\\AddOns\\DataStore\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 325,
+			["counter"] = 23,
+		}, -- [30]
+		{
+			["message"] = "Interface\\AddOns\\WeakAuras\\WeakAuras-2.4.3.lua:3459: script ran too long",
+			["time"] = "2017/06/17 02:45:52",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nelapsed = 0.040000002831221\nstart = 160180083.67518\nhasData = true\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n LayoutDisplayButtons2 = <no value>\n}\n(for control) = \"LayoutDisplayButtons2\"\nname = \"LayoutDisplayButtons2\"\nfunc = <no value>\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = \"...eGUI-Widgets\\AceGUIWidget-WeakAurasDisplayButton.lua:1226: script ran too long\"\n(*temporary) = \"script ran too long\"\ndebugprofilestop = <function> defined =[C]:-1\npairs = <function> defined =[C]:-1\ndynFrame = <table> {\n RemoveAction = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3430\n AddAction = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3417\n frame = <unnamed> {\n }\n update = <table> {\n }\n size = 1\n}\ncoroutine = <table> {\n resume = <function> defined =[C]:-1\n yield = <function> defined =[C]:-1\n status = <function> defined =[C]:-1\n wrap = <function> defined =[C]:-1\n create = <function> defined =[C]:-1\n running = <function> defined =[C]:-1\n}\nassert = <function> defined =[C]:-1\nWeakAuras = <table> {\n SetAuraVisibility = <function> defined @Interface\\AddOns\\WeakAuras\\BuffTrigger.lua:286\n DeleteConditionsForTrigger = <function> defined @Interface\\AddOns\\WeakAurasOptions\\WeakAurasOptions.lua:4052\n GetRuneCooldown = <function> defined @Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1239\n frame_strata_types = <table> {\n }\n DisplayToString = <function> defined @Interface\\AddOns\\WeakAuras\\Transmission.lua:448\n operator_types = <table> {\n }\n regions = <table> {\n }\n ShowOverlayGlow = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:319\n CheckItemSlotCooldowns = <function> defined @Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1605\n OpenIconPicker = <function> defined @Interface\\AddOns\\WeakAurasOptions\\WeakAurasOptions.lua:7006\n form_types = <table> {\n }\n EnsureClone = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2425\n debug = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:226\n CanShowNameInfo = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3063\n tutorials = <table> {\n }\n pAdd = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2271\n regionOptions = <table> {\n }\n IsRegisteredForCustomTextUpdates = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3357\n LayoutDisplayButtons = <function> defined @Interface\\AddOns\\WeakAurasOptions\\WeakAurasOptions.lua:1345\n transmitCache = <table> {\n }\n CreateEncounterTable = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1181\n animations = <table> {\n }\n TenchInit = <function> defined @Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:2199\n regionTypes = <table> {\n }\n miss_types = <table> {\n }\n GetGCDInfo = <function> defined @Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1290\n faction_group = <table> {\n }\n OpenOptions = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:60\n autoeventend_types = <table> {\n }\n CanGroupShowWithZero = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2975\n talent_types = <table> {\n }\n GetSpellCooldown = <function> defined @Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1247\n LoadFunction = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:430\n circular_group_constant_factor_types = <table> {\n }\n GetAuraTooltipInfo = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3177\n events = <table> {\n }\n AddManyFromAddons = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1754\n WatchForMounts = <function> defined @Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:2267\n spec_types_3 = <table> {\n }\n HideOverlayGlow = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:323\n IsImporting = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1064\n blend_types = <table> {\n }\n ImportString = <function> defined @Interface\\AddOns\\WeakAuras\\Transmission.lua:1145\n GetAnchorFrame = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4320\n GetDynamicIconCache = <function> defined @Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3485",
+			["stack"] = "Interface\\AddOns\\WeakAuras\\WeakAuras-2.4.3.lua:3459: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3442>",
+			["session"] = 326,
+			["counter"] = 1,
+		}, -- [31]
+		{
+			["message"] = "[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:3: attempt to compare nil with number",
+			["time"] = "2017/06/07 17:14:26",
+			["locals"] = "name = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\nvalue2 = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare nil with number\"\n",
+			["stack"] = "[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:3: in function <[string \"--[[ Error in ' Ckoudburst buff' ]]return f...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:369: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.2.lua:3291: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3287>",
+			["session"] = 326,
+			["counter"] = 726,
+		}, -- [32]
 	},
 }

@@ -22,7 +22,7 @@ PremadeGroupsFilterState = {
 	["expression"] = "",
 	["difficulty"] = {
 		["act"] = true,
-		["val"] = 4,
+		["val"] = 2,
 	},
 	["members"] = {
 		["max"] = "",

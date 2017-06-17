@@ -289,9 +289,6 @@ local function PositionTicketButtons()
 	HelpOpenWebTicketButton:ClearAllPoints()
 	HelpOpenWebTicketButton:Point(pos, Minimap, pos, E.db.general.minimap.icons.ticket.xOffset or 0, E.db.general.minimap.icons.ticket.yOffset or 0)
 end
-if not (E.wowbuild >= 23623) then --7.1.5
-	hooksecurefunc("HelpOpenTicketButton_Move", PositionTicketButtons)
-end
 
 local isResetting
 local function ResetZoom()
@@ -479,6 +476,14 @@ function M:UpdateSettings()
 	end
 end
 
+local function MinimapPostDrag()
+	--Make sure these invisible frames follow the minimap.
+	MinimapCluster:ClearAllPoints()
+	MinimapCluster:SetAllPoints(Minimap)
+	MinimapBackdrop:ClearAllPoints()
+	MinimapBackdrop:SetAllPoints(Minimap)
+end
+
 function M:Initialize()
 	menuFrame:SetTemplate("Transparent", true)
 	self:UpdateSettings()
@@ -570,7 +575,7 @@ function M:Initialize()
 		FeedbackUIButton:Kill()
 	end
 
-	E:CreateMover(MMHolder, 'MinimapMover', L["Minimap"])
+	E:CreateMover(MMHolder, 'MinimapMover', L["Minimap"], nil, nil, MinimapPostDrag)
 
 	Minimap:EnableMouseWheel(true)
 	Minimap:SetScript("OnMouseWheel", M.Minimap_OnMouseWheel)
@@ -582,12 +587,10 @@ function M:Initialize()
 	self:RegisterEvent("ZONE_CHANGED_INDOORS", "Update_ZoneText")
 	self:RegisterEvent('ADDON_LOADED')
 	self:UpdateSettings()
-
-	--Make sure these invisible frames follow the minimap.
-	MinimapCluster:ClearAllPoints()
-	MinimapCluster:SetAllPoints(Minimap)
-	MinimapBackdrop:ClearAllPoints()
-	MinimapBackdrop:SetAllPoints(Minimap)
 end
 
-E:RegisterInitialModule(M:GetName())
+local function InitializeCallback()
+	M:Initialize()
+end
+
+E:RegisterInitialModule(M:GetName(), InitializeCallback)

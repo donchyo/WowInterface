@@ -1,4 +1,9 @@
-﻿0.25.4 (26/05/2017)
+﻿0.26 (14/06/2017)
+- Fixed for 7.2.5
+- Removed debug output when creating a new group
+- Updated blacklist
+
+0.25.4 (26/05/2017)
 - The hotkey now makes the WQGF frame appear for the latest visited world quest
 - The hotkey now also removes the invite confirmation. No more clicking!
 - World boss WQ groups should now convert to raid

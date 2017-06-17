@@ -3,19 +3,20 @@
 --------------------------------
 --   INTERFACE CONFIG FRAME   --
 --------------------------------
+-- Hardcoded Textures used in Interface Panel.
 SS_TankTexture = "Interface\\Addons\\SatchelScanner\\textures\\tank.tga";
 SS_HealTexture = "Interface\\Addons\\SatchelScanner\\textures\\healer.tga";
 SS_DpsTexture = "Interface\\Addons\\SatchelScanner\\textures\\dps.tga";
 
-SS_newsTable = {
-	SS_LFR2News = { text = "Release: Patch 7.2.5", loc = "TOPLEFT", x = 20, y = -4, anchor = "SS_TheGatesofHellBox3"},
-	SS_LFR3News = { text = "Release: Patch 7.2.5", loc = "TOPLEFT", x = 20, y = -4, anchor = "SS_WailingHallsBox3"},
-	SS_LFR4News = { text = "Release: Patch 7.2.5", loc = "TOPLEFT", x = 20, y = -4, anchor = "SS_ChamberAvatarBox3"},
-	SS_LFR5News = { text = "Release: Patch 7.2.5", loc = "TOPLEFT", x = 20, y = -4, anchor = "SS_DeceiversFallBox3"},
+SS_InstanceNewsTable = {
+	SS_TheGatesofHell = "Release: Patch 7.2.5",
+	SS_WailingHalls = "Release: Patch 7.2.5",
+	SS_ChamberoftheAvatar = "Release: Patch 7.2.5",
+	SS_DeceiversFall = "Release: Patch 7.2.5",
 };
 
 SS_optionsTable2 = {
-	[1] = { vname = "main", pname = "Satchel Scanner", frame = "SS_ScannerMain",
+	[1] = { parent = "main", pname = "Satchel Scanner", frame = "SS_ScannerMain",
 		SS_TextHeader = { loc = "TOP", x = 0, y = -5, fontSize = 28, text = "|cFF0080FFSatchel Scanner|r"},
 		SS_TextSubHeader = { loc = "TOP", x = 0, y = -30, fontSize = 14, text = "Created by Exzu-Aszune"},
 		SS_aboutText1 = { loc = "TOP", x = 0, y = -55, fontSize = 24, text = "|cffff0000Questions and Answers|r"},
@@ -33,7 +34,7 @@ SS_optionsTable2 = {
 		SS_Spacer3 = { loc = "TOP", x = 0, y = -200, width = "0" , height = "2", texture = SS_Spacer},
 		SS_Spacer4 = { loc = "TOP", x = 0, y = -240, width = "0" , height = "2", texture = SS_Spacer},
 	};
-	[2] = { vname = "options", pname = "Options", frame = "SS_ScannerOptions",
+	[2] = { parent = "options", pname = "Options", frame = "SS_ScannerOptions",
 		SS_optionsTextHeader = { fontSize = 24, loc = "TOP", x = 0, y = -5, text = "|cFF0080FFSatchel Scanner|r"},
 		SS_optionsTextSubHeader = { fontSize = 18, loc = "TOP", x = 0, y = -25, text = "|cffff0000Scanner Options|r"},
 		SS_Spacer5 = { loc = "TOP", x = 0, y = -45, width = "0" , height = "2", texture = SS_Spacer},
@@ -46,7 +47,7 @@ SS_optionsTable2 = {
 		-- Slider
 		SS_sliderText1 = { loc = "TOPLEFT", x = 145, y = -132, fontSize = 16, text = ""},
 		SS_sliderText2 = { loc = "TOPLEFT", x = 10, y = -115, fontSize = 14, text = "Scan Interval in Seconds"},
-		SS_ScannerIntervalSlider = { loc = "TOPLEFT", x = 10, y = -130, width = 130, height = 20, minMax = {3, 30}, valueStep = 1, func = "SS_sliderText1:SetText(SS_ScannerIntervalSlider:GetValue())"},
+		SS_ScannerIntervalSlider = { loc = "TOPLEFT", x = 10, y = -130, width = 130, height = 20, minMax = {3, 30}, valueStep = 1, func = "SS_Globals.SS_sliderText1:SetText(SS_Globals.SS_ScannerIntervalSlider:GetValue())"},
 		-- Notification related stuff
 		SS_optionText4 = { loc = "TOPLEFT", x = 10, y = -170, fontSize = 16, text = "|cffff0000Notification Options|r"},
 		SS_optionText5 = { loc = "TOPLEFT", x = 30, y = -190, fontSize = 14, text = "Play Soundwarning"},
@@ -54,88 +55,25 @@ SS_optionsTable2 = {
 		SS_playSoundButton = { loc = "TOPLEFT", x = 8, y = -185},
 		SS_raidWarningButton = { loc = "TOPLEFT", x = 8, y = -205},
 		-- Slider
-		SS_NotificationIntervalSlider = { loc = "TOPLEFT", x = 10, y = -250, width = 130, height = 20, minMax = {3, 30}, valueStep = 1, func = "SS_sliderText3:SetText(SS_NotificationIntervalSlider:GetValue())"},
+		SS_NotificationIntervalSlider = { loc = "TOPLEFT", x = 10, y = -250, width = 130, height = 20, minMax = {3, 30}, valueStep = 1, func = "SS_Globals.SS_sliderText3:SetText(SS_Globals.SS_NotificationIntervalSlider:GetValue())"},
 		SS_sliderText3 = { loc = "TOPLEFT", x = 145, y = -252, fontSize = 16, text = ""},
 		SS_sliderText4 = { loc = "TOPLEFT", x = 10, y = -235, fontSize = 14, text = "Notification Interval in Seconds"},
 	};
-	[3] = { vname = "instances", pname = "Instances", frame = "SS_ScannerInstances",
-		SS_InstanceSpacer6 = { loc = "TOP", x = 0, y = -45, isSpacer = true, isIcon = true, width = "0" , height = "2", texture = SS_Spacer},
-		SS_InstanceSpacer7 = { loc = "TOP", x = 0, y = -130, isSpacer = true, isIcon = true, width = "0" , height = "2", texture = SS_Spacer},
-		SS_InstanceSpacer8 = { loc = "TOP", x = 0, y = -195, isSpacer = true, isIcon = true, width = "0" , height = "2", texture = SS_Spacer},
-		SS_InstanceSpacer9 = { loc = "TOP", x = 0, y = -300, isSpacer = true, isIcon = true, width = "0" , height = "2", texture = SS_Spacer},
-		SS_InstanceSpacer10 = { loc = "TOP", x = 0, y = -405, isSpacer = true, isIcon = true, width = "0" , height = "2", texture = SS_Spacer},
-		SS_InstanceTextHeader = { isText = true, fontSize = 24, loc = "TOP", x = 0, y = -5, text = "|cFF0080FFSatchel Scanner|r"},
-		SS_InstanceTextSubHeader = { isText = true, fontSize = 18, loc = "TOP", x = 0, y = -25, text = "|cffff0000Instance Options|r"},
-		SS_InstancetankIconText = { text = "Tank", loc = "TOP", x = -148, y = -110, isText = true, fontSize = 14},
-		SS_InstancehealIconText = { text = "Heal", loc = "TOP", x = 2, y = -110, isText = true, fontSize = 14},
-		SS_InstancedpsIconText = { text = "Dps", loc = "TOP", x = 152, y = -110, isText = true, fontSize = 14},
-		SS_InstancetankBigIcon = { loc = "TOP", x = -150, y = -50, isIcon = true, width = "64", height = "64", texture = SS_TankTexture},
-		SS_InstancehealBigIcon = { loc = "TOP", x = 0, y = -50, isIcon = true, width = "64", height = "64", texture = SS_HealTexture},
-		SS_InstancedpsBigIcon = { loc = "TOP", x = 150, y = -50, isIcon = true, width = "64", height = "64", texture = SS_DpsTexture},
+	[3] = { parent = "instances", pname = "Instances", frame = "SS_ScannerInstances",
+		SS_InstanceSpacer10 = { loc = "TOP", x = 0, y = -45, width = "0" , height = "2", texture = SS_Spacer},
+		SS_InstanceSpacer11 = { loc = "TOP", x = 0, y = -130, width = "0" , height = "2", texture = SS_Spacer},
+		SS_InstanceTextHeader = { fontSize = 24, loc = "TOP", x = 0, y = -5, text = "|cFF0080FFSatchel Scanner|r"},
+		SS_InstanceTextSubHeader = { fontSize = 18, loc = "TOP", x = 0, y = -25, text = "|cffff0000Instance Options|r"},
+		SS_InstancetankIconText = { text = "Tank", loc = "TOP", x = -148, y = -110, fontSize = 14},
+		SS_InstancehealIconText = { text = "Heal", loc = "TOP", x = 2, y = -110, fontSize = 14},
+		SS_InstancedpsIconText = { text = "Dps", loc = "TOP", x = 152, y = -110, fontSize = 14},
+		SS_InstancetankBigIcon = { loc = "TOP", x = -150, y = -50, width = "64", height = "64", texture = SS_TankTexture},
+		SS_InstancehealBigIcon = { loc = "TOP", x = 0, y = -50, width = "64", height = "64", texture = SS_HealTexture},
+		SS_InstancedpsBigIcon = { loc = "TOP", x = 150, y = -50, width = "64", height = "64", texture = SS_DpsTexture},
+		SS_InstanceRandomDungeonText = { text = "|cffff0000Random Dungeons|r", loc = "TOP", x = 0, y = -135, fontSize = 14},
 		-- Dungeons
-		SS_InstanceRandomDungeonText = { text = "|cffff0000Random Dungeons|r", loc = "TOP", x = 0, y = -136, fontSize = 14},
-		SS_InstanceHeroicDungeonText = { text = "Heroic Dungeons:", loc = "TOPLEFT", x = 10, y = -155, fontSize = 14},
-		SS_InstanceTimewalkingDungeonText = { text = "Timewalking:", loc = "TOPLEFT", x = 10, y = -175, fontSize = 14},
-		SS_heroicDungeonBox1 = { loc = "TOP", x = -150, y = -150},
-		SS_heroicDungeonBox2 = { loc = "TOP", x = 0, y = -150},
-		SS_heroicDungeonBox3 = { loc = "TOP", x = 150, y = -150},
-		SS_timewalkingDungeonBox1 = { loc = "TOP", x = -150, y = -170},
-		SS_timewalkingDungeonBox2 = { loc = "TOP", x = 0, y = -170},
-		SS_timewalkingDungeonBox3 = { loc = "TOP", x = 150, y = -170},
-		-- Emerald Nightmare, ToV
-		SS_InstanceEmeraldNightmareLFRText = { text = "|cffff0000Emerald Nightmare & Trial of Valor|r", loc = "TOP", x = 0, y = -201, isText = true, fontSize = 14},
-		SS_InstanceDarkboughText = { text = "Darkbough:", loc = "TOPLEFT", x = 10, y = -220, fontSize = 14},
-		SS_InstanceTormentedGuardiansText = { text = "Tormented Guardians:", loc = "TOPLEFT", x = 10, y = -240, fontSize = 14},
-		SS_InstanceRiftofAlnText = { text = "Rift of Aln:", loc = "TOPLEFT", x = 10, y = -260, fontSize = 14},
-		SS_InstanceTrialofValorText = { text = "Trial of Valor:", loc = "TOPLEFT", x = 10, y = -280, fontSize = 14},
-		SS_DarkboughBox1 = { loc = "TOP", x = -150, y = -215},
-		SS_DarkboughBox2 = { loc = "TOP", x = 0, y = -215},
-		SS_DarkboughBox3 = { loc = "TOP", x = 150, y = -215},
-		SS_TormentedGuardiansBox1 = { loc = "TOP", x = -150, y = -235},
-		SS_TormentedGuardiansBox2 = { loc = "TOP", x = 0, y = -235},
-		SS_TormentedGuardiansBox3 = { loc = "TOP", x = 150, y = -235},
-		SS_RiftofAlnBox1 = { loc = "TOP", x = -150, y = -255},
-		SS_RiftofAlnBox2 = { loc = "TOP", x = 0, y = -255},
-		SS_RiftofAlnBox3 = { loc = "TOP", x = 150, y = -255},
-		SS_TrialofValorBox1 = { loc = "TOP", x = -150, y = -275},
-		SS_TrialofValorBox2 = { loc = "TOP", x = 0, y = -275},
-		SS_TrialofValorBox3 = { loc = "TOP", x = 150, y = -275},
-		-- Nighthold
-		SS_NightholdLFRText = { text = "|cffff0000Looking for Raid: Nighthold|r", loc = "TOP", x = 0, y = -306, fontSize = 14},
-		SS_ArcingAqueductsText = { text = "Arcing Aqueducts:", loc = "TOPLEFT", x = 10, y = -325, fontSize = 14},
-		SS_RoyalAthenaeumText = { text = "Royal Athenaeum:", loc = "TOPLEFT", x = 10, y = -345, fontSize = 14},
-		SS_NightspireText = { text = "Nightspire:", loc = "TOPLEFT", x = 10, y = -365, fontSize = 14},
-		SS_BetrayersRiseText = { text = "Betrayer's Rise:", loc = "TOPLEFT", x = 10, y = -385, fontSize = 14},
-		SS_ArcingAqueductsBox1 = { loc = "TOP", x = -150, y = -320},
-		SS_ArcingAqueductsBox2 = { loc = "TOP", x = 0, y = -320},
-		SS_ArcingAqueductsBox3 = { loc = "TOP", x = 150, y = -320},
-		SS_RoyalAthenaeumBox1 = { loc = "TOP", x = -150, y = -340},
-		SS_RoyalAthenaeumBox2 = { loc = "TOP", x = 0, y = -340},
-		SS_RoyalAthenaeumBox3 = { loc = "TOP", x = 150, y = -340},
-		SS_NightspireBox1 = { loc = "TOP", x = -150, y = -360},
-		SS_NightspireBox2 = { loc = "TOP", x = 0, y = -360},
-		SS_NightspireBox3 = { loc = "TOP", x = 150, y = -360},
-		SS_BetrayersRiseBox1 = { loc = "TOP", x = -150, y = -380},
-		SS_BetrayersRiseBox2 = { loc = "TOP", x = 0, y = -380},
-		SS_BetrayersRiseBox3 = { loc = "TOP", x = 150, y = -380},
-		-- Tomb of Sargeras
-		SS_TombofSargerasLFRText = { text = "|cffff0000Tomb of Sargeras!|r", loc = "TOP", x = 0, y = -411, fontSize = 14},
-		SS_TheGatesofHellText = { text = "The Gates of Hell:", loc = "TOPLEFT", x = 10, y = -430, fontSize = 14},
-		SS_WailingHallsText = { text = "Wailing Halls:", loc = "TOPLEFT", x = 10, y = -450, fontSize = 14},
-		SS_ChamberAvatarText = { text = "Chamber of the Avatar:", loc = "TOPLEFT", x = 10, y = -470, fontSize = 14},
-		SS_DeceiversFallText = { text = "Deveiver's Fall:", loc = "TOPLEFT", x = 10, y = -490, fontSize = 14},
-		SS_TheGatesofHellBox1 = { locked = true; loc = "TOP", x = -150, y = -425},
-		SS_TheGatesofHellBox2 = { locked = true; loc = "TOP", x = 0, y = -425},
-		SS_TheGatesofHellBox3 = { locked = true; loc = "TOP", x = 150, y = -425},	
-		SS_WailingHallsBox1 = { locked = true; loc = "TOP", x = -150, y = -445},
-		SS_WailingHallsBox2 = { locked = true; loc = "TOP", x = 0, y = -445},
-		SS_WailingHallsBox3 = { locked = true; loc = "TOP", x = 150, y = -445},
-		SS_ChamberAvatarBox1 = { locked = true; loc = "TOP", x = -150, y = -465},
-		SS_ChamberAvatarBox2 = { locked = true; loc = "TOP", x = 0, y = -465},
-		SS_ChamberAvatarBox3 = { locked = true; loc = "TOP", x = 150, y = -465},
-		SS_DeceiversFallBox1 = { locked = true; loc = "TOP", x = -150, y = -485},
-		SS_DeceiversFallBox2 = { locked = true; loc = "TOP", x = 0, y = -485},
-		SS_DeceiversFallBox3 = { locked = true; loc = "TOP", x = 150, y = -485},
+		SS_InstanceTrigger = { y = -135, loc = "TOP", x = 0, width = "0", height = "2", texture = SS_Spacer},
+
 	};
 };	
 
@@ -146,72 +84,187 @@ SS_optionsPanelBackdrop = {
 ----------------------------
 -- ADDONS/INTERFACE PANEL --
 ----------------------------
-function SS_interfaceConfig()
-	SS_Config = {};
-	for j, var in ipairs(SS_optionsTable2) do
-		if j == 1 then
-			SS_Config[var.vname] = CreateFrame("Frame", var.frame, UIParent);
-			SS_Config[var.vname].okay = function(self) SS_datacall("update"); SS_updateFrames(); end;
-		else
-			SS_Config[var.vname] = CreateFrame("Frame", var.frame, SS_Config.main);
-			SS_Config[var.vname].parent = SS_Config.main.name;
+
+function SS_RegisterText(var, parent, fontSize, loc, x, y, text, anchor)
+	SS_Globals[var] = SS_Globals[parent]:CreateFontString(nil, "OVERLAY")
+	if anchor then
+		SS_Globals[var]:SetParent(anchor);
+	end
+	SS_Globals[var]:SetFont(SS_preFont, fontSize, "OUTLINE");
+	SS_Globals[var]:SetPoint(loc, x, y);
+	SS_Globals[var]:SetText(text);
+end
+function SS_RegisterSlider(var, parent, width, height, loc, x, y, minMax, valueStep, func)
+	SS_Globals[var] = CreateFrame("Slider", nil, SS_Globals[parent], "OptionsSliderTemplate")
+	SS_Globals[var]:SetPoint(loc, x, y);
+	SS_Globals[var]:SetWidth(width);
+	SS_Globals[var]:SetHeight(height);
+	SS_Globals[var]:SetOrientation('HORIZONTAL');
+	SS_Globals[var]:SetMinMaxValues(unpack(minMax));
+	SS_Globals[var]:SetValueStep(valueStep);
+	SS_Globals[var]:SetObeyStepOnDrag(true);
+	SS_Globals[var]:SetScript("OnValueChanged", loadstring(func));
+	SS_Globals[var]:Show();
+end
+function SS_RegisterBox(var, parent, loc, x, y, locked, tooltip)
+	SS_Globals.dungeonData[var] = CreateFrame("CheckButton", nil, SS_Globals[parent], "ChatConfigCheckButtonTemplate");
+	SS_Globals.dungeonData[var]:SetPoint(loc, x, y);
+	SS_Globals.dungeonData[var]:SetHitRectInsets(0, 0, 0, 0);
+	if locked then
+		SS_Globals.dungeonData[var]:SetAlpha(0.3);
+		SS_Globals.dungeonData[var]:Disable();
+		SS_Globals.dungeonData[var].tooltip = tooltip
+		SS_Globals.dungeonData[var]:SetMotionScriptsWhileDisabled(true);
+	end
+end
+function SS_RegisterFrame(frame, var, parent, width, height, loc, x, y, texture, template)
+	SS_Globals[var] = CreateFrame(frame, nil, SS_Globals[parent], template);
+	SS_Globals[var]:SetPoint(loc, x, y);
+	if width then
+		SS_Globals[var]:SetWidth(width);
+	end
+	if height then
+		SS_Globals[var]:SetHeight(height);
+	end
+	if texture then
+		SS_Globals[var]:SetNormalTexture(texture)
+	end
+	if string.find(var, "Spacer") then
+		SS_Globals[var]:SetWidth(InterfaceOptionsFramePanelContainer:GetWidth() - 20);
+		SS_Globals[var]:SetAlpha(0.5);
+	elseif string.find(var, "Button") then
+		SS_Globals[var]:SetHitRectInsets(0, 0, 0, 0);
+	end
+end
+
+function SS_interfaceConfig(update)
+	--if(string.find(arg, "refresh") then
+		SS_dungeonsbyID = {};
+		SS_sortedDungeonsID = {};
+		local myLevel = UnitLevel("player");
+		local found;
+		for i = 1, GetNumRandomDungeons() do
+			local dgInfo = { GetLFGRandomDungeonInfo(i) };
+			local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];
+			local key = {id = id, name = name, mapName = "Random Dungeons"}
+			local _, typeID, subtypeID, minLevel, maxLevel, _, _, _, expansionLevel = GetLFGDungeonInfo(id);
+			if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel and (string.find(name, "Random" and "Heroic") or string.find(name, "Timewalking"))) then
+				tinsert(SS_dungeonsbyID, key)
+			end
 		end
-		SS_Config[var.vname].name = var.pname;
-		SS_Config[var.vname]:SetBackdrop(SS_optionsPanelBackdrop);
-		SS_Config[var.vname]:SetBackdropColor(0, 0, 0, 0.8);
-		InterfaceOptions_AddCategory(SS_Config[var.vname]);
+		for i=1, GetNumRFDungeons() do
+			local dgInfo = { GetRFDungeonInfo(i) };
+			local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];
+			local key = {id = id, name = name, mapName = mapName}
+			local _, typeID, subtypeID, minLevel, maxLevel, _, _, _, expansionLevel = GetLFGDungeonInfo(id);
+			if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel) then
+				tinsert(SS_dungeonsbyID, key);
+			end
+		end
+		while #SS_dungeonsbyID > #SS_sortedDungeonsID do
+			local tmp, key, j = 0;
+			for i = 1, #SS_dungeonsbyID do
+				if (SS_dungeonsbyID[i].id > tmp) then
+					local tooltip, reason, locked;
+					local isAvailable, x, y = IsLFGDungeonJoinable(SS_dungeonsbyID[i].id);
+					if not isAvailable then
+						tooltip = LFGConstructDeclinedMessage(SS_dungeonsbyID[i].id);
+						locked = true;
+						reason = "Locked by client."
+						if string.find(tooltip, "This instance is not available yet") then reason = "Unreleased" end;
+						if string.find(tooltip, "You need a higher average item level") then reason = "Low iLVL" end;
+					end
+					key = {id = SS_dungeonsbyID[i].id, name = SS_dungeonsbyID[i].name, mapName = SS_dungeonsbyID[i].mapName, locked = locked, tooltip = tooltip, reason = reason}
+					tmp = SS_dungeonsbyID[i].id;
+					j = i;
+				end
+				if #SS_dungeonsbyID == i then
+					tinsert(SS_sortedDungeonsID, 1, key)
+					SS_dungeonsbyID[j].id = 0
+				end
+			end
+		end
+		for i=1, #SS_sortedDungeonsID do
+			if string.find(SS_sortedDungeonsID[i].name, "Timewalking") then
+				found = true;
+				SS_sortedDungeonsID[i].name = "Timewalking";
+			else
+				if #SS_sortedDungeonsID == i and not found then
+					local key = {id = 0, name = "Timewalking", mapName = "Random Dungeons", locked = true, tooltip = "Not available this reset.", reason = "Not active"}
+					tinsert(SS_sortedDungeonsID, 2, key)
+				end
+			end
+			if string.find(SS_sortedDungeonsID[i].name, "Random") then
+				SS_sortedDungeonsID[i].name = string.gsub(SS_sortedDungeonsID[i].name, "Random ", "");
+			end
+		end
+	--end
+	for page, var in ipairs(SS_optionsTable2) do
+		if page == 1 then
+			SS_Globals[var.parent] = CreateFrame("Frame", var.frame, UIParent);
+			SS_Globals[var.parent].okay = function(self) SS_datacall("update"); SS_UpdateChildFrame(); end;
+		else
+			SS_Globals[var.parent] = CreateFrame("Frame", var.frame, SS_Globals.main);
+			SS_Globals[var.parent].parent = SS_Globals.main.name;
+		end
+		SS_Globals[var.parent].name = var.pname;
+		SS_Globals[var.parent]:SetBackdrop(SS_optionsPanelBackdrop);
+		SS_Globals[var.parent]:SetBackdropColor(0, 0, 0, 0.8);
+		InterfaceOptions_AddCategory(SS_Globals[var.parent]);
 		for i, tVar in pairs(var) do
 			if string.find(i, "Text") then
-				_G[i] = SS_Config[var.vname]:CreateFontString(nil, "OVERLAY")
-				_G[i]:SetFont(SS_preFont, tVar.fontSize, "OUTLINE");
-				_G[i]:SetPoint(tVar.loc, tVar.x, tVar.y);
-				_G[i]:SetText(tVar.text);
+				SS_RegisterText(i, var.parent, tVar.fontSize, tVar.loc, tVar.x, tVar.y, tVar.text)
 			elseif string.find(i, "Spacer") then
-				_G[i] = CreateFrame("Button", nil, SS_Config[var.vname]);
-				_G[i]:SetWidth(tVar.width);
-				_G[i]:SetHeight(tVar.height);
-				_G[i]:SetPoint(tVar.loc, tVar.x, tVar.y);
-				_G[i]:SetNormalTexture(tVar.texture)
-				_G[i]:SetWidth(InterfaceOptionsFramePanelContainer:GetWidth() - 20);
-				_G[i]:SetAlpha(0.5);	
+				SS_RegisterFrame("Button", i, var.parent, nil, tVar.height, tVar.loc, tVar.x, tVar.y, tVar.texture)
 			elseif string.find(i, "Button") then	
-				_G[i] = CreateFrame("CheckButton", nil, SS_Config[var.vname], "ChatConfigCheckButtonTemplate");
-				_G[i]:SetPoint(tVar.loc, tVar.x, tVar.y);
-				_G[i]:SetHitRectInsets(0, 0, 0, 0);
+				SS_RegisterFrame("CheckButton", i, var.parent, nil, nil, tVar.loc, tVar.x, tVar.y, nil, "ChatConfigCheckButtonTemplate")
 			elseif string.find(i, "Slider") then
-				_G[i] = CreateFrame("Slider", nil, SS_Config[var.vname], "OptionsSliderTemplate")
-				_G[i]:SetPoint(tVar.loc, tVar.x, tVar.y);
-				_G[i]:SetWidth(tVar.width);
-				_G[i]:SetHeight(tVar.height);
-				_G[i]:SetOrientation('HORIZONTAL');
-				_G[i]:SetMinMaxValues(unpack(tVar.minMax));
-				_G[i]:SetValueStep(tVar.valueStep);
-				_G[i]:SetObeyStepOnDrag(true);
-				_G[i]:SetScript("OnValueChanged", loadstring(tVar.func));
-				_G[i]:Show();
+				SS_RegisterSlider(i, var.parent, tVar.width, tVar.height, tVar.loc, tVar.x, tVar.y, tVar.minMax, tVar.valueStep, tVar.func)
 			elseif string.find(i, "Box") then	
-				_G[i] = CreateFrame("CheckButton", nil, SS_Config[var.vname], "ChatConfigCheckButtonTemplate");
-				_G[i]:SetPoint(tVar.loc, tVar.x, tVar.y);
-				_G[i]:SetHitRectInsets(0, 0, 0, 0);
-				if tVar.locked then
-					_G[i]:SetAlpha(0.3);
-					_G[i]:Disable();
-				end
+				SS_RegisterBox(i, var.parent, tVar.loc, tVar.x, tVar.y, tVar.locked)
 			elseif string.find(i, "BigIcon") then
-				_G[i] = CreateFrame("Button", nil, SS_Config[var.vname]);
-				_G[i]:SetWidth(tVar.width);
-				_G[i]:SetHeight(tVar.height);
-				_G[i]:SetPoint(tVar.loc, tVar.x, tVar.y);
-				_G[i]:SetNormalTexture(tVar.texture);
+				SS_RegisterFrame("Button", i, var.parent, tVar.width, tVar.height, tVar.loc, tVar.x, tVar.y, tVar.texture)
+			elseif string.find(i, "InstanceTrigger") then
+				local storedMap = "Random Dungeons";
+				--SS_RoleOverride = true;
+				--local availableRole = {C_LFGList.GetAvailableRoles()};
+				local ycoord = -155
+				for k=1, #SS_sortedDungeonsID do
+					local boxes = {-150,0,150}
+					local nameVar = ("SS_" .. string.gsub(SS_sortedDungeonsID[k].name, " ", ""))
+					local mapVar = ("SS_" .. string.gsub(SS_sortedDungeonsID[k].mapName, " ", "") .. "HeaderText")
+					local spacerVar = string.gsub(storedMap, " ", "");
+					nameVar = string.gsub(nameVar, "'", "")
+					if string.find(SS_sortedDungeonsID[k].name, "Heroic") and SS_sortedDungeonsID[k].mapName == "Random Dungeons" then
+						SS_RegisterText(nameVar.."Text", var.parent, 14, "TOPLEFT", 10, -155, SS_sortedDungeonsID[k].name..":")
+						for j = 1, 3 do
+							SS_RegisterBox(nameVar.."Box"..j, var.parent, "TOP", boxes[j], -150, SS_sortedDungeonsID[k].locked, SS_sortedDungeonsID[k].tooltip)
+						end
+					else
+						if not (SS_sortedDungeonsID[k].mapName == storedMap) then
+							storedMap = SS_sortedDungeonsID[k].mapName;
+							ycoord = ycoord - 20;
+							SS_RegisterFrame("Button", spacerVar.."Spacer", var.parent, nil, tVar.height, tVar.loc, tVar.x, ycoord, tVar.texture)
+							ycoord = ycoord - 5;
+							SS_RegisterText(mapVar, var.parent, 14, "TOP", 0, ycoord, "|cffff0000"..SS_sortedDungeonsID[k].mapName.."|r")
+						end
+						ycoord = ycoord - 15;
+						for j = 1, 3 do
+							SS_RegisterBox(nameVar.."Box"..j, var.parent, "TOP", boxes[j], ycoord, SS_sortedDungeonsID[k].locked, SS_sortedDungeonsID[k].tooltip)
+							if SS_sortedDungeonsID[k].locked and j == 3 then
+								if SS_InstanceNewsTable[nameVar] then
+									SS_RegisterText(nameVar.."LockedText", var.parent, 14, "TOPLEFT", 21, -4, SS_InstanceNewsTable[nameVar], SS_Globals.dungeonData[nameVar.."Box"..j]);
+								else
+									SS_RegisterText(nameVar.."LockedText", var.parent, 14, "TOPLEFT", 21, -4, SS_sortedDungeonsID[k].reason, SS_Globals.dungeonData[nameVar.."Box"..j])
+								end
+							end
+						end
+						ycoord = ycoord - 5;
+						SS_RegisterText(nameVar.."Text", var.parent, 14, "TOPLEFT", 10, ycoord, SS_sortedDungeonsID[k].name..":")
+					end
+				end
 			end
 		end
 	end
-	for i, tVar in pairs(SS_newsTable) do
-		_G[i] = _G[tVar.anchor]:CreateFontString(nil, "OVERLAY")
-		_G[i]:SetFont(SS_preFont, 14, "OUTLINE");
-		_G[i]:SetPoint(tVar.loc, tVar.x, tVar.y);
-		_G[i]:SetText(tVar.text);
-	end
-	SS_drawFrames();
+	SS_SetupCoreFrame();
 end
-

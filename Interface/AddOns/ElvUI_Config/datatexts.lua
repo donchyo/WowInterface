@@ -4,8 +4,8 @@ local DT = E:GetModule('DataTexts')
 local datatexts = {}
 
 function DT:PanelLayoutOptions()
-	for name, _ in pairs(DT.RegisteredDataTexts) do
-		datatexts[name] = name
+	for name, data in pairs(DT.RegisteredDataTexts) do
+		datatexts[name] = data.localizedName or L[name]
 	end
 	datatexts[''] = NONE
 
@@ -123,6 +123,19 @@ local function CreateCustomCurrencyOptions(currencyID)
 						E.global.datatexts.customCurrencies[currencyID].USE_TOOLTIP = value
 						--Update internal value
 						DT:UpdateCustomCurrencySettings(currency.NAME, "USE_TOOLTIP", value)
+					end,
+				},
+				displayInMainTooltip = {
+					order = 6,
+					type = "toggle",
+					name = L["Display In Main Tooltip"],
+					desc = L["If enabled, then this currency will be displayed in the main Currencies datatext tooltip."],
+					get = function(info) return E.global.datatexts.customCurrencies[currencyID].DISPLAY_IN_MAIN_TOOLTIP end,
+					set = function(info, value)
+						--Save new value
+						E.global.datatexts.customCurrencies[currencyID].DISPLAY_IN_MAIN_TOOLTIP = value
+						--Update internal value
+						DT:UpdateCustomCurrencySettings(currency.NAME, "DISPLAY_IN_MAIN_TOOLTIP", value)
 					end,
 				},
 			},

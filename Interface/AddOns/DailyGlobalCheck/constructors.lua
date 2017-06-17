@@ -1,4 +1,4 @@
-﻿-- Daily Global Check
+-- Daily Global Check
 -- by Jadya
 -- EU-Well of Eternity
 

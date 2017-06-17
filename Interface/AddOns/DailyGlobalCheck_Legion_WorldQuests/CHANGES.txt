@@ -1,0 +1,6 @@
+commit d7989d22eeb0cb38b59bcdf4de79e53512c16163
+Author: Saregon <n_rhygar@yahoo.it>
+Date:   Wed Jun 14 19:18:10 2017 +0200
+
+    7.2.5 update
+

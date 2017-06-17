@@ -1,5 +1,7 @@
 
 ElvCharacterDB = {
+	["ChatLog"] = {
+	},
 	["ChatEditHistory"] = {
 		"/g now i have the aff weapon for when i actually wants to lvl", -- [1]
 		"/g i managed to fuck my sleeping alot last night", -- [2]
@@ -8,11 +10,9 @@ ElvCharacterDB = {
 		"/ec", -- [5]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
-	},
-	["ChatLog"] = {
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

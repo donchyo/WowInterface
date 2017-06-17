@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.2.05 (28th May 2017, www.leatrix.com)
+-- 	Leatrix Plus 7.2.06 (14th June 2017, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.2.05"
+	LeaPlusLC["AddonVer"] = "7.2.06"
 
 ----------------------------------------------------------------------
 -- 	Locale
@@ -3639,7 +3639,7 @@
 
 		-- Check character friends
 		for i = 1, GetNumFriends() do
-			-- Return true if name matches without or without realm
+			-- Return true if name matches with or without realm
 			if name == GetFriendInfo(i) or name == strsplit("-", GetFriendInfo(i), 2) then
 				return true
 			end
@@ -4363,102 +4363,6 @@
 		end
 
 		----------------------------------------------------------------------
-		--	Hide alerts
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["NoAlerts"] == "On" then
-
-			-- Create configuration panel
-			local AlertPanel = LeaPlusLC:CreatePanel("Alerts", "AlertPanel")
-
-			LeaPlusLC:MakeTx(AlertPanel, "Settings", 16, -72)
-			LeaPlusLC:MakeCB(AlertPanel, "NoAchieveAlerts", "Hide achievement alerts", 16, -92, false, "If checked, achievement alerts will not be shown.")
-			LeaPlusLC:MakeCB(AlertPanel, "NoEncounterAlerts", "Hide encounter alerts", 16, -112, false, "If checked, encounter alerts will not be shown.\n\nThis includes dungeons, raids, scenarios, invasions, guild challenges and world quests.")
-			LeaPlusLC:MakeCB(AlertPanel, "NoGarrisonAlerts", "Hide garrison alerts", 16, -132, false, "If checked, garrison alerts will not be shown.\n\nThis includes buildings, followers, missions and talents.")
-			LeaPlusLC:MakeCB(AlertPanel, "NoLootAlerts", "Hide loot alerts", 16, -152, false, "If checked, loot alerts will not be shown.\n\nThis includes items, money, honor, resources and store purchases.")
-			LeaPlusLC:MakeCB(AlertPanel, "NoProfessionAlerts", "Hide profession alerts", 16, -172, false, "If checked, profession alerts will not be shown.\n\nThis includes recipes and digsites.")
-
-			-- Help button tooltip
-			AlertPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
-
-			-- Back button handler
-			AlertPanel.b:SetScript("OnClick", function() 
-				AlertPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page6"]:Show()
-				return
-			end)
-
-			-- Reset button handler
-			AlertPanel.r:SetScript("OnClick", function()
-
-				-- Reset checkboxes
-				LeaPlusLC["NoAchieveAlerts"] = "On"
-				LeaPlusLC["NoEncounterAlerts"] = "On"
-				LeaPlusLC["NoGarrisonAlerts"] = "On"
-				LeaPlusLC["NoLootAlerts"] = "On"
-				LeaPlusLC["NoProfessionAlerts"] = "On"
-
-				-- Refresh side panel
-				AlertPanel:Hide(); AlertPanel:Show()
-
-			end)
-
-			-- Show configuration panal when options panel button is clicked
-			LeaPlusCB["NoAlertsBtn"]:SetScript("OnClick", function()
-				if IsShiftKeyDown() and IsControlKeyDown() then
-					-- Preset profile
-					LeaPlusLC["NoAchieveAlerts"] = "On"
-					LeaPlusLC["NoEncounterAlerts"] = "On"
-					LeaPlusLC["NoGarrisonAlerts"] = "On"
-					LeaPlusLC["NoLootAlerts"] = "On"
-					LeaPlusLC["NoProfessionAlerts"] = "On"
-				else
-					AlertPanel:Show()
-					LeaPlusLC:HideFrames()
-				end
-			end)
-
-			-- Function to hide alerts
-			local function HideAlert(self)
-				for alertFrame in self.alertFramePool:EnumerateActive() do
-					alertFrame:Hide()
-				end
-			end
-
-			-- Achievements
-			hooksecurefunc(AchievementAlertSystem, 				"AddAlert", function(self) if LeaPlusLC["NoAchieveAlerts"] == "On" then HideAlert(self) end end) -- AchievementAlertSystem:AddAlert(5192)
-			hooksecurefunc(CriteriaAlertSystem, 				"AddAlert", function(self) if LeaPlusLC["NoAchieveAlerts"] == "On" then HideAlert(self) end end) -- CriteriaAlertSystem:AddAlert(9023, "Doing great!")
-
-			-- Encounters
-			hooksecurefunc(DungeonCompletionAlertSystem, 		"AddAlert", function(self) if LeaPlusLC["NoEncounterAlerts"] == "On" then HideAlert(self) end end) -- DungeonCompletionAlertSystem
-			hooksecurefunc(GuildChallengeAlertSystem, 			"AddAlert", function(self) if LeaPlusLC["NoEncounterAlerts"] == "On" then HideAlert(self) end end) -- GuildChallengeAlertSystem:AddAlert(3, 2, 5)
-			hooksecurefunc(InvasionAlertSystem, 				"AddAlert", function(self) if LeaPlusLC["NoEncounterAlerts"] == "On" then HideAlert(self) end end) -- InvasionAlertSystem:AddAlert(1)
-			hooksecurefunc(ScenarioAlertSystem, 				"AddAlert", function(self) if LeaPlusLC["NoEncounterAlerts"] == "On" then HideAlert(self) end end) -- ScenarioAlertSystem
-			hooksecurefunc(WorldQuestCompleteAlertSystem, 		"AddAlert", function(self) if LeaPlusLC["NoEncounterAlerts"] == "On" then HideAlert(self) end end) -- WorldQuestCompleteAlertSystem:AddAlert(112)
-
-			-- Garrisons
-			hooksecurefunc(GarrisonBuildingAlertSystem, 		"AddAlert", function(self) if LeaPlusLC["NoGarrisonAlerts"] == "On" then HideAlert(self) end end) -- GarrisonBuildingAlertSystem:AddAlert("Barracks")
-			hooksecurefunc(GarrisonFollowerAlertSystem, 		"AddAlert", function(self) if LeaPlusLC["NoGarrisonAlerts"] == "On" then HideAlert(self) end end) -- GarrisonFollowerAlertSystem:AddAlert(204, "Ben Stone", 90, 3, false) (C_Garrison.GetFollowerInfo)
-			hooksecurefunc(GarrisonMissionAlertSystem, 			"AddAlert", function(self) if LeaPlusLC["NoGarrisonAlerts"] == "On" then HideAlert(self) end end) -- GarrisonMissionAlertSystem:AddAlert(681) (C_Garrison.GetBasicMissionInfo)
-			hooksecurefunc(GarrisonRandomMissionAlertSystem, 	"AddAlert", function(self) if LeaPlusLC["NoGarrisonAlerts"] == "On" then HideAlert(self) end end) -- GarrisonRandomMissionAlertSystem
-			hooksecurefunc(GarrisonShipFollowerAlertSystem, 	"AddAlert", function(self) if LeaPlusLC["NoGarrisonAlerts"] == "On" then HideAlert(self) end end) -- GarrisonShipFollowerAlertSystem:AddAlert(592, "Test", "Transport", "GarrBuilding_Barracks_1_H", 3, 2, 1)
-			hooksecurefunc(GarrisonTalentAlertSystem, 			"AddAlert", function(self) if LeaPlusLC["NoGarrisonAlerts"] == "On" then HideAlert(self) end end) -- GarrisonTalentAlertSystem
-			hooksecurefunc(GarrisonShipMissionAlertSystem, 		"AddAlert", function(self) if LeaPlusLC["NoGarrisonAlerts"] == "On" then HideAlert(self) end end) -- GarrisonShipMissionAlertSystem
-
-			-- Loot
-			hooksecurefunc(LegendaryItemAlertSystem, 			"AddAlert", function(self) if LeaPlusLC["NoLootAlerts"] == "On" then HideAlert(self) end end) -- LegendaryItemAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:18832:0:0:0:0:0:0:0:0:0:0\\124h[Brutality Blade]\\124h\\124r")
-			hooksecurefunc(LootAlertSystem, 					"AddAlert", function(self) if LeaPlusLC["NoLootAlerts"] == "On" then HideAlert(self) end end) -- LootAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:18832:0:0:0:0:0:0:0:0:0:0\\124h[Brutality Blade]\\124h\\124r", 1, 1, 1, 1, false, false, 0, false, false)
-			hooksecurefunc(LootUpgradeAlertSystem, 				"AddAlert", function(self) if LeaPlusLC["NoLootAlerts"] == "On" then HideAlert(self) end end) -- LootUpgradeAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:18832:0:0:0:0:0:0:0:0:0:0\\124h[Brutality Blade]\\124h\\124r", 1, 1, 1, nil, nil, false)
-			hooksecurefunc(HonorAwardedAlertSystem, 			"AddAlert", function(self) if LeaPlusLC["NoLootAlerts"] == "On" then HideAlert(self) end end) -- HonorAwardedAlertSystem:AddAlert(204)
-			hooksecurefunc(MoneyWonAlertSystem, 				"AddAlert", function(self) if LeaPlusLC["NoLootAlerts"] == "On" then HideAlert(self) end end) -- MoneyWonAlertSystem:AddAlert(815)
-			hooksecurefunc(StorePurchaseAlertSystem, 			"AddAlert", function(self) if LeaPlusLC["NoLootAlerts"] == "On" then HideAlert(self) end end) -- StorePurchaseAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:180545:0:0:0:0:0:0:0:0:0:0\\124h[Mystic Runesaber]\\124h\\124r", "", "", 214)
-
-			-- Professions
-			hooksecurefunc(DigsiteCompleteAlertSystem, 			"AddAlert", function(self) if LeaPlusLC["NoProfessionAlerts"] == "On" then HideAlert(self) end end) -- DigsiteCompleteAlertSystem:AddAlert(1)
-			hooksecurefunc(NewRecipeLearnedAlertSystem, 		"AddAlert", function(self) if LeaPlusLC["NoProfessionAlerts"] == "On" then HideAlert(self) end end) -- NewRecipeLearnedAlertSystem:AddAlert(204)
-
-		end
-
-		----------------------------------------------------------------------
 		--	Hide boss banner
 		----------------------------------------------------------------------
 
@@ -4748,7 +4652,7 @@
 			hooksecurefunc("MovieFrame_PlayMovie", function(self)
 				-- Do nothing if shift key is being held
 				if IsShiftKeyDown() then return	end
-				-- Click the close diaglog confirmation button to stop the movie
+				-- Click the close dialog confirmation button to stop the movie
 				if self.CloseDialog and self.CloseDialog.ConfirmButton then
 					self.CloseDialog.ConfirmButton:Click()
 					-- Show confirmation message
@@ -7786,6 +7690,118 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		--	Hide alerts
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["NoAlerts"] == "On" then
+
+			-- Create configuration panel
+			local AlertPanel = LeaPlusLC:CreatePanel("Alerts", "AlertPanel")
+
+			LeaPlusLC:MakeTx(AlertPanel, "Settings", 16, -72)
+			LeaPlusLC:MakeCB(AlertPanel, "NoAchieveAlerts", "Hide achievement alerts", 16, -92, false, "If checked, achievement alerts will not be shown.")
+			LeaPlusLC:MakeCB(AlertPanel, "NoEncounterAlerts", "Hide encounter alerts", 16, -112, false, "If checked, encounter alerts will not be shown.\n\nThis includes dungeons, raids, scenarios, invasions, guild challenges and world quests.")
+			LeaPlusLC:MakeCB(AlertPanel, "NoGarrisonAlerts", "Hide garrison alerts", 16, -132, false, "If checked, garrison alerts will not be shown.\n\nThis includes buildings, followers, missions and talents.")
+			LeaPlusLC:MakeCB(AlertPanel, "NoLootAlerts", "Hide loot alerts", 16, -152, false, "If checked, loot alerts will not be shown.\n\nThis includes items, money, honor, resources and store purchases.")
+			LeaPlusLC:MakeCB(AlertPanel, "NoProfessionAlerts", "Hide profession alerts", 16, -172, false, "If checked, profession alerts will not be shown.\n\nThis includes recipes and digsites.")
+
+			-- Help button tooltip
+			AlertPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+
+			-- Back button handler
+			AlertPanel.b:SetScript("OnClick", function() 
+				AlertPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page6"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			AlertPanel.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				LeaPlusLC["NoAchieveAlerts"] = "On"
+				LeaPlusLC["NoEncounterAlerts"] = "On"
+				LeaPlusLC["NoGarrisonAlerts"] = "On"
+				LeaPlusLC["NoLootAlerts"] = "On"
+				LeaPlusLC["NoProfessionAlerts"] = "On"
+
+				-- Refresh side panel
+				AlertPanel:Hide(); AlertPanel:Show()
+
+			end)
+
+			-- Show configuration panal when options panel button is clicked
+			LeaPlusCB["NoAlertsBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["NoAchieveAlerts"] = "On"
+					LeaPlusLC["NoEncounterAlerts"] = "On"
+					LeaPlusLC["NoGarrisonAlerts"] = "On"
+					LeaPlusLC["NoLootAlerts"] = "On"
+					LeaPlusLC["NoProfessionAlerts"] = "On"
+				else
+					AlertPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+			-- Alert table
+			local alertTable = {
+
+				-- Achievements
+				AchievementAlertSystem, "NoAchieveAlerts", -- AchievementAlertSystem:AddAlert(5192)
+				CriteriaAlertSystem, "NoAchieveAlerts", -- CriteriaAlertSystem:AddAlert(9023, "Doing great!")
+
+				-- Encounters
+				DungeonCompletionAlertSystem, "NoEncounterAlerts", -- DungeonCompletionAlertSystem
+				GuildChallengeAlertSystem, "NoEncounterAlerts", -- GuildChallengeAlertSystem:AddAlert(3, 2, 5)
+				InvasionAlertSystem, "NoEncounterAlerts", -- InvasionAlertSystem:AddAlert(1)
+				ScenarioAlertSystem, "NoEncounterAlerts", -- ScenarioAlertSystem
+				WorldQuestCompleteAlertSystem, "NoEncounterAlerts", -- WorldQuestCompleteAlertSystem:AddAlert(112)
+
+				-- Garrisons
+				GarrisonBuildingAlertSystem, "NoGarrisonAlerts", -- GarrisonBuildingAlertSystem:AddAlert("Barracks")
+				GarrisonFollowerAlertSystem, "NoGarrisonAlerts", -- GarrisonFollowerAlertSystem:AddAlert(204, "Ben Stone", 90, 3, false) (C_Garrison.GetFollowerInfo)
+				GarrisonMissionAlertSystem, "NoGarrisonAlerts", -- GarrisonMissionAlertSystem:AddAlert(681) (C_Garrison.GetBasicMissionInfo)
+				GarrisonRandomMissionAlertSystem, "NoGarrisonAlerts", -- GarrisonRandomMissionAlertSystem
+				GarrisonShipFollowerAlertSystem, "NoGarrisonAlerts", -- GarrisonShipFollowerAlertSystem:AddAlert(592, "Test", "Transport", "GarrBuilding_Barracks_1_H", 3, 2, 1)
+				GarrisonTalentAlertSystem, "NoGarrisonAlerts", -- GarrisonTalentAlertSystem
+				GarrisonShipMissionAlertSystem, "NoGarrisonAlerts", -- GarrisonShipMissionAlertSystem
+
+				-- Loot
+				LegendaryItemAlertSystem, "NoLootAlerts", -- LegendaryItemAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:18832:0:0:0:0:0:0:0:0:0:0\\124h[Brutality Blade]\\124h\\124r")
+				LootAlertSystem, "NoLootAlerts", -- LootAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:18832:0:0:0:0:0:0:0:0:0:0\\124h[Brutality Blade]\\124h\\124r", 1, 1, 1, 1, false, false, 0, false, false)
+				LootUpgradeAlertSystem, "NoLootAlerts", -- LootUpgradeAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:18832:0:0:0:0:0:0:0:0:0:0\\124h[Brutality Blade]\\124h\\124r", 1, 1, 1, nil, nil, false)
+				HonorAwardedAlertSystem, "NoLootAlerts", -- HonorAwardedAlertSystem:AddAlert(204)
+				MoneyWonAlertSystem, "NoLootAlerts", -- MoneyWonAlertSystem:AddAlert(815)
+				StorePurchaseAlertSystem, "NoLootAlerts", -- StorePurchaseAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:180545:0:0:0:0:0:0:0:0:0:0\\124h[Mystic Runesaber]\\124h\\124r", "", "", 214)
+
+				-- Professions
+				DigsiteCompleteAlertSystem, "NoProfessionAlerts", -- DigsiteCompleteAlertSystem:AddAlert(1)
+				NewRecipeLearnedAlertSystem, "NoProfessionAlerts", -- NewRecipeLearnedAlertSystem:AddAlert(204)
+
+			}
+
+			-- Hide alerts
+			for k = 1, #alertTable, 2 do
+				-- Hide alerts when shown
+				hooksecurefunc(alertTable[k], "AddAlert", function(self)
+					if LeaPlusLC[alertTable[k+1]] == "On" then
+						for alertFrame in self.alertFramePool:EnumerateActive() do
+							alertFrame:Hide()
+						end
+					end
+				end)
+				-- Hide alerts on startup
+				for alertFrame in alertTable[k].alertFramePool:EnumerateActive() do
+					if LeaPlusLC[alertTable[k+1]] == "On" then
+						alertFrame:Hide()
+					end
+				end
+			end
+
+		end
 
 		----------------------------------------------------------------------
 		-- Show cooldowns

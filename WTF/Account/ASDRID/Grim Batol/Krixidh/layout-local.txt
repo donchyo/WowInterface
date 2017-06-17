@@ -1,8 +1,8 @@
 Version: 1
 Frame: SpellBookFrame
 FrameLevel: 1
-Anchor: CENTER
-X: 33
+Anchor: LEFT
+X: 16
 Y: 102
 W: 550
 H: 525
@@ -28,7 +28,7 @@ Y: -141
 W: 128
 H: 64
 Frame: ColorPickerFrame
-FrameLevel: 28
+FrameLevel: 21
 Anchor: CENTER
 X: 0
 Y: 0

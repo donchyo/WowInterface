@@ -638,7 +638,7 @@ function WorldQuestGroupFinder.InitSearchProcess(questID, retry, forceCreate, wa
 				manualActionsFrame.NextButton:SetText(L["WQGF_FRAME_INIT_SEARCH"])
 				manualActionsFrame.NextButton:SetScript("OnClick", function(self, button, down)
 					if (NEW_AREA_TIMER) then NEW_AREA_TIMER:Cancel() end
-					C_LFGList.Search(1, title, 0, 4, selectedLanguages)
+					C_LFGList.Search(1, LFGListSearchPanel_ParseSearchTerms(title), 0, 4, selectedLanguages)
 					manualActionsFrame.NextButton:Disable()
 					C_Timer.After(1.5, function()
 						WorldQuestGroupFinder.InitSearchProcess(questID, true)
@@ -648,7 +648,7 @@ function WorldQuestGroupFinder.InitSearchProcess(questID, retry, forceCreate, wa
 			end
 			
 			if (not retry) then
-				C_LFGList.Search(1, title, 0, 4, selectedLanguages)
+				C_LFGList.Search(1, LFGListSearchPanel_ParseSearchTerms(title), 0, 4, selectedLanguages)
 				manualActionsFrame.NextButton:Disable()
 				C_Timer.After(1, function()
 					manualActionsFrame.NextButton:Enable()
@@ -792,7 +792,6 @@ function WorldQuestGroupFinder.ClearOneApplication()
 		-- Have to do this because GetApplications sometimes returns already cancelled applications
 		local applicationToClear = C_LFGList.GetNumApplications()
 		local _, applicationStatus = C_LFGList.GetApplicationInfo(applications[applicationToClear])
-		WorldQuestGroupFinder.dumpTable(applications)
 		if (applicationStatus == "invited") then
 			C_LFGList.DeclineInvite(applications[applicationToClear])
 			WorldQuestGroupFinder.dprint(string.format("Canceling invite: %d", applications[applicationToClear]))
@@ -1577,6 +1576,7 @@ function WorldQuestGroupFinder.InitBlacklists()
 		[43772] = true, -- Enigmatic
 		[43767] = true, -- Enigmatic
 		[43756] = true, -- Enigmatic
+		[43778] = true, -- Enigmatic
 		[45032] = true, -- Like the Wind
 		[45046] = true, -- Like the Wind
 		[45047] = true, -- Like the Wind

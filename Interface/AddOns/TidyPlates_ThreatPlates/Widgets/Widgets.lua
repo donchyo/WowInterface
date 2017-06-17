@@ -1,5 +1,5 @@
 local ADDON_NAME, NAMESPACE = ...
-ThreatPlates = NAMESPACE.ThreatPlates
+local ThreatPlates = NAMESPACE.ThreatPlates
 
 -----------------------
 -- Auras Widget --
@@ -27,7 +27,7 @@ local enable_cooldown_spiral
 ---------------------------------------------------------------------------------------------------
 
 local function enabled()
-	local active = TidyPlatesThreat.db.profile.debuffWidget.ON
+	local active = TidyPlatesThreat.db.profile.debuffWidget.ON and not TidyPlatesThreat.db.profile.AuraWidget.ON
 
 	if active then
 		if not isAuraEnabled then

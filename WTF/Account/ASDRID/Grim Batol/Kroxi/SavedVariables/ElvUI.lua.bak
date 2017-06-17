@@ -1,21 +1,21 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/reload", -- [1]
-		" nope", -- [2]
-		" i decied to do the magetower for the shaman instead", -- [3]
-		" sicne it was going away", -- [4]
-		"/p can you die", -- [5]
-		"/p like", -- [6]
-		"/p are you retarded", -- [7]
-		"/g finns en addon som timar log in tid", -- [8]
-		"/bt", -- [9]
+		"/p like", -- [1]
+		"/p are you retarded", -- [2]
+		"/g finns en addon som timar log in tid", -- [3]
+		"/bt", -- [4]
+		"/g fick 3k shards på warriorn", -- [5]
+		"/g hype", -- [6]
+		"/g eg", -- [7]
+		"/g vafan är det här?", -- [8]
+		"/iks", -- [9]
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatLog"] = {
 	},
