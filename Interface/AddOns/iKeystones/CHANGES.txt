@@ -1,14 +1,8 @@
-tag 9822e8ef3c0b28a1dfcfc1b4d8ad5f52e41d3944 v1.37
+tag 92c7e25d8e1f50e5ba58ff511de2e9dbbbf70b01 v1.39
 Author:	Jesse Manelius <jessemanelius@gmail.com>
-Date:	Thu Jun 15 01:30:11 2017 +0300
+Date:	Thu Jun 15 22:02:31 2017 +0300
 
-tagging as v1.37
-
-commit d8a02811709448226e90f3a3e6dead025100c8a9
-Author: Ironi <jessemanelius@gmail.com>
-Date:   Tue Nov 15 05:54:17 2016 +0200
-
-    color max weekly dungeon to green when its >=12
+tagging as v1.39
 
 commit 731cc70178152a7b17623a708338078cb1262c90
 Author: Jesse Manelius <jessemanelius@gmail.com>

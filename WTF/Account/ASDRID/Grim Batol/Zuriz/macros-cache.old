@@ -18,9 +18,6 @@ END
 VER 3 0100000000000004 "earthshield" "INV_MISC_QUESTIONMARK"
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]earth shield
 END
-VER 3 010000000000000A "elemental blast" "INV_MISC_QUESTIONMARK"
-/cast [@targettarget, harm, exists] elemental blast;  [@focus, harm, exists]elemental blast; [@focustarget, harm, exists] elemental blast; [@mouseovertarget, exist, harm]elemental blast; elemental blast
-END
 VER 3 0100000000000002 "fws" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@focus] wind shear
@@ -37,15 +34,6 @@ VER 3 0100000000000003 "rip" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]riptide
 END
-VER 3 0100000000000001 "swifty" "INV_MISC_QUESTIONMARK"
-/cast Heroism
-/cast Elemental Mastery
-END
-VER 3 010000000000000D "swifty yo" "INV_MISC_QUESTIONMARK"
-/cast elemental mastery
-/use 13
-/cast ascendance
-END
-VER 3 0100000000000009 "unleach" "INV_MISC_QUESTIONMARK"
+VER 3 0100000000000009 "unleash" "INV_MISC_QUESTIONMARK"
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]unleash life
 END

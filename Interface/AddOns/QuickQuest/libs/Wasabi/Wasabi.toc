@@ -1,13 +1,9 @@
 ## Interface: 70000
 ## Author: p3lim
-## Version: @project-version@
+## Version: 3
 ## Title: Lib: Wasabi
 ## Notes: Library for implementing addon configs
 ## OptionalDeps: LibStub
 
 embed.xml
 
-#@do-not-package@
-## SavedVariables: WasabiDB, WasabiSubDB, WasabiObjectsDB
-tests\options.lua
-#@end-do-not-package@

@@ -18,6 +18,9 @@ END
 VER 3 0100000000000004 "earthshield" "INV_MISC_QUESTIONMARK"
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]earth shield
 END
+VER 3 010000000000000D "focus" "INV_MISC_QUESTIONMARK"
+/cast [@focus] hex
+END
 VER 3 0100000000000002 "fws" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@focus] wind shear

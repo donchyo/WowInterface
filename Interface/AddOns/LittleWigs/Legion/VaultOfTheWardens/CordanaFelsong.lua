@@ -75,7 +75,7 @@ end
 
 function mod:Warmup(_, msg)
 	if msg == L.warmup_trigger then
-		self:Bar("warmup menardiasucks", 17, L.warmup_text, "achievement_dungeon_vaultofthewardens")
+		self:Bar("warmup", 17, L.warmup_text, "achievement_dungeon_vaultofthewardens")
 	end
 end
 

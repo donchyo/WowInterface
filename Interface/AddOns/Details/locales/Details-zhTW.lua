@@ -44,6 +44,8 @@ L["STRING_ATTRIBUTE_DAMAGE_FRAGS"] = "造成傷害目標"
 L["STRING_ATTRIBUTE_DAMAGE_FRIENDLYFIRE"] = "隊友誤傷"
 L["STRING_ATTRIBUTE_DAMAGE_TAKEN"] = "承受傷害"
 L["STRING_ATTRIBUTE_ENERGY"] = "能量"
+--Translation missing 
+-- L["STRING_ATTRIBUTE_ENERGY_ALTERNATEPOWER"] = ""
 L["STRING_ATTRIBUTE_ENERGY_ENERGY"] = "能量生成"
 L["STRING_ATTRIBUTE_ENERGY_MANA"] = "法力恢復"
 L["STRING_ATTRIBUTE_ENERGY_RAGE"] = "怒氣生成"
@@ -51,6 +53,8 @@ L["STRING_ATTRIBUTE_ENERGY_RAGE"] = "怒氣生成"
 -- L["STRING_ATTRIBUTE_ENERGY_RESOURCES"] = ""
 L["STRING_ATTRIBUTE_ENERGY_RUNEPOWER"] = "符能生成"
 L["STRING_ATTRIBUTE_HEAL"] = "治療"
+--Translation missing 
+-- L["STRING_ATTRIBUTE_HEAL_ABSORBED"] = ""
 L["STRING_ATTRIBUTE_HEAL_DONE"] = "造成治療"
 L["STRING_ATTRIBUTE_HEAL_ENEMY"] = "敵方的治療"
 L["STRING_ATTRIBUTE_HEAL_HPS"] = "每秒治療"
@@ -135,6 +139,8 @@ L["STRING_CUSTOM_CREATED"] = "新視窗已建立"
 --Translation missing 
 -- L["STRING_CUSTOM_DAMAGEONANYMARKEDTARGET_DESC"] = ""
 --Translation missing 
+-- L["STRING_CUSTOM_DAMAGEONSHIELDS"] = ""
+--Translation missing 
 -- L["STRING_CUSTOM_DAMAGEONSKULL"] = ""
 --Translation missing 
 -- L["STRING_CUSTOM_DAMAGEONSKULL_DESC"] = ""
@@ -145,6 +151,8 @@ L["STRING_CUSTOM_DONE"] = "完畢"
 -- L["STRING_CUSTOM_DTBS"] = ""
 --Translation missing 
 -- L["STRING_CUSTOM_DTBS_DESC"] = ""
+--Translation missing 
+-- L["STRING_CUSTOM_DYNAMICOVERAL"] = ""
 L["STRING_CUSTOM_EDIT"] = "編輯"
 L["STRING_CUSTOM_EDIT_SEARCH_CODE"] = "編輯搜尋代碼"
 L["STRING_CUSTOM_EDIT_TOOLTIP_CODE"] = "編輯提示代碼"
@@ -237,6 +245,88 @@ L["STRING_FAIL_ATTACKS"] = "攻擊失敗"
 --Translation missing 
 -- L["STRING_FEEDBACK_WOWI_DESC"] = ""
 L["STRING_FIGHTNUMBER"] = "戰鬥 #"
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_ALLSPELLS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_ALLSPELLS_DESC"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_BWTIMERS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_BWTIMERS_DESC"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_DBMTIMERS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_DBMTIMERS_DESC"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_ENCOUNTERSPELLS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_ENCOUNTERSPELLS_DESC"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_ENEMIES"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_ENEMIES_DESC"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_PETS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_PETS_DESC"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_PLAYERS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_PLAYERS_DESC"] = ""
+--Translation missing 
+-- L["STRING_FORGE_ENABLEPLUGINS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_BARTEXT"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_CASTERNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_ENCOUNTERNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_ENEMYNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_OWNERNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_PETNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_PLAYERNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_SPELLNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_BARTEXT"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_CASTER"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_CLASS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_CREATEAURA"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_ENCOUNTERID"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_ENCOUNTERNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_EVENT"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_FLAG"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_GUID"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_ICON"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_ID"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_INDEX"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_NAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_NPCID"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_OWNER"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_SCHOOL"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_SPELLID"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_TIMER"] = ""
 L["STRING_FREEZE"] = "這個階段此片段不可用"
 L["STRING_FROM"] = "從"
 L["STRING_GERAL"] = "一般"

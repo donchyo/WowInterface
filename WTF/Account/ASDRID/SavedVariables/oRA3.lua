@@ -24,17 +24,25 @@ oRA3DB = {
 				},
 			},
 		},
-		["GuildRepairs"] = {
-		},
 		["Alerts"] = {
+		},
+		["Difficulty"] = {
+			["profiles"] = {
+				["Default"] = {
+					["prevRaidDifficulty"] = 14,
+				},
+				["Skullflower"] = {
+					["prevRaidDifficulty"] = 16,
+				},
+			},
 		},
 		["Rings"] = {
 			["profiles"] = {
 				["Default"] = {
 					["scale"] = 0.8,
-					["spacing"] = -8,
-					["showDisplay"] = false,
 					["lockDisplay"] = true,
+					["showDisplay"] = false,
+					["spacing"] = -8,
 				},
 				["Skullflower"] = {
 					["showDisplay"] = false,
@@ -55,8 +63,65 @@ oRA3DB = {
 					},
 					["displays"] = {
 						["Default"] = {
+							["barColorBG"] = {
+								0.5, -- [1]
+								0.5, -- [2]
+								0.5, -- [3]
+								0.3, -- [4]
+							},
+							["barLabelOutline"] = "NONE",
+							["barHeight"] = 14,
+							["barLabelAlign"] = "LEFT",
+							["barLabelFont"] = "Friz Quadrata TT",
 							["showDisplay"] = false,
+							["barDurationAlign"] = "RIGHT",
+							["barTexture"] = "oRA3",
+							["barColor"] = {
+								0.25, -- [1]
+								0.33, -- [2]
+								0.68, -- [3]
+								1, -- [4]
+							},
+							["barDurationOutline"] = "NONE",
+							["barDurationColor"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["barLabelClassColor"] = false,
+							["barLabelFontSize"] = 10,
+							["barLabelColor"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["barShowStatus"] = false,
+							["barGrowUp"] = false,
+							["barDurationClassColor"] = false,
+							["barDurationFont"] = "Friz Quadrata TT",
+							["barFill"] = false,
+							["barShowUnit"] = true,
+							["barShowIcon"] = true,
+							["showOffCooldown"] = false,
+							["groupSpells"] = false,
+							["barColorStatus"] = true,
+							["barStyle"] = "Default",
+							["barGap"] = 0,
+							["barStatusColor"] = {
+								0.8, -- [1]
+								0.8, -- [2]
+								0.8, -- [3]
+								0.2, -- [4]
+							},
+							["barClassColor"] = true,
+							["barShowDuration"] = true,
+							["barScale"] = 1,
 							["type"] = "Bars",
+							["barDurationFontSize"] = 10,
+							["barShorthand"] = false,
+							["barShowSpell"] = true,
 						},
 					},
 				},
@@ -68,25 +133,74 @@ oRA3DB = {
 					},
 					["displays"] = {
 						["Default"] = {
+							["barColorBG"] = {
+								0.5, -- [1]
+								0.5, -- [2]
+								0.5, -- [3]
+								0.3, -- [4]
+							},
+							["barLabelOutline"] = "NONE",
+							["barHeight"] = 14,
+							["barLabelAlign"] = "LEFT",
+							["barLabelFont"] = "Friz Quadrata TT",
+							["barDurationAlign"] = "RIGHT",
+							["barTexture"] = "oRA3",
+							["barColor"] = {
+								0.25, -- [1]
+								0.33, -- [2]
+								0.68, -- [3]
+								1, -- [4]
+							},
+							["barDurationOutline"] = "NONE",
+							["barDurationColor"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["barLabelClassColor"] = false,
+							["barLabelFontSize"] = 10,
+							["barLabelColor"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["barShowStatus"] = false,
+							["barGrowUp"] = false,
+							["barDurationClassColor"] = false,
+							["barDurationFont"] = "Friz Quadrata TT",
+							["barFill"] = false,
+							["barShowUnit"] = true,
+							["barShowIcon"] = true,
+							["showOffCooldown"] = false,
+							["groupSpells"] = false,
+							["barColorStatus"] = true,
+							["barStyle"] = "Default",
+							["barGap"] = 0,
+							["barShowSpell"] = true,
+							["barClassColor"] = true,
+							["barShorthand"] = false,
+							["barScale"] = 1,
 							["type"] = "Bars",
+							["barDurationFontSize"] = 10,
+							["barShowDuration"] = true,
+							["barStatusColor"] = {
+								0.8, -- [1]
+								0.8, -- [2]
+								0.8, -- [3]
+								0.2, -- [4]
+							},
 						},
 					},
 				},
 			},
 		},
-		["Consumables"] = {
-		},
 		["Tanks"] = {
 		},
-		["Difficulty"] = {
-			["profiles"] = {
-				["Default"] = {
-					["prevRaidDifficulty"] = 14,
-				},
-				["Skullflower"] = {
-					["prevRaidDifficulty"] = 16,
-				},
-			},
+		["Consumables"] = {
+		},
+		["GuildRepairs"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -98,21 +212,21 @@ oRA3DB = {
 		["Zolution - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
+		["Krixiyo - Twisting Nether"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
-		["Krixiyo - Lightning's Blade"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
-		["Lilgaykrixi - Kazzak"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
 		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Default",
 		["Líttle - Grim Batol"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
+		["Lilgaykrixi - Kazzak"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
-		["Krixiyo - Twisting Nether"] = "Default",
+		["Krixiyo - Lightning's Blade"] = "Default",
+		["Krixidh - Grim Batol"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -120,21 +234,21 @@ oRA3DB = {
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148,
-					["Width"] = 199.999938964844,
-					["PosY"] = 498.753393291583,
 					["PosX"] = 863.489145234969,
+					["PosY"] = 498.753393291583,
+					["Width"] = 199.999938964844,
 				},
 				["oRA3ReadyCheck"] = {
 					["Height"] = 225,
-					["Width"] = 320.000061035156,
-					["PosY"] = 764.297659522432,
 					["PosX"] = 363.555617978833,
+					["PosY"] = 764.297659522432,
+					["Width"] = 320.000061035156,
 				},
 				["oRA3BattleResMonitor"] = {
 					["Height"] = 29.9999942779541,
-					["Width"] = 140.000015258789,
-					["PosY"] = 491.027460966856,
 					["PosX"] = 5.18955085339837,
+					["PosY"] = 491.027460966856,
+					["Width"] = 140.000015258789,
 				},
 				["oRA3RingsFrame"] = {
 					["PosY"] = 221.687045826158,
@@ -144,32 +258,32 @@ oRA3DB = {
 			["lastSelectedPanel"] = "Checks",
 		},
 		["Skullflower"] = {
-			["lastSelectedList"] = 1,
+			["lastSelectedPanel"] = "Promote",
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148.000015258789,
-					["Width"] = 200,
-					["PosY"] = 338.666679032642,
 					["PosX"] = 1012.9780646218,
+					["PosY"] = 338.666679032642,
+					["Width"] = 200,
 				},
 				["oRA3ReadyCheck"] = {
 					["Height"] = 127.999923706055,
-					["Width"] = 320.000183105469,
-					["PosY"] = 703.64453813764,
 					["PosX"] = 273.066267903669,
+					["PosY"] = 703.64453813764,
+					["Width"] = 320.000183105469,
 				},
 				["oRA3BattleResMonitor"] = {
 					["Height"] = 29.9999942779541,
-					["Width"] = 140.000015258789,
-					["PosY"] = 466.400167512882,
 					["PosX"] = 0,
+					["PosY"] = 466.400167512882,
+					["Width"] = 140.000015258789,
 				},
 				["oRA3RingsFrame"] = {
 					["PosY"] = 431.176732112363,
 					["PosX"] = 1028.80052461621,
 				},
 			},
-			["lastSelectedPanel"] = "Promote",
+			["lastSelectedList"] = 1,
 		},
 	},
 }

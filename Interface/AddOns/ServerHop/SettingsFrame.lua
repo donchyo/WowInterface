@@ -304,7 +304,7 @@ aboutTab.stringCont = aboutTab:CreateFontString("rolestring", "OVERLAY", "GameFo
 aboutTab.stringCont:SetPoint("TOPLEFT",15,-35)
 aboutTab.stringCont:SetJustifyH("LEFT")
 aboutTab.stringCont:SetTextColor(1,1,1,1)
-aboutTab.stringCont:SetText(BNet_GetClientEmbeddedTexture("Battlenet", 14).."ChronoAS#2758 (EU)")
+aboutTab.stringCont:SetText(BNet_GetClientEmbeddedTexture("Battlenet", 14).."Chronoexplosion")
 
 aboutTab.string = aboutTab:CreateFontString("rolestring", "OVERLAY", "GameFontNormal")
 aboutTab.string:SetPoint("TOPLEFT",15,-55)

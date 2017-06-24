@@ -40,7 +40,7 @@ bind ALT-R CLICK BT4Button23:LeftButton
 bind ALT-´ CLICK BT4Button24:LeftButton
 bind § CLICK BT4Button36:LeftButton
 bind + CLICK BT4Button33:LeftButton
-bind SHIFT-9 NONE
+bind SHIFT-9 CLICK BT4Button73:LeftButton
 bind ALT-9 CLICK BT4Button82:LeftButton
 bind BUTTON5 CLICK BT4Button78:LeftButton
 bind ALT-6 ACTIONBUTTON11

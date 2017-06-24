@@ -1,77 +1,33 @@
 
 ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/g du kan nog porta in och ut", -- [1]
+		"/g jag skulel itne göra det", -- [2]
+		"/g xd", -- [3]
+		"/g ja", -- [4]
+		"/g tyy", -- [5]
+		"/g oj", -- [6]
+		"/g ne", -- [7]
+		"/g det gick ju uselt", -- [8]
+		"/g ett nytt trait", -- [9]
+		"/g det är ju bra", -- [10]
+		" alteast its alot of ap for the alts", -- [11]
+		"/p ????", -- [12]
+		"/p he can get the ring procc aswell", -- [13]
+		"/p so there is a larger window for executes", -- [14]
+		"/p did you not play mop tim?", -- [15]
+		"/p i guess we just did things diffferent ways then", -- [16]
+		"/p nice", -- [17]
+		"/g det är ju inge vidare", -- [18]
+		"/autorepair", -- [19]
+		"/autorepair guild", -- [20]
+	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatLog"] = {
-		["1497669659.62"] = {
-			"57 equipped :P", -- [1]
-			"Vicserdh-GrimBatol", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vicserdh", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			56, -- [11]
-			"Player-1303-087FECEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_GUILD", -- [20]
-		},
-		["1497669671.829"] = {
-			"det är ju inge vidare", -- [1]
-			"Donch-GrimBatol", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donch", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			60, -- [11]
-			"Player-1303-0387FD7B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			nil, -- [18]
-			nil, -- [19]
-			"CHAT_MSG_GUILD", -- [20]
-		},
-	},
-	["ChatEditHistory"] = {
-		"/g eh", -- [1]
-		"/g nej", -- [2]
-		"/g du kan nog porta in och ut", -- [3]
-		"/g jag skulel itne göra det", -- [4]
-		"/g xd", -- [5]
-		"/g ja", -- [6]
-		"/g tyy", -- [7]
-		"/g oj", -- [8]
-		"/g ne", -- [9]
-		"/g det gick ju uselt", -- [10]
-		"/g ett nytt trait", -- [11]
-		"/g det är ju bra", -- [12]
-		" alteast its alot of ap for the alts", -- [13]
-		"/p ????", -- [14]
-		"/p he can get the ring procc aswell", -- [15]
-		"/p so there is a larger window for executes", -- [16]
-		"/p did you not play mop tim?", -- [17]
-		"/p i guess we just did things diffferent ways then", -- [18]
-		"/p nice", -- [19]
-		"/g det är ju inge vidare", -- [20]
 	},
 }

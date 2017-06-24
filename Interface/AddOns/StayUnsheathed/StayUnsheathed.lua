@@ -30,7 +30,7 @@ function StayUnsheathed:OnInitialize()
   StayUnsheathed.db = LibStub("AceDB-3.0"):New("StayUnsheathedDB", defaults)
   registerEvents(events)
   registerChatCommands()
-  print("StayUnsheathed for WoW 7.1 Loaded! Type /su help for options.")
+  print("StayUnsheathed for WoW 7.2 Loaded! Type /su help for options.")
   print("Created by Zordiak Darkspear-US Alliance. Come by sometime and say hi :)")
 end
 
@@ -130,7 +130,8 @@ function unsheathWeapon()
 end
 
 function sheathConditionsAreMet()
-	return isStayUnsheathedEnabled() and isSpecEnabled() and isCityEnabled() and not InCombatLockdown()
+	return isStayUnsheathedEnabled() and isSpecEnabled() and isCityEnabled() 
+          and not InCombatLockdown() and not inVehicle() and not inPseudoVehicle() and not isSwimming()
 end
 
 function isStayUnsheathedEnabled()
@@ -143,6 +144,21 @@ function isCityEnabled()
   else
     return true
   end
+end
+
+function inVehicle()
+  return UnitInVehicle("player")
+end
+
+function inPseudoVehicle()
+   return UnitBuff("player", "Rocfeather Skyhorn Kite") or 
+          UnitBuff("player", "Goblin Glider") or 
+          UnitBuff("player", "Zen Flight")
+end
+
+function isSwimming()
+  currentSpeed = GetUnitSpeed("player")
+  return IsSwimming() and currentSpeed > 0
 end
 
 function StayUnsheathed:slashfunc(input)

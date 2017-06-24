@@ -38,12 +38,16 @@ L["STRING_ATTRIBUTE_DAMAGE_FRAGS"] = "Todesstöße"
 L["STRING_ATTRIBUTE_DAMAGE_FRIENDLYFIRE"] = "Eigenbeschuss"
 L["STRING_ATTRIBUTE_DAMAGE_TAKEN"] = "Erlittener Schaden"
 L["STRING_ATTRIBUTE_ENERGY"] = "Ressourcen"
+--Translation missing 
+-- L["STRING_ATTRIBUTE_ENERGY_ALTERNATEPOWER"] = ""
 L["STRING_ATTRIBUTE_ENERGY_ENERGY"] = "Erzeugte Energie"
 L["STRING_ATTRIBUTE_ENERGY_MANA"] = "Wiederhergestelltes Mana"
 L["STRING_ATTRIBUTE_ENERGY_RAGE"] = "Erzeugte Wut"
 L["STRING_ATTRIBUTE_ENERGY_RESOURCES"] = "Andere Ressourcen"
 L["STRING_ATTRIBUTE_ENERGY_RUNEPOWER"] = "Erzeugte Runenmacht"
 L["STRING_ATTRIBUTE_HEAL"] = "Heilung"
+--Translation missing 
+-- L["STRING_ATTRIBUTE_HEAL_ABSORBED"] = ""
 L["STRING_ATTRIBUTE_HEAL_DONE"] = "Gewirkte Heilung"
 L["STRING_ATTRIBUTE_HEAL_ENEMY"] = "Gegnerische Gewirkte Heilung"
 L["STRING_ATTRIBUTE_HEAL_HPS"] = "HPS"
@@ -105,6 +109,8 @@ L["STRING_CUSTOM_CREATE"] = "Erstellen"
 L["STRING_CUSTOM_CREATED"] = "Die neue Anzeige wurde erstellt."
 L["STRING_CUSTOM_DAMAGEONANYMARKEDTARGET"] = "Schaden auf anderweitig markierte Ziele"
 L["STRING_CUSTOM_DAMAGEONANYMARKEDTARGET_DESC"] = "Zeigt den Schaden, der anderweitig markierten Zielen zugefügt wurde."
+--Translation missing 
+-- L["STRING_CUSTOM_DAMAGEONSHIELDS"] = ""
 L["STRING_CUSTOM_DAMAGEONSKULL"] = "Schaden auf mit dem Totenschädel markierte Ziele"
 L["STRING_CUSTOM_DAMAGEONSKULL_DESC"] = "Zeigt den Schaden, der mit Totenkopf markierten Zielen zugefügt wurde"
 L["STRING_CUSTOM_DESCRIPTION"] = "Beschreibung:"
@@ -112,6 +118,8 @@ L["STRING_CUSTOM_DESCRIPTION_DESC"] = "Beschreibung, was diese Anzeige macht."
 L["STRING_CUSTOM_DONE"] = "Fertig"
 L["STRING_CUSTOM_DTBS"] = "Erlittener Schaden von Zauber"
 L["STRING_CUSTOM_DTBS_DESC"] = "Zeigt den Schaden von feindlichen Zaubern gegen deine Gruppe. "
+--Translation missing 
+-- L["STRING_CUSTOM_DYNAMICOVERAL"] = ""
 L["STRING_CUSTOM_EDIT"] = "Bearbeiten"
 L["STRING_CUSTOM_EDIT_SEARCH_CODE"] = "Suchcode bearbeiten"
 L["STRING_CUSTOM_EDIT_TOOLTIP_CODE"] = "Tooltip-Code bearbeiten"
@@ -197,6 +205,64 @@ L["STRING_FEEDBACK_PREFERED_SITE"] = "Wähle deine bevorzugte Community-Seite:"
 L["STRING_FEEDBACK_SEND_FEEDBACK"] = "Sende eine Rückmeldung"
 L["STRING_FEEDBACK_WOWI_DESC"] = "Schreibe ein Kommentar auf der Details!-Projektseite."
 L["STRING_FIGHTNUMBER"] = "Kampf #"
+L["STRING_FORGE_BUTTON_ALLSPELLS"] = "Alle Zauber"
+L["STRING_FORGE_BUTTON_ALLSPELLS_DESC"] = "Listet alle Zauber von Spielern und NSCs."
+L["STRING_FORGE_BUTTON_BWTIMERS"] = "BigWigs-Timer"
+L["STRING_FORGE_BUTTON_BWTIMERS_DESC"] = "Listet Timer von BigWigs auf"
+L["STRING_FORGE_BUTTON_DBMTIMERS"] = "DBM-Timer"
+L["STRING_FORGE_BUTTON_DBMTIMERS_DESC"] = "Listet Timer von Deadly Boss Mods auf"
+L["STRING_FORGE_BUTTON_ENCOUNTERSPELLS"] = "Bosszauber"
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_ENCOUNTERSPELLS_DESC"] = ""
+L["STRING_FORGE_BUTTON_ENEMIES"] = "Gegner"
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_ENEMIES_DESC"] = ""
+L["STRING_FORGE_BUTTON_PETS"] = "Begleiter"
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_PETS_DESC"] = ""
+L["STRING_FORGE_BUTTON_PLAYERS"] = "Spieler"
+--Translation missing 
+-- L["STRING_FORGE_BUTTON_PLAYERS_DESC"] = ""
+--Translation missing 
+-- L["STRING_FORGE_ENABLEPLUGINS"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_BARTEXT"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_CASTERNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_FILTER_ENCOUNTERNAME"] = ""
+L["STRING_FORGE_FILTER_ENEMYNAME"] = "Gegnername"
+--Translation missing 
+-- L["STRING_FORGE_FILTER_OWNERNAME"] = ""
+L["STRING_FORGE_FILTER_PETNAME"] = "Begleitername"
+L["STRING_FORGE_FILTER_PLAYERNAME"] = "Spielername"
+--Translation missing 
+-- L["STRING_FORGE_FILTER_SPELLNAME"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_BARTEXT"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_CASTER"] = ""
+L["STRING_FORGE_HEADER_CLASS"] = "Klasse"
+L["STRING_FORGE_HEADER_CREATEAURA"] = "Aura erstellen"
+--Translation missing 
+-- L["STRING_FORGE_HEADER_ENCOUNTERID"] = ""
+--Translation missing 
+-- L["STRING_FORGE_HEADER_ENCOUNTERNAME"] = ""
+L["STRING_FORGE_HEADER_EVENT"] = "Ereignis"
+--Translation missing 
+-- L["STRING_FORGE_HEADER_FLAG"] = ""
+L["STRING_FORGE_HEADER_GUID"] = "GUID"
+--Translation missing 
+-- L["STRING_FORGE_HEADER_ICON"] = ""
+L["STRING_FORGE_HEADER_ID"] = "ID"
+L["STRING_FORGE_HEADER_INDEX"] = "Index"
+L["STRING_FORGE_HEADER_NAME"] = "Name"
+L["STRING_FORGE_HEADER_NPCID"] = "NSC-ID"
+L["STRING_FORGE_HEADER_OWNER"] = "Besitzer"
+--Translation missing 
+-- L["STRING_FORGE_HEADER_SCHOOL"] = ""
+L["STRING_FORGE_HEADER_SPELLID"] = "Zauber-ID"
+L["STRING_FORGE_HEADER_TIMER"] = "Timer"
 L["STRING_FREEZE"] = "Dieses Segment ist im Moment nicht verfügbar "
 L["STRING_FROM"] = "Von"
 L["STRING_GERAL"] = "Allgemein"

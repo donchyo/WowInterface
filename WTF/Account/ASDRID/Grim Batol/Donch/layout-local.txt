@@ -11,8 +11,8 @@ FrameLevel: 1
 Anchor: TOPLEFT
 X: 16
 Y: -116
-W: 444
-H: 444
+W: 338
+H: 424
 Frame: QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT

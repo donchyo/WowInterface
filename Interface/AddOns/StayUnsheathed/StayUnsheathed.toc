@@ -1,8 +1,8 @@
-## Interface: 70100
+## Interface: 70200
 ## Title: |cFFFF7D0AStayUnsheathed|r 
 ## Notes: We keep your sword out for everyone to see.
 ## Author: Zordiak Darkspear-US
-## Version: 1.0.3
+## Version: 1.0.4
 ## SavedVariables: StayUnsheathedDB
 
 #@no-lib-strip@

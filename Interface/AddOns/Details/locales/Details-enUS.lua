@@ -40,12 +40,14 @@ L["STRING_ATTRIBUTE_DAMAGE_FRAGS"] = "Frags"
 L["STRING_ATTRIBUTE_DAMAGE_FRIENDLYFIRE"] = "Friendly Fire"
 L["STRING_ATTRIBUTE_DAMAGE_TAKEN"] = "Damage Taken"
 L["STRING_ATTRIBUTE_ENERGY"] = "Resources"
+L["STRING_ATTRIBUTE_ENERGY_ALTERNATEPOWER"] = "Alternate Power"
 L["STRING_ATTRIBUTE_ENERGY_ENERGY"] = "Energy Generated"
 L["STRING_ATTRIBUTE_ENERGY_MANA"] = "Mana Restored"
 L["STRING_ATTRIBUTE_ENERGY_RAGE"] = "Rage Generated"
 L["STRING_ATTRIBUTE_ENERGY_RESOURCES"] = "Other Resources"
 L["STRING_ATTRIBUTE_ENERGY_RUNEPOWER"] = "Runic Power Generated"
 L["STRING_ATTRIBUTE_HEAL"] = "Heal"
+L["STRING_ATTRIBUTE_HEAL_ABSORBED"] = "Heal Absorbed"
 L["STRING_ATTRIBUTE_HEAL_DONE"] = "Healing Done"
 L["STRING_ATTRIBUTE_HEAL_ENEMY"] = "Enemy Healing Done"
 L["STRING_ATTRIBUTE_HEAL_HPS"] = "HPS"
@@ -107,6 +109,7 @@ L["STRING_CUSTOM_CREATE"] = "Create"
 L["STRING_CUSTOM_CREATED"] = "The new display has been created."
 L["STRING_CUSTOM_DAMAGEONANYMARKEDTARGET"] = "Damage On Other Marked Targets"
 L["STRING_CUSTOM_DAMAGEONANYMARKEDTARGET_DESC"] = "Show the amount of damage applied on targets marked with any other mark."
+L["STRING_CUSTOM_DAMAGEONSHIELDS"] = "Damage on Shields"
 L["STRING_CUSTOM_DAMAGEONSKULL"] = "Damage On Skull Marked Targets"
 L["STRING_CUSTOM_DAMAGEONSKULL_DESC"] = "Show the amount of damage applied on targets marked with skull."
 L["STRING_CUSTOM_DESCRIPTION"] = "Desc:"
@@ -114,6 +117,7 @@ L["STRING_CUSTOM_DESCRIPTION_DESC"] = "Description about what this display does.
 L["STRING_CUSTOM_DONE"] = "Done"
 L["STRING_CUSTOM_DTBS"] = "Damage Taken By Spell"
 L["STRING_CUSTOM_DTBS_DESC"] = "Show the damage of enemy spells against your group."
+L["STRING_CUSTOM_DYNAMICOVERAL"] = "Dynamic Overall Damage"
 L["STRING_CUSTOM_EDIT"] = "Edit"
 L["STRING_CUSTOM_EDIT_SEARCH_CODE"] = "Edit Search Code"
 L["STRING_CUSTOM_EDIT_TOOLTIP_CODE"] = "Edit Tooltip Code"
@@ -199,6 +203,47 @@ L["STRING_FEEDBACK_PREFERED_SITE"] = "Choose your preferred community site:"
 L["STRING_FEEDBACK_SEND_FEEDBACK"] = "Send Feedback"
 L["STRING_FEEDBACK_WOWI_DESC"] = "Leave a comment on Details! project page."
 L["STRING_FIGHTNUMBER"] = "Fight #"
+L["STRING_FORGE_BUTTON_ALLSPELLS"] = "All Spells"
+L["STRING_FORGE_BUTTON_ALLSPELLS_DESC"] = "List all spells from players and npcs."
+L["STRING_FORGE_BUTTON_BWTIMERS"] = "BigWigs Timers"
+L["STRING_FORGE_BUTTON_BWTIMERS_DESC"] = "List timers from BigWigs"
+L["STRING_FORGE_BUTTON_DBMTIMERS"] = "DBM Timers"
+L["STRING_FORGE_BUTTON_DBMTIMERS_DESC"] = "List timers from Deadly Boss Mods"
+L["STRING_FORGE_BUTTON_ENCOUNTERSPELLS"] = "Boss Spells"
+L["STRING_FORGE_BUTTON_ENCOUNTERSPELLS_DESC"] = "List only spells from raid and dungeon encounters."
+L["STRING_FORGE_BUTTON_ENEMIES"] = "Enemies"
+L["STRING_FORGE_BUTTON_ENEMIES_DESC"] = "List enemies from the current combat."
+L["STRING_FORGE_BUTTON_PETS"] = "Pets"
+L["STRING_FORGE_BUTTON_PETS_DESC"] = "List pets from the current combat."
+L["STRING_FORGE_BUTTON_PLAYERS"] = "Players"
+L["STRING_FORGE_BUTTON_PLAYERS_DESC"] = "List players from the current combat."
+L["STRING_FORGE_ENABLEPLUGINS"] = "\"Please turn on Details! plugins with Raid Names on the Escape Menu > AddOns, e.g. Details: Tomb of Sargeras.\""
+L["STRING_FORGE_FILTER_BARTEXT"] = "Bar Name"
+L["STRING_FORGE_FILTER_CASTERNAME"] = "Caster Name"
+L["STRING_FORGE_FILTER_ENCOUNTERNAME"] = "Encounter Name"
+L["STRING_FORGE_FILTER_ENEMYNAME"] = "Enemy Name"
+L["STRING_FORGE_FILTER_OWNERNAME"] = "Owner Name"
+L["STRING_FORGE_FILTER_PETNAME"] = "Pet Name"
+L["STRING_FORGE_FILTER_PLAYERNAME"] = "Player Name"
+L["STRING_FORGE_FILTER_SPELLNAME"] = "Spell Name"
+L["STRING_FORGE_HEADER_BARTEXT"] = "Bar Text"
+L["STRING_FORGE_HEADER_CASTER"] = "Caster"
+L["STRING_FORGE_HEADER_CLASS"] = "Class"
+L["STRING_FORGE_HEADER_CREATEAURA"] = "Create Aura"
+L["STRING_FORGE_HEADER_ENCOUNTERID"] = "Encounter ID"
+L["STRING_FORGE_HEADER_ENCOUNTERNAME"] = "Encounter Name"
+L["STRING_FORGE_HEADER_EVENT"] = "Event"
+L["STRING_FORGE_HEADER_FLAG"] = "Flag"
+L["STRING_FORGE_HEADER_GUID"] = "GUID"
+L["STRING_FORGE_HEADER_ICON"] = "Icon"
+L["STRING_FORGE_HEADER_ID"] = "ID"
+L["STRING_FORGE_HEADER_INDEX"] = "Index"
+L["STRING_FORGE_HEADER_NAME"] = "Name"
+L["STRING_FORGE_HEADER_NPCID"] = "NpcID"
+L["STRING_FORGE_HEADER_OWNER"] = "Owner"
+L["STRING_FORGE_HEADER_SCHOOL"] = "School"
+L["STRING_FORGE_HEADER_SPELLID"] = "SpellID"
+L["STRING_FORGE_HEADER_TIMER"] = "Timer"
 L["STRING_FREEZE"] = "This segment is not available at this moment"
 L["STRING_FROM"] = "From"
 L["STRING_GERAL"] = "General"
@@ -566,6 +611,8 @@ L["STRING_OPTIONS_DATABROKER_TEXT1_DESC"] = [=[|cFFFFFF00{dmg}|r: player damage 
 
 |cFFFFFF00{dps}|r: player effective damage per second.
 
+|cFFFFFF00{rdps}|r: raid effective damage per second.
+
 |cFFFFFF00{dpos}|r: rank position between members of the raid or party group damage.
 
 |cFFFFFF00{ddiff}|r: damage difference between you and the first place position.
@@ -573,6 +620,8 @@ L["STRING_OPTIONS_DATABROKER_TEXT1_DESC"] = [=[|cFFFFFF00{dmg}|r: player damage 
 |cFFFFFF00{heal}|r: player healing done.
 
 |cFFFFFF00{hps}|r: player effective healing per second.
+
+|cFFFFFF00{rhps}|r: raid effective healing per second.
 
 |cFFFFFF00{hpos}|r: rank position between members of the raid or party group healing.
 

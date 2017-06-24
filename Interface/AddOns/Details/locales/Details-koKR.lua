@@ -38,12 +38,14 @@ L["STRING_ATTRIBUTE_DAMAGE_FRAGS"] = "죽임"
 L["STRING_ATTRIBUTE_DAMAGE_FRIENDLYFIRE"] = "아군에게 준 피해"
 L["STRING_ATTRIBUTE_DAMAGE_TAKEN"] = "받은 피해"
 L["STRING_ATTRIBUTE_ENERGY"] = "자원"
+L["STRING_ATTRIBUTE_ENERGY_ALTERNATEPOWER"] = "보조 자원"
 L["STRING_ATTRIBUTE_ENERGY_ENERGY"] = "기력 생성"
 L["STRING_ATTRIBUTE_ENERGY_MANA"] = "마나 회복"
 L["STRING_ATTRIBUTE_ENERGY_RAGE"] = "분노 생성"
 L["STRING_ATTRIBUTE_ENERGY_RESOURCES"] = "기타 자원"
 L["STRING_ATTRIBUTE_ENERGY_RUNEPOWER"] = "룬 마력 생성"
 L["STRING_ATTRIBUTE_HEAL"] = "치유"
+L["STRING_ATTRIBUTE_HEAL_ABSORBED"] = "흡수한 치유"
 L["STRING_ATTRIBUTE_HEAL_DONE"] = "치유량"
 L["STRING_ATTRIBUTE_HEAL_ENEMY"] = "적의 치유량"
 L["STRING_ATTRIBUTE_HEAL_HPS"] = "HPS"
@@ -105,6 +107,7 @@ L["STRING_CUSTOM_CREATE"] = "만들기"
 L["STRING_CUSTOM_CREATED"] = "새 디스플레이가 만들어졌습니다."
 L["STRING_CUSTOM_DAMAGEONANYMARKEDTARGET"] = "기타 징표 대상에게 준 피해"
 L["STRING_CUSTOM_DAMAGEONANYMARKEDTARGET_DESC"] = "기타 다른 징표가 지정된 대상에게 준 피해량을 표시합니다."
+L["STRING_CUSTOM_DAMAGEONSHIELDS"] = "보호막에 준 피해"
 L["STRING_CUSTOM_DAMAGEONSKULL"] = "해골 징표 대상에게 준 피해"
 L["STRING_CUSTOM_DAMAGEONSKULL_DESC"] = "해골 징표로 지정된 대상에게 준 피해량을 표시합니다."
 L["STRING_CUSTOM_DESCRIPTION"] = "설명:"
@@ -112,6 +115,7 @@ L["STRING_CUSTOM_DESCRIPTION_DESC"] = "이 디스플레이의 역할에 대한 �
 L["STRING_CUSTOM_DONE"] = "완료"
 L["STRING_CUSTOM_DTBS"] = "주문에 의해 받은 피해"
 L["STRING_CUSTOM_DTBS_DESC"] = "적 주문이 당신의 파티에 입힌 피해량을 표시합니다."
+L["STRING_CUSTOM_DYNAMICOVERAL"] = "유동적 종합 피해"
 L["STRING_CUSTOM_EDIT"] = "편집"
 L["STRING_CUSTOM_EDIT_SEARCH_CODE"] = "검색 코드 편집"
 L["STRING_CUSTOM_EDIT_TOOLTIP_CODE"] = "툴팁 코드 편집"
@@ -135,7 +139,7 @@ L["STRING_CUSTOM_NAME"] = "이름:"
 L["STRING_CUSTOM_NAME_DESC"] = "새로운 사용자 설정 디스플레이의 이름을 입력하세요."
 L["STRING_CUSTOM_NEW"] = "사용자 설정 디스플레이 관리"
 L["STRING_CUSTOM_PASTE"] = "여기에 붙이기:"
-L["STRING_CUSTOM_POT_DEFAULT"] = "물약 사용"
+L["STRING_CUSTOM_POT_DEFAULT"] = "사용한 물약"
 L["STRING_CUSTOM_POT_DEFAULT_DESC"] = "전투 중에 물약을 사용한 공격대원을 표시합니다."
 L["STRING_CUSTOM_REMOVE"] = "제거"
 L["STRING_CUSTOM_REPORT"] = "(사용자 설정)"
@@ -150,18 +154,18 @@ L["STRING_CUSTOM_SKIN_TEXTURE_DESC"] = [=[.tga 파일의 이름입니다.
 |cFFFFFF00WoW/Interface/|r
 
 |cFFFFFF00중요:|r 파일을 만들기 전에 게임 클라이언트를 닫으세요. 이후부터는 /reload로 텍스쳐 파일에 저장된 변경 내용을 적용할 수 있습니다.]=]
-L["STRING_CUSTOM_SOURCE"] = "출처:"
-L["STRING_CUSTOM_SOURCE_DESC"] = [=[효과를 일으킨 대상입니다.
+L["STRING_CUSTOM_SOURCE"] = "행위자:"
+L["STRING_CUSTOM_SOURCE_DESC"] = [=[효과를 발생시킨 대상입니다.
 
-우측 버튼은 공격대 전투 중 npc들의 목록을 보여줍니다.]=]
+오른쪽에 있는 버튼은 공격대 전투 중 npc들의 목록을 표시합니다.]=]
 L["STRING_CUSTOM_SPELLID"] = "주문 Id:"
-L["STRING_CUSTOM_SPELLID_DESC"] = [=[추가적으로, 시전자가 대상에게 효과를 주는 데 사용한 주문입니다.
+L["STRING_CUSTOM_SPELLID_DESC"] = [=[추가적으로, 대상에게 효과를 적용하기 위해 행위자가 사용한 주문입니다.
 
-우측 버튼은 공격대 전투 중 주문의 목록을 표시합니다.]=]
+오른쪽에 있는 버튼은 공격대 전투 중 주문의 목록을 표시합니다.]=]
 L["STRING_CUSTOM_TARGET"] = "대상:"
-L["STRING_CUSTOM_TARGET_DESC"] = [=[출처의 대상입니다.
+L["STRING_CUSTOM_TARGET_DESC"] = [=[행위자의 대상입니다.
 
-우측 버튼은 공격대 전투 중 npc들의 목록을 보여줍니다.]=]
+오른쪽에 있는 버튼은 공격대 전투 중 npc들의 목록을 표시합니다.]=]
 L["STRING_CUSTOM_TEMPORARILY"] = " (|cFFFFC000임시|r)"
 L["STRING_DAMAGE"] = "피해"
 L["STRING_DAMAGE_DPS_IN"] = "받은 DPS:"
@@ -197,6 +201,47 @@ L["STRING_FEEDBACK_PREFERED_SITE"] = "선호하는 커뮤니티 사이트를 선
 L["STRING_FEEDBACK_SEND_FEEDBACK"] = "피드백 보내기"
 L["STRING_FEEDBACK_WOWI_DESC"] = "Details! 프로젝트 페이지에 의견을 남깁니다."
 L["STRING_FIGHTNUMBER"] = "전투 #"
+L["STRING_FORGE_BUTTON_ALLSPELLS"] = "모든 주문"
+L["STRING_FORGE_BUTTON_ALLSPELLS_DESC"] = "플레이어와 npc의 모든 주문을 나열합니다."
+L["STRING_FORGE_BUTTON_BWTIMERS"] = "BigWigs 타이머"
+L["STRING_FORGE_BUTTON_BWTIMERS_DESC"] = "BigWigs의 타이머를 나열합니다"
+L["STRING_FORGE_BUTTON_DBMTIMERS"] = "DBM 타이머"
+L["STRING_FORGE_BUTTON_DBMTIMERS_DESC"] = "Deadly Boss Mods의 타이머를 나열합니다"
+L["STRING_FORGE_BUTTON_ENCOUNTERSPELLS"] = "우두머리 주문"
+L["STRING_FORGE_BUTTON_ENCOUNTERSPELLS_DESC"] = "공격대와 던전 우두머리 전투 관련 주문만 나열합니다."
+L["STRING_FORGE_BUTTON_ENEMIES"] = "적"
+L["STRING_FORGE_BUTTON_ENEMIES_DESC"] = "현재 전투의 적을 나열합니다."
+L["STRING_FORGE_BUTTON_PETS"] = "소환수"
+L["STRING_FORGE_BUTTON_PETS_DESC"] = "현재 전투의 소환수를 나열합니다."
+L["STRING_FORGE_BUTTON_PLAYERS"] = "플레이어"
+L["STRING_FORGE_BUTTON_PLAYERS_DESC"] = "현재 전투의 플레이어를 나열합니다."
+L["STRING_FORGE_ENABLEPLUGINS"] = "\"게임 메뉴 > 애드온에서 공격대 이름의 Details! 플러그인을 켜주세요. 예. Details: Tomb of Sargeras.\""
+L["STRING_FORGE_FILTER_BARTEXT"] = "바 이름"
+L["STRING_FORGE_FILTER_CASTERNAME"] = "시전자 이름"
+L["STRING_FORGE_FILTER_ENCOUNTERNAME"] = "우두머리 전투 이름"
+L["STRING_FORGE_FILTER_ENEMYNAME"] = "적 이름"
+L["STRING_FORGE_FILTER_OWNERNAME"] = "소유자 이름"
+L["STRING_FORGE_FILTER_PETNAME"] = "소환수 이름"
+L["STRING_FORGE_FILTER_PLAYERNAME"] = "플레이어 이름"
+L["STRING_FORGE_FILTER_SPELLNAME"] = "주문 이름"
+L["STRING_FORGE_HEADER_BARTEXT"] = "바 문자"
+L["STRING_FORGE_HEADER_CASTER"] = "시전자"
+L["STRING_FORGE_HEADER_CLASS"] = "직업"
+L["STRING_FORGE_HEADER_CREATEAURA"] = "오라 만들기"
+L["STRING_FORGE_HEADER_ENCOUNTERID"] = "우두머리 전투 ID"
+L["STRING_FORGE_HEADER_ENCOUNTERNAME"] = "우두머리 전투 이름"
+L["STRING_FORGE_HEADER_EVENT"] = "이벤트"
+L["STRING_FORGE_HEADER_FLAG"] = "Flag"
+L["STRING_FORGE_HEADER_GUID"] = "GUID (글로벌 유닛 ID)"
+L["STRING_FORGE_HEADER_ICON"] = "아이콘"
+L["STRING_FORGE_HEADER_ID"] = "ID"
+L["STRING_FORGE_HEADER_INDEX"] = "순서"
+L["STRING_FORGE_HEADER_NAME"] = "이름"
+L["STRING_FORGE_HEADER_NPCID"] = "NpcID"
+L["STRING_FORGE_HEADER_OWNER"] = "소유자"
+L["STRING_FORGE_HEADER_SCHOOL"] = "속성"
+L["STRING_FORGE_HEADER_SPELLID"] = "주문ID"
+L["STRING_FORGE_HEADER_TIMER"] = "타이머"
 L["STRING_FREEZE"] = "이 세분화는 지금 사용할 수 없음"
 L["STRING_FROM"] = "출처:"
 L["STRING_GERAL"] = "일반"
@@ -414,17 +459,17 @@ L["STRING_OPTIONS_BARORIENTATION_DESC"] = "바가 채워질 방향입니다."
 L["STRING_OPTIONS_BARRIGHTTEXTCUSTOM"] = "사용자 설정 문자 활성화"
 L["STRING_OPTIONS_BARRIGHTTEXTCUSTOM_DESC"] = "활성화하면 입력 창에 입력된 형식으로 우측 문자가 표시됩니다."
 L["STRING_OPTIONS_BARRIGHTTEXTCUSTOM2"] = ""
-L["STRING_OPTIONS_BARRIGHTTEXTCUSTOM2_DESC"] = [=[|cFFFFFF00{data1}|r: 첫번째로 보여집니다, 일반적으로 이 숫자는 전체 양을 나타냅니다.
+L["STRING_OPTIONS_BARRIGHTTEXTCUSTOM2_DESC"] = [=[|cFFFFFF00{data1}|r: 첫번째로 반환된 숫자입니다, 일반적으로 이 숫자는 전체 양을 나타냅니다.
 
-|cFFFFFF00{data2}|r: 두번째로 표시됩니다, 대부분 초당 평균양을 나타냅니다.
+|cFFFFFF00{data2}|r: 두번째로 반환된 숫자입니다, 대부분 초당 평균양을 나타냅니다.
 
-|cFFFFFF00{data3}|r: 세번째로 표시됩니다, 보통 백분율입니다. 
+|cFFFFFF00{data3}|r: 세번째로 반환된 숫자입니다, 보통 백분율입니다. 
 
-|cFFFFFF00{func}|r: Lua 기능을 실행해서 나온 값을 문자에 추가합니다.
+|cFFFFFF00{func}|r: 사용자 설정 Lua 함수를 실행해서 나온 반환 값을 문자에 추가합니다.
 예제: 
 {func return '안녕 아제로스'}
 
-|cFFFFFF00Scape Sequences|r: 색상이나 텍스쳐를 추가합니다. 자세한 정보는 'UI escape sequences' 검색하세요.]=]
+|cFFFFFF00Escape Sequences|r: 색상 변경이나 텍스쳐를 추가합니다. 자세한 정보는 'UI escape sequences' 검색하세요.]=]
 L["STRING_OPTIONS_BARS"] = "바 일반 설정"
 L["STRING_OPTIONS_BARS_CUSTOM_TEXTURE"] = "사용자 설정 텍스쳐 파일"
 L["STRING_OPTIONS_BARS_CUSTOM_TEXTURE_DESC"] = [=[
@@ -907,7 +952,7 @@ L["STRING_OPTIONS_RT_COOLDOWNS_CHANNEL"] = "채널"
 L["STRING_OPTIONS_RT_COOLDOWNS_CHANNEL_DESC"] = [=[경보 메시지를 출력할 채널을 선택합니다.
 
 |cFFFFFF00혼자 보기|r를 선택하면, 개인 생존기를 제외한 모든 생존기가 자신의 대화창에만 출력됩니다.]=]
-L["STRING_OPTIONS_RT_COOLDOWNS_CUSTOM"] = "사용자 정의 구문"
+L["STRING_OPTIONS_RT_COOLDOWNS_CUSTOM"] = "사용자 설정 문자"
 L["STRING_OPTIONS_RT_COOLDOWNS_CUSTOM_DESC"] = [=[출력할 구문을 입력하세요.
 
 |cFFFFFF00{spell}|r 생존기 주문 이름을 추가합니다.
@@ -946,7 +991,7 @@ L["STRING_OPTIONS_RT_INTERRUPTS_CHANNEL_DESC"] = [=[경보 메시지를 보내�
 
 |cFFFFFF00혼자 보기|r를 선택하면 모든 시전 방해가 자신의 대화창에만 표시됩니다.
 ]=]
-L["STRING_OPTIONS_RT_INTERRUPTS_CUSTOM"] = "사용자 설정 구문"
+L["STRING_OPTIONS_RT_INTERRUPTS_CUSTOM"] = "사용자 설정 문자"
 L["STRING_OPTIONS_RT_INTERRUPTS_CUSTOM_DESC"] = [=[출력할 구문을 입력하세요.
 
 |cFFFFFF00{spell}|r 시전 방해된 주문 이름을 추가합니다.
@@ -1358,7 +1403,7 @@ L["STRING_PLUGINOPTIONS_TEXTSTYLE"] = "문자 스타일"
 L["STRING_QUERY_INSPECT"] = "특성과 아이템 레벨을 요청합니다."
 L["STRING_QUERY_INSPECT_FAIL1"] = "전투 중에는 요청할 수 없습니다."
 L["STRING_QUERY_INSPECT_TALENTS"] = "클릭하여 검색하기"
-L["STRING_RAID_WIDE"] = "[*] 공격대 단위 쿨다운"
+L["STRING_RAID_WIDE"] = "[*] 공격대 단위 생존기"
 L["STRING_RAIDCHECK_PLUGIN_DESC"] = "공격대 던전에 있을 때, Details! 제목 바 위에 영약, 음식, 시작물약 사용을 보여주는 아이콘을 표시합니다."
 L["STRING_RAIDCHECK_PLUGIN_NAME"] = "공격대 확인"
 L["STRING_REPORT"] = ":"

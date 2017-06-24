@@ -19,7 +19,6 @@ AtlasLootCharDB = {
 			193.628036499023, -- [5]
 		},
 	},
-	["__addonrevision"] = 4325,
 	["SetViewFrame"] = {
 		["point"] = {
 			[3] = "CENTER",
@@ -27,6 +26,7 @@ AtlasLootCharDB = {
 			[5] = 35.9839019775391,
 		},
 	},
+	["__addonrevision"] = 4325,
 	["GUI"] = {
 		["selected"] = {
 			"AtlasLoot_WrathoftheLichKing", -- [1]

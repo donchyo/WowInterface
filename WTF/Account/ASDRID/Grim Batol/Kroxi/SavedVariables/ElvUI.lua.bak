@@ -1,5 +1,7 @@
 
 ElvCharacterDB = {
+	["ChatLog"] = {
+	},
 	["ChatEditHistory"] = {
 		"/p like", -- [1]
 		"/p are you retarded", -- [2]
@@ -10,13 +12,15 @@ ElvCharacterDB = {
 		"/g eg", -- [7]
 		"/g vafan är det här?", -- [8]
 		"/iks", -- [9]
+		"/dance", -- [10]
+		"/p X D", -- [11]
+		"/p dont be to happy about tha", -- [12]
+		"/p we are shit", -- [13]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
-	},
-	["ChatLog"] = {
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

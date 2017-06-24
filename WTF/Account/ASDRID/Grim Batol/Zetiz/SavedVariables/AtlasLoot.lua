@@ -26,7 +26,6 @@ AtlasLootCharDB = {
 			-8.5676965713501, -- [5]
 		},
 	},
-	["__addonrevision"] = 4325,
 	["QuickLootFrame"] = {
 		["point"] = {
 			"LEFT", -- [1]
@@ -36,6 +35,7 @@ AtlasLootCharDB = {
 			68.5408630371094, -- [5]
 		},
 	},
+	["__addonrevision"] = 4325,
 	["minimap"] = {
 		["shown"] = false,
 		["minimapPos"] = 207.626338474989,

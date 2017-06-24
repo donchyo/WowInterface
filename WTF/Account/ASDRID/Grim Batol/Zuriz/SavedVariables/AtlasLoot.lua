@@ -27,11 +27,9 @@ AtlasLootCharDB = {
 	},
 	["GUI"] = {
 		["selected"] = {
-			"AtlasLoot_PvP", -- [1]
-			"WODS3SETS", -- [2]
-			nil, -- [3]
-			1, -- [4]
-			0, -- [5]
+			[5] = 0,
+			[2] = "TombofSargeras",
+			[4] = 1,
 		},
 		["point"] = {
 			"RIGHT", -- [1]

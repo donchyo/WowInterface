@@ -24,7 +24,6 @@ AtlasLootCharDB = {
 			[5] = 72.4447250366211,
 		},
 	},
-	["__addonrevision"] = 4325,
 	["SetViewFrame"] = {
 		["point"] = {
 			[3] = "CENTER",
@@ -32,6 +31,7 @@ AtlasLootCharDB = {
 			[5] = 35.9839019775391,
 		},
 	},
+	["__addonrevision"] = 4325,
 	["QuickLootFrame"] = {
 		["point"] = {
 			"RIGHT", -- [1]

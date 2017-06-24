@@ -1,3 +1,6 @@
+Server Hop 7.2.5.1
+7.2.5 support added, thanks to the community for a fix.
+
 Server Hop 7.2.4.1
 Addon options also close when you hide addon window.
 Fixed a wrong state in options, causing addon to hide a main frame.

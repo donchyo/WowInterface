@@ -1,6 +1,6 @@
 ## Interface: 70000
 ## Author: p3lim
-## Version: @project-version@
+## Version: 2
 ## Title: Lib: GossipQuestInfo
 ## Notes: Library that adds "missing" quest-related API for the gossip window
 

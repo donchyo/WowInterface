@@ -424,7 +424,7 @@ local function FullScaleSearch(selection, str, filter1, filter2)
 	--print("Called search")
 	local lang={}
 	for k,v in pairs(C_LFGList.GetAvailableLanguageSearchFilter()) do lang[v]=true end
-	C_LFGList.Search(selection, str, filter1, filter2, lang)
+	C_LFGList.Search(selection, LFGListSearchPanel_ParseSearchTerms(str), filter1, filter2, lang)
 end
 
 function SH_ManageSearch()

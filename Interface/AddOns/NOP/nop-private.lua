@@ -42,6 +42,7 @@ private.TOOLTIP_SCAN = ADDON.."_TOOLTIP_SCAN"
 private.SPELL_PICKLOCK = 1804
 private.AURA_MINERS_COFFEE = 176049 -- applied by Miner's cofee item could have 5 stacks past 6.1 wow version
 private.RO_SHIPYARD = 128373 -- Rush Orders: Shipyards in Garrison always get lower priority
+private.CB_CVAR = "colorblindMode"
 private.ITEM_TYPE_BATTLE_PET = "battlepet"
 private.ITEM_TYPE_ITEM = "item"
 private.RGB_YELLOW = "|cFFFFFF00"
@@ -51,3 +52,4 @@ private.TIMER_IDLE = 2.0 -- recheck delay for calling protected function in comb
 private.TIMER_RECHECK = 10.0 -- delay for slow non-event driven item lookup in bags
 private.LOAD_RETRY = 10 -- update cache cycles for items and spell
 private.PRINT_HEAD = "|cff7f7f7f%s|r [|cff00ffff%s|r]"
+private.BLACKLIST = {[90043] = true,} -- special blacklist

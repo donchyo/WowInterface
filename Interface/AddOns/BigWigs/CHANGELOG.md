@@ -1,25 +1,21 @@
 # BigWigs
 
-## [v55](https://github.com/BigWigsMods/BigWigs/tree/v55) (2017-06-13)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v54...v55)
+## [v59](https://github.com/BigWigsMods/BigWigs/tree/v59) (2017-06-24)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v58.1...v59)
 
 - bump version  
-- TombOfSargeras/FallenAvatar: Remove PTR fix  
-- TombOfSargeras/Harjatan: Do not display bars that arn't cast and add berserk timer  
-- TombOfSargeras/TheDesolateHost: Minor fixes  
-- Core: Don't completely die when using an invalid id in the options.  
-- Core: Don't completely die when using an invalid id in the option headers.  
-- BossPrototype: Fix countdown for cast bars.  
-- Nighthold/Guldan: Fix Fel Efflux ids  
-- Nighthold/Guldan: Quality of Life improvements  
-- TombOfSargeras/FallenAvatar: fix minor bug  
-- TombOfSargeras/FallenAvatar: Updates and fixes  
-- TombOfSargeras/Harjatan: Remove Taskmasker from the encounter  
-- Add optional name arg for :RegisterCountdown  
-- TombOfSargeras/Kiljaeden: Drycode  
-- Update deDE (#258)  
-- update zhCN/zhTW. (#259)  
-- TombOfSargeras/Goroth: Bug fixes & Mythic update  
-- TombOfSargeras/FallenAvatar: Temp fix spell list for PTR  
-- koKR update (#257)  
-- Add "Removed From" to common locale strings.  
+- TombOfSargeras/Kiljaeden: fix guid usage  
+- TombOfSargeras/Kiljaeden: Update Say warnings and add Icon for Focused Dreadflame  
+- Update koKR.lua (#273)  
+- TombOfSargeras/SistersoftheMoon: fix full dark/light ability timers on phase transition (#272)  
+- TombOfSargeras/Goroth: Stop warnings for Crashing Comet DoT effect  
+- TombOfSargeras/Trash: Cancel bar/say warnings if Polymorph Bomb is removed early  
+- TombOfSargeras/Locales: Update locales  
+- TombOfSargeras/FallenAvatar: Shorten Touch of Sargeras cast/meteors  
+- TombOfSargeras/Sasszine: Tune Burden of Pain sounds and make it Tank only warnings  
+- TombOfSargeras/Goroth: Fix missing Burning Armor timers when the tank avoids the debuff  
+- Kil'jaeden: Use shorter names for Shadow Reflections and Darkness of a Thousand Souls, fix Shadow Reflection: Wailing spell id  
+- Kiljaeden: Add Demonic Obelisk timers  
+- Update ToS locales (#274)  
+- Kiljaeden: Add a bar for Singularity Impacts, don't show Flaming Orbs in LFR/Normal  
+- Plugins/AltPower: Refresh the display every second instead of every 2 seconds.  
