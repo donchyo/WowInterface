@@ -136,7 +136,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1498284489,
+				["lastUpdate"] = 1498429016,
 				["Factions"] = {
 					8999, -- [1]
 					9261, -- [2]
@@ -154,7 +154,7 @@ DataStore_ReputationsDB = {
 					[134] = 18722,
 					[136] = 11440,
 					[138] = 19075,
-					[140] = 14335,
+					[140] = 14410,
 					[37] = 36273,
 					[38] = 5529,
 					[39] = 10174,
@@ -239,7 +239,7 @@ DataStore_ReputationsDB = {
 				["guildName"] = "Hoonigans",
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1498316539,
+				["lastUpdate"] = 1498424728,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -258,7 +258,7 @@ DataStore_ReputationsDB = {
 					[134] = 41285,
 					[136] = 42000,
 					[138] = 42000,
-					[140] = 27685,
+					[140] = 27935,
 					[37] = 10030,
 					[38] = 10401,
 					[39] = 12146,
@@ -669,7 +669,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1498321214,
+				["lastUpdate"] = 1498336706,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -833,7 +833,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1498283040,
+				["lastUpdate"] = 1498428974,
 				["Factions"] = {
 					11482, -- [1]
 					7997, -- [2]
@@ -941,7 +941,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1498320818,
+				["lastUpdate"] = 1498349826,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -1058,7 +1058,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1498321024,
+				["lastUpdate"] = 1498335155,
 				["guildName"] = "Hoonigans",
 				["guildRep"] = 42000,
 				["Factions"] = {

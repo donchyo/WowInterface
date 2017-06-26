@@ -1,13 +1,13 @@
-changeset:   1054:1d025a120a24
-tag:         tip
+changeset:   1072:d20ec52ece2c
+tag:         3.6.32
 user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Mon Dec 26 12:45:05 2016 -0800
-summary:     Get rid of the reload UI link since it is protected now. We'll translate it later
+date:        Sun Jun 25 01:26:34 2017 -0700
+summary:     Fix encoding error
 
 
-changeset:   1053:8ecffe1541d6
+changeset:   1071:f13a71994ee4
 user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Mon Dec 26 12:32:58 2016 -0800
-summary:     Added tag 3.6.26 for changeset 335787d36eb4
+date:        Sun Jun 25 01:13:56 2017 -0700
+summary:     Fix dev code
 
 

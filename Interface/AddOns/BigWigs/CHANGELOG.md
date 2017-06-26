@@ -1,21 +1,11 @@
 # BigWigs
 
-## [v59](https://github.com/BigWigsMods/BigWigs/tree/v59) (2017-06-24)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v58.1...v59)
+## [v59.2](https://github.com/BigWigsMods/BigWigs/tree/v59.2) (2017-06-25)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v59.1...v59.2)
 
-- bump version  
-- TombOfSargeras/Kiljaeden: fix guid usage  
-- TombOfSargeras/Kiljaeden: Update Say warnings and add Icon for Focused Dreadflame  
-- Update koKR.lua (#273)  
-- TombOfSargeras/SistersoftheMoon: fix full dark/light ability timers on phase transition (#272)  
-- TombOfSargeras/Goroth: Stop warnings for Crashing Comet DoT effect  
-- TombOfSargeras/Trash: Cancel bar/say warnings if Polymorph Bomb is removed early  
-- TombOfSargeras/Locales: Update locales  
-- TombOfSargeras/FallenAvatar: Shorten Touch of Sargeras cast/meteors  
-- TombOfSargeras/Sasszine: Tune Burden of Pain sounds and make it Tank only warnings  
-- TombOfSargeras/Goroth: Fix missing Burning Armor timers when the tank avoids the debuff  
-- Kil'jaeden: Use shorter names for Shadow Reflections and Darkness of a Thousand Souls, fix Shadow Reflection: Wailing spell id  
-- Kiljaeden: Add Demonic Obelisk timers  
-- Update ToS locales (#274)  
-- Kiljaeden: Add a bar for Singularity Impacts, don't show Flaming Orbs in LFR/Normal  
-- Plugins/AltPower: Refresh the display every second instead of every 2 seconds.  
+- TombOfSargeras/MaidenofVigilance: Add Normal ID for Aegwynn's Ward  
+- Kil'jaeden: Fix Lua error  
+- TombOfSargeras/FallenAvatar: No Touch of Sargeras in Easy Mode  
+- MaidenofVigilance: Add target bar for Unstable Soul (you can now enable the countdown for it!)  
+- Update zhCN.lua (#277)  
+- Core/BossPrototype: Implement draft :SayCountdown.  

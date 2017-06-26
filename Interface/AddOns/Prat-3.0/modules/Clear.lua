@@ -38,7 +38,7 @@ end
 local PL = Prat:GetLocalizer({})
 
 --[===[@debug@
-PL:AddLocale("enUS", {
+PL:AddLocale(PRAT_MODULE, "enUS", {
 	["Clear"] = true,
 	["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = true,
 	["Clears the current chat frame."] = true,
@@ -57,97 +57,149 @@ do
 
 L=
 {
-["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = true,
-["Clear"] = true,
-["Clearall"] = true,
-["Clears all chat frames."] = true,
-["Clears the current chat frame."] = true,
+	["Clear"] = {
+		["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = true,
+		["Clear"] = true,
+		["Clearall"] = true,
+		["Clears all chat frames."] = true,
+		["Clears the current chat frame."] = true,
+	}
 }
-PL:AddLocale("enUS", L)
+PL:AddLocale(PRAT_MODULE, "enUS", L)
 
 
 L=
 {
+	["Clear"] = {
+		--Translation missing 
+		-- ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",
+		--Translation missing 
+		-- ["Clear"] = "",
+		--Translation missing 
+		-- ["Clearall"] = "",
+		--Translation missing 
+		-- ["Clears all chat frames."] = "",
+		--Translation missing 
+		-- ["Clears the current chat frame."] = "",
+	}
 }
-PL:AddLocale("itIT", L)
+PL:AddLocale(PRAT_MODULE, "itIT", L)
 
 
 L=
 {
+	["Clear"] = {
+		--Translation missing 
+		-- ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",
+		--Translation missing 
+		-- ["Clear"] = "",
+		--Translation missing 
+		-- ["Clearall"] = "",
+		--Translation missing 
+		-- ["Clears all chat frames."] = "",
+		--Translation missing 
+		-- ["Clears the current chat frame."] = "",
+	}
 }
-PL:AddLocale("ptBR", L)
+PL:AddLocale(PRAT_MODULE, "ptBR", L)
 
 L=
 {
-["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "Ajoute les commandes slash de nettoyage du texte (/clear)(/cls)(/clearall)(/clsall).",
-["Clear"] = "Effacer",
-["Clearall"] = "EffacerTout",
-["Clears all chat frames."] = "Efface toutes les fenêtres de discussion.",
-["Clears the current chat frame."] = "Efface la fenêtre de discussion actuelle.",
+	["Clear"] = {
+		["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "Ajoute les commandes slash de nettoyage du texte (/clear)(/cls)(/clearall)(/clsall).",
+		["Clear"] = "Effacer",
+		["Clearall"] = "EffacerTout",
+		["Clears all chat frames."] = "Efface toutes les fenêtres de discussion.",
+		["Clears the current chat frame."] = "Efface la fenêtre de discussion actuelle.",
+	}
 }
-PL:AddLocale("frFR",L)
+PL:AddLocale(PRAT_MODULE, "frFR",L)
 
 
 
 L=
 {
-["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "Fügt \"Slash\"-Befehle zum Löschen von Text hinzu (/clear)(/cls)(/clsall).",
-["Clear"] = "Löschen",
-["Clearall"] = "Alles löschen",
-["Clears all chat frames."] = "Alle Chatfenster leeren",
-["Clears the current chat frame."] = "Das aktuelle Chatfenster leeren.",
+	["Clear"] = {
+		["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "Fügt \"Slash\"-Befehle zum Löschen von Text hinzu (/clear)(/cls)(/clsall).",
+		["Clear"] = "Löschen",
+		["Clearall"] = "Alles löschen",
+		["Clears all chat frames."] = "Alle Chatfenster leeren",
+		["Clears the current chat frame."] = "Das aktuelle Chatfenster leeren.",
+	}
 }
-PL:AddLocale("deDE", L)
+PL:AddLocale(PRAT_MODULE, "deDE", L)
 
 L=
 {
-["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "지우기 명령어 /clear, /cls, /clearall, /clsall 을 추가합니다.",
-["Clear"] = "지우기",
-["Clearall"] = "모두 지우기",
-["Clears all chat frames."] = "모든 대화창의 내용을 지웁니다.",
-["Clears the current chat frame."] = "현재 대화창의 내용을 지웁니다.",
+	["Clear"] = {
+		["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "지우기 명령어 /clear, /cls, /clearall, /clsall 을 추가합니다.",
+		["Clear"] = "지우기",
+		["Clearall"] = "모두 지우기",
+		["Clears all chat frames."] = "모든 대화창의 내용을 지웁니다.",
+		["Clears the current chat frame."] = "현재 대화창의 내용을 지웁니다.",
+	}
 }
-PL:AddLocale("koKR",L)
+PL:AddLocale(PRAT_MODULE, "koKR",L)
 L=
 {
+	["Clear"] = {
+		--Translation missing 
+		-- ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",
+		--Translation missing 
+		-- ["Clear"] = "",
+		--Translation missing 
+		-- ["Clearall"] = "",
+		--Translation missing 
+		-- ["Clears all chat frames."] = "",
+		--Translation missing 
+		-- ["Clears the current chat frame."] = "",
+	}
 }
-PL:AddLocale("esMX",L)
+PL:AddLocale(PRAT_MODULE, "esMX",L)
 L=
 {
-["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "Добавляет слаш команды очистки текста (/clear)(/cls)(/clearall)(/clsall).",
-["Clear"] = "Очистить",
-["Clearall"] = "Очистить все",
-["Clears all chat frames."] = "Очистить все окна чата.",
-["Clears the current chat frame."] = "Очистить текущее окно чата.",
+	["Clear"] = {
+		["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "Добавляет слаш команды очистки текста (/clear)(/cls)(/clearall)(/clsall).",
+		["Clear"] = "Очистить",
+		["Clearall"] = "Очистить все",
+		["Clears all chat frames."] = "Очистить все окна чата.",
+		["Clears the current chat frame."] = "Очистить текущее окно чата.",
+	}
 }
-PL:AddLocale("ruRU",L)
+PL:AddLocale(PRAT_MODULE, "ruRU",L)
 L=
 {
-["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "添加清除文本斜杠命令(/clear)(/cls)(/clearall)(/clsall).",
-["Clear"] = "清除",
-["Clearall"] = "全部清除",
-["Clears all chat frames."] = "清除所有聊天框架",
-["Clears the current chat frame."] = "清除当前聊天框架",
+	["Clear"] = {
+		["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "添加清除文本斜杠命令(/clear)(/cls)(/clearall)(/clsall).",
+		["Clear"] = "清除",
+		["Clearall"] = "全部清除",
+		["Clears all chat frames."] = "清除所有聊天框架",
+		["Clears the current chat frame."] = "清除当前聊天框架",
+	}
 }
-PL:AddLocale("zhCN",L)
+PL:AddLocale(PRAT_MODULE, "zhCN",L)
 L=
 {
-["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "Añade comandos para limpiar texto (/clear)(/cls)(/clearall)(/clsall).",
-["Clear"] = "Limpiar",
-["Clearall"] = "Limpiar todo",
-["Clears all chat frames."] = "Limpiar todas las ventanas de chat",
-["Clears the current chat frame."] = "Limpiar la ventana de chat actual",
+	["Clear"] = {
+		["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "Añade comandos para limpiar texto (/clear)(/cls)(/clearall)(/clsall).",
+		["Clear"] = "Limpiar",
+		["Clearall"] = "Limpiar todo",
+		["Clears all chat frames."] = "Limpiar todas las ventanas de chat",
+		["Clears the current chat frame."] = "Limpiar la ventana de chat actual",
+	}
 }
-PL:AddLocale("esES",L)
+PL:AddLocale(PRAT_MODULE, "esES",L)
 L=
 {
-["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "新增清除文字的快捷命令 (/clear)(/cls)(/clearall)(/clsall)",
-["Clear"] = "清除",
-["Clearall"] = "全部清除",
-["Clears all chat frames."] = "清除所有聊天視窗。",
-["Clears the current chat frame."] = "清除當前聊天視窗。",
+	["Clear"] = {
+		["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "新增清除文字的快捷命令 (/clear)(/cls)(/clearall)(/clsall)",
+		["Clear"] = "清除",
+		["Clearall"] = "全部清除",
+		["Clears all chat frames."] = "清除所有聊天視窗。",
+		["Clears the current chat frame."] = "清除當前聊天視窗。",
+	}
 }
-PL:AddLocale("zhTW",L)
+PL:AddLocale(PRAT_MODULE, "zhTW",L)
 end
 --@end-non-debug@
 

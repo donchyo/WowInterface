@@ -780,26 +780,26 @@ DataStore_QuestsDB = {
 				["lastUpdate"] = 1423512183,
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["HistoryLastUpdate"] = 1498321261,
+				["HistoryLastUpdate"] = 1498429020,
 				["QuestLinks"] = {
 					nil, -- [1]
 					"|cffffff00|Hquest:46244:110|h[Altar of the Aegis]|h|r", -- [2]
 					nil, -- [3]
 					"|cffffff00|Hquest:43179:110|h[The Kirin Tor of Dalaran]|h|r", -- [4]
-					"|cffffff00|Hquest:45159:-1|h[Cubic Conundrum]|h|r", -- [5]
-					"|cffffff00|Hquest:44448:110|h[In the House of Light and Shadow]|h|r", -- [6]
-					nil, -- [7]
-					"|cffffff00|Hquest:42233:110|h[Highmountain Tribes]|h|r", -- [8]
-					nil, -- [9]
-					"|cff40c040|Hquest:37561:100|h[Essence of the Iron Vanquisher]|h|r", -- [10]
-					nil, -- [11]
-					"|cffffff00|Hquest:44562:110|h[Growing Strong]|h|r", -- [12]
-					"|cffff8040|Hquest:41877:113|h[Lady Lunastre]|h|r", -- [13]
-					nil, -- [14]
-					"|cffffff00|Hquest:45382:110|h[Talisman of the Shal'dorei]|h|r", -- [15]
-					"|cffffff00|Hquest:45381:110|h[Talisman of the Shal'dorei]|h|r", -- [16]
-					nil, -- [17]
-					"|cffffff00|Hquest:42170:110|h[The Dreamweavers]|h|r", -- [18]
+					"|cffffff00|Hquest:41674:110|h[Work Order: Word of Intellect]|h|r", -- [5]
+					"|cffffff00|Hquest:45159:-1|h[Cubic Conundrum]|h|r", -- [6]
+					"|cffffff00|Hquest:44448:110|h[In the House of Light and Shadow]|h|r", -- [7]
+					nil, -- [8]
+					"|cffffff00|Hquest:42233:110|h[Highmountain Tribes]|h|r", -- [9]
+					nil, -- [10]
+					"|cff40c040|Hquest:37561:100|h[Essence of the Iron Vanquisher]|h|r", -- [11]
+					nil, -- [12]
+					"|cffffff00|Hquest:42421:110|h[The Nightfallen]|h|r", -- [13]
+					"|cffffff00|Hquest:44562:110|h[Growing Strong]|h|r", -- [14]
+					"|cffff8040|Hquest:41877:113|h[Lady Lunastre]|h|r", -- [15]
+					nil, -- [16]
+					"|cffffff00|Hquest:45381:110|h[Talisman of the Shal'dorei]|h|r", -- [17]
+					"|cffffff00|Hquest:45382:110|h[Talisman of the Shal'dorei]|h|r", -- [18]
 					nil, -- [19]
 					"|cffffff00|Hquest:44891:110|h[2v2 Weekly Quest]|h|r", -- [20]
 					"|cffffff00|Hquest:44908:110|h[3v3 Weekly Quest]|h|r", -- [21]
@@ -821,7 +821,7 @@ DataStore_QuestsDB = {
 					[35] = "|cffffff00|Hquest:47606:-1|h[Loyalty Is Its Own Reward]|h|r",
 				},
 				["HistoryBuild"] = "24415",
-				["HistorySize"] = 2719,
+				["HistorySize"] = 2720,
 				["History"] = {
 					[1019] = 134217728,
 					[2] = 128,
@@ -1118,7 +1118,7 @@ DataStore_QuestsDB = {
 					[1401] = 35651584,
 					[1404] = 67108864,
 					[1405] = 4100,
-					[1419] = 1966080,
+					[1419] = 1966088,
 					[1421] = 2147483648,
 					[1422] = 268715016,
 					[1423] = 1090261248,
@@ -1402,26 +1402,26 @@ DataStore_QuestsDB = {
 					[1446] = 268435617,
 					[364] = 1610612737,
 				},
-				["lastUpdate"] = 1498321392,
+				["lastUpdate"] = 1498429020,
 				["Quests"] = {
 					"0|Cathedral of Eternal Night", -- [1]
 					"1|0|0|0", -- [2]
 					"0|Dalaran", -- [3]
 					"1|0|0|0", -- [4]
 					"1|0|0|0", -- [5]
-					"1|0|582000|0", -- [6]
-					"0|Highmountain", -- [7]
-					"1|0|0|0", -- [8]
-					"0|Spire of Light", -- [9]
-					"1|0|0|1", -- [10]
-					"0|Suramar", -- [11]
-					"1|0|97000|0", -- [12]
+					"1|0|0|0", -- [6]
+					"1|0|582000|0", -- [7]
+					"0|Highmountain", -- [8]
+					"1|0|0|0", -- [9]
+					"0|Spire of Light", -- [10]
+					"1|0|0|1", -- [11]
+					"0|Suramar", -- [12]
 					"1|0|0|0", -- [13]
-					"0|The Nighthold", -- [14]
-					"1|0|388000|0", -- [15]
-					"1|0|388000|0", -- [16]
-					"0|Val'sharah", -- [17]
-					"1|0|0|0", -- [18]
+					"1|0|97000|0", -- [14]
+					"1|0|0|0", -- [15]
+					"0|The Nighthold", -- [16]
+					"1|0|388000|0", -- [17]
+					"1|0|388000|0", -- [18]
 					"0|Missing header! (quest designers)", -- [19]
 					"1|0|0|0", -- [20]
 					"1|0|0|0", -- [21]
@@ -1445,15 +1445,11 @@ DataStore_QuestsDB = {
 					"1|0|194000|0", -- [39]
 				},
 				["Rewards"] = {
-					[15] = "r|141325|1|1",
-					[35] = "r|151143|1|1",
-					[2] = "c|146933|1|1,c|146929|1|1,c|146931|1|1",
+					[13] = "r|151468|1|1,r|142005|1|1",
+					[18] = "r|141325|1|1",
 					[4] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,r|151470|1|1,r|142007|1|1",
-					[8] = "r|151465|1|1,r|142002|1|1",
-					[16] = "r|141324|1|1",
-					[18] = "r|151464|1|1,r|142001|1|1",
-					[10] = "c|120251|1|1,c|120247|1|1,c|120248|1|1,c|120249|1|1,c|120250|1|1",
-					[12] = "r|141681|1|1",
+					[9] = "r|151465|1|1,r|142002|1|1",
+					[17] = "r|141324|1|1",
 				},
 			},
 			["Default.Grim Batol.Krixidh"] = {
@@ -1694,37 +1690,9 @@ DataStore_QuestsDB = {
 				["lastUpdate"] = 1497663526,
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["HistoryLastUpdate"] = 1498315275,
-				["QuestLinks"] = {
-					nil, -- [1]
-					"|cffffff00|Hquest:45839:-1|h[Assault on Stormheim]|h|r", -- [2]
-					nil, -- [3]
-					"|cff40c040|Hquest:37030:100|h[Sigil of the Black Hand (Heroic)]|h|r", -- [4]
-					nil, -- [5]
-					"|cffffff00|Hquest:45159:-1|h[Cubic Conundrum]|h|r", -- [6]
-					"|cffffff00|Hquest:47791:-1|h[Unsettled Power]|h|r", -- [7]
-					[15] = "|cffffff00|Hquest:38862:-1|h[Thieving Thistleleaf]|h|r",
-					[31] = "|cffffff00|Hquest:40668:-1|h[Eye of Azshara: The Heart of Zin-Azshari]|h|r",
-					[17] = "|cffffff00|Hquest:43903:-1|h[Into the Nightmare: Xavius]|h|r",
-					[9] = "|cffffff00|Hquest:40519:-1|h[The Legion Returns]|h|r",
-					[18] = "|cffffff00|Hquest:44283:110|h[The Emerald Nightmare: Piercing the Veil]|h|r",
-					[37] = "|cffffff00|Hquest:46268:110|h[A Found Memento]|h|r",
-					[20] = "|cffffff00|Hquest:47725:110|h[Aegwynn's Path]|h|r",
-					[21] = "|cffffff00|Hquest:47726:110|h[Aegwynn's Path]|h|r",
-					[11] = "|cffffff00|Hquest:45381:110|h[Talisman of the Shal'dorei]|h|r",
-					[23] = "|cffffff00|Hquest:44891:110|h[2v2 Weekly Quest]|h|r",
-					[12] = "|cffffff00|Hquest:45382:110|h[Talisman of the Shal'dorei]|h|r",
-					[24] = "|cffffff00|Hquest:44908:110|h[3v3 Weekly Quest]|h|r",
-					[25] = "|cffffff00|Hquest:44909:110|h[RBG Weekly]|h|r",
-					[13] = "|cffffff00|Hquest:45420:110|h[The Eye of Aman'Thul]|h|r",
-					[27] = "|cffffff00|Hquest:39349:110|h[Black Rook Hold: Heavy, But Helpful]|h|r",
-					[28] = "|cffffff00|Hquest:39348:110|h[Halls of Valor: The Prime Ingredient]|h|r",
-					[35] = "|cffffff00|Hquest:44466:110|h[An Unclear Path]|h|r",
-					[29] = "|cffffff00|Hquest:39350:110|h[Maw of Souls: A Hope in Helheim]|h|r",
-					[33] = "|cffffff00|Hquest:24745:-1|h[Something is in the Air (and it Ain't Love)]|h|r",
-				},
-				["lastUpdate"] = 1498316539,
-				["HistorySize"] = 2383,
+				["HistoryLastUpdate"] = 1498429053,
+				["lastUpdate"] = 1498429050,
+				["HistorySize"] = 2386,
 				["History"] = {
 					[1019] = 138379264,
 					[1021] = 118800,
@@ -1881,7 +1849,7 @@ DataStore_QuestsDB = {
 					[1205] = 1073741826,
 					[1206] = 6716800,
 					[1207] = 116916249,
-					[1208] = 2197422081,
+					[1208] = 2197422085,
 					[1209] = 2416476352,
 					[1210] = 4227858649,
 					[1211] = 8388626,
@@ -1912,7 +1880,7 @@ DataStore_QuestsDB = {
 					[1238] = 1083326416,
 					[1239] = 536870912,
 					[1240] = 474358160,
-					[1241] = 131072,
+					[1241] = 163840,
 					[1242] = 531118146,
 					[1243] = 2602827845,
 					[1244] = 1494257714,
@@ -1948,15 +1916,15 @@ DataStore_QuestsDB = {
 					[1281] = 805339136,
 					[1283] = 1073741841,
 					[1284] = 1015808,
-					[1285] = 805830784,
+					[1285] = 805830656,
 					[1286] = 805568512,
 					[1288] = 2415919105,
 					[1289] = 1073790992,
-					[1290] = 1792,
+					[1290] = 1280,
 					[1292] = 8454144,
 					[1298] = 64,
 					[1300] = 128,
-					[1301] = 4194432,
+					[1301] = 128,
 					[1303] = 1073741824,
 					[1304] = 268441920,
 					[1305] = 3141633,
@@ -1970,14 +1938,14 @@ DataStore_QuestsDB = {
 					[1315] = 2148663296,
 					[1316] = 16777472,
 					[1317] = 1610612860,
-					[1318] = 67108872,
+					[1318] = 8,
 					[1319] = 23073057,
-					[1320] = 1115631648,
+					[1320] = 1115631650,
 					[1321] = 2415919120,
 					[1322] = 22848,
 					[1324] = 2147483649,
 					[1325] = 33214,
-					[1326] = 33554432,
+					[1326] = 35651584,
 					[1327] = 4458496,
 					[1328] = 264241152,
 					[1329] = 66048,
@@ -2010,7 +1978,7 @@ DataStore_QuestsDB = {
 					[1370] = 536870972,
 					[1371] = 301990405,
 					[1372] = 814873568,
-					[1374] = 17833472,
+					[1374] = 17833600,
 					[1375] = 37486594,
 					[1376] = 592,
 					[1377] = 3670272,
@@ -2038,7 +2006,7 @@ DataStore_QuestsDB = {
 					[1400] = 4210689,
 					[1401] = 3898621953,
 					[1402] = 2080390150,
-					[1403] = 12787264,
+					[1403] = 12787272,
 					[1404] = 79691777,
 					[1405] = 134222848,
 					[1406] = 16,
@@ -2046,7 +2014,6 @@ DataStore_QuestsDB = {
 					[1409] = 4032,
 					[353] = 1048576,
 					[1411] = 744,
-					[1412] = 67108864,
 					[1413] = 33554432,
 					[1414] = 32768,
 					[1415] = 4124672,
@@ -2076,7 +2043,7 @@ DataStore_QuestsDB = {
 					[1459] = 1024,
 					[1461] = 16802816,
 					[1462] = 544350208,
-					[1463] = 101054336,
+					[1463] = 101053824,
 					[1464] = 536936448,
 					[1467] = 276824064,
 					[1468] = 67110912,
@@ -2086,7 +2053,8 @@ DataStore_QuestsDB = {
 					[1474] = 10,
 					[1475] = 134217728,
 					[1478] = 2097152,
-					[373] = 130,
+					[1490] = 8192,
+					[1491] = 524288,
 					[1494] = 147456,
 					[375] = 32,
 					[1502] = 1,
@@ -2240,59 +2208,15 @@ DataStore_QuestsDB = {
 					[246] = 256,
 					[12] = 1,
 					[317] = 2,
+					[373] = 130,
 				},
 				["HistoryBuild"] = "24415",
 				["Dailies"] = {
 					{
-						["id"] = 42233,
-						["timestamp"] = 1498290989,
-						["title"] = "Highmountain Tribes",
+						["id"] = 42421,
+						["timestamp"] = 1498394775,
+						["title"] = "The Nightfallen",
 					}, -- [1]
-				},
-				["Quests"] = {
-					"0|Stormheim", -- [1]
-					"1|0|146000|0", -- [2]
-					"0|Blackrock Foundry", -- [3]
-					"1|0|616000|0", -- [4]
-					"0|Dalaran", -- [5]
-					"1|0|0|0", -- [6]
-					"1|0|0|0", -- [7]
-					"0|Stormwind City", -- [8]
-					"1|0|0|0", -- [9]
-					"0|The Nighthold", -- [10]
-					"1|0|388000|0", -- [11]
-					"1|0|388000|1", -- [12]
-					"1|0|0|0", -- [13]
-					"0|Val'sharah", -- [14]
-					"1|0|194000|1", -- [15]
-					"0|The Emerald Nightmare", -- [16]
-					"1|0|194000|0", -- [17]
-					"1|0|388000|0", -- [18]
-					"0|Tomb of Sargeras", -- [19]
-					"1|0|388000|0", -- [20]
-					"1|0|388000|0", -- [21]
-					"0|Missing header! (quest designers)", -- [22]
-					"1|0|0|0", -- [23]
-					"1|0|0|0", -- [24]
-					"1|0|0|0", -- [25]
-					"0|Alchemy", -- [26]
-					"1|0|182850|0", -- [27]
-					"1|0|182850|0", -- [28]
-					"1|0|182850|0", -- [29]
-					"0|Artifact", -- [30]
-					"1|5|194000|0", -- [31]
-					"0|Love is in the Air", -- [32]
-					"1|0|194000|0", -- [33]
-					"0|Order Hall", -- [34]
-					"1|0|388000|0", -- [35]
-					"0|The King's Path", -- [36]
-					"1|0|0|1", -- [37]
-				},
-				["Rewards"] = {
-					[11] = "r|141324|1|1",
-					[7] = "r|151423|1|1",
-					[17] = "r|139484|1|1",
-					[12] = "r|141325|1|1",
 				},
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
@@ -4667,7 +4591,7 @@ DataStore_QuestsDB = {
 				["lastUpdate"] = 1451198820,
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["HistoryLastUpdate"] = 1498321073,
+				["HistoryLastUpdate"] = 1498335207,
 				["QuestLinks"] = {
 					nil, -- [1]
 					"|cffffff00|Hquest:46244:110|h[Altar of the Aegis]|h|r", -- [2]
@@ -4711,8 +4635,8 @@ DataStore_QuestsDB = {
 					"|cffffff00|Hquest:47139:110|h[Mark of the Sentinax]|h|r", -- [40]
 					[42] = "|cffffff00|Hquest:44466:110|h[An Unclear Path]|h|r",
 				},
-				["lastUpdate"] = 1498321214,
-				["HistorySize"] = 3705,
+				["lastUpdate"] = 1498336706,
+				["HistorySize"] = 3708,
 				["History"] = {
 					nil, -- [1]
 					1346421128, -- [2]
@@ -5030,7 +4954,7 @@ DataStore_QuestsDB = {
 					[352] = 8394752,
 					[353] = 1536,
 					[1411] = 488,
-					[1419] = 1966080,
+					[1419] = 1966088,
 					[1420] = 240,
 					[1421] = 2147483648,
 					[1422] = 2416705545,
@@ -5069,7 +4993,8 @@ DataStore_QuestsDB = {
 					[1475] = 503316480,
 					[1478] = 2097152,
 					[372] = 3791781889,
-					[373] = 293667344,
+					[1490] = 8192,
+					[1491] = 524288,
 					[374] = 739246336,
 					[375] = 1123508497,
 					[376] = 604005468,
@@ -5295,6 +5220,7 @@ DataStore_QuestsDB = {
 					[980] = 939540481,
 					[981] = 3221225597,
 					[982] = 8388622,
+					[373] = 293667344,
 					[983] = 1090519057,
 					[1382] = 1610612736,
 					[984] = 1308758267,
@@ -5377,14 +5303,14 @@ DataStore_QuestsDB = {
 					[4] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,r|151470|1|1,r|142007|1|1",
 					[8] = "r|151465|1|1,r|142002|1|1",
 					[16] = "r|140255|1|1",
-					[37] = "s|199785",
-					[18] = "r|141325|1|1",
 					[36] = "s|199783",
+					[18] = "r|141325|1|1",
+					[19] = "r|141324|1|1",
 					[38] = "s|199784",
 					[40] = "r|146127|1|1",
-					[11] = "c|121519|1|1,c|129323|1|1",
 					[21] = "r|151464|1|1,r|142001|1|1",
-					[19] = "r|141324|1|1",
+					[11] = "c|121519|1|1,c|129323|1|1",
+					[37] = "s|199785",
 				},
 				["Quests"] = {
 					"0|Cathedral of Eternal Night", -- [1]
@@ -5736,20 +5662,39 @@ DataStore_QuestsDB = {
 				["lastUpdate"] = 1465684871,
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["HistoryLastUpdate"] = 1498283043,
+				["HistoryLastUpdate"] = 1498424761,
 				["QuestLinks"] = {
 					nil, -- [1]
-					"|cffffff00|Hquest:44891:110|h[2v2 Weekly Quest]|h|r", -- [2]
-					"|cffffff00|Hquest:44908:110|h[3v3 Weekly Quest]|h|r", -- [3]
-					"|cffffff00|Hquest:44909:110|h[RBG Weekly]|h|r", -- [4]
-					nil, -- [5]
-					"|cffffff00|Hquest:39349:110|h[Black Rook Hold: Heavy, But Helpful]|h|r", -- [6]
-					"|cffffff00|Hquest:39348:110|h[Halls of Valor: The Prime Ingredient]|h|r", -- [7]
+					"|cffffff00|Hquest:43179:110|h[The Kirin Tor of Dalaran]|h|r", -- [2]
+					"|cffffff00|Hquest:47790:-1|h[Unsettled Power]|h|r", -- [3]
+					nil, -- [4]
+					"|cffffff00|Hquest:44684:110|h[Corruption Runs Deep]|h|r", -- [5]
+					"|cffffff00|Hquest:44557:110|h[Finite Numbers]|h|r", -- [6]
+					"|cffffff00|Hquest:44683:110|h[Holding the Lines]|h|r", -- [7]
 					nil, -- [8]
-					"|cffffff00|Hquest:46065:110|h[An Impossible Foe]|h|r", -- [9]
+					"|cffffff00|Hquest:42233:110|h[Highmountain Tribes]|h|r", -- [9]
+					nil, -- [10]
+					"|cffffff00|Hquest:42421:110|h[The Nightfallen]|h|r", -- [11]
+					"|cffffff00|Hquest:45317:110|h[Fighting on All Fronts]|h|r", -- [12]
+					nil, -- [13]
+					"|cffffff00|Hquest:44284:110|h[The Emerald Nightmare: Piercing the Veil]|h|r", -- [14]
+					nil, -- [15]
+					"|cffffff00|Hquest:44891:110|h[2v2 Weekly Quest]|h|r", -- [16]
+					"|cffffff00|Hquest:44908:110|h[3v3 Weekly Quest]|h|r", -- [17]
+					"|cffffff00|Hquest:44909:110|h[RBG Weekly]|h|r", -- [18]
+					nil, -- [19]
+					"|cffffff00|Hquest:39349:110|h[Black Rook Hold: Heavy, But Helpful]|h|r", -- [20]
+					"|cffffff00|Hquest:39348:110|h[Halls of Valor: The Prime Ingredient]|h|r", -- [21]
+					nil, -- [22]
+					"|cffffff00|Hquest:46065:110|h[An Impossible Foe]|h|r", -- [23]
+					"|cffffff00|Hquest:46127:110|h[Thwarting the Twins]|h|r", -- [24]
+					nil, -- [25]
+					"|cffffff00|Hquest:42345:110|h[Fevered Prayer]|h|r", -- [26]
+					nil, -- [27]
+					"|cffffff00|Hquest:46248:110|h[Self-Fulfilling Prophecy]|h|r", -- [28]
 				},
 				["HistoryBuild"] = "24415",
-				["HistorySize"] = 3539,
+				["HistorySize"] = 3536,
 				["History"] = {
 					[1019] = 134217728,
 					[1021] = 16400,
@@ -6115,7 +6060,7 @@ DataStore_QuestsDB = {
 					[1460] = 536870912,
 					[1461] = 25600,
 					[1462] = 7348224,
-					[1463] = 33945092,
+					[1463] = 33944580,
 					[1464] = 536936448,
 					[1467] = 276828160,
 					[1468] = 2048,
@@ -6131,8 +6076,6 @@ DataStore_QuestsDB = {
 					[1486] = 1115684864,
 					[1487] = 480,
 					[1489] = 1006632960,
-					[1490] = 8192,
-					[1491] = 524288,
 					[1493] = 48,
 					[1494] = 2147614721,
 					[1495] = 14680070,
@@ -6334,18 +6277,46 @@ DataStore_QuestsDB = {
 					[1354] = 7332864,
 					[1334] = 1,
 				},
+				["Rewards"] = {
+					[11] = "r|151468|1|1,r|142005|1|1",
+					[7] = "r|142450|1|1",
+					[28] = "r|147842|1|1",
+					[3] = "r|151423|1|1",
+					[2] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,r|151470|1|1,r|142007|1|1",
+					[5] = "r|142449|1|1",
+					[9] = "r|151465|1|1,r|142002|1|1",
+				},
 				["Quests"] = {
-					"0|Missing header! (quest designers)", -- [1]
+					"0|Dalaran", -- [1]
 					"1|0|0|0", -- [2]
 					"1|0|0|0", -- [3]
-					"1|0|0|0", -- [4]
-					"0|Alchemy", -- [5]
-					"1|0|182850|0", -- [6]
-					"1|0|182850|0", -- [7]
-					"0|Artifact", -- [8]
-					"1|0|388000|0", -- [9]
+					"0|Deadwind Pass", -- [4]
+					"1|0|194000|0", -- [5]
+					"1|0|194000|0", -- [6]
+					"1|0|194000|0", -- [7]
+					"0|Highmountain", -- [8]
+					"1|0|0|0", -- [9]
+					"0|Suramar", -- [10]
+					"1|0|0|0", -- [11]
+					"1|0|194000|1", -- [12]
+					"0|The Emerald Nightmare", -- [13]
+					"1|0|388000|0", -- [14]
+					"0|Missing header! (quest designers)", -- [15]
+					"1|0|0|0", -- [16]
+					"1|0|0|0", -- [17]
+					"1|0|0|0", -- [18]
+					"0|Alchemy", -- [19]
+					"1|0|182850|0", -- [20]
+					"1|0|182850|0", -- [21]
+					"0|Artifact", -- [22]
+					"1|0|388000|0", -- [23]
+					"1|0|388000|0", -- [24]
+					"0|First Aid", -- [25]
+					"1|0|0|0", -- [26]
+					"0|Legionfall Campaign", -- [27]
+					"1|0|388000|0", -- [28]
 				},
-				["lastUpdate"] = 1498283040,
+				["lastUpdate"] = 1498428974,
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["HistoryLastUpdate"] = 1465684611,
@@ -6404,7 +6375,7 @@ DataStore_QuestsDB = {
 				["lastUpdate"] = 1442247547,
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["HistoryLastUpdate"] = 1498320696,
+				["HistoryLastUpdate"] = 1498342094,
 				["QuestLinks"] = {
 					nil, -- [1]
 					"|cff40c040|Hquest:37031:100|h[Sigil of the Black Hand (Mythic)]|h|r", -- [2]
@@ -6413,34 +6384,39 @@ DataStore_QuestsDB = {
 					nil, -- [5]
 					"|cffffff00|Hquest:43179:110|h[The Kirin Tor of Dalaran]|h|r", -- [6]
 					"|cff40c040|Hquest:42911:100|h[Drowned Mana]|h|r", -- [7]
-					"|cffffff00|Hquest:47793:-1|h[The Spoiled Sample]|h|r", -- [8]
+					"|cffffff00|Hquest:47790:-1|h[Unsettled Power]|h|r", -- [8]
 					nil, -- [9]
-					"|cff40c040|Hquest:39501:100|h[Well of Souls]|h|r", -- [10]
-					"|cff40c040|Hquest:39500:100|h[Well of Souls]|h|r", -- [11]
-					"|cff40c040|Hquest:39499:100|h[Well of Souls]|h|r", -- [12]
-					nil, -- [13]
-					"|cffffff00|Hquest:42233:110|h[Highmountain Tribes]|h|r", -- [14]
-					"|cffffff00|Hquest:44055:110|h[They Have A Pitlord]|h|r", -- [15]
+					"|cffffff00|Hquest:42233:110|h[Highmountain Tribes]|h|r", -- [10]
+					"|cffffff00|Hquest:44055:110|h[They Have A Pitlord]|h|r", -- [11]
+					nil, -- [12]
+					"|cffffff00|Hquest:45381:110|h[Talisman of the Shal'dorei]|h|r", -- [13]
+					"|cffffff00|Hquest:45382:110|h[Talisman of the Shal'dorei]|h|r", -- [14]
+					"|cffffff00|Hquest:43917:-1|h[The Nighthold: Elisande]|h|r", -- [15]
 					nil, -- [16]
-					"|cffffff00|Hquest:43906:-1|h[Into the Nightmare: Fall of Cenarius]|h|r", -- [17]
-					"|cffffff00|Hquest:44283:110|h[The Emerald Nightmare: Piercing the Veil]|h|r", -- [18]
-					nil, -- [19]
-					"|cffffff00|Hquest:45381:110|h[Talisman of the Shal'dorei]|h|r", -- [20]
-					"|cffffff00|Hquest:45382:110|h[Talisman of the Shal'dorei]|h|r", -- [21]
-					"|cffffff00|Hquest:43917:-1|h[The Nighthold: Elisande]|h|r", -- [22]
-					nil, -- [23]
-					"|cffffff00|Hquest:45088:110|h[Trial of Valor: The Lost Army]|h|r", -- [24]
-					[33] = "|cffffff00|Hquest:47057:110|h[Unholy: The Folly of Levia Laurence]|h|r",
-					[37] = "|cffffff00|Hquest:47139:110|h[Mark of the Sentinax]|h|r",
-					[28] = "|cffffff00|Hquest:44891:110|h[2v2 Weekly Quest]|h|r",
-					[32] = "|cffffff00|Hquest:47046:110|h[Frost: The Thieving Apprentice]|h|r",
-					[29] = "|cffffff00|Hquest:44908:110|h[3v3 Weekly Quest]|h|r",
-					[26] = "|cffffff00|Hquest:42170:110|h[The Dreamweavers]|h|r",
-					[35] = "|cffffff00|Hquest:45172:-1|h[To Battle!]|h|r",
-					[30] = "|cffffff00|Hquest:44909:110|h[RBG Weekly]|h|r",
+					"|cffffff00|Hquest:42170:110|h[The Dreamweavers]|h|r", -- [17]
+					nil, -- [18]
+					"|cff40c040|Hquest:39499:100|h[Well of Souls]|h|r", -- [19]
+					"|cff40c040|Hquest:39500:100|h[Well of Souls]|h|r", -- [20]
+					"|cff40c040|Hquest:39501:100|h[Well of Souls]|h|r", -- [21]
+					nil, -- [22]
+					"|cffffff00|Hquest:43906:-1|h[Into the Nightmare: Fall of Cenarius]|h|r", -- [23]
+					"|cffffff00|Hquest:44283:110|h[The Emerald Nightmare: Piercing the Veil]|h|r", -- [24]
+					nil, -- [25]
+					"|cffffff00|Hquest:45088:110|h[Trial of Valor: The Lost Army]|h|r", -- [26]
+					nil, -- [27]
+					"|cffffff00|Hquest:44891:110|h[2v2 Weekly Quest]|h|r", -- [28]
+					"|cffffff00|Hquest:44908:110|h[3v3 Weekly Quest]|h|r", -- [29]
+					"|cffffff00|Hquest:44909:110|h[RBG Weekly]|h|r", -- [30]
+					nil, -- [31]
+					"|cffffff00|Hquest:47046:110|h[Frost: The Thieving Apprentice]|h|r", -- [32]
+					"|cffffff00|Hquest:47057:110|h[Unholy: The Folly of Levia Laurence]|h|r", -- [33]
+					nil, -- [34]
+					"|cffffff00|Hquest:45172:-1|h[To Battle!]|h|r", -- [35]
+					nil, -- [36]
+					"|cffffff00|Hquest:47139:110|h[Mark of the Sentinax]|h|r", -- [37]
 				},
-				["lastUpdate"] = 1498320792,
-				["HistorySize"] = 3039,
+				["lastUpdate"] = 1498349826,
+				["HistorySize"] = 3048,
 				["History"] = {
 					[1019] = 138379264,
 					[2] = 128,
@@ -6500,7 +6476,7 @@ DataStore_QuestsDB = {
 					[1084] = 214697950,
 					[1085] = 4052614929,
 					[1086] = 2352611328,
-					[1087] = 4289094417,
+					[1087] = 4293288721,
 					[1088] = 3459777534,
 					[1089] = 5126634,
 					[1090] = 4229955584,
@@ -6667,7 +6643,7 @@ DataStore_QuestsDB = {
 					[1271] = 268566533,
 					[1272] = 4197194,
 					[1273] = 2224057856,
-					[1274] = 2684952336,
+					[1274] = 2685083408,
 					[1275] = 1409286176,
 					[1276] = 1073774592,
 					[1277] = 4259315713,
@@ -6681,7 +6657,7 @@ DataStore_QuestsDB = {
 					[1286] = 882704392,
 					[1288] = 3489669121,
 					[1289] = 1073791056,
-					[1290] = 1280,
+					[1290] = 34048,
 					[1291] = 738197504,
 					[1292] = 384,
 					[1295] = 393222,
@@ -6790,7 +6766,7 @@ DataStore_QuestsDB = {
 					[1416] = 129024,
 					[1417] = 524336,
 					[1418] = 268435712,
-					[1419] = 551419904,
+					[1419] = 551419912,
 					[1420] = 21488,
 					[1422] = 4070414585,
 					[1423] = 19714,
@@ -6815,12 +6791,12 @@ DataStore_QuestsDB = {
 					[1459] = 1024,
 					[1461] = 25600,
 					[1462] = 7348224,
-					[1463] = 33554464,
+					[1463] = 33554976,
 					[1464] = 536936448,
 					[367] = 32768,
 					[1467] = 276824064,
 					[1469] = 16777216,
-					[1470] = 245762,
+					[1470] = 245760,
 					[1471] = 3892314113,
 					[1472] = 254,
 					[1474] = 2,
@@ -6828,6 +6804,7 @@ DataStore_QuestsDB = {
 					[1478] = 2097152,
 					[372] = 3791781889,
 					[373] = 293667474,
+					[1491] = 524288,
 					[374] = 739246404,
 					[375] = 32,
 					[376] = 524288,
@@ -6982,7 +6959,7 @@ DataStore_QuestsDB = {
 					[990] = 268435456,
 					[991] = 32768,
 					[992] = 4294144001,
-					[993] = 2,
+					[993] = 258,
 					[995] = 2097202,
 					[996] = 134217728,
 					[997] = 1107443648,
@@ -6997,18 +6974,20 @@ DataStore_QuestsDB = {
 					[1009] = 15728640,
 					[1010] = 256,
 					[1012] = 6291456,
-					[1013] = 112,
-					[1014] = 126976,
 					[369] = 2613248,
-					[1015] = 67108864,
+					[1013] = 112,
 					[1454] = 57384,
-					[1016] = 134217728,
-					[1446] = 2208,
-					[1398] = 3808395265,
-					[312] = 36996096,
-					[1018] = 32,
-					[246] = 256,
+					[1014] = 126976,
 					[895] = 8,
+					[1015] = 67108864,
+					[1398] = 3808395265,
+					[1016] = 134217728,
+					[312] = 36996096,
+					[1446] = 2208,
+					[246] = 256,
+					[1018] = 32,
+					[1490] = 8192,
+					[1494] = 131072,
 				},
 				["HistoryBuild"] = "24415",
 				["Quests"] = {
@@ -7019,25 +6998,25 @@ DataStore_QuestsDB = {
 					"0|Dalaran", -- [5]
 					"1|0|0|0", -- [6]
 					"1|0|154000|0", -- [7]
-					"1|0|194000|0", -- [8]
-					"0|Hellfire Citadel", -- [9]
-					"1|0|308000|0", -- [10]
-					"1|0|308000|0", -- [11]
-					"1|0|308000|0", -- [12]
-					"0|Highmountain", -- [13]
-					"1|0|0|0", -- [14]
+					"1|0|0|0", -- [8]
+					"0|Highmountain", -- [9]
+					"1|0|0|0", -- [10]
+					"1|0|194000|0", -- [11]
+					"0|The Nighthold", -- [12]
+					"1|0|388000|0", -- [13]
+					"1|0|388000|0", -- [14]
 					"1|0|194000|0", -- [15]
-					"0|The Emerald Nightmare", -- [16]
-					"1|0|194000|0", -- [17]
-					"1|0|388000|0", -- [18]
-					"0|The Nighthold", -- [19]
-					"1|0|388000|0", -- [20]
-					"1|0|388000|0", -- [21]
-					"1|0|194000|0", -- [22]
-					"0|Trial of Valor", -- [23]
-					"1|0|194000|0", -- [24]
-					"0|Val'sharah", -- [25]
-					"1|0|0|0", -- [26]
+					"0|Val'sharah", -- [16]
+					"1|0|0|0", -- [17]
+					"0|Hellfire Citadel", -- [18]
+					"1|0|308000|0", -- [19]
+					"1|0|308000|0", -- [20]
+					"1|0|308000|0", -- [21]
+					"0|The Emerald Nightmare", -- [22]
+					"1|0|194000|0", -- [23]
+					"1|0|388000|0", -- [24]
+					"0|Trial of Valor", -- [25]
+					"1|0|194000|0", -- [26]
 					"0|Missing header! (quest designers)", -- [27]
 					"1|0|0|0", -- [28]
 					"1|0|0|0", -- [29]
@@ -7051,21 +7030,18 @@ DataStore_QuestsDB = {
 					"1|0|388000|0", -- [37]
 				},
 				["Rewards"] = {
-					[24] = "c|143518|1|1",
-					[26] = "r|151464|1|1,r|142001|1|1",
-					[14] = "r|151465|1|1,r|142002|1|1",
-					[28] = "r|151497|1|1",
-					[4] = "c|146933|1|1,c|146929|1|1,c|146931|1|1",
-					[30] = "r|145584|1|1,r|144281|1|1",
-					[15] = "c|140728|1|1,c|140724|1|1",
-					[17] = "r|139487|1|1",
-					[29] = "r|145536|1|1",
-					[6] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,r|151470|1|1,r|142007|1|1",
-					[20] = "r|141324|1|1",
-					[21] = "r|141325|1|1",
-					[22] = "r|140152|1|1",
-					[35] = "r|143606|1|1",
+					[13] = "r|141324|1|1",
+					[26] = "c|143518|1|1",
+					[14] = "r|141325|1|1",
+					[15] = "r|140152|1|1",
+					[8] = "r|151423|1|1",
+					[17] = "r|151464|1|1,r|142001|1|1",
+					[10] = "r|151465|1|1,r|142002|1|1",
 					[37] = "r|146127|1|1",
+					[11] = "c|140728|1|1,c|140724|1|1",
+					[6] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,r|151470|1|1,r|142007|1|1",
+					[23] = "r|139487|1|1",
+					[4] = "c|146933|1|1,c|146929|1|1,c|146931|1|1",
 				},
 			},
 			["Default.Grim Batol.Gnomalock"] = {
@@ -7520,32 +7496,32 @@ DataStore_QuestsDB = {
 				["lastUpdate"] = 1497663619,
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["HistoryLastUpdate"] = 1498320900,
+				["HistoryLastUpdate"] = 1498333449,
 				["QuestLinks"] = {
 					nil, -- [1]
-					"|cffffff00|Hquest:46244:110|h[Altar of the Aegis]|h|r", -- [2]
+					"|cffffff00|Hquest:45292:110|h[Return to Karazhan: Rebooting the Cleaner]|h|r", -- [2]
 					nil, -- [3]
-					"|cffffff00|Hquest:43179:110|h[The Kirin Tor of Dalaran]|h|r", -- [4]
-					"|cffffff00|Hquest:45159:-1|h[Cubic Conundrum]|h|r", -- [5]
-					"|cffffff00|Hquest:47793:-1|h[The Spoiled Sample]|h|r", -- [6]
-					nil, -- [7]
-					"|cffffff00|Hquest:42233:110|h[Highmountain Tribes]|h|r", -- [8]
+					"|cffffff00|Hquest:46244:110|h[Altar of the Aegis]|h|r", -- [4]
+					nil, -- [5]
+					"|cffffff00|Hquest:43179:110|h[The Kirin Tor of Dalaran]|h|r", -- [6]
+					"|cffffff00|Hquest:45159:-1|h[Cubic Conundrum]|h|r", -- [7]
+					"|cffffff00|Hquest:47793:-1|h[The Spoiled Sample]|h|r", -- [8]
 					nil, -- [9]
-					"|cffffff00|Hquest:40883:110|h[Fate of the Guard]|h|r", -- [10]
+					"|cffffff00|Hquest:42233:110|h[Highmountain Tribes]|h|r", -- [10]
 					nil, -- [11]
-					"|cffffff00|Hquest:44563:110|h[Redemption for the Fallen]|h|r", -- [12]
-					"|cffff8040|Hquest:42488:113|h[Thalyssra's Abode]|h|r", -- [13]
-					nil, -- [14]
-					"|cffffff00|Hquest:43546:-1|h[Into the Nightmare: Il'gynoth]|h|r", -- [15]
+					"|cffffff00|Hquest:40883:110|h[Fate of the Guard]|h|r", -- [12]
+					nil, -- [13]
+					"|cffffff00|Hquest:44563:110|h[Redemption for the Fallen]|h|r", -- [14]
+					"|cffff8040|Hquest:42488:113|h[Thalyssra's Abode]|h|r", -- [15]
 					nil, -- [16]
-					"|cffffff00|Hquest:45381:110|h[Talisman of the Shal'dorei]|h|r", -- [17]
-					"|cffffff00|Hquest:45382:110|h[Talisman of the Shal'dorei]|h|r", -- [18]
-					nil, -- [19]
-					"|cffffff00|Hquest:42170:110|h[The Dreamweavers]|h|r", -- [20]
+					"|cffffff00|Hquest:43546:-1|h[Into the Nightmare: Il'gynoth]|h|r", -- [17]
+					nil, -- [18]
+					"|cffffff00|Hquest:45382:110|h[Talisman of the Shal'dorei]|h|r", -- [19]
+					"|cffffff00|Hquest:45381:110|h[Talisman of the Shal'dorei]|h|r", -- [20]
 					nil, -- [21]
-					"|cff40c040|Hquest:39501:100|h[Well of Souls]|h|r", -- [22]
+					"|cffffff00|Hquest:42170:110|h[The Dreamweavers]|h|r", -- [22]
 					nil, -- [23]
-					"|cffffff00|Hquest:45292:110|h[Return to Karazhan: Rebooting the Cleaner]|h|r", -- [24]
+					"|cff40c040|Hquest:39501:100|h[Well of Souls]|h|r", -- [24]
 					nil, -- [25]
 					"|cffffff00|Hquest:44891:110|h[2v2 Weekly Quest]|h|r", -- [26]
 					"|cffffff00|Hquest:44908:110|h[3v3 Weekly Quest]|h|r", -- [27]
@@ -7566,8 +7542,8 @@ DataStore_QuestsDB = {
 					[49] = "|cff808080|Hquest:3861:1|h[CLUCK!]|h|r",
 					[45] = "|cffffff00|Hquest:44466:110|h[An Unclear Path]|h|r",
 				},
-				["lastUpdate"] = 1498321024,
-				["HistorySize"] = 2951,
+				["lastUpdate"] = 1498335155,
+				["HistorySize"] = 2954,
 				["History"] = {
 					[1019] = 146784256,
 					[2] = 128,
@@ -7901,7 +7877,7 @@ DataStore_QuestsDB = {
 					[1411] = 8388608,
 					[1416] = 2048,
 					[1418] = 256,
-					[1419] = 1966080,
+					[1419] = 1966088,
 					[1420] = 16624,
 					[1422] = 42270808,
 					[1423] = 17728,
@@ -7930,6 +7906,7 @@ DataStore_QuestsDB = {
 					[1478] = 2097152,
 					[372] = 1024,
 					[373] = 2178,
+					[1491] = 524288,
 					[374] = 268435456,
 					[375] = 36,
 					[1515] = 512,
@@ -8083,6 +8060,7 @@ DataStore_QuestsDB = {
 					[997] = 1107443648,
 					[998] = 92383233,
 					[999] = 2130771462,
+					[1490] = 8192,
 					[1000] = 4399492,
 					[1182] = 1610612736,
 					[1001] = 768,
@@ -8125,30 +8103,30 @@ DataStore_QuestsDB = {
 				},
 				["HistoryBuild"] = "24415",
 				["Quests"] = {
-					"0|Cathedral of Eternal Night", -- [1]
-					"1|0|0|0", -- [2]
-					"0|Dalaran", -- [3]
+					"0|Karazhan", -- [1]
+					"1|0|776000|0", -- [2]
+					"0|Cathedral of Eternal Night", -- [3]
 					"1|0|0|0", -- [4]
-					"1|0|0|0", -- [5]
-					"1|0|194000|0", -- [6]
-					"0|Highmountain", -- [7]
-					"1|0|0|0", -- [8]
-					"0|Moon Guard Stronghold", -- [9]
+					"0|Dalaran", -- [5]
+					"1|0|0|0", -- [6]
+					"1|0|0|0", -- [7]
+					"1|0|194000|0", -- [8]
+					"0|Highmountain", -- [9]
 					"1|0|0|0", -- [10]
-					"0|Suramar", -- [11]
-					"1|0|97000|0", -- [12]
-					"1|0|206000|0", -- [13]
-					"0|The Emerald Nightmare", -- [14]
-					"1|0|194000|0", -- [15]
-					"0|The Nighthold", -- [16]
-					"1|0|388000|0", -- [17]
-					"1|0|388000|0", -- [18]
-					"0|Val'sharah", -- [19]
-					"1|0|0|0", -- [20]
-					"0|Hellfire Citadel", -- [21]
-					"1|0|308000|0", -- [22]
-					"0|Karazhan", -- [23]
-					"1|0|776000|0", -- [24]
+					"0|Moon Guard Stronghold", -- [11]
+					"1|0|0|0", -- [12]
+					"0|Suramar", -- [13]
+					"1|0|97000|0", -- [14]
+					"1|0|206000|0", -- [15]
+					"0|The Emerald Nightmare", -- [16]
+					"1|0|194000|0", -- [17]
+					"0|The Nighthold", -- [18]
+					"1|0|388000|0", -- [19]
+					"1|0|388000|0", -- [20]
+					"0|Val'sharah", -- [21]
+					"1|0|0|0", -- [22]
+					"0|Hellfire Citadel", -- [23]
+					"1|0|308000|0", -- [24]
 					"0|Missing header! (quest designers)", -- [25]
 					"1|0|0|0", -- [26]
 					"1|0|0|0", -- [27]
@@ -8176,18 +8154,18 @@ DataStore_QuestsDB = {
 					"1|0|0|0", -- [49]
 				},
 				["Rewards"] = {
-					[24] = "c|142461|1|1",
-					[13] = "r|142054|1|1",
-					[2] = "c|146930|1|1,c|146934|1|1,c|146929|1|1",
-					[15] = "r|139484|1|1",
-					[8] = "r|151465|1|1,r|142002|1|1",
-					[17] = "r|141324|1|1",
-					[18] = "r|141325|1|1",
-					[10] = "r|141671|1|1",
-					[20] = "r|151464|1|1,r|142001|1|1",
+					[14] = "r|141685|1|1",
+					[2] = "c|142461|1|1",
+					[4] = "c|146930|1|1,c|146934|1|1,c|146929|1|1",
 					[30] = "s|201697",
-					[12] = "r|141685|1|1",
-					[4] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,r|151470|1|1,r|142007|1|1",
+					[17] = "r|139484|1|1",
+					[10] = "r|151465|1|1,r|142002|1|1",
+					[19] = "r|141325|1|1",
+					[20] = "r|141324|1|1",
+					[22] = "r|151464|1|1,r|142001|1|1",
+					[6] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,r|151470|1|1,r|142007|1|1",
+					[12] = "r|141671|1|1",
+					[15] = "r|142054|1|1",
 				},
 			},
 			["Default.Shattered Hand.Bawsi"] = {

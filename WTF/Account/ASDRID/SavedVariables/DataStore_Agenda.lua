@@ -53,18 +53,18 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1423512183,
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1498321404,
+				["lastUpdate"] = 1498429020,
 			},
 			["Default.Grim Batol.Krixidh"] = {
 				["lastUpdate"] = 1497663528,
 			},
 			["Default.Grim Batol.Zuriz"] = {
 				["DungeonIDs"] = {
-					["The Nighthold Heroic|262781357"] = "316651|1498316546|0|1",
-					["Tomb of Sargeras Heroic|871426667"] = "316651|1498316546|0|1",
-					["Tomb of Sargeras Normal|398558097"] = "316651|1498316546|0|1",
+					["The Nighthold Heroic|262781357"] = "204144|1498429054|0|1",
+					["Tomb of Sargeras Heroic|871426667"] = "204144|1498429054|0|1",
+					["Tomb of Sargeras Normal|398558097"] = "204144|1498429054|0|1",
 				},
-				["lastUpdate"] = 1498320633,
+				["lastUpdate"] = 1498429098,
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
 				["lastUpdate"] = 1420506362,
@@ -97,7 +97,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1451199279,
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1498321219,
+				["lastUpdate"] = 1498336706,
 			},
 			["Default.Shattered Hand.Donchyo"] = {
 				["lastUpdate"] = 1470839453,
@@ -117,7 +117,10 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1465684901,
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1498283044,
+				["DungeonIDs"] = {
+					["Maw of Souls Mythic|871871810"] = "204223|1498428975|0|0",
+				},
+				["lastUpdate"] = 1498428977,
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684610,
@@ -126,13 +129,13 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1442247547,
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1498320862,
+				["lastUpdate"] = 1498350136,
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["lastUpdate"] = 1497663635,
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1498321024,
+				["lastUpdate"] = 1498335168,
 			},
 			["Default.Shattered Hand.Bawsi"] = {
 				["lastUpdate"] = 1424871492,

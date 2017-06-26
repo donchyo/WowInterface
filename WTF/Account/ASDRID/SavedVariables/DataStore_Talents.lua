@@ -267,7 +267,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Zetiz"] = {
 				["EquippedArtifact"] = "The Kingslayers",
-				["lastUpdate"] = 1498321392,
+				["lastUpdate"] = 1498429018,
 				["Specializations"] = {
 					6517, -- [1]
 					10998, -- [2]
@@ -321,7 +321,7 @@ DataStore_TalentsDB = {
 					["The Kingslayers"] = {
 						["tier"] = 2,
 						["rank"] = 48,
-						["pointsRemaining"] = 8313350,
+						["pointsRemaining"] = 18513600,
 					},
 					["Fangs of the Devourer"] = {
 						["rank"] = 16,
@@ -361,7 +361,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Zuriz"] = {
 				["EquippedArtifact"] = "Sharas'dal, Scepter of Tides",
-				["lastUpdate"] = 1498316556,
+				["lastUpdate"] = 1498429050,
 				["Specializations"] = {
 					12181, -- [1]
 					1499, -- [2]
@@ -380,7 +380,7 @@ DataStore_TalentsDB = {
 						["tier"] = 2,
 					},
 					["Sharas'dal, Scepter of Tides"] = {
-						["pointsRemaining"] = 367475132,
+						["pointsRemaining"] = 431876682,
 						["rank"] = 55,
 						["tier"] = 2,
 					},
@@ -829,7 +829,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Kroxi"] = {
 				["EquippedArtifact"] = "Scale of the Earth-Warder",
-				["lastUpdate"] = 1498321214,
+				["lastUpdate"] = 1498336706,
 				["Class"] = "WARRIOR",
 				["ArtifactKnowledge"] = 40,
 				["ArtifactKnowledgeMultiplier"] = 40001,
@@ -891,7 +891,7 @@ DataStore_TalentsDB = {
 					["Scale of the Earth-Warder"] = {
 						["tier"] = 2,
 						["rank"] = 50,
-						["pointsRemaining"] = 227778735,
+						["pointsRemaining"] = 263779585,
 					},
 					["Warswords of the Valarjar"] = {
 						["rank"] = 36,
@@ -1107,7 +1107,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Nyrith"] = {
 				["EquippedArtifact"] = "Claws of Ursoc",
-				["lastUpdate"] = 1498283040,
+				["lastUpdate"] = 1498428974,
 				["Class"] = "DRUID",
 				["ArtifactKnowledge"] = 40,
 				["ArtifactKnowledgeMultiplier"] = 40001,
@@ -1168,14 +1168,14 @@ DataStore_TalentsDB = {
 				["Specializations"] = {
 					5631, -- [1]
 					15317, -- [2]
-					6783, -- [3]
-					16362, -- [4]
+					7038, -- [3]
+					16378, -- [4]
 				},
 				["Artifacts"] = {
 					["Claws of Ursoc"] = {
 						["rank"] = 54,
 						["tier"] = 2,
-						["pointsRemaining"] = 527582958,
+						["pointsRemaining"] = 603784758,
 					},
 					["Scythe of Elune"] = {
 						["rank"] = 36,
@@ -1188,8 +1188,8 @@ DataStore_TalentsDB = {
 						["pointsRemaining"] = 11084770,
 					},
 					["G'Hanir, the Mother Tree"] = {
-						["rank"] = 44,
-						["pointsRemaining"] = 301380720,
+						["rank"] = 47,
+						["pointsRemaining"] = 130584570,
 						["tier"] = 2,
 					},
 				},
@@ -1315,12 +1315,12 @@ DataStore_TalentsDB = {
 					["Maw of the Damned"] = {
 						["tier"] = 2,
 						["rank"] = 50,
-						["pointsRemaining"] = 275462450,
+						["pointsRemaining"] = 482067500,
 					},
 				},
 				["ActiveTalents"] = 1,
 				["Class"] = "DEATHKNIGHT",
-				["lastUpdate"] = 1498320694,
+				["lastUpdate"] = 1498350084,
 				["Specializations"] = {
 					7575, -- [1]
 					12015, -- [2]
@@ -1393,10 +1393,10 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Krixi"] = {
 				["EquippedArtifact"] = "Truthguard",
-				["lastUpdate"] = 1498321024,
+				["lastUpdate"] = 1498335155,
 				["Specializations"] = {
 					15007, -- [1]
-					10646, -- [2]
+					10582, -- [2]
 					9849, -- [3]
 				},
 				["ArtifactKnowledge"] = 40,
@@ -1404,7 +1404,7 @@ DataStore_TalentsDB = {
 					["Truthguard"] = {
 						["tier"] = 2,
 						["rank"] = 46,
-						["pointsRemaining"] = 306094511,
+						["pointsRemaining"] = 345095461,
 					},
 					["The Silver Hand"] = {
 						["rank"] = 42,

@@ -32,5 +32,5 @@ FrameLevel: 1
 Anchor: TOPLEFT
 X: 16
 Y: -116
-W: 338
+W: 448
 H: 444

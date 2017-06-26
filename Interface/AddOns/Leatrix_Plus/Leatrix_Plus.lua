@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.2.06 (14th June 2017, www.leatrix.com)
+-- 	Leatrix Plus 7.2.07 (26th June 2017, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.2.06"
+	LeaPlusLC["AddonVer"] = "7.2.07"
 
 ----------------------------------------------------------------------
 -- 	Locale
@@ -2282,18 +2282,18 @@
 			--[[koKR]] "교전 알림 숨김. \n\n던전,공격대,시나리오,침략,전역퀘스트 포함",
 			x)
 
-			Ln("Hide garrison alerts",
-			--[[zhCN]] "隐藏要塞通知",
-			--[[zhTW]] "隱藏要塞通知",
-			--[[ruRU]] "Скрыть оповещения гарнизона",
-			--[[koKR]] "주둔지 경보 숨김",
+			Ln("Hide order hall and garrison alerts",
+			--[[zhCN]] "",
+			--[[zhTW]] "",
+			--[[ruRU]] "",
+			--[[koKR]] "",
 			x)
 
-			Ln("If checked, garrison alerts will not be shown.\n\nThis includes buildings, followers, missions and talents.",
-			--[[zhCN]] "勾选后，要塞的提示信息不再显示。\n\n这包括了要塞建筑、追随者、任务及天赋的通知。",
-			--[[zhTW]] "勾選後，要塞的提示訊息不再顯示。\n\n這包含了建築、追隨者、任務與天賦。",
-			--[[ruRU]] "Если флажок установлен, оповещения из гарнизона не будут отображены.",
-			--[[koKR]] "주둔지 경보 숨김. 건물,추종자,임무 포함",
+			Ln("If checked, order hall and garrison alerts will not be shown.\n\nThis includes buildings, followers, missions and talents.",
+			--[[zhCN]] "",
+			--[[zhTW]] "",
+			--[[ruRU]] "",
+			--[[koKR]] "",
 			x)
 
 			Ln("Hide loot alerts",
@@ -2516,21 +2516,21 @@
 		x)
 
 		----------------------------------------------------------------------
-		-- Disable screen glow
+		-- Disable screen effects
 		----------------------------------------------------------------------
 
-		Ln("Disable screen glow",
-		--[[zhCN]] "禁用画面晕眩",
-		--[[zhTW]] "停用畫面光暈效果",
-		--[[ruRU]] "Отключить свечение экрана",
-		--[[koKR]] "빛 효과 비활성",
+		Ln("Disable screen effects",
+		--[[zhCN]] "",
+		--[[zhTW]] "",
+		--[[ruRU]] "",
+		--[[koKR]] "",
 		x)
 
-		Ln("If checked, the screen glow effect will be disabled.\n\nEnabling this option may increase your overall graphics performance and reduce nausea.",
-		--[[zhCN]] "勾选后，画面的景深会被禁用。\n\n启用这个选项可能会提高你的画面表现，减少晕眩效果。",
-		--[[zhTW]] "勾選後，畫面的光暈效果會被停用。\n\n啟用這個選項可能會提高你的畫面表現，減少暈眩效果。",
-		--[[ruRU]] "Если флажок установлен, эффекты свечения экрана будут отключены.\n\nВключение этого параметра может увеличить общую производительность игры и уменьшить тошноту.",
-		--[[koKR]] "화면의 울릉거림 감소, 성능 증가.",
+		Ln("If checked, the screen glow effect, death effect and special effects (such as invisibility) will be disabled.",
+		--[[zhCN]] "",
+		--[[zhTW]] "",
+		--[[ruRU]] "",
+		--[[koKR]] "",
 		x)
 
 		----------------------------------------------------------------------
@@ -3824,7 +3824,7 @@
 		or	(LeaPlusLC["NoCommandBar"]			~= LeaPlusDB["NoCommandBar"])			-- Hide order hall bar
 
 		-- System
-		or	(LeaPlusLC["NoShaders"]				~= LeaPlusDB["NoShaders"])				-- Disable screen glow
+		or	(LeaPlusLC["NoShaders"]				~= LeaPlusDB["NoShaders"])				-- Disable screen effects
 		or	(LeaPlusLC["MaxCameraZoom"]			~= LeaPlusDB["MaxCameraZoom"])			-- Max camera zoom
 		or	(LeaPlusLC["ViewPortEnable"]		~= LeaPlusDB["ViewPortEnable"])			-- Enable viewport
 		or	(LeaPlusLC["NoRestedEmotes"]		~= LeaPlusDB["NoRestedEmotes"])			-- Silence rested emotes
@@ -6959,14 +6959,13 @@
 		end
 
 		----------------------------------------------------------------------
-		-- Disable screen glow
+		-- Disable screen effects
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["NoShaders"] == "On" then
-
-			-- Disable screen glow
 			SetCVar("ffxGlow", "0")
-
+			SetCVar("ffxDeath", "0")
+			SetCVar("ffxNether", "0")
 		end
 
 		----------------------------------------------------------------------
@@ -7311,7 +7310,7 @@
 
 			end)
 
-			-- Show configuration panal when options panel button is clicked
+			-- Show configuration panel when options panel button is clicked
 			LeaPlusCB["ManageBuffBtn"]:SetScript("OnClick", function()
 				if IsShiftKeyDown() and IsControlKeyDown() then
 					-- Preset profile
@@ -7703,7 +7702,7 @@
 			LeaPlusLC:MakeTx(AlertPanel, "Settings", 16, -72)
 			LeaPlusLC:MakeCB(AlertPanel, "NoAchieveAlerts", "Hide achievement alerts", 16, -92, false, "If checked, achievement alerts will not be shown.")
 			LeaPlusLC:MakeCB(AlertPanel, "NoEncounterAlerts", "Hide encounter alerts", 16, -112, false, "If checked, encounter alerts will not be shown.\n\nThis includes dungeons, raids, scenarios, invasions, guild challenges and world quests.")
-			LeaPlusLC:MakeCB(AlertPanel, "NoGarrisonAlerts", "Hide garrison alerts", 16, -132, false, "If checked, garrison alerts will not be shown.\n\nThis includes buildings, followers, missions and talents.")
+			LeaPlusLC:MakeCB(AlertPanel, "NoGarrisonAlerts", "Hide order hall and garrison alerts", 16, -132, false, "If checked, order hall and garrison alerts will not be shown.\n\nThis includes buildings, followers, missions and talents.")
 			LeaPlusLC:MakeCB(AlertPanel, "NoLootAlerts", "Hide loot alerts", 16, -152, false, "If checked, loot alerts will not be shown.\n\nThis includes items, money, honor, resources and store purchases.")
 			LeaPlusLC:MakeCB(AlertPanel, "NoProfessionAlerts", "Hide profession alerts", 16, -172, false, "If checked, profession alerts will not be shown.\n\nThis includes recipes and digsites.")
 
@@ -10519,7 +10518,7 @@
 				LeaPlusLC:LoadVarChk("NoAlerts", "Off")						-- Hide alerts
 				LeaPlusLC:LoadVarChk("NoAchieveAlerts", "On")				-- Hide achievement alerts
 				LeaPlusLC:LoadVarChk("NoEncounterAlerts", "On")				-- Hide encounter alerts
-				LeaPlusLC:LoadVarChk("NoGarrisonAlerts", "On")				-- Hide garrison alerts
+				LeaPlusLC:LoadVarChk("NoGarrisonAlerts", "On")				-- Hide order hall and garrison alerts
 				LeaPlusLC:LoadVarChk("NoLootAlerts", "On")					-- Hide loot alerts
 				LeaPlusLC:LoadVarChk("NoProfessionAlerts", "On")			-- Hide profession alerts
 
@@ -10534,7 +10533,7 @@
 				LeaPlusLC:LoadVarChk("NoCommandBar", "Off")					-- Hide order hall bar
 
 				-- System
-				LeaPlusLC:LoadVarChk("NoShaders", "Off")					-- Disable screen glow
+				LeaPlusLC:LoadVarChk("NoShaders", "Off")					-- Disable screen effects
 				LeaPlusLC:LoadVarChk("MaxCameraZoom", "Off")				-- Max camera zoom
 				LeaPlusLC:LoadVarChk("ViewPortEnable", "Off")				-- Enable viewport
 				LeaPlusLC:LoadVarNum("ViewPortTop", 0, 0, 300)				-- Top border
@@ -10856,10 +10855,12 @@
 			end
 		end
 
-		-- Manage shader support
+		-- Manage screen effects
 		if LeaPlusDB["NoShaders"] == "On" then
 			if wipe or (not wipe and LeaPlusLC["NoShaders"] == "Off") then
 				SetCVar("ffxGlow", "1")
+				SetCVar("ffxDeath", "1")
+				SetCVar("ffxNether", "1")
 			end
 		end
 
@@ -11626,8 +11627,8 @@
 			elseif str == "config" then
 				-- Show maximum camera distance
 				LeaPlusLC:Print(LeaPlusLC:Translate("Camera distance") .. ": |cffffffff" .. GetCVar("cameraDistanceMaxZoomFactor"))
-				-- Show shader status
-				LeaPlusLC:Print(LeaPlusLC:Translate("Shaders") .. ": |cffffffff" .. GetCVar("ffxGlow"))
+				-- Show screen effects
+				LeaPlusLC:Print(LeaPlusLC:Translate("Shaders") .. ": |cffffffff" .. GetCVar("ffxGlow") .. ", " .. GetCVar("ffxDeath") .. ", " .. GetCVar("ffxNether"))
 				-- Show particle density
 				LeaPlusLC:Print(LeaPlusLC:Translate("Particle density") .. ": |cffffffff" .. GetCVar("particleDensity"))
 				LeaPlusLC:Print(LeaPlusLC:Translate("Weather density") .. ": |cffffffff" .. GetCVar("weatherDensity"))
@@ -11901,7 +11902,7 @@
 				LeaPlusDB["NoAlerts"] = "On"					-- Hide alerts
 				LeaPlusDB["NoAchieveAlerts"] = "On"				-- Hide achievement alerts
 				LeaPlusDB["NoEncounterAlerts"] = "On"			-- Hide encounter alerts
-				LeaPlusDB["NoGarrisonAlerts"] = "On"			-- Hide garrison alerts
+				LeaPlusDB["NoGarrisonAlerts"] = "On"			-- Hide order hall and garrison alerts
 				LeaPlusDB["NoLootAlerts"] = "On"				-- Hide loot alerts
 				LeaPlusDB["NoProfessionAlerts"] = "On"			-- Hide profession alerts
 
@@ -11916,7 +11917,7 @@
 				LeaPlusDB["NoCommandBar"] = "On"				-- Hide order hall bar
 
 				-- System
-				LeaPlusDB["NoShaders"] = "On"					-- Disable screen glow
+				LeaPlusDB["NoShaders"] = "On"					-- Disable screen effects
 				LeaPlusDB["MaxCameraZoom"] = "On"				-- Max camera zoom
 				LeaPlusDB["ViewPortEnable"] = "On"				-- Enable viewport
 				LeaPlusDB["ViewPortResize"] = "On"				-- Resize game world
@@ -12313,7 +12314,7 @@
 	pg = "Page7";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Graphics and Sound"		, 	146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoShaders"					, 	"Disable screen glow"			, 	146, -92, 	true,	"If checked, the screen glow effect will be disabled.\n\nEnabling this option may increase your overall graphics performance and reduce nausea.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoShaders"					, 	"Disable screen effects"		, 	146, -92, 	true,	"If checked, the screen glow effect, death effect and special effects (such as invisibility) will be disabled.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -112, 	true,	"If checked, you will be able to zoom out to a greater distance.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ViewPortEnable"			,	"Enable viewport"				,	146, -132, 	true,	"If checked, you will be able to create a viewport.  A viewport adds adjustable black borders around the game world.\n\nThe borders are placed on top of the game world but under the UI so you can place UI elements over them.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -152, 	true,	"If checked, emote sounds will be silenced while your character is:\n\n- resting\n- in a pet battle\n- at the Hathill Market\n- at the Grim Guzzler\n\nEmote sounds will be enabled when none of the above apply.")

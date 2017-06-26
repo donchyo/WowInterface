@@ -36,7 +36,7 @@ Prat:AddModuleToLoad(function()
   local PL = Prat:GetLocalizer({})
 
   --[===[@debug@
-  PL:AddLocale("enUS", {
+  PL:AddLocale(PRAT_MODULE, "enUS", {
     ["ChannelColorMemory"] = true,
     ["Remembers the colors of each channel name."] = true,
     ["(%w+)%s?(.*)"] = "([^%s]+)%s?(.*)",
@@ -51,88 +51,114 @@ Prat:AddModuleToLoad(function()
 
  L=
 {
-["(%w+)%s?(.*)"] = "(%S+)%s?(.*)",
-["ChannelColorMemory"] = true,
-["Remembers the colors of each channel name."] = true,
+	["ChannelColorMemory"] = {
+		["(%w+)%s?(.*)"] = "(%S+)%s?(.*)",
+		["ChannelColorMemory"] = true,
+		["Remembers the colors of each channel name."] = true,
+	}
 }
 
-   PL:AddLocale("enUS",L)
+   PL:AddLocale(PRAT_MODULE, "enUS",L)
 
 
  L=
 {
-["ChannelColorMemory"] = "Couleur Canal",
-["Remembers the colors of each channel name."] = "Mémorise la couleur de chaque nom de canal.",
+	["ChannelColorMemory"] = {
+		--Translation missing 
+		-- ["(%w+)%s?(.*)"] = "",
+		["ChannelColorMemory"] = "Couleur Canal",
+		["Remembers the colors of each channel name."] = "Mémorise la couleur de chaque nom de canal.",
+	}
 }
 
-   PL:AddLocale("frFR",L)
+   PL:AddLocale(PRAT_MODULE, "frFR",L)
 
 
  L=
 {
-["(%w+)%s?(.*)"] = true,
-["ChannelColorMemory"] = true,
-["Remembers the colors of each channel name."] = "Speichert die Farbe jedes Kanalnamens.",
+	["ChannelColorMemory"] = {
+		["(%w+)%s?(.*)"] = true,
+		["ChannelColorMemory"] = true,
+		["Remembers the colors of each channel name."] = "Speichert die Farbe jedes Kanalnamens.",
+	}
 }
 
-   PL:AddLocale("deDE",L)
+   PL:AddLocale(PRAT_MODULE, "deDE",L)
 
 
  L=
 {
-["(%w+)%s?(.*)"] = "(%S+)%s?(.*)",
-["ChannelColorMemory"] = "채널 색상 기억",
-["Remembers the colors of each channel name."] = "각 채널 이름의 색상을 기억합니다.",
+	["ChannelColorMemory"] = {
+		["(%w+)%s?(.*)"] = "(%S+)%s?(.*)",
+		["ChannelColorMemory"] = "채널 색상 기억",
+		["Remembers the colors of each channel name."] = "각 채널 이름의 색상을 기억합니다.",
+	}
 }
 
-   PL:AddLocale("koKR",L)
+   PL:AddLocale(PRAT_MODULE, "koKR",L)
 
 
  L=
 {
+	["ChannelColorMemory"] = {
+		--Translation missing 
+		-- ["(%w+)%s?(.*)"] = "",
+		--Translation missing 
+		-- ["ChannelColorMemory"] = "",
+		--Translation missing 
+		-- ["Remembers the colors of each channel name."] = "",
+	}
 }
 
-   PL:AddLocale("esMX",L)
+   PL:AddLocale(PRAT_MODULE, "esMX",L)
 
 
  L=
 {
-["(%w+)%s?(.*)"] = true,
-["ChannelColorMemory"] = "Сохранение цветов каналов",
-["Remembers the colors of each channel name."] = "Запоминает цвета названия каждого канала.",
+	["ChannelColorMemory"] = {
+		["(%w+)%s?(.*)"] = true,
+		["ChannelColorMemory"] = "Сохранение цветов каналов",
+		["Remembers the colors of each channel name."] = "Запоминает цвета названия каждого канала.",
+	}
 }
 
-   PL:AddLocale("ruRU",L)
+   PL:AddLocale(PRAT_MODULE, "ruRU",L)
 
 
  L=
 {
-["(%w+)%s?(.*)"] = true,
-["ChannelColorMemory"] = "频道颜色存储",
-["Remembers the colors of each channel name."] = "记住每个频道名称的颜色",
+	["ChannelColorMemory"] = {
+		["(%w+)%s?(.*)"] = true,
+		["ChannelColorMemory"] = "频道颜色存储",
+		["Remembers the colors of each channel name."] = "记住每个频道名称的颜色",
+	}
 }
 
-   PL:AddLocale("zhCN",L)
+   PL:AddLocale(PRAT_MODULE, "zhCN",L)
 
 
  L=
 {
-["(%w+)%s?(.*)"] = "(%S+)%s?(.*)",
-["ChannelColorMemory"] = "MemoriaColorCanal",
-["Remembers the colors of each channel name."] = "Recordar los colores de cada nombre de canal.",
+	["ChannelColorMemory"] = {
+		["(%w+)%s?(.*)"] = "(%S+)%s?(.*)",
+		["ChannelColorMemory"] = "MemoriaColorCanal",
+		["Remembers the colors of each channel name."] = "Recordar los colores de cada nombre de canal.",
+	}
 }
 
-   PL:AddLocale("esES",L)
+   PL:AddLocale(PRAT_MODULE, "esES",L)
 
 
  L=
 {
-["(%w+)%s?(.*)"] = "(%S+)%s?(.*)",
-["ChannelColorMemory"] = "頻道顏色記憶",
-["Remembers the colors of each channel name."] = "記住每個頻道顏色的名稱。",
+	["ChannelColorMemory"] = {
+		["(%w+)%s?(.*)"] = "(%S+)%s?(.*)",
+		["ChannelColorMemory"] = "頻道顏色記憶",
+		["Remembers the colors of each channel name."] = "記住每個頻道顏色的名稱。",
+	}
 }
 
-   PL:AddLocale("zhTW",L)
+   PL:AddLocale(PRAT_MODULE, "zhTW",L)
 
 
  end

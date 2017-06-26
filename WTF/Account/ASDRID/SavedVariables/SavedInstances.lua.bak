@@ -261,7 +261,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 49839,
 			["Faction"] = "Alliance",
 			["ILe"] = 874.9375,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["Quests"] = {
 			},
 			["Race"] = "Gnome",
@@ -281,7 +281,7 @@ SavedInstancesDB = {
 			["Show"] = "never",
 			["IL"] = 9.73333358764649,
 			["PlayedLevel"] = 1127,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["ILe"] = 5.66666650772095,
 			["Skills"] = {
 			},
@@ -290,9 +290,9 @@ SavedInstancesDB = {
 			["Zone"] = "Sunstrider Isle",
 		},
 		["Krixidk - Grim Batol"] = {
-			["lastbossyell"] = "Dantalionax: Mythic Keystone",
+			["lastbossyell"] = "Cordana Felsong: Mythic Keystone",
 			["WeeklyResetTime"] = 1498633199,
-			["LastSeen"] = 1498320863,
+			["LastSeen"] = 1498350149,
 			["Order"] = 50,
 			["Class"] = "DEATHKNIGHT",
 			["currency"] = {
@@ -322,27 +322,30 @@ SavedInstancesDB = {
 					["totalMax"] = 2000,
 					["amount"] = 208,
 				},
+				[1273] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 6,
+					["amount"] = 1,
+				},
 				[1149] = {
 					["totalMax"] = 5000,
 					["amount"] = 4524,
 				},
-				[1275] = {
-					["amount"] = 12,
-				},
 				[1220] = {
-					["amount"] = 12382,
+					["amount"] = 11982,
 				},
-				[391] = {
-					["amount"] = 14,
+				[1314] = {
+					["weeklyMax"] = 20,
+					["totalMax"] = 40,
+					["amount"] = 40,
 				},
 				[1129] = {
 					["weeklyMax"] = 3,
 					["totalMax"] = 20,
 					["amount"] = 0,
 				},
-				[1191] = {
-					["totalMax"] = 5000,
-					["amount"] = 650,
+				[391] = {
+					["amount"] = 14,
 				},
 				[752] = {
 					["totalMax"] = 20,
@@ -361,32 +364,29 @@ SavedInstancesDB = {
 				[1166] = {
 					["amount"] = 1700,
 				},
+				[1191] = {
+					["totalMax"] = 5000,
+					["amount"] = 650,
+				},
 				[777] = {
 					["amount"] = 81285,
 				},
-				[1314] = {
-					["weeklyMax"] = 20,
-					["totalMax"] = 40,
-					["amount"] = 40,
-				},
-				[1273] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 6,
-					["amount"] = 1,
+				[1275] = {
+					["amount"] = 13,
 				},
 			},
 			["Level"] = 110,
 			["LClass"] = "Death Knight",
 			["RBGrating"] = 0,
-			["Zone"] = "Broken Shore",
-			["lastbosstime"] = 1497815083,
-			["Race"] = "Human",
-			["lastbossyelltime"] = 1497815079,
-			["Money"] = 11571595,
+			["Zone"] = "Dalaran",
+			["lastbosstime"] = 1498349793,
+			["PlayedTotal"] = 7015447,
+			["lastbossyelltime"] = 1498349793,
+			["Money"] = 11725995,
 			["Skills"] = {
 			},
-			["PlayedTotal"] = 7003133,
-			["lastboss"] = "Lord Kur'talos Ravencrest: Mythic Keystone",
+			["IL"] = 909.4375,
+			["lastboss"] = "Cordana Felsong: Mythic Keystone",
 			["Show"] = "saved",
 			["BonusRoll"] = {
 				{
@@ -521,18 +521,18 @@ SavedInstancesDB = {
 					["currencyID"] = 1273,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 3049839,
+			["PlayedLevel"] = 3062153,
 			["Faction"] = "Alliance",
 			["ILe"] = 907.25,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["Quests"] = {
 			},
-			["IL"] = 909.4375,
+			["Race"] = "Human",
 		},
 		["Kroxi - Grim Batol"] = {
-			["lastbossyell"] = "Dantalionax: Mythic Keystone",
+			["lastbossyell"] = "Cordana Felsong: Mythic Keystone",
 			["WeeklyResetTime"] = 1498633199,
-			["LastSeen"] = 1498321225,
+			["LastSeen"] = 1498336714,
 			["Order"] = 50,
 			["Class"] = "WARRIOR",
 			["currency"] = {
@@ -557,11 +557,6 @@ SavedInstancesDB = {
 					["totalMax"] = 10000,
 					["amount"] = 444,
 				},
-				[1129] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 20,
-					["amount"] = 9,
-				},
 				[1155] = {
 					["totalMax"] = 1500,
 					["amount"] = 70,
@@ -569,13 +564,13 @@ SavedInstancesDB = {
 				[1275] = {
 					["amount"] = 22,
 				},
-				[1273] = {
+				[1129] = {
 					["weeklyMax"] = 3,
-					["totalMax"] = 6,
-					["amount"] = 0,
+					["totalMax"] = 20,
+					["amount"] = 9,
 				},
 				[1220] = {
-					["amount"] = 3357,
+					["amount"] = 2807,
 				},
 				[391] = {
 					["amount"] = 0,
@@ -584,8 +579,8 @@ SavedInstancesDB = {
 					["totalMax"] = 5000,
 					["amount"] = 900,
 				},
-				[777] = {
-					["amount"] = 42970,
+				[1166] = {
+					["amount"] = 2280,
 				},
 				[752] = {
 					["totalMax"] = 20,
@@ -604,25 +599,30 @@ SavedInstancesDB = {
 				[416] = {
 					["amount"] = 75,
 				},
-				[1166] = {
-					["amount"] = 2280,
+				[777] = {
+					["amount"] = 42970,
 				},
 				[994] = {
 					["totalMax"] = 20,
 					["amount"] = 9,
 				},
+				[1273] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 6,
+					["amount"] = 0,
+				},
 			},
-			["lastboss"] = "Lord Kur'talos Ravencrest: Mythic Keystone",
-			["PlayedTotal"] = 6500355,
 			["Level"] = 110,
 			["LClass"] = "Warrior",
 			["RBGrating"] = 0,
 			["Zone"] = "Dalaran",
-			["lastbosstime"] = 1497822549,
-			["IL"] = 908.375,
-			["lastbossyelltime"] = 1497822550,
-			["Money"] = 7385740,
-			["DailyResetTime"] = 1498373999,
+			["PlayedTotal"] = 6501874,
+			["Race"] = "Human",
+			["lastbossyelltime"] = 1498336676,
+			["Money"] = 26144340,
+			["DailyResetTime"] = 1498460399,
+			["lastbosstime"] = 1498336676,
+			["lastboss"] = "Cordana Felsong: Mythic Keystone",
 			["Show"] = "always",
 			["BonusRoll"] = {
 				{
@@ -772,14 +772,14 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 311842,
+			["PlayedLevel"] = 313361,
 			["Faction"] = "Alliance",
 			["ILe"] = 907.125,
 			["Skills"] = {
 			},
 			["Quests"] = {
 			},
-			["Race"] = "Human",
+			["IL"] = 908.375,
 		},
 		["Namji - Grim Batol"] = {
 			["lastbossyell"] = "Uncle Gao: Timewalking",
@@ -861,7 +861,7 @@ SavedInstancesDB = {
 			["Race"] = "Gnome",
 			["lastbossyelltime"] = 1497634378,
 			["Money"] = 13158857,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["lastbosstime"] = 1497634393,
 			["Show"] = "always",
 			["lastboss"] = "Yan-Zhu the Uncasked: Heroic",
@@ -1117,7 +1117,7 @@ SavedInstancesDB = {
 			["Zone"] = "Dalaran",
 			["lastbossyelltime"] = 1490496056,
 			["Money"] = 1037092,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["PlayedTotal"] = 6093404,
 			["lastboss"] = "Sael'orn: Mythic",
 			["Show"] = "always",
@@ -1520,7 +1520,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 20579,
 			["Faction"] = "Alliance",
 			["ILe"] = 817.4375,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["Quests"] = {
 			},
 			["IL"] = 817.4375,
@@ -1545,7 +1545,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 76125,
 			["Faction"] = "Horde",
 			["ILe"] = 222.375,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["Quests"] = {
 			},
 			["IL"] = 249.375,
@@ -1601,7 +1601,7 @@ SavedInstancesDB = {
 			["Race"] = "Night Elf",
 			["lastbossyelltime"] = 1489782284,
 			["Money"] = 586597,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["PlayedTotal"] = 422325,
 			["Show"] = "saved",
 			["lastboss"] = "Horridon: 25 Player (Heroic)",
@@ -1666,7 +1666,7 @@ SavedInstancesDB = {
 			["Show"] = "never",
 			["IL"] = 0.3125,
 			["PlayedLevel"] = 31,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["ILe"] = 0.3125,
 			["Skills"] = {
 			},
@@ -1691,7 +1691,7 @@ SavedInstancesDB = {
 			["Show"] = "never",
 			["IL"] = 12.5,
 			["PlayedLevel"] = 1068,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["ILe"] = 12.3125,
 			["Skills"] = {
 			},
@@ -1714,7 +1714,7 @@ SavedInstancesDB = {
 			["Show"] = "never",
 			["IL"] = 103.5625,
 			["PlayedLevel"] = 3339,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["ILe"] = 103.5625,
 			["Skills"] = {
 			},
@@ -1723,9 +1723,9 @@ SavedInstancesDB = {
 			["Zone"] = "Stormwind City",
 		},
 		["Krixi - Grim Batol"] = {
-			["lastbossyell"] = "Advisor Melandrus: Mythic Keystone",
+			["lastbossyell"] = "Viz'aduum the Watcher: Mythic Keystone",
 			["IL"] = 901.9375,
-			["LastSeen"] = 1498321035,
+			["LastSeen"] = 1498335175,
 			["Order"] = 50,
 			["Class"] = "PALADIN",
 			["currency"] = {
@@ -1754,13 +1754,12 @@ SavedInstancesDB = {
 					["totalMax"] = 900,
 					["amount"] = 54,
 				},
+				[994] = {
+					["totalMax"] = 20,
+					["amount"] = 1,
+				},
 				[1275] = {
 					["amount"] = 13,
-				},
-				[1273] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 6,
-					["amount"] = 3,
 				},
 				[1220] = {
 					["amount"] = 4594,
@@ -1801,22 +1800,23 @@ SavedInstancesDB = {
 				[777] = {
 					["amount"] = 133697,
 				},
-				[994] = {
-					["totalMax"] = 20,
-					["amount"] = 1,
+				[1273] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 6,
+					["amount"] = 3,
 				},
 			},
 			["Level"] = 110,
 			["LClass"] = "Paladin",
 			["RBGrating"] = 0,
 			["WeeklyResetTime"] = 1498633199,
-			["lastbosstime"] = 1497818462,
-			["PlayedTotal"] = 9818337,
-			["lastbossyelltime"] = 1497818462,
-			["Money"] = 30341406,
-			["DailyResetTime"] = 1498373999,
-			["Zone"] = "Dalaran",
-			["lastboss"] = "Advisor Melandrus: Mythic Keystone",
+			["PlayedTotal"] = 9820959,
+			["lastbosstime"] = 1498335136,
+			["lastbossyelltime"] = 1498335136,
+			["Money"] = 28091368,
+			["DailyResetTime"] = 1498460399,
+			["Race"] = "Human",
+			["lastboss"] = "Viz'aduum the Watcher: Mythic Keystone",
 			["Show"] = "always",
 			["BonusRoll"] = {
 				{
@@ -1968,7 +1968,7 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 447544,
+			["PlayedLevel"] = 450166,
 			["Faction"] = "Alliance",
 			["ILe"] = 900.375,
 			["Skills"] = {
@@ -1981,12 +1981,12 @@ SavedInstancesDB = {
 					["Link"] = "|cffffff00|Hquest:44219:90|h[Fates Blessing]|h|r",
 				},
 			},
-			["Race"] = "Human",
+			["Zone"] = "Dalaran",
 		},
 		["Nyrith - Grim Batol"] = {
-			["lastbossyell"] = "Advisor Vandros: Heroic",
+			["lastbossyell"] = "Kil'jaeden: Heroic",
 			["WeeklyResetTime"] = 1498633199,
-			["LastSeen"] = 1498283052,
+			["LastSeen"] = 1498428986,
 			["Order"] = 50,
 			["Class"] = "DRUID",
 			["currency"] = {
@@ -2017,7 +2017,7 @@ SavedInstancesDB = {
 					["amount"] = 1900,
 				},
 				[1220] = {
-					["amount"] = 13019,
+					["amount"] = 11869,
 				},
 				[1275] = {
 					["amount"] = 74,
@@ -2041,7 +2041,7 @@ SavedInstancesDB = {
 					["amount"] = 5910,
 				},
 				[1226] = {
-					["amount"] = 4632,
+					["amount"] = 2132,
 				},
 				[738] = {
 					["amount"] = 16,
@@ -2064,15 +2064,15 @@ SavedInstancesDB = {
 			["Level"] = 110,
 			["LClass"] = "Druid",
 			["RBGrating"] = 0,
-			["Race"] = "Night Elf",
-			["PlayedTotal"] = 5908565,
-			["lastbosstime"] = 1498249059,
-			["lastbossyelltime"] = 1498249059,
-			["Money"] = 29591496285,
+			["IL"] = 914.9375,
+			["PlayedTotal"] = 5923621,
+			["lastbosstime"] = 1498356250,
+			["lastbossyelltime"] = 1498428934,
+			["Money"] = 29594822877,
 			["Skills"] = {
 			},
-			["Zone"] = "Dalaran",
-			["lastboss"] = "Advisor Vandros: Heroic",
+			["Race"] = "Night Elf",
+			["lastboss"] = "Hymdall: Mythic Keystone",
 			["Show"] = "always",
 			["BonusRoll"] = {
 				{
@@ -2207,10 +2207,10 @@ SavedInstancesDB = {
 					["currencyID"] = 1273,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 2027986,
+			["PlayedLevel"] = 2043042,
 			["Faction"] = "Alliance",
-			["ILe"] = 912.125,
-			["DailyResetTime"] = 1498373999,
+			["ILe"] = 910.5625,
+			["DailyResetTime"] = 1498460399,
 			["Quests"] = {
 				[44236] = {
 					["Expires"] = 1498633199,
@@ -2218,7 +2218,7 @@ SavedInstancesDB = {
 					["Link"] = "|cffffff00|Hquest:44236:90|h[Essence of Fate]|h|r",
 				},
 			},
-			["IL"] = 914.3125,
+			["Zone"] = "Dalaran",
 		},
 		["Daimtårta - Aggra (Português)"] = {
 			["WeeklyResetTime"] = 1498615205,
@@ -2247,7 +2247,7 @@ SavedInstancesDB = {
 			["Show"] = "never",
 			["IL"] = 427.399993896484,
 			["PlayedLevel"] = 1679,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["ILe"] = 427.399993896484,
 			["Skills"] = {
 			},
@@ -2272,7 +2272,7 @@ SavedInstancesDB = {
 			["Show"] = "never",
 			["LastSeen"] = 1428126175,
 			["PlayedLevel"] = 45512,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["ILe"] = 476.466674804688,
 			["Skills"] = {
 			},
@@ -2300,7 +2300,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 415,
 			["Faction"] = "Alliance",
 			["ILe"] = 0.3125,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["Quests"] = {
 			},
 			["Zone"] = "Northshire",
@@ -2321,7 +2321,7 @@ SavedInstancesDB = {
 			["lastbossyelltime"] = 1456181891,
 			["Money"] = 1139793,
 			["Race"] = "Orc",
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["lastboss"] = "Lilian Voss: Normal",
 			["Show"] = "saved",
 			["WeeklyResetTime"] = 1498633199,
@@ -2370,7 +2370,7 @@ SavedInstancesDB = {
 			["IL"] = 523.8125,
 			["Race"] = "Night Elf",
 			["Show"] = "never",
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["PlayedLevel"] = 96017,
 			["Faction"] = "Alliance",
 			["ILe"] = 523.8125,
@@ -2606,7 +2606,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 5846,
 			["Faction"] = "Alliance",
 			["ILe"] = 729.1875,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["Quests"] = {
 			},
 			["IL"] = 729.1875,
@@ -2628,7 +2628,7 @@ SavedInstancesDB = {
 			["Show"] = "never",
 			["Zone"] = "Stormwind City",
 			["PlayedLevel"] = 833,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["ILe"] = 66.375,
 			["Skills"] = {
 			},
@@ -2657,7 +2657,7 @@ SavedInstancesDB = {
 			["IL"] = 207.266662597656,
 			["Zone"] = "Stormwind City",
 			["Show"] = "never",
-			["DailyResetTime"] = 1498352405,
+			["DailyResetTime"] = 1498438805,
 			["PlayedLevel"] = 525144,
 			["Faction"] = "Alliance",
 			["ILe"] = 207.266662597656,
@@ -2682,7 +2682,7 @@ SavedInstancesDB = {
 			["Zone"] = "Ammen Vale",
 			["Race"] = "Draenei",
 			["Show"] = "saved",
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["PlayedLevel"] = 108,
 			["Faction"] = "Alliance",
 			["ILe"] = 0.25,
@@ -2695,7 +2695,7 @@ SavedInstancesDB = {
 		["Zetiz - Grim Batol"] = {
 			["lastbossyell"] = "Eyir: Normal Scenario",
 			["WeeklyResetTime"] = 1498633199,
-			["LastSeen"] = 1498284501,
+			["LastSeen"] = 1498429025,
 			["Order"] = 50,
 			["Class"] = "ROGUE",
 			["currency"] = {
@@ -2725,33 +2725,11 @@ SavedInstancesDB = {
 					["totalMax"] = 1200,
 					["amount"] = 230,
 				},
-				[1220] = {
-					["amount"] = 6731,
-				},
-				[1129] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 20,
-					["amount"] = 3,
-				},
 				[777] = {
 					["amount"] = 234,
 				},
-				[752] = {
-					["totalMax"] = 20,
-					["amount"] = 6,
-				},
-				[1101] = {
-					["totalMax"] = 100000,
-					["amount"] = 4485,
-				},
-				[1226] = {
-					["amount"] = 3925,
-				},
-				[738] = {
-					["amount"] = 9,
-				},
-				[1166] = {
-					["amount"] = 1160,
+				[1220] = {
+					["amount"] = 7071,
 				},
 				[1191] = {
 					["totalMax"] = 5000,
@@ -2762,21 +2740,43 @@ SavedInstancesDB = {
 					["totalMax"] = 6,
 					["amount"] = 2,
 				},
+				[752] = {
+					["totalMax"] = 20,
+					["amount"] = 6,
+				},
+				[1101] = {
+					["totalMax"] = 100000,
+					["amount"] = 4485,
+				},
+				[1226] = {
+					["amount"] = 4125,
+				},
+				[738] = {
+					["amount"] = 9,
+				},
+				[1166] = {
+					["amount"] = 1160,
+				},
 				[1275] = {
 					["amount"] = 16,
 				},
+				[1129] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 20,
+					["amount"] = 3,
+				},
 			},
+			["Show"] = "always",
+			["Race"] = "Dwarf",
 			["Level"] = 110,
 			["LClass"] = "Rogue",
 			["RBGrating"] = 0,
-			["Race"] = "Dwarf",
-			["lastbosstime"] = 1497125909,
 			["IL"] = 904.9375,
+			["lastbosstime"] = 1497125909,
+			["PlayedTotal"] = 4070917,
 			["lastbossyelltime"] = 1497222375,
 			["Money"] = 6758887,
-			["DailyResetTime"] = 1498373999,
-			["PlayedTotal"] = 4070659,
-			["Show"] = "always",
+			["DailyResetTime"] = 1498460399,
 			["lastboss"] = "Advisor Vandros: Mythic Keystone",
 			["BonusRoll"] = {
 				{
@@ -2930,7 +2930,7 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 301302,
+			["PlayedLevel"] = 301560,
 			["Faction"] = "Alliance",
 			["ILe"] = 903.375,
 			["Skills"] = {
@@ -2961,7 +2961,7 @@ SavedInstancesDB = {
 			["Show"] = "never",
 			["IL"] = 1.5,
 			["PlayedLevel"] = 575,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["ILe"] = 0.400000005960465,
 			["Skills"] = {
 			},
@@ -2984,7 +2984,7 @@ SavedInstancesDB = {
 			["LastSeen"] = 1465684642,
 			["WeeklyResetTime"] = 1498611604,
 			["Show"] = "saved",
-			["DailyResetTime"] = 1498352404,
+			["DailyResetTime"] = 1498438804,
 			["PlayedLevel"] = 495,
 			["Faction"] = "Alliance",
 			["ILe"] = 0,
@@ -2995,9 +2995,9 @@ SavedInstancesDB = {
 			["Race"] = "Draenei",
 		},
 		["Zuriz - Grim Batol"] = {
-			["lastbossyell"] = "Mephistroth: Heroic",
+			["lastbossyell"] = "Kil'jaeden: Heroic",
 			["WeeklyResetTime"] = 1498633199,
-			["LastSeen"] = 1498320644,
+			["LastSeen"] = 1498424738,
 			["Order"] = 50,
 			["Class"] = "SHAMAN",
 			["currency"] = {
@@ -3030,26 +3030,27 @@ SavedInstancesDB = {
 				},
 				[1155] = {
 					["totalMax"] = 2000,
-					["amount"] = 318,
+					["amount"] = 26,
 				},
 				[777] = {
 					["amount"] = 375,
 				},
 				[1220] = {
-					["amount"] = 33307,
+					["amount"] = 34282,
 				},
 				[391] = {
 					["amount"] = 6,
 				},
-				[1191] = {
-					["totalMax"] = 5000,
-					["amount"] = 200,
+				[1129] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 20,
+					["amount"] = 10,
 				},
 				[1273] = {
 					["weeklyMax"] = 3,
-					["amount"] = 0,
-					["totalMax"] = 6,
 					["earnedThisWeek"] = 3,
+					["totalMax"] = 6,
+					["amount"] = 0,
 				},
 				[752] = {
 					["totalMax"] = 20,
@@ -3068,14 +3069,13 @@ SavedInstancesDB = {
 				[1166] = {
 					["amount"] = 2365,
 				},
-				[1129] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 20,
-					["amount"] = 10,
-				},
 				[994] = {
 					["totalMax"] = 20,
 					["amount"] = 14,
+				},
+				[1191] = {
+					["totalMax"] = 5000,
+					["amount"] = 200,
 				},
 				[1275] = {
 					["amount"] = 25,
@@ -3084,15 +3084,15 @@ SavedInstancesDB = {
 			["Level"] = 110,
 			["LClass"] = "Shaman",
 			["RBGrating"] = 0,
-			["IL"] = 916.9375,
-			["PlayedTotal"] = 4906713,
-			["lastbosstime"] = 1498291572,
-			["lastbossyelltime"] = 1498291572,
-			["Money"] = 67361278,
-			["DailyResetTime"] = 1498373999,
+			["Race"] = "Dwarf",
+			["lastbosstime"] = 1498395492,
+			["PlayedTotal"] = 4946505,
+			["lastbossyelltime"] = 1498422365,
+			["Money"] = 70294647,
+			["DailyResetTime"] = 1498460399,
 			["Zone"] = "Dalaran",
 			["Show"] = "always",
-			["lastboss"] = "Mephistroth: Heroic",
+			["lastboss"] = "Fel Lord Betrug: Heroic",
 			["BonusRoll"] = {
 				{
 					["name"] = "Mistress Sassz'ine: Heroic",
@@ -3234,9 +3234,9 @@ SavedInstancesDB = {
 					["currencyID"] = 1273,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 1026903,
+			["PlayedLevel"] = 1066695,
 			["Faction"] = "Alliance",
-			["ILe"] = 912.0625,
+			["ILe"] = 917.5625,
 			["Skills"] = {
 			},
 			["Quests"] = {
@@ -3263,7 +3263,7 @@ SavedInstancesDB = {
 					["Link"] = "|cffffff00|Hquest:43892:90|h[Sealing Fate: Order Resources]|h|r",
 				},
 			},
-			["Race"] = "Dwarf",
+			["IL"] = 918.8125,
 		},
 		["Krixiswag - Aggra (Português)"] = {
 			["WeeklyResetTime"] = 1498615205,
@@ -3283,7 +3283,7 @@ SavedInstancesDB = {
 			["Skills"] = {
 			},
 			["ILe"] = 0.266666680574417,
-			["DailyResetTime"] = 1498356004,
+			["DailyResetTime"] = 1498442404,
 			["Quests"] = {
 			},
 			["IL"] = 0.266666680574417,
@@ -3308,7 +3308,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 555,
 			["Faction"] = "Horde",
 			["ILe"] = 1.4375,
-			["DailyResetTime"] = 1498373999,
+			["DailyResetTime"] = 1498460399,
 			["Quests"] = {
 			},
 			["Zone"] = "Valley of Trials",
@@ -3515,21 +3515,19 @@ SavedInstancesDB = {
 			["Raid"] = true,
 		},
 		["Random Legion Heroic"] = {
-			["Nyrith - Grim Batol"] = {
-			},
+			["Show"] = "saved",
 			["Expansion"] = 6,
 			["LFDID"] = 1046,
-			["Show"] = "saved",
-			["Raid"] = false,
-			["RecLevel"] = 110,
-			["Random"] = true,
 			["Zuriz - Grim Batol"] = {
 				{
 					["Locked"] = false,
+					["Expires"] = 1498460399,
 					["ID"] = -1,
-					["Expires"] = 1498373999,
 				}, -- [1]
 			},
+			["RecLevel"] = 110,
+			["Random"] = true,
+			["Raid"] = false,
 		},
 		["Random Lich King Dungeon"] = {
 			["LFDID"] = 261,
@@ -3758,8 +3756,6 @@ SavedInstancesDB = {
 			["Show"] = "saved",
 			["Expansion"] = 6,
 			["WorldBoss"] = 1769,
-			["Raid"] = true,
-			["RecLevel"] = 110,
 			["Zuriz - Grim Batol"] = {
 				[2] = {
 					true, -- [1]
@@ -3767,6 +3763,8 @@ SavedInstancesDB = {
 					["Expires"] = 1498633199,
 				},
 			},
+			["Raid"] = true,
+			["RecLevel"] = 110,
 		},
 		["Black Temple"] = {
 			["Show"] = "saved",
@@ -3880,7 +3878,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 				[15] = {
-					["Expires"] = 1498633198,
+					["Expires"] = 1498633199,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1303-0478DE10:1530:15:1023|h[The Nighthold]|h|r",
 					["ID"] = 262781357,
@@ -3908,24 +3906,33 @@ SavedInstancesDB = {
 			["Show"] = "saved",
 		},
 		["Maw of Souls"] = {
-			["LFDID"] = 1192,
-			["Expansion"] = 6,
-			["Zetiz - Grim Batol"] = {
+			["Nyrith - Grim Batol"] = {
 				[23] = {
-					["Expires"] = 0,
+					["Expires"] = 1498633199,
 					["Extended"] = false,
-					["Link"] = "|cffff8000|Hinstancelock:Player-1303-03FA8295:1492:23:7|h[Maw of Souls]|h|r",
-					["ID"] = 864688354,
-					["Locked"] = false,
+					["Link"] = "|cffff8000|Hinstancelock:Player-1303-04772A8A:1492:23:7|h[Maw of Souls]|h|r",
+					["ID"] = 871871810,
+					["Locked"] = true,
 				},
 			},
-			["Show"] = "saved",
+			["Expansion"] = 6,
 			["Kroxi - Grim Batol"] = {
 				[23] = {
 					["Expires"] = 0,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1303-03966669:1492:23:7|h[Maw of Souls]|h|r",
 					["ID"] = 865336194,
+					["Locked"] = false,
+				},
+			},
+			["LFDID"] = 1192,
+			["Show"] = "saved",
+			["Zetiz - Grim Batol"] = {
+				[23] = {
+					["Expires"] = 0,
+					["Extended"] = false,
+					["Link"] = "|cffff8000|Hinstancelock:Player-1303-03FA8295:1492:23:7|h[Maw of Souls]|h|r",
+					["ID"] = 864688354,
 					["Locked"] = false,
 				},
 			},
@@ -4017,9 +4024,8 @@ SavedInstancesDB = {
 			["Show"] = "saved",
 		},
 		["Darkheart Thicket"] = {
-			["LFDID"] = 1202,
+			["Show"] = "saved",
 			["Expansion"] = 6,
-			["RecLevel"] = 100,
 			["Zuriz - Grim Batol"] = {
 				[23] = {
 					["Expires"] = 0,
@@ -4029,8 +4035,9 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
+			["LFDID"] = 1202,
 			["Raid"] = false,
-			["Show"] = "saved",
+			["RecLevel"] = 100,
 		},
 		["Random Mists of Pandaria Heroic"] = {
 			["LFDID"] = 462,
@@ -4491,7 +4498,7 @@ SavedInstancesDB = {
 			["RecLevel"] = 110,
 		},
 		["Court of Stars"] = {
-			["LFDID"] = 1319,
+			["Show"] = "saved",
 			["Expansion"] = 6,
 			["Zetiz - Grim Batol"] = {
 				[23] = {
@@ -4502,7 +4509,6 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["Show"] = "saved",
 			["Kroxi - Grim Batol"] = {
 				[23] = {
 					["Expires"] = 0,
@@ -4512,8 +4518,9 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["RecLevel"] = 110,
 			["Raid"] = false,
+			["LFDID"] = 1319,
+			["RecLevel"] = 110,
 		},
 		["Blackrock Depths - Upper City"] = {
 			["LFDID"] = 276,
@@ -4537,10 +4544,10 @@ SavedInstancesDB = {
 			["Raid"] = true,
 		},
 		["Trial of Valor"] = {
-			["LFDID"] = 1439,
+			["Show"] = "saved",
 			["Expansion"] = 6,
-			["Raid"] = true,
 			["RecLevel"] = 110,
+			["Raid"] = true,
 			["Zuriz - Grim Batol"] = {
 				[15] = {
 					["Expires"] = 0,
@@ -4550,7 +4557,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["Show"] = "saved",
+			["LFDID"] = 1439,
 		},
 		["LFR: Pinnacle of Storms"] = {
 			["LFDID"] = 838,
@@ -4608,7 +4615,6 @@ SavedInstancesDB = {
 				},
 			},
 			["LFDID"] = 1209,
-			["Raid"] = false,
 			["RecLevel"] = 105,
 			["Nyrith - Grim Batol"] = {
 				[23] = {
@@ -4619,6 +4625,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
+			["Raid"] = false,
 		},
 		["Drak'Tharon Keep"] = {
 			["LFDID"] = 215,
@@ -4784,7 +4791,7 @@ SavedInstancesDB = {
 			["Raid"] = false,
 		},
 		["The Arcway"] = {
-			["Show"] = "saved",
+			["LFDID"] = 1190,
 			["Expansion"] = 6,
 			["Zetiz - Grim Batol"] = {
 				[23] = {
@@ -4795,7 +4802,6 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["LFDID"] = 1190,
 			["Kroxi - Grim Batol"] = {
 				[23] = {
 					["Expires"] = 0,
@@ -4805,8 +4811,9 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["RecLevel"] = 110,
 			["Raid"] = false,
+			["Show"] = "saved",
+			["RecLevel"] = 110,
 		},
 		["Auchindoun"] = {
 			["LFDID"] = 1008,
@@ -5407,6 +5414,11 @@ SavedInstancesDB = {
 		},
 	},
 	["History"] = {
+		["Nyrith - Grim Batol:Tomb of Sargeras:raid:15:17963"] = {
+			["last"] = 1498428979,
+			["create"] = 1498424813,
+			["desc"] = "Nyrith: Tomb of Sargeras - Heroic",
+		},
 	},
 	["RealmMap"] = {
 		{
@@ -5442,7 +5454,7 @@ SavedInstancesDB = {
 		["Bloodfeather"] = 3,
 		["ShatteredHand"] = 3,
 	},
-	["DailyResetTime"] = 1498373999,
+	["DailyResetTime"] = 1498460399,
 	["QuestDB"] = {
 		["Daily"] = {
 			[39582] = 945,
@@ -5453,23 +5465,23 @@ SavedInstancesDB = {
 			[37324] = 971,
 			[37209] = 971,
 			[39567] = 945,
-			[38192] = 971,
+			[13741] = 492,
 			[37233] = 971,
 			[44789] = 1018,
 			[14152] = 492,
 			[13789] = 492,
 			[13790] = 492,
 			[39721] = 971,
-			[11669] = 478,
+			[44101] = 1057,
 			[13666] = 492,
 			[11668] = 478,
-			[29394] = 27,
+			[13745] = 492,
 			[13851] = 492,
 			[13670] = 492,
-			[13671] = 492,
+			[12020] = 27,
 			[39571] = 945,
-			[45839] = 1017,
-			[39720] = 971,
+			[39719] = 971,
+			[45812] = 1018,
 			[38440] = 945,
 			[38190] = 971,
 			[39586] = 945,
@@ -5477,28 +5489,28 @@ SavedInstancesDB = {
 			[36483] = 971,
 			[45572] = 1024,
 			[37321] = 971,
-			[13682] = 492,
+			[37325] = 971,
 			[45838] = 1015,
 			[37968] = 945,
 			[37210] = 950,
 			[38195] = 971,
-			[45795] = 1015,
+			[11669] = 478,
 			[37245] = 971,
 			[38293] = 971,
 			[31443] = 857,
 			[37234] = 971,
 			[39651] = 971,
-			[37227] = 971,
+			[37323] = 971,
 			[46199] = 1015,
-			[37325] = 971,
+			[13682] = 492,
 			[11665] = 478,
-			[12020] = 27,
+			[13671] = 492,
 			[14080] = 492,
 			[37270] = 971,
-			[39433] = 945,
-			[45406] = 1017,
+			[38290] = 971,
+			[37278] = 1009,
 			[39568] = 945,
-			[38175] = 971,
+			[45795] = 1015,
 			[7043] = 341,
 			[11547] = 499,
 			[38046] = 945,
@@ -5507,70 +5519,70 @@ SavedInstancesDB = {
 			[38199] = 971,
 			[38250] = 945,
 			[29455] = 823,
-			[38585] = 945,
+			[38243] = 971,
 			[14095] = 492,
-			[14096] = 492,
-			[41037] = 1052,
+			[45839] = 1017,
+			[46110] = 1017,
 			[11667] = 478,
-			[38290] = 971,
+			[39433] = 945,
 			[13846] = 492,
 			[14101] = 492,
-			[38243] = 971,
-			[37278] = 1009,
-			[14104] = 492,
+			[37227] = 971,
+			[45406] = 1017,
+			[39648] = 971,
 			[14105] = 492,
 			[37243] = 971,
 			[14107] = 492,
 			[14108] = 492,
 			[39668] = 971,
+			[38175] = 971,
 			[11293] = 27,
-			[46110] = 1017,
 			[14112] = 492,
 			[38287] = 971,
-			[39719] = 971,
+			[43323] = 301,
 			[13861] = 492,
-			[38045] = 945,
+			[39569] = 945,
 			[39573] = 945,
 			[41062] = 1052,
 			[39581] = 945,
-			[14102] = 492,
-			[45812] = 1018,
-			[38196] = 971,
+			[14096] = 492,
+			[39716] = 971,
+			[39720] = 971,
 			[38200] = 971,
-			[13743] = 492,
-			[13744] = 492,
-			[37323] = 971,
-			[39648] = 971,
-			[45840] = 1024,
-			[44101] = 1057,
+			[38585] = 945,
 			[37319] = 971,
-			[39569] = 945,
+			[29394] = 27,
+			[14102] = 492,
+			[45840] = 1024,
+			[14104] = 492,
+			[13744] = 492,
+			[38045] = 945,
 			[45856] = 1018,
 			[13625] = 492,
 			[37228] = 971,
-			[39716] = 971,
+			[38192] = 971,
 			[39649] = 971,
 			[37244] = 971,
-			[13741] = 492,
+			[13742] = 492,
 			[37125] = 950,
 			[37891] = 945,
-			[13742] = 492,
+			[13743] = 492,
+			[41037] = 1052,
 			[46205] = 1015,
-			[13745] = 492,
 			[37145] = 971,
 			[36514] = 971,
-			[43323] = 301,
+			[25155] = 301,
 			[39570] = 945,
 			[39574] = 945,
 			[46182] = 1024,
-			[25155] = 301,
+			[38196] = 971,
 		},
 		["Darkmoon"] = {
 			["expires"] = 1497218340,
 			[29514] = 823,
 		},
 		["AccountDaily"] = {
-			[31752] = 1021,
+			[31752] = 1014,
 			[37201] = 949,
 			[34774] = 1014,
 			[37205] = 941,
@@ -5646,7 +5658,7 @@ SavedInstancesDB = {
 		["minimapPos"] = 343.51990747637,
 		["hide"] = true,
 	},
-	["histGeneration"] = 17916,
+	["histGeneration"] = 17963,
 	["Quests"] = {
 	},
 	["spelltip"] = {

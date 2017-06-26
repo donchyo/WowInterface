@@ -114,28 +114,28 @@ DataStore_InventoryDB = {
 			},
 			["Default.Grim Batol.Zetiz"] = {
 				["Inventory"] = {
-					"|cffa335ee|Hitem:138332::::::::110:259::5:3:3516:1487:3528:::|h[Doomblade Cowl]|h|r", -- [1]
+					"|cffffffff|Hitem:138332::::::::110:259::5:3:3516:1487:3528:::|h[]|h|r", -- [1]
 					"|cffa335ee|Hitem:140899:5439:::::::110:259::5:3:3516:1487:3528:::|h[Beleron's Choker of Misery]|h|r", -- [2]
-					"|cffa335ee|Hitem:137510::::::::110:259::35:3:3418:1557:3337:::|h[Charskin Mantle]|h|r", -- [3]
+					"|cffffffff|Hitem:137510::::::::110:259::35:3:3418:1557:3337:::|h[]|h|r", -- [3]
 					nil, -- [4]
-					"|cffa335ee|Hitem:134373::::::::110:259::35:3:3418:1567:3337:::|h[Felbat Leather Vest]|h|r", -- [5]
-					"|cffa335ee|Hitem:142145::::::::110:259::35:3:3418:1517:3337:::|h[Girdle of Ghostly Exclusion]|h|r", -- [6]
-					"|cffa335ee|Hitem:138335::::::::110:259::5:3:3516:1487:3528:::|h[Doomblade Pants]|h|r", -- [7]
-					"|cffff8000|Hitem:146669::130247:130222:130222::::110:259::13:2:3459:3530:::|h[The Sentinel's Eternal Refuge]|h|r", -- [8]
-					"|cffff8000|Hitem:137098::::::::110:259:::2:3459:3530:::|h[Zoldyck Family Training Shackles]|h|r", -- [9]
-					"|cffa335ee|Hitem:138329::130222::::::110:259::5:5:3516:1808:42:1487:3528:::|h[Doomblade Gauntlets]|h|r", -- [10]
+					"|cffffffff|Hitem:134373::::::::110:259::35:3:3418:1567:3337:::|h[]|h|r", -- [5]
+					"|cffffffff|Hitem:142145::::::::110:259::35:3:3418:1517:3337:::|h[]|h|r", -- [6]
+					"|cffffffff|Hitem:138335::::::::110:259::5:3:3516:1487:3528:::|h[]|h|r", -- [7]
+					"|cffffffff|Hitem:146669::130247:130222:130222::::110:259::13:2:3459:3530:::|h[]|h|r", -- [8]
+					"|cffffffff|Hitem:137098::::::::110:259:::2:3459:3530:::|h[]|h|r", -- [9]
+					"|cffffffff|Hitem:138329::130222::::::110:259::5:5:3516:1808:42:1487:3528:::|h[]|h|r", -- [10]
 					"|cffa335ee|Hitem:140897:5429:130222::::::110:259::5:4:3517:1808:1492:3528:::|h[Ring of the Scoured Clan]|h|r", -- [11]
-					"|cffa335ee|Hitem:133679:5429:::::::110:259::35:3:3418:1557:3337:::|h[Val'kyr Ascension Signet]|h|r", -- [12]
+					"|cffffffff|Hitem:133679:5429:::::::110:259::35:3:3418:1557:3337:::|h[]|h|r", -- [12]
 					"|cffa335ee|Hitem:141482::::::::110:259::3:3:3466:1472:3528:::|h[Unstable Arcanocrystal]|h|r", -- [13]
 					"|cffa335ee|Hitem:140796::::::::110:259::5:3:3516:1487:3528:::|h[Entwined Elemental Foci]|h|r", -- [14]
-					"|cffa335ee|Hitem:134402:5435:::::::110:259::35:3:3418:1557:3337:::|h[Cape of Rigid Order]|h|r", -- [15]
+					"|cffffffff|Hitem:134402:5435:::::::110:259::35:3:3418:1557:3337:::|h[]|h|r", -- [15]
 					"|cffe6cc80|Hitem:128870::142310:140817:142180::::110:259:16777472:9:1:741:901:1:3:3418:1522:3337:3:3517:1492:1813:3:3418:1502:3528|h[The Kingslayers]|h|r", -- [16]
-					"|cffe6cc80|Hitem:128869::::::::110:259:256:::901:::|h[The Kingslayers]|h|r", -- [17]
+					"|cffffffff|Hitem:128869::::::::110:259:256:::901:::|h[]|h|r", -- [17]
 					[19] = "|cffa335ee|Hitem:52252::::::::110:259::11::::|h[Tabard of the Lightbringer]|h|r",
 				},
 				["averageItemLvl"] = 903.375,
 				["overallAIL"] = 904.9375,
-				["lastUpdate"] = 1498321392,
+				["lastUpdate"] = 1498429019,
 			},
 			["Default.Grim Batol.Krixidh"] = {
 				["Inventory"] = {
@@ -164,28 +164,28 @@ DataStore_InventoryDB = {
 			},
 			["Default.Grim Batol.Zuriz"] = {
 				["Inventory"] = {
-					"|cffa335ee|Hitem:147178::::::::110:262::5:3:3562:1497:3528:::|h[Helmet of the Skybreaker]|h|r", -- [1]
-					"|cffa335ee|Hitem:137311:5890:::::::110:262::35:3:3418:1557:3337:::|h[Chain of the Green Flight]|h|r", -- [2]
-					"|cffa335ee|Hitem:138348::::::::110:262::5:3:3516:1492:3336:::|h[Pauldrons of Shackled Elements]|h|r", -- [3]
+					"|cffa335ee|Hitem:147178::::::::110:264::5:3:3562:1497:3528:::|h[Helmet of the Skybreaker]|h|r", -- [1]
+					"|cffa335ee|Hitem:137311:5890:::::::110:264::35:3:3418:1557:3337:::|h[Chain of the Green Flight]|h|r", -- [2]
+					"|cffa335ee|Hitem:138348::::::::110:264::5:3:3516:1492:3336:::|h[Pauldrons of Shackled Elements]|h|r", -- [3]
 					nil, -- [4]
-					"|cffa335ee|Hitem:147175::::::::110:262::5:3:3562:1502:3336:::|h[Harness of the Skybreaker]|h|r", -- [5]
-					"|cffa335ee|Hitem:145568::::::::110:262::8:4:3567:1696:1532:3337:::|h[Ferocious Gladiator's Ringmail Clasp]|h|r", -- [6]
-					"|cffa335ee|Hitem:138345::::::::110:262::5:3:3516:1487:3528:::|h[Leggings of Shackled Elements]|h|r", -- [7]
-					"|cffff8000|Hitem:137036::::::::110:262:::2:1811:3570:::|h[Elemental Rebalancers]|h|r", -- [8]
-					"|cffa335ee|Hitem:134484::::::::110:262::16:3:3418:1562:3337:::|h[Crestrider Conduit Bracers]|h|r", -- [9]
-					"|cffa335ee|Hitem:137348::::::::110:262::16:3:3418:1552:3336:::|h[Gauntlets of Innumerable Barbs]|h|r", -- [10]
-					"|cffa335ee|Hitem:140897:5429:130222::::::110:262::5:4:3517:1808:1497:3336:::|h[Ring of the Scoured Clan]|h|r", -- [11]
-					"|cffff8000|Hitem:137051:5429:130248::::::110:262:::2:1811:3530:::|h[Focuser of Jonat, the Elder]|h|r", -- [12]
-					"|cffa335ee|Hitem:147004::::::::110:262::5:3:3562:1507:3336:::|h[Sea Star of the Depthmother]|h|r", -- [13]
-					"|cffa335ee|Hitem:147005::::::::110:262::5:3:3562:1502:3336:::|h[Chalice of Moonlight]|h|r", -- [14]
-					"|cffa335ee|Hitem:137530:5436:::::::110:262::35:3:3418:1557:3337:::|h[Drape of Vile Misfortune]|h|r", -- [15]
+					"|cffa335ee|Hitem:147175::::::::110:264::5:3:3562:1502:3336:::|h[Harness of the Skybreaker]|h|r", -- [5]
+					"|cffa335ee|Hitem:145568::::::::110:264::8:4:3567:1696:1532:3337:::|h[Ferocious Gladiator's Ringmail Clasp]|h|r", -- [6]
+					"|cffa335ee|Hitem:138345::::::::110:264::5:3:3516:1487:3528:::|h[Leggings of Shackled Elements]|h|r", -- [7]
+					"|cffff8000|Hitem:137036::::::::110:264:::2:1811:3570:::|h[Elemental Rebalancers]|h|r", -- [8]
+					"|cffa335ee|Hitem:134484::::::::110:264::16:3:3418:1562:3337:::|h[Crestrider Conduit Bracers]|h|r", -- [9]
+					"|cffa335ee|Hitem:137348::::::::110:264::16:3:3418:1552:3336:::|h[Gauntlets of Innumerable Barbs]|h|r", -- [10]
+					"|cffa335ee|Hitem:140897:5429:130222::::::110:264::5:4:3517:1808:1497:3336:::|h[Ring of the Scoured Clan]|h|r", -- [11]
+					"|cffff8000|Hitem:137051:5429:130248::::::110:264:::2:3459:3570:::|h[Focuser of Jonat, the Elder]|h|r", -- [12]
+					"|cffa335ee|Hitem:147004::::::::110:264::5:3:3562:1507:3336:::|h[Sea Star of the Depthmother]|h|r", -- [13]
+					"|cffa335ee|Hitem:147005::::::::110:264::5:3:3562:1502:3336:::|h[Chalice of Moonlight]|h|r", -- [14]
+					"|cffa335ee|Hitem:137530:5436:::::::110:264::35:3:3418:1557:3337:::|h[Drape of Vile Misfortune]|h|r", -- [15]
 					"|cffe6cc80|Hitem:128911::137327:140831:140839::::110:264:16777472:9:1:746:787:1:3:3418:1557:3337:3:3444:1507:3337:3:3516:1497:3336|h[Sharas'dal, Scepter of Tides]|h|r", -- [16]
 					"|cffe6cc80|Hitem:128934::::::::110:264:256:::787:::|h[Shield of the Sea Queen]|h|r", -- [17]
-					[19] = "|cffa335ee|Hitem:52252::::::::110:262::11::::|h[Tabard of the Lightbringer]|h|r",
+					[19] = "|cffa335ee|Hitem:52252::::::::110:264::11::::|h[Tabard of the Lightbringer]|h|r",
 				},
-				["averageItemLvl"] = 912.0625,
-				["overallAIL"] = 916.9375,
-				["lastUpdate"] = 1498316556,
+				["averageItemLvl"] = 917.5625,
+				["overallAIL"] = 918.8125,
+				["lastUpdate"] = 1498429050,
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
 				["Inventory"] = {
@@ -417,7 +417,7 @@ DataStore_InventoryDB = {
 				},
 				["averageItemLvl"] = 907.125,
 				["overallAIL"] = 908.375,
-				["lastUpdate"] = 1498321214,
+				["lastUpdate"] = 1498336706,
 			},
 			["Default.Shattered Hand.Bawsi"] = {
 				["Inventory"] = {
@@ -456,28 +456,28 @@ DataStore_InventoryDB = {
 			},
 			["Default.Grim Batol.Nyrith"] = {
 				["Inventory"] = {
-					"|cffffffff|Hitem:137415::::::::110:104::35:3:3418:1557:3337:::|h[]|h|r", -- [1]
+					"|cffa335ee|Hitem:137415::::::::110:104::35:3:3418:1557:3337:::|h[Gaze of Fleeting Hours]|h|r", -- [1]
 					"|cffa335ee|Hitem:133636:5439:::::::110:104::35:3:3418:1557:3337:::|h[Brysngamen, Torc of Helheim]|h|r", -- [2]
-					"|cffffffff|Hitem:138336:5883:::::::110:104::5:3:3516:1487:3528:::|h[]|h|r", -- [3]
-					"|cffffffff|Hitem:42363::::::::110:104::::::|h[]|h|r", -- [4]
-					"|cffffffff|Hitem:138324::::::::110:104::5:3:3516:1492:3336:::|h[]|h|r", -- [5]
-					"|cffffffff|Hitem:134287::::::::110:104::16:3:3418:1567:3337:::|h[]|h|r", -- [6]
-					"|cffffffff|Hitem:138333::::::::110:104::5:3:3516:1492:3336:::|h[]|h|r", -- [7]
-					"|cffffffff|Hitem:144487::::::::110:104::34:3:3417:1562:3337:::|h[]|h|r", -- [8]
-					"|cffffffff|Hitem:137056::::::::110:104:::2:1811:3455:::|h[]|h|r", -- [9]
-					"|cffffffff|Hitem:138327::::::::110:104::5:3:3516:1507:3337:::|h[]|h|r", -- [10]
-					"|cffffffff|Hitem:133637:5430:::::::110:104::34:4:3418:42:1567:3337:::|h[]|h|r", -- [11]
-					"|cffffffff|Hitem:134539:5430:::::::110:104::34:3:3418:1572:3337:::|h[]|h|r", -- [12]
-					"|cffffffff|Hitem:144259::::::::110:104:::3:3529:3530:1811:::|h[]|h|r", -- [13]
-					"|cffffffff|Hitem:139113::::::::110:104::43:4:3573:603:1572:3337:::|h[]|h|r", -- [14]
-					"|cffffffff|Hitem:137531:5435:::::::110:104::16:3:3418:1562:3337:::|h[]|h|r", -- [15]
+					"|cffa335ee|Hitem:138336:5883:::::::110:104::5:3:3516:1487:3528:::|h[Mantle of the Astral Warden]|h|r", -- [3]
+					"|cff1eff00|Hitem:42363::::::::110:104::::::|h[Golden Filigreed Doublet]|h|r", -- [4]
+					"|cffa335ee|Hitem:138324::::::::110:104::5:3:3516:1492:3336:::|h[Robe of the Astral Warden]|h|r", -- [5]
+					"|cffa335ee|Hitem:134287::::::::110:104::16:3:3418:1567:3337:::|h[Swordsinger's Belt]|h|r", -- [6]
+					"|cffff8000|Hitem:137067::::::::110:104:::3:3529:3530:1811:::|h[Elize's Everlasting Encasement]|h|r", -- [7]
+					"|cffa335ee|Hitem:144487::::::::110:104::34:3:3417:1562:3337:::|h[Treads of Creeping Shadows]|h|r", -- [8]
+					"|cffff8000|Hitem:137056::::::::110:104:::2:1811:3455:::|h[Luffa Wrappings]|h|r", -- [9]
+					"|cffa335ee|Hitem:138327::::::::110:104::5:3:3516:1507:3337:::|h[Gloves of the Astral Warden]|h|r", -- [10]
+					"|cffa335ee|Hitem:133637:5430:::::::110:104::34:4:3418:42:1567:3337:::|h[Utgarde Royal Signet]|h|r", -- [11]
+					"|cffa335ee|Hitem:134539:5430:::::::110:104::34:3:3418:1572:3337:::|h[Braided Silver Ring]|h|r", -- [12]
+					"|cffa335ee|Hitem:133642::130221::::::110:104::16:4:3418:1808:1542:3528:::|h[Horn of Valor]|h|r", -- [13]
+					"|cffa335ee|Hitem:139113::::::::110:104::43:4:3573:603:1572:3337:::|h[An'she's Token of Guile]|h|r", -- [14]
+					"|cffa335ee|Hitem:138366:5435:::::::110:104::5:3:3516:1487:3528:::|h[Cloak of the Astral Warden]|h|r", -- [15]
 					"|cffe6cc80|Hitem:128821::133686:137412:137327::::110:104:16777472:9:1:724:993:1:3:3418:1547:3336:3:3536:1552:3337:3:3418:1552:3336|h[Claws of Ursoc]|h|r", -- [16]
-					"|cffffffff|Hitem:128822::::::::110:104:256:::993:::|h[]|h|r", -- [17]
+					"|cffe6cc80|Hitem:128822::::::::110:104:256:::993:::|h[Claws of Ursoc]|h|r", -- [17]
 					[19] = "|cffa335ee|Hitem:52252::::::::110:104::11::::|h[Tabard of the Lightbringer]|h|r",
 				},
-				["averageItemLvl"] = 912.125,
-				["overallAIL"] = 914.3125,
-				["lastUpdate"] = 1498283042,
+				["averageItemLvl"] = 910.5625,
+				["overallAIL"] = 914.9375,
+				["lastUpdate"] = 1498428974,
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684610,
@@ -496,27 +496,27 @@ DataStore_InventoryDB = {
 			},
 			["Default.Grim Batol.Krixidk"] = {
 				["Inventory"] = {
-					"|cffffffff|Hitem:137526::::::::110:250::35:3:3536:1552:3337:::|h[]|h|r", -- [1]
+					"|cffa335ee|Hitem:137526::::::::110:250::35:3:3536:1552:3337:::|h[Crown of Ash]|h|r", -- [1]
 					"|cffa335ee|Hitem:137311:5889:::::::110:250::35:3:3418:1557:3337:::|h[Chain of the Green Flight]|h|r", -- [2]
 					"|cffa335ee|Hitem:134228::::::::110:250::35:4:3418:43:1567:3337:::|h[Coralplate Pauldrons]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:137437::::::::110:250::35:3:3418:1557:3337:::|h[Slimeflow Breastplate]|h|r", -- [5]
-					"|cffffffff|Hitem:137310::::::::110:250::16:3:3418:1562:3337:::|h[]|h|r", -- [6]
-					"|cffffffff|Hitem:137342::::::::110:250::35:3:3418:1557:3337:::|h[]|h|r", -- [7]
-					"|cffffffff|Hitem:134505::::::::110:250::35:3:3536:1567:3337:::|h[]|h|r", -- [8]
-					"|cffffffff|Hitem:132365::::::::110:250:::2:1811:3455:::|h[]|h|r", -- [9]
-					"|cffffffff|Hitem:140907::::::::110:250::5:3:3516:1487:3528:::|h[]|h|r", -- [10]
+					"|cffa335ee|Hitem:137310::::::::110:250::16:3:3418:1562:3337:::|h[Greatbelt of Disruption]|h|r", -- [6]
+					"|cffa335ee|Hitem:137342::::::::110:250::35:3:3418:1557:3337:::|h[Rock Solid Legplates]|h|r", -- [7]
+					"|cffa335ee|Hitem:134505::::::::110:250::35:3:3536:1567:3337:::|h[Horizon Line Warboots]|h|r", -- [8]
+					"|cffff8000|Hitem:132365::::::::110:250:::2:1811:3455:::|h[Shackles of Bryndaor]|h|r", -- [9]
+					"|cffa335ee|Hitem:140907::::::::110:250::5:3:3516:1487:3528:::|h[Bridgebreaker Gauntlets]|h|r", -- [10]
 					"|cffff8000|Hitem:132452:5428:130246::::::110:250:::2:1811:3455:::|h[Sephuz's Secret]|h|r", -- [11]
 					"|cffa335ee|Hitem:134490:5428:130220::::::110:250::35:4:3536:1808:1552:3337:::|h[Ring of Contempt]|h|r", -- [12]
 					"|cffa335ee|Hitem:133644::130220::::::110:250::16:4:3535:1808:1542:3336:::|h[Memento of Angerboda]|h|r", -- [13]
 					"|cffa335ee|Hitem:141482::::::::110:250::3:3:3466:1477:3336:::|h[Unstable Arcanocrystal]|h|r", -- [14]
-					"|cffffffff|Hitem:134402:5434:::::::110:250::35:3:3536:1552:3337:::|h[]|h|r", -- [15]
+					"|cffa335ee|Hitem:134402:5434:::::::110:250::35:3:3536:1552:3337:::|h[Cape of Rigid Order]|h|r", -- [15]
 					"|cffe6cc80|Hitem:128402:3368:137350:142310:137326::::110:250:16777472:9:1:716:921:1:3:3418:1557:3337:3:3418:1517:3337:3:3536:1542:3336|h[Maw of the Damned]|h|r", -- [16]
-					[19] = "|cffffffff|Hitem:23192:::::::1456957056:110:250::::::|h[]|h|r",
+					[19] = "|cff1eff00|Hitem:23192:::::::1456957056:110:250::::::|h[Tabard of the Scarlet Crusade]|h|r",
 				},
 				["averageItemLvl"] = 907.25,
 				["overallAIL"] = 909.4375,
-				["lastUpdate"] = 1498320695,
+				["lastUpdate"] = 1498349826,
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["Inventory"] = {
@@ -565,7 +565,7 @@ DataStore_InventoryDB = {
 				},
 				["averageItemLvl"] = 900.375,
 				["overallAIL"] = 901.9375,
-				["lastUpdate"] = 1498321024,
+				["lastUpdate"] = 1498335155,
 			},
 			["Default.Grim Batol.Zolution"] = {
 				["Inventory"] = {
@@ -660,10 +660,10 @@ DataStore_InventoryDB = {
 						["averageItemLvl"] = 902,
 					},
 					["Ganymede"] = {
-						["averageItemLvl"] = 898,
+						["averageItemLvl"] = 899,
 					},
 					["Gwenyver"] = {
-						["averageItemLvl"] = 903,
+						["averageItemLvl"] = 901,
 					},
 					["Dhavick"] = {
 						["averageItemLvl"] = 715,
@@ -696,19 +696,19 @@ DataStore_InventoryDB = {
 						["averageItemLvl"] = 601,
 					},
 					["Kavick"] = {
-						["averageItemLvl"] = 912,
+						["averageItemLvl"] = 913,
 					},
 					["Spacegoaty"] = {
 						["averageItemLvl"] = 889,
 					},
 					["Estefano"] = {
-						["averageItemLvl"] = 900,
+						["averageItemLvl"] = 901,
 					},
 					["Angievarona"] = {
-						["averageItemLvl"] = 905,
+						["averageItemLvl"] = 906,
 					},
 					["Menardians"] = {
-						["averageItemLvl"] = 904,
+						["averageItemLvl"] = 906,
 					},
 				},
 			},
@@ -3853,33 +3853,34 @@ DataStore_InventoryDB = {
 				[978] = 7,
 				[1444] = 8,
 				[979] = 6,
-				[1167] = 2,
 				[1446] = 8,
 				[852] = 4,
+				[941] = 1,
+				[479] = 1,
 				[725] = 1,
 				[1193] = 3,
 				[491] = 7,
 				[982] = 2,
 				[727] = 3,
 				[983] = 3,
+				[466] = 6,
 				[429] = 1,
 				[985] = 1,
+				[349] = 3,
 				[986] = 1,
-				[457] = 1,
+				[467] = 5,
 				[430] = 3,
 				[494] = 6,
 				[604] = 1,
 				[732] = 1,
 				[860] = 1,
-				[1003] = 6,
 				[989] = 2,
 				[606] = 2,
 				[734] = 1,
 				[990] = 2,
-				[362] = 1,
 				[735] = 1,
 				[432] = 2,
-				[991] = 3,
+				[496] = 3,
 				[736] = 3,
 				[864] = 5,
 				[433] = 6,
@@ -3887,73 +3888,72 @@ DataStore_InventoryDB = {
 				[994] = 3,
 				[739] = 3,
 				[434] = 5,
-				[995] = 7,
+				[498] = 1,
 				[612] = 2,
-				[349] = 3,
 				[868] = 1,
-				[360] = 1,
+				[991] = 3,
+				[981] = 1,
 				[435] = 2,
 				[997] = 2,
-				[447] = 3,
-				[887] = 1,
+				[330] = 4,
+				[995] = 7,
 				[870] = 1,
 				[998] = 3,
 				[308] = 1,
 				[743] = 1,
 				[871] = 6,
 				[999] = 5,
-				[126] = 1,
-				[831] = 1,
-				[872] = 6,
-				[1445] = 8,
-				[498] = 1,
-				[481] = 7,
-				[1233] = 5,
-				[501] = 5,
-				[981] = 1,
-				[1443] = 8,
-				[451] = 5,
-				[1002] = 5,
-				[493] = 1,
-				[496] = 3,
-				[438] = 6,
-				[502] = 3,
-				[620] = 6,
-				[857] = 1,
-				[876] = 1,
-				[439] = 1,
-				[503] = 7,
 				[492] = 1,
-				[455] = 2,
-				[437] = 3,
-				[1005] = 2,
-				[838] = 5,
-				[440] = 4,
-				[361] = 1,
-				[624] = 2,
-				[853] = 3,
-				[943] = 5,
-				[467] = 5,
-				[941] = 1,
-				[460] = 1,
-				[839] = 4,
-				[505] = 3,
-				[1442] = 8,
-				[479] = 1,
-				[1441] = 8,
-				[466] = 6,
-				[1001] = 1,
-				[330] = 4,
-				[442] = 3,
 				[554] = 1,
-				[1437] = 8,
-				[469] = 1,
-				[1329] = 1,
-				[556] = 5,
-				[1303] = 2,
+				[872] = 6,
 				[473] = 2,
-				[443] = 5,
+				[451] = 5,
+				[857] = 1,
+				[437] = 3,
+				[501] = 5,
+				[1329] = 1,
+				[1002] = 5,
+				[438] = 6,
+				[1003] = 6,
+				[620] = 6,
+				[876] = 1,
+				[460] = 1,
+				[1445] = 8,
+				[469] = 1,
+				[439] = 1,
+				[126] = 1,
+				[887] = 1,
+				[481] = 7,
+				[1303] = 2,
+				[447] = 3,
+				[503] = 7,
+				[1001] = 1,
+				[440] = 4,
+				[831] = 1,
+				[624] = 2,
+				[502] = 3,
+				[1443] = 8,
+				[1437] = 8,
+				[493] = 1,
+				[1005] = 2,
+				[457] = 1,
+				[505] = 3,
 				[327] = 1,
+				[839] = 4,
+				[360] = 1,
+				[1167] = 2,
+				[1233] = 5,
+				[361] = 1,
+				[442] = 3,
+				[1441] = 8,
+				[853] = 3,
+				[838] = 5,
+				[362] = 1,
+				[943] = 5,
+				[1442] = 8,
+				[556] = 5,
+				[443] = 5,
+				[455] = 2,
 			},
 			["AppearancesCounters"] = {
 				["DEATHKNIGHT"] = {
@@ -4013,7 +4013,7 @@ DataStore_InventoryDB = {
 					"72/461", -- [4]
 					"21/94", -- [5]
 					"38/81", -- [6]
-					"49/361", -- [7]
+					"50/361", -- [7]
 					"49/399", -- [8]
 					"70/377", -- [9]
 					"61/418", -- [10]

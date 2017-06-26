@@ -20,8 +20,8 @@ BigWigs3DB = {
 					["posx"] = 302.310968308986,
 					["fontSize"] = 11.0000009536743,
 					["fontOutline"] = "",
-					["posy"] = 654.933261744183,
 					["font"] = "Friz Quadrata TT",
+					["posy"] = 654.933261744183,
 				},
 				["DEMONHUNTER"] = {
 					["posx"] = 121.688566965546,
@@ -132,6 +132,18 @@ BigWigs3DB = {
 								0.196078431372549, -- [3]
 							},
 						},
+						["BigWigs_Bosses_Kil'jaeden"] = {
+							[-15543] = {
+								0, -- [1]
+								1, -- [2]
+								0, -- [3]
+							},
+							[238999] = {
+								1, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+						},
 						["BigWigs_Bosses_Grand Magistrix Elisande"] = {
 							[208807] = {
 								0.952941176470588, -- [1]
@@ -160,12 +172,19 @@ BigWigs3DB = {
 						},
 					},
 					["barEmphasized"] = {
-						["BigWigs_Bosses_Grand Magistrix Elisande"] = {
-							[208807] = {
-								[3] = 0.764705882352941,
+						["BigWigs_Plugins_Colors"] = {
+							["default"] = {
+								nil, -- [1]
+								0.984313725490196, -- [2]
 							},
-							[209973] = {
-								[3] = 1,
+						},
+						["BigWigs_Bosses_Kil'jaeden"] = {
+							[-15543] = {
+								0, -- [1]
+								1, -- [2]
+							},
+							[238999] = {
+								[3] = 0.501960784313726,
 							},
 						},
 						["BigWigs_Bosses_Krosus"] = {
@@ -173,10 +192,12 @@ BigWigs3DB = {
 								[3] = 0.854901960784314,
 							},
 						},
-						["BigWigs_Plugins_Colors"] = {
-							["default"] = {
-								nil, -- [1]
-								0.984313725490196, -- [2]
+						["BigWigs_Bosses_Grand Magistrix Elisande"] = {
+							[208807] = {
+								[3] = 0.764705882352941,
+							},
+							[209973] = {
+								[3] = 1,
 							},
 						},
 						["BigWigs_Bosses_Fallen Avatar"] = {
@@ -224,9 +245,9 @@ BigWigs3DB = {
 					["barStyle"] = "ElvUI",
 					["emphasizeGrowup"] = true,
 					["BigWigsAnchor_x"] = 998.045350668108,
-					["font"] = "Expressway",
-					["monochrome"] = false,
 					["interceptMouse"] = false,
+					["monochrome"] = false,
+					["font"] = "Expressway",
 					["emphasizeScale"] = 1,
 					["texture"] = "Skullflower",
 				},
@@ -272,8 +293,8 @@ BigWigs3DB = {
 				},
 				["Default"] = {
 					["fontSize"] = 32,
-					["font"] = "Expressway",
 					["monochrome"] = false,
+					["font"] = "Expressway",
 				},
 				["DEMONHUNTER"] = {
 					["font"] = "Friz Quadrata TT",
@@ -286,10 +307,21 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["LibDualSpec-1.0"] = {
+		},
 		["BigWigs_Bosses_Odyn-TrialOfValor"] = {
 			["profiles"] = {
 				["Default"] = {
 					[228012] = 98819,
+				},
+			},
+		},
+		["BigWigs_Plugins_Pull"] = {
+		},
+		["BigWigs_Bosses_Kil'jaeden"] = {
+			["profiles"] = {
+				["Default"] = {
+					[-15543] = 98307,
 				},
 			},
 		},
@@ -324,15 +356,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Gul'dan"] = {
-			["profiles"] = {
-				["Default"] = {
-					[206896] = 34051,
-				},
-			},
-		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Krixidh - Grim Batol"] = {
@@ -340,16 +363,16 @@ BigWigs3DB = {
 					["font"] = "Friz Quadrata TT",
 				},
 				["Default"] = {
-					["fontSize"] = 20,
+					["BWEmphasizeMessageAnchor_x"] = 574.933461825043,
 					["BWEmphasizeCountdownMessageAnchor_x"] = 817.688525480713,
 					["BWMessageAnchor_x"] = 757.689066166335,
-					["growUpwards"] = true,
+					["displaytime"] = 2.5,
 					["BWEmphasizeCountdownMessageAnchor_y"] = 484.088789505433,
 					["font"] = "Expressway",
 					["BWEmphasizeMessageAnchor_y"] = 556.17784770859,
 					["BWMessageAnchor_y"] = 554.844791147421,
-					["displaytime"] = 2.5,
-					["BWEmphasizeMessageAnchor_x"] = 574.933461825043,
+					["fontSize"] = 20,
+					["growUpwards"] = true,
 				},
 				["DEMONHUNTER"] = {
 					["font"] = "Friz Quadrata TT",
@@ -369,24 +392,14 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Pull"] = {
+		["BigWigs_Bosses_Gul'dan"] = {
+			["profiles"] = {
+				["Default"] = {
+					[206896] = 34051,
+				},
+			},
 		},
-		["LibDualSpec-1.0"] = {
-		},
-	},
-	["global"] = {
-		["watchedMovies"] = {
-			[73] = true,
-			["953:2"] = true,
-			[294] = true,
-			[295] = true,
-			[16] = true,
-			["1042:1"] = true,
-			["953:9"] = true,
-			["953:12"] = true,
-			["930:7"] = true,
-			[549] = true,
-			["875:1"] = true,
+		["BigWigs_Plugins_Respawn"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -404,6 +417,21 @@ BigWigs3DB = {
 		["Zuriz - Grim Batol"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
+	},
+	["global"] = {
+		["watchedMovies"] = {
+			[73] = true,
+			["953:2"] = true,
+			[294] = true,
+			[295] = true,
+			[16] = true,
+			["1042:1"] = true,
+			["953:9"] = true,
+			["953:12"] = true,
+			["930:7"] = true,
+			[549] = true,
+			["875:1"] = true,
+		},
 	},
 	["profiles"] = {
 		["Krixidh - Grim Batol"] = {
@@ -3031,7 +3059,7 @@ BigWigsStatisticsDB = {
 				["best"] = 633.30999999994,
 			},
 			["heroic"] = {
-				["wipes"] = 14,
+				["wipes"] = 52,
 			},
 		},
 		[1873] = {

@@ -8,7 +8,7 @@ Prat:AddModuleToLoad(function()
     local PL = Prat:GetLocalizer({})
 
     --[===[@debug@
-    PL:AddLocale("enUS", {
+    PL:AddLocale(PRAT_MODULE, "enUS", {
         module_name = "Search",
         module_desc = "Adds the ability to search the chatframes.",
         module_info = "This module adds the /find and /findall commands to search the chat history\n\nUsage:\n\n /find <text> \n\n /findall <text>",
@@ -26,37 +26,54 @@ Prat:AddModuleToLoad(function()
 
    L=
 {
-["err_notfound"] = "Not Found",
-["err_tooshort"] = "Search term is too short",
-["find_results"] = "Find Results:",
-["module_desc"] = "Adds the ability to search the chatframes.",
-["module_info"] = [=[This module adds the /find and /findall commands to search the chat history
+	["Search"] = {
+		["err_notfound"] = "Not Found",
+		["err_tooshort"] = "Search term is too short",
+		["find_results"] = "Find Results:",
+		["module_desc"] = "Adds the ability to search the chatframes.",
+		["module_info"] = [=[This module adds the /find and /findall commands to search the chat history
 
 Usage:
 
  /find <text> 
 
  /findall <text>]=],
-["module_name"] = "Search",
+		["module_name"] = "Search",
+	}
 }
 
-     PL:AddLocale("enUS",L)
+     PL:AddLocale(PRAT_MODULE, "enUS",L)
 
    L=
 {
+	["Search"] = {
+		--Translation missing 
+		-- ["err_notfound"] = "",
+		--Translation missing 
+		-- ["err_tooshort"] = "",
+		--Translation missing 
+		-- ["find_results"] = "",
+		--Translation missing 
+		-- ["module_desc"] = "",
+		--Translation missing 
+		-- ["module_info"] = "",
+		--Translation missing 
+		-- ["module_name"] = "",
+	}
 }
 
-     PL:AddLocale("frFR",L)
+     PL:AddLocale(PRAT_MODULE, "frFR",L)
 
    L=
 {
-["err_notfound"] = "Nicht gefunden",
-["err_tooshort"] = "Suchbegriff zu kurz",
-["find_results"] = "Gefundene Ergebnisse:",
-["module_desc"] = [=[Aktiviert die Suchfunktion in Chatfenstern.
+	["Search"] = {
+		["err_notfound"] = "Nicht gefunden",
+		["err_tooshort"] = "Suchbegriff zu kurz",
+		["find_results"] = "Gefundene Ergebnisse:",
+		["module_desc"] = [=[Aktiviert die Suchfunktion in Chatfenstern.
 
 Suche]=],
-["module_info"] = [=[Aktiviert die Textbefehle /find und /findall, um die Chathistorie zu durchsuchen
+		["module_info"] = [=[Aktiviert die Textbefehle /find und /findall, um die Chathistorie zu durchsuchen
 
 Benutzung:
 
@@ -65,86 +82,127 @@ Benutzung:
 /findall <text>
 
 Suche]=],
-["module_name"] = "Suchen",
+		["module_name"] = "Suchen",
+	}
 }
 
-     PL:AddLocale("deDE",L)
+     PL:AddLocale(PRAT_MODULE, "deDE",L)
 
    L=
 {
-["err_notfound"] = "찾을 수 없음",
-["err_tooshort"] = "검색 구문이 너무 짧습니다",
-["find_results"] = "검색 결과:",
-["module_desc"] = "대화창 검색 기능을 추가합니다.",
-["module_info"] = [=[이 모듈은 대화 기록을 검색하는 /find 와 /findall 명령어를 추가합니다
+	["Search"] = {
+		["err_notfound"] = "찾을 수 없음",
+		["err_tooshort"] = "검색 구문이 너무 짧습니다",
+		["find_results"] = "검색 결과:",
+		["module_desc"] = "대화창 검색 기능을 추가합니다.",
+		["module_info"] = [=[이 모듈은 대화 기록을 검색하는 /find 와 /findall 명령어를 추가합니다
 
 사용법:
 
 /find <문자열>
 
 /findall <문자열>]=],
-["module_name"] = "검색",
+		["module_name"] = "검색",
+	}
 }
 
-     PL:AddLocale("koKR",L)
+     PL:AddLocale(PRAT_MODULE, "koKR",L)
 
    L=
 {
+	["Search"] = {
+		--Translation missing 
+		-- ["err_notfound"] = "",
+		--Translation missing 
+		-- ["err_tooshort"] = "",
+		--Translation missing 
+		-- ["find_results"] = "",
+		--Translation missing 
+		-- ["module_desc"] = "",
+		--Translation missing 
+		-- ["module_info"] = "",
+		--Translation missing 
+		-- ["module_name"] = "",
+	}
 }
 
-     PL:AddLocale("esMX",L)
+     PL:AddLocale(PRAT_MODULE, "esMX",L)
 
    L=
 {
-["err_notfound"] = "Не Найденно",
-["err_tooshort"] = "Критерий поиска слишком короток",
-["find_results"] = "Найти Результаты:",
-["module_desc"] = "Добавляет возможность поиска текста в чате.",
-["module_info"] = [=[Этот модуль добавляет команды /find и /findall для поиска в истории чата
+	["Search"] = {
+		["err_notfound"] = "Не Найденно",
+		["err_tooshort"] = "Критерий поиска слишком короток",
+		["find_results"] = "Найти Результаты:",
+		["module_desc"] = "Добавляет возможность поиска текста в чате.",
+		["module_info"] = [=[Этот модуль добавляет команды /find и /findall для поиска в истории чата
 
 Использование:
 
 /find <текст>
 
 /findall <текст>]=],
-["module_name"] = "Поиск",
+		["module_name"] = "Поиск",
+	}
 }
 
-     PL:AddLocale("ruRU",L)
+     PL:AddLocale(PRAT_MODULE, "ruRU",L)
 
    L=
 {
-["err_notfound"] = "没找到",
-["err_tooshort"] = "搜索文字太短",
-["find_results"] = "查找结果：",
-["module_desc"] = "增加搜索聊天框的能力",
-["module_info"] = [=[此模块增加 /find 和 /findall 命令搜索聊天历史
+	["Search"] = {
+		["err_notfound"] = "没找到",
+		["err_tooshort"] = "搜索文字太短",
+		["find_results"] = "查找结果：",
+		["module_desc"] = "增加搜索聊天框的能力",
+		["module_info"] = [=[此模块增加 /find 和 /findall 命令搜索聊天历史
 
 用法:
 
  /find <文字>
 
  /findall <文字>]=],
-["module_name"] = "搜索",
+		["module_name"] = "搜索",
+	}
 }
 
-     PL:AddLocale("zhCN",L)
+     PL:AddLocale(PRAT_MODULE, "zhCN",L)
 
    L=
 {
+	["Search"] = {
+		--Translation missing 
+		-- ["err_notfound"] = "",
+		--Translation missing 
+		-- ["err_tooshort"] = "",
+		--Translation missing 
+		-- ["find_results"] = "",
+		--Translation missing 
+		-- ["module_desc"] = "",
+		--Translation missing 
+		-- ["module_info"] = "",
+		--Translation missing 
+		-- ["module_name"] = "",
+	}
 }
 
-     PL:AddLocale("esES",L)
+     PL:AddLocale(PRAT_MODULE, "esES",L)
 
    L=
 {
-["err_notfound"] = "找不到",
-["err_tooshort"] = "尋找物品太短",
-["find_results"] = "找到結果:",
-["module_name"] = "尋找",
+	["Search"] = {
+		["err_notfound"] = "找不到",
+		["err_tooshort"] = "尋找物品太短",
+		["find_results"] = "找到結果:",
+		--Translation missing 
+		-- ["module_desc"] = "",
+		--Translation missing 
+		-- ["module_info"] = "",
+		["module_name"] = "尋找",
+	}
 }
 
-     PL:AddLocale("zhTW",L)
+     PL:AddLocale(PRAT_MODULE, "zhTW",L)
 
    end
    --@end-non-debug@
