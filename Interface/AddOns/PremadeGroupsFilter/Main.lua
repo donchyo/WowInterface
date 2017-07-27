@@ -60,8 +60,29 @@ function PGF.GetExpressionFromAdvancedExpression(model)
     return ""
 end
 
+function PGF.GetModel()
+    local tab = PVEFrame.activeTabIndex
+    local category = LFGListFrame.SearchPanel.categoryID or LFGListFrame.CategorySelection.selectedCategory
+    local filters = LFGListFrame.SearchPanel.filters or LFGListFrame.CategorySelection.selectedFilters or 0
+    if not tab then return nil end
+    if not category then return nil end
+    if filters < 0 then filters = "n" .. filters end
+    local modelKey = "t" .. tab .. "c" .. category .. "f" .. filters
+    if PremadeGroupsFilterState[modelKey] == nil then
+        local defaultState = {}
+        -- if we have an old v1.10 state, take it instead of the default one
+        local oldGlobalState = PremadeGroupsFilterState["v110"]
+        if oldGlobalState ~= nil then
+            defaultState = PGF.Table_Copy_Rec(oldGlobalState)
+        end
+        PGF.Table_UpdateWithDefaults(defaultState, C.MODEL_DEFAULT)
+        PremadeGroupsFilterState[modelKey] = defaultState
+    end
+    return PremadeGroupsFilterState[modelKey]
+end
+
 function PGF.GetExpressionFromModel()
-    local model = PremadeGroupsFilterState
+    local model = PGF.GetModel()
     local exp = "true" -- start with neutral element
     exp = exp .. PGF.GetExpressionFromDifficultyModel(model)
     exp = exp .. PGF.GetExpressionFromIlvlModel(model)
@@ -101,7 +122,8 @@ function PGF.DoFilterSearchResults(results)
     PGF.ResetSearchEntries()
     local exp = PGF.GetExpressionFromModel()
     PGF.currentSearchExpression = exp
-    if not PremadeGroupsFilterState.enabled then return false end
+    local model = PGF.GetModel()
+    if not model.enabled then return false end
     if not results or #results == 0 then return false end
     if exp == "true" then return false end -- skip trivial expression
 
@@ -111,9 +133,10 @@ function PGF.DoFilterSearchResults(results)
         local _, activity, name, comment, voiceChat, iLvl, honorLevel, age,
               numBNetFriends, numCharFriends, numGuildMates, _, leaderName,
               numMembers = C_LFGList.GetSearchResultInfo(resultID)
-        local completedEncounters = C_LFGList.GetSearchResultEncounterInfo(resultID)
+        local defeatedBossNames = C_LFGList.GetSearchResultEncounterInfo(resultID)
         local memberCounts = C_LFGList.GetSearchResultMemberCounts(resultID)
-        local partialLockout, fullLockout = PGF.HasDungeonOrRaidLockout(activity)
+        local numGroupDefeated, numPlayerDefeated, maxBosses,
+              matching, groupAhead, groupBehind = PGF.GetLockoutInfo(activity, resultID)
         local avName, avShortName, avCategoryID, avGroupID, avILevel, avFilters,
               avMinLevel, avMaxPlayers, avDisplayType, avOrderIndex,
               avUseHonorLevel, avShowQuickJoin = C_LFGList.GetActivityInfo(activity)
@@ -136,15 +159,19 @@ function PGF.DoFilterSearchResults(results)
         env.heals = memberCounts.HEALER
         env.healers = memberCounts.HEALER
         env.dps = memberCounts.DAMAGER + memberCounts.NOROLE
-        env.defeated = completedEncounters and #completedEncounters or 0
+        env.defeated = numGroupDefeated
         env.normal     = difficulty == C.NORMAL
         env.heroic     = difficulty == C.HEROIC
         env.mythic     = difficulty == C.MYTHIC
         env.mythicplus = difficulty == C.MYTHICPLUS
-        env.myrealm = leaderName and not leaderName:find('-')
-        env.partialid = partialLockout
-        env.fullid = fullLockout
-        env.noid = not fullLockout and not partialLockout
+        env.myrealm = leaderName and leaderName ~= "" and not leaderName:find('-')
+        env.partialid = numPlayerDefeated > 0
+        env.fullid = numPlayerDefeated > 0 and numPlayerDefeated == maxBosses
+        env.noid = not env.partialid and not env.fullid
+        env.matchingid = groupAhead == 0 and groupBehind == 0
+        env.bossesmatching = matching
+        env.bossesahead = groupAhead
+        env.bossesbehind = groupBehind
         env.maxplayers = avMaxPlayers
         env.suggestedilvl = avILevel
         env.minlvl = avMinLevel
@@ -218,10 +245,10 @@ function PGF.DoFilterSearchResults(results)
 end
 
 function PGF.OnLFGListSearchEntryUpdate(self)
-    local _, activity, _, _, _, _, _, _, _, _, _, isDelisted, leaderName = C_LFGList.GetSearchResultInfo(self.resultID)
+    local resultID, activity, _, _, _, _, _, _, _, _, _, isDelisted, leaderName = C_LFGList.GetSearchResultInfo(self.resultID)
     -- try once again to update the leaderName (this information is not immediately available)
     if leaderName then PGF.currentSearchLeaders[leaderName] = true end
-    --self.ActivityName:SetText("[" .. activity .. "] " .. self.ActivityName:GetText())
+    --self.ActivityName:SetText("[" .. activity .. "/" .. resultID .. "] " .. self.ActivityName:GetText()) -- DEBUG
     if not isDelisted then
         -- color name if new
         if PGF.currentSearchExpression ~= "true"                        -- not trivial search
@@ -231,13 +258,16 @@ function PGF.OnLFGListSearchEntryUpdate(self)
             self.Name:SetTextColor(color.R, color.G, color.B);
         end
         -- color activity if lockout
-        local partialLockout, fullLockout = PGF.HasDungeonOrRaidLockout(activity)
-        if fullLockout then
-            local color = C.COLOR_LOCKOUT_FULL
-            self.ActivityName:SetTextColor(color.R, color.G, color.B);
-        elseif partialLockout then
-            local color = C.COLOR_LOCKOUT_PARTIAL
-            self.ActivityName:SetTextColor(color.R, color.G, color.B);
+        local numGroupDefeated, numPlayerDefeated, maxBosses,
+              matching, groupAhead, groupBehind = PGF.GetLockoutInfo(activity, resultID)
+        local color
+        if numPlayerDefeated > 0 and numPlayerDefeated == maxBosses then
+            color = C.COLOR_LOCKOUT_FULL
+        elseif numPlayerDefeated > 0 and groupAhead == 0 and groupBehind == 0 then
+            color = C.COLOR_LOCKOUT_MATCH
+        end
+        if color then
+            self.ActivityName:SetTextColor(color.R, color.G, color.B)
         end
     end
 end

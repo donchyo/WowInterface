@@ -1,5 +1,5 @@
 ## Interface: 70200
-## Version: 1.3
+## Version: 1.5
 ## Title: MythicPlusTimer
 ## Author: Fabys
 ## Notes: Custom Mythic+ timer appearance

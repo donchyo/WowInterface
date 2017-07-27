@@ -1,12 +1,12 @@
-tag e55e363a4e7769b4ddff499cca194e32464f33f3 7.2-7
+tag 07cb87129bc6f7017d28873745216c30ac0eaf63 7.2-8
 Author:	Xuerian <xuerian@gmail.com>
-Date:	Thu Jun 22 01:22:03 2017 -0400
+Date:	Mon Jul 17 17:27:35 2017 -0400
 
-Add option to show itemlevel on rolls (Take 4)
+Frame: Fix errors when autolooting
 
-commit a9a14b700b99b5a44a20bdb70eeb77720d6af9e3
+commit 430dd80b8a0aab500529e468828c6f23775d24f5
 Author: Xuerian <xuerian@gmail.com>
-Date:   Wed Jun 21 20:11:04 2017 -0400
+Date:   Mon Jul 17 17:27:14 2017 -0400
 
-    Fix dumb nil mistake
+    Frame: Fix errors when autolooting
 

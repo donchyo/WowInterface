@@ -49,6 +49,7 @@ local default_config = {
 		battleground_end = false,
 		timer_start = false,
 		low_health = false,
+		lost_health = false,
 		
 		sound_enabled = {
 			readycheck = {enabled = false, sound = "d_whip1"},
@@ -75,6 +76,7 @@ local default_config = {
 			battleground_end = {enabled = false, sound = "d_whip1"},
 			timer_start = {enabled = false, sound = "d_whip1"},
 			low_health = {enabled = false, sound = "d_whip1"},
+			lost_health = {enabled = false, sound = "d_whip1"},
 		},
 	}
 }
@@ -382,11 +384,22 @@ function FlashTaskBar.OnInit (self)
 		if (targetHealth > 1) then
 			local targetMaxHealth = UnitHealthMax ("target")
 			if (targetMaxHealth) then
-				local percent = targetHealth / targetMaxHealth
-				if (percent < 0.17) then
-					if (FlashTaskBar.LastHealthBlink + 30 < time()) then
-						FlashTaskBar:DoFlash ("low_health")
-						FlashTaskBar.LastHealthBlink = time()
+				if (FlashTaskBar.db.profile.low_health) then
+					local percent = targetHealth / targetMaxHealth
+					if (percent < 0.17) then
+						if (FlashTaskBar.LastHealthBlink + 30 < time()) then
+							FlashTaskBar:DoFlash ("low_health")
+							FlashTaskBar.LastHealthBlink = time()
+						end
+					end
+				end
+				if (FlashTaskBar.db.profile.lost_health) then
+					local percent = targetHealth / targetMaxHealth
+					if (percent < 0.95) then
+						if (FlashTaskBar.LastHealthBlink + 30 < time()) then
+							FlashTaskBar:DoFlash ("lost_health")
+							FlashTaskBar.LastHealthBlink = time()
+						end
 					end
 				end
 			end
@@ -403,6 +416,9 @@ function FlashTaskBar.OnInit (self)
 		end
 	end
 	if (FlashTaskBar.db.profile.low_health) then
+		FlashTaskBar:EnableCheckHealth (true)
+	end
+	if (FlashTaskBar.db.profile.lost_health) then
 		FlashTaskBar:EnableCheckHealth (true)
 	end
 	
@@ -799,6 +815,23 @@ function FlashTaskBar.OnInit (self)
 			set = function (self, val) 
 				FlashTaskBar.db.profile.low_health = not FlashTaskBar.db.profile.low_health
 				if (FlashTaskBar.db.profile.low_health) then
+					FlashTaskBar:EnableCheckHealth (true)
+				else
+					FlashTaskBar:EnableCheckHealth (false)
+				end
+			end,
+		},
+		
+		
+		{
+			type = "toggle",
+			name = "Target Lost Health",
+			desc = "Flash when your target lost any health.",
+			order = 6,
+			get = function() return FlashTaskBar.db.profile.lost_health end,
+			set = function (self, val) 
+				FlashTaskBar.db.profile.lost_health = not FlashTaskBar.db.profile.lost_health
+				if (FlashTaskBar.db.profile.lost_health) then
 					FlashTaskBar:EnableCheckHealth (true)
 				else
 					FlashTaskBar:EnableCheckHealth (false)

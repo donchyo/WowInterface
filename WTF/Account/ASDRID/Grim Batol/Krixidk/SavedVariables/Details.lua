@@ -13,125 +13,1128 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 121,
+	["last_realversion"] = 122,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 378,
+					["combatId"] = 304,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.006754,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003291,
 							["damage_from"] = {
-								["Armond Thaco"] = true,
+								["Imperial Arcbinder"] = true,
+								["Stelleris Libertine"] = true,
+								["Duskwatch Spellshield"] = true,
+								["[*] Hindering Anomaly"] = true,
+								["Chronarch Defender"] = true,
+								["Loyalist Sycophant"] = true,
 							},
 							["targets"] = {
+								["Duskwatch Spellshield"] = 5831917,
+								["Imperial Arcbinder"] = 680477,
+								["Chronarch Defender"] = 8844866,
+								["Loyalist Sycophant"] = 6363133,
+							},
+							["pets"] = {
+								"Minerva Ravensorrow <Krixidk>", -- [1]
+								"Rune Weapon <Krixidk>", -- [2]
 							},
 							["on_hold"] = false,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
+							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.006754,
-							["spec"] = 253,
+							["total_without_pet"] = 18499937.003291,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 0.006754,
-							["classe"] = "HUNTER",
-							["serial"] = "Player-1325-03F0F778",
-							["nome"] = "Swornd-Hellscream",
+							["end_time"] = 1501109880,
+							["friendlyfire_total"] = 0,
+							["spec"] = 250,
+							["nome"] = "Krixidk",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 99492,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 151352,
+											["Loyalist Sycophant"] = 449921,
+											["Chronarch Defender"] = 659805,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1261078,
+										["n_min"] = 71177,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 1261078,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 14,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[52212] = {
+										["c_amt"] = 14,
+										["b_amt"] = 0,
+										["c_dmg"] = 831401,
+										["g_amt"] = 0,
+										["n_max"] = 30602,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 1095182,
+											["Loyalist Sycophant"] = 1094490,
+											["Chronarch Defender"] = 443032,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1801303,
+										["n_min"] = 26610,
+										["g_dmg"] = 0,
+										["counter"] = 75,
+										["total"] = 2632704,
+										["c_max"] = 61203,
+										["id"] = 52212,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 61,
+										["r_amt"] = 0,
+										["c_min"] = 53220,
+									},
+									[50842] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 378729,
+										["g_amt"] = 0,
+										["n_max"] = 189364,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 189364,
+											["Chronarch Defender"] = 189364,
+											["Loyalist Sycophant"] = 1325549,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1325548,
+										["n_min"] = 189364,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 1704277,
+										["c_max"] = 378729,
+										["id"] = 50842,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 378729,
+									},
+									[205223] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 923566,
+										["g_amt"] = 0,
+										["n_max"] = 501381,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 923566,
+											["Imperial Arcbinder"] = 501381,
+											["Chronarch Defender"] = 483912,
+											["Loyalist Sycophant"] = 1365846,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2351139,
+										["n_min"] = 453602,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 3274705,
+										["c_max"] = 923566,
+										["id"] = 205223,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 923566,
+									},
+									[206930] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 238975,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 456270,
+											["Chronarch Defender"] = 464058,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 920328,
+										["n_min"] = 225083,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 920328,
+										["c_max"] = 0,
+										["id"] = 206930,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[49998] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1123047,
+										["g_amt"] = 0,
+										["n_max"] = 678575,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 1123047,
+											["Chronarch Defender"] = 1838245,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1838245,
+										["n_min"] = 500603,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 2961292,
+										["c_max"] = 1123047,
+										["id"] = 49998,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 1123047,
+									},
+									[55078] = {
+										["c_amt"] = 11,
+										["b_amt"] = 0,
+										["c_dmg"] = 1166588,
+										["g_amt"] = 0,
+										["n_max"] = 58022,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 476679,
+											["Chronarch Defender"] = 592722,
+											["Loyalist Sycophant"] = 1874700,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1777513,
+										["n_min"] = 50454,
+										["g_dmg"] = 0,
+										["counter"] = 45,
+										["total"] = 2944101,
+										["c_max"] = 116043,
+										["id"] = 55078,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 34,
+										["r_amt"] = 0,
+										["c_min"] = 100908,
+									},
+									[195182] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1645868,
+										["g_amt"] = 0,
+										["n_max"] = 392432,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 763152,
+											["Chronarch Defender"] = 2038300,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1155584,
+										["n_min"] = 378137,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 2801452,
+										["c_max"] = 872106,
+										["id"] = 195182,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 773762,
+									},
+									[108199] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Chronarch Defender"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["IMMUNE"] = 1,
+										["id"] = 108199,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
 								},
 							},
 							["grupo"] = true,
-							["end_time"] = 1498349953,
+							["total"] = 21720393.003291,
+							["serial"] = "Player-1303-042451A8",
+							["last_dps"] = 231063.094437256,
+							["custom"] = 0,
+							["last_event"] = 1501109858,
+							["damage_taken"] = 18772749.003291,
+							["start_time"] = 1501109832,
+							["delay"] = 1501109858,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.002738,
+							["serial"] = "Creature-0-3151-1220-11013-27893-0000791E4F",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Duskwatch Spellshield"] = 456041,
+								["Imperial Arcbinder"] = 179096,
+								["Loyalist Sycophant"] = 252627,
+								["Chronarch Defender"] = 2135428,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3023192.002738,
+							["dps_started"] = false,
+							["total"] = 3023192.002738,
+							["classe"] = "PET",
+							["ownerName"] = "Krixidk",
+							["nome"] = "Rune Weapon <Krixidk>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 27195,
+										["g_amt"] = 0,
+										["n_max"] = 15768,
+										["targets"] = {
+											["Chronarch Defender"] = 191028,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 163833,
+										["n_min"] = 13596,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 191028,
+										["c_max"] = 27195,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 27195,
+									}, -- [1]
+									[49998] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 848764,
+										["g_amt"] = 0,
+										["n_max"] = 115876,
+										["targets"] = {
+											["Chronarch Defender"] = 1273145,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 424381,
+										["n_min"] = 92702,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 1273145,
+										["c_max"] = 231754,
+										["id"] = 49998,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 185402,
+									},
+									[228645] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 158940,
+										["g_amt"] = 0,
+										["n_max"] = 39735,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 119204,
+											["Chronarch Defender"] = 198674,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 158938,
+										["n_min"] = 39734,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 317878,
+										["c_max"] = 79470,
+										["id"] = 228645,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 79470,
+									},
+									[205223] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 336837,
+										["g_amt"] = 0,
+										["n_max"] = 89549,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 336837,
+											["Imperial Arcbinder"] = 179096,
+											["Chronarch Defender"] = 168418,
+											["Loyalist Sycophant"] = 252627,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 600141,
+										["n_min"] = 84209,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 936978,
+										["c_max"] = 168419,
+										["id"] = 205223,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 168418,
+									},
+									[195182] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 79971,
+										["targets"] = {
+											["Chronarch Defender"] = 304163,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 304163,
+										["n_min"] = 72110,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 304163,
+										["c_max"] = 0,
+										["id"] = 195182,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1501109880,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 104972.006754,
-							["start_time"] = 1498349953,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [1]
+							["damage_taken"] = 0.002738,
+							["start_time"] = 1501109863,
+							["delay"] = 1501109858,
+							["last_event"] = 1501109858,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.003648,
+							["serial"] = "Creature-0-3151-1220-11013-122150-0000791E24",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Duskwatch Spellshield"] = 197264,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 197264.003648,
+							["dps_started"] = false,
+							["total"] = 197264.003648,
+							["classe"] = "PET",
+							["ownerName"] = "Krixidk",
+							["nome"] = "Minerva Ravensorrow <Krixidk>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7543,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 7543,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 7543,
+										["n_min"] = 7543,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 7543,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[242877] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 166005,
+										["targets"] = {
+											["Duskwatch Spellshield"] = 189721,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 189721,
+										["n_min"] = 11858,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 189721,
+										["c_max"] = 0,
+										["id"] = 242877,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1501109880,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.003648,
+							["start_time"] = 1501109875,
+							["delay"] = 1501109805,
+							["last_event"] = 1501109805,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 378,
+					["combatId"] = 304,
 					["tipo"] = 3,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Krixidk"] = 67664791,
+							},
+							["pets"] = {
+								"Rune Weapon <Krixidk>", -- [1]
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DEATHKNIGHT",
+							["totalover"] = 72202465.004376,
+							["total_without_pet"] = 19213634.004376,
+							["total"] = 30100994.004376,
+							["targets_absorbs"] = {
+								["Krixidk"] = 2270931,
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-1303-042451A8",
+							["totalabsorb"] = 2270931.004376,
+							["last_hps"] = 320216.527354481,
+							["targets"] = {
+								["Rune Weapon <Krixidk>"] = 10887360,
+								["Krixidk"] = 21732058,
+							},
+							["totalover_without_pet"] = 0.004376,
+							["healing_taken"] = 19213634.004376,
+							["fight_component"] = true,
+							["end_time"] = 1501109880,
+							["healing_from"] = {
+								["Krixidk"] = true,
+							},
+							["nome"] = "Krixidk",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[210862] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 1553757,
+										},
+										["n_max"] = 95435,
+										["targets"] = {
+											["Krixidk"] = 277573,
+										},
+										["n_min"] = 0,
+										["counter"] = 30,
+										["overheal"] = 1553757,
+										["total"] = 277573,
+										["c_max"] = 0,
+										["id"] = 210862,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 277573,
+										["n_amt"] = 30,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[205224] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1626277,
+										["targets"] = {
+											["Krixidk"] = 5766320,
+										},
+										["n_min"] = 798733,
+										["counter"] = 6,
+										["overheal"] = 0,
+										["total"] = 5766320,
+										["c_max"] = 0,
+										["id"] = 205224,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 5766320,
+										["n_amt"] = 6,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[77535] = {
+										["c_amt"] = 4,
+										["totalabsorb"] = 439601,
+										["targets_overheal"] = {
+											["Krixidk"] = 29104456,
+										},
+										["n_max"] = 68567,
+										["targets"] = {
+											["Krixidk"] = -28664855,
+										},
+										["n_min"] = 40718,
+										["counter"] = 13,
+										["overheal"] = 29104456,
+										["total"] = -28664855,
+										["c_max"] = 0,
+										["id"] = 77535,
+										["targets_absorbs"] = {
+											["Krixidk"] = 439601,
+										},
+										["c_curado"] = -29104456,
+										["m_crit"] = 0,
+										["c_min"] = -10204141,
+										["m_amt"] = 0,
+										["n_curado"] = 439601,
+										["n_amt"] = 9,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[48707] = {
+										["c_amt"] = 1,
+										["totalabsorb"] = 1831330,
+										["targets_overheal"] = {
+											["Krixidk"] = 9317514,
+										},
+										["n_max"] = 109314,
+										["targets"] = {
+											["Krixidk"] = -7486184,
+										},
+										["n_min"] = 31874,
+										["counter"] = 31,
+										["overheal"] = 9317514,
+										["total"] = -7486184,
+										["c_max"] = 0,
+										["id"] = 48707,
+										["targets_absorbs"] = {
+											["Krixidk"] = 1831330,
+										},
+										["m_healed"] = 0,
+										["c_curado"] = -9317514,
+										["m_crit"] = 0,
+										["c_min"] = -9317514,
+										["m_amt"] = 0,
+										["n_curado"] = 1831330,
+										["n_amt"] = 30,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+									[53365] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 6911941,
+										},
+										["n_max"] = 873405,
+										["targets"] = {
+											["Krixidk"] = 2461415,
+										},
+										["n_min"] = 0,
+										["counter"] = 6,
+										["overheal"] = 6911941,
+										["total"] = 2461415,
+										["c_max"] = 0,
+										["id"] = 53365,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 2461415,
+										["n_amt"] = 6,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 1437376,
+										},
+										["n_max"] = 515285,
+										["targets"] = {
+											["Krixidk"] = 842014,
+										},
+										["n_min"] = 56362,
+										["counter"] = 33,
+										["overheal"] = 1437376,
+										["total"] = 842014,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 842014,
+										["n_amt"] = 33,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[45470] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 19097027,
+										},
+										["n_max"] = 4651280,
+										["targets"] = {
+											["Krixidk"] = 4651280,
+										},
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 19097027,
+										["total"] = 4651280,
+										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 4651280,
+										["n_amt"] = 4,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 116043,
+										["targets"] = {
+											["Krixidk"] = 2944101,
+										},
+										["n_min"] = 50454,
+										["counter"] = 45,
+										["overheal"] = 0,
+										["total"] = 2944101,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 2944101,
+										["n_amt"] = 45,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[219711] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 242720,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Krixidk"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 242720,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 219711,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 4,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1501109826,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["spec"] = 250,
+							["totaldenied"] = 0.004376,
+							["delay"] = 1501109864,
+							["last_event"] = 1501109864,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorb"] = 0.006257,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Rune Weapon <Krixidk>"] = true,
+							},
+							["targets"] = {
+								["Rune Weapon <Krixidk>"] = 10887360,
+							},
+							["targets_overheal"] = {
+								["Rune Weapon <Krixidk>"] = 4537674,
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.006257,
+							["end_time"] = 1501109880,
+							["classe"] = "PET",
+							["totalover"] = 4537674.006257,
+							["total_without_pet"] = 10887360.006257,
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["fight_component"] = true,
+							["total"] = 10887360.006257,
+							["healing_taken"] = 10887360.006257,
+							["ownerName"] = "Krixidk",
+							["nome"] = "Rune Weapon <Krixidk>",
+							["targets_absorbs"] = {
+							},
+							["start_time"] = 1501109865,
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[45470] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Rune Weapon <Krixidk>"] = 3459092,
+										},
+										["n_max"] = 2684799,
+										["targets"] = {
+											["Rune Weapon <Krixidk>"] = 10294912,
+										},
+										["n_min"] = 2462657,
+										["counter"] = 8,
+										["overheal"] = 3459092,
+										["total"] = 10294912,
+										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 10294912,
+										["n_amt"] = 8,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[205224] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Rune Weapon <Krixidk>"] = 959829,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Rune Weapon <Krixidk>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 9,
+										["overheal"] = 959829,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 205224,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 9,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Rune Weapon <Krixidk>"] = 118753,
+										},
+										["n_max"] = 187820,
+										["targets"] = {
+											["Rune Weapon <Krixidk>"] = 592448,
+										},
+										["n_min"] = 0,
+										["counter"] = 6,
+										["overheal"] = 118753,
+										["total"] = 592448,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 592448,
+										["n_amt"] = 6,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Creature-0-3151-1220-11013-27893-0000791E4F",
+							["custom"] = 0,
+							["last_event"] = 1501109858,
+							["on_hold"] = false,
+							["totaldenied"] = 0.006257,
+							["delay"] = 1501109858,
+							["tipo"] = 2,
+						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 378,
+					["combatId"] = 304,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 378,
+					["combatId"] = 304,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 253,
-							["grupo"] = true,
-							["buff_uptime"] = 35,
-							["nome"] = "Swornd-Hellscream",
-							["pets"] = {
-							},
-							["last_event"] = 1498349953,
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
+							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[225599] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 225599,
+									[206930] = {
+										["uptime"] = 13,
+										["activedamt"] = 0,
+										["id"] = 206930,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[231390] = {
+									[51399] = {
 										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 231390,
+										["activedamt"] = 0,
+										["id"] = 51399,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[188033] = {
-										["uptime"] = 7,
+									[214648] = {
+										["uptime"] = 39,
 										["activedamt"] = 1,
-										["id"] = 188033,
+										["id"] = 214648,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[186403] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 186403,
+									[55078] = {
+										["uptime"] = 24,
+										["activedamt"] = 0,
+										["id"] = 55078,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[227723] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 227723,
+									[143375] = {
+										["uptime"] = 10,
+										["activedamt"] = 0,
+										["id"] = 143375,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[43265] = {
+										["uptime"] = 10,
+										["activedamt"] = 0,
+										["id"] = 43265,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -139,72 +1142,349 @@ _detalhes_database = {
 									},
 								},
 							},
-							["serial"] = "Player-1325-03F0F778",
+							["cooldowns_defensive_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[55233] = {
+										["id"] = 55233,
+										["targets"] = {
+											["Krixidk"] = 1,
+										},
+										["counter"] = 1,
+									},
+									[48707] = {
+										["id"] = 48707,
+										["targets"] = {
+											["Krixidk"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["cooldowns_defensive"] = 2.0062,
+							["buff_uptime"] = 806,
+							["last_cooldown"] = {
+								1501109844.476, -- [1]
+								48707, -- [2]
+							},
+							["classe"] = "DEATHKNIGHT",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[47528] = {
+										["id"] = 47528,
+										["interrompeu_oque"] = {
+											[215241] = 2,
+										},
+										["targets"] = {
+											["Loyalist Sycophant"] = 2,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[238698] = {
+										["uptime"] = 15,
+										["activedamt"] = 1,
+										["id"] = 238698,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[81256] = {
+										["uptime"] = 16,
+										["activedamt"] = 1,
+										["id"] = 81256,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[55233] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 55233,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[228399] = {
+										["uptime"] = 13,
+										["activedamt"] = 1,
+										["id"] = 228399,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193249] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 193249,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[214624] = {
+										["uptime"] = 12,
+										["activedamt"] = 1,
+										["id"] = 214624,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[225788] = {
+										["uptime"] = 94,
+										["activedamt"] = 1,
+										["id"] = 225788,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[188290] = {
+										["uptime"] = 8,
+										["activedamt"] = 3,
+										["id"] = 188290,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[126389] = {
+										["uptime"] = 4,
+										["activedamt"] = 1,
+										["id"] = 126389,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[77535] = {
+										["uptime"] = 19,
+										["activedamt"] = 1,
+										["id"] = 77535,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[3714] = {
+										["uptime"] = 14,
+										["activedamt"] = 1,
+										["id"] = 3714,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[201641] = {
+										["uptime"] = 94,
+										["activedamt"] = 1,
+										["id"] = 201641,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[240979] = {
+										["uptime"] = 94,
+										["activedamt"] = 1,
+										["id"] = 240979,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[188035] = {
+										["uptime"] = 94,
+										["activedamt"] = 1,
+										["id"] = 188035,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[212552] = {
+										["uptime"] = 3,
+										["activedamt"] = 1,
+										["id"] = 212552,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[240558] = {
+										["uptime"] = 24,
+										["activedamt"] = 1,
+										["id"] = 240558,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[48707] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 48707,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[195181] = {
+										["uptime"] = 58,
+										["activedamt"] = 2,
+										["id"] = 195181,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[235516] = {
+										["uptime"] = 94,
+										["activedamt"] = 1,
+										["id"] = 235516,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[205725] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 205725,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[53365] = {
+										["uptime"] = 57,
+										["activedamt"] = 2,
+										["id"] = 53365,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[242844] = {
+										["uptime"] = 3,
+										["activedamt"] = 1,
+										["id"] = 242844,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[243096] = {
+										["uptime"] = 50,
+										["activedamt"] = 5,
+										["id"] = 243096,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[72286] = {
+										["actived_at"] = 1501109786,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 72286,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[215241] = 2,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 103,
+							["cooldowns_defensive_targets"] = {
+								["Krixidk"] = 2,
+							},
+							["interrupt_targets"] = {
+								["Loyalist Sycophant"] = 2,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 250,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[3714] = 1,
+								[50842] = 1,
+								[126389] = 1,
+								[49028] = 1,
+								[49576] = 2,
+								[195182] = 5,
+								[48707] = 1,
+								[108199] = 1,
+								[55233] = 1,
+								[188290] = 3,
+								[212552] = 1,
+								[205223] = 1,
+								[43265] = 1,
+								[49998] = 4,
+								[206930] = 2,
+								[47528] = 2,
+							},
+							["interrupt"] = 2.00623,
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1501109880,
+							["nome"] = "Krixidk",
+							["pets"] = {
+								"Minerva Ravensorrow <Krixidk>", -- [1]
+							},
+							["serial"] = "Player-1303-042451A8",
 							["tipo"] = 4,
 						}, -- [1]
 						{
-							["flag_original"] = 1047,
-							["nome"] = "Krixidk",
-							["spec"] = 250,
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 14,
+							["flag_original"] = 8465,
+							["ownerName"] = "Krixidk",
+							["nome"] = "Minerva Ravensorrow <Krixidk>",
 							["pets"] = {
 							},
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[186403] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["last_event"] = 1498349953,
+							["classe"] = "PET",
 							["tipo"] = 4,
-							["isTank"] = true,
-							["serial"] = "Player-1303-042451A8",
-							["classe"] = "DEATHKNIGHT",
+							["spell_cast"] = {
+								[242877] = 1,
+							},
+							["serial"] = "Creature-0-3151-1220-11013-122150-0000791E24",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 378,
+					["combatId"] = 304,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Krixidk"] = true,
-					["Swornd-Hellscream"] = true,
-					["Aylara-Anetheron"] = true,
-					["Rùbÿ-Blackmoore"] = true,
-					["Angievarona"] = true,
 				},
+				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Armond Thaco",
-				["combat_counter"] = 45446,
+				["enemy"] = "Loyalist Sycophant",
+				["combat_counter"] = 47456,
+				["playing_solo"] = true,
 				["totals"] = {
-					-0.0584000008556843, -- [1]
-					-0.0174780000076378, -- [2]
+					21720392.825474, -- [1]
+					30100993.980201, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -216,8 +1496,8 @@ _detalhes_database = {
 						["buff_uptime"] = 0,
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = -0.0064820000000001,
-						["interrupt"] = 0,
+						["cooldowns_defensive"] = 1.991937,
+						["interrupt"] = 2,
 						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
@@ -227,7 +1507,7 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["frags_need_refresh"] = false,
+				["frags_need_refresh"] = true,
 				["__call"] = {
 				},
 				["PhaseData"] = {
@@ -239,29 +1519,33 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
+							["Krixidk"] = 30100994.004376,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Swornd-Hellscream"] = 0.006754,
+							["Krixidk"] = 21720393.003291,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 849771.85,
-				["combat_id"] = 378,
+				["end_time"] = 22915.641,
+				["combat_id"] = 304,
 				["is_temporary"] = true,
 				["instance_type"] = "none",
 				["frags"] = {
+					["Duskwatch Spellshield"] = 1,
+					["Duskwatch Warpcaster"] = 1,
+					["Loyalist Sycophant"] = 12,
 				},
-				["data_fim"] = "02:19:14",
-				["data_inicio"] = "02:19:07",
+				["data_fim"] = "00:58:00",
+				["data_inicio"] = "00:56:26",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
+					18499937, -- [1]
+					-19208336, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -273,15 +1557,15 @@ _detalhes_database = {
 						["buff_uptime"] = 0,
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
+						["cooldowns_defensive"] = 2,
+						["interrupt"] = 2,
 						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 849764.834,
-				["contra"] = "Armond Thaco",
+				["start_time"] = 22821.639,
+				["contra"] = "Loyalist Sycophant",
 				["TimeData"] = {
 				},
 			}, -- [1]
@@ -290,8 +1574,8 @@ _detalhes_database = {
 	["ignore_nicktag"] = false,
 	["savedbuffs"] = {
 	},
-	["last_encounter"] = "Gul'dan",
-	["last_version"] = "v7.2.5.4132",
+	["last_encounter"] = "The Desolate Host",
+	["last_version"] = "v7.2.5.4236",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -299,8 +1583,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
 			["dps"] = 0,
+			["author"] = "Details! Team",
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -426,26 +1710,26 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Xaril_MasterPoisoner_White.blp", -- [4]
 					["id"] = 1593,
 				},
-				["portals"] = {
-					"portals", -- [1]
-					"Portals Move", -- [2]
-					138, -- [3]
-					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
-					["id"] = 1794,
-				},
-				["188929"] = {
-					"188929", -- [1]
-					"Heart Seeker", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
-					["id"] = 1786,
-				},
 				["-8179"] = {
 					"-8179", -- [1]
 					"Borer Drill", -- [2]
 					19, -- [3]
 					"Interface\\ICONS\\ability_mount_rocketmount3.blp", -- [4]
 					["id"] = 1600,
+				},
+				["158134"] = {
+					"158134", -- [1]
+					"Shield Charge", -- [2]
+					38, -- [3]
+					"Interface\\Icons\\Ability_Warrior_ShieldGuard", -- [4]
+					["id"] = 1719,
+				},
+				["portals"] = {
+					"portals", -- [1]
+					"Portals Move", -- [2]
+					138, -- [3]
+					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
+					["id"] = 1794,
 				},
 				["143484"] = {
 					"143484", -- [1]
@@ -454,40 +1738,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Nature_Sleep", -- [4]
 					["id"] = 1603,
 				},
-				["179977"] = {
-					"179977", -- [1]
-					"Touch of Doom", -- [2]
-					8.3, -- [3]
-					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
-					["id"] = 1783,
-				},
-				["183329"] = {
-					"183329", -- [1]
-					"Apocalypse (1)", -- [2]
-					51.5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowPower", -- [4]
-					["id"] = 1794,
-				},
-				["182826"] = {
-					"182826", -- [1]
-					"Doomfire", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
-					["id"] = 1799,
-				},
-				["156238"] = {
-					"156238", -- [1]
-					"Arcane Wrath", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
-					["id"] = 1705,
-				},
-				["144358"] = {
-					"144358", -- [1]
-					"Wounded Pride", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\Spell_Misc_EmotionSad", -- [4]
-					["id"] = 1604,
+				["180199"] = {
+					"180199", -- [1]
+					"Shred Armor", -- [2]
+					10.8, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Riposte", -- [4]
+					["id"] = 1786,
 				},
 				["147209"] = {
 					"147209", -- [1]
@@ -503,12 +1759,40 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_kick", -- [4]
 					["id"] = 1705,
 				},
-				["186961"] = {
-					"186961", -- [1]
-					"Nether Banish", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
+				["156238"] = {
+					"156238", -- [1]
+					"Arcane Wrath", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
+					["id"] = 1705,
+				},
+				["144358"] = {
+					"144358", -- [1]
+					"Wounded Pride", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\Spell_Misc_EmotionSad", -- [4]
+					["id"] = 1604,
+				},
+				["183329"] = {
+					"183329", -- [1]
+					"Apocalypse (1)", -- [2]
+					51.5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowPower", -- [4]
+					["id"] = 1794,
+				},
+				["182826"] = {
+					"182826", -- [1]
+					"Doomfire", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
 					["id"] = 1799,
+				},
+				["-7963"] = {
+					"-7963", -- [1]
+					"Deafening Screech", -- [2]
+					14, -- [3]
+					"Interface\\ICONS\\Ability_Vehicle_SonicShockwave.blp", -- [4]
+					["id"] = 1599,
 				},
 				["drakes"] = {
 					"drakes", -- [1]
@@ -517,12 +1801,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_mount_drake_proto", -- [4]
 					["id"] = 1622,
 				},
-				["81007"] = {
-					"81007", -- [1]
-					"Shadowblaze", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
-					["id"] = 1026,
+				["slump"] = {
+					"slump", -- [1]
+					"Rodeo", -- [2]
+					100, -- [3]
+					"Interface\\Icons\\Ability_Mount_Dreadsteed", -- [4]
+					["id"] = 1024,
 				},
 				["186546"] = {
 					"186546", -- [1]
@@ -538,19 +1822,19 @@ _detalhes_database = {
 					"Interface\\ICONS\\INV_Enchant_EssenceAstralSmall.blp", -- [4]
 					["id"] = 1598,
 				},
-				["-7963"] = {
-					"-7963", -- [1]
-					"Deafening Screech", -- [2]
-					14, -- [3]
-					"Interface\\ICONS\\Ability_Vehicle_SonicShockwave.blp", -- [4]
-					["id"] = 1599,
+				["144563"] = {
+					"144563", -- [1]
+					"Imprison", -- [2]
+					52.5, -- [3]
+					"Interface\\Icons\\sha_ability_rogue_sturdyrecuperate", -- [4]
+					["id"] = 1604,
 				},
-				["185237"] = {
-					"185237", -- [1]
-					"Touch of Harm", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
-					["id"] = 1784,
+				["143491"] = {
+					"143491", -- [1]
+					"Calamity", -- [2]
+					29, -- [3]
+					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
+					["id"] = 1598,
 				},
 				["181799"] = {
 					"181799", -- [1]
@@ -559,12 +1843,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_ironmaidens_convulsiveshadows", -- [4]
 					["id"] = 1795,
 				},
-				["slump"] = {
-					"slump", -- [1]
-					"Rodeo", -- [2]
-					100, -- [3]
-					"Interface\\Icons\\Ability_Mount_Dreadsteed", -- [4]
-					["id"] = 1024,
+				["81007"] = {
+					"81007", -- [1]
+					"Shadowblaze", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
+					["id"] = 1026,
 				},
 				["-8294"] = {
 					"-8294", -- [1]
@@ -594,12 +1878,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Arcane_PrismaticCloak", -- [4]
 					["id"] = 1783,
 				},
-				["181735"] = {
-					"181735", -- [1]
-					"Felseeker", -- [2]
-					60, -- [3]
-					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
-					["id"] = 1795,
+				["190223"] = {
+					"190223", -- [1]
+					"Fel Strike", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen", -- [4]
+					["id"] = 1800,
 				},
 				["157349"] = {
 					"157349", -- [1]
@@ -622,19 +1906,19 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_spell_shadow_shadesofdarkness", -- [4]
 					["id"] = 1604,
 				},
-				["143019"] = {
-					"143019", -- [1]
-					"Corrupted Brew", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\sha_inv_elemental_primal_shadow", -- [4]
-					["id"] = 1598,
+				["181292"] = {
+					"181292", -- [1]
+					"Fel Outpouring", -- [2]
+					51, -- [3]
+					"Interface\\Icons\\spell_yorsahj_bloodboil_purple", -- [4]
+					["id"] = 1787,
 				},
-				["volatile_anomaly"] = {
-					"volatile_anomaly", -- [1]
-					"Volatile Anomaly (1)", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\spell_arcane_arcane04", -- [4]
-					["id"] = 1705,
+				["189894"] = {
+					"189894", -- [1]
+					"Void Star", -- [2]
+					15.8, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
+					["id"] = 1799,
 				},
 				["warmup"] = {
 					"warmup", -- [1]
@@ -657,12 +1941,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\inv_misc_volatilefire", -- [4]
 					["id"] = 1784,
 				},
-				["190223"] = {
-					"190223", -- [1]
-					"Fel Strike", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen", -- [4]
-					["id"] = 1800,
+				["181735"] = {
+					"181735", -- [1]
+					"Felseeker", -- [2]
+					60, -- [3]
+					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
+					["id"] = 1795,
 				},
 				["-8262"] = {
 					"-8262", -- [1]
@@ -678,19 +1962,19 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_MissileLarge_Red", -- [4]
 					["id"] = 1778,
 				},
-				["181292"] = {
-					"181292", -- [1]
-					"Fel Outpouring", -- [2]
-					51, -- [3]
-					"Interface\\Icons\\spell_yorsahj_bloodboil_purple", -- [4]
-					["id"] = 1787,
+				["143019"] = {
+					"143019", -- [1]
+					"Corrupted Brew", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\sha_inv_elemental_primal_shadow", -- [4]
+					["id"] = 1598,
 				},
-				["184124"] = {
-					"184124", -- [1]
-					"Gift of the Man'ari", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_AntiMagicShell", -- [4]
-					["id"] = 1794,
+				["145288"] = {
+					"145288", -- [1]
+					"Explosion", -- [2]
+					8, -- [3]
+					"INTERFACE\\ICONS\\spell_shaman_firenova", -- [4]
+					["id"] = 1594,
 				},
 				["-8055"] = {
 					"-8055", -- [1]
@@ -804,12 +2088,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_HeroicLeap", -- [4]
 					["id"] = 1787,
 				},
-				["160734"] = {
-					"160734", -- [1]
-					"Vulnerability", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelHellfire", -- [4]
-					["id"] = 1723,
+				["156471"] = {
+					"156471", -- [1]
+					"Arcane Aberration (1)", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\ability_socererking_summonaberration", -- [4]
+					["id"] = 1705,
 				},
 				["181597"] = {
 					"181597", -- [1]
@@ -825,12 +2109,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1785,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
-					["id"] = 1794,
+				["144070"] = {
+					"144070", -- [1]
+					"Ashen Wall", -- [2]
+					32.2, -- [3]
+					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
+					["id"] = 1606,
 				},
 				["159250"] = {
 					"159250", -- [1]
@@ -846,12 +2130,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
 					["id"] = 1785,
 				},
-				["156471"] = {
-					"156471", -- [1]
-					"Arcane Aberration (1)", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\ability_socererking_summonaberration", -- [4]
-					["id"] = 1705,
+				["160734"] = {
+					"160734", -- [1]
+					"Vulnerability", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelHellfire", -- [4]
+					["id"] = 1723,
 				},
 				["180526"] = {
 					"180526", -- [1]
@@ -867,12 +2151,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_butcher_gushingwounds", -- [4]
 					["id"] = 1706,
 				},
-				["berserk"] = {
-					"berserk", -- [1]
-					"Berserk", -- [2]
-					600, -- [3]
-					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
-					["id"] = 1785,
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+					["id"] = 1794,
 				},
 				["158986"] = {
 					"158986", -- [1]
@@ -881,12 +2165,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_fixated_state_red", -- [4]
 					["id"] = 1721,
 				},
-				["144070"] = {
-					"144070", -- [1]
-					"Ashen Wall", -- [2]
-					32.2, -- [3]
-					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
-					["id"] = 1606,
+				["158605"] = {
+					"158605", -- [1]
+					"Mark of Chaos", -- [2]
+					34, -- [3]
+					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
+					["id"] = 1705,
 				},
 				["156157"] = {
 					"156157", -- [1]
@@ -895,19 +2179,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_butcher_cleave", -- [4]
 					["id"] = 1706,
 				},
-				["143243"] = {
-					"143243", -- [1]
-					"Rapid Fire", -- [2]
-					49, -- [3]
-					"Interface\\Icons\\Ability_Hunter_RunningShot", -- [4]
-					["id"] = 1593,
-				},
 				["181999"] = {
 					"181999", -- [1]
 					"Firebomb (1)", -- [2]
 					11, -- [3]
 					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
 					["id"] = 1785,
+				},
+				["143243"] = {
+					"143243", -- [1]
+					"Rapid Fire", -- [2]
+					49, -- [3]
+					"Interface\\Icons\\Ability_Hunter_RunningShot", -- [4]
+					["id"] = 1593,
 				},
 				["143973"] = {
 					"143973", -- [1]
@@ -944,19 +2228,19 @@ _detalhes_database = {
 					"Interface\\Icons\\achievement_character_orc_male", -- [4]
 					["id"] = 1778,
 				},
-				["156467"] = {
-					"156467", -- [1]
-					"Destructive Resonance", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanemines", -- [4]
-					["id"] = 1705,
+				["-8073"] = {
+					"-8073", -- [1]
+					"Aim (1)", -- [2]
+					38, -- [3]
+					"Interface\\ICONS\\Ability_Hisek_Aim.blp", -- [4]
+					["id"] = 1593,
 				},
-				["-8207"] = {
-					"-8207", -- [1]
-					"Pattern Recognition", -- [2]
-					60, -- [3]
-					"Interface\\ICONS\\Ability_Siege_Engineer_pattern_recognition.blp", -- [4]
-					["id"] = 1601,
+				["159219"] = {
+					"159219", -- [1]
+					"Necrotic Breath", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\ability_mage_worldinflamesgreen", -- [4]
+					["id"] = 1720,
 				},
 				["-11269"] = {
 					"-11269", -- [1]
@@ -965,12 +2249,12 @@ _detalhes_database = {
 					false, -- [4]
 					["id"] = 1786,
 				},
-				["-8073"] = {
-					"-8073", -- [1]
-					"Aim (1)", -- [2]
-					38, -- [3]
-					"Interface\\ICONS\\Ability_Hisek_Aim.blp", -- [4]
-					["id"] = 1593,
+				["156467"] = {
+					"156467", -- [1]
+					"Destructive Resonance", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanemines", -- [4]
+					["id"] = 1705,
 				},
 				["187204"] = {
 					"187204", -- [1]
@@ -986,6 +2270,13 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Magic_ManaGain", -- [4]
 					["id"] = 1720,
 				},
+				["-9921"] = {
+					"-9921", -- [1]
+					"Gorian Reaver", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\ability_warrior_shieldbreak", -- [4]
+					["id"] = 1705,
+				},
 				["arena_sweeper"] = {
 					"arena_sweeper", -- [1]
 					"Arena Sweeper", -- [2]
@@ -993,26 +2284,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_kick", -- [4]
 					["id"] = 1721,
 				},
+				["179407"] = {
+					"179407", -- [1]
+					"Disembodied on YOU!", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
+					["id"] = 1777,
+				},
 				["181354"] = {
 					"181354", -- [1]
 					"Glaive Combo", -- [2]
 					45, -- [3]
 					"Interface\\Icons\\Ability_Warrior_Challange", -- [4]
 					["id"] = 1795,
-				},
-				["144400"] = {
-					"144400", -- [1]
-					"Swelling Pride (1)", -- [2]
-					77, -- [3]
-					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
-					["id"] = 1604,
-				},
-				["-9921"] = {
-					"-9921", -- [1]
-					"Gorian Reaver", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\ability_warrior_shieldbreak", -- [4]
-					["id"] = 1705,
 				},
 				["181296"] = {
 					"181296", -- [1]
@@ -1035,12 +2319,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_PocketWatch_01", -- [4]
 					["id"] = 1606,
 				},
-				["146849"] = {
-					"146849", -- [1]
-					"Shattering Cleave", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Warrior_ShieldBreak", -- [4]
-					["id"] = 1622,
+				["181307"] = {
+					"181307", -- [1]
+					"Foul Crush", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
+					["id"] = 1787,
 				},
 				["179406"] = {
 					"179406", -- [1]
@@ -1056,12 +2340,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
 					["id"] = 1800,
 				},
-				["180025"] = {
-					"180025", -- [1]
-					"Harbinger's Mending (1)", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
-					["id"] = 1784,
+				["blazing"] = {
+					"blazing", -- [1]
+					"Skeleton", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\SPELL_SHADOW_RAISEDEAD", -- [4]
+					["id"] = 1024,
 				},
 				["158521"] = {
 					"158521", -- [1]
@@ -1091,12 +2375,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_AuraOfDarkness", -- [4]
 					["id"] = 1795,
 				},
-				["145226"] = {
-					"145226", -- [1]
-					"Blind Hatred", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\sha_ability_mage_firestarter", -- [4]
-					["id"] = 1624,
+				["161328"] = {
+					"161328", -- [1]
+					"Suppression Field", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameStrike", -- [4]
+					["id"] = 1723,
 				},
 				["143759"] = {
 					"143759", -- [1]
@@ -1105,19 +2389,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_creature_amber_02", -- [4]
 					["id"] = 1593,
 				},
-				["181255"] = {
-					"181255", -- [1]
-					"Fel Imp-losion", -- [2]
-					38, -- [3]
-					"Interface\\Icons\\Ability_Warlock_EmpoweredImp", -- [4]
-					["id"] = 1795,
+				["-8325"] = {
+					"-8325", -- [1]
+					"Explosive Despair on YOU!", -- [2]
+					10, -- [3]
+					"Interface\\ICONS\\Ability_DeathKnight_Asphixiate.blp", -- [4]
+					["id"] = 1623,
 				},
-				["179407"] = {
-					"179407", -- [1]
-					"Disembodied on YOU!", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
-					["id"] = 1777,
+				["144400"] = {
+					"144400", -- [1]
+					"Swelling Pride (1)", -- [2]
+					77, -- [3]
+					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
+					["id"] = 1604,
 				},
 				["144616"] = {
 					"144616", -- [1]
@@ -1161,33 +2445,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_monk_clashingoxcharge", -- [4]
 					["id"] = 1598,
 				},
-				["-8305"] = {
-					"-8305", -- [1]
-					"Intermission", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
-					["id"] = 1623,
-				},
-				["143701"] = {
-					"143701", -- [1]
-					"Whirling", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\Ability_Druid_GaleWinds", -- [4]
-					["id"] = 1593,
-				},
-				["-8325"] = {
-					"-8325", -- [1]
-					"Explosive Despair on YOU!", -- [2]
-					10, -- [3]
-					"Interface\\ICONS\\Ability_DeathKnight_Asphixiate.blp", -- [4]
-					["id"] = 1623,
-				},
-				["183828"] = {
-					"183828", -- [1]
-					"Death Brand", -- [2]
-					15.5, -- [3]
-					"Interface\\Icons\\warlock_summon_doomguard", -- [4]
-					["id"] = 1799,
+				["156225"] = {
+					"156225", -- [1]
+					"Branded on YOU!", -- [2]
+					4, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
+					["id"] = 1705,
 				},
 				["demolisher"] = {
 					"demolisher", -- [1]
@@ -1196,6 +2459,27 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_vehicle_siegeenginecannon", -- [4]
 					["id"] = 1622,
 				},
+				["181255"] = {
+					"181255", -- [1]
+					"Fel Imp-losion", -- [2]
+					38, -- [3]
+					"Interface\\Icons\\Ability_Warlock_EmpoweredImp", -- [4]
+					["id"] = 1795,
+				},
+				["183828"] = {
+					"183828", -- [1]
+					"Death Brand", -- [2]
+					15.5, -- [3]
+					"Interface\\Icons\\warlock_summon_doomguard", -- [4]
+					["id"] = 1799,
+				},
+				["162186"] = {
+					"162186", -- [1]
+					"Expel Magic: Arcane", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
+					["id"] = 1723,
+				},
 				["180221"] = {
 					"180221", -- [1]
 					"Volatile Fel Orb", -- [2]
@@ -1203,12 +2487,12 @@ _detalhes_database = {
 					"Interface\\Icons\\achievement_zone_cataclysmgreen", -- [4]
 					["id"] = 1794,
 				},
-				["180004"] = {
-					"180004", -- [1]
-					"Enforcer's Onslaught", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
-					["id"] = 1784,
+				["182225"] = {
+					"182225", -- [1]
+					"Rain of Chaos", -- [2]
+					62, -- [3]
+					"Interface\\Icons\\ability_warlock_burningembersgreen", -- [4]
+					["id"] = 1799,
 				},
 				["188510"] = {
 					"188510", -- [1]
@@ -1273,19 +2557,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1623,
 				},
-				["144396"] = {
-					"144396", -- [1]
-					"Vengeful Strikes", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\sha_spell_fire_bluerainoffire", -- [4]
-					["id"] = 1598,
+				["184964"] = {
+					"184964", -- [1]
+					"Shackled Torment (1)", -- [2]
+					27, -- [3]
+					"Interface\\Icons\\ability_warlock_soullink", -- [4]
+					["id"] = 1799,
 				},
-				["-8202"] = {
-					"-8202", -- [1]
-					"The Assembly Line (2)", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\Inv_crate_03", -- [4]
-					["id"] = 1601,
+				["160013"] = {
+					"160013", -- [1]
+					"Decay (2)", -- [2]
+					9.5, -- [3]
+					"Interface\\Icons\\Spell_Nature_WispSplodeGreen", -- [4]
+					["id"] = 1720,
 				},
 				["143385"] = {
 					"143385", -- [1]
@@ -1294,19 +2578,19 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_shaman_staticshock", -- [4]
 					["id"] = 1601,
 				},
-				["143502"] = {
-					"143502", -- [1]
-					"Execute", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\INV_Sword_48", -- [4]
-					["id"] = 1603,
+				["144758"] = {
+					"144758", -- [1]
+					"Desecrate", -- [2]
+					11, -- [3]
+					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
+					["id"] = 1623,
 				},
-				["182225"] = {
-					"182225", -- [1]
-					"Rain of Chaos", -- [2]
-					62, -- [3]
-					"Interface\\Icons\\ability_warlock_burningembersgreen", -- [4]
-					["id"] = 1799,
+				["-8220"] = {
+					"-8220", -- [1]
+					"Look Within", -- [2]
+					60, -- [3]
+					"Interface\\Icons\\ability_titankeeper_testofconfidence", -- [4]
+					["id"] = 1624,
 				},
 				["144328"] = {
 					"144328", -- [1]
@@ -1315,19 +2599,19 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_Powder_Iron", -- [4]
 					["id"] = 1606,
 				},
-				["184964"] = {
-					"184964", -- [1]
-					"Shackled Torment (1)", -- [2]
-					27, -- [3]
-					"Interface\\Icons\\ability_warlock_soullink", -- [4]
-					["id"] = 1799,
+				["144396"] = {
+					"144396", -- [1]
+					"Vengeful Strikes", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\sha_spell_fire_bluerainoffire", -- [4]
+					["id"] = 1598,
 				},
-				["143337"] = {
-					"143337", -- [1]
-					"Mutate", -- [2]
-					23, -- [3]
-					"Interface\\Icons\\ability_rikkal_genetics", -- [4]
-					["id"] = 1593,
+				["142851"] = {
+					"142851", -- [1]
+					"Adds (1)", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\spell_nature_earthquake", -- [4]
+					["id"] = 1595,
 				},
 				["nil"] = {
 					"nil", -- [1]
@@ -1350,19 +2634,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelorcs_necromancer_purple", -- [4]
 					["id"] = 1798,
 				},
-				["181827"] = {
-					"181827", -- [1]
-					"Fel Conduit", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
-					["id"] = 1788,
+				["184369"] = {
+					"184369", -- [1]
+					"Howling Axe", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
+					["id"] = 1778,
 				},
-				["144758"] = {
-					"144758", -- [1]
-					"Desecrate", -- [2]
-					11, -- [3]
-					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
-					["id"] = 1623,
+				["144498"] = {
+					"144498", -- [1]
+					"Explosive Tar", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\spell_yorsahj_bloodboil_black", -- [4]
+					["id"] = 1600,
 				},
 				["179583"] = {
 					"179583", -- [1]
@@ -1371,12 +2655,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfellord_felfissure", -- [4]
 					["id"] = 1777,
 				},
-				["183885"] = {
-					"183885", -- [1]
-					"Mirror Images", -- [2]
-					78, -- [3]
-					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
-					["id"] = 1798,
+				["181275"] = {
+					"181275", -- [1]
+					"Curse of the Legion: Geschan*", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\spell_warlock_summonterrorguard", -- [4]
+					["id"] = 1795,
 				},
 				["186407"] = {
 					"186407", -- [1]
@@ -1385,12 +2669,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_fel_incinerate", -- [4]
 					["id"] = 1800,
 				},
-				["-8220"] = {
-					"-8220", -- [1]
-					"Look Within", -- [2]
-					60, -- [3]
-					"Interface\\Icons\\ability_titankeeper_testofconfidence", -- [4]
-					["id"] = 1624,
+				["180004"] = {
+					"180004", -- [1]
+					"Enforcer's Onslaught", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
+					["id"] = 1784,
 				},
 				["78006"] = {
 					"78006", -- [1]
@@ -1399,12 +2683,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1024,
 				},
-				["143503"] = {
-					"143503", -- [1]
-					"<Cast: War Song>", -- [2]
-					3, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
-					["id"] = 1603,
+				["143337"] = {
+					"143337", -- [1]
+					"Mutate", -- [2]
+					23, -- [3]
+					"Interface\\Icons\\ability_rikkal_genetics", -- [4]
+					["id"] = 1593,
 				},
 				["181973"] = {
 					"181973", -- [1]
@@ -1427,19 +2711,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_Shadesofdarkness", -- [4]
 					["id"] = 1595,
 				},
-				["184369"] = {
-					"184369", -- [1]
-					"Howling Axe", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
-					["id"] = 1778,
+				["181827"] = {
+					"181827", -- [1]
+					"Fel Conduit", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
+					["id"] = 1788,
 				},
-				["181275"] = {
-					"181275", -- [1]
-					"Curse of the Legion: Geschan*", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\spell_warlock_summonterrorguard", -- [4]
-					["id"] = 1795,
+				["183885"] = {
+					"183885", -- [1]
+					"Mirror Images", -- [2]
+					78, -- [3]
+					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
+					["id"] = 1798,
 				},
 				["144985"] = {
 					"144985", -- [1]
@@ -1462,12 +2746,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
 					["id"] = 1798,
 				},
-				["142851"] = {
-					"142851", -- [1]
-					"Adds (1)", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\spell_nature_earthquake", -- [4]
-					["id"] = 1595,
+				["143503"] = {
+					"143503", -- [1]
+					"<Cast: War Song>", -- [2]
+					3, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
+					["id"] = 1603,
 				},
 				["158057"] = {
 					"158057", -- [1]
@@ -1483,12 +2767,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Sunder", -- [4]
 					["id"] = 1603,
 				},
-				["injection_tank"] = {
-					"injection_tank", -- [1]
-					"Injection", -- [2]
-					9, -- [3]
-					"INTERFACE\\ICONS\\inv_gizmo_runichealthinjector", -- [4]
-					["id"] = 1593,
+				["172747"] = {
+					"172747", -- [1]
+					"Expel Magic: Frost", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\spell_frost_frozenorb", -- [4]
+					["id"] = 1723,
 				},
 				["157943"] = {
 					"157943", -- [1]
@@ -1497,12 +2781,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_whirlwind", -- [4]
 					["id"] = 1719,
 				},
-				["142826"] = {
-					"142826", -- [1]
-					"Arcing Smash (1)", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\spell_shaman_earthquake", -- [4]
-					["id"] = 1595,
+				["148677"] = {
+					"148677", -- [1]
+					"Reave", -- [2]
+					42, -- [3]
+					"Interface\\Icons\\ability_whirlwind", -- [4]
+					["id"] = 1593,
 				},
 				["190050"] = {
 					"190050", -- [1]
@@ -1539,12 +2823,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_MindShear", -- [4]
 					["id"] = 1598,
 				},
-				["184681"] = {
-					"184681", -- [1]
-					"Wailing Horror (1)", -- [2]
-					75, -- [3]
-					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
-					["id"] = 1798,
+				["living_mushroom"] = {
+					"living_mushroom", -- [1]
+					"Living Mushroom", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\inv_misc_starspecklemushroom", -- [4]
+					["id"] = 1720,
 				},
 				["towers"] = {
 					"towers", -- [1]
@@ -1553,12 +2837,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Achievement_Character_Orc_Male", -- [4]
 					["id"] = 1622,
 				},
-				["143428"] = {
-					"143428", -- [1]
-					"Tail Lash", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\Ability_CriticalStrike", -- [4]
-					["id"] = 1599,
+				["142826"] = {
+					"142826", -- [1]
+					"Arcing Smash (1)", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\spell_shaman_earthquake", -- [4]
+					["id"] = 1595,
 				},
 				["143436"] = {
 					"143436", -- [1]
@@ -1581,12 +2865,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_creature_poison_02", -- [4]
 					["id"] = 1606,
 				},
-				["148677"] = {
-					"148677", -- [1]
-					"Reave", -- [2]
-					42, -- [3]
-					"Interface\\Icons\\ability_whirlwind", -- [4]
-					["id"] = 1593,
+				["143428"] = {
+					"143428", -- [1]
+					"Tail Lash", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\Ability_CriticalStrike", -- [4]
+					["id"] = 1599,
 				},
 				["-11462"] = {
 					"-11462", -- [1]
@@ -1595,19 +2879,19 @@ _detalhes_database = {
 					"Interface\\Icons\\achievement_halloween_ghost_01", -- [4]
 					["id"] = 1794,
 				},
-				["77690"] = {
-					"77690", -- [1]
-					"Lava Spew", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\Spell_Shaman_LavaBurst", -- [4]
-					["id"] = 1024,
-				},
 				["145065"] = {
 					"145065", -- [1]
 					"Mind Control", -- [2]
 					15, -- [3]
 					"Interface\\Icons\\ability_garrosh_touch_of_yshaarj", -- [4]
 					["id"] = 1623,
+				},
+				["77690"] = {
+					"77690", -- [1]
+					"Lava Spew", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\Spell_Shaman_LavaBurst", -- [4]
+					["id"] = 1024,
 				},
 				["182001"] = {
 					"182001", -- [1]
@@ -1630,12 +2914,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_titankeeper_uncheckedcorruption", -- [4]
 					["id"] = 1623,
 				},
-				["phase"] = {
-					"phase", -- [1]
-					"Next phase", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
-					["id"] = 1025,
+				["184681"] = {
+					"184681", -- [1]
+					"Wailing Horror (1)", -- [2]
+					75, -- [3]
+					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
+					["id"] = 1798,
 				},
 				["182459"] = {
 					"182459", -- [1]
@@ -1651,40 +2935,40 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
 					["id"] = 1722,
 				},
-				["79339"] = {
-					"79339", -- [1]
-					"Explosive Cinders", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
-					["id"] = 1026,
+				["phase"] = {
+					"phase", -- [1]
+					"Next phase", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
+					["id"] = 1025,
 				},
-				["172747"] = {
-					"172747", -- [1]
-					"Expel Magic: Frost", -- [2]
+				["injection_tank"] = {
+					"injection_tank", -- [1]
+					"Injection", -- [2]
+					9, -- [3]
+					"INTERFACE\\ICONS\\inv_gizmo_runichealthinjector", -- [4]
+					["id"] = 1593,
+				},
+				["143502"] = {
+					"143502", -- [1]
+					"Execute", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\INV_Sword_48", -- [4]
+					["id"] = 1603,
+				},
+				["-8202"] = {
+					"-8202", -- [1]
+					"The Assembly Line (2)", -- [2]
 					40, -- [3]
-					"Interface\\Icons\\spell_frost_frozenorb", -- [4]
-					["id"] = 1723,
+					"Interface\\Icons\\Inv_crate_03", -- [4]
+					["id"] = 1601,
 				},
-				["144498"] = {
-					"144498", -- [1]
-					"Explosive Tar", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\spell_yorsahj_bloodboil_black", -- [4]
-					["id"] = 1600,
-				},
-				["160013"] = {
-					"160013", -- [1]
-					"Decay (2)", -- [2]
-					9.5, -- [3]
-					"Interface\\Icons\\Spell_Nature_WispSplodeGreen", -- [4]
-					["id"] = 1720,
-				},
-				["162894"] = {
-					"162894", -- [1]
-					"Gift of Earth", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\ability_earthenfury_giftofearth", -- [4]
-					["id"] = 1722,
+				["159113"] = {
+					"159113", -- [1]
+					"Impale", -- [2]
+					37, -- [3]
+					"Interface\\Icons\\Ability_Rogue_HungerforBlood", -- [4]
+					["id"] = 1721,
 				},
 				["184657"] = {
 					"184657", -- [1]
@@ -1693,12 +2977,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_SummonVoidWalker", -- [4]
 					["id"] = 1798,
 				},
-				["living_mushroom"] = {
-					"living_mushroom", -- [1]
-					"Living Mushroom", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\inv_misc_starspecklemushroom", -- [4]
-					["id"] = 1720,
+				["79339"] = {
+					"79339", -- [1]
+					"Explosive Cinders", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
+					["id"] = 1026,
 				},
 				["180224"] = {
 					"180224", -- [1]
@@ -1735,12 +3019,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Racial_Cannibalize", -- [4]
 					["id"] = 1024,
 				},
-				["159113"] = {
-					"159113", -- [1]
-					"Impale", -- [2]
-					37, -- [3]
-					"Interface\\Icons\\Ability_Rogue_HungerforBlood", -- [4]
-					["id"] = 1721,
+				["162894"] = {
+					"162894", -- [1]
+					"Gift of Earth", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\ability_earthenfury_giftofearth", -- [4]
+					["id"] = 1722,
 				},
 				["181912"] = {
 					"181912", -- [1]
@@ -1763,12 +3047,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_sandstorm", -- [4]
 					["id"] = 1784,
 				},
-				["162186"] = {
-					"162186", -- [1]
-					"Expel Magic: Arcane", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
-					["id"] = 1723,
+				["143701"] = {
+					"143701", -- [1]
+					"Whirling", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\Ability_Druid_GaleWinds", -- [4]
+					["id"] = 1593,
 				},
 				["182020"] = {
 					"182020", -- [1]
@@ -1784,12 +3068,12 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Kilruk_Reave.blp", -- [4]
 					["id"] = 1593,
 				},
-				["156225"] = {
-					"156225", -- [1]
-					"Branded on YOU!", -- [2]
-					4, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
-					["id"] = 1705,
+				["-8305"] = {
+					"-8305", -- [1]
+					"Intermission", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
+					["id"] = 1623,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -1833,33 +3117,33 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelmagnaron_handempowered", -- [4]
 					["id"] = 1787,
 				},
-				["161328"] = {
-					"161328", -- [1]
-					"Suppression Field", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameStrike", -- [4]
-					["id"] = 1723,
-				},
-				["blazing"] = {
-					"blazing", -- [1]
-					"Skeleton", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\SPELL_SHADOW_RAISEDEAD", -- [4]
-					["id"] = 1024,
-				},
-				["181307"] = {
-					"181307", -- [1]
-					"Foul Crush", -- [2]
+				["145226"] = {
+					"145226", -- [1]
+					"Blind Hatred", -- [2]
 					25, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
-					["id"] = 1787,
+					"Interface\\Icons\\sha_ability_mage_firestarter", -- [4]
+					["id"] = 1624,
 				},
-				["159219"] = {
-					"159219", -- [1]
-					"Necrotic Breath", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\ability_mage_worldinflamesgreen", -- [4]
-					["id"] = 1720,
+				["180025"] = {
+					"180025", -- [1]
+					"Harbinger's Mending (1)", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
+					["id"] = 1784,
+				},
+				["146849"] = {
+					"146849", -- [1]
+					"Shattering Cleave", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Warrior_ShieldBreak", -- [4]
+					["id"] = 1622,
+				},
+				["-8207"] = {
+					"-8207", -- [1]
+					"Pattern Recognition", -- [2]
+					60, -- [3]
+					"Interface\\ICONS\\Ability_Siege_Engineer_pattern_recognition.blp", -- [4]
+					["id"] = 1601,
 				},
 				["146595"] = {
 					"146595", -- [1]
@@ -1924,12 +3208,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_FocusedPower", -- [4]
 					["id"] = 1800,
 				},
-				["158605"] = {
-					"158605", -- [1]
-					"Mark of Chaos", -- [2]
-					34, -- [3]
-					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
-					["id"] = 1705,
+				["berserk"] = {
+					"berserk", -- [1]
+					"Berserk", -- [2]
+					600, -- [3]
+					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
+					["id"] = 1785,
 				},
 				["179711"] = {
 					"179711", -- [1]
@@ -1966,19 +3250,19 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_ability_rogue_bloodyeye", -- [4]
 					["id"] = 1604,
 				},
-				["145288"] = {
-					"145288", -- [1]
-					"Explosion", -- [2]
-					8, -- [3]
-					"INTERFACE\\ICONS\\spell_shaman_firenova", -- [4]
-					["id"] = 1594,
+				["184124"] = {
+					"184124", -- [1]
+					"Gift of the Man'ari", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_AntiMagicShell", -- [4]
+					["id"] = 1794,
 				},
-				["189894"] = {
-					"189894", -- [1]
-					"Void Star", -- [2]
-					15.8, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
-					["id"] = 1799,
+				["volatile_anomaly"] = {
+					"volatile_anomaly", -- [1]
+					"Volatile Anomaly (1)", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\spell_arcane_arcane04", -- [4]
+					["id"] = 1705,
 				},
 				["143958"] = {
 					"143958", -- [1]
@@ -1994,19 +3278,19 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
 					["id"] = 1785,
 				},
-				["144563"] = {
-					"144563", -- [1]
-					"Imprison", -- [2]
-					52.5, -- [3]
-					"Interface\\Icons\\sha_ability_rogue_sturdyrecuperate", -- [4]
-					["id"] = 1604,
+				["186961"] = {
+					"186961", -- [1]
+					"Nether Banish", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
+					["id"] = 1799,
 				},
-				["143491"] = {
-					"143491", -- [1]
-					"Calamity", -- [2]
-					29, -- [3]
-					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
-					["id"] = 1598,
+				["181508"] = {
+					"181508", -- [1]
+					"Seed of Destruction", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\Spell_Shadow_SeedOfDestruction", -- [4]
+					["id"] = 1777,
 				},
 				["81272"] = {
 					"81272", -- [1]
@@ -2022,19 +3306,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
 					["id"] = 1787,
 				},
-				["181508"] = {
-					"181508", -- [1]
-					"Seed of Destruction", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\Spell_Shadow_SeedOfDestruction", -- [4]
-					["id"] = 1777,
+				["185237"] = {
+					"185237", -- [1]
+					"Touch of Harm", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
+					["id"] = 1784,
 				},
-				["180199"] = {
-					"180199", -- [1]
-					"Shred Armor", -- [2]
-					10.8, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Riposte", -- [4]
-					["id"] = 1786,
+				["179977"] = {
+					"179977", -- [1]
+					"Touch of Doom", -- [2]
+					8.3, -- [3]
+					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
+					["id"] = 1783,
 				},
 				["flesh_eater"] = {
 					"flesh_eater", -- [1]
@@ -2043,12 +3327,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Creature_Disease_02", -- [4]
 					["id"] = 1720,
 				},
-				["158134"] = {
-					"158134", -- [1]
-					"Shield Charge", -- [2]
-					38, -- [3]
-					"Interface\\Icons\\Ability_Warrior_ShieldGuard", -- [4]
-					["id"] = 1719,
+				["188929"] = {
+					"188929", -- [1]
+					"Heart Seeker", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
+					["id"] = 1786,
 				},
 				["-7920"] = {
 					"-7920", -- [1]
@@ -2110,7 +3394,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -2118,7 +3402,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -2126,7 +3410,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -2140,7 +3424,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -3333,8 +4617,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["showamount"] = false,
 			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -3351,59 +4635,33 @@ _detalhes_database = {
 		},
 	},
 	["character_data"] = {
-		["logons"] = 4634,
+		["logons"] = 4740,
 	},
 	["force_font_outline"] = "",
 	["announce_firsthit"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 	},
-	["last_day"] = "25",
+	["combat_counter"] = 47456,
 	["tabela_instancias"] = {
 	},
-	["combat_id"] = 378,
+	["combat_id"] = 304,
 	["savedStyles"] = {
-	},
-	["nick_tag_cache"] = {
-		[83337059] = {
-			"Benchclass", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Asira Dawnslayer", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			4, -- [7]
-		},
-		["nextreset"] = 1498959187,
-		["last_version"] = 8,
 	},
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
+	["last_day"] = "27",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 3,
 		["only_first"] = 5,
 		["where"] = 3,
 	},
-	["combat_counter"] = 45446,
+	["last_instance_time"] = 1501093396,
 	["local_instances_config"] = {
 		{
-			["segment"] = -1,
+			["segment"] = 0,
 			["sub_attribute"] = 1,
 			["horizontalSnap"] = false,
 			["verticalSnap"] = false,
@@ -3414,7 +4672,7 @@ _detalhes_database = {
 				5, -- [2]
 				2, -- [3]
 				5, -- [4]
-				7, -- [5]
+				13, -- [5]
 			},
 			["snap"] = {
 			},
@@ -3446,7 +4704,7 @@ _detalhes_database = {
 				1, -- [1]
 				1, -- [2]
 				3, -- [3]
-				7, -- [4]
+				5, -- [4]
 				1, -- [5]
 			},
 			["snap"] = {
@@ -3455,10 +4713,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -424.356981687056,
+					["y"] = -424.356989240157,
 					["x"] = 750.194559715756,
-					["w"] = 208.361206054688,
-					["h"] = 84.4102020263672,
+					["w"] = 208.361083984375,
+					["h"] = 84.4101943969727,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -3502,7 +4760,19 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["last_instance_time"] = 1498348186,
+	["nick_tag_cache"] = {
+		["nextreset"] = 1501145145,
+		[85162672] = {
+			"Vicsur", -- [1]
+			false, -- [2]
+			false, -- [3]
+			false, -- [4]
+			false, -- [5]
+			false, -- [6]
+			3, -- [7]
+		},
+		["last_version"] = 9,
+	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -3511,34 +4781,299 @@ _detalhes_database = {
 		["channel"] = "RAID",
 	},
 	["cached_talents"] = {
-		["Player-1303-042451A8"] = {
-			19232, -- [1]
-			19217, -- [2]
-			19218, -- [3]
-			21207, -- [4]
-			19227, -- [5]
-			19221, -- [6]
-			22014, -- [7]
+		["Player-2074-05A1BF94"] = {
+			18572, -- [1]
+			19283, -- [2]
+			22160, -- [3]
+			18577, -- [4]
+			21707, -- [5]
+			22165, -- [6]
+			22404, -- [7]
 		},
-		["Player-1105-061CEC36"] = {
-			22484, -- [1]
-			21202, -- [2]
-			22431, -- [3]
-			22558, -- [4]
-			22433, -- [5]
-			21811, -- [6]
-			22705, -- [7]
+		["Player-1311-088135BD"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22466, -- [4]
+			22446, -- [5]
+			22449, -- [6]
+			21632, -- [7]
 		},
-		["Player-1104-07B15DF2"] = {
+		["Player-1329-0507D327"] = {
+			19235, -- [1]
+			22333, -- [2]
+			19239, -- [3]
+			22123, -- [4]
+			22114, -- [5]
+			22335, -- [6]
+			21188, -- [7]
+		},
+		["Player-3702-07987DE4"] = {
+			22493, -- [1]
+			22765, -- [2]
+			21862, -- [3]
+			21865, -- [4]
+			21866, -- [5]
+			21869, -- [6]
+			22547, -- [7]
+		},
+		["Player-1329-0419C457"] = {
+			21966, -- [1]
+			22492, -- [2]
+			21675, -- [3]
+			19275, -- [4]
+			21971, -- [5]
+			22322, -- [6]
+			19264, -- [7]
+		},
+		["Player-1092-081734B9"] = {
+		},
+		["Player-3391-07E14D24"] = {
+			22282, -- [1]
+			21997, -- [2]
+			19347, -- [3]
+			22269, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			22295, -- [7]
+		},
+		["Player-1378-086695D6"] = {
+			22493, -- [1]
+			21857, -- [2]
+			21862, -- [3]
+			21865, -- [4]
+			21866, -- [5]
+			21869, -- [6]
+			21901, -- [7]
+		},
+		["Player-1302-07358D2A"] = {
+			22323, -- [1]
+			19259, -- [2]
+			21970, -- [3]
+			19275, -- [4]
+			21968, -- [5]
+			21966, -- [6]
+			19264, -- [7]
+		},
+		["Player-1329-0415B3A1"] = {
+		},
+		["Player-1396-0688AF30"] = {
+			18569, -- [1]
+			19283, -- [2]
+			22160, -- [3]
+			18577, -- [4]
+			21704, -- [5]
+			21713, -- [6]
+			21651, -- [7]
+		},
+		["Player-1378-044C123F"] = {
+			22363, -- [1]
+			18570, -- [2]
+			22163, -- [3]
+			21778, -- [4]
+			21702, -- [5]
+			21711, -- [6]
+			21649, -- [7]
+		},
+		["Player-3391-08D0B2A9"] = {
+			22904, -- [1]
+			22450, -- [2]
+			22451, -- [3]
+			22459, -- [4]
+			22447, -- [5]
+			21631, -- [6]
+			22442, -- [7]
+		},
+		["Player-3687-073EB2E1"] = {
+			22442, -- [1]
+			22450, -- [2]
+			22451, -- [3]
+			22459, -- [4]
+			22447, -- [5]
+			21633, -- [6]
+			22904, -- [7]
+		},
+		["Player-1406-05CFA757"] = {
+			21778, -- [1]
+			21716, -- [2]
+			18574, -- [3]
+			21704, -- [4]
+			22160, -- [5]
+			18570, -- [6]
+			22404, -- [7]
+		},
+		["Player-1329-0603BA17"] = {
+			19233, -- [1]
+			22331, -- [2]
+			19239, -- [3]
+			22123, -- [4]
+			22114, -- [5]
+			22335, -- [6]
+			21188, -- [7]
+		},
+		["Player-1309-07745FDE"] = {
+			22590, -- [1]
+			22319, -- [2]
+			21811, -- [3]
+			22183, -- [4]
+			22185, -- [5]
+			22483, -- [6]
+			22215, -- [7]
+		},
+		["Player-3687-07B0636D"] = {
+			22026, -- [1]
+			22028, -- [2]
+			22516, -- [3]
+			22522, -- [4]
+			22530, -- [5]
+			22536, -- [6]
+			22030, -- [7]
+		},
+		["Player-3666-072D7A0A"] = {
+			19752, -- [1]
+			22315, -- [2]
+			22095, -- [3]
+			21752, -- [4]
+			19764, -- [5]
+			19767, -- [6]
+			21636, -- [7]
+		},
+		["Player-1309-092AC22D"] = {
+			22590, -- [1]
+			22592, -- [2]
+			22896, -- [3]
+			22183, -- [4]
+			22595, -- [5]
+			22485, -- [6]
+			22215, -- [7]
+		},
+		["Player-1331-052A2245"] = {
+			22387, -- [1]
+			18570, -- [2]
+			22159, -- [3]
+			21778, -- [4]
+			18579, -- [5]
+			22390, -- [6]
+			21193, -- [7]
+		},
+		["Player-3687-0709C314"] = {
+			15760, -- [1]
+			22629, -- [2]
+			22378, -- [3]
+			22488, -- [4]
+			22392, -- [5]
+			22401, -- [6]
+			21204, -- [7]
+		},
+		["Player-1311-0243BE59"] = {
+			22356, -- [1]
+			19259, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			19270, -- [5]
+			21968, -- [6]
+			21198, -- [7]
+		},
+		["Player-3391-08928AA6"] = {
+			22312, -- [1]
+			22316, -- [2]
+			22487, -- [3]
+			21751, -- [4]
+			22311, -- [5]
+			21720, -- [6]
+			21637, -- [7]
+		},
+		["Player-3681-08BBFDFA"] = {
+			22282, -- [1]
+			22769, -- [2]
+			19347, -- [3]
+			22347, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			21986, -- [7]
+		},
+		["Player-3391-0821C076"] = {
+			22190, -- [1]
+			17599, -- [2]
+			17593, -- [3]
+			22180, -- [4]
+			17575, -- [5]
+			21671, -- [6]
+			17567, -- [7]
+		},
+		["Player-1400-03D38091"] = {
+			21182, -- [1]
+			19279, -- [2]
+			19280, -- [3]
+			22047, -- [4]
+			22090, -- [5]
+			19293, -- [6]
+			21180, -- [7]
+		},
+		["Player-1325-03C5F1BA"] = {
+			19166, -- [1]
+			19218, -- [2]
+			19221, -- [3]
+			22014, -- [4]
+			19228, -- [5]
+			19232, -- [6]
+			21209, -- [7]
+		},
+		["Player-1311-056653DB"] = {
+			22624, -- [1]
+			22409, -- [2]
+			19138, -- [3]
+			22628, -- [4]
+			22800, -- [5]
+			22394, -- [6]
+			21204, -- [7]
+		},
+		["Player-1301-078B3CB2"] = {
+			19138, -- [1]
+			22625, -- [2]
+			22360, -- [3]
+			22628, -- [4]
+			22393, -- [5]
+			22399, -- [6]
+			22407, -- [7]
+		},
+		["Player-1096-076B857F"] = {
 			22493, -- [1]
 			22765, -- [2]
 			22494, -- [3]
-			21863, -- [4]
-			21868, -- [5]
-			21870, -- [6]
-			21900, -- [7]
+			21865, -- [4]
+			21867, -- [5]
+			21869, -- [6]
+			22547, -- [7]
 		},
-		["Player-3391-08F916AA"] = {
+		["Player-1596-0A0BE868"] = {
+			22040, -- [1]
+			22044, -- [2]
+			19280, -- [3]
+			19279, -- [4]
+			19291, -- [5]
+			21182, -- [6]
+			19293, -- [7]
+		},
+		["Player-3660-08B2F10D"] = {
+			22503, -- [1]
+			22766, -- [2]
+			22324, -- [3]
+			22509, -- [4]
+			22510, -- [5]
+			22768, -- [6]
+			21902, -- [7]
+		},
+		["Player-1378-08ABD06F"] = {
+			22026, -- [1]
+			22028, -- [2]
+			22516, -- [3]
+			22522, -- [4]
+			22022, -- [5]
+			22532, -- [6]
+			22030, -- [7]
+		},
+		["Player-3687-05E97581"] = {
 			22498, -- [1]
 			22288, -- [2]
 			22284, -- [3]
@@ -3547,16 +5082,1893 @@ _detalhes_database = {
 			19347, -- [6]
 			22287, -- [7]
 		},
-		["Player-580-07A984D2"] = {
-			21636, -- [1]
-			19767, -- [2]
-			22095, -- [3]
-			21977, -- [4]
-			19752, -- [5]
-			22315, -- [6]
-			21754, -- [7]
+		["Player-3702-0810BCA5"] = {
+			22313, -- [1]
+			19758, -- [2]
+			22487, -- [3]
+			22317, -- [4]
+			22311, -- [5]
+			21719, -- [6]
+			21637, -- [7]
 		},
-		["Player-3391-08D4A271"] = {
+		["Player-1587-09A6CB21"] = {
+			22632, -- [1]
+			22409, -- [2]
+			19138, -- [3]
+			22627, -- [4]
+			22391, -- [5]
+			22400, -- [6]
+			22402, -- [7]
+		},
+		["Player-1329-04195974"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22444, -- [3]
+			22452, -- [4]
+			22448, -- [5]
+			22449, -- [6]
+			22309, -- [7]
+		},
+		["Player-2074-04DA356B"] = {
+			22328, -- [1]
+			22315, -- [2]
+			22440, -- [3]
+			19769, -- [4]
+			22330, -- [5]
+			22161, -- [6]
+			22976, -- [7]
+		},
+		["Player-1329-0500B690"] = {
+			19823, -- [1]
+			19818, -- [2]
+			22166, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			22217, -- [6]
+			22218, -- [7]
+		},
+		["Player-1384-07DD97A1"] = {
+			22289, -- [1]
+			22497, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22276, -- [5]
+			22002, -- [6]
+			22308, -- [7]
+		},
+		["Player-1325-0536DEEF"] = {
+			22365, -- [1]
+			18571, -- [2]
+			22159, -- [3]
+			21778, -- [4]
+			21705, -- [5]
+			21711, -- [6]
+			21646, -- [7]
+		},
+		["Player-1598-06315D07"] = {
+			22282, -- [1]
+			22290, -- [2]
+			19347, -- [3]
+			22347, -- [4]
+			22293, -- [5]
+			22002, -- [6]
+			22273, -- [7]
+		},
+		["Player-1301-0738EBF3"] = {
+			22459, -- [1]
+			22442, -- [2]
+			22444, -- [3]
+			22465, -- [4]
+			22904, -- [5]
+			22451, -- [6]
+			21633, -- [7]
+		},
+		["Player-1316-092B832A"] = {
+			22039, -- [1]
+			22088, -- [2]
+			19280, -- [3]
+			22046, -- [4]
+			19291, -- [5]
+			19294, -- [6]
+			22482, -- [7]
+		},
+		["Player-1085-05104373"] = {
+			22590, -- [1]
+			22319, -- [2]
+			22896, -- [3]
+			22182, -- [4]
+			22185, -- [5]
+			22483, -- [6]
+			22591, -- [7]
+		},
+		["Player-3687-0768CC8E"] = {
+			22442, -- [1]
+			22309, -- [2]
+			22449, -- [3]
+			22460, -- [4]
+			22447, -- [5]
+			22469, -- [6]
+			22446, -- [7]
+		},
+		["Player-3702-071BF7F1"] = {
+			22280, -- [1]
+			22290, -- [2]
+			19347, -- [3]
+			22347, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			22295, -- [7]
+		},
+		["Player-3391-06747CC6"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22469, -- [4]
+			22471, -- [5]
+			22473, -- [6]
+			21632, -- [7]
+		},
+		["Player-3687-07761813"] = {
+		},
+		["Player-1301-08D3C285"] = {
+			15774, -- [1]
+			22629, -- [2]
+			22378, -- [3]
+			22627, -- [4]
+			22362, -- [5]
+			22396, -- [6]
+			22406, -- [7]
+		},
+		["Player-1307-0308759C"] = {
+			22387, -- [1]
+			18571, -- [2]
+			22159, -- [3]
+			18577, -- [4]
+			18579, -- [5]
+			22390, -- [6]
+			21655, -- [7]
+		},
+		["Player-1378-08BADD9D"] = {
+			22371, -- [1]
+			22409, -- [2]
+			19138, -- [3]
+			15757, -- [4]
+			22800, -- [5]
+			22397, -- [6]
+			21667, -- [7]
+		},
+		["Player-3680-07ACDA6B"] = {
+			22316, -- [1]
+			22310, -- [2]
+			21751, -- [3]
+			22487, -- [4]
+			22313, -- [5]
+			21720, -- [6]
+			21637, -- [7]
+		},
+		["Player-3687-05D7B462"] = {
+			22017, -- [1]
+			22020, -- [2]
+			22519, -- [3]
+			22525, -- [4]
+			22529, -- [5]
+			22535, -- [6]
+			22023, -- [7]
+		},
+		["Player-1417-06A9D85E"] = {
+		},
+		["Player-2073-0602CE16"] = {
+			22091, -- [1]
+			19818, -- [2]
+			22098, -- [3]
+			19995, -- [4]
+			20175, -- [5]
+			19819, -- [6]
+			22104, -- [7]
+		},
+		["Player-1378-00018793"] = {
+			22313, -- [1]
+			22316, -- [2]
+			22487, -- [3]
+			21753, -- [4]
+			22311, -- [5]
+			21719, -- [6]
+			21637, -- [7]
+		},
+		["Player-1329-0413B99D"] = {
+			17565, -- [1]
+			17577, -- [2]
+			22179, -- [3]
+			17593, -- [4]
+			17597, -- [5]
+			22484, -- [6]
+			21668, -- [7]
+		},
+		["Player-1378-0845BDAA"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21864, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-1329-04196D1E"] = {
+			22590, -- [1]
+			22485, -- [2]
+			22319, -- [3]
+			22215, -- [4]
+			22595, -- [5]
+			22182, -- [6]
+			21811, -- [7]
+		},
+		["Player-1393-084CE5EE"] = {
+			21854, -- [1]
+			21857, -- [2]
+			21862, -- [3]
+			21865, -- [4]
+			21866, -- [5]
+			21869, -- [6]
+			21901, -- [7]
+		},
+		["Player-1081-01D1DE80"] = {
+			22386, -- [1]
+			18571, -- [2]
+			22159, -- [3]
+			18577, -- [4]
+			18580, -- [5]
+			22390, -- [6]
+			21648, -- [7]
+		},
+		["Player-1085-079B4C27"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22909, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			21870, -- [6]
+			21900, -- [7]
+		},
+		["Player-3687-081C4106"] = {
+			22118, -- [1]
+			19236, -- [2]
+			19239, -- [3]
+			22123, -- [4]
+			22114, -- [5]
+			19250, -- [6]
+			21188, -- [7]
+		},
+		["Player-1092-08114031"] = {
+			19823, -- [1]
+			19304, -- [2]
+			22166, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			22217, -- [6]
+			22218, -- [7]
+		},
+		["Player-3666-0800ACD1"] = {
+			22048, -- [1]
+			21695, -- [2]
+			19286, -- [3]
+			22046, -- [4]
+			22047, -- [5]
+			19294, -- [6]
+			22482, -- [7]
+		},
+		["Player-1378-08179A0A"] = {
+			22590, -- [1]
+			22319, -- [2]
+			21811, -- [3]
+			22182, -- [4]
+			22185, -- [5]
+			22485, -- [6]
+			22215, -- [7]
+		},
+		["Player-1301-08170946"] = {
+			22039, -- [1]
+			21181, -- [2]
+			19286, -- [3]
+			22043, -- [4]
+			19291, -- [5]
+			19295, -- [6]
+			19293, -- [7]
+		},
+		["Player-1388-07464278"] = {
+			22356, -- [1]
+			22139, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			22144, -- [5]
+			21968, -- [6]
+			21198, -- [7]
+		},
+		["Player-1403-06321474"] = {
+			22633, -- [1]
+			22372, -- [2]
+			19138, -- [3]
+			22635, -- [4]
+			22391, -- [5]
+			22400, -- [6]
+			22402, -- [7]
+		},
+		["Player-1588-066755B2"] = {
+			22041, -- [1]
+			22045, -- [2]
+			19280, -- [3]
+			22477, -- [4]
+			19288, -- [5]
+			19294, -- [6]
+			22479, -- [7]
+		},
+		["Player-3674-06A9974B"] = {
+			22337, -- [1]
+			22331, -- [2]
+			19241, -- [3]
+			22340, -- [4]
+			22341, -- [5]
+			22343, -- [6]
+			21186, -- [7]
+		},
+		["Player-1329-05F49DEC"] = {
+			22282, -- [1]
+			22769, -- [2]
+			22318, -- [3]
+			22269, -- [4]
+			22284, -- [5]
+			22287, -- [6]
+			22295, -- [7]
+		},
+		["Player-2074-062DD5CD"] = {
+			22358, -- [1]
+			19259, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			19270, -- [5]
+			21968, -- [6]
+			21972, -- [7]
+		},
+		["Player-1396-08B3598C"] = {
+			22493, -- [1]
+			22799, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21867, -- [5]
+			22767, -- [6]
+			21901, -- [7]
+		},
+		["Player-1329-059343AB"] = {
+			22183, -- [1]
+			22590, -- [2]
+			22185, -- [3]
+			22592, -- [4]
+			22215, -- [5]
+			22896, -- [6]
+			22484, -- [7]
+		},
+		["Player-1385-083775BC"] = {
+			21854, -- [1]
+			21857, -- [2]
+			21862, -- [3]
+			21864, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-3702-08147F6F"] = {
+			22456, -- [1]
+			22442, -- [2]
+			22444, -- [3]
+			22465, -- [4]
+			22904, -- [5]
+			22449, -- [6]
+			21633, -- [7]
+		},
+		["Player-2073-05FF6373"] = {
+			19264, -- [1]
+			19259, -- [2]
+			19260, -- [3]
+			22152, -- [4]
+			19269, -- [5]
+			21968, -- [6]
+			21970, -- [7]
+		},
+		["Player-1091-06A2C1D5"] = {
+			22633, -- [1]
+			22372, -- [2]
+			19138, -- [3]
+			22635, -- [4]
+			22384, -- [5]
+			22544, -- [6]
+			22405, -- [7]
+		},
+		["Player-1587-099DAD7B"] = {
+			22442, -- [1]
+			22450, -- [2]
+			22444, -- [3]
+			22459, -- [4]
+			21633, -- [5]
+			22472, -- [6]
+			22904, -- [7]
+		},
+		["Player-3391-0803348B"] = {
+			22279, -- [1]
+			22498, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22284, -- [5]
+			22287, -- [6]
+			22288, -- [7]
+		},
+		["Player-3657-07EE02CA"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22466, -- [4]
+			22471, -- [5]
+			22449, -- [6]
+			22309, -- [7]
+		},
+		["Player-3687-05EFF19E"] = {
+			22353, -- [1]
+			22150, -- [2]
+			19275, -- [3]
+			22162, -- [4]
+			22137, -- [5]
+			21973, -- [6]
+			22359, -- [7]
+		},
+		["Player-1393-00950BE3"] = {
+			22339, -- [1]
+			22331, -- [2]
+			19239, -- [3]
+			22340, -- [4]
+			22114, -- [5]
+			22344, -- [6]
+			21186, -- [7]
+		},
+		["Player-1301-0733A853"] = {
+			18574, -- [1]
+			18570, -- [2]
+			22367, -- [3]
+			21778, -- [4]
+			21704, -- [5]
+			22165, -- [6]
+			22404, -- [7]
+		},
+		["Player-1588-0A1EA1EF"] = {
+			22493, -- [1]
+			22765, -- [2]
+			21862, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			22547, -- [7]
+		},
+		["Player-1313-03728927"] = {
+			22590, -- [1]
+			22593, -- [2]
+			21811, -- [3]
+			22182, -- [4]
+			22185, -- [5]
+			22484, -- [6]
+			22215, -- [7]
+		},
+		["Player-1385-08B71569"] = {
+			22590, -- [1]
+			22591, -- [2]
+			22375, -- [3]
+			22180, -- [4]
+			22483, -- [5]
+			22595, -- [6]
+			22319, -- [7]
+		},
+		["Player-1082-078D1054"] = {
+			22485, -- [1]
+			22595, -- [2]
+			22557, -- [3]
+			22215, -- [4]
+			22319, -- [5]
+			22182, -- [6]
+			21811, -- [7]
+		},
+		["Player-1929-0A1D9F9A"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21863, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-1301-090F88F1"] = {
+			22280, -- [1]
+			21997, -- [2]
+			22318, -- [3]
+			22347, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			22295, -- [7]
+		},
+		["Player-3391-0928A994"] = {
+			21986, -- [1]
+			19357, -- [2]
+			21997, -- [3]
+			22284, -- [4]
+			22280, -- [5]
+			22441, -- [6]
+			19347, -- [7]
+		},
+		["Player-3391-092D8747"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			21870, -- [6]
+			21900, -- [7]
+		},
+		["Player-1393-01388D1E"] = {
+			22364, -- [1]
+			18570, -- [2]
+			22158, -- [3]
+			21778, -- [4]
+			21702, -- [5]
+			21714, -- [6]
+			21653, -- [7]
+		},
+		["Player-1311-06FAC4C3"] = {
+			22155, -- [1]
+			22387, -- [2]
+			18580, -- [3]
+			22389, -- [4]
+			21193, -- [5]
+			18570, -- [6]
+			18577, -- [7]
+		},
+		["Player-1393-0222E322"] = {
+			22470, -- [1]
+			22443, -- [2]
+			22907, -- [3]
+			22474, -- [4]
+			22461, -- [5]
+			21630, -- [6]
+			22447, -- [7]
+		},
+		["Player-1587-09DDFED7"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22469, -- [4]
+			22446, -- [5]
+			22473, -- [6]
+			22309, -- [7]
+		},
+		["Player-1402-0649127F"] = {
+			21901, -- [1]
+			22493, -- [2]
+			21864, -- [3]
+			21870, -- [4]
+			22909, -- [5]
+			21867, -- [6]
+			21857, -- [7]
+		},
+		["Player-1096-07966DA4"] = {
+			22313, -- [1]
+			22325, -- [2]
+			22487, -- [3]
+			22317, -- [4]
+			21755, -- [5]
+			21719, -- [6]
+			21637, -- [7]
+		},
+		["Player-1389-06BBBF93"] = {
+		},
+		["Player-1389-00A01D01"] = {
+			19264, -- [1]
+			22492, -- [2]
+			21968, -- [3]
+			19275, -- [4]
+			19269, -- [5]
+			22322, -- [6]
+			21970, -- [7]
+		},
+		["Player-1300-071D4ECA"] = {
+			22633, -- [1]
+			22372, -- [2]
+			19138, -- [3]
+			22627, -- [4]
+			22384, -- [5]
+			22395, -- [6]
+			22405, -- [7]
+		},
+		["Player-1587-0A14682D"] = {
+			19754, -- [1]
+			22326, -- [2]
+			22562, -- [3]
+			21750, -- [4]
+			21754, -- [5]
+			19767, -- [6]
+			21644, -- [7]
+		},
+		["Player-1396-087EDFE5"] = {
+			22501, -- [1]
+			22497, -- [2]
+			19348, -- [3]
+			22267, -- [4]
+			22276, -- [5]
+			19357, -- [6]
+			22308, -- [7]
+		},
+		["Player-3687-07864407"] = {
+			21854, -- [1]
+			22799, -- [2]
+			21862, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-3391-0882FBFB"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21863, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-1378-082A7A45"] = {
+			22279, -- [1]
+			22498, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22499, -- [5]
+			22287, -- [6]
+			22288, -- [7]
+		},
+		["Player-3702-06146BB0"] = {
+			22590, -- [1]
+			22592, -- [2]
+			22896, -- [3]
+			22183, -- [4]
+			22595, -- [5]
+			22485, -- [6]
+			22591, -- [7]
+		},
+		["Player-1378-048DAF74"] = {
+			22337, -- [1]
+			22331, -- [2]
+			19241, -- [3]
+			22123, -- [4]
+			22341, -- [5]
+			22343, -- [6]
+			21186, -- [7]
+		},
+		["Player-1307-05D613BB"] = {
+			19264, -- [1]
+			19259, -- [2]
+			19260, -- [3]
+			22152, -- [4]
+			21966, -- [5]
+			21968, -- [6]
+			21675, -- [7]
+		},
+		["Player-3702-0748D646"] = {
+			22358, -- [1]
+			19259, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			19270, -- [5]
+			21968, -- [6]
+			21972, -- [7]
+		},
+		["Player-3687-05D638C4"] = {
+			19292, -- [1]
+			19280, -- [2]
+			19288, -- [3]
+			21182, -- [4]
+			22090, -- [5]
+			19284, -- [6]
+			21180, -- [7]
+		},
+		["Player-1096-060774C9"] = {
+			18569, -- [1]
+			18570, -- [2]
+			22160, -- [3]
+			21778, -- [4]
+			21704, -- [5]
+			22165, -- [6]
+			22404, -- [7]
+		},
+		["Player-1309-08F5A8B4"] = {
+			22353, -- [1]
+			22150, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			22149, -- [5]
+			21973, -- [6]
+			21969, -- [7]
+		},
+		["Player-1587-072AE589"] = {
+			22295, -- [1]
+			22282, -- [2]
+			22269, -- [3]
+			21997, -- [4]
+			22287, -- [5]
+			19347, -- [6]
+			22284, -- [7]
+		},
+		["Player-3391-08694D15"] = {
+			19234, -- [1]
+			22331, -- [2]
+			19239, -- [3]
+			22123, -- [4]
+			22114, -- [5]
+			22335, -- [6]
+			21188, -- [7]
+		},
+		["Player-3702-0814082B"] = {
+			22040, -- [1]
+			22044, -- [2]
+			19280, -- [3]
+			22046, -- [4]
+			19291, -- [5]
+			21182, -- [6]
+			19293, -- [7]
+		},
+		["Player-3391-07F9480C"] = {
+			19233, -- [1]
+			22331, -- [2]
+			19239, -- [3]
+			22123, -- [4]
+			22114, -- [5]
+			22335, -- [6]
+			21188, -- [7]
+		},
+		["Player-1313-08F8C74A"] = {
+			22416, -- [1]
+			22799, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			22547, -- [7]
+		},
+		["Player-1390-09256196"] = {
+			22371, -- [1]
+			22409, -- [2]
+			22380, -- [3]
+			22627, -- [4]
+			22383, -- [5]
+			22397, -- [6]
+			22407, -- [7]
+		},
+		["Player-1393-083C837A"] = {
+			22419, -- [1]
+			18571, -- [2]
+			22159, -- [3]
+			18577, -- [4]
+			22421, -- [5]
+			21712, -- [6]
+			22426, -- [7]
+		},
+		["Player-3391-06FEAC5E"] = {
+			22387, -- [1]
+			18570, -- [2]
+			22157, -- [3]
+			18577, -- [4]
+			18579, -- [5]
+			22390, -- [6]
+			21655, -- [7]
+		},
+		["Player-1085-08199EDF"] = {
+			17565, -- [1]
+			22176, -- [2]
+			21811, -- [3]
+			17593, -- [4]
+			17599, -- [5]
+			22484, -- [6]
+			21671, -- [7]
+		},
+		["Player-1378-08185E9A"] = {
+			22358, -- [1]
+			19272, -- [2]
+			21968, -- [3]
+			21199, -- [4]
+			19275, -- [5]
+			19270, -- [6]
+			21963, -- [7]
+		},
+		["Player-3391-0687C657"] = {
+			20174, -- [1]
+			19993, -- [2]
+			19820, -- [3]
+			22166, -- [4]
+			19304, -- [5]
+			22217, -- [6]
+			22169, -- [7]
+		},
+		["Player-1082-01217F36"] = {
+			22040, -- [1]
+			21180, -- [2]
+			19280, -- [3]
+			19279, -- [4]
+			22047, -- [5]
+			21182, -- [6]
+			19281, -- [7]
+		},
+		["Player-1085-0815FFCC"] = {
+			22493, -- [1]
+			22799, -- [2]
+			22909, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			22767, -- [6]
+			22547, -- [7]
+		},
+		["Player-1085-068B5DF0"] = {
+			22457, -- [1]
+			16025, -- [2]
+			22447, -- [3]
+			22452, -- [4]
+			22446, -- [5]
+			22449, -- [6]
+			21634, -- [7]
+		},
+		["Player-1309-04958B3B"] = {
+			21637, -- [1]
+			22317, -- [2]
+			22312, -- [3]
+			19758, -- [4]
+			22310, -- [5]
+			21720, -- [6]
+			22487, -- [7]
+		},
+		["Player-1384-0400AD3B"] = {
+			19264, -- [1]
+			21971, -- [2]
+			21675, -- [3]
+			19275, -- [4]
+			19269, -- [5]
+			22323, -- [6]
+			21963, -- [7]
+		},
+		["Player-3681-0824BC85"] = {
+			22295, -- [1]
+			22282, -- [2]
+			22318, -- [3]
+			22347, -- [4]
+			22769, -- [5]
+			22287, -- [6]
+			22284, -- [7]
+		},
+		["Player-3391-068AD7C1"] = {
+			21694, -- [1]
+			22038, -- [2]
+			19288, -- [3]
+			22478, -- [4]
+			19294, -- [5]
+			22042, -- [6]
+			19280, -- [7]
+		},
+		["Player-1307-07E9ACB2"] = {
+			21182, -- [1]
+			19279, -- [2]
+			19280, -- [3]
+			19281, -- [4]
+			22040, -- [5]
+			19291, -- [6]
+			22044, -- [7]
+		},
+		["Player-1384-049F469D"] = {
+			22460, -- [1]
+			22903, -- [2]
+			22447, -- [3]
+			22469, -- [4]
+			22446, -- [5]
+			22449, -- [6]
+			21632, -- [7]
+		},
+		["Player-3666-07D4013C"] = {
+			22017, -- [1]
+			22019, -- [2]
+			22519, -- [3]
+			22525, -- [4]
+			22529, -- [5]
+			22531, -- [6]
+			22023, -- [7]
+		},
+		["Player-1388-0837907F"] = {
+			22463, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22469, -- [4]
+			22446, -- [5]
+			22473, -- [6]
+			22309, -- [7]
+		},
+		["Player-1081-0075B9E4"] = {
+			22387, -- [1]
+			19283, -- [2]
+			22159, -- [3]
+			18577, -- [4]
+			18579, -- [5]
+			22390, -- [6]
+			21655, -- [7]
+		},
+		["Player-1416-076276CF"] = {
+			21854, -- [1]
+			22765, -- [2]
+			21862, -- [3]
+			21865, -- [4]
+			21866, -- [5]
+			21869, -- [6]
+			21901, -- [7]
+		},
+		["Player-1085-068A8ED0"] = {
+			19752, -- [1]
+			21976, -- [2]
+			22095, -- [3]
+			21750, -- [4]
+			19764, -- [5]
+			19767, -- [6]
+			21636, -- [7]
+		},
+		["Player-1596-045C0B42"] = {
+			16025, -- [1]
+			22457, -- [2]
+			22445, -- [3]
+			21634, -- [4]
+			22454, -- [5]
+			22448, -- [6]
+			22452, -- [7]
+		},
+		["Player-1389-06A07C55"] = {
+			22590, -- [1]
+			22319, -- [2]
+			22896, -- [3]
+			22375, -- [4]
+			22595, -- [5]
+			22485, -- [6]
+			22215, -- [7]
+		},
+		["Player-1325-05FD22F0"] = {
+			21868, -- [1]
+			22765, -- [2]
+			22493, -- [3]
+			22494, -- [4]
+			21865, -- [5]
+			21900, -- [6]
+			21869, -- [7]
+		},
+		["Player-1329-05BC3DD0"] = {
+			22371, -- [1]
+			22409, -- [2]
+			22489, -- [3]
+			22627, -- [4]
+			22800, -- [5]
+			22397, -- [6]
+			21667, -- [7]
+		},
+		["Player-1301-086AE7B1"] = {
+			22457, -- [1]
+			22442, -- [2]
+			22445, -- [3]
+			22452, -- [4]
+			22448, -- [5]
+			22473, -- [6]
+			21634, -- [7]
+		},
+		["Player-3702-06A71795"] = {
+			15760, -- [1]
+			22629, -- [2]
+			22378, -- [3]
+			22627, -- [4]
+			22631, -- [5]
+			22396, -- [6]
+			22406, -- [7]
+		},
+		["Player-3391-068ADE94"] = {
+			22520, -- [1]
+			22538, -- [2]
+			22522, -- [3]
+			22026, -- [4]
+			22027, -- [5]
+			22532, -- [6]
+			22530, -- [7]
+		},
+		["Player-1313-06498F72"] = {
+			18574, -- [1]
+			19283, -- [2]
+			22160, -- [3]
+			18577, -- [4]
+			21704, -- [5]
+			22165, -- [6]
+			22404, -- [7]
+		},
+		["Player-1329-040DD194"] = {
+			22484, -- [1]
+			17599, -- [2]
+			17565, -- [3]
+			22179, -- [4]
+			17575, -- [5]
+			21668, -- [6]
+			17593, -- [7]
+		},
+		["Player-1588-074AC1A9"] = {
+		},
+		["Player-1082-064793FE"] = {
+			22590, -- [1]
+			22319, -- [2]
+			22180, -- [3]
+			22375, -- [4]
+			22595, -- [5]
+			22483, -- [6]
+			22591, -- [7]
+		},
+		["Player-1096-0766C5C0"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21863, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-1378-085B51DB"] = {
+			22463, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22466, -- [4]
+			22446, -- [5]
+			22449, -- [6]
+			21632, -- [7]
+		},
+		["Player-1389-0870B797"] = {
+			19264, -- [1]
+			19259, -- [2]
+			19275, -- [3]
+			22152, -- [4]
+			21966, -- [5]
+			21968, -- [6]
+			21675, -- [7]
+		},
+		["Player-3687-07999075"] = {
+			22463, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22466, -- [4]
+			22471, -- [5]
+			22449, -- [6]
+			21634, -- [7]
+		},
+		["Player-3687-0661C4C6"] = {
+			21986, -- [1]
+			22269, -- [2]
+			21997, -- [3]
+			19357, -- [4]
+			22284, -- [5]
+			19347, -- [6]
+			22280, -- [7]
+		},
+		["Player-3391-067D1849"] = {
+			22387, -- [1]
+			21655, -- [2]
+			22390, -- [3]
+			22159, -- [4]
+			18579, -- [5]
+			18570, -- [6]
+			18577, -- [7]
+		},
+		["Player-1393-0647A051"] = {
+			19754, -- [1]
+			22562, -- [2]
+			21644, -- [3]
+			19767, -- [4]
+			21754, -- [5]
+			22315, -- [6]
+			21750, -- [7]
+		},
+		["Player-1085-080BC070"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22909, -- [3]
+			21863, -- [4]
+			21868, -- [5]
+			21870, -- [6]
+			21900, -- [7]
+		},
+		["Player-1313-089DCEA2"] = {
+			19264, -- [1]
+			22492, -- [2]
+			19275, -- [3]
+			22152, -- [4]
+			21966, -- [5]
+			21971, -- [6]
+			21970, -- [7]
+		},
+		["Player-1313-079CDEBD"] = {
+			22420, -- [1]
+			18571, -- [2]
+			22159, -- [3]
+			21778, -- [4]
+			21709, -- [5]
+			21712, -- [6]
+			22425, -- [7]
+		},
+		["Player-1311-0054BE92"] = {
+			22358, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			22172, -- [5]
+			22145, -- [6]
+			21198, -- [7]
+		},
+		["Player-1303-07CEB515"] = {
+			22353, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			22137, -- [5]
+			21973, -- [6]
+			21969, -- [7]
+		},
+		["Player-1084-06C583E9"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22469, -- [4]
+			22446, -- [5]
+			22449, -- [6]
+			21632, -- [7]
+		},
+		["Player-1311-0929892E"] = {
+			22312, -- [1]
+			22316, -- [2]
+			22487, -- [3]
+			21751, -- [4]
+			22311, -- [5]
+			21719, -- [6]
+			21637, -- [7]
+		},
+		["Player-3391-08D42124"] = {
+			22169, -- [1]
+			19818, -- [2]
+			22214, -- [3]
+			19995, -- [4]
+			22166, -- [5]
+			19823, -- [6]
+			20174, -- [7]
+		},
+		["Player-1329-05EBF282"] = {
+			22461, -- [1]
+			22443, -- [2]
+			22447, -- [3]
+			22470, -- [4]
+			22907, -- [5]
+			22474, -- [6]
+			21630, -- [7]
+		},
+		["Player-1301-08926294"] = {
+			21182, -- [1]
+			22044, -- [2]
+			19280, -- [3]
+			22046, -- [4]
+			22040, -- [5]
+			19291, -- [6]
+			19293, -- [7]
+		},
+		["Player-1596-0760D1D3"] = {
+			22461, -- [1]
+			22442, -- [2]
+			22445, -- [3]
+			22467, -- [4]
+			22907, -- [5]
+			22474, -- [6]
+			21630, -- [7]
+		},
+		["Player-1929-098D4457"] = {
+			22632, -- [1]
+			22409, -- [2]
+			19138, -- [3]
+			22627, -- [4]
+			22391, -- [5]
+			22400, -- [6]
+			22402, -- [7]
+		},
+		["Player-1396-0774CCD3"] = {
+			19264, -- [1]
+			22492, -- [2]
+			19275, -- [3]
+			22322, -- [4]
+			21966, -- [5]
+			21971, -- [6]
+			21675, -- [7]
+		},
+		["Player-1393-06AF9E61"] = {
+			15760, -- [1]
+			19676, -- [2]
+			19138, -- [3]
+			22488, -- [4]
+			22362, -- [5]
+			22401, -- [6]
+			22801, -- [7]
+		},
+		["Player-1096-0606F534"] = {
+			22040, -- [1]
+			22044, -- [2]
+			19280, -- [3]
+			19279, -- [4]
+			19291, -- [5]
+			21182, -- [6]
+			19281, -- [7]
+		},
+		["Player-1300-0921DDCC"] = {
+			22120, -- [1]
+			19236, -- [2]
+			19239, -- [3]
+			22123, -- [4]
+			22114, -- [5]
+			19249, -- [6]
+			22133, -- [7]
+		},
+		["Player-1081-06FFE23D"] = {
+			17567, -- [1]
+			17577, -- [2]
+			21811, -- [3]
+			17591, -- [4]
+			17597, -- [5]
+			22484, -- [6]
+			21668, -- [7]
+		},
+		["Player-1587-0A162550"] = {
+		},
+		["Player-1085-068A53E7"] = {
+			22457, -- [1]
+			22903, -- [2]
+			22447, -- [3]
+			22466, -- [4]
+			22446, -- [5]
+			22449, -- [6]
+			21634, -- [7]
+		},
+		["Player-1309-04A5364D"] = {
+			19753, -- [1]
+			22315, -- [2]
+			22440, -- [3]
+			19761, -- [4]
+			22330, -- [5]
+			22161, -- [6]
+			22976, -- [7]
+		},
+		["Player-3391-075F52A3"] = {
+			22018, -- [1]
+			22019, -- [2]
+			22517, -- [3]
+			22525, -- [4]
+			22529, -- [5]
+			22535, -- [6]
+			22109, -- [7]
+		},
+		["Player-1389-07A3DD9A"] = {
+			19138, -- [1]
+			22633, -- [2]
+			22627, -- [3]
+			22402, -- [4]
+			22391, -- [5]
+			22400, -- [6]
+			22374, -- [7]
+		},
+		["Player-3679-07F009D2"] = {
+			22461, -- [1]
+			22443, -- [2]
+			22445, -- [3]
+			22470, -- [4]
+			22907, -- [5]
+			22474, -- [6]
+			21630, -- [7]
+		},
+		["Player-3679-069CB3E0"] = {
+			17565, -- [1]
+			17575, -- [2]
+			21811, -- [3]
+			17593, -- [4]
+			17597, -- [5]
+			22484, -- [6]
+			21671, -- [7]
+		},
+		["Player-1598-0A04F555"] = {
+			22364, -- [1]
+			18570, -- [2]
+			22163, -- [3]
+			18577, -- [4]
+			21702, -- [5]
+			21711, -- [6]
+			21653, -- [7]
+		},
+		["Player-1096-07566599"] = {
+			22358, -- [1]
+			19259, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			19270, -- [5]
+			21968, -- [6]
+			21198, -- [7]
+		},
+		["Player-1082-0151659E"] = {
+			22590, -- [1]
+			22319, -- [2]
+			22896, -- [3]
+			22182, -- [4]
+			22595, -- [5]
+			22485, -- [6]
+			22215, -- [7]
+		},
+		["Player-1416-0711C0E9"] = {
+			22018, -- [1]
+			22019, -- [2]
+			22517, -- [3]
+			22521, -- [4]
+			22527, -- [5]
+			22533, -- [6]
+			22109, -- [7]
+		},
+		["Player-3687-073DB787"] = {
+			22498, -- [1]
+			22499, -- [2]
+			22318, -- [3]
+			21998, -- [4]
+			22279, -- [5]
+			22287, -- [6]
+			22288, -- [7]
+		},
+		["Player-1602-0996E667"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21863, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-1378-08B17C28"] = {
+			22176, -- [1]
+			17565, -- [2]
+			21671, -- [3]
+			22189, -- [4]
+			22181, -- [5]
+			21811, -- [6]
+			22164, -- [7]
+		},
+		["Player-1621-07C672C6"] = {
+		},
+		["Player-1329-06020FCD"] = {
+			19823, -- [1]
+			19304, -- [2]
+			22168, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			22214, -- [6]
+			22218, -- [7]
+		},
+		["Player-1325-05A6532F"] = {
+			22493, -- [1]
+			22799, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21867, -- [5]
+			21870, -- [6]
+			22547, -- [7]
+		},
+		["Player-1609-080B7231"] = {
+			22312, -- [1]
+			22316, -- [2]
+			22487, -- [3]
+			21751, -- [4]
+			22311, -- [5]
+			21720, -- [6]
+			21637, -- [7]
+		},
+		["Player-1307-08075BC9"] = {
+			22590, -- [1]
+			22319, -- [2]
+			22896, -- [3]
+			22182, -- [4]
+			22185, -- [5]
+			22485, -- [6]
+			22215, -- [7]
+		},
+		["Player-1300-08A28CD0"] = {
+			22624, -- [1]
+			22409, -- [2]
+			22489, -- [3]
+			22627, -- [4]
+			22800, -- [5]
+			22397, -- [6]
+			21667, -- [7]
+		},
+		["Player-1389-084DEB3F"] = {
+			22590, -- [1]
+			22591, -- [2]
+			22319, -- [3]
+			22485, -- [4]
+			22595, -- [5]
+			22896, -- [6]
+			22182, -- [7]
+		},
+		["Player-1588-093D2A73"] = {
+			22273, -- [1]
+			19357, -- [2]
+			22347, -- [3]
+			22284, -- [4]
+			22280, -- [5]
+			19347, -- [6]
+			21997, -- [7]
+		},
+		["Player-3391-083FBAB3"] = {
+			22018, -- [1]
+			22019, -- [2]
+			22517, -- [3]
+			22525, -- [4]
+			22529, -- [5]
+			22535, -- [6]
+			22109, -- [7]
+		},
+		["Player-1587-073AA8BF"] = {
+			17569, -- [1]
+			17577, -- [2]
+			22179, -- [3]
+			17593, -- [4]
+			17597, -- [5]
+			22190, -- [6]
+			21668, -- [7]
+		},
+		["Player-1301-08CACB4B"] = {
+			22459, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22468, -- [4]
+			22904, -- [5]
+			22449, -- [6]
+			21633, -- [7]
+		},
+		["Player-3702-0817253C"] = {
+			22371, -- [1]
+			22409, -- [2]
+			22380, -- [3]
+			22627, -- [4]
+			22800, -- [5]
+			22397, -- [6]
+			22407, -- [7]
+		},
+		["Player-1303-042451A8"] = {
+			22014, -- [1]
+			19217, -- [2]
+			19218, -- [3]
+			21207, -- [4]
+			19227, -- [5]
+			19221, -- [6]
+			19232, -- [7]
+		},
+		["Player-1303-0889CB44"] = {
+			18571, -- [1]
+			22387, -- [2]
+			18580, -- [3]
+			22389, -- [4]
+			22159, -- [5]
+			18577, -- [6]
+			21193, -- [7]
+		},
+		["Player-3681-085E7B11"] = {
+			22109, -- [1]
+			22535, -- [2]
+			22018, -- [3]
+			22529, -- [4]
+			22517, -- [5]
+			22021, -- [6]
+			22525, -- [7]
+		},
+		["Player-1121-07B69FA6"] = {
+			18569, -- [1]
+			21716, -- [2]
+			21710, -- [3]
+			22404, -- [4]
+			22160, -- [5]
+			18577, -- [6]
+			18570, -- [7]
+		},
+		["Player-1329-0544250D"] = {
+			22022, -- [1]
+			22030, -- [2]
+			22522, -- [3]
+			22516, -- [4]
+			22026, -- [5]
+			22532, -- [6]
+			22028, -- [7]
+		},
+		["Player-3679-069F3854"] = {
+			22442, -- [1]
+			21632, -- [2]
+			22473, -- [3]
+			22460, -- [4]
+			22447, -- [5]
+			22469, -- [6]
+			22446, -- [7]
+		},
+		["Player-3702-073B7A09"] = {
+		},
+		["Player-3713-07173AFD"] = {
+			19754, -- [1]
+			22315, -- [2]
+			22562, -- [3]
+			21750, -- [4]
+			21754, -- [5]
+			19767, -- [6]
+			21644, -- [7]
+		},
+		["Player-1301-08E7760D"] = {
+			17565, -- [1]
+			17575, -- [2]
+			21811, -- [3]
+			22181, -- [4]
+			17599, -- [5]
+			22190, -- [6]
+			21668, -- [7]
+		},
+		["Player-1588-048927CC"] = {
+			22313, -- [1]
+			22316, -- [2]
+			22487, -- [3]
+			21751, -- [4]
+			22310, -- [5]
+			21719, -- [6]
+			21637, -- [7]
+		},
+		["Player-1587-033AA590"] = {
+			18571, -- [1]
+			21778, -- [2]
+			21702, -- [3]
+			22159, -- [4]
+			21646, -- [5]
+			22364, -- [6]
+			21711, -- [7]
+		},
+		["Player-1329-05FC3A35"] = {
+			22312, -- [1]
+			22316, -- [2]
+			22487, -- [3]
+			21751, -- [4]
+			22311, -- [5]
+			21720, -- [6]
+			21637, -- [7]
+		},
+		["Player-3391-07BA3C1D"] = {
+			22018, -- [1]
+			22021, -- [2]
+			22517, -- [3]
+			22523, -- [4]
+			22529, -- [5]
+			22535, -- [6]
+			22109, -- [7]
+		},
+		["Player-3702-06296B43"] = {
+			20185, -- [1]
+			19302, -- [2]
+			22099, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			22103, -- [6]
+			21191, -- [7]
+		},
+		["Player-1309-04E8AC28"] = {
+			22288, -- [1]
+			22499, -- [2]
+			19357, -- [3]
+			22495, -- [4]
+			22279, -- [5]
+			19347, -- [6]
+			21998, -- [7]
+		},
+		["Player-1313-091C47C2"] = {
+			22632, -- [1]
+			22374, -- [2]
+			19138, -- [3]
+			22382, -- [4]
+			22391, -- [5]
+			22400, -- [6]
+			22402, -- [7]
+		},
+		["Player-1922-08CAA47B"] = {
+			22279, -- [1]
+			22495, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22284, -- [5]
+			22287, -- [6]
+			22288, -- [7]
+		},
+		["Player-1602-09DB42BD"] = {
+			21868, -- [1]
+			21862, -- [2]
+			21863, -- [3]
+			21900, -- [4]
+			21869, -- [5]
+			22493, -- [6]
+			22765, -- [7]
+		},
+		["Player-1301-089C9F79"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			22547, -- [7]
+		},
+		["Player-1092-05273BE4"] = {
+			22364, -- [1]
+			18571, -- [2]
+			22159, -- [3]
+			21778, -- [4]
+			21702, -- [5]
+			21711, -- [6]
+			21653, -- [7]
+		},
+		["Player-1329-05BD70BE"] = {
+			22279, -- [1]
+			22495, -- [2]
+			19347, -- [3]
+			21998, -- [4]
+			22284, -- [5]
+			22287, -- [6]
+			22288, -- [7]
+		},
+		["Player-3702-062C1642"] = {
+			18569, -- [1]
+			18571, -- [2]
+			22366, -- [3]
+			18576, -- [4]
+			21710, -- [5]
+			22165, -- [6]
+			22403, -- [7]
+		},
+		["Player-1393-06AD81E9"] = {
+			19285, -- [1]
+			21695, -- [2]
+			22039, -- [3]
+			19294, -- [4]
+			22482, -- [5]
+			19291, -- [6]
+			22046, -- [7]
+		},
+		["Player-3391-068B4001"] = {
+			18570, -- [1]
+			21704, -- [2]
+			18574, -- [3]
+			22404, -- [4]
+			22160, -- [5]
+			18577, -- [6]
+			22165, -- [7]
+		},
+		["Player-1385-07AA2EB5"] = {
+			21182, -- [1]
+			22044, -- [2]
+			19280, -- [3]
+			19288, -- [4]
+			22040, -- [5]
+			19279, -- [6]
+			19281, -- [7]
+		},
+		["Player-1588-07413387"] = {
+			22590, -- [1]
+			22592, -- [2]
+			22896, -- [3]
+			22375, -- [4]
+			22186, -- [5]
+			22483, -- [6]
+			22591, -- [7]
+		},
+		["Player-1301-08975020"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-3391-07A4E576"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22469, -- [4]
+			22446, -- [5]
+			22473, -- [6]
+			21632, -- [7]
+		},
+		["Player-1301-077A9973"] = {
+			22313, -- [1]
+			22316, -- [2]
+			22487, -- [3]
+			21751, -- [4]
+			22311, -- [5]
+			21720, -- [6]
+			21637, -- [7]
+		},
+		["Player-3391-07A67F1E"] = {
+			22456, -- [1]
+			22442, -- [2]
+			22444, -- [3]
+			22465, -- [4]
+			22904, -- [5]
+			22451, -- [6]
+			21633, -- [7]
+		},
+		["Player-1091-04F793B3"] = {
+			22590, -- [1]
+			22593, -- [2]
+			21811, -- [3]
+			22182, -- [4]
+			22595, -- [5]
+			22485, -- [6]
+			22591, -- [7]
+		},
+		["Player-1300-0185650D"] = {
+			22337, -- [1]
+			22331, -- [2]
+			22340, -- [3]
+			21186, -- [4]
+			19241, -- [5]
+			22343, -- [6]
+			22114, -- [7]
+		},
+		["Player-1597-0A0FC7DA"] = {
+			22337, -- [1]
+			22332, -- [2]
+			19241, -- [3]
+			22122, -- [4]
+			22341, -- [5]
+			22343, -- [6]
+			21186, -- [7]
+		},
+		["Player-3713-070F4D15"] = {
+			19233, -- [1]
+			22331, -- [2]
+			19239, -- [3]
+			22123, -- [4]
+			22114, -- [5]
+			22335, -- [6]
+			21188, -- [7]
+		},
+		["Player-1313-06E98D2B"] = {
+			22484, -- [1]
+			22590, -- [2]
+			22185, -- [3]
+			22319, -- [4]
+			22591, -- [5]
+			22896, -- [6]
+			22182, -- [7]
+		},
+		["Player-1325-0601782E"] = {
+			19292, -- [1]
+			22044, -- [2]
+			19280, -- [3]
+			22040, -- [4]
+			19293, -- [5]
+			21182, -- [6]
+			22047, -- [7]
+		},
+		["Player-3702-0798AC9A"] = {
+			22493, -- [1]
+			22799, -- [2]
+			22494, -- [3]
+			21864, -- [4]
+			21868, -- [5]
+			22767, -- [6]
+			21901, -- [7]
+		},
+		["Player-3681-079CF477"] = {
+			22280, -- [1]
+			22769, -- [2]
+			19347, -- [3]
+			22347, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			21986, -- [7]
+		},
+		["Player-1587-0A21343F"] = {
+			22364, -- [1]
+			18570, -- [2]
+			22163, -- [3]
+			21778, -- [4]
+			21702, -- [5]
+			21711, -- [6]
+			21649, -- [7]
+		},
+		["Player-1621-07CE9E31"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22469, -- [4]
+			22446, -- [5]
+			22473, -- [6]
+			21632, -- [7]
+		},
+		["Player-1096-07BA5F60"] = {
+			22420, -- [1]
+			22916, -- [2]
+			22159, -- [3]
+			21778, -- [4]
+			21706, -- [5]
+			22422, -- [6]
+			22426, -- [7]
+		},
+		["Player-1080-05A59401"] = {
+			22026, -- [1]
+			22028, -- [2]
+			22520, -- [3]
+			22524, -- [4]
+			22022, -- [5]
+			22536, -- [6]
+			22538, -- [7]
+		},
+		["Player-3702-078F5D42"] = {
+			22463, -- [1]
+			22903, -- [2]
+			22444, -- [3]
+			22466, -- [4]
+			22448, -- [5]
+			22449, -- [6]
+			22309, -- [7]
+		},
+		["Player-3391-086EDB96"] = {
+			19234, -- [1]
+			22333, -- [2]
+			19240, -- [3]
+			22123, -- [4]
+			22334, -- [5]
+			22336, -- [6]
+			21188, -- [7]
+		},
+		["Player-1329-0419EBEA"] = {
+			22282, -- [1]
+			22273, -- [2]
+			21997, -- [3]
+			22002, -- [4]
+			22293, -- [5]
+			19347, -- [6]
+			22347, -- [7]
+		},
+		["Player-1313-01B28C1A"] = {
+			22356, -- [1]
+			19259, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			19270, -- [5]
+			21968, -- [6]
+			21199, -- [7]
+		},
+		["Player-1301-09046A09"] = {
+			22590, -- [1]
+			22319, -- [2]
+			22896, -- [3]
+			22183, -- [4]
+			22185, -- [5]
+			22485, -- [6]
+			22215, -- [7]
+		},
+		["Player-1329-0602D23F"] = {
+			22279, -- [1]
+			22495, -- [2]
+			19347, -- [3]
+			22267, -- [4]
+			22284, -- [5]
+			22287, -- [6]
+			22288, -- [7]
+		},
+		["Player-3713-0845B695"] = {
 			21868, -- [1]
 			22765, -- [2]
 			21863, -- [3]
@@ -3565,61 +6977,706 @@ _detalhes_database = {
 			21869, -- [6]
 			22493, -- [7]
 		},
-		["Player-580-071DCB31"] = {
+		["Player-1301-0461F471"] = {
+			22371, -- [1]
+			22625, -- [2]
+			22489, -- [3]
+			15757, -- [4]
+			22800, -- [5]
+			22394, -- [6]
+			21204, -- [7]
+		},
+		["Player-639-0773190C"] = {
+			21868, -- [1]
+			22765, -- [2]
+			22493, -- [3]
+			22767, -- [4]
+			21865, -- [5]
+			22909, -- [6]
+			21900, -- [7]
+		},
+		["Player-3702-07F382D9"] = {
+			21707, -- [1]
+			21778, -- [2]
+			18574, -- [3]
+			21651, -- [4]
+			22160, -- [5]
+			18570, -- [6]
+			21713, -- [7]
+		},
+		["Player-3391-08FAD99D"] = {
+			22280, -- [1]
+			21997, -- [2]
+			19347, -- [3]
+			22441, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			21986, -- [7]
+		},
+		["Player-1329-0419E180"] = {
+			22460, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22469, -- [4]
+			22446, -- [5]
+			22473, -- [6]
+			21632, -- [7]
+		},
+		["Player-1378-0852790F"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21863, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-1329-05F80723"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21864, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-1301-05C37B13"] = {
+			20185, -- [1]
+			19304, -- [2]
+			22166, -- [3]
+			19995, -- [4]
+			20175, -- [5]
+			22214, -- [6]
+			22218, -- [7]
+		},
+		["Player-1587-07303961"] = {
+			19754, -- [1]
+			22315, -- [2]
+			22562, -- [3]
+			21750, -- [4]
+			21754, -- [5]
+			19767, -- [6]
+			21636, -- [7]
+		},
+		["Player-1378-089549CA"] = {
+			22282, -- [1]
+			22769, -- [2]
+			19347, -- [3]
+			22347, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			21986, -- [7]
+		},
+		["Player-1316-08554A2E"] = {
+			22419, -- [1]
+			18571, -- [2]
+			22163, -- [3]
+			21778, -- [4]
+			22421, -- [5]
+			21712, -- [6]
+			22426, -- [7]
+		},
+		["Player-3391-086D6F62"] = {
+			18574, -- [1]
+			18570, -- [2]
+			22366, -- [3]
+			18577, -- [4]
+			21704, -- [5]
+			21716, -- [6]
+			22403, -- [7]
+		},
+		["Player-1301-073B9E34"] = {
+			22364, -- [1]
+			18571, -- [2]
+			22163, -- [3]
+			21778, -- [4]
+			21705, -- [5]
+			21711, -- [6]
+			21653, -- [7]
+		},
+		["Player-1301-091255FE"] = {
+			19754, -- [1]
+			21750, -- [2]
+			19764, -- [3]
+			22562, -- [4]
+			22315, -- [5]
+			21636, -- [6]
+			19767, -- [7]
+		},
+		["Player-1596-075AF3E1"] = {
+			22624, -- [1]
+			22409, -- [2]
+			22489, -- [3]
+			15757, -- [4]
+			22800, -- [5]
+			22397, -- [6]
+			22407, -- [7]
+		},
+		["Player-1080-04B84776"] = {
+			22043, -- [1]
+			19280, -- [2]
+			22039, -- [3]
+			19294, -- [4]
+			22482, -- [5]
+			19291, -- [6]
+			21695, -- [7]
+		},
+		["Player-1309-04EB2A21"] = {
+			22484, -- [1]
+			22590, -- [2]
+			22319, -- [3]
+			22180, -- [4]
+			22215, -- [5]
+			22182, -- [6]
+			22595, -- [7]
+		},
+		["Player-1097-03C9C509"] = {
+		},
+		["Player-1313-05ED21D6"] = {
+			19264, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			22152, -- [4]
+			21966, -- [5]
+			21971, -- [6]
+			21675, -- [7]
+		},
+		["Player-3666-057D115F"] = {
+			22090, -- [1]
+			22044, -- [2]
+			19280, -- [3]
+			19279, -- [4]
+			19291, -- [5]
+			21182, -- [6]
+			19293, -- [7]
+		},
+		["Player-1389-06BCB565"] = {
+			22040, -- [1]
+			21180, -- [2]
+			19280, -- [3]
+			19292, -- [4]
+			22047, -- [5]
+			21182, -- [6]
+			19284, -- [7]
+		},
+		["Player-1384-0800AD19"] = {
+			22280, -- [1]
+			21997, -- [2]
+			22318, -- [3]
+			22441, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			21986, -- [7]
+		},
+		["Player-3702-073C60D7"] = {
+			22018, -- [1]
+			22021, -- [2]
+			22517, -- [3]
+			22525, -- [4]
+			22529, -- [5]
+			22535, -- [6]
+			22109, -- [7]
+		},
+		["Player-2074-04D35373"] = {
+			22442, -- [1]
+			22465, -- [2]
+			22445, -- [3]
+			21633, -- [4]
+			22451, -- [5]
+			22904, -- [6]
+			22459, -- [7]
+		},
+		["Player-1300-087B43E9"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-3660-05F7FCDD"] = {
+			21986, -- [1]
+			22269, -- [2]
+			19357, -- [3]
+			22293, -- [4]
+			22769, -- [5]
+			22280, -- [6]
+			19347, -- [7]
+		},
+		["Player-1329-06004DF7"] = {
+			22040, -- [1]
+			22044, -- [2]
+			19280, -- [3]
+			19279, -- [4]
+			19291, -- [5]
+			21182, -- [6]
+			19293, -- [7]
+		},
+		["Player-1587-089965B0"] = {
+			22633, -- [1]
+			22374, -- [2]
+			19138, -- [3]
+			22382, -- [4]
+			19140, -- [5]
+			22400, -- [6]
+			22405, -- [7]
+		},
+		["Player-1329-05EE5C31"] = {
+			22354, -- [1]
+			22150, -- [2]
+			19275, -- [3]
+			22171, -- [4]
+			22137, -- [5]
+			22352, -- [6]
+			22977, -- [7]
+		},
+		["Player-3391-092AA7DC"] = {
+			22493, -- [1]
+			22799, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21867, -- [5]
+			21869, -- [6]
+			22547, -- [7]
+		},
+		["Player-3681-0775F82E"] = {
+			18574, -- [1]
+			19283, -- [2]
+			22160, -- [3]
+			18577, -- [4]
+			21704, -- [5]
+			21713, -- [6]
+			22404, -- [7]
+		},
+		["Player-1096-064EDA4F"] = {
+			19264, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			22323, -- [4]
+			21966, -- [5]
+			21968, -- [6]
+			21675, -- [7]
+		},
+		["Player-1587-09FF4115"] = {
+			18569, -- [1]
+			19283, -- [2]
+			22367, -- [3]
+			18576, -- [4]
+			21704, -- [5]
+			22165, -- [6]
+			22404, -- [7]
+		},
+		["Player-1378-03DC99F3"] = {
+			22282, -- [1]
+			21997, -- [2]
+			19347, -- [3]
+			22347, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			21986, -- [7]
+		},
+		["Player-1301-08FC9D1E"] = {
+			22387, -- [1]
+			21655, -- [2]
+			22390, -- [3]
+			22159, -- [4]
+			18579, -- [5]
+			18570, -- [6]
+			18577, -- [7]
+		},
+		["Player-1329-05F99117"] = {
+			22316, -- [1]
+			22310, -- [2]
+			21751, -- [3]
+			22487, -- [4]
+			21719, -- [5]
+			21637, -- [6]
+			22312, -- [7]
+		},
+		["Player-1329-05DE75E8"] = {
+			21868, -- [1]
+			22765, -- [2]
+			21863, -- [3]
+			22494, -- [4]
+			21900, -- [5]
+			21869, -- [6]
+			22493, -- [7]
+		},
+		["Player-1378-0878F5DE"] = {
+			22353, -- [1]
+			22150, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			22137, -- [5]
+			21973, -- [6]
+			21969, -- [7]
+		},
+		["Player-1388-080D6E77"] = {
+			22039, -- [1]
+			21181, -- [2]
+			19280, -- [3]
+			22480, -- [4]
+			19288, -- [5]
+			19294, -- [6]
+			22482, -- [7]
+		},
+		["Player-3702-07046E02"] = {
+		},
+		["Player-3391-08FB4DC4"] = {
+			22407, -- [1]
+			22800, -- [2]
+			22409, -- [3]
+			22627, -- [4]
+			22397, -- [5]
+			22489, -- [6]
+			22371, -- [7]
+		},
+		["Player-1393-076D1BC1"] = {
+			22267, -- [1]
+			22499, -- [2]
+			22274, -- [3]
+			22495, -- [4]
+			22279, -- [5]
+			19347, -- [6]
+			22002, -- [7]
+		},
+		["Player-3391-073F777F"] = {
+			21986, -- [1]
+			19357, -- [2]
+			22347, -- [3]
+			22284, -- [4]
+			22769, -- [5]
+			22280, -- [6]
+			19347, -- [7]
+		},
+		["Player-1388-04AF25FC"] = {
+			19823, -- [1]
+			19818, -- [2]
+			22099, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			22103, -- [6]
+			22105, -- [7]
+		},
+		["Player-1301-08753726"] = {
 			17569, -- [1]
 			22176, -- [2]
 			21811, -- [3]
 			22181, -- [4]
 			17599, -- [5]
 			22190, -- [6]
-			21203, -- [7]
+			21668, -- [7]
 		},
-		["Player-1325-03F0F778"] = {
-			21986, -- [1]
+		["Player-1316-059D4550"] = {
+			22280, -- [1]
+			22769, -- [2]
+			19347, -- [3]
+			22441, -- [4]
+			22284, -- [5]
+			19357, -- [6]
+			22295, -- [7]
+		},
+		["Player-3702-07105E09"] = {
+			22464, -- [1]
+			22443, -- [2]
+			22447, -- [3]
+			22470, -- [4]
+			22907, -- [5]
+			22455, -- [6]
+			21144, -- [7]
+		},
+		["Player-1084-07E1C0B5"] = {
+			22279, -- [1]
+			22498, -- [2]
+			19347, -- [3]
+			22267, -- [4]
+			22284, -- [5]
+			22287, -- [6]
+			22308, -- [7]
+		},
+		["Player-1309-092B982A"] = {
+			22316, -- [1]
+			22310, -- [2]
+			21751, -- [3]
+			22487, -- [4]
+			21719, -- [5]
+			21637, -- [6]
+			22312, -- [7]
+		},
+		["Player-1301-09269C8E"] = {
+			22176, -- [1]
+			17599, -- [2]
+			17593, -- [3]
+			21668, -- [4]
+			17567, -- [5]
+			21811, -- [6]
+			22190, -- [7]
+		},
+		["Player-1301-087B3B07"] = {
+			22416, -- [1]
+			22799, -- [2]
+			22494, -- [3]
+			21865, -- [4]
+			21866, -- [5]
+			22767, -- [6]
+			22547, -- [7]
+		},
+		["Player-3686-05E89F6C"] = {
+			21868, -- [1]
+			22765, -- [2]
+			21863, -- [3]
+			22494, -- [4]
+			21900, -- [5]
+			21869, -- [6]
+			22493, -- [7]
+		},
+		["Player-1587-088955D9"] = {
+			19272, -- [1]
+			19259, -- [2]
+			21198, -- [3]
+			19275, -- [4]
+			22356, -- [5]
+			19270, -- [6]
+			21968, -- [7]
+		},
+		["Player-1587-0735DB24"] = {
+			22590, -- [1]
+			22592, -- [2]
+			21811, -- [3]
+			22183, -- [4]
+			22186, -- [5]
+			22485, -- [6]
+			22215, -- [7]
+		},
+		["Player-3702-07C86F9B"] = {
+			22337, -- [1]
+			22331, -- [2]
+			22123, -- [3]
+			22341, -- [4]
+			19241, -- [5]
+			22343, -- [6]
+			21186, -- [7]
+		},
+		["Player-1329-05D62E5F"] = {
+			22461, -- [1]
+			22442, -- [2]
+			22447, -- [3]
+			22470, -- [4]
+			22907, -- [5]
+			22474, -- [6]
+			21630, -- [7]
+		},
+		["Player-1313-058AB51D"] = {
+			19264, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			22322, -- [4]
+			21966, -- [5]
+			21971, -- [6]
+			21675, -- [7]
+		},
+		["Player-1385-0405C06E"] = {
+			22499, -- [1]
 			22318, -- [2]
-			22347, -- [3]
-			19357, -- [4]
-			22769, -- [5]
-			22280, -- [6]
-			22293, -- [7]
+			22501, -- [3]
+			21998, -- [4]
+			22308, -- [5]
+			22497, -- [6]
+			22002, -- [7]
 		},
-		["Player-1303-04F451A4"] = {
-			22442, -- [1]
-			22309, -- [2]
-			22473, -- [3]
-			22460, -- [4]
-			22447, -- [5]
-			22469, -- [6]
-			22446, -- [7]
+		["Player-1082-0807DD80"] = {
+			19769, -- [1]
+			21184, -- [2]
+			19760, -- [3]
+			19766, -- [4]
+			22440, -- [5]
+			19753, -- [6]
+			22315, -- [7]
 		},
-		["Player-1303-04F79F63"] = {
-			22267, -- [1]
-			19357, -- [2]
-			22284, -- [3]
-			22495, -- [4]
-			22279, -- [5]
-			19347, -- [6]
-			22288, -- [7]
+		["Player-3391-07FAB52F"] = {
+			22017, -- [1]
+			22020, -- [2]
+			22519, -- [3]
+			22525, -- [4]
+			22529, -- [5]
+			22535, -- [6]
+			22109, -- [7]
+		},
+		["Player-1329-057F3798"] = {
+			22018, -- [1]
+			22021, -- [2]
+			22517, -- [3]
+			22525, -- [4]
+			22527, -- [5]
+			22531, -- [6]
+			22109, -- [7]
+		},
+		["Player-3391-090A10F2"] = {
+			20185, -- [1]
+			19304, -- [2]
+			22099, -- [3]
+			19995, -- [4]
+			20173, -- [5]
+			22103, -- [6]
+			22105, -- [7]
+		},
+		["Player-1085-050DD025"] = {
+			22337, -- [1]
+			22331, -- [2]
+			22123, -- [3]
+			22341, -- [4]
+			19241, -- [5]
+			22343, -- [6]
+			21186, -- [7]
+		},
+		["Player-1393-06A1BD55"] = {
+			22633, -- [1]
+			22409, -- [2]
+			22379, -- [3]
+			22382, -- [4]
+			22391, -- [5]
+			22400, -- [6]
+			16037, -- [7]
+		},
+		["Player-3702-081994CC"] = {
+			21868, -- [1]
+			22765, -- [2]
+			22493, -- [3]
+			22494, -- [4]
+			21865, -- [5]
+			21900, -- [6]
+			21869, -- [7]
+		},
+		["Player-3391-0922CE15"] = {
+			22493, -- [1]
+			22765, -- [2]
+			22494, -- [3]
+			21863, -- [4]
+			21868, -- [5]
+			21869, -- [6]
+			21900, -- [7]
+		},
+		["Player-1596-0A23E5FA"] = {
+			20185, -- [1]
+			19304, -- [2]
+			19771, -- [3]
+			22100, -- [4]
+			20175, -- [5]
+			22103, -- [6]
+			22107, -- [7]
+		},
+		["Player-3687-0744DDAD"] = {
+			22358, -- [1]
+			19259, -- [2]
+			19275, -- [3]
+			19272, -- [4]
+			19270, -- [5]
+			22145, -- [6]
+			21199, -- [7]
+		},
+		["Player-3391-0928E644"] = {
+			22387, -- [1]
+			22157, -- [2]
+			22389, -- [3]
+			21193, -- [4]
+			18580, -- [5]
+			18577, -- [6]
+			18570, -- [7]
+		},
+		["Player-1929-09E11DE3"] = {
+			22353, -- [1]
+			22150, -- [2]
+			19260, -- [3]
+			19272, -- [4]
+			22137, -- [5]
+			21973, -- [6]
+			21969, -- [7]
+		},
+		["Player-1329-05ADD02E"] = {
+			22363, -- [1]
+			18571, -- [2]
+			22158, -- [3]
+			21778, -- [4]
+			21702, -- [5]
+			22370, -- [6]
+			21646, -- [7]
+		},
+		["Player-1402-04DA8581"] = {
+			22624, -- [1]
+			22409, -- [2]
+			22380, -- [3]
+			22627, -- [4]
+			22800, -- [5]
+			22394, -- [6]
+			22407, -- [7]
+		},
+		["Player-1598-08353385"] = {
+			18571, -- [1]
+			21778, -- [2]
+			21646, -- [3]
+			22158, -- [4]
+			21711, -- [5]
+			22364, -- [6]
+			21708, -- [7]
+		},
+		["Player-1329-0473D3F3"] = {
+			19263, -- [1]
+			21963, -- [2]
+			19275, -- [3]
+			22322, -- [4]
+			21966, -- [5]
+			21968, -- [6]
+			22153, -- [7]
+		},
+		["Player-3687-06F2C61A"] = {
+			22705, -- [1]
+			22438, -- [2]
+			22431, -- [3]
+			22558, -- [4]
+			21201, -- [5]
+			21811, -- [6]
+			22434, -- [7]
+		},
+		["Player-3391-06819262"] = {
+			19752, -- [1]
+			22315, -- [2]
+			22562, -- [3]
+			21750, -- [4]
+			21754, -- [5]
+			19767, -- [6]
+			21644, -- [7]
+		},
+		["Player-3391-068B5B17"] = {
+			19823, -- [1]
+			19302, -- [2]
+			22166, -- [3]
+			22219, -- [4]
+			20174, -- [5]
+			22214, -- [6]
+			22169, -- [7]
+		},
+		["Player-1303-05EC471E"] = {
+			20185, -- [1]
+			19818, -- [2]
+			22099, -- [3]
+			19995, -- [4]
+			20174, -- [5]
+			22103, -- [6]
+			22105, -- [7]
+		},
+		["Player-1300-08F1FCE9"] = {
+			22371, -- [1]
+			22409, -- [2]
+			22489, -- [3]
+			22627, -- [4]
+			22800, -- [5]
+			22397, -- [6]
+			22407, -- [7]
 		},
 	},
-	["last_instance_id"] = 1493,
+	["last_instance_id"] = 1676,
 	["cached_specs"] = {
-		["Player-1303-08971007"] = 258,
-		["Player-1303-0888EF28"] = 259,
-		["Player-1325-03F0F778"] = 253,
-		["Player-580-071DCB31"] = 65,
-		["Player-1303-04F451A4"] = 64,
-		["Player-1303-059D1BBE"] = 259,
-		["Player-1303-072DFEB4"] = 258,
-		["Player-2073-05A42D50"] = 102,
 		["Player-1303-042451A8"] = 250,
-		["Player-1303-0449519C"] = 256,
-		["Player-3391-08F916AA"] = 254,
-		["Player-580-07A984D2"] = 257,
-		["Player-3391-08D4A271"] = 577,
-		["Player-1303-0592F80C"] = 260,
-		["Player-1104-07B15DF2"] = 577,
-		["Player-1303-0592995C"] = 70,
-		["Player-1303-04F79F63"] = 254,
 	},
 }

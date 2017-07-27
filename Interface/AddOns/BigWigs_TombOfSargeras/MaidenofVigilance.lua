@@ -3,6 +3,7 @@
 
 --------------------------------------------------------------------------------
 -- TODO List:
+-- Orbs alternate colour, maybe something like Krosus Assist?
 
 --------------------------------------------------------------------------------
 -- Module Declaration
@@ -18,14 +19,16 @@ mod.respawnTime = 30
 -- Locals
 --
 
-local phase = 1
 local shieldActive = false
 local massInstabilityCounter = 0
 local hammerofCreationCounter = 0
 local hammerofObliterationCounter = 0
 local infusionCounter = 0
+local orbCounter = 1
 local mySide = 0
 local lightList, felList = {}, {}
+local initialOrbs = nil
+local orbTimers = {8, 8.5, 7.5, 10.5, 11.5, 8.0, 8.0, 10.0}
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -37,6 +40,8 @@ if L then
 	L.sameInfusion = "Same Infusion: %s"
 	L.fel = "Fel"
 	L.light = "Light"
+	L.felHammer = "Fel Hammer" -- Better name for "Hammer of Obliteration"
+	L.lightHammer = "Light Hammer" -- Better name for "Hammer of Creation"
 end
 --------------------------------------------------------------------------------
 -- Initialization
@@ -45,11 +50,13 @@ end
 function mod:GetOptions()
 	return {
 		"berserk",
-		235117, -- Unstable Soul
+		{235117, "COUNTDOWN"}, -- Unstable Soul
 		241593, -- Aegwynn's Ward
 		{235271, "PROXIMITY", "FLASH"}, -- Infusion
 		241635, -- Hammer of Creation
+		238028, -- Light Remanence
 		241636, -- Hammer of Obliteration
+		238408, -- Fel Remanence
 		235267, -- Mass Instability
 		248812, -- Blowback
 		235028, -- Titanic Bulwark
@@ -65,9 +72,13 @@ end
 
 function mod:OnBossEnable()
 	-- General
-	self:Log("SPELL_AURA_APPLIED", "UnstableSoul", 235117) -- Unstable Soul
-	self:Log("SPELL_AURA_REMOVED", "UnstableSoulRemoved", 235117) -- Unstable Soul
-	self:Log("SPELL_AURA_APPLIED", "AegwynnsWardApplied", 241593, 236420) -- Aegwynn's Ward, Heroic, Normal
+	self:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", nil, "boss1")
+	self:Log("SPELL_AURA_APPLIED", "UnstableSoul", 243276, 235117) -- Mythic, Others
+	self:Log("SPELL_AURA_REMOVED", "UnstableSoulRemoved", 243276, 235117) -- Mythic, Others
+	self:Log("SPELL_AURA_APPLIED", "AegwynnsWardApplied", 241593, 236420) -- Heroic, Normal
+	self:Log("SPELL_AURA_APPLIED", "GroundEffectDamage", 238028, 238408) -- Light Remanence, Fel Remanence
+	self:Log("SPELL_PERIODIC_DAMAGE", "GroundEffectDamage", 238028, 238408)
+	self:Log("SPELL_PERIODIC_MISSED", "GroundEffectDamage", 238028, 238408)
 
 	-- Stage One: Divide and Conquer
 	self:Log("SPELL_CAST_START", "Infusion", 235271) -- Infusion
@@ -85,13 +96,9 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "WrathoftheCreatorsApplied", 237339) -- Wrath of the Creators
 	self:Log("SPELL_AURA_APPLIED_DOSE", "WrathoftheCreatorsApplied", 237339) -- Wrath of the Creators
 	self:Log("SPELL_AURA_REMOVED", "WrathoftheCreatorsInterrupted", 234891) -- Wrath of the Creators
-
-	-- Mythic
-	self:Log("SPELL_CAST_SUCCESS", "SpontaneousFragmentation", 239153) -- Hammer of Creation
 end
 
 function mod:OnEngage()
-	phase = 1
 	shieldActive = false
 	mySide = 0
 	wipe(lightList)
@@ -101,38 +108,64 @@ function mod:OnEngage()
 	hammerofCreationCounter = 0
 	hammerofObliterationCounter = 0
 	infusionCounter = 0
+	orbCounter = 1
+	initialOrbs = true
 
 	self:Bar(235271, 2.0) -- Infusion
-	self:Bar(241635, 14.0) -- Hammer of Creation
+	self:Bar(241635, 14.0, L.lightHammer) -- Hammer of Creation
 	self:Bar(235267, 22.0) -- Mass Instability
-	self:Bar(241636, 32.0) -- Hammer of Obliteration
+	self:Bar(241636, 32.0, L.felHammer) -- Hammer of Obliteration
 	self:Bar(248812, 42.5) -- Blowback
 	self:Bar(234891, 43.5) -- Wrath of the Creators
-	self:Berserk(480) -- Confirmed Heroic
+	if self:Mythic() then
+		self:Bar(239153, 8, CL.count:format(self:SpellName(230932), orbCounter))
+	end
+	self:Berserk(480)
 end
 
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
 
+function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, _, spellId)
+	if spellId == 239153 then -- Spontaneous Fragmentation
+		self:Message(spellId, "Attention", "Alert", self:SpellName(230932))
+		orbCounter = orbCounter + 1
+		if orbCounter <= 4 and initialOrbs then
+			self:Bar(spellId, 8, CL.count:format(self:SpellName(230932), orbCounter))
+		elseif not initialOrbs then
+			self:Bar(spellId, orbTimers[orbCounter], CL.count:format(self:SpellName(230932), orbCounter))
+		end
+	end
+end
+
 function mod:UnstableSoul(args)
 	if self:Me(args.destGUID) then
-		self:TargetMessage(args.spellId, args.destName, "Personal", "Alarm")
-		local _, _, _, _, _, _, expires = UnitDebuff(args.destName, args.spellName)
-		local remaining = expires-GetTime()
-		self:TargetBar(args.spellId, remaining, args.destName)
+		self:TargetMessage(235117, args.destName, "Personal", "Alarm")
+		self:TargetBar(235117, 8, args.destName)
 	end
 end
 
 function mod:UnstableSoulRemoved(args)
 	if self:Me(args.destGUID) then
-		self:StopBar(args.spellId, args.destName)
+		self:StopBar(235117, args.destName)
 	end
 end
 
 function mod:AegwynnsWardApplied(args)
 	if self:Me(args.destGUID) then
-		self:Message(args.spellId, "Neutral", "Info")
+		self:Message(241593, "Neutral", "Info")
+	end
+end
+
+do
+	local prev = 0
+	function mod:GroundEffectDamage(args)
+		local t = GetTime()
+		if self:Me(args.destGUID) and t-prev > 1.5 then
+			prev = t
+			self:Message(args.spellId, "Personal", "Alert", CL.underyou:format(args.spellName))
+		end
 	end
 end
 
@@ -151,7 +184,7 @@ do
 			self:Message(235271, "Important", "Warning", L.infusionChanged:format(sideString), newSide)
 			self:Flash(235271)
 		else
-			self:Message(235271, "Important", "Info", L.sameInfusion:format(sideString), newSide)
+			self:Message(235271, "Positive", "Info", L.sameInfusion:format(sideString), newSide)
 		end
 		mySide = newSide
 	end
@@ -180,18 +213,18 @@ do
 end
 
 function mod:HammerofCreation(args)
-	self:Message(args.spellId, "Urgent", "Alert")
+	self:Message(args.spellId, "Urgent", "Alert", L.lightHammer)
 	hammerofCreationCounter = hammerofCreationCounter + 1
 	if hammerofCreationCounter == 2 then
-		self:Bar(args.spellId, 36)
+		self:Bar(args.spellId, 36, L.lightHammer)
 	end
 end
 
 function mod:HammerofObliteration(args)
-	self:Message(args.spellId, "Urgent", "Alert")
+	self:Message(args.spellId, "Urgent", "Alert", L.felHammer)
 	hammerofObliterationCounter = hammerofObliterationCounter + 1
 	if hammerofObliterationCounter == 2 then
-		self:Bar(args.spellId, 36)
+		self:Bar(args.spellId, 36, L.felHammer)
 	end
 end
 
@@ -204,11 +237,10 @@ function mod:MassInstability(args)
 end
 
 function mod:Blowback(args)
-	phase = 2
 	self:Message(args.spellId, "Important", "Warning")
 end
 
-function mod:TitanicBulwarkApplied(args)
+function mod:TitanicBulwarkApplied()
 	shieldActive = true
 end
 
@@ -228,21 +260,21 @@ function mod:WrathoftheCreatorsApplied(args)
 end
 
 function mod:WrathoftheCreatorsInterrupted(args)
-	phase = 1
 	self:Message(args.spellId, "Positive", "Long", CL.interrupted:format(args.spellName))
 	massInstabilityCounter = 1
 	hammerofCreationCounter = 1
 	hammerofObliterationCounter = 1
 	infusionCounter = 1
+	orbCounter = 1
+	initialOrbs = nil
 
 	self:Bar(235271, 2) -- Infusion
-	self:Bar(241635, 14) -- Hammer of Creation
+	if self:Mythic() then
+		self:Bar(239153, 8, CL.count:format(self:SpellName(230932), orbCounter))
+	end
+	self:Bar(241635, 14, L.lightHammer) -- Hammer of Creation
 	self:Bar(235267, 22) -- Mass Instability
-	self:Bar(241636, 32) -- Hammer of Obliteration
+	self:Bar(241636, 32, L.felHammer) -- Hammer of Obliteration
 	self:Bar(248812, 81) -- Blowback
 	self:Bar(234891, 83.5) -- Wrath of the Creators
-end
-
-function mod:SpontaneousFragmentation(args)
-	self:Message(args.spellId, "Important", "Alarm")
 end

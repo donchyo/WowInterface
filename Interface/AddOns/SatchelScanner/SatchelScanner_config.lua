@@ -9,10 +9,10 @@ SS_HealTexture = "Interface\\Addons\\SatchelScanner\\textures\\healer.tga";
 SS_DpsTexture = "Interface\\Addons\\SatchelScanner\\textures\\dps.tga";
 
 SS_InstanceNewsTable = {
-	SS_TheGatesofHell = "Release: Patch 7.2.5",
-	SS_WailingHalls = "Release: Patch 7.2.5",
-	SS_ChamberoftheAvatar = "Release: Patch 7.2.5",
-	SS_DeceiversFall = "Release: Patch 7.2.5",
+	SS_TheGatesofHell = "Release: June 27",
+	SS_WailingHalls = "Release: July 11",
+	SS_ChamberoftheAvatar = "Release: July 25",
+	SS_DeceiversFall = "Release: August 8",
 };
 
 SS_optionsTable2 = {
@@ -38,26 +38,28 @@ SS_optionsTable2 = {
 		SS_optionsTextHeader = { fontSize = 24, loc = "TOP", x = 0, y = -5, text = "|cFF0080FFSatchel Scanner|r"},
 		SS_optionsTextSubHeader = { fontSize = 18, loc = "TOP", x = 0, y = -25, text = "|cffff0000Scanner Options|r"},
 		SS_Spacer5 = { loc = "TOP", x = 0, y = -45, width = "0" , height = "2", texture = SS_Spacer},
-		-- Scan related stuff
-		SS_optionText1 = { fontSize = 16, loc = "TOPLEFT", x = 10, y = -50, text = "|cffff0000Scan Options|r"},
-		SS_optionText2 = { fontSize = 14, loc = "TOPLEFT", x = 30, y = -70, text = "Scan while in a Instance"},
-		SS_optionText3 = { fontSize = 14, loc = "TOPLEFT", x = 30, y = -90, text = "Scan while in a Group"},
-		SS_scanInDungeonButton = { loc = "TOPLEFT", x = 8, y = -65},
-		SS_scanInGroupButton = { loc = "TOPLEFT", x = 8, y = -85},
-		-- Slider
+		-- BoxText
+		SS_optionText1 = { loc = "TOPLEFT", x = 10, y = -50, fontSize = 16, text = "|cffff0000Scan Options|r"},
+		SS_optionText2 = { loc = "TOPLEFT", x = 30, y = -70, fontSize = 14, text = "Scan while in a Instance"},
+		SS_optionText3 = { loc = "TOPLEFT", x = 30, y = -90, fontSize = 14, text = "Scan while in a Group"},
+		--SS_optionText4 = { loc = "TOPLEFT", x = 250, y = -70, fontSize = 14, text = "Disable low ilvl"},
+		SS_optionText5 = { loc = "TOPLEFT", x = 10, y = -170, fontSize = 16, text = "|cffff0000Notification Options|r"},
+		SS_optionText6 = { loc = "TOPLEFT", x = 30, y = -190, fontSize = 14, text = "Play Soundwarning"},
+		SS_optionText7 = { loc = "TOPLEFT", x = 30, y = -210, fontSize = 14, text = "Show Raidwarning"},
+		-- SliderText
 		SS_sliderText1 = { loc = "TOPLEFT", x = 145, y = -132, fontSize = 16, text = ""},
 		SS_sliderText2 = { loc = "TOPLEFT", x = 10, y = -115, fontSize = 14, text = "Scan Interval in Seconds"},
-		SS_ScannerIntervalSlider = { loc = "TOPLEFT", x = 10, y = -130, width = 130, height = 20, minMax = {3, 30}, valueStep = 1, func = "SS_Globals.SS_sliderText1:SetText(SS_Globals.SS_ScannerIntervalSlider:GetValue())"},
-		-- Notification related stuff
-		SS_optionText4 = { loc = "TOPLEFT", x = 10, y = -170, fontSize = 16, text = "|cffff0000Notification Options|r"},
-		SS_optionText5 = { loc = "TOPLEFT", x = 30, y = -190, fontSize = 14, text = "Play Soundwarning"},
-		SS_optionText6 = { loc = "TOPLEFT", x = 30, y = -210, fontSize = 14, text = "Show Raidwarning"},
-		SS_playSoundButton = { loc = "TOPLEFT", x = 8, y = -185},
-		SS_raidWarningButton = { loc = "TOPLEFT", x = 8, y = -205},
-		-- Slider
-		SS_NotificationIntervalSlider = { loc = "TOPLEFT", x = 10, y = -250, width = 130, height = 20, minMax = {3, 30}, valueStep = 1, func = "SS_Globals.SS_sliderText3:SetText(SS_Globals.SS_NotificationIntervalSlider:GetValue())"},
 		SS_sliderText3 = { loc = "TOPLEFT", x = 145, y = -252, fontSize = 16, text = ""},
 		SS_sliderText4 = { loc = "TOPLEFT", x = 10, y = -235, fontSize = 14, text = "Notification Interval in Seconds"},
+		-- Sliders
+		SS_ScannerIntervalSlider = { loc = "TOPLEFT", x = 10, y = -130, width = 130, height = 20, minMax = {3, 30}, valueStep = 1, func = "SS_Globals.SS_sliderText1:SetText(SS_Globals.SS_ScannerIntervalSlider:GetValue())"},
+		SS_NotificationIntervalSlider = { loc = "TOPLEFT", x = 10, y = -250, width = 130, height = 20, minMax = {3, 60}, valueStep = 1, func = "SS_Globals.SS_sliderText3:SetText(SS_Globals.SS_NotificationIntervalSlider:GetValue())"},
+		-- Boxes
+		SS_playSoundButton = { loc = "TOPLEFT", x = 8, y = -185},
+		SS_raidWarningButton = { loc = "TOPLEFT", x = 8, y = -205},
+		SS_scanInDungeonButton = { loc = "TOPLEFT", x = 8, y = -65},
+		SS_scanInGroupButton = { loc = "TOPLEFT", x = 8, y = -85},
+		--SS_ilvlOverrideButton = { loc = "TOPLEFT", x = 228, y = -65},
 	};
 	[3] = { parent = "instances", pname = "Instances", frame = "SS_ScannerInstances",
 		SS_InstanceSpacer10 = { loc = "TOP", x = 0, y = -45, width = "0" , height = "2", texture = SS_Spacer},
@@ -145,18 +147,18 @@ function SS_interfaceConfig(update)
 		local found;
 		for i = 1, GetNumRandomDungeons() do
 			local dgInfo = { GetLFGRandomDungeonInfo(i) };
-			local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];
-			local key = {id = id, name = name, mapName = "Random Dungeons"}
-			local _, typeID, subtypeID, minLevel, maxLevel, _, _, _, expansionLevel = GetLFGDungeonInfo(id);
-			if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel and (string.find(name, "Random" and "Heroic") or string.find(name, "Timewalking"))) then
+			local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];		
+			local _, typeID, _, minLevel, maxLevel, _, _, _, expansionLevel, _, _, difficulty = GetLFGDungeonInfo(id);
+			local key = {id = id, name = name, mapName = "Random Dungeons", difficulty = difficulty}
+			if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel and (difficulty == 2 or difficulty == 24)) then
 				tinsert(SS_dungeonsbyID, key)
 			end
 		end
 		for i=1, GetNumRFDungeons() do
 			local dgInfo = { GetRFDungeonInfo(i) };
 			local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];
-			local key = {id = id, name = name, mapName = mapName}
-			local _, typeID, subtypeID, minLevel, maxLevel, _, _, _, expansionLevel = GetLFGDungeonInfo(id);
+			local _, typeID, subtypeID, minLevel, maxLevel, _, _, _, expansionLevel, _, _, difficulty = GetLFGDungeonInfo(id);
+			local key = {id = id, name = name, mapName = mapName, difficulty=difficulty}
 			if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel) then
 				tinsert(SS_dungeonsbyID, key);
 			end
@@ -174,7 +176,7 @@ function SS_interfaceConfig(update)
 						if string.find(tooltip, "This instance is not available yet") then reason = "Unreleased" end;
 						if string.find(tooltip, "You need a higher average item level") then reason = "Low iLVL" end;
 					end
-					key = {id = SS_dungeonsbyID[i].id, name = SS_dungeonsbyID[i].name, mapName = SS_dungeonsbyID[i].mapName, locked = locked, tooltip = tooltip, reason = reason}
+					key = {id = SS_dungeonsbyID[i].id, name = SS_dungeonsbyID[i].name, mapName = SS_dungeonsbyID[i].mapName, difficulty = SS_dungeonsbyID[i].difficulty, locked = locked, tooltip = tooltip, reason = reason}
 					tmp = SS_dungeonsbyID[i].id;
 					j = i;
 				end
@@ -185,7 +187,7 @@ function SS_interfaceConfig(update)
 			end
 		end
 		for i=1, #SS_sortedDungeonsID do
-			if string.find(SS_sortedDungeonsID[i].name, "Timewalking") then
+			if(SS_sortedDungeonsID[i].difficulty == 24) then
 				found = true;
 				SS_sortedDungeonsID[i].name = "Timewalking";
 			else
@@ -194,8 +196,8 @@ function SS_interfaceConfig(update)
 					tinsert(SS_sortedDungeonsID, 2, key)
 				end
 			end
-			if string.find(SS_sortedDungeonsID[i].name, "Random") then
-				SS_sortedDungeonsID[i].name = string.gsub(SS_sortedDungeonsID[i].name, "Random ", "");
+			if(SS_sortedDungeonsID[i].difficulty == 2) then
+				SS_sortedDungeonsID[i].name = "Legion Heroic";
 			end
 		end
 	--end
@@ -226,8 +228,6 @@ function SS_interfaceConfig(update)
 				SS_RegisterFrame("Button", i, var.parent, tVar.width, tVar.height, tVar.loc, tVar.x, tVar.y, tVar.texture)
 			elseif string.find(i, "InstanceTrigger") then
 				local storedMap = "Random Dungeons";
-				--SS_RoleOverride = true;
-				--local availableRole = {C_LFGList.GetAvailableRoles()};
 				local ycoord = -155
 				for k=1, #SS_sortedDungeonsID do
 					local boxes = {-150,0,150}

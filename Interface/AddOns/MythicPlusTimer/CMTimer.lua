@@ -390,7 +390,7 @@ function MythicPlusTimerCMTimer:Draw()
         local t2 = CreateFrame("Frame", nil, MythicPlusTimerCMTimer.frame)
         t2:SetAllPoints()
         t2.text = t2:CreateFontString(nil, "BACKGROUND", "GameFontGreen");
-        t2.text:SetPoint("TOPLEFT", 110, -60);
+        t2.text:SetPoint("TOPLEFT", 75, -60);
 
         
         local l3 = CreateFrame("Frame", nil, MythicPlusTimerCMTimer.frame)
@@ -401,7 +401,7 @@ function MythicPlusTimerCMTimer:Draw()
         local t3 = CreateFrame("Frame", nil, MythicPlusTimerCMTimer.frame)
         t3:SetAllPoints()
         t3.text = t3:CreateFontString(nil, "BACKGROUND", "GameFontGreen");
-        t3.text:SetPoint("TOPLEFT", 110, -75);
+        t3.text:SetPoint("TOPLEFT", 75, -75);
 
 
         MythicPlusTimerCMTimer.frames.chesttimer = {
@@ -415,11 +415,11 @@ function MythicPlusTimerCMTimer:Draw()
     
     -- -- 2 Chest
     if timeLeft2 == 0 then
-        MythicPlusTimerCMTimer.frames.chesttimer.label2.text:SetText("2 "..MythicPlusTimer.L["Chests"].." ("..MythicPlusTimerCMTimer:FormatSeconds(twoChestTime)..")")
+        MythicPlusTimerCMTimer.frames.chesttimer.label2.text:SetText("+2 ("..MythicPlusTimerCMTimer:FormatSeconds(twoChestTime)..")")
         MythicPlusTimerCMTimer.frames.chesttimer.label2.text:SetFontObject("GameFontDisable");
         MythicPlusTimerCMTimer.frames.chesttimer.time2:Hide()
     else
-        MythicPlusTimerCMTimer.frames.chesttimer.label2.text:SetText("2 "..MythicPlusTimer.L["Chests"].." ("..MythicPlusTimerCMTimer:FormatSeconds(twoChestTime).."):")
+        MythicPlusTimerCMTimer.frames.chesttimer.label2.text:SetText("+2 ("..MythicPlusTimerCMTimer:FormatSeconds(twoChestTime).."):")
         MythicPlusTimerCMTimer.frames.chesttimer.label2.text:SetFontObject("GameFontHighlight");
         
         MythicPlusTimerCMTimer.frames.chesttimer.time2.text:SetText(MythicPlusTimerCMTimer:FormatSeconds(timeLeft2));
@@ -429,11 +429,11 @@ function MythicPlusTimerCMTimer:Draw()
 
     -- -- 3 Chest
     if timeLeft3 == 0 then
-        MythicPlusTimerCMTimer.frames.chesttimer.label3.text:SetText("3 "..MythicPlusTimer.L["Chests"].." ("..MythicPlusTimerCMTimer:FormatSeconds(threeChestTime)..")")
+        MythicPlusTimerCMTimer.frames.chesttimer.label3.text:SetText("+3 ("..MythicPlusTimerCMTimer:FormatSeconds(threeChestTime)..")")
         MythicPlusTimerCMTimer.frames.chesttimer.label3.text:SetFontObject("GameFontDisable");
         MythicPlusTimerCMTimer.frames.chesttimer.time3:Hide()
     else
-        MythicPlusTimerCMTimer.frames.chesttimer.label3.text:SetText("3 "..MythicPlusTimer.L["Chests"].." ("..MythicPlusTimerCMTimer:FormatSeconds(threeChestTime).."):")
+        MythicPlusTimerCMTimer.frames.chesttimer.label3.text:SetText("+3 ("..MythicPlusTimerCMTimer:FormatSeconds(threeChestTime).."):")
         MythicPlusTimerCMTimer.frames.chesttimer.label3.text:SetFontObject("GameFontHighlight");
         
         MythicPlusTimerCMTimer.frames.chesttimer.time3.text:SetText(MythicPlusTimerCMTimer:FormatSeconds(timeLeft3))
@@ -461,7 +461,7 @@ function MythicPlusTimerCMTimer:Draw()
         end
         MythicPlusTimerCMTimer.frames.objectives[i]:Show()
         
-        local name, _, status, curValue, finalValue = C_Scenario.GetCriteriaInfo(i);
+        local name, _, status, curValue, finalValue, _, _, quantity = C_Scenario.GetCriteriaInfo(i);
         if status then
             MythicPlusTimerCMTimer.frames.objectives[i].text:SetFontObject("GameFontDisable")
 
@@ -500,7 +500,16 @@ function MythicPlusTimerCMTimer:Draw()
         end
         
         if finalValue >= 100 then
-            MythicPlusTimerCMTimer.frames.objectives[i].text:SetText("- "..curValue.."% "..name .. bestTimeStr);
+            local quantityNumber = string.sub(quantity, 1, string.len(quantity) - 1)
+            local quantityPercent = (quantityNumber / finalValue) * 100
+
+            local mult = 10^2
+            quantityPercent = math.floor(quantityPercent * mult + 0.5) / mult
+            if(quantityPercent > 100) then
+                quantityPercent = 100
+            end
+
+            MythicPlusTimerCMTimer.frames.objectives[i].text:SetText("- "..quantityPercent.."% "..name .. bestTimeStr);
         else
             if status then
                 curValue = finalValue

@@ -13,392 +13,16 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 119,
+	["last_realversion"] = 122,
 	["tabela_historico"] = {
 		["tabelas"] = {
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 2855,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00888,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Deepsurge Defender"] = 2610017,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["classe"] = "MAGE",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2610017.00888,
-							["spells"] = {
-								["_ActorTable"] = {
-									[228598] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 886048,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Deepsurge Defender"] = 886048,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 886048,
-										["c_max"] = 886048,
-										["id"] = 228598,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 886048,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-									[228354] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 898178,
-										["g_amt"] = 0,
-										["n_max"] = 224544,
-										["targets"] = {
-											["Deepsurge Defender"] = 1122722,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 224544,
-										["n_min"] = 224544,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1122722,
-										["c_max"] = 449089,
-										["id"] = 228354,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 449089,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-									[228597] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 310991,
-										["g_amt"] = 0,
-										["n_max"] = 150311,
-										["targets"] = {
-											["Deepsurge Defender"] = 601247,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 290256,
-										["n_min"] = 139945,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 601247,
-										["c_max"] = 310991,
-										["id"] = 228597,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 310991,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["total"] = 2610017.00888,
-							["damage_taken"] = 0.00888,
-							["tipo"] = 1,
-							["nome"] = "Donch",
-							["spec"] = 64,
-							["grupo"] = true,
-							["last_dps"] = 431978.981938623,
-							["end_time"] = 1497714879,
-							["colocacao"] = 1,
-							["last_event"] = 1497714877,
-							["on_hold"] = false,
-							["start_time"] = 1497714873,
-							["serial"] = "Player-1303-0387FD7B",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 2855,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 2855,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 2855,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[205708] = {
-										["uptime"] = 4,
-										["activedamt"] = 0,
-										["id"] = 205708,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[228354] = {
-										["uptime"] = 1,
-										["activedamt"] = 0,
-										["id"] = 228354,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[228358] = {
-										["uptime"] = 1,
-										["activedamt"] = 0,
-										["id"] = 228358,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 32,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[205473] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 205473,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[116267] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 116267,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[190446] = {
-										["uptime"] = 5,
-										["activedamt"] = 2,
-										["id"] = 190446,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[195418] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 195418,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[195391] = {
-										["uptime"] = 2,
-										["activedamt"] = 1,
-										["id"] = 195391,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[156150] = {
-										["uptime"] = 4,
-										["activedamt"] = 1,
-										["id"] = 156150,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[143625] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 143625,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 6,
-							["nome"] = "Donch",
-							["spec"] = 64,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[30455] = 1,
-								[44614] = 1,
-								[116] = 2,
-								[228354] = 1,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1497714879,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Player-1303-0387FD7B",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 2855,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Donch"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Deepsurge Defender",
-				["combat_counter"] = 7928,
-				["playing_solo"] = true,
-				["totals"] = {
-					2610016.940607, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Donch"] = 2610017.00888,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 214704.543,
-				["TimeData"] = {
-				},
-				["instance_type"] = "none",
-				["combat_id"] = 2855,
-				["hasSaved"] = true,
-				["frags"] = {
-					["Deepsurge Defender"] = 1,
-				},
-				["data_fim"] = "17:54:39",
-				["data_inicio"] = "17:54:33",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					2610017, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 214698.501,
-				["contra"] = "Deepsurge Defender",
-				["is_temporary"] = true,
-			}, -- [1]
 		},
 	},
 	["ignore_nicktag"] = false,
+	["last_version"] = "v7.2.5.4236",
 	["savedbuffs"] = {
 	},
-	["last_day"] = "18",
-	["combat_counter"] = 7933,
+	["combat_counter"] = 7939,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -406,8 +30,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -453,7 +77,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -461,7 +85,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -469,7 +93,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -483,7 +107,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -1148,8 +772,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -1166,53 +790,40 @@ _detalhes_database = {
 		},
 	},
 	["character_data"] = {
-		["logons"] = 1385,
+		["logons"] = 1387,
 	},
-	["force_font_outline"] = "",
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1497943561,
-		[83126914] = {
-			"Gwenyver", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-Blizzard", -- [4]
-			{
-				0.068704154, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			2, -- [7]
-		},
-		["last_version"] = 8,
+		["nextreset"] = 1501353348,
+		["last_version"] = 9,
 	},
-	["last_encounter"] = "Grand Magistrix Elisande",
+	["last_day"] = "17",
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 2855,
 	["savedStyles"] = {
 	},
-	["last_instance_time"] = 1497635359,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["cached_talents"] = {
+		["Player-1303-0387FD7B"] = {
+			22442, -- [1]
+			21632, -- [2]
+			22473, -- [3]
+			22460, -- [4]
+			22447, -- [5]
+			22469, -- [6]
+			22446, -- [7]
+		},
 	},
+	["last_instance_time"] = 1497635359,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_version"] = "v7.2.0.3703",
+	["last_encounter"] = "Grand Magistrix Elisande",
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -1314,17 +925,7 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["cached_talents"] = {
-		["Player-1303-0387FD7B"] = {
-			22442, -- [1]
-			21632, -- [2]
-			22473, -- [3]
-			22460, -- [4]
-			22447, -- [5]
-			22469, -- [6]
-			22446, -- [7]
-		},
-	},
+	["force_font_outline"] = "",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

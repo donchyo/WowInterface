@@ -1,7 +1,7 @@
-changeset:   647:a5f92680c464
-tag:         v7.2.5.4132.121-release
+changeset:   657:244929ff97c5
+tag:         v7.2.5.4236.122-release
 user:        Tercio
-date:        Fri Jun 23 19:37:18 2017 -0300
-summary:     - framework update to v53.
+date:        Wed Jul 05 13:01:10 2017 -0300
+summary:     - The alert to open the raid ranking after a boss kill, is now shown for 10 seconds (down from 40).
 
 

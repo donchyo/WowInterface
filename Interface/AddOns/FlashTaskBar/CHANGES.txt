@@ -1,7 +1,7 @@
-changeset:   52:c4b24fd9b035
-tag:         v1.15.0-release
+changeset:   56:c01f5645c92f
+tag:         v1.16-release
 user:        Tercio
-date:        Mon May 08 14:57:22 2017 -0300
-summary:     - when the flypoint ends, the chat msg is now localizeble (more to come).
+date:        Fri Jul 14 17:45:16 2017 -0300
+summary:     - added an option to blink the taskbar when the target starts to lose health.
 
 

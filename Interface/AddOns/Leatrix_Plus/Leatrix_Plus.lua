@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.2.07 (26th June 2017, www.leatrix.com)
+-- 	Leatrix Plus 7.2.11 (18th July 2017, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.2.07"
+	LeaPlusLC["AddonVer"] = "7.2.11"
 
 ----------------------------------------------------------------------
 -- 	Locale
@@ -155,26 +155,37 @@
 		--[[koKR]] "NPC 하나의 대화를 설정된 키로 열때 자동으로 넘김니다.",
 		x)
 
-		Ln("Modifier key",
-		--[[zhCN]] "功能键",
-		--[[zhTW]] "快捷按鍵",
-		--[[ruRU]] "",
-		--[[koKR]] "키 설정",
-		x)
+			----------------------------------------------------------------------
+			-- Configuration panel
+			----------------------------------------------------------------------
 
-		Ln("Choose a modifier key for use with this option.\n\nIf set to NONE, you can hold the shift key down to temporarily prevent automation.",
-		--[[zhCN]] "为此项功能选择一个功能键。\n\n如果设置为“无”，你可以按住<Shift键>来暂时阻止自动交互功能。",
-		--[[zhTW]] "選擇一個用於此選項的快捷按鍵。\n\n如果設置為無，您可以按住shift鍵暫時阻止自動化。",
-		--[[ruRU]] "",
-		--[[koKR]] "이 옵션을 사용하기위한 보조 키를 선택합니다.\n\n없음 으로 설정하면 시프트 키를 눌러서 일시적으로 자동화를 방지 할 수 있습니다.",
-		x)
+			Ln("Automate Gossip",
+			--[[zhCN]] "对话自动交互",
+			--[[zhTW]] "自動對話",
+			--[[ruRU]] "",
+			--[[koKR]] "대화 자동넘김",
+			x)
 
-		Ln("NONE",
-		--[[zhCN]] "无",
-		--[[zhTW]] "無",
-		--[[ruRU]] "",
-		--[[koKR]] "없음",
-		x)
+			Ln("Modifier key",
+			--[[zhCN]] "功能键",
+			--[[zhTW]] "快捷按鍵",
+			--[[ruRU]] "",
+			--[[koKR]] "키 설정",
+			x)
+
+			Ln("Choose a modifier key for use with this option.\n\nIf set to NONE, you can hold the shift key down to temporarily prevent automation.",
+			--[[zhCN]] "为此项功能选择一个功能键。\n\n如果设置为“无”，你可以按住<Shift键>来暂时阻止自动交互功能。",
+			--[[zhTW]] "選擇一個用於此選項的快捷按鍵。\n\n如果設置為無，您可以按住shift鍵暫時阻止自動化。",
+			--[[ruRU]] "",
+			--[[koKR]] "이 옵션을 사용하기위한 보조 키를 선택합니다.\n\n없음 으로 설정하면 시프트 키를 눌러서 일시적으로 자동화를 방지 할 수 있습니다.",
+			x)
+
+			Ln("NONE",
+			--[[zhCN]] "无",
+			--[[zhTW]] "無",
+			--[[ruRU]] "",
+			--[[koKR]] "없음",
+			x)
 
 		----------------------------------------------------------------------
 		-- Accept summon
@@ -551,6 +562,10 @@
 		--[[ruRU]] "",
 		--[[koKR]] "친구목록,길드원 제외",
 		x)
+
+		----------------------------------------------------------------------
+		-- Block friend requests
+		----------------------------------------------------------------------
 
 		Ln("Block friend requests",
 		--[[zhCN]] "屏蔽好友申请",
@@ -2283,17 +2298,17 @@
 			x)
 
 			Ln("Hide order hall and garrison alerts",
-			--[[zhCN]] "",
-			--[[zhTW]] "",
+			--[[zhCN]] "隐藏大厅和要塞通知",
+			--[[zhTW]] "隱藏職業大廳與要塞通知",
 			--[[ruRU]] "",
-			--[[koKR]] "",
+			--[[koKR]] "직업전당,주둔지의 알림 숨김",
 			x)
 
 			Ln("If checked, order hall and garrison alerts will not be shown.\n\nThis includes buildings, followers, missions and talents.",
-			--[[zhCN]] "",
-			--[[zhTW]] "",
+			--[[zhCN]] "勾选后，职业大厅和要塞的通知不再显示。\n\n这包括了建筑、追随者、任务以及天赋的相关通知。",
+			--[[zhTW]] "勾選後，職業大廳與要塞通知將不顯示。\n\n這包含了建築物、追隨者、任務與天賦。",
 			--[[ruRU]] "",
-			--[[koKR]] "",
+			--[[koKR]] "선택하면 직업전당,주둔지 알림이 표시되지 않습니다 \n\n 건물, 추종자, 임무와 특성이 포함됨.",
 			x)
 
 			Ln("Hide loot alerts",
@@ -2516,22 +2531,75 @@
 		x)
 
 		----------------------------------------------------------------------
-		-- Disable screen effects
+		-- Manage effects
 		----------------------------------------------------------------------
 
-		Ln("Disable screen effects",
-		--[[zhCN]] "",
-		--[[zhTW]] "",
+		Ln("Manage effects",
+		--[[zhCN]] "游戏效果管理",
+		--[[zhTW]] "管理特效",
 		--[[ruRU]] "",
-		--[[koKR]] "",
+		--[[koKR]] "이펙트 관리",
 		x)
 
-		Ln("If checked, the screen glow effect, death effect and special effects (such as invisibility) will be disabled.",
-		--[[zhCN]] "",
-		--[[zhTW]] "",
+		Ln("If checked, you will be able to disable the screen glow, the grey screen of death and the netherworld effect.",
+		--[[zhCN]] "勾选后，你可以禁用屏幕泛光、死亡时的灰白界面以及异界效果（如法师的隐形术）。",
+		--[[zhTW]] "勾選後，可以讓你停用螢幕泛光，死亡的灰屏與虛空特效。",
 		--[[ruRU]] "",
-		--[[koKR]] "",
+		--[[koKR]] "선택하면 빛 효과, 유령 효과, 지하세계 효과를 해제할수 있습니다.",
 		x)
+
+			----------------------------------------------------------------------
+			-- Configuration panel
+			----------------------------------------------------------------------
+
+			Ln("Effects",
+			--[[zhCN]] "效果",
+			--[[zhTW]] "特效",
+			--[[ruRU]] "",
+			--[[koKR]] "이펙트",
+			x)
+
+			Ln("Disable the screen glow",
+			--[[zhCN]] "禁用屏幕泛光",
+			--[[zhTW]] "停用螢幕泛光",
+			--[[ruRU]] "",
+			--[[koKR]] "빛 효과 비활성",
+			x)
+
+			Ln("If checked, the screen glow will be disabled.",
+			--[[zhCN]] "勾选后，屏幕泛光会被禁用。",
+			--[[zhTW]] "勾選後，螢幕的泛光將被停用。",
+			--[[ruRU]] "",
+			--[[koKR]] "빛 효과를 사용하지 않습니다.",
+			x)
+
+			Ln("Disable the grey screen of death",
+			--[[zhCN]] "关闭死亡灰白界面",
+			--[[zhTW]] "停用死亡灰屏",
+			--[[ruRU]] "",
+			--[[koKR]] "유령 효과 비활성",
+			x)
+
+			Ln("If checked, the grey screen of death will be disabled.",
+			--[[zhCN]] "勾选后，死亡时的灰白页面会被禁用。",
+			--[[zhTW]] "勾選後，死亡灰屏將被停用。",
+			--[[ruRU]] "",
+			--[[koKR]] "유령 효과를 사용하지 않습니다.",
+			x)
+
+			Ln("Disable the netherworld effect",
+			--[[zhCN]] "禁用异界效果",
+			--[[zhTW]] "停用虛空特效",
+			--[[ruRU]] "",
+			--[[koKR]] "지하세계 효과 비활성",
+			x)
+
+			Ln("If checked, the netherworld effect will be disabled.",
+			--[[zhCN]] "勾选后，异界效果（如法师的隐形术）会被禁用。",
+			--[[zhTW]] "勾選後，虛空特效將被停用。",
+			--[[ruRU]] "",
+			--[[koKR]] "지하세계 효과를 사용하지 않습니다.",
+			x)
 
 		----------------------------------------------------------------------
 		-- Max camera zoom
@@ -2544,7 +2612,7 @@
 		--[[koKR]] "최대시야거리 사용",
 		x)
 
-		Ln("If checked, you will be able to zoom out to a greater distance.\n\nEnabling this option will prevent you from changing the camera distance setting in the game options panel ('Camera' menu).",
+		Ln("If checked, you will be able to zoom out to a greater distance.",
 		--[[zhCN]] "勾选后，你可以加大镜头的缩放距离。",
 		--[[zhTW]] "勾選後，你可以將鏡頭拉遠到更遠的距離。",
 		--[[ruRU]] "Если флажок установлен, Вы сможете максимально отдалять камеру.",
@@ -2780,19 +2848,23 @@
 		--[[koKR]] "게임 내 시네마틱 가능하면 건너뜁니다.\n\n시작할때 shift키 사용으로 수동가능.\n\n일부는 생략 할수 없습니다.",
 		x)
 
-		Ln("A cinematic skip was attempted.",
-		--[[zhCN]] "一个过场动画成功跳过。",
-		--[[zhTW]] "一個過場動畫成功跳過。",
-		--[[ruRU]] "Была сделана попытка пропустить этот ролик.",
-		--[[koKR]] "시네마틱 건너띄기가 시도되었습니다.",
-		x)
+			----------------------------------------------------------------------
+			-- Chat messages
+			----------------------------------------------------------------------
 
-		Ln("A movie skip was attempted.",
-		--[[zhCN]] "一个电影片段成功跳过。",
-		--[[zhTW]] "一個電影片段成功跳過。",
-		--[[ruRU]] "Была сделана попытка пропустить это видео.",
-		--[[koKR]] "동영상 건너띄기가 시도되었습니다.",
-		x)
+			Ln("A cinematic skip was attempted.",
+			--[[zhCN]] "一个过场动画成功跳过。",
+			--[[zhTW]] "一個過場動畫成功跳過。",
+			--[[ruRU]] "Была сделана попытка пропустить этот ролик.",
+			--[[koKR]] "시네마틱 건너띄기가 시도되었습니다.",
+			x)
+
+			Ln("A movie skip was attempted.",
+			--[[zhCN]] "一个电影片段成功跳过。",
+			--[[zhTW]] "一個電影片段成功跳過。",
+			--[[ruRU]] "Была сделана попытка пропустить это видео.",
+			--[[koKR]] "동영상 건너띄기가 시도되었습니다.",
+			x)
 
 		----------------------------------------------------------------------
 		-- Faster auto loot
@@ -2984,26 +3056,30 @@
 		--[[koKR]] "지정된 단축키로 Leatrix Plus 또는 음악 플레이어를 열수 있습니다.",
 		x)
 
-		Ln("Hotkey",
-		--[[zhCN]] "热键",
-		--[[zhTW]] "熱鍵",
-		--[[ruRU]] "Горячая клавиша",
-		--[[koKR]] "단축키",
-		x)
+			----------------------------------------------------------------------
+			-- Configuration panel
+			----------------------------------------------------------------------
 
-		Ln("Select the hotkeys that you want to use.\n\nThis panel will close automatically if you enter combat.",
-		--[[zhCN]] "请选择你想设置的快捷键。\n\n此面板在你进入战斗后自动关闭。",
-		--[[zhTW]] "選擇你想使用的熱鍵。\n\n此面板將在你進入戰鬥後自動關閉。",
-		--[[ruRU]] "",
-		--[[koKR]] "사용할 단축키를 선택하십시오.\n\n전투시 자동으로 닫힙니다.",
-		x)
+			Ln("Hotkey",
+			--[[zhCN]] "热键",
+			--[[zhTW]] "熱鍵",
+			--[[ruRU]] "Горячая клавиша",
+			--[[koKR]] "단축키",
+			x)
 
-		Ln("Music player",
-		--[[zhCN]] "音乐播放器",
-		--[[zhTW]] "音樂播放器",
-		--[[ruRU]] "",
-		--[[koKR]] "음악 플레이어",
-		x)
+			Ln("Music player",
+			--[[zhCN]] "音乐播放器",
+			--[[zhTW]] "音樂播放器",
+			--[[ruRU]] "",
+			--[[koKR]] "음악 플레이어",
+			x)
+
+			Ln("Select the hotkeys that you want to use.\n\nThis panel will close automatically if you enter combat.",
+			--[[zhCN]] "请选择你想设置的快捷键。\n\n此面板在你进入战斗后自动关闭。",
+			--[[zhTW]] "選擇你想使用的熱鍵。\n\n此面板將在你進入戰鬥後自動關閉。",
+			--[[ruRU]] "",
+			--[[koKR]] "사용할 단축키를 선택하십시오.\n\n전투시 자동으로 닫힙니다.",
+			x)
 
 	----------------------------------------------------------------------
 	-- 	LA9: Miscellaneous
@@ -3141,7 +3217,6 @@
 		--[[koKR]] "Leatrix Plus 음악 플레이어",
 		x)
 
-		-- Music player
 		Ln("Right-click anywhere to return to the zone list.",
 		--[[zhCN]] "右键点击任意区域返回区域列表",
 		--[[zhTW]] "任何地方點擊右鍵回到區域列表。",
@@ -3149,7 +3224,6 @@
 		--[[koKR]] "목록으로 돌아가려면 마우스 오른쪽 버튼 클릭합니다.",
 		x)
 
-		-- Music player
 		Ln("Stop player",
 		--[[zhCN]] "停止播放器",
 		--[[zhTW]] "停止播放器",
@@ -3732,7 +3806,7 @@
 
 --	Set lock state for configuration buttons
 	function LeaPlusLC:SetDim()
-
+		LeaPlusLC:LockOption("NoShaders", "NoShadersBtn", true)					-- Manage effects
 		LeaPlusLC:LockOption("AutomateGossip", "AutoGossipBtn", true)			-- Automate gossip
 		LeaPlusLC:LockOption("AutoAcceptRes", "AutoResBtn", false)				-- Accept resurrection
 		LeaPlusLC:LockOption("AutoReleasePvP", "AutoReleaseBtn", false)			-- Release in PvP
@@ -3824,7 +3898,7 @@
 		or	(LeaPlusLC["NoCommandBar"]			~= LeaPlusDB["NoCommandBar"])			-- Hide order hall bar
 
 		-- System
-		or	(LeaPlusLC["NoShaders"]				~= LeaPlusDB["NoShaders"])				-- Disable screen effects
+		or	(LeaPlusLC["NoShaders"]				~= LeaPlusDB["NoShaders"])				-- Manage effects
 		or	(LeaPlusLC["MaxCameraZoom"]			~= LeaPlusDB["MaxCameraZoom"])			-- Max camera zoom
 		or	(LeaPlusLC["ViewPortEnable"]		~= LeaPlusDB["ViewPortEnable"])			-- Enable viewport
 		or	(LeaPlusLC["NoRestedEmotes"]		~= LeaPlusDB["NoRestedEmotes"])			-- Silence rested emotes
@@ -6347,6 +6421,84 @@
 	function LeaPlusLC:Variable()
 
 		----------------------------------------------------------------------
+		-- Manage effects
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["NoShaders"] == "On" then
+
+			-- Function to set effects
+			local function SetEffects()
+				if LeaPlusLC["NoEffectsGlow"] == "On" then
+					SetCVar("ffxGlow", "0")
+				else
+					SetCVar("ffxGlow", "1")
+				end
+				if LeaPlusLC["NoEffectsDeath"] == "On" then
+					SetCVar("ffxDeath", "0")
+				else
+					SetCVar("ffxDeath", "1")
+				end
+				if LeaPlusLC["NoEffectsNether"] == "On" then
+					SetCVar("ffxNether", "0")
+				else
+					SetCVar("ffxNether", "1")
+				end
+			end
+
+			-- Create configuration panel
+			local EffectsPanel = LeaPlusLC:CreatePanel("Effects", "EffectsPanel")
+
+			LeaPlusLC:MakeTx(EffectsPanel, "Settings", 16, -72)
+			LeaPlusLC:MakeCB(EffectsPanel, "NoEffectsGlow", "Disable the screen glow", 16, -92, false, "If checked, the screen glow will be disabled.")
+			LeaPlusLC:MakeCB(EffectsPanel, "NoEffectsDeath", "Disable the grey screen of death", 16, -112, false, "If checked, the grey screen of death will be disabled.")
+			LeaPlusLC:MakeCB(EffectsPanel, "NoEffectsNether", "Disable the netherworld effect", 16, -132, false, "If checked, the netherworld effect will be disabled.")
+
+			-- Help button tooltip
+			EffectsPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+
+			-- Back button handler
+			EffectsPanel.b:SetScript("OnClick", function() 
+				EffectsPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page7"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			EffectsPanel.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				LeaPlusLC["NoEffectsGlow"] = "On"
+				LeaPlusLC["NoEffectsDeath"] = "On"
+				LeaPlusLC["NoEffectsNether"] = "On"
+
+				-- Refresh the settings and configuration panel
+				SetEffects()
+				EffectsPanel:Hide(); EffectsPanel:Show()
+
+			end)
+
+			-- Show configuration panal when options panel button is clicked
+			LeaPlusCB["NoShadersBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["NoEffectsGlow"] = "On"
+					LeaPlusLC["NoEffectsDeath"] = "On"
+					LeaPlusLC["NoEffectsNether"] = "On"
+					SetEffects()
+				else
+					EffectsPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+			-- Run function when options are clicked and on startup
+			LeaPlusCB["NoEffectsGlow"]:HookScript("OnClick", SetEffects)
+			LeaPlusCB["NoEffectsDeath"]:HookScript("OnClick", SetEffects)
+			LeaPlusCB["NoEffectsNether"]:HookScript("OnClick", SetEffects)
+			SetEffects()
+
+		end
+
+		----------------------------------------------------------------------
 		--	Max camera zoom
 		----------------------------------------------------------------------
 
@@ -6956,16 +7108,6 @@
 				SetWorldMapOptions()
 			end)
 
-		end
-
-		----------------------------------------------------------------------
-		-- Disable screen effects
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["NoShaders"] == "On" then
-			SetCVar("ffxGlow", "0")
-			SetCVar("ffxDeath", "0")
-			SetCVar("ffxNether", "0")
 		end
 
 		----------------------------------------------------------------------
@@ -8265,12 +8407,20 @@
 
 			-- Position general tooltip
 			hooksecurefunc("GameTooltip_SetDefaultAnchor", function()
+				local a,b,c,d,e = GameTooltip:GetPoint()
+				if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
+					GameTooltip:ClearAllPoints()
+				end
 				GameTooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
 			end)
 
 			-- Position pet battle ability tooltips
 			hooksecurefunc("PetBattleAbilityTooltip_Show", function(tooltip, parent)
 				if parent == UIParent then
+					local a,b,c,d,e = PetBattlePrimaryAbilityTooltip:GetPoint()
+					if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
+						PetBattlePrimaryAbilityTooltip:ClearAllPoints()
+					end
 					PetBattlePrimaryAbilityTooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
 				end
 			end)
@@ -10533,7 +10683,10 @@
 				LeaPlusLC:LoadVarChk("NoCommandBar", "Off")					-- Hide order hall bar
 
 				-- System
-				LeaPlusLC:LoadVarChk("NoShaders", "Off")					-- Disable screen effects
+				LeaPlusLC:LoadVarChk("NoShaders", "Off")					-- Manage effects
+				LeaPlusLC:LoadVarChk("NoEffectsGlow", "On")					-- Disable screen glow
+				LeaPlusLC:LoadVarChk("NoEffectsDeath", "On")				-- Disable grey screen of death
+				LeaPlusLC:LoadVarChk("NoEffectsNether", "On")				-- Disable netherworld effect
 				LeaPlusLC:LoadVarChk("MaxCameraZoom", "Off")				-- Max camera zoom
 				LeaPlusLC:LoadVarChk("ViewPortEnable", "Off")				-- Enable viewport
 				LeaPlusLC:LoadVarNum("ViewPortTop", 0, 0, 300)				-- Top border
@@ -10754,6 +10907,9 @@
 
 			-- System
 			LeaPlusDB["NoShaders"] 				= LeaPlusLC["NoShaders"]
+			LeaPlusDB["NoEffectsGlow"] 			= LeaPlusLC["NoEffectsGlow"]
+			LeaPlusDB["NoEffectsDeath"] 		= LeaPlusLC["NoEffectsDeath"]
+			LeaPlusDB["NoEffectsNether"] 		= LeaPlusLC["NoEffectsNether"]
 			LeaPlusDB["MaxCameraZoom"] 			= LeaPlusLC["MaxCameraZoom"]
 			LeaPlusDB["ViewPortEnable"]			= LeaPlusLC["ViewPortEnable"]
 			LeaPlusDB["ViewPortTop"]			= LeaPlusLC["ViewPortTop"]
@@ -10855,7 +11011,7 @@
 			end
 		end
 
-		-- Manage screen effects
+		-- Manage effects
 		if LeaPlusDB["NoShaders"] == "On" then
 			if wipe or (not wipe and LeaPlusLC["NoShaders"] == "Off") then
 				SetCVar("ffxGlow", "1")
@@ -11592,7 +11748,11 @@
 					GameTooltip:HookScript("OnUpdate", function() 
 						local a = _G["GameTooltipTextLeft1"]:GetText() or "" 
 						if a == "Dark Soil" then
-							PlaySound("RaidWarning", "Master") 
+							if ClientVersion == "7.3.0" then
+								PlaySound(8959)
+							else
+								PlaySound("RaidWarning", "Master")
+							end
 						end
 					end)
 					LeaPlusLC["DarkScriptlEnabled"] = true
@@ -11917,7 +12077,7 @@
 				LeaPlusDB["NoCommandBar"] = "On"				-- Hide order hall bar
 
 				-- System
-				LeaPlusDB["NoShaders"] = "On"					-- Disable screen effects
+				LeaPlusDB["NoShaders"] = "On"					-- Manage effects
 				LeaPlusDB["MaxCameraZoom"] = "On"				-- Max camera zoom
 				LeaPlusDB["ViewPortEnable"] = "On"				-- Enable viewport
 				LeaPlusDB["ViewPortResize"] = "On"				-- Resize game world
@@ -12314,7 +12474,7 @@
 	pg = "Page7";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Graphics and Sound"		, 	146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoShaders"					, 	"Disable screen effects"		, 	146, -92, 	true,	"If checked, the screen glow effect, death effect and special effects (such as invisibility) will be disabled.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoShaders"					, 	"Manage effects"				, 	146, -92, 	true,	"If checked, you will be able to disable the screen glow, the grey screen of death and the netherworld effect.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -112, 	true,	"If checked, you will be able to zoom out to a greater distance.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ViewPortEnable"			,	"Enable viewport"				,	146, -132, 	true,	"If checked, you will be able to create a viewport.  A viewport adds adjustable black borders around the game world.\n\nThe borders are placed on top of the game world but under the UI so you can place UI elements over them.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -152, 	true,	"If checked, emote sounds will be silenced while your character is:\n\n- resting\n- in a pet battle\n- at the Hathill Market\n- at the Grim Guzzler\n\nEmote sounds will be enabled when none of the above apply.")
@@ -12330,6 +12490,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterLooting"				, 	"Faster auto loot"				,	340, -232, 	true,	"If checked, the amount of time it takes to auto loot creatures will be significantly reduced.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "LockoutSharing"			, 	"Lockout sharing"				, 	340, -252, 	true, 	"If checked, the 'Display only character achievements to others' setting in the game options panel ('Social' menu) will be permanently checked and locked.")
 
+	LeaPlusLC:CfgBtn("NoShadersBtn", LeaPlusCB["NoShaders"], "Click to configure the settings for this option.")
 	LeaPlusLC:CfgBtn("ModViewportBtn", LeaPlusCB["ViewPortEnable"], "Click to configure the settings for this option.")
 
 ----------------------------------------------------------------------

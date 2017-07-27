@@ -13,467 +13,562 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 121,
+	["last_realversion"] = 122,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 1112,
+					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 1435531.008989,
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.006878,
 							["damage_from"] = {
-								["Chaostracer-Alonsus"] = true,
-								["Enígma-Neptulon"] = true,
-								["Ssyfantasies-Silvermoon"] = true,
-								["Еммика-ЧерныйШрам"] = true,
+								["Devoted Occultist"] = true,
 							},
 							["targets"] = {
-								["Pastorlul-Silvermoon"] = 6464518,
-								["Chaostracer-Alonsus"] = 6054032,
-								["Ssyfantasies-Silvermoon"] = 9873448,
-								["Stigtøfting-Silvermoon"] = 6247363,
-								["Zuriz"] = 5264210,
-								["Thonie-Silvermoon"] = 8218378,
-								["Tinfoilhats-Silvermoon"] = 4138661,
-								["Enígma-Neptulon"] = 6983469,
-								["Rangelycan-Ravencrest"] = 14193870,
+								["Fel Beast"] = 2963907,
+								["Devoted Occultist"] = 5773138,
 							},
+							["delay"] = 0,
 							["pets"] = {
+								"Foulmush <Gravutdelare-Sylvanas>", -- [1]
 							},
-							["dps_started"] = false,
-							["nome"] = "Kil'jaeden",
-							["classe"] = "UNKNOW",
+							["custom"] = 0,
+							["friendlyfire_total"] = 0,
+							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 67437949.008989,
-							["serial"] = "Creature-0-3769-1676-15748-117269-00005018C7",
-							["monster"] = true,
-							["end_time"] = 1498422364,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
+							["total_without_pet"] = 8162536.006878,
 							["spells"] = {
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 14193870,
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6247363,
+										["n_max"] = 55860,
 										["targets"] = {
-											["Zuriz"] = 5264210,
-											["Chaostracer-Alonsus"] = 6054032,
-											["Thonie-Silvermoon"] = 3911784,
-											["Stigtøfting-Silvermoon"] = 6247363,
-											["Rangelycan-Ravencrest"] = 14193870,
+											["Devoted Occultist"] = 209332,
+											["Fel Beast"] = 35453,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 21477389,
-										["n_min"] = 3911784,
+										["n_dmg"] = 244785,
+										["n_min"] = 35453,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 35671259,
-										["c_max"] = 14193870,
-										["IMMUNE"] = 2,
+										["counter"] = 5,
+										["total"] = 244785,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 14193870,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
 										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 35453,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									}, -- [1]
-									[240910] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 240910,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[240908] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2327823,
-										["targets"] = {
-											["Pastorlul-Silvermoon"] = 6464518,
-											["Thonie-Silvermoon"] = 4306594,
-											["Tinfoilhats-Silvermoon"] = 4138661,
-											["Enígma-Neptulon"] = 6983469,
-											["Ssyfantasies-Silvermoon"] = 9873448,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 31766690,
-										["n_min"] = 1435531,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 31766690,
-										["c_max"] = 0,
-										["id"] = 240908,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 14529094,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 16,
-										["a_amt"] = 7,
-										["r_amt"] = 0,
-									},
-									[236710] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 236710,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1498422363,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1100092.008989,
-							["start_time"] = 1498422347,
-							["delay"] = 0,
-							["total"] = 67437949.008989,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004061,
-							["damage_from"] = {
-								["Kil'jaeden"] = true,
-							},
-							["targets"] = {
-								["Kil'jaeden"] = 43239,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 6054032.004061,
-							["boss_fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 43239.004061,
-							["on_hold"] = false,
-							["serial"] = "Player-1082-06A7E519",
-							["dps_started"] = false,
-							["end_time"] = 1498422364,
-							["classe"] = "HUNTER",
-							["friendlyfire"] = {
-							},
-							["nome"] = "Chaostracer-Alonsus",
-							["spells"] = {
-								["_ActorTable"] = {
-									[234108] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 43239,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Kil'jaeden"] = 43239,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 43239,
-										["c_max"] = 43239,
-										["id"] = 234108,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 43239,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 43239.004061,
-							["tipo"] = 1,
-							["colocacao"] = 2,
-							["custom"] = 0,
-							["last_event"] = 1498422347,
-							["last_dps"] = 2550.67272657365,
-							["start_time"] = 1498422363,
-							["delay"] = 1498422347,
-							["spec"] = 254,
-						}, -- [2]
-						{
-							["flag_original"] = 1304,
-							["totalabsorbed"] = 0.00347,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kil'jaeden"] = 976172,
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-1929-070D4A5F",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 976172.00347,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 976172.00347,
-							["end_time"] = 1498422364,
-							["on_hold"] = false,
-							["nome"] = "Еммика-ЧерныйШрам",
-							["spells"] = {
-								["_ActorTable"] = {
-									[188838] = {
+									[52212] = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 663802,
+										["c_dmg"] = 186234,
 										["g_amt"] = 0,
-										["n_max"] = 108465,
+										["n_max"] = 31303,
 										["targets"] = {
-											["Kil'jaeden"] = 976172,
+											["Fel Beast"] = 186711,
+											["Devoted Occultist"] = 248206,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 312370,
-										["n_min"] = 95441,
+										["n_dmg"] = 248683,
+										["n_min"] = 30986,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 976172,
-										["c_max"] = 221268,
-										["id"] = 188838,
+										["counter"] = 11,
+										["total"] = 434917,
+										["c_max"] = 62290,
+										["id"] = 52212,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
+										["c_min"] = 61972,
 										["m_amt"] = 0,
-										["c_min"] = 221267,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									[191685] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 245330,
+										["g_amt"] = 0,
+										["n_max"] = 147649,
+										["targets"] = {
+											["Fel Beast"] = 685393,
+											["Devoted Occultist"] = 760095,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1200158,
+										["n_min"] = 48967,
+										["g_dmg"] = 0,
+										["counter"] = 17,
+										["total"] = 1445488,
+										["c_max"] = 146898,
+										["id"] = 191685,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 98432,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 15,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									[191587] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 740362,
+										["g_amt"] = 0,
+										["n_max"] = 125928,
+										["targets"] = {
+											["Fel Beast"] = 1234564,
+											["Devoted Occultist"] = 2229314,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2723516,
+										["n_min"] = 122760,
+										["g_dmg"] = 0,
+										["counter"] = 25,
+										["total"] = 3463878,
+										["c_max"] = 248051,
+										["id"] = 191587,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 245521,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 22,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									[77575] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 41775,
+										["targets"] = {
+											["Devoted Occultist"] = 123637,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 123637,
+										["n_min"] = 40931,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 123637,
+										["c_max"] = 0,
+										["id"] = 77575,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									[207311] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 466473,
+										["g_amt"] = 0,
+										["n_max"] = 223209,
+										["targets"] = {
+											["Devoted Occultist"] = 466473,
+											["Fel Beast"] = 223209,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 223209,
+										["n_min"] = 223209,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 689682,
+										["c_max"] = 466473,
+										["id"] = 207311,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 466473,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									[85948] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 369722,
+										["targets"] = {
+											["Devoted Occultist"] = 369722,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 369722,
+										["n_min"] = 369722,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 369722,
+										["c_max"] = 0,
+										["id"] = 85948,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 313234,
+										["targets"] = {
+											["Devoted Occultist"] = 621722,
+											["Fel Beast"] = 311648,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 933370,
+										["n_min"] = 308488,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 933370,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									[49998] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 308976,
+										["g_amt"] = 0,
+										["n_max"] = 148081,
+										["targets"] = {
+											["Devoted Occultist"] = 457057,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 148081,
+										["n_min"] = 148081,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 457057,
+										["c_max"] = 308976,
+										["id"] = 49998,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 308976,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1498422361,
-							["need_refresh"] = true,
-							["boss_fight_component"] = true,
-							["spec"] = 270,
-							["custom"] = 0,
+							["dps_started"] = false,
+							["total"] = 8737045.006878,
+							["damage_taken"] = 668700.006878,
 							["tipo"] = 1,
-							["damage_taken"] = 0.00347,
-							["start_time"] = 1498422348,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
+							["nome"] = "Gravutdelare-Sylvanas",
+							["spec"] = 252,
+							["grupo"] = true,
+							["last_dps"] = 485283.548482426,
+							["end_time"] = 1500924114,
+							["colocacao"] = 1,
+							["last_event"] = 1500924112,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1500924096,
+							["serial"] = "Player-3687-05F18847",
+							["on_hold"] = false,
+						}, -- [1]
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006388,
+							["totalabsorbed"] = 0.00208,
 							["damage_from"] = {
-								["Kil'jaeden"] = true,
+								["Devoted Occultist"] = true,
 							},
 							["targets"] = {
+								["Devoted Occultist"] = 3199949,
 							},
+							["delay"] = 0,
 							["pets"] = {
+								"Stormcaller Mylra <Zuriz>", -- [1]
 							},
-							["damage_taken"] = 5264210.006388,
-							["spec"] = 264,
+							["custom"] = 0,
+							["total"] = 3199949.00208,
 							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.006388,
-							["friendlyfire"] = {
+							["total_without_pet"] = 3083838.00208,
+							["spells"] = {
+								["_ActorTable"] = {
+									[51505] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 550446,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Devoted Occultist"] = 550446,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 550446,
+										["c_max"] = 550446,
+										["id"] = 51505,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 550446,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+									[188443] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 661220,
+										["g_amt"] = 0,
+										["n_max"] = 129144,
+										["targets"] = {
+											["Devoted Occultist"] = 919508,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 258288,
+										["n_min"] = 129144,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 919508,
+										["c_max"] = 330610,
+										["id"] = 188443,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 330610,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									[188389] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 154326,
+										["g_amt"] = 0,
+										["n_max"] = 66311,
+										["targets"] = {
+											["Devoted Occultist"] = 371347,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 217021,
+										["n_min"] = 30141,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 371347,
+										["c_max"] = 77164,
+										["id"] = 188389,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 77162,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+									[117014] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 433878,
+										["targets"] = {
+											["Devoted Occultist"] = 433878,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 433878,
+										["n_min"] = 433878,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 433878,
+										["c_max"] = 0,
+										["id"] = 117014,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 28,
+									},
+									[120588] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 346284,
+										["targets"] = {
+											["Devoted Occultist"] = 346284,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 346284,
+										["n_min"] = 346284,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 346284,
+										["c_max"] = 0,
+										["id"] = 120588,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 28,
+									},
+									[77451] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 462375,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Devoted Occultist"] = 462375,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 462375,
+										["c_max"] = 462375,
+										["id"] = 77451,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 462375,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+								},
+								["tipo"] = 2,
 							},
-							["serial"] = "Player-1303-0478DE10",
 							["dps_started"] = false,
-							["end_time"] = 1498422364,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["end_time"] = 1500924114,
+							["damage_taken"] = 278675.00208,
+							["tipo"] = 1,
 							["nome"] = "Zuriz",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
+							["spec"] = 262,
 							["grupo"] = true,
-							["total"] = 0.006388,
-							["last_event"] = 0,
-							["colocacao"] = 4,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0.000376828692778537,
-							["start_time"] = 1498422364,
-							["delay"] = 0,
-							["boss_fight_component"] = true,
-						}, -- [4]
+							["last_dps"] = 177735.447793816,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 2,
+							["last_event"] = 1500924110,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1500924097,
+							["serial"] = "Player-1303-0478DE10",
+							["on_hold"] = false,
+						}, -- [2]
 						{
-							["flag_original"] = 1304,
-							["totalabsorbed"] = 0.003421,
+							["flag_original"] = 4370,
+							["totalabsorbed"] = 0.001674,
 							["damage_from"] = {
-								["Kil'jaeden"] = true,
+								["Devoted Occultist"] = true,
 							},
 							["targets"] = {
+								["Fel Beast"] = 286929,
+								["Devoted Occultist"] = 287580,
 							},
 							["pets"] = {
 							},
-							["serial"] = "Player-1329-040EF6BC",
-							["classe"] = "UNKNOW",
+							["damage_taken"] = 76968.001674,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.003421,
+							["total_without_pet"] = 574509.001674,
 							["friendlyfire"] = {
 							},
-							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
-							["total"] = 0.003421,
-							["end_time"] = 1498422364,
-							["on_hold"] = false,
-							["nome"] = "Rangelycan-Ravencrest",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["need_refresh"] = true,
-							["boss_fight_component"] = true,
-							["spec"] = 253,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 14193870.003421,
-							["start_time"] = 1498422364,
+							["total"] = 574509.001674,
 							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [5]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.001831,
-							["damage_from"] = {
-								["Kil'jaeden"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 6247363.001831,
-							["spec"] = 71,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001831,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-3391-076F7A22",
-							["dps_started"] = false,
-							["end_time"] = 1498422364,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Stigtøfting-Silvermoon",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 0.001831,
-							["last_event"] = 0,
-							["colocacao"] = 3,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0.000166924970370422,
-							["start_time"] = 1498422364,
-							["delay"] = 0,
-							["boss_fight_component"] = true,
-						}, -- [6]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.002623,
-							["damage_from"] = {
-								["Kil'jaeden"] = true,
-							},
-							["targets"] = {
-								["Kil'jaeden"] = 3268,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 6983469.002623,
-							["boss_fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3268.002623,
-							["on_hold"] = false,
-							["serial"] = "Player-3660-0614B561",
-							["dps_started"] = false,
-							["end_time"] = 1498422364,
-							["classe"] = "MAGE",
-							["friendlyfire"] = {
-							},
-							["nome"] = "Enígma-Neptulon",
+							["ownerName"] = "Gravutdelare-Sylvanas",
+							["nome"] = "Foulmush <Gravutdelare-Sylvanas>",
 							["spells"] = {
 								["_ActorTable"] = {
 									{
@@ -481,2235 +576,673 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3268,
+										["n_max"] = 19426,
 										["targets"] = {
-											["Kil'jaeden"] = 3268,
+											["Fel Beast"] = 89853,
+											["Devoted Occultist"] = 76717,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 3268,
-										["n_min"] = 3268,
+										["n_dmg"] = 166570,
+										["n_min"] = 17897,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 3268,
+										["counter"] = 9,
+										["total"] = 166570,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["n_amt"] = 9,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 3268.002623,
-							["tipo"] = 1,
-							["colocacao"] = 3,
-							["custom"] = 0,
-							["last_event"] = 1498422358,
-							["last_dps"] = 192.779767755466,
-							["start_time"] = 1498422358,
-							["delay"] = 0,
-							["spec"] = 63,
-						}, -- [7]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.002835,
-							["damage_from"] = {
-								["Kil'jaeden"] = true,
-							},
-							["targets"] = {
-							},
-							["serial"] = "Player-3391-090660C3",
-							["pets"] = {
-							},
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 0.002835,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002835,
-							["boss_fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1498422364,
-							["on_hold"] = false,
-							["last_event"] = 0,
-							["nome"] = "Thonie-Silvermoon",
-							["spec"] = 70,
-							["grupo"] = true,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 8218378.002835,
-							["start_time"] = 1498422364,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [8]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.003795,
-							["damage_from"] = {
-								["Kil'jaeden"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 6464518.003795,
-							["spec"] = 265,
-							["classe"] = "WARLOCK",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003795,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-3391-08AF1B6E",
-							["dps_started"] = false,
-							["end_time"] = 1498422364,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Pastorlul-Silvermoon",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 0.003795,
-							["last_event"] = 0,
-							["colocacao"] = 6,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0.000223867390277794,
-							["start_time"] = 1498422364,
-							["delay"] = 0,
-							["boss_fight_component"] = true,
-						}, -- [9]
-						{
-							["flag_original"] = 263444,
-							["totalabsorbed"] = 0.00416,
-							["colocacao"] = 1,
-							["damage_from"] = {
-								["Kil'jaeden"] = true,
-							},
-							["targets"] = {
-								["Kil'jaeden"] = 77413,
-							},
-							["last_event"] = 1498422359,
-							["pets"] = {
-							},
-							["damage_taken"] = 9873448.00416,
-							["avoidance"] = {
-								["overall"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 0,
-									["ALL"] = 5,
-									["PARTIAL_ABSORBED"] = 5,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 46405,
-									["ABSORB"] = 5,
-									["ABSORB_AMT"] = 46405,
-									["FULL_HIT"] = 0,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 0,
-								},
-								["Kil'jaeden"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 0,
-									["ALL"] = 5,
-									["PARTIAL_ABSORBED"] = 5,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 46405,
-									["ABSORB"] = 5,
-									["ABSORB_AMT"] = 46405,
-									["FULL_HIT"] = 0,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 0,
-								},
-							},
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 77413.00416,
-							["serial"] = "Player-3391-089A1255",
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1498422364,
-							["isTank"] = true,
-							["total"] = 77413.00416,
-							["nome"] = "Ssyfantasies-Silvermoon",
-							["spec"] = 104,
-							["grupo"] = true,
-							["last_dps"] = 4566.60005661744,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									[203958] = {
-										["c_amt"] = 0,
+									[212335] = {
+										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 243032,
 										["g_amt"] = 0,
-										["n_max"] = 15483,
+										["n_max"] = 42171,
 										["targets"] = {
-											["Kil'jaeden"] = 77413,
+											["Fel Beast"] = 197076,
+											["Devoted Occultist"] = 210863,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 77413,
-										["n_min"] = 15482,
+										["n_dmg"] = 164907,
+										["n_min"] = 39253,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 77413,
-										["c_max"] = 0,
-										["id"] = 203958,
+										["counter"] = 7,
+										["total"] = 407939,
+										["c_max"] = 85209,
+										["id"] = 212335,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
+										["c_min"] = 78507,
 										["m_amt"] = 0,
-										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
+							["end_time"] = 1500924114,
+							["last_event"] = 1500924112,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["on_hold"] = false,
-							["start_time"] = 1498422359,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [10]
+							["start_time"] = 1500924097,
+							["serial"] = "Pet-0-1463-1220-14346-106848-0101DA5E6E",
+							["classe"] = "PET",
+						}, -- [3]
 						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.005114,
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.004693,
 							["damage_from"] = {
-								["Kil'jaeden"] = true,
 							},
 							["targets"] = {
+								["Devoted Occultist"] = 116111,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 4138661.005114,
-							["spec"] = 270,
-							["classe"] = "MONK",
+							["damage_taken"] = 0.004693,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.005114,
+							["total_without_pet"] = 116111.004693,
 							["friendlyfire"] = {
 							},
-							["serial"] = "Player-3391-078A7289",
 							["dps_started"] = false,
-							["end_time"] = 1498422364,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Tinfoilhats-Silvermoon",
+							["total"] = 116111.004693,
+							["delay"] = 1500924100,
+							["ownerName"] = "Zuriz",
+							["nome"] = "Stormcaller Mylra <Zuriz>",
 							["spells"] = {
 								["_ActorTable"] = {
+									[227424] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 54151,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Devoted Occultist"] = 54151,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 54151,
+										["c_max"] = 54151,
+										["id"] = 227424,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 54151,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									[227432] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 61960,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Devoted Occultist"] = 61960,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 61960,
+										["c_max"] = 61960,
+										["id"] = 227432,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 61960,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["total"] = 0.005114,
-							["last_event"] = 0,
-							["colocacao"] = 5,
+							["end_time"] = 1500924114,
+							["last_event"] = 1500924100,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 0.000301675318545622,
-							["start_time"] = 1498422364,
-							["delay"] = 0,
-							["boss_fight_component"] = true,
-						}, -- [11]
+							["on_hold"] = false,
+							["start_time"] = 1500924112,
+							["serial"] = "Creature-0-3773-1220-13223-109577-000076484F",
+							["classe"] = "PET",
+						}, -- [4]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 1112,
+					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["targets_overheal"] = {
+							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Gravutdelare-Sylvanas"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.00498,
-							["total_without_pet"] = 1936449.00498,
-							["total"] = 1936449.00498,
+							["classe"] = "DEATHKNIGHT",
+							["totalover"] = 1454198.004645,
+							["total_without_pet"] = 767946.004645,
+							["total"] = 767946.004645,
 							["targets_absorbs"] = {
-								["Enígma-Neptulon"] = 1936449,
 							},
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 1,
 							["on_hold"] = false,
-							["serial"] = "Player-3660-0614B561",
-							["totalabsorb"] = 1936449.00498,
-							["last_hps"] = 113861.88069512,
+							["serial"] = "Player-3687-05F18847",
+							["totalabsorb"] = 0.004645,
+							["last_hps"] = 42654.1882162278,
 							["targets"] = {
-								["Enígma-Neptulon"] = 1936449,
+								["Gravutdelare-Sylvanas"] = 2222144,
 							},
-							["totalover_without_pet"] = 0.00498,
-							["healing_taken"] = 1936449.00498,
-							["end_time"] = 1498422364,
-							["healing_from"] = {
-								["Enígma-Neptulon"] = true,
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Enígma-Neptulon",
+							["totalover_without_pet"] = 0.004645,
+							["healing_taken"] = 767946.004645,
+							["fight_component"] = true,
+							["end_time"] = 1500924114,
+							["spec"] = 252,
+							["nome"] = "Gravutdelare-Sylvanas",
 							["spells"] = {
 								["_ActorTable"] = {
-									[235313] = {
+									[53365] = {
 										["c_amt"] = 0,
-										["totalabsorb"] = 379459,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 379459,
-										["targets"] = {
-											["Enígma-Neptulon"] = 379459,
-										},
-										["n_min"] = 379459,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 379459,
-										["c_max"] = 0,
-										["id"] = 235313,
-										["targets_absorbs"] = {
-											["Enígma-Neptulon"] = 379459,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 379459,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[86949] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 1556990,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 1556990,
-										["targets"] = {
-											["Enígma-Neptulon"] = 1556990,
-										},
-										["n_min"] = 1556990,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 1556990,
-										["c_max"] = 0,
-										["id"] = 86949,
-										["targets_absorbs"] = {
-											["Enígma-Neptulon"] = 1556990,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1556990,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1498422358,
-							["custom"] = 0,
-							["last_event"] = 1498422359,
-							["spec"] = 63,
-							["totaldenied"] = 0.00498,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 0.005687,
-							["total_without_pet"] = 1435531.005687,
-							["total"] = 1435531.005687,
-							["targets_absorbs"] = {
-								["Thonie-Silvermoon"] = 1435531,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-3391-090660C3",
-							["totalabsorb"] = 1435531.005687,
-							["last_hps"] = 84408.2439988484,
-							["targets"] = {
-								["Thonie-Silvermoon"] = 1435531,
-							},
-							["totalover_without_pet"] = 0.005687,
-							["healing_taken"] = 1435531.005687,
-							["end_time"] = 1498422364,
-							["healing_from"] = {
-								["Thonie-Silvermoon"] = true,
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Thonie-Silvermoon",
-							["spells"] = {
-								["_ActorTable"] = {
-									[213313] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 1435531,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 1435531,
-										["targets"] = {
-											["Thonie-Silvermoon"] = 1435531,
-										},
-										["n_min"] = 1435531,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 1435531,
-										["c_max"] = 0,
-										["id"] = 213313,
-										["targets_absorbs"] = {
-											["Thonie-Silvermoon"] = 1435531,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1435531,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1498422359,
-							["custom"] = 0,
-							["last_event"] = 1498422359,
-							["spec"] = 70,
-							["totaldenied"] = 0.005687,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [2]
-						{
-							["flag_original"] = 263444,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.002667,
-							["total_without_pet"] = 46405.002667,
-							["total"] = 46405.002667,
-							["targets_absorbs"] = {
-								["Ssyfantasies-Silvermoon"] = 46405,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 3,
-							["on_hold"] = false,
-							["isTank"] = true,
-							["serial"] = "Player-3391-089A1255",
-							["totalabsorb"] = 46405.002667,
-							["last_hps"] = 2728.58250526523,
-							["targets"] = {
-								["Ssyfantasies-Silvermoon"] = 46405,
-							},
-							["totalover_without_pet"] = 0.002667,
-							["healing_taken"] = 46405.002667,
-							["end_time"] = 1498422364,
-							["spec"] = 104,
-							["healing_from"] = {
-								["Ssyfantasies-Silvermoon"] = true,
-							},
-							["nome"] = "Ssyfantasies-Silvermoon",
-							["spells"] = {
-								["_ActorTable"] = {
-									[203953] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 46405,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 9281,
-										["targets"] = {
-											["Ssyfantasies-Silvermoon"] = 46405,
-										},
-										["n_min"] = 9281,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 46405,
-										["c_max"] = 0,
-										["id"] = 203953,
-										["targets_absorbs"] = {
-											["Ssyfantasies-Silvermoon"] = 46405,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 46405,
-										["n_amt"] = 5,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1498422358,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1498422359,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002667,
-							["delay"] = 0,
-							["boss_fight_component"] = true,
-						}, -- [3]
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.004128,
-							["total_without_pet"] = 0.004128,
-							["total"] = 0.004128,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 4,
-							["on_hold"] = false,
-							["serial"] = "Player-1303-0478DE10",
-							["totalabsorb"] = 0.004128,
-							["last_hps"] = 0.000318543097460446,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.004128,
-							["healing_taken"] = 0.004128,
-							["end_time"] = 1498422364,
-							["healing_from"] = {
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Zuriz",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1498422364,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["spec"] = 264,
-							["totaldenied"] = 0.004128,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [4]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-								["Thonie-Silvermoon"] = 40089,
-								["Zuriz"] = 80178,
-								["Stigtøfting-Silvermoon"] = 40089,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 160356.002516,
-							["total_without_pet"] = 0.002516,
-							["total"] = 0.002516,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 5,
-							["on_hold"] = false,
-							["serial"] = "Player-3391-0679A1A4",
-							["totalabsorb"] = 0.002516,
-							["last_hps"] = 0.000194150783238973,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002516,
-							["healing_taken"] = 0.002516,
-							["end_time"] = 1498422364,
-							["healing_from"] = {
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Sizmofyt-Silvermoon",
-							["spells"] = {
-								["_ActorTable"] = {
-									[73921] = {
-										["c_amt"] = 1,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Thonie-Silvermoon"] = 40089,
-											["Zuriz"] = 80178,
-											["Stigtøfting-Silvermoon"] = 40089,
+											["Gravutdelare-Sylvanas"] = 18292,
 										},
-										["n_max"] = 0,
+										["n_max"] = 305110,
 										["targets"] = {
-											["Thonie-Silvermoon"] = 0,
-											["Zuriz"] = 0,
-											["Stigtøfting-Silvermoon"] = 0,
+											["Gravutdelare-Sylvanas"] = 591928,
 										},
-										["n_min"] = 0,
-										["counter"] = 3,
-										["overheal"] = 160356,
-										["total"] = 0,
+										["n_min"] = 286818,
+										["counter"] = 2,
+										["overheal"] = 18292,
+										["total"] = 591928,
 										["c_max"] = 0,
-										["id"] = 73921,
+										["id"] = 53365,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 2,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 591928,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[45470] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Gravutdelare-Sylvanas"] = 1435906,
+										},
+										["n_max"] = 101074,
+										["targets"] = {
+											["Gravutdelare-Sylvanas"] = 176018,
+										},
+										["n_min"] = 74944,
+										["counter"] = 2,
+										["overheal"] = 1435906,
+										["total"] = 176018,
+										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 176018,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1498422363,
-							["custom"] = 0,
-							["last_event"] = 1498422348,
-							["spec"] = 264,
-							["totaldenied"] = 0.002516,
-							["delay"] = 1498422348,
-							["tipo"] = 2,
-						}, -- [5]
-						{
-							["flag_original"] = 1300,
-							["healing_from"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.001712,
-							["total_without_pet"] = 0.001712,
-							["total"] = 0.001712,
-							["spec"] = 71,
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-3391-076F7A22",
-							["totalabsorb"] = 0.001712,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.001712,
-							["healing_taken"] = 0.001712,
-							["end_time"] = 1498422364,
-							["boss_fight_component"] = true,
 							["targets_overheal"] = {
+								["Gravutdelare-Sylvanas"] = 1454198,
 							},
-							["nome"] = "Stigtøfting-Silvermoon",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["last_event"] = 0,
-							["start_time"] = 1498422364,
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["classe"] = "WARRIOR",
-							["totaldenied"] = 0.001712,
+							["totaldenied"] = 0.004645,
+							["start_time"] = 1500924101,
 							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
-						}, -- [6]
+							["last_event"] = 1500924112,
+						}, -- [1]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 1112,
+					["combatId"] = 44,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 1112,
+					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["buff_uptime_targets"] = {
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[194310] = {
+										["uptime"] = 3,
+										["activedamt"] = 0,
+										["id"] = 194310,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[43265] = {
+										["uptime"] = 9,
+										["activedamt"] = 0,
+										["id"] = 43265,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[196782] = {
+										["uptime"] = 11,
+										["activedamt"] = 0,
+										["id"] = 196782,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[191587] = {
+										["uptime"] = 16,
+										["activedamt"] = 0,
+										["id"] = 191587,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[191748] = {
+										["uptime"] = 2,
+										["activedamt"] = 0,
+										["id"] = 191748,
+										["targets"] = {
+										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
 							},
-							["spec"] = 251,
-							["grupo"] = true,
-							["last_event"] = 1498422364,
-							["buff_uptime"] = 68,
-							["boss_fight_component"] = true,
-							["pets"] = {
-							},
-							["tipo"] = 4,
+							["buff_uptime"] = 152,
 							["classe"] = "DEATHKNIGHT",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[240985] = {
-										["uptime"] = 17,
+									[222204] = {
+										["uptime"] = 18,
 										["activedamt"] = 1,
-										["id"] = 240985,
-										["actived"] = false,
+										["id"] = 222204,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[237825] = {
-										["uptime"] = 17,
+									[186401] = {
+										["uptime"] = 18,
 										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
+										["id"] = 186401,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[188034] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 188034,
-										["actived"] = false,
+									[101568] = {
+										["uptime"] = 15,
+										["activedamt"] = 3,
+										["id"] = 101568,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[186403] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
+									[53365] = {
+										["uptime"] = 18,
+										["activedamt"] = 2,
+										["id"] = 53365,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-3391-0824B73D",
-							["nome"] = "Audaxus-Silvermoon",
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[87024] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 87024,
 										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[87023] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 87023,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 91,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[240985] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 240985,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[108843] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 108843,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186403] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
-										["targets"] = {
-										},
 										["counter"] = 0,
 									},
 									[227723] = {
-										["uptime"] = 17,
+										["uptime"] = 18,
 										["activedamt"] = 1,
 										["id"] = 227723,
-										["actived"] = false,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
 										["actived"] = false,
-										["targets"] = {
-										},
 										["counter"] = 0,
 									},
-									[235313] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 235313,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[225602] = {
-										["uptime"] = 12,
-										["activedamt"] = 1,
-										["id"] = 225602,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["debuff_uptime_targets"] = {
-							},
-							["spec"] = 63,
-							["grupo"] = true,
-							["nome"] = "Enígma-Neptulon",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-3660-0614B561",
-							["last_event"] = 1498422364,
-						}, -- [2]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[25771] = {
+									[188290] = {
 										["uptime"] = 4,
-										["activedamt"] = 0,
-										["id"] = 25771,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cooldowns_defensive"] = 1.005915,
-							["pets"] = {
-							},
-							["last_cooldown"] = {
-								1498422359.753, -- [1]
-								642, -- [2]
-							},
-							["classe"] = "PALADIN",
-							["cooldowns_defensive_targets"] = {
-								["Thonie-Silvermoon"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[642] = {
-										["uptime"] = 3,
 										["activedamt"] = 1,
-										["id"] = 642,
-										["actived"] = false,
+										["id"] = 188290,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[240985] = {
-										["uptime"] = 17,
+									[17619] = {
+										["uptime"] = 18,
 										["activedamt"] = 1,
-										["id"] = 240985,
-										["actived"] = false,
+										["id"] = 17619,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[188034] = {
-										["uptime"] = 17,
+									[243138] = {
+										["uptime"] = 18,
 										["activedamt"] = 1,
-										["id"] = 188034,
-										["actived"] = false,
+										["id"] = 243138,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[227723] = {
-										["uptime"] = 17,
+									[214831] = {
+										["uptime"] = 13,
 										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
+										["id"] = 214831,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[186403] = {
-										["uptime"] = 17,
+									[81340] = {
+										["uptime"] = 1,
 										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
+										["id"] = 81340,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[183436] = {
-										["uptime"] = 16,
-										["activedamt"] = 1,
-										["id"] = 183436,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 70,
-							["grupo"] = true,
-							["boss_fight_component"] = true,
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[642] = {
-										["id"] = 642,
-										["targets"] = {
-											["Thonie-Silvermoon"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["buff_uptime"] = 104,
-							["last_event"] = 1498422364,
-							["serial"] = "Player-3391-090660C3",
-							["nome"] = "Thonie-Silvermoon",
-						}, -- [3]
-						{
-							["flag_original"] = 1300,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 254,
-							["grupo"] = true,
-							["last_event"] = 1498422364,
-							["buff_uptime"] = 51,
-							["boss_fight_component"] = true,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[194386] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 194386,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[29235] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 29235,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186403] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[242642] = {
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["id"] = 242642,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-1082-06A7E519",
-							["nome"] = "Chaostracer-Alonsus",
-						}, -- [4]
-						{
-							["flag_original"] = 1300,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 265,
-							["grupo"] = true,
-							["last_event"] = 1498422364,
-							["buff_uptime"] = 80,
-							["boss_fight_component"] = true,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[240985] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 240985,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188031] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 188031,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[225603] = {
-										["uptime"] = 12,
-										["activedamt"] = 1,
-										["id"] = 225603,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186403] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-3391-08AF1B6E",
-							["nome"] = "Pastorlul-Silvermoon",
-						}, -- [5]
-						{
-							["flag_original"] = 1300,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 71,
-							["grupo"] = true,
-							["last_event"] = 1498422364,
-							["buff_uptime"] = 68,
-							["boss_fight_component"] = true,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[186403] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[57820] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 57820,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-3391-076F7A22",
-							["nome"] = "Stigtøfting-Silvermoon",
-						}, -- [6]
-						{
-							["flag_original"] = 1300,
-							["cooldowns_defensive"] = 2.002486,
-							["pets"] = {
-							},
-							["last_cooldown"] = {
-								1498422751.825, -- [1]
-								22812, -- [2]
-							},
-							["classe"] = "DRUID",
-							["cooldowns_defensive_targets"] = {
-								["Ssyfantasies-Silvermoon"] = 2,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[5487] = {
-										["uptime"] = 12,
-										["activedamt"] = 1,
-										["id"] = 5487,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186403] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[97341] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 97341,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 104,
-							["grupo"] = true,
-							["buff_uptime"] = 80,
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[61336] = {
-										["id"] = 61336,
-										["targets"] = {
-											["Ssyfantasies-Silvermoon"] = 1,
-										},
-										["counter"] = 1,
-									},
-									[22812] = {
-										["id"] = 22812,
-										["targets"] = {
-											["Ssyfantasies-Silvermoon"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["tipo"] = 4,
-							["boss_fight_component"] = true,
-							["nome"] = "Ssyfantasies-Silvermoon",
-							["serial"] = "Player-3391-089A1255",
-							["last_event"] = 1498422751,
-						}, -- [7]
-						{
-							["flag_original"] = 1300,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 264,
-							["grupo"] = true,
-							["last_event"] = 1498422364,
-							["buff_uptime"] = 103,
-							["boss_fight_component"] = true,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[207472] = {
+									[190909] = {
 										["uptime"] = 8,
 										["activedamt"] = 1,
-										["id"] = 207472,
-										["actived"] = false,
+										["id"] = 190909,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[186403] = {
-										["uptime"] = 17,
+									[51460] = {
+										["uptime"] = 3,
 										["activedamt"] = 1,
-										["id"] = 186403,
+										["id"] = 51460,
+										["targets"] = {
+										},
 										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188031] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 188031,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[240985] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 240985,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[225749] = {
-										["uptime"] = 4,
-										["activedamt"] = 1,
-										["id"] = 225749,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[225753] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 225753,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[73920] = {
-										["actived_at"] = 1498422347,
-										["uptime"] = 0,
-										["actived"] = true,
-										["id"] = 73920,
-										["activedamt"] = 1,
-										["targets"] = {
-										},
 										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["serial"] = "Player-3391-0679A1A4",
-							["nome"] = "Sizmofyt-Silvermoon",
-						}, -- [8]
-						{
-							["flag_original"] = 1300,
-							["ress_targets"] = {
-								["Spartán-Silvermoon"] = 1,
-							},
-							["buff_uptime"] = 68,
-							["classe"] = "MONK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[229385] = {
-										["actived_at"] = 1498422347,
-										["uptime"] = 0,
-										["actived"] = true,
-										["id"] = 229385,
-										["activedamt"] = 1,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188031] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 188031,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[186403] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["ress"] = 1.007259,
+							["fight_component"] = true,
+							["debuff_uptime"] = 41,
 							["buff_uptime_targets"] = {
 							},
-							["spec"] = 270,
+							["spec"] = 252,
 							["grupo"] = true,
-							["nome"] = "Tinfoilhats-Silvermoon",
-							["ress_spells"] = {
-								["_ActorTable"] = {
-									[212051] = {
-										["id"] = 212051,
-										["ress"] = 1,
-										["targets"] = {
-											["Spartán-Silvermoon"] = 1,
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
+							["spell_cast"] = {
+								[77575] = 3,
+								[188290] = 1,
+								[43265] = 1,
+								[207311] = 1,
+								[85948] = 1,
+								[47541] = 3,
+								[49998] = 2,
 							},
-							["last_event"] = 1498423935,
+							["last_event"] = 1500924114,
 							["tipo"] = 4,
+							["nome"] = "Gravutdelare-Sylvanas",
 							["pets"] = {
 							},
-							["serial"] = "Player-3391-078A7289",
-							["boss_fight_component"] = true,
-						}, -- [9]
+							["serial"] = "Player-3687-05F18847",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
 						{
-							["flag_original"] = 1300,
+							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[225080] = {
-										["uptime"] = 16,
-										["activedamt"] = 1,
-										["id"] = 225080,
-										["actived"] = false,
+									[188389] = {
+										["uptime"] = 8,
+										["activedamt"] = 0,
+										["id"] = 188389,
 										["targets"] = {
 										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[197209] = {
+										["uptime"] = 2,
+										["activedamt"] = 0,
+										["id"] = 197209,
+										["targets"] = {
+										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 68,
+							["pets"] = {
+								"Stormcaller Mylra <Zuriz>", -- [1]
+							},
 							["classe"] = "SHAMAN",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[186403] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["actived"] = false,
+									[16246] = {
+										["uptime"] = 14,
+										["activedamt"] = 2,
+										["id"] = 16246,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[237825] = {
-										["uptime"] = 17,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["actived"] = false,
+									[72286] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 72286,
 										["targets"] = {
 										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[186401] = {
+										["uptime"] = 18,
+										["activedamt"] = 1,
+										["id"] = 186401,
+										["targets"] = {
+										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[227723] = {
-										["uptime"] = 17,
+										["uptime"] = 18,
 										["activedamt"] = 1,
 										["id"] = 227723,
-										["actived"] = false,
 										["targets"] = {
 										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									[188031] = {
-										["uptime"] = 17,
+									[237825] = {
+										["uptime"] = 18,
 										["activedamt"] = 1,
-										["id"] = 188031,
-										["actived"] = false,
+										["id"] = 237825,
 										["targets"] = {
 										},
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[118522] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 118522,
+										["targets"] = {
+										},
+										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 16,
+							["debuff_uptime"] = 10,
+							["nome"] = "Zuriz",
+							["spec"] = 262,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[188389] = 2,
+								[51505] = 1,
+								[117014] = 1,
+								[188443] = 2,
+							},
 							["debuff_uptime_targets"] = {
 							},
-							["spec"] = 264,
-							["grupo"] = true,
-							["nome"] = "Zuriz",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
+							["last_event"] = 1500924114,
 							["buff_uptime_targets"] = {
 							},
-							["pets"] = {
-							},
+							["buff_uptime"] = 78,
 							["serial"] = "Player-1303-0478DE10",
-							["last_event"] = 1498422364,
-						}, -- [10]
-						{
-							["flag_original"] = 2632,
 							["tipo"] = 4,
-							["nome"] = "Kil'jaeden",
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Zuriz",
+							["nome"] = "Stormcaller Mylra <Zuriz>",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								[240910] = 1,
-								[236710] = 1,
-							},
+							["tipo"] = 4,
 							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-3769-1676-15748-117269-00005018C7",
-							["classe"] = "UNKNOW",
-						}, -- [11]
-						{
-							["flag_original"] = 2632,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
+							["spell_cast"] = {
+								[227424] = 1,
+								[227432] = 1,
 							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 3,
-							["spellschool"] = 4,
-							["debuff_uptime_targets"] = {
-								["Pastorlul-Silvermoon"] = {
-									["activedamt"] = 0,
-									["uptime"] = 1,
-									["actived"] = false,
-								},
-								["Thonie-Silvermoon"] = {
-									["activedamt"] = 0,
-									["uptime"] = 0,
-									["actived"] = false,
-								},
-								["Tinfoilhats-Silvermoon"] = {
-									["activedamt"] = 0,
-									["uptime"] = 1,
-									["actived"] = false,
-								},
-								["Enígma-Neptulon"] = {
-									["activedamt"] = 0,
-									["uptime"] = 0,
-									["actived"] = false,
-								},
-								["Ssyfantasies-Silvermoon"] = {
-									["activedamt"] = 0,
-									["uptime"] = 1,
-									["actived"] = false,
-								},
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Armageddon Blast",
-							["tipo"] = 4,
-							["damage_twin"] = "Kil'jaeden",
-							["damage_spellid"] = 240908,
-							["serial"] = "Creature-0-3769-1676-15748-117269-00005018C7",
-							["last_event"] = 1498422359,
-						}, -- [12]
-						{
-							["flag_original"] = 2632,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 2,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Thonie-Silvermoon"] = {
-									["activedamt"] = 0,
-									["uptime"] = 2,
-									["actived"] = false,
-								},
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Shadow Reflection: Erupting",
-							["tipo"] = 4,
-							["damage_twin"] = "Kil'jaeden",
-							["damage_spellid"] = 236710,
-							["serial"] = "Creature-0-3769-1676-15748-117269-00005018C7",
-							["last_event"] = 1498422363,
-						}, -- [13]
+							["serial"] = "Creature-0-3773-1220-13223-109577-000076484F",
+							["classe"] = "PET",
+						}, -- [3]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 1112,
+					["combatId"] = 44,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Pastorlul-Silvermoon"] = true,
-					["Sizmofyt-Silvermoon"] = true,
-					["Chaostracer-Alonsus"] = true,
-					["Nokkero-Ravencrest"] = true,
-					["Ssyfantasies-Silvermoon"] = true,
-					["Stigtøfting-Silvermoon"] = true,
+					["Pijiu-Silvermoon"] = true,
+					["Gravutdelare-Sylvanas"] = true,
 					["Zuriz"] = true,
-					["Thonie-Silvermoon"] = true,
-					["Tinfoilhats-Silvermoon"] = true,
-					["Audaxus-Silvermoon"] = true,
-					["Enígma-Neptulon"] = true,
+					["Unknown"] = true,
+					["Renatè-Aman'thul"] = true,
 				},
+				["overall_added"] = true,
 				["last_events_tables"] = {
-					{
-						{
-							{
-								true, -- [1]
-								1, -- [2]
-								6054032, -- [3]
-								1498422347.524, -- [4]
-								4304940, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								1749092, -- [10]
-							}, -- [1]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Chaostracer-Alonsus", -- [6]
-							}, -- [2]
-						}, -- [1]
-						1498422347.524, -- [2]
-						"Chaostracer-Alonsus", -- [3]
-						"HUNTER", -- [4]
-						4304940, -- [5]
-						"0m 0s", -- [6]
-						["dead_at"] = 0,
-						["dead"] = true,
-					}, -- [1]
-					{
-						{
-							{
-								false, -- [1]
-								73921, -- [2]
-								80178, -- [3]
-								1498422348.661, -- [4]
-								4196640, -- [5]
-								"Sizmofyt-Silvermoon", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [1]
-							{
-								true, -- [1]
-								1, -- [2]
-								5264210, -- [3]
-								1498422349.427, -- [4]
-								4196640, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								1067570, -- [10]
-							}, -- [2]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Zuriz", -- [6]
-							}, -- [3]
-						}, -- [1]
-						1498422349.427, -- [2]
-						"Zuriz", -- [3]
-						"SHAMAN", -- [4]
-						4196640, -- [5]
-						"0m 1s", -- [6]
-						["dead_at"] = 1.90300000004936,
-						["dead"] = true,
-					}, -- [2]
-					{
-						{
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Sizmofyt-Silvermoon", -- [6]
-							}, -- [1]
-						}, -- [1]
-						1498422355.497, -- [2]
-						"Sizmofyt-Silvermoon", -- [3]
-						"SHAMAN", -- [4]
-						4050960, -- [5]
-						"0m 7s", -- [6]
-						["dead_at"] = 7.97299999999814,
-						["dead"] = true,
-					}, -- [3]
-					{
-						{
-							{
-								false, -- [1]
-								73921, -- [2]
-								40089, -- [3]
-								1498422348.661, -- [4]
-								3795000, -- [5]
-								"Sizmofyt-Silvermoon", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [1]
-							{
-								true, -- [1]
-								1, -- [2]
-								6247363, -- [3]
-								1498422357.694, -- [4]
-								3795000, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								2452363, -- [10]
-							}, -- [2]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Stigtøfting-Silvermoon", -- [6]
-							}, -- [3]
-						}, -- [1]
-						1498422357.694, -- [2]
-						"Stigtøfting-Silvermoon", -- [3]
-						"WARRIOR", -- [4]
-						3795000, -- [5]
-						"0m 10s", -- [6]
-						["dead_at"] = 10.1700000000419,
-						["dead"] = true,
-					}, -- [4]
-					{
-						{
-							{
-								false, -- [1]
-								235313, -- [2]
-								379459, -- [3]
-								1498422359.455, -- [4]
-								4183380, -- [5]
-								"Enígma-Neptulon", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [1]
-							{
-								true, -- [1]
-								240908, -- [2]
-								2327823, -- [3]
-								1498422359.455, -- [4]
-								2235016, -- [5]
-								"Kil'jaeden", -- [6]
-								379459, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								false, -- [1]
-								86949, -- [2]
-								1556990, -- [3]
-								1498422359.753, -- [4]
-								2235016, -- [5]
-								"Enígma-Neptulon", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [3]
-							{
-								true, -- [1]
-								240908, -- [2]
-								2327823, -- [3]
-								1498422359.753, -- [4]
-								1464183, -- [5]
-								"Kil'jaeden", -- [6]
-								1556990, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [4]
-							{
-								true, -- [1]
-								240908, -- [2]
-								2327823, -- [3]
-								1498422359.753, -- [4]
-								1, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								863640, -- [10]
-							}, -- [5]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Enígma-Neptulon", -- [6]
-							}, -- [6]
-						}, -- [1]
-						1498422359.787, -- [2]
-						"Enígma-Neptulon", -- [3]
-						"MAGE", -- [4]
-						4183380, -- [5]
-						"0m 12s", -- [6]
-						["dead_at"] = 12.2630000000354,
-						["dead"] = true,
-					}, -- [5]
-					{
-						{
-							{
-								true, -- [1]
-								240908, -- [2]
-								2154839, -- [3]
-								1498422359.455, -- [4]
-								2258101, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								true, -- [1]
-								240908, -- [2]
-								2154840, -- [3]
-								1498422359.753, -- [4]
-								103261, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								true, -- [1]
-								240908, -- [2]
-								2154839, -- [3]
-								1498422359.753, -- [4]
-								1, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								2051578, -- [10]
-							}, -- [3]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Pastorlul-Silvermoon", -- [6]
-							}, -- [4]
-						}, -- [1]
-						1498422359.787, -- [2]
-						"Pastorlul-Silvermoon", -- [3]
-						"WARLOCK", -- [4]
-						4412940, -- [5]
-						"0m 12s", -- [6]
-						["dead_at"] = 12.2630000000354,
-						["dead"] = true,
-					}, -- [6]
-					{
-						{
-							{
-								false, -- [1]
-								203953, -- [2]
-								9281, -- [3]
-								1498422359.455, -- [4]
-								9455392, -- [5]
-								"Ssyfantasies-Silvermoon", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [1]
-							{
-								true, -- [1]
-								240908, -- [2]
-								1974690, -- [3]
-								1498422359.455, -- [4]
-								7489983, -- [5]
-								"Kil'jaeden", -- [6]
-								9281, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								false, -- [1]
-								203953, -- [2]
-								9281, -- [3]
-								1498422359.753, -- [4]
-								7489983, -- [5]
-								"Ssyfantasies-Silvermoon", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [3]
-							{
-								true, -- [1]
-								240908, -- [2]
-								1974689, -- [3]
-								1498422359.753, -- [4]
-								5524575, -- [5]
-								"Kil'jaeden", -- [6]
-								9281, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [4]
-							{
-								false, -- [1]
-								203953, -- [2]
-								9281, -- [3]
-								1498422359.753, -- [4]
-								5524575, -- [5]
-								"Ssyfantasies-Silvermoon", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [5]
-							{
-								true, -- [1]
-								240908, -- [2]
-								1974689, -- [3]
-								1498422359.753, -- [4]
-								3559167, -- [5]
-								"Kil'jaeden", -- [6]
-								9281, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [6]
-							{
-								false, -- [1]
-								203953, -- [2]
-								9281, -- [3]
-								1498422359.753, -- [4]
-								3559167, -- [5]
-								"Ssyfantasies-Silvermoon", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [7]
-							{
-								true, -- [1]
-								240908, -- [2]
-								1974690, -- [3]
-								1498422359.753, -- [4]
-								1593758, -- [5]
-								"Kil'jaeden", -- [6]
-								9281, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [8]
-							{
-								false, -- [1]
-								203953, -- [2]
-								9281, -- [3]
-								1498422359.753, -- [4]
-								1593758, -- [5]
-								"Ssyfantasies-Silvermoon", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [9]
-							{
-								true, -- [1]
-								240908, -- [2]
-								1974690, -- [3]
-								1498422359.753, -- [4]
-								1, -- [5]
-								"Kil'jaeden", -- [6]
-								9281, -- [7]
-								4, -- [8]
-								false, -- [9]
-								371651, -- [10]
-							}, -- [10]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Ssyfantasies-Silvermoon", -- [6]
-							}, -- [11]
-						}, -- [1]
-						1498422359.787, -- [2]
-						"Ssyfantasies-Silvermoon", -- [3]
-						"DRUID", -- [4]
-						5809731, -- [5]
-						"0m 12s", -- [6]
-						["dead_at"] = 12.2630000000354,
-						["dead"] = true,
-					}, -- [7]
-					{
-						{
-							{
-								true, -- [1]
-								240908, -- [2]
-								2069330, -- [3]
-								1498422359.455, -- [4]
-								2056750, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								true, -- [1]
-								240908, -- [2]
-								2069331, -- [3]
-								1498422359.753, -- [4]
-								1, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								12581, -- [10]
-							}, -- [2]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Tinfoilhats-Silvermoon", -- [6]
-							}, -- [3]
-						}, -- [1]
-						1498422359.787, -- [2]
-						"Tinfoilhats-Silvermoon", -- [3]
-						"MONK", -- [4]
-						4126080, -- [5]
-						"0m 12s", -- [6]
-						["dead_at"] = 12.2630000000354,
-						["dead"] = true,
-					}, -- [8]
-					{
-						{
-							{
-								false, -- [1]
-								73921, -- [2]
-								40089, -- [3]
-								1498422348.661, -- [4]
-								3990000, -- [5]
-								"Sizmofyt-Silvermoon", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [1]
-							{
-								true, -- [1]
-								240908, -- [2]
-								1435532, -- [3]
-								1498422359.455, -- [4]
-								2554468, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								true, -- [1]
-								240908, -- [2]
-								1435531, -- [3]
-								1498422359.753, -- [4]
-								1118937, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [3]
-							{
-								1, -- [1]
-								642, -- [2]
-								1, -- [3]
-								1498422359.753, -- [4]
-								1118937, -- [5]
-								"Thonie-Silvermoon", -- [6]
-							}, -- [4]
-							{
-								false, -- [1]
-								213313, -- [2]
-								1435531, -- [3]
-								1498422359.753, -- [4]
-								1118937, -- [5]
-								"Thonie-Silvermoon", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [5]
-							{
-								true, -- [1]
-								240908, -- [2]
-								1435531, -- [3]
-								1498422359.753, -- [4]
-								1118937, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								4, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [6]
-							{
-								true, -- [1]
-								1, -- [2]
-								3911784, -- [3]
-								1498422364.068, -- [4]
-								1118937, -- [5]
-								"Kil'jaeden", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								2792847, -- [10]
-							}, -- [7]
-							{
-								3, -- [1]
-								642, -- [2]
-								1, -- [3]
-								1498422359.753, -- [4]
-								0, -- [5]
-								"Thonie-Silvermoon", -- [6]
-							}, -- [8]
-						}, -- [1]
-						1498422364.068, -- [2]
-						"Thonie-Silvermoon", -- [3]
-						"PALADIN", -- [4]
-						3990000, -- [5]
-						"0m 16s", -- [6]
-						["last_cooldown"] = {
-							1498422359.753, -- [1]
-							642, -- [2]
-						},
-						["dead_at"] = 16.5439999999944,
-						["dead"] = true,
-					}, -- [9]
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Kil'jaeden",
-				["combat_counter"] = 14634,
+				["enemy"] = "Devoted Occultist",
+				["combat_counter"] = 15025,
 				["totals"] = {
-					68538041, -- [1]
-					3418385, -- [2]
+					11936993.916496, -- [1]
+					767946, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
-						["ress"] = 1,
-						["cooldowns_defensive"] = 3,
-						["dispell"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 9,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = -0.00432200000000016,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
-					["Ssyfantasies-Silvermoon"] = {
+					["Gravutdelare-Sylvanas"] = {
 						{
-							1, -- [1]
-							61336, -- [2]
-							1, -- [3]
-							1498422750.659, -- [4]
-							9455392, -- [5]
-							"Ssyfantasies-Silvermoon", -- [6]
+							true, -- [1]
+							37628, -- [2]
+							6318, -- [3]
+							1500924115.092, -- [4]
+							3626622, -- [5]
+							"Devoted Occultist", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
 						}, -- [1]
 						{
-							1, -- [1]
-							22812, -- [2]
-							1, -- [3]
-							1498422751.825, -- [4]
-							9455392, -- [5]
-							"Ssyfantasies-Silvermoon", -- [6]
+							true, -- [1]
+							37628, -- [2]
+							6318, -- [3]
+							1500924119.82, -- [4]
+							0, -- [5]
+							"Devoted Occultist", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
 						}, -- [2]
 						{
 						}, -- [3]
@@ -2750,98 +1283,68 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Gravutdelare-Sylvanas"] = 8737045.006878,
+							["Zuriz"] = 3199949.00208,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Enígma-Neptulon"] = 1936449.00498,
-							["Sizmofyt-Silvermoon"] = 0.002516,
-							["Zuriz"] = 0.004128,
-							["Thonie-Silvermoon"] = 1435531.005687,
-							["Stigtøfting-Silvermoon"] = 0.001712,
-							["Ssyfantasies-Silvermoon"] = 46405.002667,
+							["Gravutdelare-Sylvanas"] = 767946.004645,
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Pastorlul-Silvermoon"] = 0.003795,
-							["Enígma-Neptulon"] = 3268.002623,
-							["Chaostracer-Alonsus"] = 43239.004061,
-							["Zuriz"] = 0.006388,
-							["Thonie-Silvermoon"] = 0.002835,
-							["Tinfoilhats-Silvermoon"] = 0.005114,
-							["Stigtøfting-Silvermoon"] = 0.001831,
-							["Ssyfantasies-Silvermoon"] = 77413.00416,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-				["end_time"] = 922180.097,
-				["contra"] = "Kil'jaeden",
-				["combat_id"] = 1112,
-				["instance_type"] = "raid",
+				["end_time"] = 15435.009,
+				["TimeData"] = {
+				},
+				["instance_type"] = "none",
+				["combat_id"] = 44,
 				["hasSaved"] = true,
 				["frags"] = {
-					["Rangelycan-Ravencrest"] = 1,
+					["Devoted Occultist"] = 6,
+					["Fel Beast"] = 1,
 				},
-				["data_fim"] = "22:26:04",
-				["data_inicio"] = "22:25:47",
+				["data_fim"] = "21:21:55",
+				["data_inicio"] = "21:21:37",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					123920, -- [1]
-					3418385, -- [2]
+					11246374, -- [1]
+					767946, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
-						["ress"] = 1,
-						["cooldowns_defensive"] = 3,
-						["dispell"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 9,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 922163.09,
-				["TimeData"] = {
-				},
-				["is_boss"] = {
-					["diff_string"] = "Heroic",
-					["index"] = 9,
-					["zone"] = "Tomb of Sargeras",
-					["encounter"] = "Kil'jaeden",
-					["mapid"] = 1676,
-					["try_number"] = 17,
-					["name"] = "Kil'jaeden",
-					["id"] = 2051,
-					["ej_instance_id"] = 875,
-					["diff"] = 15,
-				},
+				["start_time"] = 15417.005,
+				["contra"] = "Fel Beast",
+				["is_temporary"] = true,
 			}, -- [1]
 		},
 	},
 	["ignore_nicktag"] = false,
-	["cached_talents"] = {
-		["Player-1303-0478DE10"] = {
-			19264, -- [1]
-			22492, -- [2]
-			21675, -- [3]
-			19275, -- [4]
-			19269, -- [5]
-			22322, -- [6]
-			21971, -- [7]
-		},
+	["last_version"] = "v7.2.5.4236",
+	["savedbuffs"] = {
 	},
-	["last_day"] = "26",
-	["last_version"] = "v7.2.5.4132",
+	["combat_counter"] = 15028,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -2849,10 +1352,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
 			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -2861,11 +1364,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["hide_on_combat"] = false,
 			["opened"] = 0,
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 			["show_icon"] = 5,
 			["encounter_timers_dbm"] = {
 			},
-			["author"] = "Details! Team",
+			["window_scale"] = 1,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -2892,11 +1395,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["scale"] = 1,
-			["row_height"] = 20,
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["point"] = "TOP",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -2904,9 +1407,14 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["y"] = -41.5555419921875,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
@@ -2917,27 +1425,22 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["size"] = 32,
-				["update_speed"] = 0.0160000007599592,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.0160000007599592,
+				["size"] = 32,
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
-			["author"] = "Details! Team",
-			["main_frame_locked"] = false,
-			["arrow_anchor_y"] = 0,
+			["y"] = -41.5555419921875,
+			["point"] = "TOP",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["auto_open"] = true,
 			["rightclick_closed"] = false,
+			["auto_open"] = true,
 			["auto_close"] = true,
-			["author"] = "Details! Team",
 			["hide_on_combat"] = true,
+			["author"] = "Details! Team",
 			["deaths_table"] = {
 				{
 					"Blast Furnace", -- [1]
@@ -3950,43 +2453,28 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 			["realm_history"] = {
 			},
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
 		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["enabled"] = true,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["author"] = "Details! Team",
-			["useclasscolors"] = false,
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["animate"] = false,
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -3996,93 +2484,51 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["showamount"] = false,
+			["animate"] = false,
+			["useplayercolor"] = false,
+			["useclasscolors"] = false,
+			["author"] = "Details! Team",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["enabled"] = true,
+		},
+	},
+	["character_data"] = {
+		["logons"] = 1871,
 	},
 	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 1824,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1498945846,
-		[83126914] = {
-			"Gwenyver", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-Blizzard", -- [4]
-			{
-				0.068704154, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			2, -- [7]
-		},
-		[76968067] = {
-			"Mendria", -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			false, -- [5]
-			false, -- [6]
-			2, -- [7]
-		},
-		["last_version"] = 8,
-		[83337059] = {
-			"Benchclass", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Asira Dawnslayer", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			4, -- [7]
-		},
-		[103048937] = {
-			"Mandria", -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			false, -- [5]
-			false, -- [6]
-			2, -- [7]
-		},
-	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
+	["last_instance_time"] = 1500834713,
 	["tabela_instancias"] = {
 	},
-	["combat_id"] = 1112,
+	["combat_id"] = 44,
 	["savedStyles"] = {
 	},
-	["last_instance_time"] = 1498424615,
-	["savedbuffs"] = {
+	["last_encounter"] = "Kil'jaeden",
+	["cached_talents"] = {
+		["Player-1303-0478DE10"] = {
+			19264, -- [1]
+			22492, -- [2]
+			21675, -- [3]
+			19275, -- [4]
+			19269, -- [5]
+			22322, -- [6]
+			21971, -- [7]
+		},
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -4090,17 +2536,17 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_encounter"] = "Kil'jaeden",
+	["last_day"] = "27",
 	["local_instances_config"] = {
 		{
-			["segment"] = 2,
-			["sub_attribute"] = 8,
+			["segment"] = 0,
+			["sub_attribute"] = 1,
 			["horizontalSnap"] = false,
 			["verticalSnap"] = false,
 			["is_open"] = true,
 			["isLocked"] = true,
 			["sub_atributo_last"] = {
-				8, -- [1]
+				1, -- [1]
 				5, -- [2]
 				3, -- [3]
 				5, -- [4]
@@ -4145,10 +2591,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -424.356981687056,
+					["y"] = -424.356989240157,
 					["x"] = 750.194559715756,
-					["w"] = 208.361206054688,
-					["h"] = 84.4102020263672,
+					["w"] = 208.361083984375,
+					["h"] = 84.4101943969727,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -4192,17 +2638,28 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["combat_counter"] = 14636,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["nick_tag_cache"] = {
+		["last_version"] = 9,
+		[85162672] = {
+			"Vicsur", -- [1]
+			false, -- [2]
+			false, -- [3]
+			false, -- [4]
+			false, -- [5]
+			false, -- [6]
+			3, -- [7]
+		},
+		["nextreset"] = 1501145395,
 	},
 	["last_instance_id"] = 1676,
 	["cached_specs"] = {

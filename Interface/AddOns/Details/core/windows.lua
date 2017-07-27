@@ -1096,7 +1096,7 @@
 		
 			local db = _detalhes.storage:OpenRaidStorage()
 			if (not db) then
-				return _detalhes:Msg ("Fail to open 'Details Storage', maybe the addon is disabled?")
+				return _detalhes:Msg (Loc ["STRING_GUILDDAMAGERANK_DATABASEERROR"])
 			end
 		
 			local f = CreateFrame ("frame", "DetailsRaidHistoryWindow", UIParent, "ButtonFrameTemplate")
@@ -1109,7 +1109,38 @@
 			f:SetHeight (500)
 			tinsert (UISpecialFrames, "DetailsRaidHistoryWindow")
 			
-			f.Mode = 1
+			f.Mode = 2
+			
+			if (not _detalhes:GetTutorialCVar ("HISTORYPANEL_TUTORIAL")) then
+				local tutorialFrame = CreateFrame ("frame", "$parentTutorialFrame", f)
+				tutorialFrame:SetPoint ("center", f, "center")
+				tutorialFrame:SetFrameStrata ("DIALOG")
+				tutorialFrame:SetSize (400, 300)
+				tutorialFrame:SetBackdrop ({bgFile = [[Interface\AddOns\Details\images\background]], tile = true, tileSize = 16,
+				insets = {left = 0, right = 0, top = 0, bottom = 0}, edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize=1})
+				tutorialFrame:SetBackdropColor (0, 0, 0, 1)
+				
+				tutorialFrame.Title = _detalhes.gump:CreateLabel (tutorialFrame, Loc ["STRING_MODE_OPENGUILDDAMAGERANK"], 12, "orange")
+				tutorialFrame.Title:SetPoint ("top", tutorialFrame, "top", 0, -5)
+				
+				tutorialFrame.Desc = _detalhes.gump:CreateLabel (tutorialFrame, Loc ["STRING_GUILDDAMAGERANK_TUTORIAL_DESC"], 12)
+				tutorialFrame.Desc.width = 370
+				tutorialFrame.Desc:SetPoint ("topleft", tutorialFrame, "topleft", 10, -45)
+
+				--[[
+				tutorialFrame.Example:SetPoint ("topleft", tutorialFrame, "topleft", 10, -110)
+				tutorialFrame.Example = _detalhes.gump:CreateLabel (tutorialFrame, Loc ["STRING_FORGE_TUTORIAL_VIDEO"], 12)
+				
+				local editBox = _detalhes.gump:CreateTextEntry (tutorialFrame, function()end, 375, 20, nil, nil, nil, entry_template, label_template)
+				editBox:SetPoint ("topleft", tutorialFrame.Example, "bottomleft", 0, -10) 
+				editBox:SetText ()
+				editBox:SetTemplate (_detalhes.gump:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE"))
+				--]]
+				
+				local closeButton = _detalhes.gump:CreateButton (tutorialFrame, function() _detalhes:SetTutorialCVar ("HISTORYPANEL_TUTORIAL", true); tutorialFrame:Hide() end, 80, 20, Loc ["STRING_OPTIONS_CHART_CLOSE"])
+				closeButton:SetPoint ("bottom", tutorialFrame, "bottom", 0, 10)
+				closeButton:SetTemplate (_detalhes.gump:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE"))
+			end			
 			
 			--wallpaper
 			local background = f:CreateTexture (nil, "border")
@@ -1134,6 +1165,7 @@
 				f.HistoryCheckBox:SetValue (true)
 				f.Mode = 1
 				_G.DetailsRaidHistoryWindow:Refresh()
+				f.ReportButton:Hide()
 			end
 			local select_guildrank = function()
 				f.HistoryCheckBox:SetValue (false)
@@ -1143,16 +1175,17 @@
 				f.select_player2_label:Hide()
 				f.Mode = 2
 				_G.DetailsRaidHistoryWindow:Refresh()
+				f.ReportButton:Show()
 			end
 
-			local HistoryCheckBox, HistoryLabel = _detalhes.gump:CreateSwitch (f, select_history, true, 18, 18, "", "", "HistoryCheckBox", nil, nil, nil, nil, "Show History", options_switch_template) --, options_text_template
+			local HistoryCheckBox, HistoryLabel = _detalhes.gump:CreateSwitch (f, select_history, false, 18, 18, "", "", "HistoryCheckBox", nil, nil, nil, nil, Loc ["STRING_GUILDDAMAGERANK_SHOWHISTORY"], options_switch_template) --, options_text_template
 			HistoryLabel:ClearAllPoints()
 			HistoryCheckBox:ClearAllPoints()
 			HistoryCheckBox:SetPoint ("topleft", f, "topleft", 100, -34)
 			HistoryLabel:SetPoint ("left", HistoryCheckBox, "right", 2, 0)
 			HistoryCheckBox:SetAsCheckBox()
 			
-			local GuildRankCheckBox, GuildRankLabel = _detalhes.gump:CreateSwitch (f, select_guildrank, false, 18, 18, "", "", "GuildRankCheckBox", nil, nil, nil, nil, "Show Guild Rank", options_switch_template) --, options_text_template
+			local GuildRankCheckBox, GuildRankLabel = _detalhes.gump:CreateSwitch (f, select_guildrank, true, 18, 18, "", "", "GuildRankCheckBox", nil, nil, nil, nil, Loc ["STRING_GUILDDAMAGERANK_SHOWRANK"], options_switch_template) --, options_text_template
 			GuildRankLabel:ClearAllPoints()
 			GuildRankCheckBox:ClearAllPoints()
 			GuildRankCheckBox:SetPoint ("topleft", f, "topleft", 240, -34)
@@ -1213,10 +1246,38 @@
 				
 			end
 			
-			local GuildSyncButton = _detalhes.gump:CreateButton (f, guild_sync, 130, 20, "Sync With Guild", nil, nil, nil, "GuildSyncButton", nil, nil, options_button_template, options_text_template)
+			local GuildSyncButton = _detalhes.gump:CreateButton (f, guild_sync, 130, 20, Loc ["STRING_GUILDDAMAGERANK_SYNCBUTTONTEXT"], nil, nil, nil, "GuildSyncButton", nil, nil, options_button_template, options_text_template)
 			GuildSyncButton:SetPoint ("topright", f, "topright", -20, -34)
 			GuildSyncButton:SetIcon ([[Interface\GLUES\CharacterSelect\RestoreButton]], 12, 12, "overlay", {0.2, .8, 0.2, .8}, nil, 4)
 			
+			
+			function f.BuildReport()
+				if (f.LatestResourceTable) then
+					local reportFunc = function (IsCurrent, IsReverse, AmtLines)
+						local result = {}
+						
+						local bossName = f.select_boss.label:GetText()
+						
+						tinsert (result, "Details!: Damage Rank for: " .. (bossName or "--x--x--"))
+						for i = 1, AmtLines do
+							if (f.LatestResourceTable[i]) then
+								tinsert (result, f.LatestResourceTable[i][1] .. ": " .. f.LatestResourceTable[i][2])
+							else
+								break
+							end
+						end
+					
+						Details:SendReportLines (result)
+					end
+					
+					Details:SendReportWindow (reportFunc, nil, nil, true)
+				end
+			end
+			
+			local ReportButton = _detalhes.gump:CreateButton (f, f.BuildReport, 130, 20, Loc ["STRING_OPTIONS_REPORT_ANCHOR"]:gsub (":", ""), nil, nil, nil, "ReportButton", nil, nil, options_button_template, options_text_template)
+			ReportButton:SetPoint ("right", GuildSyncButton, "left", -2, 0)
+			ReportButton:SetIcon ([[Interface\GLUES\CharacterSelect\RestoreButton]], 12, 12, "overlay", {0.2, .8, 0.2, .8}, nil, 4)			
+
 			--
 			function f:SetBackgroundImage (encounterId)
 				local instanceId = _detalhes:GetInstanceIdFromEncounterId (encounterId)
@@ -1246,8 +1307,10 @@
 			end)
 			
 			f.TitleText:SetText ("Details! Raid Ranking")
-			f.portrait:SetTexture ([[Interface\AddOns\Details\images\icons2]])
-			f.portrait:SetTexCoord (192/512, 258/512, 322/512, 388/512)
+			--f.portrait:SetTexture ([[Interface\AddOns\Details\images\icons2]])
+			f.portrait:SetTexture ([[Interface\PVPFrame\PvPPrestigeIcons]])
+			f.portrait:SetTexCoord (270/1024, 384/1024, 128/512, 256/512)
+			--f.portrait:SetTexCoord (192/512, 258/512, 322/512, 388/512)
 			
 			local dropdown_size = 160
 			local icon = [[Interface\FriendsFrame\battlenet-status-offline]]
@@ -1275,7 +1338,7 @@
 				return raid_list
 			end
 			local raid_dropdown = gump:CreateDropDown (f, build_raid_list, 1, dropdown_size, 20, "select_raid")
-			local raid_string = gump:CreateLabel (f, "Raid:", _, _, "GameFontNormal", "select_raid_label")
+			local raid_string = gump:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_RAID"] .. ":", _, _, "GameFontNormal", "select_raid_label")
 			
 			--> select boss:
 			local on_boss_select = function (_, _, boss)
@@ -1285,7 +1348,7 @@
 				return boss_list
 			end
 			local boss_dropdown = gump:CreateDropDown (f, build_boss_list, 1, dropdown_size, 20, "select_boss")
-			local boss_string = gump:CreateLabel (f, "Boss:", _, _, "GameFontNormal", "select_boss_label")
+			local boss_string = gump:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_BOSS"] .. ":", _, _, "GameFontNormal", "select_boss_label")
 
 			--> select difficulty:
 			local on_diff_select = function (_, _, diff)
@@ -1296,7 +1359,7 @@
 				return diff_list
 			end
 			local diff_dropdown = gump:CreateDropDown (f, build_diff_list, 1, dropdown_size, 20, "select_diff")
-			local diff_string = gump:CreateLabel (f, "Difficulty:", _, _, "GameFontNormal", "select_diff_label")
+			local diff_string = gump:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_DIFF"] .. ":", _, _, "GameFontNormal", "select_diff_label")
 			
 			--> select role:
 			local on_role_select = function (_, _, role)
@@ -1309,7 +1372,7 @@
 				}
 			end
 			local role_dropdown = gump:CreateDropDown (f, build_role_list, 1, dropdown_size, 20, "select_role")
-			local role_string = gump:CreateLabel (f, "Role:", _, _, "GameFontNormal", "select_role_label")
+			local role_string = gump:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_ROLE"] .. ":", _, _, "GameFontNormal", "select_role_label")
 			
 			--> select guild:
 			local on_guild_select = function (_, _, guild)
@@ -1319,7 +1382,7 @@
 				return guild_list
 			end
 			local guild_dropdown = gump:CreateDropDown (f, build_guild_list, 1, dropdown_size, 20, "select_guild")
-			local guild_string = gump:CreateLabel (f, "Guild:", _, _, "GameFontNormal", "select_guild_label")
+			local guild_string = gump:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_GUILD"] .. ":", _, _, "GameFontNormal", "select_guild_label")
 
 			--> select playerbase:
 			local on_player_select = function (_, _, player)
@@ -1327,12 +1390,12 @@
 			end
 			local build_player_list = function()
 				return {
-					{value = 1, label = "Raid", icon = icon, onclick = on_player_select},
-					{value = 2, label = "Individual", icon = icon, onclick = on_player_select},
+					{value = 1, label = Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_RAID"], icon = icon, onclick = on_player_select},
+					{value = 2, label = Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_INDIVIDUAL"], icon = icon, onclick = on_player_select},
 				}
 			end
 			local player_dropdown = gump:CreateDropDown (f, build_player_list, 1, dropdown_size, 20, "select_player")
-			local player_string = gump:CreateLabel (f, "Player Base:", _, _, "GameFontNormal", "select_player_label")
+			local player_string = gump:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE"] .. ":", _, _, "GameFontNormal", "select_player_label")
 
 			--> select player:
 			local on_player2_select = function (_, _, player)
@@ -1362,7 +1425,7 @@
 				return t
 			end
 			local player2_dropdown = gump:CreateDropDown (f, build_player2_list, 1, dropdown_size, 20, "select_player2")
-			local player2_string = gump:CreateLabel (f, "Player:", _, _, "GameFontNormal", "select_player2_label")
+			local player2_string = gump:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_PLAYER"] .. ":", _, _, "GameFontNormal", "select_player2_label")
 
 			function f:UpdateDropdowns (DoNotSelectRaid)
 				
@@ -1382,11 +1445,28 @@
 				
 					if (type (difficulty) == "number") then
 						if (difficulty == 14) then
-							tinsert (diff_list, {value = 14, label = "Normal", icon = icon, onclick = on_diff_select})
+							--tinsert (diff_list, {value = 14, label = "Normal", icon = icon, onclick = on_diff_select})
+							--print ("has normal encounter")
 						elseif (difficulty == 15) then
-							tinsert (diff_list, {value = 15, label = "Heroic", icon = icon, onclick = on_diff_select})
+							local alreadyHave = false
+							for i, t in ipairs (diff_list) do
+								if (t.label == "Heroic") then
+									alreadyHave = true
+								end
+							end
+							if (not alreadyHave) then
+								tinsert (diff_list, 1, {value = 15, label = "Heroic", icon = icon, onclick = on_diff_select})
+							end
 						elseif (difficulty == 16) then
-							tinsert (diff_list, {value = 16, label = "Mythic", icon = icon, onclick = on_diff_select})
+							local alreadyHave = false
+							for i, t in ipairs (diff_list) do
+								if (t.label == "Mythic") then
+									alreadyHave = true
+								end
+							end
+							if (not alreadyHave) then
+								tinsert (diff_list, {value = 16, label = "Mythic", icon = icon, onclick = on_diff_select})
+							end
 						end
 
 						for encounterId, encounterTable in pairs (encounterIdTable) do 
@@ -1419,6 +1499,9 @@
 					end
 				end
 				
+				table.sort (boss_list, function (t1, t2) return t1.label < t2.label end)
+				
+				
 				diff_dropdown:Refresh()
 				diff_dropdown:Select (1, true)
 				boss_dropdown:Refresh()
@@ -1441,11 +1524,28 @@
 				for difficulty, encounterIdTable in pairs (db) do
 					if (type (difficulty) == "number") then
 						if (difficulty == 14) then
-							tinsert (diff_list, {value = 14, label = "Normal", icon = icon, onclick = on_diff_select})
+							--tinsert (diff_list, {value = 14, label = "Normal", icon = icon, onclick = on_diff_select})
+							--print ("has normal encounter")
 						elseif (difficulty == 15) then
-							tinsert (diff_list, {value = 15, label = "Heroic", icon = icon, onclick = on_diff_select})
+							local alreadyHave = false
+							for i, t in ipairs (diff_list) do
+								if (t.label == "Heroic") then
+									alreadyHave = true
+								end
+							end
+							if (not alreadyHave) then
+								tinsert (diff_list, 1, {value = 15, label = "Heroic", icon = icon, onclick = on_diff_select})
+							end
 						elseif (difficulty == 16) then
-							tinsert (diff_list, {value = 16, label = "Mythic", icon = icon, onclick = on_diff_select})
+							local alreadyHave = false
+							for i, t in ipairs (diff_list) do
+								if (t.label == "Mythic") then
+									alreadyHave = true
+								end
+							end
+							if (not alreadyHave) then
+								tinsert (diff_list, {value = 16, label = "Mythic", icon = icon, onclick = on_diff_select})
+							end
 						end
 
 						for encounterId, encounterTable in pairs (encounterIdTable) do 
@@ -1463,6 +1563,7 @@
 					end
 				end
 				
+				table.sort (boss_list, function (t1, t2) return t1.label < t2.label end)
 				boss_dropdown:Refresh()
 			end
 			
@@ -1565,7 +1666,7 @@
 			
 			function f:BuildGuildRankTable (encounterTable, guild, role)
 				
-				local header = {{name = "Player Name", type = "text"}, {name = "Total", type = "text"}, {name = "Per Second", type = "text"}, {name = "Length", type = "text"}, {name = "Item Level", type = "text"}, {name = "Date", type = "text"}}
+				local header = {{name = "Player Name", type = "text"}, {name = "Per Second", type = "text"}, {name = "Total", type = "text"}, {name = "Length", type = "text"}, {name = "Item Level", type = "text"}, {name = "Date", type = "text"}}
 				local players = {}
 				local players_index = {}
 				
@@ -1594,7 +1695,10 @@
 							end
 						
 							local total = playerTable [1]
-							if (total > playerScore [playerName].total) then
+							local dps = total / encounter.elapsed
+							
+							--if (total > playerScore [playerName].total) then
+							if (dps > playerScore [playerName].ps) then
 								playerScore [playerName].total = total
 								playerScore [playerName].ps = total / encounter.elapsed
 								playerScore [playerName].ilvl = playerTable [2]
@@ -1616,20 +1720,23 @@
 				
 					tinsert (sortTable, {
 						"|c" .. classColor .. playerName .. "|r",
-						_detalhes:comma_value (t.total),
-						_detalhes:ToK2 (t.ps),
+						_detalhes:comma_value (t.ps),
+						_detalhes:ToK2 (t.total),
 						_detalhes.gump:IntegerToTimer (t.length),
 						floor (t.ilvl),
 						t.date,
 						t.total,
+						t.ps,
 					})
 				end
-				table.sort (sortTable, function(a, b) return a[7] > b[7] end)
+				table.sort (sortTable, function(a, b) return a[8] > b[8] end)
 				
 				fillpanel:SetFillFunction (function (index) return sortTable [index] end)
 				fillpanel:SetTotalFunction (function() return #sortTable end)
 				fillpanel:UpdateRows (header)
 				fillpanel:Refresh()
+				
+				f.LatestResourceTable = sortTable
 			end
 			
 			function f:BuildRaidTable (encounterTable, guild, role)
@@ -1697,10 +1804,11 @@
 				
 				fillpanel:SetFillFunction (function (index) return players [index] end)
 				fillpanel:SetTotalFunction (function() return #players end)
-
+				
 				fillpanel:UpdateRows (header)
 				
 				fillpanel:Refresh()
+				fillpanel:SetPoint ("topleft", f, "topleft", 200, -65)
 			end
 			
 			function f:Refresh (player_name)
@@ -3306,7 +3414,7 @@
 		
 			local who = actors_name [math.random (1, #actors_name)]
 		
-			local robot = current_combat[1]:PegarCombatente (0x0000000000000, who[1], 0x114, true)
+			local robot = current_combat[1]:PegarCombatente ("0x0000-0000-0000", who[1], 0x114, true)
 			robot.grupo = true
 			
 			robot.classe = who [2]
@@ -3355,7 +3463,7 @@
 			total_damage = total_damage + robot.total
 			
 			if (robot.nome == "King Djoffrey") then
-				local robot_death = current_combat[4]:PegarCombatente (0x0000000000000, robot.nome, 0x114, true)
+				local robot_death = current_combat[4]:PegarCombatente ("0x0000-0000-0000", robot.nome, 0x114, true)
 				robot_death.grupo = true
 				robot_death.classe = robot.classe
 				local esta_morte = {{true, 96648, 100000, time(), 0, "Lady Holenna"}, {true, 96648, 100000, time()-52, 100000, "Lady Holenna"}, {true, 96648, 100000, time()-86, 200000, "Lady Holenna"}, {true, 96648, 100000, time()-101, 300000, "Lady Holenna"}, {false, 55296, 400000, time()-54, 400000, "King Djoffrey"}, {true, 14185, 0, time()-59, 400000, "Lady Holenna"}, {false, 87351, 400000, time()-154, 400000, "King Djoffrey"}, {false, 56236, 400000, time()-158, 400000, "King Djoffrey"} } 
@@ -3369,7 +3477,7 @@
 			end
 			
 			local who = actors_name [math.random (1, #actors_name)]
-			local robot = current_combat[2]:PegarCombatente (0x0000000000000, who[1], 0x114, true)
+			local robot = current_combat[2]:PegarCombatente ("0x0000-0000-0000", who[1], 0x114, true)
 			robot.grupo = true
 			robot.classe = who[2]
 			

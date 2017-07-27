@@ -128,12 +128,12 @@ AdiBagsDB = {
 						[69110] = "Junk#Cata gold",
 						[77990] = "Junk#Cata gold",
 						[141852] = "Consumable#Artifact Power",
-						[71424] = "Junk#Cata gold",
-						[71408] = "Junk#Cata gold",
 						[71679] = "Junk#Cata gold",
+						[71408] = "Junk#Cata gold",
+						[71424] = "Junk#Cata gold",
 						[71440] = "Junk#Cata gold",
-						[124241] = "Equipment#Set: timewalking",
-						[141922] = "Consumable#Artifact Power",
+						[114806] = "Equipment#Followers",
+						[114822] = "Equipment#Followers",
 						[78373] = "Junk#Cata gold",
 						[78389] = "Junk#Cata gold",
 						[78405] = "Junk#Cata gold",
@@ -156,9 +156,9 @@ AdiBagsDB = {
 						[71684] = "Junk#Cata gold",
 						[143869] = "Consumable#Artifact Power",
 						[118632] = "Consumable#Raid Consumables",
-						[71617] = "Junk#Cata gold",
-						[141925] = "Consumable#Artifact Power",
 						[141702] = "Consumable#Artifact Power",
+						[141925] = "Consumable#Artifact Power",
+						[71617] = "Junk#Cata gold",
 						[78849] = "Junk#Cata gold",
 						[71455] = "Junk#Cata gold",
 						[109218] = "Consumable#Raid Consumables",
@@ -170,7 +170,7 @@ AdiBagsDB = {
 						[71777] = "Junk#Cata gold",
 						[2801] = "Trade Goods#Trade Goods",
 						[114808] = "Equipment#Followers",
-						[118474] = "Equipment#Followers",
+						[143871] = "Consumable#Artifact Power",
 						[71414] = "Junk#Cata gold",
 						[109223] = "Consumable#Raid Consumables",
 						[71998] = "Junk#Cata gold",
@@ -200,7 +200,7 @@ AdiBagsDB = {
 						[78361] = "Junk#Cata gold",
 						[141707] = "Consumable#Artifact Power",
 						[78393] = "Junk#Cata gold",
-						[143871] = "Consumable#Artifact Power",
+						[118474] = "Equipment#Followers",
 						[139508] = "Consumable#Artifact Power",
 						[118354] = "Equipment#Followers",
 						[109221] = "Consumable#Raid Consumables",
@@ -217,8 +217,8 @@ AdiBagsDB = {
 						[78851] = "Junk#Cata gold",
 						[70723] = "Junk#Cata gold",
 						[139609] = "Consumable#Artifact Power",
-						[114822] = "Equipment#Followers",
-						[114806] = "Equipment#Followers",
+						[141922] = "Consumable#Artifact Power",
+						[124241] = "Equipment#Set: timewalking",
 						[34498] = "Junk#Junk",
 						[139617] = "Consumable#Artifact Power",
 						[138786] = "Consumable#Artifact Power",
@@ -235,8 +235,6 @@ AdiBagsDB = {
 		["AdiBags_TooltipInfo"] = {
 		},
 		["MoneyFrame"] = {
-		},
-		["ItemSets"] = {
 		},
 		["CurrencyFrame"] = {
 			["profiles"] = {
@@ -268,6 +266,8 @@ AdiBagsDB = {
 			},
 		},
 		["DataSource"] = {
+		},
+		["ItemSets"] = {
 		},
 		["Junk"] = {
 			["profiles"] = {

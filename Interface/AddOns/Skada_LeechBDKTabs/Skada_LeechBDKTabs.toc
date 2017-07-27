@@ -1,0 +1,12 @@
+## Interface: 73000
+## Title: Skada BDK Leech Counter
+## Author: Izy/Teabag - Draenor
+## Version: r3
+## Notes: Adds tabs to Skada to consider DK artifact trait leech healing - Modified from LeechTrinketCounter - Original code from Gragagrogog and wtfblub
+## Dependencies: Skada
+## OptionalDeps: LibInspect
+## X-Part-Of: Skada
+
+Libs/LibStub/LibStub.lua
+Libs/LibInspect/LibInspect.lua
+Skada_LeechBDKTabs.lua

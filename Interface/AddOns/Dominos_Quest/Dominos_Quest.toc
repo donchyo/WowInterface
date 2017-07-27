@@ -1,5 +1,5 @@
-## Version: 5.4
-## Interface: 70000
+## Version: 5.4.1
+## Interface: 70200
 ## Title: Dominos_Quest
 ## Author: Goranaws
 ## OptionalDeps: Dominos, LibSharedMedia-3.0

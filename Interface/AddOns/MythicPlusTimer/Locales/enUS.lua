@@ -6,7 +6,6 @@ end
 L["ToggleCommandText"] = "Lock/Unlock timer frame"
 L["Loot"] = "Loot"
 L["NoLoot"] = "No Loot"
-L["Chests"] = "Chests"
 L["Best"] = "best"
 L["ObjectiveTimes"] = "Show Objective Times"
 L["ObjectiveTimesDesc"] = "Shows the completion time and your best time per objective."

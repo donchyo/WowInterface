@@ -13,15 +13,238 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 121,
+	["last_realversion"] = 122,
 	["tabela_historico"] = {
 		["tabelas"] = {
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 122,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.0013,
+							["damage_from"] = {
+								["Felwing Devourer"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["classe"] = "ROGUE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.0013,
+							["serial"] = "Player-1303-03FA8295",
+							["dps_started"] = false,
+							["total"] = 0.0013,
+							["spec"] = 259,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zetiz",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1500056474,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 52728.0013,
+							["start_time"] = 1500056474,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 122,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 122,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 122,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 259,
+							["grupo"] = true,
+							["last_event"] = 1500056474,
+							["pets"] = {
+							},
+							["nome"] = "Zetiz",
+							["buff_uptime"] = 6,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[1856] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[138213] = {
+										["uptime"] = 3,
+										["activedamt"] = 1,
+										["id"] = 138213,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[72286] = {
+										["actived_at"] = 1500056471,
+										["uptime"] = 0,
+										["actived"] = true,
+										["id"] = 72286,
+										["activedamt"] = 1,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[227723] = {
+										["uptime"] = 3,
+										["activedamt"] = 1,
+										["id"] = 227723,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[11327] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 11327,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-1303-03FA8295",
+							["classe"] = "ROGUE",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 122,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Zetiz"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "Felwing Devourer",
+				["combat_counter"] = 15220,
+				["playing_solo"] = true,
+				["totals"] = {
+					-0.147841000346303, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = -0.232676000000004,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Zetiz"] = 0.0013,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 15216.021,
+				["contra"] = "Felwing Devourer",
+				["instance_type"] = "none",
+				["is_temporary"] = true,
+				["hasSaved"] = true,
+				["frags"] = {
+				},
+				["data_fim"] = "20:21:15",
+				["data_inicio"] = "20:21:12",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 15213.731,
+				["TimeData"] = {
+				},
+				["combat_id"] = 122,
+			}, -- [1]
 		},
 	},
 	["ignore_nicktag"] = false,
-	["last_day"] = "26",
-	["last_encounter"] = "Horridon",
-	["last_version"] = "v7.2.5.4132",
+	["combat_counter"] = 15240,
+	["last_instance_time"] = 1497124419,
+	["last_version"] = "v7.2.5.4236",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -29,10 +252,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
 			["dps"] = 0,
-			["level"] = 1,
 			["author"] = "Details! Team",
+			["level"] = 1,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = false,
@@ -268,12 +491,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
 					["id"] = 1795,
 				},
-				["179977"] = {
-					"179977", -- [1]
-					"Touch of Doom", -- [2]
-					8.3, -- [3]
-					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
-					["id"] = 1783,
+				["180004"] = {
+					"180004", -- [1]
+					"Enforcer's Onslaught", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
+					["id"] = 1784,
 				},
 				["siegevehicles"] = {
 					"siegevehicles", -- [1]
@@ -310,12 +533,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\ability_creature_cursed_03", -- [4]
 					["id"] = 1798,
 				},
-				["183885"] = {
-					"183885", -- [1]
-					"Mirror Images", -- [2]
-					78, -- [3]
-					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
-					["id"] = 1798,
+				["181295"] = {
+					"181295", -- [1]
+					"Digest on YOU!", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\Spell_Shadow_DeathCoil", -- [4]
+					["id"] = 1783,
 				},
 				["182428"] = {
 					"182428", -- [1]
@@ -331,12 +554,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
 					["id"] = 1784,
 				},
-				["183817"] = {
-					"183817", -- [1]
-					"Shadowfel Burst", -- [2]
-					43, -- [3]
-					"Interface\\Icons\\Ability_Warlock_EverlastingAffliction", -- [4]
-					["id"] = 1799,
+				["179406"] = {
+					"179406", -- [1]
+					"Soul Cleave (1)", -- [2]
+					25.5, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
+					["id"] = 1777,
 				},
 				["181306"] = {
 					"181306", -- [1]
@@ -366,12 +589,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_earthen_pillar", -- [4]
 					["id"] = 1778,
 				},
-				["181582"] = {
-					"181582", -- [1]
-					"Bellowing Shout", -- [2]
-					13.5, -- [3]
-					"Interface\\Icons\\ability_fomor_boss_shout", -- [4]
-					["id"] = 1783,
+				["181824"] = {
+					"181824", -- [1]
+					"Phantasmal Corruption", -- [2]
+					26, -- [3]
+					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
+					["id"] = 1788,
 				},
 				["69279"] = {
 					"69279", -- [1]
@@ -443,12 +666,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FelRainOfFire", -- [4]
 					["id"] = 1795,
 				},
-				["69076"] = {
-					"69076", -- [1]
-					"Bone Storm", -- [2]
-					45, -- [3]
-					"Interface\\Icons\\Ability_Druid_Cyclone", -- [4]
-					["id"] = 1101,
+				["berserk"] = {
+					"berserk", -- [1]
+					"Berserk", -- [2]
+					600, -- [3]
+					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
+					["id"] = 1100,
 				},
 				["181912"] = {
 					"181912", -- [1]
@@ -471,12 +694,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_sandstorm", -- [4]
 					["id"] = 1784,
 				},
-				["186961"] = {
-					"186961", -- [1]
-					"Nether Banish", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
-					["id"] = 1799,
+				["182001"] = {
+					"182001", -- [1]
+					"Unstable Orb", -- [2]
+					8.5, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
+					["id"] = 1785,
 				},
 				["182055"] = {
 					"182055", -- [1]
@@ -485,19 +708,19 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
 					["id"] = 1785,
 				},
-				["berserk"] = {
-					"berserk", -- [1]
-					"Berserk", -- [2]
-					600, -- [3]
-					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
-					["id"] = 1100,
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+					["id"] = 1794,
 				},
-				["186490"] = {
-					"186490", -- [1]
-					"Chains of Fel", -- [2]
-					33, -- [3]
-					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
-					["id"] = 1800,
+				["181999"] = {
+					"181999", -- [1]
+					"Firebomb (1)", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
+					["id"] = 1785,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -506,12 +729,12 @@ _detalhes_database = {
 					"Interface\\Icons\\inv_shield_38", -- [4]
 					["id"] = 1784,
 				},
-				["181999"] = {
-					"181999", -- [1]
-					"Firebomb (1)", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
-					["id"] = 1785,
+				["186490"] = {
+					"186490", -- [1]
+					"Chains of Fel", -- [2]
+					33, -- [3]
+					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
+					["id"] = 1800,
 				},
 				["189009"] = {
 					"189009", -- [1]
@@ -548,33 +771,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
 					["id"] = 1786,
 				},
-				["186546"] = {
-					"186546", -- [1]
-					"Black Hole", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\INV_Enchant_VoidSphere", -- [4]
-					["id"] = 1800,
-				},
-				["180221"] = {
-					"180221", -- [1]
-					"Volatile Fel Orb", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\achievement_zone_cataclysmgreen", -- [4]
+				["portals"] = {
+					"portals", -- [1]
+					"Portals Move", -- [2]
+					138, -- [3]
+					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
 					["id"] = 1794,
-				},
-				["-11269"] = {
-					"-11269", -- [1]
-					"Hulking Terror", -- [2]
-					15, -- [3]
-					false, -- [4]
-					["id"] = 1786,
-				},
-				["187204"] = {
-					"187204", -- [1]
-					"Overwhelming Chaos", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\sha_spell_shaman_lavaburst", -- [4]
-					["id"] = 1800,
 				},
 				["180163"] = {
 					"180163", -- [1]
@@ -583,6 +785,27 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
 					["id"] = 1786,
 				},
+				["-11269"] = {
+					"-11269", -- [1]
+					"Hulking Terror", -- [2]
+					15, -- [3]
+					false, -- [4]
+					["id"] = 1786,
+				},
+				["adds"] = {
+					"adds", -- [1]
+					"Next Adds", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Spell_Shadow_TwistedFaith", -- [4]
+					["id"] = 1100,
+				},
+				["187204"] = {
+					"187204", -- [1]
+					"Overwhelming Chaos", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\sha_spell_shaman_lavaburst", -- [4]
+					["id"] = 1800,
+				},
 				["186123"] = {
 					"186123", -- [1]
 					"Wrought Chaos", -- [2]
@@ -590,26 +813,19 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_misc_zandalari_council_soulswap", -- [4]
 					["id"] = 1799,
 				},
-				["190050"] = {
-					"190050", -- [1]
-					"Touch of Shadows (2)", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\warlock_curse_shadow_aura", -- [4]
-					["id"] = 1799,
+				["182020"] = {
+					"182020", -- [1]
+					"Pounding (1)", -- [2]
+					34.4, -- [3]
+					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
+					["id"] = 1785,
 				},
-				["181307"] = {
-					"181307", -- [1]
-					"Foul Crush", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
-					["id"] = 1787,
-				},
-				["182200"] = {
-					"182200", -- [1]
-					"Fel Chakram", -- [2]
-					5.5, -- [3]
-					"Interface\\Icons\\ability_arakkoa_spinning_blade", -- [4]
-					["id"] = 1788,
+				["179711"] = {
+					"179711", -- [1]
+					"Befouled", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_GatherShadows", -- [4]
+					["id"] = 1777,
 				},
 				["70351"] = {
 					"70351", -- [1]
@@ -617,6 +833,13 @@ _detalhes_database = {
 					25, -- [3]
 					"Interface\\Icons\\Spell_Shadow_UnstableAffliction_1", -- [4]
 					["id"] = 1102,
+				},
+				["181180"] = {
+					"181180", -- [1]
+					"Inferno", -- [2]
+					48, -- [3]
+					"Interface\\Icons\\Spell_Fire_Felcano", -- [4]
+					["id"] = 1795,
 				},
 				["overfiend"] = {
 					"overfiend", -- [1]
@@ -632,26 +855,26 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossmannoroth_mannorothsgaze", -- [4]
 					["id"] = 1795,
 				},
-				["181180"] = {
-					"181180", -- [1]
-					"Inferno", -- [2]
-					48, -- [3]
-					"Interface\\Icons\\Spell_Fire_Felcano", -- [4]
-					["id"] = 1795,
+				["182200"] = {
+					"182200", -- [1]
+					"Fel Chakram", -- [2]
+					5.5, -- [3]
+					"Interface\\Icons\\ability_arakkoa_spinning_blade", -- [4]
+					["id"] = 1788,
 				},
-				["179711"] = {
-					"179711", -- [1]
-					"Befouled", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_GatherShadows", -- [4]
-					["id"] = 1777,
+				["181307"] = {
+					"181307", -- [1]
+					"Foul Crush", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
+					["id"] = 1787,
 				},
-				["182020"] = {
-					"182020", -- [1]
-					"Pounding (1)", -- [2]
-					34.4, -- [3]
-					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
-					["id"] = 1785,
+				["190050"] = {
+					"190050", -- [1]
+					"Touch of Shadows (2)", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\warlock_curse_shadow_aura", -- [4]
+					["id"] = 1799,
 				},
 				["180008"] = {
 					"180008", -- [1]
@@ -667,19 +890,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
 					["id"] = 1784,
 				},
-				["adds"] = {
-					"adds", -- [1]
-					"Next Adds", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Spell_Shadow_TwistedFaith", -- [4]
-					["id"] = 1100,
-				},
-				["portals"] = {
-					"portals", -- [1]
-					"Portals Move", -- [2]
-					138, -- [3]
-					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
+				["180221"] = {
+					"180221", -- [1]
+					"Volatile Fel Orb", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\achievement_zone_cataclysmgreen", -- [4]
 					["id"] = 1794,
+				},
+				["186546"] = {
+					"186546", -- [1]
+					"Black Hole", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\INV_Enchant_VoidSphere", -- [4]
+					["id"] = 1800,
 				},
 				["180533"] = {
 					"180533", -- [1]
@@ -702,19 +925,19 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
 					["id"] = 1785,
 				},
-				["182001"] = {
-					"182001", -- [1]
-					"Unstable Orb", -- [2]
-					8.5, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
-					["id"] = 1785,
+				["186961"] = {
+					"186961", -- [1]
+					"Nether Banish", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
+					["id"] = 1799,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
-					["id"] = 1794,
+				["69076"] = {
+					"69076", -- [1]
+					"Bone Storm", -- [2]
+					45, -- [3]
+					"Interface\\Icons\\Ability_Druid_Cyclone", -- [4]
+					["id"] = 1101,
 				},
 				["179407"] = {
 					"179407", -- [1]
@@ -737,12 +960,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelmagnaron_runeempowered", -- [4]
 					["id"] = 1787,
 				},
-				["181824"] = {
-					"181824", -- [1]
-					"Phantasmal Corruption", -- [2]
-					26, -- [3]
-					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
-					["id"] = 1788,
+				["181582"] = {
+					"181582", -- [1]
+					"Bellowing Shout", -- [2]
+					13.5, -- [3]
+					"Interface\\Icons\\ability_fomor_boss_shout", -- [4]
+					["id"] = 1783,
 				},
 				["179909"] = {
 					"179909", -- [1]
@@ -751,12 +974,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_warlock_soullink", -- [4]
 					["id"] = 1783,
 				},
-				["179406"] = {
-					"179406", -- [1]
-					"Soul Cleave (1)", -- [2]
-					25.5, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
-					["id"] = 1777,
+				["183817"] = {
+					"183817", -- [1]
+					"Shadowfel Burst", -- [2]
+					43, -- [3]
+					"Interface\\Icons\\Ability_Warlock_EverlastingAffliction", -- [4]
+					["id"] = 1799,
 				},
 				["187180"] = {
 					"187180", -- [1]
@@ -765,29 +988,29 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
 					["id"] = 1799,
 				},
-				["181295"] = {
-					"181295", -- [1]
-					"Digest on YOU!", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\Spell_Shadow_DeathCoil", -- [4]
-					["id"] = 1783,
+				["183885"] = {
+					"183885", -- [1]
+					"Mirror Images", -- [2]
+					78, -- [3]
+					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
+					["id"] = 1798,
 				},
-				["180004"] = {
-					"180004", -- [1]
-					"Enforcer's Onslaught", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
-					["id"] = 1784,
+				["179977"] = {
+					"179977", -- [1]
+					"Touch of Doom", -- [2]
+					8.3, -- [3]
+					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
+					["id"] = 1783,
 				},
 			},
 			["encounter_timers_dbm"] = {
 			},
 			["hide_on_combat"] = false,
 			["opened"] = 3,
-			["author"] = "Details! Team",
+			["window_scale"] = 1,
 			["show_icon"] = 5,
 			["max_emote_segments"] = 3,
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -814,11 +1037,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["scale"] = 1,
-			["row_height"] = 20,
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["point"] = "TOP",
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -826,9 +1049,14 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
@@ -839,27 +1067,22 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["size"] = 32,
-				["update_speed"] = 0.0160000007599592,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.0160000007599592,
+				["size"] = 32,
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["main_frame_locked"] = false,
-			["arrow_anchor_y"] = 0,
+			["font_size"] = 10,
+			["point"] = "TOP",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["auto_open"] = true,
 			["rightclick_closed"] = false,
+			["auto_open"] = true,
 			["auto_close"] = true,
-			["author"] = "Details! Team",
 			["hide_on_combat"] = true,
+			["author"] = "Details! Team",
 			["deaths_table"] = {
 				{
 					"Blackhand", -- [1]
@@ -2023,43 +2246,28 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 			["realm_history"] = {
 			},
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
 		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["enabled"] = true,
-			["animate"] = false,
-			["useplayercolor"] = false,
-			["author"] = "Details! Team",
-			["useclasscolors"] = false,
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["showamount"] = false,
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = false,
@@ -2069,38 +2277,46 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
+		},
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["animate"] = false,
+			["showamount"] = false,
+			["useplayercolor"] = false,
+			["useclasscolors"] = false,
+			["author"] = "Details! Team",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["enabled"] = true,
 		},
 	},
+	["force_font_outline"] = "",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
-	["force_font_outline"] = "",
-	["cached_talents"] = {
-		["Player-1303-03FA8295"] = {
-			22337, -- [1]
-			22331, -- [2]
-			22340, -- [3]
-			22341, -- [4]
-			19241, -- [5]
-			19249, -- [6]
-			21186, -- [7]
-		},
-	},
-	["character_data"] = {
-		["logons"] = 2090,
-	},
-	["tabela_instancias"] = {
-	},
-	["combat_id"] = 121,
-	["savedStyles"] = {
-	},
-	["combat_counter"] = 15202,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
+	},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1501148579,
+		["last_version"] = 9,
+	},
+	["tabela_instancias"] = {
+	},
+	["combat_id"] = 122,
+	["savedStyles"] = {
+	},
+	["last_encounter"] = "Horridon",
+	["character_data"] = {
+		["logons"] = 2117,
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -2108,7 +2324,8 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_instance_time"] = 1497124419,
+	["savedbuffs"] = {
+	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -2163,10 +2380,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -424.356981687056,
+					["y"] = -424.356989240157,
 					["x"] = 750.194559715756,
-					["w"] = 208.361206054688,
-					["h"] = 84.4102020263672,
+					["w"] = 208.361083984375,
+					["h"] = 84.4101943969727,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -2210,21 +2427,27 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["savedbuffs"] = {
-	},
+	["last_day"] = "26",
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1498923804,
-		["last_version"] = 8,
+	["cached_talents"] = {
+		["Player-1303-03FA8295"] = {
+			22114, -- [1]
+			22332, -- [2]
+			19239, -- [3]
+			19233, -- [4]
+			22335, -- [5]
+			21188, -- [6]
+			22122, -- [7]
+		},
 	},
 	["last_instance_id"] = 1516,
 	["cached_specs"] = {
-		["Player-1303-03FA8295"] = 259,
+		["Player-1303-03FA8295"] = 261,
 	},
 }

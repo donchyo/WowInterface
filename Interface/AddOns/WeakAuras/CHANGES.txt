@@ -1,10 +1,10 @@
-tag 34a2ca1084f0117376d6692fc564769ba2bad2a8 2.4.5
+tag 00d5588d554e73e07cba77cf14b67067ba3fa154 2.4.14
 Author:	Benjamin Staneck <staneck@gmail.com>
-Date:	Wed Jun 21 19:43:55 2017 +0200
+Date:	Sat Jul 15 18:02:16 2017 +0200
 
-commit 27a09d84b50e69a240411d599b5123d5ea3f8aeb
+commit 9c7749385ec8c0cf5df78b1b5ad3cbc2e18ea0fe
 Author: Infus <infus@squorn.de>
-Date:   Wed Jun 21 19:38:51 2017 +0200
+Date:   Sat Jul 15 12:58:04 2017 +0200
 
-    Fix infinite loop for temporary groups
+    Fix regressions with anchor change
 

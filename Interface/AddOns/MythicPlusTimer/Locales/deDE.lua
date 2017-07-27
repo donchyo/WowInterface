@@ -6,7 +6,6 @@ end
 L["ToggleCommandText"] = "Timerbereich Freischalten/Sperren"
 L["Loot"] = "Beute"
 L["NoLoot"] = "Keine Beute"
-L["Chests"] = "Truhen"
 L["Best"] = "beste"
 L["ObjectiveTimes"] = "Zielzeiten anzeigen"
 L["ObjectiveTimesDesc"] = "Zeigt die Abschlusszeiten und die beste Abschlusszeit der einzelnen Ziele an."

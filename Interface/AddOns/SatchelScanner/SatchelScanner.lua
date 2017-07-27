@@ -3,6 +3,18 @@
 --------------------------------
 --     MAINFRAME & SCANNER    --
 --------------------------------
+-- Satchel IDs
+SS_SatchelIDs = {id_140591=0,id_128803=0,id_90818=0,id_120334=0,id_69903=0}
+-- Existing Bags, Not Removed and still exist (Wowhead)
+-- 140591 = Legion:BoP=Shattered Satchel of Cooperation
+-- 128803 = Wod:BoP=Savage Satchel of Cooperation
+-- 90818 = MopLive:BoA=Misty Satchel of Exotic Mysteries
+-- 120334 = MopBeta:BoA=Satchel of Cosmic Mysteries
+-- 69903 = Cata:BoA=Satchel of Exotic Mysteries
+-- Removed bags, removed and no longer obtainable (Wowhead)
+-- 104260 = WodRemoved:BoA=Satchel of Savage Mysteries
+-- 122607 = WodRemoved:BoP=Savage Satchel of Cooperation
+
 -- Hardcoded textures
 SS_Spacer = "Interface\\Addons\\SatchelScanner\\textures\\hr.tga";
 SS_Border = "Interface\\Addons\\SatchelScanner\\textures\\border.tga";
@@ -22,7 +34,7 @@ SS_CloseButton = "Interface\\Addons\\SatchelScanner\\textures\\close.tga";
 
 -- Variables
 local running = false; -- Boolean to detect Running/paused state
-SS_addonVersion = 7.21; -- Addon Version, useful for wiping savedvariables if needed
+SS_addonVersion = 7.22; -- Addon Version, useful for wiping savedvariables if needed
 SS_versionTag = "Release";
 SS_TimeSinceLastNotification = 0;
 
@@ -338,7 +350,7 @@ end
 -- ON LOAD, ON UPDATE, ON EVENT --
 ----------------------------------
 
-function SatchelScanner_OnEvent(self, event, arg, arg2)
+function SatchelScanner_OnEvent(self, event, arg, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
 	local SS_inLFGQueue = GetLFGQueueStats(LE_LFG_CATEGORY_LFD)
 	local SS_inLFRQueue = GetLFGQueueStats(LE_LFG_CATEGORY_RF)
 	local SS_debuff = UnitDebuff("player", "Dungeon Deserter")
@@ -349,10 +361,17 @@ function SatchelScanner_OnEvent(self, event, arg, arg2)
 		SS_printmm("Welcome to Satchel Scanner v"..SS_addonVersion.."-"..SS_versionTag.."!");
 		SS_printmm("->> Type /ss3 for commands!");
 		SS_Loaded = true;
+	elseif event == "CHAT_MSG_LOOT" then
+		local loot = string.match(arg, "item:(%d+):");
+		if(SS_SatchelIDs["id_"..loot]) then	
+			SS_satchelsReceived = SS_satchelsReceived + 1;
+			SS_bagCounterText:SetText(SS_satchelsReceived);
+			SS_datacall("update");
+		end
 	elseif event == "CHAT_MSG_LOOT" and string.find(arg, "Shattered Satchel of Cooperation") and not (MailFrame:IsShown() or TradeFrame:IsShown()) then
-		SS_satchelsReceived = SS_satchelsReceived + 1;
-		SS_bagCounterText:SetText(SS_satchelsReceived);
-		SS_datacall("update");
+		--SS_satchelsReceived = SS_satchelsReceived + 1;
+		--SS_bagCounterText:SetText(SS_satchelsReceived);
+		--SS_datacall("update");
 	elseif event == "LFG_QUEUE_STATUS_UPDATE" then
 		-- This is just thrown to make sure SS_inLFGQueue/SS_inLFRQueue works as intended.
 		-- Mostly to keep the booleans true/false even after an Que rejoin.

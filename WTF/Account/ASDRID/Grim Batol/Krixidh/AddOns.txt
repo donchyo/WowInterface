@@ -64,8 +64,8 @@ PlateBuffs: disabled
 TellMeWhen_Options: disabled
 TellMeWhen: disabled
 AddonUsage: disabled
-AdiBags: disabled
-AdiBags_Config: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
 ChocolateBar_Options: enabled
 MogIt_Cosmetic: disabled
 HandyNotes_DraenorTreasures: disabled
@@ -361,3 +361,4 @@ BloodTrader: enabled
 NomiCakes: disabled
 StopResetingMyCameraPlease: disabled
 LegionTODOMini: disabled
+Skada_LeechBDKTabs: disabled
