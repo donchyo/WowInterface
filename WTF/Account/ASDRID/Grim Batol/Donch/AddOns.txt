@@ -34,11 +34,11 @@ epgp: disabled
 Bulkie: disabled
 Skada: disabled
 premade-filter: disabled
-MogIt: disabled
+MogIt: enabled
 MogIt_Accessories: enabled
 MogIt_Cloth: disabled
 MogIt_Leather: disabled
-MogIt_Mail: disabled
+MogIt_Mail: enabled
 MogIt_OneHanded: disabled
 MogIt_Other: disabled
 MogIt_Plate: disabled
@@ -59,7 +59,7 @@ Details_TimeAttack: disabled
 Details_TinyThreat: disabled
 Details_YouAreNotPrepared: disabled
 Details_Vanguard: disabled
-RaidFrameIndicators: disabled
+RaidFrameIndicators: enabled
 PlateBuffs: disabled
 TellMeWhen_Options: disabled
 TellMeWhen: disabled
@@ -246,7 +246,7 @@ Overachiever: disabled
 Overachiever_Tabs: disabled
 Overachiever_Trade: disabled
 Paste: disabled
-Pawn: disabled
+Pawn: enabled
 PitBull4_Aggro: disabled
 PitBull4_BattlePet: disabled
 PitBull4_BurningEmbers: disabled
@@ -279,7 +279,7 @@ QuickTalents: disabled
 QuickQuest: disabled
 Rarity: disabled
 Rarity_Options: disabled
-RCLootCouncil: disabled
+RCLootCouncil: enabled
 SafeQueue: disabled
 SavedInstances: enabled
 SellOMatic2: disabled
@@ -360,3 +360,4 @@ NomiCakes: disabled
 StopResetingMyCameraPlease: disabled
 LegionTODOMini: disabled
 Skada_LeechBDKTabs: disabled
+Details_RaidInfo-TombOfSargeras: disabled

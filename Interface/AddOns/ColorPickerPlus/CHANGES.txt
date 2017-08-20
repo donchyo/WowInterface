@@ -1,8 +1,13 @@
 ------------------------------------------------------------------------
-r50 | jaslm@toja.me | 2017-03-29 14:47:31 -0500 (Wed, 29 Mar 2017) | 1 line
+r53 | jaslm@toja.me | 2017-07-27 15:46:22 -0500 (Thu, 27 Jul 2017) | 1 line
 Changed paths:
    M /trunk/ColorPickerPlus.lua
-   M /trunk/ColorPickerPlus.toc
+
+
+------------------------------------------------------------------------
+r52 | jaslm@toja.me | 2017-07-27 15:41:20 -0500 (Thu, 27 Jul 2017) | 1 line
+Changed paths:
+   M /trunk/ColorPickerPlus.lua
 
 
 ------------------------------------------------------------------------

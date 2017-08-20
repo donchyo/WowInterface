@@ -43,6 +43,28 @@ mod:RegisterEnableMob(
 )
 
 --------------------------------------------------------------------------------
+-- Locals
+--
+
+local englishSpyFound = "I found the spy!"
+local englishClueNames = {
+	"Cape",
+	"No Cape",
+	"Pouch",
+	"Potions",
+	"Long Sleeves",
+	"Short Sleeves",
+	"Gloves",
+	"No Gloves",
+	"Male",
+	"Female",
+	"Light Vest",
+	"Dark Vest",
+	"No Potions",
+	"Book",
+}
+
+--------------------------------------------------------------------------------
 -- Localization
 --
 
@@ -80,41 +102,26 @@ if L then
 	L.WoundedNightborneCivilian = "Wounded Nightborne Civilian"
 
 	L.announce_buff_items = "Announce buff items"
-	L.announce_buff_items_desc = "Anounces all available buff items around the dungeon and who is able to use them."
+	L.announce_buff_items_desc = "Announces all available buff items around the dungeon and who is able to use them."
 	L.announce_buff_items_icon = 211080
 
 	L.available = "%s|cffffffff%s|r available" -- Context: item is available to use
-	L.usableBy = "usable by"  -- Context: item is usable by someone
+	L.usableBy = "usable by %s"  -- Context: item is usable by someone
 
-	L.use_buff_items = "Instantly use buff items"
-	L.use_buff_items_desc = "Enable this options to instantly use the buff items around the dungeon. This will not use items which aggro the guards before the second boss."
-	L.use_buff_items_icon = 211110
+	L.custom_on_use_buff_items = "Instantly use buff items"
+	L.custom_on_use_buff_items_desc = "Enable this option to instantly use the buff items around the dungeon. This will not use items which aggro the guards before the second boss."
+	L.custom_on_use_buff_items_icon = 211110
 
 	L.spy_helper = "Spy Event Helper"
-	L.spy_helper_desc = "Shows an InfoBox with all clues your group gathered about the spy. The clues will also be send to your party members in chat."
+	L.spy_helper_desc = "Shows an InfoBox with all clues your group gathered about the spy. The clues will also be sent to your party members in chat."
 	L.spy_helper_icon = 213213
 
 	L.clueFound = "Clue found (%d/5): |cffffffff%s|r"
 	L.spyFound = "Spy found by %s!"
-	L.spyFoundChat = "I found the spy!"
+	L.spyFoundChat = englishSpyFound
 	L.spyFoundPattern = "Now now, let's not be hasty" -- Now now, let's not be hasty [player]. Why don't you follow me so we can talk about this in a more private setting...
 
-	L.hints = {
-		"Cape",
-		"No Cape",
-		"Pouch",
-		"Potions",
-		"Long Sleeves",
-		"Short Sleeves",
-		"Gloves",
-		"No Gloves",
-		"Male",
-		"Female",
-		"Light Vest",
-		"Dark Vest",
-		"No Potions",
-		"Book",
-	}
+	L.hints = englishClueNames
 
 	-- Cape
 	L["I heard the spy enjoys wearing capes."] = 1
@@ -184,7 +191,7 @@ if L then
 	L["The spy definitely prefers darker clothing."] = 12
 
 	-- No Potions
-	L["I heared the spy is not carrying any potions around."] = 13
+	L["I heard the spy is not carrying any potions around."] = 13
 	L["A musician told me she saw the spy throw away their last potion and no longer has any left."] = 13
 
 	-- Book
@@ -200,7 +207,7 @@ L = mod:GetLocale()
 function mod:GetOptions()
 	return {
 		"announce_buff_items",
-		"use_buff_items",
+		"custom_on_use_buff_items",
 		{"spy_helper", "INFOBOX"},
 		209027, -- Quelling Strike (Duskwatch Guard)
 		209033, -- Fortification (Duskwatch Guard)
@@ -329,7 +336,7 @@ do
 			},
 		},
 		[105831] = { -- Infernal Tome: -10% Dmg taken
-			["name"] = L.InfernalTome,
+			["name"] = "InfernalTome",
 			["classes"] = {
 				["DEMONHUNTER"] = true,
 				["PRIEST"] = true,
@@ -337,7 +344,7 @@ do
 			},
 		},
 		[106024] = { -- Magical Lantern: +10% Dmg dealt
-			["name"] = L.MagicalLantern,
+			["name"] = "MagicalLantern",
 			["classes"] = {
 				["MAGE"] = true,
 			},
@@ -350,7 +357,7 @@ do
 			},
 		},
 		[105249] = { -- Nightshade Refreshments: +25% HP
-			["name"] = L.NightshadeRefreshments,
+			["name"] = "NightshadeRefreshments",
 			["professions"] = {
 				[133971] = 800, -- Cooking
 				[136246] = 100, -- Herbalism
@@ -360,14 +367,14 @@ do
 			},
 		},
 		[106108] = { -- Starlight Rose Brew: +HP & Mana reg
-			["name"] = L.StarlightRoseBrew,
+			["name"] = "StarlightRoseBrew",
 			["classes"] = {
 				["DEATHKNIGHT"] = true,
 				["MONK"] = true,
 			},
 		},
 		[105340] = { -- Umbral Bloom: +10% Haste
-			["name"] = L.UmbralBloom,
+			["name"] = "UmbralBloom",
 			["classes"] = {
 				["DRUID"] = true,
 			},
@@ -376,7 +383,7 @@ do
 			}
 		},
 		[106110] = { -- Waterlogged Scroll: +30% Movement speed
-			["name"] = L.WaterloggedScroll,
+			["name"] = "WaterloggedScroll",
 			["classes"] = {
 				["SHAMAN"] = true,
 			},
@@ -389,7 +396,7 @@ do
 
 	local guardItems = {
 		[106018] = { -- Bazaar Goods
-			["name"] = L.BazaarGoods,
+			["name"] = "BazaarGoods",
 			["classes"] = {
 				["ROGUE"] = true,
 				["WARRIOR"] = true,
@@ -399,14 +406,14 @@ do
 			},
 		},
 		[106113] = { -- Lifesized Nightborne Statue
-			["name"] = L.LifesizedNightborneStatue,
+			["name"] = "LifesizedNightborneStatue",
 			["professions"] = {
 				[134708] = 100, -- Mining
 				[134071] = 100, -- Jewelcrafting
 			},
 		},
 		[105215] = { -- Discarded Junk
-			["name"] = L.DiscardedJunk,
+			["name"] = "DiscardedJunk",
 			["classes"] = {
 				["HUNTER"] = true,
 			},
@@ -415,12 +422,12 @@ do
 			},
 		},
 		[106112] = { -- Wounded Nightborne Civilian
-			["name"] = L.WoundedNightborneCivilian,
+			["name"] = "WoundedNightborneCivilian",
 			["roles"] = {
 				["Healer"] = true,
 			},
 			["professions"] = {
-				[135966] = 100, -- First Aid
+				[135966] = 760, -- First Aid -- XXX Guess
 				[136249] = 100, -- Tailoring
 			},
 		},
@@ -473,9 +480,9 @@ do
 		wipe(knownClues)
 	end
 
-	local function sendChatMessage(msg)
+	local function sendChatMessage(msg, english)
 		if IsInGroup() then
-			SendChatMessage(("[LittleWigs] %s"):format(msg), IsInGroup(2) and "INSTANCE_CHAT" or "PARTY")
+			SendChatMessage(english and ("[LittleWigs] %s / %s"):format(msg, english) or ("[LittleWigs] %s"):format(msg), IsInGroup(2) and "INSTANCE_CHAT" or "PARTY")
 		end
 	end
 
@@ -499,6 +506,7 @@ do
 
 	local function printNew(locale, clue)
 		timer = nil
+		knownClues[clue] = true -- Throttle to only show once per new message
 		sendChatMessage(clue)
 		RaidNotice_AddMessage(RaidWarningFrame, "LittleWigs: Unknown clue detected, see chat for info.", {r=1,g=1,b=1})
 		BigWigs:Print("LittleWigs is sending the entire clue to chat as it detected an unknown clue, please report it on Discord/GitHub/Curse so we can add it and shorten the message.")
@@ -507,11 +515,10 @@ do
 
 	function mod:GOSSIP_SHOW()
 		local mobId = self:MobId(UnitGUID("npc"))
-		local useBuffItems = self:GetOption("use_buff_items") > 0
 		local spyEventHelper = self:GetOption("spy_helper") > 0
 		if autoTalk[mobId] or buffItems[mobId] then
 			if GetGossipOptions() then
-				if (spyEventHelper and autoTalk[mobId]) or (useBuffItems and buffItems[mobId]) then
+				if (spyEventHelper and autoTalk[mobId]) or (self:GetOption("custom_on_use_buff_items") and buffItems[mobId]) then
 					SelectGossipOption(1)
 				end
 			else
@@ -522,15 +529,17 @@ do
 					end
 
 					local clue = GetGossipText()
-					if L[clue] then
-						if not knownClues[L[clue]] then
-							sendChatMessage(L.hints[L[clue]])
+					local num = L[clue]
+					if num then
+						if spyEventHelper and not knownClues[num] then
+							local text = L.hints[num]
+							sendChatMessage(text, englishClueNames[num] ~= text and englishClueNames[num])
 						end
-						mod:Sync("clue", L[clue])
+						mod:Sync("clue", num)
 					else
-						--if spyEventHelper then -- XXX temp until we are more clued up
+						if spyEventHelper and not knownClues[clue] then
 							timer = self:ScheduleTimer(printNew, 1, GetLocale(), clue)
-						--end
+						end
 					end
 				end
 			end
@@ -542,7 +551,7 @@ do
 			self:Message("spy_helper", "Positive", "Info", L.spyFound:format(self:ColorName(target)), false)
 			self:CloseInfo("spy_helper")
 			if target == self:UnitName("player") then
-				sendChatMessage(L.spyFoundChat)
+				sendChatMessage(L.spyFoundChat, englishSpyFound ~= L.spyFoundChat and englishSpyFound)
 				SetRaidTarget("target", 8)
 			else
 				for unit in self:IterateGroup() do
@@ -596,7 +605,7 @@ do
 		if item.roles then
 			for role, _ in pairs(item.roles) do
 				for unit in self:IterateGroup() do
-					if self[role](unit) then
+					if self[role](self, unit) then
 						players[self:UnitName(unit)] = true
 					end
 				end
@@ -604,7 +613,7 @@ do
 			end
 		end
 
-		local name = type(item.name) == "number" and self:SpellName(item.name) or item.name
+		local name = type(item.name) == "number" and self:SpellName(item.name) or L[item.name]
 		local message = (L.available):format(table.concat(icons, ""), name)
 
 		if next(players) then
@@ -615,7 +624,7 @@ do
 				end
 			end
 			if list:len() > 0 then
-				message = message .. " - ".. L.usableBy .. " " .. list:sub(0, list:len()-2)
+				message = message .. " - ".. L.usableBy:format(list:sub(0, list:len()-2))
 			end
 		end
 

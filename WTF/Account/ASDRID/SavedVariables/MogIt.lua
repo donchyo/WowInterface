@@ -1,7 +1,7 @@
 
 MogItDB = {
 	["global"] = {
-		["version"] = "3.8.0",
+		["version"] = "3.8.1",
 	},
 	["profileKeys"] = {
 		["Nyrith - Grim Batol"] = "Default",
@@ -48,14 +48,15 @@ MogItDB = {
 				["1H-mace"] = "One-Handed Maces",
 				["Head"] = "Head",
 				["Holdable"] = "Held In Off-hand",
+				["Shield"] = "Shields",
 				["Staff"] = "Staves",
 				["Feet"] = "Feet",
 				["Chest"] = "Chest",
-				["1H-sword"] = "One-Handed Swords",
 				["Crossbow"] = "Crossbows",
 				["Gun"] = "Guns",
 				["1H-axe"] = "One-Handed Axes",
 				["Bow"] = "Bows",
+				["1H-sword"] = "One-Handed Swords",
 				["Shoulder"] = "Shoulder",
 				["Wand"] = "Wands",
 			},

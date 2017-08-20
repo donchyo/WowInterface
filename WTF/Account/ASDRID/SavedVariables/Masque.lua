@@ -171,6 +171,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_engine_of_eradication"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_fire_and_brimstone_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
@@ -402,6 +406,10 @@ MasqueDB = {
 				["WeakAuras_ghostly_strike"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_precision"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gr_-_crashing_comet"] = {
 					["SkinID"] = "Apathy",
@@ -727,6 +735,10 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_ghost_in_the_mist_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_ua_loph"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
@@ -754,6 +766,10 @@ MasqueDB = {
 				["WeakAuras_dragon's_10m_aoe_debuff_(emeriss_ground)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_rip_debuff_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sef__stacks_2"] = {
 					["Inherit"] = false,
@@ -810,6 +826,10 @@ MasqueDB = {
 				["WeakAuras_cloud_burst_totem"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_kill_command_cooldown__up___2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_fortifying_brew_buff__"] = {
 					["SkinID"] = "Apathy",
@@ -1673,6 +1693,10 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_army_of_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_hr_-_jagged_abrasion_(tank)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
@@ -2046,6 +2070,10 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_tank_ring_protwariorr_cd_up_loph__"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_rip_debuff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3485,6 +3513,10 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_tiger's_fury"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_kj_-_armageddon_(timer)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
@@ -3493,7 +3525,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_shadow_reflection"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_shockwave_cooldown_up____prot"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_judgment_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3509,6 +3549,14 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_brutal_slah"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_engine_of_eradication_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_st_-_felflame"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
@@ -3516,6 +3564,14 @@ MasqueDB = {
 				["WeakAuras_unleash_life_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ardent_defender_cooldown_up___2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ashermane's_frenzy"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_agi_pot_rogue_loph"] = {
 					["SkinID"] = "Apathy",
@@ -3525,9 +3581,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_anti-magic_shell_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_rogue:_slice_and_dice_-_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_dancing__rune_weapon_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_trushot_ready"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_trinket_2_kj_trinket__(hunter)"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_envenom_m"] = {
 					["SkinID"] = "Apathy",
@@ -3549,9 +3621,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_riptide_coolddown__2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_taste_for_blood_loph_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_bursting"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trueshot__cooldown_up_"] = {
 					["Inherit"] = false,
@@ -3569,6 +3649,14 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_feral_spirits_usable"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_soul_capacitor_amount_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_shark_infested_waters"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
@@ -3578,6 +3666,26 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gruul_//_overhead_smash"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_rune_tap_charges"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_curse_of_the_dreadblades_buff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_caress_of_the_tidemother_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_trueshot_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_blur_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3621,6 +3729,10 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_cenarion_ward_cd_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_wild_mushroom_missing"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
@@ -3637,6 +3749,14 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_taunt_on_cd_blood"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_iron_reaver_//_flame_vulnerability_(dps_only,_mythic_only)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_shield_block_cooldown_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
@@ -3649,11 +3769,39 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_asphyxiate"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_09-obelisk_timer"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_08-shadowy_blades"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_tank_ring_druid_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_blackoutstrike_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_resto_4p_t20"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_bonestorm_cd_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_04-lunar_beacon"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_rising_sun_kick"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3673,11 +3821,39 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_anti-magic_shell_"] = {
+				["WeakAuras_felclaws_debuff"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ghost_in_the_mist"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_asphyxiate"] = {
+				["WeakAuras_04-astral_vulnerability"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shadow_reflection:_hopeless"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_xhul'horac_//_withering_gaze_(stacking_debuff,_tank_only)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_03-aqueous_burst"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_stampede_cooldown_up__2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_illidan's_sightless"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_fa_-_black_winds"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3693,17 +3869,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_judgment_cooldown_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_flaming_orb"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ascendance_restoration"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_riptide_coolddown__2"] = {
-					["Inherit"] = false,
+				["WeakAuras_riposte_cooldown_up"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_armor_pot_protpala_loph_2_2"] = {
 					["SkinID"] = "Apathy",
@@ -3721,25 +3897,25 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_09-obelisk_timer"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_ardent_defender_cooldown_up___2"] = {
+				["WeakAuras_colossus_smash_debuff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_09-illidan_buff"] = {
-					["Inherit"] = false,
+				["WeakAuras_wellspring_on_cd"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras__concordance_resto_shaman"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_breath_of_fire_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_riptide_coolddown__echo"] = {
-					["Inherit"] = false,
+				["WeakAuras_ms_(m)_-_delicious_bufferfish"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_fel_rush_cooldown_up"] = {
 					["SkinID"] = "Apathy",
@@ -3769,9 +3945,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_resto_4p_t20"] = {
-					["Inherit"] = false,
+				["WeakAuras_fa_-_test_-_shadowy_blades"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_siegebreaker_cooldown_"] = {
 					["SkinID"] = "Apathy",
@@ -3781,9 +3957,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_08-shadowy_blades"] = {
-					["Inherit"] = false,
+				["WeakAuras_oli-bone_shield_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_touch_of_death_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
@@ -3793,15 +3969,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_felclaws_debuff"] = {
-					["Inherit"] = false,
+				["WeakAuras_dps_ring_monk_loph___2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_dh_-_shattering_scream"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_stone_of_the_elements_rogue"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3809,9 +3981,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_flaming_orb"] = {
+				["WeakAuras_blighted_rurne_weapon_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_fa_-_desolate_(cast)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_tiger_palm_2"] = {
 					["SkinID"] = "Apathy",
@@ -3825,7 +4001,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_massgrip__cooldown_2"] = {
+				["WeakAuras_runic_shield_orange"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -3841,19 +4017,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_04-lunar_beacon"] = {
-					["Inherit"] = false,
+				["WeakAuras_firey_brand_buff"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_new_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rune_tap_charges"] = {
+				["WeakAuras_black_ox_statue"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_04-astral_vulnerability"] = {
+				["WeakAuras_trilliax_arcane_slash"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -3861,17 +4037,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_06-wither"] = {
-					["Inherit"] = false,
+				["WeakAuras_beastial_wrath_rdy_ooc_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_gift_of_the_queen_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_03-aqueous_burst"] = {
-					["Inherit"] = false,
+				["WeakAuras_ivy_veins_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_plague_leech_cooldown__"] = {
 					["SkinID"] = "Apathy",
@@ -3881,23 +4057,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blur_buff"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_06-soulbind"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_cloudburst_totem_buff__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_oli-bone_shield_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_bullseye_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_avatar:_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_taunt_on_cd_blood"] = {
+				["WeakAuras_spinners_cooldown_up__(hunter)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3909,37 +4085,37 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_iron_reaver_//_flame_vulnerability_(dps_only,_mythic_only)"] = {
+				["WeakAuras_aura_mastery_(holy)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_monk_loph___2"] = {
+				["WeakAuras_kill_shot_usable_bm"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_wariorr_cd_loph__"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_shadow_reflection:_hopeless"] = {
+				["WeakAuras_armageddon_blast"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tank_ring_druid_cd"] = {
+				["WeakAuras_de_-_bone_saw"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_sk_(m)_-_toxic_chitin"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_krosus_searing_brand"] = {
-					["Inherit"] = false,
+				["WeakAuras_fire_blast_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_anti_magic_shell_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_stampede_cooldown_up__2"] = {
-					["Inherit"] = false,
+				["WeakAuras_eye_of_tyr_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_cloud_burst"] = {
 					["SkinID"] = "Apathy",
@@ -3949,11 +4125,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_illidan's_sightless"] = {
-					["Inherit"] = false,
+				["WeakAuras_collosus_smash"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_test_-_flaming_orb"] = {
+				["WeakAuras_stampeding_roar_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3973,7 +4149,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_colossus_smash_debuff"] = {
+				["WeakAuras_spray_sand_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3981,11 +4157,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_riposte_cooldown_up"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_incaratin_cooldown_up_guardian_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_in_rune_of_power_ash_2"] = {
+				["WeakAuras_frostfeaver_missing"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -3993,7 +4169,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xhul'horac_//_withering_gaze_(stacking_debuff,_tank_only)"] = {
+				["WeakAuras_star_augur_absolute_zero"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_sm_-_astral_vulnerability"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4001,31 +4181,27 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fa_-_desolate_(cast)"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ms_(m)_-_delicious_bufferfish"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_tyr's_deliverance"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_runic_shield_orange"] = {
+				["WeakAuras_sk_(m)_-_volatile_fragments"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_06-soulbind"] = {
+				["WeakAuras_trinket_1_use_cd_(blood_dk)__"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_explosive_shot_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_frenzied_regeneration"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bestial_wrath"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_titans_thunder_cd"] = {
+				["WeakAuras_titan's_thunder"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -4053,13 +4229,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_aura_mastery_(holy)"] = {
+				["WeakAuras_rblow:_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wellspring_on_cd"] = {
-					["SkinID"] = "Apathy",
+				["NOP"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_droar:_ready"] = {
 					["SkinID"] = "Apathy",
@@ -4073,23 +4249,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_armageddon_blast"] = {
+				["WeakAuras_blessing_of_spellwarding"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_essence_of_g'hanir_cd_up"] = {
+				["WeakAuras_invisibility_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trilliax_arcane_slash"] = {
-					["Inherit"] = false,
+				["WeakAuras_bloodbath"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_havoc_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spinners_cooldown_up__(hunter)"] = {
+				["WeakAuras_death_and_decay_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4105,9 +4281,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_de_-_scythe_sweep_(tank)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_05-slicing_tornado"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_weapon_enchant_(dps_warrior)"] = {
 					["SkinID"] = "Apathy",
@@ -4121,35 +4297,35 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_explosive_shot_cooldown_up"] = {
+				["WeakAuras_horn_of_winter_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sm_-_astral_vulnerability"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_twisted_reflection_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_vigilance_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_collosus_smash"] = {
+				["WeakAuras_prot_warrior_usable_trinket"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_incap_roar_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_firey_brand_buff"] = {
+				["WeakAuras_hb_-_grace_of_nature"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shadow_of_death"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_black_ox_statue"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_eye_of_tyr_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_beastial_wrath_rdy_ooc_2"] = {
+				["WeakAuras_trinket_1_procc_(protpaladin)_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4157,17 +4333,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_holy_avenger_buff_(holy)__2"] = {
+				["WeakAuras_rainfall_usable"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blizzard_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_gd_-_soul_siphon"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["NOP"] = {
-					["Inherit"] = false,
+				["WeakAuras_vendetta_cooldown___"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_rend_missing"] = {
 					["SkinID"] = "Apathy",
@@ -4181,7 +4357,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_flourish_cd"] = {
+				["WeakAuras_tranquility_cd_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4197,13 +4373,26 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_seraphim_avalible_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_tr_-_arcane_slash_(tank)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kill_shot_usable_bm"] = {
+				["Bartender4_StanceBar"] = {
+					["Colors"] = {
+						["Gloss"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Normal"] = {
+							0.25, -- [1]
+							0.25, -- [2]
+							0.25, -- [3]
+							1, -- [4]
+						},
+					},
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_starfall"] = {
 					["SkinID"] = "Apathy",
@@ -4233,7 +4422,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demon_soul_3_2"] = {
+				["WeakAuras_rockbiter_coolddown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4241,30 +4430,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_prot_warrior_usable_trinket"] = {
-					["Inherit"] = false,
+				["WeakAuras_hr_-_fixated"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_seraphim_cd_loph_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["Bartender4_StanceBar"] = {
-					["Colors"] = {
-						["Gloss"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Normal"] = {
-							0.25, -- [1]
-							0.25, -- [2]
-							0.25, -- [3]
-							1, -- [4]
-						},
-					},
+				["WeakAuras_unstable_mana_stacks"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_tigereye_brew_buff"] = {
 					["SkinID"] = "Apathy",
@@ -4278,13 +4454,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_frenzied_regeneration"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_neltharions_fury_cooldown_up_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tank_ring_druid_cd_up"] = {
-					["Inherit"] = false,
+				["WeakAuras_gr_-_shattering_star"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_thorasus_engine"] = {
 					["SkinID"] = "Apathy",
@@ -4294,15 +4470,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadow_of_death"] = {
+				["WeakAuras_tr_-_arcane_seepage"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_moonfire_debuff_missing_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_stampeding_roar_cd_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_spray_sand_2"] = {
+				["WeakAuras_blessing_of_sacrifice"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4310,7 +4486,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_invisibility_cooldown_up___"] = {
+				["WeakAuras_execute_dps_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4318,11 +4494,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_frostfeaver_missing"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_gm_-_spanning_singularity"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_incap_roar_2"] = {
+				["WeakAuras_doomwinds_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4330,9 +4506,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_armaggedon"] = {
-					["Inherit"] = false,
+				["WeakAuras_kj_-_sightless_gaze"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_imp_swarm_ready"] = {
 					["SkinID"] = "Apathy",
@@ -4362,13 +4538,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tc_-_seeker_swarm_cast"] = {
+				["WeakAuras_armaggedon"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blessing_of_spellwarding"] = {
-					["Inherit"] = false,
+				["WeakAuras_horn_of_valor_rdy"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bursting_dreadflame"] = {
 					["Inherit"] = false,
@@ -4386,7 +4562,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gr_-_shattering_star"] = {
+				["WeakAuras_demoralizing_banner_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4394,17 +4570,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hb_-_grace_of_nature"] = {
+				["WeakAuras_sk_-_broken_shard"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_twisted_reflection_2"] = {
+				["WeakAuras_incap_rdy"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_rblow:_ready"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_spellblade_aluriel_annihilated"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dps_ring_monk_cd_loph____2"] = {
 					["SkinID"] = "Apathy",
@@ -4418,45 +4594,45 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hr_-_fixated"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_09-felclaws_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_necrotic_breath"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_racial_goblin_2"] = {
+				["WeakAuras_charge:_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_09-felclaws_2"] = {
+				["WeakAuras_toucb_of_death_cooldown_up__"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bloodbath"] = {
+				["WeakAuras_mannoroth_//_curse_of_the_legion_(dispellable_debuff)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_death_and_decay_cooldown_up__"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_lohcd"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_divine_steed_buff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_05-slicing_tornado"] = {
-					["Inherit"] = false,
+				["WeakAuras_trinket_1_procc_(protpaladin)_cd_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_molten_core_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_neltharions_fury_cooldown_up_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_hand_of_salvation"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_blade_of_justice"] = {
 					["SkinID"] = "Apathy",
@@ -4466,33 +4642,33 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_unstable_mana_stacks"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_divine_steed"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_burning_rush"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_imp_swarm_cd"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_shield_of_light"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_doomwinds_cooldown_up"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_kr_-_orb_of_destruction"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_death_grip_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_scourge_of_worlds"] = {
+				["WeakAuras_wild_charge"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_wrt"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_mind_freeze_cooldown_up___2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tyrant_velhari_//_harbinger's_mending_(interupt)"] = {
 					["SkinID"] = "Apathy",
@@ -4502,7 +4678,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_procc_(protpaladin)_buff"] = {
+				["WeakAuras_draenic_agi_poti_hunter"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4510,7 +4686,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rainfall_usable"] = {
+				["WeakAuras_gorefiend_//_fel_flames_(stacking_debuff,_tank_only)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4522,13 +4698,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_incap_rdy"] = {
-					["Inherit"] = false,
+				["WeakAuras_dancing_rune_weak"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_vendetta_cooldown___"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_09-armageddon_rain"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_shard_cdrino_"] = {
 					["SkinID"] = "Apathy",
@@ -4546,7 +4722,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_raidbuff-spell_power"] = {
+				["WeakAuras_wild_growth_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4558,7 +4734,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_moonfire_debuff_missing_2"] = {
+				["WeakAuras_raidbuff-spell_power"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4566,11 +4742,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gm_-_spanning_singularity"] = {
-					["Inherit"] = false,
+				["WeakAuras_nether_storm"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_rot"] = {
+				["WeakAuras_darkness_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4590,31 +4766,31 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rockbiter_coolddown_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_hb_-_call_of_night"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_paladin_trinket_ret__loph_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wild_growth_cd"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_demo_shout_buff_____2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_mighty_bash_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blessing_of_sacrifice"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_coins"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_burst_of_speed_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_sa_-_annihilate_(tank)"] = {
+				["WeakAuras_lohup"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_down_draft"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -4630,7 +4806,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_darkness_cooldown_2"] = {
+				["WeakAuras_siegebreaker_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4638,9 +4814,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_08-rupture_realities"] = {
-					["Inherit"] = false,
+				["WeakAuras_sbhaunt"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_obliteration_cd_up"] = {
 					["SkinID"] = "Apathy",
@@ -4658,31 +4834,31 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_essence_of_g'hanir"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_fists_of_fury_cooldown_up___2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blood_shield"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spiritwalkers_grace_cooldown"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_08-rupture_realities"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bloodthirst_up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fists_of_fury_cooldown_up___2"] = {
-					["Inherit"] = false,
+				["WeakAuras_essence_of_g'hanir"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_supernova_cooldown__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_execute_dps_2"] = {
+				["WeakAuras_crows_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4706,25 +4882,25 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_focused_dreadflame"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_divine_steed"] = {
+				["WeakAuras_kingsbane_cooldown_u"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_1_procc_(protpaladin)_cd_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_sa_-_frostbitten"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hand_of_salvation"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_incarnation:"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_demoralizing_banner_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_spitit_bomb"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_pestilent_pustules"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_presence_of_mind_cooldown_up____2"] = {
 					["SkinID"] = "Apathy",
@@ -4734,7 +4910,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_prep_cd_2"] = {
+				["WeakAuras_mv_(m)_-_fragment_burst"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4746,17 +4922,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_resto_2p_t20"] = {
-					["Inherit"] = false,
+				["WeakAuras_hellfire_high_council_//_acidic_wound_(stacking_debuff,_tank_only)"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bloodbath_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_pestilent_pustules"] = {
-					["Inherit"] = false,
+				["WeakAuras_prep_cd_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_riptide_stacks"] = {
 					["SkinID"] = "Apathy",
@@ -4770,13 +4946,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_toucb_of_death_cooldown_up__"] = {
-					["Inherit"] = false,
+				["WeakAuras_mark_of_chaos_fixed_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_hellfire_high_council_//_acidic_wound_(stacking_debuff,_tank_only)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_energizing_elixir_cooldown_up____2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hb_-_parasitic_fetter"] = {
 					["Inherit"] = false,
@@ -4786,15 +4962,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_lohcd"] = {
+				["WeakAuras_blood_mirror_buff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_charge:_ready"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_bastion_of_the_light_cd"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_beacon_of_virtue_cooldown"] = {
+				["WeakAuras_total_absorb_icon"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4810,7 +4986,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_metamorphosis_cooldown____2"] = {
+				["WeakAuras_beacon_of_virtue_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4834,7 +5010,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mannoroth_//_curse_of_the_legion_(dispellable_debuff)"] = {
+				["WeakAuras_blooddrinker"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4842,15 +5018,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_incap_rdy_2"] = {
+				["WeakAuras_no_brew_stacks___2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shockwave_cooldown___prot"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_nether_storm"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_blinding_lgith_2"] = {
+				["WeakAuras_ibf_cooldown"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -4866,17 +5042,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wild_charge"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadowfiend_cd"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_shield_of_light"] = {
-					["Inherit"] = false,
+				["WeakAuras_sb:haunt"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_br_fur"] = {
-					["Inherit"] = false,
+				["WeakAuras_zeal"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_incaratin_cooldown_up_resto"] = {
 					["Inherit"] = false,
@@ -4886,15 +5062,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_last_stand_cooldown_up_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_gow_on_cd"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_mind_freeze_cooldown_up___2"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_draenic_agi_poti_hunter"] = {
+				["WeakAuras_kj_-_gravity_squeeze"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ckoudburst_buff_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4902,17 +5078,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blood_mirror_buff"] = {
-					["Inherit"] = false,
+				["WeakAuras_spell_reflection_cd_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_fel_devasataion_cooldown__2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dancing_rune_weak"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_kr_-_searing_brand_(tank)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_light_of_the_protector__cooldown"] = {
 					["SkinID"] = "Apathy",
@@ -4926,17 +5102,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_09-armageddon_rain"] = {
-					["Inherit"] = false,
+				["WeakAuras_wrathstorm"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_incanters_flow_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_siegebreaker_cooldown_up__"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_volatile_rot_distance_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_leachtrinket"] = {
 					["Inherit"] = false,
@@ -4954,13 +5130,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hb_-_call_of_night"] = {
-					["Inherit"] = false,
+				["WeakAuras_nithramus_cd"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_coins"] = {
-					["Inherit"] = false,
+				["WeakAuras_missing_poison"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_nightwell_energy"] = {
 					["Inherit"] = false,
@@ -4970,19 +5146,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_agi_pot_hunter"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_hammer_of_justice_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_missing_poison"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_last_stand_cooldown_2"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_crows_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_exploding_keg_cd"] = {
+				["WeakAuras_garrote_lopg"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -4990,11 +5166,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_lohup"] = {
-					["Inherit"] = false,
+				["WeakAuras_healing_rain_cooldown_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_down_draft"] = {
+				["WeakAuras_ancestral_protection_totem_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -5014,9 +5190,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ancestral_protection_totem_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_blackhand_av_ashes_count"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_explosive_orbs_"] = {
 					["Inherit"] = false,
@@ -5046,23 +5222,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_aura_of_decay"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_festering_wound_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tigereyebrew_stacks_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blackhand_av_ashes_count"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_elereth_(no_split_debuff)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bone_shield_loph_missing__2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tr_-_annihilation"] = {
+				["WeakAuras_karma_buff_amount"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -5070,29 +5246,29 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gm_-_ablating_explosion_(tank)"] = {
+				["WeakAuras_energizer_elixir"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bastion_of_the_light_cd"] = {
-					["Inherit"] = false,
+				["WeakAuras_breath_of_sindragosa"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_nitro_boots"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tr_-_succulent_feast"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadow_word_death"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bubble_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_xuen_cooldown_up__"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_sandstorm"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dire_beast_cooldown_up"] = {
 					["SkinID"] = "Apathy",
@@ -5106,21 +5282,21 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_arcway2setleatherdruid"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_murder_cd"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shockwave_cooldown___prot"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_bubble_cd_up"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_mv_(m)_-_fragment_burst"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_sigil_of_silence"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_mark_of_chaos_fixed_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_barrage_cooldown__2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_consecration__cooldown_(holy)"] = {
 					["SkinID"] = "Apathy",
@@ -5134,19 +5310,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_incaratin_cooldown_up_"] = {
+				["WeakAuras_tank_ring_druid"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_st_-_chilled/frozen"] = {
+				["WeakAuras_fire_shock_g_restoration"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_trinket_1_procc_(dhtank)_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_uther's_refresh"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_twist_of_fate"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5158,19 +5334,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sb:haunt"] = {
+				["WeakAuras_gust_of_wind_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fists_of_fury_cooldown___2"] = {
-					["Inherit"] = false,
+				["WeakAuras_void_torrent"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_meat_cleaver_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_storm,_earth,_and_fire_up"] = {
+				["WeakAuras_raidbuff-multistrike"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5178,23 +5354,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_zeal"] = {
+				["WeakAuras_ascendance_cd_restoration"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_last_stand_cooldown_2"] = {
+				["WeakAuras_feed_on_the_weak"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_spell_reflection_cd_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_last_stand_cooldown_up"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_havoc_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fire_shock_restoration"] = {
+				["WeakAuras_momentum_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5206,9 +5382,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blighted_rurne_weapon_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_trinket_1_procc_(dk)"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sk_-_arcane_tether_(tank)"] = {
 					["Inherit"] = false,
@@ -5218,11 +5394,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadow_word_death"] = {
+				["WeakAuras_ghost_wolf"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_gravity_squeeze"] = {
+				["WeakAuras_hst_on_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5242,12 +5418,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_precense_of_mind_cooldown__"] = {
+				["WeakAuras_lightning_surge_totem_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["infAuras"] = {
-					["SkinID"] = "Apathy",
 					["Colors"] = {
 						["Normal"] = {
 							0.25, -- [1]
@@ -5256,29 +5431,30 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["Inherit"] = false,
-				},
-				["WeakAuras_nithramus_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wrathstorm"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_hammer_of_justice_cd_up"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_mangle_cd_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_raidbuff-attack_power_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_arcane_slicer"] = {
+				["WeakAuras_fear_shaman"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_elereth_(no_split_debuff)"] = {
-					["Inherit"] = false,
+				["WeakAuras_crystal_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_bladestorm_ready"] = {
+				["WeakAuras_the_fires_of_justice"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5294,37 +5470,37 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_agi_pot_hunter"] = {
+				["WeakAuras_rapidfire_rdy_combat"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sweeping_strikes"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_03-jagged_abrasion"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fear_shaman"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadowfiend_cd_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_army_lopg_cooldown____"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_seraphim_buff_2"] = {
+				["WeakAuras_bladestorm_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rapidfire_rdy_combat"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_tc_-_burning_soul_(healer)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_elisande_ablated"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sandstorm"] = {
-					["Inherit"] = false,
+				["WeakAuras_htt_on_cd_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_spiritwalk_cooldown"] = {
 					["SkinID"] = "Apathy",
@@ -5338,7 +5514,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadowfiend_cd_2"] = {
+				["WeakAuras_tiger's_fury_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5358,7 +5534,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_barrage_cooldown__2"] = {
+				["WeakAuras_02-bone_saw"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -5366,23 +5542,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_firey_brand_buff_2"] = {
+				["WeakAuras_kill_command_cooldown___"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_spell_reflection_lazel"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tc_-_burning_soul_(healer)"] = {
+				["WeakAuras_st_-_icy_ejection"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_energizer_elixir"] = {
-					["Inherit"] = false,
+				["WeakAuras_spiritlink_totem"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_bubble_cd_up"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sigil_of_silence"] = {
+				["WeakAuras_shield_block_lazel"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -5394,11 +5570,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wstrike:_not_ready"] = {
+				["WeakAuras_draw_power_yellow"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_command_demon_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_command_demon_cooldown_up___"] = {
+				["WeakAuras_epidemic"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5406,15 +5586,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ca_-_time_bomb"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_rune_of_power_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_umbilicus_eternus"] = {
+				["WeakAuras_09-felclaws"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -5422,19 +5598,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gust_of_wind_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_healing_stream_totem_cooldown_up__2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_shockwave:_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ca_-_chrono_1-8_(tank)"] = {
+				["WeakAuras_torment"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_raidbuff-multistrike"] = {
+				["WeakAuras_lava_burst_cd_restoration"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5454,13 +5630,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadow_reflection"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_epidemic_ooc"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_05-befouling_ink"] = {
-					["Inherit"] = false,
+				["WeakAuras_artillery_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_st_(m)_-_star_signs"] = {
 					["Inherit"] = false,
@@ -5474,21 +5650,21 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_artillery_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_05-befouling_ink"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_ascendance_cd_restoration"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_last_stand_cooldown_up"] = {
+				["WeakAuras_hammer_of_justice_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_vampiric_blood_cooldown___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_04-embrace_of_the_eclipse_boss"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_death_pact_cd"] = {
 					["SkinID"] = "Apathy",
@@ -5502,13 +5678,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tr_-_arcing_bonds"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadow_dance_cooldown__0"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_spell_reflection_lazel"] = {
-					["Inherit"] = false,
+				["WeakAuras_colossus_smash_loph_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_skorpyron_arcane_tether"] = {
 					["Inherit"] = false,
@@ -5522,19 +5698,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_feed_on_the_weak"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_lightning_surge_totem_2"] = {
+				["WeakAuras_icy_talons_missing"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spiritlink_totem"] = {
+				["WeakAuras_blood_drinker_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_pilar_of_frost_2"] = {
+				["WeakAuras_natures_vigil_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kill_shot_usable_mm"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5550,21 +5726,21 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kill_command_cooldown___"] = {
+				["WeakAuras_murder_ready"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_horn_of_valor_rdy_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hst_on_cd_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_bonebreaking_strike"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_garrote_lopg_2"] = {
+				["WeakAuras_curse_of_the_dreadblades_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-				},
-				["WeakAuras_torment"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_arcane_orb_cooldown__2"] = {
 					["SkinID"] = "Apathy",
@@ -5578,11 +5754,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_stream_totem_cooldown_up__2"] = {
+				["WeakAuras_belt"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_mangle_cd_2"] = {
+				["WeakAuras_runic_shield_blue"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -5602,11 +5778,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_colossus_smash_loph_2"] = {
+				["WeakAuras_siegebreaker_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_crystal_2"] = {
+				["WeakAuras_shield_of_the_righteous"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5618,21 +5794,21 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_of_the_righteous"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_piercing_shot"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_collosus_smash_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_the_fires_of_justice"] = {
+				["WeakAuras_shadow-lord_iskar_//_fel_fire_(ground_effect)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_block_lazel"] = {
-					["Inherit"] = false,
+				["WeakAuras_hst_3"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_fel_nova_cooldown_up"] = {
 					["SkinID"] = "Apathy",
@@ -5646,15 +5822,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_horn_of_valor_rdy_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_brackwater_barrage"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blade_dance_cooldown_up_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_htt_on_cd_2"] = {
+				["WeakAuras_dps_ring_cd(hunter)_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5666,53 +5842,53 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_02-bone_saw"] = {
-					["Inherit"] = false,
+				["WeakAuras_lightning_surge_totem_up_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_shared_fate"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_strike_of_the_memelord_cd"] = {
+				["WeakAuras_missing_rf_prot_pala_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_lava_burst_cd_restoration"] = {
+				["WeakAuras_soul_reaper_cooldown____"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_survival_instincts"] = {
-					["Inherit"] = false,
+				["WeakAuras_vamp_blood"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_corpse_shield_debuff_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_rushing_jade_wind"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sr_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_epidemic_ooc"] = {
-					["Inherit"] = false,
+				["WeakAuras_riptide"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_blind"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blood_drinker_cooldown_"] = {
+				["WeakAuras_keg_smash_cooldown_up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_epidemic"] = {
+				["WeakAuras_ancestral_guidance"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_09-felclaws"] = {
-					["Inherit"] = false,
+				["WeakAuras_marking_targets"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_weolllll_feeddd"] = {
 					["SkinID"] = "Apathy",
@@ -5750,17 +5926,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bloodmirror_cd"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_arcane_power_loph_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soul_reaper_cooldown_____2"] = {
+				["WeakAuras_bloodmirror_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_cloudburst_totem_cooldown__2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_befouled"] = {
 					["SkinID"] = "Apathy",
@@ -5778,15 +5954,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_runic_shield_yellow"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_thrash_cat_2"] = {
+				["WeakAuras_hero_drums_cd_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_barrage_cooldown_"] = {
+				["WeakAuras_spiritwalk_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_aura_of_contempt"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5794,7 +5970,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_aura_of_contempt"] = {
+				["WeakAuras_barrage_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5806,9 +5982,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hst_3"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_blood_boil_cd_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_expoloding_keg"] = {
 					["SkinID"] = "Apathy",
@@ -5822,9 +5998,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_04-embrace_of_the_eclipse_boss"] = {
-					["Inherit"] = false,
+				["WeakAuras_blazing_speed_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_04-incorporeal_shot"] = {
 					["Inherit"] = false,
@@ -5842,27 +6018,23 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_siegebreaker_ready"] = {
+				["WeakAuras_roll_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_icy_talons_missing"] = {
+				["WeakAuras_find_weaknessloph__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_belt"] = {
+				["WeakAuras_st_-_absolute_zero_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_natures_vigil_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_shield_of_vengeance_cooldown"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hfc13:_chaos_mythic_v15"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_kill_shot_usable_mm"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5870,15 +6042,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_meta_havoc_loph_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_wild_charge_cd_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gd_-_flames_of_sargeras"] = {
-					["Inherit"] = false,
+				["WeakAuras_final_verdict_yo"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_curse_of_the_dreadblades_up"] = {
+				["WeakAuras_riptide_2_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5890,25 +6066,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hfc:_archimonde_-_chaos"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_gd_-_flames_of_sargeras"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dps_ring_monk_loph__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_cd(hunter)_"] = {
+				["WeakAuras_hfc:_archimonde_-_chaos"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_brackwater_barrage"] = {
+				["WeakAuras_fel_rush_cooldown_2_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_frenzied_regen_cd_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_cloudburst_totem_cooldown_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_shadow-lord_iskar_//_fel_chakram_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
@@ -5918,25 +6094,25 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_vamp_blood"] = {
+				["WeakAuras_breath_of_sindragosa_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ancestral_guidance"] = {
+				["WeakAuras_soul_reaper_buff_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_speed_set_dk"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spiritwalk_cooldown_up"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_buff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dread_thorns_aura"] = {
+				["WeakAuras_icebound_fortitude_cooldown__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-				},
-				["WeakAuras_tc_-_bad_stuff"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hotw_2"] = {
 					["SkinID"] = "Apathy",
@@ -5958,15 +6134,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_cloudburst_totem_cooldown__2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_xavius_dream_buff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trinket_1_use_cd_(frostdk)___"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_soul_reaper_cooldown____"] = {
+				["WeakAuras_resto_druid_legendary_trinket"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -5974,7 +6150,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fortifying_brew_cooldown_up____2"] = {
+				["WeakAuras_shield_of_vengance_cooldown_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -5990,9 +6166,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_prep_cd"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_hand_from_beyond"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["ElvUI_Stance Bar"] = {
 					["SkinID"] = "Apathy",
@@ -6002,23 +6178,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_find_weaknessloph__"] = {
+				["WeakAuras_healer_ring"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_st_-_absolute_zero_(tank)"] = {
+				["WeakAuras_prep_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_02-fel_squall"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fel_rush_cooldown_2_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_gust_of_wind"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_03-driven_assault"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_marking_targets"] = {
+				["WeakAuras_chimaera_shot_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6030,11 +6206,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_roll_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sindragosa's_fury"] = {
+				["WeakAuras_est"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6042,15 +6214,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_chimaera_shot_cooldown_2"] = {
+				["WeakAuras_sindragosa's_fury"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_stampede_cooldown___"] = {
+				["WeakAuras_blighted_rune_weapon"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_avatar_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dancing__rune_weapon_"] = {
+				["WeakAuras_unending_resolve_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6058,15 +6234,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_icebound_fortitude_cooldown__"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_thrash_debuff_missing_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_exorcism_cooldown__up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bone_shield_loph__oiver_4"] = {
+				["WeakAuras_lootspec2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6078,15 +6254,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blood_boil_cd_2"] = {
+				["WeakAuras_unerring_shear"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blazing_speed_cooldown_up_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_healing_stream_totem__echo"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_legendarybuff_2"] = {
+				["WeakAuras_toombstone_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6098,9 +6274,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_of_vengeance_cooldown"] = {
-					["Inherit"] = false,
+				["WeakAuras_as+le_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_arcane_orb_cooldown_"] = {
 					["SkinID"] = "Apathy",
@@ -6130,7 +6306,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gust_of_wind"] = {
+				["WeakAuras_earthen_shield_totem"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6150,23 +6326,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soul_reaper_buff_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_fa_-_annihilation"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_shield_of_the_righteous_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_tyrant_velhari_//_edict_of_condemnation_(timed_debuff)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ascendance_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_explosive_shot_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_meta_havoc_loph_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_bone_shield_down"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6178,7 +6354,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_final_verdict_yo"] = {
+				["WeakAuras_swiftmend_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6190,7 +6366,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_riptide_2_3"] = {
+				["WeakAuras_missing_seal_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6206,7 +6382,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_swiftmend_2"] = {
+				["WeakAuras_hellfire_assault_//_howling_axe_(timed_debuff)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_seraphim_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6214,15 +6394,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_arcanic_bane"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_icy_floes_cooldown___2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_icy_floes_cooldown__"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_breath_of_sindragosa_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6230,7 +6406,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_of_the_righteous_3"] = {
+				["WeakAuras_racial_pandaren_on_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6246,17 +6422,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_stormstrike_cooldown"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_rune_tap_loph__cd_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_berserk"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_asendance_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_09-darkness_of_a_thousand_souls"] = {
-					["Inherit"] = false,
+				["WeakAuras_void_torrent_cd"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sacred_shield_2"] = {
 					["SkinID"] = "Apathy",
@@ -6286,19 +6462,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_unerring_shear"] = {
+				["WeakAuras_trinket_2_procc_(protpaladin)__cd_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_quake"] = {
-					["Inherit"] = false,
+				["WeakAuras_howling_axe_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_vampiric_embrace_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_of_vengance_cooldown_up"] = {
+				["WeakAuras_avalanche"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6306,23 +6482,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_healer_ring"] = {
+				["WeakAuras_cenarion_ward_cd_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_adrenaline_rush_loph"] = {
+				["WeakAuras_demoralizing_shout_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_02-fel_squall"] = {
-					["Inherit"] = false,
+				["WeakAuras_holy_avenger_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_nithramus_ring"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_marked_for_death_2"] = {
+				["WeakAuras_ironbark_cd_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6334,9 +6510,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demoralizing_shout_ready"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_trinket_2_unholy_dk"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dark_rush"] = {
 					["Inherit"] = false,
@@ -6346,15 +6522,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_raidbuff-haste"] = {
+				["WeakAuras_adrenaline_rush_loph"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ironbark_cd_up_"] = {
+				["WeakAuras_marked_for_death_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_holy_avenger_2"] = {
+				["WeakAuras_cranes_zeal"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6362,7 +6538,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_cranes_zeal"] = {
+				["WeakAuras_druid-guardian_frenzied_regen_v5.3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6370,15 +6546,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_toombstone_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_breach_armor"] = {
+				["WeakAuras_mangle_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_alacrity_buff"] = {
+				["WeakAuras_rogue:_rupture_-_up_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_paladin_trinket_holy_loph__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6394,9 +6570,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_unending_resolve_buff"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_rune_tap_loph__3"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_missing_flask"] = {
 					["SkinID"] = "Apathy",
@@ -6410,7 +6586,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_as+le_2"] = {
+				["WeakAuras_wail_of_svala"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6418,11 +6594,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spell_reflection_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_spiritwalk_cooldown_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_ardent_defender_on_4"] = {
+				["WeakAuras_spell_reflection_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6434,17 +6610,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_healing_stream_totem__echo"] = {
-					["Inherit"] = false,
+				["WeakAuras_soulburn_off"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_execution_sentence_cooldown_up____2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_thrash_debuff_missing_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_dps_ring_rogue_cd_loph__"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_adrenaline_rish__cooldown__up__"] = {
 					["SkinID"] = "Apathy",
@@ -6474,9 +6650,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dragon's_perekrit'_spawn_(ysondre)_(adit_auras)"] = {
-					["Inherit"] = false,
+				["WeakAuras_subterfuge"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_hook_2"] = {
 					["SkinID"] = "Apathy",
@@ -6486,7 +6662,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rune_tap_loph__cd_2"] = {
+				["WeakAuras_waking_nightmare"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6494,13 +6670,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ascendance_up"] = {
+				["WeakAuras_demon_spikes_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ca_-_time_release"] = {
-					["Inherit"] = false,
+				["WeakAuras_avenging_wrath_buff_(holy)"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_corpse_shield_debuff"] = {
 					["SkinID"] = "Apathy",
@@ -6522,23 +6698,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_arcanic_bane"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_missing_seal_2"] = {
+				["WeakAuras_execute_proty"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_asendance_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_seraphim_2"] = {
+				["WeakAuras_shadow-lord_iskar_//_phantasmal_winds_(interactive_debuff)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_power_word:_shield_2"] = {
+				["WeakAuras_rapid_fire_loph_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ca_-_time_release"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_wellspring_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6558,11 +6734,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avalanche"] = {
+				["WeakAuras_glazik_void_spawn_debuff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_racial_pandaren_on_cd_2"] = {
+				["WeakAuras_apt_on_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6586,7 +6762,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_thrash_cd"] = {
+				["WeakAuras_fury_of_the_illidari_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6602,9 +6778,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_thorasus_ring"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_soul_blade"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_aspect_of_the_fox"] = {
 					["SkinID"] = "Apathy",
@@ -6614,19 +6790,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_06-sundering_doom_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_empower_wards_cooldown_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-				},
-				["WeakAuras_08-unbound_chaos"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_chimaera_shot_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_void_torrent_cd"] = {
+				["WeakAuras_stoneform_resto_shaman"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6634,7 +6810,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_09-bursting_dreadflame"] = {
+				["WeakAuras_thunderstrike_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6642,31 +6818,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_06-sundering_doom_2"] = {
+				["WeakAuras_wake_of_ashes_cooldown_up_"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_rune_tap_loph__3"] = {
-					["Inherit"] = false,
+				["WeakAuras_consumption_cooldown_up"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sk_-_shockwave_cast"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_frozen_orb"] = {
+				["WeakAuras_gorefiend's_grasp_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rogue:_rupture_-_up_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_meat_cleaver"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_dps_ring_mage_cd_loph_2"] = {
+				["WeakAuras_focused_rage_warrior_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6674,11 +6842,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_dps_ring_mage_cd_loph_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_meat_cleaver"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_bladestorm"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wail_of_svala"] = {
+				["WeakAuras_divine_aegis_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6690,29 +6866,29 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_wake_of_ashes_cooldown_up_"] = {
+				["WeakAuras_virulent_plague_missing_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_kilrogg_deadeye_//_rending_howl_(interupt)"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_gorefiend's_grasp_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_infernal_strike_cooldown_up_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_kilrogg_deadeye_//_rending_howl_(interupt)"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_est_on_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_draenic_armor_potion_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_paladin_trinket_holy_loph__"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_tangled_web"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dps_ring_warlock_loph__"] = {
 					["SkinID"] = "Apathy",
@@ -6730,19 +6906,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_aegis_2"] = {
+				["WeakAuras_crash_lightning_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rapid_fire_loph_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_star_augur_gravitational_pull"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_ms_-_jaws_from_the_deep"] = {
+				["WeakAuras_blink_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6750,11 +6918,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soulburn_off"] = {
+				["WeakAuras_ms_-_jaws_from_the_deep"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_rogue_cd_loph__"] = {
+				["WeakAuras_star_augur_gravitational_pull"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_corpse_shield"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_sacred_shield"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6762,7 +6938,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_guard_monk"] = {
+				["WeakAuras_tricks_of_the_trade"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6770,11 +6946,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tangled_web"] = {
+				["WeakAuras_bonestorm_cd_up_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_glazik_void_spawn_debuff"] = {
+				["WeakAuras_enrage_warrrior_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6790,17 +6966,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gorefiend's_grasp_cd"] = {
+				["WeakAuras_final_verdict_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soul_blade"] = {
-					["Inherit"] = false,
+				["WeakAuras_slice_loph_missing_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_avenging_wrath_buff_(holy)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_detonation"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_colossus_smash_loph"] = {
 					["SkinID"] = "Apathy",
@@ -6810,11 +6986,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_focused_rage_warrior_2"] = {
+				["WeakAuras_obliteration"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadow-lord_iskar_//_phantasmal_winds_(interactive_debuff)"] = {
+				["WeakAuras_son_off"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6826,31 +7002,31 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_draw_power_green"] = {
+				["WeakAuras_stinging_swarm"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_crash_lightning_buff"] = {
+				["WeakAuras_tiger_power_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_silence"] = {
-					["Inherit"] = false,
+				["WeakAuras_judgment_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_storm_bolt_cooldown_up____dps"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_virulent_plague_missing_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_replenishing_roots"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_corpse_shield"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fury_of_the_illidari_2"] = {
+				["WeakAuras_blade_dance_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_throw_glaive_cooldown_2_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6862,31 +7038,31 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shockwave_cooldown_up____2"] = {
+				["WeakAuras_vanish_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ignore_pain_loph_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_void_tendrils_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_diffuse_magic"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_envenom_loph_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_horn_of_valor_buff"] = {
+				["WeakAuras_nightmare_brambles"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_thunderstrike_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_kappa_totem_4"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bladestorm_cooldown_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_new"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -6902,25 +7078,25 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blink_cooldown_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_purple_shit_buff"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_sudden_death_2"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_tank_ring_cd_up_protpala_loph__"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_demonbult_debuff"] = {
+				["WeakAuras_new"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_abrasive_slime"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_demonbult_debuff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_tank_ring_cd_up_protpala_loph__"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_no_sef_stacks____2"] = {
 					["Inherit"] = false,
@@ -6930,11 +7106,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_slice_loph_missing_"] = {
+				["WeakAuras_defile_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dispersion_up"] = {
+				["WeakAuras_moonfire_debuff_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -6946,9 +7122,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_detonation"] = {
-					["Inherit"] = false,
+				["WeakAuras_rockbiter_coolddown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sa_-_detonate:_mof"] = {
 					["Inherit"] = false,
@@ -6958,313 +7134,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_healing_rain_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_tank_ring_protwariorr_loph_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sacred_shield"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_goak_avail"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_guard_cooldown_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_stinging_swarm"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_deterance_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_necrosis"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_riptide_cooldown_up_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_judgment_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_arcane_orb_cooldown_up___"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_grievous_rip"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_racial_troll_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_evocation_cooldown___"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_chimarera_shot_rdy_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_blur_cooldwon_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_lunar_emp_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_iluminated_healing_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_supplication_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_siegebreaker_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_stagger_light_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_04-incorporeal_shot_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_as_on_cd_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rupture_bar"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_crimson_vial_cooldown__up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rune_tap_loph_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["Bartender4_7"] = {
-					["SkinID"] = "Apathy",
-					["Colors"] = {
-						["Gloss"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Normal"] = {
-							0.25, -- [1]
-							0.25, -- [2]
-							0.25, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["WeakAuras_final_verdict_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_replenishing_roots"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_touch_of_karma_cooldown___"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_exec_avail"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_nightmare_brambles"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_obliteration"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_coe_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_lunar_emp"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_kj_-_armageddon_(debuff)"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_seed_of_corruption"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_dsyn_off"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_moonfire_debuff_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_st_-_nova_cast_alerts"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_purple_shit_buff"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_kill_shot_usable_mm_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_copeland_cdrino"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rage_of_the_sleeper_cd"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_thrill_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_unleash_life"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_lust"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_blade_dance_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sigil_of_flame_cooldown_up_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_lightning_surge_totem_up"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_divine_protection_buff___2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ancestral_protection_totem_up_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_draenic_armor_potion"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ibf_cd_up"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_vanish_cooldown_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_01-infernal_burning"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_flying_serpen_kick_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_shield_wall_lazel"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_rising_sun_kick_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rule_of_law_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_void_tendrils_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_diffuse_magic"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_trinket_2_procc_(shaman)"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_mass_roots_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_trueshot_cooldown"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_last_standr_cooldown__"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_int_pot_mage_loph_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_beastial_wrath_rdy"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_living_bomb_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_ghostly_strike_loph__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_operator_thogar_//_burning"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_innervate"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_elusive_brew_buff"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_dumb_infernal_cast"] = {
+				["WeakAuras_tank_ring_protwariorr_loph_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7285,15 +7159,27 @@ MasqueDB = {
 					},
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ss_refresh"] = {
+				["WeakAuras_goak_avail"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_nitro_boots_cd_2"] = {
+				["WeakAuras_guard_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_elusive_brew_buff_2"] = {
+				["WeakAuras_operator_thogar_//_burning"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_deterance_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_pillar_of_frost_cooldown____2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_riptide_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7301,99 +7187,85 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_slam_cooldown"] = {
+				["WeakAuras_living_bomb_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_crash_lightning_cooldown_up_2"] = {
+				["WeakAuras_arcane_orb_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_legendary_healer_ring"] = {
+				["WeakAuras_stagger_light_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_darkness_cooldown"] = {
+				["WeakAuras_evocation_cooldown___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_healthstone/tonic_2"] = {
+				["WeakAuras_chimarera_shot_rdy_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_darksoul_drain"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_vengeful_retreat_cooldown_2"] = {
+				["WeakAuras_blur_cooldwon_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demon_spikes_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ardent_defender_cooldown_up__"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_stun_arrow"] = {
+				["WeakAuras_04-incorporeal_shot_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bhotm_monk"] = {
+				["WeakAuras_iluminated_healing_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_adrenaline_rush_2"] = {
+				["WeakAuras_supplication_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_06-doomed_sundering"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_engi_cloak"] = {
+				["WeakAuras_as_on_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tyrant_velhari_//_seal_of_decay_(stacking_debuff,_tank_only)"] = {
+				["WeakAuras_racial_troll_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_raid_fire_cooldown"] = {
+				["WeakAuras_lunar_emp_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_recently_deathstrikes_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_shadowstep_cooldown_up___"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_lights_hammer_cooldown"] = {
+				["WeakAuras_siegebreaker_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ardent_defender_cd_4"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_elisande_ablation"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_shadempow(45rp_deathstrike)_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_explosive_shot_rdy_2"] = {
+				["WeakAuras_rupture_bar"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_flametounge_buff_2"] = {
+				["WeakAuras_crimson_vial_cooldown__up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_rune_tap_loph_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["Bartender4_7"] = {
+					["Colors"] = {
+						["Gloss"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Normal"] = {
+							0.25, -- [1]
+							0.25, -- [2]
+							0.25, -- [3]
+							1, -- [4]
+						},
+					},
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7401,47 +7273,59 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sr_usable"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_touch_of_karma_cd"] = {
+				["WeakAuras_ss_refresh"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_protection_buff___3_2"] = {
+				["WeakAuras_touch_of_karma_cooldown___"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_plague_leech_ready"] = {
+				["WeakAuras_exec_avail"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ancestral_guidance_up_2"] = {
+				["WeakAuras_lights_hammer_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_die_by_the_sword"] = {
+				["WeakAuras_enraged_regen_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_02-echoing_anguish"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_oli-vigilance"] = {
+				["WeakAuras_coe_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_savage_roar_overlay_2"] = {
+				["WeakAuras_flametounge_buff_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_broadsides"] = {
+				["WeakAuras_kj_-_armageddon_(debuff)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_flame_shock_2"] = {
+				["WeakAuras_seed_of_corruption"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_dsyn_off"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_blood_drinker_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_st_-_nova_cast_alerts"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_unleash_life"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_kill_shot_usable_mm_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7449,55 +7333,71 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mass_spell_reflection_ready"] = {
+				["WeakAuras_rage_of_the_sleeper_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_thrill_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_berserker_rage_cd"] = {
+				["WeakAuras_copeland_cdrino"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hammer_of_justice"] = {
+				["WeakAuras_lust"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_draenic_agi_pot_rogue"] = {
+				["WeakAuras_lightning_surge_totem_up"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_sigil_of_flame_cooldown_up_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_trueshot_cooldown"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_divine_protection_buff___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_garrote_missing_lopg_2"] = {
+				["WeakAuras_sa_-_mark_debuffs"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_draenic_armor_potion"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blighted_rune_weapon_cd"] = {
+				["WeakAuras_ibf_cd_up"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ancestral_protection_totem_up_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_01-infernal_burning"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_flying_serpen_kick_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_rogue_loph_"] = {
+				["WeakAuras_shield_wall_lazel"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_rising_sun_kick_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["AuraFrames_CancelCombatAura"] = {
-					["SkinID"] = "Apathy",
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["WeakAuras_evasion_buff___2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ravager_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_bloodsurge_2"] = {
+				["WeakAuras_dumb_infernal_cast"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7505,15 +7405,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_apocalypse_lopg_cooldown____"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_swg_on_cd_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_harmony_icon"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7521,45 +7413,49 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_incarnatinon_guardian_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_consc_cooldown"] = {
+				["WeakAuras_mass_roots_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_elereth_venom_debuff"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_explosive_shot_cooldown_up_2"] = {
+				["WeakAuras_nitro_boots_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dsyn"] = {
+				["WeakAuras_touch_of_karma_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_taint_of_the_sea"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_incanters_flow_loph_2"] = {
+				["WeakAuras_int_pot_mage_loph_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_odyns_fury_cooldown"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_desecrated_ground_cooldown___"] = {
+				["WeakAuras_beastial_wrath_rdy"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ironfur_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_trinket_2_procc_(shaman)"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_counter_shot_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_oli-vigilance"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_innervate"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_elusive_brew_buff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_coe_off"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_anti-magic_shell_loph_"] = {
 					["SkinID"] = "Apathy",
@@ -7573,27 +7469,35 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_seraphim_avalible_loph___2"] = {
+				["WeakAuras_elusive_brew_buff_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_wall_cooldown"] = {
+				["WeakAuras_ancestral_guidance_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fa_-_dark_mark"] = {
+				["WeakAuras_shield_slam_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_thrash_cd_2"] = {
+				["WeakAuras_bm-dire_beast_active"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_legendary_healer_ring"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mark_of_frostwolf_2"] = {
+				["WeakAuras_darksoul_drain"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_healthstone/tonic_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_eye_of_anzu_2"] = {
+				["WeakAuras_darkness_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7601,19 +7505,27 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_feral_spirit_cooldown_up"] = {
+				["WeakAuras_demon_spikes_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras__concordance_resto_shaman_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_cloudburst_healing"] = {
+				["WeakAuras_ardent_defender_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_eye_of_tyr_cooldown_up____2"] = {
+				["WeakAuras_savage_roar_overlay_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_raid_fire_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_adrenaline_rush_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_06-doomed_sundering"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -7621,27 +7533,47 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dampen_harm_cooldown_up___2"] = {
+				["WeakAuras_tyrant_velhari_//_seal_of_decay_(stacking_debuff,_tank_only)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_exsanguinate_cooldown__up____2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_spiriwalker's_grace_buff"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_bone_shield_loph__oiver_4_2"] = {
+				["WeakAuras_stun_arrow"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_mannoroth_//_shadow_bolt_volley_(interupt)"] = {
+				["WeakAuras_recently_deathstrikes_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shadowstep_cooldown_up___"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_lights_hammer_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_stagger_median_2"] = {
+				["WeakAuras_bhotm_monk"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_elisande_ablation"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_engi_cloak"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_explosive_shot_rdy_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mark_of_doom_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ha_refresh"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7662,51 +7594,43 @@ MasqueDB = {
 					},
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sera_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_as_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blur_cooldwon_up_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_kj_-_test_-_rupturing_singularity_(emote)"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_immolation_aura_cooldown_up_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rapid_fire_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_pet_transform"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_auto-repairing_autoclave"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_mark_of_ursol"] = {
+				["WeakAuras_divine_protection_buff___3_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_touc_of_death_cd"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_flamebender_//_charring_breath"] = {
+				["WeakAuras_plague_leech_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avenging_wrath_lohp_2"] = {
+				["WeakAuras_enraged_regen_ready"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_die_by_the_sword"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_02-echoing_anguish"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ironfur_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_diffuse_magic_cooldown_up_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_broadsides"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_flame_shock_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7714,27 +7638,107 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avenger's_shield_cooldown_2"] = {
+				["WeakAuras_mass_spell_reflection_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_siegebreaker_cooldown__2"] = {
+				["WeakAuras_berserker_rage_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_alpha_wolf"] = {
+				["WeakAuras_spiriwalker's_grace_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_throw_glaive_cooldown"] = {
+				["WeakAuras_draenic_agi_pot_rogue"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_smoke_bomb"] = {
+				["WeakAuras_garrote_missing_lopg_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_elemental_mastery"] = {
+				["WeakAuras_desecrated_ground_cooldown___"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_odyns_fury_cooldown"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["AuraFrames_CancelCombatAura"] = {
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+					},
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_evasion_buff___2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_blighted_rune_weapon_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_bloodsurge_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_apocalypse_lopg_cooldown____"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_dsyn"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_flamebender_//_charring_breath"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_harmony_icon"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_cloudburst_healing"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_elereth_venom_debuff"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_consc_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_incarnatinon_guardian_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_explosive_shot_cooldown_up_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_caress_of_the_tidemother"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_heal_ring_cd_holypala_loph___2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_taint_of_the_sea"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_incanters_flow_loph_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7742,11 +7746,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_evocation_cooldown____2"] = {
+				["WeakAuras_smoke_bomb"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avenging_wrath_ooldown_loph_2"] = {
+				["WeakAuras_archangel"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7754,11 +7758,183 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_shadow_word_death_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_draw_power_blue"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shield_wall_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_fa_-_dark_mark"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_thrash_cd_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_evocation_cooldown____2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_slice_and_dice"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kick_cooldown_up__"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_avenging_wrath_ooldown_loph_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras__concordance_resto_shaman_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_fallen_crusader"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_eye_of_tyr_cooldown_up____2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_kick_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_dampen_harm_cooldown_up___2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_exsanguinate_cooldown__up____2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_cenarius_dryad_aoe_debuff"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_t18_4p_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mannoroth_//_shadow_bolt_volley_(interupt)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_seed_of_destruction"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mark_of_ursol"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_sera_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_blinding_light_cooldown"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_blur_cooldwon_up_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_pet_transform"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_bone_shield_loph__oiver_4_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_rapid_fire_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kj_-_test_-_rupturing_singularity_(emote)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_buff_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_tank_ring_dk_loph_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_touc_of_death_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_havoc_charges"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_avenging_wrath_lohp_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_soul_carver_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_corruption_loph_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_rime"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_alpha_wolf"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_nythendra_bug_stacks"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_siegebreaker_cooldown__2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_elemental_mastery"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_brew_stacks__2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_survival_instincts_buff_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ds:_demo_off"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_01-energy"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_empower_wards_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fallen_crusader"] = {
+				["WeakAuras_healing_tonic_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7770,13 +7946,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kick_cd"] = {
+				["WeakAuras_shield_barrier3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_heal_ring_cd_holypala_loph___2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_innnervate_buff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blood_fury_off_cd"] = {
 					["SkinID"] = "Apathy",
@@ -7786,23 +7962,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_buff_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_true_bearing"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_cenarius_dryad_aoe_debuff"] = {
-					["Inherit"] = false,
+				["WeakAuras_crimson_scurge"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mannoroth_//_shadowforce_(interactive_debuff)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_jolly_roger"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sprint_cooldown_up_"] = {
+				["WeakAuras_raidbuff-stats"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7810,23 +7986,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avatar:_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_08-desolate"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_divine_protection_buff___4"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_05-consuming_hunger"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_shield_of_the_righteous_buff_2"] = {
+				["WeakAuras_demoralizing_banner"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7834,7 +7994,31 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_08-desolate"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shaman_enhance_ring"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_shield_of_the_righteous_buff_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_def_stance"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_touch_of_death_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_shadow-lord_iskar_//_fel_bomb_(interactive_debuff)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_tank_ring_protpala_loph_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7842,19 +8026,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tank_ring_protpala_loph_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_feral_spirits_usable"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_death_and_decay_buff_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_corruption_loph_"] = {
+				["WeakAuras_legendaryrdy"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7862,7 +8038,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spell_reflection"] = {
+				["WeakAuras_cloak_of_shadows_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7878,11 +8054,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_iron_maiden_//_bloodsoaked_heartseeker"] = {
+				["ToolTipTabs_Tabs"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mannoroth_//_shadowforce_(interactive_debuff)"] = {
+				["WeakAuras_spear_of_nightmares"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7894,7 +8070,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tank_ring_dk_loph_2"] = {
+				["WeakAuras_ice_barrier_yo_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7910,7 +8086,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadow-lord_iskar_//_fel_bomb_(interactive_debuff)"] = {
+				["WeakAuras_necrotic_rot_tank"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7918,11 +8094,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_nythendra_bug_stacks"] = {
-					["Inherit"] = false,
+				["WeakAuras_evasion__cooldown_up___"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_raidbuff-stats"] = {
+				["WeakAuras_counterspell_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7938,9 +8114,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_survival_instincts_buff_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_evasion_cooldown___2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_gruul_//_overwhelming_blows"] = {
 					["SkinID"] = "Apathy",
@@ -7950,7 +8126,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["ToolTipTabs_Tabs"] = {
+				["WeakAuras_summon_doomguard_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7958,7 +8134,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ds:_demo_off"] = {
+				["WeakAuras_shockwave_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -7978,7 +8154,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_inquisitive_stare"] = {
+				["WeakAuras_eyebream_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -7986,11 +8162,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_05-hydra_shot_soak"] = {
+				["WeakAuras_inquisitive_stare"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_legendaryrdy"] = {
+				["WeakAuras_exorcism_cooldown__up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8010,7 +8186,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_havoc_charges"] = {
+				["WeakAuras_neltharions_fury_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8022,19 +8198,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soul_carver_cooldown_up"] = {
+				["WeakAuras_str_pot_warrior_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_counterspell_cooldown_up__"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_quake_(debuff)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_titan's_thunder_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_ring_cd_up_holypala_loph____2"] = {
+				["WeakAuras_arcane_power_cooldown__up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8042,9 +8218,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_legacy_of_the_ravencrest"] = {
-					["Inherit"] = false,
+				["WeakAuras_darkness_cooldown_up_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_roll_missing"] = {
 					["SkinID"] = "Apathy",
@@ -8054,7 +8230,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_beastial_wrath_cd"] = {
+				["WeakAuras_revealing_strike_loph__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8062,15 +8238,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_arcane_power_cooldown__up_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_glazik_corruption_void_trigger_debuff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_revenge_up_loph"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_darkness_cooldown_up_2"] = {
+				["WeakAuras_healing_ring_cd_up_holypala_loph____2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8094,11 +8270,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_maalus_(agi_dps)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_legacy_of_the_ravencrest"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_rsk_missing"] = {
+				["WeakAuras_beastial_wrath_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8110,11 +8286,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spear_of_nightmares"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_incarnatinon_resto"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_energy"] = {
+				["WeakAuras_maalus_(agi_dps)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8134,15 +8310,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_01-energy"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_demonic_leap_cooldown_up__"] = {
+				["WeakAuras_arcane_torrent_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_evasion__cooldown_up___"] = {
+				["WeakAuras_desecrated_gound_cooldown_up___"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_die_by_the_sword_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8162,7 +8338,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_innnervate_buff"] = {
+				["WeakAuras_throw_glaive_havoc_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -8170,27 +8346,27 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_exorcism_cooldown__up__2"] = {
+				["WeakAuras_rsk_missing"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ice_barrier_yo_2"] = {
+				["WeakAuras_defile_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_unending_hunger"] = {
+				["WeakAuras_shard_of_nothing_-_available"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blood_charge"] = {
+				["WeakAuras_fa_-_rupture_realities"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demoralizing_banner"] = {
+				["WeakAuras_breath_active"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_desecrated_gound_cooldown_up___"] = {
+				["WeakAuras_trinket_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8222,7 +8398,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_summon_doomguard_cooldown_up___"] = {
+				["WeakAuras_blast_furnace_//_earth_shield_dispell"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8230,9 +8406,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fel_nova_cooldown_up_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_defile_ready"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_ravager"] = {
 					["SkinID"] = "Apathy",
@@ -8246,11 +8422,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_cloak_of_shadows_buff"] = {
+				["WeakAuras_shield_slam_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sacred_shield_loph_missing"] = {
+				["TellMeWhen_Group: 7"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8258,15 +8434,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shockwave_ready"] = {
+				["WeakAuras_raging_blow_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shard_of_nothing_-_available"] = {
+				["WeakAuras_ds:_destro_on"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_2"] = {
+				["WeakAuras_crash_lightning_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8278,19 +8454,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_defile_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_arcane_torrent_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_enraged_regen"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_daybreak_2"] = {
+				["WeakAuras_cencer_monk_dps_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8298,27 +8462,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spirit_link_totem"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_hook_cooldown__"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_avenger's_shield_cooldown_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_tc_-_brand_of_argus"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_runic_brand_orange"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_judgment_cooldown_up"] = {
+				["WeakAuras_enraged_regen"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8326,9 +8470,41 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_daybreak_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_spirit_link_totem"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_avenger's_shield_cooldown_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_execute_cooldown_up_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_tc_-_brand_of_argus"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_remorseless_winter_cooldown"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_runic_brand_orange"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_hook_cooldown__"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_judgment_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_kappa_totem_3"] = {
 					["SkinID"] = "Apathy",
@@ -8338,7 +8514,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_str_pot_warrior_2"] = {
+				["WeakAuras_tiger_power_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8346,9 +8522,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_06-crush_mind"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadow_word_death_cooldown_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_de_-_calcified_quills"] = {
 					["SkinID"] = "Apathy",
@@ -8362,15 +8538,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kr_-_burning_pitch"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_tiger_power_buff"] = {
+				["WeakAuras_invoke_xuen,_the_white_tiger"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_revealing_strike_loph__"] = {
+				["WeakAuras_rogue:_revealing_strike_-_pandemic"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_trinket_1_procc_(blood_dk)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8378,11 +8554,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_incarnatinon_resto"] = {
-					["Inherit"] = false,
+				["WeakAuras_lavaburst_cd_resto_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_shadow_word_death_cooldown_2"] = {
+				["WeakAuras_divine_protection_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8398,9 +8574,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blackhand_//_impaled"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_06-crush_mind"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_avenger's_shield_cooldown_5"] = {
 					["SkinID"] = "Apathy",
@@ -8418,7 +8594,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_steed_cooldown_2"] = {
+				["WeakAuras_kr_-_burning_pitch"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -8426,15 +8602,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_lavaburst_cd_resto_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_xavius_fixate_(phase_one)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_feral_lunge_up_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_eye_of_tyr_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8442,13 +8614,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_remorseless_winter_cooldown_up__"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_protected"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_eye_of_tyr_cooldown_up___"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_stampede"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_aspect_of_the_wild_cooldown_up"] = {
 					["SkinID"] = "Apathy",
@@ -8458,9 +8634,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_stampede"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_metamorphosis_cooldown_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_angelic_bulwark_2"] = {
 					["SkinID"] = "Apathy",
@@ -8474,39 +8650,39 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_metamorphosis_cooldown_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadow_dance_cooldown__2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_tyrant_velhari_//_font_of_corruption_(interactive_debuff)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_legendary_meta"] = {
+				["WeakAuras_phantasmal_wounds"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_twisted_reflection"] = {
-					["Inherit"] = false,
+				["WeakAuras_remorseless_winter_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_darksoul_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_maalus_ring"] = {
+				["WeakAuras_divine_steed_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blast_furnace_//_earth_shield_dispell"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_trinket_1_procc_(protpaladin)_3"] = {
+				["WeakAuras_rend"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_racial_orc_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_shadowdance/enven/adrenrush"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8526,17 +8702,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_defile_ready"] = {
+				["WeakAuras_gow"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_valkyr_counter"] = {
-					["Inherit"] = false,
+				["WeakAuras_sm_-_suffusions"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_rend"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_spray_sand"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["Bartender4_2"] = {
 					["Colors"] = {
@@ -8567,7 +8743,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_reincarnation"] = {
+				["WeakAuras_valkyr_counter"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -8579,19 +8755,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["TellMeWhen_Group: 7"] = {
+				["WeakAuras_kill_shot_cd_bm"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_raging_blow_cooldown_up"] = {
+				["WeakAuras_weapon_enchant_-_mark_of_frostwolf/warsong_proc"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_ret_cd_up_paladin__loph___"] = {
+				["WeakAuras_shield_of_the_righteous_buff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ravager_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8599,7 +8775,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shield_of_the_righteous_buff"] = {
+				["WeakAuras_rainfall_buffing"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8607,13 +8783,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ds:_destro_on"] = {
+				["WeakAuras_ms_-_befouling_ink"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_weapon_enchant_-_mark_of_frostwolf/warsong_proc"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_05-delicious_bufferfish"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dragon_roar"] = {
 					["SkinID"] = "Apathy",
@@ -8627,7 +8803,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_rainfall_buffing"] = {
+				["WeakAuras_killshot_rdy_mm"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8639,9 +8815,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_killshot_rdy_mm"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_whirling_dragon_punch_usable"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bladestorm_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
@@ -8659,9 +8835,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_whirling_dragon_punch_usable"] = {
-					["Inherit"] = false,
+				["WeakAuras_loh_avail"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_crusader_strike_cooldown_up_2"] = {
 					["SkinID"] = "Apathy",
@@ -8683,9 +8859,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_02-soul_corruption"] = {
-					["Inherit"] = false,
+				["WeakAuras_sacred_shield_loph_missing_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_displacer_beast"] = {
 					["SkinID"] = "Apathy",
@@ -8695,7 +8871,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_execute_cooldown_up_2"] = {
+				["ElvUI_ActionBars"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8703,7 +8879,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fort_brew"] = {
+				["WeakAuras_quaking_cancel_spell"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8711,11 +8887,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ca_-_temporal_orb"] = {
+				["WeakAuras_tank_ring_cd_protpala_loph_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_02-soul_corruption"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sacred_shield_loph_missing_2"] = {
+				["WeakAuras_grievous_tear"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_slice_and_dice_loph__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8723,15 +8907,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_slice_and_dice_loph__2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_tank_ring_cd_protpala_loph_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_crash_lightning_cooldown_up"] = {
+				["WeakAuras_berserker_rage_loph_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8739,7 +8915,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_berserker_rage_loph_cd"] = {
+				["WeakAuras_iskar_trinket_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8747,7 +8923,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_grievous_tear"] = {
+				["WeakAuras_bastion_of_the_light_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -8763,7 +8939,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_iskar_trinket_3"] = {
+				["WeakAuras_shadowfiend__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8771,15 +8947,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_crit"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_vp_missing"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_stormstirke_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_invoke_xuen,_the_white_tiger"] = {
+				["WeakAuras_operator_thogar_//_cauterizing_bolt"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8791,15 +8967,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_procc_(blood_dk)"] = {
+				["WeakAuras_rune_of_power_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_slam_cd"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_piercing_shards"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_cencer_monk_dps_2"] = {
+				["WeakAuras_fel_lord_zakuun_//_seed_of_destruction_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8807,7 +8983,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_steed_cooldown_up"] = {
+				["WeakAuras_black_arrow_rdy"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8815,7 +8991,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bloodbath_cd"] = {
+				["WeakAuras_sylvanas"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8823,7 +8999,21 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_weapon_enchant_(hunter)"] = {
+				["Bartender4_1"] = {
+					["Colors"] = {
+						["Gloss"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Normal"] = {
+							0.25, -- [1]
+							0.25, -- [2]
+							0.25, -- [3]
+							1, -- [4]
+						},
+					},
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8855,7 +9045,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadow_dance_cooldown__2"] = {
+				["WeakAuras_bloodthirst_cooldown__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8867,23 +9057,35 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_alch_trinket_shsaman"] = {
-					["Inherit"] = false,
+				["WeakAuras_shield_block_stacks"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_hateful_gaze"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_black_arrow_rdy"] = {
+				["WeakAuras_darkness_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_crit"] = {
+				["WeakAuras_blackhand_//_incendiary_shot"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_loh_avail"] = {
+				["WeakAuras_trink_refresh"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_seed_of_destruction_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_dps_ring_warrior"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_rockbiter_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8895,39 +9097,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shard_of_nothing_-_proc"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_control_undead_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_curse_of_the_dreadblades"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_rallying_cry_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gd_-_shatter_essence_(tank)"] = {
-					["Inherit"] = false,
+				["WeakAuras_shard_of_nothing_-_proc"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_beating_heart_of_the_mountain_cd_monk"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sylvanas"] = {
+				["WeakAuras_solar_beam_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kill_shot_cd_bm"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rogue_-_revealing_strike_-_missing"] = {
+				["WeakAuras_trinket_1_procc_(rogue)_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8935,7 +9121,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ms_-_befouling_ink"] = {
+				["WeakAuras_rogue_-_revealing_strike_-_missing"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_cbt_on_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8943,23 +9133,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_05-delicious_bufferfish"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_fel_lord_zakuun_//_seed_of_destruction_(timed_debuff)"] = {
+				["WeakAuras_bloodbath_cooldown____"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_chi_wave_2"] = {
+				["WeakAuras_envenom_loph"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_xavius_meteor_split_aoe_debuff_(phase_two/three)"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_healing_tonic_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trink_refresh"] = {
+				["WeakAuras_obliteration_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8979,7 +9169,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_mark_of_the_necrolord"] = {
+				["WeakAuras_phix_suro_marks_bis"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -8987,11 +9177,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_breath_icon"] = {
+				["WeakAuras_blood_shield_loph"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_warrior"] = {
+				["WeakAuras_curse_of_the_dreadblades"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9007,7 +9197,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xhul'horac_//_felsinged_(stacking_debuff)"] = {
+				["WeakAuras_rem"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9015,7 +9205,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_scorned_touch"] = {
+				["WeakAuras_scabbard_prot_pala"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9023,48 +9213,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xhul'horac_//_void_surge_(timed_debuff)"] = {
+				["WeakAuras_scorned_touch"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-				},
-				["WeakAuras_envenom_loph"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sera_active"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_darkness_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rule_of_law_buff"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rune_of_power_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_piercing_shards"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_pre_swift"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bone_shield_(inactive)"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_spirit_shift"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["Bartender4_1"] = {
-					["SkinID"] = "Apathy",
+				["Bartender4_8"] = {
 					["Colors"] = {
 						["Gloss"] = {
 							1, -- [1]
@@ -9079,9 +9236,42 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bloodthirst_cooldown__2"] = {
+				["WeakAuras_droar:_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_rule_of_law_buff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_control_undead_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_fel_vomit"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_consc_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_beastial_wrath_rdy_ooc"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_spirit_shift"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_infernal_strike_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shockwave_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9093,13 +9283,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_block_stacks"] = {
+				["WeakAuras_light_of_the_protector_cooldown_up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_infernal_strike_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_plague_leech_cd"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_thorasus_cd"] = {
 					["SkinID"] = "Apathy",
@@ -9109,29 +9299,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["Bartender4_8"] = {
-					["SkinID"] = "Apathy",
-					["Colors"] = {
-						["Gloss"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Normal"] = {
-							0.25, -- [1]
-							0.25, -- [2]
-							0.25, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["WeakAuras_holy_prism_cooldown_"] = {
+				["WeakAuras_xhul'horac_//_void_surge_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_preparation_cooldown_up_"] = {
+				["WeakAuras_shadow_reflection_cooldown__up_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_raidbuff-flask"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9151,15 +9327,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_light_of_the_protector_cooldown_up__2"] = {
+				["WeakAuras_preparation_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rockbiter_cooldown_up"] = {
+				["WeakAuras_gorefiend_//_gorefiend's_corruption_(interactive_debuff,_mythic_only)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_plague_leech_cd"] = {
+				["WeakAuras_savage_roar_(inverse)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9175,7 +9351,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rallying_cry_cd"] = {
+				["WeakAuras_gnawed_thub_ring"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9195,7 +9371,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_1_procc_(rogue)_2"] = {
+				["WeakAuras_copeland's_off"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9223,7 +9399,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_renewing_mists_2"] = {
+				["WeakAuras_rallying_cry_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9231,11 +9407,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_cbt_on_cd"] = {
+				["WeakAuras_metamorphosis_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_copeland's_off"] = {
+				["WeakAuras_counter"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9243,15 +9419,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_oli-rune_tap_2"] = {
+				["WeakAuras_glaivetoss_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xavius_meteor_split_aoe_debuff_(phase_two/three)"] = {
-					["Inherit"] = false,
+				["WeakAuras_t17_2p_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_obliteration_buff"] = {
+				["WeakAuras_divine_aegis"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9271,7 +9447,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_phix_suro_marks_bis"] = {
+				["WeakAuras_rupture_loph_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9287,15 +9463,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blood_shield_loph"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_rage_of_the_sleeper_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_savage_roar_(inverse)"] = {
+				["WeakAuras_efflorence"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_copeland_rdyo"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9311,7 +9487,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rem"] = {
+				["WeakAuras_loot-a-rang_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9319,13 +9495,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_counter"] = {
+				["WeakAuras_divine_protection_cd_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dispersion_buff"] = {
-					["Inherit"] = false,
+				["WeakAuras_brew_stacks_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sigil_of_flame_cooldown_2"] = {
 					["Inherit"] = false,
@@ -9339,7 +9515,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ice_floes_cooldown_up____2"] = {
+				["WeakAuras_judgment_cooldown_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9351,7 +9527,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_loot-a-rang_cd_2"] = {
+				["WeakAuras_blackhand_//_molten_slag"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9359,7 +9535,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dampen_harm_cooldown_up__"] = {
+				["WeakAuras_blood_plague_down"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9371,11 +9547,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fel_vomit"] = {
-					["Inherit"] = false,
+				["WeakAuras_sb_missing"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_feral_spirit_cooldown_2"] = {
+				["WeakAuras_fortifying_brew_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9391,19 +9567,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_beastial_wrath_rdy_ooc"] = {
+				["WeakAuras_bloodthirst:_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["oRA3"] = {
+				["WeakAuras_elaborate_planning"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_feral_spirit_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_renewing_mists_3"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_soul_capacitor_amount_2"] = {
+				["WeakAuras_powershot_rdy"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9415,11 +9591,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_elaborate_planning"] = {
-					["Inherit"] = false,
+				["WeakAuras_weapon_enchant_(prot_paladin)_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_copeland_rdyo"] = {
+				["WeakAuras_hammer_of_wrath_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9431,7 +9607,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_feint_buff"] = {
+				["WeakAuras_blink_cooldown_up___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9443,11 +9619,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_weapon_enchant_(prot_paladin)_2"] = {
+				["WeakAuras_wrought_chaos_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadow_reflection_cooldown__up_"] = {
+				["WeakAuras_aspect_of_the_wild_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9455,7 +9631,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_judgment_cooldown_up_2"] = {
+				["WeakAuras_consumption_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9467,7 +9643,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_slt_2"] = {
+				["WeakAuras_counterspell_cooldown_____2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9479,15 +9655,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rend:_inactive"] = {
+				["WeakAuras_slt_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_stun_arrow_cd"] = {
-					["Inherit"] = false,
+				["WeakAuras_sb:haunt_off"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_mind_freeze_cooldown____"] = {
+				["WeakAuras_bastion_of_the_light"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9511,7 +9687,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rallying_cry_2"] = {
+				["WeakAuras_chi_wave_cooldown____2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9519,19 +9695,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_brew_stacks_"] = {
+				["WeakAuras_socrethar_the_eternal_//_fel_barrier_(immunity)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_chi_wave_cooldown____2"] = {
+				["WeakAuras_rend:_inactive"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-				},
-				["WeakAuras_blinding_lgith"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_rotsl"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_blinding_lgith"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -9547,11 +9723,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_holy_prism_cooldown__2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_glazik_death_blosom_(perekrit')"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_aspect_of_the_wild_cooldown"] = {
+				["WeakAuras_soulburn_on"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9559,7 +9735,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mv_-_unstable_soul"] = {
+				["WeakAuras_death_grip_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9567,19 +9743,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bloodthirst:_ready"] = {
+				["WeakAuras_holy_prism_cooldown__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rupture_loph_"] = {
+				["WeakAuras_steady_focus_lohp"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_glazik_death_blosom_(perekrit')"] = {
-					["Inherit"] = false,
+				["WeakAuras_armor_pot_protpala_loph_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_death_grip_cooldown_"] = {
+				["WeakAuras_legendarybuff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_tidal_waves_buff_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9587,15 +9767,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_protection_cd_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_dark_arbiter_cooldown_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_prophecy_of_fear"] = {
+				["WeakAuras_raidbuff-attack_power_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9607,11 +9783,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_legendarybuff"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_wicked_dagger"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blackhand_//_molten_slag"] = {
+				["WeakAuras_avenging_wrath_buff_(holy)_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9619,9 +9795,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_maiden_shield"] = {
-					["Inherit"] = false,
+				["WeakAuras_heartseeker_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_gotq_2"] = {
 					["SkinID"] = "Apathy",
@@ -9631,7 +9807,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_naked"] = {
+				["WeakAuras_thunder_clap_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9643,23 +9819,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_presence_of_mind_cooldown_up___"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_maiden_shield"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_armor_pot_protpala_loph_2"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_uther's_avail"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_recklessness"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_heartseeker_2"] = {
+				["WeakAuras_np"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9667,47 +9831,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gm_-_permeliative_torment"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_growing_paranoia"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_garrote_cooldown_up_"] = {
+				["WeakAuras_recklessness"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_crusader_strikecooldown_up_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_survival_insticts_cd"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_fa_-_debuff_soup"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_raidbuff-stamina"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_evasion_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_counterspell_cooldown_____2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_vamp_blood_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sb:haunt_off"] = {
+				["WeakAuras_hemorrhage"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9715,11 +9843,35 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avenging_wrath_loph"] = {
+				["WeakAuras__glacial_advance"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_socrethar_the_eternal_//_fel_barrier_(immunity)"] = {
+				["WeakAuras_growing_paranoia"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_flamebender_mastery_trinket"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_survival_insticts_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_crusader_strikecooldown_up_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_fa_-_debuff_soup"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_exorcism_cooldown__up__3"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_trinket_1_procc_(protpaladin)_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9727,11 +9879,35 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_np"] = {
+				["WeakAuras_evasion_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_flamebender_mastery_trinket"] = {
+				["WeakAuras_shard_proccerino_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_gm_-_permeliative_torment"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_mstrike:_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kill_shot_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_consume_magic_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_raidbuff-stamina"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_avenging_wrath_cooldown_up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9743,7 +9919,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blacout"] = {
+				["WeakAuras_dps_ring_wariorr_cd_loph___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9763,7 +9939,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_wariorr_cd_loph___2"] = {
+				["WeakAuras_light_of_the_protector__cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9771,9 +9947,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_unstable_affliction"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_gd_-_bad_stuff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_07-dps/healing_buffs"] = {
 					["Inherit"] = false,
@@ -9787,7 +9963,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_steady_focus_lohp"] = {
+				["WeakAuras_vt_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9799,7 +9975,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_st_(m)_-_frigid_pulse"] = {
+				["WeakAuras_bubble_cd_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -9807,19 +9983,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_raidbuff-mastery"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_st_(m)_-_frigid_pulse"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bubble_cd_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_ua_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_zen_sphere_missing"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tidal_waves_buff_"] = {
+				["WeakAuras_void_tendrils"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9839,11 +10015,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ua_2"] = {
+				["WeakAuras_prismatic_crystal_cooldown_up____"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mstrike:_cooldown"] = {
+				["WeakAuras_rogue:_slice_and_dice_-_missing"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9851,27 +10027,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_consume_magic_cooldown_up"] = {
+				["WeakAuras_bladestorm_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avenging_wrath_buff_(holy)_2"] = {
+				["WeakAuras_rage_of_the_sleepr_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_legendary_ring"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_blade_flurry_counter"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_innervate_cd_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_thunder_clap_cooldown_up___"] = {
+				["WeakAuras_unstable_affliction"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9879,11 +10043,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_void_tendrils"] = {
+				["WeakAuras_innervate_cd_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_blacout"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_demon_spikes_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_hand_of_gul'dan_cooldown_up_____"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_zen_sphere_cooldown____"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9891,9 +10067,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hemorrhage"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_headlong_charge"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_astral_shift_cooldown_up"] = {
 					["SkinID"] = "Apathy",
@@ -9903,11 +10079,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_headlong_charge"] = {
-					["Inherit"] = false,
+				["WeakAuras_exec_refresh"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_bloodthirst_up_"] = {
+				["WeakAuras_divine_protection_cd_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9919,7 +10095,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras__glacial_advance"] = {
+				["WeakAuras_oli-ams_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9927,17 +10103,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_focused_chaos"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_garrote_missing_lopg"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_consume_magic_cooldown_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_swg_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_focused_chaos"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_earthen_shield_totem_cd"] = {
 					["SkinID"] = "Apathy",
@@ -9967,27 +10143,27 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_exec_refresh"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_stampeding_roar"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gotq_on_cd_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_procc_(protpaladin)_cd"] = {
+				["WeakAuras_ms_-_thundering_shock"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_stampeding_roar"] = {
-					["Inherit"] = false,
+				["WeakAuras_potion_off"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_frostbrand_buff_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shard_proccerino_"] = {
+				["WeakAuras_legendaryrdy_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -9999,7 +10175,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sweaping_strikes"] = {
+				["WeakAuras_rapidfire_rdy_ooc"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10019,7 +10195,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_revenge_cd"] = {
+				["WeakAuras_sweaping_strikes"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10039,15 +10215,27 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_soul_swap"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_shaman_heroism_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_seraphim_cd_loph__2"] = {
+				["WeakAuras_05-burden_of_pain_taunt_alert"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_dps__ring_dk_cd_up_loph___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps__ring_dk_cd_up_loph___"] = {
+				["WeakAuras_quaking"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_death_and_decay_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10055,19 +10243,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_quaking"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_soul_swap"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_avenging_wrath_cooldown_up__2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_avenger's_shield_cooldown_3"] = {
+				["WeakAuras_ibf"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10075,7 +10251,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_light_of_the_protector__cooldown_2"] = {
+				["WeakAuras_avenger's_shield_cooldown_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10083,11 +10259,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gd_-_bad_stuff"] = {
-					["Inherit"] = false,
+				["WeakAuras_sprint_totem_up_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_vt_2"] = {
+				["WeakAuras_trinket_1_procc_(monk)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10111,7 +10287,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ancesteral_guidance_2"] = {
+				["WeakAuras_enhanced_holyshock"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10119,11 +10295,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_legendaryrdy_2"] = {
+				["WeakAuras_holy_shock_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bloodbath_cooldown_up___2"] = {
+				["WeakAuras_ravager_reader"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10135,7 +10311,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_prismatic_crystal_cooldown_up____"] = {
+				["WeakAuras_empower_rune_weapon_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10143,7 +10319,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_holy_shock_cooldown"] = {
+				["WeakAuras_aspect_of_the_fox_4"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10151,7 +10327,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_aspect_of_the_fox_4"] = {
+				["WeakAuras_soulburn:haunt_loph"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10159,7 +10335,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soulburn:haunt_loph"] = {
+				["WeakAuras_flame_shock"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10175,23 +10351,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_focused_rage_warrior"] = {
-					["Inherit"] = false,
+				["WeakAuras_harmony_missing"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_loot-a-rang_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_legendaryshield"] = {
+				["WeakAuras_demon_spikes_up_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_rupture_mm"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_procc_(monk)"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_recuperate_m"] = {
+				["WeakAuras_bloodbath_cooldown_up___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10207,7 +10383,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demon_spikes_2"] = {
+				["WeakAuras_blood_mirror_cd_up_"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -10215,11 +10391,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_remorseless_wintedr"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_sa_-_entombed"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_libram"] = {
+				["WeakAuras_spirit_shell"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10231,13 +10407,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_zen_sphere_cooldown____"] = {
+				["WeakAuras_shadowstep__cooldown_up___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sa_-_entombed"] = {
-					["Inherit"] = false,
+				["WeakAuras_lawful_words"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_dampen_harm_cooldown__2"] = {
 					["SkinID"] = "Apathy",
@@ -10251,7 +10427,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadowstep__cooldown_up___2"] = {
+				["WeakAuras_pilar_of_frost_cooldown_up____"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10259,7 +10435,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avenging_wrath_ooldown_loph"] = {
+				["BalancePowerTracker"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10267,7 +10443,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ravager_reader"] = {
+				["WeakAuras_spinners_cooldown_(hunter)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10275,15 +10451,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ibf"] = {
+				["WeakAuras_recklessness_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ms_-_thundering_shock"] = {
+				["WeakAuras_eye_of_tyr_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ds:_aff_cd"] = {
+				["WeakAuras_dps_ring_(hunter)_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10291,11 +10467,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_enhanced_holyshock"] = {
+				["WeakAuras_incarnation_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_harmony_missing"] = {
+				["WeakAuras_ds:_aff_off_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10311,25 +10487,25 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blood_mirror_cd_up_"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadow_dance_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_chains_of_fel"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_prot_ring_pala"] = {
+				["WeakAuras_ice_barrier_yo"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["BalancePowerTracker"] = {
+				["WeakAuras_sanctus_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_death_and_decay_cooldown_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_trinket_2_procc_(protpaladin)__3"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_thunder_clap_ready"] = {
 					["SkinID"] = "Apathy",
@@ -10339,7 +10515,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spirit_shell"] = {
+				["WeakAuras_ds:_demo_on"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10347,7 +10523,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_killing_spree_cooldown_up_2"] = {
+				["WeakAuras_execute_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10355,19 +10531,18 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_killing_spree_cooldown_up_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["AuraFrames_PlayerDebuffs"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_jaina"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_die_by_the_sword_cooldown_up___2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ds:_aff_off_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_execute_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sniper_training_rm"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10379,7 +10554,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hand_of_gul'dan_cooldown_up______2"] = {
+				["WeakAuras_paladin_trinket_ret__loph__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10387,15 +10562,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_oli-ams"] = {
+				["WeakAuras_boulderfist_not_present"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_warrior_rage_bar_2"] = {
+				["WeakAuras_armor_pot_tank_dk"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_no_brew_stacks__"] = {
+				["WeakAuras_bladestorm_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10403,7 +10578,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_siegebreaker_cooldown_up___2"] = {
+				["WeakAuras_no_brew_stacks__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10411,11 +10586,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_transfer_the_power"] = {
+				["WeakAuras_avatar_cooldown_up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_armor_pot_tank_dk"] = {
+				["WeakAuras_warrior_rage_bar_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10427,7 +10602,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_warlock_cd_up_loph____"] = {
+				["WeakAuras_transfer_the_power"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10435,7 +10610,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demon_spikes_up_2"] = {
+				["WeakAuras_08-dark_mark"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -10447,9 +10622,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_08-dark_mark"] = {
-					["Inherit"] = false,
+				["WeakAuras_killshot_rdy_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_gsr_2"] = {
 					["SkinID"] = "Apathy",
@@ -10459,7 +10634,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_legendary_ring_2_off"] = {
+				["WeakAuras_heroic_leap_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10467,9 +10642,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_killshot_rdy_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_hb_-_parasitic_fixate"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_immolate_loph__"] = {
 					["SkinID"] = "Apathy",
@@ -10483,11 +10658,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hb_-_parasitic_fixate"] = {
-					["Inherit"] = false,
+				["TellMeWhen_Group: 8"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_bladestorm_cooldown"] = {
+				["WeakAuras_sort2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10495,26 +10670,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_lawful_words"] = {
+				["WeakAuras_tigereyebrew_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_raidbuff-versatility_2"] = {
+				["WeakAuras_coe_on"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["AuraFrames_PlayerBuffs"] = {
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-					},
+				["WeakAuras_enrage"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_spinners_cooldown_(hunter)"] = {
+				["WeakAuras_enrage_warrior_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10522,18 +10690,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["AuraFrames_PlayerDebuffs"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_eye_of_tyr_cooldown_2"] = {
+				["WeakAuras_backdraft_off"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_massgrip"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_moonfire_debuff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_coe_on"] = {
+				["WeakAuras_riptide_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10545,15 +10714,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_oli-bone_shield"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_hand_of_sacrifice"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_shadow_dance_cooldown_up_"] = {
+				["WeakAuras_power_word:_barrier"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10561,27 +10722,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ice_barrier_yo"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_t17_2p"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sanctus_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_trinket_2_procc_(protpaladin)__3"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_concecration_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_kill_command_rdy_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10589,23 +10730,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_2_procc_(dps_dk)_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["BalancePowerTracker_Eclipse Icons"] = {
+				["WeakAuras_etheralus_(heal)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["TellMeWhen_Group: 8"] = {
+				["WeakAuras_concecration_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_lifebloom_missing"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_spear_hand_strike_cooldown_up__"] = {
+				["WeakAuras_astral_shift_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10613,39 +10746,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soul_reaper_cooldown_up_"] = {
+				["WeakAuras_dragon_roar_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_test_-_darkness"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_healing_tide_totem_cooldown_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_backdraft_off"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_outbreak_cooldown___"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_holypala_wings_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sacred_shield_not_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ancesteral_guidance"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_soulburn"] = {
+				["WeakAuras_rip_(inverse)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10653,15 +10758,79 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_aura_of_oppression"] = {
+				["WeakAuras_trinket_2_procc_(dps_dk)_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_dark_arbitercooldown___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kidney_shot"] = {
+				["WeakAuras_missing_seal_paladin"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_lifebloom_missing"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kj_-_test_-_darkness"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_tank_ring_protwariorr_loph_3"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_soul_reaper_cooldown_up_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_demoralizing_shout_cooldown_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_healing_tide_totem_cooldown_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_outbreak_cooldown___"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ancesteral_guidance"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_holypala_wings_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_rising_sun_kick_debuff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_ice_block_cooldown_up__2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_consumption_cooldown_up_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_empower_wards_buff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_aura_of_oppression"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_chimaera_shot_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_monk_beating_heart_of_the_mountain"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10677,15 +10846,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rip_(inverse)"] = {
+				["WeakAuras_consc_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_astral_shift_cooldown_2"] = {
+				["WeakAuras_sacred_shield_not_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ice_block_cooldown_up__2"] = {
+				["WeakAuras_supplication"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10693,15 +10862,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tank_ring_dk_cd_loph__2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_dark_arbitercooldown___"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_dragon_roar_cooldown_"] = {
+				["WeakAuras_spear_hand_strike_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10709,7 +10870,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_etheralus_(heal)"] = {
+				["WeakAuras_remorseless_winter_cooldown__"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_devotion_aura_2_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_tank_ring_dk_cd_loph__2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kill_command_rdy_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_shield_wall_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10717,15 +10894,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demoralizing_shout_cooldown_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_chimaera_shot_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_keg_smash_cooldown__2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kidney_shot"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_healing_titde_totem_cooldown_up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10733,23 +10910,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_titde_totem_cooldown_up__2"] = {
+				["WeakAuras_soulburn"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_riptide_3"] = {
+				["WeakAuras_explosive_shot_rdy"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_empower_wards_buff"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_consc_cooldown_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_monk_beating_heart_of_the_mountain"] = {
+				["BalancePowerTracker_Eclipse Icons"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10761,15 +10930,22 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_devotion_aura_2_2"] = {
+				["WeakAuras_tank_ring_monk_cd_up_loph___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_missing_seal_paladin"] = {
+				["AuraFrames_PlayerBuffs"] = {
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+					},
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_tank_ring_protwariorr_loph_3"] = {
+				["WeakAuras_raidbuff-versatility_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10777,19 +10953,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_supplication"] = {
+				["WeakAuras_oli-bone_shield"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_power_word:_barrier"] = {
+				["WeakAuras_light_of_the_protector_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_consumption_cooldown_up_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_dps_ring_warlock_cd_up_loph____"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_shield_wall_ready"] = {
+				["WeakAuras_rake_(inverse)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10797,7 +10973,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_remorseless_winter_cooldown__"] = {
+				["WeakAuras_siegebreaker_cooldown_up___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10805,11 +10981,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_enrage"] = {
+				["WeakAuras_hand_of_gul'dan_cooldown_up______2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_enrage_warrior_2"] = {
+				["WeakAuras_hand_of_sacrifice"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10817,15 +10993,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sort2"] = {
+				["WeakAuras_legendary_ring_2_off"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_heroic_leap_cooldown_up_"] = {
+				["WeakAuras_prot_ring_pala"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tank_ring_monk_cd_up_loph___"] = {
+				["WeakAuras_scabbard"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10833,9 +11009,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_massgrip"] = {
-					["Inherit"] = false,
+				["WeakAuras_sniper_training_rm"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_holy_shock_buff"] = {
 					["SkinID"] = "Apathy",
@@ -10861,7 +11037,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tigereyebrew_buff"] = {
+				["WeakAuras_oli-ams"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10869,7 +11045,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rake_(inverse)"] = {
+				["WeakAuras_savage_roar"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10877,7 +11053,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_explosive_shot_rdy"] = {
+				["WeakAuras_frost_fever_down"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10889,11 +11065,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_paladin_trinket_ret__loph__2"] = {
+				["WeakAuras_draenic_int_pot_mage"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ds:_demo_on"] = {
+				["WeakAuras_remorseless_wintedr"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10901,23 +11077,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_(hunter)_2"] = {
+				["WeakAuras_ds:_aff_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rupture_mm"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_critical_aim"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_rip"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_light_of_the_protector_cooldown_up_"] = {
+				["WeakAuras_libram"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avatar_cooldown_up__2"] = {
+				["WeakAuras_legendaryshield"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10933,15 +11109,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_boulderfist_not_present"] = {
+				["WeakAuras_shard_rdyo_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_recklessness_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_focused_rage_warrior"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_jaina"] = {
+				["WeakAuras_tranquility"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10949,7 +11125,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_frost_fever_down"] = {
+				["WeakAuras_ancesteral_guidance_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10957,7 +11133,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_savage_roar"] = {
+				["WeakAuras_avenging_wrath_ooldown_loph"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10965,7 +11141,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_draenic_int_pot_mage"] = {
+				["WeakAuras_recuperate_m"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10973,7 +11149,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_scabbard"] = {
+				["WeakAuras_revenge_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -10997,9 +11173,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_incarnation_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_consume_magic_cooldown_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tc_-_volatile_wound"] = {
 					["Inherit"] = false,
@@ -11009,7 +11185,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_pilar_of_frost_cooldown_up____"] = {
+				["WeakAuras_bloodthirst_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11025,11 +11201,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_flame_shock"] = {
+				["WeakAuras_legendary_ring"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shard_rdyo_"] = {
+				["WeakAuras_blade_flurry_counter"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11041,11 +11217,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rapidfire_rdy_ooc"] = {
+				["WeakAuras_raidbuff-mastery"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sprint_totem_up_2"] = {
+				["WeakAuras_seraphim_cd_loph__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11053,7 +11229,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_empower_rune_weapon_up_"] = {
+				["WeakAuras_combat_rediness_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11061,7 +11237,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tranquility"] = {
+				["WeakAuras_divine_purpose_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11085,25 +11261,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_potion_off"] = {
+				["WeakAuras_wstrike:_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rage_of_the_sleepr_buff"] = {
+				["WeakAuras_vamp_blood_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_05-burden_of_pain_taunt_alert"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_bladestorm_cd"] = {
+				["WeakAuras_tiger_power_(ww)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rogue:_slice_and_dice_-_missing"] = {
+				["WeakAuras_vendetta_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_gm_-_ablation/pulse_(tank)"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bloodthirst_cd"] = {
 					["SkinID"] = "Apathy",
@@ -11117,7 +11293,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_divine_purpose_2"] = {
+				["WeakAuras_beastlord_//_rend_and_tear"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11137,15 +11313,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_swg_2"] = {
+				["WeakAuras_avenging_wrath_loph"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_oli-ams_2"] = {
+				["WeakAuras_garrote_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_protection_cd_3"] = {
+				["WeakAuras_presence_of_mind_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11157,7 +11333,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_combat_rediness_cooldown_"] = {
+				["WeakAuras_uther's_avail"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11165,7 +11341,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_exorcism_cooldown__up__3"] = {
+				["WeakAuras_prophecy_of_fear"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11185,7 +11361,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wstrike:_ready"] = {
+				["WeakAuras_naked"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11197,7 +11373,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kill_shot_cd"] = {
+				["WeakAuras_mv_-_unstable_soul"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11213,7 +11389,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_vendetta_cooldown_up_"] = {
+				["WeakAuras_sacraficial_pact"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11225,7 +11401,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bastion_of_the_light"] = {
+				["WeakAuras_rake_debuff_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11245,15 +11421,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wicked_dagger"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_raidbuff-attack_power_2"] = {
+				["TellMeWhen_Group: 4"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tiger_power_(ww)"] = {
+				["WeakAuras_stun_arrow_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_rallying_cry_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11261,7 +11437,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_beastlord_//_rend_and_tear"] = {
+				["oRA3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11273,11 +11449,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gm_-_ablation/pulse_(tank)"] = {
-					["Inherit"] = false,
+				["WeakAuras_feint_buff"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_sacraficial_pact"] = {
+				["WeakAuras_mind_freeze_cooldown____"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11289,11 +11465,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soulburn_on"] = {
+				["WeakAuras_renewing_mists_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wrought_chaos_2"] = {
+				["WeakAuras_dampen_harm_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11317,7 +11493,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_powershot_rdy"] = {
+				["WeakAuras_trinket_1_procc_(mage)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11333,13 +11509,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blink_cooldown_up___2"] = {
+				["WeakAuras_ice_floes_cooldown_up____2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["TellMeWhen_Group: 4"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_dispersion_buff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ice_block_cooldown___"] = {
 					["SkinID"] = "Apathy",
@@ -11349,11 +11525,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hammer_of_wrath_cooldown_up"] = {
+				["WeakAuras_oli-rune_tap_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fortifying_brew_cooldown_up___"] = {
+				["WeakAuras_flourishassist"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11361,7 +11537,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_consumption_cooldown"] = {
+				["WeakAuras_instant_poison"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11369,11 +11545,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_1_procc_(mage)"] = {
+				["WeakAuras_holy_avenger_loph_4_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blood_plague_down"] = {
+				["WeakAuras_renewing_mists_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11381,11 +11557,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_aegis"] = {
+				["WeakAuras_xhul'horac_//_felsinged_(stacking_debuff)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_t17_2p_2"] = {
+				["WeakAuras_mark_of_the_necrolord"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11397,7 +11573,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_glaivetoss_cd"] = {
+				["WeakAuras_die_by_the_sword_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11405,23 +11581,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_metamorphosis_cooldown_up"] = {
+				["WeakAuras_sera_active"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gnawed_thub_ring"] = {
+				["WeakAuras_holy_prism_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_raidbuff-flask"] = {
+				["WeakAuras_bone_shield_(inactive)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sb_missing"] = {
+				["WeakAuras_breath_icon"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_instant_poison"] = {
+				["WeakAuras_chi_wave_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11449,9 +11625,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gorefiend_//_gorefiend's_corruption_(interactive_debuff,_mythic_only)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_gd_-_shatter_essence_(tank)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blooddrinker_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
@@ -11469,7 +11645,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_consc_cooldown_up"] = {
+				["WeakAuras_archimonde_//_heart_of_argus_(interupt)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11485,13 +11661,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_die_by_the_sword_2"] = {
+				["WeakAuras_rising_sun_kick_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shockwave_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_alch_trinket_shsaman"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_breath_of_sindragosa__cooldown__"] = {
 					["SkinID"] = "Apathy",
@@ -11513,7 +11689,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_droar:_cooldown"] = {
+				["WeakAuras_vengeful_retreat_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11521,7 +11697,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_holy_avenger_loph_4_2"] = {
+				["WeakAuras_flametounge_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11537,7 +11713,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_scabbard_prot_pala"] = {
+				["WeakAuras_stormstirke_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11549,19 +11725,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_solar_beam_2"] = {
+				["WeakAuras_ca_-_temporal_orb"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_fort_brew"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_seed_of_destruction_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_marked"] = {
 					["Inherit"] = false,
-				},
-				["ElvUI_ActionBars"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_archimonde_//_heart_of_argus_(interupt)"] = {
+				["WeakAuras_weapon_enchant_(hunter)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11569,13 +11745,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blackhand_//_incendiary_shot"] = {
+				["WeakAuras_bloodbath_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bloodbath_cooldown____"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_reincarnation"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tombstone_cooldown_up"] = {
 					["SkinID"] = "Apathy",
@@ -11585,7 +11761,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_flametounge_buff"] = {
+				["WeakAuras_dps_ring_ret_cd_up_paladin__loph___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11593,9 +11769,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rising_sun_kick_cooldown_up__"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_trinket_1"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ms_-_hydra_shot"] = {
 					["SkinID"] = "Apathy",
@@ -11613,7 +11789,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_operator_thogar_//_cauterizing_bolt"] = {
+				["WeakAuras_tranquility_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11625,17 +11801,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_vengeful_retreat_cooldown"] = {
+				["WeakAuras_hleap:_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadowdance/enven/adrenrush"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_murder"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_phantasmal_wounds"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_twisted_reflection"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ad_avail"] = {
 					["SkinID"] = "Apathy",
@@ -11645,13 +11821,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadowfiend__2"] = {
+				["WeakAuras_blackhand_//_impaled"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hleap:_cooldown"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_divine_steed_cooldown_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trinket_2_procc_(blood_dk)"] = {
 					["SkinID"] = "Apathy",
@@ -11665,7 +11841,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bastion_of_the_light_2"] = {
+				["WeakAuras_valarjar's_bond"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -11697,9 +11873,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_xavius_fixate_(phase_one)"] = {
-					["Inherit"] = false,
+				["WeakAuras_sacred_shield_loph_missing"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_trinket_1_use_(frost_dk)__"] = {
 					["SkinID"] = "Apathy",
@@ -11717,7 +11893,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ravager_cooldown"] = {
+				["WeakAuras_trinket_1_procc_(protpaladin)_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11725,23 +11901,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sm_-_suffusions"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_spray_sand"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_tranquility_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_gow"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
 				["WeakAuras_cdwn"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_maalus_ring"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_shield_slam_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_blood_charge"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_legendary_meta"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11753,7 +11929,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_die_by_the_sword_ready"] = {
+				["WeakAuras_unending_hunger"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11793,17 +11969,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_protection_cd_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_valarjar's_bond"] = {
+				["WeakAuras_fel_nova_cooldown_up_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_rogue:_revealing_strike_-_pandemic"] = {
+				["WeakAuras_oli-vamp_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_05-hydra_shot_soak"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_csmash:_active"] = {
 					["SkinID"] = "Apathy",
@@ -11821,7 +11997,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_slam_up"] = {
+				["WeakAuras_shadowstep_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11829,15 +12005,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_necrotic_rot_tank"] = {
+				["WeakAuras_demonic_leap_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_breath_active"] = {
+				["WeakAuras_spell_reflection"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_oli-vamp_2"] = {
+				["WeakAuras_energy"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11853,7 +12029,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_evasion_cooldown___2"] = {
+				["WeakAuras_divine_protection_buff___4"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11865,9 +12041,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fa_-_rupture_realities"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_05-consuming_hunger"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_iron_reaver_//_immolation_(stacking_ground_effect)"] = {
 					["SkinID"] = "Apathy",
@@ -11881,9 +12057,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_throw_glaive_havoc_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_blackhand_//_slagged"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_spinners_cooldown_monk"] = {
 					["SkinID"] = "Apathy",
@@ -11893,7 +12069,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_neltharions_fury_cooldown_up"] = {
+				["WeakAuras_iron_maiden_//_bloodsoaked_heartseeker"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11909,9 +12085,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_glazik_corruption_void_trigger_debuff"] = {
-					["Inherit"] = false,
+				["WeakAuras_avatar:_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_trinket_1_druid"] = {
 					["Inherit"] = false,
@@ -11933,19 +12109,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_eyebream_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_immolation_aura_cooldown_up_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_soul_reaper_cd45"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadowstep_cooldown_"] = {
+				["WeakAuras_sprint_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_healing_tonic_cd"] = {
+				["WeakAuras_stagger_median_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11953,11 +12129,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blackhand_//_slagged"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_trueshot"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_t18_4p_"] = {
+				["WeakAuras_guard_monk_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11977,7 +12153,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shaman_enhance_ring"] = {
+				["WeakAuras_seraphim_avalible_loph___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11985,7 +12161,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_def_stance"] = {
+				["WeakAuras_bladestorm:_ready"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -11993,15 +12169,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_guard_monk_2"] = {
+				["WeakAuras_eye_beam_cooldon_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_brew_stacks__2"] = {
+				["WeakAuras_avenger's_shield_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_crimson_scurge"] = {
+				["WeakAuras_throw_glaive_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12009,33 +12185,33 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_barrier3"] = {
+				["WeakAuras_soulburn:_haunt"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rime"] = {
+				["WeakAuras_mark_of_frostwolf_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_slice_and_dice"] = {
+				["WeakAuras_auto-repairing_autoclave"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kick_cooldown_up__"] = {
+				["WeakAuras_virulent_plague"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_archangel"] = {
+				["WeakAuras_feral_spirit_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bladestorm:_ready"] = {
+				["WeakAuras_eye_of_anzu_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_eye_beam_cooldon_up"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_ardent_defender_cd_4"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_corruption_-_aff"] = {
 					["SkinID"] = "Apathy",
@@ -12049,21 +12225,21 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_draw_power_blue"] = {
-					["Inherit"] = false,
+				["WeakAuras_trinket_2_procc_(protpaladin)_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_consume_magic_cooldown_up_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_virulent_plague"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_shadempow(45rp_deathstrike)_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blinding_light_cooldown"] = {
-					["Inherit"] = false,
+				["WeakAuras_vital_mists_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_charge_cooldown__up_"] = {
 					["SkinID"] = "Apathy",
@@ -12077,7 +12253,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_seed_of_destruction"] = {
+				["WeakAuras_ravager_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12089,7 +12265,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soulburn:_haunt"] = {
+				["WeakAuras_hammer_of_justice"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12121,17 +12297,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadow_word_death_cooldown"] = {
+				["WeakAuras_dps_ring_rogue_loph_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_enraged_regen_ready"] = {
+				["WeakAuras_healing_tide_totem_cooldown__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_2_procc_(protpaladin)_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_sr_usable"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hammer_of_wrath_cooldown_up__2"] = {
 					["SkinID"] = "Apathy",
@@ -12157,11 +12333,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mark_of_doom_2"] = {
+				["WeakAuras_last_standr_cooldown__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_vital_mists_2"] = {
+				["WeakAuras_rule_of_law_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12169,7 +12345,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_diffuse_magic_cooldown_up_2"] = {
+				["WeakAuras_crash_lightning_cooldown_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12189,7 +12365,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ha_refresh"] = {
+				["WeakAuras_vengeful_retreat_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12209,17 +12385,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_counter_shot_cooldown"] = {
+				["WeakAuras_vengeance_ignore_pain"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_blighted_rurne_weapon"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_healing_tide_totem_cooldown__2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_grievous_rip"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_coe_off"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_blackhand"] = {
 					["SkinID"] = "Apathy",
@@ -12241,37 +12417,37 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_enraged_regen_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_vengeance_ignore_pain"] = {
+				["WeakAuras_dragon's_split_slowing_debuff_(lethon_fly)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_soul_echoes"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_lights_hammer_cooldown_up_"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_pillar_of_frost_cooldown____2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_rockbiter_coolddown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_ardent_defender_cooldown_up___3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dragon's_split_slowing_debuff_(lethon_fly)"] = {
+				["WeakAuras_soul_echoes"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_avenging_wrath_loph_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_sudden_death_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_lunar_emp"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_guard_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_horn_of_valor_buff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bone_shield_loph_"] = {
 					["SkinID"] = "Apathy",
@@ -12297,11 +12473,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sa_-_mark_debuffs"] = {
-					["Inherit"] = false,
+				["WeakAuras_dirge_of_angerboda"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_blood_drinker_cooldown_up"] = {
+				["WeakAuras_hr_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12313,7 +12489,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kappa_totem_4"] = {
+				["WeakAuras_necrosis"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12321,29 +12497,29 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avenging_wrath_loph_2"] = {
+				["WeakAuras_healing_rain_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_throw_glaive_cooldown_2_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_death_and_decay_cooldown_up___2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_eregeneration:_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dirge_of_angerboda"] = {
+				["WeakAuras_soul_reaper_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tiger_power_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_dispersion_up"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blighted_rurne_weapon"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_mangle_cd_up"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_sera_avail"] = {
 					["SkinID"] = "Apathy",
@@ -12361,41 +12537,41 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_son_off"] = {
+				["WeakAuras_grand_melee"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_defile_cooldown"] = {
+				["WeakAuras_shockwave_cooldown_up____2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soul_reaper_buff"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_ignore_pain_loph_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_mark_of_ursol_(spell)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tricks_of_the_trade"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_hr_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_death_and_decay_cooldown_up___2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_bonestorm_cd_up_2"] = {
+				["WeakAuras_draw_power_green"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_guard_2"] = {
+				["WeakAuras_silence"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_warbreaker_cooldown_up"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_guard_monk"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_09-bursting_dreadflame"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_08-cleansing_protocol"] = {
 					["Inherit"] = false,
@@ -12409,19 +12585,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_est_on_cd"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_08-unbound_chaos"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_enrage_warrrior_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_frozen_orb"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_avenger's_shield_cooldown__up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_grand_melee"] = {
+				["WeakAuras_thorasus_ring"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12429,7 +12605,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_warbreaker_cooldown_up"] = {
+				["WeakAuras_infernal_strike_cooldown_up_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -12445,7 +12621,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mangle_cd_up"] = {
+				["WeakAuras_raging_blow_cooldown____2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -12469,9 +12645,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_consumption_cooldown_up"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_ardent_defender_on_4"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_chi_wave__cooldown__up___2"] = {
 					["SkinID"] = "Apathy",
@@ -12509,39 +12685,39 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_wellspring_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_execute_proty"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_waking_nightmare"] = {
+				["WeakAuras_thrash_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_subterfuge"] = {
+				["WeakAuras_raidbuff-haste"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_raging_blow_cooldown____2"] = {
+				["WeakAuras_csmash:_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_wild_charge_cd_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_spiritwalk_cooldown_2"] = {
+				["WeakAuras_power_word:_shield_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_quake"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_raidbuff-augment"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mangle_cd"] = {
+				["WeakAuras_09-darkness_of_a_thousand_souls"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_apt_on_cd"] = {
+				["WeakAuras_berserk"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12557,7 +12733,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_weapon_enchant_(ret_paladin)"] = {
+				["WeakAuras_doomwinds_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12565,23 +12741,23 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_wild_charge_cd_up"] = {
-					["Inherit"] = false,
+				["WeakAuras_weapon_enchant_(ret_paladin)"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_gd_-_soul_corrosion"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_doomwinds_cooldown"] = {
+				["WeakAuras_blur_coolwodn_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_2_procc_(protpaladin)__cd_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_icy_floes_cooldown__"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_earthen_shield_totem"] = {
+				["WeakAuras_bone_shield_down"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12593,15 +12769,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demon_spikes_cooldown_up"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_dragon's_perekrit'_spawn_(ysondre)_(adit_auras)"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_howling_axe_2"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_blur_coolwodn_2"] = {
+				["WeakAuras_breach_armor"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_alacrity_buff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12613,9 +12789,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tyrant_velhari_//_edict_of_condemnation_(timed_debuff)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_bone_shield_loph__oiver_4"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hb_-_toxic_spores"] = {
 					["Inherit"] = false,
@@ -12625,21 +12801,21 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hellfire_assault_//_howling_axe_(timed_debuff)"] = {
+				["WeakAuras_stormstrike_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avatar_ready"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_draw_power_purple"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_windburst_cooldown"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_druid-guardian_frenzied_regen_v5.3"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_03-driven_assault"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_die_by_the_sword_buff____2"] = {
 					["SkinID"] = "Apathy",
@@ -12661,11 +12837,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_csmash:_cooldown"] = {
+				["WeakAuras_dps_ring_cooldown__(hunter)_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_2_unholy_dk"] = {
+				["WeakAuras_tc_-_bad_stuff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -12673,9 +12849,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_draw_power_purple"] = {
-					["Inherit"] = false,
+				["WeakAuras_shield_of_the_righteous_3"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_keg_smash_cooldown_"] = {
 					["SkinID"] = "Apathy",
@@ -12689,7 +12865,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blighted_rune_weapon"] = {
+				["WeakAuras_fortifying_brew_cooldown_up____2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -12697,7 +12873,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_cloudburst_totem_cooldown_"] = {
+				["WeakAuras_stampede_cooldown___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12717,7 +12893,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_est"] = {
+				["WeakAuras_legendarybuff_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12729,13 +12905,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fa_-_annihilation"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_ancestral_protection_totem"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dps_ring_cooldown__(hunter)_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_massgrip__cooldown"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_aura_of_malice"] = {
 					["SkinID"] = "Apathy",
@@ -12745,9 +12921,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_xavius_dream_buff"] = {
-					["Inherit"] = false,
+				["WeakAuras_thrash_cat_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_dps_ring_warlock_cd_loph____2"] = {
 					["SkinID"] = "Apathy",
@@ -12757,7 +12933,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_buff"] = {
+				["WeakAuras_frenzied_regen_cd_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -12773,9 +12949,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_massgrip__cooldown"] = {
-					["Inherit"] = false,
+				["WeakAuras_dread_thorns_aura"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_tank_ring_monk_loph__2"] = {
 					["SkinID"] = "Apathy",
@@ -12797,7 +12973,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ancestral_protection_totem"] = {
+				["WeakAuras_runic_shield_yellow"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -12813,25 +12989,25 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_riptide"] = {
+				["WeakAuras_dps_ring_ret_cd_up_paladin__loph____2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hero_drums_cd_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_soul_reaper_cooldown_____2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hammer_of_justice_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_missing_rf_prot_pala_2"] = {
+				["WeakAuras_astral_shift_resto"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_keg_smash_cooldown_up__2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_maidens_jump"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_01-burning_armor_debuff"] = {
 					["Inherit"] = false,
@@ -12845,9 +13021,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_lightning_surge_totem_up_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_hateful_charge"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_agony"] = {
 					["SkinID"] = "Apathy",
@@ -12857,7 +13033,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_runic_shield_blue"] = {
+				["WeakAuras_corpse_shield_debuff_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -12889,11 +13065,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_astral_shift_resto"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_aspect_of_the_wild_cooldown_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hateful_charge"] = {
+				["WeakAuras_survival_instincts"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -12901,7 +13077,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dps_ring_ret_cd_up_paladin__loph____2"] = {
+				["WeakAuras_strike_of_the_memelord_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12913,13 +13089,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadow-lord_iskar_//_fel_fire_(ground_effect)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_ca_-_time_bomb"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bonebreaking_strike"] = {
-					["Inherit"] = false,
+				["WeakAuras_wstrike:_not_ready"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_trinket_2_use"] = {
 					["Inherit"] = false,
@@ -12929,11 +13105,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dragon's_dps_debuff_(ysondre)"] = {
-					["Inherit"] = false,
+				["WeakAuras_pilar_of_frost_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_shadow_dance_cooldown__0"] = {
+				["WeakAuras_garrote_lopg_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -12949,9 +13125,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_aspect_of_the_wild_cooldown_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_seraphim_buff_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_death_pact_available"] = {
 					["SkinID"] = "Apathy",
@@ -12961,9 +13137,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hammer_of_justice_cd"] = {
-					["Inherit"] = false,
+				["WeakAuras_sweeping_strikes"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_hand_of_guldan_cooldown____2"] = {
 					["SkinID"] = "Apathy",
@@ -12973,11 +13149,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_maidens_jump"] = {
-					["Inherit"] = false,
+				["WeakAuras_precense_of_mind_cooldown__"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_draw_power_yellow"] = {
+				["WeakAuras_tr_-_arcing_bonds"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13009,19 +13185,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_st_-_icy_ejection"] = {
+				["WeakAuras_ca_-_chrono_1-8_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hammer_of_justice_cd_up"] = {
-					["Inherit"] = false,
+				["WeakAuras_racial_draenei_on_cd_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_vengeance_focused_rage"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ghost_wolf"] = {
+				["WeakAuras_twist_of_fate"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13029,29 +13205,29 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_void_torrent"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_bind"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_evasion__cooldown_up____2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_momentum_buff"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_umbilicus_eternus"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_skull_of_war_procc_(rogue)__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tank_ring_druid"] = {
-					["Inherit"] = false,
+				["WeakAuras_sanguine"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_procc_(dk)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_firey_brand_buff_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_st_-_witness_the_void"] = {
 					["Inherit"] = false,
@@ -13061,7 +13237,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bind"] = {
+				["WeakAuras_incarnatino"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13073,21 +13249,21 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_racial_draenei_on_cd_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_arcane_slicer"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gr_-_burning_armor_(tank)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fire_shock_g_restoration"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_gd_-_fel_efflux_cast"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_karma_buff_amount"] = {
-					["Inherit"] = false,
+				["WeakAuras_fist_of_justisce_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_frostbrand_not_up"] = {
 					["SkinID"] = "Apathy",
@@ -13101,11 +13277,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_03-jagged_abrasion"] = {
-					["Inherit"] = false,
+				["WeakAuras_beastial_wrath_rdy_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_sanguine"] = {
+				["WeakAuras_fire_shock_restoration"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13113,15 +13289,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_breath_of_sindragosa"] = {
+				["WeakAuras_storm,_earth,_and_fire_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_healing_rain_cooldown_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_incaratin_cooldown_up_"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_festering_wound_2"] = {
+				["WeakAuras_fists_of_fury_cooldown___2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13129,7 +13305,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_beastial_wrath_rdy_2"] = {
+				["WeakAuras_xuen_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13137,9 +13313,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fist_of_justisce_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_st_-_chilled/frozen"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_revenge_proc_dodge"] = {
 					["SkinID"] = "Apathy",
@@ -13149,15 +13325,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kr_-_searing_brand_(tank)"] = {
+				["WeakAuras_gm_-_ablating_explosion_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_incarnatino"] = {
-					["Inherit"] = false,
+				["WeakAuras_arcway2setleatherdruid"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_gd_-_fel_efflux_cast"] = {
+				["WeakAuras_tr_-_succulent_feast"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13165,11 +13341,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_procc_(dhtank)_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_metamorphosis_cooldown____2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_ckoudburst_buff_2"] = {
+				["WeakAuras_incap_rdy_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13185,11 +13361,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gow_on_cd"] = {
+				["WeakAuras_swiftmend_cd_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_energizing_elixir_cooldown_up____2"] = {
+				["WeakAuras_resto_2p_t20"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13197,11 +13373,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ibf_cooldown"] = {
-					["Inherit"] = false,
+				["WeakAuras_aura_of_decay"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_no_brew_stacks___2"] = {
+				["WeakAuras_gd_-_liquid_hellfire_cast"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13209,17 +13385,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadowfiend_cd"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_tr_-_annihilation"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_last_stand_lazel"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_incarnation:"] = {
-					["Inherit"] = false,
+				["WeakAuras_spiritwalkers_grace_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_thunderstrike"] = {
 					["Inherit"] = false,
@@ -13229,11 +13405,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blooddrinker"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_br_fur"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_garrote_lopg"] = {
+				["WeakAuras_exploding_keg_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13245,17 +13421,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gd_-_liquid_hellfire_cast"] = {
+				["WeakAuras_rot"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_last_stand_cooldown_up_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sa_-_frostbitten"] = {
-					["Inherit"] = false,
+				["WeakAuras_tectus'_heartbeat"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_volatile_rot_distance_2"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_mv_-_blowback"] = {
 					["SkinID"] = "Apathy",
@@ -13277,7 +13453,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demo_shout_buff_____2"] = {
+				["WeakAuras_blinding_lgith_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13289,7 +13465,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kingsbane_cooldown_u"] = {
+				["WeakAuras_heroism_debuff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13297,19 +13473,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gorefiend_//_fel_flames_(stacking_debuff,_tank_only)"] = {
+				["WeakAuras_shockwave_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_heroism_debuff"] = {
-					["Inherit"] = false,
+				["WeakAuras_imp_swarm_cd"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_demoralizing_shout_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_total_absorb_icon"] = {
+				["WeakAuras_kj_-_focused_dreadflame"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13317,21 +13493,21 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_swiftmend_cd_up"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_tectus'_heartbeat"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_kr_-_orb_of_destruction"] = {
+				["WeakAuras_sa_-_annihilate_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_spitit_bomb"] = {
-					["Inherit"] = false,
+				["WeakAuras_racial_goblin_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_vital_mists"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_burst_of_speed_cooldown_up___"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_mortal_strike_cd"] = {
 					["SkinID"] = "Apathy",
@@ -13369,7 +13545,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sbhaunt"] = {
+				["WeakAuras_wrt"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13377,17 +13553,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_vital_mists"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_spellblade_aluriel_annihilated"] = {
+				["WeakAuras_scourge_of_worlds"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sk_-_broken_shard"] = {
-					["Inherit"] = false,
+				["WeakAuras_seraphim"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mangle_cd_up_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_vamipric_blood_buff_"] = {
 					["SkinID"] = "Apathy",
@@ -13401,7 +13577,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_horn_of_valor_rdy"] = {
+				["WeakAuras_hr_-_drenching_waters"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13429,9 +13605,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tr_-_arcane_seepage"] = {
-					["Inherit"] = false,
+				["WeakAuras_demon_soul_3_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_potion"] = {
 					["SkinID"] = "Apathy",
@@ -13441,9 +13617,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_seraphim"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_tank_ring_druid_cd_up"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_skull_of_war_procc_(rogue)___2"] = {
 					["SkinID"] = "Apathy",
@@ -13457,13 +13633,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shockwave_cooldown_up___"] = {
+				["WeakAuras_rage_of_the_sleeper_cd_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hr_-_drenching_waters"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_tc_-_seeker_swarm_cast"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_iron_maiden_//_convulsive_shadows"] = {
 					["SkinID"] = "Apathy",
@@ -13473,27 +13649,27 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gd_-_soul_siphon"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_horn_of_winter_cd"] = {
+				["WeakAuras_flourish_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tr_-_arcane_slash_(tank)"] = {
+				["WeakAuras_incap_roar"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_de_-_scythe_sweep_(tank)"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_06-spear_of_anguish"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tranquility_cd_up"] = {
+				["WeakAuras_blizzard_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_sightless_gaze"] = {
+				["WeakAuras_seraphim_avalible_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13521,15 +13697,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mangle_cd_up_2"] = {
+				["WeakAuras_ms_-_debuff_soup"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_titan's_thunder"] = {
-					["Inherit"] = false,
+				["WeakAuras_essence_of_g'hanir_cd_up"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_rage_of_the_sleeper_cd_up_2"] = {
+				["WeakAuras_holy_avenger_buff_(holy)__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13545,11 +13721,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_1_use_cd_(blood_dk)__"] = {
-					["Inherit"] = false,
+				["WeakAuras_incaratin_cooldown_up_guardian"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_star_augur_absolute_zero"] = {
+				["WeakAuras_focused_dreadflame"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13561,17 +13737,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sk_(m)_-_volatile_fragments"] = {
-					["Inherit"] = false,
+				["WeakAuras_tyr's_deliverance"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_tr_-_stuffed"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_incap_roar"] = {
-					["Inherit"] = false,
+				["WeakAuras_kj_-_test_-_flaming_orb"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_clarity_of_will_2"] = {
 					["SkinID"] = "Apathy",
@@ -13581,11 +13757,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ms_-_debuff_soup"] = {
+				["WeakAuras_kj_-_shadow_reflections"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_incaratin_cooldown_up_guardian_2"] = {
+				["WeakAuras_titans_thunder_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13593,19 +13769,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sk_(m)_-_toxic_chitin"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_incaratin_cooldown_up_guardian"] = {
+				["WeakAuras_in_rune_of_power_ash_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_focused_dreadflame"] = {
+				["WeakAuras_frozen_rain"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_de_-_bone_saw"] = {
+				["WeakAuras_krosus_searing_brand"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_dh_-_crush_mind_(tank)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13621,23 +13797,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ivy_veins_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_03-drenched"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fire_blast_cooldown"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_06-wither"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ice_floes_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_shadow_reflections"] = {
+				["WeakAuras_dps_ring_wariorr_cd_loph__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bullseye_2"] = {
+				["WeakAuras_riptide_coolddown__echo"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13649,13 +13825,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_frozen_rain"] = {
+				["WeakAuras_massgrip__cooldown_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras__concordance_resto_shaman"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_09-illidan_buff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_oregorger_//_blackrock_barrage"] = {
 					["SkinID"] = "Apathy",
@@ -13665,13 +13841,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fa_-_test_-_shadowy_blades"] = {
+				["WeakAuras_stone_of_the_elements_rogue"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dh_-_crush_mind_(tank)"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_09-gravity_squeeze"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blinding_light_cooldown_2"] = {
 					["Inherit"] = false,
@@ -13681,11 +13857,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fa_-_black_winds"] = {
+				["WeakAuras_fel_rush_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_03-drenched"] = {
+				["WeakAuras_a_spell_counter_(settings_in_actions)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -13713,9 +13889,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rising_sun_kick"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_swiftmend_prosperity"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bop_cd_2"] = {
 					["Inherit"] = false,
@@ -13753,13 +13929,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fel_rush_cooldown_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_dragon's_dps_debuff_(ysondre)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_09-gravity_squeeze"] = {
-					["Inherit"] = false,
+				["WeakAuras_trinket_1_druid_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_rof_off"] = {
 					["SkinID"] = "Apathy",
@@ -13769,7 +13945,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_cenarion_ward_cd_up"] = {
+				["WeakAuras_rake_debuff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -13781,9 +13957,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_curse_of_the_dreadblades_buff"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_rune"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 			},
 		},
@@ -13889,6 +14065,10 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ooc"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_engine_of_eradication"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -14003,6 +14183,10 @@ MasqueDB = {
 				["WeakAuras_celerity_zone"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_resto_druid_legendary_trinket"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_icebound_fortitude"] = {
 					["Inherit"] = false,
@@ -14301,6 +14485,10 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_weapon_enchant_(monk"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_engine_of_eradication_2"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_06-spear_of_anguish_hc"] = {
@@ -14940,6 +15128,10 @@ MasqueDB = {
 				["WeakAuras_vampieric_blood_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_quaking_timer"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_incanters_flow_loph"] = {
 					["SkinID"] = "Apathy",
 				},
@@ -15080,6 +15272,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_he_1"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_dirge_of_angerboda"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
@@ -15195,6 +15391,10 @@ MasqueDB = {
 				["WeakAuras_tyrant_velhari_//_font_of_corruption_(interactive_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_army_of_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_hr_-_jagged_abrasion_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
@@ -15259,6 +15459,14 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_piercing_shot"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_berserk"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_hellfire_high_council_//_bloodboil_(stacking_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
@@ -15273,6 +15481,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_tiger's_fury"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_hr_-_drenched"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_trinket_1_use_cd_(blood_dk)___2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
@@ -15280,11 +15496,23 @@ MasqueDB = {
 				["WeakAuras_bladestorm_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_swiftmend_prosperity"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_dragon's_dps_debuff_(ysondre)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_avenging_wrath_cooldown_(holy)"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_05-befouling_ink"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_brutal_slah"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15296,7 +15524,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_ed:_ls_+_sw_icon_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_consecration__cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_currentequippedset"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -15308,12 +15544,24 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_caress_of_the_tidemother"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_taunt_diminishing_return_aura"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_throw_glaive_cooldown_3"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_bursting"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_speed_set_dk"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_02-soul_corruption"] = {
 					["SkinID"] = "Apathy",
@@ -15337,6 +15585,10 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_quake_icon"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_de_-_max_torment"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
@@ -15347,6 +15599,14 @@ MasqueDB = {
 				["WeakAuras_mortal_strike_up___2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_dk_2_set_t21"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_kj_-_test_-_rupturing_singularity_(emote)"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dampen_harm"] = {
 					["SkinID"] = "Apathy",
@@ -15362,6 +15622,10 @@ MasqueDB = {
 				["WeakAuras_stormstirke_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_quaking_cancel_spell"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_secret"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
@@ -15372,6 +15636,29 @@ MasqueDB = {
 				["WeakAuras_flametounge_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_blooddrinker_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_lootspec2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_quake_(debuff)"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_blur_buff"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_concordance_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_taunt_on_cd_blood"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_weapon_enchant_(rogue)"] = {
 					["SkinID"] = "Apathy",
 				},
@@ -15379,8 +15666,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_ashermane's_frenzy"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_blade_dance_cooldown_up"] = {
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_earthen_shield_totem_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_xhul'horac_//_chains_of_fel_(interactive_debuff)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shaman_use_trinket_1"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_die_by_the_sword_buff___"] = {
 					["SkinID"] = "Apathy",
@@ -15389,7 +15691,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_03-driven_assault"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_flourish"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_healing_challenge_-_ignite_soul"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_mighty_bash_ready"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15397,11 +15711,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_necrotic_rot_self_2"] = {
+				["WeakAuras_bind"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_quaking_cancel_spell"] = {
+				["WeakAuras_kr_-_orb_of_destruction"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15412,23 +15726,23 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_concordance_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_tc_-_seeker_swarm_cast"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blooddrinker_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_09-armageddon"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_control_undead_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_control_undead"] = {
+				["WeakAuras_flying_serpen_kick_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shaman_use_trinket_1"] = {
+				["WeakAuras_06-soulbind"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -15440,14 +15754,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_riptide_coolddown__echo"] = {
+				["WeakAuras_dampen_harm_buff___"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_amp_magic"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_05-befouling_ink"] = {
+				["WeakAuras_06-sundering_doom_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -15455,30 +15768,31 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_xhul'horac_//_chains_of_fel_(interactive_debuff)"] = {
+				["WeakAuras_swiftmend"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_infernal_strike_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ed:_ls_+_sw_icon_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_gd_-_fel_efflux_cast"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_rune_tap_loph__2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ibf_cooldown"] = {
+				["WeakAuras_09-bursting_dreadflame"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_focused_dreadflame"] = {
-					["Inherit"] = false,
+				["WeakAuras_new"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_09-armageddon"] = {
+				["WeakAuras_08-touch_of_sargeras"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -15490,9 +15804,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bind"] = {
-					["Inherit"] = false,
+				["WeakAuras_05-consuming_hunger"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_runic_brand_blue"] = {
 					["Inherit"] = false,
@@ -15509,30 +15823,30 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_08-desolate"] = {
+				["WeakAuras_04-lunar_beacon"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_marked_for_death_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kr_-_orb_of_destruction"] = {
+				["WeakAuras_de_-_scythe_sweep_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_06-sundering_doom_2"] = {
+				["WeakAuras_barkskin_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dark_tranformation"] = {
+				["WeakAuras_trinket_1_use_cd_(blood_dk)__"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_chi_wave_cooldown___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_flying_serpen_kick_cd"] = {
+				["WeakAuras_healing_stream_totem_"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_holy_shock_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
@@ -15541,13 +15855,13 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_04-lunar_beacon"] = {
+				["WeakAuras_06-crush_mind"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_new"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_fear_shaman"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_seraphim_avalible_loph__"] = {
 					["SkinID"] = "Apathy",
@@ -15555,10 +15869,11 @@ MasqueDB = {
 				["WeakAuras_dps_ring_warlock_cd_loph___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blur_buff"] = {
+				["WeakAuras_sm_-_moon_burn"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_swiftmend"] = {
+				["WeakAuras_fa_-_dark_mark"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15566,30 +15881,29 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_taunt_on_cd_blood"] = {
-					["Inherit"] = false,
+				["WeakAuras_firey_brand_buff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_earthen_shield_totem_up"] = {
+				["ElvUI_Consolidated Buffs"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_arcway2setleatherdruid"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soul_reaper_cooldown_____2"] = {
+				["WeakAuras_necrotic_rot_self"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_raidbuff-well_fed"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_necrotic_rot_self"] = {
-					["Inherit"] = false,
+				["WeakAuras_he_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_hellfire_high_council_//_fel_rage_(buff,_dps_only)"] = {
+				["WeakAuras_bone_shield_loph__oiver_4"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dps_ring_monk_cd_up_loph____"] = {
@@ -15602,14 +15916,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_09-bursting_dreadflame"] = {
+				["WeakAuras_nether_bond"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_fel_sludge"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_flourish"] = {
+				["WeakAuras_ms_-_debuff_soup"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15624,20 +15938,20 @@ MasqueDB = {
 				["WeakAuras_hemo_missing_lopg_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_stream_totem_"] = {
+				["WeakAuras_bonestorm_cd_2"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_earthwarden"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_use_cd_(blood_dk)__"] = {
+				["WeakAuras_healing_rain_cooldown_up"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_06-crush_mind"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_fa_-_black_winds"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gr_-_infernal_burning_(debuff)"] = {
 					["Inherit"] = false,
@@ -15647,9 +15961,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_04-incorporeal_shot_2"] = {
+				["WeakAuras_xhul'horac_//_void_surge_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_gm_-_spanning_singularity"] = {
 					["Inherit"] = false,
@@ -15670,32 +15983,34 @@ MasqueDB = {
 				["WeakAuras_energy"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sm_-_moon_burn"] = {
-					["Inherit"] = false,
+				["WeakAuras_04-incorporeal_shot"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_flametounge_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hr_-_fixated"] = {
+				["WeakAuras_ironbark"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dampen_harm_buff___"] = {
+				["WeakAuras_05-hydra_shot_soak"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_throw_glaive_cooldown"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_kj_-_test_-_flaming_orb"] = {
+				["WeakAuras_titans_thunder_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ivy_veins_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sprint_totem_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fa_-_dark_mark"] = {
+				["WeakAuras_arcane_slicer"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15703,27 +16018,27 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_havoc_buff"] = {
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_bos_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_04-astral_vulnerability"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_ms_-_debuff_soup"] = {
+				["WeakAuras_sa_(m)_-_fel_stomp"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tank_ring_protwariorr_cd_up_loph__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sa_-_frostbitten"] = {
+				["WeakAuras_rip_debuff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_havoc_buff"] = {
+				["WeakAuras_01-melted_armor_debuff"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_ed:_swx2_icon"] = {
 					["SkinID"] = "Apathy",
@@ -15740,7 +16055,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bone_shield_loph__oiver_4"] = {
+				["WeakAuras_runic_shield_yellow"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15758,33 +16073,33 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fa_-_black_winds"] = {
+				["WeakAuras_efflorence"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_rain_cooldown_up"] = {
+				["WeakAuras_tr_-_arcing_bonds"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_astral_shiftt_dps_shaman"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dancingruneweapon"] = {
+				["WeakAuras_lock_and_load_loph"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_nether_bond"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_rule_of_law_buff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hellfire_assault_//_howling_axe_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ironbark"] = {
-					["Inherit"] = false,
+				["WeakAuras_blood_boil_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_fear_shaman"] = {
+				["WeakAuras_shadowstep_cooldown__"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15796,7 +16111,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bonestorm_cd_2"] = {
+				["WeakAuras_bonestorm_buff_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15810,29 +16125,28 @@ MasqueDB = {
 				["WeakAuras_shadowfury_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_04-incorporeal_shot"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_fa_-_annihilation"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_firey_brand_buff"] = {
+				["WeakAuras_tranquility_cd_up"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blur_coolwodn"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ivy_veins_"] = {
+				["WeakAuras_int_pot_mage_loph_"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_crash_lighting_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bonestorm_buff_2"] = {
+				["WeakAuras_necrosis_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hr_-_drenched"] = {
-					["Inherit"] = false,
+				["WeakAuras_throw_glaive_cooldown_2"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_str_pot_dps_dk__2"] = {
@@ -15860,13 +16174,12 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rule_of_law_cooldown"] = {
-					["Inherit"] = false,
+				["WeakAuras_death_and_decay_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_07-titanic_bulwark"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_dh_-_debuff_soup"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blackout_strikecooldown_up_"] = {
 					["SkinID"] = "Apathy",
@@ -15877,8 +16190,7 @@ MasqueDB = {
 				["WeakAuras_burst_of_speed_cooldown__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadowstep_cooldown__"] = {
-					["Inherit"] = false,
+				["WeakAuras_crit"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ms_-_burden_of_pain_(tank)"] = {
@@ -15900,22 +16212,22 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mighty_bash"] = {
-					["Inherit"] = false,
+				["WeakAuras_anzu"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_rule_of_law_buff"] = {
+				["WeakAuras_gm_-_delphuric_chaos"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tank_ring_monk_cd_up_loph___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dumb_infernal_cast"] = {
-					["Inherit"] = false,
+				["WeakAuras_ironskin_brew"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_sa_-_detonate:_mof"] = {
+				["WeakAuras_glazik_void_spawn_debuff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15923,22 +16235,22 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_spirit_link_totem_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_shuffle_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hellfire_assault_//_felfire_volley_(interupt)"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_fa_-_annihilation"] = {
+				["WeakAuras_consecration__cooldown_(holy)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_necrosis_2"] = {
+				["WeakAuras_sk_-_shockwave_cast"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_flourish_cd"] = {
+				["WeakAuras_dumb_eyes_cast"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -15959,9 +16271,8 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_avenging_wrath_cooldown"] = {
+				["WeakAuras_die_by_the_sword_cooldown"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_nether_link"] = {
 					["Inherit"] = false,
@@ -15983,9 +16294,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_arcane_slicer"] = {
-					["Inherit"] = false,
+				["WeakAuras_avenging_wrath_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_cloudburst_healing"] = {
 					["SkinID"] = "Apathy",
@@ -16001,36 +16312,38 @@ MasqueDB = {
 				["WeakAuras_weapon_enchant_(prot_paladin)_2"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sa_(m)_-_fel_stomp"] = {
+				["WeakAuras_trinket_1_use_(blood_dk)__2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_int_pot_mage_loph_"] = {
+				["WeakAuras_rockbiter_coolddown_2"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_03-unchecked_rage"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_crit"] = {
+				["WeakAuras_shield_barrier"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_tr_-_arcing_bonds"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gm_-_delphuric_chaos"] = {
+				["WeakAuras_survival_instincts"] = {
+					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sk_-_shockwave_cast"] = {
+				["WeakAuras_fiery_brand"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_st_-_chilled/frozen"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trinket_1_procc_(monk)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dps_ring_cd(hunter)_"] = {
+				["WeakAuras_gorefiends_grasp_cooldown_up_2"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dark_arbiter_cooldown_up_2"] = {
@@ -16041,16 +16354,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ironskin_brew"] = {
+				["WeakAuras_dps_ring_cd(hunter)_"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_tyrant_velhari_//_edict_of_condemnation_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_apocalypse_usable"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_silence_cooldown"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bestial_wrath_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
@@ -16059,38 +16371,39 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_soul_reaper_stacks"] = {
-					["Inherit"] = false,
+				["WeakAuras_ring_of_peace"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_maiden_shield"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_05-hydra_acid"] = {
+				["WeakAuras_explosive_shot_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fiery_brand"] = {
+				["WeakAuras_soul_barrier"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_anti_magic_shell__cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fury_of_the_illidari"] = {
+				["WeakAuras_05-hydra_acid"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_toxic_wound"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_growing_paranoia"] = {
-					["Inherit"] = false,
+				["WeakAuras_fury_of_the_illidari"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_throw_glaive_cooldown_2"] = {
+				["WeakAuras_elusive_brew_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_recklessness"] = {
 					["SkinID"] = "Apathy",
@@ -16101,18 +16414,19 @@ MasqueDB = {
 				["WeakAuras_holy_prism_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_death_and_decay_cooldown_up__"] = {
+				["WeakAuras_04-lunar_fire"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_growing_paranoia"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gm_-_permeliative_torment"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dh_-_debuff_soup"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_explosive_shot_cooldown_up"] = {
+				["WeakAuras_horn_of_valor_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -16124,50 +16438,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_incaratin_cooldown_up_"] = {
-					["Inherit"] = false,
+				["WeakAuras_summon_doomguard_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ring_of_peace"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_gorefiends_grasp_cooldown_up_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_glazik_void_spawn_debuff"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_spirit_link_totem_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_concordance"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_consecration__cooldown_(holy)"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_soul_siphon"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_05-slicing_tornado"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_elusive_brew_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_soul_barrier"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_gd_-_eye_of_gul'dan"] = {
+				["WeakAuras_umbilicus_eternus"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16175,9 +16449,48 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_explosive_orbs_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_elusive_dance"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_concordance"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_shield_wall_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_soul_siphon"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_doom"] = {
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_odyns_fury"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_aspect_of_the_wild"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_sm_-_suffusions"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_exhilaration"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_hb_-_call_of_night"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_crusader_strike_cooldown_(holy)"] = {
 					["Inherit"] = false,
@@ -16190,8 +16503,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rockbiter_coolddown_2"] = {
+				["WeakAuras_concecration_missing_buff"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_socrethar_the_eternal_//_gift_of_the_man'ari_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
@@ -16199,29 +16513,29 @@ MasqueDB = {
 				["WeakAuras_str_pot_dps_dk_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_horn_of_valor_cd"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_glacial_advance_cd_up_"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_07-dps/healing_buffs"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blood_mirror_cd_up__2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_sa_-_detonate:_sb"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["Bartender4_PetBar"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fa_-_test_-_shadowy_blades"] = {
+				["WeakAuras_bullseye"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_kormrok_//_residue_(ground_effect,_mythic_only)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hammer_of_justice_cd_up"] = {
+				["WeakAuras_fa_-_test_-_shadowy_blades"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16240,19 +16554,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_doom"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_concecration_missing"] = {
+				["WeakAuras_09-armageddon_rain"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_anti-magic_zone"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_silence_cooldown"] = {
-					["Inherit"] = false,
+				["WeakAuras_concecration_missing"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_blinding_light_cooldown"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_hand_of_sacrifice"] = {
 					["SkinID"] = "Apathy",
@@ -16275,27 +16590,25 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_glacial_advance_cd_up_"] = {
-					["Inherit"] = false,
+				["WeakAuras_dps_ring_rogue_cd_up_loph___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dh_-_anguish_(absorb)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blade_flurry_counter"] = {
+				["WeakAuras_demoralizing_shout_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_innervate_cd_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_essence_of_g'hanir_cd_up"] = {
-					["Inherit"] = false,
+				["WeakAuras_blade_flurry_counter"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sm_-_suffusions"] = {
-					["Inherit"] = false,
+				["WeakAuras_missing_poison"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_metamorphosis"] = {
@@ -16307,15 +16620,15 @@ MasqueDB = {
 				["WeakAuras_tyrant_velhari_//_annihilating_strike_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_07-unstable_soul"] = {
+				["WeakAuras_bone_shield_loph_missing_"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_astral_shift_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bone_shield_loph_missing_"] = {
+				["WeakAuras_07-unstable_soul"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_headlong_charge"] = {
 					["Inherit"] = false,
@@ -16324,14 +16637,14 @@ MasqueDB = {
 				["WeakAuras_bloodthirst_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_04-lunar_fire"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_gd_-_fury_of_the_fel_(tank)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_recklessness_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hb_-_call_of_night"] = {
+				["WeakAuras_trinket_1_procc_(protpaladin)_buff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16339,22 +16652,22 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tc_-_brand_of_argus"] = {
-					["Inherit"] = false,
+				["WeakAuras_demo_shout_buff____"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_garrote_missing_lopg"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_summon_doomguard_cooldown_up___"] = {
+				["WeakAuras_horn_of_winter_cd_up__"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_shadow-lord_iskar_//_phantasmal_corruption_(interactive_debuff,_tank_only)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_concecration_missing_buff"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_vengeful_retreat_cooldown_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_kilrogg_deadeye_//_heart_seeker_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
@@ -16365,27 +16678,28 @@ MasqueDB = {
 				["WeakAuras_vampiric_embrace"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bullseye"] = {
+				["WeakAuras_gm_-_ablation/pulse_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_adrenaline_rush_cooldown___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_explosive_orbs_"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_whirling_dragon_punch_usable"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_stampeding_roar"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dps_ring_(hunter)"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_06-wither"] = {
+				["WeakAuras_touc_of_death_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_draw_power"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_weapon_enchant_(dk)"] = {
 					["SkinID"] = "Apathy",
@@ -16413,17 +16727,16 @@ MasqueDB = {
 				["WeakAuras_dark_succor"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ironskin_brew_up_2"] = {
+				["WeakAuras_dps_ring_(hunter)"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_tectus_3"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_bonestorm_cd_up_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_05-burden_of_pain_taunt_alert"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_mv_(m)_-_fragment_burst"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_vigilance"] = {
 					["SkinID"] = "Apathy",
@@ -16435,13 +16748,13 @@ MasqueDB = {
 				["WeakAuras_iron_reaver_//_unstable_orb_(stacking_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_05-burden_of_pain_taunt_alert"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_dark_succor_3"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_exhilaration"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_dps__ring_dk_cd_up_loph___"] = {
 					["SkinID"] = "Apathy",
@@ -16449,19 +16762,19 @@ MasqueDB = {
 				["WeakAuras_feral_lounge_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_brutal_glaive"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_quaking"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_stun_arrow"] = {
+				["WeakAuras_serenity_cd_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_vengeful_retreat_cooldown_2"] = {
+				["WeakAuras_wild_growth_"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_tr_-_annihilation"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16469,19 +16782,18 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sa_-_detonate:_sb"] = {
-					["Inherit"] = false,
+				["WeakAuras_hunters_mark_loph"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_archimonde_//_nether_corruption_(timed_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_diffuse_magic_cooldown_up"] = {
+				["WeakAuras_spiriwalker's_grace_buff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_divine_protection_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_trinket_2_kj_trinket__(hunter)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_wraith_walk_cooldown_2"] = {
 					["SkinID"] = "Apathy",
@@ -16498,9 +16810,8 @@ MasqueDB = {
 				["WeakAuras_dampen_harm_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_09-armageddon_rain"] = {
+				["WeakAuras_diffuse_magic_cooldown_up"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_tank_ring_protwariorr_loph"] = {
 					["SkinID"] = "Apathy",
@@ -16513,11 +16824,10 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hellfire_assault_//_repair_(interupt)"] = {
+				["WeakAuras_hand_of_gul'dan_cooldown_up_____"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_massgrip__cooldown_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_hellfire_assault_//_repair_(interupt)"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_holy_shock_cooldown"] = {
@@ -16527,17 +16837,8 @@ MasqueDB = {
 				["WeakAuras_devotion_aura_2_2"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_seraphim_avalible_"] = {
-					["Inherit"] = false,
+				["WeakAuras_weapon_enchant_(warlock)"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_whirling_dragon_punch_usable"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_demoralizing_shout_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_soulburn:haunt_loph"] = {
 					["SkinID"] = "Apathy",
@@ -16545,7 +16846,14 @@ MasqueDB = {
 				["Bartender4"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tyr's_deliverance"] = {
+				["WeakAuras_prismatic_crystal_cooldown___"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_epidemic_3"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_kj_-_gravity_squeeze"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16559,16 +16867,17 @@ MasqueDB = {
 				["WeakAuras_dps_ring_mage_loph_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_burst_of_speed_cooldown_up___"] = {
+				["WeakAuras_tyr's_deliverance"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_horn_of_winter_cd_up__"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_blighted_rune_weapon"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_serenity_cd_"] = {
-					["SkinID"] = "Apathy",
+				["NOP"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_mark_idol"] = {
 					["SkinID"] = "Apathy",
@@ -16589,7 +16898,7 @@ MasqueDB = {
 				["WeakAuras_opportunity"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_bonestorm_cd_up_2"] = {
+				["WeakAuras_sm_-_debuff_soup_a"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16611,16 +16920,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_touc_of_death_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_gm_-_ablation/pulse_(tank)"] = {
+				["WeakAuras_tc_-_feast_of_blood_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_prismatic_crystal_cooldown___"] = {
+				["WeakAuras_beacon_of_virtue_cooldown"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_chi_burst_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_03-drenched"] = {
 					["SkinID"] = "Apathy",
@@ -16642,25 +16952,24 @@ MasqueDB = {
 				["WeakAuras_irons_skin_brew_buff"] = {
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_sr_usable"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_dh_-_spirit_chains"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_survival_insticts_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_incarnatino"] = {
-					["Inherit"] = false,
+				["WeakAuras_agi_pot_hunter"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_battering"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ed:_lsx2_icon"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_survival_insticts_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_doomwinds_cooldown_up"] = {
 					["SkinID"] = "Apathy",
@@ -16672,9 +16981,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_ca_-_time_release"] = {
-					["Inherit"] = false,
+				["WeakAuras_skeer_3"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_raid_mark_icon"] = {
 					["Inherit"] = false,
@@ -16684,18 +16993,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_draw_power"] = {
-					["Inherit"] = false,
+				["WeakAuras_ed:_lsx2_icon"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_tr_-_annihilation"] = {
+				["WeakAuras_gr_-_burning_armor_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dps_ring_wariorr_loph_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hand_of_gul'dan_cooldown_up_____"] = {
+				["WeakAuras_incarnation_buff"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_guardian_of_ancient_kings_cooldown_up__"] = {
@@ -16708,7 +17018,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_mv_(m)_-_fragment_burst"] = {
+				["WeakAuras_empower_rune_weapon_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16718,7 +17028,7 @@ MasqueDB = {
 				["WeakAuras_socrethar_the_eternal_//_exert_dominance_(interupt)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sr_usable"] = {
+				["WeakAuras_dark_rush"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16729,15 +17039,14 @@ MasqueDB = {
 				["ElvUI_Buffs"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_skeer_3"] = {
+				["WeakAuras_blessing_of_sacrifice"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blighted_rune_weapon"] = {
-					["Inherit"] = false,
+				["WeakAuras_supernova_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_incarnation_buff"] = {
+				["WeakAuras_elaborate_planning"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16745,7 +17054,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_swiftmend_cd_up"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_roar_of_sacrifice"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_pvp_proc_3"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -16753,20 +17070,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_pvp_proc_3"] = {
+				["WeakAuras_resto_2p_t20"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_hunters_mark_loph"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_blessing_of_sacrifice"] = {
+				["WeakAuras_spitit_bomb"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-				},
-				["WeakAuras_de_-_calcified_quills"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_no_brew_stacks__"] = {
 					["SkinID"] = "Apathy",
@@ -16775,20 +17085,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["Bartender4_8"] = {
-					["Inherit"] = false,
+				["WeakAuras_weapon_enchant_(ret_paladin)_2"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_armor_pot_tank_dk"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_garrote_cooldown"] = {
+				["WeakAuras_transfer_the_power"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_chaos_nova"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_storm_of_justice"] = {
+				["Bartender4_8"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16796,26 +17106,27 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kr_-_fel_beam_cast"] = {
+				["WeakAuras_sa_-_bad_stuff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dk-blood_death_strike_v2.3"] = {
+				["WeakAuras_new_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sigil_of_flame_cooldown_up"] = {
+				["WeakAuras_bristling_fur"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_08-dark_mark"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_light_of_the_protector_cooldown_up_"] = {
+				["WeakAuras_09-rupturing_singularity"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_bristling_fur"] = {
 					["Inherit"] = false,
+				},
+				["WeakAuras_sigil_of_flame_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tank_ring_protwariorr_cd_loph_"] = {
@@ -16825,7 +17136,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_black_ox_brew_cooldown___"] = {
+				["WeakAuras_grievous_tear"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_immolate_loph__"] = {
@@ -16834,30 +17146,29 @@ MasqueDB = {
 				["WeakAuras_tank_ring_dk_cd_up_loph__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kj_-_gravity_squeeze"] = {
+				["WeakAuras_de_-_calcified_quills"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_elaborate_planning"] = {
-					["Inherit"] = false,
+				["WeakAuras_dps_ring_warlock_cd_up_loph____"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shield_block_loph"] = {
+				["WeakAuras_hb_-_parasitic_fixate"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["Bartender4_3"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sm_-_debuff_soup_a"] = {
+				["WeakAuras_def_5s"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tc_-_feast_of_blood_(tank)"] = {
+				["WeakAuras_ca_-_temporal_orb"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_beacon_of_virtue_cooldown"] = {
-					["Inherit"] = false,
+				["WeakAuras_dark_soul_cooldown___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_unleash_life_up"] = {
@@ -16871,15 +17182,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_chi_burst_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_branded"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_moonfire_debuff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_new_2"] = {
+				["WeakAuras_kj_-_felclaws_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16895,10 +17206,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_agi_pot_hunter"] = {
+				["WeakAuras_rake_debuff"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["Bartender4_5"] = {
+				["WeakAuras_ursoc_gaze_"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_warbreaker_cooldown_up"] = {
@@ -16909,45 +17222,44 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_windburstcooldown_up"] = {
+				["Bartender4_5"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shockwave_cooldown___prot"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dps_ring_warlock_cd_up_loph____"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_gr_-_burning_armor_(tank)"] = {
-					["Inherit"] = false,
+				["WeakAuras_evasion__cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_weapon_enchant_(mage)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_def_5s"] = {
+				["WeakAuras_ancestral_protection_totem_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_grievous_tear"] = {
-					["Inherit"] = false,
+				["WeakAuras_08-rupture_realities"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_trinket_2_procc_(dps_dk)_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_branded"] = {
+				["WeakAuras_blood_shield"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_spear_hand_strike_cooldown_up__"] = {
+				["WeakAuras_unholy_strength_4"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_i_suck_at_tracking"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kj_-_test_-_darkness"] = {
-					["Inherit"] = false,
+				["WeakAuras_spear_hand_strike_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_stampeding_roar_cd"] = {
@@ -16957,14 +17269,14 @@ MasqueDB = {
 				["WeakAuras_soul_reaper_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ursoc_gaze_"] = {
+				["WeakAuras_well_fed"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_healing_tide_totem_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_wild_charge"] = {
+				["WeakAuras_empower_rune_weapon_up_"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -16979,27 +17291,28 @@ MasqueDB = {
 				["WeakAuras_rising_sun_kick_debuff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_swiftmend_cd_up"] = {
+				["WeakAuras_kj_-_test_-_darkness"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_evasion__cooldown_up___"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_resto_2p_t20"] = {
+				["WeakAuras_02-bone_saw"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spitit_bomb"] = {
+				["WeakAuras_sanguine"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_gorefiend_//_digest_(timed_debuff,_normal+heroic_only)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_touch_of_death_cd"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_crusader_strikecooldown_up_"] = {
+				["WeakAuras_trinket_2_use"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_draw_power_yellow"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_festering_rip"] = {
 					["Inherit"] = false,
@@ -17011,10 +17324,11 @@ MasqueDB = {
 				["WeakAuras_avenging_wrath_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_2_procc_(mage)"] = {
+				["WeakAuras_draw_power_yellow"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hammer_of_justice_cd"] = {
+				["WeakAuras_arcanic_bane"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -17025,44 +17339,40 @@ MasqueDB = {
 				["WeakAuras_ancestral_guidance"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_touch_of_death_cd"] = {
+				["WeakAuras_09-felclaws"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_dark_arbitercooldown___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_runic_brand_purple"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_sanguine"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_subtrefuge_loph"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_gorefiend_//_digest_(timed_debuff,_normal+heroic_only)"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_dark_soul_cooldown___"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_hellfire_high_council_//_mark_of_the_necomancer_(interactive_debuff)"] = {
+				["WeakAuras_dps_ring_ret_cd_up_paladin__loph___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_shadow_word_death_cooldown"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_subtrefuge_loph"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_runic_brand_purple"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ravager_cooldown"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_hellfire_high_council_//_mark_of_the_necomancer_(interactive_debuff)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_bloodmirror_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_06-tormented_cries"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-				},
-				["WeakAuras_kj_-_felclaws_(tank)"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_cenarius_stacks_(adit_auras)"] = {
 					["Inherit"] = false,
@@ -17076,73 +17386,74 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fel_barrage_cooldown"] = {
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_energizer_elixir"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_fists_of_fury_cooldown_up__"] = {
+				["WeakAuras_chi_burst_cd_2"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_blur_cooldwon_up_2"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_fists_of_fury_cooldown_up__"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_healing_elixirs_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_sm_-_debuff_soup_b"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_thrash"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_08-rupture_realities"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_blood_shield"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_pummel_cooldown_"] = {
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_trinket_1_procc_(hunter)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_archimonde_//_focused_chaos_(interactive_debuff)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ice_block_buff___"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_epidemic_2"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_wild_growth_cd"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_guardian_spirit_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bloodmirror_cd"] = {
-					["Inherit"] = false,
+				["WeakAuras_empower_wards_cooldown"] = {
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_01-burning_armor_debuff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_apocalypse_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_incaratin_cooldown_up_guardian"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_02-bone_saw"] = {
+				["WeakAuras_shadow-lord_iskar_//_fel_fire_(ground_effect)"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_incap_rdy"] = {
-					["Inherit"] = false,
+				["WeakAuras_pillar_of_frost_loph__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_sk_-_broken_shard"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_pillar_of_frost_loph__"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_archimonde_//_focused_chaos_(interactive_debuff)"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_ca_-_chrono_1-8_(tank)"] = {
+				["WeakAuras_incap_rdy"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -17162,12 +17473,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_avatar_cooldown___"] = {
+				["WeakAuras_ca_-_chrono_1-8_(tank)"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_2_use"] = {
+				["WeakAuras_avenger's_shield_cooldown_"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_heroic_leap_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
@@ -17178,23 +17489,21 @@ MasqueDB = {
 				["WeakAuras_shadempow(45rp_deathstrike)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_apocalypse_cd"] = {
+				["oRA3_Legendary Rings"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_kilrogg_deadeye_//_rending_howl_(interupt)"] = {
+				["WeakAuras_avatar_cooldown___"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_sk_-_focused_blast_stun"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_charge_cooldown__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gd_-_liquid_hellfire_cast"] = {
-					["Inherit"] = false,
+				["WeakAuras_virulent_plague_missing"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_09-felclaws"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_dancing_rune_weapon"] = {
 					["SkinID"] = "Apathy",
@@ -17203,35 +17512,36 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_divine_protection_cooldown"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_heroism_debuff"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-				},
-				["WeakAuras_evasion_buff__"] = {
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_survival_insticts_1"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_xavius_dream_buff"] = {
+				["WeakAuras_rushing_jade_wind"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadow-lord_iskar_//_fel_fire_(ground_effect)"] = {
+				["WeakAuras_gd_-_liquid_hellfire_cast"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_demon_spikes_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_avenger's_shield_cooldown_"] = {
+				["WeakAuras_kilrogg_deadeye_//_rending_howl_(interupt)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_unstable_mana_stacks"] = {
+				["WeakAuras_evanesce_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_archimonde_//_doomfire_fixate_(fixate)"] = {
+				["WeakAuras_avert_harm"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_09-focused_dreadflame_2"] = {
@@ -17246,17 +17556,18 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_avert_harm"] = {
+				["WeakAuras_icy_talons_2"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_strike_of_the_memelord"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blink_cooldown_"] = {
+				["WeakAuras_archimonde_//_doomfire_fixate_(fixate)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_elixirs_cooldown_up_"] = {
+				["WeakAuras_blink_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_mv_-_remnance"] = {
@@ -17273,14 +17584,15 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demonspikes_cooldown_2"] = {
+				["WeakAuras_elereth_web_of_pain_(range_check_mythic_chain_debuff)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadow_dance_cooldown_up_"] = {
+				["WeakAuras_molten_core_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ice_block_buff___"] = {
+				["WeakAuras_blood_boil_cd_2"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_sk_-_energy_surge"] = {
@@ -17290,14 +17602,13 @@ MasqueDB = {
 				["WeakAuras_paladin_trinket_prot_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ms_-_thundering_shock"] = {
-					["Inherit"] = false,
+				["WeakAuras_hemo_lopg_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ardent_defender_buff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hemo_lopg_"] = {
+				["WeakAuras_blazing_speed_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hand_of_sac"] = {
@@ -17315,17 +17626,18 @@ MasqueDB = {
 				["WeakAuras_vanish_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_wild_growth_cd"] = {
+				["WeakAuras_demonspikes_cooldown_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_vulnerable_debuff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_empower_wards_cooldown"] = {
+				["WeakAuras_tc_-_volatile_wound"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_01-burning_armor_debuff"] = {
+				["WeakAuras_karma_buff_amount"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -17335,8 +17647,7 @@ MasqueDB = {
 				["WeakAuras_raveger_buff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_detonation"] = {
-					["Inherit"] = false,
+				["WeakAuras_dps_ring_mage_cd_loph"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ww_lasthit_combo_breaker"] = {
@@ -17350,16 +17661,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dps_ring_mage_cd_loph"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_icy_talons_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_blood_mirror_buff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_sk_(m)_-_toxic_chitin"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_09-felclaws_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_gd_-_bad_stuff"] = {
 					["Inherit"] = false,
@@ -17368,26 +17680,7 @@ MasqueDB = {
 				["WeakAuras_dark_arbiter_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_elereth_web_of_pain_(range_check_mythic_chain_debuff)"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["oRA3_Legendary Rings"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_draw_power_purple"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_throw_glaive_cooldown_2_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_sk_-_focused_blast_stun"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_soul_reaper_buff_2"] = {
+				["WeakAuras_ms_(m)_-_delicious_bufferfish"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -17395,22 +17688,41 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_divine_protection_cooldown"] = {
+				["WeakAuras_safeguard_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_throw_glaive_cooldown_2_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_alchemy_trinket_icd_(rogue)__"] = {
+				["WeakAuras_gust_of_wind_up"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_soul_reaper_buff_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_sef/serenity_buff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_blooddrinker"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_execute_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trinket_1_procc_(protpaladin)_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_raging_blow_cooldown___"] = {
+				["WeakAuras_keg_smash_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_de_-_echoing_anguish"] = {
-					["Inherit"] = false,
+				["WeakAuras_raging_blow_cooldown___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_darkness"] = {
@@ -17425,14 +17737,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hook_cooldown__"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_safeguard_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_de_-_echoing_anguish"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_thunder_clap_cooldown_up___"] = {
+				["WeakAuras_gorefiend_//_fel_flames_(stacking_debuff,_tank_only)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_alchemy_trinket_icd_(rogue)__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_fiery_brand_cooldown_up"] = {
@@ -17445,14 +17757,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_evanesce_cooldown_up__"] = {
+				["WeakAuras_recently_deathstrikes"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_arcane_power_cooldown__up_"] = {
+				["WeakAuras_shield_of_vengance_cooldown_up"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_kingsbane_cooldown_u"] = {
 					["Inherit"] = false,
+				},
+				["WeakAuras_rapid_fire_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_alchemy_trinket_(rogue)_"] = {
@@ -17465,46 +17777,45 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dark_soul_cooldown__up__"] = {
+				["WeakAuras_fists_of_fury_cooldown__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_steady_focus_lohp"] = {
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_02-fel_squall"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
 				["WeakAuras_bonebreaking_strike"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_remorseless_winter_cooldown"] = {
+				["WeakAuras_kj_-_sightless_gaze"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_molten_core_"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_blood_boil_cd_2"] = {
+				["WeakAuras_soul_venom"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blazing_speed_cooldown_up_"] = {
+				["WeakAuras_thunder_clap_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kill_command_cooldown___"] = {
+				["WeakAuras_arcane_power_cooldown__up_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_socrethar_the_eternal_//_fel_barrier_(immunity)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_cenarius_thorns_buff_(adit_auras)"] = {
-					["Inherit"] = false,
+				["WeakAuras_guardian_of_ancient_kings_buff__4"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bastion_of_the_light"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_anti-magic_shell_loph__2"] = {
-					["Inherit"] = false,
+				["WeakAuras_unending_resolve_buff"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dps_ring_wariorr_cd_up_loph___"] = {
@@ -17526,12 +17837,12 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demon_spikes_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_dark_soul_cooldown__up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shockwave_cooldown__"] = {
+				["WeakAuras_last_stand_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_wail_of_svala_2"] = {
 					["SkinID"] = "Apathy",
@@ -17540,14 +17851,7 @@ MasqueDB = {
 				["WeakAuras_metamorphosis_cooldown___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blighted_rune_weapon_cd"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_09-felclaws_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_no_sef_stacks___"] = {
+				["WeakAuras_healing_stream_totem_cooldown_up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -17555,16 +17859,21 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_vampiric_embrace_cd"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_serenity_is_up"] = {
+				["WeakAuras_no_sef_stacks___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tangled_web"] = {
+				["WeakAuras_cenarius_thorns_buff_(adit_auras)"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shockwave_cooldown__"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_arcane_power_cooldown__"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_divine_protection_buff___3"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ravenous_leap"] = {
@@ -17578,19 +17887,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blazing_speed_cooldown_"] = {
+				["WeakAuras_kill_command_cooldown___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_rupture_loph_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blooddrinker"] = {
+				["WeakAuras_vampiric_embrace_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_vp_missing"] = {
-					["Inherit"] = false,
+				["WeakAuras_serenity_is_up"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_cloudburst__totem_up_"] = {
 					["SkinID"] = "Apathy",
@@ -17616,58 +17925,57 @@ MasqueDB = {
 				["WeakAuras_avenging_wrath_lohp"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_armorpotion"] = {
+				["WeakAuras_lavaburst_cd_resto"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_living_bomb_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_keg_smash_cooldown_"] = {
+				["WeakAuras_healing_rain_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tc_-_echoes_of_the_void"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_rain_cooldown_"] = {
+				["WeakAuras_heroic_leap_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trinket_2_procc_(protpaladin)__cd_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_gorefiend_//_fel_flames_(stacking_debuff,_tank_only)"] = {
+				["WeakAuras_doomwinds_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_demon_spikes_up"] = {
+				["WeakAuras_blighted_rune_weapon_cd"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_heroic_leap_cooldown_"] = {
+				["WeakAuras_vendetta_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shield_of_vengance_cooldown_up"] = {
+				["WeakAuras_chimaera_shot_cooldown"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_st_-_ejection_alerts"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_rapid_fire_cooldown_up_"] = {
+				["WeakAuras_savage_roar"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_evocation_cooldown__up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fists_of_fury_cooldown__"] = {
+				["WeakAuras_demon_spikes_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_02-fel_squall"] = {
+				["WeakAuras_judgment_cooldown_up"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_fel_vomit"] = {
+				["WeakAuras_tank_ring_druid"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -17675,7 +17983,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_sightless_gaze"] = {
+				["WeakAuras_fel_vomit"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -17683,9 +17991,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_obliteration_buff"] = {
-					["Inherit"] = false,
+				["WeakAuras_pain_sup"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bop"] = {
 					["SkinID"] = "Apathy",
@@ -17694,32 +18002,33 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_pain_sup"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_obliteration_buff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_xavius_meteor_split_aoe_debuff_(phase_two/three)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_chimaera_shot_cooldown"] = {
+				["WeakAuras_alacrity"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blooddrinker_cooldown_up_"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_crash_lightning_buff"] = {
+				["WeakAuras_03-frigid_blows"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_guardian_of_ancient_kings_buff__4"] = {
+				["WeakAuras_armor_pot_protpala_loph_2"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blood_mirror_cd_up_"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_unending_resolve_buff"] = {
+				["WeakAuras_crash_lightning_buff"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gm_-_conflexive_burst"] = {
@@ -17736,8 +18045,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_st_-_gravitational_(tank)"] = {
-					["Inherit"] = false,
+				["Bartender4_1"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_exploding_keg_cd"] = {
@@ -17756,7 +18064,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_frenzied_regen_cd"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_focus_rage_warrior_loph"] = {
@@ -17765,37 +18074,37 @@ MasqueDB = {
 				["WeakAuras_vampiric_blood_cooldown__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_runic_brand_green"] = {
-					["Inherit"] = false,
+				["WeakAuras_dps_ring_ret_cd_paladin__loph__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_piercing_shards"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dps_ring_ret_cd_paladin__loph__"] = {
+				["WeakAuras_rune_of_power_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_lay_on_hands_cooldown"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_runic_brand_green"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_grappling_hook__cooldown_up__"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_kill_shot__cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
 				["Bartender4_4"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_kill_shot__cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dancing_rune_weapon_up_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_rune_of_power_cooldown_up"] = {
+				["WeakAuras_killing_machine"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_grappling_hook__cooldown_up__"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["ElvUI_ActionBars"] = {
 					["SkinID"] = "Apathy",
@@ -17804,7 +18113,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_05-delicious_bufferfish"] = {
+				["WeakAuras_shield_block"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -17815,8 +18124,9 @@ MasqueDB = {
 				["WeakAuras_weapon_enchant_(prot_paladin)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tombstone_cooldown_up"] = {
+				["WeakAuras_05-delicious_bufferfish"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_ms_-_befouling_ink"] = {
 					["Inherit"] = false,
@@ -17837,19 +18147,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_divine_protection_buff___3"] = {
+				["WeakAuras_08-shadowy_blades"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_dispersion_buff"] = {
+				["WeakAuras_shadempow(45rp_deathstrike)_2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_neltharions_fury_cooldown_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tranquility"] = {
+				["WeakAuras_tombstone_cooldown_up"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_stun_arrow_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_killing_spree_cooldown__"] = {
 					["SkinID"] = "Apathy",
@@ -17857,26 +18168,27 @@ MasqueDB = {
 				["WeakAuras_spiritlink_totem_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_alacrity"] = {
+				["WeakAuras_soul_reaper_cast"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_spiritwalkers_graace_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_killing_machine"] = {
+				["WeakAuras_fa_-_desolate_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_doomwinds_cooldown"] = {
+				["WeakAuras_tranquility"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_skullbash_cd_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadempow(45rp_deathstrike)_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_barkskin_cooldown"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_kj_-_armageddon_(timer)"] = {
 					["Inherit"] = false,
@@ -17889,74 +18201,76 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_shield_of_light_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_shockwave_cooldown_up____prot"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_vendetta_cooldown_up_"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_arcane_orb_cooldown_up___"] = {
+				["WeakAuras_feral_lunge_up"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_fire_blast_cooldown_up_____"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shield_of_light_2"] = {
+				["WeakAuras_kj_-_felclaws_(boss)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_exsanguinate_cooldown__up___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blighted_rurne_weapon"] = {
+				["WeakAuras_blood_shield_loph"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_st_-_felflame"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_lightning_surge_totem_up"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadow-lord_iskar_//_fel_beam_fixate_(fixate)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_raging_blow_cooldown_up"] = {
+				["WeakAuras_holy_avenger_loph_4"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trinket_1_use_(frost_dk)__"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_dps__ring_dk_loph_"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_raging_blow_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_agi_pot_rogue_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_energizing_elixir_cooldown_up___"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_blood_shield_loph"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_hook_cooldown_up__"] = {
+				["WeakAuras_consume_magic_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_avenging_wrath_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_enrage_warrrior"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_03-frigid_blows"] = {
+				["WeakAuras_09-shadow_reflection"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_weapon_enchant_(ret_paladin)"] = {
+				["WeakAuras_energizing_elixir_cooldown_up___"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_dh_-_tormented_cries_(tank)"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_raidbuff-flask"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sigil_of_flame_cooldown"] = {
+				["WeakAuras_thunderstrike_2"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_drw"] = {
@@ -17967,15 +18281,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadow-lord_iskar_//_fel_beam_fixate_(fixate)"] = {
+				["WeakAuras_hook_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_incarnatinon_resto"] = {
+				["WeakAuras_weapon_enchant_(ret_paladin)"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
-				["WeakAuras_cleave_buff"] = {
-					["Inherit"] = false,
+				["WeakAuras_judgment_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trueshot__cooldown_up_"] = {
@@ -17989,12 +18301,12 @@ MasqueDB = {
 				["WeakAuras_fortifying_brew_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_stream_totem_cooldown_up_"] = {
+				["WeakAuras_cleave_buff"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_strike_of_the_windlord_cooldown"] = {
+				["WeakAuras_sigil_of_flame_cooldown"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_feral_spirit_cooldown"] = {
 					["SkinID"] = "Apathy",
@@ -18002,42 +18314,40 @@ MasqueDB = {
 				["WeakAuras_bonestorm_buff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_judgment_cooldown"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_shield_block"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_tank_ring_druid_cd_up"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_soul_reaper_cooldown____"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_revenge_loph"] = {
+				["WeakAuras_boulderfist_buff"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_virulent_plague"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_lohcd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_cenarius_dryad_aoe_debuff"] = {
-					["Inherit"] = false,
+				["WeakAuras_revenge_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_soul_reaper_cast"] = {
+				["WeakAuras_cloak_of_shadows_cooldown_up___"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_incarnatinon_resto"] = {
+					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_feint_buff"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_elereth_twisting_shadows_(out_of_raid_debuff)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_overpower_buff"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_dh_-_wither"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ascendance__buff"] = {
 					["Inherit"] = false,
@@ -18053,7 +18363,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_aspect_of_the_fox"] = {
+				["WeakAuras_corpse_shield"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_demon_soul_3_2"] = {
@@ -18063,10 +18374,11 @@ MasqueDB = {
 				["WeakAuras_dps_ring_cd_up(hunter)_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_avatar/bloodbath/bladestorm"] = {
+				["WeakAuras_demoralizing_banner"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_virulent_plague"] = {
+				["WeakAuras_cenarius_dryad_aoe_debuff"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_iron_reaver_//_immolation_(stacking_ground_effect)"] = {
@@ -18080,21 +18392,20 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spear_hand_strike_cooldown__"] = {
+				["WeakAuras_avatar/bloodbath/bladestorm"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kj_-_felclaws_(boss)"] = {
-					["Inherit"] = false,
+				["WeakAuras_death_and_decay_buff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_01-energy"] = {
+				["WeakAuras_shield_block_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
 				["WeakAuras_siegebreaker_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_death_and_decay_buff"] = {
+				["WeakAuras_spear_hand_strike_cooldown__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_shadowcrash_cd"] = {
@@ -18104,29 +18415,31 @@ MasqueDB = {
 				["WeakAuras_sidewinders_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blackoutstrike_cooldown"] = {
+				["WeakAuras_soul_carver_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trinket_1_druid"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_colossus_smash_loph_up"] = {
+				["WeakAuras_blackoutstrike_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_soul_carver_cooldown_up"] = {
+				["WeakAuras_tank_ring_cd_up_protpala_loph__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bonestorm_cd_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_holy_avenger_loph_4"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_gorefiend_//_bellowing_shout_(interupt)"] = {
+				["WeakAuras_obliteration"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_soul_reaper_cd45"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_quake_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -18144,33 +18457,30 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_consume_magic_cooldown_up"] = {
+				["WeakAuras_empower_wards_buff"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_spell_reflect"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_tc_-_carrion_nightmare_stun"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_xhul'horac_//_wasting_void_(stacking_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_quake_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_fortifying_brew_cooldown__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_overpower_down"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dh_-_tormented_cries_(tank)"] = {
-					["Inherit"] = false,
+				["WeakAuras_avenging_wrath_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_obliteration_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_tank_ring_dk_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_thunderstrike_2"] = {
+				["WeakAuras_epidemic_ooc"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -18185,61 +18495,53 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tank_ring_dk_loph"] = {
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_necrosis"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_avenging_wrath_cooldown_"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_armor_pot_protpala_loph_2_2"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_archimonde_//_doomfire_(ground_effect)"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_avenger's_shield_cooldown__up"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_fortifying_brew_cooldown__"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_ring_3"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_blessing_of_freedom"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_xavius_100%_corruption_dps_buff_for_20_seconds"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_breath_of_fire_cooldown_"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_trinket_2_procc_(blood_dk)_2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_fel_rush_cooldown_up"] = {
+				["WeakAuras_healing_ring_cd_up_holypala_loph___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_stinging_swarm"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["Bartender4_10"] = {
+				["WeakAuras_armor_pot_protpala_loph_2_2"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_blizzard_"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_cobalt_frag_bomb"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blast_wave_cooldown"] = {
+				["WeakAuras_death_and_decay_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_charge_cooldown__up_"] = {
+				["WeakAuras_fel_lord_zakuun_//_seed_of_destruction_(timed_debuff)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_blessing_of_freedom"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_blur_coolwodn_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_breath_of_fire_cooldown_"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_xavius_100%_corruption_dps_buff_for_20_seconds"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_fel_rush_cooldown_up"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_breach_armor"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dps_pot_of_cd_dungeon_dk"] = {
@@ -18250,17 +18552,29 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fel_lord_zakuun_//_seed_of_destruction_(timed_debuff)"] = {
+				["WeakAuras_charge_cooldown__up_"] = {
+					["SkinID"] = "Apathy",
+				},
+				["Bartender4_10"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_wail_of_svala"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_pof_cd"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_siegebreaker_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dh_-_wither"] = {
-					["Inherit"] = false,
+				["WeakAuras_diffuse_magic"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_anti-magic_shell_loph_"] = {
+				["ElvUI_Pet Bar"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_touch_of_death_cooldown_up_"] = {
@@ -18269,8 +18583,7 @@ MasqueDB = {
 				["WeakAuras_deterence_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blur_coolwodn_2"] = {
-					["Inherit"] = false,
+				["WeakAuras_anti-magic_shell_loph_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dh_-_shattering_scream"] = {
@@ -18280,24 +18593,24 @@ MasqueDB = {
 				["WeakAuras_immolatio_aura"] = {
 					["SkinID"] = "Apathy",
 				},
-				["AuraFrames_PlayerBuffs"] = {
+				["WeakAuras_eyebream"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_power_word:_barrier"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_soul_blade"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_rime_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
+				["WeakAuras_soul_blade"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_aspect_of_the_wild_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_2_spinners_(hunter)"] = {
+				["WeakAuras_sweaping_strikes_warrior"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_fa_(m)_-_tainted_essence"] = {
@@ -18307,8 +18620,7 @@ MasqueDB = {
 				["WeakAuras_shield_of_the_righteous_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_breach_armor"] = {
-					["Inherit"] = false,
+				["WeakAuras_bladestorm_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_shadow-lord_iskar_//_chains_of_despair_(interactive_debuff,_mythic_only)"] = {
@@ -18317,19 +18629,19 @@ MasqueDB = {
 				["WeakAuras_demonic_leap_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_holy_shock_cooldown_"] = {
+				["WeakAuras_gd_-_soul_siphon"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gust_of_wind"] = {
+				["WeakAuras_trinket_1_procc_(dk)"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_dragon_roar_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_obliteration"] = {
-					["Inherit"] = false,
+				["WeakAuras_divine_steed_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_gift_of_the_queen_cd"] = {
 					["SkinID"] = "Apathy",
@@ -18346,12 +18658,13 @@ MasqueDB = {
 				["WeakAuras_mortal_strike_up__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_thok_4"] = {
+				["WeakAuras_gust_of_wind"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_procc_(dk)"] = {
+				["WeakAuras_trinket_1_use_(blood_dk)_"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sanguine_healing"] = {
 					["Inherit"] = false,
@@ -18365,18 +18678,18 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_divine_steed_cooldown"] = {
+				["WeakAuras_thok_4"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bladestorm_cooldown"] = {
+				["WeakAuras_stormstrike_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tc_-_carrion_nightmare_stun"] = {
+				["WeakAuras_gm_-_ablating_explosion_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["Bartender4_StanceBar"] = {
+				["WeakAuras_holy_shock_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_undulation"] = {
@@ -18387,19 +18700,17 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_trinket_1_use_(blood_dk)_"] = {
+				["AuraFrames_PlayerBuffs"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_warth_walk_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_2_procc_(protpaladin)_"] = {
+				["Bartender4_StanceBar"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_blizzard_"] = {
+				["WeakAuras_trinket_2_procc_(protpaladin)_"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_soul_echoes"] = {
 					["Inherit"] = false,
@@ -18409,16 +18720,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_healing_ring_cd_up_holypala_loph___"] = {
+				["WeakAuras_touch_of_karma_cd"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_cobalt_frag_bomb"] = {
+				["WeakAuras_trinket_2_procc_(blood_dk)_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_diffuse_magic"] = {
+				["WeakAuras_seraphim_cd_loph_"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_agi_pot_monk_loph_"] = {
 					["SkinID"] = "Apathy",
@@ -18446,7 +18757,7 @@ MasqueDB = {
 				["WeakAuras_rising_sun_kick_cooldown__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_pof_cd"] = {
+				["WeakAuras_obliteration_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -18454,76 +18765,77 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_stormstrike_cooldown"] = {
+				["WeakAuras_avenger's_shield_cooldown__up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_death_and_decay_cooldown_"] = {
+				["WeakAuras_spell_reflect"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_void_eruption_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gm_-_ablating_explosion_(tank)"] = {
-					["Inherit"] = false,
+				["WeakAuras_ring_3"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_gd_-_soul_siphon"] = {
 					["Inherit"] = false,
+				},
+				["WeakAuras_colossus_smash_loph_up"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bestial_wrath"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sweaping_strikes_warrior"] = {
+				["WeakAuras_01-energy"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_trinket_2_spinners_(hunter)"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_fire_blast_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_seraphim_cd_loph_"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_eyebream"] = {
+				["WeakAuras_blast_wave_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_thrash_debuff"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["ElvUI_Pet Bar"] = {
+				["WeakAuras_overpower_buff"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_summon_doomguard_cooldown__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_wail_of_svala"] = {
-					["Inherit"] = false,
+				["WeakAuras_gorefiend_//_bellowing_shout_(interupt)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_touch_of_karma_cd"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_feint_buff"] = {
+				["WeakAuras_archimonde_//_doomfire_(ground_effect)"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gd_-_bonds_of_fel"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
+				["WeakAuras_aspect_of_the_fox"] = {
+					["SkinID"] = "Apathy",
+				},
 				["WeakAuras_devotion_aura"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_empower_wards_buff"] = {
+				["WeakAuras_suppression_protocol"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tank_ring_cd_up_protpala_loph__"] = {
+				["WeakAuras_healing_stream_totem_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_epidemic_ooc"] = {
+				["WeakAuras_tank_ring_druid_cd_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -18545,9 +18857,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_corpse_shield"] = {
-					["Inherit"] = false,
+				["WeakAuras_strike_of_the_windlord_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_weapon_enchant_(dps_warrior)"] = {
 					["SkinID"] = "Apathy",
@@ -18560,7 +18872,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_demoralizing_banner"] = {
+				["WeakAuras_stampede_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_fa_-_test_-_shadowy_blades_(emote)"] = {
@@ -18574,9 +18886,8 @@ MasqueDB = {
 				["WeakAuras_shadow-lord_iskar_//_phantasmal_winds_(interactive_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shield_block_cooldown_up"] = {
+				["WeakAuras_enrage_warrrior"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_avenging_wrath_buff_(holy)"] = {
 					["Inherit"] = false,
@@ -18585,19 +18896,18 @@ MasqueDB = {
 				["WeakAuras_fury_of_the_illidari_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_suppression_protocol"] = {
+				["WeakAuras_lightning_surge_totem_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_boulderfist_buff"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_wild_charge_cd_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_stampede_cooldown_up_"] = {
+				["WeakAuras_blighted_rurne_weapon"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shadowfury_cooldown____"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dps_ring_rogue_cd_loph__"] = {
@@ -18622,34 +18932,35 @@ MasqueDB = {
 				["WeakAuras_paladin_trinket_holy_loph__"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_cloak_of_shadows_cooldown_up___"] = {
+				["WeakAuras_lay_on_hands_cooldown"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_feral_spirit_cooldown_up"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dps__ring_dk_loph_"] = {
+				["WeakAuras_toombstone_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadowfury_cooldown____"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_neltharions_fury_cooldown_up"] = {
+				["WeakAuras_st_-_gravitational_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_stun_arrow_cd"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_avenging_wrath_ooldown_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_fa_-_desolate_(tank)"] = {
-					["Inherit"] = false,
+				["WeakAuras_arcane_orb_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hr_-_aqueous_burst"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_feral_lunge_up"] = {
+				["WeakAuras_crimson_vial_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_raidbuff-augment"] = {
@@ -18659,9 +18970,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_09-shadow_reflection"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_dispersion_buff"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ursoc_gaze_debuff_(do_not_share_another_gaze))"] = {
 					["Inherit"] = false,
@@ -18674,9 +18985,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_08-shadowy_blades"] = {
+				["WeakAuras_gorefiend_//_shadow_of_death_(interactive_debuff)"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_tigereye_brew_buff"] = {
 					["SkinID"] = "Apathy",
@@ -18689,31 +18999,32 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_barkskin_cooldown"] = {
-					["Inherit"] = false,
+				["WeakAuras_flourishassist"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_judgment_cooldown_up"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_tank_ring_druid"] = {
 					["Inherit"] = false,
+				},
+				["WeakAuras_armorpotion"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_blazing_speed_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_magma_wave"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_armor_pot_protpala_loph_2"] = {
+				["WeakAuras_tangled_web"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_crimson_vial_cooldown_"] = {
+				["WeakAuras_black_ox_brewcooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gorefiend_//_shadow_of_death_(interactive_debuff)"] = {
+				["WeakAuras_sprint_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_frenzied_regen_cd"] = {
+				["WeakAuras_flame_lick"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -18725,7 +19036,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_toombstone_cooldown"] = {
+				["WeakAuras_vp_missing"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hb_-_toxic_spores"] = {
@@ -18739,7 +19051,8 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_black_ox_brewcooldown_up_"] = {
+				["WeakAuras_demon_spikes_2"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_windburst_cooldown"] = {
@@ -18767,13 +19080,13 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_flame_lick"] = {
+				["WeakAuras_kingsbane_cooldown_u"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_lavaburst_cd_resto"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_remorseless_winter_cooldown"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_demoralizing_shout"] = {
 					["SkinID"] = "Apathy",
@@ -18793,13 +19106,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_arcane_power_cooldown__"] = {
+				["WeakAuras_anti-magic_shell_loph__2"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ignore_pain_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sprint_cooldown_up_"] = {
+				["WeakAuras_consumption_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_avatar_cooldown_up"] = {
@@ -18820,20 +19134,19 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_healing_stream_totem_cooldown_up__2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_draw_power_purple"] = {
 					["Inherit"] = false,
-				},
-				["WeakAuras_last_stand_cooldown"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_recently_deathstrikes"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sef/serenity_buff"] = {
+				["WeakAuras_hook_cooldown__"] = {
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_diffuse_magic_cooldown__"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_shadow_dance_cooldown__0"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_divine_steed_buff"] = {
 					["SkinID"] = "Apathy",
@@ -18845,7 +19158,8 @@ MasqueDB = {
 				["WeakAuras_shockwave_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_consumption_cooldown"] = {
+				["WeakAuras_ms_-_thundering_shock"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_blade_of_justice"] = {
@@ -18854,27 +19168,27 @@ MasqueDB = {
 				["WeakAuras_concecration"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_soul_venom"] = {
+				["WeakAuras_void_torrent_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_diffuse_magic_cooldown__"] = {
+				["WeakAuras_shadow_dance_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_marking_targets"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadow_dance_cooldown__0"] = {
+				["WeakAuras_detonation"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_death_grip_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gust_of_wind_up"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_spell_counter"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ed:_fm_or_2_gcds_icon"] = {
 					["SkinID"] = "Apathy",
@@ -18887,16 +19201,17 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_execute_cooldown_up"] = {
+				["WeakAuras_xavius_dream_buff"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_tr_-_succulent_feast"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ms_(m)_-_delicious_bufferfish"] = {
-					["Inherit"] = false,
+				["WeakAuras_unstable_mana_stacks"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_overflowing"] = {
 					["Inherit"] = false,
@@ -18906,11 +19221,11 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_karma_buff_amount"] = {
-					["SkinID"] = "Apathy",
+				["Bartender4_7"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tc_-_volatile_wound"] = {
+				["WeakAuras_tr_-_arcane_seepage"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -18943,8 +19258,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["Bartender4_7"] = {
-					["Inherit"] = false,
+				["WeakAuras_evasion_buff__"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_icy_talons_missing"] = {
@@ -18955,7 +19269,7 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_sk_(m)_-_toxic_chitin"] = {
+				["WeakAuras_runic_shield_purple"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -18967,26 +19281,26 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_void_torrent_cd"] = {
-					["Inherit"] = false,
+				["WeakAuras_ardent_defender_buff_3"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_epidemic_2"] = {
+				["WeakAuras_thrash"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_paladin_trinket_ret__loph_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_tr_-_arcane_seepage"] = {
+				["WeakAuras_zen_meditation"] = {
+					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_pummel_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_runic_shield_purple"] = {
+				["WeakAuras_divine_steed"] = {
+					["SkinID"] = "Apathy",
 					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_virulent_plague_missing"] = {
-					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_fists_of_fury"] = {
 					["SkinID"] = "Apathy",
@@ -19009,21 +19323,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_chi_burst_cd_2"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_hammer_of_justice_cd"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_divine_steed"] = {
+				["WeakAuras_fel_barrage_cooldown"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_obliteration_cd_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_zen_meditation"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_runic_brand_orange"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_ebonbolt"] = {
 					["SkinID"] = "Apathy",
@@ -19042,19 +19355,17 @@ MasqueDB = {
 				["WeakAuras_spiritwalkers_grace_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ardent_defender_buff_3"] = {
+				["WeakAuras_cloudburst_totem_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_essence_of_g'hanir"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_arcanic_bane"] = {
-					["Inherit"] = false,
+				["WeakAuras_crusader_strikecooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_runic_brand_orange"] = {
-					["Inherit"] = false,
+				["WeakAuras_trinket_2_procc_(mage)"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_haunt_loph_"] = {
@@ -19063,7 +19374,8 @@ MasqueDB = {
 				["WeakAuras_life_cocoon"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ravager_cooldown"] = {
+				["WeakAuras_wild_charge"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_strike_of_the_memelord_cd"] = {
@@ -19078,14 +19390,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_well_fed"] = {
+				["WeakAuras_mv_-_blowback"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_cloudburst_totem_cooldown_"] = {
+				["WeakAuras_lights_hammer_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_empower_rune_weapon_up_"] = {
+				["WeakAuras_windburstcooldown_up"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -19093,20 +19405,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ancestral_protection_totem_up"] = {
-					["Inherit"] = false,
+				["WeakAuras_light_of_the_protector_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_shield_block_cooldown_"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_ret_cd_up_paladin__loph___"] = {
+				["WeakAuras_garrote_cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_unholy_strength_4"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_storm_of_justice"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_eye_of_the_tiger_buff_up_on_target"] = {
 					["SkinID"] = "Apathy",
@@ -19114,7 +19425,7 @@ MasqueDB = {
 				["WeakAuras_hellfire_high_council_//_acidic_wound_(stacking_debuff,_tank_only)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_lights_hammer_cooldown"] = {
+				["WeakAuras_shield_block_loph"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_pestilent_pustules"] = {
@@ -19125,16 +19436,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shockwave_cooldown___prot"] = {
-					["Inherit"] = false,
+				["WeakAuras_fel_devasataion_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_vigilance_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mv_-_blowback"] = {
-					["Inherit"] = false,
+				["WeakAuras_black_ox_brew_cooldown___"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_pet_reminder"] = {
@@ -19149,15 +19458,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_hb_-_parasitic_fixate"] = {
+				["WeakAuras_dk-blood_death_strike_v2.3"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ca_-_temporal_orb"] = {
-					["Inherit"] = false,
+				["WeakAuras_shadow_dance_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_supernova_cooldown_"] = {
+				["WeakAuras_kr_-_fel_beam_cast"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_infernal_strike_cooldown_up"] = {
@@ -19184,50 +19493,51 @@ MasqueDB = {
 				["WeakAuras_conflagerate__cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_sa_-_bad_stuff"] = {
+				["WeakAuras_ca_-_temporal_charge_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_archimonde_//_shackled_torment_(stackable_debuff)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dark_rush"] = {
+				["WeakAuras_burst_of_speed_cooldown_up___"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_kick_cooldown____"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_seraphim_avalible_"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_09-rupturing_singularity"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_fel_devasataion_cooldown_"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_empower_rune_weapon_2"] = {
+				["WeakAuras_massgrip__cooldown_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_transfer_the_power"] = {
+				["WeakAuras_divine_protection_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_weapon_enchant_(ret_paladin)_2"] = {
+				["WeakAuras_seraphim_cd_"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ca_-_temporal_charge_(tank)"] = {
-					["Inherit"] = false,
+				["WeakAuras_dps_ring_ret_paladin__loph_"] = {
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_infernal_strike_cooldown_up_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_kick_cooldown____"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_dps_ring_ret_paladin__loph_"] = {
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_xavius_fixate_(phase_one)"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_incarnatino"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ca_-_time_release"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -19242,7 +19552,8 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_spiriwalker's_grace_buff"] = {
+				["WeakAuras_brutal_glaive"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_sindragosa's_fury"] = {
@@ -19252,8 +19563,9 @@ MasqueDB = {
 				["WeakAuras_meta_havoc_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_shadow_dance_cooldown_"] = {
+				["WeakAuras_06-wither"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["ElvUI_Debuffs"] = {
 					["SkinID"] = "Apathy",
@@ -19264,13 +19576,12 @@ MasqueDB = {
 				["WeakAuras_light_of_the_protector__cooldown"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_seraphim_cd_"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_stagger_median_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
+				},
+				["WeakAuras_vamipric_blood_buff_"] = {
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_thunderstrike"] = {
 					["Inherit"] = false,
@@ -19280,7 +19591,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["NOP"] = {
+				["WeakAuras_protected"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -19292,16 +19603,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_demo_shout_buff____"] = {
+				["WeakAuras_im_in_speed_set_2"] = {
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_missing_poison"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_weapon_enchant_(warlock)"] = {
-					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_earthen_shield_totem"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_frost_fever"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_stun_arrow"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -19312,20 +19626,21 @@ MasqueDB = {
 				["WeakAuras_metamorphosis_cooldown_up____"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_vamipric_blood_buff_"] = {
+				["WeakAuras_hammer_of_justice_cd_up"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_hammer_of_justice_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_blinding_light_cooldown"] = {
+				["WeakAuras_ironskin_brew_up_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_protected"] = {
-					["Inherit"] = false,
+				["WeakAuras_tectus_3"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_garrote_lopg"] = {
 					["SkinID"] = "Apathy",
@@ -19334,20 +19649,20 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_trinket_1_procc_(protpaladin)_buff"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_wild_growth_"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_gd_-_fury_of_the_fel_(tank)"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
 				["WeakAuras_consc_cooldown_up"] = {
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_essence_of_g'hanir_cd_up"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_tc_-_brand_of_argus"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_angerboda2"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_mannoroth_//_curse_of_the_legion_(dispellable_debuff)"] = {
 					["SkinID"] = "Apathy",
@@ -19360,7 +19675,8 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_dps_ring_rogue_cd_up_loph___"] = {
+				["WeakAuras_rime"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_gorefiend_//_touch_of_doom_(timed_debuff)"] = {
@@ -19383,45 +19699,45 @@ MasqueDB = {
 				["WeakAuras_riptide_coolddown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_aspect_of_the_wild"] = {
+				["WeakAuras_envenom_loph"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_blood_mirror_cd_up__2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_rime"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_angerboda2"] = {
+				["WeakAuras_ibf_cd_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_frost_fever"] = {
+				["WeakAuras_gd_-_eye_of_gul'dan"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_bloodthirst_cooldown_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_elusive_dance"] = {
+				["WeakAuras_horn_of_valor_rdy"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_wall_cooldown"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_incaratin_cooldown_up_"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_healing_titde_totem_cooldown_up_"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_umbilicus_eternus"] = {
-					["Inherit"] = false,
+				["WeakAuras_05-slicing_tornado"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bubble_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_envenom_loph"] = {
+				["WeakAuras_soul_reaper_stacks"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_dire_beast_cooldown_up"] = {
@@ -19433,9 +19749,9 @@ MasqueDB = {
 				["WeakAuras_ardent_defender_buff_2"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_ibf_cd_up"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_sa_-_mark_debuffs"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_vendetta_cooldown___"] = {
 					["SkinID"] = "Apathy",
@@ -19458,19 +19774,19 @@ MasqueDB = {
 				["WeakAuras_vendetta_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_horn_of_valor_rdy"] = {
+				["WeakAuras_hellfire_assault_//_felfire_volley_(interupt)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_apocalypse_usable"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_st_-_chilled/frozen"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_survival_instincts"] = {
+				["WeakAuras_trinket_1_use_cd_(frostdk)___"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_die_by_the_sword_cooldown"] = {
+				["WeakAuras_dancing__rune_weapon_"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_trinket_1_procc_(dhtank)_2"] = {
@@ -19485,31 +19801,31 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shield_barrier"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_sa_-_mark_debuffs"] = {
+				["WeakAuras_titan's_thunder"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_trinket_1_use_(blood_dk)__2"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_trinket_1_use_cd_(frostdk)___"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_ca_-_time_bomb"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_dancing__rune_weapon_"] = {
+				["WeakAuras_flourish_cd"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_titan's_thunder"] = {
+				["WeakAuras_mighty_bash"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_st_-_icy_ejection"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_sa_-_detonate:_mof"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_dumb_infernal_cast"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -19517,9 +19833,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_anzu"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_cenarion_ward_cd_up"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_sap_soul"] = {
 					["SkinID"] = "Apathy",
@@ -19545,23 +19861,23 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_cenarion_ward_cd_up"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_dumb_eyes_cast"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_st_-_icy_ejection"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_blood_boil_"] = {
+				["WeakAuras_04-astral_vulnerability"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tranquility_cd_up"] = {
+				["WeakAuras_07-titanic_bulwark"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_vig_4"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_anti-magic_shell_loph__3"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_rule_of_law_cooldown"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
@@ -19572,30 +19888,31 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_lock_and_load_loph"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_anti-magic_shell_loph__3"] = {
+				["WeakAuras_dh_-_crush_mind_(tank)"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_dancingruneweapon"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_ancestral_guidance_up"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_runic_shield_yellow"] = {
-					["Inherit"] = false,
+				["WeakAuras_horn_of_winter_cd"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
-				["WeakAuras_titans_thunder_cd"] = {
-					["Inherit"] = false,
+				["WeakAuras_serenity_ready"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_tr_-_stuffed"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_vig_4"] = {
+				["WeakAuras_09-gravity_squeeze"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -19606,9 +19923,9 @@ MasqueDB = {
 				["WeakAuras_taste_for_blood_loph"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_05-hydra_shot_soak"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_sa_-_frostbitten"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_03-jagged_abrasion"] = {
 					["SkinID"] = "Apathy",
@@ -19617,22 +19934,23 @@ MasqueDB = {
 				["WeakAuras_dark_transformation_cooldown____"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_xhul'horac_//_void_surge_(timed_debuff)"] = {
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_serenity_ready"] = {
+				["WeakAuras_toucb_of_death_cooldown_up__"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_test_-_rupturing_singularity_(emote)"] = {
+				["WeakAuras_alch_trinket_shsaman"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_horn_of_winter_cd"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_kj_-_test_-_flaming_orb"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
-				["ElvUI_Consolidated Buffs"] = {
+				["WeakAuras_throw_glaive_cooldown"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_hr_-_fixated"] = {
+					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_spiritwalk_cooldown"] = {
@@ -19642,11 +19960,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_01-melted_armor_debuff"] = {
+				["WeakAuras_04-incorporeal_shot_2"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_toucb_of_death_cooldown_up__"] = {
+				["WeakAuras_frozen_orb"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -19668,31 +19986,28 @@ MasqueDB = {
 				["WeakAuras_xhul'horac_//_withering_gaze_(stacking_debuff,_tank_only)"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_alch_trinket_shsaman"] = {
+				["WeakAuras_hellfire_high_council_//_fel_rage_(buff,_dps_only)"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_rune_of_power_cooldown"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_ghost_in_the_mist"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_barkskin_2"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_dh_-_crush_mind_(tank)"] = {
+				["WeakAuras_soul_reaper_cooldown_____2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_de_-_scythe_sweep_(tank)"] = {
+				["WeakAuras_dark_tranformation"] = {
+					["SkinID"] = "Apathy",
+				},
+				["WeakAuras_kj_-_focused_dreadflame"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_frozen_orb"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_08-touch_of_sargeras"] = {
-					["SkinID"] = "Apathy",
-					["Inherit"] = false,
-				},
-				["WeakAuras_05-consuming_hunger"] = {
+				["WeakAuras_08-desolate"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -19700,15 +20015,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_rune_of_power_cooldown"] = {
+				["WeakAuras_06-doomed_sundering"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_command_demon_cooldown_up___"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_09-gravity_squeeze"] = {
+				["WeakAuras_revenge_up_loph"] = {
 					["SkinID"] = "Apathy",
-					["Inherit"] = false,
 				},
 				["WeakAuras_iron_reaver_//_flame_vulnerability_(dps_only,_mythic_only)"] = {
 					["SkinID"] = "Apathy",
@@ -19726,19 +20041,19 @@ MasqueDB = {
 				["WeakAuras_guardian_of_ancient_kings_buff__3"] = {
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_gd_-_fel_efflux_cast"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Apathy",
-				},
-				["WeakAuras_06-soulbind"] = {
+				["WeakAuras_ibf_cooldown"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_tc_-_seeker_swarm_cast"] = {
+				["WeakAuras_riptide_coolddown__echo"] = {
+					["SkinID"] = "Apathy",
+					["Inherit"] = false,
+				},
+				["WeakAuras_necrotic_rot_self_2"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_06-doomed_sundering"] = {
+				["WeakAuras_resto_4p_t20"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -19746,8 +20061,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_revenge_up_loph"] = {
+				["WeakAuras_control_undead"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_sm_-_discorporate_(tank)"] = {
 					["Inherit"] = false,
@@ -19757,9 +20073,9 @@ MasqueDB = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mighty_bash_ready"] = {
-					["Inherit"] = false,
+				["WeakAuras_he_invis"] = {
 					["SkinID"] = "Apathy",
+					["Inherit"] = false,
 				},
 				["WeakAuras_st_(m)_-_star_signs"] = {
 					["Inherit"] = false,
@@ -19769,7 +20085,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_03-driven_assault"] = {
+				["WeakAuras_a_spell_counter_(settings_in_actions)"] = {
 					["SkinID"] = "Apathy",
 					["Inherit"] = false,
 				},
@@ -19780,9 +20096,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Apathy",
 				},
-				["WeakAuras_resto_4p_t20"] = {
-					["SkinID"] = "Apathy",
+				["WeakAuras_stoneform_resto_shaman"] = {
 					["Inherit"] = false,
+					["SkinID"] = "Apathy",
 				},
 				["WeakAuras_barrage_cooldown_up__"] = {
 					["SkinID"] = "Apathy",

@@ -4,7 +4,7 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 3,
-			["NextWeeklyReset"] = "2017-08-02",
+			["NextWeeklyReset"] = "2017-08-23",
 		},
 		["Characters"] = {
 			["Default.Aggra (Português).Greenzuriz"] = {
@@ -14,24 +14,34 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1428126130,
 			},
 			["Default.Grim Batol.Bawsie"] = {
-				["lastUpdate"] = 1497663558,
+				["DungeonIDs"] = {
+					["Assault on Violet Hold Mythic|878943450"] = "223115|1503248491|0|0",
+					["Maw of Souls Mythic|878941811"] = "223115|1503248491|0|0",
+					["Tomb of Sargeras Normal|278661689"] = "223115|1503248491|0|1",
+					["The Nighthold Heroic|266361787"] = "223115|1503248491|0|1",
+					["Neltharion's Lair Mythic|878945583"] = "223115|1503248491|0|0",
+					["Halls of Valor Mythic|266487013"] = "223115|1503248491|0|0",
+				},
+				["lastUpdate"] = 1503248489,
 			},
 			["Default.Aggra (Português).Kroxidps"] = {
 				["lastUpdate"] = 1423512183,
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1501105861,
+				["lastUpdate"] = 1503189332,
 			},
 			["Default.Grim Batol.Krixidh"] = {
-				["lastUpdate"] = 1500483702,
+				["lastUpdate"] = 1502732702,
 			},
 			["Default.Grim Batol.Zuriz"] = {
 				["Contacts"] = {
 					["Kavick"] = {
 						["note"] = "",
+						["level"] = 110,
+						["class"] = "Hunter",
 					},
 				},
-				["lastUpdate"] = 1501108030,
+				["lastUpdate"] = 1503186128,
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
 				["lastUpdate"] = 1420506362,
@@ -52,19 +62,19 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1461461819,
 			},
 			["Default.Grim Batol.Zolution"] = {
-				["lastUpdate"] = 1497669705,
+				["lastUpdate"] = 1502409659,
 			},
 			["Default.Kazzak.Lilgaykrixi"] = {
 				["lastUpdate"] = 1486469508,
 			},
 			["Default.Grim Batol.Gnomalock"] = {
-				["lastUpdate"] = 1497663635,
+				["lastUpdate"] = 1503176930,
 			},
 			["Default.Aggra (Português).Bawsi"] = {
 				["lastUpdate"] = 1451199279,
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1500593500,
+				["lastUpdate"] = 1503166529,
 			},
 			["Default.Shattered Hand.Donchyo"] = {
 				["lastUpdate"] = 1470839453,
@@ -84,7 +94,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1465684901,
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1501089790,
+				["lastUpdate"] = 1503170015,
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684610,
@@ -94,24 +104,25 @@ DataStore_AgendaDB = {
 			},
 			["Default.Grim Batol.Krixidk"] = {
 				["DungeonIDs"] = {
-					["Tomb of Sargeras Heroic|258939342"] = "547287|1501109916|0|1",
+					["Tomb of Sargeras Heroic|199657003"] = "301739|1503169865|0|1",
+					["Hellfire Citadel Mythic|878814945"] = "301739|1503169865|0|1",
 				},
-				["lastUpdate"] = 1501112627,
+				["lastUpdate"] = 1503169886,
 			},
 			["Default.Crushridge.Donch"] = {
 				["lastUpdate"] = 1424871553,
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1500577796,
+				["lastUpdate"] = 1503007748,
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1500321200,
+				["lastUpdate"] = 1503072374,
 			},
 			["Default.Blackmoore.Krixiyo"] = {
 				["lastUpdate"] = 1480934765,
 			},
 			["Default.Grim Batol.Namji"] = {
-				["lastUpdate"] = 1497663503,
+				["lastUpdate"] = 1502732654,
 			},
 		},
 	},
@@ -128,10 +139,10 @@ DataStore_AgendaDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -142,7 +153,7 @@ DataStore_AgendaDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

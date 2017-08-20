@@ -39,10 +39,10 @@ TidyPlatesThreatDB = {
 		},
 		["Bawsie - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 253,
+				["id"] = 254,
 				["role"] = "DAMAGER",
-				["name"] = "Beast Mastery",
-				["index"] = 1,
+				["name"] = "Marksmanship",
+				["index"] = 2,
 			},
 			["welcome"] = true,
 		},
@@ -103,10 +103,10 @@ TidyPlatesThreatDB = {
 		["Zetiz - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 261,
+				["id"] = 259,
 				["role"] = "DAMAGER",
-				["name"] = "Subtlety",
-				["index"] = 3,
+				["name"] = "Assassination",
+				["index"] = 1,
 			},
 		},
 		["Daimtårta - Aggra (Português)"] = {
@@ -139,10 +139,10 @@ TidyPlatesThreatDB = {
 		["Nyrith - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 104,
-				["role"] = "TANK",
-				["name"] = "Guardian",
-				["index"] = 3,
+				["id"] = 102,
+				["role"] = "DAMAGER",
+				["name"] = "Balance",
+				["index"] = 1,
 			},
 		},
 		["Loverócket - Aggra (Português)"] = {
@@ -201,10 +201,10 @@ TidyPlatesThreatDB = {
 		},
 		["Zuriz - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 264,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 3,
+				["id"] = 263,
+				["role"] = "DAMAGER",
+				["name"] = "Enhancement",
+				["index"] = 2,
 			},
 			["welcome"] = true,
 		},
@@ -579,17 +579,6 @@ TidyPlatesThreatDB = {
 			},
 			["cache"] = {
 			},
-			["text"] = {
-				["full"] = true,
-			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
-			["tapHealthbarColor"] = {
-				["r"] = 0.501960784313726,
-				["g"] = 0.501960784313726,
-				["b"] = 0,
-			},
 			["auraWidget"] = {
 				["allow"] = {
 					nil, -- [1]
@@ -597,6 +586,17 @@ TidyPlatesThreatDB = {
 					"Binding Shot", -- [3]
 				},
 				["mode"] = "allMine",
+			},
+			["text"] = {
+				["full"] = true,
+			},
+			["tapHealthbarColor"] = {
+				["r"] = 0.501960784313726,
+				["g"] = 0.501960784313726,
+				["b"] = 0,
+			},
+			["questWidget"] = {
+				["ON"] = false,
 			},
 		},
 	},

@@ -69,12 +69,12 @@ TipTac_Config = {
 	["classification_worldboss"] = "%s|r (Boss) ",
 	["backdropInsets"] = 2.5,
 	["gradientTip"] = true,
-	["classColoredBorder"] = false,
+	["iconRaid"] = true,
 	["if_borderlessIcons"] = false,
 	["showTalents"] = true,
 	["colorNameByClass"] = false,
 	["iconClass"] = false,
-	["colSameGuild"] = "|cffff32ff",
+	["classification_rareelite"] = "+%s|r (Rare) ",
 	["anchorWorldUnitType"] = "normal",
 	["healthBarColor"] = {
 		0.3, -- [1]
@@ -83,9 +83,9 @@ TipTac_Config = {
 		1, -- [4]
 	},
 	["fontSizeDelta"] = 2,
-	["classification_rareelite"] = "+%s|r (Rare) ",
+	["colSameGuild"] = "|cffff32ff",
 	["anchorWorldTipPoint"] = "TOPRIGHT",
-	["iconRaid"] = true,
+	["classColoredBorder"] = false,
 	["talentOnlyInParty"] = true,
 	["if_showQuestLevelAndId"] = false,
 	["barTexture"] = "Interface\\Addons\\SharedMedia\\statusbar\\Aluminium",

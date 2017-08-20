@@ -1,28 +1,10 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0204,
+	["LastVersion"] = 2.0211,
 	["LastPlayerFullName"] = "Nyrith-Grim Batol",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
-		[128860] = {
-			["Relics"] = {
-				{
-					["ItemLevel"] = 42,
-					["Type"] = "Frost",
-				}, -- [1]
-				{
-					["ItemLevel"] = 59,
-					["Type"] = "Blood",
-				}, -- [2]
-				{
-					["ItemLevel"] = 55,
-					["Type"] = "Life",
-				}, -- [3]
-			},
-			["Name"] = "Fangs of Ashamane",
-		},
 		[128821] = {
 			["Relics"] = {
 				{
@@ -40,7 +22,42 @@ PawnOptions = {
 			},
 			["Name"] = "Claws of Ursoc",
 		},
+		[128858] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 62,
+					["Type"] = "Arcane",
+				}, -- [1]
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Life",
+				}, -- [2]
+				{
+					["ItemLevel"] = 53,
+					["Type"] = "Arcane",
+				}, -- [3]
+			},
+			["Name"] = "Scythe of Elune",
+		},
+		[128860] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 62,
+					["Type"] = "Frost",
+				}, -- [1]
+				{
+					["ItemLevel"] = 59,
+					["Type"] = "Blood",
+				}, -- [2]
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Life",
+				}, -- [3]
+			},
+			["Name"] = "Fangs of Ashamane",
+		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",

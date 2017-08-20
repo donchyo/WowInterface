@@ -25,15 +25,15 @@ VER 3 0100000000000003 "ib" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]ironbark
 END
+VER 3 0100000000000015 "innnervate" "INV_MISC_QUESTIONMARK"
+/cast [@player] innervate
+END
 VER 3 0100000000000013 "kick boss1" "INV_MISC_QUESTIONMARK"
 /cast [@boss1] skull bash
 END
 VER 3 0100000000000002 "lb" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]lifebloom
-END
-VER 3 0100000000000014 "mount sak" "136103"
-/run local a={45470,47207,47208,47209,47210,47211,47212,47213}for i,q in ipairs(a)do print(format("Page %s: %s",i, IsQuestFlaggedCompleted(q) and "\124cFF00FF00Done\124r" or "\124cFFFF0000Not Done\124r")) end
 END
 VER 3 0100000000000008 "rebirth" "INV_MISC_QUESTIONMARK"
 #showtooltip

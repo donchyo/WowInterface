@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatLog"] = {
 	},
 	["ChatEditHistory"] = {
-		"/g nub", -- [1]
-		"/g you not running", -- [2]
-		"/g i needed to summon some dryads so i could send my mission", -- [3]
-		"/g so menardia can click 2", -- [4]
-		"/g according to thjis", -- [5]
-		"/g says it can", -- [6]
-		"/g notafaik", -- [7]
-		"/g yeash", -- [8]
-		"/g tuning changes", -- [9]
-		"/g upper lower cath", -- [10]
-		"/g unlucky", -- [11]
-		"/g you'll be byst", -- [12]
-		"/g busy", -- [13]
-		"/g RAGING, NECROTIC, TYRANNICAL on poe week", -- [14]
-		"/g thats a good week right?", -- [15]
-		"/g ez", -- [16]
-		"/g THIS IS MEMES", -- [17]
-		"/g hallå", -- [18]
-		"/g im trying to do something about my pot situation", -- [19]
-		"/g but its not going well", -- [20]
+		"/p its skittish", -- [1]
+		" just bring mage", -- [2]
+		"/p i am always the best", -- [3]
+		"/wa", -- [4]
+		"/p trash is fun", -- [5]
+		" oke", -- [6]
+		" wes're dogin a cos atm", -- [7]
+		" its abit wheelchair tbh", -- [8]
+		" 3x warrior", -- [9]
+		" ye", -- [10]
+		" second boss", -- [11]
+		" u come dh?", -- [12]
+		" u come dh", -- [13]
+		" yeah", -- [14]
+		" im abit annoyed aswell", -- [15]
+		" hes gonna have to show up soon", -- [16]
+		" its kinda shit, caus ei need to wake up semi early tomorrow aswell", -- [17]
+		"/pull 10", -- [18]
+		"/pull cancel", -- [19]
+		"/pull 0", -- [20]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

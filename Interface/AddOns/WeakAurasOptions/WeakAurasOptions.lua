@@ -540,6 +540,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
           name = arg.display,
           order = order,
           hidden = hidden,
+          desc = arg.desc,
           disabled = function() return not trigger["use_"..realname]; end,
           get = function() return trigger["use_"..realname] and trigger[realname] or nil; end,
           set = function(info, v)
@@ -794,7 +795,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
           options["specific_"..name] = {
             type = "input",
             name = L["Specific Unit"],
-            desc = L["Can be a name or a UID (e.g., party1). Only works on friendly players in your group."],
+            desc = L["Can be a name or a UID (e.g., party1). A name only works on friendly players in your group."],
             order = order,
             hidden = function() return (not trigger["use_specific_"..realname]) or (type(hidden) == "function" and hidden(trigger)) or (type(hidden) ~= "function" and hidden) end,
             get = function() return trigger[realname] end,
@@ -950,7 +951,6 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
 end
 
 local frame;
-
 local db;
 local odb;
 local options;
@@ -2027,7 +2027,6 @@ local function replaceValuesFuncs(intable, data)
   recurse(intable);
 end
 
-
 function WeakAuras.AddOption(id, data)
   local regionOption;
   if(regionOptions[data.regionType]) then
@@ -2558,7 +2557,6 @@ function WeakAuras.AddOption(id, data)
               end
 
               local custom = data.actions.finish.message_custom;
-
               if (not custom) then
                 return true;
               end
@@ -4858,7 +4856,7 @@ function WeakAuras.ReloadTriggerOptions(data)
       type = "input",
       name = L["Specific Unit"],
       order = 43,
-      desc = L["Can be a name or a UID (e.g., party1). Only works on friendly players in your group."],
+      desc = L["Can be a name or a UID (e.g., party1). A name only works on friendly players in your group."],
       hidden = function() return not (trigger.type == "aura" and trigger.unit == "member") end
     },
     useGroup_count = {
@@ -5467,7 +5465,7 @@ function WeakAuras.ReloadTriggerOptions(data)
       desc = L["Custom trigger event tooltip"],
       width = "double",
       order = 9,
-      hidden = function() return not (trigger.type == "custom" and trigger.custom_type == "event" and trigger.check ~= "update") end,
+      hidden = function() return not (trigger.type == "custom" and trigger.custom_type == "event") end,
       get = function() return trigger.events end,
       set = function(info, v)
         trigger.events = v;

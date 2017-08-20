@@ -40,10 +40,10 @@ TidyPlatesThreatDB = {
 		["Bawsie - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 253,
+				["id"] = 254,
 				["role"] = "DAMAGER",
-				["name"] = "Beast Mastery",
-				["index"] = 1,
+				["name"] = "Marksmanship",
+				["index"] = 2,
 			},
 		},
 		["Gnomalock - Grim Batol"] = {
@@ -102,10 +102,10 @@ TidyPlatesThreatDB = {
 		},
 		["Zetiz - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 261,
+				["id"] = 259,
 				["role"] = "DAMAGER",
-				["name"] = "Subtlety",
-				["index"] = 3,
+				["name"] = "Assassination",
+				["index"] = 1,
 			},
 			["welcome"] = true,
 		},
@@ -139,10 +139,10 @@ TidyPlatesThreatDB = {
 		["Zuriz - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 264,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 3,
+				["id"] = 263,
+				["role"] = "DAMAGER",
+				["name"] = "Enhancement",
+				["index"] = 2,
 			},
 		},
 		["Loverócket - Aggra (Português)"] = {
@@ -201,10 +201,10 @@ TidyPlatesThreatDB = {
 		},
 		["Nyrith - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 104,
-				["role"] = "TANK",
-				["name"] = "Guardian",
-				["index"] = 3,
+				["id"] = 102,
+				["role"] = "DAMAGER",
+				["name"] = "Balance",
+				["index"] = 1,
 			},
 			["welcome"] = true,
 		},
@@ -281,15 +281,23 @@ TidyPlatesThreatDB = {
 					["Totem"] = false,
 				},
 			},
+			["auraWidget"] = {
+				["allow"] = {
+					nil, -- [1]
+					"Recursive Strikes", -- [2]
+					"", -- [3]
+				},
+				["mode"] = "allMine",
+			},
 			["uniqueSettings"] = {
 				[33] = {
-					["name"] = "Fel Explosives",
-					["scale"] = 1.4,
 					["color"] = {
 						["g"] = 0,
 					},
-					["icon"] = 135799,
+					["name"] = "Fel Explosives",
 					["overrideScale"] = true,
+					["icon"] = 135799,
+					["scale"] = 1.4,
 				},
 				[34] = {
 				},
@@ -426,23 +434,15 @@ TidyPlatesThreatDB = {
 					"", -- [100]
 				},
 			},
+			["questWidget"] = {
+				["ON"] = false,
+			},
+			["cache"] = {
+			},
 			["settings"] = {
 				["healthbar"] = {
 					["texture"] = "Skullflower",
 				},
-			},
-			["cache"] = {
-			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
-			["auraWidget"] = {
-				["allow"] = {
-					nil, -- [1]
-					"Recursive Strikes", -- [2]
-					"", -- [3]
-				},
-				["mode"] = "allMine",
 			},
 			["healerTracker"] = {
 				["ON"] = false,
@@ -453,14 +453,6 @@ TidyPlatesThreatDB = {
 				["toggle"] = {
 					["Totem"] = false,
 				},
-			},
-			["auraWidget"] = {
-				["allow"] = {
-					nil, -- [1]
-					"Leg Sweep", -- [2]
-					"Binding Shot", -- [3]
-				},
-				["mode"] = "allMine",
 			},
 			["uniqueSettings"] = {
 				[33] = {
@@ -580,23 +572,31 @@ TidyPlatesThreatDB = {
 					"", -- [80]
 				},
 			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
-			["cache"] = {
-			},
 			["settings"] = {
 				["healthbar"] = {
 					["texture"] = "Skullflower",
 				},
+			},
+			["cache"] = {
+			},
+			["questWidget"] = {
+				["ON"] = false,
+			},
+			["text"] = {
+				["full"] = true,
 			},
 			["tapHealthbarColor"] = {
 				["b"] = 0,
 				["g"] = 0.501960784313726,
 				["r"] = 0.501960784313726,
 			},
-			["text"] = {
-				["full"] = true,
+			["auraWidget"] = {
+				["allow"] = {
+					nil, -- [1]
+					"Leg Sweep", -- [2]
+					"Binding Shot", -- [3]
+				},
+				["mode"] = "allMine",
 			},
 		},
 	},

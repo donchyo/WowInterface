@@ -77,6 +77,14 @@ L["STRING_SOUNDSETTINGS"] = "Configurações de Som"
 L["STRING_SOUNDSETTINGS_DESC"] = "Tocar um som quando acontecer um alerta."
 L["STRING_SUMMON"] = "Summon"
 L["STRING_SUMMON_DESC"] = "Quando um bruxo sumonar você (ou através da pedra de summon)."
+--Translation missing 
+-- L["STRING_TARGETLOSTHEALTH"] = ""
+--Translation missing 
+-- L["STRING_TARGETLOSTHEALTH_DESC"] = ""
+--Translation missing 
+-- L["STRING_TARGETLOWHEALTH"] = ""
+--Translation missing 
+-- L["STRING_TARGETLOWHEALTH_DESC"] = ""
 L["STRING_TRADE"] = "Janela de Trocas"
 L["STRING_TRADE_DESC"] = "Quando alguém abrir a janela de trocar com você."
 L["STRING_WORLDPVP"] = "PvP Aberto (Ashran)"

@@ -1,40 +1,27 @@
 # BigWigs
 
-## [v65](https://github.com/BigWigsMods/BigWigs/tree/v65) (2017-07-19)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v64.2...v65)
+## [v69](https://github.com/BigWigsMods/BigWigs/tree/v69) (2017-08-17)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v68.3...v69)
 
-- TombOfSargeras/Kiljaeden: Fix mythic timers table reference.  
-- TombOfSargeras: Update locale  
 - bump version  
-- Naturally expire the discord message after time.  
-- Update zhTW.lua (#316)  
-- SistersoftheMoon: Fix Lunar Beacon sometimes wrongly announcing the tank  
-- SistersoftheMoon: Wait a bit longer before announcing Lunar Beacon (fixes #315)  
-- Loader: Add Seat Of The Triumvirate to the loader  
-- TombOfSargers/Goroth: Fix a self:Message() call (#314)  
-- TombOfSargeras/SistersoftheMoon: Remove CDBar for Incorporeal Shot  
-- Update skill name for KJ (koKR) (#313)  
-- TombOfSargeras/Goroth: Use Mythic timers for first Shattering Star  
-- update zhCN. (#312)  
-- TombOfSargeras: Update comments  
-- TombOfSargeras/Sasszine: Remove consuming hunger bars, make warnings self only.  
-- TombOfSargeras/DemonicInquisition: Scythe Sweep Tank only  
-- TombOfSargeras/SistersoftheMoon: Change Moon Burn to a CDBar since it's not exact  
-- TombOfSargeras/Goroth: Warn when Melted Armor expires and update sound usages for Burning Armor (#310)  
-- Update koKR.lua (#311)  
-- Kiljaeden: Enable full obelisk explosion bar again  
-- TombOfSargeras/DemonicInquisition: Drycoded fixate warnings  
-- TombOfSargeras/Kiljaeden: Update markers for visibility in Mythic  
-- TombOfSargeras/Kiljaeden: fix lua error  
-- TombOfSargeras/Kiljaeden: more fixes and comments  
-- TombOfSargeras/Kiljaeden: fixes  
-- TombOfSargeras/Kiljaeden: Initial Mythic updates (Stage 1 + Intermission)  
-- Update RegisterTargetEvents usage in our modules to use the guid from the 3rd arg.  
-- Core/BossPrototype: Improve the RegisterTargetEvents API using filtering and pass the guid as the 3rd arg.  
-- frFR Update (#309)  
-- frFR Update (#308)  
-- update zhCN. (#307)  
-- TombOfSargeras/Sasszine: Tweak initial timers for normal mode  
-- TombOfSargeras: Shorten stage messages to basic info and create some consistency between phases and stages.  
-- TombOfSargeras/FallenAvatar: Phase 1 >> Stage 1  
-- Update deDE.lua (#306)  
+- FallenAvatar, MaidenofVigilance: Optimize InfoBox stuff  
+- Plugins/InfoBox: tiny optimization  
+- Plugins/InfoBox: minor optimizations  
+- FallenAvatar: Display the absorb and cast percentages as bars in the InfoBox for Cleansing Protocol  
+- Sasszine: Shorter "Inks fed" message  
+- InfoBox: cleanup  
+- MaidenofVigilance: Display the absorb and cast percentages as bars in the InfoBox  
+- The InfoBox can now show bars in the background  
+- Update koKR.lua (#360)  
+- Kiljaeden: Add Sightless Gaze message on refresh, add a removed message during the intermission  
+- Kiljaeden: Correctly handle using invis on Focused Dreadflame  
+- TombOfSargeras/Kiljaeden: Add count/icon to the Erupting say message on hc+, add a bar for Illidan's Sightless Gaze, mostly for countdown purposes.  
+- TombOfSargeras/FallenAvatar: Show Dark Mark icon in the say countdown, tweaks.  
+- Update zhTW.lua (#359)  
+- Update deDE.lua (#358)  
+- update zhCN. (#357)  
+- frFR Update (#356)  
+- Update zhCN.lua (#355)  
+- TombOfSargeras/Locales: Add locales  
+- TombOfSargeras/TheDesolateHost: Add Bonecage Armor icon above Templars with armor (Kui Nameplates Required)  
+- Antorus/Aggramar: Fix Combo spellId's  

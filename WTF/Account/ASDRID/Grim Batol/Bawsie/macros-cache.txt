@@ -55,8 +55,8 @@ VER 3 010000000000001F "es" "INV_MISC_QUESTIONMARK"
 /cast explosive shot
 /petattack [@pettarget,noexists]
 END
-VER 3 0100000000000020 "fox" "INV_MISC_QUESTIONMARK"
-/cast !aspect of the fox
+VER 3 0100000000000026 "focus conc" "INV_MISC_QUESTIONMARK"
+/cast [@focus] concussive shot
 END
 VER 3 010000000000000A "kc" "INV_MISC_QUESTIONMARK"
 #showtooltip kill command

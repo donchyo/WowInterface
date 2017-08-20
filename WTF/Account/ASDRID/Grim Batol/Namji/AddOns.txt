@@ -83,11 +83,11 @@ PitBull4_ShadowOrbs: disabled
 PitBull4_Chi: disabled
 PitBull4_BattlePet: disabled
 infBloodTapper: disabled
-MogIt: disabled
+MogIt: enabled
 MogIt_Accessories: enabled
 MogIt_Cloth: disabled
 MogIt_Leather: disabled
-MogIt_Mail: disabled
+MogIt_Mail: enabled
 MogIt_OneHanded: disabled
 MogIt_Other: disabled
 MogIt_Plate: disabled
@@ -171,7 +171,7 @@ Details_TimeAttack: disabled
 Details_TinyThreat: disabled
 Details_YouAreNotPrepared: disabled
 Details_Vanguard: disabled
-RaidFrameIndicators: disabled
+RaidFrameIndicators: enabled
 TellMeWhen_Options: disabled
 TellMeWhen: disabled
 AddonUsage: disabled
@@ -332,7 +332,7 @@ Overachiever: disabled
 Overachiever_Tabs: disabled
 Overachiever_Trade: disabled
 Paste: disabled
-Pawn: disabled
+Pawn: enabled
 PitBull4_ComboPoints: disabled
 Postal: disabled
 Quester: enabled
@@ -340,7 +340,7 @@ QuickTalents: disabled
 QuickQuest: disabled
 Rarity: disabled
 Rarity_Options: disabled
-RCLootCouncil: disabled
+RCLootCouncil: enabled
 SavedInstances: enabled
 SellOMatic2: disabled
 SellOMatic2_Destroy: disabled
@@ -408,3 +408,4 @@ NomiCakes: disabled
 StopResetingMyCameraPlease: disabled
 LegionTODOMini: disabled
 Skada_LeechBDKTabs: disabled
+Details_RaidInfo-TombOfSargeras: disabled

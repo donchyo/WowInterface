@@ -13,10 +13,10 @@ DataStore_PetsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
@@ -27,7 +27,7 @@ DataStore_PetsDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -71,10 +71,10 @@ DataStore_PetsDB = {
 				[138082] = 69778,
 				[148059] = 73351,
 				[36027] = 21055,
-				[179839] = 90213,
+				[210694] = 106152,
 				[134895] = 68468,
-				[230075] = 115786,
-				[230074] = 115785,
+				[179840] = 90214,
+				[179839] = 90213,
 				[98587] = 53232,
 				[62508] = 33194,
 				[62516] = 33200,
@@ -82,7 +82,7 @@ DataStore_PetsDB = {
 				[120501] = 61877,
 				[142028] = 71199,
 				[155838] = 77221,
-				[210695] = 106181,
+				[230075] = 115786,
 				[169666] = 84885,
 				[46426] = 26056,
 				[148061] = 73354,
@@ -132,12 +132,12 @@ DataStore_PetsDB = {
 				[210669] = 97128,
 				[210701] = 106283,
 				[61350] = 32592,
-				[195370] = 99403,
+				[12243] = 8376,
 				[141437] = 71018,
 				[10707] = 7553,
 				[101989] = 54541,
 				[10711] = 7560,
-				[15048] = 9656,
+				[195370] = 99403,
 				[62609] = 33238,
 				[10717] = 7567,
 				[62510] = 33197,
@@ -209,13 +209,13 @@ DataStore_PetsDB = {
 				[159296] = 78895,
 				[135264] = 68662,
 				[40614] = 23258,
-				[135263] = 68661,
-				[168668] = 84330,
 				[229103] = 115148,
+				[71840] = 38374,
+				[135263] = 68661,
 				[65381] = 33530,
 				[141447] = 71020,
 				[70613] = 37865,
-				[71840] = 38374,
+				[168668] = 84330,
 				[103588] = 55386,
 				[126251] = 64634,
 				[61349] = 32590,
@@ -249,7 +249,7 @@ DataStore_PetsDB = {
 				[10676] = 7382,
 				[10678] = 7381,
 				[137977] = 69748,
-				[12243] = 8376,
+				[15048] = 9656,
 				[10684] = 7389,
 				[135268] = 68658,
 				[39181] = 22445,
@@ -274,8 +274,8 @@ DataStore_PetsDB = {
 				[61773] = 32818,
 				[98571] = 53225,
 				[221907] = 111423,
-				[179840] = 90214,
-				[210694] = 106152,
+				[210695] = 106181,
+				[230074] = 115785,
 				[54187] = 24968,
 				[170270] = 86447,
 				[223409] = 112167,
@@ -292,7 +292,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Grim Batol.Bawsie"] = {
-				["lastUpdate"] = 1497663557,
+				["lastUpdate"] = 1503189217,
 				["CRITTER"] = {
 					78683, -- [1]
 					35907, -- [2]
@@ -345,7 +345,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1423512183,
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1501105845,
+				["lastUpdate"] = 1503189330,
 				["CRITTER"] = {
 					179831, -- [1]
 					135261, -- [2]
@@ -372,7 +372,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Grim Batol.Krixidh"] = {
-				["lastUpdate"] = 1500483683,
+				["lastUpdate"] = 1502732686,
 				["CRITTER"] = {
 					210699, -- [1]
 					221908, -- [2]
@@ -381,7 +381,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1501107970,
+				["lastUpdate"] = 1503186117,
 				["CRITTER"] = {
 					135267, -- [1]
 					69452, -- [2]
@@ -425,7 +425,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1480934373,
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1500321140,
+				["lastUpdate"] = 1503072344,
 				["CRITTER"] = {
 					10713, -- [1]
 					101986, -- [2]
@@ -542,7 +542,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1461461819,
 			},
 			["Default.Grim Batol.Zolution"] = {
-				["lastUpdate"] = 1497669704,
+				["lastUpdate"] = 1502409659,
 				["CRITTER"] = {
 					101986, -- [1]
 					69452, -- [2]
@@ -566,7 +566,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1451198153,
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1500593393,
+				["lastUpdate"] = 1503166513,
 				["CRITTER"] = {
 					179831, -- [1]
 					101986, -- [2]
@@ -616,7 +616,7 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1501089696,
+				["lastUpdate"] = 1503169983,
 				["CRITTER"] = {
 					248240, -- [1]
 					30152, -- [2]
@@ -655,7 +655,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1442247547,
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1501107539,
+				["lastUpdate"] = 1503169860,
 				["CRITTER"] = {
 					135267, -- [1]
 					210694, -- [2]
@@ -701,22 +701,22 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Grim Batol.Gnomalock"] = {
-				["lastUpdate"] = 1497663619,
+				["lastUpdate"] = 1503176815,
 				["CRITTER"] = {
-					55068, -- [1]
-					138082, -- [2]
-					141448, -- [3]
-					141447, -- [4]
-					123778, -- [5]
-					147124, -- [6]
-					69452, -- [7]
-					126885, -- [8]
-					179835, -- [9]
-					81937, -- [10]
+					69452, -- [1]
+					141448, -- [2]
+					147124, -- [3]
+					126885, -- [4]
+					55068, -- [5]
+					81937, -- [6]
+					141447, -- [7]
+					179835, -- [8]
+					138082, -- [9]
+					123778, -- [10]
 				},
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1500577765,
+				["lastUpdate"] = 1503007732,
 				["CRITTER"] = {
 					179831, -- [1]
 					170287, -- [2]
@@ -778,7 +778,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1424602909,
 			},
 			["Default.Grim Batol.Namji"] = {
-				["lastUpdate"] = 1497663488,
+				["lastUpdate"] = 1502732652,
 				["CRITTER"] = {
 					179831, -- [1]
 					184482, -- [2]

@@ -18,7 +18,7 @@ MogItDB = {
 		["Krixiyo - Twisting Nether"] = "Default",
 	},
 	["global"] = {
-		["version"] = "3.8.0",
+		["version"] = "3.8.1",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -48,6 +48,7 @@ MogItDB = {
 				["1H-mace"] = "One-Handed Maces",
 				["Head"] = "Head",
 				["Holdable"] = "Held In Off-hand",
+				["Shield"] = "Shields",
 				["Feet"] = "Feet",
 				["Staff"] = "Staves",
 				["Chest"] = "Chest",

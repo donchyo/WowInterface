@@ -1,146 +1,146 @@
 local L = BigWigs:NewBossLocale("Court of Stars Trash", "frFR")
 if not L then return end
 if L then
-	--L.Guard = "Duskwatch Guard"
-	--L.Construct = "Guardian Construct"
-	--L.Enforcer = "Felbound Enforcer"
-	--L.Hound = "Legion Hound"
-	--L.Gerenth = "Gerenth the Vile"
-	--L.Jazshariu = "Jazshariu"
-	--L.Imacutya = "Imacutya"
-	--L.Baalgar = "Baalgar the Watchful"
-	--L.Inquisitor = "Watchful Inquisitor"
-	--L.BlazingImp = "Blazing Imp"
-	--L.Energy = "Bound Energy"
-	--L.Manifestation = "Arcane Manifestation"
-	--L.Wyrm = "Mana Wyrm"
-	--L.Arcanist = "Duskwatch Arcanist"
-	--L.InfernalImp = "Infernal Imp"
-	--L.Malrodi = "Arcanist Malrodi"
-	--L.Velimar = "Velimar"
-	--L.ArcaneKeys = "Arcane Keys"
-	--L.clues = "Clues"
+	L.Guard = "Vigile de la Garde crépusculaire"
+	L.Construct = "Assemblage gardien"
+	L.Enforcer = "Massacreur gangre-lié"
+	L.Hound = "Molosse de la Légion"
+	L.Gerenth = "Gerenth le Vil"
+	L.Jazshariu = "Jazshariu"
+	L.Imacutya = "Savatr’anshé"
+	L.Baalgar = "Baalgar le Vigilant"
+	L.Inquisitor = "Inquisiteur vigilant"
+	L.BlazingImp = "Diablotin flamboyant"
+	L.Energy = "Energie liée"
+	L.Manifestation = "Manifestation arcanique"
+	L.Wyrm = "Wyrm de mana"
+	L.Arcanist = "Arcaniste de la Garde crépusculaire"
+	L.InfernalImp = "Diablotin infernal"
+	L.Malrodi = "Arcaniste Malrodi"
+	L.Velimar = "Velimar"
+	L.ArcaneKeys = "Clés arcaniques"
+	L.clues = "Indices"
 
-	--L.InfernalTome = "Infernal Tome"
-	--L.MagicalLantern = "Magical Lantern"
-	--L.NightshadeRefreshments = "Nightshade Refreshments"
-	--L.StarlightRoseBrew = "Starlight Rose Brew"
-	--L.UmbralBloom = "Umbral Bloom"
-	--L.WaterloggedScroll = "Waterlogged Scroll"
-	--L.BazaarGoods = "Bazaar Goods"
-	--L.LifesizedNightborneStatue = "Lifesized Nightborne Statue"
-	--L.DiscardedJunk = "Discarded Junk"
-	--L.WoundedNightborneCivilian = "Wounded Nightborne Civilian"
+	L.InfernalTome = "Tome infernal"
+	L.MagicalLantern = "Lanterne magique"
+	L.NightshadeRefreshments = "Rafraîchissements de belladone"
+	L.StarlightRoseBrew = "Infusion de rose lumétoile"
+	L.UmbralBloom = "Floraison ombreuse"
+	L.WaterloggedScroll = "Parchemin détrempé"
+	L.BazaarGoods = "Marchandises de bazar"
+	L.LifesizedNightborneStatue = "Statue de sacrenuit à échelle réelle"
+	L.DiscardedJunk = "Camelote abandonnée"
+	L.WoundedNightborneCivilian = "Civil sacrenuit blessé"
 
-	--L.announce_buff_items = "Announce buff items"
-	--L.announce_buff_items_desc = "Anounces all available buff items around the dungeon and who is able to use them."
+	L.announce_buff_items = "Annoncer les objets de buff"
+	L.announce_buff_items_desc = "Annonce tous les objets de buff disponibles du donjon et qui peut les utiliser."
 
-	--L.available = "%s|cffffffff%s|r available" -- Context: item is available to use
-	--L.usableBy = "usable by" -- Context: item is usable by someone
+	L.available = "%s|cffffffff%s|r disponible" -- Context: item is available to use
+	L.usableBy = "utilisable par %s" -- Context: item is usable by someone
 
-	--L.use_buff_items = "Instantly use buff items"
-	--L.use_buff_items_desc = "Enable this options to instantly use the buff items around the dungeon. This will not use items which aggro the guards before the second boss."
+	L.custom_on_use_buff_items = "Utiliser instantanément les objets de buff"
+	L.custom_on_use_buff_items_desc = "Activer cette option pour utiliser instantanément les objets de buff du donjon. Ceci n'utilisera pas les objets qui attirent les gardes avant le 2ème boss."
 
-	--L.spy_helper = "Spy Event Helper"
-	--L.spy_helper_desc = "Shows an InfoBox with all clues your group gathered about the spy. The clues will also be send to your party members in chat."
+	L.spy_helper = "Aide évènement espion"
+	L.spy_helper_desc = "Affiche une boîte d'info avec tous les indices que votre groupe a récolté concernant l'espion. Les indices seront également envoyés aux membres de votre groupe dans la discussion."
 
-	--L.clueFound = "Clue found (%d/5): |cffffffff%s|r"
-	--L.spyFound = "Spy found by %s!"
-	--L.spyFoundChat = "I found the spy!"
-	--L.spyFoundPattern = "Now now, let's not be hasty" -- Now now, let's not be hasty [player]. Why don't you follow me so we can talk about this in a more private setting...
+	L.clueFound = "Indice trouvé (%d/5) : |cffffffff%s|r"
+	L.spyFound = "Espion trouvé par %s !"
+	L.spyFoundChat = "J'ai trouvé l'espion !"
+	L.spyFoundPattern = "allez pas trop vite en besogne" -- Allons, [playername]. N’allez pas trop vite en besogne. Et si vous me suiviez, que nous puissions en parler en privé ?
 
-	--L.hints = {
-	--	"Cape",
-	--	"No Cape",
-	--	"Pouch",
-	--	"Potions",
-	--	"Long Sleeves",
-	--	"Short Sleeves",
-	--	"Gloves",
-	--	"No Gloves",
-	--	"Male",
-	--	"Female",
-	--	"Light Vest",
-	--	"Dark Vest",
-	--	"No Potions",
-	--	"Book",
-	--}
+	L.hints = {
+		"Cape",
+		"Pas de cape",
+		"Sacoche",
+		"Potions",
+		"Manches longues",
+		"Manches courtes",
+		"Gants",
+		"Pas de gants",
+		"Homme",
+		"Femmme",
+		"Gilet clair",
+		"Gilet sombre",
+		"Pas de potions",
+		"Livre",
+	}
 
 	--[[ !!! IMPORTANT NOTE TO TRANSLATORS !!! ]]--
 	--[[ The following translations have to exactly match the gossip text of the Chatty Rumormongers. ]]--
 
 	-- Cape
-	--L["I heard the spy enjoys wearing capes."] = 1
-	--L["Someone mentioned the spy came in earlier wearing a cape."] = 1
+	L["On dit que la taupe aime porter des capes."] = 1
+	L["Quelqu’un affirme que la taupe portait une cape lors de son passage ici."] = 1
 
 	-- No Cape
-	--L["I heard that the spy left their cape in the palace before coming here."] = 2
-	--L["I heard the spy dislikes capes and refuses to wear one."] = 2
+	L["J’ai entendu dire que la taupe avait laissé sa cape au palais avant de venir ici."] = 2
+	L["Il paraît que la taupe n’aime pas les capes et refuse d’en porter."] = 2
 
 	-- Pouch
-	--L["A friend said the spy loves gold and a belt pouch filled with it."] = 3
-	--L["I heard the spy's belt pouch is filled with gold to show off extravagance."] = 3
-	--L["I heard the spy carries a magical pouch around at all times."] = 3
-	--L["I heard the spy's belt pouch is lined with fancy threading."] = 3
+	L["D’après l’un de mes amis, la taupe aime l’or et les sacoches qui en sont pleines."] = 3
+	L["On raconte que la sacoche de la taupe est pleine d’or. Si ça, ce n’est pas un signe extérieur de richesse…"] = 3
+	L["On raconte que la taupe ne se sépare jamais de sa sacoche magique."] = 3
+	L["On raconte que la sacoche de la taupe est bordée d’une élégante broderie."] = 3
 
 	-- Potions
-	--L["I heard the spy brought along some potions... just in case."] = 4
-	--L["I'm pretty sure the spy has potions at the belt."] = 4
-	--L["I heard the spy brought along potions, I wonder why?"] = 4
-	--L["I didn't tell you this... but the spy is masquerading as an alchemist and carrying potions at the belt."] = 4
+	L["J’ai entendu dire que la taupe a apporté quelques potions… au cas où."] = 4
+	L["La taupe porte des potions à la ceinture. J’en mettrais ma main au feu !"] = 4
+	L["J’ai entendu dire que la taupe a apporté quelques potions. Je me demande bien pourquoi."] = 4
+	L["Ça reste entre nous… La taupe se fait passer pour un alchimiste et porte des potions à sa ceinture."] = 4
 
 	-- Long Sleeves
-	--L["I just barely caught a glimpse of the spy's long sleeves earlier in the evening."] = 5
-	--L["I heard the spy's outfit has long sleeves tonight."] = 5
-	--L["Someone said the spy is covering up their arms with long sleeves tonight."] = 5
-	--L["A friend of mine mentioned the spy has long sleeves on."] = 5
+	L["J’ai brièvement entraperçu la taupe dans sa tenue à manches longues tout à l’heure."] = 5
+	L["Il paraît que la taupe porte une tenue à manches longues ce soir."] = 5
+	L["Quelqu’un m’a dit que les bras de la taupe étaient dissimulés par un habit à manches longues, ce soir."] = 5
+	L["D’après l’un de mes amis, la taupe porterait un habit à manches longues."] = 5
 
 	-- Short Sleeves
-	--L["I heard the spy enjoys the cool air and is not wearing long sleeves tonight."] = 6
-	--L["A friend of mine said she saw the outfit the spy was wearing. It did not have long sleeves."] = 6
-	--L["Someone told me the spy hates wearing long sleeves."] = 6
-	--L["I heard the spy wears short sleeves to keep their arms unencumbered."] = 6
+	L["Il paraît que la taupe aime sentir la caresse du vent sur sa peau et ne porte pas de manches longues ce soir."] = 6
+	L["Une de mes amies prétend avoir vu la tenue que porte notre taupe. À l’en croire, ce ne serait pas un habit à manches longues."] = 6
+	L["Quelqu’un m’a dit que la taupe détestait porter des manches longues."] = 6
+	L["Il paraît que la taupe porte des manches courtes pour rester plus libre de ses mouvements."] = 6
 
 	-- Gloves
-	--L["I heard the spy always dons gloves."] = 7
-	--L["There's a rumor that the spy always wears gloves."] = 7
-	--L["Someone said the spy wears gloves to cover obvious scars."] = 7
-	--L["I heard the spy carefully hides their hands."] = 7
+	L["On dit que la taupe porte toujours des gants."] = 7
+	L["Le bruit court que la taupe porte toujours des gants."] = 7
+	L["On m’a raconté que la taupe portait des gants pour masquer d’affreuses cicatrices."] = 7
+	L["Il paraît que la taupe prend toujours soin de cacher ses mains."] = 7
 
 	-- No Gloves
-	--L["There's a rumor that the spy never has gloves on."] = 8
-	--L["I heard the spy dislikes wearing gloves."] = 8
-	--L["I heard the spy avoids having gloves on, in case some quick actions are needed."] = 8
-	--L["You know... I found an extra pair of gloves in the back room. The spy is likely to be bare handed somewhere around here."] = 8
+	L["Le bruit court que la taupe ne porte jamais de gants."] = 8
+	L["On dit que la taupe déteste porter des gants."] = 8
+	L["J’ai entendu dire que la taupe évite de porter des gants, de crainte que cela ne nuise à sa dextérité."] = 8
+	L["Vous savez… J’ai trouvé une paire de gants abandonnée dans l’arrière-salle. Il faut croire que la taupe n’en porte pas."] = 8
 
 	-- Male
-	--L["A guest said she saw him entering the manor alongside the Grand Magistrix."] = 9
-	--L["I heard somewhere that the spy isn't female."] = 9
-	--L["I heard the spy is here and he's very good looking."] = 9
-	--L["One of the musicians said he would not stop asking questions about the district."] = 9
+	L["Une invitée l’aurait vu entrer dans le manoir au côté de la grande magistrice."] = 9
+	L["À en croire la rumeur, la taupe ne serait pas une espionne."] = 9
+	L["Il paraît que l’espion est ici et qu’il est fort séduisant, de surcroît."] = 9
+	L["À en croire l’un des musiciens, il n’arrêtait pas de poser des questions sur le quartier."] = 9
 
 	-- Female
-	--L["A guest saw both her and Elisande arrive together earlier."] = 10
-	--L["I hear some woman has been constantly asking about the district..."] = 10
-	--L["Someone's been saying that our new guest isn't male."] = 10
-	--L["They say that the spy is here and she's quite the sight to behold."] = 10
+	L["Quelqu’un l’a vue arriver en compagnie d’Élisande."] = 10
+	L["On me dit qu’une femme ne cesse de poser des questions à propos du quartier…"] = 10
+	L["Le bruit court que notre hôte ne serait pas un homme."] = 10
+	L["On dit que la taupe est ici et que c’est une vraie beauté."] = 10
 
 	-- Light Vest
-	--L["The spy definitely prefers the style of light colored vests."] = 11
-	--L["I heard that the spy is wearing a lighter vest to tonight's party."] = 11
-	--L["People are saying the spy is not wearing a darker vest tonight."] = 11
+	L["La taupe préfère les gilets de couleur claire."] = 11
+	L["Il paraît que la taupe porte un gilet clair ce soir."] = 11
+	L["On raconte que la taupe ne porte pas de gilet sombre ce soir."] = 11
 
 	-- Dark Vest
-	--L["I heard the spy's vest is a dark, rich shade this very night."] = 12
-	--L["The spy enjoys darker colored vests... like the night."] = 12
-	--L["Rumor has it the spy is avoiding light colored clothing to try and blend in more."] = 12
-	--L["The spy definitely prefers darker clothing."] = 12
+	L["J’ai entendu dire que la taupe porte un gilet de couleur sombre ce soir."] = 12
+	L["La taupe préfère les gilets sombres… comme la nuit."] = 12
+	L["D’après les rumeurs, la taupe évite les tenues de couleur claire pour mieux se fondre dans la masse."] = 12
+	L["Une chose est sûre, la taupe préfère les vêtements sombres."] = 12
 
 	-- No Potions
-	--L["I heared the spy is not carrying any potions around."] = 13
-	--L["A musician told me she saw the spy throw away their last potion and no longer has any left."] = 13
+	L["Il paraît que la taupe ne transporte aucune potion."] = 13
+	L["Une musicienne m’a dit avoir vu la taupe jeter sa dernière potion. Il semblerait donc qu’il ne lui en reste plus."] = 13
 
 	-- Book
-	--L["I heard the spy always has a book of written secrets at the belt."] = 14
-	--L["Rumor has is the spy loves to read and always carries around at least one book."] = 14
+	L["Il paraît que la taupe porte toujours un livre des secrets à sa ceinture."] = 14
+	L["Le bruit court que la taupe adore lire et transporte toujours au moins un livre."] = 14
 end

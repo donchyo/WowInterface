@@ -20,7 +20,7 @@ bind CTRL-9 NONE
 bind SHIFT-1 CLICK BT4Button25:LeftButton
 bind SHIFT-2 NONE
 bind SHIFT-3 CLICK BT4Button26:LeftButton
-bind SHIFT-4 CLICK BT4Button74:LeftButton
+bind SHIFT-4 BONUSACTIONBUTTON2
 bind SHIFT-5 BONUSACTIONBUTTON3
 bind SHIFT-6 CLICK BT4Button27:LeftButton
 bind F1 BONUSACTIONBUTTON1
@@ -63,3 +63,4 @@ bind ALT-+ CLICK BT4Button80:LeftButton
 bind ALT-§ CLICK BT4Button84:LeftButton
 bind ALT-NUMPAD1 CLICK EXRTWM1:LeftButton
 bind ALT-NUMPAD2 CLICK EXRTWM2:LeftButton
+bind CTRL-+ CLICK BT4Button82:LeftButton

@@ -808,8 +808,8 @@ function FlashTaskBar.OnInit (self)
 		
 		{
 			type = "toggle",
-			name = "Target Low Health",
-			desc = "Flash when your target health hit less than 18%.",
+			name = L["STRING_TARGETLOWHEALTH"],
+			desc = L["STRING_TARGETLOWHEALTH_DESC"],
 			order = 6,
 			get = function() return FlashTaskBar.db.profile.low_health end,
 			set = function (self, val) 
@@ -821,12 +821,11 @@ function FlashTaskBar.OnInit (self)
 				end
 			end,
 		},
-		
-		
+
 		{
 			type = "toggle",
-			name = "Target Lost Health",
-			desc = "Flash when your target lost any health.",
+			name = L["STRING_TARGETLOSTHEALTH"],
+			desc = L["STRING_TARGETLOSTHEALTH_DESC"],
 			order = 6,
 			get = function() return FlashTaskBar.db.profile.lost_health end,
 			set = function (self, val) 
@@ -854,9 +853,9 @@ function FlashTaskBar.OnInit (self)
 	general_settings_frame:SetPoint ("topleft", 0, 0)
 	general_settings_frame:SetSize (1, 1)
 	
-	FlashTaskBar:BuildMenu (general_settings_frame, options, 15, -77, 260, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+	FlashTaskBar:BuildMenu (general_settings_frame, options, 15, -77, 280, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
 	
-	local y_chat_scan = -230
+	local y_chat_scan = -250
 	
 	local camping_text1 = FlashTaskBar:CreateLabel (FlashTaskBar.OptionsFrame1, L["STRING_CAMPINGSETTINGS"] .. ":", FlashTaskBar:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
 	camping_text1:SetPoint ("topleft", main_frame, "topleft", 10, y_chat_scan)

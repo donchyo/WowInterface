@@ -1,29 +1,5 @@
 
 AdiBagsDB = {
-	["profileKeys"] = {
-		["Donch - Grim Batol"] = "Default",
-		["Krixidk - Grim Batol"] = "Default",
-		["Kroxi - Grim Batol"] = "Default",
-		["Namji - Grim Batol"] = "Default",
-		["Bawsie - Grim Batol"] = "Default",
-		["Zolution - Grim Batol"] = "Default",
-		["Donchyo - Shattered Hand"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
-		["Treefiddy - Aggra (Português)"] = "Default",
-		["Kroxi - Crushridge"] = "Default",
-		["Menardiairl - Culte de la Rive noire"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
-		["Donch - Shattered Hand"] = "Default",
-		["Lilgaykrixi - Kazzak"] = "Default",
-		["Líttle - Grim Batol"] = "Default",
-		["Krixiyo - Lightning's Blade"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
-		["Krixiyo - Twisting Nether"] = "Default",
-	},
 	["namespaces"] = {
 		["ItemLevel"] = {
 			["profiles"] = {
@@ -112,6 +88,7 @@ AdiBagsDB = {
 						[78371] = "Junk#Cata gold",
 						[78403] = "Junk#Cata gold",
 						[77989] = "Junk#Cata gold",
+						[35581] = "Equipment#Set: Speed",
 						[139613] = "Consumable#Artifact Power",
 						[71407] = "Junk#Cata gold",
 						[71423] = "Junk#Cata gold",
@@ -144,16 +121,16 @@ AdiBagsDB = {
 						[141923] = "Consumable#Artifact Power",
 						[77991] = "Junk#Cata gold",
 						[77242] = "Junk#Cata gold",
-						[71680] = "Junk#Cata gold",
 						[78856] = "Junk#Cata gold",
-						[143868] = "Consumable#Artifact Power",
 						[71445] = "Junk#Cata gold",
+						[71680] = "Junk#Cata gold",
+						[71429] = "Junk#Cata gold",
 						[114807] = "Equipment#Followers",
 						[71473] = "Junk#Cata gold",
 						[141956] = "Consumable#Artifact Power",
 						[78390] = "Junk#Cata gold",
 						[114616] = "Equipment#Followers",
-						[71429] = "Junk#Cata gold",
+						[143868] = "Consumable#Artifact Power",
 						[143869] = "Consumable#Artifact Power",
 						[118632] = "Consumable#Raid Consumables",
 						[78859] = "Junk#Cata gold",
@@ -173,9 +150,9 @@ AdiBagsDB = {
 						[143871] = "Consumable#Artifact Power",
 						[71414] = "Junk#Cata gold",
 						[109223] = "Consumable#Raid Consumables",
-						[71998] = "Junk#Cata gold",
-						[77993] = "Junk#Cata gold",
 						[78855] = "Junk#Cata gold",
+						[77993] = "Junk#Cata gold",
+						[71998] = "Junk#Cata gold",
 						[114745] = "Equipment#Followers",
 						[71456] = "Junk#Cata gold",
 						[71427] = "Junk#Cata gold",
@@ -207,8 +184,8 @@ AdiBagsDB = {
 						[143870] = "Consumable#Artifact Power",
 						[78489] = "Junk#Cata gold",
 						[71455] = "Junk#Cata gold",
-						[78849] = "Junk#Cata gold",
 						[71617] = "Junk#Cata gold",
+						[78849] = "Junk#Cata gold",
 						[71413] = "Junk#Cata gold",
 						[71684] = "Junk#Cata gold",
 						[118365] = "Junk#Cata gold",
@@ -216,8 +193,8 @@ AdiBagsDB = {
 						[109217] = "Consumable#Raid Consumables",
 						[78431] = "Junk#Cata gold",
 						[109155] = "Consumable#Raid Consumables",
-						[141689] = "Consumable#Artifact Power",
 						[71424] = "Junk#Cata gold",
+						[141689] = "Consumable#Artifact Power",
 						[141852] = "Consumable#Artifact Power",
 						[69110] = "Junk#Cata gold",
 						[139614] = "Consumable#Artifact Power",
@@ -235,8 +212,6 @@ AdiBagsDB = {
 		["AdiBags_TooltipInfo"] = {
 		},
 		["Equipment"] = {
-		},
-		["DataSource"] = {
 		},
 		["ItemSets"] = {
 		},
@@ -269,6 +244,8 @@ AdiBagsDB = {
 				},
 			},
 		},
+		["DataSource"] = {
+		},
 		["Junk"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -281,14 +258,39 @@ AdiBagsDB = {
 		["MoneyFrame"] = {
 		},
 	},
+	["profileKeys"] = {
+		["Donch - Grim Batol"] = "Default",
+		["Krixidk - Grim Batol"] = "Default",
+		["Kroxi - Grim Batol"] = "Default",
+		["Namji - Grim Batol"] = "Default",
+		["Bawsie - Grim Batol"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
+		["Donchyo - Shattered Hand"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
+		["Treefiddy - Aggra (Português)"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
+		["Menardiairl - Culte de la Rive noire"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
+		["Krixidh - Grim Batol"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
+		["Donch - Shattered Hand"] = "Default",
+		["Lilgaykrixi - Kazzak"] = "Default",
+		["Líttle - Grim Batol"] = "Default",
+		["Krixiyo - Lightning's Blade"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
+		["Krixiyo - Twisting Nether"] = "Default",
+	},
 	["global"] = {
 		["muteBugGrabber"] = true,
 	},
 	["profiles"] = {
 		["Default"] = {
 			["virtualStacks"] = {
+				["others"] = true,
+				["notWhenTrading"] = 4,
 				["stackable"] = true,
-				["notWhenTrading"] = 3,
 				["incomplete"] = true,
 			},
 			["scale"] = 0.7,

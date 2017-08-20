@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0205,
+	["LastVersion"] = 2.0211,
 	["LastPlayerFullName"] = "Zetiz-Grim Batol",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
@@ -25,7 +25,7 @@ PawnOptions = {
 		[128870] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 59,
+					["ItemLevel"] = 61,
 					["Type"] = "Shadow",
 				}, -- [1]
 				{

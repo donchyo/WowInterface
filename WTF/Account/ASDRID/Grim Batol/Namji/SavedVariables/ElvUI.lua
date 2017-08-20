@@ -1,33 +1,33 @@
 
 ElvCharacterDB = {
-	["ChatLog"] = {
-	},
 	["ChatEditHistory"] = {
-		"/g on lock?", -- [1]
-		"/g also", -- [2]
-		"/g menardia somehow managed to get  x2 on a dungeon on his monk 2 days ago", -- [3]
-		"/g im gonna shit", -- [4]
-		"/reload", -- [5]
-		"/p get ", -- [6]
-		"/p out", -- [7]
-		"/p nigger", -- [8]
-		"/p its not that bad  today", -- [9]
-		"/p die", -- [10]
-		"/p tim", -- [11]
-		"/i its probably quicker if you die", -- [12]
-		"/i like", -- [13]
-		"/p just go down", -- [14]
-		"/p mandria", -- [15]
-		"/s go down", -- [16]
-		"/p just run to the boss i guess", -- [17]
-		"/p if you run over them", -- [18]
-		"/p they will start moving", -- [19]
-		"/p menardia?", -- [20]
+		"/p jag gjorde det på min shaman som enhance", -- [1]
+		"/p och rogue", -- [2]
+		"/p och då buggade den", -- [3]
+		"/p men", -- [4]
+		"/p om jag höll tillbaks lite", -- [5]
+		"/p så gick det", -- [6]
+		"/p men min monk gör inte tillräckligt med dmg", -- [7]
+		"/p även om jag går all out", -- [8]
+		"/p jag går ut", -- [9]
+		"/p kan testa att gå full dmg", -- [10]
+		"/p och se vad som händer", -- [11]
+		"/p rip", -- [12]
+		"/p kanske", -- [13]
+		"/p stop dps", -- [14]
+		"/p nu", -- [15]
+		"/p typ", -- [16]
+		"/p :D", -- [17]
+		"/p ja", -- [18]
+		"/p tacj", -- [19]
+		"/p tack", -- [20]
 	},
 	["BodyGuard"] = {
 		["Active"] = false,
 		["Health"] = 0,
 		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+	},
+	["ChatLog"] = {
 	},
 }

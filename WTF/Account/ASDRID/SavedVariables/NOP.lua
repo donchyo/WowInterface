@@ -1,10 +1,5 @@
 
 NewOpenablesProfile = {
-	["char"] = {
-		["Nyrith - Grim Batol"] = {
-			["itemID"] = 138785,
-		},
-	},
 	["profileKeys"] = {
 		["Krixi - Grim Batol"] = "Default",
 		["Donch - Grim Batol"] = "Default",
@@ -30,10 +25,12 @@ NewOpenablesProfile = {
 				440.000061035156, -- [5]
 			},
 			["T_BLACKLIST"] = {
-				[139420] = true,
-				[139428] = true,
-				[139418] = true,
 				[0] = true,
+				[147348] = true,
+				[139418] = true,
+				[139428] = true,
+				[139420] = true,
+				[147349] = true,
 			},
 			["iconSize"] = 40,
 			["qb"] = {
@@ -41,7 +38,7 @@ NewOpenablesProfile = {
 				"UIParent", -- [2]
 				"TOPLEFT", -- [3]
 			},
-			["version"] = "|cFFFFFFFF07.38 17.07.2017 use |cFFFF00FF/nop|cFFFFFFFF",
+			["version"] = "|cFFFFFFFF07.40 24.07.2017 use |cFFFF00FF/nop|cFFFFFFFF",
 			["lockButton"] = true,
 		},
 	},

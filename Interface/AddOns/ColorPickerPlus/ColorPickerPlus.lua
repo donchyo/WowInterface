@@ -4,6 +4,7 @@
 -- 		2. copy to and paste from color palette
 --		3. color swatches for the copied color and for the starting color
 --      4. analog color choice through a hue bar and saturation/value gradient square
+--      5. class palette and copy/paste independent of palette
 
 --VARIABLES
 -------------------------------------------------------------------------------------------------------
@@ -54,7 +55,7 @@ local bgtable = {
 
 -- initial values in palette
 -- these are overridden by user and saved in WoW SavedVariables
-local defaults = {			
+local defaults = {	
 	palette = {					--  36 color allotted
 		{ r = 1.0, g = 0.0, b = 0.0, a = 1.0 },	-- red
 		{ r = 1.0, g = 0.0, b = 0.5, a = 1.0 },	-- rose
@@ -92,7 +93,8 @@ local defaults = {
 		{ r = 0.9, g = 0.9, b = 0.9, a = 1.0 }, 
 		{ r = 1.0, g = 1.0, b = 1.0, a = 1.0 }, -- white
 		{ r = 0.7, g = 0.7, b = 0.7, a = 0.7 }, -- transparent gray 
-	}
+	},
+	paletteState = 2,
 }
 
 local classColorPalette = {
@@ -101,7 +103,7 @@ local classColorPalette = {
 		{ r = 1.00, g = 0.49, b = 0.04, a = 1.0 }, -- Druid Orange
 		{ r = 0.67, g = 0.83, b = 0.45, a = 1.0 }, -- Hunter Green
 		{ r = 0.41, g = 0.80, b = 0.94, a = 1.0 }, -- Mage Blue
-		{ r = 0.33, g = 0.54, b = 0.52, a = 1.0 }, -- Monk Green
+		{ r = 0.00, g = 1.00, b = 0.59, a = 1.0 }, -- Monk Green
 		{ r = 0.96, g = 0.55, b = 0.73, a = 1.0 }, -- Paladin Pink
 		{ r = 1.00, g = 1.00, b = 1.00, a = 1.0 }, -- Priest White
 		{ r = 1.00, g = 0.96, b = 0.41, a = 1.0 }, -- Rogue Yellow
@@ -109,8 +111,7 @@ local classColorPalette = {
 		{ r = 0.58, g = 0.51, b = 0.79, a = 1.0 }, -- Warlock Purple
 		{ r = 0.78, g = 0.61, b = 0.43, a = 1.0 }, -- Warrior Tan
 	}
-
-
+	
 --EVENT REGISTRATION
 -------------------------------------------------------------------------------------------------------------------------
 -- these need to happen inline at lua file load time
@@ -213,6 +214,9 @@ function MOD.ADDON_LOADED (ev, name)
 			if not DB.palette then
 				DB.palette = defaults.palette
 			end
+			if not DB.paletteState then
+				DB.paletteState = defaults.paletteState
+			end
 		else
 			ColorPickerPlusDB = defaults
 			DB = ColorPickerPlusDB
@@ -287,6 +291,7 @@ end
 
 function MOD:Hooked_OnShow(...)
 	local r, g, b = ColorPickerFrame:GetColorRGB()
+
 	colorHue, colorSat, colorVal = RGB_to_HSV(r,g,b) -- store HSV values in our own variables
 	
 	MOD:ShowHideAlpha()
@@ -297,11 +302,11 @@ function MOD:Hooked_OnShow(...)
 	MOD:UpdateAlphaText()
 end
 
+
 function MOD:CleanUpColorPickerFrame()
 
 	-- First, disable some standard Blizzard components
 	ColorPickerWheel:Hide()
-	ColorPickerFrame:EnableMouse(false)
 	ColorPickerFrame:GetColorWheelThumbTexture():Hide()
 	ColorPickerFrame:GetColorValueTexture():Hide()
 	ColorPickerFrame:GetColorValueThumbTexture():Hide()
@@ -383,11 +388,10 @@ local function ChosenColorOnMouseUp (frame, button)
 end
 
 function MOD:CreateColorSwatches()
-
 	local fh = CreateFrame("Frame", "ColorPPSwatches", ColorPickerFrame)
 	fh:SetSize(colorSwatchWidth, colorSwatchHeight)
 	MOD:CreateCheckerboardBG (fh, true, colorSwatchWidth, colorSwatchHeight)
-	fh:SetPoint("BOTTOM", ColorPPPalette, "BOTTOM", 0, 0)
+	fh:SetPoint("BOTTOM", ColorPPPaletteFrame, "BOTTOM", 0, 0)
 	fh:SetPoint("LEFT", ColorPPBoxR, "LEFT", -14, 0)
 
 	-- create frame for the old color that was passed in, to display color as its backdrop color
@@ -412,6 +416,88 @@ function MOD:CreateColorSwatches()
 	fr:SetBackdropBorderColor(0.3, 0.3, 0.3, 1)
 	fr:SetScript("OnMouseUp", ChosenColorOnMouseUp)
 	fr:Show()
+end
+
+function MOD:CreateCopyPasteArea()
+	
+	-- create frame for buttons and copiedColorSwatch
+	fr = CreateFrame("Frame", "ColorPPCopyPasteArea", ColorPPPaletteFrame)
+	fr:SetBackdrop(bgtable)
+	fr:SetSize(gradientWidth-10, gradientHeight-10)
+	fr:ClearAllPoints()
+	fr:SetPoint ("CENTER", ColorPPPaletteFrame, "CENTER", 0, 0) 
+	fr:SetBackdropColor(0.4,0.4,0.4,0)
+	fr:SetBackdropBorderColor(0.4, 0.4, 0.4, 0)
+	fr:Show()
+	
+	-- Create copiedColorSwatch
+	local f = CreateFrame("Frame", "ColorPPCopiedColor", fr)
+	local x = colorSwatchHeight*0.65
+	f:SetBackdrop(bgtable)
+	f:SetBackdropColor(0,0,0,0)
+	f:SetBackdropBorderColor(0.1, 0.1, 0.1, 1)
+	f:SetSize(x, x)
+	MOD:CreateCheckerboardBG(f, true, x, x)
+	f:ClearAllPoints()
+	f:SetPoint("LEFT", fr, "LEFT", 0, 0)
+	f:SetPoint("BOTTOM", fr, "BOTTOM", 0, 0)
+	
+	-- create label for buffer swatch
+--	local t = fr:CreateFontString(fr)
+--	t:SetFontObject("GameFontNormal")
+--	t:SetText("Buffer")
+--	t:SetTextColor(0.5,0.5,0.5,1)
+--	t:SetPoint("BOTTOM", ColorPPCopiedColor, "TOP", 0, 5)
+--	t:Show()
+
+	
+	-- add copy button
+	local b = CreateFrame("Button", "ColorPPCopy", fr, "UIPanelButtonTemplate")
+	b:SetText("<-- Copy")
+	b:SetWidth("80")
+	b:SetHeight("22")
+	b:SetScale(0.80)
+	b:SetPoint("TOP", "ColorPPCopiedColor", "TOP", 0, -20)
+	b:SetPoint("RIGHT", "ColorPPCopyPasteArea", "RIGHT", 0, 0) 
+
+	-- copy color into buffer on button click
+	b:SetScript("OnClick", function(self) 
+	
+		-- copy current dialog colors into buffer
+		local r, g, b = ColorPickerFrame:GetColorRGB()
+		local a = MOD:GetAlpha()
+
+		ColorPPCopiedColor:SetBackdropColor(r,g,b,a)
+		ColorPPPaste:Enable()
+	end
+	)
+	
+		
+	-- add paste button to the ColorPickerFrame		
+	b = CreateFrame("Button", "ColorPPPaste", fr, "UIPanelButtonTemplate")
+	b:SetText("Paste -->")
+	b:SetWidth("80")
+	b:SetHeight("22")
+	b:SetScale(0.8)
+	b:SetPoint("TOPRIGHT", "ColorPPCopy", "BOTTOMRIGHT", 0, -10)
+	b:Disable()  -- enable when something has been copied
+	
+	-- paste color on button click, updating frame components
+	b:SetScript("OnClick", function(self)
+		local r, g, b, a = ColorPPCopiedColor:GetBackdropColor()
+
+		-- update color and opacity variables
+		ColorPickerFrame:SetColorRGB(r, g, b)
+		ColorPickerFrame.func()
+		MOD:UpdateHSVfromColorPickerRGB()
+		OpacitySliderFrame:SetValue(1-a)
+
+		MOD:UpdateColorGraphics()
+		MOD:UpdateColorTexts()
+		MOD:UpdateAlphaText()
+		
+	end)
+
 end
 
 local function PaletteSwatchOnMouseUp (frame, button)
@@ -450,12 +536,12 @@ function MOD:CreatePalette()
 	local swatchSize = 20
 
 	-- create frame for palette
-	fr = CreateFrame("Frame", "ColorPPPalette", ColorPickerFrame)
+	fr = CreateFrame("Frame", "ColorPPPalette", ColorPPPaletteFrame)
 	fr:SetBackdrop(bgtable)
 	fr:SetSize((cols*swatchSize)+((cols-1)*spacer)+(2*margin), (rows*swatchSize)+((rows-1)*spacer)+(2*margin))
 	fr:ClearAllPoints()
-	fr:SetPoint ("BOTTOM", ColorPPHueBar, "BOTTOM", 0, -margin)  
-	fr:SetPoint ("CENTER", ColorPPGradientTexture, "CENTER", 0, 0)  
+	fr:SetPoint ("CENTER", ColorPPPaletteFrame, "CENTER", 0, 0)  
+	fr:SetPoint ("BOTTOM", ColorPPPaletteFrame, "BOTTOM", 0, 0)
 	fr:SetBackdropColor(0.4,0.4,0.4,0)
 	fr:SetBackdropBorderColor(0.4, 0.4, 0.4, 0)
 	fr:Show()
@@ -508,12 +594,11 @@ function MOD:CreateClassPalette()
 	local swatchSize = 20
 
 	-- create frame for palette
-	fr = CreateFrame("Frame", "ColorPPClassPalette", ColorPickerFrame)
+	fr = CreateFrame("Frame", "ColorPPClassPalette", ColorPPPaletteFrame)
 	fr:SetBackdrop(bgtable)
 	fr:SetSize((cols*swatchSize)+((cols-1)*spacer)+(2*margin), (rows*swatchSize)+((rows-1)*spacer)+(2*margin))
 	fr:ClearAllPoints()
-	--fr:SetPoint ("BOTTOM", ColorPPHueBar, "BOTTOM", 0, -margin)  
-	fr:SetPoint ("CENTER", ColorPPPalette, "CENTER", 0, 0)  
+	fr:SetPoint ("CENTER", ColorPPPaletteFrame, "CENTER", 0, -5)  
 	fr:SetBackdropColor(0.4,0.4,0.4,0)
 	fr:SetBackdropBorderColor(0.4, 0.4, 0.4, 0)
 	fr:Show()
@@ -714,7 +799,6 @@ local function HueBarOnUpdate(self)  -- it's actually the holder that receives t
 end
 
 function MOD:CreateHueBar()
-
 
 	local fh = CreateFrame("Frame", "ColorPPHueBarHolder", ColorPickerFrame)
 	fh:SetSize(hueBarWidth+6, hueBarHeight+8)
@@ -917,9 +1001,15 @@ end
 local function ColorPPTooltipShow(self)
 	GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
 	GameTooltip:AddDoubleLine("Color Picker Plus")
-	GameTooltip:AddLine("Left click on palette to use palette color")
-	if ColorPPPalette:IsVisible() then
-		GameTooltip:AddLine("Shift left click on palette to save color to palette")
+	GameTooltip:AddDoubleLine("Press @ button to cycle between palettes")
+	GameTooltip:AddLine(" ")
+	if ColorPPCopyPasteArea:IsVisible() then
+		GameTooltip:AddLine("Copy into or paste from buffer")
+	else 
+		GameTooltip:AddLine("Left click on palette to use palette color")
+		if ColorPPPalette:IsVisible() then
+			GameTooltip:AddLine("Shift left click on palette to save color to palette")
+		end
 	end
 	--GameToolTip:AddLine("Left click on old color to reset current color")
 	GameTooltip:Show()
@@ -946,14 +1036,28 @@ function MOD:CreateHelpFrame()
 	fr:Show()
 end
 
+function MOD:CreatePaletteFrame()  -- sits below the color gradient box, holds various palettes
+	local fr = CreateFrame("Frame", "ColorPPPaletteFrame", ColorPickerFrame)
+	fr:SetSize(gradientWidth-10, gradientHeight -10) 
+	fr:SetPoint("CENTER", ColorPPGradient, "CENTER", 0, 0)
+	fr:SetPoint("BOTTOM", ColorPPHueBar, "BOTTOM", 0, 0)
+end
 
 local function ColorPPSwitchPalettes(self)
-	if ColorPPPalette:IsVisible() then	
+	-- 0 - full palette, 1 - class color palette, 2 - copy/paste area
+	if DB.paletteState == 0 then	
 		ColorPPPalette:Hide()
 		ColorPPClassPalette:Show()
-	else
+		DB.paletteState = 1
+	elseif DB.paletteState == 1 then
 		ColorPPClassPalette:Hide()
+		ColorPPCopyPasteArea:Show()
+		-- show copy/paste stuff here
+		DB.paletteState = 2
+	else  -- DB.paletteState == 2
+		ColorPPCopyPasteArea:Hide()
 		ColorPPPalette:Show()
+		DB.paletteState = 0
 	end	
 end
 
@@ -976,9 +1080,21 @@ function MOD:Initialize_UI()
 	MOD:CleanUpColorPickerFrame()
 	MOD:CreateHueBar()
 	MOD:CreateColorGradient()
+	MOD:CreatePaletteFrame()
 	MOD:CreatePalette()
 	MOD:CreateClassPalette()
-	ColorPPClassPalette:Hide()
+	MOD:CreateCopyPasteArea()
+	if DB.paletteState == 0 then 
+	   ColorPPClassPalette:Hide()
+	   ColorPPCopyPasteArea:Hide()
+	elseif DB.paletteState == 1 then
+	   ColorPPPalette:Hide()
+	   ColorPPCopyPasteArea:Hide()
+	else  -- DB.paletteState == 2
+		ColorPPPalette:Hide()
+		ColorPPClassPalette:Hide()
+	end 
+	-- print ("on initialization, ps= ", DB.paletteState)
 	MOD:CreateOpacityBar()	
 	MOD:CreateTextBoxes()
 	MOD:CreateColorSwatches()
@@ -999,7 +1115,7 @@ function MOD:RGBTextChanged(tbox, userInput)
 	
 	local r, g, b = ColorPickerFrame:GetColorRGB() 
 	local sr, sg, sb = r, g, b -- save values for recovery after bad entry
-	
+
 	local id = tbox:GetID()
 	if id == 1 then
 		r = tbox:GetNumber()
@@ -1017,6 +1133,7 @@ function MOD:RGBTextChanged(tbox, userInput)
 		if b > 255 then tbox:SetText(string.format("%d", floor(sb*255))) return end
 		b = b/255
 	else return end
+
 
 	ColorPickerFrame:SetColorRGB(r, g, b) 
 	ColorPickerFrame.func()
@@ -1084,8 +1201,6 @@ function MOD:HSVTextChanged(tbox, userInput)
 	MOD:UpdateHexText()
 	
 end
-
-
 
 function MOD:UpdateColorTexts()   
 	MOD:UpdateRGBTexts()

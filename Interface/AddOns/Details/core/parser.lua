@@ -177,6 +177,7 @@
 		local _recording_buffs_and_debuffs = false
 	--> in combat flag
 		local _in_combat = false
+		local _current_encounter_id
 	--> deathlog
 		local _death_event_amt = 16
 	--> hooks
@@ -190,7 +191,11 @@
 		local _hook_battleress_container = _detalhes.hooks ["HOOK_BATTLERESS"]
 		local _hook_interrupt_container = _detalhes.hooks ["HOOK_INTERRUPT"]
 
-		
+	--> kil jaeden encounter:
+	--> REMOVE THIS ON 7.3 RELEASE
+	local _encounter_kiljaeden_eruptingreflection_loc = "Erupting Reflection"
+	local _encounter_kiljaeden_wailingreflection_loc = "Wailing Reflection"
+	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> internal functions
 
@@ -275,6 +280,37 @@
 		--if (alvo_serial:match ("^Creature%-0%-%d+%-%d+%-%d+%-76933%-%w+$")) then
 		if (alvo_serial:match ("^Creature%-0%-%d+%-%d+%-%d+%-103679%-%w+$")) then
 			return
+		end
+		
+		--Erupting Reflection on kiljaeden encounter on ToS
+		--REMOVE THIS ON 7.3 RELEASE
+		if (_current_encounter_id == 2051) then --2051 = kiljaeden
+		
+			--tank add
+			if (alvo_serial:match ("^Creature%-0%-%d+%-%d+%-%d+%-119107%-%w+$")) then
+				if (_encounter_kiljaeden_wailingreflection_loc == "Wailing Reflection") then
+					_encounter_kiljaeden_wailingreflection_loc = GetSpellInfo (236378)
+				end
+				alvo_name = _encounter_kiljaeden_wailingreflection_loc
+			elseif (who_serial:match ("^Creature%-0%-%d+%-%d+%-%d+%-119107%-%w+$")) then
+				if (_encounter_kiljaeden_wailingreflection_loc == "Wailing Reflection") then
+					_encounter_kiljaeden_wailingreflection_loc = GetSpellInfo (236378)
+				end
+				who_name = _encounter_kiljaeden_wailingreflection_loc
+			end
+		
+			--dps add
+			if (alvo_serial:match ("^Creature%-0%-%d+%-%d+%-%d+%-119206%-%w+$")) then
+				if (_encounter_kiljaeden_eruptingreflection_loc == "Erupting Reflection") then
+					_encounter_kiljaeden_eruptingreflection_loc = GetSpellInfo (236710)
+				end
+				alvo_name = _encounter_kiljaeden_eruptingreflection_loc
+			elseif (who_serial:match ("^Creature%-0%-%d+%-%d+%-%d+%-119206%-%w+$")) then
+				if (_encounter_kiljaeden_eruptingreflection_loc == "Erupting Reflection") then
+					_encounter_kiljaeden_eruptingreflection_loc = GetSpellInfo (236710)
+				end
+				who_name = _encounter_kiljaeden_eruptingreflection_loc
+			end
 		end
 		
 		--> Second try with :find
@@ -1747,7 +1783,7 @@ ameHealer: Bombad�o |flagsHealer: 1297 |flagsHealer2: 0 |spellidHeal: 116888 |
 							ThisDebuff = {}
 							SoloDebuffPower [spellid] = ThisDebuff
 						end
-					
+						
 						local ThisDebuffOnTarget = ThisDebuff [alvo_serial]
 						
 						local base, posBuff, negBuff = UnitAttackPower ("player")
@@ -1942,7 +1978,7 @@ ameHealer: Bombad�o |flagsHealer: 1297 |flagsHealer2: 0 |spellidHeal: 116888 |
 	--> recording debuffs applied by player
 
 		elseif (tipo == "DEBUFF") then
-		
+		--print ("debuff - ", token, spellname)
 			if (_in_combat) then
 			------------------------------------------------------------------------------------------------
 			--> buff uptime
@@ -1951,7 +1987,7 @@ ameHealer: Bombad�o |flagsHealer: 1297 |flagsHealer2: 0 |spellidHeal: 116888 |
 						--> call record debuffs uptime
 						parser:add_debuff_uptime (token, time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, "DEBUFF_UPTIME_REFRESH")
 					elseif (raid_members_cache [alvo_serial] and not raid_members_cache [who_serial]) then --> alvo � da raide e o caster � inimigo
-						parser:add_bad_debuff_uptime (token, time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, spellschool, "DEBUFF_UPTIME_REFRESH")
+						parser:add_bad_debuff_uptime (token, time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, spellschool, "DEBUFF_UPTIME_REFRESH", amount)
 					end
 				end
 		
@@ -2142,7 +2178,7 @@ ameHealer: Bombad�o |flagsHealer: 1297 |flagsHealer2: 0 |spellidHeal: 116888 |
 	--> MISC 	search key: ~buffuptime ~buffsuptime									|
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-	function parser:add_bad_debuff_uptime (token, time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, spellschool, in_out)
+	function parser:add_bad_debuff_uptime (token, time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, spellschool, in_out, stack_amount)
 		
 		if (not alvo_name) then
 			--> no target name, just quit
@@ -2196,6 +2232,43 @@ ameHealer: Bombad�o |flagsHealer: 1297 |flagsHealer2: 0 |spellidHeal: 116888 |
 				end
 				este_alvo.actived_at = _tempo
 				
+				--death log
+					--> record death log
+					local t = last_events_cache [alvo_name]
+					
+					if (not t) then
+						t = _current_combat:CreateLastEventsTable (alvo_name)
+					end
+					
+					local i = t.n
+					
+					local this_event = t [i]
+					
+					if (not this_event) then
+						return print ("Parser Event Error -> Set to 16 DeathLogs and /reload", i, _death_event_amt)
+					end
+					
+					--print ("DebuffIN", ">", "Added to the DeathLog")
+					
+					this_event [1] = 4 --> 4 = debuff aplication
+					this_event [2] = spellid --> spellid
+					this_event [3] = 1
+					this_event [4] = time --> parser time
+					this_event [5] = _UnitHealth (alvo_name) --> current unit heal
+					this_event [6] = who_name --> source name
+					this_event [7] = false
+					this_event [8] = false
+					this_event [9] = false
+					this_event [10] = false
+					
+					i = i + 1
+					
+					if (i == _death_event_amt+1) then
+						t.n = 1
+					else
+						t.n = i
+					end				
+				
 			elseif (in_out == "DEBUFF_UPTIME_REFRESH") then
 				if (este_alvo.actived_at and este_alvo.actived) then
 					este_alvo.uptime = este_alvo.uptime + _tempo - este_alvo.actived_at
@@ -2203,6 +2276,50 @@ ameHealer: Bombad�o |flagsHealer: 1297 |flagsHealer2: 0 |spellidHeal: 116888 |
 				end
 				este_alvo.actived_at = _tempo
 				este_alvo.actived = true
+				
+				--death log
+					
+					--local name, rank, texture, count, debuffType, duration, expirationTime, caster, canStealOrPurge, nameplateShowPersonal, spellId = UnitAura (alvo_name, spellname, nil, "HARMFUL")
+					--UnitAura ("Kastfall", "Gulp Frog Toxin", nil, "HARMFUL")
+					--print ("Hello World", spellname, name)
+					
+					--if (name) then
+						--> record death log
+						local t = last_events_cache [alvo_name]
+						
+						if (not t) then
+							t = _current_combat:CreateLastEventsTable (alvo_name)
+						end
+						
+						local i = t.n
+						
+						local this_event = t [i]
+						
+						if (not this_event) then
+							return print ("Parser Event Error -> Set to 16 DeathLogs and /reload", i, _death_event_amt)
+						end
+						
+						--print ("DebuffRefresh", ">", "Added to the DeathLog", stack_amount)
+						
+						this_event [1] = 4 --> 4 = debuff aplication
+						this_event [2] = spellid --> spellid
+						this_event [3] = stack_amount or 1
+						this_event [4] = time --> parser time
+						this_event [5] = _UnitHealth (alvo_name) --> current unit heal
+						this_event [6] = who_name --> source name
+						this_event [7] = false
+						this_event [8] = false
+						this_event [9] = false
+						this_event [10] = false
+						
+						i = i + 1
+						
+						if (i == _death_event_amt+1) then
+							t.n = 1
+						else
+							t.n = i
+						end
+					--end
 				
 			elseif (in_out == "DEBUFF_UPTIME_OUT") then
 				if (este_alvo.actived_at and este_alvo.actived) then
@@ -3550,6 +3667,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			token_list ["SPELL_AURA_APPLIED"] = parser.buff
 			token_list ["SPELL_AURA_REMOVED"] = parser.unbuff
 			token_list ["SPELL_AURA_REFRESH"] = parser.buff_refresh
+			token_list ["SPELL_AURA_APPLIED_DOSE"] = parser.buff_refresh
 			_recording_buffs_and_debuffs = false
 		
 		elseif (capture_type == "energy") then
@@ -3616,6 +3734,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			token_list ["SPELL_AURA_APPLIED"] = parser.buff
 			token_list ["SPELL_AURA_REMOVED"] = parser.unbuff
 			token_list ["SPELL_AURA_REFRESH"] = parser.buff_refresh
+			token_list ["SPELL_AURA_APPLIED_DOSE"] = parser.buff_refresh
 			_recording_buffs_and_debuffs = true
 
 		elseif (capture_type == "energy") then
@@ -3705,6 +3824,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		["SPELL_AURA_APPLIED"] = "buff",
 		["SPELL_AURA_REMOVED"] = "unbuff",
 		["SPELL_AURA_REFRESH"] = "buff_refresh",
+		["SPELL_AURA_APPLIED_DOSE"] = "buff_refresh",
 		["SPELL_ENERGIZE"] = "energize",
 		["SPELL_PERIODIC_ENERGIZE"] = "energize",
 	
@@ -3887,8 +4007,16 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			_detalhes:EnteredInArena()
 			
 		else
-			if ((zoneType == "raid" or zoneType == "party") and select (1, IsInInstance())) then
+			local inInstance = IsInInstance()
+			if ((zoneType == "raid" or zoneType == "party") and inInstance) then
 				_detalhes:CheckForAutoErase (zoneMapID)
+				
+				--> if the current raid is current tier raid, pre-load the storage database
+				if (zoneType == "raid") then
+					if (_detalhes.InstancesToStoreData [zoneMapID]) then
+						_detalhes.ScheduleLoadStorage()
+					end
+				end
 			end
 		
 			if (_detalhes:IsInInstance()) then
@@ -3932,12 +4060,14 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			return
 		end
 		
-		if (not _detalhes.WhoAggroTimer) then
+		if (not _detalhes.WhoAggroTimer and _detalhes.announce_firsthit.enabled) then
 			_detalhes.WhoAggroTimer = C_Timer.NewTimer (0.5, who_aggro)
 		end
 	
 		local encounterID, encounterName, difficultyID, raidSize = _select (1, ...)
 		--print ("START", encounterID, encounterName, difficultyID, raidSize)
+		
+		_current_encounter_id = encounterID
 	
 		if (_in_combat and not _detalhes.tabela_vigente.is_boss) then
 			_detalhes:SairDoCombate()
@@ -4002,6 +4132,8 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		if (_detalhes.debug) then
 			_detalhes:Msg ("(debug) |cFFFFFF00ENCOUNTER_END|r event triggered.")
 		end
+		
+		_current_encounter_id = nil
 		
 		if (_detalhes.zone_type == "party") then
 			if (_detalhes.debug) then
@@ -4077,7 +4209,8 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 	function _detalhes.parser_functions:PLAYER_REGEN_ENABLED (...)
 	
 		_detalhes.LatestCombatDone = GetTime()
---		print ("REGEN ENABLED", GetTime())
+		
+		_current_encounter_id = nil
 	
 		--> playing alone, just finish the combat right now
 		if (not _IsInGroup() and not IsInRaid()) then	
@@ -4090,6 +4223,11 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			if (_detalhes.SoloTables.Plugins [_detalhes.SoloTables.Mode].Stop) then
 				_detalhes.SoloTables.Plugins [_detalhes.SoloTables.Mode].Stop()
 			end
+		end
+		
+		if (_detalhes.schedule_storage_load) then
+			_detalhes.schedule_storage_load = nil
+			_detalhes.ScheduleLoadStorage()
 		end
 		
 		if (_detalhes.schedule_flag_boss_components) then

@@ -1,6 +1,7 @@
 MythicPlusTimerCMTimer = {}
 
 -- ---------------------------------------------------------------------------------------------------------------------
+local surrenderedSoul
 function MythicPlusTimerCMTimer:Init()
     if not MythicPlusTimerDB.pos then
         MythicPlusTimerDB.pos = {}
@@ -27,6 +28,7 @@ function MythicPlusTimerCMTimer:Init()
     MythicPlusTimerCMTimer.reset = false;
     MythicPlusTimerCMTimer.frames = {};
     MythicPlusTimerCMTimer.timerStarted = false;
+    MythicPlusTimerCMTimer.lastKill = {};
 
     
     MythicPlusTimerCMTimer.frame = CreateFrame("Frame", "CmTimer", UIParent);
@@ -43,7 +45,19 @@ function MythicPlusTimerCMTimer:Init()
 
     MythicPlusTimerCMTimer.eventFrame = CreateFrame("Frame")
     MythicPlusTimerCMTimer.eventFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+    MythicPlusTimerCMTimer.eventFrame:RegisterEvent("SCENARIO_CRITERIA_UPDATE")
     MythicPlusTimerCMTimer.eventFrame:SetScript("OnEvent", function(self, event, timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags)
+        if subEvent == "PARTY_KILL" then
+            MythicPlusTimerCMTimer:OnPartyKill(destGUID)
+            return
+        end
+        
+        if event == "SCENARIO_CRITERIA_UPDATE" then
+            MythicPlusTimerCMTimer:OnCriteriaUpdate()
+            return
+        end
+        
+        
         if subEvent ~= "UNIT_DIED" then 
             return 
         end
@@ -57,9 +71,176 @@ function MythicPlusTimerCMTimer:Init()
         if isFeign then
             return
         end
+
+        if not surrenderedSoul then
+            surrenderedSoul = GetSpellInfo(212570) 
+        end
+
+        if UnitDebuff(destName, surrenderedSoul) == surrenderedSoul then
+            return
+        end
         
         MythicPlusTimerCMTimer:OnPlayerDeath()
     end)
+
+    GameTooltip:HookScript("OnTooltipSetUnit", function(self)
+        MythicPlusTimerCMTimer:OnTooltipSetUnit(self)
+    end)
+end
+
+-- ---------------------------------------------------------------------------------------------------------------------
+function MythicPlusTimerCMTimer:OnTooltipSetUnit(el)
+    if not MythicPlusTimerDB.config.progressTooltip then
+        return
+    end
+    
+    local unit = select(2, el:GetUnit())
+    if not unit then
+        return
+    end
+
+    local _, _, difficulty, _, _, _, _, _ = GetInstanceInfo();
+    if difficulty ~= 8 or MythicPlusTimerCMTimer.started == false or MythicPlusTimerCMTimer.isCompleted then
+        return
+    end
+
+    if UnitCanAttack("player", unit) and not UnitIsDead(unit) then
+        local guid = UnitGUID(unit)
+        local npcID = MythicPlusTimerCMTimer:resolveNpcID(guid)
+        if not npcID then
+            return
+        end
+        
+        local value = MythicPlusTimerCMTimer:GetProgressValue(npcID)
+        if not value then
+            return
+        end
+
+        local _, _, steps = C_Scenario.GetStepInfo();
+        if not steps or steps <= 0 then
+            return
+        end
+            
+        local _, _, _, _, finalValue = C_Scenario.GetCriteriaInfo(steps);
+        local quantityPercent = (value / finalValue) * 100
+
+        local mult = 10^2
+        quantityPercent = math.floor(quantityPercent * mult + 0.5) / mult
+        if(quantityPercent > 100) then
+            quantityPercent = 100
+        end
+    
+        local name = C_Scenario.GetCriteriaInfo(steps)
+    
+        GameTooltip:AddDoubleLine(name..": +"..quantityPercent.."%")
+        GameTooltip:Show()
+    end
+end
+
+-- ---------------------------------------------------------------------------------------------------------------------
+function MythicPlusTimerCMTimer:OnPartyKill(destGUID)
+    local _, _, difficulty, _, _, _, _, _ = GetInstanceInfo();
+    if difficulty ~= 8 or MythicPlusTimerCMTimer.started == false or MythicPlusTimerCMTimer.isCompleted then
+        return
+    end
+    
+    if not MythicPlusTimerCMTimer.lastKill then
+        MythicPlusTimerCMTimer.lastKill = {}
+    end
+    
+    if not MythicPlusTimerCMTimer.lastKill[1] or MythicPlusTimerCMTimer.lastKill[1]  == nil then
+        MythicPlusTimerCMTimer.lastKill[1] = GetTime() * 1000
+    end
+
+    local npcID = MythicPlusTimerCMTimer:resolveNpcID(destGUID)
+    if npcID then
+        local valid = ((GetTime() * 1000) - MythicPlusTimerCMTimer.lastKill[1]) > 100
+        MythicPlusTimerCMTimer.lastKill = {GetTime() * 1000, npcID, valid} 
+    end
+end
+
+-- ---------------------------------------------------------------------------------------------------------------------
+function MythicPlusTimerCMTimer:OnCriteriaUpdate()
+    local _, _, difficulty, _, _, _, _, _ = GetInstanceInfo();
+    if difficulty ~= 8 or MythicPlusTimerCMTimer.started == false or MythicPlusTimerCMTimer.isCompleted then
+        return
+    end
+    
+    if not MythicPlusTimerDB.currentRun.currentQuantity then
+        MythicPlusTimerDB.currentRun.currentQuantity = 0
+    end
+
+    local _, _, steps = C_Scenario.GetStepInfo();
+    if not steps or steps <= 0 then
+        return
+    end
+    
+    local _, _, _, _, finalValue, _, _, quantity = C_Scenario.GetCriteriaInfo(steps);
+    if MythicPlusTimerDB.currentRun.currentQuantity >= finalValue then
+        return
+    end
+
+    local quantityNumber = string.sub(quantity, 1, string.len(quantity) - 1)
+    quantityNumber = tonumber(quantityNumber)
+
+    local delta = quantityNumber - MythicPlusTimerDB.currentRun.currentQuantity
+
+    if delta > 0 then
+        MythicPlusTimerDB.currentRun.currentQuantity = quantityNumber
+        if MythicPlusTimerDB.currentRun.currentQuantity >= finalValue then
+            return
+        end
+
+        local timestamp, npcID, valid  = unpack(MythicPlusTimerCMTimer.lastKill)
+        if timestamp and npcID and delta and valid then
+            if (GetTime() * 1000) - timestamp <= 600 then
+                MythicPlusTimerCMTimer:UpdateProgressValue(npcID, delta);
+            end
+        end
+    end
+end
+
+-- ---------------------------------------------------------------------------------------------------------------------
+function MythicPlusTimerCMTimer:UpdateProgressValue(npcID, value)
+    if not MythicPlusTimerDB.npcProgress then
+        MythicPlusTimerDB.npcProgress = {}
+    end
+    
+    if not MythicPlusTimerDB.npcProgress[npcID] then
+        MythicPlusTimerDB.npcProgress[npcID] = {}
+    end
+
+    if MythicPlusTimerDB.npcProgress[npcID][value] == nil then
+        MythicPlusTimerDB.npcProgress[npcID][value] = 1
+    else
+        MythicPlusTimerDB.npcProgress[npcID][value] = MythicPlusTimerDB.npcProgress[npcID][value] + 1
+    end
+    
+    for val, occurrences in pairs(MythicPlusTimerDB.npcProgress[npcID]) do
+        if val ~= value then
+            MythicPlusTimerDB.npcProgress[npcID][val] = occurrences * 0.80
+        end
+    end
+end
+
+-- ---------------------------------------------------------------------------------------------------------------------
+function MythicPlusTimerCMTimer:GetProgressValue(npcID)
+    if not MythicPlusTimerDB.npcProgress then 
+        return
+    end
+
+    if not MythicPlusTimerDB.npcProgress[npcID] then
+        return
+    end
+    
+    local value, occurrences = nil, -1
+    for val, valOccurrences in pairs(MythicPlusTimerDB.npcProgress[npcID]) do
+        if valOccurrences > occurrences then
+            value, occurrences = val, valOccurrences
+        end
+    end
+    
+    return value
 end
 
 -- ---------------------------------------------------------------------------------------------------------------------
@@ -105,9 +286,20 @@ function MythicPlusTimerCMTimer:OnComplete()
     if not MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["_complete"] or MythicPlusTimerDB.currentRun.time < MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["_complete"] then
         MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["_complete"] = MythicPlusTimerDB.currentRun.time
     end
+
+    if not MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["l"..MythicPlusTimerDB.currentRun.cmLevel]["_complete"] or MythicPlusTimerDB.currentRun.time < MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["l"..MythicPlusTimerDB.currentRun.cmLevel]["_complete"] then
+        MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["l"..MythicPlusTimerDB.currentRun.cmLevel]["_complete"] = MythicPlusTimerDB.currentRun.time
+    end
     
     if MythicPlusTimerDB.config.objectiveTimeInChat then
-        MythicPlusTimer:Print(MythicPlusTimerDB.currentRun.zoneName.." +"..MythicPlusTimerDB.currentRun.cmLevel.." "..MythicPlusTimer.L["Completed"].."! "..MythicPlusTimer.L["Time"]..": "..MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.currentRun.time).." "..MythicPlusTimer.L["BestTime"]..": "..MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["_complete"]))
+        local text = MythicPlusTimerDB.currentRun.zoneName.." +"..MythicPlusTimerDB.currentRun.cmLevel.." "..MythicPlusTimer.L["Completed"].."! "..MythicPlusTimer.L["Time"]..": "..MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.currentRun.time).." "..MythicPlusTimer.L["BestTime"]..": "
+        if MythicPlusTimerDB.config.objectiveTimePerLevel then
+            text = text..MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["l"..MythicPlusTimerDB.currentRun.cmLevel]["_complete"])
+        else
+            text = text..MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[MythicPlusTimerDB.currentRun.currentZoneID]["_complete"])
+        end
+        
+        MythicPlusTimer:Print(text)
     end
     
     ObjectiveTrackerFrame:Show();
@@ -126,6 +318,7 @@ function MythicPlusTimerCMTimer:OnStart()
     MythicPlusTimerCMTimer.isCompleted = false;
     MythicPlusTimerCMTimer.started = true;
     MythicPlusTimerCMTimer.reset = false;
+    MythicPlusTimerCMTimer.lastKill = {};
     
     MythicPlusTimer:StartCMTimer()
 end
@@ -136,6 +329,7 @@ function MythicPlusTimerCMTimer:OnReset()
     ObjectiveTrackerFrame:Show();
     MythicPlusTimerCMTimer.isCompleted = false;
     MythicPlusTimerCMTimer.started = false;
+    MythicPlusTimerCMTimer.lastKill = {};
     MythicPlusTimerCMTimer.reset = true;
     MythicPlusTimerCMTimer:HideObjectivesFrames()
 
@@ -159,6 +353,15 @@ function MythicPlusTimerCMTimer:ReStart()
     
     if difficulty == 8 and timeCM > 0 then
         MythicPlusTimerCMTimer.started = true;
+        MythicPlusTimerCMTimer.lastKill = {};
+
+        local _, _, steps = C_Scenario.GetStepInfo();
+        local _, _, _, _, _, _, _, quantity = C_Scenario.GetCriteriaInfo(steps);
+        local quantityNumber = string.sub(quantity, 1, string.len(quantity) - 1)
+        quantityNumber = tonumber(quantityNumber)
+
+        MythicPlusTimerDB.currentRun.currentQuantity = quantityNumber
+    
         MythicPlusTimer:StartCMTimer()
         return
     end
@@ -168,11 +371,13 @@ function MythicPlusTimerCMTimer:ReStart()
     MythicPlusTimerCMTimer.reset = false
     MythicPlusTimerCMTimer.timerStarted = false
     MythicPlusTimerCMTimer.started = false
+    MythicPlusTimerCMTimer.lastKill = {};
     MythicPlusTimerCMTimer.isCompleted = false
     MythicPlusTimerDB.currentRun = {}
     return
 end
 
+-- ---------------------------------------------------------------------------------------------------------------------
 function MythicPlusTimerCMTimer:OnPlayerDeath()
     local _, _, difficulty, _, _, _, _, _ = GetInstanceInfo();
     local _, timeCM = GetWorldElapsedTime(1);
@@ -217,6 +422,7 @@ function MythicPlusTimerCMTimer:Draw()
         MythicPlusTimerCMTimer.reset = false
         MythicPlusTimerCMTimer.timerStarted = false
         MythicPlusTimerCMTimer.started = false
+        MythicPlusTimerCMTimer.lastKill = {};
         MythicPlusTimer:CancelCMTimer()
         MythicPlusTimerCMTimer.frame:Hide();
         ObjectiveTrackerFrame:Show();
@@ -230,12 +436,18 @@ function MythicPlusTimerCMTimer:Draw()
         return
     end
 
+    local cmLevel, affixes, empowered = C_ChallengeMode.GetActiveKeystoneInfo();
+
     if not MythicPlusTimerCMTimer.isCompleted then
         MythicPlusTimerCMTimer.frame:Show();
     end
    
     if not MythicPlusTimerDB.bestTimes[currentZoneID] then
         MythicPlusTimerDB.bestTimes[currentZoneID] = {}
+    end
+
+    if not MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel] then
+        MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel] = {}
     end
 
     if not MythicPlusTimerDB.currentRun.times  then
@@ -245,7 +457,7 @@ function MythicPlusTimerCMTimer:Draw()
     if MythicPlusTimerDB.currentRun.death == nil then
         MythicPlusTimerDB.currentRun.death = 0
     end
-    local cmLevel, affixes, empowered = C_ChallengeMode.GetActiveKeystoneInfo();
+
     local currentMapId = C_ChallengeMode.GetActiveChallengeMapID();
     local zoneName, _, maxTime = C_ChallengeMode.GetMapInfo(currentMapId);
     local bonus = C_ChallengeMode.GetPowerLevelDamageHealthMod(cmLevel);
@@ -471,9 +683,21 @@ function MythicPlusTimerCMTimer:Draw()
                 if not MythicPlusTimerDB.bestTimes[currentZoneID][i] or timeCM < MythicPlusTimerDB.bestTimes[currentZoneID][i] then
                     MythicPlusTimerDB.bestTimes[currentZoneID][i] = timeCM
                 end
+                
+                if not MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel][i] or timeCM < MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel][i] then
+                    MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel][i] = timeCM
+                end
 
                 if MythicPlusTimerDB.config.objectiveTimeInChat then
-                    MythicPlusTimer:Print(name.." "..MythicPlusTimer.L["Completed"]..". "..MythicPlusTimer.L["Time"]..": "..MythicPlusTimerCMTimer:FormatSeconds(timeCM).." "..MythicPlusTimer.L["BestTime"]..": "..MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[currentZoneID][i]))
+                    local text = name.." "..MythicPlusTimer.L["Completed"].." (+"..cmLevel.."). "..MythicPlusTimer.L["Time"]..": "..MythicPlusTimerCMTimer:FormatSeconds(timeCM).." "..MythicPlusTimer.L["BestTime"]..": "
+
+                    if MythicPlusTimerDB.config.objectiveTimePerLevel then
+                        text = text..MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel][i])
+                    else
+                        text = text..MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[currentZoneID][i])
+                    end
+                
+                    MythicPlusTimer:Print(text)
                 end
             end
         else
@@ -488,14 +712,26 @@ function MythicPlusTimerCMTimer:Draw()
         if MythicPlusTimerDB.currentRun.times[i] and MythicPlusTimerDB.config.objectiveTime then
             bestTimeStr = " - " .. MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.currentRun.times[i])
             
-            if MythicPlusTimerDB.bestTimes[currentZoneID][i] then
-                local diff =  MythicPlusTimerDB.currentRun.times[i] - MythicPlusTimerDB.bestTimes[currentZoneID][i];
-                local diffStr = ""
-                if diff > 0 then
-                    diffStr = ", +" ..MythicPlusTimerCMTimer:FormatSeconds(diff)
+            if MythicPlusTimerDB.config.objectiveTimePerLevel then
+                if MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel][i] then
+                    local diff =  MythicPlusTimerDB.currentRun.times[i] - MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel][i];
+                    local diffStr = ""
+                    if diff > 0 then
+                        diffStr = ", +" ..MythicPlusTimerCMTimer:FormatSeconds(diff)
+                    end
+
+                    bestTimeStr = bestTimeStr .. " (".. MythicPlusTimer.L["Best"] ..": " .. MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[currentZoneID]["l"..cmLevel][i]) .. diffStr .. ")"
                 end
-                
-                bestTimeStr = bestTimeStr .. " (".. MythicPlusTimer.L["Best"] ..": " .. MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[currentZoneID][i]) .. diffStr .. ")"
+            else    
+                if MythicPlusTimerDB.bestTimes[currentZoneID][i] then
+                    local diff =  MythicPlusTimerDB.currentRun.times[i] - MythicPlusTimerDB.bestTimes[currentZoneID][i];
+                    local diffStr = ""
+                    if diff > 0 then
+                        diffStr = ", +" ..MythicPlusTimerCMTimer:FormatSeconds(diff)
+                    end
+                    
+                    bestTimeStr = bestTimeStr .. " (".. MythicPlusTimer.L["Best"] ..": " .. MythicPlusTimerCMTimer:FormatSeconds(MythicPlusTimerDB.bestTimes[currentZoneID][i]) .. diffStr .. ")"
+                end
             end
         end
         
@@ -576,5 +812,13 @@ function MythicPlusTimerCMTimer:OnFrameMouseDown()
             channel = "INSTANCE_CHAT"
         end
         SendChatMessage(timeText, channel)
+    end
+end
+
+-- ---------------------------------------------------------------------------------------------------------------------
+function MythicPlusTimerCMTimer:resolveNpcID(guid)
+    local targetType, _,_,_,_, npcID = strsplit("-", guid)
+    if targetType == "Vehicle" or targetType == "Creature" and npcID then
+        return tonumber(npcID)
     end
 end

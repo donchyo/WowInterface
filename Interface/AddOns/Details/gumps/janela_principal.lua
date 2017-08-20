@@ -1816,7 +1816,14 @@ local unSnapButtonOnLeave = function (self)
 	end
 end
 
+--> this should run only when the mouse is over a instance bar
 local shift_monitor = function (self)
+
+	if (not self:IsMouseOver()) then
+		self:SetScript ("OnUpdate", shift_monitor)
+		return
+	end
+
 	if (_IsShiftKeyDown()) then
 		if (not self.showing_allspells) then
 			self.showing_allspells = true
@@ -2138,6 +2145,8 @@ local icon_frame_on_enter = function (self)
 			
 		
 		else
+			--> is a normal actor
+		
 			local serial = actor.serial
 			local name = actor:name()
 			local class = actor:class()
@@ -2171,7 +2180,7 @@ local icon_frame_on_enter = function (self)
 			else
 				GameCooltip:AddIcon ([[Interface\GossipFrame\IncompleteQuestIcon]], 1, 2, icon_size, icon_size)
 			end
-			_detalhes:AddTooltipHeaderStatusbar (r, g, b, 0.6)
+			_detalhes:AddTooltipHeaderStatusbar()
 			
 			local talent_string = ""
 			if (talents) then
@@ -2193,40 +2202,55 @@ local icon_frame_on_enter = function (self)
 				_detalhes:AddTooltipBackgroundStatusbar()
 				got_info = true
 			elseif (got_info) then
-				GameCooltip:AddLine (TALENTS .. ":", Loc ["STRING_QUERY_INSPECT_TALENTS"]) --> Loc from GlobalStrings.lua
+				GameCooltip:AddLine (TALENTS .. ":", Loc ["STRING_QUERY_INSPECT_REFRESH"]) --> Loc from GlobalStrings.lua
+				_detalhes:AddTooltipBackgroundStatusbar()
 			end
 			
 			GameCooltip:SetOption ("StatusBarTexture", [[Interface\AddOns\Details\images\bar_skyline]])
 			GameCooltip:SetOption ("MinButtonHeight", 15)
 			GameCooltip:SetOption ("IgnoreButtonAutoHeight", false)
 			
+			local height = 52
 			if (not got_info) then
-				--GameCooltip:AddLine (" ")
-				--GameCooltip:AddLine ("Click to retrive item level and talents.", nil, 1, "orange")
 				GameCooltip:AddLine (Loc ["STRING_QUERY_INSPECT"], nil, 1, "orange")
 				GameCooltip:AddIcon ([[Interface\TUTORIALFRAME\UI-TUTORIAL-FRAME]], 1, 1, 12, icon_size, 8/512, 70/512, 224/512, 306/512)
-				GameCooltip:SetOption ("FixedHeight", 42)
-			else
-				GameCooltip:SetOption ("FixedHeight", 52)
+				height = 42
+			end
+
+			local combat = instance:GetShowingCombat()
+			local diff = combat:GetDifficulty()
+			local attribute, subattribute = instance:GetDisplay()
+			
+			--> check if is a raid encounter and if is heroic or mythic
+			if (diff and (diff == 15 or diff == 16) and (attribute == 1 or attribute == 2)) then
+				local db = _detalhes.OpenStorage()
+				if (db) then
+					local bestRank, encounterTable = _detalhes.storage:GetBestFromPlayer (diff, combat:GetBossInfo().id, attribute == 1 and "damage" or "healing", name, true)
+					if (bestRank) then
+						--GameCooltip:AddLine ("")
+						
+						--> discover which are the player position in the guild rank
+						local playerTable, onEncounter, rankPosition = _detalhes.storage:GetPlayerGuildRank (diff, combat:GetBossInfo().id, attribute == 1 and "damage" or "healing", name, true)
+						
+						--" .. floor (bestRank[2] or 0) .. " ilvl" .. " | 
+						GameCooltip:AddLine ("Best Score:", _detalhes:ToK2 ((bestRank[1] or 0) / encounterTable.elapsed) .. " [|cFFFFFF00Rank: " .. rankPosition .. "|r]", 1, "white")
+						_detalhes:AddTooltipBackgroundStatusbar()
+						
+						GameCooltip:AddLine ("|TInterface\\TUTORIALFRAME\\UI-TUTORIAL-FRAME:14:12:0:1:512:512:8:70:224:306|t Open Rank", "|TInterface\\TUTORIALFRAME\\UI-TUTORIAL-FRAME:14:12:0:1:512:512:8:70:328:409|t Refresh Talents", 1, "white", "white")
+						_detalhes:AddTooltipBackgroundStatusbar()
+						
+						--GameCooltip:AddLine ("On: " .. (encounterTable.date:gsub (".*%s", "")), , 1, "orange")
+						--_detalhes:AddTooltipHeaderStatusbar()
+						if (not got_info) then
+							height = height + 25
+						else
+							height = height + 31
+						end
+					end
+				end
 			end
 			
-			--GameCooltip:AddLine ("Class:", LOCALIZED_CLASS_NAMES_MALE [class])
-			--_detalhes:AddTooltipBackgroundStatusbar()			
-			
-			local damage = instance.showing (1, name)
-			local healing = instance.showing (2, name)
-			--GameCooltip:AddLine ("Damage:", _detalhes:ToK2 (damage and damage.total or 0))
-			--_detalhes:AddTooltipBackgroundStatusbar()
-			--GameCooltip:AddLine ("Healing:", _detalhes:ToK2 (healing and healing.total or 0))
-			--_detalhes:AddTooltipBackgroundStatusbar()
-			
-			--
-			--GameCooltip:AddIcon ([[Interface\TUTORIALFRAME\UI-TUTORIAL-FRAME]], 1, 1, 12, icon_size, 8/512, 70/512, 224/512, 306/512)
-			--_detalhes:AddTooltipBackgroundStatusbar()
-			
-
-			--GameCooltip:SetOption ("FixedHeight", 114)
-			
+			GameCooltip:SetOption ("FixedHeight", height)
 			
 			GameCooltip:ShowCooltip()
 			
@@ -2338,10 +2362,32 @@ local icon_frame_on_click_down = function (self)
 	self:GetParent():GetParent().icone_classe:SetPoint ("left", self:GetParent():GetParent(), "left", 1, -1)
 end
 
-local icon_frame_on_click_up = function (self)
+local icon_frame_on_click_up = function (self, button)
 
 	self:GetParent():GetParent().icone_classe:SetPoint ("left", self:GetParent():GetParent(), "left")
 
+	if (button == "LeftButton") then
+		--> open the rank panel
+		local instance = _detalhes:GetInstance (self.row.instance_id)
+		if (instance) then
+			local attribute, subattribute = instance:GetDisplay()
+			local combat = instance:GetShowingCombat()
+			local diff = combat:GetDifficulty()
+			local bossInfo = combat:GetBossInfo()
+			
+			if (attribute == 1 or attribute == 2) then
+				local db = _detalhes.OpenStorage()
+				if (db) then
+					local haveData = _detalhes.storage:HaveDataForEncounter (diff, bossInfo.id, true)
+					if (haveData) then
+						_detalhes:OpenRaidHistoryWindow (bossInfo.zone, bossInfo.id, diff, attribute == 1 and "damage" or "healing", true, 1, false, 2)
+					end
+				end
+			end
+		end
+		return
+	end
+	
 	if (_detalhes.in_combat) then
 		_detalhes:Msg (Loc ["STRING_QUERY_INSPECT_FAIL1"])
 		return

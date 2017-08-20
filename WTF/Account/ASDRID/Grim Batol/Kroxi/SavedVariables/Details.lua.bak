@@ -1,28 +1,19 @@
 
 _detalhes_database = {
-	["announce_interrupts"] = {
-		["enabled"] = false,
-		["whisper"] = "",
-		["channel"] = "SAY",
-		["custom"] = "",
-		["next"] = "",
+	["savedbuffs"] = {
 	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
+	["last_instance_time"] = 1498335549,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 122,
+	["last_day"] = "11",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_version"] = "v7.2.5.4369",
 	["tabela_historico"] = {
 		["tabelas"] = {
 		},
 	},
-	["ignore_nicktag"] = false,
-	["last_encounter"] = "Trilliax",
-	["savedbuffs"] = {
-	},
-	["last_version"] = "v7.2.5.4236",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -220,32 +211,42 @@ _detalhes_database = {
 			["enabled"] = true,
 		},
 	},
-	["force_font_outline"] = "",
+	["announce_interrupts"] = {
+		["enabled"] = false,
+		["whisper"] = "",
+		["channel"] = "SAY",
+		["custom"] = "",
+		["next"] = "",
+	},
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
 	["SoloTablesSaved"] = {
 		["Mode"] = 3,
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_instance_time"] = 1498335549,
+	["last_realversion"] = 124,
+	["last_encounter"] = "Trilliax",
+	["ignore_nicktag"] = false,
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 2456,
 	["savedStyles"] = {
 	},
-	["combat_counter"] = 10836,
-	["character_data"] = {
-		["logons"] = 1525,
-	},
+	["combat_counter"] = 10846,
+	["force_font_outline"] = "",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
+	["character_data"] = {
+		["logons"] = 1529,
+	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1501369612,
+		["nextreset"] = 1503092942,
 		["last_version"] = 9,
 	},
 	["local_instances_config"] = {
@@ -302,10 +303,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -424.356981687056,
+					["y"] = -424.356989240157,
 					["x"] = 750.194559715756,
-					["w"] = 208.361206054688,
-					["h"] = 84.4102020263672,
+					["w"] = 208.361083984375,
+					["h"] = 84.4101943969727,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -349,7 +350,10 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["last_day"] = "20",
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

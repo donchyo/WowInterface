@@ -1,29 +1,18 @@
 
 _detalhes_database = {
-	["announce_interrupts"] = {
-		["enabled"] = false,
-		["whisper"] = "",
-		["channel"] = "SAY",
-		["custom"] = "",
-		["next"] = "",
+	["savedbuffs"] = {
 	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
+	["last_instance_time"] = 1497635359,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 122,
+	["last_encounter"] = "Grand Magistrix Elisande",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_version"] = "v7.2.5.4436",
 	["tabela_historico"] = {
 		["tabelas"] = {
 		},
-	},
-	["ignore_nicktag"] = false,
-	["savedbuffs"] = {
-	},
-	["combat_counter"] = 7937,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -791,39 +780,44 @@ _detalhes_database = {
 			["pre_pot_healers"] = false,
 		},
 	},
-	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 1386,
+	["announce_interrupts"] = {
+		["enabled"] = false,
+		["whisper"] = "",
+		["channel"] = "SAY",
+		["custom"] = "",
+		["next"] = "",
 	},
-	["announce_firsthit"] = {
+	["announce_prepots"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
+		["reverse"] = false,
 	},
-	["cached_talents"] = {
-		["Player-1303-0387FD7B"] = {
-			22442, -- [1]
-			21632, -- [2]
-			22473, -- [3]
-			22460, -- [4]
-			22447, -- [5]
-			22469, -- [6]
-			22446, -- [7]
-		},
+	["character_data"] = {
+		["logons"] = 1390,
 	},
+	["last_day"] = "18",
+	["combat_counter"] = 7947,
+	["ignore_nicktag"] = false,
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 2855,
 	["savedStyles"] = {
 	},
-	["last_encounter"] = "Grand Magistrix Elisande",
-	["last_version"] = "v7.2.5.4236",
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["last_realversion"] = 124,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_instance_time"] = 1497635359,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["force_font_outline"] = "",
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -878,10 +872,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -424.356981687056,
+					["y"] = -424.356989240157,
 					["x"] = 750.194559715756,
-					["w"] = 208.361206054688,
-					["h"] = 84.4102020263672,
+					["w"] = 208.361083984375,
+					["h"] = 84.4101943969727,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -925,7 +919,17 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["last_day"] = "14",
+	["cached_talents"] = {
+		["Player-1303-0387FD7B"] = {
+			22442, -- [1]
+			21632, -- [2]
+			22473, -- [3]
+			22460, -- [4]
+			22447, -- [5]
+			22469, -- [6]
+			22446, -- [7]
+		},
+	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -934,7 +938,7 @@ _detalhes_database = {
 		["channel"] = "RAID",
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1501353348,
+		["nextreset"] = 1503705053,
 		["last_version"] = 9,
 	},
 	["last_instance_id"] = 994,

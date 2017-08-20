@@ -1,1281 +1,1783 @@
 
 _detalhes_database = {
-	["announce_interrupts"] = {
-		["enabled"] = false,
-		["whisper"] = "",
-		["channel"] = "SAY",
-		["custom"] = "",
-		["next"] = "",
+	["savedbuffs"] = {
 	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
+	["last_instance_time"] = 1502557522,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 122,
+	["last_encounter"] = "Hans'gar & Franzok",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_version"] = "v7.2.5.4436",
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
+					["combatId"] = 399,
 					["tipo"] = 2,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.006878,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008721,
 							["damage_from"] = {
-								["Devoted Occultist"] = true,
+								["Jarl Velbrand"] = true,
+								["Runeseer Faljar"] = true,
+								["Sigryn"] = true,
 							},
 							["targets"] = {
-								["Fel Beast"] = 2963907,
-								["Devoted Occultist"] = 5773138,
+								["Sigryn"] = 28789157,
+								["Jarl Velbrand"] = 844416,
 							},
-							["delay"] = 0,
 							["pets"] = {
-								"Foulmush <Gravutdelare-Sylvanas>", -- [1]
+								"Spirit Wolf <Zuriz>", -- [1]
 							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "DEATHKNIGHT",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 8162536.006878,
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 55860,
-										["targets"] = {
-											["Devoted Occultist"] = 209332,
-											["Fel Beast"] = 35453,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 244785,
-										["n_min"] = 35453,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 244785,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 35453,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									}, -- [1]
-									[52212] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 186234,
-										["g_amt"] = 0,
-										["n_max"] = 31303,
-										["targets"] = {
-											["Fel Beast"] = 186711,
-											["Devoted Occultist"] = 248206,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 248683,
-										["n_min"] = 30986,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 434917,
-										["c_max"] = 62290,
-										["id"] = 52212,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 61972,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									[191685] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 245330,
-										["g_amt"] = 0,
-										["n_max"] = 147649,
-										["targets"] = {
-											["Fel Beast"] = 685393,
-											["Devoted Occultist"] = 760095,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1200158,
-										["n_min"] = 48967,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 1445488,
-										["c_max"] = 146898,
-										["id"] = 191685,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 98432,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									[191587] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 740362,
-										["g_amt"] = 0,
-										["n_max"] = 125928,
-										["targets"] = {
-											["Fel Beast"] = 1234564,
-											["Devoted Occultist"] = 2229314,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2723516,
-										["n_min"] = 122760,
-										["g_dmg"] = 0,
-										["counter"] = 25,
-										["total"] = 3463878,
-										["c_max"] = 248051,
-										["id"] = 191587,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 245521,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 22,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									[77575] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 41775,
-										["targets"] = {
-											["Devoted Occultist"] = 123637,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 123637,
-										["n_min"] = 40931,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 123637,
-										["c_max"] = 0,
-										["id"] = 77575,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									[207311] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 466473,
-										["g_amt"] = 0,
-										["n_max"] = 223209,
-										["targets"] = {
-											["Devoted Occultist"] = 466473,
-											["Fel Beast"] = 223209,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 223209,
-										["n_min"] = 223209,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 689682,
-										["c_max"] = 466473,
-										["id"] = 207311,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 466473,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									[85948] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 369722,
-										["targets"] = {
-											["Devoted Occultist"] = 369722,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 369722,
-										["n_min"] = 369722,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 369722,
-										["c_max"] = 0,
-										["id"] = 85948,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 313234,
-										["targets"] = {
-											["Devoted Occultist"] = 621722,
-											["Fel Beast"] = 311648,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 933370,
-										["n_min"] = 308488,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 933370,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									[49998] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 308976,
-										["g_amt"] = 0,
-										["n_max"] = 148081,
-										["targets"] = {
-											["Devoted Occultist"] = 457057,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 148081,
-										["n_min"] = 148081,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 457057,
-										["c_max"] = 308976,
-										["id"] = 49998,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 308976,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["total"] = 8737045.006878,
-							["damage_taken"] = 668700.006878,
-							["tipo"] = 1,
-							["nome"] = "Gravutdelare-Sylvanas",
-							["spec"] = 252,
-							["grupo"] = true,
-							["last_dps"] = 485283.548482426,
-							["end_time"] = 1500924114,
-							["colocacao"] = 1,
-							["last_event"] = 1500924112,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1500924096,
-							["serial"] = "Player-3687-05F18847",
-							["on_hold"] = false,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00208,
-							["damage_from"] = {
-								["Devoted Occultist"] = true,
-							},
-							["targets"] = {
-								["Devoted Occultist"] = 3199949,
-							},
-							["delay"] = 0,
-							["pets"] = {
-								"Stormcaller Mylra <Zuriz>", -- [1]
-							},
-							["custom"] = 0,
-							["total"] = 3199949.00208,
-							["classe"] = "SHAMAN",
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 3083838.00208,
+							["total_without_pet"] = 23961803.008721,
+							["end_time"] = 1503186107,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 29633573.008721,
+							["classe"] = "SHAMAN",
+							["on_hold"] = false,
+							["nome"] = "Zuriz",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									[51505] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 550446,
+									{
+										["c_amt"] = 13,
+										["b_amt"] = 2,
+										["c_dmg"] = 620465,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 34969,
 										["targets"] = {
-											["Devoted Occultist"] = 550446,
+											["Sigryn"] = 1148801,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 528336,
+										["n_min"] = 15818,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 550446,
-										["c_max"] = 550446,
-										["id"] = 51505,
+										["counter"] = 40,
+										["total"] = 1148801,
+										["c_max"] = 71213,
+										["MISS"] = 7,
+										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 550446,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[188443] = {
-										["c_amt"] = 2,
+										["b_dmg"] = 47803,
+										["n_amt"] = 20,
+										["r_amt"] = 0,
+										["c_min"] = 22965,
+									}, -- [1]
+									[195592] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 661220,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 129144,
+										["n_max"] = 152673,
 										["targets"] = {
-											["Devoted Occultist"] = 919508,
+											["Jarl Velbrand"] = 152673,
+											["Sigryn"] = 150020,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 258288,
-										["n_min"] = 129144,
+										["n_dmg"] = 302693,
+										["n_min"] = 150020,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 919508,
-										["c_max"] = 330610,
-										["id"] = 188443,
+										["counter"] = 2,
+										["total"] = 302693,
+										["c_max"] = 0,
+										["id"] = 195592,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 330610,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
-									[188389] = {
-										["c_amt"] = 2,
+									[32175] = {
+										["c_amt"] = 8,
 										["b_amt"] = 0,
-										["c_dmg"] = 154326,
+										["c_dmg"] = 4966009,
 										["g_amt"] = 0,
-										["n_max"] = 66311,
+										["n_max"] = 289853,
 										["targets"] = {
-											["Devoted Occultist"] = 371347,
+											["Sigryn"] = 5526878,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 217021,
-										["n_min"] = 30141,
+										["n_dmg"] = 560869,
+										["n_min"] = 271016,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 371347,
-										["c_max"] = 77164,
-										["id"] = 188389,
+										["counter"] = 10,
+										["total"] = 5526878,
+										["c_max"] = 769137,
+										["id"] = 32175,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 77162,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 237521,
+									},
+									[25504] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 594426,
+										["g_amt"] = 0,
+										["n_max"] = 135424,
+										["targets"] = {
+											["Sigryn"] = 1232352,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 637926,
+										["n_min"] = 40456,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 1232352,
+										["c_max"] = 249273,
+										["id"] = 25504,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 81112,
+									},
+									[199116] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 342567,
+										["g_amt"] = 0,
+										["n_max"] = 55975,
+										["targets"] = {
+											["Jarl Velbrand"] = 226139,
+											["Sigryn"] = 284353,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 167925,
+										["n_min"] = 55975,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 510492,
+										["c_max"] = 114189,
+										["id"] = 199116,
+										["r_dmg"] = 0,
 										["spellschool"] = 4,
-									},
-									[117014] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 433878,
-										["targets"] = {
-											["Devoted Occultist"] = 433878,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 433878,
-										["n_min"] = 433878,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 433878,
-										["c_max"] = 0,
-										["id"] = 117014,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 28,
-									},
-									[120588] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 346284,
-										["targets"] = {
-											["Devoted Occultist"] = 346284,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 346284,
-										["n_min"] = 346284,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 346284,
-										["c_max"] = 0,
-										["id"] = 120588,
-										["r_dmg"] = 0,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 28,
+										["c_min"] = 114189,
 									},
-									[77451] = {
+									[60103] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 462375,
+										["c_dmg"] = 1772656,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Devoted Occultist"] = 462375,
+											["Sigryn"] = 1772656,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 462375,
-										["c_max"] = 462375,
-										["id"] = 77451,
+										["total"] = 1772656,
+										["c_max"] = 1772656,
+										["id"] = 60103,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 462375,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 1772656,
+									},
+									[32176] = {
+										["c_amt"] = 6,
+										["b_amt"] = 2,
+										["c_dmg"] = 1937030,
+										["g_amt"] = 0,
+										["n_max"] = 144211,
+										["targets"] = {
+											["Sigryn"] = 2377040,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 440010,
+										["n_min"] = 38124,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 2377040,
+										["c_max"] = 391029,
+										["id"] = 32176,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 164283,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 265968,
+									},
+									[199054] = {
+										["c_amt"] = 10,
+										["b_amt"] = 0,
+										["c_dmg"] = 1511227,
+										["g_amt"] = 0,
+										["n_max"] = 74633,
+										["targets"] = {
+											["Sigryn"] = 1660492,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 149265,
+										["n_min"] = 74632,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 1660492,
+										["c_max"] = 152251,
+										["id"] = 199054,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 140972,
+									},
+									[210801] = {
+										["c_amt"] = 12,
+										["b_amt"] = 0,
+										["c_dmg"] = 360935,
+										["g_amt"] = 0,
+										["n_max"] = 14929,
+										["targets"] = {
+											["Sigryn"] = 626746,
+											["Jarl Velbrand"] = 121219,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 387030,
+										["n_min"] = 13822,
+										["g_dmg"] = 0,
+										["counter"] = 38,
+										["total"] = 747965,
+										["c_max"] = 30454,
+										["id"] = 210801,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 26,
+										["r_amt"] = 0,
+										["c_min"] = 28198,
+									},
+									[10444] = {
+										["c_amt"] = 32,
+										["b_amt"] = 0,
+										["c_dmg"] = 1215142,
+										["g_amt"] = 0,
+										["n_max"] = 18658,
+										["targets"] = {
+											["Sigryn"] = 1903344,
+											["Jarl Velbrand"] = 38061,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 726263,
+										["n_min"] = 17275,
+										["g_dmg"] = 0,
+										["counter"] = 71,
+										["total"] = 1941405,
+										["c_max"] = 38062,
+										["id"] = 10444,
+										["r_dmg"] = 0,
 										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 39,
+										["r_amt"] = 0,
+										["c_min"] = 35241,
+									},
+									[33750] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 65127,
+										["targets"] = {
+											["Sigryn"] = 128752,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 128752,
+										["n_min"] = 63625,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 128752,
+										["c_max"] = 0,
+										["id"] = 33750,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[51514] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Jarl Velbrand"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["IMMUNE"] = 1,
+										["id"] = 51514,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[187874] = {
+										["c_amt"] = 3,
+										["b_amt"] = 1,
+										["c_dmg"] = 1234992,
+										["g_amt"] = 0,
+										["n_max"] = 401102,
+										["targets"] = {
+											["Sigryn"] = 1888116,
+											["Jarl Velbrand"] = 169301,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 822425,
+										["n_min"] = 169301,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 2057417,
+										["c_max"] = 530017,
+										["id"] = 187874,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 169301,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 310883,
+									},
+									[195256] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 70493,
+										["targets"] = {
+											["Sigryn"] = 429907,
+											["Jarl Velbrand"] = 62390,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 492297,
+										["n_min"] = 407,
+										["g_dmg"] = 0,
+										["counter"] = 31,
+										["total"] = 492297,
+										["c_max"] = 0,
+										["id"] = 195256,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 31,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[199053] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 152250,
+										["g_amt"] = 0,
+										["n_max"] = 74633,
+										["targets"] = {
+											["Sigryn"] = 893045,
+											["Jarl Velbrand"] = 74633,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 815428,
+										["n_min"] = 69104,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 967678,
+										["c_max"] = 152250,
+										["id"] = 199053,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 152250,
+									},
+									[193786] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 887070,
+										["g_amt"] = 0,
+										["n_max"] = 434838,
+										["targets"] = {
+											["Sigryn"] = 2127156,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1240086,
+										["n_min"] = 402624,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 2127156,
+										["c_max"] = 887070,
+										["id"] = 193786,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 887070,
+									},
+									[193796] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 967729,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Sigryn"] = 967729,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 967729,
+										["c_max"] = 322577,
+										["id"] = 193796,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 322576,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["end_time"] = 1500924114,
-							["damage_taken"] = 278675.00208,
-							["tipo"] = 1,
-							["nome"] = "Zuriz",
-							["spec"] = 262,
 							["grupo"] = true,
-							["last_dps"] = 177735.447793816,
-							["friendlyfire_total"] = 0,
-							["colocacao"] = 2,
-							["last_event"] = 1500924110,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1500924097,
+							["spec"] = 263,
 							["serial"] = "Player-1303-0478DE10",
-							["on_hold"] = false,
-						}, -- [2]
+							["last_dps"] = 779830.868650553,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 6765112.008721,
+							["start_time"] = 1503186069,
+							["delay"] = 0,
+							["last_event"] = 1503186105,
+						}, -- [1]
 						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.001674,
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.004983,
 							["damage_from"] = {
-								["Devoted Occultist"] = true,
 							},
 							["targets"] = {
-								["Fel Beast"] = 286929,
-								["Devoted Occultist"] = 287580,
+								["Sigryn"] = 5671770,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 76968.001674,
+							["serial"] = "Creature-0-3769-1703-18631-100820-000018CC94",
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 5671770.004983,
+							["boss_fight_component"] = true,
+							["end_time"] = 1503186107,
+							["dps_started"] = false,
+							["total"] = 5671770.004983,
+							["on_hold"] = false,
+							["ownerName"] = "Zuriz",
+							["nome"] = "Spirit Wolf <Zuriz>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 14,
+										["b_amt"] = 0,
+										["c_dmg"] = 927654,
+										["g_amt"] = 0,
+										["n_max"] = 32922,
+										["targets"] = {
+											["Sigryn"] = 1576327,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 648673,
+										["n_min"] = 30482,
+										["g_dmg"] = 0,
+										["counter"] = 34,
+										["total"] = 1576327,
+										["c_max"] = 67160,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 20,
+										["r_amt"] = 0,
+										["c_min"] = 62184,
+									}, -- [1]
+									[224125] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 761238,
+										["g_amt"] = 0,
+										["n_max"] = 186578,
+										["targets"] = {
+											["Sigryn"] = 3204745,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2443507,
+										["n_min"] = 69104,
+										["g_dmg"] = 0,
+										["counter"] = 30,
+										["total"] = 3204745,
+										["c_max"] = 380619,
+										["id"] = 224125,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 28,
+										["r_amt"] = 0,
+										["c_min"] = 380619,
+									},
+									[198480] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 597705,
+										["g_amt"] = 0,
+										["n_max"] = 74631,
+										["targets"] = {
+											["Sigryn"] = 890698,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 292993,
+										["n_min"] = 69102,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 890698,
+										["c_max"] = 152246,
+										["id"] = 198480,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 140967,
+									},
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1503186090,
+							["damage_taken"] = 0.004983,
+							["start_time"] = 1503186087,
+							["delay"] = 1503186090,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.008937,
+							["monster"] = true,
+							["damage_from"] = {
+								["Zuriz"] = true,
+							},
+							["targets"] = {
+								["Zuriz"] = 4540476,
+							},
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 574509.001674,
+							["total_without_pet"] = 4540476.008937,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 4540476.008937,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-3769-1703-18631-116499-000018CC3E",
+							["nome"] = "Jarl Velbrand",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1100862,
+										["g_amt"] = 0,
+										["n_max"] = 617122,
+										["targets"] = {
+											["Zuriz"] = 2794011,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1693149,
+										["n_min"] = 473273,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 2794011,
+										["c_max"] = 553518,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 547344,
+									}, -- [1]
+									[237886] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 237886,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[237879] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 237879,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 5,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[237947] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 237947,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[237880] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 474658,
+										["targets"] = {
+											["Zuriz"] = 1746465,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1746465,
+										["n_min"] = 412412,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 1746465,
+										["c_max"] = 0,
+										["id"] = 237880,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 5,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 574509.001674,
+							["end_time"] = 1503186107,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 844416.008937,
+							["start_time"] = 1503186078,
 							["delay"] = 0,
-							["ownerName"] = "Gravutdelare-Sylvanas",
-							["nome"] = "Foulmush <Gravutdelare-Sylvanas>",
+							["last_event"] = 1503186106,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003736,
+							["damage_from"] = {
+								["Spirit Wolf <Zuriz>"] = true,
+								["Zuriz"] = true,
+							},
+							["targets"] = {
+								["Zuriz"] = 1366942,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1366942.003736,
+							["monster"] = true,
+							["boss_fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 1366942.003736,
+							["end_time"] = 1503186107,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Sigryn",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 19426,
+										["n_max"] = 100639,
 										["targets"] = {
-											["Fel Beast"] = 89853,
-											["Devoted Occultist"] = 76717,
+											["Zuriz"] = 1232798,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 166570,
-										["n_min"] = 17897,
+										["n_dmg"] = 1232798,
+										["n_min"] = 68809,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 166570,
+										["counter"] = 16,
+										["total"] = 1232798,
 										["c_max"] = 0,
+										["DODGE"] = 2,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 14,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									}, -- [1]
-									[212335] = {
-										["c_amt"] = 3,
+									[238694] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 243032,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 42171,
+										["n_max"] = 0,
 										["targets"] = {
-											["Fel Beast"] = 197076,
-											["Devoted Occultist"] = 210863,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 164907,
-										["n_min"] = 39253,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 407939,
-										["c_max"] = 85209,
-										["id"] = 212335,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 238694,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 78507,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
 										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[237849] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 68668,
+										["targets"] = {
+											["Zuriz"] = 134144,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 134144,
+										["n_min"] = 65476,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 134144,
+										["c_max"] = 0,
+										["id"] = 237849,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["end_time"] = 1500924114,
-							["last_event"] = 1500924112,
+							["on_hold"] = false,
+							["serial"] = "Creature-0-3769-1703-18631-116484-000018CC3E",
+							["friendlyfire"] = {
+							},
 							["last_dps"] = 0,
 							["custom"] = 0,
+							["last_event"] = 1503186106,
+							["damage_taken"] = 28789157.003736,
+							["start_time"] = 1503186069,
+							["delay"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1500924097,
-							["serial"] = "Pet-0-1463-1220-14346-106848-0101DA5E6E",
-							["classe"] = "PET",
-						}, -- [3]
+						}, -- [4]
 						{
-							["flag_original"] = 8465,
-							["totalabsorbed"] = 0.004693,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004901,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Devoted Occultist"] = 116111,
+								["Zuriz"] = 857694,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 0.004693,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 116111.004693,
-							["friendlyfire"] = {
-							},
+							["total_without_pet"] = 857694.004901,
+							["monster"] = true,
+							["boss_fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 116111.004693,
-							["delay"] = 1500924100,
-							["ownerName"] = "Zuriz",
-							["nome"] = "Stormcaller Mylra <Zuriz>",
+							["total"] = 857694.004901,
+							["end_time"] = 1503186107,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Runeseer Faljar",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									[227424] = {
-										["c_amt"] = 1,
+									[237890] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 54151,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 101288,
 										["targets"] = {
-											["Devoted Occultist"] = 54151,
+											["Zuriz"] = 857694,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 857694,
+										["n_min"] = 70547,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 54151,
-										["c_max"] = 54151,
-										["id"] = 227424,
+										["counter"] = 10,
+										["total"] = 857694,
+										["c_max"] = 0,
+										["id"] = 237890,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 54151,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
 										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									[227432] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 61960,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Devoted Occultist"] = 61960,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 61960,
-										["c_max"] = 61960,
-										["id"] = 227432,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 61960,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
+										["successful_casted"] = 10,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["end_time"] = 1500924114,
-							["last_event"] = 1500924100,
+							["on_hold"] = false,
+							["serial"] = "Creature-0-3769-1703-18631-116496-000018CC3E",
+							["friendlyfire"] = {
+							},
 							["last_dps"] = 0,
 							["custom"] = 0,
+							["last_event"] = 1503186105,
+							["damage_taken"] = 0.004901,
+							["start_time"] = 1503186071,
+							["delay"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1500924112,
-							["serial"] = "Creature-0-3773-1220-13223-109577-000076484F",
-							["classe"] = "PET",
-						}, -- [4]
+						}, -- [5]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 399,
 					["tipo"] = 3,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Gravutdelare-Sylvanas"] = true,
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 1454198.004645,
-							["total_without_pet"] = 767946.004645,
-							["total"] = 767946.004645,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.004937,
+							["total_without_pet"] = 1977159.004937,
+							["total"] = 1977159.004937,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 1,
 							["on_hold"] = false,
-							["serial"] = "Player-3687-05F18847",
-							["totalabsorb"] = 0.004645,
-							["last_hps"] = 42654.1882162278,
+							["serial"] = "Player-1303-0478DE10",
+							["totalabsorb"] = 0.004937,
+							["last_hps"] = 52030.5001299211,
 							["targets"] = {
-								["Gravutdelare-Sylvanas"] = 2222144,
+								["Zuriz"] = 1977159,
 							},
-							["totalover_without_pet"] = 0.004645,
-							["healing_taken"] = 767946.004645,
-							["fight_component"] = true,
-							["end_time"] = 1500924114,
-							["spec"] = 252,
-							["nome"] = "Gravutdelare-Sylvanas",
+							["totalover_without_pet"] = 0.004937,
+							["healing_taken"] = 1977159.004937,
+							["boss_fight_component"] = true,
+							["end_time"] = 1503186107,
+							["healing_from"] = {
+								["Zuriz"] = true,
+							},
+							["nome"] = "Zuriz",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
-									[53365] = {
-										["c_amt"] = 0,
+									[188070] = {
+										["c_amt"] = 1,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Gravutdelare-Sylvanas"] = 18292,
 										},
-										["n_max"] = 305110,
+										["n_max"] = 0,
 										["targets"] = {
-											["Gravutdelare-Sylvanas"] = 591928,
+											["Zuriz"] = 770009,
 										},
-										["n_min"] = 286818,
-										["counter"] = 2,
-										["overheal"] = 18292,
-										["total"] = 591928,
-										["c_max"] = 0,
-										["id"] = 53365,
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 770009,
+										["c_max"] = 770009,
+										["id"] = 188070,
 										["targets_absorbs"] = {
 										},
-										["c_curado"] = 0,
+										["c_curado"] = 770009,
 										["m_crit"] = 0,
-										["totaldenied"] = 0,
+										["c_min"] = 770009,
 										["m_amt"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 0,
+										["totaldenied"] = 0,
 										["m_healed"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 591928,
-										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
-									[45470] = {
-										["c_amt"] = 0,
+									[215871] = {
+										["c_amt"] = 8,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Gravutdelare-Sylvanas"] = 1435906,
 										},
-										["n_max"] = 101074,
+										["n_max"] = 52791,
 										["targets"] = {
-											["Gravutdelare-Sylvanas"] = 176018,
+											["Zuriz"] = 1207150,
 										},
-										["n_min"] = 74944,
-										["counter"] = 2,
-										["overheal"] = 1435906,
-										["total"] = 176018,
-										["c_max"] = 0,
-										["id"] = 45470,
+										["n_min"] = 52791,
+										["counter"] = 15,
+										["overheal"] = 0,
+										["total"] = 1207150,
+										["c_max"] = 107694,
+										["id"] = 215871,
 										["targets_absorbs"] = {
 										},
-										["c_curado"] = 0,
+										["c_curado"] = 837613,
 										["m_crit"] = 0,
-										["totaldenied"] = 0,
+										["c_min"] = 99715,
 										["m_amt"] = 0,
+										["n_curado"] = 369537,
+										["n_amt"] = 7,
+										["totaldenied"] = 0,
 										["m_healed"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 176018,
-										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
-								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_overheal"] = {
-								["Gravutdelare-Sylvanas"] = 1454198,
-							},
 							["heal_enemy_amt"] = 0,
+							["start_time"] = 1503186085,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["totaldenied"] = 0.004645,
-							["start_time"] = 1500924101,
+							["spec"] = 263,
+							["totaldenied"] = 0.004937,
 							["delay"] = 0,
-							["last_event"] = 1500924112,
+							["last_event"] = 1503186106,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 399,
 					["tipo"] = 7,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 399,
 					["tipo"] = 9,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[194310] = {
-										["uptime"] = 3,
+									[240842] = {
 										["activedamt"] = 0,
-										["id"] = 194310,
+										["id"] = 240842,
 										["targets"] = {
 										},
+										["uptime"] = 32,
+										["appliedamt"] = 3,
+										["refreshamt"] = 71,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[43265] = {
-										["uptime"] = 9,
-										["activedamt"] = 0,
-										["id"] = 43265,
+									[225080] = {
+										["activedamt"] = 1,
+										["id"] = 225080,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[196782] = {
-										["uptime"] = 11,
-										["activedamt"] = 0,
-										["id"] = 196782,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[191587] = {
-										["uptime"] = 16,
-										["activedamt"] = 0,
-										["id"] = 191587,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[191748] = {
-										["uptime"] = 2,
-										["activedamt"] = 0,
-										["id"] = 191748,
-										["targets"] = {
-										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["buff_uptime"] = 152,
-							["classe"] = "DEATHKNIGHT",
+							["buff_uptime"] = 409,
+							["classe"] = "SHAMAN",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[222204] = {
-										["uptime"] = 18,
+									[225787] = {
 										["activedamt"] = 1,
-										["id"] = 222204,
+										["id"] = 225787,
 										["targets"] = {
 										},
+										["uptime"] = 38,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[186401] = {
-										["uptime"] = 18,
+									[187878] = {
 										["activedamt"] = 1,
-										["id"] = 186401,
+										["id"] = 187878,
 										["targets"] = {
 										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[101568] = {
-										["uptime"] = 15,
-										["activedamt"] = 3,
-										["id"] = 101568,
+									[16739] = {
+										["activedamt"] = 1,
+										["id"] = 16739,
 										["targets"] = {
 										},
+										["uptime"] = 37,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[53365] = {
-										["uptime"] = 18,
+									[195222] = {
 										["activedamt"] = 2,
-										["id"] = 53365,
+										["id"] = 195222,
 										["targets"] = {
 										},
+										["uptime"] = 16,
+										["appliedamt"] = 2,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[242284] = {
+										["activedamt"] = 1,
+										["id"] = 242284,
+										["targets"] = {
+										},
+										["uptime"] = 30,
+										["appliedamt"] = 1,
+										["refreshamt"] = 5,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[229206] = {
+										["activedamt"] = 1,
+										["id"] = 229206,
+										["targets"] = {
+										},
+										["uptime"] = 37,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[204945] = {
+										["activedamt"] = 1,
+										["id"] = 204945,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[202004] = {
+										["activedamt"] = 3,
+										["id"] = 202004,
+										["targets"] = {
+										},
+										["uptime"] = 34,
+										["appliedamt"] = 3,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[32182] = {
+										["activedamt"] = 1,
+										["id"] = 32182,
+										["targets"] = {
+										},
+										["uptime"] = 37,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[194084] = {
+										["activedamt"] = 1,
+										["id"] = 194084,
+										["targets"] = {
+										},
+										["uptime"] = 32,
+										["appliedamt"] = 1,
+										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[227723] = {
-										["uptime"] = 18,
 										["activedamt"] = 1,
 										["id"] = 227723,
 										["targets"] = {
 										},
+										["uptime"] = 38,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[188290] = {
+									[201846] = {
+										["activedamt"] = 4,
+										["id"] = 201846,
+										["targets"] = {
+										},
 										["uptime"] = 4,
-										["activedamt"] = 1,
-										["id"] = 188290,
-										["targets"] = {
-										},
+										["appliedamt"] = 4,
+										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[17619] = {
-										["uptime"] = 18,
+									[210607] = {
 										["activedamt"] = 1,
-										["id"] = 17619,
+										["id"] = 210607,
 										["targets"] = {
 										},
+										["uptime"] = 21,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[243138] = {
-										["uptime"] = 18,
-										["activedamt"] = 1,
-										["id"] = 243138,
+									[199055] = {
+										["activedamt"] = 3,
+										["id"] = 199055,
 										["targets"] = {
 										},
+										["uptime"] = 21,
+										["appliedamt"] = 3,
+										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[214831] = {
+									[198293] = {
+										["activedamt"] = 2,
+										["id"] = 198293,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 2,
+										["refreshamt"] = 3,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[242286] = {
+										["activedamt"] = 4,
+										["id"] = 242286,
+										["targets"] = {
+										},
 										["uptime"] = 13,
-										["activedamt"] = 1,
-										["id"] = 214831,
-										["targets"] = {
-										},
+										["appliedamt"] = 4,
+										["refreshamt"] = 6,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[81340] = {
-										["uptime"] = 1,
-										["activedamt"] = 1,
-										["id"] = 81340,
+									[205648] = {
+										["activedamt"] = 6,
+										["id"] = 205648,
 										["targets"] = {
 										},
+										["uptime"] = 6,
+										["appliedamt"] = 6,
+										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[190909] = {
-										["uptime"] = 8,
-										["activedamt"] = 1,
-										["id"] = 190909,
+									[198300] = {
+										["activedamt"] = 4,
+										["id"] = 198300,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[51460] = {
-										["uptime"] = 3,
-										["activedamt"] = 1,
-										["id"] = 51460,
-										["targets"] = {
-										},
+										["uptime"] = 18,
+										["appliedamt"] = 4,
+										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 41,
+							["debuff_uptime"] = 33,
 							["buff_uptime_targets"] = {
 							},
-							["spec"] = 252,
+							["spec"] = 263,
 							["grupo"] = true,
 							["spell_cast"] = {
-								[77575] = 3,
-								[188290] = 1,
-								[43265] = 1,
-								[207311] = 1,
-								[85948] = 1,
-								[47541] = 3,
-								[49998] = 2,
+								[193796] = 3,
+								[51533] = 1,
+								[204945] = 1,
+								[17364] = 9,
+								[199116] = 3,
+								[51514] = 1,
+								[187874] = 5,
+								[193786] = 4,
+								[60103] = 1,
+								[215864] = 2,
+								[188070] = 1,
 							},
-							["last_event"] = 1500924114,
-							["tipo"] = 4,
-							["nome"] = "Gravutdelare-Sylvanas",
-							["pets"] = {
-							},
-							["serial"] = "Player-3687-05F18847",
+							["boss_fight_component"] = true,
 							["debuff_uptime_targets"] = {
 							},
+							["last_event"] = 1503186107,
+							["nome"] = "Zuriz",
+							["pets"] = {
+								"Spirit Wolf <Zuriz>", -- [1]
+							},
+							["serial"] = "Player-1303-0478DE10",
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
+							["debuff_uptime"] = 38,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[188389] = {
-										["uptime"] = 8,
-										["activedamt"] = 0,
-										["id"] = 188389,
+									[239056] = {
+										["activedamt"] = 1,
+										["id"] = 239056,
 										["targets"] = {
 										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[197209] = {
-										["uptime"] = 2,
-										["activedamt"] = 0,
-										["id"] = 197209,
-										["targets"] = {
-										},
+										["uptime"] = 38,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
+							["boss_fight_component"] = true,
+							["nome"] = "Sigryn",
+							["need_refresh"] = true,
 							["pets"] = {
-								"Stormcaller Mylra <Zuriz>", -- [1]
-							},
-							["classe"] = "SHAMAN",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[16246] = {
-										["uptime"] = 14,
-										["activedamt"] = 2,
-										["id"] = 16246,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[72286] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 72286,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[186401] = {
-										["uptime"] = 18,
-										["activedamt"] = 1,
-										["id"] = 186401,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 18,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[237825] = {
-										["uptime"] = 18,
-										["activedamt"] = 1,
-										["id"] = 237825,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[118522] = {
-										["uptime"] = 10,
-										["activedamt"] = 1,
-										["id"] = 118522,
-										["targets"] = {
-										},
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 10,
-							["nome"] = "Zuriz",
-							["spec"] = 262,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[188389] = 2,
-								[51505] = 1,
-								[117014] = 1,
-								[188443] = 2,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1500924114,
-							["buff_uptime_targets"] = {
+							["spell_cast"] = {
+								[238694] = 2,
+								[237849] = 2,
 							},
-							["buff_uptime"] = 78,
-							["serial"] = "Player-1303-0478DE10",
+							["last_event"] = 1503186069,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-3769-1703-18631-116484-000018CC3E",
+							["classe"] = "UNKNOW",
 						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Runeseer Faljar",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								[237890] = 10,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3769-1703-18631-116496-000018CC3E",
+							["classe"] = "UNKNOW",
+						}, -- [3]
 						{
 							["flag_original"] = 8465,
 							["ownerName"] = "Zuriz",
-							["nome"] = "Stormcaller Mylra <Zuriz>",
+							["nome"] = "Spirit Wolf <Zuriz>",
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								[227424] = 1,
-								[227432] = 1,
-							},
-							["serial"] = "Creature-0-3773-1220-13223-109577-000076484F",
 							["classe"] = "PET",
-						}, -- [3]
+							["boss_fight_component"] = true,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[198453] = 2,
+							},
+							["serial"] = "Creature-0-3769-1703-18631-100820-000018CC94",
+							["last_event"] = 0,
+						}, -- [4]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Jarl Velbrand",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								[237880] = 5,
+								[237879] = 5,
+								[237947] = 1,
+								[237886] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3769-1703-18631-116499-000018CC3E",
+							["classe"] = "UNKNOW",
+						}, -- [5]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 399,
 					["tipo"] = 2,
-					["combatId"] = 44,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Pijiu-Silvermoon"] = true,
-					["Gravutdelare-Sylvanas"] = true,
 					["Zuriz"] = true,
-					["Unknown"] = true,
-					["Renatè-Aman'thul"] = true,
 				},
 				["overall_added"] = true,
 				["last_events_tables"] = {
+					{
+						{
+							{
+								false, -- [1]
+								215871, -- [2]
+								107693, -- [3]
+								1503186101.669, -- [4]
+								2814834, -- [5]
+								"Zuriz", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								true, -- [1]
+								237890, -- [2]
+								92725, -- [3]
+								1503186101.901, -- [4]
+								2722109, -- [5]
+								"Runeseer Faljar", -- [6]
+								nil, -- [7]
+								32, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [2]
+							{
+								true, -- [1]
+								1, -- [2]
+								92270, -- [3]
+								1503186102.131, -- [4]
+								2722109, -- [5]
+								"Sigryn", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [3]
+							{
+								true, -- [1]
+								237849, -- [2]
+								65476, -- [3]
+								1503186103.176, -- [4]
+								2564363, -- [5]
+								"Sigryn", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [4]
+							{
+								true, -- [1]
+								1, -- [2]
+								87186, -- [3]
+								1503186105.048, -- [4]
+								2564363, -- [5]
+								"Sigryn", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [5]
+							{
+								false, -- [1]
+								215871, -- [2]
+								52791, -- [3]
+								1503186105.251, -- [4]
+								2529968, -- [5]
+								"Zuriz", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [6]
+							{
+								false, -- [1]
+								215871, -- [2]
+								107694, -- [3]
+								1503186105.33, -- [4]
+								2637662, -- [5]
+								"Zuriz", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [7]
+							{
+								true, -- [1]
+								237890, -- [2]
+								99523, -- [3]
+								1503186105.954, -- [4]
+								2538139, -- [5]
+								"Runeseer Faljar", -- [6]
+								nil, -- [7]
+								32, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [8]
+							{
+								true, -- [1]
+								1, -- [2]
+								617122, -- [3]
+								1503186105.954, -- [4]
+								2538139, -- [5]
+								"Jarl Velbrand", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [9]
+							{
+								true, -- [1]
+								1, -- [2]
+								553518, -- [3]
+								1503186105.954, -- [4]
+								2538139, -- [5]
+								"Jarl Velbrand", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [10]
+							{
+								false, -- [1]
+								215871, -- [2]
+								52791, -- [3]
+								1503186106.537, -- [4]
+								1420290, -- [5]
+								"Zuriz", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [11]
+							{
+								true, -- [1]
+								1, -- [2]
+								473273, -- [3]
+								1503186107.039, -- [4]
+								1420290, -- [5]
+								"Jarl Velbrand", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [12]
+							{
+								true, -- [1]
+								1, -- [2]
+								97048, -- [3]
+								1503186107.039, -- [4]
+								947017, -- [5]
+								"Sigryn", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [13]
+							{
+								false, -- [1]
+								215871, -- [2]
+								99716, -- [3]
+								1503186107.847, -- [4]
+								949685, -- [5]
+								"Zuriz", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [14]
+							{
+								true, -- [1]
+								1, -- [2]
+								602754, -- [3]
+								1503186107.847, -- [4]
+								949685, -- [5]
+								"Jarl Velbrand", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [15]
+							{
+								true, -- [1]
+								1, -- [2]
+								547344, -- [3]
+								1503186107.847, -- [4]
+								949685, -- [5]
+								"Jarl Velbrand", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [16]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Zuriz", -- [6]
+							}, -- [17]
+						}, -- [1]
+						1503186107.866, -- [2]
+						"Zuriz", -- [3]
+						"SHAMAN", -- [4]
+						4360680, -- [5]
+						"0m 37s", -- [6]
+						["dead_at"] = 37.5369999999966,
+						["dead"] = true,
+					}, -- [1]
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Devoted Occultist",
-				["combat_counter"] = 15025,
+				["enemy"] = "Fury of the God Queen",
+				["combat_counter"] = 15536,
 				["totals"] = {
-					11936993.916496, -- [1]
-					767946, -- [2]
+					36398685, -- [1]
+					1977159, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = -0.00432200000000016,
+						["cc_break"] = 0,
+						["dead"] = 1,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
-					["Gravutdelare-Sylvanas"] = {
-						{
-							true, -- [1]
-							37628, -- [2]
-							6318, -- [3]
-							1500924115.092, -- [4]
-							3626622, -- [5]
-							"Devoted Occultist", -- [6]
-							nil, -- [7]
-							4, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							37628, -- [2]
-							6318, -- [3]
-							1500924119.82, -- [4]
-							0, -- [5]
-							"Devoted Occultist", -- [6]
-							nil, -- [7]
-							4, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						["n"] = 3,
-					},
 				},
-				["frags_need_refresh"] = true,
+				["frags_need_refresh"] = false,
 				["__call"] = {
 				},
 				["PhaseData"] = {
@@ -1283,68 +1785,70 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Gravutdelare-Sylvanas"] = 8737045.006878,
-							["Zuriz"] = 3199949.00208,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Gravutdelare-Sylvanas"] = 767946.004645,
+							["Zuriz"] = 1977159.004937,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Zuriz"] = 29633573.008721,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 15435.009,
-				["TimeData"] = {
+				["end_time"] = 91920.002,
+				["combat_id"] = 399,
+				["instance_type"] = "scenario",
+				["is_boss"] = {
+					["diff_string"] = "Normal Scenario",
+					["index"] = 1,
+					["zone"] = "Halls of Valor - Scenario",
+					["encounter"] = "Fury of the God Queen",
+					["mapid"] = 1703,
+					["try_number"] = 1,
+					["name"] = "Fury of the God Queen",
+					["id"] = 2059,
+					["ej_instance_id"] = 0,
+					["diff"] = 12,
 				},
-				["instance_type"] = "none",
-				["combat_id"] = 44,
-				["hasSaved"] = true,
 				["frags"] = {
-					["Devoted Occultist"] = 6,
-					["Fel Beast"] = 1,
 				},
-				["data_fim"] = "21:21:55",
-				["data_inicio"] = "21:21:37",
+				["data_fim"] = "01:41:48",
+				["data_inicio"] = "01:41:10",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					11246374, -- [1]
-					767946, -- [2]
+					23961803, -- [1]
+					1977159, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
 					}, -- [4]
 				},
-				["start_time"] = 15417.005,
-				["contra"] = "Fel Beast",
-				["is_temporary"] = true,
+				["start_time"] = 91882.002,
+				["contra"] = "Sigryn",
+				["TimeData"] = {
+				},
 			}, -- [1]
 		},
 	},
-	["ignore_nicktag"] = false,
-	["last_version"] = "v7.2.5.4236",
-	["savedbuffs"] = {
-	},
-	["combat_counter"] = 15028,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -1352,10 +1856,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
+			["enabled"] = true,
 			["dps"] = 0,
 			["level"] = 1,
-			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -1364,11 +1868,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["hide_on_combat"] = false,
 			["opened"] = 0,
-			["author"] = "Details! Team",
+			["window_scale"] = 1,
 			["show_icon"] = 5,
 			["encounter_timers_dbm"] = {
 			},
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -1395,11 +1899,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["arrow_anchor_y"] = 0,
-			["main_frame_locked"] = false,
+			["scale"] = 1,
+			["row_height"] = 20,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["point"] = "TOP",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -1409,13 +1913,8 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
 			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -1425,22 +1924,27 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
+				["update_speed"] = 0.0160000007599592,
+				["attribute_type"] = 1,
 			},
-			["y"] = -41.5555419921875,
-			["point"] = "TOP",
-			["row_height"] = 20,
-			["scale"] = 1,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["rightclick_closed"] = false,
 			["auto_open"] = true,
+			["rightclick_closed"] = false,
 			["auto_close"] = true,
-			["hide_on_combat"] = true,
 			["author"] = "Details! Team",
+			["hide_on_combat"] = true,
 			["deaths_table"] = {
 				{
 					"Blast Furnace", -- [1]
@@ -2453,28 +2957,43 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
-			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
+			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
 		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["enabled"] = true,
+			["animate"] = false,
+			["useplayercolor"] = false,
+			["author"] = "Details! Team",
+			["useclasscolors"] = false,
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["showamount"] = false,
+		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -2484,51 +3003,45 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["showamount"] = false,
-			["animate"] = false,
-			["useplayercolor"] = false,
-			["useclasscolors"] = false,
-			["author"] = "Details! Team",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["enabled"] = true,
 		},
 	},
-	["character_data"] = {
-		["logons"] = 1871,
+	["announce_interrupts"] = {
+		["enabled"] = false,
+		["whisper"] = "",
+		["channel"] = "SAY",
+		["custom"] = "",
+		["next"] = "",
 	},
-	["force_font_outline"] = "",
-	["announce_firsthit"] = {
+	["announce_prepots"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
+		["reverse"] = false,
 	},
-	["last_instance_time"] = 1500834713,
+	["force_font_outline"] = "",
+	["last_day"] = "20",
+	["combat_counter"] = 15536,
+	["ignore_nicktag"] = false,
 	["tabela_instancias"] = {
 	},
-	["combat_id"] = 44,
+	["combat_id"] = 399,
 	["savedStyles"] = {
 	},
-	["last_encounter"] = "Kil'jaeden",
 	["cached_talents"] = {
 		["Player-1303-0478DE10"] = {
-			19264, -- [1]
-			22492, -- [2]
-			21675, -- [3]
+			21973, -- [1]
+			19272, -- [2]
+			22137, -- [3]
 			19275, -- [4]
-			19269, -- [5]
-			22322, -- [6]
-			21971, -- [7]
+			22636, -- [5]
+			22977, -- [6]
+			22353, -- [7]
 		},
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -2536,7 +3049,10 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["last_day"] = "27",
+	["character_data"] = {
+		["logons"] = 1938,
+	},
+	["last_realversion"] = 124,
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -2547,10 +3063,10 @@ _detalhes_database = {
 			["isLocked"] = true,
 			["sub_atributo_last"] = {
 				1, -- [1]
-				5, -- [2]
-				3, -- [3]
+				1, -- [2]
+				1, -- [3]
 				5, -- [4]
-				1, -- [5]
+				13, -- [5]
 			},
 			["snap"] = {
 			},
@@ -2582,7 +3098,7 @@ _detalhes_database = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				7, -- [4]
+				5, -- [4]
 				1, -- [5]
 			},
 			["snap"] = {
@@ -2638,13 +3154,14 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -2659,10 +3176,10 @@ _detalhes_database = {
 			false, -- [6]
 			3, -- [7]
 		},
-		["nextreset"] = 1501145395,
+		["nextreset"] = 1503769663,
 	},
-	["last_instance_id"] = 1676,
+	["last_instance_id"] = 1205,
 	["cached_specs"] = {
-		["Player-1303-0478DE10"] = 264,
+		["Player-1303-0478DE10"] = 263,
 	},
 }

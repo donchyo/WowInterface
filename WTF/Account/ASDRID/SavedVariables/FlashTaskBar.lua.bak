@@ -38,8 +38,8 @@ FlashTaskbarDB = {
 			["rare_scan"] = false,
 		},
 		["Skullflower"] = {
-			["disconnect_logout"] = true,
 			["end_taxi"] = true,
+			["disconnect_logout"] = true,
 		},
 	},
 }

@@ -9,10 +9,9 @@ SS_HealTexture = "Interface\\Addons\\SatchelScanner\\textures\\healer.tga";
 SS_DpsTexture = "Interface\\Addons\\SatchelScanner\\textures\\dps.tga";
 
 SS_InstanceNewsTable = {
-	SS_TheGatesofHell = "Release: June 27",
-	SS_WailingHalls = "Release: July 11",
-	SS_ChamberoftheAvatar = "Release: July 25",
-	SS_DeceiversFall = "Release: August 8",
+	SS_WailingHalls = "Release: July 12",
+	SS_ChamberoftheAvatar = "Release: July 26",
+	SS_DeceiversFall = "Release: August 9",
 };
 
 SS_optionsTable2 = {
@@ -27,7 +26,7 @@ SS_optionsTable2 = {
 		SS_aboutTextQ3 = { loc = "TOPLEFT", x = 10, y = -164, fontSize = 16, text = "|cFF0080FFQ: I'm having an odd issue that only seems to be occuring for me, solution?|r"},
 		SS_aboutTextA3	= { loc = "TOPLEFT", x = 10, y = -180, fontSize = 16, text = "A: Try using '/ss3 reset' to reset all options to default."},
 		SS_aboutTextQ4 = { loc = "TOPLEFT", x = 10, y = -204, fontSize = 16, text = "|cFF0080FFQ: Will you add the option to Auto-Queue when an Satchel is available?|r"},
-		SS_aboutTextA4 = { loc = "TOPLEFT", x = 10, y = -220, fontSize = 16, text = "A: No, this will never happen."},
+		SS_aboutTextA4 = { loc = "TOPLEFT", x = 10, y = -220, fontSize = 16, text = "A: No, this will never happen. However I plan on adding an 'Quick-Queue' that requires userinput."},
 		SS_Spacer0 = { loc = "TOP", x = 0, y = -80, width = "0" , height = "2", texture = SS_Spacer},
 		SS_Spacer1 = { loc = "TOP", x = 0, y = -120, width = "0" , height = "2", texture = SS_Spacer},
 		SS_Spacer2 = { loc = "TOP", x = 0, y = -160, width = "0" , height = "2", texture = SS_Spacer},
@@ -42,10 +41,13 @@ SS_optionsTable2 = {
 		SS_optionText1 = { loc = "TOPLEFT", x = 10, y = -50, fontSize = 16, text = "|cffff0000Scan Options|r"},
 		SS_optionText2 = { loc = "TOPLEFT", x = 30, y = -70, fontSize = 14, text = "Scan while in a Instance"},
 		SS_optionText3 = { loc = "TOPLEFT", x = 30, y = -90, fontSize = 14, text = "Scan while in a Group"},
-		--SS_optionText4 = { loc = "TOPLEFT", x = 250, y = -70, fontSize = 14, text = "Disable low ilvl"},
-		SS_optionText5 = { loc = "TOPLEFT", x = 10, y = -170, fontSize = 16, text = "|cffff0000Notification Options|r"},
-		SS_optionText6 = { loc = "TOPLEFT", x = 30, y = -190, fontSize = 14, text = "Play Soundwarning"},
-		SS_optionText7 = { loc = "TOPLEFT", x = 30, y = -210, fontSize = 14, text = "Show Raidwarning"},
+		SS_optionText4 = { loc = "TOPLEFT", x = 250, y = -70, fontSize = 14, text = "Disable gear check"},
+		SS_optionText5 = { loc = "TOPLEFT", x = 249, y = -90, fontSize = 14, text = "Disable class check"},
+		SS_optionText6 = { loc = "TOPLEFT", x = 250, y = -110, fontSize = 14, text = "LFR Complete once"},
+		SS_optionText7 = { loc = "TOPLEFT", x = 250, y = -130, fontSize = 14, text = "LFG Complete once"},
+		SS_optionText8 = { loc = "TOPLEFT", x = 10, y = -170, fontSize = 16, text = "|cffff0000Notification Options|r"},
+		SS_optionText9 = { loc = "TOPLEFT", x = 30, y = -190, fontSize = 14, text = "Play Soundwarning"},
+		SS_optionText10 = { loc = "TOPLEFT", x = 30, y = -210, fontSize = 14, text = "Show Raidwarning"},
 		-- SliderText
 		SS_sliderText1 = { loc = "TOPLEFT", x = 145, y = -132, fontSize = 16, text = ""},
 		SS_sliderText2 = { loc = "TOPLEFT", x = 10, y = -115, fontSize = 14, text = "Scan Interval in Seconds"},
@@ -55,11 +57,14 @@ SS_optionsTable2 = {
 		SS_ScannerIntervalSlider = { loc = "TOPLEFT", x = 10, y = -130, width = 130, height = 20, minMax = {3, 30}, valueStep = 1, func = "SS_Globals.SS_sliderText1:SetText(SS_Globals.SS_ScannerIntervalSlider:GetValue())"},
 		SS_NotificationIntervalSlider = { loc = "TOPLEFT", x = 10, y = -250, width = 130, height = 20, minMax = {3, 60}, valueStep = 1, func = "SS_Globals.SS_sliderText3:SetText(SS_Globals.SS_NotificationIntervalSlider:GetValue())"},
 		-- Boxes
-		SS_playSoundButton = { loc = "TOPLEFT", x = 8, y = -185},
-		SS_raidWarningButton = { loc = "TOPLEFT", x = 8, y = -205},
-		SS_scanInDungeonButton = { loc = "TOPLEFT", x = 8, y = -65},
-		SS_scanInGroupButton = { loc = "TOPLEFT", x = 8, y = -85},
-		--SS_ilvlOverrideButton = { loc = "TOPLEFT", x = 228, y = -65},
+		SS_playSoundButton = { loc = "TOPLEFT", x = 8, y = -185, tooltip = "Plays a sound if an Satchel is found"},
+		SS_raidWarningButton = { loc = "TOPLEFT", x = 8, y = -205, tooltip = "Shows a raidwarning if an Satchel is found"},
+		SS_scanInDungeonButton = { loc = "TOPLEFT", x = 8, y = -65, tooltip = "Scans while in an instance, this is not shown in the Blizzard UI (You must leave the instance to be able to enlist for the reward)"},
+		SS_scanInGroupButton = { loc = "TOPLEFT", x = 8, y = -85, tooltip = "Scans while in a group, this is not shown in the Blizzard UI (You must leave your group to be able to enlist for the reward)"},
+		SS_DisableGearButton = { loc = "TOPLEFT", x = 228, y = -65, tooltip = "Scan for Dungeons/LFR-Wings roles you cannot queue for (Not yet implented)"},
+		SS_DisableClassButton = { loc = "TOPLEFT", x = 228, y = -85, tooltip = "Scan for Dungeons/LFR-Wings you do not have the gear to queue for (Not yet implented)"},
+		SS_CompleteLFROnceButton = { loc = "TOPLEFT", x = 228, y = -105, tooltip = "Only scan for LFR wings you havent completed this week"},
+		SS_CompleteLFGOnceButton = { loc = "TOPLEFT", x = 228, y = -125, tooltip = "Only scan for LFGs you havent completed today (This include Timewalking)"},
 	};
 	[3] = { parent = "instances", pname = "Instances", frame = "SS_ScannerInstances",
 		SS_InstanceSpacer10 = { loc = "TOP", x = 0, y = -45, width = "0" , height = "2", texture = SS_Spacer},
@@ -119,7 +124,7 @@ function SS_RegisterBox(var, parent, loc, x, y, locked, tooltip)
 		SS_Globals.dungeonData[var]:SetMotionScriptsWhileDisabled(true);
 	end
 end
-function SS_RegisterFrame(frame, var, parent, width, height, loc, x, y, texture, template)
+function SS_RegisterFrame(frame, var, parent, width, height, loc, x, y, texture, template, tooltip)
 	SS_Globals[var] = CreateFrame(frame, nil, SS_Globals[parent], template);
 	SS_Globals[var]:SetPoint(loc, x, y);
 	if width then
@@ -136,71 +141,70 @@ function SS_RegisterFrame(frame, var, parent, width, height, loc, x, y, texture,
 		SS_Globals[var]:SetAlpha(0.5);
 	elseif string.find(var, "Button") then
 		SS_Globals[var]:SetHitRectInsets(0, 0, 0, 0);
+		SS_Globals[var].tooltip = tooltip;
 	end
 end
 
 function SS_interfaceConfig(update)
-	--if(string.find(arg, "refresh") then
-		SS_dungeonsbyID = {};
-		SS_sortedDungeonsID = {};
-		local myLevel = UnitLevel("player");
-		local found;
-		for i = 1, GetNumRandomDungeons() do
-			local dgInfo = { GetLFGRandomDungeonInfo(i) };
-			local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];		
-			local _, typeID, _, minLevel, maxLevel, _, _, _, expansionLevel, _, _, difficulty = GetLFGDungeonInfo(id);
-			local key = {id = id, name = name, mapName = "Random Dungeons", difficulty = difficulty}
-			if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel and (difficulty == 2 or difficulty == 24)) then
-				tinsert(SS_dungeonsbyID, key)
-			end
+	SS_dungeonsbyID = {};
+	SS_sortedDungeonsID = {};
+	local myLevel = UnitLevel("player");
+	local found;
+	for i = 1, GetNumRandomDungeons() do
+		local dgInfo = { GetLFGRandomDungeonInfo(i) };
+		local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];		
+		local _, _, _, minLevel, maxLevel, _, _, _, expansionLevel, _, _, difficulty, _,_, isHoliday, _, _, isTimewalk = GetLFGDungeonInfo(id);
+		local key = {id = id, name = name, mapName = "Random Dungeons", difficulty = difficulty, timewalking = isTimewalk}
+		if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel and (difficulty == 2 or isTimewalk)) then
+			tinsert(SS_dungeonsbyID, key)
 		end
-		for i=1, GetNumRFDungeons() do
-			local dgInfo = { GetRFDungeonInfo(i) };
-			local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];
-			local _, typeID, subtypeID, minLevel, maxLevel, _, _, _, expansionLevel, _, _, difficulty = GetLFGDungeonInfo(id);
-			local key = {id = id, name = name, mapName = mapName, difficulty=difficulty}
-			if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel) then
-				tinsert(SS_dungeonsbyID, key);
-			end
+	end
+	for i=1, GetNumRFDungeons() do
+		local dgInfo = { GetRFDungeonInfo(i) };
+		local id, name, mapName = dgInfo[1], dgInfo[2], dgInfo[20];
+		local _, typeID, subtypeID, minLevel, maxLevel, _, _, _, expansionLevel, _, _, difficulty = GetLFGDungeonInfo(id);
+		local key = {id = id, name = name, mapName = mapName, difficulty=difficulty}
+		if(myLevel >= minLevel and myLevel <= maxLevel and EXPANSION_LEVEL >= expansionLevel) then
+			tinsert(SS_dungeonsbyID, key);
 		end
-		while #SS_dungeonsbyID > #SS_sortedDungeonsID do
-			local tmp, key, j = 0;
-			for i = 1, #SS_dungeonsbyID do
-				if (SS_dungeonsbyID[i].id > tmp) then
-					local tooltip, reason, locked;
-					local isAvailable, x, y = IsLFGDungeonJoinable(SS_dungeonsbyID[i].id);
-					if not isAvailable then
-						tooltip = LFGConstructDeclinedMessage(SS_dungeonsbyID[i].id);
-						locked = true;
-						reason = "Locked by client."
-						if string.find(tooltip, "This instance is not available yet") then reason = "Unreleased" end;
-						if string.find(tooltip, "You need a higher average item level") then reason = "Low iLVL" end;
-					end
-					key = {id = SS_dungeonsbyID[i].id, name = SS_dungeonsbyID[i].name, mapName = SS_dungeonsbyID[i].mapName, difficulty = SS_dungeonsbyID[i].difficulty, locked = locked, tooltip = tooltip, reason = reason}
-					tmp = SS_dungeonsbyID[i].id;
-					j = i;
+	end
+	while #SS_dungeonsbyID > #SS_sortedDungeonsID do
+		local tmp, key, j = 0;
+		for i = 1, #SS_dungeonsbyID do
+			if (SS_dungeonsbyID[i].id > tmp) then
+				local tooltip, reason, locked;
+				local isAvailable, x, y = IsLFGDungeonJoinable(SS_dungeonsbyID[i].id);
+				if not isAvailable then
+					tooltip = LFGConstructDeclinedMessage(SS_dungeonsbyID[i].id);
+					locked = true;
+					reason = "Locked by client."
+					if string.find(tooltip, "This instance is not available yet") then reason = "Unreleased" end;
+					if string.find(tooltip, "You need a higher average item level") then reason = "Low iLVL" end;
 				end
-				if #SS_dungeonsbyID == i then
-					tinsert(SS_sortedDungeonsID, 1, key)
-					SS_dungeonsbyID[j].id = 0
-				end
+				key = {id = SS_dungeonsbyID[i].id, name = SS_dungeonsbyID[i].name, mapName = SS_dungeonsbyID[i].mapName, difficulty = SS_dungeonsbyID[i].difficulty, timewalking = SS_dungeonsbyID[i].timewalking, locked = locked, tooltip = tooltip, reason = reason}
+				tmp = SS_dungeonsbyID[i].id;
+				j = i;
+			end
+			if #SS_dungeonsbyID == i then
+				tinsert(SS_sortedDungeonsID, 1, key)
+				SS_dungeonsbyID[j].id = 0
 			end
 		end
-		for i=1, #SS_sortedDungeonsID do
-			if(SS_sortedDungeonsID[i].difficulty == 24) then
-				found = true;
-				SS_sortedDungeonsID[i].name = "Timewalking";
-			else
-				if #SS_sortedDungeonsID == i and not found then
-					local key = {id = 0, name = "Timewalking", mapName = "Random Dungeons", locked = true, tooltip = "Not available this reset.", reason = "Not active"}
-					tinsert(SS_sortedDungeonsID, 2, key)
-				end
-			end
-			if(SS_sortedDungeonsID[i].difficulty == 2) then
-				SS_sortedDungeonsID[i].name = "Legion Heroic";
+	end
+	for i=1, #SS_sortedDungeonsID do
+		if(SS_sortedDungeonsID[i].difficulty == 24 or SS_sortedDungeonsID[i].timewalking) then
+			found = true;
+			SS_sortedDungeonsID[i].name = "Timewalking";
+		else
+			if #SS_sortedDungeonsID == i and not found then
+				local key = {id = 0, name = "Timewalking", mapName = "Random Dungeons", locked = true, tooltip = "Not available this reset.", reason = "Not active"}
+				tinsert(SS_sortedDungeonsID, 2, key)
 			end
 		end
-	--end
+		if(SS_sortedDungeonsID[i].difficulty == 2 and not SS_sortedDungeonsID[i].timewalking) then
+			SS_sortedDungeonsID[i].name = "Legion Heroic";
+		end
+	end
 	for page, var in ipairs(SS_optionsTable2) do
 		if page == 1 then
 			SS_Globals[var.parent] = CreateFrame("Frame", var.frame, UIParent);
@@ -219,7 +223,7 @@ function SS_interfaceConfig(update)
 			elseif string.find(i, "Spacer") then
 				SS_RegisterFrame("Button", i, var.parent, nil, tVar.height, tVar.loc, tVar.x, tVar.y, tVar.texture)
 			elseif string.find(i, "Button") then	
-				SS_RegisterFrame("CheckButton", i, var.parent, nil, nil, tVar.loc, tVar.x, tVar.y, nil, "ChatConfigCheckButtonTemplate")
+				SS_RegisterFrame("CheckButton", i, var.parent, nil, nil, tVar.loc, tVar.x, tVar.y, nil, "ChatConfigCheckButtonTemplate", tVar.tooltip)
 			elseif string.find(i, "Slider") then
 				SS_RegisterSlider(i, var.parent, tVar.width, tVar.height, tVar.loc, tVar.x, tVar.y, tVar.minMax, tVar.valueStep, tVar.func)
 			elseif string.find(i, "Box") then	

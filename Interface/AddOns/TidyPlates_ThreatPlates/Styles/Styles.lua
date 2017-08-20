@@ -9,8 +9,11 @@ local InCombatLockdown = InCombatLockdown
 local UnitPlayerControlled = UnitPlayerControlled
 local UnitIsOtherPlayersPet = UnitIsOtherPlayersPet
 local UnitIsBattlePet = UnitIsBattlePet
+local IsInInstance = IsInInstance
 
+local TOTEMS = ThreatPlates.TOTEMS
 local GetUnitVisibility = ThreatPlates.GetUnitVisibility
+local FixUpdateUnitCondition = ThreatPlates.FixUpdateUnitCondition
 
 ---------------------------------------------------------------------------------------------------
 -- Helper functions for styles and functions
@@ -55,16 +58,19 @@ end
 
 local function ShowThreatFeedback(unit)
   local db = TidyPlatesThreat.db.profile.threat
-  local T = GetSimpleUnitType(unit)
 
   local show = false
-  if db.toggle[T] then
-    if db.nonCombat then
-      if OnThreatTable(unit) then
+
+  if not db.toggle.InstancesOnly or IsInInstance() then
+    local T = GetSimpleUnitType(unit)
+    if db.toggle[T] then
+      if db.nonCombat then
+        if OnThreatTable(unit) then
+          show = true
+        end
+      else
         show = true
       end
-    else
-      show = true
     end
   end
 
@@ -82,7 +88,7 @@ local function GetUnitType(unit)
   local unit_class
 
   local unit_id, unit_mini, unit_type = unit.unitid, unit.isMini, unit.type
-  local totem_id = TidyPlatesThreat.ThreatPlates_Totems[unit.name]
+  local totem_id = TOTEMS[unit.name]
 
   -- not all combinations are possible in the game: Friendly Minus, Neutral Player/Totem/Pet
   if unit_type == "PLAYER" then
@@ -200,12 +206,12 @@ local function GetUniqueNameplateSetting(unit)
 end
 
 local function SetStyle(unit)
-  if not unit.unitid then
-    -- sometimes unitid is nil, still don't know why, but it creates all kinds of LUA errors as other attributes are nil
-    -- also, e.g., unit.type, unit.name, ...
-    --ThreatPlates.DEBUG_PRINT_UNIT(unit)
-    return "empty"
-  end
+  -- sometimes unitid is nil, still don't know why, but it creates all kinds of LUA errors as other attributes are nil
+  -- also, e.g., unit.type, unit.name, ...
+  --ThreatPlates.DEBUG_PRINT_UNIT(unit)
+  if not unit.unitid then return "empty" end
+
+  FixUpdateUnitCondition(unit)
 
   local db = TidyPlatesThreat.db.profile
   local style = "empty"
@@ -224,7 +230,7 @@ local function SetStyle(unit)
       end
     elseif unit_type == "Totem" then
       local unit_name = unit.name
-      local tS = db.totemSettings[TidyPlatesThreat.ThreatPlates_Totems[unit_name]]
+      local tS = db.totemSettings[TOTEMS[unit_name]]
       if tS[1] then
         -- show healthbar, show headline or show nothing
         -- if db.totemSetting.ShowHeadlineView then
@@ -260,8 +266,8 @@ local function SetStyle(unit)
   return style, unique_setting
 end
 
-TidyPlatesThreat.OnThreatTable = OnThreatTable
-TidyPlatesThreat.ShowThreatFeedback = ShowThreatFeedback
-TidyPlatesThreat.GetThreatStyle = GetThreatStyle
-TidyPlatesThreat.GetUniqueNameplateSetting = GetUniqueNameplateSetting
+ThreatPlates.OnThreatTable = OnThreatTable
+ThreatPlates.ShowThreatFeedback = ShowThreatFeedback
+ThreatPlates.GetThreatStyle = GetThreatStyle
+ThreatPlates.GetUniqueNameplateSetting = GetUniqueNameplateSetting
 TidyPlatesThreat.SetStyle = SetStyle

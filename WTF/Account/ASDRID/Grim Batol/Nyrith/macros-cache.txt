@@ -26,7 +26,7 @@ VER 3 0100000000000003 "ib" "INV_MISC_QUESTIONMARK"
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]ironbark
 END
 VER 3 0100000000000015 "innnervate" "INV_MISC_QUESTIONMARK"
-/cast [@player] innervate
+/cast [@nyrith] innervate
 END
 VER 3 0100000000000013 "kick boss1" "INV_MISC_QUESTIONMARK"
 /cast [@boss1] skull bash

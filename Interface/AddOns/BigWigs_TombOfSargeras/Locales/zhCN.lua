@@ -7,14 +7,29 @@ end
 
 L = BigWigs:NewBossLocale("Demonic Inquisition", "zhCN")
 if L then
+	L.custom_on_fixate_plates = "敌对姓名板凝视图标"
+	L.custom_on_fixate_plates_desc = "当你被凝视时在目标姓名板上显示一个图标。\n需要使用敌对姓名板。此功能当前只支持 KuiNameplates。"
+
+	L.infobox_title_prisoners = "%d 囚徒"
+
 	L.custom_on_stop_timers = "总是显示技能条"
 	L.custom_on_stop_timers_desc = "恶魔审判庭一些技能会因为施放或被打断其它技能而延迟。当启用此选项，这些技能条将总是显示在屏幕上。"
+end
+
+L = BigWigs:NewBossLocale("Mistress Sassz'ine", "zhCN")
+if L then
+	L.inks_fed_count = "墨汁（%d/%d）"
+	L.inks_fed = "喂食墨汁：%s" -- %s = List of players
 end
 
 L = BigWigs:NewBossLocale("The Desolate Host", "zhCN")
 if L then
 	L.infobox_players = "玩家"
 	L.armor_remaining = "%s 剩余（%d）" -- Bonecage Armor Remaining (#)
+	L.custom_on_mythic_armor = "在史诗难度下忽略复活的圣殿骑士的骨牢护甲"
+	L.custom_on_mythic_armor_desc = "如果你不是负责复活的圣殿骑士的坦克，保持此选项启用来忽略提示和计数复活的圣殿骑士的骨牢护甲。"
+	L.custom_on_armor_plates = "敌对姓名板的骨牢护甲"
+	L.custom_on_armor_plates_desc = "当复活的圣殿骑士有骨牢护甲时在姓名板上显示图标。\n需要使用敌对姓名板。此功能当前只支持 KuiNameplates。"
 	L.tormentingCriesSay = "哀嚎" -- Tormenting Cries (short say)
 end
 
@@ -26,6 +41,11 @@ if L then
 	L.light = "光明"
 	L.felHammer = "邪能锤" -- Better name for "Hammer of Obliteration"
 	L.lightHammer = "圣光锤" -- Better name for "Hammer of Creation"
+	L.absorb = "吸收"
+	L.absorb_text = "%s （|cff%s%.0f%%|r）"
+	L.cast = "施放"
+	L.cast_text = "%.1f秒 (|cff%s%.0f%%|r)" -- s = seconds
+	L.stacks = "层数"
 end
 
 L = BigWigs:NewBossLocale("Fallen Avatar", "zhCN")
@@ -38,6 +58,13 @@ if L then
 	L.energy_leak = "能量泄漏"
 	L.energy_leak_desc = "当第一阶段首领能量泄漏时显示警报。"
 	L.energy_leak_msg = "能量泄漏！（%d）"
+
+	--L.warmup_trigger = "The husk before you" -- The husk before you was once a vessel for the might of Sargeras. But this temple itself is our prize. The means by which we will reduce your world to cinders!
+
+	L.absorb = "吸收"
+	L.absorb_text = "%s （|cff%s%.0f%%|r）"
+	L.cast = "施放"
+	L.cast_text = "%.1f秒 (|cff%s%.0f%%|r)" -- s = seconds
 end
 
 L = BigWigs:NewBossLocale("Kil'jaeden", "zhCN")
@@ -59,10 +86,15 @@ end
 
 L = BigWigs:NewBossLocale("Tomb of Sargeras Trash", "zhCN")
 if L then
+	L.rune = "兽人符文"
 	L.chaosbringer = "地狱火混沌使者"
 	L.rez = "守墓人瑞兹"
+	L.erduval = "艾杜瓦尔"
+	L.varah = "角鹰兽领主瓦拉"
 	L.seacaller = "潮鳞海歌者"
 	L.custodian = "海底监察者"
 	L.dresanoth = "德萨诺斯"
 	L.sentry = "守护者哨兵"
+	L.acolyte = "幽灵助祭"
+	L.ryul = "消逝者鲁尔"
 end

@@ -1,7 +1,7 @@
-changeset:   56:c01f5645c92f
-tag:         v1.16-release
+changeset:   60:6505a464efc7
+tag:         v1.18-release
 user:        Tercio
-date:        Fri Jul 14 17:45:16 2017 -0300
-summary:     - added an option to blink the taskbar when the target starts to lose health.
+date:        Mon Aug 14 10:25:37 2017 -0300
+summary:     - loc updates.
 
 

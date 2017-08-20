@@ -218,4 +218,5 @@ ColorPickerPlusDB = {
 			["r"] = 0.7,
 		}, -- [36]
 	},
+	["paletteState"] = 2,
 }

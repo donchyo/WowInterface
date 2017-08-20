@@ -1,5 +1,13 @@
 
 ElvCharacterDB = {
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+	["ChatLog"] = {
+	},
 	["ChatEditHistory"] = {
 		"/reload", -- [1]
 		"/ec", -- [2]
@@ -21,13 +29,5 @@ ElvCharacterDB = {
 		"/p cant you hear me?", -- [18]
 		"/p eh", -- [19]
 		"/p sec", -- [20]
-	},
-	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
-		["Active"] = false,
-	},
-	["ChatLog"] = {
 	},
 }

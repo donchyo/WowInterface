@@ -83,7 +83,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t1c3f1"] = {
-		["enabled"] = true,
+		["enabled"] = false,
 		["tanks"] = {
 			["min"] = "",
 			["max"] = "1",
@@ -165,11 +165,11 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t1c2f0"] = {
-		["enabled"] = false,
+		["enabled"] = true,
 		["tanks"] = {
 			["min"] = "0",
 			["max"] = "0",
-			["act"] = true,
+			["act"] = false,
 		},
 		["ilvl"] = {
 			["min"] = "",

@@ -5,9 +5,7 @@
 -- TODO List:
 -- - Shattering Scream: Find target before debuffs, without spamming? (current method allows for kicks before warnings)
 -- - Add wave timers (no spell info)
--- - Make sure phase check count works properly on pull XXX
 -- - Stop Bars when initial bosses die (Spear/Bind/Collapsing Fissure)
--- - Add warnings when standing in stuff (Collapsing Fissure, Tormented Cries)
 
 --------------------------------------------------------------------------------
 -- Module Declaration
@@ -31,6 +29,9 @@ local tormentedCriesCounter = 1
 local wailingSoulsCounter = 1
 local boneArmorCounter = 0
 local updateProximity = nil
+local updateRealms = nil
+local armorAppliedTimer, armorRemovedTimer = nil, nil
+local soulList = mod:NewTargetList()
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -40,6 +41,11 @@ local L = mod:GetLocale()
 if L then
 	L.infobox_players = "Players"
 	L.armor_remaining = "%s Remaining (%d)" -- Bonecage Armor Remaining (#)
+	L.custom_on_mythic_armor = "Ignore Bonecage Armor on Reanimated Templars in Mythic Difficulty"
+	L.custom_on_mythic_armor_desc = "Leave this option enabled if you are offtanking Reanimated Templars to ignore warnings and counting the Bonecage Armor on the Ranimated Templars"
+	L.custom_on_armor_plates = "Bonecage Armor icon on Enemy Nameplate"
+	L.custom_on_armor_plates_desc = "Show an icon on the nameplate of Reanimated Templars who have Bonecage Armor.\nRequires the use of Enemy Nameplates. This feature is currently only supported by KuiNameplates."
+	L.custom_on_armor_plates_icon = 236513
 	L.tormentingCriesSay = "Cries" -- Tormenting Cries (short say)
 end
 --------------------------------------------------------------------------------
@@ -51,17 +57,19 @@ function mod:GetOptions()
 	return {
 		"infobox",
 		{239006, "PROXIMITY"}, -- Dissonance
-		236507, -- Quietus
+		236678, -- Quietus
 		{235924, "SAY"}, -- Spear of Anguish
 		235907, -- Collapsing Fissure
 		{238570, "SAY", "ICON"}, -- Tormented Cries
 		235927, -- Rupturing Slam
-		{236513, "INFOBOX"}, -- Bonecage Armor
+		236513, -- Bonecage Armor
+		"custom_on_armor_plates",
+		"custom_on_mythic_armor",
 		236131, -- Wither
-		236459, -- Soulbind
+		{236459, "ME_ONLY"}, -- Soulbind
 		soulBindMarker,
 		236072, -- Wailing Souls
-		236515, -- Shattering Scream
+		{236515, "ME_ONLY"}, -- Shattering Scream
 		236361, -- Spirit Chains
 		236542, -- Sundering Doom
 		236544, -- Doomed Sundering
@@ -70,7 +78,7 @@ function mod:GetOptions()
 		["infobox"] = "general",
 		[235933] = -14856,-- Corporeal Realm
 		[235927] = CL.adds,-- Adds
-		[236340] = -14857,-- Spirit Realm
+		[236131] = -14857,-- Spirit Realm
 		[236515] = CL.adds,-- Adds
 		[236542] = -14970, -- Tormented Souls
 	}
@@ -78,8 +86,9 @@ end
 
 function mod:OnBossEnable()
 	-- General
+	updateRealms(self)
 	self:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", nil, "boss1", "boss2", "boss3")
-	self:Log("SPELL_CAST_SUCCESS", "Quietus", 236507)
+	self:Log("SPELL_AURA_APPLIED", "Quietus", 236678)
 	self:Log("SPELL_AURA_APPLIED", "SpiritualBarrier", 235732)
 	self:Log("SPELL_AURA_REMOVED", "SpiritualBarrierRemoved", 235732)
 
@@ -112,27 +121,12 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "DoomedSundering", 236544)
 	self:Log("SPELL_AURA_APPLIED", "Torment", 236548)
 	self:Log("SPELL_AURA_APPLIED_DOSE", "Torment", 236548)
+
+	self:Death("EngineDies", 118460)
 end
 
 function mod:OnEngage()
-	-- Dissonance Handling
-	wipe(phasedList)
-	wipe(unphasedList)
-	for unit in self:IterateGroup() do
-		local buffCheck = UnitDebuff(unit, self:SpellName(235621)) -- Spirit Realm
-		local guid = UnitGUID(unit)
-		if buffCheck then
-			phasedList[#phasedList+1] = self:UnitName(unit)
-			if self:Me(guid) then
-				myRealm = 1 -- Spirit Realm
-			end
-		else
-			unphasedList[#unphasedList+1] = self:UnitName(unit)
-			if self:Me(guid) then
-				myRealm = 0 -- Corporeal Realm
-			end
-		end
-	end
+	updateRealms(self)
 
 	if not self:Easy() then -- No Dissonance in LFR/Normal
 		updateProximity(self)
@@ -142,15 +136,25 @@ function mod:OnEngage()
 	boneArmorCounter = 0
 	tormentedCriesCounter = 1
 	wailingSoulsCounter = 1
+	armorAppliedTimer, armorRemovedTimer = nil, nil
+	wipe(soulList)
 
-	self:OpenInfo("infobox")
-	self:SetInfo("infobox", 1, self:SpellName(55336)) -- Bone Armor (Shorter Text)
-	self:SetInfo("infobox", 2, boneArmorCounter)
-	self:SetInfo("infobox", 6, L.infobox_players)
-	self:SetInfo("infobox", 7, self:SpellName(-14857)) -- Spirit Realm
-	self:SetInfo("infobox", 8, #phasedList)
-	self:SetInfo("infobox", 9, self:SpellName(-14856)) -- Corporeal Realm
-	self:SetInfo("infobox", 10, #unphasedList)
+	if self:Easy() then
+		self:OpenInfo("infobox", L.infobox_players)
+		self:SetInfo("infobox", 1, self:SpellName(-14857)) -- Spirit Realm
+		self:SetInfo("infobox", 2, #phasedList)
+		self:SetInfo("infobox", 3, self:SpellName(-14856)) -- Corporeal Realm
+		self:SetInfo("infobox", 4, #unphasedList)
+	else
+		self:OpenInfo("infobox")
+		self:SetInfo("infobox", 1, self:SpellName(55336)) -- Bone Armor (Shorter Text)
+		self:SetInfo("infobox", 2, boneArmorCounter)
+		self:SetInfo("infobox", 6, L.infobox_players)
+		self:SetInfo("infobox", 7, self:SpellName(-14857)) -- Spirit Realm
+		self:SetInfo("infobox", 8, #phasedList)
+		self:SetInfo("infobox", 9, self:SpellName(-14856)) -- Corporeal Realm
+		self:SetInfo("infobox", 10, #unphasedList)
+	end
 
 
 	self:CDBar(235907, 6) -- Collapsing Fissure
@@ -174,7 +178,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(_, spellName, _, _, spellId)
 			t = 65 + self:BarTimeLeft(238570) -- Time Left + 60s channel + 5s~ cooldown
 		end
 		self:Bar(235907, t)
-	elseif spellId == 239978 then -- Soul Palour // Stage 2
+	elseif spellId == 239978 then -- Soul Pallor // Stage 2
 		stage = 2
 
 		self:StopBar(236072) -- Wailing Souls
@@ -182,15 +186,35 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(_, spellName, _, _, spellId)
 		self:StopBar(CL.cast:format(self:SpellName(236072))) -- <cast: Wailing Souls>
 		self:StopBar(CL.cast:format(self:SpellName(238570))) -- <cast: Tormented Cries>
 
-		-- Assumed that other timers reset upon p2 start XXX Double Check
-		self:Bar(235907, 5) -- Collapsing Fissure
+		self:CDBar(235907, 2.5) -- Collapsing Fissure
 		if not self:Easy() then
-			self:Bar(235924, 6) -- Spear of Anguish
+			self:CDBar(235924, 8) -- Spear of Anguish
 		end
-		self:Bar(236459, 10) -- Soulbind
+		self:CDBar(236459, 9) -- Soulbind
 
 		self:CDBar(236542, 17) -- Sundering Doom
 		self:CDBar(236544, 28) -- Doomed Sundering
+	end
+end
+
+function updateRealms(self)
+	-- Dissonance Handling
+	wipe(phasedList)
+	wipe(unphasedList)
+	for unit in self:IterateGroup() do
+		local buffCheck = UnitDebuff(unit, self:SpellName(235621)) -- Spirit Realm
+		local guid = UnitGUID(unit)
+		if buffCheck then
+			phasedList[#phasedList+1] = self:UnitName(unit)
+			if self:Me(guid) then
+				myRealm = 1 -- Spirit Realm
+			end
+		else
+			unphasedList[#unphasedList+1] = self:UnitName(unit)
+			if self:Me(guid) then
+				myRealm = 0 -- Corporeal Realm
+			end
+		end
 	end
 end
 
@@ -203,9 +227,14 @@ function updateProximity(self)
 end
 
 do
-	local function updateInfoBox()
-		mod:SetInfo("infobox", 8, #phasedList)
-		mod:SetInfo("infobox", 10, #unphasedList)
+	local function updateInfoBox(self)
+		if self:Easy() then
+			self:SetInfo("infobox", 2, #phasedList)
+			self:SetInfo("infobox", 4, #unphasedList)
+		else
+			self:SetInfo("infobox", 8, #phasedList)
+			self:SetInfo("infobox", 10, #unphasedList)
+		end
 	end
 
 	function mod:SpiritualBarrier(args)
@@ -218,7 +247,7 @@ do
 		if not self:Easy() then -- No Dissonance in LFR/Normal
 			updateProximity(self)
 		end
-		updateInfoBox()
+		updateInfoBox(self)
 	end
 
 	function mod:SpiritualBarrierRemoved(args)
@@ -231,7 +260,7 @@ do
 		if not self:Easy() then -- No Dissonance in LFR/Normal
 			updateProximity(self)
 		end
-		updateInfoBox()
+		updateInfoBox(self)
 	end
 end
 
@@ -299,16 +328,39 @@ do
 	end
 end
 
-function mod:BonecageArmor(args)
-	boneArmorCounter = boneArmorCounter + 1
-	self:Message(args.spellId, "Important", "Alert", CL.count:format(args.spellName, boneArmorCounter))
-	self:SetInfo("infobox", 2, boneArmorCounter)
-end
+do
+	local function printArmorApplied(self, spellId, spellName)
+		armorAppliedTimer = nil
+		self:Message(spellId, "Attention", "Warning", CL.count:format(spellName, boneArmorCounter))
+	end
+	local function printArmorRemoved(self, spellId, spellName)
+		armorRemovedTimer = nil
+		self:Message(spellId, "Positive", "Info", L.armor_remaining:format(spellName, boneArmorCounter))
+	end
 
-function mod:BonecageArmorRemoved(args)
-	boneArmorCounter = boneArmorCounter - 1
-	self:Message(args.spellId, "Positive", "Info", L.armor_remaining:format(args.spellName, boneArmorCounter))
-	self:SetInfo("infobox", 2, boneArmorCounter)
+	function mod:BonecageArmor(args)
+		if self:Mythic() and self:GetOption("custom_on_mythic_armor") and self:MobId(args.destGUID) == 118715 then return end -- Reanimated Templar
+		boneArmorCounter = boneArmorCounter + 1
+		self:SetInfo("infobox", 2, boneArmorCounter)
+		if self:GetOption("custom_on_armor_plates") then
+			self:AddPlateIcon(236513, args.sourceGUID) -- Display an armor icon above targets with armor
+		end
+		if not armorAppliedTimer then
+			armorAppliedTimer = self:ScheduleTimer(printArmorApplied, 0.1, self, args.spellId, args.spellName)
+		end
+	end
+
+	function mod:BonecageArmorRemoved(args)
+		if self:Mythic() and self:GetOption("custom_on_mythic_armor") and self:MobId(args.destGUID) == 118715 then return end -- Reanimated Templar
+		boneArmorCounter = boneArmorCounter - 1
+		self:SetInfo("infobox", 2, boneArmorCounter)
+		if self:GetOption("custom_on_armor_plates") then
+			self:RemovePlateIcon(236513, args.sourceGUID) -- Remove the armor icon
+		end
+		if not armorRemovedTimer then
+			armorRemovedTimer = self:ScheduleTimer(printArmorRemoved, 0.1, self, args.spellId, args.spellName)
+		end
+	end
 end
 
 function mod:Wither(args)
@@ -318,22 +370,13 @@ function mod:Wither(args)
 end
 
 do
-	local list, scheduled = mod:NewTargetList(), nil
+	local linkOnMe = false
 	function mod:Soulbind(args)
-		list[#list+1] = args.destName
-		if #list == 2 then -- Announce at 2
-			if self:GetOption(soulBindMarker) then
-				SetRaidTarget(args.destName, 4)
-			end
-			self:CancelTimer(scheduled)
-			self:TargetMessage(args.spellId, list, "Positive", "Warning")
-		elseif #list == 1 then
-			scheduled = self:ScheduleTimer("TargetMessage", 0.5, args.spellId, list, "Positive", "Warning")
-			local t = 0
+		soulList[#soulList+1] = args.destName
+		if #soulList == 1 then
+			local t = stage == 2 and 19.4 or 24.3
 			if self:Easy() then
 				t = stage == 2 and 24 or 34
-			else
-				t = stage == 2 and 20 or 25
 			end
 			if stage ~= 2 and self:BarTimeLeft(236072) < 24.3 and self:BarTimeLeft(236072) > 0 then -- Wailing Souls
 				t = 74.5 + self:BarTimeLeft(236072) -- Time Left + 60s channel + 14.5s cooldown
@@ -342,16 +385,29 @@ do
 			if self:GetOption(soulBindMarker) then
 				SetRaidTarget(args.destName, 3)
 			end
+			linkOnMe = self:Me(args.destGUID)
+		elseif #soulList == 2 then -- Announce at 2
+			if self:GetOption(soulBindMarker) then
+				SetRaidTarget(args.destName, 4)
+			end
+			if self:Me(args.destGUID) then
+				self:Message(args.spellId, "Personal", "Warning", CL.link:format(soulList[1]))
+			elseif linkOnMe then
+				self:Message(args.spellId, "Personal", "Warning", CL.link:format(soulList[2]))
+			elseif not self:CheckOption(args.spellId, "ME_ONLY") then
+				self:Message(args.spellId, "Positive", "Info", CL.link_both:format(soulList[1], soulList[2]))
+			end
+			wipe(soulList)
 		end
 	end
+end
 
-	function mod:SoulbindRemoved(args)
-		if self:Me(args.destGUID) then
-			self:TargetMessage(args.spellId, args.destName, "Positive", "Long", CL.removed:format(args.spellName))
-		end
-		if self:GetOption(soulBindMarker) then
-			SetRaidTarget(args.destName, 0)
-		end
+function mod:SoulbindRemoved(args)
+	if self:Me(args.destGUID) then
+		self:Message(args.spellId, "Personal", "Long", CL.link_removed)
+	end
+	if self:GetOption(soulBindMarker) then
+		SetRaidTarget(args.destName, 0)
 	end
 end
 
@@ -397,8 +453,14 @@ do
 	function mod:Torment(args)
 		local t = GetTime()
 		if t-prev > 1 then
-			local amount = args.amount or 1
-			self:StackMessage(args.spellId, args.destName, amount, "Attention", "Info")
+			prev = t
+			self:StackMessage(args.spellId, args.destName, args.amount, "Attention", "Info")
 		end
 	end
+end
+
+function mod:EngineDies()
+	self:StopBar(236459) -- Soulbind
+	self:StopBar(235907) -- Collapsing Fissure
+	self:StopBar(235924) -- Spear of Anguish
 end

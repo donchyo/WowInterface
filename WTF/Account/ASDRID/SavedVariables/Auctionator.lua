@@ -2,18 +2,31 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["_5000000"] = 10000,
-	["_200000"] = 1000,
-	["_1000000"] = 2500,
 	["_10000"] = 200,
-	["_500"] = 5,
+	["_5000000"] = 10000,
+	["_1000000"] = 2500,
+	["_200000"] = 1000,
 	["LOG_DE_DATA_X"] = true,
 	["STARTING_DISCOUNT"] = 5,
+	["_500"] = 5,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Ulfgor's Greaves of Bravery"] = {
 		["is"] = "141574:0:0:0:1497",
 		["4515756"] = "50000000:1",
+	},
+	["Defiled Augment Rune"] = {
+		["is"] = "140587:0:0:0:0",
+		["4559417"] = "1942500:1",
+	},
+	["Obliterum"] = {
+		["4666938"] = "29920000:1",
+		["4669886"] = "26360000:1",
+		["is"] = "124125:0:0:0:0",
+	},
+	["Inky Black Potion"] = {
+		["is"] = "124640:0:0:0:0",
+		["4559978"] = "10000000:1",
 	},
 	["Flask of the Seventh Demon"] = {
 		["4559415"] = "11820000:1",
@@ -26,91 +39,64 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["4566394"] = "300000000:1",
 		["4569342"] = "50000000:1",
 	},
-	["Gleaming Celestial Waistguard"] = {
-		["is"] = "144407:0:0:0:3443",
-		["4477999"] = "79990000:1",
-	},
-	["Chaos Crystal"] = {
-		["4479578"] = "1697500:1",
-		["4479839"] = "2247500:1",
-		["4483712"] = "1747500:1",
-		["is"] = "124442:0:0:0:0",
-	},
-	["Obliterum"] = {
-		["4666938"] = "29920000:1",
-		["4669886"] = "26360000:1",
-		["is"] = "124125:0:0:0:0",
-	},
-	["Defiled Augment Rune"] = {
-		["is"] = "140587:0:0:0:0",
-		["4559417"] = "1942500:1",
-	},
 	["Gorrog's Serene Gaze"] = {
 		["is"] = "141575:0:0:0:1507",
 		["4569343"] = "150000000:1",
-	},
-	["Inky Black Potion"] = {
-		["is"] = "124640:0:0:0:0",
-		["4559978"] = "10000000:1",
-	},
-	["Enchant Ring - Binding of Haste"] = {
-		["is"] = "128542:0:0:0:0",
-		["4501258"] = "23730000:1",
 	},
 }
 AUCTIONATOR_SHOPPING_LISTS = {
 	{
 		["items"] = {
-			"Lavish", -- [1]
-			"Flask of ten thou", -- [2]
-			"Potion of Prolonged Power", -- [3]
-			"obliterum", -- [4]
-			"Immor", -- [5]
-			"Darkmoon deck: imm", -- [6]
-			"Darkmoon deck: promises", -- [7]
-			"quick dawnlight", -- [8]
-			"Suramar Surf and Turf", -- [9]
-			"Aethril", -- [10]
-			"Dreamleaf", -- [11]
-			"Foxflower", -- [12]
-			"Ancient Mana Potion", -- [13]
-			"Yseralline Seed", -- [14]
-			"Flask of the countless armies", -- [15]
-			"Spectral tiger", -- [16]
-			"Swift spectral", -- [17]
-			"Azshari Salad", -- [18]
-			"Potion of the Old War", -- [19]
-			"Fjarnskaggl", -- [20]
-			"Imo", -- [21]
-			"Suramar", -- [22]
-			"enchant cloak -", -- [23]
-			"masterful", -- [24]
-			"obliterium", -- [25]
-			"Promises", -- [26]
-			"vantus rune", -- [27]
-			"Flask of the w", -- [28]
-			"oblit", -- [29]
-			"Darkmoon", -- [30]
-			"nightborne", -- [31]
-			"mana", -- [32]
-			"enchant ring -", -- [33]
-			"\"Saber's Eye of Intellect\"", -- [34]
-			"\"Felwort\"", -- [35]
-			"\"Infernal Brimstone\"", -- [36]
-			"\"Pandemonite\"", -- [37]
-			"\"Furystone\"", -- [38]
-			"Tome of the Tranquil Mind", -- [39]
-			"heavy hide", -- [40]
-			"Leytorrent Potion", -- [41]
-			"Flask of the wi", -- [42]
-			"Flask of the wispe", -- [43]
-			"Flask of the Seventh Demon", -- [44]
-			"enchant ring", -- [45]
-			"Cobalt Bar", -- [46]
-			"eternal water", -- [47]
-			"\"Crystallized Water\"", -- [48]
-			"\"Volatile Blasting Trigger\"", -- [49]
-			"\"Cobalt Bar\"", -- [50]
+			"Drums of", -- [1]
+			"Bear ta", -- [2]
+			"nightborne", -- [3]
+			"Flask of the Seventh Demon", -- [4]
+			"\"Khorium Power Core\"", -- [5]
+			"eternium bar", -- [6]
+			"etnerium bar", -- [7]
+			"\"Felsteel Bar\"", -- [8]
+			"\"Felsteel Stabilizer\"", -- [9]
+			"\"Hardened Adamantite Tube\"", -- [10]
+			"Khorium ore", -- [11]
+			"\"Primal Fire\"", -- [12]
+			"\"Khorium Bar\"", -- [13]
+			"Khorium Power Core", -- [14]
+			"Bolt of Netherweave", -- [15]
+			"Rocket Boots Xtreme Lite", -- [16]
+			"Arkhana", -- [17]
+			"Potion of Prolonged Power", -- [18]
+			"Gift of crit", -- [19]
+			"\"Foxflower\"", -- [20]
+			"Starlight Rose", -- [21]
+			"Leytorrent Potion", -- [22]
+			"Aethril", -- [23]
+			"Fjarnskaggl", -- [24]
+			"Foxflower", -- [25]
+			"Dreamleaf", -- [26]
+			"Tome of the Tranquil Mind", -- [27]
+			"Sallow Pigment", -- [28]
+			"enchant cloak -", -- [29]
+			"masterful", -- [30]
+			"Lavish", -- [31]
+			"Flask of ten thou", -- [32]
+			"obliterum", -- [33]
+			"Immor", -- [34]
+			"Darkmoon deck: imm", -- [35]
+			"Darkmoon deck: promises", -- [36]
+			"quick dawnlight", -- [37]
+			"Suramar Surf and Turf", -- [38]
+			"Ancient Mana Potion", -- [39]
+			"Yseralline Seed", -- [40]
+			"Flask of the countless armies", -- [41]
+			"Spectral tiger", -- [42]
+			"Swift spectral", -- [43]
+			"Azshari Salad", -- [44]
+			"Potion of the Old War", -- [45]
+			"Imo", -- [46]
+			"Suramar", -- [47]
+			"obliterium", -- [48]
+			"Promises", -- [49]
+			"vantus rune", -- [50]
 		},
 		["isRecents"] = 1,
 		["name"] = "Recent Searches",
@@ -133,11 +119,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 	},
 	["Grim Batol_Alliance"] = {
 		["Enchant Cloak - Greater Defense"] = {
-			["mr"] = 2049994,
+			["mr"] = 997705,
 			["sc"] = 3,
-			["id"] = "38825:0:0:0:0",
-			["H2431"] = 2049994,
+			["H2460"] = 997705,
 			["cc"] = 8,
+			["id"] = "38825:0:0:0:0",
 		},
 		["Formula: Lesser Mana Oil"] = {
 			["mr"] = 18746946,
@@ -161,11 +147,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2441"] = 200000000,
 		},
 		["Tome of the Tranquil Mind"] = {
-			["H2409"] = 1050000,
-			["mr"] = 1050000,
+			["mr"] = 2114995,
 			["cc"] = 15,
 			["id"] = "141446:0:0:0:0",
+			["H2453"] = 2114995,
 			["sc"] = 4,
+		},
+		["Foxflower Seed"] = {
+			["mr"] = 750833,
+			["cc"] = 7,
+			["id"] = "129286:0:0:0:0",
+			["H2458"] = 2499996,
+			["sc"] = 9,
+			["L2458"] = 750833,
 		},
 		["Leystone Greaves of the Aurora"] = {
 			["mr"] = 11725650,
@@ -189,11 +183,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 0,
 		},
 		["Enchant Cloak - Greater Speed"] = {
-			["mr"] = 35029997,
+			["mr"] = 56499999,
 			["sc"] = 3,
-			["id"] = "39003:0:0:0:0",
-			["H2431"] = 35029997,
+			["H2460"] = 56499999,
 			["cc"] = 8,
+			["id"] = "39003:0:0:0:0",
 		},
 		["Leystone Pauldrons of the Harmonious"] = {
 			["mr"] = 8990000,
@@ -217,10 +211,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 4,
 		},
 		["Drums of Speed"] = {
-			["mr"] = 18840000,
+			["mr"] = 284370000,
 			["cc"] = 0,
 			["id"] = "29530:0:0:0:0",
-			["H2334"] = 18840000,
+			["H2469"] = 284370000,
 			["sc"] = 8,
 		},
 		["Leystone Waistguard of the Feverflare"] = {
@@ -232,10 +226,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: Skorpyron"] = {
 			["mr"] = 15949999,
-			["cc"] = 0,
-			["id"] = "128994:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 15949999,
+			["id"] = "128994:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Formula: Superior Mana Oil"] = {
 			["mr"] = 3905628,
@@ -261,11 +255,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 4,
 		},
 		["Enchant Cloak - Greater Critical Strike"] = {
-			["mr"] = 25059999,
+			["mr"] = 33969997,
 			["sc"] = 3,
-			["id"] = "52777:0:0:0:0",
-			["H2431"] = 25059999,
+			["H2460"] = 33969997,
 			["cc"] = 8,
+			["id"] = "52777:0:0:0:0",
 		},
 		["Enchant Ring - Word of Versatility"] = {
 			["mr"] = 144045,
@@ -275,11 +269,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 10,
 		},
 		["Enchant Cloak - Mighty Stamina"] = {
-			["mr"] = 35877111,
+			["mr"] = 24609995,
 			["sc"] = 3,
-			["id"] = "39001:0:0:0:0",
-			["H2431"] = 35877111,
+			["H2460"] = 24609995,
 			["cc"] = 8,
+			["id"] = "39001:0:0:0:0",
 		},
 		["Darkmoon Ride Ticket"] = {
 			["H2409"] = 647217,
@@ -303,25 +297,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2299"] = 8989999,
 		},
 		["Enchant Cloak - Breath of Critical Strike"] = {
-			["mr"] = 2037218,
+			["mr"] = 2354220,
 			["sc"] = 3,
-			["id"] = "110631:0:0:0:0",
-			["H2431"] = 2037218,
+			["H2460"] = 2354220,
 			["cc"] = 8,
+			["id"] = "110631:0:0:0:0",
 		},
 		["Arkhana"] = {
-			["mr"] = 245998,
-			["sc"] = 12,
-			["id"] = "124440:0:0:0:0",
+			["mr"] = 250000,
 			["cc"] = 7,
-			["H2327"] = 245998,
+			["H2466"] = 250000,
+			["id"] = "124440:0:0:0:0",
+			["sc"] = 12,
 		},
 		["Enchant Cloak - Gift of Haste"] = {
-			["mr"] = 7189998,
+			["mr"] = 4009993,
 			["cc"] = 8,
-			["id"] = "110653:0:0:0:0",
-			["H2431"] = 7189998,
+			["H2460"] = 4009993,
 			["sc"] = 3,
+			["id"] = "110653:0:0:0:0",
 		},
 		["Enchant Ring - Binding of Mastery"] = {
 			["mr"] = 21500000,
@@ -351,13 +345,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "123893:0:0:0:1688",
 			["cc"] = 4,
 		},
-		["Raw Beast Hide Scraps"] = {
-			["H2285"] = 4200,
-			["mr"] = 4200,
-			["sc"] = 6,
-			["id"] = "110610:0:0:0:0",
-			["cc"] = 7,
-		},
 		["Enchant Cloak - Stealth"] = {
 			["mr"] = 28510000,
 			["cc"] = 8,
@@ -373,26 +360,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 4,
 		},
 		["Aethril Seed"] = {
-			["mr"] = 4990000,
-			["cc"] = 7,
-			["id"] = "129284:0:0:0:0",
+			["mr"] = 2500000,
 			["sc"] = 9,
-			["H2440"] = 4990000,
+			["id"] = "129284:0:0:0:0",
+			["H2453"] = 2500000,
+			["cc"] = 7,
 		},
 		["Masterful Queen's Opal"] = {
-			["mr"] = 188100,
-			["cc"] = 3,
-			["id"] = "130218:0:0:0:0",
+			["mr"] = 158499,
 			["sc"] = 6,
-			["H2431"] = 188100,
+			["id"] = "130218:0:0:0:0",
+			["H2453"] = 158499,
+			["cc"] = 3,
 		},
 		["Dreamleaf"] = {
-			["mr"] = 159500,
+			["mr"] = 210000,
 			["sc"] = 9,
 			["id"] = "124102:0:0:0:0",
+			["H2453"] = 210000,
 			["cc"] = 7,
-			["L2440"] = 159500,
-			["H2440"] = 160000,
 		},
 		["Slice of Bacon"] = {
 			["mr"] = 1699997,
@@ -410,10 +396,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Asimov's Drape"] = {
 			["mr"] = 2189567,
-			["cc"] = 4,
-			["id"] = "45493:0:0:0:0",
-			["sc"] = 1,
 			["H2436"] = 2189567,
+			["id"] = "45493:0:0:0:0",
+			["cc"] = 4,
+			["sc"] = 1,
 		},
 		["Leystone Gauntlets of the Fireflash"] = {
 			["mr"] = 15004945,
@@ -444,18 +430,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 3,
 		},
 		["Enchant Cloak - Intellect"] = {
-			["mr"] = 3669995,
+			["mr"] = 4979964,
 			["sc"] = 3,
-			["id"] = "52753:0:0:0:0",
-			["H2431"] = 3669995,
+			["H2460"] = 4979964,
 			["cc"] = 8,
+			["id"] = "52753:0:0:0:0",
 		},
 		["Mysterious Grimoire"] = {
 			["mr"] = 1900000,
-			["cc"] = 12,
-			["id"] = "71637:0:0:0:0",
-			["sc"] = 0,
 			["H2436"] = 1900000,
+			["id"] = "71637:0:0:0:0",
+			["cc"] = 12,
+			["sc"] = 0,
 		},
 		["Valley Stir Fry"] = {
 			["mr"] = 5189999,
@@ -471,13 +457,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "123894:0:0:0:1716",
 			["cc"] = 4,
 		},
-		["Invisibility Potion"] = {
-			["mr"] = 1206249,
-			["sc"] = 1,
-			["id"] = "9172:0:0:0:0",
-			["cc"] = 0,
-			["H2277"] = 1206249,
-		},
 		["Recipe: Super Mana Potion"] = {
 			["mr"] = 5407038,
 			["cc"] = 9,
@@ -486,11 +465,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 6,
 		},
 		["Enchant Cloak - Defense"] = {
-			["mr"] = 5432789,
+			["mr"] = 5736616,
 			["sc"] = 3,
-			["id"] = "38806:0:0:0:0",
-			["H2431"] = 5432789,
+			["H2460"] = 5736616,
 			["cc"] = 8,
+			["id"] = "38806:0:0:0:0",
 		},
 		["Pauldrons of Surging Mana"] = {
 			["mr"] = 9504999,
@@ -507,11 +486,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 		},
 		["Enchant Cloak - Superior Critical Strike"] = {
-			["mr"] = 2484999,
+			["mr"] = 2127474,
 			["sc"] = 3,
-			["id"] = "74713:0:0:0:0",
-			["H2431"] = 2484999,
+			["H2460"] = 2127474,
 			["cc"] = 8,
+			["id"] = "74713:0:0:0:0",
 		},
 		["Leystone Pauldrons of the Quickblade"] = {
 			["mr"] = 8989999,
@@ -544,10 +523,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: Ursoc"] = {
 			["mr"] = 14989996,
-			["cc"] = 0,
-			["id"] = "128987:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 14989996,
+			["id"] = "128987:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Enchant Chest - Superior Mana"] = {
 			["mr"] = 25049456,
@@ -565,16 +544,16 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Primordial Bloodsoaked Legplates of the Mercenary"] = {
 			["mr"] = 18958701,
-			["cc"] = 4,
-			["id"] = "94030:0:0:-139:0",
-			["sc"] = 4,
 			["H2436"] = 18958701,
+			["id"] = "94030:0:0:-139:0",
+			["cc"] = 4,
+			["sc"] = 4,
 		},
 		["Drums of the Mountain"] = {
-			["mr"] = 897000,
+			["mr"] = 1232500,
 			["cc"] = 0,
 			["id"] = "142406:0:0:0:0",
-			["H2334"] = 897000,
+			["H2469"] = 1232500,
 			["sc"] = 8,
 		},
 		["Darkmoon Eye"] = {
@@ -607,10 +586,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Quick Dawnlight"] = {
 			["mr"] = 34649999,
-			["sc"] = 7,
-			["id"] = "130220:0:0:0:0",
-			["H2440"] = 34649999,
 			["cc"] = 3,
+			["id"] = "130220:0:0:0:0",
+			["sc"] = 7,
+			["H2440"] = 34649999,
 		},
 		["Manaweave Cloak"] = {
 			["mr"] = 252800000,
@@ -669,11 +648,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 10,
 		},
 		["Enchant Cloak - Protection"] = {
-			["mr"] = 39579999,
+			["mr"] = 56435665,
 			["sc"] = 3,
-			["id"] = "52767:0:0:0:0",
-			["H2431"] = 39579999,
+			["H2460"] = 56435665,
 			["cc"] = 8,
+			["id"] = "52767:0:0:0:0",
 		},
 		["Chelley's Staff of Dark Mending"] = {
 			["mr"] = 4000000,
@@ -682,12 +661,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "59525:0:0:0:0",
 			["cc"] = 2,
 		},
-		["Lean Shank"] = {
-			["mr"] = 7800,
-			["sc"] = 8,
-			["id"] = "124117:0:0:0:0",
-			["cc"] = 7,
-			["H2278"] = 7800,
+		["Leystone Gauntlets of the Aurora"] = {
+			["L2299"] = 12744944,
+			["mr"] = 12744944,
+			["cc"] = 4,
+			["id"] = "123893:0:0:0:1706",
+			["H2299"] = 15000000,
+			["sc"] = 4,
 		},
 		["Flask of the Countless Armies"] = {
 			["mr"] = 7500000,
@@ -704,11 +684,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 		},
 		["Starlight Rose Seed"] = {
-			["mr"] = 12500000,
-			["cc"] = 7,
-			["id"] = "129288:0:0:0:0",
-			["H2321"] = 12500000,
+			["mr"] = 2142857,
 			["sc"] = 9,
+			["id"] = "129288:0:0:0:0",
+			["H2458"] = 6750000,
+			["cc"] = 7,
+			["L2458"] = 2142857,
 		},
 		["Leystone Breastplate of the Quickblade"] = {
 			["mr"] = 99999900,
@@ -716,6 +697,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "123891:0:0:0:1679",
 			["sc"] = 4,
 			["H2299"] = 99999900,
+		},
+		["Enchant Neck - Gift of Critical Strike"] = {
+			["mr"] = 2999900,
+			["sc"] = 1,
+			["id"] = "110645:0:0:0:0",
+			["H2461"] = 2999900,
+			["cc"] = 8,
 		},
 		["Draenic Channeled Mana Potion"] = {
 			["mr"] = 88500,
@@ -732,11 +720,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 		},
 		["Enchant Cloak - Greater Intellect"] = {
-			["mr"] = 34119730,
+			["mr"] = 34957042,
 			["sc"] = 3,
-			["id"] = "52773:0:0:0:0",
-			["H2431"] = 34119730,
+			["H2460"] = 34957042,
 			["cc"] = 8,
+			["id"] = "52773:0:0:0:0",
 		},
 		["Darkmoon Tincture of Alacrity"] = {
 			["H2409"] = 404999,
@@ -746,11 +734,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 0,
 		},
 		["Enchant Cloak - Binding of Strength"] = {
-			["mr"] = 37420000,
+			["mr"] = 31370000,
 			["sc"] = 3,
-			["id"] = "128548:0:0:0:0",
-			["H2431"] = 37420000,
+			["H2460"] = 31370000,
 			["cc"] = 8,
+			["id"] = "128548:0:0:0:0",
 		},
 		["Ace of Promises"] = {
 			["mr"] = 59980000,
@@ -761,17 +749,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Primordial Bloodsoaked Greaves of the Mercenary"] = {
 			["mr"] = 202324615,
-			["cc"] = 4,
-			["id"] = "94033:0:0:-139:0",
-			["sc"] = 4,
 			["H2436"] = 202324615,
-		},
-		["Crescent Oil"] = {
-			["mr"] = 505986,
-			["sc"] = 11,
-			["id"] = "109123:0:0:0:0",
-			["cc"] = 7,
-			["H2277"] = 505986,
+			["id"] = "94033:0:0:-139:0",
+			["cc"] = 4,
+			["sc"] = 4,
 		},
 		["Leystone Gauntlets of the Harmonious"] = {
 			["mr"] = 50000000,
@@ -787,19 +768,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 0,
 			["id"] = "133565:0:0:0:0",
 		},
-		["Recipe: Elixir of Detect Lesser Invisibility"] = {
-			["mr"] = 5232640,
-			["sc"] = 6,
-			["id"] = "3832:0:0:0:0",
-			["cc"] = 9,
-			["H2277"] = 5232640,
-		},
-		["Draenic Invisibility Potion"] = {
-			["mr"] = 249000,
+		["Vantus Rune: Il'gynoth, The Heart of Corruption"] = {
+			["mr"] = 29959999,
+			["H2412"] = 29959999,
+			["id"] = "128989:0:0:0:0",
 			["cc"] = 0,
-			["id"] = "116268:0:0:0:0",
-			["sc"] = 1,
-			["H2279"] = 249000,
+			["sc"] = 9,
 		},
 		["Leystone Boots of the Feverflare"] = {
 			["L2299"] = 18347055,
@@ -810,39 +784,40 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "123892:0:0:0:1701",
 		},
 		["Fjarnskaggl"] = {
-			["mr"] = 174948,
-			["sc"] = 9,
-			["id"] = "124104:0:0:0:0",
-			["H2440"] = 174948,
+			["mr"] = 124899,
 			["cc"] = 7,
+			["id"] = "124104:0:0:0:0",
+			["H2453"] = 124899,
+			["sc"] = 9,
 		},
 		["Starlight Rose"] = {
-			["mr"] = 546750,
-			["cc"] = 7,
-			["id"] = "124105:0:0:0:0",
-			["H2321"] = 546750,
+			["mr"] = 374000,
 			["sc"] = 9,
+			["id"] = "124105:0:0:0:0",
+			["H2458"] = 374999,
+			["cc"] = 7,
+			["L2458"] = 374000,
 		},
 		["Drums of Fury"] = {
-			["mr"] = 746998,
+			["mr"] = 1577500,
 			["sc"] = 8,
 			["id"] = "120257:0:0:0:0",
-			["H2334"] = 746998,
+			["H2469"] = 1577500,
 			["cc"] = 0,
 		},
 		["Enchant Cloak - Shadow Armor"] = {
-			["mr"] = 24772477,
+			["mr"] = 22109995,
 			["sc"] = 3,
-			["id"] = "38993:0:0:0:0",
-			["H2431"] = 24772477,
+			["H2460"] = 22109995,
 			["cc"] = 8,
+			["id"] = "38993:0:0:0:0",
 		},
 		["Fjarnskaggl Seed"] = {
-			["mr"] = 6799995,
-			["sc"] = 9,
-			["id"] = "129287:0:0:0:0",
-			["H2440"] = 6799995,
+			["mr"] = 2350000,
 			["cc"] = 7,
+			["id"] = "129287:0:0:0:0",
+			["H2453"] = 2350000,
+			["sc"] = 9,
 		},
 		["Roasted Barley Tea"] = {
 			["mr"] = 47800,
@@ -880,18 +855,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 		},
 		["Enchant Cloak - Speed"] = {
-			["mr"] = 1170866,
+			["mr"] = 477454,
 			["sc"] = 3,
-			["id"] = "44456:0:0:0:0",
-			["H2431"] = 1170866,
+			["H2460"] = 477454,
 			["cc"] = 8,
+			["id"] = "44456:0:0:0:0",
 		},
 		["Enchant Cloak - Superior Agility"] = {
-			["mr"] = 1245138,
+			["mr"] = 3999790,
 			["sc"] = 3,
-			["id"] = "38959:0:0:0:0",
-			["H2431"] = 1245138,
+			["H2460"] = 3999790,
 			["cc"] = 8,
+			["id"] = "38959:0:0:0:0",
 		},
 		["Seven of Promises"] = {
 			["mr"] = 144999999,
@@ -909,11 +884,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 4,
 		},
 		["Enchant Cloak - PvP Power"] = {
-			["mr"] = 81429978,
+			["mr"] = 80309999,
 			["cc"] = 8,
-			["id"] = "38939:0:0:0:0",
-			["H2431"] = 81429978,
+			["H2460"] = 80309999,
 			["sc"] = 3,
+			["id"] = "38939:0:0:0:0",
 		},
 		["Darkmoon Draught of Deftness"] = {
 			["H2409"] = 390000,
@@ -921,13 +896,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["id"] = "124650:0:0:0:0",
 			["cc"] = 0,
-		},
-		["Recipe: Invisibility Potion"] = {
-			["mr"] = 8699996,
-			["sc"] = 6,
-			["id"] = "9295:0:0:0:0",
-			["cc"] = 9,
-			["H2277"] = 8699996,
 		},
 		["Six of Immortality"] = {
 			["mr"] = 149999999,
@@ -951,12 +919,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2432"] = 679999,
 			["sc"] = 11,
 		},
+		["Eternium Bar"] = {
+			["mr"] = 8440000,
+			["cc"] = 7,
+			["id"] = "23447:0:0:0:0",
+			["H2468"] = 8440000,
+			["sc"] = 7,
+		},
 		["Ancient Mana Potion"] = {
 			["mr"] = 279000,
-			["cc"] = 0,
-			["id"] = "127835:0:0:0:0",
-			["H2440"] = 279000,
 			["sc"] = 1,
+			["id"] = "127835:0:0:0:0",
+			["cc"] = 0,
+			["H2440"] = 279000,
 		},
 		["Azshari Salad"] = {
 			["mr"] = 478998,
@@ -966,11 +941,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 0,
 		},
 		["Enchant Cloak - Critical Strike"] = {
-			["mr"] = 12999997,
+			["mr"] = 13106723,
 			["sc"] = 3,
-			["id"] = "52764:0:0:0:0",
-			["H2431"] = 12999997,
+			["H2460"] = 13106723,
 			["cc"] = 8,
+			["id"] = "52764:0:0:0:0",
 		},
 		["Darkmoon Firewater"] = {
 			["H2409"] = 247998,
@@ -1002,24 +977,24 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: Trilliax"] = {
 			["mr"] = 16451199,
-			["cc"] = 0,
-			["id"] = "128996:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 16451199,
+			["id"] = "128996:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Vantus Rune: Elerethe Renferal"] = {
 			["mr"] = 25320000,
-			["cc"] = 0,
-			["id"] = "128992:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 25320000,
+			["id"] = "128992:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Enchant Cloak - Binding of Agility"] = {
-			["mr"] = 44960000,
+			["mr"] = 34759998,
 			["sc"] = 3,
-			["id"] = "128549:0:0:0:0",
-			["H2431"] = 44960000,
+			["H2460"] = 34759998,
 			["cc"] = 8,
+			["id"] = "128549:0:0:0:0",
 		},
 		["Glyph of Mana Touched Souls"] = {
 			["mr"] = 25680000,
@@ -1029,11 +1004,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 12,
 		},
 		["Enchant Cloak - Word of Intellect"] = {
-			["mr"] = 13229998,
+			["mr"] = 11509999,
 			["sc"] = 3,
-			["id"] = "128547:0:0:0:0",
-			["H2431"] = 13229998,
+			["H2460"] = 11509999,
 			["cc"] = 8,
+			["id"] = "128547:0:0:0:0",
 		},
 		["Darkmoon Draught of Alacrity"] = {
 			["H2409"] = 1763065,
@@ -1050,11 +1025,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 2,
 		},
 		["Enchant Cloak - Breath of Haste"] = {
-			["mr"] = 2889060,
+			["mr"] = 3079854,
 			["cc"] = 8,
-			["id"] = "110632:0:0:0:0",
-			["H2431"] = 2889060,
+			["H2460"] = 3079854,
 			["sc"] = 3,
+			["id"] = "110632:0:0:0:0",
 		},
 		["Formula: Minor Mana Oil"] = {
 			["mr"] = 2847499,
@@ -1072,10 +1047,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Yseralline Seed"] = {
 			["mr"] = 55340,
-			["sc"] = 9,
-			["id"] = "128304:0:0:0:0",
-			["H2440"] = 55340,
 			["cc"] = 7,
+			["id"] = "128304:0:0:0:0",
+			["sc"] = 9,
+			["H2440"] = 55340,
 		},
 		["Flask of the Whispered Pact"] = {
 			["mr"] = 5230000,
@@ -1092,12 +1067,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 4,
 		},
 		["Foxflower"] = {
-			["mr"] = 219000,
-			["cc"] = 7,
-			["id"] = "124103:0:0:0:0",
+			["mr"] = 198986,
 			["sc"] = 9,
-			["L2440"] = 219000,
-			["H2440"] = 248995,
+			["id"] = "124103:0:0:0:0",
+			["H2458"] = 198986,
+			["cc"] = 7,
 		},
 		["Ancient Mana Gem"] = {
 			["mr"] = 8500000,
@@ -1108,18 +1082,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: Cenarius"] = {
 			["mr"] = 25159999,
-			["cc"] = 0,
-			["id"] = "128993:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 25159999,
+			["id"] = "128993:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Aethril"] = {
-			["mr"] = 162498,
-			["sc"] = 9,
-			["id"] = "124101:0:0:0:0",
-			["H2440"] = 166000,
-			["L2440"] = 162498,
+			["mr"] = 230000,
 			["cc"] = 7,
+			["id"] = "124101:0:0:0:0",
+			["H2453"] = 230000,
+			["sc"] = 9,
 		},
 		["Blessed Dawnlight Medallion of the Peerless"] = {
 			["mr"] = 173922810,
@@ -1130,10 +1103,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: Chronomatic Anomaly"] = {
 			["mr"] = 299729,
-			["cc"] = 0,
-			["id"] = "128995:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 299729,
+			["id"] = "128995:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Darkmoon Deck: Immortality"] = {
 			["mr"] = 1989849996,
@@ -1149,6 +1122,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2336"] = 999900,
 			["id"] = "22793:0:0:0:0",
 			["sc"] = 9,
+		},
+		["Bear Tartare"] = {
+			["mr"] = 199899,
+			["sc"] = 5,
+			["id"] = "133576:0:0:0:0",
+			["H2469"] = 199899,
+			["cc"] = 0,
 		},
 		["Flask of the Warm Sun"] = {
 			["mr"] = 528927,
@@ -1179,11 +1159,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 		},
 		["Enchant Cloak - Accuracy"] = {
-			["mr"] = 1077498,
+			["mr"] = 844979,
 			["sc"] = 3,
-			["id"] = "74710:0:0:0:0",
-			["H2431"] = 1077498,
+			["H2460"] = 844979,
 			["cc"] = 8,
+			["id"] = "74710:0:0:0:0",
 		},
 		["Energized Manafiend"] = {
 			["L2408"] = 34990000,
@@ -1202,11 +1182,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 4,
 		},
 		["Enchant Cloak - Superior Intellect"] = {
-			["mr"] = 1107499,
+			["mr"] = 1054978,
 			["sc"] = 3,
-			["id"] = "74712:0:0:0:0",
-			["H2431"] = 1107499,
+			["H2460"] = 1054978,
 			["cc"] = 8,
+			["id"] = "74712:0:0:0:0",
 		},
 		["Eight of Immortality"] = {
 			["mr"] = 200000000,
@@ -1217,10 +1197,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: Helya"] = {
 			["mr"] = 30739999,
-			["cc"] = 0,
-			["id"] = "142103:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 30739999,
+			["id"] = "142103:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Enchant Ring - Binding of Critical Strike"] = {
 			["mr"] = 21590000,
@@ -1237,11 +1217,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 		},
 		["Enchant Cloak - Superior Dodge"] = {
-			["mr"] = 93309123,
+			["mr"] = 87269995,
 			["sc"] = 3,
-			["id"] = "38978:0:0:0:0",
-			["H2431"] = 93309123,
+			["H2460"] = 87269995,
 			["cc"] = 8,
+			["id"] = "38978:0:0:0:0",
 		},
 		["Infernal Brimstone"] = {
 			["mr"] = 2259999,
@@ -1250,25 +1230,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 2259999,
 			["sc"] = 7,
 		},
-		["Potion of Trivial Invisibility"] = {
-			["mr"] = 500000,
-			["sc"] = 1,
-			["id"] = "138728:0:0:0:0",
-			["cc"] = 0,
-			["H2277"] = 500000,
-		},
 		["Vantus Rune: Dragons of Nightmare"] = {
 			["mr"] = 31110000,
-			["cc"] = 0,
-			["id"] = "128990:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 31110000,
+			["id"] = "128990:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Leytorrent Potion"] = {
-			["mr"] = 1212497,
-			["H2396"] = 1212497,
-			["id"] = "127846:0:0:0:0",
+			["mr"] = 1297500,
 			["cc"] = 0,
+			["id"] = "127846:0:0:0:0",
+			["H2457"] = 1297500,
 			["sc"] = 1,
 		},
 		["Enchant Chest - Mana"] = {
@@ -1293,12 +1266,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 4,
 			["id"] = "123896:0:0:0:1698",
 		},
+		["Felsteel Bar"] = {
+			["mr"] = 21115000,
+			["cc"] = 7,
+			["id"] = "23448:0:0:0:0",
+			["H2468"] = 21115000,
+			["sc"] = 7,
+		},
 		["Vantus Rune: Tichondrius"] = {
 			["mr"] = 18027750,
-			["cc"] = 0,
-			["id"] = "128998:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 18027750,
+			["id"] = "128998:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Three of Promises"] = {
 			["mr"] = 144999999,
@@ -1322,18 +1302,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 		},
 		["Enchant Cloak - Greater Dodge"] = {
-			["mr"] = 177323057,
+			["mr"] = 156152605,
 			["sc"] = 3,
-			["id"] = "39000:0:0:0:0",
-			["H2431"] = 177323057,
+			["H2460"] = 156152605,
 			["cc"] = 8,
+			["id"] = "39000:0:0:0:0",
 		},
-		["Raw Beast Hide"] = {
-			["H2285"] = 47185,
-			["mr"] = 47185,
-			["sc"] = 6,
-			["id"] = "110609:0:0:0:0",
-			["cc"] = 7,
+		["Enchant Ring - Word of Haste"] = {
+			["mr"] = 748000,
+			["cc"] = 8,
+			["id"] = "128538:0:0:0:0",
+			["H2408"] = 748000,
+			["sc"] = 10,
 		},
 		["Brilliant Mana Oil"] = {
 			["mr"] = 38120000,
@@ -1350,18 +1330,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 11,
 		},
 		["Enchant Cloak - Superior Defense"] = {
-			["mr"] = 55497501,
+			["mr"] = 60779995,
 			["sc"] = 3,
-			["id"] = "38859:0:0:0:0",
-			["H2431"] = 55497501,
+			["H2460"] = 60779995,
 			["cc"] = 8,
+			["id"] = "38859:0:0:0:0",
 		},
 		["Enchant Cloak - Gift of Versatility"] = {
-			["mr"] = 6433717,
+			["mr"] = 5999899,
 			["cc"] = 8,
-			["id"] = "110656:0:0:0:0",
-			["H2431"] = 6433717,
+			["H2460"] = 5999899,
 			["sc"] = 3,
+			["id"] = "110656:0:0:0:0",
 		},
 		["Leystone Helm of the Peerless"] = {
 			["L2299"] = 14022629,
@@ -1408,11 +1388,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 12,
 		},
 		["Enchant Cloak - Lesser Protection"] = {
-			["mr"] = 1306533,
+			["mr"] = 1293289,
 			["sc"] = 3,
-			["id"] = "38790:0:0:0:0",
-			["H2431"] = 1306533,
+			["H2460"] = 1293289,
 			["cc"] = 8,
+			["id"] = "38790:0:0:0:0",
 		},
 		["Mana-Cord of Deception"] = {
 			["L2408"] = 70143428,
@@ -1445,10 +1425,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Primordial Bloodsoaked Greaves of the Faultline"] = {
 			["mr"] = 194878159,
-			["cc"] = 4,
-			["id"] = "94033:0:0:-118:0",
-			["sc"] = 4,
 			["H2436"] = 194878159,
+			["id"] = "94033:0:0:-118:0",
+			["cc"] = 4,
+			["sc"] = 4,
 		},
 		["Obliterum"] = {
 			["mr"] = 21579997,
@@ -1465,11 +1445,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2299"] = 8499999,
 		},
 		["Formula: Enchant Cloak - Minor Agility"] = {
-			["mr"] = 3883756,
+			["mr"] = 8346417,
 			["cc"] = 9,
-			["id"] = "11039:0:0:0:0",
-			["H2431"] = 3883756,
+			["H2460"] = 8346417,
 			["sc"] = 8,
+			["id"] = "11039:0:0:0:0",
 		},
 		["Darkmoon Rabbit"] = {
 			["H2409"] = 1199119997,
@@ -1479,11 +1459,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 17,
 		},
 		["Enchant Cloak - Word of Agility"] = {
-			["mr"] = 14149998,
+			["mr"] = 9489997,
 			["sc"] = 3,
-			["id"] = "128546:0:0:0:0",
-			["H2431"] = 14149998,
+			["H2460"] = 9489997,
 			["cc"] = 8,
+			["id"] = "128546:0:0:0:0",
 		},
 		["Darkmoon Hatchling"] = {
 			["H2409"] = 142500000,
@@ -1492,20 +1472,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "1061:25",
 			["cc"] = 17,
 		},
-		["Foxflower Flux"] = {
-			["mr"] = 164675,
-			["cc"] = 7,
-			["id"] = "124436:0:0:0:0",
-			["sc"] = 11,
-			["L2440"] = 164675,
-			["H2440"] = 168960,
-		},
-		["Leystone Boots of the Fireflash"] = {
-			["mr"] = 15000000,
-			["cc"] = 4,
-			["id"] = "123892:0:0:0:1696",
+		["Leystone Breastplate of the Feverflare"] = {
+			["mr"] = 89080000,
 			["sc"] = 4,
-			["H2299"] = 15000000,
+			["H2299"] = 89080000,
+			["id"] = "123891:0:0:0:1700",
+			["cc"] = 4,
 		},
 		["Leystone Helm of the Fireflash"] = {
 			["mr"] = 14022629,
@@ -1529,11 +1501,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 10,
 		},
 		["Enchant Cloak - Lesser Agility"] = {
-			["mr"] = 41730000,
+			["mr"] = 55250000,
 			["cc"] = 8,
-			["id"] = "38835:0:0:0:0",
-			["H2431"] = 41730000,
+			["H2460"] = 55250000,
 			["sc"] = 3,
+			["id"] = "38835:0:0:0:0",
 		},
 		["Righteous Dawnlight Medallion of the Feverflare"] = {
 			["mr"] = 75000000,
@@ -1542,19 +1514,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "130242:0:0:0:1765",
 			["cc"] = 4,
 		},
+		["Hardened Adamantite Tube"] = {
+			["mr"] = 1000000,
+			["cc"] = 7,
+			["id"] = "23785:0:0:0:0",
+			["H2468"] = 1000000,
+			["sc"] = 1,
+		},
 		["Dreamleaf Seed"] = {
-			["mr"] = 3997500,
+			["mr"] = 1192500,
 			["cc"] = 7,
 			["id"] = "129285:0:0:0:0",
+			["H2453"] = 1192500,
 			["sc"] = 9,
-			["H2440"] = 3997500,
-		},
-		["Ley-Enriched Water"] = {
-			["mr"] = 1292500,
-			["cc"] = 0,
-			["id"] = "138292:0:0:0:0",
-			["sc"] = 5,
-			["H2299"] = 1292500,
 		},
 		["Leystone Boots of the Quickblade"] = {
 			["mr"] = 13000000,
@@ -1563,33 +1535,48 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "123892:0:0:0:1677",
 			["cc"] = 4,
 		},
-		["Darkmoon Card: Berserker!"] = {
-			["H2409"] = 34190000,
-			["mr"] = 34190000,
-			["sc"] = 0,
-			["id"] = "42989:0:0:0:0",
+		["Leystone Boots of the Fireflash"] = {
+			["mr"] = 15000000,
 			["cc"] = 4,
+			["id"] = "123892:0:0:0:1696",
+			["sc"] = 4,
+			["H2299"] = 15000000,
+		},
+		["Ley-Enriched Water"] = {
+			["mr"] = 1292500,
+			["cc"] = 0,
+			["id"] = "138292:0:0:0:0",
+			["sc"] = 5,
+			["H2299"] = 1292500,
+		},
+		["Khorium Power Core"] = {
+			["mr"] = 38299999,
+			["cc"] = 7,
+			["id"] = "23786:0:0:0:0",
+			["H2468"] = 38299999,
+			["sc"] = 1,
 		},
 		["Flask of the Seventh Demon"] = {
-			["mr"] = 5309996,
-			["H2396"] = 5309996,
-			["id"] = "127848:0:0:0:0",
+			["H2469"] = 4250000,
 			["sc"] = 3,
+			["id"] = "127848:0:0:0:0",
+			["mr"] = 4250000,
 			["cc"] = 0,
+			["H2465"] = 4232499,
 		},
 		["Primordial Bloodsoaked Vambraces of the Mercenary"] = {
 			["mr"] = 87577101,
-			["cc"] = 4,
-			["id"] = "94043:0:0:-139:0",
-			["sc"] = 4,
 			["H2436"] = 87577101,
+			["id"] = "94043:0:0:-139:0",
+			["cc"] = 4,
+			["sc"] = 4,
 		},
-		["Darkmoon Tincture of Deflection"] = {
-			["H2409"] = 107691,
-			["mr"] = 107691,
-			["sc"] = 2,
-			["id"] = "124652:0:0:0:0",
-			["cc"] = 0,
+		["Gusting Grimoire"] = {
+			["mr"] = 2099990000,
+			["H2436"] = 2099990000,
+			["id"] = "1174:25",
+			["cc"] = 17,
+			["sc"] = 0,
 		},
 		["Five of Promises"] = {
 			["mr"] = 144990000,
@@ -1598,25 +1585,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2413"] = 144990000,
 			["sc"] = 0,
 		},
+		["Darkmoon Tincture of Precision"] = {
+			["H2409"] = 248997,
+			["mr"] = 248997,
+			["sc"] = 2,
+			["id"] = "124657:0:0:0:0",
+			["cc"] = 0,
+		},
 		["Masterful Shadowruby"] = {
-			["mr"] = 30999999,
-			["cc"] = 3,
-			["id"] = "130222:0:0:0:0",
+			["mr"] = 21119998,
 			["sc"] = 6,
-			["H2431"] = 30999999,
+			["id"] = "130222:0:0:0:0",
+			["H2453"] = 21119998,
+			["cc"] = 3,
 		},
 		["Darkmoon Draught of Supremacy"] = {
 			["H2409"] = 397999,
 			["mr"] = 397999,
 			["sc"] = 2,
 			["id"] = "124642:0:0:0:0",
-			["cc"] = 0,
-		},
-		["Darkmoon Tincture of Precision"] = {
-			["H2409"] = 248997,
-			["mr"] = 248997,
-			["sc"] = 2,
-			["id"] = "124657:0:0:0:0",
 			["cc"] = 0,
 		},
 		["Darkmoon Dog"] = {
@@ -1628,38 +1615,24 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: High Botanist Tel'arn"] = {
 			["mr"] = 11231999,
-			["cc"] = 0,
-			["id"] = "128999:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 11231999,
-		},
-		["Darkmoon Tincture of Defense"] = {
-			["H2409"] = 148499,
-			["mr"] = 148499,
-			["sc"] = 2,
-			["id"] = "124654:0:0:0:0",
+			["id"] = "128999:0:0:0:0",
 			["cc"] = 0,
+			["sc"] = 9,
+		},
+		["Righteous Dawnlight Medallion of the Quickblade"] = {
+			["mr"] = 75000000,
+			["sc"] = 0,
+			["H2305"] = 75000000,
+			["id"] = "130242:0:0:0:1743",
+			["cc"] = 4,
 		},
 		["Vantus Rune: Odyn"] = {
 			["mr"] = 31969999,
-			["cc"] = 0,
-			["id"] = "142101:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 31969999,
-		},
-		["Vantus Rune: Tomb of Sargeras"] = {
-			["mr"] = 59999999,
+			["id"] = "142101:0:0:0:0",
 			["cc"] = 0,
-			["id"] = "146406:0:0:0:0",
 			["sc"] = 9,
-			["H2412"] = 59999999,
-		},
-		["Enchant Cloak - Dodge"] = {
-			["mr"] = 149830000,
-			["cc"] = 8,
-			["id"] = "38895:0:0:0:0",
-			["H2431"] = 149830000,
-			["sc"] = 3,
 		},
 		["Empowered Manafiend"] = {
 			["mr"] = 59396503,
@@ -1669,12 +1642,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["L2408"] = 59396503,
 		},
-		["Enchant Ring - Binding of Versatility"] = {
-			["mr"] = 44239996,
-			["cc"] = 8,
-			["id"] = "128544:0:0:0:0",
-			["H2408"] = 44239996,
-			["sc"] = 10,
+		["Drums of War"] = {
+			["H2469"] = 29970000,
+			["cc"] = 0,
+			["id"] = "29528:0:0:0:0",
+			["sc"] = 8,
+			["mr"] = 29970000,
 		},
 		["Enchant Ring - Breath of Mastery"] = {
 			["L2408"] = 1132020,
@@ -1685,18 +1658,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 8,
 		},
 		["Enchant Cloak - Wisdom"] = {
-			["mr"] = 49705065,
+			["mr"] = 34389995,
 			["sc"] = 3,
-			["id"] = "39004:0:0:0:0",
-			["H2431"] = 49705065,
+			["H2460"] = 34389995,
 			["cc"] = 8,
+			["id"] = "39004:0:0:0:0",
 		},
-		["Darkmoon Tincture of Deftness"] = {
-			["H2409"] = 308790,
-			["mr"] = 308790,
-			["sc"] = 2,
-			["id"] = "124653:0:0:0:0",
-			["cc"] = 0,
+		["Enchant Cloak - Dodge"] = {
+			["mr"] = 145660000,
+			["cc"] = 8,
+			["H2460"] = 145660000,
+			["sc"] = 3,
+			["id"] = "38895:0:0:0:0",
 		},
 		["Draenic Mana Potion"] = {
 			["mr"] = 48400,
@@ -1705,33 +1678,40 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 48400,
 			["sc"] = 1,
 		},
+		["Enchant Ring - Binding of Versatility"] = {
+			["mr"] = 44239996,
+			["cc"] = 8,
+			["id"] = "128544:0:0:0:0",
+			["H2408"] = 44239996,
+			["sc"] = 10,
+		},
+		["Darkmoon Tincture of Deftness"] = {
+			["H2409"] = 308790,
+			["mr"] = 308790,
+			["sc"] = 2,
+			["id"] = "124653:0:0:0:0",
+			["cc"] = 0,
+		},
+		["Potion of Prolonged Power"] = {
+			["H2465"] = 365093,
+			["sc"] = 1,
+			["id"] = "142117:0:0:0:0",
+			["mr"] = 365093,
+			["cc"] = 0,
+		},
+		["Sallow Pigment"] = {
+			["mr"] = 2095000,
+			["cc"] = 7,
+			["id"] = "129034:0:0:0:0",
+			["H2453"] = 2095000,
+			["sc"] = 16,
+		},
 		["Enchant Ring - Word of Mastery"] = {
 			["mr"] = 1896500,
 			["cc"] = 8,
 			["id"] = "128539:0:0:0:0",
 			["H2408"] = 1896500,
 			["sc"] = 10,
-		},
-		["Skaggldrynk"] = {
-			["mr"] = 1596498,
-			["sc"] = 8,
-			["id"] = "127840:0:0:0:0",
-			["cc"] = 0,
-			["H2277"] = 1596498,
-		},
-		["Potion of Prolonged Power"] = {
-			["mr"] = 353000,
-			["cc"] = 0,
-			["id"] = "142117:0:0:0:0",
-			["H2443"] = 353000,
-			["sc"] = 1,
-		},
-		["Sallow Pigment"] = {
-			["mr"] = 775998,
-			["cc"] = 7,
-			["H2313"] = 775998,
-			["sc"] = 16,
-			["id"] = "129034:0:0:0:0",
 		},
 		["Minor Mana Potion"] = {
 			["mr"] = 633,
@@ -1740,20 +1720,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 633,
 			["sc"] = 1,
 		},
-		["Darkmoon Deck: Dominion"] = {
-			["H2409"] = 989973323,
-			["mr"] = 989973323,
-			["sc"] = 0,
-			["id"] = "128705:0:0:0:666",
-			["cc"] = 4,
-		},
-		["Gleaming Celestial Waistguard"] = {
-			["H2273"] = 3500000000,
-			["cc"] = 4,
-			["id"] = "144407:0:0:0:3445",
-			["L2273"] = 66660000,
-			["mr"] = 3500000000,
-			["sc"] = 4,
+		["Fighter Chow"] = {
+			["H2342"] = 21793,
+			["mr"] = 21793,
+			["sc"] = 5,
+			["id"] = "133577:0:0:0:0",
+			["cc"] = 0,
 		},
 		["Darkmoon Monkey"] = {
 			["H2409"] = 88249999,
@@ -1783,34 +1755,41 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 125968,
 			["sc"] = 1,
 		},
-		["Suramar Surf and Turf"] = {
-			["mr"] = 241000,
-			["cc"] = 0,
-			["id"] = "133566:0:0:0:0",
-			["H2440"] = 241000,
-			["sc"] = 5,
+		["Darkmoon Tonk"] = {
+			["H2409"] = 99230000,
+			["mr"] = 89979994,
+			["sc"] = 0,
+			["id"] = "338:1",
+			["cc"] = 17,
+			["L2409"] = 89979994,
+		},
+		["Versatile Maelstrom Sapphire"] = {
+			["mr"] = 5306903,
+			["sc"] = 8,
+			["id"] = "130221:0:0:0:0",
+			["H2331"] = 5306903,
+			["cc"] = 3,
 		},
 		["Primordial Bloodsoaked Breastplate of the Earthfall"] = {
 			["mr"] = 53200000,
-			["cc"] = 4,
-			["id"] = "94034:0:0:-122:0",
-			["sc"] = 4,
 			["H2436"] = 53200000,
-		},
-		["Leystone Gauntlets of the Quickblade"] = {
-			["L2299"] = 34000000,
-			["mr"] = 34000000,
-			["sc"] = 4,
-			["H2299"] = 99999900,
+			["id"] = "94034:0:0:-122:0",
 			["cc"] = 4,
-			["id"] = "123893:0:0:0:1680",
+			["sc"] = 4,
+		},
+		["Potion of the Old War"] = {
+			["mr"] = 842999,
+			["sc"] = 1,
+			["id"] = "127844:0:0:0:0",
+			["H2436"] = 842999,
+			["cc"] = 0,
 		},
 		["Enchant Cloak - Breath of Mastery"] = {
-			["mr"] = 1889999,
+			["mr"] = 1834998,
 			["cc"] = 8,
-			["id"] = "110633:0:0:0:0",
-			["H2431"] = 1889999,
+			["H2460"] = 1834998,
 			["sc"] = 3,
+			["id"] = "110633:0:0:0:0",
 		},
 		["Enchant Ring - Breath of Haste"] = {
 			["mr"] = 428999,
@@ -1818,13 +1797,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "110618:0:0:0:0",
 			["H2408"] = 428999,
 			["sc"] = 10,
-		},
-		["Primordial Bloodsoaked Gauntlets of the Soldier"] = {
-			["mr"] = 23357928,
-			["cc"] = 4,
-			["id"] = "94032:0:0:-43:0",
-			["sc"] = 4,
-			["H2436"] = 23357928,
 		},
 		["Darkmoon Healing Tonic"] = {
 			["H2409"] = 148999,
@@ -1848,32 +1820,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2299"] = 99950000,
 		},
 		["Drums of Restoration"] = {
-			["mr"] = 65000000,
+			["mr"] = 438740000,
 			["cc"] = 0,
 			["id"] = "29531:0:0:0:0",
-			["H2334"] = 65000000,
+			["H2469"] = 438740000,
 			["sc"] = 8,
 		},
-		["Enchant Cloak - Gift of Mastery"] = {
-			["mr"] = 5000000,
-			["cc"] = 8,
-			["id"] = "110654:0:0:0:0",
-			["H2431"] = 5000000,
-			["sc"] = 3,
+		["Primordial Bloodsoaked Gauntlets of the Soldier"] = {
+			["mr"] = 23357928,
+			["H2436"] = 23357928,
+			["id"] = "94032:0:0:-43:0",
+			["cc"] = 4,
+			["sc"] = 4,
+		},
+		["Leystone Gauntlets of the Quickblade"] = {
+			["L2299"] = 34000000,
+			["mr"] = 34000000,
+			["sc"] = 4,
+			["H2299"] = 99999900,
+			["cc"] = 4,
+			["id"] = "123893:0:0:0:1680",
 		},
 		["Vantus Rune: Nythendra"] = {
 			["mr"] = 14979999,
-			["cc"] = 0,
-			["id"] = "128988:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 14979999,
-		},
-		["Ultrasafe Transporter: Toshley's Station"] = {
-			["mr"] = 83768262,
+			["id"] = "128988:0:0:0:0",
 			["cc"] = 0,
-			["id"] = "30544:0:0:0:0",
-			["sc"] = 0,
-			["H2299"] = 83768262,
+			["sc"] = 9,
 		},
 		["Darkmoon Draught of Defense"] = {
 			["H2409"] = 151496,
@@ -1882,6 +1855,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "124649:0:0:0:0",
 			["cc"] = 0,
 		},
+		["Enchant Cloak - Minor Protection"] = {
+			["mr"] = 6999999,
+			["sc"] = 3,
+			["H2460"] = 6999999,
+			["cc"] = 8,
+			["id"] = "38775:0:0:0:0",
+		},
 		["Leystone Armguards of the Harmonious"] = {
 			["mr"] = 9000000,
 			["sc"] = 4,
@@ -1889,12 +1869,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "123898:0:0:0:1717",
 			["cc"] = 4,
 		},
-		["Volatile Blasting Trigger"] = {
-			["mr"] = 1912500,
-			["sc"] = 1,
-			["id"] = "39690:0:0:0:0",
-			["H2394"] = 1912500,
-			["cc"] = 7,
+		["Enchant Cloak - Gift of Mastery"] = {
+			["mr"] = 2977500,
+			["cc"] = 8,
+			["H2460"] = 2977500,
+			["sc"] = 3,
+			["id"] = "110654:0:0:0:0",
 		},
 		["Lesser Mana Oil"] = {
 			["mr"] = 900000,
@@ -1904,11 +1884,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 8,
 		},
 		["Enchant Cloak - Gift of Critical Strike"] = {
-			["mr"] = 3987499,
+			["H2461"] = 2999900,
 			["cc"] = 8,
 			["id"] = "110652:0:0:0:0",
-			["H2431"] = 3987499,
 			["sc"] = 3,
+			["mr"] = 2999900,
 		},
 		["Darkmoon Tincture of Supremacy"] = {
 			["H2409"] = 709999,
@@ -1916,14 +1896,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["id"] = "124659:0:0:0:0",
 			["cc"] = 0,
-		},
-		["Leystone Gauntlets of the Aurora"] = {
-			["L2299"] = 12744944,
-			["mr"] = 12744944,
-			["cc"] = 4,
-			["id"] = "123893:0:0:0:1706",
-			["H2299"] = 15000000,
-			["sc"] = 4,
 		},
 		["Gorrog's Serene Gaze"] = {
 			["mr"] = 689970000,
@@ -1933,19 +1905,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 3,
 			["H2337"] = 689970000,
 		},
-		["Drums of Rage"] = {
-			["mr"] = 200000,
-			["cc"] = 0,
-			["id"] = "102351:0:0:0:0",
-			["H2334"] = 200000,
-			["sc"] = 8,
+		["Primordial Bloodsoaked Gauntlets of the Bedrock"] = {
+			["mr"] = 23357927,
+			["H2436"] = 23357927,
+			["id"] = "94032:0:0:-125:0",
+			["cc"] = 4,
+			["sc"] = 4,
 		},
-		["Enchant Ring - Word of Haste"] = {
-			["mr"] = 748000,
+		["Enchant Cloak - Major Armor"] = {
+			["mr"] = 6157917,
+			["sc"] = 3,
+			["H2460"] = 6157917,
 			["cc"] = 8,
-			["id"] = "128538:0:0:0:0",
-			["H2408"] = 748000,
-			["sc"] = 10,
+			["id"] = "38914:0:0:0:0",
 		},
 		["Mana Wyrmling"] = {
 			["mr"] = 143371334,
@@ -1954,41 +1926,42 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 143371334,
 			["sc"] = 0,
 		},
-		["Mote of Mana"] = {
-			["mr"] = 232000,
-			["cc"] = 7,
-			["id"] = "22576:0:0:0:0",
-			["H2408"] = 232000,
+		["Crystallized Water"] = {
+			["mr"] = 82170,
 			["sc"] = 10,
+			["id"] = "37705:0:0:0:0",
+			["H2394"] = 82170,
+			["cc"] = 7,
 		},
 		["Nightborne Delicacy Platter"] = {
-			["mr"] = 516000,
+			["mr"] = 270600,
 			["cc"] = 0,
+			["H2466"] = 308443,
 			["id"] = "133572:0:0:0:0",
-			["H2432"] = 516000,
 			["sc"] = 5,
+			["H2469"] = 270600,
 		},
-		["Fighter Chow"] = {
-			["H2342"] = 21793,
-			["mr"] = 21793,
-			["sc"] = 5,
-			["id"] = "133577:0:0:0:0",
-			["cc"] = 0,
+		["Leystone Armguards of the Fireflash"] = {
+			["mr"] = 9000000,
+			["sc"] = 4,
+			["H2299"] = 9000000,
+			["id"] = "123898:0:0:0:1696",
+			["cc"] = 4,
 		},
-		["Darkmoon Zeppelin"] = {
-			["H2409"] = 186819999,
-			["mr"] = 99919998,
+		["Seven of Immortality"] = {
+			["mr"] = 159999999,
 			["sc"] = 0,
-			["id"] = "339:1",
-			["cc"] = 17,
-			["L2409"] = 99919998,
+			["L2441"] = 159999999,
+			["id"] = "128714:0:0:0:0",
+			["cc"] = 12,
+			["H2441"] = 199979998,
 		},
-		["Enchant Ring - Gift of Critical Strike"] = {
-			["mr"] = 5167021,
-			["cc"] = 8,
-			["id"] = "110638:0:0:0:0",
-			["H2408"] = 5167021,
-			["sc"] = 10,
+		["Felsteel Stabilizer"] = {
+			["mr"] = 49337414,
+			["cc"] = 7,
+			["id"] = "23787:0:0:0:0",
+			["H2468"] = 49337414,
+			["sc"] = 1,
 		},
 		["Enchant Neck - Mark of the Versatile"] = {
 			["mr"] = 1000000,
@@ -1998,18 +1971,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 		},
 		["Enchant Cloak - Binding of Intellect"] = {
-			["mr"] = 37200000,
+			["mr"] = 27220000,
 			["sc"] = 3,
-			["id"] = "128550:0:0:0:0",
-			["H2431"] = 37200000,
+			["H2460"] = 27220000,
 			["cc"] = 8,
+			["id"] = "128550:0:0:0:0",
 		},
 		["Enchant Cloak - Minor Power"] = {
-			["mr"] = 31689999,
+			["mr"] = 39459925,
 			["sc"] = 3,
-			["id"] = "38973:0:0:0:0",
-			["H2431"] = 31689999,
+			["H2460"] = 39459925,
 			["cc"] = 8,
+			["id"] = "38973:0:0:0:0",
 		},
 		["Darkmoon Card: Greatness"] = {
 			["H2409"] = 56290000,
@@ -2034,10 +2007,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: Gul'dan"] = {
 			["mr"] = 4874990,
-			["cc"] = 0,
-			["id"] = "129003:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 4874990,
+			["id"] = "129003:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Small Ley Crystal"] = {
 			["mr"] = 26,
@@ -2047,11 +2020,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 15,
 		},
 		["Enchant Cloak - Lesser Power"] = {
-			["mr"] = 2362494,
+			["mr"] = 2317469,
 			["sc"] = 3,
-			["id"] = "52745:0:0:0:0",
-			["H2431"] = 2362494,
+			["H2460"] = 2317469,
 			["cc"] = 8,
+			["id"] = "52745:0:0:0:0",
 		},
 		["Primal Mana"] = {
 			["mr"] = 2495000,
@@ -2060,19 +2033,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 2495000,
 			["sc"] = 10,
 		},
-		["Seal of a Thousand Scars"] = {
-			["H2273"] = 19357570,
-			["sc"] = 0,
-			["id"] = "87441:0:0:0:0",
-			["mr"] = 19357570,
-			["cc"] = 4,
+		["Enchant Cloak - Major Agility"] = {
+			["mr"] = 11806287,
+			["sc"] = 3,
+			["H2460"] = 11806287,
+			["cc"] = 8,
+			["id"] = "44457:0:0:0:0",
 		},
-		["Defiled Augment Rune"] = {
-			["mr"] = 1945000,
-			["sc"] = 8,
-			["id"] = "140587:0:0:0:0",
-			["H2330"] = 1945000,
-			["cc"] = 0,
+		["Enchant Cloak - Word of Strength"] = {
+			["mr"] = 10639997,
+			["sc"] = 3,
+			["H2460"] = 10639997,
+			["cc"] = 8,
+			["id"] = "128545:0:0:0:0",
 		},
 		["Athrog's Dethhamma"] = {
 			["mr"] = 149999999,
@@ -2082,12 +2055,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 			["H2337"] = 571490000,
 		},
-		["Dawnlight"] = {
-			["mr"] = 34789999,
-			["sc"] = 4,
-			["H2305"] = 34789999,
-			["id"] = "130180:0:0:0:0",
-			["cc"] = 7,
+		["Master Mana Potion"] = {
+			["mr"] = 40000,
+			["cc"] = 0,
+			["id"] = "76098:0:0:0:0",
+			["H2408"] = 40000,
+			["sc"] = 1,
 		},
 		["Leystone Greaves of the Harmonious"] = {
 			["mr"] = 10500000,
@@ -2096,33 +2069,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 4,
 			["H2299"] = 10500000,
 		},
-		["Master Mana Potion"] = {
-			["mr"] = 40000,
+		["Flask of the Earth"] = {
+			["mr"] = 163030,
 			["cc"] = 0,
-			["id"] = "76098:0:0:0:0",
-			["H2408"] = 40000,
-			["sc"] = 1,
-		},
-		["Jawless Skulker Flesh"] = {
-			["mr"] = 44950,
-			["sc"] = 8,
-			["id"] = "109138:0:0:0:0",
-			["cc"] = 7,
-			["H2277"] = 44950,
-		},
-		["Chaos Crystal"] = {
-			["mr"] = 1750000,
-			["cc"] = 7,
-			["id"] = "124442:0:0:0:0",
-			["sc"] = 12,
-			["H2277"] = 1750000,
-		},
-		["Enchant Cloak - Major Agility"] = {
-			["mr"] = 10651481,
+			["id"] = "76087:0:0:0:0",
 			["sc"] = 3,
-			["id"] = "44457:0:0:0:0",
-			["H2431"] = 10651481,
-			["cc"] = 8,
+			["H2304"] = 163030,
+		},
+		["Two of Immortality"] = {
+			["mr"] = 129989998,
+			["cc"] = 12,
+			["id"] = "128719:0:0:0:0",
+			["sc"] = 0,
+			["H2441"] = 129989998,
+		},
+		["Leystone Helm of the Quickblade"] = {
+			["mr"] = 99990000,
+			["cc"] = 4,
+			["id"] = "123894:0:0:0:1676",
+			["sc"] = 4,
+			["H2299"] = 99990000,
+		},
+		["Dawnlight"] = {
+			["mr"] = 34789999,
+			["sc"] = 4,
+			["H2305"] = 34789999,
+			["id"] = "130180:0:0:0:0",
+			["cc"] = 7,
 		},
 		["Satyr's Rod"] = {
 			["mr"] = 128816568,
@@ -2138,40 +2111,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 83500,
 			["sc"] = 1,
 		},
-		["Two of Immortality"] = {
-			["mr"] = 129989998,
-			["cc"] = 12,
-			["id"] = "128719:0:0:0:0",
-			["sc"] = 0,
-			["H2441"] = 129989998,
+		["Defiled Augment Rune"] = {
+			["mr"] = 1945000,
+			["sc"] = 8,
+			["id"] = "140587:0:0:0:0",
+			["H2330"] = 1945000,
+			["cc"] = 0,
 		},
 		["Enchant Cloak - Greater Agility"] = {
-			["mr"] = 85180734,
+			["mr"] = 73749977,
 			["sc"] = 3,
+			["H2460"] = 73749977,
+			["cc"] = 8,
 			["id"] = "38940:0:0:0:0",
-			["H2431"] = 85180734,
-			["cc"] = 8,
-		},
-		["Enchant Cloak - Word of Strength"] = {
-			["mr"] = 17430000,
-			["sc"] = 3,
-			["id"] = "128545:0:0:0:0",
-			["H2431"] = 17430000,
-			["cc"] = 8,
-		},
-		["Primordial Bloodsoaked Belt of the Faultline"] = {
-			["mr"] = 116861516,
-			["cc"] = 4,
-			["id"] = "94035:0:0:-118:0",
-			["sc"] = 4,
-			["H2436"] = 116861516,
-		},
-		["Leystone Helm of the Quickblade"] = {
-			["mr"] = 99990000,
-			["cc"] = 4,
-			["id"] = "123894:0:0:0:1676",
-			["sc"] = 4,
-			["H2299"] = 99990000,
 		},
 		["Leystone Buoy"] = {
 			["mr"] = 649000,
@@ -2180,12 +2132,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "136606:0:0:0:0",
 			["cc"] = 0,
 		},
-		["Flask of the Earth"] = {
-			["mr"] = 163030,
-			["cc"] = 0,
-			["id"] = "76087:0:0:0:0",
-			["sc"] = 3,
-			["H2304"] = 163030,
+		["Primordial Bloodsoaked Belt of the Faultline"] = {
+			["mr"] = 116861516,
+			["H2436"] = 116861516,
+			["id"] = "94035:0:0:-118:0",
+			["cc"] = 4,
+			["sc"] = 4,
+		},
+		["Enchant Ring - Gift of Critical Strike"] = {
+			["H2461"] = 3148199,
+			["sc"] = 10,
+			["id"] = "110638:0:0:0:0",
+			["cc"] = 8,
+			["mr"] = 3148199,
 		},
 		["Lesser Mana Potion"] = {
 			["mr"] = 520000,
@@ -2194,76 +2153,55 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 520000,
 			["sc"] = 1,
 		},
-		["Enchant Cloak - Major Armor"] = {
-			["mr"] = 3999994,
-			["sc"] = 3,
-			["id"] = "38914:0:0:0:0",
-			["H2431"] = 3999994,
-			["cc"] = 8,
+		["Darkmoon Zeppelin"] = {
+			["H2409"] = 186819999,
+			["mr"] = 99919998,
+			["sc"] = 0,
+			["id"] = "339:1",
+			["cc"] = 17,
+			["L2409"] = 99919998,
+		},
+		["Mote of Mana"] = {
+			["mr"] = 232000,
+			["cc"] = 7,
+			["id"] = "22576:0:0:0:0",
+			["H2408"] = 232000,
+			["sc"] = 10,
+		},
+		["Drums of Rage"] = {
+			["mr"] = 2709730,
+			["cc"] = 0,
+			["id"] = "102351:0:0:0:0",
+			["H2469"] = 2709730,
+			["sc"] = 8,
 		},
 		["Precise Primordial Ruby"] = {
 			["mr"] = 37022999,
-			["cc"] = 3,
-			["id"] = "76693:0:0:0:0",
-			["sc"] = 7,
 			["H2436"] = 37022999,
+			["id"] = "76693:0:0:0:0",
+			["cc"] = 3,
+			["sc"] = 7,
 		},
 		["Enchant Cloak - Minor Agility"] = {
-			["mr"] = 10500000,
+			["mr"] = 14380000,
 			["sc"] = 3,
-			["id"] = "38789:0:0:0:0",
-			["H2431"] = 10500000,
+			["H2460"] = 14380000,
 			["cc"] = 8,
+			["id"] = "38789:0:0:0:0",
 		},
 		["Enchant Cloak - Greater Protection"] = {
-			["mr"] = 3447499,
+			["mr"] = 3709918,
 			["sc"] = 3,
-			["id"] = "74711:0:0:0:0",
-			["H2431"] = 3447499,
+			["H2460"] = 3709918,
 			["cc"] = 8,
+			["id"] = "74711:0:0:0:0",
 		},
-		["Primordial Bloodsoaked Gauntlets of the Bedrock"] = {
-			["mr"] = 23357927,
-			["cc"] = 4,
-			["id"] = "94032:0:0:-125:0",
-			["sc"] = 4,
-			["H2436"] = 23357927,
-		},
-		["Darkmoon Draught of Precision"] = {
-			["H2409"] = 999999,
-			["mr"] = 999999,
-			["sc"] = 2,
-			["id"] = "124645:0:0:0:0",
-			["cc"] = 0,
-		},
-		["Seven of Immortality"] = {
-			["mr"] = 159999999,
-			["sc"] = 0,
-			["L2441"] = 159999999,
-			["id"] = "128714:0:0:0:0",
-			["cc"] = 12,
-			["H2441"] = 199979998,
-		},
-		["Leystone Armguards of the Fireflash"] = {
-			["mr"] = 9000000,
-			["sc"] = 4,
-			["H2299"] = 9000000,
-			["id"] = "123898:0:0:0:1696",
-			["cc"] = 4,
-		},
-		["Crystallized Water"] = {
-			["mr"] = 82170,
-			["sc"] = 10,
-			["id"] = "37705:0:0:0:0",
-			["H2394"] = 82170,
+		["Volatile Blasting Trigger"] = {
+			["mr"] = 1912500,
+			["sc"] = 1,
+			["id"] = "39690:0:0:0:0",
+			["H2394"] = 1912500,
 			["cc"] = 7,
-		},
-		["Four of Promises"] = {
-			["mr"] = 89530000,
-			["cc"] = 12,
-			["id"] = "128725:0:0:0:0",
-			["H2413"] = 89530000,
-			["sc"] = 0,
 		},
 		["Leystone Breastplate of the Aurora"] = {
 			["L2299"] = 5000000,
@@ -2273,12 +2211,47 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2299"] = 9005000,
 			["sc"] = 4,
 		},
+		["Darkmoon Card: Twisting Nether"] = {
+			["H2409"] = 88200000,
+			["mr"] = 88200000,
+			["sc"] = 0,
+			["id"] = "19290:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Ultrasafe Transporter: Toshley's Station"] = {
+			["mr"] = 83768262,
+			["cc"] = 0,
+			["id"] = "30544:0:0:0:0",
+			["sc"] = 0,
+			["H2299"] = 83768262,
+		},
+		["Suramar Surf and Turf"] = {
+			["mr"] = 241000,
+			["sc"] = 5,
+			["id"] = "133566:0:0:0:0",
+			["cc"] = 0,
+			["H2440"] = 241000,
+		},
+		["Four of Promises"] = {
+			["mr"] = 89530000,
+			["cc"] = 12,
+			["id"] = "128725:0:0:0:0",
+			["H2413"] = 89530000,
+			["sc"] = 0,
+		},
+		["Enchant Cloak - Subtlety"] = {
+			["mr"] = 277870000,
+			["cc"] = 8,
+			["H2460"] = 277870000,
+			["sc"] = 3,
+			["id"] = "38894:0:0:0:0",
+		},
 		["Vantus Rune: Guarm"] = {
 			["mr"] = 11614055,
-			["cc"] = 0,
-			["id"] = "142102:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 11614055,
+			["id"] = "142102:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Formula: Enchant Chest - Minor Mana"] = {
 			["mr"] = 2022633,
@@ -2301,19 +2274,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 60040679,
 			["sc"] = 2,
 		},
-		["Enchant Cloak - Subtlety"] = {
-			["mr"] = 189780000,
-			["cc"] = 8,
-			["id"] = "38894:0:0:0:0",
-			["H2431"] = 189780000,
-			["sc"] = 3,
+		["Darkmoon Deck: Dominion"] = {
+			["H2409"] = 989973323,
+			["mr"] = 989973323,
+			["sc"] = 0,
+			["id"] = "128705:0:0:0:666",
+			["cc"] = 4,
 		},
-		["Enchant Cloak - Minor Protection"] = {
-			["mr"] = 6989995,
-			["sc"] = 3,
-			["id"] = "38775:0:0:0:0",
-			["H2431"] = 6989995,
-			["cc"] = 8,
+		["Vantus Rune: Grand Magistrix Elisande"] = {
+			["mr"] = 11368500,
+			["H2412"] = 11368500,
+			["id"] = "129002:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Dawnlight Band of the Aurora"] = {
 			["L2305"] = 154449999,
@@ -2325,17 +2298,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Vantus Rune: Spellblade Aluriel"] = {
 			["mr"] = 7770000,
-			["cc"] = 0,
-			["id"] = "128997:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 7770000,
+			["id"] = "128997:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Vantus Rune: Xavius"] = {
 			["mr"] = 31930000,
-			["cc"] = 0,
-			["id"] = "128991:0:0:0:0",
-			["sc"] = 9,
 			["H2412"] = 31930000,
+			["id"] = "128991:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Three of Immortality"] = {
 			["mr"] = 200000000,
@@ -2345,12 +2318,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H2441"] = 349990000,
 		},
-		["Potion of the Old War"] = {
-			["mr"] = 842999,
-			["H2436"] = 842999,
-			["id"] = "127844:0:0:0:0",
+		["Vantus Rune: Tomb of Sargeras"] = {
+			["mr"] = 59999999,
+			["H2412"] = 59999999,
+			["id"] = "146406:0:0:0:0",
 			["cc"] = 0,
-			["sc"] = 1,
+			["sc"] = 9,
 		},
 		["Leystone Breastplate of the Harmonious"] = {
 			["mr"] = 1500000,
@@ -2359,48 +2332,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "123891:0:0:0:1716",
 			["cc"] = 4,
 		},
-		["Darkmoon Card: Twisting Nether"] = {
-			["H2409"] = 88200000,
-			["mr"] = 88200000,
-			["sc"] = 0,
-			["id"] = "19290:0:0:0:0",
-			["cc"] = 4,
-		},
-		["Versatile Maelstrom Sapphire"] = {
-			["mr"] = 5306903,
-			["sc"] = 8,
-			["id"] = "130221:0:0:0:0",
-			["H2331"] = 5306903,
-			["cc"] = 3,
-		},
-		["Darkmoon Tonk"] = {
-			["H2409"] = 99230000,
-			["mr"] = 89979994,
-			["sc"] = 0,
-			["id"] = "338:1",
-			["cc"] = 17,
-			["L2409"] = 89979994,
-		},
-		["Darkmoon Draught of Flexibility"] = {
-			["H2409"] = 243999,
-			["mr"] = 243999,
+		["Darkmoon Draught of Precision"] = {
+			["H2409"] = 999999,
+			["mr"] = 999999,
 			["sc"] = 2,
-			["id"] = "124646:0:0:0:0",
+			["id"] = "124645:0:0:0:0",
 			["cc"] = 0,
 		},
-		["Vantus Rune: Grand Magistrix Elisande"] = {
-			["mr"] = 11368500,
+		["Darkmoon Tincture of Defense"] = {
+			["H2409"] = 148499,
+			["mr"] = 148499,
+			["sc"] = 2,
+			["id"] = "124654:0:0:0:0",
 			["cc"] = 0,
-			["id"] = "129002:0:0:0:0",
-			["sc"] = 9,
-			["H2412"] = 11368500,
-		},
-		["Vantus Rune: Star Augur Etraeus"] = {
-			["mr"] = 11949999,
-			["cc"] = 0,
-			["id"] = "129001:0:0:0:0",
-			["sc"] = 9,
-			["H2412"] = 11949999,
 		},
 		["Darkmoon Deck: Hellfire"] = {
 			["H2409"] = 999999994,
@@ -2409,12 +2353,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "128709:0:0:0:669",
 			["cc"] = 4,
 		},
-		["Leystone Breastplate of the Feverflare"] = {
-			["mr"] = 89080000,
-			["sc"] = 4,
-			["H2299"] = 89080000,
-			["id"] = "123891:0:0:0:1700",
-			["cc"] = 4,
+		["Darkmoon Draught of Flexibility"] = {
+			["H2409"] = 243999,
+			["mr"] = 243999,
+			["sc"] = 2,
+			["id"] = "124646:0:0:0:0",
+			["cc"] = 0,
 		},
 		["Darkmoon Tincture of Flexibility"] = {
 			["H2409"] = 762999,
@@ -2423,12 +2367,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "124658:0:0:0:0",
 			["cc"] = 0,
 		},
-		["Righteous Dawnlight Medallion of the Quickblade"] = {
-			["mr"] = 75000000,
-			["sc"] = 0,
-			["H2305"] = 75000000,
-			["id"] = "130242:0:0:0:1743",
-			["cc"] = 4,
+		["Vantus Rune: Star Augur Etraeus"] = {
+			["mr"] = 11949999,
+			["H2412"] = 11949999,
+			["id"] = "129001:0:0:0:0",
+			["cc"] = 0,
+			["sc"] = 9,
 		},
 		["Lavish Suramar Feast"] = {
 			["mr"] = 8719998,
@@ -2437,13 +2381,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 			["H2445"] = 8719998,
 		},
-		["Enchant Ring - Gift of Mastery"] = {
-			["mr"] = 4597499,
-			["cc"] = 8,
-			["id"] = "110640:0:0:0:0",
-			["H2408"] = 5895194,
-			["L2408"] = 4597499,
-			["sc"] = 10,
+		["Darkmoon Tincture of Deflection"] = {
+			["H2409"] = 107691,
+			["mr"] = 107691,
+			["sc"] = 2,
+			["id"] = "124652:0:0:0:0",
+			["cc"] = 0,
 		},
 		["Furystone"] = {
 			["mr"] = 15989998,
@@ -2454,38 +2397,67 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Primordial Saronite"] = {
 			["mr"] = 185000,
-			["cc"] = 7,
-			["id"] = "49908:0:0:0:0",
-			["sc"] = 11,
 			["H2436"] = 185000,
+			["id"] = "49908:0:0:0:0",
+			["cc"] = 7,
+			["sc"] = 11,
+		},
+		["Darkmoon Card: Berserker!"] = {
+			["H2409"] = 34190000,
+			["mr"] = 34190000,
+			["sc"] = 0,
+			["id"] = "42989:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Enchant Ring - Gift of Mastery"] = {
+			["mr"] = 4597499,
+			["cc"] = 8,
+			["id"] = "110640:0:0:0:0",
+			["H2408"] = 5895194,
+			["L2408"] = 4597499,
+			["sc"] = 10,
+		},
+		["Foxflower Flux"] = {
+			["mr"] = 216417,
+			["sc"] = 11,
+			["id"] = "124436:0:0:0:0",
+			["H2458"] = 216417,
+			["cc"] = 7,
+		},
+		["Bolt of Netherweave"] = {
+			["mr"] = 119500,
+			["cc"] = 7,
+			["id"] = "21840:0:0:0:0",
+			["H2468"] = 119500,
+			["sc"] = 5,
 		},
 		["Enchant Cloak - Breath of Versatility"] = {
-			["mr"] = 2640204,
+			["mr"] = 2699991,
 			["sc"] = 3,
-			["id"] = "110635:0:0:0:0",
-			["H2431"] = 2640204,
+			["H2460"] = 2699991,
 			["cc"] = 8,
+			["id"] = "110635:0:0:0:0",
 		},
-		["Vantus Rune: Il'gynoth, The Heart of Corruption"] = {
-			["mr"] = 29959999,
-			["cc"] = 0,
-			["id"] = "128989:0:0:0:0",
-			["sc"] = 9,
-			["H2412"] = 29959999,
+		["Primal Fire"] = {
+			["mr"] = 5279996,
+			["cc"] = 7,
+			["id"] = "21884:0:0:0:0",
+			["H2468"] = 5279996,
+			["sc"] = 10,
 		},
-		["Gusting Grimoire"] = {
-			["mr"] = 2099990000,
-			["cc"] = 17,
-			["id"] = "1174:25",
-			["sc"] = 0,
-			["H2436"] = 2099990000,
+		["Khorium Ore Nugget"] = {
+			["mr"] = 1007500,
+			["cc"] = 7,
+			["id"] = "108304:0:0:0:0",
+			["H2468"] = 1007500,
+			["sc"] = 7,
 		},
 		["Starlight Rosedust"] = {
-			["mr"] = 4699,
-			["cc"] = 15,
-			["id"] = "129158:0:0:0:0",
-			["H2321"] = 4699,
+			["mr"] = 78605,
 			["sc"] = 0,
+			["id"] = "129158:0:0:0:0",
+			["H2458"] = 78605,
+			["cc"] = 15,
 		},
 	},
 	["Kazzak_Horde"] = {
@@ -2503,40 +2475,40 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1482624546,
 		["firstVersion"] = "4.0.16",
 	},
-	["Zuriz"] = {
-		["firstSeen"] = 1480464455,
+	["Krixiyo"] = {
+		["firstSeen"] = 1480934362,
 		["firstVersion"] = "4.0.16",
 	},
 	["Krixi"] = {
 		["firstSeen"] = 1480446210,
 		["firstVersion"] = "4.0.16",
 	},
-	["Krixidk"] = {
-		["firstSeen"] = 1480364461,
-		["firstVersion"] = "4.0.16",
-	},
-	["Krixiyo"] = {
-		["firstSeen"] = 1480934362,
-		["firstVersion"] = "4.0.16",
-	},
-	["Bawsie"] = {
-		["firstSeen"] = 1480464623,
-		["firstVersion"] = "4.0.16",
-	},
-	["Donch"] = {
-		["firstSeen"] = 1481570862,
-		["firstVersion"] = "4.0.16",
-	},
-	["Krixidh"] = {
-		["firstSeen"] = 1480465034,
+	["Kroxi"] = {
+		["firstSeen"] = 1480465179,
 		["firstVersion"] = "4.0.16",
 	},
 	["Namji"] = {
 		["firstSeen"] = 1480464811,
 		["firstVersion"] = "4.0.16",
 	},
-	["Kroxi"] = {
-		["firstSeen"] = 1480465179,
+	["Bawsie"] = {
+		["firstSeen"] = 1480464623,
+		["firstVersion"] = "4.0.16",
+	},
+	["Krixidk"] = {
+		["firstSeen"] = 1480364461,
+		["firstVersion"] = "4.0.16",
+	},
+	["Krixidh"] = {
+		["firstSeen"] = 1480465034,
+		["firstVersion"] = "4.0.16",
+	},
+	["Zuriz"] = {
+		["firstSeen"] = 1480464455,
+		["firstVersion"] = "4.0.16",
+	},
+	["Donch"] = {
+		["firstSeen"] = 1481570862,
 		["firstVersion"] = "4.0.16",
 	},
 	["Zetiz"] = {

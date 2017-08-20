@@ -13,17 +13,13 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 122,
+	["last_encounter"] = "Trilliax",
+	["ignore_nicktag"] = false,
+	["combat_counter"] = 10848,
 	["tabela_historico"] = {
 		["tabelas"] = {
 		},
 	},
-	["ignore_nicktag"] = false,
-	["character_data"] = {
-		["logons"] = 1526,
-	},
-	["last_encounter"] = "Trilliax",
-	["last_version"] = "v7.2.5.4236",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -221,10 +217,23 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 3,
+	["savedbuffs"] = {
 	},
+	["last_instance_time"] = 1498335549,
+	["character_data"] = {
+		["logons"] = 1530,
+	},
+	["last_day"] = "19",
 	["force_font_outline"] = "",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["tabela_instancias"] = {
+	},
+	["combat_id"] = 2456,
+	["savedStyles"] = {
+	},
 	["cached_talents"] = {
 		["Player-1303-03966669"] = {
 			19138, -- [1]
@@ -236,24 +245,20 @@ _detalhes_database = {
 			21204, -- [7]
 		},
 	},
-	["last_day"] = "21",
-	["tabela_instancias"] = {
-	},
-	["combat_id"] = 2456,
-	["savedStyles"] = {
-	},
-	["last_instance_time"] = 1498335549,
-	["nick_tag_cache"] = {
-		["nextreset"] = 1501369612,
-		["last_version"] = 9,
-	},
+	["last_version"] = "v7.2.5.4436",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["combat_counter"] = 10838,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 3,
+	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -308,10 +313,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -424.356981687056,
+					["y"] = -424.356989240157,
 					["x"] = 750.194559715756,
-					["w"] = 208.361206054688,
-					["h"] = 84.4102020263672,
+					["w"] = 208.361083984375,
+					["h"] = 84.4101943969727,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -355,8 +360,7 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["savedbuffs"] = {
-	},
+	["last_realversion"] = 124,
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -364,9 +368,9 @@ _detalhes_database = {
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["nick_tag_cache"] = {
+		["nextreset"] = 1504462513,
+		["last_version"] = 9,
 	},
 	["last_instance_id"] = 1493,
 	["cached_specs"] = {

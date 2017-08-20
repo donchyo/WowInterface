@@ -911,7 +911,6 @@ do
   end
 end
 
-
 local combatLogUpgrade = {
   ["sourceunit"] = "sourceUnit",
   ["source"] = "sourceName",
@@ -958,6 +957,10 @@ function GenericTrigger.Modernize(data)
       end
     end
 
+    if trigger and trigger["event"] and trigger["event"] == "Item Set Equipped" then
+      trigger.event = "Equipment Set";
+    end
+
     -- Convert ember trigger
     local fixEmberTrigger = function(trigger)
       if (trigger.power and not trigger.ember) then
@@ -977,8 +980,8 @@ function GenericTrigger.Modernize(data)
 
     if (trigger and trigger.type and trigger.event and trigger.type == "status"
       and (trigger.event == "Cooldown Progress (Spell)"
-          or trigger.event == "Cooldown Progress (Item)"
-          or trigger.event == "Death Knight Rune")) then
+      or trigger.event == "Cooldown Progress (Item)"
+      or trigger.event == "Death Knight Rune")) then
 
       if (not trigger.showOn) then
         if (trigger.use_inverse) then
@@ -1484,6 +1487,11 @@ do
 
     startTime = startTime or 0;
     duration = duration or 0;
+    -- Sometimes the API returns very high bogus numbers causing client freeezes, discard them here. WowAce issue #1008
+    if (duration > 604800) then
+      duration = 0;
+      startTime = 0;
+    end
 
     return charges, maxCharges, startTime, duration, cooldownBecauseRune;
   end
@@ -2175,13 +2183,13 @@ do
     scheduled_scans[fireTime] = nil;
     WeakAuras.ScanEvents("BigWigs_Timer_Update");
   end
+
   function WeakAuras.ScheduleBigWigsCheck(fireTime)
     if not(scheduled_scans[fireTime]) then
       scheduled_scans[fireTime] = timer:ScheduleTimer(doBigWigsScan, fireTime - GetTime() + 0.1, fireTime);
       WeakAuras.debug("Scheduled BigWigs scan at "..fireTime);
     end
   end
-
 end
 
 -- Weapon Enchants
@@ -2358,6 +2366,22 @@ do
     if not(scheduled_scans[fireTime]) then
       WeakAuras.debug("Scheduled cooldown scan at "..fireTime);
       scheduled_scans[fireTime] = timer:ScheduleTimer(doCooldownScan, fireTime - GetTime() + 0.1, fireTime);
+    end
+  end
+end
+
+do
+  local scheduled_scans = {};
+
+  local function doCastScan(fireTime)
+    WeakAuras.debug("Performing cast scan at "..fireTime.." ("..GetTime()..")");
+    scheduled_scans[fireTime] = nil;
+    WeakAuras.ScanEvents("CAST_REMAINING_CHECK");
+  end
+  function WeakAuras.ScheduleCastCheck(fireTime)
+    if not(scheduled_scans[fireTime]) then
+      WeakAuras.debug("Scheduled cast scan at "..fireTime);
+      scheduled_scans[fireTime] = timer:ScheduleTimer(doCastScan, fireTime - GetTime() + 0.1, fireTime);
     end
   end
 end

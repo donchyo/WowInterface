@@ -1,8 +1,8 @@
 Version: 1
 Frame: SpellBookFrame
 FrameLevel: 1
-Anchor: CENTER
-X: -170
+Anchor: LEFT
+X: 16
 Y: 102
 W: 550
 H: 525

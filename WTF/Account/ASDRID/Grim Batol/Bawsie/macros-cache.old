@@ -37,12 +37,6 @@ VER 3 0100000000000001 " rapid fire" "INV_MISC_QUESTIONMARK"
 /cast [combat] Lifeblood
 /cast Rapid Fire
 END
-VER 3 0100000000000022 "BRESS" "INV_MISC_QUESTIONMARK"
-/cast [@mouseover]Gift of Chi-Ji(Exotic Ability); Gift of Chi-Ji(Exotic Ability)
-END
-VER 3 0100000000000016 "constictor" "INV_MISC_QUESTIONMARK"
-/cast [@bawsie] master's call
-END
 VER 3 010000000000001A "cs" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /stopcasting
@@ -98,6 +92,12 @@ VER 3 010000000000001E "nelf t3" "INV_MISC_QUESTIONMARK"
 .item 8 22440
 .item 10 22441
 .item 19 52252
+END
+VER 3 0100000000000024 "pet bl" "INV_Misc_QuestionMark"
+/cast Netherwinds
+END
+VER 3 0100000000000025 "ress" "INV_Misc_QuestionMark"
+/cast [@mouseover, help][help][@player,help]Eternal Guardian(Exotic Ability)
 END
 VER 3 010000000000001B "stampede" "INV_MISC_QUESTIONMARK"
 #showtooltip Stampede

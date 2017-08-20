@@ -5,14 +5,14 @@ DataStoreDB = {
 			["Default.Shattered Hand.The Funky Bunch"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Kazzak.K A M E L Å S Å"] = {
-				["faction"] = "Horde",
+			["Default.Grim Batol.Hoonigans"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Grim Batol.Lunos"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Jupiter Mining Corp"] = {
-				["faction"] = "Alliance",
+			["Default.Kazzak.K A M E L Å S Å"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Crushridge.The Bulls"] = {
 				["faction"] = "Alliance",
@@ -23,7 +23,7 @@ DataStoreDB = {
 			["Default.Crushridge.Proudly ADDICTED"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Hoonigans"] = {
+			["Default.Grim Batol.Jupiter Mining Corp"] = {
 				["faction"] = "Alliance",
 			},
 		},

@@ -13,16 +13,13 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 122,
+	["last_day"] = "18",
+	["ignore_nicktag"] = false,
+	["combat_counter"] = 7949,
 	["tabela_historico"] = {
 		["tabelas"] = {
 		},
 	},
-	["ignore_nicktag"] = false,
-	["last_version"] = "v7.2.5.4236",
-	["savedbuffs"] = {
-	},
-	["combat_counter"] = 7939,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -789,21 +786,33 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["character_data"] = {
-		["logons"] = 1387,
+	["savedbuffs"] = {
 	},
+	["last_instance_time"] = 1497635359,
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1501353348,
-		["last_version"] = 9,
+	["last_encounter"] = "Grand Magistrix Elisande",
+	["last_realversion"] = 124,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
-	["last_day"] = "17",
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 2855,
 	["savedStyles"] = {
+	},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1503705053,
+		["last_version"] = 9,
+	},
+	["last_version"] = "v7.2.5.4436",
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
 	},
 	["cached_talents"] = {
 		["Player-1303-0387FD7B"] = {
@@ -816,14 +825,9 @@ _detalhes_database = {
 			22446, -- [7]
 		},
 	},
-	["last_instance_time"] = 1497635359,
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
+	["character_data"] = {
+		["logons"] = 1391,
 	},
-	["last_encounter"] = "Grand Magistrix Elisande",
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -878,10 +882,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -424.356981687056,
+					["y"] = -424.356989240157,
 					["x"] = 750.194559715756,
-					["w"] = 208.361206054688,
-					["h"] = 84.4102020263672,
+					["w"] = 208.361083984375,
+					["h"] = 84.4101943969727,
 				},
 				["solo"] = {
 					["y"] = 2,

@@ -128,6 +128,14 @@ if not L then return end
 --Translation missing 
 -- L["STRING_SUMMON_DESC"] = ""
 --Translation missing 
+-- L["STRING_TARGETLOSTHEALTH"] = ""
+--Translation missing 
+-- L["STRING_TARGETLOSTHEALTH_DESC"] = ""
+--Translation missing 
+-- L["STRING_TARGETLOWHEALTH"] = ""
+--Translation missing 
+-- L["STRING_TARGETLOWHEALTH_DESC"] = ""
+--Translation missing 
 -- L["STRING_TRADE"] = ""
 --Translation missing 
 -- L["STRING_TRADE_DESC"] = ""

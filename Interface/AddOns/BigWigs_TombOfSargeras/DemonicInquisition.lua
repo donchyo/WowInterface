@@ -28,6 +28,7 @@ local sweepCounter = 1
 local nextAltPowerWarning = 20
 local suffocatingDarkCounter = 1
 local jailList = {}
+local jailCount = 0
 local jailTimer = nil
 local fixateList = {}
 
@@ -40,6 +41,12 @@ if L then
 	L.fixate = "{-15307} ({41951})"
 	L.fixate_desc = -15307
 	L.fixate_icon = 41951
+
+	L.custom_on_fixate_plates = "Fixate icon on Enemy Nameplate"
+	L.custom_on_fixate_plates_desc = "Show an icon on the target nameplate that is fixating on you.\nRequires the use of Enemy Nameplates. This feature is currently only supported by KuiNameplates."
+	L.custom_on_fixate_plates_icon = L.fixate_icon
+
+	L.infobox_title_prisoners = "%d |4Prisoner:Prisoners;"
 
 	L.custom_on_stop_timers = "Always show ability bars"
 	L.custom_on_stop_timers_desc = "Demonic Inquisition has some spells which are delayed by interupts/other casts. When this option is enabled, the bars for those abilities will stay on your screen."
@@ -68,6 +75,7 @@ function mod:GetOptions()
 		235230, -- Fel Squall
 		248713, -- Soul Corruption
 		{"fixate", "FLASH"},
+		"custom_on_fixate_plates",
 	},{
 		[236283] = "general",
 		[233426] = -14645, -- Atrigan
@@ -102,6 +110,10 @@ function mod:OnBossEnable()
 
 	-- Tormented Soul
 	self:Log("SPELL_AURA_APPLIED_DOSE", "SoulCorruption", 248713)
+
+	if self:Mythic() and self:GetOption("custom_on_fixate_plates") then
+		self:ShowPlates()
+	end
 end
 
 function mod:OnEngage()
@@ -109,12 +121,13 @@ function mod:OnEngage()
 	sweepCounter = 1
 	suffocatingDarkCounter = 1
 	nextAltPowerWarning = 20
+	jailCount = 0
 	jailTimer = nil
 	wipe(jailList)
 	wipe(fixateList)
 
 	-- Jail Infobox
-	self:OpenInfo(236283, self:SpellName(236283))
+	self:OpenInfo(236283, L.infobox_title_prisoners:format(jailCount))
 	self:OpenAltPower("altpower", 233104) -- Torment
 
 	-- Atrigan
@@ -129,10 +142,16 @@ function mod:OnEngage()
 
 	self:RegisterUnitEvent("UNIT_POWER", nil, "player")
 
-	self:Berserk(480, true, nil, 248671, 248671) -- confirmed for nm/hc/my - 248671 has a nice description, 248669 is the aura applied
+	self:Berserk(720, true, nil, 248671, 248671) -- confirmed for nm/hc/my - 248671 has a nice description, 248669 is the aura applied
 
-	if self:Mythic() and (self:CheckOption("fixate", "MESSAGE") or self:CheckOption("fixate", "FLASH")) then
+	if self:Mythic() and (self:GetOption("fixate") > 0 or self:GetOption("custom_on_fixate_plates")) then
 		self:RegisterTargetEvents("CheckForFixate")
+	end
+end
+
+function mod:OnBossDisable()
+	if self:Mythic() and self:GetOption("custom_on_fixate_plates") then
+		self:HidePlates()
 	end
 end
 
@@ -142,10 +161,13 @@ end
 
 function mod:CheckForFixate(_, unit, guid)
 	local mobId = self:MobId(guid)
-	if mobId == 23498 and not fixateList[guid] and self:Me(UnitGUID(unit.."target")) then -- Tormented Fragment
+	if mobId == 121138 and not fixateList[guid] and self:Me(UnitGUID(unit.."target")) then -- Tormented Fragment
 		fixateList[guid] = true
 		self:Flash("fixate", 41951)
 		self:Message("fixate", "Personal", "Long", CL.you:format(self:SpellName(41951)), 41951) -- 41951 = "Fixate"
+		if self:GetOption("custom_on_fixate_plates") then
+			self:AddPlateIcon(41951, guid)
+		end
 	end
 end
 
@@ -215,7 +237,9 @@ do
 		end
 
 		-- Add person to InfoBox
+		jailCount = jailCount + 1
 		jailList[args.destName] = UnitPower(args.destName, 10) or 1 -- Incase we can't grab unitpower
+		self:SetInfoTitle(args.spellId, L.infobox_title_prisoners:format(jailCount))
 		self:SetInfoByTable(args.spellId, jailList)
 		if not jailTimer then
 			jailTimer = self:ScheduleRepeatingTimer(updatePower, 1, self, args.spellId)
@@ -226,10 +250,12 @@ end
 function mod:BelacsPrisonerRemoved(args)
 	-- Remove from InfoBox
 	jailList[args.destName] = nil
+	jailCount = jailCount - 1
 	if not next(jailList) then
 		self:CancelTimer(jailTimer)
 		jailTimer = nil
 	end
+	self:SetInfoTitle(args.spellId, L.infobox_title_prisoners:format(jailCount))
 	self:SetInfoByTable(args.spellId, jailList)
 end
 
@@ -248,7 +274,7 @@ do
 	end
 	function mod:CalcifiedQuills(args)
 		self:GetBossTarget(printTarget, 0.7, args.sourceGUID)
-		self:CastBar(args.spellId, 3)
+		self:CastBar(args.spellId, 5)
 		self:CDBar(args.spellId, 21.5)
 	end
 end

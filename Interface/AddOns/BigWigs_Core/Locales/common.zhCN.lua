@@ -56,3 +56,14 @@ L.active = "激活" -- When a boss becomes active, after speech finishes
 L.marker = "%s标记"
 L.marker_player_desc = "标记受到 %s 影响的玩家为 %s，需要权限。"
 L.marker_npc_desc = "标记 %s 为 %s，需要权限。"
+
+-- Ability where two players have to move close to each other
+L.link = "与%s连接"
+L.link_short = "连接：%s"
+L.link_both = "%s和%s连接"
+L.link_removed = "连接已移除"
+
+-- Abbreviated numbers
+L.amount_one = "%.2f亿"
+L.amount_two = "%.1f万"
+L.amount_three = "%d千"

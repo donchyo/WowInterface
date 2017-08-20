@@ -21,8 +21,8 @@ oRA3DB = {
 		["ReadyCheck"] = {
 			["profiles"] = {
 				["Default"] = {
-					["hideOnCombat"] = false,
 					["autohide"] = false,
+					["hideOnCombat"] = false,
 					["sound"] = false,
 				},
 			},
@@ -90,7 +90,7 @@ oRA3DB = {
 		["Difficulty"] = {
 			["profiles"] = {
 				["Default"] = {
-					["prevRaidDifficulty"] = 14,
+					["prevRaidDifficulty"] = 15,
 				},
 				["Skullflower"] = {
 					["prevRaidDifficulty"] = 16,
@@ -125,7 +125,7 @@ oRA3DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["lastSelectedPanel"] = "Checks",
+			["lastSelectedList"] = 2,
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148,
@@ -150,10 +150,10 @@ oRA3DB = {
 					["PosX"] = 1144.37755254617,
 				},
 			},
-			["lastSelectedList"] = 2,
+			["lastSelectedPanel"] = "Checks",
 		},
 		["Skullflower"] = {
-			["lastSelectedList"] = 1,
+			["lastSelectedPanel"] = "Checks",
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148.000015258789,
@@ -178,7 +178,7 @@ oRA3DB = {
 					["PosX"] = 1028.80052461621,
 				},
 			},
-			["lastSelectedPanel"] = "Promote",
+			["lastSelectedList"] = 1,
 		},
 	},
 }

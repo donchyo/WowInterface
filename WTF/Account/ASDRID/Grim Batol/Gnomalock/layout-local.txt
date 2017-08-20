@@ -55,13 +55,6 @@ X: 6
 Y: -13
 W: 790
 H: 454
-Frame: WQGFManualActionsFrame
-FrameLevel: 0
-Anchor: CENTER
-X: 0
-Y: 60
-W: 370
-H: 110
 Frame: EveryGoldToBankerCalculator
 FrameLevel: 13
 Anchor: CENTER
@@ -69,3 +62,10 @@ X: 119
 Y: 129
 W: 290
 H: 234
+Frame: WQGFManualActionsFrame
+FrameLevel: 0
+Anchor: RIGHT
+X: 0
+Y: 179
+W: 370
+H: 110

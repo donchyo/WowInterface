@@ -15,11 +15,10 @@ local WorldFrame = WorldFrame
 
 local TidyPlatesThreat = TidyPlatesThreat
 
-local ICON_PATH = "Interface\\AddOns\\TidyPlates_ThreatPlates\\Widgets\\QuestWidget\\questicon_wide"
-
 -- local WidgetList = {}
 local tooltip_frame = CreateFrame("GameTooltip", "ThreatPlates_Tooltip", nil, "GameTooltipTemplate")
 local player_name = UnitName("player")
+local ICON_COLORS = {}
 
 ---------------------------------------------------------------------------------------------------
 -- Threat Plates functions
@@ -47,6 +46,8 @@ local function IsQuestUnit(unit)
 				quest_area = true
 			else
 				local unit_name, progress = string.match(text, "^ ([^ ]-) ?%- (.+)$")
+				-- local area_progress = string.match(progress, "(%d+)%%$")
+
 				if progress then
 					quest_area = nil
 
@@ -72,7 +73,9 @@ local function IsQuestUnit(unit)
 		end
 	end
 
-	return quest_player or quest_area --or quest_group
+	local quest_type = ((quest_player or quest_area) and 1) or (quest_group and 2)
+
+	return quest_type ~= false, quest_type
 end
 
 local function ShowQuestUnit(unit)
@@ -92,6 +95,7 @@ local function ShowQuestUnit(unit)
 
 		if IsInInstance() and db.HideInInstance then
 			show_quest_mark = false
+
 		end
 	end
 
@@ -126,11 +130,20 @@ local function UpdateSettings(frame)
 	local size = db.scale
 	frame:SetSize(size, size)
 	frame:SetAlpha(db.alpha)
+
+	ICON_COLORS[1] = db.ColorPlayerQuest
+	ICON_COLORS[2] = db.ColorGroupQuest
+
+	local icon_path = "Interface\\AddOns\\TidyPlates_ThreatPlates\\Widgets\\QuestWidget\\" .. db.IconTexture
+	frame.Icon:SetTexture(icon_path)
+	frame.Icon:SetAllPoints()
 end
 
 -- Update Graphics
 local function UpdateWidgetFrame(frame, unit)
-	if ShowQuestUnit(unit) and IsQuestUnit(unit) then
+	local show, quest_type = IsQuestUnit(unit)
+
+	if ShowQuestUnit(unit) and show then
 		local db = TidyPlatesThreat.db.profile.questWidget
 
 		local style = unit.TP_Style
@@ -139,6 +152,9 @@ local function UpdateWidgetFrame(frame, unit)
 		else
 			frame:SetPoint("CENTER", frame:GetParent(), db.x, db.y)
 		end
+
+		local color = ICON_COLORS[quest_type]
+		frame.Icon:SetVertexColor(color.r, color.g, color.b)
 
 		frame:Show()
 	else
@@ -183,8 +199,6 @@ local function CreateWidgetFrame(parent)
 	-- Custom Code III
 	--------------------------------------
 	frame.Icon = frame:CreateTexture(nil, "OVERLAY")
-	frame.Icon:SetTexture(ICON_PATH)
-	frame.Icon:SetAllPoints()
 
 	UpdateSettings(frame)
 	frame.UpdateConfig = UpdateSettings
@@ -200,7 +214,7 @@ local function CreateWidgetFrame(parent)
 	return frame
 end
 
-TidyPlatesThreat.IsQuestUnit = IsQuestUnit
-TidyPlatesThreat.ShowQuestUnit = ShowQuestUnit
+ThreatPlates.IsQuestUnit = IsQuestUnit
+ThreatPlates.ShowQuestUnit = ShowQuestUnit
 
 ThreatPlatesWidgets.RegisterWidget("QuestWidgetTPTP", CreateWidgetFrame, false, enabled, EnabledInHeadlineView)

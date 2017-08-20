@@ -1,16 +1,20 @@
---//Unsure if this even works as intended, seems to work, needs more testing
 SS_savedVariables = {
 	-- {"savedvar", defaultValue, "valueinherit"}
 	SS_ScannerInterval = {"scantimer", 5, "SS_ScannerIntervalSlider"},
 	SS_NotificationInterval = {"notificationtimer", 10, "SS_NotificationIntervalSlider"},
-	SS_addonVersion = {"version", 7.21},
+	SS_addonVersion = {"version", 7.23},
 	SS_satchelsReceived = {"satchels", 0},
 	SS_showUI = {"showMainFrame", true},
 	-- Buttons
 	SS_scanInDungeon = {"scanInDungeon", false, "SS_scanInDungeonButton"},
 	SS_scanInGroup = {"scanInGroup", false, "SS_scanInGroupButton"},	
 	SS_raidWarnNotify = {"raidwarning", true, "SS_raidWarningButton"},
+	SS_DisableGear = {"GearCheck", false, "SS_DisableGearButton"},
+	SS_DisableClass = {"ClassCheck", false, "SS_DisableClassButton"},
+	SS_CompleteLFROnce = {"LFROnce", false, "SS_CompleteLFROnceButton"},
+	SS_CompleteLFGOnce = {"LFGOnce", false, "SS_CompleteLFGOnceButton"},
 	SS_playSound = {"sounds", true, "SS_playSoundButton"},
+	MainFrameLoc = {""},
 	Instance_Trigger = {"InstanceTrigger"},
 };
 
@@ -24,6 +28,9 @@ function SS_datacall(data)
 		for i, var in pairs(SS_savedVariables) do
 			if string.find(var[1], "satchels") and not (_G[var[1]] == nil) then
 				SatchelScannerDB[var[1]] = _G[i];
+			elseif string.find(i, "MainFrameLoc") then
+				SatchelScannerDisplayWindow:SetPoint("TOPLEFT", 200, -400);
+				SatchelScannerDB[i] = {SatchelScannerDisplayWindow:GetPoint();}
 			elseif string.find(i, "Instance_Trigger") then
 				for j=1,3,1 do
 					local role = {"_Tank","_Heal","_Dps"}
@@ -42,7 +49,8 @@ function SS_datacall(data)
 	elseif data == "update" then
 		for i, var in pairs(SS_savedVariables) do
 			if string.find(var[3] or "", "Button") then
-				SatchelScannerDB[var[1]] = SS_Globals[var[3]]:GetChecked();
+				SatchelScannerDB[var[1]] = SS_Globals[var[3]]:GetChecked()
+			elseif string.find(i, "MainFrameLoc") then
 			elseif string.find(i, "Instance_Trigger") then
 				for j=1,3,1 do
 					local role = {"_Tank","_Heal","_Dps"}
@@ -63,7 +71,7 @@ function SS_datacall(data)
 		end
 		SatchelScannerDB["showMainFrame"] = SS_showUI;
 		SS_datacall("read");
-	elseif SatchelScannerDB["version"] < 7.21 then
+	elseif SatchelScannerDB["version"] < 7.23 then
 		_G["SS_satchelsReceived"] = SatchelScannerDB["satchels"];
 		SS_datacall("reset");
 	elseif data == "read" then
@@ -74,6 +82,14 @@ function SS_datacall(data)
 			elseif string.find(var[3] or "", "Slider") then
 				_G[i] = SatchelScannerDB[var[1]];
 				SS_Globals[var[3]]:SetValue(_G[i]);
+			elseif string.find(i, "MainFrameLoc") then
+				if(SatchelScannerDB[i]) then
+					local x = {unpack(SatchelScannerDB[i])}
+					SatchelScannerDisplayWindow:SetPoint(x[1], nil, x[3], x[4], x[5]);
+				else
+					SatchelScannerDisplayWindow:SetPoint("TOPLEFT", 200, -400);
+					SatchelScannerDB[i] = {SatchelScannerDisplayWindow:GetPoint();}
+				end
 			elseif string.find(i, "SS_satchelsReceived") then
 				_G[i] = SatchelScannerDB[var[1]];
 				_G["SS_bagCounterText"]:SetText(_G[i]);

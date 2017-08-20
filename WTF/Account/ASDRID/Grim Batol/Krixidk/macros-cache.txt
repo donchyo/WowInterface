@@ -1,7 +1,3 @@
-VER 3 0100000000000026 "DE BELTS" "INV_MISC_QUESTIONMARK"
-/cast disenchant 
-/use item:126993
-END
 VER 3 0100000000000017 "deaths advance" "INV_Misc_QuestionMark"
 #showtooltip
 /use [nomod] !wraith walk
@@ -58,6 +54,10 @@ END
 VER 3 0100000000000020 "starlight" "INV_MISC_QUESTIONMARK"
 /run BuyMerchantItem(17,9) 
  
+END
+VER 3 0100000000000028 "vampblood deaths" "INV_MISC_QUESTIONMARK"
+/cast vampiric blood
+/cast death strike
 END
 VER 3 0100000000000019 "´leap" "INV_Misc_QuestionMark"
 #showtooltip

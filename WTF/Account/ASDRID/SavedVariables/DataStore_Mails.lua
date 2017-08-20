@@ -3,8 +3,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1500593472,
-				["lastVisitDate"] = "2017/07/21 01:31",
+				["lastUpdate"] = 1501366823,
+				["lastVisitDate"] = "2017/07/30 00:20",
 			},
 			["Default.Aggra (Português).Treefiddy"] = {
 				["lastUpdate"] = 1444761294,
@@ -45,24 +45,24 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/02/22 11:30",
 			},
 			["Default.Grim Batol.Zolution"] = {
-				["lastUpdate"] = 1497663600,
-				["lastVisitDate"] = "2017/06/17 03:40",
+				["lastUpdate"] = 1501799426,
+				["lastVisitDate"] = "2017/08/04 00:30",
 			},
 			["Default.Aggra (Português).Kroxidps"] = {
 				["lastUpdate"] = 1423512245,
 				["lastVisitDate"] = "2015/02/09 21:04",
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1500757037,
-				["lastVisitDate"] = "2017/07/22 22:57",
+				["lastUpdate"] = 1501366924,
+				["lastVisitDate"] = "2017/07/30 00:22",
 			},
 			["Default.Grim Batol.Krixidh"] = {
 				["lastUpdate"] = 1497557555,
 				["lastVisitDate"] = "2017/06/15 22:12",
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1501108031,
-				["lastVisitDate"] = "2017/07/27 00:27",
+				["lastUpdate"] = 1503185895,
+				["lastVisitDate"] = "2017/08/20 01:38",
 			},
 			["Default.Twisting Nether.Krixiyo"] = {
 				["lastUpdate"] = 1482549431,
@@ -149,8 +149,20 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/12/27 01:59",
 			},
 			["Default.Grim Batol.Bawsie"] = {
-				["lastUpdate"] = 1497663563,
-				["lastVisitDate"] = "2017/06/17 03:39",
+				["lastUpdate"] = 1503188829,
+				["Mails"] = {
+					{
+						["lastCheck"] = 1503188829,
+						["sender"] = "Thaumaturge Vashreen",
+						["subject"] = "Lost Currency",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["icon"] = 134327,
+						["daysLeft"] = 29.9957981109619,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2017/08/20 02:27",
 			},
 			["Default.Kazzak.Lilgaykrixi"] = {
 				["lastUpdate"] = 1456079516,
@@ -173,20 +185,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/11/16 13:04",
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1497663459,
-				["Mails"] = {
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Mogu'shan Palace in our ledgers, and it apparently belongs to you. 10 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1497663459,
-						["daysLeft"] = 29.6794338226318,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2017/06/17 03:37",
+				["lastUpdate"] = 1503072386,
+				["lastVisitDate"] = "2017/08/18 18:06",
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684636,
@@ -197,16 +197,16 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2017/06/17 03:40",
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1501108136,
-				["lastVisitDate"] = "2017/07/27 00:28",
+				["lastUpdate"] = 1503166482,
+				["lastVisitDate"] = "2017/08/19 20:14",
 			},
 			["Default.Grim Batol.Nyrith"] = {
-				["lastUpdate"] = 1500926174,
-				["lastVisitDate"] = "2017/07/24 21:56",
+				["lastUpdate"] = 1503166301,
+				["lastVisitDate"] = "2017/08/19 20:11",
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1500059111,
-				["lastVisitDate"] = "2017/07/14 21:05",
+				["lastUpdate"] = 1503007748,
+				["lastVisitDate"] = "2017/08/18 00:09",
 			},
 			["Default.Shattered Hand.Bawsi"] = {
 				["lastUpdate"] = 1423512002,
@@ -217,20 +217,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/12/05 11:45",
 			},
 			["Default.Grim Batol.Namji"] = {
-				["lastUpdate"] = 1497663508,
-				["Mails"] = {
-					{
-						["lastCheck"] = 1497663508,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Temple of the Jade Serpent in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 29.6504631042481,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2017/06/17 03:38",
+				["lastUpdate"] = 1501367009,
+				["lastVisitDate"] = "2017/07/30 00:23",
 			},
 		},
 		["Options"] = {
@@ -252,10 +240,10 @@ DataStore_MailsDB = {
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -266,7 +254,7 @@ DataStore_MailsDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",

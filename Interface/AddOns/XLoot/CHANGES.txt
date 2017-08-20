@@ -1,12 +1,12 @@
-tag 07cb87129bc6f7017d28873745216c30ac0eaf63 7.2-8
+tag dcbf5ee08407ff1e49db156ee3d7611a82c491ae 7.2-9
 Author:	Xuerian <xuerian@gmail.com>
-Date:	Mon Jul 17 17:27:35 2017 -0400
+Date:	Wed Jul 26 22:19:55 2017 -0400
 
-Frame: Fix errors when autolooting
+Autolooting fixes
 
-commit 430dd80b8a0aab500529e468828c6f23775d24f5
+commit f9d51e846946cd4b3790846f8025d062ecad9b56
 Author: Xuerian <xuerian@gmail.com>
-Date:   Mon Jul 17 17:27:14 2017 -0400
+Date:   Wed Jul 26 22:19:26 2017 -0400
 
-    Frame: Fix errors when autolooting
+    More autolooting fixes
 
