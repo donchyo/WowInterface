@@ -1,4 +1,48 @@
 ------------------------------------------------------------------------
+r14 | Tercioo | 2017-09-04 14:48:14 -0500 (Mon, 04 Sep 2017) | 4 lines
+Changed paths:
+   M /trunk/Libs/AceComm-3.0/AceComm-3.0.lua
+   M /trunk/boot.lua
+   M /trunk/classes/container_combatentes.lua
+   M /trunk/functions/playerclass.lua
+   M /trunk/functions/profiles.lua
+   M /trunk/functions/spells.lua
+   M /trunk/gumps/janela_options.lua
+   M /trunk/gumps/janela_principal.lua
+
+- Added an option to always show all players when using the standard mode. Option under PvP/PvE bracket on the options panel.
+- Added a setting to exclude healing done lines from the death log below a certain healing amount. This options is also under PvP/PvE bracket.
+- Improved the class and spec detection, it should almost always detect correctly now.
+- Fixed an issue when clicking on the spec icon on the player bar when outside a raid instance.
+------------------------------------------------------------------------
+r13 | Tercioo | 2017-08-29 15:18:29 -0500 (Tue, 29 Aug 2017) | 1 line
+Changed paths:
+   M /trunk/boot.lua
+
+- ingame changelog is important too.
+------------------------------------------------------------------------
+r12 | Tercioo | 2017-08-29 15:03:11 -0500 (Tue, 29 Aug 2017) | 2 lines
+Changed paths:
+   M /trunk/Details.toc
+   M /trunk/boot.lua
+   M /trunk/core/gears.lua
+   M /trunk/core/parser.lua
+   M /trunk/functions/profiles.lua
+   M /trunk/functions/slash.lua
+   M /trunk/gumps/janela_principal.lua
+
+- Added a message on boss pull telling the player record on the boss.
+- ToC 7.3.
+------------------------------------------------------------------------
+r11 | Tercioo | 2017-08-21 19:09:24 -0500 (Mon, 21 Aug 2017) | 1 line
+Changed paths:
+   M /trunk/boot.lua
+   M /trunk/classes/classe_others.lua
+   M /trunk/functions/profiles.lua
+   M /trunk/functions/slash.lua
+
+- Added (for tests) healing done cap for death log. Use /run Details.deathlog_healingdone_min = 10000.
+------------------------------------------------------------------------
 r10 | Tercioo | 2017-08-17 10:55:35 -0500 (Thu, 17 Aug 2017) | 1 line
 Changed paths:
    M /trunk/boot.lua

@@ -1,8 +1,10 @@
-commit a46b080140d1fcffddb5f3c6cd487847271fbb0b
-Author: Saregon <n_rhygar@yahoo.it>
-Date:   Wed Jun 14 18:59:30 2017 +0200
+lightweight tag 5ff033bb3d7c878b61f08fb87abff2cc8a7e00ad v1.5.2.6
+Author:	Saregon <n_rhygar@yahoo.it>
+Date:	Wed Aug 30 21:28:22 2017 +0200
 
-    repository change
-    
-    7.2.5 update
+commit 5ff033bb3d7c878b61f08fb87abff2cc8a7e00ad
+Author: Saregon <n_rhygar@yahoo.it>
+Date:   Wed Aug 30 21:28:22 2017 +0200
+
+    7.3 toc update
 

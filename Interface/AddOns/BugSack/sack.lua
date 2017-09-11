@@ -185,13 +185,13 @@ local function createBugSack()
 	window:SetScript("OnDragStart", window.StartMoving)
 	window:SetScript("OnDragStop", window.StopMovingOrSizing)
 	window:SetScript("OnShow", function()
-		PlaySound("igQuestLogOpen")
+		PlaySound(844) -- SOUNDKIT.IG_QUEST_LOG_OPEN
 	end)
 	window:SetScript("OnHide", function()
-		PlaySound("igQuestLogClose")
 		currentErrorObject = nil
 		currentSackSession = nil
 		currentSackContents = nil
+		PlaySound(845) -- SOUNDKIT.IG_QUEST_LOG_CLOSE
 	end)
 
 	local titlebg = window:CreateTexture(nil, "BORDER")
@@ -450,7 +450,7 @@ function addon:CloseSack()
 	window:Hide()
 end
 
-function addon:OpenSack(errorObject)
+function addon:OpenSack()
 	if window and window:IsShown() then
 		-- Window is already open, we just need to update various texts.
 		return

@@ -8,14 +8,15 @@ IndicatorsDB = {
 		["Bawsie - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Nyrith - Grim Batol"] = "Default",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Zetiz - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
@@ -23,7 +24,7 @@ IndicatorsDB = {
 		["Krixi - Grim Batol"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
 		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
 		["Zuriz - Grim Batol"] = "Default",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
@@ -46,6 +47,10 @@ IndicatorsDB = {
 		},
 		["Zolution - Grim Batol"] = {
 		},
+		["Krixikin - Grim Batol"] = {
+			["showDebuffs"] = true,
+			["showBuffs"] = true,
+		},
 		["Donch - Shattered Hand"] = {
 		},
 		["Krixidk - Grim Batol"] = {
@@ -58,41 +63,41 @@ IndicatorsDB = {
 			["stack5"] = false,
 			["showBuffs"] = true,
 		},
-		["Krixidh - Grim Batol"] = {
-		},
 		["Greenzuriz - Aggra (Português)"] = {
+		},
+		["Krixidh - Grim Batol"] = {
 		},
 		["Menardiairl - Culte de la Rive noire"] = {
 		},
-		["Kroxi - Crushridge"] = {
+		["Default"] = {
+			["size4"] = 8,
+			["size3"] = 12,
+			["showBuffs"] = true,
+			["iconSize6"] = 15,
+			["auras5"] = "Deterance\nIce Block\nShield Wall\nIcebound Fortitude\nBarkskin\nIronbark\nHand of Sacrifice\nPain Suppression\nEvasion\nCloak of Shadows\nTouch of Karma\nGuardian of Ancient Kings\nFortifying Brew\nSurvival Instincts\nPower Word: Barrier\n",
+			["showDecimals5"] = false,
+			["showDispelDebuffs"] = true,
+			["iconSize4"] = 15,
+			["iconSize2"] = 15,
+			["showDebuffs"] = true,
+			["iconSize3"] = 15,
+			["showDecimals1"] = false,
+			["size5"] = 12,
+			["iconSize5"] = 15,
+			["showDecimals4"] = false,
+			["showDecimals2"] = false,
+			["showDecimals3"] = false,
+			["auras2"] = "\n",
 		},
-		["Krixi - Grim Batol"] = {
+		["Zetiz - Grim Batol"] = {
 		},
 		["Daimtårta - Aggra (Português)"] = {
 		},
 		["Treefiddy - Aggra (Português)"] = {
 		},
-		["Krixiyo - Blackmoore"] = {
+		["Kroxi - Crushridge"] = {
 		},
-		["Default"] = {
-			["size4"] = 8,
-			["showDebuffs"] = true,
-			["showDispelDebuffs"] = true,
-			["showDecimals4"] = false,
-			["auras5"] = "Deterance\nIce Block\nShield Wall\nIcebound Fortitude\nBarkskin\nIronbark\nHand of Sacrifice\nPain Suppression\nEvasion\nCloak of Shadows\nTouch of Karma\nGuardian of Ancient Kings\nFortifying Brew\nSurvival Instincts\nPower Word: Barrier\n",
-			["iconSize4"] = 15,
-			["showDecimals1"] = false,
-			["iconSize3"] = 15,
-			["iconSize6"] = 15,
-			["size5"] = 12,
-			["showDecimals5"] = false,
-			["auras2"] = "\n",
-			["iconSize2"] = 15,
-			["iconSize5"] = 15,
-			["showDecimals3"] = false,
-			["showBuffs"] = true,
-			["size3"] = 12,
-			["showDecimals2"] = false,
+		["Krixiyo - Blackmoore"] = {
 		},
 		["Krixiyo - Lightning's Blade"] = {
 		},
@@ -109,7 +114,7 @@ IndicatorsDB = {
 			["showDispelDebuffs"] = true,
 			["showBuffs"] = true,
 		},
-		["Zetiz - Grim Batol"] = {
+		["Krixi - Grim Batol"] = {
 		},
 		["Gnomalock - Grim Batol"] = {
 			["showDebuffs"] = true,

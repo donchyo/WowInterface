@@ -1,15 +1,8 @@
 ------------------------------------------------------------------------
-r135 | olafskii | 2017-03-29 13:45:50 -0500 (Wed, 29 Mar 2017) | 1 line
+r137 | olafskii | 2017-08-30 14:44:29 -0500 (Wed, 30 Aug 2017) | 1 line
 Changed paths:
    M /trunk/AutoVendor.toc
 
-Version bump.
-------------------------------------------------------------------------
-r134 | olafskii | 2017-03-29 13:45:31 -0500 (Wed, 29 Mar 2017) | 1 line
-Changed paths:
-   M /trunk/AutoVendor.lua
-   M /trunk/AutoVendor.toc
-
-Updated for WoW version 7.2, fixing an interface error.
+Updated for WoW patch 7.3.
 ------------------------------------------------------------------------
 

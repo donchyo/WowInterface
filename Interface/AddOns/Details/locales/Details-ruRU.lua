@@ -498,6 +498,10 @@ L["STRING_OPTIONS_ALPHAMOD_ANCHOR"] = "Авто-скрытие:"
 L["STRING_OPTIONS_ALWAYS_USE"] = "Использовать на всех персонажах"
 L["STRING_OPTIONS_ALWAYS_USE_DESC"] = "Профиль, используемый всеми персонажами. Вы можете изменить это на любом персонаже, просто выбрав другой профиль."
 --Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"] = ""
+--Translation missing 
 -- L["STRING_OPTIONS_ANCHOR"] = ""
 L["STRING_OPTIONS_ANIMATEBARS"] = "Анимация полос"
 L["STRING_OPTIONS_ANIMATEBARS_DESC"] = "Включить анимацию для всех полос."
@@ -727,6 +731,10 @@ L["STRING_OPTIONS_DEATHLIMIT"] = "Счетчик смертей"
 L["STRING_OPTIONS_DEATHLIMIT_DESC"] = [=[Установить количество событий, отображаемых в мониторе смертей.
 
 |cFFFFFF00Важно|r: относится только к новым смертям после применения.]=]
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"] = ""
 L["STRING_OPTIONS_DESATURATE_MENU"] = "Ненасыщенный"
 L["STRING_OPTIONS_DESATURATE_MENU_DESC"] = "Включив данную опцию, все иконки меню на панели инструментов станут черно-белыми"
 L["STRING_OPTIONS_DISABLE_ALLDISPLAYSWINDOW"] = "Отключить меню 'Все Мониторы'"

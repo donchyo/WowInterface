@@ -1,7 +1,5 @@
 
 ElvCharacterDB = {
-	["ChatLog"] = {
-	},
 	["ChatEditHistory"] = {
 		"/g menardia might be dead by then", -- [1]
 		"/g hes old", -- [2]
@@ -18,5 +16,7 @@ ElvCharacterDB = {
 		["MaxHealth"] = 0,
 		["Health"] = 0,
 		["Active"] = false,
+	},
+	["ChatLog"] = {
 	},
 }

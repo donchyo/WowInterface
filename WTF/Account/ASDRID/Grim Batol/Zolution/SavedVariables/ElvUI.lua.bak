@@ -1,5 +1,13 @@
 
 ElvCharacterDB = {
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+	["ChatLog"] = {
+	},
 	["ChatEditHistory"] = {
 		"/g menardia might be dead by then", -- [1]
 		"/g hes old", -- [2]
@@ -10,13 +18,5 @@ ElvCharacterDB = {
 		"/g a shit set", -- [7]
 		"/g nope", -- [8]
 		"/g i thought it was fun", -- [9]
-	},
-	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
-		["IsInValidZone"] = true,
-	},
-	["ChatLog"] = {
 	},
 }

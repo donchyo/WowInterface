@@ -63,44 +63,44 @@ DataStoreDB = {
 				["guildName"] = "The Bulls",
 				["faction"] = "Alliance",
 			},
+			["Default.Grim Batol.Krixikin"] = {
+				["guildName"] = "Hoonigans",
+				["faction"] = "Alliance",
+			},
 			["Default.Twisting Nether.Krixiyo"] = {
 				["faction"] = "Horde",
 			},
 			["Default.Aggra (Português).Krixiswag"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Shattered Hand.Donch"] = {
-				["faction"] = "Alliance",
-			},
 			["Default.Aggra (Português).Spacegoatx"] = {
 				["guildName"] = "Hoonigans",
 				["faction"] = "Alliance",
+			},
+			["Default.Shattered Hand.Donch"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Kazzak.Lilgaykrixi"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Shattered Hand.Donchyo"] = {
 				["guildName"] = "The Funky Bunch",
 				["faction"] = "Horde",
 			},
-			["Default.Kazzak.Lilgaykrixi"] = {
-				["faction"] = "Horde",
+			["Default.Aggra (Português).Bawsi"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "Hoonigans",
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["faction"] = "Alliance",
 				["guildName"] = "Hoonigans",
 			},
-			["Default.Aggra (Português).Bawsi"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Hoonigans",
-			},
-			["Default.Shattered Hand.Bawsi"] = {
-				["faction"] = "Horde",
-			},
 			["Default.Grim Batol.Donch"] = {
 				["guildName"] = "Hoonigans",
 				["faction"] = "Alliance",
 			},
-			["Default.Crushridge.Donch"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Proudly ADDICTED",
+			["Default.Shattered Hand.Bawsi"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Grim Batol.Zolution"] = {
 				["faction"] = "Alliance",
@@ -116,9 +116,9 @@ DataStoreDB = {
 				["guildName"] = "Hoonigans",
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Nyrith"] = {
-				["guildName"] = "Hoonigans",
+			["Default.Crushridge.Donch"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Proudly ADDICTED",
 			},
 			["Default.Grim Batol.Krixi"] = {
 				["guildName"] = "Hoonigans",
@@ -145,22 +145,23 @@ DataStoreDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -171,11 +172,11 @@ DataStoreDB = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
 	},
 	["profiles"] = {
 		["Krixidk - Grim Batol"] = {

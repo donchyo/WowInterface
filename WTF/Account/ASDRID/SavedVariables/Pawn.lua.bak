@@ -10,6 +10,8 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -77,6 +79,9 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST3"] = {
 			["IconTexturePath"] = 136207,
 			["PerCharacterOptions"] = {
+				["Zolution-Grim Batol"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["ClassID"] = 5,
@@ -92,6 +97,9 @@ PawnCommon = {
 		["\"MrRobot\":MAGE3"] = {
 			["IconTexturePath"] = 135846,
 			["PerCharacterOptions"] = {
+				["Donch-Grim Batol"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "3fc7eb",
 			["ClassID"] = 8,
@@ -152,6 +160,9 @@ PawnCommon = {
 		["\"MrRobot\":MONK1"] = {
 			["IconTexturePath"] = 608951,
 			["PerCharacterOptions"] = {
+				["Namji-Grim Batol"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "00ff96",
 			["ClassID"] = 10,
@@ -182,6 +193,9 @@ PawnCommon = {
 		["\"MrRobot\":DRUID4"] = {
 			["IconTexturePath"] = 136041,
 			["PerCharacterOptions"] = {
+				["Krixikin-Grim Batol"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7d0a",
 			["ClassID"] = 11,
@@ -209,6 +223,44 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["UnenchantedColor"] = "bfb74e",
 		},
+		["zetiz - Subtlety (Raidbots)"] = {
+			["IconTexturePath"] = 132320,
+			["Values"] = {
+				["IsWand"] = -1000000,
+				["IsFist"] = -1000000,
+				["Is2HMace"] = -1000000,
+				["IsWarglaive"] = -1000000,
+				["CritRating"] = 16.19,
+				["IsStaff"] = -1000000,
+				["Agility"] = 22.22,
+				["HasteRating"] = 9.05,
+				["MasteryRating"] = 16.86,
+				["IsCrossbow"] = -1000000,
+				["IsPolearm"] = -1000000,
+				["IsGun"] = -1000000,
+				["IsFrill"] = -1000000,
+				["Is2HAxe"] = -1000000,
+				["IsBow"] = -1000000,
+				["IsMail"] = -1000000,
+				["IsSword"] = -1000000,
+				["IsAxe"] = -1000000,
+				["IsMace"] = -1000000,
+				["IsPlate"] = -1000000,
+				["Is2HSword"] = -1000000,
+				["Versatility"] = 16.09,
+				["IsShield"] = -1000000,
+			},
+			["Color"] = "fff569",
+			["ClassID"] = 4,
+			["Role"] = "DAMAGER",
+			["UpgradesFollowSpecialization"] = true,
+			["SpecID"] = 3,
+			["PerCharacterOptions"] = {
+				["Zetiz-Grim Batol"] = {
+					["Visible"] = true,
+				},
+			},
+		},
 		["\"MrRobot\":DEATHKNIGHT3"] = {
 			["IconTexturePath"] = 135775,
 			["PerCharacterOptions"] = {
@@ -227,6 +279,9 @@ PawnCommon = {
 		["\"MrRobot\":WARRIOR3"] = {
 			["IconTexturePath"] = 132341,
 			["PerCharacterOptions"] = {
+				["Kroxi-Grim Batol"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "c79c6e",
 			["ClassID"] = 1,
@@ -269,21 +324,6 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "bfbfbf",
 		},
-		["\"MrRobot\":PALADIN3"] = {
-			["IconTexturePath"] = 135873,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "f58cba",
-			["ClassID"] = 2,
-			["LocalizedName"] = "Paladin: Retribution",
-			["DoNotShow1HUpgrades"] = true,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "b7698b",
-		},
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
 			["PerCharacterOptions"] = {
@@ -298,6 +338,21 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "957552",
+		},
+		["\"MrRobot\":PALADIN3"] = {
+			["IconTexturePath"] = 135873,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "f58cba",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Retribution",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "b7698b",
 		},
 		["\"MrRobot\":WARLOCK2"] = {
 			["IconTexturePath"] = 136172,
@@ -344,20 +399,20 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "2f95b0",
 		},
-		["\"MrRobot\":DRUID2"] = {
-			["IconTexturePath"] = 132115,
+		["\"MrRobot\":PALADIN2"] = {
+			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "ff7d0a",
-			["ClassID"] = 11,
-			["LocalizedName"] = "Druid: Feral",
-			["DoNotShow1HUpgrades"] = true,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
+			["Color"] = "f58cba",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Protection",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
 			["SpecID"] = 2,
-			["UnenchantedColor"] = "bf5d07",
+			["UnenchantedColor"] = "b7698b",
 		},
 		["\"MrRobot\":DEATHKNIGHT1"] = {
 			["IconTexturePath"] = 135770,
@@ -488,6 +543,39 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "bf3950",
 		},
+		["\"MrRobot\":DRUID2"] = {
+			["IconTexturePath"] = 132115,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ff7d0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Feral",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "bf5d07",
+		},
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
+			["PerCharacterOptions"] = {
+				["Zuriz-Grim Batol"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a6",
+		},
 		["\"MrRobot\":ROGUE1"] = {
 			["IconTexturePath"] = 236270,
 			["PerCharacterOptions"] = {
@@ -502,36 +590,6 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "bfb74e",
-		},
-		["\"MrRobot\":PALADIN2"] = {
-			["IconTexturePath"] = 236264,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "f58cba",
-			["ClassID"] = 2,
-			["LocalizedName"] = "Paladin: Protection",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "b7698b",
-		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "0070de",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0054a6",
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
@@ -551,6 +609,9 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN1"] = {
 			["IconTexturePath"] = 135920,
 			["PerCharacterOptions"] = {
+				["Krixi-Grim Batol"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f58cba",
 			["ClassID"] = 2,
@@ -566,9 +627,6 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN2"] = {
 			["IconTexturePath"] = 237581,
 			["PerCharacterOptions"] = {
-				["Zuriz-Grim Batol"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "0070de",
 			["ClassID"] = 7,
@@ -597,12 +655,10 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
-	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0211,
+	["LastVersion"] = 2.0213,
 	["Digits"] = 1,
 }

@@ -405,6 +405,8 @@ L["STRING_OPTIONS_ADVANCED"] = "고급"
 L["STRING_OPTIONS_ALPHAMOD_ANCHOR"] = "자동 숨기기:"
 L["STRING_OPTIONS_ALWAYS_USE"] = "모든 캐릭터에 사용"
 L["STRING_OPTIONS_ALWAYS_USE_DESC"] = "모든 캐릭터에 같은 프로필이 사용됩니다. 저장된 다른 프로필을 선택하면 어떤 캐릭터든 강제 적용됩니다."
+L["STRING_OPTIONS_ALWAYSSHOWPLAYERS"] = "모든 플레이어 표시"
+L["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"] = "기본 표준 모드를 사용 중일 때 당신과 파티/공격대 중이지 않은 플레이어 캐릭터를 표시합니다."
 L["STRING_OPTIONS_ANCHOR"] = "가장자리"
 L["STRING_OPTIONS_ANIMATEBARS"] = "바 애니메이션"
 L["STRING_OPTIONS_ANIMATEBARS_DESC"] = "모든 바에 애니메이션 효과를 줍니다."
@@ -650,6 +652,10 @@ L["STRING_OPTIONS_DEATHLIMIT"] = "죽음 이벤트 갯수"
 L["STRING_OPTIONS_DEATHLIMIT_DESC"] = [=[죽음 로그에 표시할 이벤트 갯수를 설정합니다.
 
 |cFFFFFF00중요|r: 변경 후 죽음부터 적용됩니다.]=]
+L["STRING_OPTIONS_DEATHLOG_MINHEALING"] = "죽음 기록 최소 치유"
+L["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"] = [=[이 임계치보다 낮은 치유는 죽음 로그에 표시하지 않습니다.
+
+|cFFFFFF00팁|r: 값을 직접 입력하려면 오른쪽 클릭하세요.]=]
 L["STRING_OPTIONS_DESATURATE_MENU"] = "색 없애기"
 L["STRING_OPTIONS_DESATURATE_MENU_DESC"] = "활성화하면 툴바에 있는 모든 메뉴 아이콘이 흑백으로 바뀝니다."
 L["STRING_OPTIONS_DISABLE_ALLDISPLAYSWINDOW"] = "'모든 디스플레이' 메뉴 비활성"

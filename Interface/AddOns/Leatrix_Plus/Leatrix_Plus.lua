@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.2.14 (16th August 2017, www.leatrix.com)
+-- 	Leatrix Plus 7.3.06 (3rd September 2017, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.2.14"
+	LeaPlusLC["AddonVer"] = "7.3.06"
 
 ----------------------------------------------------------------------
 -- 	Locale
@@ -173,11 +173,11 @@
 			--[[koKR]] "키 설정",
 			x)
 
-			Ln("Choose a modifier key for use with this option.\n\nIf set to NONE, you can hold the shift key down to temporarily prevent automation.",
-			--[[zhCN]] "为此项功能选择一个功能键。\n\n如果设置为“无”，你可以按住<Shift键>来暂时阻止自动交互功能。",
-			--[[zhTW]] "選擇一個用於此選項的快捷按鍵。\n\n如果設置為無，您可以按住shift鍵暫時阻止自動化。",
+			Ln("If set to NONE, you can hold the shift key down to temporarily prevent automation.",
+			--[[zhCN]] "如果设置为“无”，你可以按住<Shift键>来暂时阻止自动交互功能。",
+			--[[zhTW]] "如果設置為無，您可以按住shift鍵暫時阻止自動化。",
 			--[[ruRU]] "",
-			--[[koKR]] "이 옵션을 사용하기위한 보조 키를 선택합니다.\n\n없음 으로 설정하면 시프트 키를 눌러서 일시적으로 자동화를 방지 할 수 있습니다.",
+			--[[koKR]] "없음 으로 설정하면 시프트 키를 눌러서 일시적으로 자동화를 방지 할 수 있습니다.",
 			x)
 
 			Ln("NONE",
@@ -283,13 +283,6 @@
 			----------------------------------------------------------------------
 			-- Configuration panel
 			----------------------------------------------------------------------
-
-			Ln("Select the zones where automatic release should operate.",
-			--[[zhCN]] "选择可以自动释放尸体的区域",
-			--[[zhTW]] "選擇可以自動釋放屍體的區域",
-			--[[ruRU]] "Выберите зоны, где должно работать автоматическое испускание духа.",
-			--[[koKR]] "부활 수락 해제 지역을 선택.",
-			x)
 
 			Ln("Battlegrounds",
 			--[[zhCN]] "战场",
@@ -671,13 +664,6 @@
 			--[[koKR]] "키워드",
 			x)
 
-			Ln("Enter the keyword that you want to use.",
-			--[[zhCN]] "请输入你想设定的关键词。",
-			--[[zhTW]] "請輸入你想設定的關鍵詞。",
-			--[[ruRU]] "Введите ключевое слово, которое Вы хотите использовать.",
-			--[[koKR]] "사용할 키워드 입력하세요.",
-			x)
-
 	----------------------------------------------------------------------
 	-- 	LA3: Chat
 	----------------------------------------------------------------------
@@ -933,6 +919,88 @@
 		--[[ruRU]] "Если флажок установлен, история чата увеличится до 4096 линий. Если флажок не установлен, по умолчанию будет использоваться (128 линий).\n\nВключение этого параметра может помешать отображению некоторого текста во время входа в систему.",
 		--[[koKR]] "기본 128행을 4096행으로 증가",
 		x)
+
+		----------------------------------------------------------------------
+		-- Recent chat window
+		----------------------------------------------------------------------
+
+		Ln("Recent chat window",
+		--[[zhCN]] "临时聊天窗口",
+		--[[zhTW]] "最近聊天視窗",
+		--[[ruRU]] "",
+		--[[koKR]] "최근 채팅 창",
+		x)
+
+		Ln("If checked, you can hold down CTRL and click a chat tab to view recent chat in a copy-friendly window.",
+		--[[zhCN]] "勾选后，你可以按住CTRL点击一个聊天标签来打开一个临时的聊天窗口。",
+		--[[zhTW]] "勾選後，你可以按住CTRL並且點擊一個聊天標籤以便在一個易於複製視窗中觀看最近的聊天訊息。",
+		--[[ruRU]] "",
+		--[[koKR]] "이 옵션을 선택하면 Ctrl 키를 누른 상태에서 채팅 탭을 클릭하여 복사하기 쉬운 창에서 최근 채팅을 볼 수 있습니다.",
+		x)
+
+			----------------------------------------------------------------------
+			-- Configuration panel
+			----------------------------------------------------------------------
+
+			Ln("Recent Chat Window",
+			--[[zhCN]] "临时聊天窗口",
+			--[[zhTW]] "最近聊天視窗",
+			--[[ruRU]] "",
+			--[[koKR]] "최근 채팅 창",
+			x)
+
+			Ln("Font size",
+			--[[zhCN]] "字体大小",
+			--[[zhTW]] "文字大小",
+			--[[ruRU]] "",
+			--[[koKR]] "글자 크기",
+			x)
+
+			Ln("Transparency",
+			--[[zhCN]] "透明度",
+			--[[zhTW]] "透明度",
+			--[[ruRU]] "Прозрачность",
+			--[[koKR]] "투명도",
+			x)
+
+			Ln("Window height",
+			--[[zhCN]] "窗口高度",
+			--[[zhTW]] "視窗高度",
+			--[[ruRU]] "",
+			--[[koKR]] "창 높이",
+			x)
+
+			Ln("To move the recent chat window, hold CTRL and SHIFT then drag the window.",
+			--[[zhCN]] "你可以按住CTRL+SHIFT来拖动临时聊天窗口。",
+			--[[zhTW]] "要移動最近聊天視窗，可按下CTRL與SHIFT鍵並拖動此視窗。",
+			--[[ruRU]] "",
+			--[[koKR]] "최근 채팅 창을 이동하려면 CTRL 및 SHIFT 키를 누른 상태에서 창을 드래그하십시오.",
+			x)
+
+			----------------------------------------------------------------------
+			-- Recent message window
+			----------------------------------------------------------------------
+
+			Ln("message shown.",
+			--[[zhCN]] "信息显示。",
+			--[[zhTW]] "顯示訊息。",
+			--[[ruRU]] "",
+			--[[koKR]] "메시지가 표시됩니다.",
+			x)
+
+			Ln("messages shown.",
+			--[[zhCN]] "信息显示。",
+			--[[zhTW]] "顯示訊息。",
+			--[[ruRU]] "",
+			--[[koKR]] "메시지가 표시됩니다.",
+			x)
+
+			Ln("Right-click to close.",
+			--[[zhCN]] "右键点击关闭。",
+			--[[zhTW]] "右鍵點擊來關閉。",
+			--[[ruRU]] "",
+			--[[koKR]] "마우스 오른쪽 버튼을 클릭하여 닫습니다.",
+			x)
 
 	----------------------------------------------------------------------
 	-- 	LA4: Text
@@ -1381,11 +1449,11 @@
 			--[[koKR]] "미니맵 크기",
 			x)
 
-			Ln("Scale and style the minimap using the settings on this page.\n\nThis panel will close automatically if you enter combat.",
-			--[[zhCN]] "重设小地图的尺寸大小。\n\n这个页面在战斗中会自动隐藏",
-			--[[zhTW]] "重設小地圖的尺寸大小。\n\n這個頁面在戰鬥中會自動隱藏",
-			--[[ruRU]] "Используйте параметры на этой странице для изменения масштаба и стиля миникарты.\n\nЭто окно будет автоматически закрыто, если Вы вступите в бой.",
-			--[[koKR]] "미니맵 크기 설정.",
+			Ln("This panel will close automatically if you enter combat.",
+			--[[zhCN]] "这个页面在战斗中会自动隐藏",
+			--[[zhTW]] "這個頁面在戰鬥中會自動隱藏",
+			--[[ruRU]] "Это окно будет автоматически закрыто, если Вы вступите в бой.",
+			--[[koKR]] "전투시 자동으로 닫힙니다.",
 			x)
 
 		----------------------------------------------------------------------
@@ -1480,10 +1548,10 @@
 			--[[koKR]] "툴팁 크기",
 			x)
 
-			Ln("Drag the tooltip overlay to position it.\n\nScale and style the tooltip using the settings on this page.",
-			--[[zhCN]] "拖动鼠标信息的外框来重新定位。\n\n尺寸大小的通过下方选项设置。",
-			--[[zhTW]] "拖動鼠標訊息的外框來重新定位。\n\n尺寸大小的通過下方選項設置。",
-			--[[ruRU]] "Переместите окно всплывающих подсказок.\n\nИзмените масштаб и стиль подсказок с использованием настроек на этой странице.",
+			Ln("Drag the tooltip overlay to position it.",
+			--[[zhCN]] "拖动鼠标信息的外框来重新定位。",
+			--[[zhTW]] "拖動鼠標訊息的外框來重新定位。",
+			--[[ruRU]] "Переместите окно всплывающих подсказок.",
 			--[[koKR]] "위치 변경은 툴팁 드레그 이동",
 			x)
 
@@ -1683,10 +1751,10 @@
 			--[[koKR]] "크기",
 			x)
 
-			Ln("Drag the coordinates frame to position it.\n\nScale and style the frame using the settings on this page.",
-			--[[zhCN]] "拖动坐标框体来自定义尺寸。\n\n在这个框体上有尺寸大小的设置选项。",
-			--[[zhTW]] "拖動坐標框架來自定義尺寸。\n\n在這個框架上有尺寸大小的設置選項。",
-			--[[ruRU]] "Переместите окно координат.\n\nИзмените масштаб и стиль окна с использованием настроек на этой странице.",
+			Ln("Drag the coordinates frame to position it.",
+			--[[zhCN]] "拖动坐标框体来自定义尺寸。",
+			--[[zhTW]] "拖動坐標框架來自定義尺寸。",
+			--[[ruRU]] "Переместите окно координат.",
 			--[[koKR]] "죄표 프레임 위치,크기 변경",
 			x)
 
@@ -1859,6 +1927,13 @@
 			--[[zhTW]] "整體",
 			--[[ruRU]] "Всего",
 			--[[koKR]] "전체",
+			x)
+
+			Ln("No items with durability equipped.",
+			--[[zhCN]] "尚未装备任何带有耐久度的物品。",
+			--[[zhTW]] "沒有裝備有耐久度的物品。",
+			--[[ruRU]] "",
+			--[[koKR]] "내구성 갖춘 아이템이 없습니다.",
 			x)
 
 		----------------------------------------------------------------------
@@ -2195,13 +2270,6 @@
 			--[[zhTW]] "勾選後，會在玩家框架顯示稀有、精英或者稀有精英的邊框。",
 			--[[ruRU]] "Если флажок установлен, Вы сможете отобразить редкий, элитный или редкий элитный контур вокруг рамки игрока.",
 			--[[koKR]] "플레이어 프레임에 희귀,정예 문양 표시",
-			x)
-
-			Ln("Choose a chain style for the player frame from the dropdown menu.",
-			--[[zhCN]] "在选项菜单中为玩家框体选择一个边框样式。",
-			--[[zhTW]] "從下拉選單中為玩家框架選擇一個邊框樣式。",
-			--[[ruRU]] "Выберите стиль контура для рамки игрока из выпадающего меню.",
-			--[[koKR]] "테두리 문양을 선택합니다.",
 			x)
 
 		----------------------------------------------------------------------
@@ -2697,11 +2765,11 @@
 			--[[koKR]] "상단과 하단 변경 사이즈 맞게 조정됨.",
 			x)
 
-			Ln("Configure the viewport using the controls on this page.\n\nThis panel will close automatically if you enter combat.",
-			--[[zhCN]] "你可以在本页设置视口。\n\n当你进入战斗时，这个面板会自动关闭。",
-			--[[zhTW]] "你可以在本頁設置視窗背景。\n\n當你進入戰鬥時，這個面板會自動關閉。",
+			Ln("This panel will close automatically if you enter combat.",
+			--[[zhCN]] "当你进入战斗时，这个面板会自动关闭。",
+			--[[zhTW]] "當你進入戰鬥時，這個面板會自動關閉。",
 			--[[ruRU]] "",
-			--[[koKR]] "뷰포트 구성을 설정합니다.",
+			--[[koKR]] "전투시 자동으로 닫힙니다.",
 			x)
 
 		----------------------------------------------------------------------
@@ -2956,11 +3024,11 @@
 		--[[koKR]] "미니맵 버튼 표시",
 		x)
 
-		Ln("If checked, a minimap button will be available.\n\nLeft-click - Toggle options panel.\n\nSHIFT/Left-click - Toggle music.\n\nSHIFT/Right-click - Toggle coordinates (if enabled).\n\nCTRL/Left-click - Toggle minimap target tracking.\n\nCTRL/Right-click - Toggle errors (if enabled).\n\nCTRL/SHIFT/Left-click - Toggle Zygor (if installed).\n\nCTRL/SHIFT/Right-click - Toggle windowed mode.",
-		--[[zhCN]] "勾选后，小地图上将出现一个快捷按钮。\n\n左键：开关设置面板。\n\nSHIFT+左键：开关音乐。\n\nSHIFT+右键：开关坐标（需启用）。\n\nCTRL+左键：开关小地图目标追踪。\n\nCTRL+右键：开关错误信息（需启用）。\n\nCTRL+SHIFT+左键：开关Zygor插件（需安装）。\n\nCTRL+SHIFT+右键：开关窗口模式。",
-		--[[zhTW]] "勾選後，小地圖按鈕將可使用。\n\n左鍵點擊 – 開關選項面板。\n\nSHIFT/左鍵點擊 – 開關音樂。\n\nSHIFT/右鍵點擊 – 開關座標(如果啟用)。\n\nCTRL/左鍵點擊 – 開關小地圖目標追蹤。\n\nCTRL/右鍵點擊 – 開關錯誤顯示(如果啟用)。\n\nCTRL/SHIFT/左鍵點擊 – 開關Zygor(如果安裝)。\n\nCTRL/SHIFT/右鍵點擊 – 切換視窗模式。",
+		Ln("If checked, a minimap button will be available.\n\nClick - Toggle options panel.\n\nSHIFT/Left-click - Toggle music.\n\nSHIFT/Right-click - Toggle coordinates (if enabled).\n\nCTRL/Left-click - Toggle minimap target tracking.\n\nCTRL/Right-click - Toggle errors (if enabled).\n\nCTRL/SHIFT/Left-click - Toggle Zygor (if installed).\n\nCTRL/SHIFT/Right-click - Toggle windowed mode.",
+		--[[zhCN]] "勾选后，小地图上将出现一个快捷按钮。\n\n点击：开关设置面板。\n\nSHIFT+左键：开关音乐。\n\nSHIFT+右键：开关坐标（需启用）。\n\nCTRL+左键：开关小地图目标追踪。\n\nCTRL+右键：开关错误信息（需启用）。\n\nCTRL+SHIFT+左键：开关Zygor插件（需安装）。\n\nCTRL+SHIFT+右键：开关窗口模式。",
+		--[[zhTW]] "勾選後，小地圖按鈕將可使用。\n\n點擊：開關設置面板。\n\nSHIFT/左鍵點擊 – 開關音樂。\n\nSHIFT/右鍵點擊 – 開關座標(如果啟用)。\n\nCTRL/左鍵點擊 – 開關小地圖目標追蹤。\n\nCTRL/右鍵點擊 – 開關錯誤顯示(如果啟用)。\n\nCTRL/SHIFT/左鍵點擊 – 開關Zygor(如果安裝)。\n\nCTRL/SHIFT/右鍵點擊 – 切換視窗模式。",
 		--[[ruRU]] "",
-		--[[koKR]] "이 옵션을 선택하면 미니맵 버튼을 사용할수 있습니다.\n\n왼쪽 클릭-설정창 전환.\n\nShift/왼쪽 클릭-음악 전환.\n\nShift/오른쪽 클릭-좌표 전환(활성된 경우).\n\nCtrl/왼쪽 클릭-미니맵 대상 추적 전환.\n\nCtrl/오른쪽 클릭-오류메시지 전환(활성된 경우).\n\nCtrl/Shift/왼쪽 클릭-Zygor 전환(설치된 경우).\n\nCrtl/Shift/오른쪽 클릭-원도우 모드 전환.",
+		--[[koKR]] "이 옵션을 선택하면 미니맵 버튼을 사용할수 있습니다.\n\n클릭-설정창 전환.\n\nShift/왼쪽 클릭-음악 전환.\n\nShift/오른쪽 클릭-좌표 전환(활성된 경우).\n\nCtrl/왼쪽 클릭-미니맵 대상 추적 전환.\n\nCtrl/오른쪽 클릭-오류메시지 전환(활성된 경우).\n\nCtrl/Shift/왼쪽 클릭-Zygor 전환(설치된 경우).\n\nCrtl/Shift/오른쪽 클릭-원도우 모드 전환.",
 		x)
 
 			----------------------------------------------------------------------
@@ -3049,11 +3117,11 @@
 			--[[koKR]] "단축키",
 			x)
 
-			Ln("Select the hotkey that you want to use.\n\nThis panel will close automatically if you enter combat.",
-			--[[zhCN]] "请选择你想设置的快捷键。\n\n此面板在你进入战斗后自动关闭。",
-			--[[zhTW]] "選擇你想使用的熱鍵。\n\n此面板將在你進入戰鬥後自動關閉。",
+			Ln("This panel will close automatically if you enter combat.",
+			--[[zhCN]] "此面板在你进入战斗后自动关闭。",
+			--[[zhTW]] "此面板將在你進入戰鬥後自動關閉。",
 			--[[ruRU]] "",
-			--[[koKR]] "사용할 단축키를 선택하십시오.\n\n전투시 자동으로 닫힙니다.",
+			--[[koKR]] "전투시 자동으로 닫힙니다.",
 			x)
 
 	----------------------------------------------------------------------
@@ -3209,6 +3277,41 @@
 		----------------------------------------------------------------------
 		-- 	Commands
 		----------------------------------------------------------------------
+
+		Ln("Missing mount name.",
+		--[[zhCN]] "坐骑名字缺失。",
+		--[[zhTW]] "缺少坐騎名稱。",
+		--[[ruRU]] "",
+		--[[koKR]] "누락된 탈거.",
+		x)
+
+		Ln("Mount not found.",
+		--[[zhCN]] "无法找到该坐骑。",
+		--[[zhTW]] "坐騎未找到。",
+		--[[ruRU]] "",
+		--[[koKR]] "탈거를 찾을수 없습니다.",
+		x)
+
+		Ln("Missing pet name.",
+		--[[zhCN]] "宠物名字缺失。",
+		--[[zhTW]] "缺少寵物名稱。",
+		--[[ruRU]] "",
+		--[[koKR]] "누락된 팻.",
+		x)
+
+		Ln("You do not own this pet.  Only owned pets can be searched.",
+		--[[zhCN]] "你还未拥有这只宠物。你只能搜索你拥有的宠物。",
+		--[[zhTW]] "你未擁有此寵物。只有已收集的寵物能被搜尋。",
+		--[[ruRU]] "",
+		--[[koKR]] "당신은 이 팻을 소유하고 있지 않습니다. 소유한 팻만 검색할수 있습니다.",
+		x)
+
+		Ln("Pet not found.  Only owned pets that are currently showing in the journal can be searched.",
+		--[[zhCN]] "无法找到该宠物。你只能搜索你所拥有的显示在藏品宠物页面中的宠物。",
+		--[[zhTW]] "寵物未找到。只有顯示在寵物日誌中已收集的寵物才能搜尋。",
+		--[[ruRU]] "",
+		--[[koKR]] "팻을 찾을수 없습니다. 도감의 현재 소유한 팻을 검색할수 있습니다.",
+		x)
 
 		Ln("Invalid console variable.",
 		--[[zhCN]] "无效控制台缓存。",
@@ -3788,6 +3891,7 @@
 		LeaPlusLC:LockOption("AutoSellJunk", "SellJunkBtn", true)				-- Sell junk automatically
 		LeaPlusLC:LockOption("AutoRepairOwnFunds", "RepairBtn", true)			-- Repair automatically
 		LeaPlusLC:LockOption("InviteFromWhisper", "InvWhisperBtn", false)		-- Invite from whispers
+		LeaPlusLC:LockOption("RecentChatWindow", "RecentChatBtn", true)			-- Recent chat window
 		LeaPlusLC:LockOption("HideErrorFrameText", "HideErrorsBtn", true)		-- Hide error messages
 		LeaPlusLC:LockOption("MailFontChange", "MailTextBtn", true)				-- Resize mail text
 		LeaPlusLC:LockOption("QuestFontChange", "QuestTextBtn", true)			-- Resize quest text
@@ -3830,6 +3934,7 @@
 		or	(LeaPlusLC["NoChatFade"]			~= LeaPlusDB["NoChatFade"])				-- Disable chat fade
 		or	(LeaPlusLC["UnivGroupColor"]		~= LeaPlusDB["UnivGroupColor"])			-- Universal group color
 		or	(LeaPlusLC["Manageclasscolors"]		~= LeaPlusDB["Manageclasscolors"])		-- Use class colors in chat
+		or	(LeaPlusLC["RecentChatWindow"]		~= LeaPlusDB["RecentChatWindow"])		-- Recent chat window
 		or	(LeaPlusLC["MaxChatHstory"]			~= LeaPlusDB["MaxChatHstory"])			-- Increase chat history
 
 		-- Text
@@ -4039,7 +4144,7 @@
 			LeaPlusLC:CreateDropDown("AutoGossipMenu", "Modifier key", GossipPanel, 146, "TOPLEFT", 16, -112, {"ALT", "CTRL", LeaPlusLC:Translate("NONE")}, "")
 
 			-- Help button tooltip
-			GossipPanel.h.tiptext = LeaPlusLC:Translate("Choose a modifier key for use with this option.\n\nIf set to NONE, you can hold the shift key down to temporarily prevent automation.")
+			GossipPanel.h.tiptext = LeaPlusLC:Translate("If set to NONE, you can hold the shift key down to temporarily prevent automation.")
 
 			-- Back button handler
 			GossipPanel.b:SetScript("OnClick", function() 
@@ -4067,18 +4172,38 @@
 				end
 			end)
 
+			local function SkipGossip()
+				if LeaPlusLC["AutoGossipMenu"] == 1 and not IsAltKeyDown() then return end
+				if LeaPlusLC["AutoGossipMenu"] == 2 and not IsControlKeyDown() then return end
+				if LeaPlusLC["AutoGossipMenu"] == 3 and IsShiftKeyDown() then return end
+				local void, gossipType = GetGossipOptions()
+				if gossipType and gossipType == "gossip" then
+					SelectGossipOption(1)
+				end
+			end
+
 			-- Create gossip watch frame and process gossip events
 			local gossipFrame = CreateFrame("FRAME")
 			gossipFrame:RegisterEvent("GOSSIP_SHOW")
 			gossipFrame:SetScript("OnEvent", function()
-				if GetNumGossipOptions() == 1 and GetNumGossipAvailableQuests() == 0 and GetNumGossipActiveQuests() == 0 then
-					if LeaPlusLC["AutoGossipMenu"] == 1 and not IsAltKeyDown() then return end
-					if LeaPlusLC["AutoGossipMenu"] == 2 and not IsControlKeyDown() then return end
-					if LeaPlusLC["AutoGossipMenu"] == 3 and IsShiftKeyDown() then return end
-					local void, gossipType = GetGossipOptions()
-					if gossipType and gossipType == "gossip" then
-						SelectGossipOption(1)
+				-- Special treatment for specific NPCs
+				local npcGuid = UnitGUID("target") or nil
+				if npcGuid then
+					local void, void, void, void, void, npcID = strsplit("-", npcGuid)
+					if npcID then
+						-- Open rogue doors in Dalaran (Broken Isles) automatically
+						if npcID == "96782"	-- Lucian Trias
+						or npcID == "93188"	-- Mongar
+						or npcID == "97004"	-- "Red" Jack Findle
+						then
+							SkipGossip()
+							return
+						end
 					end
+				end
+				-- Process gossip
+				if GetNumGossipOptions() == 1 and GetNumGossipAvailableQuests() == 0 and GetNumGossipActiveQuests() == 0 then
+					SkipGossip()
 				end
 			end)
 
@@ -4303,7 +4428,7 @@
 			end
 
 			-- Help button tooltip
-			HotkeyPanel.h.tiptext = LeaPlusLC:Translate("Select the hotkey that you want to use.\n\nThis panel will close automatically if you enter combat.")
+			HotkeyPanel.h.tiptext = LeaPlusLC:Translate("This panel will close automatically if you enter combat.")
 
 			-- Back button handler
 			HotkeyPanel.b:SetScript("OnClick", function()
@@ -4487,11 +4612,29 @@
 							or npcID == "55402" 	-- Korgol Crushskull (Darkmoon Faire, Pit Master)
 							or npcID == "15192" 	-- Anachronos (Caverns of Time)
 							or npcID == "109227" 	-- Meliah Grayfeather (Tradewind Roost, Highmountain)
+							or npcID == "70022" 	-- Ku'ma (Isle of Giants, Pandaria)
+							or npcID == "119388" 	-- Chieftain Hatuun (Krokul Hovel, Krokuun)
 							then
 								return true
 							end
 						end
 					end
+				end
+			end
+
+			-- Function to check if current quest requires currency
+			local function QuestRequiresCurrency()
+				local currencyRequiredNumber = GetNumQuestCurrencies()
+				if currencyRequiredNumber and currencyRequiredNumber > 0 then
+					return true
+				end
+			end
+
+			-- Function to check if current quest requires gold
+			local function QuestRequiresGold()
+				local goldRequiredAmount = GetQuestMoneyToGet()
+				if goldRequiredAmount and goldRequiredAmount > 0 then
+					return true
 				end
 			end
 
@@ -4542,6 +4685,10 @@
 				if event == "QUEST_PROGRESS" and IsQuestCompletable() then
 					-- Don't complete quests for blocked NPCs
 					if isNpcBlocked("Complete") then return end
+					-- Don't complete if quest requires currency
+					if QuestRequiresCurrency() then return end
+					-- Don't complete if quest requires gold
+					if QuestRequiresGold() then return end
 					-- Complete quest
 					CompleteQuest()
 				end
@@ -4550,6 +4697,10 @@
 				if event == "QUEST_COMPLETE" then
 					-- Don't complete quests for blocked NPCs
 					if isNpcBlocked("Complete") then return end
+					-- Don't complete if quest requires currency
+					if QuestRequiresCurrency() then return end
+					-- Don't complete if quest requires gold
+					if QuestRequiresGold() then return end
 					-- Complete quest
 					if GetNumQuestChoices() <= 1 then
 						GetQuestReward(GetNumQuestChoices())
@@ -4716,8 +4867,8 @@
 			LeaPlusLC:MakeTx(JunkPanel, "Settings", 16, -72)
 			LeaPlusLC:MakeCB(JunkPanel, "SellJunkSummary", "Show a summary of items sold", 16, -92, false, "If checked, a brief summary will be shown in chat when items are sold automatically.")
 
-			-- Help button tooltip
-			JunkPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			JunkPanel.h:Hide()
 
 			-- Back button handler
 			JunkPanel.b:SetScript("OnClick", function() 
@@ -4873,8 +5024,8 @@
 			LeaPlusLC:MakeCB(RepairPanel, "AutoRepairGuildFunds", "Repair using guild funds if available", 16, -92, false, "If checked, repair costs will be taken from guild funds for characters that are guilded and have permission to repair.")
 			LeaPlusLC:MakeCB(RepairPanel, "AutoRepairSummary", "Show a brief summary of repair costs", 16, -112, false, "If checked, a brief summary of repair costs will be shown in chat when an automated repair is attempted.")
 
-			-- Help button tooltip
-			RepairPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			RepairPanel.h:Hide()
 
 			-- Back button handler
 			RepairPanel.b:SetScript("OnClick", function() 
@@ -4993,8 +5144,8 @@
 			-- Set style when a drop menu is selected (procs when the list is hidden)
 			LeaPlusCB["ListFramePlayerChainMenu"]:HookScript("OnHide", SetChainStyle)
 
-			-- Help button tooltip
-			ChainPanel.h.tiptext = LeaPlusLC:Translate("Choose a chain style for the player frame from the dropdown menu.")
+			-- Help button hidden
+			ChainPanel.h:Hide()
 
 			-- Back button handler
 			ChainPanel.b:SetScript("OnClick", function() 
@@ -5118,8 +5269,8 @@
 			LeaPlusLC:MakeCB(ClassFrame, "ClassColPlayer", "Show player frame in class color", 16, -92, false, "If checked, the player frame background will be shown in class color.")
 			LeaPlusLC:MakeCB(ClassFrame, "ClassColTarget", "Show target frame and focus frame in class color", 16, -112, false, "If checked, the target frame background and focus frame background will be shown in class color.")
 
-			-- Help button tooltip
-			ClassFrame.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			ClassFrame.h:Hide()
 
 			-- Back button handler
 			ClassFrame.b:SetScript("OnClick", function() 
@@ -5340,7 +5491,7 @@
 			RefreshStaticCoords();
 
 			-- Help button tooltip
-			StaticPanel.h.tiptext = LeaPlusLC:Translate("Drag the coordinates frame to position it.\n\nScale and style the frame using the settings on this page.")
+			StaticPanel.h.tiptext = LeaPlusLC:Translate("Drag the coordinates frame to position it.")
 
 			-- Back button handler
 			StaticPanel.b:SetScript("OnClick", function() 
@@ -5614,7 +5765,7 @@
 			----------------------------------------------------------------------
 
 			-- Help button tooltip
-			SideMinimap.h.tiptext = LeaPlusLC:Translate("Scale and style the minimap using the settings on this page.\n\nThis panel will close automatically if you enter combat.")
+			SideMinimap.h.tiptext = LeaPlusLC:Translate("This panel will close automatically if you enter combat.")
 
 			-- Back button handler
 			SideMinimap.b:SetScript("OnClick", function() 
@@ -5680,8 +5831,8 @@
 			LeaPlusCB["LeaPlusQuestFontSize"]:HookScript("OnValueChanged", QuestSizeUpdate)
 			QuestSizeUpdate()
 
-			-- Help button tooltip
-			QuestTextPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			QuestTextPanel.h:Hide()
 
 			-- Back button handler
 			QuestTextPanel.b:SetScript("OnClick", function() 
@@ -5738,8 +5889,8 @@
 			LeaPlusCB["LeaPlusMailFontSize"]:HookScript("OnValueChanged", MailSizeUpdate)
 			MailSizeUpdate()
 
-			-- Help button tooltip
-			MailTextPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			MailTextPanel.h:Hide()
 
 			-- Back button handler
 			MailTextPanel.b:SetScript("OnClick", function() 
@@ -6076,8 +6227,8 @@
 			LeaPlusLC:MakeCB(ErrorPanel, "ShowQuestUpdates", "Show quest updates", 16, -92, false, "If checked, quest updates will be shown in the error frame.")
 			LeaPlusLC:MakeCB(ErrorPanel, "ShowImportantErrors", "Show important error text", 16, -112, false, "If checked, the following errors will be shown in the error frame:\n\n- Inventory full\n- Quest log full\n- Votekick alerts")
 
-			-- Help button tooltip
-			ErrorPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			ErrorPanel.h:Hide()
 
 			-- Back button handler
 			ErrorPanel.b:SetScript("OnClick", function() 
@@ -6155,26 +6306,23 @@
 
 		if LeaPlusLC["ShowDressTab"] == "On" then
 
-			-- Add buttons to main dressup frame
-			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrame, "Tabard", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
-			if ClientVersion == "7.3.0" then
-				LeaPlusCB["DressUpTabBtn"]:ClearAllPoints()
-				LeaPlusCB["DressUpTabBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpNudeBtn"], "LEFT", 0, 0)
-			end
-			LeaPlusCB["DressUpTabBtn"]:SetScript("OnClick", function()
-				DressUpModel:UndressSlot(19)
-			end)
-
+			-- Add nude button to dressing room frame (main)
 			LeaPlusLC:CreateButton("DressUpNudeBtn", DressUpFrame, "Nude", "BOTTOMLEFT", 106, 79, 80, 22, false, "")
-			if ClientVersion == "7.3.0" then
-				LeaPlusCB["DressUpNudeBtn"]:ClearAllPoints()
-				LeaPlusCB["DressUpNudeBtn"]:SetPoint("RIGHT", DressUpFrameResetButton, "LEFT", 0, 0)
-			end
+			LeaPlusCB["DressUpNudeBtn"]:ClearAllPoints()
+			LeaPlusCB["DressUpNudeBtn"]:SetPoint("RIGHT", DressUpFrameResetButton, "LEFT", 0, 0)
 			LeaPlusCB["DressUpNudeBtn"]:SetScript("OnClick", function()
 				DressUpFrameResetButton:Click() -- Done first in case any slots refuse to clear
 				for i = 1, 19 do
 					DressUpModel:UndressSlot(i) -- Done this way to prevent issues with Undress
 				end
+			end)
+
+			-- Add tabard button to dressing room frame (main)
+			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrame, "Tabard", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
+			LeaPlusCB["DressUpTabBtn"]:ClearAllPoints()
+			LeaPlusCB["DressUpTabBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpNudeBtn"], "LEFT", 0, 0)
+			LeaPlusCB["DressUpTabBtn"]:SetScript("OnClick", function()
+				DressUpModel:UndressSlot(19)
 			end)
 
 			local BtnStrata, BtnLevel = SideDressUpModelResetButton:GetFrameStrata(), SideDressUpModelResetButton:GetFrameLevel()
@@ -6439,8 +6587,8 @@
 			LeaPlusLC:MakeCB(EffectsPanel, "NoEffectsDeath", "Disable the grey screen of death", 16, -112, false, "If checked, the grey screen of death will be disabled.")
 			LeaPlusLC:MakeCB(EffectsPanel, "NoEffectsNether", "Disable the netherworld effect", 16, -132, false, "If checked, the netherworld effect will be disabled.")
 
-			-- Help button tooltip
-			EffectsPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			EffectsPanel.h:Hide()
 
 			-- Back button handler
 			EffectsPanel.b:SetScript("OnClick", function() 
@@ -6879,9 +7027,11 @@
 				["Stormheim"] = {"AggrammarsVault:199:185:361:210", "BlackbeakOverlook:297:210:154:129", "Dreadwake:215:247:457:412", "Dreyrgrot:132:145:689:266", "Greywatch:173:163:648:339", "HallsOfValor:252:280:585:372",	"Haustvald:200:174:612:187", "Hrydshal:631:315:0:353", "MawOfNashal:509:251:17:0", "Morheim:150:180:741:313", "Nastrondir:241:194:345:95", "QatchmansRock:135:162:623:81",	"Runewood:194:214:592:226", "ShieldsRest:289:172:689:0", "SkoldAshil:177:169:506:345", "StormsReach:180:160:510:118", "TalonRest:291:208:316:282",	"TideskornHarbor:205:199:479:183", "Valdisdall:186:158:522:288", "WeepingBluffs:386:314:56:185",},
 				["Suramar"] = {"Ambervale:222:311:132:179", "CrimsonThicket:327:381:492:0", "Falanaar:248:317:23:136", "FelsoulHold:289:363:183:305", "GrandPromenade:355:291:344:285", "Jandvik:419:538:583:0", "MoonguardStronghold:480:245:58:0", "MoonwhisperGulch:428:316:201:0", "RuinsOfEluneeth:221:224:264:226", "SuramarCity:470:337:390:331", "Telanor:387:372:327:0",},
 				["Valsharah"] = {"Andutalah:241:240:587:250", "BlackrookHold:250:253:262:175", "BradensBrook:311:244:259:275", "DreamGrove:294:364:283:0",	"GloamingReef:239:301:136:274",	"GroveOfCenarius:171:150:457:351", "Lorlathil:177:156:467:413",	"MoonclawVale:254:281:549:380",	"Shalanir:326:360:419:0", "Smolderhide:341:188:324:480", "TempleOfElune:216:219:459:240", "Thastalah:218:168:342:416",},
+				["ArgusCore"] = {"DefiledPath:626:385:293:0", "FelfireArmory:660:668:0:0", "Terminus:467:430:535:238",},
+				["ArgusMacAree"] = {"Conservatory:313:353:498:111", "RuinsOfOronaar:265:310:278:284", "SeatOfTriumvirate:463:519:265:54", "Shadowguard:498:461:0:0", "Triumvirates:284:264:410:375", "UpperTerrace:701:323:0:0",},
+				["ArgusSurface"] = {"AnnihilanPits:296:336:371:178", "KrokulHovel:307:304:428:364", "Nathraxas:835:422:167:0", "PetrifiedForest:445:379:557:289", "ShatteredFields:498:530:37:138",},
 
 			}
-
 
 			-- Initialise counters
 			local createdtex = 0
@@ -6996,8 +7146,8 @@
 			LeaPlusLC:MakeCB(MapPanel, "WorldMapCoords", "Show cursor coordinates at the top of the map", 16, -132, false, "If checked, cursor coordinates will be shown at the top of the map.")
 			LeaPlusLC:MakeCB(MapPanel, "FadeMap", "Fade windowed map while moving", 16, -152, false, "If checked, the windowed map will fade while your character is moving and the cursor is not over the map.")
 
-			-- Help button tooltip
-			MapPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			MapPanel.h:Hide()
 
 			-- Back button handler
 			MapPanel.b:SetScript("OnClick", function() 
@@ -7819,6 +7969,271 @@
 	function LeaPlusLC:Player()
 
 		----------------------------------------------------------------------
+		-- Recent chat window
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["RecentChatWindow"] == "On" then
+
+			-- Create recent chat frame (not parenting to UIParent due to editbox scaling issue)
+			local editFrame = CreateFrame("ScrollFrame", nil, nil, "InputScrollFrameTemplate")
+
+			-- Toggle frame with UIParent and pet battles
+			local hideUI, hideUIPet = false, false
+			local function HideRecentChatFrame() if editFrame:IsShown() then hideUI = true editFrame:Hide() end	end
+			local function ShowRecentChatFrame() if hideUI and not PetBattleFrame:IsShown() then editFrame:Show() hideUI = false end end
+			UIParent:HookScript("OnHide", HideRecentChatFrame)
+			UIParent:HookScript("OnShow", ShowRecentChatFrame)
+			hooksecurefunc("PetBattleFrame_Display", HideRecentChatFrame)
+			hooksecurefunc("PetBattleFrame_Remove", ShowRecentChatFrame)
+
+			-- Create configuration panel
+			local ChatPanel = LeaPlusLC:CreatePanel("Recent Chat Window", "ChatPanel")
+
+			LeaPlusLC:MakeTx(ChatPanel, "Font size", 16, -72)
+			LeaPlusLC:MakeSL(ChatPanel, "RecentChatSize", "", 10, 24, 1, 16, -92, "%.0f")
+
+			LeaPlusLC:MakeTx(ChatPanel, "Transparency", 16, -132)
+			LeaPlusLC:MakeSL(ChatPanel, "RecentChatAlpha", "", 0, 1, 0.1, 16, -152, "%.1f")
+
+			LeaPlusLC:MakeTx(ChatPanel, "Window width", 186, -72)
+			LeaPlusLC:MakeSL(ChatPanel, "RecentChatWidth", "", 0.5, 1.5, 0.1, 186, -92, "%.1f")
+
+			LeaPlusLC:MakeTx(ChatPanel, "Window height", 186, -132)
+			LeaPlusLC:MakeSL(ChatPanel, "RecentChatHeight", "", 0.5, 1.5, 0.1, 186, -152, "%.1f")
+
+			-- Help button tooltip
+			ChatPanel.h.tiptext = LeaPlusLC:Translate("To move the recent chat window, hold CTRL and SHIFT then drag the window.")
+
+			-- Back button handler
+			ChatPanel.b:SetScript("OnClick", function() 
+				ChatPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page3"]:Show()
+				return
+			end) 
+
+			-- Reset button handler
+			ChatPanel.r:SetScript("OnClick", function()
+				LeaPlusLC["RecentChatSize"] = 18
+				LeaPlusLC["RecentChatAlpha"] = 0.5
+				LeaPlusLC["RecentChatWidth"] = 1
+				LeaPlusLC["RecentChatHeight"] = 1
+				LeaPlusLC["RecentChatA"] = "CENTER"
+				LeaPlusLC["RecentChatR"] = "CENTER"
+				LeaPlusLC["RecentChatX"] = 0
+				LeaPlusLC["RecentChatY"] = 0
+				ChatPanel:Hide(); ChatPanel:Show()
+				if editFrame:IsShown() then editFrame:Hide(); editFrame:Show() end
+			end)
+
+			-- Show configuration panal when options panel button is clicked
+			LeaPlusCB["RecentChatBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["RecentChatSize"] = 18
+					LeaPlusLC["RecentChatAlpha"] = 0.5
+					LeaPlusLC["RecentChatWidth"] = 1
+					LeaPlusLC["RecentChatHeight"] = 0.5
+					LeaPlusLC["RecentChatA"] = "BOTTOM"
+					LeaPlusLC["RecentChatR"] = "BOTTOM"
+					LeaPlusLC["RecentChatX"] = -74
+					LeaPlusLC["RecentChatY"] = 88
+					ChatPanel:Show(); ChatPanel:Hide()
+					if editFrame:IsShown() then editFrame:Hide(); editFrame:Show() end
+				else
+					ChatPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+			-- Set frame parameters
+			editFrame:ClearAllPoints()
+			editFrame:SetPoint(LeaPlusLC["RecentChatA"], UIParent, LeaPlusLC["RecentChatR"], LeaPlusLC["RecentChatX"], LeaPlusLC["RecentChatY"])
+			editFrame:SetFrameStrata("MEDIUM")
+			editFrame:SetToplevel(true)
+			editFrame:SetClampedToScreen(true)
+			editFrame:SetMovable(true)
+			editFrame.CharCount:Hide()
+			editFrame:Hide()
+			editFrame:SetSize(570, 370)
+
+			-- Add background color
+			editFrame.t = editFrame:CreateTexture(nil, "BACKGROUND")
+			editFrame.t:SetAllPoints()
+			editFrame.t:SetColorTexture(0.00, 0.00, 0.0, 1.0)
+
+			-- Set textures
+			editFrame.LeftTex:SetTexture(editFrame.RightTex:GetTexture()); editFrame.LeftTex:SetTexCoord(1, 0, 0, 1)
+			editFrame.BottomTex:SetTexture(editFrame.TopTex:GetTexture()); editFrame.BottomTex:SetTexCoord(0, 1, 1, 0)
+			editFrame.BottomRightTex:SetTexture(editFrame.TopRightTex:GetTexture()); editFrame.BottomRightTex:SetTexCoord(0, 1, 1, 0)
+			editFrame.BottomLeftTex:SetTexture(editFrame.TopRightTex:GetTexture()); editFrame.BottomLeftTex:SetTexCoord(1, 0, 1, 0)
+			editFrame.TopLeftTex:SetTexture(editFrame.TopRightTex:GetTexture()); editFrame.TopLeftTex:SetTexCoord(1, 0, 0, 1)
+
+			-- Create editbox
+			local editBox = editFrame.EditBox
+			editBox:SetFontObject("ChatFontNormal")
+			editBox:SetAltArrowKeyMode(false)
+			editBox:SetTextInsets(4, 4, 4, 4)
+
+			-- Maintain editbox effective height
+			editFrame:HookScript("OnVerticalScroll", function(self, offset)
+				editBox:SetHitRectInsets(0, 0, offset, editBox:GetHeight() - offset - editBox:GetHeight())
+			end)
+
+			-- Set position and scroll bar scale when shown
+			editFrame:HookScript("OnShow", function()
+				-- Set frame position
+				editFrame:ClearAllPoints()
+				editFrame:SetPoint(LeaPlusLC["RecentChatA"], UIParent, LeaPlusLC["RecentChatR"], LeaPlusLC["RecentChatX"], LeaPlusLC["RecentChatY"])
+				-- Set scroll bar scale
+				editFrame.ScrollBar:SetScale(UIParent:GetEffectiveScale())
+			end)
+
+			-- Set scroll bar scale and font size when UI scale is changed
+			editFrame:RegisterEvent("UI_SCALE_CHANGED")
+			editFrame:SetScript("OnEvent", function()
+				-- Set scroll bar scale
+				editFrame.ScrollBar:SetScale(UIParent:GetEffectiveScale())
+				-- Set font size
+				editBox:SetFont(editBox:GetFont(), LeaPlusLC["RecentChatSize"] * UIParent:GetEffectiveScale())
+			end)
+
+			-- Apply changes when controls are changed and on startup
+			local function RefreshSettings()
+				-- Set font size
+				editBox:SetFont(editBox:GetFont(), LeaPlusLC["RecentChatSize"] * UIParent:GetEffectiveScale())
+				-- Set alpha
+				editFrame.t:SetAlpha(1 - LeaPlusLC["RecentChatAlpha"])
+				LeaPlusCB["RecentChatAlpha"].f:SetFormattedText("%.0f%%", LeaPlusLC["RecentChatAlpha"] * 100)
+				-- Set width
+				editFrame:SetWidth(570 * LeaPlusLC["RecentChatWidth"])
+				editBox:SetWidth(editFrame:GetWidth() - 30)
+				LeaPlusCB["RecentChatWidth"].f:SetFormattedText("%.0f%%", LeaPlusLC["RecentChatWidth"] * 100)
+				-- Set height
+				editFrame:SetHeight(370 * LeaPlusLC["RecentChatHeight"])
+				LeaPlusCB["RecentChatHeight"].f:SetFormattedText("%.0f%%", LeaPlusLC["RecentChatHeight"] * 100)
+			end
+			LeaPlusCB["RecentChatSize"]:HookScript("OnValueChanged", RefreshSettings)
+			LeaPlusCB["RecentChatAlpha"]:HookScript("OnValueChanged", RefreshSettings)
+			LeaPlusCB["RecentChatWidth"]:HookScript("OnValueChanged", RefreshSettings)
+			LeaPlusCB["RecentChatHeight"]:HookScript("OnValueChanged", RefreshSettings)
+			RefreshSettings()
+
+			-- Function to close recent chat frame
+			local function CloseChatbox()
+				editBox:SetText("")
+				editBox:ClearFocus()
+				editFrame:Hide()
+			end
+
+			-- Movement and closure handlers
+			editBox:SetScript("OnMouseDown", function(self, btn)
+				if btn == "LeftButton" and IsControlKeyDown() and IsShiftKeyDown() then
+					editFrame:StartMoving()
+				elseif btn == "RightButton" then
+					CloseChatbox()
+				end
+			end)
+
+			editBox:SetScript("OnMouseUp", function(self, btn)
+				if btn == "LeftButton" then
+					editFrame:StopMovingOrSizing()
+					editFrame:SetUserPlaced(false)
+					LeaPlusLC["RecentChatA"], void, LeaPlusLC["RecentChatR"], LeaPlusLC["RecentChatX"], LeaPlusLC["RecentChatY"] = editFrame:GetPoint()
+				end
+			end)
+
+			editFrame:SetScript("OnMouseDown", function(self, btn)
+				if btn == "LeftButton" and IsControlKeyDown() and IsShiftKeyDown() then
+					editFrame:StartMoving()
+				elseif btn == "RightButton" then
+					CloseChatbox()
+				end
+			 end)
+
+			editFrame:SetScript("OnMouseUp", function(self, btn)
+				if btn == "LeftButton" then
+					editFrame:StopMovingOrSizing()
+					editFrame:SetUserPlaced(false)
+					LeaPlusLC["RecentChatA"], void, LeaPlusLC["RecentChatR"], LeaPlusLC["RecentChatX"], LeaPlusLC["RecentChatY"] = editFrame:GetPoint()
+				end
+			end)
+
+			-- Clear focus if editbox is only being moved
+			editBox:HookScript("OnEditFocusGained", function()
+				if IsControlKeyDown() and IsShiftKeyDown() then
+					editBox:ClearFocus()
+				end
+			end)
+
+			-- Disable text changes while still allowing editing controls to work
+			editBox:EnableKeyboard(false)
+			editBox:SetScript("OnKeyDown", function() end)
+
+			--- Clear highlighted text if escape key is pressed
+			editBox:HookScript("OnEscapePressed", function()
+				editBox:HighlightText(0, 0)
+				editBox:ClearFocus()
+			end)
+
+			-- Clear highlighted text and clear focus if enter key is pressed
+			editBox:SetScript("OnEnterPressed", function() 
+				editBox:HighlightText(0, 0)
+				editBox:ClearFocus()
+			end)
+
+			-- Populate recent chat frame with chat messages
+			local function ShowChatbox(chtfrm)
+				editBox:SetText("")
+				local NumMsg = chtfrm:GetNumMessages()
+				local StartMsg = 1
+				if NumMsg > 128 then StartMsg = NumMsg - 127 end
+				local totalMsgCount = 0
+				for iMsg = StartMsg, NumMsg do
+					local chatMessage = chtfrm:GetMessageInfo(iMsg)
+					if chatMessage then
+						chatMessage = gsub(chatMessage, "|T.-|t", "") -- Remove textures
+						chatMessage = gsub(chatMessage, "{.-}", "") -- Remove ellipsis
+						editBox:Insert(chatMessage .. "\n")
+					end
+					totalMsgCount = totalMsgCount + 1
+				end
+				if totalMsgCount == 1 then
+					editBox:Insert("|cff88aabb" .. totalMsgCount .. " " .. LeaPlusLC:Translate("message shown.") .. "  ")
+				else
+					editBox:Insert("|cff88aabb" .. totalMsgCount .. " " .. LeaPlusLC:Translate("messages shown.") .. "  ")
+				end
+				editBox:Insert(LeaPlusLC:Translate("Right-click to close."))
+				editFrame:SetVerticalScroll(0)
+				C_Timer.After(0.1, function() editFrame.ScrollBar.ScrollDownButton:Click() end)
+				editFrame:Show()
+				editBox:ClearFocus()
+			end
+
+			-- Hook normal chat frame tab clicks
+			for i = 1, 50 do
+				if _G["ChatFrame" .. i] then
+					_G["ChatFrame" .. i .. "Tab"]:HookScript("OnClick", function()
+						if IsControlKeyDown() then
+							ShowChatbox(_G["ChatFrame" .. i])
+						end
+					end)
+				end
+			end
+
+			-- Hook temporary chat frame tab clicks
+			hooksecurefunc("FCF_OpenTemporaryWindow", function()
+				local cf = FCF_GetCurrentChatFrame():GetName() or nil
+				if cf then
+					_G[cf .. "Tab"]:HookScript("OnClick", function()
+						if IsControlKeyDown() then
+							ShowChatbox(_G[cf])
+						end
+					end)
+				end
+			end)
+
+		end
+
+		----------------------------------------------------------------------
 		--	Hide alerts
 		----------------------------------------------------------------------
 
@@ -7834,8 +8249,8 @@
 			LeaPlusLC:MakeCB(AlertPanel, "NoLootAlerts", "Hide loot alerts", 16, -152, false, "If checked, loot alerts will not be shown.\n\nThis includes items, money, honor, resources and store purchases.")
 			LeaPlusLC:MakeCB(AlertPanel, "NoProfessionAlerts", "Hide profession alerts", 16, -172, false, "If checked, profession alerts will not be shown.\n\nThis includes recipes and digsites.")
 
-			-- Help button tooltip
-			AlertPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+			-- Help button hidden
+			AlertPanel.h:Hide()
 
 			-- Back button handler
 			AlertPanel.b:SetScript("OnClick", function() 
@@ -7903,6 +8318,8 @@
 				HonorAwardedAlertSystem, "NoLootAlerts", -- HonorAwardedAlertSystem:AddAlert(204)
 				MoneyWonAlertSystem, "NoLootAlerts", -- MoneyWonAlertSystem:AddAlert(815)
 				StorePurchaseAlertSystem, "NoLootAlerts", -- StorePurchaseAlertSystem:AddAlert("\\124cffa335ee\\124Hitem:180545:0:0:0:0:0:0:0:0:0:0\\124h[Mystic Runesaber]\\124h\\124r", "", "", 214)
+				NewPetAlertSystem, "NoLootAlerts", -- NewPetAlertSystem:AddAlert("BattlePet-0-000003B985AC")
+				NewMountAlertSystem, "NoLootAlerts", -- NewMountAlertSystem:AddAlert(419)
 
 				-- Professions
 				DigsiteCompleteAlertSystem, "NoProfessionAlerts", -- DigsiteCompleteAlertSystem:AddAlert(1)
@@ -8358,7 +8775,8 @@
 			-- Check the display menu option, update the game options panel and lockout changes
 			ShowAccountAchievements(true)
 			InterfaceOptionsPanel_CheckButton_Update(InterfaceOptionsSocialPanelShowAccountAchievments)
-			LeaPlusLC:LockItem(InterfaceOptionsSocialPanelShowAccountAchievments, true)
+			InterfaceOptionsSocialPanelShowAccountAchievments:Disable()
+			InterfaceOptionsSocialPanelShowAccountAchievments:SetAlpha(0.5)
 			InterfaceOptionsSocialPanelShowAccountAchievmentsText:SetText(InterfaceOptionsSocialPanelShowAccountAchievmentsText:GetText() .. "\n" .. LeaPlusLC:Translate("Managed by Leatrix Plus"))
 		end
 
@@ -8466,7 +8884,7 @@
 			LeaPlusLC:MakeSL(SideTip, "LeaPlusTipSize", "", 0.50, 2.00, 0.05, 356, -92, "%.2f")
 
 			-- Help button tooltip
-			SideTip.h.tiptext = LeaPlusLC:Translate("Drag the tooltip overlay to position it.\n\nScale and style the tooltip using the settings on this page.")
+			SideTip.h.tiptext = LeaPlusLC:Translate("Drag the tooltip overlay to position it.")
 
 			-- Back button handler
 			SideTip.b:SetScript("OnClick", function() 
@@ -8612,6 +9030,38 @@
 			-- Set tooltip scale when slider or checkbox changes and on startup
 			LeaPlusCB["LeaPlusTipSize"]:HookScript("OnValueChanged", SetTipScale)
 			SetTipScale()
+
+			----------------------------------------------------------------------
+			-- Contribution frame
+			----------------------------------------------------------------------
+
+			local function ContributionTipFunc()
+
+				-- Function to set tooltip scale
+				local function SetContributionTipScale()
+					ContributionTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"])
+					ContributionBuffTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"])
+				end
+
+				-- Set tooltip scale when slider changes and on startup
+				LeaPlusCB["LeaPlusTipSize"]:HookScript("OnValueChanged", SetContributionTipScale)
+				SetContributionTipScale()
+
+			end
+
+			-- Run function when Blizzard addon has loaded
+			if IsAddOnLoaded("Blizzard_Contribution") then
+				ContributionTipFunc()
+			else
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "Blizzard_Contribution" then
+						ContributionTipFunc()
+						waitFrame:UnregisterAllEvents()
+					end
+				end)
+			end
 
 			----------------------------------------------------------------------
 			-- Pet Journal tooltips
@@ -8784,10 +9234,35 @@
 			-- Store locals
 			local TipMClass = LOCALIZED_CLASS_NAMES_MALE
 			local TipFClass = LOCALIZED_CLASS_NAMES_FEMALE
-			local LevelString = string.lower(TOOLTIP_UNIT_LEVEL:gsub("%%s",".+"));
-			local BOSS = BOSS
 
-			--	Show tooltip
+			-- Level string
+			local LevelString, LevelString2
+			if GameLocale == "ruRU" then
+				-- Level string for ruRU
+				LevelString = "уровня"
+				LevelString2 = "уровень"
+			else
+				-- Level string for all other locales
+				LevelString = string.lower(TOOLTIP_UNIT_LEVEL:gsub("%%s",".+"))
+				LevelString2 = ""
+			end
+
+			-- Tag locale (code construction from tiplang)
+			local ttLevel, ttBoss, ttElite, ttRare, ttRareElite, ttRareBoss
+			if 		GameLocale == "zhCN" then 	ttLevel = "等级"		; ttBoss = "首领"	; ttElite = "精英"	; ttRare = "精良"	; ttRareElite = "精良 精英"		; ttRareBoss = "精良 首领"
+			elseif 	GameLocale == "zhTW" then 	ttLevel = "等級"		; ttBoss = "首領"	; ttElite = "精英"	; ttRare = "精良"	; ttRareElite = "精良 精英"		; ttRareBoss = "精良 首領"
+			elseif 	GameLocale == "ruRU" then 	ttLevel = "Уровень"	; ttBoss = "босс"	; ttElite = "элита"	; ttRare = "Редкое"	; ttRareElite = "Редкое элита"	; ttRareBoss = "Редкое босс"
+			elseif 	GameLocale == "koKR" then 	ttLevel = "레벨"		; ttBoss = "우두머리"	; ttElite = "정예"	; ttRare = "희귀"	; ttRareElite = "희귀 정예"		; ttRareBoss = "희귀 우두머리"
+			elseif 	GameLocale == "esMX" then 	ttLevel = "Nivel"	; ttBoss = "Jefe"	; ttElite = "Élite"	; ttRare = "Raro"	; ttRareElite = "Raro Élite"	; ttRareBoss = "Raro Jefe"
+			elseif 	GameLocale == "ptBR" then 	ttLevel = "Nível"	; ttBoss = "Chefe"	; ttElite = "Elite"	; ttRare = "Raro"	; ttRareElite = "Raro Elite"	; ttRareBoss = "Raro Chefe"
+			elseif 	GameLocale == "deDE" then 	ttLevel = "Stufe"	; ttBoss = "Boss"	; ttElite = "Elite"	; ttRare = "Selten"	; ttRareElite = "Selten Elite"	; ttRareBoss = "Selten Boss"
+			elseif 	GameLocale == "esES" then	ttLevel = "Nivel"	; ttBoss = "Jefe"	; ttElite = "Élite"	; ttRare = "Raro"	; ttRareElite = "Raro Élite"	; ttRareBoss = "Raro Jefe"
+			elseif 	GameLocale == "frFR" then 	ttLevel = "Niveau"	; ttBoss = "Boss"	; ttElite = "Élite"	; ttRare = "Rare"	; ttRareElite = "Rare Élite"	; ttRareBoss = "Rare Boss"
+			elseif 	GameLocale == "itIT" then 	ttLevel = "Livello"	; ttBoss = "Boss"	; ttElite = "Élite"	; ttRare = "Raro"	; ttRareElite = "Raro Élite"	; ttRareBoss = "Raro Boss"
+			else 								ttLevel = "Level"	; ttBoss = "Boss"	; ttElite = "Elite"	; ttRare = "Rare"	; ttRareElite = "Rare Elite"	; ttRareBoss = "Rare Boss"
+			end
+
+			-- Show tooltip
 			local function ShowTip()
 
 				-- Do nothing if CTRL, SHIFT and ALT are being held
@@ -8935,7 +9410,7 @@
 					-- Show level
 					if LT["Reaction"] < 5 then
 						if LT["UnitLevel"] == -1 then
-							LT["InfoText"] = ("|cffff3333Level ??|cffffffff")
+							LT["InfoText"] = ("|cffff3333" .. ttLevel .. " ??|cffffffff")
 						else
 							LT["LevelColor"] = GetCreatureDifficultyColor(LT["UnitLevel"])
 							LT["LevelColor"] = string.format('%02x%02x%02x', LT["LevelColor"].r * 255, LT["LevelColor"].g * 255, LT["LevelColor"].b * 255)
@@ -8984,6 +9459,11 @@
 					-- Find the level line
 					LT["MobInfoLine"] = 0
 					local line2, line3, line4 = _G["GameTooltipTextLeft2"]:GetText(), _G["GameTooltipTextLeft3"]:GetText(), _G["GameTooltipTextLeft4"]:GetText()
+					if GameLocale == "ruRU" then -- Additional check for ruRU
+						if line2 and string.lower(line2):find(LevelString2) then LT["MobInfoLine"] = 2 end
+						if line3 and string.lower(line3):find(LevelString2) then LT["MobInfoLine"] = 3 end
+						if line4 and string.lower(line4):find(LevelString2) then LT["MobInfoLine"] = 4 end
+					end
 					if line2 and string.lower(line2):find(LevelString) then LT["MobInfoLine"] = 2 end
 					if line3 and string.lower(line3):find(LevelString) then LT["MobInfoLine"] = 3 end
 					if line4 and string.lower(line4):find(LevelString) then LT["MobInfoLine"] = 4 end
@@ -8993,7 +9473,7 @@
 
 						-- Level ?? mob
 						if LT["UnitLevel"] == -1 then
-							LT["InfoText"] = "|cffff3333Level ??|cffffffff "
+							LT["InfoText"] = "|cffff3333" .. ttLevel .. " ??|cffffffff "
 
 						-- Mobs within level range
 						else
@@ -9012,23 +9492,23 @@
 						LT["Special"] = UnitClassification(LT["Unit"])
 						if LT["Special"] then
 							if LT["Special"] == "elite" then
-								if strfind(_G["GameTooltipTextLeft" .. LT["MobInfoLine"]]:GetText(), "(" .. BOSS .. ")") then 
-									LT["Special"] = "(" .. BOSS .. ")"
+								if strfind(_G["GameTooltipTextLeft" .. LT["MobInfoLine"]]:GetText(), "(" .. ttBoss .. ")") then
+									LT["Special"] = "(" .. ttBoss .. ")"
 								else
-									LT["Special"] = "(Elite)"
+									LT["Special"] = "(" .. ttElite .. ")"
 								end
 							elseif LT["Special"] == "rare" then
-								LT["Special"] = "|c00e066ff(Rare)"
+								LT["Special"] = "|c00e066ff(" .. ttRare .. ")"
 							elseif LT["Special"] == "rareelite" then
-								if strfind(_G["GameTooltipTextLeft" .. LT["MobInfoLine"]]:GetText(), "(" .. BOSS .. ")") then 
-									LT["Special"] = "|c00e066ff(Rare " .. BOSS .. ")"
+								if strfind(_G["GameTooltipTextLeft" .. LT["MobInfoLine"]]:GetText(), "(" .. ttBoss .. ")") then
+									LT["Special"] = "|c00e066ff(" .. ttRareBoss .. ")"
 								else
-									LT["Special"] = "|c00e066ff(Rare Elite)"
+									LT["Special"] = "|c00e066ff(" .. ttRareElite .. ")"
 								end
 							elseif LT["Special"] == "worldboss" then
-								LT["Special"] = "(Boss)"
-							elseif LT["UnitLevel"] == -1 and LT["Special"] == "normal" and strfind(_G["GameTooltipTextLeft" .. LT["MobInfoLine"]]:GetText(), "(" .. BOSS .. ")") then
-								LT["Special"] = "(" .. BOSS .. ")"
+								LT["Special"] = "(" .. ttBoss .. ")"
+							elseif LT["UnitLevel"] == -1 and LT["Special"] == "normal" and strfind(_G["GameTooltipTextLeft" .. LT["MobInfoLine"]]:GetText(), "(" .. ttBoss .. ")") then
+								LT["Special"] = "(" .. ttBoss .. ")"
 							else
 								LT["Special"] = nil 
 							end
@@ -9221,7 +9701,7 @@
 			LeaPlusLC:MakeCB(SideViewport, "ViewPortResize", "Resize the game world", 16, -212, false, "If checked, the game world will be resized to fit between the top and bottom borders.\n\nNote that if you enable this setting, the transparency slider will no longer affect the top and bottom borders.")
 
 			-- Help button tooltip
-			SideViewport.h.tiptext = LeaPlusLC:Translate("Configure the viewport using the controls on this page.\n\nThis panel will close automatically if you enter combat.")
+			SideViewport.h.tiptext = LeaPlusLC:Translate("This panel will close automatically if you enter combat.")
 
 			-- Back button handler
 			SideViewport.b:SetScript("OnClick", function() 
@@ -9603,22 +10083,8 @@
 				end
 			end
 
-			-- Give function file level scope (it's used in SetPlusScale)
+			-- Give function file level scope (it's used in SetPlusScale to set the highlight bar scale)
 			LeaPlusLC.UpdateList = UpdateList
-
-			-- Function to return to the zone list for the current tracklist continent
-			local function BackClickFunc()
-				if type(ListData[1]) == "string" then
-					-- Strip the color code from the list data
-					local nocol = string.gsub(ListData[1], "|cffffd800", "")
-					-- Strip the zone
-					local backzone = strsplit(":", nocol, 2)
-					-- Show the tracklist continent 
-					if ZoneList[backzone] then ListData = ZoneList[backzone] end
-					UpdateList()
-					scrollFrame:SetVerticalScroll(ZonePage or 0)
-				end
-			end
 
 			-- Function to make navigation menu buttons
 			local function MakeButton(where, y)
@@ -9661,12 +10127,6 @@
 					-- Show zone listing for clicked item
 					ListData = ZoneList[where]
 					UpdateList()
-				end)
-
-				mbtn:SetScript("OnMouseDown", function(self, btn)
-					if btn == "RightButton" then
-						BackClickFunc()
-					end
 				end)
 
 				return mbtn, mbtn.s
@@ -9848,7 +10308,7 @@
 
 				button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
-				-- Click handler for track or zone item
+				-- Click handler for track, zone and back button
 				button:SetScript("OnClick", function(self, btn)
 					if btn == "LeftButton" then
 						-- Get clicked track text
@@ -9935,11 +10395,19 @@
 
 							end
 						end
-
 					elseif btn == "RightButton" then
-						BackClickFunc()
+						-- Return to the current zone list (back button)
+						if type(ListData[1]) == "string" then
+							-- Strip the color code from the list data
+							local nocol = string.gsub(ListData[1], "|cffffd800", "")
+							-- Strip the zone
+							local backzone = strsplit(":", nocol, 2)
+							-- Show the tracklist continent 
+							if ZoneList[backzone] then ListData = ZoneList[backzone] end
+							UpdateList()
+							scrollFrame:SetVerticalScroll(ZonePage or 0)
+						end
 					end
-
 				end)
 
 			end
@@ -10092,8 +10560,8 @@
 		LeaPlusLC:MakeCB(ResPanel, "ResThankYouEmote", "Thank the player who resurrected you", 16, -92, false, "If checked, your character will emote a thank you when a resurrection is automatically accepted.")
 		LeaPlusLC:MakeCB(ResPanel, "NoAutoResInCombat", "Exclude combat resurrection requests", 16, -112, false, "If checked, resurrection requests will not be automatically accepted if the player resurrecting you is in combat.")
 
-		-- Help button tooltip
-		ResPanel.h.tiptext = LeaPlusLC:Translate("Select the settings that you want to use.")
+		-- Help button hidden
+		ResPanel.h:Hide()
 
 		-- Back button handler
 		ResPanel.b:SetScript("OnClick", function() 
@@ -10137,8 +10605,8 @@
 		LeaPlusLC:MakeCB(ReleasePanel, "AutoRelTolBarad", "Tol Barad (the PvP zone)", 16, -132, false, "If checked, you will release automatically after you die in Tol Barad (the PvP zone).")
 		LeaPlusLC:MakeCB(ReleasePanel, "AutoRelAshran", "Ashran", 16, -152, false, "If checked, you will release automatically after you die in Ashran.")
 
-		-- Help button tooltip
-		ReleasePanel.h.tiptext = LeaPlusLC:Translate("Select the zones where automatic release should operate.")
+		-- Help button hidden
+		ReleasePanel.h:Hide()
 
 		-- Back button handler
 		ReleasePanel.b:SetScript("OnClick", function() 
@@ -10196,8 +10664,8 @@
 		-- Save the keyword when it changes
 		KeyBox:SetScript("OnTextChanged", SetInvKey)
 
-		-- Help button tooltip
-		InvPanel.h.tiptext = LeaPlusLC:Translate("Enter the keyword that you want to use.")
+		-- Help button hidden
+		InvPanel.h:Hide()
 
 		-- Back button handler
 		InvPanel.b:SetScript("OnClick", function()
@@ -10512,6 +10980,15 @@
 				LeaPlusLC:LoadVarChk("NoChatFade", "Off")					-- Disable chat fade
 				LeaPlusLC:LoadVarChk("UnivGroupColor", "Off")				-- Universal group color
 				LeaPlusLC:LoadVarChk("Manageclasscolors", "Off")			-- Use class colors in chat
+				LeaPlusLC:LoadVarChk("RecentChatWindow", "Off")				-- Recent chat window
+				LeaPlusLC:LoadVarNum("RecentChatSize", 18, 10, 24)			-- Recent chat size
+				LeaPlusLC:LoadVarNum("RecentChatAlpha", 0.5, 0, 1)			-- Recent chat alpha
+				LeaPlusLC:LoadVarNum("RecentChatWidth", 1, 0.5, 1.5)		-- Recent chat width
+				LeaPlusLC:LoadVarNum("RecentChatHeight", 1, 0.5, 1.5)		-- Recent chat height
+				LeaPlusLC:LoadVarAnc("RecentChatA", "CENTER")				-- Recent chat location
+				LeaPlusLC:LoadVarAnc("RecentChatR", "CENTER")				-- Recent chat location
+				LeaPlusLC:LoadVarNum("RecentChatX", 0, -5000, 5000)			-- Recent chat location
+				LeaPlusLC:LoadVarNum("RecentChatY", 0, -5000, 5000)			-- Recent chat location
 				LeaPlusLC:LoadVarChk("MaxChatHstory", "Off")				-- Increase chat history
 
 				-- Text
@@ -10728,6 +11205,15 @@
 			LeaPlusDB["NoChatFade"]				= LeaPlusLC["NoChatFade"]
 			LeaPlusDB["UnivGroupColor"]			= LeaPlusLC["UnivGroupColor"]
 			LeaPlusDB["Manageclasscolors"]		= LeaPlusLC["Manageclasscolors"]
+			LeaPlusDB["RecentChatWindow"]		= LeaPlusLC["RecentChatWindow"]
+			LeaPlusDB["RecentChatSize"]			= LeaPlusLC["RecentChatSize"]
+			LeaPlusDB["RecentChatAlpha"]		= LeaPlusLC["RecentChatAlpha"]
+			LeaPlusDB["RecentChatWidth"]		= LeaPlusLC["RecentChatWidth"]
+			LeaPlusDB["RecentChatHeight"]		= LeaPlusLC["RecentChatHeight"]
+			LeaPlusDB["RecentChatA"]			= LeaPlusLC["RecentChatA"]
+			LeaPlusDB["RecentChatR"]			= LeaPlusLC["RecentChatR"]
+			LeaPlusDB["RecentChatX"]			= LeaPlusLC["RecentChatX"]
+			LeaPlusDB["RecentChatY"]			= LeaPlusLC["RecentChatY"]
 			LeaPlusDB["MaxChatHstory"]			= LeaPlusLC["MaxChatHstory"]
 
 			-- Text
@@ -11644,6 +12130,41 @@
 						LeaPlusLC:Print(npcName .. ": |cffffffff" .. npcID)
 					end
 				end
+			elseif string.sub(str, 1, 7) == "mountid" then
+				-- Get mount ID by mount name
+				local param = string.sub(str, 9)
+				if not param or param == "" then LeaPlusLC:Print("Missing mount name.") return end
+				local mounts = C_MountJournal.GetMountIDs()
+				local mountSuccess = false
+				for i = 1, #mounts do
+					local creatureName, spellID, icon, active, isUsable, sourceType = C_MountJournal.GetMountInfoByID(mounts[i])
+					if strfind(strlower(creatureName), strlower(param)) then
+						LeaPlusLC:Print(creatureName .. ": |cffffffff" .. mounts[i] .. "|r")
+						mountSuccess = true
+					end
+				end
+				if not mountSuccess then LeaPlusLC:Print("Mount not found.") end
+			elseif string.sub(str, 1, 5) == "petid" then
+				-- Get pet ID by pet name
+				local param = string.sub(str, 7)
+				if not param or param == "" then LeaPlusLC:Print("Missing pet name.") return end
+				local numPets = C_PetJournal.GetNumPets()
+				local petSuccess = false
+				for i = 1, numPets do
+					local petID, speciesID, isOwned, customName, level, favorite, isRevoked, name, icon, petType, creatureID, sourceText, description, isWildPet, canBattle, tradable, unique = C_PetJournal.GetPetInfoByIndex(i, false)
+					if strfind(strlower(name), strlower(param)) then
+						if isOwned then
+							LeaPlusLC:Print(name .. ": |cffffffff" .. petID .. " |cff00ff00(" .. level .. ")|r")
+							petSuccess = true
+						elseif not petSuccess then
+							LeaPlusLC:Print("You do not own this pet.  Only owned pets can be searched.")
+							return
+						end
+					end
+				end
+				if not petSuccess then
+					LeaPlusLC:Print("Pet not found.  Only owned pets that are currently showing in the journal can be searched.")
+				end
 			elseif str == "tooltip" then
 				-- Print tooltip frame name
 				local enumf = EnumerateFrames()
@@ -11660,11 +12181,7 @@
 					GameTooltip:HookScript("OnUpdate", function() 
 						local a = _G["GameTooltipTextLeft1"]:GetText() or "" 
 						if a == "Dark Soil" then
-							if ClientVersion == "7.3.0" then
-								PlaySound(8959)
-							else
-								PlaySound("RaidWarning", "Master")
-							end
+							PlaySound(8959)
 						end
 					end)
 					LeaPlusLC["DarkScriptlEnabled"] = true
@@ -11848,6 +12365,30 @@
 				-- Wipe cooldowns
 				LeaPlusDB["Cooldowns"] = nil
 				ReloadUI()
+			elseif str == "tipchat" then
+				-- Print tooltip contents in chat
+				local numLines = GameTooltip:NumLines()
+				if numLines then
+					for i = 1, numLines do
+						print(_G["GameTooltipTextLeft" .. i]:GetText() or "")
+					end
+				end
+			elseif str == "tiplang" then
+				-- Tooltip tag locale code constructor
+				local msg = ""
+				msg = msg .. 'if GameLocale == "' .. GameLocale .. '" then '
+				msg = msg .. 'ttLevel = "' .. LEVEL .. '"; '
+				msg = msg .. 'ttBoss = "' .. BOSS .. '"; '
+				msg = msg .. 'ttElite = "' .. ELITE .. '"; '
+				msg = msg .. 'ttRare = "' .. ITEM_QUALITY3_DESC .. '"; '
+				msg = msg .. 'ttRareElite = "' .. ITEM_QUALITY3_DESC .. " " .. ELITE .. '"; '
+				msg = msg .. 'ttRareBoss = "' .. ITEM_QUALITY3_DESC .. " " .. BOSS .. '"; '
+				msg = msg .. "end"
+				print(msg)
+			elseif str == "con" then
+				-- Show the developer console
+				C_Console.SetFontHeight(20)
+				DeveloperConsole:Toggle(true)
 			elseif str == "admin" then
 				-- Preset profile (used for testing)
 				LpEvt:UnregisterAllEvents()						-- Prevent changes
@@ -11883,6 +12424,13 @@
 				LeaPlusDB["NoChatFade"] = "On"					-- Disable chat fade
 				LeaPlusDB["UnivGroupColor"] = "On"				-- Universal group color
 				LeaPlusDB["Manageclasscolors"] = "On"			-- Manage class colors
+				LeaPlusDB["RecentChatWindow"] = "On"			-- Recent chat window
+				LeaPlusDB["RecentChatWidth"] = 1				-- Recent chat width
+				LeaPlusDB["RecentChatHeight"] = 0.5				-- Recent chat height
+				LeaPlusDB["RecentChatA"] = "BOTTOM"				-- Recent chat position
+				LeaPlusDB["RecentChatR"] = "BOTTOM"				-- Recent chat position
+				LeaPlusDB["RecentChatX"] = -74					-- Recent chat position
+				LeaPlusDB["RecentChatY"] = 88					-- Recent chat position
 				LeaPlusDB["MaxChatHstory"] = "Off"				-- Increase chat history
 
 				-- Text
@@ -12291,7 +12839,10 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoChatFade"				, 	"Disable chat fade"				, 	340, -132, 	true,	"If checked, chat text will not fade out after a time period.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnivGroupColor"			,	"Universal group color"			,	340, -152,	true,	"If checked, raid chat and instance chat will both be colored blue (to match the default party chat color).")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "Manageclasscolors"			,	"Use class colors in chat"		,	340, -172,	true,	"If checked, class colors will be used in the chat frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxChatHstory"				,	"Increase chat history"			, 	340, -192, 	true,	"If checked, your chat history will increase to 4096 lines.  If unchecked, the default will be used (128 lines).\n\nEnabling this option may prevent some chat text from showing during login.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RecentChatWindow"			,	"Recent chat window"			, 	340, -192, 	true,	"If checked, you can hold down CTRL and click a chat tab to view recent chat in a copy-friendly window.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxChatHstory"				,	"Increase chat history"			, 	340, -212, 	true,	"If checked, your chat history will increase to 4096 lines.  If unchecked, the default will be used (128 lines).\n\nEnabling this option may prevent some chat text from showing during login.")
+
+	LeaPlusLC:CfgBtn("RecentChatBtn", LeaPlusCB["RecentChatWindow"], "Click to configure the settings for this option.")
 
 ----------------------------------------------------------------------
 -- 	LC4: Text
@@ -12405,7 +12956,7 @@
 	pg = "Page8";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Addon"						, 146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowMinimapIcon"			, "Show minimap button"				, 146, -92,		true,	"If checked, a minimap button will be available.\n\nLeft-click - Toggle options panel.\n\nSHIFT/Left-click - Toggle music.\n\nSHIFT/Right-click - Toggle coordinates (if enabled).\n\nCTRL/Left-click - Toggle minimap target tracking.\n\nCTRL/Right-click - Toggle errors (if enabled).\n\nCTRL/SHIFT/Left-click - Toggle Zygor (if installed).\n\nCTRL/SHIFT/Right-click - Toggle windowed mode.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowMinimapIcon"			, "Show minimap button"				, 146, -92,		true,	"If checked, a minimap button will be available.\n\nClick - Toggle options panel.\n\nSHIFT/Left-click - Toggle music.\n\nSHIFT/Right-click - Toggle coordinates (if enabled).\n\nCTRL/Left-click - Toggle minimap target tracking.\n\nCTRL/Right-click - Toggle errors (if enabled).\n\nCTRL/SHIFT/Left-click - Toggle Zygor (if installed).\n\nCTRL/SHIFT/Right-click - Toggle windowed mode.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EnableHotkey"				, "Enable hotkey"					, 146, -112,	true,	"If checked, you will be able to open Leatrix Plus by pressing a designated hotkey.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Scale", 340, -72);

@@ -407,6 +407,8 @@ L["STRING_OPTIONS_ADVANCED"] = "Advanced"
 L["STRING_OPTIONS_ALPHAMOD_ANCHOR"] = "Auto Hide:"
 L["STRING_OPTIONS_ALWAYS_USE"] = "Use On All Characters"
 L["STRING_OPTIONS_ALWAYS_USE_DESC"] = "The same profile is used on all characters. You may override this on any character by just selecting another existing profile."
+L["STRING_OPTIONS_ALWAYSSHOWPLAYERS"] = "Show Ungrouped Players"
+L["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"] = "When using the default Standard mode, show player characters even if they aren't in group with you."
 L["STRING_OPTIONS_ANCHOR"] = "Side"
 L["STRING_OPTIONS_ANIMATEBARS"] = "Animate Bars"
 L["STRING_OPTIONS_ANIMATEBARS_DESC"] = "Enable animations for all bars."
@@ -655,6 +657,10 @@ L["STRING_OPTIONS_DEATHLIMIT"] = "Death Events Amount"
 L["STRING_OPTIONS_DEATHLIMIT_DESC"] = [=[Set the amount of events to show on death display.
 
 |cFFFFFF00Important|r: only applies to new deaths after change.]=]
+L["STRING_OPTIONS_DEATHLOG_MINHEALING"] = "Death Log Minimum Healing"
+L["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"] = [=[Death log won't show heals below this threshold.
+
+|cFFFFFF00Tip|r: right click to manually enter the value.]=]
 L["STRING_OPTIONS_DESATURATE_MENU"] = "Desaturated"
 L["STRING_OPTIONS_DESATURATE_MENU_DESC"] = "Enabling this option, all menu icons on toolbar become black and white."
 L["STRING_OPTIONS_DISABLE_ALLDISPLAYSWINDOW"] = "Disable 'All Displays' Menu"

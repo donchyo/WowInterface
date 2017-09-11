@@ -61,9 +61,27 @@ local function isquestcompleted(questID)
  return false, SecondsToTime((C_TaskQuest.GetQuestTimeLeftMinutes(questID) or 0) * 60)
 end
 
+local function remove_from_lists_order(questID)
+ for _,v in pairs(WQ.lists) do
+  for _,order in pairs(v.Order) do
+   for _,quests in pairs(order) do
+    local i = 2
+    while i < #quests do
+     if quests[i] == questID then
+      tremove(quests, i)
+     else
+      i = i + 1
+     end
+    end
+   end
+  end
+ end
+end
+
 local function removeQuest(questID)
  WQ.Data[questID] = nil
  WQ.TagInfo[questID] = nil
+ remove_from_lists_order(questID)
  DGCEventFrame:Fire("WORLD_QUEST_REMOVED", questID)
 end
 
@@ -322,7 +340,13 @@ local function worldmap_update()
  end
 end
 
-function WQ:Initialize()
+function WQ:Initialize(list)
+
+ if not WQ.lists then WQ.lists = {} end
+ if list and not tContains(WQ.lists, list) then
+  WQ.lists[#WQ.lists + 1] = list
+ end
+
  if WQ.initialized then return end
 
  timer_end = time() + 9999

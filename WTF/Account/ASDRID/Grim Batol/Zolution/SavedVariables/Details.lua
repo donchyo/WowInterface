@@ -13,12 +13,17 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "11",
+	["last_realversion"] = 124,
 	["ignore_nicktag"] = false,
-	["combat_counter"] = 7291,
 	["tabela_historico"] = {
 		["tabelas"] = {
 		},
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["combat_counter"] = 7295,
+	["savedbuffs"] = {
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -27,8 +32,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
 			["dps"] = 0,
+			["author"] = "Details! Team",
 			["level"] = 1,
 			["enabled"] = false,
 		},
@@ -74,7 +79,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -82,7 +87,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -90,7 +95,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -104,7 +109,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -169,8 +174,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["showamount"] = false,
 			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -182,30 +187,27 @@ _detalhes_database = {
 			["enabled"] = false,
 		},
 	},
-	["savedbuffs"] = {
-	},
 	["last_instance_time"] = 1487664143,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
 	["last_encounter"] = "Blast Furnace",
 	["character_data"] = {
-		["logons"] = 1283,
+		["logons"] = 1285,
 	},
+	["last_day"] = "09",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
+	["last_version"] = "v7.3.0.4492",
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 2665,
 	["savedStyles"] = {
 	},
+	["last_instance_id"] = 33,
 	["nick_tag_cache"] = {
-		["nextreset"] = 1502663088,
+		["nextreset"] = 1505908049,
 		["last_version"] = 9,
 	},
-	["last_version"] = "v7.2.5.4369",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -216,7 +218,6 @@ _detalhes_database = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["force_font_outline"] = "",
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -318,7 +319,7 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["last_realversion"] = 124,
+	["force_font_outline"] = "",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {
@@ -337,7 +338,10 @@ _detalhes_database = {
 			22317, -- [7]
 		},
 	},
-	["last_instance_id"] = 33,
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["cached_specs"] = {
 		["Player-1303-03E8DD46"] = 258,
 	},

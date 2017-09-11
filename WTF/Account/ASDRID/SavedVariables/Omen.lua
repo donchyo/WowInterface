@@ -12,6 +12,7 @@ Omen3DB = {
 		["Krixicx - Shattered Hand"] = "Krixicx - Shattered Hand",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Krixikin - Grim Batol"] = "Krixidk - Grim Batol",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Krixi - Grim Batol"] = "Krixidk - Grim Batol",
 		["Zolution - Grim Batol"] = "Krixidk - Grim Batol",
@@ -63,15 +64,15 @@ Omen3DB = {
 				["HideWhenOOC"] = true,
 			},
 			["VGrip1"] = 140.625958359275,
-			["PositionX"] = 1316.83532714844,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+			},
 			["Warnings"] = {
 				["DisableWhileTanking"] = false,
 				["Flash"] = false,
 				["Sound"] = false,
 			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-			},
+			["PositionX"] = 1316.83532714844,
 			["Bar"] = {
 				["FontSize"] = 11,
 				["ShowHeadings"] = false,
@@ -138,6 +139,11 @@ Omen3DB = {
 			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
 		},
+		["Krixikin - Grim Batol"] = {
+			["Shown"] = false,
+			["PositionY"] = 555.000061035156,
+			["PositionX"] = 740.833374023438,
+		},
 		["Donchyo - Shattered Hand"] = {
 			["Shown"] = false,
 			["PositionY"] = 324.777587890625,
@@ -150,6 +156,7 @@ Omen3DB = {
 			["PositionX"] = 740.833374023438,
 		},
 		["Default"] = {
+			["Shown"] = false,
 			["PositionY"] = 521.000061035156,
 			["PositionX"] = 753.333435058594,
 			["PositionH"] = 82.0000686645508,

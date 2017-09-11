@@ -1,11 +1,5 @@
 
 ElvCharacterDB = {
-	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
-		["IsInValidZone"] = true,
-	},
 	["ChatLog"] = {
 	},
 	["ChatEditHistory"] = {
@@ -29,5 +23,11 @@ ElvCharacterDB = {
 		"/g det är ju inge vidare", -- [18]
 		"/autorepair", -- [19]
 		"/autorepair guild", -- [20]
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

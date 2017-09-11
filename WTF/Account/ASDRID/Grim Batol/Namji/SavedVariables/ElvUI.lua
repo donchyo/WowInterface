@@ -1,5 +1,13 @@
 
 ElvCharacterDB = {
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+	["ChatLog"] = {
+	},
 	["ChatEditHistory"] = {
 		"/p jag gjorde det på min shaman som enhance", -- [1]
 		"/p och rogue", -- [2]
@@ -21,13 +29,5 @@ ElvCharacterDB = {
 		"/p ja", -- [18]
 		"/p tacj", -- [19]
 		"/p tack", -- [20]
-	},
-	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
-		["IsInValidZone"] = true,
-	},
-	["ChatLog"] = {
 	},
 }

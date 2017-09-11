@@ -554,6 +554,10 @@ L["STRING_OPTIONS_ALPHAMOD_ANCHOR"] = "Modificadores de opacidad:"
 -- L["STRING_OPTIONS_ALWAYS_USE"] = ""
 --Translation missing 
 -- L["STRING_OPTIONS_ALWAYS_USE_DESC"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"] = ""
 L["STRING_OPTIONS_ANCHOR"] = "Lado"
 --Translation missing 
 -- L["STRING_OPTIONS_ANIMATEBARS"] = ""
@@ -813,6 +817,10 @@ L["STRING_OPTIONS_DATACOLLECT_ANCHOR"] = "Tipos de datos:"
 -- L["STRING_OPTIONS_DEATHLIMIT"] = ""
 --Translation missing 
 -- L["STRING_OPTIONS_DEATHLIMIT_DESC"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"] = ""
 L["STRING_OPTIONS_DESATURATE_MENU"] = "Desaturar menú"
 L["STRING_OPTIONS_DESATURATE_MENU_DESC"] = "Mostrar los iconos en el menú en blanco y negro."
 --Translation missing 

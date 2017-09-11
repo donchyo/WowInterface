@@ -29,7 +29,7 @@ local AIS = BetterIconSelector
 AIS.GuildBankPopup = { }
 local GuildBankPopup = AIS.GuildBankPopup
 local L = LibStub("AceLocale-3.0"):GetLocale("BetterIconSelector", true)
-
+local libiconpath = LibStub("LibIconPath")
 local replaced = false
 local popup
 local options
@@ -104,8 +104,8 @@ function GuildBankPopup:ReplaceGuildBankPopup()
 
 		-- (no altering needed)
 		popup:SetScript("OnHide", GuildBankPopupFrame_OnHide)
-		popup:SetScript("OnOkayClicked", function(...) PlaySound("gsTitleOptionOK"); GuildBankPopupOkayButton_OnClick(...) end)
-		popup:SetScript("OnCancelClicked", function(...) PlaySound("gsTitleOptionOK"); GuildBankPopupFrame_CancelEdit(...) end)
+		popup:SetScript("OnOkayClicked", function(...) PlaySound(PlaySoundKitID and "gsTitleOptionOK" or 798); GuildBankPopupOkayButton_OnClick(...) end)
+		popup:SetScript("OnCancelClicked", function(...) PlaySound(PlaySoundKitID and "gsTitleOptionOK" or 798); GuildBankPopupFrame_CancelEdit(...) end)
 
 		-- (no equivalent function)
 		popup.iconsFrame:SetScript("OnSelectedIconChanged", function(iconsFrame)
@@ -130,7 +130,7 @@ function GuildBankPopup.GuildBankPopupFrame_Update(tab)
 	local tabName, tabTexture = GetGuildBankTabInfo(GetCurrentGuildBankTab())
 	if tabTexture then
 		if (type(tabTexture) == "number") then
-			tabTexture = LibIconPath_getName(tabTexture)
+			tabTexture = libiconpath:getName(tabTexture)
 		end
 		-- (we don't need to disable the OK button while searching - if
 		-- selectedIcon is nil, it GuildBankPopupOkayButton_OnClick defaults

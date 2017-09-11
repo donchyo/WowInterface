@@ -1000,6 +1000,7 @@ local default_profile = {
 		force_activity_time_pvp = true,
 		death_tooltip_width = 300,
 		override_spellids = true,
+		all_players_are_group = false,
 	
 	--> skins
 		standard_skin = false,
@@ -1121,6 +1122,10 @@ local default_player_data = {
 			enabled = true,
 			channel = "SELF",
 		},
+		announce_damagerecord = {
+			enabled = true,
+			channel = "SELF",
+		},
 	--> benchmark
 		benchmark_db = {
 			frame = {},
@@ -1197,6 +1202,8 @@ local default_global_data = {
 		encounter_spell_pool = {},
 	--> aura creation frame libwindow
 		createauraframe = {},
+	--> min health done on the death report
+		deathlog_healingdone_min = 1,
 		
 	-- important auras
 	--[=[

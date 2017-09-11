@@ -1,5 +1,4 @@
 BINDINGMODE 0
-bind SPACE JUMP
 bind NUMPAD0 CLICK ClearRaidFlares:LeftButton
 bind X CLICK BT4Button30:LeftButton
 bind R CLICK BT4Button17:LeftButton
@@ -13,6 +12,7 @@ bind = NONE
 bind CTRL-1 NONE
 bind CTRL-2 NONE
 bind CTRL-3 CLICK BT4Button35:LeftButton
+bind CTRL-4 CLICK BT4Button77:LeftButton
 bind CTRL-5 CLICK BT4Button22:LeftButton
 bind CTRL-6 CLICK BT4Button28:LeftButton
 bind CTRL-7 CLICK BT4Button87:LeftButton
@@ -21,10 +21,9 @@ bind CTRL-9 NONE
 bind SHIFT-1 CLICK BT4Button25:LeftButton
 bind SHIFT-2 CLICK BT4Button74:LeftButton
 bind SHIFT-3 CLICK BT4Button26:LeftButton
-bind SHIFT-4 BONUSACTIONBUTTON2
+bind SHIFT-4 CLICK BT4Button76:LeftButton
 bind SHIFT-5 BONUSACTIONBUTTON3
 bind SHIFT-6 CLICK BT4Button27:LeftButton
-bind TAB TARGETNEARESTENEMY
 bind F1 BONUSACTIONBUTTON1
 bind G CLICK BT4Button20:LeftButton
 bind F CLICK BT4Button31:LeftButton

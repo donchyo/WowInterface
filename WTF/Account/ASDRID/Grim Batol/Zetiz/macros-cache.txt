@@ -33,3 +33,8 @@ VER 3 0100000000000005 "TRICKS" "INV_MISC_QUESTIONMARK"
 #showtooltip tricks of the trade
 /cast [@mouseover, help, nodead][help,nodead][@focus,help,nodead]tricks of the trade
 END
+VER 3 010000000000000A "vanish macro" "INV_MISC_QUESTIONMARK"
+/cast vanish
+/cast shadowstrike
+/stopattack
+END

@@ -1,3 +1,13 @@
+### Changes in 70300.32-Release:
+
+- Changed: Update Interface version
+- Changed: Update embeds for regression fix
+
+### Changes in 70200.31-Release:
+
+- Changed: Proving Grounds is being ignored globally now
+- Fixed: LibStub not being packaged recusively
+
 ### Changes in 70200.30-Release:
 
 - Changes: No auto-gossip for class challenges

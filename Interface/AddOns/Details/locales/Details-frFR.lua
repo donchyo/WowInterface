@@ -605,6 +605,10 @@ L["STRING_MINITUTORIAL_OPTIONS_PANEL6"] = "Sélectionnez ici quelle fenêtre vou
 --Translation missing 
 -- L["STRING_OPTIONS_ALWAYS_USE_DESC"] = ""
 --Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"] = ""
+--Translation missing 
 -- L["STRING_OPTIONS_ANCHOR"] = ""
 --Translation missing 
 -- L["STRING_OPTIONS_ANIMATEBARS"] = ""
@@ -910,6 +914,10 @@ L["STRING_MINITUTORIAL_OPTIONS_PANEL6"] = "Sélectionnez ici quelle fenêtre vou
 -- L["STRING_OPTIONS_DEATHLIMIT"] = ""
 --Translation missing 
 -- L["STRING_OPTIONS_DEATHLIMIT_DESC"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"] = ""
 --Translation missing 
 -- L["STRING_OPTIONS_DESATURATE_MENU"] = ""
 --Translation missing 

@@ -7,9 +7,8 @@
 local ADDON, Addon = ...
 local L = LibStub('AceLocale-3.0'):GetLocale(ADDON)
 local Frame = Addon:NewClass('Frame', 'Frame')
-Frame.OpenSound = 'igBackPackOpen'
-Frame.CloseSound = 'igBackPackClose'
-
+Frame.OpenSound = SOUNDKIT.IG_BACKPACK_OPEN
+Frame.CloseSound = SOUNDKIT.IG_BACKPACK_CLOSE
 
 --[[ Frame Events ]]--
 
@@ -34,10 +33,11 @@ function Frame:UpdateAppearance()
 	local managed = self.profile.managed
 	self:SetAttribute('UIPanelLayout-enabled', managed)
 	self:SetAttribute('UIPanelLayout-defined', managed)
-    self:SetAttribute('UIPanelLayout-whileDead', managed)
-    self:SetAttribute('UIPanelLayout-area', managed and 'left')
-    self:SetAttribute('UIPanelLayout-pushable', managed and 1)
-    self:SetAlpha(self.profile.alpha)
+  self:SetAttribute('UIPanelLayout-whileDead', managed)
+  self:SetAttribute('UIPanelLayout-area', managed and 'left')
+  self:SetAttribute('UIPanelLayout-pushable', managed and 1)
+	self:SetFrameStrata(self.profile.strata)
+  self:SetAlpha(self.profile.alpha)
 	self:SetScale(self.profile.scale)
 
 	if managed then

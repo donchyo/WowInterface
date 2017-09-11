@@ -10,6 +10,7 @@ SmoothDurabilityDB = {
 		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",

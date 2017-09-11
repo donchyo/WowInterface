@@ -572,7 +572,6 @@ StaticPopupDialogs["SERVERHOP_CLEARBL_DIAG"] = {
   OnAccept = function()
       ClearBlackList()
   end,
-  sound = "levelup2",
   whileDead = true,
   hideOnEscape = true,
 }

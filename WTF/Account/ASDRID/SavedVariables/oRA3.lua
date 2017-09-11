@@ -27,13 +27,15 @@ oRA3DB = {
 				},
 			},
 		},
-		["GuildRepairs"] = {
+		["Loot"] = {
 		},
-		["Alerts"] = {
+		["Difficulty"] = {
 			["profiles"] = {
+				["Default"] = {
+					["prevRaidDifficulty"] = 15,
+				},
 				["Skullflower"] = {
-					["resurrect"] = true,
-					["tauntPet"] = true,
+					["prevRaidDifficulty"] = 16,
 				},
 			},
 		},
@@ -50,7 +52,7 @@ oRA3DB = {
 				},
 			},
 		},
-		["Loot"] = {
+		["GuildRepairs"] = {
 		},
 		["Promote"] = {
 		},
@@ -87,13 +89,11 @@ oRA3DB = {
 		},
 		["Tanks"] = {
 		},
-		["Difficulty"] = {
+		["Alerts"] = {
 			["profiles"] = {
-				["Default"] = {
-					["prevRaidDifficulty"] = 15,
-				},
 				["Skullflower"] = {
-					["prevRaidDifficulty"] = 16,
+					["resurrect"] = true,
+					["tauntPet"] = true,
 				},
 			},
 		},
@@ -106,10 +106,11 @@ oRA3DB = {
 		["Bawsie - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
-		["Kroxi - Crushridge"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
 		["Krixiyo - Lightning's Blade"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
@@ -120,12 +121,12 @@ oRA3DB = {
 		["Zetiz - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["lastSelectedList"] = 2,
+			["lastSelectedList"] = 3,
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148,

@@ -12,22 +12,23 @@ IndicatorsDB = {
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
 		["Zuriz - Grim Batol"] = "Default",
 		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Zetiz - Grim Batol"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Default",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Spacegoatx - Aggra (Português)"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
+		["Spacegoatx - Aggra (Português)"] = "Default",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Default",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 	},
 	["profiles"] = {
 		["Donch - Grim Batol"] = {
@@ -44,11 +45,13 @@ IndicatorsDB = {
 		["Bawsie - Grim Batol"] = {
 			["showBuffs"] = true,
 		},
-		["Zolution - Grim Batol"] = {
+		["Krixiyo - Twisting Nether"] = {
+		},
+		["Krixikin - Grim Batol"] = {
+			["showDebuffs"] = true,
+			["showBuffs"] = true,
 		},
 		["Donch - Shattered Hand"] = {
-		},
-		["Krixiyo - Twisting Nether"] = {
 		},
 		["Bawsi - Aggra (Português)"] = {
 		},
@@ -61,68 +64,70 @@ IndicatorsDB = {
 			["showDispelDebuffs"] = true,
 			["showBuffs"] = true,
 		},
-		["Krixi - Grim Batol"] = {
-		},
 		["Zetiz - Grim Batol"] = {
-		},
-		["Daimtårta - Aggra (Português)"] = {
-		},
-		["Treefiddy - Aggra (Português)"] = {
-		},
-		["Krixiyo - Blackmoore"] = {
 		},
 		["Líttle - Grim Batol"] = {
 			["showDebuffs"] = true,
 			["showDispelDebuffs"] = true,
 			["showBuffs"] = true,
 		},
-		["Krixiyo - Lightning's Blade"] = {
+		["Krixi - Grim Batol"] = {
+		},
+		["Daimtårta - Aggra (Português)"] = {
+		},
+		["Treefiddy - Aggra (Português)"] = {
+		},
+		["Kroxi - Crushridge"] = {
+		},
+		["Krixiyo - Blackmoore"] = {
 		},
 		["Donchyo - Shattered Hand"] = {
 		},
+		["Lilgaykrixi - Kazzak"] = {
+		},
 		["Spacegoatx - Aggra (Português)"] = {
 		},
-		["Lilgaykrixi - Kazzak"] = {
+		["Krixiyo - Lightning's Blade"] = {
 		},
 		["Asdasdasdfaf - Grim Batol"] = {
 		},
 		["Default"] = {
 			["size4"] = 8,
-			["showDebuffs"] = true,
-			["showDispelDebuffs"] = true,
-			["showDecimals4"] = false,
-			["auras5"] = "Deterance\nIce Block\nShield Wall\nIcebound Fortitude\nBarkskin\nIronbark\nHand of Sacrifice\nPain Suppression\nEvasion\nCloak of Shadows\nTouch of Karma\nGuardian of Ancient Kings\nFortifying Brew\nSurvival Instincts\nPower Word: Barrier\n",
-			["iconSize4"] = 15,
-			["showDecimals1"] = false,
-			["iconSize3"] = 15,
-			["iconSize6"] = 15,
-			["size5"] = 12,
-			["showDecimals5"] = false,
-			["auras2"] = "\n",
-			["iconSize2"] = 15,
-			["iconSize5"] = 15,
-			["showDecimals3"] = false,
-			["showBuffs"] = true,
 			["size3"] = 12,
+			["showBuffs"] = true,
+			["iconSize6"] = 15,
+			["auras5"] = "Deterance\nIce Block\nShield Wall\nIcebound Fortitude\nBarkskin\nIronbark\nHand of Sacrifice\nPain Suppression\nEvasion\nCloak of Shadows\nTouch of Karma\nGuardian of Ancient Kings\nFortifying Brew\nSurvival Instincts\nPower Word: Barrier\n",
+			["showDecimals5"] = false,
+			["showDispelDebuffs"] = true,
+			["iconSize4"] = 15,
+			["iconSize2"] = 15,
+			["showDebuffs"] = true,
+			["iconSize3"] = 15,
 			["showDecimals2"] = false,
-		},
-		["Kroxi - Crushridge"] = {
+			["auras2"] = "\n",
+			["iconSize5"] = 15,
+			["showDecimals4"] = false,
+			["showDecimals3"] = false,
+			["size5"] = 12,
+			["showDecimals1"] = false,
 		},
 		["Menardiairl - Culte de la Rive noire"] = {
 		},
-		["Greenzuriz - Aggra (Português)"] = {
-		},
 		["Krixidh - Grim Batol"] = {
 		},
+		["Greenzuriz - Aggra (Português)"] = {
+		},
 		["Krixidk - Grim Batol"] = {
-			["auras5"] = "Vampiric Blood",
-			["showDecimals5"] = false,
-			["showDispelDebuffs"] = true,
-			["iconSize5"] = 14,
-			["showTooltip5"] = false,
 			["showDebuffs"] = true,
+			["showDispelDebuffs"] = true,
+			["auras5"] = "Vampiric Blood",
+			["showTooltip5"] = false,
+			["showDecimals5"] = false,
+			["iconSize5"] = 14,
 			["showBuffs"] = true,
 			["stack5"] = false,
+		},
+		["Zolution - Grim Batol"] = {
 		},
 	},
 }

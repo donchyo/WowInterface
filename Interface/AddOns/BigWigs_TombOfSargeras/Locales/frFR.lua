@@ -59,7 +59,7 @@ if L then
 	L.energy_leak_desc = "Affiche une alerte quand de l'énergie a fuité vers le boss en phase 1."
 	L.energy_leak_msg = "Fuite d'énergie ! (%d)"
 
-	--L.warmup_trigger = "The husk before you" -- The husk before you was once a vessel for the might of Sargeras. But this temple itself is our prize. The means by which we will reduce your world to cinders!
+	L.warmup_trigger = "L'enveloppe devant vous" -- L'enveloppe devant vous a servi de réceptacle à la puissance de Sargeras. Mais ce temple est notre véritable récompense. Le moyen par lequel nous allons réduire votre monde en cendres !
 
 	L.absorb = "Absorb."
 	L.absorb_text = "%s (|cff%s%.0f%%|r)"
@@ -82,6 +82,15 @@ if L then
 	L.rupturingKnock_desc = "Affiche un délai pour le knockback"
 
 	L.meteorImpact_desc = "Affiche un délai pour l'impact des météores"
+
+	L.shadowsoul = "Suivi des vies des Ames d'ombre"
+	L.shadowsoul_desc = "Affiche la boîte d'info avec la vie actuelle des 5 Ames d'ombre."
+
+	L.custom_on_track_illidan = "Pistage automatique des humanoïdes"
+	L.custom_on_track_illidan_desc = "Si vous êtes un chasseur ou un druide farouche, cette option activera automatiquement le pistage des humanoïdes afin que vous puissiez traquer Illidan."
+
+	L.custom_on_zoom_in = "Zoom automatique de la minicarte"
+	L.custom_on_zoom_in_desc = "Cette option mettra le zoom de la minicarte au niveau 4 pour rendre plus facile la traque d'Illidan, et la remettra ensuite à son niveau précédent une fois la phase terminée."
 end
 
 L = BigWigs:NewBossLocale("Tomb of Sargeras Trash", "frFR")
@@ -94,7 +103,10 @@ if L then
 	L.seacaller = "Mande-mers marécaille"
 	L.custodian = "Gardien des fonds marins"
 	L.dresanoth = "Dresanoth"
+	L.stalker = "Le Traqueur de l'effroi"
+	L.darjah = "Seigneur de guerre Darjah"
 	L.sentry = "Factionnaire gardien"
 	L.acolyte = "Acolyte fantomatique"
 	L.ryul = "Ryul le Déclinant"
+	L.countermeasure = "Contre-mesure défensive"
 end

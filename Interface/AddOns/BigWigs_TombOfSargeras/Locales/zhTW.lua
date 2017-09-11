@@ -59,7 +59,7 @@ if L then
 	L.energy_leak_desc = "第一階段的能量外泄至墮落化身身上时發送警報。"
 	L.energy_leak_msg = "能量外泄！（%d）"
 
-	--L.warmup_trigger = "The husk before you" -- The husk before you was once a vessel for the might of Sargeras. But this temple itself is our prize. The means by which we will reduce your world to cinders!
+	L.warmup_trigger = "你看到的這個軀殼原本蘊含薩格拉斯的力量" -- The husk before you was once a vessel for the might of Sargeras. But this temple itself is our prize. The means by which we will reduce your world to cinders!
 
 	L.absorb = "吸收"
 	L.absorb_text = "%s （|cff%s%.0f%%|r）"
@@ -82,6 +82,15 @@ if L then
 	L.rupturingKnock_desc = "顯示擊退計時器"
 
 	L.meteorImpact_desc = "顯示隕石雨降落計時器"
+
+	L.shadowsoul = "暗影之魂生命值追蹤器"
+	L.shadowsoul_desc = "在訊息盒顯示五個暗影之魂的當前生命值。"
+
+	L.custom_on_track_illidan = "自動追蹤人型生物"
+	L.custom_on_track_illidan_desc = "如果你是野性德魯伊或獵人，啟用此選像項會自動啟用追蹤人型生物，以便追蹤伊利丹。"
+
+	L.custom_on_zoom_in = "自動縮放小地圖"
+	L.custom_on_zoom_in_desc = "這個功能會將小地圖的縮放等級調整到等級4，使之更便於追蹤伊利丹；並在這個階段結束後還原為你原先設定的等級。"
 end
 
 L = BigWigs:NewBossLocale("Tomb of Sargeras Trash", "zhTW")
@@ -94,7 +103,10 @@ if L then
 	L.seacaller = "潮鱗喚海者"
 	L.custodian = "深海守衛"
 	L.dresanoth = "卓薩諾斯"
+	L.stalker = "恐怖潛獵者"
+	L.darjah = "督軍達爾嘉"
 	L.sentry = "守護者哨衛"
 	L.acolyte = "鬼魅侍僧"
 	L.ryul = "暗淡者萊由"
+	L.countermeasure = "防禦反制系統"
 end

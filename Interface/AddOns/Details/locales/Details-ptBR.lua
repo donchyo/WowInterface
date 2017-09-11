@@ -471,6 +471,10 @@ L["STRING_OPTIONS_ADVANCED"] = "Avançado"
 L["STRING_OPTIONS_ALPHAMOD_ANCHOR"] = "Auto Ocultar:"
 L["STRING_OPTIONS_ALWAYS_USE"] = "Usar Em Todos os Personagens"
 L["STRING_OPTIONS_ALWAYS_USE_DESC"] = "O mesmo perfil é usado em todos os personagens. Você pode sobre escrever ele em qualquer personagem apenas escolhendo um perfil na caixa de cima."
+--Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"] = ""
 L["STRING_OPTIONS_ANCHOR"] = "Lado"
 L["STRING_OPTIONS_ANIMATEBARS"] = "Animar as Barras"
 L["STRING_OPTIONS_ANIMATEBARS_DESC"] = "Ativar animações para todas as barras"
@@ -719,6 +723,10 @@ L["STRING_OPTIONS_DEATHLIMIT"] = "Quantidade de Eventos de Morte"
 L["STRING_OPTIONS_DEATHLIMIT_DESC"] = [=[Ajusta a quantidade de eventos para mostrar no display de mortes.
 
 |cFFFFFF00Importante|r: apenas aplica-se as novas mortes após o ajuste.]=]
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"] = ""
 L["STRING_OPTIONS_DESATURATE_MENU"] = "Menu de Dessaturação"
 L["STRING_OPTIONS_DESATURATE_MENU_DESC"] = "Habilitando essa opção fará com que os ícones do menu da barra de ferramentas se tornem brancos e pretos."
 L["STRING_OPTIONS_DISABLE_ALLDISPLAYSWINDOW"] = "Desativar Janela 'Todos Displays'"

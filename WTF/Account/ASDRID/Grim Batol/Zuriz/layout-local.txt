@@ -6,6 +6,13 @@ X: 0
 Y: 0
 W: 365
 H: 200
+Frame: DetailsPlayerDetailsWindow
+FrameLevel: 1
+Anchor: CENTER
+X: -47
+Y: -2
+W: 790
+H: 454
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: RIGHT

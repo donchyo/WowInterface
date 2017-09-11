@@ -1,8 +1,8 @@
-## Interface: 70200
+## Interface: 70300
 ## Title: Addon Usage
 ## Notes: Displays the memory and cpu usage of your addons
 ## Author: Gello
-## Version 3.0.2
+## Version 3.0.3
 ## SavedVariables: AddonUsageSettings
 AddonUsage.xml
 AutoScrollFrame.lua

@@ -64,3 +64,4 @@ bind ALT-§ CLICK BT4Button84:LeftButton
 bind ALT-NUMPAD1 CLICK EXRTWM1:LeftButton
 bind ALT-NUMPAD2 CLICK EXRTWM2:LeftButton
 bind CTRL-+ CLICK BT4Button82:LeftButton
+bind ALT-G CLICK BT4Button78:LeftButton

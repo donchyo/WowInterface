@@ -29,7 +29,8 @@ local AIS = BetterIconSelector
 AIS.MacroPopup = { }
 local MacroPopup = AIS.MacroPopup
 local L = LibStub("AceLocale-3.0"):GetLocale("BetterIconSelector", true)
-
+local libiconpath = LibStub("LibIconPath")
+--if not libiconpath:GetRevision() or libiconpath:GetRevision() < 20 then error("You are using an old, incompatible version of LibIconPath - please update it!") end
 local replaced = false
 local popup
 
@@ -116,7 +117,7 @@ function MacroPopup:ReplaceMacroPopup()
 				local texture = OldGetSpellorMacroIconInfo(index)
 				if texture then	-- (skip the first texture, 'cause it's the question mark)
 					if (type(texture) == "number") then
-						tinsert(textures, LibIconPath_getName(texture))
+						tinsert(textures, libiconpath:getName(texture))
 					else
 						tinsert(textures, texture)
 					end
@@ -146,8 +147,8 @@ function MacroPopup:ReplaceMacroPopup()
 
 		-- (no altering needed)
 		popup:SetScript("OnHide", MacroPopupFrame_OnHide)
-		popup:SetScript("OnOkayClicked", function(...) PlaySound("gsTitleOptionOK"); MacroPopupOkayButton_OnClick(...) end)
-		popup:SetScript("OnCancelClicked", function(...) PlaySound("gsTitleOptionOK"); MacroPopupFrame_CancelEdit(...) end)
+		popup:SetScript("OnOkayClicked", function(...) PlaySound(SOUNDKIT.GS_TITLE_OPTIONS_OK); MacroPopupOkayButton_OnClick(...) end)
+		popup:SetScript("OnCancelClicked", function(...) PlaySound(SOUNDKIT.GS_TITLE_OPTIONS_OK); MacroPopupFrame_CancelEdit(...) end)
 
 		-- (no equivalent function)
 		popup.iconsFrame:SetScript("OnSelectedIconChanged", function(iconsFrame)

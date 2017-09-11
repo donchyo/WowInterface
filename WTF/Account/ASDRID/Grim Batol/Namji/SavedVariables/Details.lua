@@ -13,9 +13,8 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_encounter"] = "Hans'gar & Franzok",
+	["last_day"] = "09",
 	["ignore_nicktag"] = false,
-	["last_version"] = "v7.2.5.4369",
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
@@ -387,7 +386,10 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["last_dps"] = 212444.170312859,
 							["damage_taken"] = 2317426.008793,
+							["custom"] = 0,
+							["last_event"] = 1502560168,
 							["avoidance"] = {
 								["Franzok"] = {
 									["DODGE"] = 2,
@@ -486,9 +488,6 @@ _detalhes_database = {
 									["FULL_HIT_AMT"] = 244966,
 								},
 							},
-							["custom"] = 0,
-							["last_event"] = 1502560168,
-							["last_dps"] = 212444.170312859,
 							["start_time"] = 1502560088,
 							["delay"] = 0,
 							["friendlyfire"] = {
@@ -743,33 +742,33 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
-									[100780] = {
-										["c_amt"] = 5,
-										["b_amt"] = 1,
-										["c_dmg"] = 1756262,
+									[196608] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 244257,
 										["g_amt"] = 0,
-										["n_max"] = 118134,
+										["n_max"] = 20355,
 										["targets"] = {
-											["Franzok"] = 1953152,
-											["Hans'gar"] = 157512,
+											["Franzok"] = 543575,
+											["Hans'gar"] = 169706,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 354402,
-										["n_min"] = 39378,
+										["n_dmg"] = 469024,
+										["n_min"] = 6869,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 2110664,
-										["c_max"] = 708806,
-										["id"] = 100780,
+										["counter"] = 30,
+										["total"] = 713281,
+										["c_max"] = 40710,
+										["id"] = 196608,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 78756,
+										["c_min"] = 40709,
 										["successful_casted"] = 0,
-										["b_dmg"] = 496163,
-										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["n_amt"] = 24,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
@@ -803,33 +802,33 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
-									[196608] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 244257,
+									[100780] = {
+										["c_amt"] = 5,
+										["b_amt"] = 1,
+										["c_dmg"] = 1756262,
 										["g_amt"] = 0,
-										["n_max"] = 20355,
+										["n_max"] = 118134,
 										["targets"] = {
-											["Franzok"] = 543575,
-											["Hans'gar"] = 169706,
+											["Franzok"] = 1953152,
+											["Hans'gar"] = 157512,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 469024,
-										["n_min"] = 6869,
+										["n_dmg"] = 354402,
+										["n_min"] = 39378,
 										["g_dmg"] = 0,
-										["counter"] = 30,
-										["total"] = 713281,
-										["c_max"] = 40710,
-										["id"] = 196608,
+										["counter"] = 12,
+										["total"] = 2110664,
+										["c_max"] = 708806,
+										["id"] = 100780,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 40709,
+										["c_min"] = 78756,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 24,
+										["b_dmg"] = 496163,
+										["n_amt"] = 7,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
@@ -837,7 +836,10 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["last_dps"] = 192099.466950831,
 							["damage_taken"] = 2394674.005961,
+							["custom"] = 0,
+							["last_event"] = 1502560168,
 							["avoidance"] = {
 								["Hans'gar"] = {
 									["DODGE"] = 6,
@@ -920,9 +922,6 @@ _detalhes_database = {
 									["FULL_HIT_AMT"] = 0,
 								},
 							},
-							["custom"] = 0,
-							["last_event"] = 1502560168,
-							["last_dps"] = 192099.466950831,
 							["start_time"] = 1502560087,
 							["delay"] = 0,
 							["friendlyfire"] = {
@@ -947,15 +946,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["nome"] = "Franzok",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1942455.00591,
 							["serial"] = "Vehicle-0-3769-1205-24491-76974-00000F3EE7",
-							["monster"] = true,
-							["end_time"] = 1502560168,
+							["dps_started"] = false,
+							["total"] = 1942455.00591,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["boss_fight_component"] = true,
@@ -985,40 +984,13 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 10,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 12,
 										["a_dmg"] = 227779,
 										["r_amt"] = 0,
 									}, -- [1]
-									[160838] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 160838,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
-									},
 									[153470] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -1049,33 +1021,31 @@ _detalhes_database = {
 										["a_amt"] = 1,
 										["r_amt"] = 0,
 									},
-									[156938] = {
+									[160838] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 431547,
+										["n_max"] = 0,
 										["targets"] = {
-											["Namji"] = 507958,
-											["Vicsur"] = 838541,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1346499,
-										["n_min"] = 246542,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1346499,
+										["counter"] = 0,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 156938,
+										["id"] = 160838,
 										["r_dmg"] = 0,
-										["a_dmg"] = 507958,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 									[157853] = {
@@ -1108,6 +1078,35 @@ _detalhes_database = {
 										["a_amt"] = 2,
 										["r_amt"] = 0,
 									},
+									[156938] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 431547,
+										["targets"] = {
+											["Namji"] = 507958,
+											["Vicsur"] = 838541,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1346499,
+										["n_min"] = 246542,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1346499,
+										["c_max"] = 0,
+										["id"] = 156938,
+										["r_dmg"] = 0,
+										["a_dmg"] = 507958,
+										["m_crit"] = 0,
+										["a_amt"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+									},
 								},
 								["tipo"] = 2,
 							},
@@ -1120,7 +1119,7 @@ _detalhes_database = {
 							["damage_taken"] = 23485673.00591,
 							["start_time"] = 1502560131,
 							["delay"] = 1502560102,
-							["total"] = 1942455.00591,
+							["end_time"] = 1502560168,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
@@ -1135,15 +1134,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["nome"] = "Hans'gar",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 675020.008493,
 							["serial"] = "Vehicle-0-3769-1205-24491-76973-00000F3EE7",
-							["monster"] = true,
-							["end_time"] = 1502560168,
+							["dps_started"] = false,
+							["total"] = 675020.008493,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["boss_fight_component"] = true,
@@ -1173,9 +1172,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 5,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 5,
 										["a_dmg"] = 280763,
 										["r_amt"] = 0,
@@ -1200,11 +1199,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 									[157853] = {
@@ -1249,7 +1248,7 @@ _detalhes_database = {
 							["damage_taken"] = 9295307.008493,
 							["start_time"] = 1502560140,
 							["delay"] = 1502560147,
-							["total"] = 675020.008493,
+							["end_time"] = 1502560168,
 						}, -- [4]
 						{
 							["flag_original"] = 2600,
@@ -1271,8 +1270,9 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 447777.006539,
 							["serial"] = "Creature-0-3769-1205-24491-78358-00018F3EE7",
-							["damage_taken"] = 0.006539,
-							["nome"] = "Stamping Presses",
+							["friendlyfire"] = {
+							},
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[158140] = {
@@ -1308,16 +1308,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["damage_taken"] = 0.006539,
 							["end_time"] = 1502560168,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1502560129,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1502560158,
 							["delay"] = 1502560129,
-							["boss_fight_component"] = true,
+							["nome"] = "Stamping Presses",
 						}, -- [5]
 						{
 							["flag_original"] = 2600,
@@ -1338,8 +1337,9 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 223304.006848,
 							["serial"] = "Creature-0-3769-1205-24491-77258-00000F3F67",
-							["damage_taken"] = 0.006848,
-							["nome"] = "Forge Overdrive",
+							["friendlyfire"] = {
+							},
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[161570] = {
@@ -1374,16 +1374,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["damage_taken"] = 0.006848,
 							["end_time"] = 1502560168,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1502560120,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1502560167,
 							["delay"] = 1502560120,
-							["boss_fight_component"] = true,
+							["nome"] = "Forge Overdrive",
 						}, -- [6]
 					},
 				}, -- [1]
@@ -1422,11 +1421,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.001825,
 							["healing_taken"] = 1728752.001825,
 							["end_time"] = 1502560168,
-							["spec"] = 268,
-							["healing_from"] = {
-								["Vicsur"] = true,
-							},
 							["nome"] = "Vicsur",
+							["spec"] = 268,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[207472] = {
@@ -1480,12 +1477,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["n_curado"] = 29206,
 										["n_amt"] = 2,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
@@ -1508,12 +1505,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["n_curado"] = 0,
 										["n_amt"] = 31,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -1523,11 +1520,13 @@ _detalhes_database = {
 							["start_time"] = 1502560089,
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1502560168,
 							["tipo"] = 2,
+							["last_event"] = 1502560168,
 							["totaldenied"] = 0.001825,
 							["delay"] = 0,
-							["boss_fight_component"] = true,
+							["healing_from"] = {
+								["Vicsur"] = true,
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -1558,12 +1557,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.007601,
 							["healing_taken"] = 591203.007601,
 							["end_time"] = 1502560168,
-							["spec"] = 268,
-							["healing_from"] = {
-								["Vicsur"] = true,
-								["Namji"] = true,
-							},
 							["nome"] = "Namji",
+							["spec"] = 268,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[227689] = {
@@ -1615,12 +1611,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 201638,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 5160,
+										["m_amt"] = 0,
 										["n_curado"] = 272321,
 										["n_amt"] = 23,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 									[216521] = {
@@ -1642,12 +1638,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["n_curado"] = 82100,
 										["n_amt"] = 6,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -1657,11 +1653,14 @@ _detalhes_database = {
 							["start_time"] = 1502560107,
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1502560168,
 							["tipo"] = 2,
+							["last_event"] = 1502560168,
 							["totaldenied"] = 0.007601,
 							["delay"] = 1502560111,
-							["boss_fight_component"] = true,
+							["healing_from"] = {
+								["Vicsur"] = true,
+								["Namji"] = true,
+							},
 						}, -- [2]
 					},
 				}, -- [2]
@@ -1908,8 +1907,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["nome"] = "Vicsur",
 							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["spec"] = 268,
 							["grupo"] = true,
 							["spell_cast"] = {
@@ -1928,12 +1928,11 @@ _detalhes_database = {
 							},
 							["buff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
 							["last_event"] = 1502560168,
+							["tipo"] = 4,
 							["isTank"] = true,
 							["serial"] = "Player-1303-05137AB0",
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Vicsur",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -2179,8 +2178,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["nome"] = "Namji",
 							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["spec"] = 268,
 							["grupo"] = true,
 							["spell_cast"] = {
@@ -2198,12 +2198,11 @@ _detalhes_database = {
 							},
 							["buff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
 							["last_event"] = 1502560168,
+							["tipo"] = 4,
 							["isTank"] = true,
 							["serial"] = "Player-1303-04AFFB5A",
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Namji",
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -2223,7 +2222,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 2600,
 							["nome"] = "Forge Overdrive",
-							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								[162538] = 1,
 								[155994] = 4,
@@ -2231,8 +2230,8 @@ _detalhes_database = {
 								[162545] = 1,
 							},
 							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-3769-1205-24491-77258-00000F3F5E",
 							["pets"] = {
 							},
@@ -2284,9 +2283,9 @@ _detalhes_database = {
 							},
 							["boss_fight_component"] = true,
 							["spell_cast"] = {
-								[160838] = 1,
 								[156938] = 2,
 								[153470] = 2,
+								[160838] = 1,
 							},
 							["last_event"] = 0,
 							["monster"] = true,
@@ -2404,17 +2403,43 @@ _detalhes_database = {
 						{
 							["flag_original"] = 2600,
 							["nome"] = "Stamping Presses",
-							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								[158140] = 3,
 							},
 							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-3769-1205-24491-78358-00018F3EE7",
 							["pets"] = {
 							},
 						}, -- [10]
+						{
+							["flag_original"] = 1304,
+							["serial"] = "Player-1303-073C1F06",
+							["nome"] = "Smøkë",
+							["cooldowns_defensive"] = 1.005129,
+							["pets"] = {
+							},
+							["classe"] = "UNGROUPPLAYER",
+							["tipo"] = 4,
+							["cooldowns_defensive_targets"] = {
+								["Smøkë"] = 1,
+							},
+							["cooldowns_defensive_spells"] = {
+								["_ActorTable"] = {
+									[1966] = {
+										["id"] = 1966,
+										["targets"] = {
+											["Smøkë"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["last_event"] = 1504612125,
+						}, -- [11]
 					},
 				}, -- [4]
 				{
@@ -2447,7 +2472,7 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 13,
+						["cooldowns_defensive"] = 14,
 						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
@@ -2491,7 +2516,19 @@ _detalhes_database = {
 				["hasSaved"] = true,
 				["frags"] = {
 				},
-				["data_fim"] = "19:49:28",
+				["is_boss"] = {
+					["diff_string"] = "Heroic",
+					["index"] = 1,
+					["zone"] = "Blackrock Foundry",
+					["encounter"] = "Hans'gar & Franzok",
+					["mapid"] = 1205,
+					["try_number"] = 4,
+					["name"] = "Hans'gar & Franzok",
+					["diff"] = 15,
+					["id"] = 1693,
+					["ej_instance_id"] = 457,
+					["killed"] = true,
+				},
 				["data_inicio"] = "19:48:07",
 				["CombatSkillCache"] = {
 				},
@@ -2519,21 +2556,15 @@ _detalhes_database = {
 				["start_time"] = 86692.249,
 				["TimeData"] = {
 				},
-				["is_boss"] = {
-					["diff_string"] = "Heroic",
-					["index"] = 1,
-					["zone"] = "Blackrock Foundry",
-					["encounter"] = "Hans'gar & Franzok",
-					["mapid"] = 1205,
-					["try_number"] = 4,
-					["name"] = "Hans'gar & Franzok",
-					["diff"] = 15,
-					["id"] = 1693,
-					["ej_instance_id"] = 457,
-					["killed"] = true,
-				},
+				["data_fim"] = "19:49:28",
 			}, -- [1]
 		},
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["last_version"] = "v7.3.0.4492",
+	["savedbuffs"] = {
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -2543,9 +2574,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = true,
-			["dps"] = 0,
-			["level"] = 1,
 			["author"] = "Details! Team",
+			["level"] = 1,
+			["dps"] = 0,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -2620,11 +2651,11 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_fire_moltenbloodgreen", -- [4]
 					["id"] = 1794,
 				},
-				["181753"] = {
-					"181753", -- [1]
-					"Fel Bomb", -- [2]
-					18.4, -- [3]
-					"Interface\\Icons\\ability_felarakkoa_feldetonation_green", -- [4]
+				["181912"] = {
+					"181912", -- [1]
+					"Focused Blast", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\ability_felarakkoa_focusedblast", -- [4]
 					["id"] = 1788,
 				},
 				["181255"] = {
@@ -2648,11 +2679,11 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
 					["id"] = 1785,
 				},
-				["182020"] = {
-					"182020", -- [1]
-					"Pounding (1)", -- [2]
-					34.4, -- [3]
-					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
+				["182055"] = {
+					"182055", -- [1]
+					"Full Charge", -- [2]
+					139, -- [3]
+					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
 					["id"] = 1785,
 				},
 				["188929"] = {
@@ -2802,19 +2833,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossmannoroth_mannorothsgaze", -- [4]
 					["id"] = 1795,
 				},
-				["181307"] = {
-					"181307", -- [1]
-					"Foul Crush", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
-					["id"] = 1787,
-				},
 				["179864"] = {
 					"179864", -- [1]
 					"|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:0:64:64:20:39:22:41|t Shadow of Death", -- [2]
 					2, -- [3]
 					"Interface\\Icons\\Spell_Arcane_PrismaticCloak", -- [4]
 					["id"] = 1783,
+				},
+				["181307"] = {
+					"181307", -- [1]
+					"Foul Crush", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
+					["id"] = 1787,
 				},
 				["182280"] = {
 					"182280", -- [1]
@@ -2928,11 +2959,11 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\ability_creature_cursed_03", -- [4]
 					["id"] = 1798,
 				},
-				["182055"] = {
-					"182055", -- [1]
-					"Full Charge", -- [2]
-					139, -- [3]
-					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
+				["182020"] = {
+					"182020", -- [1]
+					"Pounding (1)", -- [2]
+					34.4, -- [3]
+					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
 					["id"] = 1785,
 				},
 				["182428"] = {
@@ -2942,11 +2973,11 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_warlock_fireandbrimstonegreen", -- [4]
 					["id"] = 1786,
 				},
-				["181912"] = {
-					"181912", -- [1]
-					"Focused Blast", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\ability_felarakkoa_focusedblast", -- [4]
+				["181753"] = {
+					"181753", -- [1]
+					"Fel Bomb", -- [2]
+					18.4, -- [3]
+					"Interface\\Icons\\ability_felarakkoa_feldetonation_green", -- [4]
 					["id"] = 1788,
 				},
 			},
@@ -2996,10 +3027,10 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
 			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -3019,7 +3050,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
@@ -4293,7 +4324,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -4302,7 +4333,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["showamount"] = false,
+			["animate"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -4318,23 +4349,21 @@ _detalhes_database = {
 			["pre_pot_healers"] = false,
 		},
 	},
-	["savedbuffs"] = {
-	},
 	["last_instance_time"] = 1502559981,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
 	["last_realversion"] = 124,
 	["force_font_outline"] = "",
+	["last_encounter"] = "Hans'gar & Franzok",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
+	["combat_counter"] = 10678,
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 1388,
 	["savedStyles"] = {
 	},
+	["last_instance_id"] = 1205,
 	["cached_talents"] = {
 		["Player-1303-04AFFB5A"] = {
 			22104, -- [1]
@@ -4346,7 +4375,6 @@ _detalhes_database = {
 			19304, -- [7]
 		},
 	},
-	["combat_counter"] = 10676,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -4356,9 +4384,6 @@ _detalhes_database = {
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
-	},
-	["character_data"] = {
-		["logons"] = 1494,
 	},
 	["local_instances_config"] = {
 		{
@@ -4461,7 +4486,9 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["last_day"] = "14",
+	["character_data"] = {
+		["logons"] = 1496,
+	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -4470,10 +4497,13 @@ _detalhes_database = {
 		["channel"] = "RAID",
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1504028653,
+		["nextreset"] = 1505908108,
 		["last_version"] = 9,
 	},
-	["last_instance_id"] = 1205,
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["cached_specs"] = {
 		["Player-1303-04AFFB5A"] = 268,
 	},

@@ -1,17 +1,18 @@
 
 MogItDB = {
 	["global"] = {
-		["version"] = "3.8.1",
+		["version"] = "3.8.2",
 	},
 	["profileKeys"] = {
 		["Nyrith - Grim Batol"] = "Default",
 		["Donch - Grim Batol"] = "Default",
+		["Krixiyo - Twisting Nether"] = "Default",
 		["Krixidk - Grim Batol"] = "Default",
 		["Kroxi - Grim Batol"] = "Default",
 		["Namji - Grim Batol"] = "Default",
-		["Krixiyo - Twisting Nether"] = "Default",
-		["Bawsie - Grim Batol"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
+		["Bawsie - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
@@ -24,13 +25,13 @@ MogItDB = {
 		["Default"] = {
 			["previewProps"] = {
 				{
-					["y"] = 0,
+					["y"] = 90.6667404174805,
 					["w"] = 334.999969482422,
-					["x"] = 0,
+					["x"] = 94.2221832275391,
 				}, -- [1]
 			},
 			["gridHeight"] = 744.000061035156,
-			["x"] = 0.888895690441132,
+			["x"] = 1.7777841091156,
 			["slotLabels"] = {
 				["Waist"] = "Waist",
 				["Fist"] = "Fist Weapons",
@@ -74,12 +75,13 @@ MogItWishlist = {
 	["profileKeys"] = {
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Krixidk - Grim Batol"] = "Krixidk - Grim Batol",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
-		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
@@ -89,12 +91,14 @@ MogItWishlist = {
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 	},
 	["global"] = {
-		["version"] = 70200,
+		["version"] = 70300,
 	},
 	["profiles"] = {
 		["Nyrith - Grim Batol"] = {
 		},
 		["Donch - Grim Batol"] = {
+		},
+		["Krixiyo - Twisting Nether"] = {
 		},
 		["Krixidk - Grim Batol"] = {
 		},
@@ -102,11 +106,15 @@ MogItWishlist = {
 		},
 		["Namji - Grim Batol"] = {
 		},
-		["Krixiyo - Twisting Nether"] = {
+		["Krixiyo - Blackmoore"] = {
 		},
 		["Bawsie - Grim Batol"] = {
+			["items"] = {
+				"item:125898:0::::::::::0:1:3524", -- [1]
+				"item:40692:0::::::::::0:1:3524", -- [2]
+			},
 		},
-		["Krixiyo - Blackmoore"] = {
+		["Krixikin - Grim Batol"] = {
 		},
 		["Zolution - Grim Batol"] = {
 		},

@@ -1,8 +1,8 @@
 ## Title: BetterIconSelector
 ## Notes: Adds search functionality to the icon selector dialogs
-## Version: 1.1
+## Version: 1.2
 ## Author: Ignifazius (Original by Darthyl of Bronzebeard-US)
-## Interface: 70200
+## Interface: 70300
 ## OptionalDeps: Ace3, LibAdvancedIconSelector-1.0
 
 ### Embedded libraries
@@ -12,7 +12,7 @@ Libs\AceLocale-3.0\AceLocale-3.0.xml
 Libs\AceAddon-3.0\AceAddon-3.0.xml
 Libs\AceConsole-3.0\AceConsole-3.0.xml
 Libs\LibAdvancedIconSelector-1.0\LibAdvancedIconSelector-1.0.xml
-Libs\LibIconPath\Core.lua
+Libs\LibIconPath\LibIconPath.lua
 #@end-no-lib-strip@
 
 # If AddonLoader is installed, make sure the addon isn't loaded until one of the relevant panes is opened, or a chat command is entered.

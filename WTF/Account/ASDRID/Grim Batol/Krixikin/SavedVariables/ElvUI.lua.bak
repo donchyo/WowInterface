@@ -1,0 +1,27 @@
+
+ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		" \"fun\"", -- [1]
+		" atleast i got kavicks druid an owl trinket", -- [2]
+		" i am", -- [3]
+		"/raid these tanks are making abit questionable moves ", -- [4]
+		"/g hi", -- [5]
+		" 2 third boss", -- [6]
+		"/p ?", -- [7]
+		"/lick", -- [8]
+		"/ec", -- [9]
+		"/p he ususaly does", -- [10]
+		"/g ????????", -- [11]
+		"/g vicsur online?!", -- [12]
+		"/g what year is it?", -- [13]
+		"/p with enforcer?", -- [14]
+		"/p with trash-?", -- [15]
+		"/p forgot to move", -- [16]
+		"/p after i ressed:P", -- [17]
+		" oke what?", -- [18]
+		" im up i guess", -- [19]
+		" going dk", -- [20]
+	},
+	["ChatLog"] = {
+	},
+}

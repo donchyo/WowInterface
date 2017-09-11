@@ -38,8 +38,7 @@ L["Reverse the behaviour of the modifier key"] = "Verhalten der Moditfikatortast
 L["Right-click to remove item"] = "Rechtsklick, um Gegenstand zu entfernen"
 --Translation missing 
 -- L["Soloing"] = ""
---Translation missing 
--- L["The Collapse"] = ""
+L["The Collapse"] = "Der Kollaps"
 --Translation missing 
 -- L["When to select gossip while in a raid"] = ""
 
@@ -68,8 +67,7 @@ elseif(locale == 'esES') then
 -- L["Right-click to remove item"] = ""
 --Translation missing 
 -- L["Soloing"] = ""
---Translation missing 
--- L["The Collapse"] = ""
+L["The Collapse"] = "El Derrumbamiento"
 --Translation missing 
 -- L["When to select gossip while in a raid"] = ""
 
@@ -98,20 +96,17 @@ elseif(locale == 'esMX') then
 -- L["Right-click to remove item"] = ""
 --Translation missing 
 -- L["Soloing"] = ""
---Translation missing 
--- L["The Collapse"] = ""
+L["The Collapse"] = "El Derrumbamiento"
 --Translation missing 
 -- L["When to select gossip while in a raid"] = ""
 
 elseif(locale == 'frFR') then
 --Translation missing 
 -- L["Always accept and complete Nomi's daily quest, despite being low-level"] = ""
---Translation missing 
--- L["Automatically pay Darkmoon Faire teleporting fees"] = ""
+L["Automatically pay Darkmoon Faire teleporting fees"] = "Payer automatiquement pour aller à la foire de Sombrelune"
 --Translation missing 
 -- L["Automatically select single gossip options"] = ""
---Translation missing 
--- L["Automatically share quests when picked up"] = ""
+L["Automatically share quests when picked up"] = "Partager automatiquement les quêtes quand elles sont acceptée"
 --Translation missing 
 -- L["Disable while doing the withered training scenario in Suramar"] = ""
 --Translation missing 
@@ -126,8 +121,7 @@ L["Reverse the behaviour of the modifier key"] = "Inverser le comportement du mo
 -- L["Right-click to remove item"] = ""
 --Translation missing 
 -- L["Soloing"] = ""
---Translation missing 
--- L["The Collapse"] = ""
+L["The Collapse"] = "L’Effondrement"
 --Translation missing 
 -- L["When to select gossip while in a raid"] = ""
 
@@ -191,7 +185,7 @@ L["Quests starting with and/or containing these items will not be automated."] =
 L["Reverse the behaviour of the modifier key"] = "Inverter o comportamento da tecla modificadora"
 L["Right-click to remove item"] = "Clicar com botão direito para remover item"
 L["Soloing"] = "Solando"
-L["The Collapse"] = "Recolher"
+L["The Collapse"] = "O Desmoronamento"
 L["When to select gossip while in a raid"] = "Quando selecionar conversas fúteis durante uma raid"
 
 elseif(locale == 'ruRU') then
@@ -217,53 +211,40 @@ L["Reverse the behaviour of the modifier key"] = "Обратный поворо�
 -- L["Right-click to remove item"] = ""
 --Translation missing 
 -- L["Soloing"] = ""
---Translation missing 
--- L["The Collapse"] = ""
+L["The Collapse"] = "Обрушенный проход"
 --Translation missing 
 -- L["When to select gossip while in a raid"] = ""
 
 elseif(locale == 'zhCN') then
---Translation missing 
--- L["Always accept and complete Nomi's daily quest, despite being low-level"] = ""
---Translation missing 
--- L["Automatically pay Darkmoon Faire teleporting fees"] = ""
---Translation missing 
--- L["Automatically select single gossip options"] = ""
---Translation missing 
--- L["Automatically share quests when picked up"] = ""
---Translation missing 
--- L["Disable while doing the withered training scenario in Suramar"] = ""
---Translation missing 
--- L["Drag items into the window below to add more."] = ""
---Translation missing 
--- L["Hold this key to to temporarily %s automation"] = ""
-L["Only select gossip option while not in a raid"] = "只有不在团队时选择闲聊选项"
---Translation missing 
--- L["Quests starting with and/or containing these items will not be automated."] = ""
-L["Reverse the behaviour of the modifier key"] = "改变辅助键的行为"
---Translation missing 
--- L["Right-click to remove item"] = ""
---Translation missing 
--- L["Soloing"] = ""
---Translation missing 
--- L["The Collapse"] = ""
---Translation missing 
--- L["When to select gossip while in a raid"] = ""
+L["Always accept and complete Nomi's daily quest, despite being low-level"] = "总是接受并完成糯米的每日任务，儘管是低级别。"
+L["Automatically pay Darkmoon Faire teleporting fees"] = "自动支付暗月马戏团传送费。"
+L["Automatically select single gossip options"] = "自动选择单一对话选项。"
+L["Automatically share quests when picked up"] = "拾取后自动分享任务。"
+L["Disable while doing the withered training scenario in Suramar"] = "位于苏拉玛尔的枯法者训练场时禁用。"
+L["Drag items into the window below to add more."] = "增加内容清单：将物品拖曳至下面的视窗内。"
+L["Hold this key to to temporarily %s automation"] = "按住这个按键可以暂时 %s 自动交接。"
+L["Only select gossip option while not in a raid"] = "只在不在团队中时启用自动选择对话选项的功能"
+L["Quests starting with and/or containing these items will not be automated."] = "以这些物品为起始的任务将不会自动执行。"
+L["Reverse the behaviour of the modifier key"] = "反转辅助键的行为（勾选后，按下按键才启用自动交接）"
+L["Right-click to remove item"] = "右键点击将物品从列表移除"
+L["Soloing"] = "独自"
+L["The Collapse"] = "崩塌遗迹"
+L["When to select gossip while in a raid"] = "在团队中启用自动选择对话选项的功能"
 
 elseif(locale == 'zhTW') then
 L["Always accept and complete Nomi's daily quest, despite being low-level"] = "總是接受並完成糯米的每日任務，儘管是低級別。"
 L["Automatically pay Darkmoon Faire teleporting fees"] = "自動支付暗月馬戲團傳送費。"
-L["Automatically select single gossip options"] = "自動選擇單一閒聊選項。"
+L["Automatically select single gossip options"] = "自動選擇單一對話選項。"
 L["Automatically share quests when picked up"] = "拾取後自動分享任務。"
-L["Disable while doing the withered training scenario in Suramar"] = "當在蘇拉瑪爾的凋萎者訓練場時將禁用。"
-L["Drag items into the window below to add more."] = "將物品拖動到下面的視窗中可以增加更多。"
-L["Hold this key to to temporarily %s automation"] = "按住這個按鍵可以臨時自動化。目前：%s"
-L["Only select gossip option while not in a raid"] = "當不在團隊中只選擇閒聊選項。"
-L["Quests starting with and/or containing these items will not be automated."] = "有下列物品的任務將不會自動執行。"
-L["Reverse the behaviour of the modifier key"] = "反轉輔助鍵的行為"
-L["Right-click to remove item"] = "右鍵點擊刪除物品"
+L["Disable while doing the withered training scenario in Suramar"] = "位於蘇拉瑪爾的凋萎者訓練場時禁用。"
+L["Drag items into the window below to add more."] = "增加內容清單：將物品拖曳至下面的視窗內。"
+L["Hold this key to to temporarily %s automation"] = "按住這個按鍵可以暫時 %s 自動交接。"
+L["Only select gossip option while not in a raid"] = "只在不在團隊中時啟用自動選擇對話選項的功能"
+L["Quests starting with and/or containing these items will not be automated."] = "以這些物品為起始的任務將不會自動執行。"
+L["Reverse the behaviour of the modifier key"] = "反轉輔助鍵的行為（勾選後，按下按鍵才啟用自動交接）"
+L["Right-click to remove item"] = "右鍵點擊將物品從列表移除"
 L["Soloing"] = "獨自"
-L["The Collapse"] = "折疊"
-L["When to select gossip while in a raid"] = "當在團隊中選擇閒聊"
+L["The Collapse"] = "崩塌遺跡"
+L["When to select gossip while in a raid"] = "在團隊中時，啟用自動選擇對話選項的功能"
 
 end

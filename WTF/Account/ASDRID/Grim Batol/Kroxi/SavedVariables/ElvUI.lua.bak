@@ -1,5 +1,27 @@
 
 ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/g not much my dude", -- [1]
+		"/g i mean", -- [2]
+		"/g i lost a track on the digger", -- [3]
+		"/g so that wat fun", -- [4]
+		"/g that was at like 15:00", -- [5]
+		"/g took like 2hrs to get it on again", -- [6]
+		"/g and well", -- [7]
+		"/g it took about as long as the digging job", -- [8]
+		"/alto show", -- [9]
+		"/p kan du komma discord", -- [10]
+		"/p pls", -- [11]
+		"/p opkej", -- [12]
+		"/p om du kan använda lite konstiga ord", -- [13]
+		"/p så skulle det vara najs", -- [14]
+		"/p typ", -- [15]
+		"/p flaggstångsknoppsputsare", -- [16]
+		"/p prällen försöker förstå", -- [17]
+		"/p haha", -- [18]
+		"/p ye", -- [19]
+		"/iks", -- [20]
+	},
 	["BodyGuard"] = {
 		["Active"] = false,
 		["Health"] = 0,
@@ -7,27 +29,27 @@ ElvCharacterDB = {
 		["IsInValidZone"] = true,
 	},
 	["ChatLog"] = {
-	},
-	["ChatEditHistory"] = {
-		"/bt", -- [1]
-		"/g fick 3k shards på warriorn", -- [2]
-		"/g hype", -- [3]
-		"/g eg", -- [4]
-		"/g vafan är det här?", -- [5]
-		"/iks", -- [6]
-		"/dance", -- [7]
-		"/p X D", -- [8]
-		"/p dont be to happy about tha", -- [9]
-		"/p we are shit", -- [10]
-		"/g jo", -- [11]
-		"/pull 10", -- [12]
-		"/g not much my dude", -- [13]
-		"/g i mean", -- [14]
-		"/g i lost a track on the digger", -- [15]
-		"/g so that wat fun", -- [16]
-		"/g that was at like 15:00", -- [17]
-		"/g took like 2hrs to get it on again", -- [18]
-		"/g and well", -- [19]
-		"/g it took about as long as the digging job", -- [20]
+		["1504293451.125"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:11772:Player-1303-03966669:1:9:1:17:4294967295:4294967295:4294967295:4294967295|h[Power Ascended]|h|r!", -- [1]
+			"Kroxi-GrimBatol", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kroxi", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1300, -- [11]
+			"Player-1303-03966669", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_GUILD_ACHIEVEMENT", -- [20]
+		},
 	},
 }

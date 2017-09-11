@@ -30,16 +30,19 @@ local flamingOrbCount = 1
 local wailingCounter = 1
 local obeliskCount = 1
 local darknessCount = 1
+local currentZoom = 0
 local focusedTarget = nil
+local resetMinimap = nil
+local timerMinimap = nil
 local mobCollector = {}
 local timersLFR = {
 	[240910] = { -- Armageddon
 		{10, 22, 42, 22, 30}, -- Stage 1
-		{56, 27.7, 56.7, 26.7, 12.2, 18.9}, -- Stage 2
+		{56, 27.7, 56.7, 26.7, 12.2, 18.9, 18.9}, -- Stage 2
 	},
 	[238430] = { -- Bursting Dreadflame
 		{7.7, 17, 13.4, 17}, -- Stage 1 (Intermission)
-		{58.2, 53.3, 61.1}, -- Stage 2
+		{58.2, 53.3, 61.1, 56.7}, -- Stage 2
 		{42, 25, 70}, -- Stage 3, 25/70 Repeating
 	},
 }
@@ -132,6 +135,18 @@ if L then
 	L.meteorImpact_icon = 240910
 
 	L.countx = "%s (%dx)"
+
+	L.shadowsoul = "Shadowsoul Health Tracker"
+	L.shadowsoul_desc = "Show the info box displaying the current health of the 5 Shadowsoul adds."
+	L.shadowsoul_icon = 241702
+
+	L.custom_on_track_illidan = "Automatically Track Humanoids"
+	L.custom_on_track_illidan_desc = "If you are a hunter or a feral druid, this option will automatically enable tracking of humanoids so you can track Illidan."
+	L.custom_on_track_illidan_icon = 19883
+
+	L.custom_on_zoom_in = "Automatically Zoom Minimap"
+	L.custom_on_zoom_in_desc = "This feature will set the minimap zoom to level 4 to make it easier to track Illidan, and then restore it to your previous level once the stage has ended."
+	L.custom_on_zoom_in_icon = 131220
 end
 
 --------------------------------------------------------------------------------
@@ -139,7 +154,7 @@ end
 --
 
 local eruptingMarker = mod:AddMarkerOption(false, "player", 3, 236710, 3, 4, 5) -- Skip marks 1 + 2 for visibility
-local decieverAddMarker = mod:AddMarkerOption(false, "npc", 1, -15397, 1, 2, 3, 4, 5)
+local shadowsoulMarker = mod:AddMarkerOption(false, "npc", 1, -15397, 1, 2, 3, 4, 5) -- Shadowsoul
 function mod:GetOptions()
 	return {
 		"stages",
@@ -156,7 +171,10 @@ function mod:GetOptions()
 		{236378, "SAY", "FLASH"}, -- Shadow Reflection: Wailing
 		241564, -- Sorrowful Wail
 		241721, -- Illidan's Sightless Gaze
-		decieverAddMarker,
+		{"shadowsoul", "INFOBOX"}, -- Shadowsoul
+		shadowsoulMarker,
+		"custom_on_track_illidan",
+		"custom_on_zoom_in",
 		238999, -- Darkness of a Thousand Souls
 		-15543, -- Demonic Obelisk
 		"obeliskExplosion",
@@ -236,7 +254,9 @@ function mod:OnEngage()
 	obeliskCount = 1
 	wailingCounter = 1
 	darknessCount = 1
+	currentZoom = 0
 	focusedTarget = nil
+	timerMinimap = nil
 	timers = self:Mythic() and timersMythic or self:Heroic() and timersHeroic or self:Normal() and timersNormal or self:LFR() and timersLFR
 	wipe(mobCollector)
 
@@ -253,6 +273,12 @@ function mod:OnEngage()
 		self:Berserk(840)
 	else
 		self:Berserk(600)
+	end
+end
+
+function mod:OnWipe()
+	if inIntermission and stage == 2 then
+		resetMinimap(self)
 	end
 end
 
@@ -518,21 +544,106 @@ end
 
 -- Intermission: Deceiver's Veil
 do
-	local decieversAddMarks = {}
-	function mod:DecieverAddMark(event, unit)
+	local decieversAddMarks = {} -- Marks we set
+	local addMaxHP = -1
+	local addDmg = {} -- Damage done per add
+	local addMarks = {} -- Current marks on each add
+
+	function mod:ShadowsoulScanner(event, unit)
 		local guid = UnitGUID(unit)
 		if self:MobId(guid) == 121193 and not mobCollector[guid] then
 			for i = 1, 5 do
 				if not decieversAddMarks[i] then
-					SetRaidTarget(unit, i)
+					if self:GetOption(shadowsoulMarker) then
+						SetRaidTarget(unit, i)
+					end
 					decieversAddMarks[i] = guid
 					mobCollector[guid] = true
 					if i == 5 then
 						self:UnregisterTargetEvents()
 					end
-					return
+					break
 				end
 			end
+			local maxHp = UnitHealthMax(unit)
+			if addMaxHP == -1 then
+				addMaxHP = maxHp
+			end
+			addDmg[guid] = maxHp - UnitHealth(unit)
+			local icon = GetRaidTargetIndex(unit)
+			if icon and icon > 0 and icon < 9 then
+				addMarks[guid] = icon
+			end
+		end
+	end
+
+	local marks = {
+		[0x00000001] = 1, -- COMBATLOG_OBJECT_RAIDTARGET1
+		[0x00000002] = 2, -- COMBATLOG_OBJECT_RAIDTARGET2
+		[0x00000004] = 3, -- COMBATLOG_OBJECT_RAIDTARGET3
+		[0x00000008] = 4, -- COMBATLOG_OBJECT_RAIDTARGET4
+		[0x00000010] = 5, -- COMBATLOG_OBJECT_RAIDTARGET5
+		[0x00000020] = 6, -- COMBATLOG_OBJECT_RAIDTARGET6
+		[0x00000040] = 7, -- COMBATLOG_OBJECT_RAIDTARGET7
+		[0x00000080] = 8, -- COMBATLOG_OBJECT_RAIDTARGET8
+	}
+	local timer = nil
+	local function updateInfoBox(self)
+		if addMaxHP < 0 then return end -- no max hp yet
+		local i = 1
+		for guid, dmg in pairs(addDmg) do
+			if i > 5 then break end -- safety
+			local percentage = (addMaxHP - dmg) / addMaxHP
+			if percentage > 0 then
+				if addMarks[guid] then
+					self:SetInfo("shadowsoul", i*2-1, ("%s |T13700%d:0|t"):format(CL.count:format(CL.add, i), addMarks[guid]))
+				else
+					self:SetInfo("shadowsoul", i*2-1, CL.count:format(CL.add, i))
+				end
+				self:SetInfo("shadowsoul", i*2, ("%.0f%%"):format(percentage*100))
+			else
+				self:SetInfo("shadowsoul", i*2-1, "")
+				self:SetInfo("shadowsoul", i*2, "")
+			end
+			self:SetInfoBar("shadowsoul", i*2, percentage)
+			i = i + 1
+		end
+	end
+
+	local function damageToMob(guid, dmg, overkill, raidFlags)
+		addMarks[guid] = marks[raidFlags]
+		if overkill > 0 then
+			addDmg[guid] = addMaxHP
+		else
+			addDmg[guid] = (addDmg[guid] or 0) + dmg
+		end
+	end
+
+	function mod:IntermissionAddDamage(args)
+		if addDmg[args.destGUID] then
+			-- :Log isn't designed for _DAMAGE events, so we'll have to switch some things around:
+			-- - extraSpellId is the amount of damage inflicted
+			-- - extraSpellName is the amount of overkill
+			damageToMob(args.destGUID, args.extraSpellId, args.extraSpellName, args.destRaidFlags)
+		end
+	end
+
+	function mod:IntermissionAddDamageSwing(args)
+		if addDmg[args.destGUID] then
+			-- :Log isn't designed for _DAMAGE events, so we'll have to switch some things around:
+			-- - spellId is the amount of damage inflicted
+			-- - spellName is the amount of overkill
+			damageToMob(args.destGUID, args.spellId, args.spellName, args.destRaidFlags)
+		end
+	end
+
+	local function loopTracking(self, n)
+		local _, _, active = GetTrackingInfo(n)
+		if not active then
+			SetTracking(n, true)
+		else
+			self:CancelTimer(timerMinimap)
+			timerMinimap = nil
 		end
 	end
 
@@ -549,11 +660,67 @@ do
 		self:StopBar(INLINE_HEALER_ICON.." "..L.reflectionHopeless) -- Shadow Reflection: Hopeless
 
 		singularityCount = 1
-		self:Bar(235059, 19.1, CL.count:format(self:SpellName(235059), singularityCount)) -- Rupturing Singularity
+		if self:Mythic() then
+			self:Bar(235059, 19.1, CL.count:format(self:SpellName(235059), singularityCount)) -- Rupturing Singularity
+		end
 
-		if self:GetOption(decieverAddMarker) then
+		local shadowsoulOption = self:CheckOption("shadowsoul", "INFOBOX")
+		if self:GetOption(shadowsoulMarker) or shadowsoulOption then
 			wipe(decieversAddMarks)
-			self:RegisterTargetEvents("DecieverAddMark")
+
+			if shadowsoulOption then
+				wipe(addDmg)
+				wipe(addMarks)
+				addMaxHP = -1
+				self:Log("SPELL_DAMAGE", "IntermissionAddDamage", "*")
+				self:Log("SPELL_PERIODIC_DAMAGE", "IntermissionAddDamage", "*")
+				self:Log("RANGE_DAMAGE", "IntermissionAddDamage", "*")
+				self:Log("SWING_DAMAGE", "IntermissionAddDamageSwing", "*")
+				self:OpenInfo("shadowsoul", self:SpellName(-15397)) -- Shadowsoul
+				for i = 1, 5 do
+					self:SetInfo("shadowsoul", i*2-1, CL.count:format(CL.add, i))
+					self:SetInfo("shadowsoul", i*2, "100%")
+				end
+				timer = self:ScheduleRepeatingTimer(updateInfoBox, 0.1, self)
+			end
+
+			self:RegisterTargetEvents("ShadowsoulScanner")
+		end
+
+		if self:GetOption("custom_on_track_illidan") then
+			local trackHumanoids = self:SpellName(19883)
+			for i = 1, GetNumTrackingTypes() do
+				local name = GetTrackingInfo(i)
+				if name == trackHumanoids then
+					timerMinimap = self:ScheduleRepeatingTimer(loopTracking, 0.1, self, i)
+					break
+				end
+			end
+		end
+
+		if self:GetOption("custom_on_zoom_in") then
+			currentZoom = Minimap:GetZoom() or 0
+			Minimap:SetZoom(4)
+		end
+	end
+
+	function resetMinimap(self)
+		if timerMinimap then
+			self:CancelTimer(timerMinimap)
+			timerMinimap = nil
+		end
+		if self:GetOption("custom_on_track_illidan") then
+			local trackHumanoids = self:SpellName(19883)
+			for i = 1, GetNumTrackingTypes() do
+				local name = GetTrackingInfo(i)
+				if name == trackHumanoids then
+					SetTracking(i, false)
+					break
+				end
+			end
+		end
+		if self:GetOption("custom_on_zoom_in") then
+			Minimap:SetZoom(currentZoom)
 		end
 	end
 
@@ -565,9 +732,25 @@ do
 		burstingDreadflameCount = 1
 		flamingOrbCount = 1
 		felclawsCount = 1
-		if self:GetOption(decieverAddMarker) then
+		resetMinimap(self)
+
+		local shadowsoulOption = self:CheckOption("shadowsoul", "INFOBOX")
+		if self:GetOption(shadowsoulMarker) or shadowsoulOption then
 			self:UnregisterTargetEvents()
+
+			if shadowsoulOption then
+				self:CloseInfo("shadowsoul")
+				self:RemoveLog("SPELL_DAMAGE", "IntermissionAddDamage", "*")
+				self:RemoveLog("SPELL_PERIODIC_DAMAGE", "IntermissionAddDamage", "*")
+				self:RemoveLog("RANGE_DAMAGE", "IntermissionAddDamage", "*")
+				self:RemoveLog("SWING_DAMAGE", "IntermissionAddDamageSwing", "*")
+				if timer then
+					self:CancelTimer(timer)
+					timer = nil
+				end
+			end
 		end
+
 		self:Message("stages", "Positive", "Long", CL.stage:format(stage), false)
 		self:Bar(238999, 2, CL.count:format(L.darkness, darknessCount)) -- Darkness of a Thousand Souls
 		self:Bar(239932, 11) -- Felclaws
@@ -597,7 +780,7 @@ do
 end
 
 function mod:IllidansSightlessGazeRemoved(args)
-	if stage == 2 then -- Don't warn in p3
+	if stage == 2 and self:Me(args.destGUID) then -- Don't warn in p3
 		self:Message(args.spellId, "Personal", "Alert", CL.removed:format(args.spellName))
 	end
 end

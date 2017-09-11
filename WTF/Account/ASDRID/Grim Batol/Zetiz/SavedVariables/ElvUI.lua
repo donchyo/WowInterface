@@ -1,33 +1,55 @@
 
 ElvCharacterDB = {
+	["ChatLog"] = {
+		["1505066338.076"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:12101:Player-1303-05290704:1:9:10:17:4294967295:4294967295:4294967295:4294967295|h[We Came Here For Two Reasons]|h|r!", -- [1]
+			"Jadastevens-GrimBatol", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Jadastevens", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			313, -- [11]
+			"Player-1303-05290704", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_GUILD_ACHIEVEMENT", -- [20]
+		},
+	},
 	["ChatEditHistory"] = {
-		" hur bra är ni då?", -- [1]
-		" vad letar ni efter då?", -- [2]
-		" ya hallo", -- [3]
-		" yes", -- [4]
-		" uhm", -- [5]
-		" the one playing poe said he could play, but the other is stil missing ", -- [6]
-		" hes so proud", -- [7]
-		" with this fake curve thing", -- [8]
-		"/run DEFAULT_CHAT_FRAME:AddMessage(\"\\124cffffff00\\124Hachievement:416:\"..string.gsub(UnitGUID(\"player\"), '0x', '')..\":1:8:12:6:4294967295:4294967295:4294967295:4294967295\\124h[Scarab Lord]\\124h\\124r\")", -- [9]
-		"/g |cffffff00|Hachievement:416:Player-1303-03FA8295:1:8:12:6:4294967295:4294967295:4294967295:4294967295|h[Scarab Lord]|h|r", -- [10]
-		"/g :thinking", -- [11]
-		"/run SendChatMessage(\"has earned the achievement \\124cffffff00\\124Hachievement:416:\"..string.gsub(UnitGUID(\"player\"), '0x', '')..\":1:8:12:6:4294967295:4294967295:4294967295:4294967295\\124h[Scarab Lord]\\124h\\124r!\",\"GUILD\")", -- [12]
-		"/cast path of the dark rail", -- [13]
-		"/g hallo", -- [14]
-		"/g trying to get |cffa335ee|Hitem:113897::::::::110:259::5:1:3524:::|h[Hans'gar's Forgehammer]|h|r", -- [15]
-		"/g this isnt going very well", -- [16]
-		"/g i doubt you can make it drop ", -- [17]
-		"/g i needed to sleep anyway", -- [18]
-		"/g cya tomorrow", -- [19]
-		"/wa", -- [20]
+		"/g how did having the portals speed this up?", -- [1]
+		"/g hmm", -- [2]
+		"/g i guess", -- [3]
+		"/g this was a pretty much mandatory questline aswell right?", -- [4]
+		"/g fuck", -- [5]
+		"/g these zones are just so depressing", -- [6]
+		"/g well", -- [7]
+		"/g not really a suprise", -- [8]
+		"/g considering we never like the same things", -- [9]
+		"/g i like things like nagrand, valley of the four winds, stormheim", -- [10]
+		"/g bright zone", -- [11]
+		"/M", -- [12]
+		"/wa", -- [13]
+		"/bt", -- [14]
+		"/cw Deenit-Magtheridon |cffffff00|Hachievement:11874:Player-1303-03FA8295:1:7:23:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Kil'jaeden]|h|r", -- [15]
+		"/cw Whitecracker-Stormrage |cffffff00|Hachievement:11874:Player-1303-03FA8295:1:7:23:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Kil'jaeden]|h|r", -- [16]
+		"/cw Magisix-Silvermoon |cffffff00|Hachievement:11874:Player-1303-03FA8295:1:7:23:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Kil'jaeden]|h|r", -- [17]
+		" visst", -- [18]
+		" 1s", -- [19]
+		" vad är det för dungeon?", -- [20]
 	},
 	["BodyGuard"] = {
 		["Active"] = false,
 		["Health"] = 0,
 		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
-	},
-	["ChatLog"] = {
 	},
 }

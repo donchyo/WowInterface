@@ -12,11 +12,9 @@ AtlasLootCharDB = {
 	},
 	["GUI"] = {
 		["selected"] = {
-			"AtlasLoot_Collections", -- [1]
-			"ARTIFACTS", -- [2]
-			nil, -- [3]
-			1, -- [4]
-			0, -- [5]
+			[5] = 0,
+			[2] = "TheNighthold",
+			[4] = 1,
 		},
 		["point"] = {
 			[3] = "CENTER",

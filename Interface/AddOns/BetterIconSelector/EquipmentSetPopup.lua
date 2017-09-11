@@ -29,7 +29,8 @@ local AIS = BetterIconSelector
 AIS.EquipmentSetPopup = { }
 local EquipmentSetPopup = AIS.EquipmentSetPopup
 local L = LibStub("AceLocale-3.0"):GetLocale("BetterIconSelector", true)
-
+local libiconpath = LibStub("LibIconPath")
+--if not libiconpath:GetRevision() or libiconpath:GetRevision() < 20 then error("You are using an old, incompatible version of LibIconPath - please update it!") end
 local replaced = false
 local popup
 
@@ -121,7 +122,7 @@ function EquipmentSetPopup:ReplaceEquipmentSetPopup()
 				local texture = OldGetEquipmentSetIconInfo(index)
 				if texture then	-- (skip the first texture, 'cause it's the question mark)
 					if (type(texture) == "number") then
-						tinsert(textures, LibIconPath_getName(texture))
+						tinsert(textures, libiconpath:getName(texture))
 					else
 						tinsert(textures, texture)
 					end
@@ -152,8 +153,8 @@ function EquipmentSetPopup:ReplaceEquipmentSetPopup()
 
 		-- (no altering needed)
 		popup:SetScript("OnHide", GearManagerDialogPopup_OnHide)
-		popup:SetScript("OnOkayClicked", function(...) PlaySound("gsTitleOptionOK"); GearManagerDialogPopupOkay_OnClick(...) end)
-		popup:SetScript("OnCancelClicked", function(...) PlaySound("gsTitleOptionOK"); GearManagerDialogPopupCancel_OnClick(...) end)
+		popup:SetScript("OnOkayClicked", function(...) PlaySound(PlaySoundKitID and "gsTitleOptionOK" or 798); GearManagerDialogPopupOkay_OnClick(...) end)
+		popup:SetScript("OnCancelClicked", function(...) PlaySound(PlaySoundKitID and "gsTitleOptionOK" or 798); GearManagerDialogPopupCancel_OnClick(...) end)
 
 		-- (altered version of PaperDollFrame.lua:GearSetPopupButton_OnClick)
 		popup.iconsFrame:SetScript("OnSelectedIconChanged", function(iconsFrame)

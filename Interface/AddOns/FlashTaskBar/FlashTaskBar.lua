@@ -1575,7 +1575,7 @@ function ChatFrame_MessageEventHandler_WithNoFlash (self, event, ...)
 			--BN_WHISPER FIXME
 			ChatEdit_SetLastTellTarget(arg2, type);
 			if ( self.tellTimer and (GetTime() > self.tellTimer) ) then
-				PlaySound("TellMessage");
+				--PlaySound("TellMessage");
 			end
 			self.tellTimer = GetTime() + CHAT_TELL_ALERT_TIME;
 			--FCF_FlashTab(self);

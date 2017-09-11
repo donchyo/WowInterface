@@ -409,6 +409,10 @@ L["STRING_OPTIONS_ADVANCED"] = "Erweitert"
 L["STRING_OPTIONS_ALPHAMOD_ANCHOR"] = "Automatisch Verbergen:"
 L["STRING_OPTIONS_ALWAYS_USE"] = "Bei allen Charakteren benutzen"
 L["STRING_OPTIONS_ALWAYS_USE_DESC"] = "Wenn aktiviert, nutzen alle Charaktere das ausgewählte Profil. Andernfalls erscheint eine Anzeige, in der nach einem zu benutzenden Profil gefragt wird."
+--Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"] = ""
 L["STRING_OPTIONS_ANCHOR"] = "Seite"
 L["STRING_OPTIONS_ANIMATEBARS"] = "Balken animieren"
 L["STRING_OPTIONS_ANIMATEBARS_DESC"] = "Aktiviert Animationen für alle Balken."
@@ -651,6 +655,10 @@ L["STRING_OPTIONS_DEATHLIMIT"] = "Todesereignisanzahl"
 L["STRING_OPTIONS_DEATHLIMIT_DESC"] = [=[Stelle die Anzahl an Ereignissen für die Todesanzeige ein.
 
 |cFFFFFF00Wichtig|r: Wird nach der Änderung nur auf neue Tode angewendet.]=]
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING"] = ""
+--Translation missing 
+-- L["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"] = ""
 L["STRING_OPTIONS_DESATURATE_MENU"] = "Entfärbt"
 L["STRING_OPTIONS_DESATURATE_MENU_DESC"] = "Aktiviert: Alle Symbole der Werkzeugleiste werden schwarz-weiß."
 L["STRING_OPTIONS_DISABLE_ALLDISPLAYSWINDOW"] = "Das Menü 'Alle Anzeigen' deaktivieren"

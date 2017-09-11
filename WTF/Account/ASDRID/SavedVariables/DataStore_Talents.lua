@@ -116,9 +116,9 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Bawsie"] = {
 				["EquippedArtifact"] = "Thas'dorah, Legacy of the Windrunners",
-				["lastUpdate"] = 1503248489,
+				["lastUpdate"] = 1504970058,
 				["Class"] = "HUNTER",
-				["ArtifactKnowledge"] = 40,
+				["ArtifactKnowledge"] = 42,
 				["Artifacts"] = {
 					["Talonclaw, Spear of the Wild Gods"] = {
 						["tier"] = 2,
@@ -126,13 +126,13 @@ DataStore_TalentsDB = {
 					},
 					["Thas'dorah, Legacy of the Windrunners"] = {
 						["tier"] = 2,
-						["rank"] = 49,
-						["pointsRemaining"] = 219847281,
+						["rank"] = 54,
+						["pointsRemaining"] = 533091381,
 					},
 					["Titanstrike"] = {
-						["pointsRemaining"] = 20158670,
+						["pointsRemaining"] = 63496900,
 						["rank"] = 30,
-						["tier"] = 1,
+						["tier"] = 2,
 					},
 				},
 				["ActiveTalents"] = 1,
@@ -176,10 +176,10 @@ DataStore_TalentsDB = {
 					7028, -- [37]
 					5860, -- [38]
 				},
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledgeMultiplier"] = 208001,
 				["Specializations"] = {
 					11735, -- [1]
-					9557, -- [2]
+					15829, -- [2]
 					0, -- [3]
 				},
 			},
@@ -235,15 +235,15 @@ DataStore_TalentsDB = {
 				},
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["EquippedArtifact"] = "The Kingslayers",
-				["lastUpdate"] = 1503189330,
+				["EquippedArtifact"] = "Fangs of the Devourer",
+				["lastUpdate"] = 1505066049,
 				["Specializations"] = {
 					6517, -- [1]
 					10998, -- [2]
-					13977, -- [3]
+					14293, -- [3]
 				},
-				["ArtifactKnowledge"] = 40,
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledge"] = 42,
+				["ArtifactKnowledgeMultiplier"] = 208001,
 				["ActiveTalents"] = 1,
 				["GlyphList"] = {
 					11, -- [1]
@@ -289,13 +289,14 @@ DataStore_TalentsDB = {
 				["Class"] = "ROGUE",
 				["Artifacts"] = {
 					["The Dreadblades"] = {
-						["pointsRemaining"] = 12890,
-						["rank"] = 20,
+						["tier"] = 2,
+						["pointsRemaining"] = 278380,
+						["rank"] = 36,
 					},
 					["Fangs of the Devourer"] = {
-						["pointsRemaining"] = 70210,
-						["rank"] = 30,
-						["tier"] = 1,
+						["pointsRemaining"] = 166882160,
+						["rank"] = 56,
+						["tier"] = 2,
 					},
 					["The Kingslayers"] = {
 						["pointsRemaining"] = 26713800,
@@ -331,19 +332,19 @@ DataStore_TalentsDB = {
 				["ArtifactKnowledgeMultiplier"] = 40001,
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["EquippedArtifact"] = "Doomhammer",
-				["lastUpdate"] = 1503186117,
+				["EquippedArtifact"] = "Sharas'dal, Scepter of Tides",
+				["lastUpdate"] = 1505065902,
 				["Specializations"] = {
 					12181, -- [1]
 					9623, -- [2]
-					15259, -- [3]
+					15258, -- [3]
 				},
-				["ArtifactKnowledge"] = 40,
+				["ArtifactKnowledge"] = 42,
 				["Artifacts"] = {
 					["Doomhammer"] = {
 						["tier"] = 2,
-						["rank"] = 44,
-						["pointsRemaining"] = 34866610,
+						["rank"] = 52,
+						["pointsRemaining"] = 15491460,
 					},
 					["The Fist of Ra-den"] = {
 						["tier"] = 2,
@@ -352,8 +353,8 @@ DataStore_TalentsDB = {
 					},
 					["Sharas'dal, Scepter of Tides"] = {
 						["tier"] = 2,
-						["rank"] = 58,
-						["pointsRemaining"] = 855634282,
+						["rank"] = 60,
+						["pointsRemaining"] = 36786482,
 					},
 				},
 				["ActiveTalents"] = 1,
@@ -417,7 +418,7 @@ DataStore_TalentsDB = {
 					17476, -- [57]
 					9796, -- [58]
 				},
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledgeMultiplier"] = 208001,
 				["Class"] = "SHAMAN",
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
@@ -537,67 +538,40 @@ DataStore_TalentsDB = {
 					17620, -- [47]
 				},
 			},
-			["Default.Grim Batol.Donch"] = {
-				["EquippedArtifact"] = "Ebonchill, Greatstaff of Alodi",
-				["lastUpdate"] = 1503072342,
-				["Specializations"] = {
-					14841, -- [1]
-					13749, -- [2]
-					7670, -- [3]
-				},
-				["ArtifactKnowledge"] = 40,
+			["Default.Grim Batol.Krixikin"] = {
+				["EquippedArtifact"] = "Scythe of Elune",
 				["Artifacts"] = {
-					["Ebonchill, Greatstaff of Alodi"] = {
+					["Claws of Ursoc"] = {
+						["pointsRemaining"] = 925211608,
+						["rank"] = 55,
 						["tier"] = 2,
-						["rank"] = 47,
-						["pointsRemaining"] = 77278570,
 					},
-					["Felo'melorn"] = {
-						["rank"] = 1,
+					["G'Hanir, the Mother Tree"] = {
+						["pointsRemaining"] = 456837520,
+						["rank"] = 58,
+						["tier"] = 2,
 					},
-					["Aluneth, Greatstaff of the Magna"] = {
-						["rank"] = 24,
-						["pointsRemaining"] = 82615,
-						["tier"] = 1,
+					["Fangs of Ashamane"] = {
+						["pointsRemaining"] = 233114870,
+						["rank"] = 49,
+						["tier"] = 2,
+					},
+					["Scythe of Elune"] = {
+						["pointsRemaining"] = 502084920,
+						["rank"] = 50,
+						["tier"] = 2,
 					},
 				},
-				["ActiveTalents"] = 1,
-				["GlyphList"] = {
-					11, -- [1]
-					5018, -- [2]
-					10426, -- [3]
-					5034, -- [4]
-					5066, -- [5]
-					5178, -- [6]
-					11210, -- [7]
-					18138, -- [8]
-					5098, -- [9]
-					5146, -- [10]
-					5290, -- [11]
-					9466, -- [12]
-					14858, -- [13]
-					5274, -- [14]
-					5210, -- [15]
-					18154, -- [16]
-					11162, -- [17]
-					5162, -- [18]
-					11146, -- [19]
-					13938, -- [20]
-					9778, -- [21]
-					5298, -- [22]
-					13, -- [23]
-					7228, -- [24]
-					5260, -- [25]
-					11180, -- [26]
-					5132, -- [27]
-					14780, -- [28]
-					17300, -- [29]
-					7172, -- [30]
-					17284, -- [31]
-					17268, -- [32]
+				["Class"] = "DRUID",
+				["lastUpdate"] = 1505072035,
+				["Specializations"] = {
+					9979, -- [1]
+					15317, -- [2]
+					6751, -- [3]
+					16377, -- [4]
 				},
-				["Class"] = "MAGE",
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledge"] = 42,
+				["ArtifactKnowledgeMultiplier"] = 208001,
 			},
 			["Default.Aggra (Português).Spacegoatx"] = {
 				["ActiveTalents"] = 2,
@@ -655,23 +629,142 @@ DataStore_TalentsDB = {
 					7268, -- [49]
 				},
 			},
+			["Default.Grim Batol.Donch"] = {
+				["EquippedArtifact"] = "Ebonchill, Greatstaff of Alodi",
+				["lastUpdate"] = 1504345781,
+				["Specializations"] = {
+					14841, -- [1]
+					13749, -- [2]
+					7670, -- [3]
+				},
+				["ArtifactKnowledge"] = 41,
+				["Artifacts"] = {
+					["Ebonchill, Greatstaff of Alodi"] = {
+						["tier"] = 2,
+						["rank"] = 47,
+						["pointsRemaining"] = 77278570,
+					},
+					["Felo'melorn"] = {
+						["rank"] = 1,
+					},
+					["Aluneth, Greatstaff of the Magna"] = {
+						["rank"] = 24,
+						["pointsRemaining"] = 82615,
+						["tier"] = 1,
+					},
+				},
+				["ActiveTalents"] = 1,
+				["GlyphList"] = {
+					11, -- [1]
+					5018, -- [2]
+					10426, -- [3]
+					5034, -- [4]
+					5066, -- [5]
+					5178, -- [6]
+					11210, -- [7]
+					18138, -- [8]
+					5098, -- [9]
+					5146, -- [10]
+					5290, -- [11]
+					9466, -- [12]
+					14858, -- [13]
+					5274, -- [14]
+					5210, -- [15]
+					18154, -- [16]
+					11162, -- [17]
+					5162, -- [18]
+					11146, -- [19]
+					13938, -- [20]
+					9778, -- [21]
+					5298, -- [22]
+					13, -- [23]
+					7228, -- [24]
+					5260, -- [25]
+					11180, -- [26]
+					5132, -- [27]
+					14780, -- [28]
+					17300, -- [29]
+					7172, -- [30]
+					17284, -- [31]
+					17268, -- [32]
+				},
+				["Class"] = "MAGE",
+				["ArtifactKnowledgeMultiplier"] = 160001,
+			},
+			["Default.Kazzak.Lilgaykrixi"] = {
+				["ActiveTalents"] = 1,
+				["Class"] = "WARRIOR",
+				["lastUpdate"] = 1486469462,
+				["GlyphList"] = {
+					11, -- [1]
+					7914, -- [2]
+					18906, -- [3]
+					7946, -- [4]
+					7770, -- [5]
+					8138, -- [6]
+					7954, -- [7]
+					14898, -- [8]
+					12210, -- [9]
+					7986, -- [10]
+					18914, -- [11]
+					7858, -- [12]
+					17170, -- [13]
+					19010, -- [14]
+					18930, -- [15]
+					7874, -- [16]
+					18946, -- [17]
+					7826, -- [18]
+					18962, -- [19]
+					8146, -- [20]
+					18978, -- [21]
+					14914, -- [22]
+					8114, -- [23]
+					7922, -- [24]
+					18994, -- [25]
+					8034, -- [26]
+					12274, -- [27]
+					12258, -- [28]
+					8082, -- [29]
+					7794, -- [30]
+					12226, -- [31]
+					12194, -- [32]
+					13, -- [33]
+					16324, -- [34]
+					7748, -- [35]
+					7844, -- [36]
+					15860, -- [37]
+					15844, -- [38]
+					7780, -- [39]
+					12244, -- [40]
+					7812, -- [41]
+					7732, -- [42]
+					17572, -- [43]
+					17588, -- [44]
+					13620, -- [45]
+					17604, -- [46]
+					17620, -- [47]
+				},
+				["Specializations"] = {
+					[3] = 0,
+				},
+			},
 			["Default.Grim Batol.Zolution"] = {
 				["EquippedArtifact"] = "Xal'atath, Blade of the Black Empire",
-				["lastUpdate"] = 1502409657,
+				["lastUpdate"] = 1504970537,
 				["Specializations"] = {
 					7159, -- [1]
 					5557, -- [2]
 					6845, -- [3]
 				},
-				["ArtifactKnowledge"] = 40,
+				["ArtifactKnowledge"] = 42,
 				["Artifacts"] = {
 					["T'uure, Beacon of the Naaru"] = {
 						["rank"] = 1,
 					},
 					["Xal'atath, Blade of the Black Empire"] = {
-						["tier"] = 1,
-						["rank"] = 41,
-						["pointsRemaining"] = 983340,
+						["tier"] = 2,
+						["rank"] = 35,
+						["pointsRemaining"] = 13998340,
 					},
 					["Light's Wrath"] = {
 						["rank"] = 2,
@@ -738,65 +831,53 @@ DataStore_TalentsDB = {
 					16836, -- [55]
 					16788, -- [56]
 				},
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledgeMultiplier"] = 208001,
 				["Class"] = "PRIEST",
 			},
-			["Default.Kazzak.Lilgaykrixi"] = {
+			["Default.Aggra (Português).Bawsi"] = {
 				["ActiveTalents"] = 1,
-				["Class"] = "WARRIOR",
-				["lastUpdate"] = 1486469462,
 				["GlyphList"] = {
 					11, -- [1]
-					7914, -- [2]
-					18906, -- [3]
-					7946, -- [4]
-					7770, -- [5]
-					8138, -- [6]
-					7954, -- [7]
-					14898, -- [8]
-					12210, -- [9]
-					7986, -- [10]
-					18914, -- [11]
-					7858, -- [12]
-					17170, -- [13]
-					19010, -- [14]
-					18930, -- [15]
-					7874, -- [16]
-					18946, -- [17]
-					7826, -- [18]
-					18962, -- [19]
-					8146, -- [20]
-					18978, -- [21]
-					14914, -- [22]
-					8114, -- [23]
-					7922, -- [24]
-					18994, -- [25]
-					8034, -- [26]
-					12274, -- [27]
-					12258, -- [28]
-					8082, -- [29]
-					7794, -- [30]
-					12226, -- [31]
-					12194, -- [32]
-					13, -- [33]
-					16324, -- [34]
-					7748, -- [35]
-					7844, -- [36]
-					15860, -- [37]
-					15844, -- [38]
-					7780, -- [39]
-					12244, -- [40]
-					7812, -- [41]
-					7732, -- [42]
-					17572, -- [43]
-					17588, -- [44]
-					13620, -- [45]
-					17604, -- [46]
-					17620, -- [47]
+					5658, -- [2]
+					5850, -- [3]
+					5810, -- [4]
+					16370, -- [5]
+					5634, -- [6]
+					10834, -- [7]
+					5714, -- [8]
+					5730, -- [9]
+					5682, -- [10]
+					5698, -- [11]
+					17666, -- [12]
+					5794, -- [13]
+					5746, -- [14]
+					5762, -- [15]
+					17634, -- [16]
+					11090, -- [17]
+					5906, -- [18]
+					5666, -- [19]
+					11122, -- [20]
+					5778, -- [21]
+					5826, -- [22]
+					18082, -- [23]
+					18098, -- [24]
+					5938, -- [25]
+					11058, -- [26]
+					13, -- [27]
+					16356, -- [28]
+					11076, -- [29]
+					7092, -- [30]
+					5620, -- [31]
+					16852, -- [32]
+					7060, -- [33]
+					7044, -- [34]
+					18052, -- [35]
+					7028, -- [36]
+					7076, -- [37]
+					5860, -- [38]
 				},
-				["Specializations"] = {
-					[3] = 0,
-				},
+				["lastUpdate"] = 1451198313,
+				["Class"] = "HUNTER",
 			},
 			["Default.Shattered Hand.Donchyo"] = {
 				["ActiveTalents"] = 1,
@@ -847,51 +928,6 @@ DataStore_TalentsDB = {
 					0, -- [1]
 				},
 			},
-			["Default.Aggra (Português).Bawsi"] = {
-				["ActiveTalents"] = 1,
-				["GlyphList"] = {
-					11, -- [1]
-					5658, -- [2]
-					5850, -- [3]
-					5810, -- [4]
-					16370, -- [5]
-					5634, -- [6]
-					10834, -- [7]
-					5714, -- [8]
-					5730, -- [9]
-					5682, -- [10]
-					5698, -- [11]
-					17666, -- [12]
-					5794, -- [13]
-					5746, -- [14]
-					5762, -- [15]
-					17634, -- [16]
-					11090, -- [17]
-					5906, -- [18]
-					5666, -- [19]
-					11122, -- [20]
-					5778, -- [21]
-					5826, -- [22]
-					18082, -- [23]
-					18098, -- [24]
-					5938, -- [25]
-					11058, -- [26]
-					13, -- [27]
-					16356, -- [28]
-					11076, -- [29]
-					7092, -- [30]
-					5620, -- [31]
-					16852, -- [32]
-					7060, -- [33]
-					7044, -- [34]
-					18052, -- [35]
-					7028, -- [36]
-					7076, -- [37]
-					5860, -- [38]
-				},
-				["lastUpdate"] = 1451198313,
-				["Class"] = "HUNTER",
-			},
 			["Default.Shattered Hand.Bawsi"] = {
 				["ActiveTalents"] = 1,
 				["Class"] = "HUNTER",
@@ -939,18 +975,19 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["EquippedArtifact"] = "Ulthalesh, the Deadwind Harvester",
-				["lastUpdate"] = 1503176815,
+				["lastUpdate"] = 1503633846,
 				["Class"] = "WARLOCK",
-				["ArtifactKnowledge"] = 0,
+				["ArtifactKnowledge"] = 40,
 				["Artifacts"] = {
 					["Ulthalesh, the Deadwind Harvester"] = {
-						["rank"] = 9,
-						["pointsRemaining"] = 460,
+						["rank"] = 46,
+						["pointsRemaining"] = 3184805,
 						["tier"] = 1,
 					},
 					["Scepter of Sargeras"] = {
 						["tier"] = 1,
-						["rank"] = 1,
+						["rank"] = 35,
+						["pointsRemaining"] = 548920,
 					},
 				},
 				["ActiveTalents"] = 1,
@@ -998,7 +1035,7 @@ DataStore_TalentsDB = {
 					13734, -- [1]
 					[3] = 13669,
 				},
-				["ArtifactKnowledgeMultiplier"] = 1,
+				["ArtifactKnowledgeMultiplier"] = 40001,
 			},
 			["Default.Shattered Hand.Donch"] = {
 				["ActiveTalents"] = 1,
@@ -1045,95 +1082,6 @@ DataStore_TalentsDB = {
 				},
 				["lastUpdate"] = 1465684871,
 				["Class"] = "DEATHKNIGHT",
-			},
-			["Default.Grim Batol.Nyrith"] = {
-				["EquippedArtifact"] = "Scythe of Elune",
-				["lastUpdate"] = 1503170010,
-				["Class"] = "DRUID",
-				["ArtifactKnowledge"] = 40,
-				["ArtifactKnowledgeMultiplier"] = 40001,
-				["ActiveTalents"] = 1,
-				["GlyphList"] = {
-					11, -- [1]
-					10826, -- [2]
-					6954, -- [3]
-					14986, -- [4]
-					10810, -- [5]
-					8826, -- [6]
-					2618, -- [7]
-					2906, -- [8]
-					14938, -- [9]
-					14954, -- [10]
-					13306, -- [11]
-					2778, -- [12]
-					10106, -- [13]
-					2602, -- [14]
-					18026, -- [15]
-					19370, -- [16]
-					2730, -- [17]
-					2746, -- [18]
-					2762, -- [19]
-					2890, -- [20]
-					18010, -- [21]
-					10794, -- [22]
-					10762, -- [23]
-					17874, -- [24]
-					17954, -- [25]
-					17906, -- [26]
-					2834, -- [27]
-					17890, -- [28]
-					17986, -- [29]
-					17938, -- [30]
-					2674, -- [31]
-					19282, -- [32]
-					2850, -- [33]
-					10738, -- [34]
-					13, -- [35]
-					19420, -- [36]
-					6972, -- [37]
-					17228, -- [38]
-					9820, -- [39]
-					6924, -- [40]
-					16876, -- [41]
-					2636, -- [42]
-					15004, -- [43]
-					18044, -- [44]
-					2812, -- [45]
-					6900, -- [46]
-					6932, -- [47]
-					17252, -- [48]
-					2820, -- [49]
-					14964, -- [50]
-					19300, -- [51]
-				},
-				["Artifacts"] = {
-					["Claws of Ursoc"] = {
-						["pointsRemaining"] = 424408608,
-						["tier"] = 2,
-						["rank"] = 55,
-					},
-					["Scythe of Elune"] = {
-						["pointsRemaining"] = 41257470,
-						["tier"] = 2,
-						["rank"] = 36,
-					},
-					["Fangs of Ashamane"] = {
-						["pointsRemaining"] = 233114870,
-						["tier"] = 2,
-						["rank"] = 49,
-					},
-					["G'Hanir, the Mother Tree"] = {
-						["tier"] = 2,
-						["pointsRemaining"] = 281029070,
-						["rank"] = 52,
-					},
-				},
-				["Specializations"] = {
-					9723, -- [1]
-					15317, -- [2]
-					7773, -- [3]
-					16345, -- [4]
-				},
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["GlyphList"] = {
@@ -1242,30 +1190,30 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Krixidk"] = {
 				["EquippedArtifact"] = "Maw of the Damned",
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledgeMultiplier"] = 208001,
 				["ActiveTalents"] = 1,
 				["Specializations"] = {
 					11671, -- [1]
-					16126, -- [2]
+					15098, -- [2]
 					5467, -- [3]
 				},
-				["lastUpdate"] = 1503169863,
+				["lastUpdate"] = 1505070386,
 				["Class"] = "DEATHKNIGHT",
-				["ArtifactKnowledge"] = 40,
+				["ArtifactKnowledge"] = 42,
 				["Artifacts"] = {
 					["Blades of the Fallen Prince"] = {
-						["pointsRemaining"] = 24503450,
-						["rank"] = 47,
+						["pointsRemaining"] = 1341123050,
+						["rank"] = 49,
 						["tier"] = 2,
 					},
 					["Maw of the Damned"] = {
-						["pointsRemaining"] = 2098481750,
-						["rank"] = 57,
+						["pointsRemaining"] = 2384709150,
+						["rank"] = 60,
 						["tier"] = 2,
 					},
 					["Apocalypse"] = {
 						["tier"] = 2,
-						["pointsRemaining"] = 26144100,
+						["pointsRemaining"] = 398147100,
 						["rank"] = 52,
 					},
 				},
@@ -1335,18 +1283,18 @@ DataStore_TalentsDB = {
 				["Class"] = "SHAMAN",
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["EquippedArtifact"] = "Truthguard",
-				["lastUpdate"] = 1503007732,
+				["EquippedArtifact"] = "The Silver Hand",
+				["lastUpdate"] = 1504612151,
 				["Specializations"] = {
 					15007, -- [1]
 					10582, -- [2]
 					9849, -- [3]
 				},
-				["ArtifactKnowledge"] = 40,
+				["ArtifactKnowledge"] = 42,
 				["Artifacts"] = {
 					["Truthguard"] = {
-						["pointsRemaining"] = 180099361,
-						["rank"] = 48,
+						["pointsRemaining"] = 166103211,
+						["rank"] = 50,
 						["tier"] = 2,
 					},
 					["The Silver Hand"] = {
@@ -1412,14 +1360,14 @@ DataStore_TalentsDB = {
 					7276, -- [49]
 				},
 				["Class"] = "PALADIN",
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledgeMultiplier"] = 208001,
 			},
 			["Default.Grim Batol.Kroxi"] = {
 				["EquippedArtifact"] = "Scale of the Earth-Warder",
-				["lastUpdate"] = 1503166512,
+				["lastUpdate"] = 1504365609,
 				["Class"] = "WARRIOR",
-				["ArtifactKnowledge"] = 40,
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledge"] = 41,
+				["ArtifactKnowledgeMultiplier"] = 160001,
 				["ActiveTalents"] = 1,
 				["GlyphList"] = {
 					11, -- [1]
@@ -1477,8 +1425,8 @@ DataStore_TalentsDB = {
 				},
 				["Artifacts"] = {
 					["Scale of the Earth-Warder"] = {
-						["pointsRemaining"] = 248789185,
-						["rank"] = 51,
+						["pointsRemaining"] = 284793685,
+						["rank"] = 52,
 						["tier"] = 2,
 					},
 					["Strom'kar, the Warbreaker"] = {
@@ -1548,10 +1496,10 @@ DataStore_TalentsDB = {
 			},
 			["Default.Grim Batol.Namji"] = {
 				["EquippedArtifact"] = "Fu Zan, the Wanderer's Companion",
-				["lastUpdate"] = 1502732652,
+				["lastUpdate"] = 1504970490,
 				["Class"] = "MONK",
-				["ArtifactKnowledge"] = 40,
-				["ArtifactKnowledgeMultiplier"] = 40001,
+				["ArtifactKnowledge"] = 42,
+				["ArtifactKnowledgeMultiplier"] = 208001,
 				["ActiveTalents"] = 1,
 				["GlyphList"] = {
 					11, -- [1]
@@ -1740,42 +1688,42 @@ DataStore_TalentsDB = {
 				[1081] = "Condensation",
 				[463] = "Dark Archangel",
 				[1082] = "Exorcist",
-				[274] = "Siphon Life",
+				[1092] = "Spirit Wolf",
 				[200] = "Blessed Life",
 				[926] = "Kick",
 				[272] = "Hand of Gul'dan",
 				[671] = "Survival Instincts",
 				[1085] = "Sha",
 				[464] = "Distract",
-				[1096] = "Astral Fixation",
+				[275] = "Verdant Spheres",
 				[672] = "Wild Growth",
 				[1087] = "Inspired Hymns",
 				[928] = "Inferno Blast",
 				[273] = "Conflagrate",
-				[551] = "Dash",
-				[401] = "Garrote",
+				[276] = "Nightmares",
+				[1089] = "Improved Distraction",
 				[929] = "Blind",
 				[1090] = "Spirit Raptors",
 				[674] = "Stampeding Roar",
 				[1091] = "Lingering Ancestors",
 				[930] = "Protector of the Innocent",
-				[1092] = "Spirit Wolf",
+				[274] = "Siphon Life",
 				[675] = "Cyclone",
-				[402] = "Detection",
+				[1093] = "Flaming Serpent",
 				[466] = "Pick Pocket",
 				[1094] = "Compy",
 				[676] = "Barkskin",
 				[1095] = "Elemental Familiars",
 				[932] = "Recklessness",
-				[275] = "Verdant Spheres",
+				[1096] = "Astral Fixation",
 				[677] = "Chimaera Shot",
-				[403] = "Gouge",
+				[1097] = "Rain of Frogs",
 				[933] = "Fae Silence",
 				[1098] = "Raging Whirlwind",
 				[170] = "Rebirth",
 				[1099] = "Subtle Defender",
 				[934] = "Faerie Fire",
-				[276] = "Nightmares",
+				[551] = "Dash",
 				[467] = "Safe Fall",
 				[404] = "Hemorrhage",
 				[935] = "The Predator",
@@ -1798,12 +1746,12 @@ DataStore_TalentsDB = {
 				[556] = "Unholy Command",
 				[754] = "Totemic Vigor",
 				[1111] = "Icy Runes",
-				[1114] = "Raise Ally",
-				[279] = "Demon Training",
+				[558] = "Corpse Explosion",
+				[1112] = "Empowerment",
 				[505] = "Sweeping Strikes",
 				[407] = "Hemorrhaging Veins",
 				[471] = "Spectral Wolf",
-				[558] = "Corpse Explosion",
+				[1114] = "Raise Ally",
 				[172] = "Rejuvenation",
 				[1115] = "Rune Tap",
 				[559] = "Denounce",
@@ -1882,9 +1830,9 @@ DataStore_TalentsDB = {
 				[289] = "Soulstone",
 				[353] = "Liberation",
 				[1153] = "Restored Faith",
-				[961] = "Shadow",
+				[481] = "Enslave Demon",
 				[1154] = "Miraculous Dispelling",
-				[177] = "Hurricane",
+				[706] = "Holy Shock",
 				[1155] = "Inquisitor",
 				[516] = "Chains of Ice",
 				[1156] = "Silence",
@@ -1903,24 +1851,24 @@ DataStore_TalentsDB = {
 				[178] = "Skull Bash",
 				[1163] = "Ephemeral Spirits",
 				[1109] = "Absorb Magic",
-				[292] = "Falling Meteor",
-				[356] = "Endless Wrath",
+				[1164] = "Ghostly Speed",
+				[711] = "Focused Mending",
 				[1165] = "Grounding",
 				[484] = "Bloodcurdling Shout",
 				[1166] = "Lava Spread",
 				[712] = "Mind Spike",
 				[1167] = "Reactive Shielding",
-				[211] = "Water Shield",
+				[1171] = "Spiritwalker's Aegis",
 				[1168] = "Shamanistic Resolve",
 				[713] = "Binding Heal",
 				[1169] = "Shocks",
 				[485] = "Long Charge",
 				[1170] = "Spiritwalker's Focus",
 				[714] = "Vendetta",
-				[1171] = "Spiritwalker's Aegis",
+				[211] = "Water Shield",
 				[502] = "Shield Slam",
-				[358] = "Disengage",
 				[715] = "Killing Spree",
+				[358] = "Disengage",
 				[1173] = "Dark Soul",
 				[486] = "Gushing Wound",
 				[709] = "Leap of Faith",
@@ -1969,24 +1917,24 @@ DataStore_TalentsDB = {
 				[462] = "Reflective Shield",
 				[911] = "Eternal Resolve",
 				[364] = "No Escape",
-				[1203] = "Merciful Wrath",
+				[215] = "Capacitor Totem",
 				[492] = "Hindering Strikes",
-				[366] = "Tame Beast",
+				[731] = "Deadly Momentum",
 				[1209] = "Detoxing",
 				[495] = "Rude Interruption",
 				[734] = "Cloak of Shadows",
-				[432] = "The Chameleon",
+				[1213] = "Flapping Owl",
 				[365] = "Pathfinding",
 				[1201] = "Frostbrand Weapon",
 				[997] = "Rapid Rolling",
 				[1202] = "Mind Harvest",
 				[183] = "Double Jeopardy",
-				[215] = "Capacitor Totem",
+				[1203] = "Merciful Wrath",
 				[986] = "Focused Wrath",
 				[1204] = "Army of the Dead",
-				[731] = "Deadly Momentum",
+				[366] = "Tame Beast",
 				[1205] = "Savagery",
-				[494] = "Bloodthirst",
+				[987] = "Falling Avenger",
 				[1206] = "The Solstice",
 				[496] = "Gag Order",
 				[1207] = "Purify Spirit",
@@ -1997,11 +1945,11 @@ DataStore_TalentsDB = {
 				[989] = "Bladed Judgment",
 				[1210] = "Nature's Cure",
 				[184] = "Devotion Aura",
-				[1211] = "Purification",
+				[216] = "Purge",
 				[990] = "Crow Feast",
 				[1212] = "Flying Fists",
 				[735] = "Thunder",
-				[1213] = "Flapping Owl",
+				[432] = "The Chameleon",
 				[991] = "Burning Anger",
 				[1083] = "Pillar of Light",
 				[736] = "Feral Spirit",
@@ -2027,11 +1975,11 @@ DataStore_TalentsDB = {
 				[371] = "Solace",
 				[435] = "Grace",
 				[499] = "Die by the Sword",
-				[216] = "Purge",
+				[1211] = "Purification",
 				[186] = "Divine Protection",
 				[218] = "Fire Nova",
 				[998] = "Guard",
-				[987] = "Falling Avenger",
+				[494] = "Bloodthirst",
 				[258] = "Deep Wells",
 				[871] = "Counterspell",
 				[999] = "Zen Meditation",
@@ -2052,11 +2000,11 @@ DataStore_TalentsDB = {
 				[268] = "Mind Blast",
 				[1003] = "Mind Flay",
 				[769] = "Dark Simulacrum",
-				[711] = "Focused Mending",
-				[1164] = "Ghostly Speed",
+				[356] = "Endless Wrath",
+				[292] = "Falling Meteor",
 				[469] = "Poisons",
-				[706] = "Holy Shock",
-				[481] = "Enslave Demon",
+				[177] = "Hurricane",
+				[961] = "Shadow",
 				[439] = "Revive Pet",
 				[1005] = "Shadow Word: Death",
 				[515] = "Icebound Fortitude",
@@ -2075,7 +2023,7 @@ DataStore_TalentsDB = {
 				[753] = "Hex",
 				[441] = "Fireworks",
 				[1009] = "Mass Exorcism",
-				[1112] = "Empowerment",
+				[279] = "Demon Training",
 				[189] = "Consecration",
 				[221] = "Frost Shock",
 				[253] = "Fade",
@@ -2084,9 +2032,9 @@ DataStore_TalentsDB = {
 				[442] = "Stampede",
 				[1011] = "Transcendence",
 				[530] = "Strangulate",
-				[1097] = "Rain of Frogs",
-				[1093] = "Flaming Serpent",
-				[1089] = "Improved Distraction",
+				[403] = "Gouge",
+				[402] = "Detection",
+				[401] = "Garrote",
 				[518] = "Death's Embrace",
 				[757] = "Ember Tap",
 				[443] = "Aspect of the Pack",
@@ -2095,22 +2043,23 @@ DataStore_TalentsDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -2125,7 +2074,7 @@ DataStore_TalentsDB = {
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
 	},
 	["profiles"] = {
 		["Krixidk - Grim Batol"] = {
@@ -2220,7 +2169,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24974,
 		},
 		["WARRIOR"] = {
 			["Locale"] = "enUS",
@@ -2310,7 +2259,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Protection",
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24931,
 		},
 		["ROGUE"] = {
 			["Locale"] = "enUS",
@@ -2400,7 +2349,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Subtlety",
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24974,
 		},
 		["MAGE"] = {
 			["Locale"] = "enUS",
@@ -2486,7 +2435,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24931,
 		},
 		["PRIEST"] = {
 			["Locale"] = "enUS",
@@ -2572,7 +2521,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Shadow",
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24974,
 		},
 		["SHAMAN"] = {
 			["Locale"] = "enUS",
@@ -2662,7 +2611,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Restoration",
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24974,
 		},
 		["WARLOCK"] = {
 			["Locale"] = "enUS",
@@ -2876,7 +2825,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Retribution",
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24931,
 		},
 		["DRUID"] = {
 			["Locale"] = "enUS",
@@ -2994,7 +2943,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Restoration",
 				}, -- [4]
 			},
-			["Version"] = 24742,
+			["Version"] = 24974,
 		},
 		["MONK"] = {
 			["Locale"] = "enUS",
@@ -3082,7 +3031,7 @@ DataStore_TalentsRefDB = {
 					["name"] = "Windwalker",
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24974,
 		},
 		["DEATHKNIGHT"] = {
 			["Locale"] = "enUS",
@@ -3172,26 +3121,27 @@ DataStore_TalentsRefDB = {
 					["name"] = "Unholy",
 				}, -- [3]
 			},
-			["Version"] = 24742,
+			["Version"] = 24974,
 		},
 	},
 	["profileKeys"] = {
-		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -3206,7 +3156,7 @@ DataStore_TalentsRefDB = {
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
 	},
 	["profiles"] = {
 		["Krixidk - Grim Batol"] = {

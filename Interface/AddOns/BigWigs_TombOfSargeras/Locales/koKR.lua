@@ -73,7 +73,7 @@ if L then
 	L.obeliskExplosion = "방첨탑 폭발"
 	L.obeliskExplosion_desc = "방첨탑 폭발의 타이머입니다"
 
-	L.darkness = "어둠 영혼" -- Shorter name for Darkness of a Thousand Souls (238999)
+	L.darkness = "어둠의 영혼" -- Shorter name for Darkness of a Thousand Souls (238999)
 	L.reflectionErupting = "반영: 분출" -- Shorter name for Shadow Reflection: Erupting (236710)
 	L.reflectionWailing = "반영: 통곡" -- Shorter name for Shadow Reflection: Wailing (236378)
 	L.reflectionHopeless = "반영: 절망" -- Shorter name for Shadow Reflection: Hopeless (237590)
@@ -82,6 +82,15 @@ if L then
 	L.rupturingKnock_desc = "밀쳐내기 타이머를 표시합니다"
 
 	L.meteorImpact_desc = "유성 충돌 타이머를 표시합니다"
+
+	L.shadowsoul = "어둠영혼 생명력 추적기"
+	L.shadowsoul_desc = "어둠영혼 5개체의 현재 생명력을 보여주는 정보 상자를 표시합니다."
+
+	L.custom_on_track_illidan = "자동 인간형 추적"
+	L.custom_on_track_illidan_desc = "당신이 사냥꾼이거나 야성 드루이드라면 이 옵션이 일리단을 추적할 수 있도록 자동으로 인간형 추적을 활성화합니다."
+
+	L.custom_on_zoom_in = "자동 미니맵 확대"
+	L.custom_on_zoom_in_desc = "이 기능은 일리단을 쉽게 추적할 수 있도록 미니맵을 4배 확대합니다, 단계가 끝나면 미니맵 확대를 이전 배율로 복원합니다."
 end
 
 L = BigWigs:NewBossLocale("Tomb of Sargeras Trash", "koKR")
@@ -94,7 +103,10 @@ if L then
 	L.seacaller = "물결비늘 바다소환사"
 	L.custodian = "깊은바다 관리인"
 	L.dresanoth = "드레사노스"
+	L.stalker = "공포의 추적자"
+	L.darjah = "전쟁군주 다르자"
 	L.sentry = "수호의 감시자"
 	L.acolyte = "유령 수행사제"
 	L.ryul = "희미한 자 률"
+	L.countermeasure = "방어 장치"
 end

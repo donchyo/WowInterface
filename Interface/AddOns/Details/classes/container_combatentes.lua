@@ -201,7 +201,6 @@
 					novo_objeto.displayName = _detalhes:GetNickname (serial, false, true) --> serial, default, silent
 				end
 				if (not novo_objeto.displayName) then
-				
 					if (_IsInInstance() and _detalhes.remove_realm_from_name) then
 						novo_objeto.displayName = nome:gsub (("%-.*"), "")
 						
@@ -211,6 +210,10 @@
 					else
 						novo_objeto.displayName = nome
 					end
+				end
+				
+				if (_detalhes.all_players_are_group) then
+					novo_objeto.grupo = true
 				end
 				
 				if ((_bit_band (flag, IS_GROUP_OBJECT) ~= 0 and novo_objeto.classe ~= "UNKNOW" and novo_objeto.classe ~= "UNGROUPPLAYER") or _detalhes:IsInCache (serial)) then

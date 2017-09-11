@@ -1,4 +1,11 @@
 Version: 1
+Frame: QuestFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 496
 Frame: TradeFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -34,10 +41,3 @@ X: 0
 Y: 195
 W: 370
 H: 110
-Frame: QuestFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 496

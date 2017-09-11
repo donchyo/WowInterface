@@ -4,7 +4,9 @@
 	<Script file="Libs\LibStub\LibStub.lua"/>
 	<Include file="Libs\AceLocale-3.0\AceLocale-3.0.xml"/>
 	<Include file="Libs\AceTimer-3.0\AceTimer-3.0.xml"/>
+	<Script file="Libs\LibIconPath\LibIconPath.lua"/>
 	<!--@end-no-lib-strip@-->
 	<Script file="Locales\enUS.lua"/>
 	<Script file="LibAdvancedIconSelector-1.0.lua"/>
+	
 </Ui>

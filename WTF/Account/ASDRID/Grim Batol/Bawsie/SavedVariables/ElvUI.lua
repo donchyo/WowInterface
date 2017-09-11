@@ -1,5 +1,27 @@
 
 ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/g that was easy", -- [1]
+		"/g once i went sidewinders", -- [2]
+		"/g its way easier", -- [3]
+		"/g and well", -- [4]
+		"/g gear", -- [5]
+		" you going pala again?", -- [6]
+		" ye", -- [7]
+		"/p nelth 8 into other or cath 10?", -- [8]
+		"/p with cath we only have to do one", -- [9]
+		"/p but we might get cath from the nelth", -- [10]
+		"/p oke", -- [11]
+		"/p we do cath", -- [12]
+		"/p |cffa335ee|Hitem:151299::::::::110:254::2:1:3524:::|h[Viceroy's Umbral Mantle]|h|r", -- [13]
+		"/p |cffa335ee|Hitem:151313::::::::110:254::2:1:3524:::|h[Vest of the Void's Embrace]|h|r", -- [14]
+		"/p |cffa335ee|Hitem:151323::::::::110:254::2:1:3524:::|h[Pauldrons of the Void Hunter]|h|r", -- [15]
+		"/g apprently it dosent go well with shadow", -- [16]
+		"/p i take", -- [17]
+		"/p prob not", -- [18]
+		"/p but raidbots say its 2%", -- [19]
+		"/calendar", -- [20]
+	},
 	["BodyGuard"] = {
 		["Active"] = false,
 		["Health"] = 0,
@@ -7,27 +29,5 @@ ElvCharacterDB = {
 		["IsInValidZone"] = true,
 	},
 	["ChatLog"] = {
-	},
-	["ChatEditHistory"] = {
-		"/cw Neverlucky-GrimBatol :)", -- [1]
-		"/cw Neverlucky-GrimBatol thanks", -- [2]
-		"/alto show", -- [3]
-		"/reload", -- [4]
-		"/al", -- [5]
-		"/pawn", -- [6]
-		"/g |cff0070dd|Hitem:1973::::::::110:254::::::|h[Orb of Deception]|h|r", -- [7]
-		"/g |cff0070dd|Hitem:35275::::::::110:254::::::|h[Orb of the Sin'dorei]|h|r", -- [8]
-		"/cw Garbagewoman-Darksorrow |cffffff00|Hachievement:11874:Player-1303-06FB0BB8:1:7:23:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Kil'jaeden]|h|r", -- [9]
-		"/cw Flskon-DefiasBrotherhood |cffffff00|Hachievement:11874:Player-1303-06FB0BB8:1:7:23:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Kil'jaeden]|h|r", -- [10]
-		"/ec", -- [11]
-		"/p we good now", -- [12]
-		"/s we might need to reenter", -- [13]
-		"/p got in to a different instance", -- [14]
-		"/p we probably dont need a healer for this if you wanna go 4 dps", -- [15]
-		"/p for survival weapon", -- [16]
-		"/p ty", -- [17]
-		"/p |cffa335ee|Hitem:137458::::::::110:254::23:4:1727:41:1517:3528:::|h[Chaos-Forged Necklace]|h|r?", -- [18]
-		"/p hello", -- [19]
-		"/wa", -- [20]
 	},
 }

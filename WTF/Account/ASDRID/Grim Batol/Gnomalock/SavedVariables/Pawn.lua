@@ -12,11 +12,23 @@ PawnOptions = {
 					["Type"] = "Shadow",
 				}, -- [1]
 				{
-					["ItemLevel"] = 10,
+					["ItemLevel"] = 33,
 					["Type"] = "Blood",
 				}, -- [2]
 			},
 			["Name"] = "Ulthalesh, the Deadwind Harvester",
+		},
+		[128941] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 32,
+					["Type"] = "Fel",
+				}, -- [1]
+				{
+					["Type"] = "Fire",
+				}, -- [2]
+			},
+			["Name"] = "Scepter of Sargeras",
 		},
 	},
 	["LastKeybindingsSet"] = 1,

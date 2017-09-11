@@ -38,6 +38,9 @@ That said, some things to consider when looking at the numbers:
 * CPU usage per addon is taken from the in-game API and does not represent the whole story. It's possible for an addon to get some of its work blamed on another if libraries are involved, or it may get a lot of work to go unnoticed. Use these numbers as a guide only.
 * Remember to turn off CPU monitoring when you're done testing!
 
+08/29/2017 version 3.0.3
+- toc update for 7.3
+
 04/20/2017 version 3.0.2
 - Fix for potential divide by zero errors (integer overflow)
 

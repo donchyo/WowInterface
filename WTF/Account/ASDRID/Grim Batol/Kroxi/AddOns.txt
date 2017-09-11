@@ -65,8 +65,8 @@ PlateBuffs: disabled
 TellMeWhen_Options: disabled
 TellMeWhen: disabled
 AddonUsage: disabled
-AdiBags: enabled
-AdiBags_Config: enabled
+AdiBags: disabled
+AdiBags_Config: disabled
 MogIt_Cosmetic: disabled
 HandyNotes_DraenorTreasures: disabled
 HandyNotes: disabled

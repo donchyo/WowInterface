@@ -1,7 +1,7 @@
-## Interface: 70000
+## Interface: 70200
 ## Title: AutoLootPlus
 ## Notes: Improves the speed of Blizzard's auto looting.
-## Version: 1.2.0
+## Version: 1.2.2
 ## Author: mjbmitch
 
 AutoLootPlus.lua

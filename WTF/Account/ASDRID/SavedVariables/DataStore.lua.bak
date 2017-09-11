@@ -1,34 +1,35 @@
 
 DataStoreDB = {
 	["profileKeys"] = {
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
-		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
+		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
-		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
 		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
@@ -96,19 +97,23 @@ DataStoreDB = {
 				["faction"] = "Alliance",
 				["guildName"] = "The Bulls",
 			},
+			["Default.Grim Batol.Krixikin"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "Hoonigans",
+			},
 			["Default.Twisting Nether.Krixiyo"] = {
 				["faction"] = "Horde",
 			},
 			["Default.Blackmoore.Krixiyo"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Kroxi"] = {
-				["guildName"] = "Hoonigans",
-				["faction"] = "Alliance",
-			},
 			["Default.Aggra (Português).Spacegoatx"] = {
 				["faction"] = "Alliance",
 				["guildName"] = "Hoonigans",
+			},
+			["Default.Grim Batol.Kroxi"] = {
+				["guildName"] = "Hoonigans",
+				["faction"] = "Alliance",
 			},
 			["Default.Kazzak.Lilgaykrixi"] = {
 				["faction"] = "Horde",
@@ -117,24 +122,20 @@ DataStoreDB = {
 				["faction"] = "Horde",
 				["guildName"] = "The Funky Bunch",
 			},
-			["Default.Grim Batol.Nyrith"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Hoonigans",
-			},
 			["Default.Aggra (Português).Bawsi"] = {
 				["guildName"] = "Hoonigans",
 				["faction"] = "Alliance",
 			},
-			["Default.Shattered Hand.Bawsi"] = {
-				["faction"] = "Horde",
+			["Default.Crushridge.Donch"] = {
+				["guildName"] = "Proudly ADDICTED",
+				["faction"] = "Alliance",
 			},
 			["Default.Grim Batol.Donch"] = {
 				["faction"] = "Alliance",
 				["guildName"] = "Hoonigans",
 			},
-			["Default.Crushridge.Donch"] = {
-				["guildName"] = "Proudly ADDICTED",
-				["faction"] = "Alliance",
+			["Default.Shattered Hand.Bawsi"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Grim Batol.Zolution"] = {
 				["guildName"] = "Hoonigans",

@@ -1,4 +1,4 @@
-## Interface: 70200
+## Interface: 70300
 ## Title: DGC - Daily Global Check
 ## Author: Jadya EU - Well of Eternity
 ## Notes: Tracks the completion of daily quests of choice

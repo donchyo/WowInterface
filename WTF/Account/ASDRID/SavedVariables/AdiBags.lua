@@ -213,8 +213,6 @@ AdiBagsDB = {
 		},
 		["Equipment"] = {
 		},
-		["ItemSets"] = {
-		},
 		["CurrencyFrame"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -245,6 +243,8 @@ AdiBagsDB = {
 			},
 		},
 		["DataSource"] = {
+		},
+		["ItemSets"] = {
 		},
 		["Junk"] = {
 			["profiles"] = {

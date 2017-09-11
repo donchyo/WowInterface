@@ -1,3 +1,6 @@
+VER 3 0000000000000361 "1release" "INV_MISC_QUESTIONMARK"
+/script RepopMe();
+END
 VER 3 0000000000000374 "ad" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@player] holy prism
@@ -114,7 +117,7 @@ END
 VER 3 0000000000000092 "mount" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 /dismount
 /use [mod:alt]Azure Water Strider
-/use [swimming,nomod] Fathom Dweller
+--/use [swimming,nomod] Fathom Dweller
 /use [mod:shift]grand expedition yak
 /use [flyable, nomounted]INVINCIBLE
 /use [noflyable, nomounted] swift spectral tiger
@@ -140,9 +143,6 @@ VER 3 000000000000006B "PULL" "ABILITY_SEAL"
 END
 VER 3 0000000000000343 "readycheck" "INV_MISC_QUESTIONMARK"
 /readycheck
-END
-VER 3 0000000000000361 "release" "INV_MISC_QUESTIONMARK"
-/script RepopMe();
 END
 VER 3 000000000000037D "reset instances" "CREATUREPORTRAIT_PORTAL_ISLEOFCONQUESTALLIANCE"
 /script ResetInstances();

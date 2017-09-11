@@ -12,7 +12,8 @@ bind = NONE
 bind CTRL-1 NONE
 bind CTRL-2 NONE
 bind CTRL-3 CLICK BT4Button35:LeftButton
-bind CTRL-5 CLICK BT4Button22:LeftButton
+bind CTRL-4 CLICK BT4Button77:LeftButton
+bind CTRL-5 NONE
 bind CTRL-6 CLICK BT4Button28:LeftButton
 bind CTRL-7 CLICK BT4Button87:LeftButton
 bind CTRL-8 CLICK BT4Button86:LeftButton
@@ -68,3 +69,4 @@ bind ] PAWN_COMPARE_RIGHT
 bind ALT-§ CLICK BT4Button84:LeftButton
 bind ö INTERACTTARGET
 bind NUMPAD9 NONE
+bind ALT-G CLICK BT4Button22:LeftButton

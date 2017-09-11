@@ -4,7 +4,7 @@
 	search for "~number" without the quotes to quick access the page:
 	
 	1 - general
-	2 - combat
+	2 - combat / pvp pve
 	3 - skin
 	4 - row settings
 	5 - row texts
@@ -4306,6 +4306,45 @@ function window:CreateFrame2()
 
 		window:CreateLineBackground2 (frame2, "DeathLogLimitDropdown", "DeathLogLimitLabel", Loc ["STRING_OPTIONS_DEATHLIMIT_DESC"])
 
+	--> damage taken always on everything
+		g:NewLabel (frame2, _, "$parentDamageTakenEverythingLabel", "DamageTakenEverythingLabel", Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING"], "GameFontHighlightLeft")
+		g:NewSwitch (frame2, _, "$parentDamageTakenEverythingSlider", "DamageTakenEverythingSlider", 60, 20, _, _, _detalhes.damage_taken_everything, nil, nil, nil, nil, options_switch_template)
+
+		frame2.DamageTakenEverythingSlider:SetPoint ("left", frame2.DamageTakenEverythingLabel, "right", 2)
+		frame2.DamageTakenEverythingSlider:SetAsCheckBox()
+		frame2.DamageTakenEverythingSlider.OnSwitch = function (_, _, value)
+			_detalhes.damage_taken_everything = value
+			_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+		end
+		
+		window:CreateLineBackground2 (frame2, "DamageTakenEverythingSlider", "DamageTakenEverythingLabel", Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING_DESC"])		
+		
+	--> deathlog healing done threshold
+		g:NewLabel (frame2, _, "$parentDeathLogHealingThresholdLabel", "DeathLogHealingThresholdLabel", Loc ["STRING_OPTIONS_DEATHLOG_MINHEALING"], "GameFontHighlightLeft")
+		
+		local s = g:NewSlider (frame2, _, "$parentDeathLogHealingThresholdSlider", "DeathLogHealingThresholdSlider", SLIDER_WIDTH, SLIDER_HEIGHT, 0, 100000, 1, _detalhes.deathlog_healingdone_min, nil, nil, nil, options_slider_template)
+		
+		frame2.DeathLogHealingThresholdSlider:SetPoint ("left", frame2.DeathLogHealingThresholdLabel, "right", 2, -1)
+		frame2.DeathLogHealingThresholdSlider:SetHook ("OnValueChange", function (self, _, amount) --> slider, fixedValue, sliderValue
+			_detalhes.deathlog_healingdone_min = amount
+			_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+		end)
+		
+		window:CreateLineBackground2 (frame2, "DeathLogHealingThresholdSlider", "DeathLogHealingThresholdLabel", Loc ["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"])
+		
+	--> always show players
+		g:NewLabel (frame2, _, "$parentAlwaysShowPlayersLabel", "AlwaysShowPlayersLabel", Loc ["STRING_OPTIONS_ALWAYSSHOWPLAYERS"], "GameFontHighlightLeft")
+		--
+		g:NewSwitch (frame2, _, "$parentAlwaysShowPlayersSlider", "AlwaysShowPlayersSlider", 60, 20, _, _, _detalhes.all_players_are_group, nil, nil, nil, nil, options_switch_template)
+		frame2.AlwaysShowPlayersSlider:SetPoint ("left", frame2.AlwaysShowPlayersLabel, "right", 2, 0)
+		frame2.AlwaysShowPlayersSlider:SetAsCheckBox()
+		frame2.AlwaysShowPlayersSlider.OnSwitch = function (self, _, amount) --> slider, fixedValue, sliderValue
+			_detalhes.all_players_are_group = amount
+			_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+		end
+		
+		window:CreateLineBackground2 (frame2, "AlwaysShowPlayersSlider", "AlwaysShowPlayersLabel", Loc ["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"])
+	
 	--> Overall Data
 		g:NewLabel (frame2, _, "$parentOverallDataAnchor", "OverallDataLabel", Loc ["STRING_OPTIONS_OVERALL_ANCHOR"], "GameFontNormal")
 		
@@ -4486,18 +4525,7 @@ function window:CreateFrame2()
 		
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-		--> damage taken always on everything
-		g:NewLabel (frame2, _, "$parentDamageTakenEverythingLabel", "DamageTakenEverythingLabel", Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING"], "GameFontHighlightLeft")
-		g:NewSwitch (frame2, _, "$parentDamageTakenEverythingSlider", "DamageTakenEverythingSlider", 60, 20, _, _, _detalhes.damage_taken_everything, nil, nil, nil, nil, options_switch_template)
 
-		frame2.DamageTakenEverythingSlider:SetPoint ("left", frame2.DamageTakenEverythingLabel, "right", 2)
-		frame2.DamageTakenEverythingSlider:SetAsCheckBox()
-		frame2.DamageTakenEverythingSlider.OnSwitch = function (_, _, value)
-			_detalhes.damage_taken_everything = value
-			_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
-		end
-		
-		window:CreateLineBackground2 (frame2, "DamageTakenEverythingSlider", "DamageTakenEverythingLabel", Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING_DESC"])
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -4516,11 +4544,11 @@ function window:CreateFrame2()
 
 		local left_side = {
 			{"GeneralAnchorLabel", 1, true},
-			{"fragsPvpLabel", 2},
-			--{"EraseChartDataLabel", 3},
-			--{"timetypeLabel", 4, true},
-			{"DeathLogLimitLabel", 5, },
-			{"DamageTakenEverythingLabel", 6, true},
+			{"fragsPvpLabel"},
+			{"DeathLogLimitLabel"},
+			{"DeathLogHealingThresholdLabel"},
+			{"DamageTakenEverythingLabel"},
+			{"AlwaysShowPlayersLabel"},
 			
 			{"BattlegroundAnchorLabel", 10, true},
 			{"RemoteParserLabel", 11},
@@ -10989,6 +11017,12 @@ end --> if not window
 		--damage taken advanced
 		_G.DetailsOptionsWindow2DamageTakenEverythingSlider.MyObject:SetValue (_detalhes.damage_taken_everything)
 		
+		--healing done mim on death log
+		_G.DetailsOptionsWindow2DeathLogHealingThresholdSlider.MyObject:SetValue (_detalhes.deathlog_healingdone_min)
+		
+		--always show all players (consider they as in group)
+		_G.DetailsOptionsWindow2AlwaysShowPlayersSlider.MyObject:SetValue (_detalhes.all_players_are_group)
+
 		--> window 3
 		
 		local skin = editing_instance.skin

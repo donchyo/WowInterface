@@ -1,7 +1,7 @@
-changeset:   186:50835119fc79
-tag:         v7.2.5.186-release
+changeset:   218:8cee53478c4a
+tag:         v7.3.0.218-RC4
 user:        Tercio
-date:        Thu Aug 17 11:12:27 2017 -0300
-summary:     - middle click on the icon on the quest tracker won't popup the group finder if the auto open is disabled.
+date:        Mon Sep 04 13:14:30 2017 -0300
+summary:     - Fixed comm spam when selecting and deselecting a rare.
 
 
