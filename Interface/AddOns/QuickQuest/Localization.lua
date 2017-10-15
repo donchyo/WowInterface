@@ -18,145 +18,137 @@ L['disable'] = string.lower(DISABLE)
 
 local locale = GetLocale()
 if(locale == 'deDE') then
---Translation missing 
--- L["Always accept and complete Nomi's daily quest, despite being low-level"] = ""
---Translation missing 
--- L["Automatically pay Darkmoon Faire teleporting fees"] = ""
---Translation missing 
--- L["Automatically select single gossip options"] = ""
---Translation missing 
--- L["Automatically share quests when picked up"] = ""
---Translation missing 
--- L["Disable while doing the withered training scenario in Suramar"] = ""
---Translation missing 
--- L["Drag items into the window below to add more."] = ""
+	L["Always accept and complete Nomi's daily quest, despite being low-level"] = "Nomis tägliche Quests immer akzeptieren (trotz niedrigem Level)"
+L["Automatically pay Darkmoon Faire teleporting fees"] = "Dunkelmond-Jahrmarkt Teleport-Gebühr automatisch bezahlen"
+L["Automatically select single gossip options"] = "Einzeloptionen in Dialogen automatisch auswählen"
+L["Automatically share quests when picked up"] = "Quests beim Annehmen automatisch teilen"
+L["Disable while doing the withered training scenario in Suramar"] = "Für Ausbildung der Verdorrtenarmee in Suramar deaktivieren"
+L["Drag items into the window below to add more."] = "Items zum Hinzufügen ins Fenster unten ziehen."
 L["Hold this key to to temporarily %s automation"] = "Halte diese Taste, um die Automatisierung vorübergehend zu %s "
-L["Only select gossip option while not in a raid"] = "In Raidgruppe nicht autom. reden"
---Translation missing 
--- L["Quests starting with and/or containing these items will not be automated."] = ""
+L["Only select gossip option while not in a raid"] = "Dialoge in Raids nicht automatisieren"
+L["Quests starting with and/or containing these items will not be automated."] = "Quests beginnend mit/enthaltend dieser Einträge werden nicht automatisiert"
 L["Reverse the behaviour of the modifier key"] = "Verhalten der Moditfikatortaste umkehren"
 L["Right-click to remove item"] = "Rechtsklick, um Gegenstand zu entfernen"
---Translation missing 
--- L["Soloing"] = ""
+L["Soloing"] = "Ohne Gruppe"
 L["The Collapse"] = "Der Kollaps"
 --Translation missing 
--- L["When to select gossip while in a raid"] = ""
+L["When to select gossip while in a raid"] = "When to select gossip while in a raid"
 
 elseif(locale == 'esES') then
+	--Translation missing 
+L["Always accept and complete Nomi's daily quest, despite being low-level"] = "Always accept and complete Nomi's daily quest, despite being low-level"
 --Translation missing 
--- L["Always accept and complete Nomi's daily quest, despite being low-level"] = ""
+L["Automatically pay Darkmoon Faire teleporting fees"] = "Automatically pay Darkmoon Faire teleporting fees"
 --Translation missing 
--- L["Automatically pay Darkmoon Faire teleporting fees"] = ""
+L["Automatically select single gossip options"] = "Automatically select single gossip options"
 --Translation missing 
--- L["Automatically select single gossip options"] = ""
+L["Automatically share quests when picked up"] = "Automatically share quests when picked up"
 --Translation missing 
--- L["Automatically share quests when picked up"] = ""
+L["Disable while doing the withered training scenario in Suramar"] = "Disable while doing the withered training scenario in Suramar"
 --Translation missing 
--- L["Disable while doing the withered training scenario in Suramar"] = ""
+L["Drag items into the window below to add more."] = "Drag items into the window below to add more."
 --Translation missing 
--- L["Drag items into the window below to add more."] = ""
+L["Hold this key to to temporarily %s automation"] = "Hold this key to to temporarily %s automation"
 --Translation missing 
--- L["Hold this key to to temporarily %s automation"] = ""
+L["Only select gossip option while not in a raid"] = "Only select gossip option while not in a raid"
 --Translation missing 
--- L["Only select gossip option while not in a raid"] = ""
+L["Quests starting with and/or containing these items will not be automated."] = "Quests starting with and/or containing these items will not be automated."
 --Translation missing 
--- L["Quests starting with and/or containing these items will not be automated."] = ""
+L["Reverse the behaviour of the modifier key"] = "Reverse the behaviour of the modifier key"
 --Translation missing 
--- L["Reverse the behaviour of the modifier key"] = ""
+L["Right-click to remove item"] = "Right-click to remove item"
 --Translation missing 
--- L["Right-click to remove item"] = ""
---Translation missing 
--- L["Soloing"] = ""
+L["Soloing"] = "Soloing"
 L["The Collapse"] = "El Derrumbamiento"
 --Translation missing 
--- L["When to select gossip while in a raid"] = ""
+L["When to select gossip while in a raid"] = "When to select gossip while in a raid"
 
 elseif(locale == 'esMX') then
+	--Translation missing 
+L["Always accept and complete Nomi's daily quest, despite being low-level"] = "Always accept and complete Nomi's daily quest, despite being low-level"
 --Translation missing 
--- L["Always accept and complete Nomi's daily quest, despite being low-level"] = ""
+L["Automatically pay Darkmoon Faire teleporting fees"] = "Automatically pay Darkmoon Faire teleporting fees"
 --Translation missing 
--- L["Automatically pay Darkmoon Faire teleporting fees"] = ""
+L["Automatically select single gossip options"] = "Automatically select single gossip options"
 --Translation missing 
--- L["Automatically select single gossip options"] = ""
+L["Automatically share quests when picked up"] = "Automatically share quests when picked up"
 --Translation missing 
--- L["Automatically share quests when picked up"] = ""
+L["Disable while doing the withered training scenario in Suramar"] = "Disable while doing the withered training scenario in Suramar"
 --Translation missing 
--- L["Disable while doing the withered training scenario in Suramar"] = ""
+L["Drag items into the window below to add more."] = "Drag items into the window below to add more."
 --Translation missing 
--- L["Drag items into the window below to add more."] = ""
+L["Hold this key to to temporarily %s automation"] = "Hold this key to to temporarily %s automation"
 --Translation missing 
--- L["Hold this key to to temporarily %s automation"] = ""
+L["Only select gossip option while not in a raid"] = "Only select gossip option while not in a raid"
 --Translation missing 
--- L["Only select gossip option while not in a raid"] = ""
+L["Quests starting with and/or containing these items will not be automated."] = "Quests starting with and/or containing these items will not be automated."
 --Translation missing 
--- L["Quests starting with and/or containing these items will not be automated."] = ""
+L["Reverse the behaviour of the modifier key"] = "Reverse the behaviour of the modifier key"
 --Translation missing 
--- L["Reverse the behaviour of the modifier key"] = ""
+L["Right-click to remove item"] = "Right-click to remove item"
 --Translation missing 
--- L["Right-click to remove item"] = ""
---Translation missing 
--- L["Soloing"] = ""
+L["Soloing"] = "Soloing"
 L["The Collapse"] = "El Derrumbamiento"
 --Translation missing 
--- L["When to select gossip while in a raid"] = ""
+L["When to select gossip while in a raid"] = "When to select gossip while in a raid"
 
 elseif(locale == 'frFR') then
---Translation missing 
--- L["Always accept and complete Nomi's daily quest, despite being low-level"] = ""
+	--Translation missing 
+L["Always accept and complete Nomi's daily quest, despite being low-level"] = "Always accept and complete Nomi's daily quest, despite being low-level"
 L["Automatically pay Darkmoon Faire teleporting fees"] = "Payer automatiquement pour aller à la foire de Sombrelune"
 --Translation missing 
--- L["Automatically select single gossip options"] = ""
+L["Automatically select single gossip options"] = "Automatically select single gossip options"
 L["Automatically share quests when picked up"] = "Partager automatiquement les quêtes quand elles sont acceptée"
 --Translation missing 
--- L["Disable while doing the withered training scenario in Suramar"] = ""
+L["Disable while doing the withered training scenario in Suramar"] = "Disable while doing the withered training scenario in Suramar"
 --Translation missing 
--- L["Drag items into the window below to add more."] = ""
+L["Drag items into the window below to add more."] = "Drag items into the window below to add more."
 --Translation missing 
--- L["Hold this key to to temporarily %s automation"] = ""
+L["Hold this key to to temporarily %s automation"] = "Hold this key to to temporarily %s automation"
 L["Only select gossip option while not in a raid"] = "Ne pas sélectionner le dialogue en raid"
 --Translation missing 
--- L["Quests starting with and/or containing these items will not be automated."] = ""
+L["Quests starting with and/or containing these items will not be automated."] = "Quests starting with and/or containing these items will not be automated."
 L["Reverse the behaviour of the modifier key"] = "Inverser le comportement du modificateur"
 --Translation missing 
--- L["Right-click to remove item"] = ""
+L["Right-click to remove item"] = "Right-click to remove item"
 --Translation missing 
--- L["Soloing"] = ""
+L["Soloing"] = "Soloing"
 L["The Collapse"] = "L’Effondrement"
 --Translation missing 
--- L["When to select gossip while in a raid"] = ""
+L["When to select gossip while in a raid"] = "When to select gossip while in a raid"
 
 elseif(locale == 'itIT') then
+	--Translation missing 
+L["Always accept and complete Nomi's daily quest, despite being low-level"] = "Always accept and complete Nomi's daily quest, despite being low-level"
 --Translation missing 
--- L["Always accept and complete Nomi's daily quest, despite being low-level"] = ""
+L["Automatically pay Darkmoon Faire teleporting fees"] = "Automatically pay Darkmoon Faire teleporting fees"
 --Translation missing 
--- L["Automatically pay Darkmoon Faire teleporting fees"] = ""
+L["Automatically select single gossip options"] = "Automatically select single gossip options"
 --Translation missing 
--- L["Automatically select single gossip options"] = ""
+L["Automatically share quests when picked up"] = "Automatically share quests when picked up"
 --Translation missing 
--- L["Automatically share quests when picked up"] = ""
+L["Disable while doing the withered training scenario in Suramar"] = "Disable while doing the withered training scenario in Suramar"
 --Translation missing 
--- L["Disable while doing the withered training scenario in Suramar"] = ""
+L["Drag items into the window below to add more."] = "Drag items into the window below to add more."
 --Translation missing 
--- L["Drag items into the window below to add more."] = ""
+L["Hold this key to to temporarily %s automation"] = "Hold this key to to temporarily %s automation"
 --Translation missing 
--- L["Hold this key to to temporarily %s automation"] = ""
+L["Only select gossip option while not in a raid"] = "Only select gossip option while not in a raid"
 --Translation missing 
--- L["Only select gossip option while not in a raid"] = ""
+L["Quests starting with and/or containing these items will not be automated."] = "Quests starting with and/or containing these items will not be automated."
 --Translation missing 
--- L["Quests starting with and/or containing these items will not be automated."] = ""
+L["Reverse the behaviour of the modifier key"] = "Reverse the behaviour of the modifier key"
 --Translation missing 
--- L["Reverse the behaviour of the modifier key"] = ""
+L["Right-click to remove item"] = "Right-click to remove item"
 --Translation missing 
--- L["Right-click to remove item"] = ""
+L["Soloing"] = "Soloing"
 --Translation missing 
--- L["Soloing"] = ""
+L["The Collapse"] = "The Collapse"
 --Translation missing 
--- L["The Collapse"] = ""
---Translation missing 
--- L["When to select gossip while in a raid"] = ""
+L["When to select gossip while in a raid"] = "When to select gossip while in a raid"
 
 elseif(locale == 'koKR') then
-L["Always accept and complete Nomi's daily quest, despite being low-level"] = "노미의 일일 퀘스트는 퀘스트 레벨이 낮더라도 항상 자동으로 수락/완료"
+	L["Always accept and complete Nomi's daily quest, despite being low-level"] = "노미의 일일 퀘스트는 퀘스트 레벨이 낮더라도 항상 자동으로 수락/완료"
 L["Automatically pay Darkmoon Faire teleporting fees"] = "다크문 축제 순간이동 비용을 자동으로 지불"
 L["Automatically select single gossip options"] = "대화 목록이 하나 뿐이면 자동 선택"
 L["Automatically share quests when picked up"] = "자동으로 퀘스트 공유"
@@ -172,7 +164,7 @@ L["The Collapse"] = "붕괴지"
 L["When to select gossip while in a raid"] = "공격대 상태에서 대화 자동 선택"
 
 elseif(locale == 'ptBR') then
-L["Always accept and complete Nomi's daily quest, despite being low-level"] = "Sempre aceitar e completar as missões diárias de Nomi, apesar de serem de nível baixo."
+	L["Always accept and complete Nomi's daily quest, despite being low-level"] = "Sempre aceitar e completar as missões diárias de Nomi, apesar de serem de nível baixo."
 L["Automatically pay Darkmoon Faire teleporting fees"] = "Pagar automaticamente as taxas de teletransporte de Darkmoon Faire"
 L["Automatically select single gossip options"] = [=[
 Selecionar automaticamente opções simples de conversas fúteis]=]
@@ -189,34 +181,34 @@ L["The Collapse"] = "O Desmoronamento"
 L["When to select gossip while in a raid"] = "Quando selecionar conversas fúteis durante uma raid"
 
 elseif(locale == 'ruRU') then
+	--Translation missing 
+L["Always accept and complete Nomi's daily quest, despite being low-level"] = "Always accept and complete Nomi's daily quest, despite being low-level"
 --Translation missing 
--- L["Always accept and complete Nomi's daily quest, despite being low-level"] = ""
+L["Automatically pay Darkmoon Faire teleporting fees"] = "Automatically pay Darkmoon Faire teleporting fees"
 --Translation missing 
--- L["Automatically pay Darkmoon Faire teleporting fees"] = ""
+L["Automatically select single gossip options"] = "Automatically select single gossip options"
 --Translation missing 
--- L["Automatically select single gossip options"] = ""
+L["Automatically share quests when picked up"] = "Automatically share quests when picked up"
 --Translation missing 
--- L["Automatically share quests when picked up"] = ""
+L["Disable while doing the withered training scenario in Suramar"] = "Disable while doing the withered training scenario in Suramar"
 --Translation missing 
--- L["Disable while doing the withered training scenario in Suramar"] = ""
+L["Drag items into the window below to add more."] = "Drag items into the window below to add more."
 --Translation missing 
--- L["Drag items into the window below to add more."] = ""
---Translation missing 
--- L["Hold this key to to temporarily %s automation"] = ""
+L["Hold this key to to temporarily %s automation"] = "Hold this key to to temporarily %s automation"
 L["Only select gossip option while not in a raid"] = "Выбрать опцию всегда, исключением является Рейд."
 --Translation missing 
--- L["Quests starting with and/or containing these items will not be automated."] = ""
+L["Quests starting with and/or containing these items will not be automated."] = "Quests starting with and/or containing these items will not be automated."
 L["Reverse the behaviour of the modifier key"] = "Обратный поворот ключа модификатора"
 --Translation missing 
--- L["Right-click to remove item"] = ""
+L["Right-click to remove item"] = "Right-click to remove item"
 --Translation missing 
--- L["Soloing"] = ""
+L["Soloing"] = "Soloing"
 L["The Collapse"] = "Обрушенный проход"
 --Translation missing 
--- L["When to select gossip while in a raid"] = ""
+L["When to select gossip while in a raid"] = "When to select gossip while in a raid"
 
 elseif(locale == 'zhCN') then
-L["Always accept and complete Nomi's daily quest, despite being low-level"] = "总是接受并完成糯米的每日任务，儘管是低级别。"
+	L["Always accept and complete Nomi's daily quest, despite being low-level"] = "总是接受并完成糯米的每日任务，儘管是低级别。"
 L["Automatically pay Darkmoon Faire teleporting fees"] = "自动支付暗月马戏团传送费。"
 L["Automatically select single gossip options"] = "自动选择单一对话选项。"
 L["Automatically share quests when picked up"] = "拾取后自动分享任务。"
@@ -232,7 +224,7 @@ L["The Collapse"] = "崩塌遗迹"
 L["When to select gossip while in a raid"] = "在团队中启用自动选择对话选项的功能"
 
 elseif(locale == 'zhTW') then
-L["Always accept and complete Nomi's daily quest, despite being low-level"] = "總是接受並完成糯米的每日任務，儘管是低級別。"
+	L["Always accept and complete Nomi's daily quest, despite being low-level"] = "總是接受並完成糯米的每日任務，儘管是低級別。"
 L["Automatically pay Darkmoon Faire teleporting fees"] = "自動支付暗月馬戲團傳送費。"
 L["Automatically select single gossip options"] = "自動選擇單一對話選項。"
 L["Automatically share quests when picked up"] = "拾取後自動分享任務。"

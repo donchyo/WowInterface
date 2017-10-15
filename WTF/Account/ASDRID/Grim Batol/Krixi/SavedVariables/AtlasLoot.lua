@@ -14,7 +14,7 @@ AtlasLootCharDB = {
 		["selected"] = {
 			"AtlasLoot_WrathoftheLichKing", -- [1]
 			"Naxxramas", -- [2]
-			3, -- [3]
+			nil, -- [3]
 			1, -- [4]
 			0, -- [5]
 		},

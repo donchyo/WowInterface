@@ -3182,6 +3182,26 @@ function _detalhes:envia_relatorio (linhas, custom)
 				end
 			end
 			
+			local isMythicDungeon = _detalhes.tabela_vigente:IsMythicDungeon()
+			if (isMythicDungeon) then
+				local mythicDungeonInfo = _detalhes.tabela_vigente:GetMythicDungeonInfo()
+				if (mythicDungeonInfo) then
+					local isMythicOverallSegment, segmentID, mythicLevel, EJID, mapID, zoneName, encounterID, encounterName, startedAt, endedAt, runID = _detalhes:UnpackMythicDungeonInfo (mythicDungeonInfo)
+					
+					if (isMythicOverallSegment) then
+						luta = zoneName .. " +" .. mythicLevel .. " (" .. Loc ["STRING_SEGMENTS_LIST_OVERALL"] .. ")"
+					else
+						if (segmentID == "trashoverall") then
+							luta = encounterName .. " (" .. Loc ["STRING_SEGMENTS_LIST_TRASH"] .. ")"
+						else
+							luta = encounterName .. " (" .. Loc ["STRING_SEGMENTS_LIST_BOSS"] .. ")"
+						end
+					end
+				else
+					luta = Loc ["STRING_SEGMENTS_LIST_TRASH"]
+				end
+			end
+			
 			if (not luta) then
 				if (_detalhes.tabela_vigente.enemy) then
 					luta = _detalhes.tabela_vigente.enemy
@@ -3210,6 +3230,27 @@ function _detalhes:envia_relatorio (linhas, custom)
 					end
 				end
 				
+				local thisSegment = _detalhes.tabela_historico.tabelas[1]
+				local isMythicDungeon = thisSegment:IsMythicDungeon()
+				if (isMythicDungeon) then
+					local mythicDungeonInfo = thisSegment:GetMythicDungeonInfo()
+					if (mythicDungeonInfo) then
+						local isMythicOverallSegment, segmentID, mythicLevel, EJID, mapID, zoneName, encounterID, encounterName, startedAt, endedAt, runID = _detalhes:UnpackMythicDungeonInfo (mythicDungeonInfo)
+						
+						if (isMythicOverallSegment) then
+							luta = zoneName .. " +" .. mythicLevel .. " (" .. Loc ["STRING_SEGMENTS_LIST_OVERALL"] .. ")"
+						else
+							if (segmentID == "trashoverall") then
+								luta = encounterName .. " (" .. Loc ["STRING_SEGMENTS_LIST_TRASH"] .. ")"
+							else
+								luta = encounterName .. " (" .. Loc ["STRING_SEGMENTS_LIST_BOSS"] .. ")"
+							end
+						end
+					else
+						luta = Loc ["STRING_SEGMENTS_LIST_TRASH"]
+					end
+				end
+				
 				if (not luta) then
 					if (_detalhes.tabela_historico.tabelas[1].enemy) then
 						luta = _detalhes.tabela_historico.tabelas[1].enemy .. " (" .. Loc ["STRING_REPORT_LASTFIGHT"]  .. ")"
@@ -3234,6 +3275,27 @@ function _detalhes:envia_relatorio (linhas, custom)
 					local battleground_name = _detalhes.tabela_historico.tabelas[segmento].is_pvp.name
 					if (battleground_name) then
 						luta = battleground_name .. " (" .. Loc ["STRING_REPORT_LASTFIGHT"]  .. ")"
+					end
+				end
+				
+				local thisSegment = _detalhes.tabela_historico.tabelas [segmento]
+				local isMythicDungeon = thisSegment:IsMythicDungeon()
+				if (isMythicDungeon) then
+					local mythicDungeonInfo = thisSegment:GetMythicDungeonInfo()
+					if (mythicDungeonInfo) then
+						local isMythicOverallSegment, segmentID, mythicLevel, EJID, mapID, zoneName, encounterID, encounterName, startedAt, endedAt, runID = _detalhes:UnpackMythicDungeonInfo (mythicDungeonInfo)
+						
+						if (isMythicOverallSegment) then
+							luta = zoneName .. " +" .. mythicLevel .. " (" .. Loc ["STRING_SEGMENTS_LIST_OVERALL"] .. ")"
+						else
+							if (segmentID == "trashoverall") then
+								luta = encounterName .. " (" .. Loc ["STRING_SEGMENTS_LIST_TRASH"] .. ")"
+							else
+								luta = encounterName .. " (" .. Loc ["STRING_SEGMENTS_LIST_BOSS"] .. ")"
+							end
+						end
+					else
+						luta = Loc ["STRING_SEGMENTS_LIST_TRASH"]
 					end
 				end
 				

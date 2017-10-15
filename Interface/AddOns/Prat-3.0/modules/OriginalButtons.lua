@@ -593,7 +593,7 @@ function module:OnModuleEnable()
 
     end
     self:ChatMenu(self.db.profile.chatmenu)
-        FriendsMicroButton:Hide()
+    QuickJoinToastButton:Hide()
 
     -- set OnUpdateInterval, if they are profiling, update less
 --    if GetCVar("scriptProfile") == "1" then
@@ -644,8 +644,8 @@ function module:ConfigureAllFrames()
         self:ButtonFrame(i, self.db.profile.buttonframe)
     end
     self:ChatMenu(self.db.profile.chatmenu)
-    
-    FriendsMicroButton:Hide()   
+
+    QuickJoinToastButton:Hide()
 end
 
 function module:ChatFrame_OnUpdateHook(this, elapsed)
@@ -691,13 +691,13 @@ do
 
 			local fade1 = anims[flash]:CreateAnimation("Alpha")
 			fade1:SetDuration(0.1)
-			fade1:SetChange(1)
+			fade1:SetToAlpha(1)
 			fade1:SetEndDelay(0.5)
 			fade1:SetOrder(1)
 
 			local fade2 = anims[flash]:CreateAnimation("Alpha")
 			fade2:SetDuration(0.1)
-			fade2:SetChange(-1)
+			fade2:SetToAlpha(-1)
 			fade2:SetEndDelay(0.5)
 			fade2:SetOrder(2)
 		end

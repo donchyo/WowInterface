@@ -4,7 +4,7 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 3,
-			["NextWeeklyReset"] = "2017-09-13",
+			["NextWeeklyReset"] = "2017-10-18",
 		},
 		["Characters"] = {
 			["Default.Aggra (Português).Greenzuriz"] = {
@@ -14,30 +14,22 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1428126130,
 			},
 			["Default.Grim Batol.Bawsie"] = {
-				["lastUpdate"] = 1504970091,
+				["lastUpdate"] = 1507828387,
 			},
 			["Default.Aggra (Português).Kroxidps"] = {
 				["lastUpdate"] = 1423512183,
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1505068257,
+				["lastUpdate"] = 1508032663,
 			},
 			["Default.Grim Batol.Krixidh"] = {
-				["lastUpdate"] = 1502732702,
+				["lastUpdate"] = 1507383249,
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["Contacts"] = {
-					["Kavick"] = {
-						["note"] = "",
-						["class"] = "Hunter",
-						["level"] = 110,
-					},
-				},
 				["DungeonIDs"] = {
-					["Tomb of Sargeras Heroic|880742351"] = "220120|1505065881|0|1",
-					["Tomb of Sargeras Normal|200785808"] = "220120|1505065881|0|1",
+					["Tomb of Sargeras Heroic|202682287"] = "234522|1508075475|0|1",
 				},
-				["lastUpdate"] = 1505065907,
+				["lastUpdate"] = 1508075939,
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
 				["lastUpdate"] = 1420506362,
@@ -46,10 +38,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1469117882,
 			},
 			["Default.Grim Batol.Krixikin"] = {
-				["DungeonIDs"] = {
-					["Tomb of Sargeras Heroic|262019440"] = "213964|1505072037|0|1",
-				},
-				["lastUpdate"] = 1505072385,
+				["lastUpdate"] = 1508029371,
 			},
 			["Default.Twisting Nether.Krixiyo"] = {
 				["lastUpdate"] = 1486164996,
@@ -57,8 +46,11 @@ DataStore_AgendaDB = {
 			["Default.Aggra (Português).Krixiswag"] = {
 				["lastUpdate"] = 1424602909,
 			},
-			["Default.Aggra (Português).Spacegoatx"] = {
-				["lastUpdate"] = 1461461819,
+			["Default.Grim Batol.Kriximonk"] = {
+				["DungeonIDs"] = {
+					["Tomb of Sargeras Normal|884130699"] = "237476|1508072520|0|1",
+				},
+				["lastUpdate"] = 1508074064,
 			},
 			["Default.Shattered Hand.Bawsi"] = {
 				["lastUpdate"] = 1424871492,
@@ -67,7 +59,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1486469508,
 			},
 			["Default.Grim Batol.Zolution"] = {
-				["lastUpdate"] = 1504970552,
+				["lastUpdate"] = 1507741828,
 			},
 			["Default.Aggra (Português).Bawsi"] = {
 				["lastUpdate"] = 1451199279,
@@ -76,7 +68,10 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1503633914,
 			},
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1504365687,
+				["DungeonIDs"] = {
+					["Tomb of Sargeras Heroic|236031223"] = "281524|1508028473|0|1",
+				},
+				["lastUpdate"] = 1508028469,
 			},
 			["Default.Shattered Hand.Donchyo"] = {
 				["lastUpdate"] = 1470839453,
@@ -102,60 +97,60 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1442247547,
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["DungeonIDs"] = {
-					["The Emerald Nightmare Mythic|881136656"] = "215612|1505070388|0|1",
-					["The Nighthold Heroic|881105175"] = "215612|1505070388|0|1",
-					["Tomb of Sargeras Heroic|200805371"] = "215612|1505070388|0|1",
+				["ChallengeMode"] = {
+					["weeklyBestLevel"] = 12,
+					["weeklyBestTime"] = 2609973,
 				},
-				["lastUpdate"] = 1505071152,
+				["lastUpdate"] = 1508032479,
 			},
 			["Default.Crushridge.Donch"] = {
 				["lastUpdate"] = 1424871553,
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1504612183,
+				["lastUpdate"] = 1508010268,
 			},
 			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1504345858,
+				["lastUpdate"] = 1506964328,
 			},
 			["Default.Blackmoore.Krixiyo"] = {
 				["lastUpdate"] = 1480934765,
 			},
-			["Default.Grim Batol.Namji"] = {
-				["lastUpdate"] = 1504970507,
+			["Default.Aggra (Português).Spacegoatx"] = {
+				["lastUpdate"] = 1461461819,
 			},
 		},
 	},
 	["profileKeys"] = {
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
+		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Donch - Crushridge"] = "Donch - Crushridge",
-		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
-		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
-		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
-		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",

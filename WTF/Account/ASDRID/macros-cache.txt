@@ -49,6 +49,11 @@ VER 3 0000000000000360 "chimera" "INV_MISC_QUESTIONMARK"
 /petattack [@pettarget,noexists]
 /cancelaura hand of protection
 END
+VER 3 000000000000038B "DUMB EYE" "INV_MISC_QUESTIONMARK"
+/target Tormenting Eye
+/CAST Judgment
+/targetlasttarget
+END
 VER 3 0000000000000383 "enchanting" "INV_Misc_QuestionMark"
 /run C_TradeSkillUI.CraftRecipe(TradeSkillFrame.DetailsFrame.selectedRecipeID)
 /use Enchanting Vellum
@@ -69,6 +74,9 @@ VER 3 000000000000036D "engi mod" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000367 "extra " "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /click ExtraActionButton1
+END
+VER 3 000000000000038A "feather self" "INV_MISC_QUESTIONMARK"
+/cast [@player] angelic feather
 END
 VER 3 000000000000008F "focus1" "ABILITY_SEAL"
 /target [nomod, @player]
@@ -117,10 +125,10 @@ END
 VER 3 0000000000000092 "mount" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 /dismount
 /use [mod:alt]Azure Water Strider
---/use [swimming,nomod] Fathom Dweller
+/use [mod:ctrl]magic rooster
 /use [mod:shift]grand expedition yak
 /use [flyable, nomounted]INVINCIBLE
-/use [noflyable, nomounted] magic rooster
+/use [noflyable, nomounted] swift spectral tiger
 --swift spectral tiger
 /script VehicleExit()
 END

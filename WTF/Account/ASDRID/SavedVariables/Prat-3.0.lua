@@ -29,7 +29,7 @@ Prat3DB = {
 		},
 		["Prat_Scroll"] = {
 		},
-		["Prat_Bubbles"] = {
+		["Prat_ChannelNames"] = {
 		},
 		["Prat_Paragraph"] = {
 		},
@@ -43,7 +43,7 @@ Prat3DB = {
 		},
 		["Prat_ChannelSticky"] = {
 		},
-		["Prat_Timestamps"] = {
+		["Prat_ChatLog"] = {
 		},
 		["Prat_History"] = {
 			["profiles"] = {
@@ -53,10 +53,21 @@ Prat3DB = {
 			},
 		},
 		["Prat_PopupMessage"] = {
+			["profiles"] = {
+				["Default"] = {
+					["nickname"] = {
+						"Krixi", -- [1]
+					},
+					["on"] = true,
+					["sinkoptions"] = {
+						["sink20OutputSink"] = "RaidWarning",
+					},
+				},
+			},
 		},
 		["Prat_CopyChat"] = {
 		},
-		["Prat_ChatLog"] = {
+		["Prat_Timestamps"] = {
 		},
 		["Prat_Search"] = {
 		},
@@ -64,7 +75,7 @@ Prat3DB = {
 		},
 		["Prat_ServerNames"] = {
 		},
-		["Prat_ChannelNames"] = {
+		["Prat_Bubbles"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -72,23 +83,22 @@ Prat3DB = {
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Bawsi - Shattered Hand"] = "Default",
 		["Krixidk - Grim Batol"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
+		["Donchyo - Shattered Hand"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
 		["Krixicx - Shattered Hand"] = "Default",
-		["Donchyo - Shattered Hand"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["History"] = 2,
 				["AltNames"] = 2,
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["KeyBindings"] = 2,
-				["PopupMessage"] = 2,
 				["OriginalButtons"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 			},
 		},
 	},

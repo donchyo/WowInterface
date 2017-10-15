@@ -5,14 +5,14 @@ DataStoreDB = {
 			["Default.Shattered Hand.The Funky Bunch"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Grim Batol.Hoonigans"] = {
+			["Default.Grim Batol.Jupiter Mining Corp"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Grim Batol.Lunos"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Kazzak.K A M E L Å S Å"] = {
-				["faction"] = "Horde",
+			["Default.Grim Batol.Hoonigans"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Crushridge.The Bulls"] = {
 				["faction"] = "Alliance",
@@ -23,8 +23,8 @@ DataStoreDB = {
 			["Default.Crushridge.Proudly ADDICTED"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Jupiter Mining Corp"] = {
-				["faction"] = "Alliance",
+			["Default.Kazzak.K A M E L Å S Å"] = {
+				["faction"] = "Horde",
 			},
 		},
 		["Version"] = 1,
@@ -73,9 +73,9 @@ DataStoreDB = {
 			["Default.Aggra (Português).Krixiswag"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Aggra (Português).Spacegoatx"] = {
-				["guildName"] = "Hoonigans",
+			["Default.Grim Batol.Kriximonk"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Hoonigans",
 			},
 			["Default.Shattered Hand.Donch"] = {
 				["faction"] = "Alliance",
@@ -131,7 +131,7 @@ DataStoreDB = {
 			["Default.Blackmoore.Krixiyo"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Namji"] = {
+			["Default.Aggra (Português).Spacegoatx"] = {
 				["guildName"] = "Hoonigans",
 				["faction"] = "Alliance",
 			},
@@ -145,36 +145,37 @@ DataStoreDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
+		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Donch - Crushridge"] = "Donch - Crushridge",
-		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
-		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
-		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",
 	},

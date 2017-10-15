@@ -17,6 +17,7 @@ local strlower, strupper = strlower, strupper
 local strlen = strlen
 local type = type
 local next, wipe = next, wipe
+local select = select
 
 --local function RunOldMessageEventFilters(event, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12)
 --	local filter = false
@@ -463,7 +464,11 @@ function SplitChatMessage(frame, event, ...)
 
       if strlen(arg5) > 0 then
       -- TWO users in this notice (E.G. x kicked y)
-        s.MESSAGE = chatnotice:format(arg2, arg5)
+        if _G.GetLocale() == "koKR" then
+          s.MESSAGE = chatnotice:format("", "", arg2, arg5)
+        else
+          s.MESSAGE = chatnotice:format(arg2, arg5)
+        end
       elseif (arg1 == "INVITE") then
         s.MESSAGE = chatnotice:format(arg4, arg2)
       else
@@ -620,6 +625,28 @@ function SplitChatMessage(frame, event, ...)
       if strsub(type, 1, 11) == "ACHIEVEMENT" or strsub(type, 1, 18) == "GUILD_ACHIEVEMENT" then
         s.MESSAGE = s.MESSAGE:format("")
       end
+
+      if (strsub(type, 1, 18) == "GUILD_ACHIEVEMENT") then
+        if (_G.C_Social.IsSocialEnabled()) then
+          local achieveID = _G.GetAchievementInfoFromHyperlink(arg1);
+          if (achieveID) then
+            local isGuildAchievement = select(12, _G.GetAchievementInfo(achieveID));
+            if (isGuildAchievement) then
+              s.MESSAGE = s.MESSAGE .. " " .. _G.Social_GetShareAchievementLink(achieveID, true);
+            end
+          end
+        end
+      end
+
+      if (strsub(type, 1, 11) == "ACHIEVEMENT") then
+        if (arg12 == _G.UnitGUID("player") and _G.C_Social.IsSocialEnabled()) then
+          local achieveID = _G.GetAchievementInfoFromHyperlink(arg1);
+          if (achieveID) then
+            s.MESSAGE = s.MESSAGE .. " " .. _G.Social_GetShareAchievementLink(achieveID, true);
+          end
+        end
+      end
+
       local pl, p, rest = string.match(s.MESSAGE, "|Hplayer:(.-)|h%[(.-)%]|h(.+)")
       if pl and p then
         local plr, svr = pl:match("([^%-]+)%-?(.*)")

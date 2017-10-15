@@ -10,17 +10,18 @@ ChocolateBarDB = {
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
+		["Donch - Shattered Hand"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
-		["Donch - Shattered Hand"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
+		["Líttle - Grim Batol"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Spacegoatx - Aggra (Português)"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Default",
-		["Líttle - Grim Batol"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
 		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
@@ -29,15 +30,7 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barOffy"] = 1,
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["barOffx"] = -20.4444828033447,
-					["width"] = 210.999969482422,
-				},
-			},
+			["locked"] = false,
 			["background"] = {
 				["tileSize"] = 136,
 				["color"] = {
@@ -291,7 +284,15 @@ ChocolateBarDB = {
 			["combatdisbar"] = true,
 			["disableoptons"] = true,
 			["combathidetip"] = true,
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barOffy"] = 1,
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["barOffx"] = -20.4444828033447,
+					["width"] = 210.999969482422,
+				},
+			},
 		},
 		["Skullflower"] = {
 			["moduleOptions"] = {

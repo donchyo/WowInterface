@@ -4348,7 +4348,7 @@ function window:CreateFrame2()
 	--> Overall Data
 		g:NewLabel (frame2, _, "$parentOverallDataAnchor", "OverallDataLabel", Loc ["STRING_OPTIONS_OVERALL_ANCHOR"], "GameFontNormal")
 		
-		--raid boss
+	--raid boss
 		g:NewLabel (frame2, _, "$parentOverallDataRaidBossLabel", "OverallDataRaidBossLabel", Loc ["STRING_OPTIONS_OVERALL_RAIDBOSS"], "GameFontHighlightLeft")
 		--
 		g:NewSwitch (frame2, _, "$parentOverallDataRaidBossSlider", "OverallDataRaidBossSlider", 60, 20, _, _, false, nil, nil, nil, nil, options_switch_template)
@@ -4366,7 +4366,7 @@ function window:CreateFrame2()
 		--
 		window:CreateLineBackground2 (frame2, "OverallDataRaidBossSlider", "OverallDataRaidBossLabel", Loc ["STRING_OPTIONS_OVERALL_RAIDBOSS_DESC"])
 		
-		--raid cleanup
+	--raid cleanup
 		g:NewLabel (frame2, _, "$parentOverallDataRaidCleaupLabel", "OverallDataRaidCleaupLabel", Loc ["STRING_OPTIONS_OVERALL_RAIDCLEAN"], "GameFontHighlightLeft")
 		--
 		local raid_cleanup = g:NewSwitch (frame2, _, "$parentOverallDataRaidCleaupSlider", "OverallDataRaidCleaupSlider", 60, 20, _, _, false, nil, nil, nil, nil, options_switch_template)
@@ -4384,7 +4384,7 @@ function window:CreateFrame2()
 		--
 		window:CreateLineBackground2 (frame2, "OverallDataRaidCleaupSlider", "OverallDataRaidCleaupLabel", Loc ["STRING_OPTIONS_OVERALL_RAIDCLEAN_DESC"])
 		
-		--dungeon boss
+	--dungeon boss
 		g:NewLabel (frame2, _, "$parentOverallDataDungeonBossLabel", "OverallDataDungeonBossLabel", Loc ["STRING_OPTIONS_OVERALL_DUNGEONBOSS"], "GameFontHighlightLeft")
 		--
 		g:NewSwitch (frame2, _, "$parentOverallDataDungeonBossSlider", "OverallDataDungeonBossSlider", 60, 20, _, _, false, nil, nil, nil, nil, options_switch_template)
@@ -4402,7 +4402,7 @@ function window:CreateFrame2()
 		--
 		window:CreateLineBackground2 (frame2, "OverallDataDungeonBossSlider", "OverallDataDungeonBossLabel", Loc ["STRING_OPTIONS_OVERALL_DUNGEONBOSS_DESC"])
 		
-		--dungeon cleanup
+	--dungeon cleanup
 		g:NewLabel (frame2, _, "$parentOverallDataDungeonCleaupLabel", "OverallDataDungeonCleaupLabel", Loc ["STRING_OPTIONS_OVERALL_DUNGEONCLEAN"], "GameFontHighlightLeft")
 		--
 		g:NewSwitch (frame2, _, "$parentOverallDataDungeonCleaupSlider", "OverallDataDungeonCleaupSlider", 60, 20, _, _, false, nil, nil, nil, nil, options_switch_template)
@@ -4420,7 +4420,7 @@ function window:CreateFrame2()
 		--
 		window:CreateLineBackground2 (frame2, "OverallDataDungeonCleaupSlider", "OverallDataDungeonCleaupLabel", Loc ["STRING_OPTIONS_OVERALL_DUNGEONCLEAN_DESC"])
 		
-		--everything
+	--everything
 		g:NewLabel (frame2, _, "$parentOverallDataAllLabel", "OverallDataAllLabel", Loc ["STRING_OPTIONS_OVERALL_ALL"], "GameFontHighlightLeft")
 		--
 		g:NewSwitch (frame2, _, "$parentOverallDataAllSlider", "OverallDataAllSlider", 60, 20, _, _, false, nil, nil, nil, nil, options_switch_template)
@@ -4459,7 +4459,7 @@ function window:CreateFrame2()
 		--
 		window:CreateLineBackground2 (frame2, "OverallDataAllSlider", "OverallDataAllLabel", Loc ["STRING_OPTIONS_OVERALL_ALL_DESC"])
 		
-		--erase on new boss
+	--erase on new boss
 		g:NewLabel (frame2, _, "$parentOverallNewBossLabel", "OverallNewBossLabel", Loc ["STRING_OPTIONS_OVERALL_NEWBOSS"], "GameFontHighlightLeft")
 		--
 		g:NewSwitch (frame2, _, "$parentOverallNewBossSlider", "OverallNewBossSlider", 60, 20, _, _, false, nil, nil, nil, nil, options_switch_template)
@@ -4473,8 +4473,8 @@ function window:CreateFrame2()
 		--
 		window:CreateLineBackground2 (frame2, "OverallNewBossSlider", "OverallNewBossLabel", Loc ["STRING_OPTIONS_OVERALL_NEWBOSS_DESC"])
 
-		--erase on challenge mode
-		g:NewLabel (frame2, _, "$parentOverallNewChallengeLabel", "OverallNewChallengeLabel", Loc ["STRING_OPTIONS_OVERALL_CHALLENGE"], "GameFontHighlightLeft")
+	--erase on new mythic+ dungeon
+		g:NewLabel (frame2, _, "$parentOverallNewChallengeLabel", "OverallNewChallengeLabel", Loc ["STRING_OPTIONS_OVERALL_MYTHICPLUS"], "GameFontHighlightLeft")
 		--
 		g:NewSwitch (frame2, _, "$parentOverallNewChallengeSlider", "OverallNewChallengeSlider", 60, 20, _, _, false, nil, nil, nil, nil, options_switch_template)
 		frame2.OverallNewChallengeSlider:SetPoint ("left", frame2.OverallNewChallengeLabel, "right", 2, 0)
@@ -4485,9 +4485,9 @@ function window:CreateFrame2()
 			_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
 		end
 		--
-		window:CreateLineBackground2 (frame2, "OverallNewChallengeSlider", "OverallNewChallengeLabel", Loc ["STRING_OPTIONS_OVERALL_CHALLENGE_DESC"])
+		window:CreateLineBackground2 (frame2, "OverallNewChallengeSlider", "OverallNewChallengeLabel", Loc ["STRING_OPTIONS_OVERALL_MYTHICPLUS_DESC"])
 		
-		--erase on logout overall_clear_logout
+	--erase on logout overall_clear_logout
 		g:NewLabel (frame2, _, "$parentOverallOnLogoutLabel", "OverallOnLogoutLabel", Loc ["STRING_OPTIONS_OVERALL_LOGOFF"], "GameFontHighlightLeft")
 		--
 		g:NewSwitch (frame2, _, "$parentOverallOnLogoutSlider", "OverallOnLogoutSlider", 60, 20, _, _, false, nil, nil, nil, nil, options_switch_template)
@@ -4513,7 +4513,7 @@ function window:CreateFrame2()
 		end
 		window:CreateLineBackground2 (frame2, "RemoteParserSlider", "RemoteParserLabel", Loc ["STRING_OPTIONS_BG_REMOTE_PARSER_DESC"])
 		
-		--> show all
+	--> show all
 		g:NewLabel (frame2, _, "$parentShowAllLabel", "ShowAllLabel", Loc ["STRING_OPTIONS_BG_ALL_ALLY"], "GameFontHighlightLeft")
 		g:NewSwitch (frame2, _, "$parentShowAllSlider", "ShowAllSlider", 60, 20, _, _, _detalhes.pvp_as_group, nil, nil, nil, nil, options_switch_template)
 		frame2.ShowAllSlider:SetPoint ("left", frame2.ShowAllLabel, "right", 2)

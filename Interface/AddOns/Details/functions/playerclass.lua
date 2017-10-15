@@ -149,7 +149,7 @@ do
 		end
 		
 		local class = _detalhes:GetClass (Actor.nome)
-		if (class) then
+		if (class and class ~= "UNKNOW") then
 			Actor.classe = class
 			Actor.need_refresh = true
 			Actor.guessing_class = nil

@@ -15,6 +15,10 @@ VER 3 0100000000000008 "cleanse" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cleanse toxins
 END
+VER 3 0100000000000017 "cleanse" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cleanse
+END
 VER 3 010000000000000F "e prism" "INV_MISC_QUESTIONMARK"
 #showtooltip holy prism
 /cast [@target, harm] holy prism; [@targettarget, harm] holy prism; 
@@ -44,10 +48,6 @@ END
 VER 3 0100000000000001 "loh" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]lay on hands
-END
-VER 3 0100000000000011 "mana pot" "INV_MISC_QUESTIONMARK"
-/use [nomod] Draenic Channeled Mana Potion
-/use [mod:alt] Draenic Mana Potion
 END
 VER 3 0100000000000009 "prism self" "INV_MISC_QUESTIONMARK"
 #showtooltip

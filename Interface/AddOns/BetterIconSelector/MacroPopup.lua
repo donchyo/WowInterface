@@ -147,8 +147,8 @@ function MacroPopup:ReplaceMacroPopup()
 
 		-- (no altering needed)
 		popup:SetScript("OnHide", MacroPopupFrame_OnHide)
-		popup:SetScript("OnOkayClicked", function(...) PlaySound(SOUNDKIT.GS_TITLE_OPTIONS_OK); MacroPopupOkayButton_OnClick(...) end)
-		popup:SetScript("OnCancelClicked", function(...) PlaySound(SOUNDKIT.GS_TITLE_OPTIONS_OK); MacroPopupFrame_CancelEdit(...) end)
+		popup:SetScript("OnOkayClicked", function(...) PlaySound(PlaySoundKitID and "gsTitleOptionOK" or 798); MacroPopupOkayButton_OnClick(...) end)
+		popup:SetScript("OnCancelClicked", function(...) PlaySound(PlaySoundKitID and "gsTitleOptionOK" or 798); MacroPopupFrame_CancelEdit(...) end)
 
 		-- (no equivalent function)
 		popup.iconsFrame:SetScript("OnSelectedIconChanged", function(iconsFrame)

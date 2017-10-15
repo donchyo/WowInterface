@@ -1,8 +1,8 @@
-## Interface: 70200
+## Interface: 70300
 ## Title: Broker: Currency
 ## X-BrokerName: Currency
 ## Author: Torhal
-## Version:  7.2.5.2
+## Version:  7.3.0.3
 
 ## Notes: LDB display of currencies, gold totals and session / daily / weekly statistics for all characters on a server.
 ## Notes-deDE: LDB-Anzeige von Währungen, Summe des Goldes und Gold-Statistik pro Sitzung / Tag / Woche für alle Charaktere auf einem Server.

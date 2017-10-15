@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0213,
+	["LastVersion"] = 2.0214,
 	["LastPlayerFullName"] = "Krixi-Grim Batol",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
@@ -26,7 +26,7 @@ PawnOptions = {
 		[128823] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 42,
+					["ItemLevel"] = 55,
 					["Type"] = "Holy",
 				}, -- [1]
 				{

@@ -117,11 +117,11 @@ do
 		[171746] = 103, -- Claws of Shirvallah
 		[22570] = 103, -- Maim
 		[16974] = 103, -- Predatory Swiftness
-		[106785] = 103, -- Swipe
-		[1079] = 103, -- Rip
+		--[106785] = 103, -- Swipe
+		--[1079] = 103, -- Rip
 		[52610] = 103, -- Savage Roar
 		[5217] = 103, -- Tiger's Fury
-		[1822] = 103, -- Rake
+		--[1822] = 103, -- Rake
 		
 		-- Guardian Druid:
 		[155835] = 104, -- Bristling Fur
@@ -228,14 +228,14 @@ do
 		
 		-- Holy Paladin:
 		[156910] = 65, -- Beacon of Faith
-		[157007] = 65, -- Beacon of Insight
+		[157007] = 65, -- Beacon of Insight --nao existe mais
 		[85222] = 65, -- Light of Dawn
 		[31821] = 65, -- Devotion Aura
 		[82326] = 65, -- Holy Light
-		[148039] = 65, -- Sacred Shield
+		[148039] = 65, -- Sacred Shield --nao existe mais
 		[53563] = 65, -- Beacon of Light
-		[82327] = 65, -- Holy Radiance
-		[2812] = 65, -- Denounce
+		[82327] = 65, -- Holy Radiance --nao existe mais
+		[2812] = 65, -- Denounce --nao existe mais
 		[20473] = 65, -- Holy Shock
 		
 		-- Protection Paladin:

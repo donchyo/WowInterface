@@ -3,8 +3,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1501366823,
-				["lastVisitDate"] = "2017/07/30 00:20",
+				["lastUpdate"] = 1508009384,
+				["lastVisitDate"] = "2017/10/14 21:29",
 			},
 			["Default.Aggra (Português).Treefiddy"] = {
 				["lastUpdate"] = 1444761294,
@@ -45,36 +45,48 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/02/22 11:30",
 			},
 			["Default.Grim Batol.Zolution"] = {
-				["lastUpdate"] = 1504970544,
-				["lastVisitDate"] = "2017/09/09 17:22",
+				["lastUpdate"] = 1507148037,
+				["Mails"] = {
+					{
+						["lastCheck"] = 1507148037,
+						["sender"] = "Thaumaturge Vashreen",
+						["subject"] = "Lost Currency",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "We discovered some lost currency from Gate of the Setting Sun in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["icon"] = 134327,
+						["daysLeft"] = 19.1336002349854,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2017/10/04 22:13",
 			},
 			["Default.Aggra (Português).Kroxidps"] = {
 				["lastUpdate"] = 1423512245,
 				["lastVisitDate"] = "2015/02/09 21:04",
 			},
 			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1504969530,
+				["lastUpdate"] = 1507981291,
 				["Mails"] = {
 					{
-						["lastCheck"] = 1504969530,
+						["lastCheck"] = 1507981291,
 						["sender"] = "Thaumaturge Vashreen",
 						["subject"] = "Lost Currency",
 						["returned"] = false,
 						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 36 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 18 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
 						["icon"] = 134327,
-						["daysLeft"] = 28.1965160369873,
+						["daysLeft"] = 20.3422565460205,
 					}, -- [1]
 				},
-				["lastVisitDate"] = "2017/09/09 17:05",
+				["lastVisitDate"] = "2017/10/14 13:41",
 			},
 			["Default.Grim Batol.Krixidh"] = {
 				["lastUpdate"] = 1497557555,
 				["lastVisitDate"] = "2017/06/15 22:12",
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1504967463,
-				["lastVisitDate"] = "2017/09/09 16:31",
+				["lastUpdate"] = 1508071025,
+				["lastVisitDate"] = "2017/10/15 14:37",
 			},
 			["Default.Twisting Nether.Krixiyo"] = {
 				["lastUpdate"] = 1482549431,
@@ -103,7 +115,7 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2016/12/24 04:17",
 			},
 			["Default.Grim Batol.Krixikin"] = {
-				["lastUpdate"] = 1504979998,
+				["lastUpdate"] = 1507145952,
 				["Mails"] = {
 					{
 						["icon"] = 134327,
@@ -111,9 +123,9 @@ DataStore_MailsDB = {
 						["subject"] = "Lost Currency",
 						["returned"] = false,
 						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 18 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1504979998,
-						["daysLeft"] = 22.0061111450195,
+						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 13 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["lastCheck"] = 1507145952,
+						["daysLeft"] = 4.83215284347534,
 					}, -- [1]
 					{
 						["icon"] = 134327,
@@ -121,12 +133,32 @@ DataStore_MailsDB = {
 						["subject"] = "Lost Currency",
 						["returned"] = false,
 						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 13 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1504979998,
-						["daysLeft"] = 29.9012508392334,
+						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 16 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["lastCheck"] = 1507145952,
+						["daysLeft"] = 7.86319446563721,
 					}, -- [2]
+					{
+						["icon"] = 134327,
+						["sender"] = "Thaumaturge Vashreen",
+						["subject"] = "Lost Currency",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 17 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["lastCheck"] = 1507145952,
+						["daysLeft"] = 7.86422443389893,
+					}, -- [3]
+					{
+						["icon"] = 134327,
+						["sender"] = "Thaumaturge Vashreen",
+						["subject"] = "Lost Currency",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 11 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["lastCheck"] = 1507145952,
+						["daysLeft"] = 14.8754053115845,
+					}, -- [4]
 				},
-				["lastVisitDate"] = "2017/09/09 19:59",
+				["lastVisitDate"] = "2017/10/04 21:39",
 			},
 			["Default.Aggra (Português).Spacegoatx"] = {
 				["lastUpdate"] = 1447675398,
@@ -186,25 +218,68 @@ DataStore_MailsDB = {
 				},
 				["lastVisitDate"] = "2015/12/27 01:59",
 			},
-			["Default.Grim Batol.Bawsie"] = {
-				["lastUpdate"] = 1504305231,
+			["Default.Crushridge.Kroxi"] = {
+				["lastUpdate"] = 1507052194,
 				["Mails"] = {
 					{
-						["lastCheck"] = 1504305231,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Lost City of the Tol'vir in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 29.9785766601563,
+						["sender"] = "Krixidk",
+						["itemID"] = 133571,
+						["link"] = "|cffffffff|Hitem:133571::::::::110:250::::::|h[Azshari Salad]|h|r",
+						["count"] = 2,
+						["icon"] = 1387635,
+						["lastCheck"] = 1507052194,
+						["daysLeft"] = 30,
 					}, -- [1]
+					{
+						["sender"] = "Krixidk",
+						["itemID"] = 133571,
+						["link"] = "|cffffffff|Hitem:133571::::::::110:250::::::|h[Azshari Salad]|h|r",
+						["count"] = 2,
+						["icon"] = 1387635,
+						["lastCheck"] = 1507052194,
+						["daysLeft"] = 30,
+					}, -- [2]
+					{
+						["sender"] = "Krixidk",
+						["itemID"] = 142117,
+						["link"] = "|cffffffff|Hitem:142117::::::::110:250::::::|h[Potion of Prolonged Power]|h|r",
+						["count"] = 9,
+						["icon"] = 967532,
+						["lastCheck"] = 1507052194,
+						["daysLeft"] = 30,
+					}, -- [3]
+					{
+						["sender"] = "Krixidk",
+						["itemID"] = 127849,
+						["link"] = "|cffffffff|Hitem:127849::::::::110:250::::::|h[Flask of the Countless Armies]|h|r",
+						["count"] = 1,
+						["icon"] = 1385243,
+						["lastCheck"] = 1507052194,
+						["daysLeft"] = 30,
+					}, -- [4]
+					{
+						["sender"] = "Krixidk",
+						["itemID"] = 142117,
+						["link"] = "|cffffffff|Hitem:142117::::::::110:250::::::|h[Potion of Prolonged Power]|h|r",
+						["count"] = 9,
+						["icon"] = 967532,
+						["lastCheck"] = 1507052194,
+						["daysLeft"] = 30,
+					}, -- [5]
+					{
+						["sender"] = "Krixidk",
+						["itemID"] = 127849,
+						["link"] = "|cffffffff|Hitem:127849::::::::110:250::::::|h[Flask of the Countless Armies]|h|r",
+						["count"] = 1,
+						["icon"] = 1385243,
+						["lastCheck"] = 1507052194,
+						["daysLeft"] = 30,
+					}, -- [6]
 				},
-				["lastVisitDate"] = "2017/09/02 00:33",
 			},
-			["Default.Kazzak.Lilgaykrixi"] = {
-				["lastUpdate"] = 1456079516,
-				["lastVisitDate"] = "2016/02/21 19:31",
+			["Default.Grim Batol.Bawsie"] = {
+				["lastUpdate"] = 1507828397,
+				["lastVisitDate"] = "2017/10/12 19:13",
 			},
 			["Default.Aggra (Português).Greenzuriz"] = {
 				["lastUpdate"] = 1447675466,
@@ -222,6 +297,10 @@ DataStore_MailsDB = {
 				},
 				["lastVisitDate"] = "2015/11/16 13:04",
 			},
+			["Default.Shattered Hand.Bawsi"] = {
+				["lastUpdate"] = 1423512002,
+				["lastVisitDate"] = "2015/02/09 21:00",
+			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
 				["lastUpdate"] = 1465684636,
 				["lastVisitDate"] = "2016/06/12 00:37",
@@ -231,28 +310,62 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2017/08/18 18:06",
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1504980713,
-				["lastVisitDate"] = "2017/09/09 20:11",
+				["lastUpdate"] = 1508009260,
+				["Mails"] = {
+					{
+						["icon"] = 134327,
+						["sender"] = "Thaumaturge Vashreen",
+						["subject"] = "Lost Currency",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 41 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["lastCheck"] = 1508009260,
+						["daysLeft"] = 14.9219331741333,
+					}, -- [1]
+					{
+						["icon"] = 134327,
+						["sender"] = "Thaumaturge Vashreen",
+						["subject"] = "Lost Currency",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 20 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["lastCheck"] = 1508009260,
+						["daysLeft"] = 15.6766901016235,
+					}, -- [2]
+				},
+				["lastVisitDate"] = "2017/10/14 21:27",
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["lastUpdate"] = 1503632749,
 				["lastVisitDate"] = "2017/08/25 05:45",
 			},
 			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1504612166,
-				["lastVisitDate"] = "2017/09/05 13:49",
+				["lastUpdate"] = 1508010260,
+				["lastVisitDate"] = "2017/10/14 21:44",
 			},
-			["Default.Shattered Hand.Bawsi"] = {
-				["lastUpdate"] = 1423512002,
-				["lastVisitDate"] = "2015/02/09 21:00",
+			["Default.Kazzak.Lilgaykrixi"] = {
+				["lastUpdate"] = 1456079516,
+				["lastVisitDate"] = "2016/02/21 19:31",
 			},
 			["Default.Blackmoore.Krixiyo"] = {
 				["lastUpdate"] = 1480934753,
 				["lastVisitDate"] = "2016/12/05 11:45",
 			},
-			["Default.Grim Batol.Namji"] = {
-				["lastUpdate"] = 1504970500,
-				["lastVisitDate"] = "2017/09/09 17:21",
+			["Default.Grim Batol.Kriximonk"] = {
+				["lastUpdate"] = 1507929231,
+				["Mails"] = {
+					{
+						["icon"] = 134327,
+						["sender"] = "Thaumaturge Vashreen",
+						["subject"] = "Lost Currency",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["lastCheck"] = 1507929231,
+						["daysLeft"] = 29.908332824707,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2017/10/13 23:13",
 			},
 		},
 		["Options"] = {
@@ -262,35 +375,36 @@ DataStore_MailsDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
+		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Donch - Crushridge"] = "Donch - Crushridge",
-		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
-		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
-		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
-		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",

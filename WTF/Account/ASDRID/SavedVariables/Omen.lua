@@ -14,13 +14,14 @@ Omen3DB = {
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Krixikin - Grim Batol"] = "Krixidk - Grim Batol",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Krixi - Grim Batol"] = "Krixidk - Grim Batol",
-		["Zolution - Grim Batol"] = "Krixidk - Grim Batol",
-		["Nyrith - Grim Batol"] = "Krixidk - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidk - Grim Batol",
-		["Zuriz - Grim Batol"] = "Krixidk - Grim Batol",
 		["Donch - Grim Batol"] = "Krixidk - Grim Batol",
+		["Zolution - Grim Batol"] = "Krixidk - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Krixidk - Grim Batol",
+		["Nyrith - Grim Batol"] = "Krixidk - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixidk - Grim Batol",
+		["Zuriz - Grim Batol"] = "Krixidk - Grim Batol",
 		["Zetiz - Grim Batol"] = "Krixidk - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidk - Grim Batol",
 	},
 	["profiles"] = {
 		["Krixiyo - Twisting Nether"] = {
@@ -38,22 +39,22 @@ Omen3DB = {
 			["PositionH"] = 82.0000076293945,
 		},
 		["Krixidk - Grim Batol"] = {
-			["PositionW"] = 189.555480957031,
+			["PositionW"] = 125.555572509766,
 			["NumBars"] = 4,
 			["Shown"] = false,
-			["PositionH"] = 70.0000762939453,
-			["VGrip2"] = 132.473745174096,
-			["PositionY"] = 70.0000762939453,
+			["PositionH"] = 46.2221755981445,
+			["VGrip2"] = 87.7464309334155,
+			["PositionY"] = 184.00016784668,
 			["ClickThrough"] = true,
 			["Locked"] = true,
 			["Background"] = {
-				["BorderColor"] = {
-					["a"] = 0,
-				},
+				["BorderTexture"] = "1 Pixel",
 				["Color"] = {
 					["a"] = 0,
 				},
-				["BorderTexture"] = "1 Pixel",
+				["BorderColor"] = {
+					["a"] = 0,
+				},
 				["Texture"] = "ElvUI Blank",
 			},
 			["MinimapIcon"] = {
@@ -62,8 +63,9 @@ Omen3DB = {
 			["ShowWith"] = {
 				["Alone"] = true,
 				["HideWhenOOC"] = true,
+				["UseShowWith"] = false,
 			},
-			["VGrip1"] = 140.625958359275,
+			["VGrip1"] = 93.1461998481366,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 			},
@@ -72,11 +74,12 @@ Omen3DB = {
 				["Flash"] = false,
 				["Sound"] = false,
 			},
-			["PositionX"] = 1316.83532714844,
+			["PositionX"] = 1343.77783203125,
 			["Bar"] = {
 				["FontSize"] = 11,
 				["ShowHeadings"] = false,
 				["ShowValue"] = false,
+				["ShowAggroBar"] = false,
 				["Texture"] = "Skullflower",
 				["ShowTPS"] = false,
 				["AnimateBars"] = false,
@@ -150,16 +153,11 @@ Omen3DB = {
 			["PositionX"] = 1430.61181640625,
 			["PositionH"] = 82.0000076293945,
 		},
-		["Lilgaykrixi - Kazzak"] = {
-			["Shown"] = false,
-			["PositionY"] = 555.000061035156,
-			["PositionX"] = 740.833374023438,
-		},
-		["Default"] = {
-			["Shown"] = false,
-			["PositionY"] = 521.000061035156,
-			["PositionX"] = 753.333435058594,
-			["PositionH"] = 82.0000686645508,
+		["Zolution - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 923.000183105469,
+			["PositionX"] = 0,
+			["PositionH"] = 82.0000305175781,
 		},
 		["Zetiz - Grim Batol"] = {
 			["Shown"] = true,
@@ -173,23 +171,37 @@ Omen3DB = {
 			["PositionX"] = 2.16646552085876,
 			["PositionH"] = 82.0000305175781,
 		},
+		["Kriximonk - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 555.000061035156,
+			["PositionX"] = 740.833374023438,
+		},
+		["Default"] = {
+			["Shown"] = false,
+			["PositionY"] = 521.000061035156,
+			["PositionX"] = 753.333435058594,
+			["PositionH"] = 82.0000686645508,
+		},
+		["Lilgaykrixi - Kazzak"] = {
+			["Shown"] = false,
+			["PositionY"] = 555.000061035156,
+			["PositionX"] = 740.833374023438,
+		},
 		["Zuriz - Grim Batol"] = {
 			["Shown"] = true,
 			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
 			["PositionH"] = 82.0000076293945,
 		},
-		["Zolution - Grim Batol"] = {
-			["Shown"] = true,
-			["PositionY"] = 923.000183105469,
-			["PositionX"] = 0,
-			["PositionH"] = 82.0000305175781,
-		},
 		["Gnomalock - Grim Batol"] = {
 			["Shown"] = true,
 			["PositionY"] = 358.555511474609,
 			["PositionX"] = 1488.38977050781,
 			["PositionH"] = 82.0000076293945,
+		},
+		["MONK"] = {
+			["PositionX"] = 753.333435058594,
+			["PositionY"] = 521.000061035156,
 		},
 	},
 }

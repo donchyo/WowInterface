@@ -12,13 +12,14 @@ NewOpenablesProfile = {
 		["Kroxi - Grim Batol"] = "Default",
 		["Namji - Grim Batol"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -44,7 +45,7 @@ NewOpenablesProfile = {
 				"UIParent", -- [2]
 				"TOPLEFT", -- [3]
 			},
-			["version"] = "|cFFFFFFFF08.04 01.09.2017 use |cFFFF00FF/nop|cFFFFFFFF",
+			["version"] = "|cFFFFFFFF08.08 04.10.2017 use |cFFFF00FF/nop|cFFFFFFFF",
 			["lockButton"] = true,
 		},
 	},

@@ -4111,10 +4111,15 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		if (_detalhes.debug) then
 			_detalhes:Msg ("(debug) |cFFFFFF00ENCOUNTER_START|r event triggered.")
 		end
-	
+		
 		_detalhes.latest_ENCOUNTER_END = _detalhes.latest_ENCOUNTER_END or 0
 		if (_detalhes.latest_ENCOUNTER_END + 10 > _GetTime()) then
 			return
+		end
+
+		--> leave the current combat when the encounter start, if is doing a mythic plus dungeons, check if the options alows to create a dedicated segment for the boss fight
+		if ((_in_combat and not _detalhes.tabela_vigente.is_boss) and (not _detalhes.MythicPlus.Started or _detalhes.mythic_plus.boss_dedicated_segment)) then
+			_detalhes:SairDoCombate()
 		end
 		
 		local encounterID, encounterName, difficultyID, raidSize = _select (1, ...)
@@ -4123,23 +4128,14 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			_detalhes.WhoAggroTimer = C_Timer.NewTimer (0.5, who_aggro)
 		end
 		
-		if (IsInGuild() and _detalhes.announce_damagerecord.enabled and _detalhes.StorageLoaded) then
+		if (IsInGuild() and IsInRaid() and _detalhes.announce_damagerecord.enabled and _detalhes.StorageLoaded) then
 			_detalhes.TellDamageRecord = C_Timer.NewTimer (0.6, _detalhes.PrintEncounterRecord)
 			_detalhes.TellDamageRecord.Boss = encounterID
 			_detalhes.TellDamageRecord.Diff = difficultyID
 		end
-	
-		--print ("START", encounterID, encounterName, difficultyID, raidSize)
-		
+
 		_current_encounter_id = encounterID
-	
-		if (_in_combat and not _detalhes.tabela_vigente.is_boss) then
-			_detalhes:SairDoCombate()
-			--_detalhes:Msg ("encounter against|cFFFFFF00", encounterName, "|rbegan, GL HF!")
-		else
-			--_detalhes:Msg ("encounter against|cFFFFC000", encounterName, "|rbegan, GL HF!")
-		end
-	
+		
 		local dbm_mod, dbm_time = _detalhes.encounter_table.DBM_Mod, _detalhes.encounter_table.DBM_ModTime
 		_table_wipe (_detalhes.encounter_table)
 		
@@ -4188,7 +4184,10 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			_detalhes.encounter_table.index = boss_index
 		end
 		
-		parser:Handle3rdPartyBuffs_OnEncounterStart()
+		if (not _detalhes.MythicPlus.Started or (_detalhes.MythicPlus.Started and not _in_combat)) then
+			parser:Handle3rdPartyBuffs_OnEncounterStart()
+		end
+		
 	end
 	
 	function _detalhes.parser_functions:ENCOUNTER_END (...)
@@ -4199,7 +4198,8 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		
 		_current_encounter_id = nil
 		
-		if (_detalhes.zone_type == "party") then
+		local _, instanceType = GetInstanceInfo() --> let's make sure it isn't a dungeon
+		if (_detalhes.zone_type == "party" or instanceType == "party") then
 			if (_detalhes.debug) then
 				_detalhes:Msg ("(debug) the zone type is 'party', ignoring ENCOUNTER_END.")
 			end
@@ -4252,7 +4252,6 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 	end
 
 	function _detalhes.parser_functions:PLAYER_REGEN_DISABLED (...)
-
 		if (not _detalhes:CaptureGet ("damage")) then
 			_detalhes:EntrarEmCombate()
 		end
@@ -4269,17 +4268,46 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			end
 		end
 	end
-
-	function _detalhes.parser_functions:PLAYER_REGEN_ENABLED (...)
 	
+	function _detalhes.parser_functions:PLAYER_REGEN_ENABLED (...)
+		
 		_detalhes.LatestCombatDone = GetTime()
 		
 		_current_encounter_id = nil
-	
+		
 		--> playing alone, just finish the combat right now
 		if (not _IsInGroup() and not IsInRaid()) then	
 			_detalhes.tabela_vigente.playing_solo = true
 			_detalhes:SairDoCombate()
+		end
+		
+		--> add segments to overall data if any scheduled
+		if (_detalhes.schedule_add_to_overall and #_detalhes.schedule_add_to_overall > 0) then
+			if (_detalhes.debug) then
+				_detalhes:Msg ("(debug) adding ", #_detalhes.schedule_add_to_overall, "combats in queue to overall data.")
+			end
+			
+			for i = #_detalhes.schedule_add_to_overall, 1, -1 do
+				local CombatToAdd = tremove (_detalhes.schedule_add_to_overall, i)
+				if (CombatToAdd) then
+					_detalhes.historico:adicionar_overall (CombatToAdd)
+				end
+			end
+		end
+		
+		if (_detalhes.schedule_mythicdungeon_trash_merge) then
+			_detalhes.schedule_mythicdungeon_trash_merge = nil
+			DetailsMythicPlusFrame.MergeTrashCleanup (true)
+		end
+		
+		if (_detalhes.schedule_mythicdungeon_endtrash_merge) then
+			_detalhes.schedule_mythicdungeon_endtrash_merge = nil
+			DetailsMythicPlusFrame.MergeRemainingTrashAfterAllBossesDone()
+		end
+		
+		if (_detalhes.schedule_mythicdungeon_overallrun_merge) then
+			_detalhes.schedule_mythicdungeon_overallrun_merge = nil
+			DetailsMythicPlusFrame.MergeSegmentsOnEnd()
 		end
 		
 		--> aqui, tentativa de fazer o timer da janela do Solo funcionar corretamente:
@@ -4298,26 +4326,13 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			_detalhes.schedule_flag_boss_components = false
 			_detalhes:FlagActorsOnBossFight()
 		end
-
+		
 		if (_detalhes.schedule_remove_overall) then
 			if (_detalhes.debug) then
 				_detalhes:Msg ("(debug) found schedule overall data clean up.")
 			end
 			_detalhes.schedule_remove_overall = false
 			_detalhes.tabela_historico:resetar_overall()
-		end
-		
-		if (_detalhes.schedule_add_to_overall and _detalhes.schedule_add_to_overall [1]) then
-			if (_detalhes.debug) then
-				_detalhes:Msg ("(debug) adding ", #_detalhes.schedule_add_to_overall, "combats in queue to overall data.")
-			end
-			
-			for i = #_detalhes.schedule_add_to_overall, 1, -1 do
-				local CombatToAdd = tremove (_detalhes.schedule_add_to_overall, i)
-				if (CombatToAdd) then
-					_detalhes.historico:adicionar_overall (CombatToAdd)
-				end
-			end
 		end
 		
 		if (_detalhes.schedule_store_boss_encounter) then
@@ -4427,14 +4442,6 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			_detalhes:Msg ("(debug) found a timer.")
 		end
 	
-		local name, groupType, _, difficult = GetInstanceInfo()
-		if (groupType == "party" and difficult == "Mythic Keystone" and _detalhes.overall_clear_newchallenge) then
-			_detalhes.historico:resetar_overall()
-			if (_detalhes.debug) then
-				_detalhes:Msg ("(debug) timer is for a mythic+ dungeon, overall has been reseted.")
-			end
-		end
-		
 		--if (C_Scenario.IsChallengeMode() and _detalhes.overall_clear_newchallenge) then
 --		if (_detalhes.overall_clear_newchallenge) then --C_Scenario.IsChallengeMode() and  parece que n�o existe mais
 --			_detalhes.historico:resetar_overall()

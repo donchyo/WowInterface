@@ -46,6 +46,15 @@ TidyPlatesThreatDB = {
 				["index"] = 2,
 			},
 		},
+		["Loverocket - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+		},
 		["Gnomalock - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
@@ -55,13 +64,13 @@ TidyPlatesThreatDB = {
 				["index"] = 1,
 			},
 		},
-		["Loverocket - Aggra (Português)"] = {
+		["Krixikin - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 256,
+				["id"] = 105,
 				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
+				["name"] = "Restoration",
+				["index"] = 4,
 			},
 		},
 		["Lovérockét - Aggra (Português)"] = {
@@ -72,15 +81,6 @@ TidyPlatesThreatDB = {
 				["index"] = 1,
 			},
 			["welcome"] = true,
-		},
-		["Krixikin - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 102,
-				["role"] = "DAMAGER",
-				["name"] = "Balance",
-				["index"] = 1,
-			},
 		},
 		["Greenzuriz - Aggra (Português)"] = {
 			["welcome"] = true,
@@ -100,6 +100,15 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
+		["Krixi - Grim Batol"] = {
+			["specInfo"] = {
+				["id"] = 66,
+				["role"] = "TANK",
+				["index"] = 2,
+				["name"] = "Protection",
+			},
+			["welcome"] = true,
+		},
 		["Nyrith - Grim Batol"] = {
 			["specInfo"] = {
 				["id"] = 105,
@@ -109,12 +118,12 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
-		["Krixi - Grim Batol"] = {
+		["Zetiz - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 65,
-				["role"] = "HEALER",
-				["index"] = 1,
-				["name"] = "Holy",
+				["id"] = 261,
+				["role"] = "DAMAGER",
+				["name"] = "Subtlety",
+				["index"] = 3,
 			},
 			["welcome"] = true,
 		},
@@ -145,14 +154,14 @@ TidyPlatesThreatDB = {
 				["index"] = 3,
 			},
 		},
-		["Zuriz - Grim Batol"] = {
-			["welcome"] = true,
+		["Krixidh - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 264,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 3,
+				["id"] = 581,
+				["role"] = "TANK",
+				["name"] = "Vengeance",
+				["index"] = 2,
 			},
+			["welcome"] = true,
 		},
 		["Loverócket - Aggra (Português)"] = {
 			["welcome"] = true,
@@ -163,14 +172,14 @@ TidyPlatesThreatDB = {
 				["index"] = 1,
 			},
 		},
-		["Krixidh - Grim Batol"] = {
-			["specInfo"] = {
-				["id"] = 581,
-				["role"] = "TANK",
-				["name"] = "Vengeance",
-				["index"] = 2,
-			},
+		["Donch - Grim Batol"] = {
 			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 64,
+				["role"] = "DAMAGER",
+				["name"] = "Frost",
+				["index"] = 3,
+			},
 		},
 		["Spacegoatx - Aggra (Português)"] = {
 			["specInfo"] = {
@@ -181,21 +190,12 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
-		["Donch - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 64,
-				["role"] = "DAMAGER",
-				["name"] = "Frost",
-				["index"] = 3,
-			},
-		},
 		["Zolution - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 258,
-				["role"] = "DAMAGER",
-				["name"] = "Shadow",
-				["index"] = 3,
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
 			},
 			["welcome"] = true,
 		},
@@ -208,12 +208,12 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
-		["Zetiz - Grim Batol"] = {
+		["Kriximonk - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 261,
-				["role"] = "DAMAGER",
-				["name"] = "Subtlety",
-				["index"] = 3,
+				["id"] = 268,
+				["role"] = "TANK",
+				["name"] = "Brewmaster",
+				["index"] = 1,
 			},
 			["welcome"] = true,
 		},
@@ -234,6 +234,15 @@ TidyPlatesThreatDB = {
 				["index"] = 1,
 			},
 			["welcome"] = true,
+		},
+		["Zuriz - Grim Batol"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 264,
+				["role"] = "HEALER",
+				["name"] = "Restoration",
+				["index"] = 3,
+			},
 		},
 		["Lóverocket - Aggra (Português)"] = {
 			["specInfo"] = {
@@ -260,172 +269,33 @@ TidyPlatesThreatDB = {
 		["Kroxi - Grim Batol"] = "Default",
 		["Namji - Grim Batol"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
 		["Loverocket - Aggra (Português)"] = "Default",
-		["Lovérockét - Aggra (Português)"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
+		["Lovérockét - Aggra (Português)"] = "Default",
 		["Greenzuriz - Aggra (Português)"] = "Default",
 		["Bawsi - Aggra (Português)"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
-		["Loverócket - Aggra (Português)"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
-		["Spacegoatx - Aggra (Português)"] = "Default",
+		["Loverócket - Aggra (Português)"] = "Default",
 		["Donch - Grim Batol"] = "Default",
+		["Spacegoatx - Aggra (Português)"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
 		["Lòverocket - Aggra (Português)"] = "Default",
 		["Lovérocket - Aggra (Português)"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
 		["Lóverocket - Aggra (Português)"] = "Default",
 		["Lóvérocket - Aggra (Português)"] = "Default",
 	},
 	["profiles"] = {
-		["DRUID"] = {
-			["uniqueSettings"] = {
-				[33] = {
-				},
-				[34] = {
-				},
-				[35] = {
-				},
-				[36] = {
-				},
-				[37] = {
-				},
-				[38] = {
-				},
-				[39] = {
-				},
-				[40] = {
-				},
-				[41] = {
-				},
-				[42] = {
-				},
-				[43] = {
-				},
-				[44] = {
-				},
-				[45] = {
-				},
-				[46] = {
-				},
-				[48] = {
-				},
-				[49] = {
-				},
-				[50] = {
-				},
-				["list"] = {
-					"Shadow Fiend", -- [1]
-					"Spirit Wolf", -- [2]
-					"Ebon Gargoyle", -- [3]
-					"Water Elemental", -- [4]
-					"Treant", -- [5]
-					"Viper", -- [6]
-					"Venomous Snake", -- [7]
-					"Army of the Dead Ghoul", -- [8]
-					"Shadowy Apparition", -- [9]
-					"Shambling Horror", -- [10]
-					"Web Wrap", -- [11]
-					"Immortal Guardian", -- [12]
-					"Marked Immortal Guardian", -- [13]
-					"Empowered Adherent", -- [14]
-					"Deformed Fanatic", -- [15]
-					"Reanimated Adherent", -- [16]
-					"Reanimated Fanatic", -- [17]
-					"Bone Spike", -- [18]
-					"Onyxian Whelp", -- [19]
-					"Gas Cloud", -- [20]
-					"Volatile Ooze", -- [21]
-					"Darnavan", -- [22]
-					"Val'kyr Shadowguard", -- [23]
-					"Kinetic Bomb", -- [24]
-					"Lich King", -- [25]
-					"Raging Spirit", -- [26]
-					"Drudge Ghoul", -- [27]
-					"Living Inferno", -- [28]
-					"Living Ember", -- [29]
-					"Fanged Pit Viper", -- [30]
-					"Canal Crab", -- [31]
-					"Muddy Crawfish", -- [32]
-					"", -- [33]
-					"", -- [34]
-					"", -- [35]
-					"", -- [36]
-					"", -- [37]
-					"", -- [38]
-					"", -- [39]
-					"", -- [40]
-					"", -- [41]
-					"", -- [42]
-					"", -- [43]
-					"", -- [44]
-					"", -- [45]
-					"", -- [46]
-					"", -- [47]
-					"", -- [48]
-					"", -- [49]
-					"", -- [50]
-					"", -- [51]
-					"", -- [52]
-					"", -- [53]
-					"", -- [54]
-					"", -- [55]
-					"", -- [56]
-					"", -- [57]
-					"", -- [58]
-					"", -- [59]
-					"", -- [60]
-					"", -- [61]
-					"", -- [62]
-					"", -- [63]
-					"", -- [64]
-					"", -- [65]
-					"", -- [66]
-					"", -- [67]
-					"", -- [68]
-					"", -- [69]
-					"", -- [70]
-					"", -- [71]
-					"", -- [72]
-					"", -- [73]
-					"", -- [74]
-					"", -- [75]
-					"", -- [76]
-					"", -- [77]
-					"", -- [78]
-					"", -- [79]
-					"", -- [80]
-					"", -- [81]
-					"", -- [82]
-					"", -- [83]
-					"", -- [84]
-					"", -- [85]
-					"", -- [86]
-					"", -- [87]
-					"", -- [88]
-					"", -- [89]
-					"", -- [90]
-					"", -- [91]
-					"", -- [92]
-					"", -- [93]
-					"", -- [94]
-					"", -- [95]
-					"", -- [96]
-					"", -- [97]
-					"", -- [98]
-					"", -- [99]
-					"", -- [100]
-				},
-			},
-		},
-		["Grim Batol"] = {
+		["Skullflower"] = {
 			["nameplate"] = {
 				["toggle"] = {
 					["Totem"] = false,
@@ -569,7 +439,171 @@ TidyPlatesThreatDB = {
 					"", -- [100]
 				},
 			},
+			["settings"] = {
+				["healthbar"] = {
+					["texture"] = "Skullflower",
+				},
+			},
 			["cache"] = {
+			},
+			["text"] = {
+				["full"] = true,
+			},
+			["questWidget"] = {
+				["ON"] = false,
+			},
+			["tapHealthbarColor"] = {
+				["b"] = 0,
+				["g"] = 0.501960784313726,
+				["r"] = 0.501960784313726,
+			},
+			["auraWidget"] = {
+				["allow"] = {
+					nil, -- [1]
+					"Leg Sweep", -- [2]
+					"Binding Shot", -- [3]
+				},
+				["mode"] = "allMine",
+			},
+		},
+		["DRUID"] = {
+			["uniqueSettings"] = {
+				[33] = {
+				},
+				[34] = {
+				},
+				[35] = {
+				},
+				[36] = {
+				},
+				[37] = {
+				},
+				[38] = {
+				},
+				[39] = {
+				},
+				[40] = {
+				},
+				[41] = {
+				},
+				[42] = {
+				},
+				[43] = {
+				},
+				[44] = {
+				},
+				[45] = {
+				},
+				[46] = {
+				},
+				[48] = {
+				},
+				[49] = {
+				},
+				[50] = {
+				},
+				["list"] = {
+					"Shadow Fiend", -- [1]
+					"Spirit Wolf", -- [2]
+					"Ebon Gargoyle", -- [3]
+					"Water Elemental", -- [4]
+					"Treant", -- [5]
+					"Viper", -- [6]
+					"Venomous Snake", -- [7]
+					"Army of the Dead Ghoul", -- [8]
+					"Shadowy Apparition", -- [9]
+					"Shambling Horror", -- [10]
+					"Web Wrap", -- [11]
+					"Immortal Guardian", -- [12]
+					"Marked Immortal Guardian", -- [13]
+					"Empowered Adherent", -- [14]
+					"Deformed Fanatic", -- [15]
+					"Reanimated Adherent", -- [16]
+					"Reanimated Fanatic", -- [17]
+					"Bone Spike", -- [18]
+					"Onyxian Whelp", -- [19]
+					"Gas Cloud", -- [20]
+					"Volatile Ooze", -- [21]
+					"Darnavan", -- [22]
+					"Val'kyr Shadowguard", -- [23]
+					"Kinetic Bomb", -- [24]
+					"Lich King", -- [25]
+					"Raging Spirit", -- [26]
+					"Drudge Ghoul", -- [27]
+					"Living Inferno", -- [28]
+					"Living Ember", -- [29]
+					"Fanged Pit Viper", -- [30]
+					"Canal Crab", -- [31]
+					"Muddy Crawfish", -- [32]
+					"", -- [33]
+					"", -- [34]
+					"", -- [35]
+					"", -- [36]
+					"", -- [37]
+					"", -- [38]
+					"", -- [39]
+					"", -- [40]
+					"", -- [41]
+					"", -- [42]
+					"", -- [43]
+					"", -- [44]
+					"", -- [45]
+					"", -- [46]
+					"", -- [47]
+					"", -- [48]
+					"", -- [49]
+					"", -- [50]
+					"", -- [51]
+					"", -- [52]
+					"", -- [53]
+					"", -- [54]
+					"", -- [55]
+					"", -- [56]
+					"", -- [57]
+					"", -- [58]
+					"", -- [59]
+					"", -- [60]
+					"", -- [61]
+					"", -- [62]
+					"", -- [63]
+					"", -- [64]
+					"", -- [65]
+					"", -- [66]
+					"", -- [67]
+					"", -- [68]
+					"", -- [69]
+					"", -- [70]
+					"", -- [71]
+					"", -- [72]
+					"", -- [73]
+					"", -- [74]
+					"", -- [75]
+					"", -- [76]
+					"", -- [77]
+					"", -- [78]
+					"", -- [79]
+					"", -- [80]
+					"", -- [81]
+					"", -- [82]
+					"", -- [83]
+					"", -- [84]
+					"", -- [85]
+					"", -- [86]
+					"", -- [87]
+					"", -- [88]
+					"", -- [89]
+					"", -- [90]
+					"", -- [91]
+					"", -- [92]
+					"", -- [93]
+					"", -- [94]
+					"", -- [95]
+					"", -- [96]
+					"", -- [97]
+					"", -- [98]
+					"", -- [99]
+					"", -- [100]
+				},
 			},
 		},
 		["Default"] = {
@@ -745,7 +779,7 @@ TidyPlatesThreatDB = {
 				["ON"] = false,
 			},
 		},
-		["Skullflower"] = {
+		["Grim Batol"] = {
 			["nameplate"] = {
 				["toggle"] = {
 					["Totem"] = false,
@@ -889,31 +923,7 @@ TidyPlatesThreatDB = {
 					"", -- [100]
 				},
 			},
-			["settings"] = {
-				["healthbar"] = {
-					["texture"] = "Skullflower",
-				},
-			},
 			["cache"] = {
-			},
-			["text"] = {
-				["full"] = true,
-			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
-			["tapHealthbarColor"] = {
-				["b"] = 0,
-				["g"] = 0.501960784313726,
-				["r"] = 0.501960784313726,
-			},
-			["auraWidget"] = {
-				["allow"] = {
-					nil, -- [1]
-					"Leg Sweep", -- [2]
-					"Binding Shot", -- [3]
-				},
-				["mode"] = "allMine",
 			},
 		},
 	},

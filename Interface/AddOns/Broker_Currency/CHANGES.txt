@@ -1,10 +1,10 @@
-tag c3d5a0b387cff74d57434cd7f424de742fed0567 7.2.5.2
+tag e2faba25d5c5beedf4f0bc39a79a63d1ebfca893 7.3.0.3
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Sun Jul 2 10:07:03 2017 -0500
+Date:	Wed Sep 20 22:43:24 2017 -0500
 
-commit cb13cca8bbb3a163025aef67efb175062aba2688
+commit df1098251a767353591dce1f28ab4028b1d5fa02
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Jul 2 10:04:18 2017 -0500
+Date:   Wed Sep 20 22:43:07 2017 -0500
 
-    Add Coins of Air.
+    Remove Argus Waystone support since they were removed from the game.
 

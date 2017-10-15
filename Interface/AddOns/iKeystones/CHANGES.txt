@@ -1,24 +1,18 @@
-tag 45d40f03f117958a7bc6326e275183afbca97e26 v1.40
+tag 5a71ba89fdb32b77a73d7ce44c006752f4e503d7 v1.521
 Author:	Jesse Manelius <jessemanelius@gmail.com>
-Date:	Wed Jul 5 03:34:39 2017 +0300
+Date:	Wed Oct 4 12:09:51 2017 +0300
 
-tagging as v1.40
+tagging as v1.521
 
-commit 8e1ea7ad739f6dbd8b64913efdce506b0bb707b2
+commit 83fadf3242b6027fb2c76b6c1bbba172c394b631
 Author: Jesse Manelius <jessemanelius@gmail.com>
-Date:   Wed Jul 5 03:34:16 2017 +0300
+Date:   Wed Oct 4 12:09:17 2017 +0300
 
-    update version number
+    toc version update
 
-commit d6128e980a2f2a4df8cf79dfe7590a103bf1584c
+commit afec4e37c90b8a97166f9f7c5e529bdaf9f5efa4
 Author: Jesse Manelius <jessemanelius@gmail.com>
-Date:   Wed Jul 5 03:33:49 2017 +0300
+Date:   Wed Oct 4 12:08:51 2017 +0300
 
-    update weekly chest reward ilvls
-
-commit 0a3199ad638f48ee0b7ed4e327e4126f01ec8a42
-Author: Jesse Manelius <jessemanelius@gmail.com>
-Date:   Thu Jun 15 22:03:31 2017 +0300
-
-    pushing right version is hard.
+    fix stuff
 

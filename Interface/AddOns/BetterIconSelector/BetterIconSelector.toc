@@ -1,6 +1,6 @@
 ## Title: BetterIconSelector
 ## Notes: Adds search functionality to the icon selector dialogs
-## Version: 1.2
+## Version: 1.2.1
 ## Author: Ignifazius (Original by Darthyl of Bronzebeard-US)
 ## Interface: 70300
 ## OptionalDeps: Ace3, LibAdvancedIconSelector-1.0

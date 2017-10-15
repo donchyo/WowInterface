@@ -27,15 +27,13 @@ oRA3DB = {
 				},
 			},
 		},
-		["Loot"] = {
+		["GuildRepairs"] = {
 		},
-		["Difficulty"] = {
+		["Alerts"] = {
 			["profiles"] = {
-				["Default"] = {
-					["prevRaidDifficulty"] = 15,
-				},
 				["Skullflower"] = {
-					["prevRaidDifficulty"] = 16,
+					["resurrect"] = true,
+					["tauntPet"] = true,
 				},
 			},
 		},
@@ -52,7 +50,7 @@ oRA3DB = {
 				},
 			},
 		},
-		["GuildRepairs"] = {
+		["Loot"] = {
 		},
 		["Promote"] = {
 		},
@@ -89,11 +87,13 @@ oRA3DB = {
 		},
 		["Tanks"] = {
 		},
-		["Alerts"] = {
+		["Difficulty"] = {
 			["profiles"] = {
+				["Default"] = {
+					["prevRaidDifficulty"] = 14,
+				},
 				["Skullflower"] = {
-					["resurrect"] = true,
-					["tauntPet"] = true,
+					["prevRaidDifficulty"] = 16,
 				},
 			},
 		},
@@ -107,21 +107,22 @@ oRA3DB = {
 		["Zolution - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
-		["Krixiyo - Lightning's Blade"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
+		["Líttle - Grim Batol"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Default",
-		["Líttle - Grim Batol"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Kroxi - Crushridge"] = "Default",
+		["Krixiyo - Lightning's Blade"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 	},
 	["profiles"] = {
@@ -143,8 +144,8 @@ oRA3DB = {
 				["oRA3BattleResMonitor"] = {
 					["Height"] = 29.9999942779541,
 					["Width"] = 140.000015258789,
-					["PosY"] = 491.027460966856,
-					["PosX"] = 5.18955085339837,
+					["PosY"] = 508.805243110342,
+					["PosX"] = 10.1673257489606,
 				},
 				["oRA3RingsFrame"] = {
 					["PosY"] = 221.687045826158,

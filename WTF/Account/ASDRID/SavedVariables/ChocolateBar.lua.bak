@@ -10,34 +10,26 @@ ChocolateBarDB = {
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Krixiyo - Lightning's Blade"] = "Default",
+		["Donch - Shattered Hand"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
-		["Kroxi - Crushridge"] = "Default",
-		["Treefiddy - Aggra (Português)"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
+		["Treefiddy - Aggra (Português)"] = "Default",
+		["Kroxi - Crushridge"] = "Default",
 		["Menardiairl - Culte de la Rive noire"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Spacegoatx - Aggra (Português)"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Default",
 		["Líttle - Grim Batol"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
-		["Donch - Shattered Hand"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["background"] = {
-				["tileSize"] = 136,
-				["color"] = {
-					["a"] = 0,
-					["g"] = 0.36078431372549,
-					["r"] = 0.380392156862745,
-				},
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barOffy"] = 1,
@@ -47,6 +39,15 @@ ChocolateBarDB = {
 					["barOffx"] = -20.4444828033447,
 				},
 			},
+			["background"] = {
+				["tileSize"] = 136,
+				["color"] = {
+					["a"] = 0,
+					["g"] = 0.36078431372549,
+					["r"] = 0.380392156862745,
+				},
+			},
+			["locked"] = false,
 			["fontPath"] = "Fonts\\ARIALN.TTF",
 			["objSettings"] = {
 				["Magic Runes"] = {

@@ -21,9 +21,19 @@ L["Blizzard Options"] = "Options Blizzard"
 L["Border Color/Alpha"] = "Transp./couleur bordure"
 L["Center"] = "Centre"
 L["ChocolateBar Options"] = "Options ChocolateBar"
+--Translation missing 
+-- L["Colorize frames during drag & drop."] = ""
+--Translation missing 
+-- L["Colorized Dragging"] = ""
 L["Could not load ChocolateBar_Options, make sure it's installed."] = "Impossible de charger ChocolateBar_Options, vérifiez qu'il est bien installé."
 L["Create Bar"] = "Créer une barre"
 L["Create New Bar"] = "Permet de créer une nouvelle barre."
+--Translation missing 
+-- L["Create New Placeholder"] = ""
+--Translation missing 
+-- L["Create Placeholder"] = ""
+--Translation missing 
+-- L["Creates a new plugin to use as a placeholder."] = ""
 L["Data Source"] = "Source de données"
 L["Debug"] = "Débogage"
 L["Default text color of a plugin. This will not overwrite plugins that use own colors."] = "La couleur par défaut du texte d'un plugin. Ceci n'outrepasse pas les plugins qui utilisent leurs propres couleurs."
@@ -62,6 +72,8 @@ L["Hide In Combat"] = "Masquer en combat"
 L["Hide Order Hall Bar"] = "Cacher barre domaine de classe"
 L["Hide this bar during combat."] = "Masque cette barre pendant les combats."
 L["Hides the command bar displayed at the Class/Order Hall."] = "Cache la barre de commande affichée au domaine de classe."
+--Translation missing 
+-- L["Highlight"] = ""
 L["Hold alt key to drag a plugin."] = "Maintenez enfoncé la touche ALT pour saisir un plugin."
 L["Horizontal Offset"] = "Décalage horizontal"
 L["How should the plugin width adapt to the text?"] = "Comment la largeur du plugin doit s'adapter au texte ?"
@@ -89,11 +101,21 @@ L["Options"] = "Options"
 L["Other"] = "Autre"
 L["Overwrite Icon Size"] = "Écraser la taille de l'icône"
 L["Overwrite Text Offset"] = "Écraser le décalage du texte"
+--Translation missing 
+-- L["Placeholder"] = ""
+--Translation missing 
+-- L["Placeholder Options"] = ""
+--Translation missing 
+-- L["Placeholders"] = ""
 L["Plugin Statistics"] = "Statistiques des plugins"
 L["Plugins"] = "Plugins"
 L["Quick Config"] = "Configuration rapide"
 L["Remove Bar"] = "Enlever la barre"
 L["Remove custom colors from plugins."] = "Enlève les couleurs personnalisées des plugins."
+--Translation missing 
+-- L["Remove Placeholder"] = ""
+--Translation missing 
+-- L["Remove this Placeholder"] = ""
 L["Right"] = "Droite"
 L["Select Bar"] = "Sélection de la barre"
 L["Select the action when right clicking on a bar."] = "Déterminez l'action au clique-droit sur une barre."
@@ -108,6 +130,8 @@ L["Show icons in gray scale mode (This will not affect icons embedded in the tex
 L["Show Text"] = "Montrer le texte"
 L["Some of the fonts may depend on other addons."] = "Certaines polices peuvent dépendre d'autres addons."
 L["Some of the textures may depend on other addons."] = "Certaines textures peuvent dépendre d'autres addons."
+--Translation missing 
+-- L["Temporarily highlights the position of the plugin on the bar."] = ""
 L["Text color"] = "Couleur du texte"
 L["Text Offset"] = "Décalage du texte"
 L["Texture Color/Alpha"] = "Transp./Couleur Texture"
@@ -122,3 +146,4 @@ L["Unlock to to move the bar anywhere you want."] = "Déverrouille la barre afin
 L["Update Center Position"] = "M. à j. position centrale"
 L["Vertical Offset"] = "Décalage vertical"
 L["Width Behavior"] = "Comportement de la largeur"
+

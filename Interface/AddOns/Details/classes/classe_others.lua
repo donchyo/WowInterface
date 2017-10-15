@@ -2413,10 +2413,12 @@ local somar_habilidades = function (container1, container2)
 	end
 end
 
-function atributo_misc:r_connect_shadow (actor, no_refresh)
+function atributo_misc:r_connect_shadow (actor, no_refresh, combat_object)
+
+	local host_combat = combat_object or _detalhes.tabela_overall
 
 	--> criar uma shadow desse ator se ainda n�o tiver uma
-	local overall_misc = _detalhes.tabela_overall [4]
+	local overall_misc = host_combat [4]
 	local shadow = overall_misc._ActorTable [overall_misc._NameIndexTable [actor.nome]]
 
 	if (not actor.nome) then
@@ -2473,9 +2475,9 @@ function atributo_misc:r_connect_shadow (actor, no_refresh)
 		end
 	
 		shadow.cooldowns_defensive = shadow.cooldowns_defensive + actor.cooldowns_defensive
-		_detalhes.tabela_overall.totals[4].cooldowns_defensive = _detalhes.tabela_overall.totals[4].cooldowns_defensive + actor.cooldowns_defensive
+		host_combat.totals[4].cooldowns_defensive = host_combat.totals[4].cooldowns_defensive + actor.cooldowns_defensive
 		if (actor.grupo) then
-			_detalhes.tabela_overall.totals_grupo[4].cooldowns_defensive = _detalhes.tabela_overall.totals_grupo[4].cooldowns_defensive + actor.cooldowns_defensive
+			host_combat.totals_grupo[4].cooldowns_defensive = host_combat.totals_grupo[4].cooldowns_defensive + actor.cooldowns_defensive
 		end
 		
 		somar_alvos (shadow.cooldowns_defensive_targets, actor.cooldowns_defensive_targets)
@@ -2542,9 +2544,9 @@ function atributo_misc:r_connect_shadow (actor, no_refresh)
 		end
 	
 		shadow.interrupt = shadow.interrupt + actor.interrupt
-		_detalhes.tabela_overall.totals[4].interrupt = _detalhes.tabela_overall.totals[4].interrupt + actor.interrupt
+		host_combat.totals[4].interrupt = host_combat.totals[4].interrupt + actor.interrupt
 		if (actor.grupo) then
-			_detalhes.tabela_overall.totals_grupo[4].interrupt = _detalhes.tabela_overall.totals_grupo[4].interrupt + actor.interrupt
+			host_combat.totals_grupo[4].interrupt = host_combat.totals_grupo[4].interrupt + actor.interrupt
 		end
 	
 		somar_alvos (shadow.interrupt_targets, actor.interrupt_targets)
@@ -2573,9 +2575,9 @@ function atributo_misc:r_connect_shadow (actor, no_refresh)
 		end
 		
 		shadow.ress = shadow.ress + actor.ress
-		_detalhes.tabela_overall.totals[4].ress = _detalhes.tabela_overall.totals[4].ress + actor.ress
+		host_combat.totals[4].ress = host_combat.totals[4].ress + actor.ress
 		if (actor.grupo) then
-			_detalhes.tabela_overall.totals_grupo[4].ress = _detalhes.tabela_overall.totals_grupo[4].ress + actor.ress
+			host_combat.totals_grupo[4].ress = host_combat.totals_grupo[4].ress + actor.ress
 		end
 		
 		somar_alvos (shadow.ress_targets, actor.ress_targets)
@@ -2592,9 +2594,9 @@ function atributo_misc:r_connect_shadow (actor, no_refresh)
 		end
 	
 		shadow.dispell = shadow.dispell + actor.dispell
-		_detalhes.tabela_overall.totals[4].dispell = _detalhes.tabela_overall.totals[4].dispell + actor.dispell
+		host_combat.totals[4].dispell = host_combat.totals[4].dispell + actor.dispell
 		if (actor.grupo) then
-			_detalhes.tabela_overall.totals_grupo[4].dispell = _detalhes.tabela_overall.totals_grupo[4].dispell + actor.dispell
+			host_combat.totals_grupo[4].dispell = host_combat.totals_grupo[4].dispell + actor.dispell
 		end
 		
 		somar_alvos (shadow.dispell_targets, actor.dispell_targets)
@@ -2622,9 +2624,9 @@ function atributo_misc:r_connect_shadow (actor, no_refresh)
 		end
 
 		shadow.cc_break = shadow.cc_break + actor.cc_break
-		_detalhes.tabela_overall.totals[4].cc_break = _detalhes.tabela_overall.totals[4].cc_break + actor.cc_break
+		host_combat.totals[4].cc_break = host_combat.totals[4].cc_break + actor.cc_break
 		if (actor.grupo) then
-			_detalhes.tabela_overall.totals_grupo[4].cc_break = _detalhes.tabela_overall.totals_grupo[4].cc_break + actor.cc_break
+			host_combat.totals_grupo[4].cc_break = host_combat.totals_grupo[4].cc_break + actor.cc_break
 		end
 		
 		somar_alvos (shadow.cc_break_targets, actor.cc_break_targets)

@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0213,
+	["LastVersion"] = 2.0214,
 	["LastPlayerFullName"] = "Krixidk-Grim Batol",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
@@ -13,7 +13,7 @@ PawnOptions = {
 					["Type"] = "Fire",
 				}, -- [1]
 				{
-					["ItemLevel"] = 67,
+					["ItemLevel"] = 68,
 					["Type"] = "Shadow",
 				}, -- [2]
 				{
@@ -34,7 +34,7 @@ PawnOptions = {
 					["Type"] = "Shadow",
 				}, -- [2]
 				{
-					["ItemLevel"] = 65,
+					["ItemLevel"] = 68,
 					["Type"] = "Iron",
 				}, -- [3]
 			},
@@ -43,15 +43,15 @@ PawnOptions = {
 		[128292] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 53,
+					["ItemLevel"] = 55,
 					["Type"] = "Frost",
 				}, -- [1]
 				{
-					["ItemLevel"] = 62,
+					["ItemLevel"] = 67,
 					["Type"] = "Shadow",
 				}, -- [2]
 				{
-					["ItemLevel"] = 55,
+					["ItemLevel"] = 64,
 					["Type"] = "Frost",
 				}, -- [3]
 			},

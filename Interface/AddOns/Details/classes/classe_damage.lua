@@ -2741,19 +2741,23 @@ end
 	elseif (classe == "UNGROUPPLAYER") then
 		if (self.enemy) then
 			if (_detalhes.faction_against == "Horde") then
-				texture:SetTexture ("Interface\\ICONS\\Achievement_Character_Orc_Male")
-				texture:SetTexCoord (0, 1, 0, 1)
+				--texture:SetTexture ("Interface\\ICONS\\Achievement_Character_Orc_Male")
+				texture:SetTexture ("Interface\\ICONS\\PVPCurrency-Honor-Horde.blp")
+				texture:SetTexCoord (0.05, 0.95, 0.05, 0.95)
 			else
-				texture:SetTexture ("Interface\\ICONS\\Achievement_Character_Human_Male")
-				texture:SetTexCoord (0, 1, 0, 1)
+				--texture:SetTexture ("Interface\\ICONS\\Achievement_Character_Human_Male")
+				texture:SetTexture ("Interface\\ICONS\\PVPCurrency-Honor-Alliance.blp")
+				texture:SetTexCoord (0.05, 0.95, 0.05, 0.95)
 			end
 		else
 			if (_detalhes.faction_against == "Horde") then
-				texture:SetTexture ("Interface\\ICONS\\Achievement_Character_Human_Male")
-				texture:SetTexCoord (0, 1, 0, 1)
+				--texture:SetTexture ("Interface\\ICONS\\Achievement_Character_Human_Male")
+				texture:SetTexture ("Interface\\ICONS\\PVPCurrency-Honor-Alliance.blp")
+				texture:SetTexCoord (0.05, 0.95, 0.05, 0.95)
 			else
-				texture:SetTexture ("Interface\\ICONS\\Achievement_Character_Orc_Male")
-				texture:SetTexCoord (0, 1, 0, 1)
+				--texture:SetTexture ("Interface\\ICONS\\Achievement_Character_Orc_Male")
+				texture:SetTexture ("Interface\\ICONS\\PVPCurrency-Honor-Horde.blp")
+				texture:SetTexCoord (0.05, 0.95, 0.05, 0.95)
 			end
 		end
 		texture:SetVertexColor (1, 1, 1)
@@ -3367,7 +3371,7 @@ function atributo_damage:ToolTip_DamageTaken (instancia, numero, barra, keydown)
 				if (nome == self.nome and self.classe == "MONK") then
 					local ff = este_agressor.friendlyfire [nome]
 					if (ff and ff.total > 0) then
-						local staggerDamage = ff.spells [124255]
+						local staggerDamage = ff.spells [124255] or 0
 						if (staggerDamage > 0) then
 							if (table_added) then
 								table_added [2] = table_added [2] + staggerDamage
@@ -4983,10 +4987,12 @@ end
 			return shadow
 		end
 		
-		function atributo_damage:r_connect_shadow (actor, no_refresh)
+		function atributo_damage:r_connect_shadow (actor, no_refresh, combat_object)
 	
+			local host_combat = combat_object or _detalhes.tabela_overall
+			
 			--> criar uma shadow desse ator se ainda n�o tiver uma
-				local overall_dano = _detalhes.tabela_overall [1]
+				local overall_dano = host_combat [1]
 				local shadow = overall_dano._ActorTable [overall_dano._NameIndexTable [actor.nome]]
 				
 				if (not shadow) then 
@@ -5030,9 +5036,9 @@ end
 				shadow.friendlyfire_total = shadow.friendlyfire_total + actor.friendlyfire_total
 
 			--> total no combate overall (captura de dados)
-				_detalhes.tabela_overall.totals[1] = _detalhes.tabela_overall.totals[1] + actor.total
+				host_combat.totals[1] = host_combat.totals[1] + actor.total
 				if (actor.grupo) then
-					_detalhes.tabela_overall.totals_grupo[1] = _detalhes.tabela_overall.totals_grupo[1] + actor.total
+					host_combat.totals_grupo[1] = host_combat.totals_grupo[1] + actor.total
 				end
 				
 			--> copia o damage_from (captura de dados)

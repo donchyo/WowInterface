@@ -5,36 +5,37 @@ TalentMacrosDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
-		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
-		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
-		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Donch - Crushridge"] = "Donch - Crushridge",
-		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
-		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
+		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
+		["Namji - Grim Batol"] = "Namji - Grim Batol",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",
 	},
@@ -52,6 +53,7 @@ TalentMacrosDB = {
 		["Zolution - Grim Batol"] = {
 			["macrotext"] = {
 				[19757] = "#showtooltip\n/use [nomod] angelic feather\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[22315] = "#showtooltip\n/use [nomod] angelic feather\n/use [mod:alt,@player ] angelic feather\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
 			},
 			["version"] = 1,
 		},
@@ -97,40 +99,35 @@ TalentMacrosDB = {
 			},
 			["disablepush"] = true,
 		},
-		["Donch - Crushridge"] = {
-			["version"] = 1,
-		},
 		["Namji - Grim Batol"] = {
 			["macrotext"] = {
 				[19820] = "#showtooltip\n/cast [@namji] Zen Sphere",
 			},
 			["version"] = 1,
 		},
+		["Donch - Crushridge"] = {
+			["version"] = 1,
+		},
+		["Krixiyo - Twisting Nether"] = {
+		},
 		["Krixi - Grim Batol"] = {
 			["macrotext"] = {
 				[17565] = "#showtooltip\n/use [nomod] speed of light\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
 				[17567] = "#showtooltip\n/use [nomod] long arm of the law\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[21811] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Sacred shield\n",
 				[17597] = "#showtooltip\n/cast Holy Avenger\n/use 13",
 				[17569] = "#showtooltip\n/use [nomod] pursiut of justice\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[21811] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Sacred shield\n",
 			},
 			["version"] = 1,
 		},
-		["Krixiyo - Twisting Nether"] = {
+		["Gnomalock - Grim Batol"] = {
+			["version"] = 1,
 		},
 		["Treefiddy - Aggra (Português)"] = {
 			["version"] = 1,
 		},
 		["Kroxi - Crushridge"] = {
 			["version"] = 1,
-		},
-		["Gnomalock - Grim Batol"] = {
-			["version"] = 1,
-		},
-		["Skullflower"] = {
-			["macrotext"] = {
-				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
-			},
 		},
 		["Nyrith - Grim Batol"] = {
 			["macrotext"] = {
@@ -142,6 +139,17 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
+		["Skullflower"] = {
+			["macrotext"] = {
+				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
+			},
+		},
+		["Líttle - Grim Batol"] = {
+			["macrotext"] = {
+				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
+			},
+			["version"] = 1,
+		},
 		["Spacegoatx - Aggra (Português)"] = {
 			["version"] = 1,
 		},
@@ -149,11 +157,7 @@ TalentMacrosDB = {
 		},
 		["Asdasdasdfaf - Grim Batol"] = {
 		},
-		["Líttle - Grim Batol"] = {
-			["macrotext"] = {
-				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
-			},
-			["version"] = 1,
+		["Kriximonk - Grim Batol"] = {
 		},
 		["Donchyo - Shattered Hand"] = {
 			["version"] = 1,

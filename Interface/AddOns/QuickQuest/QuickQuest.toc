@@ -1,12 +1,17 @@
 ## Interface: 70300
 ## Author: p3lim
-## Version: 70300.32-Release
+## Version: 70300.33-Release
 ## Title: QuickQuest
 ## Notes: Quest automation wizardry
 ## OptionalDeps: LibGossipQuestInfo, Wasabi
 ## SavedVariables: QuickQuestDB, QuickQuestBlacklistDB
 
+## X-Curse-Project-ID: 36494
+## X-WoWI-ID: 20838
 
+
+
+libs\LibStub\LibStub.lua
 libs\LibGossipQuestInfo\LibGossipQuestInfo.lua
 libs\Wasabi\embed.xml
 

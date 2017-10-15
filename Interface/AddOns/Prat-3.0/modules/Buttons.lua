@@ -304,7 +304,7 @@ L=
 		["Toggles navigation arrows on and off."] = "상하 화살표를 끄고 켭니다.",
 	}
 }
-PL:AddLocale(PRAT_MODULE, "koKR",  l)
+PL:AddLocale(PRAT_MODULE, "koKR",  L)
 
 L=
 {

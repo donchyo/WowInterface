@@ -37,7 +37,7 @@ premade-filter: disabled
 MogIt: enabled
 MogIt_Accessories: enabled
 MogIt_Cloth: disabled
-MogIt_Leather: disabled
+MogIt_Leather: enabled
 MogIt_Mail: enabled
 MogIt_OneHanded: disabled
 MogIt_Other: disabled
@@ -226,7 +226,7 @@ DataStore_Stats: enabled
 DataStore_Talents: enabled
 DejaCharacterStats: enabled
 Details_CalcLeech: disabled
-Details_3DModelsPaths: disabled
+Details_3DModelsPaths: enabled
 Details_Streamer: disabled
 Details_RaidInfo-HellfireCitadel: disabled
 Details_DungeonInfo-Warlords: disabled
@@ -361,3 +361,5 @@ StopResetingMyCameraPlease: disabled
 LegionTODOMini: disabled
 Skada_LeechBDKTabs: disabled
 Details_RaidInfo-TombOfSargeras: disabled
+PremadeGroupsFilter: enabled
+Prat-3.0: disabled

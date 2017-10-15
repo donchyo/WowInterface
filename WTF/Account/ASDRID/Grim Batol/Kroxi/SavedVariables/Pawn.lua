@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0213,
+	["LastVersion"] = 2.0214,
 	["LastPlayerFullName"] = "Kroxi-Grim Batol",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
@@ -9,11 +9,11 @@ PawnOptions = {
 		[128289] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 59,
+					["ItemLevel"] = 62,
 					["Type"] = "Iron",
 				}, -- [1]
 				{
-					["ItemLevel"] = 59,
+					["ItemLevel"] = 62,
 					["Type"] = "Blood",
 				}, -- [2]
 				{
@@ -22,6 +22,23 @@ PawnOptions = {
 				}, -- [3]
 			},
 			["Name"] = "Scale of the Earth-Warder",
+		},
+		[128908] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 64,
+					["Type"] = "Fire",
+				}, -- [1]
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Wind",
+				}, -- [2]
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Iron",
+				}, -- [3]
+			},
+			["Name"] = "Warswords of the Valarjar",
 		},
 	},
 }

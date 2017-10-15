@@ -8,7 +8,7 @@ VER 3 0100000000000003 "bop" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000015 "cancelaura bop" "INV_MISC_QUESTIONMARK"
 #show none
-/cancelaura hand of protection
+/cancelaura blessing of protection
 /cancelaura divine shield
 END
 VER 3 0100000000000008 "cleanse" "INV_MISC_QUESTIONMARK"

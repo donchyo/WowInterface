@@ -1,13 +1,5 @@
 
 ElvCharacterDB = {
-	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
-		["Active"] = false,
-	},
-	["ChatLog"] = {
-	},
 	["ChatEditHistory"] = {
 		"/g du kan nog porta in och ut", -- [1]
 		"/g jag skulel itne göra det", -- [2]
@@ -29,5 +21,13 @@ ElvCharacterDB = {
 		"/g det är ju inge vidare", -- [18]
 		"/autorepair", -- [19]
 		"/autorepair guild", -- [20]
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+	["ChatLog"] = {
 	},
 }
