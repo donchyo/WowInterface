@@ -2,8 +2,8 @@ Version: 1
 Frame: ColorPickerFrame
 FrameLevel: 35
 Anchor: TOPRIGHT
-X: -179
-Y: 0
+X: -118
+Y: -15
 W: 365
 H: 200
 Frame: DetailsPlayerDetailsWindow

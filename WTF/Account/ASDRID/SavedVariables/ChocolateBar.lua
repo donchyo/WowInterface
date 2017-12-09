@@ -253,6 +253,7 @@ ChocolateBarDB = {
 					["showText"] = false,
 				},
 				["Prat"] = {
+					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",

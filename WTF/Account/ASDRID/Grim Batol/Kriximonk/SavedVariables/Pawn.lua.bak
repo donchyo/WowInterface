@@ -33,7 +33,7 @@ PawnOptions = {
 					["Type"] = "Life",
 				}, -- [2]
 				{
-					["ItemLevel"] = 23,
+					["ItemLevel"] = 51,
 					["Type"] = "Wind",
 				}, -- [3]
 			},
@@ -46,7 +46,7 @@ PawnOptions = {
 					["Type"] = "Life",
 				}, -- [1]
 				{
-					["ItemLevel"] = 62,
+					["ItemLevel"] = 67,
 					["Type"] = "Wind",
 				}, -- [2]
 				{

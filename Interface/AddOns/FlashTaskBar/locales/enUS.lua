@@ -3,6 +3,7 @@ if not L then return end
 
 L["STRING_ADD"] = "add"
 L["STRING_ADDKEYWORD"] = "Add Keyword"
+L["STRING_BACKGROUND_SOUND"] = "*Enable 'Sound in Background'\\nunder System > Sound*"
 L["STRING_BAGSFULL"] = "Bags Full"
 L["STRING_BAGSFULL_DESC"] = "If you are crafting and your backpack went out of free space."
 L["STRING_BATTLEGROUND"] = "Battleground End"

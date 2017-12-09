@@ -220,7 +220,6 @@ G.unitframe.aurafilters['TurtleBuffs'] = {
 		[201940] = Defaults(), --Protector of the Pack
 		[201939] = Defaults(), --Protector of the Pack (Allies)
 		[192081] = Defaults(), --Ironfur
-		[192083] = Defaults(), --Mark of Ursol
 	--Hunter
 		[186265] = Defaults(), --Aspect of the Turtle
 		[53480] = Defaults(), --Roar of Sacrifice
@@ -361,7 +360,6 @@ G.unitframe.aurafilters['PlayerBuffs'] = {
 		[201940] = Defaults(), --Protector of the Pack
 		[201939] = Defaults(), --Protector of the Pack (Allies)
 		[192081] = Defaults(), --Ironfur
-		[192083] = Defaults(), --Mark of Ursol
 		[29166] = Defaults(), --Innervate
 		[208253] = Defaults(), --Essence of G'Hanir
 		[194223] = Defaults(), --Celestial Alignment
@@ -545,7 +543,7 @@ G.unitframe.aurafilters['PlayerBuffs'] = {
 		[196098] = Defaults(), --Soul Harvest
 		[221705] = Defaults(), --Casting Circle
 		[111400] = Defaults(), --Burning Rush
-		[212295] = Defaults(), --Planeswalker
+		[196674] = Defaults(), --Planeswalker
 	--Warrior
 		[118038] = Defaults(), --Die by the Sword
 		[184364] = Defaults(), --Enraged Regeneration
@@ -601,7 +599,6 @@ G.unitframe.aurafilters['Blacklist'] = {
 		[36900] = Defaults(), --Soul Split: Evil!
 		[36901] = Defaults(), --Soul Split: Good
 		[36893] = Defaults(), --Transporter Malfunction
-		[114216] = Defaults(), --Angelic Bulwark
 		[97821] = Defaults(), --Void-Touched
 		[36032] = Defaults(), -- Arcane Charge
 		[8733] = Defaults(), --Blessing of Blackfathom
@@ -618,7 +615,6 @@ G.unitframe.aurafilters['Blacklist'] = {
 		[24755] = Defaults(), --gay homosexual tricked or treated debuff
 		[25163] = Defaults(), --fucking annoying pet debuff oozeling disgusting aura
 		[80354] = Defaults(), --timewarp debuff
-		[95223] = Defaults(), --group res debuff
 		[124275] = Defaults(), -- Stagger
 		[124274] = Defaults(), -- Stagger
 		[124273] = Defaults(), -- Stagger
@@ -660,48 +656,169 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 	['type'] = 'Whitelist',
 	['spells'] = {
 	-- Legion
+	-- Antorus, the Burning Throne
+		-- Garothi Worldbreaker
+		[244761] = Defaults(), -- Annihilation
+		[246369] = Defaults(), -- Searing Barrage
+		[246848] = Defaults(), -- Luring Destruction
+		[246220] = Defaults(), -- Fel Bombardment
+		[247159] = Defaults(), -- Luring Destruction
+		[244122] = Defaults(), -- Carnage
+
+		-- Felhounds of Sargeras
+		[245022] = Defaults(), -- Burning Remnant
+		[251445] = Defaults(), -- Smouldering
+		[251448] = Defaults(), -- Burning Maw
+		[244086] = Defaults(), -- Molten Touch
+		[244091] = Defaults(), -- Singed
+		[244768] = Defaults(), -- Desolate Gaze
+		[244767] = Defaults(), -- Desolate Path
+		[244471] = Defaults(), -- Enflame Corruption
+		[248815] = Defaults(), -- Enflamed
+		[244517] = Defaults(), -- Lingering Flames
+		[245098] = Defaults(), -- Decay
+		[251447] = Defaults(), -- Corrupting Maw
+		[244131] = Defaults(), -- Consuming Sphere
+		[245024] = Defaults(), -- Consumed
+		[244071] = Defaults(), -- Weight of Darkness
+		[244578] = Defaults(), -- Siphon Corruption
+		[248819] = Defaults(), -- Siphoned
+
+		-- Antoran High Command
+		[245121] = Defaults(), -- Entropic Blast
+		[244748] = Defaults(), -- Shocked
+		[244824] = Defaults(), -- Warp Field
+		[244892] = Defaults(), -- Exploit Weakness
+		[244172] = Defaults(), -- Psychic Assault
+		[244388] = Defaults(), -- Psychic Scarring
+		[244420] = Defaults(), -- Chaos Pulse
+
+		-- Portal Keeper Hasabel
+		[244016] = Defaults(), -- Reality Tear
+		[245157] = Defaults(), -- Everburning Light
+		[245075] = Defaults(), -- Hungering Gloom
+		[245240] = Defaults(), -- Oppressive Gloom
+		[244709] = Defaults(), -- Fiery Detonation
+		[246208] = Defaults(), -- Acidic Web
+		[246075] = Defaults(), -- Catastrophic Implosion
+		[244826] = Defaults(), -- Fel Miasma
+		[246316] = Defaults(), -- Poison Essence
+		[244849] = Defaults(), -- Caustic Slime
+		[245118] = Defaults(), -- Cloying Shadows
+		[245050] = Defaults(), -- Delusions
+		[245040] = Defaults(), -- Corrupt
+		[244926] = Defaults(), -- Felsilk Wrap
+		[244607] = Defaults(), -- Flames of Xoroth
+
+		-- Eonar the Life-Binder
+		[248326] = Defaults(), -- Rain of Fel
+		[248861] = Defaults(), -- Spear of Doom
+		[249016] = Defaults(), -- Feedback - Targeted
+		[249015] = Defaults(), -- Feedback - Burning Embers
+		[249014] = Defaults(), -- Feedback - Foul Steps
+		[249017] = Defaults(), -- Feedback - Arcane Singularity
+
+		-- Imonar the Soulhunter
+		[248424] = Defaults(), -- Gathering Power
+		[247552] = Defaults(), -- Sleep Canister
+		[247565] = Defaults(), -- Slumber Gas
+		[250224] = Defaults(), -- Shocked
+		[248252] = Defaults(), -- Infernal Rockets
+		[247687] = Defaults(), -- Sever
+		[247716] = Defaults(), -- Charged Blasts
+		[250255] = Defaults(), -- Empowered Shock Lance
+		[247641] = Defaults(), -- Stasis Trap
+
+		-- Kin'garoth
+		[233062] = Defaults(), -- Infernal Burning
+		[230345] = Defaults(), -- Crashing Comet
+		[244312] = Defaults(), -- Forging Strike
+		[246840] = Defaults(), -- Ruiner
+		[248061] = Defaults(), -- Purging Protocol
+		[246706] = Defaults(), -- Demolish
+
+		-- Varimathras
+		[244042] = Defaults(), -- Marked Prey
+		[243961] = Defaults(), -- Misery
+		[248732] = Defaults(), -- Echoes of Doom
+		[244093] = Defaults(), -- Necrotic Embrace
+
+		-- The Coven of Shivarra
+		[244899] = Defaults(), -- Fiery Strike
+		[245518] = Defaults(), -- Flashfreeze
+		[245586] = Defaults(), -- Chilled Blood
+		[246763] = Defaults(), -- Fury of Golganneth
+		[245674] = Defaults(), -- Flames of Khaz'goroth
+		[245910] = Defaults(), -- Spectral Army of Norgannon
+
+		-- Aggramar
+		[244291] = Defaults(), -- Foe Breaker
+		[245995] = Defaults(), -- Scorching Blaze
+		[246014] = Defaults(), -- Searing Tempest
+		[244912] = Defaults(), -- Blazing Eruption
+		[247135] = Defaults(), -- Scorched Earth
+		[247091] = Defaults(), -- Catalyzed
+		[245631] = Defaults(), -- Unchecked Flame
+		[245916] = Defaults(), -- Molten Remnants
+
+		-- Argus the Unmaker
+		-- [] = Defaults(), --
+
 	-- Tomb of Sargeras
 		-- Goroth
 		[233279] = Defaults(), -- Shattering Star
-		[230345] = Defaults(), -- Crashing Comet
+		[230345] = Defaults(), -- Crashing Comet (Dot)
+		[232249] = Defaults(), -- Crashing Comet
 		[231363] = Defaults(), -- Burning Armor
 		[234264] = Defaults(), -- Melted Armor
 		[233062] = Defaults(), -- Infernal Burning
+		[230348] = Defaults(), -- Fel Pool
 
 		-- Demonic Inquisition
 		[233430] = Defaults(), -- Ubearable Torment
 		[233983] = Defaults(), -- Echoing Anguish
+		[248713] = Defaults(), -- Soul Corruption
 
 		-- Harjatan
 		[231770] = Defaults(), -- Drenched
 		[231998] = Defaults(), -- Jagged Abrasion
 		[231729] = Defaults(), -- Aqueous Burst
 		[234128] = Defaults(), -- Driven Assault
+		[234016] = Defaults(), -- Driven Assault
 
 		-- Sisters of the Moon
 		[236603] = Defaults(), -- Rapid Shot
-		[236598] = Defaults(5), -- Rapid Shot 1
-		[234995] = Defaults(5), -- Rapid Shot 2
-		[236519] = Defaults(4), -- Moon Burn
+		[236596] = Defaults(), -- Rapid Shot
+		[234995] = Defaults(), -- Lunar Suffusion
+		[234996] = Defaults(), -- Umbra Suffusion
+		[236519] = Defaults(), -- Moon Burn
 		[236697] = Defaults(), -- Deathly Screech
 		[239264] = Defaults(), -- Lunar Flare (Tank)
-		[236712] = Defaults(5), -- Lunar Beacon
+		[236712] = Defaults(), -- Lunar Beacon
 		[236304] = Defaults(), -- Incorporeal Shot
+		[236305] = Defaults(), -- Incorporeal Shot -- (Heroic)
+		[236306] = Defaults(), -- Incorporeal Shot
+		[237570] = Defaults(), -- Incorporeal Shot
+		[248911] = Defaults(), -- Incorporeal Shot
 		[236550] = Defaults(), -- Discorporate (Tank)
 		[236330] = Defaults(), -- Astral Vulnerability
+		[236529] = Defaults(), -- Twilight Glaive
 		[236541] = Defaults(), -- Twilight Glaive
+		[237561] = Defaults(), -- Twilight Glaive -- (Heroic)
+		[237633] = Defaults(), -- Spectral Glaive
 		[233263] = Defaults(), -- Embrace of the Eclipse
 
 		-- Mistress Sassz'ine
 		[230959] = Defaults(), -- Concealing Murk
-		[232722] = Defaults(), -- Slicing Tornado
+		[232732] = Defaults(), -- Slicing Tornado
 		[232913] = Defaults(), -- Befouling Ink
 		[234621] = Defaults(), -- Devouring Maw
 		[230201] = Defaults(), -- Burden of Pain (Tank)
 		[230139] = Defaults(), -- Hydra Shot
 		[232754] = Defaults(), -- Hydra Acid
-		[230384] = Defaults(), -- Consuming Hunger
+		[230920] = Defaults(), -- Consuming Hunger
 		[230358] = Defaults(), -- Thundering Shock
+		[230362] = Defaults(), -- Thundering Shock
 
 		-- The Desolate Host
 		[236072] = Defaults(), -- Wailing Souls
@@ -713,8 +830,10 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[235968] = Defaults(), -- Grasping Darkness
 
 		-- Maiden of Vigilance
-		[235117] = Defaults(), -- Unstable Soul !needs review
-		[240209] = Defaults(), -- Unstable Soul !needs review
+		[235117] = Defaults(), -- Unstable Soul
+		[240209] = Defaults(), -- Unstable Soul
+		[243276] = Defaults(), -- Unstable Soul
+		[249912] = Defaults(), -- Unstable Soul
 		[235534] = Defaults(), -- Creator's Grace
 		[235538] = Defaults(), -- Demon's Vigor
 		[234891] = Defaults(), -- Wrath of the Creators
@@ -730,6 +849,7 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[240213] = Defaults(), -- Chaos Flames
 		[236604] = Defaults(), -- Shadowy Blades
 		[236494] = Defaults(), -- Desolate (Tank)
+		[240728] = Defaults(), -- Tainted Essence
 
 		-- Kil'jaeden
 		[238999] = Defaults(), -- Darkness of a Thousand Souls
@@ -744,6 +864,7 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[236710] = Defaults(), -- Shadow Reflection: Erupting
 		[241822] = Defaults(), -- Choking Shadow
 		[236555] = Defaults(), -- Deceiver's Veil
+		[234310] = Defaults(), -- Armageddon Rain
 
 	-- The Nighthold
 		-- Skorpyron
@@ -762,7 +883,6 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[219965] = Defaults(), -- Time Release (Heal Absorb Yellow)
 		[219964] = Defaults(), -- Time Release (Heal Absorb Green)
 		[205653] = Defaults(), -- Passage of Time
-		[225901] = Defaults(), -- Time Bomb
 		[207871] = Defaults(), -- Vortex (Mythic)
 		[212099] = Defaults(), -- Temporal Charge
 
@@ -962,6 +1082,33 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[228519] = Defaults(), -- Anchor Slam
 		[202476] = Defaults(), -- Rabid
 		[232450] = Defaults(), -- Corrupted Axion
+
+	-- Mythic Dungeons
+		[226303] = Defaults(), -- Piercing Shards (Neltharion's Lair)
+		[227742] = Defaults(), -- Garrote (Karazhan)
+		[209858] = Defaults(), -- Necrotic
+		[226512] = Defaults(), -- Sanguine
+		[240559] = Defaults(), -- Grievous
+		[240443] = Defaults(), -- Bursting
+		[196376] = Defaults(), -- Grievous Tear
+		[200227] = Defaults(), -- Tangled Web
+	},
+}
+
+--[[
+	RAID BUFFS
+	Buffs that are provided by NPCs in raid or other PvE content.
+	This can be buffs put on other enemies or on players.
+]]
+G.unitframe.aurafilters['RaidBuffsElvUI'] = {
+	['type'] = 'Whitelist',
+	['spells'] = {
+		--Mythic/Mythic+
+		[209859] = Defaults(), -- Bolster
+		[178658] = Defaults(), -- Raging
+		[226510] = Defaults(), -- Sanguine
+
+		--Raids
 	},
 }
 
@@ -1009,6 +1156,7 @@ G.unitframe.buffwatch = {
 	PALADIN = {
 		[53563] = ClassBuff(53563, "TOPRIGHT", {0.7, 0.3, 0.7}),         -- Beacon of Light
 		[156910] = ClassBuff(156910, "TOPRIGHT", {0.7, 0.3, 0.7}),       -- Beacon of Faith
+		[200025] = ClassBuff(200025, "TOPRIGHT", {0.7, 0.3, 0.7}),       -- Beacon of Virtue
 		[1022] = ClassBuff(1022, "BOTTOMRIGHT", {0.2, 0.2, 1}, true),    -- Hand of Protection
 		[1044] = ClassBuff(1044, "BOTTOMRIGHT", {0.89, 0.45, 0}, true),  -- Hand of Freedom
 		[6940] = ClassBuff(6940, "BOTTOMRIGHT", {0.89, 0.1, 0.1}, true), -- Hand of Sacrifice
@@ -1016,6 +1164,7 @@ G.unitframe.buffwatch = {
 	},
 	SHAMAN = {
 		[61295] = ClassBuff(61295, "TOPRIGHT", {0.7, 0.3, 0.7}), -- Riptide
+		[204288] = ClassBuff(204288, "BOTTOMRIGHT", {0.2, 0.2, 1}), -- Earth Shield (Honor Talent)
 	},
 	MONK = {
 		[119611] = ClassBuff(119611, "TOPLEFT", {0.8, 0.4, 0.8}),    --Renewing Mist
@@ -1107,21 +1256,12 @@ G.unitframe.specialFilters = {
 	['Boss'] = true,
 	['Personal'] = true,
 	['nonPersonal'] = true,
-	["blockNonPersonal"] = true,
+	['blockNonPersonal'] = true,
 	['CastByUnit'] = true,
 	['notCastByUnit'] = true,
 	['blockNoDuration'] = true,
 	['Dispellable'] = true,
+	['CastByNPC'] = true,
+	['CastByPlayers'] = true,
+	['blockCastByPlayers'] = true,
 };
-
-G.unitframe.populatedSpecialFilters = {}; --populates from `G.unitframe.specialFilters` and `G.unitframe.aurafilters`
-
-for name, table in pairs(G.unitframe.aurafilters) do
-	G.unitframe.populatedSpecialFilters['Friendly:'..name] = true;
-	G.unitframe.populatedSpecialFilters['Enemy:'..name] = true;
-end
-for name, table in pairs(G.unitframe.specialFilters) do
-	G.unitframe.populatedSpecialFilters['Friendly:'..name] = true;
-	G.unitframe.populatedSpecialFilters['Enemy:'..name] = true;
-	G.unitframe.populatedSpecialFilters[name] = true;
-end

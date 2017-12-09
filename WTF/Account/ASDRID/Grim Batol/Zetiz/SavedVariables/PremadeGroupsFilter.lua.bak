@@ -27,13 +27,13 @@ PremadeGroupsFilterState = {
 		},
 		["members"] = {
 			["min"] = "",
-			["max"] = "3",
-			["act"] = false,
+			["max"] = "4",
+			["act"] = true,
 		},
 		["heals"] = {
 			["min"] = "1",
 			["max"] = "",
-			["act"] = false,
+			["act"] = true,
 		},
 		["defeated"] = {
 			["min"] = "",

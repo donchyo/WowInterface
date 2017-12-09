@@ -1,10 +1,8 @@
 ﻿local E, L, V, P, G = unpack(ElvUI); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local D = E:GetModule("Distributor")
-local B = E:GetModule("Blizzard")
 local AceGUI = LibStub("AceGUI-3.0")
 
 local tsort, tinsert = table.sort, table.insert
-local floor, ceil = math.floor, math.ceil
 local format = string.format
 local DEFAULT_WIDTH = 890;
 local DEFAULT_HEIGHT = 651;
@@ -124,27 +122,30 @@ local DEVELOPERS = {
 	"Haste",
 	"Nightcracker",
 	"Omega1970",
-	"Hydrazine"
+	"Hydrazine",
+	"Blazeflack",
+	"|cffff7d0aMerathilis|r",
+	"|cFF8866ccSimpy|r"
 }
 
 local TESTERS = {
 	"Tukui Community",
 	"|cffF76ADBSarah|r - For Sarahing",
 	"Affinity",
+	"Azilroka",
 	"Modarch",
 	"Bladesdruid",
 	"Tirain",
 	"Phima",
 	"Veiled",
-	"Blazeflack",
 	"Repooc",
 	"Darth Predator",
-	'Alex',
-	'Nidra',
-	'Kurhyus',
-	'BuG',
-	'Yachanay',
-	'Catok'
+	"Alex",
+	"Nidra",
+	"Kurhyus",
+	"BuG",
+	"Yachanay",
+	"Catok"
 }
 
 tsort(DONATORS, function(a,b) return a < b end) --Alphabetize
@@ -234,7 +235,7 @@ local function ExportImport_Open(mode)
 	Frame:AddChild(Label1)
 
 	local Label2 = AceGUI:Create("Label")
-	local font = GameFontHighlightSmall:GetFont()
+	font = GameFontHighlightSmall:GetFont()
 	Label2:SetFont(font, 14)
 	Label2:SetText(".\n.")
 	Label2:SetWidth(800)

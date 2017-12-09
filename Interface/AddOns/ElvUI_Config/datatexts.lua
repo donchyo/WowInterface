@@ -34,7 +34,7 @@ function DT:PanelLayoutOptions()
 				name = L[pointLoc] or pointLoc,
 				order = order,
 			}
-			for option, value in pairs(tab) do
+			for option in pairs(tab) do
 				table[pointLoc].args[option] = {
 					type = 'select',
 					name = L[option] or option:upper(),
@@ -207,37 +207,26 @@ E.Options.args.datatexts = {
 								E:GetModule('Layout'):SetDataPanelStyle()
 							end,
 						},
-						noCombatClick = {
+						panelBackdrop = {
 							order = 5,
+							name = L["Backdrop"],
+							type = 'toggle',
+							set = function(info, value)
+								E.db.datatexts[ info[#info] ] = value
+								E:GetModule('Layout'):SetDataPanelStyle()
+							end,
+						},
+						noCombatClick = {
+							order = 6,
 							type = "toggle",
 							name = L["Block Combat Click"],
 							desc = L["Blocks all click events while in combat."],
 						},
 						noCombatHover = {
-							order = 6,
+							order = 7,
 							type = "toggle",
 							name = L["Block Combat Hover"],
 							desc = L["Blocks datatext tooltip from showing in combat."],
-						},
-						goldFormat = {
-							order = 7,
-							type = 'select',
-							name = L["Gold Format"],
-							desc = L["The display format of the money text that is shown in the gold datatext and its tooltip."],
-							values = {
-								['SMART'] = L["Smart"],
-								['FULL'] = L["Full"],
-								['SHORT'] = SHORT,
-								['SHORTINT'] = L["Short (Whole Numbers)"],
-								['CONDENSED'] = L["Condensed"],
-								['BLIZZARD'] = L["Blizzard Style"],
-							},
-						},
-						goldCoins = {
-							order = 8,
-							type = 'toggle',
-							name = L["Show Coins"],
-							desc = L["Use coin icons instead of colored text."],
 						},
 					},
 				},
@@ -421,12 +410,34 @@ E.Options.args.datatexts = {
 					name = L["Currency Format"],
 					get = function(info) return E.db.datatexts.currencies.displayStyle end,
 					set = function(info, value) E.db.datatexts.currencies.displayStyle = value; DT:LoadDataTexts() end,
-					disabled = function() return (E.db.datatexts.currencies.displayedCurrency == "GOLD") end,
+					hidden = function() return (E.db.datatexts.currencies.displayedCurrency == "GOLD") end,
 					values = {
 						["ICON"] = L["Icons Only"],
 						["ICON_TEXT"] = L["Icons and Text"],
 						["ICON_TEXT_ABBR"] = L["Icons and Text (Short)"],
 					},
+				},
+				goldFormat = {
+					order = 3,
+					type = 'select',
+					name = L["Gold Format"],
+					desc = L["The display format of the money text that is shown in the gold datatext and its tooltip."],
+					hidden = function() return (E.db.datatexts.currencies.displayedCurrency ~= "GOLD") end,
+					values = {
+						['SMART'] = L["Smart"],
+						['FULL'] = L["Full"],
+						['SHORT'] = SHORT,
+						['SHORTINT'] = L["Short (Whole Numbers)"],
+						['CONDENSED'] = L["Condensed"],
+						['BLIZZARD'] = L["Blizzard Style"],
+					},
+				},
+				goldCoins = {
+					order = 4,
+					type = 'toggle',
+					name = L["Show Coins"],
+					desc = L["Use coin icons instead of colored text."],
+					hidden = function() return (E.db.datatexts.currencies.displayedCurrency ~= "GOLD") end,
 				},
 			},
 		},

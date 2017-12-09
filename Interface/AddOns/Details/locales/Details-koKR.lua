@@ -38,7 +38,7 @@ L["STRING_ATTRIBUTE_DAMAGE_FRAGS"] = "죽임"
 L["STRING_ATTRIBUTE_DAMAGE_FRIENDLYFIRE"] = "아군에게 준 피해"
 L["STRING_ATTRIBUTE_DAMAGE_TAKEN"] = "받은 피해"
 L["STRING_ATTRIBUTE_ENERGY"] = "자원"
-L["STRING_ATTRIBUTE_ENERGY_ALTERNATEPOWER"] = "보조 자원"
+L["STRING_ATTRIBUTE_ENERGY_ALTERNATEPOWER"] = "보조 마력"
 L["STRING_ATTRIBUTE_ENERGY_ENERGY"] = "기력 생성"
 L["STRING_ATTRIBUTE_ENERGY_MANA"] = "마나 회복"
 L["STRING_ATTRIBUTE_ENERGY_RAGE"] = "분노 생성"
@@ -125,7 +125,7 @@ L["STRING_CUSTOM_ENEMY_DT"] = " 받은 피해"
 L["STRING_CUSTOM_EXPORT"] = "내보내기"
 L["STRING_CUSTOM_FUNC_INVALID"] = "사용자 설정 스크립트가 올바르지 않아서 창을 새로고치지 못했습니다."
 L["STRING_CUSTOM_HEALTHSTONE_DEFAULT"] = "치유 물약 & 생명석"
-L["STRING_CUSTOM_HEALTHSTONE_DEFAULT_DESC"] = "생명석이나 치유 물약을 사용한 공격대원을 보여줍니다."
+L["STRING_CUSTOM_HEALTHSTONE_DEFAULT_DESC"] = "생명석이나 치유 물약을 사용한 공격대원을 표시합니다."
 L["STRING_CUSTOM_ICON"] = "아이콘:"
 L["STRING_CUSTOM_IMPORT"] = "가져오기"
 L["STRING_CUSTOM_IMPORT_ALERT"] = "디스플레이를 불러왔습니다, 가져오기를 클릭하여 승인하세요."
@@ -955,8 +955,8 @@ L["STRING_OPTIONS_PVPFRAGS_DESC"] = "활성화하면 |cFFFFFF00피해 > 죽임|r
 L["STRING_OPTIONS_REALMNAME"] = "서버 이름 제거"
 L["STRING_OPTIONS_REALMNAME_DESC"] = [=[활성화하면 캐릭터의 서버 이름을 표시하지 않습니다.
 
-|cFFFFFF00비활성|r: Charles-데스윙
-|cFFFFFF00활성|r: Charles]=]
+|cFFFFFF00비활성|r: Voidlord-아즈샤라
+|cFFFFFF00활성|r: Voidlord]=]
 L["STRING_OPTIONS_REPORT_ANCHOR"] = "보고서:"
 L["STRING_OPTIONS_REPORT_HEALLINKS"] = "이로운 주문 링크"
 L["STRING_OPTIONS_REPORT_HEALLINKS_DESC"] = [=[이 옵션이 활성화된 상태에서 보고서를 전송하면 |cFF55FF55이로운|r 주문이 이름 대신 주문 링크로 보고됩니다.

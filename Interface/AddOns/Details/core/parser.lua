@@ -130,6 +130,15 @@
 		[201364] = 218617, --warrior rampage
 		[201363] = 218617, --warrior rampage
 		
+		[85384] = 96103, --warrior raging blow
+		[85288] = 96103, --warrior raging blow
+		
+		[163558] = 5308, --warrior execute
+		[217955] = 5308, --warrior execute
+		[217956] = 5308, --warrior execute
+		[217957] = 5308, --warrior execute
+		[224253] = 5308, --warrior execute
+		
 		[222031] = 199547, --deamonhunter ChaosStrike
 		[200685] = 199552, --deamonhunter Blade Dance
 		[210155] = 210153, --deamonhunter Death Sweep
@@ -4000,6 +4009,14 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			end
 		end
 		
+		--> wipe encounter data if changing map while the encounter table is poiting to argus encounter ~REMOVE on 8.0
+		if (_detalhes.encounter_table and _detalhes.encounter_table.id == 2092) then
+			_table_wipe (_detalhes.encounter_table)
+			if (_detalhes.debug) then
+				_detalhes:Msg ("(debug) map changed with encounter table pointing to argus encounter, wiping the encounter table.")
+			end
+		end
+		
 		_detalhes.time_type = _detalhes.time_type_original
 		
 		_detalhes:CheckChatOnZoneChange (zoneType)
@@ -4058,6 +4075,13 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			if (_detalhes.force_activity_time_pvp) then
 				_detalhes.time_type_original = _detalhes.time_type
 				_detalhes.time_type = 1
+			end
+		
+			if (not _detalhes.is_in_arena) then
+				--> reset spec cache if broadcaster requested
+				if (_detalhes.streamer_config.reset_spec_cache) then
+					wipe (_detalhes.cached_specs)
+				end
 			end
 		
 			_detalhes.is_in_arena = true

@@ -15,11 +15,6 @@ VER 3 0100000000000009 " " "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast !Feign Death
 END
-VER 3 0100000000000008 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast aspect of the hawk
-/cast aspect of the cheetah
-END
 VER 3 0100000000000010 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Misdirection
 /cast [help][@focus,nodead,help][@pet,exists] Misdirection
@@ -55,8 +50,8 @@ VER 3 010000000000001F "es" "INV_MISC_QUESTIONMARK"
 /cast explosive shot
 /petattack [@pettarget,noexists]
 END
-VER 3 0100000000000020 "fox" "INV_MISC_QUESTIONMARK"
-/cast !aspect of the fox
+VER 3 0100000000000026 "focus conc" "INV_MISC_QUESTIONMARK"
+/cast [@focus] concussive shot
 END
 VER 3 010000000000000A "kc" "INV_MISC_QUESTIONMARK"
 #showtooltip kill command
@@ -110,4 +105,9 @@ VER 3 010000000000001B "stampede" "INV_MISC_QUESTIONMARK"
 /cancelaura Hand of Protection
 /cast Stampede
 /petattack
+END
+VER 3 0100000000000027 "TUGAR" "INV_MISC_QUESTIONMARK"
+/target tugar bloodtotem
+/cast intimidation
+/targetlastarget
 END

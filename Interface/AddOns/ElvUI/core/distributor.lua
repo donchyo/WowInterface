@@ -4,7 +4,7 @@ local LibCompress = LibStub:GetLibrary("LibCompress")
 local LibBase64 = LibStub("LibBase64-1.0-ElvUI")
 
 --Cache global variables
-local tonumber, type, pcall, loadstring = tonumber, type, pcall, loadstring
+local tonumber, type, gsub, pcall, loadstring = tonumber, type, gsub, pcall, loadstring
 local len, format, split, find = string.len, string.format, string.split, string.find
 --WoW API / Variables
 local CreateFrame = CreateFrame
@@ -387,6 +387,7 @@ function D:Decode(dataString)
 		end
 
 		profileDataAsString = format("%s%s", profileDataAsString, "}") --Add back the missing "}"
+		profileDataAsString = gsub(profileDataAsString, "\124\124", "\124") --Remove escape pipe characters
 		profileType, profileKey = E:SplitString(profileInfo, "::")
 
 		local profileToTable = loadstring(format("%s %s", "return", profileDataAsString))
@@ -534,7 +535,7 @@ E.PopupDialogs["IMPORT_RL"] = {
 	text = L["You have imported settings which may require a UI reload to take effect. Reload now?"],
 	button1 = ACCEPT,
 	button2 = CANCEL,
-	OnAccept = function() ReloadUI() end,
+	OnAccept = ReloadUI,
 	timeout = 0,
 	whileDead = 1,
 	hideOnEscape = false,

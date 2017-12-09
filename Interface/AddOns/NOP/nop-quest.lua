@@ -10,7 +10,7 @@ function NOP:QBAnchorMove() -- move anchor for quest bar
   if NOP.DB.qb_sticky then
     self.QB:SetAllPoints(private.BUTTON_FRAME)
   else
-    self.QB:SetPoint(NOP.DB.qb[1] or "CENTER", self.frameHider, NOP.DB.qb[3] or "CENTER", NOP.DB.qb[4] or 0, NOP.DB.qb[5] or 0)
+    self.QB:SetPoint(NOP.DB.qb[1] or "CENTER", self.frameHiderQ, NOP.DB.qb[3] or "CENTER", NOP.DB.qb[4] or 0, NOP.DB.qb[5] or 0)
   end
 end
 function NOP:QBAnchorSave() -- save Anchor pos after button position change
@@ -33,7 +33,7 @@ function NOP:QBAnchorSize() -- resize quest bar anchor to current icon size
   end
 end
 function NOP:QBAnchor() -- create quest bar anchor frame
-  self.QB = CreateFrame("Frame",private.QB_NAME.."Anchor",self.frameHider)
+  self.QB = CreateFrame("Frame",private.QB_NAME.."Anchor",self.frameHiderQ)
   self:QBAnchorSize() -- same size as item button
   self:QBAnchorMove() -- same position as item button
   self.QB.buttons = {} -- create empty button list
@@ -109,11 +109,11 @@ function NOP:QBBlacklist(isPermanent,itemID) -- add quest item to blacklist
       if not NOP.DB["T_BLACKLIST_Q"] then NOP.DB.T_BLACKLIST_Q = {} end
       NOP.DB.T_BLACKLIST_Q[0] = true
       NOP.DB.T_BLACKLIST_Q[itemID] = true
-      self.printt(private.L["Permanently Blacklisted:|cFF00FF00"],name or itemID)
+      self.printt(private.L["PERMA_BLACKLIST"],name or itemID)
     else
       NOP.T_BLACKLIST_Q[0] = true -- blacklist is defined
       NOP.T_BLACKLIST_Q[itemID] = true
-      self.printt(private.L["Session Blacklisted:|cFF00FF00"],name or itemID)
+      self.printt(private.L["SESSION_BLACKLIST"],name or itemID)
     end
     self:QBUpdate() -- force update
   end
@@ -162,25 +162,24 @@ function NOP:QBButtonAnchor(i) -- anchor buttons
   end
 end
 function NOP:QBButtonAdd(i, itemID) -- set new item
-  local button = self:QBButton(i, self.QB)
-  button.icon:SetTexture(GetItemIcon(itemID))
-  button.itemID = itemID
-  button.expiration = 0
   local count = GetItemCount(itemID)
-  button.count:SetText((type(count) == "number") and (count > 1) and count or "")
-  button:SetAttribute("type1","item") -- "type1" Unmodified left click, old type*.
-  button:SetAttribute("item1", NOP.LQI:GetItemString(itemID))
+  local bt = self:QBButton(i, self.QB)
+  bt.icon:SetTexture(GetItemIcon(itemID))
+  bt.itemID = itemID
+  bt.count:SetText((type(count) == "number") and (count > 1) and count or "")
+  bt:SetAttribute("type1","item") -- "type1" Unmodified left click, old type*.
+  bt:SetAttribute("item1", NOP.LQI:GetItemString(itemID))
   if (NOP.LQI.startsQuestItems[itemID] and not NOP.LQI.activeQuestItems[itemID]) or (itemID == private.DEFAULT_ITEMID and NOP.DB.visible) then -- quest item or fake button
     self.QB.refreshBar = true -- even QUEST_ACCEPTED need call NOP.LQI:Scan()
-    button.questMark:Show()
+    bt.questMark:Show()
   else
-    button.questMark:Hide()
+    bt.questMark:Hide()
   end
   self:QBButtonAnchor(i)
   if (itemID == self.AceDB.char.questBarID) then -- rebind hotkey to last used item
     self:QBKeyBind(button,i)
   end
-  if not(button:IsShown() or button:IsVisible()) then button:Show() end
+  if not(bt:IsShown() or bt:IsVisible()) then bt:Show() end
 end
 function NOP:QBReset() -- hide and clear buttons on quest bar
   self.QB.refreshBar = false -- post refresh by calling NOP.LQI:Scan()
@@ -241,19 +240,25 @@ function NOP:QBQuestAccept() -- refresh items on Quest Items Bar when quest is a
   self.timerQBQuestAccept = nil
   self.LQI:Scan()
 end
+function NOP:QBAutoQuestTimer(ptype,qID)
+  if self:inCombat() then
+    if not self.timerQBAutoQuest then self.timerQBAutoQuest = self:ScheduleTimer("QBAutoQuestTimer", private.TIMER_IDLE,ptype,qID) end -- postspone
+  end
+  self.timerQBAutoQuest = nil
+  local index = GetQuestLogIndexByID(qID)
+  if not index then return end -- qest is not present now it was completed during fight
+  if (ptype == "OFFER") then
+    ShowQuestOffer(index)
+  else
+    ShowQuestComplete(index)
+  end
+end
 function NOP:QBAutoQuest()
   hooksecurefunc("AutoQuestPopupTracker_AddPopUp", 
     function(questID, popUpType)
       if NOP.DB.autoquest and (type(questID) == "number") and (type(popUpType) == "string") and questID then
         local index = GetQuestLogIndexByID(questID)
-        if index then
-          if (popUpType == "OFFER") then
-            ShowQuestOffer(index)
-          else
-            ShowQuestComplete(index)
-          end
-          -- AutoQuestPopupTracker_RemovePopUp(questID)
-        end
+        if index then NOP:QBAutoQuestTimer(popUpType,questID) end -- taint prevent
       end
     end
   )

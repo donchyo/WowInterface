@@ -4,7 +4,6 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Krixi-Grim Batol",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128866] = {
 			["Relics"] = {
@@ -41,6 +40,7 @@ PawnOptions = {
 			["Name"] = "The Silver Hand",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

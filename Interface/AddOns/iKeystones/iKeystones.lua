@@ -7,11 +7,10 @@ addon:RegisterEvent('CHALLENGE_MODE_MAPS_UPDATE')
 addon:RegisterEvent('PLAYER_LOGIN')
 addon:RegisterEvent('BAG_UPDATE')
 addon:RegisterEvent('CHALLENGE_MODE_KEYSTONE_RECEPTABLE_OPEN')
-addon:RegisterEvent('ARTIFACT_UPDATE')
 local iKS = {}
 iKS.frames = {}
 local player = UnitGUID('player')
-iKS.currentMax = 10
+iKS.currentMax = 15
 iKS.weeklyChestItemLevels = {
 	[2] = 905,
 	[3] = 910,
@@ -22,11 +21,68 @@ iKS.weeklyChestItemLevels = {
 	[8] = 925,
 	[9] = 930,
 	[10] = 935,
-	--[11] = 910,
-	--[12] = 915,
-	--[13] = 920,
-	--[14] = 925,
-	--[15] = 930,
+	[11] = 940,
+	[12] = 945,
+	[13] = 950,
+	[14] = 955,
+	[15] = 960,
+}
+iKS.itemLevels = {
+	[2] = 890,
+	[3] = 890,
+	[4] = 895,
+	[5] = 900,
+	[6] = 905,
+	[7] = 905,
+	[8] = 910,
+	[9] = 910,
+	[10] = 915,
+	[11] = 920,
+	[12] = 925,
+	[13] = 930,
+	[14] = 935,
+	[15] = 940,
+}
+iKS.apFromDungeons = {
+	[1] = { -- Lesser
+		['p'] = 175, -- Lesser Pathfinder's Symbol
+		['a'] = 290, -- Lesser Adventurer's Symbol
+		['h'] = 325, -- Lesser Hero's Symbol
+		['c'] = 465, -- Lesser Champion's Symbol
+		['m'] = 725, -- Lesser Master's Symbol
+		['b'] = 50, -- Lesser Adept's Spoils
+	},
+	[2] = { -- Normal
+		['p'] = 300, -- Pathfinder's Symbol
+		['a'] = 475, -- Adventurer's Symbol
+		['h'] = 540, -- Hero's Symbol
+		['c'] = 775, -- Champion's Symbol
+		['m'] = 1200, -- Master's Symbol
+		['b'] = 100, -- Adept's Spoils
+	},
+	[3] = { -- Greater
+		['p'] = 375, -- Greater Pathfinder's Symbol
+		['a'] = 600, -- Greater Adventurer's Symbol
+		['h'] = 675, -- Greater Hero's Symbol
+		['c'] = 1000, -- Greater Champion's Symbol
+		['m'] = 1500, -- Greater Master's Symbol
+		['b'] = 125, -- Greater Adept's Spoils
+	},
+	dif = {
+		[197] = 2, -- Eye of Azhara
+		[198] = 2, -- Darkhearth Thicket
+		[199] = 2, -- Blackrook Hold
+		[200] = 3, -- Halls of Valor
+		[206] = 2, -- Neltharion's Lair
+		[207] = 2, -- Vault of the Wardens
+		[208] = 1, -- Maw of Souls
+		[209] = 3, -- The Arcway
+		[210] = 2, -- Court of Stars
+		[227] = 2, -- Return to Karazhan: Lower
+		[233] = 2, -- Cathedral of Eternal Night
+		[234] = 2, -- Return to Karazhan: Upper
+		[239] = 2, -- The Seat of the Triumvirate
+	},
 }
 iKS.keystonesToMapIDs = {
 	[197] = 1456, -- Eye of Azhara
@@ -43,41 +99,51 @@ iKS.keystonesToMapIDs = {
 	[234] = 1651, -- Return to Karazhan: Upper
 	[239] = 1753, -- The Seat of the Triumvirate
 }
-iKS.akMods = {
-	[41] = 16000100,
-	[42] = 20800100,
-	[43] = 27040100,
-	[44] = 35150100,
-	[45] = 45700100,
-	[46] = 59400100,
-	[47] = 77250100,
-	[48] = 100400100,
-	[49] = 130500100,
-	[50] = 169650100,
-	[51] = 220550100,
-	[52] = 286750100,
-	[53] = 372750100,
-	[54] = 484600100,
-	[55] = 630000100,
-}
-function iKS:getAP(level)
-	if iKeystonesConfig.ak and level then
-		local akMod = iKS.akMods[(iKeystonesConfig.ak <55 and iKeystonesConfig.ak+1) or 55]/100
+iKS.akMod = 630000100/100
+
+function iKS:getAP(level, map, current, onlyNumber)
+	if level and map then
+		local dif = iKS.apFromDungeons.dif[map] or 2 -- default to normal
+		if level >= 15 then
+			ap = (iKS.apFromDungeons[dif].m+(level-15)*iKS.apFromDungeons[dif].b)*iKS.akMod
+		elseif level >= 10 then
+			ap = (iKS.apFromDungeons[dif].c+(level-10)*iKS.apFromDungeons[dif].b)*iKS.akMod
+		elseif level >= 7 then
+			ap = iKS.apFromDungeons[dif].h*iKS.akMod
+		elseif level >= 4 then
+			ap = iKS.apFromDungeons[dif].a*iKS.akMod
+		else
+			ap = iKS.apFromDungeons[dif].p*iKS.akMod
+		end
+		if onlyNumber then
+			return ap/1e9
+		else
+			return string.format('%.2fB', ap/1e9)
+		end
+	elseif level then
 		local ap
 		if level >= 15 then
-			ap = (5000+(level-15)*400)*akMod
+			ap = (5000+(level-15)*400)*iKS.akMod
 		elseif level >= 10 then
-			ap = (3125+(level-10)*400)*akMod
+			ap = (3125+(level-10)*400)*iKS.akMod
 		elseif level >= 7 then
-			ap = 2150*akMod
+			ap = 2150*iKS.akMod
 		elseif level >= 4 then
-			ap = 1925*akMod
+			ap = 1925*iKS.akMod
 		elseif level > 0 then
-			ap = 1250*akMod
+			ap = 1250*iKS.akMod
 		end
-		return ap and (string.format('%.2fB', ap/1e9)) or '-'
+		if onlyNumber then
+			return ap and ap/1e9 or 0
+		else
+			return ap and (string.format('%.2fB', ap/1e9)) or '-'
+		end
 	else
-		return '-'
+		if onlyNumber then
+			return 0
+		else
+			return '-'
+		end
 	end
 end
 function iKS:weeklyReset()
@@ -253,7 +319,7 @@ function addon:PLAYER_LOGIN()
 	player = UnitGUID('player')
 	C_ChallengeMode.RequestMapInfo()
 	iKS:scanInventory()
-	if iKeystonesDB[player].canLoot then
+	if iKeystonesDB[player] and iKeystonesDB[player].canLoot then
 		addon:RegisterEvent('QUEST_LOG_UPDATE')
 	elseif not IsQuestFlaggedCompleted(44554) then
 		addon:RegisterEvent('ADDON_LOADED')
@@ -293,13 +359,16 @@ function addon:ADDON_LOADED(addonName)
 				},
 			}
 		end
+		if iKeystonesConfig.ak then -- remove old ak stuff from wtf file
+			iKeystonesConfig.ak = nil
+		end
 	elseif addonName == 'Blizzard_ChallengesUI' then
 		addon:UnregisterEvent('ADDON_LOADED')
 		local q = C_ChallengeMode.IsWeeklyRewardAvailable()
 		iKeystonesDB[player].canLoot = q
 		if q then
 			addon:RegisterEvent('QUEST_LOG_UPDATE')
-		end		
+		end
 	end
 end
 function addon:BAG_UPDATE()
@@ -307,12 +376,6 @@ function addon:BAG_UPDATE()
 end
 function addon:CHALLENGE_MODE_MAPS_UPDATE()
 	iKS:scanCharacterMaps()
-end
-function addon:ARTIFACT_UPDATE()
-    local c = C_ArtifactUI.GetArtifactKnowledgeLevel()
-    if c then
-		iKeystonesConfig.ak = c
-	end
 end
 function addon:QUEST_LOG_UPDATE()
 	if IsQuestFlaggedCompleted(44554) then
@@ -584,6 +647,38 @@ function iKS:createMainWindow()
 	iKS.affixes.aff7:SetPoint('RIGHT', iKS.affixes.aff10, 'LEFT', 0,0)
 	iKS.affixes.aff7.text:SetText(C_ChallengeMode.GetAffixInfo(iKeystonesConfig.aff.aff7.a) or UNKNOWN)
 end
+function iKS:addToTooltip(self, map, keyLevel)
+	map = tonumber(map)
+	keyLevel = tonumber(keyLevel)
+	self:AddLine(' ')
+	self:AddDoubleLine(string.format('Items: %s |cff00ff00+1|r', (keyLevel > 10 and 2+(keyLevel-10)*.4 or 2)), 'ilvl: ' .. (iKS.itemLevels[keyLevel] or iKS.itemLevels[iKS.currentMax]))
+	if keyLevel > iKeystonesDB[player].maxCompleted then
+		local weeklyDif = iKS:getAP(keyLevel, nil, nil, true) - iKS:getAP(iKeystonesDB[player].maxCompleted, nil, nil, true)
+		self:AddDoubleLine(string.format('AP: |cff00ff00%.2f|rB', iKS:getAP(keyLevel, map,nil,true)), string.format('Weekly: |cff00ff00+%.2f|rB', weeklyDif))
+	else
+		self:AddLine(string.format('AP: |cff00ff00%.2f|rB', iKS:getAP(keyLevel, map,nil,true)))
+	end
+end
+local function gameTooltipScanning(self)
+	local itemName, itemLink = self:GetItem()
+	if not (itemLink and itemLink:find('Hkeystone')) then
+		return
+	end
+	local map, keyLevel, l4,l7,l10 = string.match(itemLink, 'keystone:(%d+):(%d+):(%d+):(%d+):(%d+)')
+	iKS:addToTooltip(self, map, keyLevel)
+end
+local function itemRefScanning(self)
+	local itemName, itemLink = self:GetItem()
+	if not (itemLink and itemLink:find('Hitem:138019')) then
+		return
+	end
+	local tempTable = {strsplit(':', itemLink)}
+	local map = tempTable[15]
+	local level = tempTable[16]
+	iKS:addToTooltip(self, map, level)
+end
+GameTooltip:HookScript('OnTooltipSetItem', gameTooltipScanning)
+ItemRefTooltip:HookScript('OnTooltipSetItem', itemRefScanning)
 
 SLASH_IKEYSTONES1 = "/ikeystones"
 SLASH_IKEYSTONES2 = "/iks"

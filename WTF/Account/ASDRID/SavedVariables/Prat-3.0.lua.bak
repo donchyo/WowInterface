@@ -53,6 +53,17 @@ Prat3DB = {
 			},
 		},
 		["Prat_PopupMessage"] = {
+			["profiles"] = {
+				["Default"] = {
+					["sinkoptions"] = {
+						["sink20OutputSink"] = "RaidWarning",
+					},
+					["on"] = true,
+					["nickname"] = {
+						"Krixi", -- [1]
+					},
+				},
+			},
 		},
 		["Prat_CopyChat"] = {
 		},
@@ -71,24 +82,24 @@ Prat3DB = {
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Bawsi - Shattered Hand"] = "Default",
-		["Krixidk - Grim Batol"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
-		["Donch - Shattered Hand"] = "Default",
-		["Krixicx - Shattered Hand"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
+		["Krixidk - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixicx - Shattered Hand"] = "Default",
+		["Donch - Shattered Hand"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
 				["ChatLog"] = 2,
-				["History"] = 2,
 				["AltNames"] = 2,
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["KeyBindings"] = 2,
-				["PopupMessage"] = 2,
 				["OriginalButtons"] = 2,
 				["Alias"] = 2,
+				["History"] = 2,
 			},
 		},
 	},

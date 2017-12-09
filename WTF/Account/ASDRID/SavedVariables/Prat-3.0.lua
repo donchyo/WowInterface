@@ -58,10 +58,10 @@ Prat3DB = {
 					["nickname"] = {
 						"Krixi", -- [1]
 					},
-					["on"] = true,
 					["sinkoptions"] = {
 						["sink20OutputSink"] = "RaidWarning",
 					},
+					["on"] = true,
 				},
 			},
 		},
@@ -82,23 +82,25 @@ Prat3DB = {
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Bawsi - Shattered Hand"] = "Default",
-		["Krixidk - Grim Batol"] = "Default",
-		["Donchyo - Shattered Hand"] = "Default",
-		["Donch - Shattered Hand"] = "Default",
-		["Krixicx - Shattered Hand"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
+		["Donchyo - Shattered Hand"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
+		["Donch - Shattered Hand"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixicx - Shattered Hand"] = "Default",
+		["Krixidk - Grim Batol"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
 				["Alias"] = 2,
-				["History"] = 2,
 				["AltNames"] = 2,
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["KeyBindings"] = 2,
 				["OriginalButtons"] = 2,
 				["ChatLog"] = 2,
+				["History"] = 2,
 			},
 		},
 	},

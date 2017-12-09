@@ -8,7 +8,7 @@ PawnOptions = {
 		[128289] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 62,
+					["ItemLevel"] = 68,
 					["Type"] = "Iron",
 				}, -- [1]
 				{
@@ -25,11 +25,11 @@ PawnOptions = {
 		[128908] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 64,
+					["ItemLevel"] = 68,
 					["Type"] = "Fire",
 				}, -- [1]
 				{
-					["ItemLevel"] = 55,
+					["ItemLevel"] = 62,
 					["Type"] = "Wind",
 				}, -- [2]
 				{
@@ -38,6 +38,23 @@ PawnOptions = {
 				}, -- [3]
 			},
 			["Name"] = "Warswords of the Valarjar",
+		},
+		[128910] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 49,
+					["Type"] = "Iron",
+				}, -- [1]
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Blood",
+				}, -- [2]
+				{
+					["ItemLevel"] = 53,
+					["Type"] = "Shadow",
+				}, -- [3]
+			},
+			["Name"] = "Strom'kar, the Warbreaker",
 		},
 	},
 	["LastKeybindingsSet"] = 1,

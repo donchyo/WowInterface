@@ -1,27 +1,27 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/p sepuz", -- [1]
-		"/p ppl take my kicks", -- [2]
-		"/p :D", -- [3]
-		"/p ye", -- [4]
-		"/p i thought you said pull", -- [5]
-		"/p LUL", -- [6]
-		"/p oi", -- [7]
-		"/p im not sure who talked shit", -- [8]
-		"/p yes", -- [9]
-		"/p i heard vault", -- [10]
-		"/p new palce", -- [11]
-		"/p 16", -- [12]
-		"/p i havent done new place over +0", -- [13]
-		"/p i see", -- [14]
-		"/p unlucky", -- [15]
-		"/p now you can just fire all your sick burns", -- [16]
-		"/p without fear of combacks", -- [17]
-		"/p ;_;", -- [18]
-		"/p oke", -- [19]
-		"/p bai", -- [20]
+		" for the bigtrades", -- [1]
+		" idno, im just happy playing the game with some good people", -- [2]
+		" and not pugging", -- [3]
+		" :DD", -- [4]
+		" i'd imagine its shit", -- [5]
+		" atleast thats what pugging tos was", -- [6]
+		" having to convince tanks that it is possible to get 4 shields on maiden if you just move her somewhat fast", -- [7]
+		" great times", -- [8]
+		" could you move me in ts?", -- [9]
+		"/raid why not watchmefist?", -- [10]
+		"/cw Cerini-Antonidas trade me", -- [11]
+		" *-*", -- [12]
+		"/cw Samyra-ZirkeldesCenarius im guessing you want the ring, sorry, i want it for blood :/", -- [13]
+		"/cw Samyra-ZirkeldesCenarius :D", -- [14]
+		"/cw Samyra-ZirkeldesCenarius i just fell into some german raids", -- [15]
+		" same", -- [16]
+		"/s i try this", -- [17]
+		"/s yeah", -- [18]
+		"/s ilvl = skill", -- [19]
+		"/dance", -- [20]
 	},
-	["ChatLog"] = {
+	["ChatHistoryLog"] = {
 	},
 }

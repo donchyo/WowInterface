@@ -1,26 +1,6 @@
 
 ElvCharacterDB = {
-	["ChatEditHistory"] = {
-		" ye", -- [1]
-		"/p nelth 8 into other or cath 10?", -- [2]
-		"/p with cath we only have to do one", -- [3]
-		"/p but we might get cath from the nelth", -- [4]
-		"/p oke", -- [5]
-		"/p we do cath", -- [6]
-		"/p |cffa335ee|Hitem:151299::::::::110:254::2:1:3524:::|h[Viceroy's Umbral Mantle]|h|r", -- [7]
-		"/p |cffa335ee|Hitem:151313::::::::110:254::2:1:3524:::|h[Vest of the Void's Embrace]|h|r", -- [8]
-		"/p |cffa335ee|Hitem:151323::::::::110:254::2:1:3524:::|h[Pauldrons of the Void Hunter]|h|r", -- [9]
-		"/g apprently it dosent go well with shadow", -- [10]
-		"/p i take", -- [11]
-		"/p prob not", -- [12]
-		"/p but raidbots say its 2%", -- [13]
-		"/calendar", -- [14]
-		"/p :(", -- [15]
-		"/g |cffa335ee|Hitem:137367::::::::110:254::35:3:3418:1587:3337:::|h[Stormsinger Fulmination Charge]|h|r ", -- [16]
-		"/g hmm", -- [17]
-		"/g this any good?", -- [18]
-		"/g |cffa335ee|Hitem:147017::::::::110:254::3:3:3561:1482:3528:::|h[Tarnished Sentinel Medallion]|h|r|cffa335ee|Hitem:141482::::::::110:254::3:2:3466:1472:::|h[Unstable Arcanocrystal]|h|r", -- [19]
-		"/g oke", -- [20]
+	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
 		["Active"] = false,
@@ -28,6 +8,26 @@ ElvCharacterDB = {
 		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
 	},
-	["ChatLog"] = {
+	["ChatEditHistory"] = {
+		" tos?", -- [1]
+		" ye", -- [2]
+		" i should", -- [3]
+		" both dk and shaman really", -- [4]
+		" idk", -- [5]
+		" if i paly dk i thinki dps", -- [6]
+		"/m", -- [7]
+		"/g alteast surv does not have issues with killing the ice things", -- [8]
+		"/g this is wierd as a hunter", -- [9]
+		"/g i reach the guy", -- [10]
+		"/g in darkness", -- [11]
+		"/g but he dosent come out", -- [12]
+		"/g yeah", -- [13]
+		"/g maybe thats it", -- [14]
+		"/g i need to play this more", -- [15]
+		"/g i have no idea what im doing", -- [16]
+		"/g but im not doing enough boss dps ", -- [17]
+		"/g yet im doing 2mil dps cause im killing all the frost things", -- [18]
+		"/g so thats fun", -- [19]
+		"/wa", -- [20]
 	},
 }

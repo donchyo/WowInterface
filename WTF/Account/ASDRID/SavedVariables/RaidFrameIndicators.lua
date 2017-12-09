@@ -50,8 +50,8 @@ IndicatorsDB = {
 			["iconSize5"] = 14,
 			["showTooltip5"] = false,
 			["showDebuffs"] = true,
-			["stack5"] = false,
 			["showBuffs"] = true,
+			["stack5"] = false,
 		},
 		["Bawsie - Grim Batol"] = {
 			["showBuffs"] = true,

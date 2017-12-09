@@ -25,7 +25,10 @@ local order_cache =
 	{Z[1033]},
 	{Z[1014]},
 	{Z[1096]},
-	{Z[1021]}
+	{Z[1021]},
+	{Z[1135]},
+	{Z[1171]},
+	{Z[1170]},
    },
   -- by type
    {
@@ -57,6 +60,8 @@ local order_cache =
     {select(1, GetFactionInfoByID(1828))}, -- high
     {select(1, GetFactionInfoByID(1948))}, -- dreamw
     {select(1, GetFactionInfoByID(2045))}, -- armies
+    {select(1, GetFactionInfoByID(2165))}, -- army of the light
+    {select(1, GetFactionInfoByID(2170))}, -- argussian
    },
  }
 
@@ -82,6 +87,9 @@ local zone_indexes = {
                       [1014] = 6,
                       [1096] = 7,
                       [1021] = 8,
+                      [1135] = 9,
+                      [1171] = 10,
+                      [1170] = 11,
 					 }
 local type_indexes = {
                       [LE_QUEST_TAG_TYPE_PROFESSION] = 6,
@@ -99,6 +107,8 @@ local type_factions = {
 					   [1828] = 6,
 					   [1948] = 7,
 					   [2045] = 8,
+					   [2165] = 9,
+					   [2170] = 10,
 					  }
 
 local function determine_group(opt, v, info)
@@ -142,9 +152,6 @@ local function sortfunc(a, b)
 end
 
 local function setup_order()
-
- local c = collectgarbage("count")
- 
  local opt
  if svar and svar.options then
   for i = 1,4 do
@@ -178,27 +185,11 @@ local function setup_order()
  for k,v in pairs(plugin_data.Order[1]) do
   tsort(v, sortfunc)
  end
- --print("order garbage: ", collectgarbage("count") - c)
 end
 
 local function GenerateData()
  setup_order()
  DailyGlobalCheck:Refresh(plugin_data)
-end
-
-local function quest_removed(questID)
- for _,order in pairs(plugin_data.Order) do
-  for _,quests in pairs(order) do
-   local i = 2
-   while i < #quests do
-    if quests[i] == questID then
-     tremove(quests, i)
-    else
-     i = i + 1
-    end
-   end
-  end
- end
 end
 
 local function world_quests_update()
@@ -223,10 +214,9 @@ local function Initialize()
  
  DGCEventFrame:Hook("OPTION_CHANGED_PLUGIN", option_changed)
  DGCEventFrame:Hook("WORLD_QUESTS_UPDATE", world_quests_update)
- DGCEventFrame:Fire("WORLD_QUEST_REMOVED", quest_removed)
 end
 
-WQ:Initialize()
+WQ:Initialize(plugin_data)
 questsdata = WQ.Data
 
 plugin_data.Initialize = Initialize

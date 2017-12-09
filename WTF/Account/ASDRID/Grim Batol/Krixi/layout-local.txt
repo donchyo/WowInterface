@@ -27,6 +27,13 @@ X: 125
 Y: 27
 W: 790
 H: 454
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 448
+H: 444
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: RIGHT
@@ -34,10 +41,3 @@ X: 0
 Y: 203
 W: 370
 H: 110
-Frame: CharacterFrame
-FrameLevel: 1
-Anchor: TOP
-X: 329
-Y: -116
-W: 338
-H: 424

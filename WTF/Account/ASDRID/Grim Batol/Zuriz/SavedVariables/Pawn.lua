@@ -4,6 +4,7 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Zuriz-Grim Batol",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128911] = {
 			["Relics"] = {
@@ -29,7 +30,7 @@ PawnOptions = {
 					["Type"] = "Fire",
 				}, -- [1]
 				{
-					["ItemLevel"] = 58,
+					["ItemLevel"] = 62,
 					["Type"] = "Iron",
 				}, -- [2]
 				{
@@ -42,7 +43,7 @@ PawnOptions = {
 		[128935] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 55,
+					["ItemLevel"] = 62,
 					["Type"] = "Wind",
 				}, -- [1]
 				{
@@ -50,14 +51,13 @@ PawnOptions = {
 					["Type"] = "Frost",
 				}, -- [2]
 				{
-					["ItemLevel"] = 53,
+					["ItemLevel"] = 62,
 					["Type"] = "Wind",
 				}, -- [3]
 			},
 			["Name"] = "The Fist of Ra-den",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "SHAMAN",

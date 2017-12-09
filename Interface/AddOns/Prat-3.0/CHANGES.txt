@@ -1,37 +1,7 @@
-changeset:   1079:7d8d877ab3f5
-tag:         3.6.33
+changeset:   1081:54646840f7ac
+tag:         3.6.34
 user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Mon Oct 02 09:57:15 2017 -0700
-summary:     TOC 70300
-
-
-changeset:   1078:276f90260283
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Sun Jun 25 09:04:06 2017 -0700
-summary:     Readme
-
-
-changeset:   1077:73c00af7b3ec
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Sun Jun 25 05:46:19 2017 -0700
-summary:     Merge PR's from GitHub
-
-
-changeset:   1076:100c17e3d08b
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Sun Jun 25 05:29:51 2017 -0700
-summary:     Support social links for achievements
-
-
-changeset:   1075:8e31621c36a1
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Sun Jun 25 04:43:59 2017 -0700
-summary:     Fix copychat scraping order for full frame scrape - was reversed
-
-
-changeset:   1074:47b69204f149
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Sun Jun 25 04:27:49 2017 -0700
-summary:     Maybe we can reenable bubbles with some fixes
+date:        Sat Oct 07 18:15:35 2017 -0700
+summary:     Fix SoundKit error
 
 

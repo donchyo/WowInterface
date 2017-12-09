@@ -4,11 +4,12 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Krixidk-Grim Batol",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128403] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 61,
+					["ItemLevel"] = 72,
 					["Type"] = "Fire",
 				}, -- [1]
 				{
@@ -29,7 +30,7 @@ PawnOptions = {
 					["Type"] = "Blood",
 				}, -- [1]
 				{
-					["ItemLevel"] = 68,
+					["ItemLevel"] = 71,
 					["Type"] = "Shadow",
 				}, -- [2]
 				{
@@ -42,7 +43,7 @@ PawnOptions = {
 		[128292] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 55,
+					["ItemLevel"] = 62,
 					["Type"] = "Frost",
 				}, -- [1]
 				{
@@ -57,7 +58,6 @@ PawnOptions = {
 			["Name"] = "Blades of the Fallen Prince",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEATHKNIGHT",

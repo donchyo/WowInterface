@@ -6,10 +6,6 @@ VER 3 0100000000000012 "bh" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]binding heal
 END
-VER 3 0100000000000011 "chakra" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy Word: Chastise
-END
 VER 3 010000000000000E "clarity" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] clarity of will
@@ -30,6 +26,10 @@ VER 3 0100000000000010 "gs" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]guardian spirit
 END
+VER 3 0100000000000015 "harm" "INV_MISC_QUESTIONMARK"
+#showtooltip penance
+/cast [@target, harm] penance
+END
 VER 3 0100000000000005 "heal" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]HEAL
@@ -40,9 +40,6 @@ END
 VER 3 0100000000000007 "leap" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]leap of faith
-END
-VER 3 010000000000000A "milling1" "INV_MISC_QUESTIONMARK"
-/run function FnH() for i=0,4 do for j=1,GetContainerNumSlots(i) do local t={GetItemInfo(GetContainerItemLink(i,j) or 0)} if t[7]=="Herb" and select(2,GetContainerItemInfo(i,j))>=5 then return i.." "..j,t[1] end end end end
 END
 VER 3 0100000000000002 "pennance" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -68,4 +65,8 @@ END
 VER 3 0100000000000013 "shadowmend" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]shadow mend
+END
+VER 3 0100000000000014 "ture" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] light of t'uure
 END

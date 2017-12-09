@@ -1,33 +1,33 @@
 
 ElvCharacterDB = {
-	["ChatEditHistory"] = {
-		"/p ty", -- [1]
-		" do you belive in this?", -- [2]
-		" yes", -- [3]
-		"/p could i have those legs?", -- [4]
-		"/p and that ring", -- [5]
-		" where are we going?", -- [6]
-		" oke", -- [7]
-		" if only it was cloth", -- [8]
-		" uhm", -- [9]
-		" look at me", -- [10]
-		" ahaha", -- [11]
-		" i got stuck in the barrel for a while", -- [12]
-		" also", -- [13]
-		" the locks imp pulled", -- [14]
-		" that was a meaty lights wrath", -- [15]
-		" yeah", -- [16]
-		" not to bad", -- [17]
-		" |cff0070dd|Hitem:143991::::::::110:256:512:22:1:3623:110:::|h[Shoulders of Engulfing Winds]|h|r->|cffa335ee|Hitem:146996::::::::110:256::5:3:3562:1497:3528:::|h[Mantle of Broken Spirits]|h|r", -- [18]
-		" thanks for the dungeons", -- [19]
-		"/calendar", -- [20]
+	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
-	["ChatLog"] = {
+	["ChatEditHistory"] = {
+		" and on top of it", -- [1]
+		" i have t21 normal gloves", -- [2]
+		"/alto show", -- [3]
+		"/m", -- [4]
+		"/wa", -- [5]
+		"/s |cffa335ee|Hkeystone:200:10:11:14:10|h[Keystone: Halls of Valor]|h|r", -- [6]
+		"/cw Bulbi-Elune 2350 m+score on main", -- [7]
+		"/p hello", -- [8]
+		"/p every time i heal, no tanks, if i tank, no heals", -- [9]
+		"/p whats the worst that can happen?", -- [10]
+		"/iks", -- [11]
+		"/g tjenare", -- [12]
+		" okay", -- [13]
+		" yes", -- [14]
+		" im gonna eat in 10ish min", -- [15]
+		" when do you start normals?", -- [16]
+		" ok", -- [17]
+		"/ec", -- [18]
+		" nah", -- [19]
+		" druid", -- [20]
 	},
 }

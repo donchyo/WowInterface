@@ -29,17 +29,19 @@ function NOP:TooltipCreate(name) -- create tooltip frame
   frame:SetOwner(UIParent,"ANCHOR_NONE") -- frame out of screen and start updating
   return frame
 end
+local itemRetry = nil
 function NOP:ItemLoad() -- load template item tooltips
   self.itemLoadRetry = self.itemLoadRetry - 1 -- only limited retries
-  if self.itemLoadRetry < 0 then self.itemLoad = true; return; end -- no more retry
+  if self.itemLoadRetry < 0 then self.itemLoad = true; self.printt("ItemLoad:","retry limit reached! Last not seen itemID", itemRetry); return; end -- no more retry
   self:Profile(true)
   local retry = false
-  local isCB = tonumber(GetCVar(private.CB_CVAR)) or 0 -- if colorblind mode activated then on 2nd line there is extra info
+  local nCB = tonumber(GetCVar(private.CB_CVAR)) -- if colorblind mode activated then on 2nd line there is extra info
   for itemID, data in pairs(NOP.T_RECIPES) do
     if not NOP.T_RECIPES_FIND[itemID] then -- need fill pattern
-      local name = GetItemInfo(itemID)
+      local name = GetItemInfo(itemID) -- query or fill client side cache
       if name == nil then -- item has no info on client side yet, let wait for server
-        if (private.LOAD_RETRY - self.itemLoadRetry) > 1 then self:Verbose("ItemLoad:GetItemInfo(itemID)",itemID) end
+        if (private.LOAD_RETRY - self.itemLoadRetry) > 1 then self:Verbose("ItemLoad:","itemID",itemID,"GetItemInfo(itemID) empty") end
+        itemRetry = itemID
         retry = true
       else
         self.itemFrame:ClearLines() -- clean tooltip frame
@@ -49,8 +51,7 @@ function NOP:ItemLoad() -- load template item tooltips
           local c,pattern = unpack(data,1,2)
           if type(pattern) == "number" then
             if count >= pattern then
-              local i = pattern
-              if (isCB > 0) and (pattern > 1) then i = pattern + 1 end
+              local i = pattern + nCB
               local tooltipText = private.TOOLTIP_ITEM .. "TextLeft" .. i
               local text = _G[tooltipText].GetText and _G[tooltipText]:GetText() or "none"
               if text and (text ~= "none") then NOP.T_RECIPES_FIND[itemID] = {c,text,data[3],data[4]} end
@@ -67,7 +68,8 @@ function NOP:ItemLoad() -- load template item tooltips
           end
         else
           self:Verbose("ItemLoad:Empty tooltip", itemID)
-          retry = true -- /run NOP.itemFrame:ClearLines(); NOP.itemFrame:SetItemByID(111972); print(NOP.itemFrame:NumLines())
+          itemRetry = itemID
+          retry = true
           self.itemFrame = self:TooltipCreate(private.TOOLTIP_ITEM) -- empty tooltip I just throw out old one. Workaround for bad tooltip frame init damn Blizzard!
           break
         end
@@ -80,64 +82,57 @@ function NOP:ItemLoad() -- load template item tooltips
     return
   end -- postspone
   self.itemLoad = true
-  if (private.LOAD_RETRY - self.itemLoadRetry) > 1 then self:Verbose(string.format(private.L["Items cache update run |cFF00FF00%d."],private.LOAD_RETRY - self.itemLoadRetry)) end
+  if (private.LOAD_RETRY - self.itemLoadRetry) > 1 then self:Verbose("ItemLoad:",string.format(private.L["Items cache update run |cFF00FF00%d."],private.LOAD_RETRY - self.itemLoadRetry)) end
   self.itemLoadRetry = private.LOAD_RETRY
 end
+local spellRetry = nil
 function NOP:SpellLoad() -- load spell patterns
   self.spellLoadRetry = self.spellLoadRetry - 1
-  if self.spellLoadRetry < 0 then self.spellLoad = true; return end
+  if self.spellLoadRetry < 0 then self.spellLoad = true; self.printt("SpellLoad:","retry limit reached! Last not seend spell on itemID", spellRetry); return end
   self:Profile(true)
   local retry = false
-  for spellid, data in pairs(NOP.T_SPELL_BY_USE_TEXT) do -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}
+  NOP.T_OPEN[format("%s %s",ITEM_SPELL_TRIGGER_ONUSE,ITEM_OPENABLE)] = {{1,private.PRI_OPEN},nil,nil} -- standard right click open
+  NOP.T_OPEN[ITEM_OPENABLE] = {{1,private.PRI_OPEN},nil,nil} -- standard right click open
+--[[
+  for spellid, data in pairs(NOP.T_SPELL_BY_USE_TEXT) do -- [spellID] = {{count_to_use,priotity},itemID,{"sub-Zone",...},{[mapID]=true,...}}, table for opening via spell, used for multiple items with same spell text
     if data and data[2] then
-      local name = GetItemInfo(data[2]) -- now just cache all items into cache, later will get tooltip for spells over them
+      local name = GetItemInfo(data[2]) -- query or fill client side cache
       if name == nil then -- item has no info on client side yet, let wait for server
-        if (private.LOAD_RETRY - self.spellLoadRetry) > 1 then self:Verbose("SpellLoad:GetItemInfo(data[2])",data[2]) end
+        if (private.LOAD_RETRY - self.spellLoadRetry) > 1 then self:Verbose("SpellLoad:","data[2]",data[2],"GetItemInfo(data[2]) is empty") end
+        spellRetry = data[2]
         retry = true
+      else
+        self.spellFrame:ClearLines() -- clean tooltip frame
+        self.spellFrame:SetSpellByID(spellid) -- Fills the tooltip with information about a spell specified by ID
+        local spellName, spellRank, spellID = self.spellFrame:GetSpell() -- Returns information about the spell displayed in the tooltip
+        local count = self.spellFrame:NumLines()
+        if spellName then -- it has spell and tooltip has at least 2 lines
+          local tooltipText = private.TOOLTIP_SPELL .. "TextLeft" .. count
+          if _G[tooltipText] and _G[tooltipText].GetText then
+            local spell = _G[tooltipText]:GetText() -- get last line from tooltip
+            if spell ~= nil and spell ~= "" then
+              NOP.T_OPEN[format("%s %s",ITEM_SPELL_TRIGGER_ONUSE,spell)] = {data[1],data[3],data[4]} -- ["tooltip-string"] = {{count_to_use,priority},{"sub-ZoneName","sub-ZoneName"},{[mapID]=true,[mapID]=true}}, items by open-spell in tooltip
+            end
+          end
+        else
+          spellRetry = data[2] .. " spellID " .. spellid
+          retry = true -- this is problem in tooltip frame! Workaround for bad tooltip frame init damn Blizzard!
+          if (count < 1) then 
+            self:Verbose("SpellLoad:","spellid",spellid,"empty tooltip")
+            self.spellFrame = self:TooltipCreate(private.TOOLTIP_SPELL)
+          end
+        end
       end
     end
   end
-  if retry then
-    self.timerSpellLoad = self:ScheduleTimer("SpellLoad", private.TIMER_IDLE)
-    self:Profile(false)
-    return
-  end
-  retry = false
-  wipe(NOP.T_OPEN) -- clear table
-  NOP.T_OPEN[ITEM_OPENABLE] = {1,nil} -- standard right click open
-  for spellid,data in pairs(NOP.T_SPELL_BY_USE_TEXT) do -- [spellID] = {min-count,itemID,{"sub-Zone"},{[mapID]=true,[mapID]=true}}
-    self.spellFrame:ClearLines() -- clean tooltip frame
-    self.spellFrame:SetSpellByID(spellid) -- Fills the tooltip with information about a spell specified by ID
-    local spellName, spellRank, spellID = self.spellFrame:GetSpell() -- Returns information about the spell displayed in the tooltip
-    local count = self.spellFrame:NumLines()
-    if spellName then -- it has spell and tooltip has at least 2 lines
-      local tooltipText = private.TOOLTIP_SPELL .. "TextLeft" .. count
-      if _G[tooltipText] and _G[tooltipText].GetText then
-        local spell = _G[tooltipText]:GetText() -- get last line from tooltip
-        if spell ~= nil and spell ~= "" then
-          NOP.T_OPEN[format("%s %s",ITEM_SPELL_TRIGGER_ONUSE,spell)] = {data[1],data[3],data[4]} -- fill up string table to compare item tooltips for opening spellIDs
-        end -- /run foreach(NOP.T_OPEN,print)
-      end
-    else
-      retry = true -- this is problem in tooltip frame! Workaround for bad tooltip frame init damn Blizzard!
-      if (count < 1) then 
-        self:Verbose("SpellLoad:Empty tooltip",spellid)
-        self.spellFrame = self:TooltipCreate(private.TOOLTIP_SPELL)
-      end
-    end
-  end
-  if retry then
-    self.timerSpellLoad = self:ScheduleTimer("SpellLoad", private.TIMER_IDLE)
-    self:Profile(false)
-    return
-  end
-  retry = false
-  for itemID,count in pairs(NOP.T_SPELL_BY_NAME) do
+--]]
+  for itemID,data in pairs(NOP.T_SPELL_BY_NAME) do
     local spell = GetItemSpell(itemID)
-    if spell then
-      if (string.len(spell) > 0) then NOP.T_SPELL_FIND[spell] = count end
+    if spell and spell ~= "" then
+      NOP.T_SPELL_FIND[spell] = data
     else
-      self:Verbose("SpellLoad:GetItemSpell(itemID)",itemID)
+      self:Verbose("SpellLoad:","itemID,",itemID,"GetItemSpell(itemID) empty")
+      spellRetry = itemID
       retry = true
     end
   end
@@ -147,7 +142,7 @@ function NOP:SpellLoad() -- load spell patterns
     return
   end
   self.spellLoad = true
-  if (private.LOAD_RETRY - self.spellLoadRetry) > 1 then self:Verbose(string.format(private.L["Spells cache update run |cFF00FF00%d."],private.LOAD_RETRY - self.spellLoadRetry)) end
+  if (private.LOAD_RETRY - self.spellLoadRetry) > 1 then self:Verbose("SpellLoad:",string.format(private.L["Spells cache update run |cFF00FF00%d."],private.LOAD_RETRY - self.spellLoadRetry)) end
   self.spellLoadRetry = private.LOAD_RETRY -- limit number of retries
 end
 function NOP:PickLockUpdate() -- rogue picklocking
@@ -215,19 +210,18 @@ function NOP:BlacklistItem(isPermanent,itemID) -- right click will add item into
       if not (type(NOP.DB.T_BLACKLIST) == "table") then NOP.DB.T_BLACKLIST = {} end
       NOP.DB.T_BLACKLIST[0] = true
       NOP.DB.T_BLACKLIST[itemID] = true
-      self.printt(private.L["Permanently Blacklisted:|cFF00FF00"],name or itemID)
+      self.printt(private.L["PERMA_BLACKLIST"],name or itemID)
     else
       if not (type(NOP.T_BLACKLIST) == "table") then NOP.T_BLACKLIST = {} end
       NOP.T_BLACKLIST[0] = true -- blacklist is defined
       NOP.T_BLACKLIST[itemID] = true
       if NOP.DB.Skip then
-        self.printt(private.L["Session Blacklisted:|cFF00FF00"],name or itemID)
+        self.printt(private.L["SESSION_BLACKLIST"],name or itemID)
       else
-        self.printt(private.L["Temporary Blacklisted:|cFF00FF00"],name or itemID)
+        self.printt(private.L["TEMP_BLACKLIST"],name or itemID)
       end
     end
     NOP.T_USE[itemID] = nil; NOP.T_CHECK[itemID] = nil
-    self:ItemShowNew() -- find another item
   end
 end
 function NOP:Profile(onStart) -- time profiling
@@ -283,4 +277,147 @@ function NOP:removekey(t, key) -- remove item in hash table by key
     return element
   end
   return nil
+end
+local HERALD_ANNOUNCED = {}
+function NOP:CheckBuilding(toCheck)
+  if not NOP.DB.herald then return end
+  if toCheck then C_Garrison.RequestLandingPageShipmentInfo(); return; end
+  if C_Garrison.HasGarrison(LE_GARRISON_TYPE_6_0) then -- garrison shipments
+    local buildings = C_Garrison.GetBuildings(LE_GARRISON_TYPE_6_0)
+    local numBuildings = #buildings
+    if(numBuildings > 0) then
+      for i = 1, numBuildings do
+        local buildingID = buildings[i].buildingID;
+        if buildingID and not HERALD_ANNOUNCED[buildingID] then
+          local name, _, _, shipmentsReady, shipmentsTotal = C_Garrison.GetLandingPageShipmentInfo(buildingID)
+          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > private.WORK_ANNOUNCE then
+            self:PrintToActive((private.TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
+            HERALD_ANNOUNCED[buildingID] = true
+          end
+        end
+      end
+    end
+  end
+  if C_Garrison.HasGarrison(LE_GARRISON_TYPE_7_0) then -- Order hall
+    local followerShipments = C_Garrison.GetFollowerShipments(LE_GARRISON_TYPE_7_0) -- troops ready
+    if followerShipments then
+      for i = 1, #followerShipments do
+        if not HERALD_ANNOUNCED[followerShipments[i]] then
+          local name, _, _, shipmentsReady, shipmentsTotal = C_Garrison.GetLandingPageShipmentInfoByContainerID(followerShipments[i])
+          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > private.WORK_ANNOUNCE then
+            self:PrintToActive((private.TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
+            HERALD_ANNOUNCED[followerShipments[i]] = true
+          end
+        end
+      end
+    end
+    local looseShipments = C_Garrison.GetLooseShipments(LE_GARRISON_TYPE_7_0) -- research
+    if looseShipments then
+      for i = 1, #looseShipments do
+        if not HERALD_ANNOUNCED[looseShipments[i]] then
+          local name, _, _, shipmentsReady, shipmentsTotal = C_Garrison.GetLandingPageShipmentInfoByContainerID(looseShipments[i])
+          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > private.WORK_ANNOUNCE then
+            self:PrintToActive((private.TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
+            HERALD_ANNOUNCED[looseShipments[i]] = true
+          end
+        end
+      end
+    end
+    local talentTrees = C_Garrison.GetTalentTreeIDsByClassID(LE_GARRISON_TYPE_7_0, select(3, UnitClass("player"))) -- orderhall talents
+    if talentTrees then
+      local completeTalentID = C_Garrison.GetCompleteTalent(LE_GARRISON_TYPE_7_0)
+      if completeTalentID and not HERALD_ANNOUNCED[completeTalentID] then
+        for treeIndex, treeID in ipairs(talentTrees) do
+          local _, _, tree = C_Garrison.GetTalentTreeInfoForID(treeID)
+          for talentIndex, talent in ipairs(tree) do
+            if (talent.id == completeTalentID) then
+              self:PrintToActive((private.TALENT_ANNOUNCE):format(talent.name))
+              HERALD_ANNOUNCED[completeTalentID] = true
+            end
+          end
+        end
+      end
+      for treeIndex, treeID in ipairs(talentTrees) do
+        local _, _, tree = C_Garrison.GetTalentTreeInfoForID(treeID)
+        for talentIndex, talent in ipairs(tree) do
+          if talent.selected and not HERALD_ANNOUNCED[talent.perkSpellID] and NOP.T_INSTA_WQ[talent.perkSpellID] then
+            local ability = GetSpellInfo(talent.perkSpellID) -- spell name
+            local _, duration = GetSpellCooldown(talent.perkSpellID)
+            local count = GetItemCount(NOP.T_INSTA_WQ[talent.perkSpellID])
+            local name = GetItemInfo(NOP.T_INSTA_WQ[talent.perkSpellID])
+            if duration == 0 and name then
+              local txt = " " .. private.RGB_RED .. ERR_SPELL_FAILED_REAGENTS_GENERIC .. " " .. private.RGB_YELLOW .. name
+              self:PrintToActive((private.TALENT_ANNOUNCE):format(ability) .. ((count == 0) and txt or ""))
+              HERALD_ANNOUNCED[talent.perkSpellID] = true
+            end
+          end
+        end
+      end
+    end
+  end -- /run local _, _, t = C_Garrison.GetTalentTreeInfoForID(119); for a,b in ipairs(t) do print(a, b.selected, b.perkSpellID) end
+  if HasArtifactEquipped() and not HERALD_ANNOUNCED[0] then -- artifact points to spend
+    local _, _, _, _, totalXP, pointsSpent, _, _, _, _, _, _, artifactTier = C_ArtifactUI.GetEquippedArtifactInfo()
+    local numPointsAvailableToSpend, xp, xpForNextPoint = MainMenuBar_GetNumArtifactTraitsPurchasableFromXP(pointsSpent, totalXP, artifactTier)
+    if numPointsAvailableToSpend > 0 then
+      self:PrintToActive((private.ARTIFACT_ANNOUNCE):format(numPointsAvailableToSpend))
+      HERALD_ANNOUNCED[0] = true
+    end
+  end
+  for i = 1, GetNumArchaeologyRaces() do -- archaelogy can be completed
+    local raceName, _, _, have, required = GetArchaeologyRaceInfo(i)
+    if raceName and (required > 0) and (have >= required) and not HERALD_ANNOUNCED[raceName] then
+      self:PrintToActive((private.ARCHAELOGY_ANNOUNCE):format(raceName))
+      HERALD_ANNOUNCED[raceName] = true
+    end
+  end
+  if not HERALD_ANNOUNCED["shipyard"] then -- shipyard missing ships
+    local activeShips, maxShips = C_Garrison.GetNumFollowers(LE_FOLLOWER_TYPE_SHIPYARD_6_2), 0
+    local _,_,_,_,_,shipyardRank = C_Garrison.GetOwnedBuildingInfo(98)
+    if shipyardRank == 1 then 
+      maxShips = 6
+    elseif shipyardRank == 2 then
+      maxShips = 8
+    elseif shipyardRank == 3 then
+      maxShips = 10 
+    end
+    if maxShips > 0 then
+      if activeShips < maxShips then
+        self:PrintToActive((private.SHIPYARD_ANNOUNCE):format(activeShips,maxShips))
+        HERALD_ANNOUNCED["shipyard"] = true
+      end
+    end
+  end
+  ExpandAllFactionHeaders()
+  local nF = GetNumFactions()
+  for i=1, nF do
+    local name, _, _, _, _, value, _, _, header, _, _, _, _, id = GetFactionInfo(i)
+    if name and not header and id then
+      if C_Reputation.IsFactionParagon(id) then
+        local reward = false
+        value, top, _, reward = C_Reputation.GetFactionParagonInfo(id)
+        while (value > top) do value = value - top end
+        if reward and not HERALD_ANNOUNCED[id] then 
+          self:PrintToActive((private.REWARD_ANNOUNCE):format(name))
+          HERALD_ANNOUNCED[id] = true
+        end
+      end
+    end
+  end
+end
+function NOP:PrintToActive(msg) -- print to all active chat windows
+  if msg then
+    local txt = ("|cff7f7f7f%s|r [|cff007f7f%s|r]" .. " %s"):format(ElvUI and "" or ("[" .. date("%H:%M") .. "]"),ADDON,msg)
+    for i = 1, NUM_CHAT_WINDOWS do
+      local name, fontSize, r, g, b, alpha, shown, locked, docked, uninteractable = GetChatWindowInfo(i)
+      if shown and _G["ChatFrame"..i] then
+        _G["ChatFrame"..i]:AddMessage(txt)
+      end
+    end
+  end
+end
+function NOP:CompressText(text) -- printable
+  text = string.gsub(text, "\n", "/n") -- novy radek
+  text = string.gsub(text, "/n$", "") -- novy radek na konci zahodit
+  text = string.gsub(text, "||", "/124") -- interni formatovani WoW
+  return string.trim(text)
 end

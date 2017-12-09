@@ -41,13 +41,6 @@ VER 3 0100000000000007 "leap" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]leap of faith
 END
-VER 3 010000000000000A "milling1" "INV_MISC_QUESTIONMARK"
-/run function FnH() for i=0,4 do for j=1,GetContainerNumSlots(i) do local t={GetItemInfo(GetContainerItemLink(i,j) or 0)} if t[7]=="Herb" and select(2,GetContainerItemInfo(i,j))>=5 then return i.." "..j,t[1] end end end end
-END
-VER 3 010000000000000B "milling2" "INV_MISC_QUESTIONMARK"
-/run local f,l,n=AuM or CreateFrame("Button","AuM",nil,"SecureActionButtonTemplate") f:SetAttribute("type","macro") l,n=FnH() if l then f:SetAttribute("macrotext","/cast Milling\n/use "..l) SetMacroItem("milling1",n) end
-/click AuM
-END
 VER 3 0100000000000002 "pennance" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /console cameraSmoothTrackingStyle 0
@@ -68,4 +61,12 @@ END
 VER 3 010000000000000F "renew" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]renew
+END
+VER 3 0100000000000013 "shadowmend" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]shadow mend
+END
+VER 3 0100000000000014 "ture" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] light of t'uure
 END

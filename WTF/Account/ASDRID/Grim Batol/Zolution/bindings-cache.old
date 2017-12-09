@@ -14,7 +14,7 @@ bind CTRL-F2 NONE
 bind CTRL-F3 NONE
 bind CTRL-1 CLICK BT4Button73:LeftButton
 bind CTRL-2 CLICK BT4Button74:LeftButton
-bind CTRL-3 NONE
+bind CTRL-3 CLICK BT4Button75:LeftButton
 bind CTRL-5 CLICK BT4Button22:LeftButton
 bind CTRL-6 CLICK BT4Button87:LeftButton
 bind CTRL-8 CLICK BT4Button34:LeftButton
@@ -36,6 +36,7 @@ bind F10 CLICK BT4Button112:LeftButton
 bind F11 CLICK BT4Button109:LeftButton
 bind F12 CLICK BT4Button49:LeftButton
 bind SHIFT-O NONE
+bind CTRL-T CLICK BT4Button77:LeftButton
 bind NUMPAD1 CLICK RaidFlare1:LeftButton
 bind NUMPAD3 CLICK RaidFlare3:LeftButton
 bind ´ CLICK BT4Button18:LeftButton

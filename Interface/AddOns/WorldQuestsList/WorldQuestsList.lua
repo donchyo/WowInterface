@@ -1,4 +1,4 @@
-local VERSION = 47
+local VERSION = 49
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -128,6 +128,13 @@ Fixes for ADDON_ACTION_BLOCKED errors
 Added "/wql argus" command
 
 Fixes
+
+Added option for percentage of the current level's max AP number (by Corveroth)
+Update for korean translation (by yuk6196)
+Fixes (Frame strata for free position)
+
+Minor fixes
+Update for chinese translation (by dxlmike)
 ]]
 
 
@@ -311,32 +318,32 @@ local LOCALE =
 		argusMap = "Enable Argus map",
 	} or
 	locale == "koKR" and {
-		gear = "Gear",
-		gold = "금메달",
+		gear = "장비",
+		gold = "골드",
 		blood = "살게라스의 피",
-		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
-		disableArrow = "Disable arrow",
-		anchor = "Anchor",
-		totalap = "Total Artifact Power: ",
-		totalapdisable = 'Disable "Total AP"',
-		timeToComplete = "Time to complete: ",
-		bountyIgnoreFilter = "Emissary quests",
-		enigmaHelper = "Enable Enigma Helper",
-		barrelsHelper = "Enable Barrels Helper",
-		honorIgnoreFilter = "PvP quests",
-		ignoreFilter = "Ignore filter for",
-		epicIgnoreFilter = '"Golden" quests',
-		wantedIgnoreFilter = "WANTED quests",		
-		apFormatSetup = "Artifact Power format",
-		headerEnable = "Enable header line",
-		disabeHighlightNewQuests = "Disable highlight for new quests",
-		distance = "Distance",
-		disableBountyIcon = "Disable Emissary icons for faction names",
-		arrow = "Arrow",
-		invasionPoints = "Invasion Points",
-		argusMap = "Enable Argus map",
+		knowledgeTooltip = "** 다음 유물 지식 레벨에 도달한 후 완료할 수 있습니다",
+		disableArrow = "화살표 비활성화",
+		anchor = "고정기",
+		totalap = "총 유물력: ",
+		totalapdisable = '"총 유물력" 비활성화',
+		timeToComplete = "완료까지 시간: ",
+		bountyIgnoreFilter = "사절 퀘스트",
+		enigmaHelper = "수수께끼 도우미 활성화",
+		barrelsHelper = "통 토우미 활성화",
+		honorIgnoreFilter = "PvP 퀘스트",
+		ignoreFilter = "다음에 필터 무시",
+		epicIgnoreFilter = '"금테" 퀘스트',
+		wantedIgnoreFilter = "현상수배 퀘스트", 
+		apFormatSetup = "유물력 형식",
+		headerEnable = "제목 줄 활성화",
+		disabeHighlightNewQuests = "새로운 퀘스트 강조 비활성화",
+		distance = "거리",
+		disableBountyIcon = "평판 이름에 사절 아이콘 비활성화",
+		arrow = "화살표",
+		invasionPoints = "침공 거점",
+		argusMap = "아르거스 지도 활성화",
 	} or
-	(locale == "zhCN" or locale == "zhTW") and {	--by cuihuanyu1986
+	(locale == "zhCN" or locale == "zhTW") and {	--by dxlmike, cuihuanyu1986
 		gear = "装备",
 		gold = "黄金",
 		blood = "萨格拉斯之血",
@@ -357,10 +364,10 @@ local LOCALE =
 		headerEnable = "开启 标题行",
 		disabeHighlightNewQuests = "禁用 新任务高亮",
 		distance = "距离",
-		disableBountyIcon = "Disable Emissary icons for faction names",
-		arrow = "Arrow",
-		invasionPoints = "Invasion Points",
-		argusMap = "Enable Argus map",
+		disableBountyIcon = "大使任务不在列表中显示派系图标",
+		arrow = "箭头",
+		invasionPoints = "入侵点",
+		argusMap = "启用阿古斯地图",
 	} or	
 	{
 		gear = "Gear",
@@ -802,8 +809,46 @@ WorldQuestList.ScrollDownLine.i:SetPoint("CENTER")
 WorldQuestList.ScrollDownLine.i:SetTexCoord(0,.25,0,1)
 WorldQuestList.ScrollDownLine.i:SetSize(14,14)
 
+
+local _BonusObjectiveTracker_TrackWorldQuest, _BonusObjectiveTracker_UntrackWorldQuest = BonusObjectiveTracker_TrackWorldQuest, BonusObjectiveTracker_UntrackWorldQuest
+local lastTrackedQuestID = nil
+local BonusObjectiveTracker_TrackWorldQuest = function(questID, hardWatch)
+	if InCombatLockdown() then
+		if AddWorldQuestWatch(questID, hardWatch) then
+			if lastTrackedQuestID and lastTrackedQuestID ~= questID then
+				if not IsWorldQuestHardWatched(lastTrackedQuestID) and hardWatch then
+					AddWorldQuestWatch(lastTrackedQuestID, true) -- Promote to a hard watch
+				end
+			end
+			lastTrackedQuestID = questID
+		end
+	
+		if not hardWatch or GetSuperTrackedQuestID() == 0 then
+			SetSuperTrackedQuestID(questID)
+		end
+	else
+		return _BonusObjectiveTracker_TrackWorldQuest(questID, hardWatch)
+	end
+end
+
+local BonusObjectiveTracker_UntrackWorldQuest = function(questID)
+	if InCombatLockdown() then
+		if RemoveWorldQuestWatch(questID) then
+			if lastTrackedQuestID == questID then
+				lastTrackedQuestID = nil
+			end
+			if questID == GetSuperTrackedQuestID() then
+				QuestSuperTracking_ChooseClosestQuest()
+			end
+		end
+	else
+		return _BonusObjectiveTracker_UntrackWorldQuest(questID)
+	end
+end
+
 do
 	local WORLDMAP_TASK_POIS, WORLDMAP_POIS = {},{}
+	
 	local function TaskPOI_OnClick(self, button)
 		if self.worldQuest and not ChatEdit_TryInsertQuestLinkForQuestID(self.questID) then
 			PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
@@ -1057,21 +1102,28 @@ do
 		NUM_WORLDMAP_TASK_POIS_LAST = taskIconIndex - 1
 		NUM_WORLDMAP_POIS_LAST = numPOIs
 		
-		WorldMap_QuantizeWorldQuestPOIs(worldQuestPOIs,true)
+		--WorldMap_QuantizeWorldQuestPOIs(worldQuestPOIs,true)
+		for i, worldQuestPOI in ipairs(worldQuestPOIs) do
+			WorldMapPOIFrame_AnchorPOI(worldQuestPOI, worldQuestPOI.quantizedX or worldQuestPOI.x, worldQuestPOI.quantizedY or worldQuestPOI.y, WORLD_MAP_POI_FRAME_LEVEL_OFFSETS.WORLD_QUEST);
+		end
 	end
 	function UpdatePOIsTimer()
 		prevUpdatePOIs = nil
 		prevUpdatePOIsTime = 0
 		UpdatePOIs()
 	end
-	local textureState = true
+	local textureState = nil
 	local prevScale = nil
+	local CreateArgusMap
 	mapChecker:SetScript("OnEvent",function(self,event)
 		if not WorldMapFrame:IsVisible() then
 			return
 		end
 		local mapAreaID = GetCurrentMapAreaID()
 		if mapAreaID == 1184 and not VWQL.ArgusMap and not VWQL[charKey].HideMap then
+			if CreateArgusMap then
+				CreateArgusMap()
+			end
 			if not textureState then
 				for i=1,#texturesList do
 					texturesList[i]:SetAlpha(1)
@@ -1082,11 +1134,13 @@ do
 			bountyPosOverride = 3
 			UpdatePOIs()
 		else
-			if textureState then
-				for i=1,#texturesList do
-					texturesList[i]:SetAlpha(0)
+			if not CreateArgusMap then
+				if textureState then
+					for i=1,#texturesList do
+						texturesList[i]:SetAlpha(0)
+					end
+					textureState = nil
 				end
-				textureState = nil
 			end
 			HidePOIs()
 			bountyPosOverride = nil
@@ -1137,15 +1191,19 @@ do
 
 	end)
 
-	local size = 70
-	for i=1,10 do
-		for j=1,15 do
-			local t = WorldMapButton:CreateTexture(nil,"BACKGROUND")
-			texturesList[#texturesList + 1] = t
-			t:SetSize(size,size)
-			t:SetPoint("TOPLEFT",size*(j-1),-size*(i-1))
-			t:SetTexture("Interface\\AdventureMap\\Argus\\AM_"..((i-1)*15 + j - 1))
+	function CreateArgusMap()
+		local size = 70
+		for i=1,10 do
+			for j=1,15 do
+				local t = WorldMapButton:CreateTexture(nil,"BACKGROUND")
+				texturesList[#texturesList + 1] = t
+				t:SetSize(size,size)
+				t:SetPoint("TOPLEFT",size*(j-1),-size*(i-1))
+				t:SetTexture("Interface\\AdventureMap\\Argus\\AM_"..((i-1)*15 + j - 1))
+				t:SetAlpha(0)
+			end
 		end
+		CreateArgusMap = nil	  
 	end
 end
 
@@ -2615,6 +2673,8 @@ function UpdateAnchor()
 		
 		WorldQuestList.moveHeader:Show()
 		
+		WorldQuestList:SetFrameStrata("DIALOG")
+		
 		ELib.ScrollDropDown.DropDownList[1]:SetParent(UIParent)	
 		ELib.ScrollDropDown.DropDownList[2]:SetParent(UIParent)	
 	else
@@ -2764,7 +2824,18 @@ do
 				WorldQuestList_Update()
 			end,
 			radio = true,
-		},		
+		},
+		{
+			text = "1.1%",
+			func = function()
+				VWQL.APFormat = 10
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},	
 	}	
 	
 	
@@ -3065,6 +3136,7 @@ do
 		apFormatSubMenu[5].checkState = VWQL.APFormat == 5
 		apFormatSubMenu[6].checkState = VWQL.APFormat == 6
 		apFormatSubMenu[7].checkState = not VWQL.APFormat
+		apFormatSubMenu[8].checkState = VWQL.APFormat == 10
 		arrowMenu[1].checkState = VWQL.DisableArrow
 		arrowMenu[2].checkState = VWQL.ArrowStyle == 2
 		arrowMenu[3].checkState = not VWQL.ArrowStyle
@@ -3493,7 +3565,7 @@ local function WorldQuestList_Leveling_Update()
 end
 
 
-local function FormatAPnumber(ap,artifactKnowlegeLevel)
+local function FormatAPnumber(ap,artifactKnowlegeLevel,ignorePercentForm)
 	if VWQL.APFormat == 1 then
 		return tostring(ap)
 	elseif VWQL.APFormat == 2 then
@@ -3506,6 +3578,15 @@ local function FormatAPnumber(ap,artifactKnowlegeLevel)
 		return format("%.1fB",ap / 1000000000)
 	elseif VWQL.APFormat == 6 then
 		return format("%dB",ap / 1000000000)
+	elseif VWQL.APFormat == 10 and not ignorePercentForm then		--by Corveroth
+		local artifactItemID, _, _, _, artifactTotalXP, artifactPointsSpent, _, _, _, _, _, _, artifactTier = C_ArtifactUI.GetEquippedArtifactInfo()
+		if artifactItemID then
+			local numPointsAvailableToSpend, xp, xpForNextPoint = MainMenuBar_GetNumArtifactTraitsPurchasableFromXP(artifactPointsSpent, artifactTotalXP, artifactTier)
+			if xpForNextPoint and xpForNextPoint ~= 0 then
+				return format("%.1f%%%%", ap*100 / xpForNextPoint)
+			end
+		end
+		return FormatAPnumber(ap,artifactKnowlegeLevel,true)
 	else
 		artifactKnowlegeLevel = artifactKnowlegeLevel or 0
 		if artifactKnowlegeLevel >= 53 then
@@ -4677,7 +4758,7 @@ function WorldQuestList_Update(preTaskInfo)
 		WorldQuestList.footer:Update(false,O.isGeneralMap)
 	end
 	
-	WorldQuestList.footer.ap:SetText(LOCALE.totalap .. FormatAPnumber(totalAP,O.artifactKnowlegeLevel))
+	WorldQuestList.footer.ap:SetText(LOCALE.totalap .. FormatAPnumber(totalAP,O.artifactKnowlegeLevel):gsub("%%%%","%%"))
 	WorldQuestList.footer.OR:SetText(format("|T%d:0|t %d",1397630,totalOR))
 	WorldQuestList.footer.gold:SetText(totalG > 0 and GetCoinTextureString(totalG) or "")
 	

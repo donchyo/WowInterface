@@ -1,4 +1,58 @@
 -- Revisions:
+--[[<p>08.22 04.12.2017</p>
+<ul>
+<li>Mana Crystal and Ancient Mana Crystal as items not pattern.</li>
+<li>Added Summon Grimtotem Warrior, Summoning Portal, Lucky Rabbit's Foot, Scream of the Dead</li>
+</ul>
+]]
+--[[<p>08.20 17.11.2017</p>
+<ul>
+<li>Final fix for picklocking? Now when item is possible to unlock then item starts to glow.</li>
+<li>Most items identified by GetItemSpell() function moved. T_SPELL_BY_USE_TEXT now use only pattern for standard global strings ITEM_OPENABLE, and ITEM_SPELL_TRIGGER_ONUSE pattern match.</li>
+<li>Tokens leading to use spell Create Item.</li>
+</ul>
+]]
+--[[<p>08.18 14.11.2017</p>
+<ul>
+<li>Fix announce generating error when reagent name is not yet in cache.</li>
+<li>When spellLoad or itemLoad reach retry limit it prints last offending itemID and or spellID as well.</li>
+</ul>
+]]
+--[[<p>08.16 10.11.2017</p>
+<ul>
+<li>Instant world quest completion skills are now announced when become ready, it does check if necessary consumable is present.</li>
+<li>Implemented different priorities for groups of items like artefact power, tokens, reputation.</li>
+<li>Cleanup code and updates to item button is done only when really new item is placed on.</li>
+<li>Possible fix for lockpicking.</li>
+<li>Possible fix for stacks of cofee in garrison mine.</li>
+</ul>
+]]
+--[[<p>08.14 29.10.2017</p>
+<ul>
+<li>Verbose message when preload of items and spells does fail.</li>
+<li>Fix for armor Unsullied tokens. Developers decide to put type of armor inside string!</li>
+<li>SpellLoad() rewritten if there is bad item to load it does at least load all remaining patterns.</li>
+<li>Option to hide items button in combat. Quest bar still is shown in combat because there could be items usable in combat.</li>
+</ul>
+]]
+--[[<p>08.12 25.10.2017</p>
+<ul>
+<li>Added Golden Banana, Earthen Mark, Imp Pact, Reaves Battery, Shattered Soul, Squire's Oath</li>
+<li>Some locale now using short-names.</li>
+<li>ERR_SPELL_FAILED_ANOTHER_IN_PROGRESS won't trigger temp blacklist, it shall be produced when someone bash button too often.</li>
+<li>Fix for itemID 129097 GetItemInfo doesn't return any value.</li>
+</ul>
+]]
+--[[<p>08.10 12.10.2017</p>
+<ul>
+<li>/nop list is more verbose and /nop unlist itemID as well. Fixed printing help when /nop unlist was used even command is known and processed.</li>
+<li>Added Runed Aspirant's Band, Scroll of Forgotten Knowledge, Fel Armor Enhancement Token and Ashtongue Beacon.</li>
+<li>Workaround for possible Quest Watcher frame taint in AutoQuest.</li>
+<li>Added option to set strata for item button, issue #34 Ability to set strata.</li>
+<li>Added announce function where completion of work orders, gain in artifact points, paragon reward and others.</li>
+<li>Automatic temporary blacklist item on button when click producing any error message.</li>
+</ul>
+]]
 --[[<p>08.08 04.10.2017</p>
 <ul>
 <li>Added Mac'Aree Armor Set, Relinquished Relics, Lightforged Bulwark, Nathrezim Tome of Manipulation and Xenedar Armor Set.</li>

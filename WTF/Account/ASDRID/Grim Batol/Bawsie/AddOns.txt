@@ -23,7 +23,7 @@ SkadaHealing: enabled
 BigWigs_Core: enabled
 BigWigs_Options: enabled
 TidyPlates_ThreatPlates: disabled
-TidyPlates: enabled
+TidyPlates: disabled
 PitBull4: disabled
 PitBull4_RoleIcon: disabled
 PitBull4_CastBarLatency: disabled
@@ -76,7 +76,7 @@ SafeQueue: disabled
 infDmgFont: disabled
 infTabmagic: disabled
 infErrupt: enabled
-MogIt: enabled
+MogIt: disabled
 MogIt_Accessories: enabled
 MogIt_Cloth: disabled
 MogIt_Leather: enabled
@@ -253,7 +253,7 @@ ShadowedUnitFrames: disabled
 ShadowedUF_Options: disabled
 infResolve: disabled
 ExtraCD: disabled
-DeathNote: enabled
+DeathNote: disabled
 Broker_Auditor: disabled
 Auditor2: disabled
 infDCBuyout: disabled
@@ -270,7 +270,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 AtlasLoot_Cataclysm: enabled
 AtlasLoot_BurningCrusade: enabled
-AtlasLoot: enabled
+AtlasLoot: disabled
 AtlasLoot_Classic: enabled
 AtlasLoot_Crafting: enabled
 AtlasLoot_Collections: enabled
@@ -286,7 +286,7 @@ MicroMenu: disabled
 MicroMenu_Config: disabled
 AdvancedInterfaceOptions: enabled
 AdvancedIconSelector: disabled
-Altoholic: enabled
+Altoholic: disabled
 Altoholic_Achievements: enabled
 Altoholic_Agenda: enabled
 Altoholic_Characters: enabled
@@ -321,7 +321,7 @@ Combuctor_Sets: disabled
 Combuctor_Config: disabled
 Combuctor_EquipmentSets: disabled
 CrossRealmAssist: enabled
-DataStore: enabled
+DataStore: disabled
 DataStore_Achievements: enabled
 DataStore_Agenda: enabled
 DataStore_Auctions: enabled
@@ -340,7 +340,7 @@ DataStore_Stats: enabled
 DataStore_Talents: enabled
 DejaCharacterStats: enabled
 Details_CalcLeech: disabled
-Details_3DModelsPaths: enabled
+Details_3DModelsPaths: disabled
 Details_Streamer: disabled
 Details_RaidInfo-HellfireCitadel: disabled
 Details_DungeonInfo-Warlords: disabled
@@ -414,7 +414,7 @@ BetterIconSelector-KeywordData: disabled
 Details_RaidInfo-TrialOfValor: disabled
 Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-EmeraldNightmare: disabled
-MythicPlusProgress: enabled
+MythicPlusProgress: disabled
 GottaGoFast: disabled
 GottaGoFastHistory: disabled
 BigWigs_Voice_Overwatch: disabled
@@ -427,3 +427,4 @@ Skada_LeechBDKTabs: disabled
 Details_RaidInfo-TombOfSargeras: disabled
 PremadeGroupsFilter: enabled
 Prat-3.0: disabled
+WorldQuestsList: enabled

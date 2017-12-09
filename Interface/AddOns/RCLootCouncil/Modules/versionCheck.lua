@@ -3,6 +3,10 @@
 -- @author Potdisc
 -- Create Date : 12/15/2014 8:55:10 PM
 
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
 local addon = LibStub("AceAddon-3.0"):GetAddon("RCLootCouncil")
 local RCVersionCheck = addon:NewModule("RCVersionCheck", "AceTimer-3.0", "AceComm-3.0", "AceHook-3.0")
 local ST = LibStub("ScrollingTable")
@@ -10,14 +14,15 @@ local L = LibStub("AceLocale-3.0"):GetLocale("RCLootCouncil")
 
 local GuildRankSort
 local guildRanks = {}
+local highestVersion = "0.0.0"
 
 function RCVersionCheck:OnInitialize()
 	-- Initialize scrollCols on self so others can change it
 	self.scrollCols = {
 		{ name = "",				width = 20, sortnext = 2,},
-		{ name = L["Name"],		width = 150, },
-		{ name = L["Rank"],		width = 90, comparesort = GuildRankSort},
-		{ name = L["Version"],	width = 140, align = "RIGHT" },
+		{ name = _G.NAME,		width = 150, defaultsort = "dsc"},
+		{ name = _G.RANK,		width = 90, comparesort = GuildRankSort},
+		{ name = L["Version"],	width = 140, align = "RIGHT", comparesort = self.VersionSort, sort = "asc", sortnext = 2},
 	}
 end
 
@@ -61,7 +66,7 @@ function RCVersionCheck:Query(group)
 		for i = 1, GetNumGuildMembers() do
 			local name, rank, _,_,_,_,_,_, online,_, class = GetGuildRosterInfo(i)
 			if online then
-				self:AddEntry(name, class, rank, L["Waiting for response"])
+				self:AddEntry(name, class, rank)
 			end
 		end
 
@@ -69,7 +74,7 @@ function RCVersionCheck:Query(group)
 		for i = 1, GetNumGroupMembers() do
 			local name, _, _, _, _, class, _, online = GetRaidRosterInfo(i)
 			if online then
-				self:AddEntry(name, class, L["Unknown"], L["Waiting for response"])
+				self:AddEntry(name, class, _G.UNKNOWN)
 			end
 		end
 	end
@@ -81,7 +86,9 @@ end
 function RCVersionCheck:QueryTimer()
 	for k,v in pairs(self.frame.rows) do
 		local cell = self.frame.st:GetCell(k,4)
-		if cell.value == L["Waiting for response"] then cell.value = L["Not installed"] end
+		if cell.value == L["Waiting for response"] then
+			cell.value = L["Not installed"]
+		end
 	end
 	self:Update()
 end
@@ -90,17 +97,21 @@ function RCVersionCheck:AddEntry(name, class, guildRank, version, tVersion, modu
 	-- We need to be careful with naming conventions just as in RCLootCouncil:UnitName()
 	--name = name:lower():gsub("^%l", string.upper)
 	name = addon:UnitName(name)
+	if not tVersion and addon:VersionCompare(highestVersion, version) then
+		highestVersion = version
+	end
 	local vVal = version
-	if tVersion then vVal = version.."-"..tVersion end
+	if tVersion then vVal = tostring(version).."-"..tVersion end
 	for row, v in ipairs(self.frame.rows) do
 		if addon:UnitIsUnit(v.name, name) then -- they're already added, so update them
 			v.cols =	{
 				{ value = "",					DoCellUpdate = addon.SetCellClassIcon, args = {class}, },
 				{ value = addon.Ambiguate(name),color = addon:GetClassColor(class), },
-				{ value = guildRank,			color = self:GetVersionColor(version,tVersion)},
-				{ value = vVal ,				color = self:GetVersionColor(version,tVersion), DoCellUpdate = self.SetCellModules, args = modules},
+				{ value = guildRank,			color = self.GetVersionColor, colorargs = {self,version,tVersion}},
+				{ value = vVal or L["Waiting for response"],color = self.GetVersionColor, colorargs = {self,version,tVersion}, DoCellUpdate = self.SetCellModules, args = modules},
 			}
 			v.rank = guildRank
+			v.version = version
 			return self:Update()
 		end
 	end
@@ -108,11 +119,12 @@ function RCVersionCheck:AddEntry(name, class, guildRank, version, tVersion, modu
 	tinsert(self.frame.rows,
 	{	name = name,
 		rank = guildRank,
+		version = version,
 		cols = {
 			{ value = "",					DoCellUpdate = addon.SetCellClassIcon, args = {class}, },
 			{ value = addon.Ambiguate(name),color = addon:GetClassColor(class), },
-			{ value = guildRank,			color = self:GetVersionColor(version,tVersion)},
-			{ value = vVal ,				color = self:GetVersionColor(version,tVersion), DoCellUpdate = self.SetCellModules, args = modules},
+			{ value = guildRank,			color = self.GetVersionColor, colorargs = {self,version,tVersion}},
+			{ value = vVal or L["Waiting for response"],	color = self.GetVersionColor, colorargs = {self,version,tVersion}, DoCellUpdate = self.SetCellModules, args = modules},
 		},
 	})
 	self:Update()
@@ -125,8 +137,8 @@ end
 function RCVersionCheck:GetVersionColor(ver,tVer)
 	local green, yellow, red, grey = {r=0,g=1,b=0,a=1},{r=1,g=1,b=0,a=1},{r=1,g=0,b=0,a=1},{r=0.75,g=0.75,b=0.75,a=1}
 	if tVer then return yellow end
-	if ver == addon.version then return green end
-	if addon:VersionCompare(ver, addon.version) then return red end
+	if ver == highestVersion then return green end
+	if addon:VersionCompare(ver, highestVersion) then return red end
 	return grey
 end
 
@@ -134,17 +146,17 @@ function RCVersionCheck:GetFrame()
 	if self.frame then return self.frame end
 	local f = addon:CreateFrame("DefaultRCVersionCheckFrame", "versionCheck", L["RCLootCouncil Version Checker"], 250)
 
-	local b1 = addon:CreateButton(L["Guild"], f.content)
+	local b1 = addon:CreateButton(_G.GUILD, f.content)
 	b1:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", 10, 10)
 	b1:SetScript("OnClick", function() self:Query("guild") end)
 	f.guildBtn = b1
 
-	local b2 = addon:CreateButton(L["Group"], f.content)
+	local b2 = addon:CreateButton(_G.GROUP, f.content)
 	b2:SetPoint("LEFT", b1, "RIGHT", 15, 0)
 	b2:SetScript("OnClick", function() self:Query("group") end)
 	f.raidBtn = b2
 
-	local b3 = addon:CreateButton(L["Close"], f.content)
+	local b3 = addon:CreateButton(_G.CLOSE, f.content)
 	b3:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -10, 10)
 	b3:SetScript("OnClick", function() self:Disable() end)
 	f.closeBtn = b3
@@ -170,7 +182,9 @@ function RCVersionCheck.SetCellModules(rowFrame, f, data, cols, row, realrow, co
 			table.DefaultEvents.OnLeave(rowFrame, f, data, cols, row, realrow, column, table)
 		end)
 	else
-		f:SetScript("OnEnter", nil)
+		f:SetScript("OnEnter", function()
+			table.DefaultEvents.OnEnter(rowFrame, f, data, cols, row, realrow, column, table)
+		end)
 	end
 	table.DoCellUpdate(rowFrame, f, data, cols, row, realrow, column, fShow, table)
 end
@@ -199,6 +213,34 @@ function GuildRankSort(table, rowa, rowb, sortbycol)
 			return a > b;
 		else
 			return a < b;
+		end
+	end
+end
+
+-- There's no need to make this more complicated.
+function RCVersionCheck.VersionSort(table, rowa, rowb, sortbycol)
+	local column = table.cols[sortbycol]
+	local a,b = table:GetRow(rowa), table:GetRow(rowb)
+	if not a.version then return false
+	elseif not b.version then return true
+	elseif a.version == b.version then
+		if column.sortnext then
+			local nextcol = table.cols[column.sortnext];
+			if not nextcol.sort then
+				if nextcol.comparesort then
+					return nextcol.comparesort(table, rowa, rowb, column.sortnext);
+				else
+					return table:CompareSort(rowa, rowb, column.sortnext);
+				end
+			end
+		end
+		return false
+	else
+		local direction = column.sort or column.defaultsort or "asc";
+		if direction:lower() == "asc" then
+			return addon:VersionCompare(b.version, a.version)
+		else
+			return addon:VersionCompare(a.version, b.version)
 		end
 	end
 end

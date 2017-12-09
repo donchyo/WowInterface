@@ -1493,8 +1493,7 @@ local resize_scripts_onmousedown = function (self, button)
 		_detalhes:SendEvent ("DETAILS_INSTANCE_STARTRESIZE", nil, self._instance)
 
 		if (_detalhes.update_speed > 0.3) then
-			_detalhes:CancelTimer (_detalhes.atualizador)
-			_detalhes.atualizador = _detalhes:ScheduleRepeatingTimer ("AtualizaGumpPrincipal", 0.3, -1)
+			_detalhes:SetWindowUpdateSpeed (0.3, true)
 			_detalhes.resize_changed_update_speed = true
 		end
 		
@@ -1591,8 +1590,7 @@ local resize_scripts_onmouseup = function (self, button)
 		end
 		
 		if (_detalhes.resize_changed_update_speed) then
-			_detalhes:CancelTimer (_detalhes.atualizador)
-			_detalhes.atualizador = _detalhes:ScheduleRepeatingTimer ("AtualizaGumpPrincipal", _detalhes.update_speed, -1)
+			_detalhes:SetWindowUpdateSpeed (false, true)
 			_detalhes.resize_changed_update_speed = nil
 		end
 		
@@ -2251,6 +2249,14 @@ local icon_frame_on_enter = function (self)
 				end
 			end
 			
+			if (RaiderIO and RaiderIO.GetScore) then
+				local mythicPlusScore = RaiderIO.GetScore (name)
+				if (mythicPlusScore and mythicPlusScore.allScore) then
+					GameCooltip:AddLine ("Mythic+ Score:", mythicPlusScore.allScore, 1, "white", "white")
+					_detalhes:AddTooltipBackgroundStatusbar()
+				end
+			end
+			
 			GameCooltip:SetOption ("FixedHeight", height)
 			
 			GameCooltip:ShowCooltip()
@@ -2376,7 +2382,7 @@ local icon_frame_on_click_up = function (self, button)
 			local diff = combat:GetDifficulty()
 			local bossInfo = combat:GetBossInfo()
 			
-			if (attribute == 1 or attribute == 2 and bossInfo) then --if bossInfo is nil, means the combat isn't a boss
+			if ((attribute == 1 or attribute == 2) and bossInfo) then --if bossInfo is nil, means the combat isn't a boss
 				local db = _detalhes.OpenStorage()
 				if (db and bossInfo.id) then
 					local haveData = _detalhes.storage:HaveDataForEncounter (diff, bossInfo.id, true) --attempt to index local 'bossInfo' (a nil value)
@@ -2636,8 +2642,7 @@ local function button_stretch_scripts (baseframe, backgrounddisplay, instancia)
 		
 		--> change the update speed
 		if (_detalhes.update_speed > 0.3) then
-			_detalhes:CancelTimer (_detalhes.atualizador)
-			_detalhes.atualizador = _detalhes:ScheduleRepeatingTimer ("AtualizaGumpPrincipal", 0.3, -1)
+			_detalhes:SetWindowUpdateSpeed (0.3, true)
 			_detalhes.stretch_changed_update_speed = true
 		end
 		
@@ -2723,8 +2728,7 @@ local function button_stretch_scripts (baseframe, backgrounddisplay, instancia)
 		_detalhes:SendEvent ("DETAILS_INSTANCE_ENDSTRETCH", nil, instancia)
 		
 		if (_detalhes.stretch_changed_update_speed) then
-			_detalhes:CancelTimer (_detalhes.atualizador)
-			_detalhes.atualizador = _detalhes:ScheduleRepeatingTimer ("AtualizaGumpPrincipal", _detalhes.update_speed, -1)
+			_detalhes:SetWindowUpdateSpeed (false, true)
 			_detalhes.stretch_changed_update_speed = nil
 		end
 
@@ -2990,6 +2994,10 @@ local hide_click_func = function()
 end
 
 function _detalhes:InstanceAlert (msg, icon, time, clickfunc, doflash)
+	
+	if (_detalhes.streamer_config.no_alerts) then
+		return
+	end
 	
 	if (not self.meu_id) then
 		local lower = _detalhes:GetLowerInstanceNumber()
@@ -6412,9 +6420,11 @@ local build_segment_list = function (self, elapsed)
 					CoolTip:AddLine (Loc ["STRING_SEGMENT_START"] .. ":", thisCombat.data_inicio, 2, "white", "white")
 					CoolTip:AddLine (Loc ["STRING_SEGMENT_END"] .. ":", thisCombat.data_fim or "in progress", 2, "white", "white")
 					
-					local backgroundImage = _detalhes:GetRaidIcon (trashInfo.MapID, trashInfo.EJID, "party")
-					if (backgroundImage) then
-						CoolTip:SetWallpaper (2, backgroundImage, {0.070, 0.695, 0.087, 0.566}, {1, 1, 1, 0.5}, true)
+					if (trashInfo) then
+						local backgroundImage = _detalhes:GetRaidIcon (trashInfo.MapID, trashInfo.EJID, "party")
+						if (backgroundImage) then
+							CoolTip:SetWallpaper (2, backgroundImage, {0.070, 0.695, 0.087, 0.566}, {1, 1, 1, 0.5}, true)
+						end
 					end
 				end
 				
@@ -8888,7 +8898,13 @@ function gump:CriaCabecalho (baseframe, instancia)
 	--> SELE��O DO MODO ----------------------------------------------------------------------------------------------------------------------------------------------------
 	local modo_selecao_button_click = function()
 		if (_detalhes.instances_menu_click_to_open) then
-			modo_selecao_on_enter (instancia.baseframe.cabecalho.modo_selecao.widget, _, true, true)
+			if (instancia.LastMenuOpened == "mode" and GameCooltipFrame1:IsShown()) then
+				GameCooltip:ShowMe (false)
+				instancia.LastMenuOpened = nil
+			else		
+				modo_selecao_on_enter (instancia.baseframe.cabecalho.modo_selecao.widget, _, true, true)
+				instancia.LastMenuOpened = "mode"
+			end
 		else
 			_detalhes:OpenOptionsWindow (instancia)
 		end
@@ -8914,7 +8930,13 @@ function gump:CriaCabecalho (baseframe, instancia)
 	--> SELECIONAR O SEGMENTO  ----------------------------------------------------------------------------------------------------------------------------------------------------
 	local segmento_button_click = function (self, button, param1)
 		if (_detalhes.instances_menu_click_to_open) then
-			segmento_on_enter (instancia.baseframe.cabecalho.segmento.widget, _, true, true)
+			if (instancia.LastMenuOpened == "segments" and GameCooltipFrame1:IsShown()) then
+				GameCooltip:ShowMe (false)
+				instancia.LastMenuOpened = nil
+			else
+				segmento_on_enter (instancia.baseframe.cabecalho.segmento.widget, _, true, true)
+				instancia.LastMenuOpened = "segments"
+			end
 		else
 			click_to_change_segment (instancia, button)
 		end
@@ -8942,7 +8964,13 @@ function gump:CriaCabecalho (baseframe, instancia)
 	--> SELECIONAR O ATRIBUTO  ----------------------------------------------------------------------------------------------------------------------------------------------------
 	local atributo_button_click = function()
 		if (_detalhes.instances_menu_click_to_open) then
-			atributo_on_enter (instancia.baseframe.cabecalho.atributo.widget, _, true, true)
+			if (instancia.LastMenuOpened == "attributes" and GameCooltipFrame1:IsShown()) then
+				GameCooltip:ShowMe (false)
+				instancia.LastMenuOpened = nil
+			else
+				atributo_on_enter (instancia.baseframe.cabecalho.atributo.widget, _, true, true)
+				instancia.LastMenuOpened = "attributes"
+			end
 		end
 	end
 	
@@ -8989,7 +9017,13 @@ function gump:CriaCabecalho (baseframe, instancia)
 
 	local reset_func = function()
 		if (_detalhes.instances_menu_click_to_open) then
-			reset_button_onenter (instancia.baseframe.cabecalho.reset, _, true, true)
+			if (instancia.LastMenuOpened == "reset" and GameCooltipFrame1:IsShown()) then
+				GameCooltip:ShowMe (false)
+				instancia.LastMenuOpened = nil
+			else
+				reset_button_onenter (instancia.baseframe.cabecalho.reset, _, true, true)
+				instancia.LastMenuOpened = "reset"
+			end
 		else
 			if (not _detalhes.disable_reset_button) then
 				_detalhes.tabela_historico:resetar() 

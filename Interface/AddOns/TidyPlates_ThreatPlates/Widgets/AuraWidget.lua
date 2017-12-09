@@ -4,17 +4,8 @@ local ThreatPlates = NAMESPACE.ThreatPlates
 ---------------------------------------------------------------------------------------------------
 -- Imported functions and constants
 ---------------------------------------------------------------------------------------------------
-local DebuffTypeColor = DebuffTypeColor
-local UnitAura = UnitAura
-local CreateFrame = CreateFrame
-local GetFramerate = GetFramerate
-local UnitIsFriend = UnitIsFriend
 
-local TidyPlatesThreat = TidyPlatesThreat
-
-local RGB = ThreatPlates.RGB
-local DEBUG = ThreatPlates.DEBUG
-
+-- Lua APIs
 local GetTime = GetTime
 local pairs = pairs
 local floor = floor
@@ -22,6 +13,18 @@ local sort = sort
 local math = math
 local string = string
 local tonumber = tonumber
+
+-- WoW APIs
+local DebuffTypeColor = DebuffTypeColor
+local UnitAura = UnitAura
+local CreateFrame = CreateFrame
+local GetFramerate = GetFramerate
+local UnitIsFriend = UnitIsFriend
+
+-- ThreatPlates APIs
+local TidyPlatesThreat = TidyPlatesThreat
+local RGB = ThreatPlates.RGB
+local DEBUG = ThreatPlates.DEBUG
 
 ---------------------------------------------------------------------------------------------------
 -- Aura Widget 2.0
@@ -55,6 +58,7 @@ local CONFIG_AuraWidgetHeight
 local CONFIG_AuraWidgetWidth
 local CONFIG_AuraWidgetOffset
 local Filter_ByAuraList
+local Filter_OnlyPlayerAuras = true
 local AURA_FILTER_FRIENDLY = ""
 local AURA_FILTER_ENEMY = ""
 
@@ -701,16 +705,19 @@ local function CreateBarAuraFrame(parent)
   local db = TidyPlatesThreat.db.profile.AuraWidget.ModeBar
   local font = ThreatPlates.Media:Fetch('font', db.Font)
 
+  -- frame is probably not necessary, should be ok do add everything to the statusbar frame
   local frame = CreateFrame("Frame", nil, parent)
-
-  frame.Icon = frame:CreateTexture(nil, "BACKGROUND")
-  frame.Stacks = frame:CreateFontString(nil, "OVERLAY")
+  frame:SetFrameLevel(parent:GetFrameLevel())
 
   frame.Statusbar = CreateFrame("StatusBar", nil, frame)
+  frame.Statusbar:SetFrameLevel(parent:GetFrameLevel())
   frame.Statusbar:SetMinMaxValues(0, 100)
 
   frame.Background = frame.Statusbar:CreateTexture(nil, "BACKGROUND")
   frame.Background:SetAllPoints()
+
+  frame.Icon = frame:CreateTexture(nil, "ARTWORK")
+  frame.Stacks = frame:CreateFontString(nil, "OVERLAY")
 
   frame.LabelText = frame.Statusbar:CreateFontString(nil, "OVERLAY")
   frame.LabelText:SetFont(font, db.FontSize)
@@ -743,11 +750,12 @@ local function CreateIconAuraFrame(parent)
   local db = TidyPlatesThreat.db.profile.AuraWidget.ModeBar
 
   local frame = CreateFrame("Frame", nil, parent)
+  frame:SetFrameLevel(parent:GetFrameLevel())
 
-  frame.Icon = frame:CreateTexture(nil, "BACKGROUND")
-  frame.Stacks = frame:CreateFontString(nil, "OVERLAY")
+  frame.Icon = frame:CreateTexture(nil, "ARTWORK")
   frame.Border = frame:CreateTexture(nil, "ARTWORK")
   frame.BorderHighlight = frame:CreateTexture(nil, "ARTWORK")
+  frame.Stacks = frame:CreateFontString(nil, "OVERLAY")
   frame.Cooldown = CreateFrame("Cooldown", nil, frame, "TidyPlatesAuraWidgetCooldown")
   frame.Cooldown:SetAllPoints(frame.Icon)
   frame.Cooldown:SetReverse(true)
@@ -1056,11 +1064,13 @@ local function ForceAurasUpdate()
 end
 
 local function PrepareFilter()
-  local filter = TidyPlatesThreat.db.profile.AuraWidget.FilterBySpell
+  local db = TidyPlatesThreat.db.profile.AuraWidget
+
   Filter_ByAuraList = {}
+  Filter_OnlyPlayerAuras = true
 
   local modifier, spell
-  for key, value in pairs(filter) do
+  for key, value in pairs(db.FilterBySpell) do
     -- remove comments and whitespaces from the filter (string)
     local pos = value:find("%-%-")
     if pos then value = value:sub(1, pos - 1) end
@@ -1070,12 +1080,14 @@ local function PrepareFilter()
     if value:sub(1, 4) == "All " then
       modifier = "All"
       spell = value:match("^All%s*(.-)$")
+      Filter_OnlyPlayerAuras = false
     elseif value:sub(1, 3) == "My " then
       modifier = "My"
       spell = value:match("^My%s*(.-)$")
     elseif value:sub(1, 4) == "Not " then
       modifier = "Not"
       spell = value:match("^Not%s*(.-)$")
+      Filter_OnlyPlayerAuras = false
     else
       modifier = true
       spell = value
@@ -1088,6 +1100,20 @@ local function PrepareFilter()
     elseif spell ~= '' then
       Filter_ByAuraList[spell] = modifier
     end
+  end
+
+  if db.FilterMode == "BLIZZARD" then
+    -- Blizzard default is
+    --   UnitReaction <=4: filter = "HARMFUL|INCLUDE_NAME_PLATE_ONLY"
+    --   UnitReaction >4: filter = "NONE" or filter = "HARMFUL|RAID" (with showAll) if nameplateShowDebuffsOnFriendly == true (for 7.3)
+    AURA_FILTER_ENEMY = "|INCLUDE_NAME_PLATE_ONLY"
+    AURA_FILTER_FRIENDLY = (db.ShowDebuffsOnFriendly and '|RAID') or "NONE"
+  elseif string.find(db.FilterMode, "Mine") and Filter_OnlyPlayerAuras then
+    AURA_FILTER_ENEMY = "|PLAYER"
+    AURA_FILTER_FRIENDLY = "|PLAYER"
+  else
+    AURA_FILTER_ENEMY = ""
+    AURA_FILTER_FRIENDLY = ""
   end
 
   ConfigLastUpdate = GetTime()
@@ -1145,16 +1171,15 @@ local function ConfigAuraWidget()
   CONFIG_AuraWidth = CONFIG_AuraWidth + CONFIG_GridSpacingCols
   CONFIG_AuraHeight = CONFIG_AuraHeight + CONFIG_GridSpacingRows
 
-
   if db.FilterMode == "BLIZZARD" then
     -- Blizzard default is
     --   UnitReaction <=4: filter = "HARMFUL|INCLUDE_NAME_PLATE_ONLY"
     --   UnitReaction >4: filter = "NONE" or filter = "HARMFUL|RAID" (with showAll) if nameplateShowDebuffsOnFriendly == true (for 7.3)
     AURA_FILTER_ENEMY = "|INCLUDE_NAME_PLATE_ONLY"
     AURA_FILTER_FRIENDLY = (db.ShowDebuffsOnFriendly and '|RAID') or "NONE"
---  elseif string.find(db.FilterMode, "Mine") then
---    AURA_FILTER_ENEMY = "|PLAYER"
---    AURA_FILTER_FRIENDLY = "|PLAYER"
+  elseif string.find(db.FilterMode, "Mine") and Filter_OnlyPlayerAuras then
+    AURA_FILTER_ENEMY = "|PLAYER"
+    AURA_FILTER_FRIENDLY = "|PLAYER"
   else
     AURA_FILTER_ENEMY = ""
     AURA_FILTER_FRIENDLY = ""
@@ -1185,8 +1210,8 @@ local function CreateAuraWidget(plate)
 
 	-- Custom Code III
 	--------------------------------------
+  --frame:SetFrameLevel(plate:GetFrameLevel())
 	frame:SetSize(128, 32)
-	frame:SetFrameLevel(plate:GetFrameLevel() + 1)
 	frame.AuraFrames = {}
   --UpdateWidgetConfig(frame)
   CreateAuraWidgetLayout(frame)

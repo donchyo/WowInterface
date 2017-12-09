@@ -234,14 +234,20 @@ function _detalhes:ApplyProfile (profile_name, nosave, is_copy)
 
 	--> update profile keys before go
 		for key, value in pairs (_detalhes.default_profile) do 
+			--> the entire key doesn't exist
 			if (profile [key] == nil) then
 				if (type (value) == "table") then
 					profile [key] = table_deepcopy (_detalhes.default_profile [key])
 				else
 					profile [key] = value
 				end
-				
+			
+			--> the key exist and is a table, check for missing values on sub tables
 			elseif (type (value) == "table") then
+				--> deploy only copy non existing data
+				_detalhes.table.deploy (profile [key], value)
+				
+			--[=[
 				for key2, value2 in pairs (value) do 
 					if (profile [key] [key2] == nil) then
 						if (type (value2) == "table") then
@@ -251,7 +257,7 @@ function _detalhes:ApplyProfile (profile_name, nosave, is_copy)
 						end
 					end
 				end
-				
+			--]=]
 			end
 		end
 		
@@ -542,6 +548,15 @@ function _detalhes:ApplyProfile (profile_name, nosave, is_copy)
 		
 		--> update the numerical system
 		_detalhes:SelectNumericalSystem()
+		
+		--> refresh the update interval
+		_detalhes:RefreshUpdater()
+		
+		--> refresh animation functions
+		_detalhes:RefreshAnimationFunctions()
+		
+		--> refresh broadcaster tools
+		_detalhes:LoadFramesForBroadcastTools()
 
 	if (_detalhes.initializing) then
 		_detalhes.profile_loaded = true
@@ -864,14 +879,14 @@ local default_profile = {
 				0.23, -- [3]
 			},
 			["ARENA_GREEN"] = {
-				0.1, -- [1]
-				0.85, -- [2]
-				0.1, -- [3]
+				0.4, -- [1]
+				1, -- [2]
+				0.4, -- [3]
 			},
 			["ARENA_YELLOW"] = {
-				0.90, -- [1]
-				0.90, -- [2]
-				0, -- [3]
+				1, -- [1]
+				1, -- [2]
+				0.25, -- [3]
 			},
 			["NEUTRAL"] = {
 				1, -- [1]
@@ -942,6 +957,10 @@ local default_profile = {
 	
 	--> performance
 		use_row_animations = false,
+		animation_speed = 33,
+		animation_speed_triggertravel = 5,
+		animation_speed_mintravel = 0.45,
+		animation_speed_maxtravel = 3,
 		animate_scroll = false,
 		use_scroll = false,
 		scroll_speed = 2,
@@ -1013,7 +1032,64 @@ local default_profile = {
 			tab_name = "",
 			single_window = false,
 		},
+	
+	--> broadcaster options
+		broadcaster_enabled = false,
 		
+	--> event tracker
+		event_tracker = {
+			frame = {
+				locked = false,
+				width = 250,
+				height = 300,
+				backdrop_color = {0, 0, 0, 0.2},
+				show_title = true,
+				strata = "LOW",
+			},
+			options_frame = {},
+			enabled = false,
+			font_size = 10,
+			font_color = {1, 1, 1, 1},
+			font_shadow = "NONE",
+			font_face = "Friz Quadrata TT",
+			line_height = 16,
+			line_texture = "Details Serenity",
+			line_color = {.1, .1, .1, 0.3},
+		},
+		
+	--> current damage
+		current_dps_meter = {
+			frame = {
+				locked = false,
+				width = 220,
+				height = 65,
+				backdrop_color = {0, 0, 0, 0.2},
+				show_title = false,
+				strata = "LOW",
+			},
+			options_frame = {},
+			enabled = false,
+			arena_enabled = true,
+			mythic_dungeon_enabled = true,
+			font_size = 18,
+			font_color = {1, 1, 1, 1},
+			font_shadow = "NONE",
+			font_face = "Friz Quadrata TT",
+			update_interval = 0.10,
+			sample_size = 5, --in seconds
+		},
+		
+	--> streamer
+--	_detalhes.streamer_config.
+		streamer_config = {
+			reset_spec_cache = false,
+			disable_mythic_dungeon = false,
+			no_alerts = false,
+			quick_detection = false,
+			faster_updates = false,
+			use_animation_accel = false,
+		},
+	
 	--> tooltip
 		tooltip = {
 			fontface = "Friz Quadrata TT", 
@@ -1232,77 +1308,20 @@ local default_global_data = {
 			make_overall_when_done = true, --
 			make_overall_boss_only = false, --
 		},
-		
-	-- important auras
-	--[=[
-		important_auras = {
-			[577] = {}, -- Havoc Demon Hunter
-			[581] = {}, -- Vengeance Demon Hunter
+	
+	--> plugin window positions
+		plugin_window_pos = {},
 
-			[252] = {}, -- Unholy Death Knight
-			[251] = {}, -- Frost Death Knight
-			[250] = {}, -- Blood Death Knight
-			
-			[102] = {}, -- Balance Druid
-			[103] = {}, -- Feral Druid
-			[104] = {}, -- Guardian Druid
-			[105] = {}, -- Restoration Druid
-			
-			[253] = {}, -- Beast Mastery Hunter
-			[254] = {}, -- Marksmanship Hunter
-			[255] = {}, -- Survival Hunter
-			
-			[62] = { -- Arcane Mage
-				
-			}, 
-			[63] = { -- Fire Mage
-				157644, --Enhanced Pyrotechnics
-				48107, --Heating Up
-				48108, --Hot Streak!
-				194329, --Pyretic Incantation
-				
-			}, 
-			[64] = { -- Frost Mage
-				44544, --fingers of frost
-				195418, --chain reaction
-				190446, --brain freeze
-				12472, --icyveins
-			}, 
-			
-			[268] = {}, -- Brewmaster Monk
-			[269] = {}, -- Windwalker Monk
-			[270] = {}, -- Mistweaver Monk
-			
-			[65] = {}, -- Holy Paladin
-			[66] = {}, -- Protection Paladin
-			[70] = {}, -- Retribution Paladin
-			
-			[256] = {}, -- Discipline Priest
-			[257] = {}, -- Holy Priest
-			[258] = {}, -- Shadow Priest
-			
-			[259] = {}, -- Assassination Rogue
-			[260] = {}, -- Outlaw Rogue
-			[261] = {}, -- Subtlety Rogue
-			
-			[262] = {}, -- Elemental Shaman
-			[263] = {}, -- Enhancement Shaman
-			[264] = {}, -- Restoration Shaman
-			
-			[265] = {}, -- Affliction Warlock
-			[266] = {}, -- Demonology Warlock
-			[267] = {}, -- Destruction Warlock
-			
-			[71] = {}, -- Arms Warrior
-			[72] = {}, -- Fury Warrior
-			[73] = {}, -- Protection Warrior
-		},
-	--]=]
 }
 
 _detalhes.default_global_data = default_global_data
 
 function _detalhes:GetTutorialCVar (key, default)
+	--> is disabling all popups from the streamer options
+	if (_detalhes.streamer_config.no_alerts) then
+		return true
+	end
+	
 	local value = _detalhes.tutorial [key]
 	if (value == nil and default) then
 		_detalhes.tutorial [key] = default
@@ -1401,6 +1420,10 @@ function _detalhes:RestoreState_CurrentMythicDungeonRun()
 				_detalhes.MythicPlus.PreviousBossKilledAt = savedTable.previous_boss_killed_at
 				_detalhes.MythicPlus.IsRestoredState = true
 				DetailsMythicPlusFrame.IsDoingMythicDungeon = true
+				
+				C_Timer.After (2, function()
+					_detalhes:SendEvent ("COMBAT_MYTHICDUNGEON_START")
+				end)
 				return
 			end
 		end

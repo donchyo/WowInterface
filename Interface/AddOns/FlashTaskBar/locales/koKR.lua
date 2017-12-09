@@ -3,6 +3,8 @@ if not L then return end
 
 L["STRING_ADD"] = "추가"
 L["STRING_ADDKEYWORD"] = "단어 추가"
+--Translation missing 
+-- L["STRING_BACKGROUND_SOUND"] = ""
 L["STRING_BAGSFULL"] = "가득 찬 가방"
 L["STRING_BAGSFULL_DESC"] = "전문 기술 제작 중 소지품 가방이 가득 차면 알립니다."
 L["STRING_BATTLEGROUND"] = "전장 종료"

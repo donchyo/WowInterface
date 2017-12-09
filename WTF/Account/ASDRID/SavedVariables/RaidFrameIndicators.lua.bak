@@ -131,8 +131,8 @@ IndicatorsDB = {
 			["iconSize5"] = 14,
 			["showTooltip5"] = false,
 			["showDebuffs"] = true,
-			["showBuffs"] = true,
 			["stack5"] = false,
+			["showBuffs"] = true,
 		},
 	},
 }

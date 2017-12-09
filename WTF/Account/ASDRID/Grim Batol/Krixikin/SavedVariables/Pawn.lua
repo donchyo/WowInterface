@@ -4,29 +4,11 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Krixikin-Grim Batol",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
-		[128306] = {
-			["Relics"] = {
-				{
-					["ItemLevel"] = 67,
-					["Type"] = "Life",
-				}, -- [1]
-				{
-					["ItemLevel"] = 67,
-					["Type"] = "Frost",
-				}, -- [2]
-				{
-					["ItemLevel"] = 68,
-					["Type"] = "Life",
-				}, -- [3]
-			},
-			["Name"] = "G'Hanir, the Mother Tree",
-		},
 		[128860] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 62,
+					["ItemLevel"] = 67,
 					["Type"] = "Frost",
 				}, -- [1]
 				{
@@ -39,23 +21,6 @@ PawnOptions = {
 				}, -- [3]
 			},
 			["Name"] = "Fangs of Ashamane",
-		},
-		[128858] = {
-			["Relics"] = {
-				{
-					["ItemLevel"] = 62,
-					["Type"] = "Arcane",
-				}, -- [1]
-				{
-					["ItemLevel"] = 62,
-					["Type"] = "Life",
-				}, -- [2]
-				{
-					["ItemLevel"] = 62,
-					["Type"] = "Arcane",
-				}, -- [3]
-			},
-			["Name"] = "Scythe of Elune",
 		},
 		[128821] = {
 			["Relics"] = {
@@ -74,7 +39,42 @@ PawnOptions = {
 			},
 			["Name"] = "Claws of Ursoc",
 		},
+		[128858] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 62,
+					["Type"] = "Arcane",
+				}, -- [1]
+				{
+					["ItemLevel"] = 62,
+					["Type"] = "Life",
+				}, -- [2]
+				{
+					["ItemLevel"] = 62,
+					["Type"] = "Arcane",
+				}, -- [3]
+			},
+			["Name"] = "Scythe of Elune",
+		},
+		[128306] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 67,
+					["Type"] = "Life",
+				}, -- [1]
+				{
+					["ItemLevel"] = 74,
+					["Type"] = "Frost",
+				}, -- [2]
+				{
+					["ItemLevel"] = 68,
+					["Type"] = "Life",
+				}, -- [3]
+			},
+			["Name"] = "G'Hanir, the Mother Tree",
+		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",

@@ -11,7 +11,7 @@
 ## Notes-ptBR: Raid and Party Assist
 ## Notes-esES: Raid and Party Assist
 ## Notes-esMX: Raid and Party Assist
-## Version: v7.3.0
+## Version: v7.3.1
 ## Author: Funkydude, Nebula
 
 ## X-Credits: Cladhaire, Ammo, Rabbit
@@ -44,7 +44,7 @@ modules\Alerts.lua
 modules\BattleRes.lua
 modules\Consumables.lua
 modules\Cooldowns\module.xml
-modules\GuildRepairs.lua
+#modules\GuildRepairs.lua
 modules\Loot.lua
 modules\ReadyCheck.lua
 # modules with no settings

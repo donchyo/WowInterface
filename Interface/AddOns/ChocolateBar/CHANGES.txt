@@ -1,11 +1,11 @@
-tag bd6137a5e0847602dfa63a844a925f7e337e2903 v3.0.5
+tag 78d5531b7ccaeb777fd2ed7a854c7d9c59d5c7e0 v3.0.5
 Author:	yess <yess@xan.at>
 Date:	Sun Sep 17 04:00:03 2017 +0200
 
 Release v3.0.5
 
-commit e8dd7e1f7a12311e9d8da0df75347756fbdf31d1
-Author: yess <yess@xan.at>
+commit bae2027d547cee32c3d6e6acb7736d731620087d
+Author: zanony <zanony@xan.at>
 Date:   Sun Sep 17 03:59:16 2017 +0200
 
     update toc

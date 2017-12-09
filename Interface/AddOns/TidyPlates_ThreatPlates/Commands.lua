@@ -100,19 +100,16 @@ SlashCmdList["TPTPVERBOSE"] = TPTPVERBOSE
 function TidyPlatesThreat:ChatCommand(input)
 	TidyPlatesThreat:OpenOptions()
 
-	-- split commands by space
-	--for word in message:gmatch("%S+") do
---	if message == "" then
---	elseif message == "update-profiles" then
---		t.Print(L["Migrating deprecated settings in configuration ..."])
---		t.UpdateConfiguration()
---	elseif message == "internal" then
---		TidyPlatesThreat.db.global.CheckNewLookAndFeel = nil
---		TidyPlatesThreat.db.global.DefaultsVersion = nil
---	elseif message == "help" then
+--	local cmd_list = {}
+--	for w in input:gmatch("%S+") do cmd_list[#cmd_list + 1] = w end
+--
+--	local command = cmd_list[1]
+--	if command == "" then
+--		-- do something
+--	elseif command == "help" then
 --		PrintHelp()
 --	else
---		t.Print(L["Unknown option: "] .. message, true)
+--		t.Print(L["Unknown option: "] .. input, true)
 --		PrintHelp()
 --	end
 end

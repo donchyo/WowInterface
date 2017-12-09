@@ -14,7 +14,8 @@ bind CTRL-F2 NONE
 bind CTRL-F3 NONE
 bind CTRL-1 CLICK BT4Button73:LeftButton
 bind CTRL-2 CLICK BT4Button74:LeftButton
-bind CTRL-3 NONE
+bind CTRL-3 CLICK BT4Button75:LeftButton
+bind CTRL-4 CLICK BT4Button76:LeftButton
 bind CTRL-5 CLICK BT4Button22:LeftButton
 bind CTRL-6 CLICK BT4Button87:LeftButton
 bind CTRL-8 CLICK BT4Button34:LeftButton

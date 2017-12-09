@@ -273,13 +273,13 @@ PremadeGroupsFilterState = {
 		},
 		["members"] = {
 			["min"] = "",
-			["max"] = "3",
+			["max"] = "4",
 			["act"] = true,
 		},
 		["heals"] = {
-			["min"] = "",
-			["max"] = "0",
-			["act"] = false,
+			["min"] = "1",
+			["max"] = "1",
+			["act"] = true,
 		},
 		["defeated"] = {
 			["min"] = "",

@@ -1,18 +1,18 @@
-tag 5a71ba89fdb32b77a73d7ce44c006752f4e503d7 v1.521
+tag f192bab41217cd69e5d48ef0b667e936e5f9a8f8 v1.540
 Author:	Jesse Manelius <jessemanelius@gmail.com>
-Date:	Wed Oct 4 12:09:51 2017 +0300
+Date:	Mon Dec 4 01:23:48 2017 +0200
 
-tagging as v1.521
+tagging as v1.540
 
-commit 83fadf3242b6027fb2c76b6c1bbba172c394b631
+commit 1bcd8e968846c027b71dd459380e3f3336fef55d
 Author: Jesse Manelius <jessemanelius@gmail.com>
-Date:   Wed Oct 4 12:09:17 2017 +0300
+Date:   Mon Dec 4 01:23:08 2017 +0200
 
-    toc version update
+    fix typo on toc file
 
-commit afec4e37c90b8a97166f9f7c5e529bdaf9f5efa4
+commit 72371ee9fec7ee1f3f8067c1e300d8b8efac163c
 Author: Jesse Manelius <jessemanelius@gmail.com>
-Date:   Wed Oct 4 12:08:51 2017 +0300
+Date:   Sun Dec 3 16:21:31 2017 +0200
 
-    fix stuff
+    remove ak related functions and update ilvl rewards
 

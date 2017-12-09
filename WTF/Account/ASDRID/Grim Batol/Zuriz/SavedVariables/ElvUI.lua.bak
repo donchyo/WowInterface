@@ -1,33 +1,33 @@
 
 ElvCharacterDB = {
-	["ChatLog"] = {
+	["ChatHistoryLog"] = {
 	},
 	["ChatEditHistory"] = {
-		"/cw Datmog-Sylvanas HOOK ME UP FAM", -- [1]
-		"/cw Datmog-Sylvanas still rude", -- [2]
-		"/cw Datmog-Sylvanas :(", -- [3]
-		"/cw Datmog-Sylvanas :P", -- [4]
-		"/cw Swoda-Ravencrest lul", -- [5]
-		"/lick", -- [6]
-		"/cw Swoda-Ravencrest pls no swapperinos", -- [7]
-		"/cw Swoda-Ravencrest people get mad my dude", -- [8]
-		"/cw Swoda-Ravencrest xd cx", -- [9]
-		"/cw Swoda-Ravencrest it was a pain in nh", -- [10]
-		"/cw Swoda-Ravencrest i guess", -- [11]
-		"/cw Swoda-Ravencrest krosus as people run to loot got me a few tiems", -- [12]
-		"/cw Swoda-Ravencrest do it then", -- [13]
-		"/cw Swoda-Ravencrest rip", -- [14]
-		"/cw Swoda-Ravencrest i wanted to save you", -- [15]
-		"/cw Datmog-Sylvanas yes", -- [16]
-		"/raid can this dot fuckoff", -- [17]
-		"/ert", -- [18]
-		"/reload", -- [19]
-		"/ec", -- [20]
+		" his shaman isnt the ebst", -- [1]
+		" this is a great group", -- [2]
+		" i promise", -- [3]
+		" how hard can it be?", -- [4]
+		" give wisdom!!!", -- [5]
+		" !!!1111!!!", -- [6]
+		" :DDD", -- [7]
+		" when was the run tonight again?", -- [8]
+		" oke", -- [9]
+		" then i can go and buy some chips after dinner", -- [10]
+		" YEEEEEEEE BOIIIIIIIIIII", -- [11]
+		"/raid take it", -- [12]
+		"/raid pala", -- [13]
+		"/raid you can take the ress?", -- [14]
+		" amazing groups as always", -- [15]
+		"/raid dont", -- [16]
+		"/raid just go", -- [17]
+		" lululul", -- [18]
+		" im gonna eat", -- [19]
+		" thanks for joining for that comedy", -- [20]
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 }

@@ -176,6 +176,7 @@ ChocolateBarDB = {
 					["index"] = 11,
 				},
 				["Prat"] = {
+					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",

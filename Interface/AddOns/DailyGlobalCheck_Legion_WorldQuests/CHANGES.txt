@@ -1,6 +1,10 @@
-commit d7989d22eeb0cb38b59bcdf4de79e53512c16163
-Author: Saregon <n_rhygar@yahoo.it>
-Date:   Wed Jun 14 19:18:10 2017 +0200
+lightweight tag b2f0cdc237c8807623b7dcbb48d2bc97a790b9f7 v1.0.7a
+Author:	Saregon <n_rhygar@yahoo.it>
+Date:	Fri Oct 13 21:13:56 2017 +0200
 
-    7.2.5 update
+commit b2f0cdc237c8807623b7dcbb48d2bc97a790b9f7
+Author: Saregon <n_rhygar@yahoo.it>
+Date:   Fri Oct 13 21:13:56 2017 +0200
+
+    7.3 update
 

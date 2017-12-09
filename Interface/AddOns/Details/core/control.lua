@@ -415,6 +415,9 @@
 			
 			_detalhes:CheckSwitchToCurrent()
 			_detalhes:CheckForTextTimeCounter (true)
+			
+			--> stop bar testing if any
+			_detalhes:StopTestBarUpdate()
 		end
 		
 		function _detalhes:DelayedSyncAlert()
@@ -785,8 +788,16 @@
 			end
 			
 			_detalhes.pre_pot_used = nil
-			_table_wipe (_detalhes.encounter_table)
 			
+			--> do not wipe the encounter table if is in the argus encounter ~REMOVE on 8.0
+			if (_detalhes.encounter_table and _detalhes.encounter_table.id ~= 2092) then
+				_table_wipe (_detalhes.encounter_table)
+			else
+				if (_detalhes.debug) then
+					_detalhes:Msg ("(debug) in argus encounter, cannot wipe the encounter table.")
+				end
+			end
+
 			_detalhes:InstanceCall (_detalhes.CheckPsUpdate)
 			
 			if (invalid_combat) then
@@ -900,6 +911,7 @@
 			_detalhes.tabela_vigente.arena = true
 			_detalhes.tabela_vigente.is_arena = {name = _detalhes.zone_name, zone = _detalhes.zone_name, mapid = _detalhes.zone_id}
 		
+			_detalhes:SendEvent ("COMBAT_ARENA_START")
 		end
 		
 		function _detalhes:StartArenaSegment (...)
@@ -946,6 +958,7 @@
 			_detalhes:TimeDataUnregister ("Your Team Healing")
 			_detalhes:TimeDataUnregister ("Enemy Team Healing")
 			
+			_detalhes:SendEvent ("COMBAT_ARENA_END")
 		end
 		
 		local validSpells = {

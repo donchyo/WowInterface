@@ -6,6 +6,8 @@ if not L then return end
 --Translation missing 
 -- L["STRING_ADDKEYWORD"] = ""
 --Translation missing 
+-- L["STRING_BACKGROUND_SOUND"] = ""
+--Translation missing 
 -- L["STRING_BAGSFULL"] = ""
 --Translation missing 
 -- L["STRING_BAGSFULL_DESC"] = ""

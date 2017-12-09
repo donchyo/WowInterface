@@ -98,7 +98,23 @@ function NOP:ButtonOnEnter(button) -- show tooltip
   else
     GameTooltip:SetText(BROWSE_NO_RESULTS)
   end
-  GameTooltip:AddLine(" ")
+  if WoWBox and (GameTooltip:NumLines() > 2) then
+    local onuse = GameTooltipTextLeft3:GetText()
+    if onuse then
+      local faction = string.match(string.lower(onuse),"reputation with (.+)[.]")
+      if faction then
+        local factionID = NOP.FACTION_TABLE[string.gsub(faction,"the ","")]
+        local standing = "Relations not defined!"
+        if factionID then
+          local name, _, reaction = GetFactionInfoByID(factionID)
+          if name then standing = _G['FACTION_STANDING_LABEL'..reaction] end
+        end
+        GameTooltip:AddLine("Standing: " .. standing)
+      end
+    end
+  else
+    GameTooltip:AddLine(" ")
+  end
   GameTooltip:AddLine(private.MOUSE_LB .. private.CLICK_OPEN_MSG,0,1,0)
   GameTooltip:AddLine(private.MOUSE_RB .. private.CLICK_SKIP_MSG,0,1,0)
   GameTooltip:AddLine(private.MOUSE_RB .. private.CLICK_BLACKLIST_MSG)
@@ -115,10 +131,10 @@ end
 function NOP:ButtonPostClick(button) -- post click on button
   if button then
     if (button == 'RightButton') then
-      NOP:BlacklistItem(IsControlKeyDown(),self.BF.itemID)
+      self:BlacklistItem(IsControlKeyDown(),self.BF.itemID)
     end
     if WoWBox then WoWBox.itemClick = nil end
-    if not self.timerItemShowNew then self.timerItemShowNew = self:ScheduleTimer("ItemShowNew", private.TIMER_IDLE) end -- back to timer
+    if not self.timerItemShowNew then self.timerItemShowNew = self:ScheduleTimer("ItemShowNew", private.TIMER_IDLE / 3) end -- back to timer
   end
 end
 function NOP:ButtonOnDragStart(button) -- start moving
@@ -142,7 +158,7 @@ function NOP:ButtonReset() -- reset button to default position
   self:ButtonSize()
   self:ButtonMove()
   self:QBUpdate()
-  self.printt(private.L["Reset and move button to middle of screen!"])
+  self.printt(private.L["BUTTON_RESET"])
 end
 function NOP:ButtonSize() -- resize button
   if self:inCombat() then
@@ -170,7 +186,7 @@ function NOP:ButtonMove() -- move button from UI config
   self.timerButtonMove = nil
   self.BF:SetClampedToScreen(true)
   self.BF:ClearAllPoints()
-  self.BF:SetPoint(NOP.DB.button[1] or "CENTER", self.frameHider, NOP.DB.button[3] or "CENTER", NOP.DB.button[4] or 0, NOP.DB.button[5] or 0)
+  self.BF:SetPoint(NOP.DB.button[1] or "CENTER", self.frameHiderB, NOP.DB.button[3] or "CENTER", NOP.DB.button[4] or 0, NOP.DB.button[5] or 0)
   self:ButtonSave()
 end
 function NOP:ButtonStore(button) -- save default properties
@@ -207,14 +223,16 @@ function NOP:ButtonLoad() -- create button, restore his position
   end
   self.timerButtonLoad = nil
   if not self.BF then -- new button
-    self.BF = CreateFrame("Button", private.BUTTON_FRAME, self.frameHider, "SecureActionButtonTemplate, ActionButtonTemplate")
+    self.BF = CreateFrame("Button", private.BUTTON_FRAME, self.frameHiderB, "SecureActionButtonTemplate, ActionButtonTemplate")
     local bt = self.BF
     if bt:IsVisible() or bt:IsShown() then bt:Hide() end
+    bt:SetFrameStrata(NOP.DB.strata and "HIGH" or "MEDIUM")
     self:ButtonBackdrop(bt) -- create backdrop around button if enabled
     bt:RegisterForDrag("LeftButton") -- ALT-LEFT-MOUSE for drag
     bt:RegisterForClicks("AnyUp") -- act on key release 
     bt:SetScript("OnEnter",     function(self) NOP:ButtonOnEnter(self) end)
     bt:SetScript("OnLeave",     function(self) NOP:ButtonOnLeave(self) end)
+    bt:SetScript("PreClick",    function(self,button) NOP.preClick = true end)
     bt:SetScript("PostClick",   function(self,button) NOP:ButtonPostClick(button) end)
     bt:SetScript("OnDragStart", function(self) NOP:ButtonOnDragStart(self) end)
     bt:SetScript("OnDragStop",  function(self) NOP:ButtonOnDragStop(self) end)
@@ -267,19 +285,20 @@ function NOP:ButtonShow() -- display button
     return
   end
   self.timerButtonShow = nil
-  local bt = self.BF; self:ButtonCount(bt.itemCount); bt.icon:SetTexture(bt.itemTexture or private.DEFAULT_ICON)
-  if (GetMouseFocus() == bt) then self:ButtonOnEnter(bt) end
+  local bt = self.BF
+  self:ButtonCount(bt.itemCount)
+  bt.icon:SetTexture(bt.itemTexture or private.DEFAULT_ICON)
+  if (GetMouseFocus() == bt) then self:ButtonOnEnter(bt) end -- update tooltip if mouse is over button
   bt:SetAttribute("type1", "macro") -- "type1" Unmodified left click.
   bt:SetAttribute("macrotext1", bt.mtext)
-  self:Verbose("Set Macro:",bt.mtext)
+  self:Verbose("ButtonShow:","macro text",self:CompressText(bt.mtext))
+  -- self:printt("ButtonShow:","macro text",self:CompressText(bt.mtext))
   if not (bt:IsVisible() or bt:IsShown()) then bt:Show() end
-  if NOP.DB.glowButton then
-    if self.priorityItem and self.priorityItem == bt.itemID then
+  if NOP.DB.glowButton and bt.isGlow then
       self.ActionButton_ShowOverlayGlow(bt)
     else
       self.ActionButton_HideOverlayGlow(bt)
     end
-  end
 end
 function NOP:ButtonHide() -- hide button
   if self:inCombat() then
@@ -287,9 +306,17 @@ function NOP:ButtonHide() -- hide button
     return
   end
   self.timerButtonHide = nil
-  local bt = self.BF; bt.itemCount = 0; bt.bagID = nil; bt.itemID = nil; bt.mtext = private.MACRO_INACTIVE; bt.itemTexture = nil -- reset to defaults
-  bt.icon:SetTexture(private.DEFAULT_ICON); 
-  bt:SetAttribute("macrotext1", private.MACRO_INACTIVE); self:ButtonCount(bt.itemCount); self.ActionButton_HideOverlayGlow(bt)
+  local bt = self.BF
+  bt.itemCount = 0
+  bt.bagID = nil
+  bt.itemID = nil
+  bt.isGlow = nil
+  bt.mtext = private.MACRO_INACTIVE
+  bt.itemTexture = nil
+  bt.icon:SetTexture(private.DEFAULT_ICON)
+  bt:SetAttribute("macrotext1", private.MACRO_INACTIVE)
+  self:ButtonCount(bt.itemCount)
+  self.ActionButton_HideOverlayGlow(bt)
   if NOP.DB.visible then  -- show fake button, instead hide.
     if not (bt:IsShown() or bt:IsVisible()) then bt:Show() end
   else
@@ -358,7 +385,7 @@ function NOP.ActionButton_GetOverlayGlow()
   local overlay = tremove(unusedOverlayGlows)
   if not overlay then
     numOverlays = numOverlays + 1
-    overlay = CreateFrame("Frame", ADDON .. "ActionButtonOverlay"..numOverlays, NOP.frameHider, "ActionBarButtonSpellActivationAlert")
+    overlay = CreateFrame("Frame", ADDON .. "ActionButtonOverlay"..numOverlays, NOP.frameHiderB, "ActionBarButtonSpellActivationAlert")
   end
   return overlay;
 end

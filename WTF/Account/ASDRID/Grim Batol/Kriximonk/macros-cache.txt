@@ -1,6 +1,14 @@
+VER 3 010000000000000F "coccon" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]life cocoon
+END
 VER 3 0100000000000008 "dispell" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]detox
+END
+VER 3 0100000000000010 "rm" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] renewing mist
 END
 VER 3 010000000000000E "roll" "INV_MISC_QUESTIONMARK"
 #showtooltip

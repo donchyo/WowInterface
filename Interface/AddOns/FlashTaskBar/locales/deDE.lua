@@ -3,6 +3,8 @@ if not L then return end
 
 L["STRING_ADD"] = "hinzufügen"
 L["STRING_ADDKEYWORD"] = "Schlüsselwort hinzufügen"
+--Translation missing 
+-- L["STRING_BACKGROUND_SOUND"] = ""
 L["STRING_BAGSFULL"] = "Volle Taschen"
 L["STRING_BAGSFULL_DESC"] = "Wenn du etwas herstellst und du nicht genügend Platz in deinem Rucksack hast."
 L["STRING_BATTLEGROUND"] = "Ende eines Schlachtfelds"

@@ -7,8 +7,13 @@ local ThreatPlates = NAMESPACE.ThreatPlates
 ---------------------------------------------------------------------------------------------------
 -- Imported functions and constants
 ---------------------------------------------------------------------------------------------------
+
+-- Lua APIs
 local pairs = pairs
 
+-- WoW APIs
+
+-- ThreatPlates APIs
 local DEBUG = ThreatPlates.DEBUG
 local SetStyle = TidyPlatesThreat.SetStyle
 
@@ -46,13 +51,13 @@ local function UnregisterWidget(name)
   ThreatPlatesWidgets.list[name] = nil
 end
 
-local function HideWidget(widget_list, widget_name)
-  local widget = widget_list[widget_name]
-  if widget then
-    widget:Hide()
-    widget_list[widget_name] = nil -- deleted the disabled widget, is that what we want? no re-using it later ...
-  end
-end
+--local function HideWidget(widget_list, widget_name)
+--  local widget = widget_list[widget_name]
+--  if widget then
+--    widget:Hide()
+--    widget_list[widget_name] = nil -- deleted the disabled widget, is that what we want? no re-using it later ...
+--  end
+--end
 
 -- TidyPlatesGlobal_OnInitialize() is called when a nameplate is created or re-shown
 -- activetheme is the table, not just the name
@@ -66,6 +71,7 @@ local function OnInitialize(plate, theme)
     --        widget:Hide()
     --      end
     --		end
+    ThreatPlates.CreateExtensions(plate)
 
     for name,v in pairs(ThreatPlatesWidgets.list) do
       local widget = widget_list[name]
@@ -82,6 +88,99 @@ local function OnInitialize(plate, theme)
         widget:Hide()
         widget_list[name] = nil -- deleted the disabled widget, is that what we want? no re-using it later ...
       end
+    end
+  end
+end
+
+-- TidyPlatesGlobal_OnUpdate() is called when other data about the unit changes, or is requested by an external controller.
+local function OnUpdate(plate, unit)
+  -- sometimes unitid is nil, still don't know why, but it creates all kinds of LUA errors as other attributes are nil
+  -- also, e.g., unit.type, unit.name, ...
+  if not unit.unitid then return end
+
+  local style = SetStyle(unit)
+  ThreatPlates.UpdateExtensions(plate, unit.unitid, style)
+
+  local widget_list = plate.widgets
+  for name,v in pairs(ThreatPlatesWidgets.list) do
+    local widget = widget_list[name]
+
+    local show_healthbar_view = v.enabled()
+    local show_headline_view = v.EnabledInHeadlineView()
+
+    if show_healthbar_view or show_headline_view then
+      -- Because widgets can be disabled anytime, it is not guaranteed that it exists after OnInitialize
+      if not widget then
+        widget = v.create(plate)
+        widget_list[name] = widget
+      end
+
+      if style == "NameOnly" or style == "NameOnly-Unique" then
+        if show_headline_view then
+          if not v.isContext then
+            widget:Update(unit)
+            --if unit.isTarget then	plate:SetFrameStrata("LOW") else plate:SetFrameStrata("BACKGROUND")	end
+          end
+        else
+          widget:Hide()
+        end
+      elseif style == "etotem" or style == "empty" then
+        widget:Hide()
+      elseif show_healthbar_view then -- any other style
+        -- context means that widget is only relevant for target (or mouse-over)
+        if not v.isContext then
+          widget:Update(unit)
+          --if unit.isTarget then	plate:SetFrameStrata("LOW") else plate:SetFrameStrata("BACKGROUND") end
+        end
+      else
+        widget:Hide()
+      end
+    elseif widget then
+      widget:Hide()
+      widget_list[name] = nil -- deleted the disabled widget, is that what we want? no re-using it later ...
+    end
+  end
+end
+
+-- TidyPlatesGlobal_OnContextUpdate() is called when a unit is targeted or moused-over.  (Any time the unitid or GUID changes)
+-- OnContextUpdate must only do something when there is something unit-dependent to display?
+local function OnContextUpdate(plate, unit)
+  if not unit.unitid then return end
+
+  local style = SetStyle(unit)
+
+  local widget_list = plate.widgets
+  for name,v in pairs(ThreatPlatesWidgets.list) do
+    local widget = widget_list[name]
+
+    local show_healthbar_view = v.enabled()
+    local show_headline_view = v.EnabledInHeadlineView()
+
+    if show_healthbar_view or show_headline_view then
+      -- Because widgets can be disabled anytime, it is not guaranteed that it exists after OnInitialize
+      if not widget then
+        widget = v.create(plate)
+        widget_list[name] = widget
+      end
+
+      if style == "NameOnly" or style == "NameOnly-Unique" then
+        if show_headline_view then
+          widget:UpdateContext(unit)
+          if unit.isTarget then	plate:SetFrameStrata("LOW") else plate:SetFrameStrata("BACKGROUND") end
+        else
+          widget:Hide()
+        end
+      elseif style == "etotem" or style == "empty" then
+        widget:Hide()
+      elseif show_healthbar_view then -- any other style
+        widget:UpdateContext(unit)
+        if unit.isTarget then	plate:SetFrameStrata("LOW") else plate:SetFrameStrata("BACKGROUND") end
+      else
+        widget:Hide()
+      end
+    elseif widget then
+      widget:Hide()
+      widget_list[name] = nil -- deleted the disabled widget, is that what we want? no re-using it later ...
     end
   end
 end
@@ -107,96 +206,6 @@ local function DeleteWidgets()
   ThreatPlatesWidgets.SocialWidgetDisableWatcher()
   ThreatPlatesWidgets.ResourceWidgetDisableWatcher()
   --ThreatPlatesWidgets.AuraWidgetDisableWatcher() -- right now, watcher still necessary for TidyPlates as well
-end
-
--- TidyPlatesGlobal_OnUpdate() is called when other data about the unit changes, or is requested by an external controller.
-local function OnUpdate(plate, unit)
-  -- sometimes unitid is nil, still don't know why, but it creates all kinds of LUA errors as other attributes are nil
-  -- also, e.g., unit.type, unit.name, ...
-  if not unit.unitid then return end
-
-  local widget_list = plate.widgets
-  for name,v in pairs(ThreatPlatesWidgets.list) do
-    local widget = widget_list[name]
-
-    local show_healthbar_view = v.enabled()
-    local show_headline_view = v.EnabledInHeadlineView()
-
-    if show_healthbar_view or show_headline_view then
-      -- Because widgets can be disabled anytime, it is not guaranteed that it exists after OnInitialize
-      if not widget then
-        widget = v.create(plate)
-        widget_list[name] = widget
-      end
-
-      local style = SetStyle(unit)
-      if style == "NameOnly" or style == "NameOnly-Unique" then
-        if show_headline_view then
-          if not v.isContext then
-            widget:Update(unit)
-            if unit.isTarget then	plate:SetFrameStrata("LOW") else plate:SetFrameStrata("BACKGROUND")	end
-          end
-        else
-          widget:Hide()
-        end
-      elseif style == "etotem" or style == "empty" then
-        widget:Hide()
-      elseif show_healthbar_view then -- any other style
-        -- context means that widget is only relevant for target (or mouse-over)
-        if not v.isContext then
-          widget:Update(unit)
-          if unit.isTarget then	plate:SetFrameStrata("LOW") else plate:SetFrameStrata("BACKGROUND") end
-        end
-      else
-        widget:Hide()
-      end
-    elseif widget then
-      widget:Hide()
-      widget_list[name] = nil -- deleted the disabled widget, is that what we want? no re-using it later ...
-    end
-  end
-end
-
--- TidyPlatesGlobal_OnContextUpdate() is called when a unit is targeted or moused-over.  (Any time the unitid or GUID changes)
--- OnContextUpdate must only do something when there is something unit-dependent to display?
-local function OnContextUpdate(plate, unit)
-  if not unit.unitid then return end
-
-  local widget_list = plate.widgets
-  for name,v in pairs(ThreatPlatesWidgets.list) do
-    local widget = widget_list[name]
-
-    local show_healthbar_view = v.enabled()
-    local show_headline_view = v.EnabledInHeadlineView()
-
-    if show_healthbar_view or show_headline_view then
-      -- Because widgets can be disabled anytime, it is not guaranteed that it exists after OnInitialize
-      if not widget then
-        widget = v.create(plate)
-        widget_list[name] = widget
-      end
-
-      local style = SetStyle(unit)
-      if style == "NameOnly" or style == "NameOnly-Unique" then
-        if show_headline_view then
-          widget:UpdateContext(unit)
-          if unit.isTarget then	plate:SetFrameStrata("LOW") else plate:SetFrameStrata("BACKGROUND") end
-        else
-          widget:Hide()
-        end
-      elseif style == "etotem" or style == "empty" then
-        widget:Hide()
-      elseif show_healthbar_view then -- any other style
-        widget:UpdateContext(unit)
-        if unit.isTarget then	plate:SetFrameStrata("LOW") else plate:SetFrameStrata("BACKGROUND") end
-      else
-        widget:Hide()
-      end
-    elseif widget then
-      widget:Hide()
-      widget_list[name] = nil -- deleted the disabled widget, is that what we want? no re-using it later ...
-    end
-  end
 end
 
 ThreatPlatesWidgets.RegisterWidget = RegisterWidget				-- used internally by ThreatPlates widgets

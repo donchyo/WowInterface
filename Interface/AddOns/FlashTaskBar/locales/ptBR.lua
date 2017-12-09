@@ -3,17 +3,16 @@ if not L then return end
 
 L["STRING_ADD"] = "adicionar"
 L["STRING_ADDKEYWORD"] = "Adicionar Palavra"
+--Translation missing 
+-- L["STRING_BACKGROUND_SOUND"] = ""
 L["STRING_BAGSFULL"] = "Mochila Cheia"
 L["STRING_BAGSFULL_DESC"] = "Quando você estiver criando itens com sua profissão e a mochila ficar sem espaços livres."
---Translation missing 
--- L["STRING_BATTLEGROUND"] = ""
---Translation missing 
--- L["STRING_BATTLEGROUND_DESC"] = ""
+L["STRING_BATTLEGROUND"] = "Fim Campo de Batalha"
+L["STRING_BATTLEGROUND_DESC"] = "Flash quando um campo de batalha termina"
 L["STRING_BRAWLERS"] = "Fila da Guilda dos Brigões"
 L["STRING_BRAWLERS_DESC"] = "Quando chegar sua vez de lutar no ringue da Guilda dos Brigões."
 L["STRING_CAMPINGSETTINGS"] = "Configuração de Espera (Camping)"
---Translation missing 
--- L["STRING_CHAT_FLYPOINTENDED"] = ""
+L["STRING_CHAT_FLYPOINTENDED"] = "quando seu taxi aéreo chegar no ponto final"
 L["STRING_CHATSCAN"] = "Leitura do Bate-Papo"
 L["STRING_CHATSCAN_DESC"] = "Alerta para eventos no bate papo."
 L["STRING_CHATSCAN_ENABLED"] = "Leitura do Bate-Papo Ativada"
@@ -47,14 +46,10 @@ L["STRING_INVITEIGNORE"] = "Ignorar ao Auto Aceitar Convites"
 L["STRING_INVITEIGNORE_DESC"] = "Se outro addon aceitar o convite para grupo, o alerta não é disparado"
 L["STRING_INVITES"] = "Convites Para Grupo"
 L["STRING_INVITES_DESC"] = "Quando outro jogador convidar você para grupo."
---Translation missing 
--- L["STRING_ONCOUNTDOWN"] = ""
---Translation missing 
--- L["STRING_ONCOUNTDOWN_DESC"] = ""
---Translation missing 
--- L["STRING_ONWHISPER"] = ""
---Translation missing 
--- L["STRING_ONWHISPER_DESC"] = ""
+L["STRING_ONCOUNTDOWN"] = "Contagem Regressiva"
+L["STRING_ONCOUNTDOWN_DESC"] = "quando uma contagem regressiva começar"
+L["STRING_ONWHISPER"] = "Sussurro"
+L["STRING_ONWHISPER_DESC"] = "quando receber um sussurro."
 L["STRING_OPENSOUNDPANEL"] = "Abrir Configuração de Som"
 L["STRING_PETBATTLES"] = "Batalha de Mascotes"
 L["STRING_PETBATTLES_DESC"] = "Quando chegar sua vez na fila da batalha de mascotes."
@@ -77,14 +72,10 @@ L["STRING_SOUNDSETTINGS"] = "Configurações de Som"
 L["STRING_SOUNDSETTINGS_DESC"] = "Tocar um som quando acontecer um alerta."
 L["STRING_SUMMON"] = "Summon"
 L["STRING_SUMMON_DESC"] = "Quando um bruxo sumonar você (ou através da pedra de summon)."
---Translation missing 
--- L["STRING_TARGETLOSTHEALTH"] = ""
---Translation missing 
--- L["STRING_TARGETLOSTHEALTH_DESC"] = ""
---Translation missing 
--- L["STRING_TARGETLOWHEALTH"] = ""
---Translation missing 
--- L["STRING_TARGETLOWHEALTH_DESC"] = ""
+L["STRING_TARGETLOSTHEALTH"] = "Alvo Perdeu Vida"
+L["STRING_TARGETLOSTHEALTH_DESC"] = "quando o seu alvo começar a perder vida"
+L["STRING_TARGETLOWHEALTH"] = "Alvo Vida Baixa"
+L["STRING_TARGETLOWHEALTH_DESC"] = "quando o seu alto estiver com a vida muito baixa"
 L["STRING_TRADE"] = "Janela de Trocas"
 L["STRING_TRADE_DESC"] = "Quando alguém abrir a janela de trocar com você."
 L["STRING_WORLDPVP"] = "PvP Aberto (Ashran)"

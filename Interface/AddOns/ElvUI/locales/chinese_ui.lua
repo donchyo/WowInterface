@@ -7,7 +7,7 @@ if not L then return end
 L["INCOMPATIBLE_ADDON"] = "插件 %s 不相容于 ElvUI 的 %s 模组, 请停用不相容的插件, 或停用模组."
 
 --*_MSG locales
-L["LOGIN_MSG"] = "欢迎使用 %sElvUI|r %s%s|r 版, 请输入/ec进入设定介面. 如需技术支持,请至 http://www.tukui.org"
+L["LOGIN_MSG"] = "欢迎使用 %sElvUI|r %s%s|r 版, 请输入/ec进入设定介面. 如需技术支持,请至 https://www.tukui.org"
 
 --ActionBars
 L["Binding"] = "绑定"
@@ -51,6 +51,8 @@ L["G"] = "公会"
 L["I"] = '副本'
 L["IL"] = '副本队长'
 L["Invalid Target"] = "无效的目标"
+L["is looking for members"] = "正在寻找队友"
+L["joined a group"] = "加入队伍"
 L["O"] = "干部"
 L["P"] = "队伍"
 L["PL"] = "队长"
@@ -70,7 +72,6 @@ L["In Bags:"] = "背包内:"
 --DataTexts
 L["(Hold Shift) Memory Usage"] = "(按住Shift) 内存占用"
 L["AP"] = "攻击强度"
-L["App"] = "App"
 L["Arena"] = "竞技场"
 L["AVD: "] = "免伤: "
 L["Avoidance Breakdown"] = "免伤统计"
@@ -88,7 +89,6 @@ L["DPS"] = "伤害输出"
 L["Earned:"] = "赚取:"
 L["Feet"] = "脚"
 L["Friends List"] = "好友列表"
-L["Friends"] = "好友" --Also in Skins
 L["Garrison"] = "要塞"
 L["Gold"] = "金"
 L["goldabbrev"] = "|cffffd700金|r"
@@ -103,6 +103,7 @@ L["lvl"] = "等级"
 L["Main Hand"] = "主手"
 L["Mission(s) Report:"] = "任务报告:"
 L["Mitigation By Level: "] = "等级减伤: "
+L["Mobile"] = true
 L["Naval Mission(s) Report:"] = "海军任务报告:"
 L["No Guild"] = "没有公会"
 L["Offhand"] = "副手"
@@ -227,6 +228,7 @@ L["Remaining:"] = "剩余:"
 L["Rested:"] = "休息:"
 L["Toggle Chat Frame"] = "开关聊天框架"
 L["Toggle Configuration"] = "设置开关"
+L["AP:"] = true -- Artifact Power
 L["XP:"] = "经验:"
 L["You don't have permission to mark targets."] = "你没有标记目标的权限"
 
@@ -316,7 +318,7 @@ L["Binds Saved"] = "储存绑定"
 L["Confused.. Try Again!"] = '请再试一次！'
 L["No gray items to delete."] = "没有要删除的灰色物品"
 L["The spell '%s' has been added to the Blacklist unitframe aura filter."] = '法术"%s"已经被添加到单位框架的光环过滤器中.'
-L["This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'."] = "这个设置引起一个互相矛盾的锚点, '%s' 被依附于他自身. 请检查你的锚点设置. 设置 '%s' 依附到 '%s'.";
+L["This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'."] = "这个设置引起一个互相矛盾的锚点, '%s' 被依附于他自身. 请检查你的锚点设置. 设置 '%s' 依附到 '%s'."
 L["Vendored gray items for:"] = "已出售灰色物品:"
 L["You don't have enough money to repair."] = "没有足够的资金来修复."
 L["You must be at a vendor."] = "你必需以商人为目标."
@@ -326,6 +328,8 @@ L["|cFFE30000Lua error recieved. You can view the error message when you exit co
 
 --Static Popups
 L["A setting you have changed will change an option for this character only. This setting that you have changed will be uneffected by changing user profiles. Changing this setting requires that you reload your User Interface."] = "你所做的改动只会影响到使用这个插件的本角色, 你需要重新加载界面才能使改动生效."
+L["Accepting this will reset your Filter Priority lists for all auras on NamePlates. Are you sure?"] = true
+L["Accepting this will reset your Filter Priority lists for all auras on UnitFrames. Are you sure?"] = true
 L["Are you sure you want to apply this font to all ElvUI elements?"] = "确定要对所有ElvUI元素使用这个字体?"
 L["Are you sure you want to delete all your gray items?"] = "确定需要摧毁你的灰色物品?"
 L["Are you sure you want to disband the group?"] = "确定要解散队伍?"

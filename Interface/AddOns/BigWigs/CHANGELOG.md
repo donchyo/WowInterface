@@ -1,11 +1,21 @@
 # BigWigs
 
-## [v73](https://github.com/BigWigsMods/BigWigs/tree/v73) (2017-09-21)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v72.1...v73)
+## [v81](https://github.com/BigWigsMods/BigWigs/tree/v81) (2017-12-06)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v80.1...v81)
 
 - bump version  
-- add replacement prints for countdown addons  
-- Plugins/BossBlock: block L'uras death cinematic in Seat of the Triumvirate. (#387)  
-- ArgusInvasionPoints/Sotanathor: Update tank debuff warning and fixes  
-- ArgusInvasionPoints/Sotanathor: Add new worldboss  
-- ArgusInvasionPoints/Folnuna: Add Say and Personal warning to Slumbering Gasp  
+- Imonar: Fix a wrong spell id which causted the Sleep Canister proximity to show unaffected players  
+- Eonar: Minor timer fixes for mythic  
+- Imonar: Add additional Empowered Shrapnel Blast timer on heroic  
+- Hasabel: Fix Unstable Portal timers, add mythic timers  
+- Felhounds: Add Flametouched/Shadowtouched  
+- HighCommand: Add say, flash and proximity for Shock Grenades  
+- Felhounds: Clean up Focusing Power  
+- Imonar: Add mythic timers, fix Intermission soon message on mythic  
+- HighCommand: Timers for Shock Grenade  
+- Felhounds: Updated timers for mythic  
+- Felhounds: Fix Enflamed and Siphoned say cooldowns for mythic  
+- Felhounds: Fix Focusing Power  
+- Update zhCN.lua (#408)  
+- update zhCN (#403)  
+- Update zhTW.lua (#407)  

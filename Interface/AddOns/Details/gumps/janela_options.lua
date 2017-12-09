@@ -20,7 +20,7 @@
 	15 - custom spells
 	16 - data for charts
 	17 - automatization settings
-	18 - misc settings
+	18 - broadcaster options
 	19 - externals widgets (data feed)
 	20 - tooltip
 --]]
@@ -76,6 +76,36 @@ function _detalhes:SetOptionsWindowTexture (texture)
 	end
 end
 
+
+function _detalhes:InitializeOptionsWindow()
+	local DetailsOptionsWindow = g:NewPanel (UIParent, _, "DetailsOptionsWindow", _, 897, 592)
+	
+	local f = DetailsOptionsWindow.frame
+	
+	f.Frame = f
+	f.__name = "Options"
+	f.real_name = "DETAILS_OPTIONS"
+	f.__icon = [[Interface\Scenarios\ScenarioIcon-Interact]]
+	DetailsPluginContainerWindow.EmbedPlugin (f, f, true)
+	f:Hide()
+
+	function f.RefreshWindow()
+		if (not _G.DetailsOptionsWindow.instance) then
+			local lower_instance = _detalhes:GetLowerInstanceNumber()
+			if (not lower_instance) then
+				local instance = _detalhes:GetInstance (1)
+				_detalhes.CriarInstancia (_, _, 1)
+				_detalhes:OpenOptionsWindow (instance)
+			else
+				_detalhes:OpenOptionsWindow (_detalhes:GetInstance (lower_instance))
+			end
+		else
+			_detalhes:OpenOptionsWindow (_G.DetailsOptionsWindow.instance)
+		end
+	end
+end
+
+
 function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 
 	if (not instance.meu_id) then
@@ -96,10 +126,14 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 	end
 	
 	if (_G.DetailsOptionsWindow and _G.DetailsOptionsWindow.full_created) then
-		return _G.DetailsOptionsWindow.MyObject:update_all (instance, section)
+		_detalhes:FormatBackground (_G.DetailsOptionsWindow)
+		
+		_G.DetailsOptionsWindow.MyObject:update_all (instance, section)
+		DetailsOptionsWindow.OpenInPluginPanel()
+		return 
 	end
 	
-	if (not window) then
+	if (not window or not window.Initialized) then
 
 		local options_button_template = g:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE")
 		local options_dropdown_template = g:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE")
@@ -133,7 +167,10 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 
 		-- Most of details widgets have the same 6 first parameters: parent, container, global name, parent key, width, height
 	
-		window = g:NewPanel (UIParent, _, "DetailsOptionsWindow", _, 897, 592)
+		window = DetailsOptionsWindow and DetailsOptionsWindow.MyObject or g:NewPanel (UIParent, _, "DetailsOptionsWindow", _, 897, 592)
+		window.Initialized = true
+		window.frame.Initialized = true
+		
 		window.instance = instance
 		tinsert (UISpecialFrames, "DetailsOptionsWindow")
 		window:SetFrameStrata ("HIGH")
@@ -164,30 +201,30 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 		
 		--x 9 897 y 9 592
 		
-		local background = g:NewImage (window, _detalhes.options_window_background, 897, 592, nil, nil, "background", "$parentBackground")
-		background:SetPoint (0, 0)
-		background:SetDrawLayer ("border")
-		background:SetTexCoord (0, 0.8759765625, 0, 0.578125)
+		--local background = g:NewImage (window, _detalhes.options_window_background, 897, 592, nil, nil, "background", "$parentBackground")
+		--background:SetPoint (0, 0)
+		--background:SetDrawLayer ("border")
+		--background:SetTexCoord (0, 0.8759765625, 0, 0.578125)
 		
-		local sub_background = window:CreateTexture ("DetailsOptionsWindowBackgroundWallpaper", "background")
+		--local sub_background = window:CreateTexture ("DetailsOptionsWindowBackgroundWallpaper", "background")
 		--sub_background:SetTexture ([[Interface\FrameGeneral\UI-Background-Marble]], true)
-		sub_background:SetTexture ([[Interface\DialogFrame\UI-DialogBox-Background-Dark]])
-		sub_background:SetPoint ("topleft", window.widget, "topleft", 192, -80)
-		sub_background:SetPoint ("bottomright", window.widget, "bottomright", -30, 27)
+		--sub_background:SetTexture ([[Interface\DialogFrame\UI-DialogBox-Background-Dark]])
+		--sub_background:SetPoint ("topleft", window.widget, "topleft", 192, -80)
+		--sub_background:SetPoint ("bottomright", window.widget, "bottomright", -30, 27)
 		--sub_background:SetVertTile (true)
 		--sub_background:SetHorizTile (true)
 		--sub_background:SetAlpha (0.81)
-		sub_background:SetAlpha (0.85)
+		--sub_background:SetAlpha (0.85)
 		--sub_background:Hide()
 		
-		local menu_background = window:CreateTexture ("DetailsOptionsWindowBackgroundMenu", "background")
+		--local menu_background = window:CreateTexture ("DetailsOptionsWindowBackgroundMenu", "background")
 		--menu_background:SetTexture ([[Interface\AddOns\Details\images\options_window]], true)
-		menu_background:SetTexture ([[Interface\DialogFrame\UI-DialogBox-Background-Dark]])
-		menu_background:SetPoint ("topleft", window.widget, "topleft", 29, -78)
-		menu_background:SetSize (164, 488)
+		--menu_background:SetTexture ([[Interface\DialogFrame\UI-DialogBox-Background-Dark]])
+		--menu_background:SetPoint ("topleft", window.widget, "topleft", 29, -78)
+		--menu_background:SetSize (164, 488)
 		--menu_background:SetTexCoord (327/1024, 488/1024, 627/1024, 663/1024)
 		--menu_background:SetAlpha (0.81)
-		menu_background:SetAlpha (0.85)
+		--menu_background:SetAlpha (0.85)
 		--menu_background:SetVertTile (true)
 		--menu_background:Hide()
 
@@ -215,8 +252,8 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 		--> edit anchors
 		editing.apoio_icone_esquerdo = window:CreateTexture (nil, "ARTWORK")
 		editing.apoio_icone_direito = window:CreateTexture (nil, "ARTWORK")
-		editing.apoio_icone_esquerdo:SetTexture ("Interface\\PaperDollInfoFrame\\PaperDollSidebarTabs")
-		editing.apoio_icone_direito:SetTexture ("Interface\\PaperDollInfoFrame\\PaperDollSidebarTabs")
+		--editing.apoio_icone_esquerdo:SetTexture ("Interface\\PaperDollInfoFrame\\PaperDollSidebarTabs")
+		--editing.apoio_icone_direito:SetTexture ("Interface\\PaperDollInfoFrame\\PaperDollSidebarTabs")
 		
 		local apoio_altura = 13/256
 		editing.apoio_icone_esquerdo:SetTexCoord (0, 1, 0, apoio_altura)
@@ -266,15 +303,16 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 		
 		local desc_background = g:NewImage (window, [[Interface\AddOns\Details\images\options_window]], 253, 198, "artwork", {0.3193359375, 0.56640625, 0.685546875, 0.87890625}, "descBackgroundImage", "$parentDescBackgroundImage") -- 327 702 580 900
 		desc_background:SetPoint ("topleft", info_text, "topleft", 0, 0)
-		
-		--> forge and history buttons
-		local forge_button = g:NewButton (window, _, "$parentForgeButton", "ForgeButton", 90, 20, function() _detalhes:OpenForge(); window:Hide() end, nil, nil, nil, "Open Forge", 1) --, g:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE")
-		forge_button:SetIcon ([[Interface\AddOns\Details\images\icons]], nil, nil, nil, {396/512, 428/512, 243/512, 273/512}, nil, nil, 2)
-		forge_button:SetPoint ("topleft", 80, -61)
 
-		local history_button = g:NewButton (window, _, "$parentHistoryButton", "HistoryButton", 90, 20, function() _detalhes:OpenRaidHistoryWindow(); window:Hide() end, nil, nil, nil, "Guild Rank", 1) --, g:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE")
-		history_button:SetIcon ([[Interface\AddOns\Details\images\icons]], nil, nil, nil, {434/512, 466/512, 243/512, 273/512}, nil, nil, 2)
-		history_button:SetPoint ("topleft", 180, -61)
+-- as it stands in the plugin panel, these buttons aren't required anymore
+		--> forge and history buttons
+--		local forge_button = g:NewButton (window, _, "$parentForgeButton", "ForgeButton", 90, 20, function() _detalhes:OpenForge(); window:Hide() end, nil, nil, nil, "Open Forge", 1) --, g:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE")
+--		forge_button:SetIcon ([[Interface\AddOns\Details\images\icons]], nil, nil, nil, {396/512, 428/512, 243/512, 273/512}, nil, nil, 2)
+--		forge_button:SetPoint ("topleft", 80, -61)
+
+--		local history_button = g:NewButton (window, _, "$parentHistoryButton", "HistoryButton", 90, 20, function() _detalhes:OpenRaidHistoryWindow(); window:Hide() end, nil, nil, nil, "Guild Rank", 1) --, g:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE")
+--		history_button:SetIcon ([[Interface\AddOns\Details\images\icons]], nil, nil, nil, {434/512, 466/512, 243/512, 273/512}, nil, nil, 2)
+--		history_button:SetPoint ("topleft", 180, -61)
 
 		--> select instance dropbox
 		local onSelectInstance = function (_, _, instance)
@@ -478,8 +516,16 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 		local extra_buttons_on_leave = function (self, capsule)
 			capsule.textcolor = "C_OptionsButtonOrange"
 		end
-	
-		local fillbars = g:NewButton (window, _, "$parentCreateExampleBarsButton", nil, 110, 14, _detalhes.CreateTestBars, nil, nil, nil, Loc ["STRING_OPTIONS_TESTBARS"], 1)
+		
+		local create_test_bars_func = function()
+			_detalhes.CreateTestBars()
+			if (not _detalhes.test_bar_update) then
+				_detalhes:StartTestBarUpdate()
+			else
+				_detalhes:StopTestBarUpdate()
+			end
+		end
+		local fillbars = g:NewButton (window, _, "$parentCreateExampleBarsButton", nil, 110, 14, create_test_bars_func, nil, nil, nil, Loc ["STRING_OPTIONS_TESTBARS"], 1)
 		fillbars:SetPoint ("bottomleft", window.widget, "bottomleft", 41, 12)
 		fillbars.textalign = "left"
 		fillbars.textcolor = "C_OptionsButtonOrange"
@@ -566,7 +612,7 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 		17, --auto hide settings
 		9, --wallpaper		
 		
-		18, --misc
+		18, --streamer options
 		
 		--advanced
 		11, --raid tools
@@ -600,7 +646,7 @@ local menus = { --labels nos menus
 		Loc ["STRING_OPTIONSMENU_AUTOMATIC"],
 		Loc ["STRING_OPTIONSMENU_WALLPAPER"], 
 		
-		"-- -- --", --Loc ["STRING_OPTIONSMENU_MISC"]
+		"Streamer Settings", --Loc ["STRING_OPTIONSMENU_MISC"]
 	},
 	
 	{	
@@ -631,7 +677,7 @@ local menus2 = {
 		Loc ["STRING_OPTIONSMENU_DATACHART"], --16
 		Loc ["STRING_OPTIONSMENU_AUTOMATIC"], --17
 		--Loc ["STRING_OPTIONSMENU_MISC"], --18
-		"-- -- --", --18
+		"Streamer Settings", --18
 		Loc ["STRING_OPTIONSMENU_DATAFEED"], --19
 		Loc ["STRING_OPTIONSMENU_TOOLTIP"], --20
 	}
@@ -647,10 +693,13 @@ local menus2 = {
 		[9] = true,
 		[14] = true,
 		[17] = true,
-		[18] = true,
+		--[18] = true,
 	}
 	window.is_window_settings = is_window_settings
-
+	
+		local newIcon = g:CreateImage (window, [[Interface\AddOns\Details\images\icons2]], 62*0.6, 40*0.6, "overlay", {443/512, 505/512, 306/512, 346/512})
+		newIcon:SetPoint ("topleft", window.widget, "topleft", 135, -351)
+	
 		local select_options = function (options_type, true_index)
 			
 			window.current_selected = options_type
@@ -700,7 +749,7 @@ local menus2 = {
 		mouse_over_texture:SetHeight (37)
 		mouse_over_texture:Hide()
 		mouse_over_texture:SetBlendMode ("ADD")
-
+		
 		--> menu anchor textures
 		
 		local menu_frame = CreateFrame("frame", "DetailsOptionsWindowMenuAnchor", window.widget)
@@ -708,34 +757,37 @@ local menus2 = {
 		menu_frame:SetSize (1, 1)
 		
 		--general settings
+		
+			local menuTitleAnchorX = 10
+		
 			local g_settings = g:NewButton (menu_frame, _, "$parentGeneralSettingsButton", "g_settings", 150, 33, function() end, 0x1)
 			
 			g:NewLabel (menu_frame, _, "$parentgeneral_settings_text", "GeneralSettingsLabel", Loc ["STRING_OPTIONS_GENERAL"], "GameFontNormal", 12)
-			menu_frame.GeneralSettingsLabel:SetPoint ("topleft", g_settings, "topleft", 35, -11)
+			menu_frame.GeneralSettingsLabel:SetPoint ("topleft", g_settings, "topleft", menuTitleAnchorX, -10)
 		
-			local g_settings_texture = g:NewImage (menu_frame, [[Interface\AddOns\Details\images\options_window]], 160, 33, nil, nil, "GeneralSettingsTexture", "$parentGeneralSettingsTexture")
-			g_settings_texture:SetTexCoord (0, 0.15625, 0.685546875, 0.7177734375)
-			g_settings_texture:SetPoint ("topleft", g_settings, "topleft", 0, 0)
+		--	local g_settings_texture = g:NewImage (menu_frame, [[Interface\AddOns\Details\images\options_window]], 160, 33, nil, nil, "GeneralSettingsTexture", "$parentGeneralSettingsTexture")
+		--	g_settings_texture:SetTexCoord (0, 0.15625, 0.685546875, 0.7177734375)
+		--	g_settings_texture:SetPoint ("topleft", g_settings, "topleft", 0, 0)
 
 		--apparance
 			local g_appearance = g:NewButton (menu_frame, _, "$parentAppearanceButton", "g_appearance", 150, 33, function() end, 0x2)
 
 			g:NewLabel (menu_frame, _, "$parentappearance_settings_text", "AppearanceSettingsLabel", Loc ["STRING_OPTIONS_APPEARANCE"], "GameFontNormal", 12)
-			menu_frame.AppearanceSettingsLabel:SetPoint ("topleft", g_appearance, "topleft", 35, -11)
+			menu_frame.AppearanceSettingsLabel:SetPoint ("topleft", g_appearance, "topleft", menuTitleAnchorX, -11)
 		
-			local g_appearance_texture = g:NewImage (menu_frame, [[Interface\AddOns\Details\images\options_window]], 160, 33, nil, nil, "AppearanceSettingsTexture", "$parentAppearanceSettingsTexture")
-			g_appearance_texture:SetTexCoord (0, 0.15625, 0.71875, 0.7509765625)
-			g_appearance_texture:SetPoint ("topleft", g_appearance, "topleft", 0, 0)
+		--	local g_appearance_texture = g:NewImage (menu_frame, [[Interface\AddOns\Details\images\options_window]], 160, 33, nil, nil, "AppearanceSettingsTexture", "$parentAppearanceSettingsTexture")
+		--	g_appearance_texture:SetTexCoord (0, 0.15625, 0.71875, 0.7509765625)
+		--	g_appearance_texture:SetPoint ("topleft", g_appearance, "topleft", 0, 0)
 
 		--advanced
 			local g_advanced = g:NewButton (menu_frame, _, "$parentAdvancedButton", "g_advanced", 150, 33, function() end, 0x4)
 			
 			g:NewLabel (menu_frame, _, "$parentadvanced_settings_text", "AdvancedSettingsLabel", Loc ["STRING_OPTIONS_ADVANCED"], "GameFontNormal", 12)
-			menu_frame.AdvancedSettingsLabel:SetPoint ("topleft", g_advanced, "topleft", 35, -11)
+			menu_frame.AdvancedSettingsLabel:SetPoint ("topleft", g_advanced, "topleft", menuTitleAnchorX, -11)
 		
-			local g_advanced_texture = g:NewImage (menu_frame, [[Interface\AddOns\Details\images\options_window]], 160, 33, nil, nil, "AdvancedSettingsTexture", "$parentAdvancedSettingsTexture")
-			g_advanced_texture:SetTexCoord (0, 0.15625, 0.8173828125, 0.849609375)
-			g_advanced_texture:SetPoint ("topleft", g_advanced, "topleft", 0, 0)
+		--	local g_advanced_texture = g:NewImage (menu_frame, [[Interface\AddOns\Details\images\options_window]], 160, 33, nil, nil, "AdvancedSettingsTexture", "$parentAdvancedSettingsTexture")
+		--	g_advanced_texture:SetTexCoord (0, 0.15625, 0.8173828125, 0.849609375)
+		--	g_advanced_texture:SetPoint ("topleft", g_advanced, "topleft", 0, 0)
 
 		
 		
@@ -793,21 +845,31 @@ local menus2 = {
 			return true
 		end
 		
+		local blackdiv = window:CreateTexture (nil, "artwork")
+		blackdiv:SetTexture ([[Interface\ACHIEVEMENTFRAME\UI-Achievement-HorizontalShadow]])
+		blackdiv:SetVertexColor (0, 0, 0)
+		blackdiv:SetAlpha (0.7)
+		blackdiv:SetPoint ("topleft", window.frame, "topleft", 0, 0)
+		blackdiv:SetPoint ("bottomleft", window.frame, "bottomleft", 0, 0)
+		blackdiv:SetWidth (200)
+		
 		--move buttons creation to loading process
 		function window:create_left_menu()
 			for index, menulist in ipairs (menus) do 
 				
-				anchors [index]:SetPoint (23, y)
+				anchors [index]:SetPoint (10, y)
 				local amount = #menulist
 				
 				y = y - 37
 				
 				for i = 1, amount do 
 				
-					local texture = g:NewImage (menu_frame, [[Interface\ARCHEOLOGY\ArchaeologyParts]], 130, 14, nil, nil, nil, "$parentButton_" .. index .. "_" .. i .. "_texture")
-					texture:SetTexCoord (0.146484375, 0.591796875, 0.0546875, 0.26171875)
-					texture:SetPoint (38, y-2)
+					--local texture = g:NewImage (menu_frame, [[Interface\ARCHEOLOGY\ArchaeologyParts]], 130, 14, nil, nil, nil, "$parentButton_" .. index .. "_" .. i .. "_texture")
+					local texture = g:NewImage (menu_frame, [[Interface\Scenarios\ScenarioIcon-Combat]], 10, 10, nil, nil, nil, "$parentButton_" .. index .. "_" .. i .. "_texture")
+					texture:SetTexCoord (0.23, 0.87, 0.15, 0.73)
+					texture:SetPoint (24, y-5)
 					texture:SetVertexColor (1, 1, 1, .5)
+					--texture:Hide()
 
 					local button = g:NewButton (menu_frame, _, "$parentButton_" .. index .. "_" .. i, nil, 150, 18, select_options, menus_settings [true_index], true_index, "", menus [index] [i])
 					button:SetPoint (40, y)
@@ -949,8 +1011,8 @@ local menus2 = {
 
 			g:NewScrollBar (container_window, container_slave, 8, -10)
 			container_window.slider:Altura (449)
-			container_window.slider:cimaPoint (0, 1)
-			container_window.slider:baixoPoint (0, -3)
+			container_window.slider:cimaPoint (20, 1)
+			container_window.slider:baixoPoint (20, -3)
 			container_window.wheel_jump = 80
 			
 			container_window.ultimo = 0
@@ -1064,8 +1126,8 @@ local menus2 = {
 			f:SetSize (260, 16)
 			f:SetScript ("OnEnter", background_on_enter)
 			f:SetScript ("OnLeave", background_on_leave)
-			f:SetScript ("OnMouseDown", background_on_mouse_down)
-			f:SetScript ("OnMouseUp", background_on_mouse_up)
+			--f:SetScript ("OnMouseDown", background_on_mouse_down)
+			--f:SetScript ("OnMouseUp", background_on_mouse_up)
 			f:SetBackdrop({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0}})		
 			f:SetBackdropColor (0, 0, 0, 0)
 			f.parent = parent
@@ -1156,8 +1218,8 @@ local menus2 = {
 			f.is_button2 = is_button2
 			f:SetScript ("OnEnter", background_on_enter2)
 			f:SetScript ("OnLeave", background_on_leave2)
-			f:SetScript ("OnMouseDown", background_on_mouse_down)
-			f:SetScript ("OnMouseUp", background_on_mouse_up)
+			--f:SetScript ("OnMouseDown", background_on_mouse_down)
+			--f:SetScript ("OnMouseUp", background_on_mouse_up)
 			f:SetBackdrop({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0}})		
 			f:SetBackdropColor (0, 0, 0, 0)
 			f.parent = parent
@@ -1233,7 +1295,7 @@ local menus2 = {
 		window.title_y_pos2 = -50
 		
 		window.left_start_at = 30
-		window.right_start_at = 360
+		window.right_start_at = 390
 		window.top_start_at = -90
 		
 		window.buttons_width = 160
@@ -1321,8 +1383,8 @@ local menus2 = {
 			close_button:GetNormalTexture():SetDesaturated (true)
 		
 			--> create a new background texture
-			background:SetTexture ([[Interface\AddOns\Details\images\background]])
-			background:SetVertexColor (0.27, 0.27, 0.27, 0.7)
+			--background:SetTexture ([[Interface\AddOns\Details\images\background]])
+			--background:SetVertexColor (0.27, 0.27, 0.27, 0.7)
 			window:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1})
 			window:SetBackdropColor (1, 1, 1, 1)
 			window:SetBackdropBorderColor (0, 0, 0, 1)
@@ -1335,12 +1397,12 @@ local menus2 = {
 			window_icon:Hide()
 			
 			--> decrease the width of menu background
-			menu_background:SetSize (163, 488)
-			menu_background:SetPoint ("topleft", window.widget, "topleft", 23, -78)
-			menu_background:Hide()
-			sub_background:SetPoint ("topleft", window.widget, "topleft", 192, -80)
-			sub_background:SetPoint ("bottomright", window.widget, "bottomright", -30, 27)
-			sub_background:Hide()
+			--menu_background:SetSize (163, 488)
+			--menu_background:SetPoint ("topleft", window.widget, "topleft", 23, -78)
+			--menu_background:Hide()
+			--sub_background:SetPoint ("topleft", window.widget, "topleft", 192, -80)
+			--sub_background:SetPoint ("bottomright", window.widget, "bottomright", -30, 27)
+			--sub_background:Hide()
 
 			--> hide the dog and other stuff
 			bigdog:Hide()
@@ -1362,10 +1424,10 @@ local menus2 = {
 			--> location
 			fillbars:SetPoint ("bottomleft", window.widget, "bottomleft", 17, 16)
 			
-			forge_button:SetTemplate (options_button_template)
-			forge_button:SetSize(120, 20) --
-			history_button:SetTemplate (options_button_template)
-			history_button:SetSize(120, 20)
+--			forge_button:SetTemplate (options_button_template)
+--			forge_button:SetSize(120, 20) --
+--			history_button:SetTemplate (options_button_template)
+--			history_button:SetSize(120, 20)
 			fillbars:SetTemplate (options_button_template)
 			fillbars:SetSize(120, 20)
 			changelog:SetTemplate (options_button_template)
@@ -1376,19 +1438,19 @@ local menus2 = {
 			--feedback_button.textcolor = "white"
 			--changelog.textcolor = "white"
 			--fillbars.textcolor = "white"
-			history_button.textcolor = "C_OptionsButtonOrange"
-			forge_button.textcolor = "C_OptionsButtonOrange"
+--			history_button.textcolor = "C_OptionsButtonOrange"
+--			forge_button.textcolor = "C_OptionsButtonOrange"
 			
-			history_button:SetHook ("OnEnter", extra_buttons_on_enter)
-			history_button:SetHook ("OnLeave", extra_buttons_on_leave)
-			forge_button:SetHook ("OnEnter", extra_buttons_on_enter)
-			forge_button:SetHook ("OnLeave", extra_buttons_on_leave)
+--			history_button:SetHook ("OnEnter", extra_buttons_on_enter)
+--			history_button:SetHook ("OnLeave", extra_buttons_on_leave)
+--			forge_button:SetHook ("OnEnter", extra_buttons_on_enter)
+--			forge_button:SetHook ("OnLeave", extra_buttons_on_leave)
 			
 			feedback_button.textsize = 10
 			changelog.textsize = 10
 			fillbars.textsize = 10
-			history_button.textsize = 10
-			forge_button.textsize = 10
+--			history_button.textsize = 10
+--			forge_button.textsize = 10
 			
 			fillbars:SetIcon ("Interface\\AddOns\\Details\\images\\icons", nil, nil, nil, {323/512, 365/512, 42/512, 78/512}, {1, 1, 1, 0.6}, 4, 2)
 			changelog:SetIcon ("Interface\\AddOns\\Details\\images\\icons", nil, nil, nil, {367/512, 399/512, 43/512, 76/512}, {1, 1, 1, 0.8}, 4, 2)
@@ -1398,12 +1460,12 @@ local menus2 = {
 			fillbars_image:Hide()
 			feedback_image:Hide()
 			
-			history_button:ClearAllPoints()
-			forge_button:ClearAllPoints()
+--			history_button:ClearAllPoints()
+--			forge_button:ClearAllPoints()
 			--forge_button:SetPoint ("topright", -17, -47)
-			forge_button:SetPoint ("bottomleft", fillbars, "topleft", 0, 2)
+--			forge_button:SetPoint ("bottomleft", fillbars, "topleft", 0, 2)
 			--history_button:SetPoint ("right", forge_button, "left", -2, 0)
-			history_button:SetPoint ("bottomleft", changelog, "topleft", 0, 2)
+--			history_button:SetPoint ("bottomleft", changelog, "topleft", 0, 2)
 			--forge_button:Hide()
 			--history_button:Hide()
 
@@ -1445,7 +1507,7 @@ local menus2 = {
 						local down = frame.baixo
 						local slider = frame.slider
 						
-						slider:SetPoint ("TOPLEFT", frame, "TOPRIGHT", 3, -20)
+						slider:SetPoint ("TOPLEFT", frame, "TOPRIGHT", 30, -20)
 						slider:Altura (429)
 						
 						up:SetNormalTexture ([[Interface\Buttons\Arrow-Up-Up]])
@@ -2198,7 +2260,7 @@ function window:CreateFrame19()
 end
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- Advanced Settings - Miscellaneous ~18
+-- Advanced Settings - options for broadcasters ~18
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function window:CreateFrame18()
 
@@ -2209,19 +2271,287 @@ function window:CreateFrame18()
 		titulo_misc_settings_desc.width = 350
 		titulo_misc_settings_desc.height = 20
 	
-		local right_side = {
-			--{"instancesMiscLabel", 1, true},
-			--{"deleteInstanceLabel", 2},
-
-			--{"DisableGroupsLabel", 5, true},
-			--{"DisableLockResizeUngroupLabel", 7},
-			--{"DisableStretchButtonLabel", 8},
-			--{"DisableBarHighlightLabel", 9},
-			--{"DisableAllDisplaysWindowLabel", 10},
-			--{"DamageTakenEverythingLabel", 10},
+		--> 
+		local button_width = 180
+		
+		local titleFrame18 = g:NewLabel (frame18, _, "$parentTitleText", "TitleTextLabel", "Streamer Settings", "GameFontNormal", 16)
+		local titleFrame18Desc = g:NewLabel (frame18, _, "$parentTitleDescText", "TitleDescTextLabel", "Set of tools for streamers, youtubers and broadcasters in general", "GameFontNormal", 10, "white")
+		titleFrame18Desc:SetSize (450, 20)
+		
+		--fazer os headers com espa�o para images
+		--fazer o bot�o para abrir o painel de op�opoes
+		
+		--> streamer plugin - a.k.a. player spell tracker 
+			--> title anchor
+			g:NewLabel (frame18, _, "$parentStreamerPluginAnchor", "streamerPluginAnchor", "Streamer Plugin: Action Tracker", "GameFontNormal")
+			local streamerTitleDesc = g:NewLabel (frame18, _, "$parentStreamerTitleDescText", "StreamerTitleDescTextLabel", "Show the spells you are casting, allowing the viewer to follow your decision making and learn your rotation.", "GameFontNormal", 10, "white")
+			streamerTitleDesc:SetSize (270, 40)
+			streamerTitleDesc:SetJustifyV ("top")
+			streamerTitleDesc:SetPoint ("topleft", frame18.streamerPluginAnchor, "bottomleft", 0, -4)
 			
-			--{"scrollLabel", 11, true},
+			local streamerTitleImage = g:CreateImage (frame18, [[Interface\AddOns\Details\images\icons2]], 256, 41, "overlay", {0.5, 1, 0.49, 0.57})
+			streamerTitleImage:SetPoint ("topleft", frame18.streamerPluginAnchor, "bottomleft", 0, -40)
+			
+			--> get the plugin object
+			local StreamerPlugin = _detalhes:GetPlugin ("DETAILS_PLUGIN_STREAM_OVERLAY")
+			if (StreamerPlugin) then
+				--> get the plugin settings table
+				local tPluginSettings = _detalhes:GetPluginSavedTable ("DETAILS_PLUGIN_STREAM_OVERLAY")
+				if (tPluginSettings) then
+					local bIsPluginEnabled = tPluginSettings.enabled
+					--> plugin already enabled
+					if (bIsPluginEnabled) then
+						--> config button
+						local configure_streamer_plugin = function()
+							StreamerPlugin.OpenOptionsPanel (true)
+							C_Timer.After (0.2, function()
+								window:Hide()
+							end)
+						end
+						local configurePluginButton = g:NewButton (frame18, _, "$parentConfigureStreamerPluginButton", "configureStreamerPlugin", 100, 20, configure_streamer_plugin, nil, nil, nil, "Action Tracker Options", nil, options_button_template)
+						configurePluginButton:SetWidth (button_width)
+						configurePluginButton:SetPoint ("topleft", streamerTitleImage, "bottomleft", 0, -7)
+						
+						--> text telling how to disable
+						local pluginAlreadyEnabled = g:NewLabel (frame18, _, "$parentStreamerAlreadyEnabledText", "StreamerAlreadyEnabledTextLabel", "Plugin is enabled. You may disable it on Plugin Management section.", "GameFontNormal", 10, "white")
+						pluginAlreadyEnabled:SetJustifyV ("top")
+						pluginAlreadyEnabled:SetSize (270, 40)
+						pluginAlreadyEnabled:SetPoint ("topleft", configurePluginButton, "bottomleft", 0, -7)
+					else
+						--> plugin isnt enabled, create the enable button
+						local enable_streamer_plugin = function()
+							tPluginSettings.enabled = true
+							StreamerPlugin.__enabled = true
+							_detalhes:SendEvent ("PLUGIN_ENABLED", StreamerPlugin)
+							
+							frame18.enableStreamerPluginButton:Hide()
+							
+							--> config button
+							local configure_streamer_plugin = function()
+								StreamerPlugin.OpenOptionsPanel()
+							end
+							local configurePluginButton = g:NewButton (frame18, _, "$parentConfigureStreamerPluginButton", "configureStreamerPlugin", 100, 20, configure_streamer_plugin, nil, nil, nil, "Action Tracker Options", nil, options_button_template)
+							configurePluginButton:SetWidth (button_width)
+							configurePluginButton:SetPoint ("topleft", streamerTitleImage, "bottomleft", 0, -7)
+							
+							--> text telling how to disable
+							local pluginAlreadyEnabled = g:NewLabel (frame18, _, "$parentStreamerAlreadyEnabledText", "StreamerAlreadyEnabledTextLabel", "Plugin is enabled. You may disable it on Plugin Management section.", "GameFontNormal", 10, "white")
+							pluginAlreadyEnabled:SetJustifyV ("top")
+							pluginAlreadyEnabled:SetSize (270, 40)
+							pluginAlreadyEnabled:SetPoint ("topleft", configurePluginButton, "bottomleft", 0, -7)
+						end
+						
+						local enablePluginButton = g:NewButton (frame18, _, "$parentEnableStreamerPluginButton", "enableStreamerPluginButton", 100, 20, enable_streamer_plugin, nil, nil, nil, "Enable Plugin", nil, options_button_template)
+						enablePluginButton:SetWidth (button_width)
+						enablePluginButton:SetPoint ("topleft", streamerTitleImage, "bottomleft", 0, -5)
+					end
+				end
+			else
+				--> plugin is disabled at the addon control panel
+				local pluginDisabled = g:NewLabel (frame18, _, "$parentStreamerDisabledText", "StreamerDisabledTextLabel", "Details!: Streamer Plugin is disabled on the AddOns Control Panel.", "GameFontNormal", 10, "red")
+				pluginDisabled:SetSize (270, 40)
+				pluginDisabled:SetPoint ("topleft", streamerTitleImage, "bottomleft", 0, -2)
+			end
+		
+		
+		--> event tracker
+			g:NewLabel (frame18, _, "$parentEventTrackerAnchor", "eventTrackerAnchor", "Event Tracker", "GameFontNormal")
+			local eventTrackerTitleDesc = g:NewLabel (frame18, _, "$parentEventTrackerTitleDescText", "EventTrackerTitleDescTextLabel", "Show what's happening near you so the viewer can follow what's going on. Show cooldowns, CC, spell interruption. Useful on any group content.", "GameFontNormal", 10, "white")
+			eventTrackerTitleDesc:SetJustifyV ("top")
+			eventTrackerTitleDesc:SetSize (270, 40)
+			eventTrackerTitleDesc:SetPoint ("topleft", frame18.eventTrackerAnchor, "bottomleft", 0, -4)
+			
+			local eventTrackerTitleImage = g:CreateImage (frame18, [[Interface\AddOns\Details\images\icons2]], 256, 50, "overlay", {0.5, 1, 134/512, 184/512})
+			eventTrackerTitleImage:SetPoint ("topleft", frame18.eventTrackerAnchor, "bottomleft", 0, -40)
+			
+			--> enable feature checkbox
+				g:NewLabel (frame18, _, "$parentEnableEventTrackerLabel", "EventTrackerLabel", "Enable Event Tracker", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentEventTrackerSlider", "EventTrackerSlider", 60, 20, _, _, _detalhes.event_tracker.enabled, nil, nil, nil, nil, options_switch_template)
 
+				frame18.EventTrackerSlider:SetPoint ("left", frame18.EventTrackerLabel, "right", 2)
+				frame18.EventTrackerSlider:SetAsCheckBox()
+				frame18.EventTrackerSlider.OnSwitch = function (_, _, value)
+					_detalhes.event_tracker.enabled = not _detalhes.event_tracker.enabled
+					Details:LoadFramesForBroadcastTools()
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "EventTrackerSlider", "EventTrackerLabel", "Enable Event Tracker")
+				
+				frame18.EventTrackerLabel:SetPoint ("topleft", eventTrackerTitleImage, "bottomleft", 0, -10)
+				frame18.EventTrackerSlider:SetPoint ("left", frame18.EventTrackerLabel, "right", 2, 0)
+				
+			--> configure feature button
+				local configure_event_tracker = function()
+					_detalhes:OpenEventTrackerOptions (true)
+					C_Timer.After (0.2, function()
+						window:Hide()
+					end)
+				end
+				local configureEventTrackerButton = g:NewButton (frame18, _, "$parentConfigureEventTrackerButton", "configureEventTracker", 100, 20, configure_event_tracker, nil, nil, nil, "Event Tracker Options", nil, options_button_template)
+				configureEventTrackerButton:SetWidth (button_width)
+				configureEventTrackerButton:SetPoint ("topleft", frame18.EventTrackerLabel, "bottomleft", 0, -7)
+
+
+		--> current dps
+			g:NewLabel (frame18, _, "$parentCurrentDPSAnchor", "currentDPSAnchor", "The Real Current DPS", "GameFontNormal")
+			local currentDPSTitleDesc = g:NewLabel (frame18, _, "$parentCurrentDPSTitleDescText", "CurrentDPSTitleDescTextLabel", "Show a frame with DPS done only in the last 5 seconds. Useful for arena matches and mythic dungeons.", "GameFontNormal", 10, "white")
+			currentDPSTitleDesc:SetJustifyV ("top")
+			currentDPSTitleDesc:SetSize (270, 40)
+			currentDPSTitleDesc:SetPoint ("topleft", frame18.currentDPSAnchor, "bottomleft", 0, -4)
+			
+			local currentDPSTitleImage = g:CreateImage (frame18, [[Interface\AddOns\Details\images\icons2]], 250, 61, "overlay", {259/512, 509/512, 186/512, 247/512})
+			currentDPSTitleImage:SetPoint ("topleft", frame18.currentDPSAnchor, "bottomleft", 0, -40)
+			
+			--> enable feature checkbox
+				g:NewLabel (frame18, _, "$parentEnableCurrentDPSLabel", "CurrentDPSLabel", "Enable The Real Current Dps", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentCurrentDPSSlider", "CurrentDPSSlider", 60, 20, _, _, _detalhes.current_dps_meter.enabled, nil, nil, nil, nil, options_switch_template)
+
+				frame18.CurrentDPSSlider:SetPoint ("left", frame18.CurrentDPSLabel, "right", 2)
+				frame18.CurrentDPSSlider:SetAsCheckBox()
+				frame18.CurrentDPSSlider.OnSwitch = function (_, _, value)
+					_detalhes.current_dps_meter.enabled = not _detalhes.current_dps_meter.enabled
+					Details:LoadFramesForBroadcastTools()
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "CurrentDPSSlider", "CurrentDPSLabel", "Enable The Real Current Dps")
+				
+				frame18.CurrentDPSLabel:SetPoint ("topleft", currentDPSTitleImage, "bottomleft", 0, -10)
+				frame18.CurrentDPSSlider:SetPoint ("left", frame18.CurrentDPSLabel, "right", 2, 0)
+				
+			--> configure feature button
+				local configure_current_dps = function()
+					_detalhes:OpenCurrentRealDPSOptions (true)
+					C_Timer.After (0.2, function()
+						window:Hide()
+					end)
+				end
+				local configureCurrentDPSButton = g:NewButton (frame18, _, "$parentConfigureCurrentDPSButton", "configureCurrentDPS", 100, 20, configure_current_dps, nil, nil, nil, "Current Real DPS Options", nil, options_button_template)
+				configureCurrentDPSButton:SetWidth (button_width)
+				configureCurrentDPSButton:SetPoint ("topleft", frame18.CurrentDPSLabel, "bottomleft", 0, -7)
+
+		
+		--> suppress alerts and tutorial popups
+			g:NewLabel (frame18, _, "$parentAlertsAndPopupsAnchor", "alertsAndPopupsAnchor", "Other Settings:", "GameFontNormal")
+			
+
+		
+			--> no alerts
+				g:NewLabel (frame18, _, "$parentNoAlertsLabel", "NoAlertsLabel", "No Window Alerts", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentNoAlertsSlider", "NoAlertsSlider", 60, 20, _, _, _detalhes.streamer_config.no_alerts, nil, nil, nil, nil, options_switch_template)
+
+				frame18.NoAlertsSlider:SetPoint ("left", frame18.NoAlertsLabel, "right", 2)
+				frame18.NoAlertsSlider:SetAsCheckBox()
+				frame18.NoAlertsSlider.OnSwitch = function (_, _, value)
+					_detalhes.streamer_config.no_alerts = not _detalhes.streamer_config.no_alerts
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "NoAlertsSlider", "NoAlertsLabel", "Don't show alerts in the bottom of the window and avoid show tutorial popups.")
+				
+			--> faster updates
+				g:NewLabel (frame18, _, "$parentFasterUpdatesLabel", "FasterUpdatesLabel", "60 Updates Per Second", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentFasterUpdatesSlider", "FasterUpdatesSlider", 60, 20, _, _, _detalhes.streamer_config.faster_updates, nil, nil, nil, nil, options_switch_template)
+
+				frame18.FasterUpdatesSlider:SetPoint ("left", frame18.FasterUpdatesLabel, "right", 2)
+				frame18.FasterUpdatesSlider:SetAsCheckBox()
+				frame18.FasterUpdatesSlider.OnSwitch = function (_, _, value)
+					_detalhes.streamer_config.faster_updates = not _detalhes.streamer_config.faster_updates
+					_detalhes:RefreshUpdater()
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "FasterUpdatesSlider", "FasterUpdatesLabel", "Increase the refresh rate to 60 times per second.")
+			
+			--> quick detection
+				g:NewLabel (frame18, _, "$parentQuickDetectionLabel", "QuickDetectionLabel", "Quick Player Info", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentQuickDetectionSlider", "QuickDetectionSlider", 60, 20, _, _, _detalhes.streamer_config.quick_detection, nil, nil, nil, nil, options_switch_template)
+
+				frame18.QuickDetectionSlider:SetPoint ("left", frame18.QuickDetectionLabel, "right", 2)
+				frame18.QuickDetectionSlider:SetAsCheckBox()
+				frame18.QuickDetectionSlider.OnSwitch = function (_, _, value)
+					_detalhes.streamer_config.quick_detection = not _detalhes.streamer_config.quick_detection
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "QuickDetectionSlider", "QuickDetectionLabel", "Attempt to acquire player information such as class, spec or item level faster.")
+			
+			--> disable mythic dungeon
+				g:NewLabel (frame18, _, "$parentDisableMythicDungeonLabel", "DisableMythicDungeonLabel", "No Mythic Dungeon Shenanigans", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentDisableMythicDungeonSlider", "DisableMythicDungeonSlider", 60, 20, _, _, _detalhes.streamer_config.disable_mythic_dungeon, nil, nil, nil, nil, options_switch_template)
+
+				frame18.DisableMythicDungeonSlider:SetPoint ("left", frame18.DisableMythicDungeonLabel, "right", 2)
+				frame18.DisableMythicDungeonSlider:SetAsCheckBox()
+				frame18.DisableMythicDungeonSlider.OnSwitch = function (_, _, value)
+					_detalhes.streamer_config.disable_mythic_dungeon = not _detalhes.streamer_config.disable_mythic_dungeon
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "DisableMythicDungeonSlider", "DisableMythicDungeonLabel", "Threat mythic dungeon segments as common segments: no trash merge, no mythic run overall, segments wraps on entering and leaving combat.")
+				
+			--> clear cache
+				g:NewLabel (frame18, _, "$parentClearCacheLabel", "ClearCacheLabel", "Clear Cache on New Event", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentClearCacheSlider", "ClearCacheSlider", 60, 20, _, _, _detalhes.streamer_config.reset_spec_cache, nil, nil, nil, nil, options_switch_template)
+
+				frame18.ClearCacheSlider:SetPoint ("left", frame18.ClearCacheLabel, "right", 2)
+				frame18.ClearCacheSlider:SetAsCheckBox()
+				frame18.ClearCacheSlider.OnSwitch = function (_, _, value)
+					_detalhes.streamer_config.reset_spec_cache = not _detalhes.streamer_config.reset_spec_cache
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "ClearCacheSlider", "ClearCacheLabel", "Reduces the chance of getting a serial number overlap when working with multiple realms.")
+				
+			--> advanced animations
+				g:NewLabel (frame18, _, "$parentAdvancedAnimationsLabel", "AdvancedAnimationsLabel", "Use Animation Acceleration", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentAdvancedAnimationsSlider", "AdvancedAnimationsSlider", 60, 20, _, _, _detalhes.streamer_config.use_animation_accel, nil, nil, nil, nil, options_switch_template)
+
+				frame18.AdvancedAnimationsSlider:SetPoint ("left", frame18.AdvancedAnimationsLabel, "right", 2)
+				frame18.AdvancedAnimationsSlider:SetAsCheckBox()
+				frame18.AdvancedAnimationsSlider.OnSwitch = function (_, _, value)
+					_detalhes.streamer_config.use_animation_accel = not _detalhes.streamer_config.use_animation_accel
+					_detalhes:RefreshAnimationFunctions()
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "AdvancedAnimationsSlider", "AdvancedAnimationsLabel", "Animation speed changes accordly to the amount of space the bar needs to travel.")
+				
+				
+		--> anchoring
+		local x = window.left_start_at
+		titleFrame18:SetPoint (x, window.title_y_pos)
+		titleFrame18Desc:SetPoint (x, window.title_y_pos2)
+	
+		local a = frame18:CreateFontString (nil, "overlay", "GameFontNormal")
+		frame18.a = a
+		
+		local left_side = {
+			{"streamerPluginAnchor", 0, true},
+			
+			{"eventTrackerAnchor", 0, true},
+			{"eventTrackerAnchor", 0, true},
+			{"eventTrackerAnchor", 0, true},
+			{"eventTrackerAnchor", 0, true},
+			{"eventTrackerAnchor", 0, true},
+			
+		}
+		
+		window:arrange_menu (frame18, left_side, x, window.top_start_at)	
+	
+		local right_side = {
+			{"currentDPSAnchor", 0, true},
+			{"alertsAndPopupsAnchor", 0, true},
+			{"alertsAndPopupsAnchor", 0, true},
+			{"alertsAndPopupsAnchor", 0, true},
+			{"alertsAndPopupsAnchor", 0, true},
+			{"alertsAndPopupsAnchor", 0, true},
+			{"NoAlertsLabel"},
+			{"FasterUpdatesLabel"},
+			{"QuickDetectionLabel"},
+			{"DisableMythicDungeonLabel"},
+			{"ClearCacheLabel"},
+			{"AdvancedAnimationsLabel"},
 		}
 		
 		window:arrange_menu (frame18, right_side, window.right_start_at, window.top_start_at)
@@ -10881,8 +11211,6 @@ end --> if not window
 ----------------------------------------------------------------------------------------
 --> Show
 
-
-
 	local strata = {
 		["BACKGROUND"] = "Background",
 		["LOW"] = "Low",
@@ -11339,6 +11667,16 @@ end --> if not window
 		--> window 16
 		_G.DetailsOptionsWindow16UserTimeCapturesFillPanel.MyObject:Refresh()
 		
+		--> window 18
+		_G.DetailsOptionsWindow18EventTrackerSlider.MyObject:SetValue (_detalhes.event_tracker.enabled)
+		_G.DetailsOptionsWindow18CurrentDPSSlider.MyObject:SetValue (_detalhes.current_dps_meter.enabled)
+		_G.DetailsOptionsWindow18NoAlertsSlider.MyObject:SetValue (_detalhes.streamer_config.no_alerts)
+		_G.DetailsOptionsWindow18FasterUpdatesSlider.MyObject:SetValue (_detalhes.streamer_config.faster_updates)
+		_G.DetailsOptionsWindow18QuickDetectionSlider.MyObject:SetValue (_detalhes.streamer_config.quick_detection)
+		_G.DetailsOptionsWindow18DisableMythicDungeonSlider.MyObject:SetValue (_detalhes.streamer_config.disable_mythic_dungeon)
+		_G.DetailsOptionsWindow18ClearCacheSlider.MyObject:SetValue (_detalhes.streamer_config.reset_spec_cache)
+		_G.DetailsOptionsWindow18AdvancedAnimationsSlider.MyObject:SetValue (_detalhes.streamer_config.use_animation_accel)
+		
 		--> window 17
 		_G.DetailsOptionsWindow17CombatAlphaDropdown.MyObject:Select (editing_instance.hide_in_combat_type, true)
 		_G.DetailsOptionsWindow17HideOnCombatAlphaSlider.MyObject:SetFixedParameter (editing_instance)
@@ -11676,6 +12014,7 @@ end --> if not window
 		
 	end
 
+	
 	if (_G.DetailsOptionsWindow.full_created) then
 		_G.DetailsOptionsWindow.MyObject:update_all (instance)
 	else
@@ -11688,7 +12027,24 @@ end --> if not window
 		end
 		window.loading_check = _detalhes:ScheduleRepeatingTimer ("options_loading_done", 0.1)
 	end
-
+	
 	window:Show()
+	
+	function DetailsOptionsWindow.OpenInPluginPanel()
+		for i = 1, #window.options do
+			local frame = window.options [i][1]
+			if (frame) then
+				frame:EnableMouse (false)
+				--frame:SetSize (DetailsPluginContainerWindow.FrameWidth, DetailsPluginContainerWindow.FrameHeight)
+			end
+		end
+		
+		--DetailsOptionsWindowBackground:SetSize (DetailsPluginContainerWindow.FrameWidth, DetailsPluginContainerWindow.FrameHeight)
+		_detalhes:FormatBackground (_G.DetailsOptionsWindow)
+		
+		DetailsPluginContainerWindow.OpenPlugin (DetailsOptionsWindow)
+	end
+	
+	DetailsOptionsWindow.OpenInPluginPanel()
 
 end --> OpenOptionsWindow

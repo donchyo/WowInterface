@@ -90,7 +90,7 @@ oRA3DB = {
 		["Difficulty"] = {
 			["profiles"] = {
 				["Default"] = {
-					["prevRaidDifficulty"] = 14,
+					["prevRaidDifficulty"] = 16,
 				},
 				["Skullflower"] = {
 					["prevRaidDifficulty"] = 16,
@@ -136,10 +136,10 @@ oRA3DB = {
 					["PosX"] = 863.489145234969,
 				},
 				["oRA3ReadyCheck"] = {
-					["Height"] = 225,
+					["Height"] = 127.999977111816,
 					["Width"] = 320.000061035156,
-					["PosY"] = 764.297659522432,
-					["PosX"] = 363.555617978833,
+					["PosY"] = 723.764214672789,
+					["PosX"] = 282.488874763913,
 				},
 				["oRA3BattleResMonitor"] = {
 					["Height"] = 29.9999942779541,
@@ -155,7 +155,7 @@ oRA3DB = {
 			["lastSelectedPanel"] = "Checks",
 		},
 		["Skullflower"] = {
-			["lastSelectedPanel"] = "Checks",
+			["lastSelectedList"] = 1,
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148.000015258789,
@@ -180,7 +180,7 @@ oRA3DB = {
 					["PosX"] = 1028.80052461621,
 				},
 			},
-			["lastSelectedList"] = 1,
+			["lastSelectedPanel"] = "Checks",
 		},
 	},
 }

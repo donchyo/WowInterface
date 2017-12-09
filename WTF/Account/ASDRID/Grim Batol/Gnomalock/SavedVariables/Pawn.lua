@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0211,
+	["LastVersion"] = 2.0214,
 	["LastPlayerFullName"] = "Gnomalock-Grim Batol",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
@@ -15,18 +15,26 @@ PawnOptions = {
 					["ItemLevel"] = 33,
 					["Type"] = "Blood",
 				}, -- [2]
+				{
+					["Type"] = "Shadow",
+				}, -- [3]
 			},
 			["Name"] = "Ulthalesh, the Deadwind Harvester",
 		},
 		[128941] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 32,
+					["ItemLevel"] = 46,
 					["Type"] = "Fel",
 				}, -- [1]
 				{
+					["ItemLevel"] = 48,
 					["Type"] = "Fire",
 				}, -- [2]
+				{
+					["ItemLevel"] = 48,
+					["Type"] = "Fel",
+				}, -- [3]
 			},
 			["Name"] = "Scepter of Sargeras",
 		},

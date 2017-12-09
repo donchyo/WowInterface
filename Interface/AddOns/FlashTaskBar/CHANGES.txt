@@ -1,7 +1,7 @@
-changeset:   62:5cd0bdda9057
-tag:         v7.3.0.064
+changeset:   68:174ad39948e2
+tag:         v7.3.2.068
 user:        Tercio
-date:        Sat Sep 02 11:46:14 2017 -0300
-summary:     - 7.3 sound fix.
+date:        Sat Dec 02 15:07:01 2017 -0200
+summary:     - fixed some taints by removing the option to not flash when receiving a whisper.
 
 

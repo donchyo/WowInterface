@@ -75,7 +75,13 @@ function _G._detalhes:Start()
 --> initialize
 
 	--> build frames
-
+	
+		--> plugin container
+			self:CreatePluginWindowContainer()
+			self:InitializeForge() --to install into the container plugin
+			self:InitializeRaidHistoryWindow()
+			self:InitializeOptionsWindow()
+			
 		--> bookmarks
 			if (self.switch.InitSwitch) then
 				--self.switch:InitSwitch()
@@ -133,7 +139,7 @@ function _G._detalhes:Start()
 		end
 	
 		self:AtualizaGumpPrincipal (-1, true)
-		self.atualizador = self:ScheduleRepeatingTimer ("AtualizaGumpPrincipal", _detalhes.update_speed, -1)
+		_detalhes:RefreshUpdater()
 		
 		for index = 1, #self.tabela_instancias do
 			local instance = self.tabela_instancias [index]
@@ -570,7 +576,9 @@ function _G._detalhes:Start()
 					for i = #segmentsToMerge, 1, -1 do
 						local segment = segmentsToMerge [i]
 						if (segment == _detalhes.tabela_vigente) then
-							_detalhes:Msg ("unhandled exception > merged trash segment is current segment > MergeTrashCleanup() is scheduled:", isFromSchedule)
+							--this exception still exists but is handled now
+							--_detalhes:Msg ("unhandled exception > merged trash segment is current segment > MergeTrashCleanup() is scheduled:", isFromSchedule)
+							--happened after killing one mob and leaving the dungeon, lots of /reload has done inside the dungeon
 						end
 					end
 					
@@ -679,7 +687,8 @@ function _G._detalhes:Start()
 				for i = #segmentsToMerge, 1, -1 do
 					local segment = segmentsToMerge [i]
 					if (segment == _detalhes.tabela_vigente) then
-						_detalhes:Msg ("unhandled exception > merged trash segment is current segment > MergeRemainingTrashAfterAllBossesDone()")
+						--this exception still exists but is handled now
+						--_detalhes:Msg ("unhandled exception > merged trash segment is current segment > MergeRemainingTrashAfterAllBossesDone()")
 					end
 				end
 				
@@ -1040,15 +1049,43 @@ function _G._detalhes:Start()
 					
 				elseif (event == "CHALLENGE_MODE_START") then
 					--> CHALLENGE_MODE_START does trigger every time the player enters a mythic dungeon already in progress
-
+					
+					--> send mythic dungeon start event
+					local zoneName, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, instanceMapID, instanceGroupSize = GetInstanceInfo()
+					if (difficultyID == 8) then
+						_detalhes:SendEvent ("COMBAT_MYTHICDUNGEON_START")
+					end
+					
 					if (newFrame.DevelopmentDebug) then
 						print ("Details!", event, ...)
 					end
+					
+					--> reset spec cache if broadcaster requested
+					if (_detalhes.streamer_config.reset_spec_cache) then
+						wipe (_detalhes.cached_specs)
+					end
+					
+					--> ignore the event if ignoring mythic dungeon special treatment
+					if (_detalhes.streamer_config.disable_mythic_dungeon) then
+						return
+					end
+					
 					C_Timer.After (0.5, newFrame.OnChallengeModeStart)
 					
 				elseif (event == "CHALLENGE_MODE_COMPLETED") then
 					if (newFrame.DevelopmentDebug) then
 						print ("Details!", event, ...)
+					end
+					
+					--> send mythic dungeon end event
+					local zoneName, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, instanceMapID, instanceGroupSize = GetInstanceInfo()
+					if (difficultyID == 8) then
+						_detalhes:SendEvent ("COMBAT_MYTHICDUNGEON_END")
+					end
+					
+					--> ignore the event if ignoring mythic dungeon special treatment
+					if (_detalhes.streamer_config.disable_mythic_dungeon) then
+						return
 					end
 					
 					--> delay to wait the encounter_end trigger first
@@ -1058,6 +1095,11 @@ function _G._detalhes:Start()
 				elseif (event == "ENCOUNTER_END") then
 					if (newFrame.DevelopmentDebug) then
 						print ("Details!", event, ...)
+					end
+					
+					--> ignore the event if ignoring mythic dungeon special treatment
+					if (_detalhes.streamer_config.disable_mythic_dungeon) then
+						return
 					end
 					
 					if (newFrame.IsDoingMythicDungeon) then
@@ -1100,11 +1142,21 @@ function _G._detalhes:Start()
 							print ("Details!", event, ...)
 							print ("Zone changed and is Doing Mythic Dungeon")
 						end
+						
+						--> ignore the event if ignoring mythic dungeon special treatment
+						if (_detalhes.streamer_config.disable_mythic_dungeon) then
+							return
+						end
+						
 						local _, _, difficulty, _, _, _, _, currentZoneID = GetInstanceInfo()
 						if (currentZoneID ~= self.MythicPlus.DungeonID) then
 							if (newFrame.DevelopmentDebug) then
 								print ("Zone changed and the zone is different than the dungeon")
 							end
+							
+							--> send mythic dungeon end event
+							_detalhes:SendEvent ("COMBAT_MYTHICDUNGEON_END")
+							
 							--> finish the segment
 							newFrame.BossDefeated (true)
 							
@@ -1201,7 +1253,7 @@ function _G._detalhes:Start()
 		
 	--> send feedback panel if the user got 100 or more logons with details
 		if (self.tutorial.logons > 100) then --  and self.tutorial.logons < 104
-			if (not self.tutorial.feedback_window1) then
+			if (not self.tutorial.feedback_window1 and not _detalhes.streamer_config.no_alerts) then
 				--> check if isn't inside an instance
 				if (_detalhes:IsInCity()) then
 					self.tutorial.feedback_window1 = true
@@ -1226,6 +1278,80 @@ function _G._detalhes:Start()
 			_detalhes:FillUserCustomSpells()
 			_detalhes:AddDefaultCustomDisplays()
 			
+			-->  show streamer update panel
+			--[
+			if (_detalhes_database.last_realversion and _detalhes_database.last_realversion < 127 and enable_reset_warning) then
+				if (not _detalhes:GetTutorialCVar ("STREAMER_FEATURES_POPUP1")) then
+					_detalhes:SetTutorialCVar ("STREAMER_FEATURES_POPUP1", true)
+					
+					local f = CreateFrame ("frame", "DetailsContentCreatorsAlert", UIParent)
+					tinsert (UISpecialFrames, "DetailsContentCreatorsAlert")
+					f:SetPoint ("center")
+					f:SetSize (785, 516)
+					local bg = f:CreateTexture (nil, "background")
+					bg:SetPoint ("center", f, "center")
+					bg:SetTexture ([[Interface\GLUES\AccountUpgrade\upgrade-texture.blp]])
+					bg:SetTexCoord (0/1024, 785/1024, 192/1024, 708/1024)
+					bg:SetSize (785, 516)
+					C_Timer.After (1, function ()f:Show()end)
+					
+					local logo = f:CreateTexture (nil, "artwork")
+					logo:SetPoint ("topleft", f, "topleft", 40, -60)
+					logo:SetTexture ([[Interface\Addons\Details\images\logotipo]])
+					logo:SetTexCoord (0.07421875, 0.73828125, 0.51953125, 0.890625)
+					logo:SetWidth (186*1.2)
+					logo:SetHeight (50*1.2)
+					
+					local title = f:CreateFontString (nil, "overlay", "GameFontNormal")
+					title:SetPoint ("topleft", f, "topleft", 120, -160)
+					title:SetText ("Updates For Youtubers and Streamers")
+					_detalhes.gump:SetFontSize (title, 16)
+					
+					local text1 = f:CreateFontString (nil, "overlay", "GameFontNormal")
+					text1:SetPoint ("topleft", f, "topleft", 60, -210)
+					text1:SetText ("Yeap, another popup window, but it's for a good cause: has been added new features for content creators, check it out at the options panel > Streamer Settings, thank you!")
+					text1:SetSize (400, 200)
+					text1:SetJustifyV ("top")
+					text1:SetJustifyH ("left")
+					
+					local ipad = f:CreateTexture (nil, "overlay")
+					ipad:SetTexture ([[Interface\Addons\Details\images\icons2]])
+					ipad:SetSize (130, 89)
+					ipad:SetPoint ("topleft", bg, "topleft", 474, -279)
+					ipad:SetTexCoord (110/512, 240/512, 163/512, 251/512)
+					
+					local playerteam = f:CreateTexture (nil, "overlay")
+					playerteam:SetTexture ([[Interface\Addons\Details\images\icons2]])
+					playerteam:SetSize (250, 61)
+					playerteam:SetPoint ("topleft", bg, "topleft", 50, -289)
+					playerteam:SetTexCoord (259/512, 509/512, 186/512, 247/512)
+					
+					local eventtracker = f:CreateTexture (nil, "overlay")
+					eventtracker:SetTexture ([[Interface\Addons\Details\images\icons2]])
+					eventtracker:SetSize (256, 50)
+					eventtracker:SetPoint ("topleft", bg, "topleft", 50, -370)
+					eventtracker:SetTexCoord (0.5, 1, 134/512, 184/512)
+					
+					local closebutton = _detalhes.gump:CreateButton (f, function() f:Hide() end, 100, 24, "CLOSE")
+					closebutton:SetPoint ("topleft", bg, "topleft", 400, -405)
+					closebutton:InstallCustomTexture()
+					
+					C_Timer.After (5, function()
+						local StreamerPlugin = _detalhes:GetPlugin ("DETAILS_PLUGIN_STREAM_OVERLAY")
+						if (StreamerPlugin) then
+							local tPluginSettings = _detalhes:GetPluginSavedTable ("DETAILS_PLUGIN_STREAM_OVERLAY")
+							if (tPluginSettings) then
+								local bIsPluginEnabled = tPluginSettings.enabled
+								if (bIsPluginEnabled and _detalhes.streamer_config) then
+									_detalhes.streamer_config.use_animation_accel = true
+								end
+							end
+						end
+					end)
+				end
+			end
+			--]]
+			
 			--> erase the custom for damage taken by spell
 			if (_detalhes_database.last_realversion and _detalhes_database.last_realversion < 75 and enable_reset_warning) then
 				if (_detalhes.global_plugin_database and _detalhes.global_plugin_database ["DETAILS_PLUGIN_ENCOUNTER_DETAILS"]) then
@@ -1246,7 +1372,6 @@ function _G._detalhes:Start()
 			end
 			
 			if (_detalhes_database.last_realversion and _detalhes_database.last_realversion < 73 and enable_reset_warning) then
-			
 				local secure_func = function()
 					for i = #_detalhes.custom, 1, -1 do
 						local index = i
@@ -1267,7 +1392,6 @@ function _G._detalhes:Start()
 					end
 				end
 				pcall (secure_func)
-				
 			end
 			
 			if (_detalhes_database.last_realversion and _detalhes_database.last_realversion < 70 and enable_reset_warning) then
@@ -1450,6 +1574,9 @@ function _G._detalhes:Start()
 		_detalhes:OpenWelcomeWindow()
 	end
 	
+	--> load broadcaster tools
+	_detalhes:LoadFramesForBroadcastTools()
+	
 	--_detalhes:OpenWelcomeWindow() --debug
 	-- /run _detalhes:OpenWelcomeWindow()
 	
@@ -1479,7 +1606,7 @@ function _G._detalhes:Start()
 	_detalhes.chat_embed:CheckChatEmbed (true)
 	
 	--_detalhes:SetTutorialCVar ("MEMORY_USAGE_ALERT1", false)
-	if (not _detalhes:GetTutorialCVar ("MEMORY_USAGE_ALERT1")) then
+	if (not _detalhes:GetTutorialCVar ("MEMORY_USAGE_ALERT1") and false) then --> disabled the warning
 		function _detalhes:AlertAboutMemoryUsage()
 			if (DetailsWelcomeWindow and DetailsWelcomeWindow:IsShown()) then
 				return _detalhes:ScheduleTimer ("AlertAboutMemoryUsage", 30)
