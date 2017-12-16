@@ -50,6 +50,7 @@ local default_config = {
 		timer_start = false,
 		low_health = false,
 		lost_health = false,
+		player_died = true,
 		
 		sound_enabled = {
 			readycheck = {enabled = false, sound = "d_whip1"},
@@ -77,6 +78,7 @@ local default_config = {
 			timer_start = {enabled = false, sound = "d_whip1"},
 			low_health = {enabled = false, sound = "d_whip1"},
 			lost_health = {enabled = false, sound = "d_whip1"},
+			player_died = {enabled = false, sound = "d_whip1"},
 		},
 	}
 }
@@ -488,6 +490,29 @@ function FlashTaskBar.OnInit (self)
 		FlashTaskBar:UnregisterEvent ("CHAT_MSG_RAID_LEADER")
 		FlashTaskBar:UnregisterEvent ("CHAT_MSG_RAID_WARNING")
 	end
+	
+	--> player died
+	local healthFrame = CreateFrame ("frame", nil, UIParent)
+	healthFrame:SetScript ("OnEvent", function (self, unit)
+		local health = UnitHealth ("player")
+		if (health < 1) then
+			if (FlashTaskBar.db.profile.player_died) then
+				FlashTaskBar:DoFlash ("player_died")
+			end
+		end
+	end)
+	
+	function FlashTaskBar:EnablePlayerHealthMonitor()
+		healthFrame:RegisterUnitEvent ("UNIT_HEALTH", "player")
+	end
+	
+	function FlashTaskBar:DisablePlayerHealthMonitor()
+		healthFrame:UnregisterEvent ("UNIT_HEALTH", "player")
+	end
+	
+	if (FlashTaskBar.db.profile.player_died) then
+		FlashTaskBar:EnablePlayerHealthMonitor()
+	end
 
 	--need a cleanup in the future
 	function FlashTaskBar:DoNotFlashOnWhisper()
@@ -840,6 +865,22 @@ function FlashTaskBar.OnInit (self)
 				end
 			end,
 		},
+		
+		{
+			type = "toggle",
+			name = "Player Died",
+			desc = "Flashes when your character dies",
+			order = 6,
+			get = function() return FlashTaskBar.db.profile.player_died end,
+			set = function (self, val) 
+				FlashTaskBar.db.profile.player_died = not FlashTaskBar.db.profile.player_died
+				if (FlashTaskBar.db.profile.player_died) then
+					FlashTaskBar:EnablePlayerHealthMonitor()
+				else
+					FlashTaskBar:DisablePlayerHealthMonitor()
+				end
+			end,
+		},
 	}
 	
 	local options_text_template = FlashTaskBar:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE")
@@ -1146,7 +1187,8 @@ function FlashTaskBar.OnInit (self)
 			"summon",
 			"fatigue",
 			"on_chat_player_name",
-			"battleground_end"
+			"battleground_end",
+			"player_died"
 		}
 		
 		local sound_options = {}

@@ -10,13 +10,16 @@ AtlasLootCharDB = {
 		},
 		["shown"] = false,
 	},
-	["QuickLootFrame"] = {
+	["GUI"] = {
+		["selected"] = {
+			[5] = 0,
+			[2] = "TheArcway",
+			[4] = 1,
+		},
 		["point"] = {
-			"RIGHT", -- [1]
-			nil, -- [2]
-			"RIGHT", -- [3]
-			-330.431518554688, -- [4]
-			193.628067016602, -- [5]
+			[3] = "CENTER",
+			[4] = 153.333389282227,
+			[5] = 72.4447250366211,
 		},
 	},
 	["SetViewFrame"] = {
@@ -27,18 +30,13 @@ AtlasLootCharDB = {
 		},
 	},
 	["__addonrevision"] = 4325,
-	["GUI"] = {
-		["selected"] = {
-			"AtlasLoot_WrathoftheLichKing", -- [1]
-			"Naxxramas", -- [2]
-			nil, -- [3]
-			1, -- [4]
-			0, -- [5]
-		},
+	["QuickLootFrame"] = {
 		["point"] = {
-			[3] = "CENTER",
-			[4] = 153.333389282227,
-			[5] = 72.4447250366211,
+			"RIGHT", -- [1]
+			nil, -- [2]
+			"RIGHT", -- [3]
+			-330.431518554688, -- [4]
+			193.628067016602, -- [5]
 		},
 	},
 	["minimap"] = {

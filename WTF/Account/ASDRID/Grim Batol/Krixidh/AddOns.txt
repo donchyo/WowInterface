@@ -86,7 +86,7 @@ RaidAchievement_WoDRaids: disabled
 RaidAchievement_WoDHeroics: disabled
 RaidAchievement: disabled
 TidyPlates_ThreatPlates: disabled
-TidyPlates: disabled
+TidyPlates: enabled
 TidyPlatesHub: enabled
 Kui_Nameplates: disabled
 Kui_Nameplates_Auras: disabled
@@ -148,7 +148,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 AtlasLoot_Cataclysm: enabled
 AtlasLoot_BurningCrusade: enabled
-AtlasLoot: disabled
+AtlasLoot: enabled
 AtlasLoot_Classic: enabled
 AtlasLoot_Crafting: enabled
 AtlasLoot_Collections: enabled
@@ -166,7 +166,7 @@ MicroMenu: disabled
 ActionBarSaver: enabled
 AdvancedInterfaceOptions: enabled
 AdvancedIconSelector: disabled
-Altoholic: disabled
+Altoholic: enabled
 Altoholic_Achievements: enabled
 Altoholic_Agenda: enabled
 Altoholic_Characters: enabled
@@ -209,7 +209,7 @@ Combuctor_Sets: disabled
 Combuctor_Config: disabled
 Combuctor_EquipmentSets: disabled
 CrossRealmAssist: enabled
-DataStore: disabled
+DataStore: enabled
 DataStore_Achievements: enabled
 DataStore_Agenda: enabled
 DataStore_Auctions: enabled
@@ -366,4 +366,3 @@ Details_RaidInfo-TombOfSargeras: disabled
 PremadeGroupsFilter: enabled
 Prat-3.0: disabled
 WorldQuestsList: enabled
-WorldQuestTracker: enabled

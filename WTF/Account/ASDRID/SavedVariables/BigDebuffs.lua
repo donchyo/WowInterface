@@ -12,11 +12,11 @@ BigDebuffsDB = {
 		["Bawsie - Grim Batol"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixidh - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -24,6 +24,11 @@ BigDebuffsDB = {
 				[227847] = {
 					["unitFrames"] = 0,
 				},
+			},
+			["unitFrames"] = {
+				["arena1"] = {
+				},
+				["enabled"] = false,
 			},
 			["raidFrames"] = {
 				["hideBliz"] = false,
@@ -34,11 +39,6 @@ BigDebuffsDB = {
 					[34914] = false,
 				},
 				["increaseBuffs"] = true,
-			},
-			["unitFrames"] = {
-				["arena1"] = {
-				},
-				["enabled"] = false,
 			},
 		},
 	},

@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["ChatEditHistory"] = {
-		" his shaman isnt the ebst", -- [1]
-		" this is a great group", -- [2]
-		" i promise", -- [3]
-		" how hard can it be?", -- [4]
-		" give wisdom!!!", -- [5]
-		" !!!1111!!!", -- [6]
-		" :DDD", -- [7]
-		" when was the run tonight again?", -- [8]
-		" oke", -- [9]
-		" then i can go and buy some chips after dinner", -- [10]
-		" YEEEEEEEE BOIIIIIIIIIII", -- [11]
-		"/raid take it", -- [12]
-		"/raid pala", -- [13]
-		"/raid you can take the ress?", -- [14]
-		" amazing groups as always", -- [15]
-		"/raid dont", -- [16]
-		"/raid just go", -- [17]
-		" lululul", -- [18]
-		" im gonna eat", -- [19]
-		" thanks for joining for that comedy", -- [20]
+		" give wisdom!!!", -- [1]
+		" !!!1111!!!", -- [2]
+		" :DDD", -- [3]
+		" when was the run tonight again?", -- [4]
+		" oke", -- [5]
+		" then i can go and buy some chips after dinner", -- [6]
+		" YEEEEEEEE BOIIIIIIIIIII", -- [7]
+		"/raid take it", -- [8]
+		"/raid pala", -- [9]
+		"/raid you can take the ress?", -- [10]
+		" amazing groups as always", -- [11]
+		"/raid dont", -- [12]
+		"/raid just go", -- [13]
+		" lululul", -- [14]
+		" im gonna eat", -- [15]
+		" thanks for joining for that comedy", -- [16]
+		"/wa", -- [17]
+		"/cw Twobad-Antonidas drain bad?", -- [18]
+		"/cw Twobad-Antonidas drain mad?", -- [19]
+		"/cw Twobad-Antonidas he seems sohappy", -- [20]
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 }

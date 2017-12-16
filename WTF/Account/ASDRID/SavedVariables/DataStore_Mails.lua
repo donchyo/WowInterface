@@ -132,7 +132,7 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2017/12/05 19:33",
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1512582940,
+				["lastUpdate"] = 1513388393,
 				["Mails"] = {
 					{
 						["icon"] = 134327,
@@ -141,8 +141,8 @@ DataStore_MailsDB = {
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1512582940,
-						["daysLeft"] = 22.0083675384522,
+						["lastCheck"] = 1513388393,
+						["daysLeft"] = 12.6858797073364,
 					}, -- [1]
 					{
 						["icon"] = 134327,
@@ -151,8 +151,8 @@ DataStore_MailsDB = {
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 23 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1512582940,
-						["daysLeft"] = 26.7686805725098,
+						["lastCheck"] = 1513388393,
+						["daysLeft"] = 17.4461917877197,
 					}, -- [2]
 					{
 						["icon"] = 134327,
@@ -161,8 +161,8 @@ DataStore_MailsDB = {
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 20 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1512582940,
-						["daysLeft"] = 28.9890518188477,
+						["lastCheck"] = 1513388393,
+						["daysLeft"] = 19.6665630340576,
 					}, -- [3]
 					{
 						["icon"] = 134327,
@@ -171,11 +171,11 @@ DataStore_MailsDB = {
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "We discovered some lost currency from Lost City of the Tol'vir in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1512582940,
-						["daysLeft"] = 29.9997215270996,
+						["lastCheck"] = 1513388393,
+						["daysLeft"] = 20.6772346496582,
 					}, -- [4]
 				},
-				["lastVisitDate"] = "2017/12/06 18:55",
+				["lastVisitDate"] = "2017/12/16 02:39",
 			},
 			["Default.Twisting Nether.Krixiyo"] = {
 				["lastUpdate"] = 1482549431,
@@ -336,30 +336,20 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2017/12/05 19:39",
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1512600856,
+				["lastUpdate"] = 1513383737,
 				["Mails"] = {
 					{
-						["lastCheck"] = 1512600856,
-						["sender"] = "The WoW Dev Team",
-						["subject"] = "WoW's 13th Anniversary!",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "Wow, yet another year has gone by for WoW!\r\n\r\nWe wanted to thank you for continuing to play World of Warcraft with us, so here's an Anniversary Gift to go with your adventures!\r\n\r\nThe WoW Dev Team",
-						["icon"] = 134327,
-						["daysLeft"] = 9.77178287506104,
-					}, -- [1]
-					{
-						["lastCheck"] = 1512600856,
+						["lastCheck"] = 1513383737,
 						["sender"] = "Thaumaturge Vashreen",
 						["subject"] = "Lost Currency",
 						["returned"] = false,
 						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 14 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
+						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 18 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
 						["icon"] = 134327,
-						["daysLeft"] = 10.9860534667969,
-					}, -- [2]
+						["daysLeft"] = 25.6747913360596,
+					}, -- [1]
 				},
-				["lastVisitDate"] = "2017/12/06 23:54",
+				["lastVisitDate"] = "2017/12/16 01:22",
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["lastUpdate"] = 1512422404,

@@ -102,16 +102,16 @@ DataStoreDB = {
 				["faction"] = "Alliance",
 				["guildName"] = "Hoonigans",
 			},
-			["Default.Aggra (Português).Spacegoatx"] = {
-				["faction"] = "Alliance",
+			["Default.Grim Batol.Kriximonk"] = {
 				["guildName"] = "Hoonigans",
+				["faction"] = "Alliance",
 			},
 			["Default.Blackmoore.Krixiyo"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Kriximonk"] = {
-				["guildName"] = "Hoonigans",
+			["Default.Aggra (Português).Spacegoatx"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Hoonigans",
 			},
 			["Default.Grim Batol.Kroxi"] = {
 				["guildName"] = "Hoonigans",

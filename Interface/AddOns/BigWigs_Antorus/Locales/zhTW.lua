@@ -7,13 +7,37 @@ if L then
 	L.custom_off_always_show_combined = "總是顯示靈魂驟發與靈魂炸彈的合併訊息"
 	L.custom_off_always_show_combined_desc = "當你中了|cff71d5ff靈魂炸彈|r或|cff71d5ff靈魂驟發|r時，不會顯示合併訊息，只會提示你受到影響。啟用此選項將會使訊息強制以合併模式顯示，即使你中了技能。|cff33ff99對團隊領袖很有用。|r"
 
+	L.fear_help = "合併薩格拉斯的恐懼"
+	L.fear_help_desc = "當你同時受到|cff71d5ff薩格拉斯的恐懼|r和|cff71d5ff靈魂之疫|r／|cff71d5ff靈魂驟發|r／|cff71d5ff靈魂炸彈|r／|cff71d5ff薩格拉斯的判決|r影響時，改說合併兩者的特殊訊息。"
+
+	L[257931] = "恐懼" -- short for Sargeras' Fear
+	L[248396] = "靈魂之疫" -- short for Soulblight
+	L[251570] = "靈魂炸彈" -- short for Soulbomb
+	L[250669] = "靈魂驟發" -- short for Soulburst
+	L[257966] = "判決" -- short for Sentence of Sargeras
+
 	L.stage2_early = "讓大海的怒濤洗淨所有的腐化吧！"
 	L.stage3_early = "沒有希望。只有痛苦！"
 
-	L.explosion = "%s爆炸"
-	L.gifts = "恩賜：%s（天空），%s（大海）"
+	L.gifts = "天之賜：%s，海之賜：%s"
 	L.burst = "|T1778229:15:15:0:0:64:64:4:60:4:60|t驟發：%s" -- short for Soulburst
 	L.bomb = "|T1778228:15:15:0:0:64:64:4:60:4:60|t炸彈：%s" -- short for Soulbomb
+
+	L.sky_say = "{rt5}爆擊精通" -- short for Critical Strike/Mastery (stats)
+	L.sea_say = "{rt6}加速臨機" -- short for Haste/Versatility (stats)
+
+	L.bomb_explosions = "炸彈爆炸"
+	L.bomb_explosions_desc = "替靈魂驟發與靈魂炸彈顯示爆炸計時。"
+end
+
+L = BigWigs:NewBossLocale("Aggramar", "zhTW")
+if L then
+	--L.wave_cleared = "Wave %d Cleared!" -- Wave 1 Cleared!
+
+	--L.track_ember = "Ember of Taeshalach Tracker"
+	--L.track_ember_desc = "Display messages for each Ember of Taeshalach death."
+
+	--L.custom_off_ember_marker_desc = "Mark Ember of Taeshalach with {rt1}{rt2}{rt3}{rt4}{rt5}, requires promoted or leader.\n|cff33ff99Mythic: This will only mark adds in the current wave and above 45 energy.|r"
 end
 
 L = BigWigs:NewBossLocale("The Coven of Shivarra", "zhTW")
@@ -23,7 +47,6 @@ if L then
 	L.timeLeft = "%.1f秒" -- s = seconds
 	L.torment = "苦難：%s"
 	L.nextTorment = "下次苦難：|cffffffff%s|r"
-	L.nextTorments = "下次苦難："
 	L.tormentHeal = "阿曼蘇爾" -- something like Heal/DoT (max 10 characters)
 	L.tormentLightning = "閃電鍊" -- short for "Chain Lightning" (or similar, max 10 characters)
 	L.tormentArmy = "大軍" -- short for "Spectral Army of Norgannon" (or similar, max 10 characters)

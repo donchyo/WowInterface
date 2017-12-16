@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.3.29 (6th December 2017, www.leatrix.com)
+-- 	Leatrix Plus 7.3.30 (13th December 2017, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.3.29"
+	LeaPlusLC["AddonVer"] = "7.3.30"
 
 ----------------------------------------------------------------------
 --	L00: Leatrix Plus
@@ -7438,6 +7438,23 @@
 			Zn(L["Dungeons"], L["Trial of Valor"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Trial of Valor"], "MUS_70_HallsofValor_WalkA#75676", "MUS_70_HallsofValor_WalkB#75678", "MUS_70_HallsofValor_WalkC#75679", "MUS_70_Zone_Stormheim_Mystic_Walk#76491", "MUS_71_TrialOfValor-DarkCoast-Walk#79719",})
 			Zn(L["Dungeons"], L["Vault of the Wardens"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Vault of the Wardens"], "MUS_70_VOTW_Walk_A#74778",})
 
+			-- Battlegrounds
+			Zn(L["Dungeons"], "|cffffd800", {""})
+			Zn(L["Dungeons"], "|cffffd800" .. L["Battlegrounds"], {""})
+			Zn(L["Dungeons"], L["Alterac Valley"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Alterac Valley"], "Altervac Valley_PVP#8014", "Moment - Battle04#6079", "Moment - Gloomy01#6074", "Zone-Mystery#6065",})
+			Zn(L["Dungeons"], L["Arathi Basin"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Arathi Basin"], "PVP-Battle Grounds#8233", "Zone-Cursed Land Felwood#5455",})
+			Zn(L["Dungeons"], L["Arathi Blizzard"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Arathi Blizzard"], "PVP-Battle Grounds#8233", "Zone-Cursed Land Felwood#5455", "Zone-Mystery#6065",})
+			Zn(L["Dungeons"], L["Battle for Gilneas"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Battle for Gilneas"], "MUS_BattleForGilneas_BG#23612",})
+			Zn(L["Dungeons"], L["Deepwind Gorge"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Deepwind Gorge"], "PVP-Battle Grounds--DeepwindGorge#37659",})
+			Zn(L["Dungeons"], L["Eye of the Storm"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Eye of the Storm"], "PVP-Battle Grounds#8233",})
+			Zn(L["Dungeons"], L["Isle of Conquest"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Isle of Conquest"], "PVP-Battle Grounds#8233", "Zone-WintergraspContested#14912",})
+			Zn(L["Dungeons"], L["Silvershard Mines"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Silvershard Mines"], "PVP-Battle Grounds-SilvershardMines#33713",})
+			Zn(L["Dungeons"], L["Strand of the Ancients"]		, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Strand of the Ancients"], "PVP-Battle Grounds#8233",})
+			Zn(L["Dungeons"], L["Tarren Mill vs Southshore"]	, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Tarren Mill vs Southshore"], "Zone-Forest Day#2523",})
+			Zn(L["Dungeons"], L["Temple of Kotmogu"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Temple of Kotmogu"], "MUS_50_Scenario_TempleofKotmogu#33978", "PVP-Battle Grounds-Pandaria#33714",})
+			Zn(L["Dungeons"], L["Twin Peaks"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Twin Peaks"], "MUS_TwinPeaks_BG#23613",})
+			Zn(L["Dungeons"], L["Warsong Gulch"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Warsong Gulch"], "PVP-Battle Grounds#8233",})
+
 			-- Various
 			Zn(L["Various"], "|cffffd800" .. L["Various"], {""})
 			Zn(L["Various"], L["Anduin's Theme"]				, {	"|cffffd800" .. L["Various"] .. ": " .. L["Anduin's Theme"], "MUS_70_Zone_Stormwind_PostBrokenShore_Funeral_01#75552", "MUS_70_Zone_Stormwind_LionsRest_Day#73345", "MUS_70_Zone_Stormwind_LionsRest_Night#73344", "MUS_70_BrokenShore_ShipIntro#73387", "MUS_72_BrokenShore_Wyrnnfall_Intro#85166",})
@@ -9359,29 +9376,22 @@
 		eb:SetScript("OnEnterPressed", eb.ClearFocus)
 
 		-- Add editbox border and backdrop
-		eb.f = CreateFrame("FRAME", nil, eb);
-		eb.f:SetBackdrop({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = false, tileSize = 16, edgeSize = 16, insets = { left = 5, right = 5, top = 5, bottom = 5 }});
-		eb.f:SetPoint("LEFT", -6, 0);
-		eb.f:SetWidth(eb:GetWidth()+6);
+		eb.f = CreateFrame("FRAME", nil, eb)
+		eb.f:SetBackdrop({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = false, tileSize = 16, edgeSize = 16, insets = { left = 5, right = 5, top = 5, bottom = 5 }})
+		eb.f:SetPoint("LEFT", -6, 0)
+		eb.f:SetWidth(eb:GetWidth()+6)
 		eb.f:SetHeight(eb:GetHeight())
 		eb.f:SetBackdropColor(1.0, 1.0, 1.0, 0.3)
 
 		-- Move onto next editbox when tab key is pressed
 		eb:SetScript("OnTabPressed", function(self)
-			LeaPlusLC[frame] = eb:GetText();
-			LeaPlusDB[frame] = LeaPlusLC[frame];
-			self:ClearFocus();
+			self:ClearFocus()
 			if IsShiftKeyDown() then
-				LeaPlusCB[shifttab]:SetFocus();
+				LeaPlusCB[shifttab]:SetFocus()
 			else
-				LeaPlusCB[tab]:SetFocus();
+				LeaPlusCB[tab]:SetFocus()
 			end
 		end)
-
-		-- Load initial values
-		if LeaPlusDB[frame] then
-			eb:SetText(LeaPlusDB[frame]);
-		end
 
 		return eb
 

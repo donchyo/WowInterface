@@ -44,17 +44,18 @@ function NOP:ItemLoad() -- load template item tooltips
         itemRetry = itemID
         retry = true
       else
+        local c,pattern,zone,map,faction = unpack(data,1,5)
+        if (c[2] == private.PRI_REP) and faction then NOP.T_REPS[name] = faction end -- fill-up item name to faction table
         self.itemFrame:ClearLines() -- clean tooltip frame
         self.itemFrame:SetItemByID(itemID)
         local count = self.itemFrame:NumLines()
         if count > 1 then -- I must have at least 2 lines in tooltip
-          local c,pattern = unpack(data,1,2)
           if type(pattern) == "number" then
             if count >= pattern then
               local i = pattern + nCB
               local tooltipText = private.TOOLTIP_ITEM .. "TextLeft" .. i
               local text = _G[tooltipText].GetText and _G[tooltipText]:GetText() or "none"
-              if text and (text ~= "none") then NOP.T_RECIPES_FIND[itemID] = {c,text,data[3],data[4]} end
+              if text and (text ~= "none") then NOP.T_RECIPES_FIND[itemID] = {c,text,zone,map} end
             end
           elseif type(pattern) == "string" then
             local tooltipText = private.TOOLTIP_ITEM .. "TextLeft" .. 1
@@ -62,7 +63,7 @@ function NOP:ItemLoad() -- load template item tooltips
             if heading then -- look in 1st line
               local compare = gsub(heading,pattern,"%1")
               if (compare ~= heading) then
-                NOP.T_RECIPES_FIND[itemID] = {c,compare,data[3],data[4]}
+                NOP.T_RECIPES_FIND[itemID] = {c,compare,zone,map}
               end
             end
           end
@@ -421,3 +422,21 @@ function NOP:CompressText(text) -- printable
   text = string.gsub(text, "||", "/124") -- interni formatovani WoW
   return string.trim(text)
 end
+--[[
+local tooltip_functions = {
+  "SetAuctionSellItem", "SetAuctionCompareItem", "SetBagItem", "SetBuybackItem", "SetCraftItem", "SetCraftSpell",
+  "SetCurrencyTokenByID", "SetGuildBankItem", "SetHeirloomByItemID", "SetHyperlink", "SetHyperlinkCompareItem", "SetInboxItem",
+  "SetInventoryItem", "SetItemByID", "SetLootItem", "SetLootRollItem", "SetMerchantCompareItem", "SetMerchantItem", "SetQuestItem",
+  "SetQuestCurrency", "SetQuestLogItem", "SetQuestLogSpecialItem", "SetToyByItemID", "SetSendMailItem", "SetTradePlayerItem",
+  "SetTradeTargetItem", "SetVoidDepositItem", "SetVoidItem", "SetVoidWithdrawalItem"
+}
+for _, func in pairs( tooltip_functions ) do
+  hooksecurefunc (GameTooltip, func, 
+    function(...)
+      local tooltip, arg1, arg2, arg3, arg4 = ...
+      print(tooltip,"arg1",arg1,"arg2",arg2,"arg3",arg3,"arg4",arg4)
+    end
+  )
+end
+
+]]--

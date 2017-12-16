@@ -1,7 +1,7 @@
-changeset:   68:174ad39948e2
-tag:         v7.3.2.068
+changeset:   70:2db7d77c825c
+tag:         v7.3.2.070
 user:        Tercio
-date:        Sat Dec 02 15:07:01 2017 -0200
-summary:     - fixed some taints by removing the option to not flash when receiving a whisper.
+date:        Sat Dec 09 10:33:14 2017 -0200
+summary:     - added a flash when the player character dies, it's enabled by default.
 
 

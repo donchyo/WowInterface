@@ -2,29 +2,29 @@
 iKeystonesDB = {
 	["Player-1303-042451A8"] = {
 		["name"] = "Krixidk",
-		["maxCompleted"] = 19,
-		["class"] = "DEATHKNIGHT",
+		["maxCompleted"] = 22,
 		["canLoot"] = false,
+		["class"] = "DEATHKNIGHT",
 		["key"] = {
-			["map"] = 233,
-			["affix4"] = 6,
-			["level"] = 16,
-			["affix10"] = 9,
-			["affix7"] = 3,
+			["map"] = 239,
+			["affix4"] = 5,
+			["level"] = 21,
+			["affix10"] = 10,
+			["affix7"] = 13,
 		},
 		["server"] = "Grim Batol",
 	},
 	["Player-1303-0478DE10"] = {
 		["name"] = "Zuriz",
-		["maxCompleted"] = 16,
-		["class"] = "SHAMAN",
+		["maxCompleted"] = 0,
 		["canLoot"] = false,
+		["class"] = "SHAMAN",
 		["key"] = {
-			["map"] = 199,
-			["affix4"] = 6,
-			["level"] = 14,
-			["affix10"] = 9,
-			["affix7"] = 3,
+			["map"] = 207,
+			["affix4"] = 5,
+			["level"] = 15,
+			["affix7"] = 13,
+			["affix10"] = 10,
 		},
 		["server"] = "Grim Batol",
 	},
@@ -39,8 +39,8 @@ iKeystonesDB = {
 	["Player-1303-0387FD7B"] = {
 		["name"] = "Donch",
 		["maxCompleted"] = 0,
-		["class"] = "MAGE",
 		["canLoot"] = false,
+		["class"] = "MAGE",
 		["key"] = {
 		},
 		["server"] = "Grim Batol",
@@ -48,8 +48,8 @@ iKeystonesDB = {
 	["Player-1303-03AF0575"] = {
 		["name"] = "Krixi",
 		["maxCompleted"] = 0,
-		["class"] = "PALADIN",
 		["canLoot"] = false,
+		["class"] = "PALADIN",
 		["key"] = {
 		},
 		["server"] = "Grim Batol",
@@ -57,8 +57,8 @@ iKeystonesDB = {
 	["Player-1303-06FB0BB8"] = {
 		["name"] = "Bawsie",
 		["maxCompleted"] = 0,
-		["canLoot"] = false,
 		["class"] = "HUNTER",
+		["canLoot"] = false,
 		["key"] = {
 		},
 		["server"] = "Grim Batol",
@@ -66,31 +66,45 @@ iKeystonesDB = {
 	["Player-1303-03966669"] = {
 		["name"] = "Kroxi",
 		["maxCompleted"] = 0,
-		["canLoot"] = false,
 		["class"] = "WARRIOR",
+		["canLoot"] = false,
 		["key"] = {
 		},
 		["server"] = "Grim Batol",
 	},
 	["Player-1303-04772A8A"] = {
 		["name"] = "Nyrith",
-		["maxCompleted"] = 18,
-		["class"] = "DRUID",
+		["maxCompleted"] = 0,
 		["canLoot"] = false,
+		["class"] = "DRUID",
 		["key"] = {
-			["map"] = 233,
-			["affix4"] = 6,
-			["level"] = 14,
-			["affix7"] = 3,
-			["affix10"] = 9,
+			["map"] = 198,
+			["affix4"] = 5,
+			["level"] = 17,
+			["affix10"] = 10,
+			["affix7"] = 13,
 		},
 		["server"] = "Grim Batol",
 	},
-	["Player-1303-08795EBA"] = {
-		["name"] = "Krixidh",
+	["Player-1303-03E8DD46"] = {
+		["name"] = "Zolution",
 		["maxCompleted"] = 0,
+		["class"] = "PRIEST",
 		["canLoot"] = false,
-		["class"] = "DEMONHUNTER",
+		["key"] = {
+			["map"] = 208,
+			["affix4"] = 5,
+			["level"] = 14,
+			["affix7"] = 13,
+			["affix10"] = 10,
+		},
+		["server"] = "Grim Batol",
+	},
+	["Player-1303-04AFFB5A"] = {
+		["name"] = "Namji",
+		["maxCompleted"] = 0,
+		["class"] = "MONK",
+		["canLoot"] = false,
 		["key"] = {
 		},
 		["server"] = "Grim Batol",
@@ -98,32 +112,18 @@ iKeystonesDB = {
 	["Player-1303-03FA8295"] = {
 		["name"] = "Zetiz",
 		["maxCompleted"] = 0,
+		["canLoot"] = false,
 		["class"] = "ROGUE",
-		["canLoot"] = false,
 		["key"] = {
 		},
 		["server"] = "Grim Batol",
 	},
-	["Player-1303-04AFFB5A"] = {
-		["name"] = "Namji",
+	["Player-1303-08795EBA"] = {
+		["name"] = "Krixidh",
 		["maxCompleted"] = 0,
+		["class"] = "DEMONHUNTER",
 		["canLoot"] = false,
-		["class"] = "MONK",
 		["key"] = {
-		},
-		["server"] = "Grim Batol",
-	},
-	["Player-1303-03E8DD46"] = {
-		["name"] = "Zolution",
-		["maxCompleted"] = 0,
-		["canLoot"] = false,
-		["class"] = "PRIEST",
-		["key"] = {
-			["map"] = 239,
-			["affix4"] = 6,
-			["level"] = 11,
-			["affix10"] = 9,
-			["affix7"] = 3,
 		},
 		["server"] = "Grim Batol",
 	},
@@ -131,15 +131,15 @@ iKeystonesDB = {
 iKeystonesConfig = {
 	["aff"] = {
 		["aff10"] = {
-			["a"] = 9,
+			["a"] = 10,
 			["t"] = true,
 		},
 		["aff7"] = {
-			["a"] = 3,
+			["a"] = 13,
 			["t"] = true,
 		},
 		["aff4"] = {
-			["a"] = 6,
+			["a"] = 5,
 			["t"] = true,
 		},
 	},

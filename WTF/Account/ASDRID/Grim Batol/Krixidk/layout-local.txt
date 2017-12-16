@@ -34,13 +34,6 @@ X: 0
 Y: 197
 W: 370
 H: 110
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: TOP
-X: 57
-Y: 0
-W: 267
-H: 323
 Frame: DetailsPlayerDetailsWindow
 FrameLevel: 1
 Anchor: CENTER
@@ -48,3 +41,10 @@ X: 95
 Y: 83
 W: 790
 H: 454
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: TOP
+X: 57
+Y: 0
+W: 193
+H: 221

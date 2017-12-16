@@ -76,6 +76,7 @@ function mod:GetOptions()
 		{245050, "HEALER"}, -- Delusions
 		245040, -- Corrupt
 		{245118, "SAY"}, -- Cloying Shadows
+		245075, -- Hungering Gloom
 	},{
 		["stages"] = "general",
 		[244016] = -15799, -- Platform: Nexus
@@ -95,8 +96,11 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "RealityTear", 244016)
 	self:Log("SPELL_AURA_APPLIED_DOSE", "RealityTear", 244016)
 	self:Log("SPELL_CAST_SUCCESS", "RealityTearSuccess", 244016)
+	self:Log("SPELL_CAST_START", "CollapsingWorldStart", 243983)
 	self:Log("SPELL_CAST_SUCCESS", "CollapsingWorld", 243983)
+	self:Log("SPELL_CAST_START", "FelstormBarrageStart", 244000)
 	self:Log("SPELL_CAST_SUCCESS", "FelstormBarrage", 244000)
+	self:Log("SPELL_CAST_START", "TransportPortalStart", 244689)
 	self:Log("SPELL_CAST_SUCCESS", "TransportPortal", 244689)
 	self:Log("SPELL_CAST_START", "HowlingShadows", 245504)
 	self:Log("SPELL_CAST_START", "CatastrophicImplosion", 246075)
@@ -123,6 +127,8 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "CorruptSuccess", 245040)
 	self:Log("SPELL_AURA_APPLIED", "CloyingShadows", 245118)
 	self:Log("SPELL_AURA_APPLIED", "CloyingShadowsRemoved", 245118)
+	self:Log("SPELL_AURA_APPLIED", "HungeringGloom", 245075)
+	self:Log("SPELL_AURA_REMOVED", "HungeringGloomRemoved", 245075)
 	self:Death("LordEilgarDeath", 122213)
 
 	self:RegisterMessage("BigWigs_BarCreated", "BarCreated")
@@ -134,8 +140,8 @@ function mod:OnEngage()
 
 	self:Bar(244016, 7) -- Reality Tear
 	self:Bar(243983, 12.7) -- Collapsing World
-	self:Bar(244689, 26.7) -- Transport Portal
-	self:Bar(244000, 35.7) -- Felstorm Barrage
+	self:Bar(244689, self:Mythic() and 36.3 or 26.7) -- Transport Portal
+	self:Bar(244000, self:Mythic() and 26.9 or 35.7) -- Felstorm Barrage
 	self:Berserk(720)
 
 	nextPortalSoonWarning = 92 -- happens at 90%
@@ -156,10 +162,10 @@ do
 
 	local castPattern = CL.cast:gsub("%%s", ".+")
 
-	function triggerCdForOtherSpells(self, spellId)
+	function triggerCdForOtherSpells(self, spellId, castTime)
 		for id,_ in pairs(abilitysToPause) do
 			if id ~= spellId then
-				local cd = id == 244689 and 8.5 or 9 -- Transport Portal cast is 0.5s shorter
+				local cd = (id == 244689 and 8.5 or 9) + (castTime or 0) -- Transport Portal cast is 0.5s shorter
 				if self:BarTimeLeft(id) < cd then
 					self:Bar(id, cd)
 				end
@@ -239,6 +245,12 @@ function mod:RealityTearSuccess(args)
 	self:Bar(args.spellId, addsAlive > 0 and 24.4 or 12.2) -- Cooldown increased when there are platforms active
 end
 
+function mod:CollapsingWorldStart(args)
+	self:StopBar(args.spellId)
+	self:CastBar(args.spellId, 2)
+	triggerCdForOtherSpells(self, args.spellId, 2)
+end
+
 function mod:CollapsingWorld(args)
 	self:Message(args.spellId, "Important", "Warning")
 	self:Bar("worldExplosion", 8, L.worldExplosion, L.worldExplosion_icon)
@@ -246,10 +258,22 @@ function mod:CollapsingWorld(args)
 	triggerCdForOtherSpells(self, args.spellId)
 end
 
+function mod:FelstormBarrageStart(args)
+	self:StopBar(args.spellId)
+	self:CastBar(args.spellId, 2)
+	triggerCdForOtherSpells(self, args.spellId, 2)
+end
+
 function mod:FelstormBarrage(args)
 	self:Message(args.spellId, "Urgent", "Alert")
 	self:Bar(args.spellId, (self:Easy() and 37.1) or (self:Mythic() and 27.5) or 32.75)
 	triggerCdForOtherSpells(self, args.spellId)
+end
+
+function mod:TransportPortalStart(args)
+	self:StopBar(args.spellId)
+	self:CastBar(args.spellId, 1.5)
+	triggerCdForOtherSpells(self, args.spellId, 1.5)
 end
 
 function mod:TransportPortal(args)
@@ -264,8 +288,15 @@ function mod:HowlingShadows(args)
 	end
 end
 
-function mod:CatastrophicImplosion(args)
-	self:Message(args.spellId, "Important", "Alarm")
+do
+	local prev = 0
+	function mod:CatastrophicImplosion(args)
+		local t = GetTime()
+		if t-prev > 0.2 then
+			prev = t
+			self:Message(args.spellId, "Important", "Alarm")
+		end
+	end
 end
 
 do
@@ -381,6 +412,20 @@ end
 function mod:CloyingShadowsRemoved(args)
 	if self:Me(args.destGUID) then
 		self:CancelSayCountdown(args.spellId)
+	end
+end
+
+function mod:HungeringGloom(args)
+	if self:GetOption("custom_on_filter_platforms") and playerPlatform == 1 then return end
+	if UnitIsUnit(args.destName, "boss2") or UnitIsUnit(args.destName, "boss3") or UnitIsUnit(args.destName, "boss4") then -- Should always be boss2, rest is safety
+		self:TargetMessage(args.spellId, args.destName, "Urgent", "Info", nil, nil, true)
+		self:Bar(args.spellId, 20, CL.onboss:format(args.spellName))
+	end
+end
+
+function mod:HungeringGloomRemoved(args)
+	if UnitIsUnit(args.destName, "boss2") or UnitIsUnit(args.destName, "boss3") or UnitIsUnit(args.destName, "boss4") then -- Should always be boss2, rest is safety
+		self:StopBar(CL.onboss:format(args.spellName))
 	end
 end
 

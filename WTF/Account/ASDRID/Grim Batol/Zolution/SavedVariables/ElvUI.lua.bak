@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		" and on top of it", -- [1]
-		" i have t21 normal gloves", -- [2]
-		"/alto show", -- [3]
-		"/m", -- [4]
-		"/wa", -- [5]
-		"/s |cffa335ee|Hkeystone:200:10:11:14:10|h[Keystone: Halls of Valor]|h|r", -- [6]
-		"/cw Bulbi-Elune 2350 m+score on main", -- [7]
-		"/p hello", -- [8]
-		"/p every time i heal, no tanks, if i tank, no heals", -- [9]
-		"/p whats the worst that can happen?", -- [10]
-		"/iks", -- [11]
-		"/g tjenare", -- [12]
-		" okay", -- [13]
-		" yes", -- [14]
-		" im gonna eat in 10ish min", -- [15]
-		" when do you start normals?", -- [16]
-		" ok", -- [17]
-		"/ec", -- [18]
-		" nah", -- [19]
-		" druid", -- [20]
+		"/p whats the worst that can happen?", -- [1]
+		"/iks", -- [2]
+		"/g tjenare", -- [3]
+		" okay", -- [4]
+		" yes", -- [5]
+		" im gonna eat in 10ish min", -- [6]
+		" when do you start normals?", -- [7]
+		" ok", -- [8]
+		"/ec", -- [9]
+		" nah", -- [10]
+		" druid", -- [11]
+		"/cw Cez-Antonidas danke", -- [12]
+		" what trinket did you think?", -- [13]
+		" |cffa335ee|Hitem:151960::::::::110:256::3:3:3610:1472:3528:::|h[Carafe of Searing Light]|h|r|cffa335ee|Hitem:147276::::::::110:256::43:5:604:40:3573:3174:3337:::|h[Spellbinder's Seal]|h|r", -- [14]
+		"/roll", -- [15]
+		"/cw Jouselin-ZirkeldesCenarius ty", -- [16]
+		" uhm", -- [17]
+		" i can", -- [18]
+		" play", -- [19]
+		" my disc is getting kinda geared", -- [20]
 	},
 }

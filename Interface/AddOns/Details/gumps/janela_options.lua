@@ -238,7 +238,7 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 		window_icon:SetTexCoord (0, 0.054199, 0.591308, 0.646972) --605 663
 
 		--> title
-		local title = g:NewLabel (window, nil, "$parentTitleLabel", "title", Loc ["STRING_OPTIONS_WINDOW"], "GameFontHighlightLeft", 12, {227/255, 186/255, 4/255})
+		local title = g:NewLabel (window, nil, "$parentTitleLabel", "title", "Details! " .. Loc ["STRING_OPTIONS_WINDOW"], "GameFontHighlightLeft", 12, {227/255, 186/255, 4/255})
 		title:SetPoint ("center", window, "center")
 		title:SetPoint ("top", window, "top", 0, -28)
 		
@@ -845,6 +845,8 @@ local menus2 = {
 			return true
 		end
 		
+		--[=[
+		--> gradient
 		local blackdiv = window:CreateTexture (nil, "artwork")
 		blackdiv:SetTexture ([[Interface\ACHIEVEMENTFRAME\UI-Achievement-HorizontalShadow]])
 		blackdiv:SetVertexColor (0, 0, 0)
@@ -852,6 +854,7 @@ local menus2 = {
 		blackdiv:SetPoint ("topleft", window.frame, "topleft", 0, 0)
 		blackdiv:SetPoint ("bottomleft", window.frame, "bottomleft", 0, 0)
 		blackdiv:SetWidth (200)
+		--]=]
 		
 		--move buttons creation to loading process
 		function window:create_left_menu()

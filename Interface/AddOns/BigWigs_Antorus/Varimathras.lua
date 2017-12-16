@@ -13,7 +13,6 @@ mod.respawnTime = 30
 --
 
 local tormentActive = 0 -- 1: Flames, 2: Frost, 3: Fel, 4: Shadows
-local _, shadowDesc = EJ_GetSectionInfo(16350)
 local mobCollector = {}
 
 --------------------------------------------------------------------------------
@@ -22,15 +21,14 @@ local mobCollector = {}
 
 local L = mod:GetLocale()
 if L then
-	L.shadowOfVarmathras = "{-16350}"
-	L.shadowOfVarmathras_desc = shadowDesc
-	L.shadowOfVarmathras_icon = "spell_warlock_demonsoul"
+	L.shadowOfVarimathras_icon = "spell_warlock_demonsoul"
 end
 
 --------------------------------------------------------------------------------
 -- Initialization
 --
 
+local necroticEmbraceMarker = mod:AddMarkerOption(false, "player", 3, 244094, 3, 4) -- Necrotic Embrace
 function mod:GetOptions()
 	return {
 		"stages", -- Torment of Flames, Frost, Fel, Shadows
@@ -39,8 +37,12 @@ function mod:GetOptions()
 		{243960, "TANK"}, -- Shadow Strike
 		243999, -- Dark Fissure
 		{244042, "SAY", "FLASH", "ICON"}, -- Marked Prey
-		{244094, "SAY", "FLASH", "ICON"}, -- Necrotic Embrace
-		"shadowOfVarmathras",
+		{244094, "SAY", "FLASH", "PULSE", "PROXIMITY"}, -- Necrotic Embrace
+		necroticEmbraceMarker,
+		-16350, -- Shadow of Varimathras
+	},{
+		["stages"] = "general",
+		[-16350] = "mythic",
 	}
 end
 
@@ -54,6 +56,7 @@ function mod:OnBossEnable()
 	--[[ General ]]--
 	self:Log("SPELL_AURA_APPLIED", "Misery", 243961)
 	self:Log("SPELL_CAST_SUCCESS", "ShadowStrike", 243960, 257644) -- Heroic, Normal
+	self:Log("SPELL_CAST_START", "DarkFissureStart", 243999)
 	self:Log("SPELL_CAST_SUCCESS", "DarkFissure", 243999)
 	self:Log("SPELL_AURA_APPLIED", "MarkedPrey", 244042)
 	self:Log("SPELL_AURA_REMOVED", "MarkedPreyRemoved", 244042)
@@ -94,7 +97,7 @@ function mod:TormentofFlames(args)
 		if self:Easy() then
 			self:CDBar("stages", 355, self:SpellName(243973), 243973) -- Torment of Shadows
 		else
-			self:CDBar("stages", 120, self:SpellName(243977), 243977) -- Torment of Frost
+			self:CDBar("stages", self:Mythic() and 100 or 120, self:SpellName(243977), 243977) -- Torment of Frost
 		end
 	end
 end
@@ -103,7 +106,7 @@ function mod:TormentofFrost(args)
 	if tormentActive ~= 2 then
 		tormentActive = 2
 		self:Message("stages", "Positive", "Long", args.spellName, args.spellId)
-		self:CDBar("stages", 114, self:SpellName(243980), 243980) -- Torment of Fel
+		self:CDBar("stages", self:Mythic() and 100 or 114, self:SpellName(243980), 243980) -- Torment of Fel
 	end
 end
 
@@ -111,14 +114,14 @@ function mod:TormentofFel(args)
 	if tormentActive ~= 3 then
 		tormentActive = 3
 		self:Message("stages", "Positive", "Long", args.spellName, args.spellId)
-		self:CDBar("stages", 121, self:SpellName(243973), 243973) -- Torment of Shadows
+		self:CDBar("stages", self:Mythic() and 90 or 121, self:SpellName(243973), 243973) -- Torment of Shadows
 	end
 end
 
 function mod:TormentofShadows(args)
 	if tormentActive ~= 4 then
 		tormentActive = 4
-		self:Message(args.spellId, "Positive", "Long", args.spellName, args.spellId)
+		self:Message("stages", "Positive", "Long", args.spellName, args.spellId)
 	end
 end
 
@@ -128,9 +131,13 @@ function mod:Misery(args)
 	end
 end
 
-function mod:ShadowStrike(args)
+function mod:ShadowStrike()
 	self:Message(243960, "Urgent", "Warning")
 	self:CDBar(243960, 9.8)
+end
+
+function mod:DarkFissureStart(args)
+	self:CDBar(243960, 5.3) -- Shadow Strike
 end
 
 function mod:DarkFissure(args)
@@ -158,30 +165,70 @@ function mod:MarkedPreyRemoved(args)
 	end
 end
 
-function mod:NecroticEmbraceSuccess()
-	self:CDBar(244094, 30.5)
-end
-
 do
-	local playerList = mod:NewTargetList()
-	function mod:NecroticEmbrace(args)
-		if self:Me(args.destGUID) then
-			self:Say(args.spellId)
-			self:Flash(args.spellId)
-			self:SayCountdown(args.spellId, 6)
+	local playerList, scheduled, isOnMe, proxList = mod:NewTargetList(), nil, nil, {}
+
+	function mod:NecroticEmbraceSuccess()
+		self:CDBar(244094, 30.5)
+		wipe(proxList)
+	end
+
+	local function warn(self, spellId)
+		if not isOnMe then
+			self:TargetMessage(spellId, playerList, "Urgent")
+		else
+			wipe(playerList)
 		end
+		scheduled = nil
+	end
+
+	function mod:NecroticEmbrace(args)
+		if #playerList >= 2 then return end -- Avoid spam if something goes wrong
+		if tContains(proxList, args.destName) then return end -- Don't annouce someone twice
+
 		playerList[#playerList+1] = args.destName
-		if #playerList == 1 then
-			-- Only 1 initial application, can avoid spreading. XXX See if this remains viable, or we need to mark everyone.
-			self:SecondaryIcon(args.spellId, args.destName)
-			self:ScheduleTimer("TargetMessage", 0.3, args.spellId, playerList, "Urgent", "Warning")
+		if self:Me(args.destGUID) then
+			self:TargetMessage(args.spellId, args.destName, "Urgent", "Warning", CL.count_icon:format(args.spellName, #playerList, #playerList+2))
+			self:Say(args.spellId, CL.count_rticon:format(args.spellName, #playerList, #playerList+2))
+			self:Flash(args.spellId, #playerList+2)
+			self:SayCountdown(args.spellId, 6, #playerList+2)
+			self:OpenProximity(args.spellId, 10)
+			isOnMe = true
+		end
+
+		proxList[#proxList+1] = args.destName
+		if not isOnMe then
+			self:OpenProximity(args.spellId, 10, proxList)
+		end
+
+		if not scheduled then
+			scheduled = self:ScheduleTimer(warn, 0.3, self, args.spellId)
+		end
+
+		if self:GetOption(necroticEmbraceMarker) then
+			SetRaidTarget(args.destName, #playerList + 2) -- Icons 3 and 4
 		end
 	end
 
 	function mod:NecroticEmbraceRemoved(args)
-		self:SecondaryIcon(args.spellId)
 		if self:Me(args.destGUID) then
+			isOnMe = nil
 			self:CancelSayCountdown(args.spellId)
+			self:CloseProximity(args.spellId)
+		end
+
+		if self:GetOption(necroticEmbraceMarker) then
+			SetRaidTarget(args.destName, 0)
+		end
+
+		tDeleteItem(proxList, args.destName)
+
+		if not isOnMe then -- Don't change proximity if it's on you and expired on someone else
+			if #proxList == 0 then
+				self:CloseProximity(args.spellId)
+			else -- Update proximity
+				self:OpenProximity(args.spellId, 10, proxList)
+			end
 		end
 	end
 end
@@ -206,9 +253,8 @@ do
 			local t = GetTime()
 			if t-prev > 1.5 then -- Also don't spam too much if it's a wipe and several are spawning at the same time
 				prev = t
-				self:Message("shadowOfVarmathras", "Urgent", "Alarm", L.shadowOfVarmathras, L.shadowOfVarmathras_icon)
+				self:Message(-16350, "Urgent", "Alarm", nil, L.shadowOfVarimathras_icon)
 			end
 		end
-
 	end
 end

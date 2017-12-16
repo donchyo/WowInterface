@@ -39,7 +39,7 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 3,
-			["NextWeeklyReset"] = "2017-12-13",
+			["NextWeeklyReset"] = "2017-12-20",
 		},
 		["Characters"] = {
 			["Default.Aggra (Português).Greenzuriz"] = {
@@ -61,7 +61,11 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1512498837,
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1512670002,
+				["DungeonIDs"] = {
+					["Antorus, the Burning Throne Normal|267847700"] = "363018|1513390177|0|1",
+					["Antorus, the Burning Throne Heroic|890118974"] = "363018|1513390177|0|1",
+				},
+				["lastUpdate"] = 1513390224,
 			},
 			["Default.Aggra (Português).Daimtårta"] = {
 				["lastUpdate"] = 1420506362,
@@ -70,19 +74,16 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1469117882,
 			},
 			["Default.Grim Batol.Krixikin"] = {
-				["DungeonIDs"] = {
-					["Antorus, the Burning Throne Heroic|267311075"] = "547506|1512600890|0|1",
-				},
-				["lastUpdate"] = 1512600933,
+				["lastUpdate"] = 1513393311,
 			},
-			["Default.Aggra (Português).Spacegoatx"] = {
-				["lastUpdate"] = 1461461819,
+			["Default.Grim Batol.Kriximonk"] = {
+				["lastUpdate"] = 1512498610,
 			},
 			["Default.Blackmoore.Krixiyo"] = {
 				["lastUpdate"] = 1480934765,
 			},
-			["Default.Grim Batol.Kriximonk"] = {
-				["lastUpdate"] = 1512498610,
+			["Default.Aggra (Português).Spacegoatx"] = {
+				["lastUpdate"] = 1461461819,
 			},
 			["Default.Grim Batol.Donch"] = {
 				["lastUpdate"] = 1512499158,
@@ -126,7 +127,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1442247547,
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1512600856,
+				["lastUpdate"] = 1513388151,
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["lastUpdate"] = 1512422409,

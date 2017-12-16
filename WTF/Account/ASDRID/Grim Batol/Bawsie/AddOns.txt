@@ -23,7 +23,7 @@ SkadaHealing: enabled
 BigWigs_Core: enabled
 BigWigs_Options: enabled
 TidyPlates_ThreatPlates: disabled
-TidyPlates: disabled
+TidyPlates: enabled
 PitBull4: disabled
 PitBull4_RoleIcon: disabled
 PitBull4_CastBarLatency: disabled
@@ -270,7 +270,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 AtlasLoot_Cataclysm: enabled
 AtlasLoot_BurningCrusade: enabled
-AtlasLoot: disabled
+AtlasLoot: enabled
 AtlasLoot_Classic: enabled
 AtlasLoot_Crafting: enabled
 AtlasLoot_Collections: enabled
@@ -286,7 +286,7 @@ MicroMenu: disabled
 MicroMenu_Config: disabled
 AdvancedInterfaceOptions: enabled
 AdvancedIconSelector: disabled
-Altoholic: disabled
+Altoholic: enabled
 Altoholic_Achievements: enabled
 Altoholic_Agenda: enabled
 Altoholic_Characters: enabled
@@ -321,7 +321,7 @@ Combuctor_Sets: disabled
 Combuctor_Config: disabled
 Combuctor_EquipmentSets: disabled
 CrossRealmAssist: enabled
-DataStore: disabled
+DataStore: enabled
 DataStore_Achievements: enabled
 DataStore_Agenda: enabled
 DataStore_Auctions: enabled
@@ -427,4 +427,3 @@ Skada_LeechBDKTabs: disabled
 Details_RaidInfo-TombOfSargeras: disabled
 PremadeGroupsFilter: enabled
 Prat-3.0: disabled
-WorldQuestsList: enabled

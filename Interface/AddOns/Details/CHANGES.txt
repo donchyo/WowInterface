@@ -1,5 +1,29 @@
-changeset:   689:deb826e20b4f
+changeset:   693:a690bf789019
 tag:         tip
+user:        Tercio
+date:        Fri Dec 15 08:29:20 2017 -0200
+summary:     - Polish on the Custom Display and Encounter Details windows.
+
+
+changeset:   692:d29c7d939821
+user:        Tercio
+date:        Tue Dec 12 13:09:20 2017 -0200
+summary:     - Embeding the custom display window into the new plugin window.
+
+
+changeset:   691:bfc5ab9d4df1
+user:        Tercio
+date:        Sat Dec 09 10:08:54 2017 -0200
+summary:     - Fixed an issue with the statistics sharing among guild members.
+
+
+changeset:   690:18cba0f76e41
+user:        Tercio
+date:        Fri Dec 08 18:09:20 2017 -0200
+summary:     - Fixed an issue with the statistics sharing among guild members.
+
+
+changeset:   689:deb826e20b4f
 user:        Tercio
 date:        Wed Dec 06 20:37:04 2017 -0200
 summary:     - attempt to fix the argus encounter double segments.

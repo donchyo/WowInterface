@@ -100,21 +100,21 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
-		["Nyrith - Grim Batol"] = {
-			["specInfo"] = {
-				["id"] = 105,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 4,
-			},
-			["welcome"] = true,
-		},
 		["Krixi - Grim Batol"] = {
 			["specInfo"] = {
 				["id"] = 66,
 				["role"] = "TANK",
 				["index"] = 2,
 				["name"] = "Protection",
+			},
+			["welcome"] = true,
+		},
+		["Nyrith - Grim Batol"] = {
+			["specInfo"] = {
+				["id"] = 105,
+				["role"] = "HEALER",
+				["name"] = "Restoration",
+				["index"] = 4,
 			},
 			["welcome"] = true,
 		},
@@ -275,8 +275,8 @@ TidyPlatesThreatDB = {
 		["Lovérockét - Aggra (Português)"] = "Default",
 		["Greenzuriz - Aggra (Português)"] = "Default",
 		["Bawsi - Aggra (Português)"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
@@ -906,8 +906,13 @@ TidyPlatesThreatDB = {
 			},
 			["cache"] = {
 			},
-			["questWidget"] = {
-				["ON"] = false,
+			["auraWidget"] = {
+				["allow"] = {
+					nil, -- [1]
+					"Leg Sweep", -- [2]
+					"Binding Shot", -- [3]
+				},
+				["mode"] = "allMine",
 			},
 			["text"] = {
 				["full"] = true,
@@ -917,13 +922,8 @@ TidyPlatesThreatDB = {
 				["g"] = 0.501960784313726,
 				["r"] = 0.501960784313726,
 			},
-			["auraWidget"] = {
-				["allow"] = {
-					nil, -- [1]
-					"Leg Sweep", -- [2]
-					"Binding Shot", -- [3]
-				},
-				["mode"] = "allMine",
+			["questWidget"] = {
+				["ON"] = false,
 			},
 		},
 	},

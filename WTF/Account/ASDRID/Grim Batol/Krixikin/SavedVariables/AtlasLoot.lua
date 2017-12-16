@@ -9,11 +9,9 @@ AtlasLootCharDB = {
 	},
 	["GUI"] = {
 		["selected"] = {
-			"AtlasLoot_Collections", -- [1]
-			"TIERSETS_BYCLASS", -- [2]
-			10, -- [3]
-			1, -- [4]
-			5, -- [5]
+			[5] = 0,
+			[2] = "TheArcway",
+			[4] = 1,
 		},
 		["point"] = {
 			"RIGHT", -- [1]

@@ -6,10 +6,6 @@ VER 3 0100000000000012 "bh" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]binding heal
 END
-VER 3 0100000000000011 "chakra" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy Word: Chastise
-END
 VER 3 010000000000000E "clarity" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] clarity of will
@@ -29,6 +25,10 @@ END
 VER 3 0100000000000010 "gs" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]guardian spirit
+END
+VER 3 0100000000000015 "harm" "INV_MISC_QUESTIONMARK"
+#showtooltip penance
+/cast [@target, harm] penance
 END
 VER 3 0100000000000005 "heal" "INV_MISC_QUESTIONMARK"
 #showtooltip

@@ -71,6 +71,11 @@ function NOP:BAG_UPDATE() -- bags have changed
   self:ItemShowNew()
 end
 NOP.FACTION_TABLE = {} -- ["faction_name"] = factionID,
+local tooltip_functions = {
+  "SetBagItem", "SetItemByID", 
+-- "SetQuestCurrency", "SetQuestLogItem", "SetQuestLogSpecialItem", "SetSendMailItem", "SetTradePlayerItem", "SetTradeTargetItem"
+-- "SetCurrencyTokenByID", "SetGuildBankItem", "SetInboxItem", "SetInventoryItem",   
+}
 function NOP:PLAYER_LOGIN() -- player entering game
   if not NOP.DB["version"] or NOP.DB["version"] ~= private.NOP_VERSION then
     self.printt("|cFFFF0000" .. private.NOP_TITLE .. " " .. private.NOP_VERSION)
@@ -91,14 +96,19 @@ function NOP:PLAYER_LOGIN() -- player entering game
   if self.BF.hotkey then self.BF.hotkey:SetText(self:ButtonHotKey(key)) end
   if not self.timerZoneChanged then self.timerZoneChanged = self:ScheduleTimer("ZoneChanged",private.TIMER_IDLE) end
   self.backTimer = self:ScheduleRepeatingTimer("ItemTimer", private.TIMER_RECHECK) -- slow backing timer for complete rescan, sometime GetItemSpell get hang or new item is added post events are triggered
-  if WoWBox then
-    ExpandAllFactionHeaders()
-    local nF = GetNumFactions()
-    for i=1, nF do
-      local name, _, _, _, _, value, _, _, header, _, _, _, _, id = GetFactionInfo(i)
-      if name and not header and id then
-        name = string.gsub(string.lower(name),"the ","")
-        NOP.FACTION_TABLE[name] = id
+  if not self.tooltipHooked then
+    self.tooltipHooked = true
+    if NOP.DB.ShowReputation then
+      local thook = {"SetBagItem", "SetItemByID"}
+      for _, func in pairs(thook) do
+        hooksecurefunc(GameTooltip, func, 
+          function(...)
+            local tooltip, arg1, arg2, arg3, arg4 = ...
+            if not tooltip then return end
+            if not tooltip:IsVisible( ) then return end
+            NOP:ButtonReputation(tooltip,func)
+          end
+        )
       end
     end
   end

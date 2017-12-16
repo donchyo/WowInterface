@@ -138,7 +138,7 @@ TidyPlatesHubCache = {
 		["WidgetsMyBuff"] = false,
 		["ClassEnemyIcon"] = false,
 		["FocusAsTarget"] = false,
-		["OpacityFiltered"] = 0,
+		["OpacitySpotlight"] = 0.85,
 		["OpacityTarget"] = 1,
 		["ThreatGlowEnable"] = true,
 		["HeadlineFriendlyColor"] = 4,
@@ -253,7 +253,7 @@ TidyPlatesHubCache = {
 		["ScaleCastingSpotlight"] = false,
 		["StyleFriendlyBarsOnNPC"] = false,
 		["TextUseBlizzardFont"] = false,
-		["OpacitySpotlight"] = 0.85,
+		["OpacityFiltered"] = 0,
 	},
 }
 TidyPlatesHubGlobal = {

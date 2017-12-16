@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2660,
 	["lastSanitation"] = 3,
+	["session"] = 2673,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\SavedInstances\\SavedInstances-@project-version@.lua:4212: attempt to concatenate local 'kabbrev' (a nil value)",
@@ -613,44 +613,20 @@ BugGrabberDB = {
 			["counter"] = 371,
 		}, -- [77]
 		{
-			["message"] = "[string \"--[[ Error in ' 09-Chilled Blood Absorb' ]]...\"]:12: attempt to compare number with nil",
-			["time"] = "2017/11/30 21:42:44",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"--[[ Error in ' 09-Chilled Blood Absorb' ]]...\"]:12: in function <[string \"--[[ Error in ' 09-Chilled Blood Absorb' ]]...\"]:2>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:3365: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3361>",
-			["session"] = 2645,
-			["counter"] = 70,
-		}, -- [78]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'AngryKeystones' tried to call the protected function 'ArenaEnemyFrames:SetPoint()'.",
-			["time"] = "2017/10/30 21:33:20",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetPoint'\nInterface\\FrameXML\\UIParent.lua:2890: in function `UIParentManageFramePositions'\nInterface\\FrameXML\\UIParent.lua:2175: in function <Interface\\FrameXML\\UIParent.lua:2162>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2927: in function <Interface\\FrameXML\\UIParent.lua:2925>\n[C]: ?\n[C]: in function `UIParent_ManageFramePositions'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:21: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:20>\n[C]: in function `Hide'\nInterface\\AddOns\\AngryKeystones\\Gossip.lua:87: in function <Interface\\AddOns\\AngryKeystones\\Gossip.lua:80>\n[C]: in function `TalkingHeadFrame_PlayCurrent'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:27: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:25>",
-			["session"] = 2650,
-			["counter"] = 23,
-		}, -- [79]
-		{
-			["message"] = "[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:3: attempt to compare nil with number",
-			["time"] = "2017/10/07 20:35:08",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:3: in function <[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.23.lua:3364: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3360>",
-			["session"] = 2650,
-			["counter"] = 1901,
-		}, -- [80]
-		{
 			["message"] = "[string \"--[[ Error in ' Garothi - Decimation - 10.4...\"]:1: Cannot find a library instance of \"LibArtifactData-1.0\".",
 			["time"] = "2017/12/09 04:18:13",
 			["locals"] = "(*temporary) = \"Cannot find a library instance of \"LibArtifactData-1.0\".\"\n",
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Accountant\\libs\\LibStub\\LibStub.lua:23: in function `LibStub'\n[string \"--[[ Error in ' Garothi - Decimation - 10.4...\"]:1: in function `func'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:409: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:127: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:3365: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3361>",
 			["session"] = 2656,
 			["counter"] = 6,
-		}, -- [81]
+		}, -- [78]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'DialogKey' tried to call the protected function 'AcceptSpellConfirmationPrompt()'.",
 			["time"] = "2017/12/09 14:56:25",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `AcceptSpellConfirmationPrompt'\nInterface\\FrameXML\\StaticPopup.lua:3468: in function `OnAccept'\nInterface\\FrameXML\\StaticPopup.lua:4427: in function `StaticPopup_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n[C]: in function `Click'\nInterface\\AddOns\\DialogKey\\core.lua:752: in function `ClickButton'\nInterface\\AddOns\\DialogKey\\core.lua:691: in function `ClickButtons'\nInterface\\AddOns\\DialogKey\\core.lua:682: in function <Interface\\AddOns\\DialogKey\\core.lua:630>",
 			["session"] = 2658,
 			["counter"] = 2,
-		}, -- [82]
+		}, -- [79]
 		{
 			["message"] = "[string \"--[[ Error in ' Shivarra - Storm of Darknes...\"]:3: Cannot find a library instance of \"LibArtifactData-1.0\".",
 			["time"] = "2017/12/09 15:44:45",
@@ -658,23 +634,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Accountant\\libs\\LibStub\\LibStub.lua:23: in function `LibStub'\n[string \"--[[ Error in ' Shivarra - Storm of Darknes...\"]:3: in function `func'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:409: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:1214: in function `LoadEncounterInitScripts'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:1368: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1238>",
 			["session"] = 2659,
 			["counter"] = 1,
-		}, -- [83]
-		{
-			["message"] = "[string \"--[[ Error in ' Template AOE timer + LW cas...\"]:1: Cannot find a library instance of \"LibArtifactData-1.0\".",
-			["time"] = "2017/12/09 16:00:28",
-			["locals"] = "(*temporary) = \"Cannot find a library instance of \"LibArtifactData-1.0\".\"\n",
-			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Accountant\\libs\\LibStub\\LibStub.lua:23: in function `LibStub'\n[string \"--[[ Error in ' Template AOE timer + LW cas...\"]:1: in function `func'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:409: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:1214: in function `LoadEncounterInitScripts'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:1368: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1238>",
-			["session"] = 2659,
-			["counter"] = 2,
-		}, -- [84]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'SmoothDurability' tried to call the protected function 'ArenaEnemyFrames:ClearAllPoints()'.",
-			["time"] = "2017/10/29 11:22:07",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\UIParent.lua:2889: in function `UIParentManageFramePositions'\nInterface\\FrameXML\\UIParent.lua:2175: in function <Interface\\FrameXML\\UIParent.lua:2162>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2927: in function <Interface\\FrameXML\\UIParent.lua:2925>\n[C]: ?\n[C]: in function `UIParent_ManageFramePositions'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:16: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:15>\n[C]: in function `Show'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:125: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:108>\n[C]: in function `TalkingHeadFrame_PlayCurrent'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:27: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:25>",
-			["session"] = 2659,
-			["counter"] = 205,
-		}, -- [85]
+		}, -- [80]
 		{
 			["message"] = "Interface\\FrameXML\\SecureHandlers.lua:670: Header frame must be explicitly protected",
 			["time"] = "2017/11/25 19:00:24",
@@ -682,38 +642,86 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:670: in function `SecureHandlerWrapScript'\n...isonMissionManager\\MissionUI_Shared_UpgradeItems.lua:76: in function `UpgradeItems_InitButtons'\n...AddOns\\GarrisonMissionManager\\MissionUI_Garrison.lua:82: in main chunk\n[C]: ?\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:421: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:587: in function `OrderHall_LoadUI'\nInterface\\FrameXML\\GarrisonBaseUtils.lua:210: in function `ShowGarrisonLandingPage'\nInterface\\FrameXML\\Minimap.lua:600: in function `GarrisonLandingPage_Toggle'\nInterface\\FrameXML\\Minimap.lua:593: in function <Interface\\FrameXML\\Minimap.lua:592>",
 			["session"] = 2659,
 			["counter"] = 2,
+		}, -- [81]
+		{
+			["message"] = "[string \"--[[ Error in ' Template AOE timer + LW cas...\"]:1: Cannot find a library instance of \"LibArtifactData-1.0\".",
+			["time"] = "2017/12/09 16:00:28",
+			["locals"] = "(*temporary) = \"Cannot find a library instance of \"LibArtifactData-1.0\".\"\n",
+			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Accountant\\libs\\LibStub\\LibStub.lua:23: in function `LibStub'\n[string \"--[[ Error in ' Template AOE timer + LW cas...\"]:1: in function `func'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:409: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:1214: in function `LoadEncounterInitScripts'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:1368: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1238>",
+			["session"] = 2661,
+			["counter"] = 4,
+		}, -- [82]
+		{
+			["message"] = "[string \"--[[ Error in ' 09-Chilled Blood Absorb' ]]...\"]:12: attempt to compare number with nil",
+			["time"] = "2017/11/30 21:42:44",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"--[[ Error in ' 09-Chilled Blood Absorb' ]]...\"]:12: in function <[string \"--[[ Error in ' 09-Chilled Blood Absorb' ]]...\"]:2>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:3365: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3361>",
+			["session"] = 2662,
+			["counter"] = 116,
+		}, -- [83]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'AngryKeystones' tried to call the protected function 'ArenaEnemyFrames:SetPoint()'.",
+			["time"] = "2017/10/30 21:33:20",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetPoint'\nInterface\\FrameXML\\UIParent.lua:2890: in function `UIParentManageFramePositions'\nInterface\\FrameXML\\UIParent.lua:2175: in function <Interface\\FrameXML\\UIParent.lua:2162>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2927: in function <Interface\\FrameXML\\UIParent.lua:2925>\n[C]: ?\n[C]: in function `UIParent_ManageFramePositions'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:21: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:20>\n[C]: in function `Hide'\nInterface\\AddOns\\AngryKeystones\\Gossip.lua:87: in function <Interface\\AddOns\\AngryKeystones\\Gossip.lua:80>\n[C]: in function `TalkingHeadFrame_PlayCurrent'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:27: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:25>",
+			["session"] = 2671,
+			["counter"] = 25,
+		}, -- [84]
+		{
+			["message"] = "[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:3: attempt to compare nil with number",
+			["time"] = "2017/10/07 20:35:08",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:3: in function <[string \"--[[ Error in ' umbilicus eternus' ]]return...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.23.lua:3364: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3360>",
+			["session"] = 2671,
+			["counter"] = 2048,
+		}, -- [85]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'SmoothDurability' tried to call the protected function 'ArenaEnemyFrames:ClearAllPoints()'.",
+			["time"] = "2017/10/29 11:22:07",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\UIParent.lua:2889: in function `UIParentManageFramePositions'\nInterface\\FrameXML\\UIParent.lua:2175: in function <Interface\\FrameXML\\UIParent.lua:2162>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2927: in function <Interface\\FrameXML\\UIParent.lua:2925>\n[C]: ?\n[C]: in function `UIParent_ManageFramePositions'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:16: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:15>\n[C]: in function `Show'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:125: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:108>\n[C]: in function `TalkingHeadFrame_PlayCurrent'\n...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:27: in function <...ns\\Blizzard_TalkingHeadUI\\Blizzard_TalkingHeadUI.lua:25>",
+			["session"] = 2672,
+			["counter"] = 210,
 		}, -- [86]
 		{
-			["message"] = "[string \"--[[ Error in ' CBTValue' ]]return function...\"]:3: attempt to compare nil with number",
-			["time"] = "2017/12/03 19:13:32",
-			["locals"] = "name = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\nvalue2 = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare nil with number\"\n",
-			["stack"] = "[string \"--[[ Error in ' CBTValue' ]]return function...\"]:3: in function <[string \"--[[ Error in ' CBTValue' ]]return function...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:3365: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3361>",
-			["session"] = 2659,
-			["counter"] = 308,
+			["message"] = "[string \"--[[ Error in ' Ghost in the mist' ]]return...\"]:5: attempt to perform arithmetic on local 'stacks' (a nil value)",
+			["time"] = "2017/10/06 17:05:03",
+			["locals"] = "output = nil\nstacks = 0\nstacks = nil\n(*temporary) = 4\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"player\"\n(*temporary) = \"Ghost in the Mist\"\n(*temporary) = \"attempt to perform arithmetic on local 'stacks' (a nil value)\"\n",
+			["stack"] = "[string \"--[[ Error in ' Ghost in the mist' ]]return...\"]:5: in function <[string \"--[[ Error in ' Ghost in the mist' ]]return...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.23.lua:3364: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3360>",
+			["session"] = 2672,
+			["counter"] = 5979,
 		}, -- [87]
 		{
 			["message"] = "[string \"--[[ Error in ' Caress of the tidemother' ]...\"]:3: attempt to perform arithmetic on local 'stacks' (a nil value)",
 			["time"] = "2017/10/06 17:05:44",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"--[[ Error in ' Caress of the tidemother' ]...\"]:3: in function <[string \"--[[ Error in ' Caress of the tidemother' ]...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.23.lua:3364: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3360>",
-			["session"] = 2659,
-			["counter"] = 3014,
+			["session"] = 2672,
+			["counter"] = 3027,
 		}, -- [88]
+		{
+			["message"] = "[string \"--[[ Error in ' CBTValue' ]]return function...\"]:3: attempt to compare nil with number",
+			["time"] = "2017/12/03 19:13:32",
+			["locals"] = "name = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\nvalue2 = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare nil with number\"\n",
+			["stack"] = "[string \"--[[ Error in ' CBTValue' ]]return function...\"]:3: in function <[string \"--[[ Error in ' CBTValue' ]]return function...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.25.lua:3365: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3361>",
+			["session"] = 2672,
+			["counter"] = 310,
+		}, -- [89]
+		{
+			["message"] = "Interface\\AddOns\\AtlasLoot\\Core\\ItemString.lua:347: attempt to index upvalue 'BonusIDInfo' (a nil value)",
+			["time"] = "2017/12/15 22:31:06",
+			["locals"] = "itemID = 134467\nbonus = nil\ndifficultyID = 23\nbaseLvl = nil\ndifficulty = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'BonusIDInfo' (a nil value)\"\nITEM_BONUS_PRESET = <table> {\n Stage3H = <table> {\n }\n LegionMaxTitanforgedByBaseLvl = <function> defined @Interface\\AddOns\\AtlasLoot\\Core\\ItemString.lua:293\n LegionEmeraldNightmareTitanforged = <table> {\n }\n MythicSoO = <table> {\n }\n Skyreach = <table> {\n }\n Dungeon = <table> {\n }\n Auch = <table> {\n }\n HCDungeonWarforged = <table> {\n }\n HeroicRaid = <table> {\n }\n HeroicSoO = <table> {\n }\n MDungeonWarforged = <table> {\n }\n LegionRaidTitanforged = <table> {\n }\n Stage5 = <table> {\n }\n LFR = <table> {\n }\n MDungeon = <table> {\n }\n LegionMDungeonTitanforged = <table> {\n }\n LegionDungeonTitanforged = <table> {\n }\n LegionDungeon = <table> {\n }\n LegionMDungeon = <table> {\n }\n Stage3 = <table> {\n }\n LegionMDungeon2Titanforged = <table> {\n }\n Stage2H = <table> {\n }\n Stage6W = <table> {\n }\n Stage5W = <table> {\n }\n RaidWarforged = <table> {\n }\n Stage4W = <table> {\n }\n LegionMDungeon2 = <table> {\n }\n MythicRaid = <table> {\n }\n Stage2W = <table> {\n }\n LegionLFR = <table> {\n }\n Stage4 = <table> {\n }\n Stage2 = <table> {\n }\n ID = <table> {\n }\n HeroicSoOWarforged = <table> {\n }\n Stage1 = <table> {\n }\n LegionNightholdTitanforged = <table> {\n }\n LegionMythicRaidTitanforged = <table> {\n }\n LegionMythicRaid = <table> {\n }\n LegionHeroicRaidTitanforged = <table> {\n }\n LegionHeroicRaid = <table> {\n }\n LegionRaid = <table> {\n }\n HCDungeon = <table> {\n }\n BSM = <table> {\n }\n MythicRaidWarforged = <table> {\n }\n LegionLFRTitanforged = <table> {\n }\n Stage6 = <table> {\n }\n HeroicRaidWarforged = <table> {\n }\n MythicSoOWarforged = <table> {\n }\n SoOWarforged = <table> {\n }\n Stage3W = <table> {\n }\n LegionHCDungeon = <table> {\n }\n LegionHCDungeonTitanforged = <table> {\n }\n}\nBonusIDInfo = nil\nformat = <function> defined =[C]:-1\nITEM_FORMAT_BONUS_STRING = \"item:%d:::::::::::%s:%d:%s\"\ntbl_concat = <function> defined =[C]:-1\n",
+			["stack"] = "Interface\\AddOns\\AtlasLoot\\Core\\ItemString.lua:347: in function <Interface\\AddOns\\AtlasLoot\\Core\\ItemString.lua:342>\nInterface\\AddOns\\AtlasLoot\\Button\\Item_type.lua:75: in function `OnSet'\nInterface\\AddOns\\AtlasLoot\\Button\\Button.lua:516: in function `SetType'\nInterface\\AddOns\\AtlasLoot\\Button\\Button.lua:488: in function `SetContentTable'\nInterface\\AddOns\\AtlasLoot\\GUI\\ItemFrame.lua:135: in function `Refresh'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.05.lua:125: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.05.lua:37: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:29>",
+			["session"] = 2673,
+			["counter"] = 6,
+		}, -- [90]
 		{
 			["message"] = "Interface\\AddOns\\ElvUI_Skullflower\\core\\install.lua:5: attempt to index field 'Combat' (a nil value)",
 			["time"] = "2017/10/04 22:10:02",
 			["locals"] = "E = <table> {\n GetTimeInfo = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:322\n privateVars = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\DataStore\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:145\n FormatMoney = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:366\n ExitVehicleShowFrames = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1150\n StaticPopup_EscapePressed = <function> defined @Interface\\AddOns\\ElvUI\\core\\staticpopups.lua:463\n CopyTable = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:682\n MassGuildKick = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:78\n SetMoversPositions = <function> defined @Interface\\AddOns\\ElvUI\\core\\movers.lua:469\n ScheduleTimer = <function> defined @Interface\\AddOns\\DataStore\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:92\n PriestColors = <table> {\n }\n RegisterModule = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1226\n SetupTheme = <function> defined @Interface\\AddOns\\ElvUI\\core\\install.lua:217\n media = <table> {\n }\n SetUpAnimGroup = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:11\n EnableBlizzardAddOns = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:206\n UIScale = <function> defined @Interface\\AddOns\\ElvUI\\core\\pixelperfect.lua:37\n db = <table> {\n }\n FramesOverlap = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:96\n SetEnabledState = <function> defined @Interface\\AddOns\\DataStore\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n Options = <table> {\n }\n Layout = <table> {\n }\n tDeleteItem = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:290\n LoadCommands = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:232\n HiddenFrame = <unnamed> {\n }\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\DataStore\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n UIFrameFade = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:229\n MinimapWidth = 149.99989318848\n StaticPopup_IsLastDisplayedFrame = <function> defined @Interface\\AddOns\\ElvUI\\core\\staticpopups.lua:524\n Truncate = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:77\n GetName = <function> defined @Interface\\AddOns\\DataStore\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n StaticPopup_OnHide = <function> defined @Interface\\AddOns\\ElvUI\\core\\staticpopups.lua:564\n RemoveTableDuplicates = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:726\n name = \"ElvUI\"\n WorldMap = <table> {\n }\n MinimapHeight = 149.99989318848\n Disable = <function> defined @Interface\\AddOns\\DataStore\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:345\n TimeColors = <table> {\n }\n SlideOut = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:174\n Unhook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:418\n Print = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:186\n Install = <function> defined @Interface\\AddOns\\ElvUI\\core\\install.lua:848\n UnregisterObjectForVehicleLock = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1181\n LockedCVars = <table> {\n }\n TimeFormats = <table> {\n }\n RGBToHex = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:82\n RequestBGInfo = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:428\n HealingClasses = <table> {\n }\n Tutorials = <function> defined @Interface\\AddOns\\ElvUI\\core\\tutorials.lua:115\n UpdateNudgeFrame = <function> defined @Interface\\AddOns\\ElvUI\\core\\config.lua:189\n GetCPUImpact = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:124\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\DataStore\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n ProfileTableToPluginFormat = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:810\n Blizzard = <table> {\n }\n wowbuild = 25195\n RegisteredInitialModules = <table> {\n }\n EnableModule = <function> defined @Interface\\AddOns\\DataStore\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n IterateEmbeds = <function> defined @Interface\\AddOns\\DataStore\\libs\\AceAddon-3.0\\Ace",
 			["stack"] = "Interface\\AddOns\\ElvUI_Skullflower\\core\\install.lua:5: in main chunk",
-			["session"] = 2660,
-			["counter"] = 870,
-		}, -- [89]
-		{
-			["message"] = "[string \"--[[ Error in ' Ghost in the mist' ]]return...\"]:5: attempt to perform arithmetic on local 'stacks' (a nil value)",
-			["time"] = "2017/10/06 17:05:03",
-			["locals"] = "output = nil\nstacks = 0\nstacks = nil\n(*temporary) = 4\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"player\"\n(*temporary) = \"Ghost in the Mist\"\n(*temporary) = \"attempt to perform arithmetic on local 'stacks' (a nil value)\"\n",
-			["stack"] = "[string \"--[[ Error in ' Ghost in the mist' ]]return...\"]:5: in function <[string \"--[[ Error in ' Ghost in the mist' ]]return...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:392: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.4.23.lua:3364: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3360>",
-			["session"] = 2660,
-			["counter"] = 5904,
-		}, -- [90]
+			["session"] = 2673,
+			["counter"] = 883,
+		}, -- [91]
 	},
 }

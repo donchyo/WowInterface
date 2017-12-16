@@ -12,16 +12,16 @@ Omen3DB = {
 		["Krixicx - Shattered Hand"] = "Krixicx - Shattered Hand",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Krixikin - Grim Batol"] = "Krixidk - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Krixidh - Grim Batol"] = "Krixidk - Grim Batol",
+		["Zetiz - Grim Batol"] = "Krixidk - Grim Batol",
 		["Donch - Grim Batol"] = "Krixidk - Grim Batol",
-		["Zolution - Grim Batol"] = "Krixidk - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixidk - Grim Batol",
 		["Kriximonk - Grim Batol"] = "Krixidk - Grim Batol",
 		["Nyrith - Grim Batol"] = "Krixidk - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixidk - Grim Batol",
+		["Zolution - Grim Batol"] = "Krixidk - Grim Batol",
 		["Zuriz - Grim Batol"] = "Krixidk - Grim Batol",
-		["Zetiz - Grim Batol"] = "Krixidk - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidk - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Krixikin - Grim Batol"] = "Krixidk - Grim Batol",
 	},
 	["profiles"] = {
 		["Krixiyo - Twisting Nether"] = {
@@ -116,9 +116,9 @@ Omen3DB = {
 			["PositionY"] = 307.000122070313,
 			["PositionW"] = 215.110992431641,
 			["Shown"] = false,
-			["VGrip1"] = 91.4221717834473,
-			["PositionX"] = 1377.27893066406,
 			["PositionH"] = 154.000091552734,
+			["PositionX"] = 1377.27893066406,
+			["VGrip1"] = 91.4221717834473,
 		},
 		["DRUID"] = {
 			["PositionX"] = 753.333435058594,
@@ -142,15 +142,14 @@ Omen3DB = {
 			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
 		},
-		["Krixikin - Grim Batol"] = {
-			["Shown"] = false,
-			["PositionY"] = 555.000061035156,
-			["PositionX"] = 740.833374023438,
+		["MONK"] = {
+			["PositionX"] = 753.333435058594,
+			["PositionY"] = 521.000061035156,
 		},
-		["Donchyo - Shattered Hand"] = {
-			["Shown"] = false,
-			["PositionY"] = 324.777587890625,
-			["PositionX"] = 1430.61181640625,
+		["Gnomalock - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 358.555511474609,
+			["PositionX"] = 1488.38977050781,
 			["PositionH"] = 82.0000076293945,
 		},
 		["Zolution - Grim Batol"] = {
@@ -159,20 +158,8 @@ Omen3DB = {
 			["PositionX"] = 0,
 			["PositionH"] = 82.0000305175781,
 		},
-		["Zetiz - Grim Batol"] = {
-			["Shown"] = true,
-			["PositionY"] = 787.888977050781,
-			["PositionX"] = 0,
-			["PositionH"] = 82.0000305175781,
-		},
-		["Donch - Grim Batol"] = {
-			["Shown"] = true,
-			["PositionY"] = 700.777404785156,
-			["PositionX"] = 2.16646552085876,
-			["PositionH"] = 82.0000305175781,
-		},
-		["Kriximonk - Grim Batol"] = {
-			["Shown"] = true,
+		["Lilgaykrixi - Kazzak"] = {
+			["Shown"] = false,
 			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
 		},
@@ -182,10 +169,22 @@ Omen3DB = {
 			["PositionX"] = 753.333435058594,
 			["PositionH"] = 82.0000686645508,
 		},
-		["Lilgaykrixi - Kazzak"] = {
-			["Shown"] = false,
+		["Kriximonk - Grim Batol"] = {
+			["Shown"] = true,
 			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
+		},
+		["Donch - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 700.777404785156,
+			["PositionX"] = 2.16646552085876,
+			["PositionH"] = 82.0000305175781,
+		},
+		["Zetiz - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 787.888977050781,
+			["PositionX"] = 0,
+			["PositionH"] = 82.0000305175781,
 		},
 		["Zuriz - Grim Batol"] = {
 			["Shown"] = true,
@@ -193,15 +192,16 @@ Omen3DB = {
 			["PositionX"] = 740.833374023438,
 			["PositionH"] = 82.0000076293945,
 		},
-		["Gnomalock - Grim Batol"] = {
-			["Shown"] = true,
-			["PositionY"] = 358.555511474609,
-			["PositionX"] = 1488.38977050781,
+		["Donchyo - Shattered Hand"] = {
+			["Shown"] = false,
+			["PositionY"] = 324.777587890625,
+			["PositionX"] = 1430.61181640625,
 			["PositionH"] = 82.0000076293945,
 		},
-		["MONK"] = {
-			["PositionX"] = 753.333435058594,
-			["PositionY"] = 521.000061035156,
+		["Krixikin - Grim Batol"] = {
+			["Shown"] = false,
+			["PositionY"] = 555.000061035156,
+			["PositionX"] = 740.833374023438,
 		},
 	},
 }

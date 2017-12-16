@@ -82,6 +82,15 @@ function NOP:ButtonSkin(button,skin) -- skin or restore button look
     button.isSkinned = nil
   end
 end
+function NOP:ButtonReputation(tooltip,func)
+  if not (tooltip and tooltip.GetItem) then return end
+  if (func == "SetItemByID") and (OHC ~= nil) and OrderHallMissionFrame and OrderHallMissionFrame:IsVisible() then return end -- OHC have own tooltip for reward with reputation item
+  local name = tooltip:GetItem(); if not name then return end
+  local fID = NOP.T_REPS[name]; if not fID then return end
+  local _,_,level=GetFactionInfoByID(fID); if not level then return end
+  tooltip:AddLine(_G['FACTION_STANDING_LABEL' .. level])
+  tooltip:Show()
+end
 function NOP:ButtonOnEnter(button) -- show tooltip
   if self:inCombat() then return; end
   if GetCVar("UberTooltips") == "1" then
@@ -98,23 +107,7 @@ function NOP:ButtonOnEnter(button) -- show tooltip
   else
     GameTooltip:SetText(BROWSE_NO_RESULTS)
   end
-  if WoWBox and (GameTooltip:NumLines() > 2) then
-    local onuse = GameTooltipTextLeft3:GetText()
-    if onuse then
-      local faction = string.match(string.lower(onuse),"reputation with (.+)[.]")
-      if faction then
-        local factionID = NOP.FACTION_TABLE[string.gsub(faction,"the ","")]
-        local standing = "Relations not defined!"
-        if factionID then
-          local name, _, reaction = GetFactionInfoByID(factionID)
-          if name then standing = _G['FACTION_STANDING_LABEL'..reaction] end
-        end
-        GameTooltip:AddLine("Standing: " .. standing)
-      end
-    end
-  else
-    GameTooltip:AddLine(" ")
-  end
+  GameTooltip:AddLine(" ")
   GameTooltip:AddLine(private.MOUSE_LB .. private.CLICK_OPEN_MSG,0,1,0)
   GameTooltip:AddLine(private.MOUSE_RB .. private.CLICK_SKIP_MSG,0,1,0)
   GameTooltip:AddLine(private.MOUSE_RB .. private.CLICK_BLACKLIST_MSG)

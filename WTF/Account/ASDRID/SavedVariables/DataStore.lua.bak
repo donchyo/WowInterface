@@ -73,9 +73,9 @@ DataStoreDB = {
 			["Default.Aggra (Português).Krixiswag"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Grim Batol.Kriximonk"] = {
-				["faction"] = "Alliance",
+			["Default.Aggra (Português).Spacegoatx"] = {
 				["guildName"] = "Hoonigans",
+				["faction"] = "Alliance",
 			},
 			["Default.Shattered Hand.Donch"] = {
 				["faction"] = "Alliance",
@@ -131,9 +131,9 @@ DataStoreDB = {
 			["Default.Blackmoore.Krixiyo"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Aggra (Português).Spacegoatx"] = {
-				["guildName"] = "Hoonigans",
+			["Default.Grim Batol.Kriximonk"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Hoonigans",
 			},
 		},
 		["ShortToLongRealmNames"] = {

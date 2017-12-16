@@ -1172,7 +1172,7 @@
 	function _detalhes:InitializeRaidHistoryWindow()
 		local DetailsRaidHistoryWindow = CreateFrame ("frame", "DetailsRaidHistoryWindow", UIParent)
 		DetailsRaidHistoryWindow.Frame = DetailsRaidHistoryWindow
-		DetailsRaidHistoryWindow.__name = "Statistics"
+		DetailsRaidHistoryWindow.__name = Loc ["STRING_STATISTICS"]
 		DetailsRaidHistoryWindow.real_name = "DETAILS_STATISTICS"
 		DetailsRaidHistoryWindow.__icon = [[Interface\PvPRankBadges\PvPRank08]]
 		DetailsPluginContainerWindow.EmbedPlugin (DetailsRaidHistoryWindow, DetailsRaidHistoryWindow, true)
@@ -1192,7 +1192,7 @@
 			end
 			
 			DetailsRaidHistoryWindow.Initialized = true
-		
+			
 			local f = DetailsRaidHistoryWindow or CreateFrame ("frame", "DetailsRaidHistoryWindow", UIParent) --, "ButtonFrameTemplate"
 			f:SetPoint ("center", UIParent, "center")
 			f:SetFrameStrata ("HIGH")
@@ -1228,9 +1228,9 @@
 				titlebar:SetBackdropBorderColor (0, 0, 0, 1)
 				
 			--> menu title
-				local titleLabel = _detalhes.gump:NewLabel (titlebar, titlebar, nil, "titulo", "Statistics", "GameFontHighlightLeft", 12, {227/255, 186/255, 4/255})
+				local titleLabel = _detalhes.gump:NewLabel (titlebar, titlebar, nil, "titulo", "Details! " .. Loc ["STRING_STATISTICS"], "GameFontNormal", 12) --{227/255, 186/255, 4/255}
 				titleLabel:SetPoint ("center", titlebar , "center")
-				titleLabel:SetPoint ("top", titlebar , "top", 0, -5)
+				titleLabel:SetPoint ("top", titlebar , "top", 0, -4)
 				
 			--> close button
 				f.Close = CreateFrame ("button", "$parentCloseButton", f)
@@ -1254,7 +1254,7 @@
 				insets = {left = 0, right = 0, top = 0, bottom = 0}, edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize=1})
 				tutorialFrame:SetBackdropColor (0, 0, 0, 1)
 				
-				tutorialFrame.Title = _detalhes.gump:CreateLabel (tutorialFrame, Loc ["STRING_MODE_OPENGUILDDAMAGERANK"], 12, "orange")
+				tutorialFrame.Title = _detalhes.gump:CreateLabel (tutorialFrame, "Statistics" , 12, "orange") --curse localization isn't adding new strings (and I deleted the old one)
 				tutorialFrame.Title:SetPoint ("top", tutorialFrame, "top", 0, -5)
 				
 				tutorialFrame.Desc = _detalhes.gump:CreateLabel (tutorialFrame, Loc ["STRING_GUILDDAMAGERANK_TUTORIAL_DESC"], 12)
@@ -1289,6 +1289,8 @@
 			div:SetPoint ("topleft", f, "topleft", 180, -64)
 			div:SetHeight (574)
 			
+			--gradient
+			--[=[
 			local blackdiv = f:CreateTexture (nil, "artwork")
 			blackdiv:SetTexture ([[Interface\ACHIEVEMENTFRAME\UI-Achievement-HorizontalShadow]])
 			blackdiv:SetVertexColor (0, 0, 0)
@@ -1304,6 +1306,7 @@
 			blackdiv:SetPoint ("topleft", f, "topleft", 0, 0)
 			blackdiv:SetPoint ("bottomleft", f, "bottomleft", 0, 0)
 			blackdiv:SetWidth (200)
+			--]=]
 			
 			--select history or guild rank
 			local options_switch_template = _detalhes.gump:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE")

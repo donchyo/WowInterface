@@ -1,4 +1,11 @@
 -- Revisions:
+--[[<p>08.24 14.12.2017</p>
+<ul>
+<li>Added Carefully Hidden Muffin, Krokul Armor Set, Demon's Soulstone and Awoken Titan Essence.</li>
+<li>Now are shown standings for Legion reputation in tooltip for proper tokens. When there is installed Order Hall Commander add-on then in tooltip at mission table is NOP standing disabled.</li>
+<li>Legion reputation tokens optimized, now all using pattern matching.</li>
+</ul>
+]]
 --[[<p>08.22 04.12.2017</p>
 <ul>
 <li>Mana Crystal and Ancient Mana Crystal as items not pattern.</li>

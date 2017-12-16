@@ -12,11 +12,11 @@ SunnArt3DB = {
 		["Bawsie - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

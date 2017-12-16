@@ -27,6 +27,14 @@ Bagnon_Sets = {
 	["glowQuality"] = true,
 	["mineColor"] = {
 	},
+	["glowSets"] = false,
+	["refrigeColor"] = {
+	},
+	["displayGems"] = true,
+	["reagentColor"] = {
+	},
+	["colorSlots"] = true,
+	["displayGuildbank"] = true,
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -65,22 +73,22 @@ Bagnon_Sets = {
 			},
 			["enabled"] = true,
 			["reverseBags"] = true,
-			["color"] = {
-			},
+			["actPanel"] = false,
 			["bagFrame"] = false,
 			["money"] = true,
-			["bagBreak"] = false,
 			["alpha"] = 1,
-			["broker"] = false,
-			["y"] = -99.2222900390625,
+			["itemScale"] = 1,
+			["showBags"] = true,
+			["bagBreak"] = false,
 			["x"] = -49.99853515625,
 			["search"] = true,
-			["showBags"] = true,
+			["broker"] = false,
 			["reverseSlots"] = true,
+			["y"] = -99.2222900390625,
 			["hiddenRules"] = {
 			},
-			["itemScale"] = 1,
-			["actPanel"] = false,
+			["color"] = {
+			},
 		},
 		["vault"] = {
 			["rules"] = {
@@ -184,19 +192,11 @@ Bagnon_Sets = {
 			},
 			["color"] = {
 			},
-			["borderColor"] = {
-			},
+			["x"] = 95,
 			["hiddenRules"] = {
 			},
-			["x"] = 95,
+			["borderColor"] = {
+			},
 		},
 	},
-	["displayGuildbank"] = true,
-	["displayGems"] = true,
-	["reagentColor"] = {
-	},
-	["colorSlots"] = true,
-	["refrigeColor"] = {
-	},
-	["glowSets"] = false,
 }

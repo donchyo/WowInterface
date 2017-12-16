@@ -58,8 +58,8 @@ DataStore_AuctionsDB = {
 				["lastVisitDate"] = "2016/10/13 23:38",
 			},
 			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1512582962,
-				["lastVisitDate"] = "2017/12/06 18:56",
+				["lastUpdate"] = 1513388385,
+				["lastVisitDate"] = "2017/12/16 02:39",
 			},
 			["Default.Shattered Hand.Donch"] = {
 				["lastUpdate"] = 1430014273,
@@ -82,8 +82,8 @@ DataStore_AuctionsDB = {
 				["lastVisitDate"] = "2015/12/27 03:54",
 			},
 			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1512257651,
-				["lastVisitDate"] = "2017/12/03 00:34",
+				["lastUpdate"] = 1513373637,
+				["lastVisitDate"] = "2017/12/15 22:33",
 			},
 			["Default.Grim Batol.Gnomalock"] = {
 				["lastUpdate"] = 1502220728,

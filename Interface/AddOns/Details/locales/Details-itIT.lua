@@ -170,6 +170,8 @@ if not L then return end
 --Translation missing 
 -- L["STRING_COOLTIP_NOOPTIONS"] = ""
 --Translation missing 
+-- L["STRING_CREATEAURA"] = ""
+--Translation missing 
 -- L["STRING_CRITICAL_HITS"] = ""
 --Translation missing 
 -- L["STRING_CRITICAL_ONLY"] = ""
@@ -662,8 +664,6 @@ L["STRING_MINITUTORIAL_OPTIONS_PANEL6"] = "Selezionare qui che finestra che si d
 -- L["STRING_MODE_GROUP"] = ""
 --Translation missing 
 -- L["STRING_MODE_OPENFORGE"] = ""
---Translation missing 
--- L["STRING_MODE_OPENGUILDDAMAGERANK"] = ""
 --Translation missing 
 -- L["STRING_MODE_PLUGINS"] = ""
 --Translation missing 
@@ -2473,11 +2473,15 @@ L["STRING_MINITUTORIAL_OPTIONS_PANEL6"] = "Selezionare qui che finestra che si d
 --Translation missing 
 -- L["STRING_SPELL_INTERRUPTED"] = ""
 --Translation missing 
+-- L["STRING_SPELLLIST"] = ""
+--Translation missing 
 -- L["STRING_SPELLS"] = ""
 --Translation missing 
 -- L["STRING_SPIRIT_LINK_TOTEM"] = ""
 --Translation missing 
 -- L["STRING_SPIRIT_LINK_TOTEM_DESC"] = ""
+--Translation missing 
+-- L["STRING_STATISTICS"] = ""
 --Translation missing 
 -- L["STRING_STATUSBAR_NOOPTIONS"] = ""
 --Translation missing 

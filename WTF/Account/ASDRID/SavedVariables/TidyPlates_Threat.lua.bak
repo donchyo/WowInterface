@@ -118,13 +118,13 @@ TidyPlatesThreatDB = {
 				["index"] = 3,
 			},
 		},
-		["Krixi - Grim Batol"] = {
+		["Nyrith - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 66,
-				["role"] = "TANK",
-				["index"] = 2,
-				["name"] = "Protection",
+				["id"] = 105,
+				["role"] = "HEALER",
+				["name"] = "Restoration",
+				["index"] = 4,
 			},
 		},
 		["Daimtårta - Aggra (Português)"] = {
@@ -217,13 +217,13 @@ TidyPlatesThreatDB = {
 				["index"] = 1,
 			},
 		},
-		["Nyrith - Grim Batol"] = {
+		["Krixi - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 105,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 4,
+				["id"] = 66,
+				["role"] = "TANK",
+				["index"] = 2,
+				["name"] = "Protection",
 			},
 		},
 		["Bawsi - Aggra (Português)"] = {
@@ -277,7 +277,7 @@ TidyPlatesThreatDB = {
 		["Lovérocket - Aggra (Português)"] = "Default",
 		["Lòverocket - Aggra (Português)"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
@@ -288,7 +288,7 @@ TidyPlatesThreatDB = {
 		["Donch - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
 		["Bawsi - Aggra (Português)"] = "Default",
 		["Greenzuriz - Aggra (Português)"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
@@ -593,6 +593,17 @@ TidyPlatesThreatDB = {
 			},
 			["cache"] = {
 			},
+			["text"] = {
+				["full"] = true,
+			},
+			["questWidget"] = {
+				["ON"] = false,
+			},
+			["tapHealthbarColor"] = {
+				["r"] = 0.501960784313726,
+				["g"] = 0.501960784313726,
+				["b"] = 0,
+			},
 			["auraWidget"] = {
 				["allow"] = {
 					nil, -- [1]
@@ -600,17 +611,6 @@ TidyPlatesThreatDB = {
 					"Binding Shot", -- [3]
 				},
 				["mode"] = "allMine",
-			},
-			["text"] = {
-				["full"] = true,
-			},
-			["tapHealthbarColor"] = {
-				["r"] = 0.501960784313726,
-				["g"] = 0.501960784313726,
-				["b"] = 0,
-			},
-			["questWidget"] = {
-				["ON"] = false,
 			},
 		},
 		["Default"] = {
