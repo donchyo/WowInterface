@@ -1,4 +1,11 @@
 -- Revisions:
+--[[<p>08.26 28.12.2017</p>
+<ul>
+<li>Ability to filter items when reputation with Legion faction is Exalted. Filtering for other pre Legion reputation tokens are not implemented yet.</li>
+<li>Two new events hook for incoming items ITEM_PUSH and CHAT_MSG_LOOT.</li>
+<li>Caching patterns is now more patient to fetch items from server to local cache, it should take some time until all items are recognized and placed on button.</li>
+</ul>
+]]
 --[[<p>08.24 14.12.2017</p>
 <ul>
 <li>Added Carefully Hidden Muffin, Krokul Armor Set, Demon's Soulstone and Awoken Titan Essence.</li>

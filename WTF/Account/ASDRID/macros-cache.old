@@ -54,6 +54,10 @@ VER 3 000000000000038B "DUMB EYE" "INV_MISC_QUESTIONMARK"
 /CAST Judgment
 /targetlasttarget
 END
+VER 3 000000000000038C "Dungoens pull 3" "132311"
+#showtooltip none
+/pull 3
+END
 VER 3 0000000000000383 "enchanting" "INV_Misc_QuestionMark"
 /run C_TradeSkillUI.CraftRecipe(TradeSkillFrame.DetailsFrame.selectedRecipeID)
 /use Enchanting Vellum

@@ -29,11 +29,9 @@ AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
 	["GUI"] = {
 		["selected"] = {
-			"AtlasLoot_WrathoftheLichKing", -- [1]
-			"Naxxramas", -- [2]
-			nil, -- [3]
-			1, -- [4]
-			0, -- [5]
+			[5] = 0,
+			[2] = "TheArcway",
+			[4] = 1,
 		},
 		["point"] = {
 			[3] = "CENTER",

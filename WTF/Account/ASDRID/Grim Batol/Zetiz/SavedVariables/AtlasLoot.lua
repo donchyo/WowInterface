@@ -10,22 +10,6 @@ AtlasLootCharDB = {
 		},
 		["shown"] = false,
 	},
-	["GUI"] = {
-		["selected"] = {
-			"AtlasLoot_Collections", -- [1]
-			"DUNGEONSETS", -- [2]
-			nil, -- [3]
-			1, -- [4]
-			0, -- [5]
-		},
-		["point"] = {
-			"RIGHT", -- [1]
-			nil, -- [2]
-			"RIGHT", -- [3]
-			-155.153884887695, -- [4]
-			-8.5676965713501, -- [5]
-		},
-	},
 	["QuickLootFrame"] = {
 		["point"] = {
 			"LEFT", -- [1]
@@ -36,6 +20,20 @@ AtlasLootCharDB = {
 		},
 	},
 	["__addonrevision"] = 4325,
+	["GUI"] = {
+		["selected"] = {
+			[5] = 0,
+			[2] = "TheArcway",
+			[4] = 1,
+		},
+		["point"] = {
+			"RIGHT", -- [1]
+			nil, -- [2]
+			"RIGHT", -- [3]
+			-155.153884887695, -- [4]
+			-8.5676965713501, -- [5]
+		},
+	},
 	["minimap"] = {
 		["shown"] = false,
 		["minimapPos"] = 207.626338474989,

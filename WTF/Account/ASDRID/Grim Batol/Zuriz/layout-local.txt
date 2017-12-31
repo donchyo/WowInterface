@@ -6,13 +6,6 @@ X: -118
 Y: -15
 W: 365
 H: 200
-Frame: DetailsPlayerDetailsWindow
-FrameLevel: 1
-Anchor: CENTER
-X: -47
-Y: -1
-W: 790
-H: 454
 Frame: PawnUIFrame
 FrameLevel: 1
 Anchor: RIGHT
@@ -27,3 +20,10 @@ X: 0
 Y: 184
 W: 370
 H: 110
+Frame: DetailsPlayerDetailsWindow
+FrameLevel: 1
+Anchor: CENTER
+X: -47
+Y: -1
+W: 790
+H: 454

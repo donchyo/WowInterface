@@ -43,6 +43,7 @@ function NOP:ProfileLoad() -- LUA stored variables load and init
       ["SkipOnError"] = true,
       ["HideInCombat"] = false,
       ["ShowReputation"] = true,
+      ["SkipExalted"] = false,
     },
   }
 
@@ -242,6 +243,15 @@ function NOP:OptionsLoad() -- load options for UI config
             -- width = "full",    
             set = function(info,val) NOP.DB["ShowReputation"] = val; end,
             get = function(info) return NOP.DB.ShowReputation end,
+          },
+          SkipExalted = {
+            name = private.L["SKIL_EXALTED"],
+            order = 20,
+            desc = private.L["SKIL_EXALTED_HELP"],
+            type = "toggle",
+            -- width = "full",    
+            set = function(info,val) NOP.DB["SkipExalted"] = val; wipe(NOP.T_CHECK); end,
+            get = function(info) return NOP.DB.SkipExalted end,
           },
         },
       },

@@ -1,19 +1,18 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0214,
+	["LastVersion"] = 2.0217,
 	["LastPlayerFullName"] = "Zolution-Grim Batol",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128868] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 71,
+					["ItemLevel"] = 77,
 					["Type"] = "Holy",
 				}, -- [1]
 				{
-					["ItemLevel"] = 67,
+					["ItemLevel"] = 70,
 					["Type"] = "Shadow",
 				}, -- [2]
 				{
@@ -34,7 +33,7 @@ PawnOptions = {
 					["Type"] = "Blood",
 				}, -- [2]
 				{
-					["ItemLevel"] = 52,
+					["ItemLevel"] = 62,
 					["Type"] = "Shadow",
 				}, -- [3]
 			},
@@ -47,7 +46,7 @@ PawnOptions = {
 					["Type"] = "Holy",
 				}, -- [1]
 				{
-					["ItemLevel"] = 52,
+					["ItemLevel"] = 55,
 					["Type"] = "Life",
 				}, -- [2]
 				{
@@ -58,6 +57,7 @@ PawnOptions = {
 			["Name"] = "T'uure, Beacon of the Naaru",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PRIEST",

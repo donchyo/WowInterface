@@ -1,5 +1,11 @@
-changeset:   693:a690bf789019
+changeset:   694:a3424c8730ec
 tag:         tip
+user:        Tercio
+date:        Fri Dec 22 09:09:34 2017 -0200
+summary:     - Create Aura and API window moved to the new plugin window.
+
+
+changeset:   693:a690bf789019
 user:        Tercio
 date:        Fri Dec 15 08:29:20 2017 -0200
 summary:     - Polish on the Custom Display and Encounter Details windows.

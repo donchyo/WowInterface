@@ -27,11 +27,9 @@ AtlasLootCharDB = {
 	["__addonrevision"] = 4325,
 	["GUI"] = {
 		["selected"] = {
-			"AtlasLoot_Collections", -- [1]
-			"TIERSETS_BYCLASS", -- [2]
-			12, -- [3]
-			1, -- [4]
-			3, -- [5]
+			[5] = 0,
+			[2] = "TheArcway",
+			[4] = 1,
 		},
 		["point"] = {
 			"RIGHT", -- [1]

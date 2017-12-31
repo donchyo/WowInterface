@@ -717,7 +717,7 @@ function R:PrepareDefaults()
 			[48809] = L["Puscilla"],
 			[48810] = L["Vrax'thul"],
 		},
-		sourceText = format(L["Has a chance to drop from either %s or %s in Antoran Wastes. Each of them can be looted once per day."], L["Puscilla"], L["Vrax'thul"]),
+		sourceText = format(L["Has a chance to drop from either %s or %s on Argus. Each can be looted once per day."], L["Puscilla"], L["Vrax'thul"]),
 		coords = {
 			{ m=1171, x = .6442, y = .2035, q=48809, n=L["Puscilla"]},
 			{ m=1171, x = .5306, y = .3612, q=48810, n=L["Vrax'thul"]},
@@ -804,8 +804,67 @@ function R:PrepareDefaults()
 			{ m = 1170, x = .4355, y = .4919, n = L["Sabuul"] },
 		},
 	 },	 
+	["Pond Nettle"] = {
+		cat = LEGION,
+		type = MOUNT,
+		method = FISHING,
+		name = L["Pond Nettle"],
+		zones = { "1171" },
+		spellId = 253711,
+		itemId = 152912,
+		chance = 2000,
+		requiresPool = false,
+	},
+	["Avenging Felcrusher"] = {
+		cat = LEGION,
+		type = MOUNT,
+		method = USE,
+		name = L["Avenging Felcrusher"],
+		spellId = 254259,
+		itemId = 153044,
+		items = { 152923 },
+		chance = 20,
+	},
+	["Blessed Felcrusher"] = {
+		cat = LEGION,
+		type = MOUNT,
+		method = USE,
+		name = L["Blessed Felcrusher"],
+		spellId = 254258,
+		itemId = 153043,
+		items = { 152923 },
+		chance = 20,
+	},
+	["Glorious Felcrusher"] = {
+		cat = LEGION,
+		type = MOUNT,
+		method = USE,
+		name = L["Glorious Felcrusher"],
+		spellId = 254069,
+		itemId = 153042,
+		items = { 152923 },
+		chance = 20,
+	},
 	
-
+	-- 7.3.5 (Antorus)
+	
+	["Antoran Charhound"] = {
+		cat = LEGION,
+		type = MOUNT,
+		method = BOSS,
+		name = L["Antoran Charhound"],
+		spellId = 253088,
+		itemId = 152816,
+		npcs = { 99999 },
+		tooltipNpcs = { 126915, 126916 },
+		-- Instance difficulties?
+		chance = 100,
+		groupSize = 10, -- Eh?
+		equalOdds = true,
+		statisticId = { 12118, 11957, 11958, 11959, },
+		coords = { {m=1188,f=1,i=true} },
+	},
+	
 	--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 					-- MOUNTS: Requires a group (some of these may be soloable by certain classes, but not in general)
 					--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -996,8 +1055,8 @@ function R:PrepareDefaults()
      --["Sting Ray Pup"] =                                 { cat = LEGION, type = PET, method = COLLECTION, name = L["Sting Ray Pup"], spellId = 217218, itemId = 138810, creatureId = 109216, collectedItemId = { 138777 }, chance = 50, },
 					-- 7.1
 					["Blessed Seed"] =																															   { cat = LEGION, type = PET, method = NPC, name = L["Blessed Seed"], itemId = 142091, spellId = 229098, creatureId = 115143, npcs = { 32906 }, chance = 10, statisticId = {2864, 3258}, doNotUpdateToHighestStat = true,  coords = {{m=529,x=53.2,y=22.3,i=true}},},
-					["Call of the Frozen Blade"] =										            { cat = LEGION, type = PET, method = NPC, name = L["Call of the Frozen Blade"], itemId = 142099, spellId = 229106, creatureId = 115152, npcs = { 36597 }, chance = 10,  statisticId = {4653, 4686, 4687, 4688}, doNotUpdateToHighestStat = true,  coords = {{m=604,x=49.6,y=52.5,i=true}},},
-					["Drudge Remains"] =																														  { cat = LEGION, type = PET, method = NPC, name = L["Drudge Remains"], itemId = 142098, spellId = 229105, creatureId = 115150, npcs = { 36597 }, chance = 10,  statisticId = {4653, 4686, 4687, 4688}, doNotUpdateToHighestStat = true,  coords = {{m=604,x=49.6,y=52.5,i=true}},},
+					["Call of the Frozen Blade"] =										            { cat = LEGION, type = PET, method = NPC, name = L["Call of the Frozen Blade"], itemId = 142099, spellId = 229106, creatureId = 115152, npcs = { 36597 }, chance = 10,  statisticId = {4686, 4688}, doNotUpdateToHighestStat = true,  coords = {{m=604,x=49.6,y=52.5,i=true}},},
+					["Drudge Remains"] =																														  { cat = LEGION, type = PET, method = NPC, name = L["Drudge Remains"], itemId = 142098, spellId = 229105, creatureId = 115150, npcs = { 36597 }, chance = 10,  statisticId = {4653, 4687}, doNotUpdateToHighestStat = true,  coords = {{m=604,x=49.6,y=52.5,i=true}},},
 					["Fragment of Frozen Bone"] =															        { cat = LEGION, type = PET, method = NPC, name = L["Fragment of Frozen Bone"], itemId = 142094, spellId = 229101, creatureId = 115146, npcs = { 36612 }, chance = 10,  coords = {{m=604,x=38.9,y=59.4,i=true}},},
 					["Giant Worm Egg"] =																													   { cat = LEGION, type = PET, method = NPC, name = L["Giant Worm Egg"], itemId = 142083, spellId = 229090, creatureId = 115135, npcs = { 34797 }, chance = 10,  coords = {{m=543,x=51.3,y=52.5,i=true}},},
 					["Glittering Ball of Yarn"] =										             { cat = LEGION, type = PET, method = NPC, name = L["Glittering Ball of Yarn"], itemId = 142089, spellId = 229096, creatureId = 115141, npcs = { 33515 }, chance = 10,  coords = {{m=529,x=51.3,y=57.2,i=true}},},
@@ -1036,8 +1095,8 @@ function R:PrepareDefaults()
 					["Severed Tentacle"] =                              { cat = LEGION, type = PET, method = BOSS, name = L["Severed Tentacle"], itemId = 152981, spellId = 253928, creatureId = 127954, npcs = { 99999 }, tooltipNpcs = { 56173 }, chance = 10,  statisticId = { 6167, 6168 }, doNotUpdateToHighestStat = true, coords = {{m=824,f=6,i=true}},},
 					["Smoldering Treat"] =                              { cat = LEGION, type = PET, method = BOSS, name = L["Smoldering Treat"], itemId = 152975, spellId = 253916, creatureId = 127947, npcs = { 99999 }, tooltipNpcs = { 53691 }, chance = 10, statisticId = { 5968, 5969 }, doNotUpdateToHighestStat = true, coords = {{m=800,x=49.3,y=44.3,f=0,i=true}},},
 					["Shadowy Pile of Bones"] =                         { cat = LEGION, type = PET, method = BOSS, name = L["Shadowy Pile of Bones"], itemId = 152968, spellId = 253799, creatureId = 127853, npcs = { 99999 }, tooltipNpcs = { 41376, 41270 }, chance = 10, statisticId = { 5565, 5566 }, doNotUpdateToHighestStat = true, coords = {{m=754,x=48,y=70.2,f=2,i=true}},},
-					["Strange Humming Crystal"] =                       { cat = LEGION, type = PET, method = USE, name = L["Strange Humming Crystal"], spellId = 226682, itemId = 141349, items = { 151470 }, chance = 100, creatureId = 113827, sourceText = L["The quest starter item for Wondrous Wisdomball"], coords = {{m=1014,x=33.6,y=48,n=L["Warmage Silva"],f=2}}, },
-	    ["Thistleleaf Adventurer"] =                        { cat = LEGION, type = PET, method = USE, name = L["Thistleleaf Adventurer"], spellId = 195369, itemId = 130167, items = { 151464 }, chance = 100, creatureId = 99389, coords = {{m=1018,x=54.6,y=73.2,n=L["Sylvia Hartshorn"]}}, },
+					["Strange Humming Crystal"] =                       { cat = LEGION, type = PET, method = USE, name = L["Strange Humming Crystal"], spellId = 226682, itemId = 141349, items = { 154909 }, chance = 100, creatureId = 113827, sourceText = L["The quest starter item for Wondrous Wisdomball"], coords = {{m=1014,x=33.6,y=48,n=L["Warmage Silva"],f=2}}, },
+	    ["Thistleleaf Adventurer"] =                        { cat = LEGION, type = PET, method = USE, name = L["Thistleleaf Adventurer"], spellId = 195369, itemId = 130167, items = { 154903 }, chance = 100, creatureId = 99389, coords = {{m=1018,x=54.6,y=73.2,n=L["Sylvia Hartshorn"]}}, },
 					["Twilight Summoning Portal"] =                     { cat = LEGION, type = PET, method = BOSS, name = L["Twilight Summoning Portal"], itemId = 152972, spellId = 253813, creatureId = 127859, npcs = { 99999 }, tooltipNpcs = { 43324 }, chance = 10, statisticId = { 5572, 5571 }, doNotUpdateToHighestStat = true, coords = {{m=758,x=73.4,75.4,f=2,i=true}},},
 					["Vibrating Stone"] =                               { cat = LEGION, type = PET, method = BOSS, name = L["Vibrating Stone"], itemId = 152977, spellId = 253924, creatureId = 127950, npcs = { 99999 }, tooltipNpcs = { 53494 }, chance = 10, statisticId = { 5972, 5973 }, doNotUpdateToHighestStat = true, coords = {{m=800,x=49.5,y=30.9,f=0,i=true}},},
 					["Zephyr's Call"] =                                 { cat = LEGION, type = PET, method = BOSS, name = L["Zephyr's Call"], itemId = 152973, spellId = 253816, creatureId = 127862, npcs = { 99999 }, tooltipNpcs = { 46753 }, chance = 10,  statisticId = { 5576, 5577 }, doNotUpdateToHighestStat = true, coords = {{m=773,i=true}},},
@@ -1140,14 +1199,18 @@ function R:PrepareDefaults()
 					-- Toys (Holiday)
 					["Blight Boar Microphone"] =                        { cat = HOLIDAY, type = ITEM, isToy = true, method = NPC, name = L["Blight Boar Microphone"], itemId = 151265, npcs = { 122899}, chance = 10, holidayTexture = CALENDAR_DARKMOONFAIRE, coords = {{m=974,x=65.6,y=67}}, questId = {47767} },
 					["Coin of Many Faces"] =                            { cat = HOLIDAY, type = ITEM, isToy = true, method = NPC, name = L["Coin of Many Faces"], itemId = 128807, npcs = { 96535, 96538, 96637, 96536}, chance = 100, holidayTexture = CALENDAR_HALLOWSEND, coords = {{m=473,x=40.6,y=79.4}}, },					
+					["Crashin' Thrashin' Flamer Controller"] =           { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Crashin' Thrashin' Flamer Controller"], itemId = 108632, items = { 116762 }, chance = 50, holidayTexture = CALENDAR_WINTERVEIL, questId = { 6983, 7043 }, coords = { {m=24,x=43.6,y=39.6} }, },
 					["Crashin' Thrashin' Flyer Controller"] =           { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Crashin' Thrashin' Flyer Controller"], itemId = 104318, items = { 116762 }, chance = 50, holidayTexture = CALENDAR_WINTERVEIL, questId = { 6983, 7043 }, coords = { {m=24,x=43.6,y=39.6} }, },
 					["Crashin' Thrashin' Racer Controller"] =           { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Crashin' Thrashin' Racer Controller"], itemId = 37710, items = { 116762 }, chance = 50, holidayTexture = CALENDAR_WINTERVEIL, questId = { 6983, 7043 }, coords = { {m=24,x=43.6,y=39.6} }, },
+					["Crashin' Thrashin' Shredder Controller"] =           { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Crashin' Thrashin' Shredder Controller"], itemId = 116763, items = { 116762 }, chance = 50, holidayTexture = CALENDAR_WINTERVEIL, questId = { 6983, 7043 }, coords = { {m=24,x=43.6,y=39.6} }, },
+					["Disposable Winter Veil Suits"] =                                     { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Disposable Winter Veil Suits"], itemId = 139337, items = { 116762 }, chance = 50, holidayTexture = CALENDAR_WINTERVEIL, questId = { 6983, 7043 }, coords = { {m=24,x=43.6,y=39.6} }, },
 					["Foot Ball"] =                                     { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Foot Ball"], itemId = 90888, items = { 116762 }, chance = 50, holidayTexture = CALENDAR_WINTERVEIL, questId = { 6983, 7043 }, coords = { {m=24,x=43.6,y=39.6} }, },
 					["Fuzzy Green Lounge Cushion"] =                    { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Fuzzy Green Lounge Cushion"], itemId = 116692, items = { 21271, 21270, 116762 }, chance = 4, sourceText = L["Available starting December 25th"], holidayTexture = CALENDAR_WINTERVEIL, questId = { 8788, 8767 }, christmasOnly = true, coords = { {m=321,x=49.1,y=78.2,h=true},{m=341,x=33.4,y=65.9,a=true}, }, },
 					["MiniZep Controller"] =                            { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["MiniZep Controller"], itemId = 46709, items = { 116762 }, chance = 50, holidayTexture = CALENDAR_WINTERVEIL, questId = { 6983, 7043 }, coords = { {m=24,x=43.6,y=39.6} }, },
      ["Moonfang Shroud"] =                               { cat = HOLIDAY, type = ITEM, isToy = true, method = NPC, name = L["Moonfang Shroud"], itemId = 101571, npcs = { 71992, }, chance = 5, holidayTexture = CALENDAR_DARKMOONFAIRE, coords = { {m=974,x=39.8,y=44.4} }, },
      ["Moonfang's Paw"] =                                { cat = HOLIDAY, type = ITEM, isToy = true, method = NPC, name = L["Moonfang's Paw"], itemId = 105898, npcs = { 71992, }, chance = 5, holidayTexture = CALENDAR_DARKMOONFAIRE, coords = { {m=974,x=39.8,y=44.4} }, },
 					["Pineapple Lounge Cushion"] =                      { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Pineapple Lounge Cushion"], itemId = 116689, items = { 21271, 21270, 116762 }, chance = 4, sourceText = L["Available starting December 25th"], holidayTexture = CALENDAR_WINTERVEIL, questId = { 8788, 8767 }, christmasOnly = true, coords = { {m=321,x=49.1,y=78.2,h=true},{m=341,x=33.4,y=65.9,a=true}, }, },
+					["Red Wooden Sled"] =                                     { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Red Wooden Sled"], itemId = 128776, items = { 116762 }, chance = 50, holidayTexture = CALENDAR_WINTERVEIL, questId = { 6983, 7043 }, coords = { {m=24,x=43.6,y=39.6} }, },					
 					["Sack of Spectral Spiders"] =                      { cat = HOLIDAY, type = ITEM, isToy = true, method = NPC, name = L["Sack of Spectral Spiders"], itemId = 128794, npcs = { 96323, }, chance = 8, questId = 39617, holidayTexture = CALENDAR_HALLOWSEND, coords = { zoneOverride = L["Draenor Garrison"], {m=971},{m=976}, }, },
 					["Safari Lounge Cushion"] =                         { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Safari Lounge Cushion"], itemId = 116690, items = { 21271, 21270, 116762 }, chance = 4, sourceText = L["Available starting December 25th"], holidayTexture = CALENDAR_WINTERVEIL, questId = { 8788, 8767 }, christmasOnly = true, coords = { {m=321,x=49.1,y=78.2,h=true},{m=341,x=33.4,y=65.9,a=true}, }, },
 					["Silver-Plated Turkey Shooter"] =                  { cat = HOLIDAY, type = ITEM, isToy = true, method = USE, name = L["Silver-Plated Turkey Shooter"], itemId = 116400, items = { 116404 }, chance = 33, holidayTexture = CALENDAR_PILGRIMSBOUNTY, coords = { {m=341,x=60,y=34.2,q=14048,a=true},{m=341,x=60,y=34.2,q=14051,a=true},{m=381,x=61.8,y=46.4,q=14054,a=true},{m=30,x=33.8,y=50.8,q=14055,a=true},{m=30,x=33.6,y=50.6,q=14053,a=true},{m=4,x=46.4,y=13.8,q=14061,h=true},{m=4,x=46.4,y=13.8,q=14062,h=true},{m=362,x=31,y=69.6,q=14060,h=true},{m=382,x=65.2,y=13.8,q=14058,h=true},{m=382,x=63.4,y=9,q=14059,h=true}, }, },
@@ -1209,6 +1272,36 @@ function R:PrepareDefaults()
 					["Unstable Powder Box"] =                           { cat = LEGION, type = ITEM, isToy = true, method = SPECIAL, name = L["Unstable Powder Box"], itemId = 141301, chance = 33, questId = 43943, coords = {{m=1033}} },
 					["Wisp in a Bottle"] =                              { cat = LEGION, type = ITEM, isToy = true, method = SPECIAL, name = L["Wisp in a Bottle"], itemId = 141306, chance = 33, questId = 43943, coords = {{m=1033}} },
 					["Pilfered Sweeper"] =                              { cat = LEGION, type = ITEM, isToy = true, method = SPECIAL, name = L["Pilfered Sweeper"], itemId = 147867, chance = 100, coords = {{m=1021,x=47.8,y=67.3}} },
+	
+	["Stormforged Vrykul Horn"] = {
+		cat = LEGION,
+		type = ITEM,
+		isToy = true,
+		method = USE,
+		name = L["Stormforged Vrykul Horn"],
+		itemId = 140160,
+		items = { 141069 },
+		chance = 33,
+	},
+	
+	-- 7.2 Toys
+
+	["Golden Hearthstone Card: Lord Jaraxxus"] = {
+		cat = LEGION,
+		type = ITEM,
+		isToy = true,
+		method = BOSS,
+		name = L["Golden Hearthstone Card: Lord Jaraxxus"],
+		itemId = 119211,
+		npcs = { 99999 },
+		tooltipNpcs = { 105503, 111022 }, -- Gul'dan / The Demon Within (Mythic only)
+		groupSize = 10,
+--		equalOdds = true, -- Not sure if this item is "push personal" loot? Leaving it for now...
+		chance = 275,
+		statisticId = { 10979, 10980, 10978 },
+		coords = { {m=1088,f=9,i=true} },
+	},
+	
 	-- 7.3 Toys
 
 	 ["Baarut the Brisk"] = {
@@ -1323,8 +1416,56 @@ function R:PrepareDefaults()
 			{ m = 1171, x = .6177, y = .6453, n = L["Wrath-Lord Yarez"] },
 		},
 	 },
-
-					-- Mount-related items (5.x)
+	 
+	  ["Sightless Eye"] = {
+		cat = LEGION,
+		type = ITEM,
+		isToy = true,
+		method = NPC,
+		name = L["Sightless Eye"],
+		itemId = 153293,
+		npcs = { 127706 },
+		chance = 10,
+		questId = 48971,
+		coords = {
+			{ m = 1171, x = .6503, y = .8231, n = L["Rezira the Seer"] },
+		},
+	 },
+	 
+	["Holy Lightsphere"] = {
+		cat = LEGION,
+		type = ITEM,
+		isToy = true,
+		method = USE,
+		name = L["Holy Lightsphere"],
+		itemId = 153182,
+		items = { 152923 },
+		chance = 8,
+	},
+		
+	["Barrier Generator"] = {
+		cat = LEGION,
+		type = ITEM,
+		isToy = true,
+		method = NPC,
+		name = L["Barrier Generator"],
+		itemId = 153183,
+		npcs = { 126865, 126866 },
+		chance = 50,
+		questId = { 48703, 48704 },
+		defeatAllQuests = true,
+		defeatSteps = {
+			[48703] = L["Vigilant Thanos"],
+			[48704] = L["Vigilant Kuro"],
+		},
+		sourceText = format(L["Has a chance to drop from either %s or %s on Argus. Each can be looted once per day."], L["Vigilant Thanos"], L["Vigilant Kuro"]),
+		coords = {
+			{ m = 1170, x = .6388, y = .6425, n = L["Vigilant Kuro"] },
+			{ m = 1170, x = .3632, y = .2371, n = L["Vigilant Thanos"] },
+		},
+	 },
+	
+		-- Mount-related items (5.x)
      ["Primal Egg"] =                                    { cat = MOP, type = ITEM, method = NPC, name = L["Primal Egg"], itemId = 94295, npcs = { 69983, 69991, 69992, 69993, 70004, 70005, 70006, 70007, 70008, 70009, 70010, 70011, 70012, 70013, 70014, 70015, 70016, 70017, 70018, 70019, 70020, 70021, }, chance = 100,  unique = true, sourceText = L["Dropped by dinosaurs on Isle of Giants Will hatch into one of three Primal Raptor mounts after three days."], coords = { {m=929} }, },
      ["Skyshard"] =                                      { cat = MOP, type = ITEM, method = ZONE, name = L["Skyshard"], spellId = 90655, itemId = 86547, zones = { "811" }, chance = 1000,  sourceText = L["Dropped by any mob in Vale of Eternal Blossoms (except minor mobs). 10 of these can be combined to pierce Alani's shield, allowing combat and a guaranteed drop of Reins of the Thundering Ruby Cloud Serpent."], coords = { {m=811} }, },
      

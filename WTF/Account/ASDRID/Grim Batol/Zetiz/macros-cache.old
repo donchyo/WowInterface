@@ -29,8 +29,6 @@ VER 3 0100000000000002 "sub" "INV_MISC_QUESTIONMARK"
 /cast Shadow Reflection
 /cast Shadow Dance
 END
-VER 3 010000000000000B "testing shit" "INV_MISC_QUESTIONMARK"
-END
 VER 3 0100000000000005 "TRICKS" "INV_MISC_QUESTIONMARK"
 #showtooltip tricks of the trade
 /cast [@mouseover, help, nodead][help,nodead][@focus,help,nodead]tricks of the trade

@@ -128,7 +128,7 @@ infBrewmaster: disabled
 infChi: disabled
 infMinimap: enabled
 TradeSkillMaster_ItemTracker: disabled
-DeathNote: disabled
+DeathNote: enabled
 Broker_Auditor: disabled
 Auditor2: disabled
 infDCBuyout: disabled
@@ -364,3 +364,10 @@ Skada_LeechBDKTabs: disabled
 Details_RaidInfo-TombOfSargeras: disabled
 PremadeGroupsFilter: enabled
 WorldQuestsList: enabled
+RaiderIO_DB_US_H: disabled
+RaiderIO_DB_US_A: disabled
+RaiderIO_DB_TW_H: disabled
+RaiderIO_DB_TW_A: disabled
+RaiderIO_DB_KR_H: disabled
+RaiderIO_DB_KR_A: disabled
+RaiderIO_DB_EU_H: disabled

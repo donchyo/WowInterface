@@ -1,33 +1,33 @@
 
 ElvCharacterDB = {
-	["ChatLog"] = {
-	},
-	["ChatEditHistory"] = {
-		" 915prot paladin > 940 moonkin on overall", -- [1]
-		"/p do you need that neck? :)(", -- [2]
-		"/p ty", -- [3]
-		" well", -- [4]
-		" its done atleast", -- [5]
-		" not according to mine", -- [6]
-		" seems good", -- [7]
-		" wowskolkarN?", -- [8]
-		" :D", -- [9]
-		" haha", -- [10]
-		" alla verkar få lite återfall då och då", -- [11]
-		" ja jo samma här hahahahahahahaha döda mig", -- [12]
-		" mjo", -- [13]
-		" fast frederik förtjänade det", -- [14]
-		" han var halvdansk", -- [15]
-		" vad gör du nu då?", -- [16]
-		" pluggar eller?", -- [17]
-		" whoa", -- [18]
-		" det låter ju iofs coolt", -- [19]
-		" mkt programering?", -- [20]
+	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
 		["Active"] = false,
 		["Health"] = 0,
 		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+	},
+	["ChatEditHistory"] = {
+		"/cw Twobad-Antonidas before was 34", -- [1]
+		" do you wanna do soem m+?", -- [2]
+		" ro do you have grp", -- [3]
+		" okay :", -- [4]
+		" :D", -- [5]
+		" but", -- [6]
+		" this trinket", -- [7]
+		" better than either of mine?", -- [8]
+		" |cffa335ee|Hitem:147006::::::::110:65::3:3:3561:1482:3528:::|h[Archive of Faith]|h|r|cffa335ee|Hitem:141482::::::::110:65::43:4:40:3573:1492:3528:::|h[Unstable Arcanocrystal]|h|r", -- [9]
+		" okay", -- [10]
+		" replacing", -- [11]
+		" archive", -- [12]
+		" fuck that trinket anyway", -- [13]
+		" lul", -- [14]
+		" i still have 14.7k crit", -- [15]
+		" so i guess thats fine", -- [16]
+		" missing gem in ches", -- [17]
+		"/g ya'll nerds", -- [18]
+		"/g kys", -- [19]
+		"/g bye", -- [20]
 	},
 }

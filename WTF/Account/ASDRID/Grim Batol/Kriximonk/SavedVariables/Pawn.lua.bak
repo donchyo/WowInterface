@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0214,
+	["LastVersion"] = 2.0217,
 	["LastPlayerFullName"] = "Kriximonk-Grim Batol",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
@@ -12,7 +12,7 @@ PawnOptions = {
 					["Type"] = "Wind",
 				}, -- [1]
 				{
-					["ItemLevel"] = 22,
+					["ItemLevel"] = 56,
 					["Type"] = "Iron",
 				}, -- [2]
 				{
@@ -25,11 +25,11 @@ PawnOptions = {
 		[128937] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 53,
+					["ItemLevel"] = 64,
 					["Type"] = "Frost",
 				}, -- [1]
 				{
-					["ItemLevel"] = 52,
+					["ItemLevel"] = 75,
 					["Type"] = "Life",
 				}, -- [2]
 				{

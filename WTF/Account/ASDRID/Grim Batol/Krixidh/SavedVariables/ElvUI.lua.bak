@@ -22,6 +22,6 @@ ElvCharacterDB = {
 		"/g i mean", -- [19]
 		"/g that dosent sound to bad then", -- [20]
 	},
-	["ChatLog"] = {
+	["ChatHistoryLog"] = {
 	},
 }

@@ -15,6 +15,8 @@ Bagnon_Sets = {
 	["players"] = {
 		["Grim Batol"] = {
 		},
+		["Shattered Hand"] = {
+		},
 	},
 	["gemColor"] = {
 	},
@@ -56,7 +58,7 @@ Bagnon_Sets = {
 				"contain/all", -- [24]
 				"misc/all", -- [25]
 			},
-			["point"] = "TOPRIGHT",
+			["point"] = "BOTTOMRIGHT",
 			["hiddenBags"] = {
 				[0] = false,
 			},
@@ -67,19 +69,18 @@ Bagnon_Sets = {
 			["reverseBags"] = true,
 			["color"] = {
 			},
-			["itemScale"] = 1,
 			["money"] = true,
+			["itemScale"] = 1,
+			["bagFrame"] = false,
 			["bagBreak"] = false,
+			["y"] = 72.888916015625,
+			["x"] = -45.5540771484375,
+			["search"] = true,
+			["broker"] = false,
+			["reverseSlots"] = true,
 			["hiddenRules"] = {
 			},
-			["broker"] = false,
-			["y"] = -99.2222900390625,
-			["x"] = -49.99853515625,
-			["search"] = true,
-			["showBags"] = true,
-			["reverseSlots"] = true,
 			["alpha"] = 1,
-			["bagFrame"] = false,
 			["actPanel"] = false,
 		},
 		["vault"] = {
@@ -117,41 +118,7 @@ Bagnon_Sets = {
 			},
 		},
 		["guild"] = {
-			["rules"] = {
-				"all", -- [1]
-				"all/all", -- [2]
-				"all/normal", -- [3]
-				"all/trade", -- [4]
-				"all/reagent", -- [5]
-				"equip", -- [6]
-				"equip/all", -- [7]
-				"equip/armor", -- [8]
-				"equip/weapon", -- [9]
-				"equip/trinket", -- [10]
-				"use", -- [11]
-				"use/all", -- [12]
-				"use/consume", -- [13]
-				"use/enhance", -- [14]
-				"trade", -- [15]
-				"trade/all", -- [16]
-				"trade/goods", -- [17]
-				"trade/gem", -- [18]
-				"trade/glyph", -- [19]
-				"trade/recipe", -- [20]
-				"quest", -- [21]
-				"misc", -- [22]
-			},
-			["borderColor"] = {
-			},
-			["color"] = {
-			},
-			["hiddenRules"] = {
-			},
-			["hiddenBags"] = {
-			},
-		},
-		["bank"] = {
-			["y"] = 0,
+			["y"] = 295.500030517578,
 			["rules"] = {
 				"all", -- [1]
 				"all/all", -- [2]
@@ -179,16 +146,59 @@ Bagnon_Sets = {
 				"contain/all", -- [24]
 				"misc/all", -- [25]
 			},
-			["point"] = "TOPLEFT",
+			["point"] = "BOTTOMRIGHT",
+			["borderColor"] = {
+			},
+			["color"] = {
+			},
+			["hiddenBags"] = {
+			},
+			["hiddenRules"] = {
+			},
+			["x"] = -573.333251953125,
+		},
+		["bank"] = {
+			["rules"] = {
+				"all", -- [1]
+				"all/all", -- [2]
+				"all/normal", -- [3]
+				"all/trade", -- [4]
+				"all/reagent", -- [5]
+				"equip", -- [6]
+				"equip/all", -- [7]
+				"equip/armor", -- [8]
+				"equip/weapon", -- [9]
+				"equip/trinket", -- [10]
+				"use", -- [11]
+				"use/all", -- [12]
+				"use/consume", -- [13]
+				"use/enhance", -- [14]
+				"trade", -- [15]
+				"trade/all", -- [16]
+				"trade/goods", -- [17]
+				"trade/gem", -- [18]
+				"trade/glyph", -- [19]
+				"trade/recipe", -- [20]
+				"quest", -- [21]
+				"misc", -- [22]
+				"quest/all", -- [23]
+				"contain/all", -- [24]
+				"misc/all", -- [25]
+			},
+			["point"] = "BOTTOMLEFT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
 			},
-			["borderColor"] = {
-			},
 			["hiddenRules"] = {
 			},
-			["x"] = 95,
+			["y"] = 0,
+			["x"] = 95.8888626098633,
+			["borderColor"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
+			["alpha"] = 1,
 		},
 	},
 	["displayGuildbank"] = true,

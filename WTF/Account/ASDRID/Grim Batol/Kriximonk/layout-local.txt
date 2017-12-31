@@ -1,6 +1,6 @@
 Version: 1
 Frame: ColorPickerFrame
-FrameLevel: 1
+FrameLevel: 21
 Anchor: TOPRIGHT
 X: -179
 Y: 0

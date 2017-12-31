@@ -5,6 +5,23 @@ PawnOptions = {
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["Artifacts"] = {
+		[128823] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Holy",
+				}, -- [1]
+				{
+					["ItemLevel"] = 70,
+					["Type"] = "Life",
+				}, -- [2]
+				{
+					["ItemLevel"] = 59,
+					["Type"] = "Holy",
+				}, -- [3]
+			},
+			["Name"] = "The Silver Hand",
+		},
 		[128866] = {
 			["Relics"] = {
 				{
@@ -22,22 +39,22 @@ PawnOptions = {
 			},
 			["Name"] = "Truthguard",
 		},
-		[128823] = {
+		[120978] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 55,
+					["ItemLevel"] = 40,
 					["Type"] = "Holy",
 				}, -- [1]
 				{
-					["ItemLevel"] = 68,
-					["Type"] = "Life",
+					["ItemLevel"] = 70,
+					["Type"] = "Fire",
 				}, -- [2]
 				{
-					["ItemLevel"] = 46,
+					["ItemLevel"] = 48,
 					["Type"] = "Holy",
 				}, -- [3]
 			},
-			["Name"] = "The Silver Hand",
+			["Name"] = "Ashbringer",
 		},
 	},
 	["LastKeybindingsSet"] = 1,

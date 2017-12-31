@@ -50,7 +50,7 @@ NOP.T_SPELL_BY_USE_TEXT = { -- [spellID] = {{count_to_use,priotity},itemID,{"sub
   --[222950] = {{1,private.PRI_REST},140242,nil,nil}, -- 200 mana
   --[222945] = {{1,private.PRI_REST},140239,nil,nil}, -- 300 mana
 }
-NOP.T_RECIPES = { -- [ItemId] = {{count_to_use,priority}, "gsub regex" | tooltip-line-number,{"sub-Zone",...},{[mapID]=true,...}}, item tooltip template only text to 1st match is compared, that mean all items of same school would be looked up.
+NOP.T_RECIPES = { -- [ItemId] = {{count_to_use,priority}, "gsub regex" | tooltip-line-number,{"sub-Zone",...},{[mapID]=true,...}, factionID}, item tooltip template only text to 1st match is compared, that mean all items of same school would be looked up.
   [153135] = {{1,private.PRI_TOKEN},4,nil,nil}, -- Unsullied Cloth Robes, why Blizzard did put in type of armor?
   [153143] = {{1,private.PRI_TOKEN},4,nil,nil}, -- Unsullied Plate Breastplate, why Blizzard did put in type of armor?
   [152741] = {{1,private.PRI_TOKEN},4,nil,nil}, -- Unsullied Mail Chestguard, why Blizzard did put in type of armor?
@@ -357,7 +357,7 @@ NOP.T_ITEMS = { -- [itemID] = {{count_to_use,priority},{"sub-Zone",...},{[mapID]
 }
 NOP.T_SPELL_FIND = {} -- ["spell"] = {count_to_use,priority}
 NOP.T_RECIPES_FIND = {} --  [itemID] = {{count_to_use,priority},"pattern",{"sub-ZoneName","sub-ZoneName"},{[mapID]=true,[mapID]=true}} it will be filled with paterns
-NOP.T_OPEN = {} -- ["tooltip-string"] = {{count_to_use,priority},{"sub-ZoneName","sub-ZoneName"},{[mapID]=true,[mapID]=true}}, items by open-spell in tooltip
+NOP.T_OPEN = nil -- ["tooltip-string"] = {{count_to_use,priority},{"sub-ZoneName","sub-ZoneName"},{[mapID]=true,[mapID]=true}}, items by open-spell in tooltip
 NOP.T_BLACKLIST = {} -- [itemID] = true, items blacklisted from right-click
 NOP.T_BLACKLIST_Q = {} -- [itemID] = true, items blacklisted from right-click
 NOP.T_USE = {} -- [itemID] = {{count_to_use,priority},{"sub-zone",...},{[mapID]=true,...},aura,stamp,count_in_bags} /run foreach(NOP.T_USE,print)

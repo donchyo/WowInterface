@@ -1,5 +1,7 @@
-VER 3 010000000000000D "bear ht" "INV_MISC_QUESTIONMARK"
-/cast [stance:1] healing touch
+VER 3 0100000000000017 "cancelaura form" "INV_MISC_QUESTIONMARK"
+/cancelaura bear form
+/cancelaura cat form
+/cancelaura travel form
 END
 VER 3 0100000000000004 "disp" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -27,9 +29,6 @@ VER 3 0100000000000003 "ib" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000015 "innnervate" "INV_MISC_QUESTIONMARK"
 /cast [@player] innervate
-END
-VER 3 0100000000000013 "kick boss1" "INV_MISC_QUESTIONMARK"
-/cast [@boss1] skull bash
 END
 VER 3 0100000000000002 "lb" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -61,6 +60,9 @@ VER 3 0100000000000006 "sm" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000000E "soul kappa" "INV_Misc_QuestionMark"
 /cancelaura spirit shift
+END
+VER 3 0100000000000016 "spammable bearfo" "INV_MISC_QUESTIONMARK"
+/cast !Bear Form(Shapeshift)
 END
 VER 3 010000000000000C "wg" "INV_MISC_QUESTIONMARK"
 #showtooltip

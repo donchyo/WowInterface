@@ -1,7 +1,7 @@
 SET autoLootDefault "1"
 SET lossOfControlInterrupt "0"
 SET autoQuestPopUps "v##$(N+###"
-SET trackedQuests "v(<\(5)(Je(N+([_"
+SET trackedQuests "v(<\(5)(Je([_"
 SET hardTrackedQuests "v"
 SET trackedWorldQuests "v"
 SET hardTrackedWorldQuests "v"

@@ -3,6 +3,9 @@ VER 3 0100000000000004 "f" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000008 "hidden" "INV_SCROLL_11"
 /run print(IsQuestFlaggedCompleted(44311))
+/run print("a")
+/run print(IsQuestFlaggedCompleted(44311))
+/run print("b")
 END
 VER 3 0100000000000003 "intervene" "INV_MISC_QUESTIONMARK"
 #showtooltip intervene

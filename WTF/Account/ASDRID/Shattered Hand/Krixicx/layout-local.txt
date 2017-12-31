@@ -14,9 +14,16 @@ Y: -192
 W: 235
 H: 2000
 Frame: PlayerFrame
-FrameLevel: 1
+FrameLevel: 2
 Anchor: CENTER
 X: -248
 Y: -113
 W: 232
 H: 100
+Frame: WQGFManualActionsFrame
+FrameLevel: 0
+Anchor: CENTER
+X: 0
+Y: 60
+W: 370
+H: 110

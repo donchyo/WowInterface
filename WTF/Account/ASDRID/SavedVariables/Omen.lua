@@ -48,13 +48,13 @@ Omen3DB = {
 			["ClickThrough"] = true,
 			["Locked"] = true,
 			["Background"] = {
-				["BorderTexture"] = "1 Pixel",
-				["Color"] = {
-					["a"] = 0,
-				},
 				["BorderColor"] = {
 					["a"] = 0,
 				},
+				["Color"] = {
+					["a"] = 0,
+				},
+				["BorderTexture"] = "1 Pixel",
 				["Texture"] = "ElvUI Blank",
 			},
 			["MinimapIcon"] = {

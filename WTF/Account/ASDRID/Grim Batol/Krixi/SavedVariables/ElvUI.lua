@@ -1,33 +1,33 @@
 
 ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+	},
 	["BodyGuard"] = {
 		["IsInValidZone"] = true,
 		["MaxHealth"] = 0,
 		["Health"] = 0,
 		["Active"] = false,
 	},
-	["ChatHistoryLog"] = {
-	},
 	["ChatEditHistory"] = {
-		" 915prot paladin > 940 moonkin on overall", -- [1]
-		"/p do you need that neck? :)(", -- [2]
-		"/p ty", -- [3]
-		" well", -- [4]
-		" its done atleast", -- [5]
-		" not according to mine", -- [6]
-		" seems good", -- [7]
-		" wowskolkarN?", -- [8]
-		" :D", -- [9]
-		" haha", -- [10]
-		" alla verkar få lite återfall då och då", -- [11]
-		" ja jo samma här hahahahahahahaha döda mig", -- [12]
-		" mjo", -- [13]
-		" fast frederik förtjänade det", -- [14]
-		" han var halvdansk", -- [15]
-		" vad gör du nu då?", -- [16]
-		" pluggar eller?", -- [17]
-		" whoa", -- [18]
-		" det låter ju iofs coolt", -- [19]
-		" mkt programering?", -- [20]
+		" okay", -- [1]
+		" replacing", -- [2]
+		" archive", -- [3]
+		" fuck that trinket anyway", -- [4]
+		" lul", -- [5]
+		" i still have 14.7k crit", -- [6]
+		" so i guess thats fine", -- [7]
+		" missing gem in ches", -- [8]
+		"/g ya'll nerds", -- [9]
+		"/g kys", -- [10]
+		"/g bye", -- [11]
+		"/wa", -- [12]
+		" do you go crit on cloak?", -- [13]
+		" or int", -- [14]
+		" good job", -- [15]
+		" haha", -- [16]
+		" you can do that", -- [17]
+		" interface mouse click-to-move", -- [18]
+		" i wouldent reccomend it", -- [19]
+		" you wanna play?", -- [20]
 	},
 }

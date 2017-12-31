@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["ChatEditHistory"] = {
-		" this is a great group", -- [1]
-		" i promise", -- [2]
-		" how hard can it be?", -- [3]
-		" give wisdom!!!", -- [4]
-		" !!!1111!!!", -- [5]
-		" :DDD", -- [6]
-		" when was the run tonight again?", -- [7]
-		" oke", -- [8]
-		" then i can go and buy some chips after dinner", -- [9]
-		" YEEEEEEEE BOIIIIIIIIIII", -- [10]
-		"/raid take it", -- [11]
-		"/raid pala", -- [12]
-		"/raid you can take the ress?", -- [13]
-		" amazing groups as always", -- [14]
-		"/raid dont", -- [15]
-		"/raid just go", -- [16]
-		" lululul", -- [17]
-		" im gonna eat", -- [18]
-		" thanks for joining for that comedy", -- [19]
-		"/wa", -- [20]
+		"/raid ok :)", -- [1]
+		"/roll", -- [2]
+		"/cw Fennyy-Nagrand ty <3", -- [3]
+		"/raid can i have summon please? :)", -- [4]
+		"/cw Tonzqt-Nagrand yeah, sorry :(", -- [5]
+		"/raid i feel like the adds get empowered", -- [6]
+		"/raid if the dk grips", -- [7]
+		"/raid i need the vers buff to save me when i ape", -- [8]
+		"/raid sometimes lucky", -- [9]
+		"/g wut?", -- [10]
+		"/g oh boy", -- [11]
+		"/g uhm", -- [12]
+		"/g discord?", -- [13]
+		" yo you wanna do a quick cos +15, trying to get a friend his box done before the reset :D", -- [14]
+		" i might just stay muted on discord", -- [15]
+		" actually, wanna play your hunter, lukas wanted to try tanking", -- [16]
+		" monkaS", -- [17]
+		"/p dreamteam", -- [18]
+		"/p ty ", -- [19]
+		"/p thanks for comming", -- [20]
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 }

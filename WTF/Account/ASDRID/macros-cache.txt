@@ -54,6 +54,10 @@ VER 3 000000000000038B "DUMB EYE" "INV_MISC_QUESTIONMARK"
 /CAST Judgment
 /targetlasttarget
 END
+VER 3 000000000000038C "Dungoens pull 3" "132311"
+#showtooltip none
+/pull 3
+END
 VER 3 0000000000000383 "enchanting" "INV_Misc_QuestionMark"
 /run C_TradeSkillUI.CraftRecipe(TradeSkillFrame.DetailsFrame.selectedRecipeID)
 /use Enchanting Vellum
@@ -141,6 +145,9 @@ VER 3 0000000000000341 "mouseover mall" "SPELL_MAGIC_MANAGAIN"
 #showtooltip
 /cast [target=mouseover, help] Slow Fall; [help] Slow Fall; Slow Fall
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy Light
+END
+VER 3 000000000000038D "mouseover trinke" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover] 13
 END
 VER 3 0000000000000388 "plea" "INV_Misc_QuestionMark"
 #showtooltip

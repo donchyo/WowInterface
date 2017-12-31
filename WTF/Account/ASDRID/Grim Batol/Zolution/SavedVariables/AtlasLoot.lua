@@ -10,6 +10,24 @@ AtlasLootCharDB = {
 		},
 		["shown"] = false,
 	},
+	["GUI"] = {
+		["selected"] = {
+			[5] = 0,
+			[2] = "TheArcway",
+			[4] = 1,
+		},
+		["point"] = {
+			"TOP", -- [1]
+			nil, -- [2]
+			"TOP", -- [3]
+			-7.71084308624268, -- [4]
+			-54.6989440917969, -- [5]
+		},
+	},
+	["__addonrevision"] = 4325,
+	["Tooltip"] = {
+		["useGameTooltip"] = false,
+	},
 	["QuickLootFrame"] = {
 		["point"] = {
 			"RIGHT", -- [1]
@@ -17,26 +35,6 @@ AtlasLootCharDB = {
 			"RIGHT", -- [3]
 			-269.601837158203, -- [4]
 			72.8248062133789, -- [5]
-		},
-	},
-	["__addonrevision"] = 4325,
-	["Tooltip"] = {
-		["useGameTooltip"] = false,
-	},
-	["GUI"] = {
-		["selected"] = {
-			"AtlasLoot_Collections", -- [1]
-			"TIERSETS", -- [2]
-			10, -- [3]
-			4, -- [4]
-			0, -- [5]
-		},
-		["point"] = {
-			"TOP", -- [1]
-			nil, -- [2]
-			"TOP", -- [3]
-			-7.71078872680664, -- [4]
-			-54.6989288330078, -- [5]
 		},
 	},
 }

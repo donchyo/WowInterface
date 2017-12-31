@@ -253,7 +253,7 @@ ShadowedUnitFrames: disabled
 ShadowedUF_Options: disabled
 infResolve: disabled
 ExtraCD: disabled
-DeathNote: disabled
+DeathNote: enabled
 Broker_Auditor: disabled
 Auditor2: disabled
 infDCBuyout: disabled
@@ -427,3 +427,4 @@ Skada_LeechBDKTabs: disabled
 Details_RaidInfo-TombOfSargeras: disabled
 PremadeGroupsFilter: enabled
 Prat-3.0: disabled
+RaiderIO_DB_EU_H: disabled

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.3.30 (13th December 2017, www.leatrix.com)
+-- 	Leatrix Plus 7.3.31 (20th December 2017, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.3.30"
+	LeaPlusLC["AddonVer"] = "7.3.31"
 
 ----------------------------------------------------------------------
 --	L00: Leatrix Plus
@@ -7473,7 +7473,7 @@
 			Zn(L["Movies"], L["Cataclysm"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Cataclysm"], L["Cataclysm"] .. " |r(23)", L["Last Stand"] .. " |r(21)", L["Leaving Kezan"] .. " |r(22)", L["The Dragon Soul"] .. " |r(73)", L["Spine of Deathwing"] .. " |r(74)", L["Madness of Deathwing"] .. " |r(75)", L["Fall of Deathwing"] .. " |r(76)"})
 			Zn(L["Movies"], L["Mists of Pandaria"]				, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Warlords of Draenor"]			, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
-			Zn(L["Movies"], L["Legion"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore (Horde)"] .. " |r(487)", L["The Battle for Broken Shore (Alliance)"] .. " |r(531)", L["A Falling Star"] .. " |r(489)", L["An Unclear Path"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)"})
+			Zn(L["Movies"], L["Legion"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["An Unclear Path"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)"})
 
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
@@ -10448,6 +10448,32 @@
 					if instanceID then print(instanceID, name) end
 				end
 				return
+			elseif str == "marker" then
+				-- Prevent showing raid target markers on self
+				if not LeaPlusLC.MarkerFrame then
+					LeaPlusLC.MarkerFrame = CreateFrame("FRAME")
+					LeaPlusLC.MarkerFrame:RegisterEvent("RAID_TARGET_UPDATE")
+				end
+				LeaPlusLC.MarkerFrame.Update = true
+				if LeaPlusLC.MarkerFrame.Toggle == false then
+					-- Show markers
+					LeaPlusLC.MarkerFrame:SetScript("OnEvent", nil)
+					ActionStatus_DisplayMessage(L["Self Markers Allowed"], true)
+					LeaPlusLC.MarkerFrame.Toggle = true
+				else
+					-- Hide markers
+					SetRaidTarget("player", 0)
+					LeaPlusLC.MarkerFrame:SetScript("OnEvent", function()
+						if LeaPlusLC.MarkerFrame.Update == true then
+							LeaPlusLC.MarkerFrame.Update = false
+							SetRaidTarget("player", 0)
+						end
+						LeaPlusLC.MarkerFrame.Update = true
+					end)
+					ActionStatus_DisplayMessage(L["Self Markers Blocked"], true)
+					LeaPlusLC.MarkerFrame.Toggle = false
+				end
+				return
 			elseif str == "admin" then
 				-- Preset profile (used for testing)
 				LpEvt:UnregisterAllEvents()						-- Prevent changes
@@ -10658,7 +10684,7 @@
 
 				setIcon("DRUID", 		1, --[[Balance]]  		--[[1]] 0, 0, 0, 		--[[2]] 0, 0, 0, 		--[[3]] 0, 0, 0, 		--[[4]] 0, 0, 0, 		--[[5]] 0, 0, 0)
 				setIcon("DRUID", 		2, --[[Feral]]  		--[[1]] 0, 0, 0, 		--[[2]] 0, 0, 0, 		--[[3]] 0, 0, 0, 		--[[4]] 0, 0, 0, 		--[[5]] 0, 0, 0)
-				setIcon("DRUID", 		3, --[[Guardian]]  		--[[1]] 0, 0, 0, 		--[[2]] 0, 0, 0, 		--[[3]] 0, 0, 0, 		--[[4]] 0, 0, 0, 		--[[5]] 0, 0, 0)
+				setIcon("DRUID", 		3, --[[Guardian]]  		--[[1]] 192081, 0, 0, 	--[[2]] 0, 0, 0, 		--[[3]] 0, 0, 0, 		--[[4]] 0, 0, 0, 		--[[5]] 0, 0, 0) -- Ironfur
 				setIcon("DRUID", 		4, --[[Resto]]			--[[1]] 0, 0, 0, 		--[[2]] 0, 0, 0, 		--[[3]] 0, 0, 0, 		--[[4]] 0, 0, 0, 		--[[5]] 0, 0, 0)
 
 				setIcon("MONK", 		1, --[[Brewmaster]]  	--[[1]] 125359, 0, 0,	--[[2]] 115307, 0, 0, 	--[[3]] 124274, 0, 0, 	--[[4]] 124273, 0, 0, 	--[[5]] 116781, 0, 0) -- Tiger Power, Shuffle, Moderate Stagger, Heavy Stagger, Legacy of the White Tiger

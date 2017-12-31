@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		"/p whats the worst that can happen?", -- [1]
-		"/iks", -- [2]
-		"/g tjenare", -- [3]
-		" okay", -- [4]
-		" yes", -- [5]
-		" im gonna eat in 10ish min", -- [6]
-		" when do you start normals?", -- [7]
-		" ok", -- [8]
-		"/ec", -- [9]
-		" nah", -- [10]
-		" druid", -- [11]
-		"/cw Cez-Antonidas danke", -- [12]
-		" what trinket did you think?", -- [13]
-		" |cffa335ee|Hitem:151960::::::::110:256::3:3:3610:1472:3528:::|h[Carafe of Searing Light]|h|r|cffa335ee|Hitem:147276::::::::110:256::43:5:604:40:3573:3174:3337:::|h[Spellbinder's Seal]|h|r", -- [14]
-		"/roll", -- [15]
-		"/cw Jouselin-ZirkeldesCenarius ty", -- [16]
-		" uhm", -- [17]
-		" i can", -- [18]
-		" play", -- [19]
-		" my disc is getting kinda geared", -- [20]
+		" :(", -- [1]
+		" did you have a nice xmas?", -- [2]
+		" i got sick on the friday", -- [3]
+		" :DDD", -- [4]
+		" that looks nice", -- [5]
+		" actually", -- [6]
+		" wanna see something dumb", -- [7]
+		" https://i.imgur.com/oHdF17S.png", -- [8]
+		" the back to back ones had less than 1hr of played between them", -- [9]
+		"/g not  really for dungeons", -- [10]
+		"/g idk", -- [11]
+		"/g its just nto that fun imo", -- [12]
+		"/g in raids its kinda fun", -- [13]
+		"/g but idk", -- [14]
+		"/g im really tierd", -- [15]
+		"/g did you have eoa?", -- [16]
+		"/g ye", -- [17]
+		"/g 30min over the timer", -- [18]
+		"/pull 5", -- [19]
+		"/g shit healer", -- [20]
 	},
 }
