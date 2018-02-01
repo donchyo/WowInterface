@@ -7,8 +7,15 @@ if L then
 	L.trapper = "돌갑옷 속박투사"
 end
 
+L = BigWigs:NewBossLocale("Rokmora", "koKR")
+if L then
+	--L.warmup_text = "Rokmora Active"
+	--L.warmup_trigger = "Navarrogg?! Betrayer! You would lead these intruders against us?!"
+	--L.warmup_trigger_2 = "Either way, I will enjoy every moment of it. Rokmora, crush them!"
+end
+
 L = BigWigs:NewBossLocale("Ularogg Cragshaper", "koKR")
 if L then
-  L.totems = "토템"
-  L.bellow = "{193375} (토템)" -- Bellow of the Deeps (Totems)
+	L.totems = "토템"
+	L.bellow = "{193375} (토템)" -- Bellow of the Deeps (Totems)
 end

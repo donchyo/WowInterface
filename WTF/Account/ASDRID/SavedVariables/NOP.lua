@@ -4,44 +4,34 @@ NewOpenablesProfile = {
 		["Nyrith - Grim Batol"] = {
 			["itemID"] = 147581,
 		},
-		["Donch - Grim Batol"] = {
-			["itemID"] = 153259,
-		},
 		["Kriximonk - Grim Batol"] = {
-			["itemID"] = 147719,
+			["itemID"] = 147721,
 		},
 		["Krixidk - Grim Batol"] = {
-			["itemID"] = 152097,
-		},
-		["Kroxi - Grim Batol"] = {
-			["itemID"] = 147581,
-		},
-		["Zuriz - Grim Batol"] = {
-			["itemID"] = 151556,
+			["itemID"] = 151245,
 		},
 		["Zolution - Grim Batol"] = {
-			["itemID"] = 136705,
-		},
-		["Krixikin - Grim Batol"] = {
-			["itemID"] = 147719,
+			["itemID"] = 141028,
 		},
 	},
 	["profileKeys"] = {
-		["Krixi - Grim Batol"] = "Default",
 		["Donch - Grim Batol"] = "Default",
 		["Krixidk - Grim Batol"] = "Default",
 		["Kroxi - Grim Batol"] = "Default",
 		["Namji - Grim Batol"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
-		["Kriximonk - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
 		["Krixicx - Shattered Hand"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
+		["Lilgaykrixi - Kazzak"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -68,7 +58,7 @@ NewOpenablesProfile = {
 				"UIParent", -- [2]
 				"TOPLEFT", -- [3]
 			},
-			["version"] = "|cFFFFFFFF08.26 28.12.2017 use |cFFFF00FF/nop|cFFFFFFFF",
+			["version"] = "|cFFFFFFFF08.30 29.01.2018 use |cFFFF00FF/nop|cFFFFFFFF",
 			["lockButton"] = true,
 		},
 	},

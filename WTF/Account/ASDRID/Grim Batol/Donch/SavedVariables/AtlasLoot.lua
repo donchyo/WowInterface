@@ -12,11 +12,9 @@ AtlasLootCharDB = {
 	},
 	["GUI"] = {
 		["selected"] = {
-			"AtlasLoot_Collections", -- [1]
-			"TIERSETS", -- [2]
-			3, -- [3]
-			1, -- [4]
-			0, -- [5]
+			[5] = 0,
+			[2] = "TheArcway",
+			[4] = 1,
 		},
 	},
 	["__addonrevision"] = 4325,

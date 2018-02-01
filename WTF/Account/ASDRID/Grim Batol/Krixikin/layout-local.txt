@@ -13,13 +13,6 @@ X: 16
 Y: -116
 W: 444
 H: 444
-Frame: QuestFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 496
 Frame: TradeFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -69,6 +62,13 @@ X: -153
 Y: 62
 W: 790
 H: 454
+Frame: ViragDevToolFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 635
+H: 200
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: TOPRIGHT

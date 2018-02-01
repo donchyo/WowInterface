@@ -48,6 +48,10 @@ L["STRING_INVITES"] = "Convites Para Grupo"
 L["STRING_INVITES_DESC"] = "Quando outro jogador convidar você para grupo."
 L["STRING_ONCOUNTDOWN"] = "Contagem Regressiva"
 L["STRING_ONCOUNTDOWN_DESC"] = "quando uma contagem regressiva começar"
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH"] = ""
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH_DESC"] = ""
 L["STRING_ONWHISPER"] = "Sussurro"
 L["STRING_ONWHISPER_DESC"] = "quando receber um sussurro."
 L["STRING_OPENSOUNDPANEL"] = "Abrir Configuração de Som"

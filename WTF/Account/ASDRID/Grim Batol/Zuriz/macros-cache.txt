@@ -33,6 +33,9 @@ VER 3 0100000000000006 "healing wage" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Healing wave
 END
+VER 3 010000000000000E "mouseover trinke" "INV_MISC_QUESTIONMARK"
+/use [@mouseover] 14
+END
 VER 3 0100000000000003 "rip" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]riptide

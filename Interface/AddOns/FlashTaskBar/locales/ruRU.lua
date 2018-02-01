@@ -48,6 +48,10 @@ L["STRING_INVITES"] = "Приглашения"
 L["STRING_INVITES_DESC"] = "Когда кто-то приглашает вас к группу."
 L["STRING_ONCOUNTDOWN"] = "Начало таймера"
 L["STRING_ONCOUNTDOWN_DESC"] = "Когда на экране, отображается обратный отсчет."
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH"] = ""
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH_DESC"] = ""
 L["STRING_ONWHISPER"] = "При шепоте"
 L["STRING_ONWHISPER_DESC"] = "Мигать при получении шепота"
 L["STRING_OPENSOUNDPANEL"] = "Открыть настройки звука"

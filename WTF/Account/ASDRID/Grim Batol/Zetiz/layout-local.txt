@@ -1,8 +1,8 @@
 Version: 1
 Frame: CharacterFrame
 FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
+Anchor: TOP
+X: 309
 Y: -116
 W: 444
 H: 444
@@ -41,13 +41,13 @@ X: -132
 Y: 22
 W: 790
 H: 454
-Frame: PawnUIFrame
+Frame: ViragDevToolFrame
 FrameLevel: 1
 Anchor: CENTER
 X: 0
 Y: 0
-W: 800
-H: 525
+W: 635
+H: 200
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: TOPRIGHT

@@ -868,8 +868,8 @@ function FlashTaskBar.OnInit (self)
 		
 		{
 			type = "toggle",
-			name = "Player Died",
-			desc = "Flashes when your character dies",
+			name = L["STRING_ONPLAYERDEATH"],
+			desc = L["STRING_ONPLAYERDEATH_DESC"],
 			order = 6,
 			get = function() return FlashTaskBar.db.profile.player_died end,
 			set = function (self, val) 
@@ -1164,6 +1164,7 @@ function FlashTaskBar.OnInit (self)
 			fatigue = "FATIGUE",
 			battleground_end = "BATTLEGROUND",
 			on_chat_player_name = "PLAYERNAME",
+			player_died = "ONPLAYERDEATH",
 		}
 		
 		--the game cannot play sounds when logging off

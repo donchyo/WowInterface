@@ -14,6 +14,11 @@ function NOP:OnInitialize() -- app initialize
   self.scanFrame = self:TooltipCreate(private.TOOLTIP_SCAN)
   self.itemFrame = self:TooltipCreate(private.TOOLTIP_ITEM)
   self.spellFrame = self:TooltipCreate(private.TOOLTIP_SPELL) -- /run NOP.spellFrame = NOP:TooltipCreate("NOP_TOOLTIP_SPELL")
+  self.LAD = LibStub("LibArtifactData-1.0") -- scans all artifacts and notify when there is update
+  self.LAD.RegisterCallback(self,"ARTIFACT_ADDED",           "ArtifactCallback")
+  self.LAD.RegisterCallback(self,"ARTIFACT_POWER_CHANGED" ,  "ArtifactCallback")
+  self.LAD.RegisterCallback(self,"ARTIFACT_RELIC_CHANGED" ,  "ArtifactCallback")
+  self.LAD.RegisterCallback(self,"ARTIFACT_TRAITS_CHANGED" , "ArtifactCallback")
 end
 function NOP:OnEnable()
   local Masque = LibStub("Masque", true)
@@ -32,7 +37,7 @@ end
 local itemRetry = nil
 function NOP:ItemLoad() -- load template item tooltips
   if (self.itemLoadRetry < 0) then
-   if WoWbox then self.printt("ItemLoad:","retry limit reached! Last not seen itemID", itemRetry) end
+   self:Verbose("ItemLoad:","retry limit reached! Last not seen itemID", itemRetry)
    return  -- no more retry
   end
   self:Profile(true)
@@ -90,7 +95,7 @@ local spellRetry = nil
 local spellLoaded = {}
 function NOP:SpellLoad() -- load spell patterns
   if (self.spellLoadRetry < 0) then
-    if WoWBox then self.printt("SpellLoad:","retry limit reached! Last not seend spell on itemID", spellRetry) end
+    self:Verbose("SpellLoad:","retry limit reached! Last not seend spell on itemID", spellRetry)
     return -- no more retries
   end
   self:Profile(true)
@@ -141,7 +146,7 @@ function NOP:PickLockUpdate() -- rogue picklocking
         end
       end
     else
-      self.printt("Tooltip has less lines than expected, has", count, "instead more than 3.") -- diagnostic
+      self:Verbose("Tooltip has less lines than expected, has", count, "instead more than 3.") -- diagnostic
     end
   end
 end
@@ -335,14 +340,6 @@ function NOP:CheckBuilding(toCheck)
       end
     end
   end -- /run local _, _, t = C_Garrison.GetTalentTreeInfoForID(119); for a,b in ipairs(t) do print(a, b.selected, b.perkSpellID) end
-  if HasArtifactEquipped() and not HERALD_ANNOUNCED[0] then -- artifact points to spend
-    local _, _, _, _, totalXP, pointsSpent, _, _, _, _, _, _, artifactTier = C_ArtifactUI.GetEquippedArtifactInfo()
-    local numPointsAvailableToSpend, xp, xpForNextPoint = MainMenuBar_GetNumArtifactTraitsPurchasableFromXP(pointsSpent, totalXP, artifactTier)
-    if numPointsAvailableToSpend > 0 then
-      self:PrintToActive((private.ARTIFACT_ANNOUNCE):format(numPointsAvailableToSpend))
-      HERALD_ANNOUNCED[0] = true
-    end
-  end
   for i = 1, GetNumArchaeologyRaces() do -- archaelogy can be completed
     local raceName, _, _, have, required = GetArchaeologyRaceInfo(i)
     if raceName and (required > 0) and (have >= required) and not HERALD_ANNOUNCED[raceName] then
@@ -400,6 +397,46 @@ function NOP:CompressText(text) -- printable
   text = string.gsub(text, "/n$", "") -- novy radek na konci zahodit
   text = string.gsub(text, "||", "/124") -- interni formatovani WoW
   return string.trim(text)
+end
+function NOP:GetReputation(name)
+  local fID = NOP.T_REPS[name]; if not fID then return end
+  local _, _, level, _, top, value = GetFactionInfoByID(fID)
+  return level, top, value
+end
+local artRanks = {}
+local artTraits = {}
+function NOP:ArtifactCallback(msg,artifactID)
+  -- self.printt(msg, artifactID)
+  -- if msg == "ARTIFACT_ADDED" and artifactID then
+  if artifactID then
+    local _, data = self.LAD:GetArtifactInfo(artifactID)
+    if data then
+      if data.numRanksPurchasable then
+        if (data.numRanksPurchasable > 0) then -- inform about visit OH to spend points on weapons
+          if not artRanks[artifactID] then
+            self:PrintToActive((private.ARTIFACT_ANNOUNCE):format(("%s [%d]"):format(data.name,data.numRanksPurchased),data.numRanksPurchasable))
+            artRanks[artifactID] = true
+          end
+        else
+          if artRanks[artifactID] then artRanks[artifactID] = nil end
+        end
+      end
+      if data.relics then
+        local visit = false
+        for i=1, #data.relics do
+          if data.relics[i].canAddTalent then visit = true end
+        end
+        if visit then 
+          if not artTraits[artifactID] then
+            self:PrintToActive(("%s [%d]. %s"):format(data.name,data.numRanksPurchased,ARTIFACT_RELIC_TALENT_AVAILABLE))
+            artTraits[artifactID] = true
+          end
+        else
+          if artTraits[artifactID] then artTraits[artifactID] = nil end -- reset announce when all are spend
+        end
+      end
+    end
+  end
 end
 --[[
 local tooltip_functions = {

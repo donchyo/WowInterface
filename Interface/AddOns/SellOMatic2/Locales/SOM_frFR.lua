@@ -112,3 +112,4 @@ L["Which list do you want to reset?"] = "Quelle liste souhaitez-vous réinitiali
 L["White quality item options"] = "Options des objets de qualité blanche"
 L["Yes"] = "Oui"
 L["You've earned"] = "Vous avez gagné"
+

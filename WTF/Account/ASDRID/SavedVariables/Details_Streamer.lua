@@ -7,23 +7,24 @@ Details_StreamerDB = {
 		["Bawsie - Grim Batol"] = "Krixi - Grim Batol",
 		["Gnomalock - Grim Batol"] = "Krixi - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Krixi - Grim Batol",
+		["Lowerboost - Lightbringer"] = "Krixi - Grim Batol",
+		["Krixiyo - Blackmoore"] = "Krixi - Grim Batol",
 		["Lilgaykrixi - Kazzak"] = "Krixi - Grim Batol",
-		["Zetiz - Grim Batol"] = "Krixi - Grim Batol",
 		["Daimtårta - Aggra (Português)"] = "Krixi - Grim Batol",
-		["Krixiyo - Twisting Nether"] = "Krixi - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Kroxi - Crushridge"] = "Krixi - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixi - Grim Batol",
-		["Zuriz - Grim Batol"] = "Krixi - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Krixi - Grim Batol",
+		["Greenzuriz - Aggra (Português)"] = "Krixi - Grim Batol",
+		["Donch - Shattered Hand"] = "Krixi - Grim Batol",
+		["Nyrith - Grim Batol"] = "Krixi - Grim Batol",
 		["Spacegoatx - Aggra (Português)"] = "Krixi - Grim Batol",
 		["Zolution - Grim Batol"] = "Krixi - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Krixi - Grim Batol",
 		["Líttle - Grim Batol"] = "Krixi - Grim Batol",
-		["Nyrith - Grim Batol"] = "Krixi - Grim Batol",
-		["Donch - Shattered Hand"] = "Krixi - Grim Batol",
-		["Greenzuriz - Aggra (Português)"] = "Krixi - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Krixiyo - Blackmoore"] = "Krixi - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Krixi - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixi - Grim Batol",
+		["Zuriz - Grim Batol"] = "Krixi - Grim Batol",
+		["Krixiyo - Twisting Nether"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Krixi - Grim Batol",
 	},
 	["profiles"] = {
 		["Krixi - Grim Batol"] = {
@@ -53,9 +54,10 @@ Details_StreamerDB = {
 			["row_texture"] = "Details Serenity",
 			["scale"] = 1,
 			["point"] = "TOP",
+			["y"] = -41.5555419921875,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -41.5555419921875,
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -66,9 +68,6 @@ Details_StreamerDB = {
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_height"] = 20,
-			["font_size"] = 10,
-			["x"] = 285.333618164063,
-			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = true,
 				["point"] = "CENTER",
@@ -80,6 +79,8 @@ Details_StreamerDB = {
 				["size"] = 32,
 				["attribute_type"] = 1,
 			},
+			["x"] = 285.333618164063,
+			["font_face"] = "Friz Quadrata TT",
 			["row_color"] = {
 				0.1, -- [1]
 				0.1, -- [2]
@@ -87,8 +88,9 @@ Details_StreamerDB = {
 				0.4, -- [4]
 			},
 			["arrow_anchor_y"] = 0,
+			["use_spark"] = true,
 			["main_frame_locked"] = false,
-			["author"] = "Details! Team",
+			["font_size"] = 10,
 		},
 	},
 }

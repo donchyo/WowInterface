@@ -17,6 +17,10 @@ Bagnon_Sets = {
 		},
 		["Grim Batol"] = {
 		},
+		["Kazzak"] = {
+		},
+		["Lightbringer"] = {
+		},
 	},
 	["gemColor"] = {
 	},
@@ -115,15 +119,24 @@ Bagnon_Sets = {
 				"trade/recipe", -- [20]
 				"quest", -- [21]
 				"misc", -- [22]
+				"quest/all", -- [23]
+				"contain/all", -- [24]
+				"misc/all", -- [25]
 			},
+			["point"] = "BOTTOMLEFT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
 			},
 			["hiddenRules"] = {
 			},
+			["y"] = 288.000030517578,
+			["x"] = 95,
 			["borderColor"] = {
 			},
+			["itemScale"] = 1,
+			["scale"] = 1,
+			["alpha"] = 1,
 		},
 		["guild"] = {
 			["y"] = 295.500030517578,
@@ -193,7 +206,7 @@ Bagnon_Sets = {
 				"contain/all", -- [24]
 				"misc/all", -- [25]
 			},
-			["point"] = "BOTTOMLEFT",
+			["point"] = "BOTTOMRIGHT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
@@ -201,7 +214,7 @@ Bagnon_Sets = {
 			["hiddenRules"] = {
 			},
 			["y"] = 0,
-			["x"] = 95.8888626098633,
+			["x"] = -369.666625976563,
 			["borderColor"] = {
 			},
 			["alpha"] = 1,

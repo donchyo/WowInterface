@@ -82,11 +82,6 @@ function NOP:ButtonSkin(button,skin) -- skin or restore button look
     button.isSkinned = nil
   end
 end
-function NOP:GetReputation(name)
-  local fID = NOP.T_REPS[name]; if not fID then return end
-  local _, _, level, _, top, value = GetFactionInfoByID(fID)
-  return level, top, value
-end
 function NOP:ButtonReputation(tooltip,func) -- add reputation into tooltip
   if not (tooltip and tooltip.GetItem) then return end
   if (func == "SetItemByID") and (OHC ~= nil) and OrderHallMissionFrame and OrderHallMissionFrame:IsVisible() then return end -- OHC have own tooltip for reward with reputation item

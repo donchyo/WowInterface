@@ -82,6 +82,10 @@ if not L then return end
 --Translation missing 
 -- L["STRING_ONCOUNTDOWN_DESC"] = ""
 --Translation missing 
+-- L["STRING_ONPLAYERDEATH"] = ""
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH_DESC"] = ""
+--Translation missing 
 -- L["STRING_ONWHISPER"] = ""
 --Translation missing 
 -- L["STRING_ONWHISPER_DESC"] = ""

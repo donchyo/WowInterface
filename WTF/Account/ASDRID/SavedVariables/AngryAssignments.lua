@@ -19,8 +19,8 @@ AngryAssign_Pages = {
 		["Name"] = "hai",
 		["Id"] = 194178761,
 		["UpdateId"] = 1820585832,
-		["Contents"] = "Hi im xD",
 		["Backup"] = "Hi im xD",
+		["Contents"] = "Hi im xD",
 	},
 	[993574299] = {
 		["Updated"] = 1440357999,
@@ -40,12 +40,7 @@ AngryAssign_Pages = {
 AngryAssign_Categories = {
 }
 AngryAssign_State = {
-	["window"] = {
-		["height"] = 425.461669921875,
-		["top"] = 723.788757324219,
-		["left"] = 80.093620300293,
-		["width"] = 701.71337890625,
-	},
+	["directionUp"] = false,
 	["display"] = {
 		["y"] = -18.348876953125,
 		["x"] = -237.322509765625,
@@ -53,18 +48,23 @@ AngryAssign_State = {
 		["scale"] = 1,
 		["hidden"] = false,
 	},
+	["window"] = {
+		["height"] = 425.461669921875,
+		["top"] = 723.788757324219,
+		["left"] = 80.093620300293,
+		["width"] = 701.71337890625,
+	},
+	["locked"] = true,
 	["tree"] = {
 		["groups"] = {
 			["194178761"] = true,
 		},
 		["scrollvalue"] = 0,
-		["fullwidth"] = 667.713439941406,
+		["treesizable"] = true,
 		["selected"] = 1211565808,
 		["treewidth"] = 174.999984741211,
-		["treesizable"] = true,
+		["fullwidth"] = 667.713439941406,
 	},
-	["locked"] = true,
-	["directionUp"] = false,
 }
 AngryAssign_Config = {
 	["glowColor"] = "ffd3d5",

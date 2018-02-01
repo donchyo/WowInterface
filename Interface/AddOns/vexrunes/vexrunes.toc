@@ -1,14 +1,10 @@
-## Interface: 70000
+## Interface: 70300
 ## Title: |CFFFF7D0AVex|r Runes
 ## Notes: Alternate Rune Display
-## Version: 2.1.12
-#@no-lib-strip@
+## Version: 2.1.14
 ## SavedVariables: vexrunes_parameters
-## X-Curse-Packaged-Version: v2.1.12
-## X-Curse-Project-Name: Vex Runes
-## X-Curse-Project-ID: vexrunes
-## X-Curse-Repository-ID: wow/vexrunes/mainline
 
+## @no-lib-strip@
 libs\LibStub\LibStub.lua
 libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
 libs\AceAddon-3.0\AceAddon-3.0.xml
@@ -27,11 +23,11 @@ libs\AceTab-3.0\AceTab-3.0.xml
 libs\AceSerializer-3.0\AceSerializer-3.0.xml
 libs\LibSharedMedia-3.0\lib.xml
 libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+## @end-no-lib-strip@
 
 vexrunes.xml
 core.lua
 defaults.lua
-
 options\options_main.lua
 options\options_general.lua
 options\options_positions.lua

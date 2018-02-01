@@ -8,23 +8,24 @@ EnemyGridDB = {
 		["Bawsie - Grim Batol"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
-		["Lilgaykrixi - Kazzak"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Skullflower",
+		["Zolution - Grim Batol"] = "Default",
 		["Líttle - Grim Batol"] = "Default",
 		["Donch - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Skullflower",
-		["Zolution - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Skullflower",
+		["Zetiz - Grim Batol"] = "Default",
+		["Lilgaykrixi - Kazzak"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["vertical_rows"] = 10,
 			["cast_statusbar_height"] = 30,
 			["cast_statusbar_width"] = 140,
-			["path_7_11_warning"] = true,
+			["frame_locked"] = true,
 			["npc_friendly_color"] = {
 				0.4, -- [1]
 				nil, -- [2]
@@ -32,7 +33,7 @@ EnemyGridDB = {
 				1, -- [4]
 			},
 			["horizontal_gap_size"] = 0,
-			["bar_texturebackground"] = "SkullflowerLight",
+			["y"] = 83.8888244628906,
 			["x"] = 270.444396972656,
 			["max_targets"] = 10,
 			["aura_timer"] = false,
@@ -48,16 +49,16 @@ EnemyGridDB = {
 						0.0549019607843137, -- [3]
 						1, -- [4]
 					},
-					["nocombat"] = {
-						0.341176470588235, -- [1]
-						0.00392156862745098, -- [2]
-						0.0117647058823529, -- [3]
-						1, -- [4]
-					},
 					["noaggro"] = {
 						nil, -- [1]
 						nil, -- [2]
 						nil, -- [3]
+						1, -- [4]
+					},
+					["nocombat"] = {
+						0.341176470588235, -- [1]
+						0.00392156862745098, -- [2]
+						0.0117647058823529, -- [3]
 						1, -- [4]
 					},
 				},
@@ -66,10 +67,9 @@ EnemyGridDB = {
 				["x"] = 0,
 			},
 			["scale"] = 1,
-			["cast_statusbar_color_nointerrupt"] = {
-				0.701960784313726, -- [1]
+			["cast_statusbar_color"] = {
+				nil, -- [1]
 				0.701960784313726, -- [2]
-				0.701960784313726, -- [3]
 			},
 			["name_text_color"] = {
 				0.972549019607843, -- [1]
@@ -87,7 +87,7 @@ EnemyGridDB = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["name_text_size"] = 11,
+			["aura_height"] = 22,
 			["first_run"] = true,
 			["bar_width"] = 140,
 			["aura_width"] = 26,
@@ -117,9 +117,11 @@ EnemyGridDB = {
 				nil, -- [3]
 				0.310000002384186, -- [4]
 			},
-			["cast_statusbar_color"] = {
+			["cast_statusbar_bgcolor"] = {
 				nil, -- [1]
-				0.701960784313726, -- [2]
+				nil, -- [2]
+				nil, -- [3]
+				0.724460273981094, -- [4]
 			},
 			["quest_color_enemy"] = {
 				nil, -- [1]
@@ -128,7 +130,7 @@ EnemyGridDB = {
 				1, -- [4]
 			},
 			["percent_text_size"] = 11,
-			["aura_height"] = 22,
+			["name_text_size"] = 11,
 			["name_text_stringsize"] = 80,
 			["quest_enabled"] = false,
 			["bar_color"] = {
@@ -158,16 +160,15 @@ EnemyGridDB = {
 					},
 				},
 			},
-			["frame_locked"] = true,
+			["path_7_11_warning"] = true,
 			["cast_statusbar_texture"] = "PlaterTexture",
 			["vertical_gap_size"] = 0,
-			["y"] = 83.8888244628906,
+			["bar_texturebackground"] = "SkullflowerLight",
 			["frame_range_alpha"] = 0.33254075050354,
-			["cast_statusbar_bgcolor"] = {
-				nil, -- [1]
-				nil, -- [2]
-				nil, -- [3]
-				0.724460273981094, -- [4]
+			["cast_statusbar_color_nointerrupt"] = {
+				0.701960784313726, -- [1]
+				0.701960784313726, -- [2]
+				0.701960784313726, -- [3]
 			},
 		},
 		["Skullflower"] = {
@@ -228,38 +229,24 @@ EnemyGridDB = {
 				0.0549019607843137, -- [2]
 				0, -- [3]
 			},
-			["first_run"] = true,
-			["aura_width"] = 26,
-			["bar_height"] = 25,
-			["aura_show_tooltip"] = true,
-			["bar_texture"] = "Skullflower",
-			["npc_enemy_color"] = {
-				nil, -- [1]
-				0.0901960784313726, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["cast_statusbar_color"] = {
+				0.956862745098039, -- [1]
+				1, -- [2]
+				0.905882352941177, -- [3]
 			},
-			["show_title_text"] = false,
-			["percent_text_size"] = 11,
-			["point"] = "CENTER",
-			["frame_backdropbordercolor"] = {
+			["cast_statusbar_bgcolor"] = {
 				nil, -- [1]
 				nil, -- [2]
 				nil, -- [3]
-				0.310000002384186, -- [4]
+				0.724460273981094, -- [4]
 			},
-			["cast_statusbar_bgtexture"] = "SkullflowerLight",
-			["name_text_stringsize"] = 49,
-			["npc_neutral_color"] = {
-				nil, -- [1]
-				0.843137254901961, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["debuff_anchor"] = {
-				["x"] = -2,
-			},
-			["quest_enabled"] = false,
+			["y"] = -167.222061157227,
+			["aura_show_tooltip"] = true,
+			["frame_locked"] = true,
+			["vertical_gap_size"] = 0,
+			["cast_statusbar_texture"] = "Skullflower",
+			["percent_text_size"] = 11,
+			["aura_height"] = 22,
 			["dps"] = {
 				["colors"] = {
 					["aggro"] = {
@@ -270,22 +257,36 @@ EnemyGridDB = {
 					},
 				},
 			},
-			["aura_height"] = 22,
-			["cast_statusbar_texture"] = "Skullflower",
-			["vertical_gap_size"] = 0,
-			["frame_locked"] = true,
-			["y"] = -167.222061157227,
-			["cast_statusbar_bgcolor"] = {
+			["quest_enabled"] = false,
+			["name_text_stringsize"] = 49,
+			["npc_neutral_color"] = {
+				nil, -- [1]
+				0.843137254901961, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["debuff_anchor"] = {
+				["x"] = -2,
+			},
+			["cast_statusbar_bgtexture"] = "SkullflowerLight",
+			["frame_backdropbordercolor"] = {
 				nil, -- [1]
 				nil, -- [2]
 				nil, -- [3]
-				0.724460273981094, -- [4]
+				0.310000002384186, -- [4]
 			},
-			["cast_statusbar_color"] = {
-				0.956862745098039, -- [1]
-				1, -- [2]
-				0.905882352941177, -- [3]
+			["point"] = "CENTER",
+			["show_title_text"] = false,
+			["npc_enemy_color"] = {
+				nil, -- [1]
+				0.0901960784313726, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
+			["bar_texture"] = "Skullflower",
+			["bar_height"] = 25,
+			["aura_width"] = 26,
+			["first_run"] = true,
 		},
 	},
 }

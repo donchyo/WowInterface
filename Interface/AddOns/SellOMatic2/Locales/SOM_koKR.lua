@@ -13,6 +13,8 @@ L["Blue quality item options"] = "희귀 등급 아이템 옵션"
 L["Cancel"] = "취소"
 L["Choose the amount of information displayed"] = "표시될 정보의 양 선택"
 L["Command List"] = "명령어 목록"
+--Translation missing 
+-- L["Delete"] = ""
 L["delete items from the sell/save lists"] = "판매/저장 목록에서 아이템 삭제"
 L["destroy all junk items in your backpack"] = "가방에 있는 모든 잡템 파괴"
 L["Destroy Commands"] = "파괴 명령어"
@@ -111,3 +113,4 @@ L["Which list do you want to reset?"] = "어떤 목록을 초기화 할까요?"
 L["White quality item options"] = "일반 등급 아이템 옵션"
 L["Yes"] = "네"
 L["You've earned"] = "획득"
+

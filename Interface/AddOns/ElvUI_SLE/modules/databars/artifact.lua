@@ -27,14 +27,17 @@ local function UpdateArtifact(self, event)
 		local tier = T.select(13, C_ArtifactUIGetEquippedArtifactInfo());
 		local numPointsAvailableToSpend, xp, xpForNextPoint
 		numPointsAvailableToSpend, xp, xpForNextPoint = MainMenuBar_GetNumArtifactTraitsPurchasableFromXP(pointsSpent, totalXP, tier);
+		if xpForNextPoint <= 0 then
+			xpForNextPoint = xp
+		end
 
 		local textFormat = self.db.artifact.textFormat
 		if textFormat == 'PERCENT' then
-			text = T.format(numPointsAvailableToSpend > 0 and '%d%% (%s)' or '%d%%', xp / xpForNextPoint * 100, numPointsAvailableToSpend)
+			text = T.format(numPointsAvailableToSpend > 0 and '%s%% (%s)' or '%s%%', T.floor(xp / xpForNextPoint * 100), numPointsAvailableToSpend)
 		elseif textFormat == 'CURMAX' then
 			text = T.format(numPointsAvailableToSpend > 0 and '%s - %s (%s)' or '%s - %s', xp, xpForNextPoint, numPointsAvailableToSpend)
 		elseif textFormat == 'CURPERC' then
-			text = T.format(numPointsAvailableToSpend > 0 and '%s - %d%% (%s)' or '%s - %d%%',xp, xp / xpForNextPoint * 100, numPointsAvailableToSpend)
+			text = T.format(numPointsAvailableToSpend > 0 and '%s - %s%% (%s)' or '%s - %s%%',xp, T.floor(xp / xpForNextPoint * 100), numPointsAvailableToSpend)
 		elseif textFormat == 'CUR' then
 			text = T.format(numPointsAvailableToSpend > 0 and '%s (%s)' or '%s', xp, numPointsAvailableToSpend)
 		elseif textFormat == 'REM' then

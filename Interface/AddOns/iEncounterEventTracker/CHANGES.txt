@@ -1,0 +1,12 @@
+tag ff6a86a5e37c477efd2c3641609125a40469381a v1.641
+Author:	Jesse Manelius <jessemanelius@gmail.com>
+Date:	Mon Dec 4 22:49:25 2017 +0200
+
+tagging as v1.641
+
+commit 1dcad0b80890da7105bcbd8a36703080f25ae268
+Author: Jesse Manelius <jessemanelius@gmail.com>
+Date:   Mon Dec 4 22:48:53 2017 +0200
+
+    fix nil error on user check when version number has less than 3 decimals
+

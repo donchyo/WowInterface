@@ -260,8 +260,10 @@ do
   function aura_cache.DeassertMember(self, guid)
     if(self.players[guid]) then
       self.players[guid] = nil;
-      for id, _ in pairs(self.watched) do
-        self:DeassertAura(id, guid);
+      for id, v in pairs(self.watched) do
+        for triggernum, _ in pairs(v) do
+          self:DeassertAura(id, triggernum, guid);
+        end
       end
       self.max = self.max - 1;
     end
@@ -293,7 +295,7 @@ function WeakAuras.SetAuraVisibility(id, triggernum, cloneId, showOn, unitExists
   local show;
   if (not UnitExists(unit)) then
     show = unitExists;
-  elseif (showOn == "showAlways") then
+  elseif (showOn == "showActiveOrMissing") then
     show = true;
   elseif(showOn == "showOnMissing") then
     show = not active;

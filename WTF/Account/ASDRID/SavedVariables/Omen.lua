@@ -9,6 +9,7 @@ Omen3DB = {
 		["Bawsie - Grim Batol"] = "Krixidk - Grim Batol",
 		["Gnomalock - Grim Batol"] = "Krixidk - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
 		["Krixicx - Shattered Hand"] = "Krixicx - Shattered Hand",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
@@ -39,52 +40,52 @@ Omen3DB = {
 			["PositionH"] = 82.0000076293945,
 		},
 		["Krixidk - Grim Batol"] = {
-			["PositionW"] = 125.555572509766,
-			["NumBars"] = 4,
-			["Shown"] = true,
-			["PositionH"] = 46.2221755981445,
-			["VGrip2"] = 87.7464309334155,
-			["PositionY"] = 184.00016784668,
-			["ClickThrough"] = true,
-			["Locked"] = true,
-			["Background"] = {
-				["BorderColor"] = {
-					["a"] = 0,
-				},
-				["Color"] = {
-					["a"] = 0,
-				},
-				["BorderTexture"] = "1 Pixel",
-				["Texture"] = "ElvUI Blank",
-			},
-			["MinimapIcon"] = {
-				["hide"] = true,
-			},
 			["ShowWith"] = {
 				["Alone"] = true,
 				["HideWhenOOC"] = true,
 				["UseShowWith"] = false,
 			},
-			["VGrip1"] = 93.1461998481366,
+			["MinimapIcon"] = {
+				["hide"] = true,
+			},
+			["PositionW"] = 125.555572509766,
+			["NumBars"] = 4,
+			["Shown"] = true,
+			["PositionX"] = 1343.77783203125,
+			["Warnings"] = {
+				["DisableWhileTanking"] = false,
+				["Sound"] = false,
+				["Flash"] = false,
+			},
+			["PositionH"] = 46.2221755981445,
+			["VGrip2"] = 87.7464309334155,
+			["PositionY"] = 184.00016784668,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 			},
-			["Warnings"] = {
-				["DisableWhileTanking"] = false,
-				["Flash"] = false,
-				["Sound"] = false,
+			["ClickThrough"] = true,
+			["Locked"] = true,
+			["Background"] = {
+				["Color"] = {
+					["a"] = 0,
+				},
+				["Texture"] = "ElvUI Blank",
+				["BorderTexture"] = "1 Pixel",
+				["BorderColor"] = {
+					["a"] = 0,
+				},
 			},
-			["PositionX"] = 1343.77783203125,
+			["VGrip1"] = 93.1461998481366,
 			["Bar"] = {
 				["FontSize"] = 11,
 				["ShowHeadings"] = false,
-				["ShowValue"] = false,
-				["ShowAggroBar"] = false,
-				["Texture"] = "Skullflower",
-				["ShowTPS"] = false,
 				["AnimateBars"] = false,
+				["ShowValue"] = false,
 				["Font"] = "Expressway",
 				["Height"] = 16,
+				["ShowTPS"] = false,
+				["ShowAggroBar"] = false,
+				["Texture"] = "Skullflower",
 			},
 		},
 		["Kroxi - Grim Batol"] = {
@@ -119,6 +120,11 @@ Omen3DB = {
 			["PositionH"] = 154.000091552734,
 			["PositionX"] = 1377.27893066406,
 			["VGrip1"] = 91.4221717834473,
+		},
+		["Lowerboost - Lightbringer"] = {
+			["PositionY"] = 555.000061035156,
+			["Shown"] = true,
+			["PositionX"] = 740.833374023438,
 		},
 		["DRUID"] = {
 			["PositionX"] = 753.333435058594,

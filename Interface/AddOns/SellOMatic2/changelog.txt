@@ -1,8 +1,6 @@
-**a071:**
+**a072:**
 
-* [dcf8a6e] Fixed issue when using GnomishVendorShrinker.
-* [255fafd] Added fix to try to avoid the errors with no value items.
-* [3c24293] Updated TOC.
+* [19ccd43] Updated TOC.
 
 ----
 

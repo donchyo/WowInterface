@@ -1,7 +1,29 @@
 
 Details_StreamerDB = {
 	["characters"] = {
+		["Donch - Grim Batol"] = "Krixi - Grim Batol",
+		["Kroxi - Grim Batol"] = "Krixi - Grim Batol",
+		["Namji - Grim Batol"] = "Krixi - Grim Batol",
+		["Bawsie - Grim Batol"] = "Krixi - Grim Batol",
+		["Gnomalock - Grim Batol"] = "Krixi - Grim Batol",
+		["Menardiairl - Culte de la Rive noire"] = "Krixi - Grim Batol",
+		["Lilgaykrixi - Kazzak"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Krixi - Grim Batol",
+		["Daimtårta - Aggra (Português)"] = "Krixi - Grim Batol",
+		["Krixiyo - Twisting Nether"] = "Krixi - Grim Batol",
+		["Kroxi - Crushridge"] = "Krixi - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixi - Grim Batol",
+		["Zuriz - Grim Batol"] = "Krixi - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Krixi - Grim Batol",
+		["Spacegoatx - Aggra (Português)"] = "Krixi - Grim Batol",
+		["Zolution - Grim Batol"] = "Krixi - Grim Batol",
+		["Asdasdasdfaf - Grim Batol"] = "Krixi - Grim Batol",
+		["Líttle - Grim Batol"] = "Krixi - Grim Batol",
+		["Nyrith - Grim Batol"] = "Krixi - Grim Batol",
+		["Donch - Shattered Hand"] = "Krixi - Grim Batol",
+		["Greenzuriz - Aggra (Português)"] = "Krixi - Grim Batol",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Krixiyo - Blackmoore"] = "Krixi - Grim Batol",
 	},
 	["profiles"] = {
 		["Krixi - Grim Batol"] = {

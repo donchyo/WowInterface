@@ -1,8 +1,8 @@
 Version: 1
 Frame: CharacterFrame
 FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
+Anchor: TOP
+X: -243
 Y: -116
 W: 444
 H: 444
@@ -27,13 +27,6 @@ X: -320
 Y: 33
 W: 365
 H: 200
-Frame: AltoholicFrame
-FrameLevel: 1
-Anchor: TOP
-X: -104
-Y: -84
-W: 832
-H: 447
 Frame: DetailsPlayerDetailsWindow
 FrameLevel: 1
 Anchor: RIGHT

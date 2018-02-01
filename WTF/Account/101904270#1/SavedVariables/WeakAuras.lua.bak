@@ -1,0 +1,1979 @@
+
+WeakAurasSaved = {
+	["dynamicIconCache"] = {
+		["Archimonde's Hatred Reborn"] = {
+			[235169] = 136030,
+		},
+		["Vampiric Blood"] = {
+			[55233] = 136168,
+		},
+		["Umbilicus Eternus"] = {
+			[193249] = 1392546,
+		},
+		["Anti-Magic Shell"] = {
+			[48707] = 136120,
+		},
+	},
+	["login_squelch_time"] = 10,
+	["displays"] = {
+		["Archimonde's Hatred Reborn"] = {
+			["glow"] = false,
+			["text1FontSize"] = 18,
+			["cooldownTextEnabled"] = true,
+			["customText"] = "function()\n    local value = select(17, UnitBuff(\"Krixidk\", \"Archimonde's Hatred Reborn\"))\n    if value then\n        if value < 1e6 then\n            return string.format(\"%dK\", value/1e3);\n        else\n            return string.format(\"%.2fM\", value/1e6)\n        end\n    end\n    \nend",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_specific_unit"] = true,
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["specificUnit"] = "Krixidk",
+				["showOn"] = "showOnActive",
+				["names"] = {
+					"Archimonde's Hatred Reborn", -- [1]
+				},
+				["unit"] = "member",
+				["debuffType"] = "HELPFUL",
+			},
+			["text1Containment"] = "OUTSIDE",
+			["text1Point"] = "RIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 40,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["disjunctive"] = "all",
+			["parent"] = "DK defensives",
+			["text2Containment"] = "OUTSIDE",
+			["desaturate"] = false,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["text2Point"] = "LEFT",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["numTriggers"] = 1,
+			["xOffset"] = 0,
+			["text2FontSize"] = 18,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = "%c",
+			["text2Enabled"] = true,
+			["text1Font"] = "Friz Quadrata TT",
+			["zoom"] = 0,
+			["auto"] = true,
+			["text1FontFlags"] = "OUTLINE",
+			["id"] = "Archimonde's Hatred Reborn",
+			["text2"] = "Absorb",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["text2Font"] = "Friz Quadrata TT",
+			["stickyDuration"] = false,
+			["inverse"] = false,
+			["yOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+		},
+		["Rune Tap"] = {
+			["glow"] = false,
+			["text1FontSize"] = 18,
+			["cooldownTextEnabled"] = true,
+			["customText"] = "function()\n    local value = select(17, UnitBuff(\"player\", \"Anti-Magic Shell\"))\n    if value then\n        if value < 1e6 then\n            return string.format(\"%dK\", value/1e3);\n        else\n            return string.format(\"%.2fM\", value/1e6)\n        end\n    end\n    \nend",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_specific_unit"] = true,
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["specificUnit"] = "Krixidk",
+				["showOn"] = "showOnActive",
+				["names"] = {
+					"Rune Tap", -- [1]
+				},
+				["unit"] = "member",
+				["debuffType"] = "HELPFUL",
+			},
+			["text1Containment"] = "OUTSIDE",
+			["text1Point"] = "RIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 40,
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["text2Point"] = "LEFT",
+			["parent"] = "DK defensives",
+			["text2Containment"] = "OUTSIDE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["xOffset"] = 0,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["numTriggers"] = 1,
+			["text1Font"] = "Friz Quadrata TT",
+			["text2FontSize"] = 18,
+			["text2Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = " ",
+			["text2Enabled"] = true,
+			["text1FontFlags"] = "OUTLINE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["id"] = "Rune Tap",
+			["text2"] = "40%",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["stickyDuration"] = false,
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["disjunctive"] = "all",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["desaturate"] = false,
+		},
+		["pet casting"] = {
+			["glow"] = false,
+			["text1FontSize"] = 12,
+			["cooldownTextEnabled"] = true,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "custom",
+				["subeventSuffix"] = "_CAST_START",
+				["custom_hide"] = "timed",
+				["duration"] = "5",
+				["event"] = "Health",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["custom"] = "function(event, ...)\n    \n    --[[ if subevent == \"SPELL_CAST_START\" then \n        local timeStamp, subevent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName, spellSchool, extraSpellID, extraSpellName, extraSchool = ...\n        \n        print(UnitDebuff(UnitGUID(\"target\"), \"Enslave Demon\"))\n        \n    end\n    --]]\n    \n    \n    if event == \"UNIT_SPELLCAST_START\" then \n        local unitID, spell, rank, lineID, spellID = ...\n        print(unitID)\n        if (UnitDebuff(unitID, \"Enslave Demon\")) then\n            print(\"unit is enslaved\")\n        end\n    end\n    \n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+				["events"] = "COMBAT_LOG_EVENT_UNFILTERED, UNIT_SPELLCAST_START",
+				["custom_type"] = "event",
+				["showOn"] = "showOnActive",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["text1Point"] = "BOTTOMRIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 64,
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["text2Containment"] = "INSIDE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Point"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["disjunctive"] = "all",
+			["text1Containment"] = "INSIDE",
+			["text2FontSize"] = 24,
+			["inverse"] = false,
+			["text1Font"] = "Friz Quadrata TT",
+			["text1"] = "%s",
+			["text1FontFlags"] = "OUTLINE",
+			["anchorFrameType"] = "SCREEN",
+			["text2"] = "%p",
+			["auto"] = true,
+			["frameStrata"] = 1,
+			["id"] = "pet casting",
+			["text2Font"] = "Friz Quadrata TT",
+			["text2Enabled"] = false,
+			["width"] = 64,
+			["zoom"] = 0,
+			["xOffset"] = 0,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["conditions"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+			},
+		},
+		["Anti-Magic Shell"] = {
+			["glow"] = false,
+			["text1FontSize"] = 18,
+			["cooldownTextEnabled"] = true,
+			["customText"] = "function()\n    local value = select(17, UnitBuff(\"Krixidk\", \"Anti-Magic Shell\"))\n    if value then\n        print(value)\n        \n        if value < 1e6 then\n            return string.format(\"%dK\", value/1e3);\n        else\n            return string.format(\"%.2fM\", value/1e6)\n        end\n    end\n    \nend",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_specific_unit"] = true,
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["specificUnit"] = "Krixidk",
+				["showOn"] = "showOnActive",
+				["names"] = {
+					"Anti-Magic Shell", -- [1]
+				},
+				["unit"] = "member",
+				["debuffType"] = "HELPFUL",
+			},
+			["text1Containment"] = "OUTSIDE",
+			["text1Point"] = "RIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 40,
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["disjunctive"] = "all",
+			["parent"] = "DK defensives",
+			["text2Containment"] = "OUTSIDE",
+			["desaturate"] = false,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["text2Point"] = "LEFT",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["numTriggers"] = 1,
+			["xOffset"] = 0,
+			["text2FontSize"] = 18,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = "%c",
+			["text2Enabled"] = true,
+			["text1Font"] = "Friz Quadrata TT",
+			["zoom"] = 0,
+			["auto"] = true,
+			["text1FontFlags"] = "OUTLINE",
+			["id"] = "Anti-Magic Shell",
+			["text2"] = "Absorb Magic",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["text2Font"] = "Friz Quadrata TT",
+			["stickyDuration"] = false,
+			["inverse"] = false,
+			["yOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+		},
+		["Dancing Rune Weapon"] = {
+			["glow"] = false,
+			["text1FontSize"] = 18,
+			["cooldownTextEnabled"] = true,
+			["customText"] = "function()\n    local value = select(17, UnitBuff(\"player\", \"Anti-Magic Shell\"))\n    if value then\n        if value < 1e6 then\n            return string.format(\"%dK\", value/1e3);\n        else\n            return string.format(\"%.2fM\", value/1e6)\n        end\n    end\n    \nend",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_specific_unit"] = true,
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["specificUnit"] = "Krixidk",
+				["showOn"] = "showOnActive",
+				["names"] = {
+					"Dancing Rune Weapon", -- [1]
+				},
+				["unit"] = "member",
+				["debuffType"] = "HELPFUL",
+			},
+			["text1Containment"] = "OUTSIDE",
+			["text1Point"] = "RIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 40,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["text2Point"] = "LEFT",
+			["parent"] = "DK defensives",
+			["text2Containment"] = "OUTSIDE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["xOffset"] = 0,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["numTriggers"] = 1,
+			["text1Font"] = "Friz Quadrata TT",
+			["text2FontSize"] = 18,
+			["text2Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = " ",
+			["text2Enabled"] = true,
+			["text1FontFlags"] = "OUTLINE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["id"] = "Dancing Rune Weapon",
+			["text2"] = "40% Parry",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["stickyDuration"] = false,
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["disjunctive"] = "all",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["desaturate"] = false,
+		},
+		["DK defensives"] = {
+			["grow"] = "DOWN",
+			["controlledChildren"] = {
+				"Vampiric Blood", -- [1]
+				"Umbilicus Eternus", -- [2]
+				"Anti-Magic Shell", -- [3]
+				"Archimonde's Hatred Reborn", -- [4]
+				"Dancing Rune Weapon", -- [5]
+				"Icebound Fortitude", -- [6]
+				"Rune Tap", -- [7]
+			},
+			["xOffset"] = -279.999877929688,
+			["yOffset"] = 184.888580322266,
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["space"] = -8,
+			["background"] = "None",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["backgroundInset"] = 0,
+			["selfPoint"] = "TOP",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["showOn"] = "showOnActive",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["stagger"] = 0,
+			["height"] = 231.999969482422,
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["animate"] = false,
+			["border"] = "None",
+			["regionType"] = "dynamicgroup",
+			["sort"] = "none",
+			["expanded"] = false,
+			["constantFactor"] = "RADIUS",
+			["borderOffset"] = 16,
+			["id"] = "DK defensives",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 40.0000610351563,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["radius"] = 200,
+			["numTriggers"] = 1,
+			["disjunctive"] = "all",
+			["align"] = "CENTER",
+			["conditions"] = {
+			},
+			["untrigger"] = {
+			},
+			["rotation"] = 0,
+		},
+		["Umbilicus Eternus"] = {
+			["glow"] = false,
+			["text1FontSize"] = 18,
+			["cooldownTextEnabled"] = true,
+			["customText"] = "function()\n    local value = select(17, UnitBuff(\"Krixidk\", \"Umbilicus Eternus\"))\n    if value then\n        if value < 1e6 then\n            return string.format(\"%dK\", value/1e3);\n        else\n            return string.format(\"%.2fM\", value/1e6)\n        end\n    end\n    \nend",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_specific_unit"] = true,
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+					193320, -- [1]
+				},
+				["specificUnit"] = "Krixidk",
+				["showOn"] = "showOnActive",
+				["names"] = {
+					"Umbilicus Eternus", -- [1]
+				},
+				["unit"] = "member",
+				["debuffType"] = "HELPFUL",
+			},
+			["text1Containment"] = "OUTSIDE",
+			["text1Point"] = "RIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 40,
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["disjunctive"] = "all",
+			["parent"] = "DK defensives",
+			["text2Containment"] = "OUTSIDE",
+			["desaturate"] = false,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["text2Point"] = "LEFT",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["numTriggers"] = 1,
+			["xOffset"] = 0,
+			["text2FontSize"] = 18,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = "%c",
+			["text2Enabled"] = true,
+			["text1Font"] = "Friz Quadrata TT",
+			["zoom"] = 0,
+			["auto"] = true,
+			["text1FontFlags"] = "OUTLINE",
+			["id"] = "Umbilicus Eternus",
+			["text2"] = "Absorb",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["text2Font"] = "Friz Quadrata TT",
+			["stickyDuration"] = false,
+			["inverse"] = false,
+			["yOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+		},
+		["Vampiric Blood"] = {
+			["glow"] = false,
+			["text1FontSize"] = 18,
+			["cooldownTextEnabled"] = true,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_specific_unit"] = true,
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["specificUnit"] = "Krixidk",
+				["showOn"] = "showOnActive",
+				["names"] = {
+					"Vampiric Blood", -- [1]
+				},
+				["unit"] = "member",
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["text1Point"] = "RIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 40,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["text2Point"] = "LEFT",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["text2Containment"] = "OUTSIDE",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1Containment"] = "OUTSIDE",
+			["xOffset"] = 0,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["numTriggers"] = 1,
+			["text1Font"] = "Friz Quadrata TT",
+			["text2FontSize"] = 18,
+			["text2Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = "%s",
+			["text2Enabled"] = true,
+			["text1FontFlags"] = "OUTLINE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["id"] = "Vampiric Blood",
+			["text2"] = "50% Hp&Healing",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["stickyDuration"] = false,
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["disjunctive"] = "all",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["parent"] = "DK defensives",
+		},
+		["Cast Bar WiP"] = {
+			["textFlags"] = "None",
+			["stacksSize"] = 12,
+			["xOffset"] = 0,
+			["stacksFlags"] = "None",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["rotateText"] = "NONE",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.707070499658585, -- [4]
+			},
+			["fontFlags"] = "OUTLINE",
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["sparkOffsetY"] = 0,
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["smoothProgress"] = false,
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["stacks"] = true,
+			["texture"] = "Blizzard Raid Bar",
+			["textFont"] = "Arial Narrow",
+			["stacksFont"] = "Arial Narrow",
+			["spark"] = false,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["borderInset"] = 11,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["disjunctive"] = "any",
+			["customText"] = "function()\n    if aura_env.state or aura_env.state.raidMark or aura_env.state.interrupted then\n        if aura_env.state.marked and not aura_env.state.interrupted then\n            -- print(\"test custom text\")\n            return \"\\124TInterface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_\" .. aura_env.state.raidMark .. \":8\\124t\"\n        end\n        \n        if aura_env.state.interrupted then \n            return \"\"\n        end\n    end\n    \n    \n    \nend\n\n\n\n\n\n\n\n\n\n\n",
+			["untrigger"] = {
+			},
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "event",
+			["displayTextLeft"] = "%n  %c",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.trackedSpell = \"\"\naura_env.lineID = \"\"\naura_env.state = \"\"\naura_env.spellSchool = \"\"\naura_env.tempStoreId = \"\"\naura_env.tempStoreSchool = \"\"\naura_env.index = \"\"\naura_env.debug = true\naura_env.spells = {\n    \n    -- Black Rook Hold\n    [225573] = true, -- Dark Mending\n    [200105] = true, -- Sacrifice Soul\n    [200248] = true, -- Arcane Blitz\n    [200256] = true, -- Phased Explosion\n    [200345] = true, -- Arrow Barrage\n    [200291] = true, -- Knife Dance\n    [200261] = true, -- Bonebreaking Strike\n    [201139] = true, -- Brutal Assault\n    [203163] = true, -- Sic Bats\n    [227913] = true, -- Felfrenzy\n    [214001] = true, -- Raven's Dive\n    [214003] = true, -- Coup de Grace\n    [193633] = true, -- Shoot\n    \n    --Cathedral of Eternal Night\n    [241598] = true, -- Shadow Wall\n    [236737] = true, -- Fel Strike\n    [238653] = true, -- Shadow Wave\n    [238543] = true, -- Demonic Mending\n    [242760] = true, -- Lumbering Crash\n    [237391] = true, -- Alluring Aroma\n    [237565] = true, -- Blistering Rain\n    [237558] = true, -- Fel Rejuvenation\n    [239232] = true, -- Blinding Glare\n    [190620] = true, -- Felblaze Orb\n    [234107] = true, -- Chaotic Energy\n    [238489] = true, -- Fel Blast\n    [242724] = true, -- Dread Scream\n    [239558] = true, -- Shadow Swipe\n    [239022] = true, -- Fel Bolt\n    [239201] = true, -- Fel Glare\n    [239266] = true, -- Venom Storm\n    \n    \n    -- Court of Stars\n    [210261] = true, -- Sound Alarm\n    [215204] = true, -- Hinder\n    [209027] = true, -- Quelling Strike\n    [209410] = true, -- Nightfall Orb\n    [209404] = true, -- Seal Magic\n    [209495] = true, -- Charged Smash\n    [209413] = true, -- Suppress\n    [225100] = true, -- Charging Station\n    [211299] = true, -- Searing Glare\n    [212784] = true, -- Eye Storm\n    [211470] = true, -- Bewitch\n    [208165] = true, -- Withering Soul\n    \n    -- Darkheart Thicket\n    [200658] = true, -- Star Shower\n    [200631] = true, -- Unnerving Screech\n    [204243] = true, -- Tormenting Eye\n    [225562] = true, -- Blood Metamorphosis\n    [201400] = true, -- Dread Inferno\n    \n    -- eye of azshara\n    [225089] = true, -- Lightning Prod\n    [195109] = true, -- Arc Lightning\n    [196870] = true, -- Storm\n    [195108] = true, -- Lightning Blast\n    [195046] = true, -- Rejuvenating Waters\n    [195129] = true, -- Thundering Stomp\n    [196028] = true, -- Arcane Rebound\n    [197105] = true, -- Polymorph: Fish\n    [196175] = true, -- Armorshell\n    [196127] = true, -- Spray Sand \n    [192135] = true, -- Bellowing Roar\n    \n    -- Halls of Valor\n    [198595] = true, -- Thunderous Bolt\n    [198931] = true, -- Healing Light\n    [198934] = true, -- Rune of Healing\n    [215433] = true, -- Holy Radiance\n    [199210] = true, -- Penetrating Shot\n    [192563] = true, -- Cleansing Flames\n    [198962] = true, -- Shattered Rune\n    [198959] = true, -- Etch\n    [192288] = true, -- Searing Light\n    [199726] = true, -- Unruly Yell\n    [198750] = true, -- Surge\n    [198888] = true, -- Lightning Breath\n    \n    -- Maw of souls\n    [195036] = true, -- Defiant Strike\n    [194657] = true, -- Soul Siphon\n    [194099] = true, -- Bile Breath\n    [199514] = true, -- Torrent of Souls\n    [198405] = true, -- Bone Chilling Scream\n    [199589] = true, -- Whirlpool of Souls\n    [195293] = true, -- Debilitating Shout\n    [202098] = true, -- Blackwater Barrage\n    \n    -- Neltharion's Lair\n    [202181] = true, -- Stone Gaze\n    [226296] = true, -- Piercing Shards\n    [183088] = true, -- Avalanche\n    [186269] = true, -- Stone Bolt\n    [193803] = true, -- Metamorphosis\n    [193585] = true, -- Bound\n    \n    -- Lower Return to Karazhan\n    [228254] = true, -- Soul Leech\n    [228239] = true, -- Terrifying Wail\n    [227999] = true, -- Pennies From Heaven\n    [228025] = true, -- Heat Wave\n    [227776] = true, -- Magic Magnificent\n    [227917] = true, -- Poetry Slam\n    [227925] = true, -- Final Curtain\n    [232115] = true, -- Firelands Portal\n    [228279] = true, -- Shadow Rejuvenation\n    [228280] = true, -- Oath of Fealty\n    [228278] = true, -- Demoralizing Shout\n    [241784] = true, -- Shadow Bolt Volley\n    [228625] = true, -- Banshee Wail\n    [241774] = true, -- Shield Smash\n    [227966] = true, -- Flashlight\n    [228606] = true, -- Healing Touch\n    [228603] = true, -- Charge\n    [241828] = true, -- Trampling Stomp\n    [228637] = true, -- Smash\n    \n    ------ moroes castspeeds will differ based on buffs and needs to be handeled\n    [227616] = true, -- Empowered Arms \n    [227672] = true, -- Will Breaker  \n    [227545] = true, -- Mana Drain\n    [227578] = true, -- Healing Stream\n    \n    -- Upper Return to Karazhan\n    [228700] = true, -- Arcane Barrage\n    [229608] = true, -- Mighty Swing\n    [229611] = true, -- Heavy Smash\n    \n    \n    -- The Seat of the Triumvirate\n    [249081] = true, -- Supression Field\n    [248133] = true, -- Stygian Blast\n    [248831] = true, -- Dread Screech\n    [248184] = true, -- Dark Flay\n    [245706] = true, -- Ruinous Strike\n    [244751] = true, -- Howling Dark\n    [248736] = true, -- Eternal Twilight\n    \n    \n    -- The Arcway\n    [193938] = true, -- Ooze Explosion\n    [211771] = true, -- Prophecies of Doom\n    [210645] = true, -- Arcanic Bane\n    [210684] = true, -- Siphon Essence\n    [226269] = true, -- Torment\n    [211007] = true, -- Eye of the Vortex\n    [211571] = true, -- Chaos Bolt\n    [211632] = true, -- Brand of the Legion\n    [211757] = true, -- Portal: Argus\n    [226285] = true, -- Demonic Ascension\n    [211785] = true, -- Shattering Stomp \n    [211875] = true, -- Bladestorm\n    [211917] = true, -- Felstorm\n    [211217] = true, -- Arcane Slicer\n    [226206] = true, -- Arcane Reconstruction\n    [203957] = true, -- Time Lock\n    [211115] = true, -- Phase Breach\n    \n    --Vault of the Wardens\n    [196799] = true, -- Unleash Fury \n    [196796] = true, -- Fel Gaze\n    [194070] = true, -- A Mother's Love\n    [191527] = true, -- Deafening Shout\n    [202658] = true, -- Drain\n    [195187] = true, -- Detonate\n    [214804] = true, -- Seed of Corruption\n    [201488] = true, -- Frightening Shout\n    \n    \n    [0] = false\n}\n\naura_env.debugSpells = {\n    -- debug\n    [2061] = true, -- flash heal\n    [212552] = true, -- wraith walk\n    [50977] = true, -- death gate\n    [698] = true, -- ritual of summoning\n    [164862] = true, -- Flap \n    [113656] = true, -- Fists of Fury\n    [116694] = true, -- Effuse\n    [117952] = true, -- Crackling Jade Lightning\n    [190984] = true, -- Wrath\n    [585] = true, -- Smite\n    [194153] = true, -- Lunar Strike\n    [47757] = true, -- Penance (some shit one for low lvl idk)\n    [8936] = true, -- Regrowth\n    [6201] = true, -- Create Healthstone\n    [202277] = true, -- Fel Flamestrike\n    [81082] = true, -- Noxious Breath\n    \n    \n    \n    [0] = false\n}   \n\naura_env.markIDToColor = {\n    [1] = {r=1.00,g=0.96,b=0.41},\n    [2] = {r=1.00,g=0.49,b=0.04},\n    [3] = {r=0.64,g=0.19,b=0.79},\n    [4] = {r=0.67,g=0.83,b=0.45},\n    [5] = {r=0.52,g=0.67,b=0.80},\n    [6] = {r=0.41,g=0.80,b=0.94},\n    [7] = {r=0.77,g=0.12,b=0.23},\n    [8] = {r=1.00,g=1.00,b=1.00}\n    \n    \n}\n\naura_env.mcAbleSpells = {\n    [226285] = true, -- Demonic Ascension\n    [211571] = true, -- Chaos Bolt\n    [211632] = true, -- Brand of the Legion\n    [228625] = true, -- Banshee Wail\n    [228254] = true, -- Soul Leech\n    [228239] = true, -- Terrifying Wail\n    [214001] = true, -- Raven's Dive\n    [214003] = true, -- Coup de Grace\n    \n        [81082] = true, -- Noxious Breath -- debugspell\n    \n}\n\n\n\n",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["type"] = "custom",
+					["colorA"] = 1,
+					["scaley"] = 1,
+					["duration_type"] = "seconds",
+					["alpha"] = 0,
+					["use_color"] = true,
+					["y"] = 0,
+					["x"] = 0,
+					["colorG"] = 1,
+					["scalex"] = 1,
+					["colorFunc"] = "function()\n    if not aura_env.state or not aura_env.state.spellColor or not aura_env.state.raidMark then\n        return 1,0,0,1\n    end\n    \n    \n    if aura_env.state.raidMark ~= 0 then\n        local markColor = aura_env.markIDToColor\n        return aura_env.markIDToColor[aura_env.state.raidMark].r,\n        aura_env.markIDToColor[aura_env.state.raidMark].g,\n        aura_env.markIDToColor[aura_env.state.raidMark].b, 1\n        \n    else\n        local colour = aura_env.state.spellColor\n        return colour.r, colour.g, colour.b, colour.a\n    end\n    \n    --    print(aura_env.state.spellColor)\n    --return aura_env.state.spellColor    \nend\n\n--[[if not aura_env.state or not aura_env.state.spellSchool or not aura_env.state.progressType then\n    return 1,0,0,1\nend\n\nif aura_env.state.interrupted then\n    return 1, 0, 0, 1\nelseif aura_env.state.spellSchool == 1 then  -- Physical\n    return 1.00, 1.00, 0.00, 1\n    \nelseif aura_env.state.spellSchool == 2 then -- Holy\n    return 1.00, 0.90, 0.50, 1\n    \nelseif aura_env.state.spellSchool == 4 then -- Fire\n    return 1.00, 0.50, 0.00, 1\n    \nelseif aura_env.state.spellSchool == 8 then -- Nature\n    return 0.30, 1.00, 0.30, 1\n    \nelseif aura_env.state.spellSchool == 16 then -- Frost\n    return 0.50, 1.00, 1.00, 1\n    \nelseif aura_env.state.spellSchool == 32 then -- Shadow\n    return 0.50, 0.50, 1.00, 1\n    \nelseif aura_env.state.spellSchool == 64 then -- Arcane\n    return 1.00, 0.50, 1.00, 1\n    \nelse\n    return 1,0,0,1\nend\nend--]]\n\n\n\n\n\n\n\n\n\n\n\n\n",
+					["rotate"] = 0,
+					["colorType"] = "custom",
+					["colorB"] = 1,
+				},
+				["finish"] = {
+					["colorR"] = 1,
+					["duration"] = "",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["type"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["x"] = 0,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["duration_type"] = "seconds",
+					["scalex"] = 1,
+					["colorFunc"] = "function()\n    if not aura_env.state or not aura_env.state.interrupted then\n        \n        return 1,0,0,1\n    end\nend\n\n\n\n\n\n\n\n\n\n",
+					["rotate"] = 0,
+					["use_color"] = false,
+					["colorA"] = 1,
+				},
+			},
+			["backdropInFront"] = false,
+			["text"] = true,
+			["zoom"] = 0,
+			["stickyDuration"] = false,
+			["timer"] = true,
+			["init_started"] = 1,
+			["borderOffset"] = 5,
+			["numTriggers"] = 2,
+			["height"] = 24.7777919769287,
+			["timerFlags"] = "None",
+			["displayTextRight"] = "%p",
+			["sparkBlendMode"] = "ADD",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["useAdjustededMax"] = false,
+			["width"] = 200,
+			["sparkHidden"] = "NEVER",
+			["url"] = "https://wago.io/Byp0kH_Sz/3",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Chat Message",
+						["subeventPrefix"] = "SPELL",
+						["events"] = "MY_TEST_EVENT",
+						["check"] = "event",
+						["custom"] = "--[[function(allstates, event, state)\n    if state then\n        print(\"in trigger 2\")\n        state.name = \"Trigger2\"\n        state.changed = true\n        return true\n    end\n    \nend --]]\n\n\n\n\n\n\n",
+						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["border"] = false,
+			["borderEdge"] = "None",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["borderSize"] = 16,
+			["sparkRotationMode"] = "AUTO",
+			["icon_side"] = "RIGHT",
+			["trigger"] = {
+				["type"] = "custom",
+				["custom_type"] = "stateupdate",
+				["unit"] = "player",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["events"] = "COMBAT_LOG_EVENT_UNFILTERED, UNIT_SPELLCAST_INTERRUPTED, UNIT_SPELLCAST_START, UNIT_SPELLCAST_CHANNEL_STOP, UNIT_SPELLCAST_CHANNEL_START",
+				["spellIds"] = {
+				},
+				["custom"] = "function(allstates, event, ...)\n    local timestamp = GetTime()\n    if aura_env.debug then\n        aura_env.spells = aura_env.debugSpells\n    end\n    \n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" and aura_env.spells[select(12, ...)]then\n        aura_env.tempStoreId = select(12, ...)\n        aura_env.tempStoreSchool = select(14, ...) \n        \n        if aura_env.tempStoreId == aura_env.trackedSpell then\n            \n            allstates[aura_env.index] = allstates[aura_env.index] or {}\n            local state = allstates[aura_env.index]\n            local spellSchoolTemp = select(14, ...)\n            local raidFlag = select(7, ...)\n            state.spellSchool = select(14, ...) \n            local playerGUID = playerGUID or UnitGUID(\"player\")\n            \n            state.spellColor = COMBATLOG_DEFAULT_COLORS.schoolColoring[spellSchoolTemp]\n            WeakAuras.GetRegion(aura_env.id, lineID):SetInverse(false)\n            state.changed = true\n            \n            local currentMark = select(7, ...)\n            \n            state.raidMark = currentMark\n            state.marked = false\n            if currentMark ~= 0 then\n                state.marked = true\n                if currentMark == 4 then\n                    state.raidMark = 3\n                elseif currentMark == 8 then\n                    state.raidMark = 4\n                elseif currentMark == 16 then\n                    state.raidMark = 5\n                elseif currentMark == 32 then \n                    state.raidMark = 6\n                elseif currentMark == 64 then\n                    state.raidMark = 7\n                elseif currentMark == 128 then\n                    state.raidMark = 8\n                end\n            end\n            \n            \n            return true\n        end\n    end\n    \n    if event == \"UNIT_SPELLCAST_START\"  then\n        local unitID, spell, rank, lineID, spellID = ...\n        \n        if aura_env.mcAbleSpells[spellID] and ((UnitDebuff(unitID, \"Enslave Demon\")) or (UnitDebuff(unitID, \"Control Undead\")) or (UnitDebuff(unitID, \"Mind Control\"))) then\n            print(\"Cast Bar WiP: Debug Message \\\"Unit is mindcontrolled, not creating a bar\\\"\")\n            return true\n        end\n        print(\"Cast Bar WiP: Debug Message \\\"Bar would have been created\\\"\") \n        \n        if aura_env.spells[spellID] then\n            aura_env.trackedSpell = spellID\n            local _, rank, icon, castingTime, minRange, maxRange, spellID = GetSpellInfo(spellID)\n            local playerHaste = UnitSpellHaste(\"player\")\n            \n            local duration = ((playerHaste/100 + 1) * castingTime)*.001\n            \n            name = GetUnitName(unitID)\n            allstates[lineID] = allstates[lineID] or {}\n            local state = allstates[lineID]\n            aura_env.index = lineID\n            \n            state.name = name\n            state.icon = icon\n            state.duration = duration\n            state.spellId = spellID\n            state.progressType = \"timed\"\n            state.expirationTime= timestamp + duration\n            state.spellSchool = \"0\"\n            state.autoHide = true\n            state.changed = true\n            state.show = true            \n            return true\n        end\n    end\n    \n    if event == \"UNIT_SPELLCAST_CHANNEL_START\" then\n        \n        local unitID, spell, rank, lineID, spellID = ...\n        if string.find(unitID, \"nameplate\") then\n            if aura_env.spells[spellID] then\n                aura_env.trackedSpell = spellID\n                local _, _, icon, _, _, _, spellID = GetSpellInfo(spellID)\n                local name, _, _, _, startTime, endTime = UnitChannelInfo(unitID)\n                \n                local castingTime = endTime - startTime\n                local playerHaste = GetCombatRatingBonus(CR_HASTE_SPELL)\n                if castingTime then \n                    local duration = castingTime*.001\n                    name = GetUnitName(unitID)\n                    \n                    allstates[unitID] = allstates[unitID] or {}\n                    local state = allstates[unitID]\n                    \n                    \n                    aura_env.index = unitID \n                    state.name = name\n                    state.icon = icon\n                    state.duration = duration\n                    state.spellId = spellID\n                    state.progressType = \"timed\"\n                    state.expirationTime= timestamp + duration\n                    state.spellSchool = \"0\"\n                    state.autoHide = true\n                    state.changed = true\n                    state.show = true\n                    return true\n                end\n            end\n            \n        end\n    end\n    \n    if event == \"UNIT_SPELLCAST_INTERRUPTED\" then\n        \n        \n        local unitID, spell, rank, lineID, spellID = ...\n        if spellID == aura_env.trackedSpell and allstates[lineID] then\n            \n            allstates[lineID] = allstates[lineID] or {}\n            local state = allstates[lineID]\n            WeakAuras.GetRegion(aura_env.id, lineID):SetInverse(true)\n            state.interrupted = true \n            state.name = \"Interrupted\" \n            state.progressType = \"static\" \n            state.value = 0\n            state.total = 1\n            state.expirationTime= GetTime() +0.5\n            state.spellColor = nil\n            state.interrupted = true\n            \n            state.changed = true \n            return true\n            \n        end\n    end\n    \n    \n    \n    if event == \"UNIT_SPELLCAST_CHANNEL_STOP\" then\n        \n        local unitID, spell, rank, lineID, spellID = ...\n        \n        if spellID == aura_env.trackedSpell and allstates[unitID] then\n            local state = allstates[unitID]\n            state.name = \"Interrupted\" \n            state.progressType = \"static\" \n            state.value = 0\n            state.total = 1\n            state.expirationTime= GetTime() +0.5\n            state.spellColor = nil\n            state.interrupted = true\n            \n            state.changed = true \n        end\n    end\n    \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+				["check"] = "event",
+				["showOn"] = "showOnActive",
+				["subeventSuffix"] = "_CAST_START",
+				["names"] = {
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["sparkOffsetX"] = 0,
+			["sparkHeight"] = 30,
+			["sparkWidth"] = 10,
+			["sparkRotation"] = 0,
+			["stacksColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["timerSize"] = 22,
+			["borderInFront"] = true,
+			["id"] = "Cast Bar WiP",
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["textSize"] = 19,
+			["auto"] = true,
+			["inverse"] = false,
+			["sparkDesature"] = false,
+			["orientation"] = "HORIZONTAL",
+			["conditions"] = {
+			},
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["parent"] = "Dungeon spelltracking",
+		},
+		["Dungeon spelltracking"] = {
+			["grow"] = "UP",
+			["controlledChildren"] = {
+				"Cast Bar", -- [1]
+				"Cast Bar WiP", -- [2]
+			},
+			["disjunctive"] = "all",
+			["yOffset"] = 95.1109924316406,
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["space"] = 2,
+			["background"] = "None",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["backgroundInset"] = 0,
+			["selfPoint"] = "BOTTOM",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["showOn"] = "showOnActive",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["stagger"] = 0,
+			["height"] = 51.5555419921875,
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["animate"] = false,
+			["border"] = "None",
+			["regionType"] = "dynamicgroup",
+			["sort"] = "none",
+			["expanded"] = true,
+			["constantFactor"] = "RADIUS",
+			["borderOffset"] = 16,
+			["id"] = "Dungeon spelltracking",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 200.000030517578,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["radius"] = 200,
+			["numTriggers"] = 1,
+			["xOffset"] = -270.222229003906,
+			["align"] = "CENTER",
+			["conditions"] = {
+			},
+			["untrigger"] = {
+			},
+			["rotation"] = 0,
+		},
+		["Cast Bar"] = {
+			["textFlags"] = "None",
+			["stacksSize"] = 12,
+			["xOffset"] = 0,
+			["stacksFlags"] = "None",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["rotateText"] = "NONE",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.707070499658585, -- [4]
+			},
+			["fontFlags"] = "OUTLINE",
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["sparkOffsetY"] = 0,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["smoothProgress"] = false,
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["stacks"] = true,
+			["texture"] = "Blizzard Raid Bar",
+			["textFont"] = "Arial Narrow",
+			["stacksFont"] = "Arial Narrow",
+			["spark"] = false,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["borderInset"] = 11,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["disjunctive"] = "any",
+			["customText"] = "\n\n\n\n",
+			["untrigger"] = {
+			},
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["displayTextLeft"] = "%n",
+			["id"] = "Cast Bar",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "custom",
+					["colorR"] = 1,
+					["colorA"] = 1,
+					["colorType"] = "custom",
+					["duration_type"] = "seconds",
+					["alpha"] = 0,
+					["scaley"] = 1,
+					["y"] = 0,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["scalex"] = 1,
+					["colorFunc"] = "function()\n    if not aura_env.state or not aura_env.state.spellColor then\n        return 1,0,0,1\n    end\n    local colour = aura_env.state.spellColor\n    return colour.r, colour.g, colour.b, colour.a\n    --    print(aura_env.state.spellColor)\n    --return aura_env.state.spellColor    \nend\n\n--[[if not aura_env.state or not aura_env.state.spellSchool or not aura_env.state.progressType then\n    return 1,0,0,1\nend\n\nif aura_env.state.interrupted then\n    return 1, 0, 0, 1\nelseif aura_env.state.spellSchool == 1 then  -- Physical\n    return 1.00, 1.00, 0.00, 1\n    \nelseif aura_env.state.spellSchool == 2 then -- Holy\n    return 1.00, 0.90, 0.50, 1\n    \nelseif aura_env.state.spellSchool == 4 then -- Fire\n    return 1.00, 0.50, 0.00, 1\n    \nelseif aura_env.state.spellSchool == 8 then -- Nature\n    return 0.30, 1.00, 0.30, 1\n    \nelseif aura_env.state.spellSchool == 16 then -- Frost\n    return 0.50, 1.00, 1.00, 1\n    \nelseif aura_env.state.spellSchool == 32 then -- Shadow\n    return 0.50, 0.50, 1.00, 1\n    \nelseif aura_env.state.spellSchool == 64 then -- Arcane\n    return 1.00, 0.50, 1.00, 1\n    \nelse\n    return 1,0,0,1\nend\nend--]]\n\n\n\n\n\n\n\n\n",
+					["rotate"] = 0,
+					["x"] = 0,
+					["use_color"] = true,
+				},
+				["finish"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["type"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["duration"] = "",
+					["y"] = 0,
+					["x"] = 0,
+					["colorType"] = "custom",
+					["duration_type"] = "seconds",
+					["colorFunc"] = "function()\n    if not aura_env.state or not aura_env.state.interrupted then\n        \n        return 1,0,0,1\n    end\nend\n\n\n\n\n\n\n\n\n\n",
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["use_color"] = false,
+				},
+			},
+			["trigger"] = {
+				["type"] = "custom",
+				["custom_type"] = "stateupdate",
+				["unit"] = "player",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["custom"] = "function(allstates, event, ...)\n    local timestamp = GetTime()\n    if aura_env.debug then\n        aura_env.spells = aura_env.debugSpells\n    end\n    \n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" and aura_env.spells[select(12, ...)]then\n        aura_env.tempStoreId = select(12, ...)\n        aura_env.tempStoreSchool = select(14, ...) \n        \n        if aura_env.tempStoreId == aura_env.trackedSpell then\n            \n            allstates[aura_env.index] = allstates[aura_env.index] or {}\n            local state = allstates[aura_env.index]\n            local spellSchoolTemp = select(14, ...)\n            local raidFlag = select(7, ...)\n            state.spellSchool = select(14, ...) \n            local playerGUID = playerGUID or UnitGUID(\"player\")\n            \n            state.spellColor = COMBATLOG_DEFAULT_COLORS.schoolColoring[spellSchoolTemp]\n            WeakAuras.GetRegion(aura_env.id, lineID):SetInverse(false)\n            state.changed = true\n            return true\n        end\n    end\n    \n    \n    if event == \"UNIT_SPELLCAST_INTERRUPTED\" then\n        \n        \n        local unitID, spell, rank, lineID, spellID = ...\n        if spellID == aura_env.trackedSpell and allstates[lineID] then\n            \n            allstates[lineID] = allstates[lineID] or {}\n            local state = allstates[lineID]\n            WeakAuras.GetRegion(aura_env.id, lineID):SetInverse(true)\n            state.interrupted = true \n            state.name = \"Interrupted\" \n            state.progressType = \"static\" \n            state.value = 0\n            state.total = 1\n            state.expirationTime= GetTime() +0.5\n            state.spellColor = nil\n            state.changed = true \n            return true\n            \n        end\n    end\n    \n    if event == \"UNIT_SPELLCAST_START\"  then\n        local unitID, spell, rank, lineID, spellID = ...\n        if aura_env.spells[spellID] then\n            aura_env.trackedSpell = spellID\n            local _, rank, icon, castingTime, minRange, maxRange, spellID = GetSpellInfo(spellID)\n            local playerHaste = UnitSpellHaste(\"player\")\n            \n            local duration = ((playerHaste/100 + 1) * castingTime)*.001\n            \n            name = GetUnitName(unitID)\n            allstates[lineID] = allstates[lineID] or {}\n            local state = allstates[lineID]\n            aura_env.index = lineID\n            \n            state.name = name\n            state.icon = icon\n            state.duration = duration\n            state.spellId = spellID\n            state.progressType = \"timed\"\n            state.expirationTime= timestamp + duration\n            state.spellSchool = \"0\"\n            state.autoHide = true\n            state.changed = true\n            state.show = true            \n            return true\n        end\n    end\n    \n    if event == \"UNIT_SPELLCAST_CHANNEL_START\" then\n        \n        local unitID, spell, rank, lineID, spellID = ...\n        if string.find(unitID, \"nameplate\") then\n            if aura_env.spells[spellID] then\n                aura_env.trackedSpell = spellID\n                local _, _, icon, _, _, _, spellID = GetSpellInfo(spellID)\n                local name, _, _, _, startTime, endTime = UnitChannelInfo(unitID)\n                \n                local castingTime = endTime - startTime\n                local playerHaste = GetCombatRatingBonus(CR_HASTE_SPELL)\n                if castingTime then \n                    local duration = castingTime*.001\n                    name = GetUnitName(unitID)\n                    \n                    allstates[unitID] = allstates[unitID] or {}\n                    local state = allstates[unitID]\n                    \n                    --[[==============\n                    local spellSchoolTemp = select(14, ...)\n                    local raidFlag = select(7, ...)\n                    state.spellSchool = select(14, ...) \n                    \n                    state.spellColor = COMBATLOG_DEFAULT_COLORS.schoolColoring[spellSchoolTemp]\n                    WeakAuras.GetRegion(aura_env.id, lineID):SetInverse(false)\n                    state.changed = true\n                    ]]--\n                    \n                    aura_env.index = unitID -- changed\n                    state.name = name\n                    state.icon = icon\n                    state.duration = duration\n                    state.spellId = spellID\n                    state.progressType = \"timed\"\n                    state.expirationTime= timestamp + duration\n                    state.spellSchool = \"0\" --changed\n                    state.autoHide = true\n                    state.changed = true\n                    state.show = true\n                    return true\n                end\n            end\n            \n        end\n    end\n    \n    if event == \"UNIT_SPELLCAST_CHANNEL_STOP\" then\n        \n        local unitID, spell, rank, lineID, spellID = ...\n        \n        if spellID == aura_env.trackedSpell and allstates[unitID] then\n            local state = allstates[unitID]\n            state.name = \"Interrupted\" \n            state.progressType = \"static\" \n            state.value = 0\n            state.total = 1\n            state.expirationTime= GetTime() +0.5\n            state.spellColor = nil\n            state.changed = true \n        end\n    end\n    \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+				["spellIds"] = {
+				},
+				["events"] = "COMBAT_LOG_EVENT_UNFILTERED, UNIT_SPELLCAST_INTERRUPTED, UNIT_SPELLCAST_START, UNIT_SPELLCAST_CHANNEL_STOP, UNIT_SPELLCAST_CHANNEL_START",
+				["showOn"] = "showOnActive",
+				["check"] = "event",
+				["subeventSuffix"] = "_CAST_START",
+				["names"] = {
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["text"] = true,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["stickyDuration"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["init_started"] = 1,
+			["timer"] = true,
+			["numTriggers"] = 2,
+			["height"] = 24.7777919769287,
+			["timerFlags"] = "None",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.trackedSpell = \"\"\naura_env.lineID = \"\"\naura_env.state = \"\"\naura_env.spellSchool = \"\"\naura_env.tempStoreId = \"\"\naura_env.tempStoreSchool = \"\"\naura_env.index = \"\"\naura_env.debug = false\naura_env.spells = {\n    \n    -- Black Rook Hold\n    [225573] = true, -- Dark Mending\n    [200105] = true, -- Sacrifice Soul\n    [200248] = true, -- Arcane Blitz\n    [200256] = true, -- Phased Explosion\n    [200345] = true, -- Arrow Barrage\n    [200291] = true, -- Knife Dance\n    [200261] = true, -- Bonebreaking Strike\n    [201139] = true, -- Brutal Assault\n    [203163] = true, -- Sic Bats\n    [227913] = true, -- Felfrenzy\n    [214001] = true, -- Raven's Dive\n    [214003] = true, -- Coup de Grace\n    [193633] = true, -- Shoot\n    \n    --Cathedral of Eternal Night\n    [241598] = true, -- Shadow Wall\n    [236737] = true, -- Fel Strike\n    [238653] = true, -- Shadow Wave\n    [238543] = true, -- Demonic Mending\n    [242760] = true, -- Lumbering Crash\n    [237391] = true, -- Alluring Aroma\n    [237565] = true, -- Blistering Rain\n    [237558] = true, -- Fel Rejuvenation\n    [239232] = true, -- Blinding Glare\n    [190620] = true, -- Felblaze Orb\n    [234107] = true, -- Chaotic Energy\n    [238489] = true, -- Fel Blast\n    [242724] = true, -- Dread Scream\n    [239558] = true, -- Shadow Swipe\n    [239022] = true, -- Fel Bolt\n    [239201] = true, -- Fel Glare\n    [239266] = true, -- Venom Storm\n    \n    \n    -- Court of Stars\n    [210261] = true, -- Sound Alarm\n    [215204] = true, -- Hinder\n    [209027] = true, -- Quelling Strike\n    [209410] = true, -- Nightfall Orb\n    [209404] = true, -- Seal Magic\n    [209495] = true, -- Charged Smash\n    [209413] = true, -- Suppress\n    [225100] = true, -- Charging Station\n    [211299] = true, -- Searing Glare\n    [212784] = true, -- Eye Storm\n    [211470] = true, -- Bewitch\n    [208165] = true, -- Withering Soul\n    \n    -- Darkheart Thicket\n    [200658] = true, -- Star Shower\n    [200631] = true, -- Unnerving Screech\n    [204243] = true, -- Tormenting Eye\n    [225562] = true, -- Blood Metamorphosis\n    [201400] = true, -- Dread Inferno\n    \n    -- eye of azshara\n    [225089] = true, -- Lightning Prod\n    [195109] = true, -- Arc Lightning\n    [196870] = true, -- Storm\n    [195108] = true, -- Lightning Blast\n    [195046] = true, -- Rejuvenating Waters\n    [195129] = true, -- Thundering Stomp\n    [196028] = true, -- Arcane Rebound\n    [197105] = true, -- Polymorph: Fish\n    [196175] = true, -- Armorshell\n    [196127] = true, -- Spray Sand \n    [192135] = true, -- Bellowing Roar\n    \n    -- Halls of Valor\n    [198595] = true, -- Thunderous Bolt\n    [198931] = true, -- Healing Light\n    [198934] = true, -- Rune of Healing\n    [215433] = true, -- Holy Radiance\n    [199210] = true, -- Penetrating Shot\n    [192563] = true, -- Cleansing Flames\n    [198962] = true, -- Shattered Rune\n    [198959] = true, -- Etch\n    [192288] = true, -- Searing Light\n    [199726] = true, -- Unruly Yell\n    [198750] = true, -- Surge\n    [198888] = true, -- Lightning Breath\n    \n    -- Maw of souls\n    [195036] = true, -- Defiant Strike\n    [194657] = true, -- Soul Siphon\n    [194099] = true, -- Bile Breath\n    [199514] = true, -- Torrent of Souls\n    [198405] = true, -- Bone Chilling Scream\n    [199589] = true, -- Whirlpool of Souls\n    [195293] = true, -- Debilitating Shout\n    [202098] = true, -- Blackwater Barrage\n    \n    -- Neltharion's Lair\n    [202181] = true, -- Stone Gaze\n    [226296] = true, -- Piercing Shards\n    [183088] = true, -- Avalanche\n    [186269] = true, -- Stone Bolt\n    [193803] = true, -- Metamorphosis\n    [193585] = true, -- Bound\n    \n    -- Lower Return to Karazhan\n    [228254] = true, -- Soul Leech\n    [228239] = true, -- Terrifying Wail\n    [227999] = true, -- Pennies From Heaven\n    [228025] = true, -- Heat Wave\n    [227776] = true, -- Magic Magnificent\n    [227917] = true, -- Poetry Slam\n    [227925] = true, -- Final Curtain\n    [232115] = true, -- Firelands Portal\n    [228279] = true, -- Shadow Rejuvenation\n    [228280] = true, -- Oath of Fealty\n    [228278] = true, -- Demoralizing Shout\n    [241784] = true, -- Shadow Bolt Volley\n    [228625] = true, -- Banshee Wail\n    [241774] = true, -- Shield Smash\n    [227966] = true, -- Flashlight\n    [228606] = true, -- Healing Touch\n    [228603] = true, -- Charge\n    [241828] = true, -- Trampling Stomp\n    [228637] = true, -- Smash\n    \n    ------ moroes castspeeds will differ based on buffs and needs to be handeled\n    [227616] = true, -- Empowered Arms \n    [227672] = true, -- Will Breaker  \n    [227545] = true, -- Mana Drain\n    [227578] = true, -- Healing Stream\n    \n    -- Upper Return to Karazhan\n    [228700] = true, -- Arcane Barrage\n    [229608] = true, -- Mighty Swing\n    [229611] = true, -- Heavy Smash\n    \n    \n    -- The Seat of the Triumvirate\n    [249081] = true, -- Supression Field\n    [248133] = true, -- Stygian Blast\n    [248831] = true, -- Dread Screech\n    [248184] = true, -- Dark Flay\n    [245706] = true, -- Ruinous Strike\n    [244751] = true, -- Howling Dark\n    [248736] = true, -- Eternal Twilight\n    \n    \n    -- The Arcway\n    [193938] = true, -- Ooze Explosion\n    [211771] = true, -- Prophecies of Doom\n    [210645] = true, -- Arcanic Bane\n    [210684] = true, -- Siphon Essence\n    [226269] = true, -- Torment\n    [211007] = true, -- Eye of the Vortex\n    [211571] = true, -- Chaos Bolt\n    [211632] = true, -- Brand of the Legion\n    [211757] = true, -- Portal: Argus\n    [226285] = true, -- Demonic Ascension\n    [211785] = true, -- Shattering Stomp \n    [211875] = true, -- Bladestorm\n    [211917] = true, -- Felstorm\n    [211217] = true, -- Arcane Slicer\n    [226206] = true, -- Arcane Reconstruction\n    [203957] = true, -- Time Lock\n    [211115] = true, -- Phase Breach\n    \n    --Vault of the Wardens\n    [196799] = true, -- Unleash Fury \n    [196796] = true, -- Fel Gaze\n    [194070] = true, -- A Mother's Love\n    [191527] = true, -- Deafening Shout\n    [202658] = true, -- Drain\n    [195187] = true, -- Detonate\n    [214804] = true, -- Seed of Corruption\n    [201488] = true, -- Frightening Shout\n    \n    \n    [0] = false\n}\n\naura_env.debugSpells = {\n    -- debug\n    [2061] = true, -- flash heal\n    [212552] = true, -- wraith walk\n    [50977] = true, -- death gate\n    [698] = true, -- ritual of summoning\n    [164862] = true, -- Flap \n    [113656] = true, -- Fists of Fury\n    [116694] = true, -- Effuse\n    [117952] = true, -- Crackling Jade Lightning\n    [190984] = true, -- Wrath\n    [585] = true, -- Smite\n    [194153] = true, -- Lunar Strike\n    [47757] = true, -- Penance (some shit one for low lvl idk)\n    [8936] = true, -- Regrowth\n    \n    \n    \n    [0] = false\n}   \n\n\n\n",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
+			["sparkBlendMode"] = "ADD",
+			["useAdjustededMax"] = false,
+			["url"] = "https://wago.io/Byp0kH_Sz/3",
+			["width"] = 200,
+			["textSize"] = 12,
+			["backdropInFront"] = false,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Chat Message",
+						["subeventPrefix"] = "SPELL",
+						["custom"] = "--[[function(allstates, event, state)\n    if state then\n        print(\"in trigger 2\")\n        state.name = \"Trigger2\"\n        state.changed = true\n        return true\n    end\n    \nend --]]\n\n\n\n\n\n\n",
+						["check"] = "event",
+						["unevent"] = "auto",
+						["custom_type"] = "stateupdate",
+						["events"] = "MY_TEST_EVENT",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["border"] = false,
+			["borderEdge"] = "None",
+			["zoom"] = 0,
+			["borderSize"] = 16,
+			["displayTextRight"] = "%p",
+			["icon_side"] = "RIGHT",
+			["icon"] = true,
+			["sparkWidth"] = 10,
+			["sparkHeight"] = 30,
+			["sparkRotation"] = 0,
+			["sparkRotationMode"] = "AUTO",
+			["stacksColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["timerSize"] = 12,
+			["sparkOffsetX"] = 0,
+			["sparkHidden"] = "NEVER",
+			["borderInFront"] = true,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["borderOffset"] = 5,
+			["inverse"] = false,
+			["sparkDesature"] = false,
+			["orientation"] = "HORIZONTAL",
+			["conditions"] = {
+			},
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["parent"] = "Dungeon spelltracking",
+		},
+		["Icebound Fortitude"] = {
+			["glow"] = false,
+			["text1FontSize"] = 18,
+			["cooldownTextEnabled"] = true,
+			["customText"] = "function()\n    local value = select(17, UnitBuff(\"player\", \"Anti-Magic Shell\"))\n    if value then\n        if value < 1e6 then\n            return string.format(\"%dK\", value/1e3);\n        else\n            return string.format(\"%.2fM\", value/1e6)\n        end\n    end\n    \nend",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_specific_unit"] = true,
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["specificUnit"] = "Krixidk",
+				["showOn"] = "showOnActive",
+				["names"] = {
+					"Icebound Fortitude", -- [1]
+				},
+				["unit"] = "member",
+				["debuffType"] = "HELPFUL",
+			},
+			["text1Containment"] = "OUTSIDE",
+			["text1Point"] = "RIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 40,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["text2Point"] = "LEFT",
+			["parent"] = "DK defensives",
+			["text2Containment"] = "OUTSIDE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["xOffset"] = 0,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["numTriggers"] = 1,
+			["text1Font"] = "Friz Quadrata TT",
+			["text2FontSize"] = 18,
+			["text2Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = " ",
+			["text2Enabled"] = true,
+			["text1FontFlags"] = "OUTLINE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["id"] = "Icebound Fortitude",
+			["text2"] = "30%",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["stickyDuration"] = false,
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["disjunctive"] = "all",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["desaturate"] = false,
+		},
+	},
+	["registered"] = {
+	},
+	["frame"] = {
+		["xOffset"] = -34.552490234375,
+		["width"] = 1371.33288574219,
+		["height"] = 474.22216796875,
+		["yOffset"] = -216.222534179688,
+	},
+	["editor_theme"] = "Monokai",
+}

@@ -4,6 +4,7 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Zetiz-Grim Batol",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128872] = {
 			["Relics"] = {
@@ -57,7 +58,6 @@ PawnOptions = {
 			["Name"] = "Fangs of the Devourer",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "ROGUE",

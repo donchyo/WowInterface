@@ -48,6 +48,10 @@ L["STRING_INVITES"] = "Einladungen"
 L["STRING_INVITES_DESC"] = "Wenn dich jemand in eine Gruppe einlädt."
 L["STRING_ONCOUNTDOWN"] = "Timerstart"
 L["STRING_ONCOUNTDOWN_DESC"] = "Wenn ein Countdown auf deinem Bildschirm angezeigt wird."
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH"] = ""
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH_DESC"] = ""
 L["STRING_ONWHISPER"] = "Bei Flüsternachricht"
 L["STRING_ONWHISPER_DESC"] = "Blinkt, wenn du eine Flüsternachricht empfängst"
 L["STRING_OPENSOUNDPANEL"] = "Soundeinstellungen öffnen"

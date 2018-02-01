@@ -1,0 +1,4 @@
+WeakAuras: enabled
+WeakAurasOptions: enabled
+WeakAurasTemplates: enabled
+WeakAurasModelPaths: enabled

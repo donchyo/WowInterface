@@ -5,10 +5,11 @@ MicroMenuSettings = {
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Bawsi - Shattered Hand"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
-		["Donchyo - Shattered Hand"] = "Default",
-		["Donch - Shattered Hand"] = "Default",
-		["Krixicx - Shattered Hand"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
+		["Donchyo - Shattered Hand"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
+		["Krixicx - Shattered Hand"] = "Default",
+		["Donch - Shattered Hand"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

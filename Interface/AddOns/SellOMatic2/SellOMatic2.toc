@@ -1,9 +1,9 @@
-## Interface: 70200
-## X-Compatible-With: 70200
+## Interface: 70300
+## X-Compatible-With: 70300
 ## Title: Sell-O-Matic2
 ## Notes: Helps you automate selling stuff.
 ## Author: Silmano
-## Version: a071
+## Version: a072
 ## OptionalDeps: Ace3, LibGratuity-3.0
 ## SavedVariables: SellOMatic2DB
 ## X-Category: Tradeskill

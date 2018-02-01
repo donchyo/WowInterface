@@ -1,18 +1,12 @@
-tag f192bab41217cd69e5d48ef0b667e936e5f9a8f8 v1.540
+tag efd49dd39a95ace27eaf979f97a2589b62854502 v1.550
 Author:	Jesse Manelius <jessemanelius@gmail.com>
-Date:	Mon Dec 4 01:23:48 2017 +0200
+Date:	Tue Jan 23 00:39:54 2018 +0200
 
-tagging as v1.540
+tagging as v1.550
 
-commit 1bcd8e968846c027b71dd459380e3f3336fef55d
+commit 310ac11c31ee89f7d6d657f1843f900fa86e7482
 Author: Jesse Manelius <jessemanelius@gmail.com>
-Date:   Mon Dec 4 01:23:08 2017 +0200
+Date:   Tue Jan 23 00:39:18 2018 +0200
 
-    fix typo on toc file
-
-commit 72371ee9fec7ee1f3f8067c1e300d8b8efac163c
-Author: Jesse Manelius <jessemanelius@gmail.com>
-Date:   Sun Dec 3 16:21:31 2017 +0200
-
-    remove ak related functions and update ilvl rewards
+    add /iks next (/iks n)
 

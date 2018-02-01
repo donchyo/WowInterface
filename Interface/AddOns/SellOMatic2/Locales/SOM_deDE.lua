@@ -106,8 +106,11 @@ L["Toggles ON/OFF selling items by iLevel"] = "Schaltet das Verkaufen anhand der
 L["Toggles ON/OFF selling soulbound items"] = "Schaltet das Verkaufen seelengebundener Gegenstände AN/AUS"
 L["Toggles ON/OFF selling white quality items"] = "Schaltet das Verkaufen weißer Gegenstände AN/AUS"
 L["Toggles ON/OFF the safe mode (won't sell more than 12 items)"] = "Schaltet den Sicherheitsmodus EIN/AUS (es werden nicht mehr als 12 Gegenstände verkauft)"
+--Translation missing 
+-- L["Total item(s)"] = ""
 L["Use iLevel"] = "Gegenstandsstufe benutzen"
 L["Which list do you want to reset?"] = "Welche Liste willst du zurücksetzen?"
 L["White quality item options"] = "Optionen für weiße Gegenstände"
 L["Yes"] = "Ja"
 L["You've earned"] = "Du bekommst"
+

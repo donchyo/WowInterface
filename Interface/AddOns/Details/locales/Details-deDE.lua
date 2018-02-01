@@ -85,8 +85,7 @@ L["STRING_CLOSEALL"] = "Alle Details!-Fenster sind geschlossen, schreibe '/detai
 L["STRING_COLOR"] = "Farbe"
 L["STRING_COMMAND_LIST"] = "Befehlsliste"
 L["STRING_COOLTIP_NOOPTIONS"] = "Keine Optionen"
---Translation missing 
--- L["STRING_CREATEAURA"] = ""
+L["STRING_CREATEAURA"] = "Aura erstellen"
 L["STRING_CRITICAL_HITS"] = "Kritische Treffer"
 L["STRING_CRITICAL_ONLY"] = "kritisch"
 L["STRING_CURRENT"] = "Aktuell"
@@ -1493,8 +1492,7 @@ L["STRING_SEGMENTS_LIST_COMBATTIME"] = "Kampf Zeit"
 L["STRING_SEGMENTS_LIST_OVERALL"] = "Insgesamt"
 L["STRING_SEGMENTS_LIST_TIMEINCOMBAT"] = "Zeit im Kampf"
 L["STRING_SEGMENTS_LIST_TOTALTIME"] = "Ins gesamte Zeit"
---Translation missing 
--- L["STRING_SEGMENTS_LIST_TRASH"] = ""
+L["STRING_SEGMENTS_LIST_TRASH"] = "Trash"
 L["STRING_SHIELD_HEAL"] = "verhindert"
 L["STRING_SHIELD_OVERHEAL"] = "Vergeudet"
 L["STRING_SHORTCUT_RIGHTCLICK"] = "Rechtsklick, um zu schließen"
@@ -1529,8 +1527,7 @@ L["STRING_SLASH_WIPECONFIG_DESC"] = "setzt alle Einstellungen auf Standard. Nutz
 L["STRING_SLASH_WORLDBOSS"] = "Weltboss"
 L["STRING_SLASH_WORLDBOSS_DESC"] = "startet ein Makro, das dir anzeigt, welche Bosse du in dieser Woche getötet hast."
 L["STRING_SPELL_INTERRUPTED"] = "Zauber unterbrochen"
---Translation missing 
--- L["STRING_SPELLLIST"] = ""
+L["STRING_SPELLLIST"] = "Zauber Liste"
 L["STRING_SPELLS"] = "Zauber"
 L["STRING_SPIRIT_LINK_TOTEM"] = "Lebenspunkte-Austausch"
 L["STRING_SPIRIT_LINK_TOTEM_DESC"] = [=[Anzahl an ausgetauschten Lebenspunkten zwischen
@@ -1538,8 +1535,7 @@ Spielern in Totemreichweite.
 
 Diese Heilung wird nicht zur 
 verursachten Heilung eines Spielers gezählt.]=]
---Translation missing 
--- L["STRING_STATISTICS"] = ""
+L["STRING_STATISTICS"] = "Statistik"
 L["STRING_STATUSBAR_NOOPTIONS"] = "Dieses Widget hat keine Optionen"
 L["STRING_SWITCH_CLICKME"] = "Lesezeichen hinzufügen"
 L["STRING_SWITCH_SELECTMSG"] = "Wähle die Anzeige für Lesezeichen #%d"

@@ -196,13 +196,17 @@ function NOP:ItemIsUsable(itemID) -- look in tooltip if there is no red text
   if self.scanFrame:NumLines() > 0 then
     for i=1,self.scanFrame:NumLines() do -- scan all lines in tooltip
       local leftText = _G[private.TOOLTIP_SCAN .. "TextLeft" .. i]
-      local rightText = _G[private.TOOLTIP_SCAN .. "TextLeft" .. i]
+      local rightText = _G[private.TOOLTIP_SCAN .. "TextRight" .. i]
       if leftText and leftText.GetText then
         local text = leftText:GetText()
         if text and text ~= "" then
           if self:ItemIsUnusable(leftText:GetTextColor()) then 
             --self:Verbose("itemID",itemID,"has red text in tooltip!",text)
             return false
+          end
+          if i == 1 and NOP.DB.SkipExalted then
+            local level, top, value = self:GetReputation(text)
+            if level and level > 7 then return false end -- already exalted with faction for this token
           end
         end
       end
@@ -222,6 +226,7 @@ function NOP:ItemIsUsable(itemID) -- look in tooltip if there is no red text
   return false
 end
 function NOP:ItemToPicklock(itemID) -- need to find which item really need to unlock, locked and unlocked items have same itemID
+  if not itemID then return end
   for bag = BACKPACK_CONTAINER, NUM_BAG_SLOTS, 1 do
     for slot = 1, GetContainerNumSlots(bag), 1 do
       local id = GetContainerItemID(bag,slot)

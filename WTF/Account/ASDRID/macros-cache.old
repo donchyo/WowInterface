@@ -1,3 +1,10 @@
+VER 3 0000000000000390 "!!dump" "INV_MISC_QUESTIONMARK"
+/dump UnitSpellHaste("player")
+/dump GetCombatRatingBonus(CR_HASTE_SPELL)
+END
+VER 3 000000000000038E "!_1test" "INV_MISC_QUESTIONMARK"
+/run itemIcon = GetItemIcon(40771);print("itemIcon :", itemIcon)
+END
 VER 3 0000000000000361 "1release" "INV_MISC_QUESTIONMARK"
 /script RepopMe();
 END
@@ -94,6 +101,9 @@ END
 VER 3 000000000000037A "fps sak" "INV_MISC_QUESTIONMARK"
 /run FramerateLabel:ClearAllPoints() FramerateText:ClearAllPoints() FramerateLabel:SetPoint("RIGHT",UIParent,"CENTER",330,0) FramerateText:SetPoint("LEFT",FramerateLabel,"RIGHT") ToggleFramerate()
 END
+VER 3 000000000000038F "fuckoff" "136103"
+/run local m,n="mouseover" n=UnitIsPlayer(m) and UnitName(m) if n then SendChatMessage("Hey "..n..", fuck off from me! XD",GUILD) else SendChatMessage("Fuck off from me! XD",GUILD) end
+END
 VER 3 000000000000036A "garrison" "INV_MISC_QUESTIONMARK"
 /use garrison ability
 END
@@ -145,6 +155,9 @@ VER 3 0000000000000341 "mouseover mall" "SPELL_MAGIC_MANAGAIN"
 #showtooltip
 /cast [target=mouseover, help] Slow Fall; [help] Slow Fall; Slow Fall
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy Light
+END
+VER 3 000000000000038D "mouseover trinke" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover] 13
 END
 VER 3 0000000000000388 "plea" "INV_Misc_QuestionMark"
 #showtooltip

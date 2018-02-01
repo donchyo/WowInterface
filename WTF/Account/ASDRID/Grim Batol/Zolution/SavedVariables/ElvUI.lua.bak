@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		"/g i would say", -- [1]
-		"/wa", -- [2]
-		"/pull 10", -- [3]
-		"/g i usualy never have problems sleeping", -- [4]
-		"/g but today for some reason", -- [5]
-		"/g it was really shit", -- [6]
-		"/g :(", -- [7]
-		"/g also", -- [8]
-		"/g fak", -- [9]
-		"/g its probably better than ring", -- [10]
-		" yo i started dplaying holypaladin while you were gone,  |cffa335ee|Hitem:134525::::::::110:256::35:3:3536:1622:3337:::|h[Seal of the Nazjatar Empire]|h|r this item any good? ", -- [11]
-		" :(", -- [12]
-		" did you have a nice xmas?", -- [13]
-		" i got sick on the friday", -- [14]
-		" :DDD", -- [15]
-		" that looks nice", -- [16]
-		" actually", -- [17]
-		" wanna see something dumb", -- [18]
-		" https://i.imgur.com/oHdF17S.png", -- [19]
-		" the back to back ones had less than 1hr of played between them", -- [20]
+		" sounds like mages are fucking you", -- [1]
+		" not the dc part", -- [2]
+		" but people dying out of nowhere", -- [3]
+		"/p ty :)", -- [4]
+		"/p hello", -- [5]
+		"/pull 5", -- [6]
+		"/p i got locked on a smite i tought it could finish :(", -- [7]
+		"/cw Vaperus-Antonidas |cffffff00|Hachievement:12110:Player-1303-03E8DD46:1:12:14:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [8]
+		"/cw Amunaten-ChamberofAspects |cffffff00|Hachievement:12110:Player-1303-03E8DD46:1:12:14:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [9]
+		"/cw Wtarrow-Darksorrow |cffffff00|Hachievement:12110:Player-1303-03E8DD46:1:12:14:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [10]
+		" YEAH", -- [11]
+		"/wa", -- [12]
+		"/p u have a dps friend lukas?", -- [13]
+		"/p y", -- [14]
+		"/p thats a no then?", -- [15]
+		"/p kk", -- [16]
+		"/s |cffa335ee|Hitem:142165::::::::110:256::35:3:3536:1592:3337:::|h[Deteriorated Construct Core]|h|r", -- [17]
+		"/cw Skillfree-Antonidas |cffa335ee|Hitem:142165::::::::110:256::35:3:3536:1592:3337:::|h[Deteriorated Construct Core]|h|r", -- [18]
+		" thats a better name, i can actually say it :D", -- [19]
+		" wut", -- [20]
 	},
 }

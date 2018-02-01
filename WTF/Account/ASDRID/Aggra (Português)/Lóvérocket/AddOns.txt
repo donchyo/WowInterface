@@ -1,0 +1,8 @@
+WeakAuras: enabled
+WeakAurasOptions: enabled
+WeakAurasTemplates: enabled
+WeakAurasModelPaths: enabled
+EventTraceReloaded: enabled
+BugSack: enabled
+!BugGrabber: enabled
+ViragDevTool: enabled

@@ -199,9 +199,9 @@ TidyPlates: enabled
 TidyPlatesHub: enabled
 TidyPlates_ThreatPlates: disabled
 TimeToDie: disabled
-WeakAuras: disabled
-WeakAurasModelPaths: disabled
-WeakAurasOptions: disabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
 WeakAurasTutorials: disabled
 XLoot: disabled
 XLoot_Frame: disabled
@@ -336,7 +336,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 MicroMenu: disabled
 MicroMenu_Config: disabled
-WeakAurasTemplates: disabled
+WeakAurasTemplates: enabled
 SatchelScanner: disabled
 TradeSkillMaster_Accounting: disabled
 DailyGlobalCheck_Legion_WorldQuests: disabled
@@ -371,4 +371,7 @@ RaidAchievement_LegionRaids: disabled
 ServerHop: disabled
 WorldQuestTracker: disabled
 WorldQuestsList: disabled
-StayUnsheathed: disabled
+EventTraceReloaded: enabled
+BugSack: enabled
+!BugGrabber: enabled
+ViragDevTool: enabled

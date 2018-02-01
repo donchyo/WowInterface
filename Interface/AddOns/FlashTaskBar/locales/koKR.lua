@@ -48,6 +48,10 @@ L["STRING_INVITES"] = "초대"
 L["STRING_INVITES_DESC"] = "누군가 당신을 그룹에 초대하면 알립니다."
 L["STRING_ONCOUNTDOWN"] = "타이머 시작"
 L["STRING_ONCOUNTDOWN_DESC"] = "화면에 초읽기가 표시되면 알립니다."
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH"] = ""
+--Translation missing 
+-- L["STRING_ONPLAYERDEATH_DESC"] = ""
 L["STRING_ONWHISPER"] = "귓속말 수신"
 L["STRING_ONWHISPER_DESC"] = "귓속말을 받으면 반짝입니다"
 L["STRING_OPENSOUNDPANEL"] = "소리 설정 열기"

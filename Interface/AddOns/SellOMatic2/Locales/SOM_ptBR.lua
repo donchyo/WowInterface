@@ -13,6 +13,8 @@ L["Blue quality item options"] = "Opções de Itens Azuis"
 L["Cancel"] = "Cancelar"
 L["Choose the amount of information displayed"] = "Escolha a quantidade de informações mostradas"
 L["Command List"] = "Lista de Comandos"
+--Translation missing 
+-- L["Delete"] = ""
 L["delete items from the sell/save lists"] = "Excluir itens da lista de vender/salvar"
 L["destroy all junk items in your backpack"] = "Destruir todos os lixos em sua bolsa"
 L["Destroy Commands"] = "Comandos de destruir"
@@ -111,3 +113,4 @@ L["Which list do you want to reset?"] = "Qual lista deseja resetar?"
 L["White quality item options"] = "Opções de itens brancos"
 L["Yes"] = "Sim"
 L["You've earned"] = "Você ganhou"
+

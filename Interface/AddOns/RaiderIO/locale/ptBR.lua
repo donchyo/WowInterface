@@ -78,6 +78,14 @@ if ns:IsSameLocale("ptBR") then
 --Translation missing 
 -- L["MAINS_SCORE_COLON"] = ""
 --Translation missing 
+-- L["MODULE_AMERICAS"] = ""
+--Translation missing 
+-- L["MODULE_EUROPE"] = ""
+--Translation missing 
+-- L["MODULE_KOREA"] = ""
+--Translation missing 
+-- L["MODULE_TAIWAN"] = ""
+--Translation missing 
 -- L["MYTHIC_PLUS_DB_MODULES"] = ""
 --Translation missing 
 -- L["MYTHIC_PLUS_SCORES"] = ""

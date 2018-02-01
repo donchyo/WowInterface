@@ -116,3 +116,4 @@ L["Which list do you want to reset?"] = true
 L["White quality item options"] = true
 L["Yes"] = true
 L["You've earned"] = true
+

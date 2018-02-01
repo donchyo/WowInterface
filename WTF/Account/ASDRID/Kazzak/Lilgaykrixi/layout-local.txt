@@ -1,6 +1,6 @@
 Version: 1
 Frame: PlayerFrame
-FrameLevel: 1
+FrameLevel: 2
 Anchor: CENTER
 X: -281
 Y: -76
@@ -20,3 +20,17 @@ X: 0
 Y: 0
 W: 365
 H: 200
+Frame: ViragDevToolFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 635
+H: 200
+Frame: WQGFManualActionsFrame
+FrameLevel: 0
+Anchor: CENTER
+X: 0
+Y: 60
+W: 370
+H: 110

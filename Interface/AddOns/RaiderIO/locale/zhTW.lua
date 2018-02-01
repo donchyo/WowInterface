@@ -20,32 +20,19 @@ L["COPY_RAIDERIO_PROFILE_URL"] = "複製Raider.IO設定檔網址"
 L["COPY_RAIDERIO_URL"] = "複製Raider.IO網址"
 L["DPS"] = "DPS"
 L["DPS_SCORE"] = "DPS分數"
---Translation missing 
--- L["DUNGEON_SHORT_NAME_ARC"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_BRH"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_COEN"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_COS"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_DHT"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_EOA"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_HOV"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_LOWR"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_MOS"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_NL"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_SEAT"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_UPPR"] = ""
---Translation missing 
--- L["DUNGEON_SHORT_NAME_VOTW"] = ""
+L["DUNGEON_SHORT_NAME_ARC"] = "地道"
+L["DUNGEON_SHORT_NAME_BRH"] = "玄鴉"
+L["DUNGEON_SHORT_NAME_COEN"] = "永夜"
+L["DUNGEON_SHORT_NAME_COS"] = "眾星"
+L["DUNGEON_SHORT_NAME_DHT"] = "暗心"
+L["DUNGEON_SHORT_NAME_EOA"] = "艾眼"
+L["DUNGEON_SHORT_NAME_HOV"] = "英靈"
+L["DUNGEON_SHORT_NAME_LOWR"] = "卡拉下"
+L["DUNGEON_SHORT_NAME_MOS"] = "靈魂"
+L["DUNGEON_SHORT_NAME_NL"] = "奈巢"
+L["DUNGEON_SHORT_NAME_SEAT"] = "三傑"
+L["DUNGEON_SHORT_NAME_UPPR"] = "卡拉上"
+L["DUNGEON_SHORT_NAME_VOTW"] = "看守"
 L["ENABLE_NO_SCORE_COLORS"] = "停用分數著色"
 L["ENABLE_NO_SCORE_COLORS_DESC"] = "停用分數的著色，所有分數將顯示為白色。"
 L["ENABLE_SIMPLE_SCORE_COLORS"] = "使用簡易分數著色"
@@ -56,13 +43,16 @@ L["KEYSTONE_COMPLETED_10"] = "+10（完成鑰石）"
 L["KEYSTONE_COMPLETED_15"] = "+15（完成鑰石）"
 L["MAINS_SCORE"] = "當季分數"
 L["MAINS_SCORE_COLON"] = "當季分數："
+L["MODULE_AMERICAS"] = "美洲"
+L["MODULE_EUROPE"] = "歐洲"
+L["MODULE_KOREA"] = "韓國"
+L["MODULE_TAIWAN"] = "台灣"
 L["MYTHIC_PLUS_DB_MODULES"] = "傳奇+數據庫模組"
 L["MYTHIC_PLUS_SCORES"] = "傳奇+分數"
 L["OPEN_CONFIG"] = "開啟選項"
 L["OUTDATED_DATABASE"] = "分數已有%d天之久"
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r使用的數據已經有|cffFF6666%d|r天之久了。請更新此插件已呈現更精確的傳奇+分數。"
---Translation missing 
--- L["PREV_SEASON_SUFFIX"] = ""
+L["PREV_SEASON_SUFFIX"] = "(*)"
 L["RAIDERIO_MP_SCORE"] = "Raider.IO 傳奇+分數"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO 傳奇+分數："
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Raider.IO傳奇+選項"
@@ -86,13 +76,10 @@ L["SHOW_ON_PLAYER_UNITS"] = "顯示在玩家單位"
 L["SHOW_ON_PLAYER_UNITS_DESC"] = "當你鼠標懸停在玩家單位上時顯示傳奇+分數。"
 L["TANK"] = "坦克"
 L["TANK_SCORE"] = "坦克分數"
---Translation missing 
--- L["TIMED_10_RUNS"] = ""
---Translation missing 
--- L["TIMED_15_RUNS"] = ""
+L["TIMED_10_RUNS"] = "時限內10-14+次數"
+L["TIMED_15_RUNS"] = "時限內15+次數"
 L["TOOLTIP_CUSTOMIZATION"] = "提示自定義"
---Translation missing 
--- L["UNKNOWN_SCORE"] = ""
+L["UNKNOWN_SCORE"] = "未知"
 L["UNKNOWN_SERVER_FOUND"] = "|cffFFFFFF%s|r已經轉到新伺服器。請記下此資訊|cffFF9999{|r |cffFFFFFF%s|r |cffFF9999,|r |cffFFFFFF%s|r |cffFF9999}|r並且回報給開發者，感謝您！"
 
 

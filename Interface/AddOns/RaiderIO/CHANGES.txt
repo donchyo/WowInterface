@@ -1,16 +1,10 @@
-lightweight tag 834be81652e34990c7fb1680ff5f02556e1989a8 v201712290800
+lightweight tag 8aadb76a07a63d22d9573bf74cccb3477cab0a50 v201801310800
 Author:	Jah Raphael <jahraphael@yahoo.com>
-Date:	Fri Dec 29 09:15:19 2017 +0000
+Date:	Wed Jan 31 09:27:30 2018 +0000
 
-commit 834be81652e34990c7fb1680ff5f02556e1989a8
+commit 8aadb76a07a63d22d9573bf74cccb3477cab0a50
 Author: Jah Raphael <jahraphael@yahoo.com>
-Date:   Fri Dec 29 09:15:19 2017 +0000
+Date:   Wed Jan 31 09:27:30 2018 +0000
 
     [Raider.IO] Database Refresh
-
-commit 47718b2a71a91b24a327f61e226b38c816cd83a7
-Author: Jah Raphael <jahraphael@yahoo.com>
-Date:   Thu Dec 28 23:56:53 2017 -0600
-
-    fixed typo in tag
 

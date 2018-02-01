@@ -1,3 +1,9 @@
+VER 3 0000000000000390 "!!dump" "INV_MISC_QUESTIONMARK"
+/dump GetSpellInfo(233669)
+END
+VER 3 000000000000038E "!_1test" "INV_MISC_QUESTIONMARK"
+/run itemIcon = GetItemIcon(40771);print("itemIcon :", itemIcon)
+END
 VER 3 0000000000000361 "1release" "INV_MISC_QUESTIONMARK"
 /script RepopMe();
 END
@@ -93,6 +99,9 @@ VER 3 0000000000000370 "focusextra" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000037A "fps sak" "INV_MISC_QUESTIONMARK"
 /run FramerateLabel:ClearAllPoints() FramerateText:ClearAllPoints() FramerateLabel:SetPoint("RIGHT",UIParent,"CENTER",330,0) FramerateText:SetPoint("LEFT",FramerateLabel,"RIGHT") ToggleFramerate()
+END
+VER 3 000000000000038F "fuckoff" "136103"
+/run local m,n="mouseover" n=UnitIsPlayer(m) and UnitName(m) if n then SendChatMessage("Hey "..n..", fuck off from me! XD",GUILD) else SendChatMessage("Fuck off from me! XD",GUILD) end
 END
 VER 3 000000000000036A "garrison" "INV_MISC_QUESTIONMARK"
 /use garrison ability

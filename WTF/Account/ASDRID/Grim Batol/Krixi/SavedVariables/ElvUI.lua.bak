@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatEditHistory"] = {
-		"/cw Twobad-Antonidas before was 34", -- [1]
-		" do you wanna do soem m+?", -- [2]
-		" ro do you have grp", -- [3]
-		" okay :", -- [4]
-		" :D", -- [5]
-		" but", -- [6]
-		" this trinket", -- [7]
-		" better than either of mine?", -- [8]
-		" |cffa335ee|Hitem:147006::::::::110:65::3:3:3561:1482:3528:::|h[Archive of Faith]|h|r|cffa335ee|Hitem:141482::::::::110:65::43:4:40:3573:1492:3528:::|h[Unstable Arcanocrystal]|h|r", -- [9]
-		" okay", -- [10]
-		" replacing", -- [11]
-		" archive", -- [12]
-		" fuck that trinket anyway", -- [13]
-		" lul", -- [14]
-		" i still have 14.7k crit", -- [15]
-		" so i guess thats fine", -- [16]
-		" missing gem in ches", -- [17]
-		"/g ya'll nerds", -- [18]
-		"/g kys", -- [19]
-		"/g bye", -- [20]
+		" but yea", -- [1]
+		" i tought i played really poorly", -- [2]
+		" today", -- [3]
+		" so feelsbad", -- [4]
+		" could have done 26 if i wasnt an ape", -- [5]
+		" yeah, but the entire instance is medivh", -- [6]
+		" atleast for tanks", -- [7]
+		" the tirnket is just so fucking unreliable", -- [8]
+		" yeha", -- [9]
+		" that was an interesting one", -- [10]
+		" its so shit", -- [11]
+		" i have to clikc of ams", -- [12]
+		" idno, its so obvious that im the least experienced person", -- [13]
+		" and it feels really shit", -- [14]
+		" :D", -- [15]
+		" funniest thing tonight was tough", -- [16]
+		" senf telling you to speak english", -- [17]
+		" i think they might have gotten the part of talking stats that involve me in english when they changed the kicks :D", -- [18]
+		" oh well", -- [19]
+		" im gonna be toxic in ow now i guess", -- [20]
 	},
 }

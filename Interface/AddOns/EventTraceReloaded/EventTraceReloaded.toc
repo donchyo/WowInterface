@@ -1,0 +1,27 @@
+## Title: EventTrace Reloaded
+## Version: 6.2.131
+## Author: Fulgerul
+## Interface: 60200
+## SavedVariables: EventTraceReloaded
+## Notes: Remembers ignored events through reloads
+## X-Curse-Packaged-Version: v6.2.131
+## X-Curse-Project-Name: EventTrace Reloaded
+## X-Curse-Project-ID: eventtrace-reloaded
+## X-Curse-Repository-ID: wow/eventtrace-reloaded/mainline
+
+Libs\usefull_lua_functions.lua
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceTimer-3.0\AceTimer-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\AceHook-3.0\AceHook-3.0.xml
+Libs\LibDBIcon-1.0\LibDBIcon-1.0\LibDBIcon-1.0.lua
+
+EventTraceMain.lua

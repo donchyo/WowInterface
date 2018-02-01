@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		" ye", -- [1]
-		" you got any dps that wanna come? :D", -- [2]
-		" i dont care", -- [3]
-		" as long as they dont leave", -- [4]
-		" just a body really", -- [5]
-		" holy shit", -- [6]
-		" check the queue", -- [7]
-		" okay", -- [8]
-		" i just get someone then", -- [9]
-		"/p siggi afked for something", -- [10]
-		"/p so im just waititng for him before i take someone", -- [11]
-		"/p prob food", -- [12]
-		"/p siggi told me", -- [13]
-		"/p pick #17 in the list", -- [14]
-		"/p that went well", -- [15]
-		"/g nah", -- [16]
-		"/pull 5", -- [17]
-		" https://i.imgur.com/HXmIKoB.png", -- [18]
-		" LUL", -- [19]
-		"/calendar", -- [20]
+		"/g you  have all ww leggos right?", -- [1]
+		"/g any other?", -- [2]
+		"/g |cffff8000|Hitem:151643::::::::110:270:::1:3571:::|h[Soul of the Grandmaster]|h|r", -- [3]
+		"/g seems nutty", -- [4]
+		"/g idk", -- [5]
+		"/g maybe not for this as you dont reallyneed mana", -- [6]
+		"/g i played |cff71d5ff|Htalent:19823|h[Chi Burst]|h|r|cff71d5ff|Htalent:19304|h[Chi Torpedo]|h|r", -- [7]
+		"/g |cff71d5ff|Htalent:22166|h[Mist Wrap]|h|r|cff71d5ff|Htalent:19993|h[Ring of Peace]|h|r", -- [8]
+		"/g |cff71d5ff|Htalent:20173|h[Diffuse Magic]|h|r|cff71d5ff|Htalent:22214|h[Summon Jade Serpent Statue]|h|r", -- [9]
+		"/g |cff71d5ff|Htalent:22169|h[Focused Thunder]|h|r", -- [10]
+		"/g i think you could tft effuse x2", -- [11]
+		"/g to top adds", -- [12]
+		"/g or even", -- [13]
+		"/g enveloping two different adds", -- [14]
+		"/g then hitthe third with a hardcast", -- [15]
+		"/g and then spamm", -- [16]
+		"/g vivify", -- [17]
+		" were we playing?", -- [18]
+		" who 5th=", -- [19]
+		" ?", -- [20]
 	},
 }

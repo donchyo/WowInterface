@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["ChatEditHistory"] = {
-		"/raid ok :)", -- [1]
-		"/roll", -- [2]
-		"/cw Fennyy-Nagrand ty <3", -- [3]
-		"/raid can i have summon please? :)", -- [4]
-		"/cw Tonzqt-Nagrand yeah, sorry :(", -- [5]
-		"/raid i feel like the adds get empowered", -- [6]
-		"/raid if the dk grips", -- [7]
-		"/raid i need the vers buff to save me when i ape", -- [8]
-		"/raid sometimes lucky", -- [9]
-		"/g wut?", -- [10]
-		"/g oh boy", -- [11]
-		"/g uhm", -- [12]
-		"/g discord?", -- [13]
-		" yo you wanna do a quick cos +15, trying to get a friend his box done before the reset :D", -- [14]
-		" i might just stay muted on discord", -- [15]
-		" actually, wanna play your hunter, lukas wanted to try tanking", -- [16]
-		" monkaS", -- [17]
-		"/p dreamteam", -- [18]
-		"/p ty ", -- [19]
-		"/p thanks for comming", -- [20]
+		"/g idk", -- [1]
+		"/g its a good reason to  go ", -- [2]
+		"/wa", -- [3]
+		"/p will you invis anything?", -- [4]
+		"/p okay", -- [5]
+		"/p nice meme my dude", -- [6]
+		"/p run", -- [7]
+		"/p this will pull", -- [8]
+		"/p ?", -- [9]
+		"/p thanks for the run :)", -- [10]
+		"/cw Dewildance-TheMaelstrom |cffffff00|Hachievement:12110:Player-1303-0478DE10:1:11:30:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [11]
+		"/cw Idahoe-Aszune |cffffff00|Hachievement:12110:Player-1303-0478DE10:1:11:30:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [12]
+		"/cw Wipeshot-Blackmoore |cffffff00|Hachievement:12110:Player-1303-0478DE10:1:11:30:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [13]
+		"/raid r", -- [14]
+		"/g tjenare", -- [15]
+		"/g har du gjort argus den här veckan på shamanen?", -- [16]
+		"/g tänkte göra några", -- [17]
+		"/g om du vill göra", -- [18]
+		"/g så du kan få en trinket :P", -- [19]
+		"/g ska bara gå på toa", -- [20]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

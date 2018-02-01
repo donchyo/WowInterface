@@ -9,3 +9,12 @@ VER 3 0100000000000016 "focus" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@focus] consume magic
 END
+VER 3 0100000000000019 "infernal strike " "INV_MISC_QUESTIONMARK"
+/cast [@player] infernal strike
+END
+VER 3 010000000000001A "sigil of flame" "INV_MISC_QUESTIONMARK"
+/cast [@player] sigil of flame
+END
+VER 3 010000000000001B "silence" "INV_MISC_QUESTIONMARK"
+/cast [@player] sigil of silence
+END

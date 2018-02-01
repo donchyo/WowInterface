@@ -1,9 +1,9 @@
-## Interface: 70200
-## X-Compatible-with: 70200
+## Interface: 70300
+## X-Compatible-with: 70300
 ## Title: Sell-O-Matic2 |cff7fff7fItem|r
 ## Notes: Sell-O-Matic2 module for selling all items.
 ## Author: Silmano
-## Version: a071
+## Version: a072
 ## OptionalDeps: Ace3, LibGratuity-3.0
 ## LoadOnDemand: 1
 ## Dependencies: SellOMatic2

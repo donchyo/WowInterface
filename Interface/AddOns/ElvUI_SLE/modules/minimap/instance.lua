@@ -108,20 +108,26 @@ function I:GenerateText(event, guild, force)
 			text = T.format(instanceGroupSize.." |cff%02x%02x%02x%s|r", r, g, b, difficultyName)
 		end
 		I.frame.text:SetText(text)
-		if (guild or force) and not isChallengeMode then
+		-- guild = true
+		if (guild) and not isChallengeMode then
 			local logo = I:GuildEmblem()
 			I.frame.icon:SetText(logo)
 		end
-		if I.db.enable then
-			I.BlizzDif:Hide()
-			I.BlizzCM:Hide()
-			I.BlizzGDif:Hide()
-		else
+		I.BlizzDif:Hide()
+		I.BlizzCM:Hide()
+		I.BlizzGDif:Hide()
+		if not I.db.enable then
 			if not I.BlizzDif:IsShown() and (groupType == "raid" or isHeroic) and not guild then
 				I.BlizzDif:Show()
+				I.BlizzCM:Hide()
+				I.BlizzGDif:Hide()
 			elseif not I.BlizzCM:IsShown() and isChallengeMode and not guild then
+				I.BlizzDif:Hide()
 				I.BlizzCM:Show()
-			elseif guild or force then
+				I.BlizzGDif:Hide()
+			elseif guild then
+				I.BlizzDif:Hide()
+				I.BlizzCM:Hide()
 				I.BlizzGDif:Show()
 			end
 		end
@@ -137,7 +143,8 @@ function I:Initialize()
 	I.BlizzDif:HookScript("OnShow", function(self) if I.db.enable then self:Hide() end end)
 	I.BlizzGDif:HookScript("OnShow", function(self) if I.db.enable then self:Hide() end end)
 	I.BlizzCM:HookScript("OnShow", function(self) if I.db.enable then self:Hide() end end)
-	self:RegisterEvent("PLAYER_ENTERING_WORLD", "GenerateText")
+	-- self:RegisterEvent("PLAYER_ENTERING_WORLD", "GenerateText")
+	self:RegisterEvent("LOADING_SCREEN_DISABLED", "GenerateText")
 	self:RegisterEvent("ZONE_CHANGED_NEW_AREA", "GenerateText")
 	self:RegisterEvent("GUILD_PARTY_STATE_UPDATED", "GenerateText")
 	self:UpdateFrame()

@@ -23,7 +23,7 @@ _detalhes_database = {
 								"Lightforged Warframe <Zetiz>", -- [1]
 							},
 							["custom"] = 0,
-							["total"] = 78920823.007436,
+							["end_time"] = 1512497443,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
@@ -34,7 +34,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["dps_started"] = false,
-							["end_time"] = 1512497443,
+							["total"] = 78920823.007436,
 							["damage_taken"] = 0.007436,
 							["tipo"] = 1,
 							["nome"] = "Zetiz",
@@ -44,11 +44,11 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["colocacao"] = 1,
 							["last_event"] = 1512497441,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1512497433,
 							["serial"] = "Player-1303-03FA8295",
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -328,9 +328,6 @@ _detalhes_database = {
 							["damage_taken"] = 443674.004568,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 833154.623135145,
-							["start_time"] = 1512497432,
-							["delay"] = 0,
 							["avoidance"] = {
 								["Radix"] = {
 									["DODGE"] = 2,
@@ -347,22 +344,6 @@ _detalhes_database = {
 									["FULL_HIT"] = 0,
 									["HITS"] = 1,
 									["FULL_HIT_AMT"] = 0,
-								},
-								["Nathchanar-Ravencrest"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 0,
-									["ALL"] = 25,
-									["PARTIAL_ABSORBED"] = 0,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 0,
-									["ABSORB"] = 0,
-									["ABSORB_AMT"] = 0,
-									["FULL_HIT"] = 25,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 86790,
 								},
 								["overall"] = {
 									["DODGE"] = 2,
@@ -396,7 +377,26 @@ _detalhes_database = {
 									["HITS"] = 0,
 									["FULL_HIT_AMT"] = 0,
 								},
+								["Nathchanar-Ravencrest"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 25,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 25,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 86790,
+								},
 							},
+							["start_time"] = 1512497432,
+							["delay"] = 0,
+							["last_dps"] = 833154.623135145,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -411,7 +411,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["damage_taken"] = 343605.005008,
+							["on_hold"] = false,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
@@ -741,8 +741,8 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["dps_started"] = false,
-							["end_time"] = 1512497443,
-							["on_hold"] = false,
+							["total"] = 6214999.005008,
+							["damage_taken"] = 343605.005008,
 							["tipo"] = 1,
 							["nome"] = "Grandezev-Pozzodell'Eternità",
 							["spec"] = 72,
@@ -755,7 +755,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1512497432,
 							["serial"] = "Player-1309-04A4EAF4",
-							["total"] = 6214999.005008,
+							["end_time"] = 1512497443,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -769,7 +769,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["damage_taken"] = 0.008712,
+							["on_hold"] = false,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
@@ -809,8 +809,8 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["dps_started"] = false,
-							["end_time"] = 1512497443,
-							["on_hold"] = false,
+							["total"] = 133500.008712,
+							["damage_taken"] = 0.008712,
 							["tipo"] = 1,
 							["nome"] = "Чудита-Азурегос",
 							["spec"] = 64,
@@ -823,7 +823,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1512497433,
 							["serial"] = "Player-1922-047C2808",
-							["total"] = 133500.008712,
+							["end_time"] = 1512497443,
 						}, -- [4]
 						{
 							["flag_original"] = 1297,
@@ -1212,62 +1212,6 @@ _detalhes_database = {
 							["nome"] = "Nathchanar-Ravencrest",
 							["spells"] = {
 								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Nathchanar-Ravencrest"] = 16121,
-										},
-										["n_max"] = 41458,
-										["targets"] = {
-											["Nathchanar-Ravencrest"] = 115151,
-										},
-										["n_min"] = 390,
-										["counter"] = 9,
-										["overheal"] = 16121,
-										["total"] = 115151,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["totaldenied"] = 0,
-										["m_amt"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 9,
-										["n_curado"] = 115151,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-									[196608] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Nathchanar-Ravencrest"] = 55230,
-										},
-										["n_max"] = 26298,
-										["targets"] = {
-											["Nathchanar-Ravencrest"] = 84871,
-										},
-										["n_min"] = 7110,
-										["counter"] = 5,
-										["overheal"] = 55230,
-										["total"] = 84871,
-										["c_max"] = 21362,
-										["id"] = 196608,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 21362,
-										["m_crit"] = 0,
-										["totaldenied"] = 0,
-										["m_amt"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 4,
-										["n_curado"] = 63509,
-										["c_min"] = 21362,
-										["absorbed"] = 0,
-									},
 									[227690] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 8321,
@@ -1297,6 +1241,34 @@ _detalhes_database = {
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
+									[196608] = {
+										["c_amt"] = 1,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Nathchanar-Ravencrest"] = 55230,
+										},
+										["n_max"] = 26298,
+										["targets"] = {
+											["Nathchanar-Ravencrest"] = 84871,
+										},
+										["n_min"] = 7110,
+										["counter"] = 5,
+										["overheal"] = 55230,
+										["total"] = 84871,
+										["c_max"] = 21362,
+										["id"] = 196608,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 21362,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 21362,
+										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["n_curado"] = 63509,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
 									[216521] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
@@ -1316,12 +1288,40 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["totaldenied"] = 0,
-										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 14220,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Nathchanar-Ravencrest"] = 16121,
+										},
+										["n_max"] = 41458,
+										["targets"] = {
+											["Nathchanar-Ravencrest"] = 115151,
+										},
+										["n_min"] = 390,
+										["counter"] = 9,
+										["overheal"] = 16121,
+										["total"] = 115151,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 9,
+										["n_curado"] = 115151,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -1371,10 +1371,10 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["tipo"] = 2,
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.0036,
 							["start_time"] = 1512497443,
 							["delay"] = 0,
@@ -1388,7 +1388,7 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["tipo"] = 2,
+							["last_event"] = 1512497440,
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -1432,19 +1432,19 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["totaldenied"] = 0,
-										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 2,
 										["n_curado"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
 							["custom"] = 0,
-							["last_event"] = 1512497440,
+							["tipo"] = 2,
 							["on_hold"] = false,
 							["totaldenied"] = 0.008748,
 							["serial"] = "Creature-0-3151-1669-27426-106812-000026E0D7",
@@ -1480,7 +1480,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 100,
+							["pets"] = {
+							},
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -1661,20 +1662,19 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[96103] = 1,
 								[190411] = 2,
-								[1719] = 1,
+								[184367] = 2,
 								[199667] = 6,
 								[44949] = 6,
-								[184367] = 2,
+								[1719] = 1,
 								[85288] = 1,
 							},
-							["pets"] = {
-							},
+							["tipo"] = 4,
 							["last_event"] = 1512497443,
 							["buff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
-							["serial"] = "Player-1309-04A4EAF4",
 							["nome"] = "Grandezev-Pozzodell'Eternità",
+							["serial"] = "Player-1309-04A4EAF4",
+							["buff_uptime"] = 100,
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -1739,17 +1739,17 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 9,
-							["nome"] = "Чудита-Азурегос",
+							["debuff_uptime_targets"] = {
+							},
 							["spec"] = 64,
 							["grupo"] = true,
-							["last_event"] = 1512497441,
 							["tipo"] = 4,
+							["last_event"] = 1512497441,
 							["buff_uptime_targets"] = {
 							},
 							["buff_uptime"] = 0,
 							["serial"] = "Player-1922-047C2808",
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Чудита-Азурегос",
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
@@ -1916,13 +1916,13 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 2,
 									},
-									[186406] = {
+									[253216] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 186406,
-										["uptime"] = 11,
+										["id"] = 253216,
+										["uptime"] = 2,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -1949,13 +1949,13 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 1,
 									},
-									[253216] = {
+									[186406] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 253216,
-										["uptime"] = 2,
+										["id"] = 186406,
+										["uptime"] = 11,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -1975,8 +1975,8 @@ _detalhes_database = {
 								[205523] = 2,
 								[121253] = 1,
 							},
-							["last_event"] = 1512497443,
 							["tipo"] = 4,
+							["last_event"] = 1512497443,
 							["debuff_uptime_targets"] = {
 							},
 							["pets"] = {
@@ -1995,8 +1995,8 @@ _detalhes_database = {
 							["buff_uptime_targets"] = {
 							},
 							["buff_uptime"] = 132,
+							["tipo"] = 4,
 							["last_event"] = 1512497443,
-							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[209563] = {
@@ -2005,39 +2005,6 @@ _detalhes_database = {
 										["activedamt"] = 2,
 										["refreshamt"] = 0,
 										["id"] = 209563,
-										["uptime"] = 11,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[247686] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 247686,
-										["uptime"] = 11,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[156779] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 156779,
-										["uptime"] = 11,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[225604] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 225604,
 										["uptime"] = 11,
 										["targets"] = {
 										},
@@ -2054,27 +2021,60 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 2,
 									},
-									[182993] = {
+									[72968] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 2,
 										["refreshamt"] = 0,
-										["id"] = 182993,
+										["id"] = 72968,
 										["uptime"] = 11,
 										["targets"] = {
 										},
 										["appliedamt"] = 2,
 									},
-									[208705] = {
+									[225604] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 2,
 										["refreshamt"] = 0,
-										["id"] = 208705,
+										["id"] = 225604,
 										["uptime"] = 11,
 										["targets"] = {
 										},
 										["appliedamt"] = 2,
+									},
+									[247686] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 247686,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[227723] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 227723,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[97341] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 97341,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 									[242551] = {
 										["counter"] = 0,
@@ -2087,12 +2087,12 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 2,
 									},
-									[72968] = {
+									[156779] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 2,
 										["refreshamt"] = 0,
-										["id"] = 72968,
+										["id"] = 156779,
 										["uptime"] = 11,
 										["targets"] = {
 										},
@@ -2121,23 +2121,23 @@ _detalhes_database = {
 										["actived"] = true,
 										["appliedamt"] = 1,
 									},
-									[97341] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 97341,
-										["uptime"] = 11,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[227723] = {
+									[208705] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 2,
 										["refreshamt"] = 0,
-										["id"] = 227723,
+										["id"] = 208705,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[182993] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 182993,
 										["uptime"] = 11,
 										["targets"] = {
 										},
@@ -2147,19 +2147,21 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-1602-0A10A8E3",
-							["tipo"] = 4,
+							["classe"] = "HUNTER",
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
-							["cooldowns_defensive"] = 2.005592,
-							["buff_uptime"] = 55,
+							["cooldowns_defensive"] = 3.005592,
+							["pets"] = {
+								"Lightforged Warframe <Zetiz>", -- [1]
+							},
 							["last_cooldown"] = {
-								1514115839.915, -- [1]
+								1514858847.143, -- [1]
 								1966, -- [2]
 							},
 							["classe"] = "ROGUE",
 							["cooldowns_defensive_targets"] = {
-								["Zetiz"] = 2,
+								["Zetiz"] = 3,
 							},
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -2224,16 +2226,16 @@ _detalhes_database = {
 							["nome"] = "Zetiz",
 							["spec"] = 261,
 							["grupo"] = true,
+							["last_event"] = 1514858846,
 							["tipo"] = 4,
-							["last_event"] = 1514115839,
 							["cooldowns_defensive_spells"] = {
 								["_ActorTable"] = {
 									[1966] = {
 										["id"] = 1966,
 										["targets"] = {
-											["Zetiz"] = 2,
+											["Zetiz"] = 3,
 										},
-										["counter"] = 2,
+										["counter"] = 3,
 									},
 								},
 								["tipo"] = 9,
@@ -2241,9 +2243,7 @@ _detalhes_database = {
 							["buff_uptime_targets"] = {
 							},
 							["serial"] = "Player-1303-03FA8295",
-							["pets"] = {
-								"Lightforged Warframe <Zetiz>", -- [1]
-							},
+							["buff_uptime"] = 55,
 						}, -- [5]
 						{
 							["flag_original"] = 4369,
@@ -2251,10 +2251,6 @@ _detalhes_database = {
 							["nome"] = "Lightforged Warframe <Zetiz>",
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Vehicle-0-3892-1669-19745-126143-000026E0F9",
 							["spell_cast"] = {
 								[250434] = 1,
 								[251691] = 1,
@@ -2262,6 +2258,10 @@ _detalhes_database = {
 								[250433] = 5,
 								[250889] = 6,
 							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Vehicle-0-3892-1669-19745-126143-000026E0F9",
+							["classe"] = "PET",
 						}, -- [6]
 						{
 							["flag_original"] = 8466,
@@ -2269,31 +2269,31 @@ _detalhes_database = {
 							["nome"] = "Ox Initiate <Nathchanar-Ravencrest>",
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3151-1669-27426-106812-000026E0D7",
 							["spell_cast"] = {
 								[211946] = 1,
 								[172780] = 1,
 							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3151-1669-27426-106812-000026E0D7",
+							["classe"] = "PET",
 						}, -- [7]
 						{
 							["flag_original"] = 1297,
 							["nome"] = "Unknown",
 							["spec"] = 261,
 							["grupo"] = true,
-							["cooldowns_defensive"] = 3.003299,
+							["cooldowns_defensive"] = 5.003299,
 							["pets"] = {
 							},
 							["last_cooldown"] = {
-								1514294610.632, -- [1]
+								1516753315.785, -- [1]
 								1966, -- [2]
 							},
-							["last_event"] = 1514294624,
 							["tipo"] = 4,
+							["classe"] = "ROGUE",
 							["cooldowns_defensive_targets"] = {
-								["Unknown"] = 3,
+								["Unknown"] = 5,
 							},
 							["serial"] = "Player-1303-03FA8295",
 							["cooldowns_defensive_spells"] = {
@@ -2301,14 +2301,14 @@ _detalhes_database = {
 									[1966] = {
 										["id"] = 1966,
 										["targets"] = {
-											["Unknown"] = 3,
+											["Unknown"] = 5,
 										},
-										["counter"] = 3,
+										["counter"] = 5,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "ROGUE",
+							["last_event"] = 1516753330,
 						}, -- [8]
 					},
 				}, -- [4]
@@ -2333,7 +2333,7 @@ _detalhes_database = {
 				["enemy"] = "Radix",
 				["combat_counter"] = 16921,
 				["totals"] = {
-					93605033.946104, -- [1]
+					93605033.905367, -- [1]
 					222562.991468, -- [2]
 					{
 						0, -- [1]
@@ -2350,7 +2350,7 @@ _detalhes_database = {
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 4.81004600000001,
+						["cooldowns_defensive"] = 7.46501100000001,
 					}, -- [4]
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
@@ -2374,6 +2374,12 @@ _detalhes_database = {
 							"Zetiz", -- [6]
 						}, -- [2]
 						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1514858847.143, -- [4]
+							5039700, -- [5]
+							"Zetiz", -- [6]
 						}, -- [3]
 						{
 						}, -- [4]
@@ -2401,7 +2407,7 @@ _detalhes_database = {
 						}, -- [15]
 						{
 						}, -- [16]
-						["n"] = 3,
+						["n"] = 4,
 					},
 					["Nathchanar-Ravencrest"] = {
 						{
@@ -2504,8 +2510,20 @@ _detalhes_database = {
 							"Unknown", -- [6]
 						}, -- [3]
 						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1515606139.766, -- [4]
+							0, -- [5]
+							"Unknown", -- [6]
 						}, -- [4]
 						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1516753315.785, -- [4]
+							5039820, -- [5]
+							"Unknown", -- [6]
 						}, -- [5]
 						{
 						}, -- [6]
@@ -2529,7 +2547,7 @@ _detalhes_database = {
 						}, -- [15]
 						{
 						}, -- [16]
-						["n"] = 4,
+						["n"] = 6,
 					},
 				},
 				["TimeData"] = {
@@ -2544,10 +2562,10 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Zetiz"] = 78920823.007436,
 							["Grandezev-Pozzodell'Eternità"] = 6214999.005008,
-							["Nathchanar-Ravencrest"] = 8335712.008931,
+							["Zetiz"] = 78920823.007436,
 							["Чудита-Азурегос"] = 133500.008712,
+							["Nathchanar-Ravencrest"] = 8335712.008931,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -2591,7 +2609,7 @@ _detalhes_database = {
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 5,
+						["cooldowns_defensive"] = 8,
 					}, -- [4]
 				},
 				["start_time"] = 1543423.781,
@@ -2600,7 +2618,7 @@ _detalhes_database = {
 			}, -- [1]
 		},
 	},
-	["last_version"] = "v7.3.0.5154",
+	["last_version"] = "v7.3.0.5221",
 	["force_font_outline"] = "",
 	["tabela_instancias"] = {
 	},
@@ -2626,10 +2644,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994770483263,
+					["y"] = -415.994755377062,
 					["x"] = 570.14000540446,
 					["w"] = 203.8720703125,
-					["h"] = 129.303558349609,
+					["h"] = 129.303588867188,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -2660,10 +2678,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994770483263,
+					["y"] = -415.994755377062,
 					["x"] = 762.194442275391,
-					["w"] = 184.118942260742,
-					["h"] = 129.303558349609,
+					["w"] = 184.119171142578,
+					["h"] = 129.303588867188,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -2745,9 +2763,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = true,
-			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = false,
@@ -3081,19 +3099,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_earthen_pillar", -- [4]
 					["id"] = 1778,
 				},
-				["69279"] = {
-					"69279", -- [1]
-					"Gas Spore", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\Spell_Shadow_CreepingPlague", -- [4]
-					["id"] = 1097,
-				},
 				["181582"] = {
 					"181582", -- [1]
 					"Bellowing Shout", -- [2]
 					13.5, -- [3]
 					"Interface\\Icons\\ability_fomor_boss_shout", -- [4]
 					["id"] = 1783,
+				},
+				["69279"] = {
+					"69279", -- [1]
+					"Gas Spore", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\Spell_Shadow_CreepingPlague", -- [4]
+					["id"] = 1097,
 				},
 				["183254"] = {
 					"183254", -- [1]
@@ -3158,12 +3176,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FelRainOfFire", -- [4]
 					["id"] = 1795,
 				},
-				["186490"] = {
-					"186490", -- [1]
-					"Chains of Fel", -- [2]
-					33, -- [3]
-					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
-					["id"] = 1800,
+				["69076"] = {
+					"69076", -- [1]
+					"Bone Storm", -- [2]
+					45, -- [3]
+					"Interface\\Icons\\Ability_Druid_Cyclone", -- [4]
+					["id"] = 1101,
 				},
 				["181912"] = {
 					"181912", -- [1]
@@ -3200,19 +3218,19 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
 					["id"] = 1785,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
-					["id"] = 1794,
+				["berserk"] = {
+					"berserk", -- [1]
+					"Berserk", -- [2]
+					600, -- [3]
+					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
+					["id"] = 1100,
 				},
-				["69076"] = {
-					"69076", -- [1]
-					"Bone Storm", -- [2]
-					45, -- [3]
-					"Interface\\Icons\\Ability_Druid_Cyclone", -- [4]
-					["id"] = 1101,
+				["186490"] = {
+					"186490", -- [1]
+					"Chains of Fel", -- [2]
+					33, -- [3]
+					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
+					["id"] = 1800,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -3291,12 +3309,12 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_spell_shaman_lavaburst", -- [4]
 					["id"] = 1800,
 				},
-				["adds"] = {
-					"adds", -- [1]
-					"Next Adds", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Spell_Shadow_TwistedFaith", -- [4]
-					["id"] = 1100,
+				["180163"] = {
+					"180163", -- [1]
+					"Savage Strikes", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
+					["id"] = 1786,
 				},
 				["186123"] = {
 					"186123", -- [1]
@@ -3326,12 +3344,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_arakkoa_spinning_blade", -- [4]
 					["id"] = 1788,
 				},
-				["181180"] = {
-					"181180", -- [1]
-					"Inferno", -- [2]
-					48, -- [3]
-					"Interface\\Icons\\Spell_Fire_Felcano", -- [4]
-					["id"] = 1795,
+				["70351"] = {
+					"70351", -- [1]
+					"Next ooze", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Spell_Shadow_UnstableAffliction_1", -- [4]
+					["id"] = 1102,
 				},
 				["overfiend"] = {
 					"overfiend", -- [1]
@@ -3347,12 +3365,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossmannoroth_mannorothsgaze", -- [4]
 					["id"] = 1795,
 				},
-				["70351"] = {
-					"70351", -- [1]
-					"Next ooze", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\Spell_Shadow_UnstableAffliction_1", -- [4]
-					["id"] = 1102,
+				["181180"] = {
+					"181180", -- [1]
+					"Inferno", -- [2]
+					48, -- [3]
+					"Interface\\Icons\\Spell_Fire_Felcano", -- [4]
+					["id"] = 1795,
 				},
 				["179711"] = {
 					"179711", -- [1]
@@ -3382,12 +3400,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
 					["id"] = 1784,
 				},
-				["180163"] = {
-					"180163", -- [1]
-					"Savage Strikes", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
-					["id"] = 1786,
+				["adds"] = {
+					"adds", -- [1]
+					"Next Adds", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Spell_Shadow_TwistedFaith", -- [4]
+					["id"] = 1100,
 				},
 				["portals"] = {
 					"portals", -- [1]
@@ -3424,12 +3442,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
 					["id"] = 1785,
 				},
-				["berserk"] = {
-					"berserk", -- [1]
-					"Berserk", -- [2]
-					600, -- [3]
-					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
-					["id"] = 1100,
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+					["id"] = 1794,
 				},
 				["179407"] = {
 					"179407", -- [1]
@@ -3541,10 +3559,10 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["y"] = -41.5555419921875,
 			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -3564,7 +3582,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
@@ -4760,7 +4778,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -4769,7 +4787,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -4789,23 +4807,13 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["character_data"] = {
+		["logons"] = 2418,
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "Court of Stars",
-		["started"] = false,
-		["segment_id"] = 4,
-		["ej_id"] = 800,
-		["started_at"] = 1510502103.7,
-		["run_id"] = 10,
-		["level"] = 11,
-		["dungeon_zone_id"] = 1571,
-		["previous_boss_killed_at"] = 1510503526,
-	},
+	["last_day"] = "31",
 	["ignore_nicktag"] = false,
-	["last_day"] = "30",
-	["combat_counter"] = 16945,
+	["last_realversion"] = 128,
+	["combat_counter"] = 16983,
 	["combat_id"] = 1041,
 	["savedStyles"] = {
 	},
@@ -4820,14 +4828,24 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["character_data"] = {
-		["logons"] = 2380,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "Court of Stars",
+		["started"] = false,
+		["segment_id"] = 4,
+		["ej_id"] = 800,
+		["started_at"] = 1510502103.7,
+		["run_id"] = 10,
+		["level"] = 11,
+		["dungeon_zone_id"] = 1571,
+		["previous_boss_killed_at"] = 1510503526,
 	},
 	["nick_tag_cache"] = {
 		["last_version"] = 9,
-		["nextreset"] = 1514727732,
+		["nextreset"] = 1518715730,
 	},
-	["last_realversion"] = 128,
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -4845,6 +4863,5 @@ _detalhes_database = {
 	},
 	["cached_specs"] = {
 		["Player-1303-03FA8295"] = 261,
-		["Player-1329-05AB41FF"] = 268,
 	},
 }

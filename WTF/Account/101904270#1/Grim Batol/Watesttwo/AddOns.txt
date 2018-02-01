@@ -1,0 +1,5 @@
+WeakAurasModelPaths: enabled
+WeakAuras: enabled
+WeakAurasOptions: enabled
+WeakAurasTemplates: enabled
+EventTraceReloaded: enabled

@@ -1,4 +1,20 @@
 -- Revisions:
+--[[<p>08.30 29.01.2018</p>
+<ul>
+<li>Thanks to LibArtifactData now addon can notify about all artifacts seen in bags or bank when there are unsped points or free traits.</li>
+<li>Some German translations corrected, thanks to Salty.</li>
+</ul>
+]]
+--[[<p>08.28 21.01.2018</p>
+<ul>
+<li>Updated Chinese Traditional localization thanks to BNSSNB.</li>
+<li>Diagnostic message tied to pick-locking now printed only in verbose mode.</li>
+<li>Red text in tooltips is now searched on both sides of tooltip.</li>
+<li>When exalted is reached by using token then is validate right after and removed from button.</li>
+<li>Added announce for A new trait is available at the Netherlight Crucible.</li>
+<li>Rest of locale translated by Google translator if you don't like it, please, supply own translation and I will merge it into code. Even for English localization suggestions are welcomed is not my native language as well.</li>
+</ul>
+]]
 --[[<p>08.26 28.12.2017</p>
 <ul>
 <li>Ability to filter items when reputation with Legion faction is Exalted. Filtering for other pre Legion reputation tokens are not implemented yet.</li>

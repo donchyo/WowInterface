@@ -272,7 +272,7 @@ PremadeGroupsFilterState = {
 			["val"] = 4,
 		},
 		["members"] = {
-			["max"] = "3",
+			["max"] = "4",
 			["min"] = "",
 			["act"] = true,
 		},

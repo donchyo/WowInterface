@@ -370,10 +370,10 @@ TipTacItemRef: disabled
 TipTacTalents: disabled
 Titlefix: disabled
 TomTom: disabled
-WeakAuras: disabled
-WeakAurasModelPaths: disabled
-WeakAurasOptions: disabled
-WeakAurasTemplates: disabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
+WeakAurasTemplates: enabled
 XLoot: disabled
 XLoot_Frame: disabled
 XLoot_Group: disabled
@@ -426,4 +426,7 @@ WorldQuestTracker: disabled
 WorldQuestsList: disabled
 ElvUI_SLE: disabled
 StayUnsheathed: disabled
-vexrunes: disabled
+EventTraceReloaded: enabled
+BugSack: enabled
+!BugGrabber: enabled
+ViragDevTool: enabled

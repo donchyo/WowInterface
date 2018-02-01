@@ -600,9 +600,9 @@ if not L then return end
 --Translation missing 
 -- L["STRING_MELEE"] = ""
 L["STRING_MEMORY_ALERT_BUTTON"] = "Ho capito"
-L["STRING_MEMORY_ALERT_TEXT1"] = "Details! utilizza un sacco di memoria, ma, |cFFFF8800contrariamente alla credenza popolare|r, l'utilizzo della memoria da addons |cFFFF8800non influisce|r nel nulla le prestazioni del gioco o il vostro FPS."
-L["STRING_MEMORY_ALERT_TEXT2"] = "Quindi, se vedete Details! utilizzando grandi quantità di memoria, non fatevi prendere dal panico :D |cFFFF8800Va tutto bene|r, e, una parte di questa memoria è anche |cFFFF8800utilizzato in cache|r per rendere l'addon ancora più veloce."
-L["STRING_MEMORY_ALERT_TEXT3"] = "Tuttavia, se è il vostro desiderio di conoscere |cFFFF8800che addons sono piu 'pesanti'|r o che sono in diminuzione più il vostro FPS, installare l'addon: '|cFFFFFF00AddOns Cpu Usage|r'."
+L["STRING_MEMORY_ALERT_TEXT1"] = "Details! utilizza un sacco di memoria, ma, |cFFFF8800contrariamente alla credenza popolare|r, l'utilizzo della memoria da addons |cFFFF8800non influisce|r nelle prestazioni del gioco o gli FPS."
+L["STRING_MEMORY_ALERT_TEXT2"] = "Quindi, se vedete Details! utilizzare grandi quantità di memoria, non fatevi prendere dal panico :D |cFFFF8800Va tutto bene! |r, e una parte di questa memoria è anche |cFFFF8800utilizzato in cache |r per rendere l'addon ancora più veloce."
+L["STRING_MEMORY_ALERT_TEXT3"] = "Tuttavia, se è vorreste conoscere |cFFFF8800 quali addons influiscono maggiormente|r o che diminuiscono gli FPS, installate l'addon: '|cFFFFFF00AddOns Cpu Usage|r'."
 L["STRING_MEMORY_ALERT_TITLE"] = "Si prega di leggere con attenzione!"
 --Translation missing 
 -- L["STRING_MENU_CLOSE_INSTANCE"] = ""

@@ -191,10 +191,10 @@ TipTacItemRef: disabled
 TipTacOptions: disabled
 TipTacTalents: disabled
 Titlefix: disabled
-WeakAuras: disabled
-WeakAurasModelPaths: disabled
-WeakAurasOptions: disabled
-WeakAurasTemplates: disabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
+WeakAurasTemplates: enabled
 WorldQuestTracker: disabled
 WorldQuestsList: disabled
 +Wowhead_Looter: disabled
@@ -246,4 +246,7 @@ infTabmagic: disabled
 infVeterinarian: disabled
 infWarrior: disabled
 StayUnsheathed: disabled
-vexrunes: disabled
+EventTraceReloaded: enabled
+BugSack: enabled
+!BugGrabber: enabled
+ViragDevTool: enabled

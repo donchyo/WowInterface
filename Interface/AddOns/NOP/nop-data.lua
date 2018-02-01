@@ -27,6 +27,7 @@ NOP.T_SPELL_BY_NAME = { -- [itemID] = {{count_to_use,priority},{"sub-Zone",...},
   [140236] = {{1,private.PRI_OPEN},nil,nil}, -- 100 Ancient Mana, 
   [143733] = {{1,private.PRI_OPEN},nil,nil}, -- Ancient Mana Shards
   [143734] = {{1,private.PRI_OPEN},nil,nil}, -- Ancient Mana Crystal Cluster
+  [141655] = {{1,private.PRI_OPEN},nil,nil}, -- Shimmering Ancient Mana Cluster
   [140240] = {{1,private.PRI_OPEN},nil,nil}, -- 150 Ancient Mana
   [140242] = {{1,private.PRI_OPEN},nil,nil}, -- 200 Ancient Mana
   [140239] = {{1,private.PRI_OPEN},nil,nil}, -- 300 Ancient Mana

@@ -266,10 +266,10 @@ Titlefix: disabled
 TomTom: disabled
 ToolTipTabs: disabled
 Velhari_Health_Fix: disabled
-WeakAuras: disabled
-WeakAurasModelPaths: disabled
-WeakAurasOptions: disabled
-WeakAurasTemplates: disabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
+WeakAurasTemplates: enabled
 +Wowhead_Looter: disabled
 xCT+: disabled
 XLoot: disabled
@@ -357,4 +357,7 @@ WorldQuestTracker: disabled
 WorldQuestsList: disabled
 ElvUI_SLE: disabled
 StayUnsheathed: disabled
-vexrunes: disabled
+EventTraceReloaded: enabled
+BugSack: enabled
+!BugGrabber: enabled
+ViragDevTool: enabled

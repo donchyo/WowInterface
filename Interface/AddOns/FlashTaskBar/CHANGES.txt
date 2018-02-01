@@ -1,7 +1,7 @@
-changeset:   70:2db7d77c825c
-tag:         v7.3.2.070
+changeset:   72:dbfeae3fdfe4
+tag:         v7.3.2.072
 user:        Tercio
-date:        Sat Dec 09 10:33:14 2017 -0200
-summary:     - added a flash when the player character dies, it's enabled by default.
+date:        Fri Jan 12 11:11:19 2018 -0200
+summary:     - Added localization to PlayerDeath event option.
 
 

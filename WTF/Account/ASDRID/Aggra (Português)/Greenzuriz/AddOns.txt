@@ -112,10 +112,10 @@ TidyPlates: enabled
 TidyPlatesHub: enabled
 TidyPlates_ThreatPlates: disabled
 tullaCC: enabled
-WeakAurasModelPaths: disabled
-WeakAuras: disabled
+WeakAurasModelPaths: enabled
+WeakAuras: enabled
 WeakAurasTutorials: enabled
-WeakAurasOptions: disabled
+WeakAurasOptions: enabled
 infAbsorbs: disabled
 infAuras: disabled
 infBinds: disabled
@@ -312,7 +312,7 @@ Titlefix: disabled
 TomTom: disabled
 ToolTipTabs: disabled
 Velhari_Health_Fix: disabled
-WeakAurasTemplates: disabled
+WeakAurasTemplates: enabled
 +Wowhead_Looter: disabled
 xCT+: disabled
 XLoot: disabled
@@ -366,4 +366,7 @@ WorldQuestTracker: disabled
 WorldQuestsList: disabled
 ElvUI_SLE: disabled
 StayUnsheathed: disabled
-vexrunes: disabled
+EventTraceReloaded: enabled
+BugSack: enabled
+!BugGrabber: enabled
+ViragDevTool: enabled
