@@ -1,12 +1,33 @@
 ------------------------------------------------------------------------
-r621 | Cakechart | 2018-01-24 22:21:39 +0000 (Wed, 24 Jan 2018) | 3 lines
+r627 | Cakechart | 2018-02-02 16:01:21 +0000 (Fri, 02 Feb 2018) | 1 line
 Changed paths:
    M /trunk/Core.lua
+
+Added workaround for outdated LibBabble-Boss data for the Theralion and Valiona encounter
+------------------------------------------------------------------------
+r626 | Cakechart | 2018-02-02 15:41:30 +0000 (Fri, 02 Feb 2018) | 1 line
+Changed paths:
+   M /trunk/Options_Defaults.lua
+
+Fixed defeat detection for the two Deathwing encounters in Dragon Soul
+------------------------------------------------------------------------
+r625 | Cakechart | 2018-02-01 11:00:16 +0000 (Thu, 01 Feb 2018) | 1 line
+Changed paths:
+   M /trunk/Options_Defaults.lua
+
+Fixed typo in boss name for Theralion and Valiona (whoops)
+------------------------------------------------------------------------
+r624 | Cakechart | 2018-02-01 10:57:35 +0000 (Thu, 01 Feb 2018) | 1 line
+Changed paths:
+   M /trunk/Options_Defaults.lua
+
+Added defeat detection for the RWL: Cuteaclysm pets
+------------------------------------------------------------------------
+r623 | Cakechart | 2018-01-25 22:04:04 +0000 (Thu, 25 Jan 2018) | 1 line
+Changed paths:
    M /trunk/Locales.lua
    M /trunk/Options_Defaults.lua
 
-* Updated item IDs for the Kirin Tor & Dreamweavers emissary caches
-* Fixed tracking for certain items in Ulduar, which weren't recognized after the switch to a flexible Normal difficulty (Timewalking still needs testing)
-* Fixed localization import - new phrases should once again appear in the WowAce/CurseForge localization system for volunteers to translate
+Added Big Red Raygun (toy drop from Doctor Weavil)
 ------------------------------------------------------------------------
 

@@ -1,6 +1,8 @@
-local VERSION = 49
+local VERSION = 50
 
 --[[
+Added Veiled Argunite filter
+
 Special icons for rares, pvp or pet battle quests in list
 Better sorting for all reward types
 Quest position on general Broken Isles map
@@ -2420,7 +2422,19 @@ do
 		end,
 		arg1 = "!invasionPointsFilter",
 		checkable = true,
-	})	
+	})
+	tinsert(list,7,{
+		text = GetCurrencyInfo(1508),
+		func = function()
+			VWQL[charKey].arguniteFilter = not VWQL[charKey].arguniteFilter
+			ELib.ScrollDropDown.UpdateChecks()
+			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
+			WorldQuestList_Update()
+		end,
+		arg1 = "!arguniteFilter",
+		checkable = true,
+	})
 	list[#list+1] = {
 		text = TYPE,
 		isTitle = true,
@@ -2603,6 +2617,8 @@ do
 				self.List[i].checkState = VWQL[charKey].argusReachIgnoreFilter
 			elseif self.List[i].arg1 == "!invasionPointsFilter" then
 				self.List[i].checkState = not VWQL[charKey].invasionPointsFilter
+			elseif self.List[i].arg1 == "!arguniteFilter" then
+				self.List[i].checkState = not VWQL[charKey].arguniteFilter
 			end
 		end
 	end	
@@ -4204,6 +4220,9 @@ function WorldQuestList_Update(preTaskInfo)
 							hasRewardFiltered = true
 							rewardType = 30.1508
 							rewardSort = numItems or 0
+							if VWQL[charKey].arguniteFilter then
+								isValidLine = 0 
+							end
 						elseif currencyID == 1506 then	
 							hasRewardFiltered = true
 							rewardType = 30.15085

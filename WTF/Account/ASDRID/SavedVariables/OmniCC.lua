@@ -1,5 +1,6 @@
 
 OmniCC4Config = {
+	["version"] = "7.3.1",
 	["groupSettings"] = {
 		["base"] = {
 			["styles"] = {
@@ -47,8 +48,8 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "none",
-			["fontFace"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Expressway.ttf",
-			["fontSize"] = 15,
+			["yOff"] = 1,
+			["mmSSDuration"] = 0,
 			["spiralOpacity"] = 1.00999997742474,
 			["minDuration"] = 3.00000004470348,
 			["xOff"] = 0,
@@ -56,8 +57,8 @@ OmniCC4Config = {
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.5,
 			["minEffectDuration"] = 0,
-			["mmSSDuration"] = 0,
-			["yOff"] = 1,
+			["fontSize"] = 15,
+			["fontFace"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Expressway.ttf",
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -87,5 +88,4 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["version"] = "7.3.1",
 }

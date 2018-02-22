@@ -41,21 +41,17 @@ L["KEYSTONE_COMPLETED_10"] = "+10 (쐐기클)"
 L["KEYSTONE_COMPLETED_15"] = "+15 (쐐기클)"
 L["MAINS_SCORE"] = "메인 점수"
 L["MAINS_SCORE_COLON"] = "메인 점수"
---Translation missing 
--- L["MODULE_AMERICAS"] = ""
---Translation missing 
--- L["MODULE_EUROPE"] = ""
---Translation missing 
--- L["MODULE_KOREA"] = ""
---Translation missing 
--- L["MODULE_TAIWAN"] = ""
+L["MODULE_AMERICAS"] = "북미"
+L["MODULE_EUROPE"] = "유럽"
+L["MODULE_KOREA"] = "한국"
+L["MODULE_TAIWAN"] = "대만"
 L["MYTHIC_PLUS_DB_MODULES"] = "Mythic Plus 데이터베이스 모듈"
 L["MYTHIC_PLUS_SCORES"] = "Mythic Plus 점수"
 L["OPEN_CONFIG"] = "설정 열기"
 L["OUTDATED_DATABASE"] = "점수는 % d 일 전 입니다."
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r 은(는)  |cffFF6666%d| r 일 전 데이터를 사용합니다. 더 정확한 Mythic Plus 점수를 위해 애드온을 업데이트하십시오."
---Translation missing 
--- L["PREV_SEASON_SUFFIX"] = ""
+L["PREV_SEASON_SUFFIX"] = "(*)"
+L["RAIDERIO_MP_BASE_SCORE"] = "Raider.IO M+ 기본 점수"
 L["RAIDERIO_MP_SCORE"] = "Raider.IO M+ 점수"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO M+ 점수:"
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Raider.IO Mythic Plus 옵션"
@@ -77,6 +73,9 @@ L["SHOW_ON_GUILD_ROSTER"] = "길드 명단에 표시"
 L["SHOW_ON_GUILD_ROSTER_DESC"] = "길드원 명단의 길드원에 마우스를 올리면 Mythic+ 점수를 표시합니다."
 L["SHOW_ON_PLAYER_UNITS"] = "플레이어 유닛에 표시"
 L["SHOW_ON_PLAYER_UNITS_DESC"] = "플레이어 유닛에 마우스를 올리면 Mythic+ 점수를 표시합니다."
+L["SHOW_SCORE_IN_COMBAT"] = "전투 중에 점수 표시"
+L["SHOW_SCORE_IN_COMBAT_DESC"] = [=[
+전투 중에는 플레이어의 상세표시가 성능에 영향을 주지 않도록 비활성화 할수 있습니다.]=]
 L["TANK"] = "탱커"
 L["TANK_SCORE"] = "탱커 점수"
 L["TIMED_10_RUNS"] = "10-14단+ 횟수"

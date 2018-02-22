@@ -98,6 +98,8 @@ if ns:IsSameLocale("ptBR") then
 --Translation missing 
 -- L["PREV_SEASON_SUFFIX"] = ""
 --Translation missing 
+-- L["RAIDERIO_MP_BASE_SCORE"] = ""
+--Translation missing 
 -- L["RAIDERIO_MP_SCORE"] = ""
 --Translation missing 
 -- L["RAIDERIO_MP_SCORE_COLON"] = ""
@@ -139,6 +141,10 @@ if ns:IsSameLocale("ptBR") then
 -- L["SHOW_ON_PLAYER_UNITS"] = ""
 --Translation missing 
 -- L["SHOW_ON_PLAYER_UNITS_DESC"] = ""
+--Translation missing 
+-- L["SHOW_SCORE_IN_COMBAT"] = ""
+--Translation missing 
+-- L["SHOW_SCORE_IN_COMBAT_DESC"] = ""
 --Translation missing 
 -- L["TANK"] = ""
 --Translation missing 

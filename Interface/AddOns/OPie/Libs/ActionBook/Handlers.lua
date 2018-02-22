@@ -418,7 +418,7 @@ do -- macro: name
 	end, {"forceShow"})
 end
 do -- battlepet: pet ID
-	local petAction = {}
+	local petAction, special = {}, {}
 	local function tip(self, id)
 		local sid, cname, lvl, _, _, _, _, name, _, ptype, _, _, _, _, cb = C_PetJournal.GetPetInfoByPetID(id)
 		if not sid then return false end
@@ -438,9 +438,25 @@ do -- battlepet: pet ID
 		local state = (active and active:upper()) == pid and 1 or 0
 		return sid and not cdLeft and not C_PetJournal.PetIsRevoked(pid), state, tex, cn or n or "", 0, cdLeft or 0, duration or 0, tip, pid
 	end
+	do -- random favorite pet
+		local rname, _, ricon = GetSpellInfo(243819)
+		local function randFaveHint()
+			return HasFullControl(), C_PetJournal.GetSummonedPetGUID() and 1 or 0, ricon, rname, 0, 0, 0, GameTooltip.SetSpellByID, 243819
+		end
+		petAction.FAVE = AB:CreateActionSlot(randFaveHint, nil, "attribute", "type","macro", "macrotext",SLASH_RANDOMFAVORITEPET1)
+		RW:ImportSlashCmd("RANDOMFAVORITEPET", true, false, 20, function(_, _, clause, _target)
+			if clause then
+				return true, randFaveHint()
+			end
+		end)
+		RW:SetCastEscapeAction(GetSpellInfo(243819), petAction.FAVE)
+		function special.fave()
+			return "Battle Pet", rname, ricon, nil, GameTooltip.SetSpellByID, 243819
+		end
+	end
 	local function create(pid)
 		local ok, sid = pcall(C_PetJournal.GetPetInfoByPetID, pid)
-		if not (ok and sid) then return end
+		if not (ok and sid) and not special[pid] then return end
 		pid = pid:upper()
 		if not petAction[pid] then
 			petAction[pid] = AB:CreateActionSlot(battlepetHint, pid, "func", C_PetJournal.SummonPetByGUID, pid)
@@ -448,6 +464,7 @@ do -- battlepet: pet ID
 		return petAction[pid]
 	end
 	local function describe(pid)
+		if special[pid] then return special[pid]() end
 		local ok, sid, cn, lvl, _, _, _, _, n, tex = pcall(C_PetJournal.GetPetInfoByPetID, pid)
 		if not (ok and sid) then return "Battle Pet", "?" end
 		if (cn or n) and ((lvl or 0) > 1) then cn = "[" .. lvl .. "] " .. (cn or n) end
@@ -468,14 +485,28 @@ do -- equipmentset: equipment sets by name
 	local function resolveIcon(fid)
 		return type(fid) == "number" and fid or ("Interface/Icons/" .. (fid or "INV_Misc_QuestionMark"))
 	end
+	local function SetBadEquipmentSet(tip, name)
+		tip:SetEquipmentSet(name)
+		if name:match("^%s?(.-)%s?$") ~= name then
+			tip:AddLine(ERR_NAME_INVALID_SPACE, 1, 0, 0, true)
+		elseif name:match("[%[%];]") then
+			tip:AddLine(ERR_NAME_INVALID, 1, 0, 0, true)
+		end
+	end
+	local function isBadName(name)
+		return name:match("^%s?([^%[%];]-)%s?$") ~= name
+	end
 	local function equipmentsetHint(name)
 		local _, icon, _, active, total, equipped, available = C_EquipmentSet.GetEquipmentSetInfo(name and C_EquipmentSet.GetEquipmentSetID(name) or -1)
 		if icon then
 			return total == equipped or (available > 0), active and 1 or 0, resolveIcon(icon), name, nil, 0, 0, GameTooltip.SetEquipmentSet, name
 		end
 	end
+	function EV.EQUIPMENT_SETS_CHANGED()
+		AB:NotifyObservers("equipmentset")
+	end
 	AB:RegisterActionType("equipmentset", function(name)
-		local sid = type(name) == "string" or not C_EquipmentSet.GetEquipmentSetID(name)
+		local sid = type(name) == "string" and not isBadName(name) and C_EquipmentSet.GetEquipmentSetID(name)
 		if not sid then return end
 		if not setMap[name] then
 			setMap[name] = AB:CreateActionSlot(equipmentsetHint, name, "attribute", "type","macro", "macrotext", (SLASH_EQUIP_SET1 or "/equipset") .. " " .. name)
@@ -483,7 +514,11 @@ do -- equipmentset: equipment sets by name
 		return setMap[name]
 	end, function(name)
 		local _, ico = C_EquipmentSet.GetEquipmentSetInfo(name and C_EquipmentSet.GetEquipmentSetID(name) or -1)
-		return "Equipment Set", name, ico and resolveIcon(ico) or "Interface/Icons/INV_Misc_QuestionMark", nil, GameTooltip.SetEquipmentSet, name
+		local fname, setTip = name, GameTooltip.SetEquipmentSet
+		if type(name) == "string" and isBadName(name) then
+			fname, setTip = "|cffff0000" .. name, SetBadEquipmentSet
+		end
+		return "Equipment Set", fname, ico and resolveIcon(ico) or "Interface/Icons/INV_Misc_QuestionMark", nil, setTip, name
 	end)
 	RW:SetCommandHint(SLASH_EQUIP_SET1, 80, function(_, _, clause)
 		if clause and clause ~= "" then

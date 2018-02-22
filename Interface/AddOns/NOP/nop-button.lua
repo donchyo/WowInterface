@@ -128,6 +128,7 @@ function NOP:ButtonPostClick(button) -- post click on button
   if button then
     if (button == 'RightButton') then
       self:BlacklistItem(IsControlKeyDown(),self.BF.itemID)
+      self.BF.itemID = nil
     end
     if WoWBox then WoWBox.itemClick = nil end
     if not self.timerItemShowNew then self.timerItemShowNew = self:ScheduleTimer("ItemShowNew", private.TIMER_IDLE / 3) end -- back to timer

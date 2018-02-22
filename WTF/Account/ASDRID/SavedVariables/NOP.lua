@@ -1,17 +1,26 @@
 
 NewOpenablesProfile = {
 	["char"] = {
-		["Nyrith - Grim Batol"] = {
-			["itemID"] = 147581,
+		["Krixi - Grim Batol"] = {
+			["itemID"] = 147819,
+		},
+		["Zolution - Grim Batol"] = {
+			["itemID"] = 147721,
 		},
 		["Kriximonk - Grim Batol"] = {
 			["itemID"] = 147721,
 		},
 		["Krixidk - Grim Batol"] = {
+			["itemID"] = 138785,
+		},
+		["Zuriz - Grim Batol"] = {
 			["itemID"] = 151245,
 		},
-		["Zolution - Grim Batol"] = {
-			["itemID"] = 141028,
+		["Krixikin - Grim Batol"] = {
+			["itemID"] = 147721,
+		},
+		["Nyrith - Grim Batol"] = {
+			["itemID"] = 147581,
 		},
 	},
 	["profileKeys"] = {
@@ -24,6 +33,7 @@ NewOpenablesProfile = {
 		["Lowerboost - Lightbringer"] = "Default",
 		["Krixicx - Shattered Hand"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
+		["Memeinhaler - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
@@ -58,7 +68,7 @@ NewOpenablesProfile = {
 				"UIParent", -- [2]
 				"TOPLEFT", -- [3]
 			},
-			["version"] = "|cFFFFFFFF08.30 29.01.2018 use |cFFFF00FF/nop|cFFFFFFFF",
+			["version"] = "|cFFFFFFFF08.32 01.02.2018 use |cFFFF00FF/nop|cFFFFFFFF",
 			["lockButton"] = true,
 		},
 	},

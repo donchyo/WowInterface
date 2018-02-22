@@ -101,6 +101,7 @@ do -- Battle pets
 		local sortParameter = C_PetJournal.GetPetSortParameter()
 		C_PetJournal.SetPetSortParameter(LE_SORT_BY_LEVEL)
 		
+		add("battlepet", "fave")
 		for i=1,C_PetJournal.GetNumPets() do
 			add("battlepet", (C_PetJournal.GetPetInfoByIndex(i)))
 		end

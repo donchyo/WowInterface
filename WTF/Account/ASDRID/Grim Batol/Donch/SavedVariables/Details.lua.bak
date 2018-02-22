@@ -25,7 +25,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["on_hold"] = false,
+							["damage_taken"] = 1918874.006659,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
@@ -478,8 +478,8 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["dps_started"] = false,
-							["total"] = 44129759.006659,
-							["damage_taken"] = 1918874.006659,
+							["end_time"] = 1512499127,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Schatty-Blackhand",
 							["spec"] = 63,
@@ -492,7 +492,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1512499083,
 							["serial"] = "Player-3691-047CA71E",
-							["end_time"] = 1512499127,
+							["total"] = 44129759.006659,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -510,8 +510,8 @@ _detalhes_database = {
 								"Silver Hand Templar <Flâ-Dalaran>", -- [1]
 							},
 							["custom"] = 0,
-							["classe"] = "PALADIN",
 							["friendlyfire_total"] = 0,
+							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 22534101.008411,
@@ -769,11 +769,11 @@ _detalhes_database = {
 							["end_time"] = 1512499127,
 							["colocacao"] = 2,
 							["last_event"] = 1512499126,
-							["on_hold"] = false,
-							["start_time"] = 1512499085,
-							["serial"] = "Player-1621-085857ED",
 							["friendlyfire"] = {
 							},
+							["start_time"] = 1512499085,
+							["serial"] = "Player-1621-085857ED",
+							["on_hold"] = false,
 						}, -- [2]
 						{
 							["flag_original"] = 1297,
@@ -790,8 +790,8 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["classe"] = "MAGE",
 							["friendlyfire_total"] = 0,
+							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 14660090.00339,
@@ -961,11 +961,11 @@ _detalhes_database = {
 							["end_time"] = 1512499127,
 							["colocacao"] = 3,
 							["last_event"] = 1512499127,
-							["on_hold"] = false,
-							["start_time"] = 1512499088,
-							["serial"] = "Player-1303-0387FD7B",
 							["friendlyfire"] = {
 							},
+							["start_time"] = 1512499088,
+							["serial"] = "Player-1303-0387FD7B",
+							["on_hold"] = false,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -983,7 +983,7 @@ _detalhes_database = {
 								"Dreamgrove Protector <Hairball-Trollbane>", -- [1]
 							},
 							["last_dps"] = 121005550.01113,
-							["total"] = 12100555.001113,
+							["end_time"] = 1512499127,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
@@ -991,13 +991,10 @@ _detalhes_database = {
 							["damage_taken"] = 1298705.001113,
 							["classe"] = "DRUID",
 							["dps_started"] = false,
-							["end_time"] = 1512499127,
+							["total"] = 12100555.001113,
 							["delay"] = 0,
 							["start_time"] = 1512499083,
 							["nome"] = "Hairball-Trollbane",
-							["spec"] = 104,
-							["grupo"] = true,
-							["last_event"] = 1512499127,
 							["spells"] = {
 								["_ActorTable"] = {
 									{
@@ -1238,6 +1235,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
+							["grupo"] = true,
+							["last_event"] = 1512499127,
+							["spec"] = 104,
 							["friendlyfire"] = {
 							},
 							["colocacao"] = 4,
@@ -1618,12 +1618,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 8,
 										["n_curado"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
@@ -1646,12 +1646,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 36,
 										["n_curado"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[252208] = {
@@ -1706,12 +1706,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 8,
 										["n_curado"] = 1280838,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[227034] = {
@@ -1734,12 +1734,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -1768,7 +1768,8 @@ _detalhes_database = {
 							["totalover"] = 3988249.003595,
 							["total_without_pet"] = 1150518.003595,
 							["total"] = 1150518.003595,
-							["spec"] = 63,
+							["targets_absorbs"] = {
+							},
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 2,
@@ -1783,7 +1784,7 @@ _detalhes_database = {
 							["healing_taken"] = 1958072.003595,
 							["fight_component"] = true,
 							["end_time"] = 1512499127,
-							["last_event"] = 1512499126,
+							["tipo"] = 2,
 							["nome"] = "Schatty-Blackhand",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1807,12 +1808,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 6,
 										["n_curado"] = 314151,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
@@ -1835,12 +1836,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 36,
 										["n_curado"] = 817699,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[252897] = {
@@ -1863,12 +1864,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 2,
 										["n_curado"] = 18668,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -1880,12 +1881,11 @@ _detalhes_database = {
 							},
 							["classe"] = "MAGE",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1512499126,
 							["totaldenied"] = 0.003595,
 							["start_time"] = 1512499083,
 							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 63,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -1902,7 +1902,8 @@ _detalhes_database = {
 							["totalover"] = 799709.001277,
 							["total_without_pet"] = 322147.001277,
 							["total"] = 366469.001277,
-							["spec"] = 70,
+							["targets_absorbs"] = {
+							},
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 3,
@@ -1919,8 +1920,7 @@ _detalhes_database = {
 							["healing_taken"] = 518251.001277,
 							["fight_component"] = true,
 							["end_time"] = 1512499127,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 70,
 							["nome"] = "Flâ-Dalaran",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1944,12 +1944,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 32,
 										["n_curado"] = 322147,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -1961,11 +1961,11 @@ _detalhes_database = {
 							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1512499126,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001277,
 							["start_time"] = 1512499085,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1512499126,
 						}, -- [3]
 						{
 							["flag_original"] = 1297,
@@ -1980,7 +1980,8 @@ _detalhes_database = {
 							["totalover"] = 0.008696,
 							["total_without_pet"] = 0.008696,
 							["total"] = 0.008696,
-							["spec"] = 64,
+							["targets_absorbs"] = {
+							},
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 4,
@@ -1994,8 +1995,7 @@ _detalhes_database = {
 							["healing_taken"] = 319762.008696,
 							["fight_component"] = true,
 							["end_time"] = 1512499127,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 64,
 							["nome"] = "Donch",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2007,11 +2007,11 @@ _detalhes_database = {
 							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.008696,
 							["start_time"] = 1512499127,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 0,
 						}, -- [4]
 						{
 							["flag_original"] = 8466,
@@ -2023,7 +2023,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PET",
 							["totalover"] = 663251.007676,
 							["total_without_pet"] = 44322.007676,
 							["total"] = 44322.007676,
@@ -2073,12 +2073,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 4,
 										["n_curado"] = 42582,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
@@ -2101,12 +2101,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 7,
 										["n_curado"] = 1740,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -2121,7 +2121,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["start_time"] = 1512499086,
 							["delay"] = 0,
-							["classe"] = "PET",
+							["heal_enemy_amt"] = 0,
 						}, -- [5]
 					},
 				}, -- [2]
@@ -2227,7 +2227,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["classe"] = "MAGE",
-							["cc_break"] = 1.004674,
+							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[190319] = {
@@ -2444,24 +2444,16 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 137,
-							["nome"] = "Schatty-Blackhand",
+							["buff_uptime_targets"] = {
+							},
 							["cc_done"] = 1.002241,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Schatty-Blackhand",
 							["spec"] = 63,
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Radix"] = 1,
-							},
-							["cc_break_oque"] = {
-								[31661] = 1,
-							},
-							["tipo"] = 4,
-							["last_event"] = 1512499127,
+							["cc_break"] = 1.004674,
 							["spell_cast"] = {
 								[108853] = 6,
 								[153561] = 1,
@@ -2471,6 +2463,14 @@ _detalhes_database = {
 								[212653] = 1,
 								[11366] = 12,
 								[31661] = 1,
+							},
+							["cc_break_oque"] = {
+								[31661] = 1,
+							},
+							["tipo"] = 4,
+							["last_event"] = 1512499127,
+							["cc_done_targets"] = {
+								["Radix"] = 1,
 							},
 							["cc_break_targets"] = {
 								["Radix"] = 1,
@@ -2782,9 +2782,9 @@ _detalhes_database = {
 								[6795] = 2,
 								[33917] = 5,
 							},
-							["tipo"] = 4,
-							["serial"] = "Player-1598-066CFCB3",
 							["last_event"] = 1512499127,
+							["serial"] = "Player-1598-066CFCB3",
+							["tipo"] = 4,
 							["pets"] = {
 								"Dreamgrove Protector <Hairball-Trollbane>", -- [1]
 							},
@@ -2892,12 +2892,12 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 2,
 									},
-									[242551] = {
+									[186406] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 2,
 										["refreshamt"] = 0,
-										["id"] = 242551,
+										["id"] = 186406,
 										["uptime"] = 44,
 										["targets"] = {
 										},
@@ -2981,12 +2981,12 @@ _detalhes_database = {
 										["actived"] = true,
 										["appliedamt"] = 1,
 									},
-									[186406] = {
+									[242551] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 2,
 										["refreshamt"] = 0,
-										["id"] = 186406,
+										["id"] = 242551,
 										["uptime"] = 44,
 										["targets"] = {
 										},
@@ -3026,16 +3026,16 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 6,
 									},
-									[214128] = {
+									[231843] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 2,
+										["activedamt"] = 7,
 										["refreshamt"] = 0,
-										["id"] = 214128,
-										["uptime"] = 16,
+										["id"] = 231843,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
+										["appliedamt"] = 7,
 									},
 									[207635] = {
 										["counter"] = 0,
@@ -3048,16 +3048,16 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 5,
 									},
-									[231843] = {
+									[214128] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 7,
+										["activedamt"] = 2,
 										["refreshamt"] = 0,
-										["id"] = 231843,
-										["uptime"] = 13,
+										["id"] = 214128,
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["appliedamt"] = 7,
+										["appliedamt"] = 2,
 									},
 								},
 								["tipo"] = 9,
@@ -3077,8 +3077,8 @@ _detalhes_database = {
 								[20271] = 3,
 								[184575] = 7,
 							},
-							["tipo"] = 4,
 							["last_event"] = 1512499127,
+							["tipo"] = 4,
 							["nome"] = "Flâ-Dalaran",
 							["pets"] = {
 								"Silver Hand Templar <Flâ-Dalaran>", -- [1]
@@ -3220,16 +3220,16 @@ _detalhes_database = {
 										["actived"] = true,
 										["appliedamt"] = 1,
 									},
-									[195391] = {
+									[186406] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 4,
-										["id"] = 195391,
-										["uptime"] = 28,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 186406,
+										["uptime"] = 44,
 										["targets"] = {
 										},
-										["appliedamt"] = 3,
+										["appliedamt"] = 1,
 									},
 									[205473] = {
 										["counter"] = 0,
@@ -3242,16 +3242,16 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 4,
 									},
-									[186406] = {
+									[195391] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 186406,
-										["uptime"] = 44,
+										["activedamt"] = 3,
+										["refreshamt"] = 4,
+										["id"] = 195391,
+										["uptime"] = 28,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["appliedamt"] = 3,
 									},
 									[116267] = {
 										["counter"] = 0,
@@ -3278,8 +3278,8 @@ _detalhes_database = {
 								[44614] = 3,
 								[116] = 12,
 							},
-							["tipo"] = 4,
 							["last_event"] = 1514811483,
+							["tipo"] = 4,
 							["nome"] = "Donch",
 							["pets"] = {
 							},
@@ -3291,7 +3291,7 @@ _detalhes_database = {
 							["flag_original"] = 8466,
 							["ownerName"] = "Flâ-Dalaran",
 							["nome"] = "Silver Hand Templar <Flâ-Dalaran>",
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["spell_cast"] = {
 								[221722] = 1,
 								[221730] = 1,
@@ -3300,8 +3300,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
+							["tipo"] = 4,
 							["serial"] = "Creature-0-3111-1669-3956-111316-000026E735",
 							["fight_component"] = true,
 						}, -- [5]
@@ -3311,15 +3311,15 @@ _detalhes_database = {
 							["nome"] = "Dreamgrove Protector <Hairball-Trollbane>",
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-3061-1669-8862-119078-000026E7A2",
 							["spell_cast"] = {
 								[242824] = 1,
 								[242831] = 1,
 								[242828] = 1,
 							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3061-1669-8862-119078-000026E7A2",
+							["classe"] = "PET",
 						}, -- [6]
 					},
 				}, -- [4]
@@ -3345,7 +3345,7 @@ _detalhes_database = {
 				["combat_counter"] = 8033,
 				["playing_solo"] = true,
 				["totals"] = {
-					94030830.814299, -- [1]
+					94030830.802464, -- [1]
 					4096529.966842, -- [2]
 					{
 						0, -- [1]
@@ -3440,7 +3440,7 @@ _detalhes_database = {
 			}, -- [1]
 		},
 	},
-	["combat_counter"] = 8038,
+	["combat_counter"] = 8040,
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -3468,10 +3468,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994770483263,
+					["y"] = -415.994755377062,
 					["x"] = 570.14000540446,
 					["w"] = 203.8720703125,
-					["h"] = 129.303558349609,
+					["h"] = 129.303588867188,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -3502,10 +3502,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994770483263,
+					["y"] = -415.994755377062,
 					["x"] = 762.194442275391,
-					["w"] = 184.118942260742,
-					["h"] = 129.303558349609,
+					["w"] = 184.119293212891,
+					["h"] = 129.303588867188,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -3570,7 +3570,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1509563509,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "17",
+	["last_day"] = "10",
 	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -3579,8 +3579,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -3626,7 +3626,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -3634,7 +3634,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -3642,7 +3642,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -3656,7 +3656,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -4321,8 +4321,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -4338,22 +4338,17 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["character_data"] = {
-		["logons"] = 1413,
+	["force_font_outline"] = "",
+	["last_realversion"] = 128,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1517494444,
-		["last_version"] = 9,
-	},
-	["last_version"] = "v7.3.0.5183",
+	["last_version"] = "v7.3.0.5231",
 	["combat_id"] = 2889,
 	["savedStyles"] = {
 	},
@@ -4379,9 +4374,14 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["force_font_outline"] = "",
-	["last_realversion"] = 128,
+	["character_data"] = {
+		["logons"] = 1415,
+	},
 	["last_encounter"] = "Grand Magistrix Elisande",
+	["nick_tag_cache"] = {
+		["nextreset"] = 1519524360,
+		["last_version"] = 9,
+	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {
@@ -4398,9 +4398,6 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-1598-066CFCB3"] = 104,
 		["Player-1303-0387FD7B"] = 64,
-		["Player-1621-085857ED"] = 70,
-		["Player-3691-047CA71E"] = 63,
 	},
 }

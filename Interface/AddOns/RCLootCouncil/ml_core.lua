@@ -168,15 +168,16 @@ function RCLootCouncilML:UpdateGroup(ask)
 	for name, v in pairs(self.candidates) do	group_copy[name] = v.role end
 	for i = 1, GetNumGroupMembers() do
 		local name, _, _, _, _, class, _, _, _, _, _, role  = GetRaidRosterInfo(i)
-
 		if name then -- Apparantly name can be nil (ticket #223)
 			name = addon:UnitName(name) -- Get their unambiguated name
-			if group_copy[name] == role then	-- If they're already registered
-				group_copy[name] = nil	-- remove them from the check
+			if group_copy[name] then -- If they're already registered
+				if group_copy[name] ~= role then	-- They have changed their role
+					self:AddCandidate(name, class, role, self.candidates[name].enchanter, self.candidates[name].enchant_lvl, self.candidates[name].specID)
+				end
+				group_copy[name] = nil -- Remove them, as they're still in the group
 			else -- add them
 				if not ask then -- ask for playerInfo?
 					addon:SendCommand(name, "playerInfoRequest")
-					addon:SendCommand(name, "MLdb", addon.mldb) -- and send mlDB
 				end
 				self:AddCandidate(name, class, role) -- Add them in case they haven't installed the adoon
 				updates = true
@@ -191,6 +192,7 @@ function RCLootCouncilML:UpdateGroup(ask)
 		if v then self:RemoveCandidate(name); updates = true end
 	end
 	if updates then
+		addon:SendCommand("group", "MLdb", addon.mldb)
 		addon:SendCommand("group", "candidates", self.candidates)
 
 		local oldCouncil = self.council

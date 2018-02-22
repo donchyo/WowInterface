@@ -146,7 +146,7 @@ PremadeGroupsFilterState = {
 		["expression"] = "atbt",
 		["difficulty"] = {
 			["act"] = true,
-			["val"] = 2,
+			["val"] = 1,
 		},
 		["members"] = {
 			["max"] = "",
@@ -272,7 +272,7 @@ PremadeGroupsFilterState = {
 			["val"] = 4,
 		},
 		["members"] = {
-			["max"] = "4",
+			["max"] = "3",
 			["min"] = "",
 			["act"] = true,
 		},

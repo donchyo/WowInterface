@@ -7,6 +7,7 @@ EventTraceReloaded = {
 		["Kroxi - Grim Batol"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
+		["Bawsie - Grim Batol"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",

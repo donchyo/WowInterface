@@ -20,25 +20,25 @@ TalentMacrosDB = {
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
-		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 	},
 	["profiles"] = {
 		["Bawsi - Shattered Hand"] = {
@@ -90,16 +90,8 @@ TalentMacrosDB = {
 		["Donch - Shattered Hand"] = {
 			["version"] = 1,
 		},
-		["Krixikin - Grim Batol"] = {
-			["macrotext"] = {
-				[18571] = "#showtooltip\n/use [nomod] wild Charge\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
-				[22424] = "#showtooltip\n/cast guttural roars",
-				[18574] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cenarion ward\n",
-				[22916] = "#showtooltip\n/use [nomod] intimidating roar\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
-				[18570] = "#showtooltip\n/use [nomod] displacer beast\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
-				[19283] = "#showtooltip\n/use [nomod] renewal\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
-			},
-			["disablepush"] = true,
+		["Kroxidps - Aggra (Português)"] = {
+			["version"] = 1,
 		},
 		["Lowerboost - Lightbringer"] = {
 		},
@@ -122,13 +114,46 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
-		["Gnomalock - Grim Batol"] = {
+		["Zetiz - Grim Batol"] = {
+			["macrotext"] = {
+				[19243] = "#showtooltip\n/use [nomod] shadowstep\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[19244] = "#showtooltip\n/use [nomod] burst of speed\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[22122] = "#showtooltip\n/cast crippling poison",
+				[19239] = "#showtooltip\n/cast crippling poison",
+				[22123] = "#showtooltip\n/cast crippling poison",
+				[19241] = "#showtooltip\n/cast crippling poison",
+				[19249] = "#showtooltip\n/cast deadly poison",
+				[22344] = "#showtooltip\n/cast deadly poison",
+			},
 			["version"] = 1,
 		},
 		["Treefiddy - Aggra (Português)"] = {
 			["version"] = 1,
 		},
 		["Kroxi - Crushridge"] = {
+			["version"] = 1,
+		},
+		["Donchyo - Shattered Hand"] = {
+			["version"] = 1,
+		},
+		["Skullflower"] = {
+			["macrotext"] = {
+				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
+			},
+		},
+		["Kriximonk - Grim Batol"] = {
+		},
+		["Spacegoatx - Aggra (Português)"] = {
+			["version"] = 1,
+		},
+		["Krixidh - Grim Batol"] = {
+		},
+		["Asdasdasdfaf - Grim Batol"] = {
+		},
+		["Líttle - Grim Batol"] = {
+			["macrotext"] = {
+				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
+			},
 			["version"] = 1,
 		},
 		["Nyrith - Grim Batol"] = {
@@ -141,40 +166,7 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
-		["Skullflower"] = {
-			["macrotext"] = {
-				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
-			},
-		},
-		["Líttle - Grim Batol"] = {
-			["macrotext"] = {
-				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
-			},
-			["version"] = 1,
-		},
-		["Spacegoatx - Aggra (Português)"] = {
-			["version"] = 1,
-		},
-		["Krixidh - Grim Batol"] = {
-		},
-		["Asdasdasdfaf - Grim Batol"] = {
-		},
-		["Kriximonk - Grim Batol"] = {
-		},
-		["Donchyo - Shattered Hand"] = {
-			["version"] = 1,
-		},
-		["Zetiz - Grim Batol"] = {
-			["macrotext"] = {
-				[19243] = "#showtooltip\n/use [nomod] shadowstep\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[19244] = "#showtooltip\n/use [nomod] burst of speed\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[22122] = "#showtooltip\n/cast crippling poison",
-				[19239] = "#showtooltip\n/cast crippling poison",
-				[22344] = "#showtooltip\n/cast deadly poison",
-				[19241] = "#showtooltip\n/cast crippling poison",
-				[19249] = "#showtooltip\n/cast deadly poison",
-				[22123] = "#showtooltip\n/cast crippling poison",
-			},
+		["Gnomalock - Grim Batol"] = {
 			["version"] = 1,
 		},
 		["Zuriz - Grim Batol"] = {
@@ -187,8 +179,16 @@ TalentMacrosDB = {
 		["Krixiswag - Aggra (Português)"] = {
 			["version"] = 1,
 		},
-		["Kroxidps - Aggra (Português)"] = {
-			["version"] = 1,
+		["Krixikin - Grim Batol"] = {
+			["macrotext"] = {
+				[18571] = "#showtooltip\n/use [nomod] wild Charge\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
+				[22424] = "#showtooltip\n/cast guttural roars",
+				[19283] = "#showtooltip\n/use [nomod] renewal\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
+				[22916] = "#showtooltip\n/use [nomod] intimidating roar\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
+				[18570] = "#showtooltip\n/use [nomod] displacer beast\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
+				[18574] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cenarion ward\n",
+			},
+			["disablepush"] = true,
 		},
 	},
 }

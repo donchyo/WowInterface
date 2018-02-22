@@ -41,13 +41,6 @@ X: -132
 Y: 22
 W: 790
 H: 454
-Frame: ViragDevToolFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 635
-H: 200
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: TOPRIGHT

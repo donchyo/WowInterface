@@ -1,3 +1,6 @@
+VER 3 010000000000002A "cancel umbilicus" "INV_MISC_QUESTIONMARK"
+/cancelaura Umbilicus Eternus
+END
 VER 3 0100000000000017 "deaths advance" "INV_Misc_QuestionMark"
 #showtooltip
 /use [nomod] !wraith walk
@@ -10,15 +13,15 @@ END
 VER 3 0100000000000021 "dnd" "INV_MISC_QUESTIONMARK"
 /cast [@cursor] death and decay
 END
-VER 3 0100000000000022 "focus" "INV_MISC_QUESTIONMARK"
-/cast [@focus] death grip
+VER 3 010000000000001A "focus" "INV_Misc_QuestionMark"
+/stopcasting
+/cast [@focus] mind freeze
 END
 VER 3 0100000000000023 "focus" "INV_Misc_QuestionMark"
 /cast [@focus] asphyxiate
 END
-VER 3 010000000000001A "focus" "INV_Misc_QuestionMark"
-/stopcasting
-/cast [@focus] mind freeze
+VER 3 0100000000000022 "focus" "INV_MISC_QUESTIONMARK"
+/cast [@focus] death grip
 END
 VER 3 0100000000000027 "focus control un" "INV_MISC_QUESTIONMARK"
 /cast [@focus] control undead
@@ -57,11 +60,6 @@ VER 3 0100000000000020 "starlight" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000029 "vamp haxx" "INV_MISC_QUESTIONMARK"
 /cast Vampiric Blood
-/cancelaura Umbilicus Eternus
-END
-VER 3 0100000000000028 "vampblood deaths" "INV_MISC_QUESTIONMARK"
-/cast vampiric blood
-/cast death strike
 END
 VER 3 0100000000000019 "´leap" "INV_Misc_QuestionMark"
 #showtooltip

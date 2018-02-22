@@ -322,6 +322,7 @@ do
 	local missingArgument = "Missing required argument when adding a listener to %q."
 	local missingFunction = "%q tried to register a listener to method %q, but it doesn't exist in the module."
 	local invalidId = "Module %q tried to register an invalid spell id (%s) to event %q."
+	local multipleRegistration = "Module %q registered the event %q with spell id %q multiple times."
 
 	function boss:CHAT_MSG_RAID_BOSS_EMOTE(event, msg, ...)
 		if eventMap[self][event][msg] then
@@ -372,47 +373,93 @@ do
 	end
 
 	local args = {}
-	bossUtilityFrame:SetScript("OnEvent", function(_, _, _, event, _, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName, _, extraSpellId, amount)
-		if allowedEvents[event] then
-			if event == "UNIT_DIED" then
-				local _, _, _, _, _, id = strsplit("-", destGUID)
-				local mobId = tonumber(id)
-				if mobId then
+	if CombatLogGetCurrentEventInfo then
+		local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
+		bossUtilityFrame:SetScript("OnEvent", function()
+			local _, event, _, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName, _, extraSpellId, amount = CombatLogGetCurrentEventInfo()
+			if allowedEvents[event] then
+				if event == "UNIT_DIED" then
+					local _, _, _, _, _, id = strsplit("-", destGUID)
+					local mobId = tonumber(id)
+					if mobId then
+						for i = #enabledModules, 1, -1 do
+							local self = enabledModules[i]
+							local m = eventMap[self][event]
+							if m and m[mobId] then
+								local func = m[mobId]
+								args.mobId, args.destGUID, args.destName, args.destFlags, args.destRaidFlags = mobId, destGUID, destName, destFlags, args.destRaidFlags
+								if type(func) == "function" then
+									func(args)
+								else
+									self[func](self, args)
+								end
+							end
+						end
+					end
+				else
 					for i = #enabledModules, 1, -1 do
 						local self = enabledModules[i]
 						local m = eventMap[self][event]
-						if m and m[mobId] then
-							local func = m[mobId]
-							args.mobId, args.destGUID, args.destName, args.destFlags, args.destRaidFlags = mobId, destGUID, destName, destFlags, args.destRaidFlags
+						if m and (m[spellId] or m["*"]) then
+							local func = m[spellId] or m["*"]
+							-- DEVS! Please ask if you need args attached to the table that we've missed out!
+							args.sourceGUID, args.sourceName, args.sourceFlags, args.sourceRaidFlags = sourceGUID, sourceName, sourceFlags, sourceRaidFlags
+							args.destGUID, args.destName, args.destFlags, args.destRaidFlags = destGUID, destName, destFlags, destRaidFlags
+							args.spellId, args.spellName, args.extraSpellId, args.extraSpellName, args.amount = spellId, spellName, extraSpellId, amount, amount
 							if type(func) == "function" then
 								func(args)
 							else
 								self[func](self, args)
+								if debug then dbg(self, "Firing func: "..func) end
 							end
 						end
 					end
 				end
-			else
-				for i = #enabledModules, 1, -1 do
-					local self = enabledModules[i]
-					local m = eventMap[self][event]
-					if m and (m[spellId] or m["*"]) then
-						local func = m[spellId] or m["*"]
-						-- DEVS! Please ask if you need args attached to the table that we've missed out!
-						args.sourceGUID, args.sourceName, args.sourceFlags, args.sourceRaidFlags = sourceGUID, sourceName, sourceFlags, sourceRaidFlags
-						args.destGUID, args.destName, args.destFlags, args.destRaidFlags = destGUID, destName, destFlags, destRaidFlags
-						args.spellId, args.spellName, args.extraSpellId, args.extraSpellName, args.amount = spellId, spellName, extraSpellId, amount, amount
-						if type(func) == "function" then
-							func(args)
-						else
-							self[func](self, args)
-							if debug then dbg(self, "Firing func: "..func) end
+			end
+		end)
+	else
+		bossUtilityFrame:SetScript("OnEvent", function(_, _, _, event, _, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName, _, extraSpellId, amount)
+			if allowedEvents[event] then
+				if event == "UNIT_DIED" then
+					local _, _, _, _, _, id = strsplit("-", destGUID)
+					local mobId = tonumber(id)
+					if mobId then
+						for i = #enabledModules, 1, -1 do
+							local self = enabledModules[i]
+							local m = eventMap[self][event]
+							if m and m[mobId] then
+								local func = m[mobId]
+								args.mobId, args.destGUID, args.destName, args.destFlags, args.destRaidFlags = mobId, destGUID, destName, destFlags, args.destRaidFlags
+								if type(func) == "function" then
+									func(args)
+								else
+									self[func](self, args)
+								end
+							end
+						end
+					end
+				else
+					for i = #enabledModules, 1, -1 do
+						local self = enabledModules[i]
+						local m = eventMap[self][event]
+						if m and (m[spellId] or m["*"]) then
+							local func = m[spellId] or m["*"]
+							-- DEVS! Please ask if you need args attached to the table that we've missed out!
+							args.sourceGUID, args.sourceName, args.sourceFlags, args.sourceRaidFlags = sourceGUID, sourceName, sourceFlags, sourceRaidFlags
+							args.destGUID, args.destName, args.destFlags, args.destRaidFlags = destGUID, destName, destFlags, destRaidFlags
+							args.spellId, args.spellName, args.extraSpellId, args.extraSpellName, args.amount = spellId, spellName, extraSpellId, amount, amount
+							if type(func) == "function" then
+								func(args)
+							else
+								self[func](self, args)
+								if debug then dbg(self, "Firing func: "..func) end
+							end
 						end
 					end
 				end
 			end
-		end
-	end)
+		end)
+	end
 	--- Register a callback for COMBAT_LOG_EVENT.
 	-- @string event COMBAT_LOG_EVENT to fire for e.g. SPELL_CAST_START
 	-- @param func callback function, passed a keyed table (sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName, extraSpellId, extraSpellName, amount)
@@ -424,6 +471,9 @@ do
 		for i = 1, select("#", ...) do
 			local id = select(i, ...)
 			if (type(id) == "number" and GetSpellInfo(id)) or id == "*" then
+				if eventMap[self][event][id] then
+					core:Print(format(multipleRegistration, self.moduleName, event, id))
+				end
 				eventMap[self][event][id] = func
 			else
 				core:Print(format(invalidId, self.moduleName, tostring(id), event))
@@ -911,13 +961,13 @@ function boss:Heroic()
 	return difficulty == 2 or difficulty == 5 or difficulty == 6 or difficulty == 15
 end
 
---- Check if in a Mythic difficulty instance.
+--- Check if in a Mythic or Mythic+ difficulty instance.
 -- @return boolean
 function boss:Mythic()
-	return difficulty == 16 or difficulty == 23
+	return difficulty == 16 or difficulty == 23 or difficulty == 8
 end
 
---- Check if in a Mythic keystone difficulty instance.
+--- Check if in a Mythic+ difficulty instance.
 -- @return boolean
 function boss:MythicPlus()
 	return difficulty == 8

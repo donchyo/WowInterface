@@ -16,7 +16,7 @@ do -- RW/opiespecset
 		end
 	end
 	function f:SwitchSpec(_cmd, args)
-		local sid, sname = args:match("(%d+) {(.+)}")
+		local sid, sname = args:match("(%d+) {(.*)}")
 		sid = tonumber(sid)
 		if GetSpecialization() ~= sid and not InCombatLockdown() then
 			SetSpecialization(sid)

@@ -55,6 +55,10 @@ VER 3 0100000000000020 "starlight" "INV_MISC_QUESTIONMARK"
 /run BuyMerchantItem(17,9) 
  
 END
+VER 3 0100000000000029 "vamp haxx" "INV_MISC_QUESTIONMARK"
+/cast Vampiric Blood
+/cancelaura Umbilicus Eternus
+END
 VER 3 0100000000000028 "vampblood deaths" "INV_MISC_QUESTIONMARK"
 /cast vampiric blood
 /cast death strike

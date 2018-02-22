@@ -34,22 +34,16 @@ function NOP:TooltipCreate(name) -- create tooltip frame
   frame:SetOwner(UIParent,"ANCHOR_NONE") -- frame out of screen and start updating
   return frame
 end
-local itemRetry = nil
 function NOP:ItemLoad() -- load template item tooltips
-  if (self.itemLoadRetry < 0) then
-   self:Verbose("ItemLoad:","retry limit reached! Last not seen itemID", itemRetry)
-   return  -- no more retry
-  end
+  local itemRetry = nil
+  self.timerItemLoad = nil
   self:Profile(true)
-  local retry = false
   local nCB = tonumber(GetCVar(private.CB_CVAR)) -- if colorblind mode activated then on 2nd line there is extra info
   for itemID, data in pairs(NOP.T_RECIPES) do
     if not NOP.T_RECIPES_FIND[itemID] then -- need fill pattern
       local name = GetItemInfo(itemID) -- query or fill client side cache
       if (name == nil) or (name == "") then -- item has no info on client side yet, let wait for server
-        if (private.LOAD_RETRY - self.itemLoadRetry) > 1 then self:Verbose("ItemLoad:","itemID",itemID,"GetItemInfo(itemID) empty") end
         itemRetry = itemID
-        retry = true
       else
         local c,pattern,zone,map,faction = unpack(data,1,5)
         if (c[2] == private.PRI_REP) and faction then NOP.T_REPS[name] = faction end -- fill-up item name to faction table
@@ -77,7 +71,6 @@ function NOP:ItemLoad() -- load template item tooltips
         else
           self:Verbose("ItemLoad:Empty tooltip", itemID)
           itemRetry = itemID
-          retry = true
           self.itemFrame = self:TooltipCreate(private.TOOLTIP_ITEM) -- empty tooltip I just throw out old one. Workaround for bad tooltip frame init damn Blizzard!
           break
         end
@@ -85,21 +78,14 @@ function NOP:ItemLoad() -- load template item tooltips
     end
   end
   self:Profile(false)
-  if retry then
-    self.itemLoadRetry = self.itemLoadRetry - 1 -- only limited retries
-  end -- event driven now
   self.itemLoad = true
-  if (private.LOAD_RETRY - self.itemLoadRetry) > 1 then self:Verbose("ItemLoad:",string.format(private.L["Items cache update run |cFF00FF00%d."],private.LOAD_RETRY - self.itemLoadRetry)) end
+  --self.printt("ItemLoad",itemRetry)
 end
-local spellRetry = nil
 local spellLoaded = {}
 function NOP:SpellLoad() -- load spell patterns
-  if (self.spellLoadRetry < 0) then
-    self:Verbose("SpellLoad:","retry limit reached! Last not seend spell on itemID", spellRetry)
-    return -- no more retries
-  end
+  local spellRetry = nil
+  self.timerSpellLoad = nil
   self:Profile(true)
-  local retry = false
   if NOP.T_OPEN == nil then -- create table with defaults
     NOP.T_OPEN = {
      [format("%s %s",ITEM_SPELL_TRIGGER_ONUSE,ITEM_OPENABLE)] = {{1,private.PRI_OPEN},nil,nil}, -- standard right click open
@@ -110,9 +96,7 @@ function NOP:SpellLoad() -- load spell patterns
     if not spellLoaded[itemID] then -- not yet added
       local name = GetItemInfo(itemID) -- 1st fetch item into cache
       if name == nil or name == "" then
-        self:Verbose("SpellLoad:","itemID",itemID,"GetItemInfo(itemID) empty")
         spellRetry = itemID
-        retry = true
       end
     end
     local spell = GetItemSpell(itemID) -- now query if it has spell
@@ -120,15 +104,12 @@ function NOP:SpellLoad() -- load spell patterns
       NOP.T_SPELL_FIND[spell] = data
       spellLoaded[itemID] = true
     else
-      self:Verbose("SpellLoad:","itemID,",itemID,"GetItemSpell(itemID) empty")
       spellRetry = itemID
-      retry = true
     end
   end
   self:Profile(false)
-  if retry then self.spellLoadRetry = self.spellLoadRetry - 1 end
   self.spellLoad = true
-  if (private.LOAD_RETRY - self.spellLoadRetry) > 1 then self:Verbose("SpellLoad:",string.format(private.L["Spells cache update run |cFF00FF00%d."],private.LOAD_RETRY - self.spellLoadRetry)) end
+  --self.printt("SpellLoad",spellRetry)
 end
 function NOP:PickLockUpdate() -- rogue picklocking
   if IsPlayerSpell(private.SPELL_PICKLOCK) then -- have it in spellbook?

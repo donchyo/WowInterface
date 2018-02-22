@@ -68,13 +68,10 @@ end
 function NOP:LOOT_SPEC() -- after spec or loot spec switch I need update all paterns!
   if self.spellLoad then
     self.spellLoad = nil
-    self.spellLoadRetry = private.LOAD_RETRY
     wipe(NOP.T_SPELL_FIND)
     self:SpellLoad()
   end
   if self.itemLoad then
-    self.itemLoad = nil
-    self.itemLoadRetry = private.LOAD_RETRY
     wipe(NOP.T_RECIPES_FIND)
     self:ItemLoad()
   end
@@ -102,8 +99,8 @@ function NOP:PLAYER_LOGIN() -- player entering game
   RegisterStateDriver(self.frameHiderQ, "visibility", "[petbattle] [vehicleui] hide; show")
   self:ButtonLoad() -- create button
   self:QBAnchor() -- create quest bar
-  self.itemLoadRetry = private.LOAD_RETRY; self:ItemLoad() -- create item patterns
-  self.spellLoadRetry = private.LOAD_RETRY; self:SpellLoad() -- create spell patterns
+  self:ItemLoad() -- create item patterns
+  self:SpellLoad() -- create spell patterns
   self:PickLockUpdate() -- picklock skills
   local key = GetBindingKey("CLICK " .. private.BUTTON_FRAME .. ":LeftButton")
   if self.BF.hotkey then self.BF.hotkey:SetText(self:ButtonHotKey(key)) end
@@ -160,6 +157,10 @@ function NOP:GARRISON_LANDINGPAGE_SHIPMENTS() -- print notifications into chat
   self:CheckBuilding()
 end
 function NOP:GET_ITEM_INFO_RECEIVED() -- ItemLoad and SpellLoad need cached items from server
-  self:ItemLoad()
-  self:SpellLoad()
+  if not self.timerItemLoad then
+    self.timerItemLoad = self:ScheduleTimer("ItemLoad", private.TIMER_IDLE)
+  end
+  if not self.timerSpellLoad then
+    self.timerSpellLoad = self:ScheduleTimer("SpellLoad", private.TIMER_IDLE)
+  end
 end

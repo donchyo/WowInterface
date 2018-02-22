@@ -1,6 +1,6 @@
 ## Interface: 70300
 ## Author: p3lim
-## Version: 70300.33-Release
+## Version: 70300.34-Release
 ## Title: QuickQuest
 ## Notes: Quest automation wizardry
 ## OptionalDeps: LibGossipQuestInfo, Wasabi

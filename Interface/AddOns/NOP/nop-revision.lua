@@ -1,4 +1,10 @@
 -- Revisions:
+--[[<p>08.32 01.02.2018</p>
+<ul>
+<li>If <b>/nop unlist #itemID</b> remove item from blacklist then rescan is started.</li>
+<li>Clash with MogIT addon fixed.</li>
+</ul>
+]]
 --[[<p>08.30 29.01.2018</p>
 <ul>
 <li>Thanks to LibArtifactData now addon can notify about all artifacts seen in bags or bank when there are unsped points or free traits.</li>

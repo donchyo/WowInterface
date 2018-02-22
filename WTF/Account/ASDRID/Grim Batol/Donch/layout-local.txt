@@ -27,13 +27,6 @@ X: 0
 Y: 1
 W: 790
 H: 454
-Frame: ViragDevToolFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 635
-H: 200
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: RIGHT
@@ -41,10 +34,3 @@ X: 0
 Y: 205
 W: 370
 H: 110
-Frame: SpellBookFrame
-FrameLevel: 1
-Anchor: LEFT
-X: 16
-Y: 102
-W: 550
-H: 525

@@ -168,8 +168,8 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   if cmd == "unlist" then
     local id = tonumber(arg)
     if id then
-      if NOP.DB["T_BLACKLIST"] ~= nil and NOP.DB.T_BLACKLIST[id] then NOP.DB.T_BLACKLIST[id] = nil; NOP.printt("Removed ItemID:",id) end
-      if NOP.DB["T_BLACKLIST_Q"] ~= nil and NOP.DB.T_BLACKLIST_Q[id] then NOP.DB.T_BLACKLIST_Q[id] = nil; NOP.printt("Removed ItemID:",id) end
+      if NOP.DB["T_BLACKLIST"] ~= nil and NOP.DB.T_BLACKLIST[id] then NOP.DB.T_BLACKLIST[id] = nil; NOP.T_CHECK[id] = nil; NOP:ItemShowNew() end
+      if NOP.DB["T_BLACKLIST_Q"] ~= nil and NOP.DB.T_BLACKLIST_Q[id] then NOP.DB.T_BLACKLIST_Q[id] = nil; NOP:QBUpdate() end
     end
     return
   end

@@ -483,7 +483,8 @@
 			bigdogRow:SetHeight (20)
 			bigdogRow:SetColorTexture (.5, .5, .5, .1)
 			bigdogRow:Hide()
-
+			
+			--
 		--> plugins menu title bar
 			local titlebar_plugins = CreateFrame ("frame", nil, menuBackground)
 			titlebar_plugins:SetPoint ("topleft", menuBackground, "topleft", 2, -3)
@@ -510,7 +511,16 @@
 		
 		--> scripts
 			f:SetScript ("OnShow", function()
-				
+				--check if the window isn't out of screen
+				C_Timer.After (1, function()
+					local right = f:GetRight()
+					if (right and right > GetScreenWidth() + 500) then
+						f:ClearAllPoints()
+						f:SetPoint ("center", UIParent, "center", 0, 0)
+						LibWindow.SavePosition (f)
+						_detalhes:Msg ("detected options panel out of screen, position has reset")
+					end
+				end)
 			end)
 			
 			f:SetScript ("OnHide", function()
@@ -609,17 +619,6 @@
 			
 			--> add it to menu table
 			tinsert (f.MenuButtons, newButton)
-			
-			if (#f.MenuButtons == 1) then
-				local teste = _detalhes.gump:NewButton (f, _, "$parentOpenFeedbackButton", nil, 160, 20, _detalhes.OpenFeedbackWindow, nil, nil, nil, "Hellow Woirld", 1)
-				teste:SetPoint ("top", menuBackground, "top", 0, f.MenuY + ( (1-1) * -f.MenuButtonHeight ) - 1 - 350)
-				teste:SetTemplate (_detalhes.gump:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE"))
-				teste.textalign = "left"
-				teste.textcolor = "white"
-				teste.textsize = 10
-				teste:SetIcon ("Interface\\FriendsFrame\\UI-Toast-BroadcastIcon", nil, nil, nil, {4/32, 27/32, 5/32, 25/32}, {1, 1, 1, 0.8}, 4, 2)
-				
-			end
 			
 			return newButton
 		end

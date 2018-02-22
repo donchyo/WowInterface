@@ -19,7 +19,7 @@ bind CTRL-4 CLICK BT4Button35:LeftButton
 bind CTRL-5 NONE
 bind CTRL-6 CLICK BT4Button78:LeftButton
 bind CTRL-8 CLICK BT4Button81:LeftButton
-bind CTRL-9 NONE
+bind CTRL-9 CLICK BT4Button83:LeftButton
 bind SHIFT-1 CLICK BT4Button25:LeftButton
 bind SHIFT-2 CLICK BT4Button26:LeftButton
 bind SHIFT-3 CLICK BT4Button27:LeftButton

@@ -1,4 +1,7 @@
-SET flaggedTutorials "v##%##-##'##.##Z##K##[##)##+##;##6##5##:##@##D##L##J##="
+SET flaggedTutorials "v##%##-##'##.##Z##K##[##)##+##;##6##5##:##@##D##L##J##=##C##I##,"
 SET actionedAdventureJournalEntries "v"
 SET showNPETutorials "0"
 SET talentFrameShown "1"
+SET petJournalTab "4"
+SET advJournalLastOpened "1517609526"
+SET AllowDangerousScripts "1"

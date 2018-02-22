@@ -24,8 +24,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -34,8 +34,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -91,8 +91,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -101,8 +101,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -158,8 +158,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -168,8 +168,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -224,8 +224,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -234,8 +234,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -291,8 +291,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -301,8 +301,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -357,8 +357,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -367,8 +367,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -424,8 +424,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -434,8 +434,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -490,8 +490,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -500,8 +500,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -540,11 +540,11 @@ Bartender4DB = {
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
-							["version"] = 3,
 							["fadeout"] = true,
-							["hidemacrotext"] = true,
-							["hideequipped"] = true,
 							["fadeoutalpha"] = 0,
+							["padding"] = -6,
+							["hideequipped"] = true,
+							["version"] = 3,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
@@ -554,87 +554,89 @@ Bartender4DB = {
 								["point"] = "BOTTOM",
 								["scale"] = 0.5,
 							},
-							["padding"] = -6,
+							["hidemacrotext"] = true,
 							["visibility"] = {
 								["always"] = false,
 							},
 							["states"] = {
+								["customEnabled"] = false,
+								["custom"] = "",
 								["stance"] = {
+									["DRUID"] = {
+										["prowl"] = 0,
+										["cat"] = 0,
+										["bear"] = 6,
+									},
 									["WARRIOR"] = {
 										["berserker"] = 0,
 										["battle"] = 0,
 										["gladiator"] = 0,
 										["def"] = 0,
 									},
-									["DRUID"] = {
-										["prowl"] = 0,
-										["cat"] = 0,
-										["bear"] = 6,
-									},
 									["MONK"] = {
-										["crane"] = 6,
-										["serpent"] = 0,
-										["tiger"] = 0,
 										["ox"] = 0,
+										["tiger"] = 0,
+										["serpent"] = 0,
+										["crane"] = 6,
 									},
 									["ROGUE"] = {
-										["stealth"] = 6,
 										["shadowdance"] = 6,
+										["stealth"] = 6,
 									},
 								},
-								["custom"] = "",
-								["customEnabled"] = false,
 							},
 						}, -- [1]
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
-							["fadeoutalpha"] = 0,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["hideequipped"] = true,
-							["version"] = 3,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 73.5553512573242,
 								["x"] = -22.1554565429688,
 								["point"] = "BOTTOM",
 								["scale"] = 0.5,
 							},
-							["hidemacrotext"] = true,
-							["padding"] = -6,
-							["visibility"] = {
-								["vehicleui"] = false,
-								["overridebar"] = false,
-							},
-							["fadeout"] = true,
-						}, -- [2]
-						{
-							["showgrid"] = true,
+							["hideequipped"] = true,
 							["fadeoutalpha"] = 0,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
-							["hideequipped"] = true,
+							["padding"] = -6,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["overridebar"] = false,
+								["vehicleui"] = false,
+							},
 							["version"] = 3,
+						}, -- [2]
+						{
+							["showgrid"] = true,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 39.0996246337891,
 								["x"] = -113.733184814453,
 								["point"] = "BOTTOM",
 								["scale"] = 0.5,
 							},
-							["hidemacrotext"] = true,
-							["padding"] = -6,
-							["visibility"] = {
-								["vehicleui"] = false,
-								["overridebar"] = false,
+							["hideequipped"] = true,
+							["fadeoutalpha"] = 0,
+							["skin"] = {
+								["ID"] = "Apathy",
 							},
-							["fadeout"] = true,
+							["padding"] = -6,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["overridebar"] = false,
+								["vehicleui"] = false,
+							},
+							["version"] = 3,
 						}, -- [3]
 						{
 							["enabled"] = false,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
 							["hidehotkey"] = true,
-							["version"] = 3,
 							["buttons"] = 5,
 							["position"] = {
 								["y"] = -112.057779583301,
@@ -644,18 +646,16 @@ Bartender4DB = {
 							},
 							["padding"] = -6,
 							["visibility"] = {
-								["vehicleui"] = false,
 								["overridebar"] = false,
+								["vehicleui"] = false,
 							},
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
+							["version"] = 3,
 						}, -- [4]
 						{
 							["buttons"] = 7,
 							["rows"] = 12,
+							["fadeout"] = true,
 							["fadeoutalpha"] = 0,
-							["version"] = 3,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
@@ -671,7 +671,7 @@ Bartender4DB = {
 								["overridebar"] = false,
 								["vehicleui"] = false,
 							},
-							["fadeout"] = true,
+							["version"] = 3,
 						}, -- [5]
 						{
 							["hideequipped"] = true,
@@ -679,12 +679,7 @@ Bartender4DB = {
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
-							["position"] = {
-								["y"] = -60.9627145630366,
-								["x"] = 0.834345572747779,
-								["point"] = "LEFT",
-								["scale"] = 1.70000004768372,
-							},
+							["fadeoutalpha"] = 0,
 							["padding"] = -6,
 							["visibility"] = {
 								["always"] = true,
@@ -692,7 +687,12 @@ Bartender4DB = {
 								["possess"] = false,
 								["vehicleui"] = false,
 							},
-							["fadeoutalpha"] = 0,
+							["position"] = {
+								["y"] = -60.9627145630366,
+								["x"] = 0.834345572747779,
+								["point"] = "LEFT",
+								["scale"] = 1.70000004768372,
+							},
 						}, -- [6]
 						{
 							["enabled"] = true,
@@ -704,22 +704,22 @@ Bartender4DB = {
 								["point"] = "BOTTOM",
 								["scale"] = 0.5,
 							},
-							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["padding"] = -6,
 							["visibility"] = {
-								["vehicleui"] = false,
 								["overridebar"] = false,
+								["vehicleui"] = false,
 							},
-							["fadeoutalpha"] = 0,
+							["version"] = 3,
 						}, -- [7]
 						{
 							["enabled"] = true,
 							["buttons"] = 8,
 							["rows"] = 2,
-							["fadeoutalpha"] = 0,
 							["fadeout"] = true,
-							["hideequipped"] = true,
 							["hidehotkey"] = true,
+							["hideequipped"] = true,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = -125.936178037085,
 								["x"] = -251.552449549839,
@@ -742,10 +742,10 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["buttons"] = 2,
-							["hidehotkey"] = true,
-							["hidemacrotext"] = true,
-							["hideequipped"] = true,
 							["version"] = 3,
+							["padding"] = -6,
+							["hideequipped"] = true,
+							["hidehotkey"] = true,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
@@ -756,7 +756,7 @@ Bartender4DB = {
 								["scale"] = 1.3,
 								["x"] = -30.5,
 							},
-							["padding"] = -6,
+							["hidemacrotext"] = true,
 							["visibility"] = {
 								["possess"] = false,
 								["overridebar"] = false,
@@ -774,19 +774,19 @@ Bartender4DB = {
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
-							["padding"] = -5,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["possess"] = false,
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
 							["position"] = {
 								["y"] = 37.6633298581819,
 								["x"] = -324.511947612282,
 								["point"] = "BOTTOM",
 								["scale"] = 1.0900000333786,
 							},
+							["padding"] = -5,
+							["visibility"] = {
+								["possess"] = false,
+								["overridebar"] = false,
+								["vehicleui"] = false,
+							},
+							["hidemacrotext"] = true,
 						}, -- [10]
 					},
 				},
@@ -795,11 +795,6 @@ Bartender4DB = {
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
-							["hidehotkey"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["hideequipped"] = true,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 174,
@@ -807,89 +802,94 @@ Bartender4DB = {
 								["point"] = "BOTTOM",
 								["scale"] = 1.3,
 							},
-							["hidemacrotext"] = true,
+							["hideequipped"] = true,
+							["hidehotkey"] = true,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
 							["padding"] = -6,
+							["hidemacrotext"] = true,
 							["visibility"] = {
 								["always"] = false,
 							},
 							["states"] = {
-								["customEnabled"] = false,
-								["custom"] = "",
 								["stance"] = {
-									["DRUID"] = {
-										["prowl"] = 0,
-										["cat"] = 0,
-										["bear"] = 6,
-									},
 									["WARRIOR"] = {
 										["berserker"] = 0,
 										["battle"] = 0,
 										["gladiator"] = 0,
 										["def"] = 0,
 									},
+									["DRUID"] = {
+										["prowl"] = 0,
+										["cat"] = 0,
+										["bear"] = 6,
+									},
 									["MONK"] = {
-										["crane"] = 6,
-										["serpent"] = 0,
-										["tiger"] = 0,
 										["ox"] = 0,
+										["tiger"] = 0,
+										["serpent"] = 0,
+										["crane"] = 6,
 									},
 									["ROGUE"] = {
-										["stealth"] = 6,
 										["shadowdance"] = 6,
+										["stealth"] = 6,
 									},
 								},
+								["custom"] = "",
+								["customEnabled"] = false,
 							},
 						}, -- [1]
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
+							["version"] = 3,
+							["hideequipped"] = true,
+							["hidehotkey"] = true,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
-							["hideequipped"] = true,
-							["hidehotkey"] = true,
+							["padding"] = -6,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["vehicleui"] = false,
+								["overridebar"] = false,
+							},
 							["position"] = {
 								["y"] = 174,
 								["x"] = -10.6,
 								["point"] = "BOTTOM",
 								["scale"] = 1.29999995231628,
 							},
-							["hidemacrotext"] = true,
-							["padding"] = -6,
-							["visibility"] = {
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-							["version"] = 3,
 						}, -- [2]
 						{
 							["showgrid"] = true,
+							["version"] = 3,
+							["hideequipped"] = true,
+							["hidehotkey"] = true,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
-							["hideequipped"] = true,
-							["hidehotkey"] = true,
+							["padding"] = -6,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["vehicleui"] = false,
+								["overridebar"] = false,
+							},
 							["position"] = {
 								["y"] = 95.1,
 								["x"] = -244.4,
 								["point"] = "BOTTOM",
 								["scale"] = 1.29999995231628,
 							},
-							["hidemacrotext"] = true,
-							["padding"] = -6,
-							["visibility"] = {
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-							["version"] = 3,
 						}, -- [3]
 						{
 							["enabled"] = false,
+							["version"] = 3,
+							["hidehotkey"] = true,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
-							["hidehotkey"] = true,
-							["buttons"] = 5,
 							["position"] = {
 								["y"] = -112.057779583301,
 								["x"] = -88.926674856164,
@@ -898,16 +898,16 @@ Bartender4DB = {
 							},
 							["padding"] = -6,
 							["visibility"] = {
-								["overridebar"] = false,
 								["vehicleui"] = false,
+								["overridebar"] = false,
 							},
-							["version"] = 3,
+							["buttons"] = 5,
 						}, -- [4]
 						{
 							["buttons"] = 7,
 							["rows"] = 12,
+							["fadeoutalpha"] = 0,
 							["version"] = 3,
-							["fadeout"] = true,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
@@ -923,7 +923,7 @@ Bartender4DB = {
 								["overridebar"] = false,
 								["vehicleui"] = false,
 							},
-							["fadeoutalpha"] = 0,
+							["fadeout"] = true,
 						}, -- [5]
 						{
 							["hideequipped"] = true,
@@ -931,7 +931,12 @@ Bartender4DB = {
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
-							["version"] = 3,
+							["position"] = {
+								["y"] = -60.9627145630366,
+								["x"] = 0.834345572747779,
+								["point"] = "LEFT",
+								["scale"] = 1.70000004768372,
+							},
 							["padding"] = -6,
 							["visibility"] = {
 								["possess"] = false,
@@ -939,18 +944,13 @@ Bartender4DB = {
 								["always"] = true,
 								["vehicleui"] = false,
 							},
-							["position"] = {
-								["y"] = -60.9627145630366,
-								["x"] = 0.834345572747779,
-								["point"] = "LEFT",
-								["scale"] = 1.70000004768372,
-							},
+							["version"] = 3,
 						}, -- [6]
 						{
 							["enabled"] = true,
-							["hidehotkey"] = true,
+							["version"] = 3,
 							["hideequipped"] = true,
-							["fadeout"] = true,
+							["hidehotkey"] = true,
 							["position"] = {
 								["y"] = 51,
 								["x"] = -244.4,
@@ -960,19 +960,19 @@ Bartender4DB = {
 							["fadeoutalpha"] = 0,
 							["padding"] = -6,
 							["visibility"] = {
-								["overridebar"] = false,
 								["vehicleui"] = false,
+								["overridebar"] = false,
 							},
-							["version"] = 3,
+							["fadeout"] = true,
 						}, -- [7]
 						{
 							["enabled"] = true,
 							["buttons"] = 4,
 							["rows"] = 3,
-							["hidehotkey"] = true,
 							["version"] = 3,
-							["hideequipped"] = true,
 							["fadeout"] = true,
+							["hideequipped"] = true,
+							["hidehotkey"] = true,
 							["position"] = {
 								["y"] = 88.4000165939324,
 								["x"] = 237.447779114875,
@@ -982,8 +982,8 @@ Bartender4DB = {
 							["fadeoutalpha"] = 0,
 							["padding"] = -6,
 							["visibility"] = {
-								["overridebar"] = false,
 								["vehicleui"] = false,
+								["overridebar"] = false,
 							},
 							["states"] = {
 								["enabled"] = true,
@@ -995,12 +995,6 @@ Bartender4DB = {
 							["showgrid"] = true,
 							["rows"] = 2,
 							["buttons"] = 2,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["padding"] = -6,
-							["hideequipped"] = true,
-							["hidehotkey"] = true,
 							["position"] = {
 								["y"] = -274,
 								["x"] = -30.5,
@@ -1008,8 +1002,14 @@ Bartender4DB = {
 								["scale"] = 1.3,
 								["growVertical"] = "UP",
 							},
-							["version"] = 3,
 							["hidemacrotext"] = true,
+							["hideequipped"] = true,
+							["hidehotkey"] = true,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["version"] = 3,
+							["padding"] = -6,
 							["visibility"] = {
 								["possess"] = false,
 								["overridebar"] = false,
@@ -1022,25 +1022,25 @@ Bartender4DB = {
 						{
 							["enabled"] = true,
 							["buttons"] = 4,
+							["version"] = 3,
+							["hideequipped"] = true,
+							["hidehotkey"] = true,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
-							["hideequipped"] = true,
-							["hidehotkey"] = true,
+							["padding"] = -5,
+							["hidemacrotext"] = true,
+							["visibility"] = {
+								["possess"] = false,
+								["overridebar"] = false,
+								["vehicleui"] = false,
+							},
 							["position"] = {
 								["y"] = 205.662994579179,
 								["x"] = -165.40082185822,
 								["point"] = "BOTTOM",
 								["scale"] = 1.0900000333786,
 							},
-							["hidemacrotext"] = true,
-							["padding"] = -5,
-							["visibility"] = {
-								["possess"] = false,
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-							["version"] = 3,
 						}, -- [10]
 					},
 				},
@@ -1065,8 +1065,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1075,8 +1075,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1110,70 +1110,71 @@ Bartender4DB = {
 						},
 					},
 				},
-				["Memeinhaler - Grim Batol"] = {
+				["Donchyo - Shattered Hand"] = {
 					["actionbars"] = {
 						{
-							["version"] = 3,
 							["padding"] = 6,
+							["version"] = 3,
 							["position"] = {
+								["y"] = 41.75,
 								["x"] = -510,
 								["point"] = "BOTTOM",
-								["y"] = 41.75,
 							},
 						}, -- [1]
 						{
 							["enabled"] = false,
 							["version"] = 3,
 							["position"] = {
-								["x"] = -231.499816894531,
-								["point"] = "CENTER",
 								["y"] = -204.999969482422,
+								["x"] = -231.500061035156,
+								["point"] = "CENTER",
 							},
 						}, -- [2]
 						{
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
+								["y"] = 610,
 								["x"] = -82,
 								["point"] = "BOTTOMRIGHT",
-								["y"] = 610,
 							},
-							["padding"] = 5,
 						}, -- [3]
 						{
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
+								["y"] = 610,
 								["x"] = -42,
 								["point"] = "BOTTOMRIGHT",
-								["y"] = 610,
 							},
-							["padding"] = 5,
 						}, -- [4]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
+								["y"] = 83,
 								["x"] = 3,
 								["point"] = "BOTTOM",
-								["y"] = 83,
 							},
-							["padding"] = 6,
 						}, -- [5]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
+								["y"] = 83,
 								["x"] = -510,
 								["point"] = "BOTTOM",
-								["y"] = 83,
 							},
-							["padding"] = 6,
 						}, -- [6]
 						{
 						}, -- [7]
 						{
 						}, -- [8]
-						[10] = {
-						},
+						nil, -- [9]
+						{
+						}, -- [10]
 					},
 				},
 				["Krixikin - Grim Batol"] = {
@@ -1197,8 +1198,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1207,8 +1208,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1264,8 +1265,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1274,8 +1275,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1330,8 +1331,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1340,207 +1341,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
-					},
-				},
-				["Krixiyo - Blackmoore"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -204.999969482422,
-								["x"] = -231.499816894531,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
 							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
-				["Kroxi - Grim Batol"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -204.999969482422,
-								["x"] = -231.500061035156,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
-				["Bawsi - Aggra (Português)"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -204.999969482422,
-								["x"] = -231.500061035156,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1596,8 +1398,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1606,8 +1408,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1641,16 +1443,16 @@ Bartender4DB = {
 						},
 					},
 				},
-				["Bawsie - Grim Batol"] = {
+				["Kroxi - Grim Batol"] = {
 					["actionbars"] = {
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 41.75,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
 						}, -- [1]
 						{
 							["enabled"] = false,
@@ -1663,41 +1465,107 @@ Bartender4DB = {
 						}, -- [2]
 						{
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
 								["x"] = -82,
 								["point"] = "BOTTOMRIGHT",
 							},
-							["padding"] = 5,
 						}, -- [3]
 						{
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
 								["x"] = -42,
 								["point"] = "BOTTOMRIGHT",
 							},
-							["padding"] = 5,
 						}, -- [4]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 83,
 								["x"] = 3,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
 						}, -- [5]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 83,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
+				["Bawsi - Aggra (Português)"] = {
+					["actionbars"] = {
+						{
 							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -204.999969482422,
+								["x"] = -231.500061035156,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
 						}, -- [6]
 						{
 						}, -- [7]
@@ -1708,7 +1576,74 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
-				["Líttle - Grim Batol"] = {
+				["Krixidh - Grim Batol"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -204.999969482422,
+								["x"] = -231.499816894531,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
+				["Bawsie - Grim Batol"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -1729,8 +1664,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1739,8 +1674,75 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
+				["Kriximonk - Grim Batol"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -204.999969482422,
+								["x"] = -231.499816894531,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1796,8 +1798,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1806,8 +1808,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1862,8 +1864,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1872,8 +1874,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1908,16 +1910,16 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
-				["Default"] = {
+				["Asdasdasdfaf - Grim Batol"] = {
 					["actionbars"] = {
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 41.75,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
 						}, -- [1]
 						{
 							["enabled"] = false,
@@ -1930,41 +1932,41 @@ Bartender4DB = {
 						}, -- [2]
 						{
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
 								["x"] = -82,
 								["point"] = "BOTTOMRIGHT",
 							},
-							["padding"] = 5,
 						}, -- [3]
 						{
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
 								["x"] = -42,
 								["point"] = "BOTTOMRIGHT",
 							},
-							["padding"] = 5,
 						}, -- [4]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 110,
+								["y"] = 83,
 								["x"] = 3,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
 						}, -- [5]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 110,
+								["y"] = 83,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
 						}, -- [6]
 						{
 						}, -- [7]
@@ -1996,8 +1998,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2006,8 +2008,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2041,320 +2043,7 @@ Bartender4DB = {
 						},
 					},
 				},
-				["Grim Batol"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -204.999969482422,
-								["x"] = -231.499816894531,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 110,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 110,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
-				["druid2.0"] = {
-					["actionbars"] = {
-						{
-							["showgrid"] = true,
-							["rows"] = 2,
-							["hideequipped"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["version"] = 3,
-							["hidehotkey"] = true,
-							["position"] = {
-								["y"] = 174,
-								["x"] = -244.4,
-								["point"] = "BOTTOM",
-								["scale"] = 1.3,
-							},
-							["padding"] = -6,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["always"] = false,
-							},
-							["states"] = {
-								["customEnabled"] = false,
-								["custom"] = "",
-								["stance"] = {
-									["DRUID"] = {
-										["cat"] = 8,
-										["bear"] = 6,
-									},
-									["WARRIOR"] = {
-										["berserker"] = 0,
-										["battle"] = 0,
-										["gladiator"] = 0,
-										["def"] = 0,
-									},
-									["MONK"] = {
-										["ox"] = 0,
-										["tiger"] = 0,
-										["serpent"] = 0,
-										["crane"] = 6,
-									},
-									["ROGUE"] = {
-										["shadowdance"] = 6,
-										["stealth"] = 6,
-									},
-								},
-							},
-						}, -- [1]
-						{
-							["showgrid"] = true,
-							["rows"] = 2,
-							["hideequipped"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["padding"] = -6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 174,
-								["x"] = -10.6,
-								["point"] = "BOTTOM",
-								["scale"] = 1.29999995231628,
-							},
-							["hidehotkey"] = true,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-						}, -- [2]
-						{
-							["showgrid"] = true,
-							["hideequipped"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["padding"] = -6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 95.1,
-								["x"] = -244.4,
-								["point"] = "BOTTOM",
-								["scale"] = 1.29999995231628,
-							},
-							["hidehotkey"] = true,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-						}, -- [3]
-						{
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["enabled"] = false,
-							["version"] = 3,
-							["hidehotkey"] = true,
-							["position"] = {
-								["y"] = 79,
-								["x"] = -244,
-								["point"] = "CENTER",
-								["scale"] = 1.3,
-							},
-							["padding"] = -6,
-							["visibility"] = {
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-						}, -- [4]
-						{
-							["rows"] = 12,
-							["fadeout"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["buttons"] = 4,
-							["fadeoutalpha"] = 0,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 1.78979161921234,
-								["x"] = -49.399960869283,
-								["point"] = "RIGHT",
-								["scale"] = 1.29999995231628,
-							},
-							["padding"] = -6,
-							["visibility"] = {
-								["possess"] = false,
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-						}, -- [5]
-						{
-							["hideequipped"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["version"] = 3,
-							["fadeoutalpha"] = 0,
-							["position"] = {
-								["y"] = 86.4002377344696,
-								["x"] = 25.680672275812,
-								["point"] = "LEFT",
-								["scale"] = 1.29999995231628,
-							},
-							["hidehotkey"] = true,
-							["padding"] = -6,
-							["visibility"] = {
-								["always"] = true,
-								["overridebar"] = false,
-								["possess"] = false,
-								["vehicleui"] = false,
-							},
-						}, -- [6]
-						{
-							["hideequipped"] = true,
-							["fadeout"] = true,
-							["enabled"] = true,
-							["version"] = 3,
-							["hidehotkey"] = true,
-							["position"] = {
-								["y"] = 51,
-								["x"] = -244.4,
-								["point"] = "BOTTOM",
-								["scale"] = 1.3,
-							},
-							["fadeoutalpha"] = 0,
-							["padding"] = -6,
-							["visibility"] = {
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-						}, -- [7]
-						{
-							["hideequipped"] = true,
-							["enabled"] = true,
-							["fadeoutalpha"] = 0,
-							["hidehotkey"] = true,
-							["position"] = {
-								["y"] = 29.2499102408874,
-								["x"] = 25.2715261726553,
-								["point"] = "LEFT",
-								["scale"] = 1.29999995231628,
-							},
-							["version"] = 3,
-							["padding"] = -6,
-							["visibility"] = {
-								["always"] = true,
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-						}, -- [8]
-						{
-							["showgrid"] = true,
-							["rows"] = 2,
-							["hideequipped"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["enabled"] = true,
-							["buttons"] = 2,
-							["version"] = 3,
-							["hidehotkey"] = true,
-							["position"] = {
-								["y"] = -274,
-								["growVertical"] = "UP",
-								["point"] = "CENTER",
-								["scale"] = 1.3,
-								["x"] = -30.5,
-							},
-							["padding"] = -6,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["possess"] = false,
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-							["states"] = {
-								["customEnabled"] = false,
-							},
-						}, -- [9]
-						{
-							["hideequipped"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["enabled"] = true,
-							["buttons"] = 4,
-							["padding"] = -6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 204.8,
-								["x"] = -130.4,
-								["point"] = "BOTTOM",
-								["scale"] = 1.09,
-							},
-							["hidehotkey"] = true,
-							["hidemacrotext"] = true,
-							["visibility"] = {
-								["possess"] = false,
-								["overridebar"] = false,
-								["vehicleui"] = false,
-							},
-						}, -- [10]
-					},
-				},
-				["Nyrith - Grim Batol"] = {
+				["Donch - Crushridge"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -2421,7 +2110,321 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
+				["druid2.0"] = {
+					["actionbars"] = {
+						{
+							["showgrid"] = true,
+							["rows"] = 2,
+							["hidehotkey"] = true,
+							["position"] = {
+								["y"] = 174,
+								["x"] = -244.4,
+								["point"] = "BOTTOM",
+								["scale"] = 1.3,
+							},
+							["hideequipped"] = true,
+							["version"] = 3,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["hidemacrotext"] = true,
+							["padding"] = -6,
+							["visibility"] = {
+								["always"] = false,
+							},
+							["states"] = {
+								["stance"] = {
+									["WARRIOR"] = {
+										["berserker"] = 0,
+										["battle"] = 0,
+										["gladiator"] = 0,
+										["def"] = 0,
+									},
+									["DRUID"] = {
+										["cat"] = 8,
+										["bear"] = 6,
+									},
+									["MONK"] = {
+										["crane"] = 6,
+										["serpent"] = 0,
+										["tiger"] = 0,
+										["ox"] = 0,
+									},
+									["ROGUE"] = {
+										["stealth"] = 6,
+										["shadowdance"] = 6,
+									},
+								},
+								["custom"] = "",
+								["customEnabled"] = false,
+							},
+						}, -- [1]
+						{
+							["showgrid"] = true,
+							["rows"] = 2,
+							["hidehotkey"] = true,
+							["hideequipped"] = true,
+							["version"] = 3,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["hidemacrotext"] = true,
+							["padding"] = -6,
+							["visibility"] = {
+								["vehicleui"] = false,
+								["overridebar"] = false,
+							},
+							["position"] = {
+								["y"] = 174,
+								["x"] = -10.6,
+								["point"] = "BOTTOM",
+								["scale"] = 1.29999995231628,
+							},
+						}, -- [2]
+						{
+							["showgrid"] = true,
+							["hidehotkey"] = true,
+							["hideequipped"] = true,
+							["version"] = 3,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["hidemacrotext"] = true,
+							["padding"] = -6,
+							["visibility"] = {
+								["vehicleui"] = false,
+								["overridebar"] = false,
+							},
+							["position"] = {
+								["y"] = 95.1,
+								["x"] = -244.4,
+								["point"] = "BOTTOM",
+								["scale"] = 1.29999995231628,
+							},
+						}, -- [3]
+						{
+							["enabled"] = false,
+							["hidehotkey"] = true,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["position"] = {
+								["y"] = 79,
+								["x"] = -244,
+								["point"] = "CENTER",
+								["scale"] = 1.3,
+							},
+							["padding"] = -6,
+							["visibility"] = {
+								["vehicleui"] = false,
+								["overridebar"] = false,
+							},
+							["version"] = 3,
+						}, -- [4]
+						{
+							["buttons"] = 4,
+							["rows"] = 12,
+							["fadeoutalpha"] = 0,
+							["fadeout"] = true,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["position"] = {
+								["y"] = 1.78979161921234,
+								["x"] = -49.399960869283,
+								["point"] = "RIGHT",
+								["scale"] = 1.29999995231628,
+							},
+							["padding"] = -6,
+							["visibility"] = {
+								["possess"] = false,
+								["overridebar"] = false,
+								["vehicleui"] = false,
+							},
+							["version"] = 3,
+						}, -- [5]
+						{
+							["position"] = {
+								["y"] = 86.4002377344696,
+								["x"] = 25.680672275812,
+								["point"] = "LEFT",
+								["scale"] = 1.29999995231628,
+							},
+							["hideequipped"] = true,
+							["hidehotkey"] = true,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["version"] = 3,
+							["padding"] = -6,
+							["visibility"] = {
+								["possess"] = false,
+								["overridebar"] = false,
+								["always"] = true,
+								["vehicleui"] = false,
+							},
+							["fadeoutalpha"] = 0,
+						}, -- [6]
+						{
+							["enabled"] = true,
+							["fadeoutalpha"] = 0,
+							["hideequipped"] = true,
+							["fadeout"] = true,
+							["position"] = {
+								["y"] = 51,
+								["x"] = -244.4,
+								["point"] = "BOTTOM",
+								["scale"] = 1.3,
+							},
+							["hidehotkey"] = true,
+							["padding"] = -6,
+							["visibility"] = {
+								["vehicleui"] = false,
+								["overridebar"] = false,
+							},
+							["version"] = 3,
+						}, -- [7]
+						{
+							["enabled"] = true,
+							["hideequipped"] = true,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 29.2499102408874,
+								["x"] = 25.2715261726553,
+								["point"] = "LEFT",
+								["scale"] = 1.29999995231628,
+							},
+							["hidehotkey"] = true,
+							["padding"] = -6,
+							["visibility"] = {
+								["always"] = true,
+								["overridebar"] = false,
+								["vehicleui"] = false,
+							},
+							["fadeoutalpha"] = 0,
+						}, -- [8]
+						{
+							["enabled"] = true,
+							["showgrid"] = true,
+							["rows"] = 2,
+							["buttons"] = 2,
+							["hidehotkey"] = true,
+							["hidemacrotext"] = true,
+							["hideequipped"] = true,
+							["version"] = 3,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["position"] = {
+								["y"] = -274,
+								["growVertical"] = "UP",
+								["point"] = "CENTER",
+								["scale"] = 1.3,
+								["x"] = -30.5,
+							},
+							["padding"] = -6,
+							["visibility"] = {
+								["possess"] = false,
+								["overridebar"] = false,
+								["vehicleui"] = false,
+							},
+							["states"] = {
+								["customEnabled"] = false,
+							},
+						}, -- [9]
+						{
+							["enabled"] = true,
+							["buttons"] = 4,
+							["hidehotkey"] = true,
+							["hideequipped"] = true,
+							["version"] = 3,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["hidemacrotext"] = true,
+							["padding"] = -6,
+							["visibility"] = {
+								["possess"] = false,
+								["overridebar"] = false,
+								["vehicleui"] = false,
+							},
+							["position"] = {
+								["y"] = 204.8,
+								["x"] = -130.4,
+								["point"] = "BOTTOM",
+								["scale"] = 1.09,
+							},
+						}, -- [10]
+					},
+				},
 				["Krixi - Grim Batol"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -204.999969482422,
+								["x"] = -231.500061035156,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
+				["Nyrith - Grim Batol"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -2509,8 +2512,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2519,8 +2522,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2575,8 +2578,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2585,8 +2588,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2642,8 +2645,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2652,8 +2655,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2708,8 +2711,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2718,8 +2721,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2756,13 +2759,13 @@ Bartender4DB = {
 				["Skullflower"] = {
 					["actionbars"] = {
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 41.75,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
 						}, -- [1]
 						{
 							["enabled"] = false,
@@ -2774,6 +2777,7 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
+							["padding"] = 5,
 							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
@@ -2781,9 +2785,9 @@ Bartender4DB = {
 								["x"] = -82,
 								["point"] = "BOTTOMRIGHT",
 							},
-							["padding"] = 5,
 						}, -- [3]
 						{
+							["padding"] = 5,
 							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
@@ -2791,25 +2795,24 @@ Bartender4DB = {
 								["x"] = -42,
 								["point"] = "BOTTOMRIGHT",
 							},
-							["padding"] = 5,
 						}, -- [4]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 83,
 								["x"] = 3,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
 						}, -- [5]
 						{
+							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 83,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
 						}, -- [6]
 						{
 						}, -- [7]
@@ -2900,8 +2903,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2910,8 +2913,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -2946,7 +2949,140 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
-				["Donch - Crushridge"] = {
+				["Default"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -204.999969482422,
+								["x"] = -231.499816894531,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
+				["Grim Batol"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -204.999969482422,
+								["x"] = -231.499816894531,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
+				["Líttle - Grim Batol"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -2967,73 +3103,6 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
-					},
-				},
-				["Asdasdasdfaf - Grim Batol"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -204.999969482422,
-								["x"] = -231.499816894531,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
 							["padding"] = 5,
 							["rows"] = 12,
 							["version"] = 3,
@@ -3046,73 +3115,6 @@ Bartender4DB = {
 						{
 							["padding"] = 5,
 							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
-					},
-				},
-				["Kriximonk - Grim Batol"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -204.999969482422,
-								["x"] = -231.499816894531,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -3152,62 +3154,63 @@ Bartender4DB = {
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
+							["hideequipped"] = true,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["fadeoutalpha"] = 0,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 85,
 								["x"] = -363.588714599609,
 								["point"] = "BOTTOM",
 							},
-							["hideequipped"] = true,
-							["fadeoutalpha"] = 0,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["padding"] = -6,
 							["hidemacrotext"] = true,
+							["padding"] = -6,
 							["visibility"] = {
 								["possess"] = false,
+								["always"] = false,
 								["vehicle"] = false,
 								["nocombat"] = false,
-								["always"] = false,
 							},
 							["states"] = {
+								["customEnabled"] = false,
+								["custom"] = "",
 								["stance"] = {
-									["DRUID"] = {
-										["moonkin"] = 9,
-										["prowl"] = 0,
-										["cat"] = 4,
-										["bear"] = 6,
-									},
 									["WARRIOR"] = {
 										["berserker"] = 0,
 										["battle"] = 0,
 										["gladiator"] = 0,
 										["def"] = 0,
 									},
+									["DRUID"] = {
+										["prowl"] = 0,
+										["moonkin"] = 9,
+										["cat"] = 4,
+										["bear"] = 6,
+									},
 									["MONK"] = {
-										["ox"] = 0,
-										["tiger"] = 0,
-										["serpent"] = 0,
 										["crane"] = 6,
+										["serpent"] = 0,
+										["tiger"] = 0,
+										["ox"] = 0,
 									},
 									["ROGUE"] = {
-										["shadowdance"] = 6,
 										["stealth"] = 6,
+										["shadowdance"] = 6,
 									},
 								},
-								["custom"] = "",
-								["customEnabled"] = false,
 							},
 						}, -- [1]
 						{
 							["showgrid"] = true,
 							["rows"] = 2,
 							["hideequipped"] = true,
-							["version"] = 3,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
+							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = 85,
 								["x"] = -185,
@@ -3215,38 +3218,38 @@ Bartender4DB = {
 							},
 							["padding"] = -6,
 							["visibility"] = {
-								["vehicleui"] = false,
 								["overridebar"] = false,
+								["vehicleui"] = false,
 							},
-							["fadeoutalpha"] = 0,
 						}, -- [2]
 						{
 							["showgrid"] = true,
-							["position"] = {
-								["y"] = 85,
-								["x"] = -4,
-								["point"] = "BOTTOM",
-							},
 							["hideequipped"] = true,
 							["fadeoutdelay"] = 0,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
+							["fadeoutalpha"] = 0,
+							["position"] = {
+								["y"] = 85,
+								["x"] = -4,
+								["point"] = "BOTTOM",
+							},
 							["version"] = 3,
 							["padding"] = -6,
 							["visibility"] = {
-								["vehicleui"] = false,
 								["overridebar"] = false,
+								["vehicleui"] = false,
 							},
-							["fadeoutalpha"] = 0,
 						}, -- [3]
 						{
-							["enabled"] = false,
-							["hidehotkey"] = true,
-							["version"] = 3,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
+							["enabled"] = false,
+							["buttons"] = 5,
+							["version"] = 3,
+							["hidehotkey"] = true,
 							["position"] = {
 								["y"] = -112.057779583301,
 								["x"] = -88.926674856164,
@@ -3255,15 +3258,19 @@ Bartender4DB = {
 							},
 							["padding"] = -6,
 							["visibility"] = {
-								["vehicleui"] = false,
 								["overridebar"] = false,
+								["vehicleui"] = false,
 							},
-							["buttons"] = 5,
 						}, -- [4]
 						{
-							["buttons"] = 4,
 							["rows"] = 3,
+							["fadeout"] = true,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["buttons"] = 4,
 							["fadeoutalpha"] = 0,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 85.876436516819,
 								["x"] = 356.554301324708,
@@ -3271,25 +3278,21 @@ Bartender4DB = {
 								["scale"] = 1.29999995231628,
 							},
 							["fadeoutdelay"] = 0,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["fadeout"] = true,
 							["padding"] = -6,
 							["visibility"] = {
 								["possess"] = false,
 								["overridebar"] = false,
 								["vehicleui"] = false,
 							},
-							["version"] = 3,
 						}, -- [5]
 						{
-							["enabled"] = false,
 							["hideequipped"] = true,
-							["version"] = 3,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
+							["enabled"] = false,
+							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = -60.9627145630366,
 								["x"] = 0.834345572747779,
@@ -3303,13 +3306,13 @@ Bartender4DB = {
 								["always"] = true,
 								["vehicleui"] = false,
 							},
-							["fadeoutalpha"] = 0,
 						}, -- [6]
 						{
-							["enabled"] = true,
-							["hideequipped"] = true,
-							["version"] = 3,
 							["showgrid"] = true,
+							["hideequipped"] = true,
+							["enabled"] = true,
+							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = 55,
 								["x"] = -4,
@@ -3317,15 +3320,14 @@ Bartender4DB = {
 							},
 							["padding"] = -6,
 							["visibility"] = {
-								["vehicleui"] = false,
 								["overridebar"] = false,
+								["vehicleui"] = false,
 							},
-							["fadeoutalpha"] = 0,
 						}, -- [7]
 						{
-							["enabled"] = true,
 							["rows"] = 12,
 							["hideequipped"] = true,
+							["enabled"] = true,
 							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = 105.700041584176,
@@ -3346,6 +3348,11 @@ Bartender4DB = {
 						}, -- [8]
 						{
 							["rows"] = 2,
+							["hideequipped"] = true,
+							["skin"] = {
+								["ID"] = "Apathy",
+							},
+							["hidehotkey"] = true,
 							["version"] = 3,
 							["position"] = {
 								["y"] = -58.254326077451,
@@ -3354,13 +3361,8 @@ Bartender4DB = {
 								["scale"] = 1.29999995231628,
 								["x"] = -30.9737880985413,
 							},
-							["hideequipped"] = true,
-							["hidehotkey"] = true,
-							["skin"] = {
-								["ID"] = "Apathy",
-							},
-							["padding"] = -6,
 							["hidemacrotext"] = true,
+							["padding"] = -6,
 							["visibility"] = {
 								["possess"] = false,
 								["overridebar"] = false,
@@ -3368,38 +3370,38 @@ Bartender4DB = {
 							},
 							["states"] = {
 								["possess"] = true,
-								["enabled"] = true,
 								["customEnabled"] = false,
+								["enabled"] = true,
 							},
 						}, -- [9]
 						{
-							["enabled"] = true,
-							["buttons"] = 4,
 							["rows"] = 2,
-							["version"] = 3,
-							["hidemacrotext"] = true,
 							["hideequipped"] = true,
 							["fadeoutdelay"] = 0,
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
+							["enabled"] = true,
+							["buttons"] = 4,
+							["padding"] = -5,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 86.8750286102295,
 								["x"] = 408.333320617676,
 								["point"] = "BOTTOMLEFT",
 								["scale"] = 1.25,
 							},
-							["padding"] = -5,
+							["fadeoutalpha"] = 0,
+							["hidemacrotext"] = true,
 							["visibility"] = {
 								["possess"] = false,
 								["overridebar"] = false,
 								["vehicleui"] = false,
 							},
-							["fadeoutalpha"] = 0,
 						}, -- [10]
 					},
 				},
-				["Krixidh - Grim Batol"] = {
+				["Krixiyo - Blackmoore"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -3461,9 +3463,8 @@ Bartender4DB = {
 						}, -- [7]
 						{
 						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
+						[10] = {
+						},
 					},
 				},
 				["Zuriz - Grim Batol"] = {
@@ -3487,8 +3488,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -3497,8 +3498,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -3554,8 +3555,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -3564,8 +3565,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -3599,7 +3600,7 @@ Bartender4DB = {
 						},
 					},
 				},
-				["Donchyo - Shattered Hand"] = {
+				["Memeinhaler - Grim Batol"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -3615,7 +3616,7 @@ Bartender4DB = {
 							["version"] = 3,
 							["position"] = {
 								["y"] = -204.999969482422,
-								["x"] = -231.500061035156,
+								["x"] = -231.499816894531,
 								["point"] = "CENTER",
 							},
 						}, -- [2]
@@ -3661,9 +3662,8 @@ Bartender4DB = {
 						}, -- [7]
 						{
 						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
+						[10] = {
+						},
 					},
 				},
 			},
@@ -3760,12 +3760,12 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Memeinhaler - Grim Batol"] = {
+				["Donchyo - Shattered Hand"] = {
 					["version"] = 3,
 					["position"] = {
-						["x"] = -31.4999389648438,
+						["y"] = 222.999984741211,
+						["x"] = -31.5,
 						["point"] = "BOTTOM",
-						["y"] = 223.000015258789,
 					},
 				},
 				["Krixikin - Grim Batol"] = {
@@ -3792,11 +3792,11 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Krixiyo - Blackmoore"] = {
+				["Gnomalock - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
+						["y"] = 222.999984741211,
+						["x"] = -31.5,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -3816,27 +3816,27 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Gnomalock - Grim Batol"] = {
+				["Krixidh - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.999984741211,
-						["x"] = -31.5,
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
 						["point"] = "BOTTOM",
 					},
 				},
 				["Bawsie - Grim Batol"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 222.999984741211,
 						["x"] = -31.5,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
-				["Líttle - Grim Batol"] = {
+				["Kriximonk - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.999984741211,
-						["x"] = -31.5,
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -3856,13 +3856,13 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Default"] = {
+				["Asdasdasdfaf - Grim Batol"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 223.000015258789,
 						["x"] = -31.4999389648438,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Lowerboost - Lightbringer"] = {
 					["version"] = 3,
@@ -3872,23 +3872,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["druid2.0"] = {
-					["position"] = {
-						["y"] = 139.806930541992,
-						["x"] = -325.086959838867,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
-				["Nyrith - Grim Batol"] = {
+				["Donch - Crushridge"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 222.999984741211,
@@ -3896,7 +3880,23 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["druid2.0"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 139.806930541992,
+						["x"] = -325.086959838867,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Krixi - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 222.999984741211,
+						["x"] = -31.5,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Nyrith - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 222.999984741211,
@@ -3937,20 +3937,20 @@ Bartender4DB = {
 					},
 				},
 				["Skullflower"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 223.000015258789,
 						["x"] = -31.4999389648438,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Infaye - Twisting Nether"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 223.000015258789,
 						["x"] = -31.4999389648438,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Spacegoatx - Aggra (Português)"] = {
 					["version"] = 3,
@@ -3960,7 +3960,23 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Donch - Crushridge"] = {
+				["Default"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Líttle - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 222.999984741211,
@@ -3968,31 +3984,15 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Asdasdasdfaf - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Kriximonk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
 				["LophisKrixi"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 85.1956481933594,
 						["x"] = 91.8021240234375,
 						["point"] = "CENTER",
 					},
+					["version"] = 3,
 				},
-				["Krixidh - Grim Batol"] = {
+				["Krixiyo - Blackmoore"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 223.000015258789,
@@ -4016,190 +4016,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Donchyo - Shattered Hand"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 222.999984741211,
-						["x"] = -31.5,
-						["point"] = "BOTTOM",
-					},
-				},
-			},
-		},
-		["ZoneAbilityBar"] = {
-			["profiles"] = {
-				["Krixiyo - Twisting Nether"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixidk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Bawsie - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-						["y"] = 223.000015258789,
-					},
-				},
-				["Krixidh - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Lowerboost - Lightbringer"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["druid2.0"] = {
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
-				["Nyrith - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
 				["Memeinhaler - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-						["y"] = 223.000015258789,
-					},
-				},
-				["Krixi - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixiyo - Blackmoore"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["LilGayKrixi"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Skullflower"] = {
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
-				["Infaye - Twisting Nether"] = {
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
-				["Asdasdasdfaf - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Líttle - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Default"] = {
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
-				["LophisKrixi"] = {
-					["version"] = 3,
-					["visibility"] = {
-						["vehicle"] = false,
-					},
-					["position"] = {
-						["y"] = 77.6565856933594,
-						["x"] = -387.291381835938,
-						["point"] = "RIGHT",
-					},
-				},
-				["MONK"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Zuriz - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Kriximonk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 223.000015258789,
-						["x"] = -31.4999389648438,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixikin - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 223.000015258789,
@@ -4295,9 +4112,9 @@ Bartender4DB = {
 						["point"] = "TOPRIGHT",
 						["scale"] = 0.57,
 					},
-					["version"] = 3,
-					["fadeout"] = true,
 					["fadeoutdelay"] = 0,
+					["fadeout"] = true,
+					["version"] = 3,
 				},
 				["Infeh - Twisting Nether"] = {
 					["fadeoutalpha"] = 0,
@@ -4307,9 +4124,9 @@ Bartender4DB = {
 						["point"] = "TOPRIGHT",
 						["scale"] = 0.57,
 					},
-					["version"] = 3,
-					["fadeout"] = true,
 					["fadeoutdelay"] = 0,
+					["fadeout"] = true,
+					["version"] = 3,
 				},
 				["Greenzuriz - Aggra (Português)"] = {
 					["version"] = 3,
@@ -4320,14 +4137,13 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
-				["Memeinhaler - Grim Batol"] = {
+				["Donchyo - Shattered Hand"] = {
 					["version"] = 3,
-					["padding"] = -2,
 					["position"] = {
+						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
-						["y"] = 41.75,
 					},
 				},
 				["Krixikin - Grim Batol"] = {
@@ -4359,8 +4175,7 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Krixiyo - Blackmoore"] = {
-					["padding"] = -2,
+				["Gnomalock - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["scale"] = 1,
@@ -4388,25 +4203,27 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Gnomalock - Grim Batol"] = {
+				["Krixidh - Grim Batol"] = {
+					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
-						["scale"] = 1,
+						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
-						["y"] = 41.75,
+						["scale"] = 1,
 					},
 				},
 				["Bawsie - Grim Batol"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
 					},
-					["version"] = 3,
 				},
-				["Líttle - Grim Batol"] = {
+				["Kriximonk - Grim Batol"] = {
+					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
@@ -4434,15 +4251,15 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Default"] = {
+				["Asdasdasdfaf - Grim Batol"] = {
+					["padding"] = -2,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
 					},
-					["version"] = 3,
-					["padding"] = -2,
 				},
 				["Lowerboost - Lightbringer"] = {
 					["padding"] = -2,
@@ -4454,18 +4271,16 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
-				["Grim Batol"] = {
-					["padding"] = -2,
+				["Donch - Crushridge"] = {
 					["version"] = 3,
 					["position"] = {
-						["scale"] = 1,
+						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
-						["y"] = 41.75,
+						["scale"] = 1,
 					},
 				},
 				["druid2.0"] = {
-					["version"] = 3,
 					["fadeoutalpha"] = 0,
 					["position"] = {
 						["y"] = -173.856811523438,
@@ -4474,9 +4289,10 @@ Bartender4DB = {
 						["scale"] = 0.57,
 					},
 					["fadeout"] = true,
+					["version"] = 3,
 					["fadeoutdelay"] = 0,
 				},
-				["Nyrith - Grim Batol"] = {
+				["Krixi - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
@@ -4485,7 +4301,7 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Krixi - Grim Batol"] = {
+				["Nyrith - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
@@ -4531,23 +4347,23 @@ Bartender4DB = {
 					},
 				},
 				["Skullflower"] = {
+					["padding"] = -2,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
 					},
-					["version"] = 3,
-					["padding"] = -2,
 				},
 				["Infaye - Twisting Nether"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 42.3999284386628,
 						["x"] = -198.799917004504,
 						["point"] = "CENTER",
 						["scale"] = 0.800000011920929,
 					},
-					["version"] = 3,
 				},
 				["Spacegoatx - Aggra (Português)"] = {
 					["version"] = 3,
@@ -4558,16 +4374,7 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Donch - Crushridge"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 41.75,
-						["x"] = 37.5,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Asdasdasdfaf - Grim Batol"] = {
+				["Default"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
@@ -4577,8 +4384,17 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Kriximonk - Grim Batol"] = {
+				["Grim Batol"] = {
 					["padding"] = -2,
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1,
+						["x"] = 37.5,
+						["point"] = "BOTTOM",
+						["y"] = 41.75,
+					},
+				},
+				["Líttle - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 41.75,
@@ -4589,28 +4405,28 @@ Bartender4DB = {
 				},
 				["LophisKrixi"] = {
 					["fadeoutdelay"] = 1,
+					["fadeoutalpha"] = 0,
 					["position"] = {
 						["y"] = -176.433623113713,
 						["x"] = -179.58096398662,
 						["point"] = "TOPRIGHT",
 						["scale"] = 0.569999992847443,
 					},
-					["version"] = 3,
 					["fadeout"] = true,
 					["visibility"] = {
-						["vehicleui"] = false,
 						["overridebar"] = false,
+						["vehicleui"] = false,
 					},
-					["fadeoutalpha"] = 0,
+					["version"] = 3,
 				},
-				["Krixidh - Grim Batol"] = {
+				["Krixiyo - Blackmoore"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 41.75,
+						["scale"] = 1,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
-						["scale"] = 1,
+						["y"] = 41.75,
 					},
 				},
 				["Zuriz - Grim Batol"] = {
@@ -4631,19 +4447,234 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
-				["Donchyo - Shattered Hand"] = {
+				["Memeinhaler - Grim Batol"] = {
+					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 41.75,
+						["scale"] = 1,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
-						["scale"] = 1,
+						["y"] = 41.75,
+					},
+				},
+			},
+		},
+		["ZoneAbilityBar"] = {
+			["profiles"] = {
+				["Krixiyo - Twisting Nether"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixidk - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Bawsie - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixidh - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Lowerboost - Lightbringer"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["druid2.0"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Nyrith - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixikin - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["MONK"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixiyo - Blackmoore"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["LilGayKrixi"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Skullflower"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Memeinhaler - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Kriximonk - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Asdasdasdfaf - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Líttle - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["LophisKrixi"] = {
+					["position"] = {
+						["y"] = 77.6565856933594,
+						["x"] = -387.291381835938,
+						["point"] = "RIGHT",
+					},
+					["visibility"] = {
+						["vehicle"] = false,
+					},
+					["version"] = 3,
+				},
+				["Default"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Zuriz - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Infaye - Twisting Nether"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixi - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.000015258789,
+						["x"] = -31.4999389648438,
+						["point"] = "BOTTOM",
 					},
 				},
 			},
 		},
 		["XPBar"] = {
 			["profiles"] = {
+				["Grim Batol"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 57,
+						["x"] = -516,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Default"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 57,
+						["x"] = -516,
+						["point"] = "BOTTOM",
+					},
+				},
+				["LophisKrixi"] = {
+					["fadeoutalpha"] = 0,
+					["position"] = {
+						["y"] = 4.00006103515625,
+						["x"] = -3.99991273880005,
+						["point"] = "TOPLEFT",
+					},
+					["version"] = 3,
+					["clickthrough"] = true,
+					["visibility"] = {
+						["always"] = false,
+					},
+				},
 				["LilGayKrixi"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -4657,6 +4688,20 @@ Bartender4DB = {
 						["always"] = false,
 					},
 					["fadeoutalpha"] = 0,
+				},
+				["druid2.0"] = {
+					["enabled"] = true,
+					["fadeoutalpha"] = 0,
+					["position"] = {
+						["y"] = 4.00002981683645,
+						["x"] = -4.0000071122729,
+						["point"] = "TOPLEFT",
+					},
+					["clickthrough"] = true,
+					["visibility"] = {
+						["always"] = false,
+					},
+					["version"] = 3,
 				},
 				["Infeh - Twisting Nether"] = {
 					["enabled"] = true,
@@ -4672,37 +4717,6 @@ Bartender4DB = {
 					},
 					["fadeoutalpha"] = 0,
 				},
-				["Grim Batol"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 57,
-						["x"] = -516,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Default"] = {
-					["enabled"] = true,
-					["position"] = {
-						["y"] = 57,
-						["x"] = -516,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
-				["LophisKrixi"] = {
-					["fadeoutalpha"] = 0,
-					["position"] = {
-						["y"] = 4.00006103515625,
-						["x"] = -3.99991273880005,
-						["point"] = "TOPLEFT",
-					},
-					["clickthrough"] = true,
-					["visibility"] = {
-						["always"] = false,
-					},
-					["version"] = 3,
-				},
 				["MONK"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -4710,26 +4724,21 @@ Bartender4DB = {
 						["y"] = 57,
 						["x"] = -516,
 						["point"] = "BOTTOM",
-					},
-				},
-				["druid2.0"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 4.00002981683645,
-						["x"] = -4.0000071122729,
-						["point"] = "TOPLEFT",
-					},
-					["fadeoutalpha"] = 0,
-					["clickthrough"] = true,
-					["visibility"] = {
-						["always"] = false,
 					},
 				},
 			},
 		},
 		["APBar"] = {
 			["profiles"] = {
+				["MONK"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 73,
+						["x"] = -516,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -4741,32 +4750,23 @@ Bartender4DB = {
 				},
 				["Default"] = {
 					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 73,
 						["x"] = -516,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["LophisKrixi"] = {
 					["version"] = 3,
+					["fadeoutalpha"] = 0,
 					["position"] = {
 						["y"] = -15.740234375,
 						["x"] = -3.99991273880005,
 						["point"] = "TOPLEFT",
 					},
 					["fadeout"] = true,
-					["fadeoutalpha"] = 0,
 					["fadeoutdelay"] = 0,
-				},
-				["MONK"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 73,
-						["x"] = -516,
-						["point"] = "BOTTOM",
-					},
 				},
 			},
 		},
@@ -4869,22 +4869,13 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Namji - Grim Batol"] = {
+				["Donchyo - Shattered Hand"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
-					},
-				},
-				["Memeinhaler - Grim Batol"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["x"] = -512,
-						["point"] = "BOTTOM",
-						["y"] = 47,
 					},
 				},
 				["Donch - Grim Batol"] = {
@@ -4923,7 +4914,25 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Bawsi - Aggra (Português)"] = {
+				["Namji - Grim Batol"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47,
+						["x"] = -512,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixiyo - Blackmoore"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47,
+						["x"] = -512,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Bawsie - Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -4941,25 +4950,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Bawsie - Grim Batol"] = {
-					["enabled"] = true,
-					["position"] = {
-						["y"] = 47,
-						["x"] = -512,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
 				["Krixidh - Grim Batol"] = {
-					["enabled"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47,
-						["x"] = -512,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixiyo - Lightning's Blade"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -4977,7 +4968,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Krixi - Grim Batol"] = {
+				["Kriximonk - Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -4995,7 +4986,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Líttle - Grim Batol"] = {
+				["Asdasdasdfaf - Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -5005,14 +4996,23 @@ Bartender4DB = {
 					},
 				},
 				["druid2.0"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 100.000001367745,
 						["x"] = -201.510010489919,
 						["point"] = "BOTTOMLEFT",
 					},
-					["version"] = 3,
 				},
-				["Grim Batol"] = {
+				["Donch - Crushridge"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47,
+						["x"] = -512,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixi - Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -5029,15 +5029,6 @@ Bartender4DB = {
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
-				},
-				["Default"] = {
-					["enabled"] = true,
-					["position"] = {
-						["y"] = 47,
-						["x"] = -512,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
 				},
 				["Treefiddy - Aggra (Português)"] = {
 					["enabled"] = true,
@@ -5068,12 +5059,21 @@ Bartender4DB = {
 				},
 				["Skullflower"] = {
 					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
+				},
+				["Default"] = {
+					["enabled"] = true,
 					["version"] = 3,
+					["position"] = {
+						["y"] = 47,
+						["x"] = -512,
+						["point"] = "BOTTOM",
+					},
 				},
 				["Spacegoatx - Aggra (Português)"] = {
 					["enabled"] = true,
@@ -5084,7 +5084,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Donch - Crushridge"] = {
+				["Krixiyo - Lightning's Blade"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -5093,7 +5093,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Asdasdasdfaf - Grim Batol"] = {
+				["Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -5102,7 +5102,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Kriximonk - Grim Batol"] = {
+				["Líttle - Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -5112,14 +5112,14 @@ Bartender4DB = {
 					},
 				},
 				["LophisKrixi"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 100.000001367745,
 						["x"] = -201.510010489919,
 						["point"] = "BOTTOMLEFT",
 					},
+					["version"] = 3,
 				},
-				["Krixiyo - Blackmoore"] = {
+				["Bawsi - Aggra (Português)"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -5146,12 +5146,766 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Donchyo - Shattered Hand"] = {
+				["Memeinhaler - Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
+						["point"] = "BOTTOM",
+					},
+				},
+			},
+		},
+		["Vehicle"] = {
+			["profiles"] = {
+				["Bawsi - Shattered Hand"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Krixidk - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Zolution - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Menardiairl - Culte de la Rive noire"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["MONK"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Lilgaykrixi - Kazzak"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Daimtårta - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Kroxidps - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["LilGayKrixi"] = {
+					["enabled"] = false,
+					["skin"] = {
+						["ID"] = "Apathy",
+						["Backdrop"] = false,
+					},
+					["version"] = 3,
+					["position"] = {
+						["y"] = -226.490446530425,
+						["x"] = 6.3935868979456,
+						["point"] = "LEFT",
+					},
+				},
+				["Infeh - Twisting Nether"] = {
+					["enabled"] = false,
+					["position"] = {
+						["y"] = -226.490446530425,
+						["x"] = 6.3935868979456,
+						["point"] = "LEFT",
+					},
+					["version"] = 3,
+					["skin"] = {
+						["ID"] = "Apathy",
+						["Backdrop"] = false,
+					},
+				},
+				["Greenzuriz - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Donchyo - Shattered Hand"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Krixikin - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Donch - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Krixiyo - Twisting Nether"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Gnomalock - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Kroxi - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Bawsi - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Krixidh - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Bawsie - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Kriximonk - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Krixiyo - Lightning's Blade"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Donch - Shattered Hand"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Asdasdasdfaf - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Lowerboost - Lightbringer"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Donch - Crushridge"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["druid2.0"] = {
+					["enabled"] = false,
+					["skin"] = {
+						["ID"] = "Apathy",
+						["Backdrop"] = false,
+					},
+					["version"] = 3,
+					["position"] = {
+						["y"] = -226.490446530425,
+						["x"] = 6.3935868979456,
+						["point"] = "LEFT",
+					},
+				},
+				["Krixi - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Nyrith - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Zetiz - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Treefiddy - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Kroxi - Crushridge"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Namji - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Skullflower"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Infaye - Twisting Nether"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Spacegoatx - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Default"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Líttle - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["LophisKrixi"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["y"] = -226.490446530425,
+						["x"] = 6.3935868979456,
+						["point"] = "LEFT",
+					},
+					["skin"] = {
+						["ID"] = "Apathy",
+						["Backdrop"] = false,
+					},
+				},
+				["Krixiyo - Blackmoore"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+				["Zuriz - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Krixiswag - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999542236328,
+						["x"] = 99.4998168945313,
+						["point"] = "CENTER",
+					},
+				},
+				["Memeinhaler - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.4999694824219,
+						["x"] = 99.5000610351563,
+						["point"] = "CENTER",
+					},
+				},
+			},
+		},
+		["BagBar"] = {
+			["profiles"] = {
+				["Bawsi - Shattered Hand"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixidk - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Zolution - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Menardiairl - Culte de la Rive noire"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["MONK"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Lilgaykrixi - Kazzak"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Daimtårta - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Kroxidps - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["LilGayKrixi"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -4.54617977142334,
+						["growVertical"] = "UP",
+						["point"] = "BOTTOM",
+						["x"] = 69.0848388671875,
+					},
+					["rows"] = 2,
+					["padding"] = -4,
+					["fadeoutalpha"] = 0,
+					["keyring"] = true,
+				},
+				["Infeh - Twisting Nether"] = {
+					["version"] = 3,
+					["fadeout"] = true,
+					["position"] = {
+						["y"] = 82.5650253295899,
+						["x"] = -307.804565429688,
+						["point"] = "BOTTOM",
+					},
+					["padding"] = -4,
+					["rows"] = 3,
+					["fadeoutalpha"] = 0,
+					["keyring"] = true,
+				},
+				["Greenzuriz - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Donchyo - Shattered Hand"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixikin - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Donch - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixiyo - Twisting Nether"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Gnomalock - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Kroxi - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Bawsi - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixidh - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Bawsie - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Kriximonk - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixiyo - Lightning's Blade"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Donch - Shattered Hand"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Asdasdasdfaf - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Lowerboost - Lightbringer"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Donch - Crushridge"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["druid2.0"] = {
+					["fadeout"] = true,
+					["position"] = {
+						["y"] = 68,
+						["x"] = -342.932052612305,
+						["point"] = "BOTTOM",
+					},
+					["version"] = 3,
+					["rows"] = 2,
+					["fadeoutalpha"] = 0,
+					["keyring"] = true,
+				},
+				["Krixi - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Nyrith - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Zetiz - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Treefiddy - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Kroxi - Crushridge"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Namji - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Skullflower"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Infaye - Twisting Nether"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 1.50003051757813,
+						["x"] = 58.4999389648438,
+						["point"] = "CENTER",
+					},
+				},
+				["Spacegoatx - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Default"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Líttle - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["LophisKrixi"] = {
+					["rows"] = 5,
+					["fadeoutdelay"] = 0,
+					["keyring"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 101.95694732666,
+						["growVertical"] = "UP",
+						["point"] = "RIGHT",
+						["scale"] = 1.25,
+						["x"] = -41.2497253417969,
+					},
+					["fadeout"] = true,
+					["padding"] = -4,
+					["fadeoutalpha"] = 0,
+				},
+				["Krixiyo - Blackmoore"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Zuriz - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Krixiswag - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Memeinhaler - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -5231,6 +5985,12 @@ Bartender4DB = {
 					["skin"] = {
 						["ID"] = "Apathy",
 					},
+					["rows"] = 2,
+					["padding"] = -5,
+					["visibility"] = {
+						["overridebar"] = false,
+						["vehicleui"] = false,
+					},
 					["position"] = {
 						["y"] = 53.7120742797852,
 						["x"] = -109.254577636719,
@@ -5238,12 +5998,6 @@ Bartender4DB = {
 						["scale"] = 1,
 						["growHorizontal"] = "LEFT",
 					},
-					["padding"] = -5,
-					["visibility"] = {
-						["vehicleui"] = false,
-						["overridebar"] = false,
-					},
-					["rows"] = 2,
 				},
 				["Infeh - Twisting Nether"] = {
 					["version"] = 3,
@@ -5255,8 +6009,8 @@ Bartender4DB = {
 					},
 					["padding"] = -5,
 					["visibility"] = {
-						["overridebar"] = false,
 						["vehicleui"] = false,
+						["overridebar"] = false,
 					},
 					["skin"] = {
 						["ID"] = "Apathy",
@@ -5270,12 +6024,13 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Memeinhaler - Grim Batol"] = {
+				["Donchyo - Shattered Hand"] = {
 					["version"] = 3,
 					["position"] = {
-						["x"] = -82.4999542236328,
-						["point"] = "CENTER",
-						["y"] = -14.9999847412109,
+						["y"] = 116,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
 					},
 				},
 				["Krixikin - Grim Batol"] = {
@@ -5303,11 +6058,11 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Krixiyo - Blackmoore"] = {
+				["Gnomalock - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = -14.9999847412109,
-						["x"] = -82.4999542236328,
+						["x"] = -82.5001068115235,
 						["point"] = "CENTER",
 					},
 				},
@@ -5328,29 +6083,28 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Gnomalock - Grim Batol"] = {
+				["Krixidh - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = -14.9999847412109,
-						["x"] = -82.5001068115235,
+						["x"] = -82.4999542236328,
 						["point"] = "CENTER",
 					},
 				},
 				["Bawsie - Grim Batol"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = -14.9999847412109,
 						["x"] = -82.5001068115235,
 						["point"] = "CENTER",
 					},
-					["version"] = 3,
 				},
-				["Líttle - Grim Batol"] = {
+				["Kriximonk - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
+						["y"] = -14.9999847412109,
+						["x"] = -82.4999542236328,
+						["point"] = "CENTER",
 					},
 				},
 				["Krixiyo - Lightning's Blade"] = {
@@ -5370,22 +6124,134 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
+				["Asdasdasdfaf - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.9999847412109,
+						["x"] = -82.4999542236328,
+						["point"] = "CENTER",
+					},
+				},
+				["Lowerboost - Lightbringer"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.9999847412109,
+						["x"] = -82.4999542236328,
+						["point"] = "CENTER",
+					},
+				},
+				["Donch - Crushridge"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.9999847412109,
+						["x"] = -82.5001068115235,
+						["point"] = "CENTER",
+					},
+				},
+				["druid2.0"] = {
+					["version"] = 3,
+					["skin"] = {
+						["ID"] = "Apathy",
+					},
+					["padding"] = -5,
+					["visibility"] = {
+						["vehicleui"] = false,
+						["overridebar"] = false,
+					},
+					["position"] = {
+						["y"] = 195.934692382813,
+						["x"] = -240.810516357422,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Krixi - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 116,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Nyrith - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 116,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Zetiz - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["y"] = 116,
+					},
+				},
+				["Treefiddy - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 116,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Kroxi - Crushridge"] = {
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["y"] = 116,
+					},
+				},
+				["Namji - Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["y"] = 116,
+					},
+				},
+				["Skullflower"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.9999847412109,
+						["x"] = -82.4999542236328,
+						["point"] = "CENTER",
+					},
+				},
+				["Infaye - Twisting Nether"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 14.2499694824219,
+						["x"] = -231.749862670898,
+						["point"] = "CENTER",
+					},
+				},
+				["Spacegoatx - Aggra (Português)"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 116,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
 				["Default"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 143,
 						["x"] = -460,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
 					},
-					["version"] = 3,
-				},
-				["Lowerboost - Lightbringer"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.9999847412109,
-						["x"] = -82.4999542236328,
-						["point"] = "CENTER",
-					},
 				},
 				["Grim Batol"] = {
 					["version"] = 3,
@@ -5395,144 +6261,33 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["druid2.0"] = {
-					["position"] = {
-						["y"] = 195.934692382813,
-						["x"] = -240.810516357422,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-					["version"] = 3,
-					["padding"] = -5,
-					["visibility"] = {
-						["overridebar"] = false,
-						["vehicleui"] = false,
-					},
-					["skin"] = {
-						["ID"] = "Apathy",
-					},
-				},
-				["Nyrith - Grim Batol"] = {
+				["Líttle - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
 						["x"] = -460,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
-					},
-				},
-				["Krixi - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Zetiz - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["y"] = 116,
-					},
-				},
-				["Treefiddy - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Kroxi - Crushridge"] = {
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["y"] = 116,
-					},
-				},
-				["Namji - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["scale"] = 1,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["y"] = 116,
-					},
-				},
-				["Skullflower"] = {
-					["position"] = {
-						["y"] = -14.9999847412109,
-						["x"] = -82.4999542236328,
-						["point"] = "CENTER",
-					},
-					["version"] = 3,
-				},
-				["Infaye - Twisting Nether"] = {
-					["position"] = {
-						["y"] = 14.2499694824219,
-						["x"] = -231.749862670898,
-						["point"] = "CENTER",
-					},
-					["version"] = 3,
-				},
-				["Spacegoatx - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Donch - Crushridge"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.9999847412109,
-						["x"] = -82.5001068115235,
-						["point"] = "CENTER",
-					},
-				},
-				["Asdasdasdfaf - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.9999847412109,
-						["x"] = -82.4999542236328,
-						["point"] = "CENTER",
-					},
-				},
-				["Kriximonk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.9999847412109,
-						["x"] = -82.4999542236328,
-						["point"] = "CENTER",
 					},
 				},
 				["LophisKrixi"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 146.300004037221,
 						["x"] = -363.563751337399,
 						["point"] = "BOTTOM",
 						["scale"] = 1.04999995231628,
 					},
+					["version"] = 3,
 					["padding"] = -5,
 					["visibility"] = {
-						["vehicleui"] = false,
 						["overridebar"] = false,
+						["vehicleui"] = false,
 					},
 					["skin"] = {
 						["ID"] = "Apathy",
 					},
 				},
-				["Krixidh - Grim Batol"] = {
+				["Krixiyo - Blackmoore"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = -14.9999847412109,
@@ -5556,766 +6311,11 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Donchyo - Shattered Hand"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-			},
-		},
-		["BagBar"] = {
-			["profiles"] = {
-				["Bawsi - Shattered Hand"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixidk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Zolution - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Menardiairl - Culte de la Rive noire"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["MONK"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Lilgaykrixi - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Daimtårta - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Kroxidps - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["LilGayKrixi"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -4.54617977142334,
-						["growVertical"] = "UP",
-						["point"] = "BOTTOM",
-						["x"] = 69.0848388671875,
-					},
-					["padding"] = -4,
-					["rows"] = 2,
-					["fadeoutalpha"] = 0,
-					["keyring"] = true,
-				},
-				["Infeh - Twisting Nether"] = {
-					["fadeout"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 82.5650253295899,
-						["x"] = -307.804565429688,
-						["point"] = "BOTTOM",
-					},
-					["fadeoutalpha"] = 0,
-					["rows"] = 3,
-					["padding"] = -4,
-					["keyring"] = true,
-				},
-				["Greenzuriz - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
 				["Memeinhaler - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
-						["x"] = 345,
-						["point"] = "BOTTOM",
-						["y"] = 38.5,
-					},
-				},
-				["Krixikin - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Donch - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixiyo - Twisting Nether"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixiyo - Blackmoore"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Kroxi - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Bawsi - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Gnomalock - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Bawsie - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Líttle - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixiyo - Lightning's Blade"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Donch - Shattered Hand"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Default"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Lowerboost - Lightbringer"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["druid2.0"] = {
-					["rows"] = 2,
-					["fadeout"] = true,
-					["keyring"] = true,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 68,
-						["x"] = -342.932052612305,
-						["point"] = "BOTTOM",
-					},
-					["fadeoutalpha"] = 0,
-				},
-				["Nyrith - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixi - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Zetiz - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Treefiddy - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Kroxi - Crushridge"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Namji - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Skullflower"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Infaye - Twisting Nether"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 1.50003051757813,
-						["x"] = 58.4999389648438,
-						["point"] = "CENTER",
-					},
-				},
-				["Spacegoatx - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Donch - Crushridge"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Asdasdasdfaf - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Kriximonk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["LophisKrixi"] = {
-					["fadeoutdelay"] = 0,
-					["padding"] = -4,
-					["fadeout"] = true,
-					["position"] = {
-						["y"] = 101.95694732666,
-						["growVertical"] = "UP",
-						["point"] = "RIGHT",
-						["scale"] = 1.25,
-						["x"] = -41.2497253417969,
-					},
-					["fadeoutalpha"] = 0,
-					["rows"] = 5,
-					["version"] = 3,
-					["keyring"] = true,
-				},
-				["Krixidh - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Zuriz - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Krixiswag - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Donchyo - Shattered Hand"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 38.5,
-						["x"] = 345,
-						["point"] = "BOTTOM",
-					},
-				},
-			},
-		},
-		["Vehicle"] = {
-			["profiles"] = {
-				["Bawsi - Shattered Hand"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Krixidk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Zolution - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Menardiairl - Culte de la Rive noire"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["MONK"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Lilgaykrixi - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Daimtårta - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Kroxidps - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["LilGayKrixi"] = {
-					["enabled"] = false,
-					["position"] = {
-						["y"] = -226.490446530425,
-						["x"] = 6.3935868979456,
-						["point"] = "LEFT",
-					},
-					["version"] = 3,
-					["skin"] = {
-						["ID"] = "Apathy",
-						["Backdrop"] = false,
-					},
-				},
-				["Infeh - Twisting Nether"] = {
-					["enabled"] = false,
-					["skin"] = {
-						["ID"] = "Apathy",
-						["Backdrop"] = false,
-					},
-					["version"] = 3,
-					["position"] = {
-						["y"] = -226.490446530425,
-						["x"] = 6.3935868979456,
-						["point"] = "LEFT",
-					},
-				},
-				["Greenzuriz - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Memeinhaler - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-						["y"] = 47.4999694824219,
-					},
-				},
-				["Krixikin - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Donch - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Krixiyo - Twisting Nether"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Krixiyo - Blackmoore"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Kroxi - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Bawsi - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Gnomalock - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Bawsie - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Líttle - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Krixiyo - Lightning's Blade"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Donch - Shattered Hand"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Default"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Lowerboost - Lightbringer"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["druid2.0"] = {
-					["enabled"] = false,
-					["version"] = 3,
-					["position"] = {
-						["y"] = -226.490446530425,
-						["x"] = 6.3935868979456,
-						["point"] = "LEFT",
-					},
-					["skin"] = {
-						["ID"] = "Apathy",
-						["Backdrop"] = false,
-					},
-				},
-				["Nyrith - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Krixi - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Zetiz - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Treefiddy - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Kroxi - Crushridge"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Namji - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Skullflower"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Infaye - Twisting Nether"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Spacegoatx - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Donch - Crushridge"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Asdasdasdfaf - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Kriximonk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["LophisKrixi"] = {
-					["enabled"] = false,
-					["skin"] = {
-						["ID"] = "Apathy",
-						["Backdrop"] = false,
-					},
-					["version"] = 3,
-					["position"] = {
-						["y"] = -226.490446530425,
-						["x"] = 6.3935868979456,
-						["point"] = "LEFT",
-					},
-				},
-				["Krixidh - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999694824219,
-						["x"] = 99.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
-				["Zuriz - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Krixiswag - Aggra (Português)"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
-						["point"] = "CENTER",
-					},
-				},
-				["Donchyo - Shattered Hand"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.4999542236328,
-						["x"] = 99.4998168945313,
+						["y"] = -14.9999847412109,
+						["x"] = -82.4999542236328,
 						["point"] = "CENTER",
 					},
 				},
@@ -6392,20 +6392,20 @@ Bartender4DB = {
 					["skin"] = {
 						["ID"] = "Apathy",
 					},
+					["fadeoutalpha"] = 0,
+					["padding"] = -6,
+					["visibility"] = {
+						["combat"] = false,
+						["possess"] = false,
+						["nocombat"] = false,
+						["pet"] = false,
+						["always"] = false,
+					},
 					["position"] = {
 						["y"] = -198.608520507813,
 						["x"] = 148.342559814453,
 						["point"] = "LEFT",
 					},
-					["padding"] = -6,
-					["visibility"] = {
-						["combat"] = false,
-						["possess"] = false,
-						["always"] = false,
-						["pet"] = false,
-						["nocombat"] = false,
-					},
-					["fadeoutalpha"] = 0,
 				},
 				["Infeh - Twisting Nether"] = {
 					["fadeoutalpha"] = 0,
@@ -6414,18 +6414,18 @@ Bartender4DB = {
 						["x"] = 148.342559814453,
 						["point"] = "LEFT",
 					},
-					["version"] = 3,
+					["skin"] = {
+						["ID"] = "Apathy",
+					},
 					["padding"] = -6,
 					["visibility"] = {
 						["combat"] = false,
 						["possess"] = false,
+						["always"] = false,
 						["nocombat"] = false,
 						["pet"] = false,
-						["always"] = false,
 					},
-					["skin"] = {
-						["ID"] = "Apathy",
-					},
+					["version"] = 3,
 				},
 				["Greenzuriz - Aggra (Português)"] = {
 					["version"] = 3,
@@ -6435,12 +6435,12 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Memeinhaler - Grim Batol"] = {
+				["Donchyo - Shattered Hand"] = {
 					["version"] = 3,
 					["position"] = {
-						["x"] = -460,
-						["point"] = "BOTTOM",
 						["y"] = 116,
+						["x"] = -120,
+						["point"] = "BOTTOM",
 					},
 				},
 				["Krixikin - Grim Batol"] = {
@@ -6467,7 +6467,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Krixiyo - Blackmoore"] = {
+				["Gnomalock - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
@@ -6491,7 +6491,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Gnomalock - Grim Batol"] = {
+				["Krixidh - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
@@ -6507,11 +6507,11 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Líttle - Grim Batol"] = {
+				["Kriximonk - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
-						["x"] = -120,
+						["x"] = -460,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -6531,11 +6531,11 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Default"] = {
+				["Asdasdasdfaf - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 143,
-						["x"] = -120,
+						["y"] = 116,
+						["x"] = -460,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -6547,35 +6547,35 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Grim Batol"] = {
+				["Donch - Crushridge"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 143,
+						["y"] = 116,
 						["x"] = -460,
 						["point"] = "BOTTOM",
 					},
 				},
 				["druid2.0"] = {
-					["fadeoutalpha"] = 0,
+					["version"] = 3,
+					["skin"] = {
+						["ID"] = "Apathy",
+					},
 					["position"] = {
 						["y"] = -99.2244262695313,
 						["x"] = 210.886093139648,
 						["point"] = "LEFT",
 					},
-					["version"] = 3,
 					["padding"] = -6,
 					["visibility"] = {
 						["combat"] = false,
 						["possess"] = false,
+						["nocombat"] = false,
 						["pet"] = false,
 						["always"] = false,
-						["nocombat"] = false,
 					},
-					["skin"] = {
-						["ID"] = "Apathy",
-					},
+					["fadeoutalpha"] = 0,
 				},
-				["Nyrith - Grim Batol"] = {
+				["Krixi - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
@@ -6583,7 +6583,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Krixi - Grim Batol"] = {
+				["Nyrith - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
@@ -6647,27 +6647,27 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Donch - Crushridge"] = {
+				["Default"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 116,
+						["y"] = 143,
+						["x"] = -120,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Grim Batol"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 143,
 						["x"] = -460,
 						["point"] = "BOTTOM",
 					},
 				},
-				["Asdasdasdfaf - Grim Batol"] = {
+				["Líttle - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Kriximonk - Grim Batol"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
+						["x"] = -120,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -6678,22 +6678,22 @@ Bartender4DB = {
 						["x"] = -363.588653564453,
 						["point"] = "BOTTOM",
 					},
-					["skin"] = {
-						["ID"] = "Apathy",
-					},
+					["fadeoutalpha"] = 0,
 					["padding"] = -6,
 					["visibility"] = {
-						["always"] = false,
 						["combat"] = false,
-						["pet"] = false,
 						["possess"] = false,
 						["overridebar"] = false,
 						["nocombat"] = false,
+						["always"] = false,
+						["pet"] = false,
 						["vehicleui"] = false,
 					},
-					["fadeoutalpha"] = 0,
+					["skin"] = {
+						["ID"] = "Apathy",
+					},
 				},
-				["Krixidh - Grim Batol"] = {
+				["Krixiyo - Blackmoore"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
@@ -6717,11 +6717,11 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Donchyo - Shattered Hand"] = {
+				["Memeinhaler - Grim Batol"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 116,
-						["x"] = -120,
+						["x"] = -460,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -6729,6 +6729,15 @@ Bartender4DB = {
 		},
 		["RepBar"] = {
 			["profiles"] = {
+				["Default"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 65,
+						["x"] = -516,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Grim Batol"] = {
 					["enabled"] = true,
 					["version"] = 3,
@@ -6737,15 +6746,6 @@ Bartender4DB = {
 						["x"] = -516,
 						["point"] = "BOTTOM",
 					},
-				},
-				["Default"] = {
-					["enabled"] = true,
-					["position"] = {
-						["y"] = 65,
-						["x"] = -516,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
 				},
 				["MONK"] = {
 					["enabled"] = true,
@@ -6775,30 +6775,30 @@ Bartender4DB = {
 		["Kroxi - Grim Batol"] = "LophisKrixi",
 		["Namji - Grim Batol"] = "LophisKrixi",
 		["Bawsie - Grim Batol"] = "LophisKrixi",
-		["Memeinhaler - Grim Batol"] = "druid2.0",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Krixidh - Grim Batol"] = "LophisKrixi",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Krixikin - Grim Batol"] = "LophisKrixi",
 		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Zolution - Grim Batol"] = "LophisKrixi",
 		["Nyrith - Grim Batol"] = "LophisKrixi",
-		["Zetiz - Grim Batol"] = "LophisKrixi",
 		["Infx - Twisting Nether"] = "Infeh - Twisting Nether",
 		["Treefiddy - Aggra (Português)"] = "Infeh - Twisting Nether",
 		["Kroxi - Crushridge"] = "Infeh - Twisting Nether",
-		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
+		["Bawsi - Aggra (Português)"] = "Infeh - Twisting Nether",
+		["Kriximonk - Grim Batol"] = "LophisKrixi",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Líttle - Grim Batol"] = "LophisKrixi",
 		["Spacegoatx - Aggra (Português)"] = "Infeh - Twisting Nether",
 		["Krixi - Grim Batol"] = "LophisKrixi",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
-		["Kriximonk - Grim Batol"] = "LophisKrixi",
-		["Bawsi - Aggra (Português)"] = "Infeh - Twisting Nether",
-		["Zolution - Grim Batol"] = "LophisKrixi",
+		["Líttle - Grim Batol"] = "LophisKrixi",
+		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
+		["Zetiz - Grim Batol"] = "LophisKrixi",
 		["Zuriz - Grim Batol"] = "LophisKrixi",
 		["Krixiswag - Aggra (Português)"] = "Infeh - Twisting Nether",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Memeinhaler - Grim Batol"] = "druid2.0",
 	},
 	["profiles"] = {
 		["Bawsi - Shattered Hand"] = {
@@ -6848,12 +6848,12 @@ Bartender4DB = {
 				["radius"] = 80,
 				["hide"] = true,
 			},
-			["focuscastmodifier"] = false,
+			["selfcastmodifier"] = false,
 			["buttonlock"] = true,
 			["selfcastrightclick"] = true,
 			["blizzardVehicle"] = true,
 			["onkeydown"] = true,
-			["selfcastmodifier"] = false,
+			["focuscastmodifier"] = false,
 		},
 		["Infeh - Twisting Nether"] = {
 			["focuscastmodifier"] = false,
@@ -6862,24 +6862,24 @@ Bartender4DB = {
 				["radius"] = 80,
 				["hide"] = true,
 			},
-			["selfcastmodifier"] = false,
+			["snapping"] = false,
 			["buttonlock"] = true,
 			["selfcastrightclick"] = true,
 			["blizzardVehicle"] = true,
 			["onkeydown"] = true,
-			["snapping"] = false,
+			["selfcastmodifier"] = false,
 		},
 		["Greenzuriz - Aggra (Português)"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Memeinhaler - Grim Batol"] = {
+		["Krixikin - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Krixikin - Grim Batol"] = {
+		["Donch - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -6894,7 +6894,7 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Namji - Grim Batol"] = {
+		["Kriximonk - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -6904,12 +6904,12 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Bawsi - Aggra (Português)"] = {
+		["Namji - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Krixiyo - Lightning's Blade"] = {
+		["Krixidh - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -6919,20 +6919,12 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["druid2.0"] = {
-			["minimapIcon"] = {
-				["minimapPos"] = 177.121359987118,
-				["radius"] = 80,
-				["hide"] = true,
-			},
-			["selfcastrightclick"] = true,
-			["blizzardVehicle"] = true,
+		["Líttle - Grim Batol"] = {
 			["focuscastmodifier"] = false,
-			["buttonlock"] = true,
-			["onkeydown"] = true,
-			["selfcastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
 		},
-		["Krixidh - Grim Batol"] = {
+		["Krixiyo - Lightning's Blade"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -6942,7 +6934,7 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Default"] = {
+		["Asdasdasdfaf - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -6952,22 +6944,30 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Grim Batol"] = {
+		["Zetiz - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Donch - Crushridge"] = {
+		["druid2.0"] = {
+			["focuscastmodifier"] = false,
+			["selfcastmodifier"] = false,
+			["buttonlock"] = true,
+			["selfcastrightclick"] = true,
+			["blizzardVehicle"] = true,
+			["minimapIcon"] = {
+				["minimapPos"] = 177.121359987118,
+				["radius"] = 80,
+				["hide"] = true,
+			},
+			["onkeydown"] = true,
+		},
+		["Krixi - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
 		["Nyrith - Grim Batol"] = {
-			["focuscastmodifier"] = false,
-			["blizzardVehicle"] = true,
-			["outofrange"] = "hotkey",
-		},
-		["Krixi - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -7004,34 +7004,35 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Zetiz - Grim Batol"] = {
+		["Donch - Crushridge"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Asdasdasdfaf - Grim Batol"] = {
+		["Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Líttle - Grim Batol"] = {
+		["Default"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
 		["LophisKrixi"] = {
-			["focuscastmodifier"] = false,
 			["selfcastmodifier"] = false,
-			["buttonlock"] = true,
 			["selfcastrightclick"] = true,
+			["blizzardVehicle"] = true,
+			["focuscastmodifier"] = false,
+			["buttonlock"] = true,
+			["onkeydown"] = true,
 			["minimapIcon"] = {
 				["minimapPos"] = 177.121359987118,
 				["radius"] = 80,
 				["hide"] = true,
 			},
-			["onkeydown"] = true,
 		},
-		["Kriximonk - Grim Batol"] = {
+		["Bawsi - Aggra (Português)"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -7046,7 +7047,7 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Donch - Grim Batol"] = {
+		["Memeinhaler - Grim Batol"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",

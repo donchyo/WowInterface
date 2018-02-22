@@ -1,4 +1,4 @@
-local versionMajor, versionRev, L, ADDON, T, ORI = 3, 90, newproxy(true), ...
+local versionMajor, versionRev, L, ADDON, T, ORI = 3, 91, newproxy(true), ...
 local api, OR_Rings, OR_ModifierLockState, TL, EV, OR_LoadedState = {ext={ActionBook=T.ActionBook},lang=L}, {}, nil, T.L, T.Evie, 1
 local defaultConfig = {ClickActivation=false, IndicationOffsetX=0, IndicationOffsetY=0, RingAtMouse=false, RingScale=1, ClickPriority=true, CenterAction=false, MouseBucket=1, NoClose=false, NoCloseOnSlice=false, SliceBinding=false, SliceBindingString="1 2 3 4 5 6 7 8 9 0", SelectedSliceBind="", PrimaryButton="BUTTON4", SecondaryButton="BUTTON5", OpenNestedRingButton="BUTTON3", ScrollNestedRingUpButton="", ScrollNestedRingDownButton="", UseDefaultBindings=true}
 local configRoot, configInstance, activeProfile, PersistentStorageInfo, optionValidators, optionsMeta = {}, nil, nil, {}, {}, {__index=defaultConfig}
@@ -88,6 +88,7 @@ do -- Click dispatcher
 		ORL_KnownCollections, ORL_StoredCA = newtable(), newtable()
 		collections, ctokens, rotation, rtokens, fcIgnore, rotIgnore, emptyTable = newtable(), newtable(), newtable(), newtable(), newtable(), newtable(), newtable()
 		modState, sizeSq, bindProxy, sliceProxy, overProxy = "", 16*9001^2, self:GetFrameRef("bindProxy"), self:GetFrameRef("sliceBindProxy"), self:GetFrameRef("overBindProxy")
+		sliceBindState = newtable()
 		AB, KR = self:GetFrameRef("AB"), self:GetFrameRef("KR")
 
 		PrepareCollection = [==[-- PrepareCollection
@@ -162,6 +163,7 @@ do -- Click dispatcher
 		ORL_OpenRing2 = [[-- OpenRing2
 			sliceProxy:ClearBindings()
 			if activeRing.SliceBinding then
+				wipe(sliceBindState)
 				local prefix = activeRing.bind and not leftActivation and activeRing.bind:match("^(.-)[^-]*$") or "";
 				for i,b in pairs(activeRing.SliceBinding) do
 					if openCollection[i] then
@@ -248,8 +250,12 @@ do -- Click dispatcher
 				return control:RunFor(self, ORL_OnClick, leftActivation and "close" or "use", down);
 			elseif activeRing and button:match("slice(%d+)") then
 				local b = tonumber(button:match("slice(%d+)"))
-				if openCollection and openCollection[b] and not down then
-					return control:RunFor(self, ORL_PerformSliceAction, b, activeRing.NoCloseOnSlice)
+				if openCollection and openCollection[b] then
+					if down then
+						sliceBindState[b] = true
+					elseif sliceBindState[b] then
+						return control:RunFor(self, ORL_PerformSliceAction, b, activeRing.NoCloseOnSlice)
+					end
 				end
 			elseif button:match("Button%d+") then
 				-- The click-capturing overlay captures all mouse clicks, including those used in proper bindings
@@ -742,10 +748,14 @@ function api:SetRingBinding(ringName, bind)
 	local obind = api:GetRingBinding(ringName)
 	configInstance.Bindings[ringName] = bind
 	for i=1,#OR_Rings do
-		local ikey, cbind, _, over = OR_Rings[i], api:GetRingBinding(OR_Rings[i]);
+		local ikey = OR_Rings[i]
+		local cbind = api:GetRingBinding(ikey)
 		if ikey ~= ringName and (cbind == bind or cbind == obind) then
-			if over and cbind == bind and cbind then
+			if cbind == bind and cbind then
 				configInstance.Bindings[ikey] = nil
+				if api:GetRingBinding(ikey) == bind then
+					configInstance.Bindings[ikey] = false
+				end
 			end
 			OR_SyncRing(ikey)
 		end

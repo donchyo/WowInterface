@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["ChatEditHistory"] = {
-		"/g idk", -- [1]
-		"/g its a good reason to  go ", -- [2]
-		"/wa", -- [3]
-		"/p will you invis anything?", -- [4]
-		"/p okay", -- [5]
-		"/p nice meme my dude", -- [6]
-		"/p run", -- [7]
-		"/p this will pull", -- [8]
-		"/p ?", -- [9]
-		"/p thanks for the run :)", -- [10]
-		"/cw Dewildance-TheMaelstrom |cffffff00|Hachievement:12110:Player-1303-0478DE10:1:11:30:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [11]
-		"/cw Idahoe-Aszune |cffffff00|Hachievement:12110:Player-1303-0478DE10:1:11:30:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [12]
-		"/cw Wipeshot-Blackmoore |cffffff00|Hachievement:12110:Player-1303-0478DE10:1:11:30:17:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Argus the Unmaker]|h|r", -- [13]
-		"/raid r", -- [14]
-		"/g tjenare", -- [15]
-		"/g har du gjort argus den här veckan på shamanen?", -- [16]
-		"/g tänkte göra några", -- [17]
-		"/g om du vill göra", -- [18]
-		"/g så du kan få en trinket :P", -- [19]
-		"/g ska bara gå på toa", -- [20]
+		" the tank keeps pulling", -- [1]
+		" when mobs are on 30%", -- [2]
+		" whats bolstering", -- [3]
+		" [02:11:14] To [Backpaddl]: the tank has mythic tier gear [02:11:32] [P] [Lozi-Frostmane]: ok HEALER [02:11:40] [P] [Lozi-Frostmane]: Main raider IO 5K [02:11:56] [P] [Lozi-Frostmane]: IF I die im screen shottin it", -- [4]
+		" https://i.imgur.com/PtvpqI5.png", -- [5]
+		" NOPE", -- [6]
+		" easy p1 wipe on last boss", -- [7]
+		" you know", -- [8]
+		" i had hopes", -- [9]
+		" its over atleast", -- [10]
+		" hahaah", -- [11]
+		" |cffa335ee|Hitem:142173::::::::110:264::16:3:3536:1572:3337:::|h[Ring of Collapsing Futures]|h|r", -- [12]
+		"/cw Talinsghor-Frostmane i got my 15 done", -- [13]
+		"/cw Talinsghor-Frostmane alli wanted :)", -- [14]
+		" na", -- [15]
+		" me", -- [16]
+		"/p thanks for the run", -- [17]
+		"/cw Drizztthepal-Antonidas can you put wisdom on me instead of the dead guy? :)", -- [18]
+		"/cw Drizztthepal-Antonidas thanks", -- [19]
+		"/raid release", -- [20]
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 }

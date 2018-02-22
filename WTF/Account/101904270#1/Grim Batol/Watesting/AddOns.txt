@@ -65,8 +65,8 @@ BigWigs_WarlordsOfDraenor: disabled
 BigWigs_WrathOfTheLichKing: disabled
 BigWigs_Countdown_Overwatch: disabled
 Broker_Currency: disabled
-!BugGrabber: disabled
-BugSack: disabled
+!BugGrabber: enabled
+BugSack: enabled
 BulkBuy: disabled
 ChocolateBar: disabled
 ChocolateBar_Options: disabled
@@ -115,7 +115,7 @@ DialogKey: disabled
 Dominos_Quest: disabled
 EnemyGrid: disabled
 ErrorFilter: disabled
-EventTraceReloaded: enabled
+EventTraceReloaded: disabled
 ExRT: disabled
 FlashTaskBar: disabled
 GarrisonMissonEnhanced: disabled
@@ -280,3 +280,8 @@ ElvUI_Config: disabled
 ElvUI: disabled
 StayUnsheathed: disabled
 vexrunes: disabled
+Keystones: disabled
+Quartz: disabled
+ViragDevTool: disabled
+TrufiGCD: disabled
+Hack: disabled
