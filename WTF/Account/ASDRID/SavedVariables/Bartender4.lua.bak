@@ -3351,14 +3351,14 @@ Bartender4DB = {
 							["skin"] = {
 								["ID"] = "Apathy",
 							},
+							["enabled"] = true,
 							["version"] = 3,
-							["hidehotkey"] = true,
 							["position"] = {
-								["y"] = -58.254326077451,
+								["y"] = 136.82440980675,
 								["growVertical"] = "UP",
-								["point"] = "CENTER",
+								["point"] = "BOTTOMRIGHT",
 								["scale"] = 1.29999995231628,
-								["x"] = -30.9737880985413,
+								["x"] = -282.099600592657,
 							},
 							["padding"] = -6,
 							["hidemacrotext"] = true,

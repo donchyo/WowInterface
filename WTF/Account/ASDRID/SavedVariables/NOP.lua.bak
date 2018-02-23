@@ -11,16 +11,16 @@ NewOpenablesProfile = {
 			["itemID"] = 147721,
 		},
 		["Krixidk - Grim Batol"] = {
-			["itemID"] = 138785,
+			["itemID"] = 147720,
 		},
 		["Zuriz - Grim Batol"] = {
 			["itemID"] = 151245,
 		},
+		["Krixikin - Grim Batol"] = {
+			["itemID"] = 147718,
+		},
 		["Nyrith - Grim Batol"] = {
 			["itemID"] = 147581,
-		},
-		["Krixikin - Grim Batol"] = {
-			["itemID"] = 147721,
 		},
 	},
 	["profileKeys"] = {
@@ -68,7 +68,7 @@ NewOpenablesProfile = {
 				"UIParent", -- [2]
 				"TOPLEFT", -- [3]
 			},
-			["version"] = "|cFFFFFFFF08.32 01.02.2018 use |cFFFF00FF/nop|cFFFFFFFF",
+			["version"] = "|cFFFFFFFF08.34 21.02.2018 use |cFFFF00FF/nop|cFFFFFFFF",
 			["lockButton"] = true,
 		},
 	},

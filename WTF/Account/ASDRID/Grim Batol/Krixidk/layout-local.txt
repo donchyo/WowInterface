@@ -1,11 +1,4 @@
 Version: 1
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: LEFT
-X: 106
-Y: 148
-W: 128
-H: 64
 Frame: ColorPickerFrame
 FrameLevel: 21
 Anchor: CENTER
@@ -27,6 +20,13 @@ X: 324
 Y: -102
 W: 326
 H: 505
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: LEFT
+X: 106
+Y: 148
+W: 267
+H: 293
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: RIGHT
@@ -34,3 +34,10 @@ X: -17
 Y: 180
 W: 370
 H: 110
+Frame: DeathNoteFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -158
+Y: 5
+W: 861
+H: 515

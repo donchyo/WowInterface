@@ -1,6 +1,5 @@
 VER 3 0000000000000390 "!!dump" "INV_MISC_QUESTIONMARK"
-/dump UnitSpellHaste("player")
-/dump GetCombatRatingBonus(CR_HASTE_SPELL)
+/dump GetSpellInfo(233669)
 END
 VER 3 000000000000038E "!_1test" "INV_MISC_QUESTIONMARK"
 /run itemIcon = GetItemIcon(40771);print("itemIcon :", itemIcon)

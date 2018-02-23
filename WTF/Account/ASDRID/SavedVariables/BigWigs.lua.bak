@@ -24,6 +24,8 @@ BigWigs3DB = {
 		},
 	},
 	["namespaces"] = {
+		["BigWigs_Bosses_Hymdall"] = {
+		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Krixidh - Grim Batol"] = {
@@ -34,9 +36,9 @@ BigWigs3DB = {
 				["Default"] = {
 					["posx"] = 302.310968308986,
 					["fontSize"] = 11.0000009536743,
+					["font"] = "Friz Quadrata TT",
 					["fontOutline"] = "",
 					["posy"] = 654.933261744183,
-					["font"] = "Friz Quadrata TT",
 				},
 				["DEMONHUNTER"] = {
 					["posx"] = 121.688566965546,
@@ -93,6 +95,8 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_Ivanyr"] = {
+		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Bosses_The Coven of Shivarra"] = {
@@ -119,7 +123,11 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_Glazer"] = {
+		},
 		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Bosses_Vault of the Wardens Trash"] = {
 		},
 		["BigWigs_Bosses_Kin'garoth"] = {
 			["profiles"] = {
@@ -130,6 +138,16 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_Inquisitor Tormentorum"] = {
+		},
+		["BigWigs_Bosses_Tirathon Saltheril"] = {
+		},
+		["BigWigs_Bosses_Advisor Vandros"] = {
+		},
+		["BigWigs_Bosses_Corstilax"] = {
+		},
+		["BigWigs_Bosses_Naltira"] = {
+		},
 		["BigWigs_Bosses_Aggramar"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -139,6 +157,12 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_General Xakal"] = {
+		},
+		["BigWigs_Bosses_Hyrja"] = {
+		},
+		["BigWigs_Bosses_The Arcway Trash"] = {
+		},
 		["BigWigs_Plugins_Victory"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -147,12 +171,25 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_Helya"] = {
+		},
 		["BigWigs_Bosses_Argus the Unmaker"] = {
 			["profiles"] = {
 				["Default"] = {
 					[257296] = 98819,
 				},
 			},
+		},
+		["BigWigs_Bosses_Maw of Souls Trash"] = {
+		},
+		["BigWigs_Bosses_Krosus"] = {
+			["profiles"] = {
+				["Default"] = {
+					["smashingBridge"] = 98819,
+				},
+			},
+		},
+		["BigWigs_Bosses_Halls of Valor Trash"] = {
 		},
 		["BigWigs_Bosses_Fallen Avatar"] = {
 			["profiles"] = {
@@ -197,6 +234,17 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_Odyn"] = {
+		},
+		["BigWigs_Bosses_Maiden of Virtue"] = {
+			["profiles"] = {
+				["Default"] = {
+					[227789] = 0,
+				},
+			},
+		},
+		["BigWigs_Bosses_God-King Skovald"] = {
+		},
 		["BigWigs_Bosses_Felhounds of Sargeras"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -204,10 +252,81 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Krosus"] = {
+		["BigWigs_Bosses_Ymiron"] = {
+		},
+		["BigWigs_Bosses_Gul'dan"] = {
 			["profiles"] = {
 				["Default"] = {
-					["smashingBridge"] = 98819,
+					[206896] = 34051,
+				},
+			},
+		},
+		["BigWigs_Bosses_Fenryr"] = {
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Krixidh - Grim Batol"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+				["Default"] = {
+					["fontSize"] = 20,
+					["posx"] = 985.06712878542,
+					["width"] = 170.22233581543,
+					["font"] = "Expressway",
+					["lock"] = true,
+					["height"] = 127.999969482422,
+					["posy"] = 513.777557267094,
+				},
+				["DEMONHUNTER"] = {
+					["posx"] = 1055.46712458925,
+					["fontSize"] = 20,
+					["font"] = "Friz Quadrata TT",
+					["posy"] = 257.066635068259,
+				},
+				["Skullflower"] = {
+					["posx"] = 351.999834912349,
+					["posy"] = 260.977697291637,
+					["font"] = "Friz Quadrata TT",
+					["height"] = 120.000007629395,
+				},
+				["Grim Batol"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Krixidh - Grim Batol"] = {
+					["font"] = "Friz Quadrata TT",
+					["fontSize"] = 20,
+				},
+				["Default"] = {
+					["fontSize"] = 20,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 817.688525480713,
+					["BWEmphasizeMessageAnchor_y"] = 556.17784770859,
+					["BWMessageAnchor_y"] = 554.844791147421,
+					["BWMessageAnchor_x"] = 757.689066166335,
+					["growUpwards"] = true,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 484.088789505433,
+					["font"] = "Expressway",
+					["BWEmphasizeMessageAnchor_x"] = 574.933461825043,
+					["displaytime"] = 2.5,
+				},
+				["DEMONHUNTER"] = {
+					["fontSize"] = 20,
+					["font"] = "Friz Quadrata TT",
+				},
+				["Skullflower"] = {
+					["outline"] = "OUTLINE",
+					["fontSize"] = 20,
+					["BWMessageAnchor_y"] = 620.800015032291,
+					["BWMessageAnchor_x"] = 608.711212656235,
+					["font"] = "Expressway",
+					["growUpwards"] = false,
+				},
+				["Grim Batol"] = {
+					["font"] = "Friz Quadrata TT",
+					["fontSize"] = 20,
 				},
 			},
 		},
@@ -245,25 +364,6 @@ BigWigs3DB = {
 						},
 					},
 					["barColor"] = {
-						["BigWigs_Bosses_Argus the Unmaker"] = {
-							[257296] = {
-								0.345098039215686, -- [1]
-								1, -- [2]
-								0, -- [3]
-							},
-						},
-						["BigWigs_Bosses_Grand Magistrix Elisande"] = {
-							[208807] = {
-								0.952941176470588, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-							[209973] = {
-								1, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-						},
 						["BigWigs_Bosses_Antoran High Command"] = {
 							[244625] = {
 								0.435294117647059, -- [1]
@@ -290,28 +390,11 @@ BigWigs3DB = {
 								0, -- [3]
 							},
 						},
-						["BigWigs_Bosses_Felhounds of Sargeras"] = {
-							[244056] = {
-								0.976470588235294, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-						},
-						["BigWigs_Bosses_The Coven of Shivarra"] = {
-							[253429] = {
-								0, -- [1]
-								0.141176470588235, -- [2]
-								1, -- [3]
-							},
-							[252861] = {
-								0.0784313725490196, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-							[246329] = {
+						["BigWigs_Bosses_Krosus"] = {
+							["smashingBridge"] = {
 								1, -- [1]
 								0, -- [2]
-								0.937254901960784, -- [3]
+								0.764705882352941, -- [3]
 							},
 						},
 						["BigWigs_Bosses_Star Augur Etraeus"] = {
@@ -333,13 +416,6 @@ BigWigs3DB = {
 								0.0705882352941177, -- [3]
 							},
 						},
-						["BigWigs_Plugins_Colors"] = {
-							["default"] = {
-								0.231372549019608, -- [1]
-								0.219607843137255, -- [2]
-								0.196078431372549, -- [3]
-							},
-						},
 						["BigWigs_Bosses_Kin'garoth"] = {
 							[246657] = {
 								0.623529411764706, -- [1]
@@ -355,32 +431,6 @@ BigWigs3DB = {
 								1, -- [1]
 								0, -- [2]
 								0, -- [3]
-							},
-						},
-						["BigWigs_Bosses_Varimathras"] = {
-							[244042] = {
-								0, -- [1]
-								0.925490196078432, -- [2]
-								1, -- [3]
-							},
-						},
-						["BigWigs_Bosses_Fallen Avatar"] = {
-							[236604] = {
-								0.894117647058824, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-						},
-						["BigWigs_Bosses_Kil'jaeden"] = {
-							[-15543] = {
-								0, -- [1]
-								1, -- [2]
-								0, -- [3]
-							},
-							[238999] = {
-								1, -- [1]
-								0, -- [2]
-								1, -- [3]
 							},
 						},
 						["BigWigs_Bosses_Aggramar"] = {
@@ -412,6 +462,53 @@ BigWigs3DB = {
 								0.0627450980392157, -- [3]
 							},
 						},
+						["BigWigs_Bosses_Argus the Unmaker"] = {
+							[257296] = {
+								0.345098039215686, -- [1]
+								1, -- [2]
+								0, -- [3]
+							},
+						},
+						["BigWigs_Bosses_Fallen Avatar"] = {
+							[236604] = {
+								0.894117647058824, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+						},
+						["BigWigs_Bosses_Felhounds of Sargeras"] = {
+							[244056] = {
+								0.976470588235294, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+						},
+						["BigWigs_Plugins_Colors"] = {
+							["default"] = {
+								0.231372549019608, -- [1]
+								0.219607843137255, -- [2]
+								0.196078431372549, -- [3]
+							},
+						},
+						["BigWigs_Bosses_Varimathras"] = {
+							[244042] = {
+								0, -- [1]
+								0.925490196078432, -- [2]
+								1, -- [3]
+							},
+						},
+						["BigWigs_Bosses_Grand Magistrix Elisande"] = {
+							[208807] = {
+								0.952941176470588, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+							[209973] = {
+								1, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+						},
 						["BigWigs_Bosses_Goroth"] = {
 							[233279] = {
 								0, -- [1]
@@ -419,29 +516,37 @@ BigWigs3DB = {
 								0.00784313725490196, -- [3]
 							},
 						},
-						["BigWigs_Bosses_Krosus"] = {
-							["smashingBridge"] = {
+						["BigWigs_Bosses_Kil'jaeden"] = {
+							[-15543] = {
+								0, -- [1]
+								1, -- [2]
+								0, -- [3]
+							},
+							[238999] = {
 								1, -- [1]
 								0, -- [2]
-								0.764705882352941, -- [3]
+								1, -- [3]
+							},
+						},
+						["BigWigs_Bosses_The Coven of Shivarra"] = {
+							[253429] = {
+								0, -- [1]
+								0.141176470588235, -- [2]
+								1, -- [3]
+							},
+							[252861] = {
+								0.0784313725490196, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+							[246329] = {
+								1, -- [1]
+								0, -- [2]
+								0.937254901960784, -- [3]
 							},
 						},
 					},
 					["barEmphasized"] = {
-						["BigWigs_Bosses_Argus the Unmaker"] = {
-							[257296] = {
-								0.0627450980392157, -- [1]
-								1, -- [2]
-							},
-						},
-						["BigWigs_Bosses_Grand Magistrix Elisande"] = {
-							[208807] = {
-								[3] = 0.764705882352941,
-							},
-							[209973] = {
-								[3] = 1,
-							},
-						},
 						["BigWigs_Bosses_Antoran High Command"] = {
 							[244625] = {
 								0, -- [1]
@@ -461,14 +566,18 @@ BigWigs3DB = {
 								0.984313725490196, -- [2]
 							},
 						},
-						["BigWigs_Bosses_Felhounds of Sargeras"] = {
-							[244056] = {
-								[3] = 0.988235294117647,
+						["BigWigs_Bosses_The Coven of Shivarra"] = {
+							[253429] = {
+								0, -- [1]
+								0.176470588235294, -- [2]
+								1, -- [3]
 							},
-						},
-						["BigWigs_Bosses_Krosus"] = {
-							["smashingBridge"] = {
-								[3] = 0.854901960784314,
+							[252861] = {
+								0.0431372549019608, -- [1]
+								[3] = 1,
+							},
+							[246329] = {
+								[3] = 0.952941176470588,
 							},
 						},
 						["BigWigs_Bosses_Star Augur Etraeus"] = {
@@ -481,12 +590,6 @@ BigWigs3DB = {
 								0.0274509803921569, -- [3]
 							},
 						},
-						["BigWigs_Plugins_Colors"] = {
-							["default"] = {
-								nil, -- [1]
-								0.984313725490196, -- [2]
-							},
-						},
 						["BigWigs_Bosses_Kin'garoth"] = {
 							[246657] = {
 								0.505882352941176, -- [1]
@@ -496,28 +599,6 @@ BigWigs3DB = {
 							[246833] = {
 								0.168627450980392, -- [1]
 								1, -- [2]
-							},
-						},
-						["BigWigs_Bosses_Varimathras"] = {
-							[244042] = {
-								0, -- [1]
-								0.992156862745098, -- [2]
-								0.909803921568627, -- [3]
-							},
-						},
-						["BigWigs_Bosses_Fallen Avatar"] = {
-							[236604] = {
-								0.964705882352941, -- [1]
-								[3] = 1,
-							},
-						},
-						["BigWigs_Bosses_Kil'jaeden"] = {
-							[-15543] = {
-								0, -- [1]
-								1, -- [2]
-							},
-							[238999] = {
-								[3] = 0.501960784313726,
 							},
 						},
 						["BigWigs_Bosses_Aggramar"] = {
@@ -544,34 +625,65 @@ BigWigs3DB = {
 								1, -- [2]
 							},
 						},
+						["BigWigs_Bosses_Argus the Unmaker"] = {
+							[257296] = {
+								0.0627450980392157, -- [1]
+								1, -- [2]
+							},
+						},
+						["BigWigs_Bosses_Fallen Avatar"] = {
+							[236604] = {
+								0.964705882352941, -- [1]
+								[3] = 1,
+							},
+						},
+						["BigWigs_Bosses_Felhounds of Sargeras"] = {
+							[244056] = {
+								[3] = 0.988235294117647,
+							},
+						},
+						["BigWigs_Plugins_Colors"] = {
+							["default"] = {
+								nil, -- [1]
+								0.984313725490196, -- [2]
+							},
+						},
+						["BigWigs_Bosses_Varimathras"] = {
+							[244042] = {
+								0, -- [1]
+								0.992156862745098, -- [2]
+								0.909803921568627, -- [3]
+							},
+						},
+						["BigWigs_Bosses_Grand Magistrix Elisande"] = {
+							[208807] = {
+								[3] = 0.764705882352941,
+							},
+							[209973] = {
+								[3] = 1,
+							},
+						},
 						["BigWigs_Bosses_Goroth"] = {
 							[233279] = {
 								0.133333333333333, -- [1]
 								1, -- [2]
 							},
 						},
-						["BigWigs_Bosses_The Coven of Shivarra"] = {
-							[253429] = {
+						["BigWigs_Bosses_Kil'jaeden"] = {
+							[-15543] = {
 								0, -- [1]
-								0.176470588235294, -- [2]
-								1, -- [3]
+								1, -- [2]
 							},
-							[252861] = {
-								0.0431372549019608, -- [1]
-								[3] = 1,
+							[238999] = {
+								[3] = 0.501960784313726,
 							},
-							[246329] = {
-								[3] = 0.952941176470588,
+						},
+						["BigWigs_Bosses_Krosus"] = {
+							["smashingBridge"] = {
+								[3] = 0.854901960784314,
 							},
 						},
 					},
-				},
-			},
-		},
-		["BigWigs_Bosses_Gul'dan"] = {
-			["profiles"] = {
-				["Default"] = {
-					[206896] = 34051,
 				},
 			},
 		},
@@ -590,20 +702,20 @@ BigWigs3DB = {
 					["BigWigsEmphasizeAnchor_width"] = 300.000061035156,
 				},
 				["Default"] = {
-					["BigWigsEmphasizeAnchor_y"] = 293.777301825445,
-					["emphasizeTime"] = 15,
 					["BigWigsAnchor_width"] = 166.222061157227,
-					["BigWigsEmphasizeAnchor_width"] = 180.889312744141,
-					["BigWigsEmphasizeAnchor_x"] = 826.489501518634,
 					["BigWigsAnchor_y"] = 294.577863301165,
-					["barStyle"] = "ElvUI",
 					["emphasizeGrowup"] = true,
 					["BigWigsAnchor_x"] = 998.045350668108,
-					["font"] = "Expressway",
+					["BigWigsEmphasizeAnchor_y"] = 293.777301825445,
+					["texture"] = "Skullflower",
 					["monochrome"] = false,
+					["BigWigsEmphasizeAnchor_x"] = 826.489501518634,
+					["emphasizeTime"] = 15,
+					["font"] = "Expressway",
+					["BigWigsEmphasizeAnchor_width"] = 180.889312744141,
+					["barStyle"] = "ElvUI",
 					["interceptMouse"] = false,
 					["emphasizeScale"] = 1,
-					["texture"] = "Skullflower",
 				},
 				["DEMONHUNTER"] = {
 					["BigWigsEmphasizeAnchor_y"] = 325.066484530777,
@@ -633,10 +745,10 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Maiden of Virtue"] = {
+		["BigWigs_Bosses_Varimathras"] = {
 			["profiles"] = {
 				["Default"] = {
-					[227789] = 0,
+					[244042] = 98983,
 				},
 			},
 		},
@@ -647,8 +759,8 @@ BigWigs3DB = {
 				},
 				["Default"] = {
 					["fontSize"] = 32,
-					["font"] = "Expressway",
 					["monochrome"] = false,
+					["font"] = "Expressway",
 				},
 				["DEMONHUNTER"] = {
 					["font"] = "Friz Quadrata TT",
@@ -658,13 +770,6 @@ BigWigs3DB = {
 				},
 				["Grim Batol"] = {
 					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Bosses_Varimathras"] = {
-			["profiles"] = {
-				["Default"] = {
-					[244042] = 98983,
 				},
 			},
 		},
@@ -675,36 +780,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Krixidh - Grim Batol"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-				["Default"] = {
-					["posx"] = 985.06712878542,
-					["fontSize"] = 20,
-					["lock"] = true,
-					["height"] = 127.999969482422,
-					["posy"] = 513.777557267094,
-					["font"] = "Expressway",
-					["width"] = 170.22233581543,
-				},
-				["DEMONHUNTER"] = {
-					["posx"] = 1055.46712458925,
-					["fontSize"] = 20,
-					["font"] = "Friz Quadrata TT",
-					["posy"] = 257.066635068259,
-				},
-				["Skullflower"] = {
-					["posx"] = 351.999834912349,
-					["posy"] = 260.977697291637,
-					["font"] = "Friz Quadrata TT",
-					["height"] = 120.000007629395,
-				},
-				["Grim Batol"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Bosses_Kil'jaeden"] = {
 			["profiles"] = {
@@ -715,45 +791,9 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Respawn"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Bosses_Harbaron"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Krixidh - Grim Batol"] = {
-					["font"] = "Friz Quadrata TT",
-					["fontSize"] = 20,
-				},
-				["Default"] = {
-					["BWEmphasizeMessageAnchor_x"] = 574.933461825043,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 817.688525480713,
-					["BWMessageAnchor_x"] = 757.689066166335,
-					["displaytime"] = 2.5,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 484.088789505433,
-					["font"] = "Expressway",
-					["BWEmphasizeMessageAnchor_y"] = 556.17784770859,
-					["BWMessageAnchor_y"] = 554.844791147421,
-					["growUpwards"] = true,
-					["fontSize"] = 20,
-				},
-				["DEMONHUNTER"] = {
-					["fontSize"] = 20,
-					["font"] = "Friz Quadrata TT",
-				},
-				["Skullflower"] = {
-					["outline"] = "OUTLINE",
-					["fontSize"] = 20,
-					["BWMessageAnchor_y"] = 620.800015032291,
-					["BWMessageAnchor_x"] = 608.711212656235,
-					["font"] = "Expressway",
-					["growUpwards"] = false,
-				},
-				["Grim Batol"] = {
-					["font"] = "Friz Quadrata TT",
-					["fontSize"] = 20,
-				},
-			},
 		},
 	},
 	["discord"] = 15,

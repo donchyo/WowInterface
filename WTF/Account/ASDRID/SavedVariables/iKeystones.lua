@@ -2,15 +2,15 @@
 iKeystonesDB = {
 	["Player-1303-042451A8"] = {
 		["name"] = "Krixidk",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 25,
 		["class"] = "DEATHKNIGHT",
 		["canLoot"] = false,
 		["key"] = {
 			["map"] = 210,
 			["affix4"] = 11,
 			["level"] = 23,
-			["affix10"] = 10,
 			["affix7"] = 14,
+			["affix10"] = 10,
 		},
 		["server"] = "Grim Batol",
 	},
@@ -85,15 +85,15 @@ iKeystonesDB = {
 	},
 	["Player-1303-04772A8A"] = {
 		["name"] = "Krixikin",
-		["maxCompleted"] = 0,
+		["maxCompleted"] = 15,
 		["class"] = "DRUID",
 		["canLoot"] = false,
 		["key"] = {
 			["map"] = 227,
 			["affix4"] = 11,
 			["level"] = 18,
-			["affix10"] = 10,
 			["affix7"] = 14,
+			["affix10"] = 10,
 		},
 		["server"] = "Grim Batol",
 	},

@@ -627,12 +627,12 @@ TidyPlatesThreatDB = {
 			["uniqueSettings"] = {
 				[33] = {
 					["name"] = "Fel Explosives",
+					["scale"] = 1.4,
+					["overrideScale"] = true,
+					["icon"] = 135799,
 					["color"] = {
 						["g"] = 0,
 					},
-					["scale"] = 1.4,
-					["icon"] = 135799,
-					["overrideScale"] = true,
 				},
 				[34] = {
 				},

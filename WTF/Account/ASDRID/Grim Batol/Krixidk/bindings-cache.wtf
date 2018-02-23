@@ -29,16 +29,16 @@ bind SHIFT-6 CLICK BT4Button33:LeftButton
 bind SHIFT-MOUSEWHEELUP MACRO TSMMacro
 bind SHIFT-MOUSEWHEELDOWN MACRO TSMMacro
 bind F1 BONUSACTIONBUTTON1
-bind F2 CLICK BT4Button91:LeftButton
-bind F3 CLICK BT4Button90:LeftButton
-bind F4 CLICK BT4Button89:LeftButton
+bind F2 NONE
+bind F3 NONE
+bind F4 NONE
 bind F5 NONE
 bind G CLICK BT4Button22:LeftButton
 bind F CLICK BT4Button79:LeftButton
 bind F8 NONE
 bind F9 NONE
 bind F10 CLICK BT4Button112:LeftButton
-bind F11 CLICK BT4Button109:LeftButton
+bind F11 NONE
 bind F12 CLICK BT4Button49:LeftButton
 bind SHIFT-P TOGGLECOLLECTIONSMOUNTJOURNAL
 bind SHIFT-O NONE
@@ -64,7 +64,7 @@ bind ALT-2 ACTIONBUTTON8
 bind ALT-1 ACTIONBUTTON7
 bind SHIFT-8 CLICK BT4Button76:LeftButton
 bind T CLICK BT4Button29:LeftButton
-bind SHIFT-F12 NONE
+bind SHIFT-F12 CLICK BT4Button97:LeftButton
 bind CTRL-F CLICK BT4Button111:LeftButton
 bind NUMPAD2 RAIDTARGET7
 bind SHIFT-F CLICK BT4Button31:LeftButton
@@ -85,3 +85,8 @@ bind ALT-NUMPAD1 CLICK EXRTWM1:LeftButton
 bind ALT-NUMPAD2 CLICK EXRTWM2:LeftButton
 bind F6 NONE
 bind F7 NONE
+bind SHIFT-F11 CLICK BT4Button98:LeftButton
+bind SHIFT-F10 CLICK BT4Button99:LeftButton
+bind SHIFT-F9 CLICK BT4Button100:LeftButton
+bind SHIFT-F8 CLICK BT4Button101:LeftButton
+bind SHIFT-F7 CLICK BT4Button102:LeftButton

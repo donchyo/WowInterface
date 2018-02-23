@@ -22,7 +22,7 @@ function NOP:QBAnchorSize() -- resize quest bar anchor to current icon size
   if not self.QB then return end
   self.QB:SetClampedToScreen(true)
   local iconSize = NOP.DB.iconSize or private.DEFAULT_ICON_SIZE
-  if WoWBox and WoWBox.scaleDown then iconSize = math.floor(iconSize * 0.75) end
+  if not (GetScreenWidth() > 1500) then iconSize = math.floor(iconSize * 0.75) end
   self.QB:SetWidth(iconSize)
   self.QB:SetHeight(iconSize)
   if not self.QB.buttons then return end
@@ -46,7 +46,7 @@ function NOP:QBAnchor() -- create quest bar anchor frame
 end
 function NOP:QBButtonSize(bt) -- resize button to current icon size
   local iconSize = NOP.DB.iconSize or private.DEFAULT_ICON_SIZE
-  if WoWBox and WoWBox.scaleDown then iconSize = math.floor(iconSize * 0.75) end
+  if not (GetScreenWidth() > 1500) then iconSize = math.floor(iconSize * 0.75) end
   bt:SetWidth(iconSize)
   bt:SetHeight(iconSize)
 end
@@ -132,10 +132,12 @@ function NOP:QBKeyBind(bt,i) -- define hotkey
     return
   end
   self.timerQBKeyBind = nil
-  self:QBClearBind()
-  SetBindingClick(NOP.DB.keyBind, bt:GetName(), 'LeftButton')
-  if bt.hotkey then bt.hotkey:SetText(self:ButtonHotKey(NOP.DB.keyBind)) end
-  self.qbKBIndex = i
+  if bt and bt.GetName and string.len(bt:GetName()) > 0 then 
+    self:QBClearBind()
+    SetBindingClick(NOP.DB.keyBind, bt:GetName(), 'LeftButton')
+    if bt.hotkey then bt.hotkey:SetText(self:ButtonHotKey(NOP.DB.keyBind)) end
+    self.qbKBIndex = i
+  end
 end
 function NOP:QBClearBind() -- remove hotkey from bar and key-binds
   if not (self.QB and self.QB.buttons) then return end

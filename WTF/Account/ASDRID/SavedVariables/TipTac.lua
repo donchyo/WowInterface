@@ -66,15 +66,15 @@ TipTac_Config = {
 	["fontFace"] = "Fonts\\FRIZQT__.TTF",
 	["talentOnlyInParty"] = true,
 	["anchorWorldUnitPoint"] = "TOPRIGHT",
-	["classColoredBorder"] = false,
+	["iconRaid"] = true,
 	["classification_worldboss"] = "%s|r (Boss) ",
 	["anchorWorldTipPoint"] = "TOPRIGHT",
-	["colSameGuild"] = "|cffff32ff",
+	["classification_rareelite"] = "+%s|r (Rare) ",
 	["if_borderlessIcons"] = false,
 	["showTalents"] = true,
 	["colorNameByClass"] = false,
 	["iconClass"] = false,
-	["iconRaid"] = true,
+	["classColoredBorder"] = false,
 	["anchorWorldUnitType"] = "normal",
 	["healthBarColor"] = {
 		0.3, -- [1]
@@ -83,7 +83,7 @@ TipTac_Config = {
 		1, -- [4]
 	},
 	["fontSizeDelta"] = 2,
-	["classification_rareelite"] = "+%s|r (Rare) ",
+	["colSameGuild"] = "|cffff32ff",
 	["gradientTip"] = true,
 	["backdropInsets"] = 2.5,
 	["optionsBottom"] = 421.870025634766,

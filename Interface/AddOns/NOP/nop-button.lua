@@ -130,7 +130,6 @@ function NOP:ButtonPostClick(button) -- post click on button
       self:BlacklistItem(IsControlKeyDown(),self.BF.itemID)
       self.BF.itemID = nil
     end
-    if WoWBox then WoWBox.itemClick = nil end
     if not self.timerItemShowNew then self.timerItemShowNew = self:ScheduleTimer("ItemShowNew", private.TIMER_IDLE / 3) end -- back to timer
   end
 end
@@ -165,7 +164,7 @@ function NOP:ButtonSize() -- resize button
   self.timerButtonSize = nil
   if not self.BF then return end
   local iconSize = NOP.DB.iconSize or private.DEFAULT_ICON_SIZE
-  if WoWBox and WoWBox.scaleDown then iconSize = math.floor(iconSize * 0.75) end
+  if not (GetScreenWidth() > 1500) then iconSize = math.floor(iconSize * 0.75) end
   self.BF:SetWidth(iconSize)
   self.BF:SetHeight(iconSize)
   if NOP.DB.qb_sticky then self:QBAnchorSize(); self:QBUpdate(); end -- Quest Bar is locked to Item Button
@@ -349,7 +348,6 @@ function NOP:ButtonOnUpdate(bt,start,duration) -- setup timer on button
     -- self.printt("start",start,"duration",duration)
     local expire = start + duration
     if bt.expire == nil or bt.expire < expire then
-      if bt.expire == nil and WoWBox then WoWBox:ItemCD(duration) end
       bt.expire = expire
       bt:SetScript("OnUpdate",nil)
       bt:SetScript("OnUpdate", function(self,elapsed)

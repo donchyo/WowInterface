@@ -29,9 +29,9 @@ bind SHIFT-6 CLICK BT4Button33:LeftButton
 bind SHIFT-MOUSEWHEELUP MACRO TSMMacro
 bind SHIFT-MOUSEWHEELDOWN MACRO TSMMacro
 bind F1 BONUSACTIONBUTTON1
-bind F2 NONE
-bind F3 NONE
-bind F4 NONE
+bind F2 CLICK BT4Button91:LeftButton
+bind F3 CLICK BT4Button90:LeftButton
+bind F4 CLICK BT4Button89:LeftButton
 bind F5 NONE
 bind G CLICK BT4Button22:LeftButton
 bind F CLICK BT4Button79:LeftButton

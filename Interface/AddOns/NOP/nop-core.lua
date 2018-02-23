@@ -353,7 +353,7 @@ function NOP:CheckBuilding(toCheck)
       if C_Reputation.IsFactionParagon(id) then
         local reward = false
         value, top, _, reward = C_Reputation.GetFactionParagonInfo(id)
-        while (value > top) do value = value - top end
+        while (value and top and (value > top)) do value = value - top end
         if reward and not HERALD_ANNOUNCED[id] then 
           self:PrintToActive((private.REWARD_ANNOUNCE):format(name))
           HERALD_ANNOUNCED[id] = true

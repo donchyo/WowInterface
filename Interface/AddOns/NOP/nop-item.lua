@@ -274,16 +274,6 @@ function NOP:ItemShow(itemID,prio) -- add item to button
     self:ItemShowRestart()
     return
   end
-  if WoWBox then
-    WoWBox.itemClick = nil
-    if isGlow then
-      if (itemID == 118903) or (itemID == 118897) then -- mine
-        WoWBox.itemClick = (itemCount > 5)
-      elseif (itemID ~= private.RO_SHIPYARD) then -- salvage but not shipyard
-        WoWBox.itemClick = true
-      end
-    end
-  end
   local mtext = format(private.MACRO_ACTIVE,itemID)
   if T_PICK[itemID] then -- item has picklock in tooltip
     local bag, slot = self:ItemToPicklock(itemID) -- find where in bags is item which still with unlock because same itemID can be unlocked or locked it depends on state of item

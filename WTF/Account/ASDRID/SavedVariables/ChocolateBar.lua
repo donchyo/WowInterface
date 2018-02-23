@@ -157,7 +157,7 @@ ChocolateBarDB = {
 					["index"] = 2,
 				},
 				["BugSack"] = {
-					["index"] = 4,
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
@@ -271,7 +271,7 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["Death Note"] = {
-					["index"] = 3,
+					["index"] = 2,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},

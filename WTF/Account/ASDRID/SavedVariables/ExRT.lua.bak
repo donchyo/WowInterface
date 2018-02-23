@@ -1,52 +1,35 @@
 
 VExRT = {
-	["Timers"] = {
-		["specTimes"] = {
-			[62] = 10,
-			[63] = 10,
-			[250] = 10,
-			[251] = 10,
-			[64] = 10,
-			[253] = 10,
-			[65] = 10,
-			[255] = 10,
-			[66] = 10,
-			[257] = 10,
-			[258] = 10,
-			[259] = 10,
-			[260] = 10,
-			[261] = 25,
-			[262] = 16,
-			[263] = 10,
-			[264] = 10,
-			[265] = 22,
-			[266] = 10,
-			[267] = 10,
-			[268] = 10,
-			[269] = 10,
-			[270] = 10,
-			[70] = 10,
-			[102] = 10,
-			[71] = 10,
-			[103] = 10,
-			[72] = 10,
-			[104] = 10,
-			[73] = 10,
-			[581] = 10,
-			[105] = 10,
-			[577] = 10,
-			[256] = 10,
-			[254] = 10,
-			[252] = 10,
+	["Note"] = {
+		["Outline"] = true,
+		["FontSize"] = 14,
+		["AutoLoad"] = {
+			[0] = 2092,
 		},
-		["Strata"] = "HIGH",
-		["timeToKillAnalyze"] = 15,
-		["Left"] = 1209.50024414063,
-		["Top"] = 274.833435058594,
-		["Lock"] = true,
-		["DisableRW"] = true,
-		["timeToKill"] = true,
-		["enabled"] = true,
+		["Left"] = 22.2202377319336,
+		["ShowOnlyInRaid"] = true,
+		["SelfText"] = "",
+		["Fix"] = true,
+		["ScaleBack"] = 0,
+		["Text1"] = "||cffff0000=== {bl} HT: P3 adds ODER P4 ===||r\n\n||cffff0000— P1 100-70% —||r\n\"||cffff00ffCone of Death||r\" > Raid zusammen aus der Void moven\n\"||cffa330c9Soublight Orb||r\" > 3 Debuffs hinter dem raid ablegen\n\"||cffffff00Golganneth's Aid||r > 2 Buff Kugeln (||cffffffffweiß||r vor melees, ||cff3fc7ebblau||r hinter ranged)\n\n||cffff0000— P2 70%-40%—||r\n\"||cffee5555Soulburst||r\" 45y weg vom raid zu {circle} & {cross}\n\"||cffc41f3bSoulbomb||r\" 45y weg vom raid zu {star} = stack mit offtank\nDodge \"||cffff00ffEdge of Obliteration||r\"\n\n||cffff0000— P3 —||r\nAdds mit passendem Spell-Debuff angreifen!\n\"||cffff00ffCosmic Ray||r\" aus dem raid tragen!\n\"||cffc79c6eSword of the Cosmos||r\" in der mitte tanken!\n\"||cffff7d0aBlade of the Eternal||r\" zu anderen Adds zum cleaven ziehn!\nNUR \"||cff00ff00Cosmic Beacon||r\" Interupten, ignore Starblast\n\n||cffff0000— P4 sobald alle Adds down sind —||r\nKills adds ASAP!\n{tank} Solo bis tot > dann anderer Tank > repeat.\n{healer} Baum solang wie möglich mit heilen\n\"||cffee5555Soulburst||r\" 45y weg vom raid zu {orange} & {x}\n\"||cffc41f3bSoulbomb||r\" 45y weg vom raid zu {star} = sterben > orbs einsammeln > rezzen.\n\n||cff00ffffJEDER der stirbt \"orbs\" sammeln und erst DANACH zum baum zum rezzen laufen!||r",
+		["DefName"] = "#Argus the Unmaker*",
+		["LastUpdateName"] = "Lavapapaya-Antonidas",
+		["OnlyPromoted"] = true,
+		["Alpha"] = 100,
+		["Width"] = 425.001159667969,
+		["Top"] = 728.889038085938,
+		["Strata"] = "BACKGROUND",
+		["Black"] = {
+			"", -- [1]
+			"", -- [2]
+			"", -- [3]
+		},
+		["BlackNames"] = {
+		},
+		["Height"] = 558.999938964844,
+		["FontName"] = "Interface\\Addons\\Details\\fonts\\Accidental Presidency.ttf",
+		["LastUpdateTime"] = 1518644463,
+		["Scale"] = 100,
 	},
 	["ProfileKeys"] = {
 		["Pentaqt-Draenor"] = "default",
@@ -97,7 +80,7 @@ VExRT = {
 		["Kroxi-GrimBatol"] = "default",
 		["Blobble-TarrenMill"] = "default",
 		["Pentaxd-ShatteredHand"] = "default",
-		["Krixikin-GrimBatol"] = "default",
+		["Krixikin-GrimBatol"] = "Not dk",
 		["Pentamonk-Draenor"] = "default",
 		["Kriximonk-GrimBatol"] = "default",
 		["Plobble-Draenor"] = "default",
@@ -8804,6 +8787,31 @@ VExRT = {
 				"^1965^2^1519334402^31^1^5^939.13^", -- [1466]
 				"^1959^2^1519334520^27^1^5^890.48^", -- [1467]
 				"^2017^2^1519334699^13^1^5^939.73^", -- [1468]
+				"^1810^8^1519415755^115^1^5^965.48^Knucklex-Antonidas", -- [1469]
+				"^1811^8^1519416224^115^1^5^966.73^", -- [1470]
+				"^1813^8^1519416450^137^1^5^966.35^", -- [1471]
+				"^1812^8^1519416985^140^1^5^967.41^", -- [1472]
+				"^1814^8^1519417339^108^1^5^966.85^Knucklex-Antonidas", -- [1473]
+				"^1805^8^1519418188^149^1^5^967.66^Dâro-Antonidas", -- [1474]
+				"^1807^8^1519418785^42^0^5^966.73^", -- [1475]
+				"^1807^8^1519418947^96^1^5^968.85^", -- [1476]
+				"^1806^8^1519419265^344^1^5^968.64^Senflol-Antonidas", -- [1477]
+				"^1808^8^1519420004^145^1^5^968.42^Senflol-Antonidas", -- [1478]
+				"^1809^8^1519420197^122^1^5^967.79^", -- [1479]
+				"^1822^8^1519420986^131^0^5^967.79^Krixidk", -- [1480]
+				"^1822^8^1519421415^119^1^5^967.79^", -- [1481]
+				"^1823^8^1519421835^124^1^5^968.85^Knucklex-Antonidas", -- [1482]
+				"^1824^8^1519422401^225^1^5^968.23^", -- [1483]
+				"^1827^8^1519423535^160^1^5^966.54^Senflol-Antonidas", -- [1484]
+				"^1825^8^1519423944^132^1^5^967.10^", -- [1485]
+				"^1826^8^1519424371^127^1^5^967.48^Knucklex-Antonidas", -- [1486]
+				"^1828^8^1519424746^135^1^5^967.73^", -- [1487]
+				"^1829^8^1519425225^217^1^5^966.98^Dâro-Antonidas", -- [1488]
+				"^1815^8^1519426895^187^0^5^967.60^Knucklex-Antonidas", -- [1489]
+				"^1815^8^1519427714^154^0^5^966.85^Krixidk", -- [1490]
+				"^1815^8^1519428430^188^1^5^966.16^Krixidk", -- [1491]
+				"^1850^8^1519428739^190^1^5^968.66^Knucklex-Antonidas", -- [1492]
+				"^1817^8^1519429102^98^0^5^968.29^Krixidk", -- [1493]
 			},
 			["Pentazz"] = {
 				"^1822^8^1479522082^60^1^5^877.76^", -- [1]
@@ -17432,9 +17440,19 @@ VExRT = {
 			[2092] = "Argus the Unmaker",
 		},
 	},
-	["Marks"] = {
-		["list"] = {
-		},
+	["InviteTool"] = {
+		["Words"] = "123 inv w 4 12112 121212 nig 911 1212 kfc 123kid",
+		["AutoPromote"] = true,
+		["InvByChat"] = true,
+		["RaidDiff"] = 16,
+		["PromoteRank"] = 3,
+		["LootThreshold"] = 2,
+		["AutoRaidDiff"] = true,
+		["MasterLooters"] = "",
+		["LootMethod"] = "master",
+		["PromoteNames"] = "",
+		["OnlyGuild"] = true,
+		["Rank"] = 5,
 	},
 	["Coins"] = {
 		["list"] = {
@@ -29449,6 +29467,7 @@ VExRT = {
 			["Trolldanne-Silvermoon"] = 263,
 			["Askaraxx-Wildhammer"] = 64,
 			["Vilitrix-Ravencrest"] = 260,
+			["Naazila-Ravencrest"] = 254,
 			["Виннитащит-Гордунни"] = 262,
 			["Sardahael-Quel'Thalas"] = 258,
 			["Kîdlol-Mal'Ganis"] = 259,
@@ -29517,92 +29536,93 @@ VExRT = {
 			["Kelaja-Pozzodell'Eternità"] = 72,
 			["Sparvbjörn-Frostmane"] = 104,
 			["Noao-Frostmane"] = 103,
+			["Laoricci-DunModr"] = 64,
 			["Blair-Elune"] = 105,
 			["Zyloss-Frostmane"] = 269,
 			["Deathdraënai-Medivh"] = 251,
 			["Jupík-Darksorrow"] = 259,
-			["Laoricci-DunModr"] = 64,
+			["Trixî-Antonidas"] = 102,
 			["Englas-Ravencrest"] = 105,
 			["Dianwen-Antonidas"] = 265,
-			["Pawko-Silvermoon"] = 72,
 			["Грейннер-Гордунни"] = 66,
-			["Lunzn-Antonidas"] = 102,
 			["Dyrios-ZirkeldesCenarius"] = 70,
-			["Combatcat-Silvermoon"] = 105,
+			["Lunzn-Antonidas"] = 102,
+			["Mikcepa-Neptulon"] = 70,
+			["Necrassa-Silvermoon"] = 250,
 			["Neomyte-Wildhammer"] = 254,
-			["Swoozi-Silvermoon"] = 265,
+			["Illudemon-Terokkar"] = 577,
 			["Xhavien-Alexstrasza"] = 265,
 			["Quever-ColinasPardas"] = 254,
 			["Тесета-Гордунни"] = 254,
 			["Huibuih-DieewigeWacht"] = 70,
-			["Illudemon-Terokkar"] = 577,
 			["Rinain-Daggerspine"] = 269,
-			["Mydehunter-Blackmoore"] = 577,
 			["Shâdøwstêp-Tyrande"] = 258,
-			["Rabenka-Silvermoon"] = 250,
-			["Временар-Азурегос"] = 63,
+			["Mydehunter-Blackmoore"] = 577,
+			["Swoozi-Silvermoon"] = 265,
+			["Brøshi-Silvermoon"] = 63,
 			["Reakko-Zuluhed"] = 259,
-			["Неджитет-Азурегос"] = 104,
+			["Временар-Азурегос"] = 63,
+			["Bumbadan-Ravencrest"] = 581,
 			["Virgoths-Aggra(Português)"] = 577,
-			["Deathaholic-Aegwynn"] = 251,
-			["Szilszakál-AzjolNerub"] = 253,
 			["Talinsghor-Frostmane"] = 104,
+			["Szilszakál-AzjolNerub"] = 253,
 			["Cursaid-DunModr"] = 577,
+			["Неджитет-Азурегос"] = 104,
 			["Leshâwna-Antonidas"] = 105,
 			["Белыйрус-Ревущийфьорд"] = 251,
 			["Babytta-Outland"] = 64,
 			["Aliskas-DefiasBrotherhood"] = 263,
-			["Velorá-Mal'Ganis"] = 265,
 			["Lunarelia-Silvermoon"] = 64,
+			["Kyuzu-LesSentinelles"] = 66,
 			["Bussycat-Rexxar"] = 70,
 			["Kalymage-Antonidas"] = 64,
 			["Ghostlin-Silvermoon"] = 265,
-			["Kyuzu-LesSentinelles"] = 66,
+			["Imuura-KirinTor"] = 251,
 			["Hobitæ-Magtheridon"] = 66,
-			["Aloise-DunModr"] = 252,
 			["Roidragë-DunModr"] = 250,
 			["Soulbómb-TheMaelstrom"] = 250,
 			["Иенит-Борейскаятундра"] = 64,
+			["Rhìa-DunModr"] = 264,
 			["Holycàt-Antonidas"] = 70,
 			["Kroxi"] = 73,
 			["Микссер-СтражСмерти"] = 70,
 			["Arthasowy-BurningLegion"] = 251,
-			["Rhìa-DunModr"] = 264,
 			["Arzoke-Elune"] = 254,
-			["Avilas-KhazModan"] = 254,
 			["Bønñîe-Aegwynn"] = 257,
+			["Avilas-KhazModan"] = 254,
+			["Vicsur"] = 269,
 			["Yeshuaislord-Zuluhed"] = 267,
 			["Portsari-Ravencrest"] = 65,
+			["Coên-DunModr"] = 253,
 			["Eenya-Frostmane"] = 102,
-			["Fäzboune-Aegwynn"] = 253,
 			["Greenmilos-Aggramar"] = 104,
 			["Gibbel-Antonidas"] = 265,
 			["Lîbra-DunModr"] = 65,
 			["Duna-EmeraldDream"] = 72,
-			["Koukîe-Hyjal"] = 254,
-			["Hardtree-TheSha'tar"] = 105,
+			["Fäzboune-Aegwynn"] = 253,
+			["Brinasca-Blackmoore"] = 72,
 			["Shisuinen-Darksorrow"] = 64,
 			["Semic-ArgentDawn"] = 72,
 			["Duskymist-AeriePeak"] = 62,
 			["Zetiz"] = 261,
-			["Brinasca-Blackmoore"] = 72,
 			["Гарсэт-Гордунни"] = 254,
+			["Darcyn-Silvermoon"] = 577,
 			["Bagarßarbro-Frostmane"] = 65,
 			["Morgìana-Pozzodell'Eternità"] = 269,
-			["Darcyn-Silvermoon"] = 577,
+			["Gòdlîke-Antonidas"] = 253,
 			["Darrén-Anub'arak"] = 253,
 			["Koliri-Silvermoon"] = 264,
 			["Íknów-Drak'thul"] = 65,
 			["Scasi-Drak'thul"] = 265,
-			["Gòdlîke-Antonidas"] = 253,
-			["Zúnt-Auchindoun"] = 253,
 			["Nakame-Aggra(Português)"] = 262,
-			["Fifiks-Auchindoun"] = 103,
+			["Zúnt-Auchindoun"] = 253,
 			["Colossal-Ravencrest"] = 72,
-			["Schockovic-Aegwynn"] = 264,
+			["Fifiks-Auchindoun"] = 103,
+			["Northelm-DefiasBrotherhood"] = 104,
+			["Grîmreaperz-Silvermoon"] = 581,
 			["Penidruid-Dragonblight"] = 105,
 			["Survivilator-ArgentDawn"] = 255,
-			["Кьюдев-Гордунни"] = 63,
+			["Schockovic-Aegwynn"] = 264,
 			["Viseryus-DunModr"] = 577,
 			["Avarize-Darksorrow"] = 250,
 			["Shasu-DunModr"] = 577,
@@ -29610,46 +29630,46 @@ VExRT = {
 			["Tirodan-Draenor"] = 577,
 			["Trutempler-Terokkar"] = 254,
 			["Mithra-Elune"] = 265,
-			["Cédra-Ravencrest"] = 265,
+			["Praedyth-Ravencrest"] = 71,
 			["Fyrafrillor-Ravencrest"] = 254,
 			["Drizztthepal-Antonidas"] = 70,
-			["Praedyth-Ravencrest"] = 71,
 			["Bozaglo-TheMaelstrom"] = 264,
+			["Kalydhzwei-Antonidas"] = 581,
 			["Shêen-Dalaran"] = 64,
 			["Loonadruid-Hellscream"] = 105,
-			["Kalydhzwei-Antonidas"] = 581,
 			["Dâro-Antonidas"] = 102,
 			["Horo-Cho’gall"] = 63,
-			["Valeris-ZirkeldesCenarius"] = 265,
+			["Fjorgyn-Nagrand"] = 64,
 			["Alienborn"] = 263,
+			["Xeh-Sen'jin"] = 267,
 			["Инссэйн-Гордунни"] = 581,
 			["Ashurá-Aszune"] = 261,
 			["Bibeop-ArgentDawn"] = 62,
 			["Shirö-Ravencrest"] = 64,
 			["Pandînouille-Dalaran"] = 64,
-			["Xeh-Sen'jin"] = 267,
 			["Boromlr-Frostmane"] = 254,
+			["Terenxe-Blackmoore"] = 258,
 			["Nyèéx-Antonidas"] = 70,
 			["Iloarah-Blackmoore"] = 102,
 			["Flamdera-Blade'sEdge"] = 254,
-			["Мачико-Гордунни"] = 105,
 			["Йёпрмс-СтражСмерти"] = 64,
-			["Mordecaí-Turalyon"] = 64,
+			["Мачико-Гордунни"] = 105,
 			["Jelnea-KirinTor"] = 259,
 			["Вайолетта-Гордунни"] = 62,
+			["Kalyhunt-Tirion"] = 253,
 			["Madgirl-Darksorrow"] = 256,
-			["Sneild-DunMorogh"] = 250,
 			["Watchmeport-Antonidas"] = 265,
 			["Chrylmthree-Ravencrest"] = 265,
+			["Justtide-Antonidas"] = 264,
 			["Mezka-Ravencrest"] = 577,
-			["Méaty-Ravencrest"] = 104,
 			["Gothedark-Gorgonnash"] = 267,
 			["Teresen-AzjolNerub"] = 64,
-			["Ravensmoon-Silvermoon"] = 253,
+			["Großartig-Antonidas"] = 72,
 			["Neirö-DunModr"] = 253,
-			["Mimox-Kael'thas"] = 258,
-			["Flexit-Darkspear"] = 253,
+			["Ravensmoon-Silvermoon"] = 253,
 			["Dign-Silvermoon"] = 270,
+			["Flexit-Darkspear"] = 253,
+			["Era-Wildhammer"] = 265,
 			["Fallenium-Ravencrest"] = 254,
 			["Bustercyl-Blackmoore"] = 102,
 			["Bawsie"] = 254,
@@ -29660,17 +29680,17 @@ VExRT = {
 			["Aroze-Silvermoon"] = 64,
 			["Lozi-Frostmane"] = 259,
 			["Janyrya-Perenolde"] = 269,
-			["Krixidh"] = 581,
+			["Valdarr-Vek'nilash"] = 250,
 			["Wulvella-Silvermoon"] = 253,
 			["Elfagor-Pozzodell'Eternità"] = 253,
 			["Vigge-Ravencrest"] = 269,
-			["Valdarr-Vek'nilash"] = 250,
 			["Opteron-Pozzodell'Eternità"] = 260,
 			["Malzaqt-BurningLegion"] = 66,
-			["Nadie-Thunderhorn"] = 251,
+			["Монкчел-ЧерныйШрам"] = 269,
+			["Ахтышо-Гордунни"] = 263,
 			["Pellymlatic-Drak'thul"] = 262,
+			["Nadie-Thunderhorn"] = 251,
 			["Авэнжерс-СтражСмерти"] = 259,
-			["Draintrain-Antonidas"] = 265,
 			["Drakonal-Agamaggan"] = 250,
 			["Hanahana-Ravencrest"] = 102,
 			["Morwha-Frostmane"] = 269,
@@ -29679,120 +29699,120 @@ VExRT = {
 			["Evaliax-Ravencrest"] = 265,
 			["Nirion-Saurfang"] = 265,
 			["Aszunne-DunModr"] = 105,
-			["Baktøs-Auchindoun"] = 70,
+			["Blackkz-DunModr"] = 254,
 			["Radishes-ArgentDawn"] = 253,
 			["Thylda-KirinTor"] = 70,
 			["Lebowski-Aggramar"] = 262,
 			["Releisa-Blackmoore"] = 102,
-			["Blackkz-DunModr"] = 254,
+			["Baktøs-Auchindoun"] = 70,
 			["Exlis-Silvermoon"] = 257,
 			["Moodhelix-MarécagedeZangar"] = 265,
 			["Бухмениус-Голдринн"] = 72,
-			["Yukumaru-Sylvanas"] = 70,
-			["Neotro-DieSilberneHand"] = 102,
 			["Ravenmourne-TheMaelstrom"] = 250,
-			["Skever-Silvermoon"] = 70,
+			["Neotro-DieSilberneHand"] = 102,
 			["Juliê-DunModr"] = 258,
+			["Skever-Silvermoon"] = 70,
 			["Elakaflickan-Darksorrow"] = 103,
+			["Xárk-Silvermoon"] = 262,
 			["Papamarinos-EarthenRing"] = 258,
 			["Synaî-Antonidas"] = 70,
 			["Oloth-Terokkar"] = 264,
 			["Drudoc-Durotan"] = 259,
-			["Xárk-Silvermoon"] = 262,
+			["Ekrz-Ravencrest"] = 250,
 			["Kailaa-Neptulon"] = 257,
 			["Lyanna-TheVentureCo"] = 254,
-			["Ekrz-Ravencrest"] = 250,
 			["Tyroné-Antonidas"] = 64,
 			["Krixidk"] = 250,
+			["Xqs-Antonidas"] = 256,
 			["Victrix-Anachronos"] = 577,
-			["Skillfree-Antonidas"] = 581,
-			["Fruíty-Nordrassil"] = 70,
+			["Skillfree-Antonidas"] = 577,
 			["Алилити-Гордунни"] = 104,
 			["Dettó-Bloodscalp"] = 70,
-			["Rumcajs-Doomhammer"] = 254,
+			["Карау-Термоштепсель"] = 73,
 			["Barboar-Anachronos"] = 265,
-			["Lighterski-TarrenMill"] = 257,
 			["Holt-Doomhammer"] = 70,
+			["Lighterski-TarrenMill"] = 257,
 			["Imretard-Antonidas"] = 71,
 			["Frostynutz-Terokkar"] = 64,
 			["Gotheaim-Gorgonnash"] = 254,
-			["Zolution"] = 256,
-			["Sineplex-Aggra(Português)"] = 270,
+			["Hobsi-Vol'jin"] = 250,
 			["Evelette-Ravencrest"] = 262,
-			["Trixî-Antonidas"] = 102,
+			["Sineplex-Aggra(Português)"] = 270,
+			["Gilräën-DunModr"] = 102,
 			["Lex-Durotan"] = 63,
-			["Weisz-DunModr"] = 104,
 			["Krixikin"] = 105,
+			["Weisz-DunModr"] = 104,
+			["Bounsas-Silvermoon"] = 577,
 			["Seeq-Aegwynn"] = 251,
 			["Nex-Ravencrest"] = 104,
-			["Gilräën-DunModr"] = 102,
+			["Creamshotz-Antonidas"] = 254,
 			["Zuriz"] = 264,
 			["Nyarlathesca-DieSilberneHand"] = 577,
-			["Bounsas-Silvermoon"] = 577,
-			["Creamshotz-Antonidas"] = 254,
-			["Åurin-Ravencrest"] = 265,
+			["Zolution"] = 256,
 			["Memedruid-Ravencrest"] = 102,
-			["Hobsi-Vol'jin"] = 250,
+			["Åurin-Ravencrest"] = 265,
 			["Alitaki-Lightbringer"] = 103,
 			["Yaocana-Antonidas"] = 265,
 			["Røecki-Antonidas"] = 102,
-			["Fadingsun-Antonidas"] = 577,
+			["Rumcajs-Doomhammer"] = 254,
 			["Isalyane-Hyjal"] = 252,
-			["Карау-Термоштепсель"] = 73,
+			["Fadingsun-Antonidas"] = 577,
+			["Fruíty-Nordrassil"] = 70,
+			["Krixi"] = 65,
 			["Runkeby-Aggramar"] = 66,
 			["Biodiesel-Ravencrest"] = 72,
-			["Xqs-Antonidas"] = 256,
+			["Npvspawn-Auchindoun"] = 577,
 			["Délaí-Ravencrest"] = 105,
 			["Bamsðevil-Ravencrest"] = 266,
-			["Krixi"] = 65,
-			["Npvspawn-Auchindoun"] = 577,
+			["Nimu-Wildhammer"] = 256,
+			["Yukumaru-Sylvanas"] = 70,
 			["Iulian-Ravencrest"] = 577,
 			["Choepette-Alleria"] = 103,
-			["Nimu-Wildhammer"] = 256,
-			["Ludafenka-Neptulon"] = 72,
 			["Aljan-Ravencrest"] = 577,
-			["Déjávu-Anachronos"] = 103,
+			["Ludafenka-Neptulon"] = 72,
 			["Tchamí-Silvermoon"] = 72,
+			["Déjávu-Anachronos"] = 103,
+			["Draintrain-Antonidas"] = 265,
 			["Джалид-СтражСмерти"] = 263,
 			["Xiushui-Ravencrest"] = 262,
 			["Healf-Pozzodell'Eternità"] = 254,
 			["Xïlef-Frostmane"] = 70,
 			["Tanzaniia-Ravencrest"] = 105,
-			["Монкчел-ЧерныйШрам"] = 269,
-			["Ахтышо-Гордунни"] = 263,
-			["Banhxeo-Blackmoore"] = 265,
+			["Krixidh"] = 581,
 			["Neanvi-Antonidas"] = 253,
+			["Banhxeo-Blackmoore"] = 265,
+			["Barratheonn-Kilrogg"] = 65,
 			["Kungfutse-Alleria"] = 269,
-			["Era-Wildhammer"] = 265,
+			["Mimox-Kael'thas"] = 258,
 			["Dunderr-Frostmane"] = 254,
 			["Cláu-Blackmoore"] = 102,
-			["Barratheonn-Kilrogg"] = 65,
-			["Großartig-Antonidas"] = 72,
-			["Аскайра-Гордунни"] = 262,
+			["Méaty-Ravencrest"] = 104,
 			["Astomix-Silvermoon"] = 259,
+			["Аскайра-Гордунни"] = 262,
+			["Sneild-DunMorogh"] = 250,
 			["Müllpanda-Antonidas"] = 257,
 			["Blitzinga-Antonidas"] = 262,
-			["Justtide-Antonidas"] = 264,
-			["Kalyhunt-Tirion"] = 253,
-			["Imasquirrel-Ravencrest"] = 259,
+			["Mordecaí-Turalyon"] = 64,
 			["Sivra-BurningLegion"] = 265,
+			["Imasquirrel-Ravencrest"] = 259,
+			["Valeris-ZirkeldesCenarius"] = 265,
 			["Асцил-Гордунни"] = 63,
 			["Kramron-Ravencrest"] = 70,
 			["Lightsnow-Pozzodell'Eternità"] = 65,
 			["Jjester-Outland"] = 258,
 			["Tapete-Aggra(Português)"] = 265,
-			["Terenxe-Blackmoore"] = 258,
-			["Fjorgyn-Nagrand"] = 64,
 			["Mutini-Antonidas"] = 264,
-			["Muldaen-Magtheridon"] = 66,
+			["Cédra-Ravencrest"] = 265,
 			["Lavapapaya-Antonidas"] = 264,
+			["Muldaen-Magtheridon"] = 66,
+			["Кьюдев-Гордунни"] = 63,
 			["Bennj-Ravencrest"] = 265,
 			["Snówjob-Auchindoun"] = 63,
 			["Holytrapz-Aegwynn"] = 253,
 			["Kalymonkas-Antonidas"] = 258,
-			["Twobad-Antonidas"] = 70,
-			["Grîmreaperz-Silvermoon"] = 581,
-			["Northelm-DefiasBrotherhood"] = 104,
+			["Twobad-Antonidas"] = 65,
+			["Koukîe-Hyjal"] = 254,
+			["Hardtree-TheSha'tar"] = 105,
 			["Bubax-Ravencrest"] = 263,
 			["Варнерий-Гордунни"] = 66,
 			["Rhenn-Ravencrest"] = 258,
@@ -29801,30 +29821,30 @@ VExRT = {
 			["Raccachu-ArgentDawn"] = 262,
 			["Pocahauntus-Frostmane"] = 265,
 			["Cheive-Terenas"] = 251,
-			["Coên-DunModr"] = 253,
-			["Laná-Arathor"] = 63,
 			["Uhuri-Antonidas"] = 64,
-			["Vicsur"] = 269,
+			["Laná-Arathor"] = 63,
 			["Arkass-Arthas"] = 62,
 			["Avrilin-DefiasBrotherhood"] = 258,
+			["Aloise-DunModr"] = 252,
+			["Velorá-Mal'Ganis"] = 265,
 			["Dívina-Ravencrest"] = 70,
 			["Джондруид-Гордунни"] = 105,
-			["Imuura-KirinTor"] = 251,
-			["Lättoriginal-Silvermoon"] = 254,
 			["Slicendìce-Silvermoon"] = 259,
+			["Lättoriginal-Silvermoon"] = 254,
+			["Deathaholic-Aegwynn"] = 251,
 			["Tenzirion-Aegwynn"] = 105,
 			["Ecarlat-ScarshieldLegion"] = 70,
 			["Onigawara-DunModr"] = 581,
-			["Bumbadan-Ravencrest"] = 581,
+			["Rabenka-Silvermoon"] = 250,
 			["Delgavin-BurningLegion"] = 260,
 			["Babyboi-Auchindoun"] = 250,
-			["Brøshi-Silvermoon"] = 63,
+			["Combatcat-Silvermoon"] = 105,
 			["Rhiik-Bloodhoof"] = 265,
 			["Justic-DerMithrilorden"] = 257,
 			["Modokan-Antonidas"] = 254,
 			["Thaqlol-Antonidas"] = 71,
-			["Necrassa-Silvermoon"] = 250,
-			["Mikcepa-Neptulon"] = 70,
+			["Pawko-Silvermoon"] = 72,
+			["Ñick-Antonidas"] = 259,
 			["Taissa-Frostmane"] = 258,
 			["Mumzz-Sylvanas"] = 577,
 		},
@@ -30092,7 +30112,7 @@ VExRT = {
 				["iconSize"] = 36,
 				["textureColorTimeLineCastR"] = 1,
 				["fontShadow"] = true,
-				["posY"] = 545.610656738281,
+				["posY"] = 601.610717773438,
 				["textureColorBackgroundCooldownB"] = 1,
 				["textureColorTimeLineCastG"] = 1,
 				["textureColorBackgroundCastB"] = 1,
@@ -30127,7 +30147,7 @@ VExRT = {
 				["textureColorTimeLineDefaultG"] = 1,
 				["textureColorBackgroundDefaultB"] = 1,
 				["textureColorTextDefaultB"] = 1,
-				["posX"] = 420.000183105469,
+				["posX"] = 404.000183105469,
 				["textTemplateRight"] = "",
 				["textureColorTextCooldownR"] = 1,
 				["textureColorTextActiveB"] = 1,
@@ -30428,188 +30448,10 @@ VExRT = {
 			[109248] = true,
 		},
 		["Save"] = {
-		},
-	},
-	["Bossmods"] = {
-		["IskarAutoload"] = true,
-		["ArchimondeInfernalsScale"] = 1,
-		["Scale"] = 100,
-		["ArchimondeLineSize"] = 6,
-		["KormrokSetups"] = {
-		},
-		["Mannoroth"] = {
-			["number"] = 3,
-			["time"] = 1458158733,
-			["Section"] = {
-				{
-				}, -- [1]
-				{
-				}, -- [2]
-				{
-				}, -- [3]
+			["Twobad-Antonidas31842"] = {
+				584842.225, -- [1]
+				120, -- [2]
 			},
-			["name"] = "Rogerbrown-TarrenMill",
-			["sync"] = true,
-		},
-		["KormrokAutoload"] = true,
-		["IlgynothSetups"] = {
-		},
-		["ArchimondeLock"] = true,
-		["DragonsTop"] = 1028.00012207031,
-		["DragonsLeft"] = 724.999938964844,
-		["ModuleViewed3580"] = true,
-		["ArchimondeInfernalPosY"] = 1008.99938964844,
-		["ArchimondeScale"] = 1,
-		["Kormrok"] = {
-			["sync"] = true,
-			["name"] = "Xirips-TarrenMill",
-			["time"] = 1439834115,
-		},
-		["ArchimondeLeft"] = 478.999908447266,
-		["Alpha"] = 100,
-		["ArchimondeInfernalPosX"] = 440.999481201172,
-		["ArchimondeRadius"] = 40,
-		["ArchimondeTop"] = 843.000061035156,
-		["IskarScale"] = 1,
-		["ArchimondeDisableMarking"] = true,
-		["IskarTop"] = 1005.00006103516,
-		["Ilgynoth"] = {
-		},
-		["IskarLeft"] = 1358.00048828125,
-		["Kromog"] = {
-			nil, -- [1]
-			nil, -- [2]
-			nil, -- [3]
-			nil, -- [4]
-			nil, -- [5]
-			nil, -- [6]
-			nil, -- [7]
-			"Huntersvinet", -- [8]
-			"Xysid", -- [9]
-			"Slonsmaus", -- [10]
-			"Hestene", -- [11]
-			"Planetaria", -- [12]
-			"Vyrami", -- [13]
-			"Deepshaden", -- [14]
-			"Ryansan", -- [15]
-			"Xxswagmaster", -- [16]
-			"Potterdruid", -- [17]
-			"Plobble", -- [18]
-			"Revves", -- [19]
-			"Macróxjr", -- [20]
-			"Scripezor", -- [21]
-			"Jangbi", -- [22]
-			"Ajmkryss", -- [23]
-			"Zerovelocity", -- [24]
-			"Xiripstwo", -- [25]
-			"Nnoggie", -- [26]
-			"Kaizer", -- [27]
-			["sync"] = true,
-			["time"] = 1434918578,
-			["name"] = "Xiripstwo-TarrenMill",
-		},
-	},
-	["LegendaryRing"] = {
-	},
-	["RaidCheck"] = {
-		["FlaskExp"] = 1,
-		["ReadyCheckFrameTimerFade"] = 4,
-	},
-	["InspectViewer"] = {
-		["ColorizeLowIlvl685"] = false,
-		["ColorizeNoEnch"] = true,
-		["HideNotInRaid"] = true,
-		["ColorizeLowIlvl"] = false,
-		["ColorizeNoGems"] = true,
-		["ColorizeNoTopEnchGems"] = false,
-		["ColorizeNoValorUpgrade"] = false,
-	},
-	["InviteTool"] = {
-		["Words"] = "123 inv w 4 12112 121212 nig 911 1212 kfc 123kid",
-		["AutoPromote"] = true,
-		["InvByChat"] = true,
-		["RaidDiff"] = 16,
-		["PromoteRank"] = 3,
-		["LootThreshold"] = 2,
-		["AutoRaidDiff"] = true,
-		["MasterLooters"] = "",
-		["LootMethod"] = "master",
-		["PromoteNames"] = "",
-		["OnlyGuild"] = true,
-		["Rank"] = 5,
-	},
-	["Addon"] = {
-		["IconMiniMapHide"] = true,
-		["Version"] = 3910,
-		["Scale"] = 1,
-		["IconMiniMapLeft"] = 72.5204056013025,
-		["PreVersion"] = 3910,
-		["IconMiniMapTop"] = -73.3351830407896,
-		["Timer"] = 0.1,
-	},
-	["MarksBar"] = {
-		["pulltimer"] = 10,
-		["Strata"] = "HIGH",
-		["Show"] = {
-			true, -- [1]
-			true, -- [2]
-			true, -- [3]
-			true, -- [4]
-		},
-	},
-	["BossWatcher"] = {
-		["optionsDamageGraph"] = true,
-		["trackingDamageSpells"] = {
-		},
-		["autoSegments"] = {
-		},
-		["optionsPositionsDist"] = true,
-		["optionsHealingGraph"] = true,
-		["fightsNum"] = 2,
-	},
-	["Profiles"] = {
-	},
-	["Profile"] = "default",
-	["LootLink"] = {
-	},
-	["Note"] = {
-		["Outline"] = true,
-		["FontSize"] = 14,
-		["AutoLoad"] = {
-			[0] = 2092,
-		},
-		["Left"] = 22.2202377319336,
-		["ShowOnlyInRaid"] = true,
-		["SelfText"] = "",
-		["Fix"] = true,
-		["ScaleBack"] = 0,
-		["Text1"] = "||cffff0000=== {bl} HT: P3 adds ODER P4 ===||r\n\n||cffff0000— P1 100-70% —||r\n\"||cffff00ffCone of Death||r\" > Raid zusammen aus der Void moven\n\"||cffa330c9Soublight Orb||r\" > 3 Debuffs hinter dem raid ablegen\n\"||cffffff00Golganneth's Aid||r > 2 Buff Kugeln (||cffffffffweiß||r vor melees, ||cff3fc7ebblau||r hinter ranged)\n\n||cffff0000— P2 70%-40%—||r\n\"||cffee5555Soulburst||r\" 45y weg vom raid zu {circle} & {cross}\n\"||cffc41f3bSoulbomb||r\" 45y weg vom raid zu {star} = stack mit offtank\nDodge \"||cffff00ffEdge of Obliteration||r\"\n\n||cffff0000— P3 —||r\nAdds mit passendem Spell-Debuff angreifen!\n\"||cffff00ffCosmic Ray||r\" aus dem raid tragen!\n\"||cffc79c6eSword of the Cosmos||r\" in der mitte tanken!\n\"||cffff7d0aBlade of the Eternal||r\" zu anderen Adds zum cleaven ziehn!\nNUR \"||cff00ff00Cosmic Beacon||r\" Interupten, ignore Starblast\n\n||cffff0000— P4 sobald alle Adds down sind —||r\nKills adds ASAP!\n{tank} Solo bis tot > dann anderer Tank > repeat.\n{healer} Baum solang wie möglich mit heilen\n\"||cffee5555Soulburst||r\" 45y weg vom raid zu {orange} & {x}\n\"||cffc41f3bSoulbomb||r\" 45y weg vom raid zu {star} = sterben > orbs einsammeln > rezzen.\n\n||cff00ffffJEDER der stirbt \"orbs\" sammeln und erst DANACH zum baum zum rezzen laufen!||r",
-		["DefName"] = "#Argus the Unmaker*",
-		["LastUpdateName"] = "Lavapapaya-Antonidas",
-		["OnlyPromoted"] = true,
-		["Alpha"] = 100,
-		["Width"] = 425.001159667969,
-		["Top"] = 728.889038085938,
-		["Strata"] = "BACKGROUND",
-		["Black"] = {
-			"", -- [1]
-			"", -- [2]
-			"", -- [3]
-		},
-		["BlackNames"] = {
-		},
-		["Height"] = 558.999938964844,
-		["FontName"] = "Interface\\Addons\\Details\\fonts\\Accidental Presidency.ttf",
-		["LastUpdateTime"] = 1518644463,
-		["Scale"] = 100,
-	},
-	["BattleRes"] = {
-	},
-	["Logging"] = {
-		["enabled"] = true,
-	},
-	["InspectArtifact"] = {
-		["players"] = {
 		},
 	},
 	["Attendance"] = {
@@ -42444,6 +42286,531 @@ VExRT = {
 		},
 		["OptionsSortPD"] = true,
 	},
+	["LegendaryRing"] = {
+	},
+	["InspectViewer"] = {
+		["ColorizeLowIlvl685"] = false,
+		["ColorizeNoEnch"] = true,
+		["HideNotInRaid"] = true,
+		["ColorizeLowIlvl"] = false,
+		["ColorizeNoGems"] = true,
+		["ColorizeNoTopEnchGems"] = false,
+		["ColorizeNoValorUpgrade"] = false,
+	},
+	["BattleRes"] = {
+	},
 	["WhoPulled"] = {
+	},
+	["Addon"] = {
+		["Scale"] = 1,
+		["Version"] = 3910,
+		["IconMiniMapLeft"] = 72.5204056013025,
+		["Timer"] = 0.1,
+		["PreVersion"] = 3910,
+		["IconMiniMapHide"] = true,
+		["IconMiniMapTop"] = -73.3351830407896,
+	},
+	["InspectArtifact"] = {
+		["players"] = {
+		},
+	},
+	["Profiles"] = {
+		["default"] = {
+		},
+		["Not dk"] = {
+			["Timers"] = {
+				["specTimes"] = {
+					[62] = 10,
+					[63] = 10,
+					[250] = 10,
+					[251] = 10,
+					[64] = 10,
+					[253] = 10,
+					[65] = 10,
+					[255] = 10,
+					[66] = 10,
+					[257] = 10,
+					[258] = 10,
+					[259] = 10,
+					[260] = 10,
+					[261] = 25,
+					[262] = 16,
+					[263] = 10,
+					[264] = 10,
+					[265] = 22,
+					[266] = 10,
+					[267] = 10,
+					[268] = 10,
+					[269] = 10,
+					[270] = 10,
+					[70] = 10,
+					[102] = 10,
+					[71] = 10,
+					[103] = 10,
+					[72] = 10,
+					[104] = 10,
+					[73] = 10,
+					[252] = 10,
+					[105] = 10,
+					[254] = 10,
+					[256] = 10,
+					[577] = 10,
+					[581] = 10,
+				},
+				["Strata"] = "HIGH",
+				["timeToKillAnalyze"] = 15,
+			},
+			["Arrow"] = {
+			},
+			["Encounter"] = {
+				["names"] = {
+					[1957] = "Opera Hall",
+					[1960] = "Attumen the Huntsman",
+					[1961] = "Moroes",
+					[1954] = "Maiden of Virtue",
+				},
+				["list"] = {
+					["Krixikin"] = {
+						"^1957^8^1519408697^117^1^5^944.73^Skillfree-Antonidas", -- [1]
+						"^1961^8^1519409429^32^0^5^944.79^Lunzn-Antonidas", -- [2]
+						"^1961^8^1519409557^134^0^5^944.98^Ñick-Antonidas", -- [3]
+						"^1961^8^1519409798^118^1^5^944.66^Ñick-Antonidas", -- [4]
+						"^1960^8^1519410242^58^1^5^939.98^Ñick-Antonidas", -- [5]
+						"^1954^8^1519410792^98^1^5^944.98^", -- [6]
+					},
+				},
+			},
+			["InviteTool"] = {
+				["Words"] = "инв inv byd штм 123",
+				["InvByChat"] = true,
+				["RaidDiff"] = 16,
+				["PromoteRank"] = 3,
+				["LootThreshold"] = 2,
+				["MasterLooters"] = "",
+				["LootMethod"] = "group",
+				["PromoteNames"] = "",
+				["OnlyGuild"] = true,
+				["Rank"] = 1,
+			},
+			["Coins"] = {
+				["list"] = {
+				},
+			},
+			["ExCD2"] = {
+				["default_userDuration"] = {
+				},
+				["gnGUIDs"] = {
+					["Eisdudu-Antonidas"] = 104,
+					["Ñick-Antonidas"] = 259,
+					["Skillfree-Antonidas"] = 577,
+					["Lunzn-Antonidas"] = 102,
+				},
+				["NoRaid"] = true,
+				["CDECol"] = {
+				},
+				["default_userCD"] = {
+				},
+				["Save"] = {
+				},
+				["colSet"] = {
+					{
+						["enabled"] = true,
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [1]
+					{
+						["enabled"] = true,
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [2]
+					{
+						["enabled"] = true,
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [3]
+					{
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [4]
+					{
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [5]
+					{
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [6]
+					{
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [7]
+					{
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [8]
+					{
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [9]
+					{
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [10]
+					{
+						["frameGeneral"] = true,
+						["iconGray"] = true,
+						["textGeneral"] = true,
+						["methodsGeneral"] = true,
+						["blacklistGeneral"] = true,
+						["textureGeneral"] = true,
+						["iconGeneral"] = true,
+						["fontOutline"] = true,
+						["visibilityGeneral"] = true,
+						["fontGeneral"] = true,
+						["textureAnimation"] = true,
+						["fontShadow"] = false,
+					}, -- [11]
+				},
+				["Priority"] = {
+				},
+				["CDE"] = {
+				},
+				["userDB"] = {
+				},
+			},
+			["Attendance"] = {
+				["enabled"] = 2,
+				["data"] = {
+				},
+				["alts"] = {
+				},
+			},
+			["RaidCheck"] = {
+				["FlaskExp"] = 1,
+				["ReadyCheckFrameTimerFade"] = 4,
+			},
+			["InspectViewer"] = {
+			},
+			["Bossmods"] = {
+				["Kormrok"] = {
+				},
+				["Mannoroth"] = {
+				},
+				["Ilgynoth"] = {
+				},
+				["Kromog"] = {
+				},
+			},
+			["BossWatcher"] = {
+				["optionsDamageGraph"] = true,
+				["fightsNum"] = 2,
+				["optionsPositionsDist"] = true,
+				["optionsHealingGraph"] = true,
+				["trackingDamageSpells"] = {
+				},
+			},
+			["MarksBar"] = {
+				["pulltimer"] = 10,
+				["Strata"] = "HIGH",
+				["Show"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					true, -- [4]
+				},
+			},
+			["LootLink"] = {
+			},
+			["Marks"] = {
+				["list"] = {
+				},
+			},
+			["Note"] = {
+				["BlackNames"] = {
+				},
+				["FontSize"] = 12,
+				["Black"] = {
+					"", -- [1]
+					"", -- [2]
+					"", -- [3]
+				},
+				["AutoLoad"] = {
+				},
+				["Strata"] = "HIGH",
+				["Height"] = 100,
+				["Width"] = 200,
+			},
+			["Logging"] = {
+			},
+			["InspectArtifact"] = {
+				["players"] = {
+				},
+			},
+			["WhoPulled"] = {
+			},
+			["BattleRes"] = {
+			},
+		},
+	},
+	["BossWatcher"] = {
+		["optionsDamageGraph"] = true,
+		["trackingDamageSpells"] = {
+		},
+		["autoSegments"] = {
+		},
+		["optionsPositionsDist"] = true,
+		["optionsHealingGraph"] = true,
+		["fightsNum"] = 2,
+	},
+	["Profile"] = "default",
+	["LootLink"] = {
+	},
+	["Timers"] = {
+		["specTimes"] = {
+			[62] = 10,
+			[63] = 10,
+			[250] = 10,
+			[251] = 10,
+			[64] = 10,
+			[253] = 10,
+			[65] = 10,
+			[255] = 10,
+			[66] = 10,
+			[257] = 10,
+			[258] = 10,
+			[259] = 10,
+			[260] = 10,
+			[261] = 25,
+			[262] = 16,
+			[263] = 10,
+			[264] = 10,
+			[265] = 22,
+			[266] = 10,
+			[267] = 10,
+			[268] = 10,
+			[269] = 10,
+			[270] = 10,
+			[70] = 10,
+			[102] = 10,
+			[71] = 10,
+			[103] = 10,
+			[72] = 10,
+			[104] = 10,
+			[73] = 10,
+			[581] = 10,
+			[105] = 10,
+			[577] = 10,
+			[256] = 10,
+			[254] = 10,
+			[252] = 10,
+		},
+		["Strata"] = "HIGH",
+		["timeToKillAnalyze"] = 15,
+		["Left"] = 1209.50024414063,
+		["Top"] = 274.833435058594,
+		["Lock"] = true,
+		["DisableRW"] = true,
+		["timeToKill"] = true,
+		["enabled"] = true,
+	},
+	["Marks"] = {
+		["list"] = {
+		},
+	},
+	["Logging"] = {
+		["enabled"] = true,
+	},
+	["MarksBar"] = {
+		["pulltimer"] = 10,
+		["Strata"] = "HIGH",
+		["Show"] = {
+			true, -- [1]
+			true, -- [2]
+			true, -- [3]
+			true, -- [4]
+		},
+	},
+	["Bossmods"] = {
+		["IskarAutoload"] = true,
+		["ArchimondeInfernalsScale"] = 1,
+		["Scale"] = 100,
+		["ArchimondeLineSize"] = 6,
+		["KormrokSetups"] = {
+		},
+		["Mannoroth"] = {
+			["number"] = 3,
+			["time"] = 1458158733,
+			["Section"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+			},
+			["name"] = "Rogerbrown-TarrenMill",
+			["sync"] = true,
+		},
+		["KormrokAutoload"] = true,
+		["IlgynothSetups"] = {
+		},
+		["ArchimondeLock"] = true,
+		["DragonsTop"] = 1028.00012207031,
+		["DragonsLeft"] = 724.999938964844,
+		["ModuleViewed3580"] = true,
+		["ArchimondeInfernalPosY"] = 1008.99938964844,
+		["ArchimondeScale"] = 1,
+		["Kormrok"] = {
+			["sync"] = true,
+			["name"] = "Xirips-TarrenMill",
+			["time"] = 1439834115,
+		},
+		["ArchimondeLeft"] = 478.999908447266,
+		["Alpha"] = 100,
+		["ArchimondeInfernalPosX"] = 440.999481201172,
+		["ArchimondeRadius"] = 40,
+		["ArchimondeTop"] = 843.000061035156,
+		["IskarScale"] = 1,
+		["ArchimondeDisableMarking"] = true,
+		["IskarTop"] = 1005.00006103516,
+		["Ilgynoth"] = {
+		},
+		["IskarLeft"] = 1358.00048828125,
+		["Kromog"] = {
+			nil, -- [1]
+			nil, -- [2]
+			nil, -- [3]
+			nil, -- [4]
+			nil, -- [5]
+			nil, -- [6]
+			nil, -- [7]
+			"Huntersvinet", -- [8]
+			"Xysid", -- [9]
+			"Slonsmaus", -- [10]
+			"Hestene", -- [11]
+			"Planetaria", -- [12]
+			"Vyrami", -- [13]
+			"Deepshaden", -- [14]
+			"Ryansan", -- [15]
+			"Xxswagmaster", -- [16]
+			"Potterdruid", -- [17]
+			"Plobble", -- [18]
+			"Revves", -- [19]
+			"Macróxjr", -- [20]
+			"Scripezor", -- [21]
+			"Jangbi", -- [22]
+			"Ajmkryss", -- [23]
+			"Zerovelocity", -- [24]
+			"Xiripstwo", -- [25]
+			"Nnoggie", -- [26]
+			"Kaizer", -- [27]
+			["sync"] = true,
+			["time"] = 1434918578,
+			["name"] = "Xiripstwo-TarrenMill",
+		},
+	},
+	["RaidCheck"] = {
+		["FlaskExp"] = 1,
+		["ReadyCheckFrameTimerFade"] = 4,
 	},
 }
