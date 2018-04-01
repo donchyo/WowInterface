@@ -5,7 +5,7 @@ local lhc, lhcPal = {}, {} do
 	setmetatable(lhc, {__index=function(t, k)
 		local tk, v, s, r, a, b, c, d, e = type(k)
 		c = tk == "string" and FQID(k)
-		if c or tk == "number" then
+		if (c and c > 0) or tk == "number" then
 			c = ((c or k) * 65521) % 268435399
 		elseif tk == "string" then
 			s, c = k:match("[^/\\]*$"):lower():gsub("%.blp$", ""), 8388593

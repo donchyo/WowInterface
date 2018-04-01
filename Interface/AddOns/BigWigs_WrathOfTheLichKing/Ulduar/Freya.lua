@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Freya", 529, 1646)
+local mod, CL = BigWigs:NewBoss("Freya", 603, 1646)
 if not mod then return end
 mod:RegisterEnableMob(32906)
 mod.engageId = 1133
@@ -119,9 +119,7 @@ do
 
 	function mod:Tremor(args)
 		local caster = isCaster()
-		local color = caster and "Personal" or "Attention"
-		local sound = caster and "Long" or nil
-		self:Message(62437, color, sound)
+		self:Message(62437, caster and "Personal" or "Attention", caster and "Long")
 		if caster then self:Flash(62437) end
 		self:Bar(62437, 2)
 		if stage == 1 then

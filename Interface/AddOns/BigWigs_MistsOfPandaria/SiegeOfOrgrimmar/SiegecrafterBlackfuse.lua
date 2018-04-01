@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Siegecrafter Blackfuse", 953, 865)
+local mod, CL = BigWigs:NewBoss("Siegecrafter Blackfuse", 1136, 865)
 if not mod then return end
 mod:RegisterEnableMob(71504, 72981) -- Siegecrafter Blackfuse, Aggron
 mod.engageId = 1601
@@ -279,7 +279,7 @@ end
 
 function mod:PatternRecognitionRemoved(args)
 	if self:Me(args.destGUID) then
-		self:Message(-8207, "Positive", CL.over:format(args.spellName))
+		self:Message(-8207, "Positive", nil, CL.over:format(args.spellName))
 	end
 end
 

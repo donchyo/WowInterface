@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Operator Thogar", 988, 1147)
+local mod, CL = BigWigs:NewBoss("Operator Thogar", 1205, 1147)
 if not mod then return end
 mod:RegisterEnableMob(76906, 80791) -- Operator Thogar, Grom'kar Man-at-Arms
 mod.engageId = 1692
@@ -229,7 +229,7 @@ if L then
 	L.adds_train = "Adds train"
 	L.big_add_train = "Big add train"
 	L.cannon_train = "Cannon train"
-	L.deforester = "Deforester" -- /dump (EJ_GetSectionInfo(10329))
+	L.deforester = "Deforester" -- /dump (C_EncounterJournal.GetSectionInfo(10329)).title
 	L.random = "Random trains"
 
 	L.train_you = "Train on your lane! (%d)"

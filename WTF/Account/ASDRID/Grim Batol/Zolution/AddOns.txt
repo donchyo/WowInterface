@@ -161,7 +161,7 @@ AtlasLoot_WorldEvents: disabled
 AtlasLoot_WrathoftheLichKing: disabled
 MicroMenu: disabled
 MicroMenu_Config: disabled
-ActionBarSaver: disabled
+ActionBarSaver: enabled
 AdvancedInterfaceOptions: enabled
 AdvancedIconSelector: disabled
 Altoholic: disabled
@@ -236,7 +236,7 @@ ErrorFilter: enabled
 ExRT: enabled
 FlashTaskBar: enabled
 GarrisonMissonEnhanced: disabled
-Gnosis: enabled
+Gnosis: disabled
 !InspectFix: disabled
 LibRangeCheck-2.0: enabled
 nRange: enabled
@@ -368,7 +368,7 @@ RaiderIO_DB_EU_H: disabled
 AddonProfiler: disabled
 LibAdvancedIconSelector-1.0: disabled
 LibIconPath: disabled
-Quartz: disabled
+Quartz: enabled
 iEncounterEventTracker: disabled
 TrufiGCD: disabled
 EventTraceReloaded: enabled

@@ -7,14 +7,15 @@ SellOMatic2DB = {
 		["Kroxi - Grim Batol"] = "Default",
 		["Namji - Grim Batol"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
+		["Krixiyo - Lightning's Blade"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
-		["Krixiyo - Lightning's Blade"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
 		["Greenzuriz - Aggra (Português)"] = "Default",
 		["Donch - Crushridge"] = "Default",
 		["Menardiairl - Culte de la Rive noire"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
@@ -26,7 +27,7 @@ SellOMatic2DB = {
 		["Asdasdasdfaf - Grim Batol"] = "Default",
 		["Líttle - Grim Batol"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
 		["Krixiswag - Aggra (Português)"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
@@ -34,9 +35,6 @@ SellOMatic2DB = {
 	["profiles"] = {
 		["Default"] = {
 			["autoSell"] = "JUNK",
-			["list_iLevelValue"] = 621,
-			["preview"] = false,
-			["showFullInfo"] = "2-LITE",
 			["saveList"] = {
 				"Neural Silencer", -- [1]
 				"Gearspring Parts", -- [2]
@@ -60,12 +58,12 @@ SellOMatic2DB = {
 				"War Ravaged Weaponry", -- [20]
 				"Thundersmash Gloves", -- [21]
 			},
+			["list_allowGreen"] = true,
+			["list_iLevelValue"] = 621,
 			["list_allowBoP"] = true,
 			["list_allowBlue"] = true,
-			["exactMatch"] = true,
-			["list_allowGreen"] = true,
-			["list_allowEpic"] = true,
 			["list_allowWhite"] = true,
+			["showFullInfo"] = "2-LITE",
 			["sellList"] = {
 				"Mandible of Beth'tilac", -- [1]
 				"Robes of Smoldering Devastation", -- [2]
@@ -537,8 +535,11 @@ SellOMatic2DB = {
 				"Jawless Skulker Flesh", -- [468]
 				"Sea Scorpion Segment", -- [469]
 			},
+			["exactMatch"] = true,
+			["preview"] = false,
 			["list_useILevel"] = true,
 			["list_allowBoE"] = true,
+			["list_allowEpic"] = true,
 		},
 	},
 }

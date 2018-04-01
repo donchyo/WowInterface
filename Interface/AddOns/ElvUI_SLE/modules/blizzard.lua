@@ -18,7 +18,6 @@ B.Frames = {
 	"BonusRollMoneyWonFrame",
 	"CharacterFrame",
 	"ChatConfigFrame",
-	"CinematicFrame",
 	"DressUpFrame",
 	"FriendsFrame",
 	"FriendsFriendsFrame",
@@ -118,7 +117,11 @@ local function OnDragStop(self)
 	local Name = self:GetName()
 	if E.private.sle.module.blizzmove.remember then
 		local a, b, c, d, e = self:GetPoint()
-		b = self:GetParent():GetName() or UIParent
+		if self:GetParent() then 
+			b = self:GetParent():GetName() or UIParent
+		else
+			b = UIParent
+		end
 		if Name == "QuestFrame" or Name == "GossipFrame" then
 			E.private.sle.module.blizzmove.points["GossipFrame"] = {a, b, c, d, e}
 			E.private.sle.module.blizzmove.points["QuestFrame"] = {a, b, c, d, e}
@@ -190,6 +193,9 @@ function B:Initialize()
 	if not SLE.initialized then return end
 	B.addonCount = 0
 	if E.private.sle.module.blizzmove and T.type(E.private.sle.module.blizzmove) == "boolean" then E.private.sle.module.blizzmove = V.sle.module.blizzmove end --Old setting conversions
+	E.global.sle.pvpreadydialogreset = nil
+	if not E.private.sle.pvpreadydialogreset then E.private.sle.module.blizzmove.points["PVPReadyDialog"] = nil; E.private.sle.pvpreadydialogreset = true end
+	PVPReadyDialog:Hide()
 	if E.private.sle.module.blizzmove.enable then
 		for i = 1, #B.Frames do
 			B:MakeMovable(B.Frames[i])

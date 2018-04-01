@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Paragons of the Klaxxi", 953, 853)
+local mod, CL = BigWigs:NewBoss("Paragons of the Klaxxi", 1136, 853)
 if not mod then return end
 mod:RegisterEnableMob(
 	71161, 71157, 71156, 71155, -- Kil'ruk the Wind-Reaver, Xaril the Poisoned Mind, Kaz'tik the Manipulator, Korven the Prime
@@ -753,7 +753,7 @@ end
 function mod:ReadyToFight(args)
 	local mobId = self:MobId(args.destGUID)
 	if mobId ~= 71152 and mobId ~= 71158 and mobId ~= 71153 then -- don't spam at the start, although engage to jump down varies
-		self:Message(-8003, "Neutral", false, args.destName, false)
+		self:Message(-8003, "Neutral", nil, args.destName, false)
 	end
 	if mobId == 71161 then -- Kil'ruk the Wind-Reaver
 		self:CDBar(148677, 42) -- Reave

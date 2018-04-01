@@ -64,7 +64,7 @@ infMinimap: enabled
 infError: enabled
 infRunes: disabled
 Transcriptor: disabled
-Gnosis: enabled
+Gnosis: disabled
 infRaidSwoosh: enabled
 infStfu: disabled
 infBlackBarKiller: enabled
@@ -108,7 +108,7 @@ BigWigs_Pandaria: enabled
 DoubleClickBuyout: enabled
 infArena: enabled
 infGladiusMaximus: disabled
-ActionBarSaver: disabled
+ActionBarSaver: enabled
 AuraFrames: disabled
 AuraFramesConfig: disabled
 ColorPickerPlus: enabled
@@ -431,7 +431,7 @@ RaiderIO_DB_EU_H: disabled
 AddonProfiler: disabled
 LibAdvancedIconSelector-1.0: disabled
 LibIconPath: disabled
-Quartz: disabled
+Quartz: enabled
 iEncounterEventTracker: disabled
 TrufiGCD: disabled
 EventTraceReloaded: enabled

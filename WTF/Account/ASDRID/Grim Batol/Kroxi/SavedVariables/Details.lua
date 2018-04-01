@@ -7,9 +7,9 @@ _detalhes_database = {
 		["tabelas"] = {
 		},
 	},
-	["combat_counter"] = 11451,
-	["character_data"] = {
-		["logons"] = 1612,
+	["combat_counter"] = 11457,
+	["SoloTablesSaved"] = {
+		["Mode"] = 3,
 	},
 	["tabela_instancias"] = {
 	},
@@ -35,10 +35,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994755377062,
+					["y"] = -415.994747823962,
 					["x"] = 570.14000540446,
 					["w"] = 203.8720703125,
-					["h"] = 129.303588867188,
+					["h"] = 129.303604125977,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -69,10 +69,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994755377062,
+					["y"] = -415.994747823962,
 					["x"] = 762.194442275391,
 					["w"] = 184.119293212891,
-					["h"] = 129.303588867188,
+					["h"] = 129.303604125977,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -134,7 +134,7 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "19",
+	["last_day"] = "24",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -147,9 +147,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = true,
-			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -236,10 +236,10 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
 			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -259,7 +259,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
@@ -307,7 +307,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -316,7 +316,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -336,18 +336,6 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["nick_tag_cache"] = {
-		["last_version"] = 9,
-		["nextreset"] = 1520221346,
-	},
-	["last_encounter"] = "Kil'jaeden",
-	["ignore_nicktag"] = false,
-	["last_realversion"] = 129,
-	["last_version"] = "v7.3.0.5282",
-	["combat_id"] = 346,
-	["savedStyles"] = {
-	},
-	["last_instance_time"] = 1515890605,
 	["cached_talents"] = {
 		["Player-1303-03966669"] = {
 			19138, -- [1]
@@ -359,6 +347,18 @@ _detalhes_database = {
 			21204, -- [7]
 		},
 	},
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1523182373,
+	},
+	["ignore_nicktag"] = false,
+	["last_encounter"] = "Kil'jaeden",
+	["last_version"] = "v7.3.5.5439",
+	["combat_id"] = 346,
+	["savedStyles"] = {
+	},
+	["last_instance_time"] = 1515890605,
+	["last_realversion"] = 130,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -366,8 +366,8 @@ _detalhes_database = {
 		["where"] = 1,
 	},
 	["force_font_outline"] = "",
-	["SoloTablesSaved"] = {
-		["Mode"] = 3,
+	["character_data"] = {
+		["logons"] = 1614,
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Return to Karazhan",

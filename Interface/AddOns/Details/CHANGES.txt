@@ -1,5 +1,71 @@
-changeset:   700:379ec089b56c
+changeset:   711:27afcfb49a35
 tag:         tip
+user:        Tercio
+date:        Fri Mar 30 10:44:46 2018 -0300
+summary:     - Added outline option for the right text of the bar.
+
+
+changeset:   710:eb1e33639a41
+user:        Tercio
+date:        Sat Mar 24 09:32:03 2018 -0300
+summary:     - Forgot to disable debug on mythic dungeons.
+
+
+changeset:   709:3f710381107a
+user:        Tercio
+date:        Fri Mar 23 14:50:11 2018 -0300
+summary:     - Fixed dungeon chart at the end of a mythic dungeon run.
+
+
+changeset:   708:2c718c3348dc
+user:        Tercio
+date:        Fri Mar 16 13:04:05 2018 -0300
+summary:     - Added run macro to disable arena team colors, use '/run Details.color_by_arena_team = false;' to disable it.
+
+
+changeset:   707:aa06683bfa18
+user:        Tercio
+date:        Tue Mar 13 22:15:05 2018 -0300
+summary:     - hot fixes for the last update.
+
+
+changeset:   706:15c2bfee2970
+user:        Tercio
+date:        Sat Mar 10 10:55:49 2018 -0300
+summary:     - Added suport to open plugins through macros, example: /run Details:OpenPlugin ("Time Line").
+
+
+changeset:   705:09866345bf79
+user:        Tercio
+date:        Fri Mar 09 15:31:22 2018 -0300
+summary:     - More development on the mythic dungeon chart.
+
+
+changeset:   704:15e95c95cd02
+user:        Tercio
+date:        Fri Mar 02 21:39:27 2018 -0300
+summary:     - Nicktag library update
+
+
+changeset:   703:c0a7b29a7d2e
+user:        Tercio
+date:        Wed Feb 28 11:57:00 2018 -0300
+summary:     - Fix for ticket #333: error on the new dungeon chart recorder.
+
+
+changeset:   702:8d27c569ad87
+user:        Tercio
+date:        Mon Feb 26 11:13:39 2018 -0300
+summary:     - Added option to disable the mythic dungeon damage chart.
+
+
+changeset:   701:2de94f058bc6
+user:        Tercio
+date:        Fri Feb 23 12:13:56 2018 -0300
+summary:     - Added damage chart at the end of a mythic dungeon run.
+
+
+changeset:   700:379ec089b56c
 user:        Tercio
 date:        Fri Feb 09 11:33:02 2018 -0200
 summary:     - Added real time compile error while writing a custom script.

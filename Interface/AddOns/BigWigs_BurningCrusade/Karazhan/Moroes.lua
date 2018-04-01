@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Moroes Raid", 799, 1554)
+local mod, CL = BigWigs:NewBoss("Moroes Raid", 532, 1554)
 if not mod then return end
 --Moroes, Baroness Dorothea Millstipe, Baron Rafe Dreuger, Lady Catriona Von'Indi,
 --Lady Keira Berrybuck, Lord Robin Daris, Lord Crispin Ference
@@ -45,7 +45,7 @@ function mod:OnEngage()
 	self:Message(29448, "Attention", nil, L["engage_message"]:format(self.displayName))
 
 	self:CDBar(29448, 35)
-	self:DelayedMessage(29448, 30, CL["soon"]:format(self:SpellName(29448)), "Attention")
+	self:DelayedMessage(29448, 30, "Attention", CL["soon"]:format(self:SpellName(29448)))
 end
 
 --------------------------------------------------------------------------------

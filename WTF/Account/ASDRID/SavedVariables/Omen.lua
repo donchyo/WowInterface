@@ -14,15 +14,16 @@ Omen3DB = {
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Krixidh - Grim Batol"] = "Krixidk - Grim Batol",
-		["Zetiz - Grim Batol"] = "Krixidk - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixidk - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Donch - Grim Batol"] = "Krixidk - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixidk - Grim Batol",
+		["Zolution - Grim Batol"] = "Krixidk - Grim Batol",
 		["Kriximonk - Grim Batol"] = "Krixidk - Grim Batol",
 		["Nyrith - Grim Batol"] = "Krixidk - Grim Batol",
-		["Zolution - Grim Batol"] = "Krixidk - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixidk - Grim Batol",
 		["Zuriz - Grim Batol"] = "Krixidk - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Krixikin - Grim Batol"] = "Krixidk - Grim Batol",
+		["Zetiz - Grim Batol"] = "Krixidk - Grim Batol",
+		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
 	},
 	["profiles"] = {
 		["Krixiyo - Twisting Nether"] = {
@@ -40,42 +41,42 @@ Omen3DB = {
 			["PositionH"] = 82.0000076293945,
 		},
 		["Krixidk - Grim Batol"] = {
-			["ShowWith"] = {
-				["Alone"] = true,
-				["HideWhenOOC"] = true,
-				["UseShowWith"] = false,
-			},
+			["Shown"] = true,
 			["MinimapIcon"] = {
 				["hide"] = true,
 			},
 			["PositionW"] = 125.555572509766,
 			["NumBars"] = 4,
-			["Shown"] = true,
+			["ShowWith"] = {
+				["Alone"] = true,
+				["HideWhenOOC"] = true,
+				["UseShowWith"] = false,
+			},
+			["VGrip1"] = 93.1461998481366,
+			["ClickThrough"] = true,
+			["PositionH"] = 46.2221755981445,
+			["VGrip2"] = 87.7464309334155,
+			["PositionY"] = 184.00016784668,
 			["PositionX"] = 1343.77783203125,
 			["Warnings"] = {
 				["DisableWhileTanking"] = false,
 				["Sound"] = false,
 				["Flash"] = false,
 			},
-			["PositionH"] = 46.2221755981445,
-			["VGrip2"] = 87.7464309334155,
-			["PositionY"] = 184.00016784668,
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-			},
-			["ClickThrough"] = true,
 			["Locked"] = true,
 			["Background"] = {
 				["Color"] = {
 					["a"] = 0,
 				},
-				["Texture"] = "ElvUI Blank",
-				["BorderTexture"] = "1 Pixel",
 				["BorderColor"] = {
 					["a"] = 0,
 				},
+				["BorderTexture"] = "1 Pixel",
+				["Texture"] = "ElvUI Blank",
 			},
-			["VGrip1"] = 93.1461998481366,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+			},
 			["Bar"] = {
 				["FontSize"] = 11,
 				["ShowHeadings"] = false,
@@ -117,13 +118,13 @@ Omen3DB = {
 			["PositionY"] = 307.000122070313,
 			["PositionW"] = 215.110992431641,
 			["Shown"] = false,
-			["PositionH"] = 154.000091552734,
-			["PositionX"] = 1377.27893066406,
 			["VGrip1"] = 91.4221717834473,
+			["PositionX"] = 1377.27893066406,
+			["PositionH"] = 154.000091552734,
 		},
 		["Lowerboost - Lightbringer"] = {
-			["PositionY"] = 555.000061035156,
 			["Shown"] = true,
+			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
 		},
 		["DRUID"] = {
@@ -152,10 +153,15 @@ Omen3DB = {
 			["PositionX"] = 753.333435058594,
 			["PositionY"] = 521.000061035156,
 		},
-		["Gnomalock - Grim Batol"] = {
-			["Shown"] = true,
-			["PositionY"] = 358.555511474609,
-			["PositionX"] = 1488.38977050781,
+		["Krixikin - Grim Batol"] = {
+			["Shown"] = false,
+			["PositionY"] = 555.000061035156,
+			["PositionX"] = 740.833374023438,
+		},
+		["Donchyo - Shattered Hand"] = {
+			["Shown"] = false,
+			["PositionY"] = 324.777587890625,
+			["PositionX"] = 1430.61181640625,
 			["PositionH"] = 82.0000076293945,
 		},
 		["Zolution - Grim Batol"] = {
@@ -164,10 +170,17 @@ Omen3DB = {
 			["PositionX"] = 0,
 			["PositionH"] = 82.0000305175781,
 		},
-		["Lilgaykrixi - Kazzak"] = {
-			["Shown"] = false,
-			["PositionY"] = 555.000061035156,
-			["PositionX"] = 740.833374023438,
+		["Zetiz - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 787.888977050781,
+			["PositionX"] = 0,
+			["PositionH"] = 82.0000305175781,
+		},
+		["Donch - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 700.777404785156,
+			["PositionX"] = 2.16646552085876,
+			["PositionH"] = 82.0000305175781,
 		},
 		["Default"] = {
 			["Shown"] = false,
@@ -180,17 +193,10 @@ Omen3DB = {
 			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
 		},
-		["Donch - Grim Batol"] = {
-			["Shown"] = true,
-			["PositionY"] = 700.777404785156,
-			["PositionX"] = 2.16646552085876,
-			["PositionH"] = 82.0000305175781,
-		},
-		["Zetiz - Grim Batol"] = {
-			["Shown"] = true,
-			["PositionY"] = 787.888977050781,
-			["PositionX"] = 0,
-			["PositionH"] = 82.0000305175781,
+		["Lilgaykrixi - Kazzak"] = {
+			["Shown"] = false,
+			["PositionY"] = 555.000061035156,
+			["PositionX"] = 740.833374023438,
 		},
 		["Zuriz - Grim Batol"] = {
 			["Shown"] = true,
@@ -198,15 +204,15 @@ Omen3DB = {
 			["PositionX"] = 740.833374023438,
 			["PositionH"] = 82.0000076293945,
 		},
-		["Donchyo - Shattered Hand"] = {
-			["Shown"] = false,
-			["PositionY"] = 324.777587890625,
-			["PositionX"] = 1430.61181640625,
+		["Gnomalock - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 358.555511474609,
+			["PositionX"] = 1488.38977050781,
 			["PositionH"] = 82.0000076293945,
 		},
-		["Krixikin - Grim Batol"] = {
-			["Shown"] = false,
+		["Krixidk - Valley of Heroes - EU"] = {
 			["PositionY"] = 555.000061035156,
+			["Shown"] = false,
 			["PositionX"] = 740.833374023438,
 		},
 	},

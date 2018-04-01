@@ -1,5 +1,6 @@
-local config, L = OneRingLib.ext.config, OneRingLib.lang
+local config, L, _, T = OneRingLib.ext.config, OneRingLib.lang, ...
 local KR = OneRingLib.ext.ActionBook:compatible("Kindred", 1, 0)
+
 local frame = config.createFrame("Bindings", "OPie")
 local OBC_Profile = CreateFrame("Frame", "OBC_Profile", frame, "UIDropDownMenuTemplate")
 	OBC_Profile:SetPoint("TOPLEFT", 0, -85) UIDropDownMenu_SetWidth(OBC_Profile, 200)
@@ -17,15 +18,6 @@ local bindLines = {} do
 	local function onMacroClick(self)
 		bindZone.showMacroPopup(self:GetParent():GetID())
 	end
-	local function onEnter(self)
-		if self.tooltipTitle then
-			local c1, c2 = HIGHLIGHT_FONT_COLOR, NORMAL_FONT_COLOR
-			GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
-			GameTooltip:AddLine(self.tooltipTitle, c1.r, c1.g, c1.b)
-			GameTooltip:AddLine(self.tooltipText or "", c2.r, c2.g, c2.b, 1)
-			GameTooltip:Show()
-		end
-	end
 	for i=1,19 do
 		local bind = config.createBindingButton(bindZone)
 		local label = bind:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
@@ -35,7 +27,7 @@ local bindLines = {} do
 		local ico = bind.macro:CreateTexture(nil, "ARTWORK")
 		ico:SetSize(23,23) ico:SetPoint("CENTER", -1, -1) ico:SetTexture("Interface\\RaidFrame\\UI-RaidFrame-Arrow")
 		bind.macro:SetScript("OnClick", onMacroClick)
-		bind:SetScript("OnEnter", onEnter)
+		bind:SetScript("OnEnter", config.ui.ShowControlTooltip)
 		bind:SetScript("OnLeave", config.ui.HideTooltip)
 		bind:SetWidth(180) bind:GetFontString():SetWidth(170)
 		label:SetPoint("LEFT", 215, 2)
@@ -63,11 +55,8 @@ local cap = bindZone
 local ringBindings = {map={}, name=L"Ring Bindings", caption=L"Ring"}
 function ringBindings:refresh()
 	local pos, map = 1, self.map
-	for i=1,OneRingLib:GetNumRings() do
-		local _, key, _, internal = OneRingLib:GetRingInfo(i)
-		if internal == 0 or IsAltKeyDown() then
-			map[pos], pos = key, pos + 1
-		end
+	for key in OneRingLib:IterateRings(IsAltKeyDown()) do
+		map[pos], pos = key, pos + 1
 	end
 	for i=#map,pos,-1 do
 		map[i] = nil
@@ -144,7 +133,7 @@ end
 
 local subBindings = {count=0, name=L"Slice Bindings", caption=L"Slice", t={}}
 function subBindings:refresh(scope)
-	self.scope, self.nameSuffix = scope, scope and (" (|cffaaffff" ..  (OneRingLib:GetRingInfo(scope or 1) or "") .. "|r)") or (" (" .. L"Defaults" .. ")")
+	self.scope, self.nameSuffix = scope, scope and (" (|cffacd7e6" ..  (OneRingLib:GetRingInfo(scope or 1) or "") .. "|r)") or (" (" .. L"Defaults" .. ")")
 	local t, ni = self.t, 1
 	for s in OneRingLib:GetOption("SliceBindingString", scope):gmatch("%S+") do
 		t[ni], ni = s, ni + 1
@@ -197,12 +186,11 @@ end
 function subBindings:scopes(info, level, checked)
 	info.arg1, info.arg2, info.text, info.checked = self, nil, L"Defaults for all rings", checked and self.scope == nil
 	UIDropDownMenu_AddButton(info, level)
-	for i=1,OneRingLib:GetNumRings() do
-		local name, key, _, internal = OneRingLib:GetRingInfo(i)
-		if internal < 2 then
-			info.text, info.arg2, info.checked = (L"Ring: %s"):format("|cffaaffff" .. (name or key) .. "|r"), key, checked and key == self.scope
-			UIDropDownMenu_AddButton(info, level)
-		end
+	local ct = T.OPC_RingScopePrefixes
+	for key, name, scope in OneRingLib:IterateRings(true) do
+		local color = ct and ct[scope] or "|cffacd7e6"
+		info.text, info.arg2, info.checked = (L"Ring: %s"):format(color .. (name or key) .. "|r"), key, checked and key == self.scope
+		UIDropDownMenu_AddButton(info, level)
 	end
 end
 function subBindings:default()

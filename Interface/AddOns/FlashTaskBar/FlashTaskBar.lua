@@ -340,6 +340,7 @@ function FlashTaskBar.OnInit (self)
 	--trade
 	function FlashTaskBar:TRADE_SHOW()
 		if (FlashTaskBar.db.profile.trade) then
+			FlashTaskBar:Msg ("somebody opened a trade with you!")
 			FlashTaskBar:DoFlash("trade")
 		end
 	end
@@ -433,6 +434,7 @@ function FlashTaskBar.OnInit (self)
 			for _, keyword in ipairs (FlashTaskBar.db.profile.chat_scan_keywords) do
 				if (message:find (lower (keyword))) then
 					FlashTaskBar:DoFlash ("chat_scan")
+					FlashTaskBar:Msg ("work " .. keyword .. " found in chat!")
 					return
 				end
 			end
@@ -440,6 +442,7 @@ function FlashTaskBar.OnInit (self)
 		
 		if (FlashTaskBar.db.profile.on_chat_player_name) then
 			if (message:find (player_name)) then
+				FlashTaskBar:Msg ("somebody mentioned your name in the chat!")
 				FlashTaskBar:DoFlash("")
 			end
 		end

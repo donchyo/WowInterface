@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Spine of Deathwing", 824, 318)
+local mod, CL = BigWigs:NewBoss("Spine of Deathwing", 967, 318)
 if not mod then return end
 -- Deathwing, Burning Tendons, Burning Tendons, Corruption, Corruption, Corruption
 mod:RegisterEnableMob(53879, 56575, 56341, 53891, 56161, 56162)
@@ -143,8 +143,8 @@ do
 end
 
 do
-	local printStacks = function(self, spellId, color, spellName, amount, destGUID)
-		self:Message(spellId, color, nil, CL.count:format(spellName, amount))
+	local function printStacks(self, spellId, spellName, amount, destGUID)
+		self:Message(spellId, amount < 9 and "Urgent" or "Important", nil, CL.count:format(spellName, amount))
 		bloodTimers[destGUID] = nil
 	end
 
@@ -157,9 +157,9 @@ do
 
 		-- Throttle message by 0.5s, or print immediately if we hit 9+ stacks
 		if args.amount < 9 then
-			bloodTimers[args.destGUID] = self:ScheduleTimer(printStacks, 0.5, self, args.spellId, "Urgent", args.spellName, args.amount, args.destGUID)
+			bloodTimers[args.destGUID] = self:ScheduleTimer(printStacks, 0.5, self, args.spellId, args.spellName, args.amount, args.destGUID)
 		else
-			printStacks(self, args.spellId, "Important", args.spellName, args.amount, args.destGUID)
+			printStacks(self, args.spellId, args.spellName, args.amount, args.destGUID)
 		end
 	end
 end

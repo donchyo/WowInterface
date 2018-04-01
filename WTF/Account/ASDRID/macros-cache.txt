@@ -122,6 +122,11 @@ VER 3 000000000000036E "healer potion" "INV_MISC_QUESTIONMARK"
 /cast [combat] Draenic Channeled Mana Potion
 /cast [nocombat] Draenic Intellect Potion
 END
+VER 3 0000000000000391 "Healthstone" "INV_MISC_QUESTIONMARK"
+#showtooltip healthstone
+/use healthstone
+/use astral healing potion
+END
 VER 3 000000000000037C "hunter t2" "INV_MISC_QUESTIONMARK"
 /cast stopping power
 END
@@ -140,7 +145,7 @@ VER 3 0000000000000092 "mount" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 /use [mod:alt]Azure Water Strider
 /use [mod:ctrl]grand expedition yak
 /use [flyable, nomounted]INVINCIBLE
-/use [noflyable, nomounted] swift spectral tiger
+/use [noflyable, nomounted] magic rooster
 --swift spectral tiger
 /script VehicleExit()
 END

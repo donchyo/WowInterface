@@ -1,0 +1,33 @@
+
+ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+	},
+	["ChatEditHistory"] = {
+		"/wa", -- [1]
+		"/g only alliance char you have left?", -- [2]
+		"/g im gonna pee fast", -- [3]
+		"/g i guess hes not comming ", -- [4]
+		"/g im already there", -- [5]
+		"/p hi team", -- [6]
+		" like, augment rune?", -- [7]
+		" i thnk there is a show on missing or something", -- [8]
+		" at the bottom", -- [9]
+		" of the trigger", -- [10]
+		" bottom", -- [11]
+		" green one", -- [12]
+		" :)", -- [13]
+		" sick", -- [14]
+		" just some +15s", -- [15]
+		" its so shit for dungeon", -- [16]
+		"/p ty ", -- [17]
+		" do you need on your dh?", -- [18]
+		"/p hero tenttacles or helya?", -- [19]
+		"/p ty", -- [20]
+	},
+	["BodyGuard"] = {
+		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+}

@@ -5,34 +5,40 @@ IndicatorsDB = {
 		["Krixidk - Grim Batol"] = "Krixidk - Grim Batol",
 		["Kroxi - Grim Batol"] = "Default",
 		["Namji - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
-		["Zolution - Grim Batol"] = "Default",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Líttle - Grim Batol"] = "Default",
+		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
+		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Zetiz - Grim Batol"] = "Default",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
 		["Nyrith - Grim Batol"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Krixi - Grim Batol"] = "Default",
 		["Spacegoatx - Aggra (Português)"] = "Default",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
-		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
-		["Zetiz - Grim Batol"] = "Default",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
-		["Zuriz - Grim Batol"] = "Default",
-		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Líttle - Grim Batol"] = "Default",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Zolution - Grim Batol"] = "Default",
 	},
 	["profiles"] = {
 		["Donch - Grim Batol"] = {
+		},
+		["Gnomalock - Grim Batol"] = {
+			["showDebuffs"] = true,
+			["showDispelDebuffs"] = true,
+			["showBuffs"] = true,
 		},
 		["PALADIN"] = {
 		},
@@ -43,32 +49,55 @@ IndicatorsDB = {
 		},
 		["Namji - Grim Batol"] = {
 		},
-		["Krixidk - Grim Batol"] = {
-			["auras5"] = "Vampiric Blood",
-			["showDecimals5"] = false,
-			["showDispelDebuffs"] = true,
-			["iconSize5"] = 14,
-			["showTooltip5"] = false,
-			["showDebuffs"] = true,
-			["showBuffs"] = true,
-			["stack5"] = false,
+		["Krixiyo - Twisting Nether"] = {
 		},
 		["Bawsie - Grim Batol"] = {
 			["showBuffs"] = true,
 		},
-		["Krixikin - Grim Batol"] = {
-			["showBuffs"] = true,
-			["showDebuffs"] = true,
+		["Bawsi - Aggra (Português)"] = {
 		},
-		["Zolution - Grim Batol"] = {
+		["Krixikin - Grim Batol"] = {
+			["showDebuffs"] = true,
+			["showBuffs"] = true,
 		},
 		["Donch - Shattered Hand"] = {
 		},
-		["Greenzuriz - Aggra (Português)"] = {
+		["Zuriz - Grim Batol"] = {
+			["showBuffs"] = true,
+			["showDebuffs"] = true,
 		},
-		["Krixidh - Grim Batol"] = {
+		["Lowerboost - Lightbringer"] = {
 		},
-		["Menardiairl - Culte de la Rive noire"] = {
+		["Líttle - Grim Batol"] = {
+			["showDebuffs"] = true,
+			["showDispelDebuffs"] = true,
+			["showBuffs"] = true,
+		},
+		["Kriximonk - Grim Batol"] = {
+			["showBuffs"] = true,
+			["showDebuffs"] = true,
+		},
+		["Krixi - Grim Batol"] = {
+		},
+		["Zetiz - Grim Batol"] = {
+		},
+		["Daimtårta - Aggra (Português)"] = {
+		},
+		["Treefiddy - Aggra (Português)"] = {
+		},
+		["Kroxi - Crushridge"] = {
+		},
+		["Krixiyo - Blackmoore"] = {
+		},
+		["Donchyo - Shattered Hand"] = {
+		},
+		["Lilgaykrixi - Kazzak"] = {
+		},
+		["Spacegoatx - Aggra (Português)"] = {
+		},
+		["Krixiyo - Lightning's Blade"] = {
+		},
+		["Asdasdasdfaf - Grim Batol"] = {
 		},
 		["Default"] = {
 			["size4"] = 8,
@@ -82,57 +111,31 @@ IndicatorsDB = {
 			["iconSize2"] = 15,
 			["showDebuffs"] = true,
 			["iconSize3"] = 15,
-			["auras2"] = "\n",
-			["showDecimals3"] = false,
+			["size5"] = 12,
+			["showDecimals4"] = false,
 			["iconSize5"] = 15,
 			["showDecimals1"] = false,
+			["showDecimals3"] = false,
 			["showDecimals2"] = false,
-			["showDecimals4"] = false,
-			["size5"] = 12,
+			["auras2"] = "\n",
 		},
-		["Zetiz - Grim Batol"] = {
+		["Menardiairl - Culte de la Rive noire"] = {
 		},
-		["Krixi - Grim Batol"] = {
+		["Krixidh - Grim Batol"] = {
 		},
-		["Daimtårta - Aggra (Português)"] = {
+		["Greenzuriz - Aggra (Português)"] = {
 		},
-		["Treefiddy - Aggra (Português)"] = {
+		["Zolution - Grim Batol"] = {
 		},
-		["Kroxi - Crushridge"] = {
-		},
-		["Krixiyo - Lightning's Blade"] = {
-		},
-		["Donchyo - Shattered Hand"] = {
-		},
-		["Lilgaykrixi - Kazzak"] = {
-		},
-		["Spacegoatx - Aggra (Português)"] = {
-		},
-		["Krixiyo - Blackmoore"] = {
-		},
-		["Asdasdasdfaf - Grim Batol"] = {
-		},
-		["Kriximonk - Grim Batol"] = {
-			["showDebuffs"] = true,
-			["showBuffs"] = true,
-		},
-		["Líttle - Grim Batol"] = {
-			["showDebuffs"] = true,
+		["Krixidk - Grim Batol"] = {
+			["auras5"] = "Vampiric Blood",
+			["showDecimals5"] = false,
 			["showDispelDebuffs"] = true,
-			["showBuffs"] = true,
-		},
-		["Gnomalock - Grim Batol"] = {
+			["iconSize5"] = 14,
+			["showTooltip5"] = false,
 			["showDebuffs"] = true,
-			["showDispelDebuffs"] = true,
+			["stack5"] = false,
 			["showBuffs"] = true,
-		},
-		["Zuriz - Grim Batol"] = {
-			["showDebuffs"] = true,
-			["showBuffs"] = true,
-		},
-		["Bawsi - Aggra (Português)"] = {
-		},
-		["Krixiyo - Twisting Nether"] = {
 		},
 	},
 }

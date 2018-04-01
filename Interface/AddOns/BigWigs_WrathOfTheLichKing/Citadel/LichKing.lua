@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("The Lich King", 604, 1636)
+local mod, CL = BigWigs:NewBoss("The Lich King", 631, 1636)
 if not mod then return end
 mod:RegisterEnableMob(36597, 38995) -- The Lich King, Highlord Tirion Fordring
 mod.toggleOptions = {72143, 70541, {70337, "ICON", "FLASH"}, 70372, {72762, "SAY", "ICON", "FLASH"}, 69409, 69037, "custom_on_valkyr_marker", {68980, "ICON", "FLASH"}, 70498, {68981, "FLASH"}, 69200, {72262, "FLASH"}, 72350, {73529, "SAY", "FLASH", "ICON"}, "warmup", "berserk"}
@@ -141,7 +141,7 @@ function mod:PlagueTick(args)
 		local damageLeft = (3 - plagueTicks[args.destGUID]) * args.extraSpellId
 		local hp = UnitHealth(unitId)
 		if hp > damageLeft then
-			self:Message(70372, L["frenzy_survive_message"]:format(args.destName), "Attention", 72143)
+			self:Message(70372, "Attention", nil, L["frenzy_survive_message"]:format(args.destName), 72143)
 		end
 	else
 		local hp, max = UnitHealth(unitId), UnitHealthMax(unitId)

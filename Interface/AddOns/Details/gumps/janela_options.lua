@@ -666,7 +666,6 @@ local menus2 = {
 		Loc ["STRING_OPTIONSMENU_SPELLS"], --15
 		Loc ["STRING_OPTIONSMENU_DATACHART"], --16
 		Loc ["STRING_OPTIONSMENU_AUTOMATIC"], --17
-		--Loc ["STRING_OPTIONSMENU_MISC"], --18
 		"Streamer Settings", --18
 		Loc ["STRING_OPTIONSMENU_DATAFEED"], --19
 		Loc ["STRING_OPTIONSMENU_TOOLTIP"], --20
@@ -2483,6 +2482,19 @@ function window:CreateFrame18()
 				
 				window:CreateLineBackground2 (frame18, "DisableMythicDungeonSlider", "DisableMythicDungeonLabel", "Threat mythic dungeon segments as common segments: no trash merge, no mythic run overall, segments wraps on entering and leaving combat.")
 				
+			--> disable chart at the end of a mythic dungeon
+				g:NewLabel (frame18, _, "$parentDisableMythicDungeonChartLabel", "DisableMythicDungeonChartLabel", "Show Mythic Dungeon Damage Graphic", "GameFontHighlightLeft")
+				g:NewSwitch (frame18, _, "$parentDisableMythicDungeonChartSlider", "DisableMythicDungeonChartSlider", 60, 20, _, _, _detalhes.mythic_plus.show_damage_graphic, nil, nil, nil, nil, options_switch_template)
+
+				frame18.DisableMythicDungeonChartSlider:SetPoint ("left", frame18.DisableMythicDungeonChartLabel, "right", 2)
+				frame18.DisableMythicDungeonChartSlider:SetAsCheckBox()
+				frame18.DisableMythicDungeonChartSlider.OnSwitch = function (_, _, value)
+					_detalhes.mythic_plus.show_damage_graphic = not _detalhes.mythic_plus.show_damage_graphic
+					_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+				end
+				
+				window:CreateLineBackground2 (frame18, "DisableMythicDungeonChartSlider", "DisableMythicDungeonChartLabel", "At the end of a mythic dungeon run, show a graphic with the DPS of each player.")
+				
 			--> clear cache
 				g:NewLabel (frame18, _, "$parentClearCacheLabel", "ClearCacheLabel", "Clear Cache on New Event", "GameFontHighlightLeft")
 				g:NewSwitch (frame18, _, "$parentClearCacheSlider", "ClearCacheSlider", 60, 20, _, _, _detalhes.streamer_config.reset_spec_cache, nil, nil, nil, nil, options_switch_template)
@@ -2544,6 +2556,7 @@ function window:CreateFrame18()
 			{"FasterUpdatesLabel"},
 			{"QuickDetectionLabel"},
 			{"DisableMythicDungeonLabel"},
+			{"DisableMythicDungeonChartLabel"},
 			{"ClearCacheLabel"},
 			--{"AdvancedAnimationsLabel"},
 		}
@@ -4048,7 +4061,7 @@ function window:CreateFrame1()
 				_detalhes:Msg (errortext)
 			end
 			--> we call again here, because if not accepted the box return the previous value and if successful accepted, update the value for formated string.
-			local nick = _detalhes:GetNickname (UnitGUID ("player"), UnitName ("player"), true)
+			local nick = _detalhes:GetNickname (UnitName ("player"), UnitName ("player"), true)
 
 			frame1.nicknameEntry.text = nick
 			_G.DetailsOptionsWindow1AvatarNicknameLabel:SetText (nick)
@@ -4272,8 +4285,8 @@ function window:CreateFrame1()
 	
 	--> avatar
 	
-		local avatar = NickTag:GetNicknameAvatar (UnitGUID ("player"), NICKTAG_DEFAULT_AVATAR, true)
-		local background, cords, color = NickTag:GetNicknameBackground (UnitGUID ("player"), NICKTAG_DEFAULT_BACKGROUND, NICKTAG_DEFAULT_BACKGROUND_CORDS, {1, 1, 1, 1}, true)
+		local avatar = NickTag:GetNicknameAvatar (UnitName ("player"), NICKTAG_DEFAULT_AVATAR, true)
+		local background, cords, color = NickTag:GetNicknameBackground (UnitName ("player"), NICKTAG_DEFAULT_BACKGROUND, NICKTAG_DEFAULT_BACKGROUND_CORDS, {1, 1, 1, 1}, true)
 		
 		frame1.avatarPreview.texture = avatar
 		frame1.avatarPreview2.texture = background
@@ -6755,7 +6768,7 @@ function window:CreateFrame5()
 		
 		window:CreateLineBackground2 (frame5, "textLeftOutlineSmallSlider", "textLeftOutlineSmallLabel", "Text Outline")
 		
-	--> outline small color
+	--> left outline small color
 		local left_outline_small_callback = function (button, r, g, b, a)
 			local instance = _G.DetailsOptionsWindow.instance
 			instance:SetBarTextSettings (nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, {r, g, b, a})
@@ -6819,6 +6832,52 @@ function window:CreateFrame5()
 		end
 
 		window:CreateLineBackground2 (frame5, "textRightOutlineSlider", "textRightOutlineLabel", Loc ["STRING_OPTIONS_TEXT_ROUTILINE_DESC"])
+	
+	
+	--> right outline small
+		g:NewSwitch (frame5, _, "$parentTextRightOutlineSmallSlider", "textRightOutlineSmallSlider", 60, 20, _, _, instance.row_info.textR_outline_small, nil, nil, nil, nil, options_switch_template)
+		g:NewLabel (frame5, _, "$parentTextRightOutlineSmallLabel", "textRightOutlineSmallLabel", "Outline", "GameFontHighlightLeft")
+		
+		frame5.textRightOutlineSmallSlider:SetPoint ("left", frame5.textRightOutlineSmallLabel, "right", 2)
+		frame5.textRightOutlineSmallSlider:SetAsCheckBox()
+		frame5.textRightOutlineSmallSlider.OnSwitch = function (self, instance, value)
+			instance:SetBarTextSettings (nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, value)
+			--(13, smalloutline_Right, smalloutlinecolor_Right, smalloutline_right, smalloutlinecolor_right)
+			--14 15 16 17
+			
+			if (_detalhes.options_group_edit and not DetailsOptionsWindow.loading_settings) then
+				for _, this_instance in ipairs (instance:GetInstanceGroup()) do
+					if (this_instance ~= instance) then
+						this_instance:SetBarTextSettings (nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, value)
+					end
+				end
+			end
+			
+			_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+		end
+		
+		window:CreateLineBackground2 (frame5, "textRightOutlineSmallSlider", "textRightOutlineSmallLabel", "Text Outline")
+		
+	--> right outline small color
+		local right_outline_small_callback = function (button, r, g, b, a)
+			local instance = _G.DetailsOptionsWindow.instance
+			instance:SetBarTextSettings (nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, {r, g, b, a})
+			
+			if (_detalhes.options_group_edit and not DetailsOptionsWindow.loading_settings) then
+				for _, this_instance in ipairs (instance:GetInstanceGroup()) do
+					if (this_instance ~= instance) then
+						this_instance:SetBarTextSettings (nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, {r, g, b, a})
+					end
+				end
+			end
+			
+			_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+		end
+		g:NewColorPickButton (frame5, "$parentOutlineSmallColorRight", "OutlineSmallColorRight", right_outline_small_callback, false, options_button_template)
+		local OutlineSmallColorTextRight = g:NewLabel (frame5, _, "$parentOutlineSmallLabelRight", "OutlineSmallColorLabelRight", "Outline Color", "GameFontHighlightRight")
+		frame5.OutlineSmallColorRight:SetPoint ("left", OutlineSmallColorTextRight, "right", 2, 0)
+
+		window:CreateLineBackground2 (frame5, "OutlineSmallColorRight", "OutlineSmallColorLabelRight", "Outline Color")	
 	
 	--> percent type
 		local onSelectPercent = function (_, instance, percentType)
@@ -7277,6 +7336,9 @@ function window:CreateFrame5()
 		local right_side = {
 			{"RightTextAnchorLabel", 1, true},
 			{"textRightOutlineLabel", 2},
+			{"textRightOutlineSmallLabel", 2},
+			{"OutlineSmallColorLabelRight", 2},
+			
 			{"classColorsRightTextLabel", 3},
 			
 			{"RightTextShowTotalLabel", 4, true},
@@ -11470,13 +11532,19 @@ end --> if not window
 		
 		local r, g, b, a = unpack (editing_instance.row_info.textL_outline_small_color)
 		_G.DetailsOptionsWindow5OutlineSmallColorLeft.MyObject:SetColor (r, g, b, a)
-	
+		
 		_G.DetailsOptionsWindow5TextLeftOutlineSmallSlider.MyObject:SetFixedParameter (editing_instance)
 		_G.DetailsOptionsWindow5TextLeftOutlineSmallSlider.MyObject:SetValue (editing_instance.row_info.textL_outline_small)
 		
-		
 		_G.DetailsOptionsWindow5TextLeftOutlineSlider.MyObject:SetFixedParameter (editing_instance)
 		_G.DetailsOptionsWindow5TextLeftOutlineSlider.MyObject:SetValue (editing_instance.row_info.textL_outline)
+		--
+		local r, g, b, a = unpack (editing_instance.row_info.textR_outline_small_color)
+		_G.DetailsOptionsWindow5OutlineSmallColorRight.MyObject:SetColor (r, g, b, a)
+		
+		_G.DetailsOptionsWindow5TextRightOutlineSmallSlider.MyObject:SetFixedParameter (editing_instance)
+		_G.DetailsOptionsWindow5TextRightOutlineSmallSlider.MyObject:SetValue (editing_instance.row_info.textR_outline_small)
+		
 		_G.DetailsOptionsWindow5TextRightOutlineSlider.MyObject:SetFixedParameter (editing_instance)
 		_G.DetailsOptionsWindow5TextRightOutlineSlider.MyObject:SetValue (editing_instance.row_info.textR_outline)
 		
@@ -11668,6 +11736,7 @@ end --> if not window
 		_G.DetailsOptionsWindow18FasterUpdatesSlider.MyObject:SetValue (_detalhes.streamer_config.faster_updates)
 		_G.DetailsOptionsWindow18QuickDetectionSlider.MyObject:SetValue (_detalhes.streamer_config.quick_detection)
 		_G.DetailsOptionsWindow18DisableMythicDungeonSlider.MyObject:SetValue (_detalhes.streamer_config.disable_mythic_dungeon)
+		_G.DetailsOptionsWindow18DisableMythicDungeonChartSlider.MyObject:SetValue (_detalhes.mythic_plus.show_damage_graphic)
 		_G.DetailsOptionsWindow18ClearCacheSlider.MyObject:SetValue (_detalhes.streamer_config.reset_spec_cache)
 		--_G.DetailsOptionsWindow18AdvancedAnimationsSlider.MyObject:SetValue (_detalhes.streamer_config.use_animation_accel)
 		
@@ -11931,7 +12000,7 @@ end --> if not window
 		
 		_G.DetailsOptionsWindow5FixedTextColor.MyObject:SetColor (unpack (editing_instance.row_info.fixed_text_color))
 		
-		_G.DetailsOptionsWindow1NicknameEntry.MyObject.text = _detalhes:GetNickname (UnitGUID ("player"), UnitName ("player"), true) or ""
+		_G.DetailsOptionsWindow1NicknameEntry.MyObject.text = _detalhes:GetNickname (UnitName ("player"), UnitName ("player"), true) or ""
 		_G.DetailsOptionsWindow1TTDropdown.MyObject:Select (_detalhes.time_type, true)
 		
 		_G.DetailsOptionsWindow.MyObject.instance = instance
@@ -11971,8 +12040,8 @@ end --> if not window
 		
 		window:Show()
 
-		local avatar = NickTag:GetNicknameAvatar (UnitGUID ("player"), NICKTAG_DEFAULT_AVATAR, true)
-		local background, cords, color = NickTag:GetNicknameBackground (UnitGUID ("player"), NICKTAG_DEFAULT_BACKGROUND, NICKTAG_DEFAULT_BACKGROUND_CORDS, {1, 1, 1, 1}, true)
+		local avatar = NickTag:GetNicknameAvatar (UnitName ("player"), NICKTAG_DEFAULT_AVATAR, true)
+		local background, cords, color = NickTag:GetNicknameBackground (UnitName ("player"), NICKTAG_DEFAULT_BACKGROUND, NICKTAG_DEFAULT_BACKGROUND_CORDS, {1, 1, 1, 1}, true)
 
 		_G.DetailsOptionsWindow1AvatarPreviewTexture.MyObject.texture = avatar
 		_G.DetailsOptionsWindow1AvatarPreviewTexture2.MyObject.texture = background
@@ -11987,7 +12056,7 @@ end --> if not window
 			_G.DetailsOptionsWindow1.HaveAvatar = false
 		end
 
-		local nick = _detalhes:GetNickname (UnitGUID ("player"), UnitName ("player"), true)
+		local nick = _detalhes:GetNickname (UnitName ("player"), UnitName ("player"), true)
 		_G.DetailsOptionsWindow1AvatarNicknameLabel:SetText (nick)
 		
 		if (window.update_wallpaper_info) then
@@ -11995,9 +12064,14 @@ end --> if not window
 		end
 		
 		if (section) then
+		
+			
+		
 			local button = window.menu_buttons [section]
-			local mouse_up_hook = button.OnMouseUpHook
-			mouse_up_hook (button.widget)
+			button:Click()
+			
+			--local mouse_up_hook = button.OnMouseUpHook
+			--mouse_up_hook (button.widget)
 		end
 
 		DetailsOptionsWindow.loading_settings = nil

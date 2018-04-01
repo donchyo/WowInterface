@@ -1,6 +1,10 @@
 -- German localization file for deDE by Ragnar_F and Google translator, announce corrections by Salty
+local _
+-- [[
+local assert = _G.assert
+local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
+-- ]]
 local ADDON = ...
-local _ ;
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale(ADDON, "deDE");
 if not L then return; end

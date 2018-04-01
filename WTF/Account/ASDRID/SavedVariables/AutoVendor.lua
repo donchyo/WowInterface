@@ -12,15 +12,16 @@ AutoVendorDB = {
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
-		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
+		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
 	},
 	["profiles"] = {
 		["Krixiyo - Twisting Nether"] = {
@@ -45,25 +46,27 @@ AutoVendorDB = {
 		},
 		["Kroxi - Crushridge"] = {
 		},
+		["Lilgaykrixi - Kazzak"] = {
+		},
 		["Spacegoatx - Aggra (Português)"] = {
 		},
-		["Lilgaykrixi - Kazzak"] = {
+		["Krixiyo - Blackmoore"] = {
 		},
 		["Donch - Shattered Hand"] = {
 		},
-		["Zuriz - Grim Batol"] = {
-		},
-		["Menardiairl - Culte de la Rive noire"] = {
+		["Greenzuriz - Aggra (Português)"] = {
 		},
 		["Gnomalock - Grim Batol"] = {
 			["guildbankrepair"] = true,
 			["nonoptimal"] = false,
 		},
-		["Greenzuriz - Aggra (Português)"] = {
+		["Menardiairl - Culte de la Rive noire"] = {
+		},
+		["Zuriz - Grim Batol"] = {
 		},
 		["Krixiswag - Aggra (Português)"] = {
 		},
-		["Krixiyo - Blackmoore"] = {
+		["Krixidk - Valley of Heroes - EU"] = {
 		},
 	},
 }

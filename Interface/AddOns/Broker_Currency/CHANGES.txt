@@ -1,10 +1,10 @@
-tag e2faba25d5c5beedf4f0bc39a79a63d1ebfca893 7.3.0.3
+tag 4814a6988c6fbd420d18a8ab6ecaf840d072a996 7.3.5.1
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Wed Sep 20 22:43:24 2017 -0500
+Date:	Tue Mar 27 06:52:42 2018 -0500
 
-commit df1098251a767353591dce1f28ab4028b1d5fa02
+commit bc17b3ceb05fb1323c3277f5afe24501a0e8d7aa
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Wed Sep 20 22:43:07 2017 -0500
+Date:   Tue Mar 27 06:52:05 2018 -0500
 
-    Remove Argus Waystone support since they were removed from the game.
+    Add Wakening Essence to the Miscellaneous section.
 

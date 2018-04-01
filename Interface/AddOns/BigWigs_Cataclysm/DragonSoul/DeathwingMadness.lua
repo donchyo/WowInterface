@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Madness of Deathwing", 824, 333)
+local mod, CL = BigWigs:NewBoss("Madness of Deathwing", 967, 333)
 if not mod then return end
 -- Thrall, Deathwing, Arm Tentacle, Arm Tentacle, Wing Tentacle, Mutated Corruption
 mod:RegisterEnableMob(56103, 56173, 56167, 56846, 56168, 56471)
@@ -30,7 +30,7 @@ if L then
 	L.bigtentacle_icon = "ability_deathwing_grasping_tendrils"
 
 	L.smalltentacles = -4103 -- Blistering Tentacle
-	-- Copy & Paste from Encounter Journal with correct health percentages (type '/dump EJ_GetSectionInfo(4103)' in the game)
+	-- Copy & Paste from Encounter Journal with correct health percentages (type '/dump (C_EncounterJournal.GetSectionInfo(4103)).title' in the game)
 	L.smalltentacles_desc = "At 70% and 40% remaining health the Limb Tentacle sprouts several Blistering Tentacles that are immune to Area of Effect abilities."
 	L.smalltentacles_icon = "Ability_Warrior_BloodNova"
 

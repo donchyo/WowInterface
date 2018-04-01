@@ -1,4 +1,5 @@
 local L, config, _, T, KR = OneRingLib.lang, {}, ...
+local GameTooltip = AltGameTooltip or GameTooltip
 
 OneRingLib.ext.config, KR = config, T.ActionBook:compatible("Kindred",1,0)
 function config.createFrame(name, parent)
@@ -137,9 +138,17 @@ do -- ext.config.ui
 			GameTooltip:Hide()
 		end
 	end
+	function config.ui.ShowControlTooltip(self)
+		local title, text = self.tooltipTitle, self.tooltipText
+		if not (title or text) then return end
+		GameTooltip:SetOwner(self, self.tooltipOwnerPoint or "ANCHOR_BOTTOMRIGHT")
+		GameTooltip:AddLine(title or "", nil, nil, nil)
+		GameTooltip:AddLine(text or "", nil, nil, nil, true)
+		GameTooltip:Show()
+	end
 end
 do -- ext.config.bind
-	local unbindMap, activeCaptureButton = {};
+	local unbindMap, activeCaptureButton = {}
 	local alternateFrame = CreateFrame("Frame", nil, UIParent) do
 		alternateFrame:SetBackdrop({ bgFile="Interface/ChatFrame/ChatFrameBackground", edgeFile="Interface/DialogFrame/UI-DialogBox-Border", tile=true, tileSize=32, edgeSize=32, insets={left=11, right=11, top=12, bottom=10}})
 		alternateFrame:SetSize(380, 115)
@@ -186,39 +195,50 @@ do -- ext.config.bind
 	local function MapMouseButton(button)
 		if button == "MiddleButton" then return "BUTTON3" end
 		if type(button) == "string" and (tonumber(button:match("^Button(%d+)"))) or 1 > 3 then
-			return button:upper();
+			return button:upper()
 		end
 	end
 	local function Deactivate(self)
-		self:UnlockHighlight(); self:EnableKeyboard(false);
-		self:SetScript("OnKeyDown", nil); self:SetScript("OnHide", nil);
-		activeCaptureButton = activeCaptureButton ~= self and activeCaptureButton or nil;
-		if unbindMap[self:GetParent()] then unbindMap[self:GetParent()]:Disable(); end
+		self:UnlockHighlight()
+		self:EnableKeyboard(false)
+		self:SetScript("OnKeyDown", nil)
+		self:SetScript("OnHide", nil)
+		activeCaptureButton = activeCaptureButton ~= self and activeCaptureButton or nil
+		if unbindMap[self:GetParent()] then
+			unbindMap[self:GetParent()]:Disable()
+		end
 		return self
 	end
 	local function SetBind(self, bind)
-		if not (bind and (bind:match("^[LR]?ALT$") or bind:match("^[LR]?CTRL$") or bind:match("^[LR]?SHIFT$"))) then
-			Deactivate(self);
-			if bind == "ESCAPE" then return; end
-			local bind, p = bind and ((IsAltKeyDown() and "ALT-" or "") ..  (IsControlKeyDown() and "CTRL-" or "") .. (IsShiftKeyDown() and "SHIFT-" or "") .. bind), self:GetParent();
-			if p and type(p.SetBinding) == "function" then p.SetBinding(self, bind); end
+		if not (bind and (bind:match("^[LR]?ALT$") or bind:match("^[LR]?CTRL$") or bind:match("^[LR]?SHIFT$") or bind == "UNKNOWN")) then
+			Deactivate(self)
+			if bind == "ESCAPE" then return end
+			local bind, p = bind and ((IsAltKeyDown() and "ALT-" or "") ..  (IsControlKeyDown() and "CTRL-" or "") .. (IsShiftKeyDown() and "SHIFT-" or "") .. bind), self:GetParent()
+			if p and type(p.SetBinding) == "function" then
+				p.SetBinding(self, bind)
+			end
 		end
 	end
 	local function OnClick(self, button)
 		PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
 		if activeCaptureButton then
-			local deactivated, mappedButton = Deactivate(activeCaptureButton), MapMouseButton(button);
-			if deactivated == self and (mappedButton or button == "RightButton") then SetBind(self, mappedButton); end
-			if deactivated == self then return; end
+			local deactivated, mappedButton = Deactivate(activeCaptureButton), MapMouseButton(button)
+			if deactivated == self and (mappedButton or button == "RightButton") then
+				SetBind(self, mappedButton)
+			end
+			if deactivated == self then return end
 		end
 		if IsAltKeyDown() and activeCaptureButton == nil and self:GetParent().OnBindingAltClick then
-			return self:GetParent().OnBindingAltClick(self, button);
+			return self:GetParent().OnBindingAltClick(self, button)
 		end
-		activeCaptureButton = self;
-		self:LockHighlight();
-		self:EnableKeyboard(true);
-		self:SetScript("OnKeyDown", SetBind); self:SetScript("OnHide", Deactivate);
-		if unbindMap[self:GetParent()] then unbindMap[self:GetParent()]:Enable(); end
+		activeCaptureButton = self
+		self:LockHighlight()
+		self:EnableKeyboard(true)
+		self:SetScript("OnKeyDown", SetBind)
+		self:SetScript("OnHide", Deactivate)
+		if unbindMap[self:GetParent()] then
+			unbindMap[self:GetParent()]:Enable()
+		end
 	end
 	local function OnWheel(self, delta)
 		local aw = self:GetParent().AllowWheelBinding
@@ -228,21 +248,23 @@ do -- ext.config.bind
 	end
 	local function UnbindClick(self)
 		if activeCaptureButton and unbindMap[activeCaptureButton:GetParent()] == self then
-			local p, button = activeCaptureButton:GetParent(), activeCaptureButton;
-			if p and type(p.SetBinding) == "function" then p.SetBinding(activeCaptureButton, false); end
+			local p, button = activeCaptureButton:GetParent(), activeCaptureButton
+			if p and type(p.SetBinding) == "function" then
+				p.SetBinding(activeCaptureButton, false)
+			end
 			PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
 			Deactivate(button)
 		end
 	end
 	local function IsCapturingBinding(self)
-		return activeCaptureButton == self;
+		return activeCaptureButton == self
 	end
 	local specialSymbolMap = {OPEN="[", CLOSE="]", SEMICOLON=";"}
 	local function bindNameLookup(capture)
 		return specialSymbolMap[capture] or _G["KEY_" .. capture]
 	end
 	local function bindFormat(bind)
-		return bind and bind ~= "" and bind:gsub("[^%-]+$", bindNameLookup) or L"Not bound";
+		return bind and bind ~= "" and bind:gsub("[^%-]+$", bindNameLookup) or L"Not bound"
 	end
 	config.bindingFormat = bindFormat
 	local function SetBindingText(self, bind, pre, post)
@@ -285,7 +307,7 @@ do -- ext.config.bind
 		return btn, unbindMap[parent]
 	end
 	function config.createUnbindButton(parent)
-		local btn = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate");
+		local btn = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
 		btn:Disable()
 		btn:SetSize(140, 22)
 		unbindMap[parent] = btn
@@ -472,7 +494,7 @@ local OPC_OptionSets = {
 		{"range", "XTZoomTime", 0, 1, 0.1, caption=L"Zoom-in/out time", suffix=L"(%.1f sec)"},
 		{"range", "XTRotationPeriod", 1, 10, 0.2, caption=L"Rotation period", suffix=L"(%.1f sec)"}
 	}
-};
+}
 
 local frame = config.createFrame("OPie")
 	frame.version:SetFormattedText("%s (%d.%d)", OneRingLib:GetVersion())
@@ -480,88 +502,114 @@ local frame = config.createFrame("OPie")
 		local c = ITEM_QUALITY_COLORS[math.max(1,math.floor(6*0.75^math.random(12)))]
 		self:GetFontString():SetTextColor(c.r, c.g, c.b)
 	end)
-local OPC_Profile = CreateFrame("Frame", "OPC_Profile", frame, "UIDropDownMenuTemplate");
-	OPC_Profile:SetPoint("TOPLEFT", frame, 0, -85); UIDropDownMenu_SetWidth(OPC_Profile, 200);
-local OPC_OptionDomain = CreateFrame("Frame", "OPC_OptionDomain", frame, "UIDropDownMenuTemplate");
-	OPC_OptionDomain:SetPoint("LEFT", OPC_Profile, "RIGHT");
-	UIDropDownMenu_SetWidth(OPC_OptionDomain, 250);
+local OPC_Profile = CreateFrame("Frame", "OPC_Profile", frame, "UIDropDownMenuTemplate")
+	OPC_Profile:SetPoint("TOPLEFT", frame, 0, -85)
+	UIDropDownMenu_SetWidth(OPC_Profile, 200)
+local OPC_OptionDomain = CreateFrame("Frame", "OPC_OptionDomain", frame, "UIDropDownMenuTemplate")
+	OPC_OptionDomain:SetPoint("LEFT", OPC_Profile, "RIGHT")
+	UIDropDownMenu_SetWidth(OPC_OptionDomain, 250)
 
-local OPC_Widgets, OPC_AlterOption, OPC_BlockInput = {};
+local OPC_Widgets, OPC_AlterOption, OPC_BlockInput = {}
 do -- Widget construction
-	local build = {};
+	local build = {}
 	local function notifyChange(self, ...)
 		if not OPC_BlockInput then
-			OPC_AlterOption(self, self.id, self:IsObjectType("Slider") and self:GetValue() or (not not self:GetChecked()), ...);
+			OPC_AlterOption(self, self.id, self:IsObjectType("Slider") and self:GetValue() or (not not self:GetChecked()), ...)
 		end
 	end
 	local function OnStateChange(self)
-		local a = self:IsEnabled() and 1 or 0.6;
-		self.text:SetVertexColor(a,a,a);
+		local a = self:IsEnabled() and 1 or 0.6
+		self.text:SetVertexColor(a,a,a)
 	end
 	function build.bool(v, ofsY, halfpoint, rowHeight)
-		local b = CreateFrame("CheckButton", nil, frame, "InterfaceOptionsCheckButtonTemplate");
-		b:RegisterForClicks("LeftButtonUp", "RightButtonUp");
-		b.id, b.text, b.desc = v[2], b.Text, v;
-		b:SetPoint("TOPLEFT", frame, "TOPLEFT", halfpoint and 315 or 15, ofsY);
-		b:SetScript("OnClick", notifyChange); hooksecurefunc(b, "SetEnabled", OnStateChange);
-		return b, ofsY - (halfpoint and rowHeight or 0), not halfpoint, halfpoint and 0 or 20;
+		local b = CreateFrame("CheckButton", nil, frame, "InterfaceOptionsCheckButtonTemplate")
+		b:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+		b.id, b.text, b.desc = v[2], b.Text, v
+		b:SetPoint("TOPLEFT", frame, "TOPLEFT", halfpoint and 315 or 15, ofsY)
+		b:SetScript("OnClick", notifyChange)
+		hooksecurefunc(b, "SetEnabled", OnStateChange)
+		return b, ofsY - (halfpoint and rowHeight or 0), not halfpoint, halfpoint and 0 or 20
 	end
 	function build.range(v, ofsY, halfpoint, rowHeight)
-		if halfpoint then ofsY = ofsY - rowHeight; end
-		local b = CreateFrame("Slider", "OPC_Slider_" .. v[2], frame, "OptionsSliderTemplate");
+		if halfpoint then
+			ofsY = ofsY - rowHeight
+		end
+		local b = CreateFrame("Slider", "OPC_Slider_" .. v[2], frame, "OptionsSliderTemplate")
 		b:SetWidth(175)
-		b:SetMinMaxValues(v[3] < v[4] and v[3] or -v[3], v[4] > v[3] and v[4] or -v[4]); b:SetValueStep(v[5] or 0.1); b:SetHitRectInsets(0,0,0,0);
-		b.id, b.text, b.hi, b.lo, b.desc = v[2], _G["OPC_Slider_" .. v[2] .. "Text"], _G["OPC_Slider_" .. v[2] .. "High"], _G["OPC_Slider_" .. v[2] .. "Low"], v;
-		b.hi:ClearAllPoints(); b.hi:SetPoint("LEFT", b, "RIGHT", 2, 1);
-		b.lo:ClearAllPoints(); b.lo:SetPoint("RIGHT", b, "LEFT", -2, 1);
-		b.text:ClearAllPoints(); b.text:SetPoint("TOPLEFT", frame, "TOPLEFT", 44, ofsY-7);
-		if not v.stdLabels then b.lo:SetText(v[3]); b.hi:SetText(v[4]); end
-		b:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -105, ofsY-5);
+		b:SetMinMaxValues(v[3] < v[4] and v[3] or -v[3], v[4] > v[3] and v[4] or -v[4])
+		b:SetValueStep(v[5] or 0.1)
+		b:SetHitRectInsets(0,0,0,0)
+		b.id, b.text, b.hi, b.lo, b.desc = v[2], _G["OPC_Slider_" .. v[2] .. "Text"], _G["OPC_Slider_" .. v[2] .. "High"], _G["OPC_Slider_" .. v[2] .. "Low"], v
+		b.hi:ClearAllPoints()
+		b.hi:SetPoint("LEFT", b, "RIGHT", 2, 1)
+		b.lo:ClearAllPoints()
+		b.lo:SetPoint("RIGHT", b, "LEFT", -2, 1)
+		b.text:ClearAllPoints()
+		b.text:SetPoint("TOPLEFT", frame, "TOPLEFT", 44, ofsY-7)
+		if not v.stdLabels then
+			b.lo:SetText(v[3])
+			b.hi:SetText(v[4])
+		end
+		b:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -105, ofsY-5)
 		b:SetScript("OnValueChanged", notifyChange)
 		b:SetObeyStepOnDrag(true)
-		return b, ofsY - 20, false, 0;
+		return b, ofsY - 20, false, 0
 	end
 
-	local cY, halfpoint, rowHeight = -115, false;
+	local cY, halfpoint, rowHeight = -115, false
 	for _, v in ipairs(OPC_OptionSets) do
-		v.label = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge");
-		v.label:SetPoint("TOP", frame, "TOP", -50, cY-10); v.label:SetJustifyH("LEFT")
+		v.label = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+		v.label:SetPoint("TOP", frame, "TOP", -50, cY-10)
+		v.label:SetJustifyH("LEFT")
 		v.label:SetPoint("LEFT", frame, "LEFT", 16, 0)
-		cY, halfpoint, rowHeight = cY - 30, false, 0;
+		cY, halfpoint, rowHeight = cY - 30, false, 0
 		for j=2,#v do
-			v[j].widget, cY, halfpoint, rowHeight = build[v[j][1]](v[j], cY, halfpoint, rowHeight);
-			OPC_Widgets[v[j][2]], v[j].widget.control = v[j].widget, v[j];
+			v[j].widget, cY, halfpoint, rowHeight = build[v[j][1]](v[j], cY, halfpoint, rowHeight)
+			OPC_Widgets[v[j][2]], v[j].widget.control = v[j].widget, v[j]
 		end
-		if halfpoint then cY = cY - rowHeight; end
+		if halfpoint then
+			cY = cY - rowHeight
+		end
 	end
 end
+T.OPC_RingScopePrefixes = {
+	[30] = "|cff25bdff",
+	[20] = "|c" .. RAID_CLASS_COLORS[select(2,UnitClass("player"))].colorStr,
+	[10] = "|cffabffd5",
+}
 
 local OR_CurrentOptionsDomain
 
 function OPC_AlterOption(widget, option, newval, ...)
-	if (...) == "RightButton" then newval = nil; end
-	if widget.control[1] == "range" and widget.control[3] > widget.control[4] and type(newval) == "number" then newval = -newval; end
+	if (...) == "RightButton" then
+		newval = nil
+	end
+	if widget.control[1] == "range" and widget.control[3] > widget.control[4] and type(newval) == "number" then
+		newval = -newval
+	end
 	config.undo.saveProfile()
-	OneRingLib:SetOption(option, newval, OR_CurrentOptionsDomain);
-	local setval = OneRingLib:GetOption(option, OR_CurrentOptionsDomain);
+	OneRingLib:SetOption(option, newval, OR_CurrentOptionsDomain)
+	local setval = OneRingLib:GetOption(option, OR_CurrentOptionsDomain)
 	if widget:IsObjectType("Slider") then
 		local text = widget.desc.caption
 		if widget.desc.suffix then
 			text = text .. " |cffffd500" .. widget.desc.suffix:format(setval) .. "|r"
 		end
-		widget.text:SetText(text);
-		OPC_BlockInput = true; widget:SetValue(setval * (widget.control[3] > widget.control[4] and -1 or 1)); OPC_BlockInput = false;
+		widget.text:SetText(text)
+		OPC_BlockInput = true
+		widget:SetValue(setval * (widget.control[3] > widget.control[4] and -1 or 1))
+		OPC_BlockInput = false
 	elseif setval ~= newval then
-		widget:SetChecked(setval and 1 or nil);
+		widget:SetChecked(setval and 1 or nil)
 	end
 	for _,set in ipairs(OPC_OptionSets) do for j=2,#set do local v = set[j]
 		if v.depOn == option then
-			local match = OneRingLib:GetOption(v.depOn, OR_CurrentOptionsDomain) == v.depValue;
-			v.widget:SetEnabled(match);
+			local match = OneRingLib:GetOption(v.depOn, OR_CurrentOptionsDomain) == v.depValue
+			v.widget:SetEnabled(match)
 			if match then
-				v.widget:SetChecked(OneRingLib:GetOption(v[2], OR_CurrentOptionsDomain) or nil);
+				v.widget:SetChecked(OneRingLib:GetOption(v[2], OR_CurrentOptionsDomain) or nil)
 			else
-				v.widget:SetChecked(v.otherwise or nil);
+				v.widget:SetChecked(v.otherwise or nil)
 			end
 		end
 	end end
@@ -571,15 +619,14 @@ function OPC_OptionDomain:click(ringName)
 	frame.refresh()
 end
 function OPC_OptionDomain:initialize()
-	local info = UIDropDownMenu_CreateInfo();
-	info.func, info.arg1, info.text, info.checked, info.minWidth = OPC_OptionDomain.click, nil, L"Defaults for all rings", OR_CurrentOptionsDomain == nil and 1 or nil, self:GetWidth()-40;
-	UIDropDownMenu_AddButton(info);
-	for i=1,OneRingLib:GetNumRings() do
-		local name, key, _, internal = OneRingLib:GetRingInfo(i)
-		if internal == 0 or IsAltKeyDown() then
-			info.text, info.arg1, info.checked = (L"Ring: %s"):format("|cffaaffff" .. (name or key) .. "|r"), key, key == OR_CurrentOptionsDomain and 1 or nil;
-			UIDropDownMenu_AddButton(info);
-		end
+	local info = UIDropDownMenu_CreateInfo()
+	info.func, info.arg1, info.text, info.checked, info.minWidth = OPC_OptionDomain.click, nil, L"Defaults for all rings", OR_CurrentOptionsDomain == nil and 1 or nil, self:GetWidth()-40
+	UIDropDownMenu_AddButton(info)
+	local ct = T.OPC_RingScopePrefixes
+	for key, name, scope in OneRingLib:IterateRings(IsAltKeyDown()) do
+		local color = ct and ct[scope] or "|cffacd7e6"
+		info.text, info.arg1, info.checked = (L"Ring: %s"):format(color .. (name or key) .. "|r"), key, key == OR_CurrentOptionsDomain and 1 or nil
+		UIDropDownMenu_AddButton(info)
 	end
 end
 local function OPC_Profile_NewCallback(self, text, apply, frame)
@@ -611,53 +658,58 @@ function OPC_Profile:delete(_, frame)
 	frame.refresh("profile")
 end
 function OPC_Profile:initialize()
-	local info = UIDropDownMenu_CreateInfo();
-	info.func, info.arg2 = OPC_Profile.switch, self:GetParent();
+	local info = UIDropDownMenu_CreateInfo()
+	info.func, info.arg2 = OPC_Profile.switch, self:GetParent()
 	for ident, isActive in OneRingLib.Profiles do
-		info.text, info.arg1, info.checked = ident, ident, isActive or nil;
-		UIDropDownMenu_AddButton(info);
+		info.text, info.arg1, info.checked = ident, ident, isActive or nil
+		UIDropDownMenu_AddButton(info)
 	end
-	info.text, info.disabled, info.checked, info.notCheckable, info.justifyH = "", true, nil, true, "CENTER"; UIDropDownMenu_AddButton(info);
-	info.text, info.disabled, info.minWidth, info.func = L"Create a new profile", false, self:GetWidth()-40, OPC_Profile.new; UIDropDownMenu_AddButton(info);
-	info.text, info.func = OneRingLib:GetCurrentProfile() ~= "default" and L"Delete current profile" or L"Restore default settings", OPC_Profile.delete; UIDropDownMenu_AddButton(info);
+	info.text, info.disabled, info.checked, info.notCheckable, info.justifyH = "", true, nil, true, "CENTER"
+	UIDropDownMenu_AddButton(info)
+	info.text, info.disabled, info.minWidth, info.func = L"Create a new profile", false, self:GetWidth()-40, OPC_Profile.new
+	UIDropDownMenu_AddButton(info)
+	info.text, info.func = OneRingLib:GetCurrentProfile() ~= "default" and L"Delete current profile" or L"Restore default settings", OPC_Profile.delete
+	UIDropDownMenu_AddButton(info)
 end
 function frame.refresh()
-	OPC_BlockInput = true;
-	frame.desc:SetText(L"Customize OPie's appearance and behavior. Right clicking a checkbox restores it to its default state." .. "\n" .. L"Profiles activate automatically when you switch between your primary and secondary specializations.");
+	OPC_BlockInput = true
+	frame.desc:SetText(L"Customize OPie's appearance and behavior. Right clicking a checkbox restores it to its default state." .. "\n" .. L"Profiles activate automatically when you switch between your primary and secondary specializations.")
 	for _, v in pairs(OPC_OptionSets) do
 		v.label:SetText(v[1])
 		for j=2,#v do
 			v[j].widget.text:SetText(v.caption)
 		end
 	end
-	local label = L"Defaults for all rings";
+	local label = L"Defaults for all rings"
 	if OR_CurrentOptionsDomain then
-		local name, key = OneRingLib:GetRingInfo(OR_CurrentOptionsDomain);
-		label = (L"Ring: %s"):format("|cffaaffff" .. (name or key) .."|r");
+		local name, key = OneRingLib:GetRingInfo(OR_CurrentOptionsDomain)
+		label = (L"Ring: %s"):format("|cffaaffff" .. (name or key) .."|r")
 	end
-	UIDropDownMenu_SetText(OPC_OptionDomain, label);
-	UIDropDownMenu_SetText(OPC_Profile, L"Profile" .. ": " .. OneRingLib:GetCurrentProfile());
+	UIDropDownMenu_SetText(OPC_OptionDomain, label)
+	UIDropDownMenu_SetText(OPC_Profile, L"Profile" .. ": " .. OneRingLib:GetCurrentProfile())
 	for _, set in pairs(OPC_OptionSets) do for j=2,#set do
-		local v, opttype, option = set[j], set[j][1], set[j][2];
+		local v, opttype, option = set[j], set[j][1], set[j][2]
 		if opttype == "range" then
-			v.widget:SetValue(OneRingLib:GetOption(option) * (v[3] < v[4] and 1 or -1));
+			v.widget:SetValue(OneRingLib:GetOption(option) * (v[3] < v[4] and 1 or -1))
 			local text = v.caption
 			if v.suffix then
 				text = text .. " |cffffd500" .. v.suffix:format(v.widget:GetValue()) .. "|r"
 			end
-			v.widget.text:SetText(text);
+			v.widget.text:SetText(text)
 		elseif opttype == "bool" then
-			v.widget:SetChecked(OneRingLib:GetOption(option, OR_CurrentOptionsDomain) or nil);
+			v.widget:SetChecked(OneRingLib:GetOption(option, OR_CurrentOptionsDomain) or nil)
 			v.widget.text:SetText(v.caption)
 		end
 		if v.depOn then
-			local match = OneRingLib:GetOption(v.depOn, OR_CurrentOptionsDomain) == v.depValue;
-			v.widget:SetEnabled(match);
-			if not match then v.widget:SetChecked(v.otherwise or nil); end
+			local match = OneRingLib:GetOption(v.depOn, OR_CurrentOptionsDomain) == v.depValue
+			v.widget:SetEnabled(match)
+			if not match then
+				v.widget:SetChecked(v.otherwise or nil)
+			end
 		end
 		v.widget:SetShown(not v.global or OR_CurrentOptionsDomain == nil)
 	end end
-	OPC_BlockInput = false;
+	OPC_BlockInput = false
 	config.checkSVState(frame)
 end
 function frame.cancel()
@@ -684,7 +736,7 @@ local function addSuffix(func, word, ...)
 end
 config.AddSlashSuffix = addSuffix
 
-SLASH_OPIE1, SLASH_OPIE2 = "/opie", "/op";
+SLASH_OPIE1, SLASH_OPIE2 = "/opie", "/op"
 SlashCmdList["OPIE"] = function(args, ...)
 	local ext = slashExtensions[(args:match("%S+") or ""):lower()]
 	if ext then

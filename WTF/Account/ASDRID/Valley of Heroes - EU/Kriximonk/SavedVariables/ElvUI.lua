@@ -1,0 +1,33 @@
+
+ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+	["ChatEditHistory"] = {
+		"/g |cff71d5ff|Htalent:20173|h[Diffuse Magic]|h|r|cff71d5ff|Htalent:22214|h[Summon Jade Serpent Statue]|h|r", -- [1]
+		"/g |cff71d5ff|Htalent:22169|h[Focused Thunder]|h|r", -- [2]
+		"/g i think you could tft effuse x2", -- [3]
+		"/g to top adds", -- [4]
+		"/g or even", -- [5]
+		"/g enveloping two different adds", -- [6]
+		"/g then hitthe third with a hardcast", -- [7]
+		"/g and then spamm", -- [8]
+		"/g vivify", -- [9]
+		" were we playing?", -- [10]
+		" who 5th=", -- [11]
+		" ?", -- [12]
+		"/p ress them", -- [13]
+		"/wid", -- [14]
+		" you doing another one soon?", -- [15]
+		" okay", -- [16]
+		" oke", -- [17]
+		"/ec", -- [18]
+		"/bt", -- [19]
+		"/abs restore ww", -- [20]
+	},
+}

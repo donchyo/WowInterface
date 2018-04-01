@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Odyn", 1041, 1489)
+local mod, CL = BigWigs:NewBoss("Odyn", 1477, 1489)
 if not mod then return end
 mod:RegisterEnableMob(95676)
 mod.engageId = 1809
@@ -65,9 +65,9 @@ end
 -- Event Handlers
 --
 
-function mod:Warmup(_, msg)
+function mod:Warmup(event, msg)
 	if msg == L.gossip_trigger then
-		self:UnregisterEvent("CHAT_MSG_MONSTER_YELL")
+		self:UnregisterEvent(event)
 		self:Bar("warmup", 29.4, L.gossip_available, "achievement_boss_odyn")
 	end
 end

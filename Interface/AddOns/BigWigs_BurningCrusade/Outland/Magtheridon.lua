@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Magtheridon", 779, 1566)
+local mod, CL = BigWigs:NewBoss("Magtheridon", 544, 1566)
 if not mod then return end
 mod:RegisterEnableMob(17257, 17256) --Magtheridon, Hellfire Channeler
 
@@ -133,7 +133,7 @@ end
 
 function mod:Start()
 	self:CDBar(30616, 58) -- Nova
-	self:DelayedMessage(30616, 56, CL["soon"]:format(self:SpellName(30616)), "Urgent") -- Nova
+	self:DelayedMessage(30616, 56, "Urgent", CL["soon"]:format(self:SpellName(30616))) -- Nova
 	self:Berserk(1200)
 
 	self:StopBar(L["escape_bar"])

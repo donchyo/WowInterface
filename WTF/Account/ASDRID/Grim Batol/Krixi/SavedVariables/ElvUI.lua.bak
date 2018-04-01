@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		" then they started nerfing alot", -- [1]
-		"/p it does big damage", -- [2]
-		"/p you dont press jade lightning unless you have the chest tough", -- [3]
-		"/cw Knucklex-Antonidas yueah", -- [4]
-		"/cw Knucklex-Antonidas worrying", -- [5]
-		"/cw Knucklex-Antonidas starting to think", -- [6]
-		"/cw Knucklex-Antonidas most peeople dont have a brain", -- [7]
-		"/cw Knucklex-Antonidas hes 3.2k ", -- [8]
-		"/cw Knucklex-Antonidas has done a 20cos", -- [9]
-		"/cw Knucklex-Antonidas so i have some hope", -- [10]
-		"/p hmm", -- [11]
-		"/p the lantern isnt working for me", -- [12]
-		"/reload", -- [13]
-		"/p okay, i am on my way!", -- [14]
-		"/cw Knucklex-Antonidas yea", -- [15]
-		"/cw Knucklex-Antonidas even if it lives 1min", -- [16]
-		"/cw Knucklex-Antonidas or whatever", -- [17]
-		"/cw Knucklex-Antonidas its worth", -- [18]
-		"/cw Knucklex-Antonidas :D", -- [19]
-		"/p thanks for the run", -- [20]
+		"/p if it bounces ", -- [1]
+		"/p you die", -- [2]
+		"/p ty", -- [3]
+		"/wa", -- [4]
+		"/p i figured i was far enough away", -- [5]
+		" absolute joke to do ", -- [6]
+		" i need 5 skill on my dk", -- [7]
+		" i've given up", -- [8]
+		" im gonna do 2x dmf for that", -- [9]
+		" i dont have time for that shit anymore lol", -- [10]
+		" i dont have time for anything anymore :(", -- [11]
+		"/p bloodline carry", -- [12]
+		"/p :)", -- [13]
+		"/p yup", -- [14]
+		"/p lol", -- [15]
+		"/p haha", -- [16]
+		" im lucky as always", -- [17]
+		"/m", -- [18]
+		"/abs save prt", -- [19]
+		"/abs save prot", -- [20]
 	},
 }

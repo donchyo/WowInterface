@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Anub'arak", 543, 1623)
+local mod, CL = BigWigs:NewBoss("Anub'arak", 649, 1623)
 if not mod then return end
 mod.toggleOptions = {66012, "burrow", {67574, "ICON", "FLASH"}, {66013, "FLASH"}, 66118, 66134, "berserk"}
 mod:RegisterEnableMob(34564, 34607, 34605)
@@ -99,7 +99,7 @@ function mod:OnEngage()
 	isBurrowed = nil
 	self:Message("burrow", "Attention", nil, L["engage_message"], 65919)
 	self:Bar("burrow", 80, L["burrow"], 65919)
-	self:DelayedMessage("burrow", 65, L["burrow_soon"], "Attention")
+	self:DelayedMessage("burrow", 65, "Attention", L["burrow_soon"])
 
 	self:Bar("burrow", 10, L["nerubian_burrower"], 66333)
 	handle_NextWave = self:ScheduleTimer(scheduleWave, 10)

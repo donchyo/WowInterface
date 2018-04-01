@@ -5,319 +5,11 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 19,
 	["tabela_historico"] = {
 		["tabelas"] = {
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 92,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006649,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Shivarra Destroyer"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006649,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.006649,
-							["classe"] = "MONK",
-							["damage_taken"] = 1398801.006649,
-							["nome"] = "Kriximonk",
-							["spec"] = 270,
-							["grupo"] = true,
-							["end_time"] = 1517751110,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1517751110,
-							["serial"] = "Player-1303-04AFFB5A",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 92,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 92,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 92,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kriximonk",
-							["spec"] = 270,
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 81,
-							["classe"] = "MONK",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[209162] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 209162,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[188031] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 188031,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[186401] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 186401,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[42777] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 42777,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[93368] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 93368,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[214502] = {
-										["activedamt"] = 1,
-										["id"] = 214502,
-										["targets"] = {
-										},
-										["actived_at"] = 1517751109,
-										["uptime"] = 9,
-										["counter"] = 0,
-										["refreshamt"] = 1,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[2479] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 2479,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-1303-04AFFB5A",
-							["last_event"] = 1517751110,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 92,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Kriximonk"] = true,
-				},
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Shivarra Destroyer",
-				["combat_counter"] = 17895,
-				["playing_solo"] = true,
-				["totals"] = {
-					-0.0823219999763016, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = -0.00808699999999973,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-					["Kriximonk"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							1288675, -- [3]
-							1517751130.463, -- [4]
-							4388705, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						["n"] = 2,
-					},
-				},
-				["frags_need_refresh"] = false,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Kriximonk"] = 0.006649,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 433850.668,
-				["instance_type"] = "none",
-				["combat_id"] = 92,
-				["TimeData"] = {
-				},
-				["hasSaved"] = true,
-				["frags"] = {
-				},
-				["data_fim"] = "14:31:50",
-				["data_inicio"] = "14:31:38",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 433838.66,
-				["contra"] = "Shivarra Destroyer",
-				["is_temporary"] = true,
-			}, -- [1]
 		},
 	},
-	["combat_counter"] = 17896,
-	["character_data"] = {
-		["logons"] = 2185,
+	["last_version"] = "v7.3.5.5469",
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["tabela_instancias"] = {
 	},
@@ -343,10 +35,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994755377062,
+					["y"] = -415.994747823962,
 					["x"] = 570.14000540446,
 					["w"] = 203.8720703125,
-					["h"] = 129.303588867188,
+					["h"] = 129.303604125977,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -377,10 +69,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994755377062,
+					["y"] = -415.994747823962,
 					["x"] = 762.194442275391,
 					["w"] = 184.119293212891,
-					["h"] = 129.303588867188,
+					["h"] = 129.303604125977,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -426,13 +118,13 @@ _detalhes_database = {
 	},
 	["cached_talents"] = {
 		["Player-1303-04AFFB5A"] = {
-			22169, -- [1]
-			22093, -- [2]
+			20174, -- [1]
+			19818, -- [2]
 			19995, -- [3]
-			20173, -- [4]
-			22167, -- [5]
-			19823, -- [6]
-			19304, -- [7]
+			20185, -- [4]
+			22103, -- [5]
+			22105, -- [6]
+			22099, -- [7]
 		},
 	},
 	["last_instance_id"] = 1492,
@@ -443,14 +135,13 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
+	["last_instance_time"] = 1517698537,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 128,
-	["ignore_nicktag"] = false,
+	["last_realversion"] = 130,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -458,10 +149,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
-			["author"] = "Details! Team",
-			["level"] = 1,
 			["enabled"] = true,
+			["dps"] = 0,
+			["level"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -470,11 +161,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["hide_on_combat"] = false,
 			["opened"] = 0,
-			["author"] = "Details! Team",
+			["window_scale"] = 1,
 			["show_icon"] = 5,
 			["encounter_timers_dbm"] = {
 			},
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -501,11 +192,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["arrow_anchor_y"] = 0,
-			["main_frame_locked"] = false,
+			["scale"] = 1,
+			["row_height"] = 20,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["point"] = "TOP",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -513,14 +204,9 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["font_size"] = 10,
 			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
@@ -531,22 +217,27 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
+				["update_speed"] = 0.0160000007599592,
+				["attribute_type"] = 1,
 			},
-			["font_size"] = 10,
-			["point"] = "TOP",
-			["row_height"] = 20,
-			["scale"] = 1,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["rightclick_closed"] = false,
 			["auto_open"] = true,
+			["rightclick_closed"] = false,
 			["auto_close"] = true,
-			["hide_on_combat"] = true,
 			["author"] = "Details! Team",
+			["hide_on_combat"] = true,
 			["deaths_table"] = {
 				{
 					"Blast Furnace", -- [1]
@@ -1559,28 +1250,43 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
-			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
+			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
 		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["enabled"] = true,
+			["animate"] = false,
+			["useplayercolor"] = false,
+			["author"] = "Details! Team",
+			["useclasscolors"] = false,
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["showamount"] = false,
+		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -1590,46 +1296,17 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["animate"] = false,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["useclasscolors"] = false,
-			["author"] = "Details! Team",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["enabled"] = true,
 		},
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
+	["last_day"] = "28",
 	["nick_tag_cache"] = {
-		["nextreset"] = 1518396588,
-		[85162672] = {
-			"Vicsur", -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			false, -- [5]
-			false, -- [6]
-			5, -- [7]
-		},
-		["last_version"] = 9,
+		["nextreset"] = 1523552383,
+		["last_version"] = 10,
 	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
+	["ignore_nicktag"] = false,
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Maw of Souls",
 		["started"] = false,
@@ -1641,28 +1318,34 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1492,
 		["previous_boss_killed_at"] = 1517699487,
 	},
-	["last_version"] = "v7.3.0.5231",
+	["combat_counter"] = 17900,
 	["combat_id"] = 92,
 	["savedStyles"] = {
 	},
-	["last_instance_time"] = 1517698537,
-	["last_encounter"] = "Argus the Unmaker",
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["force_font_outline"] = "",
-	["last_day"] = "07",
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["character_data"] = {
+		["logons"] = 2186,
 	},
+	["force_font_outline"] = "",
+	["last_encounter"] = "Argus the Unmaker",
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -1675,6 +1358,6 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-1303-04AFFB5A"] = 270,
+		["Player-1303-04AFFB5A"] = 269,
 	},
 }

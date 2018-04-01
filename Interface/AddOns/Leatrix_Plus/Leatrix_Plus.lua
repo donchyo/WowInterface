@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.3.31 (20th December 2017, www.leatrix.com)
+-- 	Leatrix Plus 7.3.32 (28th March 2018, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.3.31"
+	LeaPlusLC["AddonVer"] = "7.3.32"
 
 ----------------------------------------------------------------------
 --	L00: Leatrix Plus
@@ -3607,8 +3607,9 @@
 
 			local function AuctionFunc()
 
-				-- Set default auction duration value to saved setting or default setting
+				-- Set default auction duration and price type values to saved settings or default settings
 				AuctionFrameAuctions.duration = LeaPlusDB["AHDuration"] or 3
+				AuctionFrameAuctions.priceType = LeaPlusDB["AHPriceType"] or 2
 
 				-- Functions
 				local function CreateAuctionCB(name, anchor, x, y, text)
@@ -6051,21 +6052,25 @@
 
 			-- Position general tooltip
 			hooksecurefunc("GameTooltip_SetDefaultAnchor", function()
-				local a,b,c,d,e = GameTooltip:GetPoint()
-				if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
-					GameTooltip:ClearAllPoints()
+				if LeaPlusLC["TipMoveTip"] == "On" then
+					local a,b,c,d,e = GameTooltip:GetPoint()
+					if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
+						GameTooltip:ClearAllPoints()
+					end
+					GameTooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
 				end
-				GameTooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
 			end)
 
 			-- Position pet battle ability tooltips
 			hooksecurefunc("PetBattleAbilityTooltip_Show", function(tooltip, parent)
-				if parent == UIParent then
-					local a,b,c,d,e = PetBattlePrimaryAbilityTooltip:GetPoint()
-					if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
-						PetBattlePrimaryAbilityTooltip:ClearAllPoints()
+				if LeaPlusLC["TipMoveTip"] == "On" then
+					if parent == UIParent then
+						local a,b,c,d,e = PetBattlePrimaryAbilityTooltip:GetPoint()
+						if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
+							PetBattlePrimaryAbilityTooltip:ClearAllPoints()
+						end
+						PetBattlePrimaryAbilityTooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
 					end
-					PetBattlePrimaryAbilityTooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
 				end
 			end)
 
@@ -6115,16 +6120,17 @@
 
 			-- Add controls
 			LeaPlusLC:MakeTx(SideTip, "Settings", 16, -72)
-			LeaPlusLC:MakeCB(SideTip, "TipShowRank", "Show guild ranks for your guild", 16, -92, false, "If checked, guild ranks will be shown for players in your guild.")
-			LeaPlusLC:MakeCB(SideTip, "TipShowTarget", "Show the unit's target", 16, -112, false, "If checked, unit targets will be shown.")
-			LeaPlusLC:MakeCB(SideTip, "TipBackSimple", "Color the backdrops based on faction", 16, -132, false, "If checked, backdrops will be tinted blue (friendly) or red (hostile).")
-			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -152, false, "If checked, tooltips for world units will be hidden during combat.|n|nYou can hold the shift key down to override this setting.")
+			LeaPlusLC:MakeCB(SideTip, "TipMoveTip", "Reposition the tooltip", 16, -92, false, "If checked, you will be able to reposition the tooltip.")
+			LeaPlusLC:MakeCB(SideTip, "TipShowRank", "Show guild ranks for your guild", 16, -112, false, "If checked, guild ranks will be shown for players in your guild.")
+			LeaPlusLC:MakeCB(SideTip, "TipShowTarget", "Show the unit's target", 16, -132, false, "If checked, unit targets will be shown.")
+			LeaPlusLC:MakeCB(SideTip, "TipBackSimple", "Color the backdrops based on faction", 16, -152, false, "If checked, backdrops will be tinted blue (friendly) or red (hostile).")
+			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -172, false, "If checked, tooltips for world units will be hidden during combat.|n|nYou can hold the shift key down to override this setting.")
 
 			LeaPlusLC:MakeTx(SideTip, "Tooltip scale", 356, -72)
 			LeaPlusLC:MakeSL(SideTip, "LeaPlusTipSize", "", 0.50, 2.00, 0.05, 356, -92, "%.2f")
 
-			-- Help button tooltip
-			SideTip.h.tiptext = L["Drag the tooltip overlay to position it."]
+			-- Help button hidden
+			SideTip.h:Hide()
 
 			-- Back button handler
 			SideTip.b:SetScript("OnClick", function() 
@@ -6139,6 +6145,7 @@
 
 			-- Reset button handler
 			SideTip.r:SetScript("OnClick", function()
+				LeaPlusLC["TipMoveTip"] = "On";
 				LeaPlusLC["TipShowRank"] = "On";
 				LeaPlusLC["TipShowTarget"] = "On";
 				LeaPlusLC["TipBackSimple"] = "Off";
@@ -6151,8 +6158,21 @@
 				SideTip:Hide(); SideTip:Show();
 			end)
 
+			-- Show tooltip overlay only if reposition checkbox is checked
+			LeaPlusCB["TipMoveTip"]:HookScript("OnClick", function()
+				if LeaPlusLC["TipMoveTip"] == "On" then
+					TipDrag:Show()
+				else
+					TipDrag:Hide()
+				end
+			end)
+
 			-- Show drag frame with configuration panel
-			SideTip:HookScript("OnShow", function() TipDrag:Show() end)
+			SideTip:HookScript("OnShow", function()
+				if LeaPlusLC["TipMoveTip"] == "On" then
+					TipDrag:Show()
+				end
+			end)
 			SideTip:HookScript("OnHide", function() TipDrag:Hide() end)
 
 			-- Control movement functions
@@ -6178,6 +6198,7 @@
 			LeaPlusCB["MoveTooltipButton"]:SetScript("OnClick", function()
 				if IsShiftKeyDown() and IsControlKeyDown() then
 					-- Preset profile
+					LeaPlusLC["TipMoveTip"] = "On";
 					LeaPlusLC["TipShowRank"] = "On";
 					LeaPlusLC["TipShowTarget"] = "On";
 					LeaPlusLC["TipBackSimple"] = "On";
@@ -7413,10 +7434,10 @@
 			Zn(L["Dungeons"], L["Bloodmaul Slag Mines"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Bloodmaul Slag Mines"], "MUS_60_FFR_Ogre_Walk#49192", "MUS_60_FFR_Ogre_Battle#49195",})
 			Zn(L["Dungeons"], L["Everbloom"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Everbloom"], "MUS_60_Dungeon_Everbloom_Stormwind#49219", "MUS_60_Dungeon_Everbloom_PoolsofLife#49220", "MUS_60_Dungeon_Everbloom_Verdant_Grove#49221", "MUS_60_Dungeon_Everbloom_Xeritacs_Burrow#49222", "MUS_60_Dungeon_Everbloom_VioletBluff#49223",})
 			Zn(L["Dungeons"], L["Hellfire Citadel"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Hellfire Citadel"], "MUS_62_Tanaan_HFC_IronHorde_Cathedral_Walk#51515", "MUS_62_Tanaan_HFC_IronHorde_Fel_Walk#51519", "MUS_62_Tanaan_HFC_Boss_Battle#51573", "MUS_62_Tanaan_HFC_Kilrogg_Batlle#51574", "MUS_62_Tanaan_HFC_Fel_Walk#51520", "MUS_62_Tanaan_HFC_Archimonde_Battle#51525", "MUS_62_Tanaan_HFC_Eredar_Walk#51521", "MUS_62_Tanaan_HFC_Iskar_Battle#51522", "MUS_62_Tanaan_HFC_Grommash_Battle#51523", "MUS_62_Tanaan_HFC_Archimonde_TwistingNether_Walk#51526",})
+			Zn(L["Dungeons"], L["Highmaul"]						, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Highmaul"], "MUS_60_Dungeon_Highmaul_General#49276", "MUS_60_Dungeon_Highmaul_ImperatorsRise#49351", "MUS_60_Dungeon_Highmaul_PathOfVictors#49345", "MUS_60_Dungeon_Highmaul_TheUnderbelly#49282",})
 			Zn(L["Dungeons"], L["Iron Docks"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Iron Docks"], "MUS_60_Dungeon_IronDocks_Walk#49187", "MUS_60_Dungeon_IronDocks_BlackhandsMight#49188",})
 			Zn(L["Dungeons"], L["Shadowmoon Burial Grounds"]	, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Shadowmoon Burial Grounds"], "MUS_60_Dungeon_SMBurialGrounds_Walk#49206", "MUS_60_Dungeon_SMBurialGrounds_CryptsoftheAncients#49208", "MUS_60_Dungeon_SMBurialGrounds_PoolsofReflection#49209", "MUS_60_Dungeon_SMBurialGrounds_AltarofShadow#49210",})
 			Zn(L["Dungeons"], L["Skyreach"]						, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Skyreach"], "MUS_60_Dungeon_Skyreach_General_A#49129",})
-			Zn(L["Dungeons"], L["Highmaul"]						, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Highmaul"], "MUS_60_Dungeon_Highmaul_General#49276", "MUS_60_Dungeon_Highmaul_ImperatorsRise#49351", "MUS_60_Dungeon_Highmaul_PathOfVictors#49345", "MUS_60_Dungeon_Highmaul_TheUnderbelly#49282",})
 
 			-- Dungeons: Legion
 			Zn(L["Dungeons"], "|cffffd800", {""})
@@ -7473,7 +7494,7 @@
 			Zn(L["Movies"], L["Cataclysm"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Cataclysm"], L["Cataclysm"] .. " |r(23)", L["Last Stand"] .. " |r(21)", L["Leaving Kezan"] .. " |r(22)", L["The Dragon Soul"] .. " |r(73)", L["Spine of Deathwing"] .. " |r(74)", L["Madness of Deathwing"] .. " |r(75)", L["Fall of Deathwing"] .. " |r(76)"})
 			Zn(L["Movies"], L["Mists of Pandaria"]				, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Warlords of Draenor"]			, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
-			Zn(L["Movies"], L["Legion"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["An Unclear Path"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)"})
+			Zn(L["Movies"], L["Legion"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["An Unclear Path"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
 
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
@@ -8660,6 +8681,7 @@
 				LeaPlusLC:LoadVarNum("MinimapScale", 1.00, 0.50, 2.00)		-- Minimap scale slider
 
 				LeaPlusLC:LoadVarChk("TipModEnable", "Off")					-- Manage tooltip
+				LeaPlusLC:LoadVarChk("TipMoveTip", "On")					-- Reposition the tooltip
 				LeaPlusLC:LoadVarChk("TipShowRank", "On")					-- Show rank
 				LeaPlusLC:LoadVarChk("TipShowTarget", "On")					-- Show target
 				LeaPlusLC:LoadVarChk("TipBackSimple", "Off")				-- Color backdrops
@@ -8891,6 +8913,7 @@
 			LeaPlusDB["MinimapScale"]			= LeaPlusLC["MinimapScale"]
 
 			LeaPlusDB["TipModEnable"]			= LeaPlusLC["TipModEnable"]
+			LeaPlusDB["TipMoveTip"]				= LeaPlusLC["TipMoveTip"]
 			LeaPlusDB["TipShowRank"]			= LeaPlusLC["TipShowRank"]
 			LeaPlusDB["TipShowTarget"]			= LeaPlusLC["TipShowTarget"]
 			LeaPlusDB["TipBackSimple"]			= LeaPlusLC["TipBackSimple"]
@@ -9091,10 +9114,15 @@
 			TargetFrame:SetUserPlaced(false)
 		end
 
-		-- Store the auction house duration value if auction house option is enabled
+		-- Store the auction house duration and price type values if auction house option is enabled
 		if LeaPlusDB["AhExtras"] == "On" then
-			if AuctionFrameAuctions and AuctionFrameAuctions.duration then
-				LeaPlusDB["AHDuration"] = AuctionFrameAuctions.duration
+			if AuctionFrameAuctions then
+				if AuctionFrameAuctions.duration then
+					LeaPlusDB["AHDuration"] = AuctionFrameAuctions.duration
+				end
+				if AuctionFrameAuctions.priceType then
+					LeaPlusDB["AHPriceType"] = AuctionFrameAuctions.priceType
+				end
 			end
 		end
 
@@ -9920,20 +9948,24 @@
 					LeaPlusLC.grid = CreateFrame('FRAME') 
 					LeaPlusLC.grid:Hide()
 					LeaPlusLC.grid:SetAllPoints(UIParent)
-					local w, h = GetScreenWidth() / 64, GetScreenHeight() / 36
+					local w, h = GetScreenWidth() * UIParent:GetEffectiveScale(), GetScreenHeight() * UIParent:GetEffectiveScale()
+					local ratio = w / h
+					local sqsize = w / 20
+					local wline = floor(sqsize - (sqsize % 2))
+					local hline = floor(sqsize / ratio - ((sqsize / ratio) % 2))
 					-- Plot vertical lines
-					for i = 0, 64 do
+					for i = 0, wline do
 						local t = LeaPlusLC.grid:CreateTexture(nil, 'BACKGROUND')
-						if i == 32 then t:SetColorTexture(1, 0, 0, 0.5) else t:SetColorTexture(0, 0, 0, 0.5) end
-						t:SetPoint('TOPLEFT', LeaPlusLC.grid, 'TOPLEFT', i * w - 1, 0)
-						t:SetPoint('BOTTOMRIGHT', LeaPlusLC.grid, 'BOTTOMLEFT', i * w + 1, 0)
+						if i == wline / 2 then t:SetColorTexture(1, 0, 0, 0.5) else t:SetColorTexture(0, 0, 0, 0.5) end
+						t:SetPoint('TOPLEFT', LeaPlusLC.grid, 'TOPLEFT', i * w / wline - 1, 0)
+						t:SetPoint('BOTTOMRIGHT', LeaPlusLC.grid, 'BOTTOMLEFT', i * w / wline + 1, 0)
 					end
 					-- Plot horizontal lines
-					for i = 0, 36 do
+					for i = 0, hline do
 						local t = LeaPlusLC.grid:CreateTexture(nil, 'BACKGROUND')
-						if i == 18 then	t:SetColorTexture(1, 0, 0, 0.5) else t:SetColorTexture(0, 0, 0, 0.5) end
-						t:SetPoint('TOPLEFT', LeaPlusLC.grid, 'TOPLEFT', 0, -i * h + 1)
-						t:SetPoint('BOTTOMRIGHT', LeaPlusLC.grid, 'TOPRIGHT', 0, -i * h - 1)
+						if i == hline / 2 then	t:SetColorTexture(1, 0, 0, 0.5) else t:SetColorTexture(0, 0, 0, 0.5) end
+						t:SetPoint('TOPLEFT', LeaPlusLC.grid, 'TOPLEFT', 0, -i * h / hline + 1)
+						t:SetPoint('BOTTOMRIGHT', LeaPlusLC.grid, 'TOPRIGHT', 0, -i * h / hline - 1)
 					end	
 				end
 				-- Show or hide grid
@@ -10474,6 +10506,32 @@
 					LeaPlusLC.MarkerFrame.Toggle = false
 				end
 				return
+			elseif str == "af" then
+				-- Automatically follow player target using ticker
+				if LeaPlusLC.followTick then
+					-- Existing ticker is active so cancel it
+					LeaPlusLC.followTick:Cancel()
+					LeaPlusLC.followTick = nil
+					FollowUnit("player")
+					LeaPlusLC:Print("AutoFollow disabled.")
+				else
+					-- No ticker is active so create one
+					local targetName, targetRealm = UnitName("target")
+					if not targetName or not UnitIsPlayer("target") or UnitIsUnit("player", "target") then
+						LeaPlusLC:Print("Invalid target.")
+						return
+					end
+					if targetRealm then targetName = targetName .. "-" .. targetRealm end
+					if LeaPlusLC.followTick then
+						LeaPlusLC.followTick:Cancel()
+					end
+					FollowUnit(targetName, true)
+					LeaPlusLC.followTick = C_Timer.NewTicker(0.5, function()
+						FollowUnit(targetName, true)
+					end)
+					LeaPlusLC:Print(L["AutoFollow"] .. ": |cffffffff" .. targetName .. "|r.")
+				end
+				return
 			elseif str == "admin" then
 				-- Preset profile (used for testing)
 				LpEvt:UnregisterAllEvents()						-- Prevent changes
@@ -10959,7 +11017,7 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Extras"					, 	340, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowVolume"				, 	"Show volume slider"			, 	340, -92, 	true,	"If checked, a master volume slider will be shown on the character sheet.|n|nThe volume slider can be placed in either of two locations on the character sheet.  To toggle between them, hold the shift key down and right-click the slider.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AhExtras"					, 	"Show auction controls"			, 	340, -112, 	true,	"If checked, additional functionality will be added to the auction house.|n|nBuyout only - create buyout auctions without filling in the starting price.|n|nGold only - set the copper and silver prices at 99 to speed up new auctions.|n|nFind - search the auction house for the item you are selling.|n|nIn addition, the auction duration setting will be saved account-wide.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AhExtras"					, 	"Show auction controls"			, 	340, -112, 	true,	"If checked, additional functionality will be added to the auction house.|n|nBuyout only - create buyout auctions without filling in the starting price.|n|nGold only - set the copper and silver prices at 99 to speed up new auctions.|n|nFind item - search the auction house for the item you are selling.|n|nIn addition, the auction price type and duration settings will be saved account-wide.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "StaticCoordsEn"			, 	"Show coordinates"				, 	340, -132, 	true,	"If checked, coordinates representing your character's location will be shown in a movable, customisable frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowCooldowns"				, 	"Show cooldowns"				, 	340, -152, 	true,	"If checked, you will be able to place up to five beneficial cooldown icons above the target or player frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "DurabilityStatus"			, 	"Show durability status"		, 	340, -172, 	true,	"If checked, a button will be added to the character sheet which will show your equipped item durability when you hover the pointer over it.|n|nIn addition, an overall percentage will be shown in the chat frame when you die.")

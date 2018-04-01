@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["ChatEditHistory"] = {
-		" the tank keeps pulling", -- [1]
-		" when mobs are on 30%", -- [2]
-		" whats bolstering", -- [3]
-		" [02:11:14] To [Backpaddl]: the tank has mythic tier gear [02:11:32] [P] [Lozi-Frostmane]: ok HEALER [02:11:40] [P] [Lozi-Frostmane]: Main raider IO 5K [02:11:56] [P] [Lozi-Frostmane]: IF I die im screen shottin it", -- [4]
-		" https://i.imgur.com/PtvpqI5.png", -- [5]
-		" NOPE", -- [6]
-		" easy p1 wipe on last boss", -- [7]
-		" you know", -- [8]
-		" i had hopes", -- [9]
-		" its over atleast", -- [10]
-		" hahaah", -- [11]
-		" |cffa335ee|Hitem:142173::::::::110:264::16:3:3536:1572:3337:::|h[Ring of Collapsing Futures]|h|r", -- [12]
-		"/cw Talinsghor-Frostmane i got my 15 done", -- [13]
-		"/cw Talinsghor-Frostmane alli wanted :)", -- [14]
-		" na", -- [15]
-		" me", -- [16]
-		"/p thanks for the run", -- [17]
-		"/cw Drizztthepal-Antonidas can you put wisdom on me instead of the dead guy? :)", -- [18]
-		"/cw Drizztthepal-Antonidas thanks", -- [19]
-		"/raid release", -- [20]
+		"/g only alliance char you have left?", -- [1]
+		"/g im gonna pee fast", -- [2]
+		"/g i guess hes not comming ", -- [3]
+		"/g im already there", -- [4]
+		"/p hi team", -- [5]
+		" like, augment rune?", -- [6]
+		" i thnk there is a show on missing or something", -- [7]
+		" at the bottom", -- [8]
+		" of the trigger", -- [9]
+		" bottom", -- [10]
+		" green one", -- [11]
+		" :)", -- [12]
+		" sick", -- [13]
+		" just some +15s", -- [14]
+		" its so shit for dungeon", -- [15]
+		"/p ty ", -- [16]
+		" do you need on your dh?", -- [17]
+		"/p hero tenttacles or helya?", -- [18]
+		"/p ty", -- [19]
+		"/p hi", -- [20]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 }

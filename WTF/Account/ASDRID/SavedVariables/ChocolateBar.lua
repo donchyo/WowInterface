@@ -1,33 +1,40 @@
 
 ChocolateBarDB = {
 	["profileKeys"] = {
-		["Donch - Grim Batol"] = "Default",
+		["Krixi - Valley of Heroes - EU"] = "Default",
 		["Krixidk - Grim Batol"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
+		["Menardiairl - Culte de la Rive noire"] = "Default",
+		["Krixiwarrior - Valley of Heroes - EU"] = "Default",
+		["Krixidruid - Valley of Heroes - EU"] = "Default",
+		["Lilgaykrixi - Kazzak"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
+		["Krixiyo - Twisting Nether"] = "Default",
 		["Kroxi - Grim Batol"] = "Default",
 		["Namji - Grim Batol"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
-		["Zolution - Grim Batol"] = "Default",
-		["Donchyo - Shattered Hand"] = "Default",
-		["Lowerboost - Lightbringer"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
+		["Krixiyo - Lightning's Blade"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
-		["Lilgaykrixi - Kazzak"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
+		["Kriximonk - Valley of Heroes - EU"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
+		["Krixidh - Grim Batol"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
-		["Líttle - Grim Batol"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
-		["Spacegoatx - Aggra (Português)"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
-		["Asdasdasdfaf - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
-		["Menardiairl - Culte de la Rive noire"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
+		["Spacegoatx - Aggra (Português)"] = "Default",
+		["Krixidh - Valley of Heroes - EU"] = "Default",
+		["Asdasdasdfaf - Grim Batol"] = "Default",
+		["Líttle - Grim Batol"] = "Default",
+		["Donchyo - Shattered Hand"] = "Default",
+		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Krixiyo - Lightning's Blade"] = "Default",
-		["Krixiyo - Twisting Nether"] = "Default",
+		["Donch - Grim Batol"] = "Default",
+		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -142,6 +149,12 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 2,
 				},
+				["MethodDungeonTools"] = {
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["align"] = "right",
+					["index"] = 1,
+				},
 				["ExRT"] = {
 					["enabled"] = false,
 					["showText"] = false,
@@ -157,16 +170,14 @@ ChocolateBarDB = {
 					["index"] = 2,
 				},
 				["BugSack"] = {
-					["index"] = 3,
+					["index"] = 4,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
-				["Masque"] = {
-					["enabled"] = false,
+				["Acherus"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["index"] = 11,
 				},
 				["AtlasLoot"] = {
 					["enabled"] = false,
@@ -175,12 +186,13 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 5,
 				},
-				["Acherus"] = {
+				["mRunes"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
-				["mRunes"] = {
+				["MaxCam"] = {
+					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
@@ -193,7 +205,7 @@ ChocolateBarDB = {
 					["index"] = 3,
 				},
 				["SavedInstances"] = {
-					["index"] = 1,
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 					["showText"] = false,
@@ -202,21 +214,19 @@ ChocolateBarDB = {
 					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["MaxCam"] = {
+				["MogIt"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+					["index"] = 6,
 				},
 				["Rarity"] = {
 					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["MoreChocolate"] = {
-					["enabled"] = false,
-					["index"] = 1,
+				["epgp"] = {
 					["barName"] = "ChocolateBar1",
-					["showText"] = false,
 				},
 				["TradeSkillMaster"] = {
 					["index"] = 4,
@@ -237,21 +247,17 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 8,
 				},
-				["epgp"] = {
+				["MoreChocolate"] = {
+					["enabled"] = false,
+					["index"] = 1,
 					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 				},
 				["AutoTitle Minimap"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-				},
-				["MogIt"] = {
-					["enabled"] = false,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["align"] = "right",
-					["index"] = 6,
 				},
 				["CrossRealmAssistMinimapIcon"] = {
 					["index"] = 3,
@@ -264,6 +270,13 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+				},
+				["Masque"] = {
+					["enabled"] = false,
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["align"] = "right",
+					["index"] = 11,
 				},
 				["TimeToDie"] = {
 					["enabled"] = false,

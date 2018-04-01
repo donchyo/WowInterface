@@ -1,0 +1,33 @@
+
+ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+	},
+	["ChatEditHistory"] = {
+		" ah rip", -- [1]
+		" :D", -- [2]
+		"/p me", -- [3]
+		"/p do you need the ring", -- [4]
+		"/p and relic", -- [5]
+		"/p :D", -- [6]
+		" ok", -- [7]
+		" this is a blaster char", -- [8]
+		" clearly", -- [9]
+		" KKKKKKKKKKKKKKKKKKKKK", -- [10]
+		" im going to bed", -- [11]
+		" i see whne im not wanted", -- [12]
+		"/ec", -- [13]
+		"/bt", -- [14]
+		"/abs restore prot", -- [15]
+		"/abs error", -- [16]
+		"/abs errors", -- [17]
+		"/m", -- [18]
+		"/wa", -- [19]
+		"/reload", -- [20]
+	},
+	["BodyGuard"] = {
+		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+}

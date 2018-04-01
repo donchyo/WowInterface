@@ -1,7 +1,7 @@
 local _, T = ...
 
 local EV, L = T.Evie, T.L
-local AB = assert(T.ActionBook:compatible(2,17), "A compatible version of ActionBook is required.")
+local AB = assert(T.ActionBook:compatible(2,21), "A compatible version of ActionBook is required.")
 local RW = assert(AB:compatible("Rewire", 1,7), "A compatible version of Rewire is required")
 local PLAYERNAME = UnitName("player") .. "@" .. GetRealmName()
 

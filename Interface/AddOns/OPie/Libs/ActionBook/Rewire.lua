@@ -1,4 +1,4 @@
-local api, MAJ, REV, _, T = {}, 1, 10, ...
+local api, MAJ, REV, _, T = {}, 1, 11, ...
 if T.ActionBook then return end
 local AB, KR = nil, assert(T.Kindred:compatible(1,8), "A compatible version of Kindred is required.")
 
@@ -192,6 +192,9 @@ core:SetAttribute("RunMacro", [=[-- Rewire:RunMacro
 		if ct % 2 > 0 and m[3] ~= "" then
 			local skipChunks = nil
 			v, t = KR:RunAttribute("EvaluateCmdOptions", m[3], nil, skipChunks)
+			if v and ct % 32 >= 16 then
+				v = KR:RunAttribute("ResolveUnitAlias", v)
+			end
 			if v then
 				nextLine = m[2] .. (t and " [@" .. t .. "] " or " ") .. v
 			else
@@ -393,6 +396,12 @@ local function init()
 	end
 	for k in ("DISMOUNT LEAVEVEHICLE SET_TITLE USE_TALENT_SPEC TARGET_MARKER"):gmatch("%S+") do
 		api:ImportSlashCmd(k, true, false)
+	end
+	for k in ("STARTATTACK TARGET TARGET_EXACT ASSIST FOCUS MAINTANKON MAINTANKOFF MAINASSISTON MAINASSISTOFF PET_ATTACK"):gmatch("%S+") do
+		local cmd = _G["SLASH_" .. k .. "1"]
+		if cmd and IsSecureCmd(cmd) then
+			setCommandType(cmd, 1+2+16)
+		end
 	end
 	for m in ("#mute #unmute #mutenext #parse"):gmatch("%S+") do
 		api:RegisterCommand(m, true, false, core)

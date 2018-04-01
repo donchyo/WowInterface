@@ -254,6 +254,7 @@ function LT:LootShow()
 
 	if (not instance and LT.db.history.autohide) then
 		_G["LootHistoryFrame"]:Hide()
+		if SLE._Compatibility["ElvUI_PagedLootHistory"] then _G["ElvUI_PagedLootHistoryFrame"]:Hide() end
 	end
 end
 
@@ -331,7 +332,6 @@ function LT:Initialize()
 	end
 	LT:Update()
 	hooksecurefunc(M, 'START_LOOT_ROLL', function(self, event, id) LT:HandleRoll(event, id) end)
-	-- hooksecurefunc("LootHistoryFrame_FullUpdate", )
 	LT:LootIconToggle()
 end
 

@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Ra-den", 930, 831)
+local mod, CL = BigWigs:NewBoss("Ra-den", 1098, 831)
 if not mod then return end
 mod:RegisterEnableMob(69473)
 
@@ -77,7 +77,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_REMOVED", "UnstableAnimaRemoved", 138288)
 	self:Log("SPELL_DAMAGE", "UnstableAnimaRepeatedDamage", 138295)
 	self:Log("SPELL_AURA_APPLIED", "AnimaSensitivityApplied", 139318)
-	self:Log("SPELL_AURA_APPLIED", "AnimaSensitivityRemoved", 139318)
+	self:Log("SPELL_AURA_REMOVED", "AnimaSensitivityRemoved", 139318)
 	-- Vita abilities
 	self:Log("SPELL_CAST_START", "CracklingStalker", 138339)
 	self:Log("SPELL_CAST_SUCCESS", "FatalStrike", 138334)

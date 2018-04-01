@@ -2,31 +2,32 @@
 -- Boss Prototype
 -- The API of a module created from `BigWigs:NewBoss`.
 --
---### BigWigs:NewBoss (moduleName, mapId[, journalId])
+--### BigWigs:NewBoss (moduleName, instanceId[, journalId])
 --
 --**Parameters:**
 --  - `moduleName`:  [string] a unique module name, usually the boss name
---  - `mapId`:  [number] the map id for the map the boss is located in, negative ids are used to represent world bosses
+--  - `instanceId`:  [number] the instance id for the zone the boss is located in. Negative ids are used to represent map ids using the map API (usually for world bosses)
 --  - `journalId`:  [number] the journal id for the boss, used to translate the boss name (_optional_)
 --
 --**Returns:**
 --  - boss module
---  - [common locale](https://github.com/BigWigsMods/BigWigs/blob/master/Core/Locales/common.enUS.lua) table for the current locale
+--  - [common locale](https://github.com/BigWigsMods/BigWigs/blob/master/Core/Locales/common.enUS.lua) table which holds common locale strings
 --
 -- @module BossPrototype
 -- @alias boss
--- @usage local mod, CL = BigWigs:NewBoss("Archimonde", 1026, 1438)
+-- @usage local mod, CL = BigWigs:NewBoss("Argus the Unmaker", 1712, 2031)
 
 local L = BigWigsAPI:GetLocale("BigWigs: Common")
 local UnitAffectingCombat, UnitIsPlayer, UnitGUID, UnitPosition, UnitIsConnected = UnitAffectingCombat, UnitIsPlayer, UnitGUID, UnitPosition, UnitIsConnected
 local C_EncounterJournal_GetSectionInfo, GetSpellInfo, GetSpellTexture, GetTime, IsSpellKnown = C_EncounterJournal.GetSectionInfo, GetSpellInfo, GetSpellTexture, GetTime, IsSpellKnown
 local UnitGroupRolesAssigned = UnitGroupRolesAssigned
-local SendChatMessage, GetInstanceInfo = BigWigsLoader.SendChatMessage, BigWigsLoader.GetInstanceInfo
-local format, find, gsub, band = string.format, string.find, string.gsub, bit.band
+local SendChatMessage, GetInstanceInfo, Timer = BigWigsLoader.SendChatMessage, BigWigsLoader.GetInstanceInfo, BigWigsLoader.CTimerAfter
+local format, find, gsub, band, wipe = string.format, string.find, string.gsub, bit.band, table.wipe
 local select, type, next, tonumber = select, type, next, tonumber
 local core = BigWigs
 local C = core.C
 local pName = UnitName("player")
+local cpName
 local hasVoice = BigWigsAPI:HasVoicePack()
 local bossUtilityFrame = CreateFrame("Frame")
 local enabledModules = {}
@@ -65,9 +66,15 @@ local updateData = function(module)
 	for unit in module:IterateGroup() do
 		local _, _, _, tarInstanceId = UnitPosition(unit)
 		local guid = UnitGUID(unit)
-		myGroupGUIDs[guid] = true
-		if solo and tarInstanceId == instanceId and myGUID ~= guid and UnitIsConnected(unit) then
-			solo = false
+		if guid then
+			myGroupGUIDs[guid] = true
+			if solo and tarInstanceId == instanceId and myGUID ~= guid and UnitIsConnected(unit) then
+				solo = false
+			end
+		else -- XXX temp
+			local n = GetNumGroupMembers()
+			BigWigs:Error("Nil GUID for ".. unit ..". ".. tostring(n) .." / ".. tostring((UnitName(unit))) .." / ".. tostring((UnitExists(unit))))
+			break
 		end
 	end
 
@@ -752,7 +759,8 @@ do
 		local go = scan(self)
 		if go then
 			if debug then dbg(self, "Engage scan found active boss entities, transmitting engage sync.") end
-			self:Sync("Engage", self.moduleName)
+			self:UnregisterEvent("PLAYER_REGEN_DISABLED")
+			self:Engage()
 		else
 			if debug then dbg(self, "Engage scan did NOT find any active boss entities. Re-scheduling another engage check in 0.5 seconds.") end
 			self:ScheduleTimer("CheckForEngage", .5)
@@ -767,43 +775,44 @@ do
 	-- Possibly a concern?
 
 	--- Start a repeating timer checking if your group has left combat with a boss.
-	function boss:CheckForWipe()
+	-- @string[opt] first The event name when used as a callback
+	function boss:CheckForWipe(first)
 		if debug then dbg(self, ":CheckForWipe initiated.") end
 		local go = scan(self)
-		if not go then
+		if not first and not go then
 			if debug then dbg(self, "Wipe scan found no active boss entities, rebooting module.") end
 			self:Wipe()
 		else
-			if debug then dbg(self, "Wipe scan found active boss entities (" .. tostring(go) .. "). Re-scheduling another wipe check in 2 seconds.") end
+			if debug and not first then dbg(self, "Wipe scan found active boss entities (" .. tostring(go) .. "). Re-scheduling another wipe check in 2 seconds.") end
 			self:ScheduleTimer("CheckForWipe", 2)
 		end
 	end
 
 	function boss:Engage(noEngage)
-		-- Engage
-		self.isEngaged = true
+		if not self.isEngaged then
+			self.isEngaged = true
 
-		if debug then dbg(self, ":Engage") end
+			if debug then dbg(self, ":Engage") end
 
-		if not noEngage or noEngage ~= "NoEngage" then
-			updateData(self)
+			if not noEngage or noEngage ~= "NoEngage" then
+				updateData(self)
 
-			if self.OnEngage then
-				self:OnEngage(difficulty)
+				if self.OnEngage then
+					self:OnEngage(difficulty)
+				end
+
+				self:SendMessage("BigWigs_OnBossEngage", self, difficulty)
 			end
-
-			self:SendMessage("BigWigs_OnBossEngage", self, difficulty)
 		end
 	end
 
 	function boss:Win()
 		if debug then dbg(self, ":Win") end
-		self.lastKill = GetTime() -- Add the kill time for the enable check.
-		if self.OnWin then self:OnWin() end
-		self:SendMessage("BigWigs_OnBossWin", self)
-		self:Disable()
 		wipe(icons) -- Wipe icon cache
 		wipe(spells)
+		if self.OnWin then self:OnWin() end
+		self:ScheduleTimer("Disable", 1) -- Delay a little to prevent re-enabling
+		self:SendMessage("BigWigs_OnBossWin", self)
 	end
 
 	function boss:Wipe()
@@ -920,7 +929,7 @@ function boss:EncounterEnd(event, id, name, diff, size, status)
 			end
 		elseif status == 0 then
 			self:SendMessage("BigWigs_StopBars", self)
-			self:ScheduleTimer("Wipe", 5) -- Delayed for now due to issues with certain encounters and using IEEU for engage.
+			self:ScheduleTimer("Wipe", 5) -- Delayed due to issues with some multi-boss encounters showing/hiding the boss frames (IEEU) rapidly whilst wiping.
 		end
 		self:SendMessage("BigWigs_EncounterEnd", self, id, name, diff, size, status) -- Do NOT use this for wipe detection, use BigWigs_OnBossWipe.
 	end
@@ -1098,28 +1107,28 @@ function boss:Damager(unit)
 end
 
 do
-	local offDispel, defDispel = "", ""
+	local offDispel, defDispel = {}, {}
 	function UpdateDispelStatus()
-		offDispel, defDispel = "", ""
+		offDispel, defDispel = {}, {}
 		if IsSpellKnown(32375) or IsSpellKnown(528) or IsSpellKnown(370) or IsSpellKnown(30449) then
 			-- Mass Dispel (Priest), Dispel Magic (Priest), Purge (Shaman), Spellsteal (Mage)
-			offDispel = offDispel .. "magic,"
+			offDispel.magic = true
 		end
 		if IsSpellKnown(527) or IsSpellKnown(77130) or IsSpellKnown(115450) or IsSpellKnown(4987) or IsSpellKnown(88423) then -- XXX Add DPS priest mass dispel?
 			-- Purify (Heal Priest), Purify Spirit (Heal Shaman), Detox (Heal Monk), Cleanse (Heal Paladin), Nature's Cure (Heal Druid)
-			defDispel = defDispel .. "magic,"
+			defDispel.magic = true
 		end
 		if IsSpellKnown(527) or IsSpellKnown(213634) or IsSpellKnown(115450) or IsSpellKnown(218164) or IsSpellKnown(4987) or IsSpellKnown(213644) then
 			-- Purify (Heal Priest), Purify Disease (Shadow Priest), Detox (Heal Monk), Detox (DPS Monk), Cleanse (Heal Paladin), Cleanse Toxins (DPS Paladin)
-			defDispel = defDispel .. "disease,"
+			defDispel.disease = true
 		end
 		if IsSpellKnown(88423) or IsSpellKnown(115450) or IsSpellKnown(218164) or IsSpellKnown(4987) or IsSpellKnown(2782) or IsSpellKnown(213644) then
 			-- Nature's Cure (Heal Druid), Detox (Heal Monk), Detox (DPS Monk), Cleanse (Heal Paladin), Remove Corruption (DPS Druid), Cleanse Toxins (DPS Paladin)
-			defDispel = defDispel .. "poison,"
+			defDispel.poison = true
 		end
 		if IsSpellKnown(88423) or IsSpellKnown(2782) or IsSpellKnown(77130) or IsSpellKnown(51886) then
 			-- Nature's Cure (Heal Druid), Remove Corruption (DPS Druid), Purify Spirit (Heal Shaman), Cleanse Spirit (DPS Shaman)
-			defDispel = defDispel .. "curse,"
+			defDispel.curse = true
 		end
 	end
 	--- Check if you can dispel.
@@ -1133,15 +1142,7 @@ do
 			if not o then core:Print(format("Module %s uses %q as a dispel lookup, but it doesn't exist in the module options.", self.name, key)) return end
 			if band(o, C.DISPEL) ~= C.DISPEL then return true end
 		end
-		if isOffensive then
-			if find(offDispel, dispelType, nil, true) then
-				return true
-			end
-		else
-			if find(defDispel, dispelType, nil, true) then
-				return true
-			end
-		end
+		return isOffensive and offDispel[dispelType] or defDispel[dispelType]
 	end
 end
 
@@ -1489,6 +1490,7 @@ do
 			end
 		end
 	})
+	cpName = coloredNames[pName]
 
 	local mt = {
 		__newindex = function(self, key, value)
@@ -1530,7 +1532,7 @@ do
 			local textType = type(text)
 			if player == pName then
 				self:SendMessage("BigWigs_Message", self, key, format(L.stackyou, stack or 1, textType == "string" and text or spells[text or key]), "Personal", icon ~= false and icons[icon or textType == "number" and text or key])
-			else
+			elseif not checkFlag(self, key, C.ME_ONLY) then
 				self:SendMessage("BigWigs_Message", self, key, format(L.stack, stack or 1, textType == "string" and text or spells[text or key], coloredNames[player]), color, icon ~= false and icons[icon or textType == "number" and text or key])
 			end
 			if sound then
@@ -1582,7 +1584,7 @@ do
 		else
 			if not player then
 				if checkFlag(self, key, C.MESSAGE) then
-					self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, "???"), color == "Personal" and "Important" or color, texture)
+					self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, "???"), color, texture)
 					if alwaysPlaySound then
 						self:SendMessage("BigWigs_Sound", self, key, sound)
 					end
@@ -1603,7 +1605,7 @@ do
 			else
 				if checkFlag(self, key, C.MESSAGE) and not checkFlag(self, key, C.ME_ONLY) then
 					-- Change color and remove sound (if not alwaysPlaySound) when warning about effects on other players
-					self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, coloredNames[player]), color == "Personal" and "Important" or color, texture)
+					self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, coloredNames[player]), color, texture)
 					if sound then
 						if alwaysPlaySound and hasVoice and checkFlag(self, key, C.VOICE) then
 							self:SendMessage("BigWigs_Voice", self, key, sound)
@@ -1613,6 +1615,68 @@ do
 					end
 				end
 			end
+		end
+	end
+
+	local comma = (GetLocale() == "zhTW" or GetLocale() == "zhCN") and "，" or ", "
+	local tconcat = table.concat
+	local function printTargets(self, key, playerTable, color, text, icon)
+		local playersInTable = #playerTable
+		if playersInTable ~= 0 then
+			local meOnly = checkFlag(self, key, C.ME_ONLY)
+			local msgEnabled = checkFlag(self, key, C.MESSAGE)
+			if meOnly or msgEnabled then -- Allow ME_ONLY messages when normal messages are disabled
+				local textType = type(text)
+				local msg = textType == "string" and text or spells[text or key]
+				local texture = icon ~= false and icons[icon or textType == "number" and text or key]
+
+				local onMe = false
+				for i = 1, playersInTable do
+					if playerTable[i] == cpName then
+						onMe = true
+					end
+				end
+
+				if onMe and (meOnly or (msgEnabled and playersInTable == 1)) then
+					wipe(playerTable)
+					self:SendMessage("BigWigs_Message", self, key, format(L.you, msg), "Personal", texture)
+				elseif not meOnly and msgEnabled then
+					local list = tconcat(playerTable, comma, 1, playersInTable)
+					wipe(playerTable)
+					self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, list), color, texture)
+				end
+			else
+				wipe(playerTable)
+			end
+		end
+	end
+
+	function boss:TargetsMessage(key, color, playerTable, playerCount, text, icon, customTime)
+		local playersInTable = #playerTable
+		if playersInTable == playerCount then
+			printTargets(self, key, playerTable, color, text, icon)
+		elseif playersInTable == 1 then
+			Timer(customTime or 0.3, function()
+				printTargets(self, key, playerTable, color, text, icon)
+			end)
+		end
+	end
+
+	function boss:TargetMessage2(key, color, player, underYou, text, icon)
+		local textType = type(text)
+		local msg = textType == "string" and text or spells[text or key]
+		local texture = icon ~= false and icons[icon or textType == "number" and text or key]
+
+		if not player then
+			if checkFlag(self, key, C.MESSAGE) then
+				self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, "???"), color, texture)
+			end
+		elseif player == pName then
+			if checkFlag(self, key, C.MESSAGE) or checkFlag(self, key, C.ME_ONLY) then
+				self:SendMessage("BigWigs_Message", self, key, format(underYou and L.underyou or L.you, msg), "Personal", texture)
+			end
+		elseif checkFlag(self, key, C.MESSAGE) and not checkFlag(self, key, C.ME_ONLY) then
+			self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, coloredNames[player]), color, texture)
 		end
 	end
 end
@@ -1841,6 +1905,13 @@ end
 -- @section misc
 --
 
+--- Trigger a function after a specific delay
+-- @param func callback function to trigger after the delay
+-- @number delay how long to wait until triggering the function
+function boss:SimpleTimer(func, delay)
+	Timer(delay, func)
+end
+
 --- Flash the screen edges.
 -- @param key the option key
 -- @param[opt] icon the icon to pulse if PULSE is set (if nil, key is used)
@@ -1893,18 +1964,43 @@ function boss:CancelSayCountdown(key)
 	end
 end
 
---- Play a sound.
--- @param key the option key
--- @string sound the sound to play
-function boss:PlaySound(key, sound)
-	if not checkFlag(self, key, C.MESSAGE) then return end
-	if hasVoice and checkFlag(self, key, C.VOICE) then
-		self:SendMessage("BigWigs_Voice", self, key, sound)
-	else
-		self:SendMessage("BigWigs_Sound", self, key, sound)
+do
+	local tmp = { -- XXX temp
+		["long"] = "Long",
+		["info"] = "Info",
+		["alert"] = "Alert",
+		["alarm"] = "Alarm",
+		["warning"] = "Warning",
+	}
+	--- Play a sound.
+	-- @param key the option key
+	-- @string sound the sound to play
+	-- @string[opt] voice command to play when using a voice pack
+	function boss:PlaySound(key, sound, voice, player)
+		if player then
+			local meOnly = checkFlag(self, key, C.ME_ONLY)
+			if type(player) == "table" then
+				if meOnly then
+					if player[#player] == cpName then
+						self:SendMessage("BigWigs_Sound", self, key, tmp[sound] or sound)
+					end
+				elseif #player == 1 then
+					self:SendMessage("BigWigs_Sound", self, key, tmp[sound] or sound)
+				end
+			else
+				if not meOnly or (meOnly and player == pName) then
+					self:SendMessage("BigWigs_Sound", self, key, tmp[sound] or sound)
+				end
+			end
+		elseif checkFlag(self, key, C.MESSAGE) then
+			if hasVoice and checkFlag(self, key, C.VOICE) then
+				self:SendMessage("BigWigs_Voice", self, key, tmp[sound] or sound)
+			else
+				self:SendMessage("BigWigs_Sound", self, key, tmp[sound] or sound)
+			end
+		end
 	end
 end
-
 
 do
 	local SendAddonMessage, IsInGroup = BigWigsLoader.SendAddonMessage, IsInGroup
@@ -1917,9 +2013,10 @@ do
 		if msg then
 			self:SendMessage("BigWigs_BossComm", msg, extra, pName)
 			if IsInGroup() then
-				msg = "B^".. msg
 				if extra then
-					msg = msg .."^".. extra
+					msg = "B^".. msg .."^".. extra
+				else
+					msg = "B^".. msg
 				end
 				SendAddonMessage("BigWigs", msg, IsInGroup(2) and "INSTANCE_CHAT" or "RAID")
 			end

@@ -1,0 +1,63 @@
+BINDINGMODE 0
+bind NUMPAD0 CLICK ClearRaidFlares:LeftButton
+bind X NONE
+bind R CLICK BT4Button17:LeftButton
+bind SHIFT-R CLICK BT4Button52:LeftButton
+bind 7 CLICK BT4Button13:LeftButton
+bind 8 CLICK BT4Button14:LeftButton
+bind 9 CLICK BT4Button15:LeftButton
+bind 0 CLICK BT4Button16:LeftButton
+bind - NONE
+bind = NONE
+bind CTRL-1 NONE
+bind CTRL-2 NONE
+bind CTRL-3 NONE
+bind CTRL-5 CLICK BT4Button22:LeftButton
+bind CTRL-6 CLICK BT4Button87:LeftButton
+bind CTRL-8 CLICK BT4Button34:LeftButton
+bind CTRL-9 NONE
+bind SHIFT-1 CLICK BT4Button25:LeftButton
+bind SHIFT-2 NONE
+bind SHIFT-3 CLICK BT4Button26:LeftButton
+bind SHIFT-4 CLICK BT4Button28:LeftButton
+bind SHIFT-5 BONUSACTIONBUTTON3
+bind SHIFT-6 CLICK BT4Button27:LeftButton
+bind F1 BONUSACTIONBUTTON1
+bind G CLICK BT4Button19:LeftButton
+bind F NONE
+bind F8 NONE
+bind F9 NONE
+bind F10 CLICK BT4Button112:LeftButton
+bind F11 CLICK BT4Button109:LeftButton
+bind F12 CLICK BT4Button49:LeftButton
+bind SHIFT-O NONE
+bind NUMPAD1 CLICK RaidFlare1:LeftButton
+bind NUMPAD3 CLICK RaidFlare3:LeftButton
+bind ´ CLICK BT4Button18:LeftButton
+bind ALT-R CLICK BT4Button23:LeftButton
+bind ALT-´ CLICK BT4Button24:LeftButton
+bind § CLICK BT4Button36:LeftButton
+bind + CLICK BT4Button33:LeftButton
+bind SHIFT-9 CLICK BT4Button20:LeftButton
+bind ALT-9 CLICK BT4Button21:LeftButton
+bind BUTTON5 ACTIONBUTTON12
+bind ALT-6 CLICK BT4Button31:LeftButton
+bind ALT-5 ACTIONBUTTON10
+bind ALT-3 ACTIONBUTTON9
+bind ALT-2 ACTIONBUTTON8
+bind ALT-1 ACTIONBUTTON7
+bind SHIFT-8 NONE
+bind T CLICK BT4Button29:LeftButton
+bind SHIFT-F12 NONE
+bind CTRL-F CLICK BT4Button111:LeftButton
+bind NUMPAD2 CLICK RaidFlare2:LeftButton
+bind SHIFT-F CLICK BT4Button30:LeftButton
+bind ALT-0 CLICK BT4Button81:LeftButton
+bind CTRL-G CLICK BT4Button32:LeftButton
+bind CTRL-+ CLICK BT4Button35:LeftButton
+bind ALT-8 ACTIONBUTTON11
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind ALT-F CLICK BT4Button78:LeftButton
+bind ALT-4 CLICK BT4Button73:LeftButton
+bind ALT-BUTTON5 CLICK BT4Button74:LeftButton

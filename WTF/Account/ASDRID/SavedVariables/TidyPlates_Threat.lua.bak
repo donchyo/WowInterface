@@ -1,6 +1,114 @@
 
 TidyPlatesThreatDB = {
 	["char"] = {
+		["Krixi - Valley of Heroes - EU"] = {
+			["specInfo"] = {
+				["id"] = 66,
+				["role"] = "TANK",
+				["name"] = "Protection",
+				["index"] = 2,
+			},
+			["welcome"] = true,
+		},
+		["Lóverocket - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+		},
+		["Zolution - Grim Batol"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+		},
+		["Lovérockét - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+		},
+		["Krixiwarrior - Valley of Heroes - EU"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 73,
+				["role"] = "TANK",
+				["name"] = "Protection",
+				["index"] = 3,
+			},
+		},
+		["Krixidruid - Valley of Heroes - EU"] = {
+			["specInfo"] = {
+				["id"] = 104,
+				["role"] = "TANK",
+				["name"] = "Guardian",
+				["index"] = 3,
+			},
+			["welcome"] = true,
+		},
+		["Lilgaykrixi - Kazzak"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 73,
+				["role"] = "TANK",
+				["name"] = "Protection",
+				["index"] = 3,
+			},
+		},
+		["Daimtårta - Aggra (Português)"] = {
+			["specInfo"] = {
+				["id"] = 258,
+				["role"] = "DAMAGER",
+				["name"] = "Shadow",
+				["index"] = 3,
+			},
+			["welcome"] = true,
+		},
+		["Krixiyo - Blackmoore"] = {
+			["specInfo"] = {
+				["id"] = 70,
+				["role"] = "DAMAGER",
+				["name"] = "Retribution",
+				["index"] = 3,
+			},
+			["welcome"] = true,
+		},
+		["Loverócket - Aggra (Português)"] = {
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+			["welcome"] = true,
+		},
+		["Greenzuriz - Aggra (Português)"] = {
+			["specInfo"] = {
+				["id"] = 262,
+				["role"] = "DAMAGER",
+				["name"] = "Elemental",
+				["index"] = 1,
+			},
+			["welcome"] = true,
+		},
+		["Loverocket - Aggra (Português)"] = {
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+			["welcome"] = true,
+		},
 		["Krixiyo - Twisting Nether"] = {
 			["specInfo"] = {
 				["id"] = 71,
@@ -9,6 +117,159 @@ TidyPlatesThreatDB = {
 				["index"] = 1,
 			},
 			["welcome"] = true,
+		},
+		["Kroxi - Grim Batol"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 73,
+				["role"] = "TANK",
+				["name"] = "Protection",
+				["index"] = 3,
+			},
+		},
+		["Bawsi - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 253,
+				["role"] = "DAMAGER",
+				["name"] = "Beast Mastery",
+				["index"] = 1,
+			},
+		},
+		["Bawsie - Grim Batol"] = {
+			["specInfo"] = {
+				["id"] = 254,
+				["role"] = "DAMAGER",
+				["name"] = "Marksmanship",
+				["index"] = 2,
+			},
+			["welcome"] = true,
+		},
+		["Krixidh - Grim Batol"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 581,
+				["role"] = "TANK",
+				["name"] = "Vengeance",
+				["index"] = 2,
+			},
+		},
+		["Lowerboost - Lightbringer"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+		},
+		["Krixidk - Valley of Heroes - EU"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 250,
+				["role"] = "TANK",
+				["name"] = "Blood",
+				["index"] = 1,
+			},
+		},
+		["Kriximonk - Valley of Heroes - EU"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 269,
+				["role"] = "DAMAGER",
+				["name"] = "Windwalker",
+				["index"] = 3,
+			},
+		},
+		["Krixikin - Grim Batol"] = {
+			["specInfo"] = {
+				["id"] = 105,
+				["role"] = "HEALER",
+				["name"] = "Restoration",
+				["index"] = 4,
+			},
+			["welcome"] = true,
+		},
+		["Krixi - Grim Batol"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 70,
+				["role"] = "DAMAGER",
+				["index"] = 3,
+				["name"] = "Retribution",
+			},
+		},
+		["Zuriz - Grim Batol"] = {
+			["specInfo"] = {
+				["id"] = 264,
+				["role"] = "HEALER",
+				["name"] = "Restoration",
+				["index"] = 3,
+			},
+			["welcome"] = true,
+		},
+		["Treefiddy - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 250,
+				["role"] = "TANK",
+				["name"] = "Blood",
+				["index"] = 1,
+			},
+		},
+		["Donch - Grim Batol"] = {
+			["specInfo"] = {
+				["id"] = 64,
+				["role"] = "DAMAGER",
+				["name"] = "Frost",
+				["index"] = 3,
+			},
+			["welcome"] = true,
+		},
+		["Nyrith - Grim Batol"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 105,
+				["role"] = "HEALER",
+				["name"] = "Restoration",
+				["index"] = 4,
+			},
+		},
+		["Zetiz - Grim Batol"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 261,
+				["role"] = "DAMAGER",
+				["name"] = "Subtlety",
+				["index"] = 3,
+			},
+		},
+		["Lòverocket - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+		},
+		["Spacegoatx - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 70,
+				["role"] = "DAMAGER",
+				["name"] = "Retribution",
+				["index"] = 3,
+			},
+		},
+		["Krixidh - Valley of Heroes - EU"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 581,
+				["role"] = "TANK",
+				["name"] = "Vengeance",
+				["index"] = 2,
+			},
 		},
 		["Krixidk - Grim Batol"] = {
 			["welcome"] = true,
@@ -19,13 +280,40 @@ TidyPlatesThreatDB = {
 				["name"] = "Blood",
 			},
 		},
-		["Kroxi - Grim Batol"] = {
+		["Kriximonk - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 73,
-				["role"] = "TANK",
-				["name"] = "Protection",
+				["id"] = 269,
+				["role"] = "DAMAGER",
+				["name"] = "Windwalker",
 				["index"] = 3,
+			},
+		},
+		["Gnomalock - Grim Batol"] = {
+			["specInfo"] = {
+				["id"] = 267,
+				["role"] = "DAMAGER",
+				["name"] = "Destruction",
+				["index"] = 3,
+			},
+			["welcome"] = true,
+		},
+		["Daroislost - Valley of Heroes - EU"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 265,
+				["role"] = "DAMAGER",
+				["name"] = "Affliction",
+				["index"] = 1,
+			},
+		},
+		["Lovérocket - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
 			},
 		},
 		["Namji - Grim Batol"] = {
@@ -46,263 +334,45 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
-		["Bawsie - Grim Batol"] = {
-			["specInfo"] = {
-				["id"] = 254,
-				["role"] = "DAMAGER",
-				["name"] = "Marksmanship",
-				["index"] = 2,
-			},
-			["welcome"] = true,
-		},
-		["Lóverocket - Aggra (Português)"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
-			},
-		},
-		["Krixikin - Grim Batol"] = {
-			["specInfo"] = {
-				["id"] = 105,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 4,
-			},
-			["welcome"] = true,
-		},
-		["Zuriz - Grim Batol"] = {
-			["specInfo"] = {
-				["id"] = 264,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 3,
-			},
-			["welcome"] = true,
-		},
-		["Lovérockét - Aggra (Português)"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
-			},
-		},
-		["Lowerboost - Lightbringer"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
-			},
-		},
-		["Lovérocket - Aggra (Português)"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
-			},
-		},
-		["Lòverocket - Aggra (Português)"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
-			},
-		},
-		["Zetiz - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 261,
-				["role"] = "DAMAGER",
-				["name"] = "Subtlety",
-				["index"] = 3,
-			},
-		},
-		["Nyrith - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 105,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 4,
-			},
-		},
-		["Daimtårta - Aggra (Português)"] = {
-			["specInfo"] = {
-				["id"] = 258,
-				["role"] = "DAMAGER",
-				["name"] = "Shadow",
-				["index"] = 3,
-			},
-			["welcome"] = true,
-		},
-		["Treefiddy - Aggra (Português)"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 250,
-				["role"] = "TANK",
-				["name"] = "Blood",
-				["index"] = 1,
-			},
-		},
-		["Krixiyo - Blackmoore"] = {
-			["specInfo"] = {
-				["id"] = 70,
-				["role"] = "DAMAGER",
-				["name"] = "Retribution",
-				["index"] = 3,
-			},
-			["welcome"] = true,
-		},
-		["Lilgaykrixi - Kazzak"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 73,
-				["role"] = "TANK",
-				["name"] = "Protection",
-				["index"] = 3,
-			},
-		},
-		["Loverócket - Aggra (Português)"] = {
-			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
-			},
-			["welcome"] = true,
-		},
-		["Zolution - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
-			},
-		},
-		["Spacegoatx - Aggra (Português)"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 70,
-				["role"] = "DAMAGER",
-				["name"] = "Retribution",
-				["index"] = 3,
-			},
-		},
-		["Donch - Grim Batol"] = {
-			["specInfo"] = {
-				["id"] = 64,
-				["role"] = "DAMAGER",
-				["name"] = "Frost",
-				["index"] = 3,
-			},
-			["welcome"] = true,
-		},
-		["Krixidh - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 581,
-				["role"] = "TANK",
-				["name"] = "Vengeance",
-				["index"] = 2,
-			},
-		},
-		["Kriximonk - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 270,
-				["role"] = "HEALER",
-				["name"] = "Mistweaver",
-				["index"] = 2,
-			},
-		},
-		["Krixi - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 65,
-				["role"] = "HEALER",
-				["index"] = 1,
-				["name"] = "Holy",
-			},
-		},
-		["Bawsi - Aggra (Português)"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				["id"] = 253,
-				["role"] = "DAMAGER",
-				["name"] = "Beast Mastery",
-				["index"] = 1,
-			},
-		},
-		["Greenzuriz - Aggra (Português)"] = {
-			["specInfo"] = {
-				["id"] = 262,
-				["role"] = "DAMAGER",
-				["name"] = "Elemental",
-				["index"] = 1,
-			},
-			["welcome"] = true,
-		},
-		["Gnomalock - Grim Batol"] = {
-			["specInfo"] = {
-				["id"] = 267,
-				["role"] = "DAMAGER",
-				["name"] = "Destruction",
-				["index"] = 3,
-			},
-			["welcome"] = true,
-		},
-		["Loverocket - Aggra (Português)"] = {
-			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
-			},
-			["welcome"] = true,
-		},
 	},
 	["profileKeys"] = {
+		["Krixi - Valley of Heroes - EU"] = "Default",
+		["Lóverocket - Aggra (Português)"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
+		["Lovérockét - Aggra (Português)"] = "Default",
+		["Krixiwarrior - Valley of Heroes - EU"] = "Default",
+		["Krixidruid - Valley of Heroes - EU"] = "Default",
+		["Lilgaykrixi - Kazzak"] = "Default",
+		["Daimtårta - Aggra (Português)"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
+		["Loverócket - Aggra (Português)"] = "Default",
+		["Greenzuriz - Aggra (Português)"] = "Default",
+		["Loverocket - Aggra (Português)"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
-		["Krixidk - Grim Batol"] = "Skullflower",
 		["Kroxi - Grim Batol"] = "Default",
+		["Bawsi - Aggra (Português)"] = "Default",
+		["Bawsie - Grim Batol"] = "Default",
+		["Krixidh - Grim Batol"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
+		["Krixidk - Valley of Heroes - EU"] = "Default",
+		["Kriximonk - Valley of Heroes - EU"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Treefiddy - Aggra (Português)"] = "Default",
+		["Donch - Grim Batol"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
+		["Lòverocket - Aggra (Português)"] = "Default",
+		["Spacegoatx - Aggra (Português)"] = "Default",
+		["Krixidh - Valley of Heroes - EU"] = "Default",
+		["Krixidk - Grim Batol"] = "Skullflower",
+		["Kriximonk - Grim Batol"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
+		["Daroislost - Valley of Heroes - EU"] = "Default",
+		["Lovérocket - Aggra (Português)"] = "Default",
 		["Namji - Grim Batol"] = "Default",
 		["Lóvérocket - Aggra (Português)"] = "Default",
-		["Bawsie - Grim Batol"] = "Default",
-		["Lóverocket - Aggra (Português)"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
-		["Lovérockét - Aggra (Português)"] = "Default",
-		["Lowerboost - Lightbringer"] = "Default",
-		["Lovérocket - Aggra (Português)"] = "Default",
-		["Lòverocket - Aggra (Português)"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
-		["Daimtårta - Aggra (Português)"] = "Default",
-		["Treefiddy - Aggra (Português)"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
-		["Lilgaykrixi - Kazzak"] = "Default",
-		["Loverócket - Aggra (Português)"] = "Default",
-		["Zolution - Grim Batol"] = "Default",
-		["Spacegoatx - Aggra (Português)"] = "Default",
-		["Donch - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
-		["Kriximonk - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
-		["Bawsi - Aggra (Português)"] = "Default",
-		["Greenzuriz - Aggra (Português)"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
-		["Loverocket - Aggra (Português)"] = "Default",
 	},
 	["profiles"] = {
 		["Skullflower"] = {
@@ -323,6 +393,8 @@ TidyPlatesThreatDB = {
 			},
 			["uniqueSettings"] = {
 				[33] = {
+					["scale"] = 1.25,
+					["name"] = "Fel Explosives",
 				},
 				[34] = {
 				},
@@ -389,7 +461,7 @@ TidyPlatesThreatDB = {
 					"Fanged Pit Viper", -- [30]
 					"Canal Crab", -- [31]
 					"Muddy Crawfish", -- [32]
-					"", -- [33]
+					"Fel Explosives", -- [33]
 					"", -- [34]
 					"", -- [35]
 					"", -- [36]
@@ -627,12 +699,12 @@ TidyPlatesThreatDB = {
 			["uniqueSettings"] = {
 				[33] = {
 					["name"] = "Fel Explosives",
-					["scale"] = 1.4,
-					["overrideScale"] = true,
-					["icon"] = 135799,
 					["color"] = {
 						["g"] = 0,
 					},
+					["scale"] = 1.4,
+					["icon"] = 135799,
+					["overrideScale"] = true,
 				},
 				[34] = {
 				},

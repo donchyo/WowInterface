@@ -256,8 +256,6 @@ L["Hide in Pet Battle"] = "Verstecke in Haustierkämpfen"
 L["Show/Hide this frame during Pet Battles."] = "Zeige/Verstecke dieses Frame in Haustierkämpfen."
 
 --Bags
-L["New Item Flash"] = "Neues Gegenstand Leuchten"
-L["Use the Shadow & Light New Item Flash instead of the default ElvUI flash"] = "Benutze das Shadow & Light Gegenstand Leuchten anstelle vom standard ElvUI."
 L["Transparent Slots"] = "Transparente Flächen"
 L["Apply transparent template on bag and bank slots."] = "Wendet die Transparente Vorlage für Taschen und Bank Flächen an."
 
@@ -591,6 +589,8 @@ L["Skin Dungeon"] = true
 L["Skin dungeon icon."] = true
 L["Skin Mail"] = true
 L["Skin mail icon."] = true
+L["Skin garrison"] = true
+L["Skin garrison landing page button."] = true
 L["The size of the minimap buttons when not anchored to the minimap."] = true
 L["Icons Per Row"] = true
 L["Anchor mode for displaying the minimap buttons are skinned."] = true
@@ -611,7 +611,7 @@ L["Color Type"] = true
 L["Custom Color"] = true
 L["Reaction"] = true
 L["Location"] = true
-L["Coordinates"] = true
+L["Coordinates"] = "Koordinaten"
 L["Teleports"] = true
 L["Portals"] = true
 L["Link Position"] = true
@@ -621,12 +621,27 @@ L["Right click on the location panel will bring up a menu with available options
 L["Custom Width"] = true
 L["By default menu's width will be equal to the location panel width. Checking this option will allow you to set own width."] = true
 L["Justify Text"] = true
-L["Hearthstone Location"] = true
+L["Hearthstone Location"] = "Ruhestein Position"
 L["Show the name on location your Heathstone is bound to."] = true
 L["Only Number"] = true
 L["Horizontal Growth"] = true
 L["Vertical Growth"] = true
-
+L["Info for some items is not available yet. Please try again later"] = "Informationen für einige Gegenstände sind zur Zeit nicht verfügbar. Bitte später nocheinmal versuchen"
+L["Update canceled."] = "Update abgebrochen."
+L["Item info is not available. Waiting for it. This can take some time. Menu will be opened automatically when all info becomes available. Calling menu again during the update will cancel it."] = "Gegenstandsinformation ist nicht verfügbar. Dieses kann ein bisschen dauern um die Informationen zu sammeln. Das Menu wird automatisch geöffnet, wenn alle Informationen gesammelt sind. Nochmaliges aufrufen des Menus während des Updates, wird den Vorgang abbrechen."
+L["Update complete. Opening menu."] = "Update komplett. Menu wird geöffnet."
+L["Show hearthstones"] = true
+L["Show hearthstone type items in the list."] = true
+L["Show Toys"] = true
+L["Show toys in the list. This option will affect all other display options as well."] = true
+L["Show spells"] = true
+L["Show relocation spells in the list."] = true
+L["Show engineer gadgets"] = true
+L["Show items used only by engineers when the profession is learned."] = true
+L["Ignore missing info"] = true
+L["SLE_LOCPANEL_IGNOREMISSINGINFO"] = [[Due to how client functions some item info may become unavailable for a period of time. This mostly happens to toys info.
+When called the menu will wait for all information being available before showing up. This may resul in menu opening after some concidarable amount of time, depends on how fast the server will answer info requests.
+By enabling this option you'll make the menu ignore items with missing info, resulting in them not showing up in the list.]]
 
 --Miscs
 L["Error Frame"] = true
@@ -935,6 +950,7 @@ Benik, The Slacker
 Blazeflack
 Boradan
 Camealion
+Merathilis, The Confused
 Nils Ruesch
 Omega1970
 Pvtschlag
@@ -943,7 +959,28 @@ Sinaris
 Sortokk
 Swordyy
 ]=]
+L["ELVUI_SLE_DONORS_TITLE"] = "Thanks to these awesome people for supporting our work via donations:"
 L["ELVUI_SLE_MISC"] = [=[BuG - for always hilariously breaking stuff
 TheSamaKutra
 The rest of TukUI community
 ]=]
+
+L["SLE_BENIK_AF"] = [[Wegen zu viel Real Life Streß, hat das |cff9482c9Shadow & Light|r Team Urlaub genommen.
+
+Während unserer Abwesenheit ist |cfffe7b2cBenik|r so nett und unsere Arbeit und des Support für |cff9482c9S&L|r!
+Wenn irgendwelche Fehler bemerkst mit |cff9482c9S&L|r, poste sie bitte auf tukui.org in der BenikUI Sektion.
+Und bedenke: Wenn irgendetwas nicht funktioniert, ist es Benik's Schuld! Benutze das Hashtag |cfffe7b2c#IBlameBenik|r wenn du Fehler postest!]]
+L["SLE_ERRORS_AF"] = {
+	"Ausversehen hat Merathilis zu viel getrunken und es hinbekommen zu viel Moonfire auf unsere Stromleitung zu spammen! Du musst das sofort beheben!",
+	"Wir sind froh zu Berichten dass unsere #IBlameBenik Kampagne jede Minute erfolgreicher wird! Vergess bitte auch du nicht Benik zu flamen!",
+	"WARNUNG! Darth hat einen nuklear Code gestohlen und verlangt jetzt 500 Millionen Gold und ein paar draeneische Jungfrauen. Versteckt euch im nähesten Bunker um Fallout IRL zu spielen!",
+	"Irgendetwas stimmt mit deinem Interface nicht. Bitte warten, wir versuchen es zu reparieren! Wir übernehmen keine Verantwortung wenn die Dinge schlimmer werden.",
+	"Der Imperiale Rat hat merkwürdiges Zeugs auf deinem PC gefunden! So dass dein Haus und der Planet Exterminatus überhändigt wird, im Namen des Imperators!",
+	"BÄREN! Was zum Teufel suchen Bären in deiner UI?!",
+	"Benik hat die Lokaliserung etwas verändert. Wir hoffen dass ihr Türkisch könnt!",
+	"Der Eisberg ist geschmolzen! Unsere Server sind überflutet, tschuldigung für die Unannehmlichkeiten",
+	"IHR WISST NICHT WAS EUCH ERWARTET!!!",
+	"ElvUI hat eine ungewöhnliche hohe Anzahl von Rückmeldungen von den Servern bekommen und wird in kürze beendet. Bitte kontaktiere den nähesten Goblin Ingenieur um weiter Infos zu erhalten.",
+	"Du nicht nehmen Kerze! Oder wir werden es Benik sagen!",
+	"1 Fehler, 1 Gebet, bitte spendet für besoffene Coder.",
+}

@@ -1,5 +1,6 @@
 local configCache, _, T = {}, ...
 local max, min, abs, floor, sin, cos, atan2 = math.max, math.min, math.abs, math.floor, sin, cos, atan2
+local GameTooltip = AltGameTooltip or GameTooltip
 local function cc(m, f, ...)
 	f[m](f, ...)
 	return f
@@ -172,8 +173,10 @@ local function updateCentralElements(self, si)
 			SetDefaultAnchor(GameTooltip, mainFrame)
 			GameTooltip:AddLine(caption)
 			GameTooltip:Show()
-		elseif GameTooltip:IsOwned(mainFrame) then
-			GameTooltip:Hide()
+		else
+			if GameTooltip:IsOwned(mainFrame) then
+				GameTooltip:Hide()
+			end
 		end
 	end
 
@@ -389,7 +392,8 @@ function api:SetIndicatorConstructor(func)
 end
 
 for k,v in pairs({ShowCooldowns=false, ShowRecharge=false, UseGameTooltip=true, ShowKeys=true,
-	MIScale=true, MISpinOnHide=true, GhostMIRings=true, XTPointerSpeed=0, XTScaleSpeed=0, XTZoomTime=0.3, XTRotationPeriod=4}) do
+	MIScale=true, MISpinOnHide=true, GhostMIRings=true,
+	XTPointerSpeed=0, XTScaleSpeed=0, XTZoomTime=0.3, XTRotationPeriod=4}) do
 	OneRingLib:RegisterOption(k,v)
 end
 OneRingLib.ext.OPieUI, T.OPieUI = api, iapi

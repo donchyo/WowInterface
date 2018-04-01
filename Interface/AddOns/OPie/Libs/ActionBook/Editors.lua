@@ -1,9 +1,7 @@
 local _, T = ...
 
-local function L(key)
-	local o = OneRingLib and OneRingLib.lang
-	return o and o(key) or key
-end
+local AB = assert(T.ActionBook:compatible(2, 21), "A compatible version of ActionBook is required.")
+local L = AB:locale()
 
 local multilineInput do
 	local function onNavigate(self, _x,y, _w,h)

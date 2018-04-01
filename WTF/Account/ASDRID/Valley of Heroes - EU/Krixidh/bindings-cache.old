@@ -1,0 +1,80 @@
+BINDINGMODE 0
+bind NUMPAD0 CLICK ClearRaidFlares:LeftButton
+bind X CLICK BT4Button30:LeftButton
+bind R CLICK BT4Button17:LeftButton
+bind SHIFT-R CLICK BT4Button52:LeftButton
+bind 7 CLICK BT4Button13:LeftButton
+bind 8 CLICK BT4Button14:LeftButton
+bind 9 CLICK BT4Button15:LeftButton
+bind 0 CLICK BT4Button16:LeftButton
+bind - NONE
+bind = NONE
+bind CTRL-F1 NONE
+bind CTRL-F2 NONE
+bind CTRL-F3 NONE
+bind CTRL-1 CLICK BT4Button73:LeftButton
+bind CTRL-2 CLICK BT4Button74:LeftButton
+bind CTRL-3 CLICK BT4Button75:LeftButton
+bind CTRL-4 CLICK BT4Button35:LeftButton
+bind CTRL-5 NONE
+bind CTRL-6 CLICK BT4Button78:LeftButton
+bind CTRL-8 CLICK BT4Button81:LeftButton
+bind CTRL-9 CLICK BT4Button83:LeftButton
+bind SHIFT-1 CLICK BT4Button25:LeftButton
+bind SHIFT-2 CLICK BT4Button26:LeftButton
+bind SHIFT-3 CLICK BT4Button27:LeftButton
+bind SHIFT-4 CLICK BT4Button28:LeftButton
+bind SHIFT-5 CLICK BT4Button32:LeftButton
+bind SHIFT-6 CLICK BT4Button33:LeftButton
+bind SHIFT-MOUSEWHEELUP MACRO TSMMacro
+bind SHIFT-MOUSEWHEELDOWN MACRO TSMMacro
+bind F1 SHAPESHIFTBUTTON1
+bind F2 CLICK BT4Button96:LeftButton
+bind F3 CLICK BT4Button95:LeftButton
+bind F5 INTERACTTARGET
+bind G CLICK BT4Button22:LeftButton
+bind F CLICK BT4Button79:LeftButton
+bind F8 NONE
+bind F9 NONE
+bind F10 CLICK BT4Button112:LeftButton
+bind F11 CLICK BT4Button109:LeftButton
+bind F12 CLICK BT4Button49:LeftButton
+bind SHIFT-O NONE
+bind MOUSEWHEELUP CLICK BT4Button61:LeftButton
+bind MOUSEWHEELDOWN CLICK BT4Button62:LeftButton
+bind CTRL-T CLICK BT4Button77:LeftButton
+bind NUMPAD1 CLICK RaidFlare1:LeftButton
+bind NUMPAD3 CLICK RaidFlare3:LeftButton
+bind CTRL-MOUSEWHEELUP CAMERAZOOMIN
+bind CTRL-MOUSEWHEELDOWN CAMERAZOOMOUT
+bind ´ CLICK BT4Button18:LeftButton
+bind ALT-R CLICK BT4Button23:LeftButton
+bind ALT-´ CLICK BT4Button24:LeftButton
+bind § CLICK BT4Button36:LeftButton
+bind + CLICK BT4Button34:LeftButton
+bind SHIFT-9 CLICK BT4Button80:LeftButton
+bind ALT-9 NONE
+bind BUTTON5 CLICK BT4Button19:LeftButton
+bind ALT-6 ACTIONBUTTON12
+bind ALT-5 ACTIONBUTTON11
+bind ALT-3 ACTIONBUTTON9
+bind ALT-2 ACTIONBUTTON8
+bind ALT-1 ACTIONBUTTON7
+bind SHIFT-8 CLICK BT4Button76:LeftButton
+bind T CLICK BT4Button29:LeftButton
+bind SHIFT-F12 NONE
+bind CTRL-F CLICK BT4Button111:LeftButton
+bind NUMPAD2 CLICK RaidFlare2:LeftButton
+bind SHIFT-F CLICK BT4Button31:LeftButton
+bind ALT-0 NONE
+bind ALT-4 ACTIONBUTTON10
+bind ALT-F CLICK BT4Button21:LeftButton
+bind ALT-MOUSEWHEELUP NONE
+bind ALT-§ CLICK BT4Button84:LeftButton
+bind CTRL-BUTTON5 NONE
+bind SHIFT-BUTTON5 NONE
+bind ALT-8 CLICK BT4Button20:LeftButton
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind ALT-+ NONE
+bind CTRL-+ CLICK BT4Button82:LeftButton

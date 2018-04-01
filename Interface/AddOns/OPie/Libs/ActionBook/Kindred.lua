@@ -1,4 +1,4 @@
-local api, MAJ, REV, execQueue, _, T = {}, 1, 13, {}, ...
+local api, MAJ, REV, execQueue, _, T = {}, 1, 14, {}, ...
 if T.ActionBook then return end
 
 local function assert(condition, err, ...)
@@ -42,7 +42,7 @@ core:Execute([==[-- Kindred.Init
 					for m in clause:gmatch("[^,%s][^,]*") do
 						m = m:match("^%s*(.-)%s*$")
 						if m:sub(1,1) == "@" or m:sub(1,7) == "target=" then
-							local bu, suf = m:match("[=@]%s*([^-%d]%d*)(.-)%s*$")
+							local bu, suf = m:match("[=@]%s*([^-%d]*%d*)(.-)%s*$")
 							ct.target, ct.targetS = bu, suf ~= "" and suf or nil
 						else
 							local cvalparsed, mark, wname, inv, name, col, cval = nil, m:match("^([+]?)((n?o?)([^:=]*))([:=]?)(.-)%s*$")
@@ -317,7 +317,9 @@ core:SetAttribute("UpdateStateConditional", [=[-- Kindred:UpdateStateConditional
 ]=])
 core:SetAttribute("SetAliasUnit", [=[-- Kindred:SetAliasUnit("alias", "unit" or nil)
 	local alias, unit = ...
-	if not (type(alias) == "string" and (type(unit) == "string" or unit == nil)) then
+	if unitAlias[alias] == unit then
+		return
+	elseif not (type(alias) == "string" and (type(unit) == "string" or unit == nil)) then
 		return owner:CallMethod("throw", 'Syntax: ("SetAliasUnit", "alias", "unit" or nil)')
 	end
 	local u = unit while unitAlias[u] and u ~= alias do u = unitAlias[u] end
@@ -326,6 +328,19 @@ core:SetAttribute("SetAliasUnit", [=[-- Kindred:SetAliasUnit("alias", "unit" or 
 	end
 	unitAlias[alias] = unit
 	owner:Run(RefreshDrivers, "unit:" .. alias)
+]=])
+core:SetAttribute("ResolveUnitAlias", [=[-- Kindred:ResolveUnitAlias("unit")
+	local unit = ...
+	if type(unit) ~= "string" then
+		return owner:CallMethod("throw", 'Syntax: ("ResolveUnitAlias", "unit")')
+	end
+	local ua = unitAlias[unit]
+	if ua == nil then
+		local w, base, suf = unit:match("^%s*(([^-%d]*%d*)(.-))%s*$")
+		ua = unitAlias[base]
+		ua = ua and (ua .. suf) or unitAlias[w]
+	end
+	return ua or unit
 ]=])
 core:SetAttribute("PokeConditional", [=[-- Kindred:PokeConditional("name")
 	owner:Run(RefreshDrivers, (...))

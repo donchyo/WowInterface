@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("General Nazgrim", 953, 850)
+local mod, CL = BigWigs:NewBoss("General Nazgrim", 1136, 850)
 if not mod then return end
 mod:RegisterEnableMob(71515, 71715, 71516, 71517, 71518, 71519) -- General Nazgrim, Orgrimmar Faithful, Kor'kron Ironblade, Kor'kron Arcweaver, Kor'kron Assassin, Kor'kron Warshaman
 mod.engageId = 1603
@@ -116,7 +116,6 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "Execute", 143502)
 	-- Adds
 	self:Log("SPELL_CAST_START", "ArcaneShock", 143432)
-	self:Log("SPELL_CAST_START", "ChainHeal", 143473)
 	self:Log("SPELL_AURA_APPLIED", "Magistrike", 143431)
 	self:Log("SPELL_CAST_SUCCESS", "HealingTideTotem", 143474)
 	self:Log("SPELL_CAST_START", "ChainHeal", 143473)

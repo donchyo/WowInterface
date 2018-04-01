@@ -2,7 +2,7 @@
 -- Module declaration
 --
 
-local mod = BigWigs:NewBoss("Maexxna", 535, 1603)
+local mod = BigWigs:NewBoss("Maexxna", 533, 1603)
 if not mod then return end
 mod:RegisterEnableMob(15952)
 mod.toggleOptions = {29484, 28622, 54123}
@@ -83,7 +83,7 @@ function mod:UNIT_HEALTH_FREQUENT(unit)
 	if self:MobId(UnitGUID(unit)) == 15952 then
 		local health = UnitHealth(unit) / UnitHealthMax(unit) * 100
 		if health < 36 then
-			self:Message(54123, L["enragesoonwarn"], "Important", nil, false)
+			self:Message(54123, "Important", nil, L["enragesoonwarn"], false)
 			self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", "target", "focus")
 		end
 	end

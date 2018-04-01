@@ -1,6 +1,10 @@
 -- English localization file for enUS and enGB.
+local _
+-- [[
+local assert = _G.assert
+local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
+-- ]]
 local ADDON = ...
-local _ ;
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale(ADDON, "enUS", true, false); -- default translation, not silent load
 if not L then return; end

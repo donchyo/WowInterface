@@ -1,9 +1,9 @@
-﻿
+
 --------------------------------------------------------------------------------
 -- Module declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Ayamiss the Hunter", 717, 1541)
+local mod, CL = BigWigs:NewBoss("Ayamiss the Hunter", 509, 1541)
 if not mod then return end
 mod:RegisterEnableMob(15369)
 

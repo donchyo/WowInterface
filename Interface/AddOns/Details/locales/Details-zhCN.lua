@@ -85,8 +85,7 @@ L["STRING_CLOSEALL"] = "所有的 Details 窗口都关闭了, 输入 '/details s
 L["STRING_COLOR"] = "颜色"
 L["STRING_COMMAND_LIST"] = "命令列表"
 L["STRING_COOLTIP_NOOPTIONS"] = "无选项"
---Translation missing 
--- L["STRING_CREATEAURA"] = ""
+L["STRING_CREATEAURA"] = "创建一个wa监视"
 L["STRING_CRITICAL_HITS"] = "致命一击"
 L["STRING_CRITICAL_ONLY"] = "致命"
 L["STRING_CURRENT"] = "当前"

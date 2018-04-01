@@ -1,6 +1,10 @@
 ﻿-- localization file for esES made by annthizze and Google translator
+local _
+-- [[
+local assert = _G.assert
+local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
+-- ]]
 local ADDON = ...
-local _ ;
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale(ADDON, "esES");
 if not L then return end

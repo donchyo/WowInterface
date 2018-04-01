@@ -2,7 +2,7 @@
 -- Module declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Anub'Rekhan", 535, 1601)
+local mod, CL = BigWigs:NewBoss("Anub'Rekhan", 533, 1601)
 if not mod then return end
 mod:RegisterEnableMob(15956)
 mod.toggleOptions = {28785}
@@ -60,7 +60,7 @@ function mod:GainSwarm(args)
 	if self:MobId(args.destGUID) == 15956 then
 		self:DelayedMessage(28785, 20, "Important", CL["over"]:format(args.spellName))
 		self:Bar(28785, 20, 131394) -- "Swarming Insects"
-		self:DelayedMessage(28785, 75, L["gainwarn10sec"], "Important")
+		self:DelayedMessage(28785, 75, "Important", L["gainwarn10sec"])
 		self:CDBar(28785, 85)
 	end
 end

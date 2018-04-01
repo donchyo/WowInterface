@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("The Iron Maidens", 988, 1203)
+local mod, CL = BigWigs:NewBoss("The Iron Maidens", 1205, 1203)
 if not mod then return end
 mod:RegisterEnableMob(77477, 77557, 77231) -- Marak the Blooded, Admiral Gar'an, Enforcer Sorka
 mod.engageId = 1695
@@ -18,7 +18,7 @@ local barrierCount = 0
 local boatTimers = {} -- don't announce while on the boat, but track the cd times
 
 local function isOnABoat()
-	local _, pos = UnitPosition("player")
+	--local _, pos = UnitPosition("player")
 	--return pos > 3200
 end
 
@@ -208,18 +208,16 @@ local function checkBoat()
 	end
 end
 
---[[
 -- XXX 6.1
-function mod:ShipPhase(args)
-	shipCount = shipCount + 1
-	self:Message("ship", "Neutral", "Info", CL.other:format(L.ship, args.sourceName), false)
-	stopBars(self:MobId(args.sourceGUID))
-	if shipCount < 3 then
-		self:Bar("ship", 198, L.ship, L.ship_icon)
-	end
-	self:ScheduleTimer(checkBoat, 6)
-end
---]]
+--function mod:ShipPhase(args)
+--	shipCount = shipCount + 1
+--	self:Message("ship", "Neutral", "Info", CL.other:format(L.ship, args.sourceName), false)
+--	stopBars(self:MobId(args.sourceGUID))
+--	if shipCount < 3 then
+--		self:Bar("ship", 198, L.ship, L.ship_icon)
+--	end
+--	self:ScheduleTimer(checkBoat, 6)
+--end
 
 function mod:ShipPhase(msg, sender)
 	shipCount = shipCount + 1
@@ -320,12 +318,13 @@ do
 	end
 end
 
-function mod:IncendiaryDevice(args)
-	if isOnABoat() then
-		return
-	end
-	self:Message(args.spellId, "Important")
-end
+-- XXX lacks a :Log method
+--function mod:IncendiaryDevice(args)
+--	if isOnABoat() then
+--		return
+--	end
+--	self:Message(args.spellId, "Important")
+--end
 
 do
 	function mod:PenetratingShot(args)

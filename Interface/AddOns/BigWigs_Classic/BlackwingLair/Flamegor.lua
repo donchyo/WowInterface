@@ -2,7 +2,7 @@
 -- Module declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Flamegor", 755, 1534)
+local mod, CL = BigWigs:NewBoss("Flamegor", 469, 1534)
 if not mod then return end
 mod:RegisterEnableMob(11981)
 mod.toggleOptions = {23339, 22539, 23342}
@@ -48,8 +48,8 @@ end
 
 function mod:EnrageRemoved(args)
 	if args.extraSpellId == 23342 then
-		self:StopBar(args.extraSpellId)
-		self:Message(args.extraSpellId, "Urgent", nil, CL.removed:format(args.extraSpellName))
+		self:StopBar(23342)
+		self:Message(23342, "Urgent", nil, CL.removed:format(args.extraSpellName))
 	end
 end
 

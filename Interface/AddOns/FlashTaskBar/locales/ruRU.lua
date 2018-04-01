@@ -3,8 +3,7 @@ if not L then return end
 
 L["STRING_ADD"] = "добавить"
 L["STRING_ADDKEYWORD"] = "Добавить ключевое слово"
---Translation missing 
--- L["STRING_BACKGROUND_SOUND"] = ""
+L["STRING_BACKGROUND_SOUND"] = "*Включите 'фоновые звуки'\\внутри системы > Звука*"
 L["STRING_BAGSFULL"] = "Сумки заполнены"
 L["STRING_BAGSFULL_DESC"] = "Если вы создаете, и в ваших сумках, закончилось свободное место."
 L["STRING_BATTLEGROUND"] = "Завершение поле боя"
@@ -48,10 +47,8 @@ L["STRING_INVITES"] = "Приглашения"
 L["STRING_INVITES_DESC"] = "Когда кто-то приглашает вас к группу."
 L["STRING_ONCOUNTDOWN"] = "Начало таймера"
 L["STRING_ONCOUNTDOWN_DESC"] = "Когда на экране, отображается обратный отсчет."
---Translation missing 
--- L["STRING_ONPLAYERDEATH"] = ""
---Translation missing 
--- L["STRING_ONPLAYERDEATH_DESC"] = ""
+L["STRING_ONPLAYERDEATH"] = "Игрок умер"
+L["STRING_ONPLAYERDEATH_DESC"] = "Вспышка, когда ваш персонаж умирает"
 L["STRING_ONWHISPER"] = "При шепоте"
 L["STRING_ONWHISPER_DESC"] = "Мигать при получении шепота"
 L["STRING_OPENSOUNDPANEL"] = "Открыть настройки звука"

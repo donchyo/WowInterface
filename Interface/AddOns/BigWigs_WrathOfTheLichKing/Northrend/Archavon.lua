@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Archavon the Stone Watcher", 532, 1597)
+local mod, CL = BigWigs:NewBoss("Archavon the Stone Watcher", 624, 1597)
 if not mod then return end
 mod:RegisterEnableMob(31125)
 mod.toggleOptions = {58663, "charge", {58678, "MESSAGE", "ICON"}, {58965, "FLASH"}, "berserk"}
@@ -31,7 +31,6 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "Cloud", 58965, 61672)
 	self:Death("Win", 31125)
 
-	-- Need the actual emote for the charge to use :Emote
 	self:RegisterEvent("CHAT_MSG_RAID_BOSS_EMOTE")
 
 	self:RegisterEvent("PLAYER_REGEN_ENABLED", "CheckForWipe")

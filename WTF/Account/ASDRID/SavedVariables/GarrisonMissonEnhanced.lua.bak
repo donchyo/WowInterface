@@ -1,107 +1,10 @@
 
 GarrisonMissonEnhancedSave = {
-	["Zuriz-Grim Batol"] = {
-		[285] = {
-			["time"] = 1473108497,
-			["accurate"] = false,
-		},
-		[118] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[178] = {
-			["time"] = 1473108497,
-			["accurate"] = false,
-		},
-		[302] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[159] = {
-			["time"] = 1468417660,
-			["accurate"] = true,
-		},
-		[272] = {
-			["time"] = 1473108497,
-			["accurate"] = false,
-		},
-		[373] = {
-			["time"] = 1468417660,
-			["accurate"] = true,
-		},
-		[245] = {
-			["time"] = 1468417660,
-			["accurate"] = true,
-		},
-		[187] = {
-			["time"] = 1473108497,
-			["accurate"] = false,
-		},
-		[129] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[686] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[117] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[274] = {
-			["time"] = 1472266489,
-			["accurate"] = false,
-		},
-		[180] = {
-			["time"] = 1473108497,
-			["accurate"] = false,
-		},
-		[127] = {
-			["time"] = 1472266489,
-			["accurate"] = false,
-		},
-		[130] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[451] = {
-			["time"] = 1472266489,
-			["accurate"] = false,
-		},
-		[399] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[676] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[314] = {
-			["time"] = 1473013329,
-			["accurate"] = false,
-		},
-		[677] = {
-			["time"] = 1472266489,
-			["accurate"] = false,
-		},
-		[220] = {
-			["time"] = 1473108497,
-			["accurate"] = false,
-		},
-		[170] = {
-			["time"] = 1473108497,
-			["accurate"] = false,
-		},
+	["Lowerboost-Lightbringer"] = {
 	},
-	["Krixiyo-Blackmoore"] = {
+	["Bawsi-Aggra (Português)"] = {
 	},
-	["Treefiddy-Aggra (Português)"] = {
-	},
-	["Daimtårta-Aggra (Português)"] = {
-	},
-	["showchange"] = 1,
-	["Krixiswag-Aggra (Português)"] = {
+	["Krixiyo-Lightning's Blade"] = {
 	},
 	["Gnomalock-Grim Batol"] = {
 		[162] = {
@@ -152,7 +55,11 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472266011,
 			["accurate"] = false,
 		},
-		[178] = {
+		[114] = {
+			["time"] = 1472266011,
+			["accurate"] = false,
+		},
+		[496] = {
 			["time"] = 1472266011,
 			["accurate"] = false,
 		},
@@ -160,15 +67,11 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472266011,
 			["accurate"] = false,
 		},
-		[391] = {
-			["time"] = 1472266011,
-			["accurate"] = false,
-		},
 		[157] = {
 			["time"] = 1472266011,
 			["accurate"] = false,
 		},
-		[278] = {
+		[306] = {
 			["time"] = 1472266011,
 			["accurate"] = false,
 		},
@@ -192,144 +95,24 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1463395105,
 			["accurate"] = true,
 		},
-		[306] = {
+		[278] = {
 			["time"] = 1472266011,
 			["accurate"] = false,
 		},
-		[496] = {
+		[391] = {
 			["time"] = 1472266011,
 			["accurate"] = false,
 		},
-		[114] = {
+		[178] = {
 			["time"] = 1472266011,
 			["accurate"] = false,
 		},
-	},
-	["Donch-Shattered Hand"] = {
-	},
-	["Kroxidps-Aggra (Português)"] = {
 	},
 	["Kroxi-Crushridge"] = {
 	},
 	["Bawsi-Shattered Hand"] = {
 	},
 	["Krixiyo-Twisting Nether"] = {
-	},
-	["Nyrith-Grim Batol"] = {
-		[664] = {
-			["time"] = 1471908375,
-			["accurate"] = false,
-		},
-		[503] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[665] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[159] = {
-			["time"] = 1468417721,
-			["accurate"] = true,
-		},
-		[132] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[450] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[272] = {
-			["time"] = 1471908375,
-			["accurate"] = false,
-		},
-		[373] = {
-			["time"] = 1468417721,
-			["accurate"] = true,
-		},
-		[210] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[245] = {
-			["time"] = 1468417720,
-			["accurate"] = true,
-		},
-		[335] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[686] = {
-			["time"] = 1471908375,
-			["accurate"] = false,
-		},
-		[311] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[263] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[185] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[391] = {
-			["time"] = 1471908375,
-			["accurate"] = false,
-		},
-		[125] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[157] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[283] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[322] = {
-			["time"] = 1471908375,
-			["accurate"] = false,
-		},
-		[279] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[276] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[676] = {
-			["time"] = 1471908375,
-			["accurate"] = false,
-		},
-		[484] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[331] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[179] = {
-			["time"] = 1472250953,
-			["accurate"] = false,
-		},
-		[194] = {
-			["time"] = 1471908375,
-			["accurate"] = false,
-		},
-	},
-	["Bawsi-Aggra (Português)"] = {
-	},
-	["Menardiairl-Culte de la Rive noire"] = {
-	},
-	["Krixiyo-Lightning's Blade"] = {
 	},
 	["Donch-Grim Batol"] = {
 		[255] = {
@@ -388,27 +171,7 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1471915181,
 			["accurate"] = false,
 		},
-		[288] = {
-			["time"] = 1472266189,
-			["accurate"] = false,
-		},
-		[120] = {
-			["time"] = 1472266189,
-			["accurate"] = false,
-		},
-		[307] = {
-			["time"] = 1472266189,
-			["accurate"] = false,
-		},
-		[157] = {
-			["time"] = 1472266189,
-			["accurate"] = false,
-		},
-		[399] = {
-			["time"] = 1471915181,
-			["accurate"] = false,
-		},
-		[175] = {
+		[130] = {
 			["time"] = 1472266189,
 			["accurate"] = false,
 		},
@@ -416,7 +179,27 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1471915181,
 			["accurate"] = false,
 		},
-		[130] = {
+		[307] = {
+			["time"] = 1472266189,
+			["accurate"] = false,
+		},
+		[175] = {
+			["time"] = 1472266189,
+			["accurate"] = false,
+		},
+		[399] = {
+			["time"] = 1471915181,
+			["accurate"] = false,
+		},
+		[157] = {
+			["time"] = 1472266189,
+			["accurate"] = false,
+		},
+		[120] = {
+			["time"] = 1472266189,
+			["accurate"] = false,
+		},
+		[288] = {
 			["time"] = 1472266189,
 			["accurate"] = false,
 		},
@@ -486,118 +269,114 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1474787551,
 			["accurate"] = false,
 		},
-		[160] = {
-			["time"] = 1474840397,
+		[391] = {
+			["time"] = 1474489588,
 			["accurate"] = false,
 		},
 		[312] = {
 			["time"] = 1474840397,
 			["accurate"] = false,
 		},
-		[391] = {
-			["time"] = 1474489588,
+		[160] = {
+			["time"] = 1474840397,
 			["accurate"] = false,
 		},
-	},
-	["Namji-Grim Batol"] = {
-		[285] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[262] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[170] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[495] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[182] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[666] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[667] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[373] = {
-			["time"] = 1465417352,
-			["accurate"] = true,
-		},
-		[179] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[183] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[282] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[445] = {
-			["time"] = 1472266695,
-			["accurate"] = false,
-		},
-		[453] = {
-			["time"] = 1472266695,
-			["accurate"] = false,
-		},
-		[399] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[314] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[381] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[159] = {
-			["time"] = 1466384252,
-			["accurate"] = true,
-		},
-		[482] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[261] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[212] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-		[269] = {
-			["time"] = 1472266695,
-			["accurate"] = false,
-		},
-		[500] = {
-			["time"] = 1472266695,
-			["accurate"] = false,
-		},
-		[684] = {
-			["time"] = 1474899636,
-			["accurate"] = false,
-		},
-	},
-	["Lilgaykrixi-Kazzak"] = {
 	},
 	["Asdasdasdfaf-Grim Batol"] = {
 	},
-	["Spacegoatx-Aggra (Português)"] = {
+	["Líttle-Grim Batol"] = {
+		[170] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[379] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[126] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[159] = {
+			["time"] = 1466342311,
+			["accurate"] = true,
+		},
+		[497] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[183] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[685] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[265] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[452] = {
+			["time"] = 1469705515,
+			["accurate"] = false,
+		},
+		[218] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[157] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[211] = {
+			["time"] = 1471821995,
+			["accurate"] = false,
+		},
+		[267] = {
+			["time"] = 1470972080,
+			["accurate"] = false,
+		},
+		[219] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[130] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[675] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[169] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[307] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[315] = {
+			["time"] = 1470972080,
+			["accurate"] = false,
+		},
+		[385] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[677] = {
+			["time"] = 1470972080,
+			["accurate"] = false,
+		},
+		[215] = {
+			["time"] = 1471798547,
+			["accurate"] = false,
+		},
+		[373] = {
+			["time"] = 1467766533,
+			["accurate"] = true,
+		},
 	},
 	["Zetiz-Grim Batol"] = {
 		[678] = {
@@ -652,8 +431,8 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1471200765,
 			["accurate"] = false,
 		},
-		[187] = {
-			["time"] = 1471915110,
+		[288] = {
+			["time"] = 1472064735,
 			["accurate"] = false,
 		},
 		[269] = {
@@ -664,14 +443,12 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472064735,
 			["accurate"] = false,
 		},
-		[288] = {
-			["time"] = 1472064735,
+		[187] = {
+			["time"] = 1471915110,
 			["accurate"] = false,
 		},
 	},
 	["Greenzuriz-Aggra (Português)"] = {
-	},
-	["Donchyo-Shattered Hand"] = {
 	},
 	["Bawsie-Grim Batol"] = {
 		[114] = {
@@ -750,7 +527,7 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472266308,
 			["accurate"] = false,
 		},
-		[497] = {
+		[306] = {
 			["time"] = 1472266308,
 			["accurate"] = false,
 		},
@@ -758,11 +535,11 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472266308,
 			["accurate"] = false,
 		},
-		[680] = {
-			["time"] = 1472266308,
+		[275] = {
+			["time"] = 1471025986,
 			["accurate"] = false,
 		},
-		[478] = {
+		[212] = {
 			["time"] = 1472266308,
 			["accurate"] = false,
 		},
@@ -770,116 +547,421 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472266308,
 			["accurate"] = false,
 		},
-		[212] = {
+		[478] = {
 			["time"] = 1472266308,
 			["accurate"] = false,
 		},
-		[275] = {
-			["time"] = 1471025986,
+		[680] = {
+			["time"] = 1472266308,
 			["accurate"] = false,
 		},
 		[277] = {
 			["time"] = 1472266308,
 			["accurate"] = false,
 		},
-		[306] = {
+		[497] = {
 			["time"] = 1472266308,
 			["accurate"] = false,
 		},
 	},
-	["Líttle-Grim Batol"] = {
-		[170] = {
-			["time"] = 1471798547,
+	["Donch-Crushridge"] = {
+	},
+	["Treefiddy-Aggra (Português)"] = {
+	},
+	["Kroxi-Grim Batol"] = {
+		[162] = {
+			["time"] = 1473945770,
 			["accurate"] = false,
 		},
-		[379] = {
-			["time"] = 1471798547,
+		[301] = {
+			["time"] = 1473945770,
 			["accurate"] = false,
 		},
-		[126] = {
-			["time"] = 1471798547,
+		[495] = {
+			["time"] = 1473945770,
 			["accurate"] = false,
 		},
 		[159] = {
-			["time"] = 1466342311,
+			["time"] = 1465113399,
 			["accurate"] = true,
 		},
-		[497] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[183] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[685] = {
-			["time"] = 1471798547,
+		[396] = {
+			["time"] = 1473945770,
 			["accurate"] = false,
 		},
 		[373] = {
-			["time"] = 1467766533,
+			["time"] = 1466342256,
 			["accurate"] = true,
 		},
-		[452] = {
-			["time"] = 1469705515,
-			["accurate"] = false,
-		},
-		[267] = {
-			["time"] = 1470972080,
-			["accurate"] = false,
-		},
-		[219] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[211] = {
-			["time"] = 1471821995,
-			["accurate"] = false,
-		},
-		[215] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[157] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[130] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[169] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[675] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[307] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[315] = {
-			["time"] = 1470972080,
-			["accurate"] = false,
-		},
-		[385] = {
-			["time"] = 1471798547,
-			["accurate"] = false,
-		},
-		[677] = {
-			["time"] = 1470972080,
-			["accurate"] = false,
-		},
-		[218] = {
-			["time"] = 1471798547,
+		[210] = {
+			["time"] = 1473945770,
 			["accurate"] = false,
 		},
 		[265] = {
-			["time"] = 1471798547,
+			["time"] = 1473945770,
 			["accurate"] = false,
 		},
+		[305] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[176] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[391] = {
+			["time"] = 1472307585,
+			["accurate"] = false,
+		},
+		[192] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[257] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[500] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[683] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[315] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[284] = {
+			["time"] = 1472265969,
+			["accurate"] = false,
+		},
+		[300] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[189] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+		[131] = {
+			["time"] = 1473945770,
+			["accurate"] = false,
+		},
+	},
+	["Zuriz-Grim Batol"] = {
+		[285] = {
+			["time"] = 1473108497,
+			["accurate"] = false,
+		},
+		[118] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[178] = {
+			["time"] = 1473108497,
+			["accurate"] = false,
+		},
+		[302] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[159] = {
+			["time"] = 1468417660,
+			["accurate"] = true,
+		},
+		[272] = {
+			["time"] = 1473108497,
+			["accurate"] = false,
+		},
+		[373] = {
+			["time"] = 1468417660,
+			["accurate"] = true,
+		},
+		[245] = {
+			["time"] = 1468417660,
+			["accurate"] = true,
+		},
+		[187] = {
+			["time"] = 1473108497,
+			["accurate"] = false,
+		},
+		[129] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[686] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[117] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[274] = {
+			["time"] = 1472266489,
+			["accurate"] = false,
+		},
+		[180] = {
+			["time"] = 1473108497,
+			["accurate"] = false,
+		},
+		[127] = {
+			["time"] = 1472266489,
+			["accurate"] = false,
+		},
+		[130] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[170] = {
+			["time"] = 1473108497,
+			["accurate"] = false,
+		},
+		[399] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[676] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[314] = {
+			["time"] = 1473013329,
+			["accurate"] = false,
+		},
+		[677] = {
+			["time"] = 1472266489,
+			["accurate"] = false,
+		},
+		[220] = {
+			["time"] = 1473108497,
+			["accurate"] = false,
+		},
+		[451] = {
+			["time"] = 1472266489,
+			["accurate"] = false,
+		},
+	},
+	["showchange"] = 1,
+	["Krixiswag-Aggra (Português)"] = {
+	},
+	["Donch-Shattered Hand"] = {
+	},
+	["Kroxidps-Aggra (Português)"] = {
+	},
+	["Krixidh-Grim Batol"] = {
+	},
+	["Nyrith-Grim Batol"] = {
+		[664] = {
+			["time"] = 1471908375,
+			["accurate"] = false,
+		},
+		[503] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[665] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[159] = {
+			["time"] = 1468417721,
+			["accurate"] = true,
+		},
+		[132] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[450] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[272] = {
+			["time"] = 1471908375,
+			["accurate"] = false,
+		},
+		[373] = {
+			["time"] = 1468417721,
+			["accurate"] = true,
+		},
+		[210] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[245] = {
+			["time"] = 1468417720,
+			["accurate"] = true,
+		},
+		[335] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[686] = {
+			["time"] = 1471908375,
+			["accurate"] = false,
+		},
+		[194] = {
+			["time"] = 1471908375,
+			["accurate"] = false,
+		},
+		[179] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[331] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[484] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[391] = {
+			["time"] = 1471908375,
+			["accurate"] = false,
+		},
+		[157] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[283] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[322] = {
+			["time"] = 1471908375,
+			["accurate"] = false,
+		},
+		[279] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[276] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[676] = {
+			["time"] = 1471908375,
+			["accurate"] = false,
+		},
+		[125] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[185] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[263] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+		[311] = {
+			["time"] = 1472250953,
+			["accurate"] = false,
+		},
+	},
+	["Menardiairl-Culte de la Rive noire"] = {
+	},
+	["Namji-Grim Batol"] = {
+		[285] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[262] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[170] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[495] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[182] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[666] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[667] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[373] = {
+			["time"] = 1465417352,
+			["accurate"] = true,
+		},
+		[179] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[183] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[282] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[445] = {
+			["time"] = 1472266695,
+			["accurate"] = false,
+		},
+		[453] = {
+			["time"] = 1472266695,
+			["accurate"] = false,
+		},
+		[399] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[314] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[684] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[500] = {
+			["time"] = 1472266695,
+			["accurate"] = false,
+		},
+		[482] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[212] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[261] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+		[269] = {
+			["time"] = 1472266695,
+			["accurate"] = false,
+		},
+		[159] = {
+			["time"] = 1466384252,
+			["accurate"] = true,
+		},
+		[381] = {
+			["time"] = 1474899636,
+			["accurate"] = false,
+		},
+	},
+	["Lilgaykrixi-Kazzak"] = {
+	},
+	["Donchyo-Shattered Hand"] = {
 	},
 	["Krixi-Grim Batol"] = {
 		[131] = {
@@ -954,15 +1036,7 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472840242,
 			["accurate"] = false,
 		},
-		[163] = {
-			["time"] = 1472840242,
-			["accurate"] = false,
-		},
-		[397] = {
-			["time"] = 1472840242,
-			["accurate"] = false,
-		},
-		[685] = {
+		[218] = {
 			["time"] = 1472840242,
 			["accurate"] = false,
 		},
@@ -970,14 +1044,20 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472840242,
 			["accurate"] = false,
 		},
-		[218] = {
+		[685] = {
+			["time"] = 1472840242,
+			["accurate"] = false,
+		},
+		[397] = {
+			["time"] = 1472840242,
+			["accurate"] = false,
+		},
+		[163] = {
 			["time"] = 1472840242,
 			["accurate"] = false,
 		},
 	},
-	["Krixidh-Grim Batol"] = {
-	},
-	["Donch-Crushridge"] = {
+	["Krixiyo-Blackmoore"] = {
 	},
 	["Zolution-Grim Batol"] = {
 		[162] = {
@@ -1024,11 +1104,7 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472266565,
 			["accurate"] = false,
 		},
-		[202] = {
-			["time"] = 1472266565,
-			["accurate"] = false,
-		},
-		[314] = {
+		[156] = {
 			["time"] = 1472039355,
 			["accurate"] = false,
 		},
@@ -1036,23 +1112,11 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472266565,
 			["accurate"] = false,
 		},
-		[260] = {
-			["time"] = 1472266565,
-			["accurate"] = false,
-		},
-		[497] = {
+		[314] = {
 			["time"] = 1472039355,
 			["accurate"] = false,
 		},
-		[683] = {
-			["time"] = 1469626152,
-			["accurate"] = false,
-		},
-		[285] = {
-			["time"] = 1472266565,
-			["accurate"] = false,
-		},
-		[490] = {
+		[260] = {
 			["time"] = 1472266565,
 			["accurate"] = false,
 		},
@@ -1060,96 +1124,34 @@ GarrisonMissonEnhancedSave = {
 			["time"] = 1472266565,
 			["accurate"] = false,
 		},
+		[490] = {
+			["time"] = 1472266565,
+			["accurate"] = false,
+		},
+		[285] = {
+			["time"] = 1472266565,
+			["accurate"] = false,
+		},
+		[683] = {
+			["time"] = 1469626152,
+			["accurate"] = false,
+		},
+		[497] = {
+			["time"] = 1472039355,
+			["accurate"] = false,
+		},
 		[220] = {
 			["time"] = 1472039355,
 			["accurate"] = false,
 		},
-		[156] = {
-			["time"] = 1472039355,
+		[202] = {
+			["time"] = 1472266565,
 			["accurate"] = false,
 		},
 	},
-	["Kroxi-Grim Batol"] = {
-		[162] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[301] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[495] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[159] = {
-			["time"] = 1465113399,
-			["accurate"] = true,
-		},
-		[396] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[373] = {
-			["time"] = 1466342256,
-			["accurate"] = true,
-		},
-		[210] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[265] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[305] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[176] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[391] = {
-			["time"] = 1472307585,
-			["accurate"] = false,
-		},
-		[192] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[131] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[500] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[683] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[315] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[284] = {
-			["time"] = 1472265969,
-			["accurate"] = false,
-		},
-		[300] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[189] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
-		[257] = {
-			["time"] = 1473945770,
-			["accurate"] = false,
-		},
+	["Daimtårta-Aggra (Português)"] = {
+	},
+	["Spacegoatx-Aggra (Português)"] = {
 	},
 }
 GarrisonMissonEnhancedGlobalConfig = {
@@ -1168,15 +1170,15 @@ GarrisonMissonEnhancedGlobalConfig = {
 	["GoldExpShow"] = true,
 	["ShowWorkOrderTimes"] = true,
 	["GlobalConf"] = true,
-	["ShowSalvage"] = true,
-	["AutoCompleteMissions"] = false,
+	["ShowCounterFollower"] = true,
+	["ShowTimeLeft"] = true,
 	["HideGarrisonAbility"] = false,
 	["QuickAssign"] = true,
 	["TimeOnMission"] = true,
 	["HideAlert"] = true,
 	["FollowerRequired"] = true,
-	["ShowTimeLeft"] = true,
-	["ShowCounterFollower"] = true,
+	["AutoCompleteMissions"] = false,
+	["ShowSalvage"] = true,
 }
 GarrisonMissonEnhancedColors = {
 	["inactive"] = {

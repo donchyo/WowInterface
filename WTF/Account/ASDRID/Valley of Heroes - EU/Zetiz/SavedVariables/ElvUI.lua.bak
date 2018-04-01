@@ -1,0 +1,33 @@
+
+ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+	},
+	["BodyGuard"] = {
+		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
+	},
+	["ChatEditHistory"] = {
+		" and shit and bad person", -- [1]
+		" like", -- [2]
+		" he might be good if he gives a shit", -- [3]
+		" it didnt show in the upper atleast", -- [4]
+		" i can check", -- [5]
+		" but its like", -- [6]
+		" 50k i think", -- [7]
+		" but im waiting for 2x mails i think", -- [8]
+		"/g you got a mount!", -- [9]
+		"/g what mount is that", -- [10]
+		"/g aha", -- [11]
+		"/g nah, im done with that", -- [12]
+		"/g trying to make addons now", -- [13]
+		"/g but i have nothing to do", -- [14]
+		"/g dik", -- [15]
+		" nigga", -- [16]
+		" whatsup", -- [17]
+		" just checking bmah", -- [18]
+		" oi nerd", -- [19]
+		"/chocolatebar", -- [20]
+	},
+}

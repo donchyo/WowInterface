@@ -6,7 +6,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Argus the Unmaker", nil, 2031, 1712)
+local mod, CL = BigWigs:NewBoss("Argus the Unmaker", 1712, 2031)
 if not mod then return end
 mod:RegisterEnableMob(124828)
 mod.engageId = 2092
@@ -25,6 +25,7 @@ local avatarCounter = 1
 local soulBombCounter = 1
 local initializationCount = 3
 local sargerasGazeCount = 0
+local skyName, seaName = nil, nil
 local scanningTargets = nil
 local vulnerabilityCollector = {}
 local vulnerabilityIcons = {
@@ -38,16 +39,15 @@ local vulnerabilityIcons = {
 }
 local annihilationCount = 0
 local sentenceofSargerasCount = 0
-local sentenceCast = nil
 
 local timersHeroic = {
 	[1] = { -- Stage
 		-- Cone of Death
-		[248165] = {31, 20.5, 22.7, 20.2, 20.5, 23.5},
+		[248165] = {31, 20.5, 22.7, 20.2, 20.5, 23.5, 20.6},
 		-- Soulblight Orb
 		[248317] = {35.5, 25.5, 26.8, 23.2, 31},
 		-- Tortured Rage
-		[257296] = {12, 13.5, 13.5, 15.9, 13.5, 13.5, 15.9, 20.9, 13.5},
+		[257296] = {12, 13.5, 13.5, 15.9, 13.5, 13.5, 15.9, 20.9, 13.5, 13.3, 13.3},
 		-- Sweeping Scythe
 		[248499] = {5.8, 11.7, 6.6, 10.3, 10.0, 5.6, 10.3, 5.9, 11.5, 10.1, 5.6, 10.3, 5.6, 15.2},
 	},
@@ -122,7 +122,7 @@ if L then
 
 	L.gifts = "Gifts: %s (Sky), %s (Sea)"
 	L.burst = "|T1778229:15:15:0:0:64:64:4:60:4:60|tBurst:%s" -- short for Soulburst
-	L.bomb = "|T1778228:15:15:0:0:64:64:4:60:4:60|t|T137002:0|tBomb (%d):%s - " -- short for Soulbomb
+	L.bomb = "|T1778228:15:15:0:0:64:64:4:60:4:60|tBomb (%d):|T137002:0|t%s - " -- short for Soulbomb
 
 	L.sky_say = "{rt5} Crit/Mast"
 	L.sea_say = "{rt6} Haste/Versa"
@@ -141,6 +141,7 @@ end
 local seaMarker = mod:AddMarkerOption(false, "player", 5, 255594, 5, 6) -- Sky and Sea
 local burstMarker = mod:AddMarkerOption(false, "player", 3, 250669, 3, 7) -- Soul Burst
 local bombMarker = mod:AddMarkerOption(false, "player", 2, 251570, 2) -- Soul Bomb
+local sentenceMarker = mod:AddMarkerOption(false, "player", 1, 257966, 1, 4) -- Sentence of Sargeras
 function mod:GetOptions()
 	return {
 		"stages",
@@ -186,6 +187,7 @@ function mod:GetOptions()
 		{"fear_help", "SAY"},
 		257911, -- Unleased Rage
 		{257966, "FLASH"}, -- Sentence of Sargeras
+		sentenceMarker,
 		258838, -- Soulrending Scythe
 		258834, -- Edge of Annihilation
 	},{
@@ -254,6 +256,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "SargerasFear", 257931)
 	self:Log("SPELL_AURA_APPLIED", "SargerasRage", 257869)
 	self:Log("SPELL_AURA_APPLIED", "SentenceofSargeras", 257966)
+	self:Log("SPELL_AURA_REMOVED", "SentenceofSargerasRemoved", 257966)
 	self:Log("SPELL_CAST_START", "SoulrendingScythe", 258838)
 	self:Log("SPELL_AURA_APPLIED", "SoulrendingScytheStack", 258838)
 	self:Log("SPELL_AURA_APPLIED_DOSE", "SoulrendingScytheStack", 258838)
@@ -275,6 +278,7 @@ function mod:OnEngage()
 	soulBombCounter = 1
 	sargerasGazeCount = 1
 	sentenceofSargerasCount = 1
+	skyName, seaName = nil, nil
 
 	self:Bar(255594, 16) -- Sky and Sea
 	self:Bar(257296, self:Heroic() and timers[stage][257296][torturedRageCounter] or 13.5, CL.count:format(self:SpellName(257296), torturedRageCounter)) -- Tortured Rage
@@ -320,7 +324,7 @@ end
 
 function mod:CHAT_MSG_RAID_BOSS_EMOTE(_, msg)
 	if msg:find("258068", nil, true) then -- Sargeras' Gaze
-		self:Message(258068, "Urgent", nil)
+		self:Message(258068, "orange", nil)
 		sargerasGazeCount = sargerasGazeCount + 1
 		self:Bar(258068, stage == 4 and timers[stage][258068][sargerasGazeCount] or stage == 2 and 60.5 or 35.1, CL.count:format(self:SpellName(258068), sargerasGazeCount))
 	end
@@ -329,7 +333,7 @@ end
 function mod:CHAT_MSG_MONSTER_YELL(_, msg)
 	if msg:find(L.stage2_early) then -- We start bars for stage 2 later
 		stage = 2
-		self:Message("stages", "Positive", "Long", CL.stage:format(stage), false)
+		self:Message("stages", "green", "Long", CL.stage:format(stage), false)
 		self:StopBar(CL.count:format(self:SpellName(248165), coneOfDeathCounter)) -- Cone of Death
 		self:StopBar(248317) -- Blight Orb
 		self:StopBar(CL.count:format(self:SpellName(257296), torturedRageCounter)) -- Tortured Rage
@@ -341,7 +345,7 @@ function mod:CHAT_MSG_MONSTER_YELL(_, msg)
 		stage = 3
 		wipe(vulnerabilityCollector)
 		scanningTargets = nil
-		self:Message("stages", "Positive", "Long", CL.stage:format(stage), false)
+		self:Message("stages", "green", "Long", CL.stage:format(stage), false)
 		self:StopBar(248499) -- Sweeping Scythe
 		self:StopBar(255826) -- Edge of Obliteration
 		self:StopBar(CL.count:format(self:SpellName(255199), avatarCounter)) -- Avatar of Aggramar
@@ -354,19 +358,19 @@ end
 
 --[[ Stage 1 ]]--
 function mod:ConeofDeath(args)
-	self:Message(args.spellId, "Urgent", "Warning", CL.casting:format(CL.count:format(args.spellName, coneOfDeathCounter)))
+	self:Message(args.spellId, "orange", "Warning", CL.casting:format(CL.count:format(args.spellName, coneOfDeathCounter)))
 	coneOfDeathCounter = coneOfDeathCounter + 1
 	self:CDBar(args.spellId, self:Mythic() and 20.5 or self:Easy() and 24 or timers[stage][248165][coneOfDeathCounter], CL.count:format(args.spellName, coneOfDeathCounter)) -- normal: 24-26
 end
 
 function mod:SoulBlightOrb(args)
-	self:Message(args.spellId, "Neutral", "Alert", CL.casting:format(args.spellName))
+	self:Message(args.spellId, "cyan", "Alert", CL.casting:format(args.spellName))
 	soulBlightOrbCounter = soulBlightOrbCounter + 1
 	self:CDBar(args.spellId, timers[stage][args.spellId][soulBlightOrbCounter])
 end
 
 function mod:SoulBlight(args)
-	self:TargetMessage(args.spellId, args.destName, "Neutral", "Warning")
+	self:TargetMessage(args.spellId, args.destName, "cyan", "Warning")
 	if self:Me(args.destGUID) then
 		self:Flash(args.spellId)
 		self:TargetBar(args.spellId, 8, args.destName)
@@ -383,14 +387,14 @@ function mod:SoulBlightRemoved(args)
 end
 
 function mod:TorturedRage(args)
-	self:Message(args.spellId, "Attention", "Alarm", CL.casting:format(CL.count:format(args.spellName, torturedRageCounter)))
+	self:Message(args.spellId, "yellow", "Alarm", CL.casting:format(CL.count:format(args.spellName, torturedRageCounter)))
 	torturedRageCounter = torturedRageCounter + 1
 	self:CDBar(args.spellId, self:Mythic() and (stage == 4 and timers[stage][args.spellId][torturedRageCounter] or 13.5) or stage == 4 and 13.5 or self:Easy() and 15.8 or timers[stage][args.spellId][torturedRageCounter], CL.count:format(self:SpellName(257296), torturedRageCounter))
 end
 
 function mod:SweepingScythe(args)
 	if self:Tank() then
-		self:Message(args.spellId, "Neutral", "Alert")
+		self:Message(args.spellId, "cyan", "Alert")
 	end
 	sweepingScytheCounter = sweepingScytheCounter + 1
 
@@ -407,7 +411,7 @@ end
 function mod:SweepingScytheStack(args)
 	if self:Me(args.destGUID) or (self:Tank() and self:Tank(args.destName)) then
 		local amount = args.amount or 1
-		self:StackMessage(args.spellId, args.destName, amount, "Attention", self:Tank() and (amount > 2 and "Alarm") or not self:Tank() and "Warning") -- Warning sound for non-tanks, 3+ stacks warning for tanks
+		self:StackMessage(args.spellId, args.destName, amount, "yellow", self:Tank() and (amount > 2 and "Alarm") or not self:Tank() and "Warning") -- Warning sound for non-tanks, 3+ stacks warning for tanks
 	end
 end
 
@@ -416,34 +420,42 @@ function mod:SkyandSea(args)
 end
 
 do
-	local skyName, seaName = nil, nil
-
 	local function announce(self)
 		if skyName and seaName then
 			local text = L.gifts:format(self:ColorName(skyName), self:ColorName(seaName))
-			self:Message(255594, "Positive", "Long", text, 255594)
+			self:Message(255594, "green", "Long", text, 255594)
 			skyName = nil
 			seaName = nil
 		end
 	end
 
 	function mod:GiftoftheSea(args)
+		local meOnly = self:CheckOption(255594, "ME_ONLY")
 		if self:Me(args.destGUID) then
 			self:Say(255594, L.sea_say)
+			if meOnly then
+				self:Message(255594, "green", "Long", CL.you:format(args.spellName), args.spellId)
+			end
+		elseif not meOnly then
+			seaName = args.destName
+			announce(self)
 		end
-		seaName = args.destName
-		announce(self)
 		if self:GetOption(seaMarker) then
 			SetRaidTarget(args.destName, 6)
 		end
 	end
 
 	function mod:GiftoftheSky(args)
+		local meOnly = self:CheckOption(255594, "ME_ONLY")
 		if self:Me(args.destGUID) then
 			self:Say(255594, L.sky_say)
+			if meOnly then
+				self:Message(255594, "green", "Long", CL.you:format(args.spellName), args.spellId)
+			end
+		elseif not meOnly then
+			skyName = args.destName
+			announce(self)
 		end
-		skyName = args.destName
-		announce(self)
 		if self:GetOption(seaMarker) then
 			SetRaidTarget(args.destName, 5)
 		end
@@ -459,7 +471,7 @@ end
 function mod:StrengthoftheSkyandSea(args)
 	if self:Me(args.destGUID) then
 		local amount = args.amount or 1
-		self:Message(255594, "Positive", "Info", CL.stackyou:format(amount, args.spellName))
+		self:Message(255594, "green", "Info", CL.stackyou:format(amount, args.spellName))
 	end
 end
 
@@ -467,7 +479,7 @@ end
 function mod:GolgannethsWrath()
 	if stage ~= 2 then -- We already set stage 2 from the yell
 		stage = 2
-		self:Message("stages", "Positive", "Long", CL.stage:format(stage), false)
+		self:Message("stages", "green", "Long", CL.stage:format(stage), false)
 		self:StopBar(CL.count:format(self:SpellName(248165), coneOfDeathCounter)) -- Cone of Death
 		self:StopBar(248317) -- Blight Orb
 		self:StopBar(CL.count:format(self:SpellName(257296), torturedRageCounter)) -- Tortured Rage
@@ -495,9 +507,9 @@ do
 	local function announce(self)
 		if isOnMe > 0 then -- Burst (3 or 7)
 			local positionNumber = isOnMe == 3 and 1 or 2 -- Either 1 or 2
-			self:Message(250669, "Personal", "Alarm", CL.you:format(CL.count_icon:format(self:SpellName(250669), positionNumber, isOnMe))) -- Soulburst (1{3}) on you, Soulburst (2{7}) on you
+			self:Message(250669, "blue", "Alarm", CL.you:format(CL.count_icon:format(self:SpellName(250669), positionNumber, isOnMe))) -- Soulburst (1{3}) on you, Soulburst (2{7}) on you
 		elseif isOnMe < 0 then -- Bomb (-1)
-			self:Message(251570, "Personal", "Warning", CL.you:format(CL.count:format("|T137002:0|t" .. self:SpellName(251570), soulBombCounter - 1))) -- {2}Soulbomb (soulBombCounter) on you
+			self:Message(251570, "blue", "Warning", CL.you:format(CL.count:format("|T137002:0|t" .. self:SpellName(251570), soulBombCounter - 1))) -- {2}Soulbomb (soulBombCounter) on you
 		end
 		if self:CheckOption("combinedBurstAndBomb", "MESSAGE") then
 			if isOnMe == 0 or self:GetOption("custom_off_always_show_combined") then
@@ -514,14 +526,14 @@ do
 				end
 				msg = msg .. L.burst:format(burstMsg)
 
-				self:Message("combinedBurstAndBomb", "Important", nil, msg, false)
+				self:Message("combinedBurstAndBomb", "red", nil, msg, false)
 			end
 		else
 			if isOnMe > -1 then -- No bomb on you (0, 3 or 7)
-				self:TargetMessage(251570, bombName, "Urgent", nil, CL.count:format(self:SpellName(251570), soulBombCounter))
+				self:TargetMessage(251570, bombName, "orange", nil, CL.count:format(self:SpellName(251570), soulBombCounter))
 			end
 			if isOnMe < 3 then -- No burst on you (0 or -1)
-				self:TargetMessage(250669, self:ColorName(burstList), "Important")
+				self:TargetMessage(250669, self:ColorName(burstList), "red")
 			end
 		end
 		wipe(burstList)
@@ -599,12 +611,12 @@ function mod:SoulbombRemoved(args)
 end
 
 function mod:EdgeofObliteration(args)
-	self:Message(args.spellId, "Attention", "Alarm")
+	self:Message(args.spellId, "yellow", "Alarm")
 	self:Bar(args.spellId, 34)
 end
 
 function mod:AvatarofAggramar(args)
-	self:TargetMessage(args.spellId, args.destName, "Positive", "Long")
+	self:TargetMessage(args.spellId, args.destName, "green", "Long")
 	avatarCounter = avatarCounter + 1
 	if stage == 2 then -- Don't trigger if it procs after stage 3 RP has started
 		self:Bar(args.spellId, 60, CL.count:format(args.spellName, avatarCounter))
@@ -618,7 +630,7 @@ do
 			local t = GetTime()
 			if t-prev > 0.5 then -- Throttle incase you are on the edge/tank moves around slightly
 				prev = t
-				self:TargetMessage(args.spellId, args.destName, "Personal", "Info")
+				self:TargetMessage(args.spellId, args.destName, "blue", "Info")
 			end
 		end
 	end
@@ -633,7 +645,7 @@ function mod:TemporalBlast()
 			stage = 3
 			wipe(vulnerabilityCollector)
 			scanningTargets = nil
-			self:Message("stages", "Positive", "Long", CL.stage:format(stage), false)
+			self:Message("stages", "green", "Long", CL.stage:format(stage), false)
 			self:StopBar(248499) -- Sweeping Scythe
 			self:StopBar(255826) -- Edge of Obliteration
 			self:StopBar(CL.count:format(self:SpellName(255199), avatarCounter)) -- Avatar of Aggramar
@@ -642,7 +654,7 @@ function mod:TemporalBlast()
 			self:StopBar(CL.count:format(self:SpellName(250669), 2)) -- Soulburst (2)
 		end
 
-		self:Bar("stages", 16.6, CL.incoming:format(self:SpellName(-17070)), "achievement_boss_algalon_01") -- The Constellar Designates Incoming!
+		self:Bar("stages", 16.6, CL.adds, "achievement_boss_algalon_01") -- The Constellar Designates
 		self:Bar(-17077, self:Easy() and 30.5 or 26.3, nil, "inv_sword_2h_pandaraid_d_01") -- The Stellar Armory
 		self:Bar(252516, 27.3) -- The Discs of Norgannon
 		self:Bar(252729, self:Easy() and 38 or 30.4) -- Cosmic Ray
@@ -680,7 +692,7 @@ do
 		end
 		playerList[#playerList+1] = args.destName
 		if #playerList == 1 then
-			self:ScheduleTimer("TargetMessage", 0.3, args.spellId, playerList, "Urgent", "Warning", nil, nil, true)
+			self:ScheduleTimer("TargetMessage", 0.3, args.spellId, playerList, "orange", "Warning", nil, nil, true)
 			self:Bar(args.spellId, self:Easy() and 30 or 20)
 		end
 	end
@@ -692,7 +704,7 @@ do
 		local t = GetTime()
 		if t-prev > 2 then
 			prev = t
-			self:Message(args.spellId, "Important", "Alarm", CL.casting:format(args.spellName))
+			self:Message(args.spellId, "red", "Alarm", CL.casting:format(args.spellName))
 			self:Bar(args.spellId, self:Easy() and 30 or 20)
 		end
 	end
@@ -707,7 +719,7 @@ do
 		end
 		playerList[#playerList+1] = args.destName
 		if #playerList == 1 then
-			self:ScheduleTimer("TargetMessage", 0.3, args.spellId, playerList, "Urgent", "Alarm", nil, nil, true)
+			self:ScheduleTimer("TargetMessage", 0.3, args.spellId, playerList, "orange", "Alarm", nil, nil, true)
 		end
 	end
 end
@@ -718,7 +730,7 @@ do
 		local t = GetTime()
 		if t-prev > 2 then
 			prev = t
-			self:Message(-17077, "Attention", "Alert", nil, "inv_sword_2h_pandaraid_d_01")
+			self:Message(-17077, "yellow", "Alert", nil, "inv_sword_2h_pandaraid_d_01")
 			if not self:Easy() then
 				self:Bar(-17077, 40, nil, "inv_sword_2h_pandaraid_d_01")
 			end
@@ -727,7 +739,7 @@ do
 end
 
 function mod:CosmicPower(args)
-	self:Message(args.spellId, "Attention", "Alert")
+	self:Message(args.spellId, "yellow", "Alert")
 end
 
 --[[ Stage 4 ]]--
@@ -735,7 +747,7 @@ function mod:ReapSoul()
 	self:UnregisterTargetEvents()
 
 	stage = 4
-	self:Message("stages", "Positive", "Long", CL.stage:format(stage), false)
+	self:Message("stages", "green", "Long", CL.stage:format(stage), false)
 	self:StopBar(-17077) -- The Stellar Armory
 	self:StopBar(252616) -- Cosmic Beacon
 	self:StopBar(252729) -- Cosmic Ray
@@ -744,17 +756,17 @@ function mod:ReapSoul()
 end
 
 function mod:GiftoftheLifebinder(args)
-	self:Message("stages", "Positive", "Long", args.spellName, args.spellId)
+	self:Message("stages", "green", "Long", args.spellName, args.spellId)
 end
 
 function mod:EndofAllThings(args)
-	self:Message(args.spellId, "Important", "Warning", CL.casting:format(args.spellName))
+	self:Message(args.spellId, "red", "Warning", CL.casting:format(args.spellName))
 	self:CastBar(args.spellId, 15)
 end
 
 function mod:EndofAllThingsInterupted(args)
 	if args.extraSpellId == 256544 then
-		self:Message(args.extraSpellId, "Positive", "Info", CL.interrupted:format(args.extraSpellName))
+		self:Message(256544, "green", "Info", CL.interrupted:format(args.extraSpellName))
 		self:StopBar(CL.cast:format(args.extraSpellName))
 		initializationCount = self:Mythic() and 1 or 3
 		torturedRageCounter = 1
@@ -764,12 +776,10 @@ function mod:EndofAllThingsInterupted(args)
 			annihilationCount = 1
 			sargerasGazeCount = 1
 			sentenceofSargerasCount = 1
-			sentenceCast = nil
 			self:Bar(258838, 3.8) -- Soulrending Scythe
 			self:Bar(258068, timers[stage][258068][sargerasGazeCount], CL.count:format(self:SpellName(258068), sargerasGazeCount)) -- Sargeras' Gaze
 			self:StartScytheTimer(timers[stage][258834][annihilationCount])
 			self:Bar(257966, timers[stage][257966][sentenceofSargerasCount], CL.count:format(self:SpellName(257966), sentenceofSargerasCount)) -- Sentence of Sargeras
-			self:ScheduleTimer("SentenceCheck", timers[stage][257966][sentenceofSargerasCount]+1)
 		else
 			soulBombCounter = 1
 			if self:Easy() then
@@ -787,7 +797,7 @@ end
 
 function mod:DeadlyScythe(args)
 	if self:Tank() then
-		self:Message(args.spellId, "Neutral", "Alert")
+		self:Message(args.spellId, "cyan", "Alert")
 	end
 	self:Bar(args.spellId, 6.6)
 end
@@ -795,7 +805,7 @@ end
 function mod:DeadlyScytheStack(args)
 	if self:Me(args.destGUID) or self:Tank() then -- Always Show for Tanks and when on Self
 		local amount = args.amount or 1
-		self:StackMessage(args.spellId, args.destName, amount, "Attention", self:Tank() and (self:Me(args.destGUID) and "Alarm") or "Warning") -- Warning sound for non-tanks, only on self when a tank
+		self:StackMessage(args.spellId, args.destName, amount, "yellow", self:Tank() and (self:Me(args.destGUID) and "Alarm") or "Warning") -- Warning sound for non-tanks, only on self when a tank
 	end
 end
 
@@ -805,7 +815,7 @@ do
 		local t = GetTime()
 		if t-prev > 2 then
 			prev = t
-			self:Message(256388, "Important", "Warning", L.countx:format(args.spellName, initializationCount))
+			self:Message(256388, "red", "Warning", L.countx:format(args.spellName, initializationCount))
 			initializationCount = initializationCount + 1
 			self:CDBar(256388, self:Mythic() and timers[stage][256388][initializationCount] or 50, L.countx:format(args.spellName, initializationCount))
 		end
@@ -813,14 +823,14 @@ do
 end
 
 function mod:Titanforging(args)
-	self:Message(args.spellId, "Positive", "Long", CL.casting:format(args.spellName))
+	self:Message(args.spellId, "green", "Long", CL.casting:format(args.spellName))
 end
 
 --[[ Mythic ]]--
 
 function mod:SargerasRage(args)
 	if self:Me(args.destGUID) then
-		self:TargetMessage(258068, args.destName, "Personal", "Warning", args.spellName, args.spellId)
+		self:TargetMessage(258068, args.destName, "blue", "Warning", args.spellName, args.spellId)
 		self:Flash(258068)
 		self:Say(258068, self:SpellName(6612)) -- Rage
 	end
@@ -828,47 +838,62 @@ end
 
 function mod:SargerasFear(args)
 	if self:Me(args.destGUID) then
-		self:TargetMessage(258068, args.destName, "Personal", "Warning", args.spellName, args.spellId)
+		self:TargetMessage(258068, args.destName, "blue", "Warning", args.spellName, args.spellId)
 		checkForFearHelp(self)
 	end
 end
 
-function mod:SentenceCheck()
-	if not sentenceCast then
-		self:Message(257966, "Urgent", nil)
-		sentenceofSargerasCount = sentenceofSargerasCount + 1
-		if timers[stage][257966][sentenceofSargerasCount] then
-			self:Bar(257966, (timers[stage][257966][sentenceofSargerasCount]-1), CL.count:format(self:SpellName(257966), sentenceofSargerasCount))
-		else
-			self:Bar(257966, nil, CL.count:format(self:SpellName(257966), sentenceofSargerasCount))
-		end
-	end
-	sentenceCast = nil
-	if timers[stage][257966][sentenceofSargerasCount] then
-		self:ScheduleTimer("SentenceCheck", timers[stage][257966][sentenceofSargerasCount])
-	end
-end
-
 do
-	local playerList = mod:NewTargetList()
+	local playerList, isOnMe = {}, 0
+
+	local function announce(self, spellId, spellName)
+		local meOnly = self:CheckOption(spellId, "ME_ONLY")
+
+		if isOnMe > 0 and (meOnly or #playerList == 1) then
+			self:Message(spellId, "blue", "Warning", CL.you:format(("|T13700%d:0|t%s"):format(isOnMe == 1 and 1 or 4, spellName)))
+		elseif not meOnly then
+			local msg = ""
+			for i=1, #playerList do
+				local icon = i == 1 and "|T137001:0|t" or "|T137004:0|t"
+				msg = msg .. icon .. self:ColorName(playerList[i]) .. (i == #playerList and "" or ",")
+			end
+
+			self:Message(spellId, "orange", isOnMe > 0 and "Warning", CL.other:format(spellName, msg))
+		end
+
+		wipe(playerList)
+		isOnMe = 0
+	end
+
 	function mod:SentenceofSargeras(args)
+		playerList[#playerList+1] = args.destName
 		if self:Me(args.destGUID) then
-			self:Flash(args.spellId)
+			isOnMe = #playerList
+			self:Flash(args.spellId, isOnMe == 1 and 1 or 4)
 			checkForFearHelp(self)
 		end
-		playerList[#playerList+1] = args.destName
 		if #playerList == 1 then
-			self:ScheduleTimer("TargetMessage", 0.3, args.spellId, playerList, "Urgent", "Warning")
+			self:ScheduleTimer(announce, 0.3, self, args.spellId, args.spellName)
 			sentenceofSargerasCount = sentenceofSargerasCount + 1
-			sentenceCast = true
 			self:Bar(args.spellId, timers[stage][args.spellId][sentenceofSargerasCount], CL.count:format(args.spellName, sentenceofSargerasCount))
+			if self:GetOption(sentenceMarker) then
+				SetRaidTarget(args.destName, 1)
+			end
+		elseif self:GetOption(sentenceMarker) then
+			SetRaidTarget(args.destName, 4)
+		end
+	end
+
+	function mod:SentenceofSargerasRemoved(args)
+		if self:GetOption(sentenceMarker) then
+			SetRaidTarget(args.destName, 0)
 		end
 	end
 end
 
 function mod:SoulrendingScythe(args)
 	if self:Tank() then
-		self:Message(args.spellId, "Neutral", "Alert")
+		self:Message(args.spellId, "cyan", "Alert")
 	end
 	self:CDBar(args.spellId, 8.5)
 end
@@ -876,14 +901,14 @@ end
 function mod:SoulrendingScytheStack(args)
 	if self:Me(args.destGUID) or (self:Tank() and self:Tank(args.destName)) then
 		local amount = args.amount or 1
-		self:StackMessage(args.spellId, args.destName, amount, "Attention", self:Tank() and (amount > 2 and "Alarm") or "Warning") -- Warning sound for non-tanks, 3+ stacks warning for tanks
+		self:StackMessage(args.spellId, args.destName, amount, "yellow", self:Tank() and (amount > 2 and "Alarm") or "Warning") -- Warning sound for non-tanks, 3+ stacks warning for tanks
 	end
 end
 
 -- Edge of Annihilation
 function mod:StartScytheTimer(t)
 	self:Bar(258834, t, CL.count:format(self:SpellName(258834), annihilationCount))
-	self:ScheduleTimer("Message", t, 258834, "Attention", "Info", CL.count:format(self:SpellName(258834), annihilationCount))
+	self:ScheduleTimer("Message", t, 258834, "yellow", "Info", CL.count:format(self:SpellName(258834), annihilationCount))
 	self:ScheduleTimer("CastBar", t, 258834, 10, CL.count:format(self:SpellName(258834), annihilationCount))
 	annihilationCount = annihilationCount + 1
 	if timers[stage][258834][annihilationCount] then
@@ -898,7 +923,7 @@ do
 		local t = GetTime()
 		if self:Me(args.destGUID) and t-prev > 1.5 then
 			prev = t
-			self:Message(args.spellId, "Personal", "Alarm", CL.underyou:format(args.spellName)) -- Death Fog
+			self:Message(args.spellId, "blue", "Alarm", CL.underyou:format(args.spellName)) -- Death Fog
 		end
 	end
 end

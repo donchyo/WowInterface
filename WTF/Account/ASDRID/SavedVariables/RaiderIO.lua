@@ -7,10 +7,10 @@ RaiderIO_Config = {
 	["showDropDownCopyURL"] = true,
 	["disableScoreColors"] = false,
 	["enableLFGTooltips"] = true,
-	["showSimpleScoreColors"] = false,
+	["enableWhoTooltips"] = true,
 	["showMainsScore"] = true,
 	["enableWhoMessages"] = true,
-	["enableWhoTooltips"] = true,
+	["showSimpleScoreColors"] = false,
 	["enableLFGDropdown"] = true,
 	["enableGuildTooltips"] = true,
 }

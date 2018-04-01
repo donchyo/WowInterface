@@ -253,6 +253,7 @@ local default_config = {
 		tracker_only_currentmap = false,
 		tracker_scale = 1,
 		tracker_show_time = false,
+		tracker_textsize = 12,
 		use_quest_summary = true,
 		zone_only_tracked = false,
 		bar_anchor = "bottom",
@@ -6721,6 +6722,7 @@ hooksecurefunc ("ToggleWorldMap", function (self)
 					end
 				else
 					WorldQuestTracker.db.profile [option] = value
+					
 					if (option == "bar_anchor") then
 						WorldQuestTracker:SetStatusBarAnchor()
 					
@@ -6730,6 +6732,10 @@ hooksecurefunc ("ToggleWorldMap", function (self)
 						else
 							WorldQuestTracker.UpdateZoneWidgets()
 						end
+						
+					elseif (option == "tracker_textsize") then
+						WorldQuestTracker.RefreshTrackerWidgets()
+						
 					end
 				end
 				
@@ -7981,6 +7987,17 @@ hooksecurefunc ("ToggleWorldMap", function (self)
 				GameCooltip:AddMenu (2, options_on_click, "tracker_scale", 1.3)
 				GameCooltip:AddLine (format (L["S_MAPBAR_OPTIONSMENU_TRACKER_SCALE"], "1.5"), "", 2)
 				GameCooltip:AddMenu (2, options_on_click, "tracker_scale", 1.5)
+				
+				--
+				GameCooltip:AddLine ("$div", nil, 2, nil, -5, -11)
+				--
+				
+				GameCooltip:AddLine ("Small Text Size", "", 2)
+				GameCooltip:AddMenu (2, options_on_click, "tracker_textsize", 12)
+				GameCooltip:AddLine ("Medium Text Size", "", 2)
+				GameCooltip:AddMenu (2, options_on_click, "tracker_textsize", 13)
+				GameCooltip:AddLine ("Large Text Size", "", 2)
+				GameCooltip:AddMenu (2, options_on_click, "tracker_textsize", 14)
 				
 				--
 				GameCooltip:AddLine ("$div", nil, 2, nil, -5, -11)
@@ -9255,10 +9272,10 @@ hooksecurefunc ("ToggleWorldMap", function (self)
 end)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
---> zone summary
+--> zone summary  ~summaryframe
 
 local ZoneSumaryFrame = CreateFrame ("frame", "WorldQuestTrackerZoneSummaryFrame", worldFramePOIs)
-ZoneSumaryFrame:SetPoint ("bottomleft", WorldMapScrollFrame, "bottomleft", 0, 19)
+ZoneSumaryFrame:SetPoint ("bottomleft", WorldMapScrollFrame, "bottomleft", 0, 110)
 ZoneSumaryFrame:SetSize (1, 1)
 
 ZoneSumaryFrame.WidgetHeight = 18
@@ -9378,10 +9395,10 @@ local GetOrCreateZoneSummaryWidget = function (index)
 	--
 	
 	button.OnTracker = button:CreateTexture (nil, "overlay")
-	button.OnTracker:SetPoint ("left", buttonIcon, "right", 65, 0)
+	button.OnTracker:SetPoint ("left", buttonIcon, "right", 63, 0)
 	button.OnTracker:SetTexture ([[Interface\AddOns\WorldQuestTracker\media\ArrowFrozen]])
-	button.OnTracker:SetAlpha (.75)
-	button.OnTracker:SetSize (16, 16)
+	button.OnTracker:SetAlpha (.65)
+	button.OnTracker:SetSize (14, 14)
 	button.OnTracker:SetTexCoord (.15, .8, .15, .80)
 	
 	--
@@ -9511,14 +9528,10 @@ function WorldQuestTracker.SetupZoneSummaryButton (summaryWidget, zoneWidget)
 	summaryWidget.BlackBackground:SetAlpha (.4)
 	summaryWidget.Highlight:SetAlpha (.2)
 	
---	Icon.timeBlipRed:SetAlpha (1)
---	Icon.timeBlipOrange:SetAlpha (1)
---	Icon.timeBlipYellow:SetAlpha (1)
---	Icon.timeBlipGreen:SetAlpha (1)
-	
 	summaryWidget:Show()
 end
 
+-- ~summary
 function WorldQuestTracker.CanShowZoneSummaryFrame()
 	return WorldQuestTracker.db.profile.use_quest_summary and WorldQuestTracker.ZoneHaveWorldQuest() and not WorldMapFrame_InWindowedMode()
 end
@@ -9555,6 +9568,7 @@ function WorldQuestTracker.UpdateZoneSummaryFrame()
 		index = index + 1
 	end
 	
+	--attach the header to the last widget
 	if (LastWidget) then
 		ZoneSumaryFrame.Header:Show()
 		ZoneSumaryFrame.Header:SetPoint ("bottomleft", LastWidget, "topleft", 20, 0)
@@ -10636,8 +10650,8 @@ function WorldQuestTracker.RefreshTrackerWidgets()
 					widget.ArrowDistance:Show()
 					widget.RightBackground:Show()
 					widget:SetAlpha (TRACKER_FRAME_ALPHA_INMAP)
-					widget.Title.textsize = TRACKER_TITLE_TEXT_SIZE_INMAP
-					widget.Zone.textsize = TRACKER_TITLE_TEXT_SIZE_INMAP
+					widget.Title.textsize = WorldQuestTracker.db.profile.tracker_textsize --TRACKER_TITLE_TEXT_SIZE_INMAP
+					widget.Zone.textsize = WorldQuestTracker.db.profile.tracker_textsize --TRACKER_TITLE_TEXT_SIZE_INMAP
 					needSortByDistance = needSortByDistance + 1
 					
 					if (WorldQuestTracker.db.profile.show_yards_distance) then

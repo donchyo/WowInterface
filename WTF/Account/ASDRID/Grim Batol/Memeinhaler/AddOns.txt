@@ -1,6 +1,6 @@
 EveryGoldToBanker: disabled
 Accountant: disabled
-ActionBarSaver: disabled
+ActionBarSaver: enabled
 AddonProfiler: disabled
 AddonUsage: disabled
 AdvancedInterfaceOptions: disabled
@@ -176,7 +176,7 @@ Prat-3.0: disabled
 Prat-3.0_Libraries: disabled
 premade-filter: disabled
 PremadeGroupsFilter: disabled
-Quartz: disabled
+Quartz: enabled
 QuickQuest: disabled
 RaidFrameIndicators: disabled
 RaiderIO: enabled

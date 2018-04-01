@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod = BigWigs:NewBoss("Malygos", 527, 1617)
+local mod = BigWigs:NewBoss("Malygos", 616, 1617)
 if not mod then return end
 mod:RegisterEnableMob(28859)
 mod.toggleOptions = {"phase", "sparks", "sparkbuff", "vortex", "breath", {"surge", "FLASH"}, 57429, "berserk"}
@@ -71,7 +71,6 @@ function mod:OnBossEnable()
 	self:Yell("Phase3", L["phase3_trigger"])
 
 	self:RegisterEvent("RAID_BOSS_WHISPER")
-	-- Since we don't have the actual emotes here we can't use :Emote
 	self:RegisterEvent("RAID_BOSS_EMOTE")
 
 	self:RegisterEvent("PLAYER_REGEN_ENABLED", "CheckForWipe")

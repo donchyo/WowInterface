@@ -1,0 +1,2 @@
+AddonProfiler: disabled
+ActionBarSaver: enabled

@@ -2,7 +2,7 @@
 -- Module declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Kel'Thuzad", 535, 1615)
+local mod, CL = BigWigs:NewBoss("Kel'Thuzad", 533, 1615)
 if not mod then return end
 mod:RegisterEnableMob(15990)
 mod.toggleOptions = {27808, 27810, 28410, {27819, "ICON", "FLASH"}, "guardians", "phase", "proximity"}
@@ -112,7 +112,7 @@ function mod:Detonate(args)
 	self:PrimaryIcon(args.spellId, args.destName)
 	self:Bar(args.spellId, 5, L["detonate_other"]:format(args.destName))
 	self:Bar(args.spellId, 20, L["detonate_possible_bar"])
-	self:DelayedMessage(args.spellId, 15, L["detonate_warning"], "Attention")
+	self:DelayedMessage(args.spellId, 15, "Attention", L["detonate_warning"])
 end
 
 do
@@ -121,7 +121,7 @@ do
 		local mindControl = mod:SpellName(605)
 		mod:TargetMessage(spellId, mcTargets, "Important", "Alert", mindControl)
 		mod:Bar(spellId, 20, mindControl)
-		mod:DelayedMessage(spellId, 68, CL["soon"]:format(mindControl), "Urgent")
+		mod:DelayedMessage(spellId, 68, "Urgent", CL["soon"]:format(mindControl))
 		mod:CDBar(spellId, 68, mindControl)
 		handle = nil
 	end

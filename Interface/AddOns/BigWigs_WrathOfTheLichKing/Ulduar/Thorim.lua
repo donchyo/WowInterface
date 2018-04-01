@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Thorim", 529, 1645)
+local mod, CL = BigWigs:NewBoss("Thorim", 603, 1645)
 if not mod then return end
 mod:RegisterEnableMob(32865)
 mod.engageId = 1141
@@ -162,9 +162,9 @@ end
 
 function mod:HardModeTimerExpires()
 	if self:BarTimeLeft(L.hardmode) == 0 then
-		self:Message("hardmode", "Positive", nil, L.hardmode_warning, false)
+		self:Message("hardmode", "Neutral", nil, L.hardmode_warning, false)
 	else
-		self:Message("hardmode", "Positive", nil, -17610, false) -- -17610 = "Hard Mode"
+		self:Message("hardmode", "Neutral", nil, -17610, false) -- -17610 = "Hard Mode"
 	end
 end
 

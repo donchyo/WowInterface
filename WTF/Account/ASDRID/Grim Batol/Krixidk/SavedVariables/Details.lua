@@ -2,2075 +2,3133 @@
 _detalhes_database = {
 	["savedbuffs"] = {
 	},
-	["mythic_dungeon_id"] = 277,
+	["mythic_dungeon_id"] = 351,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 657,
 					["tipo"] = 2,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.001914,
+							["totalabsorbed"] = 702493.02142,
 							["damage_from"] = {
-								["Glazer"] = true,
-								["[*] Quake"] = true,
+								["Environment (Falling)"] = true,
+								["Spirit of Vengeance"] = true,
+								["Cordana Felsong"] = true,
+								["Barbed Spiderling"] = true,
+								["[*] Sanguine Ichor"] = true,
+								["Senflol-Antonidas"] = true,
 							},
 							["targets"] = {
-								["Overloaded Lens"] = 13803629,
-								["Glazer"] = 235737673,
+								["Aranasi Broodmother"] = 39689102,
+								["Avatar of Vengeance"] = 2999700,
+								["Cordana Felsong"] = 175537913,
+								["Barbed Spiderling"] = 359124209,
+								["Spirit of Vengeance"] = 160895288,
+								["Grimhorn the Enslaver"] = 79804492,
+								["Avatar of Shadow"] = 5477180,
 							},
 							["pets"] = {
-								"Knucklex-Antonidas <Knucklex-Antonidas>", -- [1]
+								"Rokuthec <Senflol-Antonidas> <Senflol-Antonidas>", -- [1]
 							},
-							["spec"] = 269,
-							["colocacao"] = 1,
-							["classe"] = "MONK",
+							["classe"] = "WARLOCK",
+							["spec"] = 265,
+							["friendlyfire_total"] = 39965377,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 147137795.001914,
-							["end_time"] = 1519429221,
-							["boss_fight_component"] = true,
+							["total_without_pet"] = 797249208.02142,
+							["last_dps"] = 3136293.25927788,
+							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 249541302.001914,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Knucklex-Antonidas",
+							["end_time"] = 1522169018,
+							["damage_taken"] = 57789875.02142,
+							["fight_component"] = true,
+							["nome"] = "Senflol-Antonidas",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
+									[233490] = {
+										["c_amt"] = 34,
+										["b_amt"] = 0,
+										["c_dmg"] = 38821259,
+										["g_amt"] = 0,
+										["n_max"] = 665045,
+										["targets"] = {
+											["Spirit of Vengeance"] = 5805203,
+											["Cordana Felsong"] = 25981153,
+											["Barbed Spiderling"] = 1203000,
+											["Grimhorn the Enslaver"] = 15342911,
+											["Avatar of Shadow"] = 609033,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 10120041,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 62,
+										["total"] = 48941300,
+										["c_max"] = 1950853,
+										["id"] = 233490,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 24,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 4,
+									},
+									[233498] = {
+										["c_amt"] = 14,
+										["b_amt"] = 0,
+										["c_dmg"] = 19684286,
+										["g_amt"] = 0,
+										["n_max"] = 544253,
+										["targets"] = {
+											["Grimhorn the Enslaver"] = 4687163,
+											["Cordana Felsong"] = 18174055,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3176932,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["total"] = 22861218,
+										["c_max"] = 1950853,
+										["id"] = 233498,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[257376] = {
+										["c_amt"] = 18,
+										["b_amt"] = 0,
+										["c_dmg"] = 23867493,
+										["g_amt"] = 0,
+										["n_max"] = 702894,
+										["targets"] = {
+											["Barbed Spiderling"] = 34507000,
+											["Spirit of Vengeance"] = 3306828,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13946335,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 39,
+										["total"] = 37813828,
+										["c_max"] = 1395037,
+										["id"] = 257376,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 21,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[199581] = {
+										["c_amt"] = 25,
+										["b_amt"] = 0,
+										["c_dmg"] = 23323153,
+										["g_amt"] = 0,
+										["n_max"] = 567701,
+										["targets"] = {
+											["Barbed Spiderling"] = 36734234,
+											["Spirit of Vengeance"] = 9243142,
+											["Cordana Felsong"] = 567701,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 23221924,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 75,
+										["total"] = 46545077,
+										["c_max"] = 939349,
+										["id"] = 199581,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 50,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[233499] = {
+										["c_amt"] = 10,
+										["b_amt"] = 0,
+										["c_dmg"] = 11090711,
+										["g_amt"] = 0,
+										["n_max"] = 563784,
+										["targets"] = {
+											["Grimhorn the Enslaver"] = 3785109,
+											["Cordana Felsong"] = 9398358,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2092756,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 13183467,
+										["c_max"] = 1950853,
+										["id"] = 233499,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[242834] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 2499431,
+										["g_amt"] = 0,
+										["n_max"] = 743407,
+										["targets"] = {
+											["Avatar of Shadow"] = 675825,
+											["Spirit of Vengeance"] = 1080199,
+											["Avatar of Vengeance"] = 1419232,
+											["Cordana Felsong"] = 743407,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1419232,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 3918663,
+										["c_max"] = 1419232,
+										["id"] = 242834,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[980] = {
+										["c_amt"] = 95,
+										["b_amt"] = 0,
+										["c_dmg"] = 40531449,
+										["g_amt"] = 0,
+										["n_max"] = 362486,
+										["targets"] = {
+											["Aranasi Broodmother"] = 3264122,
+											["Spirit of Vengeance"] = 19141599,
+											["Cordana Felsong"] = 17873065,
+											["Barbed Spiderling"] = 15671339,
+											["Grimhorn the Enslaver"] = 8287212,
+											["Avatar of Shadow"] = 752099,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 24457987,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 270,
+										["total"] = 64989436,
+										["c_max"] = 861154,
+										["id"] = 980,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 151,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 24,
+									},
+									[198590] = {
+										["c_amt"] = 30,
+										["b_amt"] = 0,
+										["c_dmg"] = 17816085,
+										["g_amt"] = 0,
+										["n_max"] = 360876,
+										["targets"] = {
+											["Avatar of Vengeance"] = 1580468,
+											["Cordana Felsong"] = 8497066,
+											["Barbed Spiderling"] = 2916946,
+											["Spirit of Vengeance"] = 892166,
+											["Grimhorn the Enslaver"] = 10303955,
+											["Avatar of Shadow"] = 1505207,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 7879723,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 65,
+										["total"] = 25695808,
+										["c_max"] = 1004475,
+										["id"] = 198590,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 35,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[252879] = {
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 5391502,
+										["g_amt"] = 0,
+										["n_max"] = 397193,
+										["targets"] = {
+											["Spirit of Vengeance"] = 1557594,
+											["Cordana Felsong"] = 2015664,
+											["Barbed Spiderling"] = 3132992,
+											["Grimhorn the Enslaver"] = 1106581,
+											["Avatar of Shadow"] = 673447,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3094776,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 18,
+										["total"] = 8486278,
+										["c_max"] = 819107,
+										["id"] = 252879,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[146739] = {
+										["c_amt"] = 121,
+										["b_amt"] = 0,
+										["c_dmg"] = 62099747,
+										["g_amt"] = 0,
+										["n_max"] = 389601,
+										["targets"] = {
+											["Aranasi Broodmother"] = 6642970,
+											["Spirit of Vengeance"] = 23889455,
+											["Cordana Felsong"] = 18359479,
+											["Barbed Spiderling"] = 39425093,
+											["Legion Cruiser"] = 0,
+											["Grimhorn the Enslaver"] = 6632200,
+											["Avatar of Shadow"] = 874045,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 33723495,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 321,
+										["total"] = 95823242,
+										["c_max"] = 1041267,
+										["id"] = 146739,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 175,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 25,
+									},
+									[253073] = {
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 3485144,
+										["g_amt"] = 0,
+										["n_max"] = 234358,
+										["targets"] = {
+											["Barbed Spiderling"] = 2084761,
+											["Spirit of Vengeance"] = 1993177,
+											["Grimhorn the Enslaver"] = 1480479,
+											["Cordana Felsong"] = 1725217,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3798490,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 28,
+										["total"] = 7283634,
+										["c_max"] = 483301,
+										["id"] = 253073,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 19,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[27285] = {
+										["c_amt"] = 212,
+										["b_amt"] = 0,
+										["c_dmg"] = 172939402,
+										["g_amt"] = 0,
+										["n_max"] = 558483,
+										["targets"] = {
+											["Barbed Spiderling"] = 201636471,
+											["Spirit of Vengeance"] = 81514864,
+											["Aranasi Broodmother"] = 29782010,
+											["Legion Cruiser"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 139993943,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 552,
+										["total"] = 312933345,
+										["c_max"] = 1111607,
+										["id"] = 27285,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 337,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 3,
+									},
+									[233497] = {
 										["c_amt"] = 20,
-										["b_amt"] = 1,
-										["c_dmg"] = 1514202,
-										["g_amt"] = 0,
-										["n_max"] = 129055,
-										["targets"] = {
-											["Overloaded Lens"] = 33653,
-											["Glazer"] = 2544649,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1064100,
-										["n_min"] = 336,
-										["g_dmg"] = 0,
-										["counter"] = 56,
-										["total"] = 2578302,
-										["c_max"] = 162573,
-										["MISS"] = 9,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 22824,
-										["n_amt"] = 27,
-										["r_amt"] = 0,
-										["c_min"] = 1191,
-									}, -- [1]
-									[185099] = {
-										["c_amt"] = 4,
 										["b_amt"] = 0,
-										["c_dmg"] = 7201958,
+										["c_dmg"] = 26369977,
 										["g_amt"] = 0,
-										["n_max"] = 2544595,
+										["n_max"] = 557386,
 										["targets"] = {
-											["Overloaded Lens"] = 2653244,
-											["Glazer"] = 16618266,
+											["Spirit of Vengeance"] = 1204952,
+											["Grimhorn the Enslaver"] = 6764978,
+											["Cordana Felsong"] = 23491084,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 12069552,
-										["n_min"] = 220078,
+										["n_dmg"] = 5091037,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 19271510,
-										["c_max"] = 3701095,
-										["id"] = 185099,
+										["counter"] = 33,
+										["total"] = 31461014,
+										["c_max"] = 1950853,
+										["id"] = 233497,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
 										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[218615] = {
+										["c_amt"] = 22,
+										["b_amt"] = 0,
+										["c_dmg"] = 19382772,
+										["g_amt"] = 0,
+										["n_max"] = 644295,
+										["targets"] = {
+											["Barbed Spiderling"] = 15815114,
+											["Spirit of Vengeance"] = 7640738,
+											["Grimhorn the Enslaver"] = 388141,
+											["Cordana Felsong"] = 7019976,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 11481197,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 45,
+										["total"] = 30863969,
+										["c_max"] = 1288589,
+										["id"] = 218615,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 23,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[233496] = {
+										["c_amt"] = 32,
+										["b_amt"] = 0,
+										["c_dmg"] = 35820652,
+										["g_amt"] = 0,
+										["n_max"] = 665045,
+										["targets"] = {
+											["Spirit of Vengeance"] = 2841867,
+											["Grimhorn the Enslaver"] = 13353979,
+											["Cordana Felsong"] = 27374908,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 7750102,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 60,
+										["total"] = 43570754,
+										["c_max"] = 1950853,
+										["id"] = 233496,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["r_amt"] = 0,
-										["c_min"] = 445713,
+										["n_amt"] = 17,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 11,
 									},
-									[100784] = {
-										["c_amt"] = 4,
+									[231489] = {
+										["c_amt"] = 8,
 										["b_amt"] = 0,
-										["c_dmg"] = 9654060,
+										["c_dmg"] = 1544654,
 										["g_amt"] = 0,
-										["n_max"] = 2365142,
+										["n_max"] = 380230,
 										["targets"] = {
-											["Glazer"] = 24959829,
+											["Spirit of Vengeance"] = 783504,
+											["Cordana Felsong"] = 944286,
+											["Barbed Spiderling"] = 569291,
+											["Grimhorn the Enslaver"] = 509006,
+											["Avatar of Shadow"] = 72088,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 15305769,
-										["n_min"] = 15660,
+										["n_dmg"] = 1333521,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 24959829,
-										["c_max"] = 4148933,
-										["id"] = 100784,
+										["counter"] = 17,
+										["total"] = 2878175,
+										["c_max"] = 569291,
+										["id"] = 231489,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 16,
-										["r_amt"] = 0,
-										["c_min"] = 870913,
+										["n_amt"] = 9,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[229980] = {
+									[256807] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 22602248,
+										["n_max"] = 0,
 										["targets"] = {
-											["Glazer"] = 22602248,
+											["Fel Scorcher"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 22602248,
-										["n_min"] = 22602248,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 22602248,
+										["counter"] = 11,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 229980,
+										["id"] = 256807,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
 										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
 										["c_min"] = 0,
-									},
-									[222029] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 9831258,
-										["g_amt"] = 0,
-										["n_max"] = 3238158,
-										["targets"] = {
-											["Glazer"] = 13069416,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 3238158,
-										["n_min"] = 3238158,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 13069416,
-										["c_max"] = 6445633,
-										["id"] = 222029,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 3385625,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 11,
 									},
-									[132467] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 1271118,
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 823527884.02142,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["colocacao"] = 1,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1522168726,
+							["serial"] = "Player-3686-05B7AF0E",
+							["friendlyfire"] = {
+								["Senflol-Antonidas"] = {
+									["total"] = 39965377,
+									["spells"] = {
+										[111400] = 34414441,
+										[1454] = 4848443,
+										[213395] = 702493,
+									},
+								},
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 204842.021045,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["Spirit of Vengeance"] = true,
+								["Cordana Felsong"] = true,
+								["Barbed Spiderling"] = true,
+								["Cocanub-Ravencrest"] = true,
+								["[*] Sanguine Ichor"] = true,
+								["Aranasi Broodmother"] = true,
+							},
+							["targets"] = {
+								["Aranasi Broodmother"] = 33827431,
+								["Avatar of Vengeance"] = 6612414,
+								["Cordana Felsong"] = 124303216,
+								["Barbed Spiderling"] = 104135575,
+								["Spirit of Vengeance"] = 45090593,
+								["Grimhorn the Enslaver"] = 45452356,
+								["Avatar of Shadow"] = 6941971,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["spec"] = 72,
+							["friendlyfire_total"] = 429295,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 366363556.021045,
+							["last_dps"] = 1395245.47193595,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1522169018,
+							["damage_taken"] = 44389949.021045,
+							["fight_component"] = true,
+							["nome"] = "Cocanub-Ravencrest",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 95,
+										["b_amt"] = 2,
+										["c_dmg"] = 23459856,
 										["g_amt"] = 0,
-										["n_max"] = 197114,
+										["n_max"] = 184751,
 										["targets"] = {
-											["Glazer"] = 2670574,
+											["Aranasi Broodmother"] = 4572663,
+											["Spirit of Vengeance"] = 1091066,
+											["Cordana Felsong"] = 13856550,
+											["Barbed Spiderling"] = 2582245,
+											["Grimhorn the Enslaver"] = 7224073,
+											["Avatar of Shadow"] = 1073108,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1399456,
-										["n_min"] = 1697,
+										["n_dmg"] = 6939849,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 2670574,
-										["c_max"] = 394227,
-										["id"] = 132467,
+										["counter"] = 183,
+										["total"] = 30399705,
+										["c_max"] = 566382,
+										["r_amt"] = 0,
+										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
 										["a_dmg"] = 0,
+										["b_dmg"] = 321235,
 										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
 										["a_amt"] = 0,
+										["n_amt"] = 73,
+										["MISS"] = 12,
+										["IMMUNE"] = 3,
+									}, -- [1]
+									[96103] = {
+										["c_amt"] = 13,
+										["b_amt"] = 0,
+										["c_dmg"] = 25215052,
+										["g_amt"] = 0,
+										["n_max"] = 1220671,
+										["targets"] = {
+											["Aranasi Broodmother"] = 6083412,
+											["Spirit of Vengeance"] = 1494977,
+											["Cordana Felsong"] = 14143418,
+											["Barbed Spiderling"] = 1182549,
+											["Grimhorn the Enslaver"] = 8812458,
+											["Avatar of Shadow"] = 2459543,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8961305,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 27,
+										["total"] = 34176357,
+										["c_max"] = 3016570,
+										["id"] = 96103,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 14,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[257244] = {
+										["c_amt"] = 25,
+										["b_amt"] = 0,
+										["c_dmg"] = 9026169,
+										["g_amt"] = 0,
+										["n_max"] = 169283,
+										["targets"] = {
+											["Barbed Spiderling"] = 349373,
+											["Spirit of Vengeance"] = 169446,
+											["Grimhorn the Enslaver"] = 421874,
+											["Cordana Felsong"] = 10534218,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2448742,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 46,
+										["total"] = 11474911,
+										["c_max"] = 502030,
+										["id"] = 257244,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 21,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[23881] = {
+										["c_amt"] = 17,
+										["b_amt"] = 0,
+										["c_dmg"] = 14046683,
+										["g_amt"] = 0,
+										["n_max"] = 510139,
+										["targets"] = {
+											["Aranasi Broodmother"] = 2710557,
+											["Spirit of Vengeance"] = 1905271,
+											["Cordana Felsong"] = 9948736,
+											["Barbed Spiderling"] = 1286191,
+											["Grimhorn the Enslaver"] = 5831449,
+											["Avatar of Shadow"] = 349577,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 7985098,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 43,
+										["total"] = 22031781,
+										["c_max"] = 1418964,
+										["id"] = 23881,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 26,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[5308] = {
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 16959530,
+										["g_amt"] = 0,
+										["n_max"] = 1065785,
+										["targets"] = {
+											["Barbed Spiderling"] = 632985,
+											["Spirit of Vengeance"] = 4598738,
+											["Grimhorn the Enslaver"] = 1458919,
+											["Cordana Felsong"] = 14002599,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3733711,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 20693241,
+										["c_max"] = 2386964,
+										["id"] = 5308,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[201363] = {
+										["c_amt"] = 14,
+										["b_amt"] = 0,
+										["c_dmg"] = 12600887,
+										["g_amt"] = 0,
+										["n_max"] = 407399,
+										["targets"] = {
+											["Aranasi Broodmother"] = 2260984,
+											["Spirit of Vengeance"] = 752674,
+											["Cordana Felsong"] = 6259809,
+											["Barbed Spiderling"] = 3728563,
+											["Grimhorn the Enslaver"] = 2007660,
+											["Avatar of Shadow"] = 290089,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2698892,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 25,
+										["total"] = 15299779,
+										["c_max"] = 1491121,
+										["id"] = 201363,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 6788,
-									},
-									[205414] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 5249141,
-										["g_amt"] = 0,
-										["n_max"] = 1451444,
-										["targets"] = {
-											["Glazer"] = 6700585,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1451444,
-										["n_min"] = 1451444,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 6700585,
-										["c_max"] = 3210308,
-										["id"] = 205414,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 2038833,
+										["IMMUNE"] = 1,
 									},
-									[107270] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 214991,
-										["g_amt"] = 0,
-										["n_max"] = 107496,
-										["targets"] = {
-											["Glazer"] = 537479,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 322488,
-										["n_min"] = 107496,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 537479,
-										["c_max"] = 214991,
-										["id"] = 107270,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 214991,
-									},
-									[124280] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 669453,
-										["targets"] = {
-											["Glazer"] = 1338906,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1338906,
-										["n_min"] = 669453,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1338906,
-										["c_max"] = 0,
-										["id"] = 124280,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[158221] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 1811615,
-										["g_amt"] = 0,
-										["n_max"] = 640267,
-										["targets"] = {
-											["Overloaded Lens"] = 2561069,
-											["Glazer"] = 2255271,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 3004725,
-										["n_min"] = 265539,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 4816340,
-										["c_max"] = 1280535,
-										["id"] = 158221,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 531080,
-									},
-									[242390] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 4023719,
-										["g_amt"] = 0,
-										["n_max"] = 1058517,
-										["targets"] = {
-											["Glazer"] = 6244925,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2221206,
-										["n_min"] = 581344,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 6244925,
-										["c_max"] = 1508321,
-										["id"] = 242390,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 1007077,
-									},
-									[117418] = {
-										["c_amt"] = 7,
-										["b_amt"] = 0,
-										["c_dmg"] = 10444864,
-										["g_amt"] = 0,
-										["n_max"] = 1197177,
-										["targets"] = {
-											["Overloaded Lens"] = 7183058,
-											["Glazer"] = 14878503,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 11616697,
-										["n_min"] = 559686,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 22061561,
-										["c_max"] = 2394352,
-										["id"] = 117418,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 1119373,
-									},
-									[252907] = {
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 809320,
-										["g_amt"] = 0,
-										["n_max"] = 77249,
-										["targets"] = {
-											["Overloaded Lens"] = 50166,
-											["Glazer"] = 1572556,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 813402,
-										["n_min"] = 294,
-										["g_dmg"] = 0,
-										["counter"] = 28,
-										["total"] = 1622722,
-										["c_max"] = 154497,
-										["id"] = 252907,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 20,
-										["r_amt"] = 0,
-										["c_min"] = 50166,
-									},
-									[196061] = {
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 1662026,
-										["g_amt"] = 0,
-										["n_max"] = 138413,
-										["targets"] = {
-											["Overloaded Lens"] = 750913,
-											["Glazer"] = 3323284,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2412171,
-										["n_min"] = 79899,
-										["g_dmg"] = 0,
-										["counter"] = 32,
-										["total"] = 4074197,
-										["c_max"] = 276826,
-										["id"] = 196061,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 24,
-										["r_amt"] = 0,
-										["c_min"] = 159799,
-									},
-									[257286] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 1855065,
-										["g_amt"] = 0,
-										["n_max"] = 361232,
-										["targets"] = {
-											["Glazer"] = 3100727,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1245662,
-										["n_min"] = 1795,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 3100727,
-										["c_max"] = 752174,
-										["id"] = 257286,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 7601,
-									},
-									[117952] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1438726,
-										["targets"] = {
-											["Glazer"] = 2807539,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2807539,
-										["n_min"] = 1368813,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 2807539,
-										["c_max"] = 0,
-										["id"] = 117952,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[100780] = {
-										["c_amt"] = 7,
-										["b_amt"] = 1,
-										["c_dmg"] = 3081168,
-										["g_amt"] = 0,
-										["n_max"] = 498276,
-										["targets"] = {
-											["Overloaded Lens"] = 571526,
-											["Glazer"] = 5297094,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2787452,
-										["n_min"] = 2491,
-										["g_dmg"] = 0,
-										["counter"] = 21,
-										["total"] = 5868620,
-										["c_max"] = 571527,
-										["id"] = 100780,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 193978,
-										["n_amt"] = 14,
-										["r_amt"] = 0,
-										["c_min"] = 193978,
-									},
-									[252896] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2640184,
-										["g_amt"] = 0,
-										["n_max"] = 172131,
-										["targets"] = {
-											["Glazer"] = 2812315,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 172131,
-										["n_min"] = 172131,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 2812315,
-										["c_max"] = 1881215,
-										["id"] = 252896,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 758969,
-									},
-								},
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["serial"] = "Player-3686-062B271B",
-							["last_dps"] = 2546028.05780868,
-							["custom"] = 0,
-							["last_event"] = 1519429200,
-							["damage_taken"] = 27667336.001914,
-							["start_time"] = 1519429122,
-							["delay"] = 1519429200,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.005535,
-							["spec"] = 102,
-							["damage_from"] = {
-								["Glazer"] = true,
-								["[*] Quake"] = true,
-							},
-							["targets"] = {
-								["Overloaded Lens"] = 5926439,
-								["Glazer"] = 188347800,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["boss_fight_component"] = true,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 194274239.005535,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 194274239.005535,
-							["on_hold"] = false,
-							["end_time"] = 1519429200,
-							["nome"] = "Dâro-Antonidas",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[252907] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 214595,
-										["g_amt"] = 0,
-										["n_max"] = 51978,
-										["targets"] = {
-											["Glazer"] = 840974,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 626379,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 33,
-										["total"] = 840974,
-										["c_max"] = 103956,
-										["id"] = 252907,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 27,
-										["r_amt"] = 0,
-										["c_min"] = 1040,
-									},
-									[78674] = {
-										["c_amt"] = 11,
-										["b_amt"] = 0,
-										["c_dmg"] = 56229691,
-										["g_amt"] = 0,
-										["n_max"] = 3595284,
-										["targets"] = {
-											["Overloaded Lens"] = 1342746,
-											["Glazer"] = 69167996,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 14281051,
-										["n_min"] = 1342746,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 70510742,
-										["c_max"] = 8457168,
-										["id"] = 78674,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 3379017,
-									},
-									[202768] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 4103920,
-										["g_amt"] = 0,
-										["n_max"] = 1101329,
-										["targets"] = {
-											["Glazer"] = 5205249,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1101329,
-										["n_min"] = 1101329,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 5205249,
-										["c_max"] = 4103920,
-										["id"] = 202768,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 4103920,
-									},
-									[253022] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 1058295,
-										["g_amt"] = 0,
-										["n_max"] = 302691,
-										["targets"] = {
-											["Glazer"] = 1360986,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 302691,
-										["n_min"] = 302691,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1360986,
-										["c_max"] = 605381,
-										["id"] = 253022,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 4484,
-									},
-									[190984] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 7778296,
-										["g_amt"] = 0,
-										["n_max"] = 1925816,
-										["targets"] = {
-											["Overloaded Lens"] = 1871060,
-											["Glazer"] = 16536551,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 10629315,
-										["n_min"] = 7889,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 18407611,
-										["c_max"] = 2470073,
-										["id"] = 190984,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["r_amt"] = 0,
-										["c_min"] = 15777,
-									},
-									[203001] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 2450185,
-										["g_amt"] = 0,
-										["n_max"] = 978958,
-										["targets"] = {
-											["Glazer"] = 4089940,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1639755,
-										["n_min"] = 660797,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 4089940,
-										["c_max"] = 2450185,
-										["id"] = 203001,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 2450185,
-									},
-									[194153] = {
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 20954500,
-										["g_amt"] = 0,
-										["n_max"] = 1452757,
-										["targets"] = {
-											["Overloaded Lens"] = 1784310,
-											["Glazer"] = 22963134,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 3792944,
-										["n_min"] = 1088712,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 24747444,
-										["c_max"] = 3769649,
-										["id"] = 194153,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 1784310,
-									},
-									[164815] = {
-										["c_amt"] = 23,
-										["b_amt"] = 0,
-										["c_dmg"] = 9411053,
-										["g_amt"] = 0,
-										["n_max"] = 696555,
-										["targets"] = {
-											["Overloaded Lens"] = 309441,
-											["Glazer"] = 20485842,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 11384230,
-										["n_min"] = 908,
-										["g_dmg"] = 0,
-										["counter"] = 76,
-										["total"] = 20795283,
-										["c_max"] = 1182530,
-										["id"] = 164815,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 53,
-										["r_amt"] = 0,
-										["c_min"] = 4549,
-									},
-									[202767] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 2032231,
-										["g_amt"] = 0,
-										["n_max"] = 1378232,
-										["targets"] = {
-											["Glazer"] = 3410463,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1378232,
-										["n_min"] = 1378232,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 3410463,
-										["c_max"] = 2032231,
-										["id"] = 202767,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 2032231,
-									},
-									[202497] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 798926,
-										["g_amt"] = 0,
-										["n_max"] = 184410,
-										["targets"] = {
-											["Glazer"] = 1724508,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 925582,
-										["n_min"] = 742,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 1724508,
-										["c_max"] = 280647,
-										["id"] = 202497,
-										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 1399,
-									},
-									[202771] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 5947174,
-										["g_amt"] = 0,
-										["n_max"] = 2544598,
-										["targets"] = {
-											["Glazer"] = 8491772,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2544598,
-										["n_min"] = 2544598,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 8491772,
-										["c_max"] = 5947174,
-										["id"] = 202771,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 5947174,
-									},
-									[191037] = {
+									[163558] = {
 										["c_amt"] = 13,
 										["b_amt"] = 0,
-										["c_dmg"] = 6646211,
+										["c_dmg"] = 10887703,
 										["g_amt"] = 0,
-										["n_max"] = 556583,
+										["n_max"] = 555457,
 										["targets"] = {
-											["Glazer"] = 14337131,
+											["Barbed Spiderling"] = 640348,
+											["Spirit of Vengeance"] = 3395309,
+											["Grimhorn the Enslaver"] = 890173,
+											["Cordana Felsong"] = 7011255,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 7690920,
-										["n_min"] = 2074,
+										["n_dmg"] = 1049382,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 37,
-										["total"] = 14337131,
-										["c_max"] = 1043828,
-										["id"] = 191037,
+										["counter"] = 15,
+										["total"] = 11937085,
+										["c_max"] = 1156195,
+										["id"] = 163558,
 										["r_dmg"] = 0,
-										["spellschool"] = 72,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 24,
-										["r_amt"] = 0,
-										["c_min"] = 4146,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[234142] = {
+									[259756] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 64972,
+										["n_max"] = 165912,
 										["targets"] = {
-											["Glazer"] = 129944,
+											["Aranasi Broodmother"] = 1062925,
+											["Avatar of Vengeance"] = 252440,
+											["Cordana Felsong"] = 1904255,
+											["Barbed Spiderling"] = 232908,
+											["Spirit of Vengeance"] = 701484,
+											["Grimhorn the Enslaver"] = 402960,
+											["Avatar of Shadow"] = 131924,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 129944,
-										["n_min"] = 64972,
+										["n_dmg"] = 4688896,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 129944,
+										["counter"] = 228,
+										["total"] = 4688896,
 										["c_max"] = 0,
-										["id"] = 234142,
+										["id"] = 259756,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 228,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[184709] = {
+										["c_amt"] = 16,
+										["b_amt"] = 0,
+										["c_dmg"] = 7476085,
+										["g_amt"] = 0,
+										["n_max"] = 174942,
+										["targets"] = {
+											["Aranasi Broodmother"] = 1614558,
+											["Spirit of Vengeance"] = 450221,
+											["Cordana Felsong"] = 2855839,
+											["Barbed Spiderling"] = 2087115,
+											["Grimhorn the Enslaver"] = 1186939,
+											["Avatar of Shadow"] = 420374,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1138961,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 25,
+										["total"] = 8615046,
+										["c_max"] = 708386,
+										["id"] = 184709,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 1,
+									},
+									[100130] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 3414002,
+										["g_amt"] = 0,
+										["n_max"] = 309368,
+										["targets"] = {
+											["Grimhorn the Enslaver"] = 1176070,
+											["Cordana Felsong"] = 3055708,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 817776,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 4231778,
+										["c_max"] = 1003924,
+										["id"] = 100130,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[201364] = {
+										["c_amt"] = 13,
+										["b_amt"] = 0,
+										["c_dmg"] = 10244445,
+										["g_amt"] = 0,
+										["n_max"] = 351390,
+										["targets"] = {
+											["Aranasi Broodmother"] = 1725455,
+											["Spirit of Vengeance"] = 640853,
+											["Cordana Felsong"] = 4917808,
+											["Barbed Spiderling"] = 3027407,
+											["Grimhorn the Enslaver"] = 2078165,
+											["Avatar of Shadow"] = 515798,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2661041,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 25,
+										["total"] = 12905486,
+										["c_max"] = 1255746,
+										["id"] = 201364,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 1,
+									},
+									[126664] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 93133,
+										["g_amt"] = 0,
+										["n_max"] = 42074,
+										["targets"] = {
+											["Grimhorn the Enslaver"] = 93133,
+											["Cordana Felsong"] = 75279,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 75279,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 168412,
+										["c_max"] = 93133,
+										["id"] = 126664,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[164812] = {
-										["c_amt"] = 22,
+									[52174] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 8964694,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 696555,
+										["n_max"] = 33239,
 										["targets"] = {
-											["Overloaded Lens"] = 618882,
-											["Glazer"] = 19603310,
+											["Barbed Spiderling"] = 99717,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 11257498,
-										["n_min"] = 909,
+										["n_dmg"] = 99717,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 77,
-										["total"] = 20222192,
-										["c_max"] = 1393109,
-										["id"] = 164812,
+										["counter"] = 3,
+										["total"] = 99717,
+										["c_max"] = 0,
+										["id"] = 52174,
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 55,
-										["r_amt"] = 0,
-										["c_min"] = 1817,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-3686-05ACAE90",
-							["last_dps"] = 1982147.4819977,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 26448455.005535,
-							["start_time"] = 1519429103,
-							["delay"] = 0,
-							["last_event"] = 1519429199,
-						}, -- [2]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.008955,
-							["damage_from"] = {
-								["[*] Quake"] = true,
-								["Glazer"] = true,
-								["Senflol-Antonidas"] = true,
-							},
-							["targets"] = {
-								["Overloaded Lens"] = 4266511,
-								["Glazer"] = 178772366,
-							},
-							["pets"] = {
-								"Rokuthec <Senflol-Antonidas>", -- [1]
-							},
-							["spec"] = 265,
-							["colocacao"] = 3,
-							["classe"] = "WARLOCK",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 168382284.008955,
-							["end_time"] = 1519429221,
-							["boss_fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 183038877.008955,
-							["friendlyfire_total"] = 2103900,
-							["friendlyfire"] = {
-								["Senflol-Antonidas"] = {
-									["spells"] = {
-										[1454] = 2103900,
-									},
-									["total"] = 2103900,
-								},
-							},
-							["nome"] = "Senflol-Antonidas",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
+									[57755] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 37249,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Glazer"] = 37249,
+											["Cordana Felsong"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 37249,
-										["c_max"] = 37249,
-										["id"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 57755,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 37249,
-									}, -- [1]
-									[252907] = {
-										["c_amt"] = 16,
-										["b_amt"] = 0,
-										["c_dmg"] = 1567297,
-										["g_amt"] = 0,
-										["n_max"] = 170261,
-										["targets"] = {
-											["Glazer"] = 2652916,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1085619,
-										["n_min"] = 608,
-										["g_dmg"] = 0,
-										["counter"] = 36,
-										["total"] = 2652916,
-										["c_max"] = 340523,
-										["id"] = 252907,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 20,
-										["r_amt"] = 0,
-										["c_min"] = 1338,
+										["IMMUNE"] = 1,
 									},
-									[231489] = {
-										["c_amt"] = 5,
+									[46968] = {
+										["c_amt"] = 15,
 										["b_amt"] = 0,
-										["c_dmg"] = 857226,
+										["c_dmg"] = 2063564,
 										["g_amt"] = 0,
-										["n_max"] = 175744,
+										["n_max"] = 35117,
 										["targets"] = {
-											["Overloaded Lens"] = 301254,
-											["Glazer"] = 865691,
+											["Barbed Spiderling"] = 1776578,
+											["Spirit of Vengeance"] = 286986,
+											["Aranasi Broodmother"] = 70234,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 309719,
-										["n_min"] = 898,
+										["n_dmg"] = 70234,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 1166945,
-										["c_max"] = 301254,
-										["id"] = 231489,
+										["counter"] = 17,
+										["total"] = 2133798,
+										["c_max"] = 148049,
+										["id"] = 46968,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
 										["r_amt"] = 0,
-										["c_min"] = 91289,
-									},
-									[233490] = {
-										["c_amt"] = 22,
-										["b_amt"] = 0,
-										["c_dmg"] = 27832567,
-										["g_amt"] = 0,
-										["n_max"] = 466855,
-										["targets"] = {
-											["Overloaded Lens"] = 1505389,
-											["Glazer"] = 29010640,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2683462,
-										["n_min"] = 255235,
-										["g_dmg"] = 0,
-										["counter"] = 30,
-										["total"] = 30516029,
-										["c_max"] = 2483567,
-										["id"] = 233490,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 609141,
-									},
-									[980] = {
-										["c_amt"] = 31,
-										["b_amt"] = 0,
-										["c_dmg"] = 19378862,
-										["g_amt"] = 0,
-										["n_max"] = 769152,
-										["targets"] = {
-											["Overloaded Lens"] = 691927,
-											["Glazer"] = 28697814,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 10010879,
-										["n_min"] = 1669,
-										["g_dmg"] = 0,
-										["counter"] = 73,
-										["total"] = 29389741,
-										["c_max"] = 2012795,
-										["id"] = 980,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 42,
-										["r_amt"] = 0,
-										["c_min"] = 4291,
-									},
-									[233496] = {
-										["c_amt"] = 17,
-										["b_amt"] = 0,
-										["c_dmg"] = 19949324,
-										["g_amt"] = 0,
-										["n_max"] = 875713,
-										["targets"] = {
-											["Glazer"] = 23997017,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4047693,
-										["n_min"] = 262560,
-										["g_dmg"] = 0,
-										["counter"] = 26,
-										["total"] = 23997017,
-										["c_max"] = 2483567,
-										["id"] = 233496,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 592145,
-									},
-									[233498] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 9634568,
-										["g_amt"] = 0,
-										["n_max"] = 940745,
-										["targets"] = {
-											["Glazer"] = 10908496,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1273928,
-										["n_min"] = 333183,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 10908496,
-										["c_max"] = 2483568,
-										["id"] = 233498,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 2344590,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[233499] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 8822390,
+									[205546] = {
+										["c_amt"] = 98,
+										["b_amt"] = 1,
+										["c_dmg"] = 65838823,
 										["g_amt"] = 0,
-										["n_max"] = 932507,
+										["n_max"] = 362009,
 										["targets"] = {
-											["Glazer"] = 9754897,
+											["Aranasi Broodmother"] = 2982004,
+											["Spirit of Vengeance"] = 12763926,
+											["Cordana Felsong"] = 9297877,
+											["Barbed Spiderling"] = 35227803,
+											["Grimhorn the Enslaver"] = 3262278,
+											["Avatar of Vengeance"] = 3518824,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 932507,
-										["n_min"] = 932507,
+										["n_dmg"] = 1213889,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 9754897,
-										["c_max"] = 2483568,
-										["id"] = 233499,
+										["counter"] = 107,
+										["total"] = 67052712,
+										["c_max"] = 2184507,
+										["id"] = 205546,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 362009,
+										["n_amt"] = 9,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[252879] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 3813702,
+										["g_amt"] = 0,
+										["n_max"] = 568684,
+										["targets"] = {
+											["Spirit of Vengeance"] = 1460506,
+											["Cordana Felsong"] = 2344442,
+											["Barbed Spiderling"] = 639485,
+											["Grimhorn the Enslaver"] = 876402,
+											["Avatar of Shadow"] = 568684,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2075817,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 5889519,
+										["c_max"] = 1745107,
+										["id"] = 252879,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 360116,
+										["n_amt"] = 6,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[233497] = {
-										["c_amt"] = 12,
+									[85384] = {
+										["c_amt"] = 14,
 										["b_amt"] = 0,
-										["c_dmg"] = 18641923,
+										["c_dmg"] = 12056985,
+										["g_amt"] = 0,
+										["n_max"] = 577250,
+										["targets"] = {
+											["Aranasi Broodmother"] = 3148094,
+											["Spirit of Vengeance"] = 976364,
+											["Cordana Felsong"] = 6652222,
+											["Barbed Spiderling"] = 594330,
+											["Grimhorn the Enslaver"] = 4484739,
+											["Avatar of Shadow"] = 693645,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4492409,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 26,
+										["total"] = 16549394,
+										["c_max"] = 1471811,
+										["id"] = 85384,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 12,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[191259] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 5106747,
+										["g_amt"] = 0,
+										["n_max"] = 366936,
+										["targets"] = {
+											["Aranasi Broodmother"] = 1102569,
+											["Spirit of Vengeance"] = 1593271,
+											["Cordana Felsong"] = 2978142,
+											["Barbed Spiderling"] = 537188,
+											["Grimhorn the Enslaver"] = 426814,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1531237,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 6637984,
+										["c_max"] = 1536157,
+										["id"] = 191259,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[236027] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Glazer"] = 18641923,
+											["Grimhorn the Enslaver"] = 0,
+											["Cordana Felsong"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 18641923,
-										["c_max"] = 2483568,
-										["id"] = 233497,
+										["counter"] = 3,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 236027,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 592145,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 3,
 									},
-									[242834] = {
-										["c_amt"] = 1,
+									[243223] = {
+										["c_amt"] = 16,
 										["b_amt"] = 0,
-										["c_dmg"] = 1247597,
+										["c_dmg"] = 21177685,
 										["g_amt"] = 0,
-										["n_max"] = 470709,
+										["n_max"] = 0,
 										["targets"] = {
-											["Glazer"] = 1718306,
+											["Barbed Spiderling"] = 15994148,
+											["Spirit of Vengeance"] = 1332845,
+											["Grimhorn the Enslaver"] = 1341036,
+											["Cordana Felsong"] = 2509656,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 470709,
-										["n_min"] = 470709,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1718306,
-										["c_max"] = 1247597,
-										["id"] = 242834,
+										["counter"] = 16,
+										["total"] = 21177685,
+										["c_max"] = 1427908,
+										["id"] = 243223,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
 										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[199667] = {
+										["c_amt"] = 112,
+										["b_amt"] = 1,
+										["c_dmg"] = 14706175,
+										["g_amt"] = 0,
+										["n_max"] = 68357,
+										["targets"] = {
+											["Barbed Spiderling"] = 12740808,
+											["Spirit of Vengeance"] = 3822547,
+											["Aranasi Broodmother"] = 1188318,
+											["Cordana Felsong"] = 852104,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3897602,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 204,
+										["total"] = 18603777,
+										["c_max"] = 211373,
+										["id"] = 199667,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 26264,
+										["n_amt"] = 92,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[218617] = {
+										["c_amt"] = 13,
+										["b_amt"] = 0,
+										["c_dmg"] = 3065302,
+										["g_amt"] = 0,
+										["n_max"] = 135040,
+										["targets"] = {
+											["Aranasi Broodmother"] = 687899,
+											["Spirit of Vengeance"] = 213374,
+											["Cordana Felsong"] = 1323922,
+											["Barbed Spiderling"] = 1064072,
+											["Grimhorn the Enslaver"] = 616130,
+											["Avatar of Shadow"] = 108797,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 948892,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 25,
+										["total"] = 4014194,
+										["c_max"] = 372832,
+										["id"] = 218617,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 1247597,
+										["n_amt"] = 11,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 1,
 									},
-									[198590] = {
-										["c_amt"] = 14,
+									[184707] = {
+										["c_amt"] = 13,
 										["b_amt"] = 0,
-										["c_dmg"] = 8777841,
+										["c_dmg"] = 4530124,
 										["g_amt"] = 0,
-										["n_max"] = 289445,
+										["n_max"] = 204569,
 										["targets"] = {
-											["Glazer"] = 9929653,
+											["Aranasi Broodmother"] = 848679,
+											["Spirit of Vengeance"] = 433548,
+											["Cordana Felsong"] = 2061704,
+											["Barbed Spiderling"] = 1616027,
+											["Grimhorn the Enslaver"] = 858472,
+											["Avatar of Shadow"] = 151986,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1151812,
-										["n_min"] = 1731,
+										["n_dmg"] = 1440292,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 9929653,
-										["c_max"] = 1451791,
-										["id"] = 198590,
+										["counter"] = 25,
+										["total"] = 5970416,
+										["c_max"] = 578269,
+										["id"] = 184707,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 3650,
+										["n_amt"] = 11,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 1,
 									},
-									[252879] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 1177792,
+									[44949] = {
+										["c_amt"] = 107,
+										["b_amt"] = 5,
+										["c_dmg"] = 6657767,
 										["g_amt"] = 0,
-										["n_max"] = 337821,
+										["n_max"] = 47801,
 										["targets"] = {
-											["Overloaded Lens"] = 557494,
-											["Glazer"] = 2189595,
+											["Barbed Spiderling"] = 6093739,
+											["Spirit of Vengeance"] = 1918938,
+											["Aranasi Broodmother"] = 552442,
+											["Cordana Felsong"] = 361704,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1569297,
-										["n_min"] = 2787,
+										["n_dmg"] = 2269056,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 2747089,
-										["c_max"] = 655042,
-										["id"] = 252879,
+										["counter"] = 204,
+										["total"] = 8926823,
+										["c_max"] = 105310,
+										["id"] = 44949,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 112715,
+										["n_amt"] = 97,
 										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[205547] = {
+										["c_amt"] = 22,
+										["b_amt"] = 0,
+										["c_dmg"] = 18573431,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Aranasi Broodmother"] = 888038,
+											["Spirit of Vengeance"] = 3282843,
+											["Cordana Felsong"] = 2615656,
+											["Barbed Spiderling"] = 9927831,
+											["Grimhorn the Enslaver"] = 788089,
+											["Avatar of Vengeance"] = 1070974,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 22,
+										["total"] = 18573431,
+										["c_max"] = 1115642,
+										["id"] = 205547,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[253384] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 289007,
+										["targets"] = {
+											["Aranasi Broodmother"] = 995748,
+											["Spirit of Vengeance"] = 448320,
+											["Cordana Felsong"] = 2970137,
+											["Barbed Spiderling"] = 2074165,
+											["Grimhorn the Enslaver"] = 1214523,
+											["Avatar of Shadow"] = 178446,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 7881339,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 69,
+										["total"] = 7881339,
+										["c_max"] = 0,
+										["id"] = 253384,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 69,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[105771] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Aranasi Broodmother"] = 0,
+											["Cordana Felsong"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 105771,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 522750,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 3,
 									},
-									[218615] = {
-										["c_amt"] = 2,
+									[243228] = {
+										["c_amt"] = 6,
 										["b_amt"] = 0,
-										["c_dmg"] = 3135580,
+										["c_dmg"] = 6230290,
 										["g_amt"] = 0,
-										["n_max"] = 540632,
+										["n_max"] = 0,
 										["targets"] = {
-											["Glazer"] = 4156273,
+											["Aranasi Broodmother"] = 1332852,
+											["Avatar of Vengeance"] = 1770176,
+											["Spirit of Vengeance"] = 1357086,
+											["Cordana Felsong"] = 1770176,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1020693,
-										["n_min"] = 4080,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 4156273,
-										["c_max"] = 2054316,
-										["id"] = 218615,
+										["counter"] = 6,
+										["total"] = 6230290,
+										["c_max"] = 1770176,
+										["id"] = 243228,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 1081264,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[146739] = {
-										["c_amt"] = 33,
-										["b_amt"] = 0,
-										["c_dmg"] = 16426764,
-										["g_amt"] = 0,
-										["n_max"] = 521440,
-										["targets"] = {
-											["Overloaded Lens"] = 1210447,
-											["Glazer"] = 21555303,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 6338986,
-										["n_min"] = 1111,
-										["g_dmg"] = 0,
-										["counter"] = 64,
-										["total"] = 22765750,
-										["c_max"] = 1388764,
-										["id"] = 146739,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 31,
-										["r_amt"] = 0,
-										["c_min"] = 2778,
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 366363556.021045,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["colocacao"] = 2,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1522168824,
+							["serial"] = "Player-1329-04192918",
+							["friendlyfire"] = {
+								["Cocanub-Ravencrest"] = {
+									["total"] = 429295,
+									["spells"] = {
+										[193956] = 429295,
 									},
 								},
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["serial"] = "Player-3686-05B7AF0E",
-							["last_dps"] = 1867514.96764659,
-							["custom"] = 0,
-							["last_event"] = 1519429200,
-							["damage_taken"] = 30842215.008955,
-							["start_time"] = 1519429125,
-							["delay"] = 1519429200,
-							["tipo"] = 1,
-						}, -- [3]
+						}, -- [2]
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001102,
+							["totalabsorbed"] = 0.027772,
 							["pets"] = {
-								"Rune Weapon <Krixidk>", -- [1]
+								"Rune Weapon <Krixidk> <Krixidk>", -- [1]
 							},
 							["classe"] = "DEATHKNIGHT",
-							["total_without_pet"] = 79926640.001102,
+							["total_without_pet"] = 273655964.027772,
 							["dps_started"] = false,
-							["total"] = 90162312.001102,
+							["total"] = 286736200.027772,
 							["spec"] = 250,
-							["colocacao"] = 4,
+							["colocacao"] = 3,
 							["on_hold"] = false,
 							["isTank"] = true,
 							["serial"] = "Player-1303-042451A8",
 							["damage_from"] = {
-								["[*] Quake"] = true,
-								["Glazer"] = true,
+								["Environment (Falling)"] = true,
+								["Spirit of Vengeance"] = true,
+								["Avatar of Vengeance"] = true,
+								["Cordana Felsong"] = true,
+								["Barbed Spiderling"] = true,
+								["[*] Sanguine Ichor"] = true,
+								["Grimhorn the Enslaver"] = true,
+								["Aranasi Broodmother"] = true,
 							},
 							["targets"] = {
-								["Overloaded Lens"] = 6739328,
-								["Glazer"] = 83422984,
+								["Aranasi Broodmother"] = 23175531,
+								["Avatar of Vengeance"] = 4636588,
+								["Cordana Felsong"] = 71797440,
+								["Barbed Spiderling"] = 106673970,
+								["Spirit of Vengeance"] = 37471145,
+								["Grimhorn the Enslaver"] = 39730755,
+								["Avatar of Shadow"] = 3250771,
 							},
-							["friendlyfire_total"] = 0,
+							["friendlyfire_total"] = 24644,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1519429200,
-							["boss_fight_component"] = true,
-							["avoidance"] = {
-								["Glazer"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 22504322,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 8,
-									["ALL"] = 47,
-									["PARTIAL_ABSORBED"] = 10,
-									["PARRY"] = 13,
-									["PARTIAL_ABSORB_AMT"] = 8944142,
-									["ABSORB"] = 18,
-									["ABSORB_AMT"] = 31448464,
-									["FULL_HIT"] = 29,
-									["HITS"] = 24,
-									["FULL_HIT_AMT"] = 68743696,
-								},
-								["overall"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 25167409,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 9,
-									["ALL"] = 52,
-									["PARTIAL_ABSORBED"] = 10,
-									["PARRY"] = 13,
-									["PARTIAL_ABSORB_AMT"] = 8944142,
-									["ABSORB"] = 19,
-									["ABSORB_AMT"] = 34111551,
-									["FULL_HIT"] = 33,
-									["HITS"] = 24,
-									["FULL_HIT_AMT"] = 76648951,
-								},
-								["[*] Quake"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 2663087,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 1,
-									["ALL"] = 5,
-									["PARTIAL_ABSORBED"] = 0,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 0,
-									["ABSORB"] = 1,
-									["ABSORB_AMT"] = 2663087,
-									["FULL_HIT"] = 4,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 7905255,
-								},
-							},
+							["fight_component"] = true,
+							["end_time"] = 1522169018,
+							["tipo"] = 1,
 							["nome"] = "Krixidk",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 421584,
+										["c_amt"] = 19,
+										["b_amt"] = 4,
+										["c_dmg"] = 5789686,
 										["g_amt"] = 0,
-										["n_max"] = 417853,
+										["n_max"] = 225542,
 										["targets"] = {
-											["Overloaded Lens"] = 134075,
-											["Glazer"] = 6229259,
+											["Aranasi Broodmother"] = 2261922,
+											["Avatar of Vengeance"] = 185886,
+											["Cordana Felsong"] = 5723860,
+											["Barbed Spiderling"] = 3534066,
+											["Spirit of Vengeance"] = 1972335,
+											["Grimhorn the Enslaver"] = 3032289,
+											["Avatar of Shadow"] = 594689,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 5941750,
-										["n_min"] = 1424,
+										["n_dmg"] = 11515361,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 31,
-										["total"] = 6363334,
-										["c_max"] = 421584,
+										["counter"] = 94,
+										["total"] = 17305047,
+										["c_max"] = 435886,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 30,
-										["r_amt"] = 0,
-										["c_min"] = 421584,
+										["b_dmg"] = 555576,
+										["n_amt"] = 74,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 1,
 									}, -- [1]
 									[195292] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 147310,
+										["n_max"] = 161357,
 										["targets"] = {
-											["Glazer"] = 147310,
+											["Spirit of Vengeance"] = 161357,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 147310,
-										["n_min"] = 147310,
+										["n_dmg"] = 161357,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 147310,
+										["total"] = 161357,
 										["c_max"] = 0,
 										["id"] = 195292,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[252879] = {
-										["c_amt"] = 0,
+									[50842] = {
+										["c_amt"] = 24,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 18844961,
 										["g_amt"] = 0,
-										["n_max"] = 934862,
+										["n_max"] = 540563,
 										["targets"] = {
-											["Glazer"] = 1374891,
+											["Aranasi Broodmother"] = 2543081,
+											["Avatar of Vengeance"] = 1032539,
+											["Cordana Felsong"] = 7075026,
+											["Barbed Spiderling"] = 27653269,
+											["Spirit of Vengeance"] = 8055149,
+											["Grimhorn the Enslaver"] = 3734153,
+											["Avatar of Shadow"] = 491421,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1374891,
-										["n_min"] = 3520,
+										["n_dmg"] = 31739677,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1374891,
-										["c_max"] = 0,
-										["id"] = 252879,
+										["counter"] = 109,
+										["total"] = 50584638,
+										["c_max"] = 1032539,
+										["id"] = 50842,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[195182] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 915560,
-										["targets"] = {
-											["Overloaded Lens"] = 574695,
-											["Glazer"] = 5370851,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 5945546,
-										["n_min"] = 6970,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 5945546,
-										["c_max"] = 0,
-										["id"] = 195182,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["n_amt"] = 85,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
 									},
-									[206931] = {
+									[251940] = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 5335124,
+										["c_dmg"] = 4304740,
 										["g_amt"] = 0,
-										["n_max"] = 1004217,
+										["n_max"] = 717457,
 										["targets"] = {
-											["Overloaded Lens"] = 5521091,
-											["Glazer"] = 8055496,
+											["Barbed Spiderling"] = 10761850,
+											["Spirit of Vengeance"] = 1434914,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 8241463,
-										["n_min"] = 830915,
+										["n_dmg"] = 7892024,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 13576587,
-										["c_max"] = 1836647,
-										["id"] = 206931,
+										["counter"] = 14,
+										["total"] = 12196764,
+										["c_max"] = 1434914,
+										["id"] = 251940,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
 										["r_amt"] = 0,
-										["c_min"] = 1661830,
-									},
-									[49998] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4062920,
-										["targets"] = {
-											["Glazer"] = 21096247,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21096247,
-										["n_min"] = 866437,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 21096247,
-										["c_max"] = 0,
-										["id"] = 49998,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 11,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[195182] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 10277470,
+										["g_amt"] = 0,
+										["n_max"] = 893585,
+										["targets"] = {
+											["Aranasi Broodmother"] = 4544841,
+											["Spirit of Vengeance"] = 4042443,
+											["Cordana Felsong"] = 9119170,
+											["Barbed Spiderling"] = 6408922,
+											["Grimhorn the Enslaver"] = 2799207,
+											["Avatar of Vengeance"] = 1971478,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 18608591,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 32,
+										["total"] = 28886061,
+										["c_max"] = 2032185,
+										["id"] = 195182,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 26,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[253022] = {
+										["c_amt"] = 7,
+										["b_amt"] = 0,
+										["c_dmg"] = 4843401,
+										["g_amt"] = 0,
+										["n_max"] = 471892,
+										["targets"] = {
+											["Aranasi Broodmother"] = 837076,
+											["Spirit of Vengeance"] = 752399,
+											["Cordana Felsong"] = 1246320,
+											["Barbed Spiderling"] = 7683638,
+											["Grimhorn the Enslaver"] = 324183,
+											["Avatar of Vengeance"] = 471892,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 6472107,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 24,
+										["total"] = 11315508,
+										["c_max"] = 837076,
+										["id"] = 253022,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 17,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[206931] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2059279,
+										["g_amt"] = 0,
+										["n_max"] = 1029640,
+										["targets"] = {
+											["Barbed Spiderling"] = 2426660,
+											["Grimhorn the Enslaver"] = 1290948,
+											["Cordana Felsong"] = 9907156,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 11565485,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 13624764,
+										["c_max"] = 2059279,
+										["id"] = 206931,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 14,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[253073] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 2277792,
+										["g_amt"] = 0,
+										["n_max"] = 341859,
+										["targets"] = {
+											["Aranasi Broodmother"] = 606414,
+											["Spirit of Vengeance"] = 1635210,
+											["Cordana Felsong"] = 2187452,
+											["Barbed Spiderling"] = 1310015,
+											["Grimhorn the Enslaver"] = 1576417,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 5037716,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 23,
+										["total"] = 7315508,
+										["c_max"] = 606414,
+										["id"] = 253073,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 19,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[252550] = {
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 3190724,
+										["g_amt"] = 0,
+										["n_max"] = 211242,
+										["targets"] = {
+											["Barbed Spiderling"] = 1754866,
+											["Spirit of Vengeance"] = 3749705,
+											["Aranasi Broodmother"] = 2223275,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4537122,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 33,
+										["total"] = 7727846,
+										["c_max"] = 423028,
+										["id"] = 252550,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 25,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[205223] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 2811837,
+										["g_amt"] = 0,
+										["n_max"] = 915262,
+										["targets"] = {
+											["Barbed Spiderling"] = 9923807,
+											["Avatar of Vengeance"] = 915262,
+											["Spirit of Vengeance"] = 661356,
+											["Cordana Felsong"] = 810636,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 9499224,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 12311061,
+										["c_max"] = 1443877,
+										["id"] = 205223,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[52212] = {
+										["c_amt"] = 67,
+										["b_amt"] = 0,
+										["c_dmg"] = 6496496,
+										["g_amt"] = 0,
+										["n_max"] = 75963,
+										["targets"] = {
+											["Aranasi Broodmother"] = 596766,
+											["Avatar of Vengeance"] = 59531,
+											["Cordana Felsong"] = 3183850,
+											["Barbed Spiderling"] = 11929459,
+											["Spirit of Vengeance"] = 2015979,
+											["Grimhorn the Enslaver"] = 1400965,
+											["Avatar of Shadow"] = 483399,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13173453,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 316,
+										["total"] = 19669949,
+										["c_max"] = 151926,
+										["id"] = 52212,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 249,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 30,
+										["b_amt"] = 0,
+										["c_dmg"] = 9565322,
+										["g_amt"] = 0,
+										["n_max"] = 204056,
+										["targets"] = {
+											["Aranasi Broodmother"] = 2689270,
+											["Spirit of Vengeance"] = 6278818,
+											["Cordana Felsong"] = 2236443,
+											["Barbed Spiderling"] = 10900911,
+											["Grimhorn the Enslaver"] = 1434485,
+											["Avatar of Shadow"] = 118065,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 14092670,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 121,
+										["total"] = 23657992,
+										["c_max"] = 408111,
+										["id"] = 55078,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 91,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[235188] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8281433,
+										["n_max"] = 54023,
 										["targets"] = {
-											["Glazer"] = 8281433,
+											["Grimhorn the Enslaver"] = 54023,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 8281433,
-										["n_min"] = 8281433,
+										["n_dmg"] = 54023,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 8281433,
+										["total"] = 54023,
 										["c_max"] = 0,
 										["id"] = 235188,
 										["r_dmg"] = 0,
-										["spellschool"] = 36,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[205223] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1417626,
-										["targets"] = {
-											["Glazer"] = 1417626,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1417626,
-										["n_min"] = 1417626,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1417626,
-										["c_max"] = 0,
-										["id"] = 205223,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 1417626,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[52212] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 752315,
-										["g_amt"] = 0,
-										["n_max"] = 146397,
-										["targets"] = {
-											["Glazer"] = 3237945,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2485630,
-										["n_min"] = 479,
-										["g_dmg"] = 0,
-										["counter"] = 54,
-										["total"] = 3237945,
-										["c_max"] = 292794,
-										["id"] = 52212,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 48,
-										["r_amt"] = 0,
-										["c_min"] = 1211,
-									},
-									[253073] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 584064,
-										["g_amt"] = 0,
-										["n_max"] = 292032,
-										["targets"] = {
-											["Glazer"] = 1382960,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 798896,
-										["n_min"] = 2376,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 1382960,
-										["c_max"] = 584064,
-										["id"] = 253073,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 584064,
-									},
-									[55078] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 411872,
-										["g_amt"] = 0,
-										["n_max"] = 250292,
-										["targets"] = {
-											["Overloaded Lens"] = 117238,
-											["Glazer"] = 3038829,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2744195,
-										["n_min"] = 819,
-										["g_dmg"] = 0,
-										["counter"] = 32,
-										["total"] = 3156067,
-										["c_max"] = 253330,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 29,
-										["r_amt"] = 0,
-										["c_min"] = 4142,
 									},
 									[206930] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 641408,
+										["c_amt"] = 13,
+										["b_amt"] = 5,
+										["c_dmg"] = 10770475,
 										["g_amt"] = 0,
-										["n_max"] = 1077251,
+										["n_max"] = 575677,
 										["targets"] = {
-											["Glazer"] = 7759598,
+											["Aranasi Broodmother"] = 2348034,
+											["Spirit of Vengeance"] = 3158456,
+											["Cordana Felsong"] = 6590861,
+											["Barbed Spiderling"] = 4529454,
+											["Grimhorn the Enslaver"] = 7681280,
+											["Avatar of Shadow"] = 1563197,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 7118190,
-										["n_min"] = 277894,
+										["n_dmg"] = 15100807,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 7759598,
-										["c_max"] = 641408,
+										["counter"] = 53,
+										["total"] = 25871282,
+										["c_max"] = 1095312,
 										["id"] = 206930,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 277894,
-										["n_amt"] = 11,
 										["r_amt"] = 0,
-										["c_min"] = 641408,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 1322773,
+										["n_amt"] = 40,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[50842] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 682146,
+									[49998] = {
+										["c_amt"] = 3,
+										["b_amt"] = 2,
+										["c_dmg"] = 7579495,
 										["g_amt"] = 0,
-										["n_max"] = 1008040,
+										["n_max"] = 2108891,
 										["targets"] = {
-											["Overloaded Lens"] = 392229,
-											["Glazer"] = 5794867,
+											["Aranasi Broodmother"] = 4524852,
+											["Spirit of Vengeance"] = 1320974,
+											["Cordana Felsong"] = 20661634,
+											["Barbed Spiderling"] = 4247069,
+											["Grimhorn the Enslaver"] = 12219635,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 5504950,
-										["n_min"] = 374978,
+										["n_dmg"] = 35394669,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 6187096,
-										["c_max"] = 682146,
-										["id"] = 50842,
+										["counter"] = 35,
+										["total"] = 42974164,
+										["c_max"] = 2943020,
+										["id"] = 49998,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
 										["r_amt"] = 0,
-										["c_min"] = 682146,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 1328696,
+										["n_amt"] = 32,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["damage_taken"] = 138288440.027772,
+							["last_dps"] = 1091995.58240418,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["avoidance"] = {
+								["overall"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 0,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 0,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 0,
+								},
+							},
+							["start_time"] = 1522168726,
+							["delay"] = 0,
+							["friendlyfire"] = {
+								["Derinian-Ravencrest"] = {
+									["total"] = 24644,
+									["spells"] = {
+										[6940] = 24644,
 									},
 								},
 							},
-							["grupo"] = true,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 919910.949690988,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 104324254.001102,
-							["start_time"] = 1519429101,
-							["delay"] = 0,
-							["last_event"] = 1519429199,
-						}, -- [4]
+						}, -- [3]
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 829108.00182,
-							["spec"] = 65,
+							["totalabsorbed"] = 0.019516,
 							["damage_from"] = {
-								["[*] Quake"] = true,
-								["Glazer"] = true,
-								["Twobad-Antonidas"] = true,
+								["Environment (Falling)"] = true,
+								["Spirit of Vengeance"] = true,
+								["Fattymcpaws-Ravencrest"] = true,
+								["Cordana Felsong"] = true,
+								["Barbed Spiderling"] = true,
+								["[*] Sanguine Ichor"] = true,
+								["Avatar of Shadow"] = true,
 							},
 							["targets"] = {
-								["Glazer"] = 68250029,
+								["Aranasi Broodmother"] = 15536055,
+								["Avatar of Vengeance"] = 1359424,
+								["Cordana Felsong"] = 49220508,
+								["Barbed Spiderling"] = 101876297,
+								["Spirit of Vengeance"] = 36527619,
+								["Grimhorn the Enslaver"] = 7915344,
+								["Avatar of Shadow"] = 2260333,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 829108,
-							["boss_fight_component"] = true,
-							["classe"] = "PALADIN",
+							["classe"] = "WARRIOR",
+							["spec"] = 72,
+							["friendlyfire_total"] = 229394,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 68250029.00182,
-							["colocacao"] = 5,
-							["friendlyfire"] = {
-								["Twobad-Antonidas"] = {
-									["spells"] = {
-										[196917] = 829108,
-									},
-									["total"] = 829108,
-								},
-							},
+							["total_without_pet"] = 214695580.019516,
+							["last_dps"] = 817638.738744212,
+							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 68250029.00182,
-							["on_hold"] = false,
-							["end_time"] = 1519429200,
-							["nome"] = "Twobad-Antonidas",
+							["end_time"] = 1522169018,
+							["damage_taken"] = 23727193.019516,
+							["fight_component"] = true,
+							["nome"] = "Fattymcpaws-Ravencrest",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 10,
+										["c_amt"] = 42,
 										["b_amt"] = 0,
-										["c_dmg"] = 3727536,
+										["c_dmg"] = 5517514,
 										["g_amt"] = 0,
-										["n_max"] = 334214,
+										["n_max"] = 97942,
 										["targets"] = {
-											["Glazer"] = 6084392,
+											["Aranasi Broodmother"] = 1790940,
+											["Avatar of Vengeance"] = 144313,
+											["Cordana Felsong"] = 5898966,
+											["Barbed Spiderling"] = 636433,
+											["Spirit of Vengeance"] = 662045,
+											["Grimhorn the Enslaver"] = 858700,
+											["Avatar of Shadow"] = 519451,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 2356856,
-										["n_min"] = 158680,
+										["n_dmg"] = 4993334,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 21,
-										["total"] = 6084392,
-										["c_max"] = 647846,
+										["counter"] = 143,
+										["total"] = 10510848,
+										["c_max"] = 264889,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 90,
+										["IMMUNE"] = 1,
+										["MISS"] = 10,
+									}, -- [1]
+									[243228] = {
+										["c_amt"] = 15,
+										["b_amt"] = 0,
+										["c_dmg"] = 7530053,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Barbed Spiderling"] = 6200409,
+											["Spirit of Vengeance"] = 521399,
+											["Cordana Felsong"] = 808245,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 7530053,
+										["c_max"] = 808245,
+										["id"] = 243228,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[253098] = {
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 1975437,
+										["g_amt"] = 0,
+										["n_max"] = 137317,
+										["targets"] = {
+											["Aranasi Broodmother"] = 431756,
+											["Spirit of Vengeance"] = 95974,
+											["Cordana Felsong"] = 2068678,
+											["Barbed Spiderling"] = 187086,
+											["Grimhorn the Enslaver"] = 278629,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1086686,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["total"] = 3062123,
+										["c_max"] = 327025,
+										["id"] = 253098,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 6450,
-									}, -- [1]
-									[253073] = {
-										["c_amt"] = 5,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[201363] = {
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 3916695,
+										["c_dmg"] = 959584,
 										["g_amt"] = 0,
-										["n_max"] = 554734,
+										["n_max"] = 243627,
 										["targets"] = {
-											["Glazer"] = 5328700,
+											["Aranasi Broodmother"] = 560540,
+											["Spirit of Vengeance"] = 228088,
+											["Avatar of Shadow"] = 183400,
+											["Cordana Felsong"] = 1419427,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1412005,
-										["n_min"] = 285757,
+										["n_dmg"] = 1431871,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 9,
-										["total"] = 5328700,
-										["c_max"] = 1109468,
-										["id"] = 253073,
+										["total"] = 2391455,
+										["c_max"] = 577255,
+										["id"] = 201363,
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[5308] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 3172013,
+										["g_amt"] = 0,
+										["n_max"] = 481640,
+										["targets"] = {
+											["Barbed Spiderling"] = 481640,
+											["Spirit of Vengeance"] = 919190,
+											["Grimhorn the Enslaver"] = 2550460,
+											["Cordana Felsong"] = 2850263,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3629540,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 6801553,
+										["c_max"] = 854332,
+										["id"] = 5308,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[163558] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 2335107,
+										["g_amt"] = 0,
+										["n_max"] = 234052,
+										["targets"] = {
+											["Barbed Spiderling"] = 223308,
+											["Spirit of Vengeance"] = 704119,
+											["Grimhorn the Enslaver"] = 1401900,
+											["Cordana Felsong"] = 1375342,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1369562,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 3704669,
+										["c_max"] = 470067,
+										["id"] = 163558,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[184709] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 879822,
+										["g_amt"] = 0,
+										["n_max"] = 136325,
+										["targets"] = {
+											["Aranasi Broodmother"] = 205252,
+											["Spirit of Vengeance"] = 123213,
+											["Avatar of Shadow"] = 216468,
+											["Cordana Felsong"] = 1149123,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 814234,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 1694056,
+										["c_max"] = 356492,
+										["id"] = 184709,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[44949] = {
+										["c_amt"] = 158,
+										["b_amt"] = 8,
+										["c_dmg"] = 11507544,
+										["g_amt"] = 0,
+										["n_max"] = 82945,
+										["targets"] = {
+											["Aranasi Broodmother"] = 2226789,
+											["Spirit of Vengeance"] = 5158438,
+											["Cordana Felsong"] = 1409401,
+											["Barbed Spiderling"] = 10256283,
+											["Grimhorn the Enslaver"] = 391368,
+											["Avatar of Vengeance"] = 284929,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8219664,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 498,
+										["total"] = 19727208,
+										["c_max"] = 167219,
+										["id"] = 44949,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 156661,
+										["n_amt"] = 340,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[50622] = {
+										["c_amt"] = 61,
+										["b_amt"] = 0,
+										["c_dmg"] = 15065589,
+										["g_amt"] = 0,
+										["n_max"] = 125228,
+										["targets"] = {
+											["Barbed Spiderling"] = 16597039,
+											["Spirit of Vengeance"] = 1330322,
+											["Cordana Felsong"] = 817254,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3679026,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 98,
+										["total"] = 18744615,
+										["c_max"] = 274393,
+										["id"] = 50622,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 37,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[126664] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 543993,
+										["g_amt"] = 0,
+										["n_max"] = 42712,
+										["targets"] = {
+											["Barbed Spiderling"] = 75243,
+											["Aranasi Broodmother"] = 32195,
+											["Cordana Felsong"] = 582028,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 145473,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 689466,
+										["c_max"] = 142559,
+										["id"] = 126664,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[52174] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28407,
+										["targets"] = {
+											["Cordana Felsong"] = 28407,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 28407,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 28407,
+										["c_max"] = 0,
+										["id"] = 52174,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 554733,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[57755] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Cordana Felsong"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 57755,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 2,
+									},
+									[95738] = {
+										["c_amt"] = 62,
+										["b_amt"] = 0,
+										["c_dmg"] = 7764652,
+										["g_amt"] = 0,
+										["n_max"] = 63534,
+										["targets"] = {
+											["Barbed Spiderling"] = 8328181,
+											["Spirit of Vengeance"] = 700090,
+											["Cordana Felsong"] = 533068,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1796687,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 98,
+										["total"] = 9561339,
+										["c_max"] = 138613,
+										["id"] = 95738,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 36,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[96103] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 2246364,
+										["g_amt"] = 0,
+										["n_max"] = 195384,
+										["targets"] = {
+											["Aranasi Broodmother"] = 670108,
+											["Avatar of Shadow"] = 351782,
+											["Grimhorn the Enslaver"] = 452889,
+											["Cordana Felsong"] = 3509620,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2738035,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 22,
+										["total"] = 4984399,
+										["c_max"] = 542646,
+										["id"] = 96103,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 17,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[113344] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 249684,
+										["targets"] = {
+											["Aranasi Broodmother"] = 1019303,
+											["Spirit of Vengeance"] = 4067502,
+											["Cordana Felsong"] = 7833541,
+											["Barbed Spiderling"] = 18547239,
+											["Avatar of Vengeance"] = 189037,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 31656622,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 256,
+										["total"] = 31656622,
+										["c_max"] = 0,
+										["id"] = 113344,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 256,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[205546] = {
+										["c_amt"] = 104,
+										["b_amt"] = 0,
+										["c_dmg"] = 29881251,
+										["g_amt"] = 0,
+										["n_max"] = 86975,
+										["targets"] = {
+											["Barbed Spiderling"] = 15820109,
+											["Spirit of Vengeance"] = 7046693,
+											["Aranasi Broodmother"] = 1774298,
+											["Cordana Felsong"] = 5327126,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 86975,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 105,
+										["total"] = 29968226,
+										["c_max"] = 919897,
+										["id"] = 205546,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[199667] = {
+										["c_amt"] = 162,
+										["b_amt"] = 7,
+										["c_dmg"] = 22936376,
+										["g_amt"] = 0,
+										["n_max"] = 169657,
+										["targets"] = {
+											["Aranasi Broodmother"] = 4395945,
+											["Avatar of Vengeance"] = 650755,
+											["Cordana Felsong"] = 2631920,
+											["Barbed Spiderling"] = 20639461,
+											["Spirit of Vengeance"] = 10148377,
+											["Grimhorn the Enslaver"] = 709761,
+											["Avatar of Shadow"] = 95561,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16335404,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 499,
+										["total"] = 39271780,
+										["c_max"] = 333539,
+										["id"] = 199667,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 176969,
+										["n_amt"] = 337,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[236027] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Aranasi Broodmother"] = 0,
+											["Cordana Felsong"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 236027,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 8,
+									},
+									[243223] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 3942058,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Aranasi Broodmother"] = 677155,
+											["Spirit of Vengeance"] = 2031465,
+											["Cordana Felsong"] = 1233438,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 3942058,
+										["c_max"] = 677155,
+										["id"] = 243223,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[100130] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 228886,
+										["g_amt"] = 0,
+										["n_max"] = 192237,
+										["targets"] = {
+											["Spirit of Vengeance"] = 335224,
+											["Grimhorn the Enslaver"] = 236484,
+											["Cordana Felsong"] = 802447,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1145269,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 1374155,
+										["c_max"] = 228886,
+										["id"] = 100130,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[218617] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 568398,
+										["g_amt"] = 0,
+										["n_max"] = 62806,
+										["targets"] = {
+											["Aranasi Broodmother"] = 111079,
+											["Spirit of Vengeance"] = 62806,
+											["Avatar of Shadow"] = 58538,
+											["Cordana Felsong"] = 682537,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 346562,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 914960,
+										["c_max"] = 150875,
+										["id"] = 218617,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[184707] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 638773,
+										["g_amt"] = 0,
+										["n_max"] = 98777,
+										["targets"] = {
+											["Aranasi Broodmother"] = 159696,
+											["Spirit of Vengeance"] = 90977,
+											["Avatar of Shadow"] = 83612,
+											["Cordana Felsong"] = 912797,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 608309,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 1247082,
+										["c_max"] = 236861,
+										["id"] = 184707,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[85384] = {
+										["c_amt"] = 7,
+										["b_amt"] = 0,
+										["c_dmg"] = 1493739,
+										["g_amt"] = 0,
+										["n_max"] = 99134,
+										["targets"] = {
+											["Aranasi Broodmother"] = 241565,
+											["Avatar of Shadow"] = 255946,
+											["Grimhorn the Enslaver"] = 280136,
+											["Cordana Felsong"] = 1862859,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1146767,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 22,
+										["total"] = 2640506,
+										["c_max"] = 267523,
+										["id"] = 85384,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 15,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[205547] = {
+										["c_amt"] = 21,
+										["b_amt"] = 0,
+										["c_dmg"] = 6981368,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Barbed Spiderling"] = 3883866,
+											["Spirit of Vengeance"] = 1505337,
+											["Aranasi Broodmother"] = 409009,
+											["Cordana Felsong"] = 1183156,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["total"] = 6981368,
+										["c_max"] = 463371,
+										["id"] = 205547,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[201364] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 1382814,
+										["g_amt"] = 0,
+										["n_max"] = 199858,
+										["targets"] = {
+											["Aranasi Broodmother"] = 473620,
+											["Spirit of Vengeance"] = 190253,
+											["Avatar of Shadow"] = 321636,
+											["Cordana Felsong"] = 1310565,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 913260,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 2296074,
+										["c_max"] = 440417,
+										["id"] = 201364,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[105771] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Aranasi Broodmother"] = 0,
+											["Cordana Felsong"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 105771,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 8,
+									},
+									[23881] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 1577213,
+										["g_amt"] = 0,
+										["n_max"] = 258400,
+										["targets"] = {
+											["Aranasi Broodmother"] = 356805,
+											["Avatar of Vengeance"] = 90390,
+											["Cordana Felsong"] = 2990300,
+											["Spirit of Vengeance"] = 606107,
+											["Grimhorn the Enslaver"] = 755017,
+											["Avatar of Shadow"] = 173939,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3395345,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 22,
+										["total"] = 4972558,
+										["c_max"] = 592643,
+										["id"] = 23881,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 18,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 214695580.019516,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["colocacao"] = 4,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1522168820,
+							["serial"] = "Player-1329-063BC0D8",
+							["friendlyfire"] = {
+								["Fattymcpaws-Ravencrest"] = {
+									["total"] = 229394,
+									["spells"] = {
+										[193956] = 229394,
+									},
+								},
+							},
+						}, -- [4]
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.023451,
+							["damage_from"] = {
+								["Derinian-Ravencrest"] = true,
+								["Krixidk"] = true,
+								["Spirit of Vengeance"] = true,
+								["Cordana Felsong"] = true,
+								["Barbed Spiderling"] = true,
+								["[*] Sanguine Ichor"] = true,
+								["Environment (Falling)"] = true,
+								["Avatar of Shadow"] = true,
+							},
+							["targets"] = {
+								["Avatar of Vengeance"] = 2902884,
+								["Spirit of Vengeance"] = 1275641,
+								["Grimhorn the Enslaver"] = 15436599,
+								["Cordana Felsong"] = 12947308,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["spec"] = 65,
+							["friendlyfire_total"] = 10519305,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 32562432.023451,
+							["last_dps"] = 124009.566697547,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1522169018,
+							["damage_taken"] = 35242579.023451,
+							["fight_component"] = true,
+							["nome"] = "Derinian-Ravencrest",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 710930,
+										["g_amt"] = 0,
+										["n_max"] = 194442,
+										["targets"] = {
+											["Grimhorn the Enslaver"] = 937567,
+											["Cordana Felsong"] = 1081383,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1308020,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 2018950,
+										["c_max"] = 396120,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									}, -- [1]
+									[253073] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1256582,
+										["g_amt"] = 0,
+										["n_max"] = 345560,
+										["targets"] = {
+											["Grimhorn the Enslaver"] = 571173,
+											["Cordana Felsong"] = 1887728,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1202319,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 2458901,
+										["c_max"] = 628291,
+										["id"] = 253073,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[204242] = {
 										["c_amt"] = 0,
@@ -2079,2018 +3137,1482 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Glazer"] = 0,
+											["Grimhorn the Enslaver"] = 0,
+											["Cordana Felsong"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 8,
+										["counter"] = 3,
 										["total"] = 0,
 										["c_max"] = 0,
-										["IMMUNE"] = 8,
 										["id"] = 204242,
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 3,
 									},
 									[35395] = {
-										["c_amt"] = 8,
+										["c_amt"] = 5,
 										["b_amt"] = 0,
-										["c_dmg"] = 11049063,
+										["c_dmg"] = 5252108,
 										["g_amt"] = 0,
-										["n_max"] = 1152925,
+										["n_max"] = 611355,
 										["targets"] = {
-											["Glazer"] = 17448739,
+											["Grimhorn the Enslaver"] = 4848153,
+											["Cordana Felsong"] = 3258153,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 6399676,
-										["n_min"] = 538864,
+										["n_dmg"] = 2854198,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 17448739,
-										["c_max"] = 2403065,
+										["counter"] = 10,
+										["total"] = 8106306,
+										["c_max"] = 1225641,
 										["id"] = 35395,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
 										["r_amt"] = 0,
-										["c_min"] = 9104,
-									},
-									[25912] = {
-										["c_amt"] = 9,
-										["b_amt"] = 0,
-										["c_dmg"] = 21357853,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Glazer"] = 21357853,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 21357853,
-										["c_max"] = 3412684,
-										["id"] = 25912,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 1261741,
-									},
-									[20271] = {
-										["c_amt"] = 7,
-										["b_amt"] = 0,
-										["c_dmg"] = 11665961,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Glazer"] = 11665961,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 11665961,
-										["c_max"] = 2517382,
-										["id"] = 20271,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 1218241,
-									},
-									[81297] = {
-										["c_amt"] = 39,
-										["b_amt"] = 0,
-										["c_dmg"] = 4628551,
-										["g_amt"] = 0,
-										["n_max"] = 100699,
-										["targets"] = {
-											["Glazer"] = 6364384,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1735833,
-										["n_min"] = 503,
-										["g_dmg"] = 0,
-										["counter"] = 69,
-										["total"] = 6364384,
-										["c_max"] = 194927,
-										["id"] = 81297,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 30,
-										["r_amt"] = 0,
-										["c_min"] = 1007,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-3686-060E6486",
-							["last_dps"] = 696343.600802233,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 27606097.00182,
-							["start_time"] = 1519429131,
-							["delay"] = 1519429189,
-							["last_event"] = 1519429189,
-						}, -- [5]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 27165892.001678,
-							["damage_from"] = {
-								["Dâro-Antonidas"] = true,
-								["Glazer"] = true,
-								["Senflol-Antonidas"] = true,
-								["Krixidk"] = true,
-								["Rokuthec <Senflol-Antonidas>"] = true,
-								["Twobad-Antonidas"] = true,
-								["Rune Weapon <Krixidk>"] = true,
-								["Knucklex-Antonidas"] = true,
-								["Knucklex-Antonidas <Knucklex-Antonidas>"] = true,
-							},
-							["targets"] = {
-								["Dâro-Antonidas"] = 21817852,
-								["Knucklex-Antonidas"] = 21966496,
-								["Twobad-Antonidas"] = 22046875,
-								["Glazer"] = 44812055,
-								["Krixidk"] = 96418999,
-								["Senflol-Antonidas"] = 23272302,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-								[2] = 96418999,
-							},
-							["total_without_pet"] = 230334579.001678,
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1519429200,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Glazer",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6984515,
-										["targets"] = {
-											["Dâro-Antonidas"] = 7812130,
-											["Krixidk"] = 70089472,
-											["Twobad-Antonidas"] = 13902382,
-											["Knucklex-Antonidas"] = 12231291,
-											["Senflol-Antonidas"] = 10846599,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 114881874,
-										["n_min"] = 2227752,
-										["g_dmg"] = 0,
-										["counter"] = 47,
-										["total"] = 114881874,
-										["c_max"] = 0,
-										["a_amt"] = 13,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 47094634,
-										["m_crit"] = 0,
-										["PARRY"] = 13,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 34,
-										["r_amt"] = 0,
 										["c_min"] = 0,
-									}, -- [1]
-									[194945] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2428738,
-										["targets"] = {
-											["Dâro-Antonidas"] = 2428738,
-											["Krixidk"] = 18315511,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20744249,
-										["n_min"] = 2018572,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 20744249,
-										["c_max"] = 0,
-										["id"] = 194945,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[194323] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 194323,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[194289] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 194289,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[193443] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 193443,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[194942] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 194942,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 4,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[194880] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4225250,
-										["targets"] = {
-											["Glazer"] = 44812055,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 44812055,
-										["n_min"] = 20709,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 44812055,
-										["c_max"] = 0,
-										["id"] = 194880,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 20,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[195032] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1824753,
-										["targets"] = {
-											["Dâro-Antonidas"] = 11576984,
-											["Knucklex-Antonidas"] = 9735205,
-											["Twobad-Antonidas"] = 8144493,
-											["Krixidk"] = 8014016,
-											["Senflol-Antonidas"] = 12425703,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 49896401,
-										["n_min"] = 959310,
-										["g_dmg"] = 0,
-										["counter"] = 35,
-										["total"] = 49896401,
-										["c_max"] = 0,
-										["id"] = 195032,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 14649618,
-										["m_crit"] = 0,
-										["a_amt"] = 10,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 35,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["total"] = 230334579.001678,
-							["serial"] = "Creature-0-3892-1493-27695-95887-000010A24C",
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1519429199,
-							["damage_taken"] = 799342907.001678,
-							["start_time"] = 1519429102,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [6]
-						{
-							["flag_original"] = 8466,
-							["totalabsorbed"] = 0.001155,
-							["total"] = 102403507.001155,
-							["on_hold"] = false,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Glazer"] = 102403507,
-							},
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spec"] = 269,
-							["classe"] = "MONK",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 102403507.001155,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1519429200,
-							["serial"] = "Creature-0-3892-1493-27695-69792-000010A5F4",
-							["ownerName"] = "Knucklex-Antonidas",
-							["nome"] = "Knucklex-Antonidas <Knucklex-Antonidas>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 14,
-										["b_amt"] = 0,
-										["c_dmg"] = 671299,
-										["g_amt"] = 0,
-										["n_max"] = 43228,
-										["targets"] = {
-											["Glazer"] = 992297,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 320998,
-										["n_min"] = 10282,
-										["g_dmg"] = 0,
-										["counter"] = 36,
-										["total"] = 992297,
-										["c_max"] = 86456,
-										["MISS"] = 9,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 20564,
-									}, -- [1]
-									[117418] = {
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 11623532,
-										["g_amt"] = 0,
-										["n_max"] = 920461,
-										["targets"] = {
-											["Glazer"] = 27441841,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 15818309,
-										["n_min"] = 559686,
-										["g_dmg"] = 0,
-										["counter"] = 30,
-										["total"] = 27441841,
-										["c_max"] = 1751461,
-										["id"] = 117418,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 22,
-										["r_amt"] = 0,
-										["c_min"] = 1119373,
-									},
-									[100784] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 11697752,
-										["g_amt"] = 0,
-										["n_max"] = 2074467,
-										["targets"] = {
-											["Glazer"] = 22114149,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 10416397,
-										["n_min"] = 372472,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 22114149,
-										["c_max"] = 4148934,
-										["id"] = 100784,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["r_amt"] = 0,
-										["c_min"] = 754351,
-									},
-									[132467] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 163499,
-										["g_amt"] = 0,
-										["n_max"] = 163499,
-										["targets"] = {
-											["Glazer"] = 572247,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 408748,
-										["n_min"] = 81749,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 572247,
-										["c_max"] = 163499,
-										["id"] = 132467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 163499,
-									},
-									[205414] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 3588490,
-										["g_amt"] = 0,
-										["n_max"] = 1124077,
-										["targets"] = {
-											["Glazer"] = 5382734,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1794244,
-										["n_min"] = 670167,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 5382734,
-										["c_max"] = 2248154,
-										["id"] = 205414,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 1340336,
-									},
-									[107270] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 644973,
-										["g_amt"] = 0,
-										["n_max"] = 107496,
-										["targets"] = {
-											["Glazer"] = 967461,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 322488,
-										["n_min"] = 107496,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 967461,
-										["c_max"] = 214991,
-										["id"] = 107270,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 214991,
-									},
-									[117952] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 2877451,
-										["g_amt"] = 0,
-										["n_max"] = 1438726,
-										["targets"] = {
-											["Glazer"] = 7330649,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4453198,
-										["n_min"] = 68510,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 7330649,
-										["c_max"] = 2877451,
-										["id"] = 117952,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 2877451,
-									},
-									[185099] = {
-										["c_amt"] = 9,
-										["b_amt"] = 0,
-										["c_dmg"] = 14669063,
-										["g_amt"] = 0,
-										["n_max"] = 1850547,
-										["targets"] = {
-											["Glazer"] = 22381248,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 7712185,
-										["n_min"] = 220077,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 22381248,
-										["c_max"] = 3701095,
-										["id"] = 185099,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 440155,
-									},
-									[158221] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 2652975,
-										["g_amt"] = 0,
-										["n_max"] = 397704,
-										["targets"] = {
-											["Glazer"] = 5305950,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2652975,
-										["n_min"] = 265539,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 5305950,
-										["c_max"] = 795408,
-										["id"] = 158221,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 531079,
 									},
-									[100780] = {
-										["c_amt"] = 3,
+									[253098] = {
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 1004739,
+										["c_dmg"] = 883567,
 										["g_amt"] = 0,
-										["n_max"] = 179744,
+										["n_max"] = 228123,
 										["targets"] = {
-											["Glazer"] = 2737870,
+											["Grimhorn the Enslaver"] = 640983,
+											["Cordana Felsong"] = 684368,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1733131,
-										["n_min"] = 118516,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 2737870,
-										["c_max"] = 359488,
-										["id"] = 100780,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 285763,
-									},
-									[222029] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2248196,
-										["targets"] = {
-											["Glazer"] = 7177061,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 7177061,
-										["n_min"] = 1340335,
+										["n_dmg"] = 441784,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 7177061,
-										["c_max"] = 0,
-										["id"] = 222029,
+										["total"] = 1325351,
+										["c_max"] = 456245,
+										["id"] = 253098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[25912] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 8470541,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Avatar of Vengeance"] = 1603624,
+											["Grimhorn the Enslaver"] = 5387225,
+											["Cordana Felsong"] = 1479692,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 8470541,
+										["c_max"] = 1603624,
+										["id"] = 25912,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[20271] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 6367193,
+										["g_amt"] = 0,
+										["n_max"] = 700073,
+										["targets"] = {
+											["Avatar of Vengeance"] = 1299260,
+											["Spirit of Vengeance"] = 1181145,
+											["Grimhorn the Enslaver"] = 2346628,
+											["Cordana Felsong"] = 3958262,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2418102,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 8785295,
+										["c_max"] = 1540160,
+										["id"] = 20271,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1519429192,
-							["damage_taken"] = 0.001155,
-							["start_time"] = 1519429143,
-							["delay"] = 1519429120,
-							["tipo"] = 1,
-						}, -- [7]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 8349273.00406,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dâro-Antonidas"] = 4630603,
-								["Krixidk"] = 7905255,
-								["Twobad-Antonidas"] = 4730114,
-								["Knucklex-Antonidas"] = 5700840,
-								["Senflol-Antonidas"] = 5466013,
-							},
-							["serial"] = "",
-							["spellicon"] = 136025,
-							["monster"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-								[2] = 7905255,
-							},
-							["total_without_pet"] = 28432825.00406,
-							["boss_fight_component"] = true,
-							["pets"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1519429200,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "[*] Quake",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[240448] = {
-										["c_amt"] = 0,
+									[81297] = {
+										["c_amt"] = 6,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 599171,
 										["g_amt"] = 0,
-										["n_max"] = 2663087,
+										["n_max"] = 56008,
 										["targets"] = {
-											["Dâro-Antonidas"] = 4630603,
-											["Krixidk"] = 7905255,
-											["Twobad-Antonidas"] = 4730114,
-											["Knucklex-Antonidas"] = 5700840,
-											["Senflol-Antonidas"] = 5466013,
+											["Spirit of Vengeance"] = 94496,
+											["Grimhorn the Enslaver"] = 704870,
+											["Cordana Felsong"] = 597722,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 28432825,
-										["n_min"] = 844896,
+										["n_dmg"] = 797917,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 28432825,
-										["c_max"] = 0,
-										["id"] = 240448,
+										["counter"] = 28,
+										["total"] = 1397088,
+										["c_max"] = 112016,
+										["id"] = 81297,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 2176243,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 2,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 23,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 16,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 6,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 32562432.023451,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["colocacao"] = 5,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1522168820,
+							["serial"] = "Player-1329-0637D101",
+							["friendlyfire"] = {
+								["Derinian-Ravencrest"] = {
+									["total"] = 10519305,
+									["spells"] = {
+										[196917] = 10519305,
 									},
 								},
 							},
-							["total"] = 28432825.00406,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1519429183,
-							["damage_taken"] = 0.00406,
-							["start_time"] = 1519429199,
-							["delay"] = 1519429183,
-							["tipo"] = 1,
-						}, -- [8]
+						}, -- [5]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.004851,
+							["totalabsorbed"] = 0.010861,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Glazer"] = 14656593,
+								["Avatar of Shadow"] = 315436,
+								["Cordana Felsong"] = 13372494,
 							},
-							["total"] = 14656593.004851,
 							["pets"] = {
 							},
-							["serial"] = "Pet-0-3892-1493-27695-78158-0301C649E0",
-							["classe"] = "PET",
+							["boss_fight_component"] = true,
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 14656593.004851,
-							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["total_without_pet"] = 13687930.010861,
+							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1519429200,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1522169018,
+							["on_hold"] = false,
 							["ownerName"] = "Senflol-Antonidas",
-							["nome"] = "Rokuthec <Senflol-Antonidas>",
+							["nome"] = "Rokuthec <Senflol-Antonidas> <Senflol-Antonidas>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[85692] = {
-										["c_amt"] = 17,
+										["c_amt"] = 10,
 										["b_amt"] = 0,
-										["c_dmg"] = 8686287,
+										["c_dmg"] = 5889316,
 										["g_amt"] = 0,
-										["n_max"] = 597972,
+										["n_max"] = 472606,
 										["targets"] = {
-											["Glazer"] = 14656593,
+											["Avatar of Shadow"] = 315436,
+											["Cordana Felsong"] = 13372494,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 5970306,
-										["n_min"] = 2493,
+										["n_dmg"] = 7798614,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 38,
-										["total"] = 14656593,
-										["c_max"] = 1195944,
+										["counter"] = 46,
+										["total"] = 13687930,
+										["c_max"] = 945212,
 										["id"] = 85692,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 21,
-										["r_amt"] = 0,
-										["c_min"] = 4987,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 15,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["damage_taken"] = 0.010861,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
+							["total"] = 13687930.010861,
 							["custom"] = 0,
-							["last_event"] = 1519429197,
-							["damage_taken"] = 0.004851,
-							["start_time"] = 1519429107,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [9]
+							["last_event"] = 0,
+							["last_dps"] = 0,
+							["start_time"] = 1522168904,
+							["serial"] = "Pet-0-1467-1493-5274-78158-0201C649E0",
+							["classe"] = "PET",
+						}, -- [6]
 						{
 							["flag_original"] = 8465,
-							["totalabsorbed"] = 0.008774,
+							["totalabsorbed"] = 0.026816,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Glazer"] = 10235672,
+								["Barbed Spiderling"] = 3609984,
+								["Spirit of Vengeance"] = 2232050,
+								["Grimhorn the Enslaver"] = 4183170,
+								["Cordana Felsong"] = 3055032,
 							},
-							["total"] = 10235672.008774,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-3892-1493-27695-27893-000010A625",
+							["last_dps"] = 0,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 10235672.008774,
-							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["total_without_pet"] = 13080236.026816,
+							["damage_taken"] = 0.026816,
 							["dps_started"] = false,
-							["end_time"] = 1519429200,
-							["friendlyfire_total"] = 0,
+							["total"] = 13080236.026816,
+							["delay"] = 0,
 							["ownerName"] = "Krixidk",
-							["nome"] = "Rune Weapon <Krixidk>",
+							["nome"] = "Rune Weapon <Krixidk> <Krixidk>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 7,
 										["b_amt"] = 0,
-										["c_dmg"] = 123313,
+										["c_dmg"] = 326901,
 										["g_amt"] = 0,
-										["n_max"] = 63721,
+										["n_max"] = 27130,
 										["targets"] = {
-											["Glazer"] = 865630,
+											["Barbed Spiderling"] = 211832,
+											["Spirit of Vengeance"] = 104973,
+											["Grimhorn the Enslaver"] = 419732,
+											["Cordana Felsong"] = 331401,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 742317,
-										["n_min"] = 528,
+										["n_dmg"] = 741037,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 865630,
-										["c_max"] = 123313,
+										["counter"] = 40,
+										["total"] = 1067938,
+										["c_max"] = 53035,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 17,
-										["r_amt"] = 0,
-										["c_min"] = 123313,
+										["n_amt"] = 31,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 2,
 									}, -- [1]
 									[50842] = {
-										["c_amt"] = 0,
+										["c_amt"] = 10,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 2012434,
 										["g_amt"] = 0,
-										["n_max"] = 251931,
+										["n_max"] = 102697,
 										["targets"] = {
-											["Glazer"] = 991400,
+											["Barbed Spiderling"] = 3183592,
+											["Spirit of Vengeance"] = 616180,
+											["Grimhorn the Enslaver"] = 811295,
+											["Cordana Felsong"] = 547866,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 991400,
-										["n_min"] = 243769,
+										["n_dmg"] = 3146499,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 991400,
-										["c_max"] = 0,
+										["counter"] = 42,
+										["total"] = 5158933,
+										["c_max"] = 205394,
 										["id"] = 50842,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 32,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[228645] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 954834,
-										["g_amt"] = 0,
-										["n_max"] = 164878,
-										["targets"] = {
-											["Glazer"] = 2226975,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1272141,
-										["n_min"] = 72948,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 2226975,
-										["c_max"] = 329756,
-										["id"] = 228645,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["r_amt"] = 0,
-										["c_min"] = 295323,
-									},
-									[195182] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 134814,
-										["targets"] = {
-											["Glazer"] = 269627,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 269627,
-										["n_min"] = 134813,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 269627,
-										["c_max"] = 0,
-										["id"] = 195182,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58566,
-										["targets"] = {
-											["Glazer"] = 729732,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 729732,
-										["n_min"] = 11078,
-										["g_dmg"] = 0,
-										["counter"] = 24,
-										["total"] = 729732,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 24,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[49998] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 1685770,
+										["c_dmg"] = 246710,
 										["g_amt"] = 0,
-										["n_max"] = 468270,
+										["n_max"] = 67905,
 										["targets"] = {
-											["Glazer"] = 4471694,
+											["Spirit of Vengeance"] = 135810,
+											["Grimhorn the Enslaver"] = 986838,
+											["Cordana Felsong"] = 474217,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 2785924,
-										["n_min"] = 167750,
+										["n_dmg"] = 1350155,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 4471694,
-										["c_max"] = 936539,
+										["counter"] = 24,
+										["total"] = 1596865,
+										["c_max"] = 123355,
+										["id"] = 228645,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 22,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 189260,
+										["g_amt"] = 0,
+										["n_max"] = 49346,
+										["targets"] = {
+											["Spirit of Vengeance"] = 246730,
+											["Grimhorn the Enslaver"] = 633975,
+											["Cordana Felsong"] = 131626,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 823071,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 36,
+										["total"] = 1012331,
+										["c_max"] = 98692,
+										["id"] = 55078,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 33,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[49998] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 877919,
+										["g_amt"] = 0,
+										["n_max"] = 180672,
+										["targets"] = {
+											["Spirit of Vengeance"] = 462860,
+											["Grimhorn the Enslaver"] = 1121088,
+											["Cordana Felsong"] = 1320544,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2026573,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 2904492,
+										["c_max"] = 308573,
 										["id"] = 49998,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 749231,
+										["n_amt"] = 13,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[205223] = {
-										["c_amt"] = 0,
+									[195182] = {
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 532398,
 										["g_amt"] = 0,
-										["n_max"] = 340307,
+										["n_max"] = 133099,
 										["targets"] = {
-											["Glazer"] = 680614,
+											["Barbed Spiderling"] = 214560,
+											["Spirit of Vengeance"] = 665497,
+											["Grimhorn the Enslaver"] = 210242,
+											["Cordana Felsong"] = 249378,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 680614,
-										["n_min"] = 340307,
+										["n_dmg"] = 807279,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 680614,
-										["c_max"] = 0,
-										["id"] = 205223,
+										["counter"] = 9,
+										["total"] = 1339677,
+										["c_max"] = 266199,
+										["id"] = 195182,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1519429195,
-							["damage_taken"] = 0.008774,
-							["start_time"] = 1519429154,
-							["delay"] = 0,
 							["tipo"] = 1,
-						}, -- [10]
+							["end_time"] = 1522169018,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1522168953,
+							["serial"] = "Creature-0-1467-1493-5274-27893-00003A7471",
+							["friendlyfire_total"] = 0,
+						}, -- [7]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008974,
+							["totalabsorbed"] = 0.012895,
 							["damage_from"] = {
-								["Dâro-Antonidas"] = true,
-								["Knucklex-Antonidas"] = true,
 								["Krixidk"] = true,
+								["Fattymcpaws-Ravencrest"] = true,
+								["Cocanub-Ravencrest"] = true,
+								["Rokuthec <Senflol-Antonidas>"] = true,
 								["Senflol-Antonidas"] = true,
 							},
 							["targets"] = {
+								["Derinian-Ravencrest"] = 1619435,
+								["Fattymcpaws-Ravencrest"] = 3067771,
 							},
-							["monster"] = true,
+							["delay"] = 0,
 							["pets"] = {
 							},
+							["nome"] = "Avatar of Shadow",
+							["last_dps"] = 0,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4687206.012895,
+							["friendlyfire_total"] = 0,
+							["monster"] = true,
+							["end_time"] = 1522169018,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
 							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									[206459] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1619435,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 1619435,
+											["Fattymcpaws-Ravencrest"] = 3067771,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4687206,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 4687206,
+										["c_max"] = 0,
+										["id"] = 206459,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["fight_component"] = true,
+							["total"] = 4687206.012895,
+							["damage_taken"] = 17930255.012895,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1522169008,
+							["serial"] = "Creature-0-1467-1493-5274-104293-00003A7455",
+							["dps_started"] = false,
+						}, -- [8]
+						{
+							["flag_original"] = 8776,
+							["totalabsorbed"] = 0.003958,
+							["damage_from"] = {
+								["Derinian-Ravencrest"] = true,
+								["Krixidk"] = true,
+								["Fattymcpaws-Ravencrest"] = true,
+								["Cocanub-Ravencrest"] = true,
+								["Senflol-Antonidas"] = true,
+							},
+							["targets"] = {
+								["Krixidk"] = 486482,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["nome"] = "Avatar of Vengeance",
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.008974,
-							["on_hold"] = false,
+							["total_without_pet"] = 486482.003958,
+							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 0.008974,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-3892-1493-27695-113552-000010A610",
-							["nome"] = "Overloaded Lens",
+							["end_time"] = 1522169018,
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 486482,
+										["targets"] = {
+											["Krixidk"] = 486482,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 486482,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 486482,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+									}, -- [1]
+									[205004] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 205004,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
 								},
+								["tipo"] = 2,
 							},
+							["tipo"] = 1,
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1519429200,
-							["last_dps"] = 0,
+							["total"] = 486482.003958,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 30735907.008974,
-							["start_time"] = 1519429200,
-							["delay"] = 0,
 							["last_event"] = 0,
-						}, -- [11]
+							["damage_taken"] = 18511010.003958,
+							["start_time"] = 1522169014,
+							["serial"] = "Creature-0-1467-1493-5274-100351-00003A74AA",
+							["fight_component"] = true,
+						}, -- [9]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 657,
 					["tipo"] = 3,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Krixidk"] = 72848566,
+							["healing_from"] = {
+								["Derinian-Ravencrest"] = true,
+								["Krixidk"] = true,
 							},
 							["pets"] = {
-								"Rune Weapon <Krixidk>", -- [1]
+								"Rune Weapon <Krixidk> <Krixidk>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 81996317.004997,
-							["total_without_pet"] = 69410500.004997,
-							["total"] = 80008324.004997,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 154576030.024363,
+							["total_without_pet"] = 113100043.024363,
+							["total"] = 116330717.024363,
 							["targets_absorbs"] = {
-								["Krixidk"] = 34020650,
+								["Krixidk"] = 33941641,
 							},
 							["heal_enemy"] = {
 							},
-							["colocacao"] = 1,
 							["on_hold"] = false,
 							["isTank"] = true,
 							["serial"] = "Player-1303-042451A8",
-							["totalabsorb"] = 34020650.004997,
-							["last_hps"] = 816311.512927059,
+							["totalabsorb"] = 33941641.024363,
+							["last_hps"] = 0,
 							["targets"] = {
-								["Rune Weapon <Krixidk>"] = 10924861,
-								["Krixidk"] = 79030263,
+								["Rune Weapon <Krixidk>"] = 8173610,
+								["Krixidk"] = 136144814,
 							},
-							["totalover_without_pet"] = 0.004997,
-							["healing_taken"] = 90634864.004997,
-							["boss_fight_component"] = true,
-							["end_time"] = 1519429200,
-							["healing_from"] = {
-								["Krixidk"] = true,
-								["Knucklex-Antonidas"] = true,
-								["Twobad-Antonidas"] = true,
-							},
+							["totalover_without_pet"] = 0.024363,
+							["healing_taken"] = 134037893.024363,
+							["fight_component"] = true,
+							["end_time"] = 1522169018,
+							["spec"] = 250,
 							["nome"] = "Krixidk",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
-									[252879] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Krixidk"] = 1834934,
-										},
-										["n_max"] = 3868,
-										["targets"] = {
-											["Krixidk"] = 7388,
-										},
-										["n_min"] = 0,
-										["counter"] = 4,
-										["overheal"] = 1834934,
-										["total"] = 7388,
-										["c_max"] = 0,
-										["id"] = 252879,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 7388,
-										["n_amt"] = 4,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[252208] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 2128463,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 574503,
-										["targets"] = {
-											["Krixidk"] = 2128463,
-										},
-										["n_min"] = 348549,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 2128463,
-										["c_max"] = 0,
-										["id"] = 252208,
-										["targets_absorbs"] = {
-											["Krixidk"] = 2128463,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2128463,
-										["n_amt"] = 5,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[193320] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 8580686,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 2318626,
-										["targets"] = {
-											["Krixidk"] = 8580686,
-										},
-										["n_min"] = 58362,
-										["counter"] = 6,
-										["overheal"] = 0,
-										["total"] = 8580686,
-										["c_max"] = 0,
-										["id"] = 193320,
-										["targets_absorbs"] = {
-											["Krixidk"] = 8580686,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 8580686,
-										["n_amt"] = 6,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[235169] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 8518544,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 2587374,
-										["targets"] = {
-											["Krixidk"] = 8518544,
-										},
-										["n_min"] = 1734927,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 8518544,
-										["c_max"] = 0,
-										["id"] = 235169,
-										["targets_absorbs"] = {
-											["Krixidk"] = 8518544,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 8518544,
-										["n_amt"] = 4,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[53365] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Krixidk"] = 5107058,
-										},
-										["n_max"] = 914443,
-										["targets"] = {
-											["Krixidk"] = 2255623,
-										},
-										["n_min"] = 0,
-										["counter"] = 8,
-										["overheal"] = 5107058,
-										["total"] = 2255623,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2255623,
-										["n_amt"] = 8,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
 									[205224] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Krixidk"] = 3280984,
+											["Krixidk"] = 12364940,
 										},
-										["n_max"] = 0,
+										["n_max"] = 863001,
 										["targets"] = {
-											["Krixidk"] = 0,
+											["Krixidk"] = 1878153,
 										},
 										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 3280984,
-										["total"] = 0,
+										["counter"] = 15,
+										["overheal"] = 12364940,
+										["total"] = 1878153,
 										["c_max"] = 0,
 										["id"] = 205224,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 1,
 										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[116888] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Krixidk"] = 688110,
-										},
-										["heal_denied"] = {
-											[116888] = 688110,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 116888,
-										["targets_absorbs"] = {
-										},
-										["heal_denied_healers"] = {
-											["Twobad"] = 688110,
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 0,
-										["totaldenied"] = 688110,
 										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[206931] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Krixidk"] = 9014996,
-										},
-										["n_max"] = 1506325,
-										["targets"] = {
-											["Krixidk"] = 5680244,
-										},
-										["n_min"] = 0,
-										["counter"] = 12,
-										["overheal"] = 9014996,
-										["total"] = 5680244,
-										["c_max"] = 0,
-										["id"] = 206931,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
+										["n_amt"] = 15,
+										["n_curado"] = 1878153,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 5680244,
-										["n_amt"] = 12,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Krixidk"] = 12782069,
-										},
-										["n_max"] = 1015730,
-										["targets"] = {
-											["Krixidk"] = 3607942,
-										},
-										["n_min"] = 97927,
-										["counter"] = 49,
-										["overheal"] = 12782069,
-										["total"] = 3607942,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3607942,
-										["n_amt"] = 49,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[45470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Krixidk"] = 36183884,
-										},
-										["n_max"] = 5587309,
-										["targets"] = {
-											["Krixidk"] = 21207134,
-										},
-										["n_min"] = 0,
-										["counter"] = 11,
-										["overheal"] = 36183884,
-										["total"] = 21207134,
-										["c_max"] = 0,
-										["id"] = 45470,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 21207134,
-										["n_amt"] = 11,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Krixidk"] = 1517720,
-										},
-										["n_max"] = 379995,
-										["targets"] = {
-											["Krixidk"] = 1643237,
-										},
-										["n_min"] = 90089,
-										["counter"] = 25,
-										["overheal"] = 1517720,
-										["total"] = 1643237,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1643237,
-										["n_amt"] = 25,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 									[77535] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 14792957,
+										["c_amt"] = 8,
+										["totalabsorb"] = 20032465,
 										["targets_overheal"] = {
-											["Krixidk"] = 1630512,
+											["Krixidk"] = 8657124,
 										},
-										["n_max"] = 2663087,
+										["n_max"] = 3021470,
 										["targets"] = {
-											["Krixidk"] = 13162454,
+											["Krixidk"] = 13083243,
 										},
 										["n_min"] = 0,
-										["counter"] = 21,
-										["overheal"] = 1630512,
-										["total"] = 13162454,
+										["counter"] = 66,
+										["overheal"] = 8657124,
+										["total"] = 13083243,
 										["c_max"] = 0,
 										["id"] = 77535,
 										["targets_absorbs"] = {
-											["Krixidk"] = 14792957,
+											["Krixidk"] = 20032465,
 										},
-										["m_healed"] = 0,
-										["c_curado"] = -1630503,
+										["c_curado"] = -6949222,
 										["m_crit"] = 0,
-										["c_min"] = -1630503,
-										["m_amt"] = 0,
-										["n_curado"] = 14792957,
-										["n_amt"] = 20,
 										["totaldenied"] = 0,
-										["is_shield"] = true,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 58,
+										["n_curado"] = 20032465,
+										["c_min"] = -1542026,
+										["absorbed"] = 0,
+									},
+									[193320] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 6708934,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1317862,
+										["targets"] = {
+											["Krixidk"] = 6708934,
+										},
+										["n_min"] = 0,
+										["counter"] = 15,
+										["overheal"] = 0,
+										["total"] = 6708934,
+										["c_max"] = 0,
+										["id"] = 193320,
+										["targets_absorbs"] = {
+											["Krixidk"] = 6708934,
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 15,
+										["n_curado"] = 6708934,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[53365] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 9137120,
+										},
+										["n_max"] = 818723,
+										["targets"] = {
+											["Krixidk"] = 7649782,
+										},
+										["n_min"] = 0,
+										["counter"] = 25,
+										["overheal"] = 9137120,
+										["total"] = 7649782,
+										["c_max"] = 0,
+										["id"] = 53365,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 25,
+										["n_curado"] = 7649782,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[48707] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 2583893,
+										["targets_overheal"] = {
+											["Krixidk"] = 6239892,
+										},
+										["n_max"] = 2408130,
+										["targets"] = {
+											["Krixidk"] = 2583893,
+										},
+										["n_min"] = 0,
+										["counter"] = 8,
+										["overheal"] = 6239892,
+										["total"] = 2583893,
+										["c_max"] = 0,
+										["id"] = 48707,
+										["targets_absorbs"] = {
+											["Krixidk"] = 2583893,
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 8,
+										["n_curado"] = 2583893,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[219711] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Krixidk"] = 1496409,
+											["Krixidk"] = 2693847,
 										},
-										["n_max"] = 381613,
+										["n_max"] = 265614,
 										["targets"] = {
-											["Krixidk"] = 988282,
+											["Krixidk"] = 2568847,
 										},
-										["n_min"] = 86475,
-										["counter"] = 12,
-										["overheal"] = 1496409,
-										["total"] = 988282,
+										["n_min"] = 0,
+										["counter"] = 53,
+										["overheal"] = 2693847,
+										["total"] = 2568847,
 										["c_max"] = 0,
 										["id"] = 219711,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 988282,
-										["n_amt"] = 12,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 53,
+										["n_curado"] = 2568847,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1519429119,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 250,
-							["totaldenied"] = 688110.004997,
-							["delay"] = 1519429181,
-							["last_event"] = 1519429181,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-								["Dâro-Antonidas"] = 3860122,
-								["Krixidk"] = 3954501,
-								["Twobad-Antonidas"] = 9920829,
-								["Knucklex-Antonidas"] = 1241454,
-								["Senflol-Antonidas"] = 3577632,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 22554538.002305,
-							["total_without_pet"] = 68589522.002305,
-							["total"] = 68589522.002305,
-							["targets_absorbs"] = {
-								["Twobad-Antonidas"] = 6643739,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-3686-060E6486",
-							["totalabsorb"] = 6643739.002305,
-							["last_hps"] = 699807.390955327,
-							["targets"] = {
-								["Dâro-Antonidas"] = 15782415,
-								["Knucklex-Antonidas"] = 12746039,
-								["Twobad-Antonidas"] = 17468840,
-								["Krixidk"] = 21516441,
-								["Senflol-Antonidas"] = 8206973,
-							},
-							["totalover_without_pet"] = 0.002305,
-							["healing_taken"] = 17023891.002305,
-							["boss_fight_component"] = true,
-							["end_time"] = 1519429200,
-							["healing_from"] = {
-								["Knucklex-Antonidas"] = true,
-								["Twobad-Antonidas"] = true,
-							},
-							["nome"] = "Twobad-Antonidas",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[207472] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 6356221,
+									[251938] = {
+										["c_amt"] = 7,
+										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Krixidk"] = 770270,
 										},
-										["n_max"] = 1120128,
+										["n_max"] = 114068,
 										["targets"] = {
-											["Twobad-Antonidas"] = 6356221,
+											["Krixidk"] = 1324173,
 										},
-										["n_min"] = 139807,
-										["counter"] = 9,
-										["overheal"] = 0,
-										["total"] = 6356221,
-										["c_max"] = 0,
-										["id"] = 207472,
+										["n_min"] = 0,
+										["counter"] = 16,
+										["overheal"] = 770270,
+										["total"] = 1324173,
+										["c_max"] = 228135,
+										["id"] = 251938,
 										["targets_absorbs"] = {
-											["Twobad-Antonidas"] = 6356221,
 										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
+										["c_curado"] = 721580,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["totaldenied"] = 0,
 										["m_amt"] = 0,
-										["n_curado"] = 6356221,
+										["m_healed"] = 0,
 										["n_amt"] = 9,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
+										["n_curado"] = 602593,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
-									[228401] = {
-										["c_amt"] = 2,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dâro-Antonidas"] = 453104,
-										},
-										["n_max"] = 468306,
-										["targets"] = {
-											["Dâro-Antonidas"] = 350628,
-											["Twobad-Antonidas"] = 468306,
-											["Senflol-Antonidas"] = 1356298,
-										},
-										["n_min"] = 468306,
-										["counter"] = 3,
-										["overheal"] = 453104,
-										["total"] = 2175232,
-										["c_max"] = 1356298,
-										["id"] = 228401,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 1706926,
-										["m_crit"] = 0,
-										["c_min"] = 350628,
-										["m_amt"] = 0,
-										["n_curado"] = 468306,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[253288] = {
+									[252550] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Krixidk"] = 6042763,
 										},
-										["n_max"] = 1362566,
+										["n_max"] = 1244203,
 										["targets"] = {
-											["Dâro-Antonidas"] = 1362566,
-											["Krixidk"] = 1054000,
-											["Twobad-Antonidas"] = 743047,
+											["Krixidk"] = 13389264,
 										},
-										["n_min"] = 743047,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 3159613,
+										["n_min"] = 0,
+										["counter"] = 33,
+										["overheal"] = 6042763,
+										["total"] = 13389264,
 										["c_max"] = 0,
-										["id"] = 253288,
+										["id"] = 252550,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3159613,
-										["n_amt"] = 3,
 										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[633] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 7847025,
-										["targets"] = {
-											["Krixidk"] = 7847025,
-										},
-										["n_min"] = 7847025,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 7847025,
-										["c_max"] = 0,
-										["id"] = 633,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
-										["n_curado"] = 7847025,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 33,
+										["n_curado"] = 13389264,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Twobad-Antonidas"] = 4122012,
+											["Krixidk"] = 15639800,
 										},
-										["n_max"] = 982348,
+										["n_max"] = 857310,
 										["targets"] = {
-											["Twobad-Antonidas"] = 1185593,
+											["Krixidk"] = 8433012,
 										},
 										["n_min"] = 0,
-										["counter"] = 13,
-										["overheal"] = 4122012,
-										["total"] = 1185593,
+										["counter"] = 97,
+										["overheal"] = 15639800,
+										["total"] = 8433012,
 										["c_max"] = 0,
 										["id"] = 143924,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 97,
+										["n_curado"] = 8433012,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1185593,
-										["n_amt"] = 13,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
-									[25914] = {
-										["c_amt"] = 3,
-										["totalabsorb"] = 0,
+									[235169] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 72030,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 0,
+										["n_max"] = 17288,
 										["targets"] = {
-											["Twobad-Antonidas"] = 1950023,
-											["Krixidk"] = 3554367,
+											["Krixidk"] = 72030,
 										},
 										["n_min"] = 0,
-										["counter"] = 3,
+										["counter"] = 5,
 										["overheal"] = 0,
-										["total"] = 5504390,
-										["c_max"] = 1950023,
-										["id"] = 25914,
+										["total"] = 72030,
+										["c_max"] = 0,
+										["id"] = 235169,
 										["targets_absorbs"] = {
+											["Krixidk"] = 72030,
 										},
-										["c_curado"] = 5504390,
+										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 1609649,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 5,
+										["n_curado"] = 72030,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
-									[183998] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Krixidk"] = 2085978,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 2085978,
-										["c_max"] = 2085978,
-										["id"] = 183998,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 2085978,
-										["m_crit"] = 0,
-										["c_min"] = 2085978,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 0,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 688110,
-									},
-									[225311] = {
+									[45470] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Twobad-Antonidas"] = 307680,
+											["Krixidk"] = 58984133,
 										},
-										["n_max"] = 304139,
+										["n_max"] = 3688191,
 										["targets"] = {
-											["Dâro-Antonidas"] = 304139,
-											["Twobad-Antonidas"] = 0,
+											["Krixidk"] = 29558412,
 										},
-										["n_min"] = 304139,
-										["counter"] = 2,
-										["overheal"] = 307680,
-										["total"] = 304139,
+										["n_min"] = 0,
+										["counter"] = 37,
+										["overheal"] = 58984133,
+										["total"] = 29558412,
 										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 37,
+										["n_curado"] = 29558412,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 7168201,
+										},
+										["n_max"] = 353213,
+										["targets"] = {
+											["Krixidk"] = 9370404,
+										},
+										["n_min"] = 0,
+										["counter"] = 121,
+										["overheal"] = 7168201,
+										["total"] = 9370404,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 121,
+										["n_curado"] = 9370404,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[252545] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 4544319,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 840691,
+										["targets"] = {
+											["Krixidk"] = 4544319,
+										},
+										["n_min"] = 0,
+										["counter"] = 14,
+										["overheal"] = 0,
+										["total"] = 4544319,
+										["c_max"] = 0,
+										["id"] = 252545,
+										["targets_absorbs"] = {
+											["Krixidk"] = 4544319,
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 14,
+										["n_curado"] = 4544319,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[206931] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 7584516,
+										},
+										["n_max"] = 1415316,
+										["targets"] = {
+											["Krixidk"] = 4986355,
+										},
+										["n_min"] = 0,
+										["counter"] = 15,
+										["overheal"] = 7584516,
+										["total"] = 4986355,
+										["c_max"] = 0,
+										["id"] = 206931,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 15,
+										["n_curado"] = 4986355,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+								["Krixidk"] = 135282606,
+							},
+							["classe"] = "DEATHKNIGHT",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.024363,
+							["start_time"] = 1522168779,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Derinian-Ravencrest"] = 24992388,
+								["Krixidk"] = 16928659,
+								["Fattymcpaws-Ravencrest"] = 12337681,
+								["Glutflacker <Senflol-Antonidas>"] = 1219170,
+								["Cocanub-Ravencrest"] = 8874672,
+								["Senflol-Antonidas"] = 11953259,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 76305829.029424,
+							["total_without_pet"] = 94875680.029424,
+							["total"] = 94875680.029424,
+							["targets_absorbs"] = {
+								["Derinian-Ravencrest"] = 1432475,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Player-1329-0637D101",
+							["totalabsorb"] = 1432475.029424,
+							["last_hps"] = 0,
+							["targets"] = {
+								["Derinian-Ravencrest"] = 38080063,
+								["Krixidk"] = 28870783,
+								["Fattymcpaws-Ravencrest"] = 11350021,
+								["Cocanub-Ravencrest"] = 11696929,
+								["Senflol-Antonidas"] = 21964259,
+							},
+							["totalover_without_pet"] = 0.029424,
+							["healing_taken"] = 33943139.029424,
+							["fight_component"] = true,
+							["end_time"] = 1522169018,
+							["spec"] = 65,
+							["nome"] = "Derinian-Ravencrest",
+							["spells"] = {
+								["_ActorTable"] = {
+									[253072] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 1432475,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 148019,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 1432475,
+										},
+										["n_min"] = 0,
+										["counter"] = 10,
+										["overheal"] = 0,
+										["total"] = 1432475,
+										["c_max"] = 0,
+										["id"] = 253072,
+										["targets_absorbs"] = {
+											["Derinian-Ravencrest"] = 1432475,
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 10,
+										["n_curado"] = 1432475,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[225311] = {
+										["c_amt"] = 40,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Derinian-Ravencrest"] = 5722584,
+											["Krixidk"] = 5979052,
+											["Fattymcpaws-Ravencrest"] = 8432201,
+											["Glutflacker <Senflol-Antonidas>"] = 1219170,
+											["Cocanub-Ravencrest"] = 6475398,
+											["Senflol-Antonidas"] = 2582119,
+										},
+										["n_max"] = 360981,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 4434366,
+											["Krixidk"] = 3895102,
+											["Fattymcpaws-Ravencrest"] = 3012681,
+											["Glutflacker <Senflol-Antonidas>"] = 0,
+											["Cocanub-Ravencrest"] = 2170313,
+											["Senflol-Antonidas"] = 2403134,
+										},
+										["n_min"] = 0,
+										["counter"] = 110,
+										["overheal"] = 30410524,
+										["total"] = 15915596,
+										["c_max"] = 972491,
 										["id"] = 225311,
 										["targets_absorbs"] = {
 										},
-										["c_curado"] = 0,
+										["c_curado"] = 8684899,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 304139,
-										["n_amt"] = 2,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 70,
+										["n_curado"] = 7230697,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[253288] = {
+										["c_amt"] = 3,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Derinian-Ravencrest"] = 3981362,
+										},
+										["n_max"] = 1724463,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 3773723,
+											["Cocanub-Ravencrest"] = 666208,
+											["Senflol-Antonidas"] = 338415,
+										},
+										["n_min"] = 0,
+										["counter"] = 5,
+										["overheal"] = 3981362,
+										["total"] = 4778346,
+										["c_max"] = 2049260,
+										["id"] = 253288,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 2715468,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 2062878,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[19750] = {
+										["c_amt"] = 3,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Derinian-Ravencrest"] = 6046089,
+										},
+										["n_max"] = 1645372,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 4473985,
+											["Krixidk"] = 2122044,
+										},
+										["n_min"] = 0,
+										["counter"] = 7,
+										["overheal"] = 6046089,
+										["total"] = 6596029,
+										["c_max"] = 2122044,
+										["id"] = 19750,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 2740448,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 4,
+										["n_curado"] = 3855581,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[253099] = {
+										["c_amt"] = 2,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Derinian-Ravencrest"] = 794657,
+											["Krixidk"] = 195848,
+										},
+										["n_max"] = 134701,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 330190,
+											["Krixidk"] = 258769,
+											["Senflol-Antonidas"] = 255811,
+										},
+										["n_min"] = 0,
+										["counter"] = 13,
+										["overheal"] = 990505,
+										["total"] = 844770,
+										["c_max"] = 255811,
+										["id"] = 253099,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 255811,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 11,
+										["n_curado"] = 588959,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[25914] = {
+										["c_amt"] = 7,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Derinian-Ravencrest"] = 3643359,
+											["Krixidk"] = 1389024,
+										},
+										["n_max"] = 2287813,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 7835466,
+											["Krixidk"] = 1061837,
+											["Senflol-Antonidas"] = 1631372,
+										},
+										["n_min"] = 0,
+										["counter"] = 11,
+										["overheal"] = 5032383,
+										["total"] = 10528675,
+										["c_max"] = 1631372,
+										["id"] = 25914,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 6818996,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 4,
+										["n_curado"] = 3709679,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[183998] = {
+										["c_amt"] = 8,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 2972195,
+											["Senflol-Antonidas"] = 339435,
+										},
+										["n_max"] = 988879,
+										["targets"] = {
+											["Krixidk"] = 3461286,
+											["Cocanub-Ravencrest"] = 4141313,
+											["Fattymcpaws-Ravencrest"] = 4493083,
+											["Senflol-Antonidas"] = 7877754,
+										},
+										["n_min"] = 0,
+										["counter"] = 20,
+										["overheal"] = 3311630,
+										["total"] = 19973436,
+										["c_max"] = 2026338,
+										["id"] = 183998,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 10816096,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 12,
+										["n_curado"] = 9157340,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[82326] = {
+										["c_amt"] = 1,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 1447310,
+										},
+										["n_max"] = 695038,
+										["targets"] = {
+											["Senflol-Antonidas"] = 695038,
+											["Krixidk"] = 389726,
+										},
+										["n_min"] = 0,
+										["counter"] = 3,
+										["overheal"] = 1447310,
+										["total"] = 1084764,
+										["c_max"] = 3207,
+										["id"] = 82326,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 3207,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 1081557,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[257442] = {
-										["c_amt"] = 12,
+										["c_amt"] = 16,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Dâro-Antonidas"] = 514437,
-											["Krixidk"] = 835426,
-											["Knucklex-Antonidas"] = 494104,
-											["Senflol-Antonidas"] = 623696,
+											["Derinian-Ravencrest"] = 29776,
+											["Krixidk"] = 733457,
+											["Fattymcpaws-Ravencrest"] = 399380,
+											["Senflol-Antonidas"] = 109966,
 										},
-										["n_max"] = 373657,
+										["n_max"] = 177288,
 										["targets"] = {
-											["Dâro-Antonidas"] = 1218580,
-											["Knucklex-Antonidas"] = 2632011,
-											["Twobad-Antonidas"] = 726986,
-											["Krixidk"] = 3047282,
-											["Senflol-Antonidas"] = 1218455,
+											["Derinian-Ravencrest"] = 3885895,
+											["Krixidk"] = 1871557,
+											["Fattymcpaws-Ravencrest"] = 1727208,
+											["Cocanub-Ravencrest"] = 161978,
+											["Senflol-Antonidas"] = 2079023,
 										},
 										["n_min"] = 0,
-										["counter"] = 24,
-										["overheal"] = 2467663,
-										["total"] = 8843314,
-										["c_max"] = 910119,
+										["counter"] = 44,
+										["overheal"] = 1272579,
+										["total"] = 9725661,
+										["c_max"] = 683729,
 										["id"] = 257442,
 										["targets_absorbs"] = {
 										},
-										["c_curado"] = 5755284,
+										["c_curado"] = 5804465,
 										["m_crit"] = 0,
-										["c_min"] = 20229,
-										["m_amt"] = 0,
-										["n_curado"] = 3088030,
-										["n_amt"] = 12,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 28,
+										["n_curado"] = 3921196,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
-									[53652] = {
+									[143924] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Dâro-Antonidas"] = 1037770,
-											["Krixidk"] = 2009560,
-											["Twobad-Antonidas"] = 2999004,
-											["Knucklex-Antonidas"] = 488699,
-											["Senflol-Antonidas"] = 2953936,
+											["Derinian-Ravencrest"] = 2826553,
 										},
-										["n_max"] = 1817173,
+										["n_max"] = 981951,
 										["targets"] = {
-											["Dâro-Antonidas"] = 4753015,
-											["Knucklex-Antonidas"] = 5043246,
-											["Twobad-Antonidas"] = 3871667,
-											["Krixidk"] = 1212680,
-											["Senflol-Antonidas"] = 3732423,
+											["Derinian-Ravencrest"] = 3524822,
 										},
 										["n_min"] = 0,
-										["counter"] = 54,
-										["overheal"] = 9488969,
-										["total"] = 18613031,
+										["counter"] = 20,
+										["overheal"] = 2826553,
+										["total"] = 3524822,
 										["c_max"] = 0,
-										["id"] = 53652,
+										["id"] = 143924,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 18613031,
-										["n_amt"] = 54,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 20,
+										["n_curado"] = 3524822,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[223306] = {
 										["c_amt"] = 1,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Twobad-Antonidas"] = 1945101,
+											["Fattymcpaws-Ravencrest"] = 1691770,
 										},
 										["n_max"] = 0,
 										["targets"] = {
-											["Twobad-Antonidas"] = 0,
+											["Fattymcpaws-Ravencrest"] = 0,
 										},
 										["n_min"] = 0,
 										["counter"] = 1,
-										["overheal"] = 1945101,
+										["overheal"] = 1691770,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 223306,
@@ -4098,704 +4620,700 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["totaldenied"] = 0,
 										["m_amt"] = 0,
-										["n_curado"] = 0,
+										["m_healed"] = 0,
 										["n_amt"] = 0,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[253072] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 287518,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 143759,
-										["targets"] = {
-											["Twobad-Antonidas"] = 287518,
-										},
-										["n_min"] = 143759,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 287518,
-										["c_max"] = 0,
-										["id"] = 253072,
-										["targets_absorbs"] = {
-											["Twobad-Antonidas"] = 287518,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
+										["n_curado"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 287518,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 									[200654] = {
-										["c_amt"] = 6,
+										["c_amt"] = 19,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Dâro-Antonidas"] = 106352,
-											["Krixidk"] = 168800,
-											["Twobad-Antonidas"] = 272314,
+											["Derinian-Ravencrest"] = 456778,
+											["Krixidk"] = 1122994,
+											["Fattymcpaws-Ravencrest"] = 1082942,
+											["Cocanub-Ravencrest"] = 228389,
+											["Senflol-Antonidas"] = 2356060,
 										},
-										["n_max"] = 243681,
+										["n_max"] = 452867,
 										["targets"] = {
-											["Dâro-Antonidas"] = 1217272,
-											["Krixidk"] = 1355861,
-											["Knucklex-Antonidas"] = 896924,
-											["Twobad-Antonidas"] = 243681,
+											["Derinian-Ravencrest"] = 3146800,
+											["Krixidk"] = 3843129,
+											["Fattymcpaws-Ravencrest"] = 1571014,
+											["Cocanub-Ravencrest"] = 984492,
+											["Senflol-Antonidas"] = 1727182,
 										},
 										["n_min"] = 0,
-										["counter"] = 13,
-										["overheal"] = 547466,
-										["total"] = 3713738,
-										["c_max"] = 504060,
+										["counter"] = 29,
+										["overheal"] = 5247163,
+										["total"] = 11272617,
+										["c_max"] = 984492,
 										["id"] = 200654,
 										["targets_absorbs"] = {
 										},
-										["c_curado"] = 2557551,
+										["c_curado"] = 9461319,
 										["m_crit"] = 0,
-										["c_min"] = 240014,
-										["m_amt"] = 0,
-										["n_curado"] = 1156187,
-										["n_amt"] = 7,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 10,
+										["n_curado"] = 1811298,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
-									[19750] = {
-										["c_amt"] = 2,
+									[53652] = {
+										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Dâro-Antonidas"] = 1748459,
-											["Krixidk"] = 940715,
-											["Knucklex-Antonidas"] = 258651,
-											["Twobad-Antonidas"] = 274718,
+											["Derinian-Ravencrest"] = 468412,
+											["Krixidk"] = 13190,
+											["Cocanub-Ravencrest"] = 2170885,
+											["Senflol-Antonidas"] = 5519888,
 										},
-										["n_max"] = 1533240,
+										["n_max"] = 2537810,
 										["targets"] = {
-											["Dâro-Antonidas"] = 3903145,
-											["Krixidk"] = 195018,
-											["Knucklex-Antonidas"] = 3421103,
-											["Twobad-Antonidas"] = 994464,
+											["Derinian-Ravencrest"] = 1105417,
+											["Krixidk"] = 2405533,
+											["Cocanub-Ravencrest"] = 3572625,
+											["Senflol-Antonidas"] = 486047,
 										},
-										["n_min"] = 195018,
-										["counter"] = 8,
-										["overheal"] = 3222543,
-										["total"] = 8513730,
-										["c_max"] = 1887863,
-										["id"] = 19750,
+										["n_min"] = 0,
+										["counter"] = 65,
+										["overheal"] = 8172375,
+										["total"] = 7569622,
+										["c_max"] = 0,
+										["id"] = 53652,
 										["targets_absorbs"] = {
 										},
-										["c_curado"] = 3317794,
+										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 1429931,
-										["m_amt"] = 0,
-										["n_curado"] = 5195936,
-										["n_amt"] = 6,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 65,
+										["n_curado"] = 7569622,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[207559] = {
+										["c_amt"] = 1,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Derinian-Ravencrest"] = 1022818,
+											["Krixidk"] = 3075589,
+											["Fattymcpaws-Ravencrest"] = 731388,
+											["Senflol-Antonidas"] = 1045791,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 0,
+											["Krixidk"] = 1628867,
+											["Fattymcpaws-Ravencrest"] = 0,
+											["Senflol-Antonidas"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 5875586,
+										["total"] = 1628867,
+										["c_max"] = 1628867,
+										["id"] = 207559,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 1628867,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 3,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1519429116,
+							["healing_from"] = {
+								["Derinian-Ravencrest"] = true,
+							},
+							["last_event"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["spec"] = 65,
-							["totaldenied"] = 0.002305,
-							["delay"] = 1519429186,
-							["last_event"] = 1519429186,
+							["totaldenied"] = 0.029424,
+							["start_time"] = 1522168823,
+							["delay"] = 0,
+							["classe"] = "PALADIN",
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
 							["targets_overheal"] = {
-								["Rokuthec <Senflol-Antonidas>"] = 3976,
-								["Senflol-Antonidas"] = 37171526,
+								["Fattymcpaws-Ravencrest"] = 17658716,
 							},
 							["pets"] = {
-								"Rokuthec <Senflol-Antonidas>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
-							["totalover"] = 37818811.00898,
-							["total_without_pet"] = 16693049.00898,
-							["total"] = 16693049.00898,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 17658716.024354,
+							["total_without_pet"] = 6909189.024354,
+							["total"] = 6909189.024354,
 							["targets_absorbs"] = {
-								["Senflol-Antonidas"] = 11435255,
 							},
 							["heal_enemy"] = {
 							},
-							["colocacao"] = 3,
 							["on_hold"] = false,
-							["serial"] = "Player-3686-05B7AF0E",
-							["totalabsorb"] = 11435255.00898,
-							["last_hps"] = 170316.379718627,
+							["serial"] = "Player-1329-063BC0D8",
+							["totalabsorb"] = 0.024354,
+							["last_hps"] = 0,
 							["targets"] = {
-								["Senflol-Antonidas"] = 21491323,
+								["Fattymcpaws-Ravencrest"] = 10374575,
 							},
-							["totalover_without_pet"] = 0.00898,
-							["healing_taken"] = 23000225.00898,
-							["boss_fight_component"] = true,
-							["end_time"] = 1519429200,
-							["healing_from"] = {
-								["Twobad-Antonidas"] = true,
-								["Senflol-Antonidas"] = true,
-							},
-							["nome"] = "Senflol-Antonidas",
+							["totalover_without_pet"] = 0.024354,
+							["healing_taken"] = 17713175.024354,
+							["fight_component"] = true,
+							["end_time"] = 1522169018,
+							["spec"] = 72,
+							["nome"] = "Fattymcpaws-Ravencrest",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
-									[6262] = {
+									[243223] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Senflol-Antonidas"] = 1809282,
+											["Fattymcpaws-Ravencrest"] = 3942058,
 										},
 										["n_max"] = 0,
 										["targets"] = {
-											["Senflol-Antonidas"] = 0,
+											["Fattymcpaws-Ravencrest"] = 0,
 										},
 										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 1809282,
+										["counter"] = 6,
+										["overheal"] = 3942058,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 6262,
+										["id"] = 243223,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 1,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 6,
+										["n_curado"] = 0,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[117313] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Fattymcpaws-Ravencrest"] = 5002302,
+										},
+										["n_max"] = 840756,
+										["targets"] = {
+											["Fattymcpaws-Ravencrest"] = 2079340,
+										},
+										["n_min"] = 0,
+										["counter"] = 18,
+										["overheal"] = 5002302,
+										["total"] = 2079340,
+										["c_max"] = 0,
+										["id"] = 117313,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 18,
+										["n_curado"] = 2079340,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Fattymcpaws-Ravencrest"] = 8714356,
+										},
+										["n_max"] = 1421059,
+										["targets"] = {
+											["Fattymcpaws-Ravencrest"] = 4471282,
+										},
+										["n_min"] = 0,
+										["counter"] = 29,
+										["overheal"] = 8714356,
+										["total"] = 4471282,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 29,
+										["n_curado"] = 4471282,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[253099] = {
+										["c_amt"] = 1,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 119523,
+										["targets"] = {
+											["Fattymcpaws-Ravencrest"] = 358567,
+										},
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 358567,
+										["c_max"] = 239044,
+										["id"] = 253099,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 239044,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 119523,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Derinian-Ravencrest"] = true,
+								["Fattymcpaws-Ravencrest"] = true,
+							},
+							["last_event"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.024354,
+							["start_time"] = 1522168915,
+							["delay"] = 0,
+							["classe"] = "WARRIOR",
+						}, -- [3]
+						{
+							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Cocanub-Ravencrest"] = 61176876,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 61176876.03645,
+							["total_without_pet"] = 21864747.03645,
+							["total"] = 21864747.03645,
+							["targets_absorbs"] = {
+								["Cocanub-Ravencrest"] = 10472342,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Player-1329-04192918",
+							["totalabsorb"] = 10472342.03645,
+							["last_hps"] = 0,
+							["targets"] = {
+								["Cocanub-Ravencrest"] = 23399051,
+							},
+							["totalover_without_pet"] = 0.03645,
+							["healing_taken"] = 33561676.03645,
+							["fight_component"] = true,
+							["end_time"] = 1522169018,
+							["spec"] = 72,
+							["nome"] = "Cocanub-Ravencrest",
+							["spells"] = {
+								["_ActorTable"] = {
+									[117313] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Cocanub-Ravencrest"] = 9814115,
+										},
+										["n_max"] = 340923,
+										["targets"] = {
+											["Cocanub-Ravencrest"] = 2010103,
+										},
+										["n_min"] = 0,
+										["counter"] = 36,
+										["overheal"] = 9814115,
+										["total"] = 2010103,
+										["c_max"] = 0,
+										["id"] = 117313,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 36,
+										["n_curado"] = 2010103,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[252879] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Senflol-Antonidas"] = 1284696,
+											["Cocanub-Ravencrest"] = 5379590,
 										},
-										["n_max"] = 655042,
+										["n_max"] = 314928,
 										["targets"] = {
-											["Senflol-Antonidas"] = 1462393,
+											["Cocanub-Ravencrest"] = 509929,
 										},
 										["n_min"] = 0,
-										["counter"] = 9,
-										["overheal"] = 1284696,
-										["total"] = 1462393,
+										["counter"] = 11,
+										["overheal"] = 5379590,
+										["total"] = 509929,
 										["c_max"] = 0,
 										["id"] = 252879,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1462393,
-										["n_amt"] = 9,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 11,
+										["n_curado"] = 509929,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[207472] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 10472342,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 2099991,
+										["targets"] = {
+											["Cocanub-Ravencrest"] = 10472342,
+										},
+										["n_min"] = 0,
+										["counter"] = 12,
+										["overheal"] = 0,
+										["total"] = 10472342,
+										["c_max"] = 0,
+										["id"] = 207472,
+										["targets_absorbs"] = {
+											["Cocanub-Ravencrest"] = 10472342,
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 12,
+										["n_curado"] = 10472342,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[243223] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Cocanub-Ravencrest"] = 17310682,
+										},
+										["n_max"] = 1332845,
+										["targets"] = {
+											["Cocanub-Ravencrest"] = 3867003,
+										},
+										["n_min"] = 0,
+										["counter"] = 16,
+										["overheal"] = 17310682,
+										["total"] = 3867003,
+										["c_max"] = 0,
+										["id"] = 243223,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 16,
+										["n_curado"] = 3867003,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Cocanub-Ravencrest"] = 28672489,
+										},
+										["n_max"] = 2147003,
+										["targets"] = {
+											["Cocanub-Ravencrest"] = 5005370,
+										},
+										["n_min"] = 0,
+										["counter"] = 29,
+										["overheal"] = 28672489,
+										["total"] = 5005370,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 29,
+										["n_curado"] = 5005370,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Derinian-Ravencrest"] = true,
+								["Cocanub-Ravencrest"] = true,
+							},
+							["last_event"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.03645,
+							["start_time"] = 1522168844,
+							["delay"] = 0,
+							["classe"] = "WARRIOR",
+						}, -- [4]
+						{
+							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Rokuthec <Senflol-Antonidas>"] = 4720,
+								["Senflol-Antonidas"] = 132606423,
+							},
+							["pets"] = {
+								"Rokuthec <Senflol-Antonidas> <Senflol-Antonidas>", -- [1]
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 133083749.028277,
+							["total_without_pet"] = 39263832.028277,
+							["total"] = 39263832.028277,
+							["targets_absorbs"] = {
+								["Senflol-Antonidas"] = 8718217,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Player-3686-05B7AF0E",
+							["totalabsorb"] = 8718217.028277,
+							["last_hps"] = 0,
+							["targets"] = {
+								["Senflol-Antonidas"] = 59757419,
+							},
+							["totalover_without_pet"] = 0.028277,
+							["healing_taken"] = 56757608.028277,
+							["fight_component"] = true,
+							["end_time"] = 1522169018,
+							["spec"] = 265,
+							["nome"] = "Senflol-Antonidas",
+							["spells"] = {
+								["_ActorTable"] = {
+									[252879] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Senflol-Antonidas"] = 4306512,
+										},
+										["n_max"] = 740792,
+										["targets"] = {
+											["Senflol-Antonidas"] = 4179766,
+										},
+										["n_min"] = 0,
+										["counter"] = 18,
+										["overheal"] = 4306512,
+										["total"] = 4179766,
+										["c_max"] = 0,
+										["id"] = 252879,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 18,
+										["n_curado"] = 4179766,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[218615] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Senflol-Antonidas"] = 1016613,
+											["Senflol-Antonidas"] = 23808722,
 										},
-										["n_max"] = 2054316,
+										["n_max"] = 1075598,
 										["targets"] = {
-											["Senflol-Antonidas"] = 3139660,
+											["Senflol-Antonidas"] = 7055247,
 										},
 										["n_min"] = 0,
-										["counter"] = 5,
-										["overheal"] = 1016613,
-										["total"] = 3139660,
+										["counter"] = 45,
+										["overheal"] = 23808722,
+										["total"] = 7055247,
 										["c_max"] = 0,
 										["id"] = 218615,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3139660,
-										["n_amt"] = 5,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 45,
+										["n_curado"] = 7055247,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[207472] = {
 										["c_amt"] = 0,
-										["totalabsorb"] = 5442584,
+										["totalabsorb"] = 1820575,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 1803441,
+										["n_max"] = 1820575,
 										["targets"] = {
-											["Senflol-Antonidas"] = 5442584,
+											["Senflol-Antonidas"] = 1820575,
 										},
-										["n_min"] = 13210,
-										["counter"] = 7,
+										["n_min"] = 0,
+										["counter"] = 1,
 										["overheal"] = 0,
-										["total"] = 5442584,
+										["total"] = 1820575,
 										["c_max"] = 0,
 										["id"] = 207472,
 										["targets_absorbs"] = {
-											["Senflol-Antonidas"] = 5442584,
+											["Senflol-Antonidas"] = 1820575,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 5442584,
-										["n_amt"] = 7,
 										["totaldenied"] = 0,
-										["is_shield"] = true,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 1820575,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[198590] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Senflol-Antonidas"] = 24513342,
+											["Senflol-Antonidas"] = 46288491,
 										},
-										["n_max"] = 54398,
+										["n_max"] = 1984515,
 										["targets"] = {
-											["Senflol-Antonidas"] = 72386,
+											["Senflol-Antonidas"] = 15673229,
 										},
 										["n_min"] = 0,
-										["counter"] = 20,
-										["overheal"] = 24513342,
-										["total"] = 72386,
+										["counter"] = 65,
+										["overheal"] = 46288491,
+										["total"] = 15673229,
 										["c_max"] = 0,
 										["id"] = 198590,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 72386,
-										["n_amt"] = 20,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 65,
+										["n_curado"] = 15673229,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[108366] = {
 										["c_amt"] = 0,
-										["totalabsorb"] = 5992671,
+										["totalabsorb"] = 6897642,
 										["targets_overheal"] = {
-											["Rokuthec <Senflol-Antonidas>"] = 3976,
+											["Rokuthec <Senflol-Antonidas>"] = 4720,
+											["Senflol-Antonidas"] = 4720,
 										},
-										["n_max"] = 1064160,
+										["n_max"] = 1038312,
 										["targets"] = {
 											["Rokuthec <Senflol-Antonidas>"] = 0,
-											["Senflol-Antonidas"] = 5992671,
+											["Senflol-Antonidas"] = 6897642,
 										},
 										["n_min"] = 0,
-										["counter"] = 13,
-										["overheal"] = 3976,
-										["total"] = 5992671,
+										["counter"] = 12,
+										["overheal"] = 9440,
+										["total"] = 6897642,
 										["c_max"] = 0,
 										["id"] = 108366,
 										["targets_absorbs"] = {
 											["Rokuthec <Senflol-Antonidas>"] = 0,
-											["Senflol-Antonidas"] = 5992671,
+											["Senflol-Antonidas"] = 6897642,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 5992671,
-										["n_amt"] = 13,
 										["totaldenied"] = 0,
-										["is_shield"] = true,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 12,
+										["n_curado"] = 6897642,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Senflol-Antonidas"] = 8547593,
+											["Senflol-Antonidas"] = 58197978,
 										},
-										["n_max"] = 316168,
+										["n_max"] = 2630860,
 										["targets"] = {
-											["Senflol-Antonidas"] = 583355,
+											["Senflol-Antonidas"] = 3637373,
 										},
 										["n_min"] = 0,
-										["counter"] = 13,
-										["overheal"] = 8547593,
-										["total"] = 583355,
+										["counter"] = 30,
+										["overheal"] = 58197978,
+										["total"] = 3637373,
 										["c_max"] = 0,
 										["id"] = 143924,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 583355,
-										["n_amt"] = 13,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 30,
+										["n_curado"] = 3637373,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1519429105,
+							["healing_from"] = {
+								["Derinian-Ravencrest"] = true,
+								["Senflol-Antonidas"] = true,
+							},
+							["last_event"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["spec"] = 265,
-							["totaldenied"] = 0.00898,
+							["totaldenied"] = 0.028277,
+							["start_time"] = 1522168823,
 							["delay"] = 0,
-							["last_event"] = 1519429197,
-						}, -- [3]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-								["Dâro-Antonidas"] = 513815,
-								["Knucklex-Antonidas"] = 14186234,
-								["Krixidk"] = 233552,
-								["Twobad-Antonidas"] = 46711,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MONK",
-							["totalover"] = 14980312.007196,
-							["total_without_pet"] = 7711681.007196,
-							["total"] = 7711681.007196,
-							["targets_absorbs"] = {
-								["Knucklex-Antonidas"] = 3254820,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 4,
-							["on_hold"] = false,
-							["serial"] = "Player-3686-062B271B",
-							["totalabsorb"] = 3254820.007196,
-							["last_hps"] = 78680.9881157099,
-							["targets"] = {
-								["Krixidk"] = 872153,
-								["Knucklex-Antonidas"] = 13592346,
-								["Twobad-Antonidas"] = 196385,
-							},
-							["totalover_without_pet"] = 0.007196,
-							["healing_taken"] = 18636427.007196,
-							["boss_fight_component"] = true,
-							["end_time"] = 1519429200,
-							["healing_from"] = {
-								["Knucklex-Antonidas"] = true,
-								["Twobad-Antonidas"] = true,
-							},
-							["nome"] = "Knucklex-Antonidas",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[132463] = {
-										["c_amt"] = 7,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dâro-Antonidas"] = 513815,
-											["Krixidk"] = 233552,
-											["Twobad-Antonidas"] = 46711,
-										},
-										["n_max"] = 112628,
-										["targets"] = {
-											["Dâro-Antonidas"] = 0,
-											["Krixidk"] = 872153,
-											["Knucklex-Antonidas"] = 637473,
-											["Twobad-Antonidas"] = 196385,
-										},
-										["n_min"] = 107856,
-										["counter"] = 20,
-										["overheal"] = 794078,
-										["total"] = 1706011,
-										["c_max"] = 225256,
-										["id"] = 132463,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 862609,
-										["m_crit"] = 0,
-										["c_min"] = 215712,
-										["m_amt"] = 0,
-										["n_curado"] = 843402,
-										["n_amt"] = 13,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[195318] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Knucklex-Antonidas"] = 2725169,
-										},
-										["n_max"] = 1291553,
-										["targets"] = {
-											["Knucklex-Antonidas"] = 1291553,
-										},
-										["n_min"] = 1291553,
-										["counter"] = 1,
-										["overheal"] = 2725169,
-										["total"] = 1291553,
-										["c_max"] = 0,
-										["id"] = 195318,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1291553,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[122470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 3254820,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 3254820,
-										["targets"] = {
-											["Knucklex-Antonidas"] = 3254820,
-										},
-										["n_min"] = 3254820,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 3254820,
-										["c_max"] = 0,
-										["id"] = 122470,
-										["targets_absorbs"] = {
-											["Knucklex-Antonidas"] = 3254820,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3254820,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[252897] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Knucklex-Antonidas"] = 673277,
-										},
-										["n_max"] = 85073,
-										["targets"] = {
-											["Knucklex-Antonidas"] = 85073,
-										},
-										["n_min"] = 85073,
-										["counter"] = 3,
-										["overheal"] = 673277,
-										["total"] = 85073,
-										["c_max"] = 0,
-										["id"] = 252897,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 85073,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Knucklex-Antonidas"] = 10787788,
-										},
-										["n_max"] = 672151,
-										["targets"] = {
-											["Knucklex-Antonidas"] = 1374224,
-										},
-										["n_min"] = 0,
-										["counter"] = 17,
-										["overheal"] = 10787788,
-										["total"] = 1374224,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1374224,
-										["n_amt"] = 17,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1519429168,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 269,
-							["totaldenied"] = 0.007196,
-							["delay"] = 1519429182,
-							["last_event"] = 1519429198,
-						}, -- [4]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-								["Dâro-Antonidas"] = 4560800,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 4560800.002808,
-							["total_without_pet"] = 6316445.002808,
-							["total"] = 6316445.002808,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 5,
-							["on_hold"] = false,
-							["serial"] = "Player-3686-05ACAE90",
-							["totalabsorb"] = 0.002808,
-							["last_hps"] = 64445.6291352975,
-							["targets"] = {
-								["Dâro-Antonidas"] = 6900482,
-							},
-							["totalover_without_pet"] = 0.002808,
-							["healing_taken"] = 19425790.002808,
-							["boss_fight_component"] = true,
-							["end_time"] = 1519429200,
-							["healing_from"] = {
-								["Dâro-Antonidas"] = true,
-								["Twobad-Antonidas"] = true,
-							},
-							["nome"] = "Dâro-Antonidas",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[6262] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 1724036,
-										["targets"] = {
-											["Dâro-Antonidas"] = 1724036,
-										},
-										["n_min"] = 1724036,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 1724036,
-										["c_max"] = 0,
-										["id"] = 6262,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1724036,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[8936] = {
-										["c_amt"] = 8,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dâro-Antonidas"] = 52709,
-										},
-										["n_max"] = 574017,
-										["targets"] = {
-											["Dâro-Antonidas"] = 1249133,
-										},
-										["n_min"] = 16400,
-										["counter"] = 14,
-										["overheal"] = 52709,
-										["total"] = 1249133,
-										["c_max"] = 32801,
-										["id"] = 8936,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 150824,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1098309,
-										["n_amt"] = 6,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dâro-Antonidas"] = 4508091,
-										},
-										["n_max"] = 1900200,
-										["targets"] = {
-											["Dâro-Antonidas"] = 3343276,
-										},
-										["n_min"] = 0,
-										["counter"] = 13,
-										["overheal"] = 4508091,
-										["total"] = 3343276,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3343276,
-										["n_amt"] = 13,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1519429164,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 102,
-							["totaldenied"] = 0.002808,
-							["delay"] = 1519429186,
-							["last_event"] = 1519429186,
+							["classe"] = "WARLOCK",
 						}, -- [5]
 						{
 							["flag_original"] = 8465,
@@ -4805,152 +5323,125 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 9147751.001872,
-							["total_without_pet"] = 10597824.001872,
-							["total"] = 10597824.001872,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 19293424.021582,
+							["total_without_pet"] = 3230674.021582,
+							["total"] = 3230674.021582,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["serial"] = "Creature-0-3892-1493-27695-27893-000010A625",
-							["totalabsorb"] = 0.001872,
+							["serial"] = "Creature-0-1467-1493-5274-27893-00003A7471",
+							["totalabsorb"] = 0.021582,
 							["last_hps"] = 0,
 							["targets"] = {
-								["Rune Weapon <Krixidk>"] = 10924861,
+								["Rune Weapon <Krixidk>"] = 8173610,
 							},
-							["totalover_without_pet"] = 0.001872,
-							["healing_taken"] = 10597824.001872,
-							["end_time"] = 1519429200,
-							["boss_fight_component"] = true,
+							["totalover_without_pet"] = 0.021582,
+							["healing_taken"] = 3230674.021582,
+							["fight_component"] = true,
+							["end_time"] = 1522169018,
 							["ownerName"] = "Krixidk",
-							["nome"] = "Rune Weapon <Krixidk>",
+							["nome"] = "Rune Weapon <Krixidk> <Krixidk>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[45470] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Rune Weapon <Krixidk>"] = 8282579,
+											["Rune Weapon <Krixidk>"] = 15880974,
 										},
-										["n_max"] = 1963657,
+										["n_max"] = 879986,
 										["targets"] = {
-											["Rune Weapon <Krixidk>"] = 7772213,
+											["Rune Weapon <Krixidk>"] = 2716487,
 										},
 										["n_min"] = 0,
-										["counter"] = 10,
-										["overheal"] = 8282579,
-										["total"] = 7772213,
+										["counter"] = 18,
+										["overheal"] = 15880974,
+										["total"] = 2716487,
 										["c_max"] = 0,
 										["id"] = 45470,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 7772213,
-										["n_amt"] = 10,
 										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[205224] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 525076,
-										["targets"] = {
-											["Rune Weapon <Krixidk>"] = 1050151,
-										},
-										["n_min"] = 525075,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 1050151,
-										["c_max"] = 0,
-										["id"] = 205224,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
-										["n_curado"] = 1050151,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Rune Weapon <Krixidk>"] = 649641,
-										},
-										["n_max"] = 596281,
-										["targets"] = {
-											["Rune Weapon <Krixidk>"] = 1658328,
-										},
-										["n_min"] = 0,
-										["counter"] = 6,
-										["overheal"] = 649641,
-										["total"] = 1658328,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
+										["n_amt"] = 18,
+										["n_curado"] = 2716487,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1658328,
-										["n_amt"] = 6,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 									[55078] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Rune Weapon <Krixidk>"] = 215531,
+											["Rune Weapon <Krixidk>"] = 405223,
 										},
-										["n_max"] = 58566,
+										["n_max"] = 45284,
 										["targets"] = {
-											["Rune Weapon <Krixidk>"] = 117132,
+											["Rune Weapon <Krixidk>"] = 244836,
 										},
 										["n_min"] = 0,
-										["counter"] = 8,
-										["overheal"] = 215531,
-										["total"] = 117132,
+										["counter"] = 20,
+										["overheal"] = 405223,
+										["total"] = 244836,
 										["c_max"] = 0,
 										["id"] = 55078,
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 117132,
-										["n_amt"] = 8,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 20,
+										["n_curado"] = 244836,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Rune Weapon <Krixidk>"] = 3007227,
+										},
+										["n_max"] = 98391,
+										["targets"] = {
+											["Rune Weapon <Krixidk>"] = 269351,
+										},
+										["n_min"] = 0,
+										["counter"] = 12,
+										["overheal"] = 3007227,
+										["total"] = 269351,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 12,
+										["n_curado"] = 269351,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["totaldenied"] = 0.021582,
 							["targets_overheal"] = {
-								["Rune Weapon <Krixidk>"] = 9147751,
+								["Rune Weapon <Krixidk>"] = 19293424,
 							},
-							["start_time"] = 1519429181,
-							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1519429173,
-							["totaldenied"] = 0.001872,
-							["delay"] = 1519429173,
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["start_time"] = 1522168983,
+							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [6]
 						{
@@ -4960,42 +5451,40 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 643309.006153,
-							["total_without_pet"] = 0.006153,
-							["total"] = 0.006153,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 472606.00459,
+							["total_without_pet"] = 0.00459,
+							["total"] = 0.00459,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["serial"] = "Pet-0-3892-1493-27695-78158-0301C649E0",
-							["totalabsorb"] = 0.006153,
+							["serial"] = "Pet-0-1467-1493-5274-78158-0201C649E0",
+							["totalabsorb"] = 0.00459,
 							["last_hps"] = 0,
 							["targets"] = {
 							},
-							["totalover_without_pet"] = 0.006153,
-							["healing_taken"] = 0.006153,
-							["end_time"] = 1519429200,
-							["boss_fight_component"] = true,
+							["totalover_without_pet"] = 0.00459,
+							["healing_taken"] = 0.00459,
+							["end_time"] = 1522169018,
 							["ownerName"] = "Senflol-Antonidas",
-							["nome"] = "Rokuthec <Senflol-Antonidas>",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[143924] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Rokuthec <Senflol-Antonidas>"] = 643309,
+											["Rokuthec <Senflol-Antonidas>"] = 472606,
 										},
 										["n_max"] = 0,
 										["targets"] = {
 											["Rokuthec <Senflol-Antonidas>"] = 0,
 										},
 										["n_min"] = 0,
-										["counter"] = 3,
-										["overheal"] = 643309,
+										["counter"] = 2,
+										["overheal"] = 472606,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 143924,
@@ -5003,3373 +5492,2843 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 3,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 0,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["totaldenied"] = 0.00459,
 							["targets_overheal"] = {
-								["Rokuthec <Senflol-Antonidas>"] = 643309,
+								["Rokuthec <Senflol-Antonidas>"] = 472606,
 							},
-							["start_time"] = 1519429189,
-							["heal_enemy_amt"] = 0,
+							["nome"] = "Rokuthec <Senflol-Antonidas> <Senflol-Antonidas>",
 							["custom"] = 0,
-							["last_event"] = 1519429178,
-							["totaldenied"] = 0.006153,
-							["delay"] = 1519429178,
 							["tipo"] = 2,
+							["classe"] = "PET",
+							["start_time"] = 1522169008,
+							["delay"] = 0,
+							["last_event"] = 0,
 						}, -- [7]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 657,
 					["tipo"] = 7,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 657,
 					["tipo"] = 9,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[214222] = {
-										["activedamt"] = 0,
-										["id"] = 214222,
+									[113942] = {
+										["counter"] = 0,
+										["appliedamt"] = 0,
+										["activedamt"] = -1,
+										["actived_at"] = 1522168965,
+										["id"] = 113942,
+										["uptime"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 42,
+										["refreshamt"] = 0,
+									},
+									[206151] = {
+										["counter"] = 0,
+										["uptime"] = 23,
+										["activedamt"] = 1,
+										["id"] = 206151,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[57723] = {
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["activedamt"] = 0,
+										["uptime"] = 21,
+										["id"] = 57723,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["actived_at"] = 1522168718,
+									},
+									[105771] = {
+										["counter"] = 0,
+										["uptime"] = 1,
+										["activedamt"] = 0,
+										["id"] = 105771,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[193956] = {
+										["counter"] = 0,
+										["uptime"] = 1,
+										["activedamt"] = 0,
+										["id"] = 193956,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[62124] = {
+									[205546] = {
+										["counter"] = 0,
 										["activedamt"] = 0,
-										["id"] = 62124,
+										["appliedamt"] = 21,
+										["id"] = 205546,
+										["uptime"] = 20,
 										["targets"] = {
 										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[25771] = {
+									[113344] = {
+										["counter"] = 0,
 										["activedamt"] = 0,
-										["id"] = 25771,
+										["appliedamt"] = 22,
+										["id"] = 113344,
+										["uptime"] = 80,
 										["targets"] = {
 										},
-										["uptime"] = 30,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["refreshamt"] = 875,
 									},
-									[211426] = {
+									[213395] = {
+										["counter"] = 0,
 										["activedamt"] = 0,
-										["id"] = 211426,
+										["appliedamt"] = 2,
+										["id"] = 213395,
+										["uptime"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 26,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[236027] = {
 										["counter"] = 0,
+										["uptime"] = 12,
+										["activedamt"] = 0,
+										["id"] = 236027,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
 									},
 								},
-							},
-							["cooldowns_defensive"] = 2.005671,
-							["buff_uptime"] = 1014,
-							["last_cooldown"] = {
-								1519429187.624, -- [1]
-								498, -- [2]
-							},
-							["classe"] = "PALADIN",
-							["cooldowns_defensive_targets"] = {
-								["Twobad-Antonidas"] = 1,
-								["Krixidk"] = 1,
-							},
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 1374,
+							["cc_done_spells"] = {
 								["_ActorTable"] = {
-									[211422] = {
-										["activedamt"] = 7,
-										["id"] = 211422,
+									[105771] = {
+										["id"] = 105771,
 										["targets"] = {
+											["Barbed Spiderling"] = 2,
 										},
-										["uptime"] = 28,
-										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["counter"] = 2,
 									},
-									[243174] = {
-										["activedamt"] = 1,
-										["id"] = 243174,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+								},
+								["tipo"] = 9,
+							},
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[215572] = {
 										["counter"] = 0,
-									},
-									[54149] = {
-										["activedamt"] = 5,
-										["id"] = 54149,
-										["targets"] = {
-										},
-										["uptime"] = 59,
-										["appliedamt"] = 5,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[498] = {
-										["activedamt"] = 1,
-										["id"] = 498,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[200423] = {
-										["activedamt"] = 1,
-										["id"] = 200423,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[105809] = {
-										["activedamt"] = 1,
-										["id"] = 105809,
-										["targets"] = {
-										},
-										["uptime"] = 20,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[200376] = {
-										["activedamt"] = 1,
-										["id"] = 200376,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[242586] = {
-										["activedamt"] = 3,
-										["id"] = 242586,
-										["targets"] = {
-										},
-										["uptime"] = 27,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[185736] = {
-										["activedamt"] = 1,
-										["id"] = 185736,
-										["targets"] = {
-										},
-										["uptime"] = 88,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[253072] = {
-										["activedamt"] = 2,
-										["id"] = 253072,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 2,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[229206] = {
-										["activedamt"] = 1,
-										["id"] = 229206,
-										["targets"] = {
-										},
-										["uptime"] = 60,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252801] = {
-										["activedamt"] = 3,
-										["id"] = 252801,
-										["targets"] = {
-										},
-										["uptime"] = 27,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[186403] = {
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[200654] = {
-										["activedamt"] = 1,
-										["id"] = 200654,
-										["targets"] = {
-										},
-										["uptime"] = 16,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[254332] = {
-										["activedamt"] = 1,
-										["id"] = 254332,
-										["targets"] = {
-										},
-										["uptime"] = 20,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[156779] = {
-										["activedamt"] = 1,
-										["id"] = 156779,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[210320] = {
-										["activedamt"] = 1,
-										["id"] = 210320,
-										["targets"] = {
-										},
-										["uptime"] = 88,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[207472] = {
 										["activedamt"] = 4,
-										["id"] = 207472,
-										["targets"] = {
-										},
-										["uptime"] = 41,
 										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[200656] = {
-										["activedamt"] = 1,
-										["id"] = 200656,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[31842] = {
-										["activedamt"] = 1,
-										["id"] = 31842,
-										["targets"] = {
-										},
+										["id"] = 215572,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[223306] = {
-										["activedamt"] = 1,
-										["id"] = 223306,
 										["targets"] = {
 										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[200652] = {
-										["activedamt"] = 1,
-										["id"] = 200652,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									[200979] = {
 										["counter"] = 0,
-									},
-									[188031] = {
-										["activedamt"] = 1,
-										["id"] = 188031,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[200025] = {
+										["uptime"] = 4,
 										["activedamt"] = 3,
-										["id"] = 200025,
+										["id"] = 200979,
+										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 24,
 										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[253287] = {
+									[46924] = {
+										["counter"] = 0,
 										["activedamt"] = 2,
-										["id"] = 253287,
-										["targets"] = {
-										},
-										["uptime"] = 57,
 										["appliedamt"] = 2,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[256824] = {
-										["activedamt"] = 3,
-										["id"] = 256824,
+										["id"] = 46924,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 37,
-										["appliedamt"] = 3,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[200657] = {
-										["activedamt"] = 1,
-										["id"] = 200657,
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[237137] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 5,
+										["refreshamt"] = 0,
+										["id"] = 237137,
+										["uptime"] = 230,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
+									},
+									[184364] = {
+										["counter"] = 0,
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 184364,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[214128] = {
+										["counter"] = 0,
+										["activedamt"] = 7,
+										["appliedamt"] = 7,
+										["id"] = 214128,
+										["uptime"] = 71,
+										["targets"] = {
+										},
+										["refreshamt"] = 1,
+									},
+									[215562] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 9,
+										["refreshamt"] = 18,
+										["id"] = 215562,
+										["uptime"] = 62,
+										["targets"] = {
+										},
+										["appliedamt"] = 9,
+									},
+									[12292] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 12292,
+										["uptime"] = 59,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[215570] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 18,
+										["refreshamt"] = 2,
+										["id"] = 215570,
+										["uptime"] = 54,
+										["targets"] = {
+										},
+										["appliedamt"] = 18,
+									},
+									[200953] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 4,
+										["refreshamt"] = 7,
+										["id"] = 200953,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
+									},
+									[200977] = {
+										["counter"] = 0,
+										["activedamt"] = 5,
+										["appliedamt"] = 5,
+										["id"] = 200977,
+										["uptime"] = 25,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[242583] = {
+										["counter"] = 0,
+										["activedamt"] = 8,
+										["appliedamt"] = 8,
+										["id"] = 242583,
+										["uptime"] = 86,
+										["targets"] = {
+										},
+										["refreshamt"] = 1,
+									},
+									[200954] = {
+										["counter"] = 0,
+										["activedamt"] = 11,
+										["appliedamt"] = 11,
+										["id"] = 200954,
+										["uptime"] = 62,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[186401] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 186401,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[200876] = {
+										["counter"] = 0,
+										["activedamt"] = 13,
+										["appliedamt"] = 13,
+										["id"] = 200876,
+										["uptime"] = 51,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[206333] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 206333,
+										["uptime"] = 42,
+										["targets"] = {
+										},
+										["refreshamt"] = 3,
+									},
+									[1719] = {
+										["counter"] = 0,
+										["activedamt"] = 5,
+										["appliedamt"] = 5,
+										["id"] = 1719,
+										["uptime"] = 25,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[200986] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 200986,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[201009] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 9,
+										["id"] = 201009,
+										["uptime"] = 23,
+										["targets"] = {
+										},
+										["appliedamt"] = 7,
+									},
+									[184362] = {
+										["counter"] = 0,
+										["activedamt"] = 13,
+										["appliedamt"] = 13,
+										["id"] = 184362,
+										["uptime"] = 51,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[85739] = {
+										["counter"] = 0,
+										["activedamt"] = 11,
+										["appliedamt"] = 11,
+										["id"] = 85739,
+										["uptime"] = 75,
+										["targets"] = {
+										},
+										["refreshamt"] = 36,
 									},
 									[252202] = {
-										["activedamt"] = 3,
+										["counter"] = 0,
+										["activedamt"] = 8,
+										["appliedamt"] = 8,
 										["id"] = 252202,
+										["uptime"] = 86,
 										["targets"] = {
 										},
-										["uptime"] = 27,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
+										["refreshamt"] = 1,
+									},
+									[2580] = {
 										["counter"] = 0,
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 2580,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["actived_at"] = 1522168769,
+									},
+									[109128] = {
+										["counter"] = 0,
+										["activedamt"] = 4,
+										["appliedamt"] = 4,
+										["id"] = 109128,
+										["uptime"] = 24,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[202225] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 202225,
+										["uptime"] = 34,
+										["targets"] = {
+										},
+										["refreshamt"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 101,
-							["boss_fight_component"] = true,
+							["fight_component"] = true,
+							["debuff_uptime"] = 159,
+							["cc_done"] = 2.016875,
 							["buff_uptime_targets"] = {
 							},
-							["spec"] = 65,
+							["spec"] = 72,
 							["grupo"] = true,
-							["spell_cast"] = {
-								[85222] = 1,
-								[105809] = 1,
-								[26573] = 7,
-								[200025] = 3,
-								[633] = 1,
-								[62124] = 1,
-								[35395] = 17,
-								[20473] = 12,
-								[31842] = 1,
-								[20271] = 7,
-								[19750] = 8,
-								[223306] = 1,
-								[498] = 1,
-								[200652] = 1,
-								[183998] = 1,
-							},
-							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[633] = {
-										["id"] = 633,
-										["targets"] = {
-											["Krixidk"] = 1,
-										},
-										["counter"] = 1,
-									},
-									[498] = {
-										["id"] = 498,
-										["targets"] = {
-											["Twobad-Antonidas"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
+							["cc_done_targets"] = {
+								["Barbed Spiderling"] = 2,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1519429200,
-							["nome"] = "Twobad-Antonidas",
+							["tipo"] = 4,
+							["last_event"] = 1522169018,
 							["pets"] = {
 							},
-							["serial"] = "Player-3686-060E6486",
-							["tipo"] = 4,
+							["nome"] = "Fattymcpaws-Ravencrest",
+							["serial"] = "Player-1329-063BC0D8",
+							["spell_cast"] = {
+								[96103] = 22,
+								[184367] = 10,
+								[23881] = 15,
+								[5308] = 13,
+								[184364] = 1,
+								[205545] = 5,
+								[44949] = 138,
+								[12292] = 6,
+								[199667] = 138,
+								[57755] = 2,
+								[205546] = 5,
+								[46924] = 2,
+								[1719] = 5,
+								[100] = 10,
+								[50622] = 14,
+								[190411] = 46,
+								[85288] = 22,
+								[205547] = 5,
+								[126664] = 10,
+								[100130] = 9,
+								[52174] = 3,
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[240606] = {
-										["activedamt"] = 2,
-										["id"] = 240606,
-										["targets"] = {
-										},
-										["uptime"] = 97,
-										["appliedamt"] = 2,
-										["refreshamt"] = 6,
-										["actived"] = false,
+									[253384] = {
 										["counter"] = 0,
-									},
-									[240607] = {
-										["activedamt"] = 2,
-										["id"] = 240607,
-										["targets"] = {
-										},
-										["uptime"] = 96,
-										["appliedamt"] = 2,
-										["refreshamt"] = 6,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[164812] = {
-										["activedamt"] = 2,
-										["id"] = 164812,
-										["targets"] = {
-										},
-										["uptime"] = 97,
-										["appliedamt"] = 2,
-										["refreshamt"] = 7,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[234143] = {
 										["activedamt"] = 0,
-										["id"] = 234143,
+										["appliedamt"] = 24,
+										["id"] = 253384,
+										["uptime"] = 87,
 										["targets"] = {
 										},
-										["uptime"] = 16,
+										["refreshamt"] = 96,
+									},
+									[57723] = {
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["activedamt"] = 0,
+										["uptime"] = 21,
+										["id"] = 57723,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["targets"] = {
+										},
+										["actived_at"] = 1522168718,
 									},
-									[197637] = {
+									[206151] = {
+										["counter"] = 0,
+										["uptime"] = 23,
+										["activedamt"] = 1,
+										["id"] = 206151,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[105771] = {
+										["counter"] = 0,
+										["uptime"] = 1,
 										["activedamt"] = 0,
-										["id"] = 197637,
-										["targets"] = {
-										},
-										["uptime"] = 37,
-										["appliedamt"] = 7,
+										["id"] = 105771,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[164815] = {
-										["activedamt"] = 2,
-										["id"] = 164815,
 										["targets"] = {
 										},
-										["uptime"] = 96,
+										["appliedamt"] = 1,
+									},
+									[213395] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
 										["appliedamt"] = 2,
-										["refreshamt"] = 7,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252921] = {
-										["activedamt"] = 0,
-										["id"] = 252921,
+										["id"] = 213395,
+										["uptime"] = 2,
 										["targets"] = {
 										},
-										["uptime"] = 33,
-										["appliedamt"] = 4,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[252907] = {
+									[193956] = {
+										["counter"] = 0,
+										["uptime"] = 4,
 										["activedamt"] = 0,
-										["id"] = 252907,
+										["id"] = 193956,
+										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 67,
-										["appliedamt"] = 4,
-										["refreshamt"] = 1,
-										["actived"] = false,
+										["appliedamt"] = 5,
+									},
+									[132168] = {
 										["counter"] = 0,
+										["uptime"] = 6,
+										["activedamt"] = 0,
+										["id"] = 132168,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 17,
+									},
+									[205546] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 22,
+										["id"] = 205546,
+										["uptime"] = 25,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
 									},
 								},
-							},
-							["cooldowns_defensive"] = 1.007437,
-							["buff_uptime"] = 1422,
-							["last_cooldown"] = {
-								1519429157.041, -- [1]
-								22812, -- [2]
-							},
-							["classe"] = "DRUID",
-							["cooldowns_defensive_targets"] = {
-								["Dâro-Antonidas"] = 1,
-							},
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 2506,
+							["cc_done_spells"] = {
 								["_ActorTable"] = {
-									[242232] = {
-										["activedamt"] = 4,
-										["id"] = 242232,
+									[132168] = {
+										["id"] = 132168,
 										["targets"] = {
+											["Barbed Spiderling"] = 12,
+											["Spirit of Vengeance"] = 4,
+											["Aranasi Broodmother"] = 1,
 										},
-										["uptime"] = 71,
-										["appliedamt"] = 4,
-										["refreshamt"] = 12,
-										["actived"] = false,
-										["counter"] = 0,
+										["counter"] = 17,
 									},
-									[209407] = {
-										["activedamt"] = 5,
-										["id"] = 209407,
+									[105771] = {
+										["id"] = 105771,
 										["targets"] = {
-										},
-										["uptime"] = 29,
-										["appliedamt"] = 5,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[24858] = {
-										["activedamt"] = 1,
-										["id"] = 24858,
-										["targets"] = {
-										},
-										["uptime"] = 91,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[253261] = {
-										["activedamt"] = 2,
-										["id"] = 253261,
-										["targets"] = {
-										},
-										["uptime"] = 48,
-										["appliedamt"] = 2,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[224001] = {
-										["activedamt"] = 1,
-										["id"] = 224001,
-										["targets"] = {
-										},
-										["uptime"] = 91,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[164547] = {
-										["activedamt"] = 2,
-										["id"] = 164547,
-										["targets"] = {
-										},
-										["uptime"] = 91,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[250146] = {
-										["activedamt"] = 1,
-										["id"] = 250146,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[242586] = {
-										["activedamt"] = 3,
-										["id"] = 242586,
-										["targets"] = {
-										},
-										["uptime"] = 35,
-										["appliedamt"] = 3,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8936] = {
-										["activedamt"] = 1,
-										["id"] = 8936,
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[229206] = {
-										["activedamt"] = 2,
-										["id"] = 229206,
-										["targets"] = {
-										},
-										["uptime"] = 91,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[157228] = {
-										["activedamt"] = 1,
-										["id"] = 157228,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[186403] = {
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[22812] = {
-										["activedamt"] = 1,
-										["id"] = 22812,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[239952] = {
-										["activedamt"] = 1,
-										["id"] = 239952,
-										["targets"] = {
-										},
-										["uptime"] = 91,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[188031] = {
-										["activedamt"] = 1,
-										["id"] = 188031,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[102560] = {
-										["activedamt"] = 1,
-										["id"] = 102560,
-										["targets"] = {
-										},
-										["uptime"] = 30,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[256828] = {
-										["activedamt"] = 3,
-										["id"] = 256828,
-										["targets"] = {
-										},
-										["uptime"] = 28,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[164545] = {
-										["activedamt"] = 7,
-										["id"] = 164545,
-										["targets"] = {
-										},
-										["uptime"] = 66,
-										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[209406] = {
-										["activedamt"] = 2,
-										["id"] = 209406,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[202942] = {
-										["activedamt"] = 1,
-										["id"] = 202942,
-										["targets"] = {
-										},
-										["uptime"] = 29,
-										["appliedamt"] = 1,
-										["refreshamt"] = 27,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[202461] = {
-										["activedamt"] = 6,
-										["id"] = 202461,
-										["targets"] = {
-										},
-										["uptime"] = 28,
-										["appliedamt"] = 6,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[191034] = {
-										["activedamt"] = 5,
-										["id"] = 191034,
-										["targets"] = {
-										},
-										["uptime"] = 33,
-										["appliedamt"] = 5,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[225604] = {
-										["activedamt"] = 1,
-										["id"] = 225604,
-										["targets"] = {
-										},
-										["uptime"] = 91,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[253260] = {
-										["activedamt"] = 2,
-										["id"] = 253260,
-										["targets"] = {
-										},
-										["uptime"] = 13,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[255744] = {
-										["activedamt"] = 3,
-										["id"] = 255744,
-										["targets"] = {
-										},
-										["uptime"] = 72,
-										["appliedamt"] = 3,
-										["refreshamt"] = 5,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[255742] = {
-										["activedamt"] = 3,
-										["id"] = 255742,
-										["targets"] = {
-										},
-										["uptime"] = 60,
-										["appliedamt"] = 3,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["debuff_uptime"] = 539,
-							["boss_fight_component"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 102,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[93402] = 9,
-								[191034] = 5,
-								[78674] = 17,
-								[202768] = 2,
-								[22812] = 1,
-								[190984] = 17,
-								[229206] = 1,
-								[194153] = 11,
-								[6262] = 1,
-								[202767] = 2,
-								[8936] = 2,
-								[202771] = 2,
-								[8921] = 9,
-								[234142] = 2,
-								[102560] = 1,
-							},
-							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[22812] = {
-										["id"] = 22812,
-										["targets"] = {
-											["Dâro-Antonidas"] = 1,
+											["Grimhorn the Enslaver"] = 1,
 										},
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 9,
+							},
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[186401] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 186401,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[167898] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 167898,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["actived_at"] = 1522168769,
+									},
+									[200979] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 200979,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[256826] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 256826,
+										["uptime"] = 58,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[224001] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 224001,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[253307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 9,
+										["refreshamt"] = 4,
+										["id"] = 253307,
+										["uptime"] = 100,
+										["targets"] = {
+										},
+										["appliedamt"] = 9,
+									},
+									[206316] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 9,
+										["refreshamt"] = 16,
+										["id"] = 206316,
+										["uptime"] = 36,
+										["targets"] = {
+										},
+										["appliedamt"] = 9,
+									},
+									[253308] = {
+										["counter"] = 0,
+										["activedamt"] = 9,
+										["appliedamt"] = 9,
+										["id"] = 253308,
+										["uptime"] = 116,
+										["targets"] = {
+										},
+										["refreshamt"] = 4,
+									},
+									[200953] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 3,
+										["refreshamt"] = 7,
+										["id"] = 200953,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[215572] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 215572,
+										["uptime"] = 63,
+										["targets"] = {
+										},
+										["refreshamt"] = 1,
+									},
+									[188034] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 188034,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[200954] = {
+										["counter"] = 0,
+										["activedamt"] = 17,
+										["appliedamt"] = 17,
+										["id"] = 200954,
+										["uptime"] = 119,
+										["targets"] = {
+										},
+										["refreshamt"] = 15,
+									},
+									[200876] = {
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["activedamt"] = 31,
+										["uptime"] = 102,
+										["id"] = 200876,
+										["appliedamt"] = 31,
+										["targets"] = {
+										},
+										["actived_at"] = 1522168863,
+									},
+									[85739] = {
+										["counter"] = 0,
+										["activedamt"] = 11,
+										["appliedamt"] = 11,
+										["id"] = 85739,
+										["uptime"] = 34,
+										["targets"] = {
+										},
+										["refreshamt"] = 6,
+									},
+									[107574] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 107574,
+										["uptime"] = 39,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[242583] = {
+										["counter"] = 0,
+										["activedamt"] = 9,
+										["appliedamt"] = 9,
+										["id"] = 242583,
+										["uptime"] = 101,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[109128] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 109128,
+										["uptime"] = 18,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[1719] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 1719,
+										["uptime"] = 42,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[207472] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 207472,
+										["uptime"] = 189,
+										["targets"] = {
+										},
+										["refreshamt"] = 6,
+									},
+									[201009] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 8,
+										["refreshamt"] = 10,
+										["id"] = 201009,
+										["uptime"] = 33,
+										["targets"] = {
+										},
+										["appliedamt"] = 8,
+									},
+									[206333] = {
+										["counter"] = 0,
+										["activedamt"] = 7,
+										["appliedamt"] = 7,
+										["id"] = 206333,
+										["uptime"] = 32,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[227723] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 227723,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[184362] = {
+										["counter"] = 0,
+										["activedamt"] = 31,
+										["appliedamt"] = 31,
+										["id"] = 184362,
+										["uptime"] = 106,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[256374] = {
+										["counter"] = 0,
+										["activedamt"] = 5,
+										["appliedamt"] = 5,
+										["id"] = 256374,
+										["uptime"] = 56,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[200986] = {
+										["counter"] = 0,
+										["activedamt"] = 7,
+										["appliedamt"] = 7,
+										["id"] = 200986,
+										["uptime"] = 35,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[252202] = {
+										["counter"] = 0,
+										["activedamt"] = 9,
+										["appliedamt"] = 9,
+										["id"] = 252202,
+										["uptime"] = 100,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[200977] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 200977,
+										["uptime"] = 42,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[202164] = {
+										["counter"] = 0,
+										["uptime"] = 10,
+										["activedamt"] = 3,
+										["id"] = 202164,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[253385] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 253385,
+										["uptime"] = 48,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 169,
+							["cc_done"] = 18.024166,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
+							["grupo"] = true,
+							["cc_done_targets"] = {
+								["Barbed Spiderling"] = 12,
+								["Spirit of Vengeance"] = 4,
+								["Grimhorn the Enslaver"] = 1,
+								["Aranasi Broodmother"] = 1,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1519429200,
-							["nome"] = "Dâro-Antonidas",
+							["tipo"] = 4,
+							["last_event"] = 1522169018,
 							["pets"] = {
 							},
-							["serial"] = "Player-3686-05ACAE90",
-							["tipo"] = 4,
+							["nome"] = "Cocanub-Ravencrest",
+							["serial"] = "Player-1329-04192918",
+							["spell_cast"] = {
+								[96103] = 27,
+								[184367] = 17,
+								[23881] = 31,
+								[5308] = 15,
+								[205545] = 6,
+								[44949] = 48,
+								[126664] = 3,
+								[199667] = 48,
+								[57755] = 1,
+								[107574] = 2,
+								[205546] = 6,
+								[1719] = 6,
+								[100] = 4,
+								[190411] = 16,
+								[100130] = 7,
+								[205547] = 6,
+								[85288] = 27,
+								[52174] = 3,
+								[46968] = 2,
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[115804] = {
-										["activedamt"] = 2,
-										["id"] = 115804,
-										["targets"] = {
-										},
-										["uptime"] = 68,
-										["appliedamt"] = 8,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									[204242] = {
 										["counter"] = 0,
-									},
-									[115080] = {
+										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = 115080,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 204242,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252907] = {
-										["activedamt"] = 2,
-										["id"] = 252907,
 										["targets"] = {
 										},
-										["uptime"] = 96,
-										["appliedamt"] = 4,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[122470] = {
-										["activedamt"] = 1,
-										["id"] = 122470,
-										["targets"] = {
-										},
-										["uptime"] = 3,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[117952] = {
+									[57723] = {
+										["counter"] = 0,
+										["refreshamt"] = 0,
 										["activedamt"] = 0,
-										["id"] = 117952,
+										["uptime"] = 21,
+										["id"] = 57723,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["actived_at"] = 1522168718,
+									},
+									[211426] = {
+										["counter"] = 0,
+										["uptime"] = 30,
+										["activedamt"] = 0,
+										["id"] = 211426,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[853] = {
+										["counter"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["id"] = 853,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
-									[124280] = {
+									[214222] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 9,
+										["id"] = 214222,
+										["uptime"] = 41,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[206151] = {
+										["counter"] = 0,
+										["uptime"] = 23,
 										["activedamt"] = 1,
-										["id"] = 124280,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 206151,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[228287] = {
-										["activedamt"] = 2,
-										["id"] = 228287,
 										["targets"] = {
 										},
-										["uptime"] = 98,
-										["appliedamt"] = 3,
-										["refreshamt"] = 90,
-										["actived"] = false,
+										["appliedamt"] = 1,
+									},
+									[25771] = {
 										["counter"] = 0,
+										["uptime"] = 20,
+										["activedamt"] = 1,
+										["id"] = 25771,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
-							},
-							["cooldowns_defensive"] = 1.004033,
-							["buff_uptime"] = 1696,
-							["last_cooldown"] = {
-								1519429198.567, -- [1]
-								122470, -- [2]
-							},
-							["classe"] = "MONK",
-							["cooldowns_defensive_targets"] = {
-								["Knucklex-Antonidas"] = 1,
-							},
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
-								["_ActorTable"] = {
-									[242387] = {
-										["activedamt"] = 3,
-										["id"] = 242387,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 3,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[253307] = {
-										["activedamt"] = 2,
-										["id"] = 253307,
-										["targets"] = {
-										},
-										["uptime"] = 43,
-										["appliedamt"] = 2,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[188033] = {
-										["activedamt"] = 1,
-										["id"] = 188033,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[185736] = {
-										["activedamt"] = 1,
-										["id"] = 185736,
-										["targets"] = {
-										},
-										["uptime"] = 98,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[190831] = {
-										["activedamt"] = 1,
-										["id"] = 190831,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[137639] = {
-										["activedamt"] = 3,
-										["id"] = 137639,
-										["targets"] = {
-										},
-										["uptime"] = 45,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[101546] = {
-										["activedamt"] = 1,
-										["id"] = 101546,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[253308] = {
-										["activedamt"] = 3,
-										["id"] = 253308,
-										["targets"] = {
-										},
-										["uptime"] = 59,
-										["appliedamt"] = 3,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[116841] = {
-										["activedamt"] = 1,
-										["id"] = 116841,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[72968] = {
-										["activedamt"] = 1,
-										["id"] = 72968,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[240672] = {
-										["activedamt"] = 6,
-										["id"] = 240672,
-										["targets"] = {
-										},
-										["uptime"] = 36,
-										["appliedamt"] = 6,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[229206] = {
-										["activedamt"] = 1,
-										["id"] = 229206,
-										["targets"] = {
-										},
-										["uptime"] = 60,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[152175] = {
-										["activedamt"] = 3,
-										["id"] = 152175,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[186403] = {
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[242584] = {
-										["activedamt"] = 2,
-										["id"] = 242584,
-										["targets"] = {
-										},
-										["uptime"] = 13,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252202] = {
-										["activedamt"] = 2,
-										["id"] = 252202,
-										["targets"] = {
-										},
-										["uptime"] = 13,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[235054] = {
-										["activedamt"] = 2,
-										["id"] = 235054,
-										["targets"] = {
-										},
-										["uptime"] = 96,
-										["appliedamt"] = 2,
-										["refreshamt"] = 33,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[113656] = {
-										["activedamt"] = 4,
-										["id"] = 113656,
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[116768] = {
-										["activedamt"] = 6,
-										["id"] = 116768,
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 6,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[224001] = {
-										["activedamt"] = 1,
-										["id"] = 224001,
-										["targets"] = {
-										},
-										["uptime"] = 98,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227723] = {
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[166646] = {
-										["activedamt"] = 1,
-										["id"] = 166646,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[122470] = {
-										["activedamt"] = 1,
-										["id"] = 122470,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[250148] = {
-										["activedamt"] = 1,
-										["id"] = 250148,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[101643] = {
-										["activedamt"] = 1,
-										["id"] = 101643,
-										["targets"] = {
-										},
-										["uptime"] = 98,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[256821] = {
-										["activedamt"] = 2,
-										["id"] = 256821,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[195321] = {
-										["activedamt"] = 5,
-										["id"] = 195321,
-										["targets"] = {
-										},
-										["uptime"] = 77,
-										["appliedamt"] = 5,
-										["refreshamt"] = 24,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[196741] = {
-										["activedamt"] = 1,
-										["id"] = 196741,
-										["targets"] = {
-										},
-										["uptime"] = 98,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[240989] = {
-										["activedamt"] = 1,
-										["id"] = 240989,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
 							},
-							["debuff_uptime"] = 278,
-							["boss_fight_component"] = true,
+							["ress_targets"] = {
+								["Fattymcpaws-Ravencrest"] = 1,
+							},
+							["cooldowns_defensive"] = 4.015551,
+							["buff_uptime"] = 2175,
 							["buff_uptime_targets"] = {
 							},
-							["spec"] = 269,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[100784] = 20,
-								[107428] = 8,
-								[137639] = 3,
-								[205320] = 3,
-								[229206] = 1,
-								[152175] = 3,
-								[116841] = 1,
-								[115080] = 1,
-								[113656] = 4,
-								[109132] = 1,
-								[221771] = 1,
-								[122470] = 1,
-								[115288] = 1,
-								[115098] = 4,
-								[117952] = 1,
-								[100780] = 21,
-								[101546] = 1,
-							},
-							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
+							["cc_done_spells"] = {
 								["_ActorTable"] = {
-									[122470] = {
-										["id"] = 122470,
+									[853] = {
+										["id"] = 853,
 										["targets"] = {
-											["Knucklex-Antonidas"] = 1,
+											["Barbed Spiderling"] = 1,
 										},
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
+							["classe"] = "PALADIN",
+							["cooldowns_defensive_targets"] = {
+								["Derinian-Ravencrest"] = 1,
+								["[*] raid wide cooldown"] = 1,
+								["Fattymcpaws-Ravencrest"] = 1,
+								["Krixidk"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[186401] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 186401,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[211422] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 211422,
+										["uptime"] = 35,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[243174] = {
+										["counter"] = 0,
+										["activedamt"] = 16,
+										["appliedamt"] = 16,
+										["id"] = 243174,
+										["uptime"] = 91,
+										["targets"] = {
+										},
+										["refreshamt"] = 12,
+									},
+									[200654] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 4,
+										["refreshamt"] = 7,
+										["id"] = 200654,
+										["uptime"] = 24,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
+									},
+									[254474] = {
+										["counter"] = 0,
+										["uptime"] = 3,
+										["activedamt"] = 1,
+										["id"] = 254474,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[242551] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 242551,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[211210] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 3,
+										["refreshamt"] = 0,
+										["id"] = 211210,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[242586] = {
+										["counter"] = 0,
+										["activedamt"] = 11,
+										["appliedamt"] = 11,
+										["id"] = 242586,
+										["uptime"] = 96,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[31821] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 3,
+										["refreshamt"] = 0,
+										["id"] = 31821,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[253072] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 253072,
+										["uptime"] = 35,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[200376] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 200376,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[200657] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 200657,
+										["uptime"] = 28,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[216411] = {
+										["counter"] = 0,
+										["uptime"] = 1,
+										["activedamt"] = 1,
+										["id"] = 216411,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[227723] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 227723,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[200423] = {
+										["counter"] = 0,
+										["uptime"] = 2,
+										["activedamt"] = 1,
+										["id"] = 200423,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[252202] = {
+										["counter"] = 0,
+										["activedamt"] = 11,
+										["appliedamt"] = 11,
+										["id"] = 252202,
+										["uptime"] = 96,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[210320] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 210320,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[200652] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 200652,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[200656] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 200656,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[31842] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 3,
+										["refreshamt"] = 0,
+										["id"] = 31842,
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[256824] = {
+										["counter"] = 0,
+										["appliedamt"] = 6,
+										["activedamt"] = 6,
+										["actived_at"] = 3044337732,
+										["id"] = 256824,
+										["uptime"] = 57,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[54149] = {
+										["counter"] = 0,
+										["activedamt"] = 9,
+										["appliedamt"] = 9,
+										["id"] = 54149,
+										["uptime"] = 86,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[185736] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 185736,
+										["uptime"] = 253,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[200025] = {
+										["counter"] = 0,
+										["uptime"] = 16,
+										["activedamt"] = 2,
+										["id"] = 200025,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[253287] = {
+										["counter"] = 0,
+										["activedamt"] = 8,
+										["appliedamt"] = 8,
+										["id"] = 253287,
+										["uptime"] = 231,
+										["targets"] = {
+										},
+										["refreshamt"] = 9,
+									},
+									[6940] = {
+										["counter"] = 0,
+										["uptime"] = 18,
+										["activedamt"] = 1,
+										["id"] = 6940,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[1044] = {
+										["counter"] = 0,
+										["uptime"] = 12,
+										["activedamt"] = 1,
+										["id"] = 1044,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[216413] = {
+										["counter"] = 0,
+										["uptime"] = 6,
+										["activedamt"] = 5,
+										["id"] = 216413,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Derinian-Ravencrest",
+							["fight_component"] = true,
+							["debuff_uptime"] = 138,
+							["serial"] = "Player-1329-0637D101",
+							["cc_done"] = 1.01224,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1519429200,
-							["nome"] = "Knucklex-Antonidas",
+							["spec"] = 65,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[85222] = 18,
+								[190784] = 1,
+								[1022] = 1,
+								[20271] = 9,
+								[20473] = 17,
+								[853] = 1,
+								[82326] = 3,
+								[31821] = 1,
+								[7328] = 1,
+								[19750] = 7,
+								[200652] = 2,
+								[31842] = 1,
+								[26573] = 6,
+								[35395] = 10,
+								[183998] = 20,
+								[6940] = 1,
+								[200025] = 2,
+								[1044] = 2,
+								[223306] = 1,
+							},
+							["tipo"] = 4,
+							["ress_spells"] = {
+								["_ActorTable"] = {
+									[7328] = {
+										["id"] = 7328,
+										["ress"] = 1,
+										["targets"] = {
+											["Fattymcpaws-Ravencrest"] = 1,
+										},
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["last_event"] = 1522169018,
+							["cc_done_targets"] = {
+								["Barbed Spiderling"] = 1,
+							},
+							["ress"] = 1.004719,
+							["cooldowns_defensive_spells"] = {
+								["_ActorTable"] = {
+									[6940] = {
+										["id"] = 6940,
+										["targets"] = {
+											["Derinian-Ravencrest"] = 1,
+											["Krixidk"] = 1,
+										},
+										["counter"] = 2,
+									},
+									[31821] = {
+										["id"] = 31821,
+										["targets"] = {
+											["[*] raid wide cooldown"] = 1,
+										},
+										["counter"] = 1,
+									},
+									[1022] = {
+										["id"] = 1022,
+										["targets"] = {
+											["Fattymcpaws-Ravencrest"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
 							["pets"] = {
 							},
-							["serial"] = "Player-3686-062B271B",
-							["tipo"] = 4,
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[233497] = {
-										["activedamt"] = 1,
-										["id"] = 233497,
+									[233490] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 18,
+										["id"] = 233490,
+										["uptime"] = 90,
 										["targets"] = {
 										},
-										["uptime"] = 19,
-										["appliedamt"] = 3,
+										["refreshamt"] = 1,
+									},
+									[27243] = {
+										["counter"] = 0,
+										["uptime"] = 18,
+										["activedamt"] = 0,
+										["id"] = 27243,
 										["refreshamt"] = 0,
-										["actived"] = false,
+										["targets"] = {
+										},
+										["appliedamt"] = 72,
+									},
+									[233498] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 5,
+										["id"] = 233498,
+										["uptime"] = 29,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[213395] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 213395,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[233499] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 3,
+										["id"] = 233499,
+										["uptime"] = 17,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[57723] = {
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["activedamt"] = 0,
+										["uptime"] = 21,
+										["id"] = 57723,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["actived_at"] = 1522168718,
+									},
+									[198590] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 23,
+										["id"] = 198590,
+										["uptime"] = 51,
+										["targets"] = {
+										},
+										["refreshamt"] = 3,
+									},
+									[5484] = {
+										["counter"] = 0,
+										["uptime"] = 1,
+										["activedamt"] = 0,
+										["id"] = 5484,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
+									},
+									[146739] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 25,
+										["id"] = 146739,
+										["uptime"] = 215,
+										["targets"] = {
+										},
+										["refreshamt"] = 538,
+									},
+									[193956] = {
+										["counter"] = 0,
+										["uptime"] = 3,
+										["activedamt"] = 0,
+										["id"] = 193956,
+										["refreshamt"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
+									},
+									[217551] = {
+										["counter"] = 0,
+										["appliedamt"] = 0,
+										["activedamt"] = -1,
+										["actived_at"] = 1522168963,
+										["id"] = 217551,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[233497] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 9,
+										["id"] = 233497,
+										["uptime"] = 43,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[252938] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 19,
+										["id"] = 252938,
+										["uptime"] = 171,
+										["targets"] = {
+										},
+										["refreshamt"] = 101,
+									},
+									[118699] = {
+										["counter"] = 0,
+										["uptime"] = 2,
+										["activedamt"] = 0,
+										["id"] = 118699,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[233496] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 15,
+										["id"] = 233496,
+										["uptime"] = 85,
+										["targets"] = {
+										},
+										["refreshamt"] = 1,
+									},
+									[980] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 16,
+										["id"] = 980,
+										["uptime"] = 238,
+										["targets"] = {
+										},
+										["refreshamt"] = 122,
+									},
+									[710] = {
+										["counter"] = 0,
+										["activedamt"] = -1,
+										["uptime"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 710,
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["actived_at"] = 1522168715,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+								"Rokuthec <Senflol-Antonidas> <Senflol-Antonidas>", -- [1]
+							},
+							["cc_break_spells"] = {
+								["_ActorTable"] = {
+									[980] = {
+										["cc_break_oque"] = {
+											[118699] = 1,
+										},
+										["id"] = 980,
+										["targets"] = {
+											["Barbed Spiderling"] = 1,
+										},
+										["cc_break"] = 1,
 										["counter"] = 0,
 									},
 									[146739] = {
-										["activedamt"] = 2,
+										["cc_break_oque"] = {
+											[118699] = 1,
+										},
 										["id"] = 146739,
 										["targets"] = {
+											["Spirit of Vengeance"] = 1,
 										},
-										["uptime"] = 96,
-										["appliedamt"] = 2,
-										["refreshamt"] = 7,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[233490] = {
-										["activedamt"] = 2,
-										["id"] = 233490,
-										["targets"] = {
-										},
-										["uptime"] = 73,
-										["appliedamt"] = 8,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[980] = {
-										["activedamt"] = 1,
-										["id"] = 980,
-										["targets"] = {
-										},
-										["uptime"] = 97,
-										["appliedamt"] = 2,
-										["refreshamt"] = 20,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[233496] = {
-										["activedamt"] = 1,
-										["id"] = 233496,
-										["targets"] = {
-										},
-										["uptime"] = 40,
-										["appliedamt"] = 6,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252938] = {
-										["activedamt"] = 2,
-										["id"] = 252938,
-										["targets"] = {
-										},
-										["uptime"] = 80,
-										["appliedamt"] = 6,
-										["refreshamt"] = 13,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[233499] = {
-										["activedamt"] = 0,
-										["id"] = 233499,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[233498] = {
-										["activedamt"] = 0,
-										["id"] = 233498,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[198590] = {
-										["activedamt"] = 0,
-										["id"] = 198590,
-										["targets"] = {
-										},
-										["uptime"] = 24,
-										["appliedamt"] = 16,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252907] = {
-										["activedamt"] = 0,
-										["id"] = 252907,
-										["targets"] = {
-										},
-										["uptime"] = 82,
-										["appliedamt"] = 2,
-										["refreshamt"] = 2,
-										["actived"] = false,
+										["cc_break"] = 1,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["cooldowns_defensive"] = 1.001566,
-							["buff_uptime"] = 1194,
-							["last_cooldown"] = {
-								1519429196.826, -- [1]
-								104773, -- [2]
+							["cc_done_spells"] = {
+								["_ActorTable"] = {
+									[118699] = {
+										["id"] = 118699,
+										["targets"] = {
+											["Barbed Spiderling"] = 1,
+											["Spirit of Vengeance"] = 1,
+										},
+										["counter"] = 2,
+									},
+									[5484] = {
+										["id"] = 5484,
+										["targets"] = {
+											["Barbed Spiderling"] = 4,
+										},
+										["counter"] = 4,
+									},
+								},
+								["tipo"] = 9,
 							},
 							["classe"] = "WARLOCK",
-							["cooldowns_defensive_targets"] = {
-								["Senflol-Antonidas"] = 1,
+							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[216708] = {
-										["activedamt"] = 3,
-										["id"] = 216708,
+									[186401] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 186401,
+										["uptime"] = 262,
 										["targets"] = {
 										},
-										["uptime"] = 70,
-										["appliedamt"] = 3,
-										["refreshamt"] = 5,
-										["actived"] = false,
+										["appliedamt"] = 6,
+									},
+									[199646] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 8,
+										["refreshamt"] = 8,
+										["id"] = 199646,
+										["uptime"] = 89,
+										["targets"] = {
+										},
+										["appliedamt"] = 8,
+									},
+									[237137] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 237137,
+										["uptime"] = 262,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
 									},
 									[253261] = {
-										["activedamt"] = 4,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 4,
 										["id"] = 253261,
+										["uptime"] = 127,
 										["targets"] = {
 										},
-										["uptime"] = 63,
-										["appliedamt"] = 4,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 6,
 									},
 									[224001] = {
-										["activedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
 										["id"] = 224001,
+										["uptime"] = 262,
 										["targets"] = {
 										},
-										["uptime"] = 95,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 6,
+									},
+									[111400] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 5,
+										["refreshamt"] = 0,
+										["id"] = 111400,
+										["uptime"] = 147,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
 									},
 									[108366] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 12,
+										["refreshamt"] = 0,
 										["id"] = 108366,
+										["uptime"] = 235,
 										["targets"] = {
 										},
-										["uptime"] = 84,
 										["appliedamt"] = 12,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[242586] = {
-										["activedamt"] = 2,
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
 										["id"] = 242586,
+										["uptime"] = 116,
 										["targets"] = {
 										},
-										["uptime"] = 43,
-										["appliedamt"] = 2,
 										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[185736] = {
-										["activedamt"] = 1,
-										["id"] = 185736,
-										["targets"] = {
-										},
-										["uptime"] = 95,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									[178207] = {
 										["counter"] = 0,
-									},
-									[229206] = {
-										["activedamt"] = 1,
-										["id"] = 229206,
-										["targets"] = {
-										},
-										["uptime"] = 60,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
 										["actived"] = false,
-										["counter"] = 0,
-									},
-									[186403] = {
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[104773] = {
-										["activedamt"] = 1,
-										["id"] = 104773,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[188031] = {
-										["activedamt"] = 1,
-										["id"] = 188031,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[207472] = {
 										["activedamt"] = 3,
-										["id"] = 207472,
+										["refreshamt"] = 0,
+										["id"] = 178207,
+										["uptime"] = 21,
 										["targets"] = {
 										},
-										["uptime"] = 44,
 										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[256828] = {
-										["activedamt"] = 1,
-										["id"] = 256828,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[228461] = {
-										["activedamt"] = 1,
-										["id"] = 228461,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[235156] = {
-										["activedamt"] = 2,
-										["id"] = 235156,
-										["targets"] = {
-										},
-										["uptime"] = 60,
-										["appliedamt"] = 2,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[216695] = {
-										["activedamt"] = 8,
-										["id"] = 216695,
-										["targets"] = {
-										},
-										["uptime"] = 60,
-										["appliedamt"] = 8,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[255742] = {
-										["activedamt"] = 3,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 5,
+										["refreshamt"] = 4,
 										["id"] = 255742,
+										["uptime"] = 79,
 										["targets"] = {
 										},
-										["uptime"] = 63,
-										["appliedamt"] = 3,
-										["refreshamt"] = 5,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 5,
 									},
-									[199281] = {
-										["activedamt"] = 9,
-										["id"] = 199281,
+									[208052] = {
+										["counter"] = 0,
+										["uptime"] = 39,
+										["activedamt"] = 4,
+										["id"] = 208052,
+										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 26,
-										["appliedamt"] = 9,
-										["refreshamt"] = 5,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 4,
 									},
-									[252202] = {
-										["activedamt"] = 2,
-										["id"] = 252202,
+									[190909] = {
+										["counter"] = 0,
+										["uptime"] = 36,
+										["activedamt"] = 4,
+										["id"] = 190909,
+										["refreshamt"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 43,
-										["appliedamt"] = 2,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 4,
 									},
 									[253260] = {
-										["activedamt"] = 2,
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
 										["id"] = 253260,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["uptime"] = 24,
-										["appliedamt"] = 2,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[255744] = {
-										["activedamt"] = 4,
-										["id"] = 255744,
+									[225603] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 225603,
+										["uptime"] = 262,
 										["targets"] = {
 										},
-										["uptime"] = 43,
-										["appliedamt"] = 4,
-										["refreshamt"] = 1,
-										["actived"] = false,
+										["appliedamt"] = 6,
+									},
+									[188031] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 188031,
+										["uptime"] = 262,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[207472] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 207472,
+										["uptime"] = 98,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[256828] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 8,
+										["refreshamt"] = 3,
+										["id"] = 256828,
+										["uptime"] = 87,
+										["targets"] = {
+										},
+										["appliedamt"] = 8,
+									},
+									[216708] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 216708,
+										["uptime"] = 178,
+										["targets"] = {
+										},
+										["refreshamt"] = 7,
+									},
+									[228461] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 228461,
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[216695] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 18,
+										["refreshamt"] = 37,
+										["id"] = 216695,
+										["uptime"] = 103,
+										["targets"] = {
+										},
+										["appliedamt"] = 18,
 									},
 									[250146] = {
-										["activedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
 										["id"] = 250146,
+										["uptime"] = 262,
 										["targets"] = {
 										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 6,
+									},
+									[199281] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 21,
+										["refreshamt"] = 18,
+										["id"] = 199281,
+										["uptime"] = 88,
+										["targets"] = {
+										},
+										["appliedamt"] = 21,
+									},
+									[252202] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 252202,
+										["uptime"] = 116,
+										["targets"] = {
+										},
+										["refreshamt"] = 3,
+									},
+									[235156] = {
+										["counter"] = 0,
+										["activedamt"] = 4,
+										["appliedamt"] = 4,
+										["id"] = 235156,
+										["uptime"] = 83,
+										["targets"] = {
+										},
+										["refreshamt"] = 1,
+									},
+									[255744] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 4,
+										["id"] = 255744,
+										["uptime"] = 81,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[196098] = {
+										["counter"] = 0,
+										["uptime"] = 32,
+										["activedamt"] = 3,
+										["id"] = 196098,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 527,
-							["boss_fight_component"] = true,
+							["nome"] = "Senflol-Antonidas",
+							["fight_component"] = true,
+							["debuff_uptime"] = 986,
+							["grupo"] = true,
+							["cc_done"] = 6.021283,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 265,
-							["grupo"] = true,
+							["cc_break"] = 2.004241,
 							["spell_cast"] = {
-								[104773] = 1,
+								[178207] = 1,
+								[255724] = 1,
 								[228461] = 1,
-								[980] = 9,
-								[229206] = 1,
-								[216698] = 8,
-								[172] = 9,
-								[30108] = 18,
-								[198590] = 16,
+								[157898] = 1,
+								[111400] = 2,
+								[171152] = 1,
+								[5782] = 2,
+								[216698] = 12,
+								[172] = 14,
+								[30108] = 48,
 								[1454] = 3,
+								[5484] = 1,
+								[204481] = 1,
+								[27243] = 24,
+								[198590] = 26,
+								[980] = 29,
 							},
-							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[104773] = {
-										["id"] = 104773,
-										["targets"] = {
-											["Senflol-Antonidas"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
+							["cc_break_oque"] = {
+								[118699] = 2,
 							},
-							["debuff_uptime_targets"] = {
+							["tipo"] = 4,
+							["last_event"] = 1522169018,
+							["cc_done_targets"] = {
+								["Barbed Spiderling"] = 5,
+								["Spirit of Vengeance"] = 1,
 							},
-							["last_event"] = 1519429200,
-							["nome"] = "Senflol-Antonidas",
-							["pets"] = {
-								"Rokuthec <Senflol-Antonidas>", -- [1]
+							["cc_break_targets"] = {
+								["Barbed Spiderling"] = 1,
+								["Spirit of Vengeance"] = 1,
 							},
 							["serial"] = "Player-3686-05B7AF0E",
-							["tipo"] = 4,
+							["buff_uptime"] = 3351,
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[206931] = {
+									[251940] = {
+										["counter"] = 0,
+										["uptime"] = 13,
 										["activedamt"] = 0,
-										["id"] = 206931,
+										["id"] = 251940,
+										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 6,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 14,
 									},
-									[43265] = {
+									[113942] = {
+										["counter"] = 0,
+										["appliedamt"] = 0,
 										["activedamt"] = -1,
-										["id"] = 43265,
+										["actived_at"] = 1522168965,
+										["id"] = 113942,
+										["uptime"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 89,
-										["appliedamt"] = 4,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[116888] = {
-										["activedamt"] = 0,
-										["id"] = 116888,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55078] = {
-										["activedamt"] = 2,
-										["id"] = 55078,
-										["targets"] = {
-										},
-										["uptime"] = 94,
-										["appliedamt"] = 2,
-										["refreshamt"] = 10,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[123981] = {
-										["activedamt"] = 0,
-										["id"] = 123981,
-										["targets"] = {
-										},
-										["uptime"] = 59,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[56222] = {
+										["counter"] = 0,
 										["activedamt"] = 0,
+										["appliedamt"] = 4,
 										["id"] = 56222,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[252921] = {
 										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 10,
+										["id"] = 252921,
+										["uptime"] = 61,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[57723] = {
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["activedamt"] = 0,
+										["uptime"] = 21,
+										["id"] = 57723,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["actived_at"] = 1522168718,
+									},
+									[206931] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 5,
+										["id"] = 206931,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[221562] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 3,
+										["id"] = 221562,
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[143375] = {
+										["counter"] = 0,
+										["uptime"] = 91,
+										["activedamt"] = -13,
+										["id"] = 143375,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 15,
+									},
+									[43265] = {
+										["counter"] = 0,
+										["activedamt"] = -1,
+										["appliedamt"] = 10,
+										["id"] = 43265,
+										["uptime"] = 208,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[55078] = {
+										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 27,
+										["id"] = 55078,
+										["uptime"] = 211,
+										["targets"] = {
+										},
+										["refreshamt"] = 83,
+									},
+									[206930] = {
+										["counter"] = 0,
+										["uptime"] = 42,
+										["activedamt"] = 0,
+										["id"] = 206930,
+										["refreshamt"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 15,
+									},
+									[51399] = {
+										["counter"] = 0,
+										["uptime"] = 16,
+										["activedamt"] = 0,
+										["id"] = 51399,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["cooldowns_defensive"] = 2.005953,
-							["buff_uptime"] = 1130,
-							["last_cooldown"] = {
-								1519429157.616, -- [1]
-								55233, -- [2]
+							["cooldowns_defensive"] = 6.026917,
+							["buff_uptime"] = 3132,
+							["pets"] = {
 							},
+							["tipo"] = 4,
 							["classe"] = "DEATHKNIGHT",
 							["cooldowns_defensive_targets"] = {
-								["Krixidk"] = 2,
+								["Krixidk"] = 6,
 							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[219788] = {
-										["activedamt"] = 5,
-										["id"] = 219788,
-										["targets"] = {
-										},
-										["uptime"] = 57,
-										["appliedamt"] = 5,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[180612] = {
-										["activedamt"] = 10,
-										["id"] = 180612,
-										["targets"] = {
-										},
-										["uptime"] = 50,
-										["appliedamt"] = 10,
-										["refreshamt"] = 11,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55233] = {
-										["activedamt"] = 2,
-										["id"] = 55233,
-										["targets"] = {
-										},
-										["uptime"] = 20,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[228399] = {
-										["activedamt"] = 1,
-										["id"] = 228399,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
 										["counter"] = 0,
-									},
-									[224001] = {
-										["activedamt"] = 1,
-										["id"] = 224001,
-										["targets"] = {
-										},
-										["uptime"] = 80,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[235169] = {
-										["activedamt"] = 1,
-										["id"] = 235169,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[245686] = {
-										["activedamt"] = 1,
-										["id"] = 245686,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[185736] = {
-										["activedamt"] = 1,
-										["id"] = 185736,
-										["targets"] = {
-										},
-										["uptime"] = 80,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[188034] = {
-										["activedamt"] = 1,
-										["id"] = 188034,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[229206] = {
-										["activedamt"] = 1,
-										["id"] = 229206,
-										["targets"] = {
-										},
-										["uptime"] = 60,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[188290] = {
 										["activedamt"] = 6,
-										["id"] = 188290,
-										["targets"] = {
-										},
-										["uptime"] = 41,
 										["appliedamt"] = 6,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["id"] = 228399,
+										["uptime"] = 89,
+										["targets"] = {
+										},
+										["refreshamt"] = 5,
 									},
-									[186403] = {
+									[48792] = {
+										["counter"] = 0,
+										["uptime"] = 8,
 										["activedamt"] = 1,
-										["id"] = 186403,
-										["targets"] = {
-										},
-										["uptime"] = 99,
-										["appliedamt"] = 1,
+										["id"] = 48792,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[77535] = {
-										["activedamt"] = 10,
-										["id"] = 77535,
 										["targets"] = {
 										},
-										["uptime"] = 18,
-										["appliedamt"] = 10,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[253381] = {
-										["activedamt"] = 1,
-										["id"] = 253381,
-										["targets"] = {
-										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[256816] = {
-										["activedamt"] = 2,
-										["id"] = 256816,
-										["targets"] = {
-										},
-										["uptime"] = 32,
-										["appliedamt"] = 2,
-										["refreshamt"] = 1,
-										["actived"] = false,
+									[251938] = {
 										["counter"] = 0,
-									},
-									[212552] = {
+										["uptime"] = 10,
 										["activedamt"] = 1,
-										["id"] = 212552,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 251938,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[238698] = {
-										["activedamt"] = 1,
-										["id"] = 238698,
 										["targets"] = {
 										},
-										["uptime"] = 15,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[81141] = {
-										["activedamt"] = 2,
+										["counter"] = 0,
+										["activedamt"] = 7,
+										["appliedamt"] = 7,
 										["id"] = 81141,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["uptime"] = 2,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[81256] = {
-										["activedamt"] = 1,
-										["id"] = 81256,
-										["targets"] = {
-										},
-										["uptime"] = 20,
-										["appliedamt"] = 1,
 										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[240558] = {
-										["activedamt"] = 2,
-										["id"] = 240558,
-										["targets"] = {
-										},
-										["uptime"] = 50,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									[252545] = {
 										["counter"] = 0,
-									},
-									[195181] = {
-										["activedamt"] = 1,
-										["id"] = 195181,
-										["targets"] = {
-										},
-										["uptime"] = 78,
-										["appliedamt"] = 1,
-										["refreshamt"] = 27,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[193320] = {
-										["activedamt"] = 2,
-										["id"] = 193320,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252208] = {
-										["activedamt"] = 5,
-										["id"] = 252208,
-										["targets"] = {
-										},
 										["uptime"] = 8,
-										["appliedamt"] = 5,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53365] = {
-										["activedamt"] = 2,
-										["id"] = 53365,
+										["activedamt"] = 4,
+										["id"] = 252545,
+										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 68,
-										["appliedamt"] = 2,
-										["refreshamt"] = 6,
-										["actived"] = false,
+										["appliedamt"] = 4,
+									},
+									[245686] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 245686,
+										["uptime"] = 262,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
 									},
 									[235559] = {
-										["activedamt"] = 9,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 19,
+										["refreshamt"] = 18,
 										["id"] = 235559,
+										["uptime"] = 59,
 										["targets"] = {
 										},
-										["uptime"] = 51,
-										["appliedamt"] = 9,
-										["refreshamt"] = 7,
-										["actived"] = false,
+										["appliedamt"] = 19,
+									},
+									[208052] = {
 										["counter"] = 0,
+										["uptime"] = 31,
+										["activedamt"] = 3,
+										["id"] = 208052,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
 									},
 									[243096] = {
-										["activedamt"] = 4,
+										["counter"] = 0,
+										["activedamt"] = 7,
+										["appliedamt"] = 7,
 										["id"] = 243096,
+										["uptime"] = 96,
 										["targets"] = {
 										},
-										["uptime"] = 40,
-										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = false,
+										["refreshamt"] = 4,
+									},
+									[77535] = {
 										["counter"] = 0,
+										["activedamt"] = 29,
+										["appliedamt"] = 29,
+										["id"] = 77535,
+										["uptime"] = 93,
+										["targets"] = {
+										},
+										["refreshamt"] = 8,
+									},
+									[81256] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 81256,
+										["uptime"] = 48,
+										["targets"] = {
+										},
+										["refreshamt"] = 3,
+									},
+									[251941] = {
+										["counter"] = 0,
+										["uptime"] = 15,
+										["activedamt"] = 2,
+										["id"] = 251941,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[229206] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 229206,
+										["uptime"] = 103,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[256816] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 1,
+										["id"] = 256816,
+										["uptime"] = 58,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[224001] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 224001,
+										["uptime"] = 262,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[219788] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 8,
+										["refreshamt"] = 0,
+										["id"] = 219788,
+										["uptime"] = 238,
+										["targets"] = {
+										},
+										["appliedamt"] = 8,
+									},
+									[256415] = {
+										["counter"] = 0,
+										["uptime"] = 20,
+										["activedamt"] = 4,
+										["id"] = 256415,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
+									},
+									[230152] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 8,
+										["refreshamt"] = 25,
+										["id"] = 230152,
+										["uptime"] = 84,
+										["targets"] = {
+										},
+										["appliedamt"] = 8,
+									},
+									[252801] = {
+										["counter"] = 0,
+										["activedamt"] = 7,
+										["appliedamt"] = 7,
+										["id"] = 252801,
+										["uptime"] = 96,
+										["targets"] = {
+										},
+										["refreshamt"] = 4,
+									},
+									[212552] = {
+										["counter"] = 0,
+										["uptime"] = 3,
+										["activedamt"] = 2,
+										["id"] = 212552,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[188034] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 188034,
+										["uptime"] = 262,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[188290] = {
+										["counter"] = 0,
+										["activedamt"] = 17,
+										["appliedamt"] = 17,
+										["id"] = 188290,
+										["uptime"] = 95,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[238698] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 5,
+										["refreshamt"] = 0,
+										["id"] = 238698,
+										["uptime"] = 37,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
 									},
 									[193249] = {
-										["activedamt"] = 2,
+										["counter"] = 0,
+										["uptime"] = 30,
+										["activedamt"] = 3,
 										["id"] = 193249,
+										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 20,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 3,
+									},
+									[195181] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 81,
+										["id"] = 195181,
+										["uptime"] = 250,
+										["targets"] = {
+										},
+										["appliedamt"] = 7,
+									},
+									[53365] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 10,
+										["refreshamt"] = 18,
+										["id"] = 53365,
+										["uptime"] = 190,
+										["targets"] = {
+										},
+										["appliedamt"] = 10,
+									},
+									[253381] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 253381,
+										["uptime"] = 30,
+										["targets"] = {
+										},
+										["refreshamt"] = 3,
+									},
+									[48707] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 48707,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[193320] = {
+										["counter"] = 0,
+										["uptime"] = 19,
+										["activedamt"] = 3,
+										["id"] = 193320,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[186401] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 186401,
+										["uptime"] = 262,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[180612] = {
+										["counter"] = 0,
+										["activedamt"] = 37,
+										["appliedamt"] = 37,
+										["id"] = 180612,
+										["uptime"] = 155,
+										["targets"] = {
+										},
+										["refreshamt"] = 33,
+									},
+									[240558] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 8,
+										["refreshamt"] = 0,
+										["id"] = 240558,
+										["uptime"] = 157,
+										["targets"] = {
+										},
+										["appliedamt"] = 8,
+									},
+									[235169] = {
+										["counter"] = 0,
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 235169,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[55233] = {
+										["counter"] = 0,
+										["uptime"] = 30,
+										["activedamt"] = 3,
+										["id"] = 55233,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 254,
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
+							["serial"] = "Player-1303-042451A8",
+							["fight_component"] = true,
+							["debuff_uptime"] = 694,
+							["isTank"] = true,
+							["cc_break"] = 4.00764,
 							["nome"] = "Krixidk",
 							["spec"] = 250,
 							["grupo"] = true,
 							["spell_cast"] = {
+								[49028] = 3,
+								[206931] = 4,
+								[43265] = 10,
+								[108199] = 1,
+								[55233] = 3,
+								[205223] = 3,
+								[48792] = 1,
 								[195292] = 1,
-								[50842] = 11,
-								[49028] = 1,
-								[195182] = 10,
-								[56222] = 1,
-								[206931] = 3,
-								[49998] = 11,
-								[205223] = 1,
+								[50842] = 41,
+								[48707] = 2,
+								[49576] = 5,
+								[206930] = 42,
+								[221562] = 3,
+								[49998] = 37,
+								[56222] = 2,
+								[195182] = 32,
+								[251940] = 2,
+								[212552] = 2,
 								[235169] = 1,
-								[43265] = 4,
-								[212552] = 1,
-								[206930] = 12,
-								[55233] = 2,
+							},
+							["cc_break_oque"] = {
+								[5484] = 4,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1522169018,
+							["debuff_uptime_targets"] = {
+							},
+							["cc_break_targets"] = {
+								["Barbed Spiderling"] = 4,
 							},
 							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[55233] = {
-										["id"] = 55233,
+									[48707] = {
+										["id"] = 48707,
 										["targets"] = {
 											["Krixidk"] = 2,
 										},
 										["counter"] = 2,
 									},
+									[55233] = {
+										["id"] = 55233,
+										["targets"] = {
+											["Krixidk"] = 3,
+										},
+										["counter"] = 3,
+									},
+									[48792] = {
+										["id"] = 48792,
+										["targets"] = {
+											["Krixidk"] = 1,
+										},
+										["counter"] = 1,
+									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime_targets"] = {
+							["cc_break_spells"] = {
+								["_ActorTable"] = {
+									[206931] = {
+										["cc_break_oque"] = {
+											[5484] = 1,
+										},
+										["id"] = 206931,
+										["targets"] = {
+											["Barbed Spiderling"] = 1,
+										},
+										["cc_break"] = 1,
+										["counter"] = 0,
+									},
+									[52212] = {
+										["cc_break_oque"] = {
+											[5484] = 3,
+										},
+										["id"] = 52212,
+										["targets"] = {
+											["Barbed Spiderling"] = 3,
+										},
+										["cc_break"] = 3,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
 							},
-							["last_event"] = 1519429200,
-							["pets"] = {
-							},
-							["isTank"] = true,
-							["serial"] = "Player-1303-042451A8",
-							["tipo"] = 4,
 						}, -- [5]
 						{
-							["flag_original"] = 2632,
+							["flag_original"] = 4370,
+							["ownerName"] = "Senflol-Antonidas",
+							["nome"] = "Rokuthec <Senflol-Antonidas> <Senflol-Antonidas>",
+							["classe"] = "PET",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Pet-0-1467-1493-5274-78158-0201C649E0",
+							["spell_cast"] = {
+								[85692] = 49,
+							},
+						}, -- [6]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Cordana Felsong",
+							["boss_fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[197333] = 1,
+								[197250] = 3,
+								[197251] = 3,
+								[213583] = 1,
+								[197422] = 1,
+								[213576] = 2,
+							},
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["serial"] = "Creature-0-1467-1493-5274-95888-00003A7038",
+							["monster"] = true,
+						}, -- [7]
+						{
+							["flag_original"] = 2600,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 398,
+							["debuff_uptime"] = 2,
 							["spellschool"] = 1,
+							["nome"] = "Steal Light",
 							["debuff_uptime_targets"] = {
-								["Dâro-Antonidas"] = {
-									["uptime"] = 80,
-									["actived_at"] = 1519429183,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-								["Krixidk"] = {
-									["uptime"] = 78,
-									["actived_at"] = 1519429181,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-								["Twobad-Antonidas"] = {
-									["uptime"] = 80,
-									["actived_at"] = 1519429183,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-								["Knucklex-Antonidas"] = {
-									["uptime"] = 80,
-									["actived_at"] = 1519429183,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
 								["Senflol-Antonidas"] = {
-									["uptime"] = 80,
-									["actived_at"] = 1519429183,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = true,
+									["uptime"] = 2,
 									["refreshamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["appliedamt"] = 0,
 								},
 							},
-							["boss_fight_component"] = true,
-							["nome"] = "Quake",
-							["tipo"] = 4,
-							["damage_twin"] = "[*] Quake",
-							["damage_spellid"] = 240447,
-							["serial"] = "",
-							["last_event"] = 1519429183,
-						}, -- [6]
-						{
-							["flag_original"] = 8466,
-							["nome"] = "Earth Spirit",
-							["spec"] = 269,
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
+							["serial"] = "Creature-0-1467-1493-5274-104293-00003A7455",
 							["last_event"] = 0,
-							["spell_cast"] = {
-								[138130] = 3,
-							},
-							["serial"] = "Creature-0-3892-1493-27695-69792-000010A5F4",
-							["classe"] = "MONK",
-						}, -- [7]
-						{
-							["flag_original"] = 8466,
-							["nome"] = "Fire Spirit",
-							["pets"] = {
-							},
+							["damage_twin"] = "Avatar of Shadow",
 							["tipo"] = 4,
+							["damage_spellid"] = 206387,
 							["boss_fight_component"] = true,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								[138130] = 3,
-							},
-							["serial"] = "Creature-0-3892-1493-27695-69791-000010A5F4",
-							["classe"] = "PET",
 						}, -- [8]
 						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Senflol-Antonidas",
-							["nome"] = "Rokuthec <Senflol-Antonidas>",
+							["flag_original"] = 2632,
+							["nome"] = "Avatar of Shadow",
+							["boss_fight_component"] = true,
+							["last_event"] = 0,
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
 							["spell_cast"] = {
-								[85692] = 38,
+								[206459] = 3,
 							},
-							["serial"] = "Pet-0-3892-1493-27695-78158-0301C649E0",
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["serial"] = "Creature-0-1467-1493-5274-104293-00003A7455",
+							["monster"] = true,
 						}, -- [9]
 						{
-							["flag_original"] = 68168,
-							["nome"] = "Glazer",
-							["tipo"] = 4,
+							["fight_component"] = true,
+							["classe"] = "PET",
+							["nome"] = "Avatar of Vengeance",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								[194323] = 1,
-								[193443] = 1,
-								[194942] = 4,
-								[194289] = 1,
-							},
 							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-3892-1493-27695-95887-000010A24C",
-							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								[205004] = 1,
+							},
+							["tipo"] = 4,
+							["boss_fight_component"] = true,
+							["serial"] = "Creature-0-1467-1493-5274-100351-00003A74AA",
+							["flag_original"] = 8776,
 						}, -- [10]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["boss_debuff"] = true,
 							["monster"] = true,
-							["debuff_uptime"] = 5,
-							["spellschool"] = 32,
+							["debuff_uptime"] = 0,
+							["spellschool"] = 4,
+							["nome"] = "Detonation",
 							["debuff_uptime_targets"] = {
-								["Dâro-Antonidas"] = {
+								["Derinian-Ravencrest"] = {
 									["uptime"] = 0,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
 									["refreshamt"] = 0,
+									["activedamt"] = 1,
+									["actived"] = false,
+									["appliedamt"] = 0,
 								},
-								["Krixidk"] = {
-									["uptime"] = 5,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
+								["Cocanub-Ravencrest"] = {
+									["uptime"] = 0,
 									["refreshamt"] = 0,
+									["activedamt"] = 1,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+								["Fattymcpaws-Ravencrest"] = {
+									["uptime"] = 0,
+									["refreshamt"] = 0,
+									["activedamt"] = 1,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+								["Senflol-Antonidas"] = {
+									["uptime"] = 0,
+									["refreshamt"] = 0,
+									["activedamt"] = 1,
+									["actived"] = false,
+									["appliedamt"] = 0,
 								},
 							},
-							["boss_fight_component"] = true,
-							["nome"] = "Lingering Gaze",
+							["last_event"] = 0,
 							["tipo"] = 4,
-							["damage_twin"] = "Glazer",
-							["damage_spellid"] = 194945,
-							["serial"] = "Creature-0-3892-1493-27695-95887-000010A24C",
-							["last_event"] = 1519429181,
+							["damage_twin"] = "Cordana Felsong",
+							["serial"] = "Creature-0-1467-1493-5274-95888-00003A7038",
+							["damage_spellid"] = 197541,
+							["boss_fight_component"] = true,
 						}, -- [11]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 657,
 					["tipo"] = 2,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Dâro-Antonidas"] = true,
-					["Knucklex-Antonidas"] = true,
-					["Twobad-Antonidas"] = true,
+					["Derinian-Ravencrest"] = true,
 					["Krixidk"] = true,
+					["Fattymcpaws-Ravencrest"] = true,
+					["Cocanub-Ravencrest"] = true,
 					["Senflol-Antonidas"] = true,
 				},
-				["is_mythic_dungeon_segment"] = true,
-				["overall_added"] = true,
 				["last_events_tables"] = {
-					{
-						{
-							{
-								true, -- [1]
-								1, -- [2]
-								2753191, -- [3]
-								1519429178.62, -- [4]
-								14488890, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								false, -- [1]
-								219711, -- [2]
-								97296, -- [3]
-								1519429178.972, -- [4]
-								11578805, -- [5]
-								"Krixidk", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								false, -- [1]
-								55078, -- [2]
-								90089, -- [3]
-								1519429179.268, -- [4]
-								11668894, -- [5]
-								"Krixidk", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [3]
-							{
-								false, -- [1]
-								143924, -- [2]
-								306689, -- [3]
-								1519429179.321, -- [4]
-								11975583, -- [5]
-								"Krixidk", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [4]
-							{
-								false, -- [1]
-								219711, -- [2]
-								86475, -- [3]
-								1519429180.063, -- [4]
-								12062058, -- [5]
-								"Krixidk", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [5]
-							{
-								true, -- [1]
-								1, -- [2]
-								2767488, -- [3]
-								1519429180.135, -- [4]
-								12062058, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [6]
-							{
-								4, -- [1]
-								194945, -- [2]
-								1, -- [3]
-								1519429180.187, -- [4]
-								8863780, -- [5]
-								"Glazer", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [7]
-							{
-								true, -- [1]
-								194945, -- [2]
-								2376791, -- [3]
-								1519429180.187, -- [4]
-								6486989, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [8]
-							{
-								false, -- [1]
-								253288, -- [2]
-								1054000, -- [3]
-								1519429180.187, -- [4]
-								7540989, -- [5]
-								"Twobad-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [9]
-							{
-								false, -- [1]
-								143924, -- [2]
-								99648, -- [3]
-								1519429180.594, -- [4]
-								7640637, -- [5]
-								"Krixidk", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [10]
-							{
-								true, -- [1]
-								194945, -- [2]
-								2376791, -- [3]
-								1519429181.267, -- [4]
-								5263846, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [11]
-							{
-								true, -- [1]
-								1, -- [2]
-								3137939, -- [3]
-								1519429181.638, -- [4]
-								5263846, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [12]
-							{
-								4, -- [1]
-								240447, -- [2]
-								1, -- [3]
-								1519429181.691, -- [4]
-								2028428, -- [5]
-								"[*] Quake", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [13]
-							{
-								false, -- [1]
-								143924, -- [2]
-								97927, -- [3]
-								1519429181.803, -- [4]
-								2126355, -- [5]
-								"Krixidk", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [14]
-							{
-								false, -- [1]
-								55078, -- [2]
-								91182, -- [3]
-								1519429182.089, -- [4]
-								2217537, -- [5]
-								"Krixidk", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [15]
-							{
-								true, -- [1]
-								194945, -- [2]
-								2376791, -- [3]
-								1519429182.206, -- [4]
-								1, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								159254, -- [10]
-							}, -- [16]
-							{
-								3, -- [1]
-								55233, -- [2]
-								1, -- [3]
-								1519429157.616, -- [4]
-								0, -- [5]
-								"Krixidk", -- [6]
-							}, -- [17]
-						}, -- [1]
-						1519429182.206, -- [2]
-						"Krixidk", -- [3]
-						"DEATHKNIGHT", -- [4]
-						9776580, -- [5]
-						"1m 19s", -- [6]
-						["_custom"] = true,
-						["dead_at"] = 79.4899999999907,
-						["nome"] = "Krixidk",
-						["minha_barra"] = 1,
-						["last_cooldown"] = {
-							1519429157.616, -- [1]
-							55233, -- [2]
-						},
-						["dead"] = true,
-					}, -- [1]
-					{
-						{
-							{
-								false, -- [1]
-								143924, -- [2]
-								326793, -- [3]
-								1519429178.188, -- [4]
-								7566471, -- [5]
-								"Twobad-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								false, -- [1]
-								143924, -- [2]
-								291333, -- [3]
-								1519429179.321, -- [4]
-								7566471, -- [5]
-								"Twobad-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [2]
-							{
-								4, -- [1]
-								240447, -- [2]
-								1, -- [3]
-								1519429181.691, -- [4]
-								7566471, -- [5]
-								"[*] Quake", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [3]
-							{
-								false, -- [1]
-								207472, -- [2]
-								916526, -- [3]
-								1519429184.174, -- [4]
-								7566471, -- [5]
-								"Twobad-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [4]
-							{
-								true, -- [1]
-								240448, -- [2]
-								916526, -- [3]
-								1519429184.174, -- [4]
-								7566471, -- [5]
-								"[*] Quake", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [5]
-							{
-								false, -- [1]
-								207472, -- [2]
-								916525, -- [3]
-								1519429184.174, -- [4]
-								7566471, -- [5]
-								"Twobad-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [6]
-							{
-								true, -- [1]
-								240448, -- [2]
-								916525, -- [3]
-								1519429184.174, -- [4]
-								7566471, -- [5]
-								"[*] Quake", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [7]
-							{
-								true, -- [1]
-								1, -- [2]
-								3570139, -- [3]
-								1519429185.705, -- [4]
-								7566471, -- [5]
-								"Glazer", -- [6]
-								181302, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [8]
-							{
-								false, -- [1]
-								207472, -- [2]
-								181302, -- [3]
-								1519429185.705, -- [4]
-								7566471, -- [5]
-								"Twobad-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [9]
-							{
-								false, -- [1]
-								25914, -- [2]
-								1950023, -- [3]
-								1519429186.54, -- [4]
-								6127657, -- [5]
-								"Twobad-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [10]
-							{
-								true, -- [1]
-								1, -- [2]
-								3646267, -- [3]
-								1519429187.204, -- [4]
-								6127657, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [11]
-							{
-								false, -- [1]
-								253288, -- [2]
-								743047, -- [3]
-								1519429187.204, -- [4]
-								6870704, -- [5]
-								"Twobad-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [12]
-							{
-								false, -- [1]
-								228401, -- [2]
-								468306, -- [3]
-								1519429187.407, -- [4]
-								3692743, -- [5]
-								"Twobad-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [13]
-							{
-								1, -- [1]
-								498, -- [2]
-								1, -- [3]
-								1519429187.624, -- [4]
-								3692743, -- [5]
-								"Twobad-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [14]
-							{
-								true, -- [1]
-								1, -- [2]
-								2983951, -- [3]
-								1519429188.868, -- [4]
-								3692743, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [15]
-							{
-								true, -- [1]
-								1, -- [2]
-								3702025, -- [3]
-								1519429190.249, -- [4]
-								708792, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								2993233, -- [10]
-							}, -- [16]
-							{
-								3, -- [1]
-								498, -- [2]
-								1, -- [3]
-								1519429187.624, -- [4]
-								0, -- [5]
-								"Twobad-Antonidas", -- [6]
-							}, -- [17]
-						}, -- [1]
-						1519429190.249, -- [2]
-						"Twobad-Antonidas", -- [3]
-						"PALADIN", -- [4]
-						7566471, -- [5]
-						"1m 27s", -- [6]
-						["_custom"] = true,
-						["dead_at"] = 87.5329999999376,
-						["nome"] = "Twobad-Antonidas",
-						["minha_barra"] = 2,
-						["last_cooldown"] = {
-							1519429187.624, -- [1]
-							498, -- [2]
-						},
-						["dead"] = true,
-					}, -- [2]
-					{
-						{
-							{
-								false, -- [1]
-								143924, -- [2]
-								96568, -- [3]
-								1519429178.188, -- [4]
-								6619920, -- [5]
-								"Dâro-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [1]
-							{
-								false, -- [1]
-								143924, -- [2]
-								20993, -- [3]
-								1519429179.321, -- [4]
-								6619920, -- [5]
-								"Dâro-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								4, -- [1]
-								240447, -- [2]
-								1, -- [3]
-								1519429181.691, -- [4]
-								6619920, -- [5]
-								"[*] Quake", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [3]
-							{
-								true, -- [1]
-								240448, -- [2]
-								1218579, -- [3]
-								1519429184.174, -- [4]
-								5401341, -- [5]
-								"[*] Quake", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [4]
-							{
-								true, -- [1]
-								1, -- [2]
-								3973033, -- [3]
-								1519429184.194, -- [4]
-								5401341, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [5]
-							{
-								false, -- [1]
-								6262, -- [2]
-								1724036, -- [3]
-								1519429187.407, -- [4]
-								3152344, -- [5]
-								"Dâro-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [6]
-							{
-								true, -- [1]
-								1, -- [2]
-								3839097, -- [3]
-								1519429193.294, -- [4]
-								3152344, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								686753, -- [10]
-							}, -- [7]
-							{
-								3, -- [1]
-								22812, -- [2]
-								1, -- [3]
-								1519429157.041, -- [4]
-								0, -- [5]
-								"Dâro-Antonidas", -- [6]
-							}, -- [8]
-						}, -- [1]
-						1519429193.294, -- [2]
-						"Dâro-Antonidas", -- [3]
-						"DRUID", -- [4]
-						6376200, -- [5]
-						"1m 30s", -- [6]
-						["_custom"] = true,
-						["dead_at"] = 90.5779999999795,
-						["nome"] = "Dâro-Antonidas",
-						["minha_barra"] = 3,
-						["last_cooldown"] = {
-							1519429157.041, -- [1]
-							22812, -- [2]
-						},
-						["dead"] = true,
-					}, -- [3]
-					{
-						{
-							{
-								4, -- [1]
-								240447, -- [2]
-								1, -- [3]
-								1519429181.691, -- [4]
-								6850200, -- [5]
-								"[*] Quake", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [1]
-							{
-								false, -- [1]
-								198590, -- [2]
-								631980, -- [3]
-								1519429182.504, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [2]
-							{
-								false, -- [1]
-								198590, -- [2]
-								1668427, -- [3]
-								1519429183.32, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [3]
-							{
-								false, -- [1]
-								108366, -- [2]
-								1027530, -- [3]
-								1519429184.174, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [4]
-							{
-								false, -- [1]
-								207472, -- [2]
-								303817, -- [3]
-								1519429184.174, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [5]
-							{
-								true, -- [1]
-								240448, -- [2]
-								1331347, -- [3]
-								1519429184.174, -- [4]
-								6850200, -- [5]
-								"[*] Quake", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [6]
-							{
-								false, -- [1]
-								218615, -- [2]
-								475981, -- [3]
-								1519429187.204, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [7]
-							{
-								false, -- [1]
-								6262, -- [2]
-								1809282, -- [3]
-								1519429187.407, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [8]
-							{
-								false, -- [1]
-								198590, -- [2]
-								341416, -- [3]
-								1519429193.739, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [9]
-							{
-								true, -- [1]
-								1, -- [2]
-								6984515, -- [3]
-								1519429195.732, -- [4]
-								6850200, -- [5]
-								"Glazer", -- [6]
-								2532995, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [10]
-							{
-								false, -- [1]
-								108366, -- [2]
-								1027530, -- [3]
-								1519429195.732, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [11]
-							{
-								false, -- [1]
-								207472, -- [2]
-								1505465, -- [3]
-								1519429195.732, -- [4]
-								6850200, -- [5]
-								"Senflol-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [12]
-							{
-								1, -- [1]
-								104773, -- [2]
-								1, -- [3]
-								1519429196.826, -- [4]
-								2398680, -- [5]
-								"Senflol-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [13]
-							{
-								true, -- [1]
-								1, -- [2]
-								3862084, -- [3]
-								1519429197.286, -- [4]
-								2398680, -- [5]
-								"Glazer", -- [6]
-								249030, -- [7]
-								1, -- [8]
-								false, -- [9]
-								1214374, -- [10]
-							}, -- [14]
-							{
-								false, -- [1]
-								108366, -- [2]
-								249030, -- [3]
-								1519429197.286, -- [4]
-								2398680, -- [5]
-								"Senflol-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [15]
-							{
-								3, -- [1]
-								104773, -- [2]
-								1, -- [3]
-								1519429196.826, -- [4]
-								0, -- [5]
-								"Senflol-Antonidas", -- [6]
-							}, -- [16]
-						}, -- [1]
-						1519429197.286, -- [2]
-						"Senflol-Antonidas", -- [3]
-						"WARLOCK", -- [4]
-						6850200, -- [5]
-						"1m 34s", -- [6]
-						["_custom"] = true,
-						["dead_at"] = 94.5699999999488,
-						["nome"] = "Senflol-Antonidas",
-						["minha_barra"] = 4,
-						["last_cooldown"] = {
-							1519429196.826, -- [1]
-							104773, -- [2]
-						},
-						["dead"] = true,
-					}, -- [4]
-					{
-						{
-							{
-								false, -- [1]
-								132463, -- [2]
-								215712, -- [3]
-								1519429194.371, -- [4]
-								4894518, -- [5]
-								"Knucklex-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								false, -- [1]
-								132463, -- [2]
-								107856, -- [3]
-								1519429195.123, -- [4]
-								5002374, -- [5]
-								"Knucklex-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								false, -- [1]
-								132463, -- [2]
-								107856, -- [3]
-								1519429195.957, -- [4]
-								5110230, -- [5]
-								"Knucklex-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [3]
-							{
-								false, -- [1]
-								132463, -- [2]
-								107857, -- [3]
-								1519429196.826, -- [4]
-								5218087, -- [5]
-								"Knucklex-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [4]
-							{
-								1, -- [1]
-								122470, -- [2]
-								1, -- [3]
-								1519429198.567, -- [4]
-								5218087, -- [5]
-								"Knucklex-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [5]
-							{
-								true, -- [1]
-								1, -- [2]
-								6169604, -- [3]
-								1519429198.789, -- [4]
-								5218087, -- [5]
-								"Glazer", -- [6]
-								3254820, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [6]
-							{
-								false, -- [1]
-								195318, -- [2]
-								4016722, -- [3]
-								1519429198.789, -- [4]
-								6509640, -- [5]
-								"Knucklex-Antonidas", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [7]
-							{
-								false, -- [1]
-								122470, -- [2]
-								3254820, -- [3]
-								1519429198.789, -- [4]
-								6509640, -- [5]
-								"Knucklex-Antonidas", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [8]
-							{
-								true, -- [1]
-								1, -- [2]
-								6061687, -- [3]
-								1519429200.484, -- [4]
-								3594856, -- [5]
-								"Glazer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								2466831, -- [10]
-							}, -- [9]
-							{
-								3, -- [1]
-								122470, -- [2]
-								1, -- [3]
-								1519429198.567, -- [4]
-								0, -- [5]
-								"Knucklex-Antonidas", -- [6]
-							}, -- [10]
-						}, -- [1]
-						1519429200.484, -- [2]
-						"Knucklex-Antonidas", -- [3]
-						"MONK", -- [4]
-						6509640, -- [5]
-						"1m 37s", -- [6]
-						["_custom"] = true,
-						["dead_at"] = 97.7679999999236,
-						["nome"] = "Knucklex-Antonidas",
-						["minha_barra"] = 5,
-						["last_cooldown"] = {
-							1519429198.567, -- [1]
-							122470, -- [2]
-						},
-						["dead"] = true,
-					}, -- [5]
 				},
 				["alternate_power"] = {
 				},
 				["totals_grupo"] = {
-					660903995, -- [1]
-					167090694, -- [2]
+					1723885652.08964, -- [1]
+					279244165.111935, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 7,
+						["ress"] = 1.004719,
+						["dead"] = 0,
+						["cc_break"] = 6.011881,
 						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 5,
-					}, -- [4]
-				},
-				["enemy"] = "Glazer",
-				["combat_counter"] = 63315,
-				["_trashoverallalreadyadded"] = true,
-				["totals"] = {
-					1044034163, -- [1]
-					179319021, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
 						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 7,
-						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 5,
+						["cooldowns_defensive"] = 10.026475,
 					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
 				},
 				["is_mythic_dungeon"] = {
 					["MapID"] = 1493,
-					["RunID"] = 277,
-					["EndedAt"] = 1519429221,
-					["SegmentID"] = 3,
-					["EncounterName"] = "Unknown",
-					["StartedAt"] = 1519428151.7,
+					["RunID"] = 351,
+					["EndedAt"] = 1522169016.1,
+					["SegmentID"] = "overall",
+					["OverallSegment"] = true,
+					["StartedAt"] = 1522167874.7,
 					["EJID"] = 707,
-					["Level"] = 24,
-					["OverallSegment"] = false,
+					["Level"] = 15,
 					["ZoneName"] = "Vault of the Wardens",
 				},
+				["combat_counter"] = 65759,
+				["totals"] = {
+					1755827506.00588, -- [1]
+					282474839.111483, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 1.004719,
+						["dead"] = 0,
+						["cc_break"] = 6.011881,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 10.026475,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["is_mythic_dungeon_segment"] = true,
 				["frags_need_refresh"] = false,
 				["__call"] = {
 				},
+				["data_inicio"] = "18:38:07",
+				["end_time"] = 1099909.58,
+				["is_mythic_dungeon_trash"] = {
+					["ZoneName"] = "Vault of the Wardens",
+					["MapID"] = 1493,
+					["Level"] = 15,
+					["EJID"] = 707,
+				},
+				["combat_id"] = 142,
+				["instance_type"] = "party",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Derinian-Ravencrest"] = 32562432.023451,
+							["Krixidk"] = 286736200.027772,
+							["Fattymcpaws-Ravencrest"] = 214695580.019516,
+							["Cocanub-Ravencrest"] = 366363556.021045,
+							["Senflol-Antonidas"] = 823527884.02142,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Dâro-Antonidas"] = 6316445.002808,
-							["Krixidk"] = 80008324.004997,
-							["Twobad-Antonidas"] = 68589522.002305,
-							["Knucklex-Antonidas"] = 7711681.007196,
-							["Senflol-Antonidas"] = 16693049.00898,
+							["Derinian-Ravencrest"] = 94875680.029424,
+							["Krixidk"] = 116330717.024363,
+							["Fattymcpaws-Ravencrest"] = 6909189.024354,
+							["Cocanub-Ravencrest"] = 21864747.03645,
+							["Senflol-Antonidas"] = 39263832.028277,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Dâro-Antonidas"] = 194274239.005535,
-							["Krixidk"] = 90162312.001102,
-							["Twobad-Antonidas"] = 68250029.00182,
-							["Knucklex-Antonidas"] = 248871849.001914,
-							["Senflol-Antonidas"] = 181901675.008955,
-						}, -- [1]
-					},
 				},
-				["end_time"] = 584888.344,
-				["is_mythic_dungeon_trash"] = {
-					["ZoneName"] = "Vault of the Wardens",
-					["MapID"] = 1493,
-					["Level"] = 24,
-					["EJID"] = 707,
-				},
-				["combat_id"] = 657,
-				["instance_type"] = "party",
+				["hasSaved"] = true,
 				["frags"] = {
 				},
-				["data_fim"] = "00:40:00",
-				["data_inicio"] = "00:38:22",
+				["data_fim"] = "18:43:38",
+				["total_segments_added"] = 2,
 				["CombatSkillCache"] = {
 				},
-				["is_mythic_dungeon_run_id"] = 277,
-				["start_time"] = 584790.332,
-				["contra"] = "Glazer",
+				["is_mythic_dungeon_run_id"] = 351,
+				["start_time"] = 1099647,
 				["TimeData"] = {
 				},
+				["enemy"] = "Cordana Felsong",
 			}, -- [1]
 		},
 	},
-	["last_version"] = "v7.3.0.5282",
-	["character_data"] = {
-		["logons"] = 5687,
+	["combat_counter"] = 65762,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["tabela_instancias"] = {
 	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
-			["sub_attribute"] = 5,
+			["sub_attribute"] = 1,
 			["horizontalSnap"] = true,
 			["verticalSnap"] = false,
 			["is_open"] = true,
 			["isLocked"] = true,
 			["sub_atributo_last"] = {
 				1, -- [1]
-				5, -- [2]
-				2, -- [3]
+				1, -- [2]
+				1, -- [3]
 				5, -- [4]
 				1, -- [5]
 			},
@@ -8377,13 +8336,13 @@ _detalhes_database = {
 				[3] = 2,
 			},
 			["mode"] = 2,
-			["attribute"] = 4,
+			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994755377062,
+					["y"] = -415.994747823962,
 					["x"] = 570.14000540446,
 					["w"] = 203.8720703125,
-					["h"] = 129.303588867188,
+					["h"] = 129.303604125977,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -8394,7 +8353,7 @@ _detalhes_database = {
 			},
 		}, -- [1]
 		{
-			["segment"] = 0,
+			["segment"] = -1,
 			["sub_attribute"] = 1,
 			["horizontalSnap"] = true,
 			["verticalSnap"] = false,
@@ -8414,10 +8373,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994755377062,
+					["y"] = -415.994747823962,
 					["x"] = 762.194442275391,
 					["w"] = 184.119293212891,
-					["h"] = 129.303588867188,
+					["h"] = 129.303604125977,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -8462,51 +8421,6 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["cached_talents"] = {
-		["Player-3686-060E6486"] = {
-			17565, -- [1]
-			17577, -- [2]
-			22180, -- [3]
-			22181, -- [4]
-			17599, -- [5]
-			22190, -- [6]
-			21203, -- [7]
-		},
-		["Player-1329-05F87B6F"] = {
-			22279, -- [1]
-			22498, -- [2]
-			19347, -- [3]
-			21998, -- [4]
-			22284, -- [5]
-			22287, -- [6]
-			22288, -- [7]
-		},
-		["Player-3686-062B271B"] = {
-			22099, -- [1]
-			19818, -- [2]
-			19995, -- [3]
-			20185, -- [4]
-			22105, -- [5]
-			20173, -- [6]
-			22103, -- [7]
-		},
-		["Player-3686-05ACAE90"] = {
-			18571, -- [1]
-			22387, -- [2]
-			22157, -- [3]
-			22389, -- [4]
-			21193, -- [5]
-			18577, -- [6]
-			18579, -- [7]
-		},
-		["Player-3686-05B7AF0E"] = {
-			19292, -- [1]
-			19293, -- [2]
-			22088, -- [3]
-			19291, -- [4]
-			22090, -- [5]
-			22476, -- [6]
-			21182, -- [7]
-		},
 		["Player-1303-042451A8"] = {
 			21209, -- [1]
 			19217, -- [2]
@@ -8525,10 +8439,17 @@ _detalhes_database = {
 		["next"] = "",
 		["custom"] = "",
 	},
-	["last_instance_time"] = 1519428093,
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["reverse"] = false,
+		["channel"] = "SELF",
+	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_encounter"] = "Argus the Unmaker",
-	["ignore_nicktag"] = false,
+	["last_encounter"] = "Varimathras",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -8537,9 +8458,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = true,
-			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -8663,13 +8584,6 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Xaril_MasterPoisoner_White.blp", -- [4]
 					["id"] = 1593,
 				},
-				["158134"] = {
-					"158134", -- [1]
-					"Shield Charge", -- [2]
-					38, -- [3]
-					"Interface\\Icons\\Ability_Warrior_ShieldGuard", -- [4]
-					["id"] = 1719,
-				},
 				["188929"] = {
 					"188929", -- [1]
 					"Heart Seeker", -- [2]
@@ -8677,12 +8591,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
 					["id"] = 1786,
 				},
-				["portals"] = {
-					"portals", -- [1]
-					"Portals Move", -- [2]
-					138, -- [3]
-					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
-					["id"] = 1794,
+				["158134"] = {
+					"158134", -- [1]
+					"Shield Charge", -- [2]
+					38, -- [3]
+					"Interface\\Icons\\Ability_Warrior_ShieldGuard", -- [4]
+					["id"] = 1719,
+				},
+				["-8179"] = {
+					"-8179", -- [1]
+					"Borer Drill", -- [2]
+					19, -- [3]
+					"Interface\\ICONS\\ability_mount_rocketmount3.blp", -- [4]
+					["id"] = 1600,
 				},
 				["143484"] = {
 					"143484", -- [1]
@@ -8698,19 +8619,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Misc_EmotionSad", -- [4]
 					["id"] = 1604,
 				},
-				["180199"] = {
-					"180199", -- [1]
-					"Shred Armor", -- [2]
-					10.8, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Riposte", -- [4]
-					["id"] = 1786,
+				["179977"] = {
+					"179977", -- [1]
+					"Touch of Doom", -- [2]
+					8.3, -- [3]
+					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
+					["id"] = 1783,
 				},
-				["143491"] = {
-					"143491", -- [1]
-					"Calamity", -- [2]
-					29, -- [3]
-					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
-					["id"] = 1598,
+				["181508"] = {
+					"181508", -- [1]
+					"Seed of Destruction", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\Spell_Shadow_SeedOfDestruction", -- [4]
+					["id"] = 1777,
 				},
 				["156238"] = {
 					"156238", -- [1]
@@ -8719,12 +8640,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
 					["id"] = 1705,
 				},
-				["179977"] = {
-					"179977", -- [1]
-					"Touch of Doom", -- [2]
-					8.3, -- [3]
-					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
-					["id"] = 1783,
+				["180199"] = {
+					"180199", -- [1]
+					"Shred Armor", -- [2]
+					10.8, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Riposte", -- [4]
+					["id"] = 1786,
 				},
 				["186546"] = {
 					"186546", -- [1]
@@ -8733,47 +8654,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Enchant_VoidSphere", -- [4]
 					["id"] = 1800,
 				},
-				["182826"] = {
-					"182826", -- [1]
-					"Doomfire", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
-					["id"] = 1799,
-				},
-				["186961"] = {
-					"186961", -- [1]
-					"Nether Banish", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
-					["id"] = 1799,
-				},
-				["drakes"] = {
-					"drakes", -- [1]
-					"Proto-Drakes", -- [2]
-					168, -- [3]
-					"Interface\\Icons\\ability_mount_drake_proto", -- [4]
-					["id"] = 1622,
-				},
-				["185237"] = {
-					"185237", -- [1]
-					"Touch of Harm", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
-					["id"] = 1784,
-				},
-				["183329"] = {
-					"183329", -- [1]
-					"Apocalypse (1)", -- [2]
-					51.5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowPower", -- [4]
-					["id"] = 1794,
-				},
-				["-7959"] = {
-					"-7959", -- [1]
-					"Inferno Strike", -- [2]
-					7, -- [3]
-					"Interface\\ICONS\\INV_Enchant_EssenceAstralSmall.blp", -- [4]
-					["id"] = 1598,
+				["158563"] = {
+					"158563", -- [1]
+					"Kick to the Face", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\ability_kick", -- [4]
+					["id"] = 1705,
 				},
 				["-7963"] = {
 					"-7963", -- [1]
@@ -8782,12 +8668,47 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Vehicle_SonicShockwave.blp", -- [4]
 					["id"] = 1599,
 				},
-				["181508"] = {
-					"181508", -- [1]
-					"Seed of Destruction", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\Spell_Shadow_SeedOfDestruction", -- [4]
-					["id"] = 1777,
+				["drakes"] = {
+					"drakes", -- [1]
+					"Proto-Drakes", -- [2]
+					168, -- [3]
+					"Interface\\Icons\\ability_mount_drake_proto", -- [4]
+					["id"] = 1622,
+				},
+				["143491"] = {
+					"143491", -- [1]
+					"Calamity", -- [2]
+					29, -- [3]
+					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
+					["id"] = 1598,
+				},
+				["147209"] = {
+					"147209", -- [1]
+					"Malice (1)", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Ability_Warlock_Eradication", -- [4]
+					["id"] = 1623,
+				},
+				["-7959"] = {
+					"-7959", -- [1]
+					"Inferno Strike", -- [2]
+					7, -- [3]
+					"Interface\\ICONS\\INV_Enchant_EssenceAstralSmall.blp", -- [4]
+					["id"] = 1598,
+				},
+				["144563"] = {
+					"144563", -- [1]
+					"Imprison", -- [2]
+					52.5, -- [3]
+					"Interface\\Icons\\sha_ability_rogue_sturdyrecuperate", -- [4]
+					["id"] = 1604,
+				},
+				["185237"] = {
+					"185237", -- [1]
+					"Touch of Harm", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
+					["id"] = 1784,
 				},
 				["181799"] = {
 					"181799", -- [1]
@@ -8831,12 +8752,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Arcane_PrismaticCloak", -- [4]
 					["id"] = 1783,
 				},
-				["189894"] = {
-					"189894", -- [1]
-					"Void Star", -- [2]
-					15.8, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
-					["id"] = 1799,
+				["volatile_anomaly"] = {
+					"volatile_anomaly", -- [1]
+					"Volatile Anomaly (1)", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\spell_arcane_arcane04", -- [4]
+					["id"] = 1705,
 				},
 				["157349"] = {
 					"157349", -- [1]
@@ -8845,12 +8766,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_socererking_forcenova", -- [4]
 					["id"] = 1705,
 				},
-				["81007"] = {
-					"81007", -- [1]
-					"Shadowblaze", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
-					["id"] = 1026,
+				["slump"] = {
+					"slump", -- [1]
+					"Rodeo", -- [2]
+					100, -- [3]
+					"Interface\\Icons\\Ability_Mount_Dreadsteed", -- [4]
+					["id"] = 1024,
 				},
 				["-8294"] = {
 					"-8294", -- [1]
@@ -8859,19 +8780,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Nature_ChainLightning", -- [4]
 					["id"] = 1623,
 				},
-				["145288"] = {
-					"145288", -- [1]
-					"Explosion", -- [2]
-					8, -- [3]
-					"INTERFACE\\ICONS\\spell_shaman_firenova", -- [4]
-					["id"] = 1594,
+				["184124"] = {
+					"184124", -- [1]
+					"Gift of the Man'ari", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_AntiMagicShell", -- [4]
+					["id"] = 1794,
 				},
-				["volatile_anomaly"] = {
-					"volatile_anomaly", -- [1]
-					"Volatile Anomaly (1)", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\spell_arcane_arcane04", -- [4]
-					["id"] = 1705,
+				["189894"] = {
+					"189894", -- [1]
+					"Void Star", -- [2]
+					15.8, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
+					["id"] = 1799,
 				},
 				["181557"] = {
 					"181557", -- [1]
@@ -8894,12 +8815,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\inv_misc_volatilefire", -- [4]
 					["id"] = 1784,
 				},
-				["181735"] = {
-					"181735", -- [1]
-					"Felseeker", -- [2]
-					60, -- [3]
-					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
-					["id"] = 1795,
+				["190223"] = {
+					"190223", -- [1]
+					"Fel Strike", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen", -- [4]
+					["id"] = 1800,
 				},
 				["-8262"] = {
 					"-8262", -- [1]
@@ -8915,19 +8836,19 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_MissileLarge_Red", -- [4]
 					["id"] = 1778,
 				},
-				["143019"] = {
-					"143019", -- [1]
-					"Corrupted Brew", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\sha_inv_elemental_primal_shadow", -- [4]
-					["id"] = 1598,
+				["181292"] = {
+					"181292", -- [1]
+					"Fel Outpouring", -- [2]
+					51, -- [3]
+					"Interface\\Icons\\spell_yorsahj_bloodboil_purple", -- [4]
+					["id"] = 1787,
 				},
-				["184124"] = {
-					"184124", -- [1]
-					"Gift of the Man'ari", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_AntiMagicShell", -- [4]
-					["id"] = 1794,
+				["145288"] = {
+					"145288", -- [1]
+					"Explosion", -- [2]
+					8, -- [3]
+					"INTERFACE\\ICONS\\spell_shaman_firenova", -- [4]
+					["id"] = 1594,
 				},
 				["-8055"] = {
 					"-8055", -- [1]
@@ -9041,12 +8962,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_HeroicLeap", -- [4]
 					["id"] = 1787,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
-					["id"] = 1794,
+				["144070"] = {
+					"144070", -- [1]
+					"Ashen Wall", -- [2]
+					32.2, -- [3]
+					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
+					["id"] = 1606,
 				},
 				["190224"] = {
 					"190224", -- [1]
@@ -9062,12 +8983,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1785,
 				},
-				["144070"] = {
-					"144070", -- [1]
-					"Ashen Wall", -- [2]
-					32.2, -- [3]
-					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
-					["id"] = 1606,
+				["158605"] = {
+					"158605", -- [1]
+					"Mark of Chaos", -- [2]
+					34, -- [3]
+					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
+					["id"] = 1705,
 				},
 				["159250"] = {
 					"159250", -- [1]
@@ -9083,12 +9004,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_fixated_state_red", -- [4]
 					["id"] = 1721,
 				},
-				["160734"] = {
-					"160734", -- [1]
-					"Vulnerability", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelHellfire", -- [4]
-					["id"] = 1723,
+				["156471"] = {
+					"156471", -- [1]
+					"Arcane Aberration (1)", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\ability_socererking_summonaberration", -- [4]
+					["id"] = 1705,
 				},
 				["180526"] = {
 					"180526", -- [1]
@@ -9104,12 +9025,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_butcher_gushingwounds", -- [4]
 					["id"] = 1706,
 				},
-				["berserk"] = {
-					"berserk", -- [1]
-					"Berserk", -- [2]
-					600, -- [3]
-					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
-					["id"] = 1785,
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+					["id"] = 1794,
 				},
 				["182055"] = {
 					"182055", -- [1]
@@ -9118,12 +9039,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
 					["id"] = 1785,
 				},
-				["158605"] = {
-					"158605", -- [1]
-					"Mark of Chaos", -- [2]
-					34, -- [3]
-					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
-					["id"] = 1705,
+				["berserk"] = {
+					"berserk", -- [1]
+					"Berserk", -- [2]
+					600, -- [3]
+					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
+					["id"] = 1785,
 				},
 				["156157"] = {
 					"156157", -- [1]
@@ -9139,12 +9060,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
 					["id"] = 1788,
 				},
-				["143243"] = {
-					"143243", -- [1]
-					"Rapid Fire", -- [2]
-					49, -- [3]
-					"Interface\\Icons\\Ability_Hunter_RunningShot", -- [4]
-					["id"] = 1593,
+				["181999"] = {
+					"181999", -- [1]
+					"Firebomb (1)", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
+					["id"] = 1785,
 				},
 				["-8195"] = {
 					"-8195", -- [1]
@@ -9181,19 +9102,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Achievement_Dungeon_UlduarRaid_Titan_01", -- [4]
 					["id"] = 1604,
 				},
-				["159219"] = {
-					"159219", -- [1]
-					"Necrotic Breath", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\ability_mage_worldinflamesgreen", -- [4]
-					["id"] = 1720,
-				},
 				["-8207"] = {
 					"-8207", -- [1]
 					"Pattern Recognition", -- [2]
 					60, -- [3]
 					"Interface\\ICONS\\Ability_Siege_Engineer_pattern_recognition.blp", -- [4]
 					["id"] = 1601,
+				},
+				["159219"] = {
+					"159219", -- [1]
+					"Necrotic Breath", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\ability_mage_worldinflamesgreen", -- [4]
+					["id"] = 1720,
 				},
 				["-11269"] = {
 					"-11269", -- [1]
@@ -9202,12 +9123,12 @@ _detalhes_database = {
 					false, -- [4]
 					["id"] = 1786,
 				},
-				["156467"] = {
-					"156467", -- [1]
-					"Destructive Resonance", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanemines", -- [4]
-					["id"] = 1705,
+				["-8073"] = {
+					"-8073", -- [1]
+					"Aim (1)", -- [2]
+					38, -- [3]
+					"Interface\\ICONS\\Ability_Hisek_Aim.blp", -- [4]
+					["id"] = 1593,
 				},
 				["187204"] = {
 					"187204", -- [1]
@@ -9223,26 +9144,26 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Magic_ManaGain", -- [4]
 					["id"] = 1720,
 				},
-				["181307"] = {
-					"181307", -- [1]
-					"Foul Crush", -- [2]
+				["146849"] = {
+					"146849", -- [1]
+					"Shattering Cleave", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Warrior_ShieldBreak", -- [4]
+					["id"] = 1622,
+				},
+				["180025"] = {
+					"180025", -- [1]
+					"Harbinger's Mending (1)", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
+					["id"] = 1784,
+				},
+				["145226"] = {
+					"145226", -- [1]
+					"Blind Hatred", -- [2]
 					25, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
-					["id"] = 1787,
-				},
-				["blazing"] = {
-					"blazing", -- [1]
-					"Skeleton", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\SPELL_SHADOW_RAISEDEAD", -- [4]
-					["id"] = 1024,
-				},
-				["161328"] = {
-					"161328", -- [1]
-					"Suppression Field", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameStrike", -- [4]
-					["id"] = 1723,
+					"Interface\\Icons\\sha_ability_mage_firestarter", -- [4]
+					["id"] = 1624,
 				},
 				["144616"] = {
 					"144616", -- [1]
@@ -9272,12 +9193,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_PocketWatch_01", -- [4]
 					["id"] = 1606,
 				},
-				["146849"] = {
-					"146849", -- [1]
-					"Shattering Cleave", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Warrior_ShieldBreak", -- [4]
-					["id"] = 1622,
+				["181307"] = {
+					"181307", -- [1]
+					"Foul Crush", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
+					["id"] = 1787,
 				},
 				["183817"] = {
 					"183817", -- [1]
@@ -9293,12 +9214,12 @@ _detalhes_database = {
 					"Interface\\Icons\\inv_shield_deathwingraid_d_02", -- [4]
 					["id"] = 1600,
 				},
-				["180025"] = {
-					"180025", -- [1]
-					"Harbinger's Mending (1)", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
-					["id"] = 1784,
+				["blazing"] = {
+					"blazing", -- [1]
+					"Skeleton", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\SPELL_SHADOW_RAISEDEAD", -- [4]
+					["id"] = 1024,
 				},
 				["158521"] = {
 					"158521", -- [1]
@@ -9328,12 +9249,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_AuraOfDarkness", -- [4]
 					["id"] = 1795,
 				},
-				["145226"] = {
-					"145226", -- [1]
-					"Blind Hatred", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\sha_ability_mage_firestarter", -- [4]
-					["id"] = 1624,
+				["161328"] = {
+					"161328", -- [1]
+					"Suppression Field", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameStrike", -- [4]
+					["id"] = 1723,
 				},
 				["143759"] = {
 					"143759", -- [1]
@@ -9342,26 +9263,26 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_creature_amber_02", -- [4]
 					["id"] = 1593,
 				},
-				["156225"] = {
-					"156225", -- [1]
-					"Branded on YOU!", -- [2]
-					4, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
-					["id"] = 1705,
+				["-8305"] = {
+					"-8305", -- [1]
+					"Intermission", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
+					["id"] = 1623,
 				},
-				["144400"] = {
-					"144400", -- [1]
-					"Swelling Pride (1)", -- [2]
-					77, -- [3]
-					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
-					["id"] = 1604,
+				["179407"] = {
+					"179407", -- [1]
+					"Disembodied on YOU!", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
+					["id"] = 1777,
 				},
-				["181354"] = {
-					"181354", -- [1]
-					"Glaive Combo", -- [2]
-					45, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Challange", -- [4]
-					["id"] = 1795,
+				["arena_sweeper"] = {
+					"arena_sweeper", -- [1]
+					"Arena Sweeper", -- [2]
+					55, -- [3]
+					"Interface\\Icons\\ability_kick", -- [4]
+					["id"] = 1721,
 				},
 				["181296"] = {
 					"181296", -- [1]
@@ -9398,33 +9319,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
 					["id"] = 1799,
 				},
-				["-8305"] = {
-					"-8305", -- [1]
-					"Intermission", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
-					["id"] = 1623,
-				},
-				["143701"] = {
-					"143701", -- [1]
-					"Whirling", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\Ability_Druid_GaleWinds", -- [4]
-					["id"] = 1593,
-				},
-				["181255"] = {
-					"181255", -- [1]
-					"Fel Imp-losion", -- [2]
-					38, -- [3]
-					"Interface\\Icons\\Ability_Warlock_EmpoweredImp", -- [4]
-					["id"] = 1795,
-				},
-				["82848"] = {
-					"82848", -- [1]
-					"Massacre", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Ability_Creature_Disease_02", -- [4]
-					["id"] = 1023,
+				["156225"] = {
+					"156225", -- [1]
+					"Branded on YOU!", -- [2]
+					4, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
+					["id"] = 1705,
 				},
 				["demolisher"] = {
 					"demolisher", -- [1]
@@ -9433,6 +9333,27 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_vehicle_siegeenginecannon", -- [4]
 					["id"] = 1622,
 				},
+				["-8325"] = {
+					"-8325", -- [1]
+					"Explosive Despair on YOU!", -- [2]
+					10, -- [3]
+					"Interface\\ICONS\\Ability_DeathKnight_Asphixiate.blp", -- [4]
+					["id"] = 1623,
+				},
+				["82848"] = {
+					"82848", -- [1]
+					"Massacre", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Ability_Creature_Disease_02", -- [4]
+					["id"] = 1023,
+				},
+				["162186"] = {
+					"162186", -- [1]
+					"Expel Magic: Arcane", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
+					["id"] = 1723,
+				},
 				["158385"] = {
 					"158385", -- [1]
 					"Pulverize", -- [2]
@@ -9440,12 +9361,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Stone_16", -- [4]
 					["id"] = 1719,
 				},
-				["180004"] = {
-					"180004", -- [1]
-					"Enforcer's Onslaught", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
-					["id"] = 1784,
+				["182225"] = {
+					"182225", -- [1]
+					"Rain of Chaos", -- [2]
+					62, -- [3]
+					"Interface\\Icons\\ability_warlock_burningembersgreen", -- [4]
+					["id"] = 1799,
 				},
 				["188510"] = {
 					"188510", -- [1]
@@ -9510,19 +9431,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_felarakkoa_focusedblast", -- [4]
 					["id"] = 1788,
 				},
-				["159113"] = {
-					"159113", -- [1]
-					"Impale", -- [2]
-					37, -- [3]
-					"Interface\\Icons\\Ability_Rogue_HungerforBlood", -- [4]
-					["id"] = 1721,
+				["162894"] = {
+					"162894", -- [1]
+					"Gift of Earth", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\ability_earthenfury_giftofearth", -- [4]
+					["id"] = 1722,
 				},
-				["143502"] = {
-					"143502", -- [1]
-					"Execute", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\INV_Sword_48", -- [4]
-					["id"] = 1603,
+				["144758"] = {
+					"144758", -- [1]
+					"Desecrate", -- [2]
+					11, -- [3]
+					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
+					["id"] = 1623,
 				},
 				["143385"] = {
 					"143385", -- [1]
@@ -9531,19 +9452,19 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_shaman_staticshock", -- [4]
 					["id"] = 1601,
 				},
-				["183885"] = {
-					"183885", -- [1]
-					"Mirror Images", -- [2]
-					78, -- [3]
-					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
-					["id"] = 1798,
+				["181275"] = {
+					"181275", -- [1]
+					"Curse of the Legion: Geschan*", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\spell_warlock_summonterrorguard", -- [4]
+					["id"] = 1795,
 				},
-				["182225"] = {
-					"182225", -- [1]
-					"Rain of Chaos", -- [2]
-					62, -- [3]
-					"Interface\\Icons\\ability_warlock_burningembersgreen", -- [4]
-					["id"] = 1799,
+				["-8220"] = {
+					"-8220", -- [1]
+					"Look Within", -- [2]
+					60, -- [3]
+					"Interface\\Icons\\ability_titankeeper_testofconfidence", -- [4]
+					["id"] = 1624,
 				},
 				["78006"] = {
 					"78006", -- [1]
@@ -9559,12 +9480,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
 					["id"] = 1786,
 				},
-				["phase"] = {
-					"phase", -- [1]
-					"Next phase", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
-					["id"] = 1025,
+				["184681"] = {
+					"184681", -- [1]
+					"Wailing Horror (1)", -- [2]
+					75, -- [3]
+					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
+					["id"] = 1798,
 				},
 				["184657"] = {
 					"184657", -- [1]
@@ -9580,26 +9501,26 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfellord_felspike", -- [4]
 					["id"] = 1799,
 				},
-				["162894"] = {
-					"162894", -- [1]
-					"Gift of Earth", -- [2]
+				["159113"] = {
+					"159113", -- [1]
+					"Impale", -- [2]
+					37, -- [3]
+					"Interface\\Icons\\Ability_Rogue_HungerforBlood", -- [4]
+					["id"] = 1721,
+				},
+				["-8202"] = {
+					"-8202", -- [1]
+					"The Assembly Line (2)", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\Inv_crate_03", -- [4]
+					["id"] = 1601,
+				},
+				["144498"] = {
+					"144498", -- [1]
+					"Explosive Tar", -- [2]
 					10, -- [3]
-					"Interface\\Icons\\ability_earthenfury_giftofearth", -- [4]
-					["id"] = 1722,
-				},
-				["160013"] = {
-					"160013", -- [1]
-					"Decay (2)", -- [2]
-					9.5, -- [3]
-					"Interface\\Icons\\Spell_Nature_WispSplodeGreen", -- [4]
-					["id"] = 1720,
-				},
-				["144758"] = {
-					"144758", -- [1]
-					"Desecrate", -- [2]
-					11, -- [3]
-					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
-					["id"] = 1623,
+					"Interface\\Icons\\spell_yorsahj_bloodboil_black", -- [4]
+					["id"] = 1600,
 				},
 				["179583"] = {
 					"179583", -- [1]
@@ -9608,12 +9529,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfellord_felfissure", -- [4]
 					["id"] = 1777,
 				},
-				["172747"] = {
-					"172747", -- [1]
-					"Expel Magic: Frost", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\spell_frost_frozenorb", -- [4]
-					["id"] = 1723,
+				["injection_tank"] = {
+					"injection_tank", -- [1]
+					"Injection", -- [2]
+					9, -- [3]
+					"INTERFACE\\ICONS\\inv_gizmo_runichealthinjector", -- [4]
+					["id"] = 1593,
 				},
 				["186407"] = {
 					"186407", -- [1]
@@ -9622,12 +9543,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_fel_incinerate", -- [4]
 					["id"] = 1800,
 				},
-				["-8220"] = {
-					"-8220", -- [1]
-					"Look Within", -- [2]
-					60, -- [3]
-					"Interface\\Icons\\ability_titankeeper_testofconfidence", -- [4]
-					["id"] = 1624,
+				["180004"] = {
+					"180004", -- [1]
+					"Enforcer's Onslaught", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
+					["id"] = 1784,
 				},
 				["144328"] = {
 					"144328", -- [1]
@@ -9636,12 +9557,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_Powder_Iron", -- [4]
 					["id"] = 1606,
 				},
-				["184681"] = {
-					"184681", -- [1]
-					"Wailing Horror (1)", -- [2]
-					75, -- [3]
-					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
-					["id"] = 1798,
+				["living_mushroom"] = {
+					"living_mushroom", -- [1]
+					"Living Mushroom", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\inv_misc_starspecklemushroom", -- [4]
+					["id"] = 1720,
 				},
 				["181973"] = {
 					"181973", -- [1]
@@ -9664,19 +9585,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_Shadesofdarkness", -- [4]
 					["id"] = 1595,
 				},
-				["181827"] = {
-					"181827", -- [1]
-					"Fel Conduit", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
-					["id"] = 1788,
+				["184369"] = {
+					"184369", -- [1]
+					"Howling Axe", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
+					["id"] = 1778,
 				},
-				["-8202"] = {
-					"-8202", -- [1]
-					"The Assembly Line (2)", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\Inv_crate_03", -- [4]
-					["id"] = 1601,
+				["160013"] = {
+					"160013", -- [1]
+					"Decay (2)", -- [2]
+					9.5, -- [3]
+					"Interface\\Icons\\Spell_Nature_WispSplodeGreen", -- [4]
+					["id"] = 1720,
 				},
 				["144985"] = {
 					"144985", -- [1]
@@ -9720,12 +9641,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Sunder", -- [4]
 					["id"] = 1603,
 				},
-				["injection_tank"] = {
-					"injection_tank", -- [1]
-					"Injection", -- [2]
-					9, -- [3]
-					"INTERFACE\\ICONS\\inv_gizmo_runichealthinjector", -- [4]
-					["id"] = 1593,
+				["172747"] = {
+					"172747", -- [1]
+					"Expel Magic: Frost", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\spell_frost_frozenorb", -- [4]
+					["id"] = 1723,
 				},
 				["143423"] = {
 					"143423", -- [1]
@@ -9734,12 +9655,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_MindShear", -- [4]
 					["id"] = 1598,
 				},
-				["living_mushroom"] = {
-					"living_mushroom", -- [1]
-					"Living Mushroom", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\inv_misc_starspecklemushroom", -- [4]
-					["id"] = 1720,
+				["79339"] = {
+					"79339", -- [1]
+					"Explosive Cinders", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
+					["id"] = 1026,
 				},
 				["190050"] = {
 					"190050", -- [1]
@@ -9762,12 +9683,12 @@ _detalhes_database = {
 					"Interface\\ICONS\\INV_Misc_Bomb_02.blp", -- [4]
 					["id"] = 1600,
 				},
-				["143503"] = {
-					"143503", -- [1]
-					"<Cast: War Song>", -- [2]
-					3, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
-					["id"] = 1603,
+				["143337"] = {
+					"143337", -- [1]
+					"Mutate", -- [2]
+					23, -- [3]
+					"Interface\\Icons\\ability_rikkal_genetics", -- [4]
+					["id"] = 1593,
 				},
 				["157943"] = {
 					"157943", -- [1]
@@ -9776,12 +9697,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_whirlwind", -- [4]
 					["id"] = 1719,
 				},
-				["79339"] = {
-					"79339", -- [1]
-					"Explosive Cinders", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
-					["id"] = 1026,
+				["phase"] = {
+					"phase", -- [1]
+					"Next phase", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
+					["id"] = 1025,
 				},
 				["towers"] = {
 					"towers", -- [1]
@@ -9818,12 +9739,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_creature_poison_02", -- [4]
 					["id"] = 1606,
 				},
-				["143428"] = {
-					"143428", -- [1]
-					"Tail Lash", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\Ability_CriticalStrike", -- [4]
-					["id"] = 1599,
+				["142826"] = {
+					"142826", -- [1]
+					"Arcing Smash (1)", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\spell_shaman_earthquake", -- [4]
+					["id"] = 1595,
 				},
 				["-11462"] = {
 					"-11462", -- [1]
@@ -9839,12 +9760,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_shaman_unleashweapon_frost", -- [4]
 					["id"] = 1606,
 				},
-				["77690"] = {
-					"77690", -- [1]
-					"Lava Spew", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\Spell_Shaman_LavaBurst", -- [4]
-					["id"] = 1024,
+				["145065"] = {
+					"145065", -- [1]
+					"Mind Control", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\ability_garrosh_touch_of_yshaarj", -- [4]
+					["id"] = 1623,
 				},
 				["182001"] = {
 					"182001", -- [1]
@@ -9853,19 +9774,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
 					["id"] = 1785,
 				},
-				["145065"] = {
-					"145065", -- [1]
-					"Mind Control", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\ability_garrosh_touch_of_yshaarj", -- [4]
-					["id"] = 1623,
-				},
-				["142826"] = {
-					"142826", -- [1]
-					"Arcing Smash (1)", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\spell_shaman_earthquake", -- [4]
-					["id"] = 1595,
+				["77690"] = {
+					"77690", -- [1]
+					"Lava Spew", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\Spell_Shaman_LavaBurst", -- [4]
+					["id"] = 1024,
 				},
 				["148677"] = {
 					"148677", -- [1]
@@ -9873,6 +9787,13 @@ _detalhes_database = {
 					42, -- [3]
 					"Interface\\Icons\\ability_whirlwind", -- [4]
 					["id"] = 1593,
+				},
+				["143428"] = {
+					"143428", -- [1]
+					"Tail Lash", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\Ability_CriticalStrike", -- [4]
+					["id"] = 1599,
 				},
 				["182459"] = {
 					"182459", -- [1]
@@ -9888,33 +9809,33 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
 					["id"] = 1722,
 				},
-				["143337"] = {
-					"143337", -- [1]
-					"Mutate", -- [2]
-					23, -- [3]
-					"Interface\\Icons\\ability_rikkal_genetics", -- [4]
-					["id"] = 1593,
+				["142851"] = {
+					"142851", -- [1]
+					"Adds (1)", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\spell_nature_earthquake", -- [4]
+					["id"] = 1595,
 				},
-				["181275"] = {
-					"181275", -- [1]
-					"Curse of the Legion: Geschan*", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\spell_warlock_summonterrorguard", -- [4]
-					["id"] = 1795,
+				["183885"] = {
+					"183885", -- [1]
+					"Mirror Images", -- [2]
+					78, -- [3]
+					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
+					["id"] = 1798,
 				},
-				["144498"] = {
-					"144498", -- [1]
-					"Explosive Tar", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\spell_yorsahj_bloodboil_black", -- [4]
-					["id"] = 1600,
+				["143502"] = {
+					"143502", -- [1]
+					"Execute", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\INV_Sword_48", -- [4]
+					["id"] = 1603,
 				},
-				["184369"] = {
-					"184369", -- [1]
-					"Howling Axe", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
-					["id"] = 1778,
+				["181827"] = {
+					"181827", -- [1]
+					"Fel Conduit", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
+					["id"] = 1788,
 				},
 				["184449"] = {
 					"184449", -- [1]
@@ -9930,19 +9851,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_warrior_charge", -- [4]
 					["id"] = 1778,
 				},
-				["142851"] = {
-					"142851", -- [1]
-					"Adds (1)", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\spell_nature_earthquake", -- [4]
-					["id"] = 1595,
+				["143503"] = {
+					"143503", -- [1]
+					"<Cast: War Song>", -- [2]
+					3, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
+					["id"] = 1603,
 				},
-				["144396"] = {
-					"144396", -- [1]
-					"Vengeful Strikes", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\sha_spell_fire_bluerainoffire", -- [4]
-					["id"] = 1598,
+				["184964"] = {
+					"184964", -- [1]
+					"Shackled Torment (1)", -- [2]
+					27, -- [3]
+					"Interface\\Icons\\ability_warlock_soullink", -- [4]
+					["id"] = 1799,
 				},
 				["158200"] = {
 					"158200", -- [1]
@@ -9972,12 +9893,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Racial_Cannibalize", -- [4]
 					["id"] = 1024,
 				},
-				["184964"] = {
-					"184964", -- [1]
-					"Shackled Torment (1)", -- [2]
-					27, -- [3]
-					"Interface\\Icons\\ability_warlock_soullink", -- [4]
-					["id"] = 1799,
+				["144396"] = {
+					"144396", -- [1]
+					"Vengeful Strikes", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\sha_spell_fire_bluerainoffire", -- [4]
+					["id"] = 1598,
 				},
 				["-8298"] = {
 					"-8298", -- [1]
@@ -10000,12 +9921,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_sandstorm", -- [4]
 					["id"] = 1784,
 				},
-				["162186"] = {
-					"162186", -- [1]
-					"Expel Magic: Arcane", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
-					["id"] = 1723,
+				["143701"] = {
+					"143701", -- [1]
+					"Whirling", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\Ability_Druid_GaleWinds", -- [4]
+					["id"] = 1593,
 				},
 				["182020"] = {
 					"182020", -- [1]
@@ -10021,12 +9942,12 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Kilruk_Reave.blp", -- [4]
 					["id"] = 1593,
 				},
-				["-8325"] = {
-					"-8325", -- [1]
-					"Explosive Despair on YOU!", -- [2]
-					10, -- [3]
-					"Interface\\ICONS\\Ability_DeathKnight_Asphixiate.blp", -- [4]
-					["id"] = 1623,
+				["181255"] = {
+					"181255", -- [1]
+					"Fel Imp-losion", -- [2]
+					38, -- [3]
+					"Interface\\Icons\\Ability_Warlock_EmpoweredImp", -- [4]
+					["id"] = 1795,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -10070,19 +9991,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelmagnaron_handempowered", -- [4]
 					["id"] = 1787,
 				},
-				["179407"] = {
-					"179407", -- [1]
-					"Disembodied on YOU!", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
-					["id"] = 1777,
-				},
-				["arena_sweeper"] = {
-					"arena_sweeper", -- [1]
-					"Arena Sweeper", -- [2]
-					55, -- [3]
-					"Interface\\Icons\\ability_kick", -- [4]
-					["id"] = 1721,
+				["144400"] = {
+					"144400", -- [1]
+					"Swelling Pride (1)", -- [2]
+					77, -- [3]
+					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
+					["id"] = 1604,
 				},
 				["-9921"] = {
 					"-9921", -- [1]
@@ -10091,12 +10005,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_warrior_shieldbreak", -- [4]
 					["id"] = 1705,
 				},
-				["-8073"] = {
-					"-8073", -- [1]
-					"Aim (1)", -- [2]
-					38, -- [3]
-					"Interface\\ICONS\\Ability_Hisek_Aim.blp", -- [4]
-					["id"] = 1593,
+				["181354"] = {
+					"181354", -- [1]
+					"Glaive Combo", -- [2]
+					45, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Challange", -- [4]
+					["id"] = 1795,
+				},
+				["156467"] = {
+					"156467", -- [1]
+					"Destructive Resonance", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanemines", -- [4]
+					["id"] = 1705,
 				},
 				["adds"] = {
 					"adds", -- [1]
@@ -10126,12 +10047,12 @@ _detalhes_database = {
 					"Interface\\Icons\\inv_elemental_mote_fire01", -- [4]
 					["id"] = 1606,
 				},
-				["181999"] = {
-					"181999", -- [1]
-					"Firebomb (1)", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
-					["id"] = 1785,
+				["143243"] = {
+					"143243", -- [1]
+					"Rapid Fire", -- [2]
+					49, -- [3]
+					"Interface\\Icons\\Ability_Hunter_RunningShot", -- [4]
+					["id"] = 1593,
 				},
 				["spore_shooter"] = {
 					"spore_shooter", -- [1]
@@ -10161,12 +10082,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossmannoroth_mannorothsgaze", -- [4]
 					["id"] = 1795,
 				},
-				["156471"] = {
-					"156471", -- [1]
-					"Arcane Aberration (1)", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\ability_socererking_summonaberration", -- [4]
-					["id"] = 1705,
+				["160734"] = {
+					"160734", -- [1]
+					"Vulnerability", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelHellfire", -- [4]
+					["id"] = 1723,
 				},
 				["179711"] = {
 					"179711", -- [1]
@@ -10203,19 +10124,19 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_ability_rogue_bloodyeye", -- [4]
 					["id"] = 1604,
 				},
-				["181292"] = {
-					"181292", -- [1]
-					"Fel Outpouring", -- [2]
-					51, -- [3]
-					"Interface\\Icons\\spell_yorsahj_bloodboil_purple", -- [4]
-					["id"] = 1787,
+				["143019"] = {
+					"143019", -- [1]
+					"Corrupted Brew", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\sha_inv_elemental_primal_shadow", -- [4]
+					["id"] = 1598,
 				},
-				["190223"] = {
-					"190223", -- [1]
-					"Fel Strike", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen", -- [4]
-					["id"] = 1800,
+				["181735"] = {
+					"181735", -- [1]
+					"Felseeker", -- [2]
+					60, -- [3]
+					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
+					["id"] = 1795,
 				},
 				["143958"] = {
 					"143958", -- [1]
@@ -10231,19 +10152,19 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
 					["id"] = 1785,
 				},
-				["144563"] = {
-					"144563", -- [1]
-					"Imprison", -- [2]
-					52.5, -- [3]
-					"Interface\\Icons\\sha_ability_rogue_sturdyrecuperate", -- [4]
-					["id"] = 1604,
+				["186961"] = {
+					"186961", -- [1]
+					"Nether Banish", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
+					["id"] = 1799,
 				},
-				["slump"] = {
-					"slump", -- [1]
-					"Rodeo", -- [2]
-					100, -- [3]
-					"Interface\\Icons\\Ability_Mount_Dreadsteed", -- [4]
-					["id"] = 1024,
+				["81007"] = {
+					"81007", -- [1]
+					"Shadowblaze", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
+					["id"] = 1026,
 				},
 				["81272"] = {
 					"81272", -- [1]
@@ -10259,19 +10180,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
 					["id"] = 1787,
 				},
-				["158563"] = {
-					"158563", -- [1]
-					"Kick to the Face", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\ability_kick", -- [4]
-					["id"] = 1705,
+				["182826"] = {
+					"182826", -- [1]
+					"Doomfire", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
+					["id"] = 1799,
 				},
-				["147209"] = {
-					"147209", -- [1]
-					"Malice (1)", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Ability_Warlock_Eradication", -- [4]
-					["id"] = 1623,
+				["183329"] = {
+					"183329", -- [1]
+					"Apocalypse (1)", -- [2]
+					51.5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowPower", -- [4]
+					["id"] = 1794,
 				},
 				["flesh_eater"] = {
 					"flesh_eater", -- [1]
@@ -10280,12 +10201,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Creature_Disease_02", -- [4]
 					["id"] = 1720,
 				},
-				["-8179"] = {
-					"-8179", -- [1]
-					"Borer Drill", -- [2]
-					19, -- [3]
-					"Interface\\ICONS\\ability_mount_rocketmount3.blp", -- [4]
-					["id"] = 1600,
+				["portals"] = {
+					"portals", -- [1]
+					"Portals Move", -- [2]
+					138, -- [3]
+					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
+					["id"] = 1794,
 				},
 				["-7920"] = {
 					"-7920", -- [1]
@@ -10355,10 +10276,10 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["y"] = -41.5555419921875,
 			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -10378,7 +10299,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
@@ -11562,7 +11483,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -11571,7 +11492,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -11587,38 +11508,31 @@ _detalhes_database = {
 			["pre_pot_healers"] = false,
 		},
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
-	["announce_firsthit"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
+	["character_data"] = {
+		["logons"] = 5793,
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Vault of the Wardens",
 		["started"] = false,
-		["segment_id"] = 3,
+		["segment_id"] = 6,
 		["ej_id"] = 707,
-		["started_at"] = 1519428151.7,
-		["run_id"] = 277,
-		["level"] = 24,
+		["started_at"] = 1522167874.7,
+		["run_id"] = 351,
+		["level"] = 15,
 		["dungeon_zone_id"] = 1493,
-		["previous_boss_killed_at"] = 1519428929,
+		["previous_boss_killed_at"] = 1522169016,
 	},
-	["combat_counter"] = 63316,
-	["combat_id"] = 658,
+	["ignore_nicktag"] = false,
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1523034210,
+	},
+	["last_version"] = "v7.3.5.5469",
+	["combat_id"] = 142,
 	["savedStyles"] = {
 	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["reverse"] = false,
-		["channel"] = "SELF",
-	},
-	["last_realversion"] = 129,
+	["last_instance_time"] = 1522167854,
+	["last_realversion"] = 130,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 3,
@@ -11626,20 +11540,11 @@ _detalhes_database = {
 		["where"] = 3,
 	},
 	["force_font_outline"] = "",
-	["nick_tag_cache"] = {
-		["last_version"] = 9,
-		[85162672] = {
-			"Vicsur", -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			false, -- [5]
-			false, -- [6]
-			5, -- [7]
-		},
-		["nextreset"] = 1519925461,
+	["last_day"] = "30",
+	["announce_firsthit"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
 	},
-	["last_day"] = "24",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {
@@ -11657,62 +11562,6 @@ _detalhes_database = {
 	},
 	["cached_specs"] = {
 		["Player-1303-042451A8"] = 250,
-		["Creature-0-1467-1516-13295-69792-00001092EA"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000108FC2"] = 269,
-		["Creature-0-3892-1492-23204-69792-0000108BC6"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000109038"] = 269,
-		["Creature-0-1467-1493-15359-69791-0000109C4C"] = 269,
-		["Creature-0-1467-1516-13295-69791-0000108EC4"] = 269,
-		["Creature-0-3892-1493-27695-69792-000010A248"] = 269,
-		["Player-3686-060E6486"] = 65,
-		["Player-3687-0872643A"] = 251,
-		["Creature-0-3892-1492-23204-69791-0000108A2E"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000109353"] = 269,
-		["Creature-0-3892-1492-23204-69791-0000108B4C"] = 269,
-		["Creature-0-3892-1493-27235-69792-0000109FC2"] = 269,
-		["Player-1597-0A74EAAB"] = 251,
-		["Creature-0-1467-1516-13295-69792-00001092BC"] = 269,
-		["Creature-0-3892-1492-23204-69792-00001087EC"] = 269,
-		["Creature-0-1467-1516-13295-69792-00001090E9"] = 269,
-		["Creature-0-3892-1492-22882-69792-0000108640"] = 269,
-		["Creature-0-3892-1493-27695-69792-000010A487"] = 269,
-		["Creature-0-1467-1493-15359-69792-0000109D54"] = 269,
-		["Creature-0-3892-1493-27695-69792-000010A5F4"] = 269,
-		["Creature-0-3892-1493-27235-69792-000010A087"] = 269,
-		["Creature-0-1467-1516-13295-69792-00001095AA"] = 269,
-		["Creature-0-3892-1493-27235-69792-0000109F58"] = 269,
-		["Creature-0-3892-1492-22882-69792-00001085EA"] = 269,
-		["Creature-0-3892-1493-27695-69792-000010A42C"] = 269,
-		["Creature-0-3892-1493-27695-69792-000010A55C"] = 269,
-		["Creature-0-3892-1493-27695-69792-000010A353"] = 269,
-		["Player-3686-062B271B"] = 269,
-		["Creature-0-3892-1493-27695-69792-000010A2F1"] = 269,
-		["Creature-0-3892-1493-27695-69792-000010A2AE"] = 269,
-		["Creature-0-1467-1516-13295-69792-000010941B"] = 269,
-		["Creature-0-3892-1493-27235-69792-000010A026"] = 269,
-		["Creature-0-3892-1492-23204-69792-0000108951"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000108F36"] = 269,
-		["Player-1303-09316579"] = 251,
-		["Creature-0-1467-1493-15359-69792-0000109BBC"] = 269,
-		["Player-3686-05ACAE90"] = 102,
-		["Creature-0-1467-1516-13295-69792-0000108E99"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000109680"] = 269,
-		["Creature-0-1467-1516-13295-69792-00001096CF"] = 269,
-		["Creature-0-1467-1516-13295-69792-00001091CE"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000109001"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000109644"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000109617"] = 269,
-		["Creature-0-1467-1516-13295-69792-00001095D8"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000109121"] = 269,
-		["Creature-0-3892-1492-23204-69792-000010887B"] = 269,
-		["Creature-0-3892-1492-23204-69792-0000108787"] = 269,
-		["Creature-0-1467-1516-13295-69792-0000109379"] = 269,
-		["Creature-0-1467-1516-13295-69791-0000108E62"] = 269,
-		["Creature-0-1467-1516-13295-69792-00001094EF"] = 269,
-		["Creature-0-1467-1516-13295-69792-000010949F"] = 269,
-		["Creature-0-3892-1492-23204-69792-0000108AAF"] = 269,
-		["Player-3686-05B7AF0E"] = 265,
-		["Creature-0-1467-1516-13295-69792-00001091A1"] = 269,
-		["Creature-0-3892-1492-23204-69792-0000108991"] = 269,
+		["Player-1316-04B71FF5"] = 252,
 	},
 }

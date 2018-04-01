@@ -325,11 +325,13 @@ local function unpackABAction(e, s)
 end
 local function RK_SyncRing(name, force, tok)
 	local desc, changed, cid = RK_RingDesc[name], (force == true), RK_CollectionIDs[name]
-	if not RK_IsRelevantRingDescription(desc) then return; end
+	if not RK_IsRelevantRingDescription(desc) then return end
 	tok = tok or AB:GetLastObserverUpdateToken("*")
 	if not force and tok == desc._lastUpdateToken then return end
 	desc._lastUpdateToken = tok
 	
+	local limit = desc.limit
+	desc.sortScope = limit == FULLNAME and 30 or limit == CLASS and 20 or 10
 	if not cid then
 		wipe(sharedCollection)
 		changed, cid = true, AB:CreateActionSlot(nil, nil, "collection", sharedCollection)
@@ -407,6 +409,7 @@ local function RK_SerializeDescription(props)
 		dropUnderscoreKeys(slice)
 	end
 	dropUnderscoreKeys(props)
+	props.sortScope = nil
 	return props
 end
 function EV.PLAYER_REGEN_DISABLED()
@@ -477,7 +480,7 @@ function RingKeeper:GetVersion()
 	return RK_Version, RK_Rev
 end
 function RingKeeper:SetRing(name, desc)
-	assert(type(name) == "string" and (type(desc) == "table" or desc == false), "Syntax: RingKeeper:SetRing(name, descTable or false)", 2);
+	assert(type(name) == "string" and (type(desc) == "table" or desc == false), "Syntax: RingKeeper:SetRing(name, descTable or false)", 2)
 	if not unlocked then
 		queue[name] = desc
 	elseif desc == false then

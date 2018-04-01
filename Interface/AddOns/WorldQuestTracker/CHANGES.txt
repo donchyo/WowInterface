@@ -1,7 +1,7 @@
-changeset:   273:55e8b8fb3141
-tag:         v7.3.5.273-release
+changeset:   279:a47619685b64
+tag:         v7.3.5.279-release
 user:        Tercio
-date:        Fri Feb 23 13:14:19 2018 -0300
-summary:     - Removed the string telling about the next knownledge update on the artifact power tooltip.
+date:        Fri Mar 30 12:58:57 2018 -0300
+summary:     - Added option to change the size of the text on the quest tracker.
 
 

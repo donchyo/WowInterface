@@ -188,10 +188,10 @@ SLDTDB = {
 					["yOff"] = -110,
 				},
 				["Zuriz - Grim Batol"] = {
-					["showIcon"] = false,
 					["enabled"] = false,
-					["yOff"] = -110,
 					["xOff"] = -369,
+					["showIcon"] = false,
+					["yOff"] = -110,
 				},
 				["Namji - Grim Batol"] = {
 					["enabled"] = false,
@@ -451,6 +451,222 @@ SLDTDB = {
 				},
 			},
 		},
+		["Memory"] = {
+			["profiles"] = {
+				["Donch - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Krixidk - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Kroxi - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Bawsi - Aggra (Português)"] = {
+					["yOff"] = "-12",
+					["fontSize"] = 13,
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["gfont"] = true,
+					["forceShow"] = true,
+				},
+				["Bawsie - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Krixidh - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["fdg"] = {
+					["yOff"] = "-12",
+					["fontSize"] = 13,
+					["forceShow"] = true,
+					["aF"] = "TOPRIGHT",
+					["gfont"] = true,
+					["xOff"] = "-40",
+				},
+				["Lilgaykrixi - Kazzak"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["forceShow"] = true,
+					["aF"] = "TOPRIGHT",
+					["gfont"] = true,
+					["fontSize"] = 13,
+				},
+				["Treefiddy - Aggra (Português)"] = {
+					["yOff"] = "-12",
+					["forceShow"] = true,
+					["fontSize"] = 13,
+					["aF"] = "TOPRIGHT",
+					["gfont"] = true,
+					["xOff"] = "-40",
+				},
+				["Skullflower"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["fontSize"] = 13,
+					["aF"] = "TOPRIGHT",
+					["gfont"] = true,
+					["forceShow"] = true,
+				},
+				["Zolution - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Krixi - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Líttle - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Zetiz - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Gnomalock - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Zuriz - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Namji - Grim Batol"] = {
+					["yOff"] = "-12",
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+				["Nyrith - Grim Batol"] = {
+					["yOff"] = -12,
+					["xOff"] = "-40",
+					["aF"] = "TOPRIGHT",
+					["fontSize"] = 13,
+				},
+			},
+		},
+		["Friends"] = {
+			["profiles"] = {
+				["Donch - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Krixidk - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Kroxi - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Bawsi - Aggra (Português)"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Bawsie - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Krixidh - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["fdg"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Lilgaykrixi - Kazzak"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Treefiddy - Aggra (Português)"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Skullflower"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Zolution - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Krixi - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Líttle - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Zetiz - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Gnomalock - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Zuriz - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Namji - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+				["Nyrith - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -180,
+					["yOff"] = 127,
+				},
+			},
+		},
 		["Currency"] = {
 			["profiles"] = {
 				["Donch - Grim Batol"] = {
@@ -545,339 +761,97 @@ SLDTDB = {
 				},
 			},
 		},
-		["Friends"] = {
+		["Armor"] = {
 			["profiles"] = {
 				["Donch - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Krixidk - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Kroxi - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Bawsi - Aggra (Português)"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Bawsie - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Krixidh - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["fdg"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Lilgaykrixi - Kazzak"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Treefiddy - Aggra (Português)"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Skullflower"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Zolution - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Krixi - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Líttle - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Zetiz - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Gnomalock - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Zuriz - Grim Batol"] = {
 					["enabled"] = false,
-					["yOff"] = 127,
-					["xOff"] = -180,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Namji - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 				["Nyrith - Grim Batol"] = {
 					["enabled"] = false,
-					["xOff"] = -180,
-					["yOff"] = 127,
-				},
-			},
-		},
-		["Memory"] = {
-			["profiles"] = {
-				["Donch - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Krixidk - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Kroxi - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Bawsi - Aggra (Português)"] = {
-					["yOff"] = "-12",
-					["fontSize"] = 13,
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["gfont"] = true,
-					["forceShow"] = true,
-				},
-				["Bawsie - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Krixidh - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["fdg"] = {
-					["yOff"] = "-12",
-					["fontSize"] = 13,
-					["aF"] = "TOPRIGHT",
-					["forceShow"] = true,
-					["gfont"] = true,
-					["xOff"] = "-40",
-				},
-				["Lilgaykrixi - Kazzak"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["forceShow"] = true,
-					["aF"] = "TOPRIGHT",
-					["gfont"] = true,
-					["fontSize"] = 13,
-				},
-				["Treefiddy - Aggra (Português)"] = {
-					["yOff"] = "-12",
-					["forceShow"] = true,
-					["fontSize"] = 13,
-					["aF"] = "TOPRIGHT",
-					["gfont"] = true,
-					["xOff"] = "-40",
-				},
-				["Skullflower"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["fontSize"] = 13,
-					["aF"] = "TOPRIGHT",
-					["gfont"] = true,
-					["forceShow"] = true,
-				},
-				["Zolution - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Krixi - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Líttle - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Zetiz - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Gnomalock - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Zuriz - Grim Batol"] = {
-					["aF"] = "TOPRIGHT",
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["fontSize"] = 13,
-				},
-				["Namji - Grim Batol"] = {
-					["yOff"] = "-12",
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-				["Nyrith - Grim Batol"] = {
-					["yOff"] = -12,
-					["xOff"] = "-40",
-					["aF"] = "TOPRIGHT",
-					["fontSize"] = 13,
-				},
-			},
-		},
-		["Mail"] = {
-			["profiles"] = {
-				["Donch - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Krixidk - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Kroxi - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Bawsi - Aggra (Português)"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Bawsie - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Gnomalock - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Donchyo - Shattered Hand"] = {
-					["total"] = 2,
-				},
-				["fdg"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Krixiyo - Twisting Nether"] = {
-					["total"] = 1,
-				},
-				["Zetiz - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Daimtårta - Aggra (Português)"] = {
-					["total"] = 2,
-					["new"] = 2,
-				},
-				["Treefiddy - Aggra (Português)"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Kroxi - Crushridge"] = {
-					["new"] = 2,
-					["total"] = 2,
-				},
-				["Krixidh - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Skullflower"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Nyrith - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Spacegoatx - Aggra (Português)"] = {
-					["total"] = 2,
-					["new"] = 2,
-				},
-				["Lilgaykrixi - Kazzak"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Asdasdasdfaf - Grim Batol"] = {
-					["total"] = 1,
-					["new"] = 1,
-				},
-				["Líttle - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Zolution - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Namji - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Zuriz - Grim Batol"] = {
-					["enabled"] = false,
-					["yOff"] = 172,
-					["xOff"] = -170,
-				},
-				["Krixi - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -170,
-					["yOff"] = 172,
-				},
-				["Donch - Shattered Hand"] = {
-					["total"] = 1,
-					["new"] = 1,
+					["xOff"] = -172,
+					["yOff"] = 150,
 				},
 			},
 		},
@@ -918,14 +892,14 @@ SLDTDB = {
 						["Bawsie"] = {
 							["gold"] = 1033492952,
 						},
-						["Kroxi"] = {
-							["gold"] = 350091069,
-						},
-						["Namji"] = {
-							["gold"] = 704576940,
+						["Donch"] = {
+							["gold"] = 372546680,
 						},
 						["Zuriz"] = {
 							["gold"] = 377819240,
+						},
+						["Namji"] = {
+							["gold"] = 704576940,
 						},
 						["Zetiz"] = {
 							["gold"] = 327810898,
@@ -936,8 +910,8 @@ SLDTDB = {
 						["Nyrith"] = {
 							["gold"] = 468713896,
 						},
-						["Donch"] = {
-							["gold"] = 372546680,
+						["Kroxi"] = {
+							["gold"] = 350091069,
 						},
 					},
 				},
@@ -1059,8 +1033,8 @@ SLDTDB = {
 				},
 				["Zuriz - Grim Batol"] = {
 					["enabled"] = false,
-					["yOff"] = 120,
 					["xOff"] = -170,
+					["yOff"] = 120,
 				},
 				["Namji - Grim Batol"] = {
 					["enabled"] = false,
@@ -1071,100 +1045,6 @@ SLDTDB = {
 					["enabled"] = false,
 					["xOff"] = -170,
 					["yOff"] = 120,
-				},
-			},
-		},
-		["Armor"] = {
-			["profiles"] = {
-				["Donch - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Krixidk - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Kroxi - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Bawsi - Aggra (Português)"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Bawsie - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Krixidh - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["fdg"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Lilgaykrixi - Kazzak"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Treefiddy - Aggra (Português)"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Skullflower"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Zolution - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Krixi - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Líttle - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Zetiz - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Gnomalock - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Zuriz - Grim Batol"] = {
-					["enabled"] = false,
-					["yOff"] = 150,
-					["xOff"] = -172,
-				},
-				["Namji - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
-				},
-				["Nyrith - Grim Batol"] = {
-					["enabled"] = false,
-					["xOff"] = -172,
-					["yOff"] = 150,
 				},
 			},
 		},
@@ -1229,11 +1109,11 @@ SLDTDB = {
 					["showPVP"] = false,
 					["fontSize"] = 13,
 					["xOff"] = "-160",
-					["yOff"] = "-12",
+					["aF"] = "TOPRIGHT",
 					["anch"] = "UIParent",
 					["format24"] = true,
-					["aF"] = "TOPRIGHT",
 					["gfont"] = true,
+					["yOff"] = "-12",
 				},
 				["Lilgaykrixi - Kazzak"] = {
 					["showPVP"] = false,
@@ -1311,13 +1191,13 @@ SLDTDB = {
 					["xOff"] = "-160",
 				},
 				["Zuriz - Grim Batol"] = {
+					["showPVP"] = false,
+					["fontSize"] = 13,
+					["xOff"] = "-160",
 					["anch"] = "UIParent",
 					["format24"] = true,
 					["aF"] = "TOPRIGHT",
-					["showPVP"] = false,
-					["fontSize"] = 13,
 					["yOff"] = "-12",
-					["xOff"] = "-160",
 				},
 				["Namji - Grim Batol"] = {
 					["showPVP"] = false,
@@ -1336,6 +1216,126 @@ SLDTDB = {
 					["format24"] = true,
 					["aF"] = "TOPRIGHT",
 					["fontSize"] = 13,
+				},
+			},
+		},
+		["Mail"] = {
+			["profiles"] = {
+				["Donch - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Krixidk - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Kroxi - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Bawsi - Aggra (Português)"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Bawsie - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Gnomalock - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Donchyo - Shattered Hand"] = {
+					["total"] = 2,
+				},
+				["fdg"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Krixiyo - Twisting Nether"] = {
+					["total"] = 1,
+				},
+				["Zetiz - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Daimtårta - Aggra (Português)"] = {
+					["total"] = 2,
+					["new"] = 2,
+				},
+				["Treefiddy - Aggra (Português)"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Kroxi - Crushridge"] = {
+					["new"] = 2,
+					["total"] = 2,
+				},
+				["Krixidh - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Skullflower"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Nyrith - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Spacegoatx - Aggra (Português)"] = {
+					["total"] = 2,
+					["new"] = 2,
+				},
+				["Lilgaykrixi - Kazzak"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Asdasdasdfaf - Grim Batol"] = {
+					["total"] = 1,
+					["new"] = 1,
+				},
+				["Líttle - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Zolution - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Namji - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Zuriz - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Krixi - Grim Batol"] = {
+					["enabled"] = false,
+					["xOff"] = -170,
+					["yOff"] = 172,
+				},
+				["Donch - Shattered Hand"] = {
+					["total"] = 1,
+					["new"] = 1,
 				},
 			},
 		},
@@ -1469,12 +1469,12 @@ SLDTDB = {
 					["fontSize"] = 13,
 				},
 				["Zuriz - Grim Batol"] = {
+					["yOff"] = -12,
+					["fontSize"] = 13,
+					["interval"] = "13.0",
 					["strata"] = "MEDIUM",
 					["aF"] = "TOPRIGHT",
-					["yOff"] = -12,
 					["xOff"] = "-120",
-					["interval"] = "13.0",
-					["fontSize"] = 13,
 				},
 				["Namji - Grim Batol"] = {
 					["yOff"] = -12,
@@ -1610,11 +1610,11 @@ SLDTDB = {
 					["fontSize"] = 13,
 				},
 				["Zuriz - Grim Batol"] = {
+					["yOff"] = "-12",
+					["fontSize"] = 13,
 					["strata"] = "MEDIUM",
 					["aF"] = "TOPRIGHT",
-					["yOff"] = "-12",
 					["xOff"] = "-80",
-					["fontSize"] = 13,
 				},
 				["Namji - Grim Batol"] = {
 					["yOff"] = "-12",
@@ -1639,10 +1639,11 @@ SLDTDB = {
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
@@ -1664,6 +1665,10 @@ SLDTDB = {
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 	},
 	["profiles"] = {
+		["Zuriz - Grim Batol"] = {
+			["gFontSize"] = 13,
+			["cFade"] = false,
+		},
 		["Donch - Grim Batol"] = {
 			["gFontSize"] = 13,
 			["cFade"] = false,
@@ -1688,11 +1693,11 @@ SLDTDB = {
 			["gFontSize"] = 13,
 			["cFade"] = false,
 		},
-		["Krixidh - Grim Batol"] = {
+		["Krixiyo - Lightning's Blade"] = {
+		},
+		["Gnomalock - Grim Batol"] = {
 			["cFade"] = false,
 			["gFontSize"] = 13,
-		},
-		["Krixiyo - Lightning's Blade"] = {
 		},
 		["Donchyo - Shattered Hand"] = {
 		},
@@ -1701,19 +1706,16 @@ SLDTDB = {
 			["gFont"] = "2002",
 			["cFade"] = false,
 		},
-		["Zuriz - Grim Batol"] = {
-			["gFontSize"] = 13,
-			["cFade"] = false,
+		["Lowerboost - Lightbringer"] = {
 		},
 		["Menardiairl - Culte de la Rive noire"] = {
 		},
 		["Donch - Crushridge"] = {
 		},
-		["Kroxi - Crushridge"] = {
+		["Krixiyo - Blackmoore"] = {
 		},
-		["Zetiz - Grim Batol"] = {
-			["cFade"] = false,
-			["gFontSize"] = 13,
+		["Nyrith - Grim Batol"] = {
+			["configMode"] = true,
 		},
 		["Daimtårta - Aggra (Português)"] = {
 		},
@@ -1722,7 +1724,7 @@ SLDTDB = {
 			["gFont"] = "2002",
 			["cFade"] = false,
 		},
-		["Krixiyo - Blackmoore"] = {
+		["Kroxi - Crushridge"] = {
 		},
 		["Lilgaykrixi - Kazzak"] = {
 			["gFontSize"] = 10,
@@ -1748,8 +1750,9 @@ SLDTDB = {
 			["cFade"] = false,
 			["gFontSize"] = 13,
 		},
-		["Nyrith - Grim Batol"] = {
-			["configMode"] = true,
+		["Zetiz - Grim Batol"] = {
+			["cFade"] = false,
+			["gFontSize"] = 13,
 		},
 		["Zolution - Grim Batol"] = {
 			["gFontSize"] = 13,
@@ -1757,7 +1760,7 @@ SLDTDB = {
 		},
 		["Greenzuriz - Aggra (Português)"] = {
 		},
-		["Gnomalock - Grim Batol"] = {
+		["Krixidh - Grim Batol"] = {
 			["cFade"] = false,
 			["gFontSize"] = 13,
 		},

@@ -1,6 +1,6 @@
 ## Interface: 70300
 ## Title: OPie
-## Version: Vanilla 2
+## Version: Vanilla 4
 ## Notes: Group abilities into rings that appear when you hold down a binding.
 ## Notes-deDE: Gruppiere Fähigkeiten in Ringen die erscheinen wenn eine Tastenbelegung ausgelöst wird.
 ## Notes-esES: Agrupar habilitades en anillos que se aparecen al presionar teclados.
@@ -15,7 +15,8 @@
 Libs\Evie.lua
 Libs\Niji.lua
 Libs\Mirage.lua
-Libs\Reverse\Reverse.xml
+Libs\AltGameTooltip.xml
+Libs\Reverse.xml
 Libs\ActionBook\ActionBook.xml
 Libs\ActionBook\ActionBookUI.xml
 Locale.lua
@@ -27,5 +28,6 @@ Meta\StanceBar.lua
 Meta\RingKeeper.lua
 Meta\RingKeeperConfig.lua
 Meta\SpecSet.lua
+Meta\DataBroker.lua
 Rings\Common.lua
 Rings\RKRings.lua

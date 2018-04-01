@@ -18,92 +18,93 @@ infSlagBucketDB = {
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
 		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
 		["Donch - Crushridge"] = "Donch - Crushridge",
-		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Inphe - Twisting Nether"] = "Inphe - Twisting Nether",
 		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Infx - Twisting Nether"] = "Infx - Twisting Nether",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
 		["Inpher - Twisting Nether"] = "Inpher - Twisting Nether",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Inphe - Twisting Nether"] = "Inphe - Twisting Nether",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 	},
 	["profiles"] = {
 		["Donch - Grim Batol"] = {
 			["timewalking"] = {
-				["cloak"] = true,
 				["helm"] = false,
+				["cloak"] = true,
 			},
 			["real"] = {
-				["cloak"] = true,
 				["helm"] = false,
+				["cloak"] = true,
 			},
 		},
 		["Kroxi - Grim Batol"] = {
 			["tank"] = {
-				["cloak"] = false,
 				["helm"] = false,
+				["cloak"] = false,
 			},
 			["timwalking prot"] = {
+				["helm"] = false,
 				["cloak"] = true,
-				["helm"] = false,
-			},
-			["dps"] = {
-				["helm"] = false,
-				["cloak"] = false,
-			},
-			["arms"] = {
-				["cloak"] = false,
-				["helm"] = false,
 			},
 			["fury 2h"] = {
+				["cloak"] = false,
+				["helm"] = false,
+			},
+			["arms"] = {
 				["helm"] = false,
 				["cloak"] = false,
+			},
+			["dps"] = {
+				["cloak"] = false,
+				["helm"] = false,
 			},
 			["timewalking"] = {
-				["helm"] = false,
 				["cloak"] = true,
+				["helm"] = false,
 			},
 			["runs"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
 		},
 		["Namji - Grim Batol"] = {
 			["dps tank"] = {
-				["cloak"] = false,
 				["helm"] = true,
+				["cloak"] = false,
 			},
 			["tank"] = {
-				["helm"] = true,
 				["cloak"] = false,
+				["helm"] = true,
 			},
 			["dps farm"] = {
-				["cloak"] = false,
 				["helm"] = true,
+				["cloak"] = false,
 			},
 			["ww"] = {
-				["cloak"] = false,
 				["helm"] = true,
+				["cloak"] = false,
 			},
 			["timewalking"] = {
-				["cloak"] = false,
 				["helm"] = true,
+				["cloak"] = false,
 			},
 			["mw"] = {
-				["helm"] = true,
 				["cloak"] = false,
+				["helm"] = true,
 			},
 		},
 		["Infe - Ravencrest"] = {
@@ -113,26 +114,26 @@ infSlagBucketDB = {
 		},
 		["Bawsie - Grim Batol"] = {
 			["raid"] = {
-				["cloak"] = true,
 				["helm"] = true,
+				["cloak"] = true,
 			},
 			["timewalking"] = {
-				["helm"] = true,
 				["cloak"] = true,
+				["helm"] = true,
 			},
 			["challenged"] = {
-				["cloak"] = true,
 				["helm"] = true,
+				["cloak"] = true,
 			},
 		},
 		["Zolution - Grim Batol"] = {
 			["disc"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
 			["shadow"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
 		},
 		["Inf - Twisting Nether"] = {
@@ -148,30 +149,30 @@ infSlagBucketDB = {
 		},
 		["Nyrith - Grim Batol"] = {
 			["healz"] = {
-				["cloak"] = false,
 				["helm"] = false,
+				["cloak"] = false,
 			},
 			["t3"] = {
-				["cloak"] = true,
 				["helm"] = true,
+				["cloak"] = true,
 			},
 			["GUARDIAN"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
 			["feral"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
-			[" bomkin"] = {
+			["tw guardian"] = {
 				["cloak"] = false,
 				["helm"] = false,
 			},
 			["cms"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
-			["tw guardian"] = {
+			[" bomkin"] = {
 				["helm"] = false,
 				["cloak"] = false,
 			},
@@ -180,190 +181,190 @@ infSlagBucketDB = {
 			["CMS"] = {
 				["helm"] = 1,
 			},
+			["3C"] = {
+				["helm"] = 1,
+			},
 			["2B"] = {
 				["helm"] = 1,
 			},
 			["1A"] = {
-				["helm"] = 1,
-			},
-			["3C"] = {
 				["helm"] = 1,
 			},
 		},
 		["Infeh - Twisting Nether"] = {
+			["1A"] = {
+				["helm"] = 1,
+			},
 			["3C"] = {
 				["helm"] = 1,
 			},
 			["2B"] = {
-				["helm"] = 1,
 				["cloak"] = 1,
-			},
-			["1A"] = {
 				["helm"] = 1,
 			},
 		},
 		["Infe - Twisting Nether"] = {
+			["2B"] = {
+				["helm"] = 1,
+			},
 			["1A"] = {
 				["helm"] = 1,
 			},
 			["3C"] = {
 			},
-			["2B"] = {
-				["helm"] = 1,
-			},
 		},
-		["Lilgaykrixi - Kazzak"] = {
-			["asdas"] = {
+		["Gnomalock - Grim Batol"] = {
+			["affli"] = {
+				["helm"] = false,
+				["cloak"] = false,
+			},
+			["cm"] = {
+				["helm"] = false,
+				["cloak"] = false,
+			},
+			["destro"] = {
 				["cloak"] = false,
 				["helm"] = false,
 			},
-			["asdasd"] = {
-				["cloak"] = false,
+			["pve"] = {
 				["helm"] = false,
+				["cloak"] = false,
 			},
 		},
 		["Inffe - Twisting Nether"] = {
 			["CM's"] = {
 			},
 		},
-		["Krixi - Grim Batol"] = {
-			["ret"] = {
-				["helm"] = true,
-				["cloak"] = false,
-			},
-			["Holy 4p"] = {
-				["helm"] = true,
-				["cloak"] = true,
-			},
-			["pg tank"] = {
-				["helm"] = false,
-				["cloak"] = true,
-			},
-			["prot"] = {
-				["cloak"] = false,
-				["helm"] = true,
-			},
-			["cm tank"] = {
-				["helm"] = true,
-				["cloak"] = false,
-			},
-			["pg holy"] = {
-				["cloak"] = false,
-				["helm"] = true,
-			},
-			["cm ret"] = {
-				["cloak"] = false,
-				["helm"] = true,
-			},
-			["rm ret"] = {
-				["cloak"] = false,
-				["helm"] = true,
-			},
-			["Holy spirit"] = {
-				["cloak"] = false,
-				["helm"] = false,
-			},
-			["Holy"] = {
-				["helm"] = true,
-				["cloak"] = true,
-			},
-			["timewalking"] = {
-				["cloak"] = true,
-				["helm"] = false,
-			},
-			["erp"] = {
-				["helm"] = false,
-				["cloak"] = true,
-			},
-		},
-		["Zetiz - Grim Batol"] = {
-			["sub"] = {
-				["cloak"] = true,
-				["helm"] = false,
-			},
-			["cm"] = {
-				["helm"] = false,
-				["cloak"] = true,
-			},
-			["combat"] = {
-				["cloak"] = true,
-				["helm"] = false,
-			},
-			["naked"] = {
-				["cloak"] = true,
-				["helm"] = false,
-			},
-			["mastery opener"] = {
-				["helm"] = false,
-				["cloak"] = true,
-			},
-			["timewalking"] = {
-				["cloak"] = true,
-				["helm"] = false,
-			},
-		},
-		["Zuriz - Grim Batol"] = {
-			["pve heal"] = {
-				["helm"] = false,
-				["cloak"] = false,
-			},
-			["enhance"] = {
-				["helm"] = false,
-				["cloak"] = false,
-			},
-			["elemental"] = {
-				["cloak"] = false,
-				["helm"] = false,
-			},
-		},
 		["Líttle - Grim Batol"] = {
-			["runs"] = {
+			["tw blood"] = {
 				["cloak"] = false,
 				["helm"] = false,
 			},
 			["tank"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
 			["blood breath"] = {
-				["cloak"] = false,
 				["helm"] = false,
+				["cloak"] = false,
 			},
 			["cm tank"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
 			["timewalking bloo"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
 			["dps"] = {
-				["cloak"] = false,
 				["helm"] = false,
+				["cloak"] = false,
 			},
 			["dwfrost"] = {
-				["helm"] = false,
 				["cloak"] = false,
+				["helm"] = false,
 			},
-			["tw blood"] = {
+			["runs"] = {
 				["helm"] = false,
 				["cloak"] = false,
 			},
 		},
-		["Gnomalock - Grim Batol"] = {
-			["affli"] = {
-				["cloak"] = false,
+		["Zetiz - Grim Batol"] = {
+			["sub"] = {
 				["helm"] = false,
+				["cloak"] = true,
 			},
 			["cm"] = {
+				["cloak"] = true,
+				["helm"] = false,
+			},
+			["combat"] = {
+				["helm"] = false,
+				["cloak"] = true,
+			},
+			["naked"] = {
+				["helm"] = false,
+				["cloak"] = true,
+			},
+			["mastery opener"] = {
+				["cloak"] = true,
+				["helm"] = false,
+			},
+			["timewalking"] = {
+				["helm"] = false,
+				["cloak"] = true,
+			},
+		},
+		["Zuriz - Grim Batol"] = {
+			["elemental"] = {
+				["helm"] = false,
+				["cloak"] = false,
+			},
+			["pve heal"] = {
 				["cloak"] = false,
 				["helm"] = false,
 			},
-			["pve"] = {
+			["enhance"] = {
 				["cloak"] = false,
 				["helm"] = false,
 			},
-			["destro"] = {
+		},
+		["Krixi - Grim Batol"] = {
+			["ret"] = {
+				["cloak"] = false,
+				["helm"] = true,
+			},
+			["Holy 4p"] = {
+				["cloak"] = true,
+				["helm"] = true,
+			},
+			["pg tank"] = {
+				["cloak"] = true,
+				["helm"] = false,
+			},
+			["prot"] = {
+				["helm"] = true,
+				["cloak"] = false,
+			},
+			["cm tank"] = {
+				["cloak"] = false,
+				["helm"] = true,
+			},
+			["pg holy"] = {
+				["helm"] = true,
+				["cloak"] = false,
+			},
+			["cm ret"] = {
+				["helm"] = true,
+				["cloak"] = false,
+			},
+			["Holy"] = {
+				["cloak"] = true,
+				["helm"] = true,
+			},
+			["Holy spirit"] = {
+				["helm"] = false,
+				["cloak"] = false,
+			},
+			["rm ret"] = {
+				["helm"] = true,
+				["cloak"] = false,
+			},
+			["timewalking"] = {
+				["helm"] = false,
+				["cloak"] = true,
+			},
+			["erp"] = {
+				["cloak"] = true,
+				["helm"] = false,
+			},
+		},
+		["Lilgaykrixi - Kazzak"] = {
+			["asdas"] = {
+				["helm"] = false,
+				["cloak"] = false,
+			},
+			["asdasd"] = {
 				["helm"] = false,
 				["cloak"] = false,
 			},

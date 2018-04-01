@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod = BigWigs:NewBoss("Deathbringer Saurfang", 604, 1628)
+local mod = BigWigs:NewBoss("Deathbringer Saurfang", 631, 1628)
 if not mod then return end
 mod:RegisterEnableMob(37813, 37200, 37830, 37187, 37920) -- Deathbringer Saurfang, Muradin, Marine, Overlord Saurfang, Kor'kron Reaver
 mod.toggleOptions = {"warmup", "adds", 72410, 72385, {72293, "ICON", "FLASH"}, 72737, "proximity", "berserk"}
@@ -13,6 +13,7 @@ mod.toggleOptions = {"warmup", "adds", 72410, 72385, {72293, "ICON", "FLASH"}, 7
 
 local killed = nil
 local count = 1
+local prevWin = 0
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -34,6 +35,11 @@ L = mod:GetLocale()
 --------------------------------------------------------------------------------
 -- Initialization
 --
+
+function mod:VerifyEnable()
+	BigWigsLoader.SetMapToCurrentZone()
+	return (GetTime() - prevWin) > 300 and BigWigsLoader.GetCurrentMapDungeonLevel() == 2
+end
 
 function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "Adds", 72173)
@@ -68,9 +74,8 @@ function mod:WarmupAlliance()
 	self:Bar("warmup", 48, self.displayName, "achievement_boss_saurfang")
 end
 
-function mod:VerifyEnable()
-	BigWigsLoader.SetMapToCurrentZone()
-	return not self.lastKill and BigWigsLoader.GetCurrentMapDungeonLevel() == 2
+function mod:OnWin()
+	prevWin = GetTime()
 end
 
 --------------------------------------------------------------------------------

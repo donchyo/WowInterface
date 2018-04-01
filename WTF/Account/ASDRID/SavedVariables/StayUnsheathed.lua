@@ -16,15 +16,16 @@ StayUnsheathedDB = {
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Krixicx - Shattered Hand"] = "Krixicx - Shattered Hand",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
 		["Tomestomes - Aggra (Português)"] = "Tomestomes - Aggra (Português)",
 		["Tomesonecx - Aggra (Português)"] = "Tomesonecx - Aggra (Português)",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixidk - Grim Batol"] = "Krixidk - Grim Batol",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
 	},
 	["char"] = {
 		["Krixiyo - Twisting Nether"] = {
@@ -363,28 +364,6 @@ StayUnsheathedDB = {
 				}, -- [3]
 			},
 		},
-		["Spacegoatx - Aggra (Português)"] = {
-			["Specs"] = {
-				{
-					["specEnabled"] = true,
-					["iconPath"] = "Interface\\Icons\\Spell_Holy_HolyBolt",
-					["specNumber"] = 1,
-					["specName"] = "Holy",
-				}, -- [1]
-				{
-					["specEnabled"] = true,
-					["iconPath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
-					["specNumber"] = 2,
-					["specName"] = "Protection",
-				}, -- [2]
-				{
-					["specEnabled"] = true,
-					["iconPath"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
-					["specNumber"] = 3,
-					["specName"] = "Retribution",
-				}, -- [3]
-			},
-		},
 		["Krixicx - Shattered Hand"] = {
 			["Specs"] = {
 				{
@@ -404,6 +383,28 @@ StayUnsheathedDB = {
 					["iconPath"] = "Interface\\Icons\\Ability_Warrior_DefensiveStance",
 					["specNumber"] = 3,
 					["specName"] = "Protection",
+				}, -- [3]
+			},
+		},
+		["Spacegoatx - Aggra (Português)"] = {
+			["Specs"] = {
+				{
+					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Spell_Holy_HolyBolt",
+					["specNumber"] = 1,
+					["specName"] = "Holy",
+				}, -- [1]
+				{
+					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
+					["specNumber"] = 2,
+					["specName"] = "Protection",
+				}, -- [2]
+				{
+					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
+					["specNumber"] = 3,
+					["specName"] = "Retribution",
 				}, -- [3]
 			},
 		},
@@ -489,28 +490,6 @@ StayUnsheathedDB = {
 				}, -- [3]
 			},
 		},
-		["Greenzuriz - Aggra (Português)"] = {
-			["Specs"] = {
-				{
-					["specEnabled"] = true,
-					["specNumber"] = 1,
-					["iconPath"] = "Interface\\Icons\\Spell_Nature_Lightning",
-					["specName"] = "Elemental",
-				}, -- [1]
-				{
-					["specEnabled"] = true,
-					["specNumber"] = 2,
-					["iconPath"] = "Interface\\Icons\\Spell_Shaman_ImprovedStormstrike",
-					["specName"] = "Enhancement",
-				}, -- [2]
-				{
-					["specEnabled"] = true,
-					["specNumber"] = 3,
-					["iconPath"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
-					["specName"] = "Restoration",
-				}, -- [3]
-			},
-		},
 		["Krixidk - Grim Batol"] = {
 			["Specs"] = {
 				{
@@ -533,6 +512,28 @@ StayUnsheathedDB = {
 				}, -- [3]
 			},
 		},
+		["Greenzuriz - Aggra (Português)"] = {
+			["Specs"] = {
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 1,
+					["iconPath"] = "Interface\\Icons\\Spell_Nature_Lightning",
+					["specName"] = "Elemental",
+				}, -- [1]
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 2,
+					["iconPath"] = "Interface\\Icons\\Spell_Shaman_ImprovedStormstrike",
+					["specName"] = "Enhancement",
+				}, -- [2]
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 3,
+					["iconPath"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
+					["specName"] = "Restoration",
+				}, -- [3]
+			},
+		},
 		["Donchyo - Shattered Hand"] = {
 			["Specs"] = {
 				{
@@ -551,6 +552,28 @@ StayUnsheathedDB = {
 					["specEnabled"] = true,
 					["specNumber"] = 3,
 					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_UnholyPresence",
+					["specName"] = "Unholy",
+				}, -- [3]
+			},
+		},
+		["Krixidk - Valley of Heroes - EU"] = {
+			["Specs"] = {
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 1,
+					["iconPath"] = 135770,
+					["specName"] = "Blood",
+				}, -- [1]
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 2,
+					["iconPath"] = 135773,
+					["specName"] = "Frost",
+				}, -- [2]
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 3,
+					["iconPath"] = 135775,
 					["specName"] = "Unholy",
 				}, -- [3]
 			},

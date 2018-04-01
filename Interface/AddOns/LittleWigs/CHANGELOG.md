@@ -1,12 +1,13 @@
 # LittleWigs
 
-## [v7.3.13](https://github.com/BigWigsMods/LittleWigs/tree/v7.3.13) (2018-02-21)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.3.12...v7.3.13)
+## [v7.3.19](https://github.com/BigWigsMods/LittleWigs/tree/v7.3.19) (2018-03-28)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v7.3.18...v7.3.19)
 
-- WotLK/UtgardePinnacle/Skadi: Fix missing SAY flag.  
-- HallsOfValor/Hyrja: added "Arcing Bolt", added CD bars for "Expel Light" and "Shield of Light" (#233)  
-- HallsOfValor: added an additional trigger for Skovald's warmup timer, added a warmup timer for Odyn's gossip (#232)  
-- Legion: reduced the amount of GetTime() calls (#231)  
-- Cataclysm/Stonecore/Ozruk: added missing engage event (#230)  
-- TBC/TheArcatraz/Skyriss: extracted locales (#228)  
-- CathedralOfEternalNight/Domatrax: added Aegis-related warnings (#229)  
+- CourtOfStars/Trash: added "Cripple" and "Bewitch", removed Flash() calls (#275)  
+- NeltharionsLair/UlaroggCragshaper: make use of self:Mythic() returning true for M+, reduce the amount of difficulty checks for intermission  
+- NeltharionsLair/Rokmora: Unregister CHAT\_MSG\_MONSTER\_YELL after we use it for the warmup timer.  
+- SeatOfTheTriumvirate/Lura: Unregister CHAT\_MSG\_MONSTER\_SAY after we use it for the warmup timer.  
+- VaultOfTheWardens/CordanaFelsong: Unregister CHAT\_MSG\_MONSTER\_SAY after we use it for the warmup timer.  
+- Cataclysm/BlackrockCaverns: updated Options/Sounds.lua  
+- WotLK/DrakTharonKeep/Novos: fixed a Lua error  
+- German translations for Legion warmup texts (#272)  

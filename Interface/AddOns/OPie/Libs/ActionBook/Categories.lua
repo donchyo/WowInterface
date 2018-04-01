@@ -1,8 +1,12 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
-local AB, mark = assert(T.ActionBook:compatible(2, 14), "A compatible version of ActionBook is required"), {}
+local AB, mark = assert(T.ActionBook:compatible(2, 21), "A compatible version of ActionBook is required"), {}
 local RW = assert(T.ActionBook:compatible("Rewire", 1, 10), "A compatible version of Rewire is required")
-local EV = T.Evie
+local L = AB:locale()
+
+local function icmp(a,b)
+	return strcmputf8i(a,b) < 1
+end
 
 do -- spellbook
 	local function addEntry(add, at, _ok, st, sid)
@@ -18,32 +22,18 @@ do -- spellbook
 			end
 		end
 	end
-	local function aug(category, add)
+	AB:AugmentCategory(L"Abilities", function(_, add)
 		wipe(mark)
-		if category == "Pet abilities" then
-			if PetHasSpellbook() then
-				for i=1,HasPetSpells() or 0 do
-					addEntry(add, "petspell", pcall(GetSpellBookItemInfo, i, "pet"))
-				end
-				for s in ("attack move stay follow assist defend passive dismiss"):gmatch("%S+") do
-					add("petspell", s)
-				end
-			end
-		else
-			if UnitLevel("player") >= 90 and GetExpansionLevel() >= 5 then
-				add("spell", 161691)
-			end
-			for i=1,GetNumSpellTabs()+12 do
-				local _, _, ofs, c, _, sid = GetSpellTabInfo(i)
-				for j=ofs+1,sid == 0 and (ofs+c) or 0 do
-					addEntry(add, "spell", pcall(GetSpellBookItemInfo, j, "spell"))
-				end
+		if UnitLevel("player") >= 90 and GetExpansionLevel() >= 5 then
+			add("spell", 161691)
+		end
+		for i=1,GetNumSpellTabs()+12 do
+			local _, _, ofs, c, _, sid = GetSpellTabInfo(i)
+			for j=ofs+1,sid == 0 and (ofs+c) or 0 do
+				addEntry(add, "spell", pcall(GetSpellBookItemInfo, j, "spell"))
 			end
 		end
 		wipe(mark)
-	end
-	AB:AugmentCategory("Abilities", aug)
-	AB:AugmentCategory("Abilities", function(_, add)
 		for i=1,6 do
 			local free, id = GetPvpTalentRowSelectionInfo(i)
 			if id and not free then
@@ -54,22 +44,37 @@ do -- spellbook
 			end
 		end
 	end)
-	AB:AugmentCategory("Pet abilities", aug)
+	AB:AugmentCategory(L"Pet abilities", function(_, add)
+		if not PetHasSpellbook() then return end
+		wipe(mark)
+		for i=1,HasPetSpells() or 0 do
+			addEntry(add, "petspell", pcall(GetSpellBookItemInfo, i, "pet"))
+		end
+		for s in ("attack move stay follow assist defend passive dismiss"):gmatch("%S+") do
+			add("petspell", s)
+		end
+		wipe(mark)
+	end)
 end
-AB:AugmentCategory("Items", function(_, add)
+AB:AugmentCategory(L"Items", function(_, add)
 	wipe(mark)
-	for bag=0,4 do
-		for slot=1,GetContainerNumSlots(bag) do
-			local iid = GetContainerItemID(bag, slot)
-			if iid and GetItemSpell(iid) and not mark[iid] then
+	for t=0,1 do
+		t = t == 0 and GetItemSpell or IsEquippableItem
+		for bag=0,4 do
+			for slot=1,GetContainerNumSlots(bag) do
+				local iid = GetContainerItemID(bag, slot)
+				if iid and not mark[iid] and t(iid) then
+					add("item", iid)
+					mark[iid] = 1
+				end
+			end
+		end
+		for slot=INVSLOT_FIRST_EQUIPPED, INVSLOT_LAST_EQUIPPED do
+			local iid = GetInventoryItemID("player", slot)
+			if iid and not mark[iid] and not t(iid) then
 				add("item", iid)
 				mark[iid] = 1
 			end
-		end
-	end
-	for slot=INVSLOT_FIRST_EQUIPPED, INVSLOT_LAST_EQUIPPED do
-		if GetItemSpell(GetInventoryItemLink("player", slot)) then
-			add("item", GetInventoryItemID("player", slot))
 		end
 	end
 end)
@@ -77,7 +82,7 @@ do -- Battle pets
 	local running, sourceFilters, typeFilters, flagFilters, search = false, {}, {}, {[LE_PET_JOURNAL_FILTER_COLLECTED]=1, [LE_PET_JOURNAL_FILTER_NOT_COLLECTED]=1}, ""
 	hooksecurefunc(C_PetJournal, "SetSearchFilter", function(filter) search = filter end)
 	hooksecurefunc(C_PetJournal, "ClearSearchFilter", function() if not running then search = "" end end)
-	local function aug(_, add)
+	AB:AugmentCategory(L"Battle pets", function(_, add)
 		assert(not running, "Battle pets enumerator is not reentrant")
 		running = true
 		for i=1, C_PetJournal.GetNumPetSources() do
@@ -119,10 +124,9 @@ do -- Battle pets
 		C_PetJournal.SetPetSortParameter(sortParameter)
 		
 		running = false
-	end
-	AB:AugmentCategory("Battle pets", aug)
+	end)
 end
-AB:AugmentCategory("Mounts", function(_, add)
+AB:AugmentCategory(L"Mounts", function(_, add)
 	if GetSpellInfo(150544) then add("spell", 150544) end
 	local myFactionId = UnitFactionGroup("player") == "Horde" and 0 or 1
 	local idm, i2, i2n = C_MountJournal.GetMountIDs(), {}, {}
@@ -141,10 +145,7 @@ AB:AugmentCategory("Mounts", function(_, add)
 		add("spell", i2[i])
 	end
 end)
-local function icmp(a,b)
-	return strcmputf8i(a,b) < 1
-end
-AB:AugmentCategory("Macros", function(_, add)
+AB:AugmentCategory(L"Macros", function(_, add)
 	add("macrotext", "")
 	local n, ni = {}, 1
 	for name in RW:GetNamedMacros() do
@@ -155,46 +156,19 @@ AB:AugmentCategory("Macros", function(_, add)
 		add("macro", n[i])
 	end
 end)
-AB:AugmentCategory("Equipment sets", function(_, add)
+AB:AugmentCategory(L"Equipment sets", function(_, add)
 	for _,id in pairs(C_EquipmentSet.GetEquipmentSetIDs()) do
 		add("equipmentset", (C_EquipmentSet.GetEquipmentSetInfo(id)))
 	end
 end)
-AB:AugmentCategory("Raid markers", function(_, add) for i=0,8 do add("raidmark", i) end end)
-AB:AugmentCategory("Raid markers", function(_, add) for i=0,8 do add("worldmark", i) end end)
-do -- data broker launchers
-	local waiting, LDB = true
-	local function checkLDB()
-		LDB = LibStub and LibStub:GetLibrary("LibDataBroker-1.1", 1)
-	end
-	local function hasLaunchers()
-		for _, o in LDB:DataObjectIterator() do
-			if o.type == "launcher" then return true end
+AB:AugmentCategory(L"Raid markers", function(_, add)
+	for k=0,1 do
+		k = k == 0 and "raidmark" or "worldmark"
+		for i=0,8 do
+			add(k, i)
 		end
 	end
-	local function aug(_, add)
-		for name, obj in LDB:DataObjectIterator() do
-			if obj.type == "launcher" then
-				add("opie.databroker.launcher", name)
-			end
-		end
-	end
-	local function register()
-		if waiting and hasLaunchers() then
-			AB:AugmentCategory("DataBroker", aug)
-			waiting = nil
-		elseif not waiting then
-			AB:NotifyObservers("opie.databroker.launcher")
-		end
-	end
-	function EV.ADDON_LOADED()
-		if LDB or checkLDB() or LDB then
-			register()
-			if waiting then LDB.RegisterCallback("opie.databroker.launcher", "LibDataBroker_DataObjectCreated", register) end
-			return "remove"
-		end
-	end
-end
+end)
 do -- toys
 	local tx, search, push, pop = C_ToyBox
 	hooksecurefunc(C_ToyBox, "SetFilterString", function(s) search = s end) -- No corresponding Get
@@ -220,7 +194,7 @@ do -- toys
 		end
 		tx.ForceToyRefilter()
 	end
-	AB:AugmentCategory("Toys", function(_, add)
+	AB:AugmentCategory(L"Toys", function(_, add)
 		push()
 		for i=1,C_ToyBox.GetNumFilteredToys() do
 			local iid = C_ToyBox.GetToyFromIndex(i)
@@ -230,4 +204,11 @@ do -- toys
 		end
 		pop()
 	end)
+end
+do -- misc
+	AB:AddActionToCategory(L"Miscellaneous", "extrabutton", 1)
+	AB:AddActionToCategory(L"Miscellaneous", "macrotext", "")
+end
+do -- aliases
+	AB:AddCategoryAlias("Miscellaneous", L"Miscellaneous")
 end

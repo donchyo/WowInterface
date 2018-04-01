@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("The Illidari Council", 796, 1589)
+local mod, CL = BigWigs:NewBoss("The Illidari Council", 564, 1589)
 if not mod then return end
 mod:RegisterEnableMob(22951, 22952, 22949, 22950) -- Lady Malande, Veras Darkshadow, Gathios the Shatterer, High Nethermancer Zerevor
 mod.engageId = 608
@@ -135,8 +135,8 @@ end
 
 function mod:CircleOfHealingInterrupted(args)
 	if args.extraSpellId == 41455 then
-		self:Message(args.extraSpellId, "Urgent", nil, L.circle_fail_message:format(self:ColorName(args.sourceName)))
-		self:CDBar(args.extraSpellId, 12)
+		self:Message(41455, "Urgent", nil, L.circle_fail_message:format(self:ColorName(args.sourceName)))
+		self:CDBar(41455, 12)
 	end
 end
 

@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Kologarn", 529, 1642)
+local mod, CL = BigWigs:NewBoss("Kologarn", 603, 1642)
 if not mod then return end
 mod:RegisterEnableMob(32930)
 mod.engageId = 1137
@@ -67,15 +67,11 @@ end
 
 do
 	local grip = mod:NewTargetList()
-	local function gripWarn(self)
-		self:TargetMessage(64290, grip, "Attention", "Alert")
-		self:Bar(64290, 10)
-	end
-
 	function mod:StoneGrip(args)
 		grip[#grip + 1] = args.destName
 		if #grip == 1 then
-			self:ScheduleTimer(gripWarn, 0.2, self)
+			self:Bar(64290, 10)
+			self:ScheduleTimer("TargetMessage", 0.2, 64290, grip, "Attention", "Alert")
 		end
 	end
 end

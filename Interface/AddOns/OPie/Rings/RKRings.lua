@@ -3,7 +3,7 @@ local L, R = T.L, OneRingLib and OneRingLib.ext and OneRingLib.ext.RingKeeper
 if not (R and R.SetRing) then return end
 
 R:SetRing("DruidShift", {
-	{id="/cancelform [noflyable]\n/cast [flyable,outdoors,nocombat,noswimming,nomod][flying] {{spell:40120/33943}}; [outpost:corral,nomod,nospec:103/104] {{spell:161691}}; [swimming,nomod][flyable,nomod][flying] {{spell:783}}; [nocombat,outdoors,nomod:alt] {{mount:ground}}; [outdoors] {{spell:783}}", show="[known:40120/33943/1066/783]", _u="f"}, -- Travel
+	{id="/cancelform [noflyable,noform:moonkin]\n/cast [flyable,outdoors,nocombat,noswimming,nomod][flying] {{spell:40120/33943}}; [outpost:corral,nomod,nospec:103/104] {{spell:161691}}; [swimming,nomod][flyable,nomod][flying] {{spell:783}}; [nocombat,outdoors,nomod:alt] {{mount:ground}}; [outdoors] {{spell:783}}", show="[known:40120/33943/1066/783]", _u="f"}, -- Travel
 	{c="c74cff", id=24858, _u="k"}, -- Moonkin
 	{c="fff04d", id=768, _u="c"}, -- Cat
 	{c="ff0000", id=5487, _u="b"}, -- Bear
@@ -43,26 +43,19 @@ do -- Hunter Pets
 	})
 end
 R:SetRing("HunterAspects", {
-	{id=5118, _u="c"}, -- cheetah
-	{id=13159, _u="p"}, -- pack
+	{id=186257, _u="c"}, -- cheetah
+	{id=186265, _u="t"}, -- turtle
 	{id=781, _u="d"}, -- disengage
 	{id=5384, _u="g"}, -- feign
-	{"ring", "HunterPets", onlyNonEmpty=true, _u="e"},
+	{"ring", "HunterPets", onlyNonEmpty=true, _u="e", show="[nospec:2][notalent:15.1]"},
+	{id=147362, _u="i"}, -- counter
 	name=L"Aspects", hotkey="PRIMARY", limit="HUNTER", _u="OPCHA"
 })
 R:SetRing("HunterTraps", {
 	{id=191433, _u="e"}, -- explosive
 	{id=187650, _u="f"}, -- freezing
 	{id=187698, _u="t"}, -- tar/caltrops
-	name=L"Traps", hotkey="[spec:3] ALT-SECONDARY", limit="HUNTER", _u="OPCHT"
-})
-R:SetRing("HunterShots", {
-	{id=20736, _u="d"}, -- distract
-	{id=19801, _u="t"}, -- tranq
-	{id=53351, _u="k"}, -- kill
-	{id=2643, _u="m"}, -- multi
-	{id=1130, _u="a"}, -- mark
-	name=L"Shots", hotkey="SECONDARY", limit="HUNTER", _u="OPCHS"
+	name=L"Traps", hotkey="[spec:3] SECONDARY", limit="HUNTER", _u="OPCHT"
 })
 
 R:SetRing("MageCombat", {
@@ -100,7 +93,7 @@ R:SetRing("MagePolymorph", {
 	name=L"Polymorphs", limit="MAGE", _u="OPCMP", internal=true
 })
 do -- MageTravel
-	local m = "/cast [mod] {{spell:%s}}; {{spell:%s}}";
+	local m = "/cast [mod] {{spell:%s}}; {{spell:%s}}"
 	R:SetRing("MageTravel", {
 		{id=m:format(224871, 224869), _u="b"}, -- Dalaran Broken Isles
 		{id=m:format("132620/132626", "132621/132627"), _u="v"}, -- Vale of Eternal Blossoms
@@ -152,7 +145,6 @@ R:SetRing("PaladinTools", {
 R:SetRing("WarlockLTS", {
 	{"ring", "WarlockDemons", _u="d"},
 	{id="/cast [mod][noknown:119898] {{spell:755}}; {{spell:119898}}", _u="a"}, -- funnel/command
-	{id=109773, _u="i"}, -- intent
 	{id="/cast [mod:alt] {{spell:20707}}; [group,nomod][nogroup,mod] {{spell:29893}}; {{spell:6201}}", _u="h"}, -- soul/health/well
 	{id=111771, _u="w"}, -- gateway
 	{"ring", "WarlockGuardians", _u="g"},
@@ -182,22 +174,11 @@ R:SetRing("WarlockGuardians", {
 	name=L"Guardians", limit="WARLOCK", _u="OPCLG", internal=true
 })
 
-R:SetRing("DeathKnightPresence", {
-	{c="52ff5a", id="/cast [help,dead] {{spell:61999}}; [nopet,nomounted][@pet,dead] {{spell:46584}}; [@pet,nodead,exists][nomod] {{spell:47541}}; [mod] {{spell:48743}}", _u="p"}, -- ghoul
-	{c="e54c19", id=48263, _u="b"}, -- blood
-	{c="1999e5", id=48266, _u="f"}, -- frost
-	{c="4ce519", id=48265, _u="u"}, -- unholy
-	{c="a93ae8", id=50977, _u="g"}, -- gate
-	{c="e8c682", id="/cast [flyable,nomod][flying] {{spell:54729}}; {{spell:48778}}; [flyable,nomod][flying] {{mount:air}}; {{mount:ground}}", _u="m"},
-	{c="63eaff", id=3714, _u="o"}, -- path of frost
-	name=L"Presences", hotkey="PRIMARY", limit="DEATHKNIGHT", _u="OPCDP"
-})
 R:SetRing("DKCombat", {
 	{c="fff4b2", id=57330, _u="h"}, -- horn
 	{c="5891ea", id=48792, _u="f"}, -- fortitude
 	{c="bcf800", id=48707, _u="s"}, -- shell
 	{c="3d63cc", id=51052, _u="z"}, -- Zone
-	{c="b7d271", id=49222, _u="i"}, -- shield
 	{c="b31500", id=55233, _u="b"}, -- blood
 	{c="aef1ff", id=51271, _u="p"}, -- pillar of frost
 	{c="d0d0d0", id=49039, _u="l"}, -- lich

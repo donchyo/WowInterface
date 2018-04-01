@@ -2,7 +2,6 @@
 ThreatPlatesDB = {
 	["char"] = {
 		["Bawsi - Shattered Hand"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Survival",
@@ -13,15 +12,15 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Krixidk - Grim Batol"] = {
+			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
-			["welcome"] = true,
 		},
 		["Gnomalock - Grim Batol"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Affliction",
@@ -32,9 +31,13 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Donchyo - Shattered Hand"] = {
 			["welcome"] = true,
+			["spec"] = {
+				true, -- [1]
+			},
 			["specInfo"] = {
 				{
 					["name"] = "Blood",
@@ -45,11 +48,9 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["spec"] = {
-				true, -- [1]
-			},
 		},
 		["Inf - Twisting Nether"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Fury",
@@ -60,10 +61,12 @@ ThreatPlatesDB = {
 					["role"] = "TANK",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Lilgaykrixi - Kazzak"] = {
 			["welcome"] = true,
+			["spec"] = {
+				true, -- [1]
+			},
 			["specInfo"] = {
 				{
 					["name"] = "Protection",
@@ -74,12 +77,8 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["spec"] = {
-				true, -- [1]
-			},
 		},
 		["Daimtårta - Aggra (Português)"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Discipline",
@@ -90,8 +89,10 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Kroxidps - Aggra (Português)"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Unknown",
@@ -102,10 +103,8 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Infeh - Twisting Nether"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Unholy",
@@ -116,8 +115,10 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Infe - Twisting Nether"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Feral",
@@ -128,9 +129,9 @@ ThreatPlatesDB = {
 					["role"] = "HEALER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Greenzuriz - Aggra (Português)"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Enhancement",
@@ -141,9 +142,9 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Donch - Grim Batol"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Fire",
@@ -154,7 +155,6 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Kroxi - Grim Batol"] = {
 			["specInfo"] = {
@@ -167,10 +167,10 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 			["spec"] = {
 				[3] = true,
 			},
-			["welcome"] = true,
 		},
 		["Namji - Grim Batol"] = {
 			["specInfo"] = {
@@ -183,13 +183,14 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Bawsie - Grim Batol"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Beast Mastery",
@@ -200,9 +201,9 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Krixiyo - Lightning's Blade"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Unknown",
@@ -213,9 +214,9 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Donch - Shattered Hand"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Unholy",
@@ -226,9 +227,9 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Donch - Crushridge"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Restoration",
@@ -239,10 +240,8 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Zetiz - Grim Batol"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Assassination",
@@ -253,9 +252,9 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Infx - Twisting Nether"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Windwalker",
@@ -266,6 +265,7 @@ ThreatPlatesDB = {
 					["role"] = "TANK",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Treefiddy - Aggra (Português)"] = {
 			["specInfo"] = {
@@ -278,17 +278,14 @@ ThreatPlatesDB = {
 					["role"] = "TANK",
 				}, -- [2]
 			},
+			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Kroxi - Crushridge"] = {
 			["welcome"] = true,
-			["spec"] = {
-				true, -- [1]
-			},
 			["specInfo"] = {
 				{
 					["name"] = "Protection",
@@ -299,13 +296,19 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["spec"] = {
+				true, -- [1]
+			},
 		},
-		["Menardiairl - Culte de la Rive noire"] = {
+		["Nyrith - Grim Batol"] = {
 			["welcome"] = true,
+			["spec"] = {
+				true, -- [1]
+			},
 			["specInfo"] = {
 				{
-					["name"] = "Unknown",
-					["role"] = "DAMAGER",
+					["name"] = "Guardian",
+					["role"] = "TANK",
 				}, -- [1]
 				{
 					["name"] = "Unknown",
@@ -317,7 +320,6 @@ ThreatPlatesDB = {
 			["welcome"] = true,
 		},
 		["Spacegoatx - Aggra (Português)"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Retribution",
@@ -328,8 +330,10 @@ ThreatPlatesDB = {
 					["role"] = "HEALER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Bawsi - Aggra (Português)"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Survival",
@@ -340,10 +344,8 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Asdasdasdfaf - Grim Batol"] = {
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Discipline",
@@ -354,6 +356,7 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["Líttle - Grim Batol"] = {
 			["specInfo"] = {
@@ -366,29 +369,13 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 			["spec"] = {
 				true, -- [1]
 			},
-		},
-		["Krixi - Grim Batol"] = {
 			["welcome"] = true,
-			["spec"] = {
-				nil, -- [1]
-				true, -- [2]
-			},
-			["specInfo"] = {
-				{
-					["name"] = "Protection",
-					["role"] = "TANK",
-				}, -- [1]
-				{
-					["name"] = "Unknown",
-					["role"] = "DAMAGER",
-				}, -- [2]
-			},
 		},
 		["Zolution - Grim Batol"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Shadow",
@@ -399,9 +386,26 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
+		},
+		["Krixi - Grim Batol"] = {
 			["welcome"] = true,
+			["specInfo"] = {
+				{
+					["name"] = "Protection",
+					["role"] = "TANK",
+				}, -- [1]
+				{
+					["name"] = "Unknown",
+					["role"] = "DAMAGER",
+				}, -- [2]
+			},
+			["spec"] = {
+				nil, -- [1]
+				true, -- [2]
+			},
 		},
 		["Zuriz - Grim Batol"] = {
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					["name"] = "Enhancement",
@@ -412,9 +416,21 @@ ThreatPlatesDB = {
 					["role"] = "DAMAGER",
 				}, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["Krixiswag - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				{
+					["name"] = "Unknown",
+					["role"] = "DAMAGER",
+				}, -- [1]
+				{
+					["name"] = "Unknown",
+					["role"] = "DAMAGER",
+				}, -- [2]
+			},
+		},
+		["Menardiairl - Culte de la Rive noire"] = {
 			["specInfo"] = {
 				{
 					["name"] = "Unknown",
@@ -427,25 +443,6 @@ ThreatPlatesDB = {
 			},
 			["welcome"] = true,
 		},
-		["Nyrith - Grim Batol"] = {
-			["welcome"] = true,
-			["specInfo"] = {
-				{
-					["name"] = "Guardian",
-					["role"] = "TANK",
-				}, -- [1]
-				{
-					["name"] = "Unknown",
-					["role"] = "DAMAGER",
-				}, -- [2]
-			},
-			["spec"] = {
-				true, -- [1]
-			},
-		},
-	},
-	["global"] = {
-		["version"] = "8.002-Alpha",
 	},
 	["profileKeys"] = {
 		["Bawsi - Shattered Hand"] = "Default",
@@ -470,17 +467,20 @@ ThreatPlatesDB = {
 		["Infx - Twisting Nether"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
-		["Menardiairl - Culte de la Rive noire"] = "Default",
+		["Nyrith - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Spacegoatx - Aggra (Português)"] = "Default",
 		["Bawsi - Aggra (Português)"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Default",
 		["Líttle - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
 		["Zolution - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
 		["Krixiswag - Aggra (Português)"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
+		["Menardiairl - Culte de la Rive noire"] = "Default",
+	},
+	["global"] = {
+		["version"] = "8.002-Alpha",
 	},
 	["profiles"] = {
 		["HUNTER"] = {
@@ -737,12 +737,12 @@ ThreatPlatesDB = {
 				},
 				[34] = {
 					["scale"] = 1.4,
-					["color"] = {
-						["b"] = 0.0745098039215686,
-						["r"] = 0,
-					},
-					["icon"] = "Interface\\Icons\\Spell_Holy_SurgeOfLight",
 					["name"] = "Tortured Essence",
+					["icon"] = "Interface\\Icons\\Spell_Holy_SurgeOfLight",
+					["color"] = {
+						["r"] = 0,
+						["b"] = 0.0745098039215686,
+					},
 				},
 				[35] = {
 				},

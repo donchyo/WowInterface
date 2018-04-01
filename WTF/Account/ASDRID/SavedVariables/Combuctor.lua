@@ -153,18 +153,20 @@ Combuctor_Sets = {
 	},
 	["inscribeColor"] = {
 	},
-	["leatherColor"] = {
-	},
-	["tackleColor"] = {
-	},
-	["herbColor"] = {
-	},
-	["normalColor"] = {
+	["players"] = {
+		["Valley of Heroes - EU"] = {
+		},
+		["Lightbringer"] = {
+		},
 	},
 	["enchantColor"] = {
 	},
-	["players"] = {
-		["Lightbringer"] = {
-		},
+	["normalColor"] = {
+	},
+	["herbColor"] = {
+	},
+	["tackleColor"] = {
+	},
+	["leatherColor"] = {
 	},
 }

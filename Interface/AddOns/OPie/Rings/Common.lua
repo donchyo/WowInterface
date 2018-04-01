@@ -6,12 +6,12 @@ local function generateColor(c, n)
 	local h, f = floor(hue/60) % 6, (hue/60) % 1
 	local p, q, t = v - v*s, v - v*f*s, v - v*s + v*f*s
 
-	if h == 0 then return v, t, p;
-	elseif h == 1 then return q, v, p;
-	elseif h == 2 then return p, v, t;
-	elseif h == 3 then return p, q, v;
-	elseif h == 4 then return t, p, v;
-	elseif h == 5 then return v, p, q;
+	if h == 0 then return v, t, p
+	elseif h == 1 then return q, v, p
+	elseif h == 2 then return p, v, t
+	elseif h == 3 then return p, q, v
+	elseif h == 4 then return t, p, v
+	elseif h == 5 then return v, p, q
 	end
 end
 
@@ -19,12 +19,12 @@ do -- OPieTrinkets
 	OneRingLib:SetRing("OPieTrinkets", AB:CreateActionSlot(nil,nil, "collection", { "OPieBundleTrinket0", "OPieBundleTrinket1",
 		OPieBundleTrinket0 = AB:GetActionSlot("item", (GetInventorySlotInfo("Trinket0Slot")), false, true),
 		OPieBundleTrinket1 = AB:GetActionSlot("item", (GetInventorySlotInfo("Trinket1Slot")), false, true),
-	}), {name=L"Trinkets"});
+	}), {name=L"Trinkets"})
 end
 do -- OPieTracker
 	local collectionData = {}
 	local function setTracking(id)
-		SetTracking(id, not select(3, GetTrackingInfo(id)));
+		SetTracking(id, not select(3, GetTrackingInfo(id)))
 	end
 	local function hint(k)
 		local name, tex, on = GetTrackingInfo(k)
@@ -52,7 +52,9 @@ do -- OPieTracker
 	local col = AB:CreateActionSlot(nil,nil, "collection", collectionData)
 	OneRingLib:SetRing("OPieTracking", col, {name=L"Minimap Tracking", hotkey="ALT-F"})
 	AB:AddObserver("internal.collection.preopen", preClick, col)
-	EV.RegisterEvent("PLAYER_ENTERING_WORLD", function() return "remove", preClick(col, nil, col) end)
+	function EV.PLAYER_ENTERING_WORLD()
+		return "remove", preClick(col, nil, col)
+	end
 end
 do -- OPieAutoQuest
 	local whitelist, questItems, collection, inring, colId, ctok, current, changed = {[33634]=true, [35797]=true, [37888]=true, [37860]=true, [37859]=true, [37815]=true, [46847]=true, [47030]=true, [39213]=true, [42986]=true, [49278]=true, [86425]={31332, 31333, 31334, 31335, 31336, 31337}, [87214]={31752, 34774}, [90006]=true, [86536]=true, [86534]=true, [97268]=true, [111821]={34774, 31752}}, {[30148]="72986 72985"}, {"EB", EB=AB:GetActionSlot("extrabutton", 1)}, {}
@@ -79,7 +81,7 @@ do -- OPieAutoQuest
 	end
 	local function syncRing(_, _, upId)
 		if upId ~= colId then return end
-		changed, current = false, ((ctok or 0) + 1) % 2;
+		changed, current = false, ((ctok or 0) + 1) % 2
 
 		-- Search quest log
 		for i=1,GetNumQuestLogEntries() do
@@ -97,9 +99,9 @@ do -- OPieAutoQuest
 		-- Search bags
 		for bag=0,4 do
 			for slot=1,GetContainerNumSlots(bag) do
-				local iid = GetContainerItemID(bag, slot);
-				local isQuest, startQuestId, isQuestActive = GetContainerItemQuestInfo(bag, slot);
-				isQuest = iid and ((isQuest and GetItemSpell(iid)) or (whitelist[iid] == true) or (startQuestId and not isQuestActive and not IsQuestFlaggedCompleted(startQuestId)));
+				local iid = GetContainerItemID(bag, slot)
+				local isQuest, startQuestId, isQuestActive = GetContainerItemQuestInfo(bag, slot)
+				isQuest = iid and ((isQuest and GetItemSpell(iid)) or (whitelist[iid] == true) or (startQuestId and not isQuestActive and not IsQuestFlaggedCompleted(startQuestId)))
 				if not isQuest and type(whitelist[iid]) == "table" then
 					isQuest = true
 					for _, qid in pairs(whitelist[iid]) do
@@ -122,7 +124,9 @@ do -- OPieAutoQuest
 		-- Check whether any of our quest items are equipped... Hi, Egan's Blaster.
 		for i=0,19 do
 			local tok = "OPieBundleQuest" .. (GetInventoryItemID("player", i) or 0)
-			if inring[tok] then inring[tok] = current end
+			if inring[tok] then
+				inring[tok] = current
+			end
 		end
 		
 		-- Additional quest-based whitelist
@@ -144,5 +148,7 @@ do -- OPieAutoQuest
 	colId = AB:CreateActionSlot(nil,nil, "collection",collection)
 	OneRingLib:SetRing("OPieAutoQuest", colId, {name=L"Quest Items", hotkey="ALT-Q"})
 	AB:AddObserver("internal.collection.preopen", syncRing)
-	EV.RegisterEvent("PLAYER_REGEN_DISABLED", function() syncRing(nil, nil, colId) end);
+	function EV.PLAYER_REGEN_DISABLED()
+		syncRing(nil, nil, colId)
+	end
 end

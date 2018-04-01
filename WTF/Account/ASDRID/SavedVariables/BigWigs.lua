@@ -130,8 +130,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Pull"] = {
-		},
 		["BigWigs_Bosses_Aggramar"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -149,21 +147,10 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Respawn"] = {
-		},
 		["BigWigs_Bosses_Argus the Unmaker"] = {
 			["profiles"] = {
 				["Default"] = {
 					[257296] = 98819,
-				},
-			},
-		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Bosses_Odyn-TrialOfValor"] = {
-			["profiles"] = {
-				["Default"] = {
-					[228012] = 98819,
 				},
 			},
 		},
@@ -210,13 +197,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Varimathras"] = {
-			["profiles"] = {
-				["Default"] = {
-					[244042] = 98983,
-				},
-			},
-		},
 		["BigWigs_Bosses_Felhounds of Sargeras"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -224,78 +204,10 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_InfoBox"] = {
+		["BigWigs_Bosses_Krosus"] = {
 			["profiles"] = {
 				["Default"] = {
-					["posx"] = 389.777296103399,
-					["posy"] = 718.400396633122,
-				},
-			},
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Krixidh - Grim Batol"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-				["Default"] = {
-					["posx"] = 985.06712878542,
-					["fontSize"] = 20,
-					["lock"] = true,
-					["height"] = 127.999969482422,
-					["posy"] = 513.777557267094,
-					["font"] = "Expressway",
-					["width"] = 170.22233581543,
-				},
-				["DEMONHUNTER"] = {
-					["posx"] = 1055.46712458925,
-					["fontSize"] = 20,
-					["posy"] = 257.066635068259,
-					["font"] = "Friz Quadrata TT",
-				},
-				["Skullflower"] = {
-					["posx"] = 351.999834912349,
-					["posy"] = 260.977697291637,
-					["height"] = 120.000007629395,
-					["font"] = "Friz Quadrata TT",
-				},
-				["Grim Batol"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Krixidh - Grim Batol"] = {
-					["fontSize"] = 20,
-					["font"] = "Friz Quadrata TT",
-				},
-				["Default"] = {
-					["fontSize"] = 20,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 817.688525480713,
-					["BWMessageAnchor_x"] = 757.689066166335,
-					["growUpwards"] = true,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 484.088789505433,
-					["font"] = "Expressway",
-					["BWEmphasizeMessageAnchor_y"] = 556.17784770859,
-					["BWMessageAnchor_y"] = 554.844791147421,
-					["displaytime"] = 2.5,
-					["BWEmphasizeMessageAnchor_x"] = 574.933461825043,
-				},
-				["DEMONHUNTER"] = {
-					["font"] = "Friz Quadrata TT",
-					["fontSize"] = 20,
-				},
-				["Skullflower"] = {
-					["outline"] = "OUTLINE",
-					["fontSize"] = 20,
-					["BWMessageAnchor_y"] = 620.800015032291,
-					["BWMessageAnchor_x"] = 608.711212656235,
-					["font"] = "Expressway",
-					["growUpwards"] = false,
-				},
-				["Grim Batol"] = {
-					["fontSize"] = 20,
-					["font"] = "Friz Quadrata TT",
+					["smashingBridge"] = 98819,
 				},
 			},
 		},
@@ -442,21 +354,11 @@ BigWigs3DB = {
 								1, -- [3]
 							},
 						},
-						["BigWigs_Bosses_The Coven of Shivarra"] = {
-							[253429] = {
+						["BigWigs_Bosses_Goroth"] = {
+							[233279] = {
 								0, -- [1]
-								0.141176470588235, -- [2]
-								1, -- [3]
-							},
-							[252861] = {
-								0.0784313725490196, -- [1]
-								0, -- [2]
-								1, -- [3]
-							},
-							[246329] = {
-								1, -- [1]
-								0, -- [2]
-								0.937254901960784, -- [3]
+								1, -- [2]
+								0.00784313725490196, -- [3]
 							},
 						},
 						["BigWigs_Bosses_Kil'jaeden"] = {
@@ -500,11 +402,21 @@ BigWigs3DB = {
 								0.0627450980392157, -- [3]
 							},
 						},
-						["BigWigs_Bosses_Goroth"] = {
-							[233279] = {
+						["BigWigs_Bosses_The Coven of Shivarra"] = {
+							[253429] = {
 								0, -- [1]
-								1, -- [2]
-								0.00784313725490196, -- [3]
+								0.141176470588235, -- [2]
+								1, -- [3]
+							},
+							[252861] = {
+								0.0784313725490196, -- [1]
+								0, -- [2]
+								1, -- [3]
+							},
+							[246329] = {
+								1, -- [1]
+								0, -- [2]
+								0.937254901960784, -- [3]
 							},
 						},
 						["BigWigs_Bosses_Fallen Avatar"] = {
@@ -602,9 +514,10 @@ BigWigs3DB = {
 								0.909803921568627, -- [3]
 							},
 						},
-						["BigWigs_Bosses_Krosus"] = {
-							["smashingBridge"] = {
-								[3] = 0.854901960784314,
+						["BigWigs_Bosses_Goroth"] = {
+							[233279] = {
+								0.133333333333333, -- [1]
+								1, -- [2]
 							},
 						},
 						["BigWigs_Bosses_Kil'jaeden"] = {
@@ -640,10 +553,9 @@ BigWigs3DB = {
 								1, -- [2]
 							},
 						},
-						["BigWigs_Bosses_Goroth"] = {
-							[233279] = {
-								0.133333333333333, -- [1]
-								1, -- [2]
+						["BigWigs_Bosses_Krosus"] = {
+							["smashingBridge"] = {
+								[3] = 0.854901960784314,
 							},
 						},
 						["BigWigs_Bosses_Fallen Avatar"] = {
@@ -656,6 +568,16 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Pull"] = {
+		},
+		["BigWigs_Plugins_InfoBox"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 384.088404840921,
+					["posy"] = 655.822617159924,
+				},
+			},
+		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Krixidh - Grim Batol"] = {
@@ -664,19 +586,19 @@ BigWigs3DB = {
 				},
 				["Default"] = {
 					["BigWigsEmphasizeAnchor_y"] = 293.777301825445,
-					["monochrome"] = false,
+					["texture"] = "Skullflower",
 					["BigWigsAnchor_width"] = 166.222061157227,
-					["BigWigsAnchor_y"] = 294.577863301165,
+					["BigWigsEmphasizeAnchor_width"] = 180.889312744141,
 					["BigWigsEmphasizeAnchor_x"] = 826.489501518634,
-					["interceptMouse"] = false,
 					["barStyle"] = "ElvUI",
+					["monochrome"] = false,
 					["emphasizeGrowup"] = true,
 					["BigWigsAnchor_x"] = 998.045350668108,
-					["BigWigsEmphasizeAnchor_width"] = 180.889312744141,
+					["interceptMouse"] = false,
 					["font"] = "Expressway",
-					["emphasizeTime"] = 15,
+					["BigWigsAnchor_y"] = 294.577863301165,
 					["emphasizeScale"] = 1,
-					["texture"] = "Skullflower",
+					["emphasizeTime"] = 15,
 				},
 				["DEMONHUNTER"] = {
 					["BigWigsEmphasizeAnchor_y"] = 325.066484530777,
@@ -706,10 +628,10 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Maiden of Virtue"] = {
+		["BigWigs_Bosses_Varimathras"] = {
 			["profiles"] = {
 				["Default"] = {
-					[227789] = 0,
+					[244042] = 98983,
 				},
 			},
 		},
@@ -734,10 +656,43 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Krosus"] = {
+		["BigWigs_Plugins_BossBlock"] = {
+		},
+		["BigWigs_Bosses_Odyn-TrialOfValor"] = {
 			["profiles"] = {
 				["Default"] = {
-					["smashingBridge"] = 98819,
+					[228012] = 98819,
+				},
+			},
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Krixidh - Grim Batol"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+				["Default"] = {
+					["posx"] = 985.06712878542,
+					["fontSize"] = 20,
+					["lock"] = true,
+					["height"] = 127.999969482422,
+					["posy"] = 513.777557267094,
+					["font"] = "Expressway",
+					["width"] = 170.22233581543,
+				},
+				["DEMONHUNTER"] = {
+					["posx"] = 1055.46712458925,
+					["fontSize"] = 20,
+					["posy"] = 257.066635068259,
+					["font"] = "Friz Quadrata TT",
+				},
+				["Skullflower"] = {
+					["posx"] = 351.999834912349,
+					["posy"] = 260.977697291637,
+					["height"] = 120.000007629395,
+					["font"] = "Friz Quadrata TT",
+				},
+				["Grim Batol"] = {
+					["font"] = "Friz Quadrata TT",
 				},
 			},
 		},
@@ -748,6 +703,15 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Respawn"] = {
+		},
+		["BigWigs_Bosses_Maiden of Virtue"] = {
+			["profiles"] = {
+				["Default"] = {
+					[227789] = 0,
+				},
+			},
+		},
 		["BigWigs_Bosses_Gul'dan"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -755,26 +719,64 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Krixidh - Grim Batol"] = {
+					["fontSize"] = 20,
+					["font"] = "Friz Quadrata TT",
+				},
+				["Default"] = {
+					["fontSize"] = 20,
+					["BWEmphasizeCountdownMessageAnchor_x"] = 817.688525480713,
+					["BWMessageAnchor_x"] = 757.689066166335,
+					["growUpwards"] = true,
+					["BWEmphasizeCountdownMessageAnchor_y"] = 484.088789505433,
+					["font"] = "Expressway",
+					["BWEmphasizeMessageAnchor_y"] = 556.17784770859,
+					["BWMessageAnchor_y"] = 554.844791147421,
+					["displaytime"] = 2.5,
+					["BWEmphasizeMessageAnchor_x"] = 574.933461825043,
+				},
+				["DEMONHUNTER"] = {
+					["font"] = "Friz Quadrata TT",
+					["fontSize"] = 20,
+				},
+				["Skullflower"] = {
+					["outline"] = "OUTLINE",
+					["fontSize"] = 20,
+					["BWMessageAnchor_y"] = 620.800015032291,
+					["BWMessageAnchor_x"] = 608.711212656235,
+					["font"] = "Expressway",
+					["growUpwards"] = false,
+				},
+				["Grim Batol"] = {
+					["fontSize"] = 20,
+					["font"] = "Friz Quadrata TT",
+				},
+			},
+		},
 	},
-	["discord"] = 15,
 	["profileKeys"] = {
-		["Zetiz - Grim Batol"] = "Default",
-		["Donch - Grim Batol"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Krixidk - Grim Batol"] = "Default",
 		["Kroxi - Grim Batol"] = "Default",
 		["Namji - Grim Batol"] = "Default",
-		["Krixiyo - Blackmoore"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
-		["Zolution - Grim Batol"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
-		["Kriximonk - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
+		["Krixiyo - Blackmoore"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
+		["Krixidh - Valley of Heroes - EU"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Donch - Grim Batol"] = "Default",
+		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
+	["discord"] = 15,
 	["profiles"] = {
 		["Krixidh - Grim Batol"] = {
 		},
@@ -2417,7 +2419,7 @@ BigWigsStatsDB = {
 				["wipes"] = 3,
 			},
 			["heroic"] = {
-				["kills"] = 18,
+				["kills"] = 19,
 				["wipes"] = 13,
 				["best"] = 182.847999999998,
 			},
@@ -2472,12 +2474,12 @@ BigWigsStatsDB = {
 		},
 		[2031] = {
 			["heroic"] = {
-				["kills"] = 22,
+				["kills"] = 23,
 				["best"] = 431.979999999996,
 				["wipes"] = 18,
 			},
 			["normal"] = {
-				["kills"] = 34,
+				["kills"] = 36,
 				["best"] = 379.535000000004,
 				["wipes"] = 14,
 			},

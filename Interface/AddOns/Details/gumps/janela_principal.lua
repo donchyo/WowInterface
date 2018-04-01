@@ -2143,8 +2143,7 @@ local icon_frame_on_enter = function (self)
 		elseif (actor.dead_at) then
 			
 		
-		else
-			--> is a normal actor
+		elseif (actor.name) then --ensure it's an actor table
 		
 			local serial = actor.serial
 			local name = actor:name()
@@ -4492,7 +4491,7 @@ function _detalhes:FastPSUpdate (enabled)
 end
 
 
--- search key: ~row
+-- search key: ~row ~bar ~updatebar
 function _detalhes:InstanceRefreshRows (instancia)
 	
 	if (instancia) then
@@ -4555,6 +4554,8 @@ function _detalhes:InstanceRefreshRows (instancia)
 		if (self.row_info.use_spec_icons) then
 			icon_texture = self.row_info.spec_file
 		end
+		
+		local icon_force_grayscale = self.row_info.icon_grayscale
 	
 	--custom right text
 		local custom_right_text_enabled = self.row_info.textR_enable_custom_text
@@ -4591,6 +4592,12 @@ function _detalhes:InstanceRefreshRows (instancia)
 		row:SetHeight (height)
 		row.icone_classe:SetHeight (height)
 		row.icone_classe:SetWidth (height)
+		
+		if (icon_force_grayscale) then
+			row.icone_classe:SetDesaturated (true)
+		else
+			row.icone_classe:SetDesaturated (false)
+		end
 		
 		--> icon and texture anchors
 		if (not is_mirror) then

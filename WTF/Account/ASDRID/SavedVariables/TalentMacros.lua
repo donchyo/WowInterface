@@ -5,42 +5,51 @@ TalentMacrosDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Krixi - Valley of Heroes - EU"] = "Krixi - Valley of Heroes - EU",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Krixiwarrior - Valley of Heroes - EU"] = "Krixiwarrior - Valley of Heroes - EU",
+		["Krixidruid - Valley of Heroes - EU"] = "Krixidruid - Valley of Heroes - EU",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
+		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
-		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
+		["Krixidh - Valley of Heroes - EU"] = "Krixidh - Valley of Heroes - EU",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Daroislost - Valley of Heroes - EU"] = "Daroislost - Valley of Heroes - EU",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
 	},
 	["profiles"] = {
+		["Krixi - Valley of Heroes - EU"] = {
+		},
 		["Bawsi - Shattered Hand"] = {
 			["version"] = 1,
 		},
@@ -60,6 +69,10 @@ TalentMacrosDB = {
 		},
 		["Menardiairl - Culte de la Rive noire"] = {
 		},
+		["Krixiwarrior - Valley of Heroes - EU"] = {
+		},
+		["Krixidruid - Valley of Heroes - EU"] = {
+		},
 		["Lilgaykrixi - Kazzak"] = {
 		},
 		["Daimtårta - Aggra (Português)"] = {
@@ -73,21 +86,7 @@ TalentMacrosDB = {
 		["Donch - Grim Batol"] = {
 			["version"] = 1,
 		},
-		["Kroxi - Grim Batol"] = {
-			["macrotext"] = {
-				[19676] = "#showtooltip\n/cast [@mouseover, exists] Vigilance; vigilance",
-				[15766] = "#showtooltip\n/cast [@mouseover, exists] intervene; intervene",
-			},
-			["version"] = 1,
-		},
-		["Bawsi - Aggra (Português)"] = {
-		},
-		["Bawsie - Grim Batol"] = {
-			["version"] = 1,
-		},
-		["Krixiyo - Lightning's Blade"] = {
-		},
-		["Donch - Shattered Hand"] = {
+		["Gnomalock - Grim Batol"] = {
 			["version"] = 1,
 		},
 		["Krixikin - Grim Batol"] = {
@@ -101,18 +100,40 @@ TalentMacrosDB = {
 			},
 			["disablepush"] = true,
 		},
+		["Kroxi - Grim Batol"] = {
+			["macrotext"] = {
+				[19676] = "#showtooltip\n/cast [@mouseover, exists] Vigilance; vigilance",
+				[15766] = "#showtooltip\n/cast [@mouseover, exists] intervene; intervene",
+			},
+			["version"] = 1,
+		},
+		["Bawsi - Aggra (Português)"] = {
+		},
+		["Kroxidps - Aggra (Português)"] = {
+			["version"] = 1,
+		},
+		["Bawsie - Grim Batol"] = {
+			["version"] = 1,
+		},
+		["Krixiyo - Lightning's Blade"] = {
+		},
+		["Krixidh - Grim Batol"] = {
+		},
+		["Donch - Shattered Hand"] = {
+			["version"] = 1,
+		},
+		["Kriximonk - Valley of Heroes - EU"] = {
+		},
 		["Lowerboost - Lightbringer"] = {
 		},
-		["Namji - Grim Batol"] = {
+		["Líttle - Grim Batol"] = {
 			["macrotext"] = {
-				[19820] = "#showtooltip\n/cast [@namji] Zen Sphere",
+				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
 			},
 			["version"] = 1,
 		},
 		["Donch - Crushridge"] = {
 			["version"] = 1,
-		},
-		["Krixiyo - Twisting Nether"] = {
 		},
 		["Krixi - Grim Batol"] = {
 			["macrotext"] = {
@@ -120,15 +141,6 @@ TalentMacrosDB = {
 				[17565] = "/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Bestow Faith",
 				[21811] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Sacred shield\n",
 			},
-			["version"] = 1,
-		},
-		["Gnomalock - Grim Batol"] = {
-			["version"] = 1,
-		},
-		["Treefiddy - Aggra (Português)"] = {
-			["version"] = 1,
-		},
-		["Kroxi - Crushridge"] = {
 			["version"] = 1,
 		},
 		["Nyrith - Grim Batol"] = {
@@ -141,27 +153,12 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
-		["Skullflower"] = {
-			["macrotext"] = {
-				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
-			},
+		["Krixiyo - Twisting Nether"] = {
 		},
-		["Líttle - Grim Batol"] = {
-			["macrotext"] = {
-				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
-			},
+		["Treefiddy - Aggra (Português)"] = {
 			["version"] = 1,
 		},
-		["Spacegoatx - Aggra (Português)"] = {
-			["version"] = 1,
-		},
-		["Krixidh - Grim Batol"] = {
-		},
-		["Asdasdasdfaf - Grim Batol"] = {
-		},
-		["Kriximonk - Grim Batol"] = {
-		},
-		["Donchyo - Shattered Hand"] = {
+		["Kroxi - Crushridge"] = {
 			["version"] = 1,
 		},
 		["Zetiz - Grim Batol"] = {
@@ -177,6 +174,31 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
+		["Skullflower"] = {
+			["macrotext"] = {
+				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
+			},
+		},
+		["Donchyo - Shattered Hand"] = {
+			["version"] = 1,
+		},
+		["Spacegoatx - Aggra (Português)"] = {
+			["version"] = 1,
+		},
+		["Krixidh - Valley of Heroes - EU"] = {
+		},
+		["Asdasdasdfaf - Grim Batol"] = {
+		},
+		["Kriximonk - Grim Batol"] = {
+		},
+		["Namji - Grim Batol"] = {
+			["macrotext"] = {
+				[19820] = "#showtooltip\n/cast [@namji] Zen Sphere",
+			},
+			["version"] = 1,
+		},
+		["Daroislost - Valley of Heroes - EU"] = {
+		},
 		["Zuriz - Grim Batol"] = {
 			["macrotext"] = {
 				[19267] = "#showtooltip\n/cast [@targettarget, harm, exists] elemental blast;  [@focus, harm, exists]elemental blast; [@focustarget, harm, exists] elemental blast; [@mouseovertarget, exist, harm]elemental blast; elemental blast\n",
@@ -187,8 +209,7 @@ TalentMacrosDB = {
 		["Krixiswag - Aggra (Português)"] = {
 			["version"] = 1,
 		},
-		["Kroxidps - Aggra (Português)"] = {
-			["version"] = 1,
+		["Krixidk - Valley of Heroes - EU"] = {
 		},
 	},
 }

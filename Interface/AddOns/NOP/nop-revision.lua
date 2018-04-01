@@ -1,4 +1,17 @@
 -- Revisions:
+--[[<p>08.38 22.03.2018</p>
+<p><ul>
+<li>Herald option now obey setting for artifact as well.</li>
+</ul><hr></p>
+]]
+--[[<p>08.36 16.03.2018</p>
+<p><ul>
+<li>When reputation tokens aren't disabled on exalted, these will not be placed if paragon reward is pending.</li>
+<li>All declarations rewriten to use LINT and strict locak check. Found 3 variables refered before use.</li>
+<li>Hope it will fix Garrison mine buff problem, quest bar hotkey bind and reputation rewards.</li>
+<li>Added Illusion: items and Badge of Honor.</li>
+</ul><hr></p>
+]]
 --[[<p>08.34 21.02.2018</p>
 <p><ul>
 <li>Workaround for bug in WoW API function C_Reputation.GetFactionParagonInfo() it returns empty values in certain dungeon.</li>

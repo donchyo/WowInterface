@@ -488,7 +488,7 @@ local function List_MerchantUpdate()
 			local merchantItemID = GetMerchantItemID(offset);
 			local isHeirloom = merchantItemID and C_Heirloom.IsItemHeirloom(merchantItemID);
 			local isKnownHeirloom = isHeirloom and C_Heirloom.PlayerHasHeirloom(merchantItemID);
-			local tintRed = not isPurchasable or (not isUsable and not isHeirloom) or not canAfford;
+			local tintRed = not isPurchasable or (not isUsable and not isHeirloom) or (canAfford == false);
 			
 			if ( numAvailable == 0 or isKnownHeirloom ) then
 				button.highlight:SetVertexColor(0.5, 0.5, 0.5, 0.5);
@@ -643,7 +643,6 @@ local function Create_ListButton(frame, i)
 	local iteminfo = button:CreateFontString("ARTWORK", "$parentItemInfo")
 	button.iteminfo = iteminfo;
 	iteminfo:SetFont(E.LSM:Fetch('font', E.db.sle.skins.merchant.list.subFont), E.db.sle.skins.merchant.list.subSize, E.db.sle.skins.merchant.list.subOutline)
-	-- iteminfo:SetPoint("BOTTOMLEFT", 30.4, 3);
 	iteminfo:SetPoint("BOTTOMLEFT", icon, "BOTTOMRIGHT", 4, -3);
 	iteminfo:SetJustifyH("LEFT");
 

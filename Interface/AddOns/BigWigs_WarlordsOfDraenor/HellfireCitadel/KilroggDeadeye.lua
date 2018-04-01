@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Kilrogg Deadeye", 1026, 1396)
+local mod, CL = BigWigs:NewBoss("Kilrogg Deadeye", 1448, 1396)
 if not mod then return end
 mod:RegisterEnableMob(90378)
 mod.engageId = 1786
@@ -115,7 +115,7 @@ do
 				mobCollector[guid] = true
 				local id = adds[self:MobId(guid)]
 				if id then
-					self:Message(id, "Neutral", "Info", self:SpellName(id), false)
+					self:Message(id, "Neutral", "Info", self:SpellName(id), false) -- SetOption:-11269,-11266,-11261,-11263:::
 					if id == -11269 then
 						self:CDBar(id, 70, nil, "spell_nature_shamanrage") -- Hulking Terror, 70-75
 					end

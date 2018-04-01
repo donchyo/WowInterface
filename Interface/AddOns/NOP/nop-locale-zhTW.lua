@@ -1,6 +1,10 @@
 ﻿-- Chinese Traditional localization file for zhTW. by BNSSNB and rest by Google translator
+local _
+-- [[
+local assert = _G.assert
+local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
+-- ]]
 local ADDON = ...
-local _ ;
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale(ADDON, "zhTW");
 if not L then return end

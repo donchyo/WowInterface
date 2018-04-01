@@ -75,7 +75,6 @@ P["sle"] = {
 	},
 	--Bags
 	["bags"] = {
-		["lootflash"] = true,
 		["artifactPower"] = {
 			["enable"] = false,
 			["color"] = {r = 230, g = 204, b = 128},
@@ -83,6 +82,15 @@ P["sle"] = {
 			["fonts"] = {
 				["font"] = "PT Sans Narrow",
 				["size"] = 12,
+				["outline"] = "OUTLINE",
+			},
+		},
+		["petLevel"] = {
+			["enable"] = false,
+			["color"] = {r = 230, g = 204, b = 128},
+			["fonts"] = {
+				["font"] = "PT Sans Narrow",
+				["size"] = 14,
 				["outline"] = "OUTLINE",
 			},
 		},
@@ -491,12 +499,12 @@ P["sle"] = {
 			["iconmouseover"] = false,
 			["iconsize"] = 27,
 			["iconperrow"] = 12,
-			["pethide"] = false,
 			["skindungeon"] = false,
 			["skinmail"] = false,
 			["spacing"] = 4,
 			["growth_hor"] = "Right",
 			["growth_vert"] = "Down",
+			["visibility"] = "[petbattle] hide; show",
 		},
 		["instance"] = {
 			["enable"] = false,
@@ -541,6 +549,11 @@ P["sle"] = {
 				["customWidthValue"] = 200,
 				["justify"] = "LEFT",
 				["cdFormat"] = "DEFAULT",
+				["ignoreMissingInfo"] = false,
+				["showHearthstones"] = true,
+				["showToys"] = true,
+				["showSpells"] = true,
+				["showEngineer"] = true,
 			},
 		},
 	},

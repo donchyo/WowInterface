@@ -3,7 +3,7 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Galakras", 953, 868)
+local mod, CL = BigWigs:NewBoss("Galakras", 1136, 868)
 if not mod then return end
 mod:RegisterEnableMob(
 	72249, 72358, -- Galakras, Kor'kron Cannon
@@ -19,6 +19,7 @@ mod.engageId = 1622
 local towerAddTimer = nil
 local addsCounter = 0
 local prevMarkedMob = nil
+local prevWin = 0
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -75,6 +76,10 @@ function mod:GetOptions()
 		[147068] = -8418, -- Galakras
 		["stages"] = "general",
 	}
+end
+
+function mod:VerifyEnable()
+	return (GetTime() - prevWin) > 180
 end
 
 function mod:OnBossEnable()
@@ -142,6 +147,10 @@ function mod:OnEngage()
 		self:RegisterEvent("UPDATE_MOUSEOVER_UNIT", "UNIT_TARGET")
 		self:RegisterEvent("UNIT_TARGET")
 	end
+end
+
+function mod:OnWin()
+	prevWin = GetTime()
 end
 
 --------------------------------------------------------------------------------
