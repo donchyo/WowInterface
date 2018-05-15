@@ -1,32 +1,5 @@
 
 StayUnsheathedDB = {
-	["profileKeys"] = {
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
-		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
-		["Tomesthree - Aggra (Português)"] = "Tomesthree - Aggra (Português)",
-		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Tomesfour - Aggra (Português)"] = "Tomesfour - Aggra (Português)",
-		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
-		["Tomesone - Aggra (Português)"] = "Tomesone - Aggra (Português)",
-		["Tomestwo - Aggra (Português)"] = "Tomestwo - Aggra (Português)",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
-		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Krixicx - Shattered Hand"] = "Krixicx - Shattered Hand",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Tomestomes - Aggra (Português)"] = "Tomestomes - Aggra (Português)",
-		["Tomesonecx - Aggra (Português)"] = "Tomesonecx - Aggra (Português)",
-		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Krixidk - Grim Batol"] = "Krixidk - Grim Batol",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
-	},
 	["char"] = {
 		["Krixiyo - Twisting Nether"] = {
 			["Specs"] = {
@@ -386,28 +359,6 @@ StayUnsheathedDB = {
 				}, -- [3]
 			},
 		},
-		["Spacegoatx - Aggra (Português)"] = {
-			["Specs"] = {
-				{
-					["specEnabled"] = true,
-					["iconPath"] = "Interface\\Icons\\Spell_Holy_HolyBolt",
-					["specNumber"] = 1,
-					["specName"] = "Holy",
-				}, -- [1]
-				{
-					["specEnabled"] = true,
-					["iconPath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
-					["specNumber"] = 2,
-					["specName"] = "Protection",
-				}, -- [2]
-				{
-					["specEnabled"] = true,
-					["iconPath"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
-					["specNumber"] = 3,
-					["specName"] = "Retribution",
-				}, -- [3]
-			},
-		},
 		["Zolution - Grim Batol"] = {
 			["Specs"] = {
 				{
@@ -427,6 +378,28 @@ StayUnsheathedDB = {
 					["specNumber"] = 3,
 					["iconPath"] = "Interface\\Icons\\Spell_Shadow_ShadowWordPain",
 					["specName"] = "Shadow",
+				}, -- [3]
+			},
+		},
+		["Krixidk - Ravencrest"] = {
+			["Specs"] = {
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 1,
+					["iconPath"] = 135770,
+					["specName"] = "Blood",
+				}, -- [1]
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 2,
+					["iconPath"] = 135773,
+					["specName"] = "Frost",
+				}, -- [2]
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 3,
+					["iconPath"] = 135775,
+					["specName"] = "Unholy",
 				}, -- [3]
 			},
 		},
@@ -512,6 +485,28 @@ StayUnsheathedDB = {
 				}, -- [3]
 			},
 		},
+		["Donchyo - Shattered Hand"] = {
+			["Specs"] = {
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 1,
+					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+					["specName"] = "Blood",
+				}, -- [1]
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 2,
+					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",
+					["specName"] = "Frost",
+				}, -- [2]
+				{
+					["specEnabled"] = true,
+					["specNumber"] = 3,
+					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_UnholyPresence",
+					["specName"] = "Unholy",
+				}, -- [3]
+			},
+		},
 		["Greenzuriz - Aggra (Português)"] = {
 			["Specs"] = {
 				{
@@ -534,25 +529,25 @@ StayUnsheathedDB = {
 				}, -- [3]
 			},
 		},
-		["Donchyo - Shattered Hand"] = {
+		["Spacegoatx - Aggra (Português)"] = {
 			["Specs"] = {
 				{
 					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Spell_Holy_HolyBolt",
 					["specNumber"] = 1,
-					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",
-					["specName"] = "Blood",
+					["specName"] = "Holy",
 				}, -- [1]
 				{
 					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
 					["specNumber"] = 2,
-					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",
-					["specName"] = "Frost",
+					["specName"] = "Protection",
 				}, -- [2]
 				{
 					["specEnabled"] = true,
+					["iconPath"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
 					["specNumber"] = 3,
-					["iconPath"] = "Interface\\Icons\\Spell_Deathknight_UnholyPresence",
-					["specName"] = "Unholy",
+					["specName"] = "Retribution",
 				}, -- [3]
 			},
 		},
@@ -577,6 +572,38 @@ StayUnsheathedDB = {
 					["specName"] = "Unholy",
 				}, -- [3]
 			},
+		},
+	},
+	["profileKeys"] = {
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
+		["Tomesthree - Aggra (Português)"] = "Tomesthree - Aggra (Português)",
+		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
+		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Tomesfour - Aggra (Português)"] = "Tomesfour - Aggra (Português)",
+		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
+		["Tomesone - Aggra (Português)"] = "Tomesone - Aggra (Português)",
+		["Tomestwo - Aggra (Português)"] = "Tomestwo - Aggra (Português)",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
+		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Krixicx - Shattered Hand"] = "Krixicx - Shattered Hand",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Krixidk - Ravencrest"] = "Krixi",
+		["Tomestomes - Aggra (Português)"] = "Tomestomes - Aggra (Português)",
+		["Tomesonecx - Aggra (Português)"] = "Tomesonecx - Aggra (Português)",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Krixidk - Grim Batol"] = "Krixidk - Grim Batol",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
+	},
+	["profiles"] = {
+		["Krixidk - Ravencrest"] = {
 		},
 	},
 }

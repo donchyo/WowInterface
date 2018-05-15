@@ -123,20 +123,20 @@ Prat:AddModuleToLoad(function()
  L=
 {
 	["TellTarget"] = {
-		--Translation missing 
-		-- ["/tt"] = "",
-		--Translation missing 
-		-- ["Adds telltarget slash command (/tt)."] = "",
-		--Translation missing 
-		-- ["No target selected."] = "",
-		--Translation missing 
-		-- ["NoTarget"] = "",
-		--Translation missing 
-		-- ["Target does not exist."] = "",
-		--Translation missing 
-		-- ["Target is not a player."] = "",
-		--Translation missing 
-		-- ["TellTarget"] = "",
+		--[[Translation missing --]]
+		--[[ ["/tt"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Adds telltarget slash command (/tt)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["No target selected."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["NoTarget"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Target does not exist."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Target is not a player."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TellTarget"] = "",--]] 
 	}
 }
 

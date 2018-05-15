@@ -1,0 +1,7 @@
+rObjectiveTracker: disabled
+rLib: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled
+TidyPlates: enabled
+BrewmasterTools: disabled

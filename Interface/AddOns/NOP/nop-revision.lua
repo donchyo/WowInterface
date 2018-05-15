@@ -1,4 +1,29 @@
 -- Revisions:
+--[[<p>08.44 01.05.2018</p>
+<p><ul>
+<li>Added Petrified Wyrmtongue.</li>
+<li>WoW 8.x support. Ace3 libraries and other libraries updated to 8.0.1 support as well. For mapID now is used HereBeDragons 1.0 and 2.0</li>
+<li>Full LINT declaration and assertion check with call stack on wrong arguments.</li>
+<li>Timer function calls now doesn't overlap by default.</li>
+<li>Migration all references P. to local LINT friendly, prevents use of not defined variables.</li>
+</ul><hr></p>
+]]
+--[[<p>08.42 17.04.2018</p>
+<p><ul>
+<li>Fix. Restore item buttom and quest bar button frame anchor according to saved anchor in profile, instead reseting position.</li>
+<li>Fix. Tooltip anchor and if ElvUI is installed, then is forced to use uberTooltip anchor.</li>
+<li>Fix. Save procedure calls parent frame as nil for anchor when buttons are moved.</li>
+</ul><hr></p>
+]]
+--[[<p>08.40 04.04.2018</p>
+<p><ul>
+<li>Some MIA clams items returns back and Strange Ball of Energy.</li>
+<li>Items with Learning spell on it reinstated back.</li>
+<li>Only left text in tooltip is comared to red.</li>
+<li>Removed Stabilized Titan Essence now it is vendor trash.</li>
+<li>When faction is exalted and there is paragong reward pending then standing is shown as Exalted+.</li>
+</ul><hr></p>
+]]
 --[[<p>08.38 22.03.2018</p>
 <p><ul>
 <li>Herald option now obey setting for artifact as well.</li>

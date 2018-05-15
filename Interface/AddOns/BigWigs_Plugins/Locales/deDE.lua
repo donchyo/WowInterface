@@ -2,6 +2,9 @@ local L = BigWigsAPI:NewLocale("BigWigs: Plugins", "deDE")
 if not L then return end
 
 L.comma = ", "
+L.width = "Breite"
+L.height = "Höhe"
+L.sizeDesc = "Normal wird die Größe festgelegt, indem du den Anker bewegst. Falls du eine exakte Größe benötigst, bewege diesen Schieber oder trage den Wert in das Feld ein, diese Zahl kann beliebig groß sein."
 
 L.abilityName = "Fähigkeitsname"
 L.abilityNameDesc = "Zeigt oder versteckt den Fähigkeitsnamen über dem Fenster."
@@ -150,12 +153,12 @@ L.proximity_name = "Nähe"
 L.proximityTitle = "%d m / %d Spieler"
 L.pull = "Pull"
 L.pullIn = "Pull in %d Sek."
---L.engageSoundTitle = "Play a sound when a boss encounter has started"
---L.pullStartedSoundTitle = "Play a sound when the pull timer is started"
---L.pullFinishedSoundTitle = "Play a sound when the pull timer is finished"
+L.engageSoundTitle = "Spiele  einen Sound ab, sobald ein Bosskampf beginnt"
+L.pullStartedSoundTitle = "Spiele einen Sound ab, sobald ein Pull-Timer gestartet wurde"
+L.pullFinishedSoundTitle = "Spiele einen Sound ab, sobald ein Pull-Timer abgelaufen ist"
 L.pullStarted = "Pull-Timer wurde von %s-Nutzer %s gestartet."
 L.pullStopped = "Pull-Timer von %s abgebrochen."
---L.pullStoppedCombat = "Pull timer cancelled because you entered combat."
+L.pullStoppedCombat = "Pull-Timer wurde abgebrochen, weil du einen Kampf begonnen hast."
 L.raidIconsDesc = [=[Einige Bossmodule benutzen Schlachtzugssymbole, um Spieler zu markieren, die von speziellem Interesse für deine Gruppe sind. Beispiele wären Bombeneffekte und Gedankenkontrolle. Wenn du diese Option ausschaltest, markierst du niemanden mehr.
 
 |cffff4411Trifft nur zu, sofern du Schlachtzugsleiter oder Assistent bist.|r]=]
@@ -183,7 +186,6 @@ L.restart = "Neu starten"
 L.restartDesc = "Startet die hervorgehobenen Leisten neu, so dass sie bis 10 hochzählen anstatt von 10 herunter."
 L.right = "Rechts"
 L.RunAway = "Lauf kleines Mädchen, lauf (Der große böse Wolf)"
-L.scale = "Skalierung"
 L.secondary = "Zweites Symbol"
 L.secondaryDesc = "Das zweite Schlachtzugssymbol, das verwendet wird."
 L.sendBreak = "Sende Pausentimer an BigWigs- und DBM-Nutzer."
@@ -243,8 +245,8 @@ L.victoryMessageBlizzardDesc = "Die Blizzard-Mitteilung ist eine sehr große Bos
 L.victoryMessages = "Boss-besiegt-Nachrichten zeigen"
 L.victorySound = "Spiele einen Sieg-Sound"
 L.Warning = "Warnung"
---L.wipe = "Wipe"
---L.wipeSoundTitle = "Play a sound when you wipe"
+L.wipe = "Niederlage"
+L.wipeSoundTitle = "Spiele bei einer Niederlage einen Sound ab"
 L.wrongBreakFormat = "Muss zwischen 1 und 60 Minuten liegen. Beispiel: /break 5"
 L.wrongCustomBarFormat = "Ungültiges Format. Beispiel: /raidbar 20 text"
 L.wrongPullFormat = "Muss zwischen 1 und 60 Sekunden liegen. Beispiel: /pull 5"
@@ -254,23 +256,34 @@ L.wrongTime = "Ungültige Zeitangabe. <time> kann eine Zahl in Sekunden, ein M:S
 -- AutoReply.lua
 --
 
---L.autoReply = "Auto Reply"
---L.autoReplyDesc = "Automatically reply to whispers when engaged in a boss encounter."
---L.responseType = "Response Type"
---L.autoReplyFinalReply = "Also whisper when leaving combat"
---L.guildAndFriends = "Guild & Friends"
---L.everyoneElse = "Everyone else"
+L.autoReply = "Automatisch Antworten"
+L.autoReplyDesc = "Automatisch auf Flüsternachrichten antworten, wenn ich mich in einem Bosskampf befinde."
+L.responseType = "Antwortart"
+L.autoReplyFinalReply = "Auch flüstern wenn ich den Kampf verlassen habe"
+L.guildAndFriends = "Gilde & Freunde"
+L.everyoneElse = "Jeden"
 
---L.autoReplyBasic = "I'm busy in combat with a boss encounter."
---L.autoReplyNormal = "I'm busy in combat with '%s'."
---L.autoReplyAdvanced = "I'm busy in combat with '%s' (%s) and %d/%d people are alive."
---L.autoReplyExtreme = "I'm busy in combat with '%s' (%s) and %d/%d people are alive: %s"
+L.autoReplyBasic = "Ich befinde mich in einem Bosskampf."
+L.autoReplyNormal = "Ich kämpfe gerade gegen '%s'."
+L.autoReplyAdvanced = "Ich kämpfe gerade gegen '%s' (%s) und %d/%d Spieler sind noch am Leben."
+L.autoReplyExtreme = "Ich kämpfe gerade gegen '%s' (%s) und %d/%d Spieler sind noch am Leben: %s"
 
---L.autoReplyLeftCombatBasic = "I am no longer in combat with a boss encounter."
---L.autoReplyLeftCombatNormalWin = "I won against '%s'."
---L.autoReplyLeftCombatNormalWipe = "I lost against '%s'."
---L.autoReplyLeftCombatAdvancedWin = "I won against '%s' with %d/%d people alive."
---L.autoReplyLeftCombatAdvancedWipe = "I lost against '%s' at: %s"
+L.autoReplyLeftCombatBasic = "Ich befinde mich nicht mehr im Bosskampf."
+L.autoReplyLeftCombatNormalWin = "Ich habe gegen '%s' gewonnen."
+L.autoReplyLeftCombatNormalWipe = "Ich habe gegen '%s' verloren."
+L.autoReplyLeftCombatAdvancedWin = "Ich habe gegen '%s' gewonnen und %d/%d Spieler sind noch am leben."
+L.autoReplyLeftCombatAdvancedWipe = "Ich habe gegen '%s' verloren: %s"
+
+-----------------------------------------------------------------------
+-- Bars.lua
+--
+
+L.spacing = "Abstand"
+L.spacingDesc = "Verändert den Abstand zwischen den Leisten."
+L.emphasizeMultiplier = "Größenmultiplikator"
+--L.emphasizeMultiplierDesc = "If you disable the bars moving to the emphasize anchor, this option will decide what size the emphasized bars will be by multiplying the size of the normal bars."
+L.iconPosition = "Symbolposition"
+L.iconPositionDesc = "Wähle, wo sich das Symbol auf der Leiste befinden soll."
 
 -----------------------------------------------------------------------
 -- InfoBox.lua

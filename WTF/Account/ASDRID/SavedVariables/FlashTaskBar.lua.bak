@@ -2,7 +2,7 @@
 FlashTaskbarDB = {
 	["profileKeys"] = {
 		["Krixi - Valley of Heroes - EU"] = "Default",
-		["Krixidk - Grim Batol"] = "Skullflower",
+		["Krixidk - Grim Batol"] = "Krixi",
 		["Krixikin - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixiwarrior - Valley of Heroes - EU"] = "Default",
@@ -10,17 +10,18 @@ FlashTaskbarDB = {
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
+		["Krixidk - Ravencrest"] = "Krixi",
 		["Greenzuriz - Aggra (Português)"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
-		["Kroxi - Grim Batol"] = "Default",
+		["Kroxi - Grim Batol"] = "Krixi",
 		["Bawsi - Aggra (Português)"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
+		["Krixidh - Grim Batol"] = "Krixi",
 		["Donch - Shattered Hand"] = "Default",
 		["Lowerboost - Lightbringer"] = "Default",
 		["Namji - Grim Batol"] = "Default",
 		["Kriximonk - Valley of Heroes - EU"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Krixi",
 		["Zetiz - Grim Batol"] = "Default",
 		["Donch - Grim Batol"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
@@ -39,17 +40,20 @@ FlashTaskbarDB = {
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
+		["Skullflower"] = {
+			["end_taxi"] = true,
+			["disconnect_logout"] = true,
+		},
 		["Default"] = {
-			["rare_scan"] = false,
 			["any_rare"] = false,
 			["chat_scan_keywords"] = {
 				"Krixi", -- [1]
 				"Donch", -- [2]
 			},
+			["rare_scan"] = false,
 		},
-		["Skullflower"] = {
+		["Krixi"] = {
 			["end_taxi"] = true,
-			["disconnect_logout"] = true,
 		},
 	},
 }

@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "LibArtifactData-1.0", 21
+local MAJOR, MINOR = "LibArtifactData-1.0", 22
 
 assert(_G.LibStub, MAJOR .. " requires LibStub")
 local lib = _G.LibStub:NewLibrary(MAJOR, MINOR)
@@ -458,7 +458,7 @@ local GetInventoryItemEquippedUnusable = _G.GetInventoryItemEquippedUnusable
 local GetItemInfo                      = _G.GetItemInfo
 local GetItemSpell                     = _G.GetItemSpell
 local GetNumObtainedArtifacts          = aUI.GetNumObtainedArtifacts
-local GetNumPurchasableTraits          = _G.MainMenuBar_GetNumArtifactTraitsPurchasableFromXP
+local GetNumPurchasableTraits          = _G.MainMenuBar_GetNumArtifactTraitsPurchasableFromXP or _G.ArtifactBarGetNumArtifactTraitsPurchasableFromXP
 local GetNumRelicSlots                 = aUI.GetNumRelicSlots
 local GetPowerInfo                     = aUI.GetPowerInfo
 local GetPowers                        = aUI.GetPowers
@@ -478,6 +478,8 @@ local select   = _G.select
 local strmatch = _G.string.match
 local tonumber = _G.tonumber
 
+-- WoW 7.x to 8.x
+local _, _, _, tocVersion = GetBuildInfo() -- resolve version
 local private = {} -- private space for the event handlers
 
 lib.frame = lib.frame or _G.CreateFrame("Frame")
@@ -987,7 +989,7 @@ function lib.GetArtifactPowerFromItem(_, item)
 	end
 
 	if IsArtifactPowerItem(itemID) then
-		local _, _, spellID = GetItemSpell(itemID)
+		local spellID = select((tocVersion < 8000) and 3 or 2,GetItemSpell(itemID))
 		return artifactPowerData.multiplier[knowledgeLevel] * (artifactPowerData.spells[spellID] or 0)
 	elseif artifactPowerData.items[itemID] then
 		return artifactPowerData.multiplier[knowledgeLevel] * artifactPowerData.items[itemID]

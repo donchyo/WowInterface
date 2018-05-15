@@ -43,22 +43,22 @@ L["KEYSTONE_COMPLETED_10"] = "+10-14 完成的钥石"
 L["KEYSTONE_COMPLETED_15"] = "+15 完成的钥石"
 L["MAINS_SCORE"] = "当前分数"
 L["MAINS_SCORE_COLON"] = "当前的分数："
---Translation missing 
--- L["MODULE_AMERICAS"] = ""
---Translation missing 
--- L["MODULE_EUROPE"] = ""
---Translation missing 
--- L["MODULE_KOREA"] = ""
---Translation missing 
--- L["MODULE_TAIWAN"] = ""
+--[[Translation missing --]]
+--[[ L["MODULE_AMERICAS"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MODULE_EUROPE"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MODULE_KOREA"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MODULE_TAIWAN"] = ""--]] 
 L["MYTHIC_PLUS_DB_MODULES"] = "大秘境数据库模组"
 L["MYTHIC_PLUS_SCORES"] = "大秘境评分"
 L["OPEN_CONFIG"] = "开启选项"
 L["OUTDATED_DATABASE"] = "%天前的评分"
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r使用的数据已经有|cffFF6666%d|r天之前的了。请更新此插件以显示更精准的大秘境评分。"
 L["PREV_SEASON_SUFFIX"] = "（*）"
---Translation missing 
--- L["RAIDERIO_MP_BASE_SCORE"] = ""
+--[[Translation missing --]]
+--[[ L["RAIDERIO_MP_BASE_SCORE"] = ""--]] 
 L["RAIDERIO_MP_SCORE"] = "Raider.IO 大秘境评分"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO 大秘境评分："
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Raider.IO 大秘境选项"
@@ -80,10 +80,10 @@ L["SHOW_ON_GUILD_ROSTER"] = "在公会名册上显示"
 L["SHOW_ON_GUILD_ROSTER_DESC"] = "当你鼠标悬停在公会名册的成员时显示大秘境评分"
 L["SHOW_ON_PLAYER_UNITS"] = "在玩家单位显示"
 L["SHOW_ON_PLAYER_UNITS_DESC"] = "当你鼠标悬停在玩家单位的时候显示大秘境评分"
---Translation missing 
--- L["SHOW_SCORE_IN_COMBAT"] = ""
---Translation missing 
--- L["SHOW_SCORE_IN_COMBAT_DESC"] = ""
+--[[Translation missing --]]
+--[[ L["SHOW_SCORE_IN_COMBAT"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["SHOW_SCORE_IN_COMBAT_DESC"] = ""--]] 
 L["TANK"] = "坦克"
 L["TANK_SCORE"] = "坦克评分"
 L["TIMED_10_RUNS"] = "限时通关 10-14 次数"

@@ -1,10 +1,16 @@
-tag 4814a6988c6fbd420d18a8ab6ecaf840d072a996 7.3.5.1
+tag f8de45b1ac3c3a153ca0785ab0aa7a968aba5ef0 7.3.5.2
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Tue Mar 27 06:52:42 2018 -0500
+Date:	Tue May 1 02:15:14 2018 -0500
 
-commit bc17b3ceb05fb1323c3277f5afe24501a0e8d7aa
+commit 8cc64f40676bc7f8aab89727a005f8f7980c82ed
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Tue Mar 27 06:52:05 2018 -0500
+Date:   Tue May 1 02:15:01 2018 -0500
 
-    Add Wakening Essence to the Miscellaneous section.
+    Belatedly bump ToC Interface to 70300, and tidy the ToC a bit.
+
+commit 08c25ca8db77033dbaa82c52455b8cfb1a19a1de
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Tue May 1 02:13:38 2018 -0500
+
+    Add support for Domination Point Commission and Lion's Landing Commission items.
 

@@ -215,58 +215,58 @@ Prat:AddModuleToLoad(function()
   L=
 {
 	["Timestamps"] = {
-		--Translation missing 
-		-- ["Chat window timestamp options."] = "",
-		--Translation missing 
-		-- ["colortimestamp_desc"] = "",
-		--Translation missing 
-		-- ["colortimestamp_name"] = "",
-		--Translation missing 
-		-- ["Format All Timestamps"] = "",
-		--Translation missing 
-		-- ["HH:MM (12-hour)"] = "",
-		--Translation missing 
-		-- ["HH:MM (24-hour)"] = "",
-		--Translation missing 
-		-- ["HH:MM:SS (12-hour)"] = "",
-		--Translation missing 
-		-- ["HH:MM:SS (24-hour)"] = "",
-		--Translation missing 
-		-- ["HH:MM:SS AM (12-hour)"] = "",
-		--Translation missing 
-		-- ["localtime_desc"] = "",
-		--Translation missing 
-		-- ["localtime_name"] = "",
-		--Translation missing 
-		-- ["MM:SS"] = "",
-		--Translation missing 
-		-- ["Post-Timestamp"] = "",
-		--Translation missing 
-		-- ["Pre-Timestamp"] = "",
-		--Translation missing 
-		-- ["Set the timestamp format"] = "",
-		--Translation missing 
-		-- ["Set Timestamp Color"] = "",
-		--Translation missing 
-		-- ["Sets the color of the timestamp."] = "",
-		--Translation missing 
-		-- ["Show Timestamp"] = "",
-		--Translation missing 
-		-- ["show_desc"] = "",
-		--Translation missing 
-		-- ["show_name"] = "",
-		--Translation missing 
-		-- ["space_desc"] = "",
-		--Translation missing 
-		-- ["space_name"] = "",
-		--Translation missing 
-		-- ["Timestamps"] = "",
-		--Translation missing 
-		-- ["Toggle showing timestamp for each window."] = "",
-		--Translation missing 
-		-- ["twocolumn_desc"] = "",
-		--Translation missing 
-		-- ["twocolumn_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["Chat window timestamp options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["colortimestamp_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["colortimestamp_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Format All Timestamps"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["HH:MM (12-hour)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["HH:MM (24-hour)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["HH:MM:SS (12-hour)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["HH:MM:SS (24-hour)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["HH:MM:SS AM (12-hour)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["localtime_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["localtime_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MM:SS"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Post-Timestamp"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Pre-Timestamp"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the timestamp format"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Timestamp Color"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Sets the color of the timestamp."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Show Timestamp"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["space_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["space_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Timestamps"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle showing timestamp for each window."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["twocolumn_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["twocolumn_name"] = "",--]] 
 	}
 }
 
@@ -401,13 +401,13 @@ Prat:AddModuleToLoad(function()
 		["Show Timestamp"] = "顯示時間戳",
 		["show_desc"] = "切換顯示時間標籤",
 		["show_name"] = "顯示時間戳",
-		--Translation missing 
-		-- ["space_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["space_desc"] = "",--]] 
 		["space_name"] = "顯示空白",
 		["Timestamps"] = "時間戳",
 		["Toggle showing timestamp for each window."] = "切換是否在個別視窗顯示時間戳。",
-		--Translation missing 
-		-- ["twocolumn_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["twocolumn_desc"] = "",--]] 
 		["twocolumn_name"] = "兩欄式聊天",
 	}
 }

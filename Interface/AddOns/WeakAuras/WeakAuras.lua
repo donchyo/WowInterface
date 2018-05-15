@@ -1,3 +1,5 @@
+local internalVersion = 3;
+
 -- Lua APIs
 local tinsert, tconcat, tremove, tContains, wipe = table.insert, table.concat, table.remove, tContains, wipe
 local fmt, tostring, select, pairs, next, type = string.format, tostring, select, pairs, next, type
@@ -46,6 +48,10 @@ local L = WeakAuras.L
 
 local queueshowooc;
 
+function WeakAuras.InternalVersion()
+  return internalVersion;
+end
+
 function WeakAuras.LoadOptions(msg)
   if not(IsAddOnLoaded("WeakAurasOptions")) then
     if InCombatLockdown() then
@@ -75,6 +81,9 @@ SLASH_WEAKAURAS1, SLASH_WEAKAURAS2 = "/weakauras", "/wa";
 function SlashCmdList.WEAKAURAS(msg)
   WeakAuras.OpenOptions(msg);
 end
+
+BINDING_HEADER_WEAKAURAS = "WeakAuras"
+BINDING_NAME_WEAKAURASTOGGLE = "Toggle WeakAuras Options"
 
 -- An alias for WeakAurasSaved, the SavedVariables
 -- Noteable properties:
@@ -410,7 +419,7 @@ function WeakAuras.ActivateAuraEnvironment(id, cloneId, state)
         local func = WeakAuras.customActionsFunctions[id]["init"];
         if func then
           current_aura_env.id = id;
-          func();
+          xpcall(func, geterrorhandler());
         end
       end
     end
@@ -1394,6 +1403,9 @@ function WeakAuras.ScanForLoads(self, event, arg1)
     elseif difficultyIndex == 24 then
       size = "party"
       difficulty = "timewalking"
+    elseif difficultyIndex == 33 then
+      size = "flexible"
+      difficulty = "timewalking"
     end
   else
     WeakAuras.UpdateCurrentInstanceType();
@@ -1973,262 +1985,285 @@ end
 
 -- Takes as input a table of display data and attempts to update it to be compatible with the current version
 function WeakAuras.Modernize(data)
-  -- Add trigger count
-  if not data.numTriggers then
-    data.numTriggers = 1 + (data.additional_triggers and #data.additional_triggers or 0)
+  if (not data.internalVersion) then
+    data.internalVersion = 1;
   end
 
-  local load = data.load;
-
-  if (not load.ingroup) then
-    load.ingroup = {};
-    if (load.use_ingroup == true) then
-      load.ingroup.single = nil;
-      load.ingroup.multi = {
-        ["group"] = true,
-        ["raid"] = true
-      };
-      load.use_ingroup = false;
-    elseif (load.use_ingroup == false) then
-        load.ingroup.single = "solo";
-      load.ingroup.multi = {};
-      load.use_ingroup = true;
+  -- Version 2 was introduced April 2018 in Legion
+  if (data.internalVersion < 2) then
+    -- Add trigger count
+    if not data.numTriggers then
+      data.numTriggers = 1 + (data.additional_triggers and #data.additional_triggers or 0)
     end
-  end
+
+    local load = data.load;
+
+    if (not load.ingroup) then
+      load.ingroup = {};
+      if (load.use_ingroup == true) then
+        load.ingroup.single = nil;
+        load.ingroup.multi = {
+          ["group"] = true,
+          ["raid"] = true
+        };
+        load.use_ingroup = false;
+      elseif (load.use_ingroup == false) then
+          load.ingroup.single = "solo";
+        load.ingroup.multi = {};
+        load.use_ingroup = true;
+      end
+    end
 
 
-  -- Convert load options into single/multi format
-  for index, prototype in pairs(WeakAuras.load_prototype.args) do
-    local protoname = prototype.name;
-    if(prototype.type == "multiselect") then
-      if(not load[protoname] or type(load[protoname]) ~= "table") then
-        local value = load[protoname];
-        load[protoname] = {};
-        if(value) then
-          load[protoname].single = value;
+    -- Convert load options into single/multi format
+    for index, prototype in pairs(WeakAuras.load_prototype.args) do
+      local protoname = prototype.name;
+      if(prototype.type == "multiselect") then
+        if(not load[protoname] or type(load[protoname]) ~= "table") then
+          local value = load[protoname];
+          load[protoname] = {};
+          if(value) then
+            load[protoname].single = value;
+          end
+        end
+        load[protoname].multi = load[protoname].multi or {};
+      elseif(load[protoname] and type(load[protoname]) == "table") then
+        load[protoname] = nil;
+      end
+    end
+
+    -- upgrade from singleselecting talents to multi select, see ticket 52
+    if (type(load.talent) == "number") then
+      local talent = load.talent;
+      load.talent = {};
+      load.talent.single = talent;
+      load.talent.multi = {}
+    end
+
+
+    --upgrade to support custom trigger combination logic
+    if (data.disjunctive == true) then
+      data.disjunctive = "any";
+    end
+    if(data.disjunctive == false) then
+      data.disjunctive = "all";
+    end
+
+    -- Change English-language class tokens to locale-agnostic versions
+    local class_agnosticize = {
+      ["Death Knight"] = "DEATHKNIGHT",
+      ["Druid"] = "DRUID",
+      ["Hunter"] = "HUNTER",
+      ["Mage"] = "MAGE",
+      ["Monk"] = "MONK",
+      ["Paladin"] = "PALADIN",
+      ["Priest"] = "PRIEST",
+      ["Rogue"] = "ROGUE",
+      ["Shaman"] = "SHAMAN",
+      ["Warlock"] = "WARLOCK",
+      ["Warrior"] = "WARRIOR"
+    };
+
+    if(load.class.single) then
+      load.class.single = class_agnosticize[load.class.single] or load.class.single;
+    end
+
+    if(load.class.multi) then
+      for i,v in pairs(load.class.multi) do
+        if(class_agnosticize[i]) then
+          load.class.multi[class_agnosticize[i]] = true;
+          load.class.multi[i] = nil;
         end
       end
-      load[protoname].multi = load[protoname].multi or {};
-    elseif(load[protoname] and type(load[protoname]) == "table") then
-      load[protoname] = nil;
     end
+
+    -- Add dynamic text info to Progress Bars
+    -- Also convert custom displayText to new displayText
+    if(data.regionType == "aurabar") then
+      data.displayTextLeft = data.displayTextLeft or (not data.auto and data.displayText) or "%n";
+      data.displayTextRight = data.displayTextRight or "%p";
+
+      if (data.barInFront ~= nil) then
+        data.borderInFront = not data.barInFront;
+        data.backdropInFront = not data.barInFront;
+        data.barInFront = nil;
+      end
+    end
+
+    if(data.regionType == "icon") then
+      if (data.cooldownTextEnabled == nil) then
+        data.cooldownTextEnabled = true;
+      end
+      if (data.displayStacks) then
+        data.text1Enabled = true;
+        data.text1 = data.displayStacks;
+        data.displayStacks = nil;
+        data.text1Color = data.textColor;
+        data.textColor = nil;
+        data.text1Point = data.stacksPoint;
+        data.stacksPoint = nil;
+        data.text1Containment = data.stacksContainment;
+        data.stacksContainment = nil;
+        data.text1Font = data.font;
+        data.font = nil;
+        data.text1FontSize = data.fontSize;
+        data.fontSize = nil;
+        data.text1FontFlags = data.fontFlags;
+        data.fontFlags = nil;
+
+        data.text2Enabled = false;
+        data.text2 = "%p";
+        data.text2Color = {1, 1, 1, 1};
+        data.text2Point = "CENTER";
+        data.text2Containment = "INSIDE";
+        data.text2Font = "Friz Quadrata TT";
+        data.text2FontSize = 24;
+        data.text2FontFlags = "OUTLINE";
+      end
+    end
+
+    -- Upgrade some old variables
+    if data.regionType == "aurabar" then
+      -- "border" changed to "borderEdge"
+      if data.border and type(data.border) ~= "boolean" then
+        data.borderEdge = data.border;
+        data.border = data.borderEdge ~= "None";
+      end
+      -- Multiple text settings
+      if data.textColor then
+        if not data.timerColor then
+          data.timerColor = {};
+          data.timerColor[1] = data.textColor[1];
+          data.timerColor[2] = data.textColor[2];
+          data.timerColor[3] = data.textColor[3];
+          data.timerColor[4] = data.textColor[4];
+        end
+        if not data.stacksColor then
+          data.stacksColor = {};
+          data.stacksColor[1] = data.textColor[1];
+          data.stacksColor[2] = data.textColor[2];
+          data.stacksColor[3] = data.textColor[3];
+          data.stacksColor[4] = data.textColor[4];
+        end
+      end
+      -- Multiple text settings
+      if data.font then
+        if not data.textFont then
+          data.textFont = data.font;
+        end
+        if not data.timerFont then
+          data.timerFont = data.font;
+        end
+        if not data.stacksFont then
+          data.stacksFont = data.font;
+        end
+
+        data.font = nil;
+      end
+      -- Multiple text settings
+      if data.fontSize then
+        if not data.textSize then
+          data.textSize = data.fontSize;
+        end
+        if not data.timerSize then
+          data.timerSize = data.fontSize;
+        end
+        if not data.stacksSize then
+          data.stacksSize = data.fontSize;
+        end
+
+        data.fontSize = nil;
+      end
+
+      -- fontFlags (outline)
+      if not data.fontFlags then
+        data.fontFlags = "OUTLINE";
+      end
+    end
+
+    if data.regionType == "text" then
+      if (type(data.outline) == "boolean") then
+        data.outline = data.outline and "OUTLINE" or "None";
+      end
+    end
+
+    if data.regionType == "model" then
+      if (data.api == nil) then
+        data.api = false;
+      end
+    end
+
+    if (data.regionType == "progresstexture") then
+      if (not data.version or data.version < 2) then
+        if (data.orientation == "CLOCKWISE") then
+          if (data.inverse) then
+            data.startAngle, data.endAngle = 360 - data.endAngle, 360 - data.startAngle;
+            data.orientation = (data.orientation == "CLOCKWISE") and "ANTICLOCKWISE" or "CLOCKWISE";
+          end
+        elseif (data.orientation == "ANTICLOCKWISE") then
+          data.startAngle, data.endAngle = 360 - data.endAngle, 360 - data.startAngle;
+          if (data.inverse) then
+            data.orientation = (data.orientation == "CLOCKWISE") and "ANTICLOCKWISE" or "CLOCKWISE";
+          end
+        end
+        data.version = 2;
+      end
+    end
+
+    if (not data.activeTriggerMode) then
+      data.activeTriggerMode = 0;
+    end
+
+    if (data.sort == "hybrid") then
+      if (not data.hybridPosition) then
+        data.hybridPosition = "hybridLast";
+      end
+      if (not data.hybridSortMode) then
+        data.hybridSortMode = "descending";
+      end
+    end
+
+    if (data.conditions) then
+      for conditionIndex, condition in ipairs(data.conditions) do
+        if (not condition.check) then
+          condition.check = {
+            ["trigger"] = condition.trigger,
+            ["variable"] = condition.condition,
+            ["op"] = condition.op,
+            ["value"] = condition.value
+          };
+          condition.trigger = nil;
+          condition.condition = nil;
+          condition.op = nil;
+          condition.value = nil;
+        end
+      end
+    end
+    ModernizeAnimations(data.animation and data.animation.start);
+    ModernizeAnimations(data.animation and data.animation.main);
+    ModernizeAnimations(data.animation and data.animation.finish);
+  end -- ENd of V1 => V2
+
+  -- Version 3 was introduced April 2018 in Legion
+  if (data.internalVersion < 3) then
+    if (data.parent) then
+      local parentData = WeakAuras.GetData(data.parent);
+      if(parentData and parentData.regionType == "dynamicgroup") then
+        -- Version 3 allowed for offsets for dynamic groups, before that they were ignored
+        -- Thus reset them in the V2 to V3 upgrade
+        data.xOffset = 0;
+        data.yOffset = 0;
+      end
+    end
+
   end
 
-  -- upgrade from singleselecting talents to multi select, see ticket 52
-  if (type(load.talent) == "number") then
-    local talent = load.talent;
-    load.talent = {};
-    load.talent.single = talent;
-    load.talent.multi = {}
-  end
-
-
-  --upgrade to support custom trigger combination logic
-  if (data.disjunctive == true) then
-    data.disjunctive = "any";
-  end
-  if(data.disjunctive == false) then
-    data.disjunctive = "all";
-  end
 
   for _, triggerSystem in pairs(triggerSystems) do
     triggerSystem.Modernize(data);
   end
 
-  -- Change English-language class tokens to locale-agnostic versions
-  local class_agnosticize = {
-    ["Death Knight"] = "DEATHKNIGHT",
-    ["Druid"] = "DRUID",
-    ["Hunter"] = "HUNTER",
-    ["Mage"] = "MAGE",
-    ["Monk"] = "MONK",
-    ["Paladin"] = "PALADIN",
-    ["Priest"] = "PRIEST",
-    ["Rogue"] = "ROGUE",
-    ["Shaman"] = "SHAMAN",
-    ["Warlock"] = "WARLOCK",
-    ["Warrior"] = "WARRIOR"
-  };
-
-  if(load.class.single) then
-    load.class.single = class_agnosticize[load.class.single] or load.class.single;
-  end
-
-  if(load.class.multi) then
-    for i,v in pairs(load.class.multi) do
-      if(class_agnosticize[i]) then
-        load.class.multi[class_agnosticize[i]] = true;
-        load.class.multi[i] = nil;
-      end
-    end
-  end
-
-  -- Add dynamic text info to Progress Bars
-  -- Also convert custom displayText to new displayText
-  if(data.regionType == "aurabar") then
-    data.displayTextLeft = data.displayTextLeft or (not data.auto and data.displayText) or "%n";
-    data.displayTextRight = data.displayTextRight or "%p";
-
-    if (data.barInFront ~= nil) then
-      data.borderInFront = not data.barInFront;
-      data.backdropInFront = not data.barInFront;
-      data.barInFront = nil;
-    end
-  end
-
-  if(data.regionType == "icon") then
-    if (data.cooldownTextEnabled == nil) then
-      data.cooldownTextEnabled = true;
-    end
-    if (data.displayStacks) then
-      data.text1Enabled = true;
-      data.text1 = data.displayStacks;
-      data.displayStacks = nil;
-      data.text1Color = data.textColor;
-      data.textColor = nil;
-      data.text1Point = data.stacksPoint;
-      data.stacksPoint = nil;
-      data.text1Containment = data.stacksContainment;
-      data.stacksContainment = nil;
-      data.text1Font = data.font;
-      data.font = nil;
-      data.text1FontSize = data.fontSize;
-      data.fontSize = nil;
-      data.text1FontFlags = data.fontFlags;
-      data.fontFlags = nil;
-
-      data.text2Enabled = false;
-      data.text2 = "%p";
-      data.text2Color = {1, 1, 1, 1};
-      data.text2Point = "CENTER";
-      data.text2Containment = "INSIDE";
-      data.text2Font = "Friz Quadrata TT";
-      data.text2FontSize = 24;
-      data.text2FontFlags = "OUTLINE";
-    end
-  end
-
-  -- Upgrade some old variables
-  if data.regionType == "aurabar" then
-    -- "border" changed to "borderEdge"
-    if data.border and type(data.border) ~= "boolean" then
-      data.borderEdge = data.border;
-      data.border = data.borderEdge ~= "None";
-    end
-    -- Multiple text settings
-    if data.textColor then
-      if not data.timerColor then
-        data.timerColor = {};
-        data.timerColor[1] = data.textColor[1];
-        data.timerColor[2] = data.textColor[2];
-        data.timerColor[3] = data.textColor[3];
-        data.timerColor[4] = data.textColor[4];
-      end
-      if not data.stacksColor then
-        data.stacksColor = {};
-        data.stacksColor[1] = data.textColor[1];
-        data.stacksColor[2] = data.textColor[2];
-        data.stacksColor[3] = data.textColor[3];
-        data.stacksColor[4] = data.textColor[4];
-      end
-    end
-    -- Multiple text settings
-    if data.font then
-      if not data.textFont then
-        data.textFont = data.font;
-      end
-      if not data.timerFont then
-        data.timerFont = data.font;
-      end
-      if not data.stacksFont then
-        data.stacksFont = data.font;
-      end
-
-      data.font = nil;
-    end
-    -- Multiple text settings
-    if data.fontSize then
-      if not data.textSize then
-        data.textSize = data.fontSize;
-      end
-      if not data.timerSize then
-        data.timerSize = data.fontSize;
-      end
-      if not data.stacksSize then
-        data.stacksSize = data.fontSize;
-      end
-
-      data.fontSize = nil;
-    end
-
-    -- fontFlags (outline)
-    if not data.fontFlags then
-      data.fontFlags = "OUTLINE";
-    end
-  end
-
-  if data.regionType == "text" then
-    if (type(data.outline) == "boolean") then
-      data.outline = data.outline and "OUTLINE" or "None";
-    end
-  end
-
-  if data.regionType == "model" then
-    if (data.api == nil) then
-      data.api = false;
-    end
-  end
-
-  if (data.regionType == "progresstexture") then
-    if (not data.version or data.version < 2) then
-      if (data.orientation == "CLOCKWISE") then
-        if (data.inverse) then
-          data.startAngle, data.endAngle = 360 - data.endAngle, 360 - data.startAngle;
-          data.orientation = (data.orientation == "CLOCKWISE") and "ANTICLOCKWISE" or "CLOCKWISE";
-        end
-      elseif (data.orientation == "ANTICLOCKWISE") then
-        data.startAngle, data.endAngle = 360 - data.endAngle, 360 - data.startAngle;
-        if (data.inverse) then
-          data.orientation = (data.orientation == "CLOCKWISE") and "ANTICLOCKWISE" or "CLOCKWISE";
-        end
-      end
-      data.version = 2;
-    end
-  end
-
-  if (not data.activeTriggerMode) then
-    data.activeTriggerMode = 0;
-  end
-
-  if (data.sort == "hybrid") then
-    if (not data.hybridPosition) then
-      data.hybridPosition = "hybridLast";
-    end
-    if (not data.hybridSortMode) then
-      data.hybridSortMode = "descending";
-    end
-  end
-
-  if (data.conditions) then
-    for conditionIndex, condition in ipairs(data.conditions) do
-      if (not condition.check) then
-        condition.check = {
-          ["trigger"] = condition.trigger,
-          ["variable"] = condition.condition,
-          ["op"] = condition.op,
-          ["value"] = condition.value
-        };
-        condition.trigger = nil;
-        condition.condition = nil;
-        condition.op = nil;
-        condition.value = nil;
-      end
-    end
-  end
-
-  ModernizeAnimations(data.animation and data.animation.start);
-  ModernizeAnimations(data.animation and data.animation.main);
-  ModernizeAnimations(data.animation and data.animation.finish);
+  data.internalVersion = internalVersion;
 end
 
 function WeakAuras.SyncParentChildRelationships(silent)
@@ -2644,7 +2679,7 @@ function WeakAuras.PerformActions(data, type, region)
     local func = WeakAuras.customActionsFunctions[data.id][type]
     if func then
       WeakAuras.ActivateAuraEnvironment(region.id, region.cloneId, region.state);
-      func();
+      xpcall(func, geterrorhandler());
       WeakAuras.ActivateAuraEnvironment(nil);
     end
   end
@@ -2744,31 +2779,46 @@ function WeakAuras.UpdateAnimations()
     WeakAuras.ActivateAuraEnvironment(anim.name, anim.cloneId, anim.region.state);
     if(anim.translateFunc) then
       if (anim.region.SetOffsetAnim) then
-        anim.region:SetOffsetAnim(anim.translateFunc(progress, 0, 0, anim.dX, anim.dY))
+        local ok, x, y = pcall(anim.translateFunc, progress, 0, 0, anim.dX, anim.dY);
+        anim.region:SetOffsetAnim(x, y);
       else
         anim.region:ClearAllPoints();
-        anim.region:SetPoint(anim.selfPoint, anim.anchor, anim.anchorPoint, anim.translateFunc(progress, anim.startX, anim.startY, anim.dX, anim.dY));
+        local ok, x, y = pcall(anim.translateFunc, progress, anim.startX, anim.startY, anim.dX, anim.dY);
+        if (ok) then
+          anim.region:SetPoint(anim.selfPoint, anim.anchor, anim.anchorPoint, x, y);
+        end
       end
     end
     if(anim.alphaFunc) then
-      anim.region:SetAlpha(anim.alphaFunc(progress, anim.startAlpha, anim.dAlpha));
+      local ok, alpha = pcall(anim.alphaFunc, progress, anim.startAlpha, anim.dAlpha);
+      if (ok) then
+        anim.region:SetAlpha(alpha);
+      end
     end
     if(anim.scaleFunc) then
-      local scaleX, scaleY = anim.scaleFunc(progress, 1, 1, anim.scaleX, anim.scaleY);
-      if(anim.region.Scale) then
-        anim.region:Scale(scaleX, scaleY);
-      else
-        anim.region:SetWidth(anim.startWidth * scaleX);
-        anim.region:SetHeight(anim.startHeight * scaleY);
+      local ok, scaleX, scaleY = pcall(anim.scaleFunc, progress, 1, 1, anim.scaleX, anim.scaleY);
+      if (ok) then
+        if(anim.region.Scale) then
+          anim.region:Scale(scaleX, scaleY);
+        else
+          anim.region:SetWidth(anim.startWidth * scaleX);
+          anim.region:SetHeight(anim.startHeight * scaleY);
+        end
       end
     end
     if(anim.rotateFunc and anim.region.Rotate) then
-      anim.region:Rotate(anim.rotateFunc(progress, anim.startRotation, anim.rotate));
+      local ok, rotate = pcall(anim.rotateFunc, progress, anim.startRotation, anim.rotate);
+      if (ok) then
+        anim.region:Rotate(rotate);
+      end
     end
     if(anim.colorFunc and anim.region.ColorAnim) then
       local startR, startG, startB, startA = anim.region:GetColor();
       startR, startG, startB, startA = startR or 1, startG or 1, startB or 1, startA or 1;
-      anim.region:ColorAnim(anim.colorFunc(progress, startR, startG, startB, startA, anim.colorR, anim.colorG, anim.colorB, anim.colorA));
+      local ok, r, g, b, a = pcall(anim.colorFunc, progress, startR, startG, startB, startA, anim.colorR, anim.colorG, anim.colorB, anim.colorA);
+      if (ok) then
+        anim.region:ColorAnim(r, g, b, a);
+      end
     end
     WeakAuras.ActivateAuraEnvironment(nil);
     if(finished) then
@@ -3603,7 +3653,7 @@ function WeakAuras.GetDynamicIconCache(name)
     local fallback = nil;
     for spellId, icon in pairs(db.dynamicIconCache[name]) do
       fallback = icon;
-      if (IsSpellKnown(spellId)) then -- TODO save this information?
+      if (type(spellId) == "number" and IsSpellKnown(spellId)) then -- TODO save this information?
         return db.dynamicIconCache[name][spellId];
       end
     end
@@ -3763,14 +3813,17 @@ local function evaluateTriggerStateTriggers(id)
   local result = false;
   WeakAuras.ActivateAuraEnvironment(id);
 
-  if((triggerState[id].disjunctive == "any" and triggerState[id].triggerCount > 0)
-    or (triggerState[id].disjunctive == "all" and triggerState[id].triggerCount == triggerState[id].numTriggers)
-    or (triggerState[id].disjunctive == "custom"
-    and triggerState[id].triggerLogicFunc
-    and triggerState[id].triggerLogicFunc(triggerState[id].triggers))
-    ) then
+  if (triggerState[id].disjunctive == "any" and triggerState[id].triggerCount > 0) then
     result = true;
+  elseif(triggerState[id].disjunctive == "all" and triggerState[id].triggerCount == triggerState[id].numTriggers) then
+    result = true;
+  else
+    if (triggerState[id].disjunctive == "custom" and triggerState[id].triggerLogicFunc) then
+      local ok, returnValue = pcall(triggerState[id].triggerLogicFunc, triggerState[id].triggers);
+      result = ok and returnValue;
+    end
   end
+
   WeakAuras.ActivateAuraEnvironment(nil);
   return result;
 end
@@ -3929,7 +3982,8 @@ local function ReplaceValuePlaceHolders(textStr, region, customFunc)
   local value;
   if (textStr == "%c" and customFunc) then
     WeakAuras.ActivateAuraEnvironment(region.id, region.cloneId, region.state);
-    value = customFunc(region.expirationTime, region.duration, regionValues.progress, regionValues.duration, regionValues.name, regionValues.icon, regionValues.stacks);
+    local _;
+    _, value = pcall(customFunc, region.expirationTime, region.duration, regionValues.progress, regionValues.duration, regionValues.name, regionValues.icon, regionValues.stacks);
     WeakAuras.ActivateAuraEnvironment(nil);
     value = value or "";
   else

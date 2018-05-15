@@ -71,16 +71,16 @@ PL:AddLocale(PRAT_MODULE, "enUS", L)
 L=
 {
 	["Clear"] = {
-		--Translation missing 
-		-- ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",
-		--Translation missing 
-		-- ["Clear"] = "",
-		--Translation missing 
-		-- ["Clearall"] = "",
-		--Translation missing 
-		-- ["Clears all chat frames."] = "",
-		--Translation missing 
-		-- ["Clears the current chat frame."] = "",
+		--[[Translation missing --]]
+		--[[ ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clear"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clearall"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clears all chat frames."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clears the current chat frame."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "itIT", L)
@@ -89,16 +89,16 @@ PL:AddLocale(PRAT_MODULE, "itIT", L)
 L=
 {
 	["Clear"] = {
-		--Translation missing 
-		-- ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",
-		--Translation missing 
-		-- ["Clear"] = "",
-		--Translation missing 
-		-- ["Clearall"] = "",
-		--Translation missing 
-		-- ["Clears all chat frames."] = "",
-		--Translation missing 
-		-- ["Clears the current chat frame."] = "",
+		--[[Translation missing --]]
+		--[[ ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clear"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clearall"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clears all chat frames."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clears the current chat frame."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "ptBR", L)
@@ -143,16 +143,16 @@ PL:AddLocale(PRAT_MODULE, "koKR",L)
 L=
 {
 	["Clear"] = {
-		--Translation missing 
-		-- ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",
-		--Translation missing 
-		-- ["Clear"] = "",
-		--Translation missing 
-		-- ["Clearall"] = "",
-		--Translation missing 
-		-- ["Clears all chat frames."] = "",
-		--Translation missing 
-		-- ["Clears the current chat frame."] = "",
+		--[[Translation missing --]]
+		--[[ ["Adds clear text slash commands (/clear)(/cls)(/clearall)(/clsall)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clear"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clearall"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clears all chat frames."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Clears the current chat frame."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "esMX",L)

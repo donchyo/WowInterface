@@ -1,0 +1,59 @@
+
+KuiNameplatesCoreSaved = {
+	["profiles"] = {
+		["default"] = {
+			["glow_as_shadow"] = false,
+			["auras_pulsate"] = false,
+			["colour_hated"] = {
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+			},
+			["nameonly_target"] = false,
+			["target_arrows_size"] = 32,
+			["target_arrows"] = true,
+			["castbar_colour"] = {
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+			["nameonly_damaged_friends"] = false,
+			["health_text_hostile_max"] = 1,
+			["frame_width"] = 115,
+			["castbar_unin_colour"] = {
+				0.862745098039216, -- [1]
+				0.862745098039216, -- [2]
+				0.862745098039216, -- [3]
+			},
+			["bar_animation"] = 1,
+			["auras_time_threshold"] = -1,
+			["health_text_hostile_dmg"] = 1,
+			["health_text_friend_dmg"] = 3,
+			["colour_friendly"] = {
+				0.101960784313725, -- [1]
+				1, -- [2]
+				0.223529411764706, -- [3]
+			},
+			["auras_icon_squareness"] = 1,
+			["frame_width_personal"] = 115,
+			["classpowers_enable"] = false,
+			["health_text"] = true,
+			["fade_alpha"] = 1,
+			["name_vertical_offset"] = 0,
+			["level_text"] = true,
+			["colour_neutral"] = {
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+			["frame_width_minus"] = 60,
+			["frame_height"] = 10,
+			["font_face"] = "Expressway",
+			["auras_centre"] = false,
+			["text_vertical_offset"] = 0.5,
+			["auras_show_all_self"] = true,
+			["font_style"] = 1,
+			["bar_texture"] = "Skullflower",
+		},
+	},
+}

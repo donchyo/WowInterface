@@ -1,11 +1,12 @@
 
 RaiderIO_Config = {
 	["enableKeystoneTooltips"] = true,
-	["enableUnitTooltips"] = true,
 	["enableFriendsTooltips"] = true,
+	["enableUnitTooltips"] = true,
 	["alwaysExtendTooltip"] = false,
-	["showDropDownCopyURL"] = true,
 	["disableScoreColors"] = false,
+	["showDropDownCopyURL"] = true,
+	["showScoreInCombat"] = true,
 	["enableLFGTooltips"] = true,
 	["showSimpleScoreColors"] = false,
 	["showMainsScore"] = true,

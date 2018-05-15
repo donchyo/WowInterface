@@ -2,7 +2,7 @@
 ErrorFilterDB = {
 	["profileKeys"] = {
 		["Krixi - Valley of Heroes - EU"] = "Default",
-		["Krixidk - Grim Batol"] = "Skullflower",
+		["Krixidk - Grim Batol"] = "Krixi",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixiwarrior - Valley of Heroes - EU"] = "Default",
@@ -10,11 +10,12 @@ ErrorFilterDB = {
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
+		["Krixidk - Ravencrest"] = "Krixi",
 		["Donch - Grim Batol"] = "Default",
-		["Kroxi - Grim Batol"] = "Default",
+		["Kroxi - Grim Batol"] = "Krixi",
 		["Namji - Grim Batol"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
+		["Krixidh - Grim Batol"] = "Krixi",
 		["Donch - Shattered Hand"] = "Default",
 		["Lowerboost - Lightbringer"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
@@ -34,13 +35,15 @@ ErrorFilterDB = {
 		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Krixi",
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
+		["Skullflower"] = {
+		},
 		["Default"] = {
 		},
-		["Skullflower"] = {
+		["Krixi"] = {
 		},
 	},
 }

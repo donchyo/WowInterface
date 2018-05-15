@@ -22,12 +22,12 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
-			["val"] = 2,
 			["act"] = true,
+			["val"] = 2,
 		},
-		["defeated"] = {
+		["members"] = {
 			["min"] = "",
-			["max"] = "",
+			["max"] = "3",
 			["act"] = false,
 		},
 		["heals"] = {
@@ -35,9 +35,9 @@ PremadeGroupsFilterState = {
 			["max"] = "0",
 			["act"] = false,
 		},
-		["members"] = {
+		["defeated"] = {
 			["min"] = "",
-			["max"] = "3",
+			["max"] = "",
 			["act"] = false,
 		},
 	},
@@ -63,12 +63,12 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
-			["val"] = 2,
 			["act"] = true,
+			["val"] = 2,
 		},
-		["defeated"] = {
+		["members"] = {
 			["min"] = "",
-			["max"] = "",
+			["max"] = "3",
 			["act"] = false,
 		},
 		["heals"] = {
@@ -76,9 +76,9 @@ PremadeGroupsFilterState = {
 			["max"] = "0",
 			["act"] = false,
 		},
-		["members"] = {
+		["defeated"] = {
 			["min"] = "",
-			["max"] = "3",
+			["max"] = "",
 			["act"] = false,
 		},
 	},
@@ -104,12 +104,12 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
-			["val"] = 2,
 			["act"] = true,
+			["val"] = 2,
 		},
-		["defeated"] = {
+		["members"] = {
 			["min"] = "",
-			["max"] = "",
+			["max"] = "3",
 			["act"] = false,
 		},
 		["heals"] = {
@@ -117,9 +117,9 @@ PremadeGroupsFilterState = {
 			["max"] = "0",
 			["act"] = false,
 		},
-		["members"] = {
+		["defeated"] = {
 			["min"] = "",
-			["max"] = "3",
+			["max"] = "",
 			["act"] = false,
 		},
 	},
@@ -128,7 +128,7 @@ PremadeGroupsFilterState = {
 		["tanks"] = {
 			["min"] = "0",
 			["max"] = "1",
-			["act"] = false,
+			["act"] = true,
 		},
 		["ilvl"] = {
 			["min"] = "",
@@ -143,14 +143,14 @@ PremadeGroupsFilterState = {
 		["noilvl"] = {
 			["act"] = false,
 		},
-		["expression"] = "",
+		["expression"] = "atbt",
 		["difficulty"] = {
-			["val"] = 1,
 			["act"] = true,
+			["val"] = 2,
 		},
-		["defeated"] = {
+		["members"] = {
 			["min"] = "",
-			["max"] = "0",
+			["max"] = "3",
 			["act"] = false,
 		},
 		["heals"] = {
@@ -158,9 +158,9 @@ PremadeGroupsFilterState = {
 			["max"] = "0",
 			["act"] = false,
 		},
-		["members"] = {
+		["defeated"] = {
 			["min"] = "",
-			["max"] = "3",
+			["max"] = "",
 			["act"] = false,
 		},
 	},
@@ -186,12 +186,12 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
-			["val"] = 2,
 			["act"] = true,
+			["val"] = 2,
 		},
-		["defeated"] = {
+		["members"] = {
 			["min"] = "",
-			["max"] = "",
+			["max"] = "3",
 			["act"] = false,
 		},
 		["heals"] = {
@@ -199,9 +199,9 @@ PremadeGroupsFilterState = {
 			["max"] = "0",
 			["act"] = false,
 		},
-		["members"] = {
+		["defeated"] = {
 			["min"] = "",
-			["max"] = "3",
+			["max"] = "",
 			["act"] = false,
 		},
 	},
@@ -227,7 +227,17 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
+			["act"] = true,
 			["val"] = 2,
+		},
+		["members"] = {
+			["min"] = "",
+			["max"] = "3",
+			["act"] = true,
+		},
+		["heals"] = {
+			["min"] = "",
+			["max"] = "0",
 			["act"] = true,
 		},
 		["defeated"] = {
@@ -235,22 +245,12 @@ PremadeGroupsFilterState = {
 			["max"] = "",
 			["act"] = false,
 		},
-		["heals"] = {
-			["min"] = "",
-			["max"] = "0",
-			["act"] = true,
-		},
-		["members"] = {
-			["min"] = "",
-			["max"] = "3",
-			["act"] = true,
-		},
 	},
 	["t1c2f0"] = {
 		["enabled"] = true,
 		["tanks"] = {
-			["min"] = "1",
-			["max"] = "1",
+			["min"] = "0",
+			["max"] = "0",
 			["act"] = true,
 		},
 		["ilvl"] = {
@@ -268,23 +268,23 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "",
 		["difficulty"] = {
+			["act"] = true,
 			["val"] = 4,
+		},
+		["members"] = {
+			["min"] = "",
+			["max"] = "4",
+			["act"] = true,
+		},
+		["heals"] = {
+			["min"] = "1",
+			["max"] = "1",
 			["act"] = true,
 		},
 		["defeated"] = {
 			["min"] = "",
 			["max"] = "",
 			["act"] = false,
-		},
-		["heals"] = {
-			["min"] = "0",
-			["max"] = "0",
-			["act"] = true,
-		},
-		["members"] = {
-			["min"] = "",
-			["max"] = "2",
-			["act"] = true,
 		},
 	},
 	["t1c3f2"] = {
@@ -309,23 +309,23 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
-			["val"] = 2,
 			["act"] = true,
+			["val"] = 2,
 		},
-		["defeated"] = {
+		["members"] = {
 			["min"] = "",
-			["max"] = "",
-			["act"] = false,
+			["max"] = "3",
+			["act"] = true,
 		},
 		["heals"] = {
 			["min"] = "",
 			["max"] = "0",
 			["act"] = true,
 		},
-		["members"] = {
+		["defeated"] = {
 			["min"] = "",
-			["max"] = "3",
-			["act"] = true,
+			["max"] = "",
+			["act"] = false,
 		},
 	},
 	["t2c1f0"] = {
@@ -350,12 +350,12 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
-			["val"] = 2,
 			["act"] = true,
+			["val"] = 2,
 		},
-		["defeated"] = {
+		["members"] = {
 			["min"] = "",
-			["max"] = "",
+			["max"] = "3",
 			["act"] = false,
 		},
 		["heals"] = {
@@ -363,9 +363,9 @@ PremadeGroupsFilterState = {
 			["max"] = "0",
 			["act"] = false,
 		},
-		["members"] = {
+		["defeated"] = {
 			["min"] = "",
-			["max"] = "3",
+			["max"] = "",
 			["act"] = false,
 		},
 	},
@@ -391,11 +391,11 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
-			["act"] = true,
 			["val"] = 2,
+			["act"] = true,
 		},
-		["members"] = {
-			["max"] = "3",
+		["defeated"] = {
+			["max"] = "",
 			["min"] = "",
 			["act"] = false,
 		},
@@ -404,8 +404,8 @@ PremadeGroupsFilterState = {
 			["min"] = "",
 			["act"] = false,
 		},
-		["defeated"] = {
-			["max"] = "",
+		["members"] = {
+			["max"] = "3",
 			["min"] = "",
 			["act"] = false,
 		},
@@ -432,23 +432,23 @@ PremadeGroupsFilterState = {
 		},
 		["expression"] = "tos ",
 		["difficulty"] = {
-			["val"] = 2,
 			["act"] = true,
+			["val"] = 2,
 		},
-		["defeated"] = {
+		["members"] = {
 			["min"] = "",
-			["max"] = "",
-			["act"] = false,
+			["max"] = "3",
+			["act"] = true,
 		},
 		["heals"] = {
 			["min"] = "",
 			["max"] = "0",
 			["act"] = true,
 		},
-		["members"] = {
+		["defeated"] = {
 			["min"] = "",
-			["max"] = "3",
-			["act"] = true,
+			["max"] = "",
+			["act"] = false,
 		},
 	},
 }

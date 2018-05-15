@@ -1,0 +1,4 @@
+
+BRMTOOL = {
+	["welcome"] = true,
+}

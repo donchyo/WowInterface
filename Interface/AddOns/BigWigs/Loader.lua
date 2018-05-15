@@ -7,7 +7,7 @@ local bwFrame = CreateFrame("Frame")
 -- Generate our version variables
 --
 
-local BIGWIGS_VERSION = 92
+local BIGWIGS_VERSION = 97
 local BIGWIGS_RELEASE_STRING, BIGWIGS_VERSION_STRING = "", ""
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
@@ -18,7 +18,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "38f4915" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "e10e0d3" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[===[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -55,13 +55,14 @@ local tooltipFunctions = {}
 local next, tonumber, strsplit = next, tonumber, strsplit
 local SendAddonMessage, Ambiguate, CTimerAfter, CTimerNewTicker = C_ChatInfo and C_ChatInfo.SendAddonMessage or SendAddonMessage, Ambiguate, C_Timer.After, C_Timer.NewTicker -- XXX C_ChatInfo check for 8.0
 local IsInInstance, GetCurrentMapAreaID, SetMapToCurrentZone = IsInInstance, GetCurrentMapAreaID, SetMapToCurrentZone
-local GetInstanceInfo, GetPlayerMapAreaID = GetInstanceInfo, GetPlayerMapAreaID
+local GetInstanceInfo, GetPlayerMapAreaID, GetBestMapForUnit = GetInstanceInfo, GetPlayerMapAreaID, C_Map and C_Map.GetBestMapForUnit -- XXX remove GetPlayerMapAreaID
 
 -- Try to grab unhooked copies of critical funcs (hooked by some crappy addons)
-public.GetCurrentMapAreaID = GetCurrentMapAreaID
-public.GetPlayerMapAreaID = GetPlayerMapAreaID
-public.SetMapToCurrentZone = SetMapToCurrentZone
-public.GetCurrentMapDungeonLevel = GetCurrentMapDungeonLevel
+public.GetCurrentMapAreaID = GetCurrentMapAreaID -- XXX remove
+public.GetPlayerMapAreaID = GetPlayerMapAreaID -- XXX remove
+public.GetBestMapForUnit = GetBestMapForUnit
+public.SetMapToCurrentZone = SetMapToCurrentZone -- XXX remove
+public.GetCurrentMapDungeonLevel = GetCurrentMapDungeonLevel -- XXX remove
 public.GetInstanceInfo = GetInstanceInfo
 public.SendAddonMessage = SendAddonMessage
 public.SendChatMessage = SendChatMessage
@@ -98,6 +99,7 @@ do
 	local mop = "BigWigs_MistsOfPandaria"
 	local wod = "BigWigs_WarlordsOfDraenor"
 	local l = "BigWigs_Legion"
+	local bfa = "BigWigs_BattleForAzeroth"
 	local lw_c = "LittleWigs_Classic"
 	local lw_bc = "LittleWigs_BurningCrusade"
 	local lw_wotlk = "LittleWigs_WrathOfTheLichKing"
@@ -159,6 +161,8 @@ do
 		[1676] = l, -- Tomb of Sargeras
 		[1712] = l, -- Antorus, the Burning Throne
 		[1779] = l, -- Invasion Points
+		--[[ BigWigs: Battle for Azeroth ]]--
+		[1861] = bfa, -- Uldir
 
 		--[[ LittleWigs: Classic ]]--
 		[33] = lw_c, -- Shadowfang Keep
@@ -500,7 +504,7 @@ do
 			local rawMenu = select(i, ...)
 			local id = tonumber(rawMenu:trim())
 			if id then
-				local name = id < 0 and GetMapNameByID(-id) or GetRealZoneText(id)
+				local name = id < 0 and (GetMapNameByID and GetMapNameByID(-id) or tostring(id)) or GetRealZoneText(id) -- XXX 8.0 fixme
 				if name and name ~= "" then -- Protect live client from beta client ids
 					if not loadOnZone[id] then loadOnZone[id] = {} end
 					loadOnZone[id][#loadOnZone[id] + 1] = addon
@@ -519,7 +523,7 @@ do
 			local rawMenu = select(i, ...)
 			local id = tonumber(rawMenu:trim())
 			if id then
-				local name = id < 0 and GetMapNameByID(-id) or GetRealZoneText(id)
+				local name = id < 0 and (GetMapNameByID and GetMapNameByID(-id) or tostring(id)) or GetRealZoneText(id) -- XXX 8.0 fixme
 				if name and name ~= "" and not blockedMenus[id] then -- Protect live client from beta client ids
 					blockedMenus[id] = true
 				end
@@ -753,12 +757,14 @@ do
 	end
 
 	local L = GetLocale()
-	if L == "ptBR" then
-		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Brazilian Portugese (ptBR). Can you help? Ask us on Discord for more info."
+	if L == "ruRU" then
+		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Russian (ruRU). Can you help? Visit git.io/vpBye or ask us on Discord for more info."
 	elseif L == "itIT" then
-		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Italian (itIT). Can you help? Ask us on Discord for more info."
+		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Italian (itIT). Can you help? Visit git.io/vpBye or ask us on Discord for more info."
+	elseif L == "koKR" then
+		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Korean (koKR). Can you help? Visit git.io/vpBye or ask us on Discord for more info."
 	elseif L == "esES" or L == "esMX" then
-		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Spanish (esES). Can you help? Ask us on Discord for more info."
+		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Spanish (esES). Can you help? Visit git.io/vpBye or ask us on Discord for more info."
 	end
 
 	CTimerAfter(11, function()
@@ -841,8 +847,8 @@ end
 
 do
 	-- This is a crapfest mainly because DBM's actual handling of versions is a crapfest, I'll try explain how this works...
-	local DBMdotRevision = "17403" -- The changing version of the local client, changes with every alpha revision using an SVN keyword.
-	local DBMdotDisplayVersion = "7.3.25" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration. Unless they fuck up their release and leave the alpha text in it.
+	local DBMdotRevision = "17424" -- The changing version of the local client, changes with every alpha revision using an SVN keyword.
+	local DBMdotDisplayVersion = "7.3.26" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration. Unless they fuck up their release and leave the alpha text in it.
 	local DBMdotReleaseRevision = DBMdotRevision -- This is manually changed by them every release, they use it to track the highest release version, a new DBM release is the only time it will change.
 
 	local timer, prevUpgradedUser = nil, nil
@@ -1137,11 +1143,17 @@ do
 		end
 	end
 
+	local block = false -- XXX temp
 	function mod:ZONE_CHANGED_NEW_AREA()
 		-- Zone checking
 		local _, instanceType, _, _, _, _, _, id = GetInstanceInfo()
 		if instanceType == "none" then
-			local mapId = GetPlayerMapAreaID("player")
+			local mapId
+			if GetBestMapForUnit then -- XXX temp
+				mapId = GetBestMapForUnit("player")
+			else
+				mapId = GetPlayerMapAreaID("player")
+			end
 			if mapId then
 				id = -mapId -- Use map id for world bosses
 			end
@@ -1158,6 +1170,25 @@ do
 						BigWigs:Enable()
 					end
 				end
+				-- XXX temp
+				if id == 1712 and not block then
+					block = true
+					if not BigWigs3DB.fPrint or BigWigs3DB.fPrint < 3 then
+						if not BigWigs3DB.fPrint then
+							BigWigs3DB.fPrint = 1
+						else
+							BigWigs3DB.fPrint = BigWigs3DB.fPrint + 1
+						end
+						CTimerAfter(5, function()
+							sysprint("Have you seen some of our latest changes?")
+							sysprint("- AutoReply: New feature!")
+							sysprint("- Pull: Full audio customizability, including countdown sound.")
+							sysprint("- Bars: Both width & height can now be changed by dragging the anchors. You can also change bar spacing, icon position, and separate font sizes for normal/emphasized bars.")
+							sysprint("- Bosses: When customizing ability colors or sounds, only the colors/sounds being used by that ability will show. This should make setting a custom sound or color a lot easier.")
+						end)
+					end
+				end
+				-- XXX endtemp
 			elseif enableZones[id] == "world" then
 				if BigWigs and BigWigs:IsEnabled() and not UnitIsDeadOrGhost("player") and (not BigWigsOptions or not BigWigsOptions:IsOpen()) and (not BigWigs3DB or not BigWigs3DB.breakTime) then
 					BigWigs:Disable() -- Might be leaving an LFR and entering a world enable zone, disable first

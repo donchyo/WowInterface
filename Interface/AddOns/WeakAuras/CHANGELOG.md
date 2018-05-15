@@ -1,28 +1,19 @@
 # WeakAuras 2
 
-## [2.5.8](https://github.com/WeakAuras/WeakAuras2/tree/2.5.8) (2018-03-16)
+## [2.5.11](https://github.com/WeakAuras/WeakAuras2/tree/2.5.11) (2018-04-27)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.5.7...2.5.8)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.5.10...2.5.11)
 
-Benjamin Staneck (2):
+Infus (6):
 
-- fix the translation script for PRs
-- adjust range check trigger text a bit
+- Wrap all user functions in pcall / xpcall
+- Check that what we pass to IsSpellKnown is a number
+- Fix problem with offset being nil
+- Tweak Show CD of a single charge behaviour
+- Fine tune templates GET_ITEM_INFO_RECEIVED code
+- Setup fallback state so that it has no duration
 
-Infus (14):
+asakawa-k (1):
 
-- Fix Add Property for multi selection
-- Add a SetTexture function to Progress Textures
-- Implement TODOs
-- Fix canceling "Apply Template" picks the new option
-- Add a bit of space between Choose Trigger and "Add"
-- Fix text replacement for Texture auras
-- Add a text explaining the range trigger to the Range Trigger
-- Add "Reorder" for Triggers and Conditions
-- Fix editing conditions with multiple auras selected
-- Remove debug output
-- Fix cooldown handling of "disabled" cooldowns
-- Remove a workaround for GetSpellCooldown("Water Jet")
-- Reimplement Copy and Paste
-- Options Window: Cooldown Progress: Fix initial value
+- Add key bindings to open/close the options window (#385)
 

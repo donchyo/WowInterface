@@ -101,7 +101,7 @@ VER 3 000000000000037A "fps sak" "INV_MISC_QUESTIONMARK"
 /run FramerateLabel:ClearAllPoints() FramerateText:ClearAllPoints() FramerateLabel:SetPoint("RIGHT",UIParent,"CENTER",330,0) FramerateText:SetPoint("LEFT",FramerateLabel,"RIGHT") ToggleFramerate()
 END
 VER 3 000000000000038F "fuckoff" "136103"
-/run local m,n="mouseover" n=UnitIsPlayer(m) and UnitName(m) if n then SendChatMessage("Hey "..n..", fuck off from me! XD",GUILD) else SendChatMessage("Fuck off from me! XD",GUILD) end
+/run local m,n="mouseover" n=UnitIsPlayer(m) and UnitName(m) if n then SendChatMessage("Hey "..n..", fuck off from me! XD",SAY) else SendChatMessage("Fuck off from me! XD",SAY) end
 END
 VER 3 000000000000036A "garrison" "INV_MISC_QUESTIONMARK"
 /use garrison ability
@@ -145,8 +145,8 @@ VER 3 0000000000000092 "mount" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 /use [mod:alt]Azure Water Strider
 /use [mod:ctrl]grand expedition yak
 /use [flyable, nomounted]INVINCIBLE
-/use [noflyable, nomounted] magic rooster
---swift spectral tiger
+--/use [noflyable, nomounted] magic rooster
+/use [noflyable, nomounted] swift spectral tiger
 /script VehicleExit()
 END
 VER 3 0000000000000371 "mouseover extra" "132387"

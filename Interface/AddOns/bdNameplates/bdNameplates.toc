@@ -1,0 +1,9 @@
+## Interface: 70300
+## Title: |cffA02C2Fbd|rNameplates
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Dependencies: bdCore
+
+config.lua
+functions.lua
+core.lua

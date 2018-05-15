@@ -7,7 +7,7 @@ TalentMacrosDB = {
 	["profileKeys"] = {
 		["Krixi - Valley of Heroes - EU"] = "Krixi - Valley of Heroes - EU",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
-		["Krixidk - Grim Batol"] = "Skullflower",
+		["Krixidk - Grim Batol"] = "Krixi",
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Krixiwarrior - Valley of Heroes - EU"] = "Krixiwarrior - Valley of Heroes - EU",
@@ -15,10 +15,11 @@ TalentMacrosDB = {
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Krixidk - Ravencrest"] = "Krixi",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
+		["Kroxi - Grim Batol"] = "Krixi",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
@@ -27,14 +28,14 @@ TalentMacrosDB = {
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
 		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi",
 		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixi",
 		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
@@ -80,13 +81,15 @@ TalentMacrosDB = {
 		},
 		["Krixiyo - Blackmoore"] = {
 		},
+		["Krixidk - Ravencrest"] = {
+		},
 		["Greenzuriz - Aggra (Português)"] = {
 			["version"] = 1,
 		},
-		["Donch - Grim Batol"] = {
+		["Gnomalock - Grim Batol"] = {
 			["version"] = 1,
 		},
-		["Gnomalock - Grim Batol"] = {
+		["Donch - Grim Batol"] = {
 			["version"] = 1,
 		},
 		["Krixikin - Grim Batol"] = {
@@ -99,6 +102,8 @@ TalentMacrosDB = {
 				[22916] = "#showtooltip\n/use [nomod] intimidating roar\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
 			},
 			["disablepush"] = true,
+		},
+		["Krixi"] = {
 		},
 		["Kroxi - Grim Batol"] = {
 			["macrotext"] = {
@@ -122,15 +127,15 @@ TalentMacrosDB = {
 		["Donch - Shattered Hand"] = {
 			["version"] = 1,
 		},
-		["Kriximonk - Valley of Heroes - EU"] = {
-		},
-		["Lowerboost - Lightbringer"] = {
-		},
 		["Líttle - Grim Batol"] = {
 			["macrotext"] = {
 				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
 			},
 			["version"] = 1,
+		},
+		["Lowerboost - Lightbringer"] = {
+		},
+		["Kriximonk - Valley of Heroes - EU"] = {
 		},
 		["Donch - Crushridge"] = {
 			["version"] = 1,

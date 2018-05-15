@@ -1,0 +1,33 @@
+
+ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+	},
+	["ChatEditHistory"] = {
+		" ye", -- [1]
+		" bored", -- [2]
+		" i should probably farm some ap on my druid aswell", -- [3]
+		" if i want to raid", -- [4]
+		" i have no idea what im doing tomorrow yet", -- [5]
+		" i should be on", -- [6]
+		" but i cant promise", -- [7]
+		" did the dk leech tracking work out?", -- [8]
+		" ah rip", -- [9]
+		" :D", -- [10]
+		"/p me", -- [11]
+		"/p do you need the ring", -- [12]
+		"/p and relic", -- [13]
+		"/p :D", -- [14]
+		" ok", -- [15]
+		" this is a blaster char", -- [16]
+		" clearly", -- [17]
+		" KKKKKKKKKKKKKKKKKKKKK", -- [18]
+		" im going to bed", -- [19]
+		" i see whne im not wanted", -- [20]
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+}

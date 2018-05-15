@@ -74,10 +74,10 @@ Prat:AddModuleToLoad(function()
  L=
 {
 	["EventNames"] = {
-		--Translation missing 
-		-- ["allevents_desc"] = "",
-		--Translation missing 
-		-- ["allevents_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["allevents_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["allevents_name"] = "",--]] 
 		["Chat window event name options."] = "Options des évènements de la fenêtre de chat",
 		["EventNames"] = "Nom des évènements",
 		["Show"] = "Montrer",
@@ -127,22 +127,22 @@ Prat:AddModuleToLoad(function()
  L=
 {
 	["EventNames"] = {
-		--Translation missing 
-		-- ["allevents_desc"] = "",
-		--Translation missing 
-		-- ["allevents_name"] = "",
-		--Translation missing 
-		-- ["Chat window event name options."] = "",
-		--Translation missing 
-		-- ["EventNames"] = "",
-		--Translation missing 
-		-- ["Show"] = "",
-		--Translation missing 
-		-- ["Show events on chatframes"] = "",
-		--Translation missing 
-		-- ["show_desc"] = "",
-		--Translation missing 
-		-- ["show_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["allevents_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["allevents_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat window event name options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["EventNames"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Show"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Show events on chatframes"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_name"] = "",--]] 
 	}
 }
 
@@ -186,10 +186,10 @@ Prat:AddModuleToLoad(function()
  L=
 {
 	["EventNames"] = {
-		--Translation missing 
-		-- ["allevents_desc"] = "",
-		--Translation missing 
-		-- ["allevents_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["allevents_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["allevents_name"] = "",--]] 
 		["Chat window event name options."] = "Opciones de nombre de evento de la ventana del chat.",
 		["EventNames"] = "NombresEventos",
 		["Show"] = "Mostrar",
@@ -205,10 +205,10 @@ Prat:AddModuleToLoad(function()
  L=
 {
 	["EventNames"] = {
-		--Translation missing 
-		-- ["allevents_desc"] = "",
-		--Translation missing 
-		-- ["allevents_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["allevents_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["allevents_name"] = "",--]] 
 		["Chat window event name options."] = "聊天視窗事件名稱選項。",
 		["EventNames"] = "事件名稱",
 		["Show"] = "顯示",

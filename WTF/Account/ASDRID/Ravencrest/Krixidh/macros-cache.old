@@ -1,0 +1,17 @@
+VER 3 0100000000000017 "aadsada" "INV_Misc_QuestionMark"
+/tar grunrik
+/tar karashi
+END
+VER 3 0100000000000018 "fel barage" "INV_Misc_QuestionMark"
+/cast !fel barrage
+END
+VER 3 0100000000000016 "focus" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@focus] consume magic
+END
+VER 3 0100000000000019 "infernal strike " "INV_MISC_QUESTIONMARK"
+/cast [@player] infernal strike
+END
+VER 3 010000000000001A "sigil of flame" "INV_MISC_QUESTIONMARK"
+/cast [@player] sigil of flame
+END

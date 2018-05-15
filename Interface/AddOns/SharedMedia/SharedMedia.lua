@@ -118,3 +118,8 @@ LSM:Register(MediaType_STATUSBAR, "Water",				[[Interface\Addons\SharedMedia\sta
 LSM:Register(MediaType_STATUSBAR, "Wglass",				[[Interface\Addons\SharedMedia\statusbar\Wglass]])
 LSM:Register(MediaType_STATUSBAR, "Wisps",				[[Interface\Addons\SharedMedia\statusbar\Wisps]])
 LSM:Register(MediaType_STATUSBAR, "Xeon",				[[Interface\Addons\SharedMedia\statusbar\Xeon]])
+
+LSM:Register(MediaType_STATUSBAR, "Pixel",				[[Interface\Addons\SharedMedia\statusbar\Pixel]])
+LSM:Register(MediaType_STATUSBAR, "Skullflower",				[[Interface\Addons\SharedMedia\statusbar\Skullflower]])
+LSM:Register(MediaType_STATUSBAR, "SkullflowerLight",				[[Interface\Addons\SharedMedia\statusbar\SkullflowerLight]])
+

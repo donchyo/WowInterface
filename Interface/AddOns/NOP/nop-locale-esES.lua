@@ -1,17 +1,16 @@
 ﻿-- localization file for esES made by annthizze and Google translator
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
--- ]]
+-- local AddOn
 local ADDON = ...
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale(ADDON, "esES");
 if not L then return end
-
+--
 L["NOP_TITLE"] = "New Openables"
 L["NOP_VERSION"] = "|cFFFFFFFF%s use |cFFFF00FF/nop|cFFFFFFFF"
-
 L["CLICK_DRAG_MSG"] = "ALT-ClicIzq y arrastre para mover."
 L["CLICK_OPEN_MSG"] = "ClicIzq para abrir o usar."
 L["CLICK_SKIP_MSG"] = "ClicDcho para omitir el objeto."
@@ -102,7 +101,6 @@ L["ARTIFACT_ANNOUNCE"] = "¡%s tiene %d rasgos listos!"
 L["ARCHAELOGY_ANNOUNCE"] = "¡Archaeology %s está listo!"
 L["TALENT_ANNOUNCE"] = "¡%s está listo!"
 L["RESTARTED_LOOKUP"] = "Lista negra temporal borrada, reiniciando la búsqueda!"
-
 L["CONSOLE_USAGE"] = [=[ [reset|skin|lock|clear|list|unlist|skip|glow|zone|quest|show]
 reset  - Resetea la posición del botón colocándolo en el medio de la pantalla
 skin   - Activa/desactiva el diseño del botón

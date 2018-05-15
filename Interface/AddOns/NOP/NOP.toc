@@ -1,7 +1,7 @@
 ## Interface: 70300
 ## Title: New |cffffff88Openables|r
 ## Author: PeknaMrcha alias EduardCurse alias Edik
-## Version: 08.38 22.03.2018
+## Version: 08.44 03.05.2018
 ## Notes: Popup Button and keybind for opening or using items in your bags. Adopted idea by Driizt@BB_EU. Quest Button Bar idea and code by Nickenyfiken and ZidayaXis
 ## SavedVariables: NewOpenablesProfile
 
@@ -19,12 +19,17 @@ AceLocale-3.0\AceLocale-3.0.xml
 LibBabble-SubZone-3.0\lib.xml
 LibQuestItem-1.0\lib.xml
 LibArtifactData-1.0\LibArtifactData-1.0.lua 
+HereBeDragons\HereBeDragons-1.0.lua
+HereBeDragons\HereBeDragons-2.0.lua
+HereBeDragons\HereBeDragons-Migrate.lua
+WoW8Sup\WoW8Sup.lua
 
 nop-locale-enUS.lua
 nop-locale-deDE.lua
 nop-locale-esES.lua 
 nop-locale-zhTW.lua
 nop-locale-zhCN.lua
+
 nop-private.lua
 nop-data.lua 
 nop-button.lua

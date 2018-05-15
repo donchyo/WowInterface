@@ -1,6 +1,6 @@
---[[ Quest item bar functions based on http://www.wowace.com/addons/questitembar/ by Nickenyfiken and ZidayaXis ]]
+-- Quest item bar functions based on http://www.wowace.com/addons/questitembar/ by Nickenyfiken and ZidayaXis
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
 local CreateFrame = _G.CreateFrame; assert(CreateFrame ~= nil,'CreateFrame')
@@ -24,10 +24,15 @@ local ShowQuestComplete = _G.ShowQuestComplete; assert(ShowQuestComplete ~= nil,
 local ShowQuestOffer = _G.ShowQuestOffer; assert(ShowQuestOffer ~= nil,'ShowQuestOffer')
 local string = _G.string; assert(string ~= nil,'string')
 local type = _G.type; assert(type ~= nil,'type')
--- ]]
+local UIParent = _G.UIParent; assert(UIParent ~= nil,'UIParent')
+-- local AddOn
 local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
-NOP.LQI = LibStub("LibQuestItem-1.0", true)
+--
+local LIB_QUESTITEM = P.LIB_QUESTITEM; assert(LIB_QUESTITEM ~= nil,'LIB_QUESTITEM')
+local print = P.print; assert(print ~= nil,'print')
+local T_BLACKLIST_Q = P.T_BLACKLIST_Q; assert(T_BLACKLIST_Q ~= nil,'T_BLACKLIST_Q')
+--
 function NOP:QBAnchorMove() -- move anchor for quest bar
   if not self.QB then return end
   self.QB:SetClampedToScreen(true)
@@ -35,13 +40,19 @@ function NOP:QBAnchorMove() -- move anchor for quest bar
   if NOP.DB.qb_sticky then
     self.QB:SetAllPoints(P.BUTTON_FRAME)
   else
-    self.QB:SetPoint(NOP.DB.qb[1] or "CENTER", self.frameHiderQ, NOP.DB.qb[3] or "CENTER", NOP.DB.qb[4] or 0, NOP.DB.qb[5] or 0)
+    local frame = NOP.DB.qb[2] or "none"
+    if _G[frame] then frame = _G[frame] else frame = nil end -- test if can find frame by name in saved LUA variables
+    if not frame then
+      if NOP.DB.HideInCombat then frame = self.frameHiderQ else frame = UIParent end -- restore frame anchor via requested state
+    end
+    if not NOP.DB.HideInCombat and frame == self.frameHiderQ then frame = UIParent end -- if hide in combat is disabled then can't be anchored to hider
+    self.QB:SetPoint(NOP.DB.qb[1] or "CENTER", frame, NOP.DB.qb[3] or "CENTER", NOP.DB.qb[4] or 0, NOP.DB.qb[5] or 0)
   end
 end
 function NOP:QBAnchorSave() -- save Anchor pos after button position change
   if not self.QB then return end
   local point, relativeTo, relativePoint, xOfs, yOfs = self.QB:GetPoint()
-  NOP.DB.qb = {point or "CENTER", "UIParent", relativePoint or "CENTER", xOfs or 0, yOfs or 0}
+  NOP.DB.qb = {point or "CENTER", relativeTo and relativeTo.GetName and relativeTo:GetName() or "UIParent", relativePoint or "CENTER", xOfs or 0, yOfs or 0}
 end
 function NOP:QBAnchorSize() -- resize quest bar anchor to current icon size
   if not self.QB then return end
@@ -67,7 +78,6 @@ function NOP:QBAnchor() -- create quest bar anchor frame
   else
     if self.QB:IsShown() or self.QB:IsVisible() then self.QB:Hide() end
   end -- state of anchor
-  NOP.LQI.RegisterCallback(self, "LibQuestItem_Update","QBUpdate")
 end
 function NOP:QBButtonSize(bt) -- resize button to current icon size
   local iconSize = NOP.DB.iconSize or P.DEFAULT_ICON_SIZE
@@ -105,15 +115,20 @@ function NOP:QBButton(i, p) -- create new quest bar button
 end
 function NOP:QBOnEnter(bt) -- build and show tooltip
   if self:inCombat() then return end
-  if GetCVar("UberTooltips") == "1" then
-    GameTooltip_SetDefaultAnchor(GameTooltip, bt)
+  if not _G.ElvUI then -- with ElvUI installed this is not neccessary
+    if GetCVar("UberTooltips") == "1" then
+      GameTooltip_SetDefaultAnchor(GameTooltip, bt)
+    else
+      GameTooltip:SetOwner(bt, "ANCHOR_RIGHT")
+    end
   else
-    GameTooltip:SetOwner(bt, "ANCHOR_RIGHT")
+    local gto = GameTooltip:GetOwner()
+    if not gto then GameTooltip_SetDefaultAnchor(GameTooltip,  UIParent) end
   end
   GameTooltip:SetHyperlink(bt:GetAttribute("item1")) -- fill up tooltip
-  local text = NOP.LQI.questItemText[bt.itemID] -- fetch quest
+  local text = LIB_QUESTITEM.questItemText[bt.itemID] -- fetch quest
   if text then
-    text = P.L["Quest"] .. ": " .. NOP.LQI.questItemText[bt.itemID]
+    text = P.L["Quest"] .. ": " .. LIB_QUESTITEM.questItemText[bt.itemID]
   else
     text = P.L["Quest not found for this item."]
   end
@@ -134,11 +149,11 @@ function NOP:QBBlacklist(isPermanent,itemID) -- add quest item to blacklist
       if not NOP.DB["T_BLACKLIST_Q"] then NOP.DB.T_BLACKLIST_Q = {} end
       NOP.DB.T_BLACKLIST_Q[0] = true
       NOP.DB.T_BLACKLIST_Q[itemID] = true
-      self.printt(P.L["PERMA_BLACKLIST"],name or itemID)
+      print(P.L["PERMA_BLACKLIST"],name or itemID)
     else
-      NOP.T_BLACKLIST_Q[0] = true -- blacklist is defined
-      NOP.T_BLACKLIST_Q[itemID] = true
-      self.printt(P.L["SESSION_BLACKLIST"],name or itemID)
+      T_BLACKLIST_Q[0] = true -- blacklist is defined
+      T_BLACKLIST_Q[itemID] = true
+      print(P.L["SESSION_BLACKLIST"],name or itemID)
     end
     self:QBUpdate() -- force update
   end
@@ -152,11 +167,7 @@ function NOP:QBPostClick(bt,mouse) -- click on button, place hotkey if none
 end
 function NOP:QBKeyBind(bt,i) -- define hotkey
   if not (bt and NOP.DB.keyBind and string.len(NOP.DB.keyBind) > 0) then return end
-  if self:inCombat() then
-    if not self.timerQBKeyBind then self.timerQBKeyBind = self:ScheduleTimer("QBKeyBind", P.TIMER_IDLE, bt, i) end
-    return
-  end
-  self.timerQBKeyBind = nil
+  if self:inCombat() then self:TimerFire("QBKeyBind", P.TIMER_IDLE, bt, i); return end
   if bt and bt.GetName and string.len(bt:GetName()) > 0 then 
     self:QBClearBind()
     SetBindingClick(NOP.DB.keyBind, bt:GetName(), 'LeftButton')
@@ -195,9 +206,9 @@ function NOP:QBButtonAdd(i, itemID) -- set new item
   bt.itemID = itemID
   bt.count:SetText((type(count) == "number") and (count > 1) and count or "")
   bt:SetAttribute("type1","item") -- "type1" Unmodified left click, old type*.
-  bt:SetAttribute("item1", NOP.LQI:GetItemString(itemID))
-  if (NOP.LQI.startsQuestItems[itemID] and not NOP.LQI.activeQuestItems[itemID]) or (itemID == P.DEFAULT_ITEMID and NOP.DB.visible) then -- quest item or fake button
-    self.QB.refreshBar = true -- even QUEST_ACCEPTED need call NOP.LQI:Scan()
+  bt:SetAttribute("item1", LIB_QUESTITEM:GetItemString(itemID))
+  if (LIB_QUESTITEM.startsQuestItems[itemID] and not LIB_QUESTITEM.activeQuestItems[itemID]) or (itemID == P.DEFAULT_ITEMID and NOP.DB.visible) then -- quest item or fake button
+    self.QB.refreshBar = true -- even QUEST_ACCEPTED need call LIB_QUESTITEM:Scan()
     bt.questMark:Show()
   else
     bt.questMark:Hide()
@@ -209,7 +220,7 @@ function NOP:QBButtonAdd(i, itemID) -- set new item
   if not(bt:IsShown() or bt:IsVisible()) then bt:Show() end
 end
 function NOP:QBReset() -- hide and clear buttons on quest bar
-  self.QB.refreshBar = false -- post refresh by calling NOP.LQI:Scan()
+  self.QB.refreshBar = false -- post refresh by calling LIB_QUESTITEM:Scan()
   if not (self.QB and self.QB.buttons) then return end
   for i = 1, #self.QB.buttons do 
     local bt = self.QB.buttons[i]
@@ -222,11 +233,7 @@ function NOP:QBReset() -- hide and clear buttons on quest bar
 end
 function NOP:QBUpdate() -- update all buttons on quest bar
   if not self.QB or not self.QB.buttons then return end -- not yet initialized
-  if self:inCombat() then -- postspone update in combat
-    if not self.timerQBUpdate then self.timerQBUpdate = self:ScheduleTimer("QBUpdate", P.TIMER_IDLE) end
-    return 
-  end
-  self.timerQBUpdate = nil
+  if self:inCombat() then self:TimerFire("QBUpdate", P.TIMER_IDLE); return end
   if not NOP.DB.quest then 
     if self.QB:IsShown() or self.QB:IsVisible() then self.QB:Hide() end
     return
@@ -235,11 +242,11 @@ function NOP:QBUpdate() -- update all buttons on quest bar
   self:QBReset() -- clear and hide all buttons on quest bar
   if not (self.QB:IsShown() or self.QB:IsVisible()) then self.QB:Show() end
   local i = 1
-  for itemID, _ in pairs(NOP.LQI.startsQuestItems) do -- place all items starting quests
-    if not (NOP.LQI.activeQuestItems[itemID] or NOP.DB.T_BLACKLIST_Q[itemID] or NOP.T_BLACKLIST_Q[itemID]) then self:QBButtonAdd(i, itemID); i = i + 1 end
+  for itemID, _ in pairs(LIB_QUESTITEM.startsQuestItems) do -- place all items starting quests
+    if not (LIB_QUESTITEM.activeQuestItems[itemID] or NOP.DB.T_BLACKLIST_Q[itemID] or T_BLACKLIST_Q[itemID]) then self:QBButtonAdd(i, itemID); i = i + 1 end
   end
-  for itemID, _ in pairs(NOP.LQI.usableQuestItems) do -- place all usable items
-    if not (NOP.LQI.startsQuestItems[itemID] or NOP.DB.T_BLACKLIST_Q[itemID] or NOP.T_BLACKLIST_Q[itemID]) then self:QBButtonAdd(i, itemID); i = i + 1 end -- this item is already on bar
+  for itemID, _ in pairs(LIB_QUESTITEM.usableQuestItems) do -- place all usable items
+    if not (LIB_QUESTITEM.startsQuestItems[itemID] or NOP.DB.T_BLACKLIST_Q[itemID] or T_BLACKLIST_Q[itemID]) then self:QBButtonAdd(i, itemID); i = i + 1 end -- this item is already on bar
   end
   if (i > 1) then -- have at least one item on quest bar
     if not self.qbKBIndex then -- no button has hot-key assigned
@@ -260,18 +267,11 @@ function NOP:QBSkin() -- skin buttons on quest bar
 end
 function NOP:QBQuestAccept() -- refresh items on Quest Items Bar when quest is accepted, some items can change state, but bags get not update event!
   if not (self.LQI and self.QB and self.QB.refreshBar) then return end -- nothing to do
-  if self:inCombat() then -- postspone update in combat
-    if not self.timerQBQuestAccept then self.timerQBQuestAccept = self:ScheduleTimer("QBQuestAccept", P.TIMER_IDLE) end
-    return 
-  end
-  self.timerQBQuestAccept = nil
+  if self:inCombat() then self:TimerFire("QBQuestAccept", P.TIMER_IDLE); return end
   self.LQI:Scan()
 end
 function NOP:QBAutoQuestTimer(ptype,qID)
-  if self:inCombat() then
-    if not self.timerQBAutoQuest then self.timerQBAutoQuest = self:ScheduleTimer("QBAutoQuestTimer", P.TIMER_IDLE,ptype,qID) end -- postspone
-  end
-  self.timerQBAutoQuest = nil
+  if self:inCombat() then self:TimerFire("QBAutoQuestTimer", P.TIMER_IDLE,ptype,qID); return end
   local index = GetQuestLogIndexByID(qID)
   if not index then return end -- qest is not present now it was completed during fight
   if (ptype == "OFFER") then

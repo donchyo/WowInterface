@@ -115,18 +115,18 @@ Prat:AddModuleToLoad(function()
   L=
 {
 	["Fading"] = {
-		--Translation missing 
-		-- ["duration_desc"] = "",
-		--Translation missing 
-		-- ["duration_name"] = "",
-		--Translation missing 
-		-- ["module_desc"] = "",
-		--Translation missing 
-		-- ["module_name"] = "",
-		--Translation missing 
-		-- ["textfade_desc"] = "",
-		--Translation missing 
-		-- ["textfade_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["duration_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["duration_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["textfade_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["textfade_name"] = "",--]] 
 	}
 }
 

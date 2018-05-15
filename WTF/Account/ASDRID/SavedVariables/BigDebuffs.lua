@@ -15,17 +15,18 @@ BigDebuffsDB = {
 		["Krixiwarrior - Valley of Heroes - EU"] = "Default",
 		["Krixicx - Shattered Hand"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
-		["Kriximonk - Valley of Heroes - EU"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
-		["Krixidruid - Valley of Heroes - EU"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
+		["Krixidh - Grim Batol"] = "Default",
+		["Krixidruid - Valley of Heroes - EU"] = "Default",
+		["Krixidk - Ravencrest"] = "Krixi",
 		["Krixidh - Valley of Heroes - EU"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Default",
 		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
+		["Kriximonk - Valley of Heroes - EU"] = "Default",
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
@@ -36,19 +37,25 @@ BigDebuffsDB = {
 				},
 			},
 			["unitFrames"] = {
+				["enabled"] = false,
 				["arena1"] = {
 				},
-				["enabled"] = false,
 			},
 			["raidFrames"] = {
-				["hideBliz"] = false,
-				["maxDebuffs"] = 3,
 				["warningList"] = {
 					[81261] = false,
 					[212183] = false,
 					[34914] = false,
 				},
+				["hideBliz"] = false,
+				["maxDebuffs"] = 3,
 				["increaseBuffs"] = true,
+			},
+		},
+		["Krixi"] = {
+			["unitFrames"] = {
+				["arena1"] = {
+				},
 			},
 		},
 	},

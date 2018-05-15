@@ -15,6 +15,8 @@ Bagnon_Sets = {
 	["players"] = {
 		["Grim Batol"] = {
 		},
+		["Ravencrest"] = {
+		},
 		["Valley of Heroes - EU"] = {
 		},
 		["Shattered Hand"] = {
@@ -76,8 +78,8 @@ Bagnon_Sets = {
 			["color"] = {
 			},
 			["money"] = true,
-			["itemScale"] = 1,
 			["bagFrame"] = false,
+			["alpha"] = 1,
 			["bagBreak"] = false,
 			["y"] = 72.888916015625,
 			["x"] = -45.5540771484375,
@@ -86,7 +88,7 @@ Bagnon_Sets = {
 			["reverseSlots"] = true,
 			["hiddenRules"] = {
 			},
-			["alpha"] = 1,
+			["itemScale"] = 1,
 			["actPanel"] = false,
 		},
 		["vault"] = {

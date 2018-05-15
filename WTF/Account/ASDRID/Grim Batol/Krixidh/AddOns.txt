@@ -99,7 +99,7 @@ MikScrollingBattleText: enabled
 AutoTitle_ElvUI_LDB: enabled
 EveryGoldToBanker: disabled
 Accountant: disabled
-PitBull4: disabled
+PitBull4: enabled
 PitBull4_AltPowerBar: disabled
 PitBull4_Aura: disabled
 PitBull4_Background: disabled
@@ -308,9 +308,9 @@ XLoot_Master: disabled
 XLoot_Monitor: disabled
 XLoot_Options: disabled
 SatchelScanner: disabled
-ElvUI_Config: enabled
-ElvUI_Skullflower: enabled
-ElvUI: enabled
+ElvUI_Config: disabled
+ElvUI_Skullflower: disabled
+ElvUI: disabled
 infBGMiniMapSkinner: disabled
 infBinds: enabled
 infBlackBarKiller: enabled
@@ -335,9 +335,9 @@ infVeterinarian: disabled
 DailyGlobalCheck_Legion_WorldQuests: disabled
 iTargetingFrames: disabled
 vexrunes: disabled
-Prat-3.0_Libraries: disabled
+Prat-3.0_Libraries: enabled
 TidyPlates_Threat: enabled
-ElvUI_SLE: enabled
+ElvUI_SLE: disabled
 DailyGlobalCheck: disabled
 Dominos_Quest: disabled
 StayUnsheathed: disabled
@@ -364,7 +364,7 @@ LegionTODOMini: disabled
 Skada_LeechBDKTabs: disabled
 Details_RaidInfo-TombOfSargeras: disabled
 PremadeGroupsFilter: enabled
-Prat-3.0: disabled
+Prat-3.0: enabled
 WorldQuestsList: enabled
 RaiderIO_DB_EU_H: disabled
 AddonProfiler: disabled
@@ -399,3 +399,6 @@ AngryKeystones: enabled
 BigWigs_Antorus: enabled
 BigWigs_ArgusInvasionPoints: enabled
 BigWigs_BrokenIsles: enabled
+Plater: disabled
+bdNameplates: disabled
+Kui_Media: disabled

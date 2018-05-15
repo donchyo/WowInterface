@@ -64,8 +64,8 @@ Prat:AddModuleToLoad(function()
  L=
 {
 	["ChannelColorMemory"] = {
-		--Translation missing 
-		-- ["(%w+)%s?(.*)"] = "",
+		--[[Translation missing --]]
+		--[[ ["(%w+)%s?(.*)"] = "",--]] 
 		["ChannelColorMemory"] = "Couleur Canal",
 		["Remembers the colors of each channel name."] = "Mémorise la couleur de chaque nom de canal.",
 	}
@@ -101,12 +101,12 @@ Prat:AddModuleToLoad(function()
  L=
 {
 	["ChannelColorMemory"] = {
-		--Translation missing 
-		-- ["(%w+)%s?(.*)"] = "",
-		--Translation missing 
-		-- ["ChannelColorMemory"] = "",
-		--Translation missing 
-		-- ["Remembers the colors of each channel name."] = "",
+		--[[Translation missing --]]
+		--[[ ["(%w+)%s?(.*)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["ChannelColorMemory"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Remembers the colors of each channel name."] = "",--]] 
 	}
 }
 

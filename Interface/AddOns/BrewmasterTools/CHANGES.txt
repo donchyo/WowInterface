@@ -1,0 +1,14 @@
+lightweight tag b02d74276738ad48dc06af009e46d87acc9f013b v0.2.3
+Author:	emptyrivers <afaure6@gmail.com>
+Date:	Tue Nov 21 20:41:31 2017 -0600
+
+commit b02d74276738ad48dc06af009e46d87acc9f013b
+Author: emptyrivers <afaure6@gmail.com>
+Date:   Tue Nov 21 20:41:31 2017 -0600
+
+    Ticket #17
+    
+    Currently, we don't use any libraries, and they are included only for
+    the future. Since this error is misconfigured libraries, we can hotfix
+    by simply not loading them.
+

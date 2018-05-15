@@ -1,0 +1,42 @@
+tag 29de9d67a73e06ba494df8eb9c87d0c5c0807e14 v4.1.10
+Author:	Kyle Buller <bullerk@gmail.com>
+Date:	Mon Apr 23 18:06:20 2018 -0500
+
+Tagging as v4.1.10
+
+commit 2b03d941a409f3e58ba0c081100834e994b13ed6
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Mon Apr 23 17:56:16 2018 -0500
+
+    Options: Add a header to the modules page
+
+commit dd0e4e5f054d22156e49c1fa73ce52762be926e8
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Mon Apr 23 17:28:48 2018 -0500
+
+    LuaTexts: Handle cast target in 8.0 (unintentionally removed)
+
+commit e12a8c8128d498b75ab79c561f300457df5d386a
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Mon Apr 23 17:24:04 2018 -0500
+
+    LuaTexts: Fix uninterruptible for channeled spells
+
+commit 30347196076be2ee330fe9bd626fb0bef51e2f89
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Mon Apr 23 17:12:20 2018 -0500
+
+    HideBlizzard: Disable class power hider
+
+commit 7022c0ef31084eaecfff06e1fae733ea95004b5c
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Fri Apr 20 16:08:21 2018 -0500
+
+    Initial 8.0 support
+
+commit 43d6b607cba8630949491094f954a05b378e8b3f
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Fri Apr 20 12:28:03 2018 -0500
+
+    LuaTexts: Add Allied races
+

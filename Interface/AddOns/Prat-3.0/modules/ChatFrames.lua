@@ -97,84 +97,84 @@ PL:AddLocale(PRAT_MODULE, "enUS", L)
 L=
 {
 	["Frames"] = {
-		--Translation missing 
-		-- ["Chat window frame parameter options"] = "",
-		--Translation missing 
-		-- ["framealpha_desc"] = "",
-		--Translation missing 
-		-- ["framealpha_name"] = "",
-		--Translation missing 
-		-- ["Frames"] = "",
-		--Translation missing 
-		-- ["mainchatonload_desc"] = "",
-		--Translation missing 
-		-- ["mainchatonload_name"] = "",
-		--Translation missing 
-		-- ["maxchatheight_desc"] = "",
-		--Translation missing 
-		-- ["maxchatheight_name"] = "",
-		--Translation missing 
-		-- ["maxchatwidth_desc"] = "",
-		--Translation missing 
-		-- ["maxchatwidth_name"] = "",
-		--Translation missing 
-		-- ["minchatheight_desc"] = "",
-		--Translation missing 
-		-- ["minchatheight_name"] = "",
-		--Translation missing 
-		-- ["minchatwidth_desc"] = "",
-		--Translation missing 
-		-- ["minchatwidth_name"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_desc"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_name"] = "",
-		--Translation missing 
-		-- ["removeclamp_desc"] = "",
-		--Translation missing 
-		-- ["removeclamp_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["Chat window frame parameter options"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["framealpha_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["framealpha_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Frames"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatheight_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatheight_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatwidth_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatwidth_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatheight_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatheight_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatwidth_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatwidth_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_name"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "itIT", L)
 L=
 {
 	["Frames"] = {
-		--Translation missing 
-		-- ["Chat window frame parameter options"] = "",
-		--Translation missing 
-		-- ["framealpha_desc"] = "",
-		--Translation missing 
-		-- ["framealpha_name"] = "",
-		--Translation missing 
-		-- ["Frames"] = "",
-		--Translation missing 
-		-- ["mainchatonload_desc"] = "",
-		--Translation missing 
-		-- ["mainchatonload_name"] = "",
-		--Translation missing 
-		-- ["maxchatheight_desc"] = "",
-		--Translation missing 
-		-- ["maxchatheight_name"] = "",
-		--Translation missing 
-		-- ["maxchatwidth_desc"] = "",
-		--Translation missing 
-		-- ["maxchatwidth_name"] = "",
-		--Translation missing 
-		-- ["minchatheight_desc"] = "",
-		--Translation missing 
-		-- ["minchatheight_name"] = "",
-		--Translation missing 
-		-- ["minchatwidth_desc"] = "",
-		--Translation missing 
-		-- ["minchatwidth_name"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_desc"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_name"] = "",
-		--Translation missing 
-		-- ["removeclamp_desc"] = "",
-		--Translation missing 
-		-- ["removeclamp_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["Chat window frame parameter options"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["framealpha_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["framealpha_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Frames"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatheight_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatheight_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatwidth_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatwidth_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatheight_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatheight_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatwidth_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatwidth_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_name"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "ptBR", L)
@@ -186,8 +186,8 @@ L=
 		["framealpha_name"] = "Transparence",
 		["Frames"] = "Fenêtre",
 		["mainchatonload_desc"] = "Sélectionne automatiquement la première fenêtre de discussion et la rend active lors du chargement.",
-		--Translation missing 
-		-- ["mainchatonload_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_name"] = "",--]] 
 		["maxchatheight_desc"] = "Définit la hauteur maximale pour toutes les fenêtres de discussion.",
 		["maxchatheight_name"] = "Hauteur maximale",
 		["maxchatwidth_desc"] = "Définit la largeur maximale pour toutes les fenêtres de discussion.",
@@ -196,14 +196,14 @@ L=
 		["minchatheight_name"] = "Hauteur minimum",
 		["minchatwidth_desc"] = "Définit la largeur minimum pour toutes les fenêtres de discussion.",
 		["minchatwidth_name"] = "Largeur minimum",
-		--Translation missing 
-		-- ["rememberframepositions_desc"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_name"] = "",
-		--Translation missing 
-		-- ["removeclamp_desc"] = "",
-		--Translation missing 
-		-- ["removeclamp_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_name"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "frFR", L)
@@ -258,42 +258,42 @@ PL:AddLocale(PRAT_MODULE, "koKR", L)
 L=
 {
 	["Frames"] = {
-		--Translation missing 
-		-- ["Chat window frame parameter options"] = "",
-		--Translation missing 
-		-- ["framealpha_desc"] = "",
-		--Translation missing 
-		-- ["framealpha_name"] = "",
-		--Translation missing 
-		-- ["Frames"] = "",
-		--Translation missing 
-		-- ["mainchatonload_desc"] = "",
-		--Translation missing 
-		-- ["mainchatonload_name"] = "",
-		--Translation missing 
-		-- ["maxchatheight_desc"] = "",
-		--Translation missing 
-		-- ["maxchatheight_name"] = "",
-		--Translation missing 
-		-- ["maxchatwidth_desc"] = "",
-		--Translation missing 
-		-- ["maxchatwidth_name"] = "",
-		--Translation missing 
-		-- ["minchatheight_desc"] = "",
-		--Translation missing 
-		-- ["minchatheight_name"] = "",
-		--Translation missing 
-		-- ["minchatwidth_desc"] = "",
-		--Translation missing 
-		-- ["minchatwidth_name"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_desc"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_name"] = "",
-		--Translation missing 
-		-- ["removeclamp_desc"] = "",
-		--Translation missing 
-		-- ["removeclamp_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["Chat window frame parameter options"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["framealpha_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["framealpha_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Frames"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatheight_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatheight_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatwidth_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatwidth_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatheight_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatheight_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatwidth_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatwidth_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_name"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "esMX", L)
@@ -341,50 +341,50 @@ L=
 		["rememberframepositions_desc"] = "记住聊天框的位置,在加载时恢复.",
 		["rememberframepositions_name"] = "记住位置",
 		["removeclamp_desc"] = "允许聊天框架移动至屏幕边缘齐平",
-		--Translation missing 
-		-- ["removeclamp_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["removeclamp_name"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "zhCN", L)
 L=
 {
 	["Frames"] = {
-		--Translation missing 
-		-- ["Chat window frame parameter options"] = "",
-		--Translation missing 
-		-- ["framealpha_desc"] = "",
-		--Translation missing 
-		-- ["framealpha_name"] = "",
-		--Translation missing 
-		-- ["Frames"] = "",
-		--Translation missing 
-		-- ["mainchatonload_desc"] = "",
-		--Translation missing 
-		-- ["mainchatonload_name"] = "",
-		--Translation missing 
-		-- ["maxchatheight_desc"] = "",
-		--Translation missing 
-		-- ["maxchatheight_name"] = "",
-		--Translation missing 
-		-- ["maxchatwidth_desc"] = "",
-		--Translation missing 
-		-- ["maxchatwidth_name"] = "",
-		--Translation missing 
-		-- ["minchatheight_desc"] = "",
-		--Translation missing 
-		-- ["minchatheight_name"] = "",
-		--Translation missing 
-		-- ["minchatwidth_desc"] = "",
-		--Translation missing 
-		-- ["minchatwidth_name"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_desc"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_name"] = "",
-		--Translation missing 
-		-- ["removeclamp_desc"] = "",
-		--Translation missing 
-		-- ["removeclamp_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["Chat window frame parameter options"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["framealpha_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["framealpha_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Frames"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatheight_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatheight_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatwidth_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["maxchatwidth_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatheight_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatheight_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatwidth_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["minchatwidth_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_name"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "esES",  L)
@@ -392,12 +392,12 @@ L=
 {
 	["Frames"] = {
 		["Chat window frame parameter options"] = "聊天視窗框架參數選項",
-		--Translation missing 
-		-- ["framealpha_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["framealpha_desc"] = "",--]] 
 		["framealpha_name"] = "設定聊天欄透明度",
 		["Frames"] = "框架",
-		--Translation missing 
-		-- ["mainchatonload_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["mainchatonload_desc"] = "",--]] 
 		["mainchatonload_name"] = "強制主聊天框在載入",
 		["maxchatheight_desc"] = "設定最大高度全部聊天視窗。",
 		["maxchatheight_name"] = "設定最大高度",
@@ -407,14 +407,14 @@ L=
 		["minchatheight_name"] = "設定最小高度",
 		["minchatwidth_desc"] = "設定對話視窗最小寬度",
 		["minchatwidth_name"] = "設定最小寬度",
-		--Translation missing 
-		-- ["rememberframepositions_desc"] = "",
-		--Translation missing 
-		-- ["rememberframepositions_name"] = "",
-		--Translation missing 
-		-- ["removeclamp_desc"] = "",
-		--Translation missing 
-		-- ["removeclamp_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberframepositions_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removeclamp_name"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "zhTW", L)

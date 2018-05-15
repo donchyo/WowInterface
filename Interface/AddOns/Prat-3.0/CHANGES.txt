@@ -1,7 +1,7 @@
-changeset:   1081:54646840f7ac
-tag:         3.6.34
+changeset:   1091:517a0e31f2d6
+tag:         3.6.41
 user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Sat Oct 07 18:15:35 2017 -0700
-summary:     Fix SoundKit error
+date:        Sun May 06 07:42:46 2018 -0700
+summary:     Fix copy/paste error for Invites module localizations
 
 

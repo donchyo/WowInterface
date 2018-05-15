@@ -1,0 +1,12 @@
+## Interface: 70300
+## Version: v1.2.1
+## Title: MoveTalkingHead
+## Notes: Makes the message dialog movable
+## Author: Ketho @ EU-Boulderfist
+## SavedVariables: MoveTalkingHeadDB
+## LoadOnDemand: 1
+## LoadWith: Blizzard_TalkingHeadUI
+## Dependencies: Blizzard_TalkingHeadUI
+
+Locales.lua
+MoveTalkingHead.lua

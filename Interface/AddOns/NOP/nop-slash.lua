@@ -1,6 +1,6 @@
---[[ Slash handler and key-binding header ]]
+-- Slash handler and key-binding header
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
 local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER; assert(BACKPACK_CONTAINER ~= nil,'BACKPACK_CONTAINER')
@@ -19,9 +19,12 @@ local pairs = _G.pairs; assert(pairs ~= nil,'pairs')
 local string = _G.string; assert(string ~= nil,'string')
 local tonumber = _G.tonumber; assert(tonumber ~= nil,'tonumber')
 local UpdateAddOnMemoryUsage = _G.UpdateAddOnMemoryUsage; assert(UpdateAddOnMemoryUsage ~= nil,'UpdateAddOnMemoryUsage')
--- ]]
+-- local AddOn
 local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
+--
+local T_CHECK = P.T_CHECK; assert(T_CHECK ~= nil,'T_CHECK')
+--
 NOP.slash_handler = function(msg, editbox) -- /nop handler
   local line = msg:lower()
   local cmd, arg = string.split(" ,",line)
@@ -188,7 +191,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   if cmd == "unlist" then
     local id = tonumber(arg)
     if id then
-      if NOP.DB["T_BLACKLIST"] ~= nil and NOP.DB.T_BLACKLIST[id] then NOP.DB.T_BLACKLIST[id] = nil; NOP.T_CHECK[id] = nil; NOP:ItemShowNew() end
+      if NOP.DB["T_BLACKLIST"] ~= nil and NOP.DB.T_BLACKLIST[id] then NOP.DB.T_BLACKLIST[id] = nil; T_CHECK[id] = nil; NOP:ItemShowNew() end
       if NOP.DB["T_BLACKLIST_Q"] ~= nil and NOP.DB.T_BLACKLIST_Q[id] then NOP.DB.T_BLACKLIST_Q[id] = nil; NOP:QBUpdate() end
     end
     return

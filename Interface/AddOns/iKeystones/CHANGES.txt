@@ -1,12 +1,13 @@
-tag 621b7e0942e489576b48299d72063b2b5494780a v1.567
+tag 9bb249c25bd2ebefa268e900250ba02246b55893 v1.600
 Author:	Jesse Manelius <jessemanelius@gmail.com>
-Date:	Sat Mar 24 00:59:59 2018 +0200
+Date:	Sat Apr 28 23:49:33 2018 +0300
 
-tagging as v1.567
+tagging as v1.600
 
-commit 1b97fd40cf94b311837c7b61ea7cf06b3ad1461b
+commit 78ebefb8648561f2de9ad4dcf9cfe46c431dd16a
 Author: Jesse Manelius <jessemanelius@gmail.com>
-Date:   Sat Mar 24 00:59:41 2018 +0200
+Date:   Sat Apr 28 23:48:49 2018 +0300
 
-    version update
+    Fix Sanguine Volvanic Fortified to Sanguine Necrotic Fortified
+    add .weekly chat cmd (15+ keys with chars that doesn't have >=15 done)
 

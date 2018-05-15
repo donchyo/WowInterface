@@ -1,0 +1,66 @@
+lightweight tag 1d944dbe75c917661d07ef53311daa86b1c01244 2.27
+Author:	blooblahguy <blooblahguy@gmail.com>
+Date:	Wed Apr 25 23:21:41 2018 -0600
+
+commit 1d944dbe75c917661d07ef53311daa86b1c01244
+Author: blooblahguy <blooblahguy@gmail.com>
+Date:   Wed Apr 25 23:21:41 2018 -0600
+
+    BFA Support
+
+commit 1be2953faf5d135536f841edf283ac644cec2753
+Author: blooblahguy <blooblahguy@gmail.com>
+Date:   Sun Jan 28 21:05:29 2018 -0700
+
+    removing excress padding from nameplates
+
+commit 8c3eec0f6d520673b2c574da1b09312dfdc8a0cb
+Author: Glade Lynch <blooblahguy@gmail.com>
+Date:   Fri Jan 19 09:46:30 2018 -0700
+
+    removing cvar that blizz doesn't really maintain
+
+commit c639308af457cbc123df6065a1798c716adb967b
+Author: Glade Lynch <blooblahguy@gmail.com>
+Date:   Thu Jan 4 17:05:38 2018 -0700
+
+    adding files for future reorganization
+
+commit df670617fe27a013961aabcb132df9a3281d3c25
+Author: blooblahguy <blooblahguy@gmail.com>
+Date:   Sat Dec 30 12:38:49 2017 -0700
+
+    quest indicator
+
+commit df670617fe27a013961aabcb132df9a3281d3c25
+Author: blooblahguy <blooblahguy@gmail.com>
+Date:   Sat Dec 30 12:38:49 2017 -0700
+
+    quest indicator
+
+commit eb8daae56c1cf9cff797a532a87978ca89b9a3ac
+Author: blooblahguy <blooblahguy@gmail.com>
+Date:   Sat Dec 16 21:01:48 2017 -0700
+
+    typos
+
+commit 3901074c72ec300c486cc75cd2fcb64e5d81bbbf
+Author: Glade Lynch <blooblahguy@gmail.com>
+Date:   Fri Dec 15 10:38:41 2017 -0700
+
+    Adding option for friendly nameplate CVAR
+
+commit 5618f8f09d657e4439c46e73173ae5ff95da4f38
+Author: Connor Taylor <connorqtaylor@gmail.com>
+Date:   Fri Dec 8 16:24:29 2017 -0700
+
+    Fixed typo in enemyStyle
+    Set a FrameLevel on EnemyDebuffs to prevent overlap with RaidTargetIndicator if in the Top position.
+
+commit 5618f8f09d657e4439c46e73173ae5ff95da4f38
+Author: Connor Taylor <connorqtaylor@gmail.com>
+Date:   Fri Dec 8 16:24:29 2017 -0700
+
+    Fixed typo in enemyStyle
+    Set a FrameLevel on EnemyDebuffs to prevent overlap with RaidTargetIndicator if in the Top position.
+

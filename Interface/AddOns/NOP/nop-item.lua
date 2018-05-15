@@ -1,5 +1,5 @@
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
 local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER; assert(BACKPACK_CONTAINER ~= nil,'BACKPACK_CONTAINER')
@@ -21,17 +21,27 @@ local strfind = _G.strfind; assert(strfind ~= nil,'strfind')
 local string = _G.string; assert(string ~= nil,'string')
 local tonumber = _G.tonumber; assert(tonumber ~= nil,'tonumber')
 local type = _G.type; assert(type ~= nil,'type')
-local UnitAura = _G.UnitAura; assert(UnitAura ~= nil,'UnitAura')
 local unpack = _G.unpack; assert(unpack ~= nil,'unpack')
 local wipe = _G.wipe; assert(wipe ~= nil,'wipe')
--- ]]
+local GetItemCooldown = _G.GetItemCooldown; assert(GetItemCooldown ~= nil,'GetItemCooldown')
+-- local AddOn
 local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
-local T_BAGS = {} -- bags table
-local T_PICK = {} -- picklocking items 
+--
+local T_BAGS = P.T_BAGS; assert(T_BAGS ~= nil,'T_BAGS')
+local T_PICK = P.T_PICK; assert(T_PICK ~= nil,'T_PICK')
+local T_BLACKLIST = P.T_BLACKLIST; assert(T_BLACKLIST ~= nil,'T_BLACKLIST')
+local T_CHECK = P.T_CHECK; assert(T_CHECK ~= nil,'T_CHECK')
+local T_OPEN = P.T_OPEN; assert(T_OPEN ~= nil,'T_OPEN')
+local T_RECIPES_FIND = P.T_RECIPES_FIND; assert(T_RECIPES_FIND ~= nil,'T_RECIPES_FIND')
+local T_SPELL_FIND = P.T_SPELL_FIND; assert(T_SPELL_FIND ~= nil,'T_SPELL_FIND')
+local T_USE = P.T_USE; assert(T_USE ~= nil,'T_USE')
+local UnitAura = P.UnitAura; assert(UnitAura ~= nil,'UnitAura')
+local print = P.print; assert(print ~= nil,'print')
+--
 function NOP:ItemIsBlacklisted(itemID) -- is item blacklisted?
   if not itemID then return true end
-  if NOP.T_BLACKLIST and NOP.T_BLACKLIST[itemID] then -- temporary blacklist
+  if T_BLACKLIST and T_BLACKLIST[itemID] then -- temporary blacklist
     self:Verbose("ItemIsBlacklisted:","itemID",itemID,"is temporary blacklisted")
     return true
   elseif NOP.DB["T_BLACKLIST"] and NOP.DB.T_BLACKLIST[itemID] then -- Permanent blacklist
@@ -44,8 +54,8 @@ function NOP:ItemIsBlacklisted(itemID) -- is item blacklisted?
 end
 function NOP:ItemGetSpell(itemID) -- looking for usable item by spell attached to item
   local spell = GetItemSpell(itemID)
-  if spell and NOP.T_SPELL_FIND[spell] then
-    local c, z, m = unpack(NOP.T_SPELL_FIND[spell],1,3)
+  if spell and T_SPELL_FIND[spell] then
+    local c, z, m = unpack(T_SPELL_FIND[spell],1,3)
     self:Verbose("ItemGetSpell:","itemID",itemID,"spell",spell)
     return c[1], c[2], z, m
   end
@@ -94,7 +104,7 @@ function NOP:ItemGetPattern(itemID) -- looking for usable item via pattern in to
     local headingLine = P.TOOLTIP_SCAN .. "TextLeft" .. i
     local heading = _G[headingLine]:GetText() -- get line from tooltip
     if heading and heading ~= "" then
-      for key, data in pairs(NOP.T_RECIPES_FIND) do
+      for key, data in pairs(T_RECIPES_FIND) do
         local c, pattern, z, m, faction = unpack(data,1,5)
         if strfind(heading,pattern,1,true) then
           if faction then -- faction tokens can be skipped when exalted or when paragon reward pending
@@ -104,7 +114,7 @@ function NOP:ItemGetPattern(itemID) -- looking for usable item via pattern in to
           return c[1], c[2], z, m
         end
       end
-      for key, data in pairs(NOP.T_OPEN) do
+      for key, data in pairs(T_OPEN) do
         if strfind(heading,key,1,true) then
           local c, z, m = unpack(data,1,3)
           return c[1], c[2], z, m
@@ -115,12 +125,12 @@ function NOP:ItemGetPattern(itemID) -- looking for usable item via pattern in to
 end
 local offset = 0
 function NOP:ItemToUse(itemID,count,prio,zone,map,aura) -- store item into table
-  local pt = NOP.T_USE[itemID]
+  local pt = T_USE[itemID]
   if not pt then -- new item
     if (self.BF and self.BF.showID == nil) and (itemID == self.AceDB.char.itemID) then -- first time looking for item then get last item from last session
-      NOP.T_USE[itemID] = {count, prio, zone, map, aura, GetTime()+1.0, GetItemCount(itemID)}
+      T_USE[itemID] = {count, prio, zone, map, aura, GetTime()+1.0, GetItemCount(itemID)}
     else
-      NOP.T_USE[itemID] = {count, prio, zone, map, aura, GetTime()+offset, GetItemCount(itemID)} -- seed with time
+      T_USE[itemID] = {count, prio, zone, map, aura, GetTime()+offset, GetItemCount(itemID)} -- seed with time
       offset = offset + 0.001
     end
   else -- update item
@@ -133,7 +143,7 @@ function NOP:ItemToUse(itemID,count,prio,zone,map,aura) -- store item into table
     pt[7] = GetItemCount(itemID)
   end
 end
-function NOP:ItemScan() -- /run NOP:ItemScan(); foreach(NOP.T_USE,print)
+function NOP:ItemScan() -- /run NOP:ItemScan(); foreach(T_USE,print)
   wipe(T_BAGS)
   for bag = BACKPACK_CONTAINER, NUM_BAG_SLOTS, 1 do
     for slot = 1, GetContainerNumSlots(bag), 1 do
@@ -141,11 +151,11 @@ function NOP:ItemScan() -- /run NOP:ItemScan(); foreach(NOP.T_USE,print)
       if (itemID ~= nil) then T_BAGS[itemID] = {bag,slot} end -- index it for later use in macro and clear check table
     end
   end
-  for key in pairs(NOP.T_CHECK) do if not T_BAGS[key] then NOP.T_CHECK[key] = nil end end -- cleanup check table
-  for key in pairs(NOP.T_USE) do if not T_BAGS[key] then NOP.T_USE[key] = nil end end  -- cleanup item table
+  for key in pairs(T_CHECK) do if not T_BAGS[key] then T_CHECK[key] = nil end end -- cleanup check table
+  for key in pairs(T_USE) do if not T_BAGS[key] then T_USE[key] = nil end end  -- cleanup item table
   for itemID, data in pairs(T_BAGS) do
-    if not NOP.T_CHECK[itemID] then -- not checked before
-      NOP.T_CHECK[itemID] = true -- stop checking it except later NOP.T_USE will reset it
+    if not T_CHECK[itemID] then -- not checked before
+      T_CHECK[itemID] = true -- stop checking it except later T_USE will reset it
       if not self:ItemIsBlacklisted(itemID) then
         local bag, slot = unpack(data)
         local itemLink = GetContainerItemLink(bag,slot) -- create link from slot, it will have type of item in bags
@@ -157,7 +167,7 @@ function NOP:ItemScan() -- /run NOP:ItemScan(); foreach(NOP.T_USE,print)
               self:ItemToUse(itemID, 1, P.PRI_OPEN, nil, nil)
             else
               self:Verbose("ItemScan:","Pet",itemID,"have more than",limit)
-              NOP.T_USE[itemID] = nil
+              T_USE[itemID] = nil
             end
           elseif linkType == P.ITEM_TYPE_ITEM then
             local count, prio, zone, map, aura = self:ItemGetSpell(itemID)
@@ -182,22 +192,22 @@ function NOP:ItemScan() -- /run NOP:ItemScan(); foreach(NOP.T_USE,print)
                   if count and (count > 0) then
                     self:ItemToUse(itemID, count, prio, zone, map, aura)
                   else
-                    NOP.T_USE[itemID] = nil
+                    T_USE[itemID] = nil
                   end
                 end
               else
-                self.printt(format("|cFFFF0000Error|r broken tooltip for |cFFFF0000%s|r itemID(%d)",GetItemInfo(itemID) or "unknown",itemID))
-                NOP.T_USE[itemID] = nil
+                print(format("|cFFFF0000Error|r broken tooltip for |cFFFF0000%s|r itemID(%d)",GetItemInfo(itemID) or "unknown",itemID))
+                T_USE[itemID] = nil
               end
             end
           end
         else
           self:Verbose("ItemScan:","itemID",itemID,"don't return itemLink")
-          NOP.T_USE[itemID] = nil
+          T_USE[itemID] = nil
         end
       else
         self:Verbose("ItemScan:","itemID",itemID,"is blacklisted")
-        NOP.T_USE[itemID] = nil
+        T_USE[itemID] = nil
       end
     end
   end
@@ -222,26 +232,19 @@ function NOP:ItemIsUsable(itemID) -- look in tooltip if there is no red text
   if self.scanFrame:NumLines() > 0 then
     for i=1,self.scanFrame:NumLines() do -- scan all lines in tooltip
       local leftText = _G[P.TOOLTIP_SCAN .. "TextLeft" .. i]
-      local rightText = _G[P.TOOLTIP_SCAN .. "TextRight" .. i]
       if leftText and leftText.GetText then
         local text = leftText:GetText()
         if text and text ~= "" then
           if self:ItemIsUnusable(leftText:GetTextColor()) then 
-            --self:Verbose("itemID",itemID,"has red text in tooltip!",text)
+            self:Verbose("itemID",itemID,"has red text in tooltip!",text)
             return false
           end
           if i == 1 then -- all faction tokens should be checked
             local level, top, value, reward = self:GetReputation(text)
-            if (level and (level > 7) and NOP.DB.SkipExalted) or reward then return false end -- already exalted or paragon reward
-          end
-        end
-      end
-      if rightText and rightText.GetText then
-        local text = rightText:GetText()
-        if text and text ~= "" then
-          if self:ItemIsUnusable(rightText:GetTextColor()) then 
-            -- self:Verbose("itemID",itemID,"has red text in tooltip!",text) 
-            return false
+            if level then
+              if ((level > 7) and NOP.DB.SkipExalted) or reward then return false end -- already exalted or paragon reward
+              if self:ItemCD(itemID) then return false end -- CD other tokens can be used then
+            end
           end
         end
       end
@@ -273,9 +276,9 @@ function NOP:ItemToPicklock(itemID) -- need to find which item really need to un
     end
   end
 end
-function NOP:ItemShowRestart()
+function NOP:ItemShowRestart() -- new round?
   if self:BlacklistClear() then -- no more items to show, may be some are just temporary blacklisted
-    self.printt(P.L["RESTARTED_LOOKUP"])
+    print(P.L["RESTARTED_LOOKUP"])
     self:ItemShowNew() -- restart process
   else 
     self.AceDB.char.itemID = nil
@@ -308,6 +311,8 @@ function NOP:ItemShow(itemID,prio) -- add item to button
       slotID = slot
       isGlow = true
       mtext = format(P.MACRO_PICKLOCK,self.pickLockSpell,bagID,slotID) -- this one needs unlock
+    else
+      T_PICK[itemID] = nil -- it not require lockpick anymore
     end
   end
   if (bt.itemCount ~= itemCount) or (bt.itemID ~= itemID) or (bt.isGlow ~= isGlow) or (bt.mtext ~= mtext) then
@@ -324,17 +329,17 @@ function NOP:ItemShow(itemID,prio) -- add item to button
     self:ButtonShow() -- show or refresh button
   end
 end
+function NOP:ItemCD(itemID) -- if item is on CD let's look for another
+  local startTime, duration, enable = GetItemCooldown(itemID)
+  return not (startTime == 0)
+end
 function NOP:ItemShowNew() -- check bags for usable item and place it on button
   self.preClick = nil -- from now error won't blacklist item on button
-  if self:inCombat() or not (self.spellLoad and self.itemLoad) then -- postspone in combat and on loading
-    if not self.timerItemShowNew then self.timerItemShowNew = self:ScheduleTimer("ItemShowNew", P.TIMER_IDLE) end
-    return
-  end
-  self.timerItemShowNew = nil
+  if self:inCombat() or not (self.spellLoad and self.itemLoad) then self:TimerFire("ItemShowNew", P.TIMER_IDLE); return end
   self:Profile(true)
   self:ItemScan() -- rescan bags
   local toShow, prio, stamp = nil, 0, 0 -- item for use on button
-  for itemID, data in pairs(NOP.T_USE) do
+  for itemID, data in pairs(T_USE) do
     local c, p, z, m, a, t = unpack(data,1,6)
     local inZone = false
     if z then -- zone table can be {"sub-Zone","sub-Zone",...} | zoneID | {zoneID,zoneID,...}

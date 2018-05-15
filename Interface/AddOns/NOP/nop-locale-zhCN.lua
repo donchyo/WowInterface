@@ -1,17 +1,16 @@
 ﻿-- Chinese Traditional localization file for zhCN. by 图图 and Google translator
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
--- ]]
+-- local AddOn
 local ADDON = ...
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale(ADDON, "zhCN");
 if not L then return end
-
+--
 L["NOP_TITLE"] = "|cffCCCC88[菜单]|r一键开包"
 L["NOP_VERSION"] = "|cFFFFFFFF%s 使用 |cFFFF00FF/nop|cFFFFFFFF"
-
 L["CLICK_DRAG_MSG"] = "ALT-左键拖动。"
 L["CLICK_OPEN_MSG"] = "左键点击开启或使用。"
 L["CLICK_SKIP_MSG"] = "右键点击略过物品。"
@@ -102,7 +101,6 @@ L["ARTIFACT_ANNOUNCE"] = "%s有%d個特質！"
 L["ARCHAELOGY_ANNOUNCE"] = "Archaeology %s 準備好了！"
 L["TALENT_ANNOUNCE"] = "%s 準備好了！"
 L["RESTARTED_LOOKUP"] = "臨時黑名單被清除，重新開始查找！"
-
 L["CONSOLE_USAGE"] = [=[ [reset|skin|lock|clear|list|unlist|skip|glow|zone|quest|show]
 reset  - 將會重置物品位置到螢幕中間
 skin   - 將會切換按鈕皮膚

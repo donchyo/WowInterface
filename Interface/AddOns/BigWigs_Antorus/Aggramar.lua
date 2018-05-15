@@ -33,7 +33,7 @@ for id,_ in pairs(comboSpellLookup) do
 end
 
 local blazeTick = 1
-local blazeOnMe = nil
+local blazeOnMe = false
 local blazeProxList = {}
 
 local wave = 0
@@ -59,7 +59,7 @@ if L then
 	L.track_ember_icon = 245911 -- Wrought in Flame icon
 
 	L.custom_off_ember_marker = CL.marker:format(mod:SpellName(-15903))
-	L.custom_off_ember_marker_desc = "Mark Ember of Taeshalach with {rt1}{rt2}{rt3}{rt4}{rt5}, requires promoted or leader.\n|cff33ff99Mythic: This will only mark adds in the current wave and above 45 energy.|r"
+	L.custom_off_ember_marker_desc = "Mark Ember of Taeshalach with {rt1}{rt2}{rt3}{rt4}{rt5}, requires promoted or leader.\n|cff33ff99Mythic: This will only mark adds in the current wave.|r"
 end
 
 --------------------------------------------------------------------------------
@@ -140,7 +140,7 @@ function mod:OnEngage()
 	comboSpellLookup[245463].castTime = self:Easy() and 3.5 or 2.75 -- Flame Rend
 
 	blazeTick = 1
-	blazeOnMe = nil
+	blazeOnMe = false
 	intermission = false
 	wipe(blazeProxList)
 
@@ -313,7 +313,7 @@ do
 			waveCollector[wave][guid] = true
 		end
 		if self:GetOption("custom_off_ember_marker") then
-			if mobID == 122532 and waveCollector[currentEmberWave] and (not self:Mythic() or UnitPower(unit, 3) > 45) then -- Mark Embers above 45 energy in Mythic
+			if mobID == 122532 and waveCollector[currentEmberWave] then
 				if waveCollector[currentEmberWave][guid] then
 					for i = 1, 5 do -- Use only 5 marks, leaving 6, 7, 8 for raid use purposes
 						if not emberAddMarks[i] and not GetRaidTargetIndex(unit) then -- Don't re-mark the same add and re-use marks
@@ -396,23 +396,22 @@ function mod:TaeshalachsReach(args)
 end
 
 do
-	local scheduled = nil
-
-	local function warn(self, spellId)
+	local function warn()
 		if not blazeOnMe then
-			self:Message(spellId, "red")
+			mod:Message(245994, "red") -- Scorching Blaze
 		end
-		scheduled = nil
 	end
 
 	function mod:ScorchingBlaze(args)
+		blazeProxList[#blazeProxList+1] = args.destName
 		if self:Me(args.destGUID) then
 			blazeOnMe = true
-			self:TargetMessage(args.spellId, args.destName, "red", "Warning")
+			self:PlaySound(args.spellId, "Warning")
+			self:TargetMessage2(args.spellId, "red", args.destName)
 			self:Say(args.spellId)
 		end
-		if not scheduled then
-			scheduled = self:ScheduleTimer(warn, 0.3, self, args.spellId)
+		if #blazeProxList == 1 then
+			self:SimpleTimer(warn, 0.3)
 			if comboTime > GetTime() + 7.3 then
 				self:CDBar(args.spellId, 7.3)
 			end
@@ -422,7 +421,7 @@ do
 
 	function mod:ScorchingBlazeRemoved(args)
 		if self:Me(args.destGUID) then
-			blazeOnMe = nil
+			blazeOnMe = false
 		end
 		tDeleteItem(blazeProxList, args.destName)
 		updateProximity(self)
@@ -431,7 +430,8 @@ end
 
 do
 	local function printTarget(self, name, guid)
-		self:TargetMessage(244693, name, "yellow", "Alert", nil, nil, true)
+		self:PlaySound(244693, "Alert", nil, name)
+		self:TargetMessage2(244693, "yellow", name)
 		if self:Me(guid) then
 			self:Say(244693)
 		end
@@ -561,15 +561,16 @@ do
 			blazeOnMe = true
 			self:Flash(args.spellId)
 			self:Say(args.spellId)
+			self:PlaySound(args.spellId, "Warning")
 		end
 		playerList[#playerList+1] = args.destName
 		blazeProxList[#blazeProxList+1] = args.destName
+		self:TargetsMessage(args.spellId, "red", playerList, 5)
 		if #playerList == 1 then
 			local cooldown = stage == 1 and 23.1 or 60.1 -- this cooldown should only trigger in stage 1+
 			if comboTime > GetTime() + cooldown then
 				self:CDBar(args.spellId, cooldown)
 			end
-			self:ScheduleTimer("TargetMessage", 0.3, args.spellId, playerList, "red", "Warning")
 			blazeTick = 1
 			scheduled = self:ScheduleRepeatingTimer(addBlazeTick, 2, self)
 		end
@@ -578,7 +579,7 @@ do
 
 	function mod:RavenousBlazeRemoved(args)
 		if self:Me(args.destGUID) then
-			blazeOnMe = nil
+			blazeOnMe = false
 		end
 		tDeleteItem(blazeProxList, args.destName)
 		updateProximity(self)

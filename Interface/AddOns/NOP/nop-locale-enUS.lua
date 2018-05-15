@@ -1,17 +1,16 @@
 -- English localization file for enUS and enGB.
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
--- ]]
+-- local AddOn
 local ADDON = ...
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale(ADDON, "enUS", true, false); -- default translation, not silent load
 if not L then return; end
-
+--
 L["NOP_TITLE"] = "New Openables"
 L["NOP_VERSION"] = "|cFFFFFFFF%s use |cFFFF00FF/nop|cFFFFFFFF"
-
 L["CLICK_DRAG_MSG"] = "ALT-LeftClick and drag to move."
 L["CLICK_OPEN_MSG"] = "LeftClick to open or use."
 L["CLICK_SKIP_MSG"] = "RightClick to skip item."
@@ -102,7 +101,6 @@ L["ARTIFACT_ANNOUNCE"] = "%s have %d traits ready!"
 L["ARCHAELOGY_ANNOUNCE"] = "Archaeology %s is ready!"
 L["TALENT_ANNOUNCE"] = "%s is ready!"
 L["RESTARTED_LOOKUP"] = "Temporary blacklist cleared, restarting lookup!"
-
 L["CONSOLE_USAGE"] = [=[ [reset|skin|lock|clear|list|unlist|skip|glow|zone|quest|show]
 reset  - will reset button position to middle of screen
 skin   - will toggle skin of button

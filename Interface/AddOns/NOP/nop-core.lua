@@ -1,5 +1,5 @@
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local ARTIFACT_RELIC_TALENT_AVAILABLE = _G.ARTIFACT_RELIC_TALENT_AVAILABLE; assert(ARTIFACT_RELIC_TALENT_AVAILABLE ~= nil,'ARTIFACT_RELIC_TALENT_AVAILABLE')
 local C_Garrison = _G.C_Garrison; assert(C_Garrison ~= nil,'C_Garrison')
@@ -11,9 +11,6 @@ local ERR_SPELL_FAILED_REAGENTS_GENERIC = _G.ERR_SPELL_FAILED_REAGENTS_GENERIC; 
 local ExpandAllFactionHeaders = _G.ExpandAllFactionHeaders; assert(ExpandAllFactionHeaders ~= nil,'ExpandAllFactionHeaders')
 local format = _G.format; assert(format ~= nil,'format')
 local GetArchaeologyRaceInfo = _G.GetArchaeologyRaceInfo; assert(GetArchaeologyRaceInfo ~= nil,'GetArchaeologyRaceInfo')
-local GetCurrentMapAreaID = _G.GetCurrentMapAreaID; assert(GetCurrentMapAreaID ~= nil,'GetCurrentMapAreaID')
-local GetCurrentMapContinent = _G.GetCurrentMapContinent; assert(GetCurrentMapContinent ~= nil,'GetCurrentMapContinent')
-local GetCurrentMapDungeonLevel = _G.GetCurrentMapDungeonLevel; assert(GetCurrentMapDungeonLevel ~= nil,'GetCurrentMapDungeonLevel')
 local GetCVar = _G.GetCVar; assert(GetCVar ~= nil,'GetCVar')
 local GetFactionInfo = _G.GetFactionInfo; assert(GetFactionInfo ~= nil,'GetFactionInfo')
 local GetFactionInfoByID = _G.GetFactionInfoByID; assert(GetFactionInfoByID ~= nil,'GetFactionInfoByID')
@@ -40,12 +37,7 @@ local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
 local math = _G.math; assert(math ~= nil,'math')
 local NUM_CHAT_WINDOWS = _G.NUM_CHAT_WINDOWS; assert(NUM_CHAT_WINDOWS ~= nil,'NUM_CHAT_WINDOWS')
 local pairs = _G.pairs; assert(pairs ~= nil,'pairs')
-local print = _G.print; assert(print ~= nil,'print')
 local select = _G.select; assert(select ~= nil,'select')
-local SetDungeonMapLevel = _G.SetDungeonMapLevel; assert(SetDungeonMapLevel ~= nil,'SetDungeonMapLevel')
-local SetMapByID = _G.SetMapByID; assert(SetMapByID ~= nil,'SetMapByID')
-local SetMapToCurrentZone = _G.SetMapToCurrentZone; assert(SetMapToCurrentZone ~= nil,'SetMapToCurrentZone')
-local SetMapZoom = _G.SetMapZoom; assert(SetMapZoom ~= nil,'SetMapZoom')
 local string = _G.string; assert(string ~= nil,'string')
 local tonumber = _G.tonumber; assert(tonumber ~= nil,'tonumber')
 local type = _G.type; assert(type ~= nil,'type')
@@ -53,32 +45,60 @@ local UIParent = _G.UIParent; assert(UIParent ~= nil,'UIParent')
 local UnitClass = _G.UnitClass; assert(UnitClass ~= nil,'UnitClass')
 local unpack = _G.unpack; assert(unpack ~= nil,'unpack')
 local wipe = _G.wipe; assert(wipe ~= nil,'wipe')
--- ]]
+local PLAYER_LIST_DELIMITER = _G.PLAYER_LIST_DELIMITER; assert(PLAYER_LIST_DELIMITER ~= nil,'PLAYER_LIST_DELIMITER')
+local table = _G.table; assert(table ~= nil,'table')
+-- local AddOn
 local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
+--
+local ARCHAELOGY_ANNOUNCE = P.ARCHAELOGY_ANNOUNCE; assert(ARCHAELOGY_ANNOUNCE ~= nil,'ARCHAELOGY_ANNOUNCE')
+local ARTIFACT_ANNOUNCE = P.ARTIFACT_ANNOUNCE; assert(ARTIFACT_ANNOUNCE ~= nil,'ARTIFACT_ANNOUNCE')
+local CB_CVAR = P.CB_CVAR; assert(CB_CVAR ~= nil,'CB_CVAR')
+local L = P.L
+local PRI_REP = P.PRI_REP; assert(PRI_REP ~= nil,'PRI_REP')
+local REWARD_ANNOUNCE = P.REWARD_ANNOUNCE; assert(REWARD_ANNOUNCE ~= nil,'REWARD_ANNOUNCE')
+local RGB_RED = P.RGB_RED; assert(RGB_RED ~= nil,'RGB_RED')
+local RGB_YELLOW = P.RGB_YELLOW; assert(RGB_YELLOW ~= nil,'RGB_YELLOW')
+local SHIPYARD_ANNOUNCE = P.SHIPYARD_ANNOUNCE; assert(SHIPYARD_ANNOUNCE ~= nil,'SHIPYARD_ANNOUNCE')
+local SPELL_PICKLOCK = P.SPELL_PICKLOCK; assert(SPELL_PICKLOCK ~= nil,'SPELL_PICKLOCK')
+local TALENT_ANNOUNCE = P.TALENT_ANNOUNCE; assert(TALENT_ANNOUNCE ~= nil,'TALENT_ANNOUNCE')
+local TOGO_ANNOUNCE = P.TOGO_ANNOUNCE; assert(TOGO_ANNOUNCE ~= nil,'TOGO_ANNOUNCE')
+local TOOLTIP_ITEM = P.TOOLTIP_ITEM; assert(TOOLTIP_ITEM ~= nil,'TOOLTIP_ITEM')
+local TOOLTIP_SCAN = P.TOOLTIP_SCAN; assert(TOOLTIP_SCAN ~= nil,'TOOLTIP_SCAN')
+local TOOLTIP_SPELL = P.TOOLTIP_SPELL; assert(TOOLTIP_SPELL ~= nil,'TOOLTIP_SPELL')
+local whoCalls = P.whoCalls; assert(whoCalls ~= nil,'whoCalls')
+local WORK_ANNOUNCE = P.WORK_ANNOUNCE; assert(WORK_ANNOUNCE ~= nil,'WORK_ANNOUNCE')
+local LIB_ARTIFACTDATA = P.LIB_ARTIFACTDATA; assert(LIB_ARTIFACTDATA ~= nil,'LIB_ARTIFACTDATA')
+local LIB_HEREBEDRAGONS = P.LIB_HEREBEDRAGONS; assert(LIB_HEREBEDRAGONS ~= nil,'LIB_HEREBEDRAGONS')
+local LIB_MASQUE = P.LIB_MASQUE; -- this one could not exist
+local LIB_QUESTITEM = P.LIB_QUESTITEM; assert(LIB_QUESTITEM ~= nil,'LIB_QUESTITEM')
+local print = P.print; assert(print ~= nil,'print')
+local T_BLACKLIST = P.T_BLACKLIST; assert(T_BLACKLIST ~= nil,'T_BLACKLIST')
+local T_CHECK = P.T_CHECK; assert(T_CHECK ~= nil,'T_CHECK')
+local T_OPEN = P.T_OPEN; assert(T_OPEN ~= nil,'T_OPEN')
+local T_RECIPES_FIND = P.T_RECIPES_FIND; assert(T_RECIPES_FIND ~= nil,'T_RECIPES_FIND')
+local T_REPS = P.T_REPS; assert(T_REPS ~= nil,'T_REPS')
+local T_SPELL_FIND = P.T_SPELL_FIND; assert(T_SPELL_FIND ~= nil,'T_SPELL_FIND')
+local T_USE = P.T_USE; assert(T_USE ~= nil,'T_USE')
+--
 function NOP:Verbose(...) -- if verbose then output
-  if NOP.DB.verbose then self.printt(...) end
-end
-function NOP.printt(...) -- add time-stamp and addon name to output
-  local ElvUI = _G.ElvUI
-  print((P.PRINT_HEAD):format(ElvUI and "" or ("[" .. date("%H:%M") .. "]"),ADDON),...)
+  if NOP.DB.verbose then print(...) end
 end
 function NOP:OnInitialize() -- app initialize
   self:InitEvents() -- register events
   self:ProfileLoad() -- initialize AceDB
   self:OptionsLoad() -- initialize AceConfig
-  self.scanFrame = self:TooltipCreate(P.TOOLTIP_SCAN)
-  self.itemFrame = self:TooltipCreate(P.TOOLTIP_ITEM)
-  self.spellFrame = self:TooltipCreate(P.TOOLTIP_SPELL) -- /run NOP.spellFrame = NOP:TooltipCreate("NOP_TOOLTIP_SPELL")
-  self.LAD = LibStub("LibArtifactData-1.0") -- scans all artifacts and notify when there is update
-  self.LAD.RegisterCallback(self,"ARTIFACT_ADDED",           "ArtifactCallback")
-  self.LAD.RegisterCallback(self,"ARTIFACT_POWER_CHANGED" ,  "ArtifactCallback")
-  self.LAD.RegisterCallback(self,"ARTIFACT_RELIC_CHANGED" ,  "ArtifactCallback")
-  self.LAD.RegisterCallback(self,"ARTIFACT_TRAITS_CHANGED" , "ArtifactCallback")
+  self.scanFrame = self:TooltipCreate(TOOLTIP_SCAN)
+  self.itemFrame = self:TooltipCreate(TOOLTIP_ITEM)
+  self.spellFrame = self:TooltipCreate(TOOLTIP_SPELL) -- /run NOP.spellFrame = NOP:TooltipCreate("NOP_TOOLTIP_SPELL")
+  LIB_ARTIFACTDATA.RegisterCallback(self,"ARTIFACT_ADDED",           "ArtifactCallback")
+  LIB_ARTIFACTDATA.RegisterCallback(self,"ARTIFACT_POWER_CHANGED" ,  "ArtifactCallback")
+  LIB_ARTIFACTDATA.RegisterCallback(self,"ARTIFACT_RELIC_CHANGED" ,  "ArtifactCallback")
+  LIB_ARTIFACTDATA.RegisterCallback(self,"ARTIFACT_TRAITS_CHANGED" , "ArtifactCallback")
 end
-function NOP:OnEnable()
-  local Masque = LibStub("Masque", true)
-  self.masque = Masque and Masque:Group(ADDON) -- when user has installed Masque addon, then skinnig is done by Masque
+function NOP:OnEnable() -- add-on enable
+  self.masque = LIB_MASQUE and LIB_MASQUE:Group(ADDON) -- when user has installed Masque addon, then skinnig is done by Masque save new group pointer
+  LIB_QUESTITEM.RegisterCallback(self, "LibQuestItem_Update","QBUpdate")
 end
 function NOP:TooltipCreate(name) -- create tooltip frame
   local frame
@@ -92,17 +112,16 @@ function NOP:TooltipCreate(name) -- create tooltip frame
 end
 function NOP:ItemLoad() -- load template item tooltips
   local itemRetry = nil
-  self.timerItemLoad = nil
   self:Profile(true)
-  local nCB = tonumber(GetCVar(P.CB_CVAR)) -- if colorblind mode activated then on 2nd line there is extra info
+  local nCB = tonumber(GetCVar(CB_CVAR)) -- if colorblind mode activated then on 2nd line there is extra info
   for itemID, data in pairs(NOP.T_RECIPES) do
-    if not NOP.T_RECIPES_FIND[itemID] then -- need fill pattern
+    if not T_RECIPES_FIND[itemID] then -- need fill pattern
       local name = GetItemInfo(itemID) -- query or fill client side cache
       if (name == nil) or (name == "") then -- item has no info on client side yet, let wait for server
         itemRetry = itemID
       else
         local c,pattern,zone,map,faction = unpack(data,1,5)
-        if (c[2] == P.PRI_REP) and faction then NOP.T_REPS[name] = faction end -- fill-up item name to faction table
+        if (c[2] == PRI_REP) and faction then T_REPS[name] = faction end -- fill-up item name to faction table
         self.itemFrame:ClearLines() -- clean tooltip frame
         self.itemFrame:SetItemByID(itemID)
         local count = self.itemFrame:NumLines()
@@ -110,24 +129,24 @@ function NOP:ItemLoad() -- load template item tooltips
           if type(pattern) == "number" then
             if count >= pattern then
               local i = pattern + nCB
-              local tooltipText = P.TOOLTIP_ITEM .. "TextLeft" .. i
+              local tooltipText = TOOLTIP_ITEM .. "TextLeft" .. i
               local text = _G[tooltipText].GetText and _G[tooltipText]:GetText() or "none"
-              if text and (text ~= "none") then NOP.T_RECIPES_FIND[itemID] = {c,text,zone,map,faction} end
+              if text and (text ~= "none") then T_RECIPES_FIND[itemID] = {c,text,zone,map,faction} end
             end
           elseif type(pattern) == "string" then
-            local tooltipText = P.TOOLTIP_ITEM .. "TextLeft" .. 1
+            local tooltipText = TOOLTIP_ITEM .. "TextLeft" .. 1
             local heading = _G[tooltipText]:GetText()
             if heading then -- look in 1st line
               local compare = gsub(heading,pattern,"%1")
               if (compare ~= heading) then
-                NOP.T_RECIPES_FIND[itemID] = {c,compare,zone,map,faction}
+                T_RECIPES_FIND[itemID] = {c,compare,zone,map,faction}
               end
             end
           end
         else
           self:Verbose("ItemLoad:Empty tooltip", itemID)
           itemRetry = itemID
-          self.itemFrame = self:TooltipCreate(P.TOOLTIP_ITEM) -- empty tooltip I just throw out old one. Workaround for bad tooltip frame init damn Blizzard!
+          self.itemFrame = self:TooltipCreate(TOOLTIP_ITEM) -- empty tooltip I just throw out old one. Workaround for bad tooltip frame init damn Blizzard!
           break
         end
       end
@@ -135,19 +154,12 @@ function NOP:ItemLoad() -- load template item tooltips
   end
   self:Profile(false)
   self.itemLoad = true
-  --self.printt("ItemLoad",itemRetry)
+  --print("ItemLoad",itemRetry)
 end
 local spellLoaded = {}
 function NOP:SpellLoad() -- load spell patterns
   local spellRetry = nil
-  self.timerSpellLoad = nil
   self:Profile(true)
-  if NOP.T_OPEN == nil then -- create table with defaults
-    NOP.T_OPEN = {
-     [format("%s %s",ITEM_SPELL_TRIGGER_ONUSE,ITEM_OPENABLE)] = {{1,P.PRI_OPEN},nil,nil}, -- standard right click open
-     [ITEM_OPENABLE] = {{1,P.PRI_OPEN},nil,nil},      -- standard right click open
-    }
-  end
   for itemID,data in pairs(NOP.T_SPELL_BY_NAME) do
     if not spellLoaded[itemID] then -- not yet added
       local name = GetItemInfo(itemID) -- 1st fetch item into cache
@@ -157,7 +169,7 @@ function NOP:SpellLoad() -- load spell patterns
     end
     local spell = GetItemSpell(itemID) -- now query if it has spell
     if spell and spell ~= "" then
-      NOP.T_SPELL_FIND[spell] = data
+      T_SPELL_FIND[spell] = data
       spellLoaded[itemID] = true
     else
       spellRetry = itemID
@@ -165,21 +177,21 @@ function NOP:SpellLoad() -- load spell patterns
   end
   self:Profile(false)
   self.spellLoad = true
-  --self.printt("SpellLoad",spellRetry)
+  --print("SpellLoad",spellRetry)
 end
 function NOP:PickLockUpdate() -- rogue picklocking
-  if IsPlayerSpell(P.SPELL_PICKLOCK) then -- have it in spellbook?
+  if IsPlayerSpell(SPELL_PICKLOCK) then -- have it in spellbook?
     self.spellFrame:ClearLines() -- clean tooltip frame
-    self.spellFrame:SetSpellByID(P.SPELL_PICKLOCK) -- Fills the tooltip with information about a spell specified by ID
+    self.spellFrame:SetSpellByID(SPELL_PICKLOCK) -- Fills the tooltip with information about a spell specified by ID
     local count = self.spellFrame:NumLines()
     if count > 3 then
       local text = _G[P.TOOLTIP_SPELL .. "TextLeft" .. 4]:GetText() -- 4th line contains actual level of picklocking
       if text and text ~= "" then
         self.pickLockLevel = tonumber(string.match(text,"%d+")) -- /run local level = string.match("blabla 500.","%d+"); print(level)
         if self.pickLockLevel then
-          self.pickLockSpell = GetSpellInfo(P.SPELL_PICKLOCK) -- save name for later use
+          self.pickLockSpell = GetSpellInfo(SPELL_PICKLOCK) -- save name for later use
         else
-          self.printt("Can't determine level of",GetSpellInfo(P.SPELL_PICKLOCK),"unexpected formating of tooltip!",text) -- diagnostic
+          print("Can't determine level of",GetSpellInfo(SPELL_PICKLOCK),"unexpected formating of tooltip!",text) -- diagnostic
         end
       end
     else
@@ -195,19 +207,19 @@ function NOP:PrintTooltip(tooltip) -- dump tooltip in chat frame
     if leftText and leftText.GetText then
       local r,g,b,a = leftText:GetTextColor()
       local line = leftText:GetText()
-      if line and line ~= "" then self.printt(format("L %2d RGBA %3.3d %3.3d %3.3d %3.3d T %s",i,math.floor(r * 255 + 0.5),math.floor(g * 255 + 0.5),math.floor(b * 255 + 0.5),math.floor(a * 255 + 0.5), line)) end
+      if line and line ~= "" then print(format("L %2d RGBA %3.3d %3.3d %3.3d %3.3d T %s",i,math.floor(r * 255 + 0.5),math.floor(g * 255 + 0.5),math.floor(b * 255 + 0.5),math.floor(a * 255 + 0.5), line)) end
     end
     if rightText and rightText.GetText then
       local r,g,b,a = rightText:GetTextColor()
       local line = rightText:GetText()
-      if line and line ~= "" then self.printt(format("R %2d RGBA %3.3d %3.3d %3.3d %3.3d T %s",i,math.floor(r * 255 + 0.5),math.floor(g * 255 + 0.5),math.floor(b * 255 + 0.5),math.floor(a * 255 + 0.5), line)) end
+      if line and line ~= "" then print(format("R %2d RGBA %3.3d %3.3d %3.3d %3.3d T %s",i,math.floor(r * 255 + 0.5),math.floor(g * 255 + 0.5),math.floor(b * 255 + 0.5),math.floor(a * 255 + 0.5), line)) end
     end
   end
 end
 function NOP:BlacklistClear() -- reset temporary blacklist
-  if not NOP.DB.Skip and NOP.T_BLACKLIST and NOP.T_BLACKLIST[0] then -- have blacklisted items and is not session sticky, lets erase blacklist and check again
-    wipe(NOP.T_BLACKLIST) -- empty list
-    wipe(NOP.T_CHECK)
+  if not NOP.DB.Skip and T_BLACKLIST and T_BLACKLIST[0] then -- have blacklisted items and is not session sticky, lets erase blacklist and check again
+    wipe(T_BLACKLIST) -- empty list
+    wipe(T_CHECK)
     return true
   end
 end
@@ -222,7 +234,7 @@ function NOP:BlacklistReset() -- reset permanent blacklist
   else
     NOP.DB.T_BLACKLIST_Q = {} 
   end
-  wipe(NOP.T_CHECK)
+  wipe(T_CHECK)
   self:ItemShowNew()
 end
 function NOP:BlacklistItem(isPermanent,itemID) -- right click will add item into blacklist
@@ -232,18 +244,18 @@ function NOP:BlacklistItem(isPermanent,itemID) -- right click will add item into
       if not (type(NOP.DB.T_BLACKLIST) == "table") then NOP.DB.T_BLACKLIST = {} end
       NOP.DB.T_BLACKLIST[0] = true
       NOP.DB.T_BLACKLIST[itemID] = true
-      self.printt(P.L["PERMA_BLACKLIST"],name or itemID)
+      print(L["PERMA_BLACKLIST"],name or itemID)
     else
-      if not (type(NOP.T_BLACKLIST) == "table") then NOP.T_BLACKLIST = {} end
-      NOP.T_BLACKLIST[0] = true -- blacklist is defined
-      NOP.T_BLACKLIST[itemID] = true
+      if not (type(T_BLACKLIST) == "table") then T_BLACKLIST = {} end
+      T_BLACKLIST[0] = true -- blacklist is defined
+      T_BLACKLIST[itemID] = true
       if NOP.DB.Skip then
-        self.printt(P.L["SESSION_BLACKLIST"],name or itemID)
+        print(L["SESSION_BLACKLIST"],name or itemID)
       else
-        self.printt(P.L["TEMP_BLACKLIST"],name or itemID)
+        print(L["TEMP_BLACKLIST"],name or itemID)
       end
     end
-    NOP.T_USE[itemID] = nil; NOP.T_CHECK[itemID] = nil
+    T_USE[itemID] = nil; T_CHECK[itemID] = nil
   end
 end
 function NOP:Profile(onStart) -- time profiling
@@ -270,27 +282,18 @@ function NOP:SecondsToString(s) -- return delta, time-string
   if s > 9.9 then return  1,string.format("%.0f",s); end
   return 0.1, string.format("%.1f",s)
 end
-function NOP:ZoneChanged()
-  self.timerZoneChanged = nil
+function NOP:ZoneChanged() -- zone and mimapZone change
   self:Profile(true)
-  local saveArea = GetCurrentMapAreaID()
-  local saveDungeonLevel = GetCurrentMapDungeonLevel()
-  local saveContinent = GetCurrentMapContinent()
-  SetMapToCurrentZone() -- need set actual map to actual zone te get real mapID
-  local mapID = GetCurrentMapAreaID()
-  if (saveContinent ~= GetCurrentMapContinent()) then SetMapZoom(saveContinent) end
-  if (saveArea ~= mapID) then SetMapByID(saveArea) end
-  if (saveDungeonLevel ~= GetCurrentMapDungeonLevel()) then SetDungeonMapLevel(saveDungeonLevel) end -- restore map
-  if mapID ~= self.mapID then
+  local minimapZone, mapID = GetMinimapZoneText(), LIB_HEREBEDRAGONS:GetPlayerZone()
+  if mapID and mapID ~= self.mapID then
     self.mapID = mapID
-    wipe(NOP.T_CHECK) -- empty list, recheck all on new map
+    table.wipe(T_CHECK) -- empty list, recheck all on new map
   end
-  local minimapZone = GetMinimapZoneText()
-  self:Profile(false)
   if minimapZone and minimapZone ~= self.Zone then -- new zone need update Button
     self.Zone = minimapZone
     self:ItemShowNew()
   end
+  self:Profile(false)
 end
 function NOP:removekey(t, key) -- remove item in hash table by key
   if t and key and (type(t) == "table") and (t[key] ~= nil) then
@@ -301,7 +304,7 @@ function NOP:removekey(t, key) -- remove item in hash table by key
   return nil
 end
 local HERALD_ANNOUNCED = {}
-function NOP:CheckBuilding(toCheck)
+function NOP:CheckBuilding(toCheck) -- recheck (force request landing page) and annonce
   if not NOP.DB.herald then return end
   if toCheck then C_Garrison.RequestLandingPageShipmentInfo(); return; end
   if C_Garrison.HasGarrison(LE_GARRISON_TYPE_6_0) then -- garrison shipments
@@ -312,8 +315,8 @@ function NOP:CheckBuilding(toCheck)
         local buildingID = buildings[i].buildingID;
         if buildingID and not HERALD_ANNOUNCED[buildingID] then
           local name, _, _, shipmentsReady, shipmentsTotal = C_Garrison.GetLandingPageShipmentInfo(buildingID)
-          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > P.WORK_ANNOUNCE then
-            self:PrintToActive((P.TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
+          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > WORK_ANNOUNCE then
+            self:PrintToActive((TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
             HERALD_ANNOUNCED[buildingID] = true
           end
         end
@@ -326,8 +329,8 @@ function NOP:CheckBuilding(toCheck)
       for i = 1, #followerShipments do
         if not HERALD_ANNOUNCED[followerShipments[i]] then
           local name, _, _, shipmentsReady, shipmentsTotal = C_Garrison.GetLandingPageShipmentInfoByContainerID(followerShipments[i])
-          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > P.WORK_ANNOUNCE then
-            self:PrintToActive((P.TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
+          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > WORK_ANNOUNCE then
+            self:PrintToActive((TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
             HERALD_ANNOUNCED[followerShipments[i]] = true
           end
         end
@@ -338,8 +341,8 @@ function NOP:CheckBuilding(toCheck)
       for i = 1, #looseShipments do
         if not HERALD_ANNOUNCED[looseShipments[i]] then
           local name, _, _, shipmentsReady, shipmentsTotal = C_Garrison.GetLandingPageShipmentInfoByContainerID(looseShipments[i])
-          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > P.WORK_ANNOUNCE then
-            self:PrintToActive((P.TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
+          if name and shipmentsReady and shipmentsTotal and (shipmentsReady / shipmentsTotal) > WORK_ANNOUNCE then
+            self:PrintToActive((TOGO_ANNOUNCE):format(name,shipmentsReady,shipmentsTotal-shipmentsReady))
             HERALD_ANNOUNCED[looseShipments[i]] = true
           end
         end
@@ -353,7 +356,7 @@ function NOP:CheckBuilding(toCheck)
           local _, _, tree = C_Garrison.GetTalentTreeInfoForID(treeID)
           for talentIndex, talent in ipairs(tree) do
             if (talent.id == completeTalentID) then
-              self:PrintToActive((P.TALENT_ANNOUNCE):format(talent.name))
+              self:PrintToActive((TALENT_ANNOUNCE):format(talent.name))
               HERALD_ANNOUNCED[completeTalentID] = true
             end
           end
@@ -368,8 +371,8 @@ function NOP:CheckBuilding(toCheck)
             local count = GetItemCount(NOP.T_INSTA_WQ[talent.perkSpellID])
             local name = GetItemInfo(NOP.T_INSTA_WQ[talent.perkSpellID])
             if duration == 0 and name then
-              local txt = " " .. P.RGB_RED .. ERR_SPELL_FAILED_REAGENTS_GENERIC .. " " .. P.RGB_YELLOW .. name
-              self:PrintToActive((P.TALENT_ANNOUNCE):format(ability) .. ((count == 0) and txt or ""))
+              local txt = " " .. RGB_RED .. ERR_SPELL_FAILED_REAGENTS_GENERIC .. " " .. RGB_YELLOW .. name
+              self:PrintToActive((TALENT_ANNOUNCE):format(ability) .. ((count == 0) and txt or ""))
               HERALD_ANNOUNCED[talent.perkSpellID] = true
             end
           end
@@ -380,7 +383,7 @@ function NOP:CheckBuilding(toCheck)
   for i = 1, GetNumArchaeologyRaces() do -- archaelogy can be completed
     local raceName, _, _, have, required = GetArchaeologyRaceInfo(i)
     if raceName and (required > 0) and (have >= required) and not HERALD_ANNOUNCED[raceName] then
-      self:PrintToActive((P.ARCHAELOGY_ANNOUNCE):format(raceName))
+      self:PrintToActive((ARCHAELOGY_ANNOUNCE):format(raceName))
       HERALD_ANNOUNCED[raceName] = true
     end
   end
@@ -396,13 +399,14 @@ function NOP:CheckBuilding(toCheck)
     end
     if maxShips > 0 then
       if activeShips < maxShips then
-        self:PrintToActive((P.SHIPYARD_ANNOUNCE):format(activeShips,maxShips))
+        self:PrintToActive((SHIPYARD_ANNOUNCE):format(activeShips,maxShips))
         HERALD_ANNOUNCED["shipyard"] = true
       end
     end
   end
   ExpandAllFactionHeaders()
   local nF = GetNumFactions()
+  local paragon = {}
   for i=1, nF do
     local name, _, _, _, _, value, _, _, header, _, _, _, _, id = GetFactionInfo(i)
     if name and not header and id then
@@ -411,13 +415,14 @@ function NOP:CheckBuilding(toCheck)
         local top
         value, top, _, reward = C_Reputation.GetFactionParagonInfo(id)
         while (value and top and (value > top)) do value = value - top end
-        if reward and not HERALD_ANNOUNCED[id] then 
-          self:PrintToActive((P.REWARD_ANNOUNCE):format(name))
+        if reward and not HERALD_ANNOUNCED[id] then
+          table.insert(paragon,name)
           HERALD_ANNOUNCED[id] = true
         end
       end
     end
   end
+  if #paragon > 0 then self:PrintToActive((REWARD_ANNOUNCE):format(table.concat(paragon,PLAYER_LIST_DELIMITER))) end
 end
 function NOP:PrintToActive(msg) -- print to all active chat windows
   local ElvUI = _G.ElvUI
@@ -437,8 +442,8 @@ function NOP:CompressText(text) -- printable
   text = string.gsub(text, "||", "/124") -- interni formatovani WoW
   return string.trim(text)
 end
-function NOP:GetReputation(name)
-  local fID = NOP.T_REPS[name]; if not fID then return end
+function NOP:GetReputation(name) -- reputation standing with paragon reward check
+  local fID = T_REPS[name]; if not fID then return end
   local _, _, level, _, top, value = GetFactionInfoByID(fID)
   local reward
   if C_Reputation.IsFactionParagon(fID) then _, _, _, reward = C_Reputation.GetFactionParagonInfo(fID) end
@@ -446,15 +451,15 @@ function NOP:GetReputation(name)
 end
 local artRanks = {}
 local artTraits = {}
-function NOP:ArtifactCallback(msg,artifactID)
+function NOP:ArtifactCallback(msg,artifactID) -- LibArtifactData callback with announce
   if not NOP.DB.herald then return end
   if artifactID then
-    local _, data = self.LAD:GetArtifactInfo(artifactID)
+    local _, data = LIB_ARTIFACTDATA:GetArtifactInfo(artifactID)
     if data then
       if data.numRanksPurchasable then
         if (data.numRanksPurchasable > 0) then -- inform about visit OH to spend points on weapons
           if not artRanks[artifactID] then
-            self:PrintToActive((P.ARTIFACT_ANNOUNCE):format(("%s [%d]"):format(data.name,data.numRanksPurchased),data.numRanksPurchasable))
+            self:PrintToActive((ARTIFACT_ANNOUNCE):format(("%s [%d]"):format(data.name,data.numRanksPurchased),data.numRanksPurchasable))
             artRanks[artifactID] = true
           end
         else
@@ -478,20 +483,12 @@ function NOP:ArtifactCallback(msg,artifactID)
     end
   end
 end
---[[
-local tooltip_functions = {
-  "SetAuctionSellItem", "SetAuctionCompareItem", "SetBagItem", "SetBuybackItem", "SetCraftItem", "SetCraftSpell",
-  "SetCurrencyTokenByID", "SetGuildBankItem", "SetHeirloomByItemID", "SetHyperlink", "SetHyperlinkCompareItem", "SetInboxItem",
-  "SetInventoryItem", "SetItemByID", "SetLootItem", "SetLootRollItem", "SetMerchantCompareItem", "SetMerchantItem", "SetQuestItem",
-  "SetQuestCurrency", "SetQuestLogItem", "SetQuestLogSpecialItem", "SetToyByItemID", "SetSendMailItem", "SetTradePlayerItem",
-  "SetTradeTargetItem", "SetVoidDepositItem", "SetVoidItem", "SetVoidWithdrawalItem"
-}
-for _, func in pairs( tooltip_functions ) do
-  hooksecurefunc (GameTooltip, func, 
-    function(...)
-      local tooltip, arg1, arg2, arg3, arg4 = ...
-      print(tooltip,"arg1",arg1,"arg2",arg2,"arg3",arg3,"arg4",arg4)
-    end
-  )
+local T_timers = {}
+function NOP:TimerFire(name,period,...) -- timer without overlap
+  if not (type(period) == 'number' and period > 0) then whoCalls('Period must be a number greater than zero ' .. period); return; end
+  if not (T_timers[name] and (self:TimeLeft(T_timers[name]) > 0)) then T_timers[name] = self:ScheduleTimer(name,period,...) end -- schedule when timer with this name is not running
 end
-]]--
+function NOP:TimerCancel(name) -- cancel timer by name
+  local timer = T_timers[name]
+  if (timer and (self:TimeLeft(timer) > 0)) then self:CancelTimer(timer) end
+end

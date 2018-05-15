@@ -1,4 +1,11 @@
 Version: 1
+Frame: ObjectiveTrackerFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -120
+Y: 38
+W: 260
+H: 550
 Frame: QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -34,6 +41,13 @@ X: 16
 Y: -116
 W: 338
 H: 496
+Frame: bdCore config
+FrameLevel: 1
+Anchor: RIGHT
+X: -20
+Y: 0
+W: 740
+H: 450
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: RIGHT
@@ -41,10 +55,3 @@ X: 0
 Y: 195
 W: 370
 H: 110
-Frame: RaidUtility_ShowButton
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 298
-Y: 0
-W: 136
-H: 18

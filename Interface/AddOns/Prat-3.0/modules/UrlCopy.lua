@@ -144,30 +144,30 @@ L=
 L=
 {
 	["UrlCopy"] = {
-		--Translation missing 
-		-- ["Change the color of the URL."] = "",
-		--Translation missing 
-		-- ["Color URL"] = "",
-		--Translation missing 
-		-- ["Set Color"] = "",
-		--Translation missing 
-		-- ["Show Brackets"] = "",
-		--Translation missing 
-		-- ["Toggle"] = "",
-		--Translation missing 
-		-- ["Toggle showing brackets on and off."] = "",
-		--Translation missing 
-		-- ["Toggle the module on and off."] = "",
-		--Translation missing 
-		-- ["Toggle the URL color on and off."] = "",
-		--Translation missing 
-		-- ["URL formating options."] = "",
-		--Translation missing 
-		-- ["UrlCopy"] = "",
-		--Translation missing 
-		-- ["Use Popup"] = "",
-		--Translation missing 
-		-- ["Use popup window to show URL."] = "",
+		--[[Translation missing --]]
+		--[[ ["Change the color of the URL."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Color URL"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Color"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Show Brackets"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle showing brackets on and off."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle the module on and off."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle the URL color on and off."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["URL formating options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["UrlCopy"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Use Popup"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Use popup window to show URL."] = "",--]] 
 	}
 }
 

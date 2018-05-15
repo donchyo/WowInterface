@@ -104,10 +104,10 @@ L=
 		["module_name"] = "Bulles",
 		["shorten_desc"] = "Raccourci le texte des bulles à une seule ligne. Mettre la souris sur la bulle pour étendre la bulle et voir le texte en entier.",
 		["shorten_name"] = "Raccourcir les bulles",
-		--Translation missing 
-		-- ["transparent_desc"] = "",
-		--Translation missing 
-		-- ["transparent_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["transparent_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["transparent_name"] = "",--]] 
 	}
 }
 
@@ -167,38 +167,38 @@ L=
 L=
 {
 	["Bubbles"] = {
-		--Translation missing 
-		-- ["color_desc"] = "",
-		--Translation missing 
-		-- ["color_name"] = "",
-		--Translation missing 
-		-- ["font_desc"] = "",
-		--Translation missing 
-		-- ["font_name"] = "",
-		--Translation missing 
-		-- ["fontsize_desc"] = "",
-		--Translation missing 
-		-- ["fontsize_name"] = "",
-		--Translation missing 
-		-- ["format_desc"] = "",
-		--Translation missing 
-		-- ["format_name"] = "",
-		--Translation missing 
-		-- ["icons_desc"] = "",
-		--Translation missing 
-		-- ["icons_name"] = "",
-		--Translation missing 
-		-- ["module_desc"] = "",
-		--Translation missing 
-		-- ["module_name"] = "",
-		--Translation missing 
-		-- ["shorten_desc"] = "",
-		--Translation missing 
-		-- ["shorten_name"] = "",
-		--Translation missing 
-		-- ["transparent_desc"] = "",
-		--Translation missing 
-		-- ["transparent_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["color_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["color_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["font_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["font_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["fontsize_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["fontsize_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["format_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["format_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["icons_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["icons_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shorten_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shorten_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["transparent_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["transparent_name"] = "",--]] 
 	}
 }
 
@@ -259,38 +259,38 @@ L=
 L=
 {
 	["Bubbles"] = {
-		--Translation missing 
-		-- ["color_desc"] = "",
-		--Translation missing 
-		-- ["color_name"] = "",
-		--Translation missing 
-		-- ["font_desc"] = "",
-		--Translation missing 
-		-- ["font_name"] = "",
-		--Translation missing 
-		-- ["fontsize_desc"] = "",
-		--Translation missing 
-		-- ["fontsize_name"] = "",
-		--Translation missing 
-		-- ["format_desc"] = "",
-		--Translation missing 
-		-- ["format_name"] = "",
-		--Translation missing 
-		-- ["icons_desc"] = "",
-		--Translation missing 
-		-- ["icons_name"] = "",
-		--Translation missing 
-		-- ["module_desc"] = "",
-		--Translation missing 
-		-- ["module_name"] = "",
-		--Translation missing 
-		-- ["shorten_desc"] = "",
-		--Translation missing 
-		-- ["shorten_name"] = "",
-		--Translation missing 
-		-- ["transparent_desc"] = "",
-		--Translation missing 
-		-- ["transparent_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["color_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["color_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["font_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["font_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["fontsize_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["fontsize_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["format_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["format_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["icons_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["icons_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shorten_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shorten_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["transparent_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["transparent_name"] = "",--]] 
 	}
 }
 
@@ -300,28 +300,28 @@ L=
 L=
 {
 	["Bubbles"] = {
-		--Translation missing 
-		-- ["color_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["color_desc"] = "",--]] 
 		["color_name"] = "顏色氣泡",
-		--Translation missing 
-		-- ["font_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["font_desc"] = "",--]] 
 		["font_name"] = "使用聊天字型",
 		["fontsize_desc"] = "設定聊天氣泡字型尺寸",
 		["fontsize_name"] = "字型尺寸",
-		--Translation missing 
-		-- ["format_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["format_desc"] = "",--]] 
 		["format_name"] = "格式文字",
 		["icons_desc"] = "顯示在聊天氣泡團隊圖示。",
 		["icons_name"] = "顯示團隊圖示",
 		["module_desc"] = "自訂對話泡泡",
 		["module_name"] = "對話泡泡",
-		--Translation missing 
-		-- ["shorten_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["shorten_desc"] = "",--]] 
 		["shorten_name"] = "縮短氣泡",
-		--Translation missing 
-		-- ["transparent_desc"] = "",
-		--Translation missing 
-		-- ["transparent_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["transparent_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["transparent_name"] = "",--]] 
 	}
 }
 

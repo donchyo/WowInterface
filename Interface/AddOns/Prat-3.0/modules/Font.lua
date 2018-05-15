@@ -108,52 +108,52 @@ PL:AddLocale(PRAT_MODULE, "enUS", L)
 L=
 {
 	["Font"] = {
-		--Translation missing 
-		-- ["Auto Restore Font Size"] = "",
-		--Translation missing 
-		-- ["Chat window font options."] = "",
-		--Translation missing 
-		-- ["Font"] = "",
-		--Translation missing 
-		-- ["monochrome_desc"] = "",
-		--Translation missing 
-		-- ["monochrome_name"] = "",
-		--Translation missing 
-		-- ["None"] = "",
-		--Translation missing 
-		-- ["Outline"] = "",
-		--Translation missing 
-		-- ["outlinemode_desc"] = "",
-		--Translation missing 
-		-- ["outlinemode_name"] = "",
-		--Translation missing 
-		-- ["rememberfont_desc"] = "",
-		--Translation missing 
-		-- ["rememberfont_name"] = "",
-		--Translation missing 
-		-- ["Set ChatFrame%d Font Size"] = "",
-		--Translation missing 
-		-- ["Set Font Face"] = "",
-		--Translation missing 
-		-- ["Set Font Size"] = "",
-		--Translation missing 
-		-- ["Set Separately"] = "",
-		--Translation missing 
-		-- ["Set text font size for each chat window."] = "",
-		--Translation missing 
-		-- ["Set text font size."] = "",
-		--Translation missing 
-		-- ["Set the text font face for all chat windows."] = "",
-		--Translation missing 
-		-- ["shadowcolor_desc"] = "",
-		--Translation missing 
-		-- ["shadowcolor_name"] = "",
-		--Translation missing 
-		-- ["Thick Outline"] = "",
-		--Translation missing 
-		-- ["Toggle setting options separately for each chat window."] = "",
-		--Translation missing 
-		-- ["Workaround a Blizzard bug which changes the font size when you open a system menu."] = "",
+		--[[Translation missing --]]
+		--[[ ["Auto Restore Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat window font options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Font"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["monochrome_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["monochrome_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["None"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Outline"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["outlinemode_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["outlinemode_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberfont_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberfont_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set ChatFrame%d Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Font Face"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Separately"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set text font size for each chat window."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set text font size."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the text font face for all chat windows."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shadowcolor_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shadowcolor_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Thick Outline"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle setting options separately for each chat window."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Workaround a Blizzard bug which changes the font size when you open a system menu."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "itIT", L)
@@ -162,52 +162,52 @@ PL:AddLocale(PRAT_MODULE, "itIT", L)
 L=
 {
 	["Font"] = {
-		--Translation missing 
-		-- ["Auto Restore Font Size"] = "",
-		--Translation missing 
-		-- ["Chat window font options."] = "",
-		--Translation missing 
-		-- ["Font"] = "",
-		--Translation missing 
-		-- ["monochrome_desc"] = "",
-		--Translation missing 
-		-- ["monochrome_name"] = "",
-		--Translation missing 
-		-- ["None"] = "",
-		--Translation missing 
-		-- ["Outline"] = "",
-		--Translation missing 
-		-- ["outlinemode_desc"] = "",
-		--Translation missing 
-		-- ["outlinemode_name"] = "",
-		--Translation missing 
-		-- ["rememberfont_desc"] = "",
-		--Translation missing 
-		-- ["rememberfont_name"] = "",
-		--Translation missing 
-		-- ["Set ChatFrame%d Font Size"] = "",
-		--Translation missing 
-		-- ["Set Font Face"] = "",
-		--Translation missing 
-		-- ["Set Font Size"] = "",
-		--Translation missing 
-		-- ["Set Separately"] = "",
-		--Translation missing 
-		-- ["Set text font size for each chat window."] = "",
-		--Translation missing 
-		-- ["Set text font size."] = "",
-		--Translation missing 
-		-- ["Set the text font face for all chat windows."] = "",
-		--Translation missing 
-		-- ["shadowcolor_desc"] = "",
-		--Translation missing 
-		-- ["shadowcolor_name"] = "",
-		--Translation missing 
-		-- ["Thick Outline"] = "",
-		--Translation missing 
-		-- ["Toggle setting options separately for each chat window."] = "",
-		--Translation missing 
-		-- ["Workaround a Blizzard bug which changes the font size when you open a system menu."] = "",
+		--[[Translation missing --]]
+		--[[ ["Auto Restore Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat window font options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Font"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["monochrome_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["monochrome_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["None"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Outline"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["outlinemode_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["outlinemode_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberfont_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberfont_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set ChatFrame%d Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Font Face"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Separately"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set text font size for each chat window."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set text font size."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the text font face for all chat windows."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shadowcolor_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shadowcolor_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Thick Outline"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle setting options separately for each chat window."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Workaround a Blizzard bug which changes the font size when you open a system menu."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "ptBR", L)
@@ -306,52 +306,52 @@ PL:AddLocale(PRAT_MODULE, "koKR",L)
 L=
 {
 	["Font"] = {
-		--Translation missing 
-		-- ["Auto Restore Font Size"] = "",
-		--Translation missing 
-		-- ["Chat window font options."] = "",
-		--Translation missing 
-		-- ["Font"] = "",
-		--Translation missing 
-		-- ["monochrome_desc"] = "",
-		--Translation missing 
-		-- ["monochrome_name"] = "",
-		--Translation missing 
-		-- ["None"] = "",
-		--Translation missing 
-		-- ["Outline"] = "",
-		--Translation missing 
-		-- ["outlinemode_desc"] = "",
-		--Translation missing 
-		-- ["outlinemode_name"] = "",
-		--Translation missing 
-		-- ["rememberfont_desc"] = "",
-		--Translation missing 
-		-- ["rememberfont_name"] = "",
-		--Translation missing 
-		-- ["Set ChatFrame%d Font Size"] = "",
-		--Translation missing 
-		-- ["Set Font Face"] = "",
-		--Translation missing 
-		-- ["Set Font Size"] = "",
-		--Translation missing 
-		-- ["Set Separately"] = "",
-		--Translation missing 
-		-- ["Set text font size for each chat window."] = "",
-		--Translation missing 
-		-- ["Set text font size."] = "",
-		--Translation missing 
-		-- ["Set the text font face for all chat windows."] = "",
-		--Translation missing 
-		-- ["shadowcolor_desc"] = "",
-		--Translation missing 
-		-- ["shadowcolor_name"] = "",
-		--Translation missing 
-		-- ["Thick Outline"] = "",
-		--Translation missing 
-		-- ["Toggle setting options separately for each chat window."] = "",
-		--Translation missing 
-		-- ["Workaround a Blizzard bug which changes the font size when you open a system menu."] = "",
+		--[[Translation missing --]]
+		--[[ ["Auto Restore Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat window font options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Font"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["monochrome_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["monochrome_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["None"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Outline"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["outlinemode_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["outlinemode_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberfont_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["rememberfont_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set ChatFrame%d Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Font Face"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Font Size"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set Separately"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set text font size for each chat window."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set text font size."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the text font face for all chat windows."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shadowcolor_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["shadowcolor_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Thick Outline"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle setting options separately for each chat window."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Workaround a Blizzard bug which changes the font size when you open a system menu."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "esMX",L)

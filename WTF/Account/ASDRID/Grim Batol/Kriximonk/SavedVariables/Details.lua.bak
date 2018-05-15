@@ -2,103 +2,817 @@
 _detalhes_database = {
 	["savedbuffs"] = {
 	},
-	["mythic_dungeon_id"] = 19,
+	["mythic_dungeon_id"] = 24,
 	["tabela_historico"] = {
 		["tabelas"] = {
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 92,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006649,
+							["totalabsorbed"] = 0.00356,
 							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Shivarra Destroyer"] = true,
+								["Garothi Obliterator"] = true,
+								["Kriximonk"] = true,
+							},
+							["targets"] = {
+								["Garothi Obliterator"] = 8551051,
+							},
+							["custom"] = 0,
+							["pets"] = {
+								"Cloud Serpent <Kriximonk>", -- [1]
+								"Li Li Stormstout <Kriximonk>", -- [2]
+							},
+							["damage_taken"] = 3113413.00356,
+							["dps_started"] = false,
+							["friendlyfire_total"] = 1216904,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 8551051.00356,
+							["tipo"] = 1,
+							["classe"] = "MONK",
+							["fight_component"] = true,
+							["total"] = 8551051.00356,
+							["delay"] = 0,
+							["friendlyfire"] = {
+								["Kriximonk"] = {
+									["total"] = 1216904,
+									["spells"] = {
+										[124255] = 1216904,
+									},
+								},
+							},
+							["nome"] = "Kriximonk",
+							["spec"] = 268,
+							["grupo"] = true,
+							["end_time"] = 1525974983,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 252522,
+										["g_amt"] = 0,
+										["n_max"] = 136037,
+										["targets"] = {
+											["Garothi Obliterator"] = 768684,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 516162,
+										["n_min"] = 123227,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 768684,
+										["c_max"] = 252522,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["c_min"] = 252522,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									}, -- [1]
+									[252907] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 217584,
+										["g_amt"] = 0,
+										["n_max"] = 93075,
+										["targets"] = {
+											["Garothi Obliterator"] = 683372,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 465788,
+										["n_min"] = 31026,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 683372,
+										["c_max"] = 155534,
+										["id"] = 252907,
+										["r_dmg"] = 0,
+										["c_min"] = 62050,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									[227681] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 178381,
+										["g_amt"] = 0,
+										["n_max"] = 89191,
+										["targets"] = {
+											["Garothi Obliterator"] = 267572,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 89191,
+										["n_min"] = 89191,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 267572,
+										["c_max"] = 178381,
+										["id"] = 227681,
+										["r_dmg"] = 0,
+										["c_min"] = 178381,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+									[205523] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1726371,
+										["g_amt"] = 0,
+										["n_max"] = 431593,
+										["targets"] = {
+											["Garothi Obliterator"] = 2157964,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 431593,
+										["n_min"] = 431593,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 2157964,
+										["c_max"] = 863186,
+										["id"] = 205523,
+										["r_dmg"] = 0,
+										["c_min"] = 863185,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[253098] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1110648,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Garothi Obliterator"] = 1110648,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1110648,
+										["c_max"] = 391689,
+										["id"] = 253098,
+										["r_dmg"] = 0,
+										["c_min"] = 327272,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
+									},
+									[121253] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 709694,
+										["targets"] = {
+											["Garothi Obliterator"] = 1302673,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1302673,
+										["n_min"] = 592979,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1302673,
+										["c_max"] = 0,
+										["id"] = 121253,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[196608] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 195564,
+										["g_amt"] = 0,
+										["n_max"] = 54784,
+										["targets"] = {
+											["Garothi Obliterator"] = 533248,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 337684,
+										["n_min"] = 32559,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 533248,
+										["c_max"] = 106543,
+										["id"] = 196608,
+										["r_dmg"] = 0,
+										["c_min"] = 89021,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									[100780] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 111019,
+										["targets"] = {
+											["Garothi Obliterator"] = 296683,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 296683,
+										["n_min"] = 77712,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 296683,
+										["c_max"] = 0,
+										["id"] = 100780,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 77712,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[115181] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 509637,
+										["g_amt"] = 0,
+										["n_max"] = 247780,
+										["targets"] = {
+											["Garothi Obliterator"] = 757417,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 247780,
+										["n_min"] = 247780,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 757417,
+										["c_max"] = 509637,
+										["id"] = 115181,
+										["r_dmg"] = 0,
+										["c_min"] = 509637,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+									[123725] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 133798,
+										["g_amt"] = 0,
+										["n_max"] = 68799,
+										["targets"] = {
+											["Garothi Obliterator"] = 672790,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 538992,
+										["n_min"] = 66899,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 672790,
+										["c_max"] = 133798,
+										["id"] = 123725,
+										["r_dmg"] = 0,
+										["c_min"] = 133798,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_dps"] = 374438.455294486,
+							["colocacao"] = 1,
+							["last_event"] = 1525974983,
+							["on_hold"] = false,
+							["start_time"] = 1525974960,
+							["serial"] = "Player-1303-04AFFB5A",
+							["avoidance"] = {
+								["overall"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 37,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 37,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 1216904,
+								},
+								["Kriximonk"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 37,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 37,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 1216904,
+								},
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.006367,
+							["damage_from"] = {
+								["Garothi Obliterator"] = true,
 							},
 							["targets"] = {
 							},
 							["pets"] = {
 							},
+							["damage_taken"] = 2270300.006367,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006367,
 							["last_event"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.006367,
+							["delay"] = 0,
+							["ownerName"] = "Kriximonk",
+							["nome"] = "Cloud Serpent <Kriximonk>",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
+							["friendlyfire"] = {
 							},
-							["total_without_pet"] = 0.006649,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.006649,
-							["classe"] = "MONK",
-							["damage_taken"] = 1398801.006649,
-							["nome"] = "Kriximonk",
-							["spec"] = 270,
-							["grupo"] = true,
-							["end_time"] = 1517751110,
+							["end_time"] = 1525974983,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["on_hold"] = false,
-							["start_time"] = 1517751110,
-							["serial"] = "Player-1303-04AFFB5A",
+							["start_time"] = 1525974983,
+							["serial"] = "Creature-0-3891-1669-9841-106792-00007487B4",
+							["classe"] = "PET",
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.003089,
+							["damage_from"] = {
+								["Garothi Obliterator"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 1031986.003089,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.003089,
+							["last_event"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.003089,
+							["delay"] = 0,
+							["ownerName"] = "Kriximonk",
+							["nome"] = "Li Li Stormstout <Kriximonk>",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
 							["friendlyfire"] = {
 							},
-						}, -- [1]
+							["end_time"] = 1525974983,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1525974983,
+							["serial"] = "Creature-0-3891-1669-9841-106770-00007487B3",
+							["classe"] = "PET",
+						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 92,
+					["combatId"] = 50,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Cloud Serpent <Kriximonk>"] = true,
+								["Kriximonk"] = true,
+							},
+							["pets"] = {
+								"Cloud Serpent <Kriximonk>", -- [1]
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 6198969.003083,
+							["total_without_pet"] = 395768.003083,
+							["total"] = 1674424.003083,
+							["targets_absorbs"] = {
+								["Kriximonk"] = 53117,
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-1303-04AFFB5A",
+							["totalabsorb"] = 53117.003083,
+							["last_hps"] = 73320.6639700063,
+							["targets"] = {
+								["Kriximonk"] = 6871713,
+							},
+							["totalover_without_pet"] = 0.003083,
+							["healing_taken"] = 1674424.003083,
+							["fight_component"] = true,
+							["end_time"] = 1525974983,
+							["last_event"] = 1525974979,
+							["nome"] = "Kriximonk",
+							["spells"] = {
+								["_ActorTable"] = {
+									[253099] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 129293,
+										["targets"] = {
+											["Kriximonk"] = 129293,
+										},
+										["n_min"] = 129293,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 129293,
+										["c_max"] = 0,
+										["id"] = 253099,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 129293,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+									[196608] = {
+										["c_amt"] = 3,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Kriximonk"] = 226017,
+										},
+										["n_max"] = 36168,
+										["targets"] = {
+											["Kriximonk"] = 167922,
+										},
+										["n_min"] = 21436,
+										["counter"] = 9,
+										["overheal"] = 226017,
+										["total"] = 167922,
+										["c_max"] = 72336,
+										["id"] = 196608,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 110318,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 6,
+										["n_curado"] = 57604,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+									[227690] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 53117,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 43371,
+										["targets"] = {
+											["Kriximonk"] = 53117,
+										},
+										["n_min"] = 9746,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 53117,
+										["c_max"] = 0,
+										["id"] = 227690,
+										["targets_absorbs"] = {
+											["Kriximonk"] = 53117,
+										},
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 53117,
+										["m_healed"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+									[216521] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Kriximonk"] = 1124630,
+										},
+										["n_max"] = 45436,
+										["targets"] = {
+											["Kriximonk"] = 45436,
+										},
+										["n_min"] = 0,
+										["counter"] = 6,
+										["overheal"] = 1124630,
+										["total"] = 45436,
+										["c_max"] = 0,
+										["id"] = 216521,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 6,
+										["n_curado"] = 45436,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+								["Kriximonk"] = 1350647,
+							},
+							["spec"] = 268,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.003083,
+							["start_time"] = 1525974961,
+							["delay"] = 0,
+							["classe"] = "MONK",
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["targets_overheal"] = {
+								["Kriximonk"] = 4848322,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 4848322.005126,
+							["total_without_pet"] = 1278656.005126,
+							["total"] = 1278656.005126,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Creature-0-3891-1669-9841-106792-00007487B4",
+							["totalabsorb"] = 0.005126,
+							["last_hps"] = 0,
+							["targets"] = {
+								["Kriximonk"] = 6126978,
+							},
+							["totalover_without_pet"] = 0.005126,
+							["healing_taken"] = 0.005126,
+							["fight_component"] = true,
+							["end_time"] = 1525974983,
+							["ownerName"] = "Kriximonk",
+							["nome"] = "Cloud Serpent <Kriximonk>",
+							["spells"] = {
+								["_ActorTable"] = {
+									[211879] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Kriximonk"] = 4848322,
+										},
+										["n_max"] = 556998,
+										["targets"] = {
+											["Kriximonk"] = 1278656,
+										},
+										["n_min"] = 37982,
+										["counter"] = 11,
+										["overheal"] = 4848322,
+										["total"] = 1278656,
+										["c_max"] = 0,
+										["id"] = 211879,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 11,
+										["n_curado"] = 1278656,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["totaldenied"] = 0.005126,
+							["healing_from"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1525974977,
+							["tipo"] = 2,
+							["start_time"] = 1525974967,
+							["delay"] = 0,
+							["classe"] = "PET",
+						}, -- [2]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 92,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 92,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Kriximonk",
-							["spec"] = 270,
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 81,
-							["classe"] = "MONK",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
+							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[209162] = {
+									[123725] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 209162,
-										["uptime"] = 12,
+										["activedamt"] = 0,
+										["refreshamt"] = 1,
+										["id"] = 123725,
+										["uptime"] = 18,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
 									},
-									[188031] = {
+									[124275] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 124275,
+										["uptime"] = 19,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[196608] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 2,
+										["id"] = 196608,
+										["uptime"] = 18,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[213063] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 213063,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[121253] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 1,
+										["id"] = 121253,
+										["uptime"] = 22,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[252907] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 2,
+										["id"] = 252907,
+										["uptime"] = 23,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["cooldowns_defensive"] = 1.001753,
+							["buff_uptime"] = 201,
+							["last_cooldown"] = {
+								1525974967.488, -- [1]
+								115308, -- [2]
+							},
+							["classe"] = "MONK",
+							["cooldowns_defensive_targets"] = {
+								["Kriximonk"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[252801] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 188031,
-										["uptime"] = 12,
+										["refreshamt"] = 1,
+										["id"] = 252801,
+										["uptime"] = 13,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[228399] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 1,
+										["id"] = 228399,
+										["uptime"] = 11,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -109,18 +823,95 @@ _detalhes_database = {
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
 										["id"] = 186401,
-										["uptime"] = 12,
+										["uptime"] = 23,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
 									},
-									[42777] = {
+									[196608] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 2,
+										["id"] = 196608,
+										["uptime"] = 18,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[195630] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 3,
+										["refreshamt"] = 4,
+										["id"] = 195630,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[209162] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 42777,
-										["uptime"] = 12,
+										["id"] = 209162,
+										["uptime"] = 23,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[211879] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 211879,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[243096] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 1,
+										["id"] = 243096,
+										["uptime"] = 13,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[214373] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 214373,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[116841] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 116841,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[213177] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 213177,
+										["uptime"] = 15,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -131,30 +922,51 @@ _detalhes_database = {
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
 										["id"] = 93368,
-										["uptime"] = 12,
+										["uptime"] = 23,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
 									},
-									[214502] = {
-										["activedamt"] = 1,
-										["id"] = 214502,
-										["targets"] = {
-										},
-										["actived_at"] = 1517751109,
-										["uptime"] = 9,
+									[227678] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
 										["refreshamt"] = 1,
-										["actived"] = true,
-										["appliedamt"] = 1,
+										["id"] = 227678,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
 									},
-									[2479] = {
+									[214128] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 2479,
-										["uptime"] = 12,
+										["id"] = 214128,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[188033] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 188033,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[215479] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 215479,
+										["uptime"] = 8,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -162,14 +974,63 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 110,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 268,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[115181] = 2,
+								[205523] = 3,
+								[115308] = 1,
+								[100780] = 3,
+								[109132] = 2,
+								[121253] = 1,
+								[116841] = 1,
+							},
+							["tipo"] = 4,
 							["serial"] = "Player-1303-04AFFB5A",
-							["last_event"] = 1517751110,
+							["last_event"] = 1525974983,
+							["pets"] = {
+								"Cloud Serpent <Kriximonk>", -- [1]
+							},
+							["nome"] = "Kriximonk",
+							["cooldowns_defensive_spells"] = {
+								["_ActorTable"] = {
+									[115308] = {
+										["id"] = 115308,
+										["targets"] = {
+											["Kriximonk"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Kriximonk",
+							["nome"] = "Cloud Serpent <Kriximonk>",
+							["spell_cast"] = {
+								[211879] = 1,
+							},
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-3891-1669-9841-106792-00007487B4",
+							["fight_component"] = true,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 92,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -181,12 +1042,12 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Shivarra Destroyer",
-				["combat_counter"] = 17895,
+				["enemy"] = "Garothi Obliterator",
+				["combat_counter"] = 18638,
 				["playing_solo"] = true,
 				["totals"] = {
-					-0.0823219999763016, -- [1]
-					0, -- [2]
+					8551050.966301, -- [1]
+					1674424, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -202,57 +1063,12 @@ _detalhes_database = {
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = -0.00808699999999973,
+						["cooldowns_defensive"] = 1,
 					}, -- [4]
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
-					["Kriximonk"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							1288675, -- [3]
-							1517751130.463, -- [4]
-							4388705, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						["n"] = 2,
-					},
 				},
 				["frags_need_refresh"] = false,
 				["__call"] = {
@@ -264,33 +1080,34 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Kriximonk"] = 0.006649,
+							["Kriximonk"] = 8551051.00356,
 						}, -- [1]
 					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
+							["Kriximonk"] = 1674424.003083,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 433850.668,
+				["end_time"] = 94676.186,
 				["instance_type"] = "none",
-				["combat_id"] = 92,
+				["combat_id"] = 50,
 				["TimeData"] = {
 				},
 				["hasSaved"] = true,
 				["frags"] = {
 				},
-				["data_fim"] = "14:31:50",
-				["data_inicio"] = "14:31:38",
+				["data_fim"] = "19:56:24",
+				["data_inicio"] = "19:56:01",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
+					8551051, -- [1]
+					395768, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -306,18 +1123,18 @@ _detalhes_database = {
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cooldowns_defensive"] = 1,
 					}, -- [4]
 				},
-				["start_time"] = 433838.66,
-				["contra"] = "Shivarra Destroyer",
+				["start_time"] = 94653.349,
+				["contra"] = "Garothi Obliterator",
 				["is_temporary"] = true,
 			}, -- [1]
 		},
 	},
-	["combat_counter"] = 17896,
-	["character_data"] = {
-		["logons"] = 2185,
+	["combat_counter"] = 18639,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["tabela_instancias"] = {
 	},
@@ -331,10 +1148,10 @@ _detalhes_database = {
 			["isLocked"] = true,
 			["sub_atributo_last"] = {
 				1, -- [1]
-				4, -- [2]
+				1, -- [2]
 				1, -- [3]
 				5, -- [4]
-				1, -- [5]
+				3, -- [5]
 			},
 			["snap"] = {
 				[3] = 2,
@@ -343,10 +1160,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994755377062,
-					["x"] = 570.14000540446,
+					["y"] = -415.994747823962,
+					["x"] = 570.14230154699,
 					["w"] = 203.8720703125,
-					["h"] = 129.303588867188,
+					["h"] = 129.303604125977,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -377,10 +1194,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994755377062,
+					["y"] = -415.994747823962,
 					["x"] = 762.194442275391,
 					["w"] = 184.119293212891,
-					["h"] = 129.303588867188,
+					["h"] = 129.303604125977,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -426,16 +1243,16 @@ _detalhes_database = {
 	},
 	["cached_talents"] = {
 		["Player-1303-04AFFB5A"] = {
-			22169, -- [1]
-			22093, -- [2]
+			19818, -- [1]
+			22101, -- [2]
 			19995, -- [3]
-			20173, -- [4]
-			22167, -- [5]
-			19823, -- [6]
-			19304, -- [7]
+			22108, -- [4]
+			22097, -- [5]
+			22091, -- [6]
+			20175, -- [7]
 		},
 	},
-	["last_instance_id"] = 1492,
+	["last_instance_id"] = 1712,
 	["announce_interrupts"] = {
 		["enabled"] = false,
 		["whisper"] = "",
@@ -449,7 +1266,7 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 128,
+	["last_realversion"] = 130,
 	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -458,10 +1275,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
+			["enabled"] = true,
 			["author"] = "Details! Team",
 			["level"] = 1,
-			["enabled"] = true,
+			["dps"] = 0,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -470,11 +1287,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["hide_on_combat"] = false,
 			["opened"] = 0,
-			["author"] = "Details! Team",
+			["window_scale"] = 1,
 			["show_icon"] = 5,
 			["encounter_timers_dbm"] = {
 			},
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -501,11 +1318,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["arrow_anchor_y"] = 0,
-			["main_frame_locked"] = false,
+			["scale"] = 1,
+			["row_height"] = 20,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["point"] = "TOP",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -515,13 +1332,8 @@ _detalhes_database = {
 			},
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
 			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -531,22 +1343,27 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
+				["update_speed"] = 0.0160000007599592,
+				["attribute_type"] = 1,
 			},
-			["font_size"] = 10,
-			["point"] = "TOP",
-			["row_height"] = 20,
-			["scale"] = 1,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
+			["author"] = "Details! Team",
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["rightclick_closed"] = false,
 			["auto_open"] = true,
+			["rightclick_closed"] = false,
 			["auto_close"] = true,
-			["hide_on_combat"] = true,
 			["author"] = "Details! Team",
+			["hide_on_combat"] = true,
 			["deaths_table"] = {
 				{
 					"Blast Furnace", -- [1]
@@ -1559,28 +2376,43 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
-			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
+			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
 		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["enabled"] = true,
+			["showamount"] = false,
+			["useplayercolor"] = false,
+			["author"] = "Details! Team",
+			["useclasscolors"] = false,
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["animate"] = false,
+		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -1590,63 +2422,40 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["animate"] = false,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["useclasscolors"] = false,
-			["author"] = "Details! Team",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["enabled"] = true,
 		},
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "Court of Stars",
+		["started"] = false,
+		["segment_id"] = 4,
+		["ej_id"] = 800,
+		["started_at"] = 1525556341.7,
+		["run_id"] = 24,
+		["level"] = 15,
+		["dungeon_zone_id"] = 1571,
+		["previous_boss_killed_at"] = 1525557692,
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1518396588,
-		[85162672] = {
-			"Vicsur", -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			false, -- [5]
-			false, -- [6]
-			5, -- [7]
-		},
-		["last_version"] = 9,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "Maw of Souls",
-		["started"] = false,
-		["segment_id"] = 4,
-		["ej_id"] = 727,
-		["started_at"] = 1517698614.7,
-		["run_id"] = 19,
-		["level"] = 15,
-		["dungeon_zone_id"] = 1492,
-		["previous_boss_killed_at"] = 1517699487,
+	["nick_tag_cache"] = {
+		["nextreset"] = 1526334444,
+		["last_version"] = 10,
 	},
-	["last_version"] = "v7.3.0.5231",
-	["combat_id"] = 92,
+	["last_version"] = "v7.3.5.5572",
+	["combat_id"] = 50,
 	["savedStyles"] = {
 	},
-	["last_instance_time"] = 1517698537,
-	["last_encounter"] = "Argus the Unmaker",
+	["last_instance_time"] = 1525957279,
+	["last_day"] = "12",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -1654,15 +2463,14 @@ _detalhes_database = {
 		["where"] = 1,
 	},
 	["force_font_outline"] = "",
-	["last_day"] = "07",
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["character_data"] = {
+		["logons"] = 2248,
 	},
+	["last_encounter"] = "Argus the Unmaker",
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -1675,6 +2483,6 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-1303-04AFFB5A"] = 270,
+		["Player-1303-04AFFB5A"] = 268,
 	},
 }

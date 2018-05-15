@@ -1,4 +1,11 @@
 Version: 1
+Frame: ObjectiveTrackerFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -40
+Y: -92
+W: 260
+H: 480
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -13,6 +20,13 @@ X: 0
 Y: 0
 W: 365
 H: 200
+Frame: bdCore config
+FrameLevel: 1
+Anchor: RIGHT
+X: -20
+Y: 0
+W: 740
+H: 450
 Frame: DetailsReportWindow
 FrameLevel: 1
 Anchor: CENTER
@@ -41,13 +55,6 @@ X: 204
 Y: 14
 W: 500
 H: 400
-Frame: Quartz3CastBarPlayer
-FrameLevel: 1
-Anchor: BOTTOM
-X: 1
-Y: 168
-W: 222
-H: 35
 Frame: Quartz3CastBarTarget
 FrameLevel: 1
 Anchor: CENTER
@@ -58,9 +65,9 @@ H: 35
 Frame: Quartz3CastBarFocus
 FrameLevel: 1
 Anchor: CENTER
-X: 277
-Y: 106
-W: 222
+X: 284
+Y: 105
+W: 205
 H: 35
 Frame: Quartz3CastBarPet
 FrameLevel: 1
@@ -83,3 +90,10 @@ X: -17
 Y: 180
 W: 370
 H: 110
+Frame: Quartz3CastBarPlayer
+FrameLevel: 1
+Anchor: BOTTOM
+X: 1
+Y: 168
+W: 222
+H: 35

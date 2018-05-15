@@ -323,8 +323,14 @@ local function RunOverlayFuncs(event, state)
   for i, overlayFunc in ipairs(event.overlayFuncs) do
     state.additionalProgress[i] = state.additionalProgress[i] or {};
     local additionalProgress = state.additionalProgress[i];
-    local a, b, c = overlayFunc(event.trigger, state);
-    if (type(a) == "string") then
+    local ok, a, b, c = pcall(overlayFunc, event.trigger, state);
+    if (not ok) then
+      additionalProgress.min = nil;
+      additionalProgress.max = nil;
+      additionalProgress.direction = nil;
+      additionalProgress.width = nil;
+      additionalProgress.offset = nil;
+    elseif (type(a) == "string") then
       if (additionalProgress.direction ~= a) then
         additionalProgress.direction = a;
         changed = true;
@@ -460,20 +466,6 @@ function WeakAuras.ActivateEvent(id, triggernum, data, state)
       state.value = nil;
       state.total = nil;
     end
-  else
-    if (state.progressType ~= "timed") then
-      state.progressType = "timed";
-      changed = true;
-    end
-    if (state.duration ~= 0) then
-      state.duration = 0;
-      changed = true;
-    end
-    if (state.expirationTime ~= math.huge) then
-      state.resort = state.expirationTime ~= math.huge;
-      state.expirationTime = math.huge;
-      changed = true;
-    end
   end
   local name = data.nameFunc and data.nameFunc(data.trigger) or state.name;
   local icon = data.iconFunc and data.iconFunc(data.trigger) or state.icon;
@@ -513,11 +505,13 @@ local function RunTriggerFunc(allStates, data, id, triggernum, event, arg1, arg2
   if(data.triggerFunc) then
     local untriggerCheck = false;
     if (data.statesParameter == "full") then
-      if (data.triggerFunc(allStates, event, arg1, arg2, ...)) then
+      local ok, returnValue = pcall(data.triggerFunc, allStates, event, arg1, arg2, ...);
+      if (ok and returnValue) then
         updateTriggerState = true;
       end
     elseif (data.statesParameter == "all") then
-      if(data.triggerFunc(allStates, event, arg1, arg2, ...) or optionsEvent) then
+      local ok, returnValue = pcall(data.triggerFunc, allStates, event, arg1, arg2, ...);
+      if( (ok and returnValue) or optionsEvent) then
         for id, state in pairs(allStates) do
           if (state.changed) then
             if (WeakAuras.ActivateEvent(id, triggernum, data, state)) then
@@ -531,7 +525,8 @@ local function RunTriggerFunc(allStates, data, id, triggernum, event, arg1, arg2
     elseif (data.statesParameter == "one") then
       allStates[""] = allStates[""] or {};
       local state = allStates[""];
-      if(data.triggerFunc(state, event, arg1, arg2, ...) or optionsEvent) then
+      local ok, returnValue = pcall(data.triggerFunc, state, event, arg1, arg2, ...);
+      if( (ok and returnValue) or optionsEvent) then
         if(WeakAuras.ActivateEvent(id, triggernum, data, state)) then
           updateTriggerState = true;
         end
@@ -539,7 +534,8 @@ local function RunTriggerFunc(allStates, data, id, triggernum, event, arg1, arg2
         untriggerCheck = true;
       end
     else
-      if(data.triggerFunc(event, arg1, arg2, ...) or optionsEvent) then
+      local ok, returnValue = pcall(data.triggerFunc, event, arg1, arg2, ...);
+      if( (ok and returnValue) or optionsEvent) then
         allStates[""] = allStates[""] or {};
         local state = allStates[""];
         if(WeakAuras.ActivateEvent(id, triggernum, data, state)) then
@@ -551,11 +547,14 @@ local function RunTriggerFunc(allStates, data, id, triggernum, event, arg1, arg2
     end
     if (untriggerCheck and not optionsEvent) then
       if (data.statesParameter == "all") then
-        if(data.untriggerFunc and data.untriggerFunc(allStates, event, arg1, arg2, ...)) then
-          for id, state in pairs(allStates) do
-            if (state.changed) then
-              if (WeakAuras.EndEvent(id, triggernum, nil, state)) then
-                updateTriggerState = true;
+        if(data.untriggerFunc) then
+          local ok, returnValue = pcall(data.untriggerFunc, allStates, event, arg1, arg2, ...);
+          if(ok and returnValue) then
+            for id, state in pairs(allStates) do
+              if (state.changed) then
+                if (WeakAuras.EndEvent(id, triggernum, nil, state)) then
+                  updateTriggerState = true;
+                end
               end
             end
           end
@@ -563,17 +562,23 @@ local function RunTriggerFunc(allStates, data, id, triggernum, event, arg1, arg2
       elseif (data.statesParameter == "one") then
         allStates[""] = allStates[""] or {};
         local state = allStates[""];
-        if(data.untriggerFunc and data.untriggerFunc(state, event, arg1, arg2, ...)) then
-          if (WeakAuras.EndEvent(id, triggernum, nil, state)) then
-            updateTriggerState = true;
+        if(data.untriggerFunc) then
+          local ok, returnValue = pcall(data.untriggerFunc, state, event, arg1, arg2, ...);
+          if (ok and returnValue) then
+            if (WeakAuras.EndEvent(id, triggernum, nil, state)) then
+              updateTriggerState = true;
+            end
           end
         end
       else
-        if(data.untriggerFunc and data.untriggerFunc(event, arg1, arg2, ...)) then
-          allStates[""] = allStates[""] or {};
-          local state = allStates[""];
-          if(WeakAuras.EndEvent(id, triggernum, nil, state)) then
-            updateTriggerState = true;
+        if(data.untriggerFunc) then
+          local ok, returnValue = pcall(data.untriggerFunc, event, arg1, arg2, ...);
+          if(ok and returnValue) then
+            allStates[""] = allStates[""] or {};
+            local state = allStates[""];
+            if(WeakAuras.EndEvent(id, triggernum, nil, state)) then
+              updateTriggerState = true;
+            end
           end
         end
       end
@@ -1031,85 +1036,88 @@ function GenericTrigger.Modernize(data)
       trigger = data.additional_triggers[triggernum].trigger;
       untrigger = data.additional_triggers[triggernum].untrigger;
     end
-    -- Convert any references to "COMBAT_LOG_EVENT_UNFILTERED_CUSTOM" to "COMBAT_LOG_EVENT_UNFILTERED"
-    if(trigger and trigger.custom) then
-      trigger.custom = trigger.custom:gsub("COMBAT_LOG_EVENT_UNFILTERED_CUSTOM", "COMBAT_LOG_EVENT_UNFILTERED");
-    end
 
-    if(untrigger and untrigger.custom) then
-      untrigger.custom = untrigger.custom:gsub("COMBAT_LOG_EVENT_UNFILTERED_CUSTOM", "COMBAT_LOG_EVENT_UNFILTERED");
-    end
-
-    if trigger and trigger["event"] and trigger["event"] == "DBM Timer" then
-      if (type(trigger.spellId) == "number") then
-        trigger.spellId = tostring(trigger.spellId);
+    if (data.internalVersion < 2) then
+      -- Convert any references to "COMBAT_LOG_EVENT_UNFILTERED_CUSTOM" to "COMBAT_LOG_EVENT_UNFILTERED"
+      if(trigger and trigger.custom) then
+        trigger.custom = trigger.custom:gsub("COMBAT_LOG_EVENT_UNFILTERED_CUSTOM", "COMBAT_LOG_EVENT_UNFILTERED");
       end
-    end
 
-    if trigger and trigger["event"] and trigger["event"] == "Item Set Equipped" then
-      trigger.event = "Equipment Set";
-    end
-
-    -- Convert ember trigger
-    local fixEmberTrigger = function(trigger)
-      if (trigger.power and not trigger.ember) then
-        trigger.ember = tostring(tonumber(trigger.power) * 10);
-        trigger.use_ember = trigger.use_power
-        trigger.ember_operator = trigger.power_operator;
-        trigger.power = nil;
-        trigger.use_power = nil;
-        trigger.power_operator = nil;
+      if(untrigger and untrigger.custom) then
+        untrigger.custom = untrigger.custom:gsub("COMBAT_LOG_EVENT_UNFILTERED_CUSTOM", "COMBAT_LOG_EVENT_UNFILTERED");
       end
-    end
 
-    if (trigger and trigger.type and trigger.event and trigger.type == "status" and trigger.event == "Burning Embers") then
-      fixEmberTrigger(trigger);
-      fixEmberTrigger(untrigger);
-    end
-
-    if (trigger and trigger.type and trigger.event and trigger.type == "status"
-      and (trigger.event == "Cooldown Progress (Spell)"
-      or trigger.event == "Cooldown Progress (Item)"
-      or trigger.event == "Death Knight Rune")) then
-
-      if (not trigger.showOn) then
-        if (trigger.use_inverse) then
-          trigger.showOn = "showOnReady"
-        else
-          trigger.showOn = "showOnCooldown"
+      if trigger and trigger["event"] and trigger["event"] == "DBM Timer" then
+        if (type(trigger.spellId) == "number") then
+          trigger.spellId = tostring(trigger.spellId);
         end
+      end
 
-        if (trigger.event == "Death Knight Rune") then
-          trigger.use_showOn = true;
+      if trigger and trigger["event"] and trigger["event"] == "Item Set Equipped" then
+        trigger.event = "Equipment Set";
+      end
+
+      -- Convert ember trigger
+      local fixEmberTrigger = function(trigger)
+        if (trigger.power and not trigger.ember) then
+          trigger.ember = tostring(tonumber(trigger.power) * 10);
+          trigger.use_ember = trigger.use_power
+          trigger.ember_operator = trigger.power_operator;
+          trigger.power = nil;
+          trigger.use_power = nil;
+          trigger.power_operator = nil;
         end
-        trigger.use_inverse = nil
       end
-    end
 
-    for old, new in pairs(combatLogUpgrade) do
-      if (trigger and trigger[old]) then
-        local useOld = "use_" .. old;
-        local useNew = "use_" .. new;
-        trigger[useNew] = trigger[useOld];
-        trigger[new] = trigger[old];
-
-        trigger[old] = nil;
-        trigger[useOld] = nil;
+      if (trigger and trigger.type and trigger.event and trigger.type == "status" and trigger.event == "Burning Embers") then
+        fixEmberTrigger(trigger);
+        fixEmberTrigger(untrigger);
       end
-    end
 
-    -- Convert separated Power Triggers to sub options of the Power trigger
-    if (trigger and trigger.type and trigger.event and trigger.type == "status" and oldPowerTriggers[trigger.event]) then
-      trigger.powertype = oldPowerTriggers[trigger.event]
-      trigger.use_powertype = true;
-      trigger.use_percentpower = false;
-      if (trigger.event == "Combo Points") then
-        trigger.power = trigger.combopoints;
-        trigger.power_operator = trigger.combopoints_operator
-        trigger.use_power = trigger.use_combopoints;
+      if (trigger and trigger.type and trigger.event and trigger.type == "status"
+        and (trigger.event == "Cooldown Progress (Spell)"
+        or trigger.event == "Cooldown Progress (Item)"
+        or trigger.event == "Death Knight Rune")) then
+
+        if (not trigger.showOn) then
+          if (trigger.use_inverse) then
+            trigger.showOn = "showOnReady"
+          else
+            trigger.showOn = "showOnCooldown"
+          end
+
+          if (trigger.event == "Death Knight Rune") then
+            trigger.use_showOn = true;
+          end
+          trigger.use_inverse = nil
+        end
       end
-      trigger.event = "Power";
-      trigger.unit = "player";
+
+      for old, new in pairs(combatLogUpgrade) do
+        if (trigger and trigger[old]) then
+          local useOld = "use_" .. old;
+          local useNew = "use_" .. new;
+          trigger[useNew] = trigger[useOld];
+          trigger[new] = trigger[old];
+
+          trigger[old] = nil;
+          trigger[useOld] = nil;
+        end
+      end
+
+      -- Convert separated Power Triggers to sub options of the Power trigger
+      if (trigger and trigger.type and trigger.event and trigger.type == "status" and oldPowerTriggers[trigger.event]) then
+        trigger.powertype = oldPowerTriggers[trigger.event]
+        trigger.use_powertype = true;
+        trigger.use_percentpower = false;
+        if (trigger.event == "Combo Points") then
+          trigger.power = trigger.combopoints;
+          trigger.power_operator = trigger.combopoints_operator
+          trigger.use_power = trigger.use_combopoints;
+        end
+        trigger.event = "Power";
+        trigger.unit = "player";
+      end
     end
   end
 end
@@ -2822,13 +2830,36 @@ function GenericTrigger.CreateFallbackState(data, triggernum, state)
   local event = events[data.id][triggernum];
 
   WeakAuras.ActivateAuraEnvironment(data.id, "", state);
-  state.name = event.nameFunc and event.nameFunc(data.trigger) or nil;
-  state.icon = event.iconFunc and event.iconFunc(data.trigger) or nil;
-  state.texture = event.textureFunc and event.textureFunc(data.trigger) or nil;
-  state.stacks = event.stacksFunc and event.stacksFunc(data.trigger) or nil;
+  if (event.nameFunc) then
+    local ok, name = pcall(event.nameFunc, data.trigger);
+    state.name = ok and name or nil;
+  end
+  if (event.iconFunc) then
+    local ok, icon = pcall(event.iconFunc, data.trigger);
+    state.icon = ok and icon or nil;
+  end
+
+  if (event.textureFunc ) then
+    local ok, texture = pcall(event.textureFunc, data.trigger);
+    state.texture = ok and texture or nil;
+  end
+
+  if (event.stacksFunc) then
+    local ok, stacks = event.stacksFunc(data.trigger);
+    state.stacks = ok and stacks or nil;
+  end
 
   if (event.durationFunc) then
-    local arg1, arg2, arg3, inverse = event.durationFunc(data.trigger);
+    local ok, arg1, arg2, arg3, inverse = pcall(event.durationFunc, data.trigger);
+    if (not ok) then
+      state.progressType = "timed";
+      state.duration = 0;
+      state.expirationTime = math.huge;
+      state.resort = nil;
+      state.value = nil;
+      state.total = nil;
+      return;
+    end
     arg1 = type(arg1) == "number" and arg1 or 0;
     arg2 = type(arg2) == "number" and arg2 or 0;
 
@@ -2859,10 +2890,10 @@ function GenericTrigger.CreateFallbackState(data, triggernum, state)
       state.inverse = inverse;
     end
   else
-    state.progressType = "static";
-    state.duration = nil;
+    state.progressType = "timed";
+    state.duration = 0;
+    state.expirationTime = math.huge;
     state.resort = nil;
-    state.expirationTime = nil;
     state.value = nil;
     state.total = nil;
   end

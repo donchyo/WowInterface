@@ -91,6 +91,15 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
+		["Krixidk - Ravencrest"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 250,
+				["role"] = "TANK",
+				["name"] = "Blood",
+				["index"] = 1,
+			},
+		},
 		["Greenzuriz - Aggra (Português)"] = {
 			["specInfo"] = {
 				["id"] = 262,
@@ -193,10 +202,10 @@ TidyPlatesThreatDB = {
 		["Krixi - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 70,
-				["role"] = "DAMAGER",
-				["index"] = 3,
-				["name"] = "Retribution",
+				["id"] = 66,
+				["role"] = "TANK",
+				["index"] = 2,
+				["name"] = "Protection",
 			},
 		},
 		["Zuriz - Grim Batol"] = {
@@ -238,10 +247,10 @@ TidyPlatesThreatDB = {
 		["Zetiz - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 261,
+				["id"] = 259,
 				["role"] = "DAMAGER",
-				["name"] = "Subtlety",
-				["index"] = 3,
+				["name"] = "Assassination",
+				["index"] = 1,
 			},
 		},
 		["Lòverocket - Aggra (Português)"] = {
@@ -283,10 +292,10 @@ TidyPlatesThreatDB = {
 		["Kriximonk - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 269,
-				["role"] = "DAMAGER",
-				["name"] = "Windwalker",
-				["index"] = 3,
+				["id"] = 268,
+				["role"] = "TANK",
+				["name"] = "Brewmaster",
+				["index"] = 1,
 			},
 		},
 		["Gnomalock - Grim Batol"] = {
@@ -346,6 +355,7 @@ TidyPlatesThreatDB = {
 		["Daimtårta - Aggra (Português)"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
 		["Loverócket - Aggra (Português)"] = "Default",
+		["Krixidk - Ravencrest"] = "Default",
 		["Greenzuriz - Aggra (Português)"] = "Default",
 		["Loverocket - Aggra (Português)"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
@@ -378,18 +388,8 @@ TidyPlatesThreatDB = {
 		["Skullflower"] = {
 			["nameplate"] = {
 				["toggle"] = {
-					["Totem"] = false,
+					["Totem"] = true,
 				},
-			},
-			["auraWidget"] = {
-				["allow"] = {
-					nil, -- [1]
-					"Leg Sweep", -- [2]
-					"Binding Shot", -- [3]
-					"Static Charge", -- [4]
-					"", -- [5]
-				},
-				["mode"] = "allMine",
 			},
 			["uniqueSettings"] = {
 				[33] = {
@@ -531,15 +531,25 @@ TidyPlatesThreatDB = {
 					"", -- [100]
 				},
 			},
-			["questWidget"] = {
-				["ON"] = false,
-			},
-			["cache"] = {
-			},
 			["settings"] = {
 				["healthbar"] = {
 					["texture"] = "Skullflower",
 				},
+			},
+			["cache"] = {
+			},
+			["auraWidget"] = {
+				["allow"] = {
+					nil, -- [1]
+					"Leg Sweep", -- [2]
+					"Binding Shot", -- [3]
+					"Static Charge", -- [4]
+					"", -- [5]
+				},
+				["mode"] = "allMine",
+			},
+			["questWidget"] = {
+				["ON"] = false,
 			},
 			["tapHealthbarColor"] = {
 				["r"] = 0.501960784313726,
@@ -693,18 +703,26 @@ TidyPlatesThreatDB = {
 		["Default"] = {
 			["nameplate"] = {
 				["toggle"] = {
-					["Totem"] = false,
+					["Totem"] = true,
 				},
+			},
+			["blizzFadeA"] = {
+				["toggle"] = false,
+			},
+			["castbarColorShield"] = {
+				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["uniqueSettings"] = {
 				[33] = {
+					["scale"] = 1.4,
 					["name"] = "Fel Explosives",
+					["overrideScale"] = true,
+					["icon"] = 135799,
 					["color"] = {
 						["g"] = 0,
 					},
-					["scale"] = 1.4,
-					["icon"] = 135799,
-					["overrideScale"] = true,
 				},
 				[34] = {
 				},
@@ -841,14 +859,12 @@ TidyPlatesThreatDB = {
 					"", -- [100]
 				},
 			},
-			["settings"] = {
-				["healthbar"] = {
-					["texture"] = "Skullflower",
-				},
+			["questWidget"] = {
+				["ON"] = false,
 			},
 			["cache"] = {
 			},
-			["questWidget"] = {
+			["healerTracker"] = {
 				["ON"] = false,
 			},
 			["auraWidget"] = {
@@ -861,8 +877,34 @@ TidyPlatesThreatDB = {
 				},
 				["mode"] = "allMine",
 			},
-			["healerTracker"] = {
-				["ON"] = false,
+			["castbarColor"] = {
+				["b"] = 0,
+				["g"] = 1,
+				["r"] = 0,
+			},
+			["settings"] = {
+				["elitehealthborder"] = {
+					["texture"] = "TP_HealthBarEliteOverlayThin",
+				},
+				["healthbar"] = {
+					["texture"] = "Skullflower",
+				},
+				["healthborder"] = {
+					["texture"] = "TP_HealthBarOverlayThin",
+				},
+				["skullicon"] = {
+					["scale"] = 20,
+				},
+				["castbar"] = {
+					["texture"] = "bdSmooth",
+				},
+				["name"] = {
+					["typeface"] = "Expressway",
+					["size"] = 10,
+				},
+			},
+			["text"] = {
+				["full"] = true,
 			},
 		},
 		["Grim Batol"] = {

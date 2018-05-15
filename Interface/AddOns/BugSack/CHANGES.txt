@@ -1,18 +1,18 @@
-tag eafdcd62093a37401d2a6ebfccfa89a2516331ce v7.3.2
+tag 5038feafd30a53d2cc2c2420b5fe490257ec92c1 v7.3.3
 Author:	funkydude <funkydude@users.noreply.github.com>
-Date:	Fri Nov 17 20:06:21 2017 +0000
+Date:	Sun Apr 22 15:14:39 2018 +0100
 
-Tagging as v7.3.2
+Tagging as v7.3.3
 
-commit eb0a9ca2f2e33c97590a5a1e693d71f28b8d6244
+commit 6c65932c4197c49bfe55131adb3ff1e45150a4ab
+Author: funkydude <funkydude@users.noreply.github.com>
+Date:   Sun Apr 22 15:08:27 2018 +0100
+
+    update travis file
+
+commit e809006c7665e1ee9596c4baa3961a49489dd683
 Author: Resike <resike@gmail.com>
-Date:   Mon Oct 30 16:29:58 2017 +0100
+Date:   Tue Dec 12 19:53:05 2017 +0100
 
-    GUI fix
-
-commit eb0a9ca2f2e33c97590a5a1e693d71f28b8d6244
-Author: Resike <resike@gmail.com>
-Date:   Mon Oct 30 16:29:58 2017 +0100
-
-    GUI fix
+    Force display refresh, closes #3 (#4)
 

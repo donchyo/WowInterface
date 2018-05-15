@@ -210,316 +210,316 @@ PL:AddLocale(PRAT_MODULE, "enUS", L)
 L=
 {
 	["Substitutions"] = {
-		--Translation missing 
-		-- ["%d total user defined substitutions"] = "",
-		--Translation missing 
-		-- ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",
-		--Translation missing 
-		-- ["<noguild>"] = "",
-		--Translation missing 
-		-- ["<notarget>"] = "",
-		--Translation missing 
-		-- ["A module to provide basic chat substitutions."] = "",
-		--Translation missing 
-		-- ["Are you sure - this will delete all user defined substitutions and reset defaults?"] = "",
-		--Translation missing 
-		-- ["Are you sure?"] = "",
-		--Translation missing 
-		-- ["can't find substitution index for a substitution named '%s'"] = "",
-		--Translation missing 
-		-- ["current-prompt"] = "",
-		--Translation missing 
-		-- ["defined %s: expands to => %s"] = "",
-		--Translation missing 
-		-- ["Delete all"] = "",
-		--Translation missing 
-		-- ["Delete substitution"] = "",
-		--Translation missing 
-		-- ["Deletes a user defined substitution"] = "",
-		--Translation missing 
-		-- ["Deletes all user defined substitutions"] = "",
-		--Translation missing 
-		-- ["female"] = "",
-		--Translation missing 
-		-- ["her"] = "",
-		--Translation missing 
-		-- ["hers"] = "",
-		--Translation missing 
-		-- ["him"] = "",
-		--Translation missing 
-		-- ["his"] = "",
-		--Translation missing 
-		-- ["it"] = "",
-		--Translation missing 
-		-- ["its"] = "",
-		--Translation missing 
-		-- ["List of available substitutions"] = "",
-		--Translation missing 
-		-- ["List of available substitutions defined by this module. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",
-		--Translation missing 
-		-- ["List substitutions"] = "",
-		--Translation missing 
-		-- ["Lists all current subtitutions in the default chat frame"] = "",
-		--Translation missing 
-		-- ["male"] = "",
-		--Translation missing 
-		-- ["MapLoc"] = "",
-		--Translation missing 
-		-- ["MapPos"] = "",
-		--Translation missing 
-		-- ["MapXPos"] = "",
-		--Translation missing 
-		-- ["MapYPos"] = "",
-		--Translation missing 
-		-- ["MapZone"] = "",
-		--Translation missing 
-		-- ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",
-		--Translation missing 
-		-- ["MouseoverTargetName"] = "",
-		--Translation missing 
-		-- ["NO MATCHFUNC FOUND"] = "",
-		--Translation missing 
-		-- ["no substitution name given"] = "",
-		--Translation missing 
-		-- ["no substitution name supplied for deletion"] = "",
-		--Translation missing 
-		-- ["no user defined subs found"] = "",
-		--Translation missing 
-		-- ["no value given for subtitution \"%s\""] = "",
-		--Translation missing 
-		-- ["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",
-		--Translation missing 
-		-- ["PlayerAverageItemLevel"] = "",
-		--Translation missing 
-		-- ["PlayerCurrentMana"] = "",
-		--Translation missing 
-		-- ["PlayerHealthDeficit"] = "",
-		--Translation missing 
-		-- ["PlayerHP"] = "",
-		--Translation missing 
-		-- ["PlayerManaDeficit"] = "",
-		--Translation missing 
-		-- ["PlayerMaxHP"] = "",
-		--Translation missing 
-		-- ["PlayerMaxMana"] = "",
-		--Translation missing 
-		-- ["PlayerName"] = "",
-		--Translation missing 
-		-- ["PlayerPercentHP"] = "",
-		--Translation missing 
-		-- ["PlayerPercentMana"] = "",
-		--Translation missing 
-		-- ["RandNum"] = "",
-		--Translation missing 
-		-- ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",
-		--Translation missing 
-		-- ["Set substitution"] = "",
-		--Translation missing 
-		-- ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",
-		--Translation missing 
-		-- ["subname -- NOTE: sub name without the prefix '%'"] = "",
-		--Translation missing 
-		-- ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",
-		--Translation missing 
-		-- ["substitution: %s defined as => %s"] = "",
-		--Translation missing 
-		-- ["Substitutions"] = "",
-		--Translation missing 
-		-- ["TargetClass"] = "",
-		--Translation missing 
-		-- ["TargetGender"] = "",
-		--Translation missing 
-		-- ["TargetGuild"] = "",
-		--Translation missing 
-		-- ["TargetHealth"] = "",
-		--Translation missing 
-		-- ["TargetHealthDeficit"] = "",
-		--Translation missing 
-		-- ["TargetIcon"] = "",
-		--Translation missing 
-		-- ["TargetLevel"] = "",
-		--Translation missing 
-		-- ["TargetManaDeficit"] = "",
-		--Translation missing 
-		-- ["TargetName"] = "",
-		--Translation missing 
-		-- ["TargetPercentHP"] = "",
-		--Translation missing 
-		-- ["TargetPossesive"] = "",
-		--Translation missing 
-		-- ["TargetPronoun"] = "",
-		--Translation missing 
-		-- ["TargetRace"] = "",
-		--Translation missing 
-		-- ["TargetTargetName"] = "",
-		--Translation missing 
-		-- ["unknown sex"] = "",
-		--Translation missing 
-		-- ["user defined substition \"%s\" not found"] = "",
-		--Translation missing 
-		-- ["User defined substitutions"] = "",
-		--Translation missing 
-		-- ["user substitutions index (usersubs_idx) doesn't exist! oh dear."] = "",
-		--Translation missing 
-		-- ["usersub_"] = "",
+		--[[Translation missing --]]
+		--[[ ["%d total user defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["<noguild>"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["<notarget>"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["A module to provide basic chat substitutions."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Are you sure - this will delete all user defined substitutions and reset defaults?"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Are you sure?"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["can't find substitution index for a substitution named '%s'"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["current-prompt"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["defined %s: expands to => %s"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Delete all"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Delete substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Deletes a user defined substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Deletes all user defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["female"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["her"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["hers"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["him"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["his"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["it"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["its"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List of available substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List of available substitutions defined by this module. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Lists all current subtitutions in the default chat frame"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["male"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapLoc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapXPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapYPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapZone"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MouseoverTargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["NO MATCHFUNC FOUND"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no substitution name given"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no substitution name supplied for deletion"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no user defined subs found"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no value given for subtitution \"%s\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerAverageItemLevel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerCurrentMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerHealthDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerManaDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerMaxHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerMaxMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerPercentHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerPercentMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["RandNum"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname -- NOTE: sub name without the prefix '%'"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["substitution: %s defined as => %s"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetClass"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetGender"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetGuild"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetHealth"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetHealthDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetIcon"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetLevel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetManaDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPercentHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPossesive"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPronoun"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetRace"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetTargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["unknown sex"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["user defined substition \"%s\" not found"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["User defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["user substitutions index (usersubs_idx) doesn't exist! oh dear."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["usersub_"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "itIT", L)
 L=
 {
 	["Substitutions"] = {
-		--Translation missing 
-		-- ["%d total user defined substitutions"] = "",
-		--Translation missing 
-		-- ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",
-		--Translation missing 
-		-- ["<noguild>"] = "",
-		--Translation missing 
-		-- ["<notarget>"] = "",
-		--Translation missing 
-		-- ["A module to provide basic chat substitutions."] = "",
-		--Translation missing 
-		-- ["Are you sure - this will delete all user defined substitutions and reset defaults?"] = "",
-		--Translation missing 
-		-- ["Are you sure?"] = "",
-		--Translation missing 
-		-- ["can't find substitution index for a substitution named '%s'"] = "",
-		--Translation missing 
-		-- ["current-prompt"] = "",
-		--Translation missing 
-		-- ["defined %s: expands to => %s"] = "",
-		--Translation missing 
-		-- ["Delete all"] = "",
-		--Translation missing 
-		-- ["Delete substitution"] = "",
-		--Translation missing 
-		-- ["Deletes a user defined substitution"] = "",
-		--Translation missing 
-		-- ["Deletes all user defined substitutions"] = "",
-		--Translation missing 
-		-- ["female"] = "",
-		--Translation missing 
-		-- ["her"] = "",
-		--Translation missing 
-		-- ["hers"] = "",
-		--Translation missing 
-		-- ["him"] = "",
-		--Translation missing 
-		-- ["his"] = "",
-		--Translation missing 
-		-- ["it"] = "",
-		--Translation missing 
-		-- ["its"] = "",
-		--Translation missing 
-		-- ["List of available substitutions"] = "",
-		--Translation missing 
-		-- ["List of available substitutions defined by this module. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",
-		--Translation missing 
-		-- ["List substitutions"] = "",
-		--Translation missing 
-		-- ["Lists all current subtitutions in the default chat frame"] = "",
-		--Translation missing 
-		-- ["male"] = "",
-		--Translation missing 
-		-- ["MapLoc"] = "",
-		--Translation missing 
-		-- ["MapPos"] = "",
-		--Translation missing 
-		-- ["MapXPos"] = "",
-		--Translation missing 
-		-- ["MapYPos"] = "",
-		--Translation missing 
-		-- ["MapZone"] = "",
-		--Translation missing 
-		-- ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",
-		--Translation missing 
-		-- ["MouseoverTargetName"] = "",
-		--Translation missing 
-		-- ["NO MATCHFUNC FOUND"] = "",
-		--Translation missing 
-		-- ["no substitution name given"] = "",
-		--Translation missing 
-		-- ["no substitution name supplied for deletion"] = "",
-		--Translation missing 
-		-- ["no user defined subs found"] = "",
-		--Translation missing 
-		-- ["no value given for subtitution \"%s\""] = "",
-		--Translation missing 
-		-- ["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",
-		--Translation missing 
-		-- ["PlayerAverageItemLevel"] = "",
-		--Translation missing 
-		-- ["PlayerCurrentMana"] = "",
-		--Translation missing 
-		-- ["PlayerHealthDeficit"] = "",
-		--Translation missing 
-		-- ["PlayerHP"] = "",
-		--Translation missing 
-		-- ["PlayerManaDeficit"] = "",
-		--Translation missing 
-		-- ["PlayerMaxHP"] = "",
-		--Translation missing 
-		-- ["PlayerMaxMana"] = "",
-		--Translation missing 
-		-- ["PlayerName"] = "",
-		--Translation missing 
-		-- ["PlayerPercentHP"] = "",
-		--Translation missing 
-		-- ["PlayerPercentMana"] = "",
-		--Translation missing 
-		-- ["RandNum"] = "",
-		--Translation missing 
-		-- ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",
-		--Translation missing 
-		-- ["Set substitution"] = "",
-		--Translation missing 
-		-- ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",
-		--Translation missing 
-		-- ["subname -- NOTE: sub name without the prefix '%'"] = "",
-		--Translation missing 
-		-- ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",
-		--Translation missing 
-		-- ["substitution: %s defined as => %s"] = "",
-		--Translation missing 
-		-- ["Substitutions"] = "",
-		--Translation missing 
-		-- ["TargetClass"] = "",
-		--Translation missing 
-		-- ["TargetGender"] = "",
-		--Translation missing 
-		-- ["TargetGuild"] = "",
-		--Translation missing 
-		-- ["TargetHealth"] = "",
-		--Translation missing 
-		-- ["TargetHealthDeficit"] = "",
-		--Translation missing 
-		-- ["TargetIcon"] = "",
-		--Translation missing 
-		-- ["TargetLevel"] = "",
-		--Translation missing 
-		-- ["TargetManaDeficit"] = "",
-		--Translation missing 
-		-- ["TargetName"] = "",
-		--Translation missing 
-		-- ["TargetPercentHP"] = "",
-		--Translation missing 
-		-- ["TargetPossesive"] = "",
-		--Translation missing 
-		-- ["TargetPronoun"] = "",
-		--Translation missing 
-		-- ["TargetRace"] = "",
-		--Translation missing 
-		-- ["TargetTargetName"] = "",
-		--Translation missing 
-		-- ["unknown sex"] = "",
-		--Translation missing 
-		-- ["user defined substition \"%s\" not found"] = "",
-		--Translation missing 
-		-- ["User defined substitutions"] = "",
-		--Translation missing 
-		-- ["user substitutions index (usersubs_idx) doesn't exist! oh dear."] = "",
-		--Translation missing 
-		-- ["usersub_"] = "",
+		--[[Translation missing --]]
+		--[[ ["%d total user defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["<noguild>"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["<notarget>"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["A module to provide basic chat substitutions."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Are you sure - this will delete all user defined substitutions and reset defaults?"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Are you sure?"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["can't find substitution index for a substitution named '%s'"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["current-prompt"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["defined %s: expands to => %s"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Delete all"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Delete substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Deletes a user defined substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Deletes all user defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["female"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["her"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["hers"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["him"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["his"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["it"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["its"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List of available substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List of available substitutions defined by this module. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Lists all current subtitutions in the default chat frame"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["male"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapLoc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapXPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapYPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapZone"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MouseoverTargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["NO MATCHFUNC FOUND"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no substitution name given"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no substitution name supplied for deletion"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no user defined subs found"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no value given for subtitution \"%s\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerAverageItemLevel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerCurrentMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerHealthDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerManaDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerMaxHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerMaxMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerPercentHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerPercentMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["RandNum"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname -- NOTE: sub name without the prefix '%'"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["substitution: %s defined as => %s"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetClass"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetGender"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetGuild"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetHealth"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetHealthDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetIcon"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetLevel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetManaDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPercentHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPossesive"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPronoun"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetRace"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetTargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["unknown sex"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["user defined substition \"%s\" not found"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["User defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["user substitutions index (usersubs_idx) doesn't exist! oh dear."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["usersub_"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "ptBR", L)
@@ -527,64 +527,64 @@ L=
 {
 	["Substitutions"] = {
 		["%d total user defined substitutions"] = "%s substitutions personnalisées totales",
-		--Translation missing 
-		-- ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",
+		--[[Translation missing --]]
+		--[[ ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",--]] 
 		["<noguild>"] = "<pas de guilde>",
 		["<notarget>"] = "<pas de cible>",
 		["A module to provide basic chat substitutions."] = "Un module qui propose quelques substitutions basiques.",
 		["Are you sure - this will delete all user defined substitutions and reset defaults?"] = "Etes-vous sûr ? Cela supprimera toutes les substitutions personnalisées et réinitialisera les valeurs par défaut.",
 		["Are you sure?"] = "Êtes-vous sûr ?",
-		--Translation missing 
-		-- ["can't find substitution index for a substitution named '%s'"] = "",
+		--[[Translation missing --]]
+		--[[ ["can't find substitution index for a substitution named '%s'"] = "",--]] 
 		["current-prompt"] = [=[Valeur actuelle : '%s'
 Cliquez pour coller dans le chat.]=],
-		--Translation missing 
-		-- ["defined %s: expands to => %s"] = "",
+		--[[Translation missing --]]
+		--[[ ["defined %s: expands to => %s"] = "",--]] 
 		["Delete all"] = "Tout supprimer",
 		["Delete substitution"] = "Supprimer la substitution",
 		["Deletes a user defined substitution"] = "Supprime une substitution personnalisée",
 		["Deletes all user defined substitutions"] = "Supprime toutes les substitutions personnalisées",
-		--Translation missing 
-		-- ["female"] = "",
-		--Translation missing 
-		-- ["her"] = "",
-		--Translation missing 
-		-- ["hers"] = "",
-		--Translation missing 
-		-- ["him"] = "",
-		--Translation missing 
-		-- ["his"] = "",
-		--Translation missing 
-		-- ["it"] = "",
-		--Translation missing 
-		-- ["its"] = "",
+		--[[Translation missing --]]
+		--[[ ["female"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["her"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["hers"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["him"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["his"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["it"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["its"] = "",--]] 
 		["List of available substitutions"] = "Liste des substitution disponibles",
 		["List of available substitutions defined by this module. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "Liste toutes les substitutions disponibles définies par ce module. (NB: l'utilisateur peut définir des valeurs personnalisées pour les substitutions existantes, mais celles-ci seront remisent à leurs valeurs par défaut si les options sont réinitialisées.)",
 		["List substitutions"] = "Liste des substitutions",
 		["Lists all current subtitutions in the default chat frame"] = "Liste toutes les substitutions dans la fenêtre de discussion",
-		--Translation missing 
-		-- ["male"] = "",
+		--[[Translation missing --]]
+		--[[ ["male"] = "",--]] 
 		["MapLoc"] = "Localisation",
 		["MapPos"] = "Position",
 		["MapXPos"] = "Position X",
 		["MapYPos"] = "Position Y",
 		["MapZone"] = "Zone",
-		--Translation missing 
-		-- ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",
-		--Translation missing 
-		-- ["MouseoverTargetName"] = "",
+		--[[Translation missing --]]
+		--[[ ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MouseoverTargetName"] = "",--]] 
 		["NO MATCHFUNC FOUND"] = "PAS DE FONCTION ASSOCIÉE TROUVÉE",
-		--Translation missing 
-		-- ["no substitution name given"] = "",
-		--Translation missing 
-		-- ["no substitution name supplied for deletion"] = "",
-		--Translation missing 
-		-- ["no user defined subs found"] = "",
-		--Translation missing 
-		-- ["no value given for subtitution \"%s\""] = "",
+		--[[Translation missing --]]
+		--[[ ["no substitution name given"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no substitution name supplied for deletion"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no user defined subs found"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no value given for subtitution \"%s\""] = "",--]] 
 		["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "Options pour ajouter ou enlever les substitutions définies par l'utilisateur. (NB: les utilisateurs peuvent changer la valeur des substitutions existantes, mais elles seront remisent à leur valeur par défaut si les préférences de l'utilisateur sont supprimés.)",
-		--Translation missing 
-		-- ["PlayerAverageItemLevel"] = "",
+		--[[Translation missing --]]
+		--[[ ["PlayerAverageItemLevel"] = "",--]] 
 		["PlayerCurrentMana"] = "Mana actuelle",
 		["PlayerHealthDeficit"] = "Déficit de vie",
 		["PlayerHP"] = "HP actuel",
@@ -595,17 +595,17 @@ Cliquez pour coller dans le chat.]=],
 		["PlayerPercentHP"] = "Pourcentage HP",
 		["PlayerPercentMana"] = "Pourcentage Mana",
 		["RandNum"] = "Nombre aléatoire",
-		--Translation missing 
-		-- ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",
+		--[[Translation missing --]]
+		--[[ ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",--]] 
 		["Set substitution"] = "Paramétrer une substitution",
-		--Translation missing 
-		-- ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",
-		--Translation missing 
-		-- ["subname -- NOTE: sub name without the prefix '%'"] = "",
-		--Translation missing 
-		-- ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",
-		--Translation missing 
-		-- ["substitution: %s defined as => %s"] = "",
+		--[[Translation missing --]]
+		--[[ ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname -- NOTE: sub name without the prefix '%'"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["substitution: %s defined as => %s"] = "",--]] 
 		["Substitutions"] = true,
 		["TargetClass"] = "Cible Classe",
 		["TargetGender"] = "Cible Sexe",
@@ -615,27 +615,27 @@ Cliquez pour coller dans le chat.]=],
 		["TargetIcon"] = "CibleIcone",
 		["TargetLevel"] = "CibleNiveau",
 		["TargetManaDeficit"] = "CibleManqueDeMana",
-		--Translation missing 
-		-- ["TargetName"] = "",
-		--Translation missing 
-		-- ["TargetPercentHP"] = "",
-		--Translation missing 
-		-- ["TargetPossesive"] = "",
-		--Translation missing 
-		-- ["TargetPronoun"] = "",
-		--Translation missing 
-		-- ["TargetRace"] = "",
-		--Translation missing 
-		-- ["TargetTargetName"] = "",
+		--[[Translation missing --]]
+		--[[ ["TargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPercentHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPossesive"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPronoun"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetRace"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetTargetName"] = "",--]] 
 		["unknown sex"] = "sexe inconnue",
-		--Translation missing 
-		-- ["user defined substition \"%s\" not found"] = "",
-		--Translation missing 
-		-- ["User defined substitutions"] = "",
-		--Translation missing 
-		-- ["user substitutions index (usersubs_idx) doesn't exist! oh dear."] = "",
-		--Translation missing 
-		-- ["usersub_"] = "",
+		--[[Translation missing --]]
+		--[[ ["user defined substition \"%s\" not found"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["User defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["user substitutions index (usersubs_idx) doesn't exist! oh dear."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["usersub_"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "frFR", L)
@@ -810,158 +810,158 @@ PL:AddLocale(PRAT_MODULE, "koKR", L)
 L=
 {
 	["Substitutions"] = {
-		--Translation missing 
-		-- ["%d total user defined substitutions"] = "",
-		--Translation missing 
-		-- ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",
-		--Translation missing 
-		-- ["<noguild>"] = "",
-		--Translation missing 
-		-- ["<notarget>"] = "",
-		--Translation missing 
-		-- ["A module to provide basic chat substitutions."] = "",
-		--Translation missing 
-		-- ["Are you sure - this will delete all user defined substitutions and reset defaults?"] = "",
-		--Translation missing 
-		-- ["Are you sure?"] = "",
-		--Translation missing 
-		-- ["can't find substitution index for a substitution named '%s'"] = "",
-		--Translation missing 
-		-- ["current-prompt"] = "",
-		--Translation missing 
-		-- ["defined %s: expands to => %s"] = "",
-		--Translation missing 
-		-- ["Delete all"] = "",
-		--Translation missing 
-		-- ["Delete substitution"] = "",
-		--Translation missing 
-		-- ["Deletes a user defined substitution"] = "",
-		--Translation missing 
-		-- ["Deletes all user defined substitutions"] = "",
-		--Translation missing 
-		-- ["female"] = "",
-		--Translation missing 
-		-- ["her"] = "",
-		--Translation missing 
-		-- ["hers"] = "",
-		--Translation missing 
-		-- ["him"] = "",
-		--Translation missing 
-		-- ["his"] = "",
-		--Translation missing 
-		-- ["it"] = "",
-		--Translation missing 
-		-- ["its"] = "",
-		--Translation missing 
-		-- ["List of available substitutions"] = "",
-		--Translation missing 
-		-- ["List of available substitutions defined by this module. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",
-		--Translation missing 
-		-- ["List substitutions"] = "",
-		--Translation missing 
-		-- ["Lists all current subtitutions in the default chat frame"] = "",
-		--Translation missing 
-		-- ["male"] = "",
-		--Translation missing 
-		-- ["MapLoc"] = "",
-		--Translation missing 
-		-- ["MapPos"] = "",
-		--Translation missing 
-		-- ["MapXPos"] = "",
-		--Translation missing 
-		-- ["MapYPos"] = "",
-		--Translation missing 
-		-- ["MapZone"] = "",
-		--Translation missing 
-		-- ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",
-		--Translation missing 
-		-- ["MouseoverTargetName"] = "",
-		--Translation missing 
-		-- ["NO MATCHFUNC FOUND"] = "",
-		--Translation missing 
-		-- ["no substitution name given"] = "",
-		--Translation missing 
-		-- ["no substitution name supplied for deletion"] = "",
-		--Translation missing 
-		-- ["no user defined subs found"] = "",
-		--Translation missing 
-		-- ["no value given for subtitution \"%s\""] = "",
-		--Translation missing 
-		-- ["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",
-		--Translation missing 
-		-- ["PlayerAverageItemLevel"] = "",
-		--Translation missing 
-		-- ["PlayerCurrentMana"] = "",
-		--Translation missing 
-		-- ["PlayerHealthDeficit"] = "",
-		--Translation missing 
-		-- ["PlayerHP"] = "",
-		--Translation missing 
-		-- ["PlayerManaDeficit"] = "",
-		--Translation missing 
-		-- ["PlayerMaxHP"] = "",
-		--Translation missing 
-		-- ["PlayerMaxMana"] = "",
-		--Translation missing 
-		-- ["PlayerName"] = "",
-		--Translation missing 
-		-- ["PlayerPercentHP"] = "",
-		--Translation missing 
-		-- ["PlayerPercentMana"] = "",
-		--Translation missing 
-		-- ["RandNum"] = "",
-		--Translation missing 
-		-- ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",
-		--Translation missing 
-		-- ["Set substitution"] = "",
-		--Translation missing 
-		-- ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",
-		--Translation missing 
-		-- ["subname -- NOTE: sub name without the prefix '%'"] = "",
-		--Translation missing 
-		-- ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",
-		--Translation missing 
-		-- ["substitution: %s defined as => %s"] = "",
-		--Translation missing 
-		-- ["Substitutions"] = "",
-		--Translation missing 
-		-- ["TargetClass"] = "",
-		--Translation missing 
-		-- ["TargetGender"] = "",
-		--Translation missing 
-		-- ["TargetGuild"] = "",
-		--Translation missing 
-		-- ["TargetHealth"] = "",
-		--Translation missing 
-		-- ["TargetHealthDeficit"] = "",
-		--Translation missing 
-		-- ["TargetIcon"] = "",
-		--Translation missing 
-		-- ["TargetLevel"] = "",
-		--Translation missing 
-		-- ["TargetManaDeficit"] = "",
-		--Translation missing 
-		-- ["TargetName"] = "",
-		--Translation missing 
-		-- ["TargetPercentHP"] = "",
-		--Translation missing 
-		-- ["TargetPossesive"] = "",
-		--Translation missing 
-		-- ["TargetPronoun"] = "",
-		--Translation missing 
-		-- ["TargetRace"] = "",
-		--Translation missing 
-		-- ["TargetTargetName"] = "",
-		--Translation missing 
-		-- ["unknown sex"] = "",
-		--Translation missing 
-		-- ["user defined substition \"%s\" not found"] = "",
-		--Translation missing 
-		-- ["User defined substitutions"] = "",
-		--Translation missing 
-		-- ["user substitutions index (usersubs_idx) doesn't exist! oh dear."] = "",
-		--Translation missing 
-		-- ["usersub_"] = "",
+		--[[Translation missing --]]
+		--[[ ["%d total user defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["<noguild>"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["<notarget>"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["A module to provide basic chat substitutions."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Are you sure - this will delete all user defined substitutions and reset defaults?"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Are you sure?"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["can't find substitution index for a substitution named '%s'"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["current-prompt"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["defined %s: expands to => %s"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Delete all"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Delete substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Deletes a user defined substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Deletes all user defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["female"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["her"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["hers"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["him"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["his"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["it"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["its"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List of available substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List of available substitutions defined by this module. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["List substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Lists all current subtitutions in the default chat frame"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["male"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapLoc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapXPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapYPos"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MapZone"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["MouseoverTargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["NO MATCHFUNC FOUND"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no substitution name given"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no substitution name supplied for deletion"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no user defined subs found"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no value given for subtitution \"%s\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerAverageItemLevel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerCurrentMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerHealthDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerManaDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerMaxHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerMaxMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerPercentHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["PlayerPercentMana"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["RandNum"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set substitution"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname -- NOTE: sub name without the prefix '%'"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["substitution: %s defined as => %s"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetClass"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetGender"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetGuild"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetHealth"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetHealthDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetIcon"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetLevel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetManaDeficit"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPercentHP"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPossesive"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetPronoun"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetRace"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TargetTargetName"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["unknown sex"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["user defined substition \"%s\" not found"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["User defined substitutions"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["user substitutions index (usersubs_idx) doesn't exist! oh dear."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["usersub_"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "esMX", L)
@@ -1153,10 +1153,10 @@ Click para pegar en el chat.]=],
 		["hers"] = "suya",
 		["him"] = "él",
 		["his"] = "suyo",
-		--Translation missing 
-		-- ["it"] = "",
-		--Translation missing 
-		-- ["its"] = "",
+		--[[Translation missing --]]
+		--[[ ["it"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["its"] = "",--]] 
 		["List of available substitutions"] = "Listado de sustituciones disponibles",
 		["List of available substitutions defined by this module. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "Lista de sustituciones definidas por este módulo. (Nota: los usuarios pueden definir valores personalizados para las sustituciones, pero volverá al valor por defecto si la definición del usuario se suprime.)",
 		["List substitutions"] = "Listado de sustituciones",
@@ -1168,16 +1168,16 @@ Click para pegar en el chat.]=],
 		["MapYPos"] = true,
 		["MapZone"] = "MapZona",
 		["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "módulo: buildUserSubsIndex(): advertencia: ¡patrones del módulo no definidos!",
-		--Translation missing 
-		-- ["MouseoverTargetName"] = "",
+		--[[Translation missing --]]
+		--[[ ["MouseoverTargetName"] = "",--]] 
 		["NO MATCHFUNC FOUND"] = "SIN FUNCIONCOINCIDENCIAS ENCONTRADA",
 		["no substitution name given"] = "ningún nombre de sustitución dado",
 		["no substitution name supplied for deletion"] = "ningún nombre de sustitución proporcionado para su eliminación",
 		["no user defined subs found"] = "sustituciones definidas por el usuario no encontradas",
 		["no value given for subtitution \"%s\""] = "ningún valor dado para sustitución \"%s\"",
 		["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "Opciones para establecer y eliminar sustituciones definidas por el usuario. (Nota: los usuarios pueden definir valores personalizados para las sustituciones, pero volverán al valor por defecto si las definiciones del usuario son suprimidas.)",
-		--Translation missing 
-		-- ["PlayerAverageItemLevel"] = "",
+		--[[Translation missing --]]
+		--[[ ["PlayerAverageItemLevel"] = "",--]] 
 		["PlayerCurrentMana"] = "ManaActualJugador",
 		["PlayerHealthDeficit"] = "DéficitSaludJugador",
 		["PlayerHP"] = "VidaJugador",
@@ -1221,15 +1221,15 @@ L=
 {
 	["Substitutions"] = {
 		["%d total user defined substitutions"] = "%d 總使用者定義代替",
-		--Translation missing 
-		-- ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",
+		--[[Translation missing --]]
+		--[[ ["|cffff0000warning:|r subtitution \"%s\" already defined as \"%s\", overwriting"] = "",--]] 
 		["<noguild>"] = "<無公會>",
 		["<notarget>"] = "<無目標>",
 		["A module to provide basic chat substitutions."] = "提供基本聊天標題的模組",
 		["Are you sure - this will delete all user defined substitutions and reset defaults?"] = "你確定嗎 - 這將刪除所有使用者替換且重置至預設值？",
 		["Are you sure?"] = "你確定嗎？",
-		--Translation missing 
-		-- ["can't find substitution index for a substitution named '%s'"] = "",
+		--[[Translation missing --]]
+		--[[ ["can't find substitution index for a substitution named '%s'"] = "",--]] 
 		["current-prompt"] = [=[當前值：%s
 點擊以在聊天視窗中貼上]=],
 		["defined %s: expands to => %s"] = "定義 %s：擴張至 => %s",
@@ -1254,19 +1254,19 @@ L=
 		["MapXPos"] = "地圖X軸",
 		["MapYPos"] = "地圖Y軸",
 		["MapZone"] = "地圖地區",
-		--Translation missing 
-		-- ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",
+		--[[Translation missing --]]
+		--[[ ["module:buildUserSubsIndex(): warning: module patterns not defined!"] = "",--]] 
 		["MouseoverTargetName"] = "鼠標懸停目標名字",
 		["NO MATCHFUNC FOUND"] = true,
-		--Translation missing 
-		-- ["no substitution name given"] = "",
-		--Translation missing 
-		-- ["no substitution name supplied for deletion"] = "",
+		--[[Translation missing --]]
+		--[[ ["no substitution name given"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["no substitution name supplied for deletion"] = "",--]] 
 		["no user defined subs found"] = "找不到使用者定義的代替",
-		--Translation missing 
-		-- ["no value given for subtitution \"%s\""] = "",
-		--Translation missing 
-		-- ["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",
+		--[[Translation missing --]]
+		--[[ ["no value given for subtitution \"%s\""] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Options for setting and removing user defined substitutions. (NB: users may define custom values for existing substitutions, but they will revert to the default value if the user definition is deleted.)"] = "",--]] 
 		["PlayerAverageItemLevel"] = true,
 		["PlayerCurrentMana"] = "玩家當前法力值",
 		["PlayerHealthDeficit"] = "玩家生命不足",
@@ -1278,15 +1278,15 @@ L=
 		["PlayerPercentHP"] = "玩家百分比血量",
 		["PlayerPercentMana"] = "玩家百分比法力",
 		["RandNum"] = true,
-		--Translation missing 
-		-- ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",
+		--[[Translation missing --]]
+		--[[ ["removing user defined substitution \"%s\"; previously expanded to => \"%s\""] = "",--]] 
 		["Set substitution"] = "設定代替",
-		--Translation missing 
-		-- ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",
-		--Translation missing 
-		-- ["subname -- NOTE: sub name without the prefix '%'"] = "",
-		--Translation missing 
-		-- ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",
+		--[[Translation missing --]]
+		--[[ ["Set the value of a user defined substitution (NB: this may be the same as an existing default substitution; to reset it to the default, just remove the user created definition)."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname -- NOTE: sub name without the prefix '%'"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["subname = text after expansion -- NOTE: sub name without the prefix \"%\""] = "",--]] 
 		["substitution: %s defined as => %s"] = "代替: %s 定義為 => %s",
 		["Substitutions"] = "代替",
 		["TargetClass"] = "目標職業",
@@ -1299,8 +1299,8 @@ L=
 		["TargetManaDeficit"] = "目標法力不足",
 		["TargetName"] = "目標名字",
 		["TargetPercentHP"] = "目標百比分血量",
-		--Translation missing 
-		-- ["TargetPossesive"] = "",
+		--[[Translation missing --]]
+		--[[ ["TargetPossesive"] = "",--]] 
 		["TargetPronoun"] = "目標代名詞",
 		["TargetRace"] = "目標種族",
 		["TargetTargetName"] = "目標的目標名字",

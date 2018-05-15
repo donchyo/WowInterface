@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.3.32 (28th March 2018, www.leatrix.com)
+-- 	Leatrix Plus 7.3.33 (2nd May 2018, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.3.32"
+	LeaPlusLC["AddonVer"] = "7.3.33"
 
 ----------------------------------------------------------------------
 --	L00: Leatrix Plus
@@ -6051,18 +6051,21 @@
 			----------------------------------------------------------------------
 
 			-- Position general tooltip
-			hooksecurefunc("GameTooltip_SetDefaultAnchor", function()
+			hooksecurefunc("GameTooltip_SetDefaultAnchor", function(tooltip, parent)
 				if LeaPlusLC["TipMoveTip"] == "On" then
-					local a,b,c,d,e = GameTooltip:GetPoint()
-					if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
-						GameTooltip:ClearAllPoints()
+					if (not tooltip or not parent) then
+						return
 					end
-					GameTooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
+					local a,b,c,d,e = tooltip:GetPoint()
+					if a ~= "BOTTOMRIGHT" or c ~= "BOTTOMRIGHT" then
+						tooltip:ClearAllPoints()
+					end
+					tooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", LeaPlusLC["TipOffsetX"], LeaPlusLC["TipOffsetY"]);
 				end
 			end)
 
 			-- Position pet battle ability tooltips
-			hooksecurefunc("PetBattleAbilityTooltip_Show", function(tooltip, parent)
+			hooksecurefunc("PetBattleAbilityTooltip_Show", function(void, parent)
 				if LeaPlusLC["TipMoveTip"] == "On" then
 					if parent == UIParent then
 						local a,b,c,d,e = PetBattlePrimaryAbilityTooltip:GetPoint()
@@ -10086,7 +10089,7 @@
 				return
 			elseif str == "con" then
 				-- Show the developer console
-				C_Console.SetFontHeight(20)
+				C_Console.SetFontHeight(28)
 				DeveloperConsole:Toggle(true)
 				return
 			elseif str == "movlist" then

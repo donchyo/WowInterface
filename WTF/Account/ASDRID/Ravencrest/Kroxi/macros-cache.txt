@@ -1,0 +1,38 @@
+VER 3 0100000000000004 "f" "INV_MISC_QUESTIONMARK"
+/cast [@focus] pummel
+END
+VER 3 0100000000000008 "hidden" "INV_SCROLL_11"
+/run print(IsQuestFlaggedCompleted(44311))
+/run print("a")
+/run print(IsQuestFlaggedCompleted(44311))
+/run print("b")
+END
+VER 3 0100000000000003 "intervene" "INV_MISC_QUESTIONMARK"
+#showtooltip intervene
+/cancelaura bladestorm
+/cast [target=mouseover] intervene
+END
+VER 3 0100000000000001 "leap" "INV_MISC_QUESTIONMARK"
+/cast !heroic leap
+END
+VER 3 0100000000000005 "mexe" "INV_Misc_QuestionMark"
+/cast [@mouseover] execute
+END
+VER 3 0100000000000002 "shield" "INV_MISC_QUESTIONMARK"
+/cast Defensive Stance
+/cast Shield Barrier
+END
+VER 3 0100000000000007 "starlight" "INV_MISC_QUESTIONMARK"
+/run BuyMerchantItem(14,200)
+END
+VER 3 0100000000000006 "t3" "INV_Misc_QuestionMark"
+.item 1 22418
+.item 3 22419
+.item 5 22416
+.item 6 22422
+.item 7 22417
+.item 8 22420
+.item 10 22421
+.item 16 49623
+.item 17 49623
+END

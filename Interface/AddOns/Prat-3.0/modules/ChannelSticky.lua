@@ -85,26 +85,26 @@ PL:AddLocale(PRAT_MODULE, "enUS",L)
 L=
 {
 	["ChannelSticky"] = {
-		--Translation missing 
-		-- ["Channel"] = "",
-		--Translation missing 
-		-- ["ChannelSticky"] = "",
-		--Translation missing 
-		-- ["Chat channel sticky options."] = "",
-		--Translation missing 
-		-- ["ChatType"] = "",
-		--Translation missing 
-		-- ["Per chat type options."] = "",
+		--[[Translation missing --]]
+		--[[ ["Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["ChannelSticky"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat channel sticky options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["ChatType"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Per chat type options."] = "",--]] 
 		["smartgroup_desc"] = "Ajouter une commande /gr qui sélectionne automatiquement le bon type de chat : raid, groupe, champ de bataille",
 		["smartgroup_name"] = "Groupes intelligents",
-		--Translation missing 
-		-- ["Sticky %s"] = "",
-		--Translation missing 
-		-- ["Sticky Per Chat Frame"] = "",
-		--Translation missing 
-		-- ["Toggle remembering the chat type last used per chat frame."] = "",
-		--Translation missing 
-		-- ["Toggles sticky on and off for %s."] = "",
+		--[[Translation missing --]]
+		--[[ ["Sticky %s"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Sticky Per Chat Frame"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle remembering the chat type last used per chat frame."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggles sticky on and off for %s."] = "",--]] 
 	}
 }
 
@@ -154,28 +154,28 @@ PL:AddLocale(PRAT_MODULE, "koKR",L)
 L=
 {
 	["ChannelSticky"] = {
-		--Translation missing 
-		-- ["Channel"] = "",
-		--Translation missing 
-		-- ["ChannelSticky"] = "",
-		--Translation missing 
-		-- ["Chat channel sticky options."] = "",
-		--Translation missing 
-		-- ["ChatType"] = "",
-		--Translation missing 
-		-- ["Per chat type options."] = "",
-		--Translation missing 
-		-- ["smartgroup_desc"] = "",
-		--Translation missing 
-		-- ["smartgroup_name"] = "",
-		--Translation missing 
-		-- ["Sticky %s"] = "",
-		--Translation missing 
-		-- ["Sticky Per Chat Frame"] = "",
-		--Translation missing 
-		-- ["Toggle remembering the chat type last used per chat frame."] = "",
-		--Translation missing 
-		-- ["Toggles sticky on and off for %s."] = "",
+		--[[Translation missing --]]
+		--[[ ["Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["ChannelSticky"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat channel sticky options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["ChatType"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Per chat type options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["smartgroup_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["smartgroup_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Sticky %s"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Sticky Per Chat Frame"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggle remembering the chat type last used per chat frame."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggles sticky on and off for %s."] = "",--]] 
 	}
 }
 
@@ -250,15 +250,15 @@ L=
 		["Chat channel sticky options."] = "聊天頻道固定選項",
 		["ChatType"] = "聊天類型",
 		["Per chat type options."] = "每聊天類型選項。",
-		--Translation missing 
-		-- ["smartgroup_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["smartgroup_desc"] = "",--]] 
 		["smartgroup_name"] = "智慧化群組",
 		["Sticky %s"] = "固定 %s",
 		["Sticky Per Chat Frame"] = "個別聊天視窗固定",
-		--Translation missing 
-		-- ["Toggle remembering the chat type last used per chat frame."] = "",
-		--Translation missing 
-		-- ["Toggles sticky on and off for %s."] = "",
+		--[[Translation missing --]]
+		--[[ ["Toggle remembering the chat type last used per chat frame."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Toggles sticky on and off for %s."] = "",--]] 
 	}
 }
 

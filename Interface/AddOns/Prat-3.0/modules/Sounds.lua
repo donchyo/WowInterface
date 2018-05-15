@@ -223,62 +223,62 @@ Prat:AddModuleToLoad(function()
   L=
 {
 	["Sounds"] = {
-		--Translation missing 
-		-- ["A module to play sounds on certain chat messages."] = "",
-		--Translation missing 
-		-- ["Add a custom channel"] = "",
-		--Translation missing 
-		-- ["bn_whisper_desc"] = "",
-		--Translation missing 
-		-- ["bn_whisper_name"] = "",
-		--Translation missing 
-		-- ["Custom Channels"] = "",
-		--Translation missing 
-		-- ["group_lead_desc"] = "",
-		--Translation missing 
-		-- ["group_lead_name"] = "",
-		--Translation missing 
-		-- ["guild_desc"] = "",
-		--Translation missing 
-		-- ["guild_name"] = "",
-		--Translation missing 
-		-- ["incoming"] = "",
-		--Translation missing 
-		-- ["Incoming Sounds"] = "",
-		--Translation missing 
-		-- ["officer_desc"] = "",
-		--Translation missing 
-		-- ["officer_name"] = "",
-		--Translation missing 
-		-- ["outgoing"] = "",
-		--Translation missing 
-		-- ["Outgoing Sounds"] = "",
-		--Translation missing 
-		-- ["party_desc"] = "",
-		--Translation missing 
-		-- ["party_name"] = "",
-		--Translation missing 
-		-- ["Play a sound for a certain channel name (can be a substring)"] = "",
-		--Translation missing 
-		-- ["raid_desc"] = "",
-		--Translation missing 
-		-- ["raid_name"] = "",
-		--Translation missing 
-		-- ["Remove a custom channel"] = "",
-		--Translation missing 
-		-- ["Reset settings"] = "",
-		--Translation missing 
-		-- ["Restore default settings and resets custom channel list"] = "",
-		--Translation missing 
-		-- ["Sound selection for incoming chat messages"] = "",
-		--Translation missing 
-		-- ["Sound selection for outgoing (from you) chat messages"] = "",
-		--Translation missing 
-		-- ["Sounds"] = "",
-		--Translation missing 
-		-- ["whisper_desc"] = "",
-		--Translation missing 
-		-- ["whisper_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["A module to play sounds on certain chat messages."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Add a custom channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["bn_whisper_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["bn_whisper_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Custom Channels"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["group_lead_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["group_lead_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["guild_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["guild_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["incoming"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Incoming Sounds"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["officer_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["officer_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["outgoing"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Outgoing Sounds"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["party_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["party_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Play a sound for a certain channel name (can be a substring)"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["raid_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["raid_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Remove a custom channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Reset settings"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Restore default settings and resets custom channel list"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Sound selection for incoming chat messages"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Sound selection for outgoing (from you) chat messages"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Sounds"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["whisper_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["whisper_name"] = "",--]] 
 	}
 }
 
@@ -364,15 +364,15 @@ Prat:AddModuleToLoad(function()
 	["Sounds"] = {
 		["A module to play sounds on certain chat messages."] = "Un módulo que reproduce sonidos con ciertos mensajes del chat.",
 		["Add a custom channel"] = "Añadir un canal personalizado",
-		--Translation missing 
-		-- ["bn_whisper_desc"] = "",
-		--Translation missing 
-		-- ["bn_whisper_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["bn_whisper_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["bn_whisper_name"] = "",--]] 
 		["Custom Channels"] = "Canales Personalizados",
-		--Translation missing 
-		-- ["group_lead_desc"] = "",
-		--Translation missing 
-		-- ["group_lead_name"] = "",
+		--[[Translation missing --]]
+		--[[ ["group_lead_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["group_lead_name"] = "",--]] 
 		["guild_desc"] = "Sonido para mensajes de hermandad %s",
 		["guild_name"] = "Hermandad",
 		["incoming"] = "Recibido",
@@ -408,8 +408,8 @@ Prat:AddModuleToLoad(function()
 		["bn_whisper_desc"] = "聲音於 %s Battle.Net 密話訊息",
 		["bn_whisper_name"] = "Battle.Net 密話",
 		["Custom Channels"] = "自訂頻道",
-		--Translation missing 
-		-- ["group_lead_desc"] = "",
+		--[[Translation missing --]]
+		--[[ ["group_lead_desc"] = "",--]] 
 		["group_lead_name"] = "隊長",
 		["guild_desc"] = "公會訊息音效：%s",
 		["guild_name"] = "公會",

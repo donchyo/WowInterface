@@ -1,17 +1,16 @@
 -- German localization file for deDE by Ragnar_F and Google translator, announce corrections by Salty
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
--- ]]
+-- local AddOn
 local ADDON = ...
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale(ADDON, "deDE");
 if not L then return; end
-
+--
 L["NOP_TITLE"] = "New Openables"
 L["NOP_VERSION"] = "|cFFFFFFFF%s - benutze |cFFFF00FF/nop|cFFFFFFFF"
-
 L["CLICK_DRAG_MSG"] = "ALT-Linksklick und ziehen, um zu verschieben."
 L["CLICK_OPEN_MSG"] = "Linksklick, um Gegenstand zu öffnen oder benutzen."
 L["CLICK_SKIP_MSG"] = "Rechtsklick, um Gegenstand zu überspringen."
@@ -102,7 +101,6 @@ L["ARTIFACT_ANNOUNCE"] = "%s hat %d unverteilte(n) Talentpunkt(e)!"
 L["ARCHAELOGY_ANNOUNCE"] = "Archäologie %s ist fertig!"
 L["TALENT_ANNOUNCE"] = "%s ist fertig!"
 L["RESTARTED_LOOKUP"] = "Temporäre Blacklist gelöscht, Neustart der Suche!"
-
 L["CONSOLE_USAGE"] = [=[ [reset|skin|lock|clear|list|unlist|skip|glow|zone|quest|show]
 reset  - setzt die Schaltfläche auf die Mitte des Bildschirms zurück
 skin   - versieht die Schaltfläche mit einem Skin

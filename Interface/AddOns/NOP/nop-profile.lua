@@ -1,21 +1,24 @@
---[[ LUA variables in WTF ]]
+-- LUA variables in WTF
 local _
--- [[
+-- global functions and variebles to locals to keep LINT happy
 local assert = _G.assert
 local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
 local pairs = _G.pairs; assert(pairs ~= nil,'pairs')
 local RegisterStateDriver = _G.RegisterStateDriver; assert(RegisterStateDriver ~= nil,'RegisterStateDriver')
 local string = _G.string; assert(string ~= nil,'string')
 local wipe = _G.wipe; assert(wipe ~= nil,'wipe')
--- ]]
+-- local AddOn
 local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
+--
+local T_CHECK = P.T_CHECK; assert(T_CHECK ~= nil,'T_CHECK')
+--
 function NOP:ProfileChanged() -- LUA stored variables changed
   self.DB = self.AceDB.profile
   self:ButtonLoad()
   self:QBUpdate()
   self:QBSkin()
-  wipe(NOP.T_CHECK)
+  wipe(T_CHECK)
   self:ItemShowNew()
 end
 function NOP:ProfileLoad() -- LUA stored variables load and init
@@ -250,7 +253,7 @@ function NOP:OptionsLoad() -- load options for UI config
             desc = P.L["SKIL_EXALTED_HELP"],
             type = "toggle",
             -- width = "full",    
-            set = function(info,val) NOP.DB["SkipExalted"] = val; wipe(NOP.T_CHECK); end,
+            set = function(info,val) NOP.DB["SkipExalted"] = val; wipe(T_CHECK); end,
             get = function(info) return NOP.DB.SkipExalted end,
           },
         },

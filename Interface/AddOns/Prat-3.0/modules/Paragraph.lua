@@ -85,28 +85,28 @@ PL:AddLocale(PRAT_MODULE, "enUS", L)
 L=
 {
 	["Paragraph"] = {
-		--Translation missing 
-		-- ["adjustlinks_desc"] = "",
-		--Translation missing 
-		-- ["adjustlinks_name"] = "",
-		--Translation missing 
-		-- ["Center"] = "",
-		--Translation missing 
-		-- ["Chat window paragraph options."] = "",
-		--Translation missing 
-		-- ["justification_desc"] = "",
-		--Translation missing 
-		-- ["justification_name"] = "",
-		--Translation missing 
-		-- ["Left"] = "",
-		--Translation missing 
-		-- ["Line Spacing"] = "",
-		--Translation missing 
-		-- ["Paragraph"] = "",
-		--Translation missing 
-		-- ["Right"] = "",
-		--Translation missing 
-		-- ["Set the line spacing for all chat windows."] = "",
+		--[[Translation missing --]]
+		--[[ ["adjustlinks_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["adjustlinks_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Center"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat window paragraph options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["justification_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["justification_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Left"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Line Spacing"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Paragraph"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Right"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the line spacing for all chat windows."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "itIT", L)
@@ -115,28 +115,28 @@ PL:AddLocale(PRAT_MODULE, "itIT", L)
 L=
 {
 	["Paragraph"] = {
-		--Translation missing 
-		-- ["adjustlinks_desc"] = "",
-		--Translation missing 
-		-- ["adjustlinks_name"] = "",
-		--Translation missing 
-		-- ["Center"] = "",
-		--Translation missing 
-		-- ["Chat window paragraph options."] = "",
-		--Translation missing 
-		-- ["justification_desc"] = "",
-		--Translation missing 
-		-- ["justification_name"] = "",
-		--Translation missing 
-		-- ["Left"] = "",
-		--Translation missing 
-		-- ["Line Spacing"] = "",
-		--Translation missing 
-		-- ["Paragraph"] = "",
-		--Translation missing 
-		-- ["Right"] = "",
-		--Translation missing 
-		-- ["Set the line spacing for all chat windows."] = "",
+		--[[Translation missing --]]
+		--[[ ["adjustlinks_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["adjustlinks_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Center"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat window paragraph options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["justification_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["justification_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Left"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Line Spacing"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Paragraph"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Right"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the line spacing for all chat windows."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "ptBR", L)
@@ -199,28 +199,28 @@ PL:AddLocale(PRAT_MODULE, "koKR",L)
 L=
 {
 	["Paragraph"] = {
-		--Translation missing 
-		-- ["adjustlinks_desc"] = "",
-		--Translation missing 
-		-- ["adjustlinks_name"] = "",
-		--Translation missing 
-		-- ["Center"] = "",
-		--Translation missing 
-		-- ["Chat window paragraph options."] = "",
-		--Translation missing 
-		-- ["justification_desc"] = "",
-		--Translation missing 
-		-- ["justification_name"] = "",
-		--Translation missing 
-		-- ["Left"] = "",
-		--Translation missing 
-		-- ["Line Spacing"] = "",
-		--Translation missing 
-		-- ["Paragraph"] = "",
-		--Translation missing 
-		-- ["Right"] = "",
-		--Translation missing 
-		-- ["Set the line spacing for all chat windows."] = "",
+		--[[Translation missing --]]
+		--[[ ["adjustlinks_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["adjustlinks_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Center"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Chat window paragraph options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["justification_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["justification_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Left"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Line Spacing"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Paragraph"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Right"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Set the line spacing for all chat windows."] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "esMX",L)

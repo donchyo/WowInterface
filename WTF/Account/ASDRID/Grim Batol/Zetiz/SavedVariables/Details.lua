@@ -2,14 +2,2315 @@
 _detalhes_database = {
 	["savedbuffs"] = {
 	},
-	["mythic_dungeon_id"] = 10,
+	["mythic_dungeon_id"] = 11,
 	["tabela_historico"] = {
 		["tabelas"] = {
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 1089,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.005577,
+							["damage_from"] = {
+								["Disgusting Parasite"] = true,
+								["Marblub the Massive"] = true,
+								["The Oracle"] = true,
+							},
+							["targets"] = {
+								["Disgusting Parasite"] = 2753442,
+								["Marblub the Massive"] = 21264638,
+								["The Oracle"] = 2568390,
+							},
+							["serial"] = "Player-1303-08780D58",
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 26586470.005577,
+							["spec"] = 577,
+							["dps_started"] = false,
+							["total"] = 26586470.005577,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1523141882,
+							["nome"] = "Ganymede",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 10,
+										["b_amt"] = 1,
+										["c_dmg"] = 673664,
+										["g_amt"] = 0,
+										["n_max"] = 56423,
+										["targets"] = {
+											["Disgusting Parasite"] = 145000,
+											["Marblub the Massive"] = 705944,
+											["The Oracle"] = 39046,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 216326,
+										["n_min"] = 30860,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 889990,
+										["c_max"] = 108660,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 30860,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 44346,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[198030] = {
+										["c_amt"] = 14,
+										["b_amt"] = 0,
+										["c_dmg"] = 2066132,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Marblub the Massive"] = 2066132,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 2066132,
+										["c_max"] = 153644,
+										["id"] = 198030,
+										["r_dmg"] = 0,
+										["spellschool"] = 124,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 139386,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[210155] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 281320,
+										["targets"] = {
+											["Marblub the Massive"] = 281320,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 281320,
+										["n_min"] = 281320,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 281320,
+										["c_max"] = 0,
+										["id"] = 210155,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[201789] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 409138,
+										["g_amt"] = 0,
+										["n_max"] = 69827,
+										["targets"] = {
+											["Marblub the Massive"] = 679814,
+											["The Oracle"] = 186638,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 457314,
+										["n_min"] = 44347,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 866452,
+										["c_max"] = 140924,
+										["id"] = 201789,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 132999,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[255609] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 342873,
+										["targets"] = {
+											["Marblub the Massive"] = 627304,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 627304,
+										["n_min"] = 284431,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 627304,
+										["c_max"] = 0,
+										["id"] = 255609,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[200685] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 168612,
+										["targets"] = {
+											["Disgusting Parasite"] = 333970,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 333970,
+										["n_min"] = 165358,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 333970,
+										["c_max"] = 0,
+										["id"] = 200685,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[253324] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1299597,
+										["g_amt"] = 0,
+										["n_max"] = 540184,
+										["targets"] = {
+											["Marblub the Massive"] = 1839781,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 540184,
+										["n_min"] = 540184,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1839781,
+										["c_max"] = 1299597,
+										["id"] = 253324,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 1299597,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[199547] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 280717,
+										["targets"] = {
+											["Marblub the Massive"] = 280717,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 280717,
+										["n_min"] = 280717,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 280717,
+										["c_max"] = 0,
+										["id"] = 199547,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[201628] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 928432,
+										["g_amt"] = 0,
+										["n_max"] = 140653,
+										["targets"] = {
+											["Marblub the Massive"] = 1256939,
+											["The Oracle"] = 555332,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 883839,
+										["n_min"] = 94377,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 1812271,
+										["c_max"] = 284568,
+										["id"] = 201628,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 177461,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[217070] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1452565,
+										["targets"] = {
+											["Marblub the Massive"] = 1452565,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1452565,
+										["n_min"] = 1452565,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1452565,
+										["c_max"] = 0,
+										["id"] = 217070,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[202446] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 752073,
+										["targets"] = {
+											["Marblub the Massive"] = 752073,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 752073,
+										["n_min"] = 752073,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 752073,
+										["c_max"] = 0,
+										["id"] = 202446,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[162243] = {
+										["c_amt"] = 2,
+										["b_amt"] = 1,
+										["c_dmg"] = 1007475,
+										["g_amt"] = 0,
+										["n_max"] = 289901,
+										["targets"] = {
+											["Marblub the Massive"] = 952637,
+											["The Oracle"] = 921714,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 866876,
+										["n_min"] = 126532,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 1874351,
+										["c_max"] = 536204,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 471271,
+										["successful_casted"] = 0,
+										["b_dmg"] = 126532,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[210153] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 205003,
+										["g_amt"] = 0,
+										["n_max"] = 91376,
+										["targets"] = {
+											["Marblub the Massive"] = 383934,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 178931,
+										["n_min"] = 87555,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 383934,
+										["c_max"] = 205003,
+										["id"] = 210153,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 205003,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[222031] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 813930,
+										["g_amt"] = 0,
+										["n_max"] = 357504,
+										["targets"] = {
+											["Disgusting Parasite"] = 356021,
+											["Marblub the Massive"] = 357504,
+											["The Oracle"] = 813930,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 713525,
+										["n_min"] = 356021,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1527455,
+										["c_max"] = 813930,
+										["id"] = 222031,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 813930,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[199552] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 119475,
+										["g_amt"] = 0,
+										["n_max"] = 54137,
+										["targets"] = {
+											["Disgusting Parasite"] = 223169,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 103694,
+										["n_min"] = 49557,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 223169,
+										["c_max"] = 119475,
+										["id"] = 199552,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 119475,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[227518] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1391019,
+										["g_amt"] = 0,
+										["n_max"] = 553988,
+										["targets"] = {
+											["Marblub the Massive"] = 3490910,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2099891,
+										["n_min"] = 464098,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 3490910,
+										["c_max"] = 1391019,
+										["id"] = 227518,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 1391019,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[202388] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1745054,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Marblub the Massive"] = 1745054,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1745054,
+										["c_max"] = 1745054,
+										["id"] = 202388,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 1745054,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[236237] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 139102,
+										["targets"] = {
+											["Marblub the Massive"] = 698414,
+											["The Oracle"] = 51730,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 750144,
+										["n_min"] = 28071,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 750144,
+										["c_max"] = 0,
+										["id"] = 236237,
+										["r_dmg"] = 0,
+										["spellschool"] = 124,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[201428] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1175350,
+										["g_amt"] = 0,
+										["n_max"] = 454480,
+										["targets"] = {
+											["Marblub the Massive"] = 2855007,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1679657,
+										["n_min"] = 362140,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 2855007,
+										["c_max"] = 1175350,
+										["id"] = 201428,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 1175350,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[207694] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 193809,
+										["targets"] = {
+											["Marblub the Massive"] = 838589,
+											["Disgusting Parasite"] = 403226,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1241815,
+										["n_min"] = 8421,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["total"] = 1241815,
+										["c_max"] = 0,
+										["id"] = 207694,
+										["r_dmg"] = 0,
+										["spellschool"] = 33,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 21,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[192611] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 646028,
+										["g_amt"] = 0,
+										["n_max"] = 323014,
+										["targets"] = {
+											["Disgusting Parasite"] = 1292056,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 646028,
+										["n_min"] = 323014,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1292056,
+										["c_max"] = 646028,
+										["id"] = 192611,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 646028,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1523141882,
+							["last_dps"] = 1563358.22683144,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 509267.005577,
+							["start_time"] = 1523141663,
+							["delay"] = 0,
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001418,
+							["damage_from"] = {
+								["Disgusting Parasite"] = true,
+								["Marblub the Massive"] = true,
+								["Environment (Falling)"] = true,
+							},
+							["targets"] = {
+								["Marblub the Massive"] = 18125678,
+								["Disgusting Parasite"] = 587085,
+							},
+							["serial"] = "Player-1303-03FA8295",
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 18712763.001418,
+							["spec"] = 259,
+							["dps_started"] = false,
+							["total"] = 18712763.001418,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1523141842,
+							["nome"] = "Zetiz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 476067,
+										["g_amt"] = 0,
+										["n_max"] = 33408,
+										["targets"] = {
+											["Disgusting Parasite"] = 71133,
+											["Marblub the Massive"] = 452538,
+											["Fallen Priestess"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 47604,
+										["n_min"] = 14196,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 523671,
+										["c_max"] = 75191,
+										["MISS"] = 5,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 35065,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[192759] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 852390,
+										["g_amt"] = 0,
+										["n_max"] = 356691,
+										["targets"] = {
+											["Marblub the Massive"] = 1459941,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 607551,
+										["n_min"] = 250860,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1459941,
+										["c_max"] = 852390,
+										["id"] = 192759,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 852390,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[5374] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 756807,
+										["g_amt"] = 0,
+										["n_max"] = 226349,
+										["targets"] = {
+											["Marblub the Massive"] = 983156,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 226349,
+										["n_min"] = 226349,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 983156,
+										["c_max"] = 413881,
+										["id"] = 5374,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 342926,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[192660] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 3157887,
+										["g_amt"] = 0,
+										["n_max"] = 522444,
+										["targets"] = {
+											["Marblub the Massive"] = 4202775,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1044888,
+										["n_min"] = 522444,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 4202775,
+										["c_max"] = 789472,
+										["id"] = 192660,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 789471,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[222062] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 905464,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Marblub the Massive"] = 905464,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 905464,
+										["c_max"] = 905464,
+										["id"] = 222062,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 905464,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[32645] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1589289,
+										["targets"] = {
+											["Marblub the Massive"] = 2648815,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2648815,
+										["n_min"] = 1059526,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2648815,
+										["c_max"] = 0,
+										["id"] = 32645,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[51723] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 156114,
+										["g_amt"] = 0,
+										["n_max"] = 76527,
+										["targets"] = {
+											["Disgusting Parasite"] = 462219,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 306105,
+										["n_min"] = 76526,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 462219,
+										["c_max"] = 156114,
+										["id"] = 51723,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 156114,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[113780] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 494968,
+										["g_amt"] = 0,
+										["n_max"] = 103732,
+										["targets"] = {
+											["Marblub the Massive"] = 841330,
+											["Disgusting Parasite"] = 53733,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 400095,
+										["n_min"] = 53733,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 895063,
+										["c_max"] = 211612,
+										["id"] = 113780,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 120577,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[192760] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 470780,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Marblub the Massive"] = 470780,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 470780,
+										["c_max"] = 470780,
+										["id"] = 192760,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 470780,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[27576] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 394817,
+										["g_amt"] = 0,
+										["n_max"] = 112491,
+										["targets"] = {
+											["Marblub the Massive"] = 507308,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 112491,
+										["n_min"] = 112491,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 507308,
+										["c_max"] = 226951,
+										["id"] = 27576,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 167866,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[192434] = {
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 705907,
+										["g_amt"] = 0,
+										["n_max"] = 44703,
+										["targets"] = {
+											["Marblub the Massive"] = 1118164,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 412257,
+										["n_min"] = 33113,
+										["g_dmg"] = 0,
+										["counter"] = 18,
+										["total"] = 1118164,
+										["c_max"] = 91194,
+										["id"] = 192434,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 67551,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[703] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 261753,
+										["g_amt"] = 0,
+										["n_max"] = 128310,
+										["targets"] = {
+											["Marblub the Massive"] = 390063,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 128310,
+										["n_min"] = 128310,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 390063,
+										["c_max"] = 261753,
+										["id"] = 703,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 261753,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[245388] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1729307,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Marblub the Massive"] = 1729307,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1729307,
+										["c_max"] = 1729307,
+										["id"] = 245388,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 1729307,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[1943] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1078747,
+										["g_amt"] = 0,
+										["n_max"] = 208314,
+										["targets"] = {
+											["Marblub the Massive"] = 1287061,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 208314,
+										["n_min"] = 208314,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1287061,
+										["c_max"] = 424961,
+										["id"] = 1943,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 326893,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[2818] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 990628,
+										["g_amt"] = 0,
+										["n_max"] = 138348,
+										["targets"] = {
+											["Marblub the Massive"] = 1128976,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 138348,
+										["n_min"] = 138348,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1128976,
+										["c_max"] = 495314,
+										["id"] = 2818,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 495314,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1523141680,
+							["last_dps"] = 1100362.40158536,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 489095.001418,
+							["start_time"] = 1523141665,
+							["delay"] = 0,
+							["classe"] = "ROGUE",
+						}, -- [2]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008666,
+							["damage_from"] = {
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008666,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 0.008666,
+							["serial"] = "Player-1303-03FA8295",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Unknown",
+							["spec"] = 259,
+							["grupo"] = true,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 0.008666,
+							["start_time"] = 0,
+							["delay"] = 0,
+							["classe"] = "ROGUE",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 1089,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.006516,
+							["total_without_pet"] = 451320.006516,
+							["total"] = 451320.006516,
+							["spec"] = 259,
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-1303-03FA8295",
+							["totalabsorb"] = 451320.006516,
+							["last_hps"] = 26538.8690176771,
+							["targets"] = {
+								["Zetiz"] = 451320,
+							},
+							["totalover_without_pet"] = 0.006516,
+							["healing_taken"] = 451320.006516,
+							["fight_component"] = true,
+							["end_time"] = 1523141680,
+							["last_event"] = 1523141675,
+							["nome"] = "Zetiz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[207472] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 451320,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 250744,
+										["targets"] = {
+											["Zetiz"] = 451320,
+										},
+										["n_min"] = 11433,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 451320,
+										["c_max"] = 0,
+										["id"] = 207472,
+										["targets_absorbs"] = {
+											["Zetiz"] = 451320,
+										},
+										["c_curado"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 451320,
+										["n_amt"] = 3,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Zetiz"] = true,
+							},
+							["classe"] = "ROGUE",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["start_time"] = 1523141667,
+							["totaldenied"] = 0.006516,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+								["Zetiz"] = 451320,
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Ganymede"] = 9669974,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 9669974.001847,
+							["total_without_pet"] = 384264.001847,
+							["total"] = 384264.001847,
+							["spec"] = 577,
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 2,
+							["on_hold"] = false,
+							["serial"] = "Player-1303-08780D58",
+							["totalabsorb"] = 0.001847,
+							["last_hps"] = 22595.7898298143,
+							["targets"] = {
+								["Ganymede"] = 510557,
+							},
+							["totalover_without_pet"] = 0.001847,
+							["healing_taken"] = 384264.001847,
+							["fight_component"] = true,
+							["end_time"] = 1523141680,
+							["last_event"] = 1523141680,
+							["nome"] = "Ganymede",
+							["spells"] = {
+								["_ActorTable"] = {
+									[207694] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Ganymede"] = 862307,
+										},
+										["n_max"] = 107251,
+										["targets"] = {
+											["Ganymede"] = 319121,
+										},
+										["n_min"] = 20552,
+										["counter"] = 21,
+										["overheal"] = 862307,
+										["total"] = 319121,
+										["c_max"] = 0,
+										["id"] = 207694,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 319121,
+										["n_amt"] = 21,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[178963] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Ganymede"] = 1308795,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Ganymede"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 1308795,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 178963,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Ganymede"] = 5928318,
+										},
+										["n_max"] = 46311,
+										["targets"] = {
+											["Ganymede"] = 65143,
+										},
+										["n_min"] = 0,
+										["counter"] = 14,
+										["overheal"] = 5928318,
+										["total"] = 65143,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 65143,
+										["n_amt"] = 14,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[228532] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Ganymede"] = 1570554,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Ganymede"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 3,
+										["overheal"] = 1570554,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 228532,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 3,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Ganymede"] = true,
+							},
+							["classe"] = "DEMONHUNTER",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["start_time"] = 1523141664,
+							["totaldenied"] = 0.001847,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 1089,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 1089,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[202443] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 4,
+										["id"] = 202443,
+										["refreshamt"] = 13,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[206491] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 7,
+										["id"] = 206491,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 93,
+							["classe"] = "DEMONHUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[162264] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 162264,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[198013] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 2,
+										["id"] = 198013,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[253307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 12,
+										["id"] = 253307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[242584] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 242584,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[252801] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 252801,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[227723] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = 227723,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[188499] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 188499,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[208608] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 208608,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[253308] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = 253308,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[210152] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 210152,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[190909] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 190909,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 11,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 577,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[201427] = 4,
+								[188499] = 1,
+								[198013] = 1,
+								[201467] = 1,
+								[195072] = 2,
+								[162794] = 2,
+								[206491] = 1,
+								[162243] = 3,
+								[210152] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1523141680,
+							["nome"] = "Ganymede",
+							["pets"] = {
+							},
+							["serial"] = "Player-1303-08780D58",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[192759] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 8,
+										["id"] = 192759,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[79140] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 9,
+										["id"] = 79140,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[245389] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 7,
+										["id"] = 245389,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[2818] = {
+										["appliedamt"] = 4,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 12,
+										["id"] = 2818,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[703] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 6,
+										["id"] = 703,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[3409] = {
+										["appliedamt"] = 3,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 2,
+										["id"] = 3409,
+										["refreshamt"] = 3,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1943] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 9,
+										["id"] = 1943,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[192425] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 9,
+										["id"] = 192425,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[192432] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 9,
+										["id"] = 192432,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["cooldowns_defensive"] = 17.004178,
+							["buff_uptime"] = 95,
+							["last_cooldown"] = {
+								1526077980.531, -- [1]
+								1966, -- [2]
+							},
+							["classe"] = "ROGUE",
+							["cooldowns_defensive_targets"] = {
+								["Zetiz"] = 17,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[207472] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = 207472,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[11327] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 11327,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[2823] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = 2823,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[32645] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = 32645,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[3408] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = 3408,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[213888] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["id"] = 213888,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[207076] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = 207076,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[138213] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = 138213,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[72286] = {
+										["activedamt"] = 1,
+										["id"] = 72286,
+										["targets"] = {
+										},
+										["actived_at"] = 1523141663,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[192759] = {
+										["activedamt"] = 1,
+										["id"] = 192759,
+										["targets"] = {
+										},
+										["actived_at"] = 1523141667,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 71,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 259,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[192759] = 1,
+								[1329] = 3,
+								[32645] = 2,
+								[51723] = 2,
+								[27576] = 3,
+								[1856] = 1,
+								[703] = 1,
+								[245388] = 1,
+								[1943] = 1,
+								[79140] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["cooldowns_defensive_spells"] = {
+								["_ActorTable"] = {
+									[1966] = {
+										["id"] = 1966,
+										["targets"] = {
+											["Zetiz"] = 16,
+										},
+										["counter"] = 16,
+									},
+									[31224] = {
+										["id"] = 31224,
+										["targets"] = {
+											["Zetiz"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["last_event"] = 1526077979,
+							["nome"] = "Zetiz",
+							["pets"] = {
+							},
+							["serial"] = "Player-1303-03FA8295",
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Unknown",
+							["spec"] = 259,
+							["grupo"] = true,
+							["cooldowns_defensive"] = 4.00515,
+							["pets"] = {
+							},
+							["last_cooldown"] = {
+								1525973226.09, -- [1]
+								1966, -- [2]
+							},
+							["last_event"] = 1525973229,
+							["tipo"] = 4,
+							["cooldowns_defensive_targets"] = {
+								["Unknown"] = 4,
+							},
+							["cooldowns_defensive_spells"] = {
+								["_ActorTable"] = {
+									[1966] = {
+										["id"] = 1966,
+										["targets"] = {
+											["Unknown"] = 4,
+										},
+										["counter"] = 4,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-1303-03FA8295",
+							["classe"] = "ROGUE",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 1089,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Ganymede"] = true,
+					["Zetiz"] = true,
+				},
+				["overall_added"] = true,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "Marblub the Massive",
+				["combat_counter"] = 17148,
+				["totals"] = {
+					45299231.2787978, -- [1]
+					835583.996786, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 19.0545189999999,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Zetiz"] = {
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525956013.772, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [1]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1526077980.531, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [2]
+						{
+							true, -- [1]
+							3, -- [2]
+							37775, -- [3]
+							1523142364.666, -- [4]
+							5043145, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+							1, -- [1]
+							31224, -- [2]
+							1, -- [3]
+							1523142407.634, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [4]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1523483377.321, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [5]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1523483554.808, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [6]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525040356.79, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [7]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525193458.64, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [8]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525297550.16, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [9]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525458402.818, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [10]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525470188.8, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [11]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525470205.261, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [12]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525470210.217, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [13]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525470218.554, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [14]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525637365.627, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [15]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525796051.627, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
+						}, -- [16]
+						["n"] = 3,
+					},
+					["Ganymede"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							42488, -- [3]
+							1523141876.001, -- [4]
+							5235180, -- [5]
+							"The Oracle", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							1, -- [2]
+							48020, -- [3]
+							1523141879.814, -- [4]
+							5169978, -- [5]
+							"The Oracle", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							1, -- [2]
+							34495, -- [3]
+							1523141882.014, -- [4]
+							5169978, -- [5]
+							"The Oracle", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						["n"] = 4,
+					},
+					["Unknown"] = {
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525195213.037, -- [4]
+							5133180, -- [5]
+							"Unknown", -- [6]
+						}, -- [1]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525198014.505, -- [4]
+							0, -- [5]
+							"Unknown", -- [6]
+						}, -- [2]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525963380.642, -- [4]
+							0, -- [5]
+							"Unknown", -- [6]
+						}, -- [3]
+						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1525973226.09, -- [4]
+							0, -- [5]
+							"Unknown", -- [6]
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						["n"] = 5,
+					},
+				},
+				["contra"] = "Marblub the Massive",
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Ganymede"] = 420419.023763,
+							["Zetiz"] = 507313.01745,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Ganymede"] = 31013379.027754,
+							["Zetiz"] = 21497810.004768,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 2072568.331,
+				["instance_type"] = "none",
+				["combat_id"] = 1089,
+				["resincked"] = true,
+				["hasSaved"] = true,
+				["frags"] = {
+					["Marblub the Massive"] = 1,
+					["Disgusting Parasite"] = 4,
+				},
+				["data_fim"] = "00:54:41",
+				["data_inicio"] = "00:54:24",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					45299233, -- [1]
+					835584, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 21,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 2072551.325,
+				["TimeData"] = {
+				},
+				["is_temporary"] = true,
+			}, -- [1]
 		},
 	},
-	["combat_counter"] = 17080,
+	["combat_counter"] = 17194,
 	["character_data"] = {
-		["logons"] = 2471,
+		["logons"] = 2522,
 	},
 	["tabela_instancias"] = {
 	},
@@ -36,7 +2337,7 @@ _detalhes_database = {
 			["pos"] = {
 				["normal"] = {
 					["y"] = -415.994747823962,
-					["x"] = 570.14000540446,
+					["x"] = 570.14230154699,
 					["w"] = 203.8720703125,
 					["h"] = 129.303604125977,
 				},
@@ -118,13 +2419,13 @@ _detalhes_database = {
 	},
 	["cached_talents"] = {
 		["Player-1303-03FA8295"] = {
-			22331, -- [1]
-			22131, -- [2]
-			19239, -- [3]
-			19233, -- [4]
-			22335, -- [5]
-			21188, -- [6]
-			22123, -- [7]
+			22337, -- [1]
+			22331, -- [2]
+			22123, -- [3]
+			22341, -- [4]
+			19241, -- [5]
+			22343, -- [6]
+			21186, -- [7]
 		},
 	},
 	["last_instance_id"] = 1712,
@@ -135,9 +2436,9 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["last_instance_time"] = 1512255119,
+	["last_instance_time"] = 1523138907,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_encounter"] = "Felhounds of Sargeras",
+	["last_encounter"] = "Imonar the Soulhunter",
 	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -146,10 +2447,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
+			["enabled"] = true,
 			["dps"] = 0,
 			["level"] = 1,
-			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = false,
@@ -385,12 +2686,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
 					["id"] = 1795,
 				},
-				["180004"] = {
-					"180004", -- [1]
-					"Enforcer's Onslaught", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
-					["id"] = 1784,
+				["179977"] = {
+					"179977", -- [1]
+					"Touch of Doom", -- [2]
+					8.3, -- [3]
+					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
+					["id"] = 1783,
 				},
 				["siegevehicles"] = {
 					"siegevehicles", -- [1]
@@ -427,12 +2728,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\ability_creature_cursed_03", -- [4]
 					["id"] = 1798,
 				},
-				["181295"] = {
-					"181295", -- [1]
-					"Digest on YOU!", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\Spell_Shadow_DeathCoil", -- [4]
-					["id"] = 1783,
+				["183885"] = {
+					"183885", -- [1]
+					"Mirror Images", -- [2]
+					78, -- [3]
+					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
+					["id"] = 1798,
 				},
 				["182428"] = {
 					"182428", -- [1]
@@ -448,12 +2749,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
 					["id"] = 1784,
 				},
-				["179406"] = {
-					"179406", -- [1]
-					"Soul Cleave (1)", -- [2]
-					25.5, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
-					["id"] = 1777,
+				["183817"] = {
+					"183817", -- [1]
+					"Shadowfel Burst", -- [2]
+					43, -- [3]
+					"Interface\\Icons\\Ability_Warlock_EverlastingAffliction", -- [4]
+					["id"] = 1799,
 				},
 				["181306"] = {
 					"181306", -- [1]
@@ -483,19 +2784,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_earthen_pillar", -- [4]
 					["id"] = 1778,
 				},
-				["181824"] = {
-					"181824", -- [1]
-					"Phantasmal Corruption", -- [2]
-					26, -- [3]
-					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
-					["id"] = 1788,
-				},
 				["181582"] = {
 					"181582", -- [1]
 					"Bellowing Shout", -- [2]
 					13.5, -- [3]
 					"Interface\\Icons\\ability_fomor_boss_shout", -- [4]
 					["id"] = 1783,
+				},
+				["69279"] = {
+					"69279", -- [1]
+					"Gas Spore", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\Spell_Shadow_CreepingPlague", -- [4]
+					["id"] = 1097,
 				},
 				["183254"] = {
 					"183254", -- [1]
@@ -560,12 +2861,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FelRainOfFire", -- [4]
 					["id"] = 1795,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
-					["id"] = 1794,
+				["69076"] = {
+					"69076", -- [1]
+					"Bone Storm", -- [2]
+					45, -- [3]
+					"Interface\\Icons\\Ability_Druid_Cyclone", -- [4]
+					["id"] = 1101,
 				},
 				["181912"] = {
 					"181912", -- [1]
@@ -588,12 +2889,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_sandstorm", -- [4]
 					["id"] = 1784,
 				},
-				["182001"] = {
-					"182001", -- [1]
-					"Unstable Orb", -- [2]
-					8.5, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
-					["id"] = 1785,
+				["186961"] = {
+					"186961", -- [1]
+					"Nether Banish", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
+					["id"] = 1799,
 				},
 				["182055"] = {
 					"182055", -- [1]
@@ -609,12 +2910,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
 					["id"] = 1100,
 				},
-				["181999"] = {
-					"181999", -- [1]
-					"Firebomb (1)", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
-					["id"] = 1785,
+				["186490"] = {
+					"186490", -- [1]
+					"Chains of Fel", -- [2]
+					33, -- [3]
+					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
+					["id"] = 1800,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -623,12 +2924,12 @@ _detalhes_database = {
 					"Interface\\Icons\\inv_shield_38", -- [4]
 					["id"] = 1784,
 				},
-				["69076"] = {
-					"69076", -- [1]
-					"Bone Storm", -- [2]
-					45, -- [3]
-					"Interface\\Icons\\Ability_Druid_Cyclone", -- [4]
-					["id"] = 1101,
+				["181999"] = {
+					"181999", -- [1]
+					"Firebomb (1)", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
+					["id"] = 1785,
 				},
 				["189009"] = {
 					"189009", -- [1]
@@ -665,32 +2966,25 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
 					["id"] = 1786,
 				},
-				["portals"] = {
-					"portals", -- [1]
-					"Portals Move", -- [2]
-					138, -- [3]
-					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
-					["id"] = 1794,
+				["186546"] = {
+					"186546", -- [1]
+					"Black Hole", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\INV_Enchant_VoidSphere", -- [4]
+					["id"] = 1800,
 				},
-				["adds"] = {
-					"adds", -- [1]
-					"Next Adds", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Spell_Shadow_TwistedFaith", -- [4]
-					["id"] = 1100,
+				["180221"] = {
+					"180221", -- [1]
+					"Volatile Fel Orb", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\achievement_zone_cataclysmgreen", -- [4]
+					["id"] = 1794,
 				},
 				["-11269"] = {
 					"-11269", -- [1]
 					"Hulking Terror", -- [2]
 					15, -- [3]
 					false, -- [4]
-					["id"] = 1786,
-				},
-				["180163"] = {
-					"180163", -- [1]
-					"Savage Strikes", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
 					["id"] = 1786,
 				},
 				["187204"] = {
@@ -700,6 +2994,13 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_spell_shaman_lavaburst", -- [4]
 					["id"] = 1800,
 				},
+				["180163"] = {
+					"180163", -- [1]
+					"Savage Strikes", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
+					["id"] = 1786,
+				},
 				["186123"] = {
 					"186123", -- [1]
 					"Wrought Chaos", -- [2]
@@ -707,26 +3008,26 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_misc_zandalari_council_soulswap", -- [4]
 					["id"] = 1799,
 				},
-				["182020"] = {
-					"182020", -- [1]
-					"Pounding (1)", -- [2]
-					34.4, -- [3]
-					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
-					["id"] = 1785,
+				["190050"] = {
+					"190050", -- [1]
+					"Touch of Shadows (2)", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\warlock_curse_shadow_aura", -- [4]
+					["id"] = 1799,
 				},
-				["179711"] = {
-					"179711", -- [1]
-					"Befouled", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_GatherShadows", -- [4]
-					["id"] = 1777,
+				["181307"] = {
+					"181307", -- [1]
+					"Foul Crush", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
+					["id"] = 1787,
 				},
-				["181180"] = {
-					"181180", -- [1]
-					"Inferno", -- [2]
-					48, -- [3]
-					"Interface\\Icons\\Spell_Fire_Felcano", -- [4]
-					["id"] = 1795,
+				["182200"] = {
+					"182200", -- [1]
+					"Fel Chakram", -- [2]
+					5.5, -- [3]
+					"Interface\\Icons\\ability_arakkoa_spinning_blade", -- [4]
+					["id"] = 1788,
 				},
 				["70351"] = {
 					"70351", -- [1]
@@ -749,26 +3050,26 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossmannoroth_mannorothsgaze", -- [4]
 					["id"] = 1795,
 				},
-				["182200"] = {
-					"182200", -- [1]
-					"Fel Chakram", -- [2]
-					5.5, -- [3]
-					"Interface\\Icons\\ability_arakkoa_spinning_blade", -- [4]
-					["id"] = 1788,
+				["181180"] = {
+					"181180", -- [1]
+					"Inferno", -- [2]
+					48, -- [3]
+					"Interface\\Icons\\Spell_Fire_Felcano", -- [4]
+					["id"] = 1795,
 				},
-				["181307"] = {
-					"181307", -- [1]
-					"Foul Crush", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
-					["id"] = 1787,
+				["179711"] = {
+					"179711", -- [1]
+					"Befouled", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_GatherShadows", -- [4]
+					["id"] = 1777,
 				},
-				["190050"] = {
-					"190050", -- [1]
-					"Touch of Shadows (2)", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\warlock_curse_shadow_aura", -- [4]
-					["id"] = 1799,
+				["182020"] = {
+					"182020", -- [1]
+					"Pounding (1)", -- [2]
+					34.4, -- [3]
+					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
+					["id"] = 1785,
 				},
 				["180008"] = {
 					"180008", -- [1]
@@ -784,19 +3085,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
 					["id"] = 1784,
 				},
-				["180221"] = {
-					"180221", -- [1]
-					"Volatile Fel Orb", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\achievement_zone_cataclysmgreen", -- [4]
-					["id"] = 1794,
+				["adds"] = {
+					"adds", -- [1]
+					"Next Adds", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Spell_Shadow_TwistedFaith", -- [4]
+					["id"] = 1100,
 				},
-				["186546"] = {
-					"186546", -- [1]
-					"Black Hole", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\INV_Enchant_VoidSphere", -- [4]
-					["id"] = 1800,
+				["portals"] = {
+					"portals", -- [1]
+					"Portals Move", -- [2]
+					138, -- [3]
+					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
+					["id"] = 1794,
 				},
 				["180533"] = {
 					"180533", -- [1]
@@ -819,19 +3120,19 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
 					["id"] = 1785,
 				},
-				["186961"] = {
-					"186961", -- [1]
-					"Nether Banish", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
-					["id"] = 1799,
+				["182001"] = {
+					"182001", -- [1]
+					"Unstable Orb", -- [2]
+					8.5, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
+					["id"] = 1785,
 				},
-				["186490"] = {
-					"186490", -- [1]
-					"Chains of Fel", -- [2]
-					33, -- [3]
-					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
-					["id"] = 1800,
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+					["id"] = 1794,
 				},
 				["179407"] = {
 					"179407", -- [1]
@@ -854,12 +3155,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelmagnaron_runeempowered", -- [4]
 					["id"] = 1787,
 				},
-				["69279"] = {
-					"69279", -- [1]
-					"Gas Spore", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\Spell_Shadow_CreepingPlague", -- [4]
-					["id"] = 1097,
+				["181824"] = {
+					"181824", -- [1]
+					"Phantasmal Corruption", -- [2]
+					26, -- [3]
+					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
+					["id"] = 1788,
 				},
 				["179909"] = {
 					"179909", -- [1]
@@ -868,12 +3169,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_warlock_soullink", -- [4]
 					["id"] = 1783,
 				},
-				["183817"] = {
-					"183817", -- [1]
-					"Shadowfel Burst", -- [2]
-					43, -- [3]
-					"Interface\\Icons\\Ability_Warlock_EverlastingAffliction", -- [4]
-					["id"] = 1799,
+				["179406"] = {
+					"179406", -- [1]
+					"Soul Cleave (1)", -- [2]
+					25.5, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
+					["id"] = 1777,
 				},
 				["187180"] = {
 					"187180", -- [1]
@@ -882,29 +3183,29 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
 					["id"] = 1799,
 				},
-				["183885"] = {
-					"183885", -- [1]
-					"Mirror Images", -- [2]
-					78, -- [3]
-					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
-					["id"] = 1798,
-				},
-				["179977"] = {
-					"179977", -- [1]
-					"Touch of Doom", -- [2]
-					8.3, -- [3]
-					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
+				["181295"] = {
+					"181295", -- [1]
+					"Digest on YOU!", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\Spell_Shadow_DeathCoil", -- [4]
 					["id"] = 1783,
+				},
+				["180004"] = {
+					"180004", -- [1]
+					"Enforcer's Onslaught", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
+					["id"] = 1784,
 				},
 			},
 			["encounter_timers_dbm"] = {
 			},
 			["hide_on_combat"] = false,
 			["opened"] = 3,
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 			["show_icon"] = 5,
 			["max_emote_segments"] = 3,
-			["author"] = "Details! Team",
+			["window_scale"] = 1,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -931,11 +3232,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["arrow_anchor_y"] = 0,
-			["main_frame_locked"] = false,
+			["scale"] = 1,
+			["row_height"] = 20,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["point"] = "TOP",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -945,13 +3246,8 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
 			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -961,22 +3257,27 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
+				["update_speed"] = 0.0160000007599592,
+				["attribute_type"] = 1,
 			},
-			["y"] = -41.5555419921875,
-			["point"] = "TOP",
-			["row_height"] = 20,
-			["scale"] = 1,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["rightclick_closed"] = false,
 			["auto_open"] = true,
+			["rightclick_closed"] = false,
 			["auto_close"] = true,
-			["hide_on_combat"] = true,
 			["author"] = "Details! Team",
+			["hide_on_combat"] = true,
 			["deaths_table"] = {
 				{
 					"Blackhand", -- [1]
@@ -2140,28 +4441,43 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
-			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
+			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
 		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["enabled"] = true,
+			["animate"] = false,
+			["useplayercolor"] = false,
+			["author"] = "Details! Team",
+			["useclasscolors"] = false,
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["showamount"] = false,
+		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = false,
@@ -2171,48 +4487,23 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["showamount"] = false,
-			["animate"] = false,
-			["useplayercolor"] = false,
-			["useclasscolors"] = false,
-			["author"] = "Details! Team",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["enabled"] = true,
 		},
 	},
-	["last_realversion"] = 130,
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1523270035,
+	["force_font_outline"] = "",
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "Court of Stars",
-		["started"] = false,
-		["segment_id"] = 4,
-		["ej_id"] = 800,
-		["started_at"] = 1510502103.7,
-		["run_id"] = 10,
-		["level"] = 11,
-		["dungeon_zone_id"] = 1571,
-		["previous_boss_killed_at"] = 1510503526,
-	},
-	["last_version"] = "v7.3.5.5469",
-	["combat_id"] = 1041,
+	["last_realversion"] = 130,
+	["last_version"] = "v7.3.5.5572",
+	["combat_id"] = 1089,
 	["savedStyles"] = {
 	},
 	["announce_prepots"] = {
@@ -2220,25 +4511,35 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["last_day"] = "28",
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1527607540,
+	},
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["force_font_outline"] = "",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["last_day"] = "15",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "Court of Stars",
+		["started"] = false,
+		["segment_id"] = 4,
+		["ej_id"] = 800,
+		["started_at"] = 1522675024.7,
+		["run_id"] = 11,
+		["level"] = 11,
+		["dungeon_zone_id"] = 1571,
+		["previous_boss_killed_at"] = 1522675960,
 	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -2251,6 +4552,6 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-1303-03FA8295"] = 261,
+		["Player-1303-03FA8295"] = 259,
 	},
 }

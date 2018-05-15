@@ -1,11 +1,11 @@
 Version: 1
-Frame: CharacterFrame
+Frame: ObjectiveTrackerFrame
 FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 444
-H: 444
+Anchor: RIGHT
+X: -120
+Y: 38
+W: 260
+H: 550
 Frame: QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -20,6 +20,13 @@ X: 0
 Y: 0
 W: 365
 H: 200
+Frame: bdCore config
+FrameLevel: 1
+Anchor: RIGHT
+X: -20
+Y: 0
+W: 740
+H: 450
 Frame: DetailsPlayerDetailsWindow
 FrameLevel: 1
 Anchor: CENTER
@@ -34,3 +41,10 @@ X: 0
 Y: 205
 W: 370
 H: 110
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOP
+X: 212
+Y: -116
+W: 338
+H: 424

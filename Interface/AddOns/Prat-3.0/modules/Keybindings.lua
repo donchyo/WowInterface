@@ -96,8 +96,8 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = "Copier la fenêtre de chat sélectionné",
 		["Guild Channel"] = "Canal de Guilde",
 		["Instance Channel"] = "Canal d'Instance",
-		--Translation missing 
-		-- ["Next Chat Tab"] = "",
+		--[[Translation missing --]]
+		--[[ ["Next Chat Tab"] = "",--]] 
 		["Officer Channel"] = "Canal Officier",
 		["Party Channel"] = "Canal de Groupe",
 		["Prat CopyChat"] = "Prat Copier-le-Chat",
@@ -106,8 +106,8 @@ Prat:AddModuleToLoad(function()
 		["Raid Channel"] = "Canal Raid",
 		["Raid Warning Channel"] = "Canal Avertissement",
 		["Say"] = "Dire",
-		--Translation missing 
-		-- ["Smart Group Channel"] = "",
+		--[[Translation missing --]]
+		--[[ ["Smart Group Channel"] = "",--]] 
 		["TellTarget"] = "Chuchoter à la cible",
 		["Whisper"] = "Chuchoter",
 		["Yell"] = "Crier",
@@ -172,40 +172,40 @@ Prat:AddModuleToLoad(function()
  L=
 {
 	["KeyBindings"] = {
-		--Translation missing 
-		-- ["Channel %d"] = "",
-		--Translation missing 
-		-- ["Copy Selected Chat Frame"] = "",
-		--Translation missing 
-		-- ["Guild Channel"] = "",
-		--Translation missing 
-		-- ["Instance Channel"] = "",
-		--Translation missing 
-		-- ["Next Chat Tab"] = "",
-		--Translation missing 
-		-- ["Officer Channel"] = "",
-		--Translation missing 
-		-- ["Party Channel"] = "",
-		--Translation missing 
-		-- ["Prat CopyChat"] = "",
-		--Translation missing 
-		-- ["Prat Keybindings"] = "",
-		--Translation missing 
-		-- ["Prat TellTarget"] = "",
-		--Translation missing 
-		-- ["Raid Channel"] = "",
-		--Translation missing 
-		-- ["Raid Warning Channel"] = "",
-		--Translation missing 
-		-- ["Say"] = "",
-		--Translation missing 
-		-- ["Smart Group Channel"] = "",
-		--Translation missing 
-		-- ["TellTarget"] = "",
-		--Translation missing 
-		-- ["Whisper"] = "",
-		--Translation missing 
-		-- ["Yell"] = "",
+		--[[Translation missing --]]
+		--[[ ["Channel %d"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Copy Selected Chat Frame"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Guild Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Instance Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Next Chat Tab"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Officer Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Party Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Prat CopyChat"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Prat Keybindings"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Prat TellTarget"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Raid Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Raid Warning Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Say"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Smart Group Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["TellTarget"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Whisper"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["Yell"] = "",--]] 
 	}
 }
 

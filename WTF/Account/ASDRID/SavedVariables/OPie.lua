@@ -4,7 +4,7 @@ OneRing_Config = {
 		["Grim Batol-Krixidk"] = "default",
 	},
 	["_GameVersion"] = "7.3.5",
-	["_OPieVersion"] = "Vanilla 3 (3.91)",
+	["_OPieVersion"] = "Vanilla 4 (3.92)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["RingAtMouse"] = true,
@@ -13,12 +13,12 @@ OneRing_Config = {
 				["CommonTrades"] = false,
 				["RaidSymbols"] = false,
 				["DeathKnightPresence"] = false,
+				["DKCombat"] = false,
 				["OPieTracking"] = false,
-				["OPieAutoQuest"] = false,
 				["Gearsets"] = "F5",
 				["WorldMarkers"] = false,
 				["OPieTrinkets"] = false,
-				["DKCombat"] = false,
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},

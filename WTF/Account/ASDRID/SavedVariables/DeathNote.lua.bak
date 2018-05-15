@@ -3,7 +3,7 @@ DeathNoteDB = {
 	["profileKeys"] = {
 		["Krixi - Valley of Heroes - EU"] = "Krixi - Valley of Heroes - EU",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
-		["Krixidk - Grim Batol"] = "Krixidk - Grim Batol",
+		["Krixidk - Grim Batol"] = "Krixi",
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
 		["Krixiwarrior - Valley of Heroes - EU"] = "Krixiwarrior - Valley of Heroes - EU",
@@ -12,20 +12,21 @@ DeathNoteDB = {
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
 		["Memeinhaler - Grim Batol"] = "Memeinhaler - Grim Batol",
+		["Krixidk - Ravencrest"] = "Krixi",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
-		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
+		["Kroxi - Grim Batol"] = "Krixi",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixi",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",
 		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
 		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi",
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
@@ -49,16 +50,16 @@ DeathNoteDB = {
 		},
 		["Krixidk - Grim Batol"] = {
 			["display"] = {
+				["y"] = 8.44450378417969,
+				["namelist"] = 2,
 				["columns"] = {
 					59.9999885559082, -- [1]
 					89.9999771118164, -- [2]
 					59.9999885559082, -- [3]
 					120.44441986084, -- [4]
 				},
-				["w"] = 860.889465332031,
-				["y"] = 8.44450378417969,
-				["namelist"] = 2,
 				["x"] = 78.8881530761719,
+				["w"] = 860.889465332031,
 				["h"] = 515.110961914063,
 			},
 		},
@@ -81,6 +82,8 @@ DeathNoteDB = {
 		},
 		["Memeinhaler - Grim Batol"] = {
 		},
+		["Krixidk - Ravencrest"] = {
+		},
 		["Greenzuriz - Aggra (Português)"] = {
 		},
 		["Krixiyo - Twisting Nether"] = {
@@ -99,20 +102,16 @@ DeathNoteDB = {
 				["namelist"] = 2,
 			},
 		},
+		["Donchyo - Shattered Hand"] = {
+		},
 		["Bawsie - Grim Batol"] = {
 			["display"] = {
 				["y"] = -2.57032775878906,
-				["x"] = 137.938262939453,
-				["namelist"] = 2,
-				["w"] = 700.000183105469,
 				["h"] = 500.000030517578,
+				["x"] = 137.938262939453,
+				["w"] = 700.000183105469,
+				["namelist"] = 2,
 			},
-		},
-		["Donchyo - Shattered Hand"] = {
-		},
-		["Krixidh - Grim Batol"] = {
-		},
-		["Donch - Shattered Hand"] = {
 		},
 		["Donch - Grim Batol"] = {
 			["death_time"] = 15,
@@ -124,13 +123,32 @@ DeathNoteDB = {
 			},
 			["keep_data"] = false,
 		},
+		["Krixidh - Grim Batol"] = {
+		},
+		["Donch - Shattered Hand"] = {
+		},
+		["Zuriz - Grim Batol"] = {
+			["death_time"] = 15,
+			["display"] = {
+				["w"] = 699.999877929688,
+				["y"] = 85.3334197998047,
+				["h"] = 500.000030517578,
+				["namelist"] = 2,
+				["x"] = 461.555419921875,
+			},
+			["max_deaths"] = 25,
+			["keep_data"] = false,
+		},
 		["Lowerboost - Lightbringer"] = {
 		},
 		["Kriximonk - Valley of Heroes - EU"] = {
 		},
 		["Donch - Crushridge"] = {
 		},
-		["Krixiyo - Lightning's Blade"] = {
+		["Gnomalock - Grim Batol"] = {
+			["display"] = {
+				["namelist"] = 2,
+			},
 		},
 		["Krixi - Grim Batol"] = {
 			["death_time"] = 15,
@@ -153,15 +171,6 @@ DeathNoteDB = {
 			},
 			["keep_data"] = false,
 		},
-		["Gnomalock - Grim Batol"] = {
-			["display"] = {
-				["namelist"] = 2,
-			},
-		},
-		["Treefiddy - Aggra (Português)"] = {
-		},
-		["Kroxi - Crushridge"] = {
-		},
 		["Líttle - Grim Batol"] = {
 			["display"] = {
 				["y"] = 4.577636718750e-005,
@@ -171,7 +180,26 @@ DeathNoteDB = {
 				["namelist"] = 2,
 			},
 		},
+		["Treefiddy - Aggra (Português)"] = {
+		},
+		["Kroxi - Crushridge"] = {
+		},
 		["Krixikin - Grim Batol"] = {
+			["display"] = {
+				["y"] = 166.889038085938,
+				["x"] = 6.66653442382813,
+				["w"] = 798.666748046875,
+				["h"] = 626.222045898438,
+			},
+		},
+		["Zetiz - Grim Batol"] = {
+			["display"] = {
+				["y"] = 7.02818965911865,
+				["x"] = -47.1218566894531,
+				["namelist"] = 2,
+				["w"] = 835.368286132813,
+				["h"] = 911.244812011719,
+			},
 		},
 		["Nyrith - Grim Batol"] = {
 			["display"] = {
@@ -192,30 +220,17 @@ DeathNoteDB = {
 		},
 		["Krixidh - Valley of Heroes - EU"] = {
 		},
-		["Zetiz - Grim Batol"] = {
-			["display"] = {
-				["y"] = 7.02818965911865,
-				["h"] = 911.244812011719,
-				["x"] = -47.1218566894531,
-				["w"] = 835.368286132813,
-				["namelist"] = 2,
-			},
+		["Krixiyo - Blackmoore"] = {
 		},
 		["Kriximonk - Grim Batol"] = {
 		},
-		["Krixiyo - Blackmoore"] = {
+		["Krixiyo - Lightning's Blade"] = {
 		},
 		["Daroislost - Valley of Heroes - EU"] = {
 		},
-		["Zuriz - Grim Batol"] = {
-			["death_time"] = 15,
-			["max_deaths"] = 25,
+		["Krixi"] = {
 			["display"] = {
-				["y"] = 85.3334197998047,
 				["namelist"] = 2,
-				["x"] = 461.555419921875,
-				["w"] = 699.999877929688,
-				["h"] = 500.000030517578,
 			},
 			["keep_data"] = false,
 		},

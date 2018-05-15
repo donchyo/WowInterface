@@ -73,18 +73,18 @@ PL:AddLocale(PRAT_MODULE, "enUS", L)
 L=
 {
 	["AddonMsgs"] = {
-		--Translation missing 
-		-- ["Addon message options."] = "",
-		--Translation missing 
-		-- ["AddonMsgs"] = "",
-		--Translation missing 
-		-- ["show_desc"] = "",
-		--Translation missing 
-		-- ["show_name"] = "",
-		--Translation missing 
-		-- ["show_perframedesc"] = "",
-		--Translation missing 
-		-- ["show_perframename"] = "",
+		--[[Translation missing --]]
+		--[[ ["Addon message options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["AddonMsgs"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_perframedesc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_perframename"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "itIT", L)
@@ -94,18 +94,18 @@ PL:AddLocale(PRAT_MODULE, "itIT", L)
 L=
 {
 	["AddonMsgs"] = {
-		--Translation missing 
-		-- ["Addon message options."] = "",
-		--Translation missing 
-		-- ["AddonMsgs"] = "",
-		--Translation missing 
-		-- ["show_desc"] = "",
-		--Translation missing 
-		-- ["show_name"] = "",
-		--Translation missing 
-		-- ["show_perframedesc"] = "",
-		--Translation missing 
-		-- ["show_perframename"] = "",
+		--[[Translation missing --]]
+		--[[ ["Addon message options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["AddonMsgs"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_perframedesc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_perframename"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "ptBR", L)
@@ -115,18 +115,18 @@ PL:AddLocale(PRAT_MODULE, "ptBR", L)
 L=
 {
 	["AddonMsgs"] = {
-		--Translation missing 
-		-- ["Addon message options."] = "",
-		--Translation missing 
-		-- ["AddonMsgs"] = "",
-		--Translation missing 
-		-- ["show_desc"] = "",
-		--Translation missing 
-		-- ["show_name"] = "",
-		--Translation missing 
-		-- ["show_perframedesc"] = "",
-		--Translation missing 
-		-- ["show_perframename"] = "",
+		--[[Translation missing --]]
+		--[[ ["Addon message options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["AddonMsgs"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_perframedesc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_perframename"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "frFR", L)
@@ -166,18 +166,18 @@ PL:AddLocale(PRAT_MODULE, "koKR", L)
 L=
 {
 	["AddonMsgs"] = {
-		--Translation missing 
-		-- ["Addon message options."] = "",
-		--Translation missing 
-		-- ["AddonMsgs"] = "",
-		--Translation missing 
-		-- ["show_desc"] = "",
-		--Translation missing 
-		-- ["show_name"] = "",
-		--Translation missing 
-		-- ["show_perframedesc"] = "",
-		--Translation missing 
-		-- ["show_perframename"] = "",
+		--[[Translation missing --]]
+		--[[ ["Addon message options."] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["AddonMsgs"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_desc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_name"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_perframedesc"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["show_perframename"] = "",--]] 
 	}
 }
 PL:AddLocale(PRAT_MODULE, "esMX", L)

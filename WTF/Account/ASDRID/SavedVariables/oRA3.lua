@@ -3,10 +3,13 @@ oRA3DB = {
 	["namespaces"] = {
 		["BattleRes"] = {
 			["profiles"] = {
+				["Skullflower"] = {
+					["lock"] = true,
+				},
 				["Default"] = {
 					["lock"] = true,
 				},
-				["Skullflower"] = {
+				["Krixi"] = {
 					["lock"] = true,
 				},
 			},
@@ -35,6 +38,10 @@ oRA3DB = {
 					["resurrect"] = true,
 					["tauntPet"] = true,
 				},
+				["Krixi"] = {
+					["resurrect"] = true,
+					["tauntPet"] = true,
+				},
 			},
 		},
 		["Rings"] = {
@@ -56,6 +63,18 @@ oRA3DB = {
 		},
 		["Cooldowns"] = {
 			["profiles"] = {
+				["Skullflower"] = {
+					["enabled"] = false,
+					["spells"] = {
+						["Default"] = {
+						},
+					},
+					["displays"] = {
+						["Default"] = {
+							["type"] = "Bars",
+						},
+					},
+				},
 				["Default"] = {
 					["enabled"] = false,
 					["spells"] = {
@@ -69,7 +88,7 @@ oRA3DB = {
 						},
 					},
 				},
-				["Skullflower"] = {
+				["Krixi"] = {
 					["enabled"] = false,
 					["spells"] = {
 						["Default"] = {
@@ -89,10 +108,13 @@ oRA3DB = {
 		},
 		["Difficulty"] = {
 			["profiles"] = {
+				["Skullflower"] = {
+					["prevRaidDifficulty"] = 16,
+				},
 				["Default"] = {
 					["prevRaidDifficulty"] = 16,
 				},
-				["Skullflower"] = {
+				["Krixi"] = {
 					["prevRaidDifficulty"] = 16,
 				},
 			},
@@ -100,15 +122,16 @@ oRA3DB = {
 	},
 	["profileKeys"] = {
 		["Krixi - Valley of Heroes - EU"] = "Default",
-		["Krixidk - Grim Batol"] = "Skullflower",
+		["Krixidk - Grim Batol"] = "Krixi",
 		["Gnomalock - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
 		["Krixiwarrior - Valley of Heroes - EU"] = "Default",
 		["Krixidruid - Valley of Heroes - EU"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
+		["Krixidk - Ravencrest"] = "Krixi",
 		["Krixiyo - Twisting Nether"] = "Default",
-		["Kroxi - Grim Batol"] = "Default",
+		["Kroxi - Grim Batol"] = "Krixi",
 		["Namji - Grim Batol"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
 		["Krixiyo - Lightning's Blade"] = "Default",
@@ -117,10 +140,10 @@ oRA3DB = {
 		["Kriximonk - Valley of Heroes - EU"] = "Default",
 		["Donch - Grim Batol"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Krixi",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
-		["Krixidh - Grim Batol"] = "Default",
+		["Krixidh - Grim Batol"] = "Krixi",
 		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
@@ -134,8 +157,36 @@ oRA3DB = {
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
+		["Skullflower"] = {
+			["lastSelectedPanel"] = "Checks",
+			["positions"] = {
+				["oRA3CooldownFrameBarsDefault"] = {
+					["Height"] = 148.000015258789,
+					["Width"] = 200,
+					["PosY"] = 338.666679032642,
+					["PosX"] = 1012.9780646218,
+				},
+				["oRA3ReadyCheck"] = {
+					["Height"] = 169,
+					["Width"] = 320.000213623047,
+					["PosY"] = 702.222272597413,
+					["PosX"] = 292.977521599678,
+				},
+				["oRA3BattleResMonitor"] = {
+					["Height"] = 29.9999942779541,
+					["Width"] = 140.000015258789,
+					["PosY"] = 482.044697830395,
+					["PosX"] = 31.288883633084,
+				},
+				["oRA3RingsFrame"] = {
+					["PosY"] = 431.176732112363,
+					["PosX"] = 1028.80052461621,
+				},
+			},
+			["lastSelectedList"] = 1,
+		},
 		["Default"] = {
-			["lastSelectedList"] = 3,
+			["lastSelectedPanel"] = "Checks",
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148,
@@ -160,28 +211,28 @@ oRA3DB = {
 					["PosX"] = 1144.37755254617,
 				},
 			},
-			["lastSelectedPanel"] = "Checks",
+			["lastSelectedList"] = 3,
 		},
-		["Skullflower"] = {
+		["Krixi"] = {
 			["lastSelectedList"] = 1,
 			["positions"] = {
+				["oRA3ReadyCheck"] = {
+					["Height"] = 169,
+					["PosX"] = 292.977521599678,
+					["PosY"] = 702.222272597413,
+					["Width"] = 320.000213623047,
+				},
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148.000015258789,
-					["Width"] = 200,
-					["PosY"] = 338.666679032642,
 					["PosX"] = 1012.9780646218,
-				},
-				["oRA3ReadyCheck"] = {
-					["Height"] = 183.000030517578,
-					["Width"] = 320.000244140625,
-					["PosY"] = 726.400103187552,
-					["PosX"] = 388.266456349702,
+					["PosY"] = 338.666679032642,
+					["Width"] = 200,
 				},
 				["oRA3BattleResMonitor"] = {
 					["Height"] = 29.9999942779541,
-					["Width"] = 140.000015258789,
-					["PosY"] = 482.044697830395,
 					["PosX"] = 31.288883633084,
+					["PosY"] = 482.044697830395,
+					["Width"] = 140.000015258789,
 				},
 				["oRA3RingsFrame"] = {
 					["PosY"] = 431.176732112363,

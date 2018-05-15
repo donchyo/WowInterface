@@ -101,7 +101,7 @@ VER 3 000000000000037A "fps sak" "INV_MISC_QUESTIONMARK"
 /run FramerateLabel:ClearAllPoints() FramerateText:ClearAllPoints() FramerateLabel:SetPoint("RIGHT",UIParent,"CENTER",330,0) FramerateText:SetPoint("LEFT",FramerateLabel,"RIGHT") ToggleFramerate()
 END
 VER 3 000000000000038F "fuckoff" "136103"
-/run local m,n="mouseover" n=UnitIsPlayer(m) and UnitName(m) if n then SendChatMessage("Hey "..n..", fuck off from me! XD",GUILD) else SendChatMessage("Fuck off from me! XD",GUILD) end
+/run local m,n="mouseover" n=UnitIsPlayer(m) and UnitName(m) if n then SendChatMessage("Hey "..n..", fuck off from me! XD",SAY) else SendChatMessage("Fuck off from me! XD",SAY) end
 END
 VER 3 000000000000036A "garrison" "INV_MISC_QUESTIONMARK"
 /use garrison ability
@@ -121,6 +121,11 @@ END
 VER 3 000000000000036E "healer potion" "INV_MISC_QUESTIONMARK"
 /cast [combat] Draenic Channeled Mana Potion
 /cast [nocombat] Draenic Intellect Potion
+END
+VER 3 0000000000000391 "Healthstone" "INV_MISC_QUESTIONMARK"
+#showtooltip healthstone
+/use healthstone
+/use astral healing potion
 END
 VER 3 000000000000037C "hunter t2" "INV_MISC_QUESTIONMARK"
 /cast stopping power

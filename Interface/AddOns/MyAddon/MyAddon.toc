@@ -1,6 +1,0 @@
-## Interface: 70300
-## Title: MyAddon
-## Author: Krixi
-## Version: 0.1
-
-MyAddon.lua
