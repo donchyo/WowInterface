@@ -16,18 +16,18 @@ SunnArt3DB = {
 		["Krixicx - Shattered Hand"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
+		["Kriximonk - Valley of Heroes - EU"] = "Default",
 		["Krixi - Grim Batol"] = "Krixi",
 		["Krixidruid - Valley of Heroes - EU"] = "Default",
 		["Memeinhaler - Grim Batol"] = "Default",
 		["Krixidk - Ravencrest"] = "Krixi",
 		["Krixidh - Valley of Heroes - EU"] = "Default",
-		["Zolution - Grim Batol"] = "Default",
-		["Kriximonk - Grim Batol"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
 		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Kriximonk - Valley of Heroes - EU"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
@@ -35,8 +35,8 @@ SunnArt3DB = {
 			["bar"] = {
 				{
 					["theme"] = "solid",
-					["resize"] = true,
 					["size"] = 15,
+					["resize"] = true,
 				}, -- [1]
 				{
 					["enabled"] = false,
@@ -46,9 +46,9 @@ SunnArt3DB = {
 		["Krixi"] = {
 			["bar"] = {
 				{
+					["theme"] = "solid",
 					["resize"] = true,
 					["size"] = 15,
-					["theme"] = "solid",
 				}, -- [1]
 				{
 					["enabled"] = false,

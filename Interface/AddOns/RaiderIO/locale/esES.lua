@@ -53,12 +53,18 @@ L["OPEN_CONFIG"] = "Abrir configuración"
 L["OUTDATED_DATABASE"] = "Estas puntuaciones son de hace %d día(s)"
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r está usando datos de hace |cffFF6666%d|r día(s). Por favor, actualiza el addon para disponer de las puntuaciones de M+ más recientes."
 L["PREV_SEASON_SUFFIX"] = "(*)"
+--[[Translation missing --]]
+--[[ L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = ""--]] 
 L["RAIDERIO_MP_BASE_SCORE"] = "Puntuación de M+ base"
 L["RAIDERIO_MP_SCORE"] = "Puntuación de M+"
 L["RAIDERIO_MP_SCORE_COLON"] = "Puntuación de M+:"
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Opciones de Raider.IO Mythic Plus"
 L["RELOAD_LATER"] = "La reiniciaré más tarde"
 L["RELOAD_NOW"] = "Reiniciarla ahora"
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO_DESC"] = ""--]] 
 L["SHOW_IN_FRIENDS"] = "Mostrar en la lista de amigos"
 L["SHOW_IN_FRIENDS_DESC"] = "Muestra la puntuación de M+ de tus amigos cuando pasas el ratón por encima."
 L["SHOW_IN_LFD"] = "Mostrar en el buscador de grupos"

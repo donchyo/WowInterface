@@ -53,12 +53,18 @@ L["OPEN_CONFIG"] = "설정 열기"
 L["OUTDATED_DATABASE"] = "점수는 %d일 전 기록입니다."
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r의 데이터는 |cffFF6666%d|r일 전 기록입니다. 더 정확한 점수를 확인하기 위해서는 업데이트가 필요합니다."
 L["PREV_SEASON_SUFFIX"] = "(*)"
+--[[Translation missing --]]
+--[[ L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = ""--]] 
 L["RAIDERIO_MP_BASE_SCORE"] = "Raider.IO M+ 기본 점수"
 L["RAIDERIO_MP_SCORE"] = "Raider.IO M+ 점수"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO M+ 점수: "
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Raider.IO M+ 설정"
 L["RELOAD_LATER"] = "나중에 다시 불러오겠습니다."
 L["RELOAD_NOW"] = "지금 다시 불러오기"
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO_DESC"] = ""--]] 
 L["SHOW_IN_FRIENDS"] = "친구 목록에 표시"
 L["SHOW_IN_FRIENDS_DESC"] = "친구에게 마우스를 올리면 Mythic+ 점수를 표시합니다."
 L["SHOW_IN_LFD"] = "던전 찾기에 표시"

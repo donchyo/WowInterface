@@ -145,8 +145,8 @@ VER 3 0000000000000092 "mount" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 /use [mod:alt]Azure Water Strider
 /use [mod:ctrl]grand expedition yak
 /use [flyable, nomounted]INVINCIBLE
-/use [noflyable, nomounted] magic rooster
---swift spectral tiger
+--/use [noflyable, nomounted] magic rooster
+/use [noflyable, nomounted] swift spectral tiger
 /script VehicleExit()
 END
 VER 3 0000000000000371 "mouseover extra" "132387"

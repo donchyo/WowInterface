@@ -2,7 +2,7 @@
 --
 -- Prat - A framework for World of Warcraft chat mods
 --
--- Copyright (C) 2006-2011  Prat Development Team
+-- Copyright (C) 2006-2018  Prat Development Team
 --
 -- This program is free software; you can redistribute it and/or
 -- modify it under the terms of the GNU General Public License
@@ -1067,7 +1067,10 @@ Prat:AddModuleToLoad(function()
     self:RegisterEvent("GUILD_ROSTER_UPDATE", "updateGuild")
     self:RegisterEvent("RAID_ROSTER_UPDATE", "updateRaid")
     self:RegisterEvent("PLAYER_LEVEL_UP", "updatePlayerLevel")
-    self:RegisterEvent("PARTY_MEMBERS_CHANGED", "updateParty")
+
+    if select(4, GetBuildInfo()) < 80000 then
+      self:RegisterEvent("PARTY_MEMBERS_CHANGED", "updateParty")
+    end
     self:RegisterEvent("PLAYER_TARGET_CHANGED", "updateTarget")
     self:RegisterEvent("UPDATE_MOUSEOVER_UNIT", "updateMouseOver")
     self:RegisterEvent("WHO_LIST_UPDATE", "updateWho")

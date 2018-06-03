@@ -2,7 +2,7 @@
 --
 -- Prat - A framework for World of Warcraft chat mods
 --
--- Copyright (C) 2006-2011  Prat Development Team
+-- Copyright (C) 2006-2018  Prat Development Team
 --
 -- This program is free software; you can redistribute it and/or
 -- modify it under the terms of the GNU General Public License
@@ -811,9 +811,9 @@ function module:chatbutton(id,visible)
 								FCF_MinimizeFrame(f.cf, strupper(f.cf.buttonSide))
 							end )
         
-        f.cfScrl.up:SetScript("OnClick", function() PlaySound("igChatBottom"); f.cf:ScrollUp() end)
-        f.cfScrl.down:SetScript("OnClick", function() PlaySound("igChatBottom"); f.cf:ScrollDown() end)
-        f.cfScrl.bottom:SetScript("OnClick", function() PlaySound("igChatBottom"); f.cf:ScrollToBottom() end)
+        f.cfScrl.up:SetScript("OnClick", function() PlaySound(SOUNDKIT.IG_CHAT_SCROLL_UP); f.cf:ScrollUp() end)
+        f.cfScrl.down:SetScript("OnClick", function() PlaySound(SOUNDKIT.IG_CHAT_SCROLL_DOWN); f.cf:ScrollDown() end)
+        f.cfScrl.bottom:SetScript("OnClick", function() PlaySound(SOUNDKIT.IG_CHAT_BOTTOM); f.cf:ScrollToBottom() end)
         
         end
     else
@@ -905,7 +905,7 @@ function module:MakeReminder(id)
     b:SetPoint("LEFT", cf, "RIGHT", -32, 0)
     b:SetPoint("TOP", cf, "BOTTOM", 0, 28)
     b:SetPoint("BOTTOM", cf, "BOTTOM", 0, 0)
-    b:SetScript("OnClick", function() PlaySound("igChatBottom"); cf:ScrollToBottom() end)
+    b:SetScript("OnClick", function() PlaySound(SOUNDKIT.IG_CHAT_BOTTOM); cf:ScrollToBottom() end)
     -- hide the button by default
     b:Hide()
     -- add a flash texture for the reminder button

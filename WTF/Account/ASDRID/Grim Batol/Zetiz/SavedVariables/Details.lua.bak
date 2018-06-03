@@ -1733,15 +1733,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["cooldowns_defensive"] = 17.004178,
+							["cooldowns_defensive"] = 20.004178,
 							["buff_uptime"] = 95,
 							["last_cooldown"] = {
-								1526077980.531, -- [1]
+								1526492493.437, -- [1]
 								1966, -- [2]
 							},
 							["classe"] = "ROGUE",
 							["cooldowns_defensive_targets"] = {
-								["Zetiz"] = 17,
+								["Zetiz"] = 20,
 							},
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -1878,7 +1878,7 @@ _detalhes_database = {
 								[1943] = 1,
 								[703] = 1,
 							},
-							["last_event"] = 1526077979,
+							["last_event"] = 1526492493,
 							["serial"] = "Player-1303-03FA8295",
 							["tipo"] = 4,
 							["pets"] = {
@@ -1889,9 +1889,9 @@ _detalhes_database = {
 									[1966] = {
 										["id"] = 1966,
 										["targets"] = {
-											["Zetiz"] = 16,
+											["Zetiz"] = 19,
 										},
-										["counter"] = 16,
+										["counter"] = 19,
 									},
 									[31224] = {
 										["id"] = 31224,
@@ -1911,17 +1911,17 @@ _detalhes_database = {
 							["nome"] = "Unknown",
 							["spec"] = 259,
 							["grupo"] = true,
-							["cooldowns_defensive"] = 4.00515,
+							["cooldowns_defensive"] = 5.00515,
 							["pets"] = {
 							},
 							["last_cooldown"] = {
-								1525973226.09, -- [1]
+								1526679348.121, -- [1]
 								1966, -- [2]
 							},
+							["last_event"] = 1526679358,
 							["tipo"] = 4,
-							["classe"] = "ROGUE",
 							["cooldowns_defensive_targets"] = {
-								["Unknown"] = 4,
+								["Unknown"] = 5,
 							},
 							["serial"] = "Player-1303-03FA8295",
 							["cooldowns_defensive_spells"] = {
@@ -1929,14 +1929,14 @@ _detalhes_database = {
 									[1966] = {
 										["id"] = 1966,
 										["targets"] = {
-											["Unknown"] = 4,
+											["Unknown"] = 5,
 										},
-										["counter"] = 4,
+										["counter"] = 5,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["last_event"] = 1525973229,
+							["classe"] = "ROGUE",
 						}, -- [3]
 					},
 				}, -- [4]
@@ -1958,7 +1958,7 @@ _detalhes_database = {
 				["enemy"] = "Marblub the Massive",
 				["combat_counter"] = 17148,
 				["totals"] = {
-					45299231.2787978, -- [1]
+					45299231.2007058, -- [1]
 					835583.996786, -- [2]
 					{
 						0, -- [1]
@@ -1975,7 +1975,7 @@ _detalhes_database = {
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 19.0592369999999,
+						["cooldowns_defensive"] = 22.8622669999999,
 					}, -- [4]
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
@@ -1999,12 +1999,12 @@ _detalhes_database = {
 							"Zetiz", -- [6]
 						}, -- [2]
 						{
-							true, -- [1]
-							3, -- [2]
-							37775, -- [3]
-							1523142364.666, -- [4]
-							5043145, -- [5]
-							"Environment (Falling)", -- [6]
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1526492482.48, -- [4]
+							5133180, -- [5]
+							"Zetiz", -- [6]
 							nil, -- [7]
 							3, -- [8]
 							false, -- [9]
@@ -2012,9 +2012,9 @@ _detalhes_database = {
 						}, -- [3]
 						{
 							1, -- [1]
-							31224, -- [2]
+							1966, -- [2]
 							1, -- [3]
-							1523142407.634, -- [4]
+							1526492483.665, -- [4]
 							5133180, -- [5]
 							"Zetiz", -- [6]
 						}, -- [4]
@@ -2022,7 +2022,7 @@ _detalhes_database = {
 							1, -- [1]
 							1966, -- [2]
 							1, -- [3]
-							1523483377.321, -- [4]
+							1526492493.437, -- [4]
 							5133180, -- [5]
 							"Zetiz", -- [6]
 						}, -- [5]
@@ -2114,7 +2114,7 @@ _detalhes_database = {
 							5133180, -- [5]
 							"Zetiz", -- [6]
 						}, -- [16]
-						["n"] = 3,
+						["n"] = 6,
 					},
 					["Ganymede"] = {
 						{
@@ -2215,6 +2215,12 @@ _detalhes_database = {
 							"Unknown", -- [6]
 						}, -- [4]
 						{
+							1, -- [1]
+							1966, -- [2]
+							1, -- [3]
+							1526679348.121, -- [4]
+							0, -- [5]
+							"Unknown", -- [6]
 						}, -- [5]
 						{
 						}, -- [6]
@@ -2238,7 +2244,7 @@ _detalhes_database = {
 						}, -- [15]
 						{
 						}, -- [16]
-						["n"] = 5,
+						["n"] = 6,
 					},
 				},
 				["TimeData"] = {
@@ -2299,7 +2305,7 @@ _detalhes_database = {
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 21,
+						["cooldowns_defensive"] = 25,
 					}, -- [4]
 				},
 				["start_time"] = 2072551.325,
@@ -4499,12 +4505,6 @@ _detalhes_database = {
 			["enabled"] = true,
 		},
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_realversion"] = 130,
-	["ignore_nicktag"] = false,
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Court of Stars",
 		["started"] = false,
@@ -4516,12 +4516,18 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1571,
 		["previous_boss_killed_at"] = 1522675960,
 	},
-	["combat_counter"] = 17193,
+	["last_day"] = "03",
+	["ignore_nicktag"] = false,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["combat_counter"] = 17221,
 	["combat_id"] = 1089,
 	["savedStyles"] = {
 	},
 	["last_instance_time"] = 1523138907,
-	["last_day"] = "14",
+	["last_realversion"] = 130,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -4529,12 +4535,12 @@ _detalhes_database = {
 		["where"] = 1,
 	},
 	["character_data"] = {
-		["logons"] = 2521,
+		["logons"] = 2549,
 	},
 	["force_font_outline"] = "",
 	["nick_tag_cache"] = {
 		["last_version"] = 10,
-		["nextreset"] = 1527607540,
+		["nextreset"] = 1528910587,
 	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
@@ -4553,5 +4559,6 @@ _detalhes_database = {
 	},
 	["cached_specs"] = {
 		["Player-1303-03FA8295"] = 259,
+		["Player-1303-08780D58"] = 577,
 	},
 }

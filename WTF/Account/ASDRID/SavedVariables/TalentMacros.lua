@@ -28,10 +28,10 @@ TalentMacrosDB = {
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
 		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
-		["Krixi - Grim Batol"] = "Krixi",
+		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
-		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi",
 		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
@@ -41,8 +41,8 @@ TalentMacrosDB = {
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Krixidh - Valley of Heroes - EU"] = "Krixidh - Valley of Heroes - EU",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
-		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
-		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Daroislost - Valley of Heroes - EU"] = "Daroislost - Valley of Heroes - EU",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -96,14 +96,19 @@ TalentMacrosDB = {
 			["macrotext"] = {
 				[18571] = "#showtooltip\n/use [nomod] wild Charge\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
 				[22424] = "#showtooltip\n/cast guttural roars",
-				[18574] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cenarion ward\n",
+				[22916] = "#showtooltip\n/use [nomod] intimidating roar\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
 				[19283] = "#showtooltip\n/use [nomod] renewal\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
 				[18570] = "#showtooltip\n/use [nomod] displacer beast\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
-				[22916] = "#showtooltip\n/use [nomod] intimidating roar\n/use [mod:shift] darkflight\n/use [mod:ctrl]15\n",
+				[18574] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cenarion ward\n",
 			},
 			["disablepush"] = true,
 		},
-		["Krixi"] = {
+		["Zuriz - Grim Batol"] = {
+			["macrotext"] = {
+				[19267] = "#showtooltip\n/cast [@targettarget, harm, exists] elemental blast;  [@focus, harm, exists]elemental blast; [@focustarget, harm, exists] elemental blast; [@mouseovertarget, exist, harm]elemental blast; elemental blast\n",
+				[19263] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] Unleash Life",
+			},
+			["version"] = 1,
 		},
 		["Kroxi - Grim Batol"] = {
 			["macrotext"] = {
@@ -120,33 +125,25 @@ TalentMacrosDB = {
 		["Bawsie - Grim Batol"] = {
 			["version"] = 1,
 		},
-		["Krixiyo - Lightning's Blade"] = {
+		["Namji - Grim Batol"] = {
+			["macrotext"] = {
+				[19820] = "#showtooltip\n/cast [@namji] Zen Sphere",
+			},
+			["version"] = 1,
 		},
-		["Krixidh - Grim Batol"] = {
+		["Krixiyo - Lightning's Blade"] = {
 		},
 		["Donch - Shattered Hand"] = {
 			["version"] = 1,
 		},
-		["Líttle - Grim Batol"] = {
-			["macrotext"] = {
-				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
-			},
-			["version"] = 1,
+		["Kriximonk - Grim Batol"] = {
 		},
 		["Lowerboost - Lightbringer"] = {
-		},
-		["Kriximonk - Valley of Heroes - EU"] = {
 		},
 		["Donch - Crushridge"] = {
 			["version"] = 1,
 		},
-		["Krixi - Grim Batol"] = {
-			["macrotext"] = {
-				[17597] = "#showtooltip\n/cast Holy Avenger\n/use 13",
-				[17565] = "/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Bestow Faith",
-				[21811] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Sacred shield\n",
-			},
-			["version"] = 1,
+		["Kriximonk - Valley of Heroes - EU"] = {
 		},
 		["Nyrith - Grim Batol"] = {
 			["macrotext"] = {
@@ -158,6 +155,14 @@ TalentMacrosDB = {
 			},
 			["version"] = 1,
 		},
+		["Krixi - Grim Batol"] = {
+			["macrotext"] = {
+				[17597] = "#showtooltip\n/cast Holy Avenger\n/use 13",
+				[17565] = "/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Bestow Faith",
+				[21811] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Sacred shield\n",
+			},
+			["version"] = 1,
+		},
 		["Krixiyo - Twisting Nether"] = {
 		},
 		["Treefiddy - Aggra (Português)"] = {
@@ -166,17 +171,7 @@ TalentMacrosDB = {
 		["Kroxi - Crushridge"] = {
 			["version"] = 1,
 		},
-		["Zetiz - Grim Batol"] = {
-			["macrotext"] = {
-				[19243] = "#showtooltip\n/use [nomod] shadowstep\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[19244] = "#showtooltip\n/use [nomod] burst of speed\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
-				[22122] = "#showtooltip\n/cast crippling poison",
-				[19239] = "#showtooltip\n/cast crippling poison",
-				[22344] = "#showtooltip\n/cast deadly poison",
-				[19241] = "#showtooltip\n/cast crippling poison",
-				[19249] = "#showtooltip\n/cast deadly poison",
-				[22123] = "#showtooltip\n/cast crippling poison",
-			},
+		["Donchyo - Shattered Hand"] = {
 			["version"] = 1,
 		},
 		["Skullflower"] = {
@@ -184,7 +179,17 @@ TalentMacrosDB = {
 				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
 			},
 		},
-		["Donchyo - Shattered Hand"] = {
+		["Zetiz - Grim Batol"] = {
+			["macrotext"] = {
+				[19243] = "#showtooltip\n/use [nomod] shadowstep\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[19244] = "#showtooltip\n/use [nomod] burst of speed\n/use [mod:shift] 6\n/use [mod:ctrl]15\n",
+				[22122] = "#showtooltip\n/cast crippling poison",
+				[19239] = "#showtooltip\n/cast crippling poison",
+				[22123] = "#showtooltip\n/cast crippling poison",
+				[19241] = "#showtooltip\n/cast crippling poison",
+				[19249] = "#showtooltip\n/cast deadly poison",
+				[22344] = "#showtooltip\n/cast deadly poison",
+			},
 			["version"] = 1,
 		},
 		["Spacegoatx - Aggra (Português)"] = {
@@ -194,22 +199,17 @@ TalentMacrosDB = {
 		},
 		["Asdasdasdfaf - Grim Batol"] = {
 		},
-		["Kriximonk - Grim Batol"] = {
-		},
-		["Namji - Grim Batol"] = {
+		["Líttle - Grim Batol"] = {
 			["macrotext"] = {
-				[19820] = "#showtooltip\n/cast [@namji] Zen Sphere",
+				[21209] = "#showtooltip\n/cast !Breath of Sindragosa\n/use 13",
 			},
 			["version"] = 1,
+		},
+		["Krixidh - Grim Batol"] = {
 		},
 		["Daroislost - Valley of Heroes - EU"] = {
 		},
-		["Zuriz - Grim Batol"] = {
-			["macrotext"] = {
-				[19267] = "#showtooltip\n/cast [@targettarget, harm, exists] elemental blast;  [@focus, harm, exists]elemental blast; [@focustarget, harm, exists] elemental blast; [@mouseovertarget, exist, harm]elemental blast; elemental blast\n",
-				[19263] = "#showtooltip\n/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] Unleash Life",
-			},
-			["version"] = 1,
+		["Krixi"] = {
 		},
 		["Krixiswag - Aggra (Português)"] = {
 			["version"] = 1,

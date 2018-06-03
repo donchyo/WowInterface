@@ -41,6 +41,13 @@ X: -132
 Y: 22
 W: 790
 H: 454
+Frame: SMT_GUI
+FrameLevel: 2
+Anchor: CENTER
+X: 0
+Y: 0
+W: 600
+H: 700
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: TOPRIGHT

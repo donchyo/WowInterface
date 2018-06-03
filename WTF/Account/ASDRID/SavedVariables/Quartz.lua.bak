@@ -47,19 +47,17 @@ Quartz3DB = {
 					["timetextx"] = 0,
 					["scale"] = 0.7,
 					["w"] = 212,
-					["font"] = "Expressway",
+					["x"] = 786.348571777344,
 					["y"] = 154.984527587891,
 					["h"] = 25,
 					["fontsize"] = 12,
 					["iconalpha"] = 1,
-					["x"] = 786.348571777344,
+					["font"] = "Expressway",
 					["nametextx"] = 0,
 					["border"] = "Details BarBorder 3",
 					["texture"] = "Skullflower",
 				},
 			},
-		},
-		["EnemyCasts"] = {
 		},
 		["Player"] = {
 			["profiles"] = {
@@ -89,6 +87,8 @@ Quartz3DB = {
 				},
 			},
 		},
+		["EnemyCasts"] = {
+		},
 		["GCD"] = {
 		},
 		["Focus"] = {
@@ -117,9 +117,9 @@ Quartz3DB = {
 				},
 				["Krixi"] = {
 					["timetextx"] = 0,
-					["x"] = 1032.33337402344,
-					["noInterruptBorder"] = "Details BarBorder 3",
 					["font"] = "Expressway",
+					["noInterruptBorder"] = "Details BarBorder 3",
+					["x"] = 1032.33337402344,
 					["noInterruptChangeBorder"] = true,
 					["w"] = 195,
 					["noInterruptChangeColor"] = true,
@@ -173,7 +173,7 @@ Quartz3DB = {
 						0.32156862745098, -- [3]
 						1, -- [4]
 					},
-					["x"] = 924.888427734375,
+					["font"] = "Expressway",
 					["texture"] = "Solid",
 					["noInterruptChangeBorder"] = true,
 					["w"] = 212,
@@ -184,14 +184,14 @@ Quartz3DB = {
 					["iconalpha"] = 1,
 					["border"] = "Details BarBorder 3",
 					["nametextx"] = 0,
-					["font"] = "Expressway",
+					["x"] = 924.888427734375,
 					["iconposition"] = "left",
 				},
 			},
 		},
-		["Range"] = {
-		},
 		["Mirror"] = {
+		},
+		["Range"] = {
 		},
 		["Latency"] = {
 			["profiles"] = {
@@ -216,7 +216,7 @@ Quartz3DB = {
 		["Krixidruid - Valley of Heroes - EU"] = "Default",
 		["Krixi - Grim Batol"] = "Krixi",
 		["Gnomalock - Grim Batol"] = "Default",
-		["Krixidh - Grim Batol"] = "Krixi",
+		["Lilgaykrixi - Kazzak"] = "Default",
 		["Kriximonk - Valley of Heroes - EU"] = "Default",
 		["Krixidk - Ravencrest"] = "Krixi",
 		["Krixidh - Valley of Heroes - EU"] = "Default",
@@ -225,7 +225,7 @@ Quartz3DB = {
 		["Zolution - Grim Batol"] = "Default",
 		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Lilgaykrixi - Kazzak"] = "Default",
+		["Krixidh - Grim Batol"] = "Krixi",
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {

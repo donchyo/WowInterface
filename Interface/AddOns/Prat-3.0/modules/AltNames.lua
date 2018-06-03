@@ -2,7 +2,7 @@
 --
 -- Prat - A framework for World of Warcraft chat mods
 --
--- Copyright (C) 2006-2011  Prat Development Team
+-- Copyright (C) 2006-2018  Prat Development Team
 --
 -- This program is free software; you can redistribute it and/or
 -- modify it under the terms of the GNU General Public License
@@ -1299,8 +1299,8 @@ do
       StaticPopupDialogs['MENUITEM_LINKALT'] = {
         -- text		= "Who would you like to set as the main character of %s?",
         text = 'Mainname',
-        button1 = TEXT(ACCEPT),
-        button2 = TEXT(CANCEL),
+        button1 = ACCEPT,
+        button2 = CANCEL,
         hasEditBox = 1,
         maxLetters = 24,
         exclusive = 0,

@@ -1,4 +1,9 @@
 -- Revisions:
+--[[<p>08.46 21.05.2018</p>
+<p><ul>
+<li>Fix for call to undefined function printt.</li>
+</ul><hr></p>
+]]
 --[[<p>08.44 01.05.2018</p>
 <p><ul>
 <li>Added Petrified Wyrmtongue.</li>

@@ -21,10 +21,10 @@ L["Blizzard Options"] = "Blizzard-Optionen"
 L["Border Color/Alpha"] = "Randfarbe/-transparenz"
 L["Center"] = "Mitte"
 L["ChocolateBar Options"] = "ChocolateBar-Optionen"
---Translation missing 
--- L["Colorize frames during drag & drop."] = ""
---Translation missing 
--- L["Colorized Dragging"] = ""
+--[[Translation missing --]]
+--[[ L["Colorize frames during drag & drop."] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Colorized Dragging"] = ""--]] 
 L["Could not load ChocolateBar_Options, make sure it's installed."] = "ChocolateBar_Options konnte nicht geladen werden. Stelle bitte sicher, dass es installiert ist."
 L["Create Bar"] = "Neue Leiste"
 L["Create New Bar"] = "Neue Leiste erstellen"

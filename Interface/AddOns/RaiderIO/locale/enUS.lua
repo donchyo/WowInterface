@@ -81,5 +81,8 @@ L.DUNGEON_SHORT_NAME_COEN = "COEN"
 L.DUNGEON_SHORT_NAME_SEAT = "SEAT"
 L.DUNGEON_SHORT_NAME_LOWR = "LOWR"
 L.DUNGEON_SHORT_NAME_UPPR = "UPPR"
+L.RAIDERIO_AVERAGE_PLAYER_SCORE = "Avg. Scores for Timed +%s"
+L.SHOW_AVERAGE_PLAYER_SCORE_INFO = "Show Avg. Scores for Timed Runs"
+L.SHOW_AVERAGE_PLAYER_SCORE_INFO_DESC = "Shows the average Raider.IO score seen on members of in-time runs. This is visible on Keystone Tooltips and Player Tooltips in the Dungeon Finder."
 
 ns.L = L

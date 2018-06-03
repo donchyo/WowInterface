@@ -28,6 +28,7 @@ local addonConfig = {
 	showScoreInCombat = true,
 	disableScoreColors = false,
 	alwaysExtendTooltip = false,
+	showAverageScore = true,
 }
 
 -- session
@@ -57,6 +58,7 @@ local CONST_REGION_IDS = ns.regionIDs
 local CONST_SCORE_TIER = ns.scoreTiers
 local CONST_SCORE_TIER_SIMPLE = ns.scoreTiersSimple
 local CONST_DUNGEONS = ns.dungeons
+local CONST_AVERAGE_SCORE = ns.scoreLevelStats
 local L = ns.L
 
 -- enum dungeons
@@ -74,6 +76,8 @@ local OUTDATED_SECONDS = 86400 * 3 -- number of seconds before we start warning 
 local NUM_FIELDS_PER_CHARACTER = 3 -- number of fields in the database lookup table for each character
 local FACTION
 local REGIONS
+local REGIONS_RESET_TIME
+local KEYSTONE_AFFIX_SCHEDULE
 local KEYSTONE_LEVEL_TO_BASE_SCORE
 local LFD_ACTIVITYID_TO_DUNGEONID
 local DUNGEON_INSTANCEMAPID_TO_DUNGEONID
@@ -90,6 +94,31 @@ do
 		"eu",
 		"tw",
 		"cn"
+	}
+
+	REGIONS_RESET_TIME = {
+		1135695600,
+		1135810800,
+		1135753200,
+		1135810800,
+		1135810800,
+	}
+
+	KEYSTONE_AFFIX_SCHEDULE = {
+		9, -- Fortified
+		10, -- Tyrannical
+		-- {  6,  4,  9 },
+		-- {  7,  2, 10 },
+		-- {  5,  3,  9 },
+		-- {  8, 12, 10 },
+		-- {  7, 13,  9 },
+		-- { 11, 14, 10 },
+		-- {  6,  3,  9 },
+		-- {  5, 13, 10 },
+		-- {  7, 12,  9 },
+		-- {  8,  4, 10 },
+		-- { 11,  2,  9 },
+		-- {  5, 14, 10 },
 	}
 
 	KEYSTONE_LEVEL_TO_BASE_SCORE = {
@@ -246,6 +275,8 @@ local GetInstanceStatus
 local GetRealmSlug
 local GetNameAndRealm
 local GetFaction
+local GetWeeklyAffix
+local GetAverageScore
 do
 	-- get timezone offset between local and UTC+0 time
 	function GetTimezoneOffset(ts)
@@ -279,11 +310,22 @@ do
 		if type(raw) ~= "string" then
 			return
 		end
-		local level = raw:match("%+%s*(%d+)")
-		if not level then
+		local regexesFindLevel = { "(%d+)%+", "%+%s*(%d+)", "(%d+)%s*%+", "(%d+)" }
+
+		local level = 0;
+		for i, regex in ipairs(regexesFindLevel) do
+			level = raw:match(regex);
+			level = tonumber(level)
+			if level and level < 32 then
+				break
+			end
+		end
+
+		if not level or level < 2 then
 			return
 		end
-		return tonumber(level)
+
+		return level
 	end
 
 	-- detect LFD queue status
@@ -296,7 +338,7 @@ do
 		if id then
 			if activityID then
 				local index = LFD_ACTIVITYID_TO_DUNGEONID[activityID]
-					if index then
+				if index then
 					temp.index = index
 					temp.dungeon = CONST_DUNGEONS[index]
 					temp.level = GetKeystoneLevel(name) or GetKeystoneLevel(comment) or 0
@@ -388,6 +430,22 @@ do
 				return FACTION[faction]
 			end
 		end
+	end
+
+	-- returns affix ID based on the week
+	function GetWeeklyAffix(weekOffset)
+		local timestamp = (time() - GetTimezoneOffset()) + 604800 * (weekOffset or 0)
+		local timestampWeeklyReset = REGIONS_RESET_TIME[PLAYER_REGION]
+		local diff = difftime(timestamp, timestampWeeklyReset)
+		local index = floor(diff / 604800) % #KEYSTONE_AFFIX_SCHEDULE + 1
+		return KEYSTONE_AFFIX_SCHEDULE[index]
+	end
+
+	function GetAverageScore(level)
+		if CONST_AVERAGE_SCORE and CONST_AVERAGE_SCORE[level] then
+			return CONST_AVERAGE_SCORE[level]
+		end
+		return nil
 	end
 end
 
@@ -715,7 +773,8 @@ do
 			config:CreateOptionToggle(L.ALWAYS_SHOW_EXTENDED_INFO, L.ALWAYS_SHOW_EXTENDED_INFO_DESC, "alwaysExtendTooltip")
 			config:CreateOptionToggle(L.SHOW_SCORE_IN_COMBAT, L.SHOW_SCORE_IN_COMBAT_DESC, "showScoreInCombat")
 			config:CreateOptionToggle(L.SHOW_KEYSTONE_INFO, L.SHOW_KEYSTONE_INFO_DESC, "enableKeystoneTooltips")
-	
+			config:CreateOptionToggle(L.SHOW_AVERAGE_PLAYER_SCORE_INFO, L.SHOW_AVERAGE_PLAYER_SCORE_INFO_DESC, "showAverageScore")
+
 			config:CreatePadding()
 			config:CreateHeadline(L.COPY_RAIDERIO_PROFILE_URL)
 			config:CreateOptionToggle(L.ALLOW_ON_PLAYER_UNITS, L.ALLOW_ON_PLAYER_UNITS_DESC, "showDropDownCopyURL")
@@ -1111,6 +1170,7 @@ local GetFormattedScore
 local GetFormattedRunCount
 local AppendGameTooltip
 local UpdateAppendedGameTooltip
+local AppendAveragePlayerScore
 do
 	local function sortRoleScores(a, b)
 		return a[2] > b[2]
@@ -1134,7 +1194,7 @@ do
 	end
 
 	-- appends score data to a given tooltip
-	function AppendGameTooltip(tooltip, arg1, forceNoPadding, forceAddName, forceFaction, focusOnDungeonIndex)
+	function AppendGameTooltip(tooltip, arg1, forceNoPadding, forceAddName, forceFaction, focusOnDungeonIndex, focusOnKeystoneLevel)
 		local profile = GetScore(arg1, nil, forceFaction)
 
 		-- sanity check that the profile exists
@@ -1146,6 +1206,7 @@ do
 			-- setup tooltip hook
 			if not tooltipHooks[tooltip] then
 				tooltipHooks[tooltip] = true
+				tooltip:HookScript("OnTooltipCleared", tooltipHooks.Wipe)
 				tooltip:HookScript("OnHide", tooltipHooks.Wipe)
 			end
 
@@ -1203,6 +1264,8 @@ do
 				end
 			end
 
+			local searchLevel = 0
+
 			-- if not, then are we queued for, or hosting a group for a keystone run?
 			if not focusOnDungeonIndex then
 				local queued, isHosting = GetLFDStatus()
@@ -1223,6 +1286,7 @@ do
 							qHighlightStrSameAsBest = profile.maxDungeonName == queued.dungeon.shortName
 							qHighlightStr1 = queued.dungeon.shortName
 							qHighlightStr2 = "+" .. profile.dungeons[queued.index]
+							searchLevel = queued.level
 						end
 					else
 						-- at the moment we pick the first queued dungeon and hope the player only queues for one dungeon at a time, not multiple different keys
@@ -1239,6 +1303,7 @@ do
 									qHighlightStrSameAsBest = true
 									qHighlightStr1 = q.dungeon.shortName
 									qHighlightStr2 = "+" .. l
+									searchLevel = q.level
 								end
 								break
 							end
@@ -1298,6 +1363,10 @@ do
 				tooltip:AddDoubleLine(L.MAINS_SCORE, profile.mainScore, 1, 1, 1, GetScoreColor(profile.mainScore))
 			end
 
+			if focusOnKeystoneLevel or searchLevel then
+				AppendAveragePlayerScore(tooltip, focusOnKeystoneLevel or searchLevel)
+			end
+
 			if IS_DB_OUTDATED then
 				tooltip:AddLine(format(L.OUTDATED_DATABASE, OUTDATED_DAYS), 1, 1, 1, false)
 			end
@@ -1316,6 +1385,13 @@ do
 			tooltip:Show()
 
 			return 1
+		else
+			if focusOnKeystoneLevel then
+				AppendAveragePlayerScore(tooltip, focusOnKeystoneLevel, not forceNoPadding)
+
+				tooltip:Show()
+				return 1
+			end
 		end
 	end
 
@@ -1364,6 +1440,18 @@ do
 		end
 		-- finalize by appending our tooltip on the bottom
 		AppendGameTooltip(tooltip, arg1, forceNoPadding, forceAddName, forceFaction, focusOnDungeonIndex)
+	end
+
+	function AppendAveragePlayerScore(tooltip, keystoneLevel, addBlankLine)
+		if addonConfig.showAverageScore then
+			local averageScore = GetAverageScore(keystoneLevel)
+			if averageScore then
+				if addBlankLine then
+					tooltip:AddLine(" ")
+				end
+				tooltip:AddDoubleLine(format(L.RAIDERIO_AVERAGE_PLAYER_SCORE, keystoneLevel), averageScore, 1, 1, 1, GetScoreColor(averageScore))
+			end
+		end
 	end
 end
 
@@ -1577,7 +1665,10 @@ do
 						if not hasOwner then
 							GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT", 0, 0)
 						end
-						AppendGameTooltip(GameTooltip, fullName, not hasOwner, true, PLAYER_FACTION, nil)
+
+						local _, activityID, _, title, description = C_LFGList.GetActiveEntryInfo();
+						local keystoneLevel = GetKeystoneLevel(title) or GetKeystoneLevel(description) or 0
+						AppendGameTooltip(GameTooltip, fullName, not hasOwner, true, PLAYER_FACTION, LFD_ACTIVITYID_TO_DUNGEONID[activityID], keystoneLevel)
 					end
 				end
 			end
@@ -1588,9 +1679,10 @@ do
 			end
 			-- search results
 			local function SetSearchEntryTooltip(tooltip, resultID, autoAcceptOption)
-				local _, activityID, _, _, _, _, _, _, _, _, _, _, leaderName = C_LFGList.GetSearchResultInfo(resultID)
+				local _, activityID, title, description, _, _, _, _, _, _, _, _, leaderName = C_LFGList.GetSearchResultInfo(resultID)
 				if leaderName then
-					AppendGameTooltip(tooltip, leaderName, false, true, PLAYER_FACTION, LFD_ACTIVITYID_TO_DUNGEONID[activityID])
+					local keystoneLevel = GetKeystoneLevel(title) or GetKeystoneLevel(description) or 0
+					AppendGameTooltip(tooltip, leaderName, false, true, PLAYER_FACTION, LFD_ACTIVITYID_TO_DUNGEONID[activityID], keystoneLevel)
 				end
 			end
 			hooksecurefunc("LFGListUtil_SetSearchEntryTooltip", SetSearchEntryTooltip)
@@ -2045,6 +2137,9 @@ do
 			end
 			tooltip:AddLine(" ")
 			tooltip:AddDoubleLine(L.RAIDERIO_MP_BASE_SCORE, baseScore, 1, 0.85, 0, 1, 1, 1)
+
+			AppendAveragePlayerScore(tooltip, lvl)
+
 			inst = tonumber(inst)
 			if inst then
 				local index = KEYSTONE_INST_TO_DUNGEONID[inst]

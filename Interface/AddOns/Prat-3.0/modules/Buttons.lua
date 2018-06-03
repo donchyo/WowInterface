@@ -3,7 +3,7 @@
 --
 -- Prat - A framework for World of Warcraft chat mods
 --
--- Copyright (C) 2006-2011  Prat Development Team
+-- Copyright (C) 2006-2018  Prat Development Team
 --
 -- This program is free software; you can redistribute it and/or
 -- modify it under the terms of the GNU General Public License
@@ -703,17 +703,19 @@ function module:ShowButtons()
 	local upButton, downButton, bottomButton
 
 	for name, frame in pairs(Prat.Frames) do
-		upButton = _G[name.."ButtonFrameUpButton"]
-		upButton:SetScript("OnShow", nil)
-		upButton:Show()
-		downButton = _G[name.."ButtonFrameDownButton"]
-		downButton:SetScript("OnShow", nil)
-		downButton:Show()
-		bottomButton = _G[name.."ButtonFrameBottomButton"]
-		bottomButton:SetScript("OnShow", nil)
-		bottomButton:Show()
-		bottomButton:SetParent(_G[name.."ButtonFrame"])
-		
+		if select(4, GetBuildInfo()) < 80000 then
+			upButton = _G[name.."ButtonFrameUpButton"]
+			upButton:SetScript("OnShow", nil)
+			upButton:Show()
+			downButton = _G[name.."ButtonFrameDownButton"]
+			downButton:SetScript("OnShow", nil)
+			downButton:Show()
+			bottomButton = _G[name.."ButtonFrameBottomButton"]
+			bottomButton:SetScript("OnShow", nil)
+			bottomButton:Show()
+			bottomButton:SetParent(_G[name.."ButtonFrame"])
+		end
+
 --		frame.buttonSide = nil
 --		bottomButton:ClearAllPoints()
 --		bottomButton:SetPoint("BOTTOMRIGHT", _G[name.."ButtonFrame"], "BOTTOMLEFT", 2, 2)
@@ -735,14 +737,16 @@ end
 function module:FCF_SetButtonSide(chatFrame, buttonSide)
 	local f = _G[chatFrame:GetName().."ButtonFrameBottomButton"]
 	local bf = _G[chatFrame:GetName().."ButtonFrame"]
-	
-	if self.db.profile.showButtons then
-    	f:ClearAllPoints()
-        f:SetPoint("BOTTOM", bf, "BOTTOM", 0, 0)
-	else
-    	f:ClearAllPoints()
-        f:SetPoint("BOTTOMRIGHT", chatFrame, "BOTTOMRIGHT", 2, 2)
-    end
+
+	if select(4, GetBuildInfo()) < 80000 then
+		if self.db.profile.showButtons then
+			f:ClearAllPoints()
+			f:SetPoint("BOTTOM", bf, "BOTTOM", 0, 0)
+		else
+			f:ClearAllPoints()
+			f:SetPoint("BOTTOMRIGHT", chatFrame, "BOTTOMRIGHT", 2, 2)
+		end
+	end
 end
 
 
@@ -790,20 +794,26 @@ end
 
 function module:ScrollUp(frame)
 	local button = _G[frame:GetName() .. "ButtonFrameBottomButton"]
-	button.override = true
-	button:Show()
+	if button then
+		button.override = true
+		button:Show()
+	end
 end
 
 function module:ScrollDown(frame)
 	if frame:GetScrollOffset() == 0 then
 		local button = _G[frame:GetName() .. "ButtonFrameBottomButton"]
-		button:Hide()	
+		if button then
+			button:Hide()
+		end
 	end
 end
 
 function module:ScrollDownForce(frame)
 	local button = _G[frame:GetName() .. "ButtonFrameBottomButton"]
-	button:Hide()	
+	if button then
+		button:Hide()
+	end
 end
 
 --function module:AddMessage(frame, text, ...)

@@ -45,6 +45,9 @@ VER 3 0000000000000355 "bw" "INV_MISC_QUESTIONMARK"
 /cancelaura Hand of Protection
 /cast Bestial Wrath
 END
+VER 3 0000000000000392 "cancel flame rin" "INV_MISC_QUESTIONMARK"
+/cancelaura flaming hoop
+END
 VER 3 0000000000000379 "cancelaura rf" "INV_MISC_QUESTIONMARK"
 /cancelaura righteous fury
 END

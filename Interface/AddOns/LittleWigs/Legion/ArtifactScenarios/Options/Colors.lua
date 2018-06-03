@@ -59,5 +59,4 @@ BigWigs:AddColors("Agatha", {
 	[243111] = {"Important","Positive"},
 	["fuming_imp"] = "Urgent",
 	["imp_servant"] = "Attention",
-	["stages"] = "Neutral",
 })

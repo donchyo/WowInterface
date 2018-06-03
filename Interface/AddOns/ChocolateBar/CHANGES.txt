@@ -1,12 +1,10 @@
-tag 78d5531b7ccaeb777fd2ed7a854c7d9c59d5c7e0 v3.0.5
-Author:	yess <yess@xan.at>
-Date:	Sun Sep 17 04:00:03 2017 +0200
+lightweight tag 9135dc7d340e9f110bff2b1b61062463eb9f9d86 v3.1.6
+Author:	zanony <zanony@jsommer.at>
+Date:	Sat May 12 22:15:05 2018 +0200
 
-Release v3.0.5
+commit 9135dc7d340e9f110bff2b1b61062463eb9f9d86
+Author: zanony <zanony@jsommer.at>
+Date:   Sat May 12 22:15:05 2018 +0200
 
-commit bae2027d547cee32c3d6e6acb7736d731620087d
-Author: zanony <zanony@xan.at>
-Date:   Sun Sep 17 03:59:16 2017 +0200
-
-    update toc
+    update .pkgmeta
 

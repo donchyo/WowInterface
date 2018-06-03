@@ -24,6 +24,7 @@ local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
 --
 local T_CHECK = P.T_CHECK; assert(T_CHECK ~= nil,'T_CHECK')
+local print = P.print; assert(print ~= nil,'print')
 --
 NOP.slash_handler = function(msg, editbox) -- /nop handler
   local line = msg:lower()
@@ -34,7 +35,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
         local link = GetContainerItemLink(bag, slot)
         if link then
           local _, _, itemColor, itemType, itemID = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):")
-          NOP.printt("Bag",bag,"Slot",slot,"Link",itemType or "unknow type",itemID or "unknown ID")
+          print("Bag",bag,"Slot",slot,"Link",itemType or "unknow type",itemID or "unknown ID")
         end
       end
     end
@@ -42,7 +43,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   end
   if cmd == "verbose" then
     NOP.DB.verbose = not NOP.DB.verbose
-    NOP.printt("Verbose mode", NOP.DB.verbose and "on" or "off")
+    print("Verbose mode", NOP.DB.verbose and "on" or "off")
     return
   end
   if cmd == "titem" then
@@ -52,7 +53,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
         for slot = 1, GetContainerNumSlots(bag), 1 do
           local itemID = GetContainerItemID(bag,slot)
           if itemID and itemID == id then -- when I own item just check true tooltip over bags
-            NOP.printt("Tooltip based on item in bag",bag,"slot",slot)
+            print("Tooltip based on item in bag",bag,"slot",slot)
             NOP.itemFrame:ClearLines()
             NOP.itemFrame:SetBagItem(bag, slot)
             NOP:PrintTooltip(NOP.itemFrame)
@@ -62,10 +63,10 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
       end
       local name = GetItemInfo(id)
       if not name then
-        NOP.printt("Item ID",id,"is not in cache yet! Try same ID later")
+        print("Item ID",id,"is not in cache yet! Try same ID later")
         return
       end
-      NOP.printt("Tooltip based only on ID")
+      print("Tooltip based only on ID")
       NOP.itemFrame:ClearLines()
       NOP.itemFrame:SetItemByID(id)
       NOP:PrintTooltip(NOP.itemFrame)
@@ -77,7 +78,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
     if id then
       local name = GetSpellInfo(id)
       if not name then
-        NOP.printt("Spell ID",id,"is not in cache yet! Try same ID later")
+        print("Spell ID",id,"is not in cache yet! Try same ID later")
         return
       end
       NOP.spellFrame:ClearLines()
@@ -90,30 +91,30 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
     if NOP.profileSession and NOP.profileCount and NOP.profileTotal and NOP.profileMaxRun and NOP.profileCount > 0 then
       local Elapsed = GetTime() - NOP.profileSession
       local textTime = (" %dh %02dm %02ds "):format(Elapsed / 3600, math.fmod(Elapsed / 60, 60), math.fmod(Elapsed, 60))
-      NOP.printt(format("%s session time %d [calls] spend %.2f [ms/call] max run %.2f [ms]", textTime, NOP.profileCount, NOP.profileTotal / NOP.profileCount, NOP.profileMaxRun))
+      print(format("%s session time %d [calls] spend %.2f [ms/call] max run %.2f [ms]", textTime, NOP.profileCount, NOP.profileTotal / NOP.profileCount, NOP.profileMaxRun))
     end
     UpdateAddOnMemoryUsage()
-    NOP.printt(format("Memory usage %.2f kB",GetAddOnMemoryUsage(ADDON)))
+    print(format("Memory usage %.2f kB",GetAddOnMemoryUsage(ADDON)))
     if NOP.BF then
       local secure,addon = issecurevariable(NOP.BF,"Hide")
-      if not secure then NOP.printt("Tainted button Hide() by:",addon) end
+      if not secure then print("Tainted button Hide() by:",addon) end
       secure,addon = issecurevariable(NOP.BF,"Show")
-      if not secure then NOP.printt("Tainted button Show() by:",addon) end
+      if not secure then print("Tainted button Show() by:",addon) end
       secure,addon = issecurevariable(NOP.BF,"SetAttribute")
-      if not secure then NOP.printt("Tainted button SetAttribute() by:",addon) end
+      if not secure then print("Tainted button SetAttribute() by:",addon) end
     end
     if NOP.profileOn then -- toggle profiling
       NOP.profileOn = nil
       NOP.profileSession = nil
       NOP.profileCount = nil 
       NOP.profileTotal = nil
-      NOP.printt("Profiling OFF")
+      print("Profiling OFF")
     else
       NOP.profileOn = true
       NOP.profileSession = nil
       NOP.profileCount = nil 
       NOP.profileTotal = nil
-      NOP.printt("Profiling ON")
+      print("Profiling ON")
     end
     NOP.DB["profiling"] = NOP.profileOn
     return
@@ -160,31 +161,31 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   end
   if cmd == "list" then
     if (NOP.DB["T_BLACKLIST"] ~= nil and NOP.DB.T_BLACKLIST[0]) or (NOP.DB["T_BLACKLIST_Q"] ~= nil and NOP.DB.T_BLACKLIST_Q[0])then
-      NOP.printt(P.L["BLACKLISTED_ITEMS"])
-      NOP.printt("--Button--")
+      print(P.L["BLACKLISTED_ITEMS"])
+      print("--Button--")
       for itemID,count in pairs(NOP.DB.T_BLACKLIST) do
         if itemID and itemID > 0 then
           local name = GetItemInfo(itemID)
           if not name then
-            NOP.printt("ItemID:",itemID,"Not in cache, try later same command to see name.")
+            print("ItemID:",itemID,"Not in cache, try later same command to see name.")
           else
-            NOP.printt("ItemID:",itemID,"Name:",name)
+            print("ItemID:",itemID,"Name:",name)
           end
         end
       end
-      NOP.printt("--Quest--")
+      print("--Quest--")
       for itemID,count in pairs(NOP.DB.T_BLACKLIST_Q) do
         if itemID and itemID > 0 then
           local name = GetItemInfo(itemID)
           if not name then
-            NOP.printt("ItemID:",itemID,"Not in cache, try later same command to see name.")
+            print("ItemID:",itemID,"Not in cache, try later same command to see name.")
           else
-            NOP.printt("ItemID:",itemID,"Name:",name)
+            print("ItemID:",itemID,"Name:",name)
           end
         end
       end
     else
-      NOP.printt(P.L["BLACKLIST_EMPTY"])
+      print(P.L["BLACKLIST_EMPTY"])
     end
     return
   end
@@ -203,7 +204,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   end
   local usage = {string.split("\n", P.L["NOP_USE"] .. P.CONSOLE_CMD .. P.CONSOLE_USAGE)}
   for _,line in pairs(usage) do 
-    NOP.printt(line)
+    print(line)
   end
 end
 _G.SLASH_NOP_SWITCH1 = P.CONSOLE_CMD

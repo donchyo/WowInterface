@@ -53,12 +53,18 @@ L["OPEN_CONFIG"] = "Открыть настройки"
 L["OUTDATED_DATABASE"] = "Данные устарели на %d дня."
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r использует данные устаревшие на |cffFF6666%d|r дня(дней). Пожалуйста, обновите аддон для отображения корректных очков."
 L["PREV_SEASON_SUFFIX"] = "(*)"
+--[[Translation missing --]]
+--[[ L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = ""--]] 
 L["RAIDERIO_MP_BASE_SCORE"] = "Raider.IO M+ Базовые Очки"
 L["RAIDERIO_MP_SCORE"] = "Очки по версии Raider.IO"
 L["RAIDERIO_MP_SCORE_COLON"] = "Очки по версии Raider.IO: "
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Настройки аддона Raider.IO "
 L["RELOAD_LATER"] = "Перезагрузить позже"
 L["RELOAD_NOW"] = "Перезагрузить сейчас"
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO_DESC"] = ""--]] 
 L["SHOW_IN_FRIENDS"] = "Показывать в списке друзей"
 L["SHOW_IN_FRIENDS_DESC"] = "Показывает очки при наведении курсора мыши в списке друзей."
 L["SHOW_IN_LFD"] = "Показывать в заранее собранных группах"

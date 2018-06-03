@@ -1,5 +1,12 @@
 
 DialogKeyDB = {
+	["global"] = {
+		["shownBindWarning"] = true,
+		["dontClickRevives"] = true,
+		["dontClickDuels"] = true,
+		["dontClickReleases"] = true,
+		["dontClickSummons"] = true,
+	},
 	["profileKeys"] = {
 		["Krixi - Valley of Heroes - EU"] = "Default",
 		["Donch - Grim Batol"] = "Default",
@@ -12,26 +19,19 @@ DialogKeyDB = {
 		["Krixicx - Shattered Hand"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
-		["Kriximonk - Valley of Heroes - EU"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Krixi",
 		["Krixidruid - Valley of Heroes - EU"] = "Default",
 		["Memeinhaler - Grim Batol"] = "Default",
 		["Krixidk - Ravencrest"] = "Krixi",
 		["Krixidh - Valley of Heroes - EU"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
-		["Kriximonk - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Krixi",
+		["Kriximonk - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
 		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Zolution - Grim Batol"] = "Default",
+		["Kriximonk - Valley of Heroes - EU"] = "Default",
 		["Krixidk - Valley of Heroes - EU"] = "Default",
-	},
-	["global"] = {
-		["shownBindWarning"] = true,
-		["dontClickRevives"] = true,
-		["dontClickDuels"] = true,
-		["dontClickReleases"] = true,
-		["dontClickSummons"] = true,
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -1,3 +1,7 @@
+VER 3 0100000000000016 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Majordomo's Dinner Bell
+/use 14
+END
 VER 3 010000000000000F "coccon" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]life cocoon

@@ -2,7 +2,7 @@
 --
 -- Prat - A framework for World of Warcraft chat mods
 --
--- Copyright (C) 2006-2011  Prat Development Team
+-- Copyright (C) 2006-2018  Prat Development Team
 --
 -- This program is free software; you can redistribute it and/or
 -- modify it under the terms of the GNU General Public License
@@ -432,7 +432,7 @@ function module:BuildChannelList()
         local val = va:lower()
         local chan
         if va ~= "CHANNEL" then
-            chan = TEXT(_G["CHAT_MSG_"..va])
+            chan = _G["CHAT_MSG_"..va]
         else
             chan = PL["Channel"]
         end

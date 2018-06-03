@@ -58,12 +58,18 @@ L["OUTDATED_DATABASE"] = "%天前的评分"
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r使用的数据已经有|cffFF6666%d|r天之前的了。请更新此插件以显示更精准的大秘境评分。"
 L["PREV_SEASON_SUFFIX"] = "（*）"
 --[[Translation missing --]]
+--[[ L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["RAIDERIO_MP_BASE_SCORE"] = ""--]] 
 L["RAIDERIO_MP_SCORE"] = "Raider.IO 大秘境评分"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO 大秘境评分："
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Raider.IO 大秘境选项"
 L["RELOAD_LATER"] = "我一会儿再重载（Reload）"
 L["RELOAD_NOW"] = "现在重载（Reload）"
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO_DESC"] = ""--]] 
 L["SHOW_IN_FRIENDS"] = "显示在好友名单"
 L["SHOW_IN_FRIENDS_DESC"] = "当你鼠标悬停到好友时显示大秘境评分"
 L["SHOW_IN_LFD"] = "在地下城查找器中显示"

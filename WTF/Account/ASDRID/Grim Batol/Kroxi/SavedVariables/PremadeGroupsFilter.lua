@@ -290,8 +290,8 @@ PremadeGroupsFilterState = {
 	["t1c2f0"] = {
 		["enabled"] = true,
 		["tanks"] = {
-			["min"] = "1",
-			["max"] = "1",
+			["min"] = "0",
+			["max"] = "0",
 			["act"] = true,
 		},
 		["ilvl"] = {
@@ -314,12 +314,12 @@ PremadeGroupsFilterState = {
 		},
 		["members"] = {
 			["min"] = "",
-			["max"] = "1",
+			["max"] = "4",
 			["act"] = true,
 		},
 		["heals"] = {
-			["min"] = "0",
-			["max"] = "",
+			["min"] = "1",
+			["max"] = "1",
 			["act"] = true,
 		},
 		["defeated"] = {

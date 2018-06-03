@@ -1,5 +1,27 @@
 
 MethodDungeonToolsDB = {
+	["profileKeys"] = {
+		["Krixi - Valley of Heroes - EU"] = "Krixi - Valley of Heroes - EU",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Krixidk - Grim Batol"] = "Krixi",
+		["Kroxi - Grim Batol"] = "Krixi",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixi",
+		["Krixiwarrior - Valley of Heroes - EU"] = "Krixiwarrior - Valley of Heroes - EU",
+		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Krixidruid - Valley of Heroes - EU"] = "Krixidruid - Valley of Heroes - EU",
+		["Krixidk - Ravencrest"] = "Krixi",
+		["Krixidh - Valley of Heroes - EU"] = "Krixidh - Valley of Heroes - EU",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
+		["Daroislost - Valley of Heroes - EU"] = "Daroislost - Valley of Heroes - EU",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi",
+		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
+	},
 	["global"] = {
 		["presets"] = {
 			{
@@ -175,8 +197,8 @@ MethodDungeonToolsDB = {
 			{
 				{
 					["value"] = {
-						["currentPull"] = 11,
-						["currentSublevel"] = 4,
+						["currentPull"] = 12,
+						["currentSublevel"] = 5,
 						["currentDungeonIdx"] = 2,
 						["teeming"] = false,
 						["currentAffix"] = "tyrannical",
@@ -286,10 +308,6 @@ MethodDungeonToolsDB = {
 								},
 								[16] = {
 								},
-								[19] = {
-									1, -- [1]
-									2, -- [2]
-								},
 								[18] = {
 									8, -- [1]
 									7, -- [2]
@@ -298,6 +316,10 @@ MethodDungeonToolsDB = {
 									10, -- [5]
 									9, -- [6]
 									11, -- [7]
+								},
+								[19] = {
+									1, -- [1]
+									2, -- [2]
 								},
 							}, -- [6]
 							{
@@ -764,13 +786,8 @@ MethodDungeonToolsDB = {
 									37, -- [5]
 									39, -- [6]
 								},
-								[14] = {
-									15, -- [1]
-									14, -- [2]
-									16, -- [3]
-									17, -- [4]
-									13, -- [5]
-									18, -- [6]
+								[7] = {
+									6, -- [1]
 								},
 								[15] = {
 									3, -- [1]
@@ -779,8 +796,13 @@ MethodDungeonToolsDB = {
 									5, -- [4]
 									1, -- [5]
 								},
-								[7] = {
-									6, -- [1]
+								[14] = {
+									15, -- [1]
+									14, -- [2]
+									16, -- [3]
+									17, -- [4]
+									13, -- [5]
+									18, -- [6]
 								},
 							}, -- [15]
 						},
@@ -893,14 +915,14 @@ MethodDungeonToolsDB = {
 								}, -- [9]
 							}, -- [5]
 							{
+								[20] = {
+								},
 								[17] = {
 									1, -- [1]
 								},
 								[7] = {
 									6, -- [1]
 									5, -- [2]
-								},
-								[20] = {
 								},
 							}, -- [6]
 							{
@@ -1392,7 +1414,8 @@ MethodDungeonToolsDB = {
 								},
 								[10] = {
 								},
-								[7] = {
+								[4] = {
+									3, -- [1]
 								},
 								[14] = {
 									1, -- [1]
@@ -1401,8 +1424,7 @@ MethodDungeonToolsDB = {
 								[9] = {
 									1, -- [1]
 								},
-								[4] = {
-									3, -- [1]
+								[7] = {
 								},
 							}, -- [3]
 							{
@@ -1410,11 +1432,17 @@ MethodDungeonToolsDB = {
 									3, -- [1]
 									4, -- [2]
 								},
-								[15] = {
+								[4] = {
+									4, -- [1]
+									5, -- [2]
+								},
+								[16] = {
 									1, -- [1]
-									4, -- [2]
-									2, -- [3]
-									3, -- [4]
+								},
+								[14] = {
+									4, -- [1]
+									6, -- [2]
+									5, -- [3]
 								},
 								[9] = {
 									6, -- [1]
@@ -1422,17 +1450,11 @@ MethodDungeonToolsDB = {
 									7, -- [3]
 									9, -- [4]
 								},
-								[14] = {
-									4, -- [1]
-									6, -- [2]
-									5, -- [3]
-								},
-								[16] = {
+								[15] = {
 									1, -- [1]
-								},
-								[4] = {
-									4, -- [1]
-									5, -- [2]
+									4, -- [2]
+									2, -- [3]
+									3, -- [4]
 								},
 							}, -- [4]
 						},
@@ -1579,7 +1601,9 @@ MethodDungeonToolsDB = {
 									9, -- [8]
 									6, -- [9]
 								},
-								[21] = {
+								[4] = {
+									3, -- [1]
+									4, -- [2]
 								},
 								[14] = {
 									7, -- [1]
@@ -1590,9 +1614,7 @@ MethodDungeonToolsDB = {
 									6, -- [3]
 									7, -- [4]
 								},
-								[4] = {
-									3, -- [1]
-									4, -- [2]
+								[21] = {
 								},
 							}, -- [4]
 							{
@@ -1611,8 +1633,8 @@ MethodDungeonToolsDB = {
 			{
 				{
 					["value"] = {
-						["currentPull"] = 16,
-						["currentSublevel"] = 3,
+						["currentPull"] = 1,
+						["currentSublevel"] = 1,
 						["currentDungeonIdx"] = 9,
 						["teeming"] = false,
 						["currentAffix"] = "fortified",
@@ -1870,7 +1892,7 @@ MethodDungeonToolsDB = {
 				{
 					["value"] = {
 						["currentPull"] = 1,
-						["currentSublevel"] = 3,
+						["currentSublevel"] = 6,
 						["currentDungeonIdx"] = 9,
 						["teeming"] = false,
 						["currentAffix"] = "fortified",
@@ -2144,17 +2166,17 @@ MethodDungeonToolsDB = {
 			{
 				{
 					["value"] = {
-						["currentPull"] = 6,
-						["currentSublevel"] = 5,
+						["currentPull"] = 4,
+						["currentSublevel"] = 6,
 						["currentDungeonIdx"] = 10,
 						["teeming"] = false,
 						["currentAffix"] = "fortified",
 						["pulls"] = {
 							{
 								{
-									2, -- [1]
 								}, -- [1]
 								{
+									1, -- [1]
 								}, -- [2]
 								{
 									1, -- [1]
@@ -2187,6 +2209,8 @@ MethodDungeonToolsDB = {
 								},
 							}, -- [2]
 							{
+								[8] = {
+								},
 								[13] = {
 									1, -- [1]
 								},
@@ -2194,22 +2218,32 @@ MethodDungeonToolsDB = {
 								},
 							}, -- [3]
 							{
+								[8] = {
+									7, -- [1]
+									12, -- [2]
+									13, -- [3]
+									11, -- [4]
+								},
 								[13] = {
 									11, -- [1]
 									12, -- [2]
 									13, -- [3]
-									15, -- [4]
-									16, -- [5]
-									14, -- [6]
-									10, -- [7]
-									8, -- [8]
-									9, -- [9]
-									7, -- [10]
-									5, -- [11]
-									6, -- [12]
-									2, -- [13]
-									4, -- [14]
-									3, -- [15]
+									10, -- [4]
+									8, -- [5]
+									9, -- [6]
+									7, -- [7]
+									5, -- [8]
+									6, -- [9]
+									2, -- [10]
+									4, -- [11]
+									3, -- [12]
+									16, -- [13]
+									14, -- [14]
+									15, -- [15]
+								},
+								[7] = {
+								},
+								[14] = {
 								},
 							}, -- [4]
 							{
@@ -2219,7 +2253,6 @@ MethodDungeonToolsDB = {
 							}, -- [5]
 							{
 								[12] = {
-									2, -- [1]
 								},
 							}, -- [6]
 						},
@@ -2229,7 +2262,7 @@ MethodDungeonToolsDB = {
 			{
 				{
 					["value"] = {
-						["currentPull"] = 4,
+						["currentPull"] = 11,
 						["currentSublevel"] = 1,
 						["currentDungeonIdx"] = 11,
 						["teeming"] = false,
@@ -2237,10 +2270,10 @@ MethodDungeonToolsDB = {
 						["pulls"] = {
 							{
 								{
-									10, -- [1]
-									11, -- [2]
-									12, -- [3]
-									13, -- [4]
+									12, -- [1]
+									13, -- [2]
+									10, -- [3]
+									11, -- [4]
 									14, -- [5]
 									15, -- [6]
 								}, -- [1]
@@ -2248,18 +2281,16 @@ MethodDungeonToolsDB = {
 									1, -- [1]
 									5, -- [2]
 									4, -- [3]
-									3, -- [4]
-									2, -- [5]
 								}, -- [2]
 								{
 									2, -- [1]
 									1, -- [2]
-									3, -- [3]
-									4, -- [4]
-									5, -- [5]
-									6, -- [6]
-									7, -- [7]
-									8, -- [8]
+									8, -- [3]
+									6, -- [4]
+									7, -- [5]
+									3, -- [6]
+									4, -- [7]
+									5, -- [8]
 								}, -- [3]
 							}, -- [1]
 							{
@@ -2269,94 +2300,92 @@ MethodDungeonToolsDB = {
 									22, -- [3]
 									23, -- [4]
 									24, -- [5]
+									27, -- [6]
+									26, -- [7]
+									28, -- [8]
+									31, -- [9]
+									29, -- [10]
+									30, -- [11]
+									34, -- [12]
+									35, -- [13]
+									36, -- [14]
 								}, -- [1]
 								[10] = {
 									1, -- [1]
-								},
-							}, -- [2]
-							{
-								{
-									26, -- [1]
-									27, -- [2]
-									28, -- [3]
-									34, -- [4]
-									35, -- [5]
-									36, -- [6]
-								}, -- [1]
-								{
-									16, -- [1]
-								}, -- [2]
-								[6] = {
-									5, -- [1]
-									6, -- [2]
-								},
-								[10] = {
-									2, -- [1]
-								},
-								[7] = {
-									4, -- [1]
+									2, -- [2]
 								},
 								[17] = {
 									6, -- [1]
 								},
-							}, -- [3]
+							}, -- [2]
 							{
 								{
-									49, -- [1]
+									47, -- [1]
 									48, -- [2]
-									47, -- [3]
-									45, -- [4]
-									44, -- [5]
-									46, -- [6]
+									49, -- [3]
 								}, -- [1]
 								{
 									29, -- [1]
 								}, -- [2]
-								[6] = {
-									13, -- [1]
-								},
-								[17] = {
-									5, -- [1]
-									2, -- [2]
+								[11] = {
+									9, -- [1]
 								},
 								[10] = {
 									3, -- [1]
 								},
+								[17] = {
+									5, -- [1]
+								},
+							}, -- [3]
+							{
+								[11] = {
+									8, -- [1]
+									5, -- [2]
+								},
+								[6] = {
+									13, -- [1]
+									10, -- [2]
+								},
 								[7] = {
 									12, -- [1]
+									9, -- [2]
 								},
-								[11] = {
-									9, -- [1]
-									8, -- [2]
+								[2] = {
+									27, -- [1]
 								},
 							}, -- [4]
 							{
 								{
-									55, -- [1]
-									56, -- [2]
+									45, -- [1]
+									44, -- [2]
+									46, -- [3]
 								}, -- [1]
+								{
+									28, -- [1]
+								}, -- [2]
+								[11] = {
+									7, -- [1]
+								},
 								[6] = {
-									14, -- [1]
-								},
-								[17] = {
-									3, -- [1]
-								},
-								[12] = {
-								},
-								[13] = {
-								},
-								[9] = {
-									5, -- [1]
+									12, -- [1]
 								},
 								[7] = {
-									13, -- [1]
+									11, -- [1]
+								},
+								[17] = {
+									2, -- [1]
 								},
 							}, -- [5]
 							{
 								{
-									61, -- [1]
-									60, -- [2]
-									62, -- [3]
+									57, -- [1]
+									58, -- [2]
+									59, -- [3]
+									55, -- [4]
+									56, -- [5]
+									60, -- [6]
+									62, -- [7]
+									61, -- [8]
 								}, -- [1]
 							}, -- [6]
 							{
@@ -2382,7 +2411,8 @@ MethodDungeonToolsDB = {
 							}, -- [8]
 							{
 								{
-									64, -- [1]
+									63, -- [1]
+									64, -- [2]
 								}, -- [1]
 								[15] = {
 									3, -- [1]
@@ -2390,16 +2420,33 @@ MethodDungeonToolsDB = {
 									5, -- [3]
 								},
 								[13] = {
-									12, -- [1]
-									13, -- [2]
+									13, -- [1]
+									12, -- [2]
 								},
 							}, -- [9]
 							{
-								[19] = {
+								{
+								}, -- [1]
+								[18] = {
 									2, -- [1]
-									1, -- [2]
+									3, -- [2]
+									1, -- [3]
+									4, -- [4]
+									6, -- [5]
+									5, -- [6]
+								},
+								[19] = {
+									1, -- [1]
+									2, -- [2]
 								},
 							}, -- [10]
+							{
+								{
+									68, -- [1]
+									67, -- [2]
+									70, -- [3]
+								}, -- [1]
+							}, -- [11]
 						},
 					},
 				}, -- [1]
@@ -2608,33 +2655,10 @@ MethodDungeonToolsDB = {
 			2, -- [1]
 			[3] = 2,
 			[6] = 2,
-			[9] = 2,
 		},
 		["xoffset"] = 200.444427490234,
 		["anchorFrom"] = "LEFT",
 		["yoffset"] = 9.83337783813477,
-	},
-	["profileKeys"] = {
-		["Krixi - Valley of Heroes - EU"] = "Krixi - Valley of Heroes - EU",
-		["Donch - Grim Batol"] = "Donch - Grim Batol",
-		["Krixidk - Grim Batol"] = "Krixi",
-		["Kroxi - Grim Batol"] = "Krixi",
-		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixi",
-		["Krixiwarrior - Valley of Heroes - EU"] = "Krixiwarrior - Valley of Heroes - EU",
-		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi",
-		["Krixidk - Ravencrest"] = "Krixi",
-		["Krixidh - Valley of Heroes - EU"] = "Krixidh - Valley of Heroes - EU",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
-		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Daroislost - Valley of Heroes - EU"] = "Daroislost - Valley of Heroes - EU",
-		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Krixidruid - Valley of Heroes - EU"] = "Krixidruid - Valley of Heroes - EU",
-		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
 	},
 	["profiles"] = {
 		["Krixi - Grim Batol"] = {

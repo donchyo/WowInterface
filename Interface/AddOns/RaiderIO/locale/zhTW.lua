@@ -53,12 +53,18 @@ L["OPEN_CONFIG"] = "開啟選項"
 L["OUTDATED_DATABASE"] = "分數已有%d天之久"
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r使用的數據已經有|cffFF6666%d|r天之久了。請更新此插件已呈現更精確的傳奇+分數。"
 L["PREV_SEASON_SUFFIX"] = "(*)"
+--[[Translation missing --]]
+--[[ L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = ""--]] 
 L["RAIDERIO_MP_BASE_SCORE"] = "Raider.IO 傳奇+ 基礎分數"
 L["RAIDERIO_MP_SCORE"] = "Raider.IO 傳奇+分數"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO 傳奇+分數："
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Raider.IO傳奇+選項"
 L["RELOAD_LATER"] = "等會才重載"
 L["RELOAD_NOW"] = "現在就重載"
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["SHOW_AVERAGE_PLAYER_SCORE_INFO_DESC"] = ""--]] 
 L["SHOW_IN_FRIENDS"] = "顯示在好友名單"
 L["SHOW_IN_FRIENDS_DESC"] = "當你鼠標懸停在好友時顯示傳奇+分數。"
 L["SHOW_IN_LFD"] = "顯示在地城搜尋器"

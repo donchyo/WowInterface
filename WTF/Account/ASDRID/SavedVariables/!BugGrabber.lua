@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 4586,
 	["lastSanitation"] = 3,
-	["session"] = 4441,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\oRA3\\modules\\Alerts.lua:550: attempt to concatenate local 'extraSpell' (a nil value)",
@@ -233,12 +233,76 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [31]
 		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'vexrunes' tried to call the protected function 'SetTargetClampingInsets()'.",
+			["time"] = "2018/05/18 19:36:27",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetTargetClampingInsets'\n...e\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:242: in function `SetupClassNameplateBars'\n...e\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:87: in function `OnNamePlateAdded'\n...e\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:44: in function <...e\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:35>",
+			["session"] = 4462,
+			["counter"] = 1,
+		}, -- [32]
+		{
+			["message"] = "Interface\\AddOns\\SMT\\core\\core.lua:1019: attempt to perform arithmetic on local 'endTimeMS' (a nil value)",
+			["time"] = "2018/05/18 21:54:13",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\SMT\\core\\core.lua:1019: in function <Interface\\AddOns\\SMT\\core\\core.lua:1016>",
+			["session"] = 4486,
+			["counter"] = 4,
+		}, -- [33]
+		{
+			["message"] = "Interface\\FrameXML\\LFGList.lua:1305: attempt to perform arithmetic on field 'numMembers' (a nil value)",
+			["time"] = "2018/05/24 20:23:55",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\FrameXML\\LFGList.lua:1305: in function `LFGListApplicationViewer_UpdateInviteState'\nInterface\\FrameXML\\LFGList.lua:1128: in function `onEvent'\nInterface\\FrameXML\\LFGList.lua:204: in function <Interface\\FrameXML\\LFGList.lua:108>",
+			["session"] = 4521,
+			["counter"] = 20,
+		}, -- [34]
+		{
+			["message"] = "Interface\\FrameXML\\LFGList.lua:1481: attempt to index local 'classTextColor' (a nil value)",
+			["time"] = "2018/05/24 20:23:55",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\FrameXML\\LFGList.lua:1481: in function `LFGListApplicationViewer_UpdateApplicantMember'\nInterface\\FrameXML\\LFGList.lua:1372: in function `LFGListApplicationViewer_UpdateApplicant'\nInterface\\FrameXML\\LFGList.lua:1348: in function `LFGListApplicationViewer_UpdateResults'\nInterface\\FrameXML\\LFGList.lua:1119: in function `onEvent'\nInterface\\FrameXML\\LFGList.lua:204: in function <Interface\\FrameXML\\LFGList.lua:108>",
+			["session"] = 4521,
+			["counter"] = 15,
+		}, -- [35]
+		{
+			["message"] = "Interface\\AddOns\\ExRT\\RaidAttendance.lua:849: attempt to concatenate field '?' (a nil value)",
+			["time"] = "2018/05/24 20:42:38",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\ExRT\\RaidAttendance.lua:849: in function <Interface\\AddOns\\ExRT\\RaidAttendance.lua:824>\nInterface\\AddOns\\ExRT\\RaidAttendance.lua:900: in function <Interface\\AddOns\\ExRT\\RaidAttendance.lua:895>\nInterface\\AddOns\\ExRT\\RaidAttendance.lua:932: in function `?'\nInterface\\AddOns\\ExRT\\core.lua:170: in function <Interface\\AddOns\\ExRT\\core.lua:169>",
+			["session"] = 4521,
+			["counter"] = 2,
+		}, -- [36]
+		{
+			["message"] = "Interface\\AddOns\\SMT\\core\\core.lua:1034: attempt to perform arithmetic on local 'endTimeMS' (a nil value)",
+			["time"] = "2018/05/18 21:50:26",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\SMT\\core\\core.lua:1034: in function <Interface\\AddOns\\SMT\\core\\core.lua:1031>",
+			["session"] = 4529,
+			["counter"] = 7,
+		}, -- [37]
+		{
+			["message"] = "Interface\\AddOns\\SMT\\core\\core.lua:888: table index is nil",
+			["time"] = "2018/05/18 23:14:41",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\SMT\\core\\core.lua:888: in function <Interface\\AddOns\\SMT\\core\\core.lua:886>",
+			["session"] = 4532,
+			["counter"] = 12,
+		}, -- [38]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'WorldQuestTracker' tried to call the protected function 'CompactRaidGroup1:unusedFunc()'.",
+			["time"] = "2018/05/28 19:52:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `unusedFunc'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:160: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 4545,
+			["counter"] = 1,
+		}, -- [39]
+		{
 			["message"] = "...ace\\AddOns\\MythicPlusProgress\\MythicPlusProgress-0.3e for Patch 7.1.0.lua:140: bad argument #2 to 'strsplit' (string expected, got nil)",
 			["time"] = "2018/04/28 23:30:18",
 			["locals"] = "(*temporary) = \"-\"\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
 			["stack"] = "[C]: ?\n...ace\\AddOns\\MythicPlusProgress\\MythicPlusProgress-0.3e for Patch 7.1.0.lua:140: in function <...ace\\AddOns\\MythicPlusProgress\\MythicPlusProgress.lua:139>\n...ace\\AddOns\\MythicPlusProgress\\MythicPlusProgress-0.3e for Patch 7.1.0.lua:474: in function <...ace\\AddOns\\MythicPlusProgress\\MythicPlusProgress.lua:470>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?",
-			["session"] = 4438,
-			["counter"] = 25,
-		}, -- [32]
+			["session"] = 4568,
+			["counter"] = 44,
+		}, -- [40]
 	},
 }

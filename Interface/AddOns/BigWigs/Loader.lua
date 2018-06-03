@@ -18,7 +18,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "e10e0d3" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "cd38a1b" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[===[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -757,14 +757,15 @@ do
 	end
 
 	local L = GetLocale()
-	if L == "ruRU" then
-		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Russian (ruRU). Can you help? Visit git.io/vpBye or ask us on Discord for more info."
-	elseif L == "itIT" then
-		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Italian (itIT). Can you help? Visit git.io/vpBye or ask us on Discord for more info."
-	elseif L == "koKR" then
-		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Korean (koKR). Can you help? Visit git.io/vpBye or ask us on Discord for more info."
-	elseif L == "esES" or L == "esMX" then
-		delayedMessages[#delayedMessages+1] = "BigWigs is missing translations for Spanish (esES). Can you help? Visit git.io/vpBye or ask us on Discord for more info."
+	local locales = {
+		--ruRU = "Russian (ruRU)",
+		itIT = "Italian (itIT)",
+		--koKR = "Korean (koKR)",
+		esES = "Spanish (esES)",
+		esMX = "Spanish (esMX)",
+	}
+	if locales[L] then
+		delayedMessages[#delayedMessages+1] = ("BigWigs is missing translations for %s. Can you help? Visit git.io/vpBye or ask us on Discord for more info."):format(locales[L])
 	end
 
 	CTimerAfter(11, function()
@@ -847,8 +848,8 @@ end
 
 do
 	-- This is a crapfest mainly because DBM's actual handling of versions is a crapfest, I'll try explain how this works...
-	local DBMdotRevision = "17424" -- The changing version of the local client, changes with every alpha revision using an SVN keyword.
-	local DBMdotDisplayVersion = "7.3.26" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration. Unless they fuck up their release and leave the alpha text in it.
+	local DBMdotRevision = "17510" -- The changing version of the local client, changes with every alpha revision using an SVN keyword.
+	local DBMdotDisplayVersion = "7.3.29" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration. Unless they fuck up their release and leave the alpha text in it.
 	local DBMdotReleaseRevision = DBMdotRevision -- This is manually changed by them every release, they use it to track the highest release version, a new DBM release is the only time it will change.
 
 	local timer, prevUpgradedUser = nil, nil
