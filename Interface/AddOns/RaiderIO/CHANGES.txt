@@ -1,10 +1,20 @@
-lightweight tag e81032a870f306a3e40e2c280e0e6a8c202fd34f v201805220800
+lightweight tag f2d7a86b3e8510fbef987ca9170a8b581735aa1d v201807010600
 Author:	Jah Raphael <jahraphael@yahoo.com>
-Date:	Tue May 22 10:23:26 2018 +0000
+Date:	Sun Jul 1 07:23:35 2018 +0000
 
-commit e81032a870f306a3e40e2c280e0e6a8c202fd34f
+commit f2d7a86b3e8510fbef987ca9170a8b581735aa1d
 Author: Jah Raphael <jahraphael@yahoo.com>
-Date:   Tue May 22 10:23:26 2018 +0000
+Date:   Sun Jul 1 07:23:35 2018 +0000
 
     [Raider.IO] Database Refresh
+
+commit 03c75e9d2d1da80d50235c7180a0b7109a6c84cc
+Author: François "Isak" Wroblewski <wroblewski.francois@gmail.com>
+Date:   Sat Jun 30 19:03:31 2018 +0200
+
+    Force player when sticked to PVEFrame (#48)
+    
+    * Force player when sticked to PVEFrame
+    
+    * Update comment
 

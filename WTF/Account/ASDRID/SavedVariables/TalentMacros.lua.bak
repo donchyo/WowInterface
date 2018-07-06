@@ -104,6 +104,9 @@ TalentMacrosDB = {
 			["disablepush"] = true,
 		},
 		["Krixi"] = {
+			["macrotext"] = {
+				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
+			},
 		},
 		["Kroxi - Grim Batol"] = {
 			["macrotext"] = {

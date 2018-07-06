@@ -1,45 +1,35 @@
 
 keystonesDB = {
 	["Donch"] = {
-		["Kroxi"] = {
-			["charLvl"] = 110,
-			["realm"] = "Grim Batol",
-			["guild"] = "Hoonigans",
-			["faction"] = "Alliance",
-			["class"] = "WARRIOR",
-			["level"] = 14,
-			["weeklyBest"] = 0,
-			["dungeonID"] = 206,
-		},
 		["Krixidk"] = {
 			["charLvl"] = 110,
 			["realm"] = "Ravencrest",
 			["guild"] = "Delusional",
 			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
-			["level"] = 23,
-			["weeklyBest"] = 0,
-			["dungeonID"] = 210,
+			["level"] = 24,
+			["weeklyBest"] = 17,
+			["dungeonID"] = 197,
 		},
-		["Krixikin"] = {
+		["Krixidh"] = {
 			["charLvl"] = 110,
 			["realm"] = "Grim Batol",
 			["guild"] = "Hoonigans",
 			["faction"] = "Alliance",
-			["class"] = "DRUID",
-			["level"] = 18,
+			["class"] = "DEMONHUNTER",
+			["level"] = 0,
 			["weeklyBest"] = 0,
-			["dungeonID"] = 207,
+			["dungeonID"] = 0,
 		},
-		["Kriximonk"] = {
+		["Donch"] = {
 			["charLvl"] = 110,
 			["realm"] = "Grim Batol",
 			["guild"] = "Hoonigans",
 			["faction"] = "Alliance",
-			["class"] = "MONK",
-			["level"] = 14,
-			["weeklyBest"] = 16,
-			["dungeonID"] = 208,
+			["class"] = "MAGE",
+			["level"] = 0,
+			["weeklyBest"] = 0,
+			["dungeonID"] = 0,
 		},
 		["Krixi"] = {
 			["charLvl"] = 110,
@@ -48,8 +38,8 @@ keystonesDB = {
 			["faction"] = "Alliance",
 			["class"] = "PALADIN",
 			["level"] = 15,
-			["weeklyBest"] = 17,
-			["dungeonID"] = 197,
+			["weeklyBest"] = 15,
+			["dungeonID"] = 198,
 		},
 		["Zetiz"] = {
 			["charLvl"] = 110,
@@ -61,15 +51,15 @@ keystonesDB = {
 			["weeklyBest"] = 0,
 			["dungeonID"] = 0,
 		},
-		["Krixidh"] = {
+		["Krixikin"] = {
 			["charLvl"] = 110,
 			["realm"] = "Grim Batol",
 			["guild"] = "Hoonigans",
 			["faction"] = "Alliance",
-			["class"] = "DEMONHUNTER",
-			["level"] = 17,
-			["weeklyBest"] = 16,
-			["dungeonID"] = 233,
+			["class"] = "DRUID",
+			["level"] = 15,
+			["weeklyBest"] = 15,
+			["dungeonID"] = 208,
 		},
 	},
 }
@@ -83,7 +73,7 @@ keystonesConfig = {
 	["version"] = "1.3",
 	["maxRewardLevel"] = 10,
 	["announceNewToParty"] = true,
-	["nextReset"] = 1528268400,
+	["nextReset"] = 1531292400,
 	["guiOptions"] = {
 		["keepAccsTogether"] = false,
 		["showOfflineAccs"] = true,

@@ -36,8 +36,8 @@ if PRAT_MODULE == nil then
     return 
 end
 
-
-local PL = Prat:GetLocalizer({})
+local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
+local PL = module.PL
 
 --[===[@debug@
 PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -488,7 +488,7 @@ end
 --@end-non-debug@
 
 
-local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
+
 
 Prat:SetModuleDefaults(module.name, {
 	profile = {
@@ -545,6 +545,9 @@ Prat:SetModuleOptions(module.name, {
 ------------------------------------------------]]--
 local fmt = _G.string.format
 
+function module:GetDescription()
+    return PL["Chat window button options."]
+end
 
 local function hide(self)
 	if not self.override then
@@ -627,19 +630,20 @@ function module:HideButtons()
 	local upButton, downButton, bottomButton, min
 
 	for name, frame in pairs(Prat.Frames) do
-		upButton = _G[name.."ButtonFrameUpButton"]
-		upButton:SetScript("OnShow", hide)
-		upButton:Hide()
-		downButton = _G[name.."ButtonFrameDownButton"]
-		downButton:SetScript("OnShow", hide)
-		downButton:Hide()
-		bottomButton = _G[name.."ButtonFrameBottomButton"]
-		bottomButton:SetScript("OnShow", hide)
-		bottomButton:Hide()
-		bottomButton:SetParent(frame)
-		
-		bottomButton:SetScript("OnClick", function() frame:ScrollToBottom() end)
+        if select(4, GetBuildInfo()) < 80000 then
+            upButton = _G[name.."ButtonFrameUpButton"]
+            upButton:SetScript("OnShow", hide)
+            upButton:Hide()
+            downButton = _G[name.."ButtonFrameDownButton"]
+            downButton:SetScript("OnShow", hide)
+            downButton:Hide()
+            bottomButton = _G[name.."ButtonFrameBottomButton"]
+            bottomButton:SetScript("OnShow", hide)
+            bottomButton:Hide()
+            bottomButton:SetParent(frame)
 
+            bottomButton:SetScript("OnClick", function() frame:ScrollToBottom() end)
+        end
 		self:FCF_SetButtonSide(frame)
 	end
 	
@@ -787,7 +791,7 @@ function module:DisableBottomButton()
 			self:Unhook(f, "ScrollToBottom")
 			self:Unhook(f, "PageDown")
 			local button = _G[name.. "ButtonFrameBottomButton"]
-			button:Hide()
+			if button then button:Hide() end
 		end
 	end
 end

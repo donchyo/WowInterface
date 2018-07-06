@@ -5,3 +5,8 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 TidyPlates: enabled
 BrewmasterTools: disabled
+OPie: disabled
+Bagnon: enabled
+Bagnon_Config: disabled
+Bagnon_GuildBank: disabled
+Bagnon_VoidStorage: disabled

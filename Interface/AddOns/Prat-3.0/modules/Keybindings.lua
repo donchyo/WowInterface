@@ -33,10 +33,13 @@ Prat:AddModuleToLoad(function()
     return
   end
 
-  local PL = Prat:GetLocalizer({})
+  local module = Prat:NewModule(PRAT_MODULE)
+
+  local PL = module.PL
 
   --[===[@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
+    module_desc = "Adds chat related keybindings",
     ["Prat Keybindings"] = true,
     ["Officer Channel"] = true,
     ["Guild Channel"] = true,
@@ -70,6 +73,7 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = true,
 		["Guild Channel"] = true,
 		["Instance Channel"] = true,
+		["module_desc"] = "Adds chat related keybindings",
 		["Next Chat Tab"] = true,
 		["Officer Channel"] = true,
 		["Party Channel"] = true,
@@ -96,6 +100,8 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = "Copier la fenêtre de chat sélectionné",
 		["Guild Channel"] = "Canal de Guilde",
 		["Instance Channel"] = "Canal d'Instance",
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
 		--[[Translation missing --]]
 		--[[ ["Next Chat Tab"] = "",--]] 
 		["Officer Channel"] = "Canal Officier",
@@ -124,6 +130,8 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = "Ausgewähltes Chatfenster kopieren",
 		["Guild Channel"] = "Gildenkanal",
 		["Instance Channel"] = "Schlachtfeld-Kanal",
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
 		["Next Chat Tab"] = "Nächster Chatreiter",
 		["Officer Channel"] = "Offizierskanal",
 		["Party Channel"] = "Gruppenkanal",
@@ -150,6 +158,8 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = "선택한 대화창 복사",
 		["Guild Channel"] = "길드 채널",
 		["Instance Channel"] = "인스턴스 채널",
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
 		["Next Chat Tab"] = "다음 대화 탭",
 		["Officer Channel"] = "관리자 채널",
 		["Party Channel"] = "파티 채널",
@@ -180,6 +190,8 @@ Prat:AddModuleToLoad(function()
 		--[[ ["Guild Channel"] = "",--]] 
 		--[[Translation missing --]]
 		--[[ ["Instance Channel"] = "",--]] 
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
 		--[[Translation missing --]]
 		--[[ ["Next Chat Tab"] = "",--]] 
 		--[[Translation missing --]]
@@ -219,6 +231,7 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = "Копирование выбранного окна чата",
 		["Guild Channel"] = "Канал Гильдии",
 		["Instance Channel"] = "Канал Подземелий",
+		["module_desc"] = "Добавляет привязки к чату",
 		["Next Chat Tab"] = "Следующее окно чата",
 		["Officer Channel"] = "Офицерский Канал",
 		["Party Channel"] = "Канал Группы",
@@ -245,6 +258,8 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = "复制选定的聊天框体",
 		["Guild Channel"] = "公会频道",
 		["Instance Channel"] = "战场频道",
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
 		["Next Chat Tab"] = "下一个聊天标签",
 		["Officer Channel"] = "官员频道",
 		["Party Channel"] = "小队频道",
@@ -271,6 +286,8 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = "Copiar el Marco de Chat Seleccionado",
 		["Guild Channel"] = "Canal de Hermandad",
 		["Instance Channel"] = "Canal Campo de Batalla",
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
 		["Next Chat Tab"] = "Siguiente Pestaña de Chat",
 		["Officer Channel"] = "Canal Oficial",
 		["Party Channel"] = "Canal del Grupo",
@@ -297,6 +314,8 @@ Prat:AddModuleToLoad(function()
 		["Copy Selected Chat Frame"] = "複製選取的聊天視窗",
 		["Guild Channel"] = "公會頻道",
 		["Instance Channel"] = "戰場頻道",
+		--[[Translation missing --]]
+		--[[ ["module_desc"] = "",--]] 
 		["Next Chat Tab"] = "次個聊天標籤",
 		["Officer Channel"] = "幹部頻道",
 		["Party Channel"] = "小隊頻道",
@@ -319,7 +338,6 @@ Prat:AddModuleToLoad(function()
  end
  --@end-non-debug@
 
-  local module = Prat:NewModule(PRAT_MODULE)
 
   Prat:SetModuleInit(module,
     function(self)

@@ -63,6 +63,7 @@ PL:AddLocale(nil, "enUS", {
   load_disabled = "Disabled",
   load_enabled = "Enabled",
   load_desc = "Control the load behavior for this module.",
+  unloaded_desc = "Module is not loaded, load it to see description",
   load_disabledonrestart = "Disabled (reload)",
   load_enabledonrestart = "Enabled (reload)",
 })
@@ -93,7 +94,8 @@ L=
 	["modulecontrol_desc"] = "Control the loading and enabling of Prat's modules.",
 	["modulecontrol_name"] = "Module Control",
 	["prat"] = "Prat",
-	["reload_required"] = "This option change may not take full effect until you %s your UI."
+	["reload_required"] = "This option change may not take full effect until you %s your UI.",
+	["unloaded_desc"] = "Module is not loaded, load it to see description"
 }
 
 PL:AddLocale(nil, "enUS",L)
@@ -116,7 +118,9 @@ L=
 	["modulecontrol_desc"] = "Contrôler le chargement et l'activation des modules de Prat",
 	["modulecontrol_name"] = "Contrôle des modules",
 	["prat"] = "Prat",
-	["reload_required"] = "Le nouveau paramètre de cette option ne prendra pas effet intégralement tant que vous n'aurez pas %s votre interface."
+	["reload_required"] = "Le nouveau paramètre de cette option ne prendra pas effet intégralement tant que vous n'aurez pas %s votre interface.",
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "frFR",L)
@@ -139,7 +143,9 @@ L=
 	["modulecontrol_desc"] = "Steuert das Laden und Aktivieren von Prat-Modulen.",
 	["modulecontrol_name"] = "Modulsteuerung",
 	["prat"] = "Prat",
-	["reload_required"] = "Diese Änderung wird erst nach dem Neustart vollständig wirksam."
+	["reload_required"] = "Diese Änderung wird erst nach dem Neustart vollständig wirksam.",
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "deDE",L)
@@ -162,7 +168,9 @@ L=
 	["modulecontrol_desc"] = "Prat 모듈의 로드와 활성화를 제어합니다.",
 	["modulecontrol_name"] = "모듈 제어",
 	["prat"] = "Prat",
-	["reload_required"] = "이 설정은 애드온을 %s 해야 변경된 사항이 적용됩니다."
+	["reload_required"] = "이 설정은 애드온을 %s 해야 변경된 사항이 적용됩니다.",
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "koKR",L)
@@ -201,7 +209,9 @@ L=
 	--[[Translation missing --]]
 	--[[ ["prat"] = "",--]] 
 	--[[Translation missing --]]
-	--[[ ["reload_required"] = "",--]]
+	--[[ ["reload_required"] = "",--]] 
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "esMX",L)
@@ -224,7 +234,9 @@ L=
 	["modulecontrol_desc"] = "Настройка загрузки модулей Prat",
 	["modulecontrol_name"] = "Настройка модулей",
 	["prat"] = "Prat",
-	["reload_required"] = "Эта настройка вступит в силу только после %s вашего интерфейса."
+	["reload_required"] = "Эта настройка вступит в силу только после %s вашего интерфейса.",
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "ruRU",L)
@@ -247,7 +259,9 @@ L=
 	["modulecontrol_desc"] = "控制Prat模块的读取和启用",
 	["modulecontrol_name"] = "模块控制",
 	["prat"] = "Prat",
-	["reload_required"] = "在%s您的插件以前,此选项不会完全生效"
+	["reload_required"] = "在%s您的插件以前,此选项不会完全生效",
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "zhCN",L)
@@ -272,7 +286,9 @@ L=
 	["modulecontrol_desc"] = "Control de las cargas y activaciones de los módulos de Prat",
 	["modulecontrol_name"] = "Control de módulos",
 	["prat"] = "Prat",
-	["reload_required"] = "Esta opción requiere que reinicies la IU para que entre en funcionamiento"
+	["reload_required"] = "Esta opción requiere que reinicies la IU para que entre en funcionamiento",
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "esES",L)
@@ -295,7 +311,9 @@ L=
 	["modulecontrol_desc"] = "控制載入以及啟用的 Prat 模組。",
 	["modulecontrol_name"] = "模組控制",
 	["prat"] = "Prat",
-	["reload_required"] = "變更此選項後仍無法發揮完整功能，除非你%s你的插件。"
+	["reload_required"] = "變更此選項後仍無法發揮完整功能，除非你%s你的插件。",
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "zhTW",L)
@@ -334,7 +352,9 @@ L=
 	--[[Translation missing --]]
 	--[[ ["prat"] = "",--]] 
 	--[[Translation missing --]]
-	--[[ ["reload_required"] = "",--]]
+	--[[ ["reload_required"] = "",--]] 
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "itIT",L)
@@ -362,7 +382,9 @@ L=
 	["modulecontrol_desc"] = "Controlar carregamento de módulos permitidos pelo Prat",
 	["modulecontrol_name"] = "Controle de Módulo",
 	["prat"] = "Prat",
-	["reload_required"] = "Essa alteração pode não ter efeitos até você %s sua IU."
+	["reload_required"] = "Essa alteração pode não ter efeitos até você %s sua IU.",
+	--[[Translation missing --]]
+	--[[ ["unloaded_desc"] = "",--]]
 }
 
 PL:AddLocale(nil, "ptBR",L)
@@ -512,9 +534,23 @@ do
 
 
   do
+    local function blue(text)
+      return CLR:Colorize("a0a0ff", text)
+    end
+
+    local function getModuleDesc(info)
+      local m = getModuleFromShortName(info[#info])
+      local controlMsg = "\n\n"..blue(PL.load_desc)
+      if not m then
+        return PL.unloaded_desc..controlMsg
+      end
+
+      return m:GetDescription()..controlMsg
+    end
+
     local moduleControlOption = {
       name = function(info) return info[#info] end,
-      desc = PL.load_desc,
+      desc = getModuleDesc,
       type = "select",
 --      style = "radio",
       values = function(info) local v = Prat.db.profile.modules[info[#info]] if v == 1 or v > 3 then

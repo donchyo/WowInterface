@@ -16,18 +16,39 @@ Prat3DB = {
 					["initialized"] = true,
 				},
 				["Krixi"] = {
-					["minchatwidthdefault"] = 296,
 					["initialized"] = true,
+					["minchatwidthdefault"] = 296,
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
 				},
 			},
 		},
 		["Prat_ChannelColorMemory"] = {
+			["profiles"] = {
+				["Krixi"] = {
+					["colors"] = {
+						["delhealers"] = {
+							["r"] = 0,
+							["g"] = 0.670588254928589,
+							["b"] = 0.99215692281723,
+						},
+					},
+				},
+			},
 		},
 		["Prat_Editbox"] = {
 		},
 		["Prat_Fading"] = {
+		},
+		["Prat_History"] = {
+			["profiles"] = {
+				["Default"] = {
+					["on"] = false,
+				},
+				["Krixi"] = {
+					["on"] = false,
+				},
+			},
 		},
 		["Prat_ChannelNames"] = {
 		},
@@ -42,35 +63,41 @@ Prat3DB = {
 		["Prat_Paragraph"] = {
 		},
 		["Prat_Achievements"] = {
+			["profiles"] = {
+				["Krixi"] = {
+					["showCompletedDate"] = false,
+					["showGratsLink"] = false,
+				},
+			},
 		},
-		["Prat_UrlCopy"] = {
+		["Prat_ChatLog"] = {
 		},
 		["Prat_Alias"] = {
 		},
 		["Prat_OriginalButtons"] = {
 		},
-		["Prat_ChatLog"] = {
+		["Prat_UrlCopy"] = {
 		},
 		["Prat_ChannelSticky"] = {
 		},
 		["Prat_PopupMessage"] = {
 			["profiles"] = {
 				["Default"] = {
+					["nickname"] = {
+						"Krixi", -- [1]
+					},
 					["sinkoptions"] = {
 						["sink20OutputSink"] = "RaidWarning",
 					},
 					["on"] = true,
-					["nickname"] = {
-						"Krixi", -- [1]
-					},
 				},
 				["Krixi"] = {
-					["sinkoptions"] = {
-						["sink20OutputSink"] = "RaidWarning",
-					},
-					["on"] = true,
 					["nickname"] = {
 						"Krixi", -- [1]
+					},
+					["on"] = true,
+					["sinkoptions"] = {
+						["sink20OutputSink"] = "RaidWarning",
 					},
 				},
 			},
@@ -99,15 +126,7 @@ Prat3DB = {
 				},
 			},
 		},
-		["Prat_History"] = {
-			["profiles"] = {
-				["Default"] = {
-					["on"] = false,
-				},
-				["Krixi"] = {
-					["on"] = false,
-				},
-			},
+		["Prat_HoverTips"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -137,26 +156,24 @@ Prat3DB = {
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
-				["Achievements"] = 2,
 				["Alias"] = 2,
-				["History"] = 2,
 				["AltNames"] = 2,
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["KeyBindings"] = 2,
 				["ChatLog"] = 2,
 				["OriginalButtons"] = 2,
+				["History"] = 2,
 			},
 		},
 		["Krixi"] = {
 			["modules"] = {
-				["AltNames"] = 2,
-				["Achievements"] = 2,
+				["Sounds"] = 2,
 				["History"] = 2,
 				["OriginalButtons"] = 2,
 				["Paragraph"] = 2,
 				["Alias"] = 2,
-				["Sounds"] = 2,
+				["AltNames"] = 2,
 				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},

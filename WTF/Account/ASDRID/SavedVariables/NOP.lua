@@ -1,17 +1,38 @@
 
 NewOpenablesProfile = {
 	["char"] = {
-		["Nyrith - Grim Batol"] = {
-			["itemID"] = 147581,
-		},
-		["Krixidh - Grim Batol"] = {
-			["itemID"] = 147719,
+		["Krixi - Grim Batol"] = {
+			["itemID"] = 147718,
 		},
 		["Krixidk - Grim Batol"] = {
 			["itemID"] = 151556,
 		},
+		["Kroxi - Grim Batol"] = {
+			["itemID"] = 147548,
+		},
+		["Krixidk - Ravencrest"] = {
+			["itemID"] = 147718,
+		},
+		["Krixidh - Grim Batol"] = {
+			["itemID"] = 147721,
+		},
+		["Krixikin - Grim Batol"] = {
+			["itemID"] = 147718,
+		},
+		["Kriximonk - Grim Batol"] = {
+			["itemID"] = 147721,
+		},
+		["Nyrith - Grim Batol"] = {
+			["itemID"] = 147581,
+		},
 		["Gnomalock - Grim Batol"] = {
 			["itemID"] = 139506,
+		},
+		["Zuriz - Grim Batol"] = {
+			["itemID"] = 147819,
+		},
+		["Zetiz - Grim Batol"] = {
+			["itemID"] = 147721,
 		},
 		["Krixidk - Valley of Heroes - EU"] = {
 			["itemID"] = 147818,

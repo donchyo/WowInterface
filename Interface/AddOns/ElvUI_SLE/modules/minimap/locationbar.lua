@@ -7,7 +7,6 @@ local COORDS_WIDTH = 35 -- Coord panels width
 
 local _G = _G
 local cluster = _G["MinimapCluster"]
-local faction
 local GetScreenHeight = GetScreenHeight
 local CreateFrame = CreateFrame
 local ToggleFrame = ToggleFrame
@@ -542,7 +541,7 @@ function LP:PopulateDropdown(click)
 				T.tinsert(LP.MainMenu, {text = CHALLENGE_MODE.." >>",icon = SLE:GetIconFromID("achiev", 6378), func = function() 
 					T.twipe(LP.SecondaryMenu)
 					MENU_WIDTH = LP.db.portals.customWidth and LP.db.portals.customWidthValue or _G["SLE_LocationPanel"]:GetWidth()
-					T.tinsert(LP.SecondaryMenu, {text = "<< "..BACK, func = function() T.twipe(LP.MainMenu); T.twipe(LP.SecondaryMenu); LP:PopulateDropdown() end})
+					T.tinsert(LP.SecondaryMenu, {text = "<< "..BACK, func = function() T.twipe(LP.MainMenu); ToggleFrame(LP.Menu2); LP:PopulateDropdown() end})
 					T.tinsert(LP.SecondaryMenu, {text = CHALLENGE_MODE..":", title = true, nohighlight = true})
 					LP:SpellList(LP.Spells.challenge, LP.SecondaryMenu)
 					T.tinsert(LP.SecondaryMenu, {text = CLOSE, title = true, ending = true, func = function() T.twipe(LP.MainMenu); T.twipe(LP.SecondaryMenu); ToggleFrame(LP.Menu2) end})
@@ -553,18 +552,18 @@ function LP:PopulateDropdown(click)
 				T.tinsert(LP.MainMenu, {text = L["Teleports"].." >>", icon = SLE:GetIconFromID("spell", 53140), func = function() 
 					T.twipe(LP.SecondaryMenu)
 					MENU_WIDTH = LP.db.portals.customWidth and LP.db.portals.customWidthValue or _G["SLE_LocationPanel"]:GetWidth()
-					T.tinsert(LP.SecondaryMenu, {text = "<< "..BACK, func = function() T.twipe(LP.MainMenu); LP:PopulateDropdown() end})
+					T.tinsert(LP.SecondaryMenu, {text = "<< "..BACK, func = function() T.twipe(LP.MainMenu); ToggleFrame(LP.Menu2); LP:PopulateDropdown() end})
 					T.tinsert(LP.SecondaryMenu, {text = L["Teleports"]..":", title = true, nohighlight = true})
-					LP:SpellList(LP.Spells["teleports"][faction], LP.SecondaryMenu)
+					LP:SpellList(LP.Spells["teleports"][SLE.myfaction], LP.SecondaryMenu)
 					T.tinsert(LP.SecondaryMenu, {text = CLOSE, title = true, ending = true, func = function() T.twipe(LP.MainMenu); T.twipe(LP.SecondaryMenu); ToggleFrame(LP.Menu2) end})
 					SLE:DropDown(LP.SecondaryMenu, LP.Menu2, anchor, point, 0, 1, _G["SLE_LocationPanel"], MENU_WIDTH, LP.db.portals.justify)
 				end})
 				T.tinsert(LP.MainMenu, {text = L["Portals"].." >>",icon = SLE:GetIconFromID("spell", 53142), func = function() 
 					T.twipe(LP.SecondaryMenu)
 					MENU_WIDTH = LP.db.portals.customWidth and LP.db.portals.customWidthValue or _G["SLE_LocationPanel"]:GetWidth()
-					T.tinsert(LP.SecondaryMenu, {text = "<< "..BACK, func = function() T.twipe(LP.MainMenu); LP:PopulateDropdown() end})
+					T.tinsert(LP.SecondaryMenu, {text = "<< "..BACK, func = function() T.twipe(LP.MainMenu); ToggleFrame(LP.Menu2) LP:PopulateDropdown() end})
 					T.tinsert(LP.SecondaryMenu, {text = L["Portals"]..":", title = true, nohighlight = true})
-					LP:SpellList(LP.Spells["portals"][faction], LP.SecondaryMenu)
+					LP:SpellList(LP.Spells["portals"][SLE.myfaction], LP.SecondaryMenu)
 					T.tinsert(LP.SecondaryMenu, {text = CLOSE, title = true, ending = true, func = function() T.twipe(LP.MainMenu); T.twipe(LP.SecondaryMenu); ToggleFrame(LP.Menu2) end})
 					SLE:DropDown(LP.SecondaryMenu, LP.Menu2, anchor, point, 0, 1, _G["SLE_LocationPanel"], MENU_WIDTH, LP.db.portals.justify)
 				end})
@@ -620,7 +619,6 @@ end
 function LP:Initialize()
 	LP.db = E.db.sle.minimap.locPanel
 	if not SLE.initialized then return end
-	faction = T.UnitFactionGroup('player')
 	LP:PopulateItems()
 	LP:GetProf()
 

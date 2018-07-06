@@ -35,7 +35,7 @@ Prat:AddModuleToLoad(function()
     local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
 
     -- define localized strings
-    local PL = Prat:GetLocalizer({})
+    local PL = module.PL
 
     --[===[@debug@
     PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -93,10 +93,8 @@ Prat:AddModuleToLoad(function()
     L=
 {
 	["Invites"] = {
-		--[[Translation missing --]]
-		--[[ ["Enable Alt-Invite"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["Enable Invite Links"] = "",--]] 
+		["Enable Alt-Invite"] = "Aktiviere Alt-Einladen",
+		["Enable Invite Links"] = "Aktiviere Einladungs Links",
 		--[[Translation missing --]]
 		--[[ ["module_desc"] = "",--]] 
 		--[[Translation missing --]]
@@ -156,14 +154,10 @@ Prat:AddModuleToLoad(function()
     L=
 {
 	["Invites"] = {
-		--[[Translation missing --]]
-		--[[ ["Enable Alt-Invite"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["Enable Invite Links"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["module_desc"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["module_name"] = "",--]] 
+		["Enable Alt-Invite"] = "включить Alt-приглашение",
+		["Enable Invite Links"] = "Показать ссылку \"приглашения\"",
+		["module_desc"] = "Опции простого приглашения игроков в группу",
+		["module_name"] = "Приглашения",
 		--[[Translation missing --]]
 		--[[ ["Toggle group invites by alt-clicking hyperlinked keywords like 'invite'."] = "",--]] 
 		--[[Translation missing --]]

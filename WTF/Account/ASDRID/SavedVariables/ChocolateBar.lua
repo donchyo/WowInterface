@@ -132,14 +132,7 @@ ChocolateBarDB = {
 				},
 			},
 			["locked"] = false,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-				["Placeholder"] = {
-					["placeholderNames"] = {
-					},
-				},
-			},
+			["fontPath"] = "Fonts\\ARIALN.TTF",
 			["objSettings"] = {
 				["Magic Runes"] = {
 					["enabled"] = false,
@@ -170,10 +163,10 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["Broker Currency"] = {
-					["index"] = 1,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["showText"] = false,
+					["index"] = 1,
 				},
 				["S&L Guild"] = {
 					["enabled"] = false,
@@ -234,10 +227,10 @@ ChocolateBarDB = {
 					["index"] = 1,
 				},
 				["MethodDungeonTools"] = {
-					["index"] = 1,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["showText"] = false,
+					["index"] = 1,
 				},
 				["ExRT"] = {
 					["enabled"] = false,
@@ -279,10 +272,10 @@ ChocolateBarDB = {
 					["align"] = "right",
 				},
 				["CrossRealmAssistMinimapIcon"] = {
-					["showText"] = false,
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["index"] = 3,
+					["showText"] = false,
 				},
 				["TellMeWhen"] = {
 					["enabled"] = false,
@@ -292,10 +285,10 @@ ChocolateBarDB = {
 					["index"] = 3,
 				},
 				["SavedInstances"] = {
-					["showText"] = false,
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["index"] = 3,
+					["showText"] = false,
 				},
 				["S&L Friends"] = {
 					["enabled"] = false,
@@ -314,9 +307,9 @@ ChocolateBarDB = {
 				},
 				["MoreChocolate"] = {
 					["enabled"] = false,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["index"] = 1,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 				},
 				["Keystones"] = {
 					["enabled"] = false,
@@ -335,10 +328,10 @@ ChocolateBarDB = {
 					["index"] = 8,
 				},
 				["TradeSkillMaster"] = {
-					["showText"] = false,
+					["index"] = 4,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["index"] = 4,
+					["showText"] = false,
 				},
 				["AutoTitle Minimap"] = {
 					["enabled"] = false,
@@ -373,34 +366,34 @@ ChocolateBarDB = {
 					["align"] = "right",
 				},
 				["Omen"] = {
-					["index"] = 2,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["showText"] = false,
+					["index"] = 2,
 				},
 				["ServerHopMinimapButton"] = {
-					["index"] = 3,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-					["showText"] = false,
+					["index"] = 3,
 				},
 			},
 			["fontName"] = "Arial Narrow",
 			["combatdisbar"] = true,
 			["disableoptons"] = true,
 			["combathidetip"] = true,
-			["fontPath"] = "Fonts\\ARIALN.TTF",
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+				["Placeholder"] = {
+					["placeholderNames"] = {
+					},
+				},
+			},
 		},
 		["Krixi"] = {
 			["combathidetip"] = true,
-			["moduleOptions"] = {
-				["Placeholder"] = {
-					["placeholderNames"] = {
-					},
-				},
-				["MoreChocolate"] = {
-				},
-			},
+			["fontPath"] = "Fonts\\ARIALN.TTF",
 			["objSettings"] = {
 				["Magic Runes"] = {
 					["enabled"] = false,
@@ -432,8 +425,8 @@ ChocolateBarDB = {
 				},
 				["Broker Currency"] = {
 					["align"] = "right",
-					["index"] = 1,
 					["showText"] = false,
+					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
 				["S&L Guild"] = {
@@ -449,8 +442,8 @@ ChocolateBarDB = {
 				},
 				["MethodDungeonTools"] = {
 					["align"] = "right",
-					["index"] = 1,
 					["showText"] = false,
+					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
 				["Daily Global Check"] = {
@@ -483,14 +476,14 @@ ChocolateBarDB = {
 				},
 				["ServerHopMinimapButton"] = {
 					["align"] = "right",
-					["index"] = 3,
 					["showText"] = false,
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 				},
 				["Omen"] = {
 					["align"] = "right",
-					["index"] = 2,
 					["showText"] = false,
+					["index"] = 2,
 					["barName"] = "ChocolateBar1",
 				},
 				["Masque"] = {
@@ -526,8 +519,8 @@ ChocolateBarDB = {
 				},
 				["CrossRealmAssistMinimapIcon"] = {
 					["align"] = "right",
-					["index"] = 3,
 					["showText"] = false,
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 				},
 				["mRunes"] = {
@@ -550,8 +543,8 @@ ChocolateBarDB = {
 				},
 				["SavedInstances"] = {
 					["align"] = "right",
-					["index"] = 3,
 					["showText"] = false,
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 				},
 				["S&L Friends"] = {
@@ -570,8 +563,8 @@ ChocolateBarDB = {
 				},
 				["TradeSkillMaster"] = {
 					["align"] = "right",
-					["index"] = 4,
 					["showText"] = false,
+					["index"] = 4,
 					["barName"] = "ChocolateBar1",
 				},
 				["epgp"] = {
@@ -592,8 +585,8 @@ ChocolateBarDB = {
 				},
 				["MoreChocolate"] = {
 					["enabled"] = false,
-					["index"] = 1,
 					["showText"] = false,
+					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
 				["AutoTitle Minimap"] = {
@@ -649,6 +642,23 @@ ChocolateBarDB = {
 			["fontName"] = "Arial Narrow",
 			["combatdisbar"] = true,
 			["disableoptons"] = true,
+			["locked"] = false,
+			["background"] = {
+				["tileSize"] = 136,
+				["color"] = {
+					["a"] = 0,
+					["g"] = 0.36078431372549,
+					["r"] = 0.380392156862745,
+				},
+			},
+			["moduleOptions"] = {
+				["Placeholder"] = {
+					["placeholderNames"] = {
+					},
+				},
+				["MoreChocolate"] = {
+				},
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barOffy"] = 1,
@@ -658,16 +668,6 @@ ChocolateBarDB = {
 					["width"] = 210.999969482422,
 				},
 			},
-			["background"] = {
-				["tileSize"] = 136,
-				["color"] = {
-					["a"] = 0,
-					["g"] = 0.36078431372549,
-					["r"] = 0.380392156862745,
-				},
-			},
-			["fontPath"] = "Fonts\\ARIALN.TTF",
-			["locked"] = false,
 		},
 	},
 }

@@ -1,8 +1,10 @@
 # oRA3
 
-## [v7.3.11](https://github.com/BigWigsMods/oRA3/tree/v7.3.11) (2018-05-17)
-[Full Changelog](https://github.com/BigWigsMods/oRA3/compare/v7.3.10...v7.3.11)
+## [v7.3.13](https://github.com/BigWigsMods/oRA3/tree/v7.3.13) (2018-05-25)
+[Full Changelog](https://github.com/BigWigsMods/oRA3/compare/v7.3.12...v7.3.13)
 
-- Use UnitBuffByIDs/UnitBuffByNames where appropriate to make our buff scanning more efficient.  
-- modulePrototype: Rename :UnitBuff to :UnitBuffByNames & add :UnitBuffByIDs. Both of which take a table, a list of multiple buffs.  
-- Update ptBR.lua (#41)  
+- ReadyCheck: Handle async buff descriptions for stat parsing (and lower the threshold)  
+- ReadyCheck: Fix buff tooltips in BfA  
+- Consumables: Add the BfA consumables (commented out)  
+- ReadyCheck: Fix showing the eating buff  
+- Fix checking buffs by id  

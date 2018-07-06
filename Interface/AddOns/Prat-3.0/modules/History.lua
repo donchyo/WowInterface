@@ -29,18 +29,15 @@
 
 Prat:AddModuleToLoad(function()
 
---[[
-    2007-06-24: added option to save cmd history - fin
-]]
-
     local PRAT_MODULE = Prat:RequestModuleName("History")
 
     if PRAT_MODULE == nil then
         return
     end
 
-    local PL = Prat:GetLocalizer({})
+    local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
 
+    local PL = module.PL
 
     --[===[@debug@
     PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -344,10 +341,6 @@ Prat:AddModuleToLoad(function()
    end
    --@end-non-debug@
 
-    -- create prat module
-    local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
-    module.PL = PL
-
     Prat:SetModuleDefaults(module.name, {
         profile = {
             on = true,
@@ -506,7 +499,9 @@ Prat:AddModuleToLoad(function()
     end
 
 
-
+    function module:GetDescription()
+        return PL["Chat history options."]
+    end
 
     -- things to do when the module is enabled
     function module:OnModuleDisable()

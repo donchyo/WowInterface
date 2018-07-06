@@ -34,9 +34,9 @@ SunnArt3DB = {
 		["Default"] = {
 			["bar"] = {
 				{
-					["theme"] = "solid",
-					["size"] = 15,
 					["resize"] = true,
+					["size"] = 15,
+					["theme"] = "solid",
 				}, -- [1]
 				{
 					["enabled"] = false,
@@ -46,8 +46,8 @@ SunnArt3DB = {
 		["Krixi"] = {
 			["bar"] = {
 				{
-					["theme"] = "solid",
 					["resize"] = true,
+					["theme"] = "solid",
 					["size"] = 15,
 				}, -- [1]
 				{

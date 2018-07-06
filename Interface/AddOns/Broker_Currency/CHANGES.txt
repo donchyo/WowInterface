@@ -1,16 +1,10 @@
-tag f8de45b1ac3c3a153ca0785ab0aa7a968aba5ef0 7.3.5.2
+tag 0959701f93ac9e9cb8abe548db68e1c4e8ddb941 7.3.5.3
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Tue May 1 02:15:14 2018 -0500
+Date:	Sun Jul 1 07:36:36 2018 -0500
 
-commit 8cc64f40676bc7f8aab89727a005f8f7980c82ed
+commit 4b3330a03e77088f8e5482762a3042f0f47a0a88
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Tue May 1 02:15:01 2018 -0500
+Date:   Sun Jul 1 07:36:16 2018 -0500
 
-    Belatedly bump ToC Interface to 70300, and tidy the ToC a bit.
-
-commit 08c25ca8db77033dbaa82c52455b8cfb1a19a1de
-Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Tue May 1 02:13:38 2018 -0500
-
-    Add support for Domination Point Commission and Lion's Landing Commission items.
+    Add support for currency descriptions in settings menus.
 

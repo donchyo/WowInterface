@@ -10,7 +10,10 @@ Prat:AddModuleToLoad(function()
     return
   end
 
-  local PL = Prat:GetLocalizer({})
+  local mod = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
+
+  local PL = mod.PL
+
 
   --[===[@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -375,7 +378,6 @@ end
 
 
 
-  local mod = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
 
   local mustUseAlt = select(4, _G.GetBuildInfo()) >= 50400
 
@@ -697,7 +699,7 @@ end
     self:UpdateHeight()
   end
 
-  function mod:OnEnable()
+  function mod:OnModuleEnable()
     self:LibSharedMedia_Registered()
 
     for i = 1, NUM_CHAT_WINDOWS do
@@ -752,7 +754,7 @@ end
     end
   end
 
-  function mod:OnDisable()
+  function mod:OnModuleDisable()
     for i = 1, NUM_CHAT_WINDOWS do
       local f = _G["ChatFrame" .. i .. "EditBox"]
       _G["ChatFrame" .. i .. "EditBoxLeft"]:Show()
@@ -763,6 +765,10 @@ end
       f.frame:Hide()
       self:SetAttach("BOTTOM")
     end
+  end
+
+  function mod:GetDescription()
+    return PL["Editbox options."]
   end
 
   -- changed the Hide to SetAlpha(0), the new ChatSystem OnHide handlers go though some looping

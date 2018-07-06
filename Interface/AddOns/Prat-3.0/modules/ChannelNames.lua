@@ -36,8 +36,9 @@ if PRAT_MODULE == nil then
     return
 end
 
--- define localized strings
-local PL = Prat:GetLocalizer({})
+local module = Prat:NewModule(PRAT_MODULE, "AceEvent-3.0", "AceTimer-3.0", "AceHook-3.0")
+
+local PL = module.PL
 
 --[===[@debug@
 PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -522,7 +523,6 @@ local eventMap = {
     CHAT_MSG_BN_CONVERSATION = "bnconversation"
 }
 
-local module = Prat:NewModule(PRAT_MODULE, "AceEvent-3.0", "AceTimer-3.0", "AceHook-3.0")
 
 local CLR = Prat.CLR
 
@@ -743,7 +743,7 @@ function module:OnModuleEnable()
 	Prat.EnableProcessingForEvent("CHAT_MSG_CHANNEL_LEAVE")
 	Prat.EnableProcessingForEvent("CHAT_MSG_CHANNEL_JOIN")
 
-    --self:AddOutboundWhisperColoring()
+    self:AddOutboundWhisperColoring()
 
     --self:RawHook("ChatEdit_UpdateHeader", true)
 end
@@ -753,7 +753,9 @@ function module:OnModuleDisable()
 	Prat.UnregisterAllChatEvents(self)
 end
 
-
+function module:GetDescription()
+    return PL["Channel name abbreviation options."]
+end
 
 --function module:ChatEdit_UpdateHeader(editBox, ...)
 --    self.hooks["ChatEdit_UpdateHeader"](...)
@@ -795,18 +797,25 @@ function module:RefreshOptions()
 	LibStub("AceConfigRegistry-3.0"):NotifyChange("Prat")
 end
 
---function module:AddOutboundWhisperColoring()
---    if not CHAT_CONFIG_CHAT_RIGHT then return end
---
---	CHAT_CONFIG_CHAT_RIGHT[7] = {
---		text = CHAT_MSG_WHISPER_INFORM,
---		type = "WHISPER_INFORM",
---		checked = function () return IsListeningForMessageType("WHISPER"); end;
---		func = function (checked) ToggleChatMessageGroup(checked, "WHISPER"); end;
---	}
---
---	CHAT_CONFIG_CHAT_LEFT[#CHAT_CONFIG_CHAT_LEFT].text = CHAT_MSG_WHISPER
---end
+function module:AddOutboundWhisperColoring()
+    if not CHAT_CONFIG_CHAT_LEFT then return end
+
+    for i,v in ipairs(CHAT_CONFIG_CHAT_LEFT) do
+        if v.type == "WHISPER" then
+            v.text = CHAT_MSG_WHISPER
+            v.func = function (self, checked) ToggleChatMessageGroup(checked, "WHISPER"); end;
+
+            table.insert(CHAT_CONFIG_CHAT_LEFT, i, {
+                text = CHAT_MSG_WHISPER_INFORM,
+                type = "WHISPER_INFORM",
+                checked = function () return IsListeningForMessageType("WHISPER"); end;
+                func = function (self, checked) ToggleChatMessageGroup(checked, "WHISPER"); end;
+            })
+
+            break
+        end
+    end
+end
 
 function module:AddNickname(info, name)
     self.db.profile.nickname[info[#info-1]] = name

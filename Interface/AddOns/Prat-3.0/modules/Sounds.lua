@@ -31,7 +31,10 @@ Prat:AddModuleToLoad(function()
     return
   end
 
-  local PL = Prat:GetLocalizer({})
+  -- create prat module
+  local module = Prat:NewModule(PRAT_MODULE, "AceEvent-3.0")
+
+  local PL = module.PL
 
   --[===[@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -441,8 +444,7 @@ Prat:AddModuleToLoad(function()
   end
   --@end-non-debug@
 
-  -- create prat module
-  local module = Prat:NewModule(PRAT_MODULE, "AceEvent-3.0")
+
 
   Prat:SetModuleDefaults(module.name, {
     profile = {
@@ -507,7 +509,10 @@ Prat:AddModuleToLoad(function()
 
   local soundslist = {}
 
-
+  function module:GetDescription()
+    return PL["A module to play sounds on certain chat messages."]
+  end
+  
   function module:BuildSoundList()
     if not media then return end
 

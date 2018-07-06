@@ -1,5 +1,17 @@
-changeset:   715:b025504ef9dd
+changeset:   717:e63e22c9c4af
 tag:         tip
+user:        Tercio
+date:        Fri May 04 13:14:49 2018 -0300
+summary:     - Attempt to make the packager work.
+
+
+changeset:   716:d021b8e5392f
+user:        Tercio
+date:        Thu May 03 14:51:47 2018 -0300
+summary:     - Changes to make the live version work with the BfA Beta.
+
+
+changeset:   715:b025504ef9dd
 user:        Tercio
 date:        Fri Apr 27 13:31:55 2018 -0300
 summary:     - Fixed major issue with the statistics sharing.

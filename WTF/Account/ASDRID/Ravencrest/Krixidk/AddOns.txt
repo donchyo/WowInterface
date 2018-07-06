@@ -389,9 +389,9 @@ LazyKeystones: enabled
 RaiderIO: enabled
 SunnArt: enabled
 Bagnon: enabled
-Bagnon_Config: enabled
-Bagnon_GuildBank: enabled
-Bagnon_VoidStorage: enabled
+Bagnon_Config: disabled
+Bagnon_GuildBank: disabled
+Bagnon_VoidStorage: disabled
 HideOrderHallBar: enabled
 WorldQuestGroupFinder: enabled
 NOP: enabled
@@ -408,3 +408,4 @@ Kui_Media: disabled
 rObjectiveTracker: disabled
 rLib: disabled
 BrewmasterTools: disabled
+OPie: disabled

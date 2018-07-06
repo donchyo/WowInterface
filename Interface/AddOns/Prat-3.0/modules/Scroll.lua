@@ -36,7 +36,9 @@ if PRAT_MODULE == nil then
     return 
 end
 
-local PL = Prat:GetLocalizer({})
+local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
+
+local PL = module.PL
 
 --[===[@debug@
 PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -429,7 +431,6 @@ end
 
 
 
-local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
 
 
 Prat:SetModuleDefaults(module.name, {
@@ -540,6 +541,9 @@ end
 --[[------------------------------------------------
     Core Functions
 ------------------------------------------------]]--
+function module:GetDescription()
+	return PL["Chat window scrolling options."]
+end
 
 function module:ConfigureAllFrames()
     for k, v in pairs(Prat.Frames) do

@@ -36,7 +36,9 @@ if PRAT_MODULE == nil then
     return 
 end
 
-local PL = Prat:GetLocalizer({})
+local module = Prat:NewModule(PRAT_MODULE, "AceEvent-3.0")
+
+local PL = module.PL
 
 --[===[@debug@
 PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -323,7 +325,6 @@ end
 --@end-non-debug@
 
 
-local module = Prat:NewModule(PRAT_MODULE, "AceEvent-3.0")
 
 Prat:SetModuleDefaults(module, {
 	profile = {
@@ -449,7 +450,9 @@ end
     Core Functions
 ------------------------------------------------]]--
 
-
+function module:GetDescription()
+    return PL["A module to provide basic chat filtering."]
+end
 
 function module:PruneMessages()
     for k,v in pairs(MessageTime) do

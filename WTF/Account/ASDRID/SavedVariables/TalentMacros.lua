@@ -210,6 +210,9 @@ TalentMacrosDB = {
 		["Daroislost - Valley of Heroes - EU"] = {
 		},
 		["Krixi"] = {
+			["macrotext"] = {
+				[22109] = "#showtooltip\n/cast !Breath of Sindragosa",
+			},
 		},
 		["Krixiswag - Aggra (Português)"] = {
 			["version"] = 1,

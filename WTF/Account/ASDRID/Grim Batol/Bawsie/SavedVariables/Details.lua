@@ -5,6 +5,2206 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 1,
 	["tabela_historico"] = {
 		["tabelas"] = {
+			{
+				{
+					["combatId"] = 247,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007149,
+							["damage_from"] = {
+								["Jormog the Behemoth"] = true,
+								["Tugar Bloodtotem"] = true,
+							},
+							["targets"] = {
+								["Bile Spitter"] = 1658989,
+								["Tugar Bloodtotem"] = 81814059,
+								["Bile Spitter Egg"] = 9235270,
+								["Fel Surge Totem"] = 357552,
+								["Jormog the Behemoth"] = 532099,
+							},
+							["total"] = 93597969.007149,
+							["pets"] = {
+								"Bloodlust <Bawsie>", -- [1]
+								"Hati <Bawsie>", -- [2]
+								"Beast <Bawsie>", -- [3]
+								"Sneaky Snake <Bawsie>", -- [4]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 23503757.007149,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1530209145,
+							["friendlyfire_total"] = 0,
+							["spec"] = 253,
+							["nome"] = "Bawsie",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[194392] = {
+										["c_amt"] = 19,
+										["b_amt"] = 0,
+										["c_dmg"] = 2816188,
+										["g_amt"] = 0,
+										["n_max"] = 141017,
+										["targets"] = {
+											["Bile Spitter Egg"] = 1213250,
+											["Bile Spitter"] = 158457,
+											["Tugar Bloodtotem"] = 4061018,
+											["Jormog the Behemoth"] = 133301,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2749838,
+										["n_min"] = 10001,
+										["g_dmg"] = 0,
+										["counter"] = 51,
+										["total"] = 5566026,
+										["c_max"] = 302976,
+										["id"] = 194392,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 32,
+										["r_amt"] = 0,
+										["c_min"] = 16385,
+									},
+									[193455] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 3955646,
+										["g_amt"] = 0,
+										["n_max"] = 583223,
+										["targets"] = {
+											["Bile Spitter Egg"] = 2283296,
+											["Bile Spitter"] = 774998,
+											["Fel Surge Totem"] = 239477,
+											["Tugar Bloodtotem"] = 8974238,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8316363,
+										["n_min"] = 239295,
+										["g_dmg"] = 0,
+										["counter"] = 28,
+										["total"] = 12272009,
+										["c_max"] = 812846,
+										["id"] = 193455,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 22,
+										["r_amt"] = 0,
+										["c_min"] = 475220,
+									},
+									[75] = {
+										["c_amt"] = 16,
+										["b_amt"] = 0,
+										["c_dmg"] = 1684782,
+										["g_amt"] = 0,
+										["n_max"] = 84560,
+										["targets"] = {
+											["Bile Spitter Egg"] = 307900,
+											["Bile Spitter"] = 158608,
+											["Fel Surge Totem"] = 118075,
+											["Tugar Bloodtotem"] = 2335202,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1235003,
+										["n_min"] = 34272,
+										["g_dmg"] = 0,
+										["counter"] = 39,
+										["total"] = 2919785,
+										["c_max"] = 172860,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 23,
+										["r_amt"] = 0,
+										["c_min"] = 72838,
+									},
+									[197465] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 194051,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 388102,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 388102,
+										["n_min"] = 194051,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 388102,
+										["c_max"] = 0,
+										["id"] = 197465,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[253022] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 237437,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 237437,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 237437,
+										["n_min"] = 237437,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 237437,
+										["c_max"] = 0,
+										["id"] = 253022,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[2643] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 78495,
+										["targets"] = {
+											["Bile Spitter"] = 78495,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 78495,
+										["n_min"] = 78495,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 78495,
+										["c_max"] = 0,
+										["id"] = 2643,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[252879] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1779779,
+										["g_amt"] = 0,
+										["n_max"] = 262124,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 2041903,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 262124,
+										["n_min"] = 262124,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 2041903,
+										["c_max"] = 725194,
+										["id"] = 252879,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 519852,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-1303-06FB0BB8",
+							["last_dps"] = 693308.017712062,
+							["custom"] = 0,
+							["last_event"] = 1530209144,
+							["damage_taken"] = 13074808.007149,
+							["start_time"] = 1530209010,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001779,
+							["serial"] = "Pet-0-1631-1220-24082-20196-01025093D0",
+							["damage_from"] = {
+								["Tugar Bloodtotem"] = true,
+							},
+							["targets"] = {
+								["Bile Spitter Egg"] = 1519481,
+								["Bile Spitter"] = 60222,
+								["Jormog the Behemoth"] = 138934,
+								["Tugar Bloodtotem"] = 37778195,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 39496832.001779,
+							["dps_started"] = false,
+							["total"] = 39496832.001779,
+							["classe"] = "PET",
+							["ownerName"] = "Bawsie",
+							["nome"] = "Bloodlust <Bawsie>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 29,
+										["b_amt"] = 0,
+										["c_dmg"] = 3004840,
+										["g_amt"] = 0,
+										["n_max"] = 112290,
+										["targets"] = {
+											["Bile Spitter Egg"] = 190261,
+											["Bile Spitter"] = 60222,
+											["Tugar Bloodtotem"] = 4677457,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1923100,
+										["n_min"] = 33491,
+										["g_dmg"] = 0,
+										["counter"] = 61,
+										["total"] = 4927940,
+										["c_max"] = 207587,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 32,
+										["r_amt"] = 0,
+										["c_min"] = 68322,
+									}, -- [1]
+									[207097] = {
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 1753848,
+										["g_amt"] = 0,
+										["n_max"] = 134485,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 2287282,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 533434,
+										["n_min"] = 45301,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 2287282,
+										["c_max"] = 267240,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 157622,
+									},
+									[83381] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 7954732,
+										["g_amt"] = 0,
+										["n_max"] = 1355911,
+										["targets"] = {
+											["Bile Spitter Egg"] = 1329220,
+											["Tugar Bloodtotem"] = 14187272,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 7561760,
+										["n_min"] = 404418,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 15516492,
+										["c_max"] = 2062679,
+										["id"] = 83381,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 825012,
+									},
+									[243234] = {
+										["c_amt"] = 12,
+										["b_amt"] = 0,
+										["c_dmg"] = 1247567,
+										["g_amt"] = 0,
+										["n_max"] = 107780,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 1341112,
+											["Jormog the Behemoth"] = 138934,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 232479,
+										["n_min"] = 6141,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 1480046,
+										["c_max"] = 224600,
+										["id"] = 243234,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 12788,
+									},
+									[118459] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 88485,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 88485,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 88485,
+										["n_min"] = 88485,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 88485,
+										["c_max"] = 0,
+										["id"] = 118459,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[17253] = {
+										["c_amt"] = 20,
+										["b_amt"] = 0,
+										["c_dmg"] = 9420036,
+										["g_amt"] = 0,
+										["n_max"] = 466539,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 11809505,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2389469,
+										["n_min"] = 77781,
+										["g_dmg"] = 0,
+										["counter"] = 32,
+										["total"] = 11809505,
+										["c_max"] = 894697,
+										["id"] = 17253,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 12,
+										["r_amt"] = 0,
+										["c_min"] = 175547,
+									},
+									[197163] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 747348,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 3387082,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3387082,
+										["n_min"] = 202209,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 3387082,
+										["c_max"] = 0,
+										["id"] = 197163,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1530209145,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 8010754.001779,
+							["start_time"] = 1530209029,
+							["delay"] = 1530209125,
+							["last_event"] = 1530209125,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.007752,
+							["serial"] = "Creature-0-3110-1702-9875-62005-00003522F8",
+							["damage_from"] = {
+								["Tugar Bloodtotem"] = true,
+								["Bile Spitter"] = true,
+							},
+							["targets"] = {
+								["Bile Spitter Egg"] = 1160568,
+								["Bile Spitter"] = 301840,
+								["Tugar Bloodtotem"] = 11581120,
+								["Jormog the Behemoth"] = 156097,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 13199625.007752,
+							["dps_started"] = false,
+							["total"] = 13199625.007752,
+							["classe"] = "PET",
+							["ownerName"] = "Bawsie",
+							["nome"] = "Beast <Bawsie>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 16,
+										["b_amt"] = 0,
+										["c_dmg"] = 2440221,
+										["g_amt"] = 0,
+										["n_max"] = 128237,
+										["targets"] = {
+											["Bile Spitter Egg"] = 99109,
+											["Bile Spitter"] = 301840,
+											["Tugar Bloodtotem"] = 4341779,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2302507,
+										["n_min"] = 54704,
+										["g_dmg"] = 0,
+										["counter"] = 45,
+										["total"] = 4742728,
+										["c_max"] = 228594,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 29,
+										["r_amt"] = 0,
+										["c_min"] = 111596,
+									}, -- [1]
+									[201754] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 4392589,
+										["g_amt"] = 0,
+										["n_max"] = 571289,
+										["targets"] = {
+											["Bile Spitter Egg"] = 1061459,
+											["Tugar Bloodtotem"] = 5321858,
+											["Jormog the Behemoth"] = 156097,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2146825,
+										["n_min"] = 52032,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 6539414,
+										["c_max"] = 1061459,
+										["id"] = 201754,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 585886,
+									},
+									[207097] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 1484133,
+										["g_amt"] = 0,
+										["n_max"] = 142685,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 1917483,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 433350,
+										["n_min"] = 73990,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 1917483,
+										["c_max"] = 307892,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 155718,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1530209145,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 186160.007752,
+							["start_time"] = 1530209084,
+							["delay"] = 1530209119,
+							["last_event"] = 1530209119,
+						}, -- [3]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.007352,
+							["serial"] = "Creature-0-3110-1702-9875-100324-00003522D0",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Bile Spitter Egg"] = 716338,
+								["Bile Spitter"] = 126369,
+								["Jormog the Behemoth"] = 103767,
+								["Tugar Bloodtotem"] = 11957257,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 12903731.007352,
+							["dps_started"] = false,
+							["total"] = 12903731.007352,
+							["classe"] = "PET",
+							["ownerName"] = "Bawsie",
+							["nome"] = "Hati <Bawsie>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 22,
+										["b_amt"] = 0,
+										["c_dmg"] = 2048458,
+										["g_amt"] = 0,
+										["n_max"] = 113498,
+										["targets"] = {
+											["Bile Spitter Egg"] = 93266,
+											["Bile Spitter"] = 126369,
+											["Tugar Bloodtotem"] = 4313843,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2485020,
+										["n_min"] = 33492,
+										["g_dmg"] = 0,
+										["counter"] = 64,
+										["total"] = 4533478,
+										["c_max"] = 167108,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 42,
+										["r_amt"] = 0,
+										["c_min"] = 68323,
+									}, -- [1]
+									[207097] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 920266,
+										["g_amt"] = 0,
+										["n_max"] = 130998,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 1862303,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 942037,
+										["n_min"] = 45300,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 1862303,
+										["c_max"] = 274346,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 157620,
+									},
+									[83381] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1234392,
+										["g_amt"] = 0,
+										["n_max"] = 423722,
+										["targets"] = {
+											["Bile Spitter Egg"] = 415381,
+											["Tugar Bloodtotem"] = 3795522,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2976511,
+										["n_min"] = 126380,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 4210903,
+										["c_max"] = 467092,
+										["id"] = 83381,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["r_amt"] = 0,
+										["c_min"] = 351919,
+									},
+									[243234] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 722830,
+										["g_amt"] = 0,
+										["n_max"] = 107781,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 1038425,
+											["Jormog the Behemoth"] = 103767,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 419362,
+										["n_min"] = 6205,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 1142192,
+										["c_max"] = 222238,
+										["id"] = 243234,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 21515,
+									},
+									[118459] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 66363,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 66363,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 66363,
+										["n_min"] = 66363,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 66363,
+										["c_max"] = 0,
+										["id"] = 118459,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[197163] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 233546,
+										["targets"] = {
+											["Bile Spitter Egg"] = 207691,
+											["Tugar Bloodtotem"] = 880801,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1088492,
+										["n_min"] = 63190,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 1088492,
+										["c_max"] = 0,
+										["id"] = 197163,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1530209145,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.007352,
+							["start_time"] = 1530209010,
+							["delay"] = 0,
+							["last_event"] = 1530209144,
+						}, -- [4]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.004148,
+							["serial"] = "Creature-0-3110-1702-9875-121661-00003522FB",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Bile Spitter Egg"] = 2034437,
+								["Tugar Bloodtotem"] = 2459587,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4494024.004148,
+							["dps_started"] = false,
+							["total"] = 4494024.004148,
+							["classe"] = "PET",
+							["ownerName"] = "Bawsie",
+							["nome"] = "Sneaky Snake <Bawsie>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 29,
+										["b_amt"] = 0,
+										["c_dmg"] = 748086,
+										["g_amt"] = 0,
+										["n_max"] = 15802,
+										["targets"] = {
+											["Bile Spitter Egg"] = 304658,
+											["Tugar Bloodtotem"] = 631391,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 187963,
+										["n_min"] = 8721,
+										["g_dmg"] = 0,
+										["counter"] = 44,
+										["total"] = 936049,
+										["c_max"] = 32236,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 15,
+										["r_amt"] = 0,
+										["c_min"] = 17792,
+									}, -- [1]
+									[243121] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 2229004,
+										["g_amt"] = 0,
+										["n_max"] = 428163,
+										["targets"] = {
+											["Bile Spitter Egg"] = 1729779,
+											["Tugar Bloodtotem"] = 1828196,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1328971,
+										["n_min"] = 236322,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 3557975,
+										["c_max"] = 873453,
+										["id"] = 243121,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 482098,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1530209145,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004148,
+							["start_time"] = 1530209131,
+							["delay"] = 1530209049,
+							["last_event"] = 1530209049,
+						}, -- [5]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 247,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Bawsie"] = 919690,
+								["Hati <Bawsie>"] = 2446384,
+								["Bloodlust <Bawsie>"] = 2212981,
+							},
+							["pets"] = {
+								"Bloodlust <Bawsie>", -- [1]
+								"Hati <Bawsie>", -- [2]
+								"Beast <Bawsie>", -- [3]
+								"Sneaky Snake <Bawsie>", -- [4]
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "HUNTER",
+							["totalover"] = 6799092.002001,
+							["total_without_pet"] = 11812947.002001,
+							["total"] = 12559807.002001,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-1303-06FB0BB8",
+							["totalabsorb"] = 0.002001,
+							["last_hps"] = 93034.2291373683,
+							["targets"] = {
+								["Bawsie"] = 8587322,
+								["Beast <Bawsie>"] = 73247,
+								["Bloodlust <Bawsie>"] = 4909802,
+							},
+							["totalover_without_pet"] = 0.002001,
+							["healing_taken"] = 8317696.002001,
+							["fight_component"] = true,
+							["end_time"] = 1530209145,
+							["healing_from"] = {
+								["Bawsie"] = true,
+							},
+							["nome"] = "Bawsie",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[128594] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bloodlust <Bawsie>"] = 57975,
+										},
+										["n_max"] = 3203871,
+										["targets"] = {
+											["Bloodlust <Bawsie>"] = 3203871,
+										},
+										["n_min"] = 3203871,
+										["counter"] = 1,
+										["overheal"] = 57975,
+										["total"] = 3203871,
+										["c_max"] = 0,
+										["id"] = 128594,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 3203871,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[136] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bloodlust <Bawsie>"] = 2155006,
+										},
+										["n_max"] = 158954,
+										["targets"] = {
+											["Bloodlust <Bawsie>"] = 291380,
+										},
+										["n_min"] = 0,
+										["counter"] = 15,
+										["overheal"] = 2155006,
+										["total"] = 291380,
+										["c_max"] = 0,
+										["id"] = 136,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 291380,
+										["n_amt"] = 15,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bawsie"] = 67935,
+										},
+										["n_max"] = 100408,
+										["targets"] = {
+											["Bawsie"] = 906596,
+										},
+										["n_min"] = 1185,
+										["counter"] = 78,
+										["overheal"] = 67935,
+										["total"] = 906596,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 906596,
+										["n_amt"] = 78,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[214303] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Hati <Bawsie>"] = 2446384,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Hati <Bawsie>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 15,
+										["overheal"] = 2446384,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 214303,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 15,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[197161] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 465978,
+										["targets"] = {
+											["Bawsie"] = 1863912,
+										},
+										["n_min"] = 465978,
+										["counter"] = 4,
+										["overheal"] = 0,
+										["total"] = 1863912,
+										["c_max"] = 0,
+										["id"] = 197161,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 1863912,
+										["n_amt"] = 4,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[109304] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1397934,
+										["targets"] = {
+											["Bawsie"] = 1397934,
+										},
+										["n_min"] = 1397934,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 1397934,
+										["c_max"] = 0,
+										["id"] = 109304,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 1397934,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[197205] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bawsie"] = 317022,
+										},
+										["n_max"] = 224204,
+										["targets"] = {
+											["Bawsie"] = 2642084,
+										},
+										["n_min"] = 18957,
+										["counter"] = 32,
+										["overheal"] = 317022,
+										["total"] = 2642084,
+										["c_max"] = 0,
+										["id"] = 197205,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 2642084,
+										["n_amt"] = 32,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[252879] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bawsie"] = 534733,
+										},
+										["n_max"] = 725194,
+										["targets"] = {
+											["Bawsie"] = 1507170,
+										},
+										["n_min"] = 262124,
+										["counter"] = 4,
+										["overheal"] = 534733,
+										["total"] = 1507170,
+										["c_max"] = 0,
+										["id"] = 252879,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 1507170,
+										["n_amt"] = 4,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1530209010,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["spec"] = 253,
+							["totaldenied"] = 0.002001,
+							["delay"] = 0,
+							["last_event"] = 1530209142,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorb"] = 0.003177,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Bawsie"] = true,
+								["Bloodlust <Bawsie>"] = true,
+							},
+							["targets"] = {
+								["Bloodlust <Bawsie>"] = 832494,
+							},
+							["targets_overheal"] = {
+								["Bloodlust <Bawsie>"] = 558517,
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.003177,
+							["end_time"] = 1530209145,
+							["classe"] = "PET",
+							["totalover"] = 558517.003177,
+							["total_without_pet"] = 675884.003177,
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["fight_component"] = true,
+							["total"] = 675884.003177,
+							["healing_taken"] = 4171135.003177,
+							["ownerName"] = "Bawsie",
+							["nome"] = "Bloodlust <Bawsie>",
+							["targets_absorbs"] = {
+							},
+							["start_time"] = 1530209034,
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bloodlust <Bawsie>"] = 558517,
+										},
+										["n_max"] = 80671,
+										["targets"] = {
+											["Bloodlust <Bawsie>"] = 675884,
+										},
+										["n_min"] = 8256,
+										["counter"] = 22,
+										["overheal"] = 558517,
+										["total"] = 675884,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 675884,
+										["n_amt"] = 22,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Pet-0-1631-1220-24082-20196-01025093D0",
+							["custom"] = 0,
+							["last_event"] = 1530209123,
+							["on_hold"] = false,
+							["totaldenied"] = 0.003177,
+							["delay"] = 1530209123,
+							["tipo"] = 2,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["totalabsorb"] = 0.004048,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Beast <Bawsie>"] = true,
+							},
+							["targets"] = {
+								["Beast <Bawsie>"] = 73247,
+							},
+							["targets_overheal"] = {
+								["Beast <Bawsie>"] = 220998,
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.004048,
+							["end_time"] = 1530209145,
+							["classe"] = "PET",
+							["totalover"] = 220998.004048,
+							["total_without_pet"] = 70976.004048,
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["fight_component"] = true,
+							["total"] = 70976.004048,
+							["healing_taken"] = 70976.004048,
+							["ownerName"] = "Bawsie",
+							["nome"] = "Beast <Bawsie>",
+							["targets_absorbs"] = {
+							},
+							["start_time"] = 1530209135,
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Beast <Bawsie>"] = 220998,
+										},
+										["n_max"] = 42745,
+										["targets"] = {
+											["Beast <Bawsie>"] = 70976,
+										},
+										["n_min"] = 0,
+										["counter"] = 10,
+										["overheal"] = 220998,
+										["total"] = 70976,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 70976,
+										["n_amt"] = 10,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Creature-0-3110-1702-9875-62005-00003522F8",
+							["custom"] = 0,
+							["last_event"] = 1530209116,
+							["on_hold"] = false,
+							["totaldenied"] = 0.004048,
+							["delay"] = 1530209116,
+							["tipo"] = 2,
+						}, -- [3]
+						{
+							["flag_original"] = 8465,
+							["totalabsorb"] = 0.006715,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+								["Sneaky Snake <Bawsie>"] = 131835,
+							},
+							["targets"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Sneaky Snake <Bawsie>"] = 131835,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Sneaky Snake <Bawsie>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 8,
+										["overheal"] = 131835,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 8,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.006715,
+							["totalover"] = 131835.006715,
+							["total_without_pet"] = 0.006715,
+							["start_time"] = 1530209141,
+							["totalover_without_pet"] = 0.006715,
+							["classe"] = "PET",
+							["total"] = 0.006715,
+							["end_time"] = 1530209145,
+							["ownerName"] = "Bawsie",
+							["nome"] = "Sneaky Snake <Bawsie>",
+							["heal_enemy_amt"] = 0,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Creature-0-3110-1702-9875-121661-00003522FB",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.006715,
+							["delay"] = 1530209048,
+							["last_event"] = 1530209048,
+						}, -- [4]
+						{
+							["flag_original"] = 8465,
+							["totalabsorb"] = 0.004985,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+								["Hati <Bawsie>"] = 308687,
+							},
+							["targets"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[143924] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Hati <Bawsie>"] = 308687,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Hati <Bawsie>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 25,
+										["overheal"] = 308687,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 143924,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 0,
+										["n_amt"] = 25,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.004985,
+							["totalover"] = 308687.004985,
+							["total_without_pet"] = 0.004985,
+							["start_time"] = 1530209013,
+							["totalover_without_pet"] = 0.004985,
+							["classe"] = "PET",
+							["total"] = 0.004985,
+							["end_time"] = 1530209145,
+							["ownerName"] = "Bawsie",
+							["nome"] = "Hati <Bawsie>",
+							["heal_enemy_amt"] = 0,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Creature-0-3110-1702-9875-100324-00003522D0",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.004985,
+							["delay"] = 0,
+							["last_event"] = 1530209140,
+						}, -- [5]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 247,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 247,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["cc_break_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[194392] = {
+										["cc_break_oque"] = {
+											[3355] = 1,
+										},
+										["id"] = 194392,
+										["cc_break"] = 1,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 1,
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrupt_targets"] = {
+								["Tugar Bloodtotem"] = 3,
+							},
+							["cc_break"] = 1.007986,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[3355] = {
+										["activedamt"] = 0,
+										["id"] = 3355,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[252921] = {
+										["activedamt"] = 0,
+										["id"] = 252921,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[120679] = {
+										["activedamt"] = 1,
+										["id"] = 120679,
+										["targets"] = {
+										},
+										["uptime"] = 117,
+										["appliedamt"] = 6,
+										["refreshamt"] = 4,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["pets"] = {
+								"Bloodlust <Bawsie>", -- [1]
+								"Beast <Bawsie>", -- [2]
+							},
+							["cc_done_targets"] = {
+								["Tugar Bloodtotem"] = 2,
+							},
+							["cc_done_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[24394] = {
+										["id"] = 24394,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 1,
+										},
+										["counter"] = 1,
+									},
+									[3355] = {
+										["id"] = 3355,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["classe"] = "HUNTER",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[147362] = {
+										["id"] = 147362,
+										["interrompeu_oque"] = {
+											[242733] = 3,
+										},
+										["targets"] = {
+											["Tugar Bloodtotem"] = 3,
+										},
+										["counter"] = 3,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[252202] = {
+										["activedamt"] = 5,
+										["id"] = 252202,
+										["targets"] = {
+										},
+										["uptime"] = 57,
+										["appliedamt"] = 5,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[186401] = {
+										["activedamt"] = 1,
+										["id"] = 186401,
+										["targets"] = {
+										},
+										["uptime"] = 135,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[193530] = {
+										["activedamt"] = 1,
+										["id"] = 193530,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[118922] = {
+										["activedamt"] = 1,
+										["id"] = 118922,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[242584] = {
+										["activedamt"] = 5,
+										["id"] = 242584,
+										["targets"] = {
+										},
+										["uptime"] = 57,
+										["appliedamt"] = 5,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[120694] = {
+										["activedamt"] = 10,
+										["id"] = 120694,
+										["targets"] = {
+										},
+										["uptime"] = 37,
+										["appliedamt"] = 10,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[207068] = {
+										["activedamt"] = 2,
+										["id"] = 207068,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[186265] = {
+										["activedamt"] = 1,
+										["id"] = 186265,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[72968] = {
+										["activedamt"] = 1,
+										["id"] = 72968,
+										["targets"] = {
+										},
+										["uptime"] = 135,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[194386] = {
+										["activedamt"] = 1,
+										["id"] = 194386,
+										["targets"] = {
+										},
+										["uptime"] = 134,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[197161] = {
+										["activedamt"] = 1,
+										["id"] = 197161,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[215632] = {
+										["activedamt"] = 2,
+										["id"] = 215632,
+										["targets"] = {
+										},
+										["uptime"] = 40,
+										["appliedamt"] = 2,
+										["refreshamt"] = 18,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[19574] = {
+										["activedamt"] = 3,
+										["id"] = 19574,
+										["targets"] = {
+										},
+										["uptime"] = 45,
+										["appliedamt"] = 3,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrupt"] = 3.00679,
+							["interrompeu_oque"] = {
+								[242733] = 3,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 131,
+							["buff_uptime"] = 691,
+							["cc_done"] = 2.001482,
+							["nome"] = "Bawsie",
+							["spec"] = 253,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[109304] = 1,
+								[186265] = 1,
+								[193455] = 30,
+								[147362] = 3,
+								[781] = 1,
+								[120679] = 10,
+								[207068] = 2,
+								[19577] = 1,
+								[187650] = 1,
+								[136] = 3,
+								[19574] = 3,
+								[2643] = 1,
+								[34026] = 16,
+								[132764] = 10,
+							},
+							["cc_break_oque"] = {
+								[3355] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["cc_break_targets"] = {
+								["Tugar Bloodtotem"] = 1,
+							},
+							["serial"] = "Player-1303-06FB0BB8",
+							["last_event"] = 1530209145,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["last_event"] = 1530209072,
+							["cc_done"] = 1.006216,
+							["ownerName"] = "Bawsie",
+							["nome"] = "Bloodlust <Bawsie>",
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["cc_done_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[24394] = {
+										["id"] = 24394,
+										["targets"] = {
+											["Tugar Bloodtotem"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[17253] = 33,
+								[61684] = 1,
+								[160452] = 1,
+							},
+							["serial"] = "Pet-0-1631-1220-24082-20196-01025093D0",
+							["cc_done_targets"] = {
+								["Tugar Bloodtotem"] = 1,
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Bawsie",
+							["nome"] = "Beast <Bawsie>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[120694] = 10,
+								[201754] = 10,
+							},
+							["serial"] = "Creature-0-3110-1702-9875-62005-00003522F8",
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 247,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Bawsie"] = true,
+				},
+				["overall_added"] = true,
+				["last_events_tables"] = {
+					{
+						{
+							{
+								4, -- [1]
+								242730, -- [2]
+								1, -- [3]
+								1530209131.991, -- [4]
+								2804749, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								false, -- [7]
+								false, -- [8]
+								false, -- [9]
+								false, -- [10]
+							}, -- [1]
+							{
+								true, -- [1]
+								243238, -- [2]
+								101017, -- [3]
+								1530209132.991, -- [4]
+								2703732, -- [5]
+								"Jormog the Behemoth", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [2]
+							{
+								false, -- [1]
+								143924, -- [2]
+								1905, -- [3]
+								1530209133.5, -- [4]
+								2705637, -- [5]
+								"Bawsie", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [3]
+							{
+								true, -- [1]
+								242730, -- [2]
+								38963, -- [3]
+								1530209133.952, -- [4]
+								2666674, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [4]
+							{
+								true, -- [1]
+								242730, -- [2]
+								27947, -- [3]
+								1530209135.818, -- [4]
+								2638727, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [5]
+							{
+								false, -- [1]
+								197161, -- [2]
+								465978, -- [3]
+								1530209136.049, -- [4]
+								3104705, -- [5]
+								"Bawsie", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [6]
+							{
+								true, -- [1]
+								242730, -- [2]
+								27641, -- [3]
+								1530209137.884, -- [4]
+								3077064, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [7]
+							{
+								false, -- [1]
+								197161, -- [2]
+								465978, -- [3]
+								1530209138.149, -- [4]
+								3543042, -- [5]
+								"Bawsie", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [8]
+							{
+								true, -- [1]
+								242730, -- [2]
+								28005, -- [3]
+								1530209140.025, -- [4]
+								3515037, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [9]
+							{
+								false, -- [1]
+								197161, -- [2]
+								465978, -- [3]
+								1530209140.025, -- [4]
+								3981015, -- [5]
+								"Bawsie", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [10]
+							{
+								true, -- [1]
+								242730, -- [2]
+								27853, -- [3]
+								1530209142.028, -- [4]
+								3953162, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [11]
+							{
+								false, -- [1]
+								197161, -- [2]
+								465978, -- [3]
+								1530209142.028, -- [4]
+								4419140, -- [5]
+								"Bawsie", -- [6]
+								nil, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [12]
+							{
+								true, -- [1]
+								241687, -- [2]
+								702118, -- [3]
+								1530209143.341, -- [4]
+								3717022, -- [5]
+								"Jormog the Behemoth", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [13]
+							{
+								true, -- [1]
+								1, -- [2]
+								46492, -- [3]
+								1530209143.716, -- [4]
+								3717022, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [14]
+							{
+								true, -- [1]
+								242730, -- [2]
+								39446, -- [3]
+								1530209144.012, -- [4]
+								3677576, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [15]
+							{
+								true, -- [1]
+								242733, -- [2]
+								3728416, -- [3]
+								1530209144.223, -- [4]
+								1, -- [5]
+								"Tugar Bloodtotem", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								97332, -- [10]
+							}, -- [16]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Bawsie", -- [6]
+							}, -- [17]
+						}, -- [1]
+						1530209144.223, -- [2]
+						"Bawsie", -- [3]
+						"HUNTER", -- [4]
+						4659780, -- [5]
+						"2m 14s", -- [6]
+						["dead_at"] = 134.422999999952,
+						["dead"] = true,
+					}, -- [1]
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "Tugar Bloodtotem",
+				["combat_counter"] = 11749,
+				["totals"] = {
+					93597968.967793, -- [1]
+					12559807, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 3,
+						["dispell"] = 0,
+						["cc_break"] = 1,
+						["dead"] = 1,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Bawsie"] = 12559807.002001,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Bawsie"] = 93597969.007149,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 800844.751,
+				["combat_id"] = 247,
+				["instance_type"] = "scenario",
+				["frags"] = {
+					["Fel Surge Totem"] = 3,
+					["Bile Spitter"] = 2,
+				},
+				["data_fim"] = "20:05:45",
+				["data_inicio"] = "20:03:30",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					23503757, -- [1]
+					11812947, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 3,
+						["dispell"] = 0,
+						["cc_break"] = 1,
+						["dead"] = 1,
+					}, -- [4]
+				},
+				["start_time"] = 800709.749,
+				["contra"] = "Tugar Bloodtotem",
+				["TimeData"] = {
+				},
+			}, -- [1]
 		},
 	},
 	["last_version"] = "v7.3.5.5572",
@@ -33,10 +2233,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994747823962,
+					["y"] = -415.994740270861,
 					["x"] = 570.14230154699,
 					["w"] = 203.8720703125,
-					["h"] = 129.303604125977,
+					["h"] = 129.303619384766,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -67,10 +2267,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994747823962,
+					["y"] = -415.994740270861,
 					["x"] = 762.194442275391,
 					["w"] = 184.119293212891,
-					["h"] = 129.303604125977,
+					["h"] = 129.303619384766,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -132,7 +2332,7 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "22",
+	["last_day"] = "28",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -144,8 +2344,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -810,12 +3010,12 @@ _detalhes_database = {
 					"Interface\\Icons\\inv_shield_38", -- [4]
 					["id"] = 1784,
 				},
-				["156390"] = {
-					"156390", -- [1]
-					"Explosive Shard", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\6bf_explosive_shard", -- [4]
-					["id"] = 1696,
+				["186490"] = {
+					"186490", -- [1]
+					"Chains of Fel", -- [2]
+					33, -- [3]
+					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
+					["id"] = 1800,
 				},
 				["189009"] = {
 					"189009", -- [1]
@@ -859,19 +3059,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
 					["id"] = 1784,
 				},
-				["156240"] = {
-					"156240", -- [1]
-					"Acid Torrent (1)", -- [2]
-					10.7, -- [3]
-					"Interface\\Icons\\6bf_retched_blackrock", -- [4]
-					["id"] = 1696,
-				},
 				["180163"] = {
 					"180163", -- [1]
 					"Savage Strikes", -- [2]
 					6, -- [3]
 					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
 					["id"] = 1786,
+				},
+				["156240"] = {
+					"156240", -- [1]
+					"Acid Torrent (1)", -- [2]
+					10.7, -- [3]
+					"Interface\\Icons\\6bf_retched_blackrock", -- [4]
+					["id"] = 1696,
 				},
 				["siegemaker"] = {
 					"siegemaker", -- [1]
@@ -1062,12 +3262,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_kilruk_reave", -- [4]
 					["id"] = 1691,
 				},
-				["186490"] = {
-					"186490", -- [1]
-					"Chains of Fel", -- [2]
-					33, -- [3]
-					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
-					["id"] = 1800,
+				["156390"] = {
+					"156390", -- [1]
+					"Explosive Shard", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\6bf_explosive_shard", -- [4]
+					["id"] = 1696,
 				},
 				["158315"] = {
 					"158315", -- [1]
@@ -1122,7 +3322,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -1130,7 +3330,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -1138,7 +3338,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -1152,7 +3352,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -1814,8 +4014,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -1831,29 +4031,71 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["character_data"] = {
-		["logons"] = 1693,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
-	["last_encounter"] = "Tichondrius",
+	["last_realversion"] = 130,
 	["ignore_nicktag"] = false,
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1528306247,
-	},
-	["combat_counter"] = 11726,
-	["combat_id"] = 233,
+	["last_encounter"] = "Tichondrius",
+	["combat_counter"] = 11749,
+	["combat_id"] = 247,
 	["savedStyles"] = {
 	},
 	["last_instance_time"] = 1507661652,
 	["cached_talents"] = {
 		["Player-1303-06FB0BB8"] = {
-			22288, -- [1]
-			22499, -- [2]
-			22287, -- [3]
-			22495, -- [4]
-			22279, -- [5]
+			22282, -- [1]
+			22269, -- [2]
+			21997, -- [3]
+			21986, -- [4]
+			22293, -- [5]
 			19347, -- [6]
-			21998, -- [7]
+			22287, -- [7]
+		},
+		["Player-3686-0655218D"] = {
+			22358, -- [1]
+			19272, -- [2]
+			19259, -- [3]
+			19260, -- [4]
+			21199, -- [5]
+			19270, -- [6]
+			21968, -- [7]
+		},
+		["Player-3686-05EF80FF"] = {
+			22433, -- [1]
+			22705, -- [2]
+			22438, -- [3]
+			22558, -- [4]
+			22594, -- [5]
+			21202, -- [6]
+			22180, -- [7]
+		},
+		["Player-580-080ABF88"] = {
+			22331, -- [1]
+			22122, -- [2]
+			19239, -- [3]
+			21186, -- [4]
+			22114, -- [5]
+			19249, -- [6]
+			22339, -- [7]
+		},
+		["Player-578-06B25E63"] = {
+			22533, -- [1]
+			22023, -- [2]
+			22017, -- [3]
+			22515, -- [4]
+			22020, -- [5]
+			22529, -- [6]
+			22521, -- [7]
+		},
+		["Player-3702-08796B9F"] = {
+			22456, -- [1]
+			22444, -- [2]
+			21633, -- [3]
+			22451, -- [4]
+			22904, -- [5]
+			22442, -- [6]
+			22465, -- [7]
 		},
 	},
 	["announce_deaths"] = {
@@ -1862,10 +4104,9 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["character_data"] = {
+		["logons"] = 1695,
 	},
-	["last_realversion"] = 130,
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "The Arcway",
 		["started"] = false,
@@ -1876,6 +4117,10 @@ _detalhes_database = {
 		["level"] = 10,
 		["dungeon_zone_id"] = 1516,
 		["previous_boss_killed_at"] = 1507663200,
+	},
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1531041454,
 	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
@@ -1893,6 +4138,6 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-1303-06FB0BB8"] = 254,
+		["Player-1303-06FB0BB8"] = 253,
 	},
 }

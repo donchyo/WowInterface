@@ -34,13 +34,6 @@ X: 0
 Y: 0
 W: 600
 H: 700
-Frame: SavedInstancesDetachHeader
-FrameLevel: 100
-Anchor: CENTER
-X: -18
-Y: 162
-W: 1030
-H: 286
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: RIGHT

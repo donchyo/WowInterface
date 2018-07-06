@@ -61,10 +61,10 @@ Bagnon_Sets = {
 				"trade/glyph", -- [19]
 				"trade/recipe", -- [20]
 				"quest", -- [21]
-				"misc", -- [22]
-				"quest/all", -- [23]
-				"contain/all", -- [24]
-				"misc/all", -- [25]
+				"quest/all", -- [22]
+				"contain/all", -- [23]
+				"misc/all", -- [24]
+				"misc", -- [25]
 			},
 			["point"] = "BOTTOMRIGHT",
 			["hiddenBags"] = {
@@ -77,17 +77,19 @@ Bagnon_Sets = {
 			["reverseBags"] = true,
 			["color"] = {
 			},
+			["hiddenRules"] = {
+				["misc"] = false,
+			},
 			["money"] = true,
-			["alpha"] = 1,
-			["itemScale"] = 1,
-			["y"] = 72.888916015625,
 			["bagBreak"] = false,
+			["itemScale"] = 1,
+			["broker"] = false,
+			["y"] = 72.888916015625,
 			["x"] = -45.5540771484375,
 			["search"] = true,
-			["broker"] = false,
+			["showBags"] = true,
 			["reverseSlots"] = true,
-			["hiddenRules"] = {
-			},
+			["alpha"] = 1,
 			["bagFrame"] = false,
 			["actPanel"] = false,
 		},

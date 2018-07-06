@@ -53,7 +53,7 @@ bind CTRL-F CLICK BT4Button111:LeftButton
 bind NUMPAD2 CLICK RaidFlare2:LeftButton
 bind SHIFT-F CLICK BT4Button30:LeftButton
 bind ALT-0 CLICK BT4Button81:LeftButton
-bind CTRL-G CLICK BT4Button32:LeftButton
+bind CTRL-G CLICK BT4Button77:LeftButton
 bind CTRL-+ CLICK BT4Button35:LeftButton
 bind ALT-8 ACTIONBUTTON11
 bind [ PAWN_COMPARE_LEFT
@@ -61,3 +61,4 @@ bind ] PAWN_COMPARE_RIGHT
 bind ALT-F CLICK BT4Button78:LeftButton
 bind ALT-4 CLICK BT4Button73:LeftButton
 bind ALT-BUTTON5 CLICK BT4Button74:LeftButton
+bind ALT-G NONE

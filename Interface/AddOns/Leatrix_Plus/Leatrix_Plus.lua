@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 7.3.33 (2nd May 2018, www.leatrix.com)
+-- 	Leatrix Plus 7.3.34 (6th June 2018, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:Player		72:Profile		
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "7.3.33"
+	LeaPlusLC["AddonVer"] = "7.3.34"
 
 ----------------------------------------------------------------------
 --	L00: Leatrix Plus
@@ -3310,9 +3310,10 @@
 		if LeaPlusLC["ShowMinimapIcon"] == "On" then
 	
 			-- Create minimap button
-			local minibtn = CreateFrame("Button", "LeaPlusMapBtn", Minimap)
+			local minibtn = CreateFrame("Button", "LibDBIcon10_Leatrix_Plus", Minimap)
 
 			minibtn:SetFrameStrata("MEDIUM")
+			minibtn:SetFrameLevel(8)
 			minibtn:SetSize(31, 31)
 			minibtn:RegisterForClicks("AnyUp")
 			minibtn:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")

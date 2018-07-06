@@ -37,7 +37,9 @@ if PRAT_MODULE == nil then
     return 
 end
 
-local PL = Prat:GetLocalizer({})
+local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
+
+local PL = module.PL
 
 --[===[@debug@
 PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -751,7 +753,6 @@ PL:AddLocale(PRAT_MODULE, "zhTW",L)
 end
 --@end-non-debug@
 
-local module = Prat:NewModule(PRAT_MODULE, "AceHook-3.0")
 
 Prat:SetModuleDefaults(module.name, {
 	profile = {
@@ -1007,6 +1008,10 @@ end
 --[[------------------------------------------------
 	Core Functions
 ------------------------------------------------]]--
+
+function module:GetDescription()
+    return PL["Editbox options."]
+end
 
 function module:Alpha(value)
     local eb = VisorEditbox or ChatFrameEditBox

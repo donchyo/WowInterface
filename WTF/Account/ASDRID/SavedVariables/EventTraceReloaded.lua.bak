@@ -154,5 +154,8 @@ EventTraceReloaded = {
 			["UNIT_RESISTANCES"] = 1,
 			["CHAT_MSG_MONSTER_SAY"] = 1,
 		},
+		["Krixi"] = {
+			["UNIT_AURA"] = 1,
+		},
 	},
 }

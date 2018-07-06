@@ -49,6 +49,7 @@ FlashTaskbarDB = {
 			["chat_scan_keywords"] = {
 				"Krixi", -- [1]
 				"Donch", -- [2]
+				"You have been outbid on", -- [3]
 			},
 			["rare_scan"] = false,
 		},

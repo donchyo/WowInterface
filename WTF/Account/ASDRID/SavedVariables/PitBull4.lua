@@ -3338,15 +3338,15 @@ PitBull4DB = {
 				},
 				["Krixi"] = {
 					["layouts"] = {
-						["Focus"] = {
-							["enabled"] = false,
+						["PlayerFrame"] = {
+							["fallback_style"] = "blank",
 						},
 						["Target of Target"] = {
 							["enabled"] = false,
 							["fallback_style"] = "blank",
 						},
-						["PlayerFrame"] = {
-							["fallback_style"] = "blank",
+						["Focus"] = {
+							["enabled"] = false,
 						},
 					},
 				},
@@ -3379,8 +3379,8 @@ PitBull4DB = {
 									["width_percent"] = 1,
 									["size_to_fit"] = false,
 									["my_size"] = 33,
-									["width"] = 91,
 									["offset_x"] = -5,
+									["width"] = 91,
 									["offset_y"] = 3,
 									["width_type"] = "fixed",
 									["anchor"] = "TOPRIGHT",
@@ -3391,14 +3391,24 @@ PitBull4DB = {
 							},
 						},
 						["Boss"] = {
+							["cooldown"] = {
+								["other_debuffs"] = false,
+							},
+							["borders"] = {
+								["my_buffs"] = {
+									["friend"] = {
+										["enabled"] = false,
+									},
+								},
+							},
 							["highlight"] = false,
 							["layout"] = {
 								["debuff"] = {
 									["side"] = "LEFT",
 									["width_percent"] = 1,
 									["my_size"] = 30,
-									["width"] = 105,
 									["row_spacing"] = -5,
+									["width"] = 105,
 									["offset_y"] = 4,
 									["width_type"] = "fixed",
 									["anchor"] = "TOPLEFT",
@@ -3418,9 +3428,11 @@ PitBull4DB = {
 									["size"] = 33,
 								},
 							},
-							["cooldown"] = {
-								["other_debuffs"] = false,
-							},
+						},
+						["Focus"] = {
+							["max_debuffs"] = 12,
+							["max_buffs"] = 9,
+							["enabled_buffs"] = false,
 							["borders"] = {
 								["my_buffs"] = {
 									["friend"] = {
@@ -3428,17 +3440,16 @@ PitBull4DB = {
 									},
 								},
 							},
-						},
-						["Focus"] = {
-							["max_debuffs"] = 12,
-							["max_buffs"] = 9,
+							["cooldown"] = {
+								["other_debuffs"] = false,
+							},
 							["layout"] = {
 								["debuff"] = {
 									["width_percent"] = 1,
 									["growth"] = "right_down",
 									["my_size"] = 33,
-									["width"] = 205,
 									["row_spacing"] = -5,
+									["width"] = 205,
 									["offset_y"] = 4,
 									["width_type"] = "fixed",
 									["anchor"] = "BOTTOMLEFT",
@@ -3451,8 +3462,8 @@ PitBull4DB = {
 									["width_percent"] = 1,
 									["size_to_fit"] = false,
 									["my_size"] = 33,
-									["width"] = 91,
 									["width_type"] = "fixed",
+									["width"] = 91,
 									["offset_y"] = 3,
 									["offset_x"] = -5,
 									["anchor"] = "TOPRIGHT",
@@ -3461,6 +3472,11 @@ PitBull4DB = {
 									["size"] = 33,
 								},
 							},
+						},
+						["Target"] = {
+							["max_debuffs"] = 14,
+							["max_buffs"] = 9,
+							["highlight"] = false,
 							["borders"] = {
 								["my_buffs"] = {
 									["friend"] = {
@@ -3471,20 +3487,14 @@ PitBull4DB = {
 							["cooldown"] = {
 								["other_debuffs"] = false,
 							},
-							["enabled_buffs"] = false,
-						},
-						["Target"] = {
-							["max_debuffs"] = 14,
-							["max_buffs"] = 9,
-							["highlight"] = false,
 							["layout"] = {
 								["buff"] = {
 									["side"] = "RIGHT",
 									["width_percent"] = 1,
 									["size_to_fit"] = false,
 									["my_size"] = 33,
-									["width"] = 91,
 									["offset_x"] = -5,
+									["width"] = 91,
 									["offset_y"] = 3,
 									["width_type"] = "fixed",
 									["anchor"] = "TOPRIGHT",
@@ -3497,24 +3507,14 @@ PitBull4DB = {
 									["width_percent"] = 1,
 									["growth"] = "right_up",
 									["my_size"] = 33,
-									["width"] = 220,
 									["offset_x"] = -3,
+									["width"] = 220,
 									["offset_y"] = -4,
 									["row_spacing"] = -5,
 									["anchor"] = "TOPLEFT",
 									["width_type"] = "fixed",
 									["col_spacing"] = -7,
 									["size"] = 33,
-								},
-							},
-							["cooldown"] = {
-								["other_debuffs"] = false,
-							},
-							["borders"] = {
-								["my_buffs"] = {
-									["friend"] = {
-										["enabled"] = false,
-									},
 								},
 							},
 						},
@@ -3601,11 +3601,11 @@ PitBull4DB = {
 									["size"] = 30,
 									["side"] = "LEFT",
 									["width"] = 105,
-									["offset_x"] = 5,
+									["width_type"] = "fixed",
 									["filter"] = "!E",
 									["row_spacing"] = -5,
 									["col_spacing"] = -7,
-									["width_type"] = "fixed",
+									["offset_x"] = 5,
 								},
 								["buff"] = {
 									["width_percent"] = 1,
@@ -3643,11 +3643,11 @@ PitBull4DB = {
 									["size"] = 33,
 									["growth"] = "right_down",
 									["width"] = 205,
-									["offset_x"] = -3,
+									["width_type"] = "fixed",
 									["filter"] = "!D",
 									["row_spacing"] = -5,
 									["col_spacing"] = -7,
-									["width_type"] = "fixed",
+									["offset_x"] = -3,
 								},
 								["buff"] = {
 									["width_percent"] = 1,
@@ -3693,11 +3693,11 @@ PitBull4DB = {
 									["side"] = "TOP",
 									["growth"] = "right_up",
 									["width"] = 175,
-									["offset_x"] = 95,
+									["width_type"] = "fixed",
 									["filter"] = "!E",
 									["row_spacing"] = -5,
 									["col_spacing"] = -7,
-									["width_type"] = "fixed",
+									["offset_x"] = 95,
 								},
 								["buff"] = {
 									["width_percent"] = 1,
@@ -4626,7 +4626,7 @@ PitBull4DB = {
 	},
 	["profileKeys"] = {
 		["Krixi - Grim Batol"] = "Krixi",
-		["Donch - Grim Batol"] = "Default",
+		["Donch - Grim Batol"] = "Krixi",
 		["Krixidk - Grim Batol"] = "Krixi",
 		["Kroxi - Grim Batol"] = "Krixi",
 		["Krixidk - Ravencrest"] = "Krixi",
@@ -4636,7 +4636,7 @@ PitBull4DB = {
 		["Zetiz - Grim Batol"] = "Krixi",
 		["Krixidh - Grim Batol"] = "Krixi",
 		["Zuriz - Grim Batol"] = "Krixi",
-		["Bawsie - Grim Batol"] = "Default",
+		["Bawsie - Grim Batol"] = "Krixi",
 		["Zolution - Grim Batol"] = "Default",
 	},
 	["global"] = {
@@ -4644,7 +4644,7 @@ PitBull4DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["made_groups"] = true,
+			["lock_movement"] = true,
 			["groups"] = {
 				["Party"] = {
 					["position_x"] = 10,
@@ -4725,8 +4725,8 @@ PitBull4DB = {
 					["bar_texture"] = "Skullflower",
 				},
 			},
-			["lock_movement"] = true,
 			["made_units"] = true,
+			["made_groups"] = true,
 			["units"] = {
 				["Player's pet's target"] = {
 					["unit"] = "pettarget",
@@ -4847,8 +4847,8 @@ PitBull4DB = {
 					["unit"] = "pet",
 					["enabled"] = true,
 					["size_x"] = 0.5,
-					["size_y"] = 0.5,
 					["layout"] = "Target of Target",
+					["size_y"] = 0.5,
 					["position_y"] = -56.2500305175781,
 					["relative_to"] = "SPlayer",
 				},
@@ -4896,7 +4896,7 @@ PitBull4DB = {
 					["unit"] = "focustarget",
 				},
 			},
-			["made_groups"] = true,
+			["lock_movement"] = true,
 			["colors"] = {
 				["power"] = {
 					["LUNAR_POWER"] = {
@@ -4906,14 +4906,10 @@ PitBull4DB = {
 					},
 				},
 			},
-			["minimap_icon"] = {
-				["hide"] = true,
-			},
-			["lock_movement"] = true,
 			["groups"] = {
 				["Party"] = {
-					["relative_point"] = "TOPLEFT",
 					["position_x"] = 10,
+					["relative_point"] = "TOPLEFT",
 					["exists"] = true,
 					["position_y"] = -260,
 				},
@@ -4944,6 +4940,10 @@ PitBull4DB = {
 					},
 				},
 			},
+			["minimap_icon"] = {
+				["hide"] = true,
+			},
+			["made_groups"] = true,
 		},
 	},
 }

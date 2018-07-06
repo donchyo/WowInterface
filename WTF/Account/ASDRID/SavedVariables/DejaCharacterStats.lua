@@ -219,6 +219,9 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DefenseCategory",
 		}, -- [46]
+		{
+			["statKey"] = "SPEED",
+		}, -- [47]
 		["uniqueKey"] = "Bawsie:Grim Batol:1",
 	},
 	["Krixidk:Grim Batol:3"] = {
@@ -6699,6 +6702,9 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DefenseCategory",
 		}, -- [46]
+		{
+			["statKey"] = "SPEED",
+		}, -- [47]
 		["uniqueKey"] = "Zuriz:Grim Batol:1",
 	},
 	["Krixi:Grim Batol:1"] = {
@@ -9348,6 +9354,9 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DefenseCategory",
 		}, -- [46]
+		{
+			["statKey"] = "SPEED",
+		}, -- [47]
 		["uniqueKey"] = "Bawsie:Grim Batol:3",
 	},
 	["Lowerboost:Lightbringer:1"] = {
@@ -10185,6 +10194,9 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DefenseCategory",
 		}, -- [46]
+		{
+			["statKey"] = "SPEED",
+		}, -- [47]
 		["uniqueKey"] = "Kroxi:Grim Batol:1",
 	},
 	["Krixidk:Ravencrest:3"] = {

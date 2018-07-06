@@ -86,53 +86,11 @@ do
 		[250144] = 1984, -- Aggramar
 		[250146] = 2031, -- Argus the Unmaker
 	}
-	local buffs = {
-		-- Emerald Nightmare
-		192761, -- Nythndra
-		192765, -- Elerethe
-		191464, -- Ursoc
-		192762, -- Il'gynoth
-		192763, -- Dragons
-		192766, -- Cenarius
-		192764, -- Xavius
-		-- Trial of Valor
-		229174, -- Odyn
-		229175, -- Guarm
-		229176, -- Helya
-		-- Nighthold
-		192767, -- Skorpyron
-		192768, -- Chronomatic Anomaly
-		192769, -- Trilliax
-		192770, -- Aluriel
-		192771, -- Tichondrius
-		192773, -- Krosus
-		192772, -- Tel'arn
-		192774, -- Etraeus
-		192775, -- Elisande
-		192776, -- Gul'dan
-		-- Tomb of Sargeras
-		237821, -- Goroth
-		237828, -- Demonic Inquisition
-		237824, -- Harjatan
-		237826, -- Sassz'ine
-		237822, -- Sisters of the Moon
-		237827, -- The Desolate Host
-		237823, -- Maiden of Vigilance
-		237820, -- Fallen Avatar
-		237825, -- Kil'jaeden
-		-- Antorus
-		250153, -- Garothi Worldbreaker
-		250156, -- Felhounds of Sargeras
-		250167, -- Antoran High Command
-		250160, -- Portal Keeper Hasabel
-		250150, -- Eonar the Lifebinder
-		250158, -- Imonar the Soulhunter
-		250148, -- Kin'garoth
-		250165, -- Varimathras
-		250163, -- The Coven of Shivarra
-		250144, -- Aggramar
-		250146, -- Argus the Unmaker
-	}
+
+	local buffs = {}
+	for k in next, runes do
+		buffs[#buffs + 1] = k
+	end
 
 	function getVantus(player)
 		local _, _, id = module:UnitBuffByIDs(player, buffs)
@@ -154,7 +112,8 @@ end
 local getRune
 do
 	local runes = {
-		224001, -- Defiled Augmentation
+		224001, -- Defiled Augmentation (Legion)
+		-- 270058, -- Battle-Scarred Augmentation (BfA)
 	}
 
 	function getRune(player)
@@ -169,10 +128,16 @@ end
 local getFlask
 do
 	local flasks = {
+		-- Legion
 		188031, -- Flask of the Whispered Pact    (Intellect)
 		188033, -- Flask of the Seventh Demon     (Agility)
 		188034, -- Flask of the Countless Armies  (Strength)
 		188035, -- Flask of Ten Thousand Scars    (Stamina)
+		-- BfA
+		-- 251836, -- Flask of the Currents          (Agility)
+		-- 251837, -- Flask of Endless Fathoms       (Intellect)
+		-- 251838, -- Flask of the Vast Horizon      (Stamina)
+		-- 251839, -- Flask of the Undertow          (Strength)
 	}
 
 	function getFlask(player)
@@ -186,50 +151,18 @@ end
 
 local getFood
 do
-	local eating = {
-		spells[192002], -- Food & Drink (Eating)
-		spells[19705], -- Well Fed
-	}
-	-- local food = {
-	-- 	-- crit
-	-- 	[201223] = 225,
-	-- 	[225597] = 300,
-	-- 	[225602] = 375,
-	-- 	-- mastery
-	-- 	[201332] = 225,
-	-- 	[225599] = 300,
-	-- 	[225604] = 375,
-	-- 	-- haste
-	-- 	[201330] = 225,
-	-- 	[225598] = 300,
-	-- 	[225603] = 375,
-	-- 	-- versatility
-	-- 	[201334] = 225,
-	-- 	[225600] = 300,
-	-- 	[225605] = 375,
-	-- 	-- aoe damage
-	-- 	[201336] = true, -- ~10k
-	-- 	[225601] = true, -- ~13.5k
-	-- 	[201336] = true, -- ~17k
-	-- 	-- stats (feast)
-	-- 	-- str
-	-- 	[201634] = 150,
-	-- 	[201638] = 200,
-	-- 	-- agi
-	-- 	[201635] = 150,
-	-- 	[201639] = 200,
-	-- 	-- int
-	-- 	[201636] = 150,
-	-- 	[201640] = 200,
-	-- 	-- sta
-	-- 	[201637] = 225,
-	-- 	[201641] = 300,
-	-- }
+	local eating = { spells[192002] } -- Food & Drink (Eating)
+	local wellFed = { spells[19705] } -- Well Fed
 
 	function getFood(player)
-		local _, _, id = module:UnitBuffByNames(player, eating)
+		local _, _, id = module:UnitBuffByNames(player, wellFed)
 		if id then
 			return id
+		else -- should probably map food -> well fed buffs but bleeh
+			_, _, id = module:UnitBuffByNames(player, eating)
+			if id then
+				return -id -- negative value for eating, not well fed yet
+			end
 		end
 		return false
 	end
@@ -392,14 +325,22 @@ end
 do
 	local maxFoods = {
 		[225602] = true, -- crit
-		[225604] = true, -- mastery
 		[225603] = true, -- haste
+		[225604] = true, -- mastery
 		[225605] = true, -- versatility
 		[201638] = true, -- str
 		[201639] = true, -- agi
 		[201640] = true, -- int
 		-- [201641] = true, -- sta
 		[185736] = true, -- versatility (Sugar-Crusted Fish Feast, gives +1%)
+		-- [257410] = true, -- crit
+		-- [257415] = true, -- haste
+		-- [257420] = true, -- mastery
+		-- [257424] = true, -- versatility
+		-- [259454] = true, -- agi
+		-- [259455] = true, -- int
+		-- [259456] = true, -- str
+		-- -- [259457] = true, -- sta
 	}
 	-- 1300 stat flask
 	local maxFlasks = {
@@ -407,6 +348,10 @@ do
 		[188033] = true, -- Flask of the Seventh Demon     (Agility)
 		[188034] = true, -- Flask of the Countless Armies  (Strength)
 		[188035] = true, -- Flask of Ten Thousand Scars    (Stamina)
+		-- [251836] = true, -- Flask of the Currents          (Agility)
+		-- [251837] = true, -- Flask of Endless Fathoms       (Intellect)
+		-- [251838] = true, -- Flask of the Vast Horizon      (Stamina)
+		-- [251839] = true, -- Flask of the Undertow          (Strength)
 	}
 
 	function module:IsBest(id)

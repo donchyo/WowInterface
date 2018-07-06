@@ -25,6 +25,7 @@
 <Script file="Font.lua"/>
 <Script file="Filtering.lua"/>
 <Script file="History.lua"/>
+<Script file="HoverTips.lua" />
 <Script file="Invites.lua"/>
 <Script file="Keybindings.lua"/>
 <!--<Script file="OriginalEditbox.lua"/>-->
@@ -33,7 +34,7 @@
 <Script file="PopupMessage.lua"/>
 <Script file="ServerNames.lua"/>
 <Script file="Scroll.lua"/>
-<Script file="Search.lua"/>
+<!--<Script file="Search.lua"/>-->
 <Script file="Sounds.lua"/>
 <Script file="Substitutions.lua"/>
 <Script file="TellTarget.lua"/>

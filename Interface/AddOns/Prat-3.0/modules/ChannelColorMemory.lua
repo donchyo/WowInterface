@@ -33,7 +33,9 @@ Prat:AddModuleToLoad(function()
     return
   end
 
-  local PL = Prat:GetLocalizer({})
+  local module = Prat:NewModule(PRAT_MODULE, "AceEvent-3.0")
+
+  local PL = module.PL
 
   --[===[@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -165,7 +167,6 @@ Prat:AddModuleToLoad(function()
  --@end-non-debug@
 
 
-  local module = Prat:NewModule(PRAT_MODULE, "AceEvent-3.0")
 
   Prat:SetModuleDefaults(module.name, {
     profile = {
@@ -203,6 +204,10 @@ Prat:AddModuleToLoad(function()
       end
     end
     self:RestoreAllChatColors()
+  end
+
+  function module:GetDescription()
+    return PL["Remembers the colors of each channel name."]
   end
 
   function module:IndexServerChannels()

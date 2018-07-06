@@ -154,5 +154,8 @@ EventTraceReloaded = {
 			["ZONE_CHANGED_INDOORS"] = 1,
 			["UNIT_MODEL_CHANGED"] = 1,
 		},
+		["Krixi"] = {
+			["UNIT_AURA"] = 1,
+		},
 	},
 }

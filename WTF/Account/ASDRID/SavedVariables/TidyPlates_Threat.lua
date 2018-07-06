@@ -94,10 +94,10 @@ TidyPlatesThreatDB = {
 		["Krixidk - Ravencrest"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 250,
-				["role"] = "TANK",
-				["name"] = "Blood",
-				["index"] = 1,
+				["id"] = 251,
+				["role"] = "DAMAGER",
+				["name"] = "Frost",
+				["index"] = 2,
 			},
 		},
 		["Greenzuriz - Aggra (Português)"] = {
@@ -130,10 +130,10 @@ TidyPlatesThreatDB = {
 		["Kroxi - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 73,
-				["role"] = "TANK",
-				["name"] = "Protection",
-				["index"] = 3,
+				["id"] = 71,
+				["role"] = "DAMAGER",
+				["name"] = "Arms",
+				["index"] = 1,
 			},
 		},
 		["Bawsi - Aggra (Português)"] = {
@@ -147,20 +147,20 @@ TidyPlatesThreatDB = {
 		},
 		["Bawsie - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 254,
+				["id"] = 253,
 				["role"] = "DAMAGER",
-				["name"] = "Marksmanship",
-				["index"] = 2,
+				["name"] = "Beast Mastery",
+				["index"] = 1,
 			},
 			["welcome"] = true,
 		},
 		["Krixidh - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 581,
-				["role"] = "TANK",
-				["name"] = "Vengeance",
-				["index"] = 2,
+				["id"] = 577,
+				["role"] = "DAMAGER",
+				["name"] = "Havoc",
+				["index"] = 1,
 			},
 		},
 		["Lowerboost - Lightbringer"] = {
@@ -247,10 +247,10 @@ TidyPlatesThreatDB = {
 		["Zetiz - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 259,
+				["id"] = 261,
 				["role"] = "DAMAGER",
-				["name"] = "Assassination",
-				["index"] = 1,
+				["name"] = "Subtlety",
+				["index"] = 3,
 			},
 		},
 		["Lòverocket - Aggra (Português)"] = {

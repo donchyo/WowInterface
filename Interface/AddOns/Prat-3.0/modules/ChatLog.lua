@@ -36,7 +36,9 @@ if PRAT_MODULE == nil then
     return 
 end
 
-local PL = Prat:GetLocalizer({})
+local module = Prat:NewModule(PRAT_MODULE)
+
+local PL = module.PL
 
 --[===[@debug@
 PL:AddLocale(PRAT_MODULE, "enUS", {
@@ -340,7 +342,6 @@ end
 --@end-non-debug@
 
 
-local module = Prat:NewModule(PRAT_MODULE)
 
 
 Prat:SetModuleDefaults(module.name, {
@@ -391,6 +392,10 @@ end
 --[[------------------------------------------------
     Core Functions
 ------------------------------------------------]]--
+
+function module:GetDescription()
+    return PL["A module to automaticaly enable chat and combat logging."]
+end
 
 -- enable or disable the chat log
 function module:SetChatLog(info, val)

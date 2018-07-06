@@ -520,7 +520,7 @@ function IA:CreateInspectFrame()
 			self[ButtonName]:Size(70, 20)
 			self[ButtonName]:SetTemplate('Transparent')
 			self[ButtonName]:SetFrameLevel(CORE_FRAME_LEVEL + 1)
-			KF:TextSetting(self[ButtonName], _G[ButtonString], { FontSize = 9, FontStyle = 'OUTLINE' })
+			KF:TextSetting(self[ButtonName], _G[ButtonString], { Font = E.db.sle.Armory.Inspect.tabsText.Font, FontSize = E.db.sle.Armory.Inspect.tabsText.FontSize, FontStyle =  E.db.sle.Armory.Inspect.tabsText.FontStyle })
 			self[ButtonName]:SetScript('OnEnter', self.Button_OnEnter)
 			self[ButtonName]:SetScript('OnLeave', self.Button_OnLeave)
 			self[ButtonName]:SetScript('OnClick', function() IA:ChangePage(ButtonName) end)
@@ -1828,6 +1828,7 @@ IA.InspectUnit = function(UnitID)
 		IA.CurrentInspectData.PrestigeLevel = UnitPrestige(UnitID)
 		IA.CurrentInspectData.Name, IA.CurrentInspectData.Realm = T.UnitFullName(UnitID)
 		_, IA.CurrentInspectData.Class, IA.CurrentInspectData.ClassID = T.UnitClass(UnitID)
+		if E.db.sle.Armory.Inspect.Backdrop.SelectedBG == 'CLASS' then IA:Update_BG() end
 		IA.CurrentInspectData.guildName, IA.CurrentInspectData.guildRankName = T.GetGuildInfo(UnitID)
 		
 		IA.CurrentInspectData.Realm = IA.CurrentInspectData.Realm ~= '' and IA.CurrentInspectData.Realm ~= Info.MyRealm and IA.CurrentInspectData.Realm or nil
@@ -2379,7 +2380,7 @@ function IA:InspectFrame_DataSetting(DataTable)
 						break
 					end
 				end
-				
+				if not MajorTooltipStartLine then MajorTooltipStartLine = 1 end
 				for i = MajorTooltipStartLine, self.ScanTT:NumLines() do
 					CurrentLineText = _G['InspectArmoryScanTTTextLeft'..i]:GetText()
 					
@@ -2425,7 +2426,6 @@ function IA:InspectFrame_DataSetting(DataTable)
 	do	--<< Information Page Setting >>--
 		do	-- Profession
 			for i = 1, 2 do
-				for k,v in pairs(DataTable.Profession[i]) do print(k,v) end
 				if DataTable.Profession[i].Name then
 					self.Info.Profession:Show()
 					self.Info.Profession['Prof'..i].Bar:SetValue(DataTable.Profession[i].Level)
@@ -2820,6 +2820,12 @@ function IA:Update_BG()
 		self.BG:SetTexture(nil)
 	elseif E.db.sle.Armory.Inspect.Backdrop.SelectedBG == 'CUSTOM' then
 		self.BG:SetTexture(E.db.sle.Armory.Inspect.Backdrop.CustomAddress)
+	elseif E.db.sle.Armory.Inspect.Backdrop.SelectedBG == 'CLASS' then
+		if IA.CurrentInspectData.Class then 
+			self.BG:SetTexture("Interface\\AddOns\\ElvUI_SLE\\modules\\Armory\\Media\\Textures\\"..IA.CurrentInspectData.Class)
+		else
+			self.BG:SetTexture(nil)
+		end
 	else
 		self.BG:SetTexture(Info.Armory_Constants.BlizzardBackdropList[E.db.sle.Armory.Inspect.Backdrop.SelectedBG] or 'Interface\\AddOns\\ElvUI_SLE\\modules\\Armory\\Media\\Textures\\'..E.db.sle.Armory.Inspect.Backdrop.SelectedBG)
 	end

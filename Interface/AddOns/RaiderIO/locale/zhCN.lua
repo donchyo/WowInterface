@@ -33,14 +33,28 @@ L["DUNGEON_SHORT_NAME_NL"] = "奈萨里奥的巢穴"
 L["DUNGEON_SHORT_NAME_SEAT"] = "执政团之座"
 L["DUNGEON_SHORT_NAME_UPPR"] = "卡拉赞上层"
 L["DUNGEON_SHORT_NAME_VOTW"] = "守望者地窟"
+--[[Translation missing --]]
+--[[ L["ENABLE_AUTO_FRAME_POSITION"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_AUTO_FRAME_POSITION_DESC"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_LOCK_PROFILE_FRAME"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = ""--]] 
 L["ENABLE_NO_SCORE_COLORS"] = "关闭评分颜色"
 L["ENABLE_NO_SCORE_COLORS_DESC"] = "关闭评分颜色。所有评分会显示为白色。"
 L["ENABLE_SIMPLE_SCORE_COLORS"] = "使用简单评分颜色"
 L["ENABLE_SIMPLE_SCORE_COLORS_DESC"] = "将评分用基础装备等级颜色显示，这会让有色觉缺陷更简单的区分评分等级。"
 L["HEALER"] = "治疗者"
 L["HEALER_SCORE"] = "治疗者评分"
+--[[Translation missing --]]
+--[[ L["INVERSE_PROFILE_MODIFIER"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["INVERSE_PROFILE_MODIFIER_DESC"] = ""--]] 
 L["KEYSTONE_COMPLETED_10"] = "+10-14 完成的钥石"
 L["KEYSTONE_COMPLETED_15"] = "+15 完成的钥石"
+--[[Translation missing --]]
+--[[ L["LOCKING_PROFILE_FRAME"] = ""--]] 
 L["MAINS_SCORE"] = "当前分数"
 L["MAINS_SCORE_COLON"] = "当前的分数："
 --[[Translation missing --]]
@@ -51,12 +65,22 @@ L["MAINS_SCORE_COLON"] = "当前的分数："
 --[[ L["MODULE_KOREA"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["MODULE_TAIWAN"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MY_PROFILE_TITLE"] = ""--]] 
 L["MYTHIC_PLUS_DB_MODULES"] = "大秘境数据库模组"
 L["MYTHIC_PLUS_SCORES"] = "大秘境评分"
 L["OPEN_CONFIG"] = "开启选项"
+--[[Translation missing --]]
+--[[ L["OUT_OF_SYNC_DATABASE_S"] = ""--]] 
 L["OUTDATED_DATABASE"] = "%天前的评分"
+--[[Translation missing --]]
+--[[ L["OUTDATED_DATABASE_HOURS"] = ""--]] 
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r使用的数据已经有|cffFF6666%d|r天之前的了。请更新此插件以显示更精准的大秘境评分。"
+--[[Translation missing --]]
+--[[ L["PLAYER_PROFILE_TITLE"] = ""--]] 
 L["PREV_SEASON_SUFFIX"] = "（*）"
+--[[Translation missing --]]
+--[[ L["PROFILE_BEST_RUNS"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = ""--]] 
 --[[Translation missing --]]
@@ -80,12 +104,20 @@ L["SHOW_IN_WHO_UI"] = "在查询界面显示"
 L["SHOW_IN_WHO_UI_DESC"] = "当你鼠标悬停在查询结果时显示大秘境评分"
 L["SHOW_KEYSTONE_INFO"] = "显示钥石信息"
 L["SHOW_KEYSTONE_INFO_DESC"] = "在钥石提示上增加钥石信息。建议此队伍的大秘境评分。"
+--[[Translation missing --]]
+--[[ L["SHOW_LEADER_PROFILE"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["SHOW_LEADER_PROFILE_DESC"] = ""--]] 
 L["SHOW_MAINS_SCORE"] = "显示当季评分"
 L["SHOW_MAINS_SCORE_DESC"] = "显示玩家本季的分数。玩家必须在Raider.IO上注册并且选择主要角色。"
 L["SHOW_ON_GUILD_ROSTER"] = "在公会名册上显示"
 L["SHOW_ON_GUILD_ROSTER_DESC"] = "当你鼠标悬停在公会名册的成员时显示大秘境评分"
 L["SHOW_ON_PLAYER_UNITS"] = "在玩家单位显示"
 L["SHOW_ON_PLAYER_UNITS_DESC"] = "当你鼠标悬停在玩家单位的时候显示大秘境评分"
+--[[Translation missing --]]
+--[[ L["SHOW_RAIDERIO_PROFILE"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["SHOW_RAIDERIO_PROFILE_DESC"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["SHOW_SCORE_IN_COMBAT"] = ""--]] 
 --[[Translation missing --]]
@@ -95,8 +127,14 @@ L["TANK_SCORE"] = "坦克评分"
 L["TIMED_10_RUNS"] = "限时通关 10-14 次数"
 L["TIMED_15_RUNS"] = "限时通关 15+ 次数"
 L["TOOLTIP_CUSTOMIZATION"] = "提示自定义"
+--[[Translation missing --]]
+--[[ L["TOOLTIP_PROFILE"] = ""--]] 
 L["UNKNOWN_SCORE"] = "未知"
 L["UNKNOWN_SERVER_FOUND"] = "|cffFFFFFF%s|r已经转到新服务器。情急下这条信息|cffFF9999{|r |cffFFFFFF%s|r |cffFF9999,|r |cffFFFFFF%s|r |cffFF9999}|r並且发送给开发者，非常感谢！"
+--[[Translation missing --]]
+--[[ L["UNLOCKING_PROFILE_FRAME"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WARNING_LOCK_POSITION_FRAME_AUTO"] = ""--]] 
 
 
 	ns.L = L

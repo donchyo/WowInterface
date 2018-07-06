@@ -7,9 +7,9 @@ _detalhes_database = {
 		["tabelas"] = {
 		},
 	},
-	["combat_counter"] = 11724,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["combat_counter"] = 11728,
+	["character_data"] = {
+		["logons"] = 1694,
 	},
 	["tabela_instancias"] = {
 	},
@@ -35,10 +35,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994747823962,
+					["y"] = -415.994740270861,
 					["x"] = 570.14230154699,
 					["w"] = 203.8720703125,
-					["h"] = 129.303604125977,
+					["h"] = 129.303619384766,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -69,10 +69,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -415.994747823962,
+					["y"] = -415.994740270861,
 					["x"] = 762.194442275391,
 					["w"] = 184.119293212891,
-					["h"] = 129.303604125977,
+					["h"] = 129.303619384766,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -130,7 +130,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1507661652,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "14",
+	["last_day"] = "23",
 	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -140,9 +140,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = true,
-			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -791,12 +791,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
 					["id"] = 1692,
 				},
-				["156390"] = {
-					"156390", -- [1]
-					"Explosive Shard", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\6bf_explosive_shard", -- [4]
-					["id"] = 1696,
+				["186490"] = {
+					"186490", -- [1]
+					"Chains of Fel", -- [2]
+					33, -- [3]
+					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
+					["id"] = 1800,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -805,12 +805,12 @@ _detalhes_database = {
 					"Interface\\Icons\\inv_shield_38", -- [4]
 					["id"] = 1784,
 				},
-				["186490"] = {
-					"186490", -- [1]
-					"Chains of Fel", -- [2]
-					33, -- [3]
-					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
-					["id"] = 1800,
+				["156390"] = {
+					"156390", -- [1]
+					"Explosive Shard", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\6bf_explosive_shard", -- [4]
+					["id"] = 1696,
 				},
 				["189009"] = {
 					"189009", -- [1]
@@ -875,12 +875,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_vehicle_siegeenginecharge", -- [4]
 					["id"] = 1704,
 				},
-				["180163"] = {
-					"180163", -- [1]
-					"Savage Strikes", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
-					["id"] = 1786,
+				["156240"] = {
+					"156240", -- [1]
+					"Acid Torrent (1)", -- [2]
+					10.7, -- [3]
+					"Interface\\Icons\\6bf_retched_blackrock", -- [4]
+					["id"] = 1696,
 				},
 				["155794"] = {
 					"155794", -- [1]
@@ -1029,12 +1029,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
 					["id"] = 1787,
 				},
-				["156240"] = {
-					"156240", -- [1]
-					"Acid Torrent (1)", -- [2]
-					10.7, -- [3]
-					"Interface\\Icons\\6bf_retched_blackrock", -- [4]
-					["id"] = 1696,
+				["180163"] = {
+					"180163", -- [1]
+					"Savage Strikes", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
+					["id"] = 1786,
 				},
 				["185237"] = {
 					"185237", -- [1]
@@ -1125,10 +1125,10 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
 			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -1148,7 +1148,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
@@ -1801,7 +1801,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -1810,7 +1810,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -1826,14 +1826,24 @@ _detalhes_database = {
 			["pre_pot_healers"] = false,
 		},
 	},
+	["last_realversion"] = 130,
 	["last_encounter"] = "Tichondrius",
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1525008428,
-	},
 	["benchmark_db"] = {
 		["frame"] = {
 		},
+	},
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1531041454,
+	},
+	["last_version"] = "v7.3.5.5572",
+	["combat_id"] = 233,
+	["savedStyles"] = {
+	},
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "The Arcway",
@@ -1846,16 +1856,6 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1516,
 		["previous_boss_killed_at"] = 1507663200,
 	},
-	["last_version"] = "v7.3.5.5559",
-	["combat_id"] = 233,
-	["savedStyles"] = {
-	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["last_realversion"] = 130,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -1863,8 +1863,8 @@ _detalhes_database = {
 		["where"] = 1,
 	},
 	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 1692,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["cached_talents"] = {
 		["Player-1303-06FB0BB8"] = {
@@ -1894,6 +1894,5 @@ _detalhes_database = {
 	},
 	["cached_specs"] = {
 		["Player-1303-06FB0BB8"] = 254,
-		["Player-1303-05959AA8"] = 259,
 	},
 }
