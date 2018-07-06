@@ -23,21 +23,21 @@ DeathNoteDB = {
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",
 		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
-		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
 		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
 		["Krixi - Grim Batol"] = "Krixi",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Krixidh - Valley of Heroes - EU"] = "Krixidh - Valley of Heroes - EU",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Daroislost - Valley of Heroes - EU"] = "Daroislost - Valley of Heroes - EU",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
@@ -58,9 +58,9 @@ DeathNoteDB = {
 					59.9999885559082, -- [3]
 					120.44441986084, -- [4]
 				},
-				["x"] = 78.8881530761719,
-				["w"] = 860.889465332031,
 				["h"] = 515.110961914063,
+				["w"] = 860.889465332031,
+				["x"] = 78.8881530761719,
 			},
 		},
 		["Zolution - Grim Batol"] = {
@@ -108,9 +108,9 @@ DeathNoteDB = {
 			["display"] = {
 				["y"] = -2.57032775878906,
 				["x"] = 137.938262939453,
-				["namelist"] = 2,
-				["w"] = 700.000183105469,
 				["h"] = 500.000030517578,
+				["w"] = 700.000183105469,
+				["namelist"] = 2,
 			},
 		},
 		["Donch - Grim Batol"] = {
@@ -127,28 +127,28 @@ DeathNoteDB = {
 		},
 		["Donch - Shattered Hand"] = {
 		},
-		["Zuriz - Grim Batol"] = {
-			["death_time"] = 15,
-			["max_deaths"] = 25,
+		["Krixi"] = {
 			["display"] = {
-				["y"] = 85.3334197998047,
+				["columns"] = {
+					59.9999885559082, -- [1]
+					97.999984741211, -- [2]
+					59.9999885559082, -- [3]
+				},
+				["w"] = 938.222534179688,
+				["y"] = -8.88893127441406,
+				["h"] = 496.444427490234,
+				["x"] = -64.8888854980469,
 				["namelist"] = 2,
-				["x"] = 461.555419921875,
-				["w"] = 699.999877929688,
-				["h"] = 500.000030517578,
 			},
 			["keep_data"] = false,
 		},
 		["Lowerboost - Lightbringer"] = {
 		},
-		["Kriximonk - Valley of Heroes - EU"] = {
-		},
 		["Donch - Crushridge"] = {
 		},
-		["Gnomalock - Grim Batol"] = {
-			["display"] = {
-				["namelist"] = 2,
-			},
+		["Kriximonk - Valley of Heroes - EU"] = {
+		},
+		["Krixiyo - Lightning's Blade"] = {
 		},
 		["Krixi - Grim Batol"] = {
 			["death_time"] = 15,
@@ -165,40 +165,33 @@ DeathNoteDB = {
 					59.9999885559082, -- [3]
 					100.000061035156, -- [4]
 				},
-				["x"] = 370.105773925781,
-				["w"] = 716.2783203125,
 				["namelist"] = 2,
+				["w"] = 716.2783203125,
+				["x"] = 370.105773925781,
 			},
 			["keep_data"] = false,
 		},
-		["Líttle - Grim Batol"] = {
+		["Kriximonk - Grim Batol"] = {
 			["display"] = {
-				["y"] = 4.577636718750e-005,
-				["x"] = -3.05175781250e-005,
+				["y"] = 42.6669158935547,
+				["x"] = 344.889373779297,
+				["w"] = 700.000061035156,
 				["h"] = 500.000030517578,
-				["w"] = 700.000183105469,
-				["namelist"] = 2,
 			},
 		},
 		["Treefiddy - Aggra (Português)"] = {
 		},
 		["Kroxi - Crushridge"] = {
 		},
-		["Krixikin - Grim Batol"] = {
-			["display"] = {
-				["y"] = 166.889038085938,
-				["x"] = 6.66653442382813,
-				["w"] = 798.666748046875,
-				["h"] = 626.222045898438,
-			},
+		["Krixiyo - Blackmoore"] = {
 		},
 		["Zetiz - Grim Batol"] = {
 			["display"] = {
-				["w"] = 835.368286132813,
 				["y"] = 7.02818965911865,
 				["h"] = 911.244812011719,
-				["x"] = -47.1218566894531,
 				["namelist"] = 2,
+				["w"] = 835.368286132813,
+				["x"] = -47.1218566894531,
 			},
 		},
 		["Nyrith - Grim Batol"] = {
@@ -211,41 +204,48 @@ DeathNoteDB = {
 					59.9999885559082, -- [3]
 					100.000061035156, -- [4]
 				},
-				["x"] = 211.777404785156,
-				["w"] = 700.000122070313,
 				["h"] = 500.000030517578,
+				["w"] = 700.000122070313,
+				["x"] = 211.777404785156,
 			},
 		},
 		["Spacegoatx - Aggra (Português)"] = {
 		},
 		["Krixidh - Valley of Heroes - EU"] = {
 		},
-		["Krixiyo - Blackmoore"] = {
-		},
-		["Kriximonk - Grim Batol"] = {
+		["Krixikin - Grim Batol"] = {
 			["display"] = {
-				["y"] = 42.6669158935547,
-				["x"] = 344.889373779297,
-				["w"] = 700.000061035156,
+				["y"] = 166.889038085938,
+				["x"] = 6.66653442382813,
+				["w"] = 798.666748046875,
+				["h"] = 626.222045898438,
+			},
+		},
+		["Líttle - Grim Batol"] = {
+			["display"] = {
+				["y"] = 4.577636718750e-005,
+				["x"] = -3.05175781250e-005,
+				["namelist"] = 2,
+				["w"] = 700.000183105469,
 				["h"] = 500.000030517578,
 			},
 		},
-		["Krixiyo - Lightning's Blade"] = {
+		["Gnomalock - Grim Batol"] = {
+			["display"] = {
+				["namelist"] = 2,
+			},
 		},
 		["Daroislost - Valley of Heroes - EU"] = {
 		},
-		["Krixi"] = {
+		["Zuriz - Grim Batol"] = {
+			["death_time"] = 15,
+			["max_deaths"] = 25,
 			["display"] = {
-				["y"] = -8.88893127441406,
-				["x"] = -64.8888854980469,
-				["columns"] = {
-					59.9999885559082, -- [1]
-					97.999984741211, -- [2]
-					59.9999885559082, -- [3]
-				},
-				["h"] = 496.444427490234,
-				["w"] = 938.222534179688,
+				["y"] = 85.3334197998047,
 				["namelist"] = 2,
+				["h"] = 500.000030517578,
+				["w"] = 699.999877929688,
+				["x"] = 461.555419921875,
 			},
 			["keep_data"] = false,
 		},

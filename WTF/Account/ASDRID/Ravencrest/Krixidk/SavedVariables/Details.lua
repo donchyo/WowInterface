@@ -7,8 +7,8 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 169,
 					["tipo"] = 2,
+					["combatId"] = 169,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -23,34 +23,27 @@ _detalhes_database = {
 								["Taintheart Summoner"] = 69247426,
 								["Deadeye Decoy <Taintheart Deadeye>"] = 7710077,
 								["Shade of Xavius"] = 252423542,
-								["Taintheart Stalker"] = 50160657,
-								["Dreadfire Imp"] = 85993588,
-								["Tormented Bloodseeker"] = 114594953,
 								["Taintheart Deadeye"] = 23315415,
+								["Taintheart Stalker"] = 50160657,
+								["Tormented Bloodseeker"] = 114594953,
+								["Dreadfire Imp"] = 85993588,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = {
-									["spells"] = {
-										[201657] = 701178,
-									},
-									["total"] = 701178,
-								},
-							},
+							["custom"] = 0,
+							["damage_taken"] = 42183132.043981,
 							["friendlyfire_total"] = 701178,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 603445658.043981,
-							["colocacao"] = 1,
-							["last_event"] = 0,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 603445658.043981,
-							["classe"] = "DEATHKNIGHT",
-							["end_time"] = 1530810691,
+							["last_dps"] = 2854426.09773468,
+							["tipo"] = 1,
 							["nome"] = "Krixidk",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 58,
@@ -61,10 +54,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 2250840,
 											["Shade of Xavius"] = 7107906,
-											["Tormented Bloodseeker"] = 1136485,
-											["Taintheart Stalker"] = 1196642,
-											["Dreadfire Imp"] = 130020,
 											["Taintheart Deadeye"] = 694427,
+											["Tormented Bloodseeker"] = 1136485,
+											["Dreadfire Imp"] = 130020,
+											["Taintheart Stalker"] = 1196642,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 6684370,
@@ -75,16 +68,16 @@ _detalhes_database = {
 										["c_max"] = 163626,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 42,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 140578,
 										["n_amt"] = 126,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["MISS"] = 42,
 									}, -- [1]
 									[207171] = {
 										["c_amt"] = 0,
@@ -104,16 +97,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 207171,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 1,
 									},
 									[66188] = {
 										["c_amt"] = 0,
@@ -133,15 +126,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 66188,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[257244] = {
 										["c_amt"] = 17,
@@ -162,15 +155,15 @@ _detalhes_database = {
 										["c_max"] = 266575,
 										["id"] = 257244,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 56,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[253590] = {
 										["c_amt"] = 10,
@@ -182,8 +175,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 1227599,
 											["Shade of Xavius"] = 10312859,
 											["Dreadfire Imp"] = 865765,
-											["Tormented Bloodseeker"] = 3675669,
 											["Taintheart Stalker"] = 1065384,
+											["Tormented Bloodseeker"] = 3675669,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 10280393,
@@ -194,15 +187,15 @@ _detalhes_database = {
 										["c_max"] = 1344558,
 										["id"] = 253590,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 435959,
 										["n_amt"] = 26,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[196771] = {
 										["c_amt"] = 54,
@@ -214,10 +207,10 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 3457065,
 											["Deadeye Decoy <Taintheart Deadeye>"] = 398373,
 											["Shade of Xavius"] = 5299880,
-											["Dreadfire Imp"] = 5899636,
-											["Tormented Bloodseeker"] = 6513602,
-											["Taintheart Stalker"] = 2235466,
 											["Taintheart Deadeye"] = 687188,
+											["Dreadfire Imp"] = 5899636,
+											["Taintheart Stalker"] = 2235466,
+											["Tormented Bloodseeker"] = 6513602,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 13217372,
@@ -228,15 +221,15 @@ _detalhes_database = {
 										["c_max"] = 412706,
 										["id"] = 196771,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 118,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[204959] = {
 										["c_amt"] = 2,
@@ -248,8 +241,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 1905594,
 											["Shade of Xavius"] = 479048,
 											["Tormented Bloodseeker"] = 2861284,
-											["Taintheart Deadeye"] = 610852,
 											["Dreadfire Imp"] = 2254829,
+											["Taintheart Deadeye"] = 610852,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 6342202,
@@ -260,15 +253,15 @@ _detalhes_database = {
 										["c_max"] = 906067,
 										["id"] = 204959,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 16,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[66198] = {
 										["c_amt"] = 24,
@@ -279,8 +272,8 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 290877,
 											["Tormented Bloodseeker"] = 1009970,
-											["Taintheart Deadeye"] = 398138,
 											["Shade of Xavius"] = 24301947,
+											["Taintheart Deadeye"] = 398138,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 4389250,
@@ -291,15 +284,15 @@ _detalhes_database = {
 										["c_max"] = 1216688,
 										["id"] = 66198,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 14,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[207230] = {
 										["c_amt"] = 57,
@@ -312,8 +305,8 @@ _detalhes_database = {
 											["Deadeye Decoy <Taintheart Deadeye>"] = 1838450,
 											["Taintheart Deadeye"] = 324225,
 											["Tormented Bloodseeker"] = 45679413,
-											["Dreadfire Imp"] = 44600906,
 											["Taintheart Stalker"] = 15767703,
+											["Dreadfire Imp"] = 44600906,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 14761172,
@@ -324,15 +317,15 @@ _detalhes_database = {
 										["c_max"] = 2549763,
 										["id"] = 207230,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 42,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[50401] = {
 										["c_amt"] = 85,
@@ -344,10 +337,10 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 2219120,
 											["Deadeye Decoy <Taintheart Deadeye>"] = 35224,
 											["Shade of Xavius"] = 7663702,
-											["Taintheart Stalker"] = 1269997,
-											["Dreadfire Imp"] = 1806058,
-											["Tormented Bloodseeker"] = 2124262,
 											["Taintheart Deadeye"] = 514499,
+											["Taintheart Stalker"] = 1269997,
+											["Tormented Bloodseeker"] = 2124262,
+											["Dreadfire Imp"] = 1806058,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 8945360,
@@ -358,15 +351,15 @@ _detalhes_database = {
 										["c_max"] = 128687,
 										["id"] = 50401,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 227,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[228322] = {
 										["c_amt"] = 1,
@@ -388,47 +381,44 @@ _detalhes_database = {
 										["c_max"] = 1715061,
 										["id"] = 228322,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[237680] = {
-										["c_amt"] = 12,
+									[49998] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 17674215,
+										["c_dmg"] = 362345,
 										["g_amt"] = 0,
-										["n_max"] = 1386234,
+										["n_max"] = 267528,
 										["targets"] = {
-											["Taintheart Summoner"] = 1731330,
-											["Taintheart Deadeye"] = 3616263,
-											["Taintheart Stalker"] = 3977900,
-											["Tormented Bloodseeker"] = 18884226,
-											["Dreadfire Imp"] = 7493406,
+											["Shade of Xavius"] = 995519,
+											["Taintheart Stalker"] = 231430,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 18028910,
+										["n_dmg"] = 864604,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 31,
-										["total"] = 35703125,
-										["c_max"] = 2700143,
-										["id"] = 237680,
+										["counter"] = 5,
+										["total"] = 1226949,
+										["c_max"] = 362345,
+										["id"] = 49998,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 19,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[190780] = {
 										["c_amt"] = 1,
@@ -437,10 +427,10 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3886039,
 										["targets"] = {
-											["Taintheart Stalker"] = 8704726,
-											["Tormented Bloodseeker"] = 3886038,
-											["Deadeye Decoy <Taintheart Deadeye>"] = 3886038,
 											["Dreadfire Imp"] = 3886039,
+											["Taintheart Stalker"] = 8704726,
+											["Deadeye Decoy <Taintheart Deadeye>"] = 3886038,
+											["Tormented Bloodseeker"] = 3886038,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 11658115,
@@ -451,15 +441,15 @@ _detalhes_database = {
 										["c_max"] = 8704726,
 										["id"] = 190780,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[222026] = {
 										["c_amt"] = 14,
@@ -471,8 +461,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 6155532,
 											["Shade of Xavius"] = 24742489,
 											["Taintheart Stalker"] = 2592816,
-											["Taintheart Deadeye"] = 4398692,
 											["Tormented Bloodseeker"] = 4332423,
+											["Taintheart Deadeye"] = 4398692,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 23643752,
@@ -483,15 +473,15 @@ _detalhes_database = {
 										["c_max"] = 2021653,
 										["id"] = 222026,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 36,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[207150] = {
 										["c_amt"] = 28,
@@ -503,10 +493,10 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 3813775,
 											["Deadeye Decoy <Taintheart Deadeye>"] = 241740,
 											["Shade of Xavius"] = 5424194,
-											["Dreadfire Imp"] = 5517814,
-											["Tormented Bloodseeker"] = 1644088,
-											["Taintheart Stalker"] = 3985111,
 											["Taintheart Deadeye"] = 1355092,
+											["Dreadfire Imp"] = 5517814,
+											["Taintheart Stalker"] = 3985111,
+											["Tormented Bloodseeker"] = 1644088,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 13959697,
@@ -517,15 +507,15 @@ _detalhes_database = {
 										["c_max"] = 433917,
 										["id"] = 207150,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 95,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[252879] = {
 										["c_amt"] = 5,
@@ -537,8 +527,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 474304,
 											["Shade of Xavius"] = 2920112,
 											["Dreadfire Imp"] = 711455,
-											["Tormented Bloodseeker"] = 474303,
 											["Taintheart Stalker"] = 474304,
+											["Tormented Bloodseeker"] = 474303,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 2645813,
@@ -549,46 +539,47 @@ _detalhes_database = {
 										["c_max"] = 486686,
 										["id"] = 252879,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[222024] = {
-										["c_amt"] = 27,
+									[66196] = {
+										["c_amt"] = 14,
 										["b_amt"] = 0,
-										["c_dmg"] = 32584599,
+										["c_dmg"] = 14089883,
 										["g_amt"] = 0,
-										["n_max"] = 582310,
+										["n_max"] = 783292,
 										["targets"] = {
-											["Taintheart Summoner"] = 1057187,
-											["Tormented Bloodseeker"] = 1339858,
-											["Taintheart Deadeye"] = 1372717,
-											["Shade of Xavius"] = 33411304,
+											["Taintheart Summoner"] = 5145395,
+											["Shade of Xavius"] = 20032047,
+											["Taintheart Stalker"] = 1945724,
+											["Tormented Bloodseeker"] = 1702639,
+											["Taintheart Deadeye"] = 2780785,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 4596467,
+										["n_dmg"] = 17516707,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 38,
-										["total"] = 37181066,
-										["c_max"] = 1525802,
-										["id"] = 222024,
+										["counter"] = 48,
+										["total"] = 31606590,
+										["c_max"] = 1509672,
+										["id"] = 66196,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 34,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[243122] = {
 										["c_amt"] = 20,
@@ -599,10 +590,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 2402156,
 											["Shade of Xavius"] = 19957630,
-											["Dreadfire Imp"] = 7949862,
-											["Tormented Bloodseeker"] = 2645736,
-											["Taintheart Stalker"] = 439037,
 											["Taintheart Deadeye"] = 1214753,
+											["Dreadfire Imp"] = 7949862,
+											["Taintheart Stalker"] = 439037,
+											["Tormented Bloodseeker"] = 2645736,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 17713576,
@@ -613,15 +604,15 @@ _detalhes_database = {
 										["c_max"] = 1375687,
 										["id"] = 243122,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 44,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[55095] = {
 										["c_amt"] = 39,
@@ -632,10 +623,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 3306647,
 											["Shade of Xavius"] = 8146060,
-											["Dreadfire Imp"] = 3814871,
-											["Taintheart Stalker"] = 3420277,
-											["Tormented Bloodseeker"] = 5035131,
 											["Taintheart Deadeye"] = 1343841,
+											["Dreadfire Imp"] = 3814871,
+											["Tormented Bloodseeker"] = 5035131,
+											["Taintheart Stalker"] = 3420277,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 11607428,
@@ -646,15 +637,15 @@ _detalhes_database = {
 										["c_max"] = 605302,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 68,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[49184] = {
 										["c_amt"] = 9,
@@ -667,8 +658,8 @@ _detalhes_database = {
 											["Deadeye Decoy <Taintheart Deadeye>"] = 1310252,
 											["Shade of Xavius"] = 32257375,
 											["Taintheart Stalker"] = 407303,
-											["Tormented Bloodseeker"] = 8064324,
 											["Taintheart Deadeye"] = 3197512,
+											["Tormented Bloodseeker"] = 8064324,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 23789461,
@@ -679,48 +670,48 @@ _detalhes_database = {
 										["c_max"] = 5429561,
 										["id"] = 49184,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 20,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[205165] = {
-										["c_amt"] = 1,
+									[205164] = {
+										["c_amt"] = 7,
 										["b_amt"] = 0,
-										["c_dmg"] = 662698,
+										["c_dmg"] = 4886711,
 										["g_amt"] = 0,
-										["n_max"] = 550274,
+										["n_max"] = 550275,
 										["targets"] = {
-											["Taintheart Summoner"] = 1033065,
-											["Shade of Xavius"] = 4605556,
-											["Tormented Bloodseeker"] = 571144,
-											["Dreadfire Imp"] = 351229,
-											["Taintheart Stalker"] = 181936,
-											["Taintheart Deadeye"] = 308356,
+											["Taintheart Summoner"] = 1714900,
+											["Shade of Xavius"] = 5695960,
+											["Taintheart Deadeye"] = 308355,
+											["Tormented Bloodseeker"] = 910911,
+											["Taintheart Stalker"] = 181935,
+											["Dreadfire Imp"] = 351230,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 6388588,
+										["n_dmg"] = 4276580,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 20,
-										["total"] = 7051286,
-										["c_max"] = 662698,
-										["id"] = 205165,
+										["total"] = 9163291,
+										["c_max"] = 1041384,
+										["id"] = 205164,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 19,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 13,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[248406] = {
 										["c_amt"] = 0,
@@ -740,16 +731,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 248406,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 2,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 2,
 									},
 									[252907] = {
 										["c_amt"] = 18,
@@ -759,10 +750,10 @@ _detalhes_database = {
 										["n_max"] = 58402,
 										["targets"] = {
 											["Shade of Xavius"] = 1783112,
-											["Taintheart Deadeye"] = 189720,
+											["Tormented Bloodseeker"] = 151780,
 											["Taintheart Stalker"] = 326816,
 											["Dreadfire Imp"] = 360468,
-											["Tormented Bloodseeker"] = 151780,
+											["Taintheart Deadeye"] = 189720,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 1814534,
@@ -773,48 +764,48 @@ _detalhes_database = {
 										["c_max"] = 116804,
 										["id"] = 252907,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 66,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[205164] = {
-										["c_amt"] = 7,
+									[205165] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 4886711,
+										["c_dmg"] = 662698,
 										["g_amt"] = 0,
-										["n_max"] = 550275,
+										["n_max"] = 550274,
 										["targets"] = {
-											["Taintheart Summoner"] = 1714900,
-											["Shade of Xavius"] = 5695960,
-											["Tormented Bloodseeker"] = 910911,
-											["Dreadfire Imp"] = 351230,
-											["Taintheart Stalker"] = 181935,
-											["Taintheart Deadeye"] = 308355,
+											["Taintheart Summoner"] = 1033065,
+											["Shade of Xavius"] = 4605556,
+											["Taintheart Deadeye"] = 308356,
+											["Tormented Bloodseeker"] = 571144,
+											["Taintheart Stalker"] = 181936,
+											["Dreadfire Imp"] = 351229,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 4276580,
+										["n_dmg"] = 6388588,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 20,
-										["total"] = 9163291,
-										["c_max"] = 1041384,
-										["id"] = 205164,
+										["total"] = 7051286,
+										["c_max"] = 662698,
+										["id"] = 205165,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 19,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[253597] = {
 										["c_amt"] = 5,
@@ -823,8 +814,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 458563,
 										["targets"] = {
-											["Tormented Bloodseeker"] = 252830,
 											["Shade of Xavius"] = 5934129,
+											["Tormented Bloodseeker"] = 252830,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 2322670,
@@ -835,47 +826,46 @@ _detalhes_database = {
 										["c_max"] = 917125,
 										["id"] = 253597,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[66196] = {
-										["c_amt"] = 14,
+									[222024] = {
+										["c_amt"] = 27,
 										["b_amt"] = 0,
-										["c_dmg"] = 14089883,
+										["c_dmg"] = 32584599,
 										["g_amt"] = 0,
-										["n_max"] = 783292,
+										["n_max"] = 582310,
 										["targets"] = {
-											["Taintheart Summoner"] = 5145395,
-											["Shade of Xavius"] = 20032047,
-											["Taintheart Stalker"] = 1945724,
-											["Taintheart Deadeye"] = 2780785,
-											["Tormented Bloodseeker"] = 1702639,
+											["Taintheart Summoner"] = 1057187,
+											["Tormented Bloodseeker"] = 1339858,
+											["Shade of Xavius"] = 33411304,
+											["Taintheart Deadeye"] = 1372717,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 17516707,
+										["n_dmg"] = 4596467,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 48,
-										["total"] = 31606590,
-										["c_max"] = 1509672,
-										["id"] = 66196,
+										["counter"] = 38,
+										["total"] = 37181066,
+										["c_max"] = 1525802,
+										["id"] = 222024,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 34,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 11,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[248397] = {
 										["c_amt"] = 0,
@@ -895,57 +885,67 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 248397,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[49998] = {
-										["c_amt"] = 1,
+									[237680] = {
+										["c_amt"] = 12,
 										["b_amt"] = 0,
-										["c_dmg"] = 362345,
+										["c_dmg"] = 17674215,
 										["g_amt"] = 0,
-										["n_max"] = 267528,
+										["n_max"] = 1386234,
 										["targets"] = {
-											["Taintheart Stalker"] = 231430,
-											["Shade of Xavius"] = 995519,
+											["Taintheart Summoner"] = 1731330,
+											["Taintheart Deadeye"] = 3616263,
+											["Taintheart Stalker"] = 3977900,
+											["Dreadfire Imp"] = 7493406,
+											["Tormented Bloodseeker"] = 18884226,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 864604,
+										["n_dmg"] = 18028910,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 1226949,
-										["c_max"] = 362345,
-										["id"] = 49998,
+										["counter"] = 31,
+										["total"] = 35703125,
+										["c_max"] = 2700143,
+										["id"] = 237680,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 19,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1530810691,
+							["spec"] = 251,
+							["colocacao"] = 1,
+							["last_event"] = 0,
+							["friendlyfire"] = {
+								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = {
+									["total"] = 701178,
+									["spells"] = {
+										[201657] = 701178,
 									},
 								},
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["spec"] = 251,
-							["serial"] = "Player-1329-064AEDEB",
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 2854426.09773468,
 							["start_time"] = 1530810480,
-							["delay"] = 0,
-							["damage_taken"] = 42183132.043981,
+							["serial"] = "Player-1329-064AEDEB",
+							["classe"] = "DEATHKNIGHT",
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -959,34 +959,27 @@ _detalhes_database = {
 								["Taintheart Summoner"] = 49721138,
 								["Deadeye Decoy <Taintheart Deadeye>"] = 500883,
 								["Shade of Xavius"] = 251463974,
-								["Dreadfire Imp"] = 50315849,
-								["Tormented Bloodseeker"] = 118652965,
-								["Taintheart Stalker"] = 22116724,
 								["Taintheart Deadeye"] = 11226665,
+								["Dreadfire Imp"] = 50315849,
+								["Taintheart Stalker"] = 22116724,
+								["Tormented Bloodseeker"] = 118652965,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = {
-									["spells"] = {
-										[201657] = 65249,
-									},
-									["total"] = 65249,
-								},
-							},
+							["custom"] = 0,
+							["damage_taken"] = 18111949.045189,
 							["friendlyfire_total"] = 65249,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 503998198.045189,
-							["colocacao"] = 2,
-							["last_event"] = 0,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 503998198.045189,
-							["classe"] = "DEMONHUNTER",
-							["end_time"] = 1530810691,
+							["last_dps"] = 2384018.49534327,
+							["tipo"] = 1,
 							["nome"] = "Imakitteh-Kazzak",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 89,
@@ -997,10 +990,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 1066710,
 											["Shade of Xavius"] = 6949978,
-											["Tormented Bloodseeker"] = 1690378,
-											["Dreadfire Imp"] = 1130423,
-											["Taintheart Stalker"] = 107647,
 											["Taintheart Deadeye"] = 256497,
+											["Tormented Bloodseeker"] = 1690378,
+											["Taintheart Stalker"] = 107647,
+											["Dreadfire Imp"] = 1130423,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 3378022,
@@ -1011,16 +1004,16 @@ _detalhes_database = {
 										["c_max"] = 174760,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 31,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 41119,
 										["n_amt"] = 74,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["MISS"] = 31,
 									}, -- [1]
 									[198030] = {
 										["c_amt"] = 405,
@@ -1031,10 +1024,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 11959423,
 											["Shade of Xavius"] = 22860184,
-											["Taintheart Stalker"] = 10302811,
-											["Dreadfire Imp"] = 12379607,
-											["Tormented Bloodseeker"] = 38499314,
 											["Taintheart Deadeye"] = 1561961,
+											["Taintheart Stalker"] = 10302811,
+											["Tormented Bloodseeker"] = 38499314,
+											["Dreadfire Imp"] = 12379607,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
@@ -1045,15 +1038,15 @@ _detalhes_database = {
 										["c_max"] = 414617,
 										["id"] = 198030,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[201789] = {
 										["c_amt"] = 21,
@@ -1062,8 +1055,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 81640,
 										["targets"] = {
-											["Tormented Bloodseeker"] = 2596111,
 											["Shade of Xavius"] = 1626661,
+											["Tormented Bloodseeker"] = 2596111,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 1195336,
@@ -1074,15 +1067,15 @@ _detalhes_database = {
 										["c_max"] = 172848,
 										["id"] = 201789,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 112989,
 										["n_amt"] = 17,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[255609] = {
 										["c_amt"] = 6,
@@ -1102,15 +1095,15 @@ _detalhes_database = {
 										["c_max"] = 837864,
 										["id"] = 255609,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[200166] = {
 										["c_amt"] = 1,
@@ -1130,15 +1123,15 @@ _detalhes_database = {
 										["c_max"] = 846890,
 										["id"] = 200166,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[253324] = {
 										["c_amt"] = 5,
@@ -1158,15 +1151,15 @@ _detalhes_database = {
 										["c_max"] = 1563418,
 										["id"] = 253324,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[199547] = {
 										["c_amt"] = 18,
@@ -1178,8 +1171,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 2517305,
 											["Shade of Xavius"] = 15095575,
 											["Taintheart Stalker"] = 1093278,
-											["Dreadfire Imp"] = 1905528,
 											["Tormented Bloodseeker"] = 2686736,
+											["Dreadfire Imp"] = 1905528,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 5938650,
@@ -1190,15 +1183,15 @@ _detalhes_database = {
 										["c_max"] = 1170488,
 										["id"] = 199547,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 17,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[201628] = {
 										["c_amt"] = 24,
@@ -1207,8 +1200,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 173431,
 										["targets"] = {
-											["Tormented Bloodseeker"] = 5652102,
 											["Shade of Xavius"] = 3321761,
+											["Tormented Bloodseeker"] = 5652102,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 2078836,
@@ -1219,15 +1212,15 @@ _detalhes_database = {
 										["c_max"] = 340511,
 										["id"] = 201628,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 14,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[217070] = {
 										["c_amt"] = 0,
@@ -1236,8 +1229,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 1722708,
 										["targets"] = {
-											["Tormented Bloodseeker"] = 4948928,
 											["Shade of Xavius"] = 3280641,
+											["Tormented Bloodseeker"] = 4948928,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 8229569,
@@ -1248,15 +1241,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 217070,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[202446] = {
 										["c_amt"] = 15,
@@ -1268,8 +1261,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 3699638,
 											["Shade of Xavius"] = 6580820,
 											["Taintheart Stalker"] = 3281420,
-											["Dreadfire Imp"] = 4471739,
 											["Tormented Bloodseeker"] = 9524606,
+											["Dreadfire Imp"] = 4471739,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 9130108,
@@ -1280,15 +1273,15 @@ _detalhes_database = {
 										["c_max"] = 1987573,
 										["id"] = 202446,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[162243] = {
 										["c_amt"] = 13,
@@ -1311,47 +1304,47 @@ _detalhes_database = {
 										["c_max"] = 711508,
 										["id"] = 162243,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 26,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[227518] = {
-										["c_amt"] = 43,
-										["b_amt"] = 1,
-										["c_dmg"] = 74111624,
+									[202388] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 9842347,
 										["g_amt"] = 0,
-										["n_max"] = 904312,
+										["n_max"] = 1376197,
 										["targets"] = {
-											["Taintheart Summoner"] = 7773509,
-											["Shade of Xavius"] = 61471352,
-											["Dreadfire Imp"] = 6550985,
-											["Taintheart Deadeye"] = 3741295,
-											["Tormented Bloodseeker"] = 19136135,
+											["Taintheart Summoner"] = 1436889,
+											["Shade of Xavius"] = 6017769,
+											["Tormented Bloodseeker"] = 653131,
+											["Dreadfire Imp"] = 4441292,
+											["Taintheart Stalker"] = 2220647,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 24561652,
+										["n_dmg"] = 4927381,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 82,
-										["total"] = 98673276,
-										["c_max"] = 2457672,
-										["id"] = 227518,
+										["counter"] = 12,
+										["total"] = 14769728,
+										["c_max"] = 2129700,
+										["id"] = 202388,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 485061,
-										["n_amt"] = 39,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[179057] = {
 										["c_amt"] = 10,
@@ -1363,8 +1356,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 502416,
 											["Deadeye Decoy <Taintheart Deadeye>"] = 251209,
 											["Dreadfire Imp"] = 753625,
-											["Tormented Bloodseeker"] = 1306283,
 											["Taintheart Stalker"] = 125605,
+											["Tormented Bloodseeker"] = 1306283,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 276330,
@@ -1375,15 +1368,111 @@ _detalhes_database = {
 										["c_max"] = 301450,
 										["id"] = 179057,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[192611] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 4183722,
+										["g_amt"] = 0,
+										["n_max"] = 385330,
+										["targets"] = {
+											["Shade of Xavius"] = 1586625,
+											["Dreadfire Imp"] = 1417998,
+											["Taintheart Stalker"] = 590833,
+											["Tormented Bloodseeker"] = 709000,
+											["Taintheart Deadeye"] = 973596,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1094330,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 5278052,
+										["c_max"] = 973596,
+										["id"] = 192611,
+										["r_dmg"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[227518] = {
+										["c_amt"] = 43,
+										["b_amt"] = 1,
+										["c_dmg"] = 74111624,
+										["g_amt"] = 0,
+										["n_max"] = 904312,
+										["targets"] = {
+											["Taintheart Summoner"] = 7773509,
+											["Shade of Xavius"] = 61471352,
+											["Dreadfire Imp"] = 6550985,
+											["Tormented Bloodseeker"] = 19136135,
+											["Taintheart Deadeye"] = 3741295,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 24561652,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 82,
+										["total"] = 98673276,
+										["c_max"] = 2457672,
+										["id"] = 227518,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 485061,
+										["n_amt"] = 39,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[257286] = {
+										["c_amt"] = 55,
+										["b_amt"] = 0,
+										["c_dmg"] = 9644049,
+										["g_amt"] = 0,
+										["n_max"] = 200985,
+										["targets"] = {
+											["Taintheart Summoner"] = 3645811,
+											["Shade of Xavius"] = 7408037,
+											["Tormented Bloodseeker"] = 2543753,
+											["Dreadfire Imp"] = 1260856,
+											["Taintheart Stalker"] = 460556,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 5674964,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 109,
+										["total"] = 15319013,
+										["c_max"] = 402749,
+										["id"] = 257286,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 54,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[236237] = {
 										["c_amt"] = 0,
@@ -1395,10 +1484,10 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 4821220,
 											["Deadeye Decoy <Taintheart Deadeye>"] = 249674,
 											["Shade of Xavius"] = 14427755,
-											["Taintheart Stalker"] = 2252720,
-											["Tormented Bloodseeker"] = 9101835,
-											["Dreadfire Imp"] = 7271687,
 											["Taintheart Deadeye"] = 1301210,
+											["Taintheart Stalker"] = 2252720,
+											["Dreadfire Imp"] = 7271687,
+											["Tormented Bloodseeker"] = 9101835,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 39426101,
@@ -1409,47 +1498,47 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 236237,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 433,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[222031] = {
-										["c_amt"] = 20,
-										["b_amt"] = 0,
-										["c_dmg"] = 23305329,
+									[201428] = {
+										["c_amt"] = 42,
+										["b_amt"] = 1,
+										["c_dmg"] = 57798650,
 										["g_amt"] = 0,
-										["n_max"] = 532783,
+										["n_max"] = 709960,
 										["targets"] = {
-											["Taintheart Summoner"] = 3597852,
-											["Shade of Xavius"] = 18449748,
-											["Taintheart Stalker"] = 1408329,
-											["Dreadfire Imp"] = 2807774,
-											["Tormented Bloodseeker"] = 5075004,
+											["Taintheart Summoner"] = 6158746,
+											["Shade of Xavius"] = 48946500,
+											["Dreadfire Imp"] = 5447549,
+											["Tormented Bloodseeker"] = 13411904,
+											["Taintheart Deadeye"] = 3392106,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 8033378,
+										["n_dmg"] = 19558155,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 38,
-										["total"] = 31338707,
-										["c_max"] = 1458120,
-										["id"] = 222031,
+										["counter"] = 81,
+										["total"] = 77356805,
+										["c_max"] = 1926566,
+										["id"] = 201428,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 18,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["b_dmg"] = 248508,
+										["n_amt"] = 39,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[252907] = {
 										["c_amt"] = 44,
@@ -1472,156 +1561,67 @@ _detalhes_database = {
 										["c_max"] = 126800,
 										["id"] = 252907,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 45,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
-									[257286] = {
-										["c_amt"] = 55,
+									[222031] = {
+										["c_amt"] = 20,
 										["b_amt"] = 0,
-										["c_dmg"] = 9644049,
+										["c_dmg"] = 23305329,
 										["g_amt"] = 0,
-										["n_max"] = 200985,
+										["n_max"] = 532783,
 										["targets"] = {
-											["Taintheart Summoner"] = 3645811,
-											["Shade of Xavius"] = 7408037,
-											["Tormented Bloodseeker"] = 2543753,
-											["Taintheart Stalker"] = 460556,
-											["Dreadfire Imp"] = 1260856,
+											["Taintheart Summoner"] = 3597852,
+											["Shade of Xavius"] = 18449748,
+											["Taintheart Stalker"] = 1408329,
+											["Tormented Bloodseeker"] = 5075004,
+											["Dreadfire Imp"] = 2807774,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 5674964,
+										["n_dmg"] = 8033378,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 109,
-										["total"] = 15319013,
-										["c_max"] = 402749,
-										["id"] = 257286,
+										["counter"] = 38,
+										["total"] = 31338707,
+										["c_max"] = 1458120,
+										["id"] = 222031,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 54,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[201428] = {
-										["c_amt"] = 42,
-										["b_amt"] = 1,
-										["c_dmg"] = 57798650,
-										["g_amt"] = 0,
-										["n_max"] = 709960,
-										["targets"] = {
-											["Taintheart Summoner"] = 6158746,
-											["Shade of Xavius"] = 48946500,
-											["Dreadfire Imp"] = 5447549,
-											["Taintheart Deadeye"] = 3392106,
-											["Tormented Bloodseeker"] = 13411904,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19558155,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 81,
-										["total"] = 77356805,
-										["c_max"] = 1926566,
-										["id"] = 201428,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["n_amt"] = 18,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 248508,
-										["n_amt"] = 39,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[192611] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 4183722,
-										["g_amt"] = 0,
-										["n_max"] = 385330,
-										["targets"] = {
-											["Shade of Xavius"] = 1586625,
-											["Taintheart Deadeye"] = 973596,
-											["Taintheart Stalker"] = 590833,
-											["Tormented Bloodseeker"] = 709000,
-											["Dreadfire Imp"] = 1417998,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1094330,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 5278052,
-										["c_max"] = 973596,
-										["id"] = 192611,
-										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
-									[202388] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 9842347,
-										["g_amt"] = 0,
-										["n_max"] = 1376197,
-										["targets"] = {
-											["Taintheart Summoner"] = 1436889,
-											["Shade of Xavius"] = 6017769,
-											["Tormented Bloodseeker"] = 653131,
-											["Taintheart Stalker"] = 2220647,
-											["Dreadfire Imp"] = 4441292,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4927381,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 14769728,
-										["c_max"] = 2129700,
-										["id"] = 202388,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1530810691,
+							["spec"] = 577,
+							["colocacao"] = 2,
+							["last_event"] = 0,
+							["friendlyfire"] = {
+								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = {
+									["total"] = 65249,
+									["spells"] = {
+										[201657] = 65249,
 									},
 								},
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["spec"] = 577,
-							["serial"] = "Player-1305-09C49A7E",
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 2384018.49534327,
 							["start_time"] = 1530810474,
-							["delay"] = 0,
-							["damage_taken"] = 18111949.045189,
+							["serial"] = "Player-1305-09C49A7E",
+							["classe"] = "DEMONHUNTER",
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -1631,35 +1631,34 @@ _detalhes_database = {
 								["Deadeye Decoy <Taintheart Deadeye>"] = true,
 								["Shade of Xavius"] = true,
 								["Taintheart Stalker"] = true,
-								["Dreadfire Imp"] = true,
 								["Taintheart Deadeye"] = true,
+								["Dreadfire Imp"] = true,
 							},
 							["targets"] = {
 								["Taintheart Summoner"] = 43680809,
 								["Deadeye Decoy <Taintheart Deadeye>"] = 1718112,
 								["Shade of Xavius"] = 152060902,
-								["Taintheart Stalker"] = 25235540,
-								["Tormented Bloodseeker"] = 63179671,
-								["Dreadfire Imp"] = 36943433,
 								["Taintheart Deadeye"] = 16697270,
+								["Taintheart Stalker"] = 25235540,
+								["Dreadfire Imp"] = 36943433,
+								["Tormented Bloodseeker"] = 63179671,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["custom"] = 0,
+							["damage_taken"] = 44614639.039932,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 339515737.039932,
-							["colocacao"] = 3,
-							["last_event"] = 0,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 339515737.039932,
-							["classe"] = "DRUID",
-							["end_time"] = 1530810691,
+							["last_dps"] = 1605981.52870921,
+							["tipo"] = 1,
 							["nome"] = "Temporäs",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[164812] = {
 										["c_amt"] = 53,
@@ -1670,10 +1669,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 7299381,
 											["Shade of Xavius"] = 15472296,
-											["Tormented Bloodseeker"] = 15354712,
-											["Taintheart Stalker"] = 2653422,
-											["Dreadfire Imp"] = 6328633,
 											["Taintheart Deadeye"] = 1629123,
+											["Tormented Bloodseeker"] = 15354712,
+											["Dreadfire Imp"] = 6328633,
+											["Taintheart Stalker"] = 2653422,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 31173552,
@@ -1684,15 +1683,15 @@ _detalhes_database = {
 										["c_max"] = 600653,
 										["id"] = 164812,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 173,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[252879] = {
 										["c_amt"] = 3,
@@ -1716,15 +1715,15 @@ _detalhes_database = {
 										["c_max"] = 640505,
 										["id"] = 252879,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[78674] = {
 										["c_amt"] = 11,
@@ -1735,8 +1734,8 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 1804141,
 											["Taintheart Stalker"] = 910620,
-											["Taintheart Deadeye"] = 1702915,
 											["Shade of Xavius"] = 40282034,
+											["Taintheart Deadeye"] = 1702915,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 15748740,
@@ -1747,15 +1746,15 @@ _detalhes_database = {
 										["c_max"] = 4189225,
 										["id"] = 78674,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[202768] = {
 										["c_amt"] = 1,
@@ -1776,15 +1775,15 @@ _detalhes_database = {
 										["c_max"] = 2531708,
 										["id"] = 202768,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[190984] = {
 										["c_amt"] = 12,
@@ -1796,8 +1795,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 1466624,
 											["Shade of Xavius"] = 20708001,
 											["Taintheart Stalker"] = 2304552,
-											["Taintheart Deadeye"] = 2688163,
 											["Tormented Bloodseeker"] = 2368317,
+											["Taintheart Deadeye"] = 2688163,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 13883582,
@@ -1808,15 +1807,15 @@ _detalhes_database = {
 										["c_max"] = 2013924,
 										["id"] = 190984,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 21,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[203001] = {
 										["c_amt"] = 0,
@@ -1837,15 +1836,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 203001,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[194153] = {
 										["c_amt"] = 13,
@@ -1856,10 +1855,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 2524690,
 											["Shade of Xavius"] = 26983872,
-											["Tormented Bloodseeker"] = 1511486,
-											["Taintheart Stalker"] = 728481,
-											["Dreadfire Imp"] = 495504,
 											["Taintheart Deadeye"] = 2171696,
+											["Tormented Bloodseeker"] = 1511486,
+											["Dreadfire Imp"] = 495504,
+											["Taintheart Stalker"] = 728481,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 12976074,
@@ -1870,15 +1869,15 @@ _detalhes_database = {
 										["c_max"] = 3351310,
 										["id"] = 194153,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 16,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[164815] = {
 										["c_amt"] = 66,
@@ -1890,10 +1889,10 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 6792635,
 											["Deadeye Decoy <Taintheart Deadeye>"] = 322916,
 											["Shade of Xavius"] = 13690122,
-											["Tormented Bloodseeker"] = 10959344,
-											["Taintheart Stalker"] = 3345651,
-											["Dreadfire Imp"] = 8328457,
 											["Taintheart Deadeye"] = 1892702,
+											["Tormented Bloodseeker"] = 10959344,
+											["Dreadfire Imp"] = 8328457,
+											["Taintheart Stalker"] = 3345651,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 24692346,
@@ -1904,15 +1903,15 @@ _detalhes_database = {
 										["c_max"] = 566918,
 										["id"] = 164815,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 161,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[202497] = {
 										["c_amt"] = 12,
@@ -1923,10 +1922,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Taintheart Summoner"] = 459687,
 											["Shade of Xavius"] = 1579911,
-											["Dreadfire Imp"] = 487847,
-											["Tormented Bloodseeker"] = 887962,
-											["Taintheart Stalker"] = 109475,
 											["Taintheart Deadeye"] = 252766,
+											["Dreadfire Imp"] = 487847,
+											["Taintheart Stalker"] = 109475,
+											["Tormented Bloodseeker"] = 887962,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 2476743,
@@ -1937,15 +1936,15 @@ _detalhes_database = {
 										["c_max"] = 165682,
 										["id"] = 202497,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 37,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[255629] = {
 										["c_amt"] = 9,
@@ -1957,10 +1956,10 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 2567669,
 											["Deadeye Decoy <Taintheart Deadeye>"] = 689077,
 											["Shade of Xavius"] = 8390266,
-											["Taintheart Stalker"] = 998245,
-											["Tormented Bloodseeker"] = 2928160,
-											["Dreadfire Imp"] = 4346307,
 											["Taintheart Deadeye"] = 379822,
+											["Taintheart Stalker"] = 998245,
+											["Dreadfire Imp"] = 4346307,
+											["Tormented Bloodseeker"] = 2928160,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 12857218,
@@ -1971,15 +1970,15 @@ _detalhes_database = {
 										["c_max"] = 1036914,
 										["id"] = 255629,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 34,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[202771] = {
 										["c_amt"] = 4,
@@ -1991,8 +1990,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 3822984,
 											["Shade of Xavius"] = 7485868,
 											["Dreadfire Imp"] = 2508174,
-											["Taintheart Stalker"] = 3991957,
 											["Tormented Bloodseeker"] = 652654,
+											["Taintheart Stalker"] = 3991957,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 12697588,
@@ -2003,15 +2002,80 @@ _detalhes_database = {
 										["c_max"] = 3358313,
 										["id"] = 202771,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
-										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[202767] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 468433,
+										["targets"] = {
+											["Taintheart Summoner"] = 419791,
+											["Tormented Bloodseeker"] = 396029,
+											["Shade of Xavius"] = 1325657,
+											["Taintheart Deadeye"] = 403949,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2545426,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 2545426,
+										["c_max"] = 0,
+										["id"] = 202767,
+										["r_dmg"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[191037] = {
+										["c_amt"] = 92,
+										["b_amt"] = 0,
+										["c_dmg"] = 26623978,
+										["g_amt"] = 0,
+										["n_max"] = 325228,
+										["targets"] = {
+											["Taintheart Summoner"] = 10656178,
+											["Deadeye Decoy <Taintheart Deadeye>"] = 369595,
+											["Shade of Xavius"] = 6420025,
+											["Taintheart Deadeye"] = 4788443,
+											["Taintheart Stalker"] = 7939120,
+											["Dreadfire Imp"] = 11741150,
+											["Tormented Bloodseeker"] = 22438267,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 37728800,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 349,
+										["total"] = 64352778,
+										["c_max"] = 430775,
+										["id"] = 191037,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 257,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[226104] = {
 										["c_amt"] = 72,
@@ -2024,8 +2088,8 @@ _detalhes_database = {
 											["Deadeye Decoy <Taintheart Deadeye>"] = 90176,
 											["Taintheart Deadeye"] = 787691,
 											["Taintheart Stalker"] = 1761321,
-											["Dreadfire Imp"] = 2707361,
 											["Tormented Bloodseeker"] = 5436392,
+											["Dreadfire Imp"] = 2707361,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 8129981,
@@ -2036,93 +2100,29 @@ _detalhes_database = {
 										["c_max"] = 108796,
 										["id"] = 226104,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 226,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[191037] = {
-										["c_amt"] = 92,
-										["b_amt"] = 0,
-										["c_dmg"] = 26623978,
-										["g_amt"] = 0,
-										["n_max"] = 325228,
-										["targets"] = {
-											["Taintheart Summoner"] = 10656178,
-											["Deadeye Decoy <Taintheart Deadeye>"] = 369595,
-											["Shade of Xavius"] = 6420025,
-											["Taintheart Stalker"] = 7939120,
-											["Tormented Bloodseeker"] = 22438267,
-											["Dreadfire Imp"] = 11741150,
-											["Taintheart Deadeye"] = 4788443,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 37728800,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 349,
-										["total"] = 64352778,
-										["c_max"] = 430775,
-										["id"] = 191037,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 257,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[202767] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 468433,
-										["targets"] = {
-											["Taintheart Summoner"] = 419791,
-											["Tormented Bloodseeker"] = 396029,
-											["Taintheart Deadeye"] = 403949,
-											["Shade of Xavius"] = 1325657,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2545426,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 2545426,
-										["c_max"] = 0,
-										["id"] = 202767,
-										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["end_time"] = 1530810691,
 							["spec"] = 102,
-							["serial"] = "Player-1329-064EA132",
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 1605981.52870921,
+							["colocacao"] = 3,
+							["last_event"] = 0,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1530810472,
-							["delay"] = 0,
-							["damage_taken"] = 44614639.039932,
+							["serial"] = "Player-1329-064EA132",
+							["classe"] = "DRUID",
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -2131,65 +2131,25 @@ _detalhes_database = {
 								["Taintheart Summoner"] = true,
 								["Djkaviar-LesClairvoyants"] = true,
 								["Shade of Xavius"] = true,
-								["Dreadfire Imp"] = true,
-								["Taintheart Stalker"] = true,
-								["Tormented Bloodseeker"] = true,
 								["Taintheart Deadeye"] = true,
+								["Dreadfire Imp"] = true,
+								["Tormented Bloodseeker"] = true,
+								["Taintheart Stalker"] = true,
 							},
 							["targets"] = {
 								["Taintheart Summoner"] = 33599747,
 								["Deadeye Decoy <Taintheart Deadeye>"] = 959344,
 								["Shade of Xavius"] = 80911793,
-								["Taintheart Stalker"] = 10946974,
-								["Tormented Bloodseeker"] = 53516992,
-								["Dreadfire Imp"] = 30533768,
 								["Taintheart Deadeye"] = 3217028,
+								["Taintheart Stalker"] = 10946974,
+								["Dreadfire Imp"] = 30533768,
+								["Tormented Bloodseeker"] = 53516992,
 							},
-							["on_hold"] = false,
+							["end_time"] = 1530810691,
 							["pets"] = {
 							},
-							["last_event"] = 0,
-							["colocacao"] = 4,
-							["friendlyfire_total"] = 1900001,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 213685646.027243,
-							["end_time"] = 1530810691,
-							["isTank"] = true,
-							["dps_started"] = false,
-							["total"] = 213685646.027243,
-							["classe"] = "PALADIN",
-							["avoidance"] = {
-								["overall"] = {
-									["DODGE"] = 0,
-									["FULL_ABSORB_AMT"] = 0,
-									["BLOCKED_AMT"] = 0,
-									["BLOCKED_HITS"] = 0,
-									["FULL_ABSORBED"] = 0,
-									["ALL"] = 0,
-									["PARTIAL_ABSORBED"] = 0,
-									["PARRY"] = 0,
-									["PARTIAL_ABSORB_AMT"] = 0,
-									["ABSORB"] = 0,
-									["ABSORB_AMT"] = 0,
-									["FULL_HIT"] = 0,
-									["HITS"] = 0,
-									["FULL_HIT_AMT"] = 0,
-								},
-							},
-							["nome"] = "Milkyjuggs",
-							["spec"] = 66,
-							["grupo"] = true,
-							["friendlyfire"] = {
-								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = {
-									["spells"] = {
-										[201657] = 1900001,
-									},
-									["total"] = 1900001,
-								},
-							},
+							["last_dps"] = 1010778.4795545,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 32,
@@ -2201,8 +2161,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 2382329,
 											["Shade of Xavius"] = 6045565,
 											["Dreadfire Imp"] = 193333,
-											["Taintheart Deadeye"] = 114687,
 											["Tormented Bloodseeker"] = 1832949,
+											["Taintheart Deadeye"] = 114687,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 5567393,
@@ -2213,15 +2173,15 @@ _detalhes_database = {
 										["c_max"] = 230074,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 146073,
 										["n_amt"] = 69,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									}, -- [1]
 									[81297] = {
 										["c_amt"] = 139,
@@ -2233,10 +2193,10 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 2866227,
 											["Deadeye Decoy <Taintheart Deadeye>"] = 338177,
 											["Shade of Xavius"] = 7558829,
-											["Taintheart Stalker"] = 2272326,
-											["Tormented Bloodseeker"] = 4297172,
-											["Dreadfire Imp"] = 4717834,
 											["Taintheart Deadeye"] = 282108,
+											["Taintheart Stalker"] = 2272326,
+											["Dreadfire Imp"] = 4717834,
+											["Tormented Bloodseeker"] = 4297172,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 12449015,
@@ -2247,15 +2207,15 @@ _detalhes_database = {
 										["c_max"] = 96622,
 										["id"] = 81297,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 336,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[31935] = {
 										["c_amt"] = 19,
@@ -2267,8 +2227,8 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 7737245,
 											["Shade of Xavius"] = 20236625,
 											["Tormented Bloodseeker"] = 12629833,
-											["Dreadfire Imp"] = 7426476,
 											["Taintheart Stalker"] = 617677,
+											["Dreadfire Imp"] = 7426476,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 21682467,
@@ -2279,15 +2239,15 @@ _detalhes_database = {
 										["c_max"] = 2101399,
 										["id"] = 31935,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 35,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[204242] = {
 										["c_amt"] = 0,
@@ -2307,16 +2267,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 204242,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 12,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 12,
 									},
 									[209331] = {
 										["c_amt"] = 2,
@@ -2336,234 +2296,15 @@ _detalhes_database = {
 										["c_max"] = 230038,
 										["id"] = 209331,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[256893] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 9620847,
-										["g_amt"] = 0,
-										["n_max"] = 1603475,
-										["targets"] = {
-											["Tormented Bloodseeker"] = 11224322,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1603475,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 11224322,
-										["c_max"] = 3206949,
-										["id"] = 256893,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[253098] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 2318894,
-										["g_amt"] = 0,
-										["n_max"] = 273318,
-										["targets"] = {
-											["Taintheart Summoner"] = 612306,
-											["Shade of Xavius"] = 2288891,
-											["Taintheart Stalker"] = 273317,
-											["Tormented Bloodseeker"] = 1263091,
-											["Dreadfire Imp"] = 273317,
-											["Taintheart Deadeye"] = 184496,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2576524,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 4895418,
-										["c_max"] = 576639,
-										["id"] = 253098,
-										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[209202] = {
-										["c_amt"] = 7,
-										["b_amt"] = 0,
-										["c_dmg"] = 23666109,
-										["g_amt"] = 0,
-										["n_max"] = 1932334,
-										["targets"] = {
-											["Taintheart Summoner"] = 7528249,
-											["Shade of Xavius"] = 6576734,
-											["Tormented Bloodseeker"] = 3864667,
-											["Taintheart Stalker"] = 3764124,
-											["Dreadfire Imp"] = 9360040,
-											["Taintheart Deadeye"] = 1932334,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 9360039,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 33026148,
-										["c_max"] = 3864668,
-										["id"] = 209202,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[204301] = {
-										["c_amt"] = 111,
-										["b_amt"] = 12,
-										["c_dmg"] = 20965693,
-										["g_amt"] = 0,
-										["n_max"] = 128375,
-										["targets"] = {
-											["Taintheart Summoner"] = 5901412,
-											["Deadeye Decoy <Taintheart Deadeye>"] = 513497,
-											["Shade of Xavius"] = 15837243,
-											["Taintheart Stalker"] = 3968496,
-											["Dreadfire Imp"] = 7227008,
-											["Tormented Bloodseeker"] = 12016164,
-											["Taintheart Deadeye"] = 703403,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 25201530,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 371,
-										["total"] = 46167223,
-										["c_max"] = 256749,
-										["id"] = 204301,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 1405135,
-										["n_amt"] = 260,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[53600] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 6725874,
-										["g_amt"] = 0,
-										["n_max"] = 933772,
-										["targets"] = {
-											["Taintheart Summoner"] = 2495826,
-											["Tormented Bloodseeker"] = 3258684,
-											["Shade of Xavius"] = 9629177,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 8657813,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 15383687,
-										["c_max"] = 1824119,
-										["id"] = 53600,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[209478] = {
-										["c_amt"] = 23,
-										["b_amt"] = 0,
-										["c_dmg"] = 1781836,
-										["g_amt"] = 0,
-										["n_max"] = 53836,
-										["targets"] = {
-											["Taintheart Summoner"] = 955977,
-											["Deadeye Decoy <Taintheart Deadeye>"] = 107670,
-											["Shade of Xavius"] = 776107,
-											["Dreadfire Imp"] = 1335760,
-											["Tormented Bloodseeker"] = 2129231,
-											["Taintheart Stalker"] = 51034,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 3573943,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 110,
-										["total"] = 5355779,
-										["c_max"] = 107671,
-										["id"] = 209478,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 87,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[256896] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 931632,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Shade of Xavius"] = 931632,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 931632,
-										["c_max"] = 931632,
-										["id"] = 256896,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									[20271] = {
 										["c_amt"] = 12,
@@ -2585,30 +2326,288 @@ _detalhes_database = {
 										["c_max"] = 1207701,
 										["id"] = 20271,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 12,
-										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[256896] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 931632,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Shade of Xavius"] = 931632,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 931632,
+										["c_max"] = 931632,
+										["id"] = 256896,
+										["r_dmg"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[209202] = {
+										["c_amt"] = 7,
+										["b_amt"] = 0,
+										["c_dmg"] = 23666109,
+										["g_amt"] = 0,
+										["n_max"] = 1932334,
+										["targets"] = {
+											["Taintheart Summoner"] = 7528249,
+											["Shade of Xavius"] = 6576734,
+											["Taintheart Deadeye"] = 1932334,
+											["Tormented Bloodseeker"] = 3864667,
+											["Dreadfire Imp"] = 9360040,
+											["Taintheart Stalker"] = 3764124,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 9360039,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 33026148,
+										["c_max"] = 3864668,
+										["id"] = 209202,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[209478] = {
+										["c_amt"] = 23,
+										["b_amt"] = 0,
+										["c_dmg"] = 1781836,
+										["g_amt"] = 0,
+										["n_max"] = 53836,
+										["targets"] = {
+											["Taintheart Summoner"] = 955977,
+											["Deadeye Decoy <Taintheart Deadeye>"] = 107670,
+											["Shade of Xavius"] = 776107,
+											["Dreadfire Imp"] = 1335760,
+											["Taintheart Stalker"] = 51034,
+											["Tormented Bloodseeker"] = 2129231,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3573943,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 110,
+										["total"] = 5355779,
+										["c_max"] = 107671,
+										["id"] = 209478,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 87,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[204301] = {
+										["c_amt"] = 111,
+										["b_amt"] = 12,
+										["c_dmg"] = 20965693,
+										["g_amt"] = 0,
+										["n_max"] = 128375,
+										["targets"] = {
+											["Taintheart Summoner"] = 5901412,
+											["Deadeye Decoy <Taintheart Deadeye>"] = 513497,
+											["Shade of Xavius"] = 15837243,
+											["Taintheart Deadeye"] = 703403,
+											["Taintheart Stalker"] = 3968496,
+											["Tormented Bloodseeker"] = 12016164,
+											["Dreadfire Imp"] = 7227008,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 25201530,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 371,
+										["total"] = 46167223,
+										["c_max"] = 256749,
+										["id"] = 204301,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 1405135,
+										["n_amt"] = 260,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[256893] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 9620847,
+										["g_amt"] = 0,
+										["n_max"] = 1603475,
+										["targets"] = {
+											["Tormented Bloodseeker"] = 11224322,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1603475,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 11224322,
+										["c_max"] = 3206949,
+										["id"] = 256893,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[53600] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 6725874,
+										["g_amt"] = 0,
+										["n_max"] = 933772,
+										["targets"] = {
+											["Taintheart Summoner"] = 2495826,
+											["Tormented Bloodseeker"] = 3258684,
+											["Shade of Xavius"] = 9629177,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8657813,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 18,
+										["total"] = 15383687,
+										["c_max"] = 1824119,
+										["id"] = 53600,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[253098] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 2318894,
+										["g_amt"] = 0,
+										["n_max"] = 273318,
+										["targets"] = {
+											["Taintheart Summoner"] = 612306,
+											["Shade of Xavius"] = 2288891,
+											["Taintheart Deadeye"] = 184496,
+											["Taintheart Stalker"] = 273317,
+											["Dreadfire Imp"] = 273317,
+											["Tormented Bloodseeker"] = 1263091,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2576524,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 4895418,
+										["c_max"] = 576639,
+										["id"] = 253098,
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 1900001,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 213685646.027243,
+							["damage_taken"] = 152306558.027243,
+							["classe"] = "PALADIN",
+							["dps_started"] = false,
+							["total"] = 213685646.027243,
+							["delay"] = 0,
+							["start_time"] = 1530810474,
+							["nome"] = "Milkyjuggs",
+							["spec"] = 66,
+							["grupo"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["friendlyfire"] = {
+								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = {
+									["total"] = 1900001,
+									["spells"] = {
+										[201657] = 1900001,
 									},
 								},
 							},
+							["colocacao"] = 4,
+							["last_event"] = 0,
+							["avoidance"] = {
+								["overall"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 0,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 0,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 0,
+								},
+							},
+							["isTank"] = true,
 							["serial"] = "Player-1329-065BC1C8",
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 1010778.4795545,
-							["start_time"] = 1530810474,
-							["delay"] = 0,
-							["damage_taken"] = 152306558.027243,
+							["on_hold"] = false,
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.022267,
-							["on_hold"] = false,
 							["damage_from"] = {
 								["Taintheart Summoner"] = true,
 								["Dreadfire Imp"] = true,
@@ -2623,34 +2622,24 @@ _detalhes_database = {
 								"Spirit Link Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [1]
 								"Earthen Shield Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [2]
 							},
-							["friendlyfire"] = {
-								["Milkyjuggs"] = {
-									["spells"] = {
-										[6940] = 988047,
-									},
-									["total"] = 988047,
-								},
-								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = {
-									["spells"] = {
-										[201657] = 103228,
-									},
-									["total"] = 103228,
-								},
-							},
-							["colocacao"] = 5,
+							["classe"] = "SHAMAN",
+							["dps_started"] = false,
 							["friendlyfire_total"] = 1091275,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 34621090.022267,
+							["damage_taken"] = 27137877.022267,
+							["delay"] = 0,
 							["fight_component"] = true,
-							["last_event"] = 0,
-							["dps_started"] = false,
-							["total"] = 34621090.022267,
-							["classe"] = "SHAMAN",
 							["end_time"] = 1530810691,
+							["last_dps"] = 163765.107220936,
+							["total"] = 34621090.022267,
 							["nome"] = "Djkaviar-LesClairvoyants",
+							["spec"] = 264,
+							["grupo"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2670,44 +2659,43 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									}, -- [1]
-									[421] = {
-										["c_amt"] = 1,
+									[188838] = {
+										["c_amt"] = 22,
 										["b_amt"] = 0,
-										["c_dmg"] = 1286786,
+										["c_dmg"] = 9447016,
 										["g_amt"] = 0,
-										["n_max"] = 630777,
+										["n_max"] = 458525,
 										["targets"] = {
-											["Taintheart Stalker"] = 630777,
-											["Dreadfire Imp"] = 1917563,
+											["Shade of Xavius"] = 16233201,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1261554,
+										["n_dmg"] = 6786185,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 2548340,
-										["c_max"] = 1286786,
-										["id"] = 421,
+										["counter"] = 57,
+										["total"] = 16233201,
+										["c_max"] = 1023581,
+										["id"] = 188838,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 35,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[51505] = {
 										["c_amt"] = 10,
@@ -2727,15 +2715,44 @@ _detalhes_database = {
 										["c_max"] = 1833667,
 										["id"] = 51505,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									[421] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1286786,
+										["g_amt"] = 0,
+										["n_max"] = 630777,
+										["targets"] = {
+											["Dreadfire Imp"] = 1917563,
+											["Taintheart Stalker"] = 630777,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1261554,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 2548340,
+										["c_max"] = 1286786,
+										["id"] = 421,
+										["r_dmg"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[403] = {
 										["c_amt"] = 0,
@@ -2755,60 +2772,42 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 403,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[188838] = {
-										["c_amt"] = 22,
-										["b_amt"] = 0,
-										["c_dmg"] = 9447016,
-										["g_amt"] = 0,
-										["n_max"] = 458525,
-										["targets"] = {
-											["Shade of Xavius"] = 16233201,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 6786185,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 57,
-										["total"] = 16233201,
-										["c_max"] = 1023581,
-										["id"] = 188838,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 35,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["colocacao"] = 5,
+							["last_event"] = 0,
+							["friendlyfire"] = {
+								["Milkyjuggs"] = {
+									["total"] = 988047,
+									["spells"] = {
+										[6940] = 988047,
+									},
+								},
+								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = {
+									["total"] = 103228,
+									["spells"] = {
+										[201657] = 103228,
 									},
 								},
 							},
-							["grupo"] = true,
-							["spec"] = 264,
-							["serial"] = "Player-1127-06EFE875",
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 163765.107220936,
 							["start_time"] = 1530810550,
-							["delay"] = 0,
-							["damage_taken"] = 27137877.022267,
+							["serial"] = "Player-1127-06EFE875",
+							["on_hold"] = false,
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 5677435.012612,
-							["on_hold"] = false,
 							["damage_from"] = {
 								["Krixidk"] = true,
 								["Djkaviar-LesClairvoyants"] = true,
@@ -2823,10 +2822,12 @@ _detalhes_database = {
 								["Temporäs"] = 23595303,
 								["Imakitteh-Kazzak"] = 14947453,
 							},
-							["boss_fight_component"] = true,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 								2038964, -- [1]
@@ -2835,15 +2836,13 @@ _detalhes_database = {
 								[128] = 23572087,
 							},
 							["total_without_pet"] = 162568635.012612,
-							["last_event"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1530810691,
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
-							["nome"] = "Shade of Xavius",
+							["fight_component"] = true,
+							["end_time"] = 1530810691,
+							["damage_taken"] = 768932961.012612,
+							["tipo"] = 1,
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2863,16 +2862,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_amt"] = 27,
-										["a_dmg"] = 37393294,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 20,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 11782106,
 										["n_amt"] = 38,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 37393294,
+										["a_amt"] = 27,
 									}, -- [1]
 									[200182] = {
 										["c_amt"] = 0,
@@ -2894,16 +2893,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 200182,
 										["r_dmg"] = 0,
-										["a_amt"] = 1,
-										["a_dmg"] = 1639530,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 5,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 1639530,
+										["a_amt"] = 1,
 									},
 									[200289] = {
 										["c_amt"] = 0,
@@ -2922,15 +2921,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 200289,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 4,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[200111] = {
 										["c_amt"] = 0,
@@ -2952,15 +2951,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 200111,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[200359] = {
 										["c_amt"] = 0,
@@ -2979,15 +2978,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 200359,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 4,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[209858] = {
 										["c_amt"] = 0,
@@ -3007,15 +3006,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 209858,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 55,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[200185] = {
 										["c_amt"] = 0,
@@ -3036,15 +3035,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 200185,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 5,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[200238] = {
 										["c_amt"] = 0,
@@ -3066,15 +3065,45 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 200238,
 										["r_dmg"] = 0,
-										["a_dmg"] = 17971831,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 7,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 4,
 										["b_dmg"] = 0,
 										["n_amt"] = 16,
-										["r_amt"] = 0,
+										["a_amt"] = 7,
+										["a_dmg"] = 17971831,
+									},
+									[200329] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4754112,
+										["targets"] = {
+											["Krixidk"] = 4119524,
+											["Imakitteh-Kazzak"] = 3843081,
+											["Temporäs"] = 4754112,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12716717,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 12716717,
+										["c_max"] = 0,
+										["id"] = 200329,
+										["r_dmg"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									[204502] = {
 										["c_amt"] = 0,
@@ -3098,57 +3127,28 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 204502,
 										["r_dmg"] = 0,
-										["a_dmg"] = 19359744,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 4,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[200329] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4754112,
-										["targets"] = {
-											["Krixidk"] = 4119524,
-											["Imakitteh-Kazzak"] = 3843081,
-											["Temporäs"] = 4754112,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 12716717,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 12716717,
-										["c_max"] = 0,
-										["id"] = 200329,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 4,
+										["a_dmg"] = 19359744,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["monster"] = true,
+							["nome"] = "Shade of Xavius",
 							["total"] = 162568635.012612,
-							["serial"] = "Creature-0-3111-1466-534-99192-00003E4CFA",
+							["monster"] = true,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 768932961.012612,
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["start_time"] = 1530810569,
-							["delay"] = 0,
-							["last_dps"] = 0,
+							["serial"] = "Creature-0-3111-1466-534-99192-00003E4CFA",
+							["dps_started"] = false,
 						}, -- [6]
 						{
 							["flag_original"] = 8466,
@@ -3159,32 +3159,32 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["last_dps"] = 0,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.020924,
-							["last_event"] = 0,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.020924,
 							["dps_started"] = false,
 							["total"] = 0.020924,
-							["end_time"] = 1530810691,
+							["delay"] = 0,
 							["ownerName"] = "Djkaviar-LesClairvoyants",
 							["nome"] = "Spirit Link Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
-							["friendlyfire"] = {
-							},
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["serial"] = "Creature-0-3111-1466-534-53006-00003E512B",
-							["custom"] = 0,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
-							["last_dps"] = 0,
+							["end_time"] = 1530810691,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["start_time"] = 1530810685,
-							["delay"] = 0,
-							["damage_taken"] = 0.020924,
+							["serial"] = "Creature-0-3111-1466-534-53006-00003E512B",
+							["friendlyfire_total"] = 0,
 						}, -- [7]
 						{
 							["flag_original"] = 8466,
@@ -3199,22 +3199,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["last_dps"] = 0,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.017523,
-							["last_event"] = 0,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 2769656.017523,
 							["dps_started"] = false,
 							["total"] = 0.017523,
-							["end_time"] = 1530810691,
+							["delay"] = 0,
 							["ownerName"] = "Djkaviar-LesClairvoyants",
 							["nome"] = "Earthen Shield Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
-							["friendlyfire"] = {
-							},
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[201633] = {
 										["c_amt"] = 0,
@@ -3223,8 +3219,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Spirit Link Totem"] = 0,
 											["Healing Stream Totem"] = 0,
+											["Spirit Link Totem"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
@@ -3235,41 +3231,45 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 201633,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 50,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["IMMUNE"] = 50,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["serial"] = "Creature-0-3111-1466-534-100943-00003E50FC",
-							["custom"] = 0,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
-							["last_dps"] = 0,
+							["end_time"] = 1530810691,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["start_time"] = 1530810685,
-							["delay"] = 0,
-							["damage_taken"] = 2769656.017523,
+							["serial"] = "Creature-0-3111-1466-534-100943-00003E50FC",
+							["friendlyfire_total"] = 0,
 						}, -- [8]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 169,
 					["tipo"] = 3,
+					["combatId"] = 169,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = true,
-								["Djkaviar-LesClairvoyants"] = true,
-								["Milkyjuggs"] = true,
-								["Healing Stream Totem <Djkaviar-LesClairvoyants>"] = true,
-								["Healing Tide Totem <Djkaviar-LesClairvoyants>"] = true,
+							["targets_overheal"] = {
+								["Krixidk"] = 12243901,
+								["Djkaviar-LesClairvoyants"] = 16211100,
+								["Milkyjuggs"] = 5821885,
+								["Temporäs"] = 8070257,
+								["Imakitteh-Kazzak"] = 17635622,
 							},
 							["pets"] = {
 								"Healing Stream Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [1]
@@ -3278,7 +3278,7 @@ _detalhes_database = {
 								"Spirit Link Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [4]
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 64332625.031825,
 							["total_without_pet"] = 112494076.031825,
 							["total"] = 132550759.031825,
@@ -3290,7 +3290,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["serial"] = "Player-1127-06EFE875",
 							["totalabsorb"] = 0.031825,
-							["last_hps"] = 626993.235946702,
+							["last_hps"] = 626993.235946875,
 							["targets"] = {
 								["Krixidk"] = 20145704,
 								["Djkaviar-LesClairvoyants"] = 19435517,
@@ -3302,17 +3302,9 @@ _detalhes_database = {
 							["healing_taken"] = 23005931.031825,
 							["fight_component"] = true,
 							["end_time"] = 1530810691,
-							["targets_overheal"] = {
-								["Krixidk"] = 12243901,
-								["Djkaviar-LesClairvoyants"] = 16211100,
-								["Milkyjuggs"] = 5821885,
-								["Temporäs"] = 8070257,
-								["Imakitteh-Kazzak"] = 17635622,
-							},
-							["start_time"] = 1530810477,
+							["tipo"] = 2,
 							["nome"] = "Djkaviar-LesClairvoyants",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[77472] = {
 										["c_amt"] = 3,
@@ -3339,12 +3331,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 3854265,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 10893930,
-										["n_amt"] = 14,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 14,
+										["n_curado"] = 10893930,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[208899] = {
@@ -3375,12 +3367,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 1565643,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2631754,
-										["n_amt"] = 110,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 110,
+										["n_curado"] = 2631754,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[207778] = {
@@ -3411,12 +3403,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 1682256,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2812950,
-										["n_amt"] = 8,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 8,
+										["n_curado"] = 2812950,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[73921] = {
@@ -3447,22 +3439,22 @@ _detalhes_database = {
 										},
 										["c_curado"] = 2934905,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3287444,
-										["n_amt"] = 127,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 127,
+										["n_curado"] = 3287444,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[255227] = {
 										["c_amt"] = 1,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Temporäs"] = 532037,
-											["Krixidk"] = 1085355,
-											["Imakitteh-Kazzak"] = 1094291,
 											["Djkaviar-LesClairvoyants"] = 1094291,
+											["Temporäs"] = 532037,
+											["Imakitteh-Kazzak"] = 1094291,
+											["Krixidk"] = 1085355,
 										},
 										["n_max"] = 636488,
 										["targets"] = {
@@ -3482,12 +3474,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3151708,
-										["n_amt"] = 11,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 11,
+										["n_curado"] = 3151708,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[8004] = {
@@ -3515,47 +3507,40 @@ _detalhes_database = {
 										},
 										["c_curado"] = 23924207,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 9495295,
-										["n_amt"] = 11,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 11,
+										["n_curado"] = 9495295,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
-									[1064] = {
-										["c_amt"] = 5,
+									[208981] = {
+										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Djkaviar-LesClairvoyants"] = 859039,
-											["Krixidk"] = 505234,
-											["Imakitteh-Kazzak"] = 173364,
-											["Temporäs"] = 353664,
+											["Djkaviar-LesClairvoyants"] = 328080,
 										},
-										["n_max"] = 412071,
+										["n_max"] = 240166,
 										["targets"] = {
-											["Krixidk"] = 0,
-											["Djkaviar-LesClairvoyants"] = 0,
-											["Milkyjuggs"] = 1473652,
-											["Temporäs"] = 1133966,
-											["Imakitteh-Kazzak"] = 0,
+											["Djkaviar-LesClairvoyants"] = 4223163,
 										},
 										["n_min"] = 0,
-										["counter"] = 8,
-										["overheal"] = 1891301,
-										["total"] = 2607618,
-										["c_max"] = 1133966,
-										["id"] = 1064,
+										["counter"] = 22,
+										["overheal"] = 328080,
+										["total"] = 4223163,
+										["c_max"] = 0,
+										["id"] = 208981,
 										["targets_absorbs"] = {
 										},
-										["c_curado"] = 2195547,
+										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 412071,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 22,
+										["n_curado"] = 4223163,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[114083] = {
@@ -3586,12 +3571,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 5184329,
-										["n_amt"] = 88,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 88,
+										["n_curado"] = 5184329,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[61295] = {
@@ -3622,12 +3607,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 14309306,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 14973169,
-										["n_amt"] = 152,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 152,
+										["n_curado"] = 14973169,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[209069] = {
@@ -3655,12 +3640,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 133797,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 709182,
-										["n_amt"] = 44,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 44,
+										["n_curado"] = 709182,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[114911] = {
@@ -3689,52 +3674,67 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 4119155,
-										["n_amt"] = 51,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 51,
+										["n_curado"] = 4119155,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
-									[208981] = {
-										["c_amt"] = 0,
+									[1064] = {
+										["c_amt"] = 5,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Djkaviar-LesClairvoyants"] = 328080,
+											["Temporäs"] = 353664,
+											["Krixidk"] = 505234,
+											["Djkaviar-LesClairvoyants"] = 859039,
+											["Imakitteh-Kazzak"] = 173364,
 										},
-										["n_max"] = 240166,
+										["n_max"] = 412071,
 										["targets"] = {
-											["Djkaviar-LesClairvoyants"] = 4223163,
+											["Krixidk"] = 0,
+											["Djkaviar-LesClairvoyants"] = 0,
+											["Milkyjuggs"] = 1473652,
+											["Temporäs"] = 1133966,
+											["Imakitteh-Kazzak"] = 0,
 										},
 										["n_min"] = 0,
-										["counter"] = 22,
-										["overheal"] = 328080,
-										["total"] = 4223163,
-										["c_max"] = 0,
-										["id"] = 208981,
+										["counter"] = 8,
+										["overheal"] = 1891301,
+										["total"] = 2607618,
+										["c_max"] = 1133966,
+										["id"] = 1064,
 										["targets_absorbs"] = {
 										},
-										["c_curado"] = 0,
+										["c_curado"] = 2195547,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 4223163,
-										["n_amt"] = 22,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 3,
+										["n_curado"] = 412071,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["healing_from"] = {
+								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = true,
+								["Djkaviar-LesClairvoyants"] = true,
+								["Milkyjuggs"] = true,
+								["Healing Stream Totem <Djkaviar-LesClairvoyants>"] = true,
+								["Healing Tide Totem <Djkaviar-LesClairvoyants>"] = true,
+							},
+							["spec"] = 264,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["spec"] = 264,
 							["totaldenied"] = 0.031825,
+							["start_time"] = 1530810477,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["classe"] = "SHAMAN",
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -3762,7 +3762,7 @@ _detalhes_database = {
 							["isTank"] = true,
 							["serial"] = "Player-1329-065BC1C8",
 							["totalabsorb"] = 38499780.032936,
-							["last_hps"] = 350194.823411303,
+							["last_hps"] = 350194.823411399,
 							["targets"] = {
 								["Krixidk"] = 6323081,
 								["Djkaviar-LesClairvoyants"] = 5396590,
@@ -3774,16 +3774,9 @@ _detalhes_database = {
 							["healing_taken"] = 127424632.032936,
 							["fight_component"] = true,
 							["end_time"] = 1530810691,
-							["healing_from"] = {
-								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = true,
-								["Djkaviar-LesClairvoyants"] = true,
-								["Milkyjuggs"] = true,
-								["Healing Stream Totem <Djkaviar-LesClairvoyants>"] = true,
-								["Healing Tide Totem <Djkaviar-LesClairvoyants>"] = true,
-							},
+							["last_event"] = 0,
 							["nome"] = "Milkyjuggs",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[213652] = {
 										["c_amt"] = 0,
@@ -3806,12 +3799,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 28638331,
-										["n_amt"] = 14,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 14,
+										["n_curado"] = 28638331,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[229976] = {
@@ -3834,12 +3827,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 9886768,
-										["n_amt"] = 69,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 69,
+										["n_curado"] = 9886768,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[253099] = {
@@ -3863,40 +3856,41 @@ _detalhes_database = {
 										},
 										["c_curado"] = 940376,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1254122,
-										["n_amt"] = 12,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 12,
+										["n_curado"] = 1254122,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
-									[31850] = {
+									[19750] = {
 										["c_amt"] = 0,
-										["totalabsorb"] = 475087,
+										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Milkyjuggs"] = 365989,
 										},
-										["n_max"] = 218368,
+										["n_max"] = 410704,
 										["targets"] = {
-											["Milkyjuggs"] = 475087,
+											["Milkyjuggs"] = 0,
+											["Krixidk"] = 410704,
 										},
 										["n_min"] = 0,
-										["counter"] = 8,
-										["overheal"] = 0,
-										["total"] = 475087,
+										["counter"] = 2,
+										["overheal"] = 365989,
+										["total"] = 410704,
 										["c_max"] = 0,
-										["id"] = 31850,
+										["id"] = 19750,
 										["targets_absorbs"] = {
-											["Milkyjuggs"] = 475087,
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 475087,
-										["n_amt"] = 8,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 410704,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[240059] = {
@@ -3919,12 +3913,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3183733,
-										["n_amt"] = 5,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 5,
+										["n_curado"] = 3183733,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[204241] = {
@@ -3955,12 +3949,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 975906,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1036279,
-										["n_amt"] = 437,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 437,
+										["n_curado"] = 1036279,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[209388] = {
@@ -3983,12 +3977,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 24954192,
-										["n_amt"] = 56,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 56,
+										["n_curado"] = 24954192,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[209540] = {
@@ -4015,69 +4009,70 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2278139,
-										["n_amt"] = 56,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 56,
+										["n_curado"] = 2278139,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
-									[19750] = {
+									[31850] = {
 										["c_amt"] = 0,
-										["totalabsorb"] = 0,
+										["totalabsorb"] = 475087,
 										["targets_overheal"] = {
-											["Milkyjuggs"] = 365989,
 										},
-										["n_max"] = 410704,
+										["n_max"] = 218368,
 										["targets"] = {
-											["Milkyjuggs"] = 0,
-											["Krixidk"] = 410704,
+											["Milkyjuggs"] = 475087,
 										},
 										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 365989,
-										["total"] = 410704,
+										["counter"] = 8,
+										["overheal"] = 0,
+										["total"] = 475087,
 										["c_max"] = 0,
-										["id"] = 19750,
+										["id"] = 31850,
 										["targets_absorbs"] = {
+											["Milkyjuggs"] = 475087,
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 410704,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 8,
+										["n_curado"] = 475087,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["start_time"] = 1530810479,
+							["totaldenied"] = 0.032936,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["spec"] = 66,
-							["totaldenied"] = 0.032936,
+							["start_time"] = 1530810479,
 							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 1298,
 							["healing_from"] = {
 								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = true,
 								["Djkaviar-LesClairvoyants"] = true,
 								["Milkyjuggs"] = true,
-								["Imakitteh-Kazzak"] = true,
 								["Healing Stream Totem <Djkaviar-LesClairvoyants>"] = true,
 								["Healing Tide Totem <Djkaviar-LesClairvoyants>"] = true,
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Imakitteh-Kazzak"] = 393697113,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DEMONHUNTER",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 393697113.028346,
 							["total_without_pet"] = 24654239.028346,
 							["total"] = 24654239.028346,
@@ -4089,7 +4084,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["serial"] = "Player-1305-09C49A7E",
 							["totalabsorb"] = 0.028346,
-							["last_hps"] = 116619.785666219,
+							["last_hps"] = 116619.785666252,
 							["targets"] = {
 								["Imakitteh-Kazzak"] = 54836353,
 							},
@@ -4097,13 +4092,9 @@ _detalhes_database = {
 							["healing_taken"] = 28522258.028346,
 							["fight_component"] = true,
 							["end_time"] = 1530810691,
-							["targets_overheal"] = {
-								["Imakitteh-Kazzak"] = 393697113,
-							},
-							["start_time"] = 1530810529,
+							["tipo"] = 2,
 							["nome"] = "Imakitteh-Kazzak",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[228532] = {
 										["c_amt"] = 0,
@@ -4125,12 +4116,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3536203,
-										["n_amt"] = 34,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 34,
+										["n_curado"] = 3536203,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[202644] = {
@@ -4153,12 +4144,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2070024,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 2070024,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
@@ -4181,12 +4172,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 19048012,
-										["n_amt"] = 105,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 105,
+										["n_curado"] = 19048012,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[178963] = {
@@ -4209,39 +4200,43 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 0,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["spec"] = 577,
-							["totaldenied"] = 0.028346,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [3]
-						{
-							["flag_original"] = 1297,
 							["healing_from"] = {
 								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = true,
-								["Krixidk"] = true,
 								["Djkaviar-LesClairvoyants"] = true,
 								["Milkyjuggs"] = true,
 								["Healing Stream Totem <Djkaviar-LesClairvoyants>"] = true,
+								["Imakitteh-Kazzak"] = true,
 								["Healing Tide Totem <Djkaviar-LesClairvoyants>"] = true,
+							},
+							["spec"] = 577,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["totaldenied"] = 0.028346,
+							["start_time"] = 1530810529,
+							["delay"] = 0,
+							["classe"] = "DEMONHUNTER",
+						}, -- [3]
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Krixidk"] = 17295697,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 17295697.035029,
 							["total_without_pet"] = 14450798.035029,
 							["total"] = 14450798.035029,
@@ -4253,7 +4248,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["serial"] = "Player-1329-064AEDEB",
 							["totalabsorb"] = 0.035029,
-							["last_hps"] = 68355.3431770215,
+							["last_hps"] = 68355.3431770403,
 							["targets"] = {
 								["Krixidk"] = 15297266,
 							},
@@ -4261,13 +4256,9 @@ _detalhes_database = {
 							["healing_taken"] = 40828863.035029,
 							["fight_component"] = true,
 							["end_time"] = 1530810691,
-							["targets_overheal"] = {
-								["Krixidk"] = 17295697,
-							},
-							["start_time"] = 1530810573,
+							["tipo"] = 2,
 							["nome"] = "Krixidk",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[48707] = {
 										["c_amt"] = 0,
@@ -4290,12 +4281,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 3,
+										["n_curado"] = 0,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[53365] = {
@@ -4318,40 +4309,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1736142,
+										["totaldenied"] = 0,
 										["n_amt"] = 18,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[252879] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Krixidk"] = 3850147,
-										},
-										["n_max"] = 474303,
-										["targets"] = {
-											["Krixidk"] = 1094826,
-										},
-										["n_min"] = 0,
-										["counter"] = 16,
-										["overheal"] = 3850147,
-										["total"] = 1094826,
-										["c_max"] = 0,
-										["id"] = 252879,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
+										["n_curado"] = 1736142,
 										["m_amt"] = 0,
-										["n_curado"] = 1094826,
-										["n_amt"] = 16,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 									[45470] = {
@@ -4374,38 +4337,71 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 11619830,
-										["n_amt"] = 5,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 5,
+										["n_curado"] = 11619830,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+									[252879] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Krixidk"] = 3850147,
+										},
+										["n_max"] = 474303,
+										["targets"] = {
+											["Krixidk"] = 1094826,
+										},
+										["n_min"] = 0,
+										["counter"] = 16,
+										["overheal"] = 3850147,
+										["total"] = 1094826,
+										["c_max"] = 0,
+										["id"] = 252879,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 16,
+										["n_curado"] = 1094826,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["healing_from"] = {
+								["Earthen Shield Totem <Djkaviar-LesClairvoyants>"] = true,
+								["Krixidk"] = true,
+								["Djkaviar-LesClairvoyants"] = true,
+								["Milkyjuggs"] = true,
+								["Healing Stream Totem <Djkaviar-LesClairvoyants>"] = true,
+								["Healing Tide Totem <Djkaviar-LesClairvoyants>"] = true,
+							},
+							["spec"] = 251,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["spec"] = 251,
 							["totaldenied"] = 0.035029,
+							["start_time"] = 1530810573,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["classe"] = "DEATHKNIGHT",
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Djkaviar-LesClairvoyants"] = true,
-								["Milkyjuggs"] = true,
-								["Temporäs"] = true,
-								["Healing Stream Totem <Djkaviar-LesClairvoyants>"] = true,
-								["Healing Tide Totem <Djkaviar-LesClairvoyants>"] = true,
+							["targets_overheal"] = {
+								["Temporäs"] = 3054105,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 3054105.029692,
 							["total_without_pet"] = 12123350.029692,
 							["total"] = 12123350.029692,
@@ -4417,7 +4413,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["serial"] = "Player-1329-064EA132",
 							["totalabsorb"] = 0.029692,
-							["last_hps"] = 57346.0199032591,
+							["last_hps"] = 57346.0199032749,
 							["targets"] = {
 								["Temporäs"] = 12450035,
 							},
@@ -4425,13 +4421,9 @@ _detalhes_database = {
 							["healing_taken"] = 38031099.029692,
 							["fight_component"] = true,
 							["end_time"] = 1530810691,
-							["targets_overheal"] = {
-								["Temporäs"] = 3054105,
-							},
-							["start_time"] = 1530810641,
+							["tipo"] = 2,
 							["nome"] = "Temporäs",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[213672] = {
 										["c_amt"] = 0,
@@ -4453,40 +4445,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2851837,
+										["totaldenied"] = 0,
 										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[252879] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Temporäs"] = 1415241,
-										},
-										["n_max"] = 640505,
-										["targets"] = {
-											["Temporäs"] = 2025010,
-										},
-										["n_min"] = 0,
-										["counter"] = 10,
-										["overheal"] = 1415241,
-										["total"] = 2025010,
-										["c_max"] = 0,
-										["id"] = 252879,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
+										["n_curado"] = 2851837,
 										["m_amt"] = 0,
-										["n_curado"] = 2025010,
-										["n_amt"] = 10,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 									[22842] = {
@@ -4509,32 +4473,64 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 7246503,
-										["n_amt"] = 13,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 13,
+										["n_curado"] = 7246503,
+										["m_amt"] = 0,
+										["absorbed"] = 0,
+									},
+									[252879] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Temporäs"] = 1415241,
+										},
+										["n_max"] = 640505,
+										["targets"] = {
+											["Temporäs"] = 2025010,
+										},
+										["n_min"] = 0,
+										["counter"] = 10,
+										["overheal"] = 1415241,
+										["total"] = 2025010,
+										["c_max"] = 0,
+										["id"] = 252879,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 10,
+										["n_curado"] = 2025010,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["healing_from"] = {
+								["Djkaviar-LesClairvoyants"] = true,
+								["Milkyjuggs"] = true,
+								["Temporäs"] = true,
+								["Healing Stream Totem <Djkaviar-LesClairvoyants>"] = true,
+								["Healing Tide Totem <Djkaviar-LesClairvoyants>"] = true,
+							},
+							["spec"] = 102,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["spec"] = 102,
 							["totaldenied"] = 0.029692,
+							["start_time"] = 1530810641,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["classe"] = "DRUID",
 						}, -- [5]
 						{
 							["flag_original"] = 2600,
-							["targets_overheal"] = {
-								["Milkyjuggs"] = 413531,
-								["Temporäs"] = 450983,
-								["Imakitteh-Kazzak"] = 592526,
-								["Djkaviar-LesClairvoyants"] = 330250,
+							["healing_from"] = {
 							},
 							["pets"] = {
 							},
@@ -4560,21 +4556,11 @@ _detalhes_database = {
 							},
 							["totalover_without_pet"] = 0.027157,
 							["healing_taken"] = 0.027157,
-							["heal_enemy_amt"] = 0,
 							["fight_component"] = true,
 							["end_time"] = 1530810691,
-							["healing_from"] = {
-							},
 							["ownerName"] = "Djkaviar-LesClairvoyants",
 							["nome"] = "Healing Stream Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
-							["last_event"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["start_time"] = 1530810597,
-							["totaldenied"] = 0.027157,
-							["delay"] = 0,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[52042] = {
 										["c_amt"] = 30,
@@ -4603,30 +4589,39 @@ _detalhes_database = {
 										},
 										["c_curado"] = 5319857,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 8549831,
-										["n_amt"] = 81,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 81,
+										["n_curado"] = 8549831,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["totaldenied"] = 0.027157,
+							["targets_overheal"] = {
+								["Milkyjuggs"] = 413531,
+								["Temporäs"] = 450983,
+								["Imakitteh-Kazzak"] = 592526,
+								["Djkaviar-LesClairvoyants"] = 330250,
+							},
+							["custom"] = 0,
+							["last_event"] = 0,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1530810597,
+							["delay"] = 0,
+							["tipo"] = 2,
 						}, -- [6]
 						{
 							["flag_original"] = 2600,
-							["targets_overheal"] = {
-								["Krixidk"] = 721556,
-								["Djkaviar-LesClairvoyants"] = 184221,
-								["Milkyjuggs"] = 178695,
-								["Temporäs"] = 804251,
-								["Imakitteh-Kazzak"] = 673847,
+							["healing_from"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 2562570.008138,
 							["total_without_pet"] = 3417343.008138,
 							["total"] = 3417343.008138,
@@ -4647,21 +4642,10 @@ _detalhes_database = {
 							},
 							["totalover_without_pet"] = 0.008138,
 							["healing_taken"] = 0.008138,
-							["heal_enemy_amt"] = 0,
 							["end_time"] = 1530810691,
-							["healing_from"] = {
-							},
 							["ownerName"] = "Djkaviar-LesClairvoyants",
 							["nome"] = "Healing Tide Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
-							["boss_fight_component"] = true,
-							["last_event"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["start_time"] = 1530810677,
-							["totaldenied"] = 0.008138,
-							["delay"] = 0,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[114942] = {
 										["c_amt"] = 10,
@@ -4691,20 +4675,36 @@ _detalhes_database = {
 										},
 										["c_curado"] = 1905390,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1511953,
-										["n_amt"] = 28,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 28,
+										["n_curado"] = 1511953,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["totaldenied"] = 0.008138,
+							["targets_overheal"] = {
+								["Krixidk"] = 721556,
+								["Djkaviar-LesClairvoyants"] = 184221,
+								["Milkyjuggs"] = 178695,
+								["Temporäs"] = 804251,
+								["Imakitteh-Kazzak"] = 673847,
+							},
+							["boss_fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["start_time"] = 1530810677,
+							["delay"] = 0,
+							["tipo"] = 2,
 						}, -- [7]
 						{
 							["flag_original"] = 8466,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["pets"] = {
 							},
@@ -4733,21 +4733,11 @@ _detalhes_database = {
 							},
 							["totalover_without_pet"] = 0.015547,
 							["healing_taken"] = 0.015547,
-							["heal_enemy_amt"] = 0,
 							["fight_component"] = true,
 							["end_time"] = 1530810691,
-							["healing_from"] = {
-							},
 							["ownerName"] = "Djkaviar-LesClairvoyants",
 							["nome"] = "Earthen Shield Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
-							["last_event"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["start_time"] = 1530810647,
-							["totaldenied"] = 0.015547,
-							["delay"] = 0,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[201633] = {
 										["c_amt"] = 0,
@@ -4775,54 +4765,36 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2769652,
-										["n_amt"] = 43,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 43,
+										["n_curado"] = 2769652,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["totaldenied"] = 0.015547,
+							["targets_overheal"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 0,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1530810647,
+							["delay"] = 0,
+							["tipo"] = 2,
 						}, -- [8]
 						{
 							["flag_original"] = 8466,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 0.016917,
-							["total_without_pet"] = 0.016917,
-							["total"] = 0.016917,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Creature-0-3111-1466-534-53006-00003E512B",
 							["totalabsorb"] = 0.016917,
 							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.016917,
-							["healing_taken"] = 0.016917,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1530810691,
 							["healing_from"] = {
 							},
-							["ownerName"] = "Djkaviar-LesClairvoyants",
-							["nome"] = "Spirit Link Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
-							["last_event"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["start_time"] = 1530810685,
-							["totaldenied"] = 0.016917,
-							["delay"] = 0,
+							["targets"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[98021] = {
 										["c_amt"] = 0,
@@ -4847,133 +4819,159 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 21428586,
-										["n_amt"] = 22,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 22,
+										["n_curado"] = 21428586,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.016917,
+							["targets_overheal"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.016917,
+							["total_without_pet"] = 0.016917,
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["end_time"] = 1530810691,
+							["delay"] = 0,
+							["ownerName"] = "Djkaviar-LesClairvoyants",
+							["nome"] = "Spirit Link Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
+							["targets_absorbs"] = {
+							},
+							["healing_taken"] = 0.016917,
+							["total"] = 0.016917,
+							["heal_enemy"] = {
+							},
+							["totaldenied"] = 0.016917,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1530810685,
+							["serial"] = "Creature-0-3111-1466-534-53006-00003E512B",
+							["tipo"] = 2,
 						}, -- [9]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 169,
 					["tipo"] = 7,
+					["combatId"] = 169,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 169,
 					["tipo"] = 9,
+					["combatId"] = 169,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[62124] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 2,
 										["id"] = 62124,
 										["uptime"] = 6,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[57723] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 57723,
 										["uptime"] = 119,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[31935] = {
-										["uptime"] = 31,
-										["activedamt"] = 0,
-										["appliedamt"] = 12,
-										["id"] = 31935,
-										["refreshamt"] = 2,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[853] = {
-										["uptime"] = 6,
-										["activedamt"] = 0,
-										["appliedamt"] = 1,
-										["id"] = 853,
 										["refreshamt"] = 0,
+									},
+									[204242] = {
+										["counter"] = 0,
+										["uptime"] = 57,
+										["activedamt"] = 0,
+										["id"] = 204242,
+										["refreshamt"] = 5,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["appliedamt"] = 30,
 									},
 									[204301] = {
-										["refreshamt"] = 286,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 84,
 										["id"] = 204301,
 										["uptime"] = 159,
 										["targets"] = {
 										},
+										["refreshamt"] = 286,
+									},
+									[853] = {
 										["counter"] = 0,
+										["uptime"] = 6,
+										["activedamt"] = 0,
+										["id"] = 853,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 									[209202] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 12,
 										["id"] = 209202,
 										["uptime"] = 45,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[206151] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 1,
 										["id"] = 206151,
 										["uptime"] = 64,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
-									[204242] = {
-										["uptime"] = 57,
+									[31935] = {
+										["counter"] = 0,
+										["uptime"] = 31,
 										["activedamt"] = 0,
-										["appliedamt"] = 30,
-										["id"] = 204242,
-										["refreshamt"] = 5,
+										["id"] = 31935,
+										["refreshamt"] = 2,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["appliedamt"] = 12,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["interrupt"] = 3.013082,
+							["nome"] = "Milkyjuggs",
 							["cooldowns_defensive"] = 5.022652,
-							["buff_uptime"] = 1531,
-							["interrupt_targets"] = {
-								["Taintheart Summoner"] = 2,
-								["Dreadfire Imp"] = 1,
+							["pets"] = {
+							},
+							["debuff_uptime_targets"] = {
 							},
 							["cc_done_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[31935] = {
 										["id"] = 31935,
 										["targets"] = {
 											["Taintheart Summoner"] = 6,
 											["Taintheart Stalker"] = 1,
-											["Dreadfire Imp"] = 1,
 											["Tormented Bloodseeker"] = 3,
+											["Dreadfire Imp"] = 1,
 										},
 										["counter"] = 11,
 									},
@@ -4985,318 +4983,269 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["classe"] = "PALADIN",
-							["cooldowns_defensive_targets"] = {
-								["Milkyjuggs"] = 4,
-								["Djkaviar-LesClairvoyants"] = 1,
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[31935] = {
+										["id"] = 31935,
+										["counter"] = 2,
+										["targets"] = {
+											["Taintheart Summoner"] = 2,
+										},
+										["interrompeu_oque"] = {
+											[201837] = 2,
+										},
+									},
+									[96231] = {
+										["id"] = 96231,
+										["counter"] = 1,
+										["targets"] = {
+											["Dreadfire Imp"] = 1,
+										},
+										["interrompeu_oque"] = {
+											[201399] = 1,
+										},
+									},
+								},
+								["tipo"] = 9,
 							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[132403] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 14,
 										["appliedamt"] = 14,
 										["id"] = 132403,
 										["uptime"] = 80,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[209388] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 29,
+										["refreshamt"] = 0,
 										["id"] = 209388,
+										["uptime"] = 45,
 										["targets"] = {
 										},
-										["uptime"] = 45,
 										["appliedamt"] = 29,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[211903] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 9,
 										["appliedamt"] = 9,
 										["id"] = 211903,
 										["uptime"] = 28,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[240059] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 3,
 										["appliedamt"] = 3,
 										["id"] = 240059,
 										["uptime"] = 4,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[253331] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 8,
+										["refreshamt"] = 0,
 										["id"] = 253331,
+										["uptime"] = 208,
 										["targets"] = {
 										},
-										["uptime"] = 208,
 										["appliedamt"] = 8,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[6940] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 6940,
 										["uptime"] = 2,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[209540] = {
-										["refreshamt"] = 16,
+										["counter"] = 0,
 										["activedamt"] = 7,
 										["appliedamt"] = 7,
 										["id"] = 209540,
 										["uptime"] = 109,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 16,
 									},
 									[225788] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 0,
 										["id"] = 225788,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["uptime"] = 212,
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[31884] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 2,
 										["appliedamt"] = 2,
 										["id"] = 31884,
 										["uptime"] = 38,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[256816] = {
-										["activedamt"] = 8,
-										["id"] = 256816,
-										["targets"] = {
-										},
-										["uptime"] = 96,
-										["appliedamt"] = 8,
-										["refreshamt"] = 2,
+										["counter"] = 0,
 										["actived"] = false,
-										["counter"] = 0,
-									},
-									[208052] = {
-										["uptime"] = 40,
-										["activedamt"] = 4,
-										["appliedamt"] = 4,
-										["id"] = 208052,
-										["refreshamt"] = 0,
+										["activedamt"] = 8,
+										["refreshamt"] = 2,
+										["id"] = 256816,
+										["uptime"] = 96,
 										["targets"] = {
 										},
+										["appliedamt"] = 8,
+									},
+									[190909] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 13,
+										["refreshamt"] = 2,
+										["id"] = 190909,
+										["uptime"] = 72,
+										["targets"] = {
+										},
+										["appliedamt"] = 13,
 									},
 									[188035] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 0,
 										["id"] = 188035,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["uptime"] = 212,
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[86659] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 86659,
 										["uptime"] = 8,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[221887] = {
+										["counter"] = 0,
 										["uptime"] = 3,
 										["activedamt"] = 1,
-										["appliedamt"] = 1,
 										["id"] = 221887,
 										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[234111] = {
-										["uptime"] = 15,
-										["activedamt"] = 5,
-										["appliedamt"] = 5,
-										["id"] = 234111,
-										["refreshamt"] = 0,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[31850] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 2,
-										["appliedamt"] = 2,
-										["id"] = 31850,
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[209332] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 2,
-										["appliedamt"] = 2,
-										["id"] = 209332,
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[188370] = {
-										["activedamt"] = 19,
-										["id"] = 188370,
-										["targets"] = {
-										},
-										["uptime"] = 134,
-										["appliedamt"] = 19,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252202] = {
-										["activedamt"] = 7,
-										["id"] = 252202,
-										["targets"] = {
-										},
-										["uptime"] = 47,
-										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									[242869] = {
-										["refreshamt"] = 7,
+										["counter"] = 0,
 										["activedamt"] = 17,
 										["appliedamt"] = 17,
 										["id"] = 242869,
 										["uptime"] = 99,
 										["targets"] = {
 										},
+										["refreshamt"] = 7,
+									},
+									[31850] = {
 										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 31850,
+										["uptime"] = 16,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[188370] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 19,
+										["refreshamt"] = 0,
+										["id"] = 188370,
+										["uptime"] = 134,
+										["targets"] = {
+										},
+										["appliedamt"] = 19,
+									},
+									[209332] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 209332,
+										["uptime"] = 16,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[252202] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 0,
+										["id"] = 252202,
+										["uptime"] = 47,
+										["targets"] = {
+										},
+										["appliedamt"] = 7,
+									},
+									[234111] = {
+										["counter"] = 0,
+										["uptime"] = 15,
+										["activedamt"] = 5,
+										["id"] = 234111,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
 									},
 									[243096] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
-										["id"] = 243096,
-										["targets"] = {
-										},
-										["uptime"] = 47,
-										["appliedamt"] = 7,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[190909] = {
-										["activedamt"] = 13,
-										["id"] = 190909,
+										["id"] = 243096,
+										["uptime"] = 47,
 										["targets"] = {
 										},
-										["uptime"] = 72,
-										["appliedamt"] = 13,
-										["refreshamt"] = 2,
-										["actived"] = false,
+										["appliedamt"] = 7,
+									},
+									[208052] = {
 										["counter"] = 0,
+										["uptime"] = 40,
+										["activedamt"] = 4,
+										["id"] = 208052,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
 									},
 								},
-							},
-							["interrupt_spells"] = {
 								["tipo"] = 9,
-								["_ActorTable"] = {
-									[31935] = {
-										["id"] = 31935,
-										["interrompeu_oque"] = {
-											[201837] = 2,
-										},
-										["targets"] = {
-											["Taintheart Summoner"] = 2,
-										},
-										["counter"] = 2,
-									},
-									[96231] = {
-										["id"] = 96231,
-										["interrompeu_oque"] = {
-											[201399] = 1,
-										},
-										["targets"] = {
-											["Dreadfire Imp"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
 							},
-							["interrompeu_oque"] = {
-								[201837] = 2,
-								[201399] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 487,
-							["pets"] = {
-							},
-							["cc_done"] = 12.028869,
-							["nome"] = "Milkyjuggs",
-							["spec"] = 66,
-							["grupo"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["cc_done_targets"] = {
-								["Taintheart Summoner"] = 6,
-								["Taintheart Stalker"] = 1,
-								["Dreadfire Imp"] = 2,
-								["Tormented Bloodseeker"] = 3,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["spell_cast"] = {
-								[96231] = 1,
-								[209202] = 5,
-								[20271] = 24,
-								[31850] = 2,
-								[853] = 1,
-								[6940] = 1,
-								[31884] = 2,
-								[53600] = 18,
-								[213652] = 15,
-								[204019] = 72,
-								[19750] = 2,
-								[86659] = 1,
-								[31935] = 26,
-								[26573] = 21,
-								[255647] = 1,
-								[190784] = 1,
-								[62124] = 1,
-							},
-							["last_event"] = 1530810691,
-							["tipo"] = 4,
-							["isTank"] = true,
-							["serial"] = "Player-1329-065BC1C8",
 							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[31850] = {
 										["id"] = 31850,
@@ -5321,320 +5270,368 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 9,
+							},
+							["interrompeu_oque"] = {
+								[201837] = 2,
+								[201399] = 1,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 487,
+							["buff_uptime"] = 1531,
+							["cc_done"] = 12.028869,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 66,
+							["grupo"] = true,
+							["cooldowns_defensive_targets"] = {
+								["Milkyjuggs"] = 4,
+								["Djkaviar-LesClairvoyants"] = 1,
+							},
+							["spell_cast"] = {
+								[96231] = 1,
+								[209202] = 5,
+								[20271] = 24,
+								[31850] = 2,
+								[853] = 1,
+								[6940] = 1,
+								[31884] = 2,
+								[53600] = 18,
+								[213652] = 15,
+								[204019] = 72,
+								[19750] = 2,
+								[86659] = 1,
+								[31935] = 26,
+								[26573] = 21,
+								[255647] = 1,
+								[62124] = 1,
+								[190784] = 1,
+							},
+							["tipo"] = 4,
+							["interrupt"] = 3.013082,
+							["last_event"] = 1530810691,
+							["interrupt_targets"] = {
+								["Taintheart Summoner"] = 2,
+								["Dreadfire Imp"] = 1,
+							},
+							["isTank"] = true,
+							["serial"] = "Player-1329-065BC1C8",
+							["cc_done_targets"] = {
+								["Taintheart Summoner"] = 6,
+								["Taintheart Stalker"] = 1,
+								["Tormented Bloodseeker"] = 3,
+								["Dreadfire Imp"] = 2,
 							},
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[240606] = {
-										["refreshamt"] = 73,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 15,
 										["id"] = 240606,
 										["uptime"] = 199,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 73,
 									},
 									[57723] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 57723,
 										["uptime"] = 119,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[164812] = {
-										["refreshamt"] = 9,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 16,
 										["id"] = 164812,
 										["uptime"] = 200,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 9,
 									},
 									[197637] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 26,
 										["id"] = 197637,
 										["uptime"] = 88,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[164815] = {
-										["refreshamt"] = 9,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 22,
 										["id"] = 164815,
 										["uptime"] = 183,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[78675] = {
-										["uptime"] = 8,
-										["activedamt"] = 0,
-										["appliedamt"] = 4,
-										["id"] = 78675,
-										["refreshamt"] = 0,
-										["targets"] = {
-										},
-										["counter"] = 0,
+										["refreshamt"] = 9,
 									},
 									[240607] = {
-										["refreshamt"] = 85,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 18,
 										["id"] = 240607,
 										["uptime"] = 191,
 										["targets"] = {
 										},
+										["refreshamt"] = 85,
+									},
+									[78675] = {
 										["counter"] = 0,
-									},
-								},
-							},
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[97547] = {
-										["id"] = 97547,
-										["interrompeu_oque"] = {
-											[201837] = 1,
-										},
+										["uptime"] = 8,
+										["activedamt"] = 0,
+										["id"] = 78675,
+										["refreshamt"] = 0,
 										["targets"] = {
-											["Taintheart Summoner"] = 1,
 										},
-										["counter"] = 1,
+										["appliedamt"] = 4,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["cooldowns_defensive"] = 5.013249,
 							["pets"] = {
 							},
-							["interrupt_targets"] = {
-								["Taintheart Summoner"] = 1,
-							},
+							["nome"] = "Temporäs",
 							["classe"] = "DRUID",
-							["cooldowns_defensive_targets"] = {
-								["Temporäs"] = 5,
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[97547] = {
+										["id"] = 97547,
+										["counter"] = 1,
+										["targets"] = {
+											["Taintheart Summoner"] = 1,
+										},
+										["interrompeu_oque"] = {
+											[201837] = 1,
+										},
+									},
+								},
+								["tipo"] = 9,
 							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[209407] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 4,
 										["appliedamt"] = 4,
 										["id"] = 209407,
 										["uptime"] = 9,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[22842] = {
-										["refreshamt"] = 1,
+										["counter"] = 0,
 										["activedamt"] = 2,
 										["appliedamt"] = 2,
 										["id"] = 22842,
 										["uptime"] = 7,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 1,
 									},
 									[24858] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 9,
+										["refreshamt"] = 0,
 										["id"] = 24858,
+										["uptime"] = 201,
 										["targets"] = {
 										},
-										["uptime"] = 201,
 										["appliedamt"] = 9,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[228461] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 228461,
 										["uptime"] = 12,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[164547] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 15,
+										["refreshamt"] = 0,
 										["id"] = 164547,
+										["uptime"] = 143,
 										["targets"] = {
 										},
-										["uptime"] = 143,
 										["appliedamt"] = 15,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[242586] = {
-										["refreshamt"] = 1,
+										["counter"] = 0,
 										["activedamt"] = 8,
 										["appliedamt"] = 8,
 										["id"] = 242586,
 										["uptime"] = 57,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 1,
 									},
 									[225788] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 0,
 										["id"] = 225788,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["uptime"] = 212,
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[253258] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 2,
 										["appliedamt"] = 2,
 										["id"] = 253258,
 										["uptime"] = 30,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[229206] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 229206,
 										["uptime"] = 59,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[157228] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 157228,
 										["uptime"] = 2,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[202461] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 5,
 										["appliedamt"] = 5,
 										["id"] = 202461,
 										["uptime"] = 72,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[194223] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 194223,
 										["uptime"] = 15,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[239952] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 7,
 										["id"] = 239952,
+										["uptime"] = 211,
 										["targets"] = {
 										},
-										["uptime"] = 211,
 										["appliedamt"] = 7,
-										["refreshamt"] = 7,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[202942] = {
-										["refreshamt"] = 13,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 202942,
 										["uptime"] = 15,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 13,
 									},
 									[164545] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 16,
+										["refreshamt"] = 0,
 										["id"] = 164545,
+										["uptime"] = 117,
 										["targets"] = {
 										},
-										["uptime"] = 117,
 										["appliedamt"] = 16,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[209406] = {
-										["refreshamt"] = 1,
+										["counter"] = 0,
 										["activedamt"] = 3,
 										["appliedamt"] = 3,
 										["id"] = 209406,
 										["uptime"] = 6,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 1,
 									},
-									[5487] = {
+									[22812] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 4,
 										["refreshamt"] = 0,
-										["activedamt"] = 6,
-										["appliedamt"] = 6,
-										["id"] = 5487,
-										["uptime"] = 11,
+										["id"] = 22812,
+										["uptime"] = 20,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["appliedamt"] = 4,
 									},
 									[191034] = {
-										["refreshamt"] = 8,
+										["counter"] = 0,
 										["activedamt"] = 6,
 										["appliedamt"] = 6,
 										["id"] = 191034,
 										["uptime"] = 85,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 8,
 									},
-									[22812] = {
-										["activedamt"] = 4,
-										["id"] = 22812,
+									[5487] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 5487,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 20,
-										["appliedamt"] = 4,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["interrompeu_oque"] = {
 								[201837] = 1,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 988,
+							["tipo"] = 4,
+							["serial"] = "Player-1329-064EA132",
 							["interrupt"] = 1.004954,
-							["buff_uptime_targets"] = {
+							["interrupt_targets"] = {
+								["Taintheart Summoner"] = 1,
 							},
-							["spec"] = 102,
 							["grupo"] = true,
 							["spell_cast"] = {
 								[22842] = 3,
@@ -5648,18 +5645,22 @@ _detalhes_database = {
 								[191034] = 14,
 								[190984] = 33,
 								[202768] = 5,
-								[2782] = 1,
+								[24858] = 2,
 								[8921] = 15,
 								[194153] = 24,
 								[78674] = 24,
 								[78675] = 1,
 								[93402] = 14,
-								[24858] = 2,
+								[2782] = 1,
 							},
+							["buff_uptime"] = 1284,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1530810691,
 							["debuff_uptime_targets"] = {
 							},
+							["spec"] = 102,
 							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[22842] = {
 										["id"] = 22842,
@@ -5676,77 +5677,72 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["last_event"] = 1530810691,
-							["buff_uptime"] = 1284,
-							["nome"] = "Temporäs",
-							["serial"] = "Player-1329-064EA132",
-							["tipo"] = 4,
+							["cooldowns_defensive_targets"] = {
+								["Temporäs"] = 5,
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[57723] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 57723,
 										["uptime"] = 119,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[252907] = {
-										["refreshamt"] = 5,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 10,
 										["id"] = 252907,
 										["uptime"] = 150,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 5,
 									},
 									[206491] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 1,
 										["id"] = 206491,
 										["uptime"] = 60,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[179057] = {
-										["uptime"] = 15,
-										["activedamt"] = 0,
-										["appliedamt"] = 12,
-										["id"] = 179057,
 										["refreshamt"] = 0,
-										["targets"] = {
-										},
-										["counter"] = 0,
 									},
 									[202443] = {
-										["refreshamt"] = 375,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 30,
 										["id"] = 202443,
 										["uptime"] = 41,
 										["targets"] = {
 										},
+										["refreshamt"] = 375,
+									},
+									[179057] = {
 										["counter"] = 0,
+										["uptime"] = 15,
+										["activedamt"] = 0,
+										["id"] = 179057,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 12,
 									},
 								},
-							},
-							["interrupt_targets"] = {
-								["Dreadfire Imp"] = 2,
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 1315,
-							["interrupt"] = 2.013396,
+							["spec"] = 577,
 							["cc_done_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[179057] = {
 										["id"] = 179057,
@@ -5754,250 +5750,258 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 2,
 											["Deadeye Decoy"] = 1,
 											["Tormented Bloodseeker"] = 5,
-											["Taintheart Stalker"] = 1,
 											["Dreadfire Imp"] = 3,
+											["Taintheart Stalker"] = 1,
 										},
 										["counter"] = 12,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["classe"] = "DEMONHUNTER",
 							["interrupt_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[183752] = {
 										["id"] = 183752,
-										["interrompeu_oque"] = {
-											[201411] = 2,
-										},
+										["counter"] = 2,
 										["targets"] = {
 											["Dreadfire Imp"] = 2,
 										},
-										["counter"] = 2,
+										["interrompeu_oque"] = {
+											[201411] = 2,
+										},
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[252202] = {
-										["refreshamt"] = 2,
+										["counter"] = 0,
 										["activedamt"] = 7,
 										["appliedamt"] = 7,
 										["id"] = 252202,
 										["uptime"] = 84,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 2,
 									},
 									[162264] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 10,
 										["appliedamt"] = 10,
 										["id"] = 162264,
 										["uptime"] = 127,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[198013] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 21,
 										["appliedamt"] = 21,
 										["id"] = 198013,
 										["uptime"] = 22,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[252165] = {
-										["refreshamt"] = 1,
+										["counter"] = 0,
 										["activedamt"] = 11,
 										["appliedamt"] = 11,
 										["id"] = 252165,
 										["uptime"] = 93,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 1,
 									},
 									[225602] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 0,
 										["id"] = 225602,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["uptime"] = 212,
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[242584] = {
-										["refreshamt"] = 2,
+										["counter"] = 0,
 										["activedamt"] = 7,
 										["appliedamt"] = 7,
 										["id"] = 242584,
 										["uptime"] = 84,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 2,
 									},
 									[256821] = {
-										["actived_at"] = 1530810451,
+										["counter"] = 0,
 										["refreshamt"] = 4,
 										["activedamt"] = 9,
-										["appliedamt"] = 9,
-										["id"] = 256821,
 										["uptime"] = 56,
+										["id"] = 256821,
+										["appliedamt"] = 9,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["actived_at"] = 1530810451,
 									},
 									[188033] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 0,
 										["id"] = 188033,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["uptime"] = 212,
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[212800] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 212800,
 										["uptime"] = 10,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[208052] = {
-										["uptime"] = 30,
-										["activedamt"] = 3,
-										["appliedamt"] = 3,
-										["id"] = 208052,
 										["refreshamt"] = 0,
+									},
+									[225788] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 0,
+										["id"] = 225788,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[163073] = {
-										["uptime"] = 26,
-										["activedamt"] = 4,
-										["appliedamt"] = 4,
-										["id"] = 163073,
-										["refreshamt"] = 0,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[229206] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 2,
-										["appliedamt"] = 2,
-										["id"] = 229206,
-										["uptime"] = 63,
-										["targets"] = {
-										},
-										["counter"] = 0,
+										["appliedamt"] = 7,
 									},
 									[252801] = {
-										["refreshamt"] = 2,
+										["counter"] = 0,
 										["activedamt"] = 7,
 										["appliedamt"] = 7,
 										["id"] = 252801,
 										["uptime"] = 84,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 2,
 									},
-									[225788] = {
-										["activedamt"] = 7,
-										["id"] = 225788,
+									[229206] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 229206,
+										["uptime"] = 63,
 										["targets"] = {
 										},
-										["uptime"] = 212,
-										["appliedamt"] = 7,
 										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[163073] = {
 										["counter"] = 0,
+										["uptime"] = 26,
+										["activedamt"] = 4,
+										["id"] = 163073,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
+									},
+									[208052] = {
+										["counter"] = 0,
+										["uptime"] = 30,
+										["activedamt"] = 3,
+										["id"] = 208052,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["interrompeu_oque"] = {
 								[201411] = 2,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 385,
+							["tipo"] = 4,
+							["cc_done"] = 12.02348,
+							["interrupt"] = 2.013396,
+							["interrupt_targets"] = {
+								["Dreadfire Imp"] = 2,
+							},
+							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Taintheart Summoner"] = 2,
 								["Deadeye Decoy"] = 1,
 								["Tormented Bloodseeker"] = 5,
-								["Taintheart Stalker"] = 1,
 								["Dreadfire Imp"] = 3,
+								["Taintheart Stalker"] = 1,
 							},
-							["cc_done"] = 12.02348,
-							["buff_uptime_targets"] = {
+							["pets"] = {
 							},
-							["spec"] = 577,
-							["grupo"] = true,
+							["nome"] = "Imakitteh-Kazzak",
+							["last_event"] = 1530810691,
+							["debuff_uptime_targets"] = {
+							},
 							["spell_cast"] = {
 								[201427] = 76,
 								[198013] = 12,
 								[201467] = 3,
 								[200166] = 1,
-								[179057] = 3,
-								[183752] = 2,
+								[198793] = 1,
+								[131347] = 1,
 								[195072] = 8,
 								[162794] = 33,
 								[206491] = 1,
 								[162243] = 39,
-								[131347] = 1,
-								[198793] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1530810691,
-							["nome"] = "Imakitteh-Kazzak",
-							["pets"] = {
+								[183752] = 2,
+								[179057] = 3,
 							},
 							["serial"] = "Player-1305-09C49A7E",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[188838] = {
-										["refreshamt"] = 4,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 2,
 										["id"] = 188838,
 										["uptime"] = 111,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 4,
 									},
 									[57723] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 57723,
 										["uptime"] = 119,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["dispell"] = 4.014848,
 							["cooldowns_defensive"] = 5.016563,
 							["buff_uptime"] = 1768,
+							["pets"] = {
+								"Healing Stream Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [1]
+								"Earthen Shield Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [2]
+								"Lightning Surge Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [3]
+							},
 							["cc_done_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[118905] = {
 										["id"] = 118905,
@@ -6005,12 +6009,13 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 2,
 											["Deadeye Decoy"] = 1,
 											["Dreadfire Imp"] = 3,
-											["Tormented Bloodseeker"] = 1,
 											["Taintheart Stalker"] = 1,
+											["Tormented Bloodseeker"] = 1,
 										},
 										["counter"] = 8,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["classe"] = "SHAMAN",
 							["cooldowns_defensive_targets"] = {
@@ -6022,36 +6027,28 @@ _detalhes_database = {
 								[225568] = 1,
 							},
 							["dispell_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[77130] = {
-										["dispell"] = 4,
-										["id"] = 77130,
-										["dispell_oque"] = {
-											[200182] = 3,
-											[225568] = 1,
-										},
 										["targets"] = {
 											["Krixidk"] = 2,
 											["Imakitteh-Kazzak"] = 1,
 											["Djkaviar-LesClairvoyants"] = 1,
 										},
+										["id"] = 77130,
+										["dispell_oque"] = {
+											[200182] = 3,
+											[225568] = 1,
+										},
+										["dispell"] = 4,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["dispell_targets"] = {
-								["Krixidk"] = 2,
-								["Imakitteh-Kazzak"] = 1,
-								["Djkaviar-LesClairvoyants"] = 1,
-							},
+							["last_event"] = 1530810691,
 							["fight_component"] = true,
 							["debuff_uptime"] = 230,
-							["pets"] = {
-								"Healing Stream Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [1]
-								"Earthen Shield Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [2]
-								"Lightning Surge Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>", -- [3]
-							},
+							["serial"] = "Player-1127-06EFE875",
 							["cc_done"] = 8.026355,
 							["nome"] = "Djkaviar-LesClairvoyants",
 							["spec"] = 264,
@@ -6060,8 +6057,317 @@ _detalhes_database = {
 								["Taintheart Summoner"] = 2,
 								["Deadeye Decoy"] = 1,
 								["Dreadfire Imp"] = 3,
-								["Tormented Bloodseeker"] = 1,
 								["Taintheart Stalker"] = 1,
+								["Tormented Bloodseeker"] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[79206] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 79206,
+										["uptime"] = 27,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[114052] = {
+										["counter"] = 0,
+										["activedamt"] = 2,
+										["appliedamt"] = 2,
+										["id"] = 114052,
+										["uptime"] = 22,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[208981] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 208981,
+										["uptime"] = 137,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[209950] = {
+										["counter"] = 0,
+										["activedamt"] = 7,
+										["appliedamt"] = 7,
+										["id"] = 209950,
+										["uptime"] = 79,
+										["targets"] = {
+										},
+										["refreshamt"] = 1,
+									},
+									[207288] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 30,
+										["refreshamt"] = 9,
+										["id"] = 207288,
+										["uptime"] = 96,
+										["targets"] = {
+										},
+										["appliedamt"] = 30,
+									},
+									[225788] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 0,
+										["id"] = 225788,
+										["uptime"] = 212,
+										["targets"] = {
+										},
+										["appliedamt"] = 7,
+									},
+									[208416] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 208416,
+										["uptime"] = 40,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[2645] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 2645,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[242586] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 242586,
+										["uptime"] = 79,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[72968] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 0,
+										["id"] = 72968,
+										["uptime"] = 212,
+										["targets"] = {
+										},
+										["appliedamt"] = 7,
+									},
+									[108280] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 108280,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[108281] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 108281,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[252801] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 252801,
+										["uptime"] = 79,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[190027] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 5,
+										["refreshamt"] = 2,
+										["id"] = 190027,
+										["uptime"] = 68,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
+									},
+									[255227] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 255227,
+										["uptime"] = 19,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[61295] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 6,
+										["refreshamt"] = 0,
+										["id"] = 61295,
+										["uptime"] = 55,
+										["targets"] = {
+										},
+										["appliedamt"] = 6,
+									},
+									[227723] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 0,
+										["id"] = 227723,
+										["uptime"] = 212,
+										["targets"] = {
+										},
+										["appliedamt"] = 7,
+									},
+									[207778] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 207778,
+										["uptime"] = 18,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[32182] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 32182,
+										["uptime"] = 40,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[53390] = {
+										["counter"] = 0,
+										["activedamt"] = 24,
+										["appliedamt"] = 24,
+										["id"] = 53390,
+										["uptime"] = 140,
+										["targets"] = {
+										},
+										["refreshamt"] = 10,
+									},
+									[73920] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["actived_at"] = 1530810456,
+										["id"] = 73920,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[77762] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 77762,
+										["uptime"] = 30,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[108271] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 108271,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[201633] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 5,
+										["refreshamt"] = 0,
+										["id"] = 201633,
+										["uptime"] = 24,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
+									},
+									[207527] = {
+										["counter"] = 0,
+										["uptime"] = 2,
+										["activedamt"] = 2,
+										["id"] = 207527,
+										["refreshamt"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[252202] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 252202,
+										["uptime"] = 79,
+										["targets"] = {
+										},
+										["refreshamt"] = 2,
+									},
+									[170397] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["appliedamt"] = 1,
+										["id"] = 170397,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[208899] = {
+										["counter"] = 0,
+										["activedamt"] = 6,
+										["appliedamt"] = 6,
+										["id"] = 208899,
+										["uptime"] = 46,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[192001] = {
+										["counter"] = 0,
+										["appliedamt"] = 2,
+										["activedamt"] = 2,
+										["actived_at"] = 3061621003,
+										["id"] = 192001,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
 							},
 							["spell_cast"] = {
 								[79206] = 2,
@@ -6078,348 +6384,17 @@ _detalhes_database = {
 								[32182] = 1,
 								[61295] = 30,
 								[73920] = 9,
-								[51505] = 10,
-								[421] = 1,
-								[188838] = 6,
-								[192058] = 2,
-								[8004] = 29,
-								[170397] = 1,
-								[108280] = 1,
 								[77472] = 17,
-							},
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[79206] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 2,
-										["appliedamt"] = 2,
-										["id"] = 79206,
-										["uptime"] = 27,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[114052] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 2,
-										["appliedamt"] = 2,
-										["id"] = 114052,
-										["uptime"] = 22,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[208981] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 3,
-										["appliedamt"] = 3,
-										["id"] = 208981,
-										["uptime"] = 137,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[209950] = {
-										["refreshamt"] = 1,
-										["activedamt"] = 7,
-										["appliedamt"] = 7,
-										["id"] = 209950,
-										["uptime"] = 79,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[207288] = {
-										["activedamt"] = 30,
-										["id"] = 207288,
-										["targets"] = {
-										},
-										["uptime"] = 96,
-										["appliedamt"] = 30,
-										["refreshamt"] = 9,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[170397] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 1,
-										["appliedamt"] = 1,
-										["id"] = 170397,
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[208416] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 1,
-										["appliedamt"] = 1,
-										["id"] = 208416,
-										["uptime"] = 40,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[73920] = {
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 73920,
-										["actived_at"] = 1530810456,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[242586] = {
-										["refreshamt"] = 2,
-										["activedamt"] = 10,
-										["appliedamt"] = 10,
-										["id"] = 242586,
-										["uptime"] = 79,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[72968] = {
-										["activedamt"] = 7,
-										["id"] = 72968,
-										["targets"] = {
-										},
-										["uptime"] = 212,
-										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[192001] = {
-										["refreshamt"] = 0,
-										["appliedamt"] = 2,
-										["activedamt"] = 2,
-										["uptime"] = 0,
-										["id"] = 192001,
-										["actived_at"] = 3061621003,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[108281] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 1,
-										["appliedamt"] = 1,
-										["id"] = 108281,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[252801] = {
-										["refreshamt"] = 2,
-										["activedamt"] = 10,
-										["appliedamt"] = 10,
-										["id"] = 252801,
-										["uptime"] = 79,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[208899] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 6,
-										["appliedamt"] = 6,
-										["id"] = 208899,
-										["uptime"] = 46,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[255227] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 3,
-										["appliedamt"] = 3,
-										["id"] = 255227,
-										["uptime"] = 19,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[190027] = {
-										["activedamt"] = 5,
-										["id"] = 190027,
-										["targets"] = {
-										},
-										["uptime"] = 68,
-										["appliedamt"] = 5,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53390] = {
-										["refreshamt"] = 10,
-										["activedamt"] = 24,
-										["appliedamt"] = 24,
-										["id"] = 53390,
-										["uptime"] = 140,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[207778] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 3,
-										["appliedamt"] = 3,
-										["id"] = 207778,
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[32182] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 1,
-										["appliedamt"] = 1,
-										["id"] = 32182,
-										["uptime"] = 40,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[61295] = {
-										["activedamt"] = 6,
-										["id"] = 61295,
-										["targets"] = {
-										},
-										["uptime"] = 55,
-										["appliedamt"] = 6,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227723] = {
-										["activedamt"] = 7,
-										["id"] = 227723,
-										["targets"] = {
-										},
-										["uptime"] = 212,
-										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[108271] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 1,
-										["appliedamt"] = 1,
-										["id"] = 108271,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[77762] = {
-										["refreshamt"] = 2,
-										["activedamt"] = 6,
-										["appliedamt"] = 6,
-										["id"] = 77762,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[201633] = {
-										["activedamt"] = 5,
-										["id"] = 201633,
-										["targets"] = {
-										},
-										["uptime"] = 24,
-										["appliedamt"] = 5,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[207527] = {
-										["uptime"] = 2,
-										["activedamt"] = 2,
-										["appliedamt"] = 2,
-										["id"] = 207527,
-										["refreshamt"] = 2,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[252202] = {
-										["refreshamt"] = 2,
-										["activedamt"] = 10,
-										["appliedamt"] = 10,
-										["id"] = 252202,
-										["uptime"] = 79,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[108280] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 1,
-										["appliedamt"] = 1,
-										["id"] = 108280,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[2645] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 3,
-										["appliedamt"] = 3,
-										["id"] = 2645,
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[225788] = {
-										["activedamt"] = 7,
-										["id"] = 225788,
-										["targets"] = {
-										},
-										["uptime"] = 212,
-										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
+								[108280] = 1,
+								[8004] = 29,
+								[192058] = 2,
+								[51505] = 10,
+								[170397] = 1,
+								[188838] = 6,
+								[421] = 1,
 							},
 							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[108271] = {
-										["id"] = 108271,
-										["targets"] = {
-											["Djkaviar-LesClairvoyants"] = 1,
-										},
-										["counter"] = 1,
-									},
-									[108280] = {
-										["id"] = 108280,
-										["targets"] = {
-											["[*] raid wide cooldown"] = 1,
-										},
-										["counter"] = 1,
-									},
-									[108281] = {
-										["id"] = 108281,
-										["targets"] = {
-											["[*] raid wide cooldown"] = 1,
-										},
-										["counter"] = 1,
-									},
 									[98008] = {
 										["id"] = 98008,
 										["targets"] = {
@@ -6427,457 +6402,467 @@ _detalhes_database = {
 										},
 										["counter"] = 2,
 									},
+									[108271] = {
+										["id"] = 108271,
+										["targets"] = {
+											["Djkaviar-LesClairvoyants"] = 1,
+										},
+										["counter"] = 1,
+									},
+									[108281] = {
+										["id"] = 108281,
+										["targets"] = {
+											["[*] raid wide cooldown"] = 1,
+										},
+										["counter"] = 1,
+									},
+									[108280] = {
+										["id"] = 108280,
+										["targets"] = {
+											["[*] raid wide cooldown"] = 1,
+										},
+										["counter"] = 1,
+									},
 								},
+								["tipo"] = 9,
 							},
-							["serial"] = "Player-1127-06EFE875",
-							["last_event"] = 1530810691,
+							["dispell_targets"] = {
+								["Krixidk"] = 2,
+								["Imakitteh-Kazzak"] = 1,
+								["Djkaviar-LesClairvoyants"] = 1,
+							},
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[252907] = {
-										["refreshamt"] = 6,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 12,
 										["id"] = 252907,
 										["uptime"] = 140,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 6,
 									},
 									[211794] = {
-										["refreshamt"] = 37,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 11,
 										["id"] = 211794,
 										["uptime"] = 34,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 37,
 									},
 									[55095] = {
-										["refreshamt"] = 43,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 17,
 										["id"] = 55095,
 										["uptime"] = 195,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 43,
 									},
 									[51714] = {
-										["refreshamt"] = 67,
+										["counter"] = 0,
 										["activedamt"] = 0,
 										["appliedamt"] = 18,
 										["id"] = 51714,
 										["uptime"] = 194,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 67,
 									},
 									[207171] = {
+										["counter"] = 0,
 										["uptime"] = 4,
 										["activedamt"] = 0,
-										["appliedamt"] = 4,
 										["id"] = 207171,
 										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["appliedamt"] = 4,
 									},
 									[211793] = {
+										["counter"] = 0,
 										["uptime"] = 44,
 										["activedamt"] = 0,
-										["appliedamt"] = 17,
 										["id"] = 211793,
 										["refreshamt"] = 119,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["appliedamt"] = 17,
 									},
 									[190780] = {
+										["counter"] = 0,
 										["uptime"] = 10,
 										["activedamt"] = 0,
-										["appliedamt"] = 4,
 										["id"] = 190780,
 										["refreshamt"] = 0,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[160029] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 0,
-										["appliedamt"] = 1,
-										["id"] = 160029,
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["counter"] = 0,
+										["appliedamt"] = 4,
 									},
 									[57723] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 57723,
 										["uptime"] = 119,
 										["targets"] = {
 										},
+										["refreshamt"] = 0,
+									},
+									[160029] = {
 										["counter"] = 0,
+										["activedamt"] = 0,
+										["appliedamt"] = 1,
+										["id"] = 160029,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["ress_targets"] = {
 								["Milkyjuggs"] = 1,
 							},
+							["serial"] = "Player-1329-064AEDEB",
 							["cooldowns_defensive"] = 4.023835,
 							["buff_uptime"] = 2643,
-							["debuff_uptime"] = 742,
-							["interrupt"] = 2.013748,
+							["spec"] = 251,
+							["last_event"] = 1530810691,
 							["classe"] = "DEATHKNIGHT",
 							["cooldowns_defensive_targets"] = {
 								["Krixidk"] = 4,
 							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[180612] = {
-										["refreshamt"] = 2,
+										["counter"] = 0,
 										["activedamt"] = 3,
 										["appliedamt"] = 3,
 										["id"] = 180612,
 										["uptime"] = 14,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 2,
 									},
-									[190909] = {
-										["refreshamt"] = 3,
-										["activedamt"] = 12,
-										["appliedamt"] = 12,
-										["id"] = 190909,
-										["uptime"] = 71,
+									[59052] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 25,
+										["refreshamt"] = 6,
+										["id"] = 59052,
+										["uptime"] = 57,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["appliedamt"] = 25,
 									},
-									[208052] = {
-										["uptime"] = 35,
-										["activedamt"] = 4,
-										["appliedamt"] = 4,
-										["id"] = 208052,
+									[225788] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
 										["refreshamt"] = 0,
+										["id"] = 225788,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["appliedamt"] = 7,
 									},
 									[256826] = {
-										["refreshamt"] = 1,
+										["counter"] = 0,
 										["activedamt"] = 5,
 										["appliedamt"] = 5,
 										["id"] = 256826,
 										["uptime"] = 65,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 1,
 									},
 									[224001] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 0,
 										["id"] = 224001,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["uptime"] = 212,
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[235599] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 6,
-										["id"] = 235599,
-										["targets"] = {
-										},
-										["uptime"] = 119,
-										["appliedamt"] = 6,
 										["refreshamt"] = 50,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[42777] = {
-										["actived_at"] = 1530810434,
-										["uptime"] = 0,
-										["activedamt"] = 1,
-										["appliedamt"] = 1,
-										["id"] = 42777,
-										["refreshamt"] = 0,
+										["id"] = 235599,
+										["uptime"] = 119,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[250146] = {
-										["activedamt"] = 7,
-										["id"] = 250146,
-										["targets"] = {
-										},
-										["uptime"] = 212,
-										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 6,
 									},
 									[245686] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 0,
 										["id"] = 245686,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["uptime"] = 212,
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[250146] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 0,
+										["id"] = 250146,
+										["uptime"] = 212,
+										["targets"] = {
+										},
+										["appliedamt"] = 7,
+									},
+									[190909] = {
+										["counter"] = 0,
+										["activedamt"] = 12,
+										["appliedamt"] = 12,
+										["id"] = 190909,
+										["uptime"] = 71,
+										["targets"] = {
+										},
+										["refreshamt"] = 3,
 									},
 									[253595] = {
-										["refreshamt"] = 9,
+										["counter"] = 0,
 										["activedamt"] = 4,
 										["appliedamt"] = 4,
 										["id"] = 253595,
 										["uptime"] = 24,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 9,
 									},
 									[188034] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 7,
+										["refreshamt"] = 0,
 										["id"] = 188034,
+										["uptime"] = 212,
 										["targets"] = {
 										},
-										["uptime"] = 212,
 										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[229206] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 229206,
 										["uptime"] = 60,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[204957] = {
-										["refreshamt"] = 13,
-										["activedamt"] = 8,
-										["appliedamt"] = 8,
-										["id"] = 204957,
-										["uptime"] = 65,
-										["targets"] = {
-										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[253307] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 13,
+										["refreshamt"] = 10,
 										["id"] = 253307,
+										["uptime"] = 151,
 										["targets"] = {
 										},
-										["uptime"] = 151,
 										["appliedamt"] = 13,
-										["refreshamt"] = 10,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[212552] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 2,
 										["appliedamt"] = 2,
 										["id"] = 212552,
 										["uptime"] = 5,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[242583] = {
-										["activedamt"] = 11,
-										["id"] = 242583,
-										["targets"] = {
-										},
-										["uptime"] = 84,
-										["appliedamt"] = 11,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[51124] = {
-										["refreshamt"] = 35,
-										["activedamt"] = 33,
-										["appliedamt"] = 33,
-										["id"] = 51124,
-										["uptime"] = 42,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[225603] = {
-										["activedamt"] = 7,
-										["id"] = 225603,
-										["targets"] = {
-										},
-										["uptime"] = 212,
-										["appliedamt"] = 7,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[101568] = {
-										["uptime"] = 35,
-										["activedamt"] = 5,
-										["appliedamt"] = 5,
-										["id"] = 101568,
-										["refreshamt"] = 2,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[48707] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 3,
-										["appliedamt"] = 3,
-										["id"] = 48707,
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[51271] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 4,
-										["appliedamt"] = 4,
-										["id"] = 51271,
-										["uptime"] = 80,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[253308] = {
-										["refreshamt"] = 5,
-										["activedamt"] = 10,
-										["appliedamt"] = 10,
-										["id"] = 253308,
-										["uptime"] = 112,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[205659] = {
-										["refreshamt"] = 0,
-										["activedamt"] = 4,
-										["appliedamt"] = 4,
-										["id"] = 205659,
-										["uptime"] = 80,
-										["targets"] = {
-										},
-										["counter"] = 0,
 									},
 									[48792] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 1,
 										["appliedamt"] = 1,
 										["id"] = 48792,
 										["uptime"] = 8,
 										["targets"] = {
 										},
+										["refreshamt"] = 0,
+									},
+									[242583] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 11,
+										["refreshamt"] = 0,
+										["id"] = 242583,
+										["uptime"] = 84,
+										["targets"] = {
+										},
+										["appliedamt"] = 11,
+									},
+									[51124] = {
+										["counter"] = 0,
+										["activedamt"] = 33,
+										["appliedamt"] = 33,
+										["id"] = 51124,
+										["uptime"] = 42,
+										["targets"] = {
+										},
+										["refreshamt"] = 35,
+									},
+									[204957] = {
+										["counter"] = 0,
+										["activedamt"] = 8,
+										["appliedamt"] = 8,
+										["id"] = 204957,
+										["uptime"] = 65,
+										["targets"] = {
+										},
+										["refreshamt"] = 13,
+									},
+									[101568] = {
+										["counter"] = 0,
+										["uptime"] = 35,
+										["activedamt"] = 5,
+										["id"] = 101568,
+										["refreshamt"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
+									},
+									[48707] = {
+										["counter"] = 0,
+										["activedamt"] = 3,
+										["appliedamt"] = 3,
+										["id"] = 48707,
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[253308] = {
+										["counter"] = 0,
+										["activedamt"] = 10,
+										["appliedamt"] = 10,
+										["id"] = 253308,
+										["uptime"] = 112,
+										["targets"] = {
+										},
+										["refreshamt"] = 5,
+									},
+									[51271] = {
+										["counter"] = 0,
+										["activedamt"] = 4,
+										["appliedamt"] = 4,
+										["id"] = 51271,
+										["uptime"] = 80,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[205659] = {
+										["counter"] = 0,
+										["activedamt"] = 4,
+										["appliedamt"] = 4,
+										["id"] = 205659,
+										["uptime"] = 80,
+										["targets"] = {
+										},
+										["refreshamt"] = 0,
+									},
+									[225603] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 7,
+										["refreshamt"] = 0,
+										["id"] = 225603,
+										["uptime"] = 212,
+										["targets"] = {
+										},
+										["appliedamt"] = 7,
 									},
 									[196770] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 8,
 										["appliedamt"] = 8,
 										["id"] = 196770,
 										["uptime"] = 64,
 										["targets"] = {
 										},
-										["counter"] = 0,
+										["refreshamt"] = 0,
 									},
 									[53365] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 13,
+										["refreshamt"] = 10,
 										["id"] = 53365,
+										["uptime"] = 155,
 										["targets"] = {
 										},
-										["uptime"] = 155,
 										["appliedamt"] = 13,
-										["refreshamt"] = 10,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[207256] = {
-										["refreshamt"] = 0,
+										["counter"] = 0,
 										["activedamt"] = 3,
 										["appliedamt"] = 3,
 										["id"] = 207256,
 										["uptime"] = 30,
 										["targets"] = {
 										},
-										["counter"] = 0,
-									},
-									[225788] = {
-										["activedamt"] = 7,
-										["id"] = 225788,
-										["targets"] = {
-										},
-										["uptime"] = 212,
-										["appliedamt"] = 7,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[59052] = {
-										["activedamt"] = 25,
-										["id"] = 59052,
+									[42777] = {
+										["counter"] = 0,
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 42777,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 57,
-										["appliedamt"] = 25,
-										["refreshamt"] = 6,
-										["actived"] = false,
+										["actived_at"] = 1530810434,
+									},
+									[208052] = {
 										["counter"] = 0,
+										["uptime"] = 35,
+										["activedamt"] = 4,
+										["id"] = 208052,
+										["refreshamt"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
 									},
 								},
-							},
-							["pets"] = {
+								["tipo"] = 9,
 							},
 							["interrompeu_oque"] = {
 								[201837] = 1,
 								[201399] = 1,
 							},
 							["fight_component"] = true,
-							["ress"] = 1.002718,
-							["interrupt_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47528] = {
-										["id"] = 47528,
-										["interrompeu_oque"] = {
-											[201837] = 1,
-											[201399] = 1,
-										},
-										["targets"] = {
-											["Taintheart Summoner"] = 1,
-											["Dreadfire Imp"] = 1,
-										},
-										["counter"] = 2,
-									},
-								},
+							["debuff_uptime"] = 742,
+							["debuff_uptime_targets"] = {
 							},
+							["buff_uptime_targets"] = {
+							},
+							["interrupt"] = 2.013748,
 							["interrupt_targets"] = {
 								["Taintheart Summoner"] = 1,
 								["Dreadfire Imp"] = 1,
 							},
-							["nome"] = "Krixidk",
-							["spec"] = 251,
 							["grupo"] = true,
 							["spell_cast"] = {
 								[49184] = 29,
@@ -6900,8 +6885,40 @@ _detalhes_database = {
 								[45524] = 3,
 								[212552] = 2,
 							},
-							["cooldowns_defensive_spells"] = {
+							["ress"] = 1.002718,
+							["ress_spells"] = {
+								["_ActorTable"] = {
+									[61999] = {
+										["id"] = 61999,
+										["ress"] = 1,
+										["targets"] = {
+											["Milkyjuggs"] = 1,
+										},
+										["counter"] = 0,
+									},
+								},
 								["tipo"] = 9,
+							},
+							["tipo"] = 4,
+							["nome"] = "Krixidk",
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[47528] = {
+										["id"] = 47528,
+										["counter"] = 2,
+										["targets"] = {
+											["Taintheart Summoner"] = 1,
+											["Dreadfire Imp"] = 1,
+										},
+										["interrompeu_oque"] = {
+											[201837] = 1,
+											[201399] = 1,
+										},
+									},
+								},
+								["tipo"] = 9,
+							},
+							["cooldowns_defensive_spells"] = {
 								["_ActorTable"] = {
 									[48707] = {
 										["id"] = 48707,
@@ -6918,54 +6935,37 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
-							},
-							["ress_spells"] = {
 								["tipo"] = 9,
-								["_ActorTable"] = {
-									[61999] = {
-										["id"] = 61999,
-										["ress"] = 1,
-										["targets"] = {
-											["Milkyjuggs"] = 1,
-										},
-										["counter"] = 0,
-									},
-								},
 							},
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
+							["pets"] = {
 							},
-							["debuff_uptime_targets"] = {
-							},
-							["serial"] = "Player-1329-064AEDEB",
-							["last_event"] = 1530810691,
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
+							["classe"] = "UNKNOW",
 							["boss_fight_component"] = true,
-							["monster"] = true,
+							["last_event"] = 0,
 							["spell_cast"] = {
 								[200182] = 5,
 								[200289] = 4,
 								[200185] = 5,
-								[200238] = 4,
 								[200359] = 4,
+								[200238] = 4,
 							},
-							["tipo"] = 4,
 							["nome"] = "Shade of Xavius",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["pets"] = {
 							},
+							["tipo"] = 4,
+							["fight_component"] = true,
 							["serial"] = "Creature-0-3111-1466-534-99192-00003E4CFA",
-							["last_event"] = 0,
+							["monster"] = true,
 						}, -- [6]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -6974,43 +6974,43 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 6,
 							["spellschool"] = 8,
+							["nome"] = "Festering Rip",
 							["debuff_uptime_targets"] = {
 								["Milkyjuggs"] = {
 									["uptime"] = 1,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Krixidk"] = {
 									["uptime"] = 3,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Imakitteh-Kazzak"] = {
 									["uptime"] = 2,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["damage_spellid"] = 200182,
-							["nome"] = "Festering Rip",
+							["last_event"] = 0,
 							["tipo"] = 4,
 							["damage_twin"] = "Shade of Xavius",
-							["boss_fight_component"] = true,
 							["serial"] = "Creature-0-3111-1466-534-99192-00003E4CFA",
-							["last_event"] = 0,
+							["damage_spellid"] = 200182,
+							["boss_fight_component"] = true,
 						}, -- [7]
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -7019,36 +7019,36 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 80,
 							["spellschool"] = 32,
+							["nome"] = "Waking Nightmare",
 							["debuff_uptime_targets"] = {
 								["Djkaviar-LesClairvoyants"] = {
 									["uptime"] = 60,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 1,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Imakitteh-Kazzak"] = {
 									["uptime"] = 20,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["damage_spellid"] = 200243,
-							["nome"] = "Waking Nightmare",
+							["last_event"] = 0,
 							["tipo"] = 4,
 							["damage_twin"] = "[*] Waking Nightmare",
-							["boss_fight_component"] = true,
 							["serial"] = "",
-							["last_event"] = 0,
+							["damage_spellid"] = 200243,
+							["boss_fight_component"] = true,
 						}, -- [8]
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -7057,36 +7057,36 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 10,
 							["spellschool"] = 1,
+							["nome"] = "Cowardice",
 							["debuff_uptime_targets"] = {
 								["Djkaviar-LesClairvoyants"] = {
 									["uptime"] = 3,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Imakitteh-Kazzak"] = {
 									["uptime"] = 7,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["damage_spellid"] = 200273,
-							["nome"] = "Cowardice",
+							["last_event"] = 0,
 							["tipo"] = 4,
 							["damage_twin"] = "[*] Cowardice",
-							["boss_fight_component"] = true,
 							["serial"] = "",
-							["last_event"] = 0,
+							["damage_spellid"] = 200273,
+							["boss_fight_component"] = true,
 						}, -- [9]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -7095,43 +7095,43 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 17,
 							["spellschool"] = 32,
+							["nome"] = "Feed on the Weak",
 							["debuff_uptime_targets"] = {
 								["Milkyjuggs"] = {
 									["uptime"] = 5,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Temporäs"] = {
 									["uptime"] = 6,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Krixidk"] = {
 									["uptime"] = 6,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["damage_spellid"] = 200238,
-							["nome"] = "Feed on the Weak",
+							["last_event"] = 0,
 							["tipo"] = 4,
 							["damage_twin"] = "Shade of Xavius",
-							["boss_fight_component"] = true,
 							["serial"] = "Creature-0-3111-1466-534-99192-00003E4CFA",
-							["last_event"] = 0,
+							["damage_spellid"] = 200238,
+							["boss_fight_component"] = true,
 						}, -- [10]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -7140,50 +7140,50 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 30,
 							["spellschool"] = 1,
+							["nome"] = "Growing Paranoia",
 							["debuff_uptime_targets"] = {
 								["Milkyjuggs"] = {
 									["uptime"] = 8,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Krixidk"] = {
 									["uptime"] = 5,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Imakitteh-Kazzak"] = {
 									["uptime"] = 3,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Temporäs"] = {
 									["uptime"] = 14,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["damage_spellid"] = 200289,
-							["nome"] = "Growing Paranoia",
+							["last_event"] = 0,
 							["tipo"] = 4,
 							["damage_twin"] = "Shade of Xavius",
-							["boss_fight_component"] = true,
 							["serial"] = "Creature-0-3111-1466-534-99192-00003E4CFA",
-							["last_event"] = 0,
+							["damage_spellid"] = 200289,
+							["boss_fight_component"] = true,
 						}, -- [11]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -7192,80 +7192,79 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 15,
 							["spellschool"] = 33,
+							["nome"] = "Overwhelming Terror",
 							["debuff_uptime_targets"] = {
 								["Krixidk"] = {
 									["uptime"] = 5,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Imakitteh-Kazzak"] = {
 									["uptime"] = 5,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 								["Temporäs"] = {
 									["uptime"] = 5,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["damage_spellid"] = 200329,
-							["nome"] = "Overwhelming Terror",
+							["last_event"] = 0,
 							["tipo"] = 4,
 							["damage_twin"] = "Shade of Xavius",
-							["boss_fight_component"] = true,
 							["serial"] = "Creature-0-3111-1466-534-99192-00003E4CFA",
-							["last_event"] = 0,
+							["damage_spellid"] = 200329,
+							["boss_fight_component"] = true,
 						}, -- [12]
 						{
 							["flag_original"] = 8466,
-							["classe"] = "PET",
 							["ownerName"] = "Djkaviar-LesClairvoyants",
 							["nome"] = "Healing Stream Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["serial"] = "Creature-0-3111-1466-534-3527-00003E50F2",
 							["spell_cast"] = {
 								[5672] = 7,
 							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["serial"] = "Creature-0-3111-1466-534-3527-00003E50F2",
-							["last_event"] = 0,
 						}, -- [13]
 						{
 							["flag_original"] = 8466,
-							["classe"] = "PET",
 							["ownerName"] = "Djkaviar-LesClairvoyants",
 							["nome"] = "Earthen Shield Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
+							["tipo"] = 4,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["serial"] = "Creature-0-3111-1466-534-100943-00003E50FC",
 							["spell_cast"] = {
 								[198839] = 3,
 							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["serial"] = "Creature-0-3111-1466-534-100943-00003E50FC",
-							["last_event"] = 0,
 						}, -- [14]
 						{
 							["flag_original"] = 8466,
-							["cc_done"] = 8.018564,
-							["nome"] = "Lightning Surge Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
 							["spell_cast"] = {
 								[118905] = 2,
 							},
-							["tipo"] = 4,
+							["ownerName"] = "Djkaviar-LesClairvoyants",
+							["nome"] = "Lightning Surge Totem <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants> <Djkaviar-LesClairvoyants>",
+							["last_event"] = 0,
 							["pets"] = {
 							},
-							["ownerName"] = "Djkaviar-LesClairvoyants",
+							["cc_done"] = 8.018564,
 							["cc_done_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[118905] = {
 										["id"] = 118905,
@@ -7273,29 +7272,30 @@ _detalhes_database = {
 											["Taintheart Summoner"] = 2,
 											["Deadeye Decoy"] = 1,
 											["Dreadfire Imp"] = 3,
-											["Tormented Bloodseeker"] = 1,
 											["Taintheart Stalker"] = 1,
+											["Tormented Bloodseeker"] = 1,
 										},
 										["counter"] = 8,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Creature-0-3111-1466-534-61245-00003E509D",
 							["cc_done_targets"] = {
 								["Taintheart Summoner"] = 2,
 								["Deadeye Decoy"] = 1,
 								["Dreadfire Imp"] = 3,
-								["Tormented Bloodseeker"] = 1,
 								["Taintheart Stalker"] = 1,
+								["Tormented Bloodseeker"] = 1,
 							},
-							["serial"] = "Creature-0-3111-1466-534-61245-00003E509D",
-							["classe"] = "PET",
 						}, -- [15]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 169,
 					["tipo"] = 2,
+					["combatId"] = 169,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7310,6 +7310,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
+				["is_mythic_dungeon_segment"] = true,
 				["is_mythic_dungeon"] = {
 					["MapID"] = 1466,
 					["RunID"] = 411,
@@ -7322,7 +7323,6 @@ _detalhes_database = {
 					["ZoneName"] = "Darkheart Thicket",
 				},
 				["combat_counter"] = 68845,
-				["instance_type"] = "party",
 				["totals"] = {
 					1858669294.15465, -- [1]
 					277869466.170008, -- [2]
@@ -7330,25 +7330,25 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 1.002718,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 19.049797,
-						["interrupt"] = 8.04518,
-						["dispell"] = 4.014848,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 8.04518,
+						["debuff_uptime"] = 0,
+						["dispell"] = 4.014848,
+						["cooldowns_defensive"] = 19.016205,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
-				["enemy"] = "Shade of Xavius",
+				["data_inicio"] = "19:07:15",
 				["frags_need_refresh"] = false,
 				["__call"] = {
 				},
@@ -7357,6 +7357,15 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Krixidk"] = 603445658.043981,
+							["Djkaviar-LesClairvoyants"] = 34621090.022267,
+							["Milkyjuggs"] = 213685646.027243,
+							["Temporäs"] = 339515737.039932,
+							["Imakitteh-Kazzak"] = 503998198.045189,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -7370,15 +7379,6 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Krixidk"] = 603445658.043981,
-							["Djkaviar-LesClairvoyants"] = 34621090.022267,
-							["Milkyjuggs"] = 213685646.027243,
-							["Temporäs"] = 339515737.039932,
-							["Imakitteh-Kazzak"] = 503998198.045189,
-						}, -- [1]
-					},
 				},
 				["end_time"] = 347741.028,
 				["is_mythic_dungeon_trash"] = {
@@ -7387,19 +7387,7 @@ _detalhes_database = {
 					["Level"] = 17,
 					["EJID"] = 762,
 				},
-				["combat_id"] = 169,
-				["data_inicio"] = "19:07:15",
-				["is_mythic_dungeon_segment"] = true,
-				["total_segments_added"] = 2,
-				["frags"] = {
-				},
-				["data_fim"] = "19:11:31",
-				["CombatSkillCache"] = {
-				},
-				["is_mythic_dungeon_run_id"] = 411,
-				["start_time"] = 347529.621,
-				["TimeData"] = {
-				},
+				["instance_type"] = "party",
 				["totals_grupo"] = {
 					1695266329.14939, -- [1]
 					257812783.127754, -- [2]
@@ -7407,27 +7395,38 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 1.002718,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 19.049797,
-						["interrupt"] = 8.04518,
-						["dispell"] = 4.014848,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 8.04518,
+						["debuff_uptime"] = 0,
+						["dispell"] = 4.014848,
+						["cooldowns_defensive"] = 19.049797,
 					}, -- [4]
 				},
+				["combat_id"] = 169,
+				["hasSaved"] = true,
+				["frags"] = {
+				},
+				["data_fim"] = "19:11:31",
+				["total_segments_added"] = 2,
+				["CombatSkillCache"] = {
+				},
+				["is_mythic_dungeon_run_id"] = 411,
+				["start_time"] = 347529.621,
+				["TimeData"] = {
+				},
+				["enemy"] = "Shade of Xavius",
 			}, -- [1]
 		},
 	},
-	["combat_counter"] = 68845,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
+	["last_version"] = "v7.3.5.5572",
+	["force_font_outline"] = "",
 	["tabela_instancias"] = {
 	},
 	["local_instances_config"] = {
@@ -7534,50 +7533,14 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["cached_talents"] = {
-		["Player-1329-064EA132"] = {
-			18571, -- [1]
-			22387, -- [2]
-			22157, -- [3]
-			22389, -- [4]
-			21193, -- [5]
-			18577, -- [6]
-			18580, -- [7]
-		},
 		["Player-1329-064AEDEB"] = {
 			22519, -- [1]
 			22023, -- [2]
 			22031, -- [3]
 			22018, -- [4]
 			22019, -- [5]
-			22525, -- [6]
-			22531, -- [7]
-		},
-		["Player-1329-065BC1C8"] = {
-			22558, -- [1]
-			22179, -- [2]
-			22431, -- [3]
-			22705, -- [4]
-			21201, -- [5]
-			22434, -- [6]
-			22438, -- [7]
-		},
-		["Player-1305-09C49A7E"] = {
-			22799, -- [1]
-			22416, -- [2]
-			22767, -- [3]
-			21865, -- [4]
-			22909, -- [5]
-			22547, -- [6]
-			21868, -- [7]
-		},
-		["Player-1127-06EFE875"] = {
-			19264, -- [1]
-			22492, -- [2]
-			21968, -- [3]
-			19275, -- [4]
-			19269, -- [5]
-			22322, -- [6]
-			21970, -- [7]
+			22531, -- [6]
+			22525, -- [7]
 		},
 	},
 	["last_instance_id"] = 1466,
@@ -7588,17 +7551,10 @@ _detalhes_database = {
 		["next"] = "",
 		["custom"] = "",
 	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["reverse"] = false,
-		["channel"] = "SELF",
-	},
+	["last_instance_time"] = 1530809510,
 	["active_profile"] = "Namji-Grim Batol",
 	["last_encounter"] = "Varimathras",
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
+	["ignore_nicktag"] = true,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -7606,10 +7562,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
-			["author"] = "Details! Team",
-			["level"] = 1,
 			["enabled"] = true,
+			["dps"] = 0,
+			["level"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -7698,12 +7654,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FlameTounge", -- [4]
 					["id"] = 1784,
 				},
-				["181956"] = {
-					"181956", -- [1]
-					"Phantasmal Winds", -- [2]
-					17, -- [3]
-					"Interface\\Icons\\Spell_Frost_ArcticWinds", -- [4]
-					["id"] = 1788,
+				["186783"] = {
+					"186783", -- [1]
+					"Withering Gaze", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Spell_Shadow_DeathsEmbrace", -- [4]
+					["id"] = 1800,
 				},
 				["181753"] = {
 					"181753", -- [1]
@@ -7733,12 +7689,12 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Xaril_MasterPoisoner_White.blp", -- [4]
 					["id"] = 1593,
 				},
-				["-8179"] = {
-					"-8179", -- [1]
-					"Borer Drill", -- [2]
-					19, -- [3]
-					"Interface\\ICONS\\ability_mount_rocketmount3.blp", -- [4]
-					["id"] = 1600,
+				["188929"] = {
+					"188929", -- [1]
+					"Heart Seeker", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
+					["id"] = 1786,
 				},
 				["158134"] = {
 					"158134", -- [1]
@@ -7747,12 +7703,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_ShieldGuard", -- [4]
 					["id"] = 1719,
 				},
-				["portals"] = {
-					"portals", -- [1]
-					"Portals Move", -- [2]
-					138, -- [3]
-					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
-					["id"] = 1794,
+				["-8179"] = {
+					"-8179", -- [1]
+					"Borer Drill", -- [2]
+					19, -- [3]
+					"Interface\\ICONS\\ability_mount_rocketmount3.blp", -- [4]
+					["id"] = 1600,
 				},
 				["143484"] = {
 					"143484", -- [1]
@@ -7761,26 +7717,26 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Nature_Sleep", -- [4]
 					["id"] = 1603,
 				},
-				["180199"] = {
-					"180199", -- [1]
-					"Shred Armor", -- [2]
-					10.8, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Riposte", -- [4]
-					["id"] = 1786,
+				["144358"] = {
+					"144358", -- [1]
+					"Wounded Pride", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\Spell_Misc_EmotionSad", -- [4]
+					["id"] = 1604,
 				},
-				["147209"] = {
-					"147209", -- [1]
-					"Malice (1)", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Ability_Warlock_Eradication", -- [4]
-					["id"] = 1623,
+				["179977"] = {
+					"179977", -- [1]
+					"Touch of Doom", -- [2]
+					8.3, -- [3]
+					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
+					["id"] = 1783,
 				},
-				["158563"] = {
-					"158563", -- [1]
-					"Kick to the Face", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\ability_kick", -- [4]
-					["id"] = 1705,
+				["143491"] = {
+					"143491", -- [1]
+					"Calamity", -- [2]
+					29, -- [3]
+					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
+					["id"] = 1598,
 				},
 				["156238"] = {
 					"156238", -- [1]
@@ -7789,47 +7745,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
 					["id"] = 1705,
 				},
-				["144358"] = {
-					"144358", -- [1]
-					"Wounded Pride", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\Spell_Misc_EmotionSad", -- [4]
-					["id"] = 1604,
-				},
-				["183329"] = {
-					"183329", -- [1]
-					"Apocalypse (1)", -- [2]
-					51.5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowPower", -- [4]
-					["id"] = 1794,
-				},
-				["182826"] = {
-					"182826", -- [1]
-					"Doomfire", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
-					["id"] = 1799,
-				},
-				["144563"] = {
-					"144563", -- [1]
-					"Imprison", -- [2]
-					52.5, -- [3]
-					"Interface\\Icons\\sha_ability_rogue_sturdyrecuperate", -- [4]
-					["id"] = 1604,
-				},
-				["drakes"] = {
-					"drakes", -- [1]
-					"Proto-Drakes", -- [2]
-					168, -- [3]
-					"Interface\\Icons\\ability_mount_drake_proto", -- [4]
-					["id"] = 1622,
-				},
-				["slump"] = {
-					"slump", -- [1]
-					"Rodeo", -- [2]
-					100, -- [3]
-					"Interface\\Icons\\Ability_Mount_Dreadsteed", -- [4]
-					["id"] = 1024,
+				["180199"] = {
+					"180199", -- [1]
+					"Shred Armor", -- [2]
+					10.8, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Riposte", -- [4]
+					["id"] = 1786,
 				},
 				["186546"] = {
 					"186546", -- [1]
@@ -7838,12 +7759,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Enchant_VoidSphere", -- [4]
 					["id"] = 1800,
 				},
-				["-7959"] = {
-					"-7959", -- [1]
-					"Inferno Strike", -- [2]
-					7, -- [3]
-					"Interface\\ICONS\\INV_Enchant_EssenceAstralSmall.blp", -- [4]
-					["id"] = 1598,
+				["158563"] = {
+					"158563", -- [1]
+					"Kick to the Face", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\ability_kick", -- [4]
+					["id"] = 1705,
 				},
 				["186961"] = {
 					"186961", -- [1]
@@ -7851,6 +7772,41 @@ _detalhes_database = {
 					13, -- [3]
 					"Interface\\Icons\\ability_warlock_moltencoregreen", -- [4]
 					["id"] = 1799,
+				},
+				["drakes"] = {
+					"drakes", -- [1]
+					"Proto-Drakes", -- [2]
+					168, -- [3]
+					"Interface\\Icons\\ability_mount_drake_proto", -- [4]
+					["id"] = 1622,
+				},
+				["185237"] = {
+					"185237", -- [1]
+					"Touch of Harm", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
+					["id"] = 1784,
+				},
+				["147209"] = {
+					"147209", -- [1]
+					"Malice (1)", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Ability_Warlock_Eradication", -- [4]
+					["id"] = 1623,
+				},
+				["-7959"] = {
+					"-7959", -- [1]
+					"Inferno Strike", -- [2]
+					7, -- [3]
+					"Interface\\ICONS\\INV_Enchant_EssenceAstralSmall.blp", -- [4]
+					["id"] = 1598,
+				},
+				["-7963"] = {
+					"-7963", -- [1]
+					"Deafening Screech", -- [2]
+					14, -- [3]
+					"Interface\\ICONS\\Ability_Vehicle_SonicShockwave.blp", -- [4]
+					["id"] = 1599,
 				},
 				["181508"] = {
 					"181508", -- [1]
@@ -7866,19 +7822,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_ironmaidens_convulsiveshadows", -- [4]
 					["id"] = 1795,
 				},
-				["81007"] = {
-					"81007", -- [1]
-					"Shadowblaze", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
-					["id"] = 1026,
+				["161612"] = {
+					"161612", -- [1]
+					"Balls hit (1)", -- [2]
+					36, -- [3]
+					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
+					["id"] = 1723,
 				},
-				["-8294"] = {
-					"-8294", -- [1]
-					"Farseer Wolf Rider", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Spell_Nature_ChainLightning", -- [4]
-					["id"] = 1623,
+				["145215"] = {
+					"145215", -- [1]
+					"Banishment", -- [2]
+					37.4, -- [3]
+					"Interface\\Icons\\sha_spell_shadow_shadesofdarkness", -- [4]
+					["id"] = 1604,
 				},
 				["181288"] = {
 					"181288", -- [1]
@@ -7901,12 +7857,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Arcane_PrismaticCloak", -- [4]
 					["id"] = 1783,
 				},
-				["190223"] = {
-					"190223", -- [1]
-					"Fel Strike", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen", -- [4]
-					["id"] = 1800,
+				["volatile_anomaly"] = {
+					"volatile_anomaly", -- [1]
+					"Volatile Anomaly (1)", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\spell_arcane_arcane04", -- [4]
+					["id"] = 1705,
 				},
 				["157349"] = {
 					"157349", -- [1]
@@ -7915,26 +7871,26 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_socererking_forcenova", -- [4]
 					["id"] = 1705,
 				},
-				["161612"] = {
-					"161612", -- [1]
-					"Balls hit (1)", -- [2]
-					36, -- [3]
-					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
-					["id"] = 1723,
+				["slump"] = {
+					"slump", -- [1]
+					"Rodeo", -- [2]
+					100, -- [3]
+					"Interface\\Icons\\Ability_Mount_Dreadsteed", -- [4]
+					["id"] = 1024,
 				},
-				["145215"] = {
-					"145215", -- [1]
-					"Banishment", -- [2]
-					37.4, -- [3]
-					"Interface\\Icons\\sha_spell_shadow_shadesofdarkness", -- [4]
-					["id"] = 1604,
+				["-8294"] = {
+					"-8294", -- [1]
+					"Farseer Wolf Rider", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Spell_Nature_ChainLightning", -- [4]
+					["id"] = 1623,
 				},
-				["181292"] = {
-					"181292", -- [1]
-					"Fel Outpouring", -- [2]
-					51, -- [3]
-					"Interface\\Icons\\spell_yorsahj_bloodboil_purple", -- [4]
-					["id"] = 1787,
+				["184124"] = {
+					"184124", -- [1]
+					"Gift of the Man'ari", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_AntiMagicShell", -- [4]
+					["id"] = 1794,
 				},
 				["189894"] = {
 					"189894", -- [1]
@@ -7943,19 +7899,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
 					["id"] = 1799,
 				},
-				["warmup"] = {
-					"warmup", -- [1]
-					"Combat", -- [2]
-					26, -- [3]
-					"Interface\\Icons\\ability_titankeeper_quarantine", -- [4]
-					["id"] = 1624,
+				["181557"] = {
+					"181557", -- [1]
+					"Fel Hellstorm", -- [2]
+					33, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelRainOfFire", -- [4]
+					["id"] = 1795,
 				},
-				["180600"] = {
-					"180600", -- [1]
-					"Bulwark of the Tyrant", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\inv_shield_grimbatolraid_d_02", -- [4]
-					["id"] = 1784,
+				["144821"] = {
+					"144821", -- [1]
+					"Hellscream's Warsong", -- [2]
+					22, -- [3]
+					"Interface\\Icons\\ability_garrosh_hellscreams_warsong", -- [4]
+					["id"] = 1623,
 				},
 				["180260"] = {
 					"180260", -- [1]
@@ -7964,12 +7920,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\inv_misc_volatilefire", -- [4]
 					["id"] = 1784,
 				},
-				["181735"] = {
-					"181735", -- [1]
-					"Felseeker", -- [2]
-					60, -- [3]
-					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
-					["id"] = 1795,
+				["190223"] = {
+					"190223", -- [1]
+					"Fel Strike", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\ability_deathwing_grasping_tendrilsgreen", -- [4]
+					["id"] = 1800,
 				},
 				["-8262"] = {
 					"-8262", -- [1]
@@ -7985,12 +7941,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Misc_MissileLarge_Red", -- [4]
 					["id"] = 1778,
 				},
-				["143019"] = {
-					"143019", -- [1]
-					"Corrupted Brew", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\sha_inv_elemental_primal_shadow", -- [4]
-					["id"] = 1598,
+				["181292"] = {
+					"181292", -- [1]
+					"Fel Outpouring", -- [2]
+					51, -- [3]
+					"Interface\\Icons\\spell_yorsahj_bloodboil_purple", -- [4]
+					["id"] = 1787,
 				},
 				["145288"] = {
 					"145288", -- [1]
@@ -8013,12 +7969,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\ability_creature_cursed_03", -- [4]
 					["id"] = 1798,
 				},
-				["180008"] = {
-					"180008", -- [1]
-					"Reverberating Blow", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
-					["id"] = 1794,
+				["77991"] = {
+					"77991", -- [1]
+					"Release All Minions", -- [2]
+					12.5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
+					["id"] = 1025,
 				},
 				["182428"] = {
 					"182428", -- [1]
@@ -8034,12 +7990,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Gouge", -- [4]
 					["id"] = 1598,
 				},
-				["143834"] = {
-					"143834", -- [1]
-					"Shield Bash", -- [2]
-					22, -- [3]
-					"Interface\\Icons\\Ability_Warrior_ShieldBash", -- [4]
-					["id"] = 1719,
+				["184394"] = {
+					"184394", -- [1]
+					"Shockwave", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\ability_earthen_pillar", -- [4]
+					["id"] = 1778,
 				},
 				["-8199"] = {
 					"-8199", -- [1]
@@ -8048,26 +8004,26 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_MISC_ARMORKIT_27", -- [4]
 					["id"] = 1601,
 				},
-				["181557"] = {
-					"181557", -- [1]
-					"Fel Hellstorm", -- [2]
-					33, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelRainOfFire", -- [4]
-					["id"] = 1795,
+				["warmup"] = {
+					"warmup", -- [1]
+					"Combat", -- [2]
+					26, -- [3]
+					"Interface\\Icons\\ability_titankeeper_quarantine", -- [4]
+					["id"] = 1624,
 				},
-				["144821"] = {
-					"144821", -- [1]
-					"Hellscream's Warsong", -- [2]
+				["180600"] = {
+					"180600", -- [1]
+					"Bulwark of the Tyrant", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\inv_shield_grimbatolraid_d_02", -- [4]
+					["id"] = 1784,
+				},
+				["143834"] = {
+					"143834", -- [1]
+					"Shield Bash", -- [2]
 					22, -- [3]
-					"Interface\\Icons\\ability_garrosh_hellscreams_warsong", -- [4]
-					["id"] = 1623,
-				},
-				["184394"] = {
-					"184394", -- [1]
-					"Shockwave", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\ability_earthen_pillar", -- [4]
-					["id"] = 1778,
+					"Interface\\Icons\\Ability_Warrior_ShieldBash", -- [4]
+					["id"] = 1719,
 				},
 				["-9394"] = {
 					"-9394", -- [1]
@@ -8111,19 +8067,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_HeroicLeap", -- [4]
 					["id"] = 1787,
 				},
-				["156471"] = {
-					"156471", -- [1]
-					"Arcane Aberration (1)", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\ability_socererking_summonaberration", -- [4]
-					["id"] = 1705,
+				["berserk"] = {
+					"berserk", -- [1]
+					"Berserk", -- [2]
+					600, -- [3]
+					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
+					["id"] = 1785,
 				},
-				["181597"] = {
-					"181597", -- [1]
-					"Mannoroth's Gaze", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\ability_bossmannoroth_mannorothsgaze", -- [4]
-					["id"] = 1795,
+				["190224"] = {
+					"190224", -- [1]
+					"Void Strike", -- [2]
+					17, -- [3]
+					"Interface\\Icons\\Spell_Shadow_FocusedPower", -- [4]
+					["id"] = 1800,
 				},
 				["179889"] = {
 					"179889", -- [1]
@@ -8132,12 +8088,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1785,
 				},
-				["144070"] = {
-					"144070", -- [1]
-					"Ashen Wall", -- [2]
-					32.2, -- [3]
-					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
-					["id"] = 1606,
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+					["id"] = 1794,
 				},
 				["159250"] = {
 					"159250", -- [1]
@@ -8146,19 +8102,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_warrior_bladestorm", -- [4]
 					["id"] = 1721,
 				},
-				["182055"] = {
-					"182055", -- [1]
-					"Full Charge", -- [2]
-					139, -- [3]
-					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
-					["id"] = 1785,
+				["158986"] = {
+					"158986", -- [1]
+					"Berserker Rush", -- [2]
+					54, -- [3]
+					"Interface\\Icons\\ability_fixated_state_red", -- [4]
+					["id"] = 1721,
 				},
-				["160734"] = {
-					"160734", -- [1]
-					"Vulnerability", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelHellfire", -- [4]
-					["id"] = 1723,
+				["156471"] = {
+					"156471", -- [1]
+					"Arcane Aberration (1)", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\ability_socererking_summonaberration", -- [4]
+					["id"] = 1705,
 				},
 				["180526"] = {
 					"180526", -- [1]
@@ -8174,26 +8130,26 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_butcher_gushingwounds", -- [4]
 					["id"] = 1706,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
-					["id"] = 1794,
-				},
-				["158986"] = {
-					"158986", -- [1]
-					"Berserker Rush", -- [2]
-					54, -- [3]
-					"Interface\\Icons\\ability_fixated_state_red", -- [4]
-					["id"] = 1721,
-				},
 				["158605"] = {
 					"158605", -- [1]
 					"Mark of Chaos", -- [2]
 					34, -- [3]
 					"Interface\\Icons\\Spell_Arcane_MassDispel", -- [4]
 					["id"] = 1705,
+				},
+				["182055"] = {
+					"182055", -- [1]
+					"Full Charge", -- [2]
+					139, -- [3]
+					"Interface\\Icons\\INV_Misc_EngGizmos_06", -- [4]
+					["id"] = 1785,
+				},
+				["144070"] = {
+					"144070", -- [1]
+					"Ashen Wall", -- [2]
+					32.2, -- [3]
+					"Interface\\Icons\\sha_spell_fire_felfire", -- [4]
+					["id"] = 1606,
 				},
 				["156157"] = {
 					"156157", -- [1]
@@ -8202,6 +8158,13 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_butcher_cleave", -- [4]
 					["id"] = 1706,
 				},
+				["181824"] = {
+					"181824", -- [1]
+					"Phantasmal Corruption", -- [2]
+					22, -- [3]
+					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
+					["id"] = 1788,
+				},
 				["181999"] = {
 					"181999", -- [1]
 					"Firebomb (1)", -- [2]
@@ -8209,19 +8172,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
 					["id"] = 1785,
 				},
-				["143243"] = {
-					"143243", -- [1]
-					"Rapid Fire", -- [2]
-					49, -- [3]
-					"Interface\\Icons\\Ability_Hunter_RunningShot", -- [4]
-					["id"] = 1593,
-				},
-				["143973"] = {
-					"143973", -- [1]
-					"Falling Ash (1)", -- [2]
-					17, -- [3]
-					"Interface\\Icons\\inv_elemental_mote_fire01", -- [4]
-					["id"] = 1606,
+				["-8195"] = {
+					"-8195", -- [1]
+					"Launch Sawblade", -- [2]
+					9, -- [3]
+					"Interface\\ICONS\\INV_Misc_SawBlade_01.blp", -- [4]
+					["id"] = 1601,
 				},
 				["voidfiend"] = {
 					"voidfiend", -- [1]
@@ -8237,26 +8193,26 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_misc_zandalari_council_soulswap", -- [4]
 					["id"] = 1799,
 				},
-				["159947"] = {
-					"159947", -- [1]
-					"Chain Hurl", -- [2]
-					90, -- [3]
-					"Interface\\Icons\\inv_misc_steelweaponchain", -- [4]
-					["id"] = 1721,
+				["180163"] = {
+					"180163", -- [1]
+					"Savage Strikes", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
+					["id"] = 1786,
 				},
-				["adds"] = {
-					"adds", -- [1]
-					"Middle: Iron Dragoon", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\achievement_character_orc_male", -- [4]
-					["id"] = 1778,
+				["146595"] = {
+					"146595", -- [1]
+					"Gift of the Titans", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Achievement_Dungeon_UlduarRaid_Titan_01", -- [4]
+					["id"] = 1604,
 				},
-				["-8073"] = {
-					"-8073", -- [1]
-					"Aim (1)", -- [2]
-					38, -- [3]
-					"Interface\\ICONS\\Ability_Hisek_Aim.blp", -- [4]
-					["id"] = 1593,
+				["-8207"] = {
+					"-8207", -- [1]
+					"Pattern Recognition", -- [2]
+					60, -- [3]
+					"Interface\\ICONS\\Ability_Siege_Engineer_pattern_recognition.blp", -- [4]
+					["id"] = 1601,
 				},
 				["159219"] = {
 					"159219", -- [1]
@@ -8272,12 +8228,12 @@ _detalhes_database = {
 					false, -- [4]
 					["id"] = 1786,
 				},
-				["156467"] = {
-					"156467", -- [1]
-					"Destructive Resonance", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanemines", -- [4]
-					["id"] = 1705,
+				["-8073"] = {
+					"-8073", -- [1]
+					"Aim (1)", -- [2]
+					38, -- [3]
+					"Interface\\ICONS\\Ability_Hisek_Aim.blp", -- [4]
+					["id"] = 1593,
 				},
 				["187204"] = {
 					"187204", -- [1]
@@ -8293,47 +8249,47 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Magic_ManaGain", -- [4]
 					["id"] = 1720,
 				},
-				["181354"] = {
-					"181354", -- [1]
-					"Glaive Combo", -- [2]
-					45, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Challange", -- [4]
-					["id"] = 1795,
+				["146849"] = {
+					"146849", -- [1]
+					"Shattering Cleave", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Warrior_ShieldBreak", -- [4]
+					["id"] = 1622,
 				},
-				["-9921"] = {
-					"-9921", -- [1]
-					"Gorian Reaver", -- [2]
+				["180025"] = {
+					"180025", -- [1]
+					"Harbinger's Mending (1)", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
+					["id"] = 1784,
+				},
+				["145226"] = {
+					"145226", -- [1]
+					"Blind Hatred", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\sha_ability_mage_firestarter", -- [4]
+					["id"] = 1624,
+				},
+				["144616"] = {
+					"144616", -- [1]
+					"Power Iron Star", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
+					["id"] = 1623,
+				},
+				["162968"] = {
+					"162968", -- [1]
+					"Earthen Flechettes", -- [2]
 					15, -- [3]
-					"Interface\\Icons\\ability_warrior_shieldbreak", -- [4]
-					["id"] = 1705,
+					"Interface\\Icons\\inv_misc_volatileearth", -- [4]
+					["id"] = 1722,
 				},
-				["179407"] = {
-					"179407", -- [1]
-					"Disembodied on YOU!", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
-					["id"] = 1777,
-				},
-				["arena_sweeper"] = {
-					"arena_sweeper", -- [1]
-					"Arena Sweeper", -- [2]
-					55, -- [3]
-					"Interface\\Icons\\ability_kick", -- [4]
-					["id"] = 1721,
-				},
-				["181296"] = {
-					"181296", -- [1]
-					"Explosive Runes", -- [2]
-					83, -- [3]
-					"Interface\\Icons\\ability_bossfelmagnaron_rune", -- [4]
-					["id"] = 1787,
-				},
-				["143280"] = {
-					"143280", -- [1]
-					"Bloodletting", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\ability_skeer_bloodletting", -- [4]
-					["id"] = 1593,
+				["179909"] = {
+					"179909", -- [1]
+					"Shared Fate", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\ability_warlock_soullink", -- [4]
+					["id"] = 1783,
 				},
 				["bwcbKrixipulling"] = {
 					"bwcbKrixipulling", -- [1]
@@ -8349,19 +8305,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_Requiem", -- [4]
 					["id"] = 1787,
 				},
-				["179406"] = {
-					"179406", -- [1]
-					"Soul Cleave (1)", -- [2]
-					25.5, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
-					["id"] = 1777,
+				["183817"] = {
+					"183817", -- [1]
+					"Shadowfel Burst", -- [2]
+					43, -- [3]
+					"Interface\\Icons\\Ability_Warlock_EverlastingAffliction", -- [4]
+					["id"] = 1799,
 				},
-				["186490"] = {
-					"186490", -- [1]
-					"Chains of Fel", -- [2]
-					33, -- [3]
-					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
-					["id"] = 1800,
+				["144467"] = {
+					"144467", -- [1]
+					"Ignite Armor", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\inv_shield_deathwingraid_d_02", -- [4]
+					["id"] = 1600,
 				},
 				["blazing"] = {
 					"blazing", -- [1]
@@ -8377,12 +8333,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_DualWieldSpecialization", -- [4]
 					["id"] = 1719,
 				},
-				["187180"] = {
-					"187180", -- [1]
-					"Demonic Feedback", -- [2]
-					35, -- [3]
-					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
-					["id"] = 1799,
+				["143027"] = {
+					"143027", -- [1]
+					"Clash", -- [2]
+					44, -- [3]
+					"Interface\\Icons\\ability_monk_clashingoxcharge", -- [4]
+					["id"] = 1598,
 				},
 				["180533"] = {
 					"180533", -- [1]
@@ -8412,82 +8368,33 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_creature_amber_02", -- [4]
 					["id"] = 1593,
 				},
-				["-8325"] = {
-					"-8325", -- [1]
-					"Explosive Despair on YOU!", -- [2]
-					10, -- [3]
-					"Interface\\ICONS\\Ability_DeathKnight_Asphixiate.blp", -- [4]
+				["-8305"] = {
+					"-8305", -- [1]
+					"Intermission", -- [2]
+					25, -- [3]
+					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
 					["id"] = 1623,
 				},
-				["144400"] = {
-					"144400", -- [1]
-					"Swelling Pride (1)", -- [2]
-					77, -- [3]
-					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
-					["id"] = 1604,
-				},
-				["144616"] = {
-					"144616", -- [1]
-					"Power Iron Star", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
-					["id"] = 1623,
-				},
-				["162968"] = {
-					"162968", -- [1]
-					"Earthen Flechettes", -- [2]
+				["179407"] = {
+					"179407", -- [1]
+					"Disembodied on YOU!", -- [2]
 					15, -- [3]
-					"Interface\\Icons\\inv_misc_volatileearth", -- [4]
-					["id"] = 1722,
+					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
+					["id"] = 1777,
 				},
-				["82848"] = {
-					"82848", -- [1]
-					"Massacre", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Ability_Creature_Disease_02", -- [4]
-					["id"] = 1023,
-				},
-				["179909"] = {
-					"179909", -- [1]
-					"Shared Fate", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\ability_warlock_soullink", -- [4]
-					["id"] = 1783,
-				},
-				["183817"] = {
-					"183817", -- [1]
-					"Shadowfel Burst", -- [2]
-					43, -- [3]
-					"Interface\\Icons\\Ability_Warlock_EverlastingAffliction", -- [4]
-					["id"] = 1799,
-				},
-				["143027"] = {
-					"143027", -- [1]
-					"Clash", -- [2]
-					44, -- [3]
-					"Interface\\Icons\\ability_monk_clashingoxcharge", -- [4]
-					["id"] = 1598,
-				},
-				["156225"] = {
-					"156225", -- [1]
-					"Branded on YOU!", -- [2]
-					4, -- [3]
-					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
-					["id"] = 1705,
-				},
-				["162186"] = {
-					"162186", -- [1]
-					"Expel Magic: Arcane", -- [2]
-					30, -- [3]
-					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
-					["id"] = 1723,
-				},
-				["181255"] = {
-					"181255", -- [1]
-					"Fel Imp-losion", -- [2]
-					38, -- [3]
-					"Interface\\Icons\\Ability_Warlock_EmpoweredImp", -- [4]
+				["181354"] = {
+					"181354", -- [1]
+					"Glaive Combo", -- [2]
+					45, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Challange", -- [4]
 					["id"] = 1795,
+				},
+				["181296"] = {
+					"181296", -- [1]
+					"Explosive Runes", -- [2]
+					83, -- [3]
+					"Interface\\Icons\\ability_bossfelmagnaron_rune", -- [4]
+					["id"] = 1787,
 				},
 				["183828"] = {
 					"183828", -- [1]
@@ -8496,6 +8403,34 @@ _detalhes_database = {
 					"Interface\\Icons\\warlock_summon_doomguard", -- [4]
 					["id"] = 1799,
 				},
+				["143280"] = {
+					"143280", -- [1]
+					"Bloodletting", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\ability_skeer_bloodletting", -- [4]
+					["id"] = 1593,
+				},
+				["179406"] = {
+					"179406", -- [1]
+					"Soul Cleave (1)", -- [2]
+					25.5, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
+					["id"] = 1777,
+				},
+				["187180"] = {
+					"187180", -- [1]
+					"Demonic Feedback", -- [2]
+					35, -- [3]
+					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
+					["id"] = 1799,
+				},
+				["156225"] = {
+					"156225", -- [1]
+					"Branded on YOU!", -- [2]
+					4, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanewrath", -- [4]
+					["id"] = 1705,
+				},
 				["143701"] = {
 					"143701", -- [1]
 					"Whirling", -- [2]
@@ -8503,19 +8438,40 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Druid_GaleWinds", -- [4]
 					["id"] = 1593,
 				},
-				["180221"] = {
-					"180221", -- [1]
-					"Volatile Fel Orb", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\achievement_zone_cataclysmgreen", -- [4]
-					["id"] = 1794,
+				["-8325"] = {
+					"-8325", -- [1]
+					"Explosive Despair on YOU!", -- [2]
+					10, -- [3]
+					"Interface\\ICONS\\Ability_DeathKnight_Asphixiate.blp", -- [4]
+					["id"] = 1623,
 				},
-				["-8220"] = {
-					"-8220", -- [1]
-					"Look Within", -- [2]
-					60, -- [3]
-					"Interface\\Icons\\ability_titankeeper_testofconfidence", -- [4]
-					["id"] = 1624,
+				["82848"] = {
+					"82848", -- [1]
+					"Massacre", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Ability_Creature_Disease_02", -- [4]
+					["id"] = 1023,
+				},
+				["demolisher"] = {
+					"demolisher", -- [1]
+					"Demolisher", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\ability_vehicle_siegeenginecannon", -- [4]
+					["id"] = 1622,
+				},
+				["158385"] = {
+					"158385", -- [1]
+					"Pulverize", -- [2]
+					28, -- [3]
+					"Interface\\Icons\\INV_Stone_16", -- [4]
+					["id"] = 1719,
+				},
+				["180004"] = {
+					"180004", -- [1]
+					"Enforcer's Onslaught", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
+					["id"] = 1784,
 				},
 				["188510"] = {
 					"188510", -- [1]
@@ -8531,12 +8487,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Mace_52", -- [4]
 					["id"] = 1706,
 				},
-				["158385"] = {
-					"158385", -- [1]
-					"Pulverize", -- [2]
-					28, -- [3]
-					"Interface\\Icons\\INV_Stone_16", -- [4]
-					["id"] = 1719,
+				["180221"] = {
+					"180221", -- [1]
+					"Volatile Fel Orb", -- [2]
+					13, -- [3]
+					"Interface\\Icons\\achievement_zone_cataclysmgreen", -- [4]
+					["id"] = 1794,
 				},
 				["mind_fungus"] = {
 					"mind_fungus", -- [1]
@@ -8573,96 +8529,19 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Battery_01", -- [4]
 					["id"] = 1027,
 				},
-				["-8298"] = {
-					"-8298", -- [1]
-					"Siege Engineer", -- [2]
+				["181912"] = {
+					"181912", -- [1]
+					"Focused Blast", -- [2]
 					20, -- [3]
-					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
-					["id"] = 1623,
+					"Interface\\Icons\\ability_felarakkoa_focusedblast", -- [4]
+					["id"] = 1788,
 				},
-				["184964"] = {
-					"184964", -- [1]
-					"Shackled Torment (1)", -- [2]
-					27, -- [3]
-					"Interface\\Icons\\ability_warlock_soullink", -- [4]
-					["id"] = 1799,
-				},
-				["160013"] = {
-					"160013", -- [1]
-					"Decay (2)", -- [2]
-					9.5, -- [3]
-					"Interface\\Icons\\Spell_Nature_WispSplodeGreen", -- [4]
-					["id"] = 1720,
-				},
-				["143385"] = {
-					"143385", -- [1]
-					"Electrostatic Charge", -- [2]
-					17, -- [3]
-					"Interface\\Icons\\spell_shaman_staticshock", -- [4]
-					["id"] = 1601,
-				},
-				["144498"] = {
-					"144498", -- [1]
-					"Explosive Tar", -- [2]
+				["162894"] = {
+					"162894", -- [1]
+					"Gift of Earth", -- [2]
 					10, -- [3]
-					"Interface\\Icons\\spell_yorsahj_bloodboil_black", -- [4]
-					["id"] = 1600,
-				},
-				["180004"] = {
-					"180004", -- [1]
-					"Enforcer's Onslaught", -- [2]
-					13, -- [3]
-					"Interface\\Icons\\inv_knife_1h_firelandsraid_d_01", -- [4]
-					["id"] = 1784,
-				},
-				["144328"] = {
-					"144328", -- [1]
-					"Iron Tomb", -- [2]
-					31, -- [3]
-					"Interface\\Icons\\INV_Misc_Powder_Iron", -- [4]
-					["id"] = 1606,
-				},
-				["144396"] = {
-					"144396", -- [1]
-					"Vengeful Strikes", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\sha_spell_fire_bluerainoffire", -- [4]
-					["id"] = 1598,
-				},
-				["143503"] = {
-					"143503", -- [1]
-					"<Cast: War Song>", -- [2]
-					3, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
-					["id"] = 1603,
-				},
-				["nil"] = {
-					"nil", -- [1]
-					"Pull", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\ability_warrior_charge", -- [4]
-					["id"] = 1778,
-				},
-				["185590"] = {
-					"185590", -- [1]
-					"Desecrate", -- [2]
-					27, -- [3]
-					"Interface\\Icons\\ability_bossfellord_felspike", -- [4]
-					["id"] = 1799,
-				},
-				["184449"] = {
-					"184449", -- [1]
-					"Mark of the Necromancer", -- [2]
-					6.3, -- [3]
-					"Interface\\Icons\\ability_bossfelorcs_necromancer_purple", -- [4]
-					["id"] = 1798,
-				},
-				["184369"] = {
-					"184369", -- [1]
-					"Howling Axe", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
-					["id"] = 1778,
+					"Interface\\Icons\\ability_earthenfury_giftofearth", -- [4]
+					["id"] = 1722,
 				},
 				["143502"] = {
 					"143502", -- [1]
@@ -8671,12 +8550,12 @@ _detalhes_database = {
 					"Interface\\Icons\\INV_Sword_48", -- [4]
 					["id"] = 1603,
 				},
-				["179583"] = {
-					"179583", -- [1]
-					"Rumbling Fissures", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\ability_bossfellord_felfissure", -- [4]
-					["id"] = 1777,
+				["143385"] = {
+					"143385", -- [1]
+					"Electrostatic Charge", -- [2]
+					17, -- [3]
+					"Interface\\Icons\\spell_shaman_staticshock", -- [4]
+					["id"] = 1601,
 				},
 				["181275"] = {
 					"181275", -- [1]
@@ -8684,13 +8563,6 @@ _detalhes_database = {
 					20, -- [3]
 					"Interface\\Icons\\spell_warlock_summonterrorguard", -- [4]
 					["id"] = 1795,
-				},
-				["186407"] = {
-					"186407", -- [1]
-					"Fel Surge", -- [2]
-					19, -- [3]
-					"Interface\\Icons\\spell_fel_incinerate", -- [4]
-					["id"] = 1800,
 				},
 				["182225"] = {
 					"182225", -- [1]
@@ -8706,12 +8578,96 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
 					["id"] = 1024,
 				},
-				["142851"] = {
-					"142851", -- [1]
-					"Adds (1)", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\spell_nature_earthquake", -- [4]
-					["id"] = 1595,
+				["180224"] = {
+					"180224", -- [1]
+					"Death Throes (1)", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
+					["id"] = 1786,
+				},
+				["79339"] = {
+					"79339", -- [1]
+					"Explosive Cinders", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
+					["id"] = 1026,
+				},
+				["184657"] = {
+					"184657", -- [1]
+					"<Cast: Nightmare Visage>", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\Spell_Shadow_SummonVoidWalker", -- [4]
+					["id"] = 1798,
+				},
+				["185590"] = {
+					"185590", -- [1]
+					"Desecrate", -- [2]
+					27, -- [3]
+					"Interface\\Icons\\ability_bossfellord_felspike", -- [4]
+					["id"] = 1799,
+				},
+				["159113"] = {
+					"159113", -- [1]
+					"Impale", -- [2]
+					37, -- [3]
+					"Interface\\Icons\\Ability_Rogue_HungerforBlood", -- [4]
+					["id"] = 1721,
+				},
+				["-8202"] = {
+					"-8202", -- [1]
+					"The Assembly Line (2)", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\Inv_crate_03", -- [4]
+					["id"] = 1601,
+				},
+				["144758"] = {
+					"144758", -- [1]
+					"Desecrate", -- [2]
+					11, -- [3]
+					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
+					["id"] = 1623,
+				},
+				["179583"] = {
+					"179583", -- [1]
+					"Rumbling Fissures", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\ability_bossfellord_felfissure", -- [4]
+					["id"] = 1777,
+				},
+				["injection_tank"] = {
+					"injection_tank", -- [1]
+					"Injection", -- [2]
+					9, -- [3]
+					"INTERFACE\\ICONS\\inv_gizmo_runichealthinjector", -- [4]
+					["id"] = 1593,
+				},
+				["186407"] = {
+					"186407", -- [1]
+					"Fel Surge", -- [2]
+					19, -- [3]
+					"Interface\\Icons\\spell_fel_incinerate", -- [4]
+					["id"] = 1800,
+				},
+				["-8220"] = {
+					"-8220", -- [1]
+					"Look Within", -- [2]
+					60, -- [3]
+					"Interface\\Icons\\ability_titankeeper_testofconfidence", -- [4]
+					["id"] = 1624,
+				},
+				["144328"] = {
+					"144328", -- [1]
+					"Iron Tomb", -- [2]
+					31, -- [3]
+					"Interface\\Icons\\INV_Misc_Powder_Iron", -- [4]
+					["id"] = 1606,
+				},
+				["phase"] = {
+					"phase", -- [1]
+					"Next phase", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
+					["id"] = 1025,
 				},
 				["181973"] = {
 					"181973", -- [1]
@@ -8734,19 +8690,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_Shadesofdarkness", -- [4]
 					["id"] = 1595,
 				},
-				["181827"] = {
-					"181827", -- [1]
-					"Fel Conduit", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
-					["id"] = 1788,
+				["184369"] = {
+					"184369", -- [1]
+					"Howling Axe", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
+					["id"] = 1778,
 				},
-				["183885"] = {
-					"183885", -- [1]
-					"Mirror Images", -- [2]
-					78, -- [3]
-					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
-					["id"] = 1798,
+				["160013"] = {
+					"160013", -- [1]
+					"Decay (2)", -- [2]
+					9.5, -- [3]
+					"Interface\\Icons\\Spell_Nature_WispSplodeGreen", -- [4]
+					["id"] = 1720,
 				},
 				["144985"] = {
 					"144985", -- [1]
@@ -8769,12 +8725,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
 					["id"] = 1798,
 				},
-				["143337"] = {
-					"143337", -- [1]
-					"Mutate", -- [2]
-					23, -- [3]
-					"Interface\\Icons\\ability_rikkal_genetics", -- [4]
-					["id"] = 1593,
+				["162185"] = {
+					"162185", -- [1]
+					"Expel Magic: Fire", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\INV_Elemental_Primal_Fire", -- [4]
+					["id"] = 1723,
 				},
 				["158057"] = {
 					"158057", -- [1]
@@ -8797,19 +8753,19 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_frost_frozenorb", -- [4]
 					["id"] = 1723,
 				},
-				["157943"] = {
-					"157943", -- [1]
-					"Whirlwind", -- [2]
-					33, -- [3]
-					"Interface\\Icons\\ability_whirlwind", -- [4]
-					["id"] = 1719,
+				["143423"] = {
+					"143423", -- [1]
+					"Sha Sear on YOU!", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_MindShear", -- [4]
+					["id"] = 1598,
 				},
-				["143428"] = {
-					"143428", -- [1]
-					"Tail Lash", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\Ability_CriticalStrike", -- [4]
-					["id"] = 1599,
+				["184681"] = {
+					"184681", -- [1]
+					"Wailing Horror (1)", -- [2]
+					75, -- [3]
+					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
+					["id"] = 1798,
 				},
 				["190050"] = {
 					"190050", -- [1]
@@ -8832,19 +8788,19 @@ _detalhes_database = {
 					"Interface\\ICONS\\INV_Misc_Bomb_02.blp", -- [4]
 					["id"] = 1600,
 				},
-				["162185"] = {
-					"162185", -- [1]
-					"Expel Magic: Fire", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\INV_Elemental_Primal_Fire", -- [4]
-					["id"] = 1723,
+				["143503"] = {
+					"143503", -- [1]
+					"<Cast: War Song>", -- [2]
+					3, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
+					["id"] = 1603,
 				},
-				["143423"] = {
-					"143423", -- [1]
-					"Sha Sear on YOU!", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_MindShear", -- [4]
-					["id"] = 1598,
+				["157943"] = {
+					"157943", -- [1]
+					"Whirlwind", -- [2]
+					33, -- [3]
+					"Interface\\Icons\\ability_whirlwind", -- [4]
+					["id"] = 1719,
 				},
 				["living_mushroom"] = {
 					"living_mushroom", -- [1]
@@ -8860,12 +8816,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Achievement_Character_Orc_Male", -- [4]
 					["id"] = 1622,
 				},
-				["148677"] = {
-					"148677", -- [1]
-					"Reave", -- [2]
-					42, -- [3]
-					"Interface\\Icons\\ability_whirlwind", -- [4]
-					["id"] = 1593,
+				["manifest_rage"] = {
+					"manifest_rage", -- [1]
+					"Manifest Rage", -- [2]
+					89.1, -- [3]
+					"Interface\\Icons\\ability_titankeeper_uncheckedcorruption", -- [4]
+					["id"] = 1623,
 				},
 				["143436"] = {
 					"143436", -- [1]
@@ -8888,12 +8844,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_creature_poison_02", -- [4]
 					["id"] = 1606,
 				},
-				["142826"] = {
-					"142826", -- [1]
-					"Arcing Smash (1)", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\spell_shaman_earthquake", -- [4]
-					["id"] = 1595,
+				["143428"] = {
+					"143428", -- [1]
+					"Tail Lash", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\Ability_CriticalStrike", -- [4]
+					["id"] = 1599,
 				},
 				["-11462"] = {
 					"-11462", -- [1]
@@ -8902,19 +8858,19 @@ _detalhes_database = {
 					"Interface\\Icons\\achievement_halloween_ghost_01", -- [4]
 					["id"] = 1794,
 				},
+				["144215"] = {
+					"144215", -- [1]
+					"Froststorm Strike", -- [2]
+					6, -- [3]
+					"INTERFACE\\ICONS\\spell_shaman_unleashweapon_frost", -- [4]
+					["id"] = 1606,
+				},
 				["145065"] = {
 					"145065", -- [1]
 					"Mind Control", -- [2]
 					15, -- [3]
 					"Interface\\Icons\\ability_garrosh_touch_of_yshaarj", -- [4]
 					["id"] = 1623,
-				},
-				["77690"] = {
-					"77690", -- [1]
-					"Lava Spew", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\Spell_Shaman_LavaBurst", -- [4]
-					["id"] = 1024,
 				},
 				["182001"] = {
 					"182001", -- [1]
@@ -8923,26 +8879,26 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
 					["id"] = 1785,
 				},
-				["144215"] = {
-					"144215", -- [1]
-					"Froststorm Strike", -- [2]
-					6, -- [3]
-					"INTERFACE\\ICONS\\spell_shaman_unleashweapon_frost", -- [4]
-					["id"] = 1606,
+				["77690"] = {
+					"77690", -- [1]
+					"Lava Spew", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\Spell_Shaman_LavaBurst", -- [4]
+					["id"] = 1024,
 				},
-				["manifest_rage"] = {
-					"manifest_rage", -- [1]
-					"Manifest Rage", -- [2]
-					89.1, -- [3]
-					"Interface\\Icons\\ability_titankeeper_uncheckedcorruption", -- [4]
-					["id"] = 1623,
+				["142826"] = {
+					"142826", -- [1]
+					"Arcing Smash (1)", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\spell_shaman_earthquake", -- [4]
+					["id"] = 1595,
 				},
-				["184681"] = {
-					"184681", -- [1]
-					"Wailing Horror (1)", -- [2]
-					75, -- [3]
-					"Interface\\Icons\\Ability_Rogue_EnvelopingShadows", -- [4]
-					["id"] = 1798,
+				["148677"] = {
+					"148677", -- [1]
+					"Reave", -- [2]
+					42, -- [3]
+					"Interface\\Icons\\ability_whirlwind", -- [4]
+					["id"] = 1593,
 				},
 				["182459"] = {
 					"182459", -- [1]
@@ -8958,61 +8914,61 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
 					["id"] = 1722,
 				},
-				["phase"] = {
-					"phase", -- [1]
-					"Next phase", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\INV_ELEMENTAL_PRIMAL_SHADOW", -- [4]
-					["id"] = 1025,
-				},
-				["injection_tank"] = {
-					"injection_tank", -- [1]
-					"Injection", -- [2]
-					9, -- [3]
-					"INTERFACE\\ICONS\\inv_gizmo_runichealthinjector", -- [4]
+				["143337"] = {
+					"143337", -- [1]
+					"Mutate", -- [2]
+					23, -- [3]
+					"Interface\\Icons\\ability_rikkal_genetics", -- [4]
 					["id"] = 1593,
 				},
-				["144758"] = {
-					"144758", -- [1]
-					"Desecrate", -- [2]
-					11, -- [3]
-					"INTERFACE\\ICONS\\spell_fire_twilightflamestrike", -- [4]
-					["id"] = 1623,
-				},
-				["-8202"] = {
-					"-8202", -- [1]
-					"The Assembly Line (2)", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\Inv_crate_03", -- [4]
-					["id"] = 1601,
-				},
-				["159113"] = {
-					"159113", -- [1]
-					"Impale", -- [2]
-					37, -- [3]
-					"Interface\\Icons\\Ability_Rogue_HungerforBlood", -- [4]
-					["id"] = 1721,
-				},
-				["184657"] = {
-					"184657", -- [1]
-					"<Cast: Nightmare Visage>", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_SummonVoidWalker", -- [4]
+				["183885"] = {
+					"183885", -- [1]
+					"Mirror Images", -- [2]
+					78, -- [3]
+					"Interface\\Icons\\Spell_Nature_MirrorImage", -- [4]
 					["id"] = 1798,
 				},
-				["79339"] = {
-					"79339", -- [1]
-					"Explosive Cinders", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\Spell_Fire_ElementalDevastation", -- [4]
-					["id"] = 1026,
+				["144498"] = {
+					"144498", -- [1]
+					"Explosive Tar", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\spell_yorsahj_bloodboil_black", -- [4]
+					["id"] = 1600,
 				},
-				["180224"] = {
-					"180224", -- [1]
-					"Death Throes (1)", -- [2]
-					40, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
-					["id"] = 1786,
+				["181827"] = {
+					"181827", -- [1]
+					"Fel Conduit", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFireNova", -- [4]
+					["id"] = 1788,
+				},
+				["184449"] = {
+					"184449", -- [1]
+					"Mark of the Necromancer", -- [2]
+					6.3, -- [3]
+					"Interface\\Icons\\ability_bossfelorcs_necromancer_purple", -- [4]
+					["id"] = 1798,
+				},
+				["nil"] = {
+					"nil", -- [1]
+					"Pull", -- [2]
+					10, -- [3]
+					"Interface\\Icons\\ability_warrior_charge", -- [4]
+					["id"] = 1778,
+				},
+				["142851"] = {
+					"142851", -- [1]
+					"Adds (1)", -- [2]
+					5, -- [3]
+					"Interface\\Icons\\spell_nature_earthquake", -- [4]
+					["id"] = 1595,
+				},
+				["184964"] = {
+					"184964", -- [1]
+					"Shackled Torment (1)", -- [2]
+					27, -- [3]
+					"Interface\\Icons\\ability_warlock_soullink", -- [4]
+					["id"] = 1799,
 				},
 				["158200"] = {
 					"158200", -- [1]
@@ -9042,19 +8998,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Racial_Cannibalize", -- [4]
 					["id"] = 1024,
 				},
-				["162894"] = {
-					"162894", -- [1]
-					"Gift of Earth", -- [2]
-					10, -- [3]
-					"Interface\\Icons\\ability_earthenfury_giftofearth", -- [4]
-					["id"] = 1722,
+				["144396"] = {
+					"144396", -- [1]
+					"Vengeful Strikes", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\sha_spell_fire_bluerainoffire", -- [4]
+					["id"] = 1598,
 				},
-				["181912"] = {
-					"181912", -- [1]
-					"Focused Blast", -- [2]
+				["-8298"] = {
+					"-8298", -- [1]
+					"Siege Engineer", -- [2]
 					20, -- [3]
-					"Interface\\Icons\\ability_felarakkoa_focusedblast", -- [4]
-					["id"] = 1788,
+					"Interface\\Icons\\Ability_Mage_FireStarter", -- [4]
+					["id"] = 1623,
 				},
 				["-7915"] = {
 					"-7915", -- [1]
@@ -9070,12 +9026,12 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_sandstorm", -- [4]
 					["id"] = 1784,
 				},
-				["demolisher"] = {
-					"demolisher", -- [1]
-					"Demolisher", -- [2]
-					20, -- [3]
-					"Interface\\Icons\\ability_vehicle_siegeenginecannon", -- [4]
-					["id"] = 1622,
+				["162186"] = {
+					"162186", -- [1]
+					"Expel Magic: Arcane", -- [2]
+					30, -- [3]
+					"Interface\\Icons\\Spell_Arcane_Blast", -- [4]
+					["id"] = 1723,
 				},
 				["182020"] = {
 					"182020", -- [1]
@@ -9091,12 +9047,12 @@ _detalhes_database = {
 					"Interface\\ICONS\\Ability_Kilruk_Reave.blp", -- [4]
 					["id"] = 1593,
 				},
-				["-8305"] = {
-					"-8305", -- [1]
-					"Intermission", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\SPELL_HOLY_PRAYEROFSHADOWPROTECTION", -- [4]
-					["id"] = 1623,
+				["181255"] = {
+					"181255", -- [1]
+					"Fel Imp-losion", -- [2]
+					38, -- [3]
+					"Interface\\Icons\\Ability_Warlock_EmpoweredImp", -- [4]
+					["id"] = 1795,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -9105,12 +9061,12 @@ _detalhes_database = {
 					"Interface\\Icons\\inv_shield_38", -- [4]
 					["id"] = 1784,
 				},
-				["144467"] = {
-					"144467", -- [1]
-					"Ignite Armor", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\inv_shield_deathwingraid_d_02", -- [4]
-					["id"] = 1600,
+				["186490"] = {
+					"186490", -- [1]
+					"Chains of Fel", -- [2]
+					33, -- [3]
+					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
+					["id"] = 1800,
 				},
 				["189009"] = {
 					"189009", -- [1]
@@ -9140,47 +9096,47 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelmagnaron_handempowered", -- [4]
 					["id"] = 1787,
 				},
-				["145226"] = {
-					"145226", -- [1]
-					"Blind Hatred", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\sha_ability_mage_firestarter", -- [4]
-					["id"] = 1624,
-				},
-				["180025"] = {
-					"180025", -- [1]
-					"Harbinger's Mending (1)", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
-					["id"] = 1784,
-				},
-				["146849"] = {
-					"146849", -- [1]
-					"Shattering Cleave", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Warrior_ShieldBreak", -- [4]
-					["id"] = 1622,
-				},
-				["-8207"] = {
-					"-8207", -- [1]
-					"Pattern Recognition", -- [2]
-					60, -- [3]
-					"Interface\\ICONS\\Ability_Siege_Engineer_pattern_recognition.blp", -- [4]
-					["id"] = 1601,
-				},
-				["146595"] = {
-					"146595", -- [1]
-					"Gift of the Titans", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Achievement_Dungeon_UlduarRaid_Titan_01", -- [4]
+				["144400"] = {
+					"144400", -- [1]
+					"Swelling Pride (1)", -- [2]
+					77, -- [3]
+					"Interface\\Icons\\sha_spell_warlock_demonsoul", -- [4]
 					["id"] = 1604,
 				},
-				["180163"] = {
-					"180163", -- [1]
-					"Savage Strikes", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
-					["id"] = 1786,
+				["arena_sweeper"] = {
+					"arena_sweeper", -- [1]
+					"Arena Sweeper", -- [2]
+					55, -- [3]
+					"Interface\\Icons\\ability_kick", -- [4]
+					["id"] = 1721,
+				},
+				["-9921"] = {
+					"-9921", -- [1]
+					"Gorian Reaver", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\ability_warrior_shieldbreak", -- [4]
+					["id"] = 1705,
+				},
+				["156467"] = {
+					"156467", -- [1]
+					"Destructive Resonance", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\ability_socererking_arcanemines", -- [4]
+					["id"] = 1705,
+				},
+				["adds"] = {
+					"adds", -- [1]
+					"Middle: Iron Dragoon", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\achievement_character_orc_male", -- [4]
+					["id"] = 1778,
+				},
+				["159947"] = {
+					"159947", -- [1]
+					"Chain Hurl", -- [2]
+					90, -- [3]
+					"Interface\\Icons\\inv_misc_steelweaponchain", -- [4]
+					["id"] = 1721,
 				},
 				["159996"] = {
 					"159996", -- [1]
@@ -9189,19 +9145,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Creature_Disease_01", -- [4]
 					["id"] = 1720,
 				},
-				["-8195"] = {
-					"-8195", -- [1]
-					"Launch Sawblade", -- [2]
-					9, -- [3]
-					"Interface\\ICONS\\INV_Misc_SawBlade_01.blp", -- [4]
-					["id"] = 1601,
+				["143973"] = {
+					"143973", -- [1]
+					"Falling Ash (1)", -- [2]
+					17, -- [3]
+					"Interface\\Icons\\inv_elemental_mote_fire01", -- [4]
+					["id"] = 1606,
 				},
-				["181824"] = {
-					"181824", -- [1]
-					"Phantasmal Corruption", -- [2]
-					22, -- [3]
-					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
-					["id"] = 1788,
+				["143243"] = {
+					"143243", -- [1]
+					"Rapid Fire", -- [2]
+					49, -- [3]
+					"Interface\\Icons\\Ability_Hunter_RunningShot", -- [4]
+					["id"] = 1593,
 				},
 				["spore_shooter"] = {
 					"spore_shooter", -- [1]
@@ -9224,19 +9180,19 @@ _detalhes_database = {
 					"Interface\\Icons\\trade_archaeology_insect in amber", -- [4]
 					["id"] = 1593,
 				},
-				["190224"] = {
-					"190224", -- [1]
-					"Void Strike", -- [2]
-					17, -- [3]
-					"Interface\\Icons\\Spell_Shadow_FocusedPower", -- [4]
-					["id"] = 1800,
+				["181597"] = {
+					"181597", -- [1]
+					"Mannoroth's Gaze", -- [2]
+					40, -- [3]
+					"Interface\\Icons\\ability_bossmannoroth_mannorothsgaze", -- [4]
+					["id"] = 1795,
 				},
-				["berserk"] = {
-					"berserk", -- [1]
-					"Berserk", -- [2]
-					600, -- [3]
-					"Interface\\Icons\\Spell_Shadow_UnholyFrenzy", -- [4]
-					["id"] = 1785,
+				["160734"] = {
+					"160734", -- [1]
+					"Vulnerability", -- [2]
+					20, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelHellfire", -- [4]
+					["id"] = 1723,
 				},
 				["179711"] = {
 					"179711", -- [1]
@@ -9252,12 +9208,12 @@ _detalhes_database = {
 					"Interface\\Icons\\warrior_disruptingshout", -- [4]
 					["id"] = 1719,
 				},
-				["77991"] = {
-					"77991", -- [1]
-					"Release All Minions", -- [2]
-					12.5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowMend", -- [4]
-					["id"] = 1025,
+				["180008"] = {
+					"180008", -- [1]
+					"Reverberating Blow", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
+					["id"] = 1794,
 				},
 				["-8132"] = {
 					"-8132", -- [1]
@@ -9273,19 +9229,19 @@ _detalhes_database = {
 					"Interface\\Icons\\sha_ability_rogue_bloodyeye", -- [4]
 					["id"] = 1604,
 				},
-				["184124"] = {
-					"184124", -- [1]
-					"Gift of the Man'ari", -- [2]
-					5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_AntiMagicShell", -- [4]
-					["id"] = 1794,
+				["143019"] = {
+					"143019", -- [1]
+					"Corrupted Brew", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\sha_inv_elemental_primal_shadow", -- [4]
+					["id"] = 1598,
 				},
-				["volatile_anomaly"] = {
-					"volatile_anomaly", -- [1]
-					"Volatile Anomaly (1)", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\spell_arcane_arcane04", -- [4]
-					["id"] = 1705,
+				["181735"] = {
+					"181735", -- [1]
+					"Felseeker", -- [2]
+					60, -- [3]
+					"Interface\\Icons\\spell_fel_elementaldevastation", -- [4]
+					["id"] = 1795,
 				},
 				["143958"] = {
 					"143958", -- [1]
@@ -9301,19 +9257,19 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
 					["id"] = 1785,
 				},
-				["-7963"] = {
-					"-7963", -- [1]
-					"Deafening Screech", -- [2]
-					14, -- [3]
-					"Interface\\ICONS\\Ability_Vehicle_SonicShockwave.blp", -- [4]
-					["id"] = 1599,
+				["144563"] = {
+					"144563", -- [1]
+					"Imprison", -- [2]
+					52.5, -- [3]
+					"Interface\\Icons\\sha_ability_rogue_sturdyrecuperate", -- [4]
+					["id"] = 1604,
 				},
-				["185237"] = {
-					"185237", -- [1]
-					"Touch of Harm", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
-					["id"] = 1784,
+				["81007"] = {
+					"81007", -- [1]
+					"Shadowblaze", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\Spell_Shadow_Shadowfury", -- [4]
+					["id"] = 1026,
 				},
 				["81272"] = {
 					"81272", -- [1]
@@ -9329,19 +9285,19 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
 					["id"] = 1787,
 				},
-				["143491"] = {
-					"143491", -- [1]
-					"Calamity", -- [2]
-					29, -- [3]
-					"Interface\\Icons\\ability_priest_halo_shadow", -- [4]
-					["id"] = 1598,
+				["182826"] = {
+					"182826", -- [1]
+					"Doomfire", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
+					["id"] = 1799,
 				},
-				["179977"] = {
-					"179977", -- [1]
-					"Touch of Doom", -- [2]
-					8.3, -- [3]
-					"Interface\\Icons\\ability_bossgorefiend_touchofdoom", -- [4]
-					["id"] = 1783,
+				["183329"] = {
+					"183329", -- [1]
+					"Apocalypse (1)", -- [2]
+					51.5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowPower", -- [4]
+					["id"] = 1794,
 				},
 				["flesh_eater"] = {
 					"flesh_eater", -- [1]
@@ -9350,12 +9306,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Creature_Disease_02", -- [4]
 					["id"] = 1720,
 				},
-				["188929"] = {
-					"188929", -- [1]
-					"Heart Seeker", -- [2]
-					25, -- [3]
-					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
-					["id"] = 1786,
+				["portals"] = {
+					"portals", -- [1]
+					"Portals Move", -- [2]
+					138, -- [3]
+					"Interface\\Icons\\Spell_Arcane_PortalOrgrimmar", -- [4]
+					["id"] = 1794,
 				},
 				["-7920"] = {
 					"-7920", -- [1]
@@ -9364,12 +9320,12 @@ _detalhes_database = {
 					"Interface\\Icons\\achievement_guildperk_everybodysfriend", -- [4]
 					["id"] = 1603,
 				},
-				["186783"] = {
-					"186783", -- [1]
-					"Withering Gaze", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Spell_Shadow_DeathsEmbrace", -- [4]
-					["id"] = 1800,
+				["181956"] = {
+					"181956", -- [1]
+					"Phantasmal Winds", -- [2]
+					17, -- [3]
+					"Interface\\Icons\\Spell_Frost_ArcticWinds", -- [4]
+					["id"] = 1788,
 				},
 				["158553"] = {
 					"158553", -- [1]
@@ -9383,10 +9339,10 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["opened"] = 0,
-			["max_emote_segments"] = 3,
+			["window_scale"] = 1,
 			["show_icon"] = 5,
 			["hide_on_combat"] = false,
-			["window_scale"] = 1,
+			["max_emote_segments"] = 3,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -9413,11 +9369,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["arrow_anchor_y"] = 0,
-			["main_frame_locked"] = false,
+			["scale"] = 1,
+			["row_height"] = 20,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["point"] = "TOP",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -9425,14 +9381,9 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["font_size"] = 10,
 			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
@@ -9443,22 +9394,27 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
+				["update_speed"] = 0.0160000007599592,
+				["attribute_type"] = 1,
 			},
-			["font_size"] = 10,
-			["point"] = "TOP",
-			["row_height"] = 20,
-			["scale"] = 1,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["rightclick_closed"] = false,
 			["auto_open"] = false,
+			["rightclick_closed"] = false,
 			["auto_close"] = true,
-			["hide_on_combat"] = true,
 			["author"] = "Details! Team",
+			["hide_on_combat"] = true,
 			["deaths_table"] = {
 				{
 					"Blackhand", -- [1]
@@ -10606,24 +10562,47 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
-			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
+			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
+		},
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["enabled"] = true,
+			["animate"] = false,
+			["useplayercolor"] = false,
+			["author"] = "Details! Team",
+			["useclasscolors"] = false,
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["showamount"] = false,
+		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -10633,29 +10612,9 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["animate"] = false,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["useclasscolors"] = false,
-			["author"] = "Details! Team",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["enabled"] = true,
-		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-		},
+	},
+	["character_data"] = {
+		["logons"] = 6101,
 	},
 	["nick_tag_cache"] = {
 		["Hunkdk"] = {
@@ -10727,30 +10686,6 @@ _detalhes_database = {
 			}, -- [6]
 			3, -- [7]
 		},
-		["Slamzy"] = {
-			"Bully Hunter", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Chief Ukorz Sandscalp", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-Rain", -- [4]
-			{
-				0.078125, -- [1]
-				0.970703125, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			5, -- [7]
-		},
-		["last_version"] = 10,
 		["Nex"] = {
 			"Tasty Boy", -- [1]
 			"", -- [2]
@@ -10773,6 +10708,30 @@ _detalhes_database = {
 				1, -- [3]
 			}, -- [6]
 			4, -- [7]
+		},
+		["last_version"] = 10,
+		["Slamzy"] = {
+			"Bully Hunter", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Chief Ukorz Sandscalp", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-Rain", -- [4]
+			{
+				0.078125, -- [1]
+				0.970703125, -- [2]
+				1, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			5, -- [7]
 		},
 		["Uran"] = {
 			"Salty Uran", -- [1]
@@ -10798,29 +10757,6 @@ _detalhes_database = {
 			11, -- [7]
 		},
 		["nextreset"] = 1530913028,
-		["Hunkmg"] = {
-			"Bruce U", -- [1]
-			"", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"", -- [4]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			4, -- [7]
-		},
 		["Canadapriest"] = {
 			"Disco Gymer", -- [1]
 			"", -- [2]
@@ -10843,6 +10779,29 @@ _detalhes_database = {
 				1, -- [3]
 			}, -- [6]
 			2, -- [7]
+		},
+		["Hunkmg"] = {
+			"Bruce U", -- [1]
+			"", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"", -- [4]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			4, -- [7]
 		},
 		["Aljan"] = {
 			"Fakedom", -- [1]
@@ -10891,27 +10850,22 @@ _detalhes_database = {
 			6, -- [7]
 		},
 	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
 	["announce_firsthit"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 	},
-	["ignore_nicktag"] = true,
-	["last_realversion"] = 130,
-	["last_version"] = "v7.3.5.5572",
+	["combat_counter"] = 68846,
 	["combat_id"] = 169,
 	["savedStyles"] = {
 	},
-	["last_instance_time"] = 1530809510,
-	["last_day"] = "05",
-	["announce_deaths"] = {
+	["announce_prepots"] = {
 		["enabled"] = false,
-		["last_hits"] = 3,
-		["only_first"] = 5,
-		["where"] = 3,
-	},
-	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 6100,
+		["reverse"] = false,
+		["channel"] = "SELF",
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Darkheart Thicket",
@@ -10924,10 +10878,21 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1466,
 		["previous_boss_killed_at"] = 1530810689,
 	},
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 3,
+		["only_first"] = 5,
+		["where"] = 3,
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["last_day"] = "06",
+	["last_realversion"] = 130,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

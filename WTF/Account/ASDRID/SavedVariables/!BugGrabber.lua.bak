@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 4802,
 	["lastSanitation"] = 3,
-	["session"] = 4801,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\SMT\\core\\core.lua:1034: attempt to perform arithmetic on local 'endTimeMS' (a nil value)",

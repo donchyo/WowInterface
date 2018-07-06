@@ -1,35 +1,6 @@
 
 bdCoreData = nil
 BD_persistent = {
-	["blacklist"] = {
-	},
-	["mine"] = {
-	},
-	["General"] = {
-		["forcescale"] = false,
-		["warning"] = "Changing font and background are still a work in progress.",
-		["fancymenu"] = true,
-		["errorblock"] = true,
-		["interrupt"] = false,
-		["border"] = 0,
-		["skingmotd"] = false,
-		["font"] = "bdFont",
-		["changefonts"] = false,
-		["skinwas"] = false,
-		["tab"] = "Skinning",
-		["background"] = "bdSmooth",
-		["alteratepowerbar"] = true,
-		["doubleclickbo"] = false,
-	},
-	["gmotd"] = {
-		[""] = true,
-	},
-	["goldtrack"] = {
-	},
-	["raid"] = {
-	},
-	["whitelist"] = {
-	},
 	["auras"] = {
 		["class"] = {
 			["warrior"] = {
@@ -52,32 +23,44 @@ BD_persistent = {
 			},
 			["hunter"] = {
 			},
-			["priest"] = {
-			},
 			["warlock"] = {
 			},
+			["priest"] = {
+			},
 		},
+	},
+	["whitelist"] = {
+	},
+	["General"] = {
+		["forcescale"] = false,
+		["warning"] = "Changing font and background are still a work in progress.",
+		["fancymenu"] = true,
+		["errorblock"] = true,
+		["interrupt"] = false,
+		["border"] = 0,
+		["skingmotd"] = false,
+		["font"] = "bdFont",
+		["changefonts"] = false,
+		["doubleclickbo"] = false,
+		["alteratepowerbar"] = true,
+		["background"] = "bdSmooth",
+		["tab"] = "Skinning",
+		["skinwas"] = false,
+	},
+	["raid"] = {
+	},
+	["goldtrack"] = {
+	},
+	["gmotd"] = {
+		[""] = true,
+	},
+	["mine"] = {
+	},
+	["blacklist"] = {
 	},
 }
 BD_profiles = {
 	["default"] = {
-		["Buffs/Debuffs"] = {
-			["tab"] = "Buffs",
-			["debuffvgrowth"] = "Downwards",
-			["debuffspacing"] = 0,
-			["buffvgrowth"] = "Downwards",
-			["debuffsize"] = 32,
-			["debuffhgrowth"] = "Left",
-			["debuffblacklist"] = {
-			},
-			["buffperrow"] = 13,
-			["debuffperrow"] = 10,
-			["buffspacing"] = 0,
-			["buffblacklist"] = {
-			},
-			["buffsize"] = 34,
-			["buffhgrowth"] = "Left",
-		},
 		["user"] = {
 			["profile"] = "default",
 			["profile_spec"] = {
@@ -87,6 +70,23 @@ BD_profiles = {
 				false, -- [4]
 				["current"] = false,
 			},
+		},
+		["Buffs/Debuffs"] = {
+			["tab"] = "Buffs",
+			["debuffvgrowth"] = "Downwards",
+			["debuffspacing"] = 0,
+			["buffvgrowth"] = "Downwards",
+			["debuffsize"] = 32,
+			["buffspacing"] = 0,
+			["debuffblacklist"] = {
+			},
+			["buffblacklist"] = {
+			},
+			["debuffperrow"] = 10,
+			["debuffhgrowth"] = "Left",
+			["buffperrow"] = 13,
+			["buffsize"] = 34,
+			["buffhgrowth"] = "Left",
 		},
 		["Nameplates"] = {
 			["nothreatcolor"] = {
@@ -159,65 +159,28 @@ BD_profiles = {
 			["automydebuff"] = false,
 			["text"] = "Certain abilities are tracked by default, i.e. stuns / silences. You can stop these from showing up using the blacklist. ",
 			["hptext"] = "HP - %",
-			["verticalspacing"] = 1.8,
+			["unselectedalpha"] = 0.5,
 			["disableauras"] = false,
 			["fixatealert"] = "All",
 			["width"] = 164,
-			["threatdangercolor"] = {
-				1, -- [1]
-				0.55, -- [2]
-				0.3, -- [3]
-				1, -- [4]
-			},
-			["friendlynamehack"] = false,
-			["raidmarkersize"] = 24,
-			["friendnamealpha"] = 1,
-			["showenergy"] = false,
 			["executecolor"] = {
 				0.1, -- [1]
 				0.4, -- [2]
 				0.7, -- [3]
 				1, -- [4]
 			},
-			["unselectedalpha"] = 0.5,
+			["showenergy"] = false,
+			["raidmarkersize"] = 24,
+			["friendlynamehack"] = false,
+			["friendnamealpha"] = 1,
+			["threatdangercolor"] = {
+				1, -- [1]
+				0.55, -- [2]
+				0.3, -- [3]
+				1, -- [4]
+			},
+			["verticalspacing"] = 1.8,
 			["markposition"] = "TOP",
-		},
-		["persistent"] = {
-			["blacklist"] = {
-			},
-			["mine"] = {
-			},
-			["General"] = {
-				["forcescale"] = true,
-				["warning"] = "Changing font and background are still a work in progress.",
-				["fancymenu"] = true,
-				["errorblock"] = true,
-				["interrupt"] = false,
-				["border"] = 2,
-				["skingmotd"] = false,
-				["font"] = "bdFont",
-				["changefonts"] = false,
-				["skinwas"] = true,
-				["tab"] = "Skinning",
-				["background"] = "bdSmooth",
-				["alteratepowerbar"] = true,
-				["doubleclickbo"] = false,
-			},
-			["gmotd"] = {
-				[""] = true,
-			},
-			["goldtrack"] = {
-			},
-			["raid"] = {
-			},
-			["whitelist"] = {
-			},
-			["auras"] = {
-				["class"] = {
-					["death knight"] = {
-					},
-				},
-			},
 		},
 		["positions"] = {
 			["bdBuffs"] = {
@@ -242,11 +205,48 @@ BD_profiles = {
 				-137.000045776367, -- [5]
 			},
 		},
+		["persistent"] = {
+			["auras"] = {
+				["class"] = {
+					["death knight"] = {
+					},
+				},
+			},
+			["whitelist"] = {
+			},
+			["General"] = {
+				["forcescale"] = true,
+				["warning"] = "Changing font and background are still a work in progress.",
+				["fancymenu"] = true,
+				["errorblock"] = true,
+				["interrupt"] = false,
+				["border"] = 2,
+				["skingmotd"] = false,
+				["font"] = "bdFont",
+				["changefonts"] = false,
+				["doubleclickbo"] = false,
+				["alteratepowerbar"] = true,
+				["background"] = "bdSmooth",
+				["tab"] = "Skinning",
+				["skinwas"] = true,
+			},
+			["raid"] = {
+			},
+			["goldtrack"] = {
+			},
+			["gmotd"] = {
+				[""] = true,
+			},
+			["mine"] = {
+			},
+			["blacklist"] = {
+			},
+		},
 		["Profiles"] = {
-			["createprofile"] = "Krixidk-Grim Batol",
-			["deleteprofile"] = "Delete Current Profile",
-			["intro"] = "The profile section is new, let me know if you see things that need improvement.",
 			["currentprofile"] = "default",
+			["intro"] = "The profile section is new, let me know if you see things that need improvement.",
+			["deleteprofile"] = "Delete Current Profile",
+			["createprofile"] = "Krixidk-Grim Batol",
 		},
 	},
 }
