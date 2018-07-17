@@ -200,7 +200,7 @@ BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 BigWigs_Nighthold: enabled
 Broker_Currency: disabled
-BulkBuy: enabled
+BulkBuy: disabled
 ChocolateBar: enabled
 ChocolateBar_Options: enabled
 ColorPickerPlus: enabled
@@ -400,3 +400,4 @@ BigWigs_BrokenIsles: enabled
 Plater: disabled
 bdNameplates: disabled
 Kui_Media: disabled
+WorldQuestTracker: enabled

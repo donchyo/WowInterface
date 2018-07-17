@@ -220,10 +220,10 @@ TidyPlates_Neon: disabled
 TidyPlates_Quatre: disabled
 TidyPlates_Threat: enabled
 TidyPlates_ThreatPlates: disabled
-TipTac: disabled
-TipTacItemRef: disabled
-TipTacOptions: disabled
-TipTacTalents: disabled
+TipTac: enabled
+TipTacItemRef: enabled
+TipTacOptions: enabled
+TipTacTalents: enabled
 Titlefix: disabled
 TrufiGCD: disabled
 ViragDevTool: disabled
@@ -233,8 +233,8 @@ WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
 WorldQuestGroupFinder: enabled
-WorldQuestTracker: disabled
-WorldQuestsList: disabled
+WorldQuestTracker: enabled
+WorldQuestsList: enabled
 +Wowhead_Looter: disabled
 XLoot: disabled
 XLoot_Frame: disabled

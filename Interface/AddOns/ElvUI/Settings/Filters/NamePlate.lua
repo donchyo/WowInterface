@@ -25,6 +25,7 @@ G["nameplate"]["filters"] = {
 E["StyleFilterDefaults"] = {
 	["triggers"] = {
 		["priority"] = 1,
+		["targetMe"] = false,
 		["isTarget"] = false,
 		["notTarget"] = false,
 		["questBoss"] = false,
@@ -175,9 +176,11 @@ E["StyleFilterDefaults"] = {
 	["actions"] = {
 		["color"] = {
 			["health"] = false,
+			["power"] = false,
 			["border"] = false,
 			["name"] = false,
 			["healthColor"] = {r=1,g=1,b=1,a=1},
+			["powerColor"] = {r=1,g=1,b=1,a=1},
 			["borderColor"] = {r=1,g=1,b=1,a=1},
 			["nameColor"] = {r=1,g=1,b=1,a=1}
 		},
@@ -193,6 +196,7 @@ E["StyleFilterDefaults"] = {
 		["hide"] = false,
 		["usePortrait"] = false,
 		["nameOnly"] = false,
+		["frameLevel"] = 0,
 		["scale"] = 1.0,
 		["alpha"] = -1,
 	},

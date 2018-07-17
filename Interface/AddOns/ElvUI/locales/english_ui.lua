@@ -38,11 +38,12 @@ L["Purchase Bags"] = true
 L["Purchase"] = true
 L["Reagent Bank"] = true
 L["Reset Position"] = true
+L["Right Click the bag icon to assign a type of item to this bag."] = true
 L["Show/Hide Reagents"] = true
 L["Sort Tab"] = true --Not used, yet?
 L["Temporary Move"] = true
 L["Toggle Bags"] = true
-L["Vendor Grays"] = true
+L["Vendor / Delete Grays"] = true
 
 --Chat
 L["AFK"] = true --Also used in datatexts
@@ -96,6 +97,7 @@ L["Hands"] = true
 L["Head"] = true
 L["Hold Shift + Right Click:"] = true
 L["Home Latency:"] = true
+L["Home Protocol:"] = true
 L["HP"] = true
 L["HPS"] = true
 L["Legs"] = true
@@ -104,10 +106,12 @@ L["Main Hand"] = true
 L["Mission(s) Report:"] = true
 L["Mitigation By Level: "] = true
 L["Mobile"] = true
+L["Mov. Speed:"] = true
 L["Naval Mission(s) Report:"] = true
 L["No Guild"] = true
 L["Offhand"] = true
 L["Profit:"] = true
+L["Reset Counters: Hold Shift + Left Click"] = true
 L["Reset Data: Hold Shift + Right Click"] = true
 L["Saved Raid(s)"] = true
 L["Saved Dungeon(s)"] = true
@@ -127,6 +131,7 @@ L["Total Memory:"] = true
 L["Total: "] = true
 L["Unhittable:"] = true
 L["Waist"] = true
+L["World Protocol:"] = true
 L["Wrist"] = true
 L["|cffFFFFFFLeft Click:|r Change Talent Specialization"] = true
 L["|cffFFFFFFRight Click:|r Change Loot Specialization"] = true
@@ -134,7 +139,6 @@ L["|cffFFFFFFShift + Left Click:|r Show Talent Specialization UI"] = true
 
 --DebugTools
 L["%s: %s tried to call the protected function '%s'."] = true
-L["No locals to dump"] = true
 
 --Distributor
 L["%s is attempting to share his filters with you. Would you like to accept the request?"] = true
@@ -180,7 +184,6 @@ L["Layout"] = true
 L["Lock"] = true
 L["Low Resolution"] = true
 L["low"] = true
-L["Movers unlocked. Move them now and click Lock when you are done."] = true
 L["Nudge"] = true
 L["Physical DPS"] = true
 L["Please click the button below so you can setup variables and ReloadUI."] = true
@@ -320,7 +323,7 @@ L["Confused.. Try Again!"] = true
 L["No gray items to delete."] = true
 L["The spell '%s' has been added to the Blacklist unitframe aura filter."] = true
 L["This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'."] = true
-L["Vendored gray items for:"] = true
+L["Vendored gray items for: %s"] = true
 L["You don't have enough money to repair."] = true
 L["You must be at a vendor."] = true
 L["Your items have been repaired for: "] = true
@@ -329,15 +332,16 @@ L["|cFFE30000Lua error recieved. You can view the error message when you exit co
 
 --Static Popups
 L["A setting you have changed will change an option for this character only. This setting that you have changed will be uneffected by changing user profiles. Changing this setting requires that you reload your User Interface."] = true
+L["Accepting this will reset the UnitFrame settings for %s. Are you sure?"] = true
 L["Accepting this will reset your Filter Priority lists for all auras on NamePlates. Are you sure?"] = true
 L["Accepting this will reset your Filter Priority lists for all auras on UnitFrames. Are you sure?"] = true
 L["Are you sure you want to apply this font to all ElvUI elements?"] = true
-L["Are you sure you want to delete all your gray items?"] = true
 L["Are you sure you want to disband the group?"] = true
 L["Are you sure you want to reset all the settings on this profile?"] = true
 L["Are you sure you want to reset every mover back to it's default position?"] = true
 L["Because of the mass confusion caused by the new aura system I've implemented a new step to the installation process. This is optional. If you like how your auras are setup go to the last step and click finished to not be prompted again. If for some reason you are prompted repeatedly please restart your game."] = true
 L["Can't buy anymore slots!"] = true
+L["Delete gray items?"] = true
 L["Detected that your ElvUI Config addon is out of date. This may be a result of your Tukui Client being out of date. Please visit our download page and update your Tukui Client, then reinstall ElvUI. Not having your ElvUI Config addon up to date will result in missing options."] = true
 L["Disable Warning"] = true
 L["Discard"] = true
@@ -346,6 +350,7 @@ L["Do you swear not to post in technical support about something not working wit
 L["ElvUI is five or more revisions out of date. You can download the newest version from www.tukui.org. Get premium membership and have ElvUI automatically updated with the Tukui Client!"] = true
 L["ElvUI is out of date. You can download the newest version from www.tukui.org. Get premium membership and have ElvUI automatically updated with the Tukui Client!"] = true
 L["ElvUI needs to perform database optimizations please be patient."] = true
+L["Error resetting UnitFrame."] = true
 L["Hover your mouse over any actionbutton or spellbook button to bind it. Press the escape key or right click to clear the current actionbutton's keybinding."] = true
 L["I Swear"] = true
 L["It appears one of your AddOns have disabled the AddOn Blizzard_CompactRaidFrames. This can cause errors and other issues. The AddOn will now be re-enabled."] = true

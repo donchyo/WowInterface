@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
 local _, ns = ...
 local ElvUF = ns.oUF
@@ -20,11 +20,13 @@ function UF:Construct_TargetTargetFrame(frame)
 	frame.Portrait2D = self:Construct_Portrait(frame, 'texture')
 
 	frame.Buffs = self:Construct_Buffs(frame)
-	frame.RaidTargetIndicator = UF:Construct_RaidIcon(frame)
+	frame.RaidTargetIndicator = self:Construct_RaidIcon(frame)
 	frame.Debuffs = self:Construct_Debuffs(frame)
-	frame.Range = UF:Construct_Range(frame)
-	frame.ThreatIndicator = UF:Construct_Threat(frame)
+	frame.Range = self:Construct_Range(frame)
+	frame.ThreatIndicator = self:Construct_Threat(frame)
 	frame.InfoPanel = self:Construct_InfoPanel(frame)
+	frame.MouseGlow = self:Construct_MouseGlow(frame)
+	frame.TargetGlow = self:Construct_TargetGlow(frame)
 	frame.customTexts = {}
 	frame:Point('BOTTOM', E.UIParent, 'BOTTOM', 0, 75) --Set to default position
 	E:CreateMover(frame, frame:GetName()..'Mover', L["TargetTarget Frame"], nil, nil, nil, 'ALL,SOLO')

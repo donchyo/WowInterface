@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
 --Cache global variables
@@ -33,7 +33,7 @@ local ORDER_HALL_MISSIONS = ORDER_HALL_MISSIONS
 -- GLOBALS: GarrisonLandingPage
 
 local GARRISON_CURRENCY = 1220
-local GARRISON_ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(GARRISON_CURRENCY)), 16, 16)
+local GARRISON_ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(GARRISON_CURRENCY)))
 
 local function sortFunction(a, b)
 	return a.missionEndTime < b.missionEndTime

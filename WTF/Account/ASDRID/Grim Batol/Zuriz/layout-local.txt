@@ -1,11 +1,4 @@
 Version: 1
-Frame: ObjectiveTrackerFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: -120
-Y: 38
-W: 260
-H: 550
 Frame: ColorPickerFrame
 FrameLevel: 25
 Anchor: TOPRIGHT
@@ -13,13 +6,6 @@ X: -118
 Y: -15
 W: 365
 H: 200
-Frame: bdCore config
-FrameLevel: 1
-Anchor: RIGHT
-X: -20
-Y: 0
-W: 740
-H: 450
 Frame: DetailsPlayerDetailsWindow
 FrameLevel: 1
 Anchor: CENTER
@@ -27,13 +13,6 @@ X: -47
 Y: -1
 W: 790
 H: 454
-Frame: SMT_GUI
-FrameLevel: 2
-Anchor: CENTER
-X: 0
-Y: 0
-W: 600
-H: 700
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: RIGHT

@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local mod = E:GetModule('NamePlates')
 local LSM = LibStub("LibSharedMedia-3.0")
 
@@ -52,7 +52,11 @@ function mod:UpdateElement_Name(frame, triggered)
 		end
 	end
 
-	frame.Name.NameOnlyGlow:SetVertexColor(self.db.glowColor.r, self.db.glowColor.g, self.db.glowColor.b, self.db.glowColor.a)
+	if self.db.nameColoredGlow then
+		frame.Name.NameOnlyGlow:SetVertexColor(r - 0.1, g - 0.1, b - 0.1, 1)
+	else
+		frame.Name.NameOnlyGlow:SetVertexColor(self.db.glowColor.r, self.db.glowColor.g, self.db.glowColor.b, self.db.glowColor.a)
+	end
 end
 
 function mod:ConfigureElement_Name(frame)
@@ -61,7 +65,7 @@ function mod:ConfigureElement_Name(frame)
 	name:SetJustifyH("LEFT")
 	name:SetJustifyV("BOTTOM")
 	name:ClearAllPoints()
-	if(self.db.units[frame.UnitType].healthbar.enable or frame.isTarget) then
+	if(self.db.units[frame.UnitType].healthbar.enable or (self.db.alwaysShowTargetHealth and frame.isTarget)) then
 		name:SetJustifyH("LEFT")
 		name:SetPoint("BOTTOMLEFT", frame.HealthBar, "TOPLEFT", 0, E.Border*2)
 		name:SetPoint("BOTTOMRIGHT", frame.Level, "BOTTOMLEFT")

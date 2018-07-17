@@ -73,27 +73,27 @@ E.Options.args.bags = {
 					set = function(info, value) E.db.bags[ info[#info] ] = value; B:UpdateGoldText(); end,
 				},
 				junkIcon = {
-					order = 4,
+					order = 6,
 					type = 'toggle',
 					name = L["Show Junk Icon"],
 					desc = L["Display the junk icon on all grey items that can be vendored."],
 					set = function(info, value) E.db.bags[ info[#info] ] = value; B:UpdateAllBagSlots(); end,
 				},
 				upgradeIcon = {
-					order = 5,
+					order = 7,
 					type = 'toggle',
 					name = L["Show Upgrade Icon"],
 					desc = L["Display the upgrade icon on items that WoW considers an upgrade for your character."],
 					set = function(info, value) E.db.bags[ info[#info] ] = value; B:UpdateAllBagSlots(); end,
 				},
 				clearSearchOnClose = {
-					order = 6,
+					order = 8,
 					type = 'toggle',
 					name = L["Clear Search On Close"],
 					set = function(info, value) E.db.bags[info[#info]] = value; end
 				},
 				reverseLoot = {
-					order = 7,
+					order = 9,
 					type = "toggle",
 					name = REVERSE_NEW_LOOT_TEXT,
 					set = function(info, value)
@@ -102,19 +102,19 @@ E.Options.args.bags = {
 					end,
 				},
 				disableBagSort = {
-					order = 8,
+					order = 10,
 					type = "toggle",
 					name = L["Disable Bag Sort"],
 					set = function(info, value) E.db.bags[info[#info]] = value; B:ToggleSortButtonState(false); end
 				},
 				disableBankSort = {
-					order = 9,
+					order = 11,
 					type = "toggle",
 					name = L["Disable Bank Sort"],
 					set = function(info, value) E.db.bags[info[#info]] = value; B:ToggleSortButtonState(true); end
 				},
 				countGroup = {
-					order = 10,
+					order = 12,
 					type = "group",
 					name = L["Item Count Font"],
 					guiInline = true,
@@ -164,7 +164,7 @@ E.Options.args.bags = {
 					},
 				},
 				itemLevelGroup = {
-					order = 11,
+					order = 13,
 					type = "group",
 					name = L["Item Level"],
 					guiInline = true,
@@ -219,8 +219,83 @@ E.Options.args.bags = {
 				},
 			},
 		},
-		sizeGroup = {
+		cooldown = {
+			type = "group",
 			order = 4,
+			name = L["Cooldown Override"],
+			get = function(info)
+				local t = E.db.bags.cooldown[ info[#info] ]
+				local d = P.bags.cooldown[ info[#info] ]
+				return t.r, t.g, t.b, t.a, d.r, d.g, d.b;
+			end,
+			set = function(info, r, g, b)
+				local t = E.db.bags.cooldown[ info[#info] ]
+				t.r, t.g, t.b = r, g, b;
+				E:UpdateCooldownSettings('bags');
+			end,
+			args = {
+				header = {
+					order = 1,
+					type = "header",
+					name = L["Cooldown Override"],
+				},
+				override = {
+					type = "toggle",
+					order = 2,
+					name = L["Use Override"],
+					desc = L["This will override the global cooldown settings."],
+					get = function(info) return E.db.bags.cooldown[ info[#info] ] end,
+					set = function(info, value) E.db.bags.cooldown[ info[#info] ] = value end,
+				},
+				threshold = {
+					type = 'range',
+					order = 3,
+					name = L["Low Threshold"],
+					desc = L["Threshold before text turns red and is in decimal form. Set to -1 for it to never turn red"],
+					min = -1, max = 20, step = 1,
+					disabled = function() return not E.db.bags.cooldown.override end,
+					get = function(info) return E.db.bags.cooldown[ info[#info] ] end,
+					set = function(info, value) E.db.bags.cooldown[ info[#info] ] = value end,
+				},
+				expiringColor = {
+					type = 'color',
+					order = 4,
+					name = L["Expiring"],
+					desc = L["Color when the text is about to expire"],
+					disabled = function() return not E.db.bags.cooldown.override end,
+				},
+				secondsColor = {
+					type = 'color',
+					order = 5,
+					name = L["Seconds"],
+					desc = L["Color when the text is in the seconds format."],
+					disabled = function() return not E.db.bags.cooldown.override end,
+				},
+				minutesColor = {
+					type = 'color',
+					order = 6,
+					name = L["Minutes"],
+					desc = L["Color when the text is in the minutes format."],
+					disabled = function() return not E.db.bags.cooldown.override end,
+				},
+				hoursColor = {
+					type = 'color',
+					order = 7,
+					name = L["Hours"],
+					desc = L["Color when the text is in the hours format."],
+					disabled = function() return not E.db.bags.cooldown.override end,
+				},
+				daysColor = {
+					type = 'color',
+					order = 8,
+					name = L["Days"],
+					desc = L["Color when the text is in the days format."],
+					disabled = function() return not E.db.bags.cooldown.override end,
+				},
+			},
+		},
+		sizeGroup = {
+			order = 5,
 			type = "group",
 			name = L["Size"],
 			disabled = function() return not E.bags end,
@@ -265,7 +340,7 @@ E.Options.args.bags = {
 			},
 		},
 		bagBar = {
-			order = 5,
+			order = 6,
 			type = "group",
 			name = L["Bag-Bar"],
 			get = function(info) return E.db.bags.bagBar[ info[#info] ] end,
@@ -337,10 +412,25 @@ E.Options.args.bags = {
 						['HORIZONTAL'] = L["Horizontal"],
 					},
 				},
+				visibility = {
+					type = 'input',
+					order = 8,
+					name = L["Visibility State"],
+					desc = L["This works like a macro, you can run different situations to get the actionbar to show/hide differently.\n Example: '[combat] show;hide'"],
+					width = 'full',
+					multiline = true,
+					set = function(info, value)
+						if value and value:match('[\n\r]') then
+							value = value:gsub('[\n\r]','')
+						end
+						E.db.bags.bagBar['visibility'] = value;
+						B:SizeAndPositionBagBar()
+					end,
+				},
 			},
 		},
 		bagSortingGroup = {
-			order = 6,
+			order = 7,
 			type = "group",
 			name = L["Bag Sorting"],
 			args = {
@@ -437,7 +527,7 @@ E.Options.args.bags = {
 			},
 		},
 		search_syntax = {
-			order = 7,
+			order = 8,
 			type = "group",
 			name = L["Search Syntax"],
 			disabled = function() return not E.bags end,

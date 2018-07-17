@@ -190,7 +190,13 @@ for k, v in next, {
 		UnregisterUnitWatch(self)
 		self:Hide()
 	end,
+	--[[ frame:IsEnabled()
+	Used to check if a unit frame is registered with the unit existence monitor. This is a reference to
+	`UnitWatchRegistered`.
 
+	* self - unit frame
+	--]]
+	IsEnabled = UnitWatchRegistered,
 	--[[ frame:UpdateAllElements(event)
 	Used to update all enabled elements on the given frame.
 
@@ -285,7 +291,12 @@ local function initObject(unit, style, styleFunc, header, ...)
 
 			-- No need to enable this for *target frames.
 			if(not (unit:match('target') or suffix == 'target')) then
-				object:SetAttribute('toggleForVehicle', true)
+				if(unit:match('raid') or unit:match('party')) then
+					-- See issue #404
+					object:SetAttribute('toggleForVehicle', false)
+				else
+					object:SetAttribute('toggleForVehicle', true)
+				end
 			end
 
 			-- Other boss and target units are handled by :HandleUnit().
@@ -519,7 +530,7 @@ do
 	end
 
 	-- There has to be an easier way to do this.
-	local initialConfigFunction = [[
+	local initialConfigFunctionTemp = [[
 		local header = self:GetParent()
 		local frames = table.new()
 		table.insert(frames, self)
@@ -561,8 +572,7 @@ do
 
 				frame:SetAttribute('*type1', 'target')
 				frame:SetAttribute('*type2', 'togglemenu')
-				-- BUG: Blizzard has changed the way vehicles work for Antoran High Command
-				frame:SetAttribute('toggleForVehicle', false)
+				frame:SetAttribute('toggleForVehicle', %d == 1) -- See issue #404
 				frame:SetAttribute('oUF-guessUnit', unit)
 			end
 
@@ -581,6 +591,9 @@ do
 		end
 	]]
 
+	-- Necessary for a vehicle support hack (see issue #404)
+	local initialConfigFunction = initialConfigFunctionTemp:format(1)
+
 	--[[ oUF:SpawnHeader(overrideName, template, visibility, ...)
 	Used to create a group header and apply the currently active style to it.
 
@@ -590,7 +603,7 @@ do
 	* template     - name of a template to be used for creating the header. Defaults to `'SecureGroupHeaderTemplate'`
 	                 (string?)
 	* visibility   - macro conditional(s) which define when to display the header (string).
-	* ...          - further argument pairs. Consult [Group Headers](http://wowprogramming.com/docs/secure_template/Group_Headers)
+	* ...          - further argument pairs. Consult [Group Headers](http://wowprogramming.com/docs/secure_template/Group_Headers.html)
 	                 for possible values.
 
 	In addition to the standard group headers, oUF implements some of its own attributes. These can be supplied by the
@@ -649,6 +662,71 @@ do
 
 		return header
 	end
+
+	-- The remainder of this scope is a temporary fix for issue #404,
+	-- regarding vehicle support on headers for the Antorus raid instance.
+	-- Track changes to SecureButton_GetModifiedUnit, this hack should be
+	-- removed when UnitTargetsVehicleInRaidUI is added to it. Supposedly,
+	-- it should happen in 8.x.
+	local isHacked = false
+	local shouldHack
+
+	local function toggleHeaders(flag)
+		for _, header in next, headers do
+			header:SetAttribute('initialConfigFunction', initialConfigFunction)
+
+			for _, child in next, {header:GetChildren()} do
+				child:SetAttribute('toggleForVehicle', flag)
+			end
+		end
+
+		isHacked = not flag
+		shouldHack = nil
+	end
+
+	local eventHandler = CreateFrame('Frame')
+	eventHandler:RegisterEvent('ZONE_CHANGED_NEW_AREA')
+	eventHandler:RegisterEvent('PLAYER_ENTERING_WORLD')
+	eventHandler:RegisterEvent('PLAYER_REGEN_ENABLED')
+	eventHandler:SetScript('OnEvent', function(_, event)
+		if(event == 'ZONE_CHANGED_NEW_AREA') then
+			local _, _, _, _, _, _, _, id = GetInstanceInfo()
+			if(id == 1712 and not isHacked) then
+				initialConfigFunction = initialConfigFunctionTemp:format(0)
+
+				if(not InCombatLockdown()) then
+					toggleHeaders(false)
+				else
+					shouldHack = true
+				end
+			elseif(id ~= 1712 and isHacked) then
+				initialConfigFunction = initialConfigFunctionTemp:format(1)
+
+				if(not InCombatLockdown()) then
+					toggleHeaders(true)
+				else
+					shouldHack = false
+				end
+			end
+		elseif(event == 'PLAYER_ENTERING_WORLD') then
+			local _, _, _, _, _, _, _, id = GetInstanceInfo()
+			if(id == 1712 and not isHacked) then
+				initialConfigFunction = initialConfigFunctionTemp:format(0)
+
+				toggleHeaders(false)
+			elseif(id ~= 1712 and isHacked) then
+				initialConfigFunction = initialConfigFunctionTemp:format(1)
+
+				toggleHeaders(true)
+			end
+		elseif(event == 'PLAYER_REGEN_ENABLED') then
+			if(isHacked and shouldHack == false) then
+				toggleHeaders(true)
+			elseif(not isHacked and shouldHack) then
+				toggleHeaders(false)
+			end
+		end
+	end)
 end
 
 --[[ oUF:Spawn(unit, overrideName)

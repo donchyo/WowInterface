@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local mod = E:GetModule('NamePlates')
 local LSM = LibStub("LibSharedMedia-3.0")
 
@@ -18,8 +18,8 @@ tooltip:SetPoint("CENTER")
 tooltip:SetSize(200, 200)
 GameTooltip_SetDefaultAnchor(tooltip, UIParent)
 
-function mod:UpdateElement_NPCTitle(frame)
-	if not UnitIsPlayer(frame.unit) and not UnitPlayerControlled(frame.unit) and not UnitIsUnit("target", frame.unit) and self.db.showNPCTitles and not self.db.units[frame.UnitType].healthbar.enable then
+function mod:UpdateElement_NPCTitle(frame, triggered)
+	if self.db.showNPCTitles and not UnitIsPlayer(frame.unit) and not UnitPlayerControlled(frame.unit) and (triggered or (not self.db.units[frame.UnitType].healthbar.enable and (not self.db.alwaysShowTargetHealth or not UnitIsUnit("target", frame.unit)))) then
 		tooltip:SetOwner(UIParent, "ANCHOR_NONE")
 		tooltip:SetUnit(frame.unit)
 		tooltip:Show()
@@ -40,6 +40,12 @@ function mod:UpdateElement_NPCTitle(frame)
 		end
 
 		frame.NPCTitle:SetTextColor(r - 0.1, g - 0.1, b - 0.1)
+
+		if self.db.nameColoredGlow then
+			frame.NPCTitle.NameOnlyGlow:SetVertexColor(r, g, b, 1)
+		else
+			frame.NPCTitle.NameOnlyGlow:SetVertexColor(self.db.glowColor.r, self.db.glowColor.g, self.db.glowColor.b, self.db.glowColor.a)
+		end
 	else
 		frame.NPCTitle:SetText("")
 	end
@@ -55,5 +61,16 @@ function mod:ConfigureElement_NPCTitle(frame)
 end
 
 function mod:ConstructElement_NPCTitle(frame)
-	return frame:CreateFontString(nil, "OVERLAY")
+	local title = frame:CreateFontString(nil, "OVERLAY")
+
+	local g = frame:CreateTexture(nil, "BACKGROUND", nil, -5)
+	g:SetTexture([[Interface\AddOns\ElvUI\media\textures\spark.tga]])
+	g:SetVertexColor(1, 1, 1, .3)
+	g:Hide()
+	g:SetPoint("TOPLEFT", title, -20, 8)
+	g:SetPoint("BOTTOMRIGHT", title, 20, -8)
+
+	title.NameOnlyGlow = g
+
+	return title
 end

@@ -1,11 +1,4 @@
 Version: 1
-Frame: SavedInstancesDetachHeader
-FrameLevel: 100
-Anchor: CENTER
-X: -127
-Y: 169
-W: 811
-H: 271
 Frame: ObjectiveTrackerFrame
 FrameLevel: 1
 Anchor: RIGHT

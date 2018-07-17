@@ -93,10 +93,10 @@ TidyPlatesThreatDB = {
 		},
 		["Krixidk - Ravencrest"] = {
 			["specInfo"] = {
-				["id"] = 251,
-				["role"] = "DAMAGER",
-				["name"] = "Frost",
-				["index"] = 2,
+				["id"] = 250,
+				["role"] = "TANK",
+				["name"] = "Blood",
+				["index"] = 1,
 			},
 			["welcome"] = true,
 		},
@@ -129,10 +129,10 @@ TidyPlatesThreatDB = {
 		},
 		["Kroxi - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 71,
-				["role"] = "DAMAGER",
-				["name"] = "Arms",
-				["index"] = 1,
+				["id"] = 73,
+				["role"] = "TANK",
+				["name"] = "Protection",
+				["index"] = 3,
 			},
 			["welcome"] = true,
 		},
@@ -163,6 +163,15 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
+		["Lóvérocket - Aggra (Português)"] = {
+			["welcome"] = true,
+			["specInfo"] = {
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
+				["index"] = 1,
+			},
+		},
 		["Lowerboost - Lightbringer"] = {
 			["specInfo"] = {
 				["id"] = 256,
@@ -172,13 +181,13 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
-		["Lóvérocket - Aggra (Português)"] = {
+		["Krixiqt - Ravencrest"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
-				["index"] = 1,
+				["id"] = 66,
+				["role"] = "TANK",
+				["name"] = "Protection",
+				["index"] = 2,
 			},
 		},
 		["Kriximonk - Valley of Heroes - EU"] = {
@@ -190,11 +199,11 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
-		["Namji - Grim Batol"] = {
+		["Lovérocket - Aggra (Português)"] = {
 			["specInfo"] = {
-				["id"] = 268,
-				["role"] = "TANK",
-				["name"] = "Brewmaster",
+				["id"] = 256,
+				["role"] = "HEALER",
+				["name"] = "Discipline",
 				["index"] = 1,
 			},
 			["welcome"] = true,
@@ -208,11 +217,11 @@ TidyPlatesThreatDB = {
 			},
 			["welcome"] = true,
 		},
-		["Lovérocket - Aggra (Português)"] = {
+		["Namji - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 256,
-				["role"] = "HEALER",
-				["name"] = "Discipline",
+				["id"] = 268,
+				["role"] = "TANK",
+				["name"] = "Brewmaster",
 				["index"] = 1,
 			},
 			["welcome"] = true,
@@ -328,10 +337,10 @@ TidyPlatesThreatDB = {
 		["Krixikin - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 105,
-				["role"] = "HEALER",
-				["name"] = "Restoration",
-				["index"] = 4,
+				["id"] = 102,
+				["role"] = "DAMAGER",
+				["name"] = "Balance",
+				["index"] = 1,
 			},
 		},
 		["Krixidk - Valley of Heroes - EU"] = {
@@ -363,12 +372,13 @@ TidyPlatesThreatDB = {
 		["Bawsi - Aggra (Português)"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
-		["Lowerboost - Lightbringer"] = "Default",
 		["Lóvérocket - Aggra (Português)"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
+		["Krixiqt - Ravencrest"] = "Default",
 		["Kriximonk - Valley of Heroes - EU"] = "Default",
-		["Namji - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
 		["Lovérocket - Aggra (Português)"] = "Default",
+		["Krixi - Grim Batol"] = "Default",
+		["Namji - Grim Batol"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Donch - Grim Batol"] = "Default",
 		["Gnomalock - Grim Batol"] = "Default",
@@ -385,6 +395,153 @@ TidyPlatesThreatDB = {
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
+		["Grim Batol"] = {
+			["nameplate"] = {
+				["toggle"] = {
+					["Totem"] = false,
+				},
+			},
+			["uniqueSettings"] = {
+				[33] = {
+				},
+				[34] = {
+				},
+				[35] = {
+				},
+				[36] = {
+				},
+				[37] = {
+				},
+				[38] = {
+				},
+				[39] = {
+				},
+				[40] = {
+				},
+				[41] = {
+				},
+				[42] = {
+				},
+				[43] = {
+				},
+				[44] = {
+				},
+				[45] = {
+				},
+				[46] = {
+				},
+				[48] = {
+				},
+				[49] = {
+				},
+				[50] = {
+				},
+				["list"] = {
+					"Shadow Fiend", -- [1]
+					"Spirit Wolf", -- [2]
+					"Ebon Gargoyle", -- [3]
+					"Water Elemental", -- [4]
+					"Treant", -- [5]
+					"Viper", -- [6]
+					"Venomous Snake", -- [7]
+					"Army of the Dead Ghoul", -- [8]
+					"Shadowy Apparition", -- [9]
+					"Shambling Horror", -- [10]
+					"Web Wrap", -- [11]
+					"Immortal Guardian", -- [12]
+					"Marked Immortal Guardian", -- [13]
+					"Empowered Adherent", -- [14]
+					"Deformed Fanatic", -- [15]
+					"Reanimated Adherent", -- [16]
+					"Reanimated Fanatic", -- [17]
+					"Bone Spike", -- [18]
+					"Onyxian Whelp", -- [19]
+					"Gas Cloud", -- [20]
+					"Volatile Ooze", -- [21]
+					"Darnavan", -- [22]
+					"Val'kyr Shadowguard", -- [23]
+					"Kinetic Bomb", -- [24]
+					"Lich King", -- [25]
+					"Raging Spirit", -- [26]
+					"Drudge Ghoul", -- [27]
+					"Living Inferno", -- [28]
+					"Living Ember", -- [29]
+					"Fanged Pit Viper", -- [30]
+					"Canal Crab", -- [31]
+					"Muddy Crawfish", -- [32]
+					"", -- [33]
+					"", -- [34]
+					"", -- [35]
+					"", -- [36]
+					"", -- [37]
+					"", -- [38]
+					"", -- [39]
+					"", -- [40]
+					"", -- [41]
+					"", -- [42]
+					"", -- [43]
+					"", -- [44]
+					"", -- [45]
+					"", -- [46]
+					"", -- [47]
+					"", -- [48]
+					"", -- [49]
+					"", -- [50]
+					"", -- [51]
+					"", -- [52]
+					"", -- [53]
+					"", -- [54]
+					"", -- [55]
+					"", -- [56]
+					"", -- [57]
+					"", -- [58]
+					"", -- [59]
+					"", -- [60]
+					"", -- [61]
+					"", -- [62]
+					"", -- [63]
+					"", -- [64]
+					"", -- [65]
+					"", -- [66]
+					"", -- [67]
+					"", -- [68]
+					"", -- [69]
+					"", -- [70]
+					"", -- [71]
+					"", -- [72]
+					"", -- [73]
+					"", -- [74]
+					"", -- [75]
+					"", -- [76]
+					"", -- [77]
+					"", -- [78]
+					"", -- [79]
+					"", -- [80]
+					"", -- [81]
+					"", -- [82]
+					"", -- [83]
+					"", -- [84]
+					"", -- [85]
+					"", -- [86]
+					"", -- [87]
+					"", -- [88]
+					"", -- [89]
+					"", -- [90]
+					"", -- [91]
+					"", -- [92]
+					"", -- [93]
+					"", -- [94]
+					"", -- [95]
+					"", -- [96]
+					"", -- [97]
+					"", -- [98]
+					"", -- [99]
+					"", -- [100]
+				},
+			},
+			["cache"] = {
+			},
+		},
 		["Skullflower"] = {
 			["nameplate"] = {
 				["toggle"] = {
@@ -560,150 +717,10 @@ TidyPlatesThreatDB = {
 				["mode"] = "allMine",
 			},
 		},
-		["DRUID"] = {
-			["uniqueSettings"] = {
-				[33] = {
-				},
-				[34] = {
-				},
-				[35] = {
-				},
-				[36] = {
-				},
-				[37] = {
-				},
-				[38] = {
-				},
-				[39] = {
-				},
-				[40] = {
-				},
-				[41] = {
-				},
-				[42] = {
-				},
-				[43] = {
-				},
-				[44] = {
-				},
-				[45] = {
-				},
-				[46] = {
-				},
-				[48] = {
-				},
-				[49] = {
-				},
-				[50] = {
-				},
-				["list"] = {
-					"Shadow Fiend", -- [1]
-					"Spirit Wolf", -- [2]
-					"Ebon Gargoyle", -- [3]
-					"Water Elemental", -- [4]
-					"Treant", -- [5]
-					"Viper", -- [6]
-					"Venomous Snake", -- [7]
-					"Army of the Dead Ghoul", -- [8]
-					"Shadowy Apparition", -- [9]
-					"Shambling Horror", -- [10]
-					"Web Wrap", -- [11]
-					"Immortal Guardian", -- [12]
-					"Marked Immortal Guardian", -- [13]
-					"Empowered Adherent", -- [14]
-					"Deformed Fanatic", -- [15]
-					"Reanimated Adherent", -- [16]
-					"Reanimated Fanatic", -- [17]
-					"Bone Spike", -- [18]
-					"Onyxian Whelp", -- [19]
-					"Gas Cloud", -- [20]
-					"Volatile Ooze", -- [21]
-					"Darnavan", -- [22]
-					"Val'kyr Shadowguard", -- [23]
-					"Kinetic Bomb", -- [24]
-					"Lich King", -- [25]
-					"Raging Spirit", -- [26]
-					"Drudge Ghoul", -- [27]
-					"Living Inferno", -- [28]
-					"Living Ember", -- [29]
-					"Fanged Pit Viper", -- [30]
-					"Canal Crab", -- [31]
-					"Muddy Crawfish", -- [32]
-					"", -- [33]
-					"", -- [34]
-					"", -- [35]
-					"", -- [36]
-					"", -- [37]
-					"", -- [38]
-					"", -- [39]
-					"", -- [40]
-					"", -- [41]
-					"", -- [42]
-					"", -- [43]
-					"", -- [44]
-					"", -- [45]
-					"", -- [46]
-					"", -- [47]
-					"", -- [48]
-					"", -- [49]
-					"", -- [50]
-					"", -- [51]
-					"", -- [52]
-					"", -- [53]
-					"", -- [54]
-					"", -- [55]
-					"", -- [56]
-					"", -- [57]
-					"", -- [58]
-					"", -- [59]
-					"", -- [60]
-					"", -- [61]
-					"", -- [62]
-					"", -- [63]
-					"", -- [64]
-					"", -- [65]
-					"", -- [66]
-					"", -- [67]
-					"", -- [68]
-					"", -- [69]
-					"", -- [70]
-					"", -- [71]
-					"", -- [72]
-					"", -- [73]
-					"", -- [74]
-					"", -- [75]
-					"", -- [76]
-					"", -- [77]
-					"", -- [78]
-					"", -- [79]
-					"", -- [80]
-					"", -- [81]
-					"", -- [82]
-					"", -- [83]
-					"", -- [84]
-					"", -- [85]
-					"", -- [86]
-					"", -- [87]
-					"", -- [88]
-					"", -- [89]
-					"", -- [90]
-					"", -- [91]
-					"", -- [92]
-					"", -- [93]
-					"", -- [94]
-					"", -- [95]
-					"", -- [96]
-					"", -- [97]
-					"", -- [98]
-					"", -- [99]
-					"", -- [100]
-				},
-			},
-		},
 		["Default"] = {
 			["nameplate"] = {
 				["toggle"] = {
-					["Totem"] = true,
+					["Totem"] = false,
 				},
 			},
 			["blizzFadeA"] = {
@@ -896,7 +913,7 @@ TidyPlatesThreatDB = {
 					["scale"] = 20,
 				},
 				["castbar"] = {
-					["texture"] = "bdSmooth",
+					["texture"] = "Skullflower",
 				},
 				["name"] = {
 					["typeface"] = "Expressway",
@@ -907,12 +924,7 @@ TidyPlatesThreatDB = {
 				["full"] = true,
 			},
 		},
-		["Grim Batol"] = {
-			["nameplate"] = {
-				["toggle"] = {
-					["Totem"] = false,
-				},
-			},
+		["DRUID"] = {
 			["uniqueSettings"] = {
 				[33] = {
 				},
@@ -1050,8 +1062,6 @@ TidyPlatesThreatDB = {
 					"", -- [99]
 					"", -- [100]
 				},
-			},
-			["cache"] = {
 			},
 		},
 	},

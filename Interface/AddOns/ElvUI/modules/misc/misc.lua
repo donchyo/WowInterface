@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local M = E:NewModule('Misc', 'AceEvent-3.0', 'AceTimer-3.0');
 E.Misc = M;
 
@@ -35,13 +35,16 @@ local GetFriendInfo = GetFriendInfo
 local AcceptGroup = AcceptGroup
 local GetNumGuildMembers = GetNumGuildMembers
 local GetGuildRosterInfo = GetGuildRosterInfo
+local BNGetNumFriendGameAccounts = BNGetNumFriendGameAccounts
+local BNGetFriendGameAccountInfo = BNGetFriendGameAccountInfo
 local BNGetNumFriends = BNGetNumFriends
 local BNGetFriendInfo = BNGetFriendInfo
 local StaticPopupSpecial_Hide = StaticPopupSpecial_Hide
 local StaticPopup_Hide = StaticPopup_Hide
 local GetCVarBool, SetCVar = GetCVarBool, SetCVar
 local C_Timer_After = C_Timer.After
-local UIErrorsFrame = UIErrorsFrame;
+local UIErrorsFrame = UIErrorsFrame
+local BNET_CLIENT_WOW = BNET_CLIENT_WOW
 local MAX_PARTY_MEMBERS = MAX_PARTY_MEMBERS
 local LE_GAME_ERR_GUILD_NOT_ENOUGH_MONEY = LE_GAME_ERR_GUILD_NOT_ENOUGH_MONEY
 local LE_GAME_ERR_NOT_ENOUGH_MONEY = LE_GAME_ERR_NOT_ENOUGH_MONEY
@@ -196,6 +199,7 @@ function M:PVPMessageEnhancement(_, msg)
 end
 
 local hideStatic = false;
+local PLAYER_REALM = gsub(E.myrealm,'[%s%-]','');
 function M:AutoInvite(event, leaderName)
 	if not E.db.general.autoAcceptInvite then return; end
 
@@ -207,11 +211,13 @@ function M:AutoInvite(event, leaderName)
 		-- Update Guild and Friendlist
 		if GetNumFriends() > 0 then ShowFriends() end
 		if IsInGuild() then GuildRoster() end
+
+		local friendName, guildMemberName, memberName, numGameAccounts, isOnline, accountName, bnToonName, bnClient, bnRealm, bnAcceptedInvite, _;
 		local inGroup = false;
 
 		for friendIndex = 1, GetNumFriends() do
-			local friendName = gsub(GetFriendInfo(friendIndex),  "-.*", "")
-			if friendName == leaderName then
+			friendName = GetFriendInfo(friendIndex) --this is already stripped of your own realm
+			if friendName and (friendName == leaderName) then
 				AcceptGroup()
 				inGroup = true
 				break
@@ -220,8 +226,9 @@ function M:AutoInvite(event, leaderName)
 
 		if not inGroup then
 			for guildIndex = 1, GetNumGuildMembers(true) do
-				local guildMemberName = gsub(GetGuildRosterInfo(guildIndex), "-.*", "")
-				if guildMemberName == leaderName then
+				guildMemberName = GetGuildRosterInfo(guildIndex)
+				memberName = guildMemberName and gsub(guildMemberName, '%-'..PLAYER_REALM, '')
+				if memberName and (memberName == leaderName) then
 					AcceptGroup()
 					inGroup = true
 					break
@@ -231,18 +238,39 @@ function M:AutoInvite(event, leaderName)
 
 		if not inGroup then
 			for bnIndex = 1, BNGetNumFriends() do
-				local _, _, _, _, name = BNGetFriendInfo(bnIndex)
-				leaderName = leaderName:match("(.+)%-.+") or leaderName
-				if name == leaderName then
-					AcceptGroup()
-					break
+				_, accountName, _, _, _, _, _, isOnline = BNGetFriendInfo(bnIndex);
+				if isOnline then
+					if accountName and (accountName == leaderName) then
+						AcceptGroup()
+						bnAcceptedInvite = true
+					end
+					if not bnAcceptedInvite then
+						numGameAccounts = BNGetNumFriendGameAccounts(bnIndex);
+						if numGameAccounts > 0 then
+							for toonIndex = 1, numGameAccounts do
+								_, bnToonName, bnClient, bnRealm = BNGetFriendGameAccountInfo(bnIndex, toonIndex);
+								if bnClient == BNET_CLIENT_WOW then
+									if bnRealm and bnRealm ~= '' and bnRealm ~= PLAYER_REALM then
+										bnToonName = format('%s-%s', bnToonName, bnRealm)
+									end
+									if bnToonName and (bnToonName == leaderName) then
+										AcceptGroup()
+										bnAcceptedInvite = true
+										break
+									end
+								end
+							end
+						end
+					end
+					if bnAcceptedInvite then
+						break
+					end
 				end
 			end
 		end
 	elseif event == "GROUP_ROSTER_UPDATE" and hideStatic == true then
-		StaticPopupSpecial_Hide(LFGInvitePopup) --New LFD popup when invited in custon created group
+		StaticPopupSpecial_Hide(LFGInvitePopup) --New LFD popup when invited in custom created group
 		StaticPopup_Hide("PARTY_INVITE")
-		StaticPopup_Hide("PARTY_INVITE_XREALM") --Not sure bout this but whatever, still an invite
 		hideStatic = false
 	end
 end

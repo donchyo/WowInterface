@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local mod = E:GetModule('NamePlates')
 local LSM = LibStub("LibSharedMedia-3.0")
 
@@ -14,7 +14,6 @@ local UnitAura = UnitAura
 local UnitCanAttack = UnitCanAttack
 local UnitIsFriend = UnitIsFriend
 local UnitIsUnit = UnitIsUnit
-local BUFF_STACKS_OVERFLOW = BUFF_STACKS_OVERFLOW
 
 local auraCache = {}
 
@@ -24,12 +23,8 @@ function mod:SetAura(aura, index, name, icon, count, duration, expirationTime, s
 	aura.spellID = spellID
 	aura.expirationTime = expirationTime
 	if ( count > 1 ) then
-		local countText = count;
-		if ( count >= 10 ) then
-			countText = BUFF_STACKS_OVERFLOW;
-		end
 		aura.count:Show();
-		aura.count:SetText(countText);
+		aura.count:SetText(count);
 	else
 		aura.count:Hide();
 	end
@@ -56,6 +51,16 @@ end
 function mod:HideAuraIcons(auras)
 	for i=1, #auras.icons do
 		auras.icons[i]:Hide()
+
+		-- cancel any StyleFilterAuraWaitTimer timers
+		if auras.icons[i].hasMinTimer then
+			auras.icons[i].hasMinTimer:Cancel()
+			auras.icons[i].hasMinTimer = nil
+		end
+		if auras.icons[i].hasMaxTimer then
+			auras.icons[i].hasMaxTimer:Cancel()
+			auras.icons[i].hasMaxTimer = nil
+		end
 	end
 end
 
@@ -106,7 +111,7 @@ function mod:CheckFilter(name, caster, spellID, isFriend, isPlayer, isUnit, isBo
 	end
 end
 
-function mod:AuraFilter(frame, frameNum, index, buffType, minDuration, maxDuration, priority, name, _, texture, count, dispelType, duration, expiration, caster, isStealable, _, spellID, _, isBossDebuff, casterIsPlayer)
+function mod:AuraFilter(frame, frameNum, index, buffType, minDuration, maxDuration, priority, name, _, texture, count, debuffType, duration, expiration, caster, isStealable, _, spellID, _, isBossDebuff, casterIsPlayer)
 	if not name then return nil end -- checking for an aura that is not there, pass nil to break while loop
 	local isFriend, filterCheck, isUnit, isPlayer, canDispell, allowDuration, noDuration = false
 
@@ -117,7 +122,7 @@ function mod:AuraFilter(frame, frameNum, index, buffType, minDuration, maxDurati
 		isFriend = frame.unit and UnitIsFriend('player', frame.unit) and not UnitCanAttack('player', frame.unit)
 		isPlayer = (caster == 'player' or caster == 'vehicle')
 		isUnit = frame.unit and caster and UnitIsUnit(frame.unit, caster)
-		canDispell = (buffType == 'Buffs' and isStealable) or (buffType == 'Debuffs' and dispelType and E:IsDispellableByMe(dispelType))
+		canDispell = (buffType == 'Buffs' and isStealable) or (buffType == 'Debuffs' and debuffType and E:IsDispellableByMe(debuffType))
 		filterCheck = mod:CheckFilter(name, caster, spellID, isFriend, isPlayer, isUnit, isBossDebuff, allowDuration, noDuration, canDispell, casterIsPlayer, strsplit(",", priority))
 	else
 		filterCheck = allowDuration and true -- Allow all auras to be shown when the filter list is empty, while obeying duration sliders
@@ -226,6 +231,7 @@ function mod:CreateAuraIcon(parent)
 	aura.cooldown:SetReverse(true)
 	aura.cooldown.SizeOverride = 10
 	aura.cooldown.FontOverride = cooldownFontOverride
+	aura.cooldown.ColorOverride = 'nameplates'
 	E:RegisterCooldown(aura.cooldown)
 
 	aura.count = aura:CreateFontString(nil, "OVERLAY")

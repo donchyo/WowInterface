@@ -2,7 +2,7 @@
 NewOpenablesProfile = {
 	["char"] = {
 		["Krixi - Grim Batol"] = {
-			["itemID"] = 147718,
+			["itemID"] = 147819,
 		},
 		["Krixidk - Grim Batol"] = {
 			["itemID"] = 151556,
@@ -13,23 +13,20 @@ NewOpenablesProfile = {
 		["Krixidk - Ravencrest"] = {
 			["itemID"] = 147718,
 		},
-		["Krixikin - Grim Batol"] = {
-			["itemID"] = 147718,
-		},
 		["Krixidh - Grim Batol"] = {
-			["itemID"] = 147721,
+			["itemID"] = 147818,
 		},
-		["Kriximonk - Grim Batol"] = {
-			["itemID"] = 147721,
-		},
-		["Zetiz - Grim Batol"] = {
+		["Krixikin - Grim Batol"] = {
 			["itemID"] = 147721,
 		},
 		["Gnomalock - Grim Batol"] = {
 			["itemID"] = 139506,
 		},
+		["Zetiz - Grim Batol"] = {
+			["itemID"] = 147721,
+		},
 		["Zuriz - Grim Batol"] = {
-			["itemID"] = 147819,
+			["itemID"] = 147721,
 		},
 		["Nyrith - Grim Batol"] = {
 			["itemID"] = 147581,
@@ -51,39 +48,23 @@ NewOpenablesProfile = {
 		["Krixicx - Shattered Hand"] = "Default",
 		["Nyrith - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Krixi",
-		["Krixidh - Grim Batol"] = "Krixi",
+		["Kriximonk - Valley of Heroes - EU"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
 		["Krixidruid - Valley of Heroes - EU"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
+		["Lilgaykrixi - Kazzak"] = "Default",
 		["Memeinhaler - Grim Batol"] = "Default",
 		["Krixidk - Ravencrest"] = "Krixi",
 		["Krixidh - Valley of Heroes - EU"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
-		["Lilgaykrixi - Kazzak"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
 		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Kriximonk - Valley of Heroes - EU"] = "Default",
+		["Krixidh - Grim Batol"] = "Krixi",
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["T_BLACKLIST"] = {
-				[0] = true,
-				[139428] = true,
-				[147348] = true,
-				[139418] = true,
-				[147349] = true,
-				[139420] = true,
-				[151843] = true,
-			},
-			["qb"] = {
-				"TOPLEFT", -- [1]
-				"UIParent", -- [2]
-				"TOPLEFT", -- [3]
-			},
-			["version"] = "|cFFFFFFFF08.46 21.05.2018 use |cFFFF00FF/nop|cFFFFFFFF",
-			["skinButton"] = true,
 			["button"] = {
 				nil, -- [1]
 				"UIParent", -- [2]
@@ -91,27 +72,34 @@ NewOpenablesProfile = {
 				-560.000061035156, -- [4]
 				440.000061035156, -- [5]
 			},
-			["lockButton"] = true,
+			["skinButton"] = true,
 			["iconSize"] = 40,
+			["T_BLACKLIST"] = {
+				[0] = true,
+				[139418] = true,
+				[147348] = true,
+				[151843] = true,
+				[147349] = true,
+				[139420] = true,
+				[139428] = true,
+			},
+			["qb"] = {
+				"TOPLEFT", -- [1]
+				"UIParent", -- [2]
+				"TOPLEFT", -- [3]
+			},
+			["version"] = "|cFFFFFFFF08.46 21.05.2018 use |cFFFF00FF/nop|cFFFFFFFF",
+			["lockButton"] = true,
 		},
 		["Krixi"] = {
-			["button"] = {
-				nil, -- [1]
-				"UIParent", -- [2]
-				nil, -- [3]
-				-560.000061035156, -- [4]
-				440.000061035156, -- [5]
-			},
-			["skinButton"] = true,
-			["iconSize"] = 40,
 			["T_BLACKLIST"] = {
 				[0] = true,
-				[139418] = true,
+				[139428] = true,
 				[147348] = true,
 				[151843] = true,
 				[147349] = true,
 				[139420] = true,
-				[139428] = true,
+				[139418] = true,
 			},
 			["qb"] = {
 				"TOPLEFT", -- [1]
@@ -119,6 +107,15 @@ NewOpenablesProfile = {
 				"TOPLEFT", -- [3]
 			},
 			["version"] = "|cFFFFFFFF08.46 21.05.2018 use |cFFFF00FF/nop|cFFFFFFFF",
+			["skinButton"] = true,
+			["iconSize"] = 40,
+			["button"] = {
+				nil, -- [1]
+				"UIParent", -- [2]
+				nil, -- [3]
+				-560.000061035156, -- [4]
+				440.000061035156, -- [5]
+			},
 			["lockButton"] = true,
 		},
 	},

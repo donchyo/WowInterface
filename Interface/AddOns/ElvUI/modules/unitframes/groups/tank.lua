@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
 local _, ns = ...
 local ElvUF = ns.oUF
@@ -27,6 +27,8 @@ function UF:Construct_TankFrames()
 	self.Name = UF:Construct_NameText(self)
 	self.ThreatIndicator = UF:Construct_Threat(self)
 	self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
+	self.MouseGlow = UF:Construct_MouseGlow(self)
+	self.TargetGlow = UF:Construct_TargetGlow(self)
 	self.Range = UF:Construct_Range(self)
 
 	if not self.isChild then

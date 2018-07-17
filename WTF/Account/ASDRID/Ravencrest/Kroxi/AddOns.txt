@@ -200,7 +200,7 @@ BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 BigWigs_Nighthold: enabled
 Broker_Currency: disabled
-BulkBuy: enabled
+BulkBuy: disabled
 ChocolateBar: enabled
 ChocolateBar_Options: enabled
 ColorPickerPlus: enabled

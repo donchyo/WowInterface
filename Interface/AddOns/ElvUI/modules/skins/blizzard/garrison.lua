@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
 --Cache global variables
@@ -74,6 +74,35 @@ local function LoadSkin()
 			frame.backdrop:SetBackdropBorderColor(r, g, b)]]
 			frame.Icon:SetDrawLayer("BORDER", 0)
 		end)
+
+		--This handles border color for rewards on Garrison/Order Hall Report Frame
+		hooksecurefunc("GarrisonLandingPageReportList_UpdateAvailable", function()
+			local items = GarrisonLandingPageReport.List.AvailableItems;
+			local numItems = #items;
+			local scrollFrame = GarrisonLandingPageReport.List.listScroll;
+			local offset = HybridScrollFrame_GetOffset(scrollFrame);
+			local buttons = scrollFrame.buttons;
+			local numButtons = #buttons;
+
+			for i = 1, numButtons do
+				local button = buttons[i];
+				local index = offset + i; -- adjust index
+				if ( index <= numItems ) then
+					local item = items[index];
+					local index = 1;
+					for id, reward in pairs(item.rewards) do
+						local Reward = button.Rewards[index];
+						if (reward.itemID) then
+							local r, g, b = Reward.IconBorder:GetVertexColor()
+							Reward.border.backdrop:SetBackdropBorderColor(r,g,b)
+						else
+							Reward.border.backdrop:SetBackdropBorderColor(unpack(E["media"].bordercolor))
+						end
+						index = index + 1;
+					end
+				end
+			end
+		end)
 	end
 
 	--Stop here if Garrison skin is disabled
@@ -84,8 +113,10 @@ local function LoadSkin()
 	GarrisonBuildingFrame.TitleText:Show()
 	GarrisonBuildingFrame:CreateBackdrop("Transparent")
 	S:HandleCloseButton(GarrisonBuildingFrame.CloseButton, GarrisonBuildingFrame.backdrop)
-	GarrisonBuildingFrame.BuildingLevelTooltip:StripTextures()
-	GarrisonBuildingFrame.BuildingLevelTooltip:SetTemplate('Transparent')
+	if E.private.skins.blizzard.tooltip then
+		GarrisonBuildingFrame.BuildingLevelTooltip:StripTextures()
+		GarrisonBuildingFrame.BuildingLevelTooltip:SetTemplate('Transparent')
+	end
 
 	-- Follower List
 	local FollowerList = GarrisonBuildingFrame.FollowerList
@@ -241,6 +272,10 @@ local function LoadSkin()
 		end
 	end)
 
+	-- Garrison Portraits
+	S:HandleFollowerListOnUpdateData('GarrisonMissionFrameFollowers')
+	S:HandleFollowerListOnUpdateData('GarrisonLandingPageFollowerList') -- this also applies to orderhall landing page
+
 	-- Landing page: Fleet
 	local ShipFollowerList = GarrisonLandingPage.ShipFollowerList
 	ShipFollowerList.FollowerHeaderBar:Hide()
@@ -292,6 +327,11 @@ local function LoadSkin()
 	FollowerList.MaterialFrame.Icon:SetAtlas("ShipMission_CurrencyIcon-Oil", false) --Re-add the material icon
 	-- HandleShipFollowerPage(FollowerList.followerTab)
 
+
+	--LandingPage Tutorial
+	S:HandleCloseButton(GarrisonLandingPageTutorialBox.CloseButton)
+	
+	if E.private.skins.blizzard.tooltip ~= true then return end
 	-- ShipYard: Mission Tooltip
 	local tooltip = GarrisonShipyardMapMissionTooltip
 	local reward = tooltip.ItemTooltip
@@ -319,7 +359,7 @@ local function LoadSkin()
 end
 
 local function SkinTooltip()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.garrison ~= true then return end
+	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.garrison ~= true or E.private.skins.blizzard.tooltip ~= true then return end
 
 	local function SkinFollowerTooltip(frame)
 		for i = 1, 9 do

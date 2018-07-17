@@ -1,16 +1,11 @@
 VER 3 0000000000000390 "!!dump" "INV_MISC_QUESTIONMARK"
 /dump GetSpellInfo(233669)
 END
-VER 3 000000000000038E "!_1test" "INV_MISC_QUESTIONMARK"
-/run itemIcon = GetItemIcon(40771);print("itemIcon :", itemIcon)
+VER 3 0000000000000393 "!bars" "INV_MISC_QUESTIONMARK"
+/run local bars, E = {1,2,3,4,5}, unpack(ElvUI); for _, n in pairs(bars) do local state = E.db.actionbar["bar"..n].enabled; E.db.actionbar["bar"..n].enabled = (state==false and true or false); E.ActionBars:PositionAndSizeBar("bar"..n) end
 END
 VER 3 0000000000000361 "1release" "INV_MISC_QUESTIONMARK"
 /script RepopMe();
-END
-VER 3 0000000000000374 "ad" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@player] holy prism
-/cast [@player] execution sentence
 END
 VER 3 0000000000000384 "aLua errors" "133447"
 /run if GetCVar("ScriptErrors")=="1" then SetCVar("ScriptErrors","0");print("Show LUA Errors: Off");else SetCVar("ScriptErrors","1");print("Show LUA Errors: On");end
@@ -27,7 +22,7 @@ VER 3 000000000000036C "belt" "INV_Misc_QuestionMark"
 #showtooltip 6
 /use 6
 END
-VER 3 0000000000000387 "blood vendore" "1100022"
+VER 3 0000000000000387 "blood vendor" "1100022"
 -/run BuyMerchantItem(15, 50)
 /run BuyMerchantItem(1, 1)
 END
@@ -36,29 +31,11 @@ VER 3 000000000000037E "bop/ds" "INV_MISC_QUESTIONMARK"
 /cancelaura divine shield
 /cancelaura shield of the righteous
 END
-VER 3 0000000000000355 "bw" "INV_MISC_QUESTIONMARK"
-#showtooltip Bestial Wrath
--/use [combat] 14
-/cast [combat] Rabid
-/cast [combat] Lifeblood
-/cast [combat] Rapid Fire
-/cancelaura Hand of Protection
-/cast Bestial Wrath
+VER 3 0000000000000392 "cancel flame rin" "INV_MISC_QUESTIONMARK"
+/cancelaura flaming hoop
 END
 VER 3 0000000000000379 "cancelaura rf" "INV_MISC_QUESTIONMARK"
 /cancelaura righteous fury
-END
-VER 3 0000000000000360 "chimera" "INV_MISC_QUESTIONMARK"
-#showtooltip Chimaera Shot
-/cast Chimaera Shot
--/use 6
-/petattack [@pettarget,noexists]
-/cancelaura hand of protection
-END
-VER 3 000000000000038B "DUMB EYE" "INV_MISC_QUESTIONMARK"
-/target Tormenting Eye
-/CAST Judgment
-/targetlasttarget
 END
 VER 3 000000000000038C "Dungoens pull 3" "132311"
 #showtooltip none
@@ -88,10 +65,6 @@ END
 VER 3 000000000000038A "feather self" "INV_MISC_QUESTIONMARK"
 /cast [@player] angelic feather
 END
-VER 3 000000000000008F "focus1" "ABILITY_SEAL"
-/target [nomod, @player]
-/focus [mod:alt, @arena2]
-END
 VER 3 0000000000000370 "focusextra" "INV_MISC_QUESTIONMARK"
 /target [@focus]
 /click ExtraActionButton1
@@ -112,26 +85,10 @@ END
 VER 3 0000000000000389 "glider kit" "INV_Misc_QuestionMark"
 /use Goblin Glider Kit
 END
-VER 3 0000000000000376 "ha cds" "INV_MISC_QUESTIONMARK"
-/cast holy avenger
-/use Tablet of Turnbuckle Teamwork
-/use Scabbard of Kyanos
-/use 12
-END
-VER 3 000000000000036E "healer potion" "INV_MISC_QUESTIONMARK"
-/cast [combat] Draenic Channeled Mana Potion
-/cast [nocombat] Draenic Intellect Potion
-END
 VER 3 0000000000000391 "Healthstone" "INV_MISC_QUESTIONMARK"
 #showtooltip healthstone
 /use healthstone
 /use astral healing potion
-END
-VER 3 000000000000037C "hunter t2" "INV_MISC_QUESTIONMARK"
-/cast stopping power
-END
-VER 3 000000000000037B "kavick sacred" "INV_MISC_QUESTIONMARK"
-/cast [@kavick] sacred shield
 END
 VER 3 000000000000008E "KILL" "Ability_Rogue_StayofExecution"
 #show none
@@ -179,26 +136,6 @@ END
 VER 3 0000000000000365 "sacred shield" "INV_MISC_QUESTIONMARK"
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]sacred shield
 END
-VER 3 0000000000000373 "shields" "ACHIEVEMENT_DUNGEON_MOGUPALACE"
-/cancelaura sacred shield
--/cancelaura shield of the righteous
-/cancelaura avenger's reprieve
-/cancelaura power word: shield
-/cancelaura illuminated healing
-/cancelaura divine aegis
-/CANCELAURA CLARity of will
-END
-VER 3 0000000000000378 "sit" "ACHIEVEMENT_DUNGEON_SIEGEOFNIUZAOTEMPLE"
-/sit
-END
-VER 3 0000000000000385 "starlight" "INV_MISC_QUESTIONMARK"
-/run BuyMerchantItem(13, 20) -- 10 foxflower
-END
-VER 3 0000000000000380 "stun cleric" "INV_Misc_QuestionMark"
-/tar sargerei cleric
-/cast fist of justice
-/targetlasttarget
-END
 VER 3 0000000000000093 "t1" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000090 "t13" "INV_MISC_QUESTIONMARK"
@@ -224,22 +161,4 @@ END
 VER 3 000000000000036F "tonic" "INV_MISC_QUESTIONMARK"
 /use healthstone
 /use healing tonic
-END
-VER 3 0000000000000381 "TSMMacro" "Achievement_Faction_GoldenLotus"
-/click TSMAuctioningPostButton
-END
-VER 3 0000000000000366 "uifix" "INV_MISC_QUESTIONMARK"
-/run Bartender4.db:SetProfile("Infeh - Twisting Nether")
-/run GladiusEx.dbi:SetProfile("Infeh - Twisting Nether")
-END
-VER 3 0000000000000377 "voidtalon" "INV_MISC_QUESTIONMARK"
-END
-VER 3 000000000000037F "workorder npc" "INV_Misc_QuestionMark"
-/tar Elrondir
-/run SetRaidTarget("target", 6);
-/tar Garra
-/run SetRaidTarget("target", 2);
-/tar kaylie
-/run SetRaidTarget("target", 4);
-/cleartarget
 END

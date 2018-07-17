@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(ElvUI); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(ElvUI); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 
 E.Options.args.skins = {
 	type = "group",
@@ -361,6 +361,16 @@ E.Options.args.skins = {
 				BlizzardOptions = {
 					type = "toggle",
 					name = INTERFACE_OPTIONS,
+					desc = L["TOGGLESKIN_DESC"],
+				},
+				Warboard = {
+					type = "toggle",
+					name = L["Warboard"],
+					desc = L["TOGGLESKIN_DESC"],
+				},
+				AlliedRaces = {
+					type = "toggle",
+					name = L["Allied Races"],
 					desc = L["TOGGLESKIN_DESC"],
 				},
 			},

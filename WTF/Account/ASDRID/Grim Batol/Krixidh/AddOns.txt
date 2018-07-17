@@ -402,3 +402,4 @@ BigWigs_BrokenIsles: enabled
 Plater: disabled
 bdNameplates: disabled
 Kui_Media: disabled
+WorldQuestTracker: enabled

@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
 --Cache global variables
@@ -818,6 +818,8 @@ local function LoadSkin()
 
 	--What's New
 	SplashFrame:CreateBackdrop("Transparent")
+	SplashFrame.Header:FontTemplate(nil, 22)
+	SplashFrame.RightTitle:FontTemplate(nil, 30)
 	S:HandleButton(SplashFrame.BottomCloseButton)
 	S:HandleCloseButton(SplashFrame.TopCloseButton)
 end

@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local LSM = LibStub("LibSharedMedia-3.0")
 local Masque = LibStub("Masque", true)
 
@@ -15,7 +15,6 @@ local UnitGUID = UnitGUID
 local CreateFrame = CreateFrame
 local C_Timer_After = C_Timer.After
 local C_PetBattles_IsInBattle = C_PetBattles.IsInBattle
-local GetBonusBarOffset = GetBonusBarOffset
 local GetCombatRatingBonus = GetCombatRatingBonus
 local GetCVar, SetCVar, GetCVarBool = GetCVar, SetCVar, GetCVarBool
 local GetDodgeChance, GetParryChance = GetDodgeChance, GetParryChance
@@ -30,12 +29,14 @@ local RequestBattlefieldScoreData = RequestBattlefieldScoreData
 local SendAddonMessage = SendAddonMessage
 local UnitGroupRolesAssigned = UnitGroupRolesAssigned
 local UnitHasVehicleUI = UnitHasVehicleUI
+local GetNumGroupMembers = GetNumGroupMembers
 local UnitLevel, UnitStat, UnitAttackPower = UnitLevel, UnitStat, UnitAttackPower
 local COMBAT_RATING_RESILIENCE_PLAYER_DAMAGE_TAKEN = COMBAT_RATING_RESILIENCE_PLAYER_DAMAGE_TAKEN
 local ERR_NOT_IN_COMBAT = ERR_NOT_IN_COMBAT
 local LE_PARTY_CATEGORY_HOME = LE_PARTY_CATEGORY_HOME
 local LE_PARTY_CATEGORY_INSTANCE = LE_PARTY_CATEGORY_INSTANCE
 local RAID_CLASS_COLORS = RAID_CLASS_COLORS
+local UnitFactionGroup = UnitFactionGroup
 
 --Global variables that we don't cache, list them here for the mikk's Find Globals script
 -- GLOBALS: LibStub, UIParent, MAX_PLAYER_LEVEL, ScriptErrorsFrame
@@ -46,15 +47,14 @@ local RAID_CLASS_COLORS = RAID_CLASS_COLORS
 -- GLOBALS: CUSTOM_CLASS_COLORS, ElvDB
 
 --Constants
-E.myclass = select(2, UnitClass("player"));
-E.myClassID = select(3, UnitClass("player"));
-E.myspec = GetSpecialization();
-E.myrace = select(2, UnitRace("player"));
-E.myfaction = select(2, UnitFactionGroup('player'));
+E.myfaction, E.myLocalizedFaction = UnitFactionGroup("player");
+E.myLocalizedClass, E.myclass, E.myClassID = UnitClass("player");
+E.myLocalizedRace, E.myrace = UnitRace("player");
 E.myname = UnitName("player");
-E.version = GetAddOnMetadata("ElvUI", "Version");
 E.myrealm = GetRealmName();
-E.wowbuild = select(2, GetBuildInfo()); E.wowbuild = tonumber(E.wowbuild);
+E.myspec = GetSpecialization();
+E.version = GetAddOnMetadata("ElvUI", "Version");
+E.wowpatch, E.wowbuild = GetBuildInfo(); E.wowbuild = tonumber(E.wowbuild);
 E.resolution = ({GetScreenResolutions()})[GetCurrentResolution()] or GetCVar("gxWindowedResolution"); --only used for now in our install.lua line 779
 E.screenwidth, E.screenheight = GetPhysicalScreenSize();
 E.isMacClient = IsMacClient();
@@ -422,6 +422,13 @@ function E:RequestBGInfo()
 	RequestBattlefieldScoreData()
 end
 
+function E:NEUTRAL_FACTION_SELECT_RESULT()
+	local newFaction, newLocalizedFaction = UnitFactionGroup("player")
+	if E.myfaction ~= newFaction then
+		E.myfaction, E.myLocalizedFaction = newFaction, newLocalizedFaction
+	end
+end
+
 function E:PLAYER_ENTERING_WORLD()
 	self:CheckRole()
 	if not self.MediaUpdated then
@@ -453,7 +460,9 @@ end
 function E:UpdateFrameTemplates()
 	for frame in pairs(self["frames"]) do
 		if frame and frame.template and not frame.ignoreUpdates then
-			frame:SetTemplate(frame.template, frame.glossTex);
+			if not frame.ignoreFrameTemplates then
+				frame:SetTemplate(frame.template, frame.glossTex);
+			end
 		else
 			self["frames"][frame] = nil;
 		end
@@ -461,7 +470,9 @@ function E:UpdateFrameTemplates()
 
 	for frame in pairs(self["unitFrameElements"]) do
 		if frame and frame.template and not frame.ignoreUpdates then
-			frame:SetTemplate(frame.template, frame.glossTex);
+			if not frame.ignoreFrameTemplates then
+				frame:SetTemplate(frame.template, frame.glossTex);
+			end
 		else
 			self["unitFrameElements"][frame] = nil;
 		end
@@ -471,8 +482,10 @@ end
 function E:UpdateBorderColors()
 	for frame, _ in pairs(self["frames"]) do
 		if frame and not frame.ignoreUpdates then
-			if frame.template == 'Default' or frame.template == 'Transparent' or frame.template == nil then
-				frame:SetBackdropBorderColor(unpack(self['media'].bordercolor))
+			if not frame.ignoreBorderColors then
+				if frame.template == 'Default' or frame.template == 'Transparent' or frame.template == nil then
+					frame:SetBackdropBorderColor(unpack(self['media'].bordercolor))
+				end
 			end
 		else
 			self["frames"][frame] = nil;
@@ -481,8 +494,10 @@ function E:UpdateBorderColors()
 
 	for frame, _ in pairs(self["unitFrameElements"]) do
 		if frame and not frame.ignoreUpdates then
-			if frame.template == 'Default' or frame.template == 'Transparent' or frame.template == nil then
-				frame:SetBackdropBorderColor(unpack(self['media'].unitframeBorderColor))
+			if not frame.ignoreBorderColors then
+				if frame.template == 'Default' or frame.template == 'Transparent' or frame.template == nil then
+					frame:SetBackdropBorderColor(unpack(self['media'].unitframeBorderColor))
+				end
 			end
 		else
 			self["unitFrameElements"][frame] = nil;
@@ -493,14 +508,16 @@ end
 function E:UpdateBackdropColors()
 	for frame, _ in pairs(self["frames"]) do
 		if frame then
-			if frame.template == 'Default' or frame.template == nil then
-				if frame.backdropTexture then
-					frame.backdropTexture:SetVertexColor(unpack(self['media'].backdropcolor))
-				else
-					frame:SetBackdropColor(unpack(self['media'].backdropcolor))
+			if not frame.ignoreBackdropColors then
+				if frame.template == 'Default' or frame.template == nil then
+					if frame.backdropTexture then
+						frame.backdropTexture:SetVertexColor(unpack(self['media'].backdropcolor))
+					else
+						frame:SetBackdropColor(unpack(self['media'].backdropcolor))
+					end
+				elseif frame.template == 'Transparent' then
+					frame:SetBackdropColor(unpack(self['media'].backdropfadecolor))
 				end
-			elseif frame.template == 'Transparent' then
-				frame:SetBackdropColor(unpack(self['media'].backdropfadecolor))
 			end
 		else
 			self["frames"][frame] = nil;
@@ -509,14 +526,16 @@ function E:UpdateBackdropColors()
 
 	for frame, _ in pairs(self["unitFrameElements"]) do
 		if frame then
-			if frame.template == 'Default' or frame.template == nil then
-				if frame.backdropTexture then
-					frame.backdropTexture:SetVertexColor(unpack(self['media'].backdropcolor))
-				else
-					frame:SetBackdropColor(unpack(self['media'].backdropcolor))
+			if not frame.ignoreBackdropColors then
+				if frame.template == 'Default' or frame.template == nil then
+					if frame.backdropTexture then
+						frame.backdropTexture:SetVertexColor(unpack(self['media'].backdropcolor))
+					else
+						frame:SetBackdropColor(unpack(self['media'].backdropcolor))
+					end
+				elseif frame.template == 'Transparent' then
+					frame:SetBackdropColor(unpack(self['media'].backdropfadecolor))
 				end
-			elseif frame.template == 'Transparent' then
-				frame:SetBackdropColor(unpack(self['media'].backdropfadecolor))
 			end
 		else
 			self["unitFrameElements"][frame] = nil;
@@ -601,8 +620,8 @@ function E:CheckRole()
 		role = self.ClassRole[self.myclass][talentTree]
 	end
 
-	--Check for PvP gear or gladiator stance
-	if role == "Tank" and (IsInPvPGear or (E.myclass == "WARRIOR" and GetBonusBarOffset() == 3)) then
+	--Check for PvP gear
+	if role == "Tank" and IsInPvPGear then
 		role = "Melee"
 	end
 
@@ -906,6 +925,7 @@ function E:SendMessage()
 	end
 end
 
+local SendRecieveGroupSize = -1 --this is negative one so that the first check will send (if group size is greater than one; specifically for /reload)
 local myRealm = gsub(E.myrealm,'[%s%-]','')
 local myName = E.myname..'-'..myRealm
 local function SendRecieve(_, event, prefix, message, _, sender)
@@ -924,17 +944,23 @@ local function SendRecieve(_, event, prefix, message, _, sender)
 			end
 		end
 	else
-		E.SendMSGTimer = E:ScheduleTimer('SendMessage', 12)
+		local num = GetNumGroupMembers()
+		if num ~= SendRecieveGroupSize then
+			if num > 1 and num > SendRecieveGroupSize then
+				E.SendMSGTimer = E:ScheduleTimer('SendMessage', 12)
+			end
+			SendRecieveGroupSize = num
+		end
 	end
 end
 
 RegisterAddonMessagePrefix('ELVUI_VERSIONCHK')
 
-local f = CreateFrame('Frame')
+local f = CreateFrame("Frame")
 f:RegisterEvent("GROUP_ROSTER_UPDATE")
 --f:RegisterEvent("ADDON_LOADED")
 f:RegisterEvent("CHAT_MSG_ADDON")
-f:SetScript('OnEvent', SendRecieve)
+f:SetScript("OnEvent", SendRecieve)
 
 function E:UpdateAll(ignoreInstall)
 	if not self.initialized then
@@ -956,7 +982,7 @@ function E:UpdateAll(ignoreInstall)
 	self:SetMoversPositions()
 
 	self:UpdateMedia()
-	self:UpdateCooldownSettings()
+	self:UpdateCooldownSettings('all')
 	if self.RefreshGUI then self:RefreshGUI() end --Refresh Config
 
 	local UF = self:GetModule('UnitFrames')
@@ -976,6 +1002,7 @@ function E:UpdateAll(ignoreInstall)
 	AB:UpdateMicroPositionDimensions()
 	AB:Extra_SetAlpha()
 	AB:Extra_SetScale()
+	AB:ToggleDesaturation()
 
 	local bags = E:GetModule('Bags');
 	bags.db = self.db.bags
@@ -998,6 +1025,7 @@ function E:UpdateAll(ignoreInstall)
 
 	local NP = self:GetModule('NamePlates')
 	NP.db = self.db.nameplates
+	NP:StyleFilterInitializeAllFilters()
 	NP:ConfigureAll()
 
 	local DataBars = self:GetModule("DataBars")
@@ -1186,6 +1214,79 @@ function E:UnregisterObjectForVehicleLock(object)
 	E.VehicleLocks[object] = nil
 end
 
+local EventRegister = {}
+local EventFrame = CreateFrame("Frame")
+EventFrame:SetScript("OnEvent", function(self, event, ...)
+	if EventRegister[event] then
+		for object, functions in pairs(EventRegister[event]) do
+			for _, func in ipairs(functions) do
+				--Call the functions that are registered with this object, and pass the object and other arguments back
+				func(object, event, ...)
+			end
+		end
+	end
+end)
+
+--- Registers specified event and adds specified func to be called for the specified object.
+-- Unless all parameters are supplied it will not register.
+-- If the specified object has already been registered for the specified event
+-- then it will just add the specified func to a table of functions that should be called.
+-- When a registered event is triggered, then the registered function is called with
+-- the object as first parameter, then event, and then all the parameters for the event itself.
+-- @param event The event you want to register.
+-- @param object The object you want to register the event for.
+-- @param func The function you want executed for this object.
+function E:RegisterEventForObject(event, object, func)
+	if not event or not object or not func then
+		E:Print("Error. Usage: RegisterEventForObject(event, object, func)")
+		return
+	end
+
+	if not EventRegister[event] then --Check if event has already been registered
+		EventRegister[event] = {}
+		EventFrame:RegisterEvent(event)
+	else
+		if not EventRegister[event][object] then --Check if this object has already been registered
+			EventRegister[event][object] = {func}
+		else
+			tinsert(EventRegister[event][object], func) --Add func that should be called for this object on this event
+		end
+	end
+end
+
+--- Unregisters specified function for the specified object on the specified event.
+-- Unless all parameters are supplied it will not unregister.
+-- @param event The event you want to unregister an object from.
+-- @param object The object you want to unregister a func from.
+-- @param func The function you want unregistered for the object.
+function E:UnregisterEventForObject(event, object, func)
+	if not event or not object or not func then
+		E:Print("Error. Usage: UnregisterEventForObject(event, object, func)")
+		return
+	end
+
+	--Find the specified function for the specified object and remove it from the register
+	if EventRegister[event] and EventRegister[event][object] then
+		for index, registeredFunc in ipairs(EventRegister[event][object]) do
+			if func == registeredFunc then
+				tremove(EventRegister[event][object], index)
+				break
+			end
+		end
+
+		--If this object no longer has any functions registered then remove it from the register
+		if #EventRegister[event][object] == 0 then
+			EventRegister[event][object] = nil
+		end
+
+		--If this event no longer has any objects registered then unregister it and remove it from the register
+		if not next(EventRegister[event]) then
+			EventFrame:UnregisterEvent(event)
+			EventRegister[event] = nil
+		end
+	end
+end
+
 function E:ResetAllUI()
 	self:ResetMovers()
 
@@ -1339,6 +1440,16 @@ function E:DBConversions()
 		auraFilterStrip(name, content, '^Friendly:')
 		auraFilterStrip(name, content, '^Enemy:')
 	end
+
+	--Convert old "Buffs and Debuffs" font size option to individual options
+	if E.db.auras.fontSize then
+		local fontSize = E.db.auras.fontSize
+		E.db.auras.buffs.countFontSize = fontSize
+		E.db.auras.buffs.durationFontSize = fontSize
+		E.db.auras.debuffs.countFontSize = fontSize
+		E.db.auras.debuffs.durationFontSize = fontSize
+		E.db.auras.fontSize = nil
+	end
 end
 
 local CPU_USAGE = {}
@@ -1357,8 +1468,8 @@ local function CompareCPUDiff(showall, minCalls)
 			end
 			newUsage, calls = GetFunctionCPUUsage(mod[newFunc], true)
 			differance = newUsage - oldUsage
-			if showall and calls > minCalls then
-				E:Print(calls, name, differance)
+			if showall and (calls > minCalls) then
+				E:Print('Name('..name..')  Calls('..calls..') Diff('..(differance > 0 and format("%.3f", differance) or 0)..')')
 			end
 			if (differance > greatestDiff) and calls > minCalls then
 				greatestName, greatestUsage, greatestCalls, greatestDiff = name, newUsage, calls, differance
@@ -1367,46 +1478,55 @@ local function CompareCPUDiff(showall, minCalls)
 	end
 
 	if greatestName then
-		E:Print(greatestName.. " had the CPU usage difference of: "..greatestUsage.."ms. And has been called ".. greatestCalls.." times.")
+		E:Print(greatestName.. " had the CPU usage difference of: "..(greatestUsage > 0 and format("%.3f", greatestUsage) or 0).."ms. And has been called ".. greatestCalls.." times.")
 	else
 		E:Print('CPU Usage: No CPU Usage differences found.')
 	end
+
+	twipe(CPU_USAGE)
 end
 
 function E:GetTopCPUFunc(msg)
-	local module, showall, delay, minCalls = msg:match("^([^%s]+)%s*([^%s]*)%s*([^%s]*)%s*(.*)$")
-	local mod
-
-	module = (module == "nil" and nil) or module
-	if not module then
-		E:Print('cpuusage: module (arg1) is required! This can be set as "all" too.')
+	if not GetCVarBool("scriptProfile") then
+		E:Print("For `/cpuusage` to work, you need to enable script profiling via: `/console scriptProfile 1` then reload. Disable after testing by setting it back to 0.")
 		return
 	end
+
+	local module, showall, delay, minCalls = msg:match("^([^%s]+)%s*([^%s]*)%s*([^%s]*)%s*(.*)$")
+	local checkCore, mod = (not module or module == "") and "E"
+
 	showall = (showall == "true" and true) or false
 	delay = (delay == "nil" and nil) or tonumber(delay) or 5
 	minCalls = (minCalls == "nil" and nil) or tonumber(minCalls) or 15
 
 	twipe(CPU_USAGE)
 	if module == "all" then
-		for _, registeredModule in pairs(self['RegisteredModules']) do
-			mod = self:GetModule(registeredModule, true) or self
-			for name in pairs(mod) do
-				if type(mod[name]) == "function" and name ~= "GetModule" then
-					CPU_USAGE[registeredModule..":"..name] = GetFunctionCPUUsage(mod[name], true)
+		for moduName, modu in pairs(self.modules) do
+			for funcName, func in pairs(modu) do
+				if (funcName ~= "GetModule") and (type(func) == "function") then
+					CPU_USAGE[moduName..":"..funcName] = GetFunctionCPUUsage(func, true)
 				end
 			end
 		end
 	else
-		mod = self:GetModule(module, true) or self
-		for name in pairs(mod) do
-			if type(mod[name]) == "function" and name ~= "GetModule" then
-				CPU_USAGE[module..":"..name] = GetFunctionCPUUsage(mod[name], true)
+		if not checkCore then
+			mod = self:GetModule(module, true)
+			if not mod then
+				self:Print(module.." not found, falling back to checking core.")
+				mod, checkCore = self, "E"
+			end
+		else
+			mod = self
+		end
+		for name, func in pairs(mod) do
+			if (name ~= "GetModule") and type(func) == "function" then
+				CPU_USAGE[(checkCore or module)..":"..name] = GetFunctionCPUUsage(func, true)
 			end
 		end
 	end
 
 	self:Delay(delay, CompareCPUDiff, showall, minCalls)
-	self:Print("Calculating CPU Usage differences (module: "..(module or "?")..", showall: "..tostring(showall)..", minCalls: "..tostring(minCalls)..", delay: "..tostring(delay)..")")
+	self:Print("Calculating CPU Usage differences (module: "..(checkCore or module)..", showall: "..tostring(showall)..", minCalls: "..tostring(minCalls)..", delay: "..tostring(delay)..")")
 end
 
 local function SetOriginalHeight()
@@ -1424,7 +1544,7 @@ local function SetModifiedHeight()
 		return
 	end
 	E:UnregisterEvent("PLAYER_REGEN_ENABLED")
-	local height = E.UIParent.origHeight - OrderHallCommandBar:GetHeight()
+	local height = E.UIParent.origHeight - (OrderHallCommandBar:GetHeight() + E.Border)
 	E.UIParent:SetHeight(height)
 end
 
@@ -1443,7 +1563,7 @@ local function HandleCommandBar()
 	end
 end
 
-function E:Initialize()
+function E:Initialize(loginFrame)
 	twipe(self.db)
 	twipe(self.global)
 	twipe(self.private)
@@ -1462,12 +1582,12 @@ function E:Initialize()
 	self:DBConversions()
 
 	self:CheckRole()
-	self:UIScale('PLAYER_LOGIN');
+	self:UIScale('PLAYER_LOGIN', loginFrame);
 
 	self:LoadCommands(); --Load Commands
 	self:InitializeModules(); --Load Modules
 	self:LoadMovers(); --Load Movers
-	self:UpdateCooldownSettings()
+	self:UpdateCooldownSettings('all')
 	self.initialized = true
 
 	if self.private.install_complete == nil then
@@ -1484,13 +1604,17 @@ function E:Initialize()
 
 	self:UpdateMedia()
 	self:UpdateFrameTemplates()
+	self:UpdateBorderColors()
+	self:UpdateBackdropColors()
+	self:UpdateStatusBars()
 	self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED", "CheckRole");
 	self:RegisterEvent("PLAYER_TALENT_UPDATE", "CheckRole");
 	self:RegisterEvent("CHARACTER_POINTS_CHANGED", "CheckRole");
 	self:RegisterEvent("UNIT_INVENTORY_CHANGED", "CheckRole");
 	self:RegisterEvent("UPDATE_BONUS_ACTIONBAR", "CheckRole");
-	self:RegisterEvent('UI_SCALE_CHANGED', 'UIScale')
-	self:RegisterEvent('PLAYER_ENTERING_WORLD')
+	self:RegisterEvent("UI_SCALE_CHANGED", "UIScale")
+	self:RegisterEvent("PLAYER_ENTERING_WORLD")
+	self:RegisterEvent("NEUTRAL_FACTION_SELECT_RESULT")
 	self:RegisterEvent("PET_BATTLE_CLOSE", 'AddNonPetBattleFrames')
 	self:RegisterEvent('PET_BATTLE_OPENING_START', "RemoveNonPetBattleFrames")
 	self:RegisterEvent("UNIT_ENTERED_VEHICLE", "EnterVehicleHideFrames")

@@ -19,9 +19,21 @@ local function GetAuraOptions(headerName)
 			min = 16, max = 60, step = 2,
 			order = 1,
 		},
+		durationFontSize = {
+			order = 2,
+			type = "range",
+			name = L["Duration Font Size"],
+			min = 4, max = 212, step = 1,
+		},
+		countFontSize = {
+			order = 3,
+			type = "range",
+			name = L["Count Font Size"],
+			min = 4, max = 212, step = 1,
+		},
 		growthDirection = {
 			type = 'select',
-			order = 2,
+			order = 4,
 			name = L["Growth Direction"],
 			desc = L["The direction the auras will grow and then the direction they will grow after they reach the wrap after limit."],
 			values = {
@@ -37,32 +49,32 @@ local function GetAuraOptions(headerName)
 		},
 		wrapAfter = {
 			type = 'range',
-			order = 3,
+			order = 5,
 			name = L["Wrap After"],
 			desc = L["Begin a new row or column after this many auras."],
 			min = 1, max = 32, step = 1,
 		},
 		maxWraps = {
 			name = L["Max Wraps"],
-			order = 4,
+			order = 6,
 			desc = L["Limit the number of rows or columns."],
 			type = 'range',
 			min = 1, max = 32, step = 1,
 		},
 		horizontalSpacing = {
-			order = 5,
+			order = 7,
 			type = 'range',
 			name = L["Horizontal Spacing"],
 			min = 0, max = 50, step = 1,
 		},
 		verticalSpacing = {
-			order = 6,
+			order = 8,
 			type = 'range',
 			name = L["Vertical Spacing"],
 			min = 0, max = 50, step = 1,
 		},
 		sortMethod = {
-			order = 7,
+			order = 9,
 			name = L["Sort Method"],
 			desc = L["Defines how the group is sorted."],
 			type = 'select',
@@ -73,7 +85,7 @@ local function GetAuraOptions(headerName)
 			},
 		},
 		sortDir = {
-			order = 8,
+			order = 10,
 			name = L["Sort Direction"],
 			desc = L["Defines the sort order of the selected sort method."],
 			type = 'select',
@@ -83,7 +95,7 @@ local function GetAuraOptions(headerName)
 			},
 		},
 		seperateOwn = {
-			order = 9,
+			order = 11,
 			name = L["Seperate"],
 			desc = L["Indicate whether buffs you cast yourself should be separated before or after."],
 			type = 'select',
@@ -143,7 +155,7 @@ E.Options.args.auras = {
 				fadeThreshold = {
 					type = 'range',
 					name = L["Fade Threshold"],
-					desc = L["Threshold before text changes red, goes into decimal form, and the icon will fade. Set to -1 to disable."],
+					desc = L["Threshold before the icon will fade out and back in. Set to -1 to disable."],
 					min = -1, max = 30, step = 1,
 					order = 1,
 				},
@@ -153,12 +165,6 @@ E.Options.args.auras = {
 					name = L["Font"],
 					values = AceGUIWidgetLSMlists.font,
 				},
-				fontSize = {
-					order = 3,
-					name = FONT_SIZE,
-					type = "range",
-					min = 4, max = 212, step = 1,
-				},
 				fontOutline = {
 					order = 4,
 					name = L["Font Outline"],
@@ -167,7 +173,6 @@ E.Options.args.auras = {
 					values = {
 						['NONE'] = NONE,
 						['OUTLINE'] = 'OUTLINE',
-
 						['MONOCHROMEOUTLINE'] = 'MONOCROMEOUTLINE',
 						['THICKOUTLINE'] = 'THICKOUTLINE',
 					},
@@ -221,8 +226,83 @@ E.Options.args.auras = {
 				},
 			},
 		},
-		buffs = {
+		cooldownGroup = {
+			type = "group",
 			order = 10,
+			name = L["Cooldown Override"],
+			get = function(info)
+				local t = E.db.auras.cooldown[ info[#info] ]
+				local d = P.auras.cooldown[ info[#info] ]
+				return t.r, t.g, t.b, t.a, d.r, d.g, d.b;
+			end,
+			set = function(info, r, g, b)
+				local t = E.db.auras.cooldown[ info[#info] ]
+				t.r, t.g, t.b = r, g, b;
+				E:UpdateCooldownSettings('auras');
+			end,
+			args = {
+				header = {
+					order = 1,
+					type = "header",
+					name = L["Cooldown Override"],
+				},
+				override = {
+					type = "toggle",
+					order = 2,
+					name = L["Use Override"],
+					desc = L["This will override the global cooldown settings."],
+					get = function(info) return E.db.auras.cooldown[ info[#info] ] end,
+					set = function(info, value) E.db.auras.cooldown[ info[#info] ] = value end,
+				},
+				threshold = {
+					type = 'range',
+					order = 3,
+					name = L["Low Threshold"],
+					desc = L["Threshold before text turns red and is in decimal form. Set to -1 for it to never turn red"],
+					min = -1, max = 20, step = 1,
+					disabled = function() return not E.db.auras.cooldown.override end,
+					get = function(info) return E.db.auras.cooldown[ info[#info] ] end,
+					set = function(info, value) E.db.auras.cooldown[ info[#info] ] = value end,
+				},
+				expiringColor = {
+					type = 'color',
+					order = 4,
+					name = L["Expiring"],
+					desc = L["Color when the text is about to expire"],
+					disabled = function() return not E.db.auras.cooldown.override end,
+				},
+				secondsColor = {
+					type = 'color',
+					order = 5,
+					name = L["Seconds"],
+					desc = L["Color when the text is in the seconds format."],
+					disabled = function() return not E.db.auras.cooldown.override end,
+				},
+				minutesColor = {
+					type = 'color',
+					order = 6,
+					name = L["Minutes"],
+					desc = L["Color when the text is in the minutes format."],
+					disabled = function() return not E.db.auras.cooldown.override end,
+				},
+				hoursColor = {
+					type = 'color',
+					order = 7,
+					name = L["Hours"],
+					desc = L["Color when the text is in the hours format."],
+					disabled = function() return not E.db.auras.cooldown.override end,
+				},
+				daysColor = {
+					type = 'color',
+					order = 8,
+					name = L["Days"],
+					desc = L["Color when the text is in the days format."],
+					disabled = function() return not E.db.auras.cooldown.override end,
+				},
+			},
+		},
+		buffs = {
+			order = 15,
 			type = 'group',
 			name = L["Buffs"],
 			get = function(info) return E.db.auras.buffs[ info[#info] ] end,

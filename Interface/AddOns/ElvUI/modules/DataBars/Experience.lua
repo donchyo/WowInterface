@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local mod = E:GetModule('DataBars');
 local LSM = LibStub("LibSharedMedia-3.0")
 
@@ -134,6 +134,14 @@ function mod:UpdateExperienceDimensions()
 
 	self.expBar.statusBar:SetOrientation(self.db.experience.orientation)
 	self.expBar.rested:SetReverseFill(self.db.experience.reverseFill)
+
+	if self.db.experience.orientation == "HORIZONTAL" then
+		self.expBar.rested:SetRotatesTexture(false)
+		self.expBar.statusBar:SetRotatesTexture(false)
+	else
+		self.expBar.rested:SetRotatesTexture(true)
+		self.expBar.statusBar:SetRotatesTexture(true)
+	end
 
 	if self.db.experience.mouseover then
 		self.expBar:SetAlpha(0)

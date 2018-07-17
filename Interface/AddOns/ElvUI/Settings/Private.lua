@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 
 --Locked Settings, These settings are stored for your character only regardless of profile options.
 
@@ -13,6 +13,7 @@ V['general'] = {
 	['chatBubbleFont'] = "PT Sans Narrow",
 	['chatBubbleFontSize'] = 14,
 	['chatBubbleFontOutline'] = "NONE",
+	['chatBubbleName'] = false,
 	['pixelPerfect'] = true,
 	['replaceBlizzFonts'] = true,
 	['minimap'] = {
@@ -121,6 +122,8 @@ V['skins'] = {
 		["Obliterum"] = true,
 		["Contribution"] = true,
 		["BlizzardOptions"] = true,
+		["Warboard"] = true,
+		["AlliedRaces"] = true,
 	},
 }
 

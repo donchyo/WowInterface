@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
 --Cache global variables
@@ -10,9 +10,9 @@ local GetUnitSpeed = GetUnitSpeed
 local IsFalling = IsFalling
 local IsFlying = IsFlying
 local IsSwimming = IsSwimming
-local STAT_MOVEMENT_SPEED = STAT_MOVEMENT_SPEED
 
 local displayNumberString = ''
+local movementSpeedText = L["Mov. Speed:"]
 local beforeFalling
 local lastPanel
 
@@ -32,12 +32,12 @@ local function OnEvent(self)
 		beforeFalling = speed
 	end
 
-	self.text:SetFormattedText(displayNumberString, STAT_MOVEMENT_SPEED, speed/BASE_MOVEMENT_SPEED*100)
+	self.text:SetFormattedText(displayNumberString, movementSpeedText, speed/BASE_MOVEMENT_SPEED*100)
 	lastPanel = self
 end
 
 local function ValueColorUpdate(hex)
-	displayNumberString = join("", "%s: ", hex, "%.0f%%|r")
+	displayNumberString = join("", "%s ", hex, "%.0f%%|r")
 
 	if lastPanel ~= nil then
 		OnEvent(lastPanel)
@@ -45,4 +45,4 @@ local function ValueColorUpdate(hex)
 end
 E['valueColorUpdateFuncs'][ValueColorUpdate] = true
 
-DT:RegisterDatatext('MovementSpeed', {"UNIT_STATS", "UNIT_AURA", "FORGE_MASTER_ITEM_CHANGED", "ACTIVE_TALENT_GROUP_CHANGED", "PLAYER_TALENT_UPDATE", "UNIT_SPELL_HASTE"}, OnEvent, nil, nil, nil, nil, STAT_MOVEMENT_SPEED)
+DT:RegisterDatatext('MovementSpeed', {"UNIT_STATS", "UNIT_AURA", "ACTIVE_TALENT_GROUP_CHANGED", "PLAYER_TALENT_UPDATE", "UNIT_SPELL_HASTE"}, OnEvent, nil, nil, nil, nil, STAT_MOVEMENT_SPEED)

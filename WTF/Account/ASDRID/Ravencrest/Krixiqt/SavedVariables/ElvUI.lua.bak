@@ -1,0 +1,33 @@
+
+ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+	["ChatEditHistory"] = {
+		"/g oklik", -- [1]
+		"/g did you name your mage prtecclolis?", -- [2]
+		"/g haha", -- [3]
+		"/g thats amazing", -- [4]
+		"/g how long do you think it lasts?", -- [5]
+		"/g thats pretty big", -- [6]
+		"/g nah man im gonna sleep", -- [7]
+		"/g i should be sleeping already", -- [8]
+		"/g :(", -- [9]
+		"/g dude", -- [10]
+		"/g i need to get up at 6:30", -- [11]
+		"/g struggle", -- [12]
+		"/g im sorry", -- [13]
+		"/g i wishi could play", -- [14]
+		"/g aljan", -- [15]
+		"/g as the plate transmog master", -- [16]
+		"/g what do i use", -- [17]
+		"/g i need to be a qt now", -- [18]
+		"/g i can hear you laughing", -- [19]
+		"/g from here", -- [20]
+	},
+}

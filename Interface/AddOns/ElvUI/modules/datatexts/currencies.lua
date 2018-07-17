@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
 --Cache global variables
@@ -12,52 +12,51 @@ local BONUS_ROLL_REWARD_MONEY = BONUS_ROLL_REWARD_MONEY
 local EXPANSION_NAME6 = EXPANSION_NAME6
 local OTHER = OTHER
 
+--Global variables that we don't cache, list them here for mikk's FindGlobals script
+-- GLOBALS: ToggleCharacter
+
 -- Currencies we care about
 local Currencies = {
 	-- Legion
-	["ANCIENT_MANA"] = {ID = 1155, NAME = GetCurrencyInfo(1155), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1155)), 16, 16)},
-	["CURIOUS_COIN"] = {ID = 1275, NAME = GetCurrencyInfo(1275), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1275)), 16, 16)},
-	["ORDER_RESOURCES"] = {ID = 1220, NAME = GetCurrencyInfo(1220), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1220)), 16, 16)},
-	["LEGIONFALL_WAR_SUPPLIES"] = {ID = 1342, NAME = GetCurrencyInfo(1342), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1342)), 16, 16)},
-	["SIGHTLESS_EYE"] = {ID = 1149, NAME = GetCurrencyInfo(1149), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1149)), 16, 16)},
-	["SEAL_OF_BROKEN_FATE"] = {ID = 1273, NAME = GetCurrencyInfo(1273), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1273)), 16, 16)},
-	["NETHERSHARD"] = {ID = 1226, NAME = GetCurrencyInfo(1226), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1226)), 16, 16)},
-	["SHADOWY_COIN"] = {ID = 1154, NAME = GetCurrencyInfo(1154), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1154)), 16, 16)},
-	["VEILED_ARGUNITE"] = {ID = 1508, NAME = GetCurrencyInfo(1508), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(1508)), 16, 16)},
+	["ANCIENT_MANA"] = {ID = 1155, NAME = GetCurrencyInfo(1155), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1155)))},
+	["CURIOUS_COIN"] = {ID = 1275, NAME = GetCurrencyInfo(1275), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1275)))},
+	["ORDER_RESOURCES"] = {ID = 1220, NAME = GetCurrencyInfo(1220), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1220)))},
+	["LEGIONFALL_WAR_SUPPLIES"] = {ID = 1342, NAME = GetCurrencyInfo(1342), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1342)))},
+	["SIGHTLESS_EYE"] = {ID = 1149, NAME = GetCurrencyInfo(1149), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1149)))},
+	["SEAL_OF_BROKEN_FATE"] = {ID = 1273, NAME = GetCurrencyInfo(1273), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1273)))},
+	["NETHERSHARD"] = {ID = 1226, NAME = GetCurrencyInfo(1226), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1226)))},
+	["SHADOWY_COIN"] = {ID = 1154, NAME = GetCurrencyInfo(1154), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1154)))},
+	["VEILED_ARGUNITE"] = {ID = 1508, NAME = GetCurrencyInfo(1508), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(1508)))},
 	-- Other
-	["APEXIS_CRYSTAL"] = {ID = 823, NAME = GetCurrencyInfo(823), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(823)), 16, 16)},
-	["DARKMOON_PRIZE_TICKET"] = {ID = 515, NAME = GetCurrencyInfo(515), ICON = format("\124T%s:%d:%d:0:0:64:64:4:60:4:60\124t", select(3, GetCurrencyInfo(515)), 16, 16)},
+	["DARKMOON_PRIZE_TICKET"] = {ID = 515, NAME = GetCurrencyInfo(515), ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(515)))},
 }
 
-local currencyList
-function DT:Currencies_GetCurrencyList()
-	currencyList = {}
-	for currency, data in pairs(Currencies) do
-		currencyList[currency] = data.NAME
-	end
-	currencyList["GOLD"] = BONUS_ROLL_REWARD_MONEY
+-- CurrencyList for config
+local currencyList = {}
+for currency, data in pairs(Currencies) do
+	currencyList[currency] = data.NAME
+end
+currencyList["GOLD"] = BONUS_ROLL_REWARD_MONEY
+DT.CurrencyList = currencyList
 
-	return currencyList
+local function OnClick()
+	ToggleCharacter("TokenFrame")
 end
 
-local gold
-local chosenCurrency, currencyAmount
-
+local goldText
 local function OnEvent(self)
-	gold = GetMoney();
-	if E.db.datatexts.currencies.displayedCurrency == "GOLD" then
-		self.text:SetText(E:FormatMoney(gold, E.db.datatexts.goldFormat or "BLIZZARD", not E.db.datatexts.goldCoins))
+	goldText = E:FormatMoney(GetMoney(), E.db.datatexts.goldFormat or "BLIZZARD", not E.db.datatexts.goldCoins)
+	local chosenCurrency = Currencies[E.db.datatexts.currencies.displayedCurrency]
+	if E.db.datatexts.currencies.displayedCurrency == "GOLD" or chosenCurrency == nil then
+		self.text:SetText(goldText)
 	else
-		chosenCurrency = Currencies[E.db.datatexts.currencies.displayedCurrency]
-		if chosenCurrency then
-			currencyAmount = select(2, GetCurrencyInfo(chosenCurrency.ID))
-			if E.db.datatexts.currencies.displayStyle == "ICON" then
-				self.text:SetFormattedText("%s %d", chosenCurrency.ICON, currencyAmount)
-			elseif E.db.datatexts.currencies.displayStyle == "ICON_TEXT" then
-				self.text:SetFormattedText("%s %s %d", chosenCurrency.ICON, chosenCurrency.NAME, currencyAmount)
-			else --ICON_TEXT_ABBR
-				self.text:SetFormattedText("%s %s %d", chosenCurrency.ICON, E:AbbreviateString(chosenCurrency.NAME), currencyAmount)
-			end
+		local currencyAmount = select(2, GetCurrencyInfo(chosenCurrency.ID))
+		if E.db.datatexts.currencies.displayStyle == "ICON" then
+			self.text:SetFormattedText("%s %d", chosenCurrency.ICON, currencyAmount)
+		elseif E.db.datatexts.currencies.displayStyle == "ICON_TEXT" then
+			self.text:SetFormattedText("%s %s %d", chosenCurrency.ICON, chosenCurrency.NAME, currencyAmount)
+		else --ICON_TEXT_ABBR
+			self.text:SetFormattedText("%s %s %d", chosenCurrency.ICON, E:AbbreviateString(chosenCurrency.NAME), currencyAmount)
 		end
 	end
 end
@@ -65,7 +64,7 @@ end
 local function OnEnter(self)
 	DT:SetupTooltip(self)
 
-	DT.tooltip:AddDoubleLine(L["Gold"]..":", E:FormatMoney(gold, E.db.datatexts.goldFormat or "BLIZZARD", not E.db.datatexts.goldCoins), nil, nil, nil, 1, 1, 1)
+	DT.tooltip:AddDoubleLine(L["Gold"]..":", goldText, nil, nil, nil, 1, 1, 1)
 	DT.tooltip:AddLine(' ')
 
 	DT.tooltip:AddLine(EXPANSION_NAME6) --"Legion"
@@ -81,7 +80,6 @@ local function OnEnter(self)
 	DT.tooltip:AddLine(' ')
 
 	DT.tooltip:AddLine(OTHER)
-	DT.tooltip:AddDoubleLine(Currencies["APEXIS_CRYSTAL"].NAME, select(2, GetCurrencyInfo(Currencies["APEXIS_CRYSTAL"].ID)), 1, 1, 1)
 	DT.tooltip:AddDoubleLine(Currencies["DARKMOON_PRIZE_TICKET"].NAME, select(2, GetCurrencyInfo(Currencies["DARKMOON_PRIZE_TICKET"].ID)), 1, 1, 1)
 
 	--[[
@@ -104,5 +102,5 @@ local function OnEnter(self)
 	DT.tooltip:Show()
 end
 
-DT:RegisterDatatext('Currencies', {'PLAYER_ENTERING_WORLD', 'PLAYER_MONEY', 'SEND_MAIL_MONEY_CHANGED', 'SEND_MAIL_COD_CHANGED', 'PLAYER_TRADE_MONEY', 'TRADE_MONEY_CHANGED', 'CHAT_MSG_CURRENCY', 'CURRENCY_DISPLAY_UPDATE'}, OnEvent, nil, nil, OnEnter, nil, CURRENCY)
+DT:RegisterDatatext('Currencies', {'PLAYER_ENTERING_WORLD', 'PLAYER_MONEY', 'SEND_MAIL_MONEY_CHANGED', 'SEND_MAIL_COD_CHANGED', 'PLAYER_TRADE_MONEY', 'TRADE_MONEY_CHANGED', 'CHAT_MSG_CURRENCY', 'CURRENCY_DISPLAY_UPDATE'}, OnEvent, nil, OnClick, OnEnter, nil, CURRENCY)
 

@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
 
 --Cache global variables
@@ -160,6 +160,9 @@ function UF:Configure_HealthBar(frame)
 
 	--Transparency Settings
 	UF:ToggleTransparentStatusBar(UF.db.colors.transparentHealth, frame.Health, frame.Health.bg, (frame.USE_PORTRAIT and frame.USE_PORTRAIT_OVERLAY) ~= true)
+
+	--Highlight Texture
+	UF:Configure_HighlightGlow(frame)
 
 	frame:UpdateElement("Health")
 end

@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 local LBG = LibStub("LibButtonGlow-1.0", true)
 
@@ -270,6 +270,16 @@ local function LoadSkin()
 		S:HandleCheckBox(_G["LFDQueueFrameSpecificListButton"..i].enableButton, nil, true)
 	end
 
+	hooksecurefunc("LFGDungeonListButton_SetDungeon", function(button)
+		if button and button.expandOrCollapseButton:IsShown() then
+			if button.isCollapsed then
+				button.expandOrCollapseButton:SetNormalTexture("Interface\\AddOns\\ElvUI\\media\\textures\\PlusButton");
+			else
+				button.expandOrCollapseButton:SetNormalTexture("Interface\\AddOns\\ElvUI\\media\\textures\\MinusButton");
+			end
+		end
+	end)
+
 	hooksecurefunc("ScenarioQueueFrameSpecific_Update", function()
 
 		for i = 1, NUM_SCENARIO_CHOICE_BUTTONS do
@@ -323,6 +333,14 @@ local function LoadSkin()
 			item.border = CreateFrame("Frame", nil, item)
 			item.border:SetTemplate()
 			item.border:SetOutside(item.Icon)
+
+			hooksecurefunc(item.IconBorder, "SetVertexColor", function(self, r, g, b)
+				self:GetParent().border:SetBackdropBorderColor(r, g, b)
+				self:SetTexture("")
+			end)
+			hooksecurefunc(item.IconBorder, "Hide", function(self)
+				self:GetParent().border:SetBackdropBorderColor(unpack(E.media.bordercolor))
+			end)
 
 			item.Icon:SetTexCoord(unpack(E.TexCoords))
 			item.Icon:SetDrawLayer("OVERLAY")
@@ -546,23 +564,9 @@ local function LoadSkin()
 	LFGListFrame.SearchPanel.RefreshButton:Size(24)
 	LFGListFrame.SearchPanel.RefreshButton.Icon:SetPoint("CENTER")
 
-	local function handleLFGListCancelDeclineButton(button)
-		S:HandleButton(button)
-		if button.Icon then
-			button.Icon:Hide()
-		end
-		if not button.text then
-			button.text = button:CreateFontString(nil, 'OVERLAY')
-			button.text:SetFont([[Interface\AddOns\ElvUI\media\fonts\PT_Sans_Narrow.ttf]], 16, 'OUTLINE')
-			button.text:SetText('x')
-			button.text:SetJustifyH('CENTER')
-			button.text:Point('CENTER', button, 'CENTER')
-		end
-	end
-
 	hooksecurefunc("LFGListApplicationViewer_UpdateApplicant", function(button)
 		if not button.DeclineButton.template then
-			handleLFGListCancelDeclineButton(button.DeclineButton)
+			S:HandleButton(button.DeclineButton, nil, true)
 		end
 		if not button.InviteButton.template then
 			S:HandleButton(button.InviteButton)
@@ -571,7 +575,7 @@ local function LoadSkin()
 
 	hooksecurefunc("LFGListSearchEntry_Update", function(button)
 		if not button.CancelButton.template then
-			handleLFGListCancelDeclineButton(button.CancelButton)
+			S:HandleButton(button.CancelButton, nil, true)
 		end
 	end)
 
@@ -670,7 +674,10 @@ local function LoadSkin()
 				button:SetBackdropBorderColor(unpack(E["media"].bordercolor))
 			end
 		end
-	end);
+	end)
+
+	-- Tutorial
+	S:HandleCloseButton(PremadeGroupsPvETutorialAlert.CloseButton)
 end
 
 S:AddCallback("LFG", LoadSkin)
@@ -690,6 +697,7 @@ local function LoadSecondarySkin()
 	ChallengesFrame.WeeklyBest.Child.Star:SetPoint("TOPLEFT", 54, -27)
 	ChallengesFrame.WeeklyBest.Child.Label:ClearAllPoints()
 	ChallengesFrame.WeeklyBest.Child.Label:Point("TOPLEFT", ChallengesFrame.WeeklyBest.Child.Star, "TOPRIGHT", -16, 1)
+	ChallengesFrame.GuildBest:SetFrameLevel(ChallengesFrame.GuildBest:GetFrameLevel()+3)
 	ChallengesFrame.GuildBest:StripTextures()
 	ChallengesFrame.GuildBest:CreateBackdrop("Transparent")
 	ChallengesFrame.GuildBest.Line:Hide()

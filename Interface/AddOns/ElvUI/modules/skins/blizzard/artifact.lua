@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
 --Cache global variables
@@ -38,6 +38,15 @@ local function LoadSkin()
 	ArtifactRelicForgeFrame.PreviewRelicFrame:StripTextures()
 	ArtifactRelicForgeFrame.PreviewRelicCover:StripTextures()
 	S:HandleCloseButton(_G["ArtifactRelicForgeFrameCloseButton"])
+
+	--Tutorial
+	S:HandleCloseButton(ArtifactFrame.KnowledgeLevelHelpBox.CloseButton)
+	S:HandleCloseButton(ArtifactFrame.PerksTab.RelicTalentAlert.CloseButton)
+	S:HandleCloseButton(ArtifactFrame.AppearanceTabHelpBox.CloseButton)
+
+	ArtifactRelicForgeFrame.TutorialFrame.GlowBox:StripTextures()
+	ArtifactRelicForgeFrame.TutorialFrame.GlowBox:CreateBackdrop("Transparent")
+	S:HandleButton(ArtifactRelicForgeFrame.TutorialFrame.GlowBox.Button)
 end
 
 S:AddCallbackForAddon("Blizzard_ArtifactUI", "Artifact", LoadSkin)

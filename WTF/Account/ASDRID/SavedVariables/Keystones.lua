@@ -1,44 +1,54 @@
 
 keystonesDB = {
 	["Donch"] = {
-		["Krixidk"] = {
+		["Krixiqt"] = {
 			["charLvl"] = 110,
 			["realm"] = "Ravencrest",
 			["guild"] = "Delusional",
 			["faction"] = "Alliance",
-			["class"] = "DEATHKNIGHT",
-			["level"] = 24,
+			["class"] = "PALADIN",
+			["level"] = 17,
 			["weeklyBest"] = 17,
-			["dungeonID"] = 197,
+			["dungeonID"] = 198,
 		},
-		["Krixidh"] = {
+		["Krixidk"] = {
+			["charLvl"] = 110,
+			["dungeonID"] = 200,
+			["guild"] = "Delusional",
+			["faction"] = "Alliance",
+			["weeklyBest"] = 0,
+			["level"] = 23,
+			["class"] = "DEATHKNIGHT",
+			["realm"] = "Ravencrest",
+		},
+		["Zuriz"] = {
 			["charLvl"] = 110,
 			["dungeonID"] = 0,
 			["guild"] = "Hoonigans",
 			["faction"] = "Alliance",
 			["weeklyBest"] = 0,
-			["class"] = "DEMONHUNTER",
 			["level"] = 0,
+			["class"] = "SHAMAN",
 			["realm"] = "Grim Batol",
 		},
-		["Krixikin"] = {
+		["Krixidh"] = {
 			["charLvl"] = 110,
-			["dungeonID"] = 208,
+			["dungeonID"] = 199,
 			["guild"] = "Hoonigans",
 			["faction"] = "Alliance",
-			["weeklyBest"] = 15,
-			["class"] = "DRUID",
-			["level"] = 15,
+			["weeklyBest"] = 0,
+			["level"] = 19,
+			["class"] = "DEMONHUNTER",
 			["realm"] = "Grim Batol",
 		},
-		["Krixi"] = {
+		["Kriximonk"] = {
 			["charLvl"] = 110,
-			["dungeonID"] = 198,
+			["dungeonID"] = 239,
 			["guild"] = "Hoonigans",
 			["faction"] = "Alliance",
-			["weeklyBest"] = 15,
-			["class"] = "PALADIN",
+			["weeklyBest"] = 0,
 			["level"] = 15,
+			["class"] = "MONK",
 			["realm"] = "Grim Batol",
 		},
 		["Zetiz"] = {
@@ -47,18 +57,28 @@ keystonesDB = {
 			["guild"] = "Hoonigans",
 			["faction"] = "Alliance",
 			["weeklyBest"] = 0,
-			["class"] = "ROGUE",
 			["level"] = 0,
+			["class"] = "ROGUE",
 			["realm"] = "Grim Batol",
 		},
-		["Donch"] = {
+		["Krixi"] = {
 			["charLvl"] = 110,
-			["dungeonID"] = 0,
+			["dungeonID"] = 198,
+			["guild"] = "Hoonigans",
+			["faction"] = "Alliance",
+			["weeklyBest"] = 16,
+			["level"] = 17,
+			["class"] = "PALADIN",
+			["realm"] = "Grim Batol",
+		},
+		["Krixikin"] = {
+			["charLvl"] = 110,
+			["dungeonID"] = 239,
 			["guild"] = "Hoonigans",
 			["faction"] = "Alliance",
 			["weeklyBest"] = 0,
-			["class"] = "MAGE",
-			["level"] = 0,
+			["level"] = 14,
+			["class"] = "DRUID",
 			["realm"] = "Grim Batol",
 		},
 	},
@@ -72,16 +92,16 @@ keystonesConfig = {
 	["longTooltip"] = false,
 	["version"] = "1.3",
 	["maxRewardLevel"] = 10,
+	["announceNewToParty"] = true,
 	["displayNewKeyOf"] = "PARTY",
-	["nextReset"] = 1531292400,
 	["guiOptions"] = {
+		["keepAccsTogether"] = false,
+		["showOfflineAccs"] = true,
+		["showCharsWithoutKey"] = true,
+		["showOfflineChars"] = true,
 		["colorizeNames"] = false,
 		["dungeonBlacklist"] = {
 		},
-		["showCharsWithoutKey"] = true,
-		["showOfflineChars"] = true,
-		["keepAccsTogether"] = false,
-		["showOfflineAccs"] = true,
 		["headers"] = {
 			"Character", -- [1]
 			"Best", -- [2]
@@ -89,5 +109,5 @@ keystonesConfig = {
 			"Level", -- [4]
 		},
 	},
-	["announceNewToParty"] = true,
+	["nextReset"] = 1531897200,
 }

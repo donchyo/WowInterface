@@ -200,7 +200,7 @@ BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 BigWigs_Nighthold: enabled
 Broker_Currency: disabled
-BulkBuy: enabled
+BulkBuy: disabled
 ChocolateBar: enabled
 ChocolateBar_Options: enabled
 ColorPickerPlus: enabled
@@ -307,9 +307,9 @@ XLoot_Master: disabled
 XLoot_Monitor: disabled
 SatchelScanner: disabled
 TradeSkillMaster_ItemTracker: disabled
-ElvUI_Config: disabled
+ElvUI_Config: enabled
 ElvUI_Skullflower: disabled
-ElvUI: disabled
+ElvUI: enabled
 infBGMiniMapSkinner: disabled
 infBinds: enabled
 infBlackBarKiller: enabled
@@ -336,7 +336,7 @@ iTargetingFrames: disabled
 vexrunes: disabled
 Prat-3.0_Libraries: enabled
 TidyPlates_Threat: enabled
-ElvUI_SLE: disabled
+ElvUI_SLE: enabled
 DailyGlobalCheck: disabled
 Dominos_Quest: disabled
 ConsLegion: disabled
@@ -350,7 +350,7 @@ BetterIconSelector-KeywordData: disabled
 Details_RaidInfo-TrialOfValor: disabled
 Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-EmeraldNightmare: disabled
-MythicPlusProgress: enabled
+MythicPlusProgress: disabled
 GottaGoFast: disabled
 GottaGoFastHistory: disabled
 BigWigs_Voice_Overwatch: disabled
@@ -404,3 +404,5 @@ rObjectiveTracker: disabled
 rLib: disabled
 BrewmasterTools: disabled
 OPie: disabled
+BigWigs_Uldir: enabled
+Reflux: disabled

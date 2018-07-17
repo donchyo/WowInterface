@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
 --Cache global variables
@@ -29,7 +29,7 @@ end
 local function GetHPS(self)
 	local hps
 	if healTotal == 0 or combatTime == 0 then
-		hps = "0.0"
+		hps = 0
 	else
 		hps = healTotal / combatTime
 	end

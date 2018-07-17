@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
 --Cache global variables
@@ -16,22 +16,24 @@ local function LoadSkin()
 	S:HandleCloseButton(ContributionCollectionFrame.CloseButton)
 	ContributionCollectionFrame.CloseButton.CloseButtonBackground:SetAlpha(0)
 
-	--Reward Tooltip
-	ContributionBuffTooltip:StripTextures()
-	ContributionBuffTooltip:SetTemplate("Transparent")
-	ContributionBuffTooltip:CreateBackdrop()
-	ContributionBuffTooltip:StyleButton()
-	ContributionBuffTooltip.Border:SetAlpha(0)
-	ContributionBuffTooltip.Icon:SetTexCoord(unpack(E.TexCoords))
-	ContributionBuffTooltip.backdrop:SetOutside(ContributionBuffTooltip.Icon)
+	if E.private.skins.blizzard.tooltip then
+		--Reward Tooltip
+		ContributionBuffTooltip:StripTextures()
+		ContributionBuffTooltip:SetTemplate("Transparent")
+		ContributionBuffTooltip:CreateBackdrop()
+		ContributionBuffTooltip:StyleButton()
+		ContributionBuffTooltip.Border:SetAlpha(0)
+		ContributionBuffTooltip.Icon:SetTexCoord(unpack(E.TexCoords))
+		ContributionBuffTooltip.backdrop:SetOutside(ContributionBuffTooltip.Icon)
 
-	--Contribution Tooltip
-	ContributionTooltip:StripTextures()
-	ContributionTooltip:CreateBackdrop("Transparent")
-	ContributionTooltip.ItemTooltip.IconBorder:SetAlpha(0)
-	ContributionTooltip.ItemTooltip.Icon:SetTexCoord(unpack(E.TexCoords))
-	ContributionTooltip.ItemTooltip:CreateBackdrop()
-	ContributionTooltip.ItemTooltip.backdrop:SetOutside(ContributionTooltip.ItemTooltip.Icon)
+		--Contribution Tooltip
+		ContributionTooltip:StripTextures()
+		ContributionTooltip:CreateBackdrop("Transparent")
+		ContributionTooltip.ItemTooltip.IconBorder:SetAlpha(0)
+		ContributionTooltip.ItemTooltip.Icon:SetTexCoord(unpack(E.TexCoords))
+		ContributionTooltip.ItemTooltip:CreateBackdrop()
+		ContributionTooltip.ItemTooltip.backdrop:SetOutside(ContributionTooltip.ItemTooltip.Icon)
+	end
 
 	hooksecurefunc(ContributionMixin, "SetupContributeButton", function(self)
 		-- Skin the Contribute Buttons
@@ -58,6 +60,7 @@ local function LoadSkin()
 			reward:CreateBackdrop()
 			reward:StyleButton()
 			reward.Border:SetAlpha(0)
+			reward.Icon:SetDrawLayer("OVERLAY")
 			reward.Icon:SetTexCoord(unpack(E.TexCoords))
 			reward.backdrop:SetOutside(reward.Icon)
 			reward.isSkinned = true

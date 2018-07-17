@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
 --Cache global variables
@@ -206,7 +206,7 @@ local function LoadSkin()
 	S:HandleButton(FriendsFrameFriendsScrollFrame.PendingInvitesHeaderButton)
 	local function SkinFriendRequest(frame)
 		if frame.isSkinned then return; end
-		S:HandleButton(frame.DeclineButton)
+		S:HandleButton(frame.DeclineButton, nil, true)
 		S:HandleButton(frame.AcceptButton)
 		frame.isSkinned = true
 	end
@@ -315,6 +315,15 @@ local function LoadSkin()
 	RecruitAFriendNoteFrame:StripTextures()
 	S:HandleEditBox(RecruitAFriendNoteFrame)
 
+	RecruitAFriendSentFrame:StripTextures()
+	RecruitAFriendSentFrame:SetTemplate("Transparent")
+	S:HandleCloseButton(RecruitAFriendSentFrameCloseButton)
+	S:HandleButton(RecruitAFriendSentFrame.OKButton)
+	hooksecurefunc("RecruitAFriend_Send", function()
+		RecruitAFriendSentFrame:ClearAllPoints()
+		RecruitAFriendSentFrame:Point("CENTER", E.UIParent, "CENTER", 0, 100)
+	end)
+
 	--Quick join
 	S:HandleScrollBar(QuickJoinScrollFrameScrollBar, 5)
 	S:HandleButton(QuickJoinFrame.JoinQueueButton)
@@ -345,6 +354,9 @@ local function LoadSkin()
 		icon:Point("RIGHT", button, "RIGHT", -24, 0)
 		icon.SetPoint = E.noop
 	end
+
+	--Tutorial
+	S:HandleCloseButton(FriendsTabHeader.FriendsFrameQuickJoinHelpTip.CloseButton)
 end
 
 S:AddCallback("Friends", LoadSkin)

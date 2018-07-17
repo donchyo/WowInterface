@@ -6,10 +6,11 @@ local DT = E:GetModule('DataTexts')
 local pairs = pairs
 local join = string.join
 --WoW API / Variables
-local IsLoggedIn = IsLoggedIn
-local GetMoney = GetMoney
-local IsShiftKeyDown = IsShiftKeyDown
 local GetBackpackCurrencyInfo = GetBackpackCurrencyInfo
+local GetMoney = GetMoney
+local IsControlKeyDown = IsControlKeyDown
+local IsLoggedIn = IsLoggedIn
+local IsShiftKeyDown = IsShiftKeyDown
 
 --Global variables that we don't cache, list them here for mikk's FindGlobals script
 -- GLOBALS: ElvDB, ToggleAllBags
@@ -19,6 +20,7 @@ local CURRENCY = CURRENCY
 
 local Profit	= 0
 local Spent		= 0
+local resetCountersFormatter = join("", "|cffaaaaaa", L["Reset Counters: Hold Shift + Left Click"], "|r")
 local resetInfoFormatter = join("", "|cffaaaaaa", L["Reset Data: Hold Shift + Right Click"], "|r")
 
 local function OnEvent(self)
@@ -44,10 +46,16 @@ local function OnEvent(self)
 end
 
 local function Click(self, btn)
-	if btn == "RightButton" and IsShiftKeyDown() then
-		ElvDB.gold = nil;
-		OnEvent(self)
-		DT.tooltip:Hide();
+	if btn == "RightButton" then
+		if IsShiftKeyDown() then
+			ElvDB.gold = nil;
+			OnEvent(self)
+			DT.tooltip:Hide();
+		elseif IsControlKeyDown() then
+			Profit = 0
+			Spent = 0
+			DT.tooltip:Hide();
+		end
 	else
 		ToggleAllBags()
 	end
@@ -92,6 +100,7 @@ local function OnEnter(self)
 	end
 
 	DT.tooltip:AddLine' '
+	DT.tooltip:AddLine(resetCountersFormatter)
 	DT.tooltip:AddLine(resetInfoFormatter)
 
 	DT.tooltip:Show()

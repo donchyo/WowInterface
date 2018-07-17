@@ -7,38 +7,34 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 514,
 					["tipo"] = 2,
+					["combatId"] = 514,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.006057,
-							["spec"] = 71,
 							["damage_from"] = {
-								["[*] Creeping Shadows"] = true,
 								["Corrupting Shadows"] = true,
+								["[*] Creeping Shadows"] = true,
 							},
 							["targets"] = {
-								["Darkness Within"] = 40627483,
 								["Corrupting Shadows"] = 94687369,
+								["Darkness Within"] = 40627483,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["end_time"] = 1530206785,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 135314852.006057,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 135314852.006057,
-							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
-							["nome"] = "Kroxi",
+							["dps_started"] = false,
+							["end_time"] = 1530206785,
+							["damage_taken"] = 21672183.006057,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 11,
@@ -47,8 +43,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 191914,
 										["targets"] = {
-											["Darkness Within"] = 1140781,
 											["Corrupting Shadows"] = 7381945,
+											["Darkness Within"] = 1140781,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 5310538,
@@ -59,16 +55,16 @@ _detalhes_database = {
 										["c_max"] = 392328,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 199974,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 342691,
 										["n_amt"] = 44,
-										["r_amt"] = 0,
-										["c_min"] = 199974,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									}, -- [1]
 									[34428] = {
 										["c_amt"] = 0,
@@ -88,16 +84,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 34428,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[199658] = {
 										["c_amt"] = 2,
@@ -117,16 +113,16 @@ _detalhes_database = {
 										["c_max"] = 194867,
 										["id"] = 199658,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 179582,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 179582,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[224253] = {
 										["c_amt"] = 1,
@@ -146,16 +142,16 @@ _detalhes_database = {
 										["c_max"] = 1455345,
 										["id"] = 224253,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 1455345,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 1455345,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[167105] = {
 										["c_amt"] = 6,
@@ -164,8 +160,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 680202,
 										["targets"] = {
-											["Darkness Within"] = 1371374,
 											["Corrupting Shadows"] = 9328027,
+											["Darkness Within"] = 1371374,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 4898743,
@@ -176,16 +172,16 @@ _detalhes_database = {
 										["c_max"] = 1384666,
 										["id"] = 167105,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 598839,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 258168,
 										["n_amt"] = 12,
-										["r_amt"] = 0,
-										["c_min"] = 598839,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[50622] = {
 										["c_amt"] = 8,
@@ -205,16 +201,16 @@ _detalhes_database = {
 										["c_max"] = 359288,
 										["id"] = 50622,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 316652,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 316652,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[126664] = {
 										["c_amt"] = 1,
@@ -234,16 +230,16 @@ _detalhes_database = {
 										["c_max"] = 101513,
 										["id"] = 126664,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 101513,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 101513,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[57755] = {
 										["c_amt"] = 1,
@@ -263,16 +259,16 @@ _detalhes_database = {
 										["c_max"] = 57144,
 										["id"] = 57755,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 57144,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 57144,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[203178] = {
 										["c_amt"] = 8,
@@ -281,8 +277,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 286123,
 										["targets"] = {
-											["Darkness Within"] = 1484117,
 											["Corrupting Shadows"] = 3199180,
+											["Darkness Within"] = 1484117,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 2114789,
@@ -293,16 +289,16 @@ _detalhes_database = {
 										["c_max"] = 441119,
 										["id"] = 203178,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 203884,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 373533,
 										["n_amt"] = 14,
-										["r_amt"] = 0,
-										["c_min"] = 203884,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[209700] = {
 										["c_amt"] = 3,
@@ -322,16 +318,16 @@ _detalhes_database = {
 										["c_max"] = 466869,
 										["id"] = 209700,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["c_min"] = 466868,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 466868,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
 									},
 									[199850] = {
 										["c_amt"] = 6,
@@ -351,16 +347,16 @@ _detalhes_database = {
 										["c_max"] = 195513,
 										["id"] = 199850,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 181067,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 181067,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[845] = {
 										["c_amt"] = 3,
@@ -380,16 +376,16 @@ _detalhes_database = {
 										["c_max"] = 252970,
 										["id"] = 845,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 238850,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 238850,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[209569] = {
 										["c_amt"] = 0,
@@ -398,8 +394,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 374840,
 										["targets"] = {
-											["Darkness Within"] = 951996,
 											["Corrupting Shadows"] = 1374246,
+											["Darkness Within"] = 951996,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 2326242,
@@ -410,46 +406,46 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 209569,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
 									},
-									[252907] = {
+									[12294] = {
 										["c_amt"] = 22,
-										["b_amt"] = 0,
-										["c_dmg"] = 3228619,
+										["b_amt"] = 1,
+										["c_dmg"] = 64066265,
 										["g_amt"] = 0,
-										["n_max"] = 127259,
+										["n_max"] = 1706492,
 										["targets"] = {
-											["Darkness Within"] = 320874,
-											["Corrupting Shadows"] = 6531405,
+											["Corrupting Shadows"] = 57879680,
+											["Darkness Within"] = 17609775,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 3623660,
-										["n_min"] = 713,
+										["n_dmg"] = 11423190,
+										["n_min"] = 452631,
 										["g_dmg"] = 0,
-										["counter"] = 64,
-										["total"] = 6852279,
-										["c_max"] = 254518,
-										["id"] = 252907,
+										["counter"] = 34,
+										["total"] = 75489455,
+										["c_max"] = 5457337,
+										["id"] = 12294,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["c_min"] = 867524,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 42,
-										["r_amt"] = 0,
-										["c_min"] = 1025,
+										["b_dmg"] = 670125,
+										["n_amt"] = 12,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[209577] = {
 										["c_amt"] = 2,
@@ -458,8 +454,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 816534,
 										["targets"] = {
-											["Darkness Within"] = 2055898,
 											["Corrupting Shadows"] = 816534,
+											["Darkness Within"] = 2055898,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 1237650,
@@ -470,16 +466,46 @@ _detalhes_database = {
 										["c_max"] = 833873,
 										["id"] = 209577,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["c_min"] = 800909,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									[163201] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 7718898,
+										["g_amt"] = 0,
+										["n_max"] = 1153802,
+										["targets"] = {
+											["Darkness Within"] = 3771331,
+											["Corrupting Shadows"] = 7753882,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3806315,
+										["n_min"] = 744041,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 11525213,
+										["c_max"] = 2366318,
+										["id"] = 163201,
+										["r_dmg"] = 0,
+										["c_min"] = 1581249,
 										["r_amt"] = 0,
-										["c_min"] = 800909,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									[236027] = {
 										["c_amt"] = 0,
@@ -497,107 +523,81 @@ _detalhes_database = {
 										["counter"] = 2,
 										["total"] = 0,
 										["c_max"] = 0,
-										["IMMUNE"] = 2,
+										["c_min"] = 0,
 										["id"] = 236027,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["spellschool"] = 1,
+										["IMMUNE"] = 2,
 									},
-									[163201] = {
-										["c_amt"] = 4,
+									[252907] = {
+										["c_amt"] = 22,
 										["b_amt"] = 0,
-										["c_dmg"] = 7718898,
+										["c_dmg"] = 3228619,
 										["g_amt"] = 0,
-										["n_max"] = 1153802,
+										["n_max"] = 127259,
 										["targets"] = {
-											["Corrupting Shadows"] = 7753882,
-											["Darkness Within"] = 3771331,
+											["Corrupting Shadows"] = 6531405,
+											["Darkness Within"] = 320874,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 3806315,
-										["n_min"] = 744041,
+										["n_dmg"] = 3623660,
+										["n_min"] = 713,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 11525213,
-										["c_max"] = 2366318,
-										["id"] = 163201,
+										["counter"] = 64,
+										["total"] = 6852279,
+										["c_max"] = 254518,
+										["id"] = 252907,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 1025,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 1581249,
-									},
-									[12294] = {
-										["c_amt"] = 22,
-										["b_amt"] = 1,
-										["c_dmg"] = 64066265,
-										["g_amt"] = 0,
-										["n_max"] = 1706492,
-										["targets"] = {
-											["Darkness Within"] = 17609775,
-											["Corrupting Shadows"] = 57879680,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 11423190,
-										["n_min"] = 452631,
-										["g_dmg"] = 0,
-										["counter"] = 34,
-										["total"] = 75489455,
-										["c_max"] = 5457337,
-										["id"] = 12294,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 42,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 670125,
-										["n_amt"] = 12,
-										["r_amt"] = 0,
-										["c_min"] = 867524,
+										["spellschool"] = 32,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["nome"] = "Kroxi",
+							["spec"] = 71,
 							["grupo"] = true,
-							["serial"] = "Player-1303-03966669",
 							["last_dps"] = 867391.777067445,
-							["custom"] = 0,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
 							["last_event"] = 1530206783,
-							["damage_taken"] = 21672183.006057,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1530206629,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-1303-03966669",
+							["total"] = 135314852.006057,
 						}, -- [1]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 514,
 					["tipo"] = 3,
+					["combatId"] = 514,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Kroxi"] = 21525038,
+							["healing_from"] = {
+								["Kroxi"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "WARRIOR",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 21525038.00626,
 							["total_without_pet"] = 19635194.00626,
 							["total"] = 19635194.00626,
@@ -617,12 +617,9 @@ _detalhes_database = {
 							["healing_taken"] = 19635194.00626,
 							["fight_component"] = true,
 							["end_time"] = 1530206785,
-							["healing_from"] = {
-								["Kroxi"] = true,
-							},
+							["last_event"] = 1530206783,
 							["nome"] = "Kroxi",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[208909] = {
 										["c_amt"] = 0,
@@ -644,12 +641,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 8093642,
-										["n_amt"] = 95,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 95,
+										["n_curado"] = 8093642,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[240432] = {
@@ -672,12 +669,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 3386055,
 										["m_crit"] = 0,
-										["c_min"] = 1487588,
-										["m_amt"] = 0,
-										["n_curado"] = 3110391,
-										["n_amt"] = 9,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 1487588,
+										["totaldenied"] = 0,
+										["n_amt"] = 9,
+										["n_curado"] = 3110391,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[209933] = {
@@ -700,12 +697,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3257238,
-										["n_amt"] = 34,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 34,
+										["n_curado"] = 3257238,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[118779] = {
@@ -727,114 +724,116 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 1787868,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 1787868,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1530206656,
+							["targets_overheal"] = {
+								["Kroxi"] = 21525038,
+							},
+							["spec"] = 71,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["spec"] = 71,
 							["totaldenied"] = 0.00626,
+							["start_time"] = 1530206656,
 							["delay"] = 1530206716,
-							["last_event"] = 1530206783,
+							["classe"] = "WARRIOR",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 514,
 					["tipo"] = 7,
+					["combatId"] = 514,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 514,
 					["tipo"] = 9,
+					["combatId"] = 514,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[115804] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 25,
 										["id"] = 115804,
+										["uptime"] = 132,
 										["targets"] = {
 										},
-										["uptime"] = 132,
 										["appliedamt"] = 9,
-										["refreshamt"] = 25,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[209569] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 10,
 										["id"] = 209569,
+										["uptime"] = 14,
 										["targets"] = {
 										},
-										["uptime"] = 14,
 										["appliedamt"] = 4,
-										["refreshamt"] = 10,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[208086] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 15,
 										["id"] = 208086,
+										["uptime"] = 140,
 										["targets"] = {
 										},
-										["uptime"] = 140,
 										["appliedamt"] = 7,
-										["refreshamt"] = 15,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[105771] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
-										["id"] = 105771,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 2,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[242188] = {
-										["activedamt"] = 0,
-										["id"] = 242188,
+										["id"] = 105771,
+										["uptime"] = 2,
 										["targets"] = {
 										},
-										["uptime"] = 10,
-										["appliedamt"] = 4,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 2,
 									},
 									[252907] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 5,
 										["id"] = 252907,
+										["uptime"] = 139,
 										["targets"] = {
 										},
-										["uptime"] = 139,
 										["appliedamt"] = 6,
-										["refreshamt"] = 5,
-										["actived"] = false,
+									},
+									[242188] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 2,
+										["id"] = 242188,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 824,
 							["cc_done_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[105771] = {
 										["id"] = 105771,
@@ -844,232 +843,233 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[186401] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 186401,
+										["uptime"] = 156,
 										["targets"] = {
 										},
-										["uptime"] = 156,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[228399] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 5,
+										["refreshamt"] = 4,
 										["id"] = 228399,
+										["uptime"] = 70,
 										["targets"] = {
 										},
-										["uptime"] = 70,
 										["appliedamt"] = 5,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[190025] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 190025,
+										["uptime"] = 21,
 										["targets"] = {
 										},
-										["uptime"] = 21,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[207982] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 23,
+										["refreshamt"] = 24,
 										["id"] = 207982,
+										["uptime"] = 86,
 										["targets"] = {
 										},
-										["uptime"] = 86,
 										["appliedamt"] = 23,
-										["refreshamt"] = 24,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[209567] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 2,
+										["refreshamt"] = 0,
 										["id"] = 209567,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[178207] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 178207,
+										["uptime"] = 39,
 										["targets"] = {
 										},
-										["uptime"] = 39,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[229206] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 229206,
+										["uptime"] = 47,
 										["targets"] = {
 										},
-										["uptime"] = 47,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[107574] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 2,
+										["refreshamt"] = 0,
 										["id"] = 107574,
+										["uptime"] = 41,
 										["targets"] = {
 										},
-										["uptime"] = 41,
 										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[242583] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 5,
+										["refreshamt"] = 2,
 										["id"] = 242583,
+										["uptime"] = 61,
 										["targets"] = {
 										},
-										["uptime"] = 61,
 										["appliedamt"] = 5,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[109128] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 109128,
-										["targets"] = {
-										},
 										["uptime"] = 0,
+										["targets"] = {
+										},
 										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[32216] = {
-										["activedamt"] = 3,
-										["id"] = 32216,
-										["targets"] = {
-										},
-										["uptime"] = 27,
-										["appliedamt"] = 3,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[199854] = {
-										["activedamt"] = 15,
-										["id"] = 199854,
-										["targets"] = {
-										},
-										["uptime"] = 29,
-										["appliedamt"] = 15,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[118779] = {
-										["activedamt"] = 1,
-										["id"] = 118779,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[248625] = {
-										["activedamt"] = 19,
-										["id"] = 248625,
-										["targets"] = {
-										},
-										["uptime"] = 41,
-										["appliedamt"] = 19,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[188923] = {
-										["activedamt"] = 1,
-										["id"] = 188923,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[202164] = {
-										["activedamt"] = 2,
-										["id"] = 202164,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[209484] = {
-										["activedamt"] = 2,
-										["id"] = 209484,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1719] = {
-										["activedamt"] = 2,
-										["id"] = 1719,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227723] = {
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["targets"] = {
-										},
-										["uptime"] = 156,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[227847] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 227847,
+										["uptime"] = 4,
 										["targets"] = {
 										},
-										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[199854] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 15,
+										["refreshamt"] = 4,
+										["id"] = 199854,
+										["uptime"] = 29,
+										["targets"] = {
+										},
+										["appliedamt"] = 15,
+									},
+									[118779] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 118779,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[248625] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 19,
+										["refreshamt"] = 1,
+										["id"] = 248625,
+										["uptime"] = 41,
+										["targets"] = {
+										},
+										["appliedamt"] = 19,
+									},
+									[188923] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 2,
+										["id"] = 188923,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[32216] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 3,
+										["refreshamt"] = 4,
+										["id"] = 32216,
+										["uptime"] = 27,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[209484] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 209484,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[227723] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 227723,
+										["uptime"] = 156,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[1719] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 1719,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[202164] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 202164,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 437,
@@ -1091,30 +1091,30 @@ _detalhes_database = {
 								[12294] = 29,
 								[227847] = 1,
 								[845] = 1,
-								[229206] = 1,
-								[100] = 1,
+								[163201] = 8,
+								[1719] = 2,
 								[209577] = 2,
 								[1680] = 2,
-								[1719] = 2,
-								[163201] = 8,
+								[100] = 1,
+								[229206] = 1,
 							},
-							["cc_done_targets"] = {
-								["Corrupting Shadows"] = 1,
-							},
+							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
 							["last_event"] = 1530206785,
-							["nome"] = "Kroxi",
 							["pets"] = {
 							},
+							["nome"] = "Kroxi",
 							["serial"] = "Player-1303-03966669",
-							["tipo"] = 4,
+							["cc_done_targets"] = {
+								["Corrupting Shadows"] = 1,
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 514,
 					["tipo"] = 2,
+					["combatId"] = 514,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1135,21 +1135,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1161,6 +1161,11 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Kroxi"] = 135314852.006057,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1170,18 +1175,15 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Kroxi"] = 135314852.006057,
-						}, -- [1]
-					},
 				},
 				["end_time"] = 798486.228,
 				["combat_id"] = 514,
-				["instance_type"] = "scenario",
+				["TimeData"] = {
+				},
+				["hasSaved"] = true,
 				["frags"] = {
-					["Corrupting Shadows"] = 1,
 					["Darkness Within"] = 6,
+					["Corrupting Shadows"] = 1,
 				},
 				["data_fim"] = "19:26:26",
 				["data_inicio"] = "19:23:50",
@@ -1194,31 +1196,28 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["start_time"] = 798330.226,
 				["contra"] = "Corrupting Shadows",
-				["TimeData"] = {
-				},
+				["instance_type"] = "scenario",
 			}, -- [1]
 		},
 	},
-	["combat_counter"] = 11695,
-	["character_data"] = {
-		["logons"] = 1648,
-	},
+	["last_version"] = "v7.3.5.5572",
+	["force_font_outline"] = "",
 	["tabela_instancias"] = {
 	},
 	["local_instances_config"] = {
@@ -1336,17 +1335,10 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
+	["last_instance_time"] = 1529615555,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "28",
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
+	["last_day"] = "08",
+	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -1354,10 +1346,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
+			["dps"] = 0,
 			["author"] = "Details! Team",
 			["level"] = 1,
-			["dps"] = 0,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -1402,10 +1394,10 @@ _detalhes_database = {
 			},
 			["hide_on_combat"] = false,
 			["opened"] = 0,
-			["author"] = "Details! Team",
+			["window_scale"] = 1,
 			["show_icon"] = 5,
 			["max_emote_segments"] = 3,
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -1432,11 +1424,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["scale"] = 1,
-			["row_height"] = 20,
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["point"] = "TOP",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -1446,8 +1438,13 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["font_size"] = 10,
-			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -1457,27 +1454,22 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["size"] = 32,
-				["update_speed"] = 0.0160000007599592,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.0160000007599592,
+				["size"] = 32,
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["main_frame_locked"] = false,
-			["arrow_anchor_y"] = 0,
+			["y"] = -41.5555419921875,
+			["point"] = "TOP",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["auto_open"] = false,
 			["rightclick_closed"] = false,
+			["auto_open"] = false,
 			["auto_close"] = true,
-			["author"] = "Details! Team",
 			["hide_on_combat"] = true,
+			["author"] = "Details! Team",
 			["deaths_table"] = {
 			},
 			["shown_time"] = 30,
@@ -1493,43 +1485,28 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 			["realm_history"] = {
 			},
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
 		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["enabled"] = true,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["author"] = "Details! Team",
-			["useclasscolors"] = false,
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["animate"] = false,
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -1539,97 +1516,53 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["animate"] = false,
+			["showamount"] = false,
+			["useplayercolor"] = false,
+			["useclasscolors"] = false,
+			["author"] = "Details! Team",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["enabled"] = true,
+		},
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 3,
 	},
 	["last_realversion"] = 130,
-	["cached_talents"] = {
-		["Player-1390-09A33F64"] = {
-			22104, -- [1]
-			22101, -- [2]
-			19995, -- [3]
-			22917, -- [4]
-			19304, -- [5]
-			22091, -- [6]
-			22097, -- [7]
+	["benchmark_db"] = {
+		["frame"] = {
 		},
+	},
+	["cached_talents"] = {
 		["Player-1303-03966669"] = {
 			19138, -- [1]
-			22800, -- [2]
-			22409, -- [3]
+			22401, -- [2]
+			15760, -- [3]
 			22627, -- [4]
-			22407, -- [5]
-			22371, -- [6]
-			22399, -- [7]
-		},
-		["Player-1612-0544CAE2"] = {
-			22099, -- [1]
-			22103, -- [2]
-			19995, -- [3]
-			20185, -- [4]
-			19304, -- [5]
-			22105, -- [6]
-			20174, -- [7]
-		},
-		["Player-580-03D1CD59"] = {
-			22407, -- [1]
-			22380, -- [2]
-			15757, -- [3]
-			22397, -- [4]
-			22800, -- [5]
-			22371, -- [6]
-			22625, -- [7]
-		},
-		["Player-1315-099FA2E9"] = {
-			22316, -- [1]
-			21751, -- [2]
-			22487, -- [3]
-			21637, -- [4]
-			22311, -- [5]
-			21720, -- [6]
-			22312, -- [7]
-		},
-		["Player-1121-075F027A"] = {
-			22799, -- [1]
-			22416, -- [2]
-			22494, -- [3]
-			21900, -- [4]
-			21866, -- [5]
-			22767, -- [6]
-			21864, -- [7]
-		},
-		["Player-1378-083E8CFB"] = {
-			22344, -- [1]
-			22122, -- [2]
-			22332, -- [3]
-			22115, -- [4]
-			19241, -- [5]
-			22133, -- [6]
-			22339, -- [7]
+			21204, -- [5]
+			22629, -- [6]
+			22392, -- [7]
 		},
 	},
-	["ignore_nicktag"] = false,
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1530893581,
-	},
-	["last_version"] = "v7.3.5.5572",
+	["combat_counter"] = 11696,
 	["combat_id"] = 514,
 	["savedStyles"] = {
 	},
-	["last_instance_time"] = 1529615555,
-	["last_encounter"] = "Kil'jaeden",
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
-	},
-	["force_font_outline"] = "",
-	["SoloTablesSaved"] = {
-		["Mode"] = 3,
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Cathedral of Eternal Night",
@@ -1642,10 +1575,24 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1677,
 		["previous_boss_killed_at"] = 1529616955,
 	},
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["character_data"] = {
+		["logons"] = 1649,
+	},
+	["last_encounter"] = "Kil'jaeden",
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1532302887,
+	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -1658,6 +1605,6 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-1303-03966669"] = 71,
+		["Player-1303-03966669"] = 73,
 	},
 }

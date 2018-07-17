@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
 
 --Cache global variables
@@ -160,6 +160,7 @@ function UF:Configure_AuraBars(frame)
 
 		auraBars.maxBars = db.aurabar.maxBars
 		auraBars.forceShow = frame.forceShowAuras
+		auraBars.spacing = ((-frame.BORDER + frame.SPACING*3) + db.aurabar.spacing)
 		auraBars:SetAnchors()
 	else
 		if frame:IsElementEnabled('AuraBars') then

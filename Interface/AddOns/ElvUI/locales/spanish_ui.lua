@@ -38,11 +38,12 @@ L["Purchase Bags"] = "Comprar Bolsas"
 L["Purchase"] = "Comprar"
 L["Reagent Bank"] = "Banco de Componentes"
 L["Reset Position"] = "Reestablecer Posición"
+L["Right Click the bag icon to assign a type of item to this bag."] = true
 L["Show/Hide Reagents"] = "Mostrar/Ocultar Componentes"
 L["Sort Tab"] = "Ordenar Pestaña"
 L["Temporary Move"] = "Movimiento Temporal"
 L["Toggle Bags"] = "Mostrar/Ocultar Bolsas"
-L["Vendor Grays"] = "Vender Objetos Grises"
+L["Vendor / Delete Grays"] = true
 
 --Chat
 L["AFK"] = "Ausente"
@@ -96,6 +97,7 @@ L["Hands"] = "Manos"
 L["Head"] = "Cabeza"
 L["Hold Shift + Right Click:"] = "Mantén Shift + Botón Derecho:"
 L["Home Latency:"] = "Latencia Local:"
+L["Home Protocol:"] = true
 L["HP"] = "Salud"
 L["HPS"] = "VPS"
 L["Legs"] = "Piernas"
@@ -104,10 +106,12 @@ L["Main Hand"] = "Mano Derecha"
 L["Mission(s) Report:"] = "Informe de Misión(es)"
 L["Mitigation By Level: "] = "Mitigación Por Nivel: "
 L["Mobile"] = true
+L["Mov. Speed:"] = STAT_MOVEMENT_SPEED
 L["Naval Mission(s) Report:"] = "Informe de Misión(es) Navales"
 L["No Guild"] = "Sin Hermandad"
 L["Offhand"] = "Mano Izquierda"
 L["Profit:"] = "Ganancia:"
+L["Reset Counters: Hold Shift + Left Click"] = true
 L["Reset Data: Hold Shift + Right Click"] = "Restablecer Datos: Mantén Shift + Clic Derecho"
 L["Saved Raid(s)"] = "Banda(s) Guardada(s)"
 L["Saved Dungeon(s)"] = true
@@ -127,6 +131,7 @@ L["Total Memory:"] = "Memoria Total:"
 L["Total: "] = "Total: "
 L["Unhittable:"] = "Imbatible:"
 L["Waist"] = "Cintura"
+L["World Protocol:"] = true
 L["Wrist"] = "Muñeca"
 L["|cffFFFFFFLeft Click:|r Change Talent Specialization"] = "|cffFFFFFFClick Izquierdo:|r Cambiar Especialización de Talentos"
 L["|cffFFFFFFRight Click:|r Change Loot Specialization"] = "|cffFFFFFFClick Derecho:|r Cambiar Especialización de Botín"
@@ -134,7 +139,6 @@ L["|cffFFFFFFShift + Left Click:|r Show Talent Specialization UI"] = "|cffFFFFFF
 
 --DebugTools
 L["%s: %s tried to call the protected function '%s'."] = "%s: %s intentó llamar a la función protegida '%s'."
-L["No locals to dump"] = "No hay locales para volcar"
 
 --Distributor
 L["%s is attempting to share his filters with you. Would you like to accept the request?"] = "%s quiere compartir sus filtros contigo. ¿Aceptas la petición?"
@@ -319,7 +323,7 @@ L["Confused.. Try Again!"] = "Confundido... ¡Intenta de Nuevo!"
 L["No gray items to delete."] = "No hay objetos grises para eliminar."
 L["The spell '%s' has been added to the Blacklist unitframe aura filter."] = "El hechizo '%s' ha sido añadido a la Lista Negra del filtro de auras del marco de unidad."
 L["This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'."] = "Esta opción causó un punto de fijación en conflicto, donde '%s' estaría adjunto a sí mismo. Por favor comprueba tus puntos de fijación. Opción '%s' a ser fijado a '%s'"
-L["Vendored gray items for:"] = "Objetos grises vendidos por:"
+L["Vendored gray items for: %s"] = "Objetos grises vendidos por: %s"
 L["You don't have enough money to repair."] = "No tienes suficiente dinero para reparaciones."
 L["You must be at a vendor."] = "Debes estar cerca de un vendedor."
 L["Your items have been repaired for: "] = "Tus objetos han sido reparados por:"
@@ -328,15 +332,16 @@ L["|cFFE30000Lua error recieved. You can view the error message when you exit co
 
 --Static Popups
 L["A setting you have changed will change an option for this character only. This setting that you have changed will be uneffected by changing user profiles. Changing this setting requires that you reload your User Interface."] = "La opción que has cambiado se aplicará sólo para este personaje. Esta opción no se verá alterada al cambiar el perfil de usuario. Cambiar esta opción requiere que recargues tu Interfaz de Usuario."
+L["Accepting this will reset the UnitFrame settings for %s. Are you sure?"] = true
 L["Accepting this will reset your Filter Priority lists for all auras on NamePlates. Are you sure?"] = true
 L["Accepting this will reset your Filter Priority lists for all auras on UnitFrames. Are you sure?"] = true
 L["Are you sure you want to apply this font to all ElvUI elements?"] = true
-L["Are you sure you want to delete all your gray items?"] = "¿Estás seguro que quieres eliminar todos tus objetos grises?"
 L["Are you sure you want to disband the group?"] = "¿Estás seguro que quieres deshacer el grupo?"
 L["Are you sure you want to reset all the settings on this profile?"] = "¿Estás seguro que deseas restablecer todos los ajustes de este perfil?"
 L["Are you sure you want to reset every mover back to it's default position?"] = "¿Estás seguro que quieres resetear cada fijador a su posición por defecto?"
 L["Because of the mass confusion caused by the new aura system I've implemented a new step to the installation process. This is optional. If you like how your auras are setup go to the last step and click finished to not be prompted again. If for some reason you are prompted repeatedly please restart your game."] = "Debido a la gran confusión causada por el nuevo sistema de auras he implementado un nuevo paso en el proceso de instalación, esto es opcional. Si quieres conservar la configuración actual de tus auras ve al último paso de la instalación y haz clic en terminar para que este mensaje no vuelva a ser mostrado. Si por alguna razón se vuelve a mostrar por favor reinicia el juego."
 L["Can't buy anymore slots!"] = "¡No puedes comprar más huecos!"
+L["Delete gray items?"] = true
 L["Detected that your ElvUI Config addon is out of date. This may be a result of your Tukui Client being out of date. Please visit our download page and update your Tukui Client, then reinstall ElvUI. Not having your ElvUI Config addon up to date will result in missing options."] = "Se ha detectado que tu addon de ElvUI Config está desactualizado. Ésto puede darse como resultado de que tu cliente Tukui esté desactualizado. Por favor visita nuestra página de descargas y actualiza tu cliente Tukui y entonces reinstala ElvUI. No tener tu addon ElvUI Config actualizado podría resultar en opciones faltantes."
 L["Disable Warning"] = "Deshabilitar Advertencia"
 L["Discard"] = "Descartar"
@@ -345,6 +350,7 @@ L["Do you swear not to post in technical support about something not working wit
 L["ElvUI is five or more revisions out of date. You can download the newest version from www.tukui.org. Get premium membership and have ElvUI automatically updated with the Tukui Client!"] = "ElvUI está cinco o mas revisiones desactualizado. Puedes descargar la versión más nueva de www.tukui.org. ¡Obtén la suscripción premium y ElvUI se actualizará automáticamente con el cliente Tukui!"
 L["ElvUI is out of date. You can download the newest version from www.tukui.org. Get premium membership and have ElvUI automatically updated with the Tukui Client!"] = "ElvUI está desactualizado. Puedes descargar la versión más nueva de www.tukui.org. ¡Obtén la suscripción premium y ElvUI se actualizará automáticamente con el cliente Tukui!"
 L["ElvUI needs to perform database optimizations please be patient."] = "ElvUI necesita realizar optimizaciones de base de datos por favor se paciente."
+L["Error resetting UnitFrame."] = true
 L["Hover your mouse over any actionbutton or spellbook button to bind it. Press the escape key or right click to clear the current actionbutton's keybinding."] = "Pasa tu ratón por encima de un botón de acción o de un botón del libro de hechizos para ligarlo. Pulsa escape o botón derecho para limpiar la asignación actual del botón de acción."
 L["I Swear"] = "Lo Juro"
 L["It appears one of your AddOns have disabled the AddOn Blizzard_CompactRaidFrames. This can cause errors and other issues. The AddOn will now be re-enabled."] = "Parece ser que uno de tus addons ha desactivado el addon Blizzard_CompactRaidFrames. Esto puede causar errores y otros problemas. El addon será ahora reactivado."
