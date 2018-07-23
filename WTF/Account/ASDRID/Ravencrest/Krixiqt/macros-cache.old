@@ -49,13 +49,13 @@ VER 3 0100000000000001 "loh" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]lay on hands
 END
+VER 3 010000000000000E "lotm" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]light of the martyr
+END
 VER 3 0100000000000009 "prism self" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@target] holy prism;
-END
-VER 3 010000000000000E "radiance" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy radiance
 END
 VER 3 0100000000000002 "sac" "INV_MISC_QUESTIONMARK"
 #showtooltip

@@ -1,4 +1,4 @@
-local versionMajor, versionRev, L, ADDON, T, ORI = 3, 92, newproxy(true), ...
+local versionMajor, versionRev, L, ADDON, T, ORI = 3, 93, newproxy(true), ...
 local api, OR_Rings, OR_ModifierLockState, TL, EV, OR_LoadedState = {ext={ActionBook=T.ActionBook},lang=L}, {}, nil, T.L, T.Evie, 1
 local defaultConfig = {ClickActivation=false, IndicationOffsetX=0, IndicationOffsetY=0, RingAtMouse=false, RingScale=1, ClickPriority=true, CenterAction=false, MouseBucket=1, CloseOnRelease=false, NoClose=false, NoCloseOnSlice=false, SliceBinding=false, SliceBindingString="1 2 3 4 5 6 7 8 9 0", SelectedSliceBind="", PrimaryButton="BUTTON4", SecondaryButton="BUTTON5", OpenNestedRingButton="BUTTON3", ScrollNestedRingUpButton="", ScrollNestedRingDownButton="", UseDefaultBindings=true}
 local configRoot, configInstance, activeProfile, PersistentStorageInfo, optionValidators, optionsMeta = {}, nil, nil, {}, {}, {__index=defaultConfig}
@@ -67,6 +67,7 @@ local OR_SecEnv, OR_ActiveRingName, OR_ActiveCollectionID, OR_ActiveSliceCount
 OR_SecCore:SetSize(9001*4, 9001*4)
 OR_SecCore:SetFrameStrata("FULLSCREEN_DIALOG")
 OR_SecCore:RegisterForClicks("AnyUp", "AnyDown")
+OR_SecCore:EnableMouseWheel(true)
 OR_SecCore:Hide()
 OR_SecCore:SetFrameRef("AB", AB:seclib())
 OR_SecCore:SetFrameRef("KR", KR:seclib())
@@ -247,8 +248,8 @@ do -- Click dispatcher
 			if button == "RightButton" or (activeRing and activeRing.ClickPriority and leftActivation and activeRing.bind and b2:match(activeRing.bindMatch)) then button = "close" end
 			if button == "MiddleButton" and ORL_GlobalOptions.OpenNestedRingButton == "BUTTON3" then button = "mwin" end
 
-			if activeRing and down and button:match("^mw[ud]") then
-				return false, owner:Run(ORL_OnWheel, (button:match("^mwup") and 1 or -1) * (button:match("K$") and activeRing.bucket or 1))
+			if activeRing and button:match("^mw[ud]") then
+				return false, down and owner:Run(ORL_OnWheel, (button:match("^mwup") and 1 or -1) * (button:match("K$") and activeRing.bucket or 1))
 			elseif activeRing and not down and ((button == "use") or (button == "close" and leftActivation and fastClick)) then
 				local slice, isFC = control:Run(ORL_GetPureSlice)
 				if button == "close" and not (isFC and slice) then return false end

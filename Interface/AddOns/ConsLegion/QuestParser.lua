@@ -9,41 +9,49 @@ function CL_Parser_Zonecheck()
 	if (CL_SettingsOpen == 1) then
 		return
 	end
-	SetMapToCurrentZone()
+	--SetMapToCurrentZone()
 	local englishFaction, localizedFaction = UnitFactionGroup("player")
-	if (GetCurrentMapAreaID() == 1017) then
-		if (CL_ActiveZoneNr ~= 1017) then
-			CL_ActiveZoneNr = 1017
-			if (englishFaction == "Alliance") then
-				CL_ActiveZone = CL_QuestStep1017A
-				print("ConsLegion: Stormheim - Alliance - Loaded")
-			else
-				CL_ActiveZone = CL_QuestStep1017H
-				print("ConsLegion: Stormheim - Horde - Loaded")
+	local Mapidss = C_Map.GetBestMapForUnit("player")
+	local currentMapId, TOP_MOST = C_Map.GetBestMapForUnit('player'), true
+	Mapidss = MapUtil.GetMapParentInfo(currentMapId, Enum.UIMapType.Continent+1, TOP_MOST)
+	if (Mapidss and Mapidss["mapID"]) then
+		Mapidss = Mapidss["mapID"]
+	else
+		Mapidss = C_Map.GetBestMapForUnit("player")
+	end
+	if (Mapidss == 634) then
+		local Mapidss2 = C_Map.GetBestMapForUnit("player")
+		if (Mapidss2 == 649) then
+			if (CL_ActiveZoneNr ~= 649) then
+				CL_ActiveZoneNr = 649
+				if (englishFaction == "Alliance") then
+					CL_ActiveZone = CL_QuestStep1022
+					print("ConsLegion: Helheim - Alliance - Loaded")
+				else
+					CL_ActiveZone = CL_QuestStep1022
+					print("ConsLegion: Helheim - Horde - Loaded")
+				end
+				CL_ZoneChange()
 			end
-			CL_ZoneChange()
+		else
+			if (CL_ActiveZoneNr ~= 634) then
+				CL_ActiveZoneNr = 634
+				if (englishFaction == "Alliance") then
+					CL_ActiveZone = CL_QuestStep1017A
+					print("ConsLegion: Stormheim - Alliance - Loaded")
+				else
+					CL_ActiveZone = CL_QuestStep1017H
+					print("ConsLegion: Stormheim - Horde - Loaded")
+				end
+				CL_ZoneChange()
+			end
 		end
 		if (not InCombatLockdown()) then
 			CL_MsgBoardFrame:Show()
 		end
-	elseif (GetCurrentMapAreaID() == 1022) then
-		if (CL_ActiveZoneNr ~= 1022) then
-			CL_ActiveZoneNr = 1022
-			if (englishFaction == "Alliance") then
-				CL_ActiveZone = CL_QuestStep1022
-				print("ConsLegion: Helheim - Alliance - Loaded")
-			else
-				CL_ActiveZone = CL_QuestStep1022
-				print("ConsLegion: Helheim - Horde - Loaded")
-			end
-			CL_ZoneChange()
-		end
-		if (not InCombatLockdown()) then
-			CL_MsgBoardFrame:Show()
-		end
-	elseif (GetCurrentMapAreaID() == 1015) then
-		if (CL_ActiveZoneNr ~= 1015) then
-			CL_ActiveZoneNr = 1015
+	elseif (Mapidss == 630) then
+		if (CL_ActiveZoneNr ~= 630) then
+			CL_ActiveZoneNr = 630
 			if (englishFaction == "Alliance") then
 				CL_ActiveZone = CL_QuestStep1015
 				print("ConsLegion: Azsuna - Alliance - Loaded")
@@ -56,9 +64,9 @@ function CL_Parser_Zonecheck()
 		if (not InCombatLockdown()) then
 			CL_MsgBoardFrame:Show()
 		end
-	elseif (GetCurrentMapAreaID() == 1018) then
-		if (CL_ActiveZoneNr ~= 1018) then
-			CL_ActiveZoneNr = 1018
+	elseif (Mapidss == 641) then
+		if (CL_ActiveZoneNr ~= 641) then
+			CL_ActiveZoneNr = 641
 			if (englishFaction == "Alliance") then
 				CL_ActiveZone = CL_QuestStep1018
 				print("ConsLegion: Val'Sharah - Alliance - Loaded")
@@ -71,9 +79,9 @@ function CL_Parser_Zonecheck()
 		if (not InCombatLockdown()) then
 			CL_MsgBoardFrame:Show()
 		end
-	elseif (GetCurrentMapAreaID() == 1080 or GetCurrentMapAreaID() == 1024) then
-		if (CL_ActiveZoneNr ~= 1080) then
-			CL_ActiveZoneNr = 1080
+	elseif (Mapidss == 650 or Mapidss == 750) then
+		if (CL_ActiveZoneNr ~= 650) then
+			CL_ActiveZoneNr = 650
 			if (englishFaction == "Alliance") then
 				CL_ActiveZone = CL_QuestStep1080
 				print("ConsLegion: Highmountain - Alliance - Loaded")
@@ -86,9 +94,9 @@ function CL_Parser_Zonecheck()
 		if (not InCombatLockdown()) then
 			CL_MsgBoardFrame:Show()
 		end
-	elseif (GetCurrentMapAreaID() == 1038) then
-		if (CL_ActiveZoneNr ~= 1038) then
-			CL_ActiveZoneNr = 1038
+	elseif (Mapidss == 76) then
+		if (CL_ActiveZoneNr ~= 76) then
+			CL_ActiveZoneNr = 76
 			if (englishFaction == "Alliance") then
 				CL_ActiveZone = CL_QuestStep1038
 				print("ConsLegion: Azshara - Alliance - Loaded")
@@ -168,7 +176,7 @@ function CL_Parser_EventLoop()
 		return
 	end
 	CLCompletedQs = GetQuestsCompleted()
-	SetMapToCurrentZone()
+	--SetMapToCurrentZone()
 	if (CL_SettingsOpen == 1) then
 		return
 	end

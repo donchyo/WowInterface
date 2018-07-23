@@ -1,4 +1,4 @@
-TidyPlatesWidgets: enabled
+TidyPlatesWidgets: disabled
 TidyPlates_Grey: disabled
 TidyPlates_Graphite: disabled
 TidyPlates_Neon: disabled
@@ -77,8 +77,8 @@ MasterPlan: disabled
 Velhari_Health_Fix: disabled
 infDK: disabled
 ToolTipTabs: disabled
-Masque: enabled
-Masque_Apathy: enabled
+Masque: disabled
+Masque_Apathy: disabled
 LeechTrinketCounter: disabled
 xCT+: disabled
 vexpower: disabled
@@ -86,16 +86,16 @@ RaidAchievement_WoDRaids: disabled
 RaidAchievement_WoDHeroics: disabled
 RaidAchievement: disabled
 TidyPlates_ThreatPlates: disabled
-TidyPlates: enabled
-TidyPlatesHub: enabled
+TidyPlates: disabled
+TidyPlatesHub: disabled
 Kui_Nameplates: disabled
 Kui_Nameplates_Auras: disabled
 infCombatRess: disabled
 Details: enabled
 +Wowhead_Looter: disabled
 Chatter: enabled
-MSBTOptions: enabled
-MikScrollingBattleText: enabled
+MSBTOptions: disabled
+MikScrollingBattleText: disabled
 AutoTitle_ElvUI_LDB: enabled
 EveryGoldToBanker: disabled
 Accountant: disabled
@@ -282,7 +282,7 @@ Rarity: disabled
 Rarity_Options: disabled
 RCLootCouncil: disabled
 SafeQueue: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 SellOMatic2: disabled
 SellOMatic2_Destroy: disabled
 SharedMedia: enabled
@@ -335,7 +335,7 @@ DailyGlobalCheck_Legion_WorldQuests: disabled
 iTargetingFrames: disabled
 vexrunes: disabled
 Prat-3.0_Libraries: disabled
-TidyPlates_Threat: enabled
+TidyPlates_Threat: disabled
 ElvUI_SLE: enabled
 DailyGlobalCheck: disabled
 Dominos_Quest: disabled
@@ -377,8 +377,8 @@ BigWigs_TombOfSargeras: enabled
 BigWigs_TrialOfValor: enabled
 BigWigs_WarlordsOfDraenor: enabled
 DialogKey: enabled
-iKeystones: enabled
-Keystones: enabled
+iKeystones: disabled
+Keystones: disabled
 LazyKeystones: enabled
 RaiderIO: enabled
 RaiderIO_DB_US_A: disabled
@@ -424,3 +424,4 @@ SMT: disabled
 bdBuffs: disabled
 bdCore: disabled
 StayUnsheathed: disabled
+Masque_ElvUIesque: disabled

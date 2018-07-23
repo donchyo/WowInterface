@@ -71,5 +71,5 @@ VER 3 010000000000000C "shock" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000005 "wog" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] hand of the protector
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] light of the protector
 END

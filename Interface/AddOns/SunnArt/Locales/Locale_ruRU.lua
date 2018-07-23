@@ -14,12 +14,12 @@ L["Auto-Stretch textures to the edge of the screen if the artwork is too narrow"
 L["Bottom panel"] = "Нижняя панель"
 L["Bottom panel overrides"] = "Замена нижней панели"
 L["Bottom panel properties"] = "Свойства нижней панели"
---Translation missing 
+--[[Translation missing --]]
 L["Center Spell Alerts"] = "Center Spell Alerts"
---Translation missing 
+--[[Translation missing --]]
 L["Center UI Messages"] = "Center UI Messages"
 L["Change the thickness of this panel (percentage of screen)"] = "Изменение толщины данной панели (процентное отношение к экрану)"
---Translation missing 
+--[[Translation missing --]]
 L["Colour of the filter to apply to artwork"] = "Colour of the filter to apply to artwork"
 L["Colour of the Solid Colour theme"] = "Полностью окрашивает панель выбранным цветом"
 L["Custom Artwork"] = "Пользовательские иллюстрации"
@@ -28,23 +28,23 @@ L["Custom theme (unsaved"] = "Пользовательская тема (нес�
 L["Custom themes, artwork overrides and frame strata"] = "Пользовательские темы, замена иллюстрации и слой фрейма"
 L["Customize individual panels"] = "Настройка индивидуальных панелей"
 L["Delete theme"] = "Удалить тему"
---Translation missing 
+--[[Translation missing --]]
 L["Disable Glow FX"] = "Disable Glow FX"
---Translation missing 
+--[[Translation missing --]]
 L["Disable worldframe glow and death effects"] = "Disable worldframe glow and death effects"
---Translation missing 
+--[[Translation missing --]]
 L["DX9VPEnabled"] = "Viewport resizing and DX9 mode may cause problems with advanced water and lighting effects with Multisampling enabled."
 L["Enable"] = "Включить"
---Translation missing 
+--[[Translation missing --]]
 L["Enable colour filter"] = "Enable colour filter"
 L["Enable or Disable artwork in the panels"] = "Вкл/Выкл иллюстрации на панеле"
 L["Enable or Disable the viewport Horizontally"] = "Выкл/Выкл точку обзора по горизонтале"
 L["Enable or Disable the viewport Vertically"] = "Выкл/Выкл точку обзора по вертикале"
 L["Enable this panel"] = "Включить данную панель"
 L["Example"] = "Пример"
---Translation missing 
+--[[Translation missing --]]
 L["Filter"] = "Filter"
---Translation missing 
+--[[Translation missing --]]
 L["Filter colour"] = "Filter colour"
 L["Flip"] = "Перевернуть"
 L["Flip the artwork"] = "Перевернуть иллюстрацию"
@@ -53,9 +53,9 @@ L["Frame Levels (Strata)"] = "Уровень фрейма (слой)"
 L["Frame Strata"] = "Слой фрейма"
 L["Global options"] = "Основные настройки"
 L["Graphical theme"] = "Графическая тема"
---Translation missing 
+--[[Translation missing --]]
 L["Hide Blizzart Art"] = "Hide Blizzart Art"
---Translation missing 
+--[[Translation missing --]]
 L["Hide the gryphons on the Blizzard action bar."] = "Hide the gryphons on the Blizzard action bar."
 L["Horizontal Viewport"] = "Горизонтально"
 L["Instructions for use"] = "Инструкция по применению"
@@ -65,20 +65,20 @@ L["INSTRUCTIONS_P3"] = "2. Могут быть использованы толь
 L["INSTRUCTIONS_P4"] = "3. Поддерживаются только TGA или BLP форматы."
 L["INSTRUCTIONS_P5"] = "4. графические файлы должны иметь размеры, увеличения на 2 (т.е. 128, 256, 512, 1024)"
 L["INSTRUCTIONS_P6"] = "Чтобы получить доступ к теме под название \"DragonUI\", состоящий из файлов DragonUI-1.tga, DragonUI-2.tga, DragonUI-3.tga, DragonUI-4.tga в папке \\Interface\\Addons\\CustomArt\\, то вы должны ввести CustomArt\\DragonUI в поле выше. Далее, перетащите палзунок \"Деление на части\" до 4, для указания что в теме 4 файла."
---Translation missing 
+--[[Translation missing --]]
 L["INSTRUCTIONS_P7"] = "If you intend to use the viewport functions of this addon and the top part of your artwork is intended to be transparent then set the portion to be overlapped with the \"Overlap\" slider."
---Translation missing 
+--[[Translation missing --]]
 L["INSTRUCTIONS_P8"] = "Some artwork has the artist name embedded on the right of the art files but you can adjust the length of the artwork with the slider to move this portion off the edge of the screen."
 L["INSTRUCTIONS_P9"] = "Данная функция совместима со шкурками для BTex, nUI, XArt и с большинством других модификаций такого типа."
---Translation missing 
+--[[Translation missing --]]
 L["Keep spell alerts centered when the viewport is changed"] = "Keep spell alerts centered when the viewport is changed"
---Translation missing 
+--[[Translation missing --]]
 L["Keep UI messages centered when the viewport is changed"] = "Keep UI messages centered when the viewport is changed"
 L["Left panel"] = "Левая панель"
 L["Left panel overrides"] = "Замена левой панели"
 L["Left panel properties"] = "Свойства левой панели"
 L["Length Adjust"] = "Регулировка длины"
---Translation missing 
+--[[Translation missing --]]
 L["LiquidDetail"] = "Set 'Liquid Detail' to Fair if you have missing water."
 L["Load custom artwork from external files"] = "Загрузка пользовательской иллюстрации из внешних файлов"
 L["Loaded"] = "загружен"
@@ -107,7 +107,7 @@ L["Sections"] = "Деление на части"
 L["Sets the strata (layer depth) of the frames"] = "Установка слоя области (уровень глубены слоя)"
 L["Side Bars"] = "Боковые панели"
 L["Solid colour"] = "Заливка панели"
---Translation missing 
+--[[Translation missing --]]
 L["SSAO"] = "Set 'SSAO' to Disabled if you have displaced shadows."
 L["Sunn - Viewport Art"] = "Sunn - Viewport Art"
 L["SunnArt"] = "SunnArt"
@@ -119,7 +119,7 @@ L["Theme saved"] = "Тема сохранена"
 L["Toggle auto-stretch for this panel"] = "Вкл/Выкл авто-вытягивание для данной панели"
 L["Toggle Overlay/Viewport mode for this panel"] = "Вкл/Выкл режима наложения/точки обзора для данной панели"
 L["Toggle UI"] = "Переглючить интерфейс"
---Translation missing 
+--[[Translation missing --]]
 L["Toggle UI key binding set to"] = "Toggle UI key binding set to"
 L["Top panel"] = "Верхняя панель"
 L["Top panel overrides"] = "Замена верхней панели"

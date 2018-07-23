@@ -2,11 +2,11 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Doomwalker", -473)
+local mod, CL = BigWigs:NewBoss("Doomwalker", -104)
 if not mod then return end
 mod:RegisterEnableMob(17711)
 mod.worldBoss = 17711
-mod.otherMenu = -466
+mod.otherMenu = -101
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -84,12 +84,12 @@ function mod:Frenzy(args)
 	self:Message(args.spellId, "Important", "Alarm", "20% - "..args.spellName)
 end
 
-function mod:UNIT_HEALTH_FREQUENT(unit)
+function mod:UNIT_HEALTH_FREQUENT(event, unit)
 	if self:MobId(UnitGUID(unit)) == 17711 then
 		local hp = UnitHealth(unit) / UnitHealthMax(unit) * 100
 		if hp > 20 and hp < 27 then
 			self:Message(33653, "Urgent", nil, CL["soon"]:format(self:SpellName(33653)), false) -- Frenzy
-			self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", "target", "focus")
+			self:UnregisterUnitEvent(event, "target", "focus")
 		end
 	end
 end

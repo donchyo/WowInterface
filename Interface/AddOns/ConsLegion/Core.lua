@@ -16,7 +16,7 @@ CL_name = UnitName("player")
 CL_realm = string.gsub(GetRealmName(), " ", "")
 CL_tempname = CL_name .. "-" .. CL_realm
 CL_Version = 128
-CLChat = RegisterAddonMessagePrefix("ConsLegionChat");
+--CLChat = RegisterAddonMessagePrefix("ConsLegionChat");
 CL_FontUrl = "Interface\\AddOns\\ConsLegion\\Font\\"
 CL_Font = CL_FontUrl.."LiberationSans-Regular.TTF"
 CL_img = "Interface\\AddOns\\ConsLegion\\Img\\"
@@ -409,7 +409,7 @@ CL_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			return
 		end
 		CL_TestVar()
-		SetMapToCurrentZone()
+		--SetMapToCurrentZone()
 		CL_MakeQListFunc()
 		CL_XPListFrame()
 		CL_MsgBoard()
@@ -448,17 +448,17 @@ CL_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 		CL_Eventloop2.anim:SetDuration(5)
 		CL_Eventloop2:SetLooping("REPEAT")
 		CL_Eventloop2:SetScript("OnLoop", function(self, event, ...)
-			CLChat = RegisterAddonMessagePrefix("ConsLegionChat");
+			--CLChat = RegisterAddonMessagePrefix("ConsLegionChat");
 			CL_Eventloop2:Stop()
 			CL_Checkparty()
 			CL_SkippCutScenes()
-			if (GetGuildInfo("player")) then
-				SendAddonMessage( "ConsLegionChat", "Version:-" .. CL_Version, "GUILD" )
-			end
+			--if (GetGuildInfo("player")) then
+			--	SendAddonMessage( "ConsLegionChat", "Version:-" .. CL_Version, "GUILD" )
+			--end
 		end)
 		CL_Eventloop2:Play()
 		CL_SkippCutScenes()
-		CLChat = RegisterAddonMessagePrefix("ConsLegionChat");
+		--CLChat = RegisterAddonMessagePrefix("ConsLegionChat");
 		SlashCmdList["CL_Cmd"] = CL_Settings
 		SLASH_CL_Cmd1 = "/conslegion"
 		CL_EventloopQ1 = CL_CoreEventFrame:CreateAnimationGroup()
@@ -699,21 +699,6 @@ CL_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 		end
 	end
 	if event == "CHAT_MSG_LOOT" then
-		if (GetGuildInfo("player")) then
-			local arg1, arg2, arg3, arg4, arg5 = ...;
-			arg5 = CL_TrimPlayerServer(arg5)
-			if (arg5 == UnitName("player")) then
-				local itlink = select(3, string.find(arg1, "(|c.*|h|r)"))
-				if (itlink and GetItemInfo(itlink)) then
-					local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(itlink)
-					if (itemRarity == 4) then
-						SendAddonMessage( "ConsLegionChat", "Epic:-" .. arg5 .. "_"..itemName.."_"..itlink, "GUILD" )
-					end
-					if (itemRarity == 5) then
-						SendAddonMessage( "ConsLegionChat", "Epic:-" .. arg5 .. "_"..itemName.."_"..itlink, "GUILD" )
-					end
-				end
-			end
-		end
+
 	end
 end)

@@ -242,10 +242,11 @@ do
 	end
 end
 
-function mod:TankDebuffCasts(_, spellName, _, _, spellId)
-	if spellId == 143426 or spellId == 143780 or spellId == 143773 or spellId == 143767 then -- Fearsome Roar, Acid Breath, Freezing Breath, Scorching Breath
-		if spellId == 143426 then spellId = 143766 end -- Blizzard gave Fearsome Roar the wrong icon
-		self:CDBar(spellId, 11, spellName, spellId) -- 11-15s
+function mod:TankDebuffCasts(_, _, _, spellId)
+	if spellId == 143426 then -- Fearsome Roar
+		self:CDBar(143766, 11, spellId, 143766) -- Blizzard gave Fearsome Roar the wrong icon
+	elseif spellId == 143780 or spellId == 143773 or spellId == 143767 then -- Acid Breath, Freezing Breath, Scorching Breath
+		self:CDBar(spellId, 11) -- 11-15s
 	end
 end
 

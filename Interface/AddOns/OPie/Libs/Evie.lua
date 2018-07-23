@@ -1,4 +1,4 @@
-local Evie, easy, next, securecall, _, T = {}, newproxy(true), next, securecall, ...
+local Evie, easy, next, securecall, pcall, _, T = {}, newproxy(true), next, securecall, pcall, ...
 local frame, listeners, locked, easy_mt = CreateFrame("FRAME"), {}, {}, getmetatable(easy)
 
 local function Register(event, func, depth)
@@ -11,7 +11,7 @@ local function Register(event, func, depth)
 	elseif lock then
 		lock[func] = 1
 	else
-		frame:RegisterEvent(event)
+		pcall(frame.RegisterEvent, frame, event)
 		listeners[event] = listeners[event] or {}
 		listeners[event][func] = 1
 	end
@@ -22,7 +22,7 @@ local function Unregister(event, func)
 		list[func] = nil
 		if not next(list) then
 			listeners[event] = nil
-			frame:UnregisterEvent(event)
+			pcall(frame.UnregisterEvent, frame, event)
 		end
 	end
 	if lock and lock ~= true then

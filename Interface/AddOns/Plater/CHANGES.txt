@@ -1,7 +1,7 @@
-changeset:   72:301e17d5a44b
-tag:         v7.3.5.072
+changeset:   83:a3b54262896a
+tag:         v8.0.1.083
 user:        Tercio
-date:        Fri Apr 13 12:44:55 2018 -0300
-summary:     - Reduced the default size for enemy npc.
+date:        Fri Jul 20 17:00:00 2018 -0300
+summary:     - Fixed Special Aura row showing when buffs are disabled.
 
 

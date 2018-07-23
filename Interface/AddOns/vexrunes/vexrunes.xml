@@ -12,7 +12,7 @@
 			
 			self:RegisterEvent("PLAYER_TARGET_CHANGED")
 			
-			self:RegisterEvent("RUNE_TYPE_UPDATE")
+			<!--self:RegisterEvent("RUNE_TYPE_UPDATE")-->
 			
 			self:RegisterEvent("UNIT_ENTERED_VEHICLE")
 			self:RegisterEvent("UNIT_EXITED_VEHICLE")

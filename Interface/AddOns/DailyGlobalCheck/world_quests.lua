@@ -280,6 +280,11 @@ end
 
 local c = 0
 function WQ:Update()
+
+ -- 8.0 quick rough fixes
+ -- world quest tracking temporarily disabled
+ if true then return end
+
  c = c + 1
  local prev_mapID = GetCurrentMapAreaID()
  local prev_dungeonID = GetCurrentMapDungeonLevel()
@@ -287,8 +292,9 @@ function WQ:Update()
  if not prev_mapID or prev_mapID < 0 or prev_mapID == 751 then
   prev_cont = GetCurrentMapContinent()
  end
-
- WorldMapFrame:UnregisterEvent("WORLD_MAP_UPDATE")
+ 
+ -- 8.0 quick rough fixes
+ --WorldMapFrame:UnregisterEvent("WORLD_MAP_UPDATE")
 
  lowest_timer = 9999
  for k in pairs(zone_indexes) do
@@ -306,7 +312,8 @@ function WQ:Update()
   end
  end
 
- WorldMapFrame:RegisterEvent("WORLD_MAP_UPDATE")
+ -- 8.0 quick rough fixes
+ --WorldMapFrame:RegisterEvent("WORLD_MAP_UPDATE")
 
  if lowest_timer < 9999 then
   set_timer(lowest_timer)
@@ -365,9 +372,10 @@ function WQ:Initialize(list)
  C_Timer.After(40, WQ.Update)
  C_Timer.After(60, WQ.Update)
  
- local wq_eventframe = CreateFrame("Frame")
- wq_eventframe:RegisterEvent("WORLD_MAP_UPDATE")
- wq_eventframe:SetScript("OnEvent", worldmap_update)
+ -- 8.0 quick rough fixes
+ --local wq_eventframe = CreateFrame("Frame")
+ --wq_eventframe:RegisterEvent("WORLD_MAP_UPDATE")
+ --wq_eventframe:SetScript("OnEvent", worldmap_update)
 end
 
 

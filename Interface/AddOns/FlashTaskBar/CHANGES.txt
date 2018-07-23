@@ -1,7 +1,7 @@
-changeset:   74:a024ea2b0789
-tag:         v7.3.5.074
+changeset:   76:a834ab382530
+tag:         v8.0.1.076
 user:        Tercio
-date:        Sat Mar 10 13:47:27 2018 -0300
-summary:     - When flashing for trade and chat message, print in the chat why the flash was triggered.
+date:        Thu Jul 19 11:31:42 2018 -0300
+summary:     - 8.0.1 Update.
 
 

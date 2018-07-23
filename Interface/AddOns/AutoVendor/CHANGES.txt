@@ -1,8 +1,8 @@
 ------------------------------------------------------------------------
-r137 | olafskii | 2017-08-30 14:44:29 -0500 (Wed, 30 Aug 2017) | 1 line
+r139 | olafskii | 2018-07-18 17:25:42 +0000 (Wed, 18 Jul 2018) | 1 line
 Changed paths:
    M /trunk/AutoVendor.toc
 
-Updated for WoW patch 7.3.
+Update for Battle for Azeroth.
 ------------------------------------------------------------------------
 

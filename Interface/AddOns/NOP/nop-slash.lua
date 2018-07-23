@@ -138,7 +138,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   end
   if cmd == "show" then
     NOP.DB["visible"] = not NOP.DB.visible
-    NOP:ItemShowNew()
+    NOP:BAG_UPDATE()
     NOP:QBUpdate()
     return
   end
@@ -152,7 +152,7 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   end
   if cmd == "skip" then
     NOP.DB["Skip"] = (not NOP.DB.Skip)
-    if NOP:BlacklistClear() then NOP:ItemShowNew() end
+    if NOP:BlacklistClear() then NOP:BAG_UPDATE() end
     return
   end
   if cmd == "clear" then
@@ -192,14 +192,14 @@ NOP.slash_handler = function(msg, editbox) -- /nop handler
   if cmd == "unlist" then
     local id = tonumber(arg)
     if id then
-      if NOP.DB["T_BLACKLIST"] ~= nil and NOP.DB.T_BLACKLIST[id] then NOP.DB.T_BLACKLIST[id] = nil; T_CHECK[id] = nil; NOP:ItemShowNew() end
+      if NOP.DB["T_BLACKLIST"] ~= nil and NOP.DB.T_BLACKLIST[id] then NOP.DB.T_BLACKLIST[id] = nil; T_CHECK[id] = nil; NOP:BAG_UPDATE() end
       if NOP.DB["T_BLACKLIST_Q"] ~= nil and NOP.DB.T_BLACKLIST_Q[id] then NOP.DB.T_BLACKLIST_Q[id] = nil; NOP:QBUpdate() end
     end
     return
   end
   if cmd == "zone" then
     NOP.DB["zoneUnlock"] = not NOP.DB.zoneUnlock
-    NOP:ItemShowNew()
+    NOP:BAG_UPDATE()
     return
   end
   local usage = {string.split("\n", P.L["NOP_USE"] .. P.CONSOLE_CMD .. P.CONSOLE_USAGE)}

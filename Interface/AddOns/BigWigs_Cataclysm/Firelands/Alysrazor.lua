@@ -131,8 +131,8 @@ end
 
 do
 	local lastCheck = 0
-	function mod:FlightCheck(unit)
-		local _, _, _, _, _, _, expires = UnitBuff(unit, self:SpellName(98619)) -- Wings of Flame
+	function mod:FlightCheck(_, unit)
+		local _, _, _, expires = self:UnitBuff(unit, self:SpellName(98619)) -- Wings of Flame
 		if expires ~= lastCheck then
 			lastCheck = expires
 			self:Bar("flight", expires-GetTime(), 98619)
@@ -166,9 +166,9 @@ do
 	local feather = mod:SpellName(97128)
 	local moonkin = mod:SpellName(24858)
 	function mod:BuffCheck()
-		local name = UnitBuff("player", feather)
+		local name = self:UnitBuff("player", feather)
 		if not name then
-			if UnitBuff("player", moonkin) then
+			if self:UnitBuff("player", moonkin) then
 				self:Message(97128, "Personal", nil, L["moonkin_message"])
 			else
 				self:Message(97128, "Personal", nil, L["no_stacks_message"])
@@ -264,7 +264,7 @@ do
 		end
 	end
 
-	function mod:UNIT_POWER_FREQUENT(unit)
+	function mod:UNIT_POWER_FREQUENT(event, unit)
 		local power = UnitPower(unit, 0)
 		if power > 40 and not halfWarned then
 			self:Message(99925, "Urgent", nil, L["halfpower_soon_message"])
@@ -274,7 +274,7 @@ do
 			fullWarned = true
 		elseif power == 100 then
 			self:Message(99925, "Positive", "Alert", (L["stage_message"]:format(1))..": "..(L["encounter_restart"]))
-			self:UnregisterUnitEvent("UNIT_POWER_FREQUENT", unit)
+			self:UnregisterUnitEvent(event, unit)
 			initiateCount = 0
 			self:Bar("initiate", 13.5, L["initiate_both"], 97062)
 			if self:Heroic() then

@@ -1202,7 +1202,17 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Krixidk:Ravencrest:1",
 	},
 	["Krixiqt:Ravencrest:2"] = {
@@ -1377,7 +1387,17 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Krixiqt:Ravencrest:2",
 	},
 	["Gnomalock:Grim Batol:3"] = {
@@ -2635,30 +2655,39 @@ DCS_ClassSpecDB = {
 		}, -- [18]
 		{
 			["statKey"] = "CRITCHANCE",
+			["hideAt"] = 0,
 		}, -- [19]
 		{
 			["statKey"] = "HASTE",
+			["hideAt"] = 0,
 		}, -- [20]
 		{
 			["statKey"] = "VERSATILITY",
+			["hideAt"] = 0,
 		}, -- [21]
 		{
 			["statKey"] = "MASTERY",
+			["hideAt"] = 0,
 		}, -- [22]
 		{
 			["statKey"] = "LIFESTEAL",
+			["hideAt"] = 0,
 		}, -- [23]
 		{
 			["statKey"] = "AVOIDANCE",
+			["hideAt"] = 0,
 		}, -- [24]
 		{
 			["statKey"] = "DODGE",
+			["hideAt"] = 0,
 		}, -- [25]
 		{
 			["statKey"] = "PARRY",
+			["hideAt"] = 0,
 		}, -- [26]
 		{
 			["statKey"] = "BLOCK",
+			["hideAt"] = 0,
 		}, -- [27]
 		{
 			["statKey"] = "ITEMLEVEL",
@@ -2681,30 +2710,38 @@ DCS_ClassSpecDB = {
 		}, -- [33]
 		{
 			["statKey"] = "PARRY_RATING",
+			["hideAt"] = 0,
 		}, -- [34]
 		{
 			["statKey"] = "DODGE_RATING",
+			["hideAt"] = 0,
 		}, -- [35]
 		{
 			["statKey"] = "HASTE_RATING",
+			["hideAt"] = 0,
 		}, -- [36]
 		{
 			["statKey"] = "VERSATILITY_RATING",
+			["hideAt"] = 0,
 		}, -- [37]
 		{
 			["statKey"] = "MASTERY_RATING",
+			["hideAt"] = 0,
 		}, -- [38]
 		{
 			["statKey"] = "CRITCHANCE_RATING",
+			["hideAt"] = 0,
 		}, -- [39]
 		{
 			["statKey"] = "DCS_ALTERNATEMANA",
 		}, -- [40]
 		{
 			["statKey"] = "LIFESTEAL_RATING",
+			["hideAt"] = 0,
 		}, -- [41]
 		{
 			["statKey"] = "AVOIDANCE_RATING",
+			["hideAt"] = 0,
 		}, -- [42]
 		{
 			["statKey"] = "RatingCategory",
@@ -2720,7 +2757,17 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Zuriz:Grim Batol:3",
 	},
 	["Kriximonk:Grim Batol:1"] = {
@@ -2895,7 +2942,17 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Kriximonk:Grim Batol:1",
 	},
 	["Zetiz:Grim Batol:1"] = {
@@ -3024,36 +3081,46 @@ DCS_ClassSpecDB = {
 		}, -- [33]
 		{
 			["statKey"] = "PARRY_RATING",
+			["hideAt"] = 0,
 		}, -- [34]
 		{
 			["statKey"] = "DODGE_RATING",
+			["hideAt"] = 0,
 		}, -- [35]
 		{
 			["statKey"] = "HASTE_RATING",
+			["hideAt"] = 0,
 		}, -- [36]
 		{
 			["statKey"] = "VERSATILITY_RATING",
+			["hideAt"] = 0,
 		}, -- [37]
 		{
 			["statKey"] = "MASTERY_RATING",
+			["hideAt"] = 0,
 		}, -- [38]
 		{
 			["statKey"] = "CRITCHANCE_RATING",
+			["hideAt"] = 0,
 		}, -- [39]
 		{
 			["statKey"] = "DCS_ALTERNATEMANA",
 		}, -- [40]
 		{
 			["statKey"] = "LIFESTEAL_RATING",
+			["hideAt"] = 0,
 		}, -- [41]
 		{
 			["statKey"] = "AVOIDANCE_RATING",
+			["hideAt"] = 0,
 		}, -- [42]
 		{
 			["statKey"] = "RatingCategory",
 		}, -- [43]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [44]
 		{
 			["statKey"] = "OffenseCategory",
@@ -3064,6 +3131,14 @@ DCS_ClassSpecDB = {
 		{
 			["statKey"] = "DefenseCategory",
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Zetiz:Grim Batol:1",
 	},
 	["Krixidruid:Valley of Heroes - EU:1"] = {
@@ -3929,7 +4004,17 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Gnomalock:Grim Batol:1",
 	},
 	["Krixikin:Grim Batol:4"] = {
@@ -6256,7 +6341,17 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Kriximonk:Grim Batol:3",
 	},
 	["Nyrith:Grim Batol:4"] = {
@@ -7184,10 +7279,20 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Kriximonk:Grim Batol:2",
 	},
-	["Donch:Grim Batol:3"] = {
+	["Namji:Grim Batol:1"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
@@ -7198,174 +7303,138 @@ DCS_ClassSpecDB = {
 			["statKey"] = "HEALTH",
 		}, -- [3]
 		{
-			["statKey"] = "DCS_POWER",
-		}, -- [4]
-		{
-			["statKey"] = "DCS_ALTERNATEMANA",
-		}, -- [5]
-		{
 			["statKey"] = "ARMOR",
-		}, -- [6]
+		}, -- [4]
 		{
 			["statKey"] = "STRENGTH",
 			["hidden"] = true,
-		}, -- [7]
+		}, -- [5]
 		{
 			["statKey"] = "AGILITY",
-			["hidden"] = true,
-		}, -- [8]
+		}, -- [6]
 		{
 			["statKey"] = "INTELLECT",
-		}, -- [9]
+			["hidden"] = true,
+		}, -- [7]
 		{
 			["statKey"] = "STAMINA",
-		}, -- [10]
+		}, -- [8]
 		{
 			["statKey"] = "ATTACK_DAMAGE",
-			["hidden"] = true,
-		}, -- [11]
+		}, -- [9]
 		{
 			["statKey"] = "ATTACK_AP",
-			["hidden"] = true,
-		}, -- [12]
+		}, -- [10]
 		{
 			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+		}, -- [11]
+		{
+			["statKey"] = "WEAPON_DPS",
+		}, -- [12]
+		{
+			["statKey"] = "SPELLPOWER",
 			["hidden"] = true,
 		}, -- [13]
 		{
-			["statKey"] = "WEAPON_DPS",
+			["statKey"] = "MANAREGEN",
 			["hidden"] = true,
 		}, -- [14]
 		{
-			["statKey"] = "SPELLPOWER",
-		}, -- [15]
-		{
-			["statKey"] = "MANAREGEN",
-		}, -- [16]
-		{
 			["statKey"] = "ENERGY_REGEN",
-		}, -- [17]
+		}, -- [15]
 		{
 			["statKey"] = "DCS_RUNEREGEN",
 			["hidden"] = true,
-		}, -- [18]
+		}, -- [16]
 		{
 			["statKey"] = "FOCUS_REGEN",
-		}, -- [19]
+		}, -- [17]
 		{
 			["statKey"] = "MOVESPEED",
-		}, -- [20]
+		}, -- [18]
 		{
 			["statKey"] = "GCD",
-		}, -- [21]
+		}, -- [19]
 		{
 			["statKey"] = "DURABILITY_STAT",
-		}, -- [22]
+		}, -- [20]
 		{
 			["statKey"] = "REPAIR_COST",
-		}, -- [23]
+		}, -- [21]
 		{
 			["statKey"] = "EnhancementsCategory",
-		}, -- [24]
+		}, -- [22]
 		{
 			["statKey"] = "CRITCHANCE",
 			["hideAt"] = 0,
-		}, -- [25]
+		}, -- [23]
 		{
 			["statKey"] = "HASTE",
 			["hideAt"] = 0,
-		}, -- [26]
+		}, -- [24]
 		{
 			["statKey"] = "VERSATILITY",
 			["hideAt"] = 0,
-		}, -- [27]
+		}, -- [25]
 		{
 			["statKey"] = "MASTERY",
 			["hideAt"] = 0,
-		}, -- [28]
+		}, -- [26]
 		{
 			["statKey"] = "LIFESTEAL",
 			["hideAt"] = 0,
-		}, -- [29]
+		}, -- [27]
 		{
 			["statKey"] = "AVOIDANCE",
 			["hideAt"] = 0,
-		}, -- [30]
+		}, -- [28]
 		{
 			["statKey"] = "DODGE",
 			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [31]
+		}, -- [29]
 		{
 			["statKey"] = "PARRY",
 			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [32]
+		}, -- [30]
 		{
 			["statKey"] = "BLOCK",
 			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [33]
-		{
-			["statKey"] = "CRITCHANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [34]
-		{
-			["statKey"] = "HASTE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [35]
-		{
-			["statKey"] = "VERSATILITY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [36]
-		{
-			["statKey"] = "MASTERY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [37]
-		{
-			["statKey"] = "LIFESTEAL_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [38]
-		{
-			["statKey"] = "AVOIDANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [39]
-		{
-			["statKey"] = "DODGE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [40]
-		{
-			["statKey"] = "PARRY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [41]
+		}, -- [31]
 		{
 			["statKey"] = "ITEMLEVEL",
 			["hidden"] = true,
+		}, -- [32]
+		{
+			["statKey"] = "DCS_POWER",
+		}, -- [33]
+		{
+			["statKey"] = "PARRY_RATING",
+		}, -- [34]
+		{
+			["statKey"] = "DODGE_RATING",
+		}, -- [35]
+		{
+			["statKey"] = "HASTE_RATING",
+		}, -- [36]
+		{
+			["statKey"] = "VERSATILITY_RATING",
+		}, -- [37]
+		{
+			["statKey"] = "MASTERY_RATING",
+		}, -- [38]
+		{
+			["statKey"] = "CRITCHANCE_RATING",
+		}, -- [39]
+		{
+			["statKey"] = "DCS_ALTERNATEMANA",
+		}, -- [40]
+		{
+			["statKey"] = "LIFESTEAL_RATING",
+		}, -- [41]
+		{
+			["statKey"] = "AVOIDANCE_RATING",
 		}, -- [42]
-		{
-			["statKey"] = "RatingCategory",
-		}, -- [43]
-		{
-			["statKey"] = "OffenseCategory",
-		}, -- [44]
-		{
-			["statKey"] = "GeneralCategory",
-		}, -- [45]
-		{
-			["statKey"] = "DefenseCategory",
-		}, -- [46]
-		{
-			["statKey"] = "SPEED",
-		}, -- [47]
-		["uniqueKey"] = "Donch:Grim Batol:3",
+		["uniqueKey"] = "Namji:Grim Batol:1",
 	},
 	["Krixidh:Grim Batol:1"] = {
 		{
@@ -7487,30 +7556,38 @@ DCS_ClassSpecDB = {
 		}, -- [33]
 		{
 			["statKey"] = "PARRY_RATING",
+			["hideAt"] = 0,
 		}, -- [34]
 		{
 			["statKey"] = "DODGE_RATING",
+			["hideAt"] = 0,
 		}, -- [35]
 		{
 			["statKey"] = "HASTE_RATING",
+			["hideAt"] = 0,
 		}, -- [36]
 		{
 			["statKey"] = "VERSATILITY_RATING",
+			["hideAt"] = 0,
 		}, -- [37]
 		{
 			["statKey"] = "MASTERY_RATING",
+			["hideAt"] = 0,
 		}, -- [38]
 		{
 			["statKey"] = "CRITCHANCE_RATING",
+			["hideAt"] = 0,
 		}, -- [39]
 		{
 			["statKey"] = "DCS_ALTERNATEMANA",
 		}, -- [40]
 		{
 			["statKey"] = "LIFESTEAL_RATING",
+			["hideAt"] = 0,
 		}, -- [41]
 		{
 			["statKey"] = "AVOIDANCE_RATING",
+			["hideAt"] = 0,
 		}, -- [42]
 		{
 			["statKey"] = "RatingCategory",
@@ -7526,7 +7603,17 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Krixidh:Grim Batol:1",
 	},
 	["Nyrith:Grim Batol:2"] = {
@@ -7833,7 +7920,7 @@ DCS_ClassSpecDB = {
 		}, -- [47]
 		["uniqueKey"] = "Krixidk:Grim Batol:1",
 	},
-	["Namji:Grim Batol:1"] = {
+	["Donch:Grim Batol:3"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
@@ -7844,138 +7931,184 @@ DCS_ClassSpecDB = {
 			["statKey"] = "HEALTH",
 		}, -- [3]
 		{
-			["statKey"] = "ARMOR",
+			["statKey"] = "DCS_POWER",
 		}, -- [4]
+		{
+			["statKey"] = "DCS_ALTERNATEMANA",
+		}, -- [5]
+		{
+			["statKey"] = "ARMOR",
+		}, -- [6]
 		{
 			["statKey"] = "STRENGTH",
 			["hidden"] = true,
-		}, -- [5]
-		{
-			["statKey"] = "AGILITY",
-		}, -- [6]
-		{
-			["statKey"] = "INTELLECT",
-			["hidden"] = true,
 		}, -- [7]
 		{
-			["statKey"] = "STAMINA",
+			["statKey"] = "AGILITY",
+			["hidden"] = true,
 		}, -- [8]
 		{
-			["statKey"] = "ATTACK_DAMAGE",
+			["statKey"] = "INTELLECT",
 		}, -- [9]
 		{
-			["statKey"] = "ATTACK_AP",
+			["statKey"] = "STAMINA",
 		}, -- [10]
 		{
-			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+			["statKey"] = "ATTACK_DAMAGE",
+			["hidden"] = true,
 		}, -- [11]
 		{
-			["statKey"] = "WEAPON_DPS",
+			["statKey"] = "ATTACK_AP",
+			["hidden"] = true,
 		}, -- [12]
 		{
-			["statKey"] = "SPELLPOWER",
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
 			["hidden"] = true,
 		}, -- [13]
 		{
-			["statKey"] = "MANAREGEN",
+			["statKey"] = "WEAPON_DPS",
 			["hidden"] = true,
 		}, -- [14]
 		{
-			["statKey"] = "ENERGY_REGEN",
+			["statKey"] = "SPELLPOWER",
 		}, -- [15]
+		{
+			["statKey"] = "MANAREGEN",
+		}, -- [16]
+		{
+			["statKey"] = "ENERGY_REGEN",
+		}, -- [17]
 		{
 			["statKey"] = "DCS_RUNEREGEN",
 			["hidden"] = true,
-		}, -- [16]
-		{
-			["statKey"] = "FOCUS_REGEN",
-		}, -- [17]
-		{
-			["statKey"] = "MOVESPEED",
 		}, -- [18]
 		{
-			["statKey"] = "GCD",
+			["statKey"] = "FOCUS_REGEN",
 		}, -- [19]
 		{
-			["statKey"] = "DURABILITY_STAT",
+			["statKey"] = "MOVESPEED",
 		}, -- [20]
 		{
-			["statKey"] = "REPAIR_COST",
+			["statKey"] = "GCD",
 		}, -- [21]
 		{
-			["statKey"] = "EnhancementsCategory",
+			["statKey"] = "DURABILITY_STAT",
 		}, -- [22]
+		{
+			["statKey"] = "REPAIR_COST",
+		}, -- [23]
+		{
+			["statKey"] = "EnhancementsCategory",
+		}, -- [24]
 		{
 			["statKey"] = "CRITCHANCE",
 			["hideAt"] = 0,
-		}, -- [23]
+		}, -- [25]
 		{
 			["statKey"] = "HASTE",
 			["hideAt"] = 0,
-		}, -- [24]
+		}, -- [26]
 		{
 			["statKey"] = "VERSATILITY",
 			["hideAt"] = 0,
-		}, -- [25]
+		}, -- [27]
 		{
 			["statKey"] = "MASTERY",
 			["hideAt"] = 0,
-		}, -- [26]
+		}, -- [28]
 		{
 			["statKey"] = "LIFESTEAL",
 			["hideAt"] = 0,
-		}, -- [27]
+		}, -- [29]
 		{
 			["statKey"] = "AVOIDANCE",
 			["hideAt"] = 0,
-		}, -- [28]
+		}, -- [30]
 		{
 			["statKey"] = "DODGE",
 			["hideAt"] = 0,
-		}, -- [29]
+			["hidden"] = true,
+		}, -- [31]
 		{
 			["statKey"] = "PARRY",
 			["hideAt"] = 0,
-		}, -- [30]
-		{
-			["statKey"] = "BLOCK",
-			["hideAt"] = 0,
-		}, -- [31]
-		{
-			["statKey"] = "ITEMLEVEL",
 			["hidden"] = true,
 		}, -- [32]
 		{
-			["statKey"] = "DCS_POWER",
+			["statKey"] = "BLOCK",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [33]
 		{
-			["statKey"] = "PARRY_RATING",
+			["statKey"] = "CRITCHANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [34]
 		{
-			["statKey"] = "DODGE_RATING",
+			["statKey"] = "HASTE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [35]
 		{
-			["statKey"] = "HASTE_RATING",
+			["statKey"] = "VERSATILITY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [36]
 		{
-			["statKey"] = "VERSATILITY_RATING",
+			["statKey"] = "MASTERY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [37]
 		{
-			["statKey"] = "MASTERY_RATING",
+			["statKey"] = "LIFESTEAL_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [38]
 		{
-			["statKey"] = "CRITCHANCE_RATING",
+			["statKey"] = "AVOIDANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [39]
 		{
-			["statKey"] = "DCS_ALTERNATEMANA",
+			["statKey"] = "DODGE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [40]
 		{
-			["statKey"] = "LIFESTEAL_RATING",
+			["statKey"] = "PARRY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [41]
 		{
-			["statKey"] = "AVOIDANCE_RATING",
+			["statKey"] = "ITEMLEVEL",
+			["hidden"] = true,
 		}, -- [42]
-		["uniqueKey"] = "Namji:Grim Batol:1",
+		{
+			["statKey"] = "RatingCategory",
+		}, -- [43]
+		{
+			["statKey"] = "OffenseCategory",
+		}, -- [44]
+		{
+			["statKey"] = "GeneralCategory",
+		}, -- [45]
+		{
+			["statKey"] = "DefenseCategory",
+		}, -- [46]
+		{
+			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
+		["uniqueKey"] = "Donch:Grim Batol:3",
 	},
 	["Krixi:Grim Batol:1"] = {
 		{
@@ -8997,7 +9130,17 @@ DCS_ClassSpecDB = {
 		}, -- [46]
 		{
 			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [47]
+		{
+			["statKey"] = "STAGGER",
+		}, -- [48]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
 		["uniqueKey"] = "Zetiz:Grim Batol:3",
 	},
 	["Zolution:Grim Batol:2"] = {

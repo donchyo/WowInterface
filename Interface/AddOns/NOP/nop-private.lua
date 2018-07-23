@@ -23,26 +23,31 @@ local NOP = LibStub("AceAddon-3.0"):NewAddon(ADDON,"AceConsole-3.0","AceEvent-3.
 _G[ADDON] = NOP -- store reference to addon
 NOP.private = P -- store reference to private store
 --
-local _, _, _, tocVersion = _G.GetBuildInfo() -- resolve version
 local LIB_BABBLESUBZONE = LibStub("LibBabble-SubZone-3.0"); P.LIB_BABBLESUBZONE = LIB_BABBLESUBZONE -- Localized sub-zone names, need it for zone specific items.
 local LIB_BABBLESUBZONE_has = LIB_BABBLESUBZONE:GetUnstrictLookupTable() -- all localized zone names
-local LIB_HEREBEDRAGONS = LibStub("HereBeDragons-1.0",true) or LibStub("HereBeDragons-2.0",true); P.LIB_HEREBEDRAGONS = LIB_HEREBEDRAGONS -- MapID fetch 8.x and 7.x compatible
-local LIB_ARTIFACTDATA = LibStub("LibArtifactData-1.0"); P.LIB_ARTIFACTDATA = LIB_ARTIFACTDATA -- scans all artifacts and notify when there is update
+local LIB_HEREBEDRAGONS = LibStub("HereBeDragons-2.0",true); P.LIB_HEREBEDRAGONS = LIB_HEREBEDRAGONS -- MapID fetch 8.x and 7.x compatible
 local LIB_MASQUE = LibStub("Masque", true); P.LIB_MASQUE = LIB_MASQUE -- Masque support
 local LIB_QUESTITEM = LibStub("LibQuestItem-1.0", true); P.LIB_QUESTITEM = LIB_QUESTITEM -- Quest Items detection
-local LIB_WOW8SUP = LibStub("WoW8Sup", true); P.LIB_WOW8SUP = LIB_WOW8SUP -- WoW 7.x and 8.x wrappers
-P.UnitAura = LIB_WOW8SUP.UnitAura -- fetch wrapper
 --
+P.VALIDATE = false -- validate tables after new patch
 P.SALVAGE_YARD = LIB_BABBLESUBZONE_has["Salvage Yard"]
 P.MINE_HORDE = LIB_BABBLESUBZONE_has["Frostwall Mine"]
 P.MINE_ALLIANCE = LIB_BABBLESUBZONE_has["Lunarfall Excavation"]
 P.SHIPYARD_HORDE = LIB_BABBLESUBZONE_has["Frostwall Shipyard"]
 P.SHIPYARD_ALLIANCE = LIB_BABBLESUBZONE_has["Lunarfall Shipyard"]
-P.TIMELESS_ISLE = 951
-P.FROSTWALL = 976
-P.LUNARFALL = 971
-P.FROSTFIRE_RIDGE = 941
-P.SHADOWMOON_VALLEY = 947
+for i=0,1 do
+ P['TIMELESS_ISLE'..(i+1)] = 554 + i
+end
+for i=0,2 do
+ P['FROSTWALL'..(i+1)] = 585 + i
+ P['LUNARFALL'..(i+1)] = 579 + i
+ P['SHADOWMOON_VALLEY'..(i+1)] = 539
+end
+P.FROSTWALL4 = 590
+P.LUNARFALL4 = 582
+for i=0,8 do
+ P['FROSTFIRE_RIDGE'..(i+1)] = 525 + i
+end
 P.L = LibStub("AceLocale-3.0"):GetLocale(ADDON, false) -- get localized strings, don't print error if no locale is defined then default will be used
 local L = P.L; assert(L ~= nil,'locale not defined')
 P.NOP_TITLE = L["NOP_TITLE"]
@@ -79,8 +84,8 @@ P.RGB_YELLOW = "|cFFFFFF00"
 P.RGB_RED = "|cFFFF0000"
 P.RGB_MAGENTA = "|cFF00FFFF"
 P.RGB_NORMAL = "|r"
-P.TIMER_IDLE = 2.0 -- recheck delay for calling protected function in combat
-P.TIMER_RECHECK = 10.0 -- delay for slow non-event driven item lookup in bags
+P.TIMER_IDLE = 1.0 -- recheck delay for calling protected function in combat
+P.TIMER_RECHECK = 30.0 -- delay for slow non-event driven item lookup in bags
 P.PRINT_HEAD = "|cff7f7f7f%s|r [|cff00ffff%s|r]"
 P.BLACKLIST = {[90043] = true,} -- special blacklist
 P.MOUSE_LB = "\124TInterface\\TutorialFrame\\UI-Tutorial-Frame:12:12:0:0:512:512:10:65:228:283\124t" -- left mouse button
@@ -94,7 +99,7 @@ P.ARCHAELOGY_ANNOUNCE = L["ARCHAELOGY_ANNOUNCE"]
 P.TALENT_ANNOUNCE = L["TALENT_ANNOUNCE"]
 P.PRI_POPUP =  1 -- highlit item
 P.PRI_OPEN  =  2 -- open boxes, top priority
-P.PRI_POWER =  3 -- artefact power
+P.PRI_POWER =  3 -- power
 P.PRI_TOKEN =  4 -- tokens, tribute
 P.PRI_REP   =  5 -- reputation tokens
 P.PRI_REST  =  6 -- all remaining items

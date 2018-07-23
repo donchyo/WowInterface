@@ -23,7 +23,7 @@ function SlashCmdList.vexrunes(msg, editbox)
 		if 	msg == "options" or msg == "option" or msg == "config" or msg == "configs" or msg == "" then
 			InterfaceOptionsFrame_OpenToCategory(vexrunes.options.main)
 		elseif 	msg == "test" then
-			-- vexdebugs.print("vexrunes.targetSet", vexrunes.targetSet)
+			-- vexdebugs.print("vexrunes.getSpec()", vexrunes.getSpec())
 		elseif 	msg == "defaults" then
 			vexrunes_loaddefaults(true)
 			print("|CFFFF7D0AVex Runes|r - defaults loaded")
@@ -54,6 +54,7 @@ function vexrunes_onEvent(self, event, arg1, ...)
 			vexrunes.showEnergybars()
 		elseif event == "LOADING_SCREEN_DISABLED" and vexrunes.started then
 			vexrunes.changeRuneType()
+			vexrunes.configurFillEffectFrames()
 		elseif event == "PLAYER_ENTERING_WORLD" and vexrunes.started then
 			vexrunes.infight=false
 			vexrunes.showEnergybars()
@@ -65,6 +66,7 @@ function vexrunes_onEvent(self, event, arg1, ...)
 			vexrunes.showEnergybars()
 		elseif (event == "RUNE_TYPE_UPDATE" or event == "ACTIVE_TALENT_GROUP_CHANGED") and vexrunes.started then
 			vexrunes.changeRuneType()
+			vexrunes.configurFillEffectFrames()
 		elseif event == "UNIT_ENTERED_VEHICLE" or event == "UNIT_EXITED_VEHICLE" then
 			vexrunes.setGlobalInVehicle(arg1, event == "UNIT_ENTERED_VEHICLE")
 			if vexrunes.started then
@@ -236,6 +238,7 @@ end
 function vexrunes.changeRuneType()
 	for i=1, 6 do
 		vexrunes.configurRuneFrameBG(i)
+		vexrunes.configurBackgroundFrame(i)
 		vexrunes.configurBackgroundFrame(i)
 	end
 end
@@ -444,6 +447,7 @@ end
 
 function vexrunes.configurFillEffectFrameBG(number)
 	local spec = vexrunes.getSpec()
+	-- vexdebugs.print("test", vexrunes_parameters["layout"]["runes"]["fillEffect"][spec])
 	vexrunes.frame.fillEffect[number]:SetBackdropColor(vexrunes_parameters["layout"]["runes"]["fillEffect"][spec]["r"],
 													vexrunes_parameters["layout"]["runes"]["fillEffect"][spec]["g"],
 													vexrunes_parameters["layout"]["runes"]["fillEffect"][spec]["b"],

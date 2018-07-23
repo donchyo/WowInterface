@@ -293,8 +293,7 @@ L=
 		--[[ ["noclobber"] = "",--]] 
 		--[[Translation missing --]]
 		--[[ ["noclobber set - skipping new alias: /%s already expands to /%s"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["Options"] = "",--]] 
+		["Options"] = "Opções",
 		--[[Translation missing --]]
 		--[[ ["Options for altering the behaviour of Alias"] = "",--]] 
 		--[[Translation missing --]]

@@ -198,8 +198,7 @@ do
 		local t = GetTime()
 		if t-prev > 2 then
 			prev = t
-			self:Message(args.spellId, "Personal", "Info", CL["underyou"]:format(args.spellName))
-			self:Flash(args.spellId)
+			self:Message(140502, "Personal", "Info", CL["underyou"]:format(args.spellName))
 		end
 	end
 end
@@ -236,7 +235,7 @@ do
 	-- Even though they're SPELL_CAST_SUCCESS, they don't provide the target ;[
 	local function findDebuff(spellName, spellId)
 		for unit in mod:IterateGroup() do
-			if UnitDebuff(unit, spellName) then
+			if mod:UnitDebuff(unit, spellName) then
 				local name = mod:UnitName(unit)
 				if spellId == 139202 then
 					if blueController ~= name then

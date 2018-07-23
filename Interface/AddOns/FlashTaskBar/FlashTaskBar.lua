@@ -90,8 +90,7 @@ local options_table = {
 
 	}
 }
-local Flash
-TaskBar = DF:CreateAddOn ("FlashTaskBar", "FlashTaskbarDB", default_config, options_table)
+local FlashTaskBar = DF:CreateAddOn ("FlashTaskBar", "FlashTaskbarDB", default_config, options_table)
 local lower = string.lower
 
 --store the address of the original chat func
@@ -535,7 +534,8 @@ function FlashTaskBar.OnInit (self)
 --------> combat log scan
 
 	local combat_log_keywords = {}
-	local do_combat_log_scan = function (event, time, token, hidding, who_serial, who_name, who_flags, who_flags2, target_serial, target_name, target_flags, target_flags2, ...)
+	local do_combat_log_scan = function (self, event)
+		local time, token, hidding, who_serial, who_name, who_flags, who_flags2, target_serial, target_name, target_flags, target_flags2 = CombatLogGetCurrentEventInfo()
 		if (target_name and combat_log_keywords [lower (target_name)]) then
 			FlashTaskBar:DoFlash("combat_log")
 		end
@@ -559,20 +559,34 @@ function FlashTaskBar.OnInit (self)
 	
 --------> rare mob scan
 
+	--> store the timers for flash for each rare
+	FlashTaskBar.RareFlashCooldown = {}
+	
 	local do_rare_mob_scan = function()
-		for i = 1, C_Vignettes.GetNumVignettes() do
-			local serial = C_Vignettes.GetVignetteGUID (i)
-			if (serial) then
-				local _, _, name, objectIcon = C_Vignettes.GetVignetteInfoFromInstanceID (serial)
-				if (objectIcon and (objectIcon == 41 or objectIcon == 4733)) then
-					if (FlashTaskBar.db.profile.any_rare) then
-						FlashTaskBar:DoFlash("rare_scan")
-					elseif (name) then
-						for _, npc_name in ipairs (FlashTaskBar.db.profile.rare_names) do
-							npc_name = lower (npc_name)
-							name = lower (name)
-							if (npc_name == name) then
-								FlashTaskBar:DoFlash("rare_scan")
+	
+		--/dump C_VignetteInfo.GetVignetteInfo (C_VignetteInfo.GetVignettes()[1])
+		--/dump C_VignetteInfo.GetVignettes()
+
+		for index, GUID in ipairs (C_VignetteInfo.GetVignettes()) do
+			local vignetteInfo = C_VignetteInfo.GetVignetteInfo (GUID)
+			if (vignetteInfo.onMinimap and not vignetteInfo.isDead and vignetteInfo.atlasName == "VignetteKill") then --vignetteID == 2004
+				
+				local objectGUID = vignetteInfo.objectGUID
+				
+				if (FlashTaskBar.db.profile.any_rare) then
+					if (not FlashTaskBar.RareFlashCooldown [objectGUID] or FlashTaskBar.RareFlashCooldown [objectGUID] < time()) then
+						FlashTaskBar:DoFlash ("rare_scan")
+						FlashTaskBar.RareFlashCooldown [objectGUID] = time() + 180
+					end
+				
+				elseif (vignetteInfo.name) then
+					for _, npc_name in ipairs (FlashTaskBar.db.profile.rare_names) do
+						npc_name = lower (npc_name)
+						name = lower (name)
+						if (npc_name == name) then
+							if (not FlashTaskBar.RareFlashCooldown [objectGUID] or FlashTaskBar.RareFlashCooldown [objectGUID] < time()) then
+								FlashTaskBar:DoFlash ("rare_scan")
+								FlashTaskBar.RareFlashCooldown [objectGUID] = time() + 180
 							end
 						end
 					end
@@ -582,11 +596,11 @@ function FlashTaskBar.OnInit (self)
 	end
 	
 	function FlashTaskBar:EnableRareMobScan()
-		FlashTaskBar:RegisterEvent ("VIGNETTE_ADDED", do_rare_mob_scan) --"VIGNETTE_REMOVED"
+		FlashTaskBar:RegisterEvent ("VIGNETTES_UPDATED", do_rare_mob_scan)
 	end
 	
 	function FlashTaskBar:DisableRareMobScan()
-		FlashTaskBar:UnregisterEvent ("VIGNETTE_ADDED")
+		FlashTaskBar:UnregisterEvent ("VIGNETTES_UPDATED")
 	end
  
 --> overrides

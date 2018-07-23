@@ -32,11 +32,11 @@ oRA3DB = {
 		},
 		["Alerts"] = {
 			["profiles"] = {
-				["Krixi"] = {
+				["Skullflower"] = {
 					["resurrect"] = true,
 					["tauntPet"] = true,
 				},
-				["Skullflower"] = {
+				["Krixi"] = {
 					["resurrect"] = true,
 					["tauntPet"] = true,
 				},
@@ -215,7 +215,7 @@ oRA3DB = {
 			["lastSelectedPanel"] = "Checks",
 		},
 		["Krixi"] = {
-			["lastSelectedList"] = 1,
+			["lastSelectedPanel"] = "Checks",
 			["positions"] = {
 				["oRA3ReadyCheck"] = {
 					["Height"] = 225,
@@ -240,7 +240,7 @@ oRA3DB = {
 					["PosX"] = 1028.80052461621,
 				},
 			},
-			["lastSelectedPanel"] = "Checks",
+			["lastSelectedList"] = 1,
 		},
 	},
 }

@@ -28,6 +28,7 @@ local string = _G.string; assert(string ~= nil,'string')
 local UIErrorsFrame = _G.UIErrorsFrame; assert(UIErrorsFrame ~= nil,'UIErrorsFrame')
 local UIParent = _G.UIParent; assert(UIParent ~= nil,'UIParent')
 local wipe = _G.wipe; assert(wipe ~= nil,'wipe')
+local GetMinimapZoneText = _G.GetMinimapZoneText; assert(GetMinimapZoneText ~= nil,'GetMinimapZoneText')
 -- local AddOn
 local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
@@ -36,18 +37,31 @@ local print = P.print; assert(print ~= nil,'print')
 local T_CHECK = P.T_CHECK; assert(T_CHECK ~= nil,'T_CHECK')
 local T_RECIPES_FIND = P.T_RECIPES_FIND; assert(T_RECIPES_FIND ~= nil,'T_RECIPES_FIND')
 local T_SPELL_FIND = P.T_SPELL_FIND; assert(T_SPELL_FIND ~= nil,'T_SPELL_FIND')
+local LIB_HEREBEDRAGONS = P.LIB_HEREBEDRAGONS; assert(LIB_HEREBEDRAGONS ~= nil,'LIB_HEREBEDRAGONS')
+local TIMER_IDLE = P.TIMER_IDLE; assert(TIMER_IDLE ~= nil,'TIMER_IDLE')
 --
 function NOP:InitEvents()
   self:RegisterEvent("PLAYER_LOGIN") -- time to load-up data
   self:RegisterEvent("PLAYER_LEVEL_UP") -- lock skill up and some items could be level locked as well
-  self:RegisterEvent("SPELLS_CHANGED","PLAYER_LEVEL_UP")
-  self:RegisterEvent("BAG_UPDATE_DELAYED","BAG_UPDATE") -- check bags
+  self:RegisterEvent("SPELLS_CHANGED","PLAYER_LEVEL_UP") -- same as for spellbook
+  -- these triggers bag rescan
+  self:RegisterEvent("BAG_UPDATE","BAG_UPDATE")
+  self:RegisterEvent("BAG_UPDATE_DELAYED","BAG_UPDATE")
+  self:RegisterEvent("MAIL_CLOSED","BAG_UPDATE")
   self:RegisterEvent("UNIT_INVENTORY_CHANGED","BAG_UPDATE")
+  self:RegisterEvent("BAG_UPDATE_COOLDOWN","BAG_UPDATE")
+  self:RegisterEvent("BANKFRAME_CLOSED","BAG_UPDATE")
+  self:RegisterEvent("GUILDBANKFRAME_CLOSED","BAG_UPDATE")
+  self:RegisterEvent("MERCHANT_CLOSED","BAG_UPDATE")
+  self:RegisterEvent("TRADE_CLOSED","BAG_UPDATE")
   self:RegisterEvent("ITEM_PUSH","BAG_UPDATE")
   self:RegisterEvent("CHAT_MSG_LOOT","BAG_UPDATE")
+  --
   self:RegisterEvent("GET_ITEM_INFO_RECEIVED") -- when details about cached items are ready
+  -- rescan patterns
   self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED","LOOT_SPEC") -- now patterns did change
   self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED","LOOT_SPEC")
+  -- reset cache
   self:RegisterEvent("ZONE_CHANGED","ZONE_CHANGED") -- change zone
   self:RegisterEvent("ZONE_CHANGED_INDOORS","ZONE_CHANGED") -- leave indoors to outdoors or oposite
   self:RegisterEvent("ZONE_CHANGED_NEW_AREA","ZONE_CHANGED") -- leave instance
@@ -56,7 +70,6 @@ function NOP:InitEvents()
   self:RegisterEvent("QUEST_ACCEPTED") -- update Quest Bar if any item starting quest is placed on it
   self:RegisterEvent("UI_ERROR_MESSAGE") -- blacklist some messages when items and spells are loaded from cache
   self:RegisterEvent("GARRISON_LANDINGPAGE_SHIPMENTS") -- herald notify
-  self:RegisterEvent("PLAYER_ENTERING_WORLD") -- Loading screen
 end
 local OK_ERROR_SHOW = { -- OK errors not ship but not clear them as well
   [ERR_SPELL_FAILED_ANOTHER_IN_PROGRESS] = true,
@@ -85,7 +98,7 @@ function NOP:UI_ERROR_MESSAGE(event, msgType, msg, ...) -- handle lockpicking it
   end
   if OK_ERROR_NEXT[msg] then -- someone bashing button or item did move in bags
     UIErrorsFrame:Clear() -- remove error from error frame
-    self:ItemShowNew() -- look for another item
+    self:BAG_UPDATE() -- look for another item
     return
   end
   if OK_ERROR_SHOW[msg] then -- these errors are ok, item is on CD or can't be used in current state
@@ -100,19 +113,16 @@ function NOP:UI_ERROR_MESSAGE(event, msgType, msg, ...) -- handle lockpicking it
   --print("Type",msgType,"Msg",P.RGB_RED .. msg .. "|r")
 end
 function NOP:LOOT_SPEC() -- after spec or loot spec switch I need update all paterns!
-  if self.spellLoad then
-    self.spellLoad = nil
-    wipe(T_SPELL_FIND)
-    self:SpellLoad()
-  end
-  if self.itemLoad then
-    wipe(T_RECIPES_FIND)
-    self:ItemLoad()
-  end
-  self:ItemShowNew()
+  self.spellLoad = nil
+  wipe(T_SPELL_FIND)
+  self:SpellLoad()
+  self.itemLoad = nil
+  wipe(T_RECIPES_FIND)
+  self:ItemLoad()
+  self:BAG_UPDATE()
 end
 function NOP:BAG_UPDATE() -- bags have changed
-  self:ItemShowNew()
+  self:TimerFire('ItemShowNew', TIMER_IDLE)
 end
 NOP.FACTION_TABLE = {} -- ["faction_name"] = factionID,
 local tooltip_functions = {
@@ -138,7 +148,7 @@ function NOP:PLAYER_LOGIN() -- player entering game
   self:PickLockUpdate() -- picklock skills
   local key = GetBindingKey("CLICK " .. P.BUTTON_FRAME .. ":LeftButton")
   if self.BF.hotkey then self.BF.hotkey:SetText(self:ButtonHotKey(key)) end
-  self:TimerFire("ZoneChanged",P.TIMER_IDLE)
+  self:TimerFire("ZONE_CHANGED",P.TIMER_IDLE)
   self:ScheduleRepeatingTimer("ItemTimer", P.TIMER_RECHECK) -- slow backing timer for complete rescan, sometime GetItemSpell get hang or new item is added post events are triggered
   if not self.tooltipHooked then
     self.tooltipHooked = true
@@ -158,12 +168,25 @@ function NOP:PLAYER_LOGIN() -- player entering game
   end
 end
 function NOP:ZONE_CHANGED() -- map change, all items tied to zone need update
-  self:TimerFire("ZoneChanged",P.TIMER_IDLE)
+  self:Profile(true)
+  local recheck = false
+  local minimapZone, mapID = GetMinimapZoneText(), LIB_HEREBEDRAGONS:GetPlayerZone()
+  if mapID and mapID ~= self.mapID then
+    self.mapID = mapID
+    wipe(T_CHECK) -- empty list, recheck all on new map
+    recheck = true
+  end
+  if minimapZone and minimapZone ~= self.Zone then -- new zone need update Button
+    self.Zone = minimapZone
+    recheck = true
+  end
+  self:BAG_UPDATE()
+  self:Profile(false)
 end
 function NOP:PLAYER_LEVEL_UP() -- may be there are items now usable
   self:PickLockUpdate() -- new level rising picklock level
   wipe(T_CHECK) -- empty already checked items
-  self:ItemShowNew()
+  self:BAG_UPDATE()
 end
 function NOP:QUEST_ACCEPTED() -- update quest bard buttons
   if not NOP.DB.quest then return end -- quest bar is disabled and hidden nothing to do
@@ -191,6 +214,6 @@ function NOP:GARRISON_LANDINGPAGE_SHIPMENTS() -- print notifications into chat
   self:CheckBuilding()
 end
 function NOP:GET_ITEM_INFO_RECEIVED() -- ItemLoad and SpellLoad need cached items from server
-  self:TimerFire("ItemLoad", P.TIMER_IDLE)
-  self:TimerFire("SpellLoad", P.TIMER_IDLE)
+  self:TimerFire("ItemLoad", TIMER_IDLE)
+  self:TimerFire("SpellLoad", TIMER_IDLE)
 end

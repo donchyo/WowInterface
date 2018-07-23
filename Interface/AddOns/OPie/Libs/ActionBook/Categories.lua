@@ -1,5 +1,6 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
+local is8 = select(4,GetBuildInfo()) >= 8e4
 local AB, mark = assert(T.ActionBook:compatible(2, 21), "A compatible version of ActionBook is required"), {}
 local RW = assert(T.ActionBook:compatible("Rewire", 1, 10), "A compatible version of Rewire is required")
 local L = AB:locale()
@@ -34,8 +35,14 @@ do -- spellbook
 			end
 		end
 		wipe(mark)
-		for i=1,6 do
-			local free, id = GetPvpTalentRowSelectionInfo(i)
+		for i=1,6 do -- TODO: BfA compat: there are only 5 slots
+			local free, id
+			if is8 then
+				id = C_SpecializationInfo.GetPvpTalentSlotInfo(i)
+				id = id and id.selectedTalentID
+			else
+				free, id = GetPvpTalentRowSelectionInfo(i)
+			end
 			if id and not free then
 				local sid = select(6, GetPvpTalentInfoByID(id))
 				if sid and not IsPassiveSpell(sid) then

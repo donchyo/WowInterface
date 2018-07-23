@@ -3,7 +3,7 @@ Accountant: disabled
 ActionBarSaver: enabled
 AddonProfiler: disabled
 AddonUsage: disabled
-AdvancedInterfaceOptions: disabled
+AdvancedInterfaceOptions: enabled
 AdvancedIconSelector: disabled
 Altoholic: disabled
 Altoholic_Achievements: disabled
@@ -93,7 +93,7 @@ DataStore_Spells: disabled
 DataStore_Stats: disabled
 DataStore_Talents: disabled
 DeathNote: enabled
-DejaCharacterStats: disabled
+DejaCharacterStats: enabled
 Details: disabled
 Details_DmgRank: disabled
 Details_DpsTuning: disabled
@@ -128,12 +128,12 @@ Hack: disabled
 HideOrderHallBar: enabled
 idTip: disabled
 iEncounterEventTracker: disabled
-iKeystones: enabled
+iKeystones: disabled
 BloodTrader: disabled
 !InspectFix: disabled
 iTargetingFrames: disabled
-Keystones: enabled
-LazyKeystones: enabled
+Keystones: disabled
+LazyKeystones: disabled
 Leatrix_Plus: disabled
 LegionTODOMini: disabled
 Ace3: disabled
@@ -295,3 +295,4 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 Kui_Media: disabled
 GladiusEx: disabled
+AddOnSkins: enabled

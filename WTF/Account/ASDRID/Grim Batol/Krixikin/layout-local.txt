@@ -1,11 +1,11 @@
 Version: 1
-Frame: ObjectiveTrackerFrame
+Frame: LootFrame
 FrameLevel: 1
-Anchor: RIGHT
-X: -120
-Y: 38
-W: 260
-H: 550
+Anchor: CENTER
+X: 71
+Y: 51
+W: 170
+H: 240
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: RIGHT
@@ -20,13 +20,6 @@ X: -43
 Y: -10
 W: 365
 H: 200
-Frame: bdCore config
-FrameLevel: 1
-Anchor: RIGHT
-X: -20
-Y: 0
-W: 740
-H: 450
 Frame: DetailsPlayerDetailsWindow
 FrameLevel: 1
 Anchor: RIGHT
@@ -34,13 +27,6 @@ X: -153
 Y: 62
 W: 790
 H: 454
-Frame: SMT_GUI
-FrameLevel: 2
-Anchor: CENTER
-X: 0
-Y: 0
-W: 600
-H: 700
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: RIGHT
@@ -48,10 +34,3 @@ X: 0
 Y: 195
 W: 370
 H: 110
-Frame: LootFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 71
-Y: 51
-W: 170
-H: 240

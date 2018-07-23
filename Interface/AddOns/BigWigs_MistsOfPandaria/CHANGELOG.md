@@ -1,6 +1,7 @@
 # BigWigs [Mists of Pandaria]
 
-## [v7.3.4](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/tree/v7.3.4) (2018-04-01)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/compare/v7.3.3...v7.3.4)
+## [v8.0.2](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/tree/v8.0.2) (2018-07-21)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/compare/v8.0.1...v8.0.2)
 
-- SiegeOfOrgrimmar/TheFallenProtectors: Use a custom fallback for the target scan.  
+- Update modules for new UNIT event arg order.  
+- SiegeOfOrgrimmar/GarroshHellscream: Update some UnitDebuff usage.  

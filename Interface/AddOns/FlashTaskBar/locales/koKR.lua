@@ -3,8 +3,8 @@ if not L then return end
 
 L["STRING_ADD"] = "추가"
 L["STRING_ADDKEYWORD"] = "단어 추가"
---Translation missing 
--- L["STRING_BACKGROUND_SOUND"] = ""
+--[[Translation missing --]]
+--[[ L["STRING_BACKGROUND_SOUND"] = ""--]] 
 L["STRING_BAGSFULL"] = "가득 찬 가방"
 L["STRING_BAGSFULL_DESC"] = "전문 기술 제작 중 소지품 가방이 가득 차면 알립니다."
 L["STRING_BATTLEGROUND"] = "전장 종료"
@@ -48,10 +48,10 @@ L["STRING_INVITES"] = "초대"
 L["STRING_INVITES_DESC"] = "누군가 당신을 그룹에 초대하면 알립니다."
 L["STRING_ONCOUNTDOWN"] = "타이머 시작"
 L["STRING_ONCOUNTDOWN_DESC"] = "화면에 초읽기가 표시되면 알립니다."
---Translation missing 
--- L["STRING_ONPLAYERDEATH"] = ""
---Translation missing 
--- L["STRING_ONPLAYERDEATH_DESC"] = ""
+--[[Translation missing --]]
+--[[ L["STRING_ONPLAYERDEATH"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["STRING_ONPLAYERDEATH_DESC"] = ""--]] 
 L["STRING_ONWHISPER"] = "귓속말 수신"
 L["STRING_ONWHISPER_DESC"] = "귓속말을 받으면 반짝입니다"
 L["STRING_OPENSOUNDPANEL"] = "소리 설정 열기"

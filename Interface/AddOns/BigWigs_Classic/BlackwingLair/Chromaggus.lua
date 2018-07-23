@@ -5,13 +5,6 @@
 local mod, CL = BigWigs:NewBoss("Chromaggus", 469, 1535)
 if not mod then return end
 mod:RegisterEnableMob(14020)
-mod.toggleOptions = {
-	23128, -- Enrage
-	23537, -- Frenzy
-	"breath",
-	"debuffs",
-	--"vulnerability",
-}
 
 local barcount = 2
 local debuffCount = 0
@@ -36,6 +29,16 @@ L = mod:GetLocale()
 --------------------------------------------------------------------------------
 -- Initialization
 --
+
+function mod:GetOptions()
+	return {
+		23128, -- Enrage
+		23537, -- Frenzy
+		"breath",
+		"debuffs",
+		--"vulnerability",
+	}
+end
 
 function mod:OnBossEnable()
 	self:RegisterEvent("INSTANCE_ENCOUNTER_ENGAGE_UNIT", "CheckBossStatus")
@@ -115,10 +118,10 @@ function mod:Breath(args)
 	self:Bar("breath", 60, args.spellId)
 end
 
-function mod:FrenzySoon(unitId)
+function mod:FrenzySoon(event, unitId)
 	local hp = UnitHealth(unitId) / UnitHealthMax(unitId)
 	if hp < 0.25 then -- Frenzy at 20%
-		self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", unitId)
+		self:UnregisterUnitEvent(event, unitId)
 		self:Message(23537, "Neutral", nil, CL.soon:format(self:SpellName(23537)), false)
 	end
 end

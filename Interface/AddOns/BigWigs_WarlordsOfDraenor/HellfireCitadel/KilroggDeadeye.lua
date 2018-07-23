@@ -117,7 +117,7 @@ do
 				if id then
 					self:Message(id, "Neutral", "Info", self:SpellName(id), false) -- SetOption:-11269,-11266,-11261,-11263:::
 					if id == -11269 then
-						self:CDBar(id, 70, nil, "spell_nature_shamanrage") -- Hulking Terror, 70-75
+						self:CDBar(-11269, 70, nil, "spell_nature_shamanrage") -- Hulking Terror, 70-75
 					end
 				end
 			end
@@ -207,7 +207,7 @@ end
 do
 	local prev = 0
 	function mod:FelBlaze(args)
-		if UnitBuff("player", self:SpellName(185458)) then -- Vision of Death
+		if self:UnitBuff("player", self:SpellName(185458)) then -- Vision of Death
 			local t = GetTime()
 			if t-prev > 3 then
 				prev = t
@@ -223,7 +223,7 @@ end
 do
 	local prev = 0
 	function mod:CinderBreath(args)
-		if UnitBuff("player", self:SpellName(185458)) then -- Vision of Death
+		if self:UnitBuff("player", self:SpellName(185458)) then -- Vision of Death
 			local t = GetTime()
 			if t-prev > 3 then
 				prev = t

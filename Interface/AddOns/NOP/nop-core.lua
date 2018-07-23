@@ -68,8 +68,6 @@ local TOOLTIP_SCAN = P.TOOLTIP_SCAN; assert(TOOLTIP_SCAN ~= nil,'TOOLTIP_SCAN')
 local TOOLTIP_SPELL = P.TOOLTIP_SPELL; assert(TOOLTIP_SPELL ~= nil,'TOOLTIP_SPELL')
 local whoCalls = P.whoCalls; assert(whoCalls ~= nil,'whoCalls')
 local WORK_ANNOUNCE = P.WORK_ANNOUNCE; assert(WORK_ANNOUNCE ~= nil,'WORK_ANNOUNCE')
-local LIB_ARTIFACTDATA = P.LIB_ARTIFACTDATA; assert(LIB_ARTIFACTDATA ~= nil,'LIB_ARTIFACTDATA')
-local LIB_HEREBEDRAGONS = P.LIB_HEREBEDRAGONS; assert(LIB_HEREBEDRAGONS ~= nil,'LIB_HEREBEDRAGONS')
 local LIB_MASQUE = P.LIB_MASQUE; -- this one could not exist
 local LIB_QUESTITEM = P.LIB_QUESTITEM; assert(LIB_QUESTITEM ~= nil,'LIB_QUESTITEM')
 local print = P.print; assert(print ~= nil,'print')
@@ -80,6 +78,7 @@ local T_RECIPES_FIND = P.T_RECIPES_FIND; assert(T_RECIPES_FIND ~= nil,'T_RECIPES
 local T_REPS = P.T_REPS; assert(T_REPS ~= nil,'T_REPS')
 local T_SPELL_FIND = P.T_SPELL_FIND; assert(T_SPELL_FIND ~= nil,'T_SPELL_FIND')
 local T_USE = P.T_USE; assert(T_USE ~= nil,'T_USE')
+local VALIDATE = P.VALIDATE -- this can be null or false
 --
 function NOP:Verbose(...) -- if verbose then output
   if NOP.DB.verbose then print(...) end
@@ -91,10 +90,6 @@ function NOP:OnInitialize() -- app initialize
   self.scanFrame = self:TooltipCreate(TOOLTIP_SCAN)
   self.itemFrame = self:TooltipCreate(TOOLTIP_ITEM)
   self.spellFrame = self:TooltipCreate(TOOLTIP_SPELL) -- /run NOP.spellFrame = NOP:TooltipCreate("NOP_TOOLTIP_SPELL")
-  LIB_ARTIFACTDATA.RegisterCallback(self,"ARTIFACT_ADDED",           "ArtifactCallback")
-  LIB_ARTIFACTDATA.RegisterCallback(self,"ARTIFACT_POWER_CHANGED" ,  "ArtifactCallback")
-  LIB_ARTIFACTDATA.RegisterCallback(self,"ARTIFACT_RELIC_CHANGED" ,  "ArtifactCallback")
-  LIB_ARTIFACTDATA.RegisterCallback(self,"ARTIFACT_TRAITS_CHANGED" , "ArtifactCallback")
 end
 function NOP:OnEnable() -- add-on enable
   self.masque = LIB_MASQUE and LIB_MASQUE:Group(ADDON) -- when user has installed Masque addon, then skinnig is done by Masque save new group pointer
@@ -110,6 +105,7 @@ function NOP:TooltipCreate(name) -- create tooltip frame
   frame:SetOwner(UIParent,"ANCHOR_NONE") -- frame out of screen and start updating
   return frame
 end
+local tItemRetry = {}
 function NOP:ItemLoad() -- load template item tooltips
   local itemRetry = nil
   self:Profile(true)
@@ -117,7 +113,13 @@ function NOP:ItemLoad() -- load template item tooltips
   for itemID, data in pairs(NOP.T_RECIPES) do
     if not T_RECIPES_FIND[itemID] then -- need fill pattern
       local name = GetItemInfo(itemID) -- query or fill client side cache
-      if (name == nil) or (name == "") then -- item has no info on client side yet, let wait for server
+      if type(name) ~= 'string' or name == '' then -- item has no info on client side yet, let wait for server
+        if VALIDATE then
+          local retry = tItemRetry[itemID] or 0
+          retry = retry + 1
+          tItemRetry[itemID] = retry
+          if retry > 1 then print("ItemLoad:GetItemInfo() empty for",itemID, retry) end
+        end
         itemRetry = itemID
       else
         local c,pattern,zone,map,faction = unpack(data,1,5)
@@ -143,8 +145,9 @@ function NOP:ItemLoad() -- load template item tooltips
               end
             end
           end
-        else
-          self:Verbose("ItemLoad:Empty tooltip", itemID)
+        else -- in normal case this code can't be reached if yes something is broken
+          self:Verbose("ItemLoad() empty tooltip for", itemID)
+          if VALIDATE then print("ItemLoad() empty tooltip for",itemID,tItemRetry[itemID]) end
           itemRetry = itemID
           self.itemFrame = self:TooltipCreate(TOOLTIP_ITEM) -- empty tooltip I just throw out old one. Workaround for bad tooltip frame init damn Blizzard!
           break
@@ -153,31 +156,40 @@ function NOP:ItemLoad() -- load template item tooltips
     end
   end
   self:Profile(false)
+  if itemRetry then self:TimerFire("ItemLoad", P.TIMER_IDLE) end -- it is even driven, but who trust Blizzard's API?
   self.itemLoad = true
-  --print("ItemLoad",itemRetry)
 end
 local spellLoaded = {}
+local tSpellRetry = {}
 function NOP:SpellLoad() -- load spell patterns
   local spellRetry = nil
   self:Profile(true)
   for itemID,data in pairs(NOP.T_SPELL_BY_NAME) do
-    if not spellLoaded[itemID] then -- not yet added
+    if not spellLoaded[itemID] then -- not in local cache yet
       local name = GetItemInfo(itemID) -- 1st fetch item into cache
-      if name == nil or name == "" then
+      if type(name) ~= 'string' or name == '' then
+        if VALIDATE then
+          local retry = tSpellRetry[itemID] or 0
+          retry = retry + 1
+          tSpellRetry[itemID] = retry
+          if retry > 1 then print("SpellLoad:GetItemInfo() empty for ",itemID,retry) end
+        end
         spellRetry = itemID
+      else 
+        local spell = GetItemSpell(itemID) -- now query if it has spell
+        if type(spell) == 'string' and spell ~= "" then
+          T_SPELL_FIND[spell] = data
+          spellLoaded[itemID] = true
+        else -- in normal case this code can't be rached because tables are validated
+          if VALIDATE then print("GetItemSpell() no spell for",itemID, name, GetItemInfo(itemID)) end
+          spellRetry = itemID
+        end
       end
-    end
-    local spell = GetItemSpell(itemID) -- now query if it has spell
-    if spell and spell ~= "" then
-      T_SPELL_FIND[spell] = data
-      spellLoaded[itemID] = true
-    else
-      spellRetry = itemID
     end
   end
   self:Profile(false)
+  if spellRetry then self:TimerFire("SpellLoad", P.TIMER_IDLE) end -- it is even driven, but who trust Blizzard's API?
   self.spellLoad = true
-  --print("SpellLoad",spellRetry)
 end
 function NOP:PickLockUpdate() -- rogue picklocking
   if IsPlayerSpell(SPELL_PICKLOCK) then -- have it in spellbook?
@@ -235,7 +247,7 @@ function NOP:BlacklistReset() -- reset permanent blacklist
     NOP.DB.T_BLACKLIST_Q = {} 
   end
   wipe(T_CHECK)
-  self:ItemShowNew()
+  self:BAG_UPDATE()
 end
 function NOP:BlacklistItem(isPermanent,itemID) -- right click will add item into blacklist
   if itemID then
@@ -281,19 +293,6 @@ function NOP:SecondsToString(s) -- return delta, time-string
   if nM > 0  then return  5,string.format("%d",nM) .. ":" .. string.format("%02d",nS); end
   if s > 9.9 then return  1,string.format("%.0f",s); end
   return 0.1, string.format("%.1f",s)
-end
-function NOP:ZoneChanged() -- zone and mimapZone change
-  self:Profile(true)
-  local minimapZone, mapID = GetMinimapZoneText(), LIB_HEREBEDRAGONS:GetPlayerZone()
-  if mapID and mapID ~= self.mapID then
-    self.mapID = mapID
-    table.wipe(T_CHECK) -- empty list, recheck all on new map
-  end
-  if minimapZone and minimapZone ~= self.Zone then -- new zone need update Button
-    self.Zone = minimapZone
-    self:ItemShowNew()
-  end
-  self:Profile(false)
 end
 function NOP:removekey(t, key) -- remove item in hash table by key
   if t and key and (type(t) == "table") and (t[key] ~= nil) then
@@ -448,40 +447,6 @@ function NOP:GetReputation(name) -- reputation standing with paragon reward chec
   local reward
   if C_Reputation.IsFactionParagon(fID) then _, _, _, reward = C_Reputation.GetFactionParagonInfo(fID) end
   return level, top, value, reward
-end
-local artRanks = {}
-local artTraits = {}
-function NOP:ArtifactCallback(msg,artifactID) -- LibArtifactData callback with announce
-  if not NOP.DB.herald then return end
-  if artifactID then
-    local _, data = LIB_ARTIFACTDATA:GetArtifactInfo(artifactID)
-    if data then
-      if data.numRanksPurchasable then
-        if (data.numRanksPurchasable > 0) then -- inform about visit OH to spend points on weapons
-          if not artRanks[artifactID] then
-            self:PrintToActive((ARTIFACT_ANNOUNCE):format(("%s [%d]"):format(data.name,data.numRanksPurchased),data.numRanksPurchasable))
-            artRanks[artifactID] = true
-          end
-        else
-          if artRanks[artifactID] then artRanks[artifactID] = nil end
-        end
-      end
-      if data.relics then
-        local visit = false
-        for i=1, #data.relics do
-          if data.relics[i].canAddTalent then visit = true end
-        end
-        if visit then 
-          if not artTraits[artifactID] then
-            self:PrintToActive(("%s [%d]. %s"):format(data.name,data.numRanksPurchased,ARTIFACT_RELIC_TALENT_AVAILABLE))
-            artTraits[artifactID] = true
-          end
-        else
-          if artTraits[artifactID] then artTraits[artifactID] = nil end -- reset announce when all are spend
-        end
-      end
-    end
-  end
 end
 local T_timers = {}
 function NOP:TimerFire(name,period,...) -- timer without overlap

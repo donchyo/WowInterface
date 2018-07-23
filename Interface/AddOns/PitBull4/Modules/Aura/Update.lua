@@ -5,8 +5,6 @@ local PitBull4 = _G.PitBull4
 local L = PitBull4.L
 local PitBull4_Aura = PitBull4:GetModule("Aura")
 
-local bfa_800 = select(4, GetBuildInfo()) >= 80000
-
 local UnitAura = _G.UnitAura
 local GetWeaponEnchantInfo = _G.GetWeaponEnchantInfo
 local ceil = _G.math.ceil
@@ -45,10 +43,10 @@ local wipe = _G.table.wipe
 -- [15] = spell_id
 -- [16] = can_apply_aura
 -- [17] = boss_debuff
--- (not set)
 -- [18] = cast_by_player
 -- [19] = nameplate_show_all
 -- [20] = time_mod
+
 local list = {}
 
 -- pool of available entries to be used in list
@@ -56,7 +54,7 @@ local pool = {}
 
 -- The final index of the entries.  We need this so we can always
 -- get all values when copying or using unpack.
-local ENTRY_END = 17
+local ENTRY_END = 20
 
 -- Table we store the weapon enchant info in.
 -- This table is never cleared and entries are reused.
@@ -126,20 +124,12 @@ local function get_aura_list(list, unit, db, is_buff, frame)
 		end
 
 		-- Note entry[2] says if the aura is a weapon enchant
-		if not bfa_800 then
-			entry[1], entry[2], entry[3], entry[4], entry[5], entry[6],
-				entry[7], entry[8], entry[9], entry[10], entry[11],
-				entry[12], entry[13], entry[14], entry[15], entry[16],
-				entry[17] =
-				id, nil, nil, is_buff, UnitAura(unit, id, filter)
-		else
-			-- entry[6] (rank text) was removed in 8.0
-			entry[1], entry[2], entry[3], entry[4], entry[5],
-				entry[7], entry[8], entry[9], entry[10], entry[11],
-				entry[12], entry[13], entry[14], entry[15], entry[16],
-				entry[17] =
-				id, nil, nil, is_buff, UnitAura(unit, id, filter)
-		end
+		-- entry[6] (rank text) was removed in 8.0
+		entry[1], entry[2], entry[3], entry[4], entry[5],
+			entry[7], entry[8], entry[9], entry[10], entry[11],
+			entry[12], entry[13], entry[14], entry[15], entry[16],
+			entry[17], entry[18], entry[19], entry[20] =
+			id, nil, nil, is_buff, UnitAura(unit, id, filter)
 
 		if not entry[5] then
 			-- No more auras, break the outer loop
@@ -225,7 +215,7 @@ local function get_aura_list_sample(list, unit, max, db, is_buff, is_player)
 			entry[12]  = (i - num_entries < 5) and "player" or nil -- caster (show 4 player entries)
 		end
 		entry[4]  = is_buff
-		entry[6]  = "" -- rank
+		entry[6]  = nil -- rank
 		entry[7]  = is_buff and sample_buff_icon or sample_debuff_icon
 		entry[8]  = i -- count set to index to make order show
 		entry[10]  = 0 -- duration
@@ -235,6 +225,9 @@ local function get_aura_list_sample(list, unit, max, db, is_buff, is_player)
 		entry[15] = nil -- spell_id
 		entry[16] = nil -- can_apply_aura
 		entry[17] = nil -- boss_debuff
+		entry[18] = nil -- cast_by_player
+		entry[19] = nil -- nameplate_show_all
+		entry[20] = nil -- time_mod
 	end
 end
 
@@ -320,7 +313,7 @@ local function set_weapon_entry(list, is_enchant, time_left, expiration_time, co
 	entry[3] = quality
 	entry[4] = true -- is_buff
 	entry[5] = name
-	entry[6] = "" -- rank
+	entry[6] = nil -- rank
 	entry[7] = texture
 	entry[8] = count
 	entry[9] = nil
@@ -332,6 +325,9 @@ local function set_weapon_entry(list, is_enchant, time_left, expiration_time, co
 	entry[15] = nil -- spell_id
 	entry[16] = nil -- can_apply_aura
 	entry[17] = nil -- boss_debuff
+	entry[18] = nil -- cast_by_player
+	entry[19] = nil -- nameplate_show_all
+	entry[20] = nil -- time_mod
 end
 
 -- If the src table has a valid weapon enchant entry for the slot
@@ -450,7 +446,7 @@ end
 local function set_aura(frame, db, aura_controls, aura, i, is_friend)
 	local control = aura_controls[i]
 
-	local id, slot, quality, is_buff, name, _, icon, count, debuff_type, duration, expiration_time, caster, _, _, spell_id = unpack(aura, 1, ENTRY_END)
+	local id, slot, quality, is_buff, name, _, icon, count, debuff_type, duration, expiration_time, caster, _, _, spell_id, _, _, _, _, time_mod = unpack(aura, 1, ENTRY_END)
 
 	local is_mine = my_units[caster]
 	local who = is_mine and "my" or "other"
@@ -468,7 +464,7 @@ local function set_aura(frame, db, aura_controls, aura, i, is_friend)
 	local layout = is_buff and db.layout.buff or db.layout.debuff
 	control:SetFrameLevel(frame:GetFrameLevel() + layout.frame_level)
 
-	local unchanged = id == control.id and expiration_time == control.expiration_time and spell_id == control.spell_id and slot == control.slot and is_buff == control.is_buff and caster == control.caster and count == control.count and duration == control.duration
+	local unchanged = id == control.id and expiration_time == control.expiration_time and spell_id == control.spell_id and slot == control.slot and is_buff == control.is_buff and caster == control.caster and count == control.count and duration == control.duration and time_mod == control.time_mod
 
 	control.id = id
 	control.is_mine = is_mine
@@ -481,6 +477,7 @@ local function set_aura(frame, db, aura_controls, aura, i, is_friend)
 	control.slot = slot
 	control.caster = caster
 	control.spell_id = spell_id
+	control.time_mod = time_mod
 
 	local class_db = frame.classification_db
 	if not db.click_through and class_db and not class_db.click_through then
@@ -682,6 +679,10 @@ local function update_cooldown_text(aura)
 
 	local current_time = GetTime()
 	local time_left = expiration_time - current_time
+	if aura.time_mod > 0 then
+		time_left = time_left / aura.time_mod
+	end
+
 	local new_time
 	if time_left >= 0 then
 		if time_left >= 3600 then
@@ -960,4 +961,11 @@ function PitBull4_Aura:OnUpdate()
 	self:UpdateWeaponEnchants()
 
 	self:UpdateFilters()
+end
+
+function PitBull4_Aura:UpdateAll()
+	for frame in PitBull4:IterateFrames() do
+		self:Update(frame)
+	end
+	wipe(guids_to_update)
 end

@@ -37,6 +37,27 @@ local INSTANCE_SAVED, TRANSFER_ABORT_TOO_MANY_INSTANCES, NO_RAID_INSTANCES_SAVED
 
 local ALREADY_LOOTED = ERR_LOOT_GONE:gsub("%(.*%)","")
 
+local UnitAura = UnitAura
+-- Unit Aura functions that return info about the first Aura matching the spellName or spellID given on the unit.
+local SI_GetUnitAura = function(unit, spell, filter)
+    for i = 1, 40 do
+        local name, _, _, _, _, _, _, _, _, spellId = UnitAura(unit, i, filter)
+        if not name then return end
+        if spell == spellId or spell == name then
+            return UnitAura(unit, i, filter)
+        end
+    end
+end
+
+local SI_GetUnitBuff = function(unit, spell, filter)
+    return SI_GetUnitAura(unit, spell, filter)
+end
+
+local SI_GetUnitDebuff = function(unit, spell, filter)
+    filter = filter and filter.."|HARMFUL" or "HARMFUL"
+    return SI_GetUnitAura(unit, spell, filter)
+end
+
 vars.Indicators = {
   ICON_STAR = ICON_LIST[1] .. "16:16:0:0|t",
   ICON_CIRCLE = ICON_LIST[2] .. "16:16:0:0|t",
@@ -62,6 +83,7 @@ local KeystoneAbbrev = {
   [227] = L["L Kara"],
   [233] = L["CoEN"],
   [234] = L["U Kara"],
+  [239] = L["SotT"],
 }
 
 local KeystonetoAbbrev = {
@@ -77,6 +99,7 @@ local KeystonetoAbbrev = {
   ["Return to Karazhan: Lower"] = L["L Kara"],
   ["Cathedral of Eternal Night"] = L["CoEN"],
   ["Return to Karazhan: Upper"] = L["U Kara"],
+  ["Seat of the Triumvirate"] = L["SotT"],
 }
 
 vars.Categories = { }
@@ -116,26 +139,31 @@ local currency = {
   823, -- Apexis Crystal
   824, -- Garrison Resources
   994, -- Seal of Tempered Fate
-  1101,-- Oil
-  1129,-- Seal of Inevitable Fate
-  1149,-- Sightless Eye
-  1155,-- Ancient Mana
-  1166,-- Timewarped Badge
+  1101, -- Oil
+  1129, -- Seal of Inevitable Fate
+  1149, -- Sightless Eye
+  1155, -- Ancient Mana
+  1166, -- Timewarped Badge
   1191, -- Valor Points
-  1220,-- Order Resources
-  1226,-- Nethershards
-  1273,-- Seal of Broken Fate
-  1275,-- Curious Coin
-  1299,-- Brawler's Gold
-  1314,-- Lingering Soul Fragment
-  1342,-- Legionfall War Supplies
-  1501,-- Writhing Essence
+  1220, -- Order Resources
+  1226, -- Nethershards
+  1273, -- Seal of Broken Fate
+  1275, -- Curious Coin
+  1299, -- Brawler's Gold
+  1314, -- Lingering Soul Fragment
+  1342, -- Legionfall War Supplies
+  1501, -- Writhing Essence
+  1508, -- Veiled Argunite
+  1533, -- Wakening Essence
 }
 addon.currency = currency
 
 addon.LFRInstances = {
+  -- index is the id found in LFGDungeons.dbc or using the command below.
+  -- /script local id,name; for i=1,GetNumRFDungeons() do id,name = GetRFDungeonInfo(i);print(i..". "..name.." ("..id..")");end
   -- total is boss count, base is boss offset,
-  -- parent is instance name to use
+  -- parent is instance name to use, GetLFGDungeonInfo() or using the command below.
+  -- /run for i, v in ipairs(GetLFRChoiceOrder()) do print(i, v, GetLFGDungeonInfo(v)) end
   -- altid is for alternate LFRID for higher level toons
 
   [416] = { total=4, base=1,  parent=448, altid=843 }, -- DS1: The Siege of Wyrmrest Temple
@@ -169,30 +197,26 @@ addon.LFRInstances = {
   [985] = { total=3, base=10, parent=989, altid=1369, remap={ 9, 10, 12 } }, -- Hellfire4: Destructor's Rise
   [986] = { total=1, base=13, parent=989, altid=1370 }, -- Hellfire5: The Black Gate
 
-  [1287] = { total=3, base=1,  parent=1350,altid=nil, remap={ 1, 2, 3 } }, -- EN1: Darkbough
-  [1288] = { total=3, base=4,  parent=1350,altid=nil, remap={ 1, 2, 3 } }, -- EN2: Tormented Guardians
-  [1289] = { total=1, base=7,  parent=1350,altid=nil, remap={ 1 } },       -- EN3: Rift of Aln
+  [1287] = { total=3, base=1,  parent=1350, altid=nil, remap={ 1, 2, 3 } }, -- EN1: Darkbough
+  [1288] = { total=3, base=4,  parent=1350, altid=nil, remap={ 1, 2, 3 } }, -- EN2: Tormented Guardians
+  [1289] = { total=1, base=7,  parent=1350, altid=nil, remap={ 1 } },       -- EN3: Rift of Aln
 
-  [1411] = { total=3, base=1,  parent=1439,altid=nil }, -- ToV
+  [1411] = { total=3, base=1,  parent=1439, altid=nil }, -- ToV
 
-  [1290] = { total=3, base=1,  parent=1353,altid=nil }, -- NH1: Arcing Aqueducts
-  [1291] = { total=3, base=4,  parent=1353,altid=nil, remap={ 1, 2, 3 } }, -- NH2: Royal Athenaeum
-  [1292] = { total=3, base=7,  parent=1353,altid=nil, remap={ 1, 2, 3 } }, -- NH3: Nightspire
-  [1293] = { total=1, base=10, parent=1353,altid=nil, remap={ 1 } }, -- NH4: Betrayer's Rise
+  [1290] = { total=3, base=1,  parent=1353, altid=nil }, -- NH1: Arcing Aqueducts
+  [1291] = { total=3, base=4,  parent=1353, altid=nil, remap={ 1, 2, 3 } }, -- NH2: Royal Athenaeum
+  [1292] = { total=3, base=7,  parent=1353, altid=nil, remap={ 1, 2, 3 } }, -- NH3: Nightspire
+  [1293] = { total=1, base=10, parent=1353, altid=nil, remap={ 1 } }, -- NH4: Betrayer's Rise
 
---[[  
-  [1494] = { total=3, base=1,  parent=1527,altid=nil }, -- ToS1: The Gates of Hell (6/27/17)
-  [1495] = { total=3, base=4,  parent=1527,altid=nil, remap={ 1, 2, 3 } }, -- ToS2: Wailing Halls (7/11/17)
-  [1496] = { total=2, base=7,  parent=1527,altid=nil, remap={ 1, 2} }, -- ToS3: Chamber of the Avatar (7/25/17)
-  [1497] = { total=1, base=9,  parent=1527,altid=nil, remap={ 1 } }, -- ToS4: Deceiver's Fall (8/8/17)
- ]] 
-  -- Optionally for wind 3.. see on wed
-[1494] = { total=3, base=1, parent=1527,altid=nil, remap={ 1, 2, 3 } }, -- ToS1: The Gates of Hell (6/27/17)
-[1495] = { total=3, base=4, parent=1527,altid=nil, remap={ 1, 2, 3 } }, -- ToS2: Wailing Halls (7/11/17)
-[1496] = { total=2, base=7, parent=1527,altid=nil, remap={ 7, 8 } }, -- ToS3: Chamber of the Avatar (7/25/17)
-[1497] = { total=1, base=9, parent=1527,altid=nil, remap={ 9 } }, -- ToS4: Deceiver's Fall (8/8/17)
+  [1494] = { total=3, base=1, parent=1527, altid=nil, remap={ 1, 2, 3 } }, -- ToS1: The Gates of Hell (6/27/17)
+  [1495] = { total=3, base=4, parent=1527, altid=nil, remap={ 1, 2, 3 } }, -- ToS2: Wailing Halls (7/11/17)
+  [1496] = { total=2, base=7, parent=1527, altid=nil, remap={ 1, 2 } }, -- ToS3: Chamber of the Avatar (7/25/17)
+  [1497] = { total=1, base=9, parent=1527, altid=nil, remap={ 1 } }, -- ToS4: Deceiver's Fall (8/8/17)
 
-  
+  [1610] = { total=3, base=1, parent=1642, altid=nil, remap={ 1, 2, 3 } }, -- Antorus: Light's Breach
+  [1611] = { total=3, base=4, parent=1642, altid=nil, remap={ 1, 2, 3 } }, -- Antorus: Forbidden Descent
+  [1612] = { total=3, base=7, parent=1642, altid=nil, remap={ 1, 2, 3 } }, -- Antorus: Hope's End
+  [1613] = { total=2, base=10, parent=1642, altid=nil, remap={ 1, 2 } }, -- Antorus: Seat of the Pantheon
 }
 
 local tmp = {}
@@ -210,7 +234,7 @@ addon.WorldBosses = {
   [725] = { quest=32098, expansion=4, level=90 }, -- Galleon
   [814] = { quest=32518, expansion=4, level=90 }, -- Nalak
   [826] = { quest=32519, expansion=4, level=90 }, -- Oondasta
-  [857] = { quest=33117,   expansion=4, level=90, name=L["The Four Celestials"]  }, -- Chi-Ji
+  [857] = { quest=33117, expansion=4, level=90, name=L["The Four Celestials"]  }, -- Chi-Ji
   --[858] = { quest=nil, expansion=4, level=90 }, -- Yu'lon
   --[859] = { quest=nil, expansion=4, level=90 }, -- Niuzao
   --[860] = { quest=nil, expansion=4, level=90 }, -- Xuen
@@ -226,7 +250,7 @@ addon.WorldBosses = {
   [1291] = { remove=true }, -- Drov cleanup
 
   [1262] = { quest=37464, expansion=5, level=100 }, -- Rukhmar
-  [1452] = { quest=94015, expansion=5, level=100 }, -- Kazzak
+  [1452] = { quest=39380, expansion=5, level=100 }, -- Kazzak
 
   [1749] = { quest=42270, expansion=6, level=110 }, -- Nithogg
   [1756] = { quest=42269, expansion=6, level=110, name=EJ_GetEncounterInfo(1756) }, -- The Soultakers
@@ -241,12 +265,22 @@ addon.WorldBosses = {
   [1796] = { quest=44287, expansion=6, level=110 }, -- Withered Jim
   [1883] = { quest=46947, expansion=6, level=110 }, -- Brutallus
   [1884] = { quest=46948, expansion=6, level=110 }, -- Malificus
-  [1885] = { quest=46945, expansion=6, level=110 }, -- Si'vash 
+  [1885] = { quest=46945, expansion=6, level=110 }, -- Si'vash
   [1956] = { quest=47061, expansion=6, level=110 }, -- Apocron
 
+  -- Argus Greater Invasions
+  [2010] = { quest=49169, name=EJ_GetEncounterInfo(2010), expansion=6, level=110}, -- Matron Folnuna
+  [2011] = { quest=49167, name=EJ_GetEncounterInfo(2011), expansion=6, level=110}, -- Mistress Alluradel
+  [2012] = { quest=49166, name=EJ_GetEncounterInfo(2012), expansion=6, level=110}, -- Inquisitor Meto
+  [2013] = { quest=49170, name=EJ_GetEncounterInfo(2013), expansion=6, level=110}, -- Occularus
+  [2014] = { quest=49171, name=EJ_GetEncounterInfo(2014), expansion=6, level=110}, -- Sotanathor
+  [2015] = { quest=49168, name=EJ_GetEncounterInfo(2015), expansion=6, level=110}, -- Pit Lord Vilemus
 
   -- bosses with no EJ entry (eid is a placeholder)
   [9001] = { quest=38276, name=GARRISON_LOCATION_TOOLTIP.." "..BOSS, expansion=5, level=100 },
+  [9002] = { quest=47461, name="Lord Kazzak", expansion=6, level=110},          -- Lord Kazzak (13th Anniversary)
+  [9003] = { quest=47462, name="Azuregos", expansion=6, level=110},             -- Azuregos (13th Anniversary)
+  [9004] = { quest=47463, name="Dragon of Nightmare", expansion=6, level=110},  -- Dragon of Nightmare (13th Anniversary)
 }
 
 local _specialQuests = {
@@ -275,7 +309,7 @@ local _specialQuests = {
   [39289] = { zid=945, daily=true }, -- Doomroller
   [39290] = { zid=945, daily=true }, -- Vengeance
   -- Order Hall
-  [42517] = { zid=1050, daily=true }, -- Warlock: Ritual of Doom
+  [42481] = { zid=1050, daily=true }, -- Warlock: Ritual of Doom
   [44707] = { zid=1052, daily=true, sid=228651 }, -- Demon Hunter: Twisting Nether
 }
 
@@ -319,7 +353,7 @@ function addon:specialQuests()
     end
 
     if not qinfo.zone and qinfo.zid then
-      qinfo.zone = GetMapNameByID(qinfo.zid)
+      qinfo.zone = C_Map.GetMapInfo(qinfo.zid)
     end
   end
 
@@ -333,16 +367,16 @@ local QuestExceptions = {
   [37819] = "Regular", -- Darkmoon Faire races referral
 
   -- order hall quests that old addon versions misidentified as weekly (fixed in r548/7.0.8)
-  [44226] = "Regular", -- order hall: DH
-  [44235] = "Regular", -- order hall: Druid
-  [44236] = "Regular", -- order hall: Druid?
-  [44212] = "Regular", -- order hall: Hunter
-  [44208] = "Regular", -- order hall: Mage
-  [44238] = "Regular", -- order hall: Monk
-  [44219] = "Regular", -- order hall: Paladin
-  [44230] = "Regular", -- order hall: Priest
-  [44204] = "Regular", -- order hall: Rogue
-  [44205] = "Regular", -- order hall: Shaman
+  [44226] = "Regular", -- Order Hall: DH
+  [44235] = "Regular", -- Order Hall: Druid
+  [44236] = "Regular", -- Order Hall: Druid?
+  [44212] = "Regular", -- Order Hall: Hunter
+  [44208] = "Regular", -- Order Hall: Mage
+  [44238] = "Regular", -- Order Hall: Monk
+  [44219] = "Regular", -- Order Hall: Paladin
+  [44230] = "Regular", -- Order Hall: Priest
+  [44204] = "Regular", -- Order Hall: Rogue
+  [44205] = "Regular", -- Order Hall: Shaman
 
   [31752] = "AccountDaily", -- Blingtron
   [34774] = "AccountDaily", -- Blingtron 5000
@@ -368,12 +402,14 @@ local QuestExceptions = {
   [44175] = "Weekly", -- The World Awaits - Complete Broken Isles World Quests
   [45799] = "Weekly", -- A Shrouded Path Through Time - Mists of Pandaria Timewalking
 
-  --Timewalking Dungeon final boss drops
-  [40168] = "Weekly", -- The Swirling Vial - Burning Crusade Timewalking
-  [40173] = "Weekly", -- The Unstable Prism - Wrath of the Lich King Timewalking
-  [40786] = "Weekly", -- The Smoldering Ember - Cataclysm Timewalking - Horde
-  [40787] = "Weekly", -- The Smoldering Ember - Cataclysm Timewalking - Alliance
-  [45563] = "Weekly", -- The Shrouded Coin - Mists of Pandaria Timewalking
+  -- Pet Battle Dungeons
+  [46292] = "Weekly", -- Pet Battle Challenge Dungeon Deadmines
+  [45539] = "Weekly", -- Pet Battle Challenge Dungeon Wailing Caverns
+
+  -- Argus
+  [48910] = "Weekly", -- Supplying Krokuun
+  [48911] = "Weekly", -- Void Inoculation
+  [48912] = "Weekly", -- Supplying the Antoran Campaign
 }
 
 local WoDSealQuests = {
@@ -444,7 +480,7 @@ local function bugReport(msg)
   addon.bugreport[msg] = now
   chatMsg(msg)
   if now < (addon.bugreport["url"] or 0)+5 then return end
-  chatMsg("Please report this bug at: http://www.wowace.com/addons/saved_instances/tickets/")
+  chatMsg("Please report this bug at: https://github.com/SavedInstances/SavedInstances/issues")
   addon.bugreport["url"] = now
 end
 
@@ -461,10 +497,10 @@ function addon:timedebug()
   chatMsg("time()=%s GetTime()=%s", time(), GetTime())
   chatMsg("Local time: %s local", date("%A %c"))
   chatMsg("GetGameTime: %s:%s server",GetGameTime())
-  chatMsg("CalendarGetDate: %s %s/%s/%s server",CalendarGetDate())
+  chatMsg("C_Calendar.GetDate: %s %s/%s/%s server",C_Calendar.GetDate())
   chatMsg("GetQuestResetTime: %s",SecondsToTime(GetQuestResetTime()))
   chatMsg(date("Daily reset: %a %c local (based on GetQuestResetTime)",time()+GetQuestResetTime()))
-  chatMsg("Local to Server offset: %d hours",SavedInstances:GetServerOffset())
+  chatMsg("Local to server offset: %d hours",SavedInstances:GetServerOffset())
   local t = SavedInstances:GetNextDailyResetTime()
   chatMsg("Next daily reset: %s local, %s server",date("%a %c",t), date("%a %c",t+3600*SavedInstances:GetServerOffset()))
   t = SavedInstances:GetNextWeeklyResetTime()
@@ -472,7 +508,7 @@ function addon:timedebug()
   t = SavedInstances:GetNextDailySkillResetTime()
   chatMsg("Next skill reset: %s local, %s server",date("%a %c",t), date("%a %c",t+3600*SavedInstances:GetServerOffset()))
   t = SavedInstances:GetNextDarkmoonResetTime()
-  chatMsg("Next darkmoon reset: %s local, %s server",date("%a %c",t), date("%a %c",t+3600*SavedInstances:GetServerOffset()))
+  chatMsg("Next Darkmoon reset: %s local, %s server",date("%a %c",t), date("%a %c",t+3600*SavedInstances:GetServerOffset()))
 end
 
 local function questTableToString(t)
@@ -543,7 +579,7 @@ local function abbreviate(iname)
   return iname
 end
 
-function addon:formatNumber(num,ismoney)
+function addon:formatNumber(num, ismoney)
   num = tonumber(num)
   if not num then return "" end
   local post = ""
@@ -752,7 +788,6 @@ vars.defaultDB = {
     Currency1226= false, -- Nethershards
     Currency1273= true,  -- Seal of Broken Fate
     Currency1149= true,  -- Sightless Eye
-	Currency1501= true, -- Writhing Essence
     CurrencyMax = false,
     CurrencyEarned = true,
     MythicKey = true,
@@ -881,9 +916,9 @@ end
 -- convert local time -> server time: add this value
 -- convert server time -> local time: subtract this value
 function addon:GetServerOffset()
-  local serverDay = CalendarGetDate() - 1 -- 1-based starts on Sun
+  local serverDate = C_Calendar.GetDate()
+  local serverDay, serverWeekday, serverMonth, serverMinute, serverHour, serverYear = serverDate.monthDay, serverDate.weekday, serverDate.month, serverDate.minute, serverDate.hour, serverDate.year
   local localDay = tonumber(date("%w")) -- 0-based starts on Sun
-  local serverHour, serverMinute = GetGameTime()
   local localHour, localMinute = tonumber(date("%H")), tonumber(date("%M"))
   if serverDay == (localDay + 1)%7 then -- server is a day ahead
     serverHour = serverHour + 24
@@ -981,11 +1016,11 @@ do
   function addon:GetNextDarkmoonResetTime()
     -- Darkmoon faire runs from first Sunday of each month to following Saturday
     -- this function returns an approximate time after the end of the current month's faire
-    local weekday, month, day, year = CalendarGetDate() -- date in server timezone (Sun==1)
-    local firstweekday = select(4,CalendarGetAbsMonth(month, year)) -- (Sun == 1)
+    local monthInfo = C_Calendar.GetMonthInfo();
+    local firstweekday = monthInfo.firstWeekday
     local firstsunday = ((firstweekday == 1) and 1) or (9 - firstweekday)
-    dmf_end.year = year
-    dmf_end.month = month
+    dmf_end.year = monthInfo.year
+    dmf_end.month = monthInfo.month
     dmf_end.day = firstsunday + 7 -- 1 days of "slop"
     -- Unfortunately, DMF boundary ignores daylight savings, and the time of day varies across regions
     -- Report a reset well past end to make sure we don't drop quests early
@@ -1241,6 +1276,7 @@ local _instance_exceptions = {
   },
   [1347] = { total=8 }, -- Return to Karazhan
 }
+
 function addon:instanceException(LFDID)
   if not LFDID then return nil end
   local exc = _instance_exceptions[LFDID]
@@ -1492,6 +1528,7 @@ function addon:UpdateInstanceData()
   local renames = 0
   local merges = 0
   local conflicts = 0
+  local purges = 0
   for instname, inst in pairs(vars.db.Instances) do
     local truename
     if inst.WorldBoss then
@@ -1534,6 +1571,21 @@ function addon:UpdateInstanceData()
         renames = renames + 1
       end
     end
+
+	-- Eliminate duplicate LFR entries from the database (only affects those that were saved previously), to account for Blizzard's lockout changes in 7.3 (see https://github.com/SavedInstances/SavedInstances/issues/89)
+	for key, info in pairs(inst) do -- Check for potential LFR lockout entries
+
+	if key:find(" - ") then -- is a character key
+			for difficulty, entry in pairs(info) do -- Check difficulty for LFR
+				if difficulty == 7 or difficulty == 17 then -- Difficulties 7 and 17 are for (legacy) LFR modes -> Kill them... with fire!
+					debug("Purge LFR lockout entry for " .. truename .. ":" .. instname .. ":" .. key)
+					purges = purges + 1
+					vars.db.Instances[instname][key][difficulty] = nil
+				end
+			end
+		  end
+	end
+
   end
   -- addon.lfdid_to_name = lfdid_to_name
   -- addon.wbid_to_name = wbid_to_name
@@ -1541,8 +1593,7 @@ function addon:UpdateInstanceData()
   vars.config:BuildOptions() -- refresh config table
 
   starttime = debugprofilestop()-starttime
-  debug("UpdateInstanceData(): completed in %.3f ms : %d added, %d renames, %d merges, %d conflicts.",
-    starttime, added, renames, merges, conflicts)
+  debug("UpdateInstanceData(): completed in %.3f ms : %d added, %d renames, %d merges, %d conflicts, %d purges.", starttime, added, renames, merges, conflicts, purges)
   if addon.RefreshPending then
     addon.RefreshPending = nil
     core:Refresh()
@@ -1633,7 +1684,7 @@ function addon:updateSpellTip(spellid)
   vars.db.spelltip = vars.db.spelltip or {}
   vars.db.spelltip[spellid] = vars.db.spelltip[spellid] or {}
   for i=1,20 do
-    local id = select(11,UnitDebuff("player",i))
+    local id = select(11,SI_GetUnitDebuff("player",i))
     if id == spellid then slot = i end
   end
   if slot then
@@ -1721,12 +1772,12 @@ function addon:UpdateToonData()
     RequestTimePlayed()
   end
   t.LFG1 = GetTimeToTime(GetLFGRandomCooldownExpiration()) or t.LFG1
-  t.LFG2 = GetTimeToTime(select(7,UnitDebuff("player",GetSpellInfo(71041)))) or t.LFG2 -- GetLFGDeserterExpiration()
+  t.LFG2 = GetTimeToTime(select(7,SI_GetUnitDebuff("player",GetSpellInfo(71041)))) or t.LFG2 -- GetLFGDeserterExpiration()
   if t.LFG2 then addon:updateSpellTip(71041) end
   addon.pvpdesertids = addon.pvpdesertids or { 26013,   -- BG queue
     194958 } -- Ashran
   for _,id in ipairs(addon.pvpdesertids) do
-    t.pvpdesert = GetTimeToTime(select(7,UnitDebuff("player",GetSpellInfo(id)))) or t.pvpdesert
+    t.pvpdesert = GetTimeToTime(select(7,SI_GetUnitDebuff("player",GetSpellInfo(id)))) or t.pvpdesert
     if t.pvpdesert then addon:updateSpellTip(id) end
     end
     for toon, ti in pairs(vars.db.Toons) do
@@ -2599,9 +2650,7 @@ local function ShowCurrencySummary(cell, arg, ...)
   finishIndicator()
 end
 
-
 -- global addon code below
-
 function core:toonInit()
   local ti = db.Toons[thisToon] or { }
   db.Toons[thisToon] = ti
@@ -2618,12 +2667,14 @@ function core:toonInit()
 end
 
 function core:OnInitialize()
-  local versionString = GetAddOnMetadata(addonName, "Version")
-  if versionString == "@project-version@" then
-    SavedInstances.version = "Dev"
-  else
-    SavedInstances.version = versionString
+  local versionString = GetAddOnMetadata(addonName, "version")
+  --[===[@debug@
+  if versionString == "8.0.1" then
+    versionString = "Dev"
   end
+  --@end-debug@]===]
+  SavedInstances.version = versionString
+
   SavedInstancesDB = SavedInstancesDB or vars.defaultDB
   -- begin backwards compatibility
   if not SavedInstancesDB.DBVersion or SavedInstancesDB.DBVersion < 10 then
@@ -2765,7 +2816,7 @@ function core:OnEnable()
     end
   end
   addon.resetDetect:SetScript("OnEvent", addon.HistoryEvent)
-  RegisterAddonMessagePrefix(addonName)
+  C_ChatInfo.RegisterAddonMessagePrefix(addonName)
   addon:HistoryEvent("PLAYER_ENTERING_WORLD") -- update after initial load
   addon:specialQuests()
   core:RefreshMythicKeyInfo()
@@ -2856,7 +2907,10 @@ function core:updateRealmMap()
   end
 end
 
-function core:RefreshMythicKeyInfo()
+function core:RefreshMythicKeyInfo(event)
+
+  if (event ~= "CHALLENGE_MODE_MAPS_UPDATE") then C_MythicPlus.RequestRewards() end -- This event is fired after the rewards data was requested, causing yet another refresh if not checked for
+
   local t = vars.db.Toons[thisToon]
   local _
   t.MythicKey = {}
@@ -2903,7 +2957,7 @@ function core:RefreshMythicKeyInfo()
           DEFAULT_CHAT_FRAME:AddMessage(tostring(KeyInfo[20]))
         end
         t.MythicKey.abbrev = KeystoneAbbrev[mapID]
-        t.MythicKey.name = C_ChallengeMode.GetMapInfo(mapID)
+        t.MythicKey.name = C_ChallengeMode.GetMapUIInfo(mapID)
         t.MythicKey.color = color
         t.MythicKey.level = mapLevel
         t.MythicKey.ResetTime = addon:GetNextWeeklyResetTime()
@@ -2912,11 +2966,11 @@ function core:RefreshMythicKeyInfo()
     end
   end
   local MythicMaps = { }
-  C_ChallengeMode.RequestMapInfo()
+  C_MythicPlus.RequestMapInfo()
   MythicMaps = C_ChallengeMode.GetMapTable()
   local bestlevel = 0
   for i = 1, #MythicMaps do
-    local _, _, level = C_ChallengeMode.GetMapPlayerStats(MythicMaps[i]);
+    local _, _, level = C_MythicPlus.GetWeeklyBestForMap(MythicMaps[i]);
     if level then
       if level > bestlevel then
         bestlevel = level
@@ -2931,7 +2985,7 @@ function core:RefreshMythicKeyInfo()
   t.MythicKeyBest = t.MythicKeyBest or { }
   t.MythicKeyBest.ResetTime = addon:GetNextWeeklyResetTime()
   t.MythicKeyBest.level = bestlevel
-  t.MythicKeyBest.WeeklyReward = C_ChallengeMode.IsWeeklyRewardAvailable()
+  t.MythicKeyBest.WeeklyReward = C_MythicPlus.IsWeeklyRewardAvailable()
 end
 
 function core:RefreshDailyWorldQuestInfo()
@@ -2981,13 +3035,13 @@ function core:RefreshDailyWorldQuestInfo()
       t.DailyWorldQuest.days1 = {}
       t.DailyWorldQuest.days1.dayleft = 1
       t.DailyWorldQuest.days1.iscompleted = true
-      t.DailyWorldQuest.days0.name = L["Emissary Missing"]
+      t.DailyWorldQuest.days1.name = L["Emissary Missing"]
     end
     if t.DailyWorldQuest.days2 == nil then
       t.DailyWorldQuest.days2 = {}
       t.DailyWorldQuest.days2.dayleft = 2
       t.DailyWorldQuest.days2.iscompleted = true
-      t.DailyWorldQuest.days0.name = L["Emissary Missing"]
+      t.DailyWorldQuest.days2.name = L["Emissary Missing"]
     end
   end
 end
@@ -3095,7 +3149,7 @@ local raiddiffmsg = ERR_RAID_DIFFICULTY_CHANGED_S:gsub("%%s",".+")
 local dungdiffmsg = ERR_DUNGEON_DIFFICULTY_CHANGED_S:gsub("%%s",".+")
 local delaytime = 3 -- seconds to wait on zone change for settings to stabilize
 function addon.HistoryEvent(f, evt, ...)
-  --myprint("HistoryEvent: "..evt, ...)
+  --debug("HistoryEvent: "..evt, ...)
   if evt == "CHAT_MSG_ADDON" then
     local prefix, message, channel, sender = ...
     if prefix ~= addonName then return end
@@ -3244,7 +3298,7 @@ function addon:HistoryUpdate(forcereset, forcemesg)
       addon.lasthistdbg = msg
       debug(msg)
     end
-    --myprint(vars.db.History)
+    --debug(vars.db.History)
   end
   -- display update
 
@@ -3380,22 +3434,24 @@ function core:Refresh(recoverdaily)
     for i = 1, numsaved do
       local name, id, expires, diff, locked, extended, mostsig, raid, players, diffname = GetSavedInstanceInfo(i)
       local truename, instance = addon:LookupInstance(nil, name, raid)
-      if expires and expires > 0 then
-        expires = expires + time()
-      else
-        expires = 0
+      if diff ~= 7 and diff ~= 17 then -- Skip (legacy) LFR entries for this character to prevent writing them to the saved variables (from which they'd be purged after the next reload anyway)
+        if expires and expires > 0 then
+          expires = expires + time()
+        else
+          expires = 0
+        end
+        instance.Raid = instance.Raid or raid
+        instance[thisToon] = instance[thisToon] or temp[truename] or { }
+        local info = instance[thisToon][diff] or {}
+        wipe(info)
+        info.ID = id
+        info.Expires = expires
+        info.Link = GetSavedInstanceChatLink(i)
+        info.Locked = locked
+        info.Extended = extended
+        instance[thisToon][diff] = info
       end
-      instance.Raid = instance.Raid or raid
-      instance[thisToon] = instance[thisToon] or temp[truename] or { }
-      local info = instance[thisToon][diff] or {}
-      wipe(info)
-      info.ID = id
-      info.Expires = expires
-      info.Link = GetSavedInstanceChatLink(i)
-      info.Locked = locked
-      info.Extended = extended
-      instance[thisToon][diff] = info
-    end
+	end
   end
 
   local weeklyreset = addon:GetNextWeeklyResetTime()
@@ -3585,7 +3641,7 @@ do
       end
       end
       table.sort(cnext_list, cpairs_sort)
-      --myprint(cnext_list)
+      --debug(cnext_list)
     end
     cnext_pos = 1
     return cnext, t, nil
@@ -3631,12 +3687,6 @@ function addon:ShowDetached()
       if not tooltip then f:Hide(); return end
       local w,h = tooltip:GetSize()
       self:SetSize(w*tooltip:GetScale(),(h+20)*tooltip:GetScale())
-      --[[
-      tooltip:ClearAllPoints()
-      tooltip:SetPoint("BOTTOMLEFT",addon.detachframe)
-      tooltip:SetFrameLevel(addon.detachframe:GetFrameLevel()+1)
-      tooltip:Show()
-      --]]
     end)
     f:SetScript("OnKeyDown", function(self,key)
       if key == "ESCAPE" then
@@ -4208,7 +4258,7 @@ function core:ShowTooltip(anchorframe)
             if t.MythicKey.abbrev then
               tooltip:SetCell(show, col, "|c"..t.MythicKey.color..t.MythicKey.abbrev.." ("..t.MythicKey.level..")"..FONTEND, "CENTER",maxcol)
             else
-              local kabbrev = KeystonetoAbbrev[t.MythicKey.name]
+              local kabbrev = KeystonetoAbbrev[t.MythicKey.name] or t.MythicKey.name
               tooltip:SetCell(show, col, "|c"..t.MythicKey.color..kabbrev.." ("..t.MythicKey.level..")"..FONTEND, "CENTER",maxcol)
             end
           else
@@ -4238,7 +4288,7 @@ function core:ShowTooltip(anchorframe)
       if not firstcategory and vars.db.Tooltip.CategorySpaces then
         addsep()
       end
-      show = tooltip:AddLine(YELLOWFONT .. L["MythicKeyBest"] .. FONTEND)
+      show = tooltip:AddLine(YELLOWFONT .. L["Mythic Key Best"] .. FONTEND)
     end
     for toon, t in cpairs(vars.db.Toons, true) do
       if t.MythicKeyBest then
@@ -4254,7 +4304,7 @@ function core:ShowTooltip(anchorframe)
           if t.MythicKeyBest.LastWeekLevel and t.MythicKeyBest.LastWeekLevel > 0 then
             lastlevel = t.MythicKeyBest.LastWeekLevel
           end
-          keydesc = keydesc .."(".. lastlevel ..L["LastWeekRewardUsable"].. ")"
+          keydesc = keydesc .."(".. lastlevel ..L[" Chest Available"].. ")"
         end
         if keydesc ~= "" then
           local col = columns[toon..1]
@@ -4271,20 +4321,24 @@ function core:ShowTooltip(anchorframe)
         for day,DailyInfo in pairs(t.DailyWorldQuest) do
           if DailyInfo.name then
             if(not show[DailyInfo.dayleft] or show[DailyInfo.dayleft] == L["Emissary Missing"]) then
-			show[DailyInfo.dayleft] = DailyInfo.name
-			end
-			addColumns(columns, toon, tooltip)
+              show[DailyInfo.dayleft] = DailyInfo.name
+            end
+            addColumns(columns, toon, tooltip)
           end
         end
       end
     end
+
+	if not firstcategory and vars.db.Tooltip.CategorySpaces then
+          addsep()
+	end
+	if vars.db.Tooltip.ShowCategories then
+		tooltip:AddLine(YELLOWFONT .. L["Emissary Quests"] .. FONTEND)
+	end
     for dayleft = 0 , 2 do
       if show[dayleft] then
         local showday = show[dayleft]
-        if not firstcategory and vars.db.Tooltip.CategorySpaces then
-          addsep()
-        end
-        show[dayleft] = tooltip:AddLine(YELLOWFONT .. showday .. " (+" .. dayleft .. " " .. L["Day"] .. ")" .. FONTEND)
+			show[dayleft] = tooltip:AddLine(GOLDFONT .. showday .. " (+" .. dayleft .. " " .. L["Day"] .. ")" .. FONTEND)
       end
     end
     for toon, t in cpairs(vars.db.Toons, true) do
@@ -4455,18 +4509,6 @@ function core:ShowTooltip(anchorframe)
         tooltip:GetHeaderFont(), "CENTER", maxcol)
       tooltip:SetCellScript(headLine, col, "OnEnter", ShowToonTooltip, toon)
       tooltip:SetCellScript(headLine, col, "OnLeave", CloseTooltips)
-      --[[
-      tooltip:SetCellScript(headLine, col, "OnEnter", function()
-      for i=0,3 do
-      tooltip:SetColumnColor(col+i,0.5,0.5,0.5)
-      end
-      end)
-      tooltip:SetCellScript(headLine, col, "OnLeave", function()
-      for i=0,3 do
-      tooltip:SetColumnColor(col,0,0,0)
-      end
-      end)
-      --]]
     end
   end
   -- we now know enough to put in the category names where necessary
@@ -4545,12 +4587,6 @@ function core:ShowTooltip(anchorframe)
   else -- render it
     addon:SkinFrame(tooltip,"SavedInstancesTooltip")
     if addon:IsDetached() then
-      --[[
-      tooltip.anchorframe = UIParent
-      tooltip:SmartAnchorTo(UIParent)
-      tooltip:SetAutoHideDelay(nil, UIParent)
-      --]]
-      --tooltip:UpdateScrolling(100000)
       tooltip:Show()
       QTip.layoutCleaner:CleanupLayouts()
       tooltip:ClearAllPoints()
@@ -4700,7 +4736,6 @@ local trade_spells = {
   [66664] = "xmute", 	-- Transmute: Eye of Zul
   -- Cata
   [78866] = "xmute", 	-- Transmute: Living Elements
-  --[80243] = "xmute", 	-- Transmute: Truegold, cd removed (5.2.0 verified)
   [80244] = "xmute", 	-- Transmute: Pyrium Bar
   -- MoP
   [114780] = "xmute", 	-- Transmute: Living Steel
@@ -4723,6 +4758,7 @@ local trade_spells = {
   [213255] = "legionxmute", -- Transmute: Meat to Pants
   [213256] = "legionxmute", -- Transmute: Meat to Pet
   [213257] = "legionxmute", -- Transmute: Blood of Sargeras
+  [247701] = "legionxmute", -- Transmute: Primal Sargerite
 
   -- Enchanting
   [28027] = "sphere", 	-- Prismatic Sphere (2-day shared, 5.2.0 verified)
@@ -4733,7 +4769,6 @@ local trade_spells = {
 
   -- Jewelcrafting
   [47280] = true, 	-- Brilliant Glass, still has a cd (5.2.0 verified)
-  --[62242] = true, 	-- Icy Prism, cd removed (5.2.0 verified)
   [73478] = true, 	-- Fire Prism, still has a cd (5.2.0 verified)
   [131691] = "facet", 	-- Imperial Amethyst/Facets of Research
   [131686] = "facet", 	-- Primordial Ruby/Facets of Research
@@ -4757,7 +4792,6 @@ local trade_spells = {
   [75144] = 7, 		-- Dream of Hyjal
   [75142] = 7,	 	-- Dream of Deepholm
   [75146] = 7, 		-- Dream of Azshara
-  --[18560] = true,	-- Mooncloth, cd removed (5.2.0 verified, tooltip is wrong)
 
   -- Inscription
   [61288] = true, 	-- Minor Inscription Research
@@ -4811,8 +4845,10 @@ local cdname = {
 local itemcds = { -- [itemid] = spellid
   [87214] = 126459, 	-- Blingtron 4000
   [111821] = 161414, 	-- Blingtron 5000
+  [132530] = 200146,	-- Reaves: Bling (Blingtron 6000)
   [40768] = 54710, 	-- MOLL-E
-  [49040] = 67826, 	-- Jeeves
+  [49040] = 67826,	-- Jeeves
+  [132525] = 200087,	-- Reaves: Repair
   [112059] = 163830,	-- Wormhole Centrifuge
   [48933] = 67833,	-- Wormhole Generator: Northrend
   [87215] = 126755,	-- Wormhole Generator: Pandaria
@@ -4902,6 +4938,7 @@ function core:record_skill(spellID, expires)
   sinfo.Title = title
   sinfo.Link = link
   sinfo.Expires = expires
+
   return true
 end
 
@@ -4947,11 +4984,11 @@ function core:TRADE_SKILL_LIST_UPDATE()
       cnt = cnt + 1
     end
   end
+
   return cnt
 end
 
 local farm_spells = {
-
     [111102]="plant", -- Plant Green Cabbage
     [123361]="plant", -- Plant Juicycrunch Carrot
     [123388]="plant", -- Plant Scallions
@@ -5033,7 +5070,6 @@ local farm_spells = {
     [130140]="harvest", -- Harvest Autumn Blossom Tree
     [130168]="harvest", -- Harvest Spring Blossom Tree
     [133106]="harvest", -- Harvest Portal Shard
-
 }
 
 function core:record_farm(spellID)

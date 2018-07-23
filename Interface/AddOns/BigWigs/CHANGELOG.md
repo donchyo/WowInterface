@@ -1,11 +1,7 @@
 # BigWigs
 
-## [v98](https://github.com/BigWigsMods/BigWigs/tree/v98) (2018-05-24)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v97.5...v98)
+## [v100.1](https://github.com/BigWigsMods/BigWigs/tree/v100.1) (2018-07-19)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v100...v100.1)
 
-- bump version  
-- TrialOfValor/Odyn: Use spell id for UnitBuff.  
-- Antorus/Argus: Add an initial counter to Sargeras' Gaze on pull and stage changes  
-- Antorus/Aggramar: Block enabling when not at the boss (can happen on the path to Coven/Varimathras.  
-- TombOfSargeras/Sasszine: Use spell id for UnitDebuff.  
-- Loader: remove temporary new feature print  
+- Antorus/CovenofShivarra: Fix Chilled Blood info box.  
+- Core/BossPrototype: Remove more compat code  

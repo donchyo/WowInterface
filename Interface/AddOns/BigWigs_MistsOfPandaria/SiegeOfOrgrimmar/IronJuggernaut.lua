@@ -211,11 +211,12 @@ do
 	end
 end
 
-function mod:UNIT_SPELLCAST_SUCCEEDED(unitId, spellName, _, _, spellId)
+function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, spellId)
 	if spellId == 144296 then -- Borer Drill
 		self:Message(-8179, "Attention")
 		self:CDBar(-8179, 19)
 	elseif spellId == 144673 then -- Crawler Mine
+		local spellName = self:SpellName(spellId)
 		self:Message(-8183, "Urgent", nil, CL.count:format(spellName, mineCounter))
 		self:Bar(-8183, 18, 144718) -- 48732 = Mine Explosion?
 		mineCounter = mineCounter + 1
@@ -228,7 +229,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(unitId, spellName, _, _, spellId)
 			self:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
 			self:ScheduleTimer("ResetMarking", 18) -- cast time is 15, we should be safe with 18
 		end
-	elseif spellId == 144492 then -- Explosive Tar 
+	elseif spellId == 144492 then -- Explosive Tar
 		self:Message(144498, "Attention")
 		self:CDBar(144498, 20)
 	elseif spellId == 146359 then -- Regeneration (Assault mode)

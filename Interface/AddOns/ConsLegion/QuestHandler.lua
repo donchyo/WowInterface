@@ -473,15 +473,15 @@ function CL_QH_SendNQ(questID)
 			end
 			if (Objpr) then
 				if (CL_ActiveQuests[questID]["Obj"][h]["Comp"] == 1) then
-					SendAddonMessage( "ConsLegionChat", "Quest:-" .. questID .. "_" .. h .. "_" .. "D", "PARTY" )
+					--SendAddonMessage( "ConsLegionChat", "Quest:-" .. questID .. "_" .. h .. "_" .. "D", "PARTY" )
 				else
-					SendAddonMessage( "ConsLegionChat", "Quest:-" .. questID .. "_" .. h .. "_" .. Objpr, "PARTY" )
+					--SendAddonMessage( "ConsLegionChat", "Quest:-" .. questID .. "_" .. h .. "_" .. Objpr, "PARTY" )
 				end
 			else
 				if (CL_ActiveQuests[questID]["Obj"][h]["Comp"] == 1) then
-					SendAddonMessage( "ConsLegionChat", "Quest:-" .. questID .. "_" .. h .. "_" .. "D", "PARTY" )
+					--SendAddonMessage( "ConsLegionChat", "Quest:-" .. questID .. "_" .. h .. "_" .. "D", "PARTY" )
 				else
-					SendAddonMessage( "ConsLegionChat", "Quest:-" .. questID .. "_" .. h .. "_" .. "?", "PARTY" )
+					--SendAddonMessage( "ConsLegionChat", "Quest:-" .. questID .. "_" .. h .. "_" .. "?", "PARTY" )
 				end
 			end
 

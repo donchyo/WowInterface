@@ -204,6 +204,9 @@ TalentMacrosDB = {
 		["Asdasdasdfaf - Grim Batol"] = {
 		},
 		["Kriximonk - Grim Batol"] = {
+			["macrotext"] = {
+				[19993] = "#showtooltip\n/cast none",
+			},
 		},
 		["Kroxidps - Aggra (Português)"] = {
 			["version"] = 1,

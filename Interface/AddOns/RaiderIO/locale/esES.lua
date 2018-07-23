@@ -43,6 +43,10 @@ L["DUNGEON_SHORT_NAME_VOTW"] = "Celadoras"
 --[[ L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = ""--]] 
 L["ENABLE_NO_SCORE_COLORS"] = "Desactivar colores de puntuación"
 L["ENABLE_NO_SCORE_COLORS_DESC"] = "Desactiva los colores de las puntuaciones. Todas las puntuaciones se mostrarán de color blanco."
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS_DESC"] = ""--]] 
 L["ENABLE_SIMPLE_SCORE_COLORS"] = "Usar colores de puntuación simples"
 L["ENABLE_SIMPLE_SCORE_COLORS_DESC"] = "Muestra las puntuaciones usando solo los colores estándar de calidad de objeto. Facilita la distinción de puntuaciones para personas con defectos de visión cromática."
 L["HEALER"] = "Sanador"
@@ -72,6 +76,8 @@ L["PLAYER_PROFILE_TITLE"] = "Perfil de M+"
 L["PREV_SEASON_SUFFIX"] = "(*)"
 L["PROFILE_BEST_RUNS"] = "Mejor de cada mazmorra"
 L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = "Puntuación media de +%s en tiempo"
+--[[Translation missing --]]
+--[[ L["RAIDERIO_CLIENT_CUSTOMIZATION"] = ""--]] 
 L["RAIDERIO_MP_BASE_SCORE"] = "Puntuación de M+ base"
 L["RAIDERIO_MP_SCORE"] = "Puntuación de M+"
 L["RAIDERIO_MP_SCORE_COLON"] = "Puntuación de M+:"

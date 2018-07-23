@@ -1,10 +1,12 @@
-lightweight tag 9135dc7d340e9f110bff2b1b61062463eb9f9d86 v3.1.6
-Author:	zanony <zanony@jsommer.at>
-Date:	Sat May 12 22:15:05 2018 +0200
+lightweight tag 47802874845a6828e3a2ae2c8c4296c833716af4 v3.1.8
+Author:	GitHub <noreply@github.com>
+Date:	Thu Jul 19 17:52:16 2018 +0200
 
-commit 9135dc7d340e9f110bff2b1b61062463eb9f9d86
-Author: zanony <zanony@jsommer.at>
-Date:   Sat May 12 22:15:05 2018 +0200
+commit 47802874845a6828e3a2ae2c8c4296c833716af4
+Author: Jessica <zanony@jsommer.at>
+Date:   Thu Jul 19 17:52:16 2018 +0200
 
-    update .pkgmeta
+    Remove Location.lua
+    
+    Fix LUA Error with Location Module Ticket #69
 

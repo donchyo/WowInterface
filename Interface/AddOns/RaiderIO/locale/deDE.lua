@@ -5,7 +5,7 @@ if ns:IsSameLocale("deDE") then
 
 	L.LOCALE_NAME = "deDE"
 
-L["ALLOW_IN_LFD"] = "Im Dungeonfinder erlauben"
+L["ALLOW_IN_LFD"] = "Im Dungeonbrowser erlauben"
 L["ALLOW_IN_LFD_DESC"] = "Rechtsklick auf Gruppen oder angemeldete Charaktere im Dungeon Finder, um den Raider.IO Profil-Link zu kopieren."
 L["ALLOW_ON_PLAYER_UNITS"] = "Erlaube auf Einheitenfenstern von Spielern"
 L["ALLOW_ON_PLAYER_UNITS_DESC"] = "Rechtsklick auf Einheitenfenster von Spielern, um den Raider.IO Profil-Link zu kopieren."
@@ -50,12 +50,14 @@ L["DPS_SCORE"] = "DPS Wertung"
 --[[ L["ENABLE_AUTO_FRAME_POSITION"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["ENABLE_AUTO_FRAME_POSITION_DESC"] = ""--]] 
---[[Translation missing --]]
---[[ L["ENABLE_LOCK_PROFILE_FRAME"] = ""--]] 
---[[Translation missing --]]
---[[ L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = ""--]] 
+L["ENABLE_LOCK_PROFILE_FRAME"] = "Sperre meinen M+ Profilrahmen"
+L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = "Verhindert das Ziehen des M+ Profilrahmens. Dies hat keine Wirkung, wenn der M+ Profilrahmen automatisch positioniert wird."
 L["ENABLE_NO_SCORE_COLORS"] = "Deaktiviere Wertungsfarben"
 L["ENABLE_NO_SCORE_COLORS_DESC"] = "Deaktiviere Farben der Wertungen. Alle Wertungen werden weiß angezeigt."
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS_DESC"] = ""--]] 
 L["ENABLE_SIMPLE_SCORE_COLORS"] = "Verwende einfache Farben"
 L["ENABLE_SIMPLE_SCORE_COLORS_DESC"] = "Zeigt nur Wertungen mit Standardfarben für Itemqualität an. Dies kann es für Personen mit Farbsehschwächen leichter machen, die Bewertungsstufen zu unterscheiden."
 L["HEALER"] = "Heiler"
@@ -65,8 +67,7 @@ L["INVERSE_PROFILE_MODIFIER_DESC"] = [=[
 Wenn du dies aktivierst, wird das Verhalten des Profil-Tooltip-Modifikators (Shift / Strg / Alt) umgekehrt: Halten, um die Ansicht zwischen persönlichen und Gruppenleiter-Profil oder Gruppenleiter und persönlichen Profil umzuschalten.]=]
 L["KEYSTONE_COMPLETED_10"] = "+10-14 (SSE)"
 L["KEYSTONE_COMPLETED_15"] = "+15 (SSM)"
---[[Translation missing --]]
---[[ L["LOCKING_PROFILE_FRAME"] = ""--]] 
+L["LOCKING_PROFILE_FRAME"] = "RaiderIO: M+ Profilrahmen sperren"
 L["MAINS_SCORE"] = "Hauptcharakter Wertung"
 L["MAINS_SCORE_COLON"] = "Hauptcharakter Wertung:"
 L["MODULE_AMERICAS"] = "Americas"
@@ -77,8 +78,7 @@ L["MY_PROFILE_TITLE"] = "Mein M+ Profil"
 L["MYTHIC_PLUS_DB_MODULES"] = "Mythic Plus Datenbank Module"
 L["MYTHIC_PLUS_SCORES"] = "Mythic Plus Wertung"
 L["OPEN_CONFIG"] = "Öffne Konfigutration"
---[[Translation missing --]]
---[[ L["OUT_OF_SYNC_DATABASE_S"] = ""--]] 
+L["OUT_OF_SYNC_DATABASE_S"] = "|cffFFFFFF%s|r hat keine synchronen Horde/Allianz Fraktionsdaten.Bitte aktualisiert eure RaiderIO Client-Einstellungen um beide Fraktionen zu synchronisieren."
 L["OUTDATED_DATABASE"] = "Wertungen sind %d Tag(e) alt"
 L["OUTDATED_DATABASE_HOURS"] = "Wertungen sind %d Stunde(n) alt"
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r benutzt Daten die |cffFF6666%d|r Tag(e) alt sind. Bitte update das Addon für aktuellere Mythic Plus Wertungen."
@@ -86,11 +86,12 @@ L["PLAYER_PROFILE_TITLE"] = "Spieler M+ Profil"
 L["PREV_SEASON_SUFFIX"] = "(*)"
 L["PROFILE_BEST_RUNS"] = "Beste Instanzdurchläufe"
 L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = "Durchschn. Wertungen für Timed +%s"
+L["RAIDERIO_CLIENT_CUSTOMIZATION"] = "RaiderIO Client-Anpassung"
 L["RAIDERIO_MP_BASE_SCORE"] = "Raider.IO M+ Basiswertung"
 L["RAIDERIO_MP_SCORE"] = "Raider.IO M+ Wertung"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO M+ Wertung:"
 L["RAIDERIO_MYTHIC_OPTIONS"] = "Raider.IO M+ Einstellungen"
-L["RELOAD_LATER"] = "Ich werde später aktualisieren"
+L["RELOAD_LATER"] = "Aktualisiere später"
 L["RELOAD_NOW"] = "Aktualisiere jetzt"
 L["SHOW_AVERAGE_PLAYER_SCORE_INFO"] = "Zeige durchschn. Wertungen für Durchgänge"
 L["SHOW_AVERAGE_PLAYER_SCORE_INFO_DESC"] = "Zeigt die durchschnittliche Raider.IO-Wertung an, welche von Mitspielern in in-time Durchgängen angezeigt wird. Dies ist in den SchlüsselsteinTooltips und Spieler Tooltips im Dungeon Finder sichtbar."
@@ -126,8 +127,7 @@ L["UNKNOWN_SCORE"] = "Unbekannt"
 L["UNKNOWN_SERVER_FOUND"] = "|cffFFFFFF%s|r hat einen neuen Server gefunden. Bitte schreibe folgende information auf: |cffFF9999{|r |cffFFFFFF%s|r |cffFF9999,|r |cffFFFFFF%s|r |cffFF9999}|r . Danach schicke diese den Entwicklern. Danke!"
 --[[Translation missing --]]
 --[[ L["UNLOCKING_PROFILE_FRAME"] = ""--]] 
---[[Translation missing --]]
---[[ L["WARNING_LOCK_POSITION_FRAME_AUTO"] = ""--]] 
+L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "RaiderIO: Ihr müsst zuerst die automatische Positionierung des M+ Profils deaktivieren."
 
 
 	ns.L = L

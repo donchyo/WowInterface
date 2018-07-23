@@ -129,6 +129,9 @@ TalentMacrosDB = {
 			["version"] = 1,
 		},
 		["Kriximonk - Grim Batol"] = {
+			["macrotext"] = {
+				[19993] = "#showtooltip\n/cast none",
+			},
 		},
 		["Krixiyo - Lightning's Blade"] = {
 		},

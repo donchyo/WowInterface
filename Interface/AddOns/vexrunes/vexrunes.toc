@@ -1,7 +1,7 @@
-## Interface: 70300
+## Interface: 80000
 ## Title: |CFFFF7D0AVex|r Runes
 ## Notes: Alternate Rune Display
-## Version: 2.1.14
+## Version: 2.1.16
 ## SavedVariables: vexrunes_parameters
 
 ## @no-lib-strip@

@@ -786,13 +786,13 @@ end
 
 function mod:GiftoftheLifebinder(args)
 	self:Message("stages", "green", "Long", args.spellName, args.spellId)
-	self:RegisterUnitEvent("UNIT_POWER", nil, "boss3") -- boss1 = Argus, boss2 = Khaz'goroth, boss3 = Gift of the Lifebinder
+	self:RegisterUnitEvent("UNIT_POWER_FREQUENT", nil, "boss3") -- boss1 = Argus, boss2 = Khaz'goroth, boss3 = Gift of the Lifebinder
 end
 
-function mod:UNIT_POWER(unit)
+function mod:UNIT_POWER_FREQUENT(event, unit)
 	local power = UnitPower(unit) / UnitPowerMax(unit) * 100
 	if power <= 10 then
-		self:UnregisterUnitEvent("UNIT_POWER", unit)
+		self:UnregisterUnitEvent(event, unit)
 		self:Message("stages", "green", "Long", CL.soon:format(self:SpellName(256399)), 256399) -- Withering Roots
 	end
 end

@@ -1,8 +1,6 @@
 local _G = _G
 local PitBull4 = _G.PitBull4
 
-local bfa_800 = select(4, GetBuildInfo()) >= 80000
-
 local DEBUG = PitBull4.DEBUG
 local expect = PitBull4.expect
 local deep_copy = PitBull4.Utils.deep_copy
@@ -1750,7 +1748,7 @@ local function header_OnEvent(self, event, arg1)
 	for _, frame in self:IterateMembers() do
 		local unit = frame.unit
 		if unit then -- XXX need to track down how the frame is created but it doesn't have a unit set
-			local update = not not UnitExists(unit) -- want true/false
+			local update = UnitExists(unit) or ShowBossFrameWhenUninteractable(unit) or false
 			frame:UpdateGUID(UnitGUID(unit), update)
 		else
 			frame:UpdateGUID(nil, false)
@@ -1762,7 +1760,11 @@ local function frame_OnEvent(self, event, unit)
 	local group_db = self:GetParent().group_db -- XXX somehow group_db isn't set sometimes
 	if not group_db or not group_db.enabled then return end
 
-	if UnitExists(self.unit) then
+	if event == "ARENA_OPPONENT_UPDATE" and unit ~= self.unit then
+		return
+	end
+
+	if UnitExists(self.unit) or ShowBossFrameWhenUninteractable(self.unit) then
 		self:UpdateGUID(UnitGUID(self.unit), true)
 	end
 end
@@ -1772,7 +1774,7 @@ local function frame_OnUpdate(self, elapsed)
 	if self.elapsed < 0.5 then return end
 	self.elapsed = self.elapsed - 0.5
 
-	if UnitExists(self.unit) then
+	if UnitExists(self.unit) or ShowBossFrameWhenUninteractable(self.unit) then
 		self:UpdateGUID(UnitGUID(self.unit))
 	end
 end
@@ -1913,16 +1915,15 @@ function GroupHeader:ConfigureChildren()
 			-- update our unit event references
 			frame:SetScript("OnUpdate", nil)
 			frame:UnregisterEvent("UNIT_NAME_UPDATE")
-			if not bfa_800 then
-				frame:UnregisterEvent("ARENA_OPPONENT_UPDATE")
-			end
+			frame:UnregisterEvent("ARENA_OPPONENT_UPDATE")
 			frame:UnregisterEvent("UNIT_TARGETABLE_CHANGED")
 			frame:UnregisterEvent("UNIT_TARGET")
 			frame:UnregisterEvent("UNIT_PET")
 
 			frame:RegisterUnitEvent("UNIT_NAME_UPDATE", unit)
-			if not bfa_800 then
-				frame:RegisterUnitEvent("ARENA_OPPONENT_UPDATE", unit)
+			if unit:match("^arena") then
+				-- not really a unit event, this will probably be split into UPDATE and CLEARED in the future
+				frame:RegisterEvent("ARENA_OPPONENT_UPDATE")
 			end
 			frame:RegisterUnitEvent("UNIT_TARGETABLE_CHANGED", unit)
 

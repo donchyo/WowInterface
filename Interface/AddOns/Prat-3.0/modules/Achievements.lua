@@ -223,16 +223,11 @@ Prat:AddModuleToLoad(function()
 		--[[ ["customGratsText_desc"] = "",--]] 
 		--[[Translation missing --]]
 		--[[ ["customGratsText_name"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["grats_donthave_1"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["grats_donthave_10"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["grats_donthave_2"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["grats_donthave_3"] = "",--]] 
-		--[[Translation missing --]]
-		--[[ ["grats_donthave_4"] = "",--]] 
+		["grats_donthave_1"] = "Parabéns %s",
+		["grats_donthave_10"] = "Não vejo a hora de ter esse, %s",
+		["grats_donthave_2"] = "Boa %s, eu ainda preciso desse",
+		["grats_donthave_3"] = "Eu também quero esse, %s. Parabéns!",
+		["grats_donthave_4"] = "Nossa %s, brilhante",
 		--[[Translation missing --]]
 		--[[ ["grats_donthave_5"] = "",--]] 
 		--[[Translation missing --]]

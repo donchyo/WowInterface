@@ -13,13 +13,14 @@ local AddColor = addonTable.AddColor
 
 local transforms = {}
 
+--[[
 for k,v in pairs(GetWorldMapTransforms()) do
  local id, newID, _, _, y1, y2, x1, x2, oy, ox = GetWorldMapTransformInfo(v)
- if (ox ~= 0 or oy ~= 0) and id ~= 1064 --[[until I realize why isle of thunder offset is broken]] then
+ if (ox ~= 0 or oy ~= 0) and id ~= 1064 then
   transforms[#transforms + 1] = {x2, y2, x1, y1, ox, oy, id = id, newID = newID}
  end
 end
-
+]]
 local map_data = setmetatable({}, { __index = function(t, k)
 											   local instanceID, _, _, left, right, top, bottom = GetAreaMapInfo(k)
 											   local ml, mr, mt, mb = left, right, top, bottom
@@ -46,7 +47,9 @@ local map_data = setmetatable({}, { __index = function(t, k)
 
 -- zone names cache, available to plugins
 DailyGlobalCheck.Z = setmetatable({}, { __index = function(t, k)
-												   local result = GetMapNameByID(k) or ""
+												   --local result = GetMapNameByID(k) or ""
+												   -- 8.0 quick rough fixes
+												   local result = ""
 											       t[k] = result
 												   return result
  											      end})
@@ -418,6 +421,9 @@ end
 local last_check = 0
 local function updateWorldmap()
  
+ -- 8.0 quick rough fixes
+ if true then return end
+ 
  if not wmf:IsVisible() then return end
  
  wmf.w, wmf.h = wmf:GetWidth(), wmf:GetHeight()
@@ -695,6 +701,9 @@ local function hideIcons(t)
 end
 
 function maps:Initialize()
+-- 8.0 quick rough fixes
+ if true then return end
+
  svar = DailyGlobalCheck_Options
 
  wmf:SetAllPoints()
@@ -718,8 +727,9 @@ function maps:Initialize()
  map_tooltip.info = CreateFrame("GameTooltip", "DailyGlobalCheck_maptooltipInfo", map_tooltip, "GameTooltipTemplate")
  map_tooltip.info:SetScale(0.9)
 
- DGCEventFrame:RegisterEvent("WORLD_MAP_UPDATE")
- DGCEventFrame.WORLD_MAP_UPDATE = function() wmfUpdateScheduled = 1 end
+ -- 8.0 quick rough fixes
+ --DGCEventFrame:RegisterEvent("WORLD_MAP_UPDATE")
+ --DGCEventFrame.WORLD_MAP_UPDATE = function() wmfUpdateScheduled = 1 end
 
  DGCEventFrame:RegisterEvent("MINIMAP_UPDATE_ZOOM")
  DGCEventFrame.MINIMAP_UPDATE_ZOOM = updateMinimapZoom
@@ -734,7 +744,8 @@ function maps:Initialize()
 
  local function setPlayerZone()
   -- necessary to avoid world map zoom reset
-  WorldMapFrame:UnregisterEvent("WORLD_MAP_UPDATE")
+  -- 8.0 quick rough fixes
+  --WorldMapFrame:UnregisterEvent("WORLD_MAP_UPDATE")
   
   local prev_mapID = GetCurrentMapAreaID()
   local prev_dungeonID = GetCurrentMapDungeonLevel()
@@ -768,7 +779,9 @@ function maps:Initialize()
    end
   end
 
-  WorldMapFrame:RegisterEvent("WORLD_MAP_UPDATE")
+  -- 8.0 quick rough fixes
+  --WorldMapFrame:RegisterEvent("WORLD_MAP_UPDATE")
+  
   --updateMinimap(true)
  end
 

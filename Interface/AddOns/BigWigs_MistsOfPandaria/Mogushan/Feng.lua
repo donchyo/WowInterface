@@ -108,7 +108,11 @@ end
 function mod:OnEngage()
 	p2, p3 = nil, nil
 	counter = 1
-	self:RegisterUnitEvent("UNIT_HEALTH_FREQUENT", self:Heroic() and "PhaseChangeHC" or "PhaseChange", "boss1")
+	if self:Heroic() then
+		self:RegisterUnitEvent("UNIT_HEALTH_FREQUENT", "PhaseChangeHC", "boss1")
+	else
+		self:RegisterUnitEvent("UNIT_HEALTH_FREQUENT", "PhaseChange", "boss1")
+	end
 	self:Berserk(600)
 end
 
@@ -157,7 +161,7 @@ do
 	end
 end
 
-function mod:PhaseChange(unitId)
+function mod:PhaseChange(event, unitId)
 	local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
 	--a 5% warning is like forever away from the actual transition (especially in LFR, lol)
 	if (hp < 68 and not p2) or (hp < 35) then --66/33
@@ -165,12 +169,12 @@ function mod:PhaseChange(unitId)
 		if not p2 then
 			p2 = true
 		else
-			self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", unitId)
+			self:UnregisterUnitEvent(event, unitId)
 		end
 	end
 end
 
-function mod:PhaseChangeHC(unitId)
+function mod:PhaseChangeHC(event, unitId)
 	local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
 	--a 5% warning is like forever away from the actual transition (especially in LFR, lol)
 	if (hp < 77 and not p2) or (hp < 52 and not p3) or (hp < 27) then --75/50/25
@@ -180,7 +184,7 @@ function mod:PhaseChangeHC(unitId)
 		elseif not p3 then
 			p3 = true
 		else
-			self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", unitId)
+			self:UnregisterUnitEvent(event, unitId)
 		end
 	end
 end
@@ -305,8 +309,9 @@ function mod:ShadowPhase()
 	self:CDBar(118071, 4, CL["count"]:format(self:SpellName(118071), counter)) -- Siphoning Shield
 end
 
-function mod:UNIT_SPELLCAST_SUCCEEDED(_, spellName, _, _, spellId)
+function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, spellId)
 	if spellId == 117203 then -- Siphoning Shield
+		local spellName = self:SpellName(spellId)
 		self:Message(118071, "Important", "Alarm", CL["count"]:format(spellName, counter))
 		counter = counter + 1
 		self:CDBar(118071, 35, CL["count"]:format(spellName, counter))

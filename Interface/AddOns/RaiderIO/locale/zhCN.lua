@@ -43,6 +43,10 @@ L["DUNGEON_SHORT_NAME_VOTW"] = "守望者地窟"
 --[[ L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = ""--]] 
 L["ENABLE_NO_SCORE_COLORS"] = "关闭评分颜色"
 L["ENABLE_NO_SCORE_COLORS_DESC"] = "关闭评分颜色。所有评分会显示为白色。"
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS_DESC"] = ""--]] 
 L["ENABLE_SIMPLE_SCORE_COLORS"] = "使用简单评分颜色"
 L["ENABLE_SIMPLE_SCORE_COLORS_DESC"] = "将评分用基础装备等级颜色显示，这会让有色觉缺陷更简单的区分评分等级。"
 L["HEALER"] = "治疗者"
@@ -83,6 +87,8 @@ L["PREV_SEASON_SUFFIX"] = "（*）"
 --[[ L["PROFILE_BEST_RUNS"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["RAIDERIO_CLIENT_CUSTOMIZATION"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RAIDERIO_MP_BASE_SCORE"] = ""--]] 
 L["RAIDERIO_MP_SCORE"] = "Raider.IO 大秘境评分"

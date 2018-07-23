@@ -1,22 +1,10 @@
-lightweight tag df729f159abfad4943627229eed572147b63c188 v1.9.1
+lightweight tag f8df195770ff84add323d6ea61f476c70b0809f4 v1.10.1
 Author:	Dave Hendler <sollaires@gmail.com>
-Date:	Tue Jan 30 14:42:35 2018 -0800
+Date:	Sun Jul 15 08:26:43 2018 -0700
 
-commit df729f159abfad4943627229eed572147b63c188
+commit f8df195770ff84add323d6ea61f476c70b0809f4
 Author: Dave Hendler <sollaires@gmail.com>
-Date:   Tue Jan 30 14:42:35 2018 -0800
+Date:   Sun Jul 15 08:26:43 2018 -0700
 
-    Update release version
-
-commit 0498a3f7f1923c5a23104e0129ec810f61935890
-Author: Dave Hendler <sollaires@gmail.com>
-Date:   Tue Jan 30 14:42:24 2018 -0800
-
-    Make spacing more consistent
-
-commit 332e6998f217bdd89d129255cfba88f38e126bce
-Author: Dave Hendler <sollaires@gmail.com>
-Date:   Tue Jan 30 14:40:58 2018 -0800
-
-    Fix dumb typo of variable name
+    Version bump to try to get curse to see the update
 

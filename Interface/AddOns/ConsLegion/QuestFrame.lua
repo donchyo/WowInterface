@@ -1,4 +1,102 @@
 function CL_MakeQListFunc()
+	CL_Greetings = {}
+	CL_Greetings = CreateFrame("frame", "CLD_GreetingsFrame", UIParent)
+	CL_Greetings:SetWidth(330)
+	CL_Greetings:SetHeight(150)
+	CL_Greetings:SetMovable(true)
+	CL_Greetings:EnableMouse(true)
+	CL_Greetings:SetFrameStrata("LOW")
+	CL_Greetings:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
+	CL_Greetings:SetBackdrop( { 
+			bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background", 
+			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+			tile = true, tileSize = 10, edgeSize = 10, insets = { left = 2, right = 2, top = 2, bottom = 2 }
+		});
+	CL_Greetings:SetScript("OnMouseDown", function(self, button)
+		if button == "LeftButton" then
+			CL_Greetings:StartMoving();
+			CL_Greetings.isMoving = true;
+		end
+	end)
+	CL_Greetings:SetScript("OnMouseUp", function(self, button)
+		if button == "LeftButton" and CL_Greetings.isMoving then
+			CL_Greetings:StopMovingOrSizing();
+			CL_Greetings.isMoving = false;
+		end
+	end)
+	CL_Greetings:SetScript("OnHide", function(self)
+		if ( CL_Greetings.isMoving ) then
+			CL_Greetings:StopMovingOrSizing();
+			CL_Greetings.isMoving = false;
+		end
+	end)
+	CL_Greetings2FS1 = CL_Greetings:CreateFontString("CLDGreetingsFS1","ARTWORK", "ChatFontNormal")
+	CL_Greetings2FS1:SetParent(CL_Greetings)
+	CL_Greetings2FS1:SetPoint("TOP",CL_Greetings,"TOP",0,0)
+	CL_Greetings2FS1:SetWidth(300)
+	CL_Greetings2FS1:SetHeight(38)
+	CL_Greetings2FS1:SetJustifyH("CENTER")
+	CL_Greetings2FS1:SetFont(CL_Font, 20)
+	CL_Greetings2FS1:SetText("Welcome to ConsLegion")
+	CL_Greetings2FS1:SetTextColor(1, 1, 0)
+
+	CL_Greetings2FS2 = CL_Greetings:CreateFontString("CLDGreetingsFS2","ARTWORK", "ChatFontNormal")
+	CL_Greetings2FS2:SetParent(CL_Greetings)
+	CL_Greetings2FS2:SetPoint("TOP",CL_Greetings,"TOP",0,-20)
+	CL_Greetings2FS2:SetWidth(290)
+	CL_Greetings2FS2:SetHeight(72)
+	CL_Greetings2FS2:SetJustifyH("LEFT")
+	CL_Greetings2FS2:SetFont(CL_Font, 14)
+	CL_Greetings2FS2:SetText("Get the New Addon for Battle for Azeroth")
+	CL_Greetings2FS2:SetTextColor(1, 1, 0)
+
+	CL_Greetings2FS2 = CL_Greetings:CreateFontString("CLDGreetingsFS221","ARTWORK", "ChatFontNormal")
+	CL_Greetings2FS2:SetParent(CL_Greetings)
+	CL_Greetings2FS2:SetPoint("TOP",CL_Greetings,"TOP",0,-38)
+	CL_Greetings2FS2:SetWidth(290)
+	CL_Greetings2FS2:SetHeight(72)
+	CL_Greetings2FS2:SetJustifyH("LEFT")
+	CL_Greetings2FS2:SetFont(CL_Font, 14)
+	CL_Greetings2FS2:SetText("Azeroth Auto Pilot (lvl: 110 - 120)")
+	CL_Greetings2FS2:SetTextColor(1, 1, 0)
+
+	CL_Greetings2EB1 = CreateFrame("EditBox", "CLDGreetEBox", CL_Greetings, "InputBoxTemplate")
+	CL_Greetings2EB1:SetSize(290, 20)
+	CL_Greetings2EB1:SetPoint("BOTTOM",CL_Greetings,"BOTTOM",0,40)
+	CL_Greetings2EB1:SetAutoFocus(false)
+	CL_Greetings2EB1:SetText("wow.curseforge.com/projects/azeroth-auto-pilot")
+	CL_Greetings2EB1:SetCursorPosition(0)
+
+	CL_GreetingsHideB = CreateFrame("Button", "CLD_GreetingsHideB", CL_Greetings, "SecureActionButtonTemplate")
+	CL_GreetingsHideB:SetPoint("BOTTOMRIGHT",CL_Greetings,"BOTTOMRIGHT",-15,5)
+	CL_GreetingsHideB:SetWidth(90)
+	CL_GreetingsHideB:SetHeight(22)
+	CL_GreetingsHideB:SetText("Close")
+	CL_GreetingsHideB:SetParent(CL_Greetings)
+	CL_GreetingsHideB:SetNormalFontObject("GameFontNormal")
+	CL_GreetingsHideBntex = CL_GreetingsHideB:CreateTexture()
+	CL_GreetingsHideBntex:SetTexture("Interface/Buttons/UI-Panel-Button-Up")
+	CL_GreetingsHideBntex:SetTexCoord(0, 0.625, 0, 0.6875)
+	CL_GreetingsHideBntex:SetAllPoints()	
+	CL_GreetingsHideB:SetNormalTexture(CL_GreetingsHideBntex)
+	CL_GreetingsHideBhtex = CL_GreetingsHideB:CreateTexture()
+	CL_GreetingsHideBhtex:SetTexture("Interface/Buttons/UI-Panel-Button-Highlight")
+	CL_GreetingsHideBhtex:SetTexCoord(0, 0.625, 0, 0.6875)
+	CL_GreetingsHideBhtex:SetAllPoints()
+	CL_GreetingsHideB:SetHighlightTexture(CL_GreetingsHideBhtex)
+	CL_GreetingsHideBptex = CL_GreetingsHideB:CreateTexture()
+	CL_GreetingsHideBptex:SetTexture("Interface/Buttons/UI-Panel-Button-Down")
+	CL_GreetingsHideBptex:SetTexCoord(0, 0.625, 0, 0.6875)
+	CL_GreetingsHideBptex:SetAllPoints()
+	CL_GreetingsHideB:SetPushedTexture(CL_GreetingsHideBptex)
+	CL_GreetingsHideB:SetScript("OnClick", function(self, arg1)
+		ConsLegionSavedVar[CL_tempname].Settings.Greetings = 1
+		CL_Greetings:Hide()
+	end)
+	if (ConsLegionSavedVar[CL_tempname].Settings.Greetings == 1) then
+		CL_Greetings:Hide()
+	end
+
 	CL_QuestListFramePos = CreateFrame("frame", "CLQListFPos", UIParent)
 	CL_QuestListFramePos:SetWidth(1)
 	CL_QuestListFramePos:SetHeight(1)

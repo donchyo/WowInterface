@@ -98,7 +98,7 @@ BigWigs:AddColors("Durumu the Forgotten", {
 	[133768] = {"Personal","Urgent"},
 	[133798] = {"Important","Personal","Positive"},
 	[134626] = {"Personal","Urgent"},
-	[134755] = "Personal",
+	[140502] = "Personal",
 	["adds"] = {"Attention","Positive","Urgent"},
 	["initial_life_drain"] = {"Personal","Urgent"},
 })

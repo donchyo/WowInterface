@@ -1197,18 +1197,27 @@ function api.updateSliceOptions(slice)
 end
 function api.selectSlice(offset, select)
 	if not select then
+		-- This can trigger save-on-hide logic, which in turn forced
+		-- sliceDetail to be updated. We don't block this update here,
+		-- although it is redundant.
 		sliceDetail:Hide()
-		ringDetail:Show()
 		currentSliceIndex = nil
+		ringDetail:Show()
+		api.updateRingLine()
 		return
 	end
-	ringDetail:Hide() newSlice:Hide() sliceDetail:Hide() ringContainer.newSlice:SetChecked(nil)
+	ringDetail:Hide()
+	newSlice:Hide()
+	sliceDetail:Hide()
+	ringContainer.newSlice:SetChecked(nil)
 	local old, id = ringContainer.slices[(currentSliceIndex or 0) + 1 - sliceBaseIndex], sliceBaseIndex + offset
 	local desc = currentRing[id]
 	if old then old:SetChecked(nil) end
 	currentSliceIndex = nil
 	if not desc then return ringDetail:Show() end
-	return api.updateSliceDisplay(id, desc)
+	api.updateSliceDisplay(id, desc)
+	sliceDetail:Show()
+	currentSliceIndex = id
 end
 local function socall(f, s, ...)
 	return true, f[s](f, ...)
@@ -1231,8 +1240,6 @@ function api.updateSliceDisplay(id, desc)
 		securecall(socall, sliceDetail.editorContainer, "SetEditor", nil)
 	end
 	api.updateSliceOptions(desc)
-	sliceDetail:Show()
-	currentSliceIndex = id
 end
 function api.moveSlice(source, dest)
 	if not (currentRing and currentRing[source] and currentRing[dest]) then return end

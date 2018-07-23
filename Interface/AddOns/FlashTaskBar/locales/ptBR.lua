@@ -3,8 +3,8 @@ if not L then return end
 
 L["STRING_ADD"] = "adicionar"
 L["STRING_ADDKEYWORD"] = "Adicionar Palavra"
---Translation missing 
--- L["STRING_BACKGROUND_SOUND"] = ""
+--[[Translation missing --]]
+--[[ L["STRING_BACKGROUND_SOUND"] = ""--]] 
 L["STRING_BAGSFULL"] = "Mochila Cheia"
 L["STRING_BAGSFULL_DESC"] = "Quando você estiver criando itens com sua profissão e a mochila ficar sem espaços livres."
 L["STRING_BATTLEGROUND"] = "Fim Campo de Batalha"
@@ -48,10 +48,10 @@ L["STRING_INVITES"] = "Convites Para Grupo"
 L["STRING_INVITES_DESC"] = "Quando outro jogador convidar você para grupo."
 L["STRING_ONCOUNTDOWN"] = "Contagem Regressiva"
 L["STRING_ONCOUNTDOWN_DESC"] = "quando uma contagem regressiva começar"
---Translation missing 
--- L["STRING_ONPLAYERDEATH"] = ""
---Translation missing 
--- L["STRING_ONPLAYERDEATH_DESC"] = ""
+--[[Translation missing --]]
+--[[ L["STRING_ONPLAYERDEATH"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["STRING_ONPLAYERDEATH_DESC"] = ""--]] 
 L["STRING_ONWHISPER"] = "Sussurro"
 L["STRING_ONWHISPER_DESC"] = "quando receber um sussurro."
 L["STRING_OPENSOUNDPANEL"] = "Abrir Configuração de Som"

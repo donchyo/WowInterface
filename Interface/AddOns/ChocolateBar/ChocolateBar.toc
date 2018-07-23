@@ -1,8 +1,8 @@
-## Interface: 70300
+## Interface: 80000
 ## Title: ChocolateBar
 ## Notes: A display for LibDataBroker-1.1
 ## Author: yess
-## Version: v3.1.6
+## Version: v3.1.8
 ## X-Email: starfire@fantasymail.de
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, LibJostle-3.0
 ## X-WoWI-ID: 12326
@@ -45,7 +45,6 @@ Bar.lua
 DropPoints.lua
 modules\Placeholder.lua
 modules\MoreChocolate.lua
-modules\Location.lua
 Options.lua
 #@debug@
 # modules\Bindings.xml

@@ -20,29 +20,29 @@ L["COPY_RAIDERIO_PROFILE_URL"] = "Копирование ссылки на пр�
 L["COPY_RAIDERIO_URL"] = "Копировать ссылку на Raider.IO-профиль"
 L["DPS"] = "Боец"
 L["DPS_SCORE"] = "Очки бойца"
-L["DUNGEON_SHORT_NAME_ARC"] = "Катакомбы"
-L["DUNGEON_SHORT_NAME_BRH"] = "Чер. ладья"
-L["DUNGEON_SHORT_NAME_COEN"] = "Собор"
-L["DUNGEON_SHORT_NAME_COS"] = "Квартал"
-L["DUNGEON_SHORT_NAME_DHT"] = "Чаща"
-L["DUNGEON_SHORT_NAME_EOA"] = "Око Азш"
-L["DUNGEON_SHORT_NAME_HOV"] = "Чертоги"
-L["DUNGEON_SHORT_NAME_LOWR"] = "Кара низ"
-L["DUNGEON_SHORT_NAME_MOS"] = "Утроба"
-L["DUNGEON_SHORT_NAME_NL"] = "Логово"
-L["DUNGEON_SHORT_NAME_SEAT"] = "Престол"
-L["DUNGEON_SHORT_NAME_UPPR"] = "Кара верх"
-L["DUNGEON_SHORT_NAME_VOTW"] = "Казематы"
---[[Translation missing --]]
---[[ L["ENABLE_AUTO_FRAME_POSITION"] = ""--]] 
---[[Translation missing --]]
---[[ L["ENABLE_AUTO_FRAME_POSITION_DESC"] = ""--]] 
---[[Translation missing --]]
---[[ L["ENABLE_LOCK_PROFILE_FRAME"] = ""--]] 
---[[Translation missing --]]
---[[ L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = ""--]] 
+L["DUNGEON_SHORT_NAME_ARC"] = "Катакомбы Сурамара"
+L["DUNGEON_SHORT_NAME_BRH"] = "Крепость Черной Ладьи"
+L["DUNGEON_SHORT_NAME_COEN"] = "Собор Вечной Ночи"
+L["DUNGEON_SHORT_NAME_COS"] = "Квартал Звезд"
+L["DUNGEON_SHORT_NAME_DHT"] = "Чаща Темного Сердца"
+L["DUNGEON_SHORT_NAME_EOA"] = "Око Азшары"
+L["DUNGEON_SHORT_NAME_HOV"] = "Чертоги Доблести"
+L["DUNGEON_SHORT_NAME_LOWR"] = "Каражан (нижняя часть)"
+L["DUNGEON_SHORT_NAME_MOS"] = "Утроба Душ"
+L["DUNGEON_SHORT_NAME_NL"] = "Логово Нелтариона"
+L["DUNGEON_SHORT_NAME_SEAT"] = "Престол Триумвирата"
+L["DUNGEON_SHORT_NAME_UPPR"] = "Каражан (верхняя часть)"
+L["DUNGEON_SHORT_NAME_VOTW"] = "Казематы Стражей"
+L["ENABLE_AUTO_FRAME_POSITION"] = "Автоматическое позиционирование моего М+ профиля"
+L["ENABLE_AUTO_FRAME_POSITION_DESC"] = "Включение этого параметра будет содержать подсказку M+ профиля рядом с Поиском группы или подсказкой игрока. "
+L["ENABLE_LOCK_PROFILE_FRAME"] = "Закрепить рамку М+ профиля"
+L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = "Предотвращает перетаскивание рамки М+ профиля. Не действует, если рамка М+ профиля настроена на автоматическое позиционирование."
 L["ENABLE_NO_SCORE_COLORS"] = "Отключить цвета для очков"
 L["ENABLE_NO_SCORE_COLORS_DESC"] = "Отключает раскраску очков. Все очки будут отображены белым цветом."
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS_DESC"] = ""--]] 
 L["ENABLE_SIMPLE_SCORE_COLORS"] = "Использовать упрощенную окраску очков"
 L["ENABLE_SIMPLE_SCORE_COLORS_DESC"] = "Показывает очки только цветами качества предметов. Это упрощает визуальную оценку очков при беглом осмотре кандидатов."
 L["HEALER"] = "Лекарь"
@@ -61,8 +61,7 @@ L["MODULE_AMERICAS"] = "Америка"
 L["MODULE_EUROPE"] = "Европа"
 L["MODULE_KOREA"] = "Корея"
 L["MODULE_TAIWAN"] = "Тайвань"
---[[Translation missing --]]
---[[ L["MY_PROFILE_TITLE"] = ""--]] 
+L["MY_PROFILE_TITLE"] = "Мой M+ профиль"
 L["MYTHIC_PLUS_DB_MODULES"] = "Региональные модули базы данных очков"
 L["MYTHIC_PLUS_SCORES"] = "Очки эпохальных+ подземелий"
 L["OPEN_CONFIG"] = "Открыть настройки"
@@ -75,10 +74,11 @@ L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r использует данные у�
 --[[Translation missing --]]
 --[[ L["PLAYER_PROFILE_TITLE"] = ""--]] 
 L["PREV_SEASON_SUFFIX"] = "(*)"
---[[Translation missing --]]
---[[ L["PROFILE_BEST_RUNS"] = ""--]] 
+L["PROFILE_BEST_RUNS"] = "Лучшие прохождения подземелий"
 --[[Translation missing --]]
 --[[ L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["RAIDERIO_CLIENT_CUSTOMIZATION"] = ""--]] 
 L["RAIDERIO_MP_BASE_SCORE"] = "Raider.IO M+ Базовые Очки"
 L["RAIDERIO_MP_SCORE"] = "Очки по версии Raider.IO"
 L["RAIDERIO_MP_SCORE_COLON"] = "Очки по версии Raider.IO: "
@@ -109,20 +109,18 @@ L["SHOW_ON_GUILD_ROSTER"] = "Показывать в гильдии"
 L["SHOW_ON_GUILD_ROSTER_DESC"] = "Показывает очки при наведении курсора мыши на членов гильдии."
 L["SHOW_ON_PLAYER_UNITS"] = "Показывать при наведении на игроков"
 L["SHOW_ON_PLAYER_UNITS_DESC"] = "Показывает очки при наведении курсора мыши на цель, если это игрок."
---[[Translation missing --]]
---[[ L["SHOW_RAIDERIO_PROFILE"] = ""--]] 
---[[Translation missing --]]
---[[ L["SHOW_RAIDERIO_PROFILE_DESC"] = ""--]] 
-L["SHOW_SCORE_IN_COMBAT"] = "Показывать Очки в Битве"
+L["SHOW_RAIDERIO_PROFILE"] = "Показывать подсказку моего M+ профиля"
+L["SHOW_RAIDERIO_PROFILE_DESC"] = "Показывает подсказку моего M+ профиля"
+L["SHOW_SCORE_IN_COMBAT"] = "Показывать количество очков во время боя"
 L["SHOW_SCORE_IN_COMBAT_DESC"] = "Отключите, чтобы минимизировать влияние на производительность при наведении на игроков во время боя."
 L["TANK"] = "Танк"
 L["TANK_SCORE"] = "Очки танка"
-L["TIMED_10_RUNS"] = "Пройдено 10-14 ключей во время"
-L["TIMED_15_RUNS"] = "Пройдено 15+ ключей во время"
+L["TIMED_10_RUNS"] = "Пройдено 10-14 ключей вовремя"
+L["TIMED_15_RUNS"] = "Пройдено 15+ ключей вовремя"
 L["TOOLTIP_CUSTOMIZATION"] = "Настройки подсказок"
 --[[Translation missing --]]
 --[[ L["TOOLTIP_PROFILE"] = ""--]] 
-L["UNKNOWN_SCORE"] = "Неизв."
+L["UNKNOWN_SCORE"] = "Неизвестно"
 L["UNKNOWN_SERVER_FOUND"] = "|cffFFFFFF%s|r обнаружил неизвестный ранее сервер. Пожалуйста, запишите эту информацию |cffFF9999{|r |cffFFFFFF%s|r |cffFF9999,|r |cffFFFFFF%s|r |cffFF9999}|r и сообщите об этом разработчикам. Спасибо!"
 --[[Translation missing --]]
 --[[ L["UNLOCKING_PROFILE_FRAME"] = ""--]] 

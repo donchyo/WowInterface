@@ -1,10 +1,11 @@
 # oRA3
 
-## [v7.3.13](https://github.com/BigWigsMods/oRA3/tree/v7.3.13) (2018-05-25)
-[Full Changelog](https://github.com/BigWigsMods/oRA3/compare/v7.3.12...v7.3.13)
+## [v8.0.0](https://github.com/BigWigsMods/oRA3/tree/v8.0.0) (2018-07-17)
+[Full Changelog](https://github.com/BigWigsMods/oRA3/compare/v7.3.13...v8.0.0)
 
-- ReadyCheck: Handle async buff descriptions for stat parsing (and lower the threshold)  
-- ReadyCheck: Fix buff tooltips in BfA  
-- Consumables: Add the BfA consumables (commented out)  
-- ReadyCheck: Fix showing the eating buff  
-- Fix checking buffs by id  
+- Eternal Guardian is no longer a combat res  
+- Update TOC for 8.0  
+- Remove 8.0 compat  
+- Tweak  
+- Add some more 8.0 combat log compat  
+- Cooldowns: GUID check comms (closes #43)  

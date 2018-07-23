@@ -231,7 +231,7 @@ do
 	end
 end
 
-function mod:Interrupt(unitId, _, _, _, spellId)
+function mod:Interrupt(_, unitId, _, spellId)
 	--Mutated Construct's Struggle for Control doesn't fire a SPELL_INTERRUPT
 	if spellId == 122398 then
 		if unitId == "player" then
@@ -247,7 +247,7 @@ end
 --Willpower
 do
 	local prev = 0
-	function mod:MyWillpower(unitId, powerType)
+	function mod:MyWillpower(_, unitId, powerType)
 		if powerType == "ALTERNATE" then
 			local t = GetTime()
 			if t-prev > 1 then
@@ -261,17 +261,17 @@ do
 	end
 end
 
-function mod:MonstrosityInc(unitId)
+function mod:MonstrosityInc(event, unitId)
 	local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
 	if hp < 75 then -- phase starts at 70
-		self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", unitId)
+		self:UnregisterUnitEvent(event, unitId)
 		self:Message("stages", "Positive", "Long", CL["soon"]:format(self:SpellName(-6254)), false) -- Monstrosity
 	end
 end
 
 do
 	local prev = 0
-	function mod:BreakFreeHP(unitId)
+	function mod:BreakFreeHP(_, unitId)
 		local t = GetTime()
 		if t-prev > 1 then
 			local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
@@ -313,7 +313,7 @@ do
 		self:DelayedMessage("explosion_by_other", 40, "Attention", CL["custom_sec"]:format(explosion, 5), args.spellId)
 		self:Bar("explosion_casting_by_other", 2.5, "<".. L["monstrosity_is_casting"] ..">", 122398)
 		self:CDBar("explosion_by_other", 45, L["monstrosity_is_casting"], args.spellId) -- cooldown, don't move this
-		if UnitDebuff("player", self:SpellName(122784)) then -- Reshape Life
+		if self:UnitDebuff("player", self:SpellName(122784)) then -- Reshape Life
 			self:Flash("explosion_casting_by_other", args.spellId)
 			warningSpam(args.spellName)
 		end
@@ -321,7 +321,7 @@ do
 end
 
 --Monstrosity's Amber Explosion
-function mod:MonstrosityStopCast(_, _, _, _, spellId)
+function mod:MonstrosityStopCast(_, _, _, spellId)
 	if spellId == 122402 then
 		self:StopBar("<".. L["monstrosity_is_casting"] ..">")
 	end

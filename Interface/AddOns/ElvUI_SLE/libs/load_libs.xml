@@ -1,5 +1,4 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
-	<Include file="LibTourist-3.0\lib.xml" />
 	<Include file="LibElv-UIButtons-1.0\load_uibuttons.xml"/>
 	<Script file="LibElv-GameMenu-1.0\LibElv-GameMenu-1.0.lua"/>
 	<Script file="LibQTip-1.0\LibQTip-1.0.lua"/>

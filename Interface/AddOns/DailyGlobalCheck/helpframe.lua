@@ -288,11 +288,11 @@ local helpers = {
 }
 
 local function getHelper()
- OpenCalendar()
- local _, month, today, year = CalendarGetDate()
- CalendarSetAbsMonth(month, year)
- for i = 1, CalendarGetNumDayEvents(0, today) do
-  local _, _, texture = CalendarGetHolidayInfo(0, today, i)
+ C_Calendar.OpenCalendar()
+ local cdate = C_Calendar.GetDate()
+ C_Calendar.SetAbsMonth(cdate.month, cdate.year)
+ for i = 1, C_Calendar.GetNumDayEvents(0, cdate.monthDay) do
+  local _, _, texture = C_Calendar.GetHolidayInfo(0, cdate.monthDay, i)
   for k,v in pairs(helpers) do
    if texture == v[3] then
 	return v

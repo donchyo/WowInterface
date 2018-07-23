@@ -71,7 +71,7 @@ MogIt_Cosmetic: disabled
 HandyNotes_DraenorTreasures: disabled
 HandyNotes: disabled
 HandyNotes_SummerFestival: disabled
-GarrisonMissionManager: enabled
+GarrisonMissionManager: disabled
 MasterPlanA: disabled
 MasterPlan: disabled
 Velhari_Health_Fix: disabled
@@ -94,8 +94,8 @@ infCombatRess: disabled
 Details: enabled
 +Wowhead_Looter: disabled
 Chatter: enabled
-MSBTOptions: enabled
-MikScrollingBattleText: enabled
+MSBTOptions: disabled
+MikScrollingBattleText: disabled
 AutoTitle_ElvUI_LDB: enabled
 EveryGoldToBanker: disabled
 Accountant: disabled
@@ -377,9 +377,9 @@ BigWigs_TombOfSargeras: enabled
 BigWigs_TrialOfValor: enabled
 BigWigs_WarlordsOfDraenor: enabled
 DialogKey: enabled
-iKeystones: enabled
-Keystones: enabled
-LazyKeystones: enabled
+iKeystones: disabled
+Keystones: disabled
+LazyKeystones: disabled
 RaiderIO: enabled
 RaiderIO_DB_US_A: disabled
 SunnArt: disabled
@@ -424,3 +424,4 @@ SMT: disabled
 bdBuffs: disabled
 bdCore: disabled
 StayUnsheathed: disabled
+AddOnSkins: enabled

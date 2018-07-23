@@ -7,21 +7,37 @@ local LibStub = _G.LibStub; assert(LibStub ~= nil,'LibStub')
 local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
 --
-local FROSTWALL = P.FROSTWALL; assert(FROSTWALL ~= nil,'FROSTWALL')
-local LUNARFALL = P.LUNARFALL; assert(LUNARFALL ~= nil,'LUNARFALL')
 local PRI_OPEN = P.PRI_OPEN; assert(PRI_OPEN ~= nil,'PRI_OPEN')
-local PRI_POWER = P.PRI_POWER; assert(PRI_POWER ~= nil,'PRI_POWER')
 local PRI_REP = P.PRI_REP; assert(PRI_REP ~= nil,'PRI_REP')
 local PRI_REST = P.PRI_REST; assert(PRI_REST ~= nil,'PRI_REST')
 local PRI_TOKEN = P.PRI_TOKEN; assert(PRI_TOKEN ~= nil,'PRI_TOKEN')
 local SALVAGE_YARD = P.SALVAGE_YARD; assert(SALVAGE_YARD ~= nil,'SALVAGE_YARD')
-local TIMELESS_ISLE = P.TIMELESS_ISLE; assert(TIMELESS_ISLE ~= nil,'TIMELESS_ISLE')
 local MINE_HORDE = P.MINE_HORDE; assert(MINE_HORDE ~= nil,'MINE_HORDE')
 local MINE_ALLIANCE = P.MINE_ALLIANCE; assert(MINE_ALLIANCE ~= nil,'MINE_ALLIANCE')
 local SHIPYARD_HORDE = P.SHIPYARD_HORDE; assert(SHIPYARD_HORDE ~= nil,'SHIPYARD_HORDE')
 local SHIPYARD_ALLIANCE = P.SHIPYARD_ALLIANCE; assert(SHIPYARD_ALLIANCE ~= nil,'SHIPYARD_ALLIANCE')
-local FROSTFIRE_RIDGE = P.FROSTFIRE_RIDGE; assert(FROSTFIRE_RIDGE ~= nil,'FROSTFIRE_RIDGE')
-local SHADOWMOON_VALLEY = P.SHADOWMOON_VALLEY; assert(SHADOWMOON_VALLEY ~= nil,'SHADOWMOON_VALLEY')
+local FROSTWALL1 = P.FROSTWALL1; assert(FROSTWALL1 ~= nil,'FROSTWALL1')
+local FROSTWALL2 = P.FROSTWALL2; assert(FROSTWALL2 ~= nil,'FROSTWALL2')
+local FROSTWALL3 = P.FROSTWALL3; assert(FROSTWALL3 ~= nil,'FROSTWALL3')
+local FROSTWALL4 = P.FROSTWALL4; assert(FROSTWALL4 ~= nil,'FROSTWALL4')
+local LUNARFALL1 = P.LUNARFALL1; assert(LUNARFALL1 ~= nil,'LUNARFALL1')
+local LUNARFALL2 = P.LUNARFALL2; assert(LUNARFALL2 ~= nil,'LUNARFALL2')
+local LUNARFALL3 = P.LUNARFALL3; assert(LUNARFALL3 ~= nil,'LUNARFALL3')
+local LUNARFALL4 = P.LUNARFALL4; assert(LUNARFALL4 ~= nil,'LUNARFALL4')
+local TIMELESS_ISLE1 = P.TIMELESS_ISLE1; assert(TIMELESS_ISLE1 ~= nil,'TIMELESS_ISLE1')
+local TIMELESS_ISLE2 = P.TIMELESS_ISLE2; assert(TIMELESS_ISLE2 ~= nil,'TIMELESS_ISLE2')
+local FROSTFIRE_RIDGE1 = P.FROSTFIRE_RIDGE1; assert(FROSTFIRE_RIDGE1 ~= nil,'FROSTFIRE_RIDGE1')
+local FROSTFIRE_RIDGE2 = P.FROSTFIRE_RIDGE2; assert(FROSTFIRE_RIDGE2 ~= nil,'FROSTFIRE_RIDGE2')
+local FROSTFIRE_RIDGE3 = P.FROSTFIRE_RIDGE3; assert(FROSTFIRE_RIDGE3 ~= nil,'FROSTFIRE_RIDGE3')
+local FROSTFIRE_RIDGE4 = P.FROSTFIRE_RIDGE4; assert(FROSTFIRE_RIDGE4 ~= nil,'FROSTFIRE_RIDGE4')
+local FROSTFIRE_RIDGE5 = P.FROSTFIRE_RIDGE5; assert(FROSTFIRE_RIDGE5 ~= nil,'FROSTFIRE_RIDGE5')
+local FROSTFIRE_RIDGE6 = P.FROSTFIRE_RIDGE6; assert(FROSTFIRE_RIDGE6 ~= nil,'FROSTFIRE_RIDGE6')
+local FROSTFIRE_RIDGE7 = P.FROSTFIRE_RIDGE7; assert(FROSTFIRE_RIDGE7 ~= nil,'FROSTFIRE_RIDGE7')
+local FROSTFIRE_RIDGE8 = P.FROSTFIRE_RIDGE8; assert(FROSTFIRE_RIDGE8 ~= nil,'FROSTFIRE_RIDGE8')
+local FROSTFIRE_RIDGE9 = P.FROSTFIRE_RIDGE9; assert(FROSTFIRE_RIDGE9 ~= nil,'FROSTFIRE_RIDGE9')
+local SHADOWMOON_VALLEY1 = P.SHADOWMOON_VALLEY1; assert(SHADOWMOON_VALLEY1 ~= nil,'SHADOWMOON_VALLEY1')
+local SHADOWMOON_VALLEY3 = P.SHADOWMOON_VALLEY3; assert(SHADOWMOON_VALLEY3 ~= nil,'SHADOWMOON_VALLEY3')
+local SHADOWMOON_VALLEY3 = P.SHADOWMOON_VALLEY3; assert(SHADOWMOON_VALLEY3 ~= nil,'SHADOWMOON_VALLEY3')
 --
 NOP.T_INSTA_WQ = { -- [spellID] = itemID, list of OH advancements and spells for instant completion non-elite WQ
   [221602] = 140038, -- Might of Dalaran
@@ -36,8 +52,6 @@ NOP.T_SPELL_BY_NAME = { -- [itemID] = {{count_to_use,priority},{"sub-Zone",...},
   [114171] = {{1,PRI_OPEN},nil,nil}, -- Crate Restored Artifact, common for all
   [113271] = {{1,PRI_OPEN},nil,nil}, -- Convert to garrison resources, Giant Kaliri Egg, Gain xxx Garrison Resources, common for all
   [128316] = {{1,PRI_OPEN},nil,nil}, -- Convert to Oil, Bulging Barrel of Oil,
-  [139669] = {{1,PRI_POWER},nil,nil}, -- Throw Back, Toss the fish back into the water, granting 50 Artifact Power to your fishing artifact.
-  [129097] = {{1,PRI_OPEN},nil,nil}, -- 30 Ancient Mana, Ancient Mana Gem
   [140401] = {{1,PRI_OPEN},nil,nil}, -- 75 Ancient Mana, Blue Or'ligai Egg
   [140236] = {{1,PRI_OPEN},nil,nil}, -- 100 Ancient Mana, 
   [143733] = {{1,PRI_OPEN},nil,nil}, -- Ancient Mana Shards
@@ -48,16 +62,13 @@ NOP.T_SPELL_BY_NAME = { -- [itemID] = {{count_to_use,priority},{"sub-Zone",...},
   [140239] = {{1,PRI_OPEN},nil,nil}, -- 300 Ancient Mana
   [140526] = {{1,PRI_OPEN},nil,nil}, -- Eredar Signet, Use: Provides a significant increase to character experience.
   [141028] = {{1,PRI_OPEN},nil,nil}, -- Grimoire of Knowledge, Use: Open your Followers page and use this item to grant 4000 XP directly to a Champion.
-  [146663] = {{1,PRI_POWER},nil,nil}, -- Empowering, Soggy Tapestry, 150 artifact power
   [147837] = {{1,PRI_TOKEN},nil,nil}, -- Create Relic, Relinquished Life Relic
-  [114116] = {{1,PRI_REST},{SALVAGE_YARD},{[FROSTWALL]=true,[LUNARFALL]=true}}, -- Create Relic, Relinquished Life Relic
-  [116158] = {{1,PRI_REST},nil,{[FROSTWALL]=true,[LUNARFALL]=true}}, -- Toss Fish, Lunarfall Carp, can be used only in garrison shown on button only in garrison.
-}
-NOP.T_SPELL_BY_USE_TEXT = { -- [spellID] = {{count_to_use,priotity},itemID,{"sub-Zone",...},{[mapID]=true,...}}, table for opening via spell, used for multiple items with same spell text
-  [168178] = {{1,PRI_REST},114116,{SALVAGE_YARD},{[FROSTWALL]=true,[LUNARFALL]=true}}, -- Salvage, Bag of Salvaged Goods, can be used only in salvage-yard shown on button only in garrison even if disabled zone-lock
-  [163769] = {{1,PRI_REST},116158,nil,{[FROSTWALL]=true,[LUNARFALL]=true}}, -- Toss Fish, Lunarfall Carp, can be used only in garrison shown on button only in garrison.
-  [233232] = {{1,PRI_REST},143748,nil,nil}, -- 25 mana
-  [222333] = {{1,PRI_REST},139786,nil,nil}, -- 50 mana
+  [114116] = {{1,PRI_REST},{SALVAGE_YARD},{[FROSTWALL1]=true,[FROSTWALL2]=true,[FROSTWALL3]=true,[FROSTWALL4]=true,[LUNARFALL1]=true,[LUNARFALL2]=true,[LUNARFALL3]=true,[LUNARFALL4]=true}}, -- Create Relic, Relinquished Life Relic
+  [116158] = {{1,PRI_REST},nil,{[FROSTWALL1]=true,[FROSTWALL2]=true,[FROSTWALL3]=true,[FROSTWALL4]=true,[LUNARFALL1]=true,[LUNARFALL2]=true,[LUNARFALL3]=true,[LUNARFALL4]=true}}, -- Toss Fish, Lunarfall Carp, can be used only in garrison shown on button only in garrison.
+  [ 94223] = {{1,PRI_REP},nil,nil}, -- Stolen Shado-Pan Insignia
+  [ 94225] = {{1,PRI_REP},nil,nil}, -- Stolen Celestial Insignia
+  [ 94226] = {{1,PRI_REP},nil,nil}, -- Stolen Stolen Klaxxi Insignia
+  [ 94227] = {{1,PRI_REP},nil,nil}, -- Stolen Golden Lotus Insignia
 }
 NOP.T_RECIPES = { -- [ItemId] = {{count_to_use,priority}, "gsub regex" | tooltip-line-number,{"sub-Zone",...},{[mapID]=true,...}, factionID}, item tooltip template only text to 1st match is compared, that mean all items of same school would be looked up.
   [153135] = {{1,PRI_TOKEN},4,nil,nil}, -- Unsullied Cloth Robes, why Blizzard did put in type of armor?
@@ -70,13 +81,12 @@ NOP.T_RECIPES = { -- [ItemId] = {{count_to_use,priority}, "gsub regex" | tooltip
   [140744] = {{1,PRI_REST},"(.+:).*",nil,nil}, -- Treasure Map: Azsuna
   [138797] = {{1,PRI_REST},"(.+:).*",nil,nil}, -- Illusion: Mongoose
   [122219] = {{1,PRI_OPEN},"(.+:).*",nil,nil}, -- Music Roll: Way of the Monk
-  [122594] = {{1,PRI_OPEN},"(.+:).*",nil,{[FROSTWALL]=true,[LUNARFALL]=true}}, -- Rush Order: Tailoring Emporium, can be used only in garrison shown on button only in garrison.
+  [122594] = {{1,PRI_OPEN},"(.+:).*",nil,{[FROSTWALL1]=true,[FROSTWALL2]=true,[FROSTWALL3]=true,[FROSTWALL4]=true,[LUNARFALL1]=true,[LUNARFALL2]=true,[LUNARFALL3]=true,[LUNARFALL4]=true}}, -- Rush Order: Tailoring Emporium, can be used only in garrison shown on button only in garrison.
   [100865] = {{1,PRI_OPEN},"(.+:).*",nil,nil}, -- Plans: Balanced Trillium Ingot and Its Uses, some old recipes has no learning spell
   [118592] = {{2,PRI_OPEN},"(.+:).*",nil,nil}, -- Partial Receipt: Gizmothingies
   [128440] = {{1,PRI_OPEN},"(.+:).*",nil,nil}, -- Contract: Dowser Goodwell
   [100863] = {{1,PRI_OPEN},"(.+:).*",nil,nil}, -- Pattern: Celestial Cloth and Its Uses, some old recipes has no learning spell
   [141064] = {{1,PRI_OPEN},"(.+:).*",nil,nil}, -- Technique: Glyph of the Shivarra
-  [138865] = {{1,PRI_POWER},2,nil,nil}, -- Gladiator's Triumph 2nd line contains "Artifact Power"
   [138883] = {{1,PRI_REST},4,nil,nil}, -- 4th line contains Use: Target one of your troops to restore 1 vitality.
   [111972] = {{1,PRI_OPEN},2,nil,nil}, -- Enchanter's Study, Level 2, 2nd line contains "Garrison Blueprint"
   [128315] = {{1,PRI_REST},2,nil,nil}, -- Medallion of the Legion, 2nd line contains "Use: Crush the medallion, increasing reputation with the denizens of Draenor by 1,000. (1 Sec Cooldown)"
@@ -132,7 +142,6 @@ NOP.T_ITEMS = { -- [itemID] = {{count_to_use,priority},{"sub-Zone",...},{[mapID]
   [ 93148] = {{1,PRI_OPEN},nil,nil}, -- Pet Supplies
   [ 93149] = {{1,PRI_OPEN},nil,nil}, -- Pet Supplies
   [ 94207] = {{1,PRI_OPEN},nil,nil}, -- Pet Supplies
-  [ 94223] = {{1,PRI_REP},nil,nil}, -- Stolen Shado-Pan Insignia
   [ 97512] = {{10,PRI_OPEN},nil,nil}, -- Ghost Iron Nugget
   [ 97546] = {{10,PRI_OPEN},nil,nil}, -- Kyparite Fragment
   [ 97619] = {{10,PRI_OPEN},nil,nil}, -- Torn Green Tea Leaf
@@ -143,10 +152,10 @@ NOP.T_ITEMS = { -- [itemID] = {{count_to_use,priority},{"sub-Zone",...},{[mapID]
   [ 98095] = {{1,PRI_OPEN},nil,nil}, -- Pet Supplies
   [ 98134] = {{1,PRI_OPEN},nil,nil}, -- Scenario Loot
   [ 98546] = {{1,PRI_OPEN},nil,nil}, -- Scenario Loot
-  [103641] = {{1,PRI_REST},nil,{[TIMELESS_ISLE]=true},147055}, -- Singing Crystal
-  [103642] = {{1,PRI_REST},nil,{[TIMELESS_ISLE]=true},147226}, -- Book of the Ages
-  [103643] = {{1,PRI_REST},nil,{[TIMELESS_ISLE]=true},147476}, -- Dew of Eternal Morning
-  [104287] = {{1,PRI_REST},nil,{[TIMELESS_ISLE]=true},148521}, -- Windfeather Plume
+  [103641] = {{1,PRI_REST},nil,{[TIMELESS_ISLE1]=true,[TIMELESS_ISLE2]=true},147055}, -- Singing Crystal
+  [103642] = {{1,PRI_REST},nil,{[TIMELESS_ISLE1]=true,[TIMELESS_ISLE2]=true},147226}, -- Book of the Ages
+  [103643] = {{1,PRI_REST},nil,{[TIMELESS_ISLE1]=true,[TIMELESS_ISLE2]=true},147476}, -- Dew of Eternal Morning
+  [104287] = {{1,PRI_REST},nil,{[TIMELESS_ISLE1]=true,[TIMELESS_ISLE2]=true},148521}, -- Windfeather Plume
   [108294] = {{10,PRI_OPEN},nil,nil}, -- Silver Ore Nugget
   [108295] = {{10,PRI_OPEN},nil,nil}, -- Tin Ore Nugget
   [108296] = {{10,PRI_OPEN},nil,nil}, -- Gold Ore Nugget
@@ -273,7 +282,9 @@ NOP.T_ITEMS = { -- [itemID] = {{count_to_use,priority},{"sub-Zone",...},{[mapID]
   [122605] = {{1,PRI_OPEN},nil,nil}, -- Tome of the Stones
   [128225] = {{1,PRI_OPEN},nil,nil}, -- Empowered Apexis Fragment
   [128294] = {{1,PRI_OPEN},nil,nil}, -- Trade Agreement: Arakkoa Outcasts
-  [128373] = {{1,PRI_OPEN},{SHIPYARD_HORDE,SHIPYARD_ALLIANCE},{[FROSTFIRE_RIDGE]=true,[SHADOWMOON_VALLEY]=true}}, -- Rush Order: Shipyard, special handling for sub-zone
+  [128373] = {{1,PRI_OPEN},{SHIPYARD_HORDE,SHIPYARD_ALLIANCE},{
+    [FROSTFIRE_RIDGE1]=true,[FROSTFIRE_RIDGE2]=true,[FROSTFIRE_RIDGE3]=true,[FROSTFIRE_RIDGE4]=true,[FROSTFIRE_RIDGE5]=true,[FROSTFIRE_RIDGE6]=true,[FROSTFIRE_RIDGE7]=true,[FROSTFIRE_RIDGE8]=true,[FROSTFIRE_RIDGE9]=true,
+    [SHADOWMOON_VALLEY1]=true,[SHADOWMOON_VALLEY3]=true,[SHADOWMOON_VALLEY3]=true}}, -- Rush Order: Shipyard, special handling for sub-zone
   [128446] = {{1,PRI_OPEN},nil,nil}, -- Saberstalker Teachings: Trailblazer
   [128488] = {{1,PRI_OPEN},nil,nil}, -- Ship: The Awakener
   [128490] = {{1,PRI_OPEN},nil,nil}, -- Blueprint: Oil Rig

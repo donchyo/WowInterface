@@ -1,4 +1,5 @@
 local _, T = ...
+local is8 = select(4,GetBuildInfo()) >= 8e4
 
 local AB = assert(T.ActionBook:compatible(2, 21), "A compatible version of ActionBook is required.")
 local L = AB:locale()
@@ -72,7 +73,9 @@ do -- .macrotext
 		function decodeSpellLink(sid)
 			local tname
 			for id in sid:gmatch("%d+") do
-				local name = GetSpellInfo(tonumber(id))
+				local name, sr = GetSpellInfo(tonumber(id))
+				if is8 then sr = GetSpellSubtext(tonumber(id)) end
+				if sr and sr ~= "" then name = name .. " (" .. sr .. ")" end
 				if name and names[name] ~= tag then
 					names[name], tname = tag, (tname and (tname .. " / ") or "") .. name
 				end

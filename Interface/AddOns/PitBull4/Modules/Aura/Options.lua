@@ -266,8 +266,8 @@ PitBull4_Aura:SetDefaults({
 	filters = {
 		-- default filters are indexed by two character codes.
 		-- The first character follows the following format:
-		-- ! Master Filters
-		-- # Intermediate Filters
+		-- ! Master filters
+		-- # Intermediate filters
 		-- % Race map filters
 		-- & Class map filters
 		-- * Extra filters
@@ -427,6 +427,62 @@ PitBull4_Aura:SetDefaults({
 			display_name = L["Personal nameplate"],
 			filter_type = 'Should consolidate',
 			should_consolidate = true,
+			disabled = true,
+			built_in = true,
+		},
+		['@S'] = {
+			display_name = L["Global nameplate"],
+			filter_type = 'Global nameplate',
+			global_nameplate = true,
+			disabled = true,
+			built_in = true,
+		},
+		['@T'] = {
+			display_name = L["Cast by a player"],
+			filter_type = 'Cast by a player',
+			caster_is_player = true,
+			disabled = true,
+			built_in = true,
+		},
+		['@U'] = {
+			display_name = L["Can apply aura"],
+			filter_type = 'Can apply aura',
+			can_apply_aura = true,
+			disabled = true,
+			built_in = true,
+		},
+		['@V'] = {
+			display_name = L["Self buff"],
+			filter_type = 'Self buff',
+			self_buff = true,
+			disabled = true,
+			built_in = true,
+		},
+		['@W'] = {
+			display_name = L["Any player"],
+			filter_type = 'Unit',
+			unit_operator = 'player',
+			disabled = true,
+			built_in = true,
+		},
+		['@X'] = {
+			display_name = L["Other player pet"],
+			filter_type = 'Unit',
+			unit_operator = 'other_player_pet',
+			disabled = true,
+			built_in = true,
+		},
+		['@Y'] = {
+			display_name = L["Has custom visibility"],
+			filter_type = 'Has custom visibility',
+			custom_visibility = true,
+			disabled = true,
+			built_in = true,
+		},
+		['@Z'] = {
+			display_name = L["Custom show"],
+			filter_type = 'Should show',
+			should_show = true,
 			disabled = true,
 			built_in = true,
 		},
@@ -1434,6 +1490,42 @@ PitBull4_Aura:SetDefaults({
 			built_in = true,
 			display_when = "highlight",
 		},
+		['!M'] = {
+			-- NameplateBuffContainerMixin:ShouldShowBuff
+			display_name = L["Blizzard buffs, nameplate"],
+			filter_type = 'Meta',
+			filters = {'@S','@R','@H'},
+			operators = {'|','&'},
+			built_in = true,
+			display_when = "buff",
+		},
+		['!N'] = {
+			-- CompactUnitFrame_UtilShouldDisplayBuff
+			display_name = L["Blizzard buffs, group"],
+			filter_type = 'Meta',
+			filters = {'@Z','@Y','@H','@U','@V'},
+			operators = {'|~','&','&','&~'},
+			built_in = true,
+			display_when = "buff",
+		},
+		['!P'] = {
+			-- TargetFrame_ShouldShowDebuffs
+			display_name = L["Blizzard debuffs, target"],
+			filter_type = 'Meta',
+			filters = {'@S','@H','@G','@W','@D','@X','@T'},
+			operators = {'|','|','|','|','|','|~'},
+			built_in = true,
+			display_when = "debuff",
+		},
+		['!Q'] = {
+			--- CompactUnitFrame_UtilShouldDisplayDebuff
+			display_name = L["Blizzard debuffs, group"],
+			filter_type = 'Meta',
+			filters = {'@Z','@Y','@I'},
+			operators = {'|~','&'},
+			built_in = true,
+			display_when = "debuff",
+		},
 	},
 })
 
@@ -1613,16 +1705,11 @@ PitBull4_Aura:SetGlobalOptionsFunction(function(self)
 	},
 	'div', {
 		type = "header",
-		name = "",
+		name = L["Filter Editor"],
 		hidden = function(info)
 			-- don't show the divider if there are no other shown options
 			return not self:IsEnabled() or not MSQ
 		end,
-	},
-	'filter_editor', {
-		type = "description",
-		name =  L["Configure the filters for the aura modules."],
-		fontSize = "medium",
 	},
 	PitBull4_Aura:GetFilterEditor()
 end)

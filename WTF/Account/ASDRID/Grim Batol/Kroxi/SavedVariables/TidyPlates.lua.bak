@@ -12,9 +12,9 @@ TidyPlatesOptions = {
 	["PrimaryTheme"] = "Threat Plates",
 	["SecondaryProfile"] = "Damage",
 	["FourthSpecProfile"] = "Damage",
-	["ActiveTheme"] = "Threat",
-	["ForceBlizzardFont"] = false,
-	["ActiveThemeName"] = "",
 	["ThirdSpecProfile"] = "Tank",
+	["ActiveThemeName"] = "",
+	["ForceBlizzardFont"] = false,
+	["ActiveTheme"] = "Threat",
 	["FirstSpecProfile"] = "Damage",
 }

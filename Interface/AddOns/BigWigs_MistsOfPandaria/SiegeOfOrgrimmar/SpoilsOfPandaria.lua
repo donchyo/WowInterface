@@ -18,8 +18,6 @@ local bossUnitPowers = {}
 local massiveCrates = 2
 local stoutCrates = 6
 local prevEnrage = 0
-local GetNumWorldStateUI = GetNumWorldStateUI
-local GetWorldStateUIInfo = GetWorldStateUIInfo
 
 local function checkPlayerSide()
 	return 1 -- XXX fixme
@@ -116,7 +114,7 @@ function mod:OnEngage()
 	wipe(setToBlow)
 	wipe(bossUnitPowers)
 	self:RegisterUnitEvent("UNIT_POWER_FREQUENT", nil, "boss1", "boss2")
-	self:RegisterEvent("UPDATE_WORLD_STATES")
+	--self:RegisterWidgetEvent(527, "UpdateBerserkTimer") -- XXX get the correct widget
 	self:OpenProximity("proximity", 3)
 end
 
@@ -124,7 +122,7 @@ end
 -- Event Handlers
 --
 
-function mod:UNIT_POWER_FREQUENT(unit, powerType)
+function mod:UNIT_POWER_FREQUENT(_, unit, powerType)
 	if powerType ~= "ALTERNATE" then return end
 
 	local power = UnitPower(unit, 10) -- Enum.PowerType.Alternate = 10
@@ -184,7 +182,7 @@ function mod:BreathOfFire(args)
 	-- XXX no range checking now
 	if not player then --or self:Range(player) < 30 then
 		self:Message(args.spellId, "Attention")
-		if UnitDebuff("player", self:SpellName(146217)) then -- Keg Toss
+		if self:UnitDebuff("player", self:SpellName(146217)) then -- Keg Toss
 			self:PlaySound(args.spellId, "Long")
 			self:Flash(146217) -- flash again
 		end
@@ -333,7 +331,7 @@ do
 	end
 end
 
-function mod:UPDATE_WORLD_STATES()
+function mod:UpdateBerserkTimer(_, text)
 	-- NEW MISSION! I want you to blow up... THE OCEAN!
 	-- If it wasn't clear from this code, I don't trust this API at all.
 	-- Hardcoding the values and firing :Berserk on engage/room change seemed to end up with timers going out of sync.
@@ -341,24 +339,18 @@ function mod:UPDATE_WORLD_STATES()
 	-- Repeatedly running through LFR to test various methods was also a delightful experience.
 	-- Pretty much, I hate it. The only positive from this is that we don't need to schedule the messages.
 	-- If this ever breaks in a future patch, $#!+.
-	for i = 1, GetNumWorldStateUI() do
-		local _, state, _, enrage = GetWorldStateUIInfo(i)
-		if state > 0 and enrage then -- Check if state is visible and if text exists.
-			local remaining = enrage:match("%d+")
-			if remaining then
-				local timeRemaining = tonumber(remaining)
-				if timeRemaining and timeRemaining > 0 then
-					if timeRemaining > prevEnrage or timeRemaining % 60 == 0 then
-						self:Bar("berserk", timeRemaining+1, 26662) -- +1s to compensate for timer rounding.
-					end
-					-- It shouldn't fire the same value twice, but throttle for safety.
-					if timeRemaining ~= prevEnrage and (timeRemaining == 60 or timeRemaining == 30 or timeRemaining == 10 or timeRemaining == 5) then
-						self:Message("berserk", "Positive", nil, format(CL.custom_sec, self:SpellName(26662), timeRemaining), 26662)
-					end
-					prevEnrage = timeRemaining
-				end
+	local remaining = text:match("%d+")
+	if remaining then
+		local timeRemaining = tonumber(remaining)
+		if timeRemaining and timeRemaining > 0 then
+			if timeRemaining > prevEnrage or timeRemaining % 60 == 0 then
+				self:Bar("berserk", timeRemaining+1, 26662) -- +1s to compensate for timer rounding.
 			end
+			-- It shouldn't fire the same value twice, but throttle for safety.
+			if timeRemaining ~= prevEnrage and (timeRemaining == 60 or timeRemaining == 30 or timeRemaining == 10 or timeRemaining == 5) then
+				self:Message("berserk", "Positive", nil, format(CL.custom_sec, self:SpellName(26662), timeRemaining), 26662)
+			end
+			prevEnrage = timeRemaining
 		end
 	end
 end
-

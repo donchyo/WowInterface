@@ -38,15 +38,6 @@ local quakeCounter = 0
 local kickable = 0
 local crystalTimer = nil
 
-local function warnCrystalShell(spellName)
-	if UnitDebuff("player", spellName) or not UnitAffectingCombat("player") then
-		mod:CancelTimer(crystalTimer)
-		crystalTimer = nil
-	else
-		mod:Message(137633, "Personal", "Info", L["no_crystal_shell"])
-	end
-end
-
 -- marking
 local markableMobs = {}
 local marksUsed = {}
@@ -100,7 +91,7 @@ function mod:OnEngage()
 	self:Bar(136294, 21) -- Call of Tortos
 	self:CDBar(134920, 28, CL["count"]:format(self:SpellName(134920), 1)) -- Quake Stomp
 	if self:Heroic() then
-		crystalTimer = self:ScheduleRepeatingTimer(warnCrystalShell, 3, self:SpellName(137633))
+		crystalTimer = self:ScheduleRepeatingTimer("CrystalShell", 3, self:SpellName(137633))
 	end
 	-- marking
 	if self.db.profile.custom_off_turtlemarker then
@@ -128,12 +119,21 @@ function mod:BreathUpdate(unit)
 	end
 end
 
+function mod:CrystalShell(spellName)
+	if self:UnitDebuff("player", spellName) or not UnitAffectingCombat("player") then
+		mod:CancelTimer(crystalTimer)
+		crystalTimer = nil
+	else
+		mod:Message(137633, "Personal", "Info", L["no_crystal_shell"])
+	end
+end
+
 function mod:CrystalShellRemoved(args)
 	if not self:Me(args.destGUID) or not self.isEngaged then return end
 	self:Message(args.spellId, "Personal", "Alarm", CL["removed"]:format(args.spellName))
 	if not self:Tank() then
 		self:Flash(args.spellId)
-		crystalTimer = self:ScheduleRepeatingTimer(warnCrystalShell, 3, args.spellName)
+		crystalTimer = self:ScheduleRepeatingTimer("CrystalShell", 3, args.spellName)
 	end
 end
 
@@ -144,7 +144,7 @@ function mod:SnappingBite(args)
 	self:CDBar(args.spellId, 7)
 end
 
-function mod:SummonBats(_, _, _, _, spellId)
+function mod:SummonBats(_, _, _, spellId)
 	if spellId == 136685 then -- Summon Bats
 		self:Message("bats", "Urgent", self:Tank() and not UnitIsUnit("boss1target", "player") and "Warning", 136686)
 		self:Bar("bats", 46, 136686)
@@ -209,9 +209,8 @@ end
 do
 	local concussion = mod:SpellName(136431)
 	local prev = 0
-	local UnitDebuff = UnitDebuff
-	function mod:ShellConcussionCheck(unit)
-		local _, _, _, _, _, _, expires = UnitDebuff(unit, concussion)
+	function mod:ShellConcussionCheck(_, unit)
+		local _, _, _, expires = self:UnitDebuff(unit, concussion)
 		if expires and expires ~= prev then
 			local t = GetTime()
 			if prev < t then -- buff fell off

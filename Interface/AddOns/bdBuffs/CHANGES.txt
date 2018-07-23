@@ -1,40 +1,16 @@
-lightweight tag d0235fe7a02ca224fc82959a97b72b30e452fec3 2.12
-Author:	blooblahguy <blooblahguy@gmail.com>
-Date:	Wed Apr 25 23:28:55 2018 -0600
+lightweight tag 21bb6bcc346a196ee33c99039942d50610e2c698 2.14
+Author:	Glade Lynch <blooblahguy@gmail.com>
+Date:	Wed Jul 18 11:29:55 2018 -0600
 
-commit d0235fe7a02ca224fc82959a97b72b30e452fec3
-Author: blooblahguy <blooblahguy@gmail.com>
-Date:   Wed Apr 25 23:28:55 2018 -0600
-
-    fixing for legion as again
-
-commit 211a46c3bb137a4aac17257086e9aa0d24a16527
-Author: blooblahguy <blooblahguy@gmail.com>
-Date:   Wed Apr 25 23:22:15 2018 -0600
-
-    BFA Support
-
-commit d8a82e6e0948c9c098e4c05c8a961aabe13a692f
-Author: blooblahguy <blooblahguy@gmail.com>
-Date:   Sun Jan 28 21:05:40 2018 -0700
-
-    trying to remove mouse capture
-
-commit f682d327013471462590906d0879c2b54e9dec7b
+commit 21bb6bcc346a196ee33c99039942d50610e2c698
 Author: Glade Lynch <blooblahguy@gmail.com>
-Date:   Fri Jan 5 13:24:41 2018 -0700
+Date:   Wed Jul 18 11:29:55 2018 -0600
 
-    fixed typos, adding potential aura filtering
+    toc bump, aura parameter fix
 
-commit 39218db3185f960a534e1fe63b4930b26ac9b591
-Author: blooblahguy <blooblahguy@gmail.com>
-Date:   Tue Nov 21 10:49:38 2017 -0700
+commit 8cccd7bf1197230f9006baf40b1a64f14c8b803c
+Author: Glade Lynch <blooblahguy@gmail.com>
+Date:   Thu Apr 26 16:55:11 2018 -0600
 
-    Merging other projects
-
-commit bb04415f4e342ed2fe39f4d9355505d67979d0d2
-Author: blooblahguy <blooblahguy@gmail.com>
-Date:   Sun Oct 1 22:45:47 2017 -0600
-
-    toc bump
+    Buff icons fix
 

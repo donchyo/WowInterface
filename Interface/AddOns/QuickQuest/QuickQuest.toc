@@ -1,6 +1,6 @@
-## Interface: 70300
+## Interface: 80000
 ## Author: p3lim
-## Version: 70300.34-Release
+## Version: 80000.35-Release
 ## Title: QuickQuest
 ## Notes: Quest automation wizardry
 ## OptionalDeps: LibGossipQuestInfo, Wasabi
@@ -9,12 +9,21 @@
 ## X-Curse-Project-ID: 36494
 ## X-WoWI-ID: 20838
 
-
-
 libs\LibStub\LibStub.lua
 libs\LibGossipQuestInfo\LibGossipQuestInfo.lua
 libs\Wasabi\embed.xml
 
-Localization.lua
+locale\initialize.lua
+locale\deDE.lua
+locale\esES.lua
+locale\esMX.lua
+locale\frFR.lua
+locale\itIT.lua
+locale\koKR.lua
+locale\ptBR.lua
+locale\ruRU.lua
+locale\zhCN.lua
+locale\zhTW.lua
+
 Config.lua
 QuickQuest.lua

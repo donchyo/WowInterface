@@ -5,689 +5,11 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 35,
 	["tabela_historico"] = {
 		["tabelas"] = {
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002244,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dungeoneer's Training Dummy"] = 4373855,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["last_event"] = 1531012239,
-							["classe"] = "SHAMAN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 4373855.002244,
-							["serial"] = "Player-1303-0478DE10",
-							["dps_started"] = false,
-							["end_time"] = 1531012245,
-							["spec"] = 264,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Zuriz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 52323,
-										["g_amt"] = 0,
-										["n_max"] = 24530,
-										["targets"] = {
-											["Dungeoneer's Training Dummy"] = 148744,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 96421,
-										["n_min"] = 23805,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 148744,
-										["c_max"] = 52323,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 52323,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[188838] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 1531529,
-										["g_amt"] = 0,
-										["n_max"] = 346611,
-										["targets"] = {
-											["Dungeoneer's Training Dummy"] = 2748206,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1216677,
-										["n_min"] = 61794,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 2748206,
-										["c_max"] = 412219,
-										["id"] = 188838,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 353545,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[51505] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1476905,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Dungeoneer's Training Dummy"] = 1476905,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1476905,
-										["c_max"] = 1476905,
-										["id"] = 51505,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 1476905,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.002244,
-							["start_time"] = 1531012218,
-							["delay"] = 0,
-							["total"] = 4373855.002244,
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.004909,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["serial"] = "Player-1303-0478DE10",
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.004909,
-							["targets_overheal"] = {
-								["Zuriz"] = 4577427,
-							},
-							["classe"] = "SHAMAN",
-							["totalover"] = 4577427.004909,
-							["total_without_pet"] = 0.004909,
-							["iniciar_hps"] = false,
-							["start_time"] = 1531012218,
-							["heal_enemy_amt"] = 0,
-							["total"] = 0.004909,
-							["healing_taken"] = 0.004909,
-							["end_time"] = 1531012245,
-							["nome"] = "Zuriz",
-							["spells"] = {
-								["_ActorTable"] = {
-									[61295] = {
-										["c_amt"] = 4,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Zuriz"] = 1801813,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Zuriz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 9,
-										["overheal"] = 1801813,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 61295,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 5,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[8004] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Zuriz"] = 2031380,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Zuriz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 2031380,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8004,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Zuriz"] = 241510,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Zuriz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 14,
-										["overheal"] = 241510,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 14,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[228401] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Zuriz"] = 502724,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Zuriz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 502724,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 228401,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 0,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["spec"] = 264,
-							["heal_enemy"] = {
-							},
-							["targets_absorbs"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1531012244,
-							["on_hold"] = false,
-							["totaldenied"] = 0.004909,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[188838] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 21,
-										["id"] = 188838,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57723] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 57723,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cooldowns_defensive"] = 1.002304,
-							["buff_uptime"] = 197,
-							["last_cooldown"] = {
-								1531013035.222, -- [1]
-								108271, -- [2]
-							},
-							["classe"] = "SHAMAN",
-							["cooldowns_defensive_targets"] = {
-								["Zuriz"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[253072] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 17,
-										["id"] = 253072,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[216251] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 14,
-										["id"] = 216251,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252208] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = 252208,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[77762] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = 77762,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[207472] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 0,
-										["id"] = 207472,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[252801] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 17,
-										["id"] = 252801,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227723] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 27,
-										["id"] = 227723,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[208416] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 208416,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[225788] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 27,
-										["id"] = 225788,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53390] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 14,
-										["id"] = 53390,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[61295] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 17,
-										["id"] = 61295,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[207288] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 207288,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[32182] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 32182,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[242586] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 17,
-										["id"] = 242586,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 30,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 264,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[61295] = 2,
-								[51505] = 1,
-								[8004] = 2,
-								[32182] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[108271] = {
-										["id"] = 108271,
-										["targets"] = {
-											["Zuriz"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["last_event"] = 1531013034,
-							["nome"] = "Zuriz",
-							["pets"] = {
-							},
-							["serial"] = "Player-1303-0478DE10",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Zuriz"] = true,
-				},
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Dungeoneer's Training Dummy",
-				["combat_counter"] = 21470,
-				["playing_solo"] = true,
-				["totals"] = {
-					4373854.965947, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0.998445,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-					["Zuriz"] = {
-						{
-							1, -- [1]
-							108271, -- [2]
-							1, -- [3]
-							1531013035.222, -- [4]
-							5128620, -- [5]
-							"Zuriz", -- [6]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						["n"] = 2,
-					},
-				},
-				["frags_need_refresh"] = false,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zuriz"] = 0.004909,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Zuriz"] = 4373855.002244,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 549292.275,
-				["is_temporary"] = true,
-				["combat_id"] = 739,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["frags"] = {
-				},
-				["data_fim"] = "03:10:45",
-				["data_inicio"] = "03:10:19",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					4373855, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 549265.634,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [1]
 		},
 	},
-	["last_version"] = "v7.3.5.5572",
+	["last_version"] = "v8.0.1.5985",
 	["character_data"] = {
-		["logons"] = 2425,
+		["logons"] = 2427,
 	},
 	["tabela_instancias"] = {
 	},
@@ -714,7 +36,7 @@ _detalhes_database = {
 			["pos"] = {
 				["normal"] = {
 					["y"] = -397.328264681542,
-					["x"] = 541.250906892128,
+					["x"] = 541.249819245666,
 					["w"] = 208.361206054688,
 					["h"] = 127.507873535156,
 				},
@@ -750,7 +72,7 @@ _detalhes_database = {
 					["y"] = -397.328264681542,
 					["x"] = 748.860984304405,
 					["w"] = 211.055404663086,
-					["h"] = 127.507873535156,
+					["h"] = 127.507850646973,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -795,15 +117,6 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["cached_talents"] = {
-		["Player-1303-0478DE10"] = {
-			22492, -- [1]
-			21970, -- [2]
-			21971, -- [3]
-			19275, -- [4]
-			19262, -- [5]
-			22322, -- [6]
-			22539, -- [7]
-		},
 	},
 	["last_instance_id"] = 1651,
 	["announce_interrupts"] = {
@@ -815,7 +128,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1528648187,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 130,
+	["last_realversion"] = 131,
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -827,8 +140,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["dps"] = 0,
 			["author"] = "Details! Team",
+			["dps"] = 0,
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -874,7 +187,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -882,7 +195,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -890,7 +203,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -904,7 +217,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -1966,8 +1279,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["animate"] = false,
 			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -1979,16 +1292,17 @@ _detalhes_database = {
 			["enabled"] = true,
 		},
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["force_font_outline"] = "",
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1532798623,
 	},
+	["ignore_nicktag"] = false,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["ignore_nicktag"] = false,
-	["last_day"] = "13",
-	["combat_counter"] = 21478,
+	["combat_counter"] = 21483,
 	["combat_id"] = 739,
 	["savedStyles"] = {
 	},
@@ -2004,10 +1318,8 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["force_font_outline"] = "",
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1532798623,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Return to Karazhan",
@@ -2020,6 +1332,7 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1651,
 		["previous_boss_killed_at"] = 1528649949,
 	},
+	["last_day"] = "18",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

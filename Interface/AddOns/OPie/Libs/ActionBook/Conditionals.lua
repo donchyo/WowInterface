@@ -1,5 +1,6 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
+local is8 = select(4,GetBuildInfo()) >= 8e4
 local KR, EV = assert(T.ActionBook:compatible("Kindred", 1,12), "A compatible version of Kindred is required"), T.Evie
 local playerClassLocal, playerClass = UnitClass("player")
 
@@ -307,7 +308,16 @@ do -- selfbuff:name
 		
 		local at, query = stringArgCache[args], name == "selfbuff" and UnitBuff or UnitDebuff
 		for i=1,#at do
-			if query("player", at[i]) then
+			local ati = at[i]
+			if is8 then
+				local j, r = 2, query("player", 1)
+				while r do
+					if strcmputf8i(r, ati) == 0 then
+						return true
+					end
+					j, r = j + 1, query("player", j)
+				end
+			elseif query("player", ati) then
 				return true
 			end
 		end
@@ -322,11 +332,21 @@ do -- debuff:name
 		if not args or args == "" then
 			return false
 		end
+		target = target or "target"
 		local at = stringArgCache[args], name == "owndebuff" and "PLAYER" or ""
 		local filter = (name == "owndebuff" or name == "ownbuff") and "PLAYER" or ""
 		local query = (name == "debuff" or name == "owndebuff") and UnitDebuff or UnitBuff
 		for i=1,#at do
-			if query(target, at[i], nil, filter) then
+			local ati = at[i]
+			if is8 then
+				local j, r = 2, query(target, 1, filter)
+				while r do
+					if strcmputf8i(r, ati) == 0 then
+						return true
+					end
+					j, r = j + 1, query(target, j, filter)
+				end
+			elseif query(target, ati, nil, filter) then
 				return true
 			end
 		end

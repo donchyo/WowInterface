@@ -1,23 +1,30 @@
-------------------------------------------------------------------------
-r550 | oscarucb | 2016-12-21 05:22:24 -0600 (Wed, 21 Dec 2016) | 2 lines
-Changed paths:
-   M /trunk/SavedInstances.lua
+tag 3ab9397444d5d67cfa2ecfce5158aefbd5e6e4c0 8.0.1
+Author:	Benjamin Staneck <staneck@gmail.com>
+Date:	Wed Jul 18 15:46:31 2018 +0200
 
-display tweak to last
+8.0.1
 
-------------------------------------------------------------------------
-r549 | oscarucb | 2016-12-20 23:52:40 -0600 (Tue, 20 Dec 2016) | 2 lines
-Changed paths:
-   M /trunk/SavedInstances.lua
+commit 64c04e4a3397a9312297773184eadfe901e489be
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Wed Jul 18 15:39:03 2018 +0200
 
-add Demon Hunter: Twisting Nether (under daily quests)
+    fix M+/ChallengeMode API usage
 
-------------------------------------------------------------------------
-r548 | oscarucb | 2016-12-20 23:13:56 -0600 (Tue, 20 Dec 2016) | 2 lines
-Changed paths:
-   M /trunk/SavedInstances.lua
+commit 8737852bc41277b59a39e256759b59a98648ff31
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Wed Jul 18 15:29:03 2018 +0200
 
-ticket 248: probable fix to miscounted seal from class hall work order
+    fix Calendar API usage
 
-------------------------------------------------------------------------
+commit afb280fe9b20e3aad9b7d7c23b2b4a42c59acfdb
+Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
+Date:   Wed Jul 18 15:09:42 2018 +0200
+
+    Rename SavedInstances/libs/LibDataBroker-1.1/LibDataBroker-1.1.lua to SavedInstances/Libs/LibDataBroker-1.1/LibDataBroker-1.1.lua
+
+commit 791cb9f79a06fc817ce58bb960cca7411a8589bb
+Author: Benjamin Staneck <staneck@gmail.com>
+Date:   Wed Jul 18 15:05:03 2018 +0200
+
+    fix lib folder embeds/ignore
 

@@ -215,7 +215,7 @@ function mod:FrostBeacon(args)
 	self:PrimaryIcon(args.spellId, args.destName)
 end
 
-function mod:UNIT_HEALTH_FREQUENT(unit)
+function mod:UNIT_HEALTH_FREQUENT(event, unit)
 	local hp = UnitHealth(unit) / UnitHealthMax(unit) * 100
 	if phase == 1 then
 		if hp < 30 then
@@ -230,7 +230,7 @@ function mod:UNIT_HEALTH_FREQUENT(unit)
 			if name == arion or name == terrastra then
 				phase = 3
 				self:Message("switch", "Attention", "Info", L["health_report"]:format((UnitName(unit)), hp), 26662)
-				self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", "boss1", "boss2", "boss3", "boss4")
+				self:UnregisterUnitEvent(event, "boss1", "boss2", "boss3", "boss4")
 			end
 		end
 	end
@@ -288,7 +288,7 @@ end
 do
 	local hardenTimer = nil
 	local function quakeIncoming()
-		if UnitDebuff("player", mod:SpellName(83500)) then -- Swirling Winds
+		if mod:UnitDebuff("player", mod:SpellName(83500)) then -- Swirling Winds
 			mod:CancelTimer(hardenTimer)
 			return
 		end
@@ -313,7 +313,7 @@ end
 do
 	local thunderTimer = nil
 	local function thunderShockIncoming()
-		if UnitDebuff("player", mod:SpellName(83581)) then -- Grounded
+		if mod:UnitDebuff("player", mod:SpellName(83581)) then -- Grounded
 			mod:CancelTimer(thunderTimer)
 			return
 		end

@@ -28,7 +28,7 @@ if L then
 	L.charge_trigger = "sets his eyes" -- Horridon sets his eyes on PLAYERNAME and stamps his tail!
 	L.door_trigger = "pour" -- Farraki forces pour from the Farraki Tribal Door!
 	L.orb_trigger = "charge" -- PLAYERNAME forces Horridon to charge the Farraki door!
- 
+
 
 	L.chain_lightning = -7124
 	L.chain_lightning_desc = L.focus_only .. "{-7124}"
@@ -171,11 +171,11 @@ function mod:ControlOrb(msg, _, _, _, player)
 	self:Message(137240, "Positive", nil, msg)
 end
 
-function mod:LastPhase(unitId)
+function mod:LastPhase(event, unitId)
 	local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
 	if hp < 35 then -- phase starts at 30, except if the boss is already there
 		self:Message("adds", "Neutral", "Info", CL["soon"]:format(self:SpellName(-7087)), "achievement_boss_trollgore") -- War-God Jalak
-		self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", "boss1")
+		self:UnregisterUnitEvent(event, "boss1")
 	end
 end
 

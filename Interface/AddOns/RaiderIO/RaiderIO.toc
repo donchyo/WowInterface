@@ -1,8 +1,9 @@
-## Interface: 70300
+## Interface: 80000
+## X-Min-Interface: 70300
 ## Title: Raider.IO Mythic Plus
 ## Notes: Shows Raider.IO Mythic+ Scores in-game. Make sure to load one or more region DB.
 ## Author: Vladinator (Voidzone-Ravencrest) and Aspyr (Aspyrael-Skullcrusher)
-## Version: 7.3.5 (v201807010600)
+## Version: 8.0.1 (v201807200600)
 ## SavedVariables: RaiderIO_Config
 ## X-Website: https://raider.io
 
@@ -25,3 +26,5 @@ locale/zhTW.lua
 
 core.lua
 debug.lua
+
+db/db_client_characters.lua

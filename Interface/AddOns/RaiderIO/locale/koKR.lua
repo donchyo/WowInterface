@@ -39,6 +39,10 @@ L["ENABLE_LOCK_PROFILE_FRAME"] = "내 프로필 고정"
 L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = "내 프로필이 드래그 이동되는걸 방지합니다. 위치 자동화 설정을 사용중일 경우 효과가 없습니다."
 L["ENABLE_NO_SCORE_COLORS"] = "점수 색상 끄기"
 L["ENABLE_NO_SCORE_COLORS_DESC"] = "점수의 색상 표시를 사용하지 않습니다. 모든 점수는 흰색으로 표시됩니다."
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS_DESC"] = ""--]] 
 L["ENABLE_SIMPLE_SCORE_COLORS"] = "표준 색상 사용"
 L["ENABLE_SIMPLE_SCORE_COLORS_DESC"] = "표준 아이템 품질의 색상만으로 점수를 표시합니다. 이렇게 하면 색각 보정이 필요한 사람들이 점수 등급을 쉽게 구분할 수 있습니다."
 L["HEALER"] = "|cff41FF3A치유전담|r"
@@ -66,6 +70,8 @@ L["PLAYER_PROFILE_TITLE"] = "파티장 프로필"
 L["PREV_SEASON_SUFFIX"] = "(*)"
 L["PROFILE_BEST_RUNS"] = "던전별 최고 기록"
 L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = "+%s단 시간내 평균 점수"
+--[[Translation missing --]]
+--[[ L["RAIDERIO_CLIENT_CUSTOMIZATION"] = ""--]] 
 L["RAIDERIO_MP_BASE_SCORE"] = "Raider.IO 쐐기 기본 점수"
 L["RAIDERIO_MP_SCORE"] = "Raider.IO 쐐기 점수"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO 쐐기 점수: "

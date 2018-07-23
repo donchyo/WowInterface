@@ -1,5 +1,6 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
+local is8 = select(4,GetBuildInfo()) >= 8e4
 local AB = assert(T.ActionBook:compatible(2,21), "A compatible version of ActionBook is required")
 local RW = assert(AB:compatible("Rewire",1,10), "A compatible version of Rewire is required")
 local KR = assert(AB:compatible("Kindred",1,14), "A compatible version of Kindred is required")
@@ -14,6 +15,11 @@ local safequote do
 	function safequote(s)
 		return (("%q"):format(s):gsub("[{}u]", r))
 	end
+end
+
+local GetSpellRank = is8 and GetSpellSubtext or function(...)
+	local _, r = GetSpellInfo(...)
+	return r
 end
 
 do -- mount: mount ID
@@ -143,9 +149,10 @@ do -- spell: spell ID + mount spell ID
 			return
 		else
 			local s0, r0 = GetSpellInfo(id)
-			local o, s, r = pcall(GetSpellInfo, s0, r0)
-			if not (o and s and r and s0) then return end
-			local _, _, r1 = pcall(GetSpellInfo, s0)
+			if is8 then r0 = GetSpellSubtext(id) end
+			local o, s = pcall(GetSpellInfo, s0, r0)
+			if not (o and s and s0) then return end
+			local _, r1 = pcall(GetSpellRank, s0)
 			action = (r0 and r1 ~= r0 and FindSpellBookSlotBySpellID(id)) and (s0 .. "(" .. r0 .. ")") or s0
 		end
 		if action and not actionMap[action] then
@@ -158,10 +165,13 @@ do -- spell: spell ID + mount spell ID
 	end, function(id)
 		local name2, _, icon2, name, rank, icon = nil, nil, nil, GetSpellInfo(id)
 		local _, castType = RW:IsSpellCastable(id)
-		if name and castType ~= "forced-id-cast" then
-			name2, _, icon2 = GetSpellInfo(name, rank)
+		if is8 then
+			rank = GetSpellSubtext(id)
 		end
-		return mountMap[id] and L"Mount" or L"Spell", name2 or name, icon2 or icon, nil, GameTooltip.SetSpellByID, id
+		if name and castType ~= "forced-id-cast" then
+			name2, rank, icon2 = GetSpellInfo(name, rank)
+		end
+		return mountMap[id] and L"Mount" or L"Spell", (name2 or name or "?") .. (rank and rank ~= "" and rank ~= GetSpellRank(name) and " (" .. rank .. ")" or ""), icon2 or icon, nil, GameTooltip.SetSpellByID, id
 	end)
 	do -- specials
 		local gab = GetSpellInfo(161691)

@@ -57,8 +57,12 @@ local unit_values = {
 	['isnot'] = L["is not the same as unit"],
 	['match'] = L["matches the pattern"],
 	['nomatch'] = L["does not match the pattern"],
+	['player'] = L["is a player"],
+	['not_player'] = L["is not a player"],
 	['player_controlled'] = L["is player controlled"],
 	['not_player_controlled'] = L["is not player controlled"],
+	['other_player_pet'] = L["is another player's pet"],
+	['not_other_player_pet'] = L["is not another player's pet"],
 	['combat'] = L["is in combat"],
 	['nocombat'] = L["is not in combat"],
 }
@@ -75,21 +79,35 @@ local function compare_unit(unit,op,value,frame)
 	elseif op == "friend" then
 		if not unit then return false end
 		return UnitIsFriend(unit,'player')
+		-- return not UnitCanAttack("player", unit)
 	elseif op == "enemy" then
 		if not unit then return false end
 		return not UnitIsFriend(unit,'player')
+		-- return UnitCanAttack("player", unit)
 	elseif op == "is" then
 		if not unit then return false end
 		return UnitIsUnit(unit,value)
 	elseif op == "isnot" then
 		if not unit then return false end
 		return not UnitIsUnit(unit,value)
+	elseif op == "player" then
+		if not unit then return false end
+		return UnitIsPlayer(unit)
+	elseif op == "not_player" then
+		if not unit then return false end
+		return not UnitIsPlayer(unit)
 	elseif op == "player_controlled" then
 		if not unit then return false end
 		return UnitPlayerControlled(unit)
 	elseif op == "not_player_controlled" then
 		if not unit then return false end
 		return not UnitPlayerControlled(unit)
+	elseif op == "other_player_pet" then
+		if not unit then return false end
+		return UnitIsOtherPlayersPet(unit)
+	elseif op == "not_other_player_pet" then
+		if not unit then return false end
+		return not UnitIsOtherPlayersPet(unit)
 	elseif op == "match" then
 		if not unit then return false end
 		return not not string.match(unit,value)
@@ -98,11 +116,9 @@ local function compare_unit(unit,op,value,frame)
 		return not string.match(unit,value)
 	elseif op == "combat" then
 		if not unit then return false end
-		PitBull4_Aura:RequestTimedFilterUpdate(frame)
 		return UnitAffectingCombat(unit)
 	elseif op == "nocombat" then
 		if not unit then return false end
-		PitBull4_Aura:RequestTimedFilterUpdate(frame)
 		return not UnitAffectingCombat(unit)
 	end
 end
@@ -174,6 +190,8 @@ end
 local meta_operators = {
 	['&'] = 'AND',
 	['|'] = 'OR',
+	['&~'] = 'AND NOT',
+	['|~'] = 'OR NOT',
 }
 local meta_filter_funcs = {}
 
@@ -208,7 +226,7 @@ local function meta_filter(self, entry, frame)
 	local luastring = 'return function(entry, frame) return '
 	for i=1,#funcs do
 		if i~= 1 then
-			local op = ops[i-1] == '&' and 'and' or 'or'
+			local op = meta_operators[ops[i-1]]:lower()
 			luastring = luastring .. op .. ' '
 		end
 		luastring = luastring .. 'funcs['..i..'](names['..i..'], entry, frame) '
@@ -708,6 +726,7 @@ local function time_left_filter(self, entry, frame)
 	local units = cfg.time_unit
 	local duration = entry[10]
 	local expiration_time = entry[11]
+	local time_mod = entry[20]
 
 	-- No duration and no expiration time means it never expires
 	-- so it has an infinite amount of time left.  Can't really
@@ -730,7 +749,12 @@ local function time_left_filter(self, entry, frame)
 		end
 	end
 
-	local time_left = math.floor(expiration_time - GetTime())
+	local time_left = expiration_time - GetTime()
+	if time_mod > 0 then
+		time_left = time_left / time_mod
+	end
+	time_left = math.floor(time_left)
+
 	if units == 'h' then
 		value = value * 3600
 	elseif units == 'm' then
@@ -828,6 +852,8 @@ local my_units = {
 
 -- Mine, Filter by if you cast it or not.
 local function mine_filter(self, entry)
+	-- local caster = entry[12]
+	-- local is_mine = caster and (UnitIsUnit("player", caster) or UnitIsOwnerOrControllerOfUnit("player", caster))
 	if PitBull4_Aura:GetFilterDB(self).mine then
 		return my_units[entry[12]]
 	else
@@ -1004,7 +1030,16 @@ PitBull4_Aura:RegisterFilterType('Unit',L["Unit"],unit_filter,function(self,opti
 		hidden = function(info, value)
 			local db = PitBull4_Aura:GetFilterDB(self)
 			local unit_operator = db.unit_operator
-			return unit_operator == 'friend' or unit_operator == 'enemy' or unit_operator == "player_controlled" or unit_operator == "not_player_controlled" or unit_operator == "combat" or unit_operator == "nocombat"
+			return unit_operator == 'friend' or
+				unit_operator == 'enemy' or
+				unit_operator == "player" or
+				unit_operator == "not_player" or
+				unit_operator == "player_controlled" or
+				unit_operator == "not_player_controlled" or
+				unit_operator == "other_player_pet" or
+				unit_operator == "not_other_player_pet" or
+				unit_operator == "combat" or
+				unit_operator == "nocombat"
 		end,
 		validate = function(info, value)
 			local db = PitBull4_Aura:GetFilterDB(self)
@@ -1304,7 +1339,7 @@ PitBull4_Aura:RegisterFilterType('Should consolidate',L["Personal nameplate"],pe
 	options.personal_nameplate_filter = {
 		type = 'select',
 		name = L["Personal nameplate"],
-		desc = L["Filter by if the aura is eligible to show on your personal nameplate."],
+		desc = L["Filter by if the aura is flagged to show on your personal nameplate."],
 		get = function(info)
 			local db = PitBull4_Aura:GetFilterDB(self)
 			return db.should_consolidate and "yes" or "no"
@@ -1431,6 +1466,129 @@ PitBull4_Aura:RegisterFilterType('Spell id',L["Spell id"],id_filter,function(sel
 	}
 end)
 
+local function self_buff_filter(self, entry)
+	if PitBull4_Aura:GetFilterDB(self).self_buff then
+		return SpellIsSelfBuff(entry[15])
+	else
+		return not SpellIsSelfBuff(entry[15])
+	end
+end
+PitBull4_Aura:RegisterFilterType('Self buff',L["Self buff"],self_buff_filter,function(self,options)
+	options.self_buff_filter = {
+		type = 'select',
+		name = L["Self buff"],
+		desc = L["Filter by if the aura is flagged as a self buff."],
+		get = function(info)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			return db.self_buff and "yes" or "no"
+		end,
+		set = function(info, value)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			if value == "yes" then
+				db.self_buff = true
+			else
+				db.self_buff = false
+			end
+			PitBull4_Aura:UpdateAll()
+		end,
+		values = bool_values,
+		order = 1,
+	}
+end)
+
+local function has_custom_visibility_filter(self, entry, frame)
+	local state = UnitAffectingCombat("player") and "RAID_INCOMBAT" or "RAID_OUTOFCOMBAT"
+	local hasCustom = SpellGetVisibilityInfo(entry[15], state)
+	if PitBull4_Aura:GetFilterDB(self).custom_visibility then
+		return hasCustom
+	else
+		return not hasCustom
+	end
+end
+PitBull4_Aura:RegisterFilterType('Has custom visibility',L["Has custom visibility"],has_custom_visibility_filter,function(self,options)
+	options.has_custom_visibility_filter = {
+		type = 'select',
+		name = L["Has custom visibility"],
+		desc = L["Filter by if the aura has custom visibility rules."],
+		get = function(info)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			return db.custom_visibility and "yes" or "no"
+		end,
+		set = function(info, value)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			if value == "yes" then
+				db.custom_visibility = true
+			else
+				db.custom_visibility = false
+			end
+			PitBull4_Aura:UpdateAll()
+		end,
+		values = bool_values,
+		order = 1,
+	}
+end)
+
+local function should_show_filter(self, entry, frame)
+	local state = UnitAffectingCombat("player") and "RAID_INCOMBAT" or "RAID_OUTOFCOMBAT"
+	local hasCustom, alwaysShowMine, showForMySpec = SpellGetVisibilityInfo(entry[15], state)
+	local show = hasCustom and (showForMySpec or (alwaysShowMine and my_units[entry[12]]))
+	if PitBull4_Aura:GetFilterDB(self).should_show then
+		return show
+	else
+		return not show
+	end
+end
+PitBull4_Aura:RegisterFilterType('Should show',L["Custom show"],should_show_filter,function(self,options)
+	options.should_show_filter = {
+		type = 'select',
+		name = L["Custom show"],
+		desc = L["Filter by if the aura should show based on custom visibility rules."],
+		get = function(info)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			return db.should_show and "yes" or "no"
+		end,
+		set = function(info, value)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			if value == "yes" then
+				db.should_show = true
+			else
+				db.should_show = false
+			end
+			PitBull4_Aura:UpdateAll()
+		end,
+		values = bool_values,
+		order = 1,
+	}
+end)
+
+-- Can apply aura, true for auras the player can apply (not necessarily if the
+-- player _did_ apply the aura, just if the player _can_ apply the aura)
+local function can_apply_aura_filter(self, entry)
+	if PitBull4_Aura:GetFilterDB(self).can_apply_aura then
+		return not not entry[16]
+	else
+		return not entry[16]
+	end
+end
+PitBull4_Aura:RegisterFilterType('Can apply aura',L["Can apply aura"],can_apply_aura_filter,function(self,options)
+	options.can_apply_aura_filter = {
+		type = 'select',
+		name = L["Can apply aura"],
+		desc = L["Filter by if the aura can be applied by you."],
+		get = function(info)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			return db.can_apply_aura and "yes" or "no"
+		end,
+		set = function(info, value)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			db.can_apply_aura = value == "yes"
+			PitBull4_Aura:UpdateAll()
+		end,
+		values = bool_values,
+		order = 1,
+	}
+end)
+
 -- Boss, filter by if the aura is applied by a boss
 local function boss_filter(self, entry)
 	if PitBull4_Aura:GetFilterDB(self).boss_debuff then
@@ -1451,6 +1609,68 @@ PitBull4_Aura:RegisterFilterType('Boss debuff',L["Boss"],boss_filter,function(se
 		set = function(info, value)
 			local db = PitBull4_Aura:GetFilterDB(self)
 			db.boss_debuff = value == "yes"
+			PitBull4_Aura:UpdateAll()
+		end,
+		values = bool_values,
+		order = 1,
+	}
+end)
+
+-- Cast by a player
+local function caster_is_player_filter(self, entry)
+	if PitBull4_Aura:GetFilterDB(self).caster_is_player then
+		return not not entry[18]
+	else
+		return not entry[18]
+	end
+end
+PitBull4_Aura:RegisterFilterType('Cast by a player',L["Cast by a player"],caster_is_player_filter,function(self,options)
+	options.caster_is_player_filter = {
+		type = 'select',
+		name = L["Cast by a player"],
+		desc = L["Filter by if the aura was cast by a player."],
+		get = function(info)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			return db.caster_is_player and "yes" or "no"
+		end,
+		set = function(info, value)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			if value == "yes" then
+				db.caster_is_player = true
+			else
+				db.caster_is_player = false
+			end
+			PitBull4_Aura:UpdateAll()
+		end,
+		values = bool_values,
+		order = 1,
+	}
+end)
+
+-- Global nameplate aura, Filter by if the aura is eligible to show on all nameplates
+local function global_nameplate_filter(self, entry)
+	if PitBull4_Aura:GetFilterDB(self).global_nameplate then
+		return not not entry[19]
+	else
+		return not entry[19]
+	end
+end
+PitBull4_Aura:RegisterFilterType('Global nameplate',L["Global nameplate"],global_nameplate_filter,function(self,options)
+	options.global_nameplate_filter = {
+		type = 'select',
+		name = L["Global nameplate"],
+		desc = L["Filter by if the aura is flagged to show on all nameplates."],
+		get = function(info)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			return db.global_nameplate and "yes" or "no"
+		end,
+		set = function(info, value)
+			local db = PitBull4_Aura:GetFilterDB(self)
+			if value == "yes" then
+				db.global_nameplate = true
+			else
+				db.global_nameplate = false
+			end
 			PitBull4_Aura:UpdateAll()
 		end,
 		values = bool_values,

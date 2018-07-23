@@ -25,8 +25,10 @@ end
 
 local function shallowCopy(t)
 	local n = {}
-	for k, v in next, t do
-		n[k] = v
+	if t then
+		for k, v in next, t do
+			n[k] = v
+		end
 	end
 	return n
 end
@@ -157,7 +159,7 @@ function Unpack()
 				id = id,
 				name = name,
 				nameForAPI = getNameForAPI(name),
-				rules = string.upper(rules),
+				rules = rules and string.upper(rules) or nil,
 				locale = locale,
 				region = region,
 				timezone = timezone, -- only for realms in US region
@@ -444,6 +446,20 @@ realmData = {
 [3736]="Jubei'Thos,PvP,enUS,US,AEST",
 [3737]="Gundrak,PvP,enUS,US,AEST",
 [3738]="Saurfang,PvE,enUS,US,AEST",
+[1133]="US", -- Frostmourne / old US datacenter
+[1134]="US", -- Khaz'goroth / old US datacenter
+[1144]="US", -- Jubei'Thos / old US datacenter
+[1149]="US", -- Gundrak / old US datacenter
+[1153]="US", -- Saurfang / old US datacenter
+[1418]="US", -- Aman'Thul / old US datacenter
+[1419]="US", -- Barthilas / old US datacenter
+[1429]="US", -- Dreadmaul / old US datacenter
+[1430]="US", -- Caelestrasz / old US datacenter
+[1432]="US", -- Nagrand / old US datacenter
+[1433]="US", -- Thaurissan / old US datacenter
+[1434]="US", -- Dath'Remar / old US datacenter
+[3695]="US", -- Internal Record 3695
+[3697]="US", -- Internal Record 3697
 --}}
 --{{ Europe
 [500]="Aggramar,PvE,enUS,EU",

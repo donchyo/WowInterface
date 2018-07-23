@@ -142,34 +142,34 @@ L["b_questname"] = "Nombre de misión"
 L["b_suffix"] = "Sufijo"
 L["bf_err1"] = "|cff11DDFFDaily Global Check|r - Necesita introducir la ID de la misión y su nombre."
 L["bf_err2"] = "|cff11DDFFDaily Global Check|r - Esta misión ya existe."
---Translation missing 
+--[[Translation missing --]]
 L["blacklist"] = "Blacklist"
 L["buildframe"] = "Modificar lista personalizada"
 L["chars_deleted"] = "|cff11DDFFDaily Global Check|r - Personaje |cff00FF00%s|r añadido a la lista negra."
 L["chars_restored"] = "cff11DDFFDaily Global Check|r - Personaje |cff00FF00%s|r eliminado de la lista negra"
 L["classic"] = "Tradicional"
---Translation missing 
+--[[Translation missing --]]
 L["collapsed"] = "Collapsed"
---Translation missing 
+--[[Translation missing --]]
 L["coordinates"] = "Coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["create_new_list"] = "Create a new list"
 L["currency_id"] = "Id de moneda"
 L["customlist"] = "Lista personalizada"
 L["del_page"] = "Eliminar página"
---Translation missing 
+--[[Translation missing --]]
 L["delete_list"] = "Delete List"
 L["deleted"] = "eliminado"
 L["edit_mode"] = "Modo edición"
---Translation missing 
+--[[Translation missing --]]
 L["edit_quest"] = "Edit Quest"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
---Translation missing 
+--[[Translation missing --]]
 L["edit_spell_info"] = "Tracks the cooldown of a spell, mostly useful with profession based spells"
---Translation missing 
+--[[Translation missing --]]
 L["generating_database"] = "Generating the %s database..."
 L["help_edt_1"] = "Puedes crear una nueva lista personalizada utilizando el botón %s."
 L["help_edt_2"] = "Puedes eliminar la lista seleccionada utilizando el botón %s."
@@ -185,20 +185,20 @@ L["help_edt_5"] = [=[Esta es la lista personalizada seleccionada
 - El botón 'Nueva misión' crea una nueva misión en el grupo de misiones y la inserta en la ubicación del botón, lista para ser editada.
 - El botón "Grupo nuevo" simplemente crea un nuevo grupo.]=]
 L["help_edt_6"] = "Estos botones se utilizan para crear o eliminar páginas dentro de la lista seleccionada actualmente."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_7"] = "Here you can select which section of the quest you wish to modify."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_8"] = "This frame can be used to edit the chosen quest section."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_9"] = "Click Okay to save your changes, or Cancel to revert them."
 L["hidden"] = "Oculto"
 L["lclicktoopen"] = "Haga clic con el botón izquierdo para abrir el marco principal"
---Translation missing 
+--[[Translation missing --]]
 L["list_visibility"] = "List Visibility"
---Translation missing 
+--[[Translation missing --]]
 L["lists_limit"] = "Lists limit reached (%s)"
 L["map_id"] = "ID de mapa"
---Translation missing 
+--[[Translation missing --]]
 L["map_options"] = "Map Options"
 L["minimap_icons"] = "Iconos del minimapa"
 L["move_down"] = "Mover selección abajo"
@@ -206,35 +206,35 @@ L["move_up"] = "Mover selección arriba"
 L["namemissing"] = "<falta nombre>"
 L["new_group"] = "Grupo nuevo"
 L["new_page"] = "Página nueva"
---Translation missing 
+--[[Translation missing --]]
 L["new_quest"] = "New Quest"
 L["newlist"] = "Lista nueva"
---Translation missing 
+--[[Translation missing --]]
 L["news_#1"] = "Hi! I'm your assistant and I will show you the most important news about Daily Global Check"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
---Translation missing 
+--[[Translation missing --]]
 L["news_#2"] = "You can print the current DGC page output in the chatframe by typing '/dgc print'"
---Translation missing 
+--[[Translation missing --]]
 L["news_#3"] = "Daily Global Check can track Instance Lockouts since v1.3.5! The related plugin can be found on Curse"
---Translation missing 
+--[[Translation missing --]]
 L["news_#4"] = "Weekly follower and Herb/Mining node counters are available in the Daily Global Check_Professions plugin"
---Translation missing 
+--[[Translation missing --]]
 L["news_#5"] = "The Rare Mobs plugin, as of v1.3.2, has two specific options available in the Options->Plugin panel"
---Translation missing 
+--[[Translation missing --]]
 L["news_#6"] = "Check out |cff00ff00DailyGlobalCheck_Hallow's End|r if you're interested in tracking Hallow's End dailies and candy buckets"
---Translation missing 
+--[[Translation missing --]]
 L["news_#7"] = "|cff00ffffMay 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check got a massive technical overhaul in preparation for Legion. The older plugins are incompatible and they will also need to be updated to the newer version, apologies for the inconvenience :)"
---Translation missing 
+--[[Translation missing --]]
 L["news_#8"] = "Groups can be collapsed by clicking on their title in the main frame, collapsed groups are hidden in mouseovering views"
---Translation missing 
+--[[Translation missing --]]
 L["news_#9"] = "You can hide map icons for chosen pages of any list through its Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext1"] = "|cff11DDFFLeft-Click|cffFFFFFF: |cff00FF00Next"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext2"] = "|cff11DDFFRight-Click|cffFFFFFF: |cff00FF00Hide|r"
 L["nextpage"] = "Página siguiente"
 L["nolist"] = "Ninguna lista seleccionada"
@@ -247,133 +247,133 @@ L["opt_hidecompleted"] = "Ocultar misiones completadas"
 L["opt_map_all"] = "Solo mostrar iconos de la lista seleccionada"
 L["plugin_opt_none"] = "El complemento seleccionado no tiene opciones específicas"
 L["plugin_opt_title"] = "Opciones para el complemento seleccionado:"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_options"] = "Plugin Options"
 L["prevpage"] = "Página anterior"
---Translation missing 
+--[[Translation missing --]]
 L["quest_options"] = "Quest Options"
 L["questdatamissing"] = "<faltan datos de misión>"
 L["questlog_quest_added"] = "|cff11DDFFDaily Global Check|r - Misión %s añadida al conjunto de misiones personalizadas."
---Translation missing 
+--[[Translation missing --]]
 L["quests_limit"] = "Quests limit reached (%s)"
 L["questwindow"] = "- Seleccione la posición de la misión -"
 L["rclicktoopen"] = "Haga clic con el botón derecho para abrir el menú de selección de listas rápidas"
 L["rem"] = "Eliminar"
 L["remmenuheader"] = "- Seleccione una misión para eliminar -"
---Translation missing 
+--[[Translation missing --]]
 L["repeatable"] = "Repeatable"
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - Añadida ubicación al TomTom"
 L["search_by_name"] = "Búsqueda por nombre"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
 L["show_adjacent_map_icons"] = "Mostrar mapas contiguos/Continentes"
 L["shown"] = "Mostrado"
 L["spell_id"] = "ID de Hechizo"
---Translation missing 
+--[[Translation missing --]]
 L["tools"] = "Tools"
 L["worldmap_icons"] = "Iconos del minimapa"
 
 -- Options
---Translation missing 
+--[[Translation missing --]]
 L["account_wide_options"] = "(Account-Wide Options)"
---Translation missing 
+--[[Translation missing --]]
 L["character_specific_options"] = "(Character-specific options)"
---Translation missing 
+--[[Translation missing --]]
 L["map_icons_visibility_list"] = "Map icons visibility for this List"
 L["opt_coords"] = "Mostrar coordenadas"
 L["opt_main"] = "Opciones"
 L["opt_map"] = "Mostrar iconos del mapa"
 L["opt_minimap"] = "Mostrar botón en minimapa"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap_icons"] = "Show minimap icons"
 L["opt_prefix"] = "Mostrar prefijo"
 L["opt_questtype"] = "Mostrar tipo de misión"
 L["opt_showquestbtn"] = "Mostrar el botón \"Añadir misión a la lista personalizada\" en el panel de registro"
 L["opt_suffix"] = "Mostrar sufijo"
 L["opt_zonename"] = "Mostrar zona"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons"] = "World map icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons_minimap"] = "Minimap icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["size"] = "Size"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
 L["tomtom_button"] = "Establecer ubicaciones para TomTom"
 
 elseif locale == "esMX" then 
 -- General
---Translation missing 
+--[[Translation missing --]]
 L["add"] = "Add"
---Translation missing 
+--[[Translation missing --]]
 L["add_quest"] = "Add Quest"
---Translation missing 
+--[[Translation missing --]]
 L["addbtntooltip"] = "Add the selected quest to your Daily Global Check Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["added"] = "added"
---Translation missing 
+--[[Translation missing --]]
 L["availablelists"] = "Available Lists"
---Translation missing 
+--[[Translation missing --]]
 L["b_prefix"] = "Prefix"
---Translation missing 
+--[[Translation missing --]]
 L["b_questid"] = "Quest ID"
---Translation missing 
+--[[Translation missing --]]
 L["b_questname"] = "Quest Name"
---Translation missing 
+--[[Translation missing --]]
 L["b_suffix"] = "Suffix"
---Translation missing 
+--[[Translation missing --]]
 L["bf_err1"] = "|cff11DDFFDaily Global Check|r - You need to enter either the quest ID and its name."
---Translation missing 
+--[[Translation missing --]]
 L["bf_err2"] = "|cff11DDFFDaily Global Check|r - This quest already exists."
---Translation missing 
+--[[Translation missing --]]
 L["blacklist"] = "Blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["buildframe"] = "Modify Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["chars_deleted"] = "|cff11DDFFDaily Global Check|r - Character |cff00FF00%s|r is now in the blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["chars_restored"] = "|cff11DDFFDaily Global Check|r - Character |cff00FF00%s|r has been removed from the blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["classic"] = "Classic"
---Translation missing 
+--[[Translation missing --]]
 L["collapsed"] = "Collapsed"
---Translation missing 
+--[[Translation missing --]]
 L["coordinates"] = "Coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["create_new_list"] = "Create a new list"
---Translation missing 
+--[[Translation missing --]]
 L["currency_id"] = "Currency ID"
---Translation missing 
+--[[Translation missing --]]
 L["customlist"] = "Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["del_page"] = "Delete Page"
---Translation missing 
+--[[Translation missing --]]
 L["delete_list"] = "Delete List"
---Translation missing 
+--[[Translation missing --]]
 L["deleted"] = "deleted"
---Translation missing 
+--[[Translation missing --]]
 L["edit_mode"] = "Edit Mode"
---Translation missing 
+--[[Translation missing --]]
 L["edit_quest"] = "Edit Quest"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
---Translation missing 
+--[[Translation missing --]]
 L["edit_spell_info"] = "Tracks the cooldown of a spell, mostly useful with profession based spells"
---Translation missing 
+--[[Translation missing --]]
 L["generating_database"] = "Generating the %s database..."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_1"] = "You can create a new custom list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_2"] = "You can rename the selected list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_3"] = "This button permanently deletes the currently selected custom list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_4"] = [=[This is the quest pool, you can drag any quest from here and drop it on the currently selected list.
 - The %s button permanently deletes the relative custom quest from the quest pool.
 - The %s button is used to edit the relative |cff00ff00custom|r quest.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_5"] = [=[This is the selected custom list
 - Quests can be repositioned by simply dragging them.
 - A group of quests can be moved by using the %s buttons at the header's left.
@@ -381,166 +381,166 @@ L["help_edt_5"] = [=[This is the selected custom list
 - The %s button is used to edit the relative |cff00ff00custom|r quest or rename the relative group.
 - The 'New Quest' button creates a new quest in the quest pool and inserts it at the button's location, ready to be edited.
 - The 'New Group' button simply creates a new group.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_6"] = "These buttons are used to create or delete pages within the currently selected list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_7"] = "Here you can select which section of the quest you wish to modify."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_8"] = "This frame can be used to edit the chosen quest section."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_9"] = "Click Okay to save your changes, or Cancel to revert them."
---Translation missing 
+--[[Translation missing --]]
 L["hidden"] = "Hidden"
---Translation missing 
+--[[Translation missing --]]
 L["lclicktoopen"] = "Left-click to open the main frame"
---Translation missing 
+--[[Translation missing --]]
 L["list_visibility"] = "List Visibility"
---Translation missing 
+--[[Translation missing --]]
 L["lists_limit"] = "Lists limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["map_id"] = "Map ID"
---Translation missing 
+--[[Translation missing --]]
 L["map_options"] = "Map Options"
---Translation missing 
+--[[Translation missing --]]
 L["minimap_icons"] = "Minimap Icons"
---Translation missing 
+--[[Translation missing --]]
 L["move_down"] = "Move Selection Down"
---Translation missing 
+--[[Translation missing --]]
 L["move_up"] = "Move Selection Up"
---Translation missing 
+--[[Translation missing --]]
 L["namemissing"] = "<name missing>"
---Translation missing 
+--[[Translation missing --]]
 L["new_group"] = "New Group"
---Translation missing 
+--[[Translation missing --]]
 L["new_page"] = "New Page"
---Translation missing 
+--[[Translation missing --]]
 L["new_quest"] = "New Quest"
---Translation missing 
+--[[Translation missing --]]
 L["newlist"] = "New List"
---Translation missing 
+--[[Translation missing --]]
 L["news_#1"] = "Hi! I'm your assistant and I will show you the most important news about Daily Global Check"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
---Translation missing 
+--[[Translation missing --]]
 L["news_#2"] = "You can print the current DGC page output in the chatframe by typing '/dgc print'"
---Translation missing 
+--[[Translation missing --]]
 L["news_#3"] = "Daily Global Check can track Instance Lockouts since v1.3.5! The related plugin can be found on Curse"
---Translation missing 
+--[[Translation missing --]]
 L["news_#4"] = "Weekly follower and Herb/Mining node counters are available in the Daily Global Check_Professions plugin"
---Translation missing 
+--[[Translation missing --]]
 L["news_#5"] = "The Rare Mobs plugin, as of v1.3.2, has two specific options available in the Options->Plugin panel"
---Translation missing 
+--[[Translation missing --]]
 L["news_#6"] = "Check out |cff00ff00DailyGlobalCheck_Hallow's End|r if you're interested in tracking Hallow's End dailies and candy buckets"
---Translation missing 
+--[[Translation missing --]]
 L["news_#7"] = "|cff00ffffMay 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check got a massive technical overhaul in preparation for Legion. The older plugins are incompatible and they will also need to be updated to the newer version, apologies for the inconvenience :)"
---Translation missing 
+--[[Translation missing --]]
 L["news_#8"] = "Groups can be collapsed by clicking on their title in the main frame, collapsed groups are hidden in mouseovering views"
---Translation missing 
+--[[Translation missing --]]
 L["news_#9"] = "You can hide map icons for chosen pages of any list through its Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext1"] = "|cff11DDFFLeft-Click|cffFFFFFF: |cff00FF00Next"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext2"] = "|cff11DDFFRight-Click|cffFFFFFF: |cff00FF00Hide|r"
---Translation missing 
+--[[Translation missing --]]
 L["nextpage"] = "Next Page"
---Translation missing 
+--[[Translation missing --]]
 L["nolist"] = "No list selected"
---Translation missing 
+--[[Translation missing --]]
 L["notitle"] = "<no title>"
---Translation missing 
+--[[Translation missing --]]
 L["opt_blacklist_remove"] = "Remove a character from the black list"
---Translation missing 
+--[[Translation missing --]]
 L["opt_characters"] = "Characters"
---Translation missing 
+--[[Translation missing --]]
 L["opt_characters_short"] = "(Alt)"
---Translation missing 
+--[[Translation missing --]]
 L["opt_help"] = "Help"
---Translation missing 
+--[[Translation missing --]]
 L["opt_hidecompleted"] = "Hide completed quests"
---Translation missing 
+--[[Translation missing --]]
 L["opt_map_all"] = "Only show world map icons from selected list"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_opt_none"] = "The selected plugin doesn't have any specific options"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_opt_title"] = "Options for the selected plugin:"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_options"] = "Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["prevpage"] = "Previous Page"
---Translation missing 
+--[[Translation missing --]]
 L["quest_options"] = "Quest Options"
---Translation missing 
+--[[Translation missing --]]
 L["questdatamissing"] = "<quest data missing>"
---Translation missing 
+--[[Translation missing --]]
 L["questlog_quest_added"] = "|cff11DDFFDaily Global Check|r - Quest %s added to the custom quests pool."
---Translation missing 
+--[[Translation missing --]]
 L["quests_limit"] = "Quests limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["questwindow"] = "- Select quest position -"
---Translation missing 
+--[[Translation missing --]]
 L["rclicktoopen"] = "Right-click to open the quick list selection menu"
---Translation missing 
+--[[Translation missing --]]
 L["rem"] = "Remove"
---Translation missing 
+--[[Translation missing --]]
 L["remmenuheader"] = "- Select the quest to remove -"
---Translation missing 
+--[[Translation missing --]]
 L["repeatable"] = "Repeatable"
---Translation missing 
+--[[Translation missing --]]
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - Waypoint added to TomTom"
---Translation missing 
+--[[Translation missing --]]
 L["search_by_name"] = "Search by name"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
---Translation missing 
+--[[Translation missing --]]
 L["show_adjacent_map_icons"] = "Show on adjacent/continent maps"
---Translation missing 
+--[[Translation missing --]]
 L["shown"] = "Shown"
---Translation missing 
+--[[Translation missing --]]
 L["spell_id"] = "Spell ID"
---Translation missing 
+--[[Translation missing --]]
 L["tools"] = "Tools"
---Translation missing 
+--[[Translation missing --]]
 L["worldmap_icons"] = "Worldmap Icons"
 
 -- Options
---Translation missing 
+--[[Translation missing --]]
 L["account_wide_options"] = "(Account-Wide Options)"
---Translation missing 
+--[[Translation missing --]]
 L["character_specific_options"] = "(Character-specific options)"
---Translation missing 
+--[[Translation missing --]]
 L["map_icons_visibility_list"] = "Map icons visibility for this List"
---Translation missing 
+--[[Translation missing --]]
 L["opt_coords"] = "Show coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["opt_main"] = "Options"
---Translation missing 
+--[[Translation missing --]]
 L["opt_map"] = "Show world map icons"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap"] = "Show minimap button"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap_icons"] = "Show minimap icons"
---Translation missing 
+--[[Translation missing --]]
 L["opt_prefix"] = "Show prefix"
---Translation missing 
+--[[Translation missing --]]
 L["opt_questtype"] = "Show quest type"
---Translation missing 
+--[[Translation missing --]]
 L["opt_showquestbtn"] = "Show the 'Add quest to Custom List' button in the Quest Log Frame"
---Translation missing 
+--[[Translation missing --]]
 L["opt_suffix"] = "Show suffix"
---Translation missing 
+--[[Translation missing --]]
 L["opt_zonename"] = "Show zone name"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons"] = "World map icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons_minimap"] = "Minimap icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["size"] = "Size"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
---Translation missing 
+--[[Translation missing --]]
 L["tomtom_button"] = "Set TomTom waypoints"
 
 elseif locale == "itIT" then 
@@ -564,7 +564,7 @@ L["classic"] = "Classica"
 L["collapsed"] = "Ridotto"
 L["coordinates"] = "Coordinate"
 L["create_new_list"] = "Crea una nuova lista"
---Translation missing 
+--[[Translation missing --]]
 L["currency_id"] = "Currency ID"
 L["customlist"] = "Lista Personalizzata"
 L["del_page"] = "Elimina Pagina"
@@ -579,7 +579,7 @@ L["help_edt_1"] = "Puoi creare una nuova lista personalizzata usando il pulsante
 L["help_edt_2"] = "Puoi rinominare la lista selezionata usando il pulsante %s"
 L["help_edt_3"] = "Questo pulsante elimina in modo permanente la lista selezionata."
 L["help_edt_4"] = "Questo è il database delle quest, puoi trascinare qualsiasi quest da quì e inserirla nella lista selezionata.\\n- Il pulsante %s elimina in modo permanente la quest dal database.\\n- Il pulsante %s è usato per modificare la quest |cff00ff00personalizzata|r relativa."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_5"] = [=[This is the selected custom list
 - Quests can be repositioned by simply dragging them.
 - A group of quests can be moved by using the %s buttons at the header's left.
@@ -591,15 +591,15 @@ L["help_edt_6"] = "Questi pulsanti servono a creare o eliminare pagine nella lis
 L["help_edt_7"] = "Qui puoi selezionare quale sezione della quest modificare."
 L["help_edt_8"] = "Questo pannello può essere utilizzato per modificare la sezione di quest selezionata."
 L["help_edt_9"] = "Clicca OK per salvare le modifiche, o Annulla per annullarle."
---Translation missing 
+--[[Translation missing --]]
 L["hidden"] = "Hidden"
 L["lclicktoopen"] = "Click sinistro per aprire il frame principale"
 L["list_visibility"] = "Visibilità Liste"
 L["lists_limit"] = "Limite delle liste raggiunto (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["map_id"] = "Map ID"
 L["map_options"] = "Opzioni Mappa"
---Translation missing 
+--[[Translation missing --]]
 L["minimap_icons"] = "Minimap Icons"
 L["move_down"] = "Sposta Selezione Giù"
 L["move_up"] = "Sposta Selezione Su"
@@ -609,19 +609,19 @@ L["new_page"] = "Nuova Pagina"
 L["new_quest"] = "Nuova Quest"
 L["newlist"] = "Nuova Lista"
 L["news_#1"] = "Ciao! Sono il tuo assistente e ti mostrerò le novità più importanti riguardo Daily Global Check"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
 L["news_#2"] = "Puoi stampare la pagina corrente di DGC in chat digitando '/dgc print'"
---Translation missing 
+--[[Translation missing --]]
 L["news_#3"] = "Daily Global Check can track Instance Lockouts since v1.3.5! The related plugin can be found on Curse"
---Translation missing 
+--[[Translation missing --]]
 L["news_#4"] = "Weekly follower and Herb/Mining node counters are available in the Daily Global Check_Professions plugin"
---Translation missing 
+--[[Translation missing --]]
 L["news_#5"] = "The Rare Mobs plugin, as of v1.3.2, has two specific options available in the Options->Plugin panel"
---Translation missing 
+--[[Translation missing --]]
 L["news_#6"] = "Check out |cff00ff00DailyGlobalCheck_Hallow's End|r if you're interested in tracking Hallow's End dailies and candy buckets"
 L["news_#7"] = "|cff00ffffMaggio 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check ha ricevuto una massiccia revisione tecnica in preparazione per Legion. Le vecchie plugin sono incompatibili e devono essere aggiornate alla versione più recente, mi scuso per il disagio :)"
 L["news_#8"] = "I gruppi possono essere ridotti cliccando sul loro titolo nel pannello principale, i gruppi ridotti sono nascosti nelle visualizzazioni tramite cursore"
@@ -651,18 +651,18 @@ L["rem"] = "Rimuovi"
 L["remmenuheader"] = "- Seleziona la quest da eliminare -"
 L["repeatable"] = "Ripetibile"
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - Waypoint aggiunto a TomTom"
---Translation missing 
+--[[Translation missing --]]
 L["search_by_name"] = "Search by name"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
---Translation missing 
+--[[Translation missing --]]
 L["show_adjacent_map_icons"] = "Show on adjacent/continent maps"
---Translation missing 
+--[[Translation missing --]]
 L["shown"] = "Shown"
---Translation missing 
+--[[Translation missing --]]
 L["spell_id"] = "Spell ID"
 L["tools"] = "Strumenti"
---Translation missing 
+--[[Translation missing --]]
 L["worldmap_icons"] = "Worldmap Icons"
 
 -- Options
@@ -673,95 +673,95 @@ L["opt_coords"] = "Mostra coordinate"
 L["opt_main"] = "Opzioni"
 L["opt_map"] = "Mostra icone sulla mappa globale"
 L["opt_minimap"] = "Mostra pulsante sulla minimappa"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap_icons"] = "Show minimap icons"
 L["opt_prefix"] = "Mostra prefisso"
 L["opt_questtype"] = "Mostra tipo di quest"
 L["opt_showquestbtn"] = "Mostra il pulsante 'Aggiungi quest alla Lista Personalizzata' nel registro missioni"
 L["opt_suffix"] = "Mostra suffisso"
 L["opt_zonename"] = "Mostra nome della zona"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons"] = "World map icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons_minimap"] = "Minimap icons for this Plugin"
 L["size"] = "Dimensioni"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
 L["tomtom_button"] = "Imposta waypoints su TomTom"
 
 elseif locale == "ptBR" then 
 -- General
---Translation missing 
+--[[Translation missing --]]
 L["add"] = "Add"
---Translation missing 
+--[[Translation missing --]]
 L["add_quest"] = "Add Quest"
---Translation missing 
+--[[Translation missing --]]
 L["addbtntooltip"] = "Add the selected quest to your Daily Global Check Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["added"] = "added"
---Translation missing 
+--[[Translation missing --]]
 L["availablelists"] = "Available Lists"
---Translation missing 
+--[[Translation missing --]]
 L["b_prefix"] = "Prefix"
---Translation missing 
+--[[Translation missing --]]
 L["b_questid"] = "Quest ID"
---Translation missing 
+--[[Translation missing --]]
 L["b_questname"] = "Quest Name"
---Translation missing 
+--[[Translation missing --]]
 L["b_suffix"] = "Suffix"
---Translation missing 
+--[[Translation missing --]]
 L["bf_err1"] = "|cff11DDFFDaily Global Check|r - You need to enter either the quest ID and its name."
---Translation missing 
+--[[Translation missing --]]
 L["bf_err2"] = "|cff11DDFFDaily Global Check|r - This quest already exists."
---Translation missing 
+--[[Translation missing --]]
 L["blacklist"] = "Blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["buildframe"] = "Modify Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["chars_deleted"] = "|cff11DDFFDaily Global Check|r - Character |cff00FF00%s|r is now in the blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["chars_restored"] = "|cff11DDFFDaily Global Check|r - Character |cff00FF00%s|r has been removed from the blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["classic"] = "Classic"
---Translation missing 
+--[[Translation missing --]]
 L["collapsed"] = "Collapsed"
---Translation missing 
+--[[Translation missing --]]
 L["coordinates"] = "Coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["create_new_list"] = "Create a new list"
---Translation missing 
+--[[Translation missing --]]
 L["currency_id"] = "Currency ID"
---Translation missing 
+--[[Translation missing --]]
 L["customlist"] = "Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["del_page"] = "Delete Page"
---Translation missing 
+--[[Translation missing --]]
 L["delete_list"] = "Delete List"
---Translation missing 
+--[[Translation missing --]]
 L["deleted"] = "deleted"
---Translation missing 
+--[[Translation missing --]]
 L["edit_mode"] = "Edit Mode"
---Translation missing 
+--[[Translation missing --]]
 L["edit_quest"] = "Edit Quest"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
---Translation missing 
+--[[Translation missing --]]
 L["edit_spell_info"] = "Tracks the cooldown of a spell, mostly useful with profession based spells"
---Translation missing 
+--[[Translation missing --]]
 L["generating_database"] = "Generating the %s database..."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_1"] = "You can create a new custom list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_2"] = "You can rename the selected list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_3"] = "This button permanently deletes the currently selected custom list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_4"] = [=[This is the quest pool, you can drag any quest from here and drop it on the currently selected list.
 - The %s button permanently deletes the relative custom quest from the quest pool.
 - The %s button is used to edit the relative |cff00ff00custom|r quest.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_5"] = [=[This is the selected custom list
 - Quests can be repositioned by simply dragging them.
 - A group of quests can be moved by using the %s buttons at the header's left.
@@ -769,172 +769,172 @@ L["help_edt_5"] = [=[This is the selected custom list
 - The %s button is used to edit the relative |cff00ff00custom|r quest or rename the relative group.
 - The 'New Quest' button creates a new quest in the quest pool and inserts it at the button's location, ready to be edited.
 - The 'New Group' button simply creates a new group.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_6"] = "These buttons are used to create or delete pages within the currently selected list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_7"] = "Here you can select which section of the quest you wish to modify."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_8"] = "This frame can be used to edit the chosen quest section."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_9"] = "Click Okay to save your changes, or Cancel to revert them."
---Translation missing 
+--[[Translation missing --]]
 L["hidden"] = "Hidden"
---Translation missing 
+--[[Translation missing --]]
 L["lclicktoopen"] = "Left-click to open the main frame"
---Translation missing 
+--[[Translation missing --]]
 L["list_visibility"] = "List Visibility"
---Translation missing 
+--[[Translation missing --]]
 L["lists_limit"] = "Lists limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["map_id"] = "Map ID"
---Translation missing 
+--[[Translation missing --]]
 L["map_options"] = "Map Options"
---Translation missing 
+--[[Translation missing --]]
 L["minimap_icons"] = "Minimap Icons"
---Translation missing 
+--[[Translation missing --]]
 L["move_down"] = "Move Selection Down"
---Translation missing 
+--[[Translation missing --]]
 L["move_up"] = "Move Selection Up"
---Translation missing 
+--[[Translation missing --]]
 L["namemissing"] = "<name missing>"
---Translation missing 
+--[[Translation missing --]]
 L["new_group"] = "New Group"
---Translation missing 
+--[[Translation missing --]]
 L["new_page"] = "New Page"
---Translation missing 
+--[[Translation missing --]]
 L["new_quest"] = "New Quest"
---Translation missing 
+--[[Translation missing --]]
 L["newlist"] = "New List"
---Translation missing 
+--[[Translation missing --]]
 L["news_#1"] = "Hi! I'm your assistant and I will show you the most important news about Daily Global Check"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
---Translation missing 
+--[[Translation missing --]]
 L["news_#2"] = "You can print the current DGC page output in the chatframe by typing '/dgc print'"
---Translation missing 
+--[[Translation missing --]]
 L["news_#3"] = "Daily Global Check can track Instance Lockouts since v1.3.5! The related plugin can be found on Curse"
---Translation missing 
+--[[Translation missing --]]
 L["news_#4"] = "Weekly follower and Herb/Mining node counters are available in the Daily Global Check_Professions plugin"
---Translation missing 
+--[[Translation missing --]]
 L["news_#5"] = "The Rare Mobs plugin, as of v1.3.2, has two specific options available in the Options->Plugin panel"
---Translation missing 
+--[[Translation missing --]]
 L["news_#6"] = "Check out |cff00ff00DailyGlobalCheck_Hallow's End|r if you're interested in tracking Hallow's End dailies and candy buckets"
---Translation missing 
+--[[Translation missing --]]
 L["news_#7"] = "|cff00ffffMay 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check got a massive technical overhaul in preparation for Legion. The older plugins are incompatible and they will also need to be updated to the newer version, apologies for the inconvenience :)"
---Translation missing 
+--[[Translation missing --]]
 L["news_#8"] = "Groups can be collapsed by clicking on their title in the main frame, collapsed groups are hidden in mouseovering views"
---Translation missing 
+--[[Translation missing --]]
 L["news_#9"] = "You can hide map icons for chosen pages of any list through its Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext1"] = "|cff11DDFFLeft-Click|cffFFFFFF: |cff00FF00Next"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext2"] = "|cff11DDFFRight-Click|cffFFFFFF: |cff00FF00Hide|r"
---Translation missing 
+--[[Translation missing --]]
 L["nextpage"] = "Next Page"
---Translation missing 
+--[[Translation missing --]]
 L["nolist"] = "No list selected"
---Translation missing 
+--[[Translation missing --]]
 L["notitle"] = "<no title>"
---Translation missing 
+--[[Translation missing --]]
 L["opt_blacklist_remove"] = "Remove a character from the black list"
---Translation missing 
+--[[Translation missing --]]
 L["opt_characters"] = "Characters"
---Translation missing 
+--[[Translation missing --]]
 L["opt_characters_short"] = "(Alt)"
---Translation missing 
+--[[Translation missing --]]
 L["opt_help"] = "Help"
---Translation missing 
+--[[Translation missing --]]
 L["opt_hidecompleted"] = "Hide completed quests"
---Translation missing 
+--[[Translation missing --]]
 L["opt_map_all"] = "Only show world map icons from selected list"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_opt_none"] = "The selected plugin doesn't have any specific options"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_opt_title"] = "Options for the selected plugin:"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_options"] = "Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["prevpage"] = "Previous Page"
---Translation missing 
+--[[Translation missing --]]
 L["quest_options"] = "Quest Options"
---Translation missing 
+--[[Translation missing --]]
 L["questdatamissing"] = "<quest data missing>"
---Translation missing 
+--[[Translation missing --]]
 L["questlog_quest_added"] = "|cff11DDFFDaily Global Check|r - Quest %s added to the custom quests pool."
---Translation missing 
+--[[Translation missing --]]
 L["quests_limit"] = "Quests limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["questwindow"] = "- Select quest position -"
---Translation missing 
+--[[Translation missing --]]
 L["rclicktoopen"] = "Right-click to open the quick list selection menu"
---Translation missing 
+--[[Translation missing --]]
 L["rem"] = "Remove"
---Translation missing 
+--[[Translation missing --]]
 L["remmenuheader"] = "- Select the quest to remove -"
---Translation missing 
+--[[Translation missing --]]
 L["repeatable"] = "Repeatable"
---Translation missing 
+--[[Translation missing --]]
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - Waypoint added to TomTom"
---Translation missing 
+--[[Translation missing --]]
 L["search_by_name"] = "Search by name"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
---Translation missing 
+--[[Translation missing --]]
 L["show_adjacent_map_icons"] = "Show on adjacent/continent maps"
---Translation missing 
+--[[Translation missing --]]
 L["shown"] = "Shown"
---Translation missing 
+--[[Translation missing --]]
 L["spell_id"] = "Spell ID"
---Translation missing 
+--[[Translation missing --]]
 L["tools"] = "Tools"
---Translation missing 
+--[[Translation missing --]]
 L["worldmap_icons"] = "Worldmap Icons"
 
 -- Options
---Translation missing 
+--[[Translation missing --]]
 L["account_wide_options"] = "(Account-Wide Options)"
---Translation missing 
+--[[Translation missing --]]
 L["character_specific_options"] = "(Character-specific options)"
---Translation missing 
+--[[Translation missing --]]
 L["map_icons_visibility_list"] = "Map icons visibility for this List"
---Translation missing 
+--[[Translation missing --]]
 L["opt_coords"] = "Show coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["opt_main"] = "Options"
---Translation missing 
+--[[Translation missing --]]
 L["opt_map"] = "Show world map icons"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap"] = "Show minimap button"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap_icons"] = "Show minimap icons"
---Translation missing 
+--[[Translation missing --]]
 L["opt_prefix"] = "Show prefix"
---Translation missing 
+--[[Translation missing --]]
 L["opt_questtype"] = "Show quest type"
---Translation missing 
+--[[Translation missing --]]
 L["opt_showquestbtn"] = "Show the 'Add quest to Custom List' button in the Quest Log Frame"
---Translation missing 
+--[[Translation missing --]]
 L["opt_suffix"] = "Show suffix"
---Translation missing 
+--[[Translation missing --]]
 L["opt_zonename"] = "Show zone name"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons"] = "World map icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons_minimap"] = "Minimap icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["size"] = "Size"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
---Translation missing 
+--[[Translation missing --]]
 L["tomtom_button"] = "Set TomTom waypoints"
 
 elseif locale == "frFR" then
 -- General
 L["add"] = "Ajouter"
---Translation missing 
+--[[Translation missing --]]
 L["add_quest"] = "Add Quest"
 L["addbtntooltip"] = "Ajouter la quête sélectionnée à votre liste personnelle de Daily Global Check "
 L["added"] = "ajoutée"
@@ -945,50 +945,50 @@ L["b_questname"] = "Nom de la quête"
 L["b_suffix"] = "Suffix (optionnel)"
 L["bf_err1"] = "|cff11DDFFDaily Global Check|r - Vous devez entrer l'ID de la quête et son nom."
 L["bf_err2"] = "|cff11DDFFDaily Global Check|r - Cette quête est déjà présente dans la liste."
---Translation missing 
+--[[Translation missing --]]
 L["blacklist"] = "Blacklist"
 L["buildframe"] = "Modifier la liste personnelle"
 L["chars_deleted"] = "|cff11DDFFDaily Global Check|r - Personnage |cff00FF00%s|r dans la liste des exclus"
 L["chars_restored"] = "|cff11DDFFDaily Global Check|r - Personnage |cff00FF00%s|r retiré de la liste des exclus"
---Translation missing 
+--[[Translation missing --]]
 L["classic"] = "Classic"
---Translation missing 
+--[[Translation missing --]]
 L["collapsed"] = "Collapsed"
---Translation missing 
+--[[Translation missing --]]
 L["coordinates"] = "Coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["create_new_list"] = "Create a new list"
---Translation missing 
+--[[Translation missing --]]
 L["currency_id"] = "Currency ID"
 L["customlist"] = "Liste personnelle"
---Translation missing 
+--[[Translation missing --]]
 L["del_page"] = "Delete Page"
---Translation missing 
+--[[Translation missing --]]
 L["delete_list"] = "Delete List"
 L["deleted"] = "supprimée"
---Translation missing 
+--[[Translation missing --]]
 L["edit_mode"] = "Edit Mode"
---Translation missing 
+--[[Translation missing --]]
 L["edit_quest"] = "Edit Quest"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
---Translation missing 
+--[[Translation missing --]]
 L["edit_spell_info"] = "Tracks the cooldown of a spell, mostly useful with profession based spells"
---Translation missing 
+--[[Translation missing --]]
 L["generating_database"] = "Generating the %s database..."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_1"] = "You can create a new custom list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_2"] = "You can rename the selected list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_3"] = "This button permanently deletes the currently selected custom list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_4"] = [=[This is the quest pool, you can drag any quest from here and drop it on the currently selected list.
 - The %s button permanently deletes the relative custom quest from the quest pool.
 - The %s button is used to edit the relative |cff00ff00custom|r quest.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_5"] = [=[This is the selected custom list
 - Quests can be repositioned by simply dragging them.
 - A group of quests can be moved by using the %s buttons at the header's left.
@@ -996,66 +996,66 @@ L["help_edt_5"] = [=[This is the selected custom list
 - The %s button is used to edit the relative |cff00ff00custom|r quest or rename the relative group.
 - The 'New Quest' button creates a new quest in the quest pool and inserts it at the button's location, ready to be edited.
 - The 'New Group' button simply creates a new group.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_6"] = "These buttons are used to create or delete pages within the currently selected list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_7"] = "Here you can select which section of the quest you wish to modify."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_8"] = "This frame can be used to edit the chosen quest section."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_9"] = "Click Okay to save your changes, or Cancel to revert them."
---Translation missing 
+--[[Translation missing --]]
 L["hidden"] = "Hidden"
 L["lclicktoopen"] = "Click gauche pour ouvrir la fenêtre principale"
---Translation missing 
+--[[Translation missing --]]
 L["list_visibility"] = "List Visibility"
---Translation missing 
+--[[Translation missing --]]
 L["lists_limit"] = "Lists limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["map_id"] = "Map ID"
---Translation missing 
+--[[Translation missing --]]
 L["map_options"] = "Map Options"
---Translation missing 
+--[[Translation missing --]]
 L["minimap_icons"] = "Minimap Icons"
---Translation missing 
+--[[Translation missing --]]
 L["move_down"] = "Move Selection Down"
---Translation missing 
+--[[Translation missing --]]
 L["move_up"] = "Move Selection Up"
 L["namemissing"] = "<nom manquant>"
---Translation missing 
+--[[Translation missing --]]
 L["new_group"] = "New Group"
---Translation missing 
+--[[Translation missing --]]
 L["new_page"] = "New Page"
---Translation missing 
+--[[Translation missing --]]
 L["new_quest"] = "New Quest"
---Translation missing 
+--[[Translation missing --]]
 L["newlist"] = "New List"
---Translation missing 
+--[[Translation missing --]]
 L["news_#1"] = "Hi! I'm your assistant and I will show you the most important news about Daily Global Check"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
---Translation missing 
+--[[Translation missing --]]
 L["news_#2"] = "You can print the current DGC page output in the chatframe by typing '/dgc print'"
---Translation missing 
+--[[Translation missing --]]
 L["news_#3"] = "Daily Global Check can track Instance Lockouts since v1.3.5! The related plugin can be found on Curse"
---Translation missing 
+--[[Translation missing --]]
 L["news_#4"] = "Weekly follower and Herb/Mining node counters are available in the Daily Global Check_Professions plugin"
---Translation missing 
+--[[Translation missing --]]
 L["news_#5"] = "The Rare Mobs plugin, as of v1.3.2, has two specific options available in the Options->Plugin panel"
---Translation missing 
+--[[Translation missing --]]
 L["news_#6"] = "Check out |cff00ff00DailyGlobalCheck_Hallow's End|r if you're interested in tracking Hallow's End dailies and candy buckets"
---Translation missing 
+--[[Translation missing --]]
 L["news_#7"] = "|cff00ffffMay 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check got a massive technical overhaul in preparation for Legion. The older plugins are incompatible and they will also need to be updated to the newer version, apologies for the inconvenience :)"
---Translation missing 
+--[[Translation missing --]]
 L["news_#8"] = "Groups can be collapsed by clicking on their title in the main frame, collapsed groups are hidden in mouseovering views"
---Translation missing 
+--[[Translation missing --]]
 L["news_#9"] = "You can hide map icons for chosen pages of any list through its Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext1"] = "|cff11DDFFLeft-Click|cffFFFFFF: |cff00FF00Next"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext2"] = "|cff11DDFFRight-Click|cffFFFFFF: |cff00FF00Hide|r"
 L["nextpage"] = "page suivante"
 L["nolist"] = "Aucune liste sélectionnée"
@@ -1068,63 +1068,63 @@ L["opt_hidecompleted"] = "Cacher les quêtes achevées"
 L["opt_map_all"] = "Afficher seulement les icônes des listes sélectionnées"
 L["plugin_opt_none"] = "Le Plugin sélectionné n'as pas d'options spécifiques"
 L["plugin_opt_title"] = "Options pour le plugin sélectionné"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_options"] = "Plugin Options"
 L["prevpage"] = "Page précédente"
---Translation missing 
+--[[Translation missing --]]
 L["quest_options"] = "Quest Options"
 L["questdatamissing"] = "<données de la quête manquantes>"
---Translation missing 
+--[[Translation missing --]]
 L["questlog_quest_added"] = "|cff11DDFFDaily Global Check|r - Quest %s added to the custom quests pool."
---Translation missing 
+--[[Translation missing --]]
 L["quests_limit"] = "Quests limit reached (%s)"
 L["questwindow"] = "- Sélectionnez la position de la quête -"
 L["rclicktoopen"] = "Click droite pour ouvrir le menu de sélection des listes rapides"
 L["rem"] = "Supprimer"
 L["remmenuheader"] = "- Sélectionnez la quête à supprimer -"
---Translation missing 
+--[[Translation missing --]]
 L["repeatable"] = "Repeatable"
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - Chemin ajouté à TomTom"
---Translation missing 
+--[[Translation missing --]]
 L["search_by_name"] = "Search by name"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
---Translation missing 
+--[[Translation missing --]]
 L["show_adjacent_map_icons"] = "Show on adjacent/continent maps"
---Translation missing 
+--[[Translation missing --]]
 L["shown"] = "Shown"
---Translation missing 
+--[[Translation missing --]]
 L["spell_id"] = "Spell ID"
---Translation missing 
+--[[Translation missing --]]
 L["tools"] = "Tools"
---Translation missing 
+--[[Translation missing --]]
 L["worldmap_icons"] = "Worldmap Icons"
 
 -- Options
---Translation missing 
+--[[Translation missing --]]
 L["account_wide_options"] = "(Account-Wide Options)"
---Translation missing 
+--[[Translation missing --]]
 L["character_specific_options"] = "(Character-specific options)"
---Translation missing 
+--[[Translation missing --]]
 L["map_icons_visibility_list"] = "Map icons visibility for this List"
 L["opt_coords"] = "Voir les coordonnées"
 L["opt_main"] = "Options"
 L["opt_map"] = "Voir les icônes sur la carte du monde"
 L["opt_minimap"] = "Voir l'icône sur la minimap"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap_icons"] = "Show minimap icons"
 L["opt_prefix"] = "Voir le préfix"
 L["opt_questtype"] = "Voir le type de quête"
 L["opt_showquestbtn"] = "Voir le bouton \"Ajouter la quête à votre liste personnelle\" dans la fenêtre du journal des quêtes"
 L["opt_suffix"] = "Voir le suffix"
 L["opt_zonename"] = "Voir le nom de la zone"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons"] = "World map icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons_minimap"] = "Minimap icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["size"] = "Size"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
 L["tomtom_button"] = "Configurer les chemins TomTom"
 
@@ -1146,7 +1146,7 @@ L["buildframe"] = "Eigene Liste bearbeiten"
 L["chars_deleted"] = "|cff11DDFFDaily Global Check|r - Charakter |cff00FF00%s|r ist nun auf der Schwarzen Liste"
 L["chars_restored"] = "|cff11DDFFDaily Global Check|r - Charakter |cff00FF00%s|r wurde von der Schwarzen Liste entfernt"
 L["classic"] = "Classic"
---Translation missing 
+--[[Translation missing --]]
 L["collapsed"] = "Collapsed"
 L["coordinates"] = "Koordinaten"
 L["create_new_list"] = "Eine neue Liste erstellen"
@@ -1157,11 +1157,11 @@ L["delete_list"] = "Liste löschen"
 L["deleted"] = "gelöscht"
 L["edit_mode"] = "Bearbeitungsmodus"
 L["edit_quest"] = "Quest bearbeiten"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
---Translation missing 
+--[[Translation missing --]]
 L["edit_spell_info"] = "Tracks the cooldown of a spell, mostly useful with profession based spells"
 L["generating_database"] = "Die Datenbank %s wird erzeugt..."
 L["help_edt_1"] = "Mit diesen Schaltflächen können Sie eine neue benutzerdefinierte Liste erstellen oder eine der unten folgenden ausgewählten Listen bearbeiten/entfernen/Aktivieren"
@@ -1176,15 +1176,15 @@ L["help_edt_7"] = "Klicken sie auf eine Spalte, um die Listen zu sortieren"
 L["help_edt_8"] = "Dies ist die Liste der Quests. Sie enthält alle Plugin und persönlich hinzugefügte Quests."
 L["help_edt_9"] = [=[Hier können Sie Quests hinzufügen oder bearbeiten.
 Hinweis: Die bearbeitete Quest ist nicht unbedingt die ausgewählte Quest, es bezieht sich stattdessen auf die Quest, deren Quest-ID ins Bearbeitungsfeld geschrieben wurde.]=]
---Translation missing 
+--[[Translation missing --]]
 L["hidden"] = "Hidden"
 L["lclicktoopen"] = "Linksklick zum Öffnen des Hauptfensters"
---Translation missing 
+--[[Translation missing --]]
 L["list_visibility"] = "List Visibility"
 L["lists_limit"] = "Listenlimit erreicht (%s)"
 L["map_id"] = "Karten-ID"
 L["map_options"] = "Kartenoptionen"
---Translation missing 
+--[[Translation missing --]]
 L["minimap_icons"] = "Minimap Icons"
 L["move_down"] = "Auswahl nach unten verschieben"
 L["move_up"] = "Auswahl nach oben verschieben"
@@ -1194,23 +1194,23 @@ L["new_page"] = "Neue Seite"
 L["new_quest"] = "Neue Quest"
 L["newlist"] = "Neue Liste"
 L["news_#1"] = "Hi! ich bin dein Assistent und ich werde dir die wichtigsten Neuigkeiten von Daily Global Check zeigen"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
 L["news_#2"] = "Du kannst die momentane DGC-Seitenausgabe im Chatfenster ausgeben, wenn du '/dgc print' eintippst"
 L["news_#3"] = "Daily Global Check kann seit v1.3.5 Instanzsperren verfolgen! Das dazugehörige Zusatzmodul (Daily Global Check_InstanceLockouts) kann bei Curse heruntergeladen werden"
---Translation missing 
+--[[Translation missing --]]
 L["news_#4"] = "Weekly follower and Herb/Mining node counters are available in the Daily Global Check_Professions plugin"
---Translation missing 
+--[[Translation missing --]]
 L["news_#5"] = "The Rare Mobs plugin, as of v1.3.2, has two specific options available in the Options->Plugin panel"
 L["news_#6"] = "Probiere |cff00ff00DailyGlobalCheck_Hallow's End|r, wenn du Interesse daran hast, deine täglichen Quests des Ereignisses Schlotternächte zu verfolgen."
---Translation missing 
+--[[Translation missing --]]
 L["news_#7"] = "|cff00ffffMay 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check got a massive technical overhaul in preparation for Legion. The older plugins are incompatible and they will also need to be updated to the newer version, apologies for the inconvenience :)"
---Translation missing 
+--[[Translation missing --]]
 L["news_#8"] = "Groups can be collapsed by clicking on their title in the main frame, collapsed groups are hidden in mouseovering views"
---Translation missing 
+--[[Translation missing --]]
 L["news_#9"] = "You can hide map icons for chosen pages of any list through its Plugin Options"
 L["news_bottomtext1"] = "|cff11DDFFLinksklick|cffFFFFFF: |cff00FF00Weiter"
 L["news_bottomtext2"] = "|cff11DDFFRechtsklick|cffFFFFFF: |cff00FF00Verstecken|r"
@@ -1230,7 +1230,7 @@ L["prevpage"] = "Vorherige Seite"
 L["quest_options"] = "Questoptionen"
 L["questdatamissing"] = "<Questdaten fehlen>"
 L["questlog_quest_added"] = "|cff11DDFFDaily Global Check|r - Quest %s hinzugefügt."
---Translation missing 
+--[[Translation missing --]]
 L["quests_limit"] = "Quests limit reached (%s)"
 L["questwindow"] = "- Wähle die Questposition -"
 L["rclicktoopen"] = "Rechtsklick zum Öffnen des Schnellauswahlmenüs."
@@ -1238,23 +1238,23 @@ L["rem"] = "Entfernen"
 L["remmenuheader"] = "- Wähle die Quest, die entfernt werden soll -"
 L["repeatable"] = "Wiederholbar"
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - Wegpunkt für TomTom hinzugefügt"
---Translation missing 
+--[[Translation missing --]]
 L["search_by_name"] = "Search by name"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
---Translation missing 
+--[[Translation missing --]]
 L["show_adjacent_map_icons"] = "Show on adjacent/continent maps"
---Translation missing 
+--[[Translation missing --]]
 L["shown"] = "Shown"
 L["spell_id"] = "Zauber-ID"
 L["tools"] = "Werkzeuge"
---Translation missing 
+--[[Translation missing --]]
 L["worldmap_icons"] = "Worldmap Icons"
 
 -- Options
 L["account_wide_options"] = "(Accountweite Optionen)"
 L["character_specific_options"] = "(Characterspezifische Optionen)"
---Translation missing 
+--[[Translation missing --]]
 L["map_icons_visibility_list"] = "Map icons visibility for this List"
 L["opt_coords"] = "Koordinaten anzeigen"
 L["opt_main"] = "Einstellungen"
@@ -1269,7 +1269,7 @@ L["opt_zonename"] = "Zonenname anzeigen"
 L["plugin_mapicons"] = "Weltkartensymbole für dieses Plugin"
 L["plugin_mapicons_minimap"] = "Minikartensymbole für dieses Plugin"
 L["size"] = "Größe"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
 L["tomtom_button"] = "TomTom-Wegpunkte setzen"
 
@@ -1301,7 +1301,7 @@ L["delete_list"] = "Удалить список"
 L["deleted"] = "Общий"
 L["edit_mode"] = "Режим редактирования"
 L["edit_quest"] = "Редактировать задание"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
@@ -1310,11 +1310,11 @@ L["generating_database"] = "Создано %s базы данных..."
 L["help_edt_1"] = "Вы можете создать новый пользовательский список, используя кнопку %s."
 L["help_edt_2"] = "Вы можете переименовать выбранный список, используя кнопку %s."
 L["help_edt_3"] = "Эта кнопка навсегда удаляет текущий выбранный пользовательский список."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_4"] = [=[This is the quest pool, you can drag any quest from here and drop it on the currently selected list.
 - The %s button permanently deletes the relative custom quest from the quest pool.
 - The %s button is used to edit the relative |cff00ff00custom|r quest.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_5"] = [=[This is the selected custom list
 - Quests can be repositioned by simply dragging them.
 - A group of quests can be moved by using the %s buttons at the header's left.
@@ -1378,8 +1378,7 @@ L["remmenuheader"] = "- Выберите задание для удаления 
 L["repeatable"] = "Повторяющийся"
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - в TomTom добавлено направление."
 L["search_by_name"] = "Поиск по имени"
---Translation missing 
-L["search_icon"] = "Search Icon"
+L["search_icon"] = "Иконка поиска"
 L["show_adjacent_map_icons"] = "Показать карты континента/соседних карт"
 L["shown"] = "Показанный"
 L["spell_id"] = "ИД заклинания"
@@ -1408,76 +1407,76 @@ L["tomtom_button"] = "Устанавливать направления в TomTo
 
 elseif locale == "zhCN" then 
 -- General
---Translation missing 
+--[[Translation missing --]]
 L["add"] = "Add"
---Translation missing 
+--[[Translation missing --]]
 L["add_quest"] = "Add Quest"
---Translation missing 
+--[[Translation missing --]]
 L["addbtntooltip"] = "Add the selected quest to your Daily Global Check Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["added"] = "added"
 L["availablelists"] = "可用列表"
---Translation missing 
+--[[Translation missing --]]
 L["b_prefix"] = "Prefix"
---Translation missing 
+--[[Translation missing --]]
 L["b_questid"] = "Quest ID"
---Translation missing 
+--[[Translation missing --]]
 L["b_questname"] = "Quest Name"
---Translation missing 
+--[[Translation missing --]]
 L["b_suffix"] = "Suffix"
---Translation missing 
+--[[Translation missing --]]
 L["bf_err1"] = "|cff11DDFFDaily Global Check|r - You need to enter either the quest ID and its name."
---Translation missing 
+--[[Translation missing --]]
 L["bf_err2"] = "|cff11DDFFDaily Global Check|r - This quest already exists."
---Translation missing 
+--[[Translation missing --]]
 L["blacklist"] = "Blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["buildframe"] = "Modify Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["chars_deleted"] = "|cff11DDFFDaily Global Check|r - Character |cff00FF00%s|r is now in the blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["chars_restored"] = "|cff11DDFFDaily Global Check|r - Character |cff00FF00%s|r has been removed from the blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["classic"] = "Classic"
---Translation missing 
+--[[Translation missing --]]
 L["collapsed"] = "Collapsed"
---Translation missing 
+--[[Translation missing --]]
 L["coordinates"] = "Coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["create_new_list"] = "Create a new list"
---Translation missing 
+--[[Translation missing --]]
 L["currency_id"] = "Currency ID"
---Translation missing 
+--[[Translation missing --]]
 L["customlist"] = "Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["del_page"] = "Delete Page"
---Translation missing 
+--[[Translation missing --]]
 L["delete_list"] = "Delete List"
---Translation missing 
+--[[Translation missing --]]
 L["deleted"] = "deleted"
---Translation missing 
+--[[Translation missing --]]
 L["edit_mode"] = "Edit Mode"
---Translation missing 
+--[[Translation missing --]]
 L["edit_quest"] = "Edit Quest"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
---Translation missing 
+--[[Translation missing --]]
 L["edit_spell_info"] = "Tracks the cooldown of a spell, mostly useful with profession based spells"
---Translation missing 
+--[[Translation missing --]]
 L["generating_database"] = "Generating the %s database..."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_1"] = "You can create a new custom list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_2"] = "You can rename the selected list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_3"] = "This button permanently deletes the currently selected custom list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_4"] = [=[This is the quest pool, you can drag any quest from here and drop it on the currently selected list.
 - The %s button permanently deletes the relative custom quest from the quest pool.
 - The %s button is used to edit the relative |cff00ff00custom|r quest.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_5"] = [=[This is the selected custom list
 - Quests can be repositioned by simply dragging them.
 - A group of quests can be moved by using the %s buttons at the header's left.
@@ -1485,150 +1484,150 @@ L["help_edt_5"] = [=[This is the selected custom list
 - The %s button is used to edit the relative |cff00ff00custom|r quest or rename the relative group.
 - The 'New Quest' button creates a new quest in the quest pool and inserts it at the button's location, ready to be edited.
 - The 'New Group' button simply creates a new group.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_6"] = "These buttons are used to create or delete pages within the currently selected list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_7"] = "Here you can select which section of the quest you wish to modify."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_8"] = "This frame can be used to edit the chosen quest section."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_9"] = "Click Okay to save your changes, or Cancel to revert them."
---Translation missing 
+--[[Translation missing --]]
 L["hidden"] = "Hidden"
 L["lclicktoopen"] = "左键单击打开主框架"
---Translation missing 
+--[[Translation missing --]]
 L["list_visibility"] = "List Visibility"
---Translation missing 
+--[[Translation missing --]]
 L["lists_limit"] = "Lists limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["map_id"] = "Map ID"
---Translation missing 
+--[[Translation missing --]]
 L["map_options"] = "Map Options"
---Translation missing 
+--[[Translation missing --]]
 L["minimap_icons"] = "Minimap Icons"
---Translation missing 
+--[[Translation missing --]]
 L["move_down"] = "Move Selection Down"
---Translation missing 
+--[[Translation missing --]]
 L["move_up"] = "Move Selection Up"
 L["namemissing"] = "<名字丢失>"
---Translation missing 
+--[[Translation missing --]]
 L["new_group"] = "New Group"
---Translation missing 
+--[[Translation missing --]]
 L["new_page"] = "New Page"
---Translation missing 
+--[[Translation missing --]]
 L["new_quest"] = "New Quest"
---Translation missing 
+--[[Translation missing --]]
 L["newlist"] = "New List"
---Translation missing 
+--[[Translation missing --]]
 L["news_#1"] = "Hi! I'm your assistant and I will show you the most important news about Daily Global Check"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
---Translation missing 
+--[[Translation missing --]]
 L["news_#2"] = "You can print the current DGC page output in the chatframe by typing '/dgc print'"
---Translation missing 
+--[[Translation missing --]]
 L["news_#3"] = "Daily Global Check can track Instance Lockouts since v1.3.5! The related plugin can be found on Curse"
---Translation missing 
+--[[Translation missing --]]
 L["news_#4"] = "Weekly follower and Herb/Mining node counters are available in the Daily Global Check_Professions plugin"
---Translation missing 
+--[[Translation missing --]]
 L["news_#5"] = "The Rare Mobs plugin, as of v1.3.2, has two specific options available in the Options->Plugin panel"
---Translation missing 
+--[[Translation missing --]]
 L["news_#6"] = "Check out |cff00ff00DailyGlobalCheck_Hallow's End|r if you're interested in tracking Hallow's End dailies and candy buckets"
---Translation missing 
+--[[Translation missing --]]
 L["news_#7"] = "|cff00ffffMay 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check got a massive technical overhaul in preparation for Legion. The older plugins are incompatible and they will also need to be updated to the newer version, apologies for the inconvenience :)"
---Translation missing 
+--[[Translation missing --]]
 L["news_#8"] = "Groups can be collapsed by clicking on their title in the main frame, collapsed groups are hidden in mouseovering views"
---Translation missing 
+--[[Translation missing --]]
 L["news_#9"] = "You can hide map icons for chosen pages of any list through its Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext1"] = "|cff11DDFFLeft-Click|cffFFFFFF: |cff00FF00Next"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext2"] = "|cff11DDFFRight-Click|cffFFFFFF: |cff00FF00Hide|r"
---Translation missing 
+--[[Translation missing --]]
 L["nextpage"] = "Next Page"
---Translation missing 
+--[[Translation missing --]]
 L["nolist"] = "No list selected"
 L["notitle"] = "<没有标题>"
---Translation missing 
+--[[Translation missing --]]
 L["opt_blacklist_remove"] = "Remove a character from the black list"
---Translation missing 
+--[[Translation missing --]]
 L["opt_characters"] = "Characters"
---Translation missing 
+--[[Translation missing --]]
 L["opt_characters_short"] = "(Alt)"
---Translation missing 
+--[[Translation missing --]]
 L["opt_help"] = "Help"
---Translation missing 
+--[[Translation missing --]]
 L["opt_hidecompleted"] = "Hide completed quests"
---Translation missing 
+--[[Translation missing --]]
 L["opt_map_all"] = "Only show world map icons from selected list"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_opt_none"] = "The selected plugin doesn't have any specific options"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_opt_title"] = "Options for the selected plugin:"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_options"] = "Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["prevpage"] = "Previous Page"
---Translation missing 
+--[[Translation missing --]]
 L["quest_options"] = "Quest Options"
 L["questdatamissing"] = "<任务数据丢失>"
---Translation missing 
+--[[Translation missing --]]
 L["questlog_quest_added"] = "|cff11DDFFDaily Global Check|r - Quest %s added to the custom quests pool."
---Translation missing 
+--[[Translation missing --]]
 L["quests_limit"] = "Quests limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["questwindow"] = "- Select quest position -"
 L["rclicktoopen"] = "右键单击打开快速列表选择菜单"
---Translation missing 
+--[[Translation missing --]]
 L["rem"] = "Remove"
---Translation missing 
+--[[Translation missing --]]
 L["remmenuheader"] = "- Select the quest to remove -"
---Translation missing 
+--[[Translation missing --]]
 L["repeatable"] = "Repeatable"
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - 航点加入到TomTom"
---Translation missing 
+--[[Translation missing --]]
 L["search_by_name"] = "Search by name"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
---Translation missing 
+--[[Translation missing --]]
 L["show_adjacent_map_icons"] = "Show on adjacent/continent maps"
---Translation missing 
+--[[Translation missing --]]
 L["shown"] = "Shown"
---Translation missing 
+--[[Translation missing --]]
 L["spell_id"] = "Spell ID"
---Translation missing 
+--[[Translation missing --]]
 L["tools"] = "Tools"
---Translation missing 
+--[[Translation missing --]]
 L["worldmap_icons"] = "Worldmap Icons"
 
 -- Options
---Translation missing 
+--[[Translation missing --]]
 L["account_wide_options"] = "(Account-Wide Options)"
---Translation missing 
+--[[Translation missing --]]
 L["character_specific_options"] = "(Character-specific options)"
---Translation missing 
+--[[Translation missing --]]
 L["map_icons_visibility_list"] = "Map icons visibility for this List"
 L["opt_coords"] = "显示坐标"
 L["opt_main"] = "选项"
 L["opt_map"] = "显示世界地图图标"
 L["opt_minimap"] = "显示小地图按钮"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap_icons"] = "Show minimap icons"
 L["opt_prefix"] = "显示前缀"
 L["opt_questtype"] = "显示任务类型"
---Translation missing 
+--[[Translation missing --]]
 L["opt_showquestbtn"] = "Show the 'Add quest to Custom List' button in the Quest Log Frame"
 L["opt_suffix"] = "显示后缀"
 L["opt_zonename"] = "显示区域名称"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons"] = "World map icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons_minimap"] = "Minimap icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["size"] = "Size"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
 L["tomtom_button"] = "设置TomTom航点"
 
@@ -1649,42 +1648,42 @@ L["blacklist"] = "黑名單"
 L["buildframe"] = "更改自訂清單"
 L["chars_deleted"] = "|cff11DDFF艾澤拉斯的日常|r - 角色 |cff00FF00%s|r 已加入黑名單"
 L["chars_restored"] = "|cff11DDFF艾澤拉斯的日常|r - 角色 |cff00FF00%s|r 已經從黑名單中移除"
---Translation missing 
+--[[Translation missing --]]
 L["classic"] = "Classic"
---Translation missing 
+--[[Translation missing --]]
 L["collapsed"] = "Collapsed"
---Translation missing 
+--[[Translation missing --]]
 L["coordinates"] = "Coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["create_new_list"] = "Create a new list"
---Translation missing 
+--[[Translation missing --]]
 L["currency_id"] = "Currency ID"
 L["customlist"] = "自訂清單"
 L["del_page"] = "刪除頁面"
---Translation missing 
+--[[Translation missing --]]
 L["delete_list"] = "Delete List"
 L["deleted"] = "已刪除"
 L["edit_mode"] = "編輯模式"
---Translation missing 
+--[[Translation missing --]]
 L["edit_quest"] = "Edit Quest"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
---Translation missing 
+--[[Translation missing --]]
 L["edit_spell_info"] = "Tracks the cooldown of a spell, mostly useful with profession based spells"
---Translation missing 
+--[[Translation missing --]]
 L["generating_database"] = "Generating the %s database..."
 L["help_edt_1"] = "使用按鈕來建立新的自訂清單，或選擇下面的清單來編輯/移除/啟用。"
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_2"] = "You can rename the selected list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_3"] = "This button permanently deletes the currently selected custom list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_4"] = [=[This is the quest pool, you can drag any quest from here and drop it on the currently selected list.
 - The %s button permanently deletes the relative custom quest from the quest pool.
 - The %s button is used to edit the relative |cff00ff00custom|r quest.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_5"] = [=[This is the selected custom list
 - Quests can be repositioned by simply dragging them.
 - A group of quests can be moved by using the %s buttons at the header's left.
@@ -1692,50 +1691,50 @@ L["help_edt_5"] = [=[This is the selected custom list
 - The %s button is used to edit the relative |cff00ff00custom|r quest or rename the relative group.
 - The 'New Quest' button creates a new quest in the quest pool and inserts it at the button's location, ready to be edited.
 - The 'New Group' button simply creates a new group.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_6"] = "These buttons are used to create or delete pages within the currently selected list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_7"] = "Here you can select which section of the quest you wish to modify."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_8"] = "This frame can be used to edit the chosen quest section."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_9"] = "Click Okay to save your changes, or Cancel to revert them."
---Translation missing 
+--[[Translation missing --]]
 L["hidden"] = "Hidden"
 L["lclicktoopen"] = "左鍵開啟主視窗"
---Translation missing 
+--[[Translation missing --]]
 L["list_visibility"] = "List Visibility"
 L["lists_limit"] = "達到清單上限 (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["map_id"] = "Map ID"
---Translation missing 
+--[[Translation missing --]]
 L["map_options"] = "Map Options"
---Translation missing 
+--[[Translation missing --]]
 L["minimap_icons"] = "Minimap Icons"
 L["move_down"] = "選取範圍往下移"
 L["move_up"] = "選取範圍往上移"
 L["namemissing"] = "<沒有名稱>"
 L["new_group"] = "新的群組"
 L["new_page"] = "新的頁面"
---Translation missing 
+--[[Translation missing --]]
 L["new_quest"] = "New Quest"
 L["newlist"] = "新的清單"
 L["news_#1"] = "Hi! 我是您的小助理，要和您說說艾澤拉斯的日常 Daily Global Check 最重要的新消息"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
 L["news_#2"] = "要將目前的艾澤拉斯的日常頁面顯示出來，只要在聊天視窗輸入 '/dgc print'"
 L["news_#3"] = "艾澤拉斯的日常從版本 v1.3.5 開始可以追蹤副本開放進度! 在 Curse 網站可以找到相關的模組"
 L["news_#4"] = "每週招募追隨者和草藥/礦坑的日常都在 Daily Global Check_Professions 模組"
 L["news_#5"] = "稀有怪模組從版本 v1.3.2 開始有兩個特別的選項，可從 選項 -> 模組 面板來設定。"
 L["news_#6"] = "追蹤萬鬼節的每日和糖果桶，一定不能錯過 |cff00ff00DailyGlobalCheck_Hallow's End|r"
---Translation missing 
+--[[Translation missing --]]
 L["news_#7"] = "|cff00ffffMay 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check got a massive technical overhaul in preparation for Legion. The older plugins are incompatible and they will also need to be updated to the newer version, apologies for the inconvenience :)"
---Translation missing 
+--[[Translation missing --]]
 L["news_#8"] = "Groups can be collapsed by clicking on their title in the main frame, collapsed groups are hidden in mouseovering views"
---Translation missing 
+--[[Translation missing --]]
 L["news_#9"] = "You can hide map icons for chosen pages of any list through its Plugin Options"
 L["news_bottomtext1"] = "|cff11DDFF左鍵|cffFFFFFF: |cff00FF00下一個"
 L["news_bottomtext2"] = "|cff11DDFF右鍵|cffFFFFFF: |cff00FF00隱藏|r"
@@ -1750,14 +1749,14 @@ L["opt_hidecompleted"] = "隱藏已完成的任務"
 L["opt_map_all"] = "只顯示選取清單中的世界地圖圖示"
 L["plugin_opt_none"] = "選擇的模組沒有任何特別的選項"
 L["plugin_opt_title"] = "選擇模組的選項:"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_options"] = "Plugin Options"
 L["prevpage"] = "上一頁"
---Translation missing 
+--[[Translation missing --]]
 L["quest_options"] = "Quest Options"
 L["questdatamissing"] = "<無法找到任務資料>"
 L["questlog_quest_added"] = "|cff11DDFF艾澤拉斯的日常|r - 已經新增任務 %s。"
---Translation missing 
+--[[Translation missing --]]
 L["quests_limit"] = "Quests limit reached (%s)"
 L["questwindow"] = "- 選擇任務位置 -"
 L["rclicktoopen"] = "右鍵開啟快速選擇清單"
@@ -1765,27 +1764,27 @@ L["rem"] = "移除"
 L["remmenuheader"] = "- 選擇要移除的任務 -"
 L["repeatable"] = "可重複的"
 L["s_tomtomset"] = "|cff11DDFF艾澤拉斯的日常|r - 已經新增 TomTom 航點"
---Translation missing 
+--[[Translation missing --]]
 L["search_by_name"] = "Search by name"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
---Translation missing 
+--[[Translation missing --]]
 L["show_adjacent_map_icons"] = "Show on adjacent/continent maps"
---Translation missing 
+--[[Translation missing --]]
 L["shown"] = "Shown"
---Translation missing 
+--[[Translation missing --]]
 L["spell_id"] = "Spell ID"
---Translation missing 
+--[[Translation missing --]]
 L["tools"] = "Tools"
---Translation missing 
+--[[Translation missing --]]
 L["worldmap_icons"] = "Worldmap Icons"
 
 -- Options
---Translation missing 
+--[[Translation missing --]]
 L["account_wide_options"] = "(Account-Wide Options)"
---Translation missing 
+--[[Translation missing --]]
 L["character_specific_options"] = "(Character-specific options)"
---Translation missing 
+--[[Translation missing --]]
 L["map_icons_visibility_list"] = "Map icons visibility for this List"
 L["opt_coords"] = "顯示座標"
 L["opt_main"] = "選項"
@@ -1800,83 +1799,83 @@ L["opt_zonename"] = "顯示地區名稱"
 L["plugin_mapicons"] = "這個模組的世界地圖圖示"
 L["plugin_mapicons_minimap"] = "這個模組的小地圖圖示"
 L["size"] = "大小"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
 L["tomtom_button"] = "設定 TomTom 航點"
 
 elseif locale == "koKR" then
 -- General
---Translation missing 
+--[[Translation missing --]]
 L["add"] = "Add"
---Translation missing 
+--[[Translation missing --]]
 L["add_quest"] = "Add Quest"
---Translation missing 
+--[[Translation missing --]]
 L["addbtntooltip"] = "Add the selected quest to your Daily Global Check Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["added"] = "added"
---Translation missing 
+--[[Translation missing --]]
 L["availablelists"] = "Available Lists"
---Translation missing 
+--[[Translation missing --]]
 L["b_prefix"] = "Prefix"
---Translation missing 
+--[[Translation missing --]]
 L["b_questid"] = "Quest ID"
---Translation missing 
+--[[Translation missing --]]
 L["b_questname"] = "Quest Name"
---Translation missing 
+--[[Translation missing --]]
 L["b_suffix"] = "Suffix"
---Translation missing 
+--[[Translation missing --]]
 L["bf_err1"] = "|cff11DDFFDaily Global Check|r - You need to enter either the quest ID and its name."
---Translation missing 
+--[[Translation missing --]]
 L["bf_err2"] = "|cff11DDFFDaily Global Check|r - This quest already exists."
---Translation missing 
+--[[Translation missing --]]
 L["blacklist"] = "Blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["buildframe"] = "Modify Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["chars_deleted"] = "|cff11DDFFDaily Global Check|r - Character |cff00FF00%s|r is now in the blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["chars_restored"] = "|cff11DDFFDaily Global Check|r - Character |cff00FF00%s|r has been removed from the blacklist"
---Translation missing 
+--[[Translation missing --]]
 L["classic"] = "Classic"
---Translation missing 
+--[[Translation missing --]]
 L["collapsed"] = "Collapsed"
---Translation missing 
+--[[Translation missing --]]
 L["coordinates"] = "Coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["create_new_list"] = "Create a new list"
---Translation missing 
+--[[Translation missing --]]
 L["currency_id"] = "Currency ID"
---Translation missing 
+--[[Translation missing --]]
 L["customlist"] = "Custom List"
---Translation missing 
+--[[Translation missing --]]
 L["del_page"] = "Delete Page"
---Translation missing 
+--[[Translation missing --]]
 L["delete_list"] = "Delete List"
---Translation missing 
+--[[Translation missing --]]
 L["deleted"] = "deleted"
---Translation missing 
+--[[Translation missing --]]
 L["edit_mode"] = "Edit Mode"
---Translation missing 
+--[[Translation missing --]]
 L["edit_quest"] = "Edit Quest"
---Translation missing 
+--[[Translation missing --]]
 L["edit_questID_info"] = [=[You can insert multiple quest IDs each separated by one of the following keywords:
  %s : this element will result complete if at least one of the quests is completed.
  %s : this element will result complete only when all the quests are completed.]=]
---Translation missing 
+--[[Translation missing --]]
 L["edit_spell_info"] = "Tracks the cooldown of a spell, mostly useful with profession based spells"
---Translation missing 
+--[[Translation missing --]]
 L["generating_database"] = "Generating the %s database..."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_1"] = "You can create a new custom list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_2"] = "You can rename the selected list by using the %s button."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_3"] = "This button permanently deletes the currently selected custom list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_4"] = [=[This is the quest pool, you can drag any quest from here and drop it on the currently selected list.
 - The %s button permanently deletes the relative custom quest from the quest pool.
 - The %s button is used to edit the relative |cff00ff00custom|r quest.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_5"] = [=[This is the selected custom list
 - Quests can be repositioned by simply dragging them.
 - A group of quests can be moved by using the %s buttons at the header's left.
@@ -1884,166 +1883,166 @@ L["help_edt_5"] = [=[This is the selected custom list
 - The %s button is used to edit the relative |cff00ff00custom|r quest or rename the relative group.
 - The 'New Quest' button creates a new quest in the quest pool and inserts it at the button's location, ready to be edited.
 - The 'New Group' button simply creates a new group.]=]
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_6"] = "These buttons are used to create or delete pages within the currently selected list."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_7"] = "Here you can select which section of the quest you wish to modify."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_8"] = "This frame can be used to edit the chosen quest section."
---Translation missing 
+--[[Translation missing --]]
 L["help_edt_9"] = "Click Okay to save your changes, or Cancel to revert them."
---Translation missing 
+--[[Translation missing --]]
 L["hidden"] = "Hidden"
---Translation missing 
+--[[Translation missing --]]
 L["lclicktoopen"] = "Left-click to open the main frame"
---Translation missing 
+--[[Translation missing --]]
 L["list_visibility"] = "List Visibility"
---Translation missing 
+--[[Translation missing --]]
 L["lists_limit"] = "Lists limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["map_id"] = "Map ID"
---Translation missing 
+--[[Translation missing --]]
 L["map_options"] = "Map Options"
---Translation missing 
+--[[Translation missing --]]
 L["minimap_icons"] = "Minimap Icons"
---Translation missing 
+--[[Translation missing --]]
 L["move_down"] = "Move Selection Down"
---Translation missing 
+--[[Translation missing --]]
 L["move_up"] = "Move Selection Up"
---Translation missing 
+--[[Translation missing --]]
 L["namemissing"] = "<name missing>"
---Translation missing 
+--[[Translation missing --]]
 L["new_group"] = "New Group"
---Translation missing 
+--[[Translation missing --]]
 L["new_page"] = "New Page"
---Translation missing 
+--[[Translation missing --]]
 L["new_quest"] = "New Quest"
---Translation missing 
+--[[Translation missing --]]
 L["newlist"] = "New List"
---Translation missing 
+--[[Translation missing --]]
 L["news_#1"] = "Hi! I'm your assistant and I will show you the most important news about Daily Global Check"
---Translation missing 
+--[[Translation missing --]]
 L["news_#10"] = [=[World map icons from adjacent and continent maps are now hidden by default.
 There is a new option in the Map Options panel to restore them]=]
---Translation missing 
+--[[Translation missing --]]
 L["news_#11"] = "Want to save talent sets and change talents with a click? Check out my new addon, |cff00ff00Talent Set Manager|r!"
---Translation missing 
+--[[Translation missing --]]
 L["news_#2"] = "You can print the current DGC page output in the chatframe by typing '/dgc print'"
---Translation missing 
+--[[Translation missing --]]
 L["news_#3"] = "Daily Global Check can track Instance Lockouts since v1.3.5! The related plugin can be found on Curse"
---Translation missing 
+--[[Translation missing --]]
 L["news_#4"] = "Weekly follower and Herb/Mining node counters are available in the Daily Global Check_Professions plugin"
---Translation missing 
+--[[Translation missing --]]
 L["news_#5"] = "The Rare Mobs plugin, as of v1.3.2, has two specific options available in the Options->Plugin panel"
---Translation missing 
+--[[Translation missing --]]
 L["news_#6"] = "Check out |cff00ff00DailyGlobalCheck_Hallow's End|r if you're interested in tracking Hallow's End dailies and candy buckets"
---Translation missing 
+--[[Translation missing --]]
 L["news_#7"] = "|cff00ffffMay 2016|r - |cffAAAAAAv|cff00ff001.5|r - Daily Global Check got a massive technical overhaul in preparation for Legion. The older plugins are incompatible and they will also need to be updated to the newer version, apologies for the inconvenience :)"
---Translation missing 
+--[[Translation missing --]]
 L["news_#8"] = "Groups can be collapsed by clicking on their title in the main frame, collapsed groups are hidden in mouseovering views"
---Translation missing 
+--[[Translation missing --]]
 L["news_#9"] = "You can hide map icons for chosen pages of any list through its Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext1"] = "|cff11DDFFLeft-Click|cffFFFFFF: |cff00FF00Next"
---Translation missing 
+--[[Translation missing --]]
 L["news_bottomtext2"] = "|cff11DDFFRight-Click|cffFFFFFF: |cff00FF00Hide|r"
---Translation missing 
+--[[Translation missing --]]
 L["nextpage"] = "Next Page"
---Translation missing 
+--[[Translation missing --]]
 L["nolist"] = "No list selected"
---Translation missing 
+--[[Translation missing --]]
 L["notitle"] = "<no title>"
---Translation missing 
+--[[Translation missing --]]
 L["opt_blacklist_remove"] = "Remove a character from the black list"
---Translation missing 
+--[[Translation missing --]]
 L["opt_characters"] = "Characters"
---Translation missing 
+--[[Translation missing --]]
 L["opt_characters_short"] = "(Alt)"
---Translation missing 
+--[[Translation missing --]]
 L["opt_help"] = "Help"
---Translation missing 
+--[[Translation missing --]]
 L["opt_hidecompleted"] = "Hide completed quests"
---Translation missing 
+--[[Translation missing --]]
 L["opt_map_all"] = "Only show world map icons from selected list"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_opt_none"] = "The selected plugin doesn't have any specific options"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_opt_title"] = "Options for the selected plugin:"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_options"] = "Plugin Options"
---Translation missing 
+--[[Translation missing --]]
 L["prevpage"] = "Previous Page"
---Translation missing 
+--[[Translation missing --]]
 L["quest_options"] = "Quest Options"
---Translation missing 
+--[[Translation missing --]]
 L["questdatamissing"] = "<quest data missing>"
---Translation missing 
+--[[Translation missing --]]
 L["questlog_quest_added"] = "|cff11DDFFDaily Global Check|r - Quest %s added to the custom quests pool."
---Translation missing 
+--[[Translation missing --]]
 L["quests_limit"] = "Quests limit reached (%s)"
---Translation missing 
+--[[Translation missing --]]
 L["questwindow"] = "- Select quest position -"
---Translation missing 
+--[[Translation missing --]]
 L["rclicktoopen"] = "Right-click to open the quick list selection menu"
---Translation missing 
+--[[Translation missing --]]
 L["rem"] = "Remove"
---Translation missing 
+--[[Translation missing --]]
 L["remmenuheader"] = "- Select the quest to remove -"
---Translation missing 
+--[[Translation missing --]]
 L["repeatable"] = "Repeatable"
---Translation missing 
+--[[Translation missing --]]
 L["s_tomtomset"] = "|cff11DDFFDaily Global Check|r - Waypoint added to TomTom"
---Translation missing 
+--[[Translation missing --]]
 L["search_by_name"] = "Search by name"
---Translation missing 
+--[[Translation missing --]]
 L["search_icon"] = "Search Icon"
---Translation missing 
+--[[Translation missing --]]
 L["show_adjacent_map_icons"] = "Show on adjacent/continent maps"
---Translation missing 
+--[[Translation missing --]]
 L["shown"] = "Shown"
---Translation missing 
+--[[Translation missing --]]
 L["spell_id"] = "Spell ID"
---Translation missing 
+--[[Translation missing --]]
 L["tools"] = "Tools"
---Translation missing 
+--[[Translation missing --]]
 L["worldmap_icons"] = "Worldmap Icons"
 
 -- Options
---Translation missing 
+--[[Translation missing --]]
 L["account_wide_options"] = "(Account-Wide Options)"
---Translation missing 
+--[[Translation missing --]]
 L["character_specific_options"] = "(Character-specific options)"
---Translation missing 
+--[[Translation missing --]]
 L["map_icons_visibility_list"] = "Map icons visibility for this List"
---Translation missing 
+--[[Translation missing --]]
 L["opt_coords"] = "Show coordinates"
---Translation missing 
+--[[Translation missing --]]
 L["opt_main"] = "Options"
---Translation missing 
+--[[Translation missing --]]
 L["opt_map"] = "Show world map icons"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap"] = "Show minimap button"
---Translation missing 
+--[[Translation missing --]]
 L["opt_minimap_icons"] = "Show minimap icons"
---Translation missing 
+--[[Translation missing --]]
 L["opt_prefix"] = "Show prefix"
---Translation missing 
+--[[Translation missing --]]
 L["opt_questtype"] = "Show quest type"
---Translation missing 
+--[[Translation missing --]]
 L["opt_showquestbtn"] = "Show the 'Add quest to Custom List' button in the Quest Log Frame"
---Translation missing 
+--[[Translation missing --]]
 L["opt_suffix"] = "Show suffix"
---Translation missing 
+--[[Translation missing --]]
 L["opt_zonename"] = "Show zone name"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons"] = "World map icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["plugin_mapicons_minimap"] = "Minimap icons for this Plugin"
---Translation missing 
+--[[Translation missing --]]
 L["size"] = "Size"
---Translation missing 
+--[[Translation missing --]]
 L["toggle_all_pages"] = "Toggle All Pages"
---Translation missing 
+--[[Translation missing --]]
 L["tomtom_button"] = "Set TomTom waypoints"
 
 else -- enUS

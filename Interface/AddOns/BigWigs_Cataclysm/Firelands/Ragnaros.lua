@@ -10,7 +10,7 @@ mod:RegisterEnableMob(52409, 53231) --Ragnaros, Lava Scion
 -- Locals
 --
 
-local intermissionwarned, infernoWarned, fixateWarned = false, false, false
+local fixateWarned = nil
 local blazingHeatTargets = mod:NewTargetList()
 local sons = 8
 local phase = 1
@@ -18,7 +18,6 @@ local lavaWavesCD, engulfingCD, dreadflameCD = 30, 40, 40
 local moltenSeed, lavaWaves, fixate, livingMeteor, wrathOfRagnaros = mod:SpellName(98498), mod:SpellName(98928), mod:SpellName(99849), mod:SpellName(99317), mod:SpellName(98263)
 local dreadflame, cloudburst, worldInFlames = mod:SpellName(100675), mod:SpellName(100714), mod:SpellName(100171)
 local meteorCounter, meteorNumber = 1, {1, 2, 4, 6, 8}
-local intermissionHandle = nil
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -108,11 +107,10 @@ function mod:OnEngage()
 	else
 		engulfingCD = 40
 	end
-	intermissionwarned, infernoWarned, fixateWarned = false, false, false
+	fixateWarned = nil
 	sons = 8
 	phase = 1
 	meteorCounter = 1
-	intermissionHandle = nil
 end
 
 --------------------------------------------------------------------------------
@@ -124,7 +122,7 @@ function mod:Phase4()
 	if self:Heroic() then
 		self:StopBar(livingMeteor)
 		self:StopBar(lavaWaves)
-		self:StopBar(moltenSeed)
+		self:StopBar(98498) -- Molten Seed
 		phase = 4
 		 -- not sure if we want a different option key or different icon
 		self:Message(98953, "Positive", nil, CL["phase"]:format(phase))
@@ -138,7 +136,7 @@ function mod:Phase4()
 end
 
 function mod:Dreadflame()
-	if not UnitDebuff("player", self:SpellName(100757)) then return end -- No Deluge on you = you don't care
+	if not self:UnitDebuff("player", self:SpellName(100757)) then return end -- No Deluge on you = you don't care
 	self:Message(100675, "Important", "Alarm")
 	self:Bar(100675, dreadflameCD)
 	if dreadflameCD > 10 then
@@ -189,8 +187,8 @@ do
 	end
 end
 
-function mod:FixatedCheck(unit)
-	local fixated = UnitDebuff(unit, fixate)
+function mod:FixatedCheck(_, unit)
+	local fixated = self:UnitDebuff(unit, fixate)
 	if fixated and not fixateWarned then
 		fixateWarned = true
 		self:Message(99849, "Personal", "Long", CL["you"]:format(fixate))
@@ -310,8 +308,8 @@ end
 
 do
 	local prev = 0
-	function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, spellName, _, _, spellId)
-		if spellName == moltenSeed then
+	function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, spellId)
+		if spellId == moltenSeed then -- XXX BROKEN
 			local t = GetTime()
 			if t-prev > 5 then
 				prev = t

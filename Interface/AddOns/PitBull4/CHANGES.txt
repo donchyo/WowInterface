@@ -1,42 +1,132 @@
-tag 29de9d67a73e06ba494df8eb9c87d0c5c0807e14 v4.1.10
+lightweight tag 17c808ac1cba6b38487db4b292abfb626ccf8a87 v4.1.12
 Author:	Kyle Buller <bullerk@gmail.com>
-Date:	Mon Apr 23 18:06:20 2018 -0500
+Date:	Tue Jul 17 09:26:37 2018 -0500
 
-Tagging as v4.1.10
-
-commit 2b03d941a409f3e58ba0c081100834e994b13ed6
+commit 17c808ac1cba6b38487db4b292abfb626ccf8a87
 Author: Kyle Buller <bullerk@gmail.com>
-Date:   Mon Apr 23 17:56:16 2018 -0500
+Date:   Tue Jul 17 09:26:37 2018 -0500
 
-    Options: Add a header to the modules page
+    Update README.md
 
-commit dd0e4e5f054d22156e49c1fa73ce52762be926e8
+commit bcda668fa1bb471c9f279aad08eb6404a367a150
 Author: Kyle Buller <bullerk@gmail.com>
-Date:   Mon Apr 23 17:28:48 2018 -0500
+Date:   Tue Jul 17 08:48:59 2018 -0500
 
-    LuaTexts: Handle cast target in 8.0 (unintentionally removed)
+    Remove compat code
 
-commit e12a8c8128d498b75ab79c561f300457df5d386a
+commit 630603d3ff148c05c6bad08a679d309a88613328
 Author: Kyle Buller <bullerk@gmail.com>
-Date:   Mon Apr 23 17:24:04 2018 -0500
+Date:   Tue Jul 17 08:08:16 2018 -0500
 
-    LuaTexts: Fix uninterruptible for channeled spells
+    Update TOC for 8.0
 
-commit 30347196076be2ee330fe9bd626fb0bef51e2f89
+commit 15413b28917740479e848fe8830265bbd615bab0
 Author: Kyle Buller <bullerk@gmail.com>
-Date:   Mon Apr 23 17:12:20 2018 -0500
+Date:   Sun Jul 8 10:52:19 2018 -0500
 
-    HideBlizzard: Disable class power hider
+    LuaTexts: Add Azerite events to custom AP texts
 
-commit 7022c0ef31084eaecfff06e1fae733ea95004b5c
+commit 03f0b18773ee2b2842e89448c72223434d198c54
 Author: Kyle Buller <bullerk@gmail.com>
-Date:   Fri Apr 20 16:08:21 2018 -0500
+Date:   Sat Jul 7 19:58:16 2018 -0500
 
-    Initial 8.0 support
+    Aura: Allow removing simple filter entries
 
-commit 43d6b607cba8630949491094f954a05b378e8b3f
+commit 1106f872ec7edb78d6969da267a0bf4bfad080fd
 Author: Kyle Buller <bullerk@gmail.com>
-Date:   Fri Apr 20 12:28:03 2018 -0500
+Date:   Sat Jul 7 19:21:07 2018 -0500
 
-    LuaTexts: Add Allied races
+    Aura: Add some filters that mimic Blizzard logic
+
+commit 6568bc8382cb473aa77f6825f914a240f5aa20e0
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sat Jul 7 19:13:41 2018 -0500
+
+    Aura: Update on combat state changes
+
+commit 06244822e64b92c0221e16fe8f85b8a9c51b4a3d
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sat Jul 7 19:11:52 2018 -0500
+
+    Aura: Add 'not' meta operators
+
+commit ea6b872d8d6302073913f648ca8494ab4c9dbd25
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Fri Jul 6 01:10:26 2018 -0500
+
+    Aura: Use time mod if set
+
+commit 49c2ace08d3b9e6d5990e25f4aea4e5d4869a08c
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Thu Jul 5 13:47:17 2018 -0500
+
+    Add VoiceIcon module for 8.0
+
+commit 61c3d4485a38d5debfb675db8ebc056c5242c17c
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Wed Jun 20 02:43:31 2018 -0500
+
+    LuaTexts: SeparateDigits improvements
+    
+    Handle negative numbers, default to locale specific separators,
+    and format strings that start with a number (eg Short/VeryShort
+    formatted strings)
+
+commit 9578ba037cc0319093f0b885a0f4273ba1e38822
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Wed Jun 20 02:00:45 2018 -0500
+
+    LuaTexts: Add locale support to Short and VeryShort
+    
+    Format Asian numbers appropriately and special case
+    using "billion" for French and Spanish.
+
+commit 6ca4c0b9c3a23c27d64e12da30f9c989c268ec78
+Author: Mikhail Kazakov <phoenix.main@gmail.com>
+Date:   Sun Jun 3 21:57:59 2018 +0300
+
+    Aura: Add missing UnitAura filters
+
+commit 49c3e3946c6c1c713763f94fa8fb97ddf27b6ea7
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Fri May 25 02:06:38 2018 -0500
+
+    PvPIcon: Prestige icons are gone in 8.0
+
+commit 8351ed50a37a329147ddd8d2e46e25684d565c8d
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sat May 19 18:18:25 2018 -0500
+
+    Update README.md
+
+commit 998ae912f31c0063894320890106e69b3a10c63d
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Tue May 15 21:16:47 2018 -0500
+
+    Add ShowBossFrameWhenUninteractable checks
+    
+    RegisterUnitWatch stuff was updated to check ShowBossFrameWhenUninteractable
+    so previously hidden boss frames should show up in 8.0
+
+commit 32159d30ac6cbac44bb96a96381a58e7a3ad8250
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sun May 6 22:56:35 2018 -0500
+
+    LuaTexts: 8.0 fixes
+    
+    - Fix cast target
+    - Fix "Artifact Power" texts
+    - Fix mob class
+
+commit cffcc91a649a43700359c31451a7d25d5b60328e
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sat Apr 28 20:44:50 2018 -0500
+
+    ArtifactPowerBar: 8.0 support for Azerite XP
+
+commit 52fc0f74eb0487ef3d9104da50afa928384782dd
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Mon Apr 23 18:22:00 2018 -0500
+
+    Add README.md
 

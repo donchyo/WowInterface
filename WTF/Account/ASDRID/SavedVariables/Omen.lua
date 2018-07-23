@@ -41,38 +41,41 @@ Omen3DB = {
 			["PositionH"] = 82.0000076293945,
 		},
 		["Krixidk - Grim Batol"] = {
+			["PositionW"] = 101.555625915527,
+			["NumBars"] = 3,
 			["Shown"] = true,
+			["PositionH"] = 103,
+			["VGrip2"] = 70.973683021286,
+			["PositionY"] = 164.444183349609,
+			["ClickThrough"] = true,
+			["Locked"] = true,
+			["Background"] = {
+				["EdgeSize"] = 1,
+				["BorderColor"] = {
+					["a"] = 0,
+				},
+				["Color"] = {
+					["a"] = 0,
+				},
+				["BarInset"] = 2,
+				["BorderTexture"] = "None",
+				["Texture"] = "None",
+			},
 			["MinimapIcon"] = {
 				["hide"] = true,
 			},
-			["PositionW"] = 125.555572509766,
-			["NumBars"] = 4,
 			["ShowWith"] = {
 				["Alone"] = true,
 				["HideWhenOOC"] = true,
 				["UseShowWith"] = false,
 			},
-			["VGrip1"] = 93.1461998481366,
-			["ClickThrough"] = true,
-			["PositionH"] = 46.2221755981445,
-			["VGrip2"] = 87.7464309334155,
-			["PositionY"] = 184.00016784668,
-			["PositionX"] = 1343.77783203125,
+			["VGrip1"] = 75.3412850224708,
+			["PositionX"] = 1189.11169433594,
+			["Autocollapse"] = true,
 			["Warnings"] = {
 				["DisableWhileTanking"] = false,
-				["Sound"] = false,
 				["Flash"] = false,
-			},
-			["Locked"] = true,
-			["Background"] = {
-				["Color"] = {
-					["a"] = 0,
-				},
-				["BorderColor"] = {
-					["a"] = 0,
-				},
-				["BorderTexture"] = "1 Pixel",
-				["Texture"] = "ElvUI Blank",
+				["Sound"] = false,
 			},
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
@@ -80,13 +83,14 @@ Omen3DB = {
 			["Bar"] = {
 				["FontSize"] = 11,
 				["ShowHeadings"] = false,
-				["AnimateBars"] = false,
 				["ShowValue"] = false,
-				["Font"] = "Expressway",
-				["Height"] = 16,
-				["ShowTPS"] = false,
+				["Spacing"] = 1,
 				["ShowAggroBar"] = false,
 				["Texture"] = "Skullflower",
+				["ShowTPS"] = false,
+				["AnimateBars"] = false,
+				["Font"] = "Expressway",
+				["Height"] = 16,
 			},
 		},
 		["Kroxi - Grim Batol"] = {
@@ -176,12 +180,6 @@ Omen3DB = {
 			["PositionX"] = 0,
 			["PositionH"] = 82.0000305175781,
 		},
-		["Donch - Grim Batol"] = {
-			["Shown"] = true,
-			["PositionY"] = 700.777404785156,
-			["PositionX"] = 2.16646552085876,
-			["PositionH"] = 82.0000305175781,
-		},
 		["Default"] = {
 			["Shown"] = false,
 			["PositionY"] = 521.000061035156,
@@ -192,6 +190,12 @@ Omen3DB = {
 			["Shown"] = true,
 			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
+		},
+		["Donch - Grim Batol"] = {
+			["Shown"] = true,
+			["PositionY"] = 700.777404785156,
+			["PositionX"] = 2.16646552085876,
+			["PositionH"] = 82.0000305175781,
 		},
 		["Lilgaykrixi - Kazzak"] = {
 			["Shown"] = false,
@@ -211,8 +215,8 @@ Omen3DB = {
 			["PositionH"] = 82.0000076293945,
 		},
 		["Krixidk - Valley of Heroes - EU"] = {
-			["PositionY"] = 555.000061035156,
 			["Shown"] = false,
+			["PositionY"] = 555.000061035156,
 			["PositionX"] = 740.833374023438,
 		},
 	},

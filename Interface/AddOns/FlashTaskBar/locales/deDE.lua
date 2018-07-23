@@ -3,8 +3,8 @@ if not L then return end
 
 L["STRING_ADD"] = "hinzufügen"
 L["STRING_ADDKEYWORD"] = "Schlüsselwort hinzufügen"
---Translation missing 
--- L["STRING_BACKGROUND_SOUND"] = ""
+--[[Translation missing --]]
+--[[ L["STRING_BACKGROUND_SOUND"] = ""--]] 
 L["STRING_BAGSFULL"] = "Volle Taschen"
 L["STRING_BAGSFULL_DESC"] = "Wenn du etwas herstellst und du nicht genügend Platz in deinem Rucksack hast."
 L["STRING_BATTLEGROUND"] = "Ende eines Schlachtfelds"
@@ -48,10 +48,10 @@ L["STRING_INVITES"] = "Einladungen"
 L["STRING_INVITES_DESC"] = "Wenn dich jemand in eine Gruppe einlädt."
 L["STRING_ONCOUNTDOWN"] = "Timerstart"
 L["STRING_ONCOUNTDOWN_DESC"] = "Wenn ein Countdown auf deinem Bildschirm angezeigt wird."
---Translation missing 
--- L["STRING_ONPLAYERDEATH"] = ""
---Translation missing 
--- L["STRING_ONPLAYERDEATH_DESC"] = ""
+--[[Translation missing --]]
+--[[ L["STRING_ONPLAYERDEATH"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["STRING_ONPLAYERDEATH_DESC"] = ""--]] 
 L["STRING_ONWHISPER"] = "Bei Flüsternachricht"
 L["STRING_ONWHISPER_DESC"] = "Blinkt, wenn du eine Flüsternachricht empfängst"
 L["STRING_OPENSOUNDPANEL"] = "Soundeinstellungen öffnen"

@@ -1,4 +1,27 @@
 -- Revisions:
+--[[<p>09.02 20.07.2018</p>
+<p><ul>
+<li>Fix garrison mapID, missing 4th mapID for tier1.</li>
+<li>Removed all code for build 7.3.x.</li>
+<li>Check mapID not only on zone change, sometime event for zone chnges is not fired up!</li>
+<li>More events could trigger up item rescan in bags including mail, bank, guild bank and trade. Item rescan now is staggered into 1 seconds delay to make just one call if too many events are triggered at once.</li>
+<li>Artifact realted code removed as it is obsolete now</li>
+</ul><hr></p>
+]]
+--[[<p>09.00 18.07.2018</p>
+<p><ul>
+<li>TOC updated to match Live.</li>
+<li>New milenia new mayor version.</li>
+<li>Remaped mapIDs to new build. Trash white items still are in tables and need more cleanup.</li>
+</ul><hr></p>
+]]
+--[[<p>08.48 15.07.2018</p>
+<p><ul>
+<li>Updated libraries for better compatibility with WoW BFA Beta.</li>
+<li>Option not to place tokes for artifact when artifact have all traits, actually when it has level 75.</li>
+<li>Added Pandaria reputation tokens.</li>
+</ul><hr></p>
+]]
 --[[<p>08.46 21.05.2018</p>
 <p><ul>
 <li>Fix for call to undefined function printt.</li>

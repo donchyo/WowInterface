@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatEditHistory"] = {
-		"/g oklik", -- [1]
-		"/g did you name your mage prtecclolis?", -- [2]
-		"/g haha", -- [3]
-		"/g thats amazing", -- [4]
-		"/g how long do you think it lasts?", -- [5]
-		"/g thats pretty big", -- [6]
-		"/g nah man im gonna sleep", -- [7]
-		"/g i should be sleeping already", -- [8]
-		"/g :(", -- [9]
-		"/g dude", -- [10]
-		"/g i need to get up at 6:30", -- [11]
-		"/g struggle", -- [12]
-		"/g im sorry", -- [13]
-		"/g i wishi could play", -- [14]
-		"/g aljan", -- [15]
-		"/g as the plate transmog master", -- [16]
-		"/g what do i use", -- [17]
-		"/g i need to be a qt now", -- [18]
-		"/g i can hear you laughing", -- [19]
-		"/g from here", -- [20]
+		"/g what are you doing", -- [1]
+		"/g it will depend on the content", -- [2]
+		"/g i would go shoulders for sure then", -- [3]
+		"/s asd", -- [4]
+		"/run ToggleGuildFrame()", -- [5]
+		"/wa", -- [6]
+		"/fstack", -- [7]
+		"/run CloseGuildRoster()", -- [8]
+		"/reload", -- [9]
+		"/afk", -- [10]
+		"/ec", -- [11]
+		"/ert", -- [12]
+		"/g vad ska liras?", -- [13]
+		"/g men jag ska bara äta snabbt", -- [14]
+		"/g )", -- [15]
+		"/p det gör nog ont", -- [16]
+		"/p fick du summon rubbe", -- [17]
+		"/p )", -- [18]
+		"/p eyesdps", -- [19]
+		"/WA", -- [20]
 	},
 }

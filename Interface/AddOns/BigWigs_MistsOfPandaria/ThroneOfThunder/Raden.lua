@@ -86,7 +86,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "VitaSensitivity", 138372)
 	-- General
 	self:Yell("Win", L["kill_trigger"])
-	self:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", "Boss1Succeeded", "boss1")
+	self:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", nil, "boss1")
 	self:RegisterEvent("INSTANCE_ENCOUNTER_ENGAGE_UNIT", "CheckBossStatus")
 	self:RegisterUnitEvent("UNIT_POWER_FREQUENT", "TankAbilityUpdate", "boss1")
 	self:Log("SPELL_AURA_APPLIED", "Anima", 138331) -- on boss to start/stop timers
@@ -131,7 +131,7 @@ do
 				targets[#targets+1] = k
 			end
 		end
-		if UnitDebuff("player", mod:SpellName(138288)) then -- Unstable Anima
+		if mod:UnitDebuff("player", mod:SpellName(138288)) then -- Unstable Anima
 			mod:OpenProximity(138288, 8, targets)
 		end
 	end
@@ -235,7 +235,7 @@ do
 			mod:SecondaryIcon("unstablevitajumptarget", furthest)
 			if UnitIsUnit(furthest, "player") then
 
-				if UnitDebuff("player", mod:SpellName(138372)) then -- Vita Sensitivity
+				if mod:UnitDebuff("player", mod:SpellName(138372)) then -- Vita Sensitivity
 					mod:Flash(138372) -- Vita Sensitivity
 					mod:Message("unstablevitajumptarget", "Personal", "Long", L["sensitivityfurthestbad"], 138372)
 				else
@@ -280,24 +280,24 @@ end
 -- General
 --
 
-function mod:Boss1Succeeded(unitId, spellName, _, _, spellId)
+function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, spellId)
 	if spellId == 139040 then
 		self:CDBar("corruptedballs", 16, L["corruptedballs"], 139071)
 		self:Message("corruptedballs", "Important", "Alarm", L["corruptedballs"], 139071)
 	end
 end
 
-function mod:UNIT_HEALTH_FREQUENT(unitId)
+function mod:UNIT_HEALTH_FREQUENT(event, unitId)
 	local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
 	if hp < 43 then
 		self:Message("stages", "Neutral", "Info", CL["soon"]:format(CL["phase"]:format(2)), false)
-		self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", unitId)
+		self:UnregisterUnitEvent(event, unitId)
 	end
 end
 
-function mod:TankAbilityUpdate(unit)
+function mod:TankAbilityUpdate(_, unit)
 	local power = UnitPower(unit)
-	if UnitBuff(unit, self:SpellName(138331)) then -- Anima - Murderous Strike
+	if self:UnitBuff(unit, self:SpellName(138331)) then -- Anima - Murderous Strike
 		if power == 30 then
 			self:Bar(138333, 25)
 		elseif power == 60 then
@@ -305,7 +305,7 @@ function mod:TankAbilityUpdate(unit)
 		elseif power == 90 then
 			self:Bar(138333, 5)
 		end
-	elseif UnitBuff(unit, self:SpellName(138332)) then -- Vita - Fatal Strike
+	elseif self:UnitBuff(unit, self:SpellName(138332)) then -- Vita - Fatal Strike
 		if power == 20 then
 			self:Bar(138334, 8)
 		elseif power == 40 then

@@ -122,6 +122,7 @@ local function SkinButton(Button)
 			Button:SetHighlightTexture(nil)
 			Button:SetDisabledTexture(nil)
 			if Name == "GarrisonLandingPageMinimapButton" then Button:SetScale(1) end
+			if Name == "GRM_MinimapButton" then GRM_MinimapButtonBorder:Hide() end
 		end
 
 		for i = 1, Button:GetNumRegions() do
@@ -259,6 +260,17 @@ function SMB:SkinMinimapButtons()
 			end
 		end
 	end
+	if _G["OutfitterMinimapButton"] and not _G["OutfitterMinimapButton"].isSkinned then
+		for i = 1, _G["OutfitterMinimapButton"]:GetNumRegions() do
+			local Region = T.select(i, _G["OutfitterMinimapButton"]:GetRegions())
+			if Region:GetObjectType() == 'Texture' then
+				local Texture = Region:GetTexture()
+				if Texture and T.find(Texture, 'Outfitter') then Region:SetTexture(nil) end
+				break
+			end
+		end
+		SkinButton(OutfitterMinimapButton)
+	end
 	if E.private.sle.minimap.mapicons.skingarrison then
 		function GarrisonLandingPageMinimapButton_UpdateIcon(self)
 			local garrisonType = C_Garrison.GetLandingPageGarrisonType();
@@ -339,7 +351,7 @@ function SMB:Update()
 			Frame:ClearAllPoints()
 			Frame:Point('TOPLEFT', SMB.bar, 'TOPLEFT', xOffset, yOffset)
 			Frame:SetSize(E.db.sle.minimap.mapicons.iconsize, E.db.sle.minimap.mapicons.iconsize)
-			Frame:SetFrameStrata('LOW')
+			Frame:SetFrameStrata('MEDIUM')
 			Frame:SetFrameLevel(3)
 			Frame:SetScript('OnDragStart', function() end)
 			Frame:SetScript('OnDragStop', function() end)
@@ -372,7 +384,7 @@ function SMB:Initialize()
 	SMB.bar = CreateFrame('Frame', 'SLE_SquareMinimapButtonBar', E.UIParent)
 	SMB.bar:Hide()
 	SMB.bar:SetTemplate(E.private.sle.minimap.mapicons.template)
-	SMB.bar:SetFrameStrata('LOW')
+	SMB.bar:SetFrameStrata('MEDIUM')
 	SMB.bar:SetFrameLevel(1)
 	SMB.bar:SetClampedToScreen(true)
 	SMB.bar:SetPoint('RIGHT', UIParent, 'RIGHT', -45, 0)

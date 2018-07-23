@@ -147,10 +147,10 @@ TidyPlatesThreatDB = {
 		},
 		["Bawsie - Grim Batol"] = {
 			["specInfo"] = {
-				["id"] = 253,
+				["id"] = 255,
 				["role"] = "DAMAGER",
-				["name"] = "Beast Mastery",
-				["index"] = 1,
+				["name"] = "Survival",
+				["index"] = 3,
 			},
 			["welcome"] = true,
 		},
@@ -292,10 +292,10 @@ TidyPlatesThreatDB = {
 		["Zetiz - Grim Batol"] = {
 			["welcome"] = true,
 			["specInfo"] = {
-				["id"] = 261,
+				["id"] = 259,
 				["role"] = "DAMAGER",
-				["name"] = "Subtlety",
-				["index"] = 3,
+				["name"] = "Assassination",
+				["index"] = 1,
 			},
 		},
 		["Kriximonk - Grim Batol"] = {
@@ -395,6 +395,153 @@ TidyPlatesThreatDB = {
 		["Lóvérocket - Aggra (Português)"] = "Default",
 	},
 	["profiles"] = {
+		["Grim Batol"] = {
+			["nameplate"] = {
+				["toggle"] = {
+					["Totem"] = false,
+				},
+			},
+			["uniqueSettings"] = {
+				[33] = {
+				},
+				[34] = {
+				},
+				[35] = {
+				},
+				[36] = {
+				},
+				[37] = {
+				},
+				[38] = {
+				},
+				[39] = {
+				},
+				[40] = {
+				},
+				[41] = {
+				},
+				[42] = {
+				},
+				[43] = {
+				},
+				[44] = {
+				},
+				[45] = {
+				},
+				[46] = {
+				},
+				[48] = {
+				},
+				[49] = {
+				},
+				[50] = {
+				},
+				["list"] = {
+					"Shadow Fiend", -- [1]
+					"Spirit Wolf", -- [2]
+					"Ebon Gargoyle", -- [3]
+					"Water Elemental", -- [4]
+					"Treant", -- [5]
+					"Viper", -- [6]
+					"Venomous Snake", -- [7]
+					"Army of the Dead Ghoul", -- [8]
+					"Shadowy Apparition", -- [9]
+					"Shambling Horror", -- [10]
+					"Web Wrap", -- [11]
+					"Immortal Guardian", -- [12]
+					"Marked Immortal Guardian", -- [13]
+					"Empowered Adherent", -- [14]
+					"Deformed Fanatic", -- [15]
+					"Reanimated Adherent", -- [16]
+					"Reanimated Fanatic", -- [17]
+					"Bone Spike", -- [18]
+					"Onyxian Whelp", -- [19]
+					"Gas Cloud", -- [20]
+					"Volatile Ooze", -- [21]
+					"Darnavan", -- [22]
+					"Val'kyr Shadowguard", -- [23]
+					"Kinetic Bomb", -- [24]
+					"Lich King", -- [25]
+					"Raging Spirit", -- [26]
+					"Drudge Ghoul", -- [27]
+					"Living Inferno", -- [28]
+					"Living Ember", -- [29]
+					"Fanged Pit Viper", -- [30]
+					"Canal Crab", -- [31]
+					"Muddy Crawfish", -- [32]
+					"", -- [33]
+					"", -- [34]
+					"", -- [35]
+					"", -- [36]
+					"", -- [37]
+					"", -- [38]
+					"", -- [39]
+					"", -- [40]
+					"", -- [41]
+					"", -- [42]
+					"", -- [43]
+					"", -- [44]
+					"", -- [45]
+					"", -- [46]
+					"", -- [47]
+					"", -- [48]
+					"", -- [49]
+					"", -- [50]
+					"", -- [51]
+					"", -- [52]
+					"", -- [53]
+					"", -- [54]
+					"", -- [55]
+					"", -- [56]
+					"", -- [57]
+					"", -- [58]
+					"", -- [59]
+					"", -- [60]
+					"", -- [61]
+					"", -- [62]
+					"", -- [63]
+					"", -- [64]
+					"", -- [65]
+					"", -- [66]
+					"", -- [67]
+					"", -- [68]
+					"", -- [69]
+					"", -- [70]
+					"", -- [71]
+					"", -- [72]
+					"", -- [73]
+					"", -- [74]
+					"", -- [75]
+					"", -- [76]
+					"", -- [77]
+					"", -- [78]
+					"", -- [79]
+					"", -- [80]
+					"", -- [81]
+					"", -- [82]
+					"", -- [83]
+					"", -- [84]
+					"", -- [85]
+					"", -- [86]
+					"", -- [87]
+					"", -- [88]
+					"", -- [89]
+					"", -- [90]
+					"", -- [91]
+					"", -- [92]
+					"", -- [93]
+					"", -- [94]
+					"", -- [95]
+					"", -- [96]
+					"", -- [97]
+					"", -- [98]
+					"", -- [99]
+					"", -- [100]
+				},
+			},
+			["cache"] = {
+			},
+		},
 		["Skullflower"] = {
 			["nameplate"] = {
 				["toggle"] = {
@@ -570,159 +717,19 @@ TidyPlatesThreatDB = {
 				["ON"] = false,
 			},
 		},
-		["DRUID"] = {
-			["uniqueSettings"] = {
-				[33] = {
-				},
-				[34] = {
-				},
-				[35] = {
-				},
-				[36] = {
-				},
-				[37] = {
-				},
-				[38] = {
-				},
-				[39] = {
-				},
-				[40] = {
-				},
-				[41] = {
-				},
-				[42] = {
-				},
-				[43] = {
-				},
-				[44] = {
-				},
-				[45] = {
-				},
-				[46] = {
-				},
-				[48] = {
-				},
-				[49] = {
-				},
-				[50] = {
-				},
-				["list"] = {
-					"Shadow Fiend", -- [1]
-					"Spirit Wolf", -- [2]
-					"Ebon Gargoyle", -- [3]
-					"Water Elemental", -- [4]
-					"Treant", -- [5]
-					"Viper", -- [6]
-					"Venomous Snake", -- [7]
-					"Army of the Dead Ghoul", -- [8]
-					"Shadowy Apparition", -- [9]
-					"Shambling Horror", -- [10]
-					"Web Wrap", -- [11]
-					"Immortal Guardian", -- [12]
-					"Marked Immortal Guardian", -- [13]
-					"Empowered Adherent", -- [14]
-					"Deformed Fanatic", -- [15]
-					"Reanimated Adherent", -- [16]
-					"Reanimated Fanatic", -- [17]
-					"Bone Spike", -- [18]
-					"Onyxian Whelp", -- [19]
-					"Gas Cloud", -- [20]
-					"Volatile Ooze", -- [21]
-					"Darnavan", -- [22]
-					"Val'kyr Shadowguard", -- [23]
-					"Kinetic Bomb", -- [24]
-					"Lich King", -- [25]
-					"Raging Spirit", -- [26]
-					"Drudge Ghoul", -- [27]
-					"Living Inferno", -- [28]
-					"Living Ember", -- [29]
-					"Fanged Pit Viper", -- [30]
-					"Canal Crab", -- [31]
-					"Muddy Crawfish", -- [32]
-					"", -- [33]
-					"", -- [34]
-					"", -- [35]
-					"", -- [36]
-					"", -- [37]
-					"", -- [38]
-					"", -- [39]
-					"", -- [40]
-					"", -- [41]
-					"", -- [42]
-					"", -- [43]
-					"", -- [44]
-					"", -- [45]
-					"", -- [46]
-					"", -- [47]
-					"", -- [48]
-					"", -- [49]
-					"", -- [50]
-					"", -- [51]
-					"", -- [52]
-					"", -- [53]
-					"", -- [54]
-					"", -- [55]
-					"", -- [56]
-					"", -- [57]
-					"", -- [58]
-					"", -- [59]
-					"", -- [60]
-					"", -- [61]
-					"", -- [62]
-					"", -- [63]
-					"", -- [64]
-					"", -- [65]
-					"", -- [66]
-					"", -- [67]
-					"", -- [68]
-					"", -- [69]
-					"", -- [70]
-					"", -- [71]
-					"", -- [72]
-					"", -- [73]
-					"", -- [74]
-					"", -- [75]
-					"", -- [76]
-					"", -- [77]
-					"", -- [78]
-					"", -- [79]
-					"", -- [80]
-					"", -- [81]
-					"", -- [82]
-					"", -- [83]
-					"", -- [84]
-					"", -- [85]
-					"", -- [86]
-					"", -- [87]
-					"", -- [88]
-					"", -- [89]
-					"", -- [90]
-					"", -- [91]
-					"", -- [92]
-					"", -- [93]
-					"", -- [94]
-					"", -- [95]
-					"", -- [96]
-					"", -- [97]
-					"", -- [98]
-					"", -- [99]
-					"", -- [100]
-				},
-			},
-		},
 		["Default"] = {
 			["nameplate"] = {
 				["toggle"] = {
-					["Totem"] = false,
+					["Totem"] = true,
 				},
 			},
 			["blizzFadeA"] = {
 				["toggle"] = false,
 			},
 			["castbarColorShield"] = {
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
 			["uniqueSettings"] = {
 				[33] = {
@@ -888,9 +895,9 @@ TidyPlatesThreatDB = {
 				["mode"] = "allMine",
 			},
 			["castbarColor"] = {
-				["b"] = 0,
-				["g"] = 1,
 				["r"] = 0,
+				["g"] = 1,
+				["b"] = 0,
 			},
 			["settings"] = {
 				["elitehealthborder"] = {
@@ -917,12 +924,7 @@ TidyPlatesThreatDB = {
 				["full"] = true,
 			},
 		},
-		["Grim Batol"] = {
-			["nameplate"] = {
-				["toggle"] = {
-					["Totem"] = false,
-				},
-			},
+		["DRUID"] = {
 			["uniqueSettings"] = {
 				[33] = {
 				},
@@ -1060,8 +1062,6 @@ TidyPlatesThreatDB = {
 					"", -- [99]
 					"", -- [100]
 				},
-			},
-			["cache"] = {
 			},
 		},
 	},

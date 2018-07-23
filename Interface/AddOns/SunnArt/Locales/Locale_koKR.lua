@@ -14,12 +14,12 @@ L["Auto-Stretch textures to the edge of the screen if the artwork is too narrow"
 L["Bottom panel"] = "하단 패널"
 L["Bottom panel overrides"] = "하단 패널 무시"
 L["Bottom panel properties"] = "하단 패널 특성"
---Translation missing 
+--[[Translation missing --]]
 L["Center Spell Alerts"] = "Center Spell Alerts"
---Translation missing 
+--[[Translation missing --]]
 L["Center UI Messages"] = "Center UI Messages"
 L["Change the thickness of this panel (percentage of screen)"] = "이 패널의 굵기를 변경합니다(화면의 백분율)."
---Translation missing 
+--[[Translation missing --]]
 L["Colour of the filter to apply to artwork"] = "Colour of the filter to apply to artwork"
 L["Colour of the Solid Colour theme"] = "단색 테마의 색상"
 L["Custom Artwork"] = "사용자 그림"
@@ -28,23 +28,23 @@ L["Custom theme (unsaved"] = "사용자 테마(저장되지 않은)"
 L["Custom themes, artwork overrides and frame strata"] = "사용자 테마, 그림 무시와 틀 계층"
 L["Customize individual panels"] = "개별적 패널의 사용자화"
 L["Delete theme"] = "테마 삭제"
---Translation missing 
+--[[Translation missing --]]
 L["Disable Glow FX"] = "Disable Glow FX"
---Translation missing 
+--[[Translation missing --]]
 L["Disable worldframe glow and death effects"] = "Disable worldframe glow and death effects"
---Translation missing 
+--[[Translation missing --]]
 L["DX9VPEnabled"] = "Viewport resizing and DX9 mode may cause problems with advanced water and lighting effects with Multisampling enabled."
 L["Enable"] = "사용"
---Translation missing 
+--[[Translation missing --]]
 L["Enable colour filter"] = "Enable colour filter"
 L["Enable or Disable artwork in the panels"] = "패널내 그림 사용 혹은 사용안함"
 L["Enable or Disable the viewport Horizontally"] = "수평 시점을 사용 혹은 사용안 함"
 L["Enable or Disable the viewport Vertically"] = "수직 시점을 사용 혹은 사용안 함"
 L["Enable this panel"] = "이 패널을 사용합니다."
 L["Example"] = "예"
---Translation missing 
+--[[Translation missing --]]
 L["Filter"] = "Filter"
---Translation missing 
+--[[Translation missing --]]
 L["Filter colour"] = "Filter colour"
 L["Flip"] = "뒤집기"
 L["Flip the artwork"] = "그림 뒤집기"
@@ -53,9 +53,9 @@ L["Frame Levels (Strata)"] = "틀 레벨(계층)"
 L["Frame Strata"] = "틀 계층"
 L["Global options"] = "공통 옵션"
 L["Graphical theme"] = "스킨 테마"
---Translation missing 
+--[[Translation missing --]]
 L["Hide Blizzart Art"] = "Hide Blizzart Art"
---Translation missing 
+--[[Translation missing --]]
 L["Hide the gryphons on the Blizzard action bar."] = "Hide the gryphons on the Blizzard action bar."
 L["Horizontal Viewport"] = "수평 시점"
 L["Instructions for use"] = "사용을 위한 설명"
@@ -68,15 +68,15 @@ L["INSTRUCTIONS_P6"] = "폴더 \\Interface\\Addons\\CustomArt\\내에 DragonUI-1
 L["INSTRUCTIONS_P7"] = "이 애드온의 시점 기능을 사용할 의도가 있고 그림의 상단 부분을 반투명 상태로 둘 생각이라면 \"겹치기\" 슬라이더를 사용해 겹친 상태로 일부를 설정하십시요."
 L["INSTRUCTIONS_P8"] = "몇개의 그림은 그림 파일의 우측에 아티스트의 이름이 인쇄되어 있지만 이 부분을 화면의 구석 밖으로 이동시키기 위해 슬라이더를 사용해 그림의 길이를 조절할 수 있습니다.것"
 L["INSTRUCTIONS_P9"] = "이 기능은 BTex, nUI, XArt 및 대다수 다른 패널 유형 애드온을 위한 스킨과 호환됩니다."
---Translation missing 
+--[[Translation missing --]]
 L["Keep spell alerts centered when the viewport is changed"] = "Keep spell alerts centered when the viewport is changed"
---Translation missing 
+--[[Translation missing --]]
 L["Keep UI messages centered when the viewport is changed"] = "Keep UI messages centered when the viewport is changed"
 L["Left panel"] = "좌측 패널"
 L["Left panel overrides"] = "좌측 페널 무시"
 L["Left panel properties"] = "좌측 패널 특성"
 L["Length Adjust"] = "길이 조절"
---Translation missing 
+--[[Translation missing --]]
 L["LiquidDetail"] = "Set 'Liquid Detail' to Fair if you have missing water."
 L["Load custom artwork from external files"] = "별도의 파일에서 사용자 그림을 불러 들입니다."
 L["Loaded"] = "불러들임"
@@ -105,7 +105,7 @@ L["Sections"] = "항목"
 L["Sets the strata (layer depth) of the frames"] = "틀의 계층(겹침 깊이)을 설정합니다."
 L["Side Bars"] = "측면 바"
 L["Solid colour"] = "단색"
---Translation missing 
+--[[Translation missing --]]
 L["SSAO"] = "Set 'SSAO' to Disabled if you have displaced shadows."
 L["Sunn - Viewport Art"] = "Sunn - Viewport Art"
 L["SunnArt"] = "SunnArt"

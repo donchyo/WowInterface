@@ -2,10 +2,10 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Nalak", -928, 814)
+local mod, CL = BigWigs:NewBoss("Nalak", -504, 814)
 if not mod then return end
 mod:RegisterEnableMob(69099)
-mod.otherMenu = -862
+mod.otherMenu = -424
 mod.worldBoss = 69099
 
 --------------------------------------------------------------------------------
@@ -126,7 +126,7 @@ do
 	function mod:StormcloudDamage(args)
 		if self:Me(args.destGUID) then
 			local t = GetTime()
-			if t-prev > 2 and not UnitDebuff("player", args.spellName) then
+			if t-prev > 2 and not self:UnitDebuff("player", args.spellName) then
 				self:Message(136340, "Personal", "Info", CL["underyou"]:format(args.spellName))
 				prev = t
 			end

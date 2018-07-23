@@ -19,7 +19,7 @@ function NOP:ProfileChanged() -- LUA stored variables changed
   self:QBUpdate()
   self:QBSkin()
   wipe(T_CHECK)
-  self:ItemShowNew()
+  self:BAG_UPDATE()
 end
 function NOP:ProfileLoad() -- LUA stored variables load and init
   local defaults = {
@@ -55,6 +55,7 @@ function NOP:ProfileLoad() -- LUA stored variables load and init
       ["HideInCombat"] = false,
       ["ShowReputation"] = true,
       ["SkipExalted"] = false,
+      ["SkipMaxPower"] = true,
     },
   }
   self.AceDB = LibStub("AceDB-3.0"):New("NewOpenablesProfile",defaults,true)
@@ -141,8 +142,8 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 8,
             desc = P.L["Skipping item last until relog."],
             type = "toggle",
-            -- width = "full",    
-            set = function(info,val) NOP.DB["Skip"] = val; if NOP:BlacklistClear() then NOP:ItemShowNew() end; end,
+            -- width = "full",
+            set = function(info,val) NOP.DB["Skip"] = val; if NOP:BlacklistClear() then NOP:BAG_UPDATE() end; end,
             get = function(info) return NOP.DB.Skip end,
           },
           zoneUnlock = {
@@ -150,8 +151,8 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 9,
             desc = P.L["Don't zone restrict openable items"],
             type = "toggle",
-            -- width = "full",    
-            set = function(info,val) NOP.DB["zoneUnlock"] = val; NOP:ItemShowNew(); end,
+            -- width = "full",
+            set = function(info,val) NOP.DB["zoneUnlock"] = val; NOP:BAG_UPDATE(); end,
             get = function(info) return NOP.DB.zoneUnlock end,
           },
           profession = {
@@ -159,8 +160,8 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 10,
             desc = P.L["Place items usable by lockpicking"],
             type = "toggle",
-            -- width = "full",    
-            set = function(info,val) NOP.DB["profession"] = val; NOP:ItemShowNew(); end,
+            -- width = "full",
+            set = function(info,val) NOP.DB["profession"] = val; NOP:BAG_UPDATE(); end,
             get = function(info) return NOP.DB.profession end,
           },
           quest = {
@@ -168,7 +169,7 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 11,
             desc = P.L["Quest items placed on bar"],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val) NOP.DB["quest"] = val; NOP:QBUpdate(); end,
             get = function(info) return NOP.DB.quest end,
           },
@@ -177,8 +178,8 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 12,
             desc = P.L["Make button visible by placing fake item on it"],
             type = "toggle",
-            -- width = "full",    
-            set = function(info,val) NOP.DB["visible"] = val; NOP:ItemShowNew(); NOP:QBUpdate(); end,
+            -- width = "full",
+            set = function(info,val) NOP.DB["visible"] = val; NOP:BAG_UPDATE(); NOP:QBUpdate(); end,
             get = function(info) return NOP.DB.visible end,
           },
           swap = {
@@ -186,7 +187,7 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 13,
             desc = P.L["Swap location of numbers for count and cooldown timer"],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val) NOP.DB["swap"] = val; NOP:ButtonSwap(NOP.BF,NOP.DB.swap) end,
             get = function(info) return NOP.DB.swap end,
           },
@@ -195,7 +196,7 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 14,
             desc = P.L["Auto accept or hand out quests from AutoQuestPopupTracker!"],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val) NOP.DB["autoquest"] = val; end,
             get = function(info) return NOP.DB.autoquest end,
           },
@@ -204,7 +205,7 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 15,
             desc = P.L["Set strata for items button to HIGH, place it over normal windows."],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val) NOP.DB["strata"] = val; NOP.BF:SetFrameStrata(NOP.DB.strata and "HIGH" or "MEDIUM")  end,
             get = function(info) return NOP.DB.strata end,
           },
@@ -213,7 +214,7 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 16,
             desc = P.L["Announce completed work orders, artifact points etc.."],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val) NOP.DB["herald"] = val; end,
             get = function(info) return NOP.DB.herald end,
           },
@@ -222,7 +223,7 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 17,
             desc = P.L["Temporary blacklist item when click produce error message"],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val) NOP.DB["SkipOnError"] = val; end,
             get = function(info) return NOP.DB.SkipOnError end,
           },
@@ -231,7 +232,7 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 18,
             desc = P.L["HIDE_IN_COMBAT_HELP"],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val)
               NOP.DB["HideInCombat"] = val; 
               RegisterStateDriver(self.frameHiderB, "visibility", string.format( "[petbattle] [vehicleui] %shide; show", NOP.DB.HideInCombat and "[combat] " or ""))
@@ -243,16 +244,16 @@ function NOP:OptionsLoad() -- load options for UI config
             order = 19,
             desc = P.L["SHOW_REPUTATION_HELP"],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val) NOP.DB["ShowReputation"] = val; end,
             get = function(info) return NOP.DB.ShowReputation end,
           },
           SkipExalted = {
-            name = P.L["SKIL_EXALTED"],
+            name = P.L["SKIP_EXALTED"],
             order = 20,
-            desc = P.L["SKIL_EXALTED_HELP"],
+            desc = P.L["SKIP_EXALTED_HELP"],
             type = "toggle",
-            -- width = "full",    
+            -- width = "full",
             set = function(info,val) NOP.DB["SkipExalted"] = val; wipe(T_CHECK); end,
             get = function(info) return NOP.DB.SkipExalted end,
           },
@@ -271,7 +272,7 @@ function NOP:OptionsLoad() -- load options for UI config
           GMFx = {
             name = "X",
             type = "range",
-            -- width = "full",    
+            -- width = "full",
             order = 2,
             min = -1000,
             max = 1000,
@@ -283,7 +284,7 @@ function NOP:OptionsLoad() -- load options for UI config
           GMFy = {
             name = "Y",
             type = "range",
-            -- width = "full",    
+            -- width = "full",
             order = 3,
             min = -500,
             max = 500,
@@ -300,7 +301,7 @@ function NOP:OptionsLoad() -- load options for UI config
           iconSize = {
             name = P.L["Width and Height"],
             desc = P.L["Button size in pixels"],
-            width = "full",    
+            width = "full",
             type = "range",
             order = 5,
             min = 16,
@@ -318,7 +319,7 @@ function NOP:OptionsLoad() -- load options for UI config
             name = P.L["Miner's Coffee stacks"],
             desc = P.L["Allow buff up to this number of stacks"],
             type = "range",
-            width = "full",    
+            width = "full",
             order = 7,
             min = 1,
             max = 5,
@@ -338,7 +339,7 @@ function NOP:OptionsLoad() -- load options for UI config
             name = P.L["Sticky"],
             desc = P.L["Anchor to Item button"],
             type = "toggle",
-            width = "full",    
+            width = "full",
             set = function(info,val) NOP.DB["qb_sticky"] = val; NOP:QBUpdate(); end,
             get = function(info) return NOP.DB.qb_sticky end,
           },
@@ -397,7 +398,7 @@ function NOP:OptionsLoad() -- load options for UI config
             name = P.L["Hot-Key"],
             desc = P.L["Key to use for automatic key binding."],
             type = "keybinding",
-            width = "full",    
+            width = "full",
             set = function(info,val) NOP.DB["keyBind"] = val; NOP:QBUpdate(); end,
             get = function(info) return NOP.DB.keyBind end,
           }

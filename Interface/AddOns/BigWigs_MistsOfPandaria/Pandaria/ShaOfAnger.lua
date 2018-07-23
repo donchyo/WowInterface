@@ -3,10 +3,10 @@
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Sha of Anger", -809, 691)
+local mod, CL = BigWigs:NewBoss("Sha of Anger", -379, 691)
 if not mod then return end
 mod:RegisterEnableMob(60491)
-mod.otherMenu = -862
+mod.otherMenu = -424
 mod.worldBoss = 60491
 
 --------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ do
 	local prev = 0
 	local bitterThoughts = mod:SpellName(119610)
 	function mod:BitterThoughts()
-		if UnitDebuff("player", bitterThoughts) then
+		if self:UnitDebuff("player", bitterThoughts) then
 			local t = GetTime()
 			if t-prev > 2 then -- throttle so the timer can catch it sooner
 				prev = t

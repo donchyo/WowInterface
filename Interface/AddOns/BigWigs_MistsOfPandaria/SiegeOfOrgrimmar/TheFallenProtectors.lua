@@ -76,7 +76,7 @@ function mod:GetOptions()
 end
 
 function mod:OnBossEnable()
-	self:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", "BossSucceeded", "boss1", "boss2", "boss3", "boss4", "boss5")
+	self:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", nil, "boss1", "boss2", "boss3", "boss4", "boss5")
 	self:Log("SPELL_CAST_START", "Heal", 143497)
 	-- Sun Tenderheart
 	self:Log("SPELL_AURA_APPLIED", "SunIntermission", 143546) -- Dark Meditation
@@ -133,7 +133,7 @@ end
 do
 	local meditativeField = mod:SpellName(143564)
 	local function warnDarkMeditation(spellId)
-		if not UnitDebuff("player", meditativeField) and UnitAffectingCombat("player") then
+		if not mod:UnitDebuff("player", meditativeField) and UnitAffectingCombat("player") then
 			mod:Message(143564, "Personal", "Info", L.no_meditative_field)
 		end
 	end
@@ -208,7 +208,7 @@ do
 				wipe(marksUsed)
 			end
 			-- no _DOSE for this so gotta get stacks like this:
-			local _, _, _, amount = UnitDebuff(args.destName, args.spellName)
+			local _, amount = self:UnitDebuff(args.destName, args.spellName)
 			if amount and amount == 3 then -- only mark the initial cast
 				markBane(args.destName)
 			end
@@ -243,7 +243,7 @@ end
 
 function mod:LingeringAnguish(args)
 	-- inform the player with the debuff if stacks are getting high, the values might need adjusting (one warning about every 6 sec atm)
-	if UnitDebuff("player", self:SpellName(143840)) and (args.amount > 7 and args.amount % 2 == 0) then -- Mark of Anguish
+	if self:UnitDebuff("player", self:SpellName(143840)) and (args.amount > 7 and args.amount % 2 == 0) then -- Mark of Anguish
 		self:StackMessage(143840, args.destName, args.amount, "Personal", "Info", 144176, 144176)
 	end
 end
@@ -430,7 +430,7 @@ do
 		end
 		self:TargetMessage(143019, name, "Personal", "Info")
 	end
-	function mod:BossSucceeded(unitId, spellName, _, _, spellId)
+	function mod:UNIT_SPELLCAST_SUCCEEDED(_, unitId, _, spellId)
 		if spellId == 143019 then -- Corrupted Brew
 			-- timer is all over the place, need to figure out if something delays it or what
 			self:CDBar(spellId, 11)
@@ -498,7 +498,7 @@ function mod:Heal(args)
 	self:Message(args.spellId, "Positive", "Warning", CL.other:format(self:SpellName(37455), args.sourceName)) -- "Healing"
 end
 
-function mod:UNIT_HEALTH_FREQUENT(unitId)
+function mod:UNIT_HEALTH_FREQUENT(event, unitId)
 	local mobId = self:MobId(UnitGUID(unitId))
 	if mobId == 71475 or mobId == 71479 or mobId == 71480 then
 		local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
@@ -511,7 +511,7 @@ function mod:UNIT_HEALTH_FREQUENT(unitId)
 			self:Message("intermission", "Neutral", "Info", CL.soon:format(("%s (%s)"):format(L.intermission, boss)), false)
 			intermission[mobId] = 2
 			if intermission[71475] == 2 and intermission[71479] == 2 and intermission[71480] == 2 then
-				self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", "boss1", "boss2", "boss3")
+				self:UnregisterUnitEvent(event, "boss1", "boss2", "boss3")
 			end
 		end
 	end

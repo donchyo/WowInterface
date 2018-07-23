@@ -24,6 +24,7 @@ local type = _G.type; assert(type ~= nil,'type')
 local unpack = _G.unpack; assert(unpack ~= nil,'unpack')
 local wipe = _G.wipe; assert(wipe ~= nil,'wipe')
 local GetItemCooldown = _G.GetItemCooldown; assert(GetItemCooldown ~= nil,'GetItemCooldown')
+local UnitAura = _G.UnitAura; assert(UnitAura ~= nil,'UnitAura')
 -- local AddOn
 local ADDON, P = ...
 local NOP = LibStub("AceAddon-3.0"):GetAddon(ADDON)
@@ -36,7 +37,6 @@ local T_OPEN = P.T_OPEN; assert(T_OPEN ~= nil,'T_OPEN')
 local T_RECIPES_FIND = P.T_RECIPES_FIND; assert(T_RECIPES_FIND ~= nil,'T_RECIPES_FIND')
 local T_SPELL_FIND = P.T_SPELL_FIND; assert(T_SPELL_FIND ~= nil,'T_SPELL_FIND')
 local T_USE = P.T_USE; assert(T_USE ~= nil,'T_USE')
-local UnitAura = P.UnitAura; assert(UnitAura ~= nil,'UnitAura')
 local print = P.print; assert(print ~= nil,'print')
 --
 function NOP:ItemIsBlacklisted(itemID) -- is item blacklisted?
@@ -65,7 +65,7 @@ function NOP:ItemGetItem(itemID) -- looking for usable item by itemID returns (c
   if m and not m[self.mapID] then return end -- map lock
   if a then
     for n = 1, 40 do 
-      local name, rank, icon, countAura, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellID  = UnitAura(P.UNITID_PLAYER, n,P.AURA_HELPFUL)
+      local name, icon, countAura, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellID = UnitAura(P.UNITID_PLAYER, n,P.AURA_HELPFUL)
       if spellID and (spellID == a) then -- already have aura from that item
         if (spellID == P.AURA_MINERS_COFFEE) then -- extra handling for this aura
           if (countAura >= NOP.DB.cofeeStacks) then -- it has enough of stacks?
@@ -133,6 +133,7 @@ function NOP:ItemToUse(itemID,count,prio,zone,map,aura) -- store item into table
       T_USE[itemID] = {count, prio, zone, map, aura, GetTime()+offset, GetItemCount(itemID)} -- seed with time
       offset = offset + 0.001
     end
+    pt = T_USE[itemID]
   else -- update item
     if pt[7] and count and (pt[7] < count) and (GetItemCount(itemID) >= count) then pt[6] = GetTime() end -- trigger is rise count above limit
     pt[1] = count
@@ -279,7 +280,7 @@ end
 function NOP:ItemShowRestart() -- new round?
   if self:BlacklistClear() then -- no more items to show, may be some are just temporary blacklisted
     print(P.L["RESTARTED_LOOKUP"])
-    self:ItemShowNew() -- restart process
+    self:BAG_UPDATE() -- restart process
   else 
     self.AceDB.char.itemID = nil
     self:ButtonHide() -- hide button
@@ -337,6 +338,7 @@ function NOP:ItemShowNew() -- check bags for usable item and place it on button
   self.preClick = nil -- from now error won't blacklist item on button
   if self:inCombat() or not (self.spellLoad and self.itemLoad) then self:TimerFire("ItemShowNew", P.TIMER_IDLE); return end
   self:Profile(true)
+  self:ZONE_CHANGED() -- update zone and or wipe table
   self:ItemScan() -- rescan bags
   local toShow, prio, stamp = nil, 0, 0 -- item for use on button
   for itemID, data in pairs(T_USE) do
@@ -365,7 +367,10 @@ function NOP:ItemShowNew() -- check bags for usable item and place it on button
     end
     if a and (not inZone or not self:ItemGetItem(itemID)) then p = nil end -- zone items with buff only shown in proper zone and when no buff with defined stacks is on
     if z and (not inZone) then p = nil end -- rush orders shipyard have special handling
-    if m and not m[self.mapID] then p = nil end -- map lock
+    if m and not m[self.mapID] then
+      -- if itemID == 122594 then print(self.mapID); for k, v in pairs(m) do print(k,v) end; end
+      p = nil
+    end -- map lock
     self:Verbose("ItemShowNew:","itemID",itemID,"Zone",(inZone and "yes" or "no"),"Priority",((type(p) == "number") and p or "disabled"),"Stamp",t)
     if (type(p) == "number") and self:ItemIsUsable(itemID) and (GetItemCount(itemID) >= c) then -- have priority defined so it is candidate for button
       if (prio == 0) then -- 1st usable item set values to compare with
@@ -386,5 +391,5 @@ function NOP:ItemShowNew() -- check bags for usable item and place it on button
 end
 function NOP:ItemTimer() -- slow backpack recheck
   if self:inCombat() or not (self.spellLoad and self.itemLoad) then return end -- still loading or in combat
-  self:ItemShowNew() -- find item to place on button
+  self:BAG_UPDATE() -- find item to place on button
 end

@@ -88,7 +88,7 @@ end
 -- Event Handlers
 --
 
-function mod:FloorRemoved(_, _, _, _, spellId)
+function mod:FloorRemoved(_, _, _, spellId)
 	-- Trigger Phase A when the spark hits the conduit
 	if spellId == 118189 then
 		self:Bar("floor", 6, L["floor"], L.floor_icon)
@@ -124,7 +124,7 @@ do
 	local overcharged = mod:SpellName(117878)
 	function mod:StabilityFlux(args)
 		-- this gives an 1 sec warning before damage
-		local playerOvercharged, _, _, stack = UnitDebuff("player", overcharged)
+		local playerOvercharged, stack = self:UnitDebuff("player", overcharged)
 		local hc = self:Heroic()
 		if playerOvercharged and ((hc and stack > 9) or (not hc and stack > 14)) then
 			self:Flash(117878)
@@ -134,7 +134,7 @@ do
 	-- This will spam, but it is apparantly needed for some people
 	local prev = 0
 	function mod:StabilityFluxDamage(args)
-		local playerOvercharged, _, _, stack = UnitDebuff("player", overcharged)
+		local playerOvercharged, stack = self:UnitDebuff("player", overcharged)
 		local hc = self:Heroic()
 		if playerOvercharged and ((hc and stack > 9) or (not hc and stack > 14)) then
 			local t = GetTime()
@@ -169,16 +169,16 @@ function mod:UnstableEnergyRemoved(args)
 	end
 end
 
-function mod:PhaseWarn(unitId)
+function mod:PhaseWarn(event, unitId)
 	local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
 	if hp < 88 and phaseCount == 0 then -- phase starts at 85
 		self:Message("stages", "Positive", "Info", CL["soon"]:format(CL["phase"]:format(2)), false)
 		phaseCount = 1
-		self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", unitId)
+		self:UnregisterUnitEvent(event, unitId)
 	elseif hp < 53 and phaseCount == 1 then
 		self:Message("stages", "Positive", "Info", CL["soon"]:format(CL["phase"]:format(2)), false)
 		phaseCount = 2
-		self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", unitId)
+		self:UnregisterUnitEvent(event, unitId)
 	end
 end
 

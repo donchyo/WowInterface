@@ -19,6 +19,7 @@ local cackleCounter = 1
 local phase = 1
 local dreadSpawns = {}
 local usedMarks = {}
+local championOnMe = false
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -106,6 +107,7 @@ end
 
 
 function mod:OnEngage(diff)
+	championOnMe = false
 	cackleCounter = 1
 	self:Bar(119414, 33) -- Breath of Fear
 	self:Bar(129147, (diff == 4 or diff == 6) and 25 or 41, CL["count"]:format(self:SpellName(129147), cackleCounter)) -- Ominous Cackle
@@ -239,25 +241,25 @@ end
 
 do
 	local prev = 0
-	local champion = mod:SpellName(120268) -- Champion of the Light
 	function mod:EternalDarkness(args)
-		if UnitBuff("player", champion) then
+		if championOnMe then -- Champion of the Light
 			local t = GetTime()
 			if t-prev > 1 then
+				prev = t
 				self:Message(-6109, "Personal", "Long", L["throw"])
 				self:Flash(-6109)
-				prev = t
 			end
 		end
 	end
 end
 
 function mod:ChampionOfTheLight(args)
-	self:TargetMessage(args.spellId, args.destName, "Positive", "Long", L["ball"])
-	--self:CloseProximity(args.spellId) -- uncomment when mapdata becomes available for last phase
 	if self:Me(args.destGUID) then
+		championOnMe = true
 		self:Flash(args.spellId)
 	end
+	self:TargetMessage(args.spellId, args.destName, "Positive", "Long", L["ball"])
+	self:CloseProximity(args.spellId)
 end
 
 do
@@ -267,8 +269,11 @@ do
 		end
 	end
 	function mod:ChampionOfTheLightRemoved(args)
+		if self:Me(args.destGUID) then
+			championOnMe = false
+		end
 		self:ScheduleTimer(checkForDead, 0.1, args.destName)
-		--self:OpenProximity(args.spellId, 40, args.destName, true) -- does not really work due to some map data issues in last phase -- uncomment when mapdata becomes available
+		self:OpenProximity(args.spellId, 40, args.destName, true)
 	end
 end
 
@@ -277,7 +282,7 @@ function mod:NakedAndAfraid(args)
 	self:Bar(args.spellId, 31)
 end
 
-function mod:Transitions(unit, spellName, _, _, spellId)
+function mod:Transitions(_, _, _, spellId)
 	if spellId == 114936 then -- Heroic Transition
 		phase = 2
 		self:CloseProximity()
@@ -290,7 +295,7 @@ function mod:Transitions(unit, spellName, _, _, spellId)
 		self:Berserk(900, phase == 2)
 		if phase == 2 then
 			-- Phase 2 - Berserk in 15 min!
-			self:Message("berserk", "Attention", nil, CL["phase"]:format(2).." - "..CL["custom_min"]:format(spellName, 15), 26662)
+			self:Message("berserk", "Attention", nil, CL["phase"]:format(2).." - "..CL["custom_min"]:format(self:SpellName(spellId), 15), 26662)
 			-- start Submerge timer using the current power and the new regen rate
 			local left = 1 - (UnitPower("boss1") / UnitPowerMax("boss1")) * 52
 			self:Bar(120455, left, CL["count"]:format(self:SpellName(120455), 1))
@@ -451,13 +456,13 @@ do
 	end
 end
 
-function mod:BlossomPreWarn(unitId)
+function mod:BlossomPreWarn(event, unitId)
 	local mobId = self:MobId(UnitGUID(unitId))
 	if mobId == 61046 or mobId == 61038 or mobId == 61042 then
 		local hp = UnitHealth(unitId) / UnitHealthMax(unitId) * 100
 		if hp < 30 then
 			self:Message(119888, "Attention", nil, CL["soon"]:format(self:SpellName(119888))) -- Death Blossom
-			self:UnregisterUnitEvent("UNIT_HEALTH_FREQUENT", "target", "focus")
+			self:UnregisterUnitEvent(event, "target", "focus")
 		end
 	end
 end
