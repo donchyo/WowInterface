@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatEditHistory"] = {
-		"/cw Xgoddosia-Ravencrest if i can read the logs correctly i didnt have it", -- [1]
-		"/cw Xgoddosia-Ravencrest but i was confused becuase i  had to shieldwall", -- [2]
-		"/cw Xgoddosia-Ravencrest and died anyway :(", -- [3]
-		"/cw Xgoddosia-Ravencrest but i went for low skill specc now", -- [4]
-		"/cw Xgoddosia-Ravencrest hopefully that helps me", -- [5]
-		"/cw Xgoddosia-Ravencrest im not extremly comfortable on brm", -- [6]
-		"/cw Xgoddosia-Ravencrest but its better than dk/paladin", -- [7]
-		"/cw Xgoddosia-Ravencrest for this fight", -- [8]
-		"/cw Kissefet-Ravencrest toxic", -- [9]
-		" jag förstår inte", -- [10]
-		"/wa", -- [11]
-		" känns druid bra för schytes?", -- [12]
-		" saknar att vara op :(", -- [13]
-		" så monks känndes bättre", -- [14]
-		" ?", -- [15]
-		"/cw Ualhi-Ravencrest is healer chat movint to community?", -- [16]
-		"/cw Ualhi-Ravencrest ok", -- [17]
-		"/1 died from both zone and rage", -- [18]
-		"/1 is it bugged or?", -- [19]
-		" du, har du tid ett tag?", -- [20]
+		"/played", -- [1]
+		" jag tror det", -- [2]
+		" inte överdrivet", -- [3]
+		" men lite ibland", -- [4]
+		" för blizzard är dåliga", -- [5]
+		" jo", -- [6]
+		" jag är askass på det mesta", -- [7]
+		" tack", -- [8]
+		" känner att jag borde säga något snällt om dig med", -- [9]
+		" men det är liksom underförstårr att du är sexguden etc.", -- [10]
+		" det var ju utrett i typ ettan", -- [11]
+		" det var fan ett tag sen", -- [12]
+		" sen vi började på jensen", -- [13]
+		"/p he is doing the tvätt", -- [14]
+		"/p he said he would be fast", -- [15]
+		"/wa", -- [16]
+		"/cw Evaliax-Ravencrest Could i have healthstones please?", -- [17]
+		"/cw Oklik-Ravencrest Could i have healthstones please?", -- [18]
+		"/cw Oklik-Ravencrest ty", -- [19]
+		"/cw Evaliax-Ravencrest ty", -- [20]
 	},
 }

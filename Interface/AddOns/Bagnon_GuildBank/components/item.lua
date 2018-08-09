@@ -33,12 +33,12 @@ end
 --[[ Events ]]--
 
 function ItemSlot:OnClick(button)
-	if HandleModifiedItemClick(self:GetItem()) or self:IsCached() then
+	if HandleModifiedItemClick(self.info.link) or self:IsCached() then
 		return
 	end
 
 	if IsModifiedClick('SPLITSTACK') then
-		if not self:IsLocked() then
+		if not self:GetInfo().locked then
 			self.SplitStack = ItemSlot.SplitStack -- have no idea why is necessary
 			OpenStackSplitFrame(select(2, self:GetInfo()), self, 'BOTTOMLEFT', 'TOPLEFT')
 		end
@@ -72,7 +72,7 @@ function ItemSlot:OnReceiveDrag(button)
 end
 
 function ItemSlot:OnEnter()
-	if self:GetItem() then
+	if self.info.id then
  		self:AnchorTooltip()
 		self:UpdateTooltip()
 	end
@@ -106,10 +106,6 @@ function ItemSlot:UpdateCooldown() end
 
 
 --[[ Accessors ]]--
-
-function ItemSlot:GetInfo()
-	return Addon.Cache:GetItemInfo(self:GetPlayer(), 'guild' .. tostring(self:GetBag()), self:GetID())
-end
 
 function ItemSlot:GetSlot()
 	return self:GetBag(), self:GetID()

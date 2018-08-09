@@ -1,54 +1,12 @@
-tag 19160549add378b7c73528ea8e85ad9b9527b2d5 v1.1.5
+tag 3f4ff88c41d3d35872f9ae72476c3a01388845dc v1.1.6
 Author:	Kyle Buller <bullerk@gmail.com>
-Date:	Tue Jul 17 11:01:50 2018 -0500
+Date:	Sun Jul 22 20:38:41 2018 -0500
 
-Tagging as v1.1.5
+Tagging as v1.1.6
 
-commit e5dc20d75fa0a55f258c64b1acd9efdf81261d17
+commit 5bdf990d5bad37a48d742131d25fe6325d38cde1
 Author: Kyle Buller <bullerk@gmail.com>
-Date:   Tue Jul 17 11:01:29 2018 -0500
+Date:   Sun Jul 22 20:16:35 2018 -0500
 
-    Update TOC for 8.0
-
-commit 194a6f3a2338323ff90037e0d0e196f2e062c81b
-Author: Kyle Buller <bullerk@gmail.com>
-Date:   Tue Jul 17 11:01:18 2018 -0500
-
-    Fix config error
-
-commit 56997c5bbcb8e03da64961948397345a52b2e7cf
-Author: Kyle Buller <bullerk@gmail.com>
-Date:   Thu Jan 25 05:07:00 2018 -0600
-
-    Scope options
-
-commit 0aec8f5b3d3e0713f26ffb7f3d687cb4c2df70a1
-Author: Kyle Buller <bullerk@gmail.com>
-Date:   Thu Jan 25 05:06:22 2018 -0600
-
-    Tweak options
-
-commit 2f1e0ca798590886011e33e69d26df70586eac65
-Author: Kyle Buller <bullerk@gmail.com>
-Date:   Thu Jan 25 04:14:57 2018 -0600
-
-    Stop using tooltips for talent descriptions
-
-commit 37a2935bb05e569b854c74e2a094a64d1ac31e70
-Author: Kyle Buller <bullerk@gmail.com>
-Date:   Thu Jan 25 03:43:00 2018 -0600
-
-    Remove old logic for flyins
-
-commit 94918498b74d5b0a350367bb898a0fe430dfba3d
-Author: Kyle Buller <bullerk@gmail.com>
-Date:   Thu Jan 25 03:40:24 2018 -0600
-
-    Upvalue talent option functions
-
-commit 8acfb31d54323d320e87dbb71ae9a536ec53d168
-Author: Kyle Buller <bullerk@gmail.com>
-Date:   Thu Jan 25 03:36:25 2018 -0600
-
-    Fix talent levels for DK and DH
+    Tweak options so we don't get a scroll bar
 

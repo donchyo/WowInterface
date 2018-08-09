@@ -39,10 +39,8 @@ L["ENABLE_LOCK_PROFILE_FRAME"] = "鎖定我的M+紀錄框架"
 L["ENABLE_LOCK_PROFILE_FRAME_DESC"] = "防止M+紀錄框架被拖動。如果將M +紀錄框架設置為自動定位，則不起作用。"
 L["ENABLE_NO_SCORE_COLORS"] = "停用分數著色"
 L["ENABLE_NO_SCORE_COLORS_DESC"] = "停用分數的著色，所有分數將顯示為白色。"
---[[Translation missing --]]
---[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS"] = ""--]] 
---[[Translation missing --]]
---[[ L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS_DESC"] = ""--]] 
+L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS"] = "允許RaiderIO客戶端增強功能"
+L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS_DESC"] = "啟用此功能後，你可以從RaiderIO客戶端下載並查看你要求角色的傳奇+詳細記錄數據。"
 L["ENABLE_SIMPLE_SCORE_COLORS"] = "使用簡易分數著色"
 L["ENABLE_SIMPLE_SCORE_COLORS_DESC"] = "只使用標準物品品質顏色來顯示分數。 這可以使那些具有色弱的人更容易區分評分級別。"
 L["HEALER"] = "治療者"
@@ -70,8 +68,7 @@ L["PLAYER_PROFILE_TITLE"] = "玩家M+紀錄"
 L["PREV_SEASON_SUFFIX"] = "(*)"
 L["PROFILE_BEST_RUNS"] = "地城最高紀錄"
 L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = "時限內+%s的平均分數"
---[[Translation missing --]]
---[[ L["RAIDERIO_CLIENT_CUSTOMIZATION"] = ""--]] 
+L["RAIDERIO_CLIENT_CUSTOMIZATION"] = "RaiderIO客戶端自訂"
 L["RAIDERIO_MP_BASE_SCORE"] = "Raider.IO 傳奇+ 基礎分數"
 L["RAIDERIO_MP_SCORE"] = "Raider.IO 傳奇+分數"
 L["RAIDERIO_MP_SCORE_COLON"] = "Raider.IO 傳奇+分數："

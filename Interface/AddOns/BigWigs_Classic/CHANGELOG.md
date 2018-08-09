@@ -1,7 +1,8 @@
 # BigWigs [Classic]
 
-## [v8.0.1](https://github.com/BigWigsMods/BigWigs_Classic/tree/v8.0.1) (2018-07-19)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_Classic/compare/v8.0.0...v8.0.1)
+## [v8.0.3](https://github.com/BigWigsMods/BigWigs_Classic/tree/v8.0.3) (2018-07-30)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_Classic/compare/v8.0.2...v8.0.3)
 
-- AQ40/Viscidus: Fix combat log event for BfA.  
-- Update modules for new UNIT event arg order.  
+- Add website to toc.  
+- cleanups  
+- AQ20/Buru: Fix locale error, closes #6  

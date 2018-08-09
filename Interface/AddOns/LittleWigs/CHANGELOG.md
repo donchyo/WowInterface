@@ -1,9 +1,8 @@
 # LittleWigs
 
-## [v8.0.4](https://github.com/BigWigsMods/LittleWigs/tree/v8.0.4) (2018-07-19)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.0.3...v8.0.4)
+## [v8.0.7](https://github.com/BigWigsMods/LittleWigs/tree/v8.0.7) (2018-07-28)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.0.6...v8.0.7)
 
-- TBC/SethekkHalls/Syth: Fix UNIT event registration.  
-- Update TBC & WotLK modules for new UNIT event arg order (#309)  
-- Update some old modules for new UNIT event arg order.  
-- Update some old modules for new UNIT event arg order.  
+- VaultOfTheWardens/Tormentorum: Wipe the Flesh to Stone list on engage.  
+- TempleOfSethraliss/Avatar: throttle Taint warnings  
+- Legion/VaultOfTheWardens/Tormentorum: fixed comparison with nil  

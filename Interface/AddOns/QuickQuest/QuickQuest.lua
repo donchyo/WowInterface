@@ -11,12 +11,12 @@ local metatable = {
 	end
 }
 
-local modifier, DISABLED = false
+local modifier = false
 function QuickQuest:Register(event, method, override)
 	local newmethod
 	if(not override) then
 		newmethod = function(...)
-			if(QuickQuestDB.reverse == modifier and not DISABLED) then
+			if(QuickQuestDB.reverse == modifier) then
 				method(...)
 			end
 		end
@@ -190,14 +190,18 @@ QuickQuest:Register('GOSSIP_SHOW', function()
 		end
 
 		if(QuickQuestDB.gossip) then
-			local _, instance = GetInstanceInfo()
-			if(instance == 'raid' and QuickQuestDB.gossipraid > 0) then
+			local _, instanceType, _, _, _, _, _, instanceMapID = GetInstanceInfo()
+			if(QuickQuestDB.withered and instanceType == 'scenario' and instanceMapID == 1626) then
+				return
+			end
+
+			if(instanceType == 'raid' and QuickQuestDB.gossipraid > 0) then
 				if(GetNumGroupMembers() > 1 and QuickQuestDB.gossipraid < 2) then
 					return
 				end
 
 				SelectGossipOption(1)
-			elseif(instance ~= 'raid' and not ignoreGossipNPC[npcID]) then
+			elseif(instanceType ~= 'raid' and not ignoreGossipNPC[npcID]) then
 				SelectGossipOption(1)
 			end
 		end
@@ -351,12 +355,3 @@ QuickQuest:Register('MODIFIER_STATE_CHANGED', function(key, state)
 		modifier = state == 1
 	end
 end, true)
-
-local function CheckScenario()
-	if(QuickQuestDB.withered) then
-		local name = C_Scenario.IsInScenario() and C_Scenario.GetInfo()
-		DISABLED = name == L['The Collapse']
-	end
-end
-
-QuickQuest:Register('PLAYER_ENTERING_WORLD', CheckScenario, true)

@@ -1,0 +1,2 @@
+
+AddOnSkinsDB = nil

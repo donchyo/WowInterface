@@ -2,15 +2,15 @@
 MythicPlusProgressDB = {
 	["settings"] = {
 		["enableTooltip"] = true,
-		["maxTimeSinceKill"] = 600,
 		["inconclusiveDataThreshold"] = 100,
-		["enablePullEstimate"] = true,
+		["maxTimeSinceKill"] = 600,
+		["nameplateTextColor"] = "FFFFFF",
 		["nameplateUpdateRate"] = 200,
 		["dbVersion"] = 6,
 		["version"] = "0.3e",
-		["nameplateTextColor"] = "FFFFFF",
-		["tooltipColor"] = "82E0FF",
 		["enableNameplateText"] = true,
+		["tooltipColor"] = "82E0FF",
+		["enablePullEstimate"] = true,
 		["pullEstimateCombatOnly"] = true,
 		["enabled"] = true,
 	},
@@ -1304,18 +1304,18 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Dreadsoul Poisoner",
 		},
+		[98677] = {
+			["values"] = {
+				305, -- [1]
+			},
+			["name"] = "Rook Spiderling",
+		},
 		[116562] = {
 			["values"] = {
 				1, -- [1]
 				[4] = 0.75,
 			},
 			["name"] = "Flamewaker Centurion",
-		},
-		[98677] = {
-			["values"] = {
-				305, -- [1]
-			},
-			["name"] = "Rook Spiderling",
 		},
 		[98280] = {
 			["values"] = {
@@ -1687,11 +1687,12 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Dreadborne Seer",
 		},
-		[91782] = {
+		[98425] = {
 			["values"] = {
-				[10] = 53,
+				[4] = 149.5,
+				[2] = 4.285932135604050e-015,
 			},
-			["name"] = "Hatecoil Crusher",
+			["name"] = "Unstable Amalgamation",
 		},
 		[120366] = {
 			["values"] = {
@@ -1699,12 +1700,11 @@ MythicPlusProgressDB = {
 			},
 			["name"] = "Hellblaze Temptress",
 		},
-		[98425] = {
+		[91782] = {
 			["values"] = {
-				[4] = 149.5,
-				[2] = 4.285932135604050e-015,
+				[10] = 53,
 			},
-			["name"] = "Unstable Amalgamation",
+			["name"] = "Hatecoil Crusher",
 		},
 		[115831] = {
 			["values"] = {

@@ -370,6 +370,8 @@ local L = WeakAuras.L
 	--[[Translation missing --]]
 	L["General Text Settings"] = "General Text Settings"
 	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
+	--[[Translation missing --]]
 	L["Glow"] = "Glow"
 	--[[Translation missing --]]
 	L["Glow Action"] = "Glow Action"
@@ -413,6 +415,8 @@ local L = WeakAuras.L
 	L["Hybrid Sort Mode"] = "Hybrid Sort Mode"
 	--[[Translation missing --]]
 	L["Icon"] = "Icon"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	--[[Translation missing --]]
 	L["Icon Color"] = "Icon Color"
 	--[[Translation missing --]]
@@ -859,6 +863,8 @@ local L = WeakAuras.L
 	L["Yellow Rune"] = "Yellow Rune"
 	--[[Translation missing --]]
 	L["Yes"] = "Yes"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	--[[Translation missing --]]
 	L["Z Offset"] = "Z Offset"
 	--[[Translation missing --]]

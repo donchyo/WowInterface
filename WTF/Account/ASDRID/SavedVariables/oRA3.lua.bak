@@ -109,11 +109,11 @@ oRA3DB = {
 		},
 		["Alerts"] = {
 			["profiles"] = {
-				["Skullflower"] = {
+				["Krixi"] = {
 					["resurrect"] = true,
 					["tauntPet"] = true,
 				},
-				["Krixi"] = {
+				["Skullflower"] = {
 					["resurrect"] = true,
 					["tauntPet"] = true,
 				},
@@ -129,6 +129,8 @@ oRA3DB = {
 		["Krixidruid - Valley of Heroes - EU"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
 		["Krixiyo - Blackmoore"] = "Default",
+		["Kriximonk - Ravencrest"] = "Default",
+		["Krixidh - Ravencrest"] = "Default",
 		["Krixidk - Ravencrest"] = "Krixi",
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Kroxi - Grim Batol"] = "Krixi",

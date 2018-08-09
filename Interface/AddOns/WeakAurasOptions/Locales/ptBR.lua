@@ -296,6 +296,8 @@ WeakAuras → Opções → Opções ]=]
 	--[[Translation missing --]]
 	L["General Text Settings"] = "General Text Settings"
 	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
+	--[[Translation missing --]]
 	L["Glow"] = "Glow"
 	L["Glow Action"] = "Ação incandescente"
 	--[[Translation missing --]]
@@ -334,6 +336,8 @@ WeakAuras → Opções → Opções ]=]
 	L["Hybrid Sort Mode"] = "Hybrid Sort Mode"
 	--[[Translation missing --]]
 	L["Icon"] = "Icon"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	--[[Translation missing --]]
 	L["Icon Color"] = "Icon Color"
 	L["Icon Info"] = "Informação do ícone"
@@ -709,6 +713,8 @@ WeakAuras → Opções → Opções ]=]
 	L["Yellow Rune"] = "Yellow Rune"
 	--[[Translation missing --]]
 	L["Yes"] = "Yes"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	--[[Translation missing --]]
 	L["Z Offset"] = "Z Offset"
 	--[[Translation missing --]]

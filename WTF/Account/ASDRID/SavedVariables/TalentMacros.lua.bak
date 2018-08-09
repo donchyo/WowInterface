@@ -15,6 +15,8 @@ TalentMacrosDB = {
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Kriximonk - Ravencrest"] = "Kriximonk - Ravencrest",
+		["Krixidh - Ravencrest"] = "Krixidh - Ravencrest",
 		["Krixidk - Ravencrest"] = "Krixi",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
@@ -81,6 +83,10 @@ TalentMacrosDB = {
 			["version"] = 1,
 		},
 		["Krixiyo - Blackmoore"] = {
+		},
+		["Kriximonk - Ravencrest"] = {
+		},
+		["Krixidh - Ravencrest"] = {
 		},
 		["Krixidk - Ravencrest"] = {
 		},

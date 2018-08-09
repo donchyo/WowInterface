@@ -19,7 +19,7 @@ Anchor: RIGHT
 X: -43
 Y: -10
 W: 365
-H: 200
+H: 380
 Frame: DetailsPlayerDetailsWindow
 FrameLevel: 1
 Anchor: RIGHT
@@ -27,10 +27,3 @@ X: -153
 Y: 62
 W: 790
 H: 454
-Frame: WQGFManualActionsFrame
-FrameLevel: 0
-Anchor: RIGHT
-X: 0
-Y: 195
-W: 370
-H: 110

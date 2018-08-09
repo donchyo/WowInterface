@@ -129,34 +129,53 @@ function NOP:ItemLoad() -- load template item tooltips
         local count = self.itemFrame:NumLines()
         if count > 1 then -- I must have at least 2 lines in tooltip
           if type(pattern) == "number" then
-            if count >= pattern then
+            if count >= (pattern + nCB) then
               local i = pattern + nCB
               local tooltipText = TOOLTIP_ITEM .. "TextLeft" .. i
               local text = _G[tooltipText].GetText and _G[tooltipText]:GetText() or "none"
-              if text and (text ~= "none") then T_RECIPES_FIND[itemID] = {c,text,zone,map,faction} end
+              if text and (text ~= "none") and (text ~= "") then T_RECIPES_FIND[itemID] = {c,text,zone,map,faction} else print("ItemLoad:T_RECIPES_FIND pattern empty string!",itemID) end
+            else
+              if VALIDATE then
+                local retry = tItemRetry[itemID] or 0
+                retry = retry + 1
+                tItemRetry[itemID] = retry
+                if retry > 1 then print("ItemLoad:SetItemByID()",itemID,"Have lines:",count,"Looking for:",pattern,"1st line:",_G[TOOLTIP_ITEM .. "TextLeft" .. 1]:GetText(),retry) end
+              end
+              itemRetry = itemID
             end
           elseif type(pattern) == "string" then
             local tooltipText = TOOLTIP_ITEM .. "TextLeft" .. 1
             local heading = _G[tooltipText]:GetText()
             if heading then -- look in 1st line
               local compare = gsub(heading,pattern,"%1")
-              if (compare ~= heading) then
+              if compare and (compare ~= heading) and (compare ~= "") then
                 T_RECIPES_FIND[itemID] = {c,compare,zone,map,faction}
+              else
+                if VALIDATE then
+                  local retry = tItemRetry[itemID] or 0
+                  retry = retry + 1
+                  tItemRetry[itemID] = retry
+                  if retry > 1 then print("ItemLoad:SetItemByID() 1st line",itemID,"Looking for:",patter,"Have:",heading,retry) end
+                end
+                itemRetry = itemID
               end
             end
           end
         else -- in normal case this code can't be reached if yes something is broken
-          self:Verbose("ItemLoad() empty tooltip for", itemID)
-          if VALIDATE then print("ItemLoad() empty tooltip for",itemID,tItemRetry[itemID]) end
+          if VALIDATE then
+            local retry = tItemRetry[itemID] or 0
+            retry = retry + 1
+            tItemRetry[itemID] = retry
+            if retry > 1 then print("ItemLoad() empty tooltip for",itemID,tItemRetry[itemID]) end
+          end
           itemRetry = itemID
           self.itemFrame = self:TooltipCreate(TOOLTIP_ITEM) -- empty tooltip I just throw out old one. Workaround for bad tooltip frame init damn Blizzard!
-          break
         end
       end
     end
   end
   self:Profile(false)
-  if itemRetry then self:TimerFire("ItemLoad", P.TIMER_IDLE) end -- it is even driven, but who trust Blizzard's API?
+  if itemRetry then self:TimerFire("ItemLoad", P.TIMER_IDLE) end -- else if VALIDATE then for k,d in pairs(T_RECIPES_FIND) do print("ItemLoad:",k,"Pattern:",d[2]) end end end
   self.itemLoad = true
 end
 local spellLoaded = {}

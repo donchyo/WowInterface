@@ -38,7 +38,7 @@ do
 
 	local function validate(info, value)
 		if type(value) == "string" then
-			local length = strlenutf8(value)
+			local length = #value
 			if length > 255 then
 				local error = ("Macro is longer than 255 characters! (%d)"):format(length)
 				TalentMacros:Print(error)
@@ -64,7 +64,7 @@ do
 				create = {
 					type = "execute",
 					name = "Create Macros",
-					desc = ("Create several general macros named t1-t%d that will be updated when you change talents. Do not edit these directly!"):format(MAX_TALENT_TIERS),
+					desc = ("Create several general macros named t1-t%d and tpvp1-3 that will be updated when you change talents. Do not edit these directly!"):format(MAX_TALENT_TIERS),
 					func = "CreateMacros",
 					order = 2,
 					width = "full",
@@ -72,30 +72,30 @@ do
 				disablepush = {
 					type = "toggle",
 					name = "Disable placing new abilities on your bars",
-					desc = "The game will try to add new talents to your main bar if there is room, this option will try to stop that.",
+					desc = "The game will try to add new talents to your main bar if there is room, enabling this option will try to stop that.",
 					get = function() return db.disablepush end,
 					set = function(info, value)
 						db.disablepush = value
 						TalentMacros:UpdateFlyin()
 					end,
-					order = 3,
-					width = "full",
+					order = 4,
+					width = "double",
 				},
 				advanced = {
 					type = "toggle",
-					name = "Enable templates for each talent",
+					name = "Enable templates",
 					desc = "Allows you to edit the macro text for each talent.\n\nDisable to make all macros simply:\n   #showtooltip\n   /cast Talent Name",
 					get = function() return db.advanced end,
 					set = function(info, value)
 						db.advanced = value
 						TalentMacros:UpdateMacros()
 					end,
-					order = 4,
-					width = "full",
+					order = 3,
+					-- width = "full",
 				},
 				advanced_text = {
 					type = "description",
-					name = "|cffffd200Delete all of the macro text and hit accept to reset to the default text. The icon will be set to the talent icon for passive talents or if there is no #show or #showtooltip in the macro text.|r",
+					name = "|cffffd200Delete all of the macro text and hit accept to reset to the default text.|r",
 					fontSize = "medium",
 					order = 5,
 					hidden = function() return not db.advanced end,
@@ -111,7 +111,7 @@ do
 				local level = talentLevels[tier]
 				local group = {
 					type = "group",
-					name = ("Tier %d: %d"):format(tier, level),
+					name = ("T%d: %d"):format(tier, level),
 					order = level,
 					args = {},
 				}
@@ -136,6 +136,41 @@ do
 					}
 				end
 			end
+
+			-- PVP Talents
+			local group = {
+				type = "group",
+				name = _G.PVP,
+				order = talentLevels[MAX_TALENT_TIERS] + 1,
+				args = {},
+			}
+			local slotInfo = C_SpecializationInfo.GetPvpTalentSlotInfo(2)
+			local available = slotInfo and slotInfo.availableTalentIDs
+			if available then
+				local selected = {}
+				for index, id in next, C_SpecializationInfo.GetAllSelectedPvpTalentIDs() do
+					selected[id] = index
+				end
+
+				for index, id in ipairs(available) do
+					local _, name, icon, _, _, spellId = GetPvpTalentInfoByID(id)
+					group.args[name] = {
+						type = "input",
+						name = ("|T%s:0:0:0:0:64:64:4:60:4:60|t %s%s"):format(icon, name, selected[id] and CHECK_TEXTURE or ""),
+						desc = GetSpellDescription(spellId),
+						order = selected[id] or (10 + index),
+						get = get,
+						set = set,
+						arg = id,
+						validate = validate,
+						multiline = 5,
+						width = "full",
+					}
+				end
+			else
+				group.disabled = true
+			end
+			options.args.pvp = group
 		end
 
 		return options
@@ -149,6 +184,7 @@ function TalentMacros:OnInitialize()
 
 	LibStub("AceConfigRegistry-3.0"):RegisterOptionsTable("TalentMacros", GetOptions)
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions("TalentMacros", ADDON_NAME)
+
 	local profiles = LibStub("AceDBOptions-3.0"):GetOptionsTable(TalentMacros.db)
 	LibStub("LibDualSpec-1.0"):EnhanceOptions(profiles, self.db)
 	LibStub("AceConfigRegistry-3.0"):RegisterOptionsTable("TalentMacros/Profiles", profiles)
@@ -156,12 +192,14 @@ function TalentMacros:OnInitialize()
 
 	SLASH_TALENTMACROS1 = "/talentmacros"
 	SLASH_TALENTMACROS2 = "/talentmacro"
+	SLASH_TALENTMACROS2 = "/tmacro"
 	SlashCmdList["TALENTMACROS"] = function()
 		InterfaceOptionsFrame_OpenToCategory(ADDON_NAME)
 		InterfaceOptionsFrame_OpenToCategory(ADDON_NAME)
 	end
 
-	self:RegisterEvent("PLAYER_TALENT_UPDATE", "UpdateMacros")
+	self:RegisterEvent("PLAYER_TALENT_UPDATE", "UpdateTalentMacros")
+	self:RegisterEvent("PLAYER_PVP_TALENT_UPDATE", "UpdatePVPTalentMacros")
 	self:RegisterEvent("PLAYER_LOGOUT")
 	self:UpdateFlyin()
 end
@@ -183,6 +221,9 @@ function TalentMacros:PLAYER_LOGOUT()
 	for tier = 1, MAX_TALENT_TIERS do
 		EditMacro(("t%d"):format(tier), nil, "INV_Misc_QuestionMark", "")
 	end
+	for slot = 1, 3 do
+		EditMacro(("tpvp%d"):format(slot), nil, "INV_Misc_QuestionMark", "")
+	end
 end
 
 function TalentMacros:PLAYER_REGEN_ENABLED()
@@ -191,12 +232,17 @@ function TalentMacros:PLAYER_REGEN_ENABLED()
 end
 
 function TalentMacros:UpdateMacros()
+	self:UpdateTalentMacros()
+	self:UpdatePVPTalentMacros()
+end
+
+function TalentMacros:UpdateTalentMacros()
 	if InCombatLockdown() then
 		self:RegisterEvent("PLAYER_REGEN_ENABLED")
 		return
 	end
 
-	local spec = GetActiveSpecGroup()
+	local spec = GetActiveSpecGroup(false)
 	for tier = 1, MAX_TALENT_TIERS do
 		local available, selected = GetTalentTierInfo(tier, spec)
 		if available and selected ~= 0 then
@@ -211,6 +257,28 @@ function TalentMacros:UpdateMacros()
 			EditMacro(("t%d"):format(tier), nil, icon, body)
 		else
 			EditMacro(("t%d"):format(tier), nil, "INV_Misc_QuestionMark", "")
+		end
+	end
+	LibStub("AceConfigRegistry-3.0"):NotifyChange(ADDON_NAME)
+end
+
+function TalentMacros:UpdatePVPTalentMacros()
+	if InCombatLockdown() then
+		self:RegisterEvent("PLAYER_REGEN_ENABLED")
+		return
+	end
+
+	for slot = 2, 4 do
+		local slotInfo = C_SpecializationInfo.GetPvpTalentSlotInfo(slot)
+		local selectedTalentID = slotInfo and slotInfo.selectedTalentID
+		if selectedTalentID then
+			local id, name, texture = GetPvpTalentInfoByID(selectedTalentID)
+			local body = db.advanced and db.macrotext[id] or DEFAULT_MACRO:gsub("%%n", name or "")
+			-- XXX Can't check for passives by spell name because the spells don't
+			-- exist until they activate and I can't be arsed scan the tooltip
+			EditMacro(("tpvp%d"):format(slot-1), nil, texture, body)
+		else
+			EditMacro(("tpvp%d"):format(slot-1), nil, "INV_Misc_QuestionMark", "")
 		end
 	end
 	LibStub("AceConfigRegistry-3.0"):NotifyChange(ADDON_NAME)
@@ -234,9 +302,20 @@ function TalentMacros:CreateMacros()
 			count = count + 1
 		end
 	end
+	for slot = 1, 3 do
+		local name = ("tpvp%d"):format(slot)
+		if GetMacroIndexByName(name) == 0 then
+			local success = pcall(CreateMacro, name, "INV_Misc_QuestionMark", "")
+			if not success then
+				errors = errors + 1
+			end
+		else
+			count = count + 1
+		end
+	end
 	self:UpdateMacros()
 
-	if count == MAX_TALENT_TIERS then
+	if count == MAX_TALENT_TIERS + 3 then
 		self:Print("Macros already exist!")
 	elseif errors == 0 then
 		self:Print("Macros created!")

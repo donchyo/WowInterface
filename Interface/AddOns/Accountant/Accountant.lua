@@ -1,24 +1,21 @@
---[[
- Accountant
-    Originally by Sabaki (sabaki@gmail.com)
-    Redone by urnati - 3.0
-	Mists of Pandaria updates by Thorismud 4.0
-	Warlords of Draenor Updates By Thorismud 6.0
-  
-	Tracks your incoming / outgoing cash
+-- ------------------------------------------------------------------------------ --
+--                                 Accountant                                     --
+--                http://www.curse.com/addons/wow/accountant                      --
+--                                                                                --
+--    All Rights Reserved* - Detailed license information included with addon.    --
+-- ------------------------------------------------------------------------------ --
 
-	Thanks To:
-	Jay for testing
-	Atlas by Razark for the minimap icon code that was lifted
-]]
-local AceConfigDialog = LibStub("AceConfigDialog-3.0")
-local AceConfig = LibStub("AceConfig-3.0")
-
--- Create a short cut
 local SC = Accountant
 
+SC = LibStub("AceAddon-3.0"):NewAddon(SC, "Accountant", "AceConsole-3.0")
+local L = LibStub("AceLocale-3.0"):GetLocale("Accountant")
+local AceConfigDialog = LibStub("AceConfigDialog-3.0")
+local AceConfig = LibStub("AceConfig-3.0")
+local icon = LibStub("LibDBIcon-1.0")
+
 SC.data = nil;
-SC.MaxRows = 15 -- Per the rows implemented in the XML
+SC.MaxRows = 15
+SC.AllCharsMaxRows = 50 -- Per the rows implemented in the XML
 SC.mode = "";
 SC.refund_mode = "";
 SC.sender = "";
@@ -31,6 +28,7 @@ SC.show_toons = ""
 SC.could_repair = false;
 SC.can_repair = "";
 SC.repair_cost, SC.repair_money = 0,0;
+
 local Accountant_RepairAllItems_old;
 local Accountant_CursorHasItem_old;
 local tmpstr = "";
@@ -55,7 +53,7 @@ end
 local function MatchRealm(player, realm)
 	local r = string.gsub (realm, "[%c%(%)%[%]%$%^]", "~")
 	local p = string.gsub (player, "[%c%(%)%[%]%$%^]", "~")
---[[	
+--[[
 SC.Print("MatchRealm: "
 	.."p: '"..p.."'"
 	.."r: '"..r.."'"
@@ -103,7 +101,7 @@ function SC.UtilToonDropDownList (realm)
 --DEFAULT_CHAT_FRAME:AddMessage("Acc ToonDropDownList- "..(strtmp or "?").." .. " ..(player or "?"))
 	end
 	table.sort(toon_table)
-	
+
 	SC.AllToons = toon_table
 	return toon_table
 end
@@ -117,7 +115,7 @@ function SC.ToonDelete (toon_value)
 	for i = 1, #SC.AllToons do
 		if i == toon_value then
 			if SC.AllToons[i] == SC.player then
-				DEFAULT_CHAT_FRAME:AddMessage(ACCLOC_TITLE..": "..ACCLOC_TOON_DELETE_SELF)
+				DEFAULT_CHAT_FRAME:AddMessage(L["Accountant: You can not remove yourself!"])
 			else
 				pop_str = SC.AllToons[i]
 				-- delete the data
@@ -126,8 +124,8 @@ function SC.ToonDelete (toon_value)
 				table.remove(SC.AllToons, i)
 				-- just in case, rebuild Accountant
 				SC.OnLoad()
-				DEFAULT_CHAT_FRAME:AddMessage(ACCLOC_TITLE..": "..ACCLOC_TOON_DELETE_DONE
-					..(pop_str or "?").." "..ACCLOC_DONE)
+				DEFAULT_CHAT_FRAME:AddMessage(L["Accountant: Remove of "]
+					..(pop_str or "?").." "..L["complete"])
 			end
 		end
 	end
@@ -147,22 +145,22 @@ function SC.ToonMerge (from, to)
 -- Merge the data of the selected toons
 --
 	if from == to then
-		DEFAULT_CHAT_FRAME:AddMessage(ACCLOC_TITLE..": "..ACCLOC_TOON_MERGE_ERR1)
+		DEFAULT_CHAT_FRAME:AddMessage(L["Accountant: Can not merge a character to itself!!"])
 	else
 		for key,value in next,SC.data do
 			for modekey,mode in next,SC.log_modes do
 				if Accountant_SaveData[to]["data"][key][mode] == nil then
 					Accountant_SaveData[to]["data"][key][mode] = {In=0,Out=0};
 				end
-				Accountant_SaveData[to]["data"][key][mode].In  = 
+				Accountant_SaveData[to]["data"][key][mode].In  =
 					(tonumber(Accountant_SaveData[to]["data"][key][mode].In) or 0)
 				+	(tonumber(Accountant_SaveData[from]["data"][key][mode].In) or 0)
-				Accountant_SaveData[to]["data"][key][mode].Out = 
+				Accountant_SaveData[to]["data"][key][mode].Out =
 					(tonumber(Accountant_SaveData[to]["data"][key][mode].Out) or 0)
 				+	(tonumber(Accountant_SaveData[from]["data"][key][mode].Out) or 0)
 			end
 		end
-		Accountant_SaveData[to]["options"]["totalcash"]  = 
+		Accountant_SaveData[to]["options"]["totalcash"]  =
 			(tonumber(Accountant_SaveData[to]["options"]["totalcash"]) or 0)
 		+	(tonumber(Accountant_SaveData[from]["options"]["totalcash"]) or 0)
 
@@ -170,8 +168,8 @@ function SC.ToonMerge (from, to)
 			-- Reload the data for this toon
 			SC.LoadSavedData()
 		end
-		DEFAULT_CHAT_FRAME:AddMessage(ACCLOC_TITLE..": "..ACCLOC_TOON_MERGE.." of "
-			..(from or "?").." "..ACCLOC_TO.." "..(to or "?").." "..ACCLOC_DONE)
+		DEFAULT_CHAT_FRAME:AddMessage(L["Accountant: Merge Character of "]
+			..(from or "?").." "..L["to"].." "..(to or "?").." "..L["complete"])
 	end
 end
 
@@ -179,18 +177,6 @@ end
 
 	Declare the minimap button routines for Accountant
 ]]
-
-function SC.Button_OnClick()
---
--- Toggle the Accountant window on click of the mini-map button
---
-	if AccountantFrame:IsVisible() then
-		HideUIPanel(AccountantFrame);
-	else
-		ShowUIPanel(AccountantFrame);
-	end
-	
-end
 
 function SC.Button_makename()
 --
@@ -201,50 +187,24 @@ function SC.Button_makename()
 	return acc_name;
 end
 
-function SC.Button_Init()
---
--- On start, show or hide the mini-map button based on the user's selection
--- for that character.
---
-	if(Accountant_SaveData[SC.Button_makename()]["options"].showbutton) then
-		AccountantButtonFrame:Show();
-	else
-		AccountantButtonFrame:Hide();
-	end
-end
-
 function SC.Button_Toggle()
---
--- Honor the user's selection to show or hide the mini-map button
--- for that character.
---
-	if(AccountantButtonFrame:IsVisible()) then
-		AccountantButtonFrame:Hide();
+	SC.db.profile.minimap.hide = not SC.db.profile.minimap.hide
+	if SC.db.profile.minimap.hide then
+		icon:Hide("Accountant")
 		Accountant_SaveData[SC.Button_makename()]["options"].showbutton = false;
 	else
-		AccountantButtonFrame:Show();
+		icon:Show("Accountant")
 		Accountant_SaveData[SC.Button_makename()]["options"].showbutton = true;
 	end
 end
 
-function SC.Button_UpdatePosition()
---
--- Place the mini-map button where the user selects for that character.
---
-	AccountantButtonFrame:SetPoint(
-		"TOPLEFT",
-		"Minimap",
-		"TOPLEFT",
-		50 - (75 * cos(Accountant_SaveData[SC.Button_makename()]["options"].buttonpos)),
-		(75 * sin(Accountant_SaveData[SC.Button_makename()]["options"].buttonpos)) - 50
---[[
- 55 - (75 * cos(Accountant_SaveData[SC.Button_makename()]["options"].buttonpos)),
-(75 * sin(Accountant_SaveData[SC.Button_makename()]["options"].buttonpos)) - 55
---]]
-	);
+function SC.Button_ToggleTotal()
+	if Accountant_SaveData[SC.Button_makename()]["options"].showbuttontotal then
+		Accountant_SaveData[SC.Button_makename()]["options"].showbuttontotal = false;
+	else
+		Accountant_SaveData[SC.Button_makename()]["options"].showbuttontotal = true;
+	end
 end
-
-
 --[[ AccountantButton.lua end
 ]]
 
@@ -253,20 +213,20 @@ end
 local acc_main_options = {
 	name = "Accountant",
 	type = "group",
-	args = 
+	args =
 	{
-		confgendesc = 
+		confgendesc =
 		{
 			order = 1,
 			type = "description",
-			name = ACCLOC_CONF_DESC.."\n\n",
+			name = L["Accountant allows you to track where your gold is going."],
 			cmdHidden = true
 		},
-		nulloption1 = 
+		nulloption1 =
 		{
 			order = 2,
 			type = "description",
-			name = "   ",
+			name = "",
 			cmdHidden = true
 		},
 		confshowtotal =
@@ -275,21 +235,25 @@ local acc_main_options = {
 			--ACCLOC_TOG_MINIMAP,
 			desc = "If checked the total will be shown on the LDB button",
 				--ACCLOC_TOG_MINIMAP_DESC,
-			order = 3, 
+			order = 3,
 			type = "toggle", width = "full",
 			get = function() return Accountant_SaveData[Accountant.player]["options"].showtotal end,
 			set = function() SC.ShowTotalLDB() end,
 		},
-		nulloption2 = 
+		confloginmessage =
 		{
-			order = 3,
-			type = "description",
-			name = "   ",
-			cmdHidden = true
-		},
-		nulloption3 = 
-		{
+			name = "Hide login message",
+			--ACCLOC_TOG_MINIMAP,
+			desc = "If checked the login message wont show",
+				--ACCLOC_TOG_MINIMAP_DESC,
 			order = 4,
+			type = "toggle", width = "full",
+			get = function() return Accountant_SaveData[Accountant.player]["options"].hidelogin end,
+			set = function() SC.hidelogin() end,
+		},
+		nulloption3 =
+		{
+			order = 5,
 			type = "description",
 			name = "   ",
 			cmdHidden = true
@@ -304,15 +268,22 @@ local acc_main_options = {
 				confversiondesc =
 				{
 				order = 1,
-				type = "description",			
-				name = SC.GREEN_COLOR.."Version"..": "..SC.GOLD_COLOR..SC.Version, 
+				type = "description",
+				name = SC.GREEN_COLOR.."Version"..": "..SC.GOLD_COLOR..SC.Version,
 				cmdHidden = true
 				},
 				confauthordesc =
 				{
 				order = 2,
 				type = "description",
-				name = SC.GREEN_COLOR.."Version"..": "..SC.GOLD_COLOR..SC.AUTHOR, 
+				name = SC.GREEN_COLOR.."Author"..": "..SC.GOLD_COLOR..SC.AUTHOR,
+				cmdHidden = true
+				},
+				concreditdesc =
+				{
+				order = 3,
+				type = "description",
+				name = SC.GREEN_COLOR.."Credits"..": "..SC.GOLD_COLOR.."Urnati",
 				cmdHidden = true
 				},
 			},
@@ -321,13 +292,13 @@ local acc_main_options = {
 }
 
 local acc_options_minimap = {
-name = "Accountant_options_minimap",
+name = L["Minimap Options"],
 	type = "group",
 	args = {
 	confdesc = {
 			order = 1,
 			type = "description",
-			name = ACCLOC_CONF_GEN_DESC.."\n",
+			name = L["Configure minimap button"],
 			cmdHidden = true
 		},
 		nulloption3 = {
@@ -336,49 +307,48 @@ name = "Accountant_options_minimap",
 		name = "   ",
 		cmdHidden = true
 		},
---[[
-		toggleminimapbuttonheader = {
-		order = 3,
-		type = "header",
-		name = ACCLOC_MINIMAP_BUT,
-		},
---]]
-		toggleminimapbutton =
-		{
-			name = ACCLOC_TOG_MINIMAP,
-			desc = ACCLOC_TOG_MINIMAP_DESC,
+		toggleminimapbutton = {
+			name = L["Display minimap button"],
+			desc = L["Display the minimap button"],
 			order = 4, type = "toggle", width = "full",
 			get = function() return Accountant_SaveData[Accountant.player]["options"].showbutton end,
-			set = function() SC.Button_Toggle() end,
+			set = function() SC:Button_Toggle() end,
 		},
-		minimapbuttonpos = {
-			name = ACCLOC_POS_MINIMAP,
-			desc = ACCLOC_POS_MINIMAP_DESC,
-			order = 5, type = "range", width = "full",
-			min = 0, max = 360, step = 1,
-			get = function() return Accountant_SaveData[Accountant.player]["options"].buttonpos end,
-			set = function(_, a)
-				Accountant_SaveData[Accountant.player]["options"].buttonpos = a
-				Accountant.Button_UpdatePosition()
-				end,
-						},
-		nulloption4 = {
-		order = 6,
-		type = "description",
-		name = "   ",
-		cmdHidden = true
-		},		
+		toggleminimapbuttonSelect = {
+			name = L["Select minimap mode"],
+			desc = L["Select what mode you want the minimap to show (NOTE: Only works if the botton below is checked)"],
+			order = 5, type = "select",
+			cmdHidden = true,
+			get = function() return Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect end,
+			set = function(_,v)
+				Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect = v
+				for player in next,Accountant_SaveData do
+					Accountant_SaveData[player]["options"].showbuttontotalselect = v;
+					SC:LDB_Update()
+				end
+			end,
+			values = function()
+				return {L["Session"],L["Day"],L["Week"],L["Total"]}
+			end,
+		},
+		toggleminimapbuttonmoney = {
+			name = L["Display money on minimap button"],
+			desc = L["Displays the above selected net profit/loss on the minimap button"],
+	    order = 6, type = "toggle", width = "full",
+			get = function() return Accountant_SaveData[Accountant.player]["options"].showbuttontotal end,
+			set = function() SC:Button_ToggleTotal() end,
+		},
 	}
 }
 
 local acc_options_start = {
-name = "Accountant_options_start",
+name = L["Start of Week"],
 	type = "group",
 	args = {
 	confdesc = {
 			order = 1,
 			type = "description",
-			name = ACCLOC_STARTWEEK_DESC.."\n",
+			name = L["Change the day of the week that accountant uses. This resets the start of week totals."],
 			cmdHidden = true
 		},
 		nulloption3 = {
@@ -396,21 +366,20 @@ name = "Accountant_options_start",
 --]]
 		weekstartselect =
 		{
-			name = ACCLOC_WEEKDAY,
-			desc = ACCLOC_WEEKDAY_DESC,
+			name = L["Week Day"],
+			desc = L["Select the day of the week."],
 			order = 4, type = "select",
 			get = function() return Accountant_SaveData[Accountant.player]["options"].weekstart end,
-			set = function(_,v) 
+			set = function(_,v)
 				Accountant_SaveData[Accountant.player]["options"].weekstart = v
-				DEFAULT_CHAT_FRAME:AddMessage(ACCLOC_TITLE..": "
-					..ACCLOC_WEEKDAY_DONE.." "..(v or "?").." "..ACCLOC_DONE)
+				DEFAULT_CHAT_FRAME:AddMessage(L["Accountant: Change to week day "]..(v or "?").." "..L["complete"])
 				for player in next,Accountant_SaveData do
 					Accountant_SaveData[player]["options"].weekstart = v;
 				end
 				end,
 			values = function()
-				return {ACCLOC_WD_SUN,ACCLOC_WD_MON,ACCLOC_WD_TUE,
-					ACCLOC_WD_WED,ACCLOC_WD_THU,ACCLOC_WD_FRI,ACCLOC_WD_SAT}
+				return {L["Sunday"],L["Monday"],L["Tuesday"],
+					L["Wednesday"],L["Thursday"],L["Friday"],L["Saturday"]}
 			end,
 		},
 		nulloption4 = {
@@ -418,18 +387,18 @@ name = "Accountant_options_start",
 		type = "description",
 		name = "   ",
 		cmdHidden = true
-		},		
+		},
 	}
 }
 
 local acc_options_reset = {
-name = "Accountant_options_reset",
+name = L["Clear Data"],
 	type = "group",
 	args = {
 	confdesc = {
 			order = 1,
 			type = "description",
-			name = ACCLOC_RESET_DESC.."\n",
+			name = L["Clear the Accountant data for all characters on this realm only: "],
 			cmdHidden = true
 		},
 		nulloption3 = {
@@ -440,11 +409,11 @@ name = "Accountant_options_reset",
 		},
 		reset = {
 			order = 5, type = "execute",
-			name = ACCLOC_RESET,
-			desc = ACCLOC_RESET_DESC_SHORT,
+			name = L["Clear Data"],
+			desc = L["Clear data for "],
 			func = function()
 				SC.ClearData ();
-				DEFAULT_CHAT_FRAME:AddMessage(ACCLOC_TITLE..": "..ACCLOC_RESET.." "..ACCLOC_DONE)
+				DEFAULT_CHAT_FRAME:AddMessage(L["Accountant: clear data complete"])
 			end,
 		},
 		nulloption4 = {
@@ -452,7 +421,7 @@ name = "Accountant_options_reset",
 		type = "description",
 		name = "   ",
 		cmdHidden = true
-		},		
+		},
 	}
 }
 
@@ -463,33 +432,33 @@ local merge_toon_from_name = ""
 local merge_toon_to = ""
 local merge_toon_to_name = ""
 local acc_options_toons_remove = {
-name = "Accountant_Toon_Remove",
+name = ACCLOC_REMOVE_OPT,
 	type = "group",
 	args = {
 		confdesc = {
 			order = 1,
 			type = "description",
-			name = ACCLOC_TOON_MGMT_2,
+			name = L["It is recommended that you save your accountant data before proceeding, just in case."],
 			cmdHidden = true
 		},
 		-- delete / remove
 		setskinheader = {
 		order = 10,
 		type = "header",
-		name = ACCLOC_TOON_DELETE,
+		name = L["Remove"],
 		},
 		deltoonlist = {
 			order = 11, type = "select", width = "full",
-			name = ACCLOC_TOON,
-			desc = ACCLOC_TOON_REMOVE_DESC,
+			name = L["Character"],
+			desc = L["Remove Accountant data for the selected character"],
 			get = function() return remove_toon; end,
 			set = function(_,v) remove_toon = v; end,
 			values = function() return SC.AllToons end,
 		},
 		deltoon = {
 			order = 12, type = "execute",
-			name = ACCLOC_TOON_DELETE,
-			desc = ACCLOC_TOON_DELETE_DESC,
+			name = L["Remove"],
+			desc = L["Remove Accountant data for the selected character"],
 			func = function()
 				SC.ToonDelete (remove_toon);
 				remove_toon = "";
@@ -498,7 +467,7 @@ name = "Accountant_Toon_Remove",
 		delnotes = {
 		order = 13,
 		type = "description",
-		name = ACCLOC_TOON_REMOVE_NOTES,
+		name = L["This will remove the Accountant data for the selected character. You must exit the game or log into another character to save the changes."],
 		cmdHidden = true
 		},
 --[[
@@ -508,7 +477,7 @@ name = "Accountant_Toon_Remove",
 		type = "description",
 		name = "   ",
 		cmdHidden = true
-		},		
+		},
 		setskinheaderignore = {
 		order = 10,
 		type = "header",
@@ -542,13 +511,13 @@ DEFAULT_CHAT_FRAME:AddMessage(ACCLOC_TOON_IGNORE.." "..(ignore_toon or "?").." "
 }
 
 local acc_options_toons_merge = {
-name = "Accountant_Toon_Merge",
+name = L["Merge Toon"],
 	type = "group",
 	args = {
 		confdesc = {
 			order = 1,
 			type = "description",
-			name = ACCLOC_TOON_MGMT_2,
+			name = L["It is recommended that you save your accountant data before proceeding, just in case."],
 			cmdHidden = true
 		},
 		-- merge
@@ -557,16 +526,16 @@ name = "Accountant_Toon_Merge",
 		type = "description",
 		name = "   ",
 		cmdHidden = true
-		},		
+		},
 		setskinheadermerge = {
 		order = 20,
 		type = "header",
-		name = ACCLOC_TOON_MERGE,
+		name = L["Merge Character"],
 		},
 		mergetoonfromlist = {
 			order = 21, type = "select", width = "full",
-			name = ACCLOC_TOON_FROM,
-			desc = ACCLOC_TOON_FROM_DESC,
+			name = L["From:"],
+			desc = L["Merge Accountant data from this character"],
 			get = function() return merge_toon_from end,
 			set = function(info, value)
 				merge_toon_from = value;
@@ -582,8 +551,8 @@ name = "Accountant_Toon_Merge",
 		},
 		mergetoontolist = {
 			order = 22, type = "select", width = "full",
-			name = ACCLOC_TOON_TO,
-			desc = ACCLOC_TOON_TO_DESC,
+			name = L["To:"],
+			desc = L["Merge Accountant data to this .character"],
 			get = function() return merge_toon_to end,
 			set = function(_,value)
 				merge_toon_to = value;
@@ -599,8 +568,8 @@ name = "Accountant_Toon_Merge",
 		},
 		mergetoon = {
 			order = 23, type = "execute",
-			name = ACCLOC_TOON_MERGE,
-			desc = ACCLOC_TOON_MERGE_NOTES1,
+			name = L["Merge Character"],
+			desc = L[" "],
 			func = function()
 				SC.ToonMerge (merge_toon_from_name, merge_toon_to_name);
 			end,
@@ -608,7 +577,7 @@ name = "Accountant_Toon_Merge",
 		mergenotes2 = {
 		order = 25,
 		type = "description",
-		name = ACCLOC_TOON_MERGE_NOTES2,
+		name =L["NOTE: If you merge Accountant data to the character you are logged into session data will be lost. You should also log into the character you want to merge from. Otherwise week data may not be correct (depending on when you last logged into that character)"],
 		cmdHidden = true
 		},
 		nulloption1 = {
@@ -621,18 +590,18 @@ name = "Accountant_Toon_Merge",
 }
 
 local acc_options_transparency = {
-name = "Accountant_options_transparency",
+name = L["Transparancy"],
 	type = "group",
 	args = {
 	confdesc = {
 		order = 1,
 		type = "description",
-		name = ACCLOC_TRANSP_DESC.."\n",
+		name = L["Change transparancy"],
 		cmdHidden = true
 		},
 		bartrans = {
-			name = ACCLOC_TRANSP,
-			desc = ACCLOC_TRANSP_DESC,
+			name = L["Change the transparancy of the accountant window"],
+			desc = L["Change transparancy"],
 			order = 2, type = "range", width = "full",
 			min = 0, max = 1, step = 0.01,
 			get = function() return (Accountant_SaveData[Accountant.player]["options"].transparancy or 1) end,
@@ -651,7 +620,7 @@ name = "Accountant_options_transparency",
 function SC.InitOptions()
 	-- Create the dropdown used in the options
 	SC.UtilToonDropDownList (true)
-	
+
 	AceConfig:RegisterOptionsTable("Accountant Main", acc_main_options)
 	AceConfig:RegisterOptionsTable("Accountant Minimap", acc_options_minimap)
 	AceConfig:RegisterOptionsTable("Accountant Transparancy", acc_options_transparency)
@@ -659,13 +628,14 @@ function SC.InitOptions()
 	AceConfig:RegisterOptionsTable("Accountant Toon Remove", acc_options_toons_remove)
 	AceConfig:RegisterOptionsTable("Accountant Toon Merge", acc_options_toons_merge)
 	AceConfig:RegisterOptionsTable("Accountant Reset", acc_options_reset)
-	AceConfigDialog:AddToBlizOptions("Accountant Main", ACCLOC_TITLE, nil)
-	AceConfigDialog:AddToBlizOptions("Accountant Minimap", ACCLOC_MINIMAP_BUT, ACCLOC_TITLE)
---	AceConfigDialog:AddToBlizOptions("Accountant Transparancy", ACCLOC_TRANSPARANCY, ACCLOC_TITLE)
-	AceConfigDialog:AddToBlizOptions("Accountant Week Start", ACCLOC_STARTWEEK, ACCLOC_TITLE)
-	AceConfigDialog:AddToBlizOptions("Accountant Toon Remove", ACCLOC_TOON_REMOVE, ACCLOC_TITLE)
-	AceConfigDialog:AddToBlizOptions("Accountant Toon Merge", ACCLOC_TOON_MERGE_T, ACCLOC_TITLE)
-	AceConfigDialog:AddToBlizOptions("Accountant Reset", ACCLOC_RESET, ACCLOC_TITLE)
+	AccOptionsFrame = AceConfigDialog:AddToBlizOptions("Accountant Main", L["Accountant"])
+	--AceConfigDialog:AddToBlizOptions("Accountant Main", L["Accountant"], nil)
+	AceConfigDialog:AddToBlizOptions("Accountant Minimap", L["Minimap button"], L["Accountant"])
+--	AceConfigDialog:AddToBlizOptions("Accountant Transparancy", ACCLOC_TRANSPARANCY, L["Accountant"])
+	AceConfigDialog:AddToBlizOptions("Accountant Week Start", L["Start of Week"], L["Accountant"])
+	AceConfigDialog:AddToBlizOptions("Accountant Toon Remove", L["Remove Character"], L["Accountant"])
+	AceConfigDialog:AddToBlizOptions("Accountant Toon Merge", L["Character Merge"], L["Accountant"])
+	AceConfigDialog:AddToBlizOptions("Accountant Reset", L["Clear Data"], L["Accountant"])
 end
 
 --[[ AccountantOptions.lua end
@@ -675,33 +645,83 @@ end
 --[[ Data Broker section begin
 ]]
 
--- Set the LDB framework for the other LDB routines
-SC.LDB_frame = CreateFrame("Frame")
-SC.LDB_frame.obj = {}
-
-function SC:LDB_Init()
---
--- Initialize the Data Broker 'button'
---
-   SC.LDB_frame.obj = 
-	LibStub("LibDataBroker-1.1"):NewDataObject("Accountant", {
+SC.LDBIcon = LibStub("LibDataBroker-1.1", true) and LibStub("LibDBIcon-1.0", true)
+	local AccountantLauncher = LibStub("LibDataBroker-1.1", true):NewDataObject("Accountant", {
 		type = "data source",
+		text = "Accountant",
 		icon = SC.artwork_path.."AccountantButton.blp",
-		label = "Accountant",
-		text  = "nyl",
-   
-		OnClick = function(self, button)
-			if ( button == "LeftButton" ) then
-				Accountant.Button_OnClick();
-			elseif ( button == "RightButton" ) then
+		OnClick = function(_, button) -- fires when a user clicks on the minimap icon
+			if button == "LeftButton" then
+				SC.LeftButton_OnClick();
+			else
+				if button == "RightButton" then
+					InterfaceOptionsFrame_OpenToCategory(AccOptionsFrame);
+					InterfaceOptionsFrame_OpenToCategory(AccOptionsFrame);
+				end
 			end
 		end,
-
-		OnTooltipShow = function(tooltip)
-			SC.LDB_OnTooltipShow(tooltip)
+		OnTooltipShow = function(tt) -- tooltip that shows when you hover over the minimap icon
+			local cs = "|cffffffcc"
+			local ce = "|r"
+			if Accountant_SaveData[Accountant.player]["options"].showbuttontotal and Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 1 then
+					 tt:AddLine("Accountant ".. SC.Version.." : Session: "..SC.NiceCash(cash, true, true))
+					 tt:AddLine(format(L["%sLeft-Click%s to open the main window"], cs, ce))
+					 tt:AddLine(format(L["%sRight-Click%s to open the config window"], cs, ce))
+					 tt:AddLine(format(L["%sDrag%s to move this button"], cs, ce))
+				 elseif Accountant_SaveData[Accountant.player]["options"].showbuttontotal and Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 2 then
+					 tt:AddLine("Accountant ".. SC.Version.." : Day: "..SC.NiceCash(cash, true, true))
+					 tt:AddLine(format(L["%sLeft-Click%s to open the main window"], cs, ce))
+					 tt:AddLine(format(L["%sRight-Click%s to open the config window"], cs, ce))
+					 tt:AddLine(format(L["%sDrag%s to move this button"], cs, ce))
+				 elseif Accountant_SaveData[Accountant.player]["options"].showbuttontotal and Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 3 then
+					 tt:AddLine("Accountant ".. SC.Version.." : Week: "..SC.NiceCash(cash, true, true))
+					 tt:AddLine(format(L["%sLeft-Click%s to open the main window"], cs, ce))
+					 tt:AddLine(format(L["%sRight-Click%s to open the config window"], cs, ce))
+					 tt:AddLine(format(L["%sDrag%s to move this button"], cs, ce))
+				 elseif Accountant_SaveData[Accountant.player]["options"].showbuttontotal and Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 4 then
+					 total = SC.GetCashForToons()
+					 tt:AddLine("Accountant ".. SC.Version.." : Total: "..SC.NiceCash(cash, true, true))
+					 tt:AddLine(format(L["%sLeft-Click%s to open the main window"], cs, ce))
+					 tt:AddLine(format(L["%sRight-Click%s to open the config window"], cs, ce))
+					 tt:AddLine(format(L["%sDrag%s to move this button"], cs, ce))
+				 else
+						tt:AddLine("Accountant " .. SC.Version)
+						tt:AddLine(format(L["%sLeft-Click%s to open the main window"], cs, ce))
+						tt:AddLine(format(L["%sRight-Click%s to open the config window"], cs, ce))
+						tt:AddLine(format(L["%sDrag%s to move this button"], cs, ce))
+			end
 		end,
 	})
-end
+
+		function SC.LeftButton_OnClick()
+			if AccountantFrame:IsVisible() then
+				HideUIPanel(AccountantFrame);
+			else
+				ShowUIPanel(AccountantFrame);
+			end
+		end
+
+		function SC:OnInitialize()
+			SC.db = LibStub("AceDB-3.0"):New("Accountant_MinimapDB", {
+	      profile = {
+		      minimap = {
+			       hide = false,
+		         },
+       	},
+     })
+
+		SC.LDBIcon:Register("Accountant", AccountantLauncher, SC.db.profile.minimap)
+		SC:RegisterChatCommand("acc", "AccountantMinimapToggle")
+		SC:RegisterChatCommand("accountant", "AccountantMinimapToggle")
+	end
+
+	function SC:AccountantMinimapToggle()
+		if AccountantFrame:IsVisible() then
+			HideUIPanel(AccountantFrame);
+		else
+			ShowUIPanel(AccountantFrame);
+		end
+	end
 
 function SC:LDB_Update()
 --
@@ -712,26 +732,64 @@ function SC:LDB_Update()
 	local mode = "<nyl>"
 	local total = 0
 	local total_str = ""
-	
+
+	local showbuttonTotalIn = 0
+	local showbuttonTotalOut = 0
+	local showbuttonmode = "<nyl>"
+	local showbuttontotal = 0
+	local showbuttontotal_str = ""
+
 	if SC.current_tab ~= 5 then
-		TotalIn, TotalOut = 
+		TotalIn, TotalOut =
 			SC.GetDetailForToons(SC.log_modes[SC.current_tab], false)
 		cash = TotalIn-TotalOut
 		mode = SC.log_modes_short[SC.current_tab]
 		total = SC.GetCashForToons()
 	else
 		cash = SC.GetCashForAllToons(false)
-		mode = ACCLOC_CHARS
+		mode = L["All Chars"]
 	end
-	
+
+	if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 1 then
+		showbuttonTotalIn, showbuttonTotalOut =
+			SC.GetDetailForToons(SC.log_modes[1], false)
+		cash = showbuttonTotalIn-showbuttonTotalOut
+		showbuttonmode = SC.log_modes_short[1]
+		showbuttontotal = SC.GetCashForToons()
+	end
+
+	if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 2 then
+		showbuttonTotalIn, showbuttonTotalOut =
+			SC.GetDetailForToons(SC.log_modes[2], false)
+		cash = showbuttonTotalIn-showbuttonTotalOut
+		showbuttonmode = SC.log_modes_short[2]
+		showbuttontotal = SC.GetCashForToons()
+	end
+
+	if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 3 then
+		showbuttonTotalIn, showbuttonTotalOut =
+			SC.GetDetailForToons(SC.log_modes[3], false)
+		cash = showbuttonTotalIn-showbuttonTotalOut
+		showbuttonmode = SC.log_modes_short[3]
+		showbuttontotal = SC.GetCashForToons()
+	end
+
+	if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 4 then
+		showbuttonTotalIn, showbuttonTotalOut =
+			SC.GetDetailForToons(SC.log_modes[4], false)
+		cash = showbuttonTotalIn-showbuttonTotalOut
+		showbuttonmode = SC.log_modes_short[4]
+		showbuttontotal = SC.GetCashForToons()
+	end
+
 	if Accountant_SaveData[SC.Button_makename()]["options"].showtotal then
 		total_str = SC.NiceCash(total, true, true).." : "
 	end
-	SC.LDB_frame.obj.text = 
+
+	AccountantLauncher.text =
 		total_str -- rely on the text setup for spacing
 		.."|cFFF5B800"..mode..FONT_COLOR_CODE_CLOSE
 		.." "..SC.NiceCash(cash, true, true)
-		
 --[[
 	if mode == SC.log_modes_short[1] then
 		SC.LDB_frame.obj.icon = SC.artwork_path.."copper.tga"
@@ -757,8 +815,8 @@ function SC.LDB_OnTooltipShow(tooltip)
 	tooltip = tooltip or GameTooltip
 	local tt_str = ""
 	local strtmp = ""
-	if SC.show_toons == ACCLOC_CHARS then
-		strtmp = ACCLOC_CHARS
+	if SC.show_toons == L["All Chars"] then
+		strtmp = L["All Chars"]
 	else
 		local str_pos = strfind(SC.show_toons, SC.DIVIDER)
 		strtmp = strsub(SC.show_toons, str_pos+1) -- remove the realm and dash
@@ -770,14 +828,14 @@ function SC.LDB_OnTooltipShow(tooltip)
 	tooltip:AddLine(tt_str)
 
 	SC.LDB_GetTooltipDetail(tooltip)
-		
+
 	tt_str = " "
 	tooltip:AddLine(tt_str)
 
 	tt_str =
 		GREEN_FONT_COLOR_CODE
-		..ACCLOC_LCLICK
-		.." "..BINDING_NAME_ACCOUNTANTTOG
+		..L["Left-Click"]
+		.." "..L["Toggle Accountant"]
 		..FONT_COLOR_CODE_CLOSE;
 	tooltip:AddLine(tt_str)
 end
@@ -807,9 +865,9 @@ function SC.LDB_GetTooltipDetail(tooltip)
             -- Find the one player or all players of the faction(s) requested
             faction = Accountant_SaveData[player]["options"]["faction"]
 			if (MatchRealm(player, SC.Realm) ~= nil)
-				and (( (faction == ACCLOC_ALLIANCE) 
+				and (( (faction == L["Alliance"])
                      and (SC.ShowAlliance == true) )
-                or ( (faction == ACCLOC_HORDE) 
+                or ( (faction == L["Horde"])
                      and (SC.ShowHorde == true) ))
 				and ( SC.show_toons == player
                   or SC.show_toons == SC.AllDropdown ) then
@@ -820,7 +878,7 @@ function SC.LDB_GetTooltipDetail(tooltip)
         end
 
         tmpstr = key
-			
+
 		tt_str = "|cFFF5B800"..tmpstr..FONT_COLOR_CODE_CLOSE
 		tmpstr = SC.NiceCash((TotalRowIn - TotalRowOut), true, true)
         tooltip:AddDoubleLine(tt_str,tmpstr);
@@ -843,16 +901,16 @@ function SC.RegisterEvents(self)
 
 	self:RegisterEvent("QUEST_COMPLETE");
 	self:RegisterEvent("QUEST_FINISHED");
-		
+
 	self:RegisterEvent("LOOT_OPENED");
 	self:RegisterEvent("LOOT_CLOSED");
-	
+
 	self:RegisterEvent("TAXIMAP_OPENED");
 	self:RegisterEvent("TAXIMAP_CLOSED");
 
 	self:RegisterEvent("TRADE_SHOW");
-	self:RegisterEvent("TRADE_CLOSE");
-	
+	self:RegisterEvent("TRADE_CLOSED");
+
 	self:RegisterEvent("MAIL_SHOW");
 	self:RegisterEvent("MAIL_INBOX_UPDATE");
 	self:RegisterEvent("MAIL_CLOSED");
@@ -864,7 +922,7 @@ function SC.RegisterEvents(self)
 
 	self:RegisterEvent("AUCTION_HOUSE_SHOW");
 	self:RegisterEvent("AUCTION_HOUSE_CLOSED");
-	
+
 	self:RegisterEvent("BLACK_MARKET_OPEN");
 	self:RegisterEvent("BLACK_MARKET_CLOSE");
 
@@ -873,7 +931,7 @@ function SC.RegisterEvents(self)
 	self:RegisterEvent("UNIT_NAME_UPDATE");
 	self:RegisterEvent("PLAYER_ENTERING_WORLD");
 	self:RegisterEvent("PLAYER_LEAVING_WORLD");
-		
+
 	self:RegisterEvent("UPDATE_INVENTORY_ALERTS");
 	self:RegisterEvent("UPDATE_INVENTORY_DURABILITY");
 
@@ -882,13 +940,13 @@ function SC.RegisterEvents(self)
 
 	self:RegisterEvent("GARRISON_ARCHITECT_OPENED");
 	self:RegisterEvent("GARRISON_ARCHITECT_CLOSED");
-	
+
 	self:RegisterEvent("GARRISON_MISSION_NPC_OPENED");
 	self:RegisterEvent("GARRISON_MISSION_NPC_CLOSED");
-	
-	self:RegisterEvent("GARRISON_SHIPYARD_NPS_OPENED");
+
+	self:RegisterEvent("GARRISON_SHIPYARD_NPC_OPENED");
 	self:RegisterEvent("GARRISON_SHIPYARD_NPC_CLOSED")
-	
+
 	self:RegisterEvent("TRANSMOGRIFY_OPEN");  -- added to track transmoggin cost
 	self:RegisterEvent("TRANSMOGRIFY_CLOSE");
 end
@@ -904,21 +962,28 @@ function SC.SetLabels()
 		getglobal("AccountantFrameRow"..i.."Out"):SetText("");
 	end
 
-	AccountantFrameAllianceToggleButtonText:SetText(ACCLOC_ALLIANCE);
+--[[
+	for i = 1, SC.AllCharsMaxRows, 1 do
+		getglobal("AccountantFrameRow"..i.."Title"):SetText("");
+		getglobal("AccountantFrameRow"..i.."In"):SetText("");
+		getglobal("AccountantFrameRow"..i.."Out"):SetText("");
+	end
+]]
+	AccountantFrameAllianceToggleButtonText:SetText(L["Alliance"]);
 	AccountantFrameAllianceToggleButton:SetChecked(Accountant_SaveData[Accountant.player]["options"].showAlliance);
-	AccountantFrameHordeToggleButtonText:SetText(ACCLOC_HORDE);
+	AccountantFrameHordeToggleButtonText:SetText(L["Horde"]);
 	AccountantFrameHordeToggleButton:SetChecked(Accountant_SaveData[Accountant.player]["options"].showHorde);
 
 	-- Set the header
 	local header = getglobal("AccountantFrameTitleText");
-	if ( header ) then 
-		header:SetText(ACCLOC_TITLE.." "..SC.Version);
+	if ( header ) then
+		header:SetText(L["Accountant"].." "..SC.Version);
 	end
 
 	if SC.current_tab == 5 then
-		AccountantFrameSource:SetText(ACCLOC_CHARCAP);
-		AccountantFrameIn:SetText(ACCLOC_MONEY);
-		AccountantFrameOut:SetText(ACCLOC_UPDATED);
+		AccountantFrameSource:SetText(L["Character"]);
+		AccountantFrameIn:SetText(L["Money"]);
+		AccountantFrameOut:SetText(L["Updated"]);
 		AccountantFrameTotalIn:SetText("");
 		AccountantFrameTotalOut:SetText("");
 		AccountantFrameTotalFlow:SetText("");
@@ -928,23 +993,25 @@ function SC.SetLabels()
 		--AccountantFrameResetButton:Hide();
 		AccountantFrameCacheBox:Hide()
 		AccountantFrameCacheAmount:Hide()
-		
+
 		Accountant_CharDropDown:Hide()
+		--AccountantScrollFrame:Show()
 		return;
 	end
 	Accountant_CharDropDown:Show()
-	
+	--AccountantScrollFrame:Hide()
+
 	AccountantFrameCacheBox:Show()
 	AccountantFrameCacheAmount:Show()
-	
+
 	AccountantFrameMoneyTotal:SetText("")
-	
-	AccountantFrameSource:SetText(ACCLOC_SOURCE);
-	AccountantFrameIn:SetText(ACCLOC_IN);
-	AccountantFrameOut:SetText(ACCLOC_OUT);
-	AccountantFrameTotalIn:SetText(ACCLOC_TOT_IN..":");
-	AccountantFrameTotalOut:SetText(ACCLOC_TOT_OUT..":");
-	AccountantFrameTotalFlow:SetText(ACCLOC_NET..":");
+
+	AccountantFrameSource:SetText(L["Source"]);
+	AccountantFrameIn:SetText(L["Revenue"]);
+	AccountantFrameOut:SetText(L["Expenditures"]);
+	AccountantFrameTotalIn:SetText(L["Revenue"]..":");
+	AccountantFrameTotalOut:SetText(L["Expenditures"]..":");
+	AccountantFrameTotalFlow:SetText(L["Net Profit / Loss"]..":");
 
 	-- Row Labels (auto generate)
 	InPos = 1
@@ -955,7 +1022,7 @@ function SC.SetLabels()
 	end
 end
 
-function SC.OnLoad()	
+function SC.OnLoad()
 --
 -- Do all the setup needed on load of Accountant
 --
@@ -963,21 +1030,12 @@ function SC.OnLoad()
 	SC.Char = UnitName("player");
 	SC.Faction = UnitFactionGroup("player")
 	SC.player = SC.Realm..SC.DIVIDER..SC.Char;
-	SC.AllDropdown = ACCLOC_CHARS
-	
+	SC.AllDropdown = L["All Chars"]
+
 	-- default behaviour
-	SC.show_toons = ACCLOC_CHARS
+	SC.show_toons = L["All Chars"]
 
 	-- shamelessly print a load message to chat window
-	DEFAULT_CHAT_FRAME:AddMessage(
-		GREEN_FONT_COLOR_CODE.."Accountant "
-		..SC.Version
-		.." by "
-		..FONT_COLOR_CODE_CLOSE
-		.."|cFFFFFF00"..SC.AUTHOR..FONT_COLOR_CODE_CLOSE
-		.." for "
-		.."'"..SC.player.."'"
-	);
 
 	-- Setup
 	SC.LoadSavedData();
@@ -987,25 +1045,20 @@ function SC.OnLoad()
 	SC.current_money = GetMoney();
 	SC.last_money = SC.current_money;
 
-	-- Register the slash Commands
-	SlashCmdList["ACCOUNTANT"] = SC.Slash;
-	SLASH_ACCOUNTANT1 = "/accountant";
-	SLASH_ACCOUNTANT2 = "/acc";
-
 	-- Add myAddOns support
 	if myAddOnsList then
-		myAddOnsList.Accountant = {name = "Accountant", 
-		description = "Tracks your revenues / expenditures", 
-		version = SC.Version, 
-		frame = "AccountantFrame", 
+		myAddOnsList.Accountant = {name = "Accountant",
+		description = L["Tracks your revenues / expenditures"],
+		version = SC.Version,
+		frame = "AccountantFrame",
 		optionsframe = "AccountantFrame"};
 	end
-	
+
 	-- Create the confirm box to use if needed
 	StaticPopupDialogs["ACCOUNTANT_RESET"] = {
-		text = TEXT("meh"),
-		button1 = TEXT(OKAY),
-		button2 = TEXT(CANCEL),
+		text = ("meh"),
+		button1 = (OKAY),
+		button2 = (CANCEL),
 		OnAccept = function()
 			SC.ResetConfirmed();
 		end,
@@ -1017,11 +1070,11 @@ function SC.OnLoad()
 	};
 
 	-- Set the tabs at the bottom of the Accountant window
-	AccountantFrameTab1:SetText(ACCLOC_SESS);
-	AccountantFrameTab2:SetText(ACCLOC_DAY);
-	AccountantFrameTab3:SetText(ACCLOC_WEEK);
-	AccountantFrameTab4:SetText(ACCLOC_TOTAL);
-	AccountantFrameTab5:SetText(ACCLOC_CHARS);
+	AccountantFrameTab1:SetText(L["Session"]);
+	AccountantFrameTab2:SetText(L["Day"]);
+	AccountantFrameTab3:SetText(L["Week"]);
+	AccountantFrameTab4:SetText(L["Total"]);
+	AccountantFrameTab5:SetText(L["All Chars"]);
 	PanelTemplates_SetNumTabs(AccountantFrame, 5);
 	PanelTemplates_SetTab(AccountantFrame, AccountantFrameTab1);
 	PanelTemplates_UpdateTabs(AccountantFrame);
@@ -1029,6 +1082,13 @@ function SC.OnLoad()
 	AccountantFrameCacheBox:SetText("Cache Box"..":") --;ACCLOC_NET..":");
 	AccountantFrameCacheUpdate:SetText("Update")
 	SC:LDB_Update()
+
+	if(Accountant_SaveData[SC.Button_makename()]["options"].hidelogin) == false then
+				 DEFAULT_CHAT_FRAME:AddMessage(
+				 GREEN_FONT_COLOR_CODE.."Loaded Accountant "..SC.Version.." by "..FONT_COLOR_CODE_CLOSE
+				 .."|cFFFFFF00"..SC.AUTHOR..FONT_COLOR_CODE_CLOSE.." for ".."'"..SC.player.."'"
+	);
+end
 end
 
 function SC.LoadSavedData()
@@ -1036,21 +1096,21 @@ function SC.LoadSavedData()
 -- Load the account data of the character that is being played
 --
 	local first_time = nil
-	
+
 	SC.data = {};
-	SC.data["LOOT"] = {Title = ACCLOC_LOOT};
-	SC.data["MERCH"] = {Title = ACCLOC_MERCH};
-	SC.data["QUEST"] = {Title = ACCLOC_QUEST};
-	SC.data["TRADE"] = {Title = ACCLOC_TRADE};
-	SC.data["MAIL"] = {Title = ACCLOC_MAIL};
-	SC.data["AH"] = {Title = ACCLOC_AUC};
-	SC.data["TRAIN"] = {Title = ACCLOC_TRAIN};
-	SC.data["TAXI"] = {Title = ACCLOC_TAXI};
-	SC.data["REPAIRS"] = {Title = ACCLOC_REPAIR};
-	SC.data["OTHER"] = {Title = ACCLOC_OTHER};
-	SC.data["BMAH"] = {Title = ACCLOC_BMAH};
-	SC.data["TMG"] = {Title = ACCLOC_TMG};
-	SC.data["GARR"] = {Title = ACCLOC_GARR};
+	SC.data["LOOT"] = {Title = L["Loot"]};
+	SC.data["MERCH"] = {Title = L["Merchants"]};
+	SC.data["QUEST"] = {Title = L["Quest Rewards"]};
+	SC.data["TRADE"] = {Title = L["Trade Window"]};
+	SC.data["MAIL"] = {Title = L["Mail"]};
+	SC.data["AH"] = {Title = L["Auction House"]};
+	SC.data["TRAIN"] = {Title = L["Training Costs"]};
+	SC.data["TAXI"] = {Title = L["Taxi Fares"]};
+	SC.data["REPAIRS"] = {Title = L["Repair Costs"]};
+	SC.data["OTHER"] = {Title = L["Unknown"]};
+	SC.data["BMAH"] = {Title = L["Black Market"]};
+	SC.data["TMG"] = {Title = L["Transmogrify"]};
+	SC.data["GARR"] = {Title = L["Garrison"]};
 --	SC.data["RFRG"] = {Title = ACCLOC_RFRG};	--Reforging was removed from the game
 --	SC.data["SYSTEM"] = {Title = ACCLOC_SYS};
 
@@ -1075,20 +1135,23 @@ function SC.LoadSavedData()
 		cweek = "";
 		Accountant_SaveData[Accountant.player] = {options
 			={showbutton=true,
+			  showbuttontotal = false,
+        showbuttontotalselect=1,
 				buttonpos=0,
 				version=SC.Version,
 				date=cdate,
 				weekdate=cweek,
-				weekstart=3,
+				weekstart=2,
 				totalcash=0,
 				cachebox = 0,
 				showtotal = nil,
+				hidelogin = false,
 				},
 			data={},
 			current_tab=1,
-			show_toons = ACCLOC_CHARS,
+			show_toons = L["All Chars"],
 			};
-		
+
 		-- Quel's mod: make sure introduction of a new character gets the same weekstart as
 		-- existing chars, otherwise it will prematurely wipe out the weekly totals.
 		for player in next,Accountant_SaveData do
@@ -1098,13 +1161,13 @@ function SC.LoadSavedData()
 					SC.Print2("Adding a new account for new character, "
 					..Accountant.player..", weekstart = "
 					..Accountant_SaveData[player]["options"]["weekstart"]);
-					Accountant_SaveData[Accountant.player]["options"]["weekstart"] 
+					Accountant_SaveData[Accountant.player]["options"]["weekstart"]
 					= Accountant_SaveData[player]["options"]["weekstart"];
 				end
 				if (Accountant_SaveData[player]["options"]["dateweek"] ~= nil) then
 					SC.Print2("Adding a new account for new character, "
 					..Accountant.player..", dateweek = "..Accountant_SaveData[player]["options"]["dateweek"]);
-					Accountant_SaveData[Accountant.player]["options"]["dateweek"] 
+					Accountant_SaveData[Accountant.player]["options"]["dateweek"]
 					= Accountant_SaveData[player]["options"]["dateweek"];
 				end
 			end
@@ -1123,6 +1186,7 @@ function SC.LoadSavedData()
 		Accountant_SaveData[SC.Button_makename()]["options"].showHorde = true;
 		SC.ShowHorde = true
 	end
+
 	SC.ShowAlliance = Accountant_SaveData[SC.Button_makename()]["options"].showAlliance
 	SC.ShowHorde = Accountant_SaveData[SC.Button_makename()]["options"].showHorde
 
@@ -1143,13 +1207,13 @@ function SC.LoadSavedData()
 
 		-- Old Version Conversion
 		if Accountant_SaveData[Accountant.player]["data"][key].TotalIn ~= nil then
-			Accountant_SaveData[Accountant.player]["data"][key]["Total"].In 
+			Accountant_SaveData[Accountant.player]["data"][key]["Total"].In
 			= Accountant_SaveData[Accountant.player]["data"][key].TotalIn;
 			SC.data[key]["Total"].In = Accountant_SaveData[Accountant.player]["data"][key].TotalIn;
 			Accountant_SaveData[Accountant.player]["data"][key].TotalIn = nil;
 		end
 		if Accountant_SaveData[Accountant.player]["data"][key].TotalOut ~= nil then
-			Accountant_SaveData[Accountant.player]["data"][key]["Total"].Out 
+			Accountant_SaveData[Accountant.player]["data"][key]["Total"].Out
 			= Accountant_SaveData[Accountant.player]["data"][key].TotalOut;
 			SC.data[key]["Total"].Out = Accountant_SaveData[Accountant.player]["data"][key].TotalOut;
 			Accountant_SaveData[Accountant.player]["data"][key].TotalOut = nil;
@@ -1171,7 +1235,7 @@ function SC.LoadSavedData()
 					Accountant_SaveData[player]["data"][key]["Session"] = { In = 0, Out = 0 }
 				else
 					Accountant_SaveData[player]["data"][key] = { Session = { In = 0, Out = 0 }, Total = { In = 0, Out = 0 }, Day = { In = 0, Out = 0 }, Week = { In = 0, Out = 0 } }
-				end				
+				end
 			end
 		end
 
@@ -1186,7 +1250,7 @@ function SC.LoadSavedData()
 	Accountant_SaveData[Accountant.player]["options"].version = SC.Version;
 	Accountant_SaveData[Accountant.player]["options"].totalcash = GetMoney();
 
-	-- Always set the player's faction. 
+	-- Always set the player's faction.
 	-- They could have deleted a character and remade it.
 	Accountant_SaveData[Accountant.player]["options"]["faction"] = SC.Faction
 --DEFAULT_CHAT_FRAME:AddMessage("Acc faction: "..
@@ -1196,19 +1260,19 @@ function SC.LoadSavedData()
    end
    SC.current_tab = Accountant_SaveData[Accountant.player]["options"]["current_tab"]
    if Accountant_SaveData[Accountant.player]["options"]["show_toons"] == nil then
-     Accountant_SaveData[Accountant.player]["options"]["show_toons"] = ACCLOC_CHARS
+     Accountant_SaveData[Accountant.player]["options"]["show_toons"] = L["All Chars"]
    end
    SC.show_toons = Accountant_SaveData[Accountant.player]["options"]["show_toons"]
 
 	if Accountant_SaveData[Accountant.player]["options"]["weekstart"] == nil then
-		Accountant_SaveData[Accountant.player]["options"]["weekstart"] = 3;
+		Accountant_SaveData[Accountant.player]["options"]["weekstart"] = 2;
 		-- Quel's mod: make sure introdudction of a new character gets the same cdate as
 		-- existing chars on this realm, otherwise it will prematurely wipe out the daily totals
 		for player in next,Accountant_SaveData do
 			if (MatchRealm(player, SC.Realm) ~= nil) then
 				if (Accountant_SaveData[player]["options"]["weekstart"] ~= nil) then
 --					SC.Print2("Setting weekstart for "..AccountantPlayer.." to match "..player.." value: "..Accountant_SaveData[player]["options"]["weekstart"]);
-					Accountant_SaveData[Accountant.player]["options"]["weekstart"] 
+					Accountant_SaveData[Accountant.player]["options"]["weekstart"]
 					= Accountant_SaveData[player]["options"]["weekstart"];
 				end
 			end
@@ -1222,7 +1286,7 @@ function SC.LoadSavedData()
 			if (MatchRealm(player, SC.Realm) ~= nil) then
 				if (Accountant_SaveData[player]["options"]["dateweek"] ~= nil) then
 --					SC.Print2("Setting dateweek for "..Accountant.player.." to match "..player.." value: "..Accountant_SaveData[player]["options"]["dateweek"]);
-					Accountant_SaveData[Accountant.player]["options"]["dateweek"] 
+					Accountant_SaveData[Accountant.player]["options"]["dateweek"]
 					= Accountant_SaveData[player]["options"]["dateweek"];
 				end
 			end
@@ -1239,7 +1303,7 @@ function SC.LoadSavedData()
 			if (MatchRealm(player, SC.Realm) ~= nil) then
 				if (Accountant_SaveData[player]["options"]["date"] ~= nil) then
 --					SC.Print2("Setting date for "..AccountantPlayer.." to match "..player.." value: "..Accountant_SaveData[player]["options"]["date"]);
-					Accountant_SaveData[Accountant.player]["options"]["date"] 
+					Accountant_SaveData[Accountant.player]["options"]["date"]
 					= Accountant_SaveData[player]["options"]["date"];
 				end
 			end
@@ -1274,7 +1338,7 @@ function SC.LoadSavedData()
 			end
 		end
 	end
-	
+
 	-- Check to see if the week has rolled over
 	if Accountant_SaveData[Accountant.player]["options"]["dateweek"] ~= SC.WeekStart() then
 --		SC.Print2("Found a new week!");
@@ -1295,7 +1359,7 @@ function SC.LoadSavedData()
 			end
 		end
 	end
-	
+
 	-- Create the list of characters to show in the drop down.
 	SC.ToonDropDownList ()
 end
@@ -1327,7 +1391,7 @@ function SC.CacheGetCopper()
 	local gold = AccountantFrameCacheAmountGold:GetText() --getglobal(moneyFrame:GetName().."Copper"):GetText();
 	local silver = AccountantFrameCacheAmountSilver:GetText() --getglobal(moneyFrame:GetName().."Silver"):GetText();
 	local copper = AccountantFrameCacheAmountCopper:GetText() --getglobal(moneyFrame:GetName().."Gold"):GetText();
-	
+
 	if ( copper ~= "" ) then
 		totalCopper = totalCopper + copper;
 	end
@@ -1340,13 +1404,13 @@ function SC.CacheGetCopper()
 	return totalCopper;
 end
 
-function SC.CacheBoxUpdate()	
+function SC.CacheBoxUpdate()
 	--Get the values the user input
 	local cache_copper = (SC.CacheGetCopper() or 0)
 	Accountant_SaveData[SC.show_toons]["options"].cachebox = cache_copper;
 	-- update appropriate values
 	SC.ShowValues()
-	
+
 	SC:LDB_Update()
 end
 
@@ -1362,9 +1426,9 @@ function SC.ToonDropDownList ()
 			local strtmp = strsub(player, str_pos+1) -- remove the realm and dash
 			faction = Accountant_SaveData[player]["options"]["faction"]
 --SC.Print("ToonDropDownList: trim ".."'"..strtmp.."' faction '".."'"..faction.."'")
-			if ( (faction == ACCLOC_ALLIANCE) 
+			if ( (faction == L["Alliance"])
 				and (SC.ShowAlliance == true) )
-			or ( (faction == ACCLOC_HORDE) 
+			or ( (faction == L["Horde"])
 				and (SC.ShowHorde == true) )
 				then
 				table.insert(SC.Toons, strtmp)
@@ -1381,7 +1445,7 @@ function SC.CharDropDown_Init ()
 	local info = {}
 	SC.ToonDropDownList ()
 	-- Initialize the dropdown of toons
-	info.text = ACCLOC_CHARS
+	info.text = L["All Chars"]
 	info.func = SC.CharDropDown_OnClick
 	info.checked = nil
 	UIDropDownMenu_AddButton(info)
@@ -1399,8 +1463,8 @@ function SC.CharDropDown_Setup()
 -- Used outside the XML controller
 --
 	UIDropDownMenu_Initialize(Accountant_CharDropDown, SC.CharDropDown_Init);
-	
-	-- 
+
+	--
 	local selected
 	for i = 1, #SC.Toons do
 		if SC.show_toons == SC.Realm..SC.DIVIDER..SC.Toons[i] then
@@ -1431,10 +1495,10 @@ function SC.CharDropDown_OnClick(self)
 --
 	local val = self:GetID();
 	local id = self.value
-	
+
 	UIDropDownMenu_SetSelectedID(Accountant_CharDropDown, val);
 
-	if( id == ACCLOC_CHARS) then
+	if( id == L["All Chars"]) then
 		searchChar = SC.AllDropdown;
 	else
 		searchChar = SC.Realm..SC.DIVIDER..id -- SC.Toons[id-1];
@@ -1447,7 +1511,7 @@ function SC.CharDropDown_OnClick(self)
 --]]
    -- Change the player to the one selected
 	SC.show_toons = searchChar
-	
+
 	-- Show the new values
 	SC.ShowValues()
 	SC:LDB_Update()
@@ -1548,38 +1612,35 @@ function SC.OnEvent(event, arg1)
 			);
 	end
 	--]]
-	if ( event == "UNIT_NAME_UPDATE" and arg1 == "player" ) 
+	if ( event == "UNIT_NAME_UPDATE" and arg1 == "player" )
 		or (event=="PLAYER_ENTERING_WORLD") then
 		if (SC.got_name) then
 			return;
 		end
 		local playerName = UnitName("player");
-		if ( playerName ~= UNKNOWNBEING 
-			and playerName ~= UNKNOWNOBJECT 
+		if ( playerName ~= UNKNOWNBEING
+			and playerName ~= UNKNOWNOBJECT
 			and playerName ~= nil ) then
 			if SC.show_start then
-				SC.Print("setup: init start"); 
+				SC.Print("setup: init start");
 			end
 			SC.got_name = true;
 			SC.OnLoad();
-			SC.Button_Init();
-			SC.Button_UpdatePosition();
 			-- init the data broker 'button'
-			SC:LDB_Init()
 			SC:LDB_Update()
 			-- Create the options structures
 			SC.InitOptions()
 			if SC.show_start then
-				SC.Print("setup: init end"); 
+				SC.Print("setup: init end");
 			end
 		end
 		return;
 	end
 	if ( event == "PLAYER_LEAVING_WORLD") then
 		-- save the current tab for next login
-		Accountant_SaveData[Accountant.player]["options"]["current_tab"] = 
+		Accountant_SaveData[Accountant.player]["options"]["current_tab"] =
 			SC.current_tab
-		Accountant_SaveData[Accountant.player]["options"]["show_toons"] = 
+		Accountant_SaveData[Accountant.player]["options"]["show_toons"] =
 			SC.show_toons
 		return;
 	end
@@ -1613,7 +1674,7 @@ function SC.OnEvent(event, arg1)
 				SC.repair_cost, SC.can_repair = GetRepairAllCost();
 --				DEFAULT_CHAT_FRAME:AddMessage(" ACC dura-2: "
 --					..SC.repair_cost.." : ");
-			end				
+			end
 		end
 	elseif event == "TAXIMAP_OPENED" then
 		SC.mode = "TAXI";
@@ -1640,15 +1701,15 @@ function SC.OnEvent(event, arg1)
 	elseif event == "MAIL_INBOX_UPDATE" then
 --	SC.Print("Accountant: event"
 --		..event
---		.." mode '"..SC.mode.."'"); 
-		-- Quel's fix: when we open a mail message, see if this is a successfull Auction. 
+--		.." mode '"..SC.mode.."'");
+		-- Quel's fix: when we open a mail message, see if this is a successfull Auction.
 		if (nil ~= InboxFrame.openMailID) then
 			a, b, sender, subject, money = GetInboxHeaderInfo(InboxFrame.openMailID);
 			if (nil ~= sender) then
-				if (string.find(subject, ACCLOC_AUCTION_SUCC) ~= nil) then
+				if (string.find(subject, L["Auction successful:"]) ~= nil) then
 					SC.mode="AH";
---					SC.Print("Accountant: Auction successful"); 
-				elseif (string.find (subject, ACCLOC_AUCTION_OUTBID) ~= nil) then
+--					SC.Print("Accountant: Auction successful");
+				elseif (string.find (subject, L["Outbid"]) ~= nil) then
 					SC.mode="IGNORE";
 					SC.refund_mode="AH";
 					SC.sender = Accountant.player;
@@ -1690,7 +1751,7 @@ function SC.OnEvent(event, arg1)
 		SC.mode = "TMG";
 	elseif event == "TRANSMOGRIFY_CLOSE" then
 		SC.mode = "";
-	
+
 	elseif event == "BLACK_MARKET_OPEN" then
 		SC.mode = "BMAH";
 		--debug
@@ -1703,8 +1764,8 @@ function SC.OnEvent(event, arg1)
 		SC.UpdateLog();
 		SC:LDB_Update()
 	end
-	if SC.verbose and SC.mode ~= oldmode then 
-        SC.Print("Accountant mode changed to '"..SC.mode.."'"); 
+	if SC.verbose and SC.mode ~= oldmode then
+        SC.Print("Accountant mode changed to '"..SC.mode.."'");
     end
 end
 
@@ -1732,16 +1793,17 @@ function SC.NiceCash(value, show_zero, show_neg)
 
 	if show_neg then
 		if amount < 0 then
-			neg1 = "|cFFFF6600" .."("..FONT_COLOR_CODE_CLOSE
-			neg2 = "|cFFFF6600" ..")"..FONT_COLOR_CODE_CLOSE
-		else
-			neg2 = " " -- need to pad for other negative numbers
+			neg1 = "|cffFF0000" .." - "..FONT_COLOR_CODE_CLOSE
+			neg2 = "|cffFF0000" .." "..FONT_COLOR_CODE_CLOSE
+		elseif amount > 0 then
+			neg1 = "|cff00FF00" .." + "..FONT_COLOR_CODE_CLOSE
+			neg2 = "|cff00FF00" .." "..FONT_COLOR_CODE_CLOSE
 		end
 	end
 	if amount < 0 then
 		amount = amount * -1
 	end
-	
+
 	if amount == 0 then
 		if show_zero then
 			copper_str = cc..(amount or "?").."c"..FONT_COLOR_CODE_CLOSE
@@ -1764,7 +1826,7 @@ function SC.NiceCash(value, show_zero, show_neg)
 			copper_str = cc..(copper or "?").."c"..FONT_COLOR_CODE_CLOSE
 		end
 	end
-	
+
 	-- build the return string
 	outstr = outstr
 		..neg1
@@ -1817,9 +1879,9 @@ function SC.GetDetailForToons(mode, for_display)
             -- Find the one player or all players of the faction(s) requested
             faction = Accountant_SaveData[player]["options"]["faction"]
             if (MatchRealm(player, SC.Realm) ~= nil)
-               and (( (faction == ACCLOC_ALLIANCE) 
+               and (( (faction == L["Alliance"])
                      and (SC.ShowAlliance == true) )
-                  or ( (faction == ACCLOC_HORDE) 
+                  or ( (faction == L["Horde"])
                      and (SC.ShowHorde == true) ))
                and ( SC.show_toons == player
                   or SC.show_toons == SC.AllDropdown ) then
@@ -1840,7 +1902,7 @@ function SC.GetDetailForToons(mode, for_display)
             row:SetText(SC.NiceCash(TotalRowOut, false, false));
         end
     end
-    
+
     return TotalIn, TotalOut
 end
 
@@ -1856,19 +1918,19 @@ function SC.GetCashForToons()
     for player in next,Accountant_SaveData do
 		faction = Accountant_SaveData[player]["options"]["faction"]
 		if (MatchRealm(player, SC.Realm) ~= nil)
-		and (( (faction == ACCLOC_ALLIANCE) 
+		and (( (faction == L["Alliance"])
             and (SC.ShowAlliance == true) )
-        or ( (faction == ACCLOC_HORDE) 
+        or ( (faction == L["Horde"])
             and (SC.ShowHorde == true) ))
 		and ( SC.show_toons == player
          or SC.show_toons == SC.AllDropdown ) then
 				-- cachebox may not exist if the user has not logged onto the toon yet
-				cachebox = (Accountant_SaveData[player]["options"]["cachebox"] or 0) 
-			alltotal = alltotal 
+				cachebox = (Accountant_SaveData[player]["options"]["cachebox"] or 0)
+			alltotal = alltotal
 				+ Accountant_SaveData[player]["options"]["totalcash"] - cachebox
 		end
 	end
-    
+
     return alltotal
 end
 
@@ -1880,7 +1942,7 @@ function SC.GetCashForAllToons(for_display)
 	local alltotal = 0
 	local total = 0
 	local cachebox = 0
-	
+
 	for char,charvalue in next,Accountant_SaveData do
 		-- Find all players of the faction(s) requested
 		faction = Accountant_SaveData[char]["options"]["faction"]
@@ -1889,9 +1951,9 @@ function SC.GetCashForAllToons(for_display)
 			faction = "not set"
 		end
 		if (MatchRealm(char, SC.Realm) ~= nil)
-			and (( (faction == ACCLOC_ALLIANCE) 
+			and (( (faction == L["Alliance"])
 					and (SC.ShowAlliance == true) )
-				or ( (faction == ACCLOC_HORDE) 
+				or ( (faction == L["Horde"])
 					and (SC.ShowHorde == true) ))
 		then
 			str_pos = strfind(char, SC.DIVIDER)
@@ -1901,7 +1963,7 @@ function SC.GetCashForAllToons(for_display)
 			end
 			if Accountant_SaveData[char]["options"]["totalcash"] ~= nil then
 					-- poss cachebox does not exist if the user has not logged onto the toon yet
-					cachebox = (Accountant_SaveData[char]["options"]["cachebox"] or 0) 
+					cachebox = (Accountant_SaveData[char]["options"]["cachebox"] or 0)
 				total = Accountant_SaveData[char]["options"]["totalcash"] - cachebox
 				alltotal = alltotal + total
 				if for_display then
@@ -1922,7 +1984,7 @@ function SC.GetCashForAllToons(for_display)
 			end
 		end
 	end
-	   
+
 	return alltotal
 end
 
@@ -1936,10 +1998,10 @@ function SC.ShowValues()
 	local tmpstr2 = "<nyl>"
 	local tmpstr3 = "<nyl>"
 	local diff = 0
-	
+
 	-- charachter totals
 	local alltotal;
-	
+
 	-- Make sure we start fresh
 	alltotal = 0;
 
@@ -1947,7 +2009,7 @@ function SC.ShowValues()
 	if SC.current_tab ~= 5 then
 		TotalIn = 0;
 		TotalOut = 0;
---		mode = SC.log_modes[SC.current_tab];
+		--mode = SC.log_modes[SC.current_tab];
 
 		TotalIn, TotalOut = SC.GetDetailForToons(SC.log_modes[SC.current_tab], true)
 		diff = (TotalOut-TotalIn or 0);
@@ -1955,18 +2017,50 @@ function SC.ShowValues()
 		AccountantFrameTotalInValue:SetText(SC.NiceCash(TotalIn, true, false));
 		AccountantFrameTotalOutValue:SetText(SC.NiceCash(TotalOut, true, false));
 		AccountantFrameTotalFlowValue:SetText(SC.NiceCash(diff, true, false))
-		
+
 		if diff > 0 then
-			AccountantFrameTotalFlow:SetText("|cFFFF3333"..ACCLOC_NETLOSS..":");
+			AccountantFrameTotalFlow:SetText("|cFFFF3333"..L["Net Loss"]..":");
 		elseif diff < 0 then
-			AccountantFrameTotalFlow:SetText("|cFF00FF00"..ACCLOC_NETPROF..":");
+			AccountantFrameTotalFlow:SetText("|cFF00FF00"..L["Net Profit"]..":");
 		else
-			AccountantFrameTotalFlow:SetText(ACCLOC_NET);
+			AccountantFrameTotalFlow:SetText(L["Net Profit / Loss"]);
 		end
-		
+
 		alltotal = SC.GetCashForToons()
 	else
 		alltotal = SC.GetCashForAllToons(true)
+	end
+
+	if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 1 then
+		TotalIn = 0;
+		TotalOut = 0;
+
+		TotalIn, TotalOut = SC.GetDetailForToons(SC.log_modes[1], true)
+		diff = (TotalOut-TotalIn or 0);
+	end
+
+	if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 2 then
+		TotalIn = 0;
+		TotalOut = 0;
+
+		TotalIn, TotalOut = SC.GetDetailForToons(SC.log_modes[2], true)
+		diff = (TotalOut-TotalIn or 0);
+	end
+
+	if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 3 then
+		TotalIn = 0;
+		TotalOut = 0;
+
+		TotalIn, TotalOut = SC.GetDetailForToons(SC.log_modes[3], true)
+		diff = (TotalOut-TotalIn or 0);
+	end
+
+	if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 4 then
+		TotalIn = 0;
+		TotalOut = 0;
+
+		TotalIn, TotalOut = SC.GetDetailForToons(SC.log_modes[4], true)
+		diff = (TotalOut-TotalIn or 0);
 	end
 --	SetPortraitTexture(AccountantFramePortrait, "player");
 
@@ -1981,7 +2075,7 @@ function SC.ShowValues()
 	end
 
 	if SC.current_tab == 3 then
-		AccountantFrameExtra:SetText(ACCLOC_WEEKSTART..":");
+		AccountantFrameExtra:SetText(L["Week Start"]..":");
 		AccountantFrameExtraValue:SetText(Accountant_SaveData[Accountant.player]["options"]["dateweek"]);
 	else
 		AccountantFrameExtra:SetText("");
@@ -2026,7 +2120,7 @@ end
 function SC.UpdateLog()
 --
 -- Update the Accountant data based on the current Accountant mode
--- The mode sets the category of gold income or expense shown in 
+-- The mode sets the category of gold income or expense shown in
 -- the Accountant window
 --
 	SC.current_money = GetMoney();
@@ -2035,7 +2129,7 @@ function SC.UpdateLog()
 	SC.last_money = SC.current_money;
 	if diff == 0 or diff == nil then
 		return;
-	end		
+	end
 
 	local mode = SC.mode;
 	if mode == "" then mode = "OTHER"; end
@@ -2072,7 +2166,7 @@ function SC.UpdateLog()
 			end
 		end
 
-			if SC.verbose then 
+			if SC.verbose then
 				SC.Print("IGNORE: "..SC.NiceCash(diff, false, false)
 					.." mode = "..SC.refund_mode .." refundee = "..SC.sender);
 			end
@@ -2090,7 +2184,7 @@ function SC.UpdateOther(old_gold, new_gold)
 	diff = new_gold - old_gold;
 	if diff == 0 or diff == nil then
 		return;
-	end		
+	end
 
 	local mode = "OTHER"
 	local out_str = " since last session."
@@ -2128,7 +2222,7 @@ function SC.Tab_OnClick(self)
 --
 	PanelTemplates_SetTab(AccountantFrame, self:GetID());
 	SC.current_tab = self:GetID();
-	PlaySound("igCharacterInfoTab");
+	PlaySound("841");
 	SC.OnShow();
 end
 
@@ -2145,13 +2239,22 @@ function SC.ShowTotalLDB()
 	SC:LDB_Update()
 end
 
+function SC.hidelogin()
+         if (Accountant_SaveData[SC.Button_makename()]["options"].hidelogin) then
+					 Accountant_SaveData[SC.Button_makename()]["options"].hidelogin = false
+			 	else
+			 		Accountant_SaveData[SC.Button_makename()]["options"].hidelogin = true
+   end
+	 return
+end
+
 --
 -- This routime is used by Titan Panel Accountant.
 -- Others are welcome to use it as well.
 --
 -- logmode = the mode from log_modes.
 --   session, week, ...
--- all_t0ons = is a boolean to return the gold 
+-- all_t0ons = is a boolean to return the gold
 --   of the character being played
 --   or all characters on the server the user is logged into
 --
@@ -2159,22 +2262,55 @@ end
 --    <logmode> - the shortened version from log_modes_short
 --    <gold> - output of NiceNetCash
 --
+
 function Accountant_GetCurrentBal(logmode, all_toons)
    local TotalIn = 0
    local TotalOut = 0
    local mode = "<nyl>"
-   
+
+	 local showbuttonTotalIn = 0
+	 local showbuttonTotalOut = 0
+	 local showbuttonmode = "<nyl>"
+
    if SC.current_tab ~= 5 then
-      TotalIn, TotalOut = 
+      TotalIn, TotalOut =
        SC.GetDetailForToons(SC.log_modes[SC.current_tab], false)
       cash = TotalIn-TotalOut
       mode = SC.log_modes_short[SC.current_tab]
    else
       cash = SC.GetCashForAllToons(false)
-      mode = ACCLOC_CHARS
+      mode = L["All Chars"]
    end
-	return  
+
+	 if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 1 then
+			showbuttonTotalIn, showbuttonTotalOut =
+			 SC.GetDetailForToons(SC.log_modes[1], false)
+			cash = showbuttonTotalIn-showbuttonTotalOut
+			showbuttonmode = SC.log_modes_short[1]
+	 end
+
+	 if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 2 then
+			showbuttonTotalIn, showbuttonTotalOut =
+			 SC.GetDetailForToons(SC.log_modes[2], false)
+			cash = showbuttonTotalIn-showbuttonTotalOut
+			showbuttonmode = SC.log_modes_short[2]
+	 end
+
+	 if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 3 then
+			showbuttonTotalIn, showbuttonTotalOut =
+			 SC.GetDetailForToons(SC.log_modes[3], false)
+			cash = showbuttonTotalIn-showbuttonTotalOut
+			showbuttonmode = SC.log_modes_short[3]
+	 end
+
+	 if Accountant_SaveData[Accountant.player]["options"].showbuttontotalselect == 4 then
+			showbuttonTotalIn, showbuttonTotalOut =
+			 SC.GetDetailForToons(SC.log_modes[4], false)
+			cash = showbuttonTotalIn-showbuttonTotalOut
+			showbuttonmode = SC.log_modes_short[4]
+	 end
+
+	return
 	   "|cFFFFFF00"..mode..FONT_COLOR_CODE_CLOSE
       .." "..SC.NiceCash(cash, true, true)
 end
-

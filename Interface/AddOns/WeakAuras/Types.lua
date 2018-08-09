@@ -1422,6 +1422,12 @@ WeakAuras.pet_behavior_types = {
   assist = L["Assist"]
 }
 
+WeakAuras.pet_spec_types = {
+  [1] = L["Ferocity"],
+  [2] = L["Tenacity"],
+  [3] = L["Cunning"]
+}
+
 WeakAuras.cooldown_progress_behavior_types = {
   showOnCooldown = L["On Cooldown"],
   showOnReady = L["Not on Cooldown"],
@@ -1477,3 +1483,24 @@ WeakAuras.absorb_modes = {
   OVERLAY_FROM_START = L["Attach to Start"],
   OVERLAY_FROM_END = L["Attach to End"]
 }
+
+WeakAuras.mythic_plus_affixes = {
+  [2] = true,
+  [3] = true,
+  [4] = true,
+  [5] = true,
+  [6] = true,
+  [7] = true,
+  [8] = true,
+  [9] = true,
+  [10] = true,
+  [11] = true,
+  [12] = true,
+  [13] = true,
+  [14] = true,
+  [16] = true,
+}
+
+for k in pairs(WeakAuras.mythic_plus_affixes) do
+  WeakAuras.mythic_plus_affixes[k] = C_ChallengeMode.GetAffixInfo(k);
+end

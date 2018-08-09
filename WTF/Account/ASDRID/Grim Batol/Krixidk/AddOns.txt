@@ -342,7 +342,7 @@ DailyGlobalCheck: disabled
 Dominos_Quest: disabled
 ConsLegion: disabled
 MythicPlusTimer: disabled
-Omen: disabled
+Omen: enabled
 ServerHop: disabled
 RaidAchievement_LegionHeroics: disabled
 RaidAchievement_LegionRaids: disabled
@@ -407,3 +407,4 @@ bdNameplates: disabled
 Kui_Media: disabled
 WorldQuestTracker: enabled
 AddOnSkins: enabled
+OPie: disabled

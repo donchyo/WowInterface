@@ -1,9 +1,9 @@
 Version: 1
 Frame: ItemRefTooltip
 FrameLevel: 1
-Anchor: BOTTOM
+Anchor: CENTER
 X: 2
-Y: 132
+Y: -99
 W: 128
 H: 64
 Frame: ColorPickerFrame
@@ -12,4 +12,11 @@ Anchor: CENTER
 X: 0
 Y: 0
 W: 365
-H: 240
+H: 380
+Frame: ViragDevToolFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 635
+H: 200

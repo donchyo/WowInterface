@@ -1,29 +1,26 @@
 
 NewOpenablesProfile = {
 	["char"] = {
-		["Nyrith - Grim Batol"] = {
-			["itemID"] = 147581,
+		["Krixi - Grim Batol"] = {
+			["itemID"] = 147819,
 		},
-		["Krixikin - Grim Batol"] = {
-			["itemID"] = 147721,
-		},
-		["Zetiz - Grim Batol"] = {
-			["itemID"] = 127848,
+		["Donch - Grim Batol"] = {
+			["itemID"] = 118632,
 		},
 		["Krixidk - Grim Batol"] = {
 			["itemID"] = 151556,
 		},
-		["Kroxi - Grim Batol"] = {
-			["itemID"] = 147548,
-		},
 		["Krixidk - Valley of Heroes - EU"] = {
 			["itemID"] = 147818,
 		},
-		["Krixi - Grim Batol"] = {
-			["itemID"] = 147819,
+		["Nyrith - Grim Batol"] = {
+			["itemID"] = 147581,
 		},
 		["Krixidk - Ravencrest"] = {
 			["itemID"] = 147718,
+		},
+		["Bawsie - Grim Batol"] = {
+			["itemID"] = 118630,
 		},
 	},
 	["profileKeys"] = {
@@ -68,12 +65,12 @@ NewOpenablesProfile = {
 				[0] = true,
 				[139428] = true,
 				[147348] = true,
-				[139418] = true,
+				[151843] = true,
 				[147349] = true,
 				[139420] = true,
-				[151843] = true,
+				[139418] = true,
 			},
-			["version"] = "|cFFFFFFFF09.02 20.07.2018 use |cFFFF00FF/nop|cFFFFFFFF",
+			["version"] = "|cFFFFFFFF09.06 23.07.2018 use |cFFFF00FF/nop|cFFFFFFFF",
 			["iconSize"] = 40,
 			["lockButton"] = true,
 			["qb"] = {
@@ -85,9 +82,9 @@ NewOpenablesProfile = {
 		["Krixi"] = {
 			["T_BLACKLIST"] = {
 				[0] = true,
-				[139418] = true,
-				[147348] = true,
 				[151843] = true,
+				[147348] = true,
+				[139418] = true,
 				[147349] = true,
 				[139420] = true,
 				[139428] = true,
@@ -97,7 +94,7 @@ NewOpenablesProfile = {
 				"UIParent", -- [2]
 				"TOPLEFT", -- [3]
 			},
-			["version"] = "|cFFFFFFFF09.02 20.07.2018 use |cFFFF00FF/nop|cFFFFFFFF",
+			["version"] = "|cFFFFFFFF09.06 23.07.2018 use |cFFFF00FF/nop|cFFFFFFFF",
 			["skinButton"] = true,
 			["button"] = {
 				nil, -- [1]

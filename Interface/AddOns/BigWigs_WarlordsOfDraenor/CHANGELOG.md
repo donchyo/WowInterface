@@ -1,10 +1,9 @@
 # BigWigs [Warlords of Draenor]
 
-## [v8.0.0](https://github.com/BigWigsMods/BigWigs_WarlordsOfDraenor/tree/v8.0.0) (2018-07-17)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_WarlordsOfDraenor/compare/v7.3.1...v8.0.0)
+## [v8.0.3](https://github.com/BigWigsMods/BigWigs_WarlordsOfDraenor/tree/v8.0.3) (2018-07-30)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_WarlordsOfDraenor/compare/v8.0.2...v8.0.3)
 
-- bump toc  
-- Update world bosses to use uiMapIDs.  
-- Update colors and sounds  
-- Fix some keys  
-- Update for UnitBuff/UnitDebuff  
+- Cleanups  
+- Add website to toc  
+- cleanups  
+- Highmaul/Margok: Update UnitDebuff usage, closes #9  

@@ -28,7 +28,7 @@ function TitleFrame:New(title, parent)
 	b:SetScript('OnClick', b.OnClick)
 	b.title = title
 
-	b:RegisterFrameMessage('PLAYER_CHANGED', 'Update')
+	b:RegisterFrameSignal('OWNER_CHANGED', 'Update')
 	b:Update()
 
 	return b
@@ -52,7 +52,7 @@ end
 
 function TitleFrame:OnDoubleClick()
 	Addon.canSearch = true
-	Addon:SendMessage('SEARCH_TOGGLED', self:GetFrameID())
+	Addon:SendSignal('SEARCH_TOGGLED', self:GetFrameID())
 end
 
 function TitleFrame:OnClick(button)
@@ -83,7 +83,7 @@ end
 --[[ API ]]--
 
 function TitleFrame:Update()
-	self:SetFormattedText(self.title, self:GetPlayer())
+	self:SetFormattedText(self.title, self:GetOwnerInfo().name)
 	self:GetFontString():SetAllPoints(self)
 end
 

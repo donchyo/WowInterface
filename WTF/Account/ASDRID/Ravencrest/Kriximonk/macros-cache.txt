@@ -1,3 +1,7 @@
+VER 3 0100000000000016 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Majordomo's Dinner Bell
+/use 14
+END
 VER 3 010000000000000F "coccon" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]life cocoon
@@ -14,6 +18,9 @@ VER 3 0100000000000011 "enveloping mist" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]enveloping mist
 END
+VER 3 0100000000000017 "focus" "INV_MISC_QUESTIONMARK"
+/cast [@focus] spear hand strike
+END
 VER 3 0100000000000010 "rm" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] renewing mist
@@ -27,6 +34,10 @@ END
 VER 3 0100000000000014 "sheilun's gift" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]sheilun's gift
+END
+VER 3 0100000000000015 "tiger's lust" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]tiger's lust
 END
 VER 3 0100000000000012 "vivify" "INV_MISC_QUESTIONMARK"
 #showtooltip

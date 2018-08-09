@@ -5,1254 +5,11 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 1,
 	["tabela_historico"] = {
 		["tabelas"] = {
-			{
-				{
-					["combatId"] = 258,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001557,
-							["damage_from"] = {
-								["Archmage Xylem"] = true,
-								["[*] Darkness"] = true,
-								["[*] Ley Line Energy"] = true,
-							},
-							["targets"] = {
-								["Archmage Xylem"] = 26379299,
-								["Razor Ice"] = 344398102,
-							},
-							["spec"] = 255,
-							["pets"] = {
-								"Bloodlust <Bawsie>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 367690481.001557,
-							["end_time"] = 1531851275,
-							["colocacao"] = 1,
-							["dps_started"] = false,
-							["total"] = 370777401.001557,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Bawsie",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 525174,
-										["g_amt"] = 0,
-										["n_max"] = 99388,
-										["targets"] = {
-											["Archmage Xylem"] = 1214187,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 689013,
-										["n_min"] = 56118,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 1214187,
-										["c_max"] = 185813,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 105640,
-									}, -- [1]
-									[252896] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 456964,
-										["g_amt"] = 0,
-										["n_max"] = 159779,
-										["targets"] = {
-											["Archmage Xylem"] = 757409,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 300445,
-										["n_min"] = 140666,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 757409,
-										["c_max"] = 280735,
-										["id"] = 252896,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 176229,
-									},
-									[203413] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 295645,
-										["g_amt"] = 0,
-										["n_max"] = 144925,
-										["targets"] = {
-											["Archmage Xylem"] = 875342,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 579697,
-										["n_min"] = 144924,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 875342,
-										["c_max"] = 295645,
-										["id"] = 203413,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 295645,
-									},
-									[186270] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 4494205,
-										["g_amt"] = 0,
-										["n_max"] = 473277,
-										["targets"] = {
-											["Archmage Xylem"] = 6103417,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1609212,
-										["n_min"] = 269822,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 6103417,
-										["c_max"] = 1019009,
-										["id"] = 186270,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 584598,
-									},
-									[212436] = {
-										["c_amt"] = 48,
-										["b_amt"] = 0,
-										["c_dmg"] = 168086044,
-										["g_amt"] = 0,
-										["n_max"] = 2726879,
-										["targets"] = {
-											["Razor Ice"] = 340521405,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 172435361,
-										["n_min"] = 1438890,
-										["g_dmg"] = 0,
-										["counter"] = 144,
-										["total"] = 340521405,
-										["c_max"] = 5605289,
-										["id"] = 212436,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 96,
-										["r_amt"] = 0,
-										["c_min"] = 2960761,
-									},
-									[190928] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 2539953,
-										["g_amt"] = 0,
-										["n_max"] = 720758,
-										["targets"] = {
-											["Archmage Xylem"] = 5836815,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 3296862,
-										["n_min"] = 222153,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 5836815,
-										["c_max"] = 930122,
-										["id"] = 190928,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 801659,
-									},
-									[194279] = {
-										["c_amt"] = 28,
-										["b_amt"] = 0,
-										["c_dmg"] = 2710916,
-										["g_amt"] = 0,
-										["n_max"] = 84484,
-										["targets"] = {
-											["Archmage Xylem"] = 1066721,
-											["Razor Ice"] = 3876697,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2232502,
-										["n_min"] = 43112,
-										["g_dmg"] = 0,
-										["counter"] = 76,
-										["total"] = 4943418,
-										["c_max"] = 172348,
-										["id"] = 194279,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 48,
-										["r_amt"] = 0,
-										["c_min"] = 87950,
-									},
-									[202800] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 340003,
-										["targets"] = {
-											["Archmage Xylem"] = 340003,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 340003,
-										["n_min"] = 340003,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 340003,
-										["c_max"] = 0,
-										["id"] = 202800,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[185855] = {
-										["c_amt"] = 13,
-										["b_amt"] = 0,
-										["c_dmg"] = 1965615,
-										["g_amt"] = 0,
-										["n_max"] = 221075,
-										["targets"] = {
-											["Archmage Xylem"] = 4156719,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2191104,
-										["n_min"] = 64845,
-										["g_dmg"] = 0,
-										["counter"] = 38,
-										["total"] = 4156719,
-										["c_max"] = 281872,
-										["id"] = 185855,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 25,
-										["r_amt"] = 0,
-										["c_min"] = 132284,
-									},
-									[204081] = {
-										["c_amt"] = 31,
-										["b_amt"] = 0,
-										["c_dmg"] = 1637596,
-										["g_amt"] = 0,
-										["n_max"] = 39674,
-										["targets"] = {
-											["Archmage Xylem"] = 2941766,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1304170,
-										["n_min"] = 18076,
-										["g_dmg"] = 0,
-										["counter"] = 83,
-										["total"] = 2941766,
-										["c_max"] = 80935,
-										["id"] = 204081,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 52,
-										["r_amt"] = 0,
-										["c_min"] = 36876,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-1303-06FB0BB8",
-							["last_dps"] = 4029970.12121088,
-							["custom"] = 0,
-							["last_event"] = 1531851267,
-							["damage_taken"] = 18918408.001557,
-							["start_time"] = 1531851185,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008773,
-							["serial"] = "Pet-0-4241-1673-10291-20196-01025093D0",
-							["damage_from"] = {
-								["Archmage Xylem"] = true,
-							},
-							["targets"] = {
-								["Archmage Xylem"] = 3086920,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3086920.008773,
-							["dps_started"] = false,
-							["total"] = 3086920.008773,
-							["classe"] = "PET",
-							["ownerName"] = "Bawsie",
-							["nome"] = "Bloodlust <Bawsie>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 10,
-										["b_amt"] = 0,
-										["c_dmg"] = 811857,
-										["g_amt"] = 0,
-										["n_max"] = 49457,
-										["targets"] = {
-											["Archmage Xylem"] = 1328200,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 516343,
-										["n_min"] = 22084,
-										["g_dmg"] = 0,
-										["counter"] = 24,
-										["total"] = 1328200,
-										["c_max"] = 100892,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["r_amt"] = 0,
-										["c_min"] = 48547,
-									}, -- [1]
-									[17253] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["c_dmg"] = 627948,
-										["g_amt"] = 0,
-										["n_max"] = 103182,
-										["targets"] = {
-											["Archmage Xylem"] = 1170060,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 542112,
-										["n_min"] = 27374,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 1170060,
-										["c_max"] = 171862,
-										["id"] = 17253,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 91359,
-									},
-									[206933] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 588660,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Archmage Xylem"] = 588660,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 588660,
-										["c_max"] = 588660,
-										["id"] = 206933,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 588660,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1531851275,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 4880919.008773,
-							["start_time"] = 1531851234,
-							["delay"] = 1531851231,
-							["last_event"] = 1531851231,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 258,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Bawsie"] = 4990820,
-								["Bloodlust <Bawsie>"] = 102101,
-							},
-							["pets"] = {
-								"Bloodlust <Bawsie>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "HUNTER",
-							["totalover"] = 5098347.007517,
-							["total_without_pet"] = 14607098.007517,
-							["total"] = 14695236.007517,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-1303-06FB0BB8",
-							["totalabsorb"] = 0.007517,
-							["last_hps"] = 159722.145617465,
-							["targets"] = {
-								["Bawsie"] = 16835806,
-								["Bloodlust <Bawsie>"] = 1338476,
-							},
-							["totalover_without_pet"] = 0.007517,
-							["healing_taken"] = 13356760.007517,
-							["fight_component"] = true,
-							["end_time"] = 1531851275,
-							["healing_from"] = {
-								["Bawsie"] = true,
-							},
-							["nome"] = "Bawsie",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[164857] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bawsie"] = 898151,
-											["Bloodlust <Bawsie>"] = 102101,
-										},
-										["n_max"] = 145860,
-										["targets"] = {
-											["Bawsie"] = 2271371,
-											["Bloodlust <Bawsie>"] = 1250338,
-										},
-										["n_min"] = 35152,
-										["counter"] = 38,
-										["overheal"] = 1000252,
-										["total"] = 3521709,
-										["c_max"] = 0,
-										["id"] = 164857,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 3521709,
-										["n_amt"] = 38,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[252897] = {
-										["c_amt"] = 2,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bawsie"] = 174184,
-										},
-										["n_max"] = 234310,
-										["targets"] = {
-											["Bawsie"] = 895184,
-										},
-										["n_min"] = 70808,
-										["counter"] = 4,
-										["overheal"] = 174184,
-										["total"] = 895184,
-										["c_max"] = 590066,
-										["id"] = 252897,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 590066,
-										["m_crit"] = 0,
-										["c_min"] = 590066,
-										["m_amt"] = 0,
-										["n_curado"] = 305118,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bawsie"] = 3656616,
-										},
-										["n_max"] = 1897583,
-										["targets"] = {
-											["Bawsie"] = 7703498,
-										},
-										["n_min"] = 556,
-										["counter"] = 69,
-										["overheal"] = 3656616,
-										["total"] = 7703498,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 7703498,
-										["n_amt"] = 69,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-									[224765] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bawsie"] = 261869,
-										},
-										["n_max"] = 462523,
-										["targets"] = {
-											["Bawsie"] = 2486707,
-										},
-										["n_min"] = 119063,
-										["counter"] = 10,
-										["overheal"] = 261869,
-										["total"] = 2486707,
-										["c_max"] = 0,
-										["id"] = 224765,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 2486707,
-										["n_amt"] = 10,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1531851185,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 255,
-							["totaldenied"] = 0.007517,
-							["delay"] = 0,
-							["last_event"] = 1531851268,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorb"] = 0.007344,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Bawsie"] = true,
-								["Bloodlust <Bawsie>"] = true,
-							},
-							["targets"] = {
-								["Bloodlust <Bawsie>"] = 88138,
-							},
-							["targets_overheal"] = {
-								["Bloodlust <Bawsie>"] = 5426,
-							},
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.007344,
-							["end_time"] = 1531851275,
-							["classe"] = "PET",
-							["totalover"] = 5426.007344,
-							["total_without_pet"] = 88138.007344,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["fight_component"] = true,
-							["total"] = 88138.007344,
-							["healing_taken"] = 1338476.007344,
-							["ownerName"] = "Bawsie",
-							["nome"] = "Bloodlust <Bawsie>",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1531851237,
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bloodlust <Bawsie>"] = 5426,
-										},
-										["n_max"] = 26583,
-										["targets"] = {
-											["Bloodlust <Bawsie>"] = 88138,
-										},
-										["n_min"] = 777,
-										["counter"] = 8,
-										["overheal"] = 5426,
-										["total"] = 88138,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 88138,
-										["n_amt"] = 8,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["heal_enemy"] = {
-							},
-							["serial"] = "Pet-0-4241-1673-10291-20196-01025093D0",
-							["custom"] = 0,
-							["last_event"] = 1531851231,
-							["on_hold"] = false,
-							["totaldenied"] = 0.007344,
-							["delay"] = 1531851231,
-							["tipo"] = 2,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 258,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 258,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[190927] = {
-										["activedamt"] = 0,
-										["id"] = 190927,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[204081] = {
-										["activedamt"] = 0,
-										["id"] = 204081,
-										["targets"] = {
-										},
-										["uptime"] = 84,
-										["appliedamt"] = 1,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[194279] = {
-										["activedamt"] = 0,
-										["id"] = 194279,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 25,
-										["refreshamt"] = 94,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[185855] = {
-										["activedamt"] = 0,
-										["id"] = 185855,
-										["targets"] = {
-										},
-										["uptime"] = 36,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 477,
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[252202] = {
-										["activedamt"] = 3,
-										["id"] = 252202,
-										["targets"] = {
-										},
-										["uptime"] = 29,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[190931] = {
-										["activedamt"] = 3,
-										["id"] = 190931,
-										["targets"] = {
-										},
-										["uptime"] = 44,
-										["appliedamt"] = 3,
-										["refreshamt"] = 7,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[203415] = {
-										["activedamt"] = 1,
-										["id"] = 203415,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[242584] = {
-										["activedamt"] = 3,
-										["id"] = 242584,
-										["targets"] = {
-										},
-										["uptime"] = 29,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[201081] = {
-										["activedamt"] = 2,
-										["id"] = 201081,
-										["targets"] = {
-										},
-										["uptime"] = 61,
-										["appliedamt"] = 2,
-										["refreshamt"] = 6,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[188033] = {
-										["activedamt"] = 1,
-										["id"] = 188033,
-										["targets"] = {
-										},
-										["uptime"] = 92,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[72968] = {
-										["activedamt"] = 1,
-										["id"] = 72968,
-										["targets"] = {
-										},
-										["uptime"] = 92,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[227041] = {
-										["activedamt"] = 1,
-										["id"] = 227041,
-										["targets"] = {
-										},
-										["uptime"] = 45,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[164857] = {
-										["activedamt"] = 3,
-										["id"] = 164857,
-										["targets"] = {
-										},
-										["uptime"] = 43,
-										["appliedamt"] = 3,
-										["refreshamt"] = 84,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[215632] = {
-										["activedamt"] = 2,
-										["id"] = 215632,
-										["targets"] = {
-										},
-										["uptime"] = 40,
-										["appliedamt"] = 2,
-										["refreshamt"] = 18,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 139,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 255,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[186270] = 10,
-								[212436] = 6,
-								[190928] = 10,
-								[194277] = 1,
-								[781] = 2,
-								[203415] = 1,
-								[202800] = 1,
-								[190925] = 3,
-								[185855] = 2,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1531851275,
-							["nome"] = "Bawsie",
-							["pets"] = {
-								"Bloodlust <Bawsie>", -- [1]
-							},
-							["serial"] = "Player-1303-06FB0BB8",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Bawsie",
-							["nome"] = "Bloodlust <Bawsie>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[61684] = 1,
-								[2649] = 5,
-								[17253] = 12,
-							},
-							["serial"] = "Pet-0-4241-1673-10291-20196-01025093D0",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 258,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Bawsie"] = true,
-				},
-				["overall_added"] = true,
-				["last_events_tables"] = {
-					{
-						{
-							{
-								true, -- [1]
-								242316, -- [2]
-								352778, -- [3]
-								1531851263.713, -- [4]
-								3554512, -- [5]
-								"Archmage Xylem", -- [6]
-								nil, -- [7]
-								16, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								false, -- [1]
-								143924, -- [2]
-								557, -- [3]
-								1531851264.447, -- [4]
-								3555069, -- [5]
-								"Bawsie", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								false, -- [1]
-								143924, -- [2]
-								1135, -- [3]
-								1531851265.791, -- [4]
-								3556204, -- [5]
-								"Bawsie", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [3]
-							{
-								true, -- [1]
-								242316, -- [2]
-								381576, -- [3]
-								1531851265.791, -- [4]
-								3174628, -- [5]
-								"Archmage Xylem", -- [6]
-								nil, -- [7]
-								16, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [4]
-							{
-								false, -- [1]
-								143924, -- [2]
-								1691, -- [3]
-								1531851266.846, -- [4]
-								3176319, -- [5]
-								"Bawsie", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [5]
-							{
-								true, -- [1]
-								242316, -- [2]
-								373691, -- [3]
-								1531851267.393, -- [4]
-								2802628, -- [5]
-								"Archmage Xylem", -- [6]
-								nil, -- [7]
-								16, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [6]
-							{
-								false, -- [1]
-								143924, -- [2]
-								556, -- [3]
-								1531851268.184, -- [4]
-								2803184, -- [5]
-								"Bawsie", -- [6]
-								nil, -- [7]
-								0, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [7]
-							{
-								true, -- [1]
-								242316, -- [2]
-								349006, -- [3]
-								1531851269.394, -- [4]
-								2454178, -- [5]
-								"Archmage Xylem", -- [6]
-								nil, -- [7]
-								16, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [8]
-							{
-								4, -- [1]
-								231950, -- [2]
-								1, -- [3]
-								1531851269.64, -- [4]
-								2454178, -- [5]
-								"[*] Ley Line Energy", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [9]
-							{
-								true, -- [1]
-								231950, -- [2]
-								474373, -- [3]
-								1531851269.64, -- [4]
-								1979805, -- [5]
-								"[*] Ley Line Energy", -- [6]
-								nil, -- [7]
-								64, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [10]
-							{
-								4, -- [1]
-								231950, -- [2]
-								1, -- [3]
-								1531851269.64, -- [4]
-								1979805, -- [5]
-								"[*] Ley Line Energy", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [11]
-							{
-								true, -- [1]
-								231950, -- [2]
-								481081, -- [3]
-								1531851269.64, -- [4]
-								1498724, -- [5]
-								"[*] Ley Line Energy", -- [6]
-								nil, -- [7]
-								64, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [12]
-							{
-								4, -- [1]
-								231950, -- [2]
-								1, -- [3]
-								1531851270.182, -- [4]
-								1498724, -- [5]
-								"[*] Ley Line Energy", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [13]
-							{
-								true, -- [1]
-								231950, -- [2]
-								468464, -- [3]
-								1531851270.182, -- [4]
-								1030260, -- [5]
-								"[*] Ley Line Energy", -- [6]
-								nil, -- [7]
-								64, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [14]
-							{
-								true, -- [1]
-								231950, -- [2]
-								475845, -- [3]
-								1531851271.373, -- [4]
-								554415, -- [5]
-								"[*] Ley Line Energy", -- [6]
-								nil, -- [7]
-								64, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [15]
-							{
-								true, -- [1]
-								232007, -- [2]
-								1254083, -- [3]
-								1531851274.918, -- [4]
-								1, -- [5]
-								"[*] Darkness", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								699668, -- [10]
-							}, -- [16]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Bawsie", -- [6]
-							}, -- [17]
-						}, -- [1]
-						1531851274.918, -- [2]
-						"Bawsie", -- [3]
-						"HUNTER", -- [4]
-						4861980, -- [5]
-						"1m 31s", -- [6]
-						["dead_at"] = 91.439000000013,
-						["dead"] = true,
-					}, -- [1]
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Archmage Xylem",
-				["combat_counter"] = 11764,
-				["totals"] = {
-					370777400.97871, -- [1]
-					14695236, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 1,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Bawsie"] = 14695236.007517,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Bawsie"] = 370777401.001557,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1388316.599,
-				["combat_id"] = 258,
-				["instance_type"] = "scenario",
-				["frags"] = {
-				},
-				["data_fim"] = "20:14:36",
-				["data_inicio"] = "20:13:04",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					367690481, -- [1]
-					14607098, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 1,
-					}, -- [4]
-				},
-				["start_time"] = 1388224.594,
-				["contra"] = "Archmage Xylem",
-				["TimeData"] = {
-				},
-			}, -- [1]
 		},
 	},
-	["combat_counter"] = 11764,
-	["character_data"] = {
-		["logons"] = 1698,
+	["combat_counter"] = 11770,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["tabela_instancias"] = {
 	},
@@ -1278,9 +35,9 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328264681542,
-					["x"] = 541.250906892128,
-					["w"] = 208.361206054688,
+					["y"] = -397.328211809839,
+					["x"] = 541.25006094488,
+					["w"] = 208.360977172852,
 					["h"] = 127.507873535156,
 				},
 				["solo"] = {
@@ -1312,7 +69,7 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328264681542,
+					["y"] = -397.328211809839,
 					["x"] = 748.860984304405,
 					["w"] = 211.055404663086,
 					["h"] = 127.507873535156,
@@ -1373,7 +130,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1507661652,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "17",
+	["last_day"] = "06",
 	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -1383,9 +140,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = true,
-			["dps"] = 0,
-			["level"] = 1,
 			["author"] = "Details! Team",
+			["level"] = 1,
+			["dps"] = 0,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -2034,12 +791,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
 					["id"] = 1692,
 				},
-				["186490"] = {
-					"186490", -- [1]
-					"Chains of Fel", -- [2]
-					33, -- [3]
-					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
-					["id"] = 1800,
+				["156390"] = {
+					"156390", -- [1]
+					"Explosive Shard", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\6bf_explosive_shard", -- [4]
+					["id"] = 1696,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -2048,12 +805,12 @@ _detalhes_database = {
 					"Interface\\Icons\\inv_shield_38", -- [4]
 					["id"] = 1784,
 				},
-				["156390"] = {
-					"156390", -- [1]
-					"Explosive Shard", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\6bf_explosive_shard", -- [4]
-					["id"] = 1696,
+				["186490"] = {
+					"186490", -- [1]
+					"Chains of Fel", -- [2]
+					33, -- [3]
+					"INTERFACE\\ICONS\\inv_misc_steelweaponchain", -- [4]
+					["id"] = 1800,
 				},
 				["189009"] = {
 					"189009", -- [1]
@@ -2118,12 +875,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_vehicle_siegeenginecharge", -- [4]
 					["id"] = 1704,
 				},
-				["156240"] = {
-					"156240", -- [1]
-					"Acid Torrent (1)", -- [2]
-					10.7, -- [3]
-					"Interface\\Icons\\6bf_retched_blackrock", -- [4]
-					["id"] = 1696,
+				["180163"] = {
+					"180163", -- [1]
+					"Savage Strikes", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
+					["id"] = 1786,
 				},
 				["155794"] = {
 					"155794", -- [1]
@@ -2272,12 +1029,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
 					["id"] = 1787,
 				},
-				["180163"] = {
-					"180163", -- [1]
-					"Savage Strikes", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
-					["id"] = 1786,
+				["156240"] = {
+					"156240", -- [1]
+					"Acid Torrent (1)", -- [2]
+					10.7, -- [3]
+					"Interface\\Icons\\6bf_retched_blackrock", -- [4]
+					["id"] = 1696,
 				},
 				["185237"] = {
 					"185237", -- [1]
@@ -2368,10 +1125,10 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["y"] = -41.5555419921875,
 			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -2391,7 +1148,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
@@ -3044,7 +1801,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -3053,7 +1810,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["showamount"] = false,
+			["animate"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -3069,9 +1826,14 @@ _detalhes_database = {
 			["pre_pot_healers"] = false,
 		},
 	},
+	["last_encounter"] = "Tichondrius",
 	["nick_tag_cache"] = {
 		["last_version"] = 10,
-		["nextreset"] = 1533142376,
+		["nextreset"] = 1534440676,
+	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "The Arcway",
@@ -3084,12 +1846,7 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1516,
 		["previous_boss_killed_at"] = 1507663200,
 	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
-	["last_realversion"] = 130,
-	["last_version"] = "v7.3.5.5572",
+	["last_version"] = "v8.0.1.6035",
 	["combat_id"] = 258,
 	["savedStyles"] = {
 	},
@@ -3098,7 +1855,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["last_encounter"] = "Tichondrius",
+	["last_realversion"] = 132,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -3106,19 +1863,10 @@ _detalhes_database = {
 		["where"] = 1,
 	},
 	["force_font_outline"] = "",
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["character_data"] = {
+		["logons"] = 1700,
 	},
 	["cached_talents"] = {
-		["Player-1303-06FB0BB8"] = {
-			22918, -- [1]
-			22296, -- [2]
-			22277, -- [3]
-			22301, -- [4]
-			22300, -- [5]
-			22266, -- [6]
-			22298, -- [7]
-		},
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

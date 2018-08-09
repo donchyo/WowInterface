@@ -224,6 +224,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["From Template"] = "Desde la plantilla"
 	L["Full Scan"] = "Escaneo completo"
 	L["General Text Settings"] = "Preferencias generales de texto"
+	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
 	L["Glow"] = "Resplandor"
 	L["Glow Action"] = "Acción de resplandor"
 	L["Green Rune"] = "Runa verde"
@@ -259,6 +261,8 @@ Con |cFF00CC00>= 0|r se activará siempre.]=]
 	L["Hybrid Position"] = "Posición híbrida"
 	L["Hybrid Sort Mode"] = "Modo de orden híbrido"
 	L["Icon"] = "Icono"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	L["Icon Color"] = "Color de icono"
 	L["Icon Info"] = "Información de icono"
 	L["Icon Inset"] = "Interior del icono"
@@ -527,6 +531,8 @@ Sólo un valor coincidente puede ser escogido.]=]
 	L["Y Scale"] = "Ajuste de tamaño de Y"
 	L["Yellow Rune"] = "Runa amarilla"
 	L["Yes"] = "Si"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	L["Z Offset"] = "Posición de Z"
 	L["Z Rotation"] = "Rotación de Z"
 	L["Zoom"] = "Ampliar"

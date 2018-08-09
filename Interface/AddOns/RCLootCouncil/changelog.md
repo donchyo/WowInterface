@@ -1,3 +1,54 @@
+### v2.8.3
+---
+* **Trading**
+* The Group Leader now has an option to see whenever candidates trades items to the winners.
+* A warning is printed if a candidate trades an awarded item to the wrong person.
+
+
+* **Personal Loot**
+* The council can now see all items looted whether tradeable or not.
+* New buttons will appear for any items that can't be added to the session under the voting frame.
+* Usage options have been updated to only include PL options.
+
+
+* **Allow Keeping**
+* The Group Leader can now choose whether candidates can keep their items.
+* If enabled (disabled by default) candidates will see a popup asking if the want to keep the loot whenever they loot a tradeable item.
+
+
+###### Bugfixes
+* *Removed usage popup for non group leaders.*
+* *Usage popup should be more reliable (#350).*
+
+
+###### Dev
+* Two new comm messages (`not_tradeable` and `rejected_trade`).
+* Added UI section. This is the beginning of a consolidation of UI elements - everything will use this format soon ish.
+* Backwards compatibility isn't broken yet, but will be at some point.
+
+### v2.8.2
+---
+
+* **TradeUI**
+* Added an indicator for when you're in range of the trade target.
+* When in range, simply click the row in the TradeUI to initiate trade.
+* Note: There seems to be issues with automatically adding multiple items at once.
+* It also seems like something has changed that doesn't allow for as automatic trading as I'd hoped.
+
+
+###### Bugfixes
+* *Fixed an issue preventing automatic trading (#347).*
+
+
+### v2.8.1
+---
+###### Bugfixes
+* *Fixed a few issues with the TradeUI (#343, #344).*
+
+###### Dev
+* Added two new comm messages for when RCLootCouncil handles loot. See top of core.lua.
+
+
 ### v2.8.0 (patch 8.0)
 ---
 * **Personal Loot**

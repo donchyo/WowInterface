@@ -65,7 +65,7 @@ Returns the potential conditions for a trigger
 -- Lua APIs
 local tinsert, wipe = table.insert, wipe
 local pairs, next, type = pairs, next, type
-local BUFF_MAX_DISPLAY = _G.BUFF_MAX_DISPLAY
+local BUFF_MAX_DISPLAY = 255 -- Do tell when you find the real value.
 local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
 
 local WeakAuras = WeakAuras;
@@ -314,6 +314,10 @@ function WeakAuras.SetAuraVisibility(id, triggernum, cloneId, showOn, unitExists
 
   triggerState[cloneId] = triggerState[cloneId] or {};
   local state = triggerState[cloneId];
+  if (state.active ~= active) then
+    state.active = active;
+    state.changed = true;
+  end
   if (state.index ~= index) then
     state.index = index;
     state.changed = true;
@@ -497,6 +501,13 @@ function WeakAuras.ScanAuras(unit)
               if(aura_scan_cache[unit][filter].up_to_date < index) then
                 -- Query aura data
                 name, icon, count, debuffClass, duration, expirationTime, unitCaster, isStealable, _, spellId = UnitAura(unit, index, filter);
+                if (debuffClass == nil) then
+                  debuffClass = "none";
+                elseif (debuffClass == "") then
+                  debuffClass = "enrage"
+                else
+                  debuffClass = string.lower(debuffClass);
+                end
                 local tooltipSize1, tooltipSize2, tooltipSize3;
                 tooltip, _, tooltipSize1, tooltipSize2, tooltipSize3 = WeakAuras.GetAuraTooltipInfo(unit, index, filter);
                 tooltipSize = {tooltipSize1, tooltipSize2, tooltipSize3}
@@ -1494,7 +1505,7 @@ function BuffTrigger.Add(data)
         end
 
         if (trigger.type == "aura" and not(trigger.unit ~= "group" and trigger.autoclone)
-            and trigger.unit ~= "multi" and not(trigger.unit == "group" and not trigger.groupclone)) then
+          and trigger.unit ~= "multi" and not(trigger.unit == "group" and not trigger.groupclone)) then
           showOn = trigger.showOn;
         end
 
@@ -1785,6 +1796,13 @@ end
 
 function BuffTrigger.GetTriggerConditions(data, triggernum)
   local result = {};
+  local trigger;
+  if (triggernum == 0) then
+    trigger = data.trigger;
+  else
+    trigger = data.additional_triggers[triggernum].trigger;
+  end
+
   result["unitCaster"] = {
     display = L["Caster"],
     type = "string",
@@ -1808,6 +1826,14 @@ function BuffTrigger.GetTriggerConditions(data, triggernum)
     display = L["Name"],
     type = "string"
   }
+
+  if (trigger.type == "aura" and not(trigger.unit ~= "group" and trigger.autoclone) and trigger.unit ~= "multi" and not(trigger.unit == "group" and not trigger.groupclone)) then
+    result["buffed"] = {
+      display = L["Buffed/Debuffed"],
+      type = "bool",
+      test = "state and state.show and ((state.active and true or false) == (%s == 1))"
+    }
+  end
 
   return result;
 end

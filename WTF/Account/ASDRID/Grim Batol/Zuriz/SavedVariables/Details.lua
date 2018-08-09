@@ -7,9 +7,9 @@ _detalhes_database = {
 		["tabelas"] = {
 		},
 	},
-	["last_version"] = "v8.0.1.5985",
+	["last_version"] = "v8.0.1.6035",
 	["character_data"] = {
-		["logons"] = 2427,
+		["logons"] = 2429,
 	},
 	["tabela_instancias"] = {
 	},
@@ -35,9 +35,9 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328264681542,
-					["x"] = 541.249819245666,
-					["w"] = 208.361206054688,
+					["y"] = -397.328211809839,
+					["x"] = 541.25006094488,
+					["w"] = 208.360977172852,
 					["h"] = 127.507873535156,
 				},
 				["solo"] = {
@@ -69,10 +69,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328264681542,
+					["y"] = -397.328211809839,
 					["x"] = 748.860984304405,
 					["w"] = 211.055404663086,
-					["h"] = 127.507850646973,
+					["h"] = 127.507873535156,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -128,7 +128,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1528648187,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 131,
+	["last_realversion"] = 132,
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -140,8 +140,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
 			["dps"] = 0,
+			["author"] = "Details! Team",
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -187,7 +187,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -195,7 +195,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -203,7 +203,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -217,7 +217,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -1279,8 +1279,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["showamount"] = false,
 			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -1291,32 +1291,6 @@ _detalhes_database = {
 			},
 			["enabled"] = true,
 		},
-	},
-	["force_font_outline"] = "",
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1532798623,
-	},
-	["ignore_nicktag"] = false,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["combat_counter"] = 21483,
-	["combat_id"] = 739,
-	["savedStyles"] = {
-	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["last_encounter"] = "The Defense of Eonar",
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
 	},
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
@@ -1332,7 +1306,33 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1651,
 		["previous_boss_killed_at"] = 1528649949,
 	},
-	["last_day"] = "18",
+	["ignore_nicktag"] = false,
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1534106364,
+	},
+	["combat_counter"] = 21489,
+	["combat_id"] = 739,
+	["savedStyles"] = {
+	},
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["last_encounter"] = "The Defense of Eonar",
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["force_font_outline"] = "",
+	["last_day"] = "01",
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

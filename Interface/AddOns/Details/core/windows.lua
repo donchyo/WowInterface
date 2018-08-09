@@ -1118,52 +1118,9 @@
 		end	
 	end
 
---> tutorial bookmark
+--> tutorial bookmark (removed)
 	function _detalhes:TutorialBookmark (instance)
-	
 		_detalhes:SetTutorialCVar ("ATTRIBUTE_SELECT_TUTORIAL1", true)
-		
-		local func = function()
-			local f = CreateFrame ("frame", nil, instance.baseframe)
-			f:SetAllPoints();
-			f:SetFrameStrata ("FULLSCREEN")
-			f:SetBackdrop ({bgFile = [[Interface\AddOns\Details\images\background]], tile = true, tileSize = 16})
-			f:SetBackdropColor (0, 0, 0, 0.8)
-			
-			f.alert = CreateFrame ("frame", "DetailsTutorialBookmarkAlert", UIParent, "ActionBarButtonSpellActivationAlert")
-			f.alert:SetPoint ("topleft", f, "topleft")
-			f.alert:SetPoint ("bottomright", f, "bottomright")
-			f.alert.animOut:Stop()
-			f.alert.animIn:Play()
-			
-			f.text = f:CreateFontString (nil, "overlay", "GameFontNormal")
-			f.text:SetText (Loc ["STRING_MINITUTORIAL_BOOKMARK1"])
-			f.text:SetWidth (f:GetWidth()-15)
-			f.text:SetPoint ("center", f)
-			f.text:SetJustifyH ("center")
-			
-			f.bg = f:CreateTexture (nil, "border")
-			f.bg:SetTexture ([[Interface\ACHIEVEMENTFRAME\UI-Achievement-Parchment-Horizontal-Desaturated]])
-			f.bg:SetAllPoints()
-			f.bg:SetAlpha (0.8)
-			
-			f.textbg = f:CreateTexture (nil, "artwork")
-			f.textbg:SetTexture ([[Interface\ACHIEVEMENTFRAME\UI-Achievement-RecentHeader]])
-			f.textbg:SetPoint ("center", f)
-			f.textbg:SetAlpha (0.4)
-			f.textbg:SetTexCoord (0, 1, 0, 24/32)
-
-			f:SetScript ("OnMouseDown", function (self, button)
-				if (button == "RightButton") then
-					f.alert.animIn:Stop()
-					f.alert.animOut:Play()
-					_detalhes.switch:ShowMe (instance)
-					f:Hide()
-				end
-			end)
-		end
-		
-		_detalhes:GetFramework():ShowTutorialAlertFrame ("How to Use Bookmarks", "switch fast between displays", func)
 	end
 
 --> translate window
@@ -3067,10 +3024,12 @@
 	
 --> row text editor
 
-	local panel = _detalhes:CreateWelcomePanel ("DetailsWindowOptionsBarTextEditor", nil, 650, 210, true)
+	local panel = _detalhes:CreateWelcomePanel ("DetailsWindowOptionsBarTextEditor", nil, 650, 230, true)
 	panel:SetPoint ("center", UIParent, "center")
 	panel:Hide()
 	panel:SetFrameStrata ("FULLSCREEN")
+	Details.gump:ApplyStandardBackdrop (panel)
+	Details.gump:CreateTitleBar (panel, "Details! Custom Line Text Editor")
 	
 	function panel:Open (text, callback, host, default)
 		if (host) then
@@ -3085,18 +3044,24 @@
 		panel:Show()
 	end
 	
+	local y = -32
+	local buttonTemplate = Details.gump:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE")
+	
 	local textentry = _detalhes.gump:NewSpecialLuaEditorEntry (panel, 450, 185, "editbox", "$parentEntry", true)
-	textentry:SetPoint ("topleft", panel, "topleft", 10, -12)
+	textentry:SetPoint ("topleft", panel, "topleft", 10, y)
+	Details.gump:ApplyStandardBackdrop (textentry)
+	Details.gump:SetFontSize (textentry.editbox, 14)
+	Details.gump:ReskinSlider (textentry.scroll)
 	
 	local arg1_button = _detalhes.gump:NewButton (panel, nil, "$parentButton1", nil, 80, 20, function() textentry.editbox:Insert ("{data1}") end, nil, nil, nil, string.format (Loc ["STRING_OPTIONS_TEXTEDITOR_DATA"], "1"), 1)
 	local arg2_button = _detalhes.gump:NewButton (panel, nil, "$parentButton2", nil, 80, 20, function() textentry.editbox:Insert ("{data2}") end, nil, nil, nil, string.format (Loc ["STRING_OPTIONS_TEXTEDITOR_DATA"], "2"), 1)
 	local arg3_button = _detalhes.gump:NewButton (panel, nil, "$parentButton3", nil, 80, 20, function() textentry.editbox:Insert ("{data3}") end, nil, nil, nil, string.format (Loc ["STRING_OPTIONS_TEXTEDITOR_DATA"], "3"), 1)
-	arg1_button:SetPoint ("topright", panel, "topright", -12, -14)
-	arg2_button:SetPoint ("topright", panel, "topright", -12, -36)
-	arg3_button:SetPoint ("topright", panel, "topright", -12, -58)
-	arg1_button:InstallCustomTexture()
-	arg2_button:InstallCustomTexture()
-	arg3_button:InstallCustomTexture()
+	arg1_button:SetPoint ("topright", panel, "topright", -12, y)
+	arg2_button:SetPoint ("topright", panel, "topright", -12, y - (20*1))
+	arg3_button:SetPoint ("topright", panel, "topright", -12, y - (20*2))
+	arg1_button:SetTemplate (buttonTemplate)
+	arg2_button:SetTemplate (buttonTemplate)
+	arg3_button:SetTemplate (buttonTemplate)
 	
 	arg1_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_DATA_TOOLTIP"]
 	arg2_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_DATA_TOOLTIP"]
@@ -3211,70 +3176,37 @@
 		ColorSelection ( textentry.editbox, "|c" .. hex)
 	end
 	
-	local func_button = _detalhes.gump:NewButton (panel, nil, "$parentButton4", nil, 80, 20, function() textentry.editbox:Insert ("{func local player = ...; return 0;}") end, nil, nil, nil, Loc ["STRING_OPTIONS_TEXTEDITOR_FUNC"], 1)
+	local func_button = _detalhes.gump:NewButton (panel, nil, "$parentButton4", nil, 80, 20, function() textentry.editbox:Insert ("{func local player, combat = ...; return 0;}") end, nil, nil, nil, Loc ["STRING_OPTIONS_TEXTEDITOR_FUNC"], 1)
 	local color_button = _detalhes.gump:NewColorPickButton (panel, "$parentButton5", nil, color_func)
 	color_button:SetSize (80, 20)
-	func_button:SetPoint ("topright", panel, "topright", -12, -80)
-	color_button:SetPoint ("topright", panel, "topright", -12, -102)
-	func_button:InstallCustomTexture()
+	color_button:SetTemplate (buttonTemplate)
+	
+	func_button:SetPoint ("topright", panel, "topright", -12, y - (20*3))
+	color_button:SetPoint ("topright", panel, "topright", -12, y - (20*4))
+	func_button:SetTemplate (buttonTemplate)
 	
 	color_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_COLOR_TOOLTIP"]
 	func_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_FUNC_TOOLTIP"]
-	
-	--color_button:InstallCustomTexture()
-	
-	--local comma_button = _detalhes.gump:NewButton (panel, nil, "$parentButtonComma", nil, 80, 20, function() textentry.editbox:Insert ("_detalhes:comma_value ( )") end, nil, nil, nil, Loc ["STRING_OPTIONS_TEXTEDITOR_COMMA"])
-	--local tok_button = _detalhes.gump:NewButton (panel, nil, "$parentButtonTok", nil, 80, 20, function() textentry.editbox:Insert ("_detalhes:ToK2 ( )") end, nil, nil, nil, Loc ["STRING_OPTIONS_TEXTEDITOR_TOK"])
-	--comma_button:InstallCustomTexture()
-	--tok_button:InstallCustomTexture()
-	--comma_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_COMMA_TOOLTIP"]
-	--tok_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_TOK_TOOLTIP"]
-	
-	--comma_button:SetPoint ("topright", panel, "topright", -100, -14)
-	--tok_button:SetPoint ("topright", panel, "topright", -100, -36)
-
-
-
 	local done = function()
 		local text = panel.editbox:GetText()
-		--text = text:gsub ("\n", "")
-		
-		--local test = text
-	
-		--local function errorhandler(err)
-		--	return geterrorhandler()(err)
-		--end
-
-		--local code = [[local str = "STR"; str = _detalhes.string.replace (str, 100, 50, 75, {nome = "you", total = 10, total_without_pet = 5, damage_taken = 7, last_dps = 1, friendlyfire_total = 6, totalover = 2, totalabsorb = 4, totalover_without_pet = 6, healing_taken = 1, heal_enemy_amt = 2});]]
-		--code = code:gsub ("STR", test)
-
-		--local f = loadstring (code)
-		--if (not f) then
-		--	print ("loadstring failed:", f)
-		--end
-		--local err, two = xpcall (f, errorhandler)
-		--if (not err) then
-		--	return
-		--end
-		
 		panel.callback (text)
 		panel:Hide()
 	end
 	
 	local ok_button = _detalhes.gump:NewButton (panel, nil, "$parentButtonOk", nil, 80, 20, done, nil, nil, nil, Loc ["STRING_OPTIONS_TEXTEDITOR_DONE"], 1)
 	ok_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_DONE_TOOLTIP"]
-	ok_button:InstallCustomTexture()
-	ok_button:SetPoint ("topright", panel, "topright", -12, -174)
+	ok_button:SetTemplate (buttonTemplate)
+	ok_button:SetPoint ("topright", panel, "topright", -12, -194)
 	
 	local reset_button = _detalhes.gump:NewButton (panel, nil, "$parentDefaultOk", nil, 80, 20, function() textentry.editbox:SetText (panel.default) end, nil, nil, nil, Loc ["STRING_OPTIONS_TEXTEDITOR_RESET"], 1)
 	reset_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_RESET_TOOLTIP"]
-	reset_button:InstallCustomTexture()
-	reset_button:SetPoint ("topright", panel, "topright", -100, -152)
+	reset_button:SetTemplate (buttonTemplate)
+	reset_button:SetPoint ("topright", panel, "topright", -100, -172)
 	
 	local cancel_button = _detalhes.gump:NewButton (panel, nil, "$parentDefaultCancel", nil, 80, 20, function() textentry.editbox:SetText (panel.default_text); done(); end, nil, nil, nil, Loc ["STRING_OPTIONS_TEXTEDITOR_CANCEL"], 1)
 	cancel_button.tooltip = Loc ["STRING_OPTIONS_TEXTEDITOR_CANCEL_TOOLTIP"]
-	cancel_button:InstallCustomTexture()
-	cancel_button:SetPoint ("topright", panel, "topright", -100, -174)	
+	cancel_button:SetTemplate (buttonTemplate)
+	cancel_button:SetPoint ("topright", panel, "topright", -100, -194)	
 	
 	--update window
 	function _detalhes:OpenUpdateWindow()

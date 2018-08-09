@@ -1,10 +1,9 @@
 ------------------------------------------------------------------------
-r84 | fuda01 | 2018-07-18 16:47:39 +0000 (Wed, 18 Jul 2018) | 1 line
+r86 | fuda01 | 2018-07-23 17:43:41 +0000 (Mon, 23 Jul 2018) | 1 line
 Changed paths:
-   M /trunk/core.lua
+   M /trunk/.pkgmeta
    M /trunk/vexrunes.toc
-   M /trunk/vexrunes.xml
 
--
+- changed library entries
 ------------------------------------------------------------------------
 

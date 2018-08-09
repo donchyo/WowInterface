@@ -1,12 +1,12 @@
-lightweight tag 47802874845a6828e3a2ae2c8c4296c833716af4 v3.1.8
-Author:	GitHub <noreply@github.com>
-Date:	Thu Jul 19 17:52:16 2018 +0200
+tag fab3909f7daf84b3ad9033bce96b09c2571dd384 v3.2.1
+Author:	zanony <zanony@jsommer.at>
+Date:	Thu Aug 2 21:52:20 2018 +0200
 
-commit 47802874845a6828e3a2ae2c8c4296c833716af4
-Author: Jessica <zanony@jsommer.at>
-Date:   Thu Jul 19 17:52:16 2018 +0200
+ChocolateBar v3.2.1
 
-    Remove Location.lua
-    
-    Fix LUA Error with Location Module Ticket #69
+commit a2561b2930fad8b3f3af35015ab6f986826e7833
+Author: zanony <zanony@jsommer.at>
+Date:   Thu Aug 2 21:51:47 2018 +0200
+
+    Fix leaving Lightforged Warframe vehicle makes actionsbars unuseable.
 

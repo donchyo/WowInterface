@@ -1,3 +1,6 @@
+VER 3 010000000000001C " " "INV_MISC_QUESTIONMARK"
+/cast [talent:6/2] Spirit Bomb; [talent:6/3] Fel Devastation
+END
 VER 3 0100000000000017 "aadsada" "INV_Misc_QuestionMark"
 /tar grunrik
 /tar karashi
@@ -14,4 +17,7 @@ VER 3 0100000000000019 "infernal strike " "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000001A "sigil of flame" "INV_MISC_QUESTIONMARK"
 /cast [@player] sigil of flame
+END
+VER 3 010000000000001B "silence" "INV_MISC_QUESTIONMARK"
+/cast [@player] sigil of silence
 END

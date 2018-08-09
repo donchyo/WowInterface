@@ -240,8 +240,8 @@ Gnosis: disabled
 !InspectFix: disabled
 LibRangeCheck-2.0: enabled
 nRange: enabled
-OmniCC: disabled
-OmniCC_Config: disabled
+OmniCC: enabled
+OmniCC_Config: enabled
 oRA3: enabled
 Overachiever: disabled
 Overachiever_Tabs: disabled
@@ -336,7 +336,7 @@ iTargetingFrames: disabled
 vexrunes: disabled
 Prat-3.0_Libraries: disabled
 TidyPlates_Threat: enabled
-ElvUI_SLE: enabled
+ElvUI_SLE: disabled
 DailyGlobalCheck: disabled
 Dominos_Quest: disabled
 ConsLegion: disabled

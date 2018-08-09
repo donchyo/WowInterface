@@ -13,12 +13,12 @@ VExRT = {
 		["Text1"] = "Chains:\n||cffff0000Double break all||r\n1: Rik + Danne\n2: Suicide\n3: Jay + Vlone\n4: Everything",
 		["DefName"] = "Argus",
 		["LastUpdateName"] = "Ualhi-Ravencrest",
-		["enabled"] = true,
-		["OnlyPromoted"] = true,
+		["Scale"] = 100,
 		["LastUpdateTime"] = 1532283107,
+		["Alpha"] = 100,
 		["Width"] = 425.001159667969,
 		["Top"] = 925.333435058594,
-		["Strata"] = "BACKGROUND",
+		["FontName"] = "Interface\\Addons\\Details\\fonts\\Accidental Presidency.ttf",
 		["Black"] = {
 			"", -- [1]
 			"", -- [2]
@@ -27,9 +27,9 @@ VExRT = {
 		["BlackNames"] = {
 		},
 		["Height"] = 558.999938964844,
-		["FontName"] = "Interface\\Addons\\Details\\fonts\\Accidental Presidency.ttf",
-		["Alpha"] = 100,
-		["Scale"] = 100,
+		["Strata"] = "BACKGROUND",
+		["OnlyPromoted"] = true,
+		["enabled"] = true,
 	},
 	["ProfileKeys"] = {
 		["Pentaqt-Draenor"] = "default",
@@ -72,53 +72,163 @@ VExRT = {
 		["Pentazz-Draenor"] = "default",
 		["Donch-GrimBatol"] = "default",
 		["Pentalul-Draenor"] = "default",
+		["Krixidh-Ravencrest"] = "default",
+		["Smorcmagicia-Draenor"] = "default",
 		["Silbermoon-Silvermoon"] = "default",
-		["Krixidk-Ravencrest"] = "default",
-		["Kroxi-GrimBatol"] = "default",
+		["Pentazz-TwistingNether"] = "default",
+		["Krixidh-GrimBatol"] = "default",
 		["Pøhmil-TarrenMill"] = "default",
 		["Påhmil-TarrenMill"] = "default",
 		["Hehexd-Tichondrius"] = "default",
-		["Kriximonk-ValleyofHeroes-EU"] = "default",
-		["Daroislost-ValleyofHeroes-EU"] = "default",
-		["Krixiwarrior-ValleyofHeroes-EU"] = "default",
-		["Krixidk-ValleyofHeroes-EU"] = "default",
-		["Gnomalock-GrimBatol"] = "default",
+		["Krixidruid-ValleyofHeroes-EU"] = "default",
+		["Zolution-GrimBatol"] = "default",
+		["Kriximonk-Ravencrest"] = "default",
+		["Bawsie-GrimBatol"] = "default",
+		["Pentazx-Kazzak"] = "default",
 		["Pentstab-TwistingNether"] = "default",
-		["Krixikin-GrimBatol"] = "Not dk",
+		["Kevinmalone-TarrenMill"] = "default",
 		["Hehexdtwo-Tichondrius"] = "default",
 		["Kriximonk-GrimBatol"] = "default",
 		["Blobble-TarrenMill"] = "default",
 		["Pentaxd-ShatteredHand"] = "default",
 		["Pentamonk-Kazzak"] = "default",
 		["Pentamonk-Draenor"] = "default",
-		["Pehmol-TarrenMill"] = "default",
+		["Huehuehu-TarrenMill"] = "default",
 		["Plobble-Draenor"] = "default",
-		["Slobble-TarrenMill"] = "default",
+		["Magicianlul-Draenor"] = "default",
 		["Plobble-Lightbringer"] = "default",
 		["Pæhmil-TarrenMill"] = "default",
 		["Pentzi-Kazzak"] = "default",
 		["Smorchehexd-C'Thun"] = "default",
-		["Scripdidnine-TarrenMill"] = "default",
+		["Pentaz-TarrenMill"] = "default",
 		["Ptothelobble-Sargeras"] = "default",
 		["Pentawarr-TwistingNether"] = "default",
-		["Pentaz-TarrenMill"] = "default",
+		["Scripdidnine-TarrenMill"] = "default",
 		["Kezira-Ragnaros"] = "default",
-		["Magicianlul-Draenor"] = "default",
-		["Huehuehu-TarrenMill"] = "default",
+		["Slobble-TarrenMill"] = "default",
+		["Pehmol-TarrenMill"] = "default",
 		["Pohmil-TarrenMill"] = "default",
 		["Krixi-ValleyofHeroes-EU"] = "default",
-		["Kevinmalone-TarrenMill"] = "default",
-		["Pentazx-Kazzak"] = "default",
-		["Bawsie-GrimBatol"] = "default",
-		["Krixidh-GrimBatol"] = "default",
-		["Zolution-GrimBatol"] = "default",
-		["Krixidruid-ValleyofHeroes-EU"] = "default",
-		["Smorcmagicia-Draenor"] = "default",
-		["Pentazz-TwistingNether"] = "default",
+		["Krixikin-GrimBatol"] = "Not dk",
+		["Gnomalock-GrimBatol"] = "default",
+		["Krixidk-ValleyofHeroes-EU"] = "default",
+		["Krixiwarrior-ValleyofHeroes-EU"] = "default",
+		["Daroislost-ValleyofHeroes-EU"] = "default",
+		["Kriximonk-ValleyofHeroes-EU"] = "default",
+		["Kroxi-GrimBatol"] = "default",
+		["Krixidk-Ravencrest"] = "default",
 	},
 	["Arrow"] = {
 	},
 	["Encounter"] = {
+		["names"] = {
+			[1793] = "Dargrul the Underking",
+			[1809] = "Odyn",
+			[1825] = "Corstilax",
+			[1810] = "Warlord Parjesh",
+			[1572] = "Durumu the Forgotten",
+			[1080] = "Temple Guardian Anhuur",
+			[2017] = "Viz'aduum the Watcher",
+			[1795] = "Mannoroth",
+			[2082] = "Imonar the Soulhunter",
+			[1954] = "Maiden of Virtue",
+			[1081] = "Vanessa VanCleef",
+			[1812] = "King Deepbeard",
+			[1574] = "Primordius",
+			[2053] = "Domatrax",
+			[1559] = "Iron Qon",
+			[1575] = "Horridon",
+			[2055] = "Agronox",
+			[1959] = "Mana Devourer",
+			[1577] = "Jin'rokh the Breaker",
+			[1069] = "Baron Ashbury",
+			[1560] = "Twin Consorts",
+			[1957] = "Opera Hall",
+			[1829] = "Advisor Vandros",
+			[2057] = "Thrashbite the Scornful",
+			[1713] = "Kromog, Legend of the Mountain",
+			[1824] = "Helya",
+			[2076] = "Garothi Worldbreaker",
+			[1799] = "Archimonde",
+			[1815] = "Tirathon Saltheril",
+			[1704] = "Blackhand",
+			[1827] = "Ivanyr",
+			[1811] = "Lady Hatecoil",
+			[1816] = "Ash'Golm",
+			[1578] = "Megaera",
+			[1570] = "Council of Elders",
+			[1038] = "Corla, Herald of Twilight",
+			[2092] = "Argus the Unmaker",
+			[1832] = "Amalgam of Souls",
+			[1690] = "Blast Furnace",
+			[1696] = "Oregorger the Devourer",
+			[2074] = "Felhounds of Sargeras",
+			[1071] = "Commander Springvale",
+			[2039] = "Mephistroth",
+			[1039] = "Karsh Steelbender",
+			[1817] = "Glazer",
+			[1579] = "Lei Shen",
+			[1072] = "Lord Godfrey",
+			[2063] = "Aggramar",
+			[1838] = "Dresaron",
+			[1870] = "Advisor Melandrus",
+			[1826] = "Nal'tira",
+			[1040] = "Rom'ogg Bonecrusher",
+			[1691] = "Gruul",
+			[1961] = "Moroes",
+			[1850] = "Inquisitor Tormentorum",
+			[2065] = "Zuraal the Ascended",
+			[1965] = "Shade of Medivh",
+			[1695] = "The Iron Maidens",
+			[1073] = "Lord Walden",
+			[2066] = "Saprish",
+			[1692] = "Operator Thogar",
+			[1581] = "Ra-den",
+			[1822] = "Ymiron, the Fallen King",
+			[2067] = "Viceroy Nezhar",
+			[1960] = "Attumen the Huntsman",
+			[2064] = "Portal Keeper Hasabel",
+			[1814] = "Wrath of Azshara",
+			[2068] = "L'ura",
+			[1693] = "Hans'gar & Franzok",
+			[1836] = "Archdruid Glaidalis",
+			[1868] = "Patrol Captain Gerdo",
+			[2069] = "Varimathras",
+			[1837] = "Oakheart",
+			[1964] = "The Curator",
+			[2070] = "Antoran High Command",
+			[1805] = "Hymdall",
+			[1694] = "Beastlord Darmac",
+			[1075] = "Anraphet",
+			[1818] = "Cordana Felsong",
+			[1869] = "Talixae Flamewreath",
+			[1565] = "Tortos",
+			[1689] = "Flamebender Ka'graz",
+			[1790] = "Rokmora",
+			[1806] = "Hyrja",
+			[1060] = "\"Captain\" Cookie",
+			[1076] = "Earthrager Ptah",
+			[1813] = "Serpentrix",
+			[2073] = "The Coven of Shivarra",
+			[1828] = "General Xakal",
+			[1070] = "Baron Silverlaine",
+			[1791] = "Ularogg Cragshaper",
+			[1807] = "Fenryr",
+			[1823] = "Harbaron",
+			[1839] = "Shade of Xavius",
+			[1573] = "Ji-Kun",
+			[2075] = "The Defense of Eonar",
+			[1833] = "Ilysanna Ravencrest",
+			[2088] = "Kin'garoth",
+			[1792] = "Naraxas",
+			[1808] = "God-King Skovald",
+			[1062] = "Admiral Ripsnarl",
+			[1078] = "Rajh",
+			[1064] = "Glubtok",
+			[1576] = "Dark Animus",
+			[1065] = "Helix Gearbreaker",
+			[1063] = "Foe Reaper 5000",
+		},
 		["list"] = {
 			["Krixiqt"] = {
 				"^1577^6^1531597452^13^1^25^936.94^", -- [1]
@@ -199,6 +309,55 @@ VExRT = {
 				"^2017^8^1532211260^0^0^5^231.44^Rubstep", -- [76]
 				"^2017^8^1532211499^72^0^5^230.00^Aljan", -- [77]
 				"^2017^8^1532211702^88^0^5^231.44^Aljan", -- [78]
+				"^1815^8^1532431420^102^1^5^241.32^", -- [79]
+				"^1850^8^1532431610^147^1^5^241.32^", -- [80]
+				"^1817^8^1532431818^69^1^5^241.32^", -- [81]
+				"^1816^8^1532431934^95^1^5^241.32^", -- [82]
+				"^1818^8^1532432312^43^0^5^241.32^Takkah-Antonidas", -- [83]
+				"^1810^8^1532445009^87^1^5^244.22^", -- [84]
+				"^1811^8^1532445247^66^0^5^245.84^Onetrick", -- [85]
+				"^1811^8^1532445368^155^1^5^247.67^Onetrick", -- [86]
+				"^1813^8^1532445689^236^1^5^245.84^Bubax", -- [87]
+				"^1812^8^1532446100^122^1^5^245.84^", -- [88]
+				"^1814^8^1532446358^113^1^5^245.84^Bubax", -- [89]
+				"^2055^8^1532460556^88^1^5^245.81^", -- [90]
+				"^2057^8^1532460808^60^1^5^245.81^", -- [91]
+				"^2053^8^1532461123^85^0^5^243.38^Reckfrill", -- [92]
+				"^2053^8^1532461275^141^1^5^245.81^Onetrick", -- [93]
+				"^2039^8^1532461474^69^0^5^245.81^Imapirate", -- [94]
+				"^2039^8^1532461593^93^0^5^245.81^Onetrick", -- [95]
+				"^2039^8^1532461752^101^0^5^245.81^Onetrick", -- [96]
+				"^2039^8^1532461960^108^0^5^245.81^Бобрец-Азурегос", -- [97]
+				"^2076^16^1532541988^185^1^20^249.82^Muz", -- [98]
+				"^1815^8^1532863948^43^1^5^238.95^", -- [99]
+				"^1850^8^1532864084^95^1^5^239.39^", -- [100]
+				"^1817^8^1532864242^58^1^5^239.39^", -- [101]
+				"^1816^8^1532864344^49^1^5^239.39^", -- [102]
+				"^1818^8^1532864666^92^1^5^239.23^", -- [103]
+				"^1964^8^1532871817^12^0^5^241.16^Agonia-Antonidas", -- [104]
+				"^1964^8^1532871874^8^0^5^241.16^", -- [105]
+				"^1965^8^1532872040^81^1^5^241.16^", -- [106]
+				"^1959^8^1532872247^44^1^5^241.16^", -- [107]
+				"^2017^8^1532872529^36^0^5^241.16^Agonia-Antonidas", -- [108]
+				"^2017^8^1532872684^110^0^5^241.16^Lyv-Antonidas", -- [109]
+				"^2017^8^1532872911^39^0^5^241.16^Eispala-Antonidas", -- [110]
+				"^2017^8^1532873020^93^0^5^241.16^Eispala-Antonidas", -- [111]
+				"^2017^8^1532873214^129^1^5^241.16^Eispala-Antonidas", -- [112]
+				"^1693^16^1532879029^32^1^20^240.88^", -- [113]
+				"^1689^16^1532879117^38^1^20^240.88^", -- [114]
+				"^1713^16^1532879219^41^1^20^240.25^", -- [115]
+				"^1696^16^1532879488^27^1^20^240.41^", -- [116]
+				"^1691^16^1532879595^27^1^20^240.41^", -- [117]
+				"^1690^16^1532879719^438^1^20^240.41^", -- [118]
+				"^1694^16^1532880257^62^1^20^240.41^", -- [119]
+				"^1692^16^1532880445^31^1^20^240.41^", -- [120]
+				"^1695^16^1532880577^64^1^20^240.41^", -- [121]
+				"^1704^16^1532881012^56^1^20^245.65^", -- [122]
+				"^1790^8^1533673500^80^1^5^246.01^", -- [123]
+				"^1791^8^1533673813^154^1^5^245.03^", -- [124]
+				"^1792^8^1533674112^101^1^5^246.01^", -- [125]
+				"^1793^8^1533674350^118^1^5^246.01^", -- [126]
+				"^1696^14^1533837658^205^1^10^238.86^", -- [127]
 			},
 			["Kriximonk"] = {
 				"^2092^16^1531941418^78^0^20^241.79^Nex-Ravencrest", -- [1]
@@ -251,10 +410,43 @@ VExRT = {
 				"^2092^16^1532288447^389^0^20^250.45^Vlone-Ravencrest", -- [48]
 				"^2092^16^1532288915^519^0^20^250.54^Vlone-Ravencrest", -- [49]
 				"^2092^16^1532289836^583^1^20^251.48^Skogstokigx-Ravencrest", -- [50]
+				"^1790^8^1532434432^109^1^5^237.46^", -- [51]
+				"^1791^8^1532434873^167^1^5^237.46^Enanthatia-Doomhammer", -- [52]
+				"^1792^8^1532435170^120^1^5^237.46^", -- [53]
+				"^1793^8^1532435472^130^0^5^237.46^Onetrick-Ravencrest", -- [54]
+				"^1793^8^1532435712^143^1^5^237.46^Ryssfrilla-Ravencrest", -- [55]
+				"^2092^16^1532546634^92^0^20^250.21^Reckfrill-Ravencrest", -- [56]
+				"^2092^16^1532546782^561^1^20^250.21^Ogdanne-Ravencrest", -- [57]
+				"^1836^8^1532865893^58^1^5^240.44^", -- [58]
+				"^1837^8^1532866346^68^1^5^241.42^", -- [59]
+				"^1838^8^1532866891^123^1^5^241.27^Blackpaddl-Antonidas", -- [60]
+				"^1839^8^1532867254^81^1^5^240.44^", -- [61]
+				"^2076^16^1533146942^190^1^20^248.80^Ualhi", -- [62]
+				"^2092^16^1533149362^74^0^20^250.61^Oklikdh", -- [63]
+				"^2092^16^1533149533^118^0^20^250.56^Coolboy", -- [64]
+				"^2092^16^1533149728^545^1^20^250.66^Soonkyu", -- [65]
+				"^2076^16^1533751519^170^1^20^247.31^Snowstormx", -- [66]
+				"^2092^16^1533756820^517^1^20^250.45^Oklik", -- [67]
+				"^1069^2^1533838648^2^1^5^248.50^", -- [68]
+				"^1070^2^1533838725^2^1^5^248.50^", -- [69]
+				"^1071^2^1533838742^0^1^5^248.50^", -- [70]
+				"^1073^2^1533838816^3^1^5^248.50^", -- [71]
+				"^1072^2^1533838909^0^1^5^248.50^", -- [72]
+				"^1064^2^1533839171^8^1^5^248.50^", -- [73]
+				"^1065^2^1533839194^3^1^5^248.50^", -- [74]
+				"^1063^2^1533839237^2^1^5^248.50^", -- [75]
+				"^1062^2^1533839304^0^1^5^248.50^", -- [76]
+				"^1060^2^1533839322^1^1^5^248.50^", -- [77]
+				"^1081^2^1533839493^13^1^5^248.50^", -- [78]
+				"^1040^2^1533839775^1^1^5^248.50^", -- [79]
+				"^1038^2^1533839821^1^1^5^248.50^", -- [80]
+				"^1039^2^1533839868^9^1^5^248.50^", -- [81]
+				"^1080^2^1533840163^1^1^5^248.50^", -- [82]
+				"^1075^2^1533840321^0^1^5^248.50^", -- [83]
+				"^1076^2^1533840397^0^1^5^248.50^", -- [84]
+				"^1078^2^1533840520^0^1^5^248.50^", -- [85]
 			},
 			["Gnomalock"] = {
-			},
-			["Bawsie"] = {
 			},
 			["Krixidk"] = {
 				"^1957^8^1531075728^180^1^5^974.66^Slaked-Antonidas", -- [1]
@@ -304,12 +496,57 @@ VExRT = {
 				"^1869^8^1532112178^11^0^5^245.97^", -- [45]
 				"^1869^8^1532112251^83^1^5^245.97^Daggerdps", -- [46]
 				"^1870^8^1532112508^165^1^5^246.18^Misfists", -- [47]
+				"^1822^8^1532447895^93^1^5^252.13^", -- [48]
+				"^1823^8^1532448191^90^1^5^252.13^", -- [49]
+				"^1824^8^1532448485^188^1^5^252.13^", -- [50]
+				"^2063^16^1532542770^98^0^20^251.06^Bubax", -- [51]
+				"^2063^16^1532543029^268^0^20^248.21^Uran", -- [52]
+				"^2063^16^1532543382^208^0^20^248.20^Bubax", -- [53]
+				"^2063^16^1532543709^156^0^20^248.13^Bubax", -- [54]
+				"^2063^16^1532543967^362^0^20^248.16^Bubax", -- [55]
+				"^2063^16^1532544472^384^0^20^247.83^Krixidk", -- [56]
+				"^2063^16^1532544968^99^0^20^250.99^Vlone", -- [57]
+				"^2063^16^1532545201^278^0^20^251.21^Misfists", -- [58]
+				"^2063^16^1532545574^389^1^20^251.21^Dívina", -- [59]
+				"^2073^16^1533147466^4^0^20^249.64^", -- [60]
+				"^2063^16^1533147797^342^0^20^250.01^Eoghainn", -- [61]
+				"^2063^16^1533148222^7^0^20^250.86^", -- [62]
+				"^2063^16^1533148320^276^0^20^251.44^Oklikdh", -- [63]
+				"^2063^16^1533148729^359^1^20^250.59^", -- [64]
+				"^1795^16^1533340280^160^1^20^247.94^", -- [65]
+				"^1799^16^1533340692^105^0^20^247.94^", -- [66]
+				"^1799^16^1533340871^127^0^20^247.94^Krixidk", -- [67]
+				"^1799^16^1533341077^120^0^20^247.94^Krixidk", -- [68]
+				"^1799^16^1533341324^125^0^20^245.13^Krixidk", -- [69]
+				"^1799^16^1533341525^197^1^20^245.13^", -- [70]
+				"^2063^16^1533752619^88^0^20^251.01^Uran", -- [71]
+				"^2063^16^1533752846^245^0^20^251.07^Ogdanne", -- [72]
+				"^2063^16^1533753239^139^0^20^251.07^Oklik", -- [73]
+				"^2063^16^1533753510^315^0^20^250.99^Uran", -- [74]
+				"^2063^16^1533753992^266^0^20^250.99^Uran", -- [75]
+				"^2063^16^1533754334^6^0^20^250.99^Misfists", -- [76]
+				"^2063^16^1533754444^344^0^20^250.95^Kissefet", -- [77]
+				"^2063^16^1533754903^396^0^20^250.95^Ogdanne", -- [78]
+				"^2063^16^1533755487^376^0^20^250.95^Bubax", -- [79]
+				"^2063^16^1533755966^369^1^20^250.95^Aljan", -- [80]
 			},
-			["Kroxi"] = {
+			["Bawsie"] = {
 			},
-			["Krixidh"] = {
+			["Donch"] = {
 			},
 			["Zuriz"] = {
+			},
+			["Krixidh"] = {
+				"^1828^8^1532869448^74^1^5^238.79^Eispala-Antonidas", -- [1]
+				"^1826^8^1532869681^64^1^5^238.79^Blackpaddl-Antonidas", -- [2]
+				"^1825^8^1532870040^61^0^5^238.79^Lyv-Antonidas", -- [3]
+				"^1825^8^1532870169^77^1^5^238.79^", -- [4]
+				"^1827^8^1532870463^28^0^5^238.79^Blackpaddl-Antonidas", -- [5]
+				"^1827^8^1532870561^72^1^5^238.79^", -- [6]
+				"^1829^8^1532870784^184^0^5^238.79^Blackpaddl-Antonidas", -- [7]
+				"^1829^8^1532871049^135^1^5^238.79^", -- [8]
+			},
+			["Zetiz"] = {
 			},
 			["Krixi"] = {
 				"^2065^2^1531507828^60^1^5^927.02^", -- [1]
@@ -348,79 +585,10 @@ VExRT = {
 				"^1959^8^1531571830^32^1^5^958.74^", -- [34]
 				"^2017^8^1531572136^96^1^5^958.74^Yaoiprincess-Ravencrest", -- [35]
 			},
-			["Zetiz"] = {
+			["Kroxi"] = {
 			},
-			["Donch"] = {
+			["Zolution"] = {
 			},
-		},
-		["names"] = {
-			[1809] = "Odyn",
-			[1810] = "Warlord Parjesh",
-			[1572] = "Durumu the Forgotten",
-			[2017] = "Viz'aduum the Watcher",
-			[2082] = "Imonar the Soulhunter",
-			[1954] = "Maiden of Virtue",
-			[1812] = "King Deepbeard",
-			[1574] = "Primordius",
-			[2053] = "Domatrax",
-			[1559] = "Iron Qon",
-			[1575] = "Horridon",
-			[2055] = "Agronox",
-			[1560] = "Twin Consorts",
-			[1576] = "Dark Animus",
-			[2057] = "Thrashbite the Scornful",
-			[1815] = "Tirathon Saltheril",
-			[1577] = "Jin'rokh the Breaker",
-			[1816] = "Ash'Golm",
-			[1832] = "Amalgam of Souls",
-			[2039] = "Mephistroth",
-			[1817] = "Glazer",
-			[1579] = "Lei Shen",
-			[2063] = "Aggramar",
-			[2064] = "Portal Keeper Hasabel",
-			[1818] = "Cordana Felsong",
-			[1961] = "Moroes",
-			[1850] = "Inquisitor Tormentorum",
-			[2065] = "Zuraal the Ascended",
-			[2066] = "Saprish",
-			[1565] = "Tortos",
-			[1581] = "Ra-den",
-			[2067] = "Viceroy Nezhar",
-			[2068] = "L'ura",
-			[1836] = "Archdruid Glaidalis",
-			[2069] = "Varimathras",
-			[1805] = "Hymdall",
-			[2070] = "Antoran High Command",
-			[2088] = "Kin'garoth",
-			[1837] = "Oakheart",
-			[1957] = "Opera Hall",
-			[1869] = "Talixae Flamewreath",
-			[1811] = "Lady Hatecoil",
-			[1833] = "Ilysanna Ravencrest",
-			[1570] = "Council of Elders",
-			[1806] = "Hyrja",
-			[1822] = "Ymiron, the Fallen King",
-			[1965] = "Shade of Medivh",
-			[1808] = "God-King Skovald",
-			[1870] = "Advisor Melandrus",
-			[2092] = "Argus the Unmaker",
-			[1964] = "The Curator",
-			[1960] = "Attumen the Huntsman",
-			[1807] = "Fenryr",
-			[1823] = "Harbaron",
-			[1839] = "Shade of Xavius",
-			[2073] = "The Coven of Shivarra",
-			[2075] = "The Defense of Eonar",
-			[2074] = "Felhounds of Sargeras",
-			[1814] = "Wrath of Azshara",
-			[1813] = "Serpentrix",
-			[2076] = "Garothi Worldbreaker",
-			[1824] = "Helya",
-			[1838] = "Dresaron",
-			[1578] = "Megaera",
-			[1959] = "Mana Devourer",
-			[1573] = "Ji-Kun",
-			[1868] = "Patrol Captain Gerdo",
 		},
 	},
 	["InviteTool"] = {
@@ -14042,114 +14210,1021 @@ VExRT = {
 			"A250583Kriximonk1532290445", -- [13602]
 			"C250583Aljan-Ravencrest1532290463", -- [13603]
 			"9250583Oklik-Ravencrest1532290468", -- [13604]
+			"2250541Krixiqt1532542177", -- [13605]
+			"!2151937Krixiqt1532542177:4:3612:1808:1507:3336", -- [13606]
+			"A250541Yaoiprincess1532542183", -- [13607]
+			"!A151987Yaoiprincess1532542183:3:3612:1517:3337", -- [13608]
+			"3250541Fyrafrillor1532542185", -- [13609]
+			"!3151962Fyrafrillor1532542185:3:3612:1502:3528", -- [13610]
+			"2250582Dívina1532545964", -- [13611]
+			"!2152151Dívina1532545964:3:3612:1502:3528", -- [13612]
+			"8250582Reckfrill1532545966", -- [13613]
+			"1250582Snowstormx1532545967", -- [13614]
+			"3250582Kissefet1532545968", -- [13615]
+			"!3152133Kissefet1532545968:3:3612:1512:3336", -- [13616]
+			"A250582Yaoiprincess1532545968", -- [13617]
+			"6250582Krixidk1532545969", -- [13618]
+			"2250582Yuulna1532545975", -- [13619]
+			"A250582Misfists1532545980", -- [13620]
+			"7250582Muz1532545981", -- [13621]
+			"3250583Kissefet-Ravencrest1532547346", -- [13622]
+			"!3155853Kissefet-Ravencrest1532547346:3:3612:1517:3336", -- [13623]
+			"1250583Snowstormx-Ravencrest1532547346", -- [13624]
+			"5250583Temporas-Ravencrest1532547346", -- [13625]
+			"!5155847Temporas-Ravencrest1532547346:3:3612:1522:3336", -- [13626]
+			"7250583Muz-Ravencrest1532547346", -- [13627]
+			"!7152005Muz-Ravencrest1532547346:3:3612:1517:3337", -- [13628]
+			"A250583Misfists-Ravencrest1532547350", -- [13629]
+			"!A151972Misfists-Ravencrest1532547350:3:3612:1507:3336", -- [13630]
+			"A250583Yaoiprincess-Ravencrest1532547350", -- [13631]
+			"!A155854Yaoiprincess-Ravencrest1532547350:3:3612:1522:3336", -- [13632]
+			"6250583Hunkdk-Ravencrest1532547351", -- [13633]
+			"A250583Kriximonk1532547352", -- [13634]
+			"5250583Soonkyu-Ravencrest1532547353", -- [13635]
+			"!5155852Soonkyu-Ravencrest1532547353:3:3612:1512:3528", -- [13636]
+			"8250583Reckfrill-Ravencrest1532547355", -- [13637]
+			"7250583Bubax-Ravencrest1532547357", -- [13638]
+			"!7152283Bubax-Ravencrest1532547357:3:3612:1502:3528", -- [13639]
+			"2250583Uran-Ravencrest1532547367", -- [13640]
+			"B250583Vlone-Ravencrest1532547370", -- [13641]
+			"9250583Oklik-Ravencrest1532547371", -- [13642]
+			"C250583Aljan-Ravencrest1532547372", -- [13643]
+			"!A85385Kriximonk1532860936", -- [13644]
+			"2177520Krixiqt1532881077", -- [13645]
+			"!2138809Krixiqt1532881077", -- [13646]
+			"3250582Kardish-Frostmane1533144339", -- [13647]
+			"6250582Arthurian-GrimBatol1533144339", -- [13648]
+			"2250582Retributíon-Sylvanas1533144339", -- [13649]
+			"2250582Axyra-EarthenRing1533144341", -- [13650]
+			"A250582Hxxerre-Terenas1533144344", -- [13651]
+			"3250582Guilavin-Silvermoon1533144347", -- [13652]
+			"A250541Cloudfist1533147137", -- [13653]
+			"!A151988Cloudfist1533147137:3:3612:1512:3336", -- [13654]
+			"A250541Kriximonk1533147140", -- [13655]
+			"8250541Reckfrill1533147166", -- [13656]
+			"!8151937Reckfrill1533147166:4:3612:1808:1502:3528", -- [13657]
+			"7250582Muz1533149090", -- [13658]
+			"4250582Eoghainn1533149095", -- [13659]
+			"A250582Cloudfist1533149095", -- [13660]
+			"2250582Yuulna1533149099", -- [13661]
+			"2250582Dívina1533149101", -- [13662]
+			"B250582Vlone1533149110", -- [13663]
+			"!B152093Vlone1533149110:3:3612:1507:3336", -- [13664]
+			"8250582Reckfrill1533149111", -- [13665]
+			"2250583Dívina1533150276", -- [13666]
+			"7250583Muz1533150276", -- [13667]
+			"3250583Kissefet1533150277", -- [13668]
+			"4250583Eoghainn1533150277", -- [13669]
+			"A250583Cloudfist1533150277", -- [13670]
+			"2250583Yuulna1533150278", -- [13671]
+			"4250583Imapirate1533150280", -- [13672]
+			"8250583Reckfrill1533150281", -- [13673]
+			"5250583Coolboy1533150282", -- [13674]
+			"A250583Kriximonk1533150283", -- [13675]
+			"!A151986Kriximonk1533150283:3:3612:1502:3528", -- [13676]
+			"6250583Hunkdk1533150294", -- [13677]
+			"C250583Oklikdh1533150313", -- [13678]
+			"2250541Yuulna1533751702", -- [13679]
+			"!2152017Yuulna1533751702:3:3612:1502:3528", -- [13680]
+			"B250541Vlone1533751730", -- [13681]
+			"2250582Dívina1533756338", -- [13682]
+			"!2152093Dívina1533756338:3:3612:1502:3528", -- [13683]
+			"6250582Tokifuji1533756342", -- [13684]
+			"7250582Muz1533756343", -- [13685]
+			"7250582Bubax1533756346", -- [13686]
+			"!7152684Bubax1533756346:3:3612:1502:3528", -- [13687]
+			"3250582Kissefet1533756350", -- [13688]
+			"8250582Reckfrill1533756352", -- [13689]
+			"2250583Dívina1533757339", -- [13690]
+			"2250583Yuulna1533757342", -- [13691]
+			"7250583Bubax1533757343", -- [13692]
+			"A250583Cloudfist1533757344", -- [13693]
+			"4250583Eoghainn1533757348", -- [13694]
+			"!4155855Eoghainn1533757348:3:3612:1522:3336", -- [13695]
+			"A250583Kriximonk1533757349", -- [13696]
+			"8250583Reckfrill1533757349", -- [13697]
+			"A250583Misfists1533757352", -- [13698]
 		},
 	},
 	["ExCD2"] = {
 		["enabled"] = true,
 		["default_userDuration"] = {
 		},
-		["Save"] = {
-		},
+		["NoRaid"] = true,
 		["gnGUIDs"] = {
-			["Lillouille-EmeraldDream"] = 105,
-			["Hunkdk"] = 250,
+			["Anobe-Magtheridon"] = 102,
+			["Underpowered-Kilrogg"] = 265,
 			["Atod-Silvermoon"] = 66,
+			["Cloudfist"] = 268,
+			["Eispala-Antonidas"] = 70,
 			["Imapirate"] = 260,
-			["Onetrick"] = 71,
+			["Disaronno-DarkmoonFaire"] = 253,
+			["Katenyss-Elune"] = 70,
+			["Coltana-Silvermoon"] = 253,
+			["Grgeneral-Silvermoon"] = 62,
+			["Takkah-Antonidas"] = 105,
+			["Evaliax"] = 265,
+			["Lyv-Antonidas"] = 257,
+			["Lamachis-Outland"] = 260,
+			["Axyra-EarthenRing"] = 70,
+			["Lighteyes-Stormreaver"] = 65,
+			["Onetrick-Ravencrest"] = 71,
+			["Guilavin-Silvermoon"] = 253,
+			["Dívina"] = 70,
+			["Coolboy-Ravencrest"] = 257,
+			["Ryssfrilla-Ravencrest"] = 102,
+			["Depsi-Rexxar"] = 253,
+			["Cnorg-Ravencrest"] = 263,
+			["Kaisies-Dragonblight"] = 255,
+			["Daemonyka-Auchindoun"] = 257,
+			["Olì-EmeraldDream"] = 270,
+			["Vicsur"] = 269,
+			["Crazy-Ravencrest"] = 65,
+			["Lomegalu-Magtheridon"] = 72,
+			["Krixiqt"] = 66,
+			["Bubax"] = 263,
+			["Muz"] = 262,
+			["Knaifuwaifu-Aegwynn"] = 72,
+			["Kissefet-Ravencrest"] = 254,
+			["Panzy-Stormreaver"] = 259,
+			["Enanthatia-Doomhammer"] = 270,
+			["Скрытнаубица-Гордунни"] = 259,
+			["Zolution"] = 256,
+			["Slamzy"] = 253,
+			["Substar-Aggra(Português)"] = 102,
+			["Nallià-Hyjal"] = 64,
+			["Fyrafrillor"] = 253,
+			["Swaggro-Ravencrest"] = 72,
+			["Teeleaf-DefiasBrotherhood"] = 102,
+			["Mcdarknexx-DunModr"] = 265,
+			["Gnomalock"] = 265,
+			["Kadâj-Outland"] = 73,
+			["Aljan"] = 581,
+			["Yaoiprincess"] = 268,
+			["Evaliax-Ravencrest"] = 265,
+			["Hruthgar-Hellfire"] = 71,
+			["Magistre-Ragnaros"] = 62,
+			["Нолмо-Гордунни"] = 105,
+			["Nâzgul-Lightbringer"] = 72,
+			["Aljan-Ravencrest"] = 577,
+			["Ualhi"] = 263,
+			["Morgûe-Ravencrest"] = 259,
+			["Misfists-Ravencrest"] = 269,
+			["Mansafji-ArgentDawn"] = 265,
+			["Luggage-Silvermoon"] = 65,
+			["Agonia-Antonidas"] = 577,
+			["Hekkaria-AeriePeak"] = 102,
+			["Aepoh-Silvermoon"] = 65,
+			["Hunkdk"] = 250,
 			["Daggerdps-Ravencrest"] = 261,
+			["Rangikü-GrimBatol"] = 258,
 			["Ualhi-Ravencrest"] = 264,
 			["Bonestar-Antonidas"] = 251,
+			["Xsiv"] = 260,
 			["Louneth-Antonidas"] = 65,
 			["Gúccì-Ravencrest"] = 257,
-			["Evaliax"] = 267,
-			["Неоморф-Гордунни"] = 251,
+			["Shuaijiao"] = 268,
 			["Snowstormx-Ravencrest"] = 72,
+			["Shriekback-Quel'Thalas"] = 577,
 			["Arncelon-Frostmane"] = 70,
-			["Uran"] = 65,
-			["Nex-Ravencrest"] = 104,
+			["Cnorg"] = 263,
+			["Overdriven-ArgentDawn"] = 70,
+			["Vicsur-GrimBatol"] = 268,
+			["Karkzqt"] = 102,
 			["Zuriz"] = 264,
-			["Soonkyu-Ravencrest"] = 257,
+			["Soonkyu-Ravencrest"] = 256,
+			["Daddykarkz"] = 72,
 			["Breathe-Antonidas"] = 265,
 			["Misfists"] = 269,
 			["Nèémo-Ravencrest"] = 70,
-			["Onetrick-Ravencrest"] = 71,
-			["Dívina"] = 70,
+			["Uran"] = 65,
+			["Soonkyu"] = 256,
+			["Blackpaddl-Antonidas"] = 255,
+			["Sekkushi-Stormreaver"] = 253,
 			["Skogstokigx-Ravencrest"] = 256,
-			["Krixidk"] = 250,
+			["Hxxerre-Terenas"] = 269,
+			["Ater-DefiasBrotherhood"] = 70,
+			["Donch"] = 64,
 			["Smaug-Arakarahm"] = 260,
-			["Coolboy"] = 256,
+			["Cökke-DunModr"] = 266,
+			["Coolboy"] = 257,
 			["Vlone-Ravencrest"] = 105,
+			["Dramrík"] = 269,
+			["Kharsus-ColinasPardas"] = 71,
+			["Lewdbrew"] = 268,
 			["Muz-Ravencrest"] = 262,
 			["Slamzy-Ravencrest"] = 253,
+			["Anhieros-Alonsus"] = 251,
+			["Lillouille-EmeraldDream"] = 105,
 			["Thronerbe-Rexxar"] = 70,
-			["Nex"] = 104,
-			["Cnorg-Ravencrest"] = 263,
-			["Crazy-Ravencrest"] = 65,
-			["Cnorg"] = 263,
-			["Krixiqt"] = 66,
+			["Tryfe-Kor'gall"] = 260,
+			["Бобрец-Азурегос"] = 256,
+			["Enoxia-Stormrage"] = 257,
+			["Kardish-Frostmane"] = 253,
+			["Cutyon"] = 260,
+			["Неоморф-Гордунни"] = 251,
+			["Archeww-Draenor"] = 255,
+			["Hunkmg-Ravencrest"] = 63,
+			["Swaggro"] = 72,
+			["Эдминяша-Гордунни"] = 259,
+			["Ûroboros-Zul'jin"] = 102,
+			["Zetiz"] = 259,
 			["Kriximonk"] = 268,
-			["Вуся-Гордунни"] = 260,
-			["Muz"] = 262,
+			["Nex-Ravencrest"] = 104,
 			["Hunkdk-Ravencrest"] = 250,
-			["Kissefet-Ravencrest"] = 254,
-			["Coolboy-Ravencrest"] = 257,
-			["Katenyss-Elune"] = 70,
+			["Thodor-Azshara"] = 70,
+			["Vlone"] = 105,
+			["Farila-EmeraldDream"] = 65,
+			["Ekrz"] = 250,
+			["Wakéy-Silvermoon"] = 72,
+			["Knucklex-Antonidas"] = 269,
 			["Rubstep"] = 72,
 			["Yuulna-Ravencrest"] = 70,
-			["Hunkmg"] = 64,
-			["Kissefet"] = 254,
-			["Oklik-Ravencrest"] = 265,
-			["Reckfrill"] = 63,
+			["Elwevyn-Lightbringer"] = 254,
+			["Ballinmonk-Ravencrest"] = 270,
+			["Diviná"] = 255,
+			["Nex"] = 104,
 			["Ogdanne"] = 270,
 			["Jamés-Ravencrest"] = 105,
-			["Скрытнаубица-Гордунни"] = 259,
+			["Retributíon-Sylvanas"] = 65,
 			["Ogdanne-Ravencrest"] = 270,
 			["Yaoiprincess-Ravencrest"] = 268,
-			["Xgoddosia-Ravencrest"] = 65,
-			["Slamzy"] = 253,
+			["Rammerica-Dragonblight"] = 253,
+			["Temporas-Ravencrest"] = 258,
 			["Uran-Ravencrest"] = 65,
-			["Nallià-Hyjal"] = 64,
-			["Vlone"] = 105,
-			["Misfists-Ravencrest"] = 269,
-			["Dqdopop-Ravencrest"] = 70,
-			["Farila-EmeraldDream"] = 65,
+			["Kioyla-Silvermoon"] = 66,
+			["Xgoddosia-Ravencrest"] = 65,
 			["Themimic-Sylvanas"] = 255,
-			["Swaggro-Ravencrest"] = 72,
-			["Soonkyu"] = 257,
-			["Mcdarknexx-DunModr"] = 265,
-			["Morgûe-Ravencrest"] = 259,
-			["Daggerdps"] = 261,
-			["Gnomalock"] = 265,
-			["Dradoria-Eitrigg"] = 62,
-			["Yuulna"] = 70,
-			["Zetiz"] = 259,
-			["Snowstormx"] = 72,
-			["Yaoiprincess"] = 268,
-			["Evaliax-Ravencrest"] = 267,
-			["Donch"] = 64,
-			["Reckfrill-Ravencrest"] = 62,
-			["Dívina-Ravencrest"] = 70,
-			["Эдминяша-Гордунни"] = 259,
-			["Aljan"] = 577,
-			["Imapirate-Ravencrest"] = 259,
-			["Aljan-Ravencrest"] = 577,
-			["Ualhi"] = 264,
-			["Ballinmonk-Ravencrest"] = 270,
-			["Depsi-Rexxar"] = 253,
+			["Dqdopop-Ravencrest"] = 70,
 			["Crazy"] = 65,
+			["Bawsie"] = 255,
+			["Bubax-Ravencrest"] = 263,
+			["Hunkmg"] = 63,
+			["Вуся-Гордунни"] = 260,
+			["Oklik-Ravencrest"] = 265,
+			["Daggerdps"] = 261,
+			["Didrâ-ScarshieldLegion"] = 72,
+			["Dradoria-Eitrigg"] = 62,
+			["Arthurian-GrimBatol"] = 252,
+			["Eulogy-Silvermoon"] = 265,
+			["Snowstormx"] = 72,
+			["Sugarlipz-Quel'Thalas"] = 270,
+			["Rumelo-ArgentDawn"] = 252,
+			["Eoghainn"] = 260,
+			["Reckfrill-Ravencrest"] = 63,
+			["Dívina-Ravencrest"] = 70,
+			["Torq-Frostmane"] = 258,
+			["Kroxi"] = 73,
+			["Imapirate-Ravencrest"] = 259,
+			["Krixidh"] = 581,
+			["Eoghainn-Ravencrest"] = 259,
+			["Shykala-Stormrage"] = 64,
+			["Enuff-Outland"] = 262,
+			["Rodanim"] = 266,
 			["Temporas"] = 258,
 			["Oklik"] = 265,
-			["Bubax-Ravencrest"] = 263,
-			["Elwevyn-Lightbringer"] = 254,
+			["Berina-Haomarush"] = 254,
+			["Azhralius-DefiasBrotherhood"] = 103,
 			["Bøllebank-Hellfire"] = 72,
-			["Krixidh"] = 577,
-			["Grgeneral-Silvermoon"] = 62,
-			["Luggage-Silvermoon"] = 65,
-			["Hunkmg-Ravencrest"] = 63,
-			["Shriekback-Quel'Thalas"] = 577,
-			["Eoghainn-Ravencrest"] = 259,
+			["Deeproar-Silvermoon"] = 70,
+			["Rabïdclaws-Silvermoon"] = 577,
+			["Reckfrill"] = 63,
+			["Yuulna"] = 70,
+			["Tonze-Silvermoon"] = 102,
+			["Tokifuji"] = 250,
+		},
+		["CDECol"] = {
+			["179057;2"] = 5,
+			["4987;2"] = 6,
+			["196718;1"] = 4,
+			["32375;1"] = 6,
+			["192077;1"] = 5,
+			["198664;4"] = 6,
+			["61391;1"] = 3,
+			["204263;3"] = 3,
+			["29166;2"] = 7,
+			["200183;3"] = 6,
+			["204150;3"] = 4,
+			["115276;1"] = 6,
+			["51490;2"] = 3,
+			["57994;1"] = 5,
+			["109248;2"] = 5,
+			["115781;1"] = 5,
+			["15286;4"] = 6,
+			["115450;4"] = 6,
+			["77764;3"] = 5,
+			["207946;2"] = 1,
+			["115450;1"] = 6,
+			["207399;4"] = 4,
+			["31821;2"] = 4,
+			["192058;1"] = 5,
+			["6552;1"] = 5,
+			["98008;4"] = 4,
+			["88423;5"] = 6,
+			["204263;2"] = 3,
+			["475;1"] = 6,
+			["33891;5"] = 6,
+			["106839;3"] = 5,
+			["49576;2"] = 3,
+			["1044;1"] = 10,
+			["15487;2"] = 5,
+			["62618;2"] = 4,
+			["5484;2"] = 5,
+			["114052;4"] = 6,
+			["1766;1"] = 5,
+			["1022;1"] = 2,
+			["64901;3"] = 6,
+			["116849;4"] = 1,
+			["33206;2"] = 1,
+			["97462;3"] = 4,
+			["77130;4"] = 6,
+			["10060;2"] = 6,
+			["77761;4"] = 5,
+			["28730;1"] = 7,
+			["91802;1"] = 5,
+			["196718;2"] = 6,
+			["108199;2"] = 3,
+			["6940;2"] = 1,
+			["147362;1"] = 5,
+			["49576;1"] = 3,
+			["108280;4"] = 6,
+			["171156;1"] = 5,
+			["73325;2"] = 10,
+			["31842;2"] = 6,
+			["96231;1"] = 5,
+			["6940;3"] = 1,
+			["171152;1"] = 5,
+			["47788;3"] = 1,
+			["213915;4"] = 7,
+			["527;3"] = 6,
+			["89808;1"] = 6,
+			["108281;2"] = 6,
+			["633;1"] = 9,
+			["527;2"] = 6,
+			["64843;3"] = 6,
+			["102342;5"] = 1,
+			["108281;4"] = 6,
+			["4987;1"] = 6,
+			["116705;1"] = 5,
+			["115310;4"] = 6,
+			["116844;1"] = 1,
+			["47528;1"] = 5,
+			["119381;1"] = 5,
+			["109248;3"] = 5,
+			["740;5"] = 6,
+			["97462;2"] = 4,
+			["47476;1"] = 5,
+			["15487;4"] = 5,
+			["10060;4"] = 3,
+			["106839;4"] = 5,
+			["29166;5"] = 7,
+			["46968;1"] = 5,
+			["78675;2"] = 5,
+			["73325;3"] = 10,
+			["204018;3"] = 1,
+			["73325;1"] = 4,
+			["19647;1"] = 5,
+			["2139;1"] = 5,
+		},
+		["Save"] = {
 		},
 		["Left"] = -435.466888427734,
+		["default_userCD"] = {
+		},
+		["Top"] = 797.476440429688,
+		["SplitOpt"] = true,
+		["SortByAvailability"] = true,
+		["lock"] = true,
+		["colSet"] = {
+			{
+				["fontSize"] = 10,
+				["frameGeneral"] = true,
+				["iconGray"] = true,
+				["methodsGeneral"] = true,
+				["iconSize"] = 16,
+				["frameWidth"] = 130,
+				["frameBetweenLines"] = 0,
+				["textureAlphaBackground"] = 0.3,
+				["fontOutline"] = true,
+				["visibilityGeneral"] = true,
+				["fontShadow"] = true,
+				["methodsAlphaNotInRangeNum"] = 90,
+				["fontGeneral"] = true,
+				["frameLines"] = 15,
+				["textGeneral"] = true,
+				["posY"] = 416.271697998047,
+				["textureBorderSize"] = 0,
+				["frameAnchorBottom"] = true,
+				["enabled"] = true,
+				["fontName"] = "Interface\\AddOns\\xCT+\\media\\homespun.ttf",
+				["blacklistGeneral"] = true,
+				["posX"] = 463.975311279297,
+				["textureGeneral"] = true,
+				["iconGeneral"] = true,
+				["frameColumns"] = 1,
+				["textureAlphaTimeLine"] = 0.8,
+				["frameScale"] = 100,
+				["textureAnimation"] = true,
+				["textureAlphaCooldown"] = 1,
+			}, -- [1]
+			{
+				["textureColorTextCastR"] = 1,
+				["textureColorBackgroundActiveR"] = 1,
+				["iconPosition"] = 1,
+				["frameBetweenLines"] = 0,
+				["textureColorTextCooldownR"] = 1,
+				["methodsStyleAnimation"] = 1,
+				["enabled"] = true,
+				["textureColorBackgroundCastR"] = 1,
+				["blacklistGeneral"] = true,
+				["textureColorTimeLineActiveB"] = 1,
+				["textureColorBackgroundActiveG"] = 1,
+				["textureAnimation"] = false,
+				["textTemplateCenter"] = "",
+				["textureColorTimeLineCooldownR"] = 1,
+				["textureColorBackgroundDefaultR"] = 1,
+				["iconSize"] = 40,
+				["textureColorTimeLineCastR"] = 1,
+				["fontShadow"] = false,
+				["posY"] = 276.634613037109,
+				["textureColorBackgroundCooldownB"] = 1,
+				["textureColorTimeLineCastG"] = 1,
+				["textureColorBackgroundCastB"] = 1,
+				["textureColorTextActiveG"] = 1,
+				["frameColumns"] = 1,
+				["textureColorTextDefaultG"] = 1,
+				["textureColorTextDefaultR"] = 1,
+				["textureColorBackgroundActiveB"] = 1,
+				["textureColorBackgroundDefaultB"] = 1,
+				["textureColorBackgroundCooldownR"] = 1,
+				["textureColorTextCooldownB"] = 0.5,
+				["fontOutline"] = true,
+				["textureColorTextCastB"] = 0.5,
+				["textureColorBackgroundDefaultG"] = 1,
+				["frameLines"] = 4,
+				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar17.tga",
+				["textureColorTimeLineCooldownG"] = 1,
+				["textureColorTextActiveB"] = 0.5,
+				["fontName"] = "Interface\\AddOns\\ExRT\\media\\skurri.ttf",
+				["textureColorTimeLineDefaultB"] = 1,
+				["textureAlphaBackground"] = 0,
+				["frameWidth"] = 45,
+				["textureColorTimeLineCooldownB"] = 1,
+				["textureColorTextCastG"] = 1,
+				["fontSize"] = 10,
+				["iconGray"] = false,
+				["textureColorTextCooldownG"] = 0.5,
+				["textureColorTimeLineCastB"] = 1,
+				["frameGeneral"] = true,
+				["textureColorTimeLineDefaultR"] = 1,
+				["posX"] = 348.767700195313,
+				["textureBorderSize"] = 0,
+				["textTemplateLeft"] = "",
+				["textureColorTextActiveR"] = 0.5,
+				["textureAlphaTimeLine"] = 0,
+				["textureColorTimeLineDefaultG"] = 1,
+				["methodsTimeLineAnimation"] = 1,
+				["methodsCooldown"] = true,
+				["methodsAlphaNotInRangeNum"] = 90,
+				["textIconName"] = true,
+				["textureClassTimeLine"] = false,
+				["frameScale"] = 90,
+				["textureColorTimeLineActiveG"] = 1,
+				["textureColorTimeLineActiveR"] = 1,
+				["textureClassText"] = false,
+				["textureColorTextDefaultB"] = 1,
+				["textTemplateRight"] = "",
+				["textureColorBackgroundCooldownG"] = 1,
+				["textureColorBackgroundCastG"] = 1,
+				["textureClassBackground"] = false,
+				["textureAlphaCooldown"] = 0.7,
+			}, -- [2]
+			{
+				["textureColorTextCastR"] = 1,
+				["textureColorBackgroundActiveR"] = 0,
+				["iconPosition"] = 1,
+				["frameBetweenLines"] = 3,
+				["textureColorTextCooldownR"] = 1,
+				["methodsStyleAnimation"] = 1,
+				["enabled"] = true,
+				["textureColorBackgroundCastR"] = 0,
+				["blacklistGeneral"] = true,
+				["textureColorTimeLineActiveB"] = 1,
+				["textureColorBackgroundActiveG"] = 0,
+				["textureAnimation"] = true,
+				["textTemplateCenter"] = "",
+				["textureColorTimeLineCooldownR"] = 0.24,
+				["textureColorBackgroundDefaultR"] = 0,
+				["iconSize"] = 18,
+				["textureColorTimeLineCastR"] = 1,
+				["fontShadow"] = true,
+				["posY"] = 735.122497558594,
+				["textureBorderSize"] = 1,
+				["textureColorTimeLineCastG"] = 0.46,
+				["textureColorBackgroundCastB"] = 0,
+				["textureColorTextActiveG"] = 1,
+				["textureColorTextDefaultG"] = 1,
+				["textureColorTextDefaultR"] = 1,
+				["textureColorBackgroundActiveB"] = 0,
+				["textureColorBackgroundDefaultB"] = 0,
+				["textureColorBackgroundCooldownR"] = 0,
+				["textureColorTextCooldownB"] = 1,
+				["fontOutline"] = false,
+				["textureColorTextCastB"] = 1,
+				["textureColorBackgroundDefaultG"] = 0,
+				["frameLines"] = 15,
+				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar16.tga",
+				["textureColorTimeLineCooldownG"] = 0.44,
+				["textureColorTextActiveB"] = 1,
+				["fontName"] = "Interface\\AddOns\\ExRT\\media\\skurri.ttf",
+				["textureColorTimeLineDefaultB"] = 1,
+				["frameScale"] = 100,
+				["frameWidth"] = 130,
+				["textureColorTimeLineCooldownB"] = 1,
+				["textureColorTextCastG"] = 1,
+				["fontSize"] = 12,
+				["iconGray"] = false,
+				["textureColorTextCooldownG"] = 1,
+				["textureColorTimeLineCastB"] = 0.1,
+				["visibilityPartyType"] = 2,
+				["posX"] = 462.609252929688,
+				["textureColorTimeLineDefaultG"] = 0.44,
+				["textureClassText"] = false,
+				["textureColorTextDefaultB"] = 1,
+				["textureAlphaTimeLine"] = 0.9,
+				["textTemplateRight"] = "%stime%",
+				["methodsTimeLineAnimation"] = 2,
+				["textureColorBackgroundCastG"] = 0,
+				["methodsAlphaNotInRangeNum"] = 90,
+				["textureColorBackgroundCooldownB"] = 0,
+				["textureColorBackgroundCooldownG"] = 0,
+				["textureClassBackground"] = false,
+				["textureColorTimeLineActiveG"] = 0.37,
+				["textureColorTimeLineActiveR"] = 1,
+				["textureColorTimeLineDefaultR"] = 0.24,
+				["textureAlphaBackground"] = 0.3,
+				["textureColorTextActiveR"] = 1,
+				["textureClassTimeLine"] = true,
+				["textureBorderColorA"] = 1,
+				["textTemplateLeft"] = "%name%",
+				["textureAlphaCooldown"] = 1,
+			}, -- [3]
+			{
+				["textureColorTextCastR"] = 1,
+				["methodsNewSpellNewLine"] = true,
+				["textureColorBackgroundActiveR"] = 0,
+				["iconPosition"] = 1,
+				["frameBetweenLines"] = 0,
+				["textureColorTextCooldownR"] = 1,
+				["methodsStyleAnimation"] = 1,
+				["fontGeneral"] = true,
+				["textureColorBackgroundCastR"] = 0,
+				["blacklistGeneral"] = true,
+				["textureColorTimeLineActiveB"] = 0,
+				["iconGeneral"] = true,
+				["textureColorBackgroundActiveG"] = 0,
+				["textureAnimation"] = true,
+				["textTemplateCenter"] = "",
+				["textTemplateLeft"] = "%name%",
+				["textureColorBackgroundDefaultR"] = 0,
+				["iconSize"] = 40,
+				["textureColorTimeLineCastR"] = 0,
+				["fontShadow"] = true,
+				["posY"] = 948.712097167969,
+				["textureColorBackgroundCooldownB"] = 0,
+				["textureColorTimeLineCastG"] = 0,
+				["textureColorBackgroundCastB"] = 0,
+				["textureColorTextActiveG"] = 1,
+				["frameColumns"] = 5,
+				["textureColorTextDefaultG"] = 1,
+				["textureColorTextDefaultR"] = 1,
+				["textureColorBackgroundActiveB"] = 0,
+				["textureColorTimeLineActiveR"] = 0,
+				["textureColorBackgroundCooldownR"] = 0,
+				["textureColorTextCooldownB"] = 0.6,
+				["fontOutline"] = true,
+				["visibilityGeneral"] = true,
+				["textureColorTextCastB"] = 0.5,
+				["textureColorBackgroundDefaultG"] = 0,
+				["frameLines"] = 60,
+				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar17.tga",
+				["textureColorTimeLineCooldownG"] = 0,
+				["textureColorTextActiveB"] = 1,
+				["textureColorTimeLineDefaultR"] = 0,
+				["textureColorTimeLineDefaultB"] = 0,
+				["textureAlphaBackground"] = 0.8,
+				["frameWidth"] = 17,
+				["textureClassTimeLine"] = true,
+				["textureColorTextCastG"] = 1,
+				["fontSize"] = 10,
+				["iconGray"] = true,
+				["textureColorTextCooldownG"] = 0.6,
+				["frameScale"] = 100,
+				["textureColorTimeLineCastB"] = 0,
+				["frameGeneral"] = true,
+				["methodsGeneral"] = true,
+				["textureColorBackgroundDefaultB"] = 0,
+				["posX"] = 289.2255859375,
+				["textTemplateRight"] = "",
+				["textureColorBackgroundCooldownG"] = 0,
+				["textureGeneral"] = true,
+				["textureAlphaTimeLine"] = 1,
+				["textureColorTextDefaultB"] = 1,
+				["methodsTimeLineAnimation"] = 2,
+				["methodsCooldown"] = true,
+				["methodsAlphaNotInRangeNum"] = 90,
+				["textureBorderSize"] = 0,
+				["textureClassText"] = false,
+				["textureClassBackground"] = false,
+				["textureColorTimeLineActiveG"] = 0,
+				["fontName"] = "Interface\\AddOns\\xCT+\\media\\homespun.ttf",
+				["textureColorTimeLineDefaultG"] = 0,
+				["textureColorTimeLineCooldownB"] = 0,
+				["textureColorTextActiveR"] = 1,
+				["textureColorTimeLineCooldownR"] = 0,
+				["textureColorBackgroundCastG"] = 0,
+				["textGeneral"] = true,
+				["textureAlphaCooldown"] = 0.5,
+			}, -- [4]
+			{
+				["textureColorTextCastR"] = 1,
+				["textureColorBackgroundActiveR"] = 1,
+				["iconPosition"] = 1,
+				["textureClassBackground"] = false,
+				["textureColorBackgroundCooldownG"] = 1,
+				["textureColorBackgroundCastR"] = 1,
+				["blacklistGeneral"] = true,
+				["textureColorTimeLineActiveB"] = 1,
+				["textureColorBackgroundActiveG"] = 1,
+				["textureAnimation"] = false,
+				["textTemplateCenter"] = "",
+				["textureColorTimeLineCooldownR"] = 1,
+				["textureColorBackgroundDefaultR"] = 1,
+				["iconSize"] = 40,
+				["textureColorTimeLineCastR"] = 1,
+				["fontShadow"] = false,
+				["posY"] = 478.594451904297,
+				["textureColorBackgroundCooldownB"] = 1,
+				["textureColorTimeLineCastG"] = 1,
+				["textureColorBackgroundCastB"] = 1,
+				["textureColorTextActiveG"] = 1,
+				["frameColumns"] = 4,
+				["textureColorTextDefaultG"] = 1,
+				["fontLeftSize"] = 12,
+				["textureColorTextDefaultR"] = 1,
+				["textureColorBackgroundActiveB"] = 1,
+				["textureColorTimeLineActiveR"] = 1,
+				["textureColorBackgroundCooldownR"] = 1,
+				["textureColorTextCooldownB"] = 0.5,
+				["fontOutline"] = true,
+				["textureColorTextCastB"] = 0.5,
+				["textureColorBackgroundDefaultG"] = 1,
+				["visibilityPartyType"] = 1,
+				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar2.tga",
+				["textureColorTimeLineCooldownG"] = 1,
+				["textureClassText"] = false,
+				["textureColorTimeLineDefaultR"] = 1,
+				["textureColorTimeLineDefaultB"] = 1,
+				["textureAlphaBackground"] = 0,
+				["frameWidth"] = 40,
+				["textureColorTimeLineCooldownB"] = 1,
+				["textureColorTextCastG"] = 1,
+				["fontSize"] = 10,
+				["iconGray"] = false,
+				["textureColorTextCooldownG"] = 0.5,
+				["frameGeneral"] = true,
+				["textureColorTimeLineCastB"] = 1,
+				["frameLines"] = 7,
+				["textureColorBackgroundCastG"] = 1,
+				["textureColorTextActiveB"] = 0.5,
+				["posX"] = 342.475311279297,
+				["textureColorTextActiveR"] = 0.5,
+				["textureColorTextCooldownR"] = 1,
+				["fontName"] = "Interface\\AddOns\\ExRT\\media\\skurri.ttf",
+				["textureAlphaTimeLine"] = 0,
+				["textTemplateLeft"] = "",
+				["methodsTimeLineAnimation"] = 1,
+				["methodsCooldown"] = true,
+				["methodsAlphaNotInRangeNum"] = 90,
+				["textIconName"] = true,
+				["frameAnchorBottom"] = true,
+				["methodsDisableActive"] = true,
+				["textureColorTimeLineActiveG"] = 1,
+				["textureColorTimeLineDefaultG"] = 1,
+				["textureColorTextDefaultB"] = 1,
+				["textureColorBackgroundDefaultB"] = 1,
+				["textTemplateRight"] = "",
+				["methodsStyleAnimation"] = 1,
+				["frameScale"] = 125,
+				["textureClassTimeLine"] = false,
+				["textureAlphaCooldown"] = 0.7,
+			}, -- [5]
+			{
+				["textureColorTextCastR"] = 1,
+				["textureColorBackgroundActiveR"] = 1,
+				["iconPosition"] = 1,
+				["frameBetweenLines"] = 0,
+				["textureColorTextCooldownR"] = 1,
+				["textureColorBackgroundCooldownG"] = 1,
+				["fontGeneral"] = true,
+				["textureColorBackgroundCastR"] = 1,
+				["blacklistGeneral"] = true,
+				["textureColorTimeLineActiveB"] = 1,
+				["textureColorBackgroundActiveG"] = 1,
+				["textureAnimation"] = false,
+				["textTemplateCenter"] = "",
+				["textureColorTimeLineCooldownR"] = 1,
+				["textureColorBackgroundDefaultR"] = 1,
+				["iconSize"] = 36,
+				["textureColorTimeLineCastR"] = 1,
+				["fontShadow"] = true,
+				["posY"] = 967.230346679687,
+				["textureColorBackgroundCooldownB"] = 1,
+				["textureColorTimeLineCastG"] = 1,
+				["textureColorBackgroundCastB"] = 1,
+				["textureColorTextActiveG"] = 1,
+				["frameColumns"] = 10,
+				["textureColorTextDefaultG"] = 1,
+				["textureColorTextDefaultR"] = 1,
+				["textureColorBackgroundActiveB"] = 1,
+				["textureColorBackgroundDefaultB"] = 1,
+				["textureColorBackgroundCooldownR"] = 1,
+				["textureColorTextCooldownB"] = 1,
+				["fontOutline"] = true,
+				["visibilityGeneral"] = true,
+				["textureColorTextCastB"] = 0.5,
+				["textureColorBackgroundDefaultG"] = 1,
+				["frameLines"] = 1,
+				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar17.tga",
+				["textureColorTimeLineCooldownG"] = 1,
+				["textureColorTextActiveB"] = 1,
+				["textureColorTimeLineDefaultR"] = 1,
+				["textureColorTimeLineDefaultB"] = 1,
+				["textureAlphaBackground"] = 0,
+				["frameWidth"] = 37,
+				["textureClassTimeLine"] = false,
+				["textureColorTextCastG"] = 1,
+				["fontSize"] = 10,
+				["iconGray"] = false,
+				["textureColorTextCooldownG"] = 1,
+				["textureColorTimeLineCastB"] = 1,
+				["frameGeneral"] = true,
+				["frameScale"] = 100,
+				["methodsStyleAnimation"] = 1,
+				["posX"] = 139.731002807617,
+				["textTemplateLeft"] = "%name%",
+				["textTemplateRight"] = "",
+				["textureColorTimeLineDefaultG"] = 1,
+				["textureAlphaTimeLine"] = 0,
+				["textureColorBackgroundCastG"] = 1,
+				["methodsTimeLineAnimation"] = 1,
+				["methodsCooldown"] = true,
+				["methodsAlphaNotInRangeNum"] = 100,
+				["textIconName"] = true,
+				["fontName"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Homespun.ttf",
+				["methodsDisableActive"] = true,
+				["textureColorTimeLineActiveG"] = 1,
+				["textureClassText"] = false,
+				["textureColorTextDefaultB"] = 1,
+				["textureColorTimeLineActiveR"] = 1,
+				["textureColorTextActiveR"] = 1,
+				["textureClassBackground"] = false,
+				["textureBorderSize"] = 0,
+				["textureColorTimeLineCooldownB"] = 1,
+				["textureAlphaCooldown"] = 0.5,
+			}, -- [6]
+			{
+				["fontSize"] = 12,
+				["frameGeneral"] = true,
+				["iconGray"] = true,
+				["methodsGeneral"] = true,
+				["frameBetweenLines"] = 0,
+				["fontOutline"] = true,
+				["visibilityGeneral"] = true,
+				["methodsAlphaNotInRangeNum"] = 90,
+				["textureGeneral"] = true,
+				["frameLines"] = 15,
+				["textureAnimation"] = true,
+				["posY"] = 627.443481445313,
+				["textureBorderSize"] = 0,
+				["textGeneral"] = true,
+				["posX"] = 430.416290283203,
+				["fontShadow"] = false,
+				["blacklistGeneral"] = true,
+				["iconSize"] = 16,
+				["textureAlphaTimeLine"] = 0.8,
+				["iconGeneral"] = true,
+				["frameColumns"] = 1,
+				["fontGeneral"] = true,
+				["textureAlphaBackground"] = 0.3,
+				["frameWidth"] = 130,
+				["textureAlphaCooldown"] = 1,
+			}, -- [7]
+			{
+				["fontSize"] = 12,
+				["frameGeneral"] = true,
+				["iconGray"] = true,
+				["methodsGeneral"] = true,
+				["fontOutline"] = true,
+				["visibilityGeneral"] = true,
+				["fontShadow"] = false,
+				["frameLines"] = 15,
+				["posY"] = 834.850769042969,
+				["posX"] = 816.499572753906,
+				["textGeneral"] = true,
+				["frameWidth"] = 130,
+				["fontGeneral"] = true,
+				["blacklistGeneral"] = true,
+				["iconSize"] = 16,
+				["textureAlphaTimeLine"] = 0.8,
+				["iconGeneral"] = true,
+				["frameColumns"] = 1,
+				["textureGeneral"] = true,
+				["textureAlphaBackground"] = 0.3,
+				["textureAnimation"] = true,
+				["textureAlphaCooldown"] = 1,
+			}, -- [8]
+			{
+				["fontSize"] = 12,
+				["frameGeneral"] = true,
+				["iconGray"] = true,
+				["methodsGeneral"] = true,
+				["posX"] = 385.521911621094,
+				["visibilityGeneral"] = true,
+				["textureGeneral"] = true,
+				["frameLines"] = 15,
+				["posY"] = 948.878784179688,
+				["fontShadow"] = false,
+				["textGeneral"] = true,
+				["textureAnimation"] = true,
+				["frameScale"] = 100,
+				["blacklistGeneral"] = true,
+				["fontGeneral"] = true,
+				["fontOutline"] = true,
+				["iconGeneral"] = true,
+				["iconSize"] = 16,
+				["textureAlphaTimeLine"] = 0.8,
+				["textureAlphaBackground"] = 0.3,
+				["frameWidth"] = 130,
+				["textureAlphaCooldown"] = 1,
+			}, -- [9]
+			{
+				["frameGeneral"] = true,
+				["iconGray"] = true,
+				["textGeneral"] = true,
+				["methodsGeneral"] = true,
+				["textureGeneral"] = true,
+				["blacklistGeneral"] = true,
+				["posY"] = 834.850769042969,
+				["fontGeneral"] = true,
+				["iconGeneral"] = true,
+				["posX"] = 816.499572753906,
+				["visibilityGeneral"] = true,
+				["fontOutline"] = true,
+				["textureAnimation"] = true,
+				["fontShadow"] = false,
+			}, -- [10]
+			{
+				["textureColorTextCastR"] = 1,
+				["textureColorBackgroundActiveR"] = 1,
+				["iconPosition"] = 1,
+				["frameBetweenLines"] = 0,
+				["textureColorTextCooldownR"] = 1,
+				["textureColorBackgroundCooldownG"] = 1,
+				["textureColorBackgroundCastR"] = 1,
+				["frameBlackBack"] = 0,
+				["blacklistGeneral"] = true,
+				["textureColorTimeLineActiveB"] = 1,
+				["textureColorBackgroundActiveG"] = 1,
+				["textureColorTimeLineDefaultG"] = 1,
+				["textTemplateCenter"] = "%time%",
+				["textTemplateLeft"] = "",
+				["textureColorBackgroundDefaultR"] = 1,
+				["iconSize"] = 35,
+				["textureColorTimeLineCastR"] = 1,
+				["textureColorBackgroundCastG"] = 1,
+				["textureColorTimeLineCastG"] = 1,
+				["textureColorBackgroundCastB"] = 1,
+				["textureColorTextActiveG"] = 1,
+				["frameColumns"] = 3,
+				["iconHideBlizzardEdges"] = true,
+				["textureColorTextDefaultG"] = 1,
+				["fontLeftSize"] = 12,
+				["textureColorTextDefaultR"] = 1,
+				["textureColorBackgroundActiveB"] = 1,
+				["textureColorBackgroundDefaultB"] = 1,
+				["textureColorBackgroundCooldownR"] = 1,
+				["textureColorTextCooldownB"] = 0.5,
+				["fontOutline"] = true,
+				["visibilityGeneral"] = true,
+				["textureColorTextCastB"] = 0.5,
+				["textureColorBackgroundDefaultG"] = 1,
+				["frameLines"] = 10,
+				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar17.tga",
+				["textureColorTimeLineCooldownG"] = 1,
+				["textureColorTextActiveB"] = 0.5,
+				["textureColorTimeLineDefaultR"] = 1,
+				["textureColorTimeLineDefaultB"] = 1,
+				["textureAlphaBackground"] = 0,
+				["frameWidth"] = 37,
+				["textureClassTimeLine"] = false,
+				["textureColorTextCastG"] = 1,
+				["fontSize"] = 10,
+				["textureColorTextCooldownG"] = 0.5,
+				["methodsHideOwnSpells"] = true,
+				["textureColorTimeLineCastB"] = 1,
+				["textureBorderSize"] = 0,
+				["textureClassText"] = false,
+				["textureColorTimeLineCooldownR"] = 1,
+				["textureColorTextActiveR"] = 0.5,
+				["textureColorTimeLineCooldownB"] = 1,
+				["methodsStyleAnimation"] = 1,
+				["frameAlpha"] = 100,
+				["textureAlphaTimeLine"] = 0,
+				["textureClassBackground"] = false,
+				["methodsTimeLineAnimation"] = 1,
+				["methodsCooldown"] = true,
+				["methodsAlphaNotInRangeNum"] = 100,
+				["textIconName"] = true,
+				["textureColorTextDefaultB"] = 1,
+				["frameAnchorBottom"] = true,
+				["textureColorTimeLineActiveG"] = 1,
+				["textureColorBackgroundCooldownB"] = 1,
+				["textureSmoothAnimationDuration"] = 50,
+				["frameScale"] = 99,
+				["textTemplateRight"] = "",
+				["textureColorTimeLineActiveR"] = 1,
+				["methodsIconTooltip"] = true,
+				["fontName"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Expressway.ttf",
+				["textureAlphaCooldown"] = 0.7,
+			}, -- [11]
+		},
+		["Priority"] = {
+			[77130] = 1,
+			[4987] = 1,
+			[2782] = 1,
+			[115450] = 1,
+			[527] = 1,
+		},
+		["CDE"] = {
+			[204018] = true,
+			[196718] = true,
+			[10060] = true,
+			[47788] = true,
+			[73325] = true,
+			[527] = true,
+			[97462] = true,
+			[31842] = true,
+			[204263] = true,
+			[15286] = true,
+			[89808] = true,
+			[6940] = true,
+			[49576] = true,
+			[33891] = true,
+			[740] = true,
+			[115276] = true,
+			[179057] = true,
+			[33206] = true,
+			[109248] = true,
+			[132469] = true,
+			[64901] = true,
+			[114052] = true,
+			[1022] = true,
+			[77130] = true,
+			[51490] = true,
+			[46968] = true,
+			[102342] = true,
+			[115450] = true,
+			[171152] = true,
+			[116844] = true,
+			[108280] = true,
+			[106898] = true,
+			[192058] = true,
+			[207399] = true,
+			[116849] = true,
+			[1044] = true,
+			[4987] = true,
+			[192077] = true,
+			[62618] = true,
+			[29166] = true,
+			[108281] = true,
+			[204150] = true,
+			[213915] = true,
+			[32375] = true,
+			[28730] = true,
+			[98008] = true,
+			[5484] = true,
+			[2782] = true,
+			[31821] = true,
+			[119381] = true,
+			[633] = true,
+			[200183] = true,
+			[475] = true,
+			[108199] = true,
+			[64843] = true,
+			[115310] = true,
+			[198664] = true,
+		},
 		["userDB"] = {
 			{
 				114052, -- [1]
@@ -14580,687 +15655,52 @@ VExRT = {
 				}, -- [3]
 				["user"] = true,
 			}, -- [39]
+			{
+				116844, -- [1]
+				"MONK", -- [2]
+				{
+					116844, -- [1]
+					45, -- [2]
+					5, -- [3]
+				}, -- [3]
+				["user"] = true,
+			}, -- [40]
+			{
+				204263, -- [1]
+				"PRIEST", -- [2]
+				[5] = {
+					204263, -- [1]
+					45, -- [2]
+					0, -- [3]
+				},
+				[4] = {
+					204263, -- [1]
+					45, -- [2]
+					0, -- [3]
+				},
+				["user"] = true,
+			}, -- [41]
+			{
+				51490, -- [1]
+				"SHAMAN", -- [2]
+				[4] = {
+					51490, -- [1]
+					45, -- [2]
+					0, -- [3]
+				},
+				["user"] = true,
+			}, -- [42]
+			{
+				132469, -- [1]
+				"DRUID", -- [2]
+				{
+					61391, -- [1]
+					30, -- [2]
+					0, -- [3]
+				}, -- [3]
+				["user"] = true,
+			}, -- [43]
 		},
-		["CDECol"] = {
-			["179057;2"] = 5,
-			["4987;2"] = 6,
-			["196718;1"] = 4,
-			["32375;1"] = 6,
-			["192077;1"] = 3,
-			["198664;4"] = 6,
-			["29166;2"] = 3,
-			["200183;3"] = 6,
-			["204150;3"] = 4,
-			["115276;1"] = 6,
-			["57994;1"] = 5,
-			["109248;2"] = 5,
-			["115781;1"] = 5,
-			["15286;4"] = 6,
-			["115450;4"] = 6,
-			["77764;3"] = 3,
-			["207946;2"] = 1,
-			["115450;1"] = 6,
-			["207399;4"] = 4,
-			["31821;2"] = 4,
-			["192058;1"] = 5,
-			["6552;1"] = 5,
-			["98008;4"] = 4,
-			["88423;5"] = 6,
-			["475;1"] = 6,
-			["33891;5"] = 6,
-			["106839;3"] = 5,
-			["49576;2"] = 3,
-			["1044;1"] = 10,
-			["15487;2"] = 5,
-			["62618;2"] = 4,
-			["5484;2"] = 5,
-			["114052;4"] = 6,
-			["1766;1"] = 5,
-			["1022;1"] = 2,
-			["2139;1"] = 5,
-			["116849;4"] = 1,
-			["97462;3"] = 4,
-			["77130;4"] = 6,
-			["10060;2"] = 6,
-			["77761;4"] = 3,
-			["73325;1"] = 4,
-			["91802;1"] = 5,
-			["204018;3"] = 1,
-			["73325;3"] = 10,
-			["6940;2"] = 1,
-			["147362;1"] = 5,
-			["78675;2"] = 5,
-			["108280;4"] = 6,
-			["46968;1"] = 5,
-			["29166;5"] = 3,
-			["106839;4"] = 5,
-			["96231;1"] = 5,
-			["10060;4"] = 3,
-			["31842;2"] = 6,
-			["6940;3"] = 1,
-			["15487;4"] = 5,
-			["213915;4"] = 3,
-			["97462;2"] = 4,
-			["108281;2"] = 6,
-			["740;5"] = 6,
-			["109248;3"] = 5,
-			["116705;1"] = 5,
-			["102342;5"] = 1,
-			["108281;4"] = 6,
-			["4987;1"] = 6,
-			["47528;1"] = 5,
-			["115310;4"] = 6,
-			["64843;3"] = 6,
-			["527;2"] = 6,
-			["119381;1"] = 5,
-			["633;1"] = 9,
-			["89808;1"] = 6,
-			["527;3"] = 6,
-			["47476;1"] = 5,
-			["73325;2"] = 10,
-			["47788;3"] = 1,
-			["171152;1"] = 5,
-			["171156;1"] = 5,
-			["49576;1"] = 3,
-			["108199;2"] = 3,
-			["196718;2"] = 6,
-			["28730;1"] = 7,
-			["33206;2"] = 1,
-			["19647;1"] = 5,
-			["64901;3"] = 6,
-		},
-		["default_userCD"] = {
-		},
-		["Top"] = 797.476440429688,
-		["SplitOpt"] = true,
-		["colSet"] = {
-			{
-				["fontSize"] = 10,
-				["frameGeneral"] = true,
-				["iconGray"] = true,
-				["methodsGeneral"] = true,
-				["visibilityGeneral"] = true,
-				["textureAnimation"] = true,
-				["frameBetweenLines"] = 0,
-				["frameScale"] = 100,
-				["fontOutline"] = true,
-				["iconSize"] = 16,
-				["fontGeneral"] = true,
-				["textureBorderSize"] = 0,
-				["textureAlphaTimeLine"] = 0.8,
-				["frameLines"] = 15,
-				["frameAnchorBottom"] = true,
-				["posY"] = 416.271697998047,
-				["methodsAlphaNotInRangeNum"] = 90,
-				["textGeneral"] = true,
-				["textureGeneral"] = true,
-				["fontName"] = "Interface\\AddOns\\xCT+\\media\\homespun.ttf",
-				["blacklistGeneral"] = true,
-				["posX"] = 494.502777099609,
-				["enabled"] = true,
-				["iconGeneral"] = true,
-				["frameColumns"] = 1,
-				["fontShadow"] = true,
-				["textureAlphaBackground"] = 0.3,
-				["frameWidth"] = 130,
-				["textureAlphaCooldown"] = 1,
-			}, -- [1]
-			{
-				["textureColorTextCastR"] = 1,
-				["textureColorBackgroundActiveR"] = 1,
-				["iconPosition"] = 1,
-				["frameBetweenLines"] = 0,
-				["textureColorTextCooldownR"] = 1,
-				["methodsStyleAnimation"] = 1,
-				["enabled"] = true,
-				["textureColorBackgroundCastR"] = 1,
-				["blacklistGeneral"] = true,
-				["textureColorTimeLineActiveB"] = 1,
-				["textureColorBackgroundActiveG"] = 1,
-				["textureAnimation"] = false,
-				["textTemplateCenter"] = "",
-				["textureColorTimeLineCooldownR"] = 1,
-				["textureColorBackgroundDefaultR"] = 1,
-				["iconSize"] = 40,
-				["textureColorTimeLineCastR"] = 1,
-				["fontShadow"] = false,
-				["posY"] = 274.838928222656,
-				["textureColorBackgroundCooldownB"] = 1,
-				["textureColorTimeLineCastG"] = 1,
-				["textureColorBackgroundCastB"] = 1,
-				["textureColorTextActiveG"] = 1,
-				["frameColumns"] = 1,
-				["textureColorTextDefaultG"] = 1,
-				["textureColorTextDefaultR"] = 1,
-				["textureColorBackgroundActiveB"] = 1,
-				["textureColorBackgroundDefaultB"] = 1,
-				["textureColorBackgroundCooldownR"] = 1,
-				["textureColorTextCooldownB"] = 0.5,
-				["fontOutline"] = true,
-				["textureColorTextCastB"] = 0.5,
-				["textureColorBackgroundDefaultG"] = 1,
-				["frameLines"] = 4,
-				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar17.tga",
-				["textureColorTimeLineCooldownG"] = 1,
-				["textureColorTextActiveB"] = 0.5,
-				["fontName"] = "Interface\\AddOns\\ExRT\\media\\skurri.ttf",
-				["textureColorTimeLineDefaultB"] = 1,
-				["textureAlphaBackground"] = 0,
-				["frameWidth"] = 45,
-				["textureColorTimeLineCooldownB"] = 1,
-				["textureColorTextCastG"] = 1,
-				["fontSize"] = 10,
-				["iconGray"] = false,
-				["textureColorTextCooldownG"] = 0.5,
-				["textureColorTimeLineCastB"] = 1,
-				["frameGeneral"] = true,
-				["textureClassBackground"] = false,
-				["posX"] = 378.397308349609,
-				["textureColorBackgroundCastG"] = 1,
-				["textureColorBackgroundCooldownG"] = 1,
-				["textTemplateRight"] = "",
-				["textureAlphaTimeLine"] = 0,
-				["textureColorTextDefaultB"] = 1,
-				["methodsTimeLineAnimation"] = 1,
-				["methodsCooldown"] = true,
-				["methodsAlphaNotInRangeNum"] = 90,
-				["textIconName"] = true,
-				["textureClassText"] = false,
-				["textureColorTimeLineActiveR"] = 1,
-				["textureColorTimeLineActiveG"] = 1,
-				["frameScale"] = 90,
-				["textureClassTimeLine"] = false,
-				["textureColorTimeLineDefaultG"] = 1,
-				["textureColorTextActiveR"] = 0.5,
-				["textTemplateLeft"] = "",
-				["textureBorderSize"] = 0,
-				["textureColorTimeLineDefaultR"] = 1,
-				["textureAlphaCooldown"] = 0.7,
-			}, -- [2]
-			{
-				["fontSize"] = 10,
-				["frameGeneral"] = true,
-				["iconGray"] = true,
-				["methodsGeneral"] = true,
-				["frameBetweenLines"] = 0,
-				["fontOutline"] = true,
-				["posX"] = 478.788452148438,
-				["iconSize"] = 16,
-				["textureAnimation"] = true,
-				["frameScale"] = 100,
-				["fontShadow"] = true,
-				["frameLines"] = 15,
-				["fontGeneral"] = true,
-				["posY"] = 950.170593261719,
-				["textureBorderSize"] = 0,
-				["textGeneral"] = true,
-				["methodsAlphaNotInRangeNum"] = 90,
-				["visibilityDisableRaid"] = true,
-				["blacklistGeneral"] = true,
-				["fontName"] = "Interface\\AddOns\\xCT+\\media\\homespun.ttf",
-				["textureGeneral"] = true,
-				["iconGeneral"] = true,
-				["frameColumns"] = 1,
-				["textureAlphaTimeLine"] = 0.8,
-				["textureAlphaBackground"] = 0.3,
-				["frameWidth"] = 130,
-				["textureAlphaCooldown"] = 1,
-			}, -- [3]
-			{
-				["textureColorTextCastR"] = 1,
-				["methodsNewSpellNewLine"] = true,
-				["textureColorBackgroundActiveR"] = 0,
-				["iconPosition"] = 1,
-				["frameBetweenLines"] = 0,
-				["textureColorTextCooldownR"] = 1,
-				["methodsStyleAnimation"] = 1,
-				["fontGeneral"] = true,
-				["textureColorBackgroundCastR"] = 0,
-				["blacklistGeneral"] = true,
-				["textureColorTimeLineActiveB"] = 0,
-				["iconGeneral"] = true,
-				["textureColorBackgroundActiveG"] = 0,
-				["textureAnimation"] = true,
-				["textTemplateCenter"] = "",
-				["textTemplateLeft"] = "%name%",
-				["textureColorBackgroundDefaultR"] = 0,
-				["iconSize"] = 40,
-				["textureColorTimeLineCastR"] = 0,
-				["fontShadow"] = true,
-				["posY"] = 948.712097167969,
-				["textureColorBackgroundCooldownB"] = 0,
-				["textureColorTimeLineCastG"] = 0,
-				["textureColorBackgroundCastB"] = 0,
-				["textureColorTextActiveG"] = 1,
-				["frameColumns"] = 5,
-				["textureColorTextDefaultG"] = 1,
-				["textureColorTextDefaultR"] = 1,
-				["textureColorBackgroundActiveB"] = 0,
-				["textureColorTimeLineActiveR"] = 0,
-				["textureColorBackgroundCooldownR"] = 0,
-				["textureColorTextCooldownB"] = 0.6,
-				["fontOutline"] = true,
-				["visibilityGeneral"] = true,
-				["textureColorTextCastB"] = 0.5,
-				["textureColorBackgroundDefaultG"] = 0,
-				["frameLines"] = 60,
-				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar17.tga",
-				["textureColorTimeLineCooldownG"] = 0,
-				["textureColorTextActiveB"] = 1,
-				["textureColorTimeLineDefaultR"] = 0,
-				["textureColorTimeLineDefaultB"] = 0,
-				["textureAlphaBackground"] = 0.8,
-				["frameWidth"] = 17,
-				["textureClassTimeLine"] = true,
-				["textureColorTextCastG"] = 1,
-				["fontSize"] = 10,
-				["iconGray"] = true,
-				["textureColorTextCooldownG"] = 0.6,
-				["frameScale"] = 100,
-				["textureColorTimeLineCastB"] = 0,
-				["textGeneral"] = true,
-				["textureColorBackgroundCastG"] = 0,
-				["textureColorTimeLineCooldownR"] = 0,
-				["posX"] = 289.2255859375,
-				["textureColorTextActiveR"] = 1,
-				["textureColorTimeLineCooldownB"] = 0,
-				["textureColorTimeLineDefaultG"] = 0,
-				["textureGeneral"] = true,
-				["fontName"] = "Interface\\AddOns\\xCT+\\media\\homespun.ttf",
-				["methodsTimeLineAnimation"] = 2,
-				["methodsCooldown"] = true,
-				["methodsAlphaNotInRangeNum"] = 90,
-				["textureBorderSize"] = 0,
-				["textureClassBackground"] = false,
-				["textureClassText"] = false,
-				["textureColorTimeLineActiveG"] = 0,
-				["textureColorTextDefaultB"] = 1,
-				["textureAlphaTimeLine"] = 1,
-				["textureColorBackgroundCooldownG"] = 0,
-				["textTemplateRight"] = "",
-				["textureColorBackgroundDefaultB"] = 0,
-				["methodsGeneral"] = true,
-				["frameGeneral"] = true,
-				["textureAlphaCooldown"] = 0.5,
-			}, -- [4]
-			{
-				["textureColorTextCastR"] = 1,
-				["textureColorBackgroundActiveR"] = 1,
-				["iconPosition"] = 1,
-				["textureClassBackground"] = false,
-				["textureColorBackgroundCooldownG"] = 1,
-				["textureColorBackgroundCastR"] = 1,
-				["blacklistGeneral"] = true,
-				["textureColorTimeLineActiveB"] = 1,
-				["textureColorBackgroundActiveG"] = 1,
-				["textureAnimation"] = false,
-				["textTemplateCenter"] = "",
-				["textureColorTimeLineCooldownR"] = 1,
-				["textureColorBackgroundDefaultR"] = 1,
-				["iconSize"] = 40,
-				["textureColorTimeLineCastR"] = 1,
-				["fontShadow"] = false,
-				["posY"] = 478.594451904297,
-				["textureColorBackgroundCooldownB"] = 1,
-				["textureColorTimeLineCastG"] = 1,
-				["textureColorBackgroundCastB"] = 1,
-				["textureColorTextActiveG"] = 1,
-				["frameColumns"] = 4,
-				["textureColorTextDefaultG"] = 1,
-				["fontLeftSize"] = 12,
-				["textureColorTextDefaultR"] = 1,
-				["textureColorBackgroundActiveB"] = 1,
-				["textureColorTimeLineActiveR"] = 1,
-				["textureColorBackgroundCooldownR"] = 1,
-				["textureColorTextCooldownB"] = 0.5,
-				["fontOutline"] = true,
-				["textureColorTextCastB"] = 0.5,
-				["textureColorBackgroundDefaultG"] = 1,
-				["visibilityPartyType"] = 1,
-				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar2.tga",
-				["textureColorTimeLineCooldownG"] = 1,
-				["textureClassText"] = false,
-				["textureColorTimeLineDefaultR"] = 1,
-				["textureColorTimeLineDefaultB"] = 1,
-				["textureAlphaBackground"] = 0,
-				["frameWidth"] = 40,
-				["textureColorTimeLineCooldownB"] = 1,
-				["textureColorTextCastG"] = 1,
-				["fontSize"] = 10,
-				["iconGray"] = false,
-				["textureColorTextCooldownG"] = 0.5,
-				["frameGeneral"] = true,
-				["textureColorTimeLineCastB"] = 1,
-				["textureClassTimeLine"] = false,
-				["frameScale"] = 125,
-				["methodsStyleAnimation"] = 1,
-				["posX"] = 342.475311279297,
-				["textTemplateRight"] = "",
-				["textureColorBackgroundDefaultB"] = 1,
-				["textureColorTextDefaultB"] = 1,
-				["textureAlphaTimeLine"] = 0,
-				["textureColorTimeLineDefaultG"] = 1,
-				["methodsTimeLineAnimation"] = 1,
-				["methodsCooldown"] = true,
-				["methodsAlphaNotInRangeNum"] = 90,
-				["textIconName"] = true,
-				["frameAnchorBottom"] = true,
-				["methodsDisableActive"] = true,
-				["textureColorTimeLineActiveG"] = 1,
-				["textTemplateLeft"] = "",
-				["fontName"] = "Interface\\AddOns\\ExRT\\media\\skurri.ttf",
-				["textureColorTextCooldownR"] = 1,
-				["textureColorTextActiveR"] = 0.5,
-				["textureColorTextActiveB"] = 0.5,
-				["textureColorBackgroundCastG"] = 1,
-				["frameLines"] = 7,
-				["textureAlphaCooldown"] = 0.7,
-			}, -- [5]
-			{
-				["textureColorTextCastR"] = 1,
-				["textureColorBackgroundActiveR"] = 1,
-				["iconPosition"] = 1,
-				["frameBetweenLines"] = 0,
-				["textureColorTextCooldownR"] = 1,
-				["textureColorBackgroundCooldownG"] = 1,
-				["fontGeneral"] = true,
-				["textureColorBackgroundCastR"] = 1,
-				["blacklistGeneral"] = true,
-				["textureColorTimeLineActiveB"] = 1,
-				["textureColorBackgroundActiveG"] = 1,
-				["textureAnimation"] = false,
-				["textTemplateCenter"] = "",
-				["textureColorTimeLineCooldownR"] = 1,
-				["textureColorBackgroundDefaultR"] = 1,
-				["iconSize"] = 36,
-				["textureColorTimeLineCastR"] = 1,
-				["fontShadow"] = true,
-				["posY"] = 967.230346679687,
-				["textureColorBackgroundCooldownB"] = 1,
-				["textureColorTimeLineCastG"] = 1,
-				["textureColorBackgroundCastB"] = 1,
-				["textureColorTextActiveG"] = 1,
-				["frameColumns"] = 10,
-				["textureColorTextDefaultG"] = 1,
-				["textureColorTextDefaultR"] = 1,
-				["textureColorBackgroundActiveB"] = 1,
-				["textureColorBackgroundDefaultB"] = 1,
-				["textureColorBackgroundCooldownR"] = 1,
-				["textureColorTextCooldownB"] = 1,
-				["fontOutline"] = true,
-				["visibilityGeneral"] = true,
-				["textureColorTextCastB"] = 0.5,
-				["textureColorBackgroundDefaultG"] = 1,
-				["frameLines"] = 1,
-				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar17.tga",
-				["textureColorTimeLineCooldownG"] = 1,
-				["textureColorTextActiveB"] = 1,
-				["textureColorTimeLineDefaultR"] = 1,
-				["textureColorTimeLineDefaultB"] = 1,
-				["textureAlphaBackground"] = 0,
-				["frameWidth"] = 37,
-				["textureClassTimeLine"] = false,
-				["textureColorTextCastG"] = 1,
-				["fontSize"] = 10,
-				["iconGray"] = false,
-				["textureColorTextCooldownG"] = 1,
-				["textureColorTimeLineCastB"] = 1,
-				["frameGeneral"] = true,
-				["textureColorTimeLineCooldownB"] = 1,
-				["textureBorderSize"] = 0,
-				["posX"] = 139.731002807617,
-				["textureClassBackground"] = false,
-				["textureColorTextActiveR"] = 1,
-				["textureColorTimeLineActiveR"] = 1,
-				["textureAlphaTimeLine"] = 0,
-				["textureColorTextDefaultB"] = 1,
-				["methodsTimeLineAnimation"] = 1,
-				["methodsCooldown"] = true,
-				["methodsAlphaNotInRangeNum"] = 100,
-				["textIconName"] = true,
-				["textureClassText"] = false,
-				["methodsDisableActive"] = true,
-				["textureColorTimeLineActiveG"] = 1,
-				["fontName"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Homespun.ttf",
-				["textureColorBackgroundCastG"] = 1,
-				["textureColorTimeLineDefaultG"] = 1,
-				["textTemplateRight"] = "",
-				["textTemplateLeft"] = "%name%",
-				["methodsStyleAnimation"] = 1,
-				["frameScale"] = 100,
-				["textureAlphaCooldown"] = 0.5,
-			}, -- [6]
-			{
-				["fontSize"] = 12,
-				["frameGeneral"] = true,
-				["iconGray"] = true,
-				["methodsGeneral"] = true,
-				["frameBetweenLines"] = 0,
-				["fontOutline"] = true,
-				["visibilityGeneral"] = true,
-				["textureBorderSize"] = 0,
-				["textureGeneral"] = true,
-				["frameLines"] = 15,
-				["frameWidth"] = 130,
-				["posY"] = 627.443481445313,
-				["methodsAlphaNotInRangeNum"] = 90,
-				["textGeneral"] = true,
-				["posX"] = 430.416290283203,
-				["fontGeneral"] = true,
-				["blacklistGeneral"] = true,
-				["iconSize"] = 16,
-				["textureAlphaTimeLine"] = 0.8,
-				["iconGeneral"] = true,
-				["frameColumns"] = 1,
-				["fontShadow"] = false,
-				["textureAlphaBackground"] = 0.3,
-				["textureAnimation"] = true,
-				["textureAlphaCooldown"] = 1,
-			}, -- [7]
-			{
-				["fontSize"] = 12,
-				["frameGeneral"] = true,
-				["iconGray"] = true,
-				["methodsGeneral"] = true,
-				["fontOutline"] = true,
-				["visibilityGeneral"] = true,
-				["fontShadow"] = false,
-				["frameLines"] = 15,
-				["posY"] = 834.850769042969,
-				["posX"] = 816.499572753906,
-				["textGeneral"] = true,
-				["textureAnimation"] = true,
-				["fontGeneral"] = true,
-				["blacklistGeneral"] = true,
-				["textureGeneral"] = true,
-				["textureAlphaTimeLine"] = 0.8,
-				["iconGeneral"] = true,
-				["frameColumns"] = 1,
-				["iconSize"] = 16,
-				["textureAlphaBackground"] = 0.3,
-				["frameWidth"] = 130,
-				["textureAlphaCooldown"] = 1,
-			}, -- [8]
-			{
-				["fontSize"] = 12,
-				["frameGeneral"] = true,
-				["iconGray"] = true,
-				["methodsGeneral"] = true,
-				["posX"] = 385.521911621094,
-				["visibilityGeneral"] = true,
-				["textureGeneral"] = true,
-				["frameLines"] = 15,
-				["posY"] = 948.878784179688,
-				["fontShadow"] = false,
-				["textGeneral"] = true,
-				["frameWidth"] = 130,
-				["textureAlphaBackground"] = 0.3,
-				["blacklistGeneral"] = true,
-				["textureAlphaTimeLine"] = 0.8,
-				["iconSize"] = 16,
-				["iconGeneral"] = true,
-				["fontOutline"] = true,
-				["fontGeneral"] = true,
-				["frameScale"] = 100,
-				["textureAnimation"] = true,
-				["textureAlphaCooldown"] = 1,
-			}, -- [9]
-			{
-				["frameGeneral"] = true,
-				["iconGray"] = true,
-				["textGeneral"] = true,
-				["methodsGeneral"] = true,
-				["fontShadow"] = false,
-				["blacklistGeneral"] = true,
-				["posY"] = 834.850769042969,
-				["fontOutline"] = true,
-				["iconGeneral"] = true,
-				["posX"] = 816.499572753906,
-				["visibilityGeneral"] = true,
-				["fontGeneral"] = true,
-				["textureAnimation"] = true,
-				["textureGeneral"] = true,
-			}, -- [10]
-			{
-				["textureColorTextCastR"] = 1,
-				["textureColorBackgroundActiveR"] = 1,
-				["iconPosition"] = 1,
-				["frameBetweenLines"] = 0,
-				["textureColorTextCooldownR"] = 1,
-				["textureColorBackgroundCooldownG"] = 1,
-				["textureColorBackgroundCastR"] = 1,
-				["frameBlackBack"] = 0,
-				["blacklistGeneral"] = true,
-				["textureColorTimeLineActiveB"] = 1,
-				["textureColorBackgroundActiveG"] = 1,
-				["textureColorTimeLineDefaultG"] = 1,
-				["textTemplateCenter"] = "%time%",
-				["textTemplateLeft"] = "",
-				["textureColorBackgroundDefaultR"] = 1,
-				["iconSize"] = 35,
-				["textureColorTimeLineCastR"] = 1,
-				["textureColorBackgroundCastG"] = 1,
-				["textureColorTimeLineCastG"] = 1,
-				["textureColorBackgroundCastB"] = 1,
-				["textureColorTextActiveG"] = 1,
-				["frameColumns"] = 3,
-				["iconHideBlizzardEdges"] = true,
-				["textureColorTextDefaultG"] = 1,
-				["fontLeftSize"] = 12,
-				["textureColorTextDefaultR"] = 1,
-				["textureColorBackgroundActiveB"] = 1,
-				["textureColorBackgroundDefaultB"] = 1,
-				["textureColorBackgroundCooldownR"] = 1,
-				["textureColorTextCooldownB"] = 0.5,
-				["fontOutline"] = true,
-				["visibilityGeneral"] = true,
-				["textureColorTextCastB"] = 0.5,
-				["textureColorBackgroundDefaultG"] = 1,
-				["frameLines"] = 10,
-				["textureFile"] = "Interface\\AddOns\\ExRT\\media\\bar17.tga",
-				["textureColorTimeLineCooldownG"] = 1,
-				["textureColorTextActiveB"] = 0.5,
-				["textureColorTimeLineDefaultR"] = 1,
-				["textureColorTimeLineDefaultB"] = 1,
-				["textureAlphaBackground"] = 0,
-				["frameWidth"] = 37,
-				["textureClassTimeLine"] = false,
-				["textureColorTextCastG"] = 1,
-				["fontSize"] = 10,
-				["textureColorTextCooldownG"] = 0.5,
-				["methodsHideOwnSpells"] = true,
-				["textureColorTimeLineCastB"] = 1,
-				["fontName"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Expressway.ttf",
-				["textureClassText"] = false,
-				["textureColorTimeLineActiveR"] = 1,
-				["textTemplateRight"] = "",
-				["frameScale"] = 99,
-				["methodsStyleAnimation"] = 1,
-				["textureColorBackgroundCooldownB"] = 1,
-				["textureAlphaTimeLine"] = 0,
-				["textureClassBackground"] = false,
-				["methodsTimeLineAnimation"] = 1,
-				["methodsCooldown"] = true,
-				["methodsAlphaNotInRangeNum"] = 100,
-				["textIconName"] = true,
-				["frameAnchorBottom"] = true,
-				["textureColorTextDefaultB"] = 1,
-				["textureColorTimeLineActiveG"] = 1,
-				["frameAlpha"] = 100,
-				["textureSmoothAnimationDuration"] = 50,
-				["textureColorTimeLineCooldownB"] = 1,
-				["textureColorTextActiveR"] = 0.5,
-				["textureColorTimeLineCooldownR"] = 1,
-				["methodsIconTooltip"] = true,
-				["textureBorderSize"] = 0,
-				["textureAlphaCooldown"] = 0.7,
-			}, -- [11]
-		},
-		["lock"] = true,
-		["SortByAvailability"] = true,
-		["Priority"] = {
-			[77130] = 1,
-			[4987] = 1,
-			[2782] = 1,
-			[115450] = 1,
-			[527] = 1,
-		},
-		["CDE"] = {
-			[204018] = true,
-			[196718] = true,
-			[10060] = true,
-			[47788] = true,
-			[73325] = true,
-			[527] = true,
-			[97462] = true,
-			[31842] = true,
-			[6940] = true,
-			[49576] = true,
-			[33891] = true,
-			[740] = true,
-			[115276] = true,
-			[179057] = true,
-			[33206] = true,
-			[198664] = true,
-			[64901] = true,
-			[115310] = true,
-			[108199] = true,
-			[77130] = true,
-			[114052] = true,
-			[89808] = true,
-			[102342] = true,
-			[115450] = true,
-			[171152] = true,
-			[1022] = true,
-			[108280] = true,
-			[106898] = true,
-			[192058] = true,
-			[200183] = true,
-			[633] = true,
-			[32375] = true,
-			[4987] = true,
-			[192077] = true,
-			[5484] = true,
-			[29166] = true,
-			[213915] = true,
-			[116849] = true,
-			[204150] = true,
-			[28730] = true,
-			[62618] = true,
-			[98008] = true,
-			[108281] = true,
-			[2782] = true,
-			[31821] = true,
-			[119381] = true,
-			[1044] = true,
-			[207399] = true,
-			[475] = true,
-			[46968] = true,
-			[64843] = true,
-			[15286] = true,
-			[109248] = true,
-		},
-		["NoRaid"] = true,
 	},
 	["Attendance"] = {
 		["enabled"] = 2,
@@ -15289,14 +15729,14 @@ VExRT = {
 				"LAljan", -- [18]
 				"JTokigindivid", -- [19]
 				"IVaerli-ArgentDawn", -- [20]
-				["d"] = 16,
-				["eI"] = 2076,
 				["k"] = true,
-				["t"] = 1531340207,
 				["eN"] = "Garothi Worldbreaker",
-				[26] = "CSlamzy",
-				["g"] = 20,
 				["c"] = "Krixidk-Ravencrest",
+				[26] = "CSlamzy",
+				["eI"] = 2076,
+				["t"] = 1531340207,
+				["g"] = 20,
+				["d"] = 16,
 			}, -- [1]
 			{
 				"LAljan", -- [1]
@@ -15319,13 +15759,13 @@ VExRT = {
 				"BUran", -- [18]
 				"GUalhi", -- [19]
 				"ESoonkyu", -- [20]
-				["eI"] = 2063,
 				["k"] = true,
-				["t"] = 1531344263,
-				["eN"] = "Aggramar",
-				["d"] = 16,
-				["g"] = 20,
 				["c"] = "Krixidk-Ravencrest",
+				["d"] = 16,
+				["eN"] = "Aggramar",
+				["t"] = 1531344263,
+				["g"] = 20,
+				["eI"] = 2063,
 			}, -- [2]
 			{
 				"ABlutaar-DunMorogh", -- [1]
@@ -15350,13 +15790,13 @@ VExRT = {
 				"KGkt-Silvermoon", -- [20]
 				"KPeriparus-Alleria", -- [21]
 				"BKrixi", -- [22]
-				["k"] = true,
-				["c"] = "Krixi-GrimBatol",
-				["d"] = 15,
 				["eN"] = "Felhounds of Sargeras",
+				["c"] = "Krixi-GrimBatol",
 				["t"] = 1531560099,
-				["g"] = 22,
 				["eI"] = 2074,
+				["d"] = 15,
+				["g"] = 22,
+				["k"] = true,
 			}, -- [3]
 			{
 				"HHunkmg-Ravencrest", -- [1]
@@ -15375,13 +15815,13 @@ VExRT = {
 				"HZedizdead-Silvermoon", -- [14]
 				"KТулкас-Гордунни", -- [15]
 				"BЖоржин-Дракономор", -- [16]
-				["k"] = true,
-				["c"] = "Krixi-GrimBatol",
-				["d"] = 15,
 				["eI"] = 2076,
+				["c"] = "Krixi-GrimBatol",
 				["t"] = 1531562474,
-				["g"] = 16,
 				["eN"] = "Garothi Worldbreaker",
+				["d"] = 15,
+				["g"] = 16,
+				["k"] = true,
 			}, -- [4]
 			{
 				"LCrrown-Silvermoon", -- [1]
@@ -15412,13 +15852,13 @@ VExRT = {
 				"HArichy-Silvermoon", -- [26]
 				"HKasins-DunModr", -- [27]
 				"KÄrgetlam-DunModr", -- [28]
-				["k"] = true,
-				["c"] = "Krixiqt-Ravencrest",
-				["d"] = 15,
 				["eN"] = "Argus the Unmaker",
+				["c"] = "Krixiqt-Ravencrest",
 				["t"] = 1531648860,
-				["g"] = 28,
 				["eI"] = 2092,
+				["d"] = 15,
+				["g"] = 28,
+				["k"] = true,
 			}, -- [5]
 			{
 				"JYaoiprincess", -- [1]
@@ -15441,13 +15881,13 @@ VExRT = {
 				"BUran", -- [18]
 				"KVlone", -- [19]
 				"GMuz", -- [20]
-				["eN"] = "Garothi Worldbreaker",
 				["k"] = true,
-				["t"] = 1531938101,
-				["eI"] = 2076,
-				["d"] = 16,
-				["g"] = 20,
 				["c"] = "Krixiqt-Ravencrest",
+				["d"] = 16,
+				["eI"] = 2076,
+				["t"] = 1531938101,
+				["g"] = 20,
+				["eN"] = "Garothi Worldbreaker",
 			}, -- [6]
 			{
 				"JYaoiprincess", -- [1]
@@ -15470,13 +15910,13 @@ VExRT = {
 				"BUran", -- [18]
 				"KVlone", -- [19]
 				"ETemporas", -- [20]
-				["k"] = true,
-				["c"] = "Krixidk-Ravencrest",
-				["d"] = 16,
 				["eI"] = 2063,
+				["c"] = "Krixidk-Ravencrest",
 				["t"] = 1531939955,
-				["g"] = 20,
 				["eN"] = "Aggramar",
+				["d"] = 16,
+				["g"] = 20,
+				["k"] = true,
 			}, -- [7]
 			{
 				"BCrazy-Ravencrest", -- [1]
@@ -15500,13 +15940,13 @@ VExRT = {
 				"ABøllebank-Hellfire", -- [19]
 				"IШедоуфлэйм-Гордунни", -- [20]
 				"HGrgeneral-Silvermoon", -- [21]
-				["eN"] = "Garothi Worldbreaker",
 				["c"] = "Kriximonk-GrimBatol",
-				["t"] = 1532116621,
-				["eI"] = 2076,
-				["d"] = 15,
-				["g"] = 21,
 				["k"] = true,
+				["d"] = 15,
+				["eI"] = 2076,
+				["t"] = 1532116621,
+				["g"] = 21,
+				["eN"] = "Garothi Worldbreaker",
 			}, -- [8]
 			{
 				"BCrazy-Ravencrest", -- [1]
@@ -15533,13 +15973,13 @@ VExRT = {
 				"BLuggage-Silvermoon", -- [22]
 				"CElwevyn-Lightbringer", -- [23]
 				"HNallià-Hyjal", -- [24]
-				["c"] = "Kriximonk-GrimBatol",
-				["k"] = true,
-				["d"] = 15,
 				["eI"] = 2082,
+				["k"] = true,
 				["t"] = 1532119468,
-				["g"] = 25,
 				["eN"] = "Imonar the Soulhunter",
+				["d"] = 15,
+				["g"] = 25,
+				["c"] = "Kriximonk-GrimBatol",
 			}, -- [9]
 			{
 				"KNex-Ravencrest", -- [1]
@@ -15562,14 +16002,292 @@ VExRT = {
 				"ESkogstokigx-Ravencrest", -- [18]
 				"KVlone-Ravencrest", -- [19]
 				"JOgdanne-Ravencrest", -- [20]
+				["eN"] = "Argus the Unmaker",
+				["k"] = true,
+				["t"] = 1532290419,
+				["eI"] = 2092,
+				["d"] = 16,
+				["g"] = 20,
 				["c"] = "Kriximonk-GrimBatol",
+			}, -- [10]
+			{
+				"LAljan", -- [1]
+				"GBubax", -- [2]
+				"IEvaliax", -- [3]
+				"ESoonkyu", -- [4]
+				"JMisfists", -- [5]
+				"JOgdanne", -- [6]
+				"ASnowstormx", -- [7]
+				"CFyrafrillor", -- [8]
+				"BUran", -- [9]
+				"KVlone", -- [10]
+				"JYaoiprincess", -- [11]
+				"BYuulna", -- [12]
+				"CKissefet", -- [13]
+				"IOklik", -- [14]
+				"GMuz", -- [15]
+				"BKrixiqt", -- [16]
+				"ETemporas", -- [17]
+				"BDívina", -- [18]
+				"DEoghainn", -- [19]
+				"FHunkdk", -- [20]
+				["c"] = "Krixiqt-Ravencrest",
 				["k"] = true,
 				["d"] = 16,
+				["eI"] = 2076,
+				["t"] = 1532542173,
+				["g"] = 20,
+				["eN"] = "Garothi Worldbreaker",
+			}, -- [11]
+			{
+				"FKrixidk", -- [1]
+				"FHunkdk", -- [2]
+				"JYaoiprincess", -- [3]
+				"ESoonkyu", -- [4]
+				"JMisfists", -- [5]
+				"GUalhi", -- [6]
+				"ASnowstormx", -- [7]
+				"HReckfrill", -- [8]
+				"BUran", -- [9]
+				"KVlone", -- [10]
+				"IEvaliax", -- [11]
+				"BYuulna", -- [12]
+				"CKissefet", -- [13]
+				"IOklik", -- [14]
+				"GMuz", -- [15]
+				"LAljan", -- [16]
+				"ETemporas", -- [17]
+				"BDívina", -- [18]
+				"DEoghainn", -- [19]
+				"GBubax", -- [20]
+				["eN"] = "Aggramar",
+				["k"] = true,
+				["t"] = 1532545963,
+				["eI"] = 2063,
+				["d"] = 16,
+				["g"] = 20,
+				["c"] = "Krixidk-Ravencrest",
+			}, -- [12]
+			{
+				"JKriximonk", -- [1]
+				"FHunkdk-Ravencrest", -- [2]
+				"JYaoiprincess-Ravencrest", -- [3]
+				"ESoonkyu-Ravencrest", -- [4]
+				"JMisfists-Ravencrest", -- [5]
+				"JOgdanne-Ravencrest", -- [6]
+				"ASnowstormx-Ravencrest", -- [7]
+				"HReckfrill-Ravencrest", -- [8]
+				"BUran-Ravencrest", -- [9]
+				"KVlone-Ravencrest", -- [10]
+				"IEvaliax-Ravencrest", -- [11]
+				"CSlamzy-Ravencrest", -- [12]
+				"CKissefet-Ravencrest", -- [13]
+				"IOklik-Ravencrest", -- [14]
+				"GMuz-Ravencrest", -- [15]
+				"LAljan-Ravencrest", -- [16]
+				"ETemporas-Ravencrest", -- [17]
+				"BDívina-Ravencrest", -- [18]
+				"DEoghainn-Ravencrest", -- [19]
+				"GBubax-Ravencrest", -- [20]
+				["k"] = true,
+				["c"] = "Kriximonk-GrimBatol",
+				["d"] = 16,
+				["eI"] = 2092,
+				["t"] = 1532547343,
+				["g"] = 20,
 				["eN"] = "Argus the Unmaker",
-				["t"] = 1532290419,
+			}, -- [13]
+			{
+				"CDiviná", -- [1]
+				"JKriximonk", -- [2]
+				"BKrixiqt", -- [3]
+				["k"] = true,
+				["c"] = "Krixiqt-Ravencrest",
+				["d"] = 16,
+				["eN"] = "Hans'gar & Franzok",
+				["t"] = 1532879061,
+				["g"] = 20,
+				["eI"] = 1693,
+			}, -- [14]
+			{
+				"FHunkdk", -- [1]
+				"JKriximonk", -- [2]
+				"JCloudfist", -- [3]
+				"BDívina", -- [4]
+				"BYuulna", -- [5]
+				"DEoghainn", -- [6]
+				"DImapirate", -- [7]
+				"LOklikdh", -- [8]
+				"GMuz", -- [9]
+				"GBubax", -- [10]
+				"CSlamzy", -- [11]
+				"CKissefet", -- [12]
+				"HReckfrill", -- [13]
+				"ECanadapriest", -- [14]
+				"IEvaliax", -- [15]
+				"GUalhi", -- [16]
+				"ECoolboy", -- [17]
+				"BUran", -- [18]
+				"KVlone", -- [19]
+				"ESoonkyu", -- [20]
+				["eI"] = 2076,
+				["c"] = "Kriximonk-Ravencrest",
+				["t"] = 1533147132,
+				["eN"] = "Garothi Worldbreaker",
+				["d"] = 16,
+				["g"] = 20,
+				["k"] = true,
+			}, -- [15]
+			{
+				"FHunkdk", -- [1]
+				"FKrixidk", -- [2]
+				"JCloudfist", -- [3]
+				"BDívina", -- [4]
+				"BYuulna", -- [5]
+				"DEoghainn", -- [6]
+				"DImapirate", -- [7]
+				"LOklikdh", -- [8]
+				"GMuz", -- [9]
+				"ASwaggro", -- [10]
+				"CSlamzy", -- [11]
+				"CKissefet", -- [12]
+				"HReckfrill", -- [13]
+				"ETemporas", -- [14]
+				"IEvaliax", -- [15]
+				"GUalhi", -- [16]
+				"ECoolboy", -- [17]
+				"BUran", -- [18]
+				"KVlone", -- [19]
+				"ESoonkyu", -- [20]
+				["eN"] = "Aggramar",
+				["k"] = true,
+				["t"] = 1533149088,
+				["eI"] = 2063,
+				["d"] = 16,
+				["g"] = 20,
+				["c"] = "Krixidk-Ravencrest",
+			}, -- [16]
+			{
+				"FHunkdk", -- [1]
+				"JKriximonk", -- [2]
+				"JCloudfist", -- [3]
+				"BDívina", -- [4]
+				"BYuulna", -- [5]
+				"DEoghainn", -- [6]
+				"DImapirate", -- [7]
+				"LOklikdh", -- [8]
+				"GMuz", -- [9]
+				"ASwaggro", -- [10]
+				"CSlamzy", -- [11]
+				"CKissefet", -- [12]
+				"HReckfrill", -- [13]
+				"ETemporas", -- [14]
+				"IEvaliax", -- [15]
+				"GUalhi", -- [16]
+				"ECoolboy", -- [17]
+				"BUran", -- [18]
+				"KVlone", -- [19]
+				"ESoonkyu", -- [20]
+				["k"] = true,
+				["c"] = "Kriximonk-Ravencrest",
+				["d"] = 16,
+				["eI"] = 2092,
+				["t"] = 1533150273,
+				["g"] = 20,
+				["eN"] = "Argus the Unmaker",
+			}, -- [17]
+			{
+				"JCloudfist", -- [1]
+				"JKriximonk", -- [2]
+				"BYuulna", -- [3]
+				"BDívina", -- [4]
+				"ASnowstormx", -- [5]
+				"GBubax", -- [6]
+				"GCnorg", -- [7]
+				"DImapirate", -- [8]
+				"DEoghainn", -- [9]
+				"JMisfists", -- [10]
+				"IEvaliax", -- [11]
+				"CSlamzy", -- [12]
+				"ECanadapriest", -- [13]
+				"CKissefet", -- [14]
+				"GMuz", -- [15]
+				"ESoonkyu", -- [16]
+				"BUran", -- [17]
+				"KVlone", -- [18]
+				"JOgdanne", -- [19]
+				"LOklikdh", -- [20]
+				["c"] = "Kriximonk-Ravencrest",
+				[37] = "IOklik",
+				["eN"] = "Garothi Worldbreaker",
+				["t"] = 1533751689,
+				["g"] = 20,
+				["k"] = true,
+				[38] = "HReckfrill",
+				["eI"] = 2076,
+				[39] = "LAljan",
+				[36] = "GUalhi",
+				["d"] = 16,
+			}, -- [18]
+			{
+				"LAljan", -- [1]
+				"FTokifuji", -- [2]
+				"FKrixidk", -- [3]
+				"BDívina", -- [4]
+				"BYuulna", -- [5]
+				"GBubax", -- [6]
+				"ASnowstormx", -- [7]
+				"GUalhi", -- [8]
+				"DEoghainn", -- [9]
+				"JMisfists", -- [10]
+				"IEvaliax", -- [11]
+				"CSlamzy", -- [12]
+				"HReckfrill", -- [13]
+				"CKissefet", -- [14]
+				"GMuz", -- [15]
+				"ESoonkyu", -- [16]
+				"BUran", -- [17]
+				"KVlone", -- [18]
+				"JOgdanne", -- [19]
+				"IOklik", -- [20]
+				"DImapirate", -- [21]
+				["eI"] = 2063,
+				["k"] = true,
+				["t"] = 1533756335,
+				["eN"] = "Aggramar",
+				["d"] = 16,
+				["g"] = 20,
+				["c"] = "Krixidk-Ravencrest",
+			}, -- [19]
+			{
+				"LAljan", -- [1]
+				"JCloudfist", -- [2]
+				"JKriximonk", -- [3]
+				"BDívina", -- [4]
+				"BYuulna", -- [5]
+				"GBubax", -- [6]
+				"GCnorg", -- [7]
+				"DImapirate", -- [8]
+				"DEoghainn", -- [9]
+				"JMisfists", -- [10]
+				"IEvaliax", -- [11]
+				"CSlamzy", -- [12]
+				"HReckfrill", -- [13]
+				"CKissefet", -- [14]
+				"ASnowstormx", -- [15]
+				"ESoonkyu", -- [16]
+				"BUran", -- [17]
+				"KVlone", -- [18]
+				"JOgdanne", -- [19]
+				"IOklik", -- [20]
+				["k"] = true,
+				["c"] = "Kriximonk-Ravencrest",
+				["d"] = 16,
+				["eN"] = "Argus the Unmaker",
+				["t"] = 1533757337,
 				["g"] = 20,
 				["eI"] = 2092,
-			}, -- [10]
+			}, -- [20]
 		},
 		["OptionsSortPD"] = true,
 	},
@@ -15580,55 +16298,11 @@ VExRT = {
 		["BuffsCheck"] = true,
 		["FlaskExp"] = 1,
 	},
-	["BattleRes"] = {
-	},
-	["Timers"] = {
-		["enabled"] = true,
-		["Strata"] = "HIGH",
-		["timeToKillAnalyze"] = 15,
-		["Left"] = 1217.50012207031,
-		["Top"] = 216.166244506836,
-		["Lock"] = true,
-		["DisableRW"] = true,
-		["specTimes"] = {
-			[62] = 10,
-			[63] = 10,
-			[250] = 10,
-			[251] = 10,
-			[64] = 10,
-			[253] = 10,
-			[65] = 10,
-			[255] = 10,
-			[66] = 10,
-			[257] = 10,
-			[258] = 10,
-			[259] = 10,
-			[260] = 10,
-			[261] = 25,
-			[262] = 16,
-			[263] = 10,
-			[264] = 10,
-			[265] = 22,
-			[266] = 10,
-			[267] = 10,
-			[268] = 10,
-			[269] = 10,
-			[270] = 10,
-			[70] = 10,
-			[102] = 10,
-			[71] = 10,
-			[103] = 10,
-			[72] = 10,
-			[104] = 10,
-			[73] = 10,
-			[581] = 10,
-			[105] = 10,
-			[577] = 10,
-			[256] = 10,
-			[254] = 10,
-			[252] = 10,
+	["Marks"] = {
+		["list"] = {
 		},
-		["timeToKill"] = true,
+	},
+	["WhoPulled"] = {
 	},
 	["Addon"] = {
 		["Timer"] = 0.1,
@@ -15639,80 +16313,35 @@ VExRT = {
 		["IconMiniMapLeft"] = 72.5204056013025,
 		["Scale"] = 1,
 	},
-	["InspectArtifact"] = {
-		["players"] = {
+	["MarksBar"] = {
+		["pulltimer"] = 10,
+		["Strata"] = "HIGH",
+		["Show"] = {
+			true, -- [1]
+			true, -- [2]
+			true, -- [3]
+			true, -- [4]
 		},
+	},
+	["BossWatcher"] = {
+		["optionsDamageGraph"] = true,
+		["trackingDamageSpells"] = {
+		},
+		["autoSegments"] = {
+		},
+		["optionsPositionsDist"] = true,
+		["optionsHealingGraph"] = true,
+		["fightsNum"] = 2,
 	},
 	["Profiles"] = {
 		["default"] = {
 		},
 		["Not dk"] = {
-			["Note"] = {
-				["BlackNames"] = {
-				},
-				["FontSize"] = 12,
-				["Black"] = {
-					"", -- [1]
-					"", -- [2]
-					"", -- [3]
-				},
-				["AutoLoad"] = {
-				},
-				["Strata"] = "HIGH",
-				["Height"] = 100,
-				["Width"] = 200,
+			["BattleRes"] = {
 			},
 			["Arrow"] = {
 			},
 			["Encounter"] = {
-				["names"] = {
-					[1833] = "Ilysanna Ravencrest",
-					[1837] = "Oakheart",
-					[1790] = "Rokmora",
-					[1869] = "Talixae Flamewreath",
-					[1810] = "Warlord Parjesh",
-					[1814] = "Wrath of Azshara",
-					[2092] = "Argus the Unmaker",
-					[1822] = "Ymiron, the Fallen King",
-					[2053] = "Domatrax",
-					[1960] = "Attumen the Huntsman",
-					[1838] = "Dresaron",
-					[2039] = "Mephistroth",
-					[1791] = "Ularogg Cragshaper",
-					[1870] = "Advisor Melandrus",
-					[1811] = "Lady Hatecoil",
-					[1815] = "Tirathon Saltheril",
-					[1823] = "Harbaron",
-					[2055] = "Agronox",
-					[1835] = "Lord Kur'talos Ravencrest",
-					[1839] = "Shade of Xavius",
-					[2067] = "Viceroy Nezhar",
-					[1818] = "Cordana Felsong",
-					[1792] = "Naraxas",
-					[1806] = "Hyrja",
-					[2068] = "L'ura",
-					[2066] = "Saprish",
-					[1808] = "God-King Skovald",
-					[1812] = "King Deepbeard",
-					[1816] = "Ash'Golm",
-					[1850] = "Inquisitor Tormentorum",
-					[1824] = "Helya",
-					[1954] = "Maiden of Virtue",
-					[1832] = "Amalgam of Souls",
-					[1836] = "Archdruid Glaidalis",
-					[1807] = "Fenryr",
-					[2057] = "Thrashbite the Scornful",
-					[1834] = "Smashspite the Hateful",
-					[1961] = "Moroes",
-					[1793] = "Dargrul the Underking",
-					[2065] = "Zuraal the Ascended",
-					[1868] = "Patrol Captain Gerdo",
-					[1805] = "Hymdall",
-					[1809] = "Odyn",
-					[1813] = "Serpentrix",
-					[1817] = "Glazer",
-					[1957] = "Opera Hall",
-				},
 				["list"] = {
 					["Krixikin"] = {
 						"^1957^8^1519408697^117^1^5^944.73^Skillfree-Antonidas", -- [1]
@@ -15804,10 +16433,66 @@ VExRT = {
 						"^1824^8^1530986729^129^1^5^961.89^", -- [87]
 					},
 				},
-			},
-			["Marks"] = {
-				["list"] = {
+				["names"] = {
+					[1833] = "Ilysanna Ravencrest",
+					[1837] = "Oakheart",
+					[1790] = "Rokmora",
+					[1869] = "Talixae Flamewreath",
+					[1810] = "Warlord Parjesh",
+					[1814] = "Wrath of Azshara",
+					[2092] = "Argus the Unmaker",
+					[1822] = "Ymiron, the Fallen King",
+					[2053] = "Domatrax",
+					[1960] = "Attumen the Huntsman",
+					[1838] = "Dresaron",
+					[2039] = "Mephistroth",
+					[1791] = "Ularogg Cragshaper",
+					[1870] = "Advisor Melandrus",
+					[1811] = "Lady Hatecoil",
+					[1815] = "Tirathon Saltheril",
+					[1823] = "Harbaron",
+					[2055] = "Agronox",
+					[1835] = "Lord Kur'talos Ravencrest",
+					[1839] = "Shade of Xavius",
+					[1957] = "Opera Hall",
+					[1818] = "Cordana Felsong",
+					[1792] = "Naraxas",
+					[1806] = "Hyrja",
+					[2068] = "L'ura",
+					[1805] = "Hymdall",
+					[1808] = "God-King Skovald",
+					[1812] = "King Deepbeard",
+					[1816] = "Ash'Golm",
+					[1868] = "Patrol Captain Gerdo",
+					[1824] = "Helya",
+					[1954] = "Maiden of Virtue",
+					[1832] = "Amalgam of Souls",
+					[1836] = "Archdruid Glaidalis",
+					[2065] = "Zuraal the Ascended",
+					[2057] = "Thrashbite the Scornful",
+					[1961] = "Moroes",
+					[1834] = "Smashspite the Hateful",
+					[1793] = "Dargrul the Underking",
+					[1807] = "Fenryr",
+					[1850] = "Inquisitor Tormentorum",
+					[2066] = "Saprish",
+					[1809] = "Odyn",
+					[1813] = "Serpentrix",
+					[1817] = "Glazer",
+					[2067] = "Viceroy Nezhar",
 				},
+			},
+			["InviteTool"] = {
+				["Words"] = "инв inv byd штм 123",
+				["InvByChat"] = true,
+				["RaidDiff"] = 16,
+				["PromoteRank"] = 3,
+				["LootThreshold"] = 2,
+				["MasterLooters"] = "",
+				["LootMethod"] = "group",
+				["PromoteNames"] = "",
+				["OnlyGuild"] = true,
+				["Rank"] = 1,
 			},
 			["Coins"] = {
 				["list"] = {
@@ -15835,7 +16520,7 @@ VExRT = {
 					["Stinn-Sylvanas"] = 105,
 					["Razorgucci-ArgentDawn"] = 259,
 					["Eisdudu-Antonidas"] = 104,
-					["Krixikin"] = 102,
+					["Krixikin"] = 104,
 					["Джентельмен-СтражСмерти"] = 63,
 					["Xanjay-Frostmane"] = 251,
 					["Eryens-ArgentDawn"] = 102,
@@ -15856,78 +16541,78 @@ VExRT = {
 					["Tonzqt-Nagrand"] = 64,
 					["Crazy-Ravencrest"] = 65,
 					["Astraes-Dalaran"] = 66,
-					["Imakitteh-Kazzak"] = 577,
-					["Fyrafrillor-Ravencrest"] = 254,
-					["Hóstile-DunMorogh"] = 63,
-					["Irenikusbhal-Ravencrest"] = 261,
-					["Evy-Hellscream"] = 105,
+					["Wheelsamsara-ColinasPardas"] = 250,
 					["Milkyjuggs-Ravencrest"] = 66,
+					["Hóstile-DunMorogh"] = 63,
+					["Ñick-Antonidas"] = 259,
+					["Evy-Hellscream"] = 105,
+					["Hunkdk-Ravencrest"] = 251,
 					["Hunterhunter-EarthenRing"] = 253,
 					["Halcyøn-DunModr"] = 71,
 					["Monkemonk"] = 261,
 					["Tektah-Ravencrest"] = 71,
-					["Gül-BurningBlade"] = 63,
+					["Badweek-Outland"] = 71,
 					["Frogyy"] = 265,
-					["Yøya-Hyjal"] = 259,
-					["Cléopàtra-Pozzodell'Eternità"] = 264,
+					["Tokig-Ravencrest"] = 63,
 					["Youngmulah-Ravencrest"] = 265,
+					["Fakecnorg-Ravencrest"] = 62,
 					["Demonpwnzr-BronzeDragonflight"] = 577,
 					["Nightsonya-Kilrogg"] = 72,
-					["Trigzy-Terokkar"] = 251,
+					["Lunzn-Antonidas"] = 102,
 					["Pacilieus-Alonsus"] = 70,
 					["Grimbulsson-ArgentDawn"] = 262,
-					["Lunzn-Antonidas"] = 102,
-					["Sachro-ArgentDawn"] = 66,
+					["Niskara-Tyrande"] = 269,
+					["Orizin-DunMorogh"] = 73,
 					["Jikes-Ravencrest"] = 250,
 					["Jazmyn-Ravencrest"] = 63,
-					["Yharon-AzjolNerub"] = 254,
+					["Issy-Ravencrest"] = 269,
 					["Dallaan-Moonglade"] = 251,
 					["Bläckly-Ravencrest"] = 65,
 					["Krvolok-Bronzebeard"] = 261,
-					["Wulfgarrde-Silvermoon"] = 257,
 					["Vigge-Ravencrest"] = 269,
+					["Wulfgarrde-Silvermoon"] = 257,
 					["Janineblack-Ysera"] = 73,
-					["Pallatjobo-Frostmane"] = 262,
+					["Фримо-СтражСмерти"] = 267,
 					["Tisu"] = 254,
-					["Foxwell-Auchindoun"] = 70,
-					["Absurdus-Auchindoun"] = 251,
 					["Karkzqts-Ravencrest"] = 269,
-					["Geralten-Wildhammer"] = 70,
+					["Absurdus-Auchindoun"] = 251,
+					["Foxwell-Auchindoun"] = 70,
+					["Temporäs-Ravencrest"] = 102,
 					["Norbind-Alonsus"] = 70,
 					["Thïccgrill-TwistingNether"] = 258,
 					["Tanton-Drek'Thar"] = 63,
-					["Volence-Magtheridon"] = 258,
-					["Superfrilla-Ravencrest"] = 581,
+					["Hahalól-Sylvanas"] = 63,
+					["Sophistie-Garona"] = 260,
 					["Evaliax-Ravencrest"] = 265,
 					["Djkaviar-LesClairvoyants"] = 262,
 					["Imapirate-Ravencrest"] = 260,
 					["Elunia-Sen'jin"] = 265,
-					["Sophistie-Garona"] = 260,
-					["Hahalól-Sylvanas"] = 63,
-					["Temporäs-Ravencrest"] = 102,
+					["Superfrilla-Ravencrest"] = 581,
+					["Volence-Magtheridon"] = 258,
+					["Geralten-Wildhammer"] = 70,
 					["Aljan-Ravencrest"] = 577,
 					["Mcrage-LosErrantes"] = 73,
-					["Фримо-СтражСмерти"] = 267,
+					["Pallatjobo-Frostmane"] = 262,
 					["Screant-ArgentDawn"] = 66,
-					["Issy-Ravencrest"] = 269,
-					["Orizin-DunMorogh"] = 73,
-					["Niskara-Tyrande"] = 269,
+					["Yharon-AzjolNerub"] = 254,
+					["Sachro-ArgentDawn"] = 66,
+					["Trigzy-Terokkar"] = 251,
 					["Pyrøcår-Madmortem"] = 63,
-					["Fakecnorg-Ravencrest"] = 62,
-					["Tokig-Ravencrest"] = 63,
+					["Cléopàtra-Pozzodell'Eternità"] = 264,
+					["Yøya-Hyjal"] = 259,
 					["Arelyia-Shattrath"] = 262,
-					["Badweek-Outland"] = 71,
+					["Gül-BurningBlade"] = 63,
 					["Mikrop-Silvermoon"] = 577,
-					["Ñick-Antonidas"] = 259,
-					["Hunkdk-Ravencrest"] = 251,
-					["Wheelsamsara-ColinasPardas"] = 250,
+					["Irenikusbhal-Ravencrest"] = 261,
+					["Fyrafrillor-Ravencrest"] = 254,
+					["Imakitteh-Kazzak"] = 577,
 				},
 				["NoRaid"] = true,
 				["CDECol"] = {
 				},
 				["default_userCD"] = {
 				},
-				["Save"] = {
+				["userDB"] = {
 				},
 				["colSet"] = {
 					{
@@ -15937,13 +16622,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [1]
 					{
 						["enabled"] = true,
@@ -15952,13 +16637,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [2]
 					{
 						["enabled"] = true,
@@ -15967,13 +16652,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [3]
 					{
 						["frameGeneral"] = true,
@@ -15981,13 +16666,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [4]
 					{
 						["frameGeneral"] = true,
@@ -15995,13 +16680,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [5]
 					{
 						["frameGeneral"] = true,
@@ -16009,13 +16694,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [6]
 					{
 						["frameGeneral"] = true,
@@ -16023,13 +16708,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [7]
 					{
 						["frameGeneral"] = true,
@@ -16037,13 +16722,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [8]
 					{
 						["frameGeneral"] = true,
@@ -16051,13 +16736,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [9]
 					{
 						["frameGeneral"] = true,
@@ -16065,13 +16750,13 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [10]
 					{
 						["frameGeneral"] = true,
@@ -16079,20 +16764,20 @@ VExRT = {
 						["textGeneral"] = true,
 						["methodsGeneral"] = true,
 						["blacklistGeneral"] = true,
-						["textureGeneral"] = true,
+						["fontShadow"] = false,
 						["iconGeneral"] = true,
 						["fontOutline"] = true,
 						["visibilityGeneral"] = true,
 						["fontGeneral"] = true,
 						["textureAnimation"] = true,
-						["fontShadow"] = false,
+						["textureGeneral"] = true,
 					}, -- [11]
 				},
 				["Priority"] = {
 				},
 				["CDE"] = {
 				},
-				["userDB"] = {
+				["Save"] = {
 				},
 			},
 			["Attendance"] = {
@@ -16118,13 +16803,13 @@ VExRT = {
 						"KKrixikin", -- [17]
 						"GCléopàtra-Pozzodell'Eternità", -- [18]
 						"FDallaan-Moonglade", -- [19]
-						["c"] = "Krixikin-GrimBatol",
-						["k"] = true,
-						["d"] = 14,
 						["eI"] = 2092,
+						["k"] = true,
 						["t"] = 1519562085,
-						["g"] = 19,
 						["eN"] = "Argus the Unmaker",
+						["d"] = 14,
+						["g"] = 19,
+						["c"] = "Krixikin-GrimBatol",
 					}, -- [1]
 				},
 				["alts"] = {
@@ -16133,58 +16818,6 @@ VExRT = {
 			["RaidCheck"] = {
 				["FlaskExp"] = 1,
 				["ReadyCheckFrameTimerFade"] = 4,
-			},
-			["WhoPulled"] = {
-			},
-			["InviteTool"] = {
-				["Words"] = "инв inv byd штм 123",
-				["InvByChat"] = true,
-				["RaidDiff"] = 16,
-				["PromoteRank"] = 3,
-				["LootThreshold"] = 2,
-				["MasterLooters"] = "",
-				["LootMethod"] = "group",
-				["PromoteNames"] = "",
-				["OnlyGuild"] = true,
-				["Rank"] = 1,
-			},
-			["BossWatcher"] = {
-				["optionsDamageGraph"] = true,
-				["fightsNum"] = 2,
-				["optionsPositionsDist"] = true,
-				["optionsHealingGraph"] = true,
-				["trackingDamageSpells"] = {
-				},
-			},
-			["MarksBar"] = {
-				["pulltimer"] = 10,
-				["Strata"] = "HIGH",
-				["Show"] = {
-					true, -- [1]
-					true, -- [2]
-					true, -- [3]
-					true, -- [4]
-				},
-			},
-			["LootLink"] = {
-			},
-			["InspectViewer"] = {
-			},
-			["Bossmods"] = {
-				["Mannoroth"] = {
-				},
-				["Kormrok"] = {
-				},
-				["Ilgynoth"] = {
-				},
-				["Kromog"] = {
-				},
-			},
-			["Logging"] = {
-			},
-			["InspectArtifact"] = {
-				["players"] = {
-				},
 			},
 			["Timers"] = {
 				["specTimes"] = {
@@ -16218,32 +16851,88 @@ VExRT = {
 					[72] = 10,
 					[104] = 10,
 					[73] = 10,
-					[252] = 10,
-					[105] = 10,
-					[254] = 10,
-					[256] = 10,
-					[577] = 10,
 					[581] = 10,
+					[105] = 10,
+					[577] = 10,
+					[256] = 10,
+					[254] = 10,
+					[252] = 10,
 				},
 				["Strata"] = "HIGH",
 				["timeToKillAnalyze"] = 15,
 			},
-			["BattleRes"] = {
+			["Bossmods"] = {
+				["Mannoroth"] = {
+				},
+				["Kormrok"] = {
+				},
+				["Ilgynoth"] = {
+				},
+				["Kromog"] = {
+				},
+			},
+			["BossWatcher"] = {
+				["optionsDamageGraph"] = true,
+				["fightsNum"] = 2,
+				["optionsPositionsDist"] = true,
+				["optionsHealingGraph"] = true,
+				["trackingDamageSpells"] = {
+				},
+			},
+			["InspectArtifact"] = {
+				["players"] = {
+				},
+			},
+			["LootLink"] = {
+			},
+			["InspectViewer"] = {
+			},
+			["Note"] = {
+				["BlackNames"] = {
+				},
+				["FontSize"] = 12,
+				["Black"] = {
+					"", -- [1]
+					"", -- [2]
+					"", -- [3]
+				},
+				["AutoLoad"] = {
+				},
+				["Strata"] = "HIGH",
+				["Height"] = 100,
+				["Width"] = 200,
+			},
+			["Logging"] = {
+			},
+			["MarksBar"] = {
+				["pulltimer"] = 10,
+				["Strata"] = "HIGH",
+				["Show"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+					true, -- [4]
+				},
+			},
+			["WhoPulled"] = {
+			},
+			["Marks"] = {
+				["list"] = {
+				},
 			},
 		},
 	},
-	["BossWatcher"] = {
-		["optionsDamageGraph"] = true,
-		["trackingDamageSpells"] = {
-		},
-		["autoSegments"] = {
-		},
-		["optionsPositionsDist"] = true,
-		["optionsHealingGraph"] = true,
-		["fightsNum"] = 2,
-	},
 	["Profile"] = "default",
 	["LootLink"] = {
+	},
+	["InspectViewer"] = {
+		["ColorizeLowIlvl685"] = false,
+		["ColorizeNoEnch"] = true,
+		["HideNotInRaid"] = true,
+		["ColorizeNoTopEnchGems"] = false,
+		["ColorizeNoGems"] = true,
+		["ColorizeLowIlvl"] = false,
+		["ColorizeNoValorUpgrade"] = false,
 	},
 	["Bossmods"] = {
 		["IskarAutoload"] = true,
@@ -16263,34 +16952,10 @@ VExRT = {
 				{
 				}, -- [3]
 			},
-			["name"] = "Rogerbrown-TarrenMill",
 			["sync"] = true,
+			["name"] = "Rogerbrown-TarrenMill",
 		},
 		["KormrokAutoload"] = true,
-		["IlgynothSetups"] = {
-		},
-		["ArchimondeLock"] = true,
-		["DragonsTop"] = 1028.00012207031,
-		["DragonsLeft"] = 724.999938964844,
-		["ModuleViewed3580"] = true,
-		["ArchimondeInfernalPosY"] = 1008.99938964844,
-		["ArchimondeScale"] = 1,
-		["Kormrok"] = {
-			["time"] = 1439834115,
-			["sync"] = true,
-			["name"] = "Xirips-TarrenMill",
-		},
-		["ArchimondeLeft"] = 478.999908447266,
-		["Alpha"] = 100,
-		["ArchimondeInfernalPosX"] = 440.999481201172,
-		["ArchimondeRadius"] = 40,
-		["ArchimondeTop"] = 843.000061035156,
-		["IskarScale"] = 1,
-		["ArchimondeDisableMarking"] = true,
-		["IskarTop"] = 1005.00006103516,
-		["Ilgynoth"] = {
-		},
-		["IskarLeft"] = 1358.00048828125,
 		["Kromog"] = {
 			nil, -- [1]
 			nil, -- [2]
@@ -16319,39 +16984,92 @@ VExRT = {
 			"Xiripstwo", -- [25]
 			"Nnoggie", -- [26]
 			"Kaizer", -- [27]
+			["time"] = 1434918578,
 			["name"] = "Xiripstwo-TarrenMill",
 			["sync"] = true,
-			["time"] = 1434918578,
 		},
-	},
-	["InspectViewer"] = {
-		["ColorizeLowIlvl685"] = false,
-		["ColorizeNoEnch"] = true,
-		["HideNotInRaid"] = true,
-		["ColorizeLowIlvl"] = false,
-		["ColorizeNoGems"] = true,
-		["ColorizeNoTopEnchGems"] = false,
-		["ColorizeNoValorUpgrade"] = false,
+		["ArchimondeLock"] = true,
+		["DragonsTop"] = 1028.00012207031,
+		["DragonsLeft"] = 724.999938964844,
+		["Ilgynoth"] = {
+		},
+		["ArchimondeInfernalPosY"] = 1008.99938964844,
+		["IskarTop"] = 1005.00006103516,
+		["Alpha"] = 100,
+		["ArchimondeLeft"] = 478.999908447266,
+		["ArchimondeDisableMarking"] = true,
+		["IskarScale"] = 1,
+		["ArchimondeRadius"] = 40,
+		["ArchimondeTop"] = 843.000061035156,
+		["ArchimondeInfernalPosX"] = 440.999481201172,
+		["Kormrok"] = {
+			["name"] = "Xirips-TarrenMill",
+			["time"] = 1439834115,
+			["sync"] = true,
+		},
+		["ArchimondeScale"] = 1,
+		["ModuleViewed3580"] = true,
+		["IskarLeft"] = 1358.00048828125,
+		["IlgynothSetups"] = {
+		},
 	},
 	["Logging"] = {
 		["enabled"] = true,
 		["disableHeroic"] = true,
 		["disableNormal"] = true,
 	},
-	["MarksBar"] = {
-		["pulltimer"] = 10,
+	["InspectArtifact"] = {
+		["players"] = {
+		},
+	},
+	["Timers"] = {
+		["enabled"] = true,
 		["Strata"] = "HIGH",
-		["Show"] = {
-			true, -- [1]
-			true, -- [2]
-			true, -- [3]
-			true, -- [4]
+		["timeToKillAnalyze"] = 15,
+		["Left"] = 1246.83361816406,
+		["Top"] = 217.943923950195,
+		["Lock"] = true,
+		["DisableRW"] = true,
+		["timeToKill"] = true,
+		["specTimes"] = {
+			[62] = 10,
+			[63] = 10,
+			[250] = 10,
+			[251] = 10,
+			[64] = 10,
+			[253] = 10,
+			[65] = 10,
+			[255] = 10,
+			[66] = 10,
+			[257] = 10,
+			[258] = 10,
+			[259] = 10,
+			[260] = 10,
+			[261] = 25,
+			[262] = 16,
+			[263] = 10,
+			[264] = 10,
+			[265] = 22,
+			[266] = 10,
+			[267] = 10,
+			[268] = 10,
+			[269] = 10,
+			[270] = 10,
+			[70] = 10,
+			[102] = 10,
+			[71] = 10,
+			[103] = 10,
+			[72] = 10,
+			[104] = 10,
+			[73] = 10,
+			[252] = 10,
+			[105] = 10,
+			[254] = 10,
+			[256] = 10,
+			[577] = 10,
+			[581] = 10,
 		},
 	},
-	["WhoPulled"] = {
-	},
-	["Marks"] = {
-		["list"] = {
-		},
+	["BattleRes"] = {
 	},
 }

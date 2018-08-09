@@ -1,6 +1,6 @@
 --[[
 	AccountantData.lua
-	
+
 	Declare the global namespace, data, and constants
 --]]
 
@@ -14,8 +14,8 @@ local SC = Accountant
 
 SC.Version = tostring(GetAddOnMetadata("Accountant", "Version")) or "Unknown" -- "3.4.02";
 SC.AUTHOR = GetAddOnMetadata("Accountant", "Author") or "Unknown" --"urnati"
-ACCOUNTANT_OPTIONS_TITLE = "Accountant Options";
-ACCOUNTANT_BUTTON_TOOLTIP = "Toggle Accountant";
+SCOUNTANT_OPTIONS_TITLE = "Accountant Options";
+SCOUNTANT_BUTTON_TOOLTIP = "Toggle Accountant";
 
 SC.artwork_path = "Interface\\AddOns\\Accountant\\Artwork\\"
 
@@ -35,4 +35,3 @@ SC.GOLD_COLOR = "|cFFFFFF00"
 SC.GREEN_COLOR = GREEN_FONT_COLOR_CODE
 SC.TITLE = "Accountant"
 SC.DIVIDER = "-"
-	

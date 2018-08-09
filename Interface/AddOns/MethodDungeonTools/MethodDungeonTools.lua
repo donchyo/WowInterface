@@ -108,6 +108,8 @@ end
 do
     local frame = CreateFrame("Frame")
     frame:RegisterEvent("ADDON_LOADED")
+    frame:RegisterEvent("GROUP_ROSTER_UPDATE")
+    --TODO Register Affix Changed event
     frame:SetScript("OnEvent", function(self, event, ...)
         return MethodDungeonTools[event](self,...)
     end)
@@ -115,7 +117,6 @@ do
     function MethodDungeonTools.ADDON_LOADED(self,addon)
         if addon == "MethodDungeonTools" then
 			db = LibStub("AceDB-3.0"):New("MethodDungeonToolsDB", defaultSavedVars).global
-
 			icon:Register("MethodDungeonTools", LDB, db.minimap)
 			if not db.minimap.hide then
 				icon:Show("MethodDungeonTools")
@@ -140,14 +141,36 @@ do
 				hide_on_escape = true,
 			})
             self:UnregisterEvent("ADDON_LOADED")
+            MethodDungeonTools.DataCollection:Init()
         end
     end
+    function MethodDungeonTools.GROUP_ROSTER_UPDATE(self,addon)
+        if not MethodDungeonTools.main_frame then return end
+        local inGroup = UnitInRaid("player") or IsInGroup()
+        MethodDungeonTools.main_frame.LinkToChatButton:SetDisabled(not inGroup)
+    end
+
 end
 
 MethodDungeonTools.dungeonTotalCount = {}
 MethodDungeonTools.scaleMultiplier = {}
 
 local affixWeeks = { --affixID as used in C_ChallengeMode.GetAffixInfo(affixID)
+    [1] = {[1]=6,[2]=3,[3]=9,[4]=16},
+    [2] = {[1]=5,[2]=13,[3]=10,[4]=16},
+    [3] = {[1]=7,[2]=12,[3]=9,[4]=16},
+    [4] = {[1]=8,[2]=4,[3]=10,[4]=16},
+    [5] = {[1]=11,[2]=2,[3]=9,[4]=16},
+    [6] = {[1]=5,[2]=14,[3]=10,[4]=16},
+    [7] = {[1]=6,[2]=4,[3]=9,[4]=16},
+    [8] = {[1]=7,[2]=2,[3]=10,[4]=16},
+    [9] = {[1]=5,[2]=3,[3]=9,[4]=16},
+    [10] = {[1]=8,[2]=12,[3]=10,[4]=16},
+    [11] = {[1]=7,[2]=13,[3]=9,[4]=16},
+    [12] = {[1]=11,[2]=14,[3]=10,[4]=16},
+}
+--TODO Change this once BFA hits
+local affixWeeksBFA = { --affixID as used in C_ChallengeMode.GetAffixInfo(affixID)
     [1] = {[1]=9,[2]=6,[3]=3,[4]=16},
     [2] = {[1]=10,[2]=5,[3]=13,[4]=16},
     [3] = {[1]=9,[2]=7,[3]=12,[4]=16},
@@ -189,6 +212,7 @@ local dungeonList = {
     [24] = "Waycrest Manor",
     [25] = " >Legion",
 }
+function MethodDungeonTools:GetDungeonName(idx) return dungeonList[idx] end
 
 local dungeonSubLevels = {
     [1] = {
@@ -271,7 +295,7 @@ local dungeonSubLevels = {
     },
     [18] = {
         [1] = "Shrine of the Storm",
-        [2] = "Shrine Interior TEMP",
+        [2] = "Storm's End",
     },
     [19] = {
         [1] = "Siege of Boralus",
@@ -285,7 +309,7 @@ local dungeonSubLevels = {
     },
     [22] = {
         [1] = "The Underrot",
-        [2] = "Temple Interior TEMP",
+        [2] = "Ruin's Descent",
     },
     [23] = {
         [1] = "Tol Dagor",
@@ -456,13 +480,13 @@ function MethodDungeonTools:GetDB()
 end
 
 local framesInitialized
-function MethodDungeonTools:ShowInterface()
+function MethodDungeonTools:ShowInterface(force)
     if not framesInitialized then initFrames() end
-	if self.main_frame:IsShown() then
+	if self.main_frame:IsShown() and not force then
 		MethodDungeonTools:HideInterface()
 	else
 		self.main_frame:Show()
-		MethodDungeonTools:UpdateToDungeon(db.currentDungeonIdx)
+		--MethodDungeonTools:UpdateToDungeon(db.currentDungeonIdx)
 		self.main_frame.HelpButton:Show()
 	end
 end
@@ -775,25 +799,27 @@ function MethodDungeonTools:MakeSidePanel(frame)
 		frame.DeleteConfirmationFrame:Show()
 	end)
 
-	frame.sidePanelClearButton = AceGUI:Create("Button")
-	frame.sidePanelClearButton:SetText("Clear")
-	frame.sidePanelClearButton:SetWidth(buttonWidth)
-	frame.sidePanelClearButton.frame:SetNormalFontObject(fontInstance)
-	frame.sidePanelClearButton.frame:SetHighlightFontObject(fontInstance)
-	frame.sidePanelClearButton.frame:SetDisabledFontObject(fontInstance)
-	frame.sidePanelClearButton:SetCallback("OnClick",function(widget,callbackName,value)
-		MethodDungeonTools:HideAllDialogs()
-		frame.ClearConfirmationFrame:SetPoint("CENTER",MethodDungeonTools.main_frame,"CENTER",0,50)
-		local currentPresetName = db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]].text
-		frame.ClearConfirmationFrame.label:SetText("Clear "..currentPresetName.."?")
-		frame.ClearConfirmationFrame:Show()
+	frame.LinkToChatButton = AceGUI:Create("Button")
+	frame.LinkToChatButton:SetText("Share")
+	frame.LinkToChatButton:SetWidth(buttonWidth)
+	frame.LinkToChatButton.frame:SetNormalFontObject(fontInstance)
+	frame.LinkToChatButton.frame:SetHighlightFontObject(fontInstance)
+	frame.LinkToChatButton.frame:SetDisabledFontObject(fontInstance)
+	frame.LinkToChatButton:SetCallback("OnClick",function(widget,callbackName,value)
+        local distribution = (UnitInRaid("player") and "RAID") or (IsInGroup() and "PARTY")
+        if not distribution then return end
+        frame.LinkToChatButton:SetDisabled(true)
+        frame.LinkToChatButton:SetText("Sending")
+        MethodDungeonTools:SendToGroup(distribution)
 	end)
+    local inGroup = UnitInRaid("player") or IsInGroup()
+    MethodDungeonTools.main_frame.LinkToChatButton:SetDisabled(not inGroup)
 
 	frame.sidePanel.WidgetGroup:AddChild(frame.sidePanelNewButton)
 	frame.sidePanel.WidgetGroup:AddChild(frame.sidePanelImportButton)
 	frame.sidePanel.WidgetGroup:AddChild(frame.sidePanelExportButton)
 	frame.sidePanel.WidgetGroup:AddChild(frame.sidePanelRenameButton)
-	frame.sidePanel.WidgetGroup:AddChild(frame.sidePanelClearButton)
+	frame.sidePanel.WidgetGroup:AddChild(frame.LinkToChatButton)
 	frame.sidePanel.WidgetGroup:AddChild(frame.sidePanelDeleteButton)
 
 
@@ -818,20 +844,37 @@ function MethodDungeonTools:MakeSidePanel(frame)
         end
         return ret
     end
-
-    local affixWeekMarkups = {}
-    for week,affixes in ipairs(affixWeeks) do
-        tinsert(affixWeekMarkups,makeAffixString(week,affixes))
-    end
-
     frame.sidePanel.affixDropdown = AceGUI:Create("Dropdown")
     local affixDropdown = frame.sidePanel.affixDropdown
     affixDropdown.text:SetJustifyH("LEFT")
     affixDropdown:SetLabel("Affixes")
 
-    function affixDropdown:SetAffixWeek(key)
+
+    function affixDropdown:UpdateAffixList()
+        local affixWeekMarkups = {}
+        for week,affixes in ipairs(affixWeeks) do
+            tinsert(affixWeekMarkups,makeAffixString(week,affixes))
+        end
+        affixDropdown:SetList(affixWeekMarkups)
+        --mouseover list items
+        for itemIdx,item in ipairs(affixDropdown.pullout.items) do
+            item:SetOnEnter(function()
+                GameTooltip:SetOwner(item.frame, "ANCHOR_LEFT",-11,-25)
+                local v = affixWeeks[itemIdx]
+                GameTooltip:SetText(makeAffixString(nil,v,true),1,1,1,1)
+                GameTooltip:Show()
+            end)
+            item:SetOnLeave(function()
+                GameTooltip:Hide()
+            end)
+        end
+    end
+    function affixDropdown:SetAffixWeek(key,ignoreReloadPullButtons)
         affixDropdown:SetValue(key)
-        if MethodDungeonTools:GetCurrentAffixWeek() and MethodDungeonTools:GetCurrentAffixWeek() == key then
+        if not MethodDungeonTools:GetCurrentAffixWeek() then
+            frame.sidePanel.affixWeekWarning.image:Hide()
+            frame.sidePanel.affixWeekWarning:SetDisabled(true)
+        elseif MethodDungeonTools:GetCurrentAffixWeek() == key then
             frame.sidePanel.affixWeekWarning.image:Hide()
             frame.sidePanel.affixWeekWarning:SetDisabled(true)
         else
@@ -839,14 +882,16 @@ function MethodDungeonTools:MakeSidePanel(frame)
             frame.sidePanel.affixWeekWarning:SetDisabled(false)
         end
         MethodDungeonTools:GetCurrentPreset().week = key
-        local teeming = (affixWeeks[key][2] == 5) or (affixWeeks[key][3] == 5)
+        local teeming = MethodDungeonTools:IsPresetTeeming(MethodDungeonTools:GetCurrentPreset())
         db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]].value.teeming = teeming
         --dont need this here as we just change teeming and infested
         --MethodDungeonTools:UpdateMap()
         MethodDungeonTools:DungeonEnemies_UpdateTeeming()
         MethodDungeonTools:DungeonEnemies_UpdateInfested(key)
+        MethodDungeonTools:UpdateFreeholdSelector(key)
+        MethodDungeonTools:DungeonEnemies_UpdateBlacktoothEvent(key)
         MethodDungeonTools:UpdateProgressbar()
-        MethodDungeonTools:ReloadPullButtons()
+        if not ignoreReloadPullButtons then MethodDungeonTools:ReloadPullButtons() end
     end
     affixDropdown:SetCallback("OnValueChanged",function(widget,callbackName,key)
         affixDropdown:SetAffixWeek(key)
@@ -862,19 +907,7 @@ function MethodDungeonTools:MakeSidePanel(frame)
     affixDropdown:SetCallback("OnLeave",function(...)
         GameTooltip:Hide()
     end)
-    affixDropdown:SetList(affixWeekMarkups)
-    --mouseover list items
-    for itemIdx,item in ipairs(affixDropdown.pullout.items) do
-        item:SetOnEnter(function()
-            GameTooltip:SetOwner(item.frame, "ANCHOR_LEFT",-11,-25)
-            local v = affixWeeks[itemIdx]
-            GameTooltip:SetText(makeAffixString(nil,v,true),1,1,1,1)
-            GameTooltip:Show()
-        end)
-        item:SetOnLeave(function()
-            GameTooltip:Hide()
-        end)
-    end
+
     frame.sidePanel.WidgetGroup:AddChild(affixDropdown)
 
     --affix not current week warning
@@ -996,6 +1029,7 @@ end
 function MethodDungeonTools:UpdateProgressbar()
 	local teeming = db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]].value.teeming
 	local preset = db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]]
+    MethodDungeonTools:EnsureDBTables()
 	local grandTotal = 0
 	for pullIdx,pull in pairs(preset.value.pulls) do
 		for enemyIdx,clones in pairs(pull) do
@@ -1003,12 +1037,17 @@ function MethodDungeonTools:UpdateProgressbar()
                 if not MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx]["clones"][v] then
                     clones[v] = nil
                 else
-                    local crew = MethodDungeonTools:GetCurrentPreset().freeholdCrew and MethodDungeonTools.freeholdCrews[MethodDungeonTools:GetCurrentPreset().freeholdCrew]
-                    local disabled = crew and crew[MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx].id]
-
-                    if not disabled then
-                        local isCloneTeeming = MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx]["clones"][v].teeming
-                        if teeming == true or ((isCloneTeeming and isCloneTeeming == false) or (not isCloneTeeming)) then
+                    local isCloneTeeming = MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx]["clones"][v].teeming
+                    local isCloneBlacktoothEvent = MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx]["clones"][v].blacktoothEvent
+                    if teeming == true or ((isCloneTeeming and isCloneTeeming == false) or (not isCloneTeeming)) then
+                        local week = preset.week%3
+                        if week == 0 then week = 3 end
+                        local isBlacktoothWeek = week == 2
+                        if isCloneBlacktoothEvent then
+                            if isBlacktoothWeek then
+                                grandTotal = grandTotal + MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx].count
+                            end
+                        else
                             grandTotal = grandTotal + MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx].count
                         end
                     end
@@ -1237,8 +1276,8 @@ end
 ---GetCurrentTeeming
 ---Returns if the current week has an affix week set that inlcludes the teeming affix
 function MethodDungeonTools:IsWeekTeeming(week)
-    if not week then week = MethodDungeonTools:GetCurrentAffixWeek() end
-    return (affixWeeks[week][2] == 5) or (affixWeeks[week][3] == 5)
+    if not week then week = MethodDungeonTools:GetCurrentAffixWeek() or 1 end
+    return week == 2 or week == 6 or week == 9
 end
 
 ---IsPresetTeeming
@@ -1392,6 +1431,14 @@ function MethodDungeonTools:OpenNewPresetDialog()
 	MethodDungeonTools.main_frame.presetImportBox:SetText("")
 end
 
+function MethodDungeonTools:OpenClearPresetDialog()
+    MethodDungeonTools:HideAllDialogs()
+    MethodDungeonTools.main_frame.ClearConfirmationFrame:SetPoint("CENTER",MethodDungeonTools.main_frame,"CENTER",0,50)
+    local currentPresetName = db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]].text
+    MethodDungeonTools.main_frame.ClearConfirmationFrame.label:SetText("Clear "..currentPresetName.."?")
+    MethodDungeonTools.main_frame.ClearConfirmationFrame:Show()
+end
+
 
 function MethodDungeonTools:UpdateDungeonDropDown()
 	local group = MethodDungeonTools.main_frame.DungeonSelectionGroup
@@ -1456,6 +1503,8 @@ end
 ---EnsureDBTables
 ---Makes sure profiles are valid and have their fields set
 function MethodDungeonTools:EnsureDBTables()
+    local preset = MethodDungeonTools:GetCurrentPreset()
+    preset.week = preset.week or 1
 	db.currentPreset[db.currentDungeonIdx] = db.currentPreset[db.currentDungeonIdx] or 1
     db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]].value.currentDungeonIdx = db.currentDungeonIdx
 	db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]].value.currentSublevel = db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]].value.currentSublevel or 1
@@ -1504,7 +1553,7 @@ function MethodDungeonTools:UpdateMap(ignoreSetSelection,ignoreReloadPullButtons
 
 	if not ignoreSetSelection then MethodDungeonTools:SetSelectionToPull(db.presets[db.currentDungeonIdx][db.currentPreset[db.currentDungeonIdx]].value.currentPull) end
 	MethodDungeonTools:UpdateDungeonDropDown()
-    frame.sidePanel.affixDropdown:SetAffixWeek(MethodDungeonTools:GetCurrentPreset().week)
+    frame.sidePanel.affixDropdown:SetAffixWeek(MethodDungeonTools:GetCurrentPreset().week,ignoreReloadPullButtons)
     MethodDungeonTools:POI_UpdateAll()
     MethodDungeonTools:DrawAllPresetObjects()
 end
@@ -1587,6 +1636,56 @@ function MethodDungeonTools:SanitizePresetName(text)
 	end
 end
 
+
+function MethodDungeonTools:MakeChatPresetImportFrame(frame)
+    frame.chatPresetImportFrame = AceGUI:Create("Frame")
+    local chatImport = frame.chatPresetImportFrame
+    chatImport:SetTitle("Import Preset")
+    chatImport:SetWidth(400)
+    chatImport:SetHeight(100)
+    chatImport:EnableResize(false)
+    chatImport:SetLayout("Flow")
+    chatImport:SetCallback("OnClose", function(widget)
+        MethodDungeonTools:UpdatePresetDropDown()
+        if db.currentPreset[db.currentDungeonIdx] ~= 1 then
+            MethodDungeonTools.main_frame.sidePanelDeleteButton:SetDisabled(false)
+        end
+    end)
+    chatImport.defaultText = "Import Preset:\n"
+    chatImport.importLabel = AceGUI:Create("Label")
+    chatImport.importLabel:SetText(chatImport.defaultText)
+    chatImport.importLabel:SetWidth(250)
+    --chatImport.importLabel:SetColor(1,0,0)
+
+
+    local importButton = AceGUI:Create("Button")
+    importButton:SetText("Import")
+    importButton:SetWidth(100)
+    importButton:SetCallback("OnClick", function()
+        local newPreset = chatImport.currentPreset
+        if MethodDungeonTools:ValidateImportPreset(newPreset) then
+            chatImport:Hide()
+            MethodDungeonTools:ImportPreset(MethodDungeonTools:DeepCopy(newPreset))
+        else
+            print("MDT: Error importing preset report to author")
+        end
+    end)
+    chatImport:AddChild(chatImport.importLabel)
+    chatImport:AddChild(importButton)
+    chatImport:Hide()
+
+end
+
+function MethodDungeonTools:OpenChatImportPresetDialog(sender,preset)
+    MethodDungeonTools:HideAllDialogs()
+    local chatImport = MethodDungeonTools.main_frame.chatPresetImportFrame
+    chatImport:SetPoint("CENTER",MethodDungeonTools.main_frame,"CENTER",0,50)
+    chatImport.currentPreset = preset
+    local dungeon = MethodDungeonTools:GetDungeonName(preset.value.currentDungeonIdx)
+    local name = preset.text
+    chatImport.importLabel:SetText(chatImport.defaultText..sender.. ": "..dungeon.." - "..name)
+    chatImport:Show()
+end
 
 function MethodDungeonTools:MakePresetImportFrame(frame)
 	frame.presetImportFrame = AceGUI:Create("Frame")
@@ -1695,7 +1794,6 @@ function MethodDungeonTools:ValidateImportPreset(preset)
     if not preset.value then return false end
     if type(preset.text) ~= "string" then return false end
     if type(preset.value) ~= "table" then return false end
-    if not preset.value.currentAffix then return false end
     if not preset.value.currentDungeonIdx then return false end
     if not preset.value.currentPull then return false end
     if not preset.value.currentSublevel then return false end
@@ -1818,7 +1916,6 @@ function MethodDungeonTools:SetSelectionToPull(pull)
 	MethodDungeonTools:PickPullButton(pull)
 
     MethodDungeonTools:DungeonEnemies_UpdateSelected(pull)
-	MethodDungeonTools:UpdateProgressbar()
 end
 
 
@@ -1848,13 +1945,24 @@ function MethodDungeonTools:UpdatePullButtonNPCData(idx)
                     if not MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx]["clones"][cloneIdx] then
 
                     else
-                        --check for disabled in freehold
-                        local crew = MethodDungeonTools:GetCurrentPreset().freeholdCrew and MethodDungeonTools.freeholdCrews[MethodDungeonTools:GetCurrentPreset().freeholdCrew]
-                        local disabled = crew and crew[MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx].id]
-                        if not disabled then
-                            --check for teeming
-                            local cloneIsTeeming = MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx]["clones"][cloneIdx].teeming
-                            if (cloneIsTeeming and teeming) or (not cloneIsTeeming and not teeming) or (not cloneIsTeeming and teeming) then
+                        --check for teeming
+                        local cloneIsTeeming = MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx]["clones"][cloneIdx].teeming
+                        if (cloneIsTeeming and teeming) or (not cloneIsTeeming and not teeming) or (not cloneIsTeeming and teeming) then
+
+                            local isCloneBlacktoothEvent = MethodDungeonTools.dungeonEnemies[db.currentDungeonIdx][enemyIdx]["clones"][cloneIdx].blacktoothEvent
+                            local continue = false
+                            local week = preset.week%3
+                            if week == 0 then week = 3 end
+                            local isBlacktoothWeek = week == 2
+                            if isCloneBlacktoothEvent then
+                                if isBlacktoothWeek then
+                                    continue = true
+                                end
+                            else
+                                continue = true
+                            end
+
+                            if continue then
                                 if not incremented then enemyTableIdx = enemyTableIdx + 1; incremented = true end
                                 if not enemyTable[enemyTableIdx] then enemyTable[enemyTableIdx] = {} end
                                 enemyTable[enemyTableIdx].quantity = enemyTable[enemyTableIdx].quantity or 0
@@ -2376,15 +2484,18 @@ function MethodDungeonTools:PresetObjectStepForward()
     end
 end
 
-function MethodDungeonTools:FixAceGUIShowHide(widget,frame)
+function MethodDungeonTools:FixAceGUIShowHide(widget,frame,isFrame)
     frame = frame or MethodDungeonTools.main_frame
     local originalShow,originalHide = frame.Show,frame.Hide
+    if not isFrame then
+        widget = widget.frame
+    end
     function frame:Show(...)
-        widget.frame:Show()
+        widget:Show()
         return originalShow(self, ...);
     end
     function frame:Hide(...)
-        widget.frame:Hide()
+        widget:Hide()
         return originalHide(self, ...);
     end
 end
@@ -2397,7 +2508,7 @@ function MethodDungeonTools:GetCurrentAffixWeek()
     local affixIds = C_MythicPlus.GetCurrentAffixes() --table
     if not affixIds then return end
     for week,affixes in ipairs(affixWeeks) do
-        if affixes[1] == affixIds[1] and affixes[2] == affixIds[2] and affixes[3] == affixIds[3] and affixes[4] == affixIds[4] then
+        if affixes[1] == affixIds[1] and affixes[2] == affixIds[2] and affixes[3] == affixIds[3] then
             return week
         end
     end
@@ -2451,8 +2562,8 @@ function initFrames()
 	MethodDungeonTools:MakeDeleteConfirmationFrame(main_frame)
 	MethodDungeonTools:MakeClearConfirmationFrame(main_frame)
 	MethodDungeonTools:CreateTutorialButton(main_frame)
-
     MethodDungeonTools:POI_CreateFramePools()
+    MethodDungeonTools:MakeChatPresetImportFrame(main_frame)
 
     --devMode
     if db.devMode and MethodDungeonTools.CreateDevPanel then
@@ -2461,7 +2572,7 @@ function initFrames()
 
     --ElvUI skinning
     local skinTooltip = function(tooltip)
-        if IsAddOnLoaded("ElvUI") then
+        if IsAddOnLoaded("ElvUI") and ElvUI[1].Tooltip then
             local borderTextures = {"BorderBottom","BorderBottomLeft","BorderBottomRight","BorderLeft","BorderRight","BorderTop","BorderTopLeft","BorderTopRight"}
             for k,v in pairs(borderTextures) do
                 tooltip[v]:Kill()
@@ -2491,20 +2602,13 @@ function initFrames()
         tooltip.Model:SetFrameLevel(1)
         tooltip.Model:SetSize(100,100)
         tooltip.Model.fac = 0
-        if true then
-            tooltip.Model:SetScript("OnUpdate",function (self,elapsed)
-                self.fac = self.fac + 0.5
-                if self.fac >= 360 then
-                    self.fac = 0
-                end
-                self:SetFacing(PI*2 / 360 * self.fac)
-                --print(tooltip.Model:GetModelFileID())
-            end)
-
-        else
-            tooltip.Model:SetPortraitZoom(1)
-            tooltip.Model:SetFacing(PI*2 / 360 * 2)
-        end
+        tooltip.Model:SetScript("OnUpdate",function (self,elapsed)
+            self.fac = self.fac + 0.5
+            if self.fac >= 360 then
+                self.fac = 0
+            end
+            self:SetFacing(PI*2 / 360 * self.fac)
+        end)
         tooltip.Model:SetPoint("TOPLEFT", tooltip, "TOPLEFT",7,-7)
         tooltip.String = tooltip:CreateFontString("MethodDungeonToolsToolTipString");
         tooltip.String:SetFontObject("GameFontNormalSmall")
@@ -2650,9 +2754,12 @@ function initFrames()
 	MethodDungeonTools:initToolbar(main_frame)
 
     --Set affix dropdown to preset week
+    --gotta set the list here, as affixes are not ready to be retrieved yet on login
+    main_frame.sidePanel.affixDropdown:UpdateAffixList()
     main_frame.sidePanel.affixDropdown:SetAffixWeek(MethodDungeonTools:GetCurrentPreset().week or (MethodDungeonTools:GetCurrentAffixWeek() or 1))
-
+    MethodDungeonTools:UpdateToDungeon(db.currentDungeonIdx)
 	main_frame:Hide()
+
     framesInitialized = true
 end
 

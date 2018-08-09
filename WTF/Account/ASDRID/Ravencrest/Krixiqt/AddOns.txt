@@ -71,7 +71,7 @@ MogIt_Cosmetic: disabled
 HandyNotes_DraenorTreasures: disabled
 HandyNotes: disabled
 HandyNotes_SummerFestival: disabled
-GarrisonMissionManager: enabled
+GarrisonMissionManager: disabled
 MasterPlanA: disabled
 MasterPlan: disabled
 Velhari_Health_Fix: disabled
@@ -201,9 +201,9 @@ BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 BigWigs_Nighthold: enabled
 Broker_Currency: disabled
-BulkBuy: disabled
+BulkBuy: enabled
 ChocolateBar: disabled
-ColorPickerPlus: disabled
+ColorPickerPlus: enabled
 Combuctor_Sets: disabled
 Combuctor_Config: disabled
 Combuctor_EquipmentSets: disabled
@@ -240,8 +240,8 @@ Gnosis: disabled
 !InspectFix: disabled
 LibRangeCheck-2.0: enabled
 nRange: enabled
-OmniCC: disabled
-OmniCC_Config: disabled
+OmniCC: enabled
+OmniCC_Config: enabled
 oRA3: enabled
 Overachiever: disabled
 Overachiever_Tabs: disabled
@@ -282,7 +282,7 @@ Rarity: disabled
 Rarity_Options: disabled
 RCLootCouncil: disabled
 SafeQueue: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 SellOMatic2: disabled
 SellOMatic2_Destroy: disabled
 SharedMedia: enabled
@@ -308,7 +308,7 @@ XLoot_Monitor: disabled
 XLoot_Options: disabled
 SatchelScanner: disabled
 ElvUI_Config: enabled
-ElvUI_Skullflower: disabled
+ElvUI_Skullflower: enabled
 ElvUI: enabled
 infBGMiniMapSkinner: disabled
 infBinds: enabled
@@ -341,7 +341,7 @@ DailyGlobalCheck: disabled
 Dominos_Quest: disabled
 ConsLegion: disabled
 MythicPlusTimer: disabled
-Omen: disabled
+Omen: enabled
 ServerHop: disabled
 RaidAchievement_LegionHeroics: disabled
 RaidAchievement_LegionRaids: disabled
@@ -355,13 +355,13 @@ GottaGoFast: disabled
 GottaGoFastHistory: disabled
 BigWigs_Voice_Overwatch: disabled
 BigWigs_Countdown_Overwatch: disabled
-BloodTrader: enabled
+BloodTrader: disabled
 NomiCakes: disabled
 StopResetingMyCameraPlease: disabled
 LegionTODOMini: disabled
 Skada_LeechBDKTabs: disabled
 Details_RaidInfo-TombOfSargeras: disabled
-PremadeGroupsFilter: enabled
+PremadeGroupsFilter: disabled
 Prat-3.0: disabled
 WorldQuestsList: enabled
 RaiderIO_DB_EU_H: disabled
@@ -387,7 +387,7 @@ Bagnon: disabled
 Bagnon_Config: disabled
 Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: disabled
-HideOrderHallBar: enabled
+HideOrderHallBar: disabled
 WorldQuestGroupFinder: disabled
 NOP: disabled
 RaiderIO_DB_EU_A: enabled
@@ -397,7 +397,7 @@ AngryKeystones: enabled
 BigWigs_Antorus: enabled
 BigWigs_ArgusInvasionPoints: enabled
 BigWigs_BrokenIsles: enabled
-Plater: disabled
+Plater: enabled
 bdNameplates: disabled
 Kui_Media: disabled
 BigDebuffs: disabled
@@ -416,7 +416,7 @@ Reflux: disabled
 rLib: disabled
 rObjectiveTracker: disabled
 Simulationcraft: disabled
-ViragDevTool: disabled
+ViragDevTool: enabled
 !!Warmup: disabled
 WorldQuestTracker: enabled
 ElvUI_ExtraActionBars: enabled
@@ -425,3 +425,4 @@ bdBuffs: disabled
 bdCore: disabled
 StayUnsheathed: disabled
 Masque_ElvUIesque: disabled
+AddOnSkins: enabled

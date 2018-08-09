@@ -152,6 +152,10 @@ end
 function _detalhes:GetInstance (id)
 	return _detalhes.tabela_instancias [id]
 end
+--> user friendly alias
+function _detalhes:GetWindow (id)
+	return _detalhes.tabela_instancias [id]
+end
 
 function _detalhes:GetId()
 	return self.meu_id
@@ -281,7 +285,11 @@ end
 function _detalhes:IsAtiva()
 	return self.ativa
 end
+
 --> english alias
+function _detalhes:IsShown()
+	return self.ativa
+end
 function _detalhes:IsEnabled()
 	return self.ativa
 end
@@ -333,6 +341,10 @@ end
 		end
 	end
 
+	--> alias
+	function _detalhes:HideWindow()
+		return self:DesativarInstancia()
+	end
 	function _detalhes:ShutDown()
 		return self:DesativarInstancia()
 	end
@@ -344,9 +356,18 @@ end
 --> desativando a inst�ncia ela fica em stand by e apenas hida a janela ~shutdown ~close ~fechar
 	function _detalhes:DesativarInstancia()
 	
-		local lower = _detalhes:GetLowerInstanceNumber()
-
 		self.ativa = false
+		_detalhes.opened_windows = _detalhes.opened_windows-1
+	
+		if (not self.baseframe) then
+			--> windown isn't initialized yet
+			if (_detalhes.debug) then
+				_detalhes:Msg ("(debug) called HideWindow() but the window isn't initialized yet.")
+			end
+			return
+		end
+	
+		local lower = _detalhes:GetLowerInstanceNumber()
 		_detalhes:GetLowerInstanceNumber()
 		
 		if (lower == self.meu_id) then
@@ -358,7 +379,6 @@ end
 			_detalhes.switch:CloseMe()
 		end
 		
-		_detalhes.opened_windows = _detalhes.opened_windows-1
 		self:ResetaGump()
 		
 		--gump:Fade (self.baseframe.cabecalho.atributo_icon, _unpack (_detalhes.windows_fade_in))
@@ -538,6 +558,9 @@ end
 	end
 
 	--> alias
+	function _detalhes:ShowWindow (temp)
+		return self:AtivarInstancia (temp)
+	end
 	function _detalhes:EnableInstance (temp)
 		return self:AtivarInstancia (temp)
 	end

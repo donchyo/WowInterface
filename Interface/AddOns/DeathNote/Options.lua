@@ -43,6 +43,9 @@ DeathNote.OptionsDefaults = {
 			debuff_fades = true,
 			survival_buffs = true,
 			highlight_survival = true,
+			ignored_highlight_survival = {
+				
+			},
 			consolidate_auras = false,
 
 			spell_filter = {},
@@ -64,6 +67,10 @@ DeathNote.OptionsDefaults = {
 		report = {
 			max_lines = 15,
 			style = "COMBAT_LOG",
+		},
+		
+		quick_spell_search = {
+			only_hl = false,
 		},
 	},
 }

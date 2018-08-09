@@ -8,7 +8,7 @@ version:SetTextColor(.5,.5,.5)
 version:SetPoint('TOPRIGHT',-12,-10)
 version:SetText(string.format(
     L.titles.version,
-    'KuiNameplates','Kesava','2.16.1'
+    'KuiNameplates','Kesava','2.16.2'
 ))
 
 opt:Initialise()
@@ -413,6 +413,8 @@ function framesizes:Initialise()
     local frame_height_personal = self:CreateSlider('frame_height_personal',3,40)
     local powerbar_height = self:CreateSlider('powerbar_height',1,20)
     local frame_glow_size = self:CreateSlider('frame_glow_size',4,16)
+
+    frame_height_personal.enabled = function(p) return not p.use_blizzard_personal end
 
     frame_width:SetPoint('TOPLEFT',10,-25)
     frame_height:SetPoint('LEFT',frame_width,'RIGHT',20,0)

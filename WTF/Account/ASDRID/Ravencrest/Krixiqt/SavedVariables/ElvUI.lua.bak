@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		"/g what are you doing", -- [1]
-		"/g it will depend on the content", -- [2]
-		"/g i would go shoulders for sure then", -- [3]
-		"/s asd", -- [4]
-		"/run ToggleGuildFrame()", -- [5]
-		"/wa", -- [6]
-		"/fstack", -- [7]
-		"/run CloseGuildRoster()", -- [8]
-		"/reload", -- [9]
-		"/afk", -- [10]
-		"/ec", -- [11]
-		"/ert", -- [12]
-		"/g vad ska liras?", -- [13]
-		"/g men jag ska bara äta snabbt", -- [14]
-		"/g )", -- [15]
-		"/p det gör nog ont", -- [16]
-		"/p fick du summon rubbe", -- [17]
-		"/p )", -- [18]
-		"/p eyesdps", -- [19]
-		"/WA", -- [20]
+		"/cw Oklik-Ravencrest just with myself", -- [1]
+		"/cw Oklik-Ravencrest that dosent work sadly", -- [2]
+		"/cw Oklik-Ravencrest the best thing is an alert that someone wants a summon", -- [3]
+		"/cw Oklik-Ravencrest its protected by blizzard", -- [4]
+		"/cw Oklik-Ravencrest or you could make rotation bots in addons", -- [5]
+		"/cw Oklik-Ravencrest i could try something else i guess", -- [6]
+		"/cw Oklik-Ravencrest when i have time", -- [7]
+		"/cw Oklik-Ravencrest :P", -- [8]
+		"/cw Oklik-Ravencrest but i need to do research on the new bosses aswell", -- [9]
+		"/cw Oklik-Ravencrest only looked at like 4 so far", -- [10]
+		"/cw Oklik-Ravencrest just mongo", -- [11]
+		"/cw Oklik-Ravencrest npx", -- [12]
+		"/cw Oklik-Ravencrest nps", -- [13]
+		"/cw Oklik-Ravencrest :D", -- [14]
+		"/cw Oklik-Ravencrest but need to sleep now, cya tomorrow", -- [15]
+		"/g can you skip battle for lordaeron?", -- [16]
+		"/g fuck me", -- [17]
+		"/g cnorg", -- [18]
+		"/g say that to me at lan", -- [19]
+		"/g what", -- [20]
 	},
 }

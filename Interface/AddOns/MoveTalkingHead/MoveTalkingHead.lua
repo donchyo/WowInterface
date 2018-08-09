@@ -1,6 +1,12 @@
 -- Author: Ketho (EU-Boulderfist)
 -- License: Public Domain
 
+if IsAddOnLoaded("ElvUI") then
+	print("|cffFF0000MoveTalkingHead is not compatible with ElvUI|r")
+	DisableAddOn("MoveTalkingHead", true)
+	return
+end
+
 local NAME, S = ...
 local L = S.L
 local f = CreateFrame("Frame")
@@ -16,6 +22,12 @@ local function RemoveAnchor()
 			tremove(AlertFrame.alertFrameSubSystems, i)
 			return 
 		end
+	end
+end
+
+local function ApplyUICamera()
+	if model and model.uiCameraID then
+		Model_ApplyUICamera(model, model.uiCameraID)
 	end
 end
 
@@ -60,7 +72,7 @@ function f:OnEvent(event, ...)
 						db.scale = scale
 						self:SetScale(scale)
 						-- update model camera for new scale
-						Model_ApplyUICamera(model, model.uiCameraID)
+						ApplyUICamera()
 					end
 				end
 			end)
@@ -102,13 +114,13 @@ function SlashCmdList.MOVETALKINGHEAD(msg)
 		THF:ClearAllPoints()
 		THF:SetPoint("BOTTOM", UIParent, "BOTTOM", 0, 96)
 		THF:SetScale(1)
-		Model_ApplyUICamera(model, model.uiCameraID)
+		ApplyUICamera()
 		print(L.RESET)
 	elseif scale then
 		if scale <= 2 and scale >= .5 then
 			db.scale = scale
 			THF:SetScale(db.scale)
-			Model_ApplyUICamera(model, model.uiCameraID)
+			ApplyUICamera()
 			print(L.SET:format(scale))
 		else
 			print(L.ERROR_SCALE:format(msg, "[0.50, 2.00]"))

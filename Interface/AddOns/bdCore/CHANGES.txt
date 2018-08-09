@@ -1,10 +1,10 @@
-lightweight tag 1f170c8028690c896bc34d2fa41e6297d44f9025 2.17
-Author:	Glade Lynch <blooblahguy@gmail.com>
-Date:	Wed Jul 18 12:43:36 2018 -0600
+lightweight tag 38b5023754a4b2e5e62d070e468c1e3fa7176878 2.19
+Author:	blooblahguy <blooblahguy@gmail.com>
+Date:	Thu Jul 26 22:39:00 2018 -0600
 
-commit 1f170c8028690c896bc34d2fa41e6297d44f9025
-Author: Glade Lynch <blooblahguy@gmail.com>
-Date:   Wed Jul 18 12:43:36 2018 -0600
+commit 38b5023754a4b2e5e62d070e468c1e3fa7176878
+Author: blooblahguy <blooblahguy@gmail.com>
+Date:   Thu Jul 26 22:39:00 2018 -0600
 
-    updating libs
+    fixing flat texture, starting on aurabars fix
 

@@ -5,7 +5,6 @@
 	Things marked with "todo"
 		- Emulate award stuff - i.e. log awards without awarding
 		- IDEA Change popups so they only hide on award/probably add the error message to it.
-		- TODO/IDEA Change chat_commands to seperate lines in order to have a table of printable cmds.
 
 	Backwards compability breaks:
 		- Remove equipLoc, subType, texture from lootTable. They can all be created with GetItemInfoInstant()
@@ -33,13 +32,19 @@
 		RCHistory_ResponseEdit - fires when the user edits the response of a history entry. args: data (see LootHistory:BuildData())
 		RCHistory_NameEdit	-	fires when the user edits the receiver of a history entry. args: data.
 ]]
+--[[ Notable AceComm-3.0 messages: (See RCLootCouncil:OnCommReceived() for receiving comms)
+	Comm prefix: "RCLootCouncil"
+		StartHandleLoot 			- Sent whenever RCLootCouncil starts handling loot.
+		StopHandleLoot				- Sent whenever RCLootCouncil stops handling loot.
+]]
 --[===[@debug@
 --if LibDebug then LibDebug() end
 --@end-debug@]===]
 
 -- GLOBALS: GetLootMethod, GetAddOnMetadata, UnitClass
 
-_G.RCLootCouncil = LibStub("AceAddon-3.0"):NewAddon("RCLootCouncil", "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceSerializer-3.0", "AceHook-3.0", "AceTimer-3.0");
+local addonname, addontable = ...
+_G.RCLootCouncil = LibStub("AceAddon-3.0"):NewAddon(addontable,addonname, "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceSerializer-3.0", "AceHook-3.0", "AceTimer-3.0");
 local LibDialog = LibStub("LibDialog-1.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("RCLootCouncil")
 local lwin = LibStub("LibWindow-1.1")
@@ -104,9 +109,9 @@ function RCLootCouncil:OnInitialize()
 	self.recentReconnectRequest = false
 	self.currentInstanceName = ""
 	self.bossName = nil -- Updates after each encounter
-	self.recentTradableItem = nil -- The last tradeable item not below the loot threshold the player gets since the last encounter ends
 	self.lootOpen = false 	-- is the ML lootWindow open or closed?
 	self.lootSlotInfo = {}  -- Items' data currently in the loot slot. Need this because inside LOOT_SLOT_CLEARED handler, GetLootSlotLink() returns invalid link.
+	self.nonTradeables = {} -- List of non tradeable items received since the last ENCOUNTER_END
 
 	self.verCheckDisplayed = false -- Have we shown a "out-of-date"?
 	self.moduleVerCheckDisplayed = {} -- Have we shown a "out-of-date" for a module? The key of the table is the baseName of the module.
@@ -177,12 +182,10 @@ function RCLootCouncil:OnInitialize()
 			usage = { -- State of enabledness
 				--ml = false,				-- Enable when ML
 				--ask_ml = true,			-- Ask before enabling when ML
-				leader = false,		-- Enable when leader
-				ask_leader = true,	-- Ask before enabling when leader
 				never = false,			-- Never enable
 				pl = false,				-- Always enable with PL
-				ask_pl = false,			-- Ask before enabling when PL
-				state = "ask_ml", 	-- Current state
+				ask_pl = true,			-- Ask before enabling when PL
+				state = "ask_pl", 	-- Current state
 			},
 			onlyUseInRaids = true,
 			ambiguate = false, -- Append realm names to players
@@ -213,11 +216,13 @@ function RCLootCouncil:OnInitialize()
 			observe = false, -- observe mode on/off
 			silentAutoPass = false, -- Show autopass message
 			printResponse = false, -- Print response in chat
+			printCompletedTrades = true, -- Print whenever raiders trade their item to the winner
 			--neverML = false, -- Never use the addon as ML
 			minimizeInCombat = false,
 			iLvlDecimal = false,
 			showSpecIcon = false,
 			sortItems = true, -- Sort sessions by item type and item level
+			rejectTrade = false, -- Can candidates choose not to give loot to the council
 
 			UI = { -- stores all ui information
 				['**'] = { -- Defaults
@@ -448,6 +453,7 @@ function RCLootCouncil:OnEnable()
 	self:RegisterEvent("LOOT_OPENED",		"OnEvent")
 	self:RegisterEvent("LOOT_SLOT_CLEARED", "OnEvent")
 	self:RegisterEvent("LOOT_CLOSED",		"OnEvent")
+	self:RegisterEvent("ENCOUNTER_LOOT_RECEIVED", "OnEvent") -- REVIEW Check if boss loot is obtainable through this
 
 	--self:RegisterEvent("GROUP_ROSTER_UPDATE", "Debug", "event")
 
@@ -461,10 +467,8 @@ function RCLootCouncil:OnEnable()
 	self:ActivateSkin(db.currentSkin)
 
 	if self.db.global.version and self:VersionCompare(self.db.global.version, self.version) then -- We've upgraded
-		if self:VersionCompare(self.db.global.version, "2.7.0") then
-			self.db.global.localizedSubTypes = nil -- Removed in 2.7
-			self.db.profile.ignore = nil -- Replaced with ignoredItems in 2.7
-			self:ScheduleTimer("Print", 2, "v2.7 contains a lot of new features. See the changelog at https://www.curseforge.com/wow/addons/rclootcouncil/changes")
+		if self:VersionCompare(self.db.global.version, "2.8.1") then
+			wipe(db.itemStorage) -- Just in case some weird items are still there
 		end
 
 		self.db.global.oldVersion = self.db.global.version
@@ -708,14 +712,23 @@ function RCLootCouncil:UpdateAndSendRecentTradableItem(link)
 	for i = 0, NUM_BAG_SLOTS do
 		for j = 1, GetContainerNumSlots(i) do
 			local _, _, _, _, _, _, link2 = GetContainerItemInfo(i, j)
-			if link2 and self:ItemIsItem(link, link2)
-				and self:GetContainerItemTradeTimeRemaining(i, j) > 0 then
-				self.recentTradableItem = link
-				self:SendCommand("group", "tradable", link)
-				return
+			if link2 and self:ItemIsItem(link, link2) then
+				if self:GetContainerItemTradeTimeRemaining(i, j) > 0 then
+					if self.mldb.rejectTrade then
+						LibDialog:Spawn("RCLOOTCOUNCIL_KEEP_ITEM", link)
+						return
+					end
+					self:SendCommand("group", "tradable", link)
+					return
+				else -- Not tradeable
+					-- REVIEW: This might fail if the recipient happens to have an exact copy of the item
+					self:SendCommand("group", "not_tradeable", link)
+					return
+				end
 			end
 		end
 	end
+	self:Debug("Error - UpdateAndSendRecentTradableItem",link, "not found in bags")
 end
 
 -- Send the msg to the channel if it is valid. Otherwise just print the messsage.
@@ -1040,6 +1053,8 @@ function RCLootCouncil:OnCommReceived(prefix, serializedMsg, distri, sender)
 				self.Sync:SyncAckReceived(unpack(data))
 			elseif command == "syncNack" then
 				self.Sync:SyncNackReceived(unpack(data))
+			elseif command == "not_tradeable" or command == "rejected_trade" then
+				tinsert(self.nonTradeables, {link = (unpack(data)), reason = command, owner = self:UnitName(sender)})
 			end
 		else
 			-- Most likely pre 2.0 command
@@ -1516,7 +1531,7 @@ function RCLootCouncil:PrepareLootTable(lootTable)
 		v.texture = texture
 		v.typeID = typeID
 		v.subTypeID = subTypeID
-		v.session = ses
+		v.session = v.session or ses
 		if not v.classes then -- We didn't receive "classes", because ML is using an old version. Generate it from token data.
 			if RCTokenClasses and RCTokenClasses[self:GetItemIDFromLink(v.link)] then
 				v.classes = 0
@@ -1879,9 +1894,12 @@ function RCLootCouncil:OnEvent(event, ...)
 	elseif event == "ENCOUNTER_END" then
 		self:DebugLog("Event:", event, ...)
 		self.bossName = select(2, ...) -- Extract encounter name
+		wipe(self.nonTradeables)
 
 	elseif event == "LOOT_OPENED" then
 		self:Debug("Event:", event, ...)
+		self:Debug("GetUnitName:", GetUnitName("target"))
+		self:Debug("UnitGUID:", UnitGUID("target"))
 		if select(1, ...) ~= "scheduled" and self.LootOpenScheduled then return end -- When this function is scheduled to run again, but LOOT_OPENDED event fires, return.
 		self.LootOpenScheduled = false
 		wipe(self.lootSlotInfo)
@@ -1893,6 +1911,7 @@ function RCLootCouncil:OnEvent(event, ...)
 				local texture, name, quantity, quality, locked, isQuestItem, questId, isActive = GetLootSlotInfo(i)
 				local link = GetLootSlotLink(i)
 				if texture then
+					self:Debug("Adding to self.lootSlotInfo",i,link, quality)
 					self.lootSlotInfo[i] = {
 						name = name,
 						link = link, -- This could be nil, if the item is money.
@@ -1920,18 +1939,26 @@ function RCLootCouncil:OnEvent(event, ...)
 		if self.lootSlotInfo[slot] then -- If not, this is the 2nd LOOT_CLEARED event for the same thing. -_-
 			local link = self.lootSlotInfo[slot].link
 			local quality = self.lootSlotInfo[slot].quality
-			self:Debug("OnLootSlotCleared()", slot, link)
+			self:Debug("OnLootSlotCleared()", slot, link, quality)
 			self.lootSlotInfo[slot] = nil
-
-			if quality and quality >= GetLootThreshold() and IsInInstance() then -- Only send when in instance
+			-- v2.8.1 NOTE Quality is not ready here. Functionality handling on ENCOUNTER_LOOT_RECEIVED
+		--[[	if quality and quality >= GetLootThreshold() and IsInInstance() then -- Only send when in instance
 				-- Note that we don't check if this is master looted or not. We only know this is looted by ourselves.
 				self:ScheduleTimer("UpdateAndSendRecentTradableItem", 1, link) -- Delay a bit, need some time to between item removed from loot slot and moved to the bag.
-			end
+			end]]
 
 			if self.isMasterLooter then
 				self:GetActiveModule("masterlooter"):OnLootSlotCleared(slot, link)
 			end
 		end
+	elseif event == "ENCOUNTER_LOOT_RECEIVED" then
+		self:Debug("Event:", event, ...)
+		if self:UnitIsUnit("player", select(5, ...)) then
+			self:ScheduleTimer("UpdateAndSendRecentTradableItem", 2, select(3,...))
+		end
+
+	else
+		self:Debug("NonHandled Event:", event, ...)
 	end
 end
 
@@ -1946,9 +1973,8 @@ function RCLootCouncil:NewMLCheck()
 		return self:ScheduleTimer("NewMLCheck", 0.5)
 	end
 
-	if not self.isMasterLooter then -- we're not ML, so make sure it's disabled
-		self:GetActiveModule("masterlooter"):Disable()
-		self.handleLoot = false -- Reset
+	if not self.isMasterLooter and self:GetActiveModule("masterlooter"):IsEnabled() then -- we're not ML, so make sure it's disabled
+		self:StopHandleLoot()
 	end
 	if IsPartyLFG() then return end	-- We can't use in lfg/lfd so don't bother
 	if not self.masterLooter then return end -- Didn't find a leader or ML.
@@ -1997,9 +2023,18 @@ function RCLootCouncil:StartHandleLoot()
 	self:Print(L["Now handles looting"])
 	self:Debug("Start handle loot.")
 	self.handleLoot = true
+	self:SendCommand("group", "StartHandleLoot")
 	if #db.council == 0 then -- if there's no council
 		self:Print(L["You haven't set a council! You can edit your council by typing '/rc council'"])
 	end
+end
+
+--- Disables loot handling
+function RCLootCouncil:StopHandleLoot()
+	self:Debug("Stop handling loot")
+	self.handleLoot = false
+	self:GetActiveModule("masterlooter"):Disable()
+	self:SendCommand("group", "StopHandleLoot")
 end
 
 function RCLootCouncil:OnRaidEnter(arg)
@@ -2007,11 +2042,13 @@ function RCLootCouncil:OnRaidEnter(arg)
 	if IsPartyLFG() or db.usage.never then return end	-- We can't use in lfg/lfd so don't bother
 	-- Check if we can use in party
 	if not IsInRaid() and db.onlyUseInRaids then return end
-	if db.usage.leader then
-		self:StartHandleLoot()
-	-- We must ask the player for usage
-	elseif db.usage.ask_leader then
-		return LibDialog:Spawn("RCLOOTCOUNCIL_CONFIRM_USAGE")
+	if UnitIsGroupLeader("player") then
+		if db.usage.pl then
+			self:StartHandleLoot()
+		-- We must ask the player for usage
+		elseif db.usage.ask_pl then
+			return LibDialog:Spawn("RCLOOTCOUNCIL_CONFIRM_USAGE")
+		end
 	end
 end
 
@@ -2067,7 +2104,8 @@ function RCLootCouncil:GetInstalledModulesFormattedData()
 				modules[num] = modules[num].."-"..self:GetModule(name).tVersion
 			end
 		else
-			modules[num] = self:GetModule(name).baseName.. " - ".._G.UNKNOWN
+			local ver = GetAddOnMetadata(name, "Version")
+			modules[num] = self:GetModule(name).baseName.. " - "..(ver or _G.UNKNOWN)
 		end
 	end
 	return modules
@@ -2656,9 +2694,8 @@ end
 -- @param parent The frame that should hold the button.
 -- @return The button object.
 function RCLootCouncil:CreateButton(text, parent)
-	local b = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
+	local b = self.UI:New("Button", parent)
 	b:SetText(text)
-	b:SetSize(100,25)
 	return b
 end
 

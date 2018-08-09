@@ -1,89 +1,30 @@
-# [2.6.0](https://github.com/WeakAuras/WeakAuras2/tree/2.6.0) (2018-07-17)
+# [2.6.6](https://github.com/WeakAuras/WeakAuras2/tree/2.6.6) (2018-07-30)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.5.12...2.6.0)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.6.5...2.6.6)
 
-Aigars Bedeicis (1):
+Benjamin Staneck (4):
 
-- Add Scale option to groups
+- remove multistrike combatlog event
+- Update bug_report.md
+- Update ISSUE_TEMPLATE.md
+- change translation string
 
-Allen Leigh Faure (1):
+Buds (1):
 
-- partial reversion 0128295
+- BuffTrigger: Add a buffed/unbuffed condition
 
-Andrew Scott (1):
+Infus (12):
 
-- LibSpellRange-1.0 is now on GitHub
-
-Benjamin Staneck (23):
-
-- correct formatting of new HelperFunctions file
-- LibSpellRange-1.0 is now on GitHub
-- clean up a few unused upvalues
-- Bring back accidently deleted charges function
-- Check if path is a string instead
-- add a nil check in SetTextureOrAtlas() since name can be nil sometimes
-- Fix nil value error
-- fix variable shadowing
-- Update issue templates
-- Fix tooltip truncation
-- Fix nil error
-- oops 2
-- oops
-- make the "cannot load addon" messages a bit nicer
-- change some print formats
-- Pull LibRangeCheck in via pkgmeta again since it was updated.
-- clarify that a few load conditions support more than one entry
-- re-enable zone id load condition by using the new map API
-- package 8.0 branch tags using the BigWigs packager
-- remove LibChatAnims
-- change to simpler url format in pkgmeta since we don't use the other options anyway.
-- use the new STAT_STAGGER constant to translate Stagger
-- update changelog
-
-Buds (3):
-
-- OnHide code was run on frame creation, fix #474 (#476)
-- oops
-- fix CheckPvpTalentByIndex nil index error (#453)
-
-Infus (23):
-
-- Simplify stacks code for Cooldown Progress
-- Fix ESC handling
-- Make Raid Buffs not use ownOnly
-- Revert "Workaround a issue in LibSpellRange"
-- Fine tune templates
-- Update templates for BfA
-- Add initial templates for some classes
-- Fix display options for multi-selection and overlays
-- Add Bar Alpha to Conditions
-- AuraBar: Add Icon Desaturate to Conditions
-- Fix tooltip scanning and improve the functionality
-- Fix Charges not updating on talent changes
-- Move Registering of Events from Add to Load
-- Fix models not showing up
-- Register the Options window in UISpecialFrames
-- Document another place as a WORKAROUND around a Blizzard bug
-- Add Atlas texture support for Textures, Progress Textures and Sparks
-- Fix Aura not showing on ScanAll in certain cases
-- Fix showing of wrong icon in a corner case
-- Fix BuffTrigger's CanHaveDuration
-- Fix setting glow on a aura moves it around
-- Fix Range Trigger + Range Conditions
-- Fix charges Changed trigger
-
-Rehok (1):
-
-- Cooldown Progress (Equipment Slot): Add Name function
-
-asakawa-k (1):
-
-- Add functions commonly used by custom WA authors
-
-emptyrivers (4):
-
-- include maghar orc in race_types
-- Fix anchored auras in dynamic groups
-- Ignore Load tab when copying display
-- [Feature] Add HSV color animations (#408)
+- Fix error on loading if trigger[name] is nil
+- Use better names for Power Types for Templates
+- Equipment Set Trigger: Use C_EquipmentSet.GetEquipmentSetIDs
+- Global Conditions: Fix Unload
+- Fix the author line of WeakAurasTemplates
+- Fix bugs in Global Conditions
+- Global Conditions: Move some code to WeakAuras.lua
+- Fix naming
+- Add a alpha option to Icons/Textures
+- Add a dynamic condition for "IsUsableSpell"
+- Global Conditions: In Combat, Has Target
+- Fix Rename/Delete and custom condition functions
 

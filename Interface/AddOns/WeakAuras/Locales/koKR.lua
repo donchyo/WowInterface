@@ -5,14 +5,6 @@ end
 local L = WeakAuras.L
 
 -- WeakAuras
---[[Translation missing --]]
-L[ [=[
-
-Supports multiple entries, separated by commas
-]=] ] = [=[
-
-Supports multiple entries, separated by commas
-]=]
 L["!="] = "!="
 L["%s - %i. Trigger"] = "%s - %i. 활성 조건"
 L["%s - 1. Trigger"] = "%s - 1. 활성 조건"
@@ -63,6 +55,8 @@ L["Absorbed"] = "흡수함"
 L["Action Usable"] = "사용 가능"
 L["Active"] = "활성화"
 L["Additional Trigger Replacements"] = "추가적인 활성 조건 교체"
+--[[Translation missing --]]
+L["Adjust Timer"] = "Adjust Timer"
 L["Affected"] = "영향 받음"
 L["Aggro"] = "어그로"
 --[[Translation missing --]]
@@ -71,6 +65,8 @@ L["Alive"] = "생존"
 L["All Triggers"] = "모든 활성 조건 만족"
 L["Alliance"] = "얼라이언스"
 L["Allow partial matches"] = "부분 일치 허용"
+--[[Translation missing --]]
+L["Alpha"] = "Alpha"
 L["Alternate Power"] = "보조 마력"
 L["Always"] = "항상"
 L["Always active trigger"] = "항상 활성 조건 활성화"
@@ -108,8 +104,6 @@ L["Back"] = "등"
 L["Back and Forth"] = "왕복"
 L["Backdrop Color"] = "배경 색상"
 L["Background Color"] = "배경 색상"
---[[Translation missing --]]
-L["Bar Alpha"] = "Bar Alpha"
 L["Bar Color"] = "바 색상"
 L["Battle.net Whisper"] = "Battle.net 귓속말"
 L["Battleground"] = "전장"
@@ -183,6 +177,10 @@ L["Critical"] = "치명타"
 L["Cross"] = "가위표"
 L["Crowd Controlled"] = "군중 제어됨"
 L["Crushing"] = "강타"
+--[[Translation missing --]]
+L["Cunning"] = "Cunning"
+--[[Translation missing --]]
+L["Current Zone Group ID: "] = "Current Zone Group ID: "
 --[[Translation missing --]]
 L["Current Zone ID: "] = "Current Zone ID: "
 L["Curse"] = "저주"
@@ -258,6 +256,8 @@ L["Falling"] = "낙하 충격"
 L["False"] = "거짓"
 L["Fatigue"] = "피로"
 L["Feet"] = "발"
+--[[Translation missing --]]
+L["Ferocity"] = "Ferocity"
 L["Finger 1"] = "손가락 1"
 L["Finger 2"] = "손가락 2"
 L["Fire"] = "화염"
@@ -292,6 +292,8 @@ L["Grow"] = "성장"
 L["GTFO Alert"] = "GTFO 경보"
 L["Guild"] = "길드"
 L["Hands"] = "손"
+--[[Translation missing --]]
+L["Has Target"] = "Has Target"
 L["Has Vehicle UI"] = "차량 UI가 있을 때"
 L["HasPet"] = "소환수 있음 (살아있음)"
 L["Head"] = "머리"
@@ -321,6 +323,8 @@ L["Import"] = "Import"
 --[[Translation missing --]]
 L["Import disabled"] = "Import disabled"
 L["In Combat"] = "전투 중"
+--[[Translation missing --]]
+L["In Encounter"] = "In Encounter"
 L["In Group"] = "파티 중"
 L["In Pet Battle"] = "애완동물 대전 중"
 --[[Translation missing --]]
@@ -339,6 +343,8 @@ L["Instance Type"] = "인스턴스 유형"
 L["Interrupt"] = "방해"
 L["Interruptible"] = "방해 가능"
 L["Inverse"] = "반대로"
+--[[Translation missing --]]
+L["Inverse Pet Behavior"] = "Inverse Pet Behavior"
 L["Is Exactly"] = "정확할 때"
 L["Is Moving"] = "이동 중일 때"
 L["Is Off Hand"] = "보조장비일 때"
@@ -410,10 +416,11 @@ L["Monster Yell"] = "몬스터 외침"
 L["Moon"] = "달"
 L["Mounted"] = "탈것 탑승 중"
 L["Mouse Cursor"] = "마우스 커서"
-L["Multistrike"] = "연속타격"
 L["Multi-target"] = "다중 대상"
 L["Music"] = "음악"
 L["Mythic"] = "신화"
+--[[Translation missing --]]
+L["Mythic+ Affix"] = "Mythic+ Affix"
 L["Name"] = "이름"
 L["Neck"] = "목"
 L["Neutral"] = "중립"
@@ -423,6 +430,8 @@ L["No Children:"] = "자식 없음:"
 L["No Instance"] = "인스턴스가 아닐 때"
 --[[Translation missing --]]
 L["No Profiling information saved."] = "No Profiling information saved."
+--[[Translation missing --]]
+L["none"] = "none"
 L["None"] = "없음"
 L["Non-player Character"] = "NPC"
 L["Normal"] = "일반"
@@ -463,6 +472,8 @@ L["Periodic Spell"] = "주기적인 주문"
 L["Personal Resource Display"] = "개인 자원 표시"
 L["Pet"] = "소환수"
 L["Pet Behavior"] = "소환수 행동"
+--[[Translation missing --]]
+L["Pet Specialization"] = "Pet Specialization"
 L["Pet Spell"] = "소환수 주문"
 L["Play"] = "재생"
 L["Player"] = "플레이어"
@@ -624,6 +635,8 @@ L["Spell ID"] = "주문 ID"
 L["Spell Id"] = "주문 Id"
 L["Spell Known"] = "습득한 주문"
 L["Spell Name"] = "주문 이름"
+--[[Translation missing --]]
+L["Spell Usable"] = "Spell Usable"
 L["Spell/Encounter Id"] = "주문/우두머리 전투 Id"
 L["Spin"] = "회전"
 L["Spiral"] = "소용돌이"
@@ -658,6 +671,8 @@ L["Tank"] = "방어 담당"
 L["Tanking And Highest"] = "탱커이면서 제일 높을 때"
 L["Tanking But Not Highest"] = "탱커지만 제일 높지 않을 때"
 L["Target"] = "대상"
+--[[Translation missing --]]
+L["Tenacity"] = "Tenacity"
 L["Thick Outline"] = "굵은 외곽선"
 --[[Translation missing --]]
 L["Third"] = "Third"
@@ -718,6 +733,8 @@ L["Wrist"] = "손목"
 L["X-Offset"] = "X-좌표"
 L["Yell"] = "외침"
 L["Y-Offset"] = "Y-좌표"
+--[[Translation missing --]]
+L["Zone Group ID(s)"] = "Zone Group ID(s)"
 --[[Translation missing --]]
 L["Zone ID(s)"] = "Zone ID(s)"
 --[[Translation missing --]]

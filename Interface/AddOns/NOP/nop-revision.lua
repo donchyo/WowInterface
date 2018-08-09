@@ -1,4 +1,17 @@
 -- Revisions:
+--[[<p>09.06 23.07.2018</p>
+<p><ul>
+<li>Tooltip for couple of item can be broken when WoW client is freshly started and 1st toon does login. After switch to another toon tooltips are OK. Seems like bug in Blizzard's code because tooltips are striped off last line!.</li>
+<li>Retry mechanic in pattern loading is now extended to tooltip scans and fixed tooltip reading as well.</li>
+<li>Removed extra diagnostic prints, reson for problem is known now.</li>
+</ul><hr></p>
+]]
+
+--[[<p>09.04 22.07.2018</p>
+<p><ul>
+<li>Bug Fix pattern matching and erros in match table.</li>
+</ul><hr></p>
+]]
 --[[<p>09.02 20.07.2018</p>
 <p><ul>
 <li>Fix garrison mapID, missing 4th mapID for tier1.</li>

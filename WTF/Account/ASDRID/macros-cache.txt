@@ -7,6 +7,9 @@ END
 VER 3 0000000000000361 "1release" "INV_MISC_QUESTIONMARK"
 /script RepopMe();
 END
+VER 3 0000000000000394 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+/script print('no button yet')
+END
 VER 3 0000000000000384 "aLua errors" "133447"
 /run if GetCVar("ScriptErrors")=="1" then SetCVar("ScriptErrors","0");print("Show LUA Errors: Off");else SetCVar("ScriptErrors","1");print("Show LUA Errors: On");end
 END
@@ -101,9 +104,9 @@ VER 3 0000000000000092 "mount" "ACHIEVEMENT_GUILDPERK_MOUNTUP"
 /dismount
 /use [mod:alt]Azure Water Strider
 /use [mod:ctrl]grand expedition yak
-/use [flyable, nomounted]INVINCIBLE
+/use [flyable, nomounted]shackled ur'zul
 --/use [noflyable, nomounted] magic rooster
-/use [noflyable, nomounted] swift spectral tiger
+/use [noflyable, nomounted] shackled ur'zul
 /script VehicleExit()
 END
 VER 3 0000000000000371 "mouseover extra" "132387"

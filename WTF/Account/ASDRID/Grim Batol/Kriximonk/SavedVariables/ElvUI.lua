@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		"/wa", -- [1]
-		" känns druid bra för schytes?", -- [2]
-		" saknar att vara op :(", -- [3]
-		" så monks känndes bättre", -- [4]
-		" ?", -- [5]
-		"/cw Ualhi-Ravencrest is healer chat movint to community?", -- [6]
-		"/cw Ualhi-Ravencrest ok", -- [7]
-		"/1 died from both zone and rage", -- [8]
-		"/1 is it bugged or?", -- [9]
-		" du, har du tid ett tag?", -- [10]
-		" funderar på att gå över till wekaura tracking istället för actionbars på spells", -- [11]
-		" har inte fått det att kännas bra", -- [12]
-		" hatar gcd :D", -- [13]
-		" det är en av sakerna som stör mig mest ", -- [14]
-		" fuck it yolo", -- [15]
-		" vad kan hända", -- [16]
-		" också", -- [17]
-		" jag är sjuk idag", -- [18]
-		" döm mig inte", -- [19]
-		" solidarittet", -- [20]
+		"/played", -- [1]
+		" jag tror det", -- [2]
+		" inte överdrivet", -- [3]
+		" men lite ibland", -- [4]
+		" för blizzard är dåliga", -- [5]
+		" jo", -- [6]
+		" jag är askass på det mesta", -- [7]
+		" tack", -- [8]
+		" känner att jag borde säga något snällt om dig med", -- [9]
+		" men det är liksom underförstårr att du är sexguden etc.", -- [10]
+		" det var ju utrett i typ ettan", -- [11]
+		" det var fan ett tag sen", -- [12]
+		" sen vi började på jensen", -- [13]
+		"/p he is doing the tvätt", -- [14]
+		"/p he said he would be fast", -- [15]
+		"/wa", -- [16]
+		"/cw Evaliax-Ravencrest Could i have healthstones please?", -- [17]
+		"/cw Oklik-Ravencrest Could i have healthstones please?", -- [18]
+		"/cw Oklik-Ravencrest ty", -- [19]
+		"/cw Evaliax-Ravencrest ty", -- [20]
 	},
 }

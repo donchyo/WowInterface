@@ -4,7 +4,7 @@ Chatter: enabled
 ClassTimer: enabled
 MikScrollingBattleText: disabled
 MSBTOptions: disabled
-Omen: disabled
+Omen: enabled
 SharedMedia: enabled
 Blizzard_MacroUI: enabled
 TipTac: enabled
@@ -465,3 +465,4 @@ bdNameplates: disabled
 Kui_Media: disabled
 WorldQuestsList: enabled
 AddOnSkins: enabled
+OPie: disabled

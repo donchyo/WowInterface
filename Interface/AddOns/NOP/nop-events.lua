@@ -113,11 +113,11 @@ function NOP:UI_ERROR_MESSAGE(event, msgType, msg, ...) -- handle lockpicking it
   --print("Type",msgType,"Msg",P.RGB_RED .. msg .. "|r")
 end
 function NOP:LOOT_SPEC() -- after spec or loot spec switch I need update all paterns!
-  self.spellLoad = nil
-  wipe(T_SPELL_FIND)
-  self:SpellLoad()
-  self.itemLoad = nil
   wipe(T_RECIPES_FIND)
+  wipe(T_SPELL_FIND)
+  self.spellLoad = nil
+  self.itemLoad = nil
+  self:SpellLoad()
   self:ItemLoad()
   self:BAG_UPDATE()
 end

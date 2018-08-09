@@ -5,690 +5,10 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 35,
 	["tabela_historico"] = {
 		["tabelas"] = {
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002244,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dungeoneer's Training Dummy"] = 4373855,
-							},
-							["pets"] = {
-							},
-							["total"] = 4373855.002244,
-							["tipo"] = 1,
-							["classe"] = "SHAMAN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 4373855.002244,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1531012245,
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 52323,
-										["g_amt"] = 0,
-										["n_max"] = 24530,
-										["targets"] = {
-											["Dungeoneer's Training Dummy"] = 148744,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 96421,
-										["n_min"] = 23805,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 148744,
-										["c_max"] = 52323,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 52323,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									}, -- [1]
-									[188838] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 1531529,
-										["g_amt"] = 0,
-										["n_max"] = 346611,
-										["targets"] = {
-											["Dungeoneer's Training Dummy"] = 2748206,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1216677,
-										["n_min"] = 61794,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 2748206,
-										["c_max"] = 412219,
-										["id"] = 188838,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 353545,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									[51505] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1476905,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Dungeoneer's Training Dummy"] = 1476905,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1476905,
-										["c_max"] = 1476905,
-										["id"] = 51505,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 1476905,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 0.002244,
-							["nome"] = "Zuriz",
-							["spec"] = 264,
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1531012239,
-							["on_hold"] = false,
-							["start_time"] = 1531012218,
-							["serial"] = "Player-1303-0478DE10",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.004909,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Zuriz"] = 4577427,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-							},
-							["classe"] = "SHAMAN",
-							["totalover"] = 4577427.004909,
-							["total_without_pet"] = 0.004909,
-							["totalover_without_pet"] = 0.004909,
-							["totaldenied"] = 0.004909,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1531012245,
-							["spec"] = 264,
-							["healing_taken"] = 0.004909,
-							["nome"] = "Zuriz",
-							["spells"] = {
-								["_ActorTable"] = {
-									[61295] = {
-										["c_amt"] = 4,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Zuriz"] = 1801813,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Zuriz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 9,
-										["overheal"] = 1801813,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 61295,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 0,
-										["m_amt"] = 0,
-										["absorbed"] = 0,
-									},
-									[228401] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Zuriz"] = 502724,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Zuriz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 502724,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 228401,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 0,
-										["m_amt"] = 0,
-										["absorbed"] = 0,
-									},
-									[8004] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Zuriz"] = 2031380,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Zuriz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 2031380,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8004,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 0,
-										["m_amt"] = 0,
-										["absorbed"] = 0,
-									},
-									[143924] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Zuriz"] = 241510,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Zuriz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 14,
-										["overheal"] = 241510,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 143924,
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 14,
-										["n_curado"] = 0,
-										["m_amt"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["total"] = 0.004909,
-							["heal_enemy"] = {
-							},
-							["tipo"] = 2,
-							["custom"] = 0,
-							["last_event"] = 1531012244,
-							["on_hold"] = false,
-							["start_time"] = 1531012218,
-							["serial"] = "Player-1303-0478DE10",
-							["targets_absorbs"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[188838] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 188838,
-										["uptime"] = 21,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[57723] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 57723,
-										["uptime"] = 9,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cooldowns_defensive"] = 1.002304,
-							["buff_uptime"] = 197,
-							["last_cooldown"] = {
-								1531013035.222, -- [1]
-								108271, -- [2]
-							},
-							["classe"] = "SHAMAN",
-							["cooldowns_defensive_targets"] = {
-								["Zuriz"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[253072] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 2,
-										["id"] = 253072,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[216251] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 216251,
-										["uptime"] = 14,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[252208] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 252208,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[77762] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 77762,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[242586] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 1,
-										["id"] = 242586,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[252801] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 1,
-										["id"] = 252801,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[227723] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 227723,
-										["uptime"] = 27,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[208416] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 208416,
-										["uptime"] = 9,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[225788] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 225788,
-										["uptime"] = 27,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[61295] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 1,
-										["id"] = 61295,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[53390] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 53390,
-										["uptime"] = 14,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[207288] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 1,
-										["id"] = 207288,
-										["uptime"] = 9,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[32182] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 32182,
-										["uptime"] = 9,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[207472] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 207472,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 30,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 264,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[61295] = 2,
-								[51505] = 1,
-								[8004] = 2,
-								[32182] = 1,
-							},
-							["tipo"] = 4,
-							["serial"] = "Player-1303-0478DE10",
-							["last_event"] = 1531013034,
-							["pets"] = {
-							},
-							["nome"] = "Zuriz",
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[108271] = {
-										["id"] = 108271,
-										["targets"] = {
-											["Zuriz"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 739,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Zuriz"] = true,
-				},
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Dungeoneer's Training Dummy",
-				["combat_counter"] = 21470,
-				["playing_solo"] = true,
-				["totals"] = {
-					4373854.965947, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0.998445,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-					["Zuriz"] = {
-						{
-							1, -- [1]
-							108271, -- [2]
-							1, -- [3]
-							1531013035.222, -- [4]
-							5128620, -- [5]
-							"Zuriz", -- [6]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						["n"] = 2,
-					},
-				},
-				["frags_need_refresh"] = false,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Zuriz"] = 4373855.002244,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Zuriz"] = 0.004909,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 549292.275,
-				["instance_type"] = "party",
-				["combat_id"] = 739,
-				["is_temporary"] = true,
-				["hasSaved"] = true,
-				["frags"] = {
-				},
-				["data_fim"] = "03:10:45",
-				["data_inicio"] = "03:10:19",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					4373855, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-				},
-				["start_time"] = 549265.634,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [1]
 		},
 	},
-	["combat_counter"] = 21479,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
+	["combat_counter"] = 21487,
+	["force_font_outline"] = "",
 	["tabela_instancias"] = {
 	},
 	["local_instances_config"] = {
@@ -714,8 +34,8 @@ _detalhes_database = {
 			["pos"] = {
 				["normal"] = {
 					["y"] = -397.328264681542,
-					["x"] = 541.250906892128,
-					["w"] = 208.361206054688,
+					["x"] = 541.249819245666,
+					["w"] = 208.361083984375,
 					["h"] = 127.507873535156,
 				},
 				["solo"] = {
@@ -750,7 +70,7 @@ _detalhes_database = {
 					["y"] = -397.328264681542,
 					["x"] = 748.860984304405,
 					["w"] = 211.055404663086,
-					["h"] = 127.507873535156,
+					["h"] = 127.507850646973,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -795,15 +115,6 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["cached_talents"] = {
-		["Player-1303-0478DE10"] = {
-			22492, -- [1]
-			21970, -- [2]
-			21971, -- [3]
-			19275, -- [4]
-			19262, -- [5]
-			22322, -- [6]
-			22539, -- [7]
-		},
 	},
 	["last_instance_id"] = 1651,
 	["announce_interrupts"] = {
@@ -819,7 +130,7 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_realversion"] = 130,
+	["last_realversion"] = 132,
 	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -829,9 +140,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = true,
-			["dps"] = 0,
-			["level"] = 1,
 			["author"] = "Details! Team",
+			["level"] = 1,
+			["dps"] = 0,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -883,10 +194,10 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
 			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -906,7 +217,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
@@ -1951,7 +1262,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -1960,7 +1271,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["showamount"] = false,
+			["animate"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -1980,24 +1291,6 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1532798623,
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
-	["last_day"] = "17",
-	["last_version"] = "v7.3.5.5572",
-	["combat_id"] = 739,
-	["savedStyles"] = {
-	},
-	["last_instance_time"] = 1528648187,
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Return to Karazhan",
 		["started"] = false,
@@ -2009,6 +1302,24 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1651,
 		["previous_boss_killed_at"] = 1528649949,
 	},
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1534106364,
+	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["last_version"] = "v8.0.1.6003",
+	["combat_id"] = 739,
+	["savedStyles"] = {
+	},
+	["last_instance_time"] = 1528648187,
+	["last_day"] = "28",
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -2016,9 +1327,11 @@ _detalhes_database = {
 		["where"] = 1,
 	},
 	["character_data"] = {
-		["logons"] = 2426,
+		["logons"] = 2428,
 	},
-	["force_font_outline"] = "",
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
 	["last_encounter"] = "The Defense of Eonar",
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

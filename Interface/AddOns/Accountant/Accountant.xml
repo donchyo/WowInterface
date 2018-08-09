@@ -1,6 +1,6 @@
 <!--
 	Accountant
-	
+
 -->
 <Ui xmlns="http://www.blizzard.com/wow/ui/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -194,7 +194,7 @@
 				<!-- Revenue -->
 				<FontString name="$parentTotalIn" inherits="AccountantTextTemplate" justifyH = "LEFT">
 					<Anchors>
-						<Anchor point="TOPLEFT" 
+						<Anchor point="TOPLEFT"
 						relativeTo="$parent"
 							relativePoint="TOPLEFT">
 							<Offset>
@@ -296,7 +296,7 @@
 		</Layers>
 
 		<Frames>
-			<Frame name="Accountant_CharDropDown" 
+			<Frame name="Accountant_CharDropDown"
 				inherits="UIDropDownMenuTemplate" id="1" hidden="false">
 				<Size>
 					<AbsDimension x="150" y="16"/>
@@ -591,12 +591,12 @@
 		<Scripts>
 			<OnLoad>
 
-				-- Make Frame Moveable. 
-				tinsert(UISpecialFrames, "AccountantFrame"); 
+				-- Make Frame Moveable.
+				tinsert(UISpecialFrames, "AccountantFrame");
 				UIPanelWindows["AccountantFrame"] = { area = "left", pushable = 11 };
 				self:RegisterForDrag("LeftButton");
 
-				-- Setup 
+				-- Setup
 				Accountant.RegisterEvents(self);
 			</OnLoad>
 			<OnShow>Accountant.OnShow();</OnShow>
@@ -611,38 +611,5 @@
 		parent="UIParent" hidden="true" />
 
 	<!-- Button on Minimap -->
-	<Frame name="AccountantButtonFrame" parent="Minimap"
-		enableMouse="true" hidden="false" frameStrata="LOW">
-		<Size>
-			<AbsDimension x="32" y="32" />
-		</Size>
-		<Anchors>
-			<Anchor point="TOPLEFT" relativeTo="Minimap"
-				relativePoint="RIGHT">
-				<Offset>
-					<AbsDimension x="2" y="0" />
-				</Offset>
-			</Anchor>
-		</Anchors>
-		<Frames>
-			<Button name="AccountantButton">
-				<Size>
-					<AbsDimension x="32" y="32" />
-				</Size>
-				<Anchors>
-					<Anchor point="TOPLEFT">
-						<Offset>
-							<AbsDimension x="0" y="0" />
-						</Offset>
-					</Anchor>
-				</Anchors>
-				<NormalTexture file="Interface\AddOns\Accountant\Artwork\AccountantButton-Up" />
-				<PushedTexture file="Interface\AddOns\Accountant\Artwork\AccountantButton-Down" />
-				<HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight" />
-				<Scripts>
-					<OnClick>Accountant.Button_OnClick();</OnClick>
-				</Scripts>
-			</Button>
-		</Frames>
-	</Frame>
+
 </Ui>

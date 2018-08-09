@@ -5,14 +5,6 @@ end
 local L = WeakAuras.L
 
 -- WeakAuras
---[[Translation missing --]]
-L[ [=[
-
-Supports multiple entries, separated by commas
-]=] ] = [=[
-
-Supports multiple entries, separated by commas
-]=]
 L["!="] = "!="
 L["%s - %i. Trigger"] = "%s - %i. Desencadenador"
 L["%s - 1. Trigger"] = "%s - 1. Desencadenador"
@@ -66,6 +58,8 @@ L["Absorbed"] = "Absorbido"
 L["Action Usable"] = "Acción utilizable"
 L["Active"] = "Activo"
 L["Additional Trigger Replacements"] = "Reemplazos adicionales de desencadenadores"
+--[[Translation missing --]]
+L["Adjust Timer"] = "Adjust Timer"
 L["Affected"] = "Afectado"
 L["Aggro"] = "Agro"
 --[[Translation missing --]]
@@ -74,6 +68,8 @@ L["Alive"] = "Vivo"
 L["All Triggers"] = "Todos los desencadenadores"
 L["Alliance"] = "Alianza"
 L["Allow partial matches"] = "Permitir coincidencias parciales"
+--[[Translation missing --]]
+L["Alpha"] = "Alpha"
 L["Alternate Power"] = "Energía alternativa"
 L["Always"] = "Siempre"
 L["Always active trigger"] = "Activar siempre el desencadenador"
@@ -112,8 +108,6 @@ L["Back"] = "Atrás"
 L["Back and Forth"] = "De atrás hacia adelante"
 L["Backdrop Color"] = "Color de fondo"
 L["Background Color"] = "Color de fondo"
---[[Translation missing --]]
-L["Bar Alpha"] = "Bar Alpha"
 L["Bar Color"] = "Color de la barra"
 L["Battle.net Whisper"] = "Mensaje de Battle.net"
 L["Battleground"] = "Campo de batalla"
@@ -188,6 +182,10 @@ L["Critical"] = "Crítico"
 L["Cross"] = "Cross"
 L["Crowd Controlled"] = "Bajo control"
 L["Crushing"] = "Golpe aplastador"
+--[[Translation missing --]]
+L["Cunning"] = "Cunning"
+--[[Translation missing --]]
+L["Current Zone Group ID: "] = "Current Zone Group ID: "
 --[[Translation missing --]]
 L["Current Zone ID: "] = "Current Zone ID: "
 L["Curse"] = "Maldición"
@@ -267,6 +265,8 @@ L["Falling"] = "Caer"
 L["False"] = "Falso"
 L["Fatigue"] = "Fatiga"
 L["Feet"] = "Pies"
+--[[Translation missing --]]
+L["Ferocity"] = "Ferocity"
 L["Finger 1"] = "Dedo 1"
 L["Finger 2"] = "Dedo 2"
 L["Fire"] = "Fuego"
@@ -301,6 +301,8 @@ L["Grow"] = "Crecer"
 L["GTFO Alert"] = "Alerta de GTFO"
 L["Guild"] = "Hermandad"
 L["Hands"] = "Manos"
+--[[Translation missing --]]
+L["Has Target"] = "Has Target"
 L["Has Vehicle UI"] = "Posee IU"
 L["HasPet"] = "Mascota viva"
 L["Head"] = "Cabeza"
@@ -330,6 +332,8 @@ L["Import"] = "Import"
 --[[Translation missing --]]
 L["Import disabled"] = "Import disabled"
 L["In Combat"] = "En combate"
+--[[Translation missing --]]
+L["In Encounter"] = "In Encounter"
 L["In Group"] = "En grupo"
 L["In Pet Battle"] = "En duelo de mascotas"
 --[[Translation missing --]]
@@ -349,6 +353,8 @@ L["Instance Type"] = "Tipo de instancia"
 L["Interrupt"] = "Interrumpir"
 L["Interruptible"] = "Se puede interrumpir"
 L["Inverse"] = "Invertido"
+--[[Translation missing --]]
+L["Inverse Pet Behavior"] = "Inverse Pet Behavior"
 L["Is Exactly"] = "Es exactamente"
 L["Is Moving"] = "Se está moviendo"
 L["Is Off Hand"] = "Está fuera de alcance"
@@ -422,10 +428,11 @@ L["Monster Yell"] = "Monstruo - Susurrar"
 L["Moon"] = "Moon"
 L["Mounted"] = "Montado"
 L["Mouse Cursor"] = "Cursor"
-L["Multistrike"] = "Ataques múltiples"
 L["Multi-target"] = "Objetivo múltiple"
 L["Music"] = "Música"
 L["Mythic"] = "Mítico"
+--[[Translation missing --]]
+L["Mythic+ Affix"] = "Mythic+ Affix"
 L["Name"] = "Nombre"
 L["Neck"] = "Cuello"
 L["Neutral"] = "Neutral"
@@ -435,6 +442,8 @@ L["No Children:"] = "Sin dependientes:"
 L["No Instance"] = "Fuera de instancia"
 --[[Translation missing --]]
 L["No Profiling information saved."] = "No Profiling information saved."
+--[[Translation missing --]]
+L["none"] = "none"
 L["None"] = "Nada"
 L["Non-player Character"] = "Personaje No-Jugador"
 L["Normal"] = "Normal"
@@ -477,6 +486,8 @@ L["Periodic Spell"] = "Hechizo periódico"
 L["Personal Resource Display"] = "Recurso personal de aura"
 L["Pet"] = "Pet"
 L["Pet Behavior"] = "Comportamiento de la mascota"
+--[[Translation missing --]]
+L["Pet Specialization"] = "Pet Specialization"
 L["Pet Spell"] = "Hechizo de la mascota"
 --[[Translation missing --]]
 L["Play"] = "Play"
@@ -624,6 +635,8 @@ L["Spell ID"] = "ID de hechizo"
 L["Spell Id"] = "ID de hechizo"
 L["Spell Known"] = "Hechizo conocido"
 L["Spell Name"] = "Nombre de hechizo"
+--[[Translation missing --]]
+L["Spell Usable"] = "Spell Usable"
 L["Spell/Encounter Id"] = "ID de hechizo/enfrentamiento"
 L["Spin"] = "Girar"
 L["Spiral"] = "Espiral"
@@ -661,6 +674,8 @@ L["Tank"] = "Tanque"
 L["Tanking And Highest"] = "Tanqueando - El más alto"
 L["Tanking But Not Highest"] = "Tanqueando - No el más alto"
 L["Target"] = "Objetivo"
+--[[Translation missing --]]
+L["Tenacity"] = "Tenacity"
 L["Thick Outline"] = "Thick Outline"
 --[[Translation missing --]]
 L["Third"] = "Third"
@@ -724,6 +739,8 @@ L["X-Offset"] = "X-Offset"
 L["Yell"] = "Gritar"
 --[[Translation missing --]]
 L["Y-Offset"] = "Y-Offset"
+--[[Translation missing --]]
+L["Zone Group ID(s)"] = "Zone Group ID(s)"
 --[[Translation missing --]]
 L["Zone ID(s)"] = "Zone ID(s)"
 --[[Translation missing --]]

@@ -1,7 +1,7 @@
-changeset:   83:a3b54262896a
-tag:         v8.0.1.083
+changeset:   92:5afc980645db
+tag:         v8.0.1.092
 user:        Tercio
-date:        Fri Jul 20 17:00:00 2018 -0300
-summary:     - Fixed Special Aura row showing when buffs are disabled.
+date:        Mon Jul 30 13:56:59 2018 -0300
+summary:     - Framework version update.
 
 

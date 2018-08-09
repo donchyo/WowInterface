@@ -1,4 +1,4 @@
---[[ $Id: AceGUIWidget-DropDown-Items.lua 877 2009-11-02 15:56:50Z nevcairiel $ ]]--
+--[[ $Id: AceGUIWidget-DropDown-Items.lua 1167 2017-08-29 22:08:48Z funkydude $ ]]--
 
 local AceGUI = LibStub("AceGUI-3.0")
 
@@ -6,6 +6,7 @@ local AceGUI = LibStub("AceGUI-3.0")
 local select, assert = select, assert
 
 -- WoW APIs
+local PlaySound = PlaySound
 local CreateFrame = CreateFrame
 
 local function fixlevels(parent,...)
@@ -214,6 +215,12 @@ function ItemBase.Create(type)
 	return self
 end
 
+-- Register a dummy LibStub library to retrieve the ItemBase, so other addons can use it.
+local IBLib = LibStub:NewLibrary("AceGUI-3.0-DropDown-ItemBase", ItemBase.version)
+if IBLib then
+	IBLib.GetItemBase = function() return ItemBase end
+end
+
 --[[
 	Template for items:
 	
@@ -316,7 +323,7 @@ end
 -- Does not close the pullout on click.
 do
 	local widgetType = "Dropdown-Item-Toggle"
-	local widgetVersion = 2
+	local widgetVersion = 4
 	
 	local function UpdateToggle(self)
 		if self.value then
@@ -335,6 +342,11 @@ do
 		local self = this.obj
 		if self.disabled then return end
 		self.value = not self.value
+		if self.value then
+			PlaySound(856) -- SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON
+		else
+			PlaySound(857) -- SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF
+		end
 		UpdateToggle(self)
 		self:Fire("OnValueChanged", self.value)
 	end
@@ -428,7 +440,7 @@ end
 -- A single line to separate items
 do
 	local widgetType = "Dropdown-Item-Separator"
-	local widgetVersion = 1
+	local widgetVersion = 2
 	
 	-- exported, override
 	local function SetDisabled(self, disabled)
@@ -443,7 +455,7 @@ do
 		
 		local line = self.frame:CreateTexture(nil, "OVERLAY")
 		line:SetHeight(1)
-		line:SetTexture(.5, .5, .5)
+		line:SetColorTexture(.5, .5, .5)
 		line:SetPoint("LEFT", self.frame, "LEFT", 10, 0)
 		line:SetPoint("RIGHT", self.frame, "RIGHT", -10, 0)
 		

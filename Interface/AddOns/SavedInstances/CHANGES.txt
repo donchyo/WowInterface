@@ -1,30 +1,12 @@
-tag 3ab9397444d5d67cfa2ecfce5158aefbd5e6e4c0 8.0.1
+lightweight tag 15a07c465bbda88fe205e1bd395fd12fffe76527 8.0.3
 Author:	Benjamin Staneck <staneck@gmail.com>
-Date:	Wed Jul 18 15:46:31 2018 +0200
+Date:	Mon Jul 23 12:37:05 2018 +0200
 
-8.0.1
-
-commit 64c04e4a3397a9312297773184eadfe901e489be
+commit 15a07c465bbda88fe205e1bd395fd12fffe76527
 Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Wed Jul 18 15:39:03 2018 +0200
+Date:   Mon Jul 23 12:37:05 2018 +0200
 
-    fix M+/ChallengeMode API usage
-
-commit 8737852bc41277b59a39e256759b59a98648ff31
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Wed Jul 18 15:29:03 2018 +0200
-
-    fix Calendar API usage
-
-commit afb280fe9b20e3aad9b7d7c23b2b4a42c59acfdb
-Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
-Date:   Wed Jul 18 15:09:42 2018 +0200
-
-    Rename SavedInstances/libs/LibDataBroker-1.1/LibDataBroker-1.1.lua to SavedInstances/Libs/LibDataBroker-1.1/LibDataBroker-1.1.lua
-
-commit 791cb9f79a06fc817ce58bb960cca7411a8589bb
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Wed Jul 18 15:05:03 2018 +0200
-
-    fix lib folder embeds/ignore
+    Switch to new mapID for bounty checking
+    
+    Fixes #127
 

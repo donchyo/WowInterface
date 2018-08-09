@@ -26,7 +26,7 @@ Anchor: TOPRIGHT
 X: -187
 Y: -83
 W: 365
-H: 200
+H: 380
 Frame: GossipFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -41,10 +41,3 @@ X: 0
 Y: 0
 W: 790
 H: 454
-Frame: WQGFManualActionsFrame
-FrameLevel: 0
-Anchor: RIGHT
-X: 0
-Y: 195
-W: 370
-H: 110

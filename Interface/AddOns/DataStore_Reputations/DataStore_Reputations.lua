@@ -210,6 +210,19 @@ local factions = {
 	{ id = 2045, name = GetFactionInfoByID(2045) },		-- Armies of Legionfall
 	{ id = 2165, name = GetFactionInfoByID(2165) },		-- Army of the Light
 	{ id = 2170, name = GetFactionInfoByID(2170) },		-- Argussian Reach
+	
+	-- Battle for Azeroth
+	{ id = 2159, name = GetFactionInfoByID(2159) },		-- A  - 7th Legion
+	{ id = 2164, name = GetFactionInfoByID(2164) },		-- AH - Champions of Azeroth
+	{ id = 2161, name = GetFactionInfoByID(2161) },		-- A  - Order of Embers	(alternate ID: 2264 but this seems unused on wowhead)
+	{ id = 2160, name = GetFactionInfoByID(2160) },		-- A  - Proudmoore Admiralty (alternate ID: 2120 but this seems unused on wowhead)
+	{ id = 2162, name = GetFactionInfoByID(2162) },		-- A  - Storm's Wake (alternate ID: 2265 but this seems unused on wowhead)
+	{ id = 2156, name = GetFactionInfoByID(2156) },		-- H  - Talanji's Expedition
+	{ id = 2157, name = GetFactionInfoByID(2157) },		-- H  - The Honorbound
+	{ id = 2163, name = GetFactionInfoByID(2163) },		-- AH - Tortollan Seekers
+	{ id = 2158, name = GetFactionInfoByID(2158) },		-- H  - Voldunai
+	{ id = 2103, name = GetFactionInfoByID(2103) },		-- H  - Zandalari Empire
+ 
 }
 
 local FactionUIDsRev = {}

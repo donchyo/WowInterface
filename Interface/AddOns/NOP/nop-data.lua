@@ -76,7 +76,7 @@ NOP.T_RECIPES = { -- [ItemId] = {{count_to_use,priority}, "gsub regex" | tooltip
   [152741] = {{1,PRI_TOKEN},4,nil,nil}, -- Unsullied Mail Chestguard, why Blizzard did put in type of armor?
   [153151] = {{1,PRI_TOKEN},4,nil,nil}, -- Unsullied Leather Tunic, why Blizzard did put in type of armor?
   [127799] = {{1,PRI_TOKEN},4,nil,nil}, -- Baleful Pendant, for another slots than armor.
-  [139879] = {{1,PRI_OPEN},4,nil,nil}, -- Crate of Champion Equipment, <Right Click to Open>, again new text for open
+  [139879] = {{1,PRI_OPEN},3,nil,nil}, -- Crate of Champion Equipment
   [ 82800] = {{1,PRI_OPEN},1,nil,nil}, -- Pet Cage
   [140744] = {{1,PRI_REST},"(.+:).*",nil,nil}, -- Treasure Map: Azsuna
   [138797] = {{1,PRI_REST},"(.+:).*",nil,nil}, -- Illusion: Mongoose
@@ -91,7 +91,7 @@ NOP.T_RECIPES = { -- [ItemId] = {{count_to_use,priority}, "gsub regex" | tooltip
   [111972] = {{1,PRI_OPEN},2,nil,nil}, -- Enchanter's Study, Level 2, 2nd line contains "Garrison Blueprint"
   [128315] = {{1,PRI_REST},2,nil,nil}, -- Medallion of the Legion, 2nd line contains "Use: Crush the medallion, increasing reputation with the denizens of Draenor by 1,000. (1 Sec Cooldown)"
   [127751] = {{1,PRI_OPEN},3,nil,nil}, -- Fel-Touched Pet Supplies, 3rd line Use: Open the bag. (1 Sec Cooldown)
-  [151638] = {{1,PRI_OPEN},2,nil,nil}, -- Leprous Sack of Pet Supplies, 3rd line in german translation is different from Fel-Touched Pet Supplies, so creative ...
+  [151638] = {{1,PRI_OPEN},3,nil,nil}, -- Leprous Sack of Pet Supplies, 3rd line in german translation is different from Fel-Touched Pet Supplies, so creative ...
   [ 44983] = {{1,PRI_OPEN},3,nil,nil}, -- Strand Crawler, 3rd line contains "Use: Teaches you how to summon this companion."
   [104165] = {{1,PRI_OPEN},3,nil,nil}, -- Kovok, 3rd line contains "Use: Teaches you how to summon and dismiss this companion."
   [118427] = {{1,PRI_OPEN},3,nil,nil}, -- Autographed Hearthstone Card, 3rd line contains "Use: Adds this toy to your toy box."

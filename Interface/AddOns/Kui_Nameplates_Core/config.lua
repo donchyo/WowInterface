@@ -218,10 +218,17 @@ local function UpdateClickboxSize()
         C_NamePlate.SetNamePlateEnemySize(width,height)
     end
 
-    C_NamePlate.SetNamePlateSelfSize(
-        (core.profile.frame_width_personal * addon.uiscale) + 10,
-        (core.profile.frame_height_personal * addon.uiscale) + 20
-    )
+    if addon.USE_BLIZZARD_PERSONAL then
+        C_NamePlate.SetNamePlateSelfSize(
+            core.profile.frame_width_personal - 10,
+            45
+        )
+    else
+        C_NamePlate.SetNamePlateSelfSize(
+            (core.profile.frame_width_personal * addon.uiscale) + 10,
+            (core.profile.frame_height_personal * addon.uiscale) + 20
+        )
+    end
 end
 local function QueueClickboxUpdate()
     cc:QueueFunction(UpdateClickboxSize)
@@ -791,22 +798,40 @@ configLoaded.bossmod_enable = configChanged.bossmod_enable
 -- init config #################################################################
 function core:InitialiseConfig()
     -- XXX 2.15>2.16 health display transition
-    if KuiNameplatesCoreSaved and not KuiNameplatesCoreSaved['216_HEALTH_TRANSITION'] then
-        KuiNameplatesCoreSaved['216_HEALTH_TRANSITION'] = true
-        -- re-jigger health display patterns on all profiles (where set)
-        local upd = function(n,k)
-            local v = KuiNameplatesCoreSaved.profiles[n][k]
-            if not v then return end
-            KuiNameplatesCoreSaved.profiles[n][k] = v == 5 and 1 or v + 1
+    if KuiNameplatesCoreSaved then
+        if not KuiNameplatesCoreSaved['216_HEALTH_TRANSITION'] then
+            KuiNameplatesCoreSaved['216_HEALTH_TRANSITION'] = true
+            -- re-jigger health display patterns on all profiles (where set)
+            local upd = function(n,k)
+                local v = KuiNameplatesCoreSaved.profiles[n][k]
+                if not v then return end
+                KuiNameplatesCoreSaved.profiles[n][k] = v == 5 and 1 or v + 1
+            end
+            for n,p in pairs(KuiNameplatesCoreSaved.profiles) do
+                for _,k in next,{
+                    'health_text_friend_max',
+                    'health_text_friend_dmg',
+                    'health_text_hostile_max',
+                    'health_text_hostile_dmg'
+                } do
+                    upd(n,k)
+                end
+            end
         end
-        for n,p in pairs(KuiNameplatesCoreSaved.profiles) do
-            for _,k in next,{
-                'health_text_friend_max',
-                'health_text_friend_dmg',
-                'health_text_hostile_max',
-                'health_text_hostile_dmg'
-            } do
-                upd(n,k)
+        -- XXX 2.16.1>2.16.2
+        if not KuiNameplatesCoreSaved['2162_PERSONAL_FRAME_SIZE_TRANSITION'] then
+            KuiNameplatesCoreSaved['2162_PERSONAL_FRAME_SIZE_TRANSITION'] = true
+            -- frame_width_personal was previously pixel-corrected even if
+            -- use_blizzard_personal was enabled, so counteract that
+            local upd = function(n,k)
+                local v = KuiNameplatesCoreSaved.profiles[n][k]
+                if not addon.uiscale or not v or v == 132 then return end
+                KuiNameplatesCoreSaved.profiles[n][k] = floor(v * addon.uiscale) + 10
+            end
+            for n,p in pairs(KuiNameplatesCoreSaved.profiles) do
+                if p.use_blizzard_personal then
+                    upd(n,'frame_width_personal')
+                end
             end
         end
     end
@@ -838,7 +863,7 @@ function core:InitialiseConfig()
             -- hide and re-show frames
             if f:IsShown() then
                 local unit = f.unit
-                f.handler:OnHide()
+                f.handler:OnHide() -- (this clears f.unit)
                 f.handler:OnUnitAdded(unit)
             end
         end

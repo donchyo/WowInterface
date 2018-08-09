@@ -249,32 +249,16 @@ function WeakAuras.MultipleDisplayTooltipMenu()
       text = L["Delete all"],
       notCheckable = 1,
       func = function()
+        local toDelete = {};
+        local parents = {};
         for index, id in pairs(tempGroup.controlledChildren) do
-          local toDelete = {};
-          local parents = {};
-          for index, id in pairs(tempGroup.controlledChildren) do
-            local childData = WeakAuras.GetData(id);
-            toDelete[index] = childData;
-            if(childData.parent) then
-              parents[childData.parent] = true;
-            end
-          end
-          for index, childData in pairs(toDelete) do
-            WeakAuras.DeleteOption(childData);
-          end
-          for id, _ in pairs(parents) do
-            local parentData = WeakAuras.GetData(id);
-            local parentButton = WeakAuras.GetDisplayButton(id);
-            WeakAuras.UpdateGroupOrders(parentData);
-            if(#parentData.controlledChildren == 0) then
-              parentButton:DisableExpand();
-            else
-              parentButton:EnableExpand();
-            end
-            parentButton:SetNormalTooltip();
+          local childData = WeakAuras.GetData(id);
+          toDelete[index] = childData;
+          if(childData.parent) then
+            parents[childData.parent] = true;
           end
         end
-        WeakAuras.SortDisplayButtons();
+        WeakAuras.ConfirmDelete(toDelete, parents)
       end
     },
     {
@@ -350,7 +334,7 @@ AceGUI:RegisterLayout("AbsoluteList", function(content, children)
   end
 end);
 
-AceGUI:RegisterLayout("ButtonsScrollLayout", function(content, children)
+AceGUI:RegisterLayout("ButtonsScrollLayout", function(content, children, skipLayoutFinished)
   local yOffset = 0
   local scrollTop, scrollBottom = content.obj:GetScrollPos()
   for i = 1, #children do
@@ -377,7 +361,7 @@ AceGUI:RegisterLayout("ButtonsScrollLayout", function(content, children)
     end
 
   end
-  if(content.obj.LayoutFinished) then
+  if(content.obj.LayoutFinished and not skipLayoutFinished) then
     content.obj:LayoutFinished(nil, yOffset * -1)
   end
 end)
@@ -499,6 +483,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
               else
                 trigger["use_"..realname] = false
                 if(trigger[realname].single) then
+                  trigger[realname].multi = trigger[realname].multi or {};
                   trigger[realname].multi[trigger[realname].single] = true;
                 end
               end
@@ -1006,6 +991,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
           disabled = function() return not trigger["use_"..realname]; end,
           get = function() return trigger["use_"..realname] and trigger[realname] and trigger[realname].single or nil; end,
           set = function(info, v)
+            trigger[realname] = trigger[realname] or {};
             trigger[realname].single = v;
             WeakAuras.Add(data);
             if (reloadOptions) then
@@ -1047,6 +1033,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
             end
           end,
           set = function(info, v, calledFromSetAll)
+            trigger[realname].multi = trigger[realname].multi or {};
             if (calledFromSetAll) then
               trigger[realname].multi[v] = calledFromSetAll;
             elseif(trigger[realname].multi[v]) then
@@ -1253,6 +1240,47 @@ function WeakAuras.DeleteOption(data)
     WeakAuras.Add(parentData);
     WeakAuras.ReloadGroupRegionOptions(parentData);
     WeakAuras.UpdateDisplayButton(parentData);
+  end
+end
+
+StaticPopupDialogs["WEAKAURAS_CONFIRM_DELETE"] = {
+  text = "",
+  button1 = L["Delete"],
+  button2 = L["Cancel"],
+  OnAccept = function(self)
+    if self.data then
+      for _, auraData in pairs(self.data.toDelete) do
+        WeakAuras.DeleteOption(auraData)
+      end
+      if self.data.parents then
+        for id in pairs(self.data.parents) do
+          local parentData = WeakAuras.GetData(id)
+          local parentButton = WeakAuras.GetDisplayButton(id)
+          WeakAuras.UpdateGroupOrders(parentData)
+          if(#parentData.controlledChildren == 0) then
+            parentButton:DisableExpand()
+          else
+            parentButton:EnableExpand()
+          end
+          parentButton:SetNormalTooltip()
+        end
+      end
+      WeakAuras.SortDisplayButtons()
+    end
+  end,
+  OnCancel = function(self)
+    self.data = nil
+  end,
+  showAlert = true,
+  whileDead = true,
+  preferredindex = STATICPOPUP_NUMDIALOGS,
+}
+
+function WeakAuras.ConfirmDelete(toDelete, parents)
+  if toDelete then
+    local warningForm = L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"]
+    StaticPopupDialogs["WEAKAURAS_CONFIRM_DELETE"].text = warningForm:format(#toDelete)
+    StaticPopup_Show("WEAKAURAS_CONFIRM_DELETE", "", "", {toDelete = toDelete, parents = parents})
   end
 end
 
@@ -1962,7 +1990,7 @@ local function replaceNameDescFuncs(intable, data)
             name = childOption.name;
           end
           if (not name) then
-            -- Do nothing
+          -- Do nothing
           elseif(first) then
             combinedName = name;
             first = false;
@@ -2506,9 +2534,11 @@ end
 -- which AceConfig doesn't like.
 -- Thus Reload the options after a very small delay.
 function WeakAuras.ScheduleReloadOptions(data)
-  C_Timer.After(0.1, function()
-    WeakAuras.ReloadOptions(data.id)
-  end );
+  if (type(data.id) ~= "table") then
+    C_Timer.After(0.1, function()
+      WeakAuras.ReloadOptions(data.id)
+    end );
+  end
 end
 
 function WeakAuras.ReloadOptions(id)

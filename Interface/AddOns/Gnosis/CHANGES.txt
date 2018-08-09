@@ -1,7 +1,13 @@
-changeset:   187:69fe8dc1e07e
-tag:         v4.67
+changeset:   197:dce28f894213
+tag:         v4.70
 user:        Elvenbane <elvenbane@clanyawa.com>
-date:        Thu Jul 19 20:09:29 2018 -0500
-summary:     Callback fixes
+date:        Mon Jul 30 11:45:16 2018 -0500
+summary:     version increment
+
+
+changeset:   196:6279895ba565
+user:        Elvenbane <elvenbane@clanyawa.com>
+date:        Mon Jul 30 11:44:48 2018 -0500
+summary:     Switch GCD back to the spell being cast
 
 

@@ -12,19 +12,7 @@ Bagnon_Sets = {
 	},
 	["glowUnusable"] = true,
 	["glowQuest"] = true,
-	["players"] = {
-		["Grim Batol"] = {
-		},
-		["Ravencrest"] = {
-		},
-		["Valley of Heroes - EU"] = {
-		},
-		["Shattered Hand"] = {
-		},
-		["Kazzak"] = {
-		},
-		["Lightbringer"] = {
-		},
+	["reagentColor"] = {
 	},
 	["gemColor"] = {
 	},
@@ -34,17 +22,11 @@ Bagnon_Sets = {
 	["emptySlots"] = true,
 	["normalColor"] = {
 	},
-	["glowQuality"] = true,
+	["profiles"] = {
+	},
 	["mineColor"] = {
 	},
-	["glowSets"] = false,
-	["refrigeColor"] = {
-	},
-	["displayGems"] = true,
-	["reagentColor"] = {
-	},
-	["colorSlots"] = true,
-	["displayGuildbank"] = true,
+	["glowQuality"] = true,
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -83,23 +65,23 @@ Bagnon_Sets = {
 			},
 			["enabled"] = true,
 			["reverseBags"] = true,
-			["actPanel"] = false,
+			["color"] = {
+			},
 			["bagFrame"] = false,
 			["money"] = true,
+			["bagBreak"] = false,
 			["alpha"] = 1,
+			["broker"] = false,
+			["y"] = 72.888916015625,
+			["x"] = -45.5540771484375,
+			["search"] = true,
+			["showBags"] = true,
+			["reverseSlots"] = true,
+			["itemScale"] = 1,
 			["hiddenRules"] = {
 				["misc"] = false,
 			},
-			["showBags"] = true,
-			["bagBreak"] = false,
-			["x"] = -45.5540771484375,
-			["search"] = true,
-			["broker"] = false,
-			["reverseSlots"] = true,
-			["y"] = 72.888916015625,
-			["itemScale"] = 1,
-			["color"] = {
-			},
+			["actPanel"] = false,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -129,20 +111,20 @@ Bagnon_Sets = {
 				"contain/all", -- [24]
 				"misc/all", -- [25]
 			},
-			["point"] = "BOTTOMLEFT",
+			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = 288.000030517578,
-			["x"] = 95,
+			["y"] = -153.777526855469,
+			["x"] = -403.4443359375,
 			["borderColor"] = {
 			},
-			["itemScale"] = 1,
-			["scale"] = 1,
 			["alpha"] = 1,
+			["scale"] = 1,
+			["itemScale"] = 1,
 		},
 		["guild"] = {
 			["y"] = 295.500030517578,
@@ -178,11 +160,11 @@ Bagnon_Sets = {
 			},
 			["color"] = {
 			},
-			["x"] = -573.333251953125,
-			["hiddenRules"] = {
-			},
 			["hiddenBags"] = {
 			},
+			["hiddenRules"] = {
+			},
+			["x"] = -573.333251953125,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -219,14 +201,20 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = 0,
+			["y"] = -110.999969482422,
 			["x"] = -369.666625976563,
 			["borderColor"] = {
 			},
-			["alpha"] = 1,
-			["scale"] = 1,
-			["itemScale"] = 1,
 			["showBags"] = true,
+			["itemScale"] = 1,
+			["scale"] = 1,
+			["alpha"] = 1,
 		},
 	},
+	["displayGems"] = true,
+	["displayGuildbank"] = true,
+	["colorSlots"] = true,
+	["refrigeColor"] = {
+	},
+	["glowSets"] = false,
 }

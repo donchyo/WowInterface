@@ -1,6 +1,6 @@
 # BigWigs [Burning Crusade]
 
-## [v8.0.1](https://github.com/BigWigsMods/BigWigs_BurningCrusade/tree/v8.0.1) (2018-07-20)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_BurningCrusade/compare/v8.0.0...v8.0.1)
+## [v8.0.2](https://github.com/BigWigsMods/BigWigs_BurningCrusade/tree/v8.0.2) (2018-07-26)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_BurningCrusade/compare/v8.0.1...v8.0.2)
 
-- Update modules for new UNIT event arg order.  
+- Update color usage in our API calls.  

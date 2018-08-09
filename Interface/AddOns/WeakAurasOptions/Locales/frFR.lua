@@ -263,6 +263,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED
 	L["Full Scan"] = "Full Scan"
 	--[[Translation missing --]]
 	L["General Text Settings"] = "General Text Settings"
+	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
 	L["Glow"] = "Surbrillance"
 	L["Glow Action"] = "Action de l'éclat"
 	L["Green Rune"] = "Rune verte"
@@ -299,6 +301,8 @@ Si le nombre entré est decimal (ex. 0.5), une fraction (ex. 1/2), ou un pourcen
 	L["Hybrid Position"] = "Position hybride"
 	L["Hybrid Sort Mode"] = "Mode de tri hybride"
 	L["Icon"] = "Icône"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	L["Icon Color"] = "Couleur d'icône"
 	L["Icon Info"] = "Info d'icône"
 	L["Icon Inset"] = "Objet inséré"
@@ -594,6 +598,8 @@ Seule une unique valeur peut être choisie]=]
 	L["Y Scale"] = "Echelle Y"
 	L["Yellow Rune"] = "Rune jaune"
 	L["Yes"] = "Oui"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	L["Z Offset"] = "Décalage Z"
 	L["Z Rotation"] = "Rotation Z"
 	L["Zoom"] = "Zoom"

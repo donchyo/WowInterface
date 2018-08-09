@@ -1,8 +1,11 @@
 
 WeakAurasSaved = {
 	["dynamicIconCache"] = {
-		["Archimonde's Hatred Reborn"] = {
-			[235169] = 136030,
+		["Anti-Magic Shell"] = {
+			[48707] = 136120,
+		},
+		["Power Word: Shield"] = {
+			[17] = 135940,
 		},
 		["Vampiric Blood"] = {
 			[55233] = 136168,
@@ -10,20 +13,842 @@ WeakAurasSaved = {
 		["Umbilicus Eternus"] = {
 			[193249] = 1392546,
 		},
-		["Anti-Magic Shell"] = {
-			[48707] = 136120,
+		["Archimonde's Hatred Reborn"] = {
+			[235169] = 136030,
+		},
+	},
+	["displays"] = {
+		["HealthstoneGroup"] = {
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["controlledChildren"] = {
+				"Healthstone requester", -- [1]
+				"Healthstone response", -- [2]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["disjunctive"] = "all",
+			["border"] = false,
+			["untrigger"] = {
+			},
+			["regionType"] = "group",
+			["borderSize"] = 16,
+			["activeTriggerMode"] = -10,
+			["yOffset"] = 250,
+			["scale"] = 1,
+			["expanded"] = true,
+			["borderEdge"] = "None",
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["internalVersion"] = 5,
+			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
+			["id"] = "HealthstoneGroup",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["borderInset"] = 11,
+			["numTriggers"] = 1,
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["showOn"] = "showOnActive",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["anchorPoint"] = "CENTER",
+			["conditions"] = {
+			},
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "WARLOCK",
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["xOffset"] = 0,
+		},
+		["sendaddonmessagetest"] = {
+			["text2Point"] = "CENTER",
+			["text1FontSize"] = 12,
+			["cooldownTextEnabled"] = true,
+			["yOffset"] = 311.358337402344,
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["use_alwaystrue"] = true,
+				["use_absorbMode"] = true,
+				["names"] = {
+					"Power Word: Shield", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
+				["debuffType"] = "HELPFUL",
+				["type"] = "aura",
+				["unit"] = "player",
+				["unevent"] = "auto",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Conditions",
+				["custom"] = "function(event, ...)\n    local arg1, arg2, arg3, arg4 = ...\n    print(GetGameTime())\n    print(\"event\", event)\n    print(\"1\", arg1)\n    print(\"2\", arg2)\n    print(\"3\", arg3)\n    print(\"4\", arg4)\n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+				["realSpellName"] = "Penance",
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["events"] = "CHAT_MSG_ADDON",
+				["showOn"] = "showOnActive",
+				["custom_type"] = "event",
+				["subeventSuffix"] = "_CAST_START",
+				["spellName"] = 47540,
+			},
+			["desaturate"] = false,
+			["text1Point"] = "BOTTOMRIGHT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 64,
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["internalVersion"] = 5,
+			["disjunctive"] = "all",
+			["text2Containment"] = "INSIDE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 47540,
+			},
+			["glow"] = false,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["numTriggers"] = 1,
+			["xOffset"] = 14.456298828125,
+			["text2FontSize"] = 24,
+			["stickyDuration"] = false,
+			["width"] = 64,
+			["text1"] = "%s",
+			["text2Enabled"] = false,
+			["text2"] = "%p",
+			["zoom"] = 0,
+			["auto"] = true,
+			["text2Font"] = "Friz Quadrata TT",
+			["id"] = "sendaddonmessagetest",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["text1FontFlags"] = "OUTLINE",
+			["text1Font"] = "Friz Quadrata TT",
+			["inverse"] = false,
+			["text1Containment"] = "INSIDE",
+			["conditions"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+					["do_message"] = false,
+					["custom"] = "C_ChatInfo.SendAddonMessage(\"KRIXI_MESSAGE\", \"testing\", \"RAID\")\nprint(\"sending test message at:\", GetGameTime())\n    \n    \n    \n    \n\n",
+					["do_custom"] = true,
+				},
+				["init"] = {
+					["do_custom"] = true,
+					["custom"] = "C_ChatInfo.RegisterAddonMessagePrefix(\"KRIXI_MESSAGE\")\n\n\n\n",
+				},
+				["finish"] = {
+				},
+			},
+		},
+		["!!!! Addon Message Test"] = {
+			["outline"] = "OUTLINE",
+			["fontSize"] = 12,
+			["xOffset"] = 0,
+			["displayText"] = "%p",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["untrigger"] = {
+			},
+			["conditions"] = {
+			},
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["do_custom"] = true,
+					["custom"] = "C_ChatInfo.RegisterAddonMessagePrefix(\"KRIXI_MESSAGE\")",
+				},
+				["finish"] = {
+				},
+			},
+			["regionType"] = "text",
+			["selfPoint"] = "BOTTOM",
+			["internalVersion"] = 5,
+			["justify"] = "LEFT",
+			["wordWrap"] = "WordWrap",
+			["trigger"] = {
+				["debuffType"] = "HELPFUL",
+				["type"] = "custom",
+				["names"] = {
+				},
+				["unevent"] = "auto",
+				["use_unit"] = true,
+				["use_absorbMode"] = true,
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["events"] = "CHAT_MSG_ADDON",
+				["custom"] = "function(event, ...)\n    local arg1, arg2, arg3, arg4 = ...\n    print(GetGameTime())\n    print(\"event\", event)\n    print(\"1\", arg1)\n    print(\"2\", arg2)\n    print(\"3\", arg3)\n    print(\"4\", arg4)\n    \n    C_ChatInfo.SendAddonMessage(\"KRIXI_MESSAGE\", \"returntesting\", \"PARTY\")\n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+				["spellIds"] = {
+				},
+				["showOn"] = "showOnActive",
+				["subeventSuffix"] = "_CAST_START",
+				["custom_type"] = "event",
+				["custom_hide"] = "timed",
+			},
+			["width"] = 22.1111030578613,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["id"] = "!!!! Addon Message Test",
+			["font"] = "Friz Quadrata TT",
+			["numTriggers"] = 1,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["height"] = 11.5555553436279,
+			["fixedWidth"] = 200,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["disjunctive"] = "all",
+		},
+		["Healthstone requester"] = {
+			["outline"] = "OUTLINE",
+			["text2Point"] = "CENTER",
+			["text1FontSize"] = 12,
+			["cooldownTextEnabled"] = true,
+			["displayText"] = "%c",
+			["customText"] = "function()\n    if aura_env.expiryTime ~= 0 then\n        local timeRemaining = aura_env.expiryTime - GetTime() \n        if timeRemaining < 0 then  \n            return \"\"\n        else\n            timeRemaining = math.floor(timeRemaining + 0.5)\n            return aura_env.outputText .. \" \" .. timeRemaining\n        end\n    end\nend\n\n\n\n\n\n\n\n\n\n",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
+			["icon"] = true,
+			["internalVersion"] = 5,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["custom_hide"] = "timed",
+				["type"] = "custom",
+				["events"] = "GUILD_PARTY_STATE_UPDATED, PLAYER_ENTERING_WORLD",
+				["subeventSuffix"] = "_CAST_START",
+				["custom"] = "function(event,...)\n    local isGuildGroup,_ = ...\n    aura_env.isGuildGroup = true\n    print(aura_env.isGuildGroup)\n    --aura_env.isGuildGroup = isGuildGroup\nend",
+				["custom_type"] = "event",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+			},
+			["wordWrap"] = "WordWrap",
+			["parent"] = "HealthstoneGroup",
+			["desaturate"] = false,
+			["conditions"] = {
+			},
+			["font"] = "Arial Narrow",
+			["stickyDuration"] = false,
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 34.6666946411133,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["do_custom"] = true,
+					["custom"] = "C_ChatInfo.RegisterAddonMessagePrefix(\"KRIXI_MESSAGE\")\naura_env.expiryTime = 0",
+				},
+			},
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = false,
+				["class"] = {
+					["multi"] = {
+						["DEATHKNIGHT"] = true,
+						["WARRIOR"] = true,
+						["SHAMAN"] = true,
+						["MAGE"] = true,
+						["PRIEST"] = true,
+						["ROGUE"] = true,
+						["DEMONHUNTER"] = true,
+						["HUNTER"] = true,
+						["DRUID"] = true,
+						["MONK"] = true,
+						["PALADIN"] = true,
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["name"] = "Gnomalock",
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_name"] = false,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+						["flexible"] = true,
+						["scenario"] = true,
+						["fortyman"] = true,
+						["ten"] = true,
+						["twentyfive"] = true,
+						["twenty"] = true,
+						["party"] = true,
+					},
+				},
+			},
+			["numTriggers"] = 3,
+			["xOffset"] = 0,
+			["fontSize"] = 35,
+			["text2Containment"] = "INSIDE",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "text",
+			["text1Point"] = "BOTTOMRIGHT",
+			["id"] = "Healthstone requester",
+			["text2FontSize"] = 24,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["justify"] = "CENTER",
+			["text1"] = "%s",
+			["text2"] = "%p",
+			["glow"] = false,
+			["zoom"] = 0,
+			["auto"] = true,
+			["disjunctive"] = "any",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["debuffType"] = "HELPFUL",
+						["type"] = "custom",
+						["names"] = {
+						},
+						["unevent"] = "auto",
+						["use_unit"] = true,
+						["use_absorbMode"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["events"] = "PLAYER_ENTERING_WORLD, PLAYER_REGEN_ENABLED, UNIT_AURA",
+						["custom"] = "function(event, ...)\n    print(\"guild:\", aura_env.isGuildGroup)\n    if (not (GetItemCount(5512, nil, true) == 3)) and aura_env.isGuildGroup then\n        C_ChatInfo.SendAddonMessage(\"KRIXI_MESSAGE\", \"RequestingHealthstones\", \"RAID\")\n    end\n    \nend",
+						["spellIds"] = {
+						},
+						["showOn"] = "showOnActive",
+						["subeventSuffix"] = "_CAST_START",
+						["custom_type"] = "event",
+						["custom_hide"] = "custom",
+					},
+					["untrigger"] = {
+						["custom"] = "\n\n",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["custom_type"] = "event",
+						["duration"] = "10",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["events"] = "CHAT_MSG_ADDON, UNIT_INVENTORY_CHANGED",
+						["custom"] = "function(event, ...)\n    if event == \"CHAT_MSG_ADDON\" then\n        local prefix, message, channel, origin = ...\n        if prefix == \"KRIXI_MESSAGE\" and string.match(message, \"PlacedHealthstones\") then            \n            local _, duration = strsplit(\" \", message, 2)\n            duration = tonumber(duration)\n            aura_env.expiryTime = duration + GetTime() \n            aura_env.outputText = \"Healthstones placed\\nBy: \" .. origin\n            return true\n            \n        end\n        \n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["subeventSuffix"] = "_CAST_START",
+						["custom_hide"] = "custom",
+					},
+					["untrigger"] = {
+						["custom"] = "function(event, ...)\n    if event == \"UNIT_INVENTORY_CHANGED\" then\n        if GetItemCount(5512, nil, true) == 3 then\n            return true\n        end\n    end\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+					},
+				}, -- [2]
+			},
+			["yOffset"] = 0,
+			["text2Enabled"] = false,
+			["width"] = 27.4444179534912,
+			["text1FontFlags"] = "OUTLINE",
+			["text1Enabled"] = true,
+			["inverse"] = false,
+			["text2Font"] = "Friz Quadrata TT",
+			["init_started"] = 1,
+			["fixedWidth"] = 200,
+			["text1Containment"] = "INSIDE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+		},
+		["Healthstone response"] = {
+			["outline"] = "OUTLINE",
+			["glow"] = false,
+			["text1FontSize"] = 12,
+			["disjunctive"] = "any",
+			["displayText"] = " ",
+			["untrigger"] = {
+				["custom"] = "function(event, ...)\n    if event == \"UNIT_SPELLCAST_SUCCEEDED\" then\n        local unit, _, spellId = ...\n        if spellId then\n            if spellId == 29893 then\n                if unit == \"player\" then \n                    aura_env.hsCooldownEnd = GetTime() + 120\n                    C_ChatInfo.SendAddonMessage(\"KRIXI_MESSAGE\", \"PlacedHealthstones 120\", \"RAID\")\n                    return true  \n                else  \n                    return true\n                end\n            end        \n        end    \n    end\nend",
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = -10,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["do_custom"] = true,
+					["custom"] = "C_ChatInfo.RegisterAddonMessagePrefix(\"KRIXI_MESSAGE\")\n\naura_env.hsPlacedTime = 0\naura_env.hsCooldownEnd = 0\naura_env.hsPlaced = false\n\n\n\n\n\n\n",
+				},
+			},
+			["internalVersion"] = 5,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "custom",
+				["debuffType"] = "HELPFUL",
+				["custom_type"] = "event",
+				["subeventPrefix"] = "SPELL",
+				["duration"] = "10",
+				["event"] = "Health",
+				["unit"] = "player",
+				["customDuration"] = "\n\n",
+				["names"] = {
+				},
+				["events"] = "CHAT_MSG_ADDON, UNIT_SPELLCAST_SUCCEEDED",
+				["subeventSuffix"] = "_CAST_START",
+				["showOn"] = "showOnActive",
+				["custom"] = "function(event, ...)\n    if event == \"CHAT_MSG_ADDON\" then\n        local prefix, message, channel, origin = ...\n        if prefix == \"KRIXI_MESSAGE\" and message == \"RequestingHealthstones\" then\n            \n            local start, duration, enabled, modrate = GetSpellCooldown(29893)\n            if duration > 10 then                 \n                C_ChatInfo.SendAddonMessage(\"KRIXI_MESSAGE\", \"PlacedHealthstones \" .. aura_env.hsCooldownEnd - GetTime(), \"RAID\")\n            else\n                aura_env.region.text:SetText(\"Place healthstones\\nRequested by: \" .. origin)\n                return true\n            end\n        end\n    end    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+				["spellIds"] = {
+				},
+				["custom_hide"] = "custom",
+			},
+			["parent"] = "HealthstoneGroup",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["stickyDuration"] = false,
+			["text2Font"] = "Friz Quadrata TT",
+			["text1Point"] = "BOTTOMRIGHT",
+			["conditions"] = {
+			},
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 34.6666946411133,
+			["wordWrap"] = "WordWrap",
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["class"] = {
+					["single"] = "WARLOCK",
+					["multi"] = {
+						["WARLOCK"] = true,
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_name"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["name"] = "Gnomalock",
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+						["flexible"] = true,
+						["scenario"] = true,
+						["fortyman"] = true,
+						["ten"] = true,
+						["twentyfive"] = true,
+						["twenty"] = true,
+						["party"] = true,
+					},
+				},
+			},
+			["numTriggers"] = 1,
+			["yOffset"] = 0,
+			["fontSize"] = 35,
+			["text2Containment"] = "OUTSIDE",
+			["xOffset"] = 0,
+			["text1Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "text",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["id"] = "Healthstone response",
+			["text2FontSize"] = 8,
+			["font"] = "Arial Narrow",
+			["justify"] = "CENTER",
+			["text1"] = "%s",
+			["zoom"] = 0,
+			["text2Point"] = "TOP",
+			["text2"] = " ",
+			["auto"] = true,
+			["icon"] = true,
+			["additional_triggers"] = {
+			},
+			["cooldownTextEnabled"] = true,
+			["text2Enabled"] = true,
+			["width"] = 12.4444227218628,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["inverse"] = false,
+			["text1Containment"] = "INSIDE",
+			["fixedWidth"] = 200,
+			["desaturate"] = false,
+			["text1Enabled"] = true,
 		},
 	},
 	["login_squelch_time"] = 10,
-	["displays"] = {
-	},
 	["registered"] = {
 	},
 	["frame"] = {
-		["xOffset"] = -145.198974609375,
-		["width"] = 948.174926757813,
-		["height"] = 474.222137451172,
-		["yOffset"] = -195.343872070313,
+		["xOffset"] = -31.28955078125,
+		["yOffset"] = -280.754211425781,
+		["height"] = 570.121948242188,
+		["width"] = 825.303283691406,
 	},
 	["editor_theme"] = "Monokai",
 }

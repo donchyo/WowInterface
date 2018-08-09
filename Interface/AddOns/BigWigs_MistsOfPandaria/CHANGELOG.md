@@ -1,7 +1,7 @@
 # BigWigs [Mists of Pandaria]
 
-## [v8.0.2](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/tree/v8.0.2) (2018-07-21)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/compare/v8.0.1...v8.0.2)
+## [v8.0.4](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/tree/v8.0.4) (2018-07-28)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_MistsOfPandaria/compare/v8.0.3...v8.0.4)
 
-- Update modules for new UNIT event arg order.  
-- SiegeOfOrgrimmar/GarroshHellscream: Update some UnitDebuff usage.  
+- ThroneOfThunder/Jinrokh: Add a comment regarding 138375 no longer existing.  
+- ThroneOfThunder/IronQon: Update UnitDebuff usage.  

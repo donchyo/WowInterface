@@ -15,3 +15,7 @@ Kui_Nameplates: disabled
 Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 iKeystones: disabled
+OmniCC: enabled
+OmniCC_Config: enabled
+Omen: enabled
+AddOnSkins: enabled

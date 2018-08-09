@@ -1,6 +1,6 @@
 ## Interface: 80000
 ## Author: p3lim
-## Version: 80000.35-Release
+## Version: 80000.36-Release
 ## Title: QuickQuest
 ## Notes: Quest automation wizardry
 ## OptionalDeps: LibGossipQuestInfo, Wasabi

@@ -2,48 +2,1238 @@
 PlaterDB = {
 	["profileKeys"] = {
 		["Zetiz - Grim Batol"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Default",
 		["Krixidk - Grim Batol"] = "Krixi",
+		["Kriximonk - Ravencrest"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixiqt - Ravencrest"] = "Default",
+		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["script_data"] = {
+				{
+					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --manually create a new texture for the flash animation\n    if (not envTable.SmallFlashTexture) then\n        envTable.SmallFlashTexture = envTable.SmallFlashTexture or Plater:CreateImage (unitFrame.castBar)\n        envTable.SmallFlashTexture:SetColorTexture (1, 1, 1)\n        envTable.SmallFlashTexture:SetAllPoints()\n    end\n    \n    \n    --manually create a flash animation using the framework\n    if (not envTable.SmallFlashAnimationHub) then \n        \n        local onPlay = function()\n            envTable.SmallFlashTexture:Show()\n        end\n        \n        local onFinished = function()\n            envTable.SmallFlashTexture:Hide()\n        end\n        \n        local animationHub = Plater:CreateAnimationHub (envTable.SmallFlashTexture, onPlay, onFinished)\n        Plater:CreateAnimation (animationHub, \"Alpha\", 1, 0.2, 0, 1)\n        Plater:CreateAnimation (animationHub, \"Alpha\", 2, 0.2, 1, 0)\n        envTable.SmallFlashAnimationHub = animationHub\n    end\n    \nend\n\n\n\n\n\n\n",
+					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["Temp_OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.SmallFlashAnimationHub:Play()\nend\n\n\n",
+					["ScriptType"] = 2,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    \n    \nend\n\n\n",
+					["Time"] = 1533836810,
+					["Temp_ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --manually create a new texture for the flash animation\n    if (not envTable.SmallFlashTexture) then\n        envTable.SmallFlashTexture = envTable.SmallFlashTexture or Plater:CreateImage (unitFrame.castBar)\n        envTable.SmallFlashTexture:SetColorTexture (1, 1, 1)\n        envTable.SmallFlashTexture:SetAllPoints()\n    end\n    \n    \n    --manually create a flash animation using the framework\n    if (not envTable.SmallFlashAnimationHub) then \n        \n        local onPlay = function()\n            envTable.SmallFlashTexture:Show()\n        end\n        \n        local onFinished = function()\n            envTable.SmallFlashTexture:Hide()\n        end\n        \n        local animationHub = Plater:CreateAnimationHub (envTable.SmallFlashTexture, onPlay, onFinished)\n        Plater:CreateAnimation (animationHub, \"Alpha\", 1, 0.2, 0, 1)\n        Plater:CreateAnimation (animationHub, \"Alpha\", 2, 0.2, 1, 0)\n        envTable.SmallFlashAnimationHub = animationHub\n    end\n    \nend\n\n\n\n\n\n\n",
+					["Icon"] = "Interface\\AddOns\\Plater\\images\\cast_bar",
+					["Enabled"] = true,
+					["Revision"] = 130,
+					["Author"] = "Tercioo-Sylvanas",
+					["Desc"] = "Add spell in the Add Trigger field.",
+					["Temp_UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    \n    \nend\n\n\n",
+					["SpellIds"] = {
+						257791, -- [1]
+						258313, -- [2]
+						257785, -- [3]
+						271046, -- [4]
+						258153, -- [5]
+					},
+					["PlaterCore"] = 1,
+					["Temp_OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.SmallFlashAnimationHub:Play()\nend\n\n\n",
+					["Name"] = "Cast - Small Alert [Plater]",
+					["NpcNames"] = {
+					},
+				}, -- [1]
+				{
+					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount = Plater:CreateLabel (unitFrame, \"\", 16, \"silver\");\n    envTable.EnergyAmount:SetPoint (\"bottom\", unitFrame, \"top\", 0, 10);\nend\n\n\n",
+					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Hide()\nend\n\n\n",
+					["Temp_OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Show()\nend\n\n\n",
+					["ScriptType"] = 3,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount.text = \"\" .. UnitPower (unitId);\nend\n\n\n",
+					["Time"] = 1533836805,
+					["Temp_ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount = Plater:CreateLabel (unitFrame, \"\", 16, \"silver\");\n    envTable.EnergyAmount:SetPoint (\"bottom\", unitFrame, \"top\", 0, 10);\nend\n\n\n",
+					["Icon"] = 136048,
+					["Enabled"] = true,
+					["Revision"] = 75,
+					["Author"] = "Celian-Sylvanas",
+					["Desc"] = "Show the energy amount above the nameplate",
+					["Temp_UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount.text = \"\" .. UnitPower (unitId);\nend\n\n\n",
+					["SpellIds"] = {
+					},
+					["PlaterCore"] = 1,
+					["Temp_OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Hide()\nend\n\n\n",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Show()\nend\n\n\n",
+					["Name"] = "UnitPower [Plater]",
+					["NpcNames"] = {
+						"Guardian of Yogg-Saron", -- [1]
+					},
+				}, -- [2]
+				{
+					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.FixateTarget = Plater:CreateLabel (unitFrame);\n    envTable.FixateTarget:SetPoint (\"bottom\", unitFrame.BuffFrame, \"top\", 0, 10);    \n    \n    envTable.FixateIcon = Plater:CreateImage (unitFrame, 236188, 16, 16, \"overlay\");\n    envTable.FixateIcon:SetPoint (\"bottom\", envTable.FixateTarget, \"top\", 0, 4);    \n    \nend\n\n\n\n\n\n\n\n\n",
+					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Hide()\n    envTable.FixateIcon:Hide()\nend\n\n\n",
+					["Temp_OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Show();\n    envTable.FixateIcon:Show();\n    \nend\n\n\n",
+					["ScriptType"] = 1,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    local targetName = UnitName (unitId .. \"target\");\n    if (targetName) then\n        local _, class = UnitClass (unitId .. \"target\");\n        targetName = Plater.SetTextColorByClass (unitId .. \"target\", targetName);\n        envTable.FixateTarget.text = targetName;\n    end    \nend\n\n\n",
+					["Time"] = 1533836807,
+					["Temp_ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.FixateTarget = Plater:CreateLabel (unitFrame);\n    envTable.FixateTarget:SetPoint (\"bottom\", unitFrame.BuffFrame, \"top\", 0, 10);    \n    \n    envTable.FixateIcon = Plater:CreateImage (unitFrame, 236188, 16, 16, \"overlay\");\n    envTable.FixateIcon:SetPoint (\"bottom\", envTable.FixateTarget, \"top\", 0, 4);    \n    \nend\n\n\n\n\n\n\n\n\n",
+					["Icon"] = 1029718,
+					["Enabled"] = true,
+					["Revision"] = 73,
+					["Author"] = "Celian-Sylvanas",
+					["Desc"] = "Show above the nameplate who is the player fixated",
+					["Temp_UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    local targetName = UnitName (unitId .. \"target\");\n    if (targetName) then\n        local _, class = UnitClass (unitId .. \"target\");\n        targetName = Plater.SetTextColorByClass (unitId .. \"target\", targetName);\n        envTable.FixateTarget.text = targetName;\n    end    \nend\n\n\n",
+					["SpellIds"] = {
+						277735, -- [1]
+						277556, -- [2]
+					},
+					["PlaterCore"] = 1,
+					["Temp_OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Hide()\n    envTable.FixateIcon:Hide()\nend\n\n\n",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Show();\n    envTable.FixateIcon:Show();\n    \nend\n\n\n",
+					["Name"] = "Fixate [Plater]",
+					["NpcNames"] = {
+					},
+				}, -- [3]
+				{
+					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow = envTable.Glow or DetailsFramework:CreateGlowOverlay (self)\n    \nend\n\n\n",
+					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n        envTable.Glow:Stop()\n    \nend\n\n\n",
+					["Temp_OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow:Play()\n    \nend\n\n\n",
+					["ScriptType"] = 1,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["Time"] = 1533836831,
+					["Temp_ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow = envTable.Glow or DetailsFramework:CreateGlowOverlay (self)\n    \nend\n\n\n",
+					["Icon"] = "Interface\\AddOns\\Plater\\images\\icon_aura",
+					["Enabled"] = true,
+					["Revision"] = 132,
+					["Author"] = "Tercioo-Sylvanas",
+					["Desc"] = "Add the debuff name in the trigger box.",
+					["Temp_UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["SpellIds"] = {
+					},
+					["PlaterCore"] = 1,
+					["Temp_OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n        envTable.Glow:Stop()\n    \nend\n\n\n",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow:Play()\n    \nend\n\n\n",
+					["Name"] = "Aura - Debuff Alert [Plater]",
+					["NpcNames"] = {
+					},
+				}, -- [4]
+				{
+					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --add this value to the cast bar height\n    envTable.CastBarHeightAdd = 5\n    \n    --create a slow flash above the cast bar\n    envTable.FullBarFlash = envTable.FullBarFlash or Plater.CreateFlash (unitFrame.castBar, 0.35, 1, \"white\")\n    \n    --create a big fast flash over the entire nameplate\n    envTable.BackgroundFlash = envTable.BackgroundFlash or Plater.CreateFlash (unitFrame, 0.35, 1, {.1, .1, .1})\n    \n    --create a camera shake for the nameplate\n    envTable.FrameShake = Plater:CreateFrameShake (self, 0.4, 5, 35, false, false, 0, 1, 0.05, 0.1, true)\n    \nend\n\n\n",
+					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    if (envTable.OriginalHeight) then\n        self:SetHeight (envTable.OriginalHeight)\n        envTable.OriginalHeight = nil\n    end    \n    \nend\n\n\n\n\n\n",
+					["Temp_OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --play flash animations\n    envTable.FullBarFlash:Play()\n    envTable.BackgroundFlash:Play()\n    \n    --restoring the default size (not required since it already restore in the hide script)\n    if (envTable.OriginalHeight) then\n        self:SetHeight (envTable.OriginalHeight)\n    end\n    \n    --increase the cast bar size\n    local height = self:GetHeight()\n    envTable.OriginalHeight = height\n    \n    self:SetHeight (height + envTable.CastBarHeightAdd)\n    \n    Plater.SetCastBarBorderColor (self, 1, .2, .2, 0.4)\n    \n    self:PlayFrameShake (envTable.FrameShake)\n    \nend\n\n\n\n\n\n\n",
+					["ScriptType"] = 2,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["Time"] = 1533836825,
+					["Temp_ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --add this value to the cast bar height\n    envTable.CastBarHeightAdd = 5\n    \n    --create a slow flash above the cast bar\n    envTable.FullBarFlash = envTable.FullBarFlash or Plater.CreateFlash (unitFrame.castBar, 0.35, 1, \"white\")\n    \n    --create a big fast flash over the entire nameplate\n    envTable.BackgroundFlash = envTable.BackgroundFlash or Plater.CreateFlash (unitFrame, 0.35, 1, {.1, .1, .1})\n    \n    --create a camera shake for the nameplate\n    envTable.FrameShake = Plater:CreateFrameShake (self, 0.4, 5, 35, false, false, 0, 1, 0.05, 0.1, true)\n    \nend\n\n\n",
+					["Icon"] = "Interface\\AddOns\\Plater\\images\\cast_bar",
+					["Enabled"] = true,
+					["Revision"] = 198,
+					["Author"] = "Tercioo-Sylvanas",
+					["Desc"] = "Add spell in the Add Trigger field.",
+					["Temp_UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["SpellIds"] = {
+						257016, -- [1]
+						271840, -- [2]
+					},
+					["PlaterCore"] = 1,
+					["Temp_OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    if (envTable.OriginalHeight) then\n        self:SetHeight (envTable.OriginalHeight)\n        envTable.OriginalHeight = nil\n    end    \n    \nend\n\n\n\n\n\n",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --play flash animations\n    envTable.FullBarFlash:Play()\n    envTable.BackgroundFlash:Play()\n    \n    --restoring the default size (not required since it already restore in the hide script)\n    if (envTable.OriginalHeight) then\n        self:SetHeight (envTable.OriginalHeight)\n    end\n    \n    --increase the cast bar size\n    local height = self:GetHeight()\n    envTable.OriginalHeight = height\n    \n    self:SetHeight (height + envTable.CastBarHeightAdd)\n    \n    Plater.SetCastBarBorderColor (self, 1, .2, .2, 0.4)\n    \n    self:PlayFrameShake (envTable.FrameShake)\n    \nend\n\n\n\n\n\n\n",
+					["Name"] = "Cast - Big Alert [Plater]",
+					["NpcNames"] = {
+					},
+				}, -- [5]
+				{
+					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow = envTable.Glow or DetailsFramework:CreateGlowOverlay (self)\n    \nend\n\n\n",
+					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow:Stop()\n    \nend\n\n\n",
+					["Temp_OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow:Play()\n    \nend\n\n\n",
+					["ScriptType"] = 1,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["Time"] = 1533836835,
+					["Temp_ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow = envTable.Glow or DetailsFramework:CreateGlowOverlay (self)\n    \nend\n\n\n",
+					["Icon"] = "Interface\\AddOns\\Plater\\images\\icon_aura",
+					["Enabled"] = true,
+					["Revision"] = 200,
+					["Author"] = "Tercioo-Sylvanas",
+					["Desc"] = "Add the buff name in the trigger box.",
+					["Temp_UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["SpellIds"] = {
+					},
+					["PlaterCore"] = 1,
+					["Temp_OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow:Stop()\n    \nend\n\n\n",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Glow:Play()\n    \nend\n\n\n",
+					["Name"] = "Aura - Buff Alert [Plater]",
+					["NpcNames"] = {
+					},
+				}, -- [6]
+			},
+			["target_shady_enabled"] = false,
+			["first_run2"] = true,
+			["plate_config"] = {
+				["player"] = {
+					["health_incombat"] = {
+						205.860107421875, -- [1]
+					},
+					["health"] = {
+						205.860107421875, -- [1]
+					},
+				},
+				["friendlyplayer"] = {
+					["plate_order"] = 1,
+				},
+				["enemynpc"] = {
+					["percent_text_anchor"] = {
+						["side"] = 1,
+					},
+					["plate_order"] = 1,
+					["actorname_text_anchor"] = {
+						["side"] = 9,
+					},
+					["health"] = {
+						nil, -- [1]
+						10.793306350708, -- [2]
+					},
+					["percent_text_ooc"] = true,
+				},
+			},
+			["indicator_raidmark_anchor"] = {
+				["y"] = 0.741641998291016,
+				["x"] = 0.150608062744141,
+				["side"] = 9,
+			},
+			["aura_y_offset"] = 64.5816040039063,
 			["tank"] = {
 				["colors"] = {
+					["anothertank"] = {
+						0, -- [1]
+						0.67843137254902, -- [2]
+						0.976470588235294, -- [3]
+						1, -- [4]
+					},
 					["aggro"] = {
-						0.0588235294117647, -- [1]
-						0.423529411764706, -- [2]
-						0.0392156862745098, -- [3]
+						0.117647058823529, -- [1]
+						0.690196078431373, -- [2]
+						0.0862745098039216, -- [3]
+						1, -- [4]
+					},
+					["pulling"] = {
+						nil, -- [1]
+						nil, -- [2]
+						nil, -- [3]
 						1, -- [4]
 					},
 				},
 			},
+			["health_selection_overlay"] = "Skullflower",
 			["health_statusbar_texture"] = "Skullflower",
-			["target_highlight_alpha"] = 1,
-			["cast_statusbar_color"] = {
-				0, -- [1]
-				1, -- [2]
-				0.0352941176470588, -- [3]
-			},
 			["border_thickness"] = 1,
-			["click_space"] = {
-				111.312927246094, -- [1]
-				30.399471282959, -- [2]
-			},
-			["target_shady_alpha"] = 1,
-			["OptionsPanelDB"] = {
-				["PlaterOptionsPanelFrame"] = {
-					["scale"] = 1.00229716300964,
+			["indicator_raidmark_scale"] = 0.654656767845154,
+			["captured_spells"] = {
+				[83877] = {
+					["source"] = "Temple Swiftstalker",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 48139,
+				},
+				[80610] = {
+					["source"] = "Catherine Leland",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 5494,
+				},
+				[23735] = {
+					["source"] = "Sayge",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 14822,
+				},
+				[75590] = {
+					["source"] = "Twilight Torturer",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 39978,
+				},
+				[156374] = {
+					["npcID"] = 0,
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[90954] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 48505,
+				},
+				[2580] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Drmadnezz-Stormscale",
+					["npcID"] = 0,
+				},
+				[201350] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Nurzum-TwistingNether",
+					["npcID"] = 0,
+				},
+				[13322] = {
+					["source"] = "Rogue Wizard",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 474,
+				},
+				[75846] = {
+					["source"] = "Karsh Steelbender",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 39698,
+				},
+				[195901] = {
+					["source"] = "Baggolas-Frostmane",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[155898] = {
+					["type"] = "BUFF",
+					["source"] = "Oregorger",
+					["npcID"] = 77182,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[207472] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Mahesvra-Kazzak",
+					["npcID"] = 0,
+				},
+				[176458] = {
+					["source"] = "Blacksmithing Follower - Alliance",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 88403,
+				},
+				[223665] = {
+					["source"] = "Sarmienna",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[102351] = {
+					["source"] = "Minitreë",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[246807] = {
+					["source"] = "Oticapsed-BurningLegion",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[90398] = {
+					["source"] = "Defias Squallshaper",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 48521,
+				},
+				[589] = {
+					["source"] = "José-Destromath",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[89697] = {
+					["source"] = "Defias Cannon",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 48266,
+				},
+				[91004] = {
+					["source"] = "Defias Envoker",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 48418,
+				},
+				[246585] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Devlynn Styx",
+					["npcID"] = 121527,
+				},
+				[93857] = {
+					["encounterID"] = "ENCOUNTER_START",
+					["source"] = "Baron Silverlaine",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 3887,
+				},
+				[89538] = {
+					["source"] = "Temple Fireshaper",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 48143,
+				},
+				[185736] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Nunara-TwistingNether",
+					["npcID"] = 0,
+				},
+				[74780] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 40106,
+				},
+				[115804] = {
+					["source"] = "Unknown",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 43296,
+				},
+				[188033] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Nunara-TwistingNether",
+					["npcID"] = 0,
+				},
+				[75817] = {
+					["source"] = "Corla, Herald of Twilight",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 39679,
+				},
+				[75610] = {
+					["source"] = "Corla, Herald of Twilight",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 39679,
+				},
+				[188034] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Zulkrat-C'Thun",
+					["npcID"] = 0,
+				},
+				[91038] = {
+					["source"] = "Mining Monkey",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 48440,
+				},
+				[261730] = {
+					["source"] = "Bilgewater Rigger",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 143673,
+				},
+				[215607] = {
+					["source"] = "Baptism",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[89652] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 48230,
+				},
+				[261764] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Krugar-Kazzak",
+					["npcID"] = 0,
+				},
+				[75054] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 40817,
+				},
+				[175670] = {
+					["type"] = "BUFF",
+					["source"] = "Ironworker",
+					["npcID"] = 87448,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[173471] = {
+					["type"] = "DEBUFF",
+					["source"] = "Oregorger",
+					["npcID"] = 77182,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[248473] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Dropdattotem-Stormscale",
+					["npcID"] = 0,
+				},
+				[215387] = {
+					["source"] = "Baptism",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[235054] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Mercanertesi-TwistingNether",
+					["npcID"] = 0,
+				},
+				[227723] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Zulkrat-C'Thun",
+					["npcID"] = 0,
+				},
+				[88522] = {
+					["type"] = "BUFF",
+					["source"] = "Foe Reaper 5000",
+					["encounterID"] = "ENCOUNTER_START",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 43778,
+				},
+				[8679] = {
+					["source"] = "Norious-Kazzak",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[131493] = {
+					["source"] = "Dkski",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[210320] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Mahesvra-Kazzak",
+					["npcID"] = 0,
+				},
+				[156834] = {
+					["type"] = "BUFF",
+					["source"] = "Oregorger",
+					["npcID"] = 77182,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[74880] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 40170,
+				},
+				[231390] = {
+					["source"] = "Iovin-Ragnaros",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[190909] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[176151] = {
+					["source"] = "Ornchjuz-Ragnaros",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[2383] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Midvinter-Dragonblight",
+					["npcID"] = 0,
+				},
+				[166302] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 77789,
+				},
+				[72968] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Bubih-Ragnaros",
+					["npcID"] = 0,
+				},
+				[232698] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Zîlf-ArgentDawn",
+					["npcID"] = 0,
+				},
+				[88348] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 43778,
+				},
+				[12544] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 62,
+				},
+				[3408] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Drmadnezz-Stormscale",
+					["npcID"] = 0,
+				},
+				[2645] = {
+					["source"] = "Cakayx-Hellfire",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[224125] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 100820,
+				},
+				[92604] = {
+					["source"] = "Vanessa VanCleef",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 49671,
+				},
+				[167898] = {
+					["source"] = "Toførti",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[198817] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Heynx-Ragnaros",
+					["npcID"] = 0,
+				},
+				[224126] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 100820,
+				},
+				[58511] = {
+					["source"] = "Stormwind City Guard",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 68,
+				},
+				[156297] = {
+					["type"] = "DEBUFF",
+					["source"] = "Oregorger",
+					["npcID"] = 77182,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[155819] = {
+					["type"] = "DEBUFF",
+					["source"] = "Oregorger",
+					["npcID"] = 77182,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[242551] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Discopowa-TwistingNether",
+					["npcID"] = 0,
+				},
+				[1459] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Häwk-Kazzak",
+					["npcID"] = 0,
+				},
+				[21562] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Discopowa-TwistingNether",
+					["npcID"] = 0,
+				},
+				[76572] = {
+					["source"] = "Twilight Sadist",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 39980,
+				},
+				[228399] = {
+					["type"] = "BUFF",
+					["source"] = "Unknown",
+					["npcID"] = 0,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[280398] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Palacinkè-Stormscale",
+					["npcID"] = 0,
+				},
+				[150433] = {
+					["source"] = "Azkaal",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[245102] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "Devlynn Styx",
+					["npcID"] = 121527,
+				},
+				[224001] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Zulkrat-C'Thun",
+					["npcID"] = 0,
+				},
+				[48168] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Unknown",
+					["npcID"] = 96955,
+				},
+				[62175] = {
+					["source"] = "Grivix",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[89769] = {
+					["source"] = "Mining Powder",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 48284,
+				},
+				[203538] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Jezusrealone-Kazzak",
+					["npcID"] = 0,
+				},
+				[191840] = {
+					["source"] = "Mongnoje-DunModr",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[211793] = {
+					["source"] = "Odinudar-Stormscale",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[113746] = {
+					["source"] = "Tryhardhero-Ragnaros",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[91561] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 47135,
+				},
+				[209563] = {
+					["source"] = "Dundersnus-Ragnaros",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[183585] = {
+					["source"] = "Maxan Anvol",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 100022,
+				},
+				[81441] = {
+					["source"] = "Millhouse Manastorm",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 43391,
+				},
+				[203539] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Jezusrealone-Kazzak",
+					["npcID"] = 0,
+				},
+				[40120] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Míntyfresh-Stormscale",
+					["npcID"] = 0,
+				},
+				[51714] = {
+					["source"] = "Whiterunner-Kazzak",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[92001] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 48418,
+				},
+				[75697] = {
+					["source"] = "Twilight Zealot",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 50284,
+				},
+				[156779] = {
+					["source"] = "Grivix",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[58514] = {
+					["source"] = "Stormwind City Guard",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 68,
+				},
+				[179750] = {
+					["source"] = "Enaxy",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[101260] = {
+					["source"] = "Darkmoon Faire Mystic Mage",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 54334,
+				},
+				[91077] = {
+					["source"] = "Frantic Geist",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 47131,
+				},
+				[768] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Míntyfresh-Stormscale",
+					["npcID"] = 0,
+				},
+				[236021] = {
+					["source"] = "Cheetahx",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[23738] = {
+					["source"] = "Sayge",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 14822,
+				},
+				[260881] = {
+					["source"] = "Cakayx-Hellfire",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[179252] = {
+					["source"] = "Azkaal",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[173459] = {
+					["npcID"] = 77182,
+					["event"] = "SPELL_CAST_START",
+					["source"] = "Oregorger",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[92100] = {
+					["source"] = "Vanessa VanCleef",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 49429,
+				},
+				[43308] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Zîlf-ArgentDawn",
+					["npcID"] = 0,
+				},
+				[88097] = {
+					["source"] = "Sun-Touched Servant",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 39366,
+				},
+				[96847] = {
+					["source"] = "Toy Cart",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 52359,
+				},
+				[225599] = {
+					["source"] = "Toførti",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[91554] = {
+					["source"] = "Fetid Ghoul",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 47135,
+				},
+				[24450] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Unknown",
+					["npcID"] = 66187,
+				},
+				[75842] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 39698,
+				},
+				[82137] = {
+					["source"] = "Rom'ogg Bonecrusher",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 39665,
+				},
+				[15497] = {
+					["source"] = "Sorcerous Skeleton",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 47140,
+				},
+				[85739] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Zladdé-TwistingNether",
+					["npcID"] = 0,
+				},
+				[108211] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Drmadnezz-Stormscale",
+					["npcID"] = 0,
+				},
+				[156240] = {
+					["npcID"] = 77182,
+					["event"] = "SPELL_CAST_START",
+					["source"] = "Oregorger",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[75077] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 39994,
+				},
+				[188031] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Psychogirl-Kazzak",
+					["npcID"] = 0,
+				},
+				[41635] = {
+					["source"] = "Elunisa",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[164273] = {
+					["source"] = "Iovin-Ragnaros",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[76688] = {
+					["source"] = "Twilight Obsidian Borer",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 40019,
+				},
+				[57724] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "Nunara-TwistingNether",
+					["npcID"] = 0,
+				},
+				[203407] = {
+					["source"] = "Skipta",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[76719] = {
+					["source"] = "Incendiary Spark",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 40021,
+				},
+				[89547] = {
+					["source"] = "Temple Fireshaper",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 48143,
+				},
+				[88736] = {
+					["source"] = "Admiral Ripsnarl",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 47626,
+				},
+				[214222] = {
+					["source"] = "Rajaf",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[82393] = {
+					["source"] = "Ascendant Lord Obsidius",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 39705,
+				},
+				[208693] = {
+					["source"] = "Ashtray-Boulderfist",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[6673] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Zulkrat-C'Thun",
+					["npcID"] = 0,
+				},
+				[80146] = {
+					["source"] = "Moonbrook Thug",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 42677,
+				},
+				[75645] = {
+					["source"] = "Corla, Herald of Twilight",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 39679,
+				},
+				[270070] = {
+					["source"] = "Ashtray-Boulderfist",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[215598] = {
+					["source"] = "Baptism",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[1604] = {
+					["source"] = "Enraged Worgen",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 49532,
+				},
+				[75608] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 50284,
+				},
+				[62179] = {
+					["source"] = "Grivix",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[156179] = {
+					["npcID"] = 77182,
+					["event"] = "SPELL_CAST_START",
+					["source"] = "Oregorger",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[81039] = {
+					["source"] = "Irradiated Slime",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 6218,
+				},
+				[9941] = {
+					["source"] = "Unknown",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 7031,
+				},
+				[76584] = {
+					["source"] = "Twilight Zealot",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 39990,
+				},
+				[89757] = {
+					["source"] = "Defias Cannon",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 48266,
+				},
+				[73963] = {
+					["source"] = "Venomous Skitterer",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 39440,
+				},
+				[80354] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "Dropdattotem-Stormscale",
+					["npcID"] = 0,
+				},
+				[238258] = {
+					["event"] = "SPELL_CAST_START",
+					["source"] = "Thunderstørm-Nemesis",
+					["npcID"] = 0,
+				},
+				[2823] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Drmadnezz-Stormscale",
+					["npcID"] = 0,
+				},
+				[91622] = {
+					["source"] = "Dread Scryer",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 47141,
+				},
+				[118] = {
+					["source"] = "Diablis",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[155256] = {
+					["type"] = "BUFF",
+					["source"] = "Security Guard",
+					["npcID"] = 88818,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = "ENCOUNTER_START",
+				},
+				[774] = {
+					["source"] = "Skipta",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[210391] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Mahesvra-Kazzak",
+					["npcID"] = 0,
+				},
+				[8690] = {
+					["event"] = "SPELL_CAST_START",
+					["source"] = "Darkhadou-Ragnaros",
+					["npcID"] = 0,
+				},
+				[223203] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "Bubih-Ragnaros",
+					["npcID"] = 0,
+				},
+				[245686] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Mahesvra-Kazzak",
+					["npcID"] = 0,
+				},
+				[33763] = {
+					["source"] = "Minitreë",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[192106] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Velii-Kazzak",
+					["npcID"] = 0,
+				},
+				[90938] = {
+					["source"] = "Defias Blood Wizard",
+					["event"] = "SPELL_CAST_START",
+					["npcID"] = 48417,
 				},
 			},
+			["hover_highlight_alpha"] = 0.197514176368713,
 			["border_color"] = {
 				nil, -- [1]
 				nil, -- [2]
 				nil, -- [3]
 				0.150000035762787, -- [4]
 			},
-			["target_shady_enabled"] = false,
+			["aggro_modifies"] = {
+				["border_color"] = true,
+			},
+			["cast_statusbar_bgtexture"] = "Skullflower",
+			["not_affecting_combat_alpha"] = 1,
+			["target_highlight_alpha"] = 0.204900875687599,
 			["first_run"] = true,
+			["auto_toggle_stacking_enabled"] = true,
+			["target_shady_alpha"] = 1,
+			["health_statusbar_bgtexture"] = "Skullflower",
+			["saved_cvars"] = {
+				["ShowClassColorInNameplate"] = "1",
+				["nameplateOverlapV"] = "0.8",
+				["ShowNamePlateLoseAggroFlash"] = "1",
+				["nameplateShowEnemyMinus"] = "1",
+				["nameplatePersonalShowAlways"] = "1",
+				["nameplateMotionSpeed"] = "0.05",
+				["nameplateSelfTopInset"] = "0.79",
+				["nameplateShowFriendlyTotems"] = "0",
+				["nameplateShowEnemyMinions"] = "1",
+				["nameplateShowFriendlyPets"] = "0",
+				["nameplateShowFriendlyNPCs"] = "0",
+				["nameplateSelectedScale"] = "1.15",
+				["nameplatePersonalShowInCombat"] = "1",
+				["nameplatePersonalShowWithTarget"] = "0",
+				["nameplateGlobalScale"] = "1.0",
+				["nameplatePersonalHideDelaySeconds"] = "0.2",
+				["nameplateResourceOnTarget"] = "0",
+				["nameplateMotion"] = "1",
+				["nameplateShowAll"] = "1",
+				["nameplateMinScale"] = "1",
+				["nameplateMaxDistance"] = "50.292678833008",
+				["nameplateShowFriendlyMinions"] = "0",
+				["nameplateSelfScale"] = "1.0",
+				["nameplateSelfBottomInset"] = "0.2",
+				["nameplateOccludedAlphaMult"] = "1",
+				["nameplateShowFriendlyGuardians"] = "0",
+				["nameplateSelfAlpha"] = "0.75",
+				["NamePlateHorizontalScale"] = "1.3999999761581",
+				["nameplateOtherTopInset"] = "0.075",
+				["nameplateShowSelf"] = "0",
+				["NamePlateVerticalScale"] = "2.7000000476837",
+			},
+			["script_auto_imported"] = {
+				["Cast - Small Alert"] = 1,
+				["Aura - Debuff Alert"] = 2,
+				["Fixate"] = 1,
+				["Aura - Buff Alert"] = 2,
+				["Cast - Big Alert"] = 1,
+				["Unit Power"] = 1,
+			},
+			["aura_timer_text_size"] = 7.38273525238037,
+			["click_space"] = {
+				111.312927246094, -- [1]
+				30.399471282959, -- [2]
+			},
+			["OptionsPanelDB"] = {
+				["PlaterOptionsPanelFrame"] = {
+					["scale"] = 1.00229716300964,
+				},
+			},
+			["cast_statusbar_color"] = {
+				0, -- [1]
+				1, -- [2]
+				0.0352941176470588, -- [3]
+			},
 			["dps"] = {
 				["colors"] = {
 					["noaggro"] = {
@@ -55,94 +1245,8 @@ PlaterDB = {
 				},
 			},
 			["cast_statusbar_texture"] = "Skullflower",
-			["aggro_modifies"] = {
-				["border_color"] = true,
-			},
-			["aura_timer"] = false,
-			["health_statusbar_bgtexture"] = "Skullflower",
-			["plate_config"] = {
-				["enemynpc"] = {
-					["health"] = {
-						nil, -- [1]
-						10.793306350708, -- [2]
-					},
-					["percent_text_ooc"] = true,
-				},
-				["player"] = {
-					["health"] = {
-						205.860107421875, -- [1]
-					},
-					["health_incombat"] = {
-						205.860107421875, -- [1]
-					},
-				},
-			},
-			["health_selection_overlay"] = "Skullflower",
-			["cast_statusbar_bgtexture"] = "Skullflower",
 		},
 		["Krixi"] = {
-			["aura_x_offset"] = 0.376930236816406,
-			["target_shady_enabled"] = false,
-			["health_statusbar_bgtexture"] = "Skullflower",
-			["plate_config"] = {
-				["player"] = {
-					["health_incombat"] = {
-						205.860107421875, -- [1]
-					},
-					["health"] = {
-						205.860107421875, -- [1]
-					},
-				},
-				["friendlyplayer"] = {
-					["health"] = {
-						50, -- [1]
-						1, -- [2]
-					},
-				},
-				["enemynpc"] = {
-					["quest_color_enemy"] = {
-						nil, -- [1]
-						0, -- [2]
-						nil, -- [3]
-						1, -- [4]
-					},
-					["cast"] = {
-						115, -- [1]
-						9, -- [2]
-					},
-					["cast_incombat"] = {
-						115, -- [1]
-						9, -- [2]
-					},
-					["level_text_font"] = "Expressway",
-					["spellname_text_font"] = "Expressway",
-					["quest_color_neutral"] = {
-						nil, -- [1]
-						0.976470588235294, -- [2]
-						nil, -- [3]
-						1, -- [4]
-					},
-					["spellname_text_size"] = 12.2575836181641,
-					["actorname_text_anchor"] = {
-						["side"] = 8,
-					},
-					["actorname_text_spacing"] = 9,
-					["percent_text_font"] = "Expressway",
-					["buff_frame_y_offset"] = 2.29557800292969,
-					["quest_enabled"] = false,
-					["actorname_text_font"] = "Expressway",
-					["health_incombat"] = {
-						115, -- [1]
-					},
-					["health"] = {
-						115.362419128418, -- [1]
-						10.793306350708, -- [2]
-					},
-					["actorname_text_size"] = 10,
-					["percent_text_ooc"] = true,
-				},
-			},
-			["aura_y_offset"] = 3.33174133300781,
 			["tank"] = {
 				["colors"] = {
 					["aggro"] = {
@@ -159,35 +1263,33 @@ PlaterDB = {
 					},
 				},
 			},
+			["health_statusbar_texture"] = "Skullflower",
+			["target_highlight_alpha"] = 0,
+			["cast_statusbar_color"] = {
+				0, -- [1]
+				1, -- [2]
+				0.0352941176470588, -- [3]
+			},
+			["aura_x_offset"] = 0.376930236816406,
+			["click_space"] = {
+				116.853546142578, -- [1]
+				23.8171844482422, -- [2]
+			},
 			["border_thickness"] = 1.06486761569977,
+			["target_shady_alpha"] = 0.936327695846558,
+			["OptionsPanelDB"] = {
+				["PlaterOptionsPanelFrame"] = {
+					["scale"] = 1.00229716300964,
+				},
+			},
+			["cast_statusbar_bgtexture"] = "Skullflower",
+			["target_shady_enabled"] = false,
 			["border_color"] = {
 				nil, -- [1]
 				nil, -- [2]
 				nil, -- [3]
 				0.980000000447035, -- [4]
 			},
-			["indicator_anchor"] = {
-				["side"] = 8,
-			},
-			["aggro_modifies"] = {
-				["border_color"] = true,
-			},
-			["target_highlight_alpha"] = 0,
-			["target_shady_alpha"] = 0.936327695846558,
-			["target_shady_combat_only"] = false,
-			["first_run"] = true,
-			["aura_timer"] = false,
-			["cast_statusbar_bgtexture"] = "Skullflower",
-			["click_space"] = {
-				116.853546142578, -- [1]
-				23.8171844482422, -- [2]
-			},
-			["OptionsPanelDB"] = {
-				["PlaterOptionsPanelFrame"] = {
-					["scale"] = 1.00229716300964,
-				},
-			},
-			["health_selection_overlay"] = "Skullflower",
 			["dps"] = {
 				["colors"] = {
 					["noaggro"] = {
@@ -198,13 +1300,77 @@ PlaterDB = {
 					},
 				},
 			},
-			["health_statusbar_texture"] = "Skullflower",
-			["cast_statusbar_texture"] = "Skullflower",
-			["cast_statusbar_color"] = {
-				0, -- [1]
-				1, -- [2]
-				0.0352941176470588, -- [3]
+			["health_statusbar_bgtexture"] = "Skullflower",
+			["indicator_anchor"] = {
+				["side"] = 8,
 			},
+			["target_shady_combat_only"] = false,
+			["aggro_modifies"] = {
+				["border_color"] = true,
+			},
+			["cast_statusbar_texture"] = "Skullflower",
+			["first_run"] = true,
+			["aura_timer"] = false,
+			["plate_config"] = {
+				["player"] = {
+					["health"] = {
+						205.860107421875, -- [1]
+					},
+					["health_incombat"] = {
+						205.860107421875, -- [1]
+					},
+				},
+				["friendlyplayer"] = {
+					["health"] = {
+						50, -- [1]
+						1, -- [2]
+					},
+				},
+				["enemynpc"] = {
+					["spellname_text_font"] = "Expressway",
+					["quest_color_enemy"] = {
+						nil, -- [1]
+						0, -- [2]
+						nil, -- [3]
+						1, -- [4]
+					},
+					["quest_color_neutral"] = {
+						nil, -- [1]
+						0.976470588235294, -- [2]
+						nil, -- [3]
+						1, -- [4]
+					},
+					["actorname_text_size"] = 10,
+					["cast"] = {
+						115, -- [1]
+						9, -- [2]
+					},
+					["percent_text_ooc"] = true,
+					["actorname_text_anchor"] = {
+						["side"] = 8,
+					},
+					["actorname_text_spacing"] = 9,
+					["percent_text_font"] = "Expressway",
+					["buff_frame_y_offset"] = 2.29557800292969,
+					["cast_incombat"] = {
+						115, -- [1]
+						9, -- [2]
+					},
+					["spellname_text_size"] = 12.2575836181641,
+					["health"] = {
+						115.362419128418, -- [1]
+						10.793306350708, -- [2]
+					},
+					["quest_enabled"] = false,
+					["actorname_text_font"] = "Expressway",
+					["level_text_font"] = "Expressway",
+					["health_incombat"] = {
+						115, -- [1]
+					},
+				},
+			},
+			["health_selection_overlay"] = "Skullflower",
+			["aura_y_offset"] = 3.33174133300781,
 		},
 	},
 }

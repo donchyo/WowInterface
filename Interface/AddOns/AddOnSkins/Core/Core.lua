@@ -10,6 +10,8 @@ local sort, tinsert = sort, tinsert
 local _G = _G
 local IsAddOnLoaded, C_Timer = IsAddOnLoaded, C_Timer
 
+local SkinErrors = {}
+
 function AS:CheckOption(optionName, ...)
 	for i = 1, select('#', ...) do
 		local addon = select(i, ...)
@@ -93,7 +95,7 @@ function AS:RemoveNonPetBattleFrames()
 	end
 end
 
-function AS:RegisterSkin(skinName, skinFunc, ...)
+function AS:RegisterSkin(addonName, skinFunc, ...)
 	local events = {}
 	local priority = 1
 	for i = 1, select('#', ...) do
@@ -106,17 +108,17 @@ function AS:RegisterSkin(skinName, skinFunc, ...)
 		end
 	end
 	local registerMe = { func = skinFunc, events = events, priority = priority }
-	if not AS.register[skinName] then AS.register[skinName] = {} end
-	AS.register[skinName][skinFunc] = registerMe
+	if not AS.register[addonName] then AS.register[addonName] = {} end
+	AS.register[addonName][skinFunc] = registerMe
 end
 
-function AS:UnregisterSkin(skinName, skinFunc)
-	if not AS.register[skinName] then return end
+function AS:UnregisterSkin(addonName, skinFunc)
+	if not AS.register[addonName] then return end
 
 	if skinFunc then
-		AS.register[skinName][skinFunc] = nil
+		AS.register[addonName][skinFunc] = nil
 	else
-		AS.register[skinName] = nil
+		AS.register[addonName] = nil
 	end
 end
 
@@ -133,15 +135,15 @@ local function GenerateEventFunction()
 	return eventHandler
 end
 
-function AS:RegisteredSkin(skinName, priority, func, events)
+function AS:RegisteredSkin(addonName, priority, func, events)
 	for c, _ in pairs(events) do
 		if strfind(c, '%[') then
 			local conflict = strmatch(c, '%[([!%w_]+)%]')
 			if AS:CheckAddOn(conflict) then return end
 		end
 	end
-	if not AS.skins[skinName] then AS.skins[skinName] = {} end
-	AS.skins[skinName][priority] = func
+	if not AS.skins[addonName] then AS.skins[addonName] = {} end
+	AS.skins[addonName][priority] = func
 	for event, _ in pairs(events) do
 		if not strfind(event, '%[') then
 			if not AS.events[event] then
@@ -149,13 +151,13 @@ function AS:RegisteredSkin(skinName, priority, func, events)
 				AS:RegisterEvent(event)
 				AS.events[event] = {}
 			end
-			AS.events[event][skinName] = true
+			AS.events[event][addonName] = true
 		end
 	end
 end
 
-function AS:RegisterForPreload(skinName, skinFunc, addonName)
-	AS.preload[addonName] = { func = skinFunc, addon = skinName }
+function AS:RegisterForPreload(addonName, skinFunc)
+	AS.preload[addonName] = { func = skinFunc }
 end
 
 function AS:RunPreload(addonName)
@@ -164,32 +166,40 @@ function AS:RunPreload(addonName)
 	end
 end
 
-function AS:CallSkin(skin, func, event, ...)
+function AS:CallSkin(addonName, func, event, ...)
 	if (AS:CheckOption('SkinDebug')) then
 		func(self, event, ...)
 	else
 		local pass = pcall(func, self, event, ...)
 		if not pass then
-			DEFAULT_CHAT_FRAME:AddMessage(format('%s %s: |cfFFF0000There was an error in the|r |cff0AFFFF%s|r |cffFF0000skin|r.', AS.Title, AS.Version, skin))
-			AS.FoundError = true
+			local String = AS:CheckAddOn(addonName) and format('%s %s', addonName, GetAddOnMetadata(addonName, 'Version')) or addonName
+
+			-- Disable Bad Skin
+			AddOnSkinsDS[AS.Version] = AddOnSkinsDS[AS.Version] or {}
+			AddOnSkinsDS[AS.Version][addonName] = true
+			AS:SetOption(addonName, false)
+
+			if AS.RunOnce then
+				AS:AcceptFrame(format('%s %s: There was an error in the following skin: %s\n\nMake sure all AddOns are up to date before reporting.\n\nMake sure it has not been reported already.\n\nIf not... report to Azilroka immediately @ %s', AS.Title, AS.Version, String, AS:PrintURL(AS.TicketTracker)))
+				AS:Print(AS:PrintURL(AS.TicketTracker)) 
+			else
+				tinsert(SkinErrors, String)
+				AS.FoundError = true
+			end
 		end
 	end
 end
 
-function AS:UnregisterSkinEvent(skinName, event)
+function AS:UnregisterSkinEvent(addonName, event)
 	if not AS.events[event] then return end
-	if not AS.events[event][skinName] then return end
-	AS.events[event][skinName] = nil
-	local found = false
-	for skin,_ in pairs(AS.events[event]) do
-		if skin then
-			found = true
-			break
+	if not AS.events[event][addonName] then return end
+	AS.events[event][addonName] = nil
+	for addonName, _ in pairs(AS.events[event]) do
+		if addonName then
+			return
 		end
 	end
-	if not found then
-		AS:UnregisterEvent(event)
-	end
+	AS:UnregisterEvent(event)
 end
 
 function AS:StartSkinning(event)
@@ -200,94 +210,51 @@ function AS:StartSkinning(event)
 	AS.Mult = 768 / AS.ScreenHeight / UIParent:GetScale()
 	AS.ParchmentEnabled = AS:CheckOption('Parchment')
 
-	for skin, alldata in pairs(AS.register) do
+	for addonName, alldata in pairs(AS.register) do
 		for _, data in pairs(alldata) do
-			AS:RegisteredSkin(skin, data.priority, data.func, data.events)
+			AS:RegisteredSkin(addonName, data.priority, data.func, data.events)
 		end
 	end
 
-	for skin, funcs in AS:OrderedPairs(AS.skins) do
-		if AS:CheckAddOn('ElvUI') and AS:GetElvUIBlizzardSkinOption(skin) then
-			AS:SetOption(skin, false)
-		end
-
-		if AS:CheckOption(skin) then
-			for _, func in ipairs(funcs) do
-				AS:CallSkin(skin, func, event)
+	if not AS:CheckOption('SkinDebug') then
+		for Version, SkinTable in pairs(AddOnSkinsDS) do
+			if Version == AS.Version or Version < AS.Version then
+				for addonName, _ in pairs(SkinTable) do
+					AS:SetOption(addonName, (Version == AS.Version and false or true))
+				end
+				if Version < AS.Version then
+					AddOnSkinsDS[Version] = nil
+				end
 			end
 		end
 	end
 
-	if AS:CheckAddOn('AddonLoader') then
-		AS:AcceptFrame('AddOnSkins is not compatible with AddonLoader.\nPlease remove it if you would like all the skins to function.', function(self) self:GetParent():Hide() end)
-	end
+	for addonName, funcs in AS:OrderedPairs(AS.skins) do
+		if AS:CheckAddOn('ElvUI') and AS:GetElvUIBlizzardSkinOption(addonName) then
+			AS:SetOption(addonName, false)
+		end
 
-	if AS.FoundError then
-		AS:Print(format('%s: Please report this to Azilroka immediately @ %s', AS.Version, AS:PrintURL(AS.TicketTracker)))
-	end
-end
-
-function AS:BuildProfile()
-	local Defaults = {
-		profile = {
-		-- Embeds
-			['EmbedOoC'] = false,
-			['EmbedOoCDelay'] = 10,
-			['EmbedCoolLine'] = false,
-			['EmbedSexyCooldown'] = false,
-			['EmbedSystem'] = false,
-			['EmbedSystemDual'] = false,
-			['EmbedMain'] = 'Details',
-			['EmbedLeft'] = 'Details',
-			['EmbedRight'] = 'Details',
-			['EmbedRightChat'] = true,
-			['EmbedLeftWidth'] = 200,
-			['EmbedBelowTop'] = false,
-			['TransparentEmbed'] = false,
-			['EmbedIsHidden'] = false,
-			['EmbedFrameStrata'] = '3-MEDIUM',
-			['EmbedFrameLevel'] = 10,
-		-- Misc
-			['RecountBackdrop'] = true,
-			['SkadaBackdrop'] = true,
-			['OmenBackdrop'] = true,
-			['DetailsBackdrop'] = true,
-			['MiscFixes'] = true,
-			['DBMSkinHalf'] = false,
-			['DBMFont'] = 'Arial Narrow',
-			['DBMFontSize'] = 12,
-			['DBMFontFlag'] = 'OUTLINE',
-			['DBMRadarTrans'] = false,
-			['WeakAuraAuraBar'] = false,
-			['WeakAuraIconCooldown'] = false,
-			['SkinTemplate'] = 'Transparent',
-			['HideChatFrame'] = 'NONE',
-			['Parchment'] = false,
-			['SkinDebug'] = false,
-			['LoginMsg'] = true,
-			['EmbedSystemMessage'] = true,
-			['ElvUISkinModule'] = false,
-			['ThinBorder'] = false,
-		},
-	}
-
-	for skin in pairs(AS.register) do
-		if AS:CheckAddOn('ElvUI') and strfind(skin, 'Blizzard_') then
-			Defaults.profile[skin] = false
-		else
-			Defaults.profile[skin] = true
+		if AS:CheckOption(addonName) then
+			for _, func in ipairs(funcs) do
+				AS:CallSkin(addonName, func, event)
+			end
 		end
 	end
 
-	self.data = LibStub('AceDB-3.0'):New('AddOnSkinsDB', Defaults)
+	if AS:CheckAddOn('ElvUI') then
+		ElvUI[1]:UpdateCooldownSettings('global')
+	end
 
-	self.data.RegisterCallback(AS, 'OnProfileChanged', 'SetupProfile')
-	self.data.RegisterCallback(AS, 'OnProfileCopied', 'SetupProfile')
-	self.db = self.data.profile
-end
+	if AS:CheckAddOn('AddonLoader') then
+		AS:AcceptFrame('AddOnSkins is not compatible with AddonLoader.\nPlease remove it if you would like all the skins to function.')
+	end
 
-function AS:SetupProfile()
-	self.db = self.data.profile
+	if AS.FoundError then
+		AS:AcceptFrame(format('%s %s: There was an error in the following skin: %s\n\nMake sure all AddOns are up to date before reporting.\n\nMake sure it has not been reported already.\n\nIf not... report to Azilroka immediately @ %s', AS.Title, AS.Version, table.concat(SkinErrors, ", "), AS:PrintURL(AS.TicketTracker)))
+		AS:Print(AS:PrintURL(AS.TicketTracker))
+	end
+
+	AS.RunOnce = true
 end
 
 function AS:Init(event, addon)
@@ -345,7 +312,7 @@ function AS:AcceptFrame(MainText, Function)
 	end
 	AcceptFrame.Text:SetText(MainText)
 	AcceptFrame:SetSize(AcceptFrame.Text:GetStringWidth() + 100, AcceptFrame.Text:GetStringHeight() + 60)
-	AcceptFrame.Accept:SetScript('OnClick', Function)
+	AcceptFrame.Accept:SetScript('OnClick', Function or function(self) AcceptFrame:Hide() end)
 	AcceptFrame:Show()
 end
 

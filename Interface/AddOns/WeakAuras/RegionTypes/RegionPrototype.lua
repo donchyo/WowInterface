@@ -3,6 +3,12 @@ local L = WeakAuras.L;
 
 WeakAuras.regionPrototype = {};
 
+-- Alpha
+
+function WeakAuras.regionPrototype.AddAlphaToDefault(default)
+  default.alpha = 1.0;
+end
+
 -- Adjusted Duration
 
 function WeakAuras.regionPrototype.AddAdjustedDurationToDefault(default)
@@ -67,7 +73,7 @@ end
 -- Sound / Chat Message / Custom Code
 local screenWidth, screenHeight = math.ceil(GetScreenWidth() / 20) * 20, math.ceil(GetScreenHeight() / 20) * 20;
 
-function WeakAuras.regionPrototype.AddProperties(properties)
+function WeakAuras.regionPrototype.AddProperties(properties, defaultsForRegion)
   properties["sound"] = {
     display = L["Sound"],
     action = "SoundPlay",
@@ -99,6 +105,18 @@ function WeakAuras.regionPrototype.AddProperties(properties)
     softMax = screenHeight,
     bigStep = 1
   }
+
+  if (defaultsForRegion and defaultsForRegion.alpha) then
+    properties["alpha"] = {
+      display = L["Alpha"],
+      setter = "SetAlpha",
+      type = "number",
+      min = 0,
+      max = 1,
+      bigStep = 0.01,
+      isPercent = true
+    }
+  end
 end
 
 local function SoundRepeatStop(self)
@@ -259,7 +277,11 @@ end
 -- SetDurationInfo
 
 function WeakAuras.regionPrototype.modify(parent, region, data)
+
   local defaultsForRegion = WeakAuras.regionTypes[data.regionType] and WeakAuras.regionTypes[data.regionType].default;
+  if (defaultsForRegion and defaultsForRegion.alpha) then
+    region:SetAlpha(data.alpha);
+  end
   local hasAdjustedMin = defaultsForRegion and defaultsForRegion.useAdjustededMin ~= nil and data.useAdjustededMin;
   local hasAdjustedMax = defaultsForRegion and defaultsForRegion.useAdjustededMax ~= nil and data.useAdjustededMax;
 
@@ -524,7 +546,7 @@ function WeakAuras.regionPrototype.SetTextOnText(text, str)
   text:SetWidth(0); -- This makes the text use its internal text size calculation
   text:SetText(str);
   local w = text:GetWidth();
-  w = w + max(5, w / 40);
+  w = w + max(15, w / 20);
   text:SetWidth(w); -- But that internal text size calculation is wrong, see ticket 1014
 end
 

@@ -1,5 +1,8 @@
 local bdCore, c, f = select(2, ...):unpack()
 
+-- better to kill things with one func ref
+function bdCore:noop() return end
+
 -- get media
 function bdCore:getMedia(type, name)
 	if (type == "font") then
@@ -453,12 +456,14 @@ function bdCore:setBackdrop(frame,resize)
 	frame.background:SetTexture(bdCore.media.flat)
 	frame.background:SetAllPoints(frame)
 	frame.background:SetVertexColor(unpack(bdCore.media.backdrop))
+	frame.background.protected = true
 	
 	frame.border = frame:CreateTexture(nil, "BACKGROUND", nil, -8)
 	frame.border:SetTexture(bdCore.media.flat)
 	frame.border:SetPoint("TOPLEFT", frame, "TOPLEFT", -2, 2)
 	frame.border:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 2, -2)
 	frame.border:SetVertexColor(unpack(bdCore.media.border))
+	frame.border.protected = true
 	
 	if (resize ~= false) then
 		bdCore:hookEvent("bdcore_redraw",function()
@@ -552,7 +557,7 @@ function bdCore:isBlacklisted(name,caster)
 end
 
 -- filter debuffs/buffs
-function bdCore:filterAura(name,caster,invert)
+function bdCore:filterAura(name, caster, invert)
 	--local name = string.lower(name)
 	local blacklist = BD_persistent["Auras"]["blacklist"]
 	local whitelist = BD_persistent["Auras"]["whitelist"]

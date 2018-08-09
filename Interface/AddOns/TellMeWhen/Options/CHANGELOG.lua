@@ -4,6 +4,25 @@ TMW.CHANGELOG_LASTVER="7.4.0"
 
 TMW.CHANGELOG = [==[
 
+===v8.5.2===
+* Includes latest LibDogTag-Unit with fixes for [SoulShardParts] and others.
+* Updated Guardian icon type for 8.0 Warlock changes.
+* Back by popular demand, DR reset duration is now an icon-specific setting, and once again defaults to 18.
+
+====Bug Fixes====
+* Fixed #1534 - Attempt to register unknown event "WORLD_MAP_UPDATE"
+* Fixed cusor position in tall textboxes sometimes being incorrect due to a Blizzard bug with FontString:SetSpacing()
+* Fixed handling of pipe characters in export strings.
+
+===v8.5.1===
+* Changed DR reset duration to 20 seconds from 18 to increase consistency.
+
+====Bug Fixes====
+* Fixed #1509 - "Couldn't open Interface/AddOns/TellMeWhen_Options/"
+* Fixed #1507 - Attempt to register unknown event "UNIT_VEHICLE"
+* Fixed #1521 - ComponentsCoreUtils.lua line 574: attempt to index local 'str' (a nil value)
+
+
 ===v8.5.0===
 * Battle For Azeroth support. Please report bugs to https://wow.curseforge.com/projects/tellmewhen/issues. 
 ** I especially need help with the spell equivalencies (e.g. "Stunned", "DefensiveBuffs", etc.)
