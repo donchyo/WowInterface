@@ -89,7 +89,7 @@ VWQL = {
 		["Filter"] = 8,
 	},
 	["Bawsie-GrimBatol"] = {
-		["VERSION"] = 70,
+		["VERSION"] = 81,
 		["Filter"] = 63,
 		["Quests"] = {
 			[43943] = true,
@@ -101,15 +101,94 @@ VWQL = {
 		},
 	},
 	["Zetiz-GrimBatol"] = {
-		["VERSION"] = 70,
-		["Filter"] = 63,
-		["Quests"] = {
-			[43943] = true,
-			[45379] = true,
-			[40299] = true,
-		},
 		["FilterType"] = {
 		},
+		["VERSION"] = 81,
+		["Quests"] = {
+			[51655] = true,
+			[48615] = true,
+			[42015] = true,
+			[44817] = true,
+			[49397] = true,
+			[42797] = true,
+			[51699] = true,
+			[51588] = true,
+			[52862] = true,
+			[50961] = true,
+			[51092] = true,
+			[52874] = true,
+			[52878] = true,
+			[52120] = true,
+			[51501] = true,
+			[47953] = true,
+			[51894] = true,
+			[50501] = true,
+			[42123] = true,
+			[48358] = true,
+			[53188] = true,
+			[42159] = true,
+			[51565] = true,
+			[51617] = true,
+			[51633] = true,
+			[50875] = true,
+			[50756] = true,
+			[42636] = true,
+			[48867] = true,
+			[51919] = true,
+			[44811] = true,
+			[51550] = true,
+			[49800] = true,
+			[43327] = true,
+			[49054] = true,
+			[44744] = true,
+			[52880] = true,
+			[51106] = true,
+			[51630] = true,
+			[50491] = true,
+			[51781] = true,
+			[51658] = true,
+			[52297] = true,
+			[51412] = true,
+			[51804] = true,
+			[52937] = true,
+			[43943] = true,
+			[51821] = true,
+			[52168] = true,
+			[51636] = true,
+			[51706] = true,
+			[41931] = true,
+			[52011] = true,
+			[43512] = true,
+			[52964] = true,
+			[52751] = true,
+			[51099] = true,
+			[51988] = true,
+			[51611] = true,
+			[42090] = true,
+			[44938] = true,
+			[43121] = true,
+			[42623] = true,
+			[52144] = true,
+			[51155] = true,
+			[51639] = true,
+			[45379] = true,
+			[51034] = true,
+		},
+		["Filter"] = 63,
+	},
+	["Krixirogue-Ravencrest"] = {
+		["VERSION"] = 81,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+			[54167] = true,
+			[51693] = true,
+			[45379] = true,
+			[50969] = true,
+			[43943] = true,
+			[51179] = true,
+		},
+		["Filter"] = 63,
 	},
 	["Sort"] = 4,
 	["Namji-GrimBatol"] = {
@@ -184,13 +263,6 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Krixidruid-ValleyofHeroes-EU"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
 	["Tomesfour-Aggra(Português)"] = {
 		["FilterType"] = {
 		},
@@ -198,12 +270,86 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
+	["Krixidruid-ValleyofHeroes-EU"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["Dumbgoat-Ravencrest"] = {
+		["VERSION"] = 80,
+		["Filter"] = 63,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Krixidk-GrimBatol"] = {
+		["FilterType"] = {
+			["dung"] = false,
+			["pvp"] = false,
+		},
+		["bountyIgnoreFilter"] = false,
+		["Quests"] = {
+			[42859] = true,
+			[46766] = true,
+			[43605] = true,
+			[44939] = true,
+			[42151] = true,
+			[45934] = true,
+			[46865] = true,
+			[43798] = true,
+			[44884] = true,
+			[43614] = true,
+			[42652] = true,
+			[45973] = true,
+			[46160] = true,
+			[46175] = true,
+			[46825] = true,
+			[45744] = true,
+			[41308] = true,
+			[44759] = true,
+			[41950] = true,
+			[46075] = true,
+			[46261] = true,
+			[41705] = true,
+			[45922] = true,
+			[43710] = true,
+			[45924] = true,
+			[42277] = true,
+			[41958] = true,
+			[46113] = true,
+			[43943] = true,
+		},
+		["Filter"] = 2,
+	},
 	["Daimtårta-Aggra(Português)"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
 		["Filter"] = 63,
+	},
+	["Kroxi-Ravencrest"] = {
+		["Filter"] = 63,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+			[51577] = true,
+			[51931] = true,
+			[54167] = true,
+			[51632] = true,
+			[52856] = true,
+			[51185] = true,
+			[51103] = true,
+			[51035] = true,
+			[51853] = true,
+			[51156] = true,
+			[51097] = true,
+		},
+		["VERSION"] = 81,
 	},
 	["Greenzuriz-Aggra(Português)"] = {
 		["FilterType"] = {
@@ -213,6 +359,7 @@ VWQL = {
 		["Filter"] = 63,
 	},
 	["AzeriteFormat"] = 20,
+	["AnchorQCBLeft"] = 1155.77819824219,
 	["Krixiwarrior-ValleyofHeroes-EU"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -222,16 +369,38 @@ VWQL = {
 	},
 	["Krixiqt-Ravencrest"] = {
 		["Filter"] = 63,
+		["VERSION"] = 81,
+		["Quests"] = {
+			[52376] = true,
+			[51697] = true,
+			[49994] = true,
+			[52196] = true,
+			[52352] = true,
+			[45379] = true,
+			[51855] = true,
+			[52047] = true,
+			[51707] = true,
+			[51617] = true,
+			[52794] = true,
+			[51710] = true,
+			[51699] = true,
+			[51092] = true,
+			[51527] = true,
+			[52218] = true,
+			[51467] = true,
+			[51841] = true,
+			[51779] = true,
+			[52339] = true,
+			[51781] = true,
+			[51317] = true,
+			[51839] = true,
+			[52869] = true,
+			[52126] = true,
+			[43943] = true,
+			[52872] = true,
+		},
 		["FilterType"] = {
 		},
-		["Quests"] = {
-			[53497] = true,
-			[43601] = true,
-			[41421] = true,
-			[43943] = true,
-			[45379] = true,
-		},
-		["VERSION"] = 70,
 	},
 	["Kriximonk-ValleyofHeroes-EU"] = {
 		["Filter"] = 63,
@@ -298,7 +467,7 @@ VWQL = {
 		},
 	},
 	["Gnomalock-GrimBatol"] = {
-		["VERSION"] = 63,
+		["VERSION"] = 81,
 		["Filter"] = 63,
 		["Quests"] = {
 			[44894] = true,
@@ -333,65 +502,42 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Petsxz-Aggra(Português)"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["ShellGameSize"] = 260.88916015625,
+	["Kriximonk-Ravencrest"] = {
 		["FilterType"] = {
 		},
-	},
-	["AnchorQCBLeft"] = 1356.66687011719,
-	["Tomesone-Aggra(Português)"] = {
-		["Filter"] = 63,
+		["VERSION"] = 81,
 		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
-	["Krixikin-GrimBatol"] = {
-		["VERSION"] = 69,
-		["FilterType"] = {
-		},
-		["Quests"] = {
-			[41926] = true,
-			[43248] = true,
-			[42150] = true,
-			[43943] = true,
-			[41416] = true,
-			[42013] = true,
-			[42004] = true,
-			[42025] = true,
-			[42633] = true,
-			[43601] = true,
-			[45379] = true,
-			[44892] = true,
-			[41944] = true,
-			[42178] = true,
-			[42176] = true,
-			[44893] = true,
+			[42270] = true,
+			[51697] = true,
+			[49994] = true,
+			[52196] = true,
+			[52352] = true,
+			[52376] = true,
+			[51617] = true,
+			[52126] = true,
+			[52047] = true,
+			[51707] = true,
+			[52869] = true,
+			[52794] = true,
+			[51710] = true,
+			[52872] = true,
+			[51092] = true,
+			[41421] = true,
+			[51839] = true,
+			[51467] = true,
+			[48957] = true,
+			[51779] = true,
+			[51841] = true,
+			[51781] = true,
+			[51317] = true,
+			[51527] = true,
+			[52218] = true,
+			[44934] = true,
+			[51855] = true,
+			[51699] = true,
 		},
 		["Filter"] = 63,
-	},
-	["AnchorQCBTop"] = 512.666931152344,
-	["Zuriz-GrimBatol"] = {
-		["VERSION"] = 69,
-		["Filter"] = 63,
-		["bountyIgnoreFilter"] = false,
-		["Quests"] = {
-			[42652] = true,
-			[43328] = true,
-			[41821] = true,
-			[43943] = true,
-			[45626] = true,
-			[45379] = true,
-			[44892] = true,
-			[46198] = true,
-			[43183] = true,
-			[46932] = true,
-			[41416] = true,
-		},
-		["FilterType"] = {
-		},
 	},
 	["Donchyo-ShatteredHand"] = {
 		["FilterType"] = {
@@ -400,7 +546,46 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Krixidh-ValleyofHeroes-EU"] = {
+	["Tomesone-Aggra(Português)"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Krixidh-Ravencrest"] = {
+		["FilterType"] = {
+		},
+		["VERSION"] = 81,
+		["Quests"] = {
+			[51034] = true,
+			[54167] = true,
+		},
+		["Filter"] = 63,
+	},
+	["AnchorQCBTop"] = 476.222320556641,
+	["Zuriz-GrimBatol"] = {
+		["VERSION"] = 81,
+		["Filter"] = 63,
+		["bountyIgnoreFilter"] = false,
+		["Quests"] = {
+			[43943] = true,
+			[45379] = true,
+			[46198] = true,
+		},
+		["FilterType"] = {
+		},
+	},
+	["Kriximonk-GrimBatol"] = {
+		["Filter"] = 63,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+			[40277] = true,
+		},
+		["VERSION"] = 66,
+	},
+	["Spacegoatx-Aggra(Português)"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -414,91 +599,10 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Spacegoatx-Aggra(Português)"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
-	["Krixidh-Ravencrest"] = {
+	["Krixicx-ShatteredHand"] = {
 		["VERSION"] = 70,
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
 		["Filter"] = 63,
-	},
-	["Donch-ShatteredHand"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
-	["Treefiddy-Aggra(Português)"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
-	["Krixidk-GrimBatol"] = {
-		["FilterType"] = {
-			["dung"] = false,
-			["pvp"] = false,
-		},
-		["bountyIgnoreFilter"] = false,
-		["Quests"] = {
-			[42859] = true,
-			[46766] = true,
-			[43605] = true,
-			[44939] = true,
-			[42151] = true,
-			[45934] = true,
-			[46865] = true,
-			[43798] = true,
-			[44884] = true,
-			[43614] = true,
-			[42652] = true,
-			[45973] = true,
-			[46160] = true,
-			[46175] = true,
-			[46825] = true,
-			[45744] = true,
-			[41308] = true,
-			[44759] = true,
-			[41950] = true,
-			[46075] = true,
-			[46261] = true,
-			[41705] = true,
-			[45922] = true,
-			[43710] = true,
-			[45924] = true,
-			[42277] = true,
-			[41958] = true,
-			[46113] = true,
-			[43943] = true,
-		},
-		["Filter"] = 2,
-	},
-	["Krixidk-Ravencrest"] = {
-		["Filter"] = 63,
-		["FilterType"] = {
-		},
-		["Quests"] = {
-			[43798] = true,
-			[41980] = true,
-			[45379] = true,
-			[43943] = true,
-			[43248] = true,
-			[43327] = true,
-			[42785] = true,
-		},
-		["VERSION"] = 70,
-	},
-	["Daroislost-ValleyofHeroes-EU"] = {
-		["Filter"] = 63,
+		["RegularQuestMode"] = true,
 		["Quests"] = {
 		},
 		["FilterType"] = {
@@ -511,6 +615,20 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
+	["Treefiddy-Aggra(Português)"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Krixidh-ValleyofHeroes-EU"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
 	["Tomestwo-Aggra(Português)"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -518,7 +636,79 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["VERSION"] = 70,
+	["Daroislost-ValleyofHeroes-EU"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Krixidk-Ravencrest"] = {
+		["FilterType"] = {
+		},
+		["Filter"] = 63,
+		["Quests"] = {
+			[51617] = true,
+			[41421] = true,
+			[43943] = true,
+			[41551] = true,
+			[51131] = true,
+			[51450] = true,
+			[50507] = true,
+			[52779] = true,
+			[51710] = true,
+			[52218] = true,
+			[51779] = true,
+			[51781] = true,
+			[42270] = true,
+			[51157] = true,
+			[43599] = true,
+			[50846] = true,
+			[52047] = true,
+			[43798] = true,
+			[44934] = true,
+			[52937] = true,
+			[45379] = true,
+			[51114] = true,
+			[52250] = true,
+			[44194] = true,
+			[49994] = true,
+			[44893] = true,
+			[51699] = true,
+			[51642] = true,
+			[51081] = true,
+			[51839] = true,
+			[51841] = true,
+			[51467] = true,
+			[52794] = true,
+			[51855] = true,
+			[52376] = true,
+			[51099] = true,
+			[52869] = true,
+			[51317] = true,
+			[44746] = true,
+			[51527] = true,
+			[51933] = true,
+		},
+		["VERSION"] = 81,
+	},
+	["Memeinhaler-Ravencrest"] = {
+		["VERSION"] = 75,
+		["Filter"] = 63,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["VERSION"] = 81,
+	["Lilgaykrixi-Kazzak"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
 	["Krixiyo-TwistingNether"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -528,13 +718,6 @@ VWQL = {
 	},
 	["DisableRewardIcons"] = true,
 	["DisableArrow"] = true,
-	["Lilgaykrixi-Kazzak"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
 	["Donch-GrimBatol"] = {
 		["FilterType"] = {
 		},
@@ -608,23 +791,7 @@ VWQL = {
 			[43175] = true,
 			[48983] = true,
 		},
-		["VERSION"] = 70,
-	},
-	["Bawsi-ShatteredHand"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
-	["Krixicx-ShatteredHand"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
-	["Ignore"] = {
+		["VERSION"] = 81,
 	},
 	["Krixi-GrimBatol"] = {
 		["Filter"] = 63,
@@ -678,15 +845,24 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Kriximonk-GrimBatol"] = {
-		["Filter"] = 63,
+	["Bawsi-ShatteredHand"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
-			[40277] = true,
 		},
-		["VERSION"] = 66,
+		["Filter"] = 63,
 	},
+	["Donch-ShatteredHand"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Ignore"] = {
+	},
+	["ShellGameCenter"] = 25.0000610351563,
+	["DisableIconsGeneralMap947"] = true,
 	["Krixidk-ValleyofHeroes-EU"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -696,7 +872,7 @@ VWQL = {
 		},
 	},
 	["Zolution-GrimBatol"] = {
-		["VERSION"] = 69,
+		["VERSION"] = 81,
 		["Filter"] = 63,
 		["Quests"] = {
 			[42442] = true,
@@ -705,38 +881,41 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["DisableIconsGeneralMap947"] = true,
+	["Petsxz-Aggra(Português)"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Krixikin-GrimBatol"] = {
+		["VERSION"] = 81,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+			[43943] = true,
+			[44893] = true,
+			[42013] = true,
+			[45379] = true,
+		},
+		["Filter"] = 63,
+	},
+	["Kroxi-GrimBatol"] = {
+		["VERSION"] = 81,
+		["Filter"] = 4,
+		["Quests"] = {
+			[43943] = true,
+			[51579] = true,
+			[52010] = true,
+		},
+		["FilterType"] = {
+		},
+	},
 	["Tomesonecx-Aggra(Português)"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
 		["Filter"] = 63,
-	},
-	["Kroxi-GrimBatol"] = {
-		["FilterType"] = {
-		},
-		["Filter"] = 4,
-		["Quests"] = {
-			[42062] = true,
-			[42176] = true,
-			[42969] = true,
-			[44892] = true,
-			[45934] = true,
-			[46113] = true,
-			[43943] = true,
-			[41257] = true,
-		},
-		["VERSION"] = 69,
-	},
-	["Kriximonk-Ravencrest"] = {
-		["Filter"] = 63,
-		["FilterType"] = {
-		},
-		["Quests"] = {
-			[41421] = true,
-			[52307] = true,
-		},
-		["VERSION"] = 70,
 	},
 }

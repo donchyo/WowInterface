@@ -54,7 +54,7 @@ Details_DmgRank: disabled
 Details_DpsTuning: disabled
 Details_EncounterDetails: disabled
 Details_RaidCheck: disabled
-Details_DataStorage: enabled
+Details_DataStorage: disabled
 Details_TimeAttack: disabled
 Details_TinyThreat: disabled
 Details_YouAreNotPrepared: disabled
@@ -94,8 +94,8 @@ infCombatRess: disabled
 Details: enabled
 +Wowhead_Looter: disabled
 Chatter: enabled
-MSBTOptions: disabled
-MikScrollingBattleText: disabled
+MSBTOptions: enabled
+MikScrollingBattleText: enabled
 AutoTitle_ElvUI_LDB: enabled
 EveryGoldToBanker: disabled
 Accountant: disabled
@@ -128,7 +128,7 @@ infBrewmaster: disabled
 infChi: disabled
 infMinimap: disabled
 TradeSkillMaster_ItemTracker: disabled
-DeathNote: enabled
+DeathNote: disabled
 Broker_Auditor: disabled
 Auditor2: disabled
 infDCBuyout: disabled
@@ -175,7 +175,7 @@ Altoholic_Search: disabled
 Altoholic_Summary: disabled
 AngryAssignments: disabled
 ArmoryQuickLink: disabled
-Auctionator: enabled
+Auctionator: disabled
 AuraFrames: disabled
 AuraFramesConfig: disabled
 AutoLootPlus: enabled
@@ -274,13 +274,13 @@ PitBull4_Sounds: disabled
 PitBull4_ThreatBar: disabled
 PitBull4_VisualHeal: disabled
 PitBull4_VoiceIcon: disabled
-Postal: disabled
+Postal: enabled
 Quester: enabled
 QuickTalents: disabled
 QuickQuest: disabled
 Rarity: disabled
 Rarity_Options: disabled
-RCLootCouncil: disabled
+RCLootCouncil: enabled
 SafeQueue: disabled
 SavedInstances: enabled
 SellOMatic2: disabled
@@ -404,7 +404,7 @@ BigDebuffs: disabled
 BigWigs_Uldir: enabled
 BrewmasterTools: disabled
 Ace3: disabled
-MethodDungeonTools: disabled
+MethodDungeonTools: enabled
 MoveTalkingHead: disabled
 OPie: disabled
 RaiderIO_DB_US_H: disabled
@@ -415,7 +415,7 @@ RaiderIO_DB_TW_H: disabled
 Reflux: disabled
 rLib: disabled
 rObjectiveTracker: disabled
-Simulationcraft: disabled
+Simulationcraft: enabled
 ViragDevTool: enabled
 !!Warmup: disabled
 WorldQuestTracker: enabled
@@ -426,3 +426,8 @@ bdCore: disabled
 StayUnsheathed: disabled
 Masque_ElvUIesque: disabled
 AddOnSkins: enabled
+Azeroth Auto Pilot: disabled
+AutoTurnIn: enabled
+ElvUI_EverySecondCounts: disabled
+BigWigs_Azeroth: enabled
+AtlasLoot_BattleforAzeroth: disabled

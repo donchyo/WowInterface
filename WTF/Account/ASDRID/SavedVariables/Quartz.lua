@@ -33,14 +33,14 @@ Quartz3DB = {
 					["timetextx"] = 0,
 					["scale"] = 0.7,
 					["w"] = 212,
-					["x"] = 786.348571777344,
-					["y"] = 154.984527587891,
 					["h"] = 25,
+					["y"] = 154.984527587891,
+					["x"] = 786.348571777344,
 					["fontsize"] = 12,
 					["iconalpha"] = 1,
-					["font"] = "Expressway",
-					["nametextx"] = 0,
 					["border"] = "Details BarBorder 3",
+					["nametextx"] = 0,
+					["font"] = "Expressway",
 					["texture"] = "Skullflower",
 				},
 				["Krixi"] = {
@@ -48,14 +48,14 @@ Quartz3DB = {
 					["h"] = 25,
 					["w"] = 212,
 					["y"] = 146.095657348633,
-					["font"] = "Expressway",
+					["x"] = 729.205871582031,
 					["iconalpha"] = 1,
 					["scale"] = 0.7,
 					["border"] = "Details BarBorder 3",
 					["fontsize"] = 12,
 					["texture"] = "Skullflower",
 					["nametextx"] = 0,
-					["x"] = 729.205871582031,
+					["font"] = "Expressway",
 				},
 			},
 		},
@@ -95,14 +95,14 @@ Quartz3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["timetextx"] = 0,
-					["w"] = 195,
-					["h"] = 25,
-					["noInterruptBorder"] = "Details BarBorder 3",
-					["noInterruptChangeBorder"] = true,
 					["border"] = "Details BarBorder 3",
+					["font"] = "Expressway",
+					["nametextx"] = 0,
+					["noInterruptChangeBorder"] = true,
+					["w"] = 195,
 					["noInterruptChangeColor"] = true,
 					["y"] = 568,
-					["font"] = "Expressway",
+					["h"] = 25,
 					["fontsize"] = 12,
 					["iconalpha"] = 1,
 					["noInterruptColor"] = {
@@ -111,7 +111,7 @@ Quartz3DB = {
 						0.32156862745098, -- [3]
 						1, -- [4]
 					},
-					["nametextx"] = 0,
+					["noInterruptBorder"] = "Details BarBorder 3",
 					["x"] = 1035,
 					["texture"] = "Solid",
 				},
@@ -142,15 +142,10 @@ Quartz3DB = {
 		["Target"] = {
 			["profiles"] = {
 				["Default"] = {
-					["texture"] = "Solid",
+					["iconposition"] = "left",
 					["timetextx"] = 0,
-					["noInterruptColor"] = {
-						0.32156862745098, -- [1]
-						0.32156862745098, -- [2]
-						0.32156862745098, -- [3]
-						1, -- [4]
-					},
-					["noInterruptBorder"] = "Details BarBorder 3",
+					["border"] = "Details BarBorder 3",
+					["nametextx"] = 0,
 					["x"] = 912.444030761719,
 					["noInterruptChangeBorder"] = true,
 					["w"] = 212,
@@ -159,10 +154,15 @@ Quartz3DB = {
 					["h"] = 25,
 					["fontsize"] = 12,
 					["iconalpha"] = 1,
+					["noInterruptColor"] = {
+						0.32156862745098, -- [1]
+						0.32156862745098, -- [2]
+						0.32156862745098, -- [3]
+						1, -- [4]
+					},
+					["noInterruptBorder"] = "Details BarBorder 3",
 					["font"] = "Expressway",
-					["nametextx"] = 0,
-					["border"] = "Details BarBorder 3",
-					["iconposition"] = "left",
+					["texture"] = "Solid",
 				},
 				["Krixi"] = {
 					["h"] = 30,
@@ -209,26 +209,31 @@ Quartz3DB = {
 		["Donch - Grim Batol"] = "Default",
 		["Krixidk - Grim Batol"] = "Krixi",
 		["Kroxi - Grim Batol"] = "Krixi",
+		["Krixirogue - Ravencrest"] = "Krixi",
 		["Bawsie - Grim Batol"] = "Default",
-		["Krixikin - Grim Batol"] = "Default",
+		["Dumbgoat - Ravencrest"] = "Default",
+		["Gnomalock - Grim Batol"] = "Default",
+		["Krixidruid - Valley of Heroes - EU"] = "Default",
+		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Lowerboost - Lightbringer"] = "Default",
 		["Krixiwarrior - Valley of Heroes - EU"] = "Default",
-		["Krixidruid - Valley of Heroes - EU"] = "Default",
+		["Kroxi - Ravencrest"] = "Krixi",
 		["Krixi - Grim Batol"] = "Krixi",
+		["Zetiz - Grim Batol"] = "Krixi",
 		["Kriximonk - Valley of Heroes - EU"] = "Default",
-		["Gnomalock - Grim Batol"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
 		["Krixiqt - Ravencrest"] = "Krixi",
 		["Kriximonk - Ravencrest"] = "Krixi",
 		["Krixidh - Grim Batol"] = "Krixi",
 		["Krixidh - Ravencrest"] = "Krixi",
 		["Krixidk - Ravencrest"] = "Krixi",
 		["Krixidh - Valley of Heroes - EU"] = "Default",
-		["Zetiz - Grim Batol"] = "Default",
-		["Kriximonk - Grim Batol"] = "Krixi",
-		["Zolution - Grim Batol"] = "Default",
-		["Daroislost - Valley of Heroes - EU"] = "Default",
-		["Zuriz - Grim Batol"] = "Default",
 		["Lilgaykrixi - Kazzak"] = "Default",
+		["Kriximonk - Grim Batol"] = "Krixi",
+		["Krixicx - Shattered Hand"] = "Default",
+		["Memeinhaler - Ravencrest"] = "Default",
+		["Zuriz - Grim Batol"] = "Default",
+		["Krixikin - Grim Batol"] = "Default",
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {

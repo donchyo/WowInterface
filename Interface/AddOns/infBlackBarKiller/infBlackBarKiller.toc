@@ -1,6 +1,0 @@
-## Interface: 60000
-## Title: |cff3399FFinf|rBlackBarKiller
-## Author: iNFEH @ methodwow.com
-## Notes: Hides the black filter bar shit above the Combat Log
-## DefaultState: Enabled
-infBlackBarKiller.lua

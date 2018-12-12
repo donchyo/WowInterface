@@ -8,8 +8,9 @@ MicroMenuSettings = {
 		["Krixidh - Grim Batol"] = "Default",
 		["Donchyo - Shattered Hand"] = "Default",
 		["Lowerboost - Lightbringer"] = "Default",
-		["Krixicx - Shattered Hand"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
+		["Krixicx - Shattered Hand"] = "Default",
+		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

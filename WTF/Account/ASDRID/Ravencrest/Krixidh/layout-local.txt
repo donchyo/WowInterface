@@ -12,14 +12,14 @@ Anchor: CENTER
 X: 0
 Y: 0
 W: 365
-H: 380
+H: 240
 Frame: DetailsReportWindow
 FrameLevel: 1
 Anchor: CENTER
 X: 108
 Y: 176
-W: 342
-H: 190
+W: 176
+H: 195
 Frame: DetailsPlayerDetailsWindow
 FrameLevel: 1
 Anchor: TOP

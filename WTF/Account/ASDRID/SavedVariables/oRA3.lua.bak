@@ -24,8 +24,8 @@ oRA3DB = {
 		["ReadyCheck"] = {
 			["profiles"] = {
 				["Default"] = {
-					["autohide"] = false,
 					["hideOnCombat"] = false,
+					["autohide"] = false,
 					["sound"] = false,
 				},
 			},
@@ -132,23 +132,27 @@ oRA3DB = {
 		["Kriximonk - Ravencrest"] = "Default",
 		["Krixidh - Ravencrest"] = "Default",
 		["Krixidk - Ravencrest"] = "Krixi",
+		["Memeinhaler - Ravencrest"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Kroxi - Grim Batol"] = "Krixi",
 		["Namji - Grim Batol"] = "Default",
+		["Kroxi - Ravencrest"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
+		["Krixirogue - Ravencrest"] = "Default",
 		["Krixiyo - Lightning's Blade"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
-		["Lowerboost - Lightbringer"] = "Default",
 		["Krixiqt - Ravencrest"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
+		["Dumbgoat - Ravencrest"] = "Default",
 		["Kriximonk - Valley of Heroes - EU"] = "Default",
 		["Zetiz - Grim Batol"] = "Default",
 		["Krixi - Grim Batol"] = "Krixi",
 		["Zolution - Grim Batol"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
+		["Kriximonk - Grim Batol"] = "Default",
 		["Krixidh - Grim Batol"] = "Krixi",
 		["Nyrith - Grim Batol"] = "Default",
-		["Kriximonk - Grim Batol"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
 		["Krixidh - Valley of Heroes - EU"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Default",
@@ -189,7 +193,7 @@ oRA3DB = {
 			["lastSelectedList"] = 1,
 		},
 		["Default"] = {
-			["lastSelectedList"] = 3,
+			["lastSelectedPanel"] = "Checks",
 			["positions"] = {
 				["oRA3CooldownFrameBarsDefault"] = {
 					["Height"] = 148,
@@ -214,7 +218,7 @@ oRA3DB = {
 					["PosX"] = 1144.37755254617,
 				},
 			},
-			["lastSelectedPanel"] = "Checks",
+			["lastSelectedList"] = 3,
 		},
 		["Krixi"] = {
 			["lastSelectedList"] = 1,

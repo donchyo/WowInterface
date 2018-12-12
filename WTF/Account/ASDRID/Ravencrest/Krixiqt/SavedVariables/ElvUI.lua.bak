@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatEditHistory"] = {
-		"/cw Oklik-Ravencrest just with myself", -- [1]
-		"/cw Oklik-Ravencrest that dosent work sadly", -- [2]
-		"/cw Oklik-Ravencrest the best thing is an alert that someone wants a summon", -- [3]
-		"/cw Oklik-Ravencrest its protected by blizzard", -- [4]
-		"/cw Oklik-Ravencrest or you could make rotation bots in addons", -- [5]
-		"/cw Oklik-Ravencrest i could try something else i guess", -- [6]
-		"/cw Oklik-Ravencrest when i have time", -- [7]
-		"/cw Oklik-Ravencrest :P", -- [8]
-		"/cw Oklik-Ravencrest but i need to do research on the new bosses aswell", -- [9]
-		"/cw Oklik-Ravencrest only looked at like 4 so far", -- [10]
-		"/cw Oklik-Ravencrest just mongo", -- [11]
-		"/cw Oklik-Ravencrest npx", -- [12]
-		"/cw Oklik-Ravencrest nps", -- [13]
-		"/cw Oklik-Ravencrest :D", -- [14]
-		"/cw Oklik-Ravencrest but need to sleep now, cya tomorrow", -- [15]
-		"/g can you skip battle for lordaeron?", -- [16]
-		"/g fuck me", -- [17]
-		"/g cnorg", -- [18]
-		"/g say that to me at lan", -- [19]
-		"/g what", -- [20]
+		"/g :(", -- [1]
+		"/g yuula", -- [2]
+		"/g you coimming", -- [3]
+		"/g islands", -- [4]
+		"/g when", -- [5]
+		"/g when u done", -- [6]
+		"/g k", -- [7]
+		"/g wanna just come afk", -- [8]
+		"/g while i gather", -- [9]
+		"/g na", -- [10]
+		"/g u r a qt", -- [11]
+		"/p pog", -- [12]
+		"/p :(", -- [13]
+		"/p 3:", -- [14]
+		" vad gör du", -- [15]
+		" inte mkt", -- [16]
+		" funderar vad jag ska spela nästa tier", -- [17]
+		" tänkte göra 3lfr bossar så jag får 10 stacks på paladinen", -- [18]
+		"/cw Bävermatsqt |cffa335ee|Hitem:158367::::::::120:65::16:3:5010:1562:4784:::|h[Merektha's Fang]|h|r", -- [19]
+		"/reload", -- [20]
 	},
 }

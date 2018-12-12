@@ -1,9 +1,0 @@
-## Interface: 52000
-## Title: GridCustomNames
-## Notes: xxx
-## Author: Ironi
-## Version: v1.0
-## Dependencies: Grid
-## SavedVariables: GridCustomNamesDB
-
-GridCustomNames.lua

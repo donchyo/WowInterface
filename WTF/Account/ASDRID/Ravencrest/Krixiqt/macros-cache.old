@@ -11,13 +11,13 @@ VER 3 0100000000000015 "cancelaura bop" "INV_MISC_QUESTIONMARK"
 /cancelaura blessing of protection
 /cancelaura divine shield
 END
-VER 3 0100000000000008 "cleanse" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cleanse toxins
-END
 VER 3 0100000000000017 "cleanse" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cleanse
+END
+VER 3 0100000000000008 "cleanse" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]cleanse toxins
 END
 VER 3 010000000000000F "e prism" "INV_MISC_QUESTIONMARK"
 #showtooltip holy prism
@@ -53,6 +53,10 @@ VER 3 010000000000000E "lotm" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]light of the martyr
 END
+VER 3 0100000000000018 "mouseover" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover] Avenger's Shield
+END
 VER 3 0100000000000009 "prism self" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@target] holy prism;
@@ -61,15 +65,11 @@ VER 3 0100000000000002 "sac" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]blessing of sacrifice
 END
-VER 3 0100000000000007 "salv" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]blessing of salvation
-END
 VER 3 010000000000000C "shock" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]Holy shock
 END
 VER 3 0100000000000005 "wog" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] hand of the protector
+/cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] light of the protector
 END

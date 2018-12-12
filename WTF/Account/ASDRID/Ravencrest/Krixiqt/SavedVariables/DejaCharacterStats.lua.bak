@@ -13,8 +13,8 @@ DejaCharacterStatsDBPC = {
 		["dejacharacterstatsItemLevelChecked"] = {
 			["ItemLevelSetChecked"] = true,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["dejacharacterstatsScrollbarChecked"] = {
+			["ScrollbarSetChecked"] = false,
 		},
 		["dejacharacterstatsShowItemRepairChecked"] = {
 			["ShowItemRepairSetChecked"] = false,
@@ -35,37 +35,37 @@ DejaCharacterStatsDBPC = {
 			["DODGE"] = false,
 			["DURABILITY"] = true,
 			["SPELLPOWER"] = false,
-			["MASTERY"] = true,
-			["LIFESTEAL"] = true,
+			["FOCUS_REGEN"] = false,
+			["ARMOR"] = true,
 			["MOVESPEED"] = true,
 			["ATTACK_ATTACKSPEED"] = false,
 			["VERSATILITY"] = true,
-			["ENERGY_REGEN"] = false,
-			["AVOIDANCE"] = true,
-			["CRITCHANCE"] = true,
-			["ATTACK_AP"] = false,
-			["BLOCK"] = false,
-			["HEALTH"] = true,
-			["RUNE_REGEN"] = false,
+			["POWER"] = true,
+			["INTELLECT"] = true,
 			["ALTERNATEMANA"] = false,
+			["ATTACK_AP"] = false,
+			["MANAREGEN"] = false,
+			["HEALTH"] = true,
 			["STAMINA"] = true,
-			["AGILITY"] = true,
+			["LIFESTEAL"] = true,
+			["RUNE_REGEN"] = false,
 			["STRENGTH"] = true,
+			["AGILITY"] = true,
 			["ATTACK_DAMAGE"] = false,
 			["REPAIRTOTAL"] = true,
 			["PARRY"] = false,
-			["MANAREGEN"] = false,
+			["BLOCK"] = false,
 			["HASTE"] = true,
-			["INTELLECT"] = true,
-			["POWER"] = true,
-			["ARMOR"] = true,
-			["FOCUS_REGEN"] = false,
-		},
-		["dejacharacterstatsScrollbarMax"] = {
-			["DCS_ScrollbarMax"] = 34,
+			["AVOIDANCE"] = true,
+			["ENERGY_REGEN"] = false,
+			["CRITCHANCE"] = true,
+			["MASTERY"] = true,
 		},
 		["dejacharacterstatsSelectStatsChecked"] = {
 			["SelectStatsSetChecked"] = false,
+		},
+		["dejacharacterstatsScrollbarMax"] = {
+			["DCS_ScrollbarMax"] = 34,
 		},
 		["dejacharacterstatsExpandChecked"] = {
 			["ExpandSetChecked"] = true,
@@ -73,8 +73,8 @@ DejaCharacterStatsDBPC = {
 		["dejacharacterstatsRepairTotalStatChecked"] = {
 			["RepairTotalStatSetChecked"] = true,
 		},
-		["dejacharacterstatsScrollbarChecked"] = {
-			["ScrollbarSetChecked"] = false,
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
 		},
 	},
 }

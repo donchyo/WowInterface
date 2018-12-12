@@ -1,6 +1,45 @@
 
 OmniCC4Config = {
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+		{
+			["id"] = "PlaterNameplates Blacklist",
+			["rules"] = {
+			},
+			["enabled"] = true,
+		}, -- [2]
+	},
+	["version"] = "8.0.9",
 	["groupSettings"] = {
+		["PlaterNameplates Blacklist"] = {
+			["enabled"] = false,
+			["styles"] = {
+				["minutes"] = {
+				},
+				["soon"] = {
+				},
+				["seconds"] = {
+				},
+				["hours"] = {
+				},
+				["charging"] = {
+				},
+				["controlled"] = {
+				},
+			},
+			["tenthsDuration"] = 0,
+			["minSize"] = 0.5,
+			["minEffectDuration"] = 30,
+			["mmSSDuration"] = 0,
+			["minDuration"] = 2,
+		},
 		["base"] = {
 			["styles"] = {
 				["seconds"] = {
@@ -47,17 +86,17 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "none",
-			["fontFace"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Expressway.ttf",
-			["fontSize"] = 15,
+			["minDuration"] = 3,
+			["minEffectDuration"] = 0,
 			["spiralOpacity"] = 1.00999997742474,
-			["minDuration"] = 3.00000004470348,
+			["yOff"] = 1,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.5,
-			["minEffectDuration"] = 0,
 			["mmSSDuration"] = 0,
-			["yOff"] = 1,
+			["fontSize"] = 15,
+			["fontFace"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Expressway.ttf",
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -77,15 +116,4 @@ OmniCC4Config = {
 			},
 		},
 	},
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
-	["version"] = "8.0.1",
 }

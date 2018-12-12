@@ -7,7 +7,7 @@ _detalhes_database = {
 		["tabelas"] = {
 		},
 	},
-	["combat_counter"] = 8916,
+	["combat_counter"] = 8922,
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -17,7 +17,7 @@ _detalhes_database = {
 		{
 			["segment"] = 0,
 			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
+			["horizontalSnap"] = false,
 			["verticalSnap"] = false,
 			["is_open"] = true,
 			["isLocked"] = true,
@@ -29,16 +29,15 @@ _detalhes_database = {
 				13, -- [5]
 			},
 			["snap"] = {
-				[3] = 2,
 			},
 			["mode"] = 2,
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328211809839,
-					["x"] = 541.25006094488,
-					["w"] = 208.360977172852,
-					["h"] = 127.507873535156,
+					["y"] = -397.328143831935,
+					["x"] = 541.251873688982,
+					["w"] = 208.361206054688,
+					["h"] = 127.507972717285,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -51,7 +50,7 @@ _detalhes_database = {
 		{
 			["segment"] = 0,
 			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
+			["horizontalSnap"] = false,
 			["verticalSnap"] = false,
 			["is_open"] = true,
 			["isLocked"] = true,
@@ -63,16 +62,15 @@ _detalhes_database = {
 				1, -- [5]
 			},
 			["snap"] = {
-				1, -- [1]
 			},
 			["mode"] = 2,
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328211809839,
+					["y"] = -397.328143831935,
 					["x"] = 748.860984304405,
-					["w"] = 211.055404663086,
-					["h"] = 127.507873535156,
+					["w"] = 211.055526733398,
+					["h"] = 127.507972717285,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -117,7 +115,7 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1533657298,
+		["nextreset"] = 1543769161,
 		["last_version"] = 10,
 	},
 	["last_instance_id"] = 1651,
@@ -130,7 +128,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1519059226,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "01",
+	["last_day"] = "17",
 	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -140,9 +138,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = false,
-			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = false,
@@ -194,10 +192,10 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["y"] = -41.5555419921875,
 			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -217,7 +215,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
@@ -265,7 +263,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = false,
-			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -274,7 +272,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = false,
@@ -294,19 +292,14 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["character_data"] = {
-		["logons"] = 1432,
-	},
-	["last_realversion"] = 132,
+	["force_font_outline"] = "",
+	["last_encounter"] = "Argus the Unmaker",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_version"] = "v8.0.1.6035",
+	["last_realversion"] = 135,
+	["last_version"] = "v8.0.1.6678",
 	["combat_id"] = 299,
 	["savedStyles"] = {
 	},
@@ -316,6 +309,9 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["cached_talents"] = {
+		["Player-1303-03E8DD46"] = {
+			19758, -- [1]
+		},
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -323,8 +319,9 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["force_font_outline"] = "",
-	["last_encounter"] = "Argus the Unmaker",
+	["character_data"] = {
+		["logons"] = 1434,
+	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Return to Karazhan",
 		["started"] = false,
@@ -335,6 +332,10 @@ _detalhes_database = {
 		["level"] = 15,
 		["dungeon_zone_id"] = 1651,
 		["previous_boss_killed_at"] = 1519060496,
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

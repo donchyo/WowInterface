@@ -1,16 +1,6 @@
 
 OmniCC4Config = {
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
-	["version"] = "8.0.1",
+	["version"] = "8.0.9",
 	["groupSettings"] = {
 		["base"] = {
 			["styles"] = {
@@ -58,8 +48,8 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "none",
-			["minDuration"] = 3.00000004470348,
-			["minEffectDuration"] = 0,
+			["fontFace"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Expressway.ttf",
+			["fontSize"] = 15,
 			["spiralOpacity"] = 1.00999997742474,
 			["yOff"] = 1,
 			["xOff"] = 0,
@@ -67,8 +57,30 @@ OmniCC4Config = {
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.5,
 			["mmSSDuration"] = 0,
-			["fontSize"] = 15,
-			["fontFace"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\Expressway.ttf",
+			["minEffectDuration"] = 0,
+			["minDuration"] = 3,
+		},
+		["PlaterNameplates Blacklist"] = {
+			["enabled"] = false,
+			["styles"] = {
+				["minutes"] = {
+				},
+				["soon"] = {
+				},
+				["seconds"] = {
+				},
+				["hours"] = {
+				},
+				["charging"] = {
+				},
+				["controlled"] = {
+				},
+			},
+			["tenthsDuration"] = 0,
+			["minSize"] = 0.5,
+			["minEffectDuration"] = 30,
+			["minDuration"] = 2,
+			["mmSSDuration"] = 0,
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -87,5 +99,21 @@ OmniCC4Config = {
 				},
 			},
 		},
+	},
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+		{
+			["id"] = "PlaterNameplates Blacklist",
+			["rules"] = {
+			},
+			["enabled"] = true,
+		}, -- [2]
 	},
 }

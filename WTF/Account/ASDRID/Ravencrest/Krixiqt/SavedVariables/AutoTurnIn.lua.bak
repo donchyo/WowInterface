@@ -1,0 +1,38 @@
+
+AutoTurnInCharacterDB = {
+	["togglekey"] = 3,
+	["secondary"] = {
+		["ITEM_MOD_CRIT_RATING_SHORT"] = true,
+		["ITEM_MOD_HASTE_RATING_SHORT"] = true,
+	},
+	["questlevel"] = true,
+	["greedifnothingfound"] = true,
+	["showrewardtext"] = false,
+	["questshare"] = true,
+	["watchlevel"] = true,
+	["completeonly"] = false,
+	["enabled"] = true,
+	["todarkmoon"] = false,
+	["debug"] = false,
+	["armor"] = {
+		["Shields"] = true,
+		["Plate"] = true,
+	},
+	["relictoggle"] = true,
+	["darkmoonautostart"] = false,
+	["darkmoonteleport"] = false,
+	["artifactpowertoggle"] = true,
+	["stat"] = {
+	},
+	["autoequip"] = false,
+	["version"] = "7.0.9",
+	["tournament"] = 2,
+	["lootreward"] = 3,
+	["all"] = 1,
+	["trivial"] = false,
+	["weapon"] = {
+		["One-Handed Axes"] = true,
+		["One-Handed Maces"] = true,
+		["One-Handed Swords"] = true,
+	},
+}

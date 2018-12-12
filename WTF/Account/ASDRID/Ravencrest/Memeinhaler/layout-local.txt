@@ -1,1 +1,8 @@
 Version: 1
+Frame: ColorPickerFrame
+FrameLevel: 1
+Anchor: TOP
+X: 104
+Y: 0
+W: 365
+H: 200

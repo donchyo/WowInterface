@@ -2,24 +2,48 @@
 ElvDB = {
 	["profileKeys"] = {
 		["Krixiqt - Ravencrest"] = "Default",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Kroxi - Grim Batol"] = "Default",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
 		["Krixidh - Grim Batol"] = "Default",
-		["Kriximonk - Grim Batol"] = "Default",
+		["Dumbgoat - Ravencrest"] = "Dumbgoat - Ravencrest",
+		["Kroxi - Ravencrest"] = "Default",
+		["Zetiz - Grim Batol"] = "Default",
 		["Kriximonk - Ravencrest"] = "Default",
-		["Krixi - Grim Batol"] = "Default",
 		["Krixidh - Ravencrest"] = "Default",
 		["Krixidk - Ravencrest"] = "Default",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Default",
+		["Krixirogue - Ravencrest"] = "Default",
+		["Memeinhaler - Ravencrest"] = "Memeinhaler - Ravencrest",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Krixi - Grim Batol"] = "Default",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 	},
 	["gold"] = {
 		["Grim Batol"] = {
 			["Kriximonk"] = 83721400,
+			["Zolution"] = 221916,
+			["Gnomalock"] = 45269,
+			["Bawsie"] = 1868879,
+			["Kroxi"] = 20497,
+			["Donch"] = 1854741,
+			["Zuriz"] = 218944,
 			["Krixi"] = 919353,
+			["Zetiz"] = 165179649,
 			["Krixidh"] = 93816374,
+			["Krixikin"] = 5903,
 		},
 		["Ravencrest"] = {
 			["Krixiqt"] = 865682408,
-			["Krixidk"] = 3275525777,
 			["Kriximonk"] = 1018320008,
+			["Kroxi"] = 42109809,
 			["Krixidh"] = 87945844,
+			["Memeinhaler"] = 188379,
+			["Krixirogue"] = 211454751,
+			["Krixidk"] = 3275525777,
+			["Dumbgoat"] = 110000,
 		},
 	},
 	["namespaces"] = {
@@ -77,15 +101,11 @@ ElvDB = {
 							["enable"] = true,
 							["priority"] = 0,
 						},
-						["Provoke"] = {
-							["enable"] = true,
-							["priority"] = 0,
-						},
 						["Taunt"] = {
 							["enable"] = true,
 							["priority"] = 0,
 						},
-						["Lava Burns"] = {
+						["Provoke"] = {
 							["enable"] = true,
 							["priority"] = 0,
 						},
@@ -94,6 +114,10 @@ ElvDB = {
 							["priority"] = 0,
 						},
 						["Exhastion"] = {
+							["enable"] = true,
+							["priority"] = 0,
+						},
+						["Lava Burns"] = {
 							["enable"] = true,
 							["priority"] = 0,
 						},
@@ -205,13 +229,13 @@ ElvDB = {
 					},
 					[33206] = {
 					},
-					[10060] = {
-					},
-					[6788] = {
+					[139] = {
 					},
 					[123258] = {
 					},
-					[139] = {
+					[6788] = {
+					},
+					[10060] = {
 					},
 				},
 				["PALADIN"] = {
@@ -251,13 +275,13 @@ ElvDB = {
 					},
 				},
 				["MONK"] = {
-					[132120] = {
-					},
 					[124081] = {
+					},
+					[119611] = {
 					},
 					[116849] = {
 					},
-					[119611] = {
+					[132120] = {
 					},
 				},
 				["ROGUE"] = {
@@ -279,7 +303,11 @@ ElvDB = {
 		},
 	},
 	["profiles"] = {
-		["Krixiqt - Ravencrest"] = {
+		["Krixirogue - Ravencrest"] = {
+			["currentTutorial"] = 2,
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
 			["movers"] = {
 				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
@@ -290,16 +318,104 @@ ElvDB = {
 				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
 			},
 		},
-		["Krixidh - Grim Batol"] = {
+		["Donch - Grim Batol"] = {
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+			["movers"] = {
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,737",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,431",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,955",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,5,194",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+			},
+		},
+		["Kroxi - Grim Batol"] = {
 			["currentTutorial"] = 2,
 			["movers"] = {
-				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+			},
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+		},
+		["Bawsie - Grim Batol"] = {
+			["movers"] = {
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,737",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,955",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,5,194",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,431",
+			},
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+		},
+		["Krixikin - Grim Batol"] = {
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+			["movers"] = {
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
 				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
 				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
 				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
 				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+			},
+		},
+		["Dumbgoat - Ravencrest"] = {
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+			["movers"] = {
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
 				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+			},
+		},
+		["Kroxi - Ravencrest"] = {
+			["movers"] = {
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+			},
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+		},
+		["Zetiz - Grim Batol"] = {
+			["currentTutorial"] = 2,
+			["movers"] = {
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+			},
+			["chat"] = {
+				["panelColorConverted"] = true,
 			},
 		},
 		["Minimalistic"] = {
@@ -360,9 +476,9 @@ ElvDB = {
 				["ElvAB_6"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,330",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-50,50",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,50,995",
-				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-230,140",
 				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
 				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,200",
+				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-230,140",
 				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,184,773",
 				["AlertFrameMover"] = "TOP,ElvUIParent,TOP,0,-50",
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,230,140",
@@ -674,15 +790,76 @@ ElvDB = {
 				["panelBackdrop"] = "HIDEBOTH",
 			},
 		},
+		["Kriximonk - Ravencrest"] = {
+			["movers"] = {
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+			},
+			["currentTutorial"] = 1,
+		},
+		["Krixidh - Ravencrest"] = {
+			["currentTutorial"] = 1,
+			["movers"] = {
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+			},
+		},
+		["Gnomalock - Grim Batol"] = {
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+			["movers"] = {
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,431",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,737",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,955",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,5,194",
+			},
+		},
+		["Krixi - Grim Batol"] = {
+			["currentTutorial"] = 2,
+			["movers"] = {
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+			},
+		},
+		["Kriximonk - Grim Batol"] = {
+			["movers"] = {
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+			},
+			["currentTutorial"] = 2,
+		},
 		["Default"] = {
 			["databars"] = {
 				["artifact"] = {
 					["width"] = 273,
-					["height"] = 10,
 					["orientation"] = "HORIZONTAL",
+					["height"] = 10,
 				},
 				["experience"] = {
-					["width"] = 273,
+					["width"] = 244,
+					["orientation"] = "HORIZONTAL",
 					["height"] = 10,
 				},
 				["honor"] = {
@@ -693,6 +870,12 @@ ElvDB = {
 					["enable"] = true,
 					["width"] = 273,
 					["height"] = 10,
+					["orientation"] = "HORIZONTAL",
+				},
+				["azerite"] = {
+					["width"] = 244,
+					["height"] = 10,
+					["orientation"] = "HORIZONTAL",
 				},
 			},
 			["currentTutorial"] = 7,
@@ -712,22 +895,23 @@ ElvDB = {
 				},
 				["bottomPanel"] = false,
 				["valuecolor"] = {
-					["r"] = 0,
-					["g"] = 1,
-					["b"] = 0.59,
+					["r"] = 0.77,
+					["g"] = 0.12,
+					["b"] = 0.23,
 				},
 				["loginmessage"] = false,
 				["threat"] = {
 					["enable"] = false,
 				},
-				["topPanel"] = false,
+				["talkingHeadFrameScale"] = 0.5,
 				["bordercolor"] = {
 					["r"] = 0,
 					["g"] = 0,
 					["b"] = 0,
 				},
 				["font"] = "Expressway",
-				["talkingHeadFrameScale"] = 0.5,
+				["vendorGrays"] = true,
+				["topPanel"] = false,
 			},
 			["bags"] = {
 				["countFontSize"] = 11,
@@ -736,8 +920,8 @@ ElvDB = {
 				["moneyCoins"] = false,
 				["countFont"] = "Expressway",
 				["countFontOutline"] = "OUTLINE",
-				["itemLevelFontOutline"] = "OUTLINE",
 				["moneyFormat"] = "SHORTINT",
+				["itemLevelFontOutline"] = "OUTLINE",
 			},
 			["hideTutorial"] = true,
 			["auras"] = {
@@ -754,41 +938,43 @@ ElvDB = {
 			},
 			["layoutSet"] = "tank",
 			["movers"] = {
-				["ElvAB_8"] = "BOTTOM,ElvUIParent,BOTTOM,0,0",
+				["ElvAB_8"] = "BOTTOM,ElvUIParent,BOTTOM,0,4",
 				["RaidMarkerBarAnchor"] = "BOTTOM,ElvUIParent,BOTTOM,254,4",
-				["PetAB"] = "BOTTOM,ElvUIParent,BOTTOM,-226,4",
-				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,429",
-				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["PetAB"] = "BOTTOM,ElvUIParent,BOTTOM,0,68",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,3,430",
+				["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,0",
 				["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-124",
 				["GhostFrameMover"] = "TOP,ElvUIParent,TOP,0,-172",
 				["BossButton"] = "TOP,ElvUIParent,TOP,196,-427",
 				["LootFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,467,-250",
 				["ZoneAbility"] = "TOP,ElvUIParent,TOP,196,-361",
-				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
 				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-260,153",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,3,737",
+				["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-260,275",
+				["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-254,92",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,3,196",
 				["SLE_GarrisonToolMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,186,-159",
 				["TotemBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-189,35",
-				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
 				["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-260,296",
 				["MicrobarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,0",
-				["ElvUF_PetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-254,92",
+				["UIErrorsFrameMover"] = "TOP,ElvUIParent,TOP,0,-108",
 				["VehicleSeatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,420,27",
 				["ElvUF_TargetTargetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-324,233",
-				["ExperienceBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-47",
-				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-260,193",
+				["ExperienceBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-37",
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,260,193",
 				["ElvUIBankMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,4",
+				["ElvAB_10"] = "BOTTOM,ElvUIParent,BOTTOM,0,107",
 				["LossControlMover"] = "TOP,ElvUIParent,TOP,0,-294",
-				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,3,433",
 				["MirrorTimer1Mover"] = "TOP,ElvUIParent,TOP,0,-219",
-				["ElvAB_9"] = "BOTTOM,ElvUIParent,BOTTOM,255,28",
-				["ElvAB_1"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,198",
-				["ElvAB_2"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,229",
-				["ElvAB_10"] = "BOTTOM,ElvUIParent,BOTTOM,0,190",
 				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,260,340",
-				["ElvAB_4"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,291",
+				["ElvAB_1"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,198",
+				["ElvAB_9"] = "BOTTOM,ElvUIParent,BOTTOM,255,31",
+				["ElvAB_2"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,229",
 				["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,0,67",
-				["SLE_FarmSeedMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,205,-259",
+				["TalkingHeadFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-47",
+				["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,323",
+				["AzeriteBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-28",
 				["ElvAB_3"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,260",
 				["ReputationBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-38",
 				["ArtifactBarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-29",
@@ -797,18 +983,18 @@ ElvDB = {
 				["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-255,-212",
 				["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,0",
 				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,418,32",
-				["TalkingHeadFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-47",
-				["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,323",
+				["SLE_FarmSeedMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,205,-259",
+				["ElvAB_4"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,290",
 				["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-114,-312",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,201",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,772",
 				["BossHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-316",
-				["PlayerPowerBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-260,275",
+				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-260,193",
 				["ElvAB_7"] = "BOTTOM,ElvUIParent,BOTTOM,0,272",
-				["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,19",
+				["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,1",
 				["AlertFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,467,-228",
 				["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-187,-150",
-				["UIErrorsFrameMover"] = "TOP,ElvUIParent,TOP,0,-108",
+				["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-3",
 			},
 			["gridSize"] = 128,
 			["tooltip"] = {
@@ -827,15 +1013,15 @@ ElvDB = {
 					},
 					["targettarget"] = {
 						["debuffs"] = {
-							["maxDuration"] = 0,
-							["perrow"] = 8,
 							["anchorPoint"] = "TOPLEFT",
+							["perrow"] = 8,
+							["maxDuration"] = 0,
 						},
 						["power"] = {
+							["xOffset"] = 5,
 							["text_format"] = " ",
 							["width"] = "inset",
 							["height"] = 10,
-							["xOffset"] = 5,
 						},
 						["width"] = 135,
 						["infoPanel"] = {
@@ -845,22 +1031,22 @@ ElvDB = {
 							["overlay"] = true,
 							["width"] = 130,
 						},
-						["name"] = {
-							["text_format"] = "[name]",
-							["yOffset"] = 10,
-						},
 						["health"] = {
 							["xOffset"] = -5,
 							["text_format"] = " ",
 						},
-						["height"] = 40,
+						["name"] = {
+							["text_format"] = "[name]",
+							["yOffset"] = 10,
+						},
+						["orientation"] = "LEFT",
 						["buffs"] = {
 							["fontSize"] = 12,
 							["enable"] = true,
 							["perrow"] = 8,
 							["maxDuration"] = 0,
 						},
-						["orientation"] = "LEFT",
+						["height"] = 40,
 						["raidicon"] = {
 							["enable"] = false,
 						},
@@ -882,21 +1068,19 @@ ElvDB = {
 					},
 					["focus"] = {
 						["debuffs"] = {
-							["anchorPoint"] = "TOPLEFT",
-							["perrow"] = 4,
 							["maxDuration"] = 0,
+							["perrow"] = 4,
+							["anchorPoint"] = "TOPLEFT",
 						},
 						["portrait"] = {
 							["overlay"] = true,
 							["width"] = 130,
 						},
-						["orientation"] = "LEFT",
+						["height"] = 40,
 						["threatStyle"] = "NONE",
-						["power"] = {
-							["xOffset"] = 5,
-							["text_format"] = " ",
-							["width"] = "inset",
-							["height"] = 10,
+						["castbar"] = {
+							["enable"] = false,
+							["width"] = 135,
 						},
 						["width"] = 135,
 						["infoPanel"] = {
@@ -907,11 +1091,13 @@ ElvDB = {
 							["text_format"] = "[name]",
 							["yOffset"] = 10,
 						},
-						["castbar"] = {
-							["enable"] = false,
-							["width"] = 135,
+						["power"] = {
+							["xOffset"] = 5,
+							["text_format"] = " ",
+							["width"] = "inset",
+							["height"] = 10,
 						},
-						["height"] = 40,
+						["orientation"] = "LEFT",
 						["buffs"] = {
 							["fontSize"] = 12,
 							["enable"] = true,
@@ -923,15 +1109,12 @@ ElvDB = {
 							["xOffset"] = -5,
 							["text_format"] = " ",
 						},
-						["raidicon"] = {
-							["enable"] = false,
-						},
 					},
 					["target"] = {
 						["debuffs"] = {
-							["maxDuration"] = 0,
 							["attachTo"] = "FRAME",
 							["anchorPoint"] = "TOPLEFT",
+							["maxDuration"] = 0,
 						},
 						["portrait"] = {
 							["overlay"] = true,
@@ -941,16 +1124,16 @@ ElvDB = {
 							["enable"] = false,
 						},
 						["threatStyle"] = "NONE",
-						["power"] = {
-							["text_format"] = "[power:current]",
-							["width"] = "inset",
-							["xOffset"] = 5,
-						},
-						["healPrediction"] = false,
 						["castbar"] = {
 							["enable"] = false,
 							["height"] = 34,
 							["format"] = "CURRENTMAX",
+						},
+						["healPrediction"] = false,
+						["power"] = {
+							["text_format"] = "[power:current]",
+							["width"] = "inset",
+							["xOffset"] = 5,
 						},
 						["name"] = {
 							["text_format"] = "[name]",
@@ -960,12 +1143,12 @@ ElvDB = {
 							["xOffset"] = -5,
 							["text_format"] = "[health:current-percent]",
 						},
-						["orientation"] = "LEFT",
+						["height"] = 80,
 						["buffs"] = {
 							["fontSize"] = 12,
 							["anchorPoint"] = "BOTTOMLEFT",
 						},
-						["height"] = 80,
+						["orientation"] = "LEFT",
 						["raidicon"] = {
 							["enable"] = false,
 						},
@@ -986,19 +1169,12 @@ ElvDB = {
 						["debuffs"] = {
 							["enable"] = false,
 						},
-						["portrait"] = {
-							["camDistanceScale"] = 1.42,
-							["width"] = 150,
-						},
 						["raidicon"] = {
 							["enable"] = false,
 						},
-						["classbar"] = {
-							["detachFromFrame"] = true,
-							["verticalOrientation"] = true,
+						["CombatIcon"] = {
 							["enable"] = false,
-							["height"] = 30,
-							["detachedWidth"] = 192,
+							["defaultColor"] = false,
 						},
 						["aurabar"] = {
 							["enable"] = false,
@@ -1008,6 +1184,24 @@ ElvDB = {
 							["defaultColor"] = false,
 						},
 						["threatStyle"] = "NONE",
+						["power"] = {
+							["detachFromFrame"] = true,
+							["enable"] = false,
+							["text_format"] = "[power:current]",
+							["attachTextTo"] = "Power",
+							["position"] = "CENTER",
+							["height"] = 20,
+							["detachedWidth"] = 192,
+						},
+						["healPrediction"] = false,
+						["portrait"] = {
+							["camDistanceScale"] = 1.42,
+							["width"] = 150,
+						},
+						["health"] = {
+							["xOffset"] = 5,
+							["text_format"] = "[health:current-percent]",
+						},
 						["castbar"] = {
 							["enable"] = false,
 							["format"] = "CURRENTMAX",
@@ -1015,24 +1209,13 @@ ElvDB = {
 							["height"] = 34,
 							["latency"] = false,
 						},
-						["healPrediction"] = false,
-						["power"] = {
-							["attachTextTo"] = "Power",
-							["enable"] = false,
-							["text_format"] = "[power:current]",
-							["detachFromFrame"] = true,
-							["position"] = "CENTER",
-							["height"] = 20,
-							["detachedWidth"] = 192,
-						},
-						["health"] = {
-							["xOffset"] = 5,
-							["text_format"] = "[health:current-percent]",
-						},
 						["height"] = 80,
-						["CombatIcon"] = {
+						["classbar"] = {
+							["detachFromFrame"] = true,
+							["verticalOrientation"] = true,
 							["enable"] = false,
-							["defaultColor"] = false,
+							["height"] = 30,
+							["detachedWidth"] = 192,
 						},
 						["pvp"] = {
 							["text_format"] = " ",
@@ -1057,17 +1240,17 @@ ElvDB = {
 						["b"] = 0.137254901960784,
 					},
 					["debuffHighlight"] = {
-						["Disease"] = {
-							["a"] = 0,
-						},
 						["Poison"] = {
 							["a"] = 0,
 							["g"] = 0.392156862745098,
 						},
+						["Curse"] = {
+							["a"] = 0,
+						},
 						["Magic"] = {
 							["a"] = 0,
 						},
-						["Curse"] = {
+						["Disease"] = {
 							["a"] = 0,
 						},
 					},
@@ -1108,9 +1291,8 @@ ElvDB = {
 				["bar8"] = {
 					["buttonspacing"] = 2,
 					["enabled"] = true,
-					["backdrop"] = false,
 					["alpha"] = 0.5,
-					["showGrid"] = false,
+					["backdrop"] = false,
 					["buttonsPerRow"] = 6,
 					["buttonsize"] = 32,
 				},
@@ -1121,7 +1303,6 @@ ElvDB = {
 					["enabled"] = true,
 					["backdrop"] = false,
 					["alpha"] = 0.5,
-					["showGrid"] = false,
 					["buttonsPerRow"] = 6,
 					["buttonsize"] = 32,
 				},
@@ -1130,19 +1311,13 @@ ElvDB = {
 					["buttonspacing"] = 0,
 					["buttons"] = 2,
 					["backdrop"] = false,
-					["showGrid"] = false,
 					["buttonsize"] = 32,
 				},
 				["barPet"] = {
 					["buttonsPerRow"] = 10,
-					["buttonsize"] = 23,
+					["buttonsize"] = 18,
 				},
-				["bar6"] = {
-					["buttonspacing"] = 0,
-					["backdropSpacing"] = 0,
-					["showGrid"] = false,
-					["buttonsPerRow"] = 6,
-				},
+				["fontSize"] = 16,
 				["movementModifier"] = "CTRL",
 				["bar10"] = {
 					["buttonspacing"] = 0,
@@ -1168,6 +1343,7 @@ ElvDB = {
 					["paging"] = {
 						["PALADIN"] = " ",
 					},
+					["visibility"] = "[vehicleui] show",
 				},
 				["noPowerColor"] = {
 					["g"] = 1,
@@ -1178,7 +1354,12 @@ ElvDB = {
 					["buttons"] = 12,
 					["buttonsPerRow"] = 12,
 				},
-				["fontSize"] = 16,
+				["bar6"] = {
+					["buttonspacing"] = 0,
+					["backdropSpacing"] = 0,
+					["showGrid"] = false,
+					["buttonsPerRow"] = 6,
+				},
 				["bar4"] = {
 					["enabled"] = false,
 					["backdrop"] = false,
@@ -1194,13 +1375,13 @@ ElvDB = {
 				},
 				["font"] = "Expressway",
 				["loadDistance"] = 45,
-				["stackFont"] = "Expressway",
-				["targetGlow"] = "style1",
 				["nonTargetTransparency"] = 0.3,
+				["targetGlow"] = "style1",
 				["units"] = {
-					["PLAYER"] = {
-						["visibility"] = {
-							["showAlways"] = true,
+					["FRIENDLY_PLAYER"] = {
+						["showName"] = false,
+						["healthbar"] = {
+							["useClassColor"] = false,
 						},
 					},
 					["HEALER"] = {
@@ -1208,13 +1389,13 @@ ElvDB = {
 							["enable"] = false,
 						},
 					},
-					["FRIENDLY_PLAYER"] = {
-						["showName"] = false,
-						["healthbar"] = {
-							["useClassColor"] = false,
+					["PLAYER"] = {
+						["visibility"] = {
+							["showAlways"] = true,
 						},
 					},
 				},
+				["stackFont"] = "Expressway",
 				["hideBlizzardPlates"] = true,
 				["cooldown"] = {
 					["override"] = false,
@@ -1238,11 +1419,11 @@ ElvDB = {
 					["player"] = {
 						["font"] = "Expressway",
 					},
-					["title"] = {
-						["font"] = "Expressway",
-					},
 					["playermodel"] = {
 						["anim"] = 82,
+					},
+					["title"] = {
+						["font"] = "Expressway",
 					},
 				},
 			},
@@ -1265,10 +1446,10 @@ ElvDB = {
 				},
 			},
 			["chat"] = {
-				["tabFont"] = "Expressway",
+				["timeStampFormat"] = "%H:%M:%S ",
 				["lfgIcons"] = false,
 				["chatHistory"] = false,
-				["whisperSound"] = "None",
+				["throttleInterval"] = 0,
 				["panelHeightRight"] = 60,
 				["font"] = "Expressway",
 				["tapFontSize"] = 12,
@@ -1277,50 +1458,39 @@ ElvDB = {
 				["emotionIcons"] = false,
 				["editBoxPosition"] = "ABOVE_CHAT",
 				["panelWidthRight"] = 50,
+				["whisperSound"] = "None",
 				["panelBackdrop"] = "HIDEBOTH",
-				["throttleInterval"] = 0,
+				["panelColorConverted"] = true,
 				["keywords"] = "%MYNAME%",
 				["copyChatLines"] = true,
-				["timeStampFormat"] = "%H:%M:%S ",
+				["tabFont"] = "Expressway",
 			},
 		},
-		["Kriximonk - Ravencrest"] = {
-			["movers"] = {
-				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
-				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
-				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
-				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
-				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
-				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-			},
-			["currentTutorial"] = 1,
-		},
-		["Kriximonk - Grim Batol"] = {
-			["movers"] = {
-				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
-				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
-				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
-				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
-				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
-				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-			},
-			["currentTutorial"] = 2,
-		},
-		["Krixidh - Ravencrest"] = {
-			["currentTutorial"] = 1,
-			["movers"] = {
-				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
-				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
-				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
-				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-			},
-		},
-		["Krixi - Grim Batol"] = {
+		["Krixidh - Grim Batol"] = {
 			["currentTutorial"] = 2,
 			["movers"] = {
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+			},
+		},
+		["Memeinhaler - Ravencrest"] = {
+			["movers"] = {
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+			},
+		},
+		["Zuriz - Grim Batol"] = {
+			["movers"] = {
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
 				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
 				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
@@ -1328,6 +1498,34 @@ ElvDB = {
 				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
 				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
 				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+			},
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+		},
+		["Krixiqt - Ravencrest"] = {
+			["movers"] = {
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,956",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+			},
+		},
+		["Zolution - Grim Batol"] = {
+			["movers"] = {
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,5,194",
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,431",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,955",
+				["RightChatMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,0,19",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,427",
+				["LeftChatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,0,19",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,5,737",
+			},
+			["chat"] = {
+				["panelColorConverted"] = true,
 			},
 		},
 	},
@@ -1335,18 +1533,27 @@ ElvDB = {
 ElvPrivateDB = {
 	["profileKeys"] = {
 		["Krixiqt - Ravencrest"] = "Krixiqt - Ravencrest",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
 		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Dumbgoat - Ravencrest"] = "Dumbgoat - Ravencrest",
+		["Kroxi - Ravencrest"] = "Kroxi - Ravencrest",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Kriximonk - Ravencrest"] = "Kriximonk - Ravencrest",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Krixidh - Ravencrest"] = "Krixidh - Ravencrest",
 		["Krixidk - Ravencrest"] = "Krixidk - Ravencrest",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Krixirogue - Ravencrest"] = "Krixirogue - Ravencrest",
+		["Memeinhaler - Ravencrest"] = "Memeinhaler - Ravencrest",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 	},
 	["profiles"] = {
 		["Krixiqt - Ravencrest"] = {
-			["nameplates"] = {
-				["enable"] = false,
-			},
 			["unitframe"] = {
 				["disabledBlizzardFrames"] = {
 					["raid"] = false,
@@ -1361,7 +1568,51 @@ ElvPrivateDB = {
 				},
 				["install_complete"] = "3.38",
 			},
+			["nameplates"] = {
+				["enable"] = false,
+			},
+			["general"] = {
+				["chatBubbleFont"] = "Expressway",
+			},
 			["install_complete"] = "10.74",
+		},
+		["Donch - Grim Batol"] = {
+			["sle"] = {
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
+				},
+				["pvpreadydialogreset"] = true,
+			},
+		},
+		["Kroxi - Grim Batol"] = {
+			["nameplates"] = {
+				["enable"] = false,
+			},
+			["unitframe"] = {
+				["disabledBlizzardFrames"] = {
+					["raid"] = false,
+					["party"] = false,
+				},
+			},
+			["sle"] = {
+				["pvpreadydialogreset"] = true,
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
+				},
+				["install_complete"] = "3.471",
+			},
+			["install_complete"] = "10.80",
+		},
+		["Bawsie - Grim Batol"] = {
+			["sle"] = {
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
+				},
+				["pvpreadydialogreset"] = true,
+			},
 		},
 		["Krixidh - Grim Batol"] = {
 			["sle"] = {
@@ -1374,50 +1625,19 @@ ElvPrivateDB = {
 			},
 			["install_complete"] = "10.75",
 		},
-		["Kriximonk - Grim Batol"] = {
-			["nameplates"] = {
-				["enable"] = false,
-			},
-			["unitframe"] = {
-				["disabledBlizzardFrames"] = {
-					["party"] = false,
-					["raid"] = false,
-				},
-			},
+		["Dumbgoat - Ravencrest"] = {
 			["sle"] = {
-				["pvpreadydialogreset"] = true,
-				["characterGoldsSorting"] = {
-					["Grim Batol"] = {
-					},
-				},
-				["install_complete"] = "3.40",
-			},
-			["install_complete"] = "10.75",
-		},
-		["Kriximonk - Ravencrest"] = {
-			["tooltip"] = {
-				["enable"] = false,
-			},
-			["unitframe"] = {
-				["disabledBlizzardFrames"] = {
-					["raid"] = false,
-					["party"] = false,
-				},
-			},
-			["nameplates"] = {
-				["enable"] = false,
-			},
-			["sle"] = {
-				["pvpreadydialogreset"] = true,
-				["install_complete"] = "3.41",
 				["characterGoldsSorting"] = {
 					["Ravencrest"] = {
 					},
 				},
+				["pvpreadydialogreset"] = true,
 			},
-			["install_complete"] = "10.75",
 		},
-		["Krixi - Grim Batol"] = {
+		["Kroxi - Ravencrest"] = {
+			["nameplates"] = {
+				["enable"] = false,
+			},
 			["unitframe"] = {
 				["disabledBlizzardFrames"] = {
 					["party"] = false,
@@ -1427,10 +1647,47 @@ ElvPrivateDB = {
 			["sle"] = {
 				["pvpreadydialogreset"] = true,
 				["characterGoldsSorting"] = {
+					["Ravencrest"] = {
+					},
+				},
+				["install_complete"] = "3.471",
+			},
+			["install_complete"] = "10.80",
+		},
+		["Zetiz - Grim Batol"] = {
+			["nameplates"] = {
+				["enable"] = false,
+			},
+			["unitframe"] = {
+				["disabledBlizzardFrames"] = {
+					["raid"] = false,
+					["party"] = false,
+				},
+			},
+			["sle"] = {
+				["pvpreadydialogreset"] = true,
+				["characterGoldsSorting"] = {
 					["Grim Batol"] = {
 					},
 				},
-				["install_complete"] = "3.38",
+				["install_complete"] = "3.46",
+			},
+			["install_complete"] = "10.80",
+		},
+		["Kriximonk - Ravencrest"] = {
+			["unitframe"] = {
+				["disabledBlizzardFrames"] = {
+					["party"] = false,
+					["raid"] = false,
+				},
+			},
+			["sle"] = {
+				["pvpreadydialogreset"] = true,
+				["characterGoldsSorting"] = {
+					["Ravencrest"] = {
+					},
+				},
+				["install_complete"] = "3.41",
 			},
 			["nameplates"] = {
 				["enable"] = false,
@@ -1438,7 +1695,7 @@ ElvPrivateDB = {
 			["tooltip"] = {
 				["enable"] = false,
 			},
-			["install_complete"] = "10.74",
+			["install_complete"] = "10.75",
 		},
 		["Krixidh - Ravencrest"] = {
 			["nameplates"] = {
@@ -1461,39 +1718,150 @@ ElvPrivateDB = {
 			["install_complete"] = "10.75",
 		},
 		["Krixidk - Ravencrest"] = {
+			["sle"] = {
+				["module"] = {
+					["screensaver"] = true,
+				},
+				["pvpreadydialogreset"] = true,
+				["install_complete"] = "3.38",
+				["characterGoldsSorting"] = {
+					["Ravencrest"] = {
+					},
+				},
+				["actionbars"] = {
+					["checkedtexture"] = true,
+				},
+			},
+			["unitframe"] = {
+				["disabledBlizzardFrames"] = {
+					["raid"] = false,
+					["party"] = false,
+				},
+			},
+			["nameplates"] = {
+				["enable"] = false,
+			},
+			["general"] = {
+				["normTex"] = "Skullflower",
+				["chatBubbleFont"] = "Expressway",
+				["dmgfont"] = "Expressway",
+				["chatBubbleFontOutline"] = "OUTLINE",
+				["namefont"] = "Expressway",
+				["glossTex"] = "Skullflower",
+			},
+			["theme"] = "class",
+			["install_complete"] = "10.74",
+		},
+		["Gnomalock - Grim Batol"] = {
+			["sle"] = {
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
+				},
+				["pvpreadydialogreset"] = true,
+			},
+		},
+		["Krixikin - Grim Batol"] = {
+			["sle"] = {
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
+				},
+				["pvpreadydialogreset"] = true,
+			},
+		},
+		["Kriximonk - Grim Batol"] = {
+			["nameplates"] = {
+				["enable"] = false,
+			},
 			["unitframe"] = {
 				["disabledBlizzardFrames"] = {
 					["party"] = false,
 					["raid"] = false,
 				},
 			},
-			["general"] = {
-				["normTex"] = "Skullflower",
-				["dmgfont"] = "Expressway",
-				["chatBubbleFontOutline"] = "OUTLINE",
-				["namefont"] = "Expressway",
-				["chatBubbleFont"] = "Expressway",
-				["glossTex"] = "Skullflower",
+			["sle"] = {
+				["pvpreadydialogreset"] = true,
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
+				},
+				["install_complete"] = "3.40",
 			},
+			["install_complete"] = "10.75",
+		},
+		["Krixirogue - Ravencrest"] = {
 			["nameplates"] = {
 				["enable"] = false,
 			},
-			["sle"] = {
-				["module"] = {
-					["screensaver"] = true,
+			["unitframe"] = {
+				["disabledBlizzardFrames"] = {
+					["raid"] = false,
+					["party"] = false,
 				},
+			},
+			["sle"] = {
+				["pvpreadydialogreset"] = true,
+				["characterGoldsSorting"] = {
+					["Ravencrest"] = {
+					},
+				},
+				["install_complete"] = "3.46",
+			},
+			["install_complete"] = "10.80",
+		},
+		["Memeinhaler - Ravencrest"] = {
+			["sle"] = {
 				["characterGoldsSorting"] = {
 					["Ravencrest"] = {
 					},
 				},
 				["pvpreadydialogreset"] = true,
-				["actionbars"] = {
-					["checkedtexture"] = true,
+			},
+			["nameplates"] = {
+				["enable"] = false,
+			},
+		},
+		["Zuriz - Grim Batol"] = {
+			["sle"] = {
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
+				},
+				["pvpreadydialogreset"] = true,
+			},
+		},
+		["Krixi - Grim Batol"] = {
+			["unitframe"] = {
+				["disabledBlizzardFrames"] = {
+					["party"] = false,
+					["raid"] = false,
+				},
+			},
+			["sle"] = {
+				["pvpreadydialogreset"] = true,
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
 				},
 				["install_complete"] = "3.38",
 			},
-			["theme"] = "class",
+			["nameplates"] = {
+				["enable"] = false,
+			},
+			["tooltip"] = {
+				["enable"] = false,
+			},
 			["install_complete"] = "10.74",
+		},
+		["Zolution - Grim Batol"] = {
+			["sle"] = {
+				["characterGoldsSorting"] = {
+					["Grim Batol"] = {
+					},
+				},
+				["pvpreadydialogreset"] = true,
+			},
 		},
 	},
 }

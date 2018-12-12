@@ -1,3 +1,6 @@
+VER 3 010000000000002C " " "INV_MISC_QUESTIONMARK"
+/cast Gnaw
+END
 VER 3 0100000000000017 "deaths advance" "INV_Misc_QuestionMark"
 #showtooltip
 /use [nomod] !wraith walk
@@ -7,12 +10,12 @@ END
 VER 3 0100000000000021 "dnd" "INV_MISC_QUESTIONMARK"
 /cast [@cursor] death and decay
 END
+VER 3 0100000000000023 "focus" "INV_Misc_QuestionMark"
+/cast [@focus] asphyxiate
+END
 VER 3 010000000000001A "focus" "INV_Misc_QuestionMark"
 /stopcasting
 /cast [@focus] mind freeze
-END
-VER 3 0100000000000023 "focus" "INV_Misc_QuestionMark"
-/cast [@focus] asphyxiate
 END
 VER 3 0100000000000022 "focus" "INV_MISC_QUESTIONMARK"
 /cast [@focus] death grip
@@ -34,6 +37,11 @@ VER 3 010000000000001E "memes" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Apocalypse
 /script print(IsQuestFlaggedCompleted(44188))
+END
+VER 3 010000000000002D "orb ready" "INV_MISC_QUESTIONMARK"
+--/w Astrays-Ravencrest orb ready
+/w Slamzy-Ravencrest orb ready
+/w Ualhi-Ravencrest orb ready
 END
 VER 3 010000000000001B "petattack" "INV_Misc_QuestionMark"
 #showtooltip

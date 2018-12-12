@@ -1,5 +1,0 @@
-## Interface: 60000
-## Title: |cff3399FFinf|rDK
-## Author: iNFEH @ methodwow.com
-## Notes: asdf.
-infDK.lua

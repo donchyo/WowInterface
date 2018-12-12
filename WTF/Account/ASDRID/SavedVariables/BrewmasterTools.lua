@@ -1,4 +1,0 @@
-
-BRMTOOL = {
-	["welcome"] = true,
-}

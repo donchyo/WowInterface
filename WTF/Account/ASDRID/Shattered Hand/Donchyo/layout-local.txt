@@ -1,11 +1,4 @@
 Version: 1
-Frame: ObjectiveTrackerFrame
-FrameLevel: 2
-Anchor: TOPRIGHT
-X: -80
-Y: -192
-W: 235
-H: 2000
 Frame: ColorPickerFrame
 FrameLevel: 1
 Anchor: CENTER

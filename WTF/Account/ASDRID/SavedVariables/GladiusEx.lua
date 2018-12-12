@@ -28,91 +28,56 @@ GladiusExDB = {
 		["Cooldowns"] = {
 		},
 		["arena"] = {
-			["profiles"] = {
-				["Krixikin - Grim Batol"] = {
-					["y"] = {
-						["anchor_arena"] = 364.444460699291,
-						["arena2"] = 384.04445953104,
-						["arena3"] = 311.244439456197,
-						["arena1"] = 456.844504019944,
-					},
-					["x"] = {
-						["anchor_arena"] = 1082.48909563487,
-						["arena2"] = 1116.0891912884,
-						["arena3"] = 1116.0891912884,
-						["arena1"] = 1116.0891912884,
-					},
-				},
-			},
 		},
 		["Auras"] = {
 		},
 		["CastBar"] = {
 		},
 		["party"] = {
-			["profiles"] = {
-				["Krixikin - Grim Batol"] = {
-					["y"] = {
-						["player"] = 492.400068306917,
-						["party1"] = 419.600023818013,
-						["party2"] = 346.799979329109,
-					},
-					["x"] = {
-						["player"] = 405.866723855332,
-						["party1"] = 405.866723855332,
-						["party2"] = 405.866723855332,
-					},
-				},
-			},
 		},
 		["party_SkillHistory"] = {
 		},
 		["PowerBar"] = {
 		},
-		["Interrupts"] = {
+		["party_Interrupts"] = {
 		},
 		["party_Announcements"] = {
 		},
 		["HealthBar"] = {
 		},
-		["Clicks"] = {
+		["Interrupts"] = {
 		},
-		["Tags"] = {
+		["party_PetBar"] = {
 		},
 		["party_Cooldowns"] = {
 		},
 		["party_Clicks"] = {
 		},
-		["party_Auras"] = {
-		},
-		["party_Interrupts"] = {
-		},
-		["party_Tags"] = {
-		},
-		["TargetBar"] = {
-		},
-		["Alerts"] = {
+		["PetBar"] = {
 		},
 		["Announcements"] = {
 		},
-		["PetBar"] = {
+		["Alerts"] = {
 		},
-		["party_PetBar"] = {
+		["TargetBar"] = {
+		},
+		["party_Tags"] = {
+		},
+		["party_Auras"] = {
+		},
+		["Tags"] = {
+		},
+		["Clicks"] = {
 		},
 		["ClassIcon"] = {
 		},
 	},
 	["profileKeys"] = {
-		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
+		["Krixirogue - Ravencrest"] = "Krixirogue - Ravencrest",
 	},
 	["profiles"] = {
-		["Kroxi - Grim Batol"] = {
-		},
-		["Krixikin - Grim Batol"] = {
+		["Krixirogue - Ravencrest"] = {
 			["locked"] = true,
-			["globalBarTexture"] = "Skullflower",
-			["showParty"] = false,
 		},
 	},
 }

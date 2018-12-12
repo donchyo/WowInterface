@@ -7,7 +7,7 @@ _detalhes_database = {
 		["tabelas"] = {
 		},
 	},
-	["combat_counter"] = 8132,
+	["combat_counter"] = 8148,
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -17,7 +17,7 @@ _detalhes_database = {
 		{
 			["segment"] = 0,
 			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
+			["horizontalSnap"] = false,
 			["verticalSnap"] = false,
 			["is_open"] = true,
 			["isLocked"] = true,
@@ -29,16 +29,15 @@ _detalhes_database = {
 				1, -- [5]
 			},
 			["snap"] = {
-				[3] = 2,
 			},
 			["mode"] = 2,
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328211809839,
-					["x"] = 541.25006094488,
-					["w"] = 208.360977172852,
-					["h"] = 127.507873535156,
+					["y"] = -397.328143831935,
+					["x"] = 541.251873688982,
+					["w"] = 208.361206054688,
+					["h"] = 127.507972717285,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -51,7 +50,7 @@ _detalhes_database = {
 		{
 			["segment"] = 0,
 			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
+			["horizontalSnap"] = false,
 			["verticalSnap"] = false,
 			["is_open"] = true,
 			["isLocked"] = true,
@@ -63,16 +62,15 @@ _detalhes_database = {
 				1, -- [5]
 			},
 			["snap"] = {
-				1, -- [1]
 			},
 			["mode"] = 2,
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328211809839,
+					["y"] = -397.328143831935,
 					["x"] = 748.860984304405,
-					["w"] = 211.055404663086,
-					["h"] = 127.507873535156,
+					["w"] = 211.055526733398,
+					["h"] = 127.507972717285,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -117,6 +115,15 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["cached_talents"] = {
+		["Player-1303-0387FD7B"] = {
+			22443, -- [1]
+			22444, -- [2]
+			22452, -- [3]
+			22460, -- [4]
+			21632, -- [5]
+			22448, -- [6]
+			23176, -- [7]
+		},
 	},
 	["last_instance_id"] = 1544,
 	["announce_interrupts"] = {
@@ -128,7 +135,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1509563509,
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "06",
+	["last_day"] = "17",
 	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -137,8 +144,8 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
 			["dps"] = 0,
+			["author"] = "Details! Team",
 			["level"] = 1,
 			["enabled"] = true,
 		},
@@ -184,7 +191,7 @@ _detalhes_database = {
 			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -192,7 +199,7 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["row_color"] = {
 				0.1, -- [1]
@@ -200,7 +207,7 @@ _detalhes_database = {
 				0.1, -- [3]
 				0.4, -- [4]
 			},
-			["font_size"] = 10,
+			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -214,7 +221,7 @@ _detalhes_database = {
 				["update_speed"] = 0.0160000007599592,
 				["size"] = 32,
 			},
-			["y"] = -41.5555419921875,
+			["font_size"] = 10,
 			["point"] = "TOP",
 			["row_height"] = 20,
 			["scale"] = 1,
@@ -879,8 +886,8 @@ _detalhes_database = {
 		},
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["showamount"] = false,
 			["animate"] = false,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["useclasscolors"] = false,
 			["author"] = "Details! Team",
@@ -896,17 +903,22 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["force_font_outline"] = "",
-	["last_realversion"] = 132,
-	["benchmark_db"] = {
-		["frame"] = {
-		},
+	["character_data"] = {
+		["logons"] = 1437,
 	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["last_version"] = "v8.0.1.6035",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1543769112,
+		["last_version"] = 10,
+	},
+	["last_version"] = "v8.0.1.6678",
 	["combat_id"] = 2914,
 	["savedStyles"] = {
 	},
@@ -932,14 +944,9 @@ _detalhes_database = {
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["character_data"] = {
-		["logons"] = 1431,
-	},
+	["force_font_outline"] = "",
+	["last_realversion"] = 135,
 	["last_encounter"] = "Grand Magistrix Elisande",
-	["nick_tag_cache"] = {
-		["nextreset"] = 1534871187,
-		["last_version"] = 10,
-	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

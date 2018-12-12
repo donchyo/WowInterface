@@ -5,7 +5,7 @@ Anchor: CENTER
 X: 71
 Y: 51
 W: 170
-H: 240
+H: 210
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: RIGHT
@@ -19,7 +19,7 @@ Anchor: RIGHT
 X: -43
 Y: -10
 W: 365
-H: 380
+H: 240
 Frame: DetailsPlayerDetailsWindow
 FrameLevel: 1
 Anchor: RIGHT

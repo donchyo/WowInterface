@@ -1,7 +1,0 @@
-## Interface: 60000
-## Title: |cff3399FFinf|rResolve
-## Author: iNFEH @ methodwow.com
-## Notes: Basic resolve tracker.
-## Version: 1.0
-## SavedVariables: infResolveDB
-infResolve.lua

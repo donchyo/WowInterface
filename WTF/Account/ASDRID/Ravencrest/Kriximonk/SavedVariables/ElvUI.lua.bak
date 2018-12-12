@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatEditHistory"] = {
-		" din lille skit asså", -- [1]
-		" jag erbjöd mig att hjälpa till", -- [2]
-		" om det går snabbare", -- [3]
-		"/plater", -- [4]
-		" men vafan hur sega är ni? :D", -- [5]
-		" jag vill hjälpa till så det går snabbare", -- [6]
-		" men det får man itne", -- [7]
-		" varför inte? :(", -- [8]
-		" vad gör ni", -- [9]
-		" men det är ju lätt?", -- [10]
-		" eller", -- [11]
-		"/g taking one for the team and getting the 10% exp banner", -- [12]
-		" vi har inte 10% banner", -- [13]
-		" mm", -- [14]
-		" blackrockcaverns", -- [15]
-		" varför stack du", -- [16]
-		" missar jag nån lan info?", -- [17]
-		" hoo", -- [18]
-		"/g im working on it", -- [19]
-		"/reload", -- [20]
+		" sjuk kille", -- [1]
+		" lirar du shadow eller disc", -- [2]
+		" men lämna gruppen då", -- [3]
+		" jaha", -- [4]
+		" såg inte", -- [5]
+		"/raid coudl you get the priest/lock combo from lfg queue in?", -- [6]
+		"/raid has cutting edge etc", -- [7]
+		" https://i.imgur.com/HgNoXbZ.png", -- [8]
+		" :(", -- [9]
+		"/cw Saylesin-Magtheridon |cffffff00|Hachievement:12535:Player-1329-06669556:1:11:11:18:4294967295:4294967295:4294967295:4294967295|h[Cutting Edge: G'huun]|h|r", -- [10]
+		"/cw Priam-Quel'Thalas |cffffff00|Hachievement:12535:Player-1329-06669556:1:11:11:18:4294967295:4294967295:4294967295:4294967295|h[Cutting Edge: G'huun]|h|r", -- [11]
+		"/cw Aljan-Ravencrest mjo", -- [12]
+		"/cw Aljan-Ravencrest 3k/9k atm", -- [13]
+		"/cw Aljan-Ravencrest för keys?", -- [14]
+		"/cw Aljan-Ravencrest dk", -- [15]
+		"/cw Aljan-Ravencrest 7.6", -- [16]
+		"/g anyone for islands?", -- [17]
+		"/i svenska", -- [18]
+		"/cast path of the mogu kung", -- [19]
+		"/cast path of the mogu king", -- [20]
 	},
 }

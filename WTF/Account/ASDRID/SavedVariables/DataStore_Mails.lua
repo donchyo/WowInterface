@@ -2,21 +2,21 @@
 DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
-			["Default.Grim Batol.Kroxi"] = {
-				["lastUpdate"] = 1512497815,
+			["Default.Aggra (Português).Greenzuriz"] = {
+				["lastUpdate"] = 1447675466,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
+						["icon"] = "Interface\\ICONS\\INV_Misc_Note_01.blp",
 						["sender"] = "The WoW Dev Team",
-						["subject"] = "WoW's 13th Anniversary!",
+						["subject"] = "WoW's 11th Anniversary!",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "Wow, yet another year has gone by for WoW!\r\n\r\nWe wanted to thank you for continuing to play World of Warcraft with us, so here's an Anniversary Gift to go with your adventures!\r\n\r\nThe WoW Dev Team",
-						["lastCheck"] = 1512497815,
-						["daysLeft"] = 10.9972105026245,
+						["lastCheck"] = 1447675466,
+						["daysLeft"] = 29.9995250701904,
 					}, -- [1]
 				},
-				["lastVisitDate"] = "2017/12/05 19:16",
+				["lastVisitDate"] = "2015/11/16 13:04",
 			},
 			["Default.Aggra (Português).Treefiddy"] = {
 				["lastUpdate"] = 1444761294,
@@ -57,162 +57,34 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2015/02/22 11:30",
 			},
 			["Default.Grim Batol.Zolution"] = {
-				["lastUpdate"] = 1514393235,
+				["lastUpdate"] = 1542473199,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
+						["link"] = "|cffffffff|Hitem:162637::::::::110:256::::::|h[Anniversary Gift]|h|r",
+						["sender"] = "The WoW Dev Team",
+						["itemID"] = 162637,
 						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from The Stonecore in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514393235,
-						["daysLeft"] = 15.0146760940552,
+						["icon"] = 134142,
+						["count"] = 1,
+						["lastCheck"] = 1542473199,
+						["daysLeft"] = 29.9997215270996,
 					}, -- [1]
 					{
 						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
+						["sender"] = "The WoW Dev Team",
+						["subject"] = "WoW's 14th Anniversary!",
 						["returned"] = false,
 						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 85 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514393235,
-						["daysLeft"] = 19.9237728118897,
+						["text"] = "Wow, yet another year has gone by for WoW!\r\n\r\nWe wanted to thank you for continuing to play World of Warcraft with us, so here's an Anniversary Gift to go with your adventures!\r\n\r\nThe WoW Dev Team",
+						["lastCheck"] = 1542473199,
+						["daysLeft"] = 29.9997215270996,
 					}, -- [2]
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 85 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514393235,
-						["daysLeft"] = 23.0359268188477,
-					}, -- [3]
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514393235,
-						["daysLeft"] = 23.0370941162109,
-					}, -- [4]
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514393235,
-						["daysLeft"] = 29.4934482574463,
-					}, -- [5]
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514393235,
-						["daysLeft"] = 29.5053119659424,
-					}, -- [6]
 				},
-				["lastVisitDate"] = "2017/12/27 17:47",
+				["lastVisitDate"] = "2018/11/17 17:46",
 			},
 			["Default.Aggra (Português).Kroxidps"] = {
 				["lastUpdate"] = 1423512245,
 				["lastVisitDate"] = "2015/02/09 21:04",
-			},
-			["Default.Grim Batol.Zetiz"] = {
-				["lastUpdate"] = 1512498873,
-				["Mails"] = {
-					{
-						["icon"] = 134327,
-						["sender"] = "The WoW Dev Team",
-						["subject"] = "WoW's 13th Anniversary!",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "Wow, yet another year has gone by for WoW!\r\n\r\nWe wanted to thank you for continuing to play World of Warcraft with us, so here's an Anniversary Gift to go with your adventures!\r\n\r\nThe WoW Dev Team",
-						["lastCheck"] = 1512498873,
-						["daysLeft"] = 10.9510879516602,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2017/12/05 19:34",
-			},
-			["Default.Grim Batol.Krixidh"] = {
-				["lastUpdate"] = 1512498828,
-				["Mails"] = {
-					{
-						["lastCheck"] = 1512498828,
-						["sender"] = "The WoW Dev Team",
-						["subject"] = "WoW's 13th Anniversary!",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "Wow, yet another year has gone by for WoW!\r\n\r\nWe wanted to thank you for continuing to play World of Warcraft with us, so here's an Anniversary Gift to go with your adventures!\r\n\r\nThe WoW Dev Team",
-						["icon"] = 134327,
-						["daysLeft"] = 11.0002202987671,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2017/12/05 19:33",
-			},
-			["Default.Grim Batol.Zuriz"] = {
-				["lastUpdate"] = 1514748278,
-				["Mails"] = {
-					{
-						["lastCheck"] = 1514748278,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 23 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 1.70707178115845,
-					}, -- [1]
-					{
-						["lastCheck"] = 1514748278,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 20 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 3.92744207382202,
-					}, -- [2]
-					{
-						["lastCheck"] = 1514748278,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Lost City of the Tol'vir in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 4.93811321258545,
-					}, -- [3]
-					{
-						["lastCheck"] = 1514748278,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 15.7984609603882,
-					}, -- [4]
-					{
-						["lastCheck"] = 1514748278,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 17 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 16.9366779327393,
-					}, -- [5]
-				},
-				["lastVisitDate"] = "2017/12/31 20:24",
 			},
 			["Default.Twisting Nether.Krixiyo"] = {
 				["lastUpdate"] = 1482549431,
@@ -240,51 +112,9 @@ DataStore_MailsDB = {
 				},
 				["lastVisitDate"] = "2016/12/24 04:17",
 			},
-			["Default.Grim Batol.Krixikin"] = {
-				["lastUpdate"] = 1514582427,
-				["Mails"] = {
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514582427,
-						["daysLeft"] = 17.7254638671875,
-					}, -- [1]
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 34 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514582427,
-						["daysLeft"] = 20.8383445739746,
-					}, -- [2]
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 20 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514582427,
-						["daysLeft"] = 23.7929859161377,
-					}, -- [3]
-					{
-						["icon"] = 134327,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 19 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["lastCheck"] = 1514582427,
-						["daysLeft"] = 23.7975234985352,
-					}, -- [4]
-				},
-				["lastVisitDate"] = "2017/12/29 22:20",
+			["Default.Ravencrest.Krixiqt"] = {
+				["lastUpdate"] = 1540752707,
+				["lastVisitDate"] = "2018/10/28 19:51",
 			},
 			["Default.Aggra (Português).Spacegoatx"] = {
 				["lastUpdate"] = 1447675398,
@@ -343,6 +173,63 @@ DataStore_MailsDB = {
 					}, -- [1]
 				},
 				["lastVisitDate"] = "2015/12/27 01:59",
+			},
+			["Default.Ravencrest.Krixidk"] = {
+				["lastUpdate"] = 1540752807,
+				["Mails"] = {
+					{
+						["sender"] = "Kroxi",
+						["subject"] = "0",
+						["lastCheck"] = 1543529657,
+						["money"] = 8800000000,
+						["text"] = "",
+						["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+						["daysLeft"] = 30,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2018/10/28 19:53",
+			},
+			["Default.Shattered Hand.Bawsi"] = {
+				["lastUpdate"] = 1423512002,
+				["lastVisitDate"] = "2015/02/09 21:00",
+			},
+			["Default.Culte de la Rive noire.Menardiairl"] = {
+				["lastUpdate"] = 1465684636,
+				["lastVisitDate"] = "2016/06/12 00:37",
+			},
+			["Default.Grim Batol.Kroxi"] = {
+				["lastUpdate"] = 1542518752,
+				["lastVisitDate"] = "2018/11/18 06:25",
+			},
+			["Default.Grim Batol.Donch"] = {
+				["lastUpdate"] = 1542473152,
+				["Mails"] = {
+					{
+						["lastCheck"] = 1542473152,
+						["sender"] = "The WoW Dev Team",
+						["subject"] = "WoW's 14th Anniversary!",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "Wow, yet another year has gone by for WoW!\r\n\r\nWe wanted to thank you for continuing to play World of Warcraft with us, so here's an Anniversary Gift to go with your adventures!\r\n\r\nThe WoW Dev Team",
+						["icon"] = 134327,
+						["daysLeft"] = 29.9997215270996,
+					}, -- [1]
+					{
+						["lastCheck"] = 1542473152,
+						["sender"] = "Brew of the Month Club",
+						["subject"] = "Fun For You And Your Friends",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "Greetings Donch!\n\n   We hope that the year has been treating you well.  If it hasn't, stop by our vendors to pick up our latest: Bartlett's Bitter Brew.  The flavor is unmatched, but we warn you that it is not for the weak of stomach.\n\n   Enjoy the samples and share with your friends!\n\n- Brew of the Month Club",
+						["icon"] = 134327,
+						["daysLeft"] = 29.9997806549072,
+					}, -- [2]
+				},
+				["lastVisitDate"] = "2018/11/17 17:45",
+			},
+			["Default.Kazzak.Lilgaykrixi"] = {
+				["lastUpdate"] = 1456079516,
+				["lastVisitDate"] = "2016/02/21 19:31",
 			},
 			["Default.Crushridge.Kroxi"] = {
 				["lastUpdate"] = 1507052194,
@@ -403,197 +290,17 @@ DataStore_MailsDB = {
 					}, -- [6]
 				},
 			},
-			["Default.Grim Batol.Bawsie"] = {
-				["lastUpdate"] = 1514265805,
-				["lastVisitDate"] = "2017/12/26 06:23",
-			},
-			["Default.Aggra (Português).Greenzuriz"] = {
-				["lastUpdate"] = 1447675466,
-				["Mails"] = {
-					{
-						["icon"] = "Interface\\ICONS\\INV_Misc_Note_01.blp",
-						["sender"] = "The WoW Dev Team",
-						["subject"] = "WoW's 11th Anniversary!",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "Wow, yet another year has gone by for WoW!\r\n\r\nWe wanted to thank you for continuing to play World of Warcraft with us, so here's an Anniversary Gift to go with your adventures!\r\n\r\nThe WoW Dev Team",
-						["lastCheck"] = 1447675466,
-						["daysLeft"] = 29.9995250701904,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2015/11/16 13:04",
-			},
-			["Default.Shattered Hand.Bawsi"] = {
-				["lastUpdate"] = 1423512002,
-				["lastVisitDate"] = "2015/02/09 21:00",
-			},
-			["Default.Culte de la Rive noire.Menardiairl"] = {
-				["lastUpdate"] = 1465684636,
-				["lastVisitDate"] = "2016/06/12 00:37",
-			},
-			["Default.Grim Batol.Donch"] = {
-				["lastUpdate"] = 1514811547,
-				["lastVisitDate"] = "2018/01/01 13:59",
-			},
-			["Default.Grim Batol.Krixidk"] = {
-				["lastUpdate"] = 1514759575,
-				["Mails"] = {
-					{
-						["lastCheck"] = 1514759575,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 18 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 9.75076389312744,
-					}, -- [1]
-					{
-						["lastCheck"] = 1514759575,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 10 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 16.823299407959,
-					}, -- [2]
-					{
-						["lastCheck"] = 1514759575,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Temple of the Jade Serpent in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 27.7463188171387,
-					}, -- [3]
-				},
-				["lastVisitDate"] = "2017/12/31 23:32",
-			},
-			["Default.Grim Batol.Gnomalock"] = {
-				["lastUpdate"] = 1512422404,
-				["Mails"] = {
-					{
-						["lastCheck"] = 1512422404,
-						["sender"] = "The WoW Dev Team",
-						["subject"] = "WoW's 13th Anniversary!",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "Wow, yet another year has gone by for WoW!\r\n\r\nWe wanted to thank you for continuing to play World of Warcraft with us, so here's an Anniversary Gift to go with your adventures!\r\n\r\nThe WoW Dev Team",
-						["icon"] = 134327,
-						["daysLeft"] = 11.9001617431641,
-					}, -- [1]
-					{
-						["lastCheck"] = 1512422404,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 18 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 13.7039585113525,
-					}, -- [2]
-				},
-				["lastVisitDate"] = "2017/12/04 22:20",
-			},
-			["Default.Grim Batol.Krixi"] = {
-				["lastUpdate"] = 1514780934,
-				["Mails"] = {
-					{
-						["lastCheck"] = 1514780934,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 16 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 8.34844875335693,
-					}, -- [1]
-					{
-						["lastCheck"] = 1514780934,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 43 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 8.34861087799072,
-					}, -- [2]
-					{
-						["lastCheck"] = 1514780934,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Argus in our ledgers, and it apparently belongs to you. 20 Veiled Argunite have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 22.7838535308838,
-					}, -- [3]
-					{
-						["lastCheck"] = 1514780934,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Broken Isles in our ledgers, and it apparently belongs to you. 70 Order Resources have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 25.0025119781494,
-					}, -- [4]
-					{
-						["lastCheck"] = 1514780934,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Shado-Pan Monastery in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 29.9637508392334,
-					}, -- [5]
-					{
-						["lastCheck"] = 1514780934,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Temple of the Jade Serpent in our ledgers, and it apparently belongs to you. 10 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 29.9830207824707,
-					}, -- [6]
-					{
-						["lastCheck"] = 1514780934,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Shado-Pan Monastery in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 29.9900226593018,
-					}, -- [7]
-					{
-						["lastCheck"] = 1514780934,
-						["sender"] = "Thaumaturge Vashreen",
-						["subject"] = "Lost Currency",
-						["returned"] = false,
-						["money"] = 0,
-						["text"] = "We discovered some lost currency from Mogu'shan Palace in our ledgers, and it apparently belongs to you. 5 Timewarped Badge have been added. If this caused you to go over your currency limit, we adjusted the amount to bring you to the limit and not go over!",
-						["icon"] = 134327,
-						["daysLeft"] = 29.9955101013184,
-					}, -- [8]
-				},
-				["lastVisitDate"] = "2018/01/01 05:28",
-			},
-			["Default.Kazzak.Lilgaykrixi"] = {
-				["lastUpdate"] = 1456079516,
-				["lastVisitDate"] = "2016/02/21 19:31",
+			["Default.Grim Batol.Krixikin"] = {
+				["lastUpdate"] = 1542473057,
+				["lastVisitDate"] = "2018/11/17 17:44",
 			},
 			["Default.Blackmoore.Krixiyo"] = {
 				["lastUpdate"] = 1480934753,
 				["lastVisitDate"] = "2016/12/05 11:45",
 			},
-			["Default.Grim Batol.Kriximonk"] = {
-				["lastUpdate"] = 1514588885,
-				["lastVisitDate"] = "2017/12/30 00:08",
+			["Default.Ravencrest.Kroxi"] = {
+				["lastUpdate"] = 1543676820,
+				["lastVisitDate"] = "2018/12/01 16:07",
 			},
 		},
 		["Options"] = {
@@ -603,13 +310,16 @@ DataStore_MailsDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Krixiqt - Ravencrest"] = "Krixiqt - Ravencrest",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Kroxi - Ravencrest"] = "Kroxi - Ravencrest",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Krixidk - Ravencrest"] = "Krixidk - Ravencrest",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
@@ -627,8 +337,8 @@ DataStore_MailsDB = {
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
 		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",

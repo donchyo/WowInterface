@@ -14,21 +14,25 @@ DeathNoteDB = {
 		["Kriximonk - Ravencrest"] = "Kriximonk - Ravencrest",
 		["Memeinhaler - Grim Batol"] = "Memeinhaler - Grim Batol",
 		["Krixidk - Ravencrest"] = "Krixi",
+		["Memeinhaler - Ravencrest"] = "Memeinhaler - Ravencrest",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Kroxi - Ravencrest"] = "Kroxi - Ravencrest",
+		["Krixirogue - Ravencrest"] = "Krixirogue - Ravencrest",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Krixidh - Ravencrest"] = "Krixidh - Ravencrest",
+		["Krixiqt - Ravencrest"] = "Krixiqt - Ravencrest",
 		["Kroxi - Grim Batol"] = "Krixi",
 		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Krixiqt - Ravencrest"] = "Krixiqt - Ravencrest",
-		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
 		["Krixidh - Grim Batol"] = "Krixi",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",
 		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
+		["Dumbgoat - Ravencrest"] = "Dumbgoat - Ravencrest",
 		["Kriximonk - Valley of Heroes - EU"] = "Kriximonk - Valley of Heroes - EU",
 		["Donch - Crushridge"] = "Donch - Crushridge",
-		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
 		["Krixi - Grim Batol"] = "Krixi",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
@@ -90,7 +94,35 @@ DeathNoteDB = {
 		},
 		["Krixidk - Ravencrest"] = {
 		},
+		["Memeinhaler - Ravencrest"] = {
+		},
 		["Greenzuriz - Aggra (Português)"] = {
+		},
+		["Kroxi - Ravencrest"] = {
+			["searchbox_text"] = "",
+		},
+		["Krixirogue - Ravencrest"] = {
+			["searchbox_text"] = "",
+		},
+		["Krixi"] = {
+			["display_filters"] = {
+				["consolidate_heals"] = true,
+				["consolidate_damage"] = true,
+			},
+			["searchbox_text"] = "",
+			["display"] = {
+				["y"] = -145.777931213379,
+				["h"] = 496.444427490234,
+				["columns"] = {
+					59.9999885559082, -- [1]
+					97.999984741211, -- [2]
+					59.9999885559082, -- [3]
+				},
+				["x"] = -144.222091674805,
+				["w"] = 938.222534179688,
+				["namelist"] = 2,
+			},
+			["keep_data"] = false,
 		},
 		["Krixiyo - Twisting Nether"] = {
 		},
@@ -98,9 +130,15 @@ DeathNoteDB = {
 			["searchbox_text"] = "",
 		},
 		["Krixiqt - Ravencrest"] = {
+			["searchbox_text"] = "",
 			["display"] = {
+				["y"] = -90.8888244628906,
+				["x"] = 485.111145019531,
 				["namelist_width"] = 222.666641235352,
+				["w"] = 736.444702148438,
+				["h"] = 778.222412109375,
 			},
+			["keep_data"] = false,
 		},
 		["Kroxi - Grim Batol"] = {
 			["display"] = {
@@ -116,33 +154,21 @@ DeathNoteDB = {
 				["namelist"] = 2,
 			},
 		},
-		["Krixi"] = {
-			["display_filters"] = {
-				["consolidate_heals"] = true,
-				["consolidate_damage"] = true,
-			},
-			["searchbox_text"] = "",
+		["Kriximonk - Grim Batol"] = {
 			["display"] = {
-				["y"] = -8.88893127441406,
-				["h"] = 496.444427490234,
-				["columns"] = {
-					59.9999885559082, -- [1]
-					97.999984741211, -- [2]
-					59.9999885559082, -- [3]
-				},
-				["x"] = -64.8888854980469,
-				["w"] = 938.222534179688,
-				["namelist"] = 2,
+				["y"] = 30.2224426269531,
+				["x"] = -431.999542236328,
+				["w"] = 700.000061035156,
+				["h"] = 500.000061035156,
 			},
-			["keep_data"] = false,
 		},
 		["Bawsie - Grim Batol"] = {
 			["display"] = {
 				["y"] = -2.57032775878906,
-				["h"] = 500.000030517578,
-				["namelist"] = 2,
-				["w"] = 700.000183105469,
 				["x"] = 137.938262939453,
+				["h"] = 500.000030517578,
+				["w"] = 700.000183105469,
+				["namelist"] = 2,
 			},
 		},
 		["Donchyo - Shattered Hand"] = {
@@ -151,25 +177,11 @@ DeathNoteDB = {
 		},
 		["Donch - Shattered Hand"] = {
 		},
-		["Donch - Grim Batol"] = {
-			["death_time"] = 15,
-			["max_deaths"] = 20,
-			["display"] = {
-				["y"] = 1.525878906250e-005,
-				["h"] = 500.000030517578,
-				["w"] = 700.000061035156,
-			},
-			["keep_data"] = false,
+		["Kriximonk - Valley of Heroes - EU"] = {
 		},
 		["Lowerboost - Lightbringer"] = {
 		},
-		["Kriximonk - Grim Batol"] = {
-			["display"] = {
-				["y"] = 30.2224426269531,
-				["x"] = -431.999542236328,
-				["w"] = 700.000061035156,
-				["h"] = 500.000061035156,
-			},
+		["Dumbgoat - Ravencrest"] = {
 		},
 		["Donch - Crushridge"] = {
 		},
@@ -238,10 +250,15 @@ DeathNoteDB = {
 		},
 		["Krixidh - Valley of Heroes - EU"] = {
 		},
-		["Gnomalock - Grim Batol"] = {
+		["Donch - Grim Batol"] = {
+			["death_time"] = 15,
+			["max_deaths"] = 20,
 			["display"] = {
-				["namelist"] = 2,
+				["y"] = 1.525878906250e-005,
+				["h"] = 500.000030517578,
+				["w"] = 700.000061035156,
 			},
+			["keep_data"] = false,
 		},
 		["Líttle - Grim Batol"] = {
 			["display"] = {
@@ -252,7 +269,10 @@ DeathNoteDB = {
 				["h"] = 500.000030517578,
 			},
 		},
-		["Kriximonk - Valley of Heroes - EU"] = {
+		["Gnomalock - Grim Batol"] = {
+			["display"] = {
+				["namelist"] = 2,
+			},
 		},
 		["Daroislost - Valley of Heroes - EU"] = {
 		},

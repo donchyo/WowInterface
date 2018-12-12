@@ -13,12 +13,12 @@ OneRing_Config = {
 				["CommonTrades"] = false,
 				["RaidSymbols"] = false,
 				["DeathKnightPresence"] = false,
+				["DKCombat"] = false,
 				["OPieTracking"] = false,
-				["OPieAutoQuest"] = false,
 				["Gearsets"] = "F5",
 				["WorldMarkers"] = false,
 				["OPieTrinkets"] = false,
-				["DKCombat"] = false,
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},
@@ -61,10 +61,10 @@ OneRing_Config = {
 					["caption"] = "Blood Tanky",
 					["sliceToken"] = "ABuestYWif4",
 				}, -- [6]
-				["hotkey"] = "F2",
-				["save"] = true,
 				["limit"] = "Krixidk-GrimBatol",
+				["save"] = true,
 				["name"] = "Gearsets",
+				["hotkey"] = "F2",
 			},
 			["DeathKnightPresence"] = {
 				{
@@ -102,10 +102,10 @@ OneRing_Config = {
 					["sliceToken"] = "OPCDPo",
 					["c"] = "63eaff",
 				}, -- [7]
-				["hotkey"] = "BUTTON4",
-				["save"] = true,
 				["limit"] = "DEATHKNIGHT",
+				["save"] = true,
 				["name"] = "Presences",
+				["hotkey"] = "BUTTON4",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

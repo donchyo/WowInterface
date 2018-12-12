@@ -1,5 +1,0 @@
-<Bindings>
-	<Binding name="ACCOUNTANTTOG" header="ACCOUNTANT">
-		Accountant.Button_OnClick();
-	</Binding>
-</Bindings>

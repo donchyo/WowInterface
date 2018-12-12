@@ -3,8 +3,8 @@ OneRing_Config = {
 	["CharProfiles"] = {
 		["Grim Batol-Krixidk"] = "default",
 	},
-	["_GameVersion"] = "7.3.5",
-	["_OPieVersion"] = "Vanilla 4 (3.92)",
+	["_GameVersion"] = "8.0.1",
+	["_OPieVersion"] = "Vanilla 5 (3.93)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["RingAtMouse"] = true,
@@ -13,12 +13,12 @@ OneRing_Config = {
 				["CommonTrades"] = false,
 				["RaidSymbols"] = false,
 				["DeathKnightPresence"] = false,
+				["OPieAutoQuest"] = false,
 				["DKCombat"] = false,
-				["OPieTracking"] = false,
 				["Gearsets"] = "F5",
 				["WorldMarkers"] = false,
 				["OPieTrinkets"] = false,
-				["OPieAutoQuest"] = false,
+				["OPieTracking"] = false,
 			},
 		},
 	},
@@ -61,51 +61,51 @@ OneRing_Config = {
 					["caption"] = "Blood Tanky",
 					["sliceToken"] = "ABuestYWif4",
 				}, -- [6]
-				["limit"] = "Krixidk-GrimBatol",
-				["save"] = true,
 				["name"] = "Gearsets",
+				["save"] = true,
 				["hotkey"] = "F2",
+				["limit"] = "Krixidk-GrimBatol",
 			},
 			["DeathKnightPresence"] = {
 				{
-					["id"] = "/cast [help,dead] {{spell:61999}}; [nopet,nomounted][@pet,dead] {{spell:46584}}; [@pet,nodead,exists][nomod] {{spell:47541}}; [mod] {{spell:48743}}",
 					["sliceToken"] = "OPCDPp",
 					["c"] = "52ff5a",
+					["id"] = "/cast [help,dead] {{spell:61999}}; [nopet,nomounted][@pet,dead] {{spell:46584}}; [@pet,nodead,exists][nomod] {{spell:47541}}; [mod] {{spell:48743}}",
 				}, -- [1]
 				{
-					["id"] = 48263,
 					["sliceToken"] = "OPCDPb",
 					["c"] = "e54c19",
+					["id"] = 48263,
 				}, -- [2]
 				{
-					["id"] = 48266,
 					["sliceToken"] = "OPCDPf",
 					["c"] = "1999e5",
+					["id"] = 48266,
 				}, -- [3]
 				{
-					["id"] = 48265,
 					["sliceToken"] = "OPCDPu",
 					["c"] = "4ce519",
+					["id"] = 48265,
 				}, -- [4]
 				{
-					["id"] = 50977,
 					["sliceToken"] = "OPCDPg",
 					["c"] = "a93ae8",
+					["id"] = 50977,
 				}, -- [5]
 				{
-					["id"] = "/cast [flyable,nomod][flying] {{spell:54729}}; {{spell:48778}}; [flyable,nomod][flying] {{mount:air}}; {{mount:ground}}",
 					["sliceToken"] = "OPCDPm",
 					["c"] = "e8c682",
+					["id"] = "/cast [flyable,nomod][flying] {{spell:54729}}; {{spell:48778}}; [flyable,nomod][flying] {{mount:air}}; {{mount:ground}}",
 				}, -- [6]
 				{
-					["id"] = 3714,
 					["sliceToken"] = "OPCDPo",
 					["c"] = "63eaff",
+					["id"] = 3714,
 				}, -- [7]
-				["limit"] = "DEATHKNIGHT",
-				["save"] = true,
 				["name"] = "Presences",
+				["save"] = true,
 				["hotkey"] = "BUTTON4",
+				["limit"] = "DEATHKNIGHT",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

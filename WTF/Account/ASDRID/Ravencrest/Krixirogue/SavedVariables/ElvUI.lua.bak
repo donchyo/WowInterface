@@ -1,0 +1,33 @@
+
+ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+	},
+	["BodyGuard"] = {
+		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
+	},
+	["ChatEditHistory"] = {
+		" motherload", -- [1]
+		" ok", -- [2]
+		" understandable", -- [3]
+		" oh", -- [4]
+		" i saw your dps on zul", -- [5]
+		" you're a monkey :D", -- [6]
+		" yea", -- [7]
+		" LOL", -- [8]
+		" aljan just kited", -- [9]
+		"/g we're gonig on saturday robin", -- [10]
+		" we had so  many rogues", -- [11]
+		"/cw Slimmalinda-Ravencrest tja", -- [12]
+		"/cw Slimmalinda-Ravencrest ska äta strax", -- [13]
+		" 4th ring |cffa335ee|Hitem:158318::::::::120:261::35:3:5010:1552:4783:::|h[Murky Cerulean Signet]|h|r", -- [14]
+		"/cw Slimmalinda-Ravencrest borde gå", -- [15]
+		"/p ska göra worlboss", -- [16]
+		" inv", -- [17]
+		"/M", -- [18]
+		" tror jag skippar fathoms ett tag ddå", -- [19]
+		" tills jag får lite mer gear", -- [20]
+	},
+}

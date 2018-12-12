@@ -24,19 +24,19 @@ oRA3DB = {
 		["ReadyCheck"] = {
 			["profiles"] = {
 				["Default"] = {
-					["autohide"] = false,
 					["hideOnCombat"] = false,
+					["autohide"] = false,
 					["sound"] = false,
 				},
 			},
 		},
 		["Alerts"] = {
 			["profiles"] = {
-				["Krixi"] = {
+				["Skullflower"] = {
 					["resurrect"] = true,
 					["tauntPet"] = true,
 				},
-				["Skullflower"] = {
+				["Krixi"] = {
 					["resurrect"] = true,
 					["tauntPet"] = true,
 				},
@@ -132,31 +132,35 @@ oRA3DB = {
 		["Kriximonk - Ravencrest"] = "Default",
 		["Krixidh - Ravencrest"] = "Default",
 		["Krixidk - Ravencrest"] = "Krixi",
+		["Memeinhaler - Ravencrest"] = "Default",
 		["Krixiyo - Twisting Nether"] = "Default",
 		["Kroxi - Grim Batol"] = "Krixi",
 		["Namji - Grim Batol"] = "Default",
+		["Kroxi - Ravencrest"] = "Default",
 		["Bawsie - Grim Batol"] = "Default",
+		["Donch - Grim Batol"] = "Default",
 		["Krixiyo - Lightning's Blade"] = "Default",
 		["Donch - Shattered Hand"] = "Default",
-		["Lowerboost - Lightbringer"] = "Default",
 		["Krixiqt - Ravencrest"] = "Default",
+		["Lowerboost - Lightbringer"] = "Default",
+		["Dumbgoat - Ravencrest"] = "Default",
 		["Kriximonk - Valley of Heroes - EU"] = "Default",
-		["Donch - Grim Batol"] = "Default",
+		["Krixi - Grim Batol"] = "Krixi",
 		["Zetiz - Grim Batol"] = "Default",
-		["Zolution - Grim Batol"] = "Default",
+		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Treefiddy - Aggra (Português)"] = "Default",
 		["Kroxi - Crushridge"] = "Default",
-		["Krixidh - Grim Batol"] = "Krixi",
-		["Menardiairl - Culte de la Rive noire"] = "Default",
 		["Líttle - Grim Batol"] = "Default",
+		["Krixidh - Grim Batol"] = "Krixi",
+		["Nyrith - Grim Batol"] = "Default",
 		["Krixikin - Grim Batol"] = "Default",
 		["Krixidh - Valley of Heroes - EU"] = "Default",
 		["Asdasdasdfaf - Grim Batol"] = "Default",
 		["Kriximonk - Grim Batol"] = "Default",
-		["Nyrith - Grim Batol"] = "Default",
+		["Zolution - Grim Batol"] = "Default",
 		["Daroislost - Valley of Heroes - EU"] = "Default",
 		["Zuriz - Grim Batol"] = "Default",
-		["Krixi - Grim Batol"] = "Krixi",
+		["Krixirogue - Ravencrest"] = "Default",
 		["Krixidk - Valley of Heroes - EU"] = "Default",
 	},
 	["profiles"] = {
@@ -217,7 +221,7 @@ oRA3DB = {
 			["lastSelectedPanel"] = "Checks",
 		},
 		["Krixi"] = {
-			["lastSelectedPanel"] = "Checks",
+			["lastSelectedList"] = 1,
 			["positions"] = {
 				["oRA3ReadyCheck"] = {
 					["Height"] = 225,
@@ -242,7 +246,7 @@ oRA3DB = {
 					["PosX"] = 1028.80052461621,
 				},
 			},
-			["lastSelectedList"] = 1,
+			["lastSelectedPanel"] = "Checks",
 		},
 	},
 }

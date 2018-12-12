@@ -7,17 +7,15 @@ _detalhes_database = {
 		["tabelas"] = {
 		},
 	},
-	["combat_counter"] = 11770,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
+	["last_version"] = "v8.0.1.6678",
+	["force_font_outline"] = "",
 	["tabela_instancias"] = {
 	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
 			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
+			["horizontalSnap"] = false,
 			["verticalSnap"] = false,
 			["is_open"] = true,
 			["isLocked"] = true,
@@ -29,16 +27,15 @@ _detalhes_database = {
 				13, -- [5]
 			},
 			["snap"] = {
-				[3] = 2,
 			},
 			["mode"] = 2,
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328211809839,
-					["x"] = 541.25006094488,
-					["w"] = 208.360977172852,
-					["h"] = 127.507873535156,
+					["y"] = -397.328143831935,
+					["x"] = 541.251873688982,
+					["w"] = 208.361206054688,
+					["h"] = 127.507972717285,
 				},
 				["solo"] = {
 					["y"] = 1.99997882781701,
@@ -51,7 +48,7 @@ _detalhes_database = {
 		{
 			["segment"] = 0,
 			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
+			["horizontalSnap"] = false,
 			["verticalSnap"] = false,
 			["is_open"] = true,
 			["isLocked"] = true,
@@ -63,16 +60,15 @@ _detalhes_database = {
 				1, -- [5]
 			},
 			["snap"] = {
-				1, -- [1]
 			},
 			["mode"] = 2,
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -397.328211809839,
+					["y"] = -397.328143831935,
 					["x"] = 748.860984304405,
-					["w"] = 211.055404663086,
-					["h"] = 127.507873535156,
+					["w"] = 211.055526733398,
+					["h"] = 127.507972717285,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -128,10 +124,17 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["last_instance_time"] = 1507661652,
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "06",
-	["ignore_nicktag"] = false,
+	["last_day"] = "17",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -139,10 +142,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = true,
 			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -770,11 +773,11 @@ _detalhes_database = {
 					"Interface\\Icons\\spell_sandstorm", -- [4]
 					["id"] = 1784,
 				},
-				["183329"] = {
-					"183329", -- [1]
-					"Apocalypse (1)", -- [2]
-					51.5, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ShadowPower", -- [4]
+				["dominator"] = {
+					"dominator", -- [1]
+					"Sargerei Dominator (1)", -- [2]
+					24, -- [3]
+					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
 					["id"] = 1794,
 				},
 				["182020"] = {
@@ -791,12 +794,12 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Rampage", -- [4]
 					["id"] = 1692,
 				},
-				["156390"] = {
-					"156390", -- [1]
-					"Explosive Shard", -- [2]
-					9, -- [3]
-					"Interface\\Icons\\6bf_explosive_shard", -- [4]
-					["id"] = 1696,
+				["imps"] = {
+					"imps", -- [1]
+					"Wild Pyromaniac", -- [2]
+					12, -- [3]
+					"Interface\\Icons\\spell_shadow_summonimp", -- [4]
+					["id"] = 1800,
 				},
 				["180040"] = {
 					"180040", -- [1]
@@ -819,12 +822,12 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\warrior_talent_icon_mastercleaver", -- [4]
 					["id"] = 1777,
 				},
-				["155326"] = {
-					"155326", -- [1]
-					"Smash or Slam", -- [2]
-					21, -- [3]
-					"Interface\\Icons\\ability_kilruk_reave", -- [4]
-					["id"] = 1691,
+				["158054"] = {
+					"158054", -- [1]
+					"Smash (1)", -- [2]
+					26, -- [3]
+					"Interface\\Icons\\INV_Elemental_Primal_Fire", -- [4]
+					["id"] = 1704,
 				},
 				["182200"] = {
 					"182200", -- [1]
@@ -840,40 +843,19 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossfelmagnaron_handempowered", -- [4]
 					["id"] = 1787,
 				},
-				["155064"] = {
-					"155064", -- [1]
-					"Rekindle", -- [2]
-					8, -- [3]
-					"Interface\\Icons\\inv_misc_volatilefire", -- [4]
-					["id"] = 1689,
-				},
-				["180224"] = {
-					"180224", -- [1]
-					"Death Throes (1)", -- [2]
+				["181295"] = {
+					"181295", -- [1]
+					"Digest on YOU!", -- [2]
 					40, -- [3]
-					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
-					["id"] = 1786,
+					"Interface\\Icons\\Spell_Shadow_DeathCoil", -- [4]
+					["id"] = 1783,
 				},
-				["molten_torrent_self"] = {
-					"molten_torrent_self", -- [1]
-					"You explode!", -- [2]
-					6, -- [3]
-					"Interface\\Icons\\spell_burningbladeshaman_molten_torrent", -- [4]
-					["id"] = 1689,
-				},
-				["adds"] = {
-					"adds", -- [1]
-					"Middle: Iron Dragoon", -- [2]
-					18, -- [3]
-					"Interface\\Icons\\achievement_character_orc_male", -- [4]
-					["id"] = 1778,
-				},
-				["siegemaker"] = {
-					"siegemaker", -- [1]
-					"Siegemaker (1)", -- [2]
+				["185237"] = {
+					"185237", -- [1]
+					"Touch of Harm", -- [2]
 					16, -- [3]
-					"Interface\\Icons\\ability_vehicle_siegeenginecharge", -- [4]
-					["id"] = 1704,
+					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
+					["id"] = 1784,
 				},
 				["180163"] = {
 					"180163", -- [1]
@@ -882,6 +864,27 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Warrior_Bloodsurge", -- [4]
 					["id"] = 1786,
 				},
+				["156240"] = {
+					"156240", -- [1]
+					"Acid Torrent (1)", -- [2]
+					10.7, -- [3]
+					"Interface\\Icons\\6bf_retched_blackrock", -- [4]
+					["id"] = 1696,
+				},
+				["siegemaker"] = {
+					"siegemaker", -- [1]
+					"Siegemaker (1)", -- [2]
+					16, -- [3]
+					"Interface\\Icons\\ability_vehicle_siegeenginecharge", -- [4]
+					["id"] = 1704,
+				},
+				["adds"] = {
+					"adds", -- [1]
+					"Middle: Iron Dragoon", -- [2]
+					18, -- [3]
+					"Interface\\Icons\\achievement_character_orc_male", -- [4]
+					["id"] = 1778,
+				},
 				["155794"] = {
 					"155794", -- [1]
 					"Blade Dash", -- [2]
@@ -889,26 +892,26 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_Rogue_QuickRecovery", -- [4]
 					["id"] = 1695,
 				},
-				["184449"] = {
-					"184449", -- [1]
-					"Mark of the Necromancer", -- [2]
-					6.3, -- [3]
-					"Interface\\Icons\\ability_bossfelorcs_necromancer_purple", -- [4]
-					["id"] = 1798,
+				["184369"] = {
+					"184369", -- [1]
+					"Howling Axe", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
+					["id"] = 1778,
 				},
-				["155493"] = {
-					"155493", -- [1]
-					"Firestorm (1)", -- [2]
-					62, -- [3]
-					"Interface\\Icons\\spell_shaman_stormearthfire", -- [4]
-					["id"] = 1689,
+				["156877"] = {
+					"156877", -- [1]
+					"Blackrock Barrage", -- [2]
+					14, -- [3]
+					"Interface\\Icons\\6bf_blackrock_nova", -- [4]
+					["id"] = 1696,
 				},
-				["182001"] = {
-					"182001", -- [1]
-					"Unstable Orb", -- [2]
-					8.5, -- [3]
-					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
-					["id"] = 1785,
+				["156203"] = {
+					"156203", -- [1]
+					"Retched Blackrock", -- [2]
+					7, -- [3]
+					"Interface\\Icons\\ability_vehicle_oiljets", -- [4]
+					["id"] = 1696,
 				},
 				["181180"] = {
 					"181180", -- [1]
@@ -931,12 +934,12 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_bossmannoroth_mannorothsgaze", -- [4]
 					["id"] = 1795,
 				},
-				["181999"] = {
-					"181999", -- [1]
-					"Firebomb (1)", -- [2]
-					11, -- [3]
-					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
-					["id"] = 1785,
+				["179407"] = {
+					"179407", -- [1]
+					"Disembodied: Fannox*", -- [2]
+					15, -- [3]
+					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
+					["id"] = 1777,
 				},
 				["179711"] = {
 					"179711", -- [1]
@@ -945,11 +948,11 @@ _detalhes_database = {
 					"Interface\\Icons\\Spell_Shadow_GatherShadows", -- [4]
 					["id"] = 1777,
 				},
-				["-9352"] = {
-					"-9352", -- [1]
-					"Enchanted Weapon", -- [2]
-					46, -- [3]
-					"Interface\\Icons\\inv_sword_1h_firelandsraid_d_04", -- [4]
+				["154932"] = {
+					"154932", -- [1]
+					"Molten Torrent", -- [2]
+					31, -- [3]
+					"Interface\\Icons\\spell_burningbladeshaman_molten_torrent", -- [4]
 					["id"] = 1689,
 				},
 				["180008"] = {
@@ -980,19 +983,19 @@ _detalhes_database = {
 					"Interface\\Icons\\6bf_explosive_shard", -- [4]
 					["id"] = 1690,
 				},
-				["154932"] = {
-					"154932", -- [1]
-					"Molten Torrent", -- [2]
-					31, -- [3]
-					"Interface\\Icons\\spell_burningbladeshaman_molten_torrent", -- [4]
+				["-9352"] = {
+					"-9352", -- [1]
+					"Enchanted Weapon", -- [2]
+					46, -- [3]
+					"Interface\\Icons\\inv_sword_1h_firelandsraid_d_04", -- [4]
 					["id"] = 1689,
 				},
-				["179407"] = {
-					"179407", -- [1]
-					"Disembodied: Fannox*", -- [2]
-					15, -- [3]
-					"Interface\\Icons\\Ability_Mage_PotentSpirit", -- [4]
-					["id"] = 1777,
+				["181999"] = {
+					"181999", -- [1]
+					"Firebomb (1)", -- [2]
+					11, -- [3]
+					"Interface\\Icons\\ability_ironmaidens_bombardment", -- [4]
+					["id"] = 1785,
 				},
 				["182066"] = {
 					"182066", -- [1]
@@ -1001,26 +1004,26 @@ _detalhes_database = {
 					"INTERFACE\\ICONS\\spell_shaman_earthquake", -- [4]
 					["id"] = 1785,
 				},
-				["156203"] = {
-					"156203", -- [1]
-					"Retched Blackrock", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\ability_vehicle_oiljets", -- [4]
-					["id"] = 1696,
+				["182001"] = {
+					"182001", -- [1]
+					"Unstable Orb", -- [2]
+					8.5, -- [3]
+					"Interface\\Icons\\Spell_Fire_FelFlameRing", -- [4]
+					["id"] = 1785,
 				},
-				["156877"] = {
-					"156877", -- [1]
-					"Blackrock Barrage", -- [2]
-					14, -- [3]
-					"Interface\\Icons\\6bf_blackrock_nova", -- [4]
-					["id"] = 1696,
+				["155493"] = {
+					"155493", -- [1]
+					"Firestorm (1)", -- [2]
+					62, -- [3]
+					"Interface\\Icons\\spell_shaman_stormearthfire", -- [4]
+					["id"] = 1689,
 				},
-				["184369"] = {
-					"184369", -- [1]
-					"Howling Axe", -- [2]
-					7, -- [3]
-					"Interface\\Icons\\Ability_Hunter_MarkedForDeath", -- [4]
-					["id"] = 1778,
+				["184449"] = {
+					"184449", -- [1]
+					"Mark of the Necromancer", -- [2]
+					6.3, -- [3]
+					"Interface\\Icons\\ability_bossfelorcs_necromancer_purple", -- [4]
+					["id"] = 1798,
 				},
 				["180244"] = {
 					"180244", -- [1]
@@ -1029,40 +1032,40 @@ _detalhes_database = {
 					"Interface\\Icons\\Ability_GolemThunderClap", -- [4]
 					["id"] = 1787,
 				},
-				["156240"] = {
-					"156240", -- [1]
-					"Acid Torrent (1)", -- [2]
-					10.7, -- [3]
-					"Interface\\Icons\\6bf_retched_blackrock", -- [4]
-					["id"] = 1696,
+				["molten_torrent_self"] = {
+					"molten_torrent_self", -- [1]
+					"You explode!", -- [2]
+					6, -- [3]
+					"Interface\\Icons\\spell_burningbladeshaman_molten_torrent", -- [4]
+					["id"] = 1689,
 				},
-				["185237"] = {
-					"185237", -- [1]
-					"Touch of Harm", -- [2]
-					16, -- [3]
-					"Interface\\Icons\\Spell_Shadow_ChillTouch", -- [4]
-					["id"] = 1784,
-				},
-				["181295"] = {
-					"181295", -- [1]
-					"Digest on YOU!", -- [2]
+				["180224"] = {
+					"180224", -- [1]
+					"Death Throes (1)", -- [2]
 					40, -- [3]
-					"Interface\\Icons\\Spell_Shadow_DeathCoil", -- [4]
-					["id"] = 1783,
+					"Interface\\Icons\\Ability_Warrior_Cleave", -- [4]
+					["id"] = 1786,
 				},
-				["158054"] = {
-					"158054", -- [1]
-					"Smash (1)", -- [2]
-					26, -- [3]
-					"Interface\\Icons\\INV_Elemental_Primal_Fire", -- [4]
-					["id"] = 1704,
+				["155064"] = {
+					"155064", -- [1]
+					"Rekindle", -- [2]
+					8, -- [3]
+					"Interface\\Icons\\inv_misc_volatilefire", -- [4]
+					["id"] = 1689,
 				},
-				["imps"] = {
-					"imps", -- [1]
-					"Wild Pyromaniac", -- [2]
-					12, -- [3]
-					"Interface\\Icons\\spell_shadow_summonimp", -- [4]
-					["id"] = 1800,
+				["155326"] = {
+					"155326", -- [1]
+					"Smash or Slam", -- [2]
+					21, -- [3]
+					"Interface\\Icons\\ability_kilruk_reave", -- [4]
+					["id"] = 1691,
+				},
+				["156390"] = {
+					"156390", -- [1]
+					"Explosive Shard", -- [2]
+					9, -- [3]
+					"Interface\\Icons\\6bf_explosive_shard", -- [4]
+					["id"] = 1696,
 				},
 				["158315"] = {
 					"158315", -- [1]
@@ -1071,22 +1074,22 @@ _detalhes_database = {
 					"Interface\\Icons\\ability_ironmaidens_darkhunt", -- [4]
 					["id"] = 1695,
 				},
-				["dominator"] = {
-					"dominator", -- [1]
-					"Sargerei Dominator (1)", -- [2]
-					24, -- [3]
-					"Interface\\Icons\\achievement_boss_kiljaedan", -- [4]
+				["183329"] = {
+					"183329", -- [1]
+					"Apocalypse (1)", -- [2]
+					51.5, -- [3]
+					"Interface\\Icons\\Spell_Shadow_ShadowPower", -- [4]
 					["id"] = 1794,
 				},
 			},
 			["max_emote_segments"] = 3,
 			["hide_on_combat"] = false,
 			["opened"] = 0,
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 			["show_icon"] = 5,
 			["encounter_timers_dbm"] = {
 			},
-			["author"] = "Details! Team",
+			["window_scale"] = 1,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -1113,11 +1116,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["scale"] = 1,
-			["row_height"] = 20,
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["point"] = "TOP",
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -1125,9 +1128,14 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
@@ -1138,27 +1146,22 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -4.442945282789880e-005,
 				["x"] = 8.088644244708120e-005,
-				["size"] = 32,
-				["update_speed"] = 0.0160000007599592,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.0160000007599592,
+				["size"] = 32,
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["main_frame_locked"] = false,
-			["arrow_anchor_y"] = 0,
+			["font_size"] = 10,
+			["point"] = "TOP",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
-			["auto_open"] = true,
 			["rightclick_closed"] = false,
+			["auto_open"] = true,
 			["auto_close"] = true,
-			["author"] = "Details! Team",
 			["hide_on_combat"] = true,
+			["author"] = "Details! Team",
 			["deaths_table"] = {
 				{
 					"Flamebender Ka'graz", -- [1]
@@ -1775,47 +1778,24 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 			["realm_history"] = {
 			},
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
-		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["enabled"] = true,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["author"] = "Details! Team",
-			["useclasscolors"] = false,
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["animate"] = false,
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -1825,15 +1805,53 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-	},
-	["last_encounter"] = "Tichondrius",
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1534440676,
-	},
-	["benchmark_db"] = {
-		["frame"] = {
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["showamount"] = false,
+			["animate"] = false,
+			["useplayercolor"] = false,
+			["useclasscolors"] = false,
+			["author"] = "Details! Team",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["enabled"] = true,
+		},
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+		},
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["last_realversion"] = 135,
+	["ignore_nicktag"] = false,
+	["last_encounter"] = "Tichondrius",
+	["combat_counter"] = 11780,
+	["combat_id"] = 258,
+	["savedStyles"] = {
+	},
+	["last_instance_time"] = 1507661652,
+	["cached_talents"] = {
+		["Player-1303-06FB0BB8"] = {
+		},
+	},
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["character_data"] = {
+		["logons"] = 1703,
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "The Arcway",
@@ -1846,32 +1864,14 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1516,
 		["previous_boss_killed_at"] = 1507663200,
 	},
-	["last_version"] = "v8.0.1.6035",
-	["combat_id"] = 258,
-	["savedStyles"] = {
-	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["last_realversion"] = 132,
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
-	},
-	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 1700,
-	},
-	["cached_talents"] = {
+	["nick_tag_cache"] = {
+		["last_version"] = 10,
+		["nextreset"] = 1543769067,
 	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

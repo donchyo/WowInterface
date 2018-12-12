@@ -1,13 +1,16 @@
 
 DataStoreDB = {
 	["profileKeys"] = {
+		["Krixiqt - Ravencrest"] = "Krixiqt - Ravencrest",
 		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
 		["Krixidk - Grim Batol"] = "Skullflower",
 		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
 		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Kroxi - Ravencrest"] = "Kroxi - Ravencrest",
 		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
 		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
 		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Krixidk - Ravencrest"] = "Krixidk - Ravencrest",
 		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
 		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
 		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
@@ -15,51 +18,49 @@ DataStoreDB = {
 		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
 		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
 		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
 		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
 		["Donch - Crushridge"] = "Donch - Crushridge",
 		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
 		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
 		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Krixikin - Grim Batol"] = "Krixikin - Grim Batol",
 		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
 		["Kriximonk - Grim Batol"] = "Kriximonk - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
 		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
 		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
 		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
 		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
 		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
 		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
 	},
 	["global"] = {
 		["Guilds"] = {
 			["Default.Shattered Hand.The Funky Bunch"] = {
 				["faction"] = "Horde",
 			},
+			["Default.Ravencrest.Delusional"] = {
+				["faction"] = "Alliance",
+			},
 			["Default.Kazzak.K A M E L Å S Å"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Grim Batol.Lunos"] = {
-				["faction"] = "Alliance",
-			},
-			["Default.Grim Batol.Jupiter Mining Corp"] = {
-				["faction"] = "Alliance",
-			},
-			["Default.Crushridge.The Bulls"] = {
-				["faction"] = "Alliance",
-			},
 			["Default.Crushridge.Proudly ADDICTED"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Grim Batol.Hoonigans"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Aggra (Português).Jupiter Mining Corp"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Hoonigans"] = {
+			["Default.Crushridge.The Bulls"] = {
 				["faction"] = "Alliance",
 			},
 		},
@@ -79,12 +80,7 @@ DataStoreDB = {
 			["Default.Aggra (Português).Kroxidps"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Zetiz"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Hoonigans",
-			},
-			["Default.Grim Batol.Krixidh"] = {
-				["guildName"] = "Hoonigans",
+			["Default.Lightbringer.Lowerboost"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Grim Batol.Zuriz"] = {
@@ -99,14 +95,11 @@ DataStoreDB = {
 				["faction"] = "Alliance",
 				["guildName"] = "The Bulls",
 			},
-			["Default.Grim Batol.Krixikin"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Hoonigans",
-			},
-			["Default.Lightbringer.Lowerboost"] = {
+			["Default.Ravencrest.Krixiqt"] = {
+				["guildName"] = "Delusional",
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Kriximonk"] = {
+			["Default.Grim Batol.Zolution"] = {
 				["guildName"] = "Hoonigans",
 				["faction"] = "Alliance",
 			},
@@ -117,16 +110,16 @@ DataStoreDB = {
 				["faction"] = "Alliance",
 				["guildName"] = "Hoonigans",
 			},
-			["Default.Grim Batol.Kroxi"] = {
+			["Default.Grim Batol.Krixikin"] = {
 				["guildName"] = "Hoonigans",
 				["faction"] = "Alliance",
 			},
 			["Default.Kazzak.Lilgaykrixi"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Shattered Hand.Donchyo"] = {
-				["faction"] = "Horde",
-				["guildName"] = "The Funky Bunch",
+			["Default.Grim Batol.Kroxi"] = {
+				["guildName"] = "Hoonigans",
+				["faction"] = "Alliance",
 			},
 			["Default.Aggra (Português).Bawsi"] = {
 				["guildName"] = "Hoonigans",
@@ -136,15 +129,15 @@ DataStoreDB = {
 				["guildName"] = "Proudly ADDICTED",
 				["faction"] = "Alliance",
 			},
-			["Default.Grim Batol.Donch"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Hoonigans",
-			},
-			["Default.Shattered Hand.Bawsi"] = {
+			["Default.Shattered Hand.Donchyo"] = {
 				["faction"] = "Horde",
+				["guildName"] = "The Funky Bunch",
 			},
-			["Default.Grim Batol.Zolution"] = {
-				["guildName"] = "Hoonigans",
+			["Default.Ravencrest.Krixidk"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "Delusional",
+			},
+			["Default.Shattered Hand.Donch"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Culte de la Rive noire.Menardiairl"] = {
@@ -153,33 +146,35 @@ DataStoreDB = {
 			["Default.Lightning's Blade.Krixiyo"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Grim Batol.Krixidk"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Hoonigans",
+			["Default.Twisting Nether.Krixiyo"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Grim Batol.Gnomalock"] = {
-				["guildName"] = "Hoonigans",
-				["faction"] = "Alliance",
-			},
-			["Default.Grim Batol.Krixi"] = {
 				["faction"] = "Alliance",
 				["guildName"] = "Hoonigans",
 			},
-			["Default.Shattered Hand.Donch"] = {
+			["Default.Shattered Hand.Bawsi"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Grim Batol.Donch"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "Hoonigans",
 			},
 			["Default.Aggra (Português).Krixiswag"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Twisting Nether.Krixiyo"] = {
-				["faction"] = "Horde",
+			["Default.Ravencrest.Kroxi"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "Delusional",
 			},
 		},
 		["ShortToLongRealmNames"] = {
 			["TwistingNether"] = "Twisting Nether",
-			["ShatteredHand"] = "Shattered Hand",
 			["GrimBatol"] = "Grim Batol",
+			["ShatteredHand"] = "Shattered Hand",
+			["Ravencrest"] = "Ravencrest",
 			["Lightbringer"] = "Lightbringer",
+			["ValleyofHeroes-EU"] = "Valley of Heroes - EU",
 			["Kazzak"] = "Kazzak",
 			["Blackmoore"] = "Blackmoore",
 		},

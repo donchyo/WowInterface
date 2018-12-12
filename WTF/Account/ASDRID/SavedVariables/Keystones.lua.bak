@@ -10,16 +10,16 @@ keystonesConfig = {
 	["longTooltip"] = false,
 	["version"] = "1.3",
 	["maxRewardLevel"] = 10,
+	["announceNewToParty"] = true,
 	["nextReset"] = 1532502000,
-	["displayNewKeyOf"] = "PARTY",
 	["guiOptions"] = {
+		["keepAccsTogether"] = false,
+		["showOfflineAccs"] = true,
+		["showCharsWithoutKey"] = true,
+		["showOfflineChars"] = true,
 		["colorizeNames"] = false,
 		["dungeonBlacklist"] = {
 		},
-		["showCharsWithoutKey"] = true,
-		["showOfflineChars"] = true,
-		["keepAccsTogether"] = false,
-		["showOfflineAccs"] = true,
 		["headers"] = {
 			"Character", -- [1]
 			"Best", -- [2]
@@ -27,5 +27,5 @@ keystonesConfig = {
 			"Level", -- [4]
 		},
 	},
-	["announceNewToParty"] = true,
+	["displayNewKeyOf"] = "PARTY",
 }

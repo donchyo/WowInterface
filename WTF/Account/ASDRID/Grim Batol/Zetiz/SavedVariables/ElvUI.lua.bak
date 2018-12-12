@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		" like", -- [1]
-		" he might be good if he gives a shit", -- [2]
-		" it didnt show in the upper atleast", -- [3]
-		" i can check", -- [4]
-		" but its like", -- [5]
-		" 50k i think", -- [6]
-		" but im waiting for 2x mails i think", -- [7]
-		"/g you got a mount!", -- [8]
-		"/g what mount is that", -- [9]
-		"/g aha", -- [10]
-		"/g nah, im done with that", -- [11]
-		"/g trying to make addons now", -- [12]
-		"/g but i have nothing to do", -- [13]
-		"/g dik", -- [14]
-		" nigga", -- [15]
-		" whatsup", -- [16]
-		" just checking bmah", -- [17]
-		" oi nerd", -- [18]
-		"/chocolatebar", -- [19]
-		"/wa", -- [20]
+		"/m", -- [1]
+		" there are 2 ways", -- [2]
+		" mouseover", -- [3]
+		" but i had something tht targetedd enemys", -- [4]
+		" hmm", -- [5]
+		" i check for it", -- [6]
+		" you could try this", -- [7]
+		" and bind it to scroll or something", -- [8]
+		" i think thats what i did", -- [9]
+		" otherwise you could do mouseover i guess", -- [10]
+		" pog", -- [11]
+		" shiet", -- [12]
+		" 4%", -- [13]
+		" ez clap", -- [14]
+		" ok", -- [15]
+		" that took a bit too long", -- [16]
+		" i used to play here", -- [17]
+		" before i joined delusional", -- [18]
+		" well, i think im moving this char to ravencrest anyway", -- [19]
+		" and making it a voidelf", -- [20]
 	},
 }
