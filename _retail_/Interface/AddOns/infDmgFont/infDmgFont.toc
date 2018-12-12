@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rDmgFont
+## Author: iNFEH @ methodwow.com
+## Notes: Moist awesomeness, directly in your face.
+infDmgFont.lua 

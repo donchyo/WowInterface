@@ -1,0 +1,12 @@
+lightweight tag 719adf8e44f4ad130d3522f82d62280fcd786749 8.0.1
+Author:	Mikeprod <Mikeprod@users.noreply.github.com>
+Date:	Wed Oct 31 01:19:26 2018 +0100
+
+commit 719adf8e44f4ad130d3522f82d62280fcd786749
+Author: xeropresence <3128949+xeropresence@users.noreply.github.com>
+Date:   Tue Oct 30 20:19:26 2018 -0400
+
+    Update FriendGroups.lua (#14)
+    
+    Unannounced changes to friendsframe.lua by blizzard
+

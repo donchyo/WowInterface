@@ -1,0 +1,6 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rSEF
+## Author: iNFEH @ methodwow.com
+## Notes: asdf.
+infSEF.xml
+infSEF.lua

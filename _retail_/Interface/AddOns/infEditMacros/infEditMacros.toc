@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rEditMacros
+## Author: iNFEH @ methodwow.com
+## Notes: asdf.
+infEditMacros.lua

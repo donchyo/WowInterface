@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rMinimap
+## Author: iNFEH @ methodwow.com
+## Notes: Minimap shit
+infMinimap.lua

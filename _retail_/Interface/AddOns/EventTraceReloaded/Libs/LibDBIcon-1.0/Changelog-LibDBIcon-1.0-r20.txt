@@ -1,0 +1,13 @@
+------------------------------------------------------------------------
+r20 | rabbit | 2011-06-28 21:40:26 +0000 (Tue, 28 Jun 2011) | 1 line
+Changed paths:
+   M /trunk/LibDBIcon-1.0.toc
+
+toc bump
+------------------------------------------------------------------------
+r19 | rabbit | 2011-05-05 13:55:11 +0000 (Thu, 05 May 2011) | 1 line
+Changed paths:
+   M /trunk/LibDBIcon-1.0/LibDBIcon-1.0.lua
+
+Update the GetMinimapShape values courtesy of ethancentaurai in bug 14.
+------------------------------------------------------------------------

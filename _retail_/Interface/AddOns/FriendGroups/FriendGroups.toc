@@ -1,0 +1,10 @@
+## Interface: 80000
+## Title: Friend Groups
+## Author: Mikeprod
+## Version: 8.0
+
+## Notes: Addon managing your contact list with groups
+## SavedVariables: FriendGroups_SavedVars
+## X-Issues: https://github.com/Mikeprod/FriendGroups/issues/
+
+FriendGroups.lua

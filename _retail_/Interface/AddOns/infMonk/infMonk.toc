@@ -1,0 +1,6 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rMonk
+## Author: iNFEH @ methodwow.com
+## Notes: asdf.
+## Dependencies: MikScrollingBattleText
+infMonk.lua

@@ -1,0 +1,20 @@
+<Bindings>
+	<Binding name="CLICK ClearRaidFlares:LeftButton" description="Clear Flares" header="infFlares" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK RaidFlare1:LeftButton" description="Blue Flare" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK RaidFlare2:LeftButton" description="Green Flare" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK RaidFlare3:LeftButton" description="Purple Flare" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK RaidFlare4:LeftButton" description="Red Flare" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK RaidFlare5:LeftButton" description="Yellow Flare" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK RaidFlare6:LeftButton" description="Orange Flare" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK RaidFlare7:LeftButton" description="Silver Flare" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+	<Binding name="CLICK RaidFlare8:LeftButton" description="White Flare" category="BINDING_CATEGORY_infAddons">
+	</Binding>
+</Bindings>

@@ -1,0 +1,6 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rRunes
+## Author: iNFEH @ methodwow.com
+## Notes: Six pack biatches
+infRunes.xml
+infRunes.lua

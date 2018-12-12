@@ -1,0 +1,9 @@
+## Interface: 70200
+## Title: Lazy Keystones
+## Author: Caedis
+## Notes: Automates the process of inserting your keystone into the Font of Power when starting a Mythic Plus run
+## Version: 1.0
+## DefaultState: Enabled
+## LoadOnDemand: 0
+
+core.lua

@@ -1,0 +1,6 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rCooldowns
+## Author: iNFEH @ methodwow.com
+## Notes: asdf.
+## Dependencies: Bartender4
+infCooldowns.lua

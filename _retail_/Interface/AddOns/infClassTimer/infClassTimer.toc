@@ -1,0 +1,5 @@
+﻿## Interface: 60000
+## Title: |cff3399FFinf|rClassTimer
+## Author: iNFEH @ methodwow.com
+## Notes: asdf.
+infClassTimer.lua

@@ -1,0 +1,7 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rTabmagic
+## Author: iNFEH @ methodwow.com
+## Notes: asdf.
+## SavedVariables: infTabmagic_pve_tne, infTabmagic_pve_tnep
+## Dependencies: Blizzard_BindingUI
+infTabmagic.lua

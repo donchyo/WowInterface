@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rBGMiniMapSkinner
+## Author: iNFEH @ methodwow.com
+## Notes: asdf.
+infBGMiniMapSkinner.lua

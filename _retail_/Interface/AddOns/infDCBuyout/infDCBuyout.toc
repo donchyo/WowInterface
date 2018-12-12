@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rDCBuyout
+## Author: iNFEH @ methodwow.com
+## Notes: Double Click Buyout.
+infDCBuyout.lua

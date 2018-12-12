@@ -1,0 +1,12 @@
+tag c612445a2cbf7e5de081ec7f36e32420212f4e0b v1.713
+Author:	Jesse Manelius <jessemanelius@gmail.com>
+Date:	Sat Sep 15 02:41:28 2018 +0300
+
+tagging as v1.713
+
+commit 1a4d78e701e68bd25281fa453bbf942d0a0038bb
+Author: Jesse Manelius <jessemanelius@gmail.com>
+Date:   Sat Sep 15 02:40:54 2018 +0300
+
+    fix tol dagor instance id (auto slotting)
+

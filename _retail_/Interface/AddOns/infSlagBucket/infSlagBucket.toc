@@ -1,0 +1,8 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rSlagBucket
+## Author: iNFEH @ methodwow.com
+## Notes: Adds helm and cloak toggle functionality for the equipment manager.
+## DefaultState: Enabled
+## SavedVariables: infSlagBucketDB
+infSlagBucket.xml
+infSlagBucket.lua

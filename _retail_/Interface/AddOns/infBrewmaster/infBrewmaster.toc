@@ -1,0 +1,5 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rBrewmaster
+## Author: iNFEH @ methodwow.com
+## Notes: Brewmaster.
+infBrewmaster.lua

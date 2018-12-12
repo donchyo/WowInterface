@@ -1,0 +1,7 @@
+changeset:   80:a31af0344778
+tag:         v8.0.1.080
+user:        Tercio
+date:        Tue Aug 28 13:53:59 2018 -0300
+summary:     - Do not flash if a rare is spotted while in a taxi.
+
+

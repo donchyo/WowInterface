@@ -1,0 +1,12 @@
+tag 3f4ff88c41d3d35872f9ae72476c3a01388845dc v1.1.6
+Author:	Kyle Buller <bullerk@gmail.com>
+Date:	Sun Jul 22 20:38:41 2018 -0500
+
+Tagging as v1.1.6
+
+commit 5bdf990d5bad37a48d742131d25fe6325d38cde1
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sun Jul 22 20:16:35 2018 -0500
+
+    Tweak options so we don't get a scroll bar
+

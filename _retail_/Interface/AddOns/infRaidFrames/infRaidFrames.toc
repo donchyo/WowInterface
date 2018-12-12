@@ -1,0 +1,7 @@
+## Interface: 60000
+## Title: |cff3399FFinf|rRaidFrames
+## Author: iNFEH @ methodwow.com
+## Notes: Custom Raid Frames
+## DefaultState: Enabled
+## LoadOnDemand: 0
+infRaidFrames.lua

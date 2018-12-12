@@ -1,0 +1,93 @@
+commit ccc922407043e13689dbd6954b29ab8609431c0f
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Wed Sep 2 19:45:38 2009 -0700
+
+    - Fixed issues related to profiling with filters up
+    - Fixed children not showing if their parent is filtered (Orphaning children is always a sad thing)
+
+commit 71f676bf538a408cacfd1d1ab98ed0be82e37864
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Wed Aug 5 14:21:36 2009 -0700
+
+    - Fixed CPU to show in seconds instead of milliseconds, CPU/Sec still shows in milliseconds thought
+    - Added text indicating CPU is shown in seconds, CPU/Sec in milliseconds
+
+commit 65cc257fe6e9304a8e35ddb9f3189bb15e18862f
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Wed Aug 5 14:20:53 2009 -0700
+
+    TOC Bump + AddonLoader support
+
+commit 1740accb7f7afd264fb39535a27c2a6d7b1d3397
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Wed Aug 5 14:20:41 2009 -0700
+
+    * Split localization into its own file
+
+commit 229cafbba59da8ce5e8c00a915ef743a94774ebe
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Sun Jul 12 11:12:55 2009 -0700
+
+    * Fixed average cpu used a second being off when modules are enabled
+
+commit 9b50c654b05939c7245f4491c846f4cdd7f1a164
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Sun Jul 5 01:18:52 2009 -0700
+
+    * Fixed profiler interrupted message
+    * Changed addon modules to be expanded by default
+    * Added how long the profiling was to the finished message
+    * Increased displayed rows from 12 to 18
+
+commit a9ce9454f48030d3552b90b5ef66f35787214043
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Tue Jun 23 15:30:41 2009 -0700
+
+    * Changed garbage collection detection, now stops the GC during profile and manually runs a step and then restarts the GC once profiling is done. This should keep the GC numbers at least somewhat accurate without killing performance by having to check memory in a OnUpdate
+
+commit 3cc9483d58c7752f7293fa4eb4e81dfc47116cce
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Mon Jun 22 21:56:17 2009 -0700
+
+    * Actually changed to .- in case multiple underscores are used in a folder name
+
+commit 8735b1084d17b1e24639f09ef30e278d6b94c3b5
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Mon Jun 22 21:51:29 2009 -0700
+
+    * Fixed sorting not working correctly when you had include modules enabled
+    * Fixed sorting not using average CPU when scan finished
+    * Fixed module detection, now attempts to use <parent>_<module> to find the owner first, then it falls back to check if it has only one dependency and associates it that way
+    * Changed to formating to the second decimal place instead of the first for all stats
+    * Changed to chat frame background as it's easier to read the text when the frame isn't 70% alpha
+
+commit ec97cfce43789d968df9e49b2e47a86d305603a8
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Mon Jun 22 17:28:17 2009 -0700
+
+    * Added an addon filter so you can only profile an addon or two if wanted
+    * After profiling finishes, CPU/Sec will turn into Avg/Sec and show the average CPU time in seconds over the profile time
+
+commit 01e88491014e88f034bd1f7ccc596abb215c222d
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Mon Jun 22 16:53:32 2009 -0700
+
+    * Fixed a few things that I broke when renaming
+
+commit b69204c72f5b742af394bf168a3d0dd2a7e14520
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Mon Jun 22 16:36:01 2009 -0700
+
+    * Quick profiling addon that you can set to run for X amount of seconds, stats are reset at the start when it profiles, also attempts to keep track of how much garbage an addon creates. Includes support to group any "modules" into their parents, so if addon Apple has Orange as it's only dependency, then Orange will list its own stats combined with Apple's as well.
+
+commit 3c480f2ce3b92119a5e6ee0bf88dcd149a2c3ba6
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Mon Jun 22 16:34:45 2009 -0700
+
+    * Git being a pain
+
+commit f19aa0173d385b9aa2c0f6e4110fcf891045039e
+Author: Shadowed <shadowed.wow@gmail.com>
+Date:   Mon Jun 22 16:24:31 2009 -0700
+
+    * Quick profiling addon, lets you set a profile duration where it'll keep track of total CPU used over the passed period of time, as well as total amount of garbage created. Profiling stats are reset when you start a new profiler.
