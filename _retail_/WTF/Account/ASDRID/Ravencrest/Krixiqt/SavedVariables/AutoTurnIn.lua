@@ -1,14 +1,15 @@
 
 AutoTurnInCharacterDB = {
 	["togglekey"] = 3,
-	["secondary"] = {
-		["ITEM_MOD_CRIT_RATING_SHORT"] = true,
-		["ITEM_MOD_HASTE_RATING_SHORT"] = true,
+	["weapon"] = {
+		["One-Handed Axes"] = true,
+		["One-Handed Maces"] = true,
+		["One-Handed Swords"] = true,
 	},
 	["questlevel"] = true,
 	["greedifnothingfound"] = true,
 	["showrewardtext"] = false,
-	["questshare"] = true,
+	["trivial"] = false,
 	["watchlevel"] = true,
 	["completeonly"] = false,
 	["enabled"] = true,
@@ -18,21 +19,20 @@ AutoTurnInCharacterDB = {
 		["Shields"] = true,
 		["Plate"] = true,
 	},
+	["version"] = "7.0.9",
 	["darkmoonautostart"] = false,
-	["relictoggle"] = true,
 	["darkmoonteleport"] = false,
-	["artifactpowertoggle"] = true,
+	["tournament"] = 2,
+	["autoequip"] = false,
 	["stat"] = {
 	},
-	["autoequip"] = false,
-	["tournament"] = 2,
-	["version"] = "7.0.9",
+	["artifactpowertoggle"] = true,
+	["relictoggle"] = true,
 	["lootreward"] = 3,
 	["all"] = 1,
-	["trivial"] = false,
-	["weapon"] = {
-		["One-Handed Axes"] = true,
-		["One-Handed Maces"] = true,
-		["One-Handed Swords"] = true,
+	["questshare"] = true,
+	["secondary"] = {
+		["ITEM_MOD_CRIT_RATING_SHORT"] = true,
+		["ITEM_MOD_HASTE_RATING_SHORT"] = true,
 	},
 }

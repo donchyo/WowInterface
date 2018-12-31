@@ -1,12 +1,56 @@
 
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:12864:Player-1303-0387FD7B:1:12:24:18:4294967295:4294967295:4294967295:4294967295|h[80 Exalted Reputations]|h|r!", -- [1]
+			"Donch-GrimBatol", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donch-GrimBatol", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			7, -- [11]
+			"Player-1303-0387FD7B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDonch|r",
+			[51] = 1545655007,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [1]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:12865:Player-1303-0387FD7B:1:12:24:18:4294967295:4294967295:4294967295:4294967295|h[90 Exalted Reputations]|h|r!", -- [1]
+			"Donch-GrimBatol", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donch-GrimBatol", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8, -- [11]
+			"Player-1303-0387FD7B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDonch|r",
+			[51] = 1545655007,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [2]
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
 		" på lektionerna", -- [1]

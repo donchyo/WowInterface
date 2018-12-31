@@ -3,10 +3,10 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatEditHistory"] = {
 		" [14:04:09] Batøoufette-LesSentinelles receives item: [Aman'Thul's Vision]. ", -- [1]

@@ -13,8 +13,8 @@ DejaCharacterStatsDBPC = {
 		["dejacharacterstatsItemLevelChecked"] = {
 			["ItemLevelSetChecked"] = true,
 		},
-		["dejacharacterstatsScrollbarChecked"] = {
-			["ScrollbarSetChecked"] = false,
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
 		},
 		["dejacharacterstatsShowItemRepairChecked"] = {
 			["ShowItemRepairSetChecked"] = false,
@@ -35,37 +35,37 @@ DejaCharacterStatsDBPC = {
 			["DODGE"] = false,
 			["DURABILITY"] = true,
 			["SPELLPOWER"] = false,
-			["FOCUS_REGEN"] = false,
-			["ARMOR"] = true,
+			["MASTERY"] = true,
+			["LIFESTEAL"] = true,
 			["MOVESPEED"] = true,
 			["ATTACK_ATTACKSPEED"] = false,
 			["VERSATILITY"] = true,
-			["POWER"] = true,
-			["INTELLECT"] = true,
-			["CRITCHANCE"] = true,
-			["ATTACK_AP"] = false,
-			["MANAREGEN"] = false,
-			["HEALTH"] = true,
-			["STAMINA"] = true,
+			["ENERGY_REGEN"] = false,
+			["AVOIDANCE"] = true,
 			["ALTERNATEMANA"] = false,
+			["ATTACK_AP"] = false,
+			["BLOCK"] = false,
+			["HEALTH"] = true,
 			["RUNE_REGEN"] = false,
-			["STRENGTH"] = true,
+			["CRITCHANCE"] = true,
+			["STAMINA"] = true,
 			["AGILITY"] = true,
+			["STRENGTH"] = true,
 			["ATTACK_DAMAGE"] = false,
 			["REPAIRTOTAL"] = true,
 			["PARRY"] = false,
-			["BLOCK"] = false,
+			["ARMOR"] = true,
 			["HASTE"] = true,
-			["AVOIDANCE"] = true,
-			["ENERGY_REGEN"] = false,
-			["LIFESTEAL"] = true,
-			["MASTERY"] = true,
-		},
-		["dejacharacterstatsSelectStatsChecked"] = {
-			["SelectStatsSetChecked"] = false,
+			["INTELLECT"] = true,
+			["POWER"] = true,
+			["MANAREGEN"] = false,
+			["FOCUS_REGEN"] = false,
 		},
 		["dejacharacterstatsScrollbarMax"] = {
 			["DCS_ScrollbarMax"] = 34,
+		},
+		["dejacharacterstatsSelectStatsChecked"] = {
+			["SelectStatsSetChecked"] = false,
 		},
 		["dejacharacterstatsExpandChecked"] = {
 			["ExpandSetChecked"] = true,
@@ -73,8 +73,8 @@ DejaCharacterStatsDBPC = {
 		["dejacharacterstatsRepairTotalStatChecked"] = {
 			["RepairTotalStatSetChecked"] = true,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["dejacharacterstatsScrollbarChecked"] = {
+			["ScrollbarSetChecked"] = false,
 		},
 	},
 }

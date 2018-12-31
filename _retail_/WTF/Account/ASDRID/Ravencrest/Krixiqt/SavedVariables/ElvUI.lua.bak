@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatEditHistory"] = {
-		"/g :(", -- [1]
-		"/g yuula", -- [2]
-		"/g you coimming", -- [3]
-		"/g islands", -- [4]
-		"/g when", -- [5]
-		"/g when u done", -- [6]
-		"/g k", -- [7]
-		"/g wanna just come afk", -- [8]
-		"/g while i gather", -- [9]
-		"/g na", -- [10]
-		"/g u r a qt", -- [11]
-		"/p pog", -- [12]
-		"/p :(", -- [13]
-		"/p 3:", -- [14]
-		" vad gör du", -- [15]
-		" inte mkt", -- [16]
-		" funderar vad jag ska spela nästa tier", -- [17]
-		" tänkte göra 3lfr bossar så jag får 10 stacks på paladinen", -- [18]
-		"/cw Bävermatsqt |cffa335ee|Hitem:158367::::::::120:65::16:3:5010:1562:4784:::|h[Merektha's Fang]|h|r", -- [19]
-		"/reload", -- [20]
+		"/cw Diviná-Ravencrest tjqa", -- [1]
+		"/cw Diviná-Ravencrest ne", -- [2]
+		"/cw Diviná-Ravencrest du kommer bara vara elak", -- [3]
+		"/cw Diviná-Ravencrest ?_?", -- [4]
+		" |cffffffff|Hitem:34498::::::::120:66::11::::|h[Paper Zeppelin Kit]|h|r", -- [5]
+		"/g whats their names?", -- [6]
+		"/g i could offer them some gold to keep going", -- [7]
+		"/ert", -- [8]
+		"/cw Diviná-Ravencrest nig", -- [9]
+		"/cw Diviná-Ravencrest kfc", -- [10]
+		"/g i will make sure  they exclusivly hunt you down then", -- [11]
+		"/i OH NO", -- [12]
+		"/i I FUCEKD UP", -- [13]
+		"/p YEA CAN DO", -- [14]
+		"/p are we cs", -- [15]
+		"/p or more island", -- [16]
+		"/p ok", -- [17]
+		"/p yea", -- [18]
+		"/p it wont be that bad", -- [19]
+		"/p :)", -- [20]
 	},
 }

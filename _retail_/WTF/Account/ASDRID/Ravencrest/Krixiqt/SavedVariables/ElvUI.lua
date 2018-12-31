@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["IsInValidZone"] = true,
-		["MaxHealth"] = 0,
-		["Health"] = 0,
 		["Active"] = false,
+		["Health"] = 0,
+		["MaxHealth"] = 0,
+		["IsInValidZone"] = true,
 	},
 	["ChatEditHistory"] = {
-		"/g :(", -- [1]
-		"/g yuula", -- [2]
-		"/g you coimming", -- [3]
-		"/g islands", -- [4]
-		"/g when", -- [5]
-		"/g when u done", -- [6]
-		"/g k", -- [7]
-		"/g wanna just come afk", -- [8]
-		"/g while i gather", -- [9]
-		"/g na", -- [10]
-		"/g u r a qt", -- [11]
-		"/p pog", -- [12]
-		"/p :(", -- [13]
-		"/p 3:", -- [14]
-		" vad gör du", -- [15]
-		" inte mkt", -- [16]
-		" funderar vad jag ska spela nästa tier", -- [17]
-		" tänkte göra 3lfr bossar så jag får 10 stacks på paladinen", -- [18]
-		"/cw Bävermatsqt |cffa335ee|Hitem:158367::::::::120:65::16:3:5010:1562:4784:::|h[Merektha's Fang]|h|r", -- [19]
-		"/reload", -- [20]
+		"/ert", -- [1]
+		"/cw Diviná-Ravencrest nig", -- [2]
+		"/cw Diviná-Ravencrest kfc", -- [3]
+		"/g i will make sure  they exclusivly hunt you down then", -- [4]
+		"/i OH NO", -- [5]
+		"/i I FUCEKD UP", -- [6]
+		"/p YEA CAN DO", -- [7]
+		"/p are we cs", -- [8]
+		"/p or more island", -- [9]
+		"/p ok", -- [10]
+		"/p yea", -- [11]
+		"/p it wont be that bad", -- [12]
+		"/p :)", -- [13]
+		"/g for some reason my pc is shit", -- [14]
+		"/g and i get mad fps spikes", -- [15]
+		"/g so its really annoying playing cs when fps spikes so muhc", -- [16]
+		"/g it goes from like 200 to 60", -- [17]
+		"/g what do you mean karkz", -- [18]
+		"/g haha", -- [19]
+		"/g tack", -- [20]
 	},
 }

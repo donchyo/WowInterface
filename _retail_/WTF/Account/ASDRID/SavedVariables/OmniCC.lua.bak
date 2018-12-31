@@ -1,6 +1,5 @@
 
 OmniCC4Config = {
-	["version"] = "8.0.9",
 	["groupSettings"] = {
 		["PlaterNameplates Blacklist"] = {
 			["enabled"] = false,
@@ -116,4 +115,5 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [2]
 	},
+	["version"] = "8.1.0",
 }

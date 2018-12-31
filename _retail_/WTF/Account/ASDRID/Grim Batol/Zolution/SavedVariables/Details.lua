@@ -7,10 +7,8 @@ _detalhes_database = {
 		["tabelas"] = {
 		},
 	},
-	["combat_counter"] = 8922,
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
+	["last_version"] = "v8.1.0.6692",
+	["force_font_outline"] = "",
 	["tabela_instancias"] = {
 	},
 	["local_instances_config"] = {
@@ -35,7 +33,7 @@ _detalhes_database = {
 			["pos"] = {
 				["normal"] = {
 					["y"] = -397.328143831935,
-					["x"] = 541.251873688982,
+					["x"] = 541.252236237803,
 					["w"] = 208.361206054688,
 					["h"] = 127.507972717285,
 				},
@@ -115,8 +113,8 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1543769161,
-		["last_version"] = 10,
+		["nextreset"] = 1546951073,
+		["last_version"] = 11,
 	},
 	["last_instance_id"] = 1651,
 	["announce_interrupts"] = {
@@ -126,10 +124,17 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["last_instance_time"] = 1519059226,
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
 	["active_profile"] = "Namji-Grim Batol",
-	["last_day"] = "17",
-	["ignore_nicktag"] = false,
+	["last_day"] = "24",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -137,10 +142,10 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["enabled"] = false,
+			["author"] = "Details! Team",
 			["dps"] = 0,
 			["level"] = 1,
-			["author"] = "Details! Team",
+			["enabled"] = false,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = false,
@@ -150,10 +155,10 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["opened"] = 1,
-			["window_scale"] = 1,
+			["max_emote_segments"] = 3,
 			["show_icon"] = 5,
 			["hide_on_combat"] = false,
-			["max_emote_segments"] = 3,
+			["window_scale"] = 1,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -180,11 +185,11 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["scale"] = 1,
-			["row_height"] = 20,
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = false,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["point"] = "TOP",
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -194,8 +199,13 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["font_size"] = 10,
-			["y"] = -41.5555419921875,
 			["x"] = 285.333618164063,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -203,29 +213,24 @@ _detalhes_database = {
 				["point"] = "CENTER",
 				["scale"] = 1.19856142997742,
 				["font_shadow"] = true,
-				["y"] = -4.442945282789880e-005,
-				["x"] = 8.088644244708120e-005,
-				["size"] = 32,
-				["update_speed"] = 0.0160000007599592,
+				["y"] = -4.442945282789880e-05,
+				["x"] = 8.088644244708120e-05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.0160000007599592,
+				["size"] = 32,
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["main_frame_locked"] = false,
-			["arrow_anchor_y"] = 0,
+			["y"] = -41.5555419921875,
+			["point"] = "TOP",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = false,
-			["auto_open"] = true,
 			["rightclick_closed"] = false,
+			["auto_open"] = true,
 			["auto_close"] = true,
-			["author"] = "Details! Team",
 			["hide_on_combat"] = true,
+			["author"] = "Details! Team",
 			["deaths_table"] = {
 			},
 			["shown_time"] = 30,
@@ -241,43 +246,28 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 			["realm_history"] = {
 			},
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = false,
+			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = true,
 			["author"] = "Details! Team",
 			["first_run"] = false,
 			["tank_block_size"] = 150,
 		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["updatespeed"] = 1,
-			["enabled"] = false,
-			["animate"] = false,
-			["useplayercolor"] = false,
+		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
+			["enabled"] = true,
 			["author"] = "Details! Team",
-			["useclasscolors"] = false,
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["showamount"] = false,
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
-			["enabled"] = false,
-			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = false,
@@ -287,40 +277,25 @@ _detalhes_database = {
 			["use_report_panel"] = true,
 			["pre_pot_healers"] = false,
 		},
-		["DETAILS_PLUGIN_LEECH_TRINKET"] = {
-			["enabled"] = true,
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
+			["enabled"] = false,
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
-	},
-	["force_font_outline"] = "",
-	["last_encounter"] = "Argus the Unmaker",
-	["benchmark_db"] = {
-		["frame"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["showamount"] = false,
+			["animate"] = false,
+			["useplayercolor"] = false,
+			["useclasscolors"] = false,
+			["author"] = "Details! Team",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["enabled"] = false,
 		},
-	},
-	["last_realversion"] = 135,
-	["last_version"] = "v8.0.1.6678",
-	["combat_id"] = 299,
-	["savedStyles"] = {
-	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["cached_talents"] = {
-		["Player-1303-03E8DD46"] = {
-			19758, -- [1]
-		},
-	},
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
-	},
-	["character_data"] = {
-		["logons"] = 1434,
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Return to Karazhan",
@@ -333,14 +308,39 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1651,
 		["previous_boss_killed_at"] = 1519060496,
 	},
+	["last_encounter"] = "Argus the Unmaker",
+	["ignore_nicktag"] = false,
+	["last_realversion"] = 135,
+	["combat_counter"] = 8924,
+	["combat_id"] = 299,
+	["savedStyles"] = {
+	},
+	["last_instance_time"] = 1519059226,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["character_data"] = {
+		["logons"] = 1435,
+	},
+	["cached_talents"] = {
+		["Player-1303-03E8DD46"] = {
+			19758, -- [1]
+		},
+	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

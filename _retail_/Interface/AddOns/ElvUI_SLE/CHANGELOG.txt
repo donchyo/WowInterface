@@ -1,3 +1,22 @@
+v3.492 [Decamber 19, 2018]
+Fixes:
+- Localtion panel coordinates link is now working again
+Changes:
+- Event description frame in calendar is now not movable to avoid positioning issues.
+
+v3.491 [December 14, 2018]
+- Fuck blizzard
+- Fuck blizzard
+- Fuck blizzard
+- Fuck blizzard
+- Fuck UI department in particular
+- Fuck Ion
+- Fuck Tom
+- Fuck blizzard again
+- Fuck blizz forums censorship system
+
+Real one: https://www.tukui.org/forum/viewtopic.php?f=32&t=4621
+
 v3.49 [December 12, 2018]
 This is for patch 8.1, should work fine on 8.0 as well
 Additions:
@@ -20,7 +39,7 @@ Fixes:
 WIP and To Do:
 These are probably going to appear in the next "planned" release for patch 8.1, unless something unexpected happens
 - Apply font to all
-- Some repositioning for "overflow" chat tabs
+-Some repositioning for "overflow" chat tabs
 - Overhaul of S&L currency datatext
 
 

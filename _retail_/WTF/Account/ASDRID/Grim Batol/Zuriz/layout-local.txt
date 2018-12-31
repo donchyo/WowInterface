@@ -6,10 +6,3 @@ X: -118
 Y: -15
 W: 365
 H: 240
-Frame: DetailsPlayerDetailsWindow
-FrameLevel: 1
-Anchor: CENTER
-X: -47
-Y: -1
-W: 790
-H: 454

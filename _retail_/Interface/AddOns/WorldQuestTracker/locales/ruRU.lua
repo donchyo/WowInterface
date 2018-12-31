@@ -7,10 +7,8 @@ L["S_DECREASESIZE"] = "Уменьшить размер"
 L["S_ENABLED"] = "Включено"
 L["S_ERROR_NOTIMELEFT"] = "Время выполнения задания истекло."
 L["S_ERROR_NOTLOADEDYET"] = "Задание ещё не загружено, подождите несколько секунд."
---[[Translation missing --]]
---[[ L["S_FACTION_TOOLTIP_SELECT"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_FACTION_TOOLTIP_TRACK"] = ""--]] 
+L["S_FACTION_TOOLTIP_SELECT"] = "Нажатие: выберет эту фракцию"
+L["S_FACTION_TOOLTIP_TRACK"] = "Shift + Клик: отслеживание заданий этой фракции"
 L["S_FLYMAP_SHOWTRACKEDONLY"] = "Только отслеживаемые"
 L["S_FLYMAP_SHOWTRACKEDONLY_DESC"] = "Показывать только задания, которые вы отслеживаете"
 L["S_FLYMAP_SHOWWORLDQUESTS"] = "Показывать локальные задания"
@@ -78,7 +76,7 @@ L["S_MAPBAR_OPTIONSMENU_TRACKERMOVABLE_LOCKED"] = "Закрепить"
 L["S_MAPBAR_OPTIONSMENU_UNTRACKQUESTS"] = "Прекратить слежение"
 L["S_MAPBAR_OPTIONSMENU_WORLDMAPCONFIG"] = "Конфигурация карты мира"
 L["S_MAPBAR_OPTIONSMENU_YARDSDISTANCE"] = "Показывать расстояние"
-L["S_MAPBAR_OPTIONSMENU_ZONE_QUESTSUMMARY"] = "Сводка по заданиям (полный экран)"
+L["S_MAPBAR_OPTIONSMENU_ZONE_QUESTSUMMARY"] = "Сводка заданий"
 L["S_MAPBAR_OPTIONSMENU_ZONEMAPCONFIG"] = "Конфигурация карты зоны"
 L["S_MAPBAR_RESOURCES_TOOLTIP_TRACKALL"] = "Кликните, чтобы отслеживать все задания на |cFFFFFFFF%s|r."
 L["S_MAPBAR_SORTORDER"] = "Сортировка"
@@ -94,26 +92,21 @@ L["S_MAPBAR_SUMMARYMENU_NOATTENTION"] = [=[Нет заданий для отсл
 у которых осталось на выполнение менее 2х часов!]=]
 L["S_MAPBAR_SUMMARYMENU_REQUIREATTENTION"] = "Требует внимания"
 L["S_MAPBAR_SUMMARYMENU_TODAYREWARDS"] = "Награды за сегодня"
---[[Translation missing --]]
---[[ L["S_MAPFRAME_ALIGN_CENTER"] = ""--]] 
+L["S_MAPFRAME_ALIGN_CENTER"] = "центр"
 --[[Translation missing --]]
 --[[ L["S_MAPFRAME_ALIGN_DESC"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["S_MAPFRAME_ALIGN_LEFT"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_OPTIONS_MAPFRAME_ALIGN"] = ""--]] 
+L["S_OPTIONS_ANIMATIONS"] = "С анимацией"
+L["S_OPTIONS_MAPFRAME_ALIGN"] = "Расположение карты по центру"
 --[[Translation missing --]]
 --[[ L["S_OPTIONS_MAPFRAME_ERROR_SCALING_DISABLED"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_OPTIONS_MAPFRAME_SCALE"] = ""--]] 
+L["S_OPTIONS_MAPFRAME_SCALE"] = "Масштаб окна карты"
 --[[Translation missing --]]
 --[[ L["S_OPTIONS_MAPFRAME_SCALE_ENABLED"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_OPTIONS_QUESTBLACKLIST"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_OPTIONS_RESET"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_OPTIONS_SHOWFACTIONS"] = ""--]] 
+L["S_OPTIONS_QUESTBLACKLIST"] = "Чёрный список заданий"
+L["S_OPTIONS_RESET"] = "Сброс"
+L["S_OPTIONS_SHOWFACTIONS"] = "Показать фракции"
 --[[Translation missing --]]
 --[[ L["S_OPTIONS_TIMELEFT_NOPRIORITY"] = ""--]] 
 --[[Translation missing --]]
@@ -171,24 +164,24 @@ L["S_TUTORIAL_CLICKTOTRACK"] = "Кликните, чтобы отслежива�
 --[[ L["S_TUTORIAL_MAPALIGN"] = ""--]] 
 L["S_TUTORIAL_PARTY"] = "Синей звездочкой помечаются те квесты, которые есть у каждого члена группы!"
 L["S_TUTORIAL_TIMELEFT"] = "показывает оставшееся время (+4 часа, +90 минут, +30 минут, менее 30 минут)"
---[[Translation missing --]]
---[[ L["S_TUTORIAL_WORLDBUTTONS"] = ""--]] 
+L["S_TUTORIAL_WORLDBUTTONS"] = [=[Нажмите здесь, чтобы переключиться между тремя типами сводок:
+
+- |cFFFFAA11Как с заданий|r
+- |cFFFFAA11По территории|r
+- |cFFFFAA11Без заданий|r
+
+Нажмите на |cFFFFAA11Вкл/Выкл - задания|r, чтобы скрыть местоположения заданий.]=]
 L["S_TUTORIAL_WORLDMAPBUTTON"] = "Эта кнопка открывает карту Расколотых островов."
 L["S_UNKNOWNQUEST"] = "Неизвестное задание"
---[[Translation missing --]]
---[[ L["S_WORLDBUTTONS_SHOW_NONE"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_WORLDBUTTONS_SHOW_TYPE"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_WORLDBUTTONS_SHOW_ZONE"] = ""--]] 
---[[Translation missing --]]
---[[ L["S_WORLDBUTTONS_TOGGLE_QUESTS"] = ""--]] 
+L["S_WORLDBUTTONS_SHOW_NONE"] = "Скрыть сводку"
+L["S_WORLDBUTTONS_SHOW_TYPE"] = "Показать сводку"
+L["S_WORLDBUTTONS_SHOW_ZONE"] = "По территориям"
+L["S_WORLDBUTTONS_TOGGLE_QUESTS"] = "Вкл/Выкл - задания"
 --[[Translation missing --]]
 --[[ L["S_WORLDMAP_QUESTLOCATIONS"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["S_WORLDMAP_QUESTSUMMARY"] = ""--]] 
 L["S_WORLDMAP_TOOGLEQUESTS"] = "Вкл/Выкл - Задания"
---[[Translation missing --]]
---[[ L["S_WORLDMAP_TOOLTIP_TRACKALL"] = ""--]] 
+L["S_WORLDMAP_TOOLTIP_TRACKALL"] = "отслеживать все задания в этом списке"
 L["S_WORLDQUESTS"] = "Локальные задания"
 

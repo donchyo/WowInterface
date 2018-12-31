@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 	["ChatEditHistory"] = {
-		"/cw Aljan-Ravencrest mjo", -- [1]
-		"/cw Aljan-Ravencrest 3k/9k atm", -- [2]
-		"/cw Aljan-Ravencrest för keys?", -- [3]
-		"/cw Aljan-Ravencrest dk", -- [4]
-		"/cw Aljan-Ravencrest 7.6", -- [5]
-		"/g anyone for islands?", -- [6]
-		"/i svenska", -- [7]
-		"/cast path of the mogu kung", -- [8]
-		"/cast path of the mogu king", -- [9]
-		"/p Hello", -- [10]
-		"/p rogue tricks me then go cannon", -- [11]
-		"/p re tricks", -- [12]
-		"/p dont go out", -- [13]
-		"/cw Diviná-Ravencrest tja", -- [14]
-		"/cw Diviná-Ravencrest vad händer", -- [15]
-		"/cw Diviná-Ravencrest inte mycket", -- [16]
-		"/cw Diviná-Ravencrest durå?", -- [17]
-		"/cw Diviná-Ravencrest en del", -- [18]
-		"/cw Diviná-Ravencrest fan", -- [19]
-		"/cw Diviná-Ravencrest menade inte mycket", -- [20]
+		"/m", -- [1]
+		"/cw Böltzman-Outland i dont care either way. whatever the leader wants i can do", -- [2]
+		"/cw Böltzman-Outland sure", -- [3]
+		"/raid we're not seeing much things happening. you moved people out on all 8 grps then moved them back in", -- [4]
+		"/raid then rcheck pull", -- [5]
+		"/raid ok, this is very good information", -- [6]
+		"/raid then we afk second room and go again when link is up again i assume?", -- [7]
+		"/raid or well", -- [8]
+		"/raid not afk", -- [9]
+		"/raid but", -- [10]
+		"/raid ok", -- [11]
+		"/raid yea i fix boss", -- [12]
+		"/wa", -- [13]
+		" unlcuky :(", -- [14]
+		"/cw Griflet-Ravencrest what do you need help with?", -- [15]
+		"/cw Griflet-Ravencrest i think im full on chars for this realm", -- [16]
+		"/cw Griflet-Ravencrest i'll have a look", -- [17]
+		"/cw Griflet whats your bankchars name?", -- [18]
+		"/cw Griflet ok", -- [19]
+		"/cw Griflet how many signs do you need?", -- [20]
 	},
 }

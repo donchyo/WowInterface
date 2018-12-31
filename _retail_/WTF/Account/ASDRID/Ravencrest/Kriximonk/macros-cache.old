@@ -18,6 +18,9 @@ VER 3 0100000000000011 "enveloping mist" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]enveloping mist
 END
+VER 3 0100000000000017 "focus" "INV_MISC_QUESTIONMARK"
+/cast [@focus] spear hand strike
+END
 VER 3 0100000000000010 "rm" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead] renewing mist

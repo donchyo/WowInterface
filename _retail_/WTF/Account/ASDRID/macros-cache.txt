@@ -24,7 +24,7 @@ VER 3 0000000000000361 "1release" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000394 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/use Falconer's Whistle
+/click ExtraActionButton1
 END
 VER 3 0000000000000384 "aLua errors" "133447"
 /run if GetCVar("ScriptErrors")=="1" then SetCVar("ScriptErrors","0");print("Show LUA Errors: Off");else SetCVar("ScriptErrors","1");print("Show LUA Errors: On");end

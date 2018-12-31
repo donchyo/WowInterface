@@ -949,7 +949,18 @@ filters['transmogKnown'].frame = f
 filters['transmogKnown'].filterFunction = function(itemIndex, filterIndex)
     local item = EasyScrap.scrappableItems[itemIndex]
     local filterData = EasyScrap.saveData.customFilters[EasyScrap.activeFilterID].rules[filterIndex].data
+    
+    --If player has CanIMogIt we can use that
+    if CanIMogIt and CanIMogIt.PlayerKnowsTransmog then
+        if CanIMogIt:PlayerKnowsTransmog(item.itemLink) then --If this is false or nil for some reason we'll fallback to our own stuff
+            return true
+        end
+    end
  
+    if C_TransmogCollection.PlayerHasTransmog(item.itemID) then
+        return true
+    end
+    
     local z = C_TransmogCollection.GetItemInfo(item.itemLink)
     if not z then
         if item.itemClassID == LE_ITEM_CLASS_WEAPON or (item.itemClassID == LE_ITEM_CLASS_ARMOR and (item.itemSubClassID == LE_ITEM_ARMOR_CLOTH or item.itemSubClassID == LE_ITEM_ARMOR_LEATHER or item.itemSubClassID == LE_ITEM_ARMOR_MAIL or item.itemSubClassID == LE_ITEM_ARMOR_PLATE or item.itemSubClassID == LE_ITEM_ARMOR_SHIELD)) then 
@@ -960,6 +971,7 @@ filters['transmogKnown'].filterFunction = function(itemIndex, filterIndex)
             return true 
         end
     end
+
     local sources = C_TransmogCollection.GetAppearanceSources(z)
     if sources then
         for k,v in pairs(sources) do

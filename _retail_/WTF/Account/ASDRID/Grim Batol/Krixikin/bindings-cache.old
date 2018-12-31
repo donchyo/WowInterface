@@ -38,10 +38,14 @@ bind F10 CLICK BT4Button112:LeftButton
 bind F11 CLICK BT4Button109:LeftButton
 bind F12 CLICK BT4Button49:LeftButton
 bind SHIFT-O NONE
+bind MOUSEWHEELUP CLICK BT4Button94:LeftButton
+bind MOUSEWHEELDOWN CLICK BT4Button95:LeftButton
 bind CTRL-R CLICK BT4Button80:LeftButton
 bind CTRL-T CLICK BT4Button77:LeftButton
 bind NUMPAD1 RAIDTARGET8
 bind NUMPAD3 CLICK RaidFlare3:LeftButton
+bind CTRL-MOUSEWHEELUP CAMERAZOOMIN
+bind CTRL-MOUSEWHEELDOWN CAMERAZOOMOUT
 bind ´ CLICK BT4Button18:LeftButton
 bind ALT-R CLICK BT4Button23:LeftButton
 bind ALT-´ CLICK BT4Button24:LeftButton

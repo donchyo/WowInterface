@@ -611,5 +611,251 @@ L["Resolve collisions dialog startup"] = [=[Вы включили аддон в 
 Resolved: |cFFFF0000]=]
 L["Resolve collisions dialog startup singular"] = [=[Вы включили аддон в котором определена индикация |cFF8800FFWeakAuras|r которая имеет то же имя, что и существующая.
 
-Вы должны переименов�
+Вы должны переименовать вашу индикацию, чтобы не было конфликта.
+
+Resolved: |cFFFF0000]=]
+L["Resting"] = "В зоне отдыха"
+L["Resurrect"] = "Воскрешение"
+L["Right"] = "Справа"
+L["Right to Left"] = "Справа налево"
+L["Rotate Left"] = "Поворот влево"
+L["Rotate Right"] = "Поворот вправо"
+L["Run Custom Code"] = "Выполнить свой код"
+L["Rune"] = "Руна"
+L["Rune #1"] = "Руна #1"
+L["Rune #2"] = "Руна #2"
+L["Rune #3"] = "Руна #3"
+L["Rune #4"] = "Руна #4"
+L["Rune #5"] = "Руна #5"
+L["Rune #6"] = "Руна #6"
+L["Runes Count"] = "Количество рун"
+L["Say"] = "Сказать"
+L["Scenario"] = "Сценарий"
+L["Screen/Parent Group"] = "Экран/Исходная группа"
+L["Second"] = "Второе"
+L["Second Text Color"] = "2. Цвет текста"
+L["Second Text Size"] = "2. Размер текста"
+--[[Translation missing --]]
+L["Second Value of Tooltip Text"] = "Second Value of Tooltip Text"
+L["Seconds"] = "Секунды"
+L["Select Frame"] = "Выбрать кадр"
+--[[Translation missing --]]
+L["Set Glow Visibility"] = "Set Glow Visibility"
+L["Set Maximum Progress"] = "Задать макс. прогресс"
+L["Set Minimum Progress"] = "Задать мин. прогресс"
+L["Shake"] = "Дрожь"
+--[[Translation missing --]]
+L["Shift-Click to resume addon execution."] = "Shift-Click to resume addon execution."
+L["Shoulder"] = "Плечо"
+L["Show"] = "Показать"
+L["Show Absorb"] = "Показать поглощение"
+--[[Translation missing --]]
+L["Show all Matches"] = "Show all Matches"
+--[[Translation missing --]]
+L["Show all Matches from all Units"] = "Show all Matches from all Units"
+L["Show CD of Charge"] = "Показать восстановление заряда"
+L["Show Code"] = "Показать код"
+L["Show Global Cooldown"] = "Показать общее время восстановления (GCD)"
+L["Show Incoming Heal"] = "Показать входящее исцеление"
+--[[Translation missing --]]
+L["Show longest time left"] = "Show longest time left"
+--[[Translation missing --]]
+L["Show longest time left over all units"] = "Show longest time left over all units"
+--[[Translation missing --]]
+L["Show longest time left per unit"] = "Show longest time left per unit"
+--[[Translation missing --]]
+L["Show lowest time left"] = "Show lowest time left"
+--[[Translation missing --]]
+L["Show lowest time left over all units"] = "Show lowest time left over all units"
+--[[Translation missing --]]
+L["Show lowest time left per unit"] = "Show lowest time left per unit"
+L["Shrink"] = "Сжатие"
+--[[Translation missing --]]
+L["Single-Line"] = "Single-Line"
+L["Size & Position"] = "Размер и расположение"
+L["Skull"] = "Череп"
+L["Slide from Bottom"] = "Сдвиг снизу"
+L["Slide from Left"] = "Сдвиг слева"
+L["Slide from Right"] = "Сдвиг справа"
+L["Slide from Top"] = "Сдвиг сверху"
+L["Slide to Bottom"] = "Сдвиг вниз"
+L["Slide to Left"] = "Сдвиг влево"
+L["Slide to Right"] = "Сдвиг вправо"
+L["Slide to Top"] = "Сдвиг вверх"
+--[[Translation missing --]]
+L["Slider"] = "Slider"
+L["Slime"] = "Слизь"
+--[[Translation missing --]]
+L["Small"] = "Small"
+L["Sound"] = "Звук"
+L["Sound by Kit ID"] = "Звук по ID"
+L["Sound Effects"] = "Звуковые эффекты"
+L["Source In Group"] = "Источник в группе"
+L["Source Name"] = "Имя источника"
+L["Source Raid Mark"] = "Метка источника"
+L["Source Unit"] = "Источник"
+L["Source: "] = "Источник: "
+--[[Translation missing --]]
+L["Space"] = "Space"
+L["Spacing"] = "Расстояние"
+L["Spark Color"] = "Цвет вспышки"
+L["Spark Height"] = "Высота вспышки"
+L["Spark Width"] = "Ширина вспышки"
+L["Spec Role"] = "Роль специализации"
+L["Specific Unit"] = "Конкретная единица"
+L["Spell"] = "Заклинание"
+L["Spell (Building)"] = "Заклинание (строение)"
+L["Spell Activation Overlay Glow"] = "Свечение иконки при активации заклинания"
+L["Spell Cost"] = "Стоимость заклинания"
+L["Spell ID"] = "ID заклинания"
+L["Spell Id"] = "ID заклинания"
+--[[Translation missing --]]
+L["Spell ID:"] = "Spell ID:"
+--[[Translation missing --]]
+L["Spell IDs:"] = "Spell IDs:"
+L["Spell in Range"] = "В зоне действия"
+L["Spell Known"] = "Заклинание известно"
+L["Spell Name"] = "Название заклинания"
+L["Spell Usable"] = "Заклинание доступно"
+L["Spell/Encounter Id"] = "ID заклинания/энкаутера"
+L["Spin"] = "Вращение"
+L["Spiral"] = "Спираль"
+L["Spiral In And Out"] = "Спираль (вперед-назад)"
+L["Square"] = "Квадрат"
+L["Stacks"] = "Стаки"
+L["Stacks Text Color"] = "Цвет текста стаков"
+L["Stacks Text Size"] = "Размер текста стаков"
+--[[Translation missing --]]
+L["Stagger Scale"] = "Stagger Scale"
+L["Stance/Form/Aura"] = "Стойка / Форма / Аура"
+L["Star"] = "Звезда"
+L["Start Profiling"] = "Запустить профилирование"
+L["Status"] = "Статус"
+L["Stolen"] = "Кража"
+L["Stop"] = "Остановить"
+L["Stop Profiling"] = "Остановить профилирование"
+--[[Translation missing --]]
+L["String"] = "String"
+L["Summon"] = "Призыв"
+L[ [=[Supports multiple entries, separated by commas
+]=] ] = [=[Можно указать несколько значений, разделенных запятыми.
+]=]
+L["Swing"] = "Ближний бой"
+L["Swing Timer"] = "Таймер Swing (время между атаками оружия)"
+L["System"] = "Система"
+L["Tabard"] = "Гербовая накидка"
+--[[Translation missing --]]
+L["Talent Selected"] = "Talent Selected"
+L["Talent selected"] = "Выбран талант"
+L["Talent Specialization"] = "Специализация"
+L["Tank"] = "Танк"
+L["Tanking And Highest"] = "Танкует и макс. угрозa"
+L["Tanking But Not Highest"] = "Танкует, но не макс. угроза"
+L["Target"] = "Цель"
+L["Tenacity"] = "Упорство"
+--[[Translation missing --]]
+L["There are %i updates to your auras ready to be installed!"] = "There are %i updates to your auras ready to be installed!"
+L["Thick Outline"] = "Толстый контур"
+L["Third"] = "Третье"
+--[[Translation missing --]]
+L["Third Value of Tooltip Text"] = "Third Value of Tooltip Text"
+L["This aura contains custom Lua code."] = "Индикация содержит пользовательский код Lua."
+L["This aura was created with a newer version of WeakAuras."] = "Индикация была создана в новой версии WeakAuras."
+L["This is a modified version of your aura, |cff9900FF%s.|r"] = [=[Это модифицированная версия вашей индикации:
+|cff9900FF%s|r.
+]=]
+L["This is a modified version of your group, |cff9900FF%s.|r"] = [=[Это модифицированная версия группы ваших   
+индикаций: |cff9900FF%s|r.]=]
+L["Threat Situation"] = "Положение в списке угроз"
+L["Tier "] = "Тир"
+L["Timed"] = "По истечении времени"
+L["Timewalking"] = "Путешествие во времени"
+--[[Translation missing --]]
+L["Toggle"] = "Toggle"
+L["Toggle Options Window"] = "Переключение окна параметров"
+--[[Translation missing --]]
+L["Tooltip"] = "Tooltip"
+--[[Translation missing --]]
+L["Tooltip Value 1"] = "Tooltip Value 1"
+--[[Translation missing --]]
+L["Tooltip Value 2"] = "Tooltip Value 2"
+--[[Translation missing --]]
+L["Tooltip Value 3"] = "Tooltip Value 3"
+L["Top"] = "Сверху"
+L["Top Left"] = "Сверху слева"
+L["Top Right"] = "Сверху справа"
+L["Top to Bottom"] = "Сверху вниз"
+L["Total"] = "Всего"
+L["Total Duration"] = "Общее время"
+--[[Translation missing --]]
+L["Total Match Count"] = "Total Match Count"
+--[[Translation missing --]]
+L["Total Unit Count"] = "Total Unit Count"
+--[[Translation missing --]]
+L["Total Units"] = "Total Units"
+L["Totem"] = "Тотем"
+L["Totem #%i"] = "Тотем #%i"
+L["Totem Name"] = "Название тотема"
+L["Totem Number"] = "Номер тотема"
+L["Transmission error"] = "Ошибка передачи"
+L["Triangle"] = "Треугольник"
+L["Trigger"] = "Триггер"
+L["Trigger 1"] = "Триггер 1"
+--[[Translation missing --]]
+L["Trigger State Updater (Advanced)"] = "Trigger State Updater (Advanced)"
+L["Trigger Update"] = "Триггер обновлен"
+L["Trigger:"] = "Триггер:"
+L["Trinket 1"] = "Аксессуар 1"
+L["Trinket 2"] = "Аксессуар 2"
+L["True"] = "Истина"
+L["Type"] = "Тип"
+--[[Translation missing --]]
+L["Unaffected"] = "Unaffected"
+L["Undefined"] = "Не определено"
+L["Unit"] = "Единица"
+L["Unit Characteristics"] = "Характеристики единицы"
+L["Unit Destroyed"] = "Единица уничтожена"
+L["Unit Died"] = "Единица умерла"
+L["Unit is Unit"] = "Является др-й единицей"
+--[[Translation missing --]]
+L["Unit Name"] = "Unit Name"
+--[[Translation missing --]]
+L["Units Affected"] = "Units Affected"
+L["Up"] = "Вверх"
+L["Update Auras"] = "Обновить индикацию"
+--[[Translation missing --]]
+L["Usage:"] = "Usage:"
+--[[Translation missing --]]
+L["Use /wa minimap to show the minimap icon again"] = "Use /wa minimap to show the minimap icon again"
+--[[Translation missing --]]
+L["Use Custom Glow Color"] = "Use Custom Glow Color"
+L["Values/Remaining Time above this value are displayed as full progress."] = "Значения/Оставшееся время выше указанного числа отображаются как полный прогресс."
+L["Values/Remaining Time below this value are displayed as no progress."] = "Значения/Оставшееся время ниже указанного числа отображаются как нулевой прогресс."
+L["Version: "] = "Версия: "
+L["Waist"] = "Пояс"
+L["War Mode Active"] = "Включен режим войны"
+--[[Translation missing --]]
+L["Warning: Full Scan auras checking for both name and spell id can't be converted."] = "Warning: Full Scan auras checking for both name and spell id can't be converted."
+--[[Translation missing --]]
+L["Warning: Name info is now available via %affected, %unaffected. Number of affected group members via %unitCount. Some options behave differently now. This is not automatically adjusted."] = "Warning: Name info is now available via %affected, %unaffected. Number of affected group members via %unitCount. Some options behave differently now. This is not automatically adjusted."
+--[[Translation missing --]]
+L["Warning: Tooltip values are now available via %tooltip1, %tooltip2, %tooltip3 instead of %s. This is not automatically adjusted."] = "Warning: Tooltip values are now available via %tooltip1, %tooltip2, %tooltip3 instead of %s. This is not automatically adjusted."
+L["Weapon"] = "Оружие"
+L["Weapon Enchant"] = "Чары оружия"
+L["What do you want to do?"] = "Что вы хотите сделать?"
+L["Whisper"] = "Шепот"
+L["Width"] = "Ширина"
+L["Wobble"] = "Колебание"
+L["Wrap"] = "Переносить слова"
+L["Wrist"] = "Запястье"
+L["X-Offset"] = "Смещение по X"
+L["Yell"] = "Крик"
+L["Y-Offset"] = "Смещение по Y"
+L["You already have this group/aura. Importing will create a duplicate."] = [=[У вас уже есть эта индикация, поэтому при импорте
+будет создана копия.]=]
+L["Zone Group ID(s)"] = "ID группы игровых зон"
+L["Zone ID(s)"] = "ID игровой зоны"
+L["Zone Name"] = "Название игровой зоны"
+--[[Translation missing --]]
+L["Zoom"] = "Zoom"
 

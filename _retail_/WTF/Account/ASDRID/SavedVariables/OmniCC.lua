@@ -1,22 +1,6 @@
 
 OmniCC4Config = {
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-		{
-			["id"] = "PlaterNameplates Blacklist",
-			["rules"] = {
-			},
-			["enabled"] = true,
-		}, -- [2]
-	},
-	["version"] = "8.0.9",
+	["version"] = "8.1.0",
 	["groupSettings"] = {
 		["base"] = {
 			["styles"] = {
@@ -115,5 +99,21 @@ OmniCC4Config = {
 				},
 			},
 		},
+	},
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+		{
+			["id"] = "PlaterNameplates Blacklist",
+			["rules"] = {
+			},
+			["enabled"] = true,
+		}, -- [2]
 	},
 }

@@ -1,23 +1,23 @@
 
 iKeystonesDB = {
 	["Player-1303-03FA8295"] = {
-		["maxCompleted"] = 0,
-		["name"] = "Zetiz",
 		["faction"] = "Alliance",
+		["name"] = "Zetiz",
+		["maxCompleted"] = 0,
+		["canLoot"] = false,
+		["class"] = "ROGUE",
 		["key"] = {
 		},
-		["class"] = "ROGUE",
-		["canLoot"] = false,
 		["server"] = "Grim Batol",
 	},
 	["Player-1329-067C8B8A"] = {
-		["faction"] = "Alliance",
-		["name"] = "Krixirogue",
 		["maxCompleted"] = 0,
-		["canLoot"] = false,
-		["class"] = "ROGUE",
+		["name"] = "Krixirogue",
+		["faction"] = "Alliance",
 		["key"] = {
 		},
+		["canLoot"] = false,
+		["class"] = "ROGUE",
 		["server"] = "Ravencrest",
 	},
 }

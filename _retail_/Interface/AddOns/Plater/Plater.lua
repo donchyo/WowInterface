@@ -5401,6 +5401,56 @@ function Plater.OnInit()
 	InstallHook (Plater.GetDriverGlobalObject ("ClassNameplateManaBarFrame"), Plater.DriverFuncNames.OnManaBarOptionsUpdate, function()
 		ClassNameplateManaBarFrame:SetSize (unpack (DB_PLATE_CONFIG.player.mana))
 	end)
+
+	--override some values in the nameplate driver
+	function Plater.HookDriver()
+		
+		InstallHook (NamePlateDriverFrame.namePlateSetupFunctions, "player", function (unitFrame)
+			if (unitFrame.PlaterOnScreen) then
+				Plater.UpdatePlateFrame (unitFrame:GetParent());-- print ("yay 1");
+			end
+		end)
+		InstallHook (NamePlateDriverFrame.namePlateSetupFunctions, "friendly", function (unitFrame)
+			if (unitFrame.PlaterOnScreen) then
+				Plater.UpdatePlateFrame (unitFrame:GetParent());-- print ("yay 2");
+			end
+		end)
+		InstallHook (NamePlateDriverFrame.namePlateSetupFunctions, "enemy", function (unitFrame)
+			if (unitFrame.PlaterOnScreen) then
+				Plater.UpdatePlateFrame (unitFrame:GetParent());-- print ("yay 3");
+			end
+		end)
+		
+		InstallHook (NamePlateDriverFrame.namePlateAnchorFunctions, "player", function (unitFrame)
+			if (unitFrame.PlaterOnScreen) then
+				Plater.UpdatePlateFrame (unitFrame:GetParent());-- print ("yay 4");
+			end
+		end)
+		InstallHook (NamePlateDriverFrame.namePlateAnchorFunctions, "friendly", function (unitFrame)
+			if (unitFrame.PlaterOnScreen) then
+				Plater.UpdatePlateFrame (unitFrame:GetParent());-- print ("yay 5");
+			end
+		end)
+		InstallHook (NamePlateDriverFrame.namePlateAnchorFunctions, "enemy", function (unitFrame)
+			if (unitFrame.PlaterOnScreen) then
+				Plater.UpdatePlateFrame (unitFrame:GetParent());-- print ("yay 6"); --lots of calls here
+			end
+		end)
+
+		--[=[
+		InstallHook (NamePlateDriverFrame.namePlateSetInsetFunctions, "player", function (unitFrame)
+			Plater.UpdatePlateFrame (unitFrame:GetParent())
+		end)
+		InstallHook (NamePlateDriverFrame.namePlateSetInsetFunctions, "friendly", function (unitFrame)
+			Plater.UpdatePlateFrame (unitFrame:GetParent())
+		end)
+		InstallHook (NamePlateDriverFrame.namePlateSetInsetFunctions, "enemy", function (unitFrame)
+			Plater.UpdatePlateFrame (unitFrame:GetParent())
+		end)
+		--]=]
+	end
+	
+	Plater.HookDriver() --8.1 new driver functions
 	
 --]=]
 	--> ~db
@@ -8064,7 +8114,7 @@ function Plater.GetRaidMark (unitFrame)
 	return GetRaidTargetIndex (plateFrame.namePlateUnitToken)
 end
 
--- ~size
+-- ~size ~update
 function Plater.UpdatePlateSize (plateFrame, justAdded)
 	if (not plateFrame.actorType) then
 		return
@@ -8280,7 +8330,6 @@ function Plater.UpdatePlateSize (plateFrame, justAdded)
 		--> cast bar
 			local scalarValue = SizeOf_castBar_Width > plateWidth and -((SizeOf_castBar_Width - plateWidth) / 2) or ((plateWidth - SizeOf_castBar_Width) / 2)
 			
-			
 			if (unitType == "pet") then
 				scalarValue = abs (Plater.db.profile.pet_width_scale - 2) * scalarValue
 			elseif (unitType == "minus") then
@@ -8354,6 +8403,11 @@ function Plater.UpdatePlateSize (plateFrame, justAdded)
 					end
 				end
 			end
+			
+			--plateFrame.driverFrame:
+			
+			--DefaultCompactNamePlateFrameSetUpOptions.healthBarHeight = targetHeight
+			--DefaultCompactNamePlateFrameSetUpOptions.castBarHeight = castFrame:GetHeight()
 		
 		--> buff frame
 			buffFrame.Point1 = "bottom"
@@ -8703,6 +8757,10 @@ end
 -- ~update
 function Plater.UpdatePlateFrame (plateFrame, actorType, forceUpdate, justAdded)
 	actorType = actorType or plateFrame.actorType
+	
+	if (not actorType) then
+		return
+	end
 	
 	local order = DB_PLATE_CONFIG [actorType].plate_order
 	
@@ -9371,6 +9429,7 @@ function Plater.CreateScaleAnimation (plateFrame)
 end
 
 Plater ["NAME_PLATE_CREATED"] = function (self, event, plateFrame) -- ~created ~events
+
 	--isto ï¿½ uma nameplate
 	plateFrame.UnitFrame.PlateFrame = plateFrame
 	plateFrame.isNamePlate = true
@@ -9378,6 +9437,16 @@ Plater ["NAME_PLATE_CREATED"] = function (self, event, plateFrame) -- ~created ~
 	plateFrame.UnitFrame.BuffFrame.amtDebuffs = 0
 	plateFrame.UnitFrame.BuffFrame.PlaterBuffList = {}
 	plateFrame.UnitFrame.BuffFrame.isNameplate = true
+	
+	plateFrame.UnitFrame.Plater_CachedData = {
+		healthBarWidth = 0,
+		healthBarHeight = 0,
+		healthBarAnchor = {},
+		
+		castBarWidth = 0,
+		castBarHeight = 0,
+		castBarAnchor = {},
+	}
 	
 	--> this technically should be causing taint
 	plateFrame.UnitFrame.BuffFrame.UpdateAnchor = function()end
@@ -9940,6 +10009,8 @@ Plater ["NAME_PLATE_UNIT_ADDED"] = function (self, event, unitBarId) -- ~added ï
 			unitFrame:ScriptRunHook (scriptInfo, "Nameplate Added")
 		end
 	end
+	
+	unitFrame.PlaterOnScreen = true
 end
 
 function Plater.EnableHighlight (unitFrame)
@@ -10006,6 +10077,8 @@ Plater ["NAME_PLATE_UNIT_REMOVED"] = function (self, event, unitBarId)
 	for _, auraIconFrame in ipairs (plateFrame.UnitFrame.BuffFrame2.PlaterBuffList) do
 		auraIconFrame:OnHideWidget()
 	end
+	
+	plateFrame.UnitFrame.PlaterOnScreen = nil
 end
 
 function Plater.DoNameplateAnimation (plateFrame, frameAnimations, spellName, isCritical)

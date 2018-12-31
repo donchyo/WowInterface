@@ -1,7 +1,7 @@
 local addonName, ns = ...
 
 -- if we're on the developer version the addon behaves slightly different
-ns.DEBUG_MODE = not not (GetAddOnMetadata(addonName, "Version") or ""):find("v201812120600", nil, true)
+ns.DEBUG_MODE = not not (GetAddOnMetadata(addonName, "Version") or ""):find("v201812280600", nil, true)
 
 -- micro-optimization for more speed
 local unpack = unpack
@@ -399,30 +399,47 @@ do
 
 	-- returns the LFD status (returns the info based on what we are hosting a group for, or what we queued up for)
 	function GetLFDStatus()
-		-- hosting a keystone group
-		local _, activityID, _, _, name, comment = C_LFGList.GetActiveEntryInfo()
 		local temp = {}
-		if activityID then
-			local index = LFD_ACTIVITYID_TO_DUNGEONID[activityID]
-			if index then
-				temp.dungeon = CONST_DUNGEONS[index]
-				temp.level = 0 or GetKeystoneLevel(name) or GetKeystoneLevel(comment) or 0
-				return true, temp
+
+		-- hosting a keystone group
+		local activityInfo = C_LFGList.GetActiveEntryInfo()
+
+		if activityInfo then
+			local activityID = activityInfo.activityID
+			local name = activityInfo.name -- unusable (broken by blizzard)
+			local comment = activityInfo.comment -- unusable (broken by blizzard)
+
+			if activityID then
+				local index = LFD_ACTIVITYID_TO_DUNGEONID[activityID]
+				if index then
+					temp.dungeon = CONST_DUNGEONS[index]
+					temp.level = 0 or GetKeystoneLevel(name) or GetKeystoneLevel(comment) or 0
+					return true, temp
+				end
 			end
 		end
+
 		-- applying for a keystone group
 		local applications = C_LFGList.GetApplications()
 		local j = 1
 		for i = 1, #applications do
 			local resultID = applications[i]
-			local _, activityID, name, comment, _, _, _, _, _, _, _, isDelisted = C_LFGList.GetSearchResultInfo(resultID)
-			if activityID and not isDelisted then
-				local _, appStatus, pendingStatus = C_LFGList.GetApplicationInfo(resultID)
-				if not pendingStatus and (appStatus == "applied" or appStatus == "invited") then
-					local index = LFD_ACTIVITYID_TO_DUNGEONID[activityID]
-					if index then
-						temp[j] = { dungeon = CONST_DUNGEONS[index], level = 0 or GetKeystoneLevel(name) or GetKeystoneLevel(comment) or 0, resultID = resultID }
-						j = j + 1
+			local searchResultInfo = C_LFGList.GetSearchResultInfo(resultID)
+
+			if searchResultInfo then
+				local activityID = searchResultInfo.activityID
+				local name = searchResultInfo.name -- unusable (broken by blizzard)
+				local comment = searchResultInfo.comment -- unusable (broken by blizzard)
+				local isDelisted = searchResultInfo.isDelisted
+
+				if activityID and not isDelisted then
+					local _, appStatus, pendingStatus = C_LFGList.GetApplicationInfo(resultID)
+					if not pendingStatus and (appStatus == "applied" or appStatus == "invited") then
+						local index = LFD_ACTIVITYID_TO_DUNGEONID[activityID]
+						if index then
+							temp[j] = { dungeon = CONST_DUNGEONS[index], level = 0 or GetKeystoneLevel(name) or GetKeystoneLevel(comment) or 0, resultID = resultID }
+							j = j + 1
+						end
 					end
 				end
 			end
@@ -1674,6 +1691,7 @@ do
 		-- for notification purposes after we're done iterating the provider queue
 		local isAnyProviderDesynced
 		local isAnyProviderOutdated
+		local neededProviderLoaded = 0
 
 		-- pick the data provider that suits the players region
 		for i = #dataProviderQueue, 1, -1 do
@@ -1693,6 +1711,11 @@ do
 				-- update the outdated counter with the largest count
 				if isOutdated then
 					isAnyProviderOutdated = isAnyProviderOutdated and max(isAnyProviderOutdated, outdatedDays) or outdatedDays
+				end
+
+				-- Check if our faction is loaded
+				if PLAYER_FACTION == data.faction then
+					neededProviderLoaded = neededProviderLoaded + 1
 				end
 
 				-- append provider to the group
@@ -1742,6 +1765,12 @@ do
 			DEFAULT_CHAT_FRAME:AddMessage(format(L.OUT_OF_SYNC_DATABASE_S, addonName), 1, 1, 0)
 		elseif isAnyProviderOutdated then
 			DEFAULT_CHAT_FRAME:AddMessage(format(L.OUTDATED_DATABASE_S, addonName, isAnyProviderOutdated), 1, 1, 0)
+		end
+
+		if neededProviderLoaded == 0 then
+			local _, localizedFaction = UnitFactionGroup("player")
+
+			DEFAULT_CHAT_FRAME:AddMessage(format(L.PROVIDER_NOT_LOADED, addonName, localizedFaction), 1, 1, 0)
 		end
 
 		-- hide the provider functions from the public API

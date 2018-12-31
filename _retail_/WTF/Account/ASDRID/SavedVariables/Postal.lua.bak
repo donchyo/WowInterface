@@ -1,47 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Krixiqt - Ravencrest"] = "Krixiqt - Ravencrest",
-		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
-		["Krixidk - Grim Batol"] = "Skullflower",
-		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
-		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
-		["Kroxi - Ravencrest"] = "Kroxi - Ravencrest",
-		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
-		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
-		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
-		["Kriximonk - Ravencrest"] = "Kriximonk - Ravencrest",
-		["Krixidh - Ravencrest"] = "Krixidh - Ravencrest",
-		["Krixidk - Ravencrest"] = "Krixidk - Ravencrest",
-		["Memeinhaler - Ravencrest"] = "Memeinhaler - Ravencrest",
-		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
-		["Donch - Grim Batol"] = "Donch - Grim Batol",
-		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
-		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
-		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
-		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
-		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
-		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
-		["Krixirogue - Ravencrest"] = "Krixirogue - Ravencrest",
-		["Donch - Crushridge"] = "Donch - Crushridge",
-		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
-		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
-		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
-		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
-		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
-		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
-		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
-		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
-		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
-		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
-		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
-		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
-		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
-		["Namji - Grim Batol"] = "Namji - Grim Batol",
-		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
-		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
-		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -88,18 +46,62 @@ Postal3DB = {
 			},
 		},
 	},
+	["profileKeys"] = {
+		["Krixiqt - Ravencrest"] = "Krixiqt - Ravencrest",
+		["Bawsi - Shattered Hand"] = "Bawsi - Shattered Hand",
+		["Krixidk - Grim Batol"] = "Skullflower",
+		["Gnomalock - Grim Batol"] = "Gnomalock - Grim Batol",
+		["Menardiairl - Culte de la Rive noire"] = "Menardiairl - Culte de la Rive noire",
+		["Kroxi - Ravencrest"] = "Kroxi - Ravencrest",
+		["Lilgaykrixi - Kazzak"] = "Lilgaykrixi - Kazzak",
+		["Daimtårta - Aggra (Português)"] = "Daimtårta - Aggra (Português)",
+		["Krixiyo - Blackmoore"] = "Krixiyo - Blackmoore",
+		["Kriximonk - Ravencrest"] = "Kriximonk - Ravencrest",
+		["Krixidh - Ravencrest"] = "Krixidh - Ravencrest",
+		["Krixidk - Ravencrest"] = "Krixidk - Ravencrest",
+		["Memeinhaler - Ravencrest"] = "Memeinhaler - Ravencrest",
+		["Greenzuriz - Aggra (Português)"] = "Greenzuriz - Aggra (Português)",
+		["Donch - Grim Batol"] = "Donch - Grim Batol",
+		["Kroxi - Grim Batol"] = "Kroxi - Grim Batol",
+		["Bawsi - Aggra (Português)"] = "Bawsi - Aggra (Português)",
+		["Bawsie - Grim Batol"] = "Bawsie - Grim Batol",
+		["Krixiyo - Lightning's Blade"] = "Krixiyo - Lightning's Blade",
+		["Donch - Shattered Hand"] = "Donch - Shattered Hand",
+		["Lowerboost - Lightbringer"] = "Lowerboost - Lightbringer",
+		["Krixirogue - Ravencrest"] = "Krixirogue - Ravencrest",
+		["Donch - Crushridge"] = "Donch - Crushridge",
+		["Krixi - Grim Batol"] = "Krixi - Grim Batol",
+		["Zetiz - Grim Batol"] = "Zetiz - Grim Batol",
+		["Krixiyo - Twisting Nether"] = "Krixiyo - Twisting Nether",
+		["Treefiddy - Aggra (Português)"] = "Treefiddy - Aggra (Português)",
+		["Kroxi - Crushridge"] = "Kroxi - Crushridge",
+		["Namji - Grim Batol"] = "Namji - Grim Batol",
+		["Zolution - Grim Batol"] = "Zolution - Grim Batol",
+		["Krixidh - Grim Batol"] = "Krixidh - Grim Batol",
+		["Spacegoatx - Aggra (Português)"] = "Spacegoatx - Aggra (Português)",
+		["Donchyo - Shattered Hand"] = "Donchyo - Shattered Hand",
+		["Asdasdasdfaf - Grim Batol"] = "Asdasdasdfaf - Grim Batol",
+		["Líttle - Grim Batol"] = "Líttle - Grim Batol",
+		["Kroxidps - Aggra (Português)"] = "Kroxidps - Aggra (Português)",
+		["Nyrith - Grim Batol"] = "Nyrith - Grim Batol",
+		["Zuriz - Grim Batol"] = "Zuriz - Grim Batol",
+		["Krixiswag - Aggra (Português)"] = "Krixiswag - Aggra (Português)",
+		["Krixidk - Valley of Heroes - EU"] = "Krixidk - Valley of Heroes - EU",
+	},
 	["profiles"] = {
 		["Krixiqt - Ravencrest"] = {
+			["OpenSpeed"] = 0.3,
 			["BlackBook"] = {
 				["recent"] = {
-					"Krixidk|Ravencrest|Alliance", -- [1]
-					"Shallina|Ravencrest|Alliance", -- [2]
-					"Krixidh|Ravencrest|Alliance", -- [3]
-					"Bamo|Ravencrest|Alliance", -- [4]
-					"Krixirogue|Ravencrest|Alliance", -- [5]
+					"Kriximonk|Ravencrest|Alliance", -- [1]
+					"Krixidk|Ravencrest|Alliance", -- [2]
+					"Swecat|Ravencrest|Alliance", -- [3]
+					"Shallina|Ravencrest|Alliance", -- [4]
+					"Krixidh|Ravencrest|Alliance", -- [5]
+					"Bamo|Ravencrest|Alliance", -- [6]
+					"Krixirogue|Ravencrest|Alliance", -- [7]
 				},
 			},
-			["OpenSpeed"] = 0.3,
 		},
 		["Bawsi - Shattered Hand"] = {
 			["BlackBook"] = {
@@ -109,13 +111,13 @@ Postal3DB = {
 			},
 		},
 		["Krixidk - Grim Batol"] = {
+			["OpenSpeed"] = 0.3,
 			["BlackBook"] = {
 				["recent"] = {
 					"Spacegoaty|Grim Batol|Alliance", -- [1]
 					"Kavick|Grim Batol|Alliance", -- [2]
 				},
 			},
-			["OpenSpeed"] = 0.3,
 		},
 		["Gnomalock - Grim Batol"] = {
 			["BlackBook"] = {
@@ -161,8 +163,9 @@ Postal3DB = {
 		["Kriximonk - Ravencrest"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Aljan|Ravencrest|Alliance", -- [1]
-					"Krixidk|Ravencrest|Alliance", -- [2]
+					"Krixiqt|Ravencrest|Alliance", -- [1]
+					"Aljan|Ravencrest|Alliance", -- [2]
+					"Krixidk|Ravencrest|Alliance", -- [3]
 				},
 			},
 		},
@@ -179,8 +182,8 @@ Postal3DB = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Kriximonk|Ravencrest|Alliance", -- [1]
-					"Nex|Ravencrest|Alliance", -- [2]
-					"Krixiqt|Ravencrest|Alliance", -- [3]
+					"Krixiqt|Ravencrest|Alliance", -- [2]
+					"Nex|Ravencrest|Alliance", -- [3]
 					"Kroxi|Ravencrest|Alliance", -- [4]
 				},
 			},
@@ -303,6 +306,7 @@ Postal3DB = {
 			},
 		},
 		["Krixi - Grim Batol"] = {
+			["OpenSpeed"] = 0.3,
 			["BlackBook"] = {
 				["recent"] = {
 					"Krixidk|Grim Batol|Alliance", -- [1]
@@ -327,31 +331,11 @@ Postal3DB = {
 					"Eililililili|Grim Batol|Alliance", -- [20]
 				},
 			},
-			["OpenSpeed"] = 0.3,
 		},
-		["Nyrith - Grim Batol"] = {
+		["Krixiyo - Twisting Nether"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Zetiz|Grim Batol|Alliance", -- [1]
-					"Krixidk|Grim Batol|Alliance", -- [2]
-					"Kroxi|Grim Batol|Alliance", -- [3]
-					"Zuriz|Grim Batol|Alliance", -- [4]
-					"Menardia|Grim Batol|Alliance", -- [5]
-					"Menardians|Grim Batol|Alliance", -- [6]
-					"Zolution|Grim Batol|Alliance", -- [7]
-					"Donch|Grim Batol|Alliance", -- [8]
-					"Krixi|Grim Batol|Alliance", -- [9]
-					"Bawsie|Grim Batol|Alliance", -- [10]
-					"Dunkelman|Grim Batol|Alliance", -- [11]
-					"Namji|Grim Batol|Alliance", -- [12]
-					"Daimtårta|Grim Batol|Alliance", -- [13]
-					"Líttle|Grim Batol|Alliance", -- [14]
-					"Kavick|Grim Batol|Alliance", -- [15]
-					"Diamondfoxx|Grim Batol|Alliance", -- [16]
-					"Vicsur|Grim Batol|Alliance", -- [17]
-					"Gnomalock|Grim Batol|Alliance", -- [18]
-					"Estefano|Grim Batol|Alliance", -- [19]
-					"Spacegoatx-Aggra(Português)|Grim Batol|Alliance", -- [20]
+					"TEGU|Twisting Nether|Horde", -- [1]
 				},
 			},
 		},
@@ -366,30 +350,21 @@ Postal3DB = {
 		},
 		["Kroxi - Crushridge"] = {
 		},
-		["Zolution - Grim Batol"] = {
+		["Krixidh - Grim Batol"] = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Krixidk|Grim Batol|Alliance", -- [1]
 					"Nyrith|Grim Batol|Alliance", -- [2]
-					"Zetiz|Grim Batol|Alliance", -- [3]
-					"Krixi|Grim Batol|Alliance", -- [4]
-					"Kroxi|Grim Batol|Alliance", -- [5]
-					"Dunkelman|Grim Batol|Alliance", -- [6]
+					"Zuriz|Grim Batol|Alliance", -- [3]
+					"Spacegoaty|Grim Batol|Alliance", -- [4]
+					"Vicserdh|Grim Batol|Alliance", -- [5]
+					"Bawsie|Grim Batol|Alliance", -- [6]
 					"Donch|Grim Batol|Alliance", -- [7]
-					"nyrith|Grim Batol|Alliance", -- [8]
-					"Allisonblake|Grim Batol|Alliance", -- [9]
-					"Gnomalock|Grim Batol|Alliance", -- [10]
-					"Spacegoaty|Grim Batol|Alliance", -- [11]
-					"Kajata|Grim Batol|Alliance", -- [12]
-					"Bawsie|Grim Batol|Alliance", -- [13]
-					"Líttle|Grim Batol|Alliance", -- [14]
-					"Greenzuriz-Aggra (Português)|Grim Batol|Alliance", -- [15]
-					"Sharoc|Grim Batol|Alliance", -- [16]
+					"Krixi|Grim Batol|Alliance", -- [8]
 				},
 			},
 		},
 		["Skullflower"] = {
-			["OpenSpeed"] = 0.3,
 			["BlackBook"] = {
 				["recent"] = {
 					"Nyrith|Grim Batol|Alliance", -- [1]
@@ -409,6 +384,7 @@ Postal3DB = {
 					"Vicserdh|Grim Batol|Alliance", -- [15]
 				},
 			},
+			["OpenSpeed"] = 0.3,
 		},
 		["Zetiz - Grim Batol"] = {
 			["BlackBook"] = {
@@ -464,24 +440,51 @@ Postal3DB = {
 				},
 			},
 		},
-		["Krixidh - Grim Batol"] = {
+		["Zolution - Grim Batol"] = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Krixidk|Grim Batol|Alliance", -- [1]
 					"Nyrith|Grim Batol|Alliance", -- [2]
-					"Zuriz|Grim Batol|Alliance", -- [3]
-					"Spacegoaty|Grim Batol|Alliance", -- [4]
-					"Vicserdh|Grim Batol|Alliance", -- [5]
-					"Bawsie|Grim Batol|Alliance", -- [6]
+					"Zetiz|Grim Batol|Alliance", -- [3]
+					"Krixi|Grim Batol|Alliance", -- [4]
+					"Kroxi|Grim Batol|Alliance", -- [5]
+					"Dunkelman|Grim Batol|Alliance", -- [6]
 					"Donch|Grim Batol|Alliance", -- [7]
-					"Krixi|Grim Batol|Alliance", -- [8]
+					"nyrith|Grim Batol|Alliance", -- [8]
+					"Allisonblake|Grim Batol|Alliance", -- [9]
+					"Gnomalock|Grim Batol|Alliance", -- [10]
+					"Spacegoaty|Grim Batol|Alliance", -- [11]
+					"Kajata|Grim Batol|Alliance", -- [12]
+					"Bawsie|Grim Batol|Alliance", -- [13]
+					"Líttle|Grim Batol|Alliance", -- [14]
+					"Greenzuriz-Aggra (Português)|Grim Batol|Alliance", -- [15]
+					"Sharoc|Grim Batol|Alliance", -- [16]
 				},
 			},
 		},
-		["Krixiyo - Twisting Nether"] = {
+		["Nyrith - Grim Batol"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"TEGU|Twisting Nether|Horde", -- [1]
+					"Zetiz|Grim Batol|Alliance", -- [1]
+					"Krixidk|Grim Batol|Alliance", -- [2]
+					"Kroxi|Grim Batol|Alliance", -- [3]
+					"Zuriz|Grim Batol|Alliance", -- [4]
+					"Menardia|Grim Batol|Alliance", -- [5]
+					"Menardians|Grim Batol|Alliance", -- [6]
+					"Zolution|Grim Batol|Alliance", -- [7]
+					"Donch|Grim Batol|Alliance", -- [8]
+					"Krixi|Grim Batol|Alliance", -- [9]
+					"Bawsie|Grim Batol|Alliance", -- [10]
+					"Dunkelman|Grim Batol|Alliance", -- [11]
+					"Namji|Grim Batol|Alliance", -- [12]
+					"Daimtårta|Grim Batol|Alliance", -- [13]
+					"Líttle|Grim Batol|Alliance", -- [14]
+					"Kavick|Grim Batol|Alliance", -- [15]
+					"Diamondfoxx|Grim Batol|Alliance", -- [16]
+					"Vicsur|Grim Batol|Alliance", -- [17]
+					"Gnomalock|Grim Batol|Alliance", -- [18]
+					"Estefano|Grim Batol|Alliance", -- [19]
+					"Spacegoatx-Aggra(Português)|Grim Batol|Alliance", -- [20]
 				},
 			},
 		},

@@ -33,7 +33,6 @@ local GetQuestLogRewardMoney = GetQuestLogRewardMoney
 local GetQuestTagInfo = GetQuestTagInfo
 local GetNumQuestLogRewards = GetNumQuestLogRewards
 local GetQuestInfoByQuestID = C_TaskQuest.GetQuestInfoByQuestID
-local GetQuestTimeLeftMinutes = C_TaskQuest.GetQuestTimeLeftMinutes
 local GetQuestsForPlayerByMapID = C_TaskQuest.GetQuestsForPlayerByMapID
 
 local MapRangeClamped = DF.MapRangeClamped
@@ -169,6 +168,11 @@ function WorldQuestTracker.PlayTick (tickType)
 end
 
 local onenter_scale_animation = function (self, scale)
+
+	if (not WorldQuestTracker.db.profile.hoverover_animations) then
+		return
+	end
+
 	if (self.OnLeaveAnimation:IsPlaying()) then
 		self.OnLeaveAnimation:Stop()
 	end
@@ -181,6 +185,11 @@ local onenter_scale_animation = function (self, scale)
 end
 
 local onleave_scale_animation = function (self, scale)
+
+	if (not WorldQuestTracker.db.profile.hoverover_animations) then
+		return
+	end
+	
 	if (self.OnEnterAnimation:IsPlaying()) then
 		self.OnEnterAnimation:Stop()
 	end
@@ -218,7 +227,7 @@ local questButton_OnEnter = function (self)
 		end
 		
 		if (self.OnEnterAnimation) then
-			onenter_scale_animation (self, 0.1)
+			onenter_scale_animation (self, self.OnEnterAnimationScaleDiff or WQT_ANIMATION_SPEED)
 			--[=[ scale adjacents squares
 			local widgetAnchorID = self.WidgetAnchorID
 			if (widgetAnchorID) then
@@ -283,10 +292,10 @@ local questButton_OnLeave = function (self)
 		if (WorldMapFrame.mapID == WorldQuestTracker.MapData.ZoneIDs.AZEROTH) then
 			local map = WorldQuestTrackerDataProvider:GetMap()
 			for pin in map:EnumeratePinsByTemplate ("WorldQuestTrackerWorldMapPinTemplate") do
-				map:RemovePin (pin)
 				if (pin.Child) then
 					pin.Child:Hide()
 				end
+				map:RemovePin (pin)
 			end
 		end
 		wipe (WorldQuestTracker.WorldMapWidgetsLazyUpdateFrame.ShownQuests)
@@ -320,7 +329,7 @@ end
 
 --local worldSquareBackdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1.5, bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16}
 --local worldSquareBackdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1.5, bgFile = [[Interface\DialogFrame\UI-DialogBox-Background-Dark]], tile = true, tileSize = 16}
-local worldSquareBackdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\TARGETINGFRAME\UI-TargetingFrame-LevelBackground]], tile = true, tileSize = 16}
+local worldSquareBackdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1.8, bgFile = [[Interface\TARGETINGFRAME\UI-TargetingFrame-LevelBackground]], tile = true, tileSize = 16}
 
 --cria uma square widget no world map ~world ~createworld ~createworldwidget
 --index and name are only for the glogal name
@@ -361,19 +370,19 @@ local create_worldmap_square = function (mapName, index, parent)
 	commonBorder:SetSize (WorldQuestTracker.Constants.WorldMapSquareSize, WorldQuestTracker.Constants.WorldMapSquareSize)
 	
 	local rareBorder = button:CreateTexture (nil, "artwork", 1)
-	rareBorder:SetPoint ("topleft", button, "topleft")
+	rareBorder:SetPoint ("topleft", button, "topleft", -1, 1)
 	rareBorder:SetTexture ([[Interface\AddOns\WorldQuestTracker\media\border_blueT]])
-	rareBorder:SetSize (WorldQuestTracker.Constants.WorldMapSquareSize, WorldQuestTracker.Constants.WorldMapSquareSize)
+	rareBorder:SetSize (WorldQuestTracker.Constants.WorldMapSquareSize+2, WorldQuestTracker.Constants.WorldMapSquareSize+2)
 	
 	local epicBorder = button:CreateTexture (nil, "artwork", 1)
-	epicBorder:SetPoint ("topleft", button, "topleft")
+	epicBorder:SetPoint ("topleft", button, "topleft", -1, 1)
 	epicBorder:SetTexture ([[Interface\AddOns\WorldQuestTracker\media\border_pinkT]])
-	epicBorder:SetSize (WorldQuestTracker.Constants.WorldMapSquareSize, WorldQuestTracker.Constants.WorldMapSquareSize)
+	epicBorder:SetSize (WorldQuestTracker.Constants.WorldMapSquareSize + 2, WorldQuestTracker.Constants.WorldMapSquareSize + 2)
 	
 	local invasionBorder = button:CreateTexture (nil, "artwork", 1)
-	invasionBorder:SetPoint ("topleft", button, "topleft")
-	invasionBorder:SetTexture ([[Interface\AddOns\WorldQuestTracker\media\border_legionT]])
-	invasionBorder:SetSize (WorldQuestTracker.Constants.WorldMapSquareSize, WorldQuestTracker.Constants.WorldMapSquareSize)
+	invasionBorder:SetPoint ("topleft", button, "topleft", -1, 1)
+	invasionBorder:SetTexture ([[Interface\AddOns\WorldQuestTracker\media\border_redT]])
+	invasionBorder:SetSize (WorldQuestTracker.Constants.WorldMapSquareSize + 2, WorldQuestTracker.Constants.WorldMapSquareSize + 2)
 	invasionBorder:Hide()
 	
 	local trackingBorder = button:CreateTexture (nil, "artwork", 1)
@@ -402,22 +411,12 @@ local create_worldmap_square = function (mapName, index, parent)
 	borderAnimation:Hide()
 	button.borderAnimation = borderAnimation
 	
-	local shineAnimation = CreateFrame ("frame", "$parentShine", button, "AnimatedShineTemplate")
-	shineAnimation:SetFrameLevel (303)
-	--shineAnimation:SetAllPoints()
-	shineAnimation:SetPoint ("topleft", 4, -2)
-	shineAnimation:SetPoint ("bottomright", 0, 1)
-	shineAnimation:Hide()
-	button.shineAnimation = shineAnimation
-	
-	--animation
-	
 	--create the on enter/leave scale mini animation
 	
 		--animations
 		local animaSettings = {
-			scaleMax = 1.2,
-			speed = 0.1,
+			scaleMax = 1.1,
+			speed = WQT_ANIMATION_SPEED,
 		}
 		do 
 			button.OnEnterAnimation = DF:CreateAnimationHub (button, function() end, function() end)
@@ -432,6 +431,8 @@ local create_worldmap_square = function (mapName, index, parent)
 			--anim:SetSmoothing ("IN_OUT")
 			anim:SetSmoothing ("IN")
 			button.OnLeaveAnimation.ScaleAnimation = anim
+			
+			button.OnEnterAnimationScaleDiff = WQT_ANIMATION_SPEED
 		end
 		
 	WorldQuestTracker.CreateStartTrackingAnimation (button, nil, 5)
@@ -579,9 +580,10 @@ local create_worldmap_square = function (mapName, index, parent)
 	button.timeBlipGreen:SetVertexColor (1, 1, 1)
 	button.timeBlipGreen:SetAlpha (.6)	
 	
-	button.questTypeBlip = button:CreateTexture (nil, "OVERLAY", 2)
+	button.questTypeBlip = button:CreateTexture (nil, "OVERLAY")
 	button.questTypeBlip:SetPoint ("topright", button, "topright", 2, 4)
 	button.questTypeBlip:SetSize (12, 12)
+	button.questTypeBlip:SetDrawLayer ("overlay", 4)
 	
 	local amountText = button:CreateFontString (nil, "overlay", "GameFontNormal", 1)
 	amountText:SetPoint ("bottom", button, "bottom", 1, -10)
@@ -982,6 +984,13 @@ function WorldQuestTracker.UpdateWorldWidget (widget, questID, numObjectives, ma
 	
 	widget.amountBackground:SetWidth (32)
 	
+	--check if the rare star background exists on this widget, it is created at run time
+	--[=[ -the extra backdrop glow for the rare star has been removed, it isn't fit well after using the blue border again
+	if (widget.questTypeBlip.RareBackground) then
+		widget.questTypeBlip.RareBackground:Hide()
+	end
+	--]=]
+	
 	if (worldQuestType == LE_QUEST_TAG_TYPE_PVP) then
 		widget.questTypeBlip:Show()
 		widget.questTypeBlip:SetTexture ([[Interface\PVPFrame\Icon-Combat]])
@@ -990,8 +999,9 @@ function WorldQuestTracker.UpdateWorldWidget (widget, questID, numObjectives, ma
 		
 	elseif (worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE) then
 		widget.questTypeBlip:Show()
-		widget.questTypeBlip:SetTexture ([[Interface\MINIMAP\ObjectIconsAtlas]])
-		widget.questTypeBlip:SetTexCoord (unpack (WorldQuestTracker.MapData.QuestTypeIcons [WQT_QUESTTYPE_PETBATTLE].coords)) -- left right    top botton  --7.3.5
+		--widget.questTypeBlip:SetTexture ([[Interface\MINIMAP\ObjectIconsAtlas]])
+		widget.questTypeBlip:SetTexture (WorldQuestTracker.MapData.QuestTypeIcons [WQT_QUESTTYPE_PETBATTLE].icon)
+		widget.questTypeBlip:SetTexCoord (unpack (WorldQuestTracker.MapData.QuestTypeIcons [WQT_QUESTTYPE_PETBATTLE].coords))
 		widget.questTypeBlip:SetAlpha (.98)
 		
 	elseif (worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON) then
@@ -1000,11 +1010,25 @@ function WorldQuestTracker.UpdateWorldWidget (widget, questID, numObjectives, ma
 		widget.questTypeBlip:SetTexCoord (0, 1, 0, 1)
 		widget.questTypeBlip:SetAlpha (.98)
 		
-	elseif (rarity == LE_WORLD_QUEST_QUALITY_RARE) then
+	elseif (rarity == LE_WORLD_QUEST_QUALITY_RARE and isElite) then
+		--it is always adding the star of rare quests, but some rare quests aren't elite
+		--now it's using the old blue border, so the blue star can be used only for rare elite quests
 		widget.questTypeBlip:Show()
 		widget.questTypeBlip:SetTexture ([[Interface\AddOns\WorldQuestTracker\media\icon_star]])
 		widget.questTypeBlip:SetTexCoord (6/32, 26/32, 5/32, 27/32)
-		widget.questTypeBlip:SetAlpha (.89)
+		widget.questTypeBlip:SetAlpha (.834)
+		
+		--create the rare glow at run time
+		--[=[
+		if (not widget.questTypeBlip.RareBackground) then
+			widget.questTypeBlip.RareBackground = widget:CreateTexture (nil, "overlay")
+			widget.questTypeBlip.RareBackground:SetDrawLayer ("overlay", 5)
+			widget.questTypeBlip.RareBackground:SetPoint ("topright", widget.questTypeBlip, "topright", -3, -5)
+			widget.questTypeBlip.RareBackground:SetTexture ([[Interface\AddOns\WorldQuestTracker\media\icon_star_background]])
+		else
+			widget.questTypeBlip.RareBackground:Show()
+		end
+		--]=]
 		
 	elseif (worldQuestType == LE_QUEST_TAG_TYPE_FACTION_ASSAULT) then --LE_QUEST_TAG_TYPE_INVASION (legion)
 		if (UnitFactionGroup("player") == "Alliance") then
@@ -1048,6 +1072,8 @@ function WorldQuestTracker.UpdateWorldWidget (widget, questID, numObjectives, ma
 	if (rewardName and not okay) then
 	
 		widget.texture:SetTexture (WorldQuestTracker.MapData.ReplaceIcon [rewardTexture] or rewardTexture)
+		
+	--	print (rewardName)
 		
 		if (numRewardItems >= 1000) then
 			widget.amountText:SetText (format ("%.1fK", numRewardItems/1000))
@@ -1412,10 +1438,10 @@ function WorldQuestTracker.UpdateWorldQuestsOnWorldMap (noCache, showFade, isQue
 	else
 		local map = WorldQuestTrackerDataProvider:GetMap()
 		for pin in map:EnumeratePinsByTemplate ("WorldQuestTrackerWorldMapPinTemplate") do
-			map:RemovePin (pin)
-			if (pin.Child) then
+		if (pin.Child) then
 				pin.Child:Hide()
 			end
+			map:RemovePin (pin)
 		end
 	end
 	
@@ -1546,6 +1572,17 @@ local scheduledIconUpdate = function (questTable)
 	button:SetScale (pinScale + WorldQuestTracker.db.profile.world_map_config.onmap_scale_offset)
 	--/dump WorldQuestTrackerAddon.db.profile.world_map_config.onmap_scale_offset
 	
+	--debug add a small red square to notify this is a world widget
+	--[=[
+	if (not button.DebugTexture) then
+		local debugTexture = button:CreateTexture (nil, "overlay")
+		debugTexture:SetColorTexture (1, 0, 0)
+		debugTexture:SetSize (20, 20)
+		debugTexture:SetPoint ("topright", button, "topleft", -5, 0)
+		button.DebugTexture = debugTexture
+	end
+	--]=]
+	
 --	if (button.questID ~= questID and HaveQuestData (questID)) then
 		--> can cache here, at this point the quest data should already be in the cache
 		local title, factionID, tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, allowDisplayPastCritical, gold, goldFormated, rewardName, rewardTexture, numRewardItems, itemName, itemTexture, itemLevel, quantity, quality, isUsable, itemID, isArtifact, artifactPower, isStackable, stackAmount = WorldQuestTracker.GetOrLoadQuestData (questID)
@@ -1608,7 +1645,7 @@ local lazyUpdateFunc = function (self, deltaTime)
 		
 		--if framerate is low, update more quests at the same time
 		local frameRate = GetFramerate()
-		local amountToUpdate = 1
+		local amountToUpdate = 2 + (not WorldQuestTracker.db.profile.hoverover_animations and 5 or 0)
 		
 		if (frameRate < 20) then
 			amountToUpdate = amountToUpdate + 3

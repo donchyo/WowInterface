@@ -437,3 +437,10 @@ RaiderIO_DB_TW_A_R: disabled
 RaiderIO_DB_KR_H_R: disabled
 RaiderIO_DB_KR_A_R: disabled
 AtlasLoot_BattleforAzeroth: disabled
+AAP-Core: disabled
+AAP-Vanilla: disabled
+AAP-TBC-WotLK: disabled
+AAP-Cata-MoP: disabled
+AAP-WoD: disabled
+AAP-Legion: disabled
+AAP-BfA: disabled

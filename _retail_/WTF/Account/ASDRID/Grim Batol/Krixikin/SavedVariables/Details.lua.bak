@@ -19,22 +19,15 @@ _detalhes_database = {
 							["targets"] = {
 								["Greathorn Stag"] = 9136,
 							},
-							["serial"] = "Player-1303-04772A8A",
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["custom"] = 0,
+							["total"] = 9136.002883,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9136.002883,
-							["spec"] = 105,
-							["dps_started"] = false,
-							["end_time"] = 1540086242,
-							["on_hold"] = false,
-							["last_event"] = 1540086241,
-							["nome"] = "Krixikin",
 							["spells"] = {
 								["_ActorTable"] = {
 									{
@@ -55,16 +48,16 @@ _detalhes_database = {
 										["c_max"] = 661,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 661,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									}, -- [1]
 									[164815] = {
 										["c_amt"] = 2,
@@ -84,45 +77,16 @@ _detalhes_database = {
 										["c_max"] = 677,
 										["id"] = 164815,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 676,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									[5221] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 646,
-										["targets"] = {
-											["Greathorn Stag"] = 1938,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1938,
-										["n_min"] = 646,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1938,
-										["c_max"] = 0,
-										["id"] = 5221,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 									[164812] = {
 										["c_amt"] = 2,
@@ -142,29 +106,65 @@ _detalhes_database = {
 										["c_max"] = 629,
 										["id"] = 164812,
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 629,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+									[5221] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 646,
+										["targets"] = {
+											["Greathorn Stag"] = 1938,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1938,
+										["n_min"] = 646,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1938,
+										["c_max"] = 0,
+										["id"] = 5221,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 993.475737591131,
-							["custom"] = 0,
-							["tipo"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1540086242,
 							["damage_taken"] = 2063.002883,
+							["tipo"] = 1,
+							["nome"] = "Krixikin",
+							["spec"] = 105,
+							["grupo"] = true,
+							["last_dps"] = 993.475737591131,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
+							["last_event"] = 1540086241,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1540086232,
-							["delay"] = 0,
-							["total"] = 9136.002883,
+							["serial"] = "Player-1303-04772A8A",
+							["on_hold"] = false,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -174,13 +174,13 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Krixikin"] = 583,
+							["healing_from"] = {
+								["Krixikin"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "DRUID",
 							["totalover"] = 583.008241,
 							["total_without_pet"] = 2063.008241,
 							["total"] = 2063.008241,
@@ -200,7 +200,7 @@ _detalhes_database = {
 							["healing_taken"] = 2063.008241,
 							["fight_component"] = true,
 							["end_time"] = 1540086242,
-							["classe"] = "DRUID",
+							["spec"] = 105,
 							["nome"] = "Krixikin",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -224,12 +224,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 276,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 276,
-										["n_curado"] = 168,
-										["n_amt"] = 2,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 168,
+										["c_min"] = 276,
 										["absorbed"] = 0,
 									},
 									[145109] = {
@@ -252,12 +252,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 1363,
-										["n_amt"] = 2,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 1363,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									[143924] = {
@@ -279,28 +279,28 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 256,
-										["n_amt"] = 6,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 6,
+										["n_curado"] = 256,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Krixikin"] = true,
+							["targets_overheal"] = {
+								["Krixikin"] = 583,
 							},
-							["tipo"] = 2,
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1540086241,
-							["start_time"] = 1540086234,
+							["tipo"] = 2,
 							["totaldenied"] = 0.008241,
+							["start_time"] = 1540086234,
 							["delay"] = 0,
-							["spec"] = 105,
+							["last_event"] = 1540086241,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -319,26 +319,26 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[164812] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 164812,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 9,
-										["id"] = 164812,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									[164815] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 164815,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 7,
-										["id"] = 164815,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -348,37 +348,37 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[253432] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 1,
+										["id"] = 253432,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = 253432,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									[768] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = 768,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									[227723] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 227723,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = 227723,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -394,14 +394,14 @@ _detalhes_database = {
 								[768] = 1,
 								[5221] = 3,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["last_event"] = 1540086242,
 							["tipo"] = 4,
 							["nome"] = "Krixikin",
 							["pets"] = {
 							},
 							["serial"] = "Player-1303-04772A8A",
-							["last_event"] = 1540086242,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
@@ -419,55 +419,36 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["CombatEndedAt"] = 554462.185,
+				["instance_type"] = "none",
 				["enemy"] = "Greathorn Stag",
 				["combat_counter"] = 4116,
 				["playing_solo"] = true,
 				["totals"] = {
-					9135.991212, -- [1]
+					9135.970105, -- [1]
 					2063, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					9136, -- [1]
-					2063, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
-				["frags_need_refresh"] = true,
+				["CombatEndedAt"] = 554462.185,
 				["__call"] = {
 				},
 				["PhaseData"] = {
@@ -475,7 +456,10 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Krixikin"] = 9136.002883,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -484,17 +468,33 @@ _detalhes_database = {
 							["Krixikin"] = 2063.008241,
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Krixikin"] = 9136.002883,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
 				["end_time"] = 554462.185,
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
 				["TotalElapsedCombatTime"] = 554462.185,
+				["combat_id"] = 168,
+				["totals_grupo"] = {
+					9136, -- [1]
+					2063, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
 				["is_temporary"] = true,
 				["hasSaved"] = true,
 				["frags"] = {
@@ -504,7 +504,7 @@ _detalhes_database = {
 				["data_inicio"] = "03:43:53",
 				["CombatSkillCache"] = {
 				},
-				["combat_id"] = 168,
+				["frags_need_refresh"] = true,
 				["start_time"] = 554452.989,
 				["TimeData"] = {
 				},
@@ -512,9 +512,9 @@ _detalhes_database = {
 			}, -- [1]
 		},
 	},
-	["last_version"] = "v8.0.1.6600",
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
+	["combat_counter"] = 4123,
+	["character_data"] = {
+		["logons"] = 335,
 	},
 	["tabela_instancias"] = {
 	},
@@ -540,7 +540,7 @@ _detalhes_database = {
 			["pos"] = {
 				["normal"] = {
 					["y"] = -397.328143831935,
-					["x"] = 541.251873688982,
+					["x"] = 541.252236237803,
 					["w"] = 208.361206054688,
 					["h"] = 127.507972717285,
 				},
@@ -631,25 +631,13 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
+	["last_instance_time"] = 1530986156,
 	["active_profile"] = "Namji-Grim Batol",
 	["last_encounter"] = "Argus the Unmaker",
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
+	["ignore_nicktag"] = false,
 	["plugin_database"] = {
 	},
-	["last_realversion"] = 135,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["ignore_nicktag"] = false,
+	["force_font_outline"] = "",
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "Maw of Souls",
 		["started"] = false,
@@ -661,30 +649,42 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 1492,
 		["previous_boss_killed_at"] = 1530986858,
 	},
-	["combat_counter"] = 4118,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_day"] = "30",
+	["last_version"] = "v8.1.0.6692",
 	["combat_id"] = 168,
 	["savedStyles"] = {
 	},
-	["last_instance_time"] = 1530986156,
-	["last_day"] = "05",
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["nick_tag_cache"] = {
+		["last_version"] = 11,
+		["nextreset"] = 1546950894,
+	},
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
 		["only_first"] = 5,
 		["where"] = 1,
 	},
-	["character_data"] = {
-		["logons"] = 330,
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
-	["force_font_outline"] = "",
-	["nick_tag_cache"] = {
-		["last_version"] = 10,
-		["nextreset"] = 1541993046,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
+	["last_realversion"] = 135,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

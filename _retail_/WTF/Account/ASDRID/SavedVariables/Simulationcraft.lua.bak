@@ -2,16 +2,22 @@
 SimulationCraftDB = {
 	["profileKeys"] = {
 		["Krixiqt - Ravencrest"] = "Krixiqt - Ravencrest",
+		["Krixirogue - Ravencrest"] = "Krixirogue - Ravencrest",
 		["Kriximonk - Ravencrest"] = "Kriximonk - Ravencrest",
 		["Krixidh - Ravencrest"] = "Krixidh - Ravencrest",
+		["Kroxi - Ravencrest"] = "Kroxi - Ravencrest",
 		["Krixidk - Ravencrest"] = "Krixidk - Ravencrest",
 	},
 	["profiles"] = {
 		["Krixiqt - Ravencrest"] = {
 		},
+		["Krixirogue - Ravencrest"] = {
+		},
 		["Kriximonk - Ravencrest"] = {
 		},
 		["Krixidh - Ravencrest"] = {
+		},
+		["Kroxi - Ravencrest"] = {
 		},
 		["Krixidk - Ravencrest"] = {
 		},

@@ -435,3 +435,10 @@ AutoTurnIn: enabled
 ElvUI_EverySecondCounts: disabled
 BigWigs_Azeroth: enabled
 AtlasLoot_BattleforAzeroth: disabled
+AAP-Core: disabled
+AAP-Vanilla: disabled
+AAP-TBC-WotLK: disabled
+AAP-Cata-MoP: disabled
+AAP-WoD: disabled
+AAP-Legion: disabled
+AAP-BfA: disabled

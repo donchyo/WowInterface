@@ -3,31 +3,31 @@ ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 	},
 	["ChatEditHistory"] = {
-		"/cw Bävermatsqt-Ravencrest tack men jag har inte tid ", -- [1]
-		"/cw Bävermatsqt-Ravencrest gubben är hemskt depleted", -- [2]
-		"/cw Bävermatsqt-Ravencrest men asså", -- [3]
-		"/cw Bävermatsqt-Ravencrest 304 depleted", -- [4]
-		"/wa", -- [5]
-		"/p itsjosephw", -- [6]
-		"/p he taunt", -- [7]
-		"/p you reset stack", -- [8]
-		"/p i dont wnat it", -- [9]
-		"/p 370 is good enough", -- [10]
-		" thanks for the help", -- [11]
-		" even if i was mega shit", -- [12]
-		"/cw Rudama-Outland yes", -- [13]
-		" karkz", -- [14]
-		" :D", -- [15]
-		" eller ås miggar jag en gubbe till ett till acc", -- [16]
-		" ezpz", -- [17]
-		"/who squeak", -- [18]
-		"/cw Squeakytail inv", -- [19]
-		"/cw Brexitdh-Ravencrest hi", -- [20]
+		"/cw Squeakytail inv", -- [1]
+		"/cw Brexitdh-Ravencrest hi", -- [2]
+		" asså", -- [3]
+		" får man komma", -- [4]
+		" på warriorn", -- [5]
+		" jack!", -- [6]
+		" in med mig", -- [7]
+		" såg att ni letade tank", -- [8]
+		" jag behöver en m+ på min warrior", -- [9]
+		"/p druid friend", -- [10]
+		"/p cna you stealth", -- [11]
+		"/p on the dog", -- [12]
+		"/p pog", -- [13]
+		"/p :)", -- [14]
+		"/p ok but %", -- [15]
+		"/p ok", -- [16]
+		"/p pog ty", -- [17]
+		"/cw Dolozplash-Stormrage na", -- [18]
+		"/cw Dolozplash-Stormrage i got one aswell", -- [19]
+		"/p )))", -- [20]
 	},
 	["BodyGuard"] = {
-		["Active"] = false,
-		["Health"] = 0,
-		["MaxHealth"] = 0,
 		["IsInValidZone"] = true,
+		["MaxHealth"] = 0,
+		["Health"] = 0,
+		["Active"] = false,
 	},
 }

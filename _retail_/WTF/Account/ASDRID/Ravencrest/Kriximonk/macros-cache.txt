@@ -35,6 +35,11 @@ VER 3 0100000000000014 "sheilun's gift" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]sheilun's gift
 END
+VER 3 0100000000000018 "statue taunt" "INV_MISC_QUESTIONMARK"
+/target black ox statue
+/cast provoke
+/targetlasttarget
+END
 VER 3 0100000000000015 "tiger's lust" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][help,nodead][@player,help,nodead]tiger's lust
